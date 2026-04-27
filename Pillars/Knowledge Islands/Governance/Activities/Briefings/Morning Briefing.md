@@ -28,7 +28,7 @@ A daily scheduled task that runs each morning to prepare today's daily note, pre
 
 ## What It Does
 
-Using the integrations configured in [[Pillars/Knowledge Capital/Integrations|Integrations]], fetches today's calendar events, meetings, tasks (due and overdue), and outstanding inbox items, then creates the daily note pre-populated with that content.
+Using the integrations configured in [[Pillars/Knowledge Capital/Tools/Integrations|Integrations]], fetches today's calendar events, meetings, tasks (due and overdue), and outstanding inbox items, then creates the daily note pre-populated with that content.
 
 ---
 

@@ -90,7 +90,7 @@ The `productivity:memory-management` skill provides a structured **deep memory**
 - `CLAUDE.md` as a hot cache (~30 people, ~30 terms, active projects)
 - `memory/` directory for full-depth storage: `glossary.md`, `people/`, `projects/`, `context/`
 
-**KB routing convention:** the `memory/` directory is a skill convention, not an island convention. If a `memory/` folder is created during a session, it should be treated as a staging area, not a permanent home. Consult [[Pillars/Knowledge Capital/Routing Rules|Routing Rules]] for the correct destination paths in this KB, then migrate content and remove the folder.
+**KB routing convention:** the `memory/` directory is a skill convention, not an island convention. If a `memory/` folder is created during a session, it should be treated as a staging area, not a permanent home. Consult [[Pillars/Knowledge Capital/Conventions/Routing Rules|Routing Rules]] for the correct destination paths in this KB, then migrate content and remove the folder.
 
 ---
 

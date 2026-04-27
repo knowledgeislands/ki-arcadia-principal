@@ -1,0 +1,27 @@
+---
+tags:
+  - card/note
+  - topic/knowledge-islands
+status: current - April 2026
+purpose: Index for Arcadia's island-specific activity configuration — timing parameters for automations
+author: Written with Claude
+---
+
+# Activities
+
+## Overview
+
+This folder holds the island-specific configuration that governs when and how Arcadia's automated activities run. The generic activity patterns — what each automation does and why — are defined in [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] under Knowledge Islands. What lives here is the island-specific layer: the timing parameters, day-type taxonomy, and cron schedules that make those patterns concrete for this island.
+
+---
+
+## Schedule
+
+[[Pillars/Knowledge Capital/Activities/Schedule|Schedule]] defines the timing parameters used by all KB automations. At its core is the day-type taxonomy — a classification scheme (`work-day`, `bank-holiday`, `annual-leave`, `weekend`) that automations read from each daily note's frontmatter to decide whether to run and how to behave. It also holds cron schedules for each named automation (Morning Briefing, Health Check, Knowledge Rebuild, and so on) as those automations are introduced. Currently no scheduled automations are active for Arcadia; entries are added here as they come online.
+
+---
+
+## Related Topics
+
+- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - generic activity definitions this island runs

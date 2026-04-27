@@ -16,7 +16,7 @@ author: Mixed
 
 A system for processing the email inbox toward zero using a structured triage folder hierarchy. Emails are classified to `_TRIAGE` subfolders via an ordered set of routing rules and routes. A tracking file records each classification, allowing the user's manual re-routes to be detected and fed back as suggested rule changes.
 
-The system is email-platform agnostic. It operates against whichever email MCP is configured in [[Pillars/Knowledge Capital/Integrations|Integrations]] (e.g. M365 MCP, Gmail MCP). Two platform constructs are normalised throughout: folder and label constructs are treated interchangeably as "folders"; tag and category constructs are treated interchangeably as "tags". The implementation detail of mapping these to the specific platform operation is handled by the activity prompts, not the route definitions.
+The system is email-platform agnostic. It operates against whichever email MCP is configured in [[Pillars/Knowledge Capital/Tools/Integrations|Integrations]] (e.g. M365 MCP, Gmail MCP). Two platform constructs are normalised throughout: folder and label constructs are treated interchangeably as "folders"; tag and category constructs are treated interchangeably as "tags". The implementation detail of mapping these to the specific platform operation is handled by the activity prompts, not the route definitions.
 
 Whilst the classification can follow any chosen scheme, this works best following an **Eisenhower Matrix** (urgency vs importance) approach. Sub-folders follow a numeric prefix so folders sort in priority order; first digit is the category (`0` Inbound, `1` Do, `2` Decide, `3` Delegate, `4` Defer, `9` Disposal) with remaining digits identifying the sub-classification.
 
@@ -224,4 +224,4 @@ The KB-specific email files live in `$EMAIL_DIR` (`Knowledge Capital/Email/`) in
 - [[Pillars/Knowledge Capital/Email/Email Routing Config|Email Routing Config]] - ordered route list evaluated by Route Inbound
 - [[Pillars/Knowledge Capital/Email/Email Routing Queue|Email Routing Queue]] - pending suggestions and run state
 - [[Pillars/Knowledge Capital/Email/Email|Knowledge Capital → Email]] - KB-specific configuration (routing rules, routes, queue, status)
-- [[Pillars/Knowledge Capital/Integrations|Integrations]] - email platform MCP configuration
+- [[Pillars/Knowledge Capital/Tools/Integrations|Integrations]] - email platform MCP configuration

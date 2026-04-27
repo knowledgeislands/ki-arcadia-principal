@@ -23,7 +23,7 @@ Combines the aged archival pass and inbound routing into a single execution. Eac
 
 ## Schedule
 
-- **Runs:** 09:00, 12:00, 18:00 - working days per [[Pillars/Knowledge Capital/Schedule|Schedule]]
+- **Runs:** 09:00, 12:00, 18:00 - working days per [[Pillars/Knowledge Capital/Activities/Schedule|Schedule]]
 - **Task ID:** `{task-prefix}-email-route-triage` - prefix defined in [[Pillars/Knowledge Capital/Identity|KB Identity]]
 
 ---

@@ -25,7 +25,7 @@ The authoritative rules for naming conventions, lifecycle management, project la
 
 - **Task ID:** `{task-prefix}-linear-sync` - prefix defined in [[Pillars/Knowledge Capital/Identity|Identity]]
 - **Runs:** Working days at ~09:00 AM (with a small jitter) - working days defined in [[Schedule]]
-- **Cron:** See [[Pillars/Knowledge Capital/Schedule|Schedule]] → Linear Sync cron
+- **Cron:** See [[Pillars/Knowledge Capital/Activities/Schedule|Schedule]] → Linear Sync cron
 
 ---
 

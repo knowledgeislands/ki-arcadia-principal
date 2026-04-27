@@ -19,7 +19,7 @@ Arcadia follows the canonical Knowledge Islands enactment process as defined in 
 
 Arcadia follows the standard pattern without modification:
 
-- Working documents live in the Cowork working folder (`~/Documents/Claude/Projects/Knowledge Islands`)
+- Working documents are colocated to the proposal note
 - Status lifecycle: `draft` → `ready` → `rejected` / `in-progress` → `rolled-out` → `reviewed` → `completed`
 - The council reviews at the `ready` gate
 - Streams track active work; each Stream settles when its change is completed or rejected

@@ -16,7 +16,7 @@ memory_file: feedback_any_claude_behaviour.md
 
 Behavioural constraints and expectations for Claude when working with this island. These apply regardless of who is using the KB - they are not personal style preferences but operating conventions for the AI layer.
 
-For the user's personal voice and communication style, see [[Pillars/Knowledge Capital/Communication Style|Communication Style]].
+For the user's personal voice and communication style, see [[Pillars/Knowledge Capital/Agents/Communication Style|Communication Style]].
 
 ---
 
@@ -51,4 +51,4 @@ For the user's personal voice and communication style, see [[Pillars/Knowledge C
 ## Related Topics
 
 - [[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude|Claude]] - parent index
-- [[Pillars/Knowledge Capital/Communication Style|Communication Style]] - Kit's personal voice and style guide; feeds the user profile
+- [[Pillars/Knowledge Capital/Agents/Communication Style|Communication Style]] - Kit's personal voice and style guide; feeds the user profile

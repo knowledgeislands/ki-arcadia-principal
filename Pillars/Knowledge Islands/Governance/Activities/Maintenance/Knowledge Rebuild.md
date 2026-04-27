@@ -21,8 +21,8 @@ A weekly scheduled task that reads all canonical meta notes from the island and 
 ## Schedule
 
 - **Task ID:** `{task-prefix}-knowledge-rebuild` - prefix defined in [[Pillars/Knowledge Capital/Identity|Identity]]
-- **Runs:** Wednesdays at ~07:00 - working days defined in [[Pillars/Knowledge Capital/Schedule|Schedule]]
-- **Cron:** See [[Pillars/Knowledge Capital/Schedule|Schedule]] → Knowledge Rebuild cron
+- **Runs:** Wednesdays at ~07:00 - working days defined in [[Pillars/Knowledge Capital/Activities/Schedule|Schedule]]
+- **Cron:** See [[Pillars/Knowledge Capital/Activities/Schedule|Schedule]] → Knowledge Rebuild cron
 
 ---
 
@@ -230,4 +230,4 @@ Run this in Terminal on the Mac. The result will be the path to `MEMORY.md`; the
 
 - [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Maintenance|Maintenance]] - parent index
 - [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - grandparent index
-- [[Pillars/Knowledge Capital/Canonical Meta Notes|Canonical Meta Notes]] - the ordered list of notes this task reads
+- [[Pillars/Knowledge Capital/Agents/Canonical Meta Notes|Canonical Meta Notes]] - the ordered list of notes this task reads
