@@ -17,6 +17,12 @@ The folder mirrors the five governance areas defined in [[Pillars/Knowledge Isla
 
 ---
 
+## Manifest
+
+[[Pillars/Knowledge Capital/Manifest|Manifest]] is Arcadia's operational manifest — the authoritative declaration of what this island has adopted, enabled, and connected. It records the adoption position (adopted or vetoed) for every non-constitutional activity group, the roster of enabled scheduled and conversational activities, active tool integrations, and the agent configuration. The [[Pillars/Knowledge Islands/Governance/Activities/Constitutional/Conformance|Conformance Check]] uses the Manifest as its source of truth. Agents starting cold and humans checking operational state both read this first.
+
+---
+
 ## Identity
 
 [[Pillars/Knowledge Capital/Identity|Identity]] is Arcadia's registration card: the KB name, the Cowork skill name, the task prefix used in TickTick, and the trigger phrases that activate the island's skill. These identifiers are the fixed, rarely-changing facts that distinguish Arcadia from every other island. Automations and skill prompts read from here rather than hardcoding values.
@@ -43,7 +49,7 @@ The [[Pillars/Knowledge Capital/Conventions/Conventions|Conventions]] folder hol
 
 ## Activities
 
-The [[Pillars/Knowledge Capital/Activities/Activities|Activities]] folder holds Arcadia's timing configuration for automated activities. Currently this means the Schedule note, which defines the day-type taxonomy (`work-day`, `bank-holiday`, `annual-leave`, `weekend`) that all automations read from daily note frontmatter, and the cron parameters for each automation as they come online.
+The [[Pillars/Knowledge Capital/Activities/Activities|Activities]] folder holds Arcadia's timing configuration for automated activities. The Schedule note defines the day-type taxonomy (`work-day`, `bank-holiday`, `annual-leave`, `weekend`) that all automations read from daily note frontmatter. The authoritative roster of enabled activities — what is running and at what cron — lives in the [[Pillars/Knowledge Capital/Manifest|Manifest]], not here.
 
 ---
 

@@ -12,7 +12,7 @@ memory_file: reference_{kb_prefix}_key_notes.md
 
 ## Overview
 
-Timing parameters and day-type taxonomy for KB automations. Arcadia currently has no scheduled automations defined. Parameters are added here as automations are introduced.
+The day-type taxonomy used by all KB automations to determine whether and how to run on a given day. The active schedule — which automations are enabled and at what time — is declared in the [[Pillars/Knowledge Capital/Manifest|Manifest]]. This note defines the day-type model that those cron entries reference.
 
 ---
 

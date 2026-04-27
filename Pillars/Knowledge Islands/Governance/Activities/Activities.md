@@ -18,7 +18,19 @@ memory_file:
 
 Routine maintenance keeps the island accurate, well-structured, and free of stale content. Activities are either scheduled (time-driven, autonomous) or conversational (chat-triggered, human-in-the-loop).
 
+Activities divide into two categories. **Constitutional** activities are required of any island adopting Knowledge Islands and cannot be vetoed — they define the baseline that makes an island valid. All other groups are **adoptable**: each territory must take an explicit position on each group (adopted or vetoed), with no unknowns permitted. The island's [[Pillars/Knowledge Capital/Manifest|Manifest]] is the authoritative record of adoption decisions.
+
 This index covers Layer 1 content: what each activity does and why. The prompts that drive them — Claude-specific and island-specific — live at Layer 5 in [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Activities|Tools/Claude/Activities]]. For the full five-layer model and prompt authoring conventions, see [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]].
+
+---
+
+## [[Constitutional]]
+
+The constitutional baseline required of any Knowledge Island. Not subject to the adoption framework — these activities define what it means to be a Knowledge Island at all.
+
+| Activity | Type | When | Summary |
+| --- | --- | --- | --- |
+| [[Conformance]] | Scheduled | Island-specific cadence | Verifies constitutional baseline and that all non-constitutional activity groups have an explicit adopted or vetoed position in the Manifest |
 
 ---
 

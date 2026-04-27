@@ -11,7 +11,9 @@ author: Written with Claude
 
 ## Overview
 
-This folder holds the island-specific configuration that governs when and how Arcadia's automated activities run. The generic activity patterns — what each automation does and why — are defined in [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] under Knowledge Islands. What lives here is the island-specific layer: the timing parameters, day-type taxonomy, and cron schedules that make those patterns concrete for this island.
+This folder holds the island-specific timing configuration for Arcadia's automated activities. The generic activity patterns — what each automation does and why — are defined in [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] under Knowledge Islands. What lives here is the timing model: the day-type taxonomy that automations read from daily note frontmatter to decide whether and how to run.
+
+The authoritative record of which activities are enabled — the operational roster — lives in the [[Pillars/Knowledge Capital/Manifest|Manifest]]. This folder is the timing model; the Manifest is the activation record.
 
 ---
 
