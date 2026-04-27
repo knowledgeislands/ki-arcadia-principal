@@ -11,7 +11,7 @@ author: Written with Claude
 
 ## Overview
 
-Arcadia governs itself using the **council model** as defined in [[Concept|Knowledge Islands Concepts]]. The council is Arcadia's sole ratification authority — all changes to canonical knowledge pass through it via the Enactment Process.
+Arcadia governs itself using the **council model** as defined in [[Pillars/Knowledge Islands/Concept/Concept|Concept]]. The council is Arcadia's sole ratification authority — all changes to canonical knowledge pass through it via the Enactment Process.
 
 ---
 
@@ -19,7 +19,7 @@ Arcadia governs itself using the **council model** as defined in [[Concept|Knowl
 
 | Attribute           | Value                                                                          |
 | ------------------- | ------------------------------------------------------------------------------ |
-| Model               | Council — see [[Concept\|Governance patterns]]                                 |
+| Model               | Council — see [[Pillars/Knowledge Islands/Concept/Concept\|Concept]]           |
 | Operating mechanism | [[Pillars/Knowledge Capital/Governance/Enactment Process\|Enactment Process]]  |
 | Membership          | Open to principals of any archipelago that contributes to or builds on Arcadia |
 
@@ -40,4 +40,4 @@ Arcadia governs itself using the **council model** as defined in [[Concept|Knowl
 ## Related Topics
 
 - [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - parent index
-- [[Concept|Knowledge Islands Concepts]] - the generic governance patterns this instance follows
+- [[Pillars/Knowledge Islands/Concept/Concept|Concept]] - the generic governance patterns this instance follows

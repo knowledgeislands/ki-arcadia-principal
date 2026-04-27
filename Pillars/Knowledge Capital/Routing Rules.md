@@ -16,24 +16,6 @@ Routing rules specific to this island, supplementing the general conventions in 
 
 ---
 
-## Streams/Pillars Boundary
-
-Streams notes track status and next steps only. Technical findings, decisions, and reusable knowledge extracted from stream work belong in Pillars, with the stream note linking to them.
-
----
-
-## Meeting Notes
-
-Each meeting gets its own Calendar note (`YYYY-MM-DD Meeting Name.md`), filed in the appropriate month folder. Reference it from the daily note via wikilink.
-
----
-
-## Session Digests
-
-Each AI work session gets its own Calendar note (`YYYY-MM-DD Session - Topic.md`), filed in the appropriate month folder. Reference it from the daily note via wikilink. Do not write session digest content inline into the daily note.
-
----
-
 ## Within Pillars
 
 Arcadia's Pillars are organised into three domains:
@@ -49,7 +31,7 @@ Common routing decisions:
 - The KI concept, island types, and governance patterns → **Knowledge Islands**
 - The Enactment Process and Contribution Process (generic) → **Knowledge Islands/Governance/Processes/**
 - Arcadia's council membership and governance instance → **Knowledge Capital/Governance/**
-- KB conventions, note format, frontmatter, Claude integration → **Knowledge Islands/Knowledge Management/**
+- KB conventions, note format, frontmatter, Claude integration → **Knowledge Islands/Governance/**
 - Known Lands, Identity, Physical Locations → **Knowledge Capital/**
 
 ---

@@ -30,7 +30,7 @@ Full specification in [[Structure]]. Summary:
 
 ### Pillars/Resources boundary (strictly enforced)
 
-See [[Pillars-Resources Boundary]] for the specific boundary definition and link-direction rules for this island. The general principle: `Pillars` holds internal knowledge owned by the KB; `Resources` holds external reference material that exists independently. Methodology or internal content found in Resources belongs in Pillars.
+The general principle: `Pillars` holds internal knowledge owned by the KB; `Resources` holds external reference material that exists independently. Methodology or internal content found in Resources belongs in Pillars. The canonical boundary definition is in [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Library/Library|Library]] under "Pillars/Resources Boundary".
 
 ### Index Notes (strictly enforced)
 
