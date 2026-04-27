@@ -50,7 +50,7 @@ The previous iteration of this artifact tracked only `@`-mentions. That model mi
 - **In-memory cache with a 5-minute TTL.** `_cache` and `_cacheTime` are declared at module level (outside the IIFE) so they survive sidebar re-focus without triggering a re-fetch. If the cache is live, cards are rendered immediately using pre-collected summary text - no spinners, no `sample()` latency. Cache is invalidated after `CACHE_TTL = 5 * 60 * 1000` ms.
 - **Deferred cache write after summarisation completes.** The cache is only written _after_ all `sample()` calls resolve - summary text is then collected from the DOM elements by ID. Re-focusing mid-summarise triggers a fresh fetch rather than caching a partial or empty summary. This prevents silent partial-summary cache hits.
 - **Cache badge makes the data source visible.** A small pill in the sub-header shows "⚡ from cache · fetched Ns ago" (grey) when serving cached data, or "↻ live · Nms" (green) when a live fetch just completed. Updates automatically after every render.
-- **Light-mode, storage-free, inline.** `:root { color-scheme: light }`, white cards on `#fafafa`, Slack aubergine (`#4A154B`) for hover and spinner accents; no `localStorage` (cache lives in module-level JS variables, not browser storage); all CSS and JS inlined; error banner on top-level `.catch`. See **Live Artifact Baseline** in [[Pillars/Knowledge Islands/Governance/Tools/Claude/AI Automation Patterns|AI Automation Patterns]].
+- **Light-mode, storage-free, inline.** `:root { color-scheme: light }`, white cards on `#fafafa`, Slack aubergine (`#4A154B`) for hover and spinner accents; no `localStorage` (cache lives in module-level JS variables, not browser storage); all CSS and JS inlined; error banner on top-level `.catch`. See **Live Artifact Baseline** in [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]].
 
 ---
 
@@ -122,15 +122,15 @@ One-liner version that gets you the same result via the usual clarification flow
 
 ## Updating
 
-Follow the **Two-Mechanic Update Protocol** in [[Pillars/Knowledge Islands/Governance/Tools/Claude/AI Automation Patterns|AI Automation Patterns]]; this artifact's `id` is `slack-digest`.
+Follow the **Two-Mechanic Update Protocol** in [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]]; this artifact's `id` is `slack-digest`.
 
 Common in-place changes and where to make them:
 
 - **Add or rename a prefix bucket** - append the prefix to `PREFIXES`, add a label entry to `PREFIX_LABELS`, and (if you want it surfaced near the top) extend `preferredOrder`. To split `group-hnr-*` from `group-*`, add a two-segment detection branch to `channelPrefix`.
 - **Change the window size** - swap the `24 * 60 * 60 * 1000` constant in `windowStart`. The subtitle text, the `oldest` timestamp on `slack_read_channel`, and the `after` on the DM search all derive from it. Update the time-format breakpoints in `fmtTime` if the window exceeds 24 hours.
 - **Different user identity** - change the `CURRENT_USER_ID` constant. Used in the `-from:<@…>` exclusion on the DM query.
-- **Rewired Slack MCP** - see **MCP Connector Rewiring** in [[Pillars/Knowledge Islands/Governance/Tools/Claude/AI Automation Patterns|AI Automation Patterns]]. Constants to update: `SEARCH_TOOL`, `CHANNELS_TOOL`, `READ_TOOL`, plus the matching `mcp_tools` declarations.
-- **Tone of channel summaries** - edit the prompt string passed to `summariseChannel`. Keep "Return only the paragraph - no preamble, no quotes, no headings." - without it the model leaks "Here is the summary:" preludes. See **Deterministic vs `sample()` Synthesis** in [[Pillars/Knowledge Islands/Governance/Tools/Claude/AI Automation Patterns|AI Automation Patterns]].
+- **Rewired Slack MCP** - see **MCP Connector Rewiring** in [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]]. Constants to update: `SEARCH_TOOL`, `CHANNELS_TOOL`, `READ_TOOL`, plus the matching `mcp_tools` declarations.
+- **Tone of channel summaries** - edit the prompt string passed to `summariseChannel`. Keep "Return only the paragraph - no preamble, no quotes, no headings." - without it the model leaks "Here is the summary:" preludes. See **Deterministic vs `sample()` Synthesis** in [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]].
 - **Tone of DM summaries** - same drill on `summariseDM`'s prompt; current spec is one line, ≤18 words, British English.
 - **Cap on messages read per channel** - adjust the `limit` argument on the `slack_read_channel` call. Default keeps the prompt size manageable for `sample()`.
 - **Swap to deterministic summaries** - replace the body of `summariseChannel`/`summariseDM` with a JS-derived line. Avoids `sample()` latency and variance at the cost of warmth.
@@ -162,5 +162,5 @@ Ordered roughly by effort - small and practical first, creative last.
 ## Related Topics
 
 - [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Live Artifacts|Live Artifacts]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/AI Automation Patterns|AI Automation Patterns]] - general patterns for recurring AI automations
+- [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]] - general patterns for recurring AI automations
 - [[Pillars/Knowledge Islands/Governance/Tools/Claude/Cowork Configuration Layers|Cowork Configuration Layers]] - where Cowork preferences and rules live

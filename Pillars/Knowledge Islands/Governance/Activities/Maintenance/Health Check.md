@@ -30,7 +30,7 @@ A weekly scheduled task that reviews the island for structural drift, CLAUDE.md 
 
 Reviews the island for structural or content issues and proposes revisions. Specifically checks:
 
-- **CLAUDE.md vs Island Skill alignment** - reads `CLAUDE.md` and `Pillars/Knowledge Islands/Governance/Tools/Claude/Island Skill.md`, identifies any gaps or drift between the two, and proposes updates to the skill where needed
+- **CLAUDE.md vs Island Skill alignment** - reads `CLAUDE.md` and `Pillars/Knowledge Islands/Governance/Agents/Claude/Island Skill.md`, identifies any gaps or drift between the two, and proposes updates to the skill where needed
 - **ADR drift review** - checks each ADR in the island against the architecture and domain notes it underpins; flags any ADRs where the decision appears to have been superseded or where the related notes have diverged from the recorded decision; also flags areas where a new architectural decision appears to have been made but not yet captured as an ADR
 - General island health - orphaned notes, broken wikilinks, routing anomalies, or stale content worth archiving
 
@@ -57,7 +57,7 @@ All file paths below are relative to $REPOSITORY.
 Read $REPOSITORY/CLAUDE.md and $REPOSITORY/Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons.md.
 
 ## Step 2 - CLAUDE.md vs Island Skill alignment
-Read $REPOSITORY/Pillars/Knowledge Islands/Governance/Tools/Claude/Island Skill.md.
+Read $REPOSITORY/Pillars/Knowledge Islands/Governance/Agents/Claude/Island Skill.md.
 Compare it against CLAUDE.md. Identify any gaps, contradictions, or outdated references.
 List proposed changes - do not apply them yet.
 
@@ -88,5 +88,5 @@ Present a summary of all proposed changes grouped by type. Wait for confirmation
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Maintenance/Maintenance|Maintenance]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Regular Activities|Regular Activities]] - grandparent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Maintenance|Maintenance]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - grandparent index

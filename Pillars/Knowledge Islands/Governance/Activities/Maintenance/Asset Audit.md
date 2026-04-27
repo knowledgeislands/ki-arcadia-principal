@@ -42,5 +42,5 @@ Weekly - _"kb asset audit"_. Typically alongside the [[Health Check]] automation
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Maintenance/Maintenance|Maintenance]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Regular Activities|Regular Activities]] - grandparent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Maintenance|Maintenance]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - grandparent index

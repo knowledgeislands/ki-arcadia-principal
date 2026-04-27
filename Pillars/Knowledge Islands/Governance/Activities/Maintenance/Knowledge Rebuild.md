@@ -139,7 +139,7 @@ Use $MEMORY_PREFIX (from KB Identity) as the prefix for KB-specific filenames, a
 
 **feedback_{MEMORY_PREFIX}_operations.md** - All operational rules and known pitfalls: pre-flight check requirement, read-before-write, deletion tool, folder rename rule, voice notes exclusion, merge-not-replace policy, session digest protocol. Extract from Mistakes and Lessons and CLAUDE.md.
 
-**reference_{MEMORY_PREFIX}_key_notes.md** - Canonical paths for all meta notes (use the paths from CLAUDE.md Key Meta Notes table). Include MCP integrations and regular activities schedule. Extract from CLAUDE.md and Regular Activities.
+**reference_{MEMORY_PREFIX}_key_notes.md** - Canonical paths for all meta notes (use the paths from CLAUDE.md Key Meta Notes table). Include MCP integrations and activities schedule. Extract from CLAUDE.md and Activities.
 
 Each file must use this frontmatter format and structure:
 ---
@@ -228,5 +228,6 @@ Run this in Terminal on the Mac. The result will be the path to `MEMORY.md`; the
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Maintenance/Maintenance|Maintenance]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Regular Activities|Regular Activities]] - grandparent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Maintenance|Maintenance]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - grandparent index
+- [[Pillars/Knowledge Capital/Canonical Meta Notes|Canonical Meta Notes]] - the ordered list of notes this task reads

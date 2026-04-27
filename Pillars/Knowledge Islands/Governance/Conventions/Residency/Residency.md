@@ -131,5 +131,5 @@ Both directions should be maintained. `memory_file:` enables Knowledge Rebuild t
 ## Related Topics
 
 - [[Pillars/Knowledge Islands/Governance/Conventions/Conventions|Conventions]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Memory Architecture|Memory Architecture]] - the Claude-specific implementation of this model for this KB
+- [[Pillars/Knowledge Islands/Governance/Agents/Claude/Memory Architecture|Memory Architecture]] - the Claude-specific implementation of this model for this KB
 - [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Knowledge Rebuild|Knowledge Rebuild]] - the scheduled task that maintains the canonical memory layer

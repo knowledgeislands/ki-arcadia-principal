@@ -86,12 +86,12 @@ Tone: British English throughout. Structured and direct. No emojis. Use backtick
 Notes:
 
 - If the other conversation has lost track of what its artifact does (e.g. context has since been trimmed), ask it to re-open the artifact from the sidebar and re-inspect before drafting - otherwise the recipe will be generic.
-- Once three or four recipes are collected, skim the set together to factor any recurring cross-cutting patterns into [[Pillars/Knowledge Islands/Governance/Tools/Claude/AI Automation Patterns|AI Automation Patterns]] rather than repeating them in each recipe.
+- Once three or four recipes are collected, skim the set together to factor any recurring cross-cutting patterns into [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]] rather than repeating them in each recipe.
 
 ---
 
 ## Related Topics
 
 - [[Pillars/Knowledge Islands/Governance/Tools/Claude/Claude|Claude]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/AI Automation Patterns|AI Automation Patterns]] - general patterns for recurring AI automations
+- [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]] - general patterns for recurring AI automations
 - [[Pillars/Knowledge Islands/Governance/Tools/Claude/Cowork Configuration Layers|Cowork Configuration Layers]] - where Cowork preferences and rules live

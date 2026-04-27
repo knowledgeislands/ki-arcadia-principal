@@ -34,7 +34,7 @@ Using the integrations configured in [[Pillars/Knowledge Capital/Integrations|In
 
 ## Prompt
 
-The prompt below is the canonical version. It must match the prompt stored in the `{task-prefix}-morning-briefing` scheduled task - see [[Regular Activities]] § Scheduled Task Sync.
+The prompt below is the canonical version. It must match the prompt stored in the `{task-prefix}-morning-briefing` scheduled task - see [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] § Prompt Editing Discipline.
 
 ```txt
 You are running the Morning Briefing. Your job is to prepare today's daily note so it is ready before the day begins.
@@ -93,5 +93,5 @@ Do not ask for confirmation - create the notes and report what was done.
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Briefings/Briefings|Briefings]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Regular Activities|Regular Activities]] - grandparent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Briefings/Briefings|Briefings]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - grandparent index

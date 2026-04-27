@@ -46,7 +46,7 @@ The practical effect: this audit can verify schedule/cron/description alignment 
 
 ## Prompt
 
-The prompt below is the canonical version. It must match the prompt stored in the `hnrkb-scheduled-task-audit` scheduled task - see [[Regular Activities]] § Scheduled Task Sync.
+The prompt below is the canonical version. It must match the prompt stored in the `hnrkb-scheduled-task-audit` scheduled task - see [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] § Prompt Editing Discipline.
 
 ```txt
 You are running the Scheduled Task Audit. Your job is to verify that each live Cowork scheduled task has a corresponding KB note and that schedules match - and to self-verify this task's own prompt. Full prompt comparison across all tasks is not currently possible; see the Known Limitations section in the KB note.
@@ -55,7 +55,7 @@ You are running the Scheduled Task Audit. Your job is to verify that each live C
 Run this bash command to find the Knowledge Capital folder and derive the repository root:
   KB_PROPS=$(find /sessions/*/mnt -maxdepth 7 -name "Knowledge Capital.md" -path "*/Knowledge Capital/*" 2>/dev/null | head -1)
   REPOSITORY=$(echo "$KB_PROPS" | sed 's|||')
-  ACTIVITIES_DIR="$REPOSITORY/Pillars/Knowledge Islands/Governance/Regular Activities"
+  ACTIVITIES_DIR="$REPOSITORY/Pillars/Knowledge Islands/Governance/Activities"
   echo "Repository: $REPOSITORY"
 
 Then read:
@@ -108,7 +108,7 @@ Call `mcp__scheduled-tasks__list_scheduled_tasks` to retrieve metadata for all a
 
 ### 2. Identify the corresponding KB note
 
-For each task, locate the matching activity note under `Pillars/Knowledge Islands/Governance/Regular Activities/`. The task ID prefix is documented in [[Pillars/Knowledge Capital/Identity|Identity]].
+For each task, locate the matching activity note under `Pillars/Knowledge Islands/Governance/Activities/`. The task ID prefix is documented in [[Pillars/Knowledge Capital/Identity|Identity]].
 
 ### 3. Verify schedule and description
 
@@ -140,5 +140,5 @@ When updating a prompt during an active session: update the KB note first, then 
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Maintenance/Maintenance|Maintenance]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Regular Activities|Regular Activities]] - grandparent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Maintenance|Maintenance]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - grandparent index

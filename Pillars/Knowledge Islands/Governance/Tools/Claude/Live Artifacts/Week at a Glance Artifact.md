@@ -43,7 +43,7 @@ A self-contained Cowork HTML artifact that renders a rolling next-7-days view ac
 - **Loading skeleton for instant perceived response.** Before any `await`, the `days` element is populated with 7 shimmer day-card shapes that mirror the real layout (header bar, two summary lines, sparkline bar, two event lines). The `@keyframes shimmer` animation runs a moving `linear-gradient` across warm earthy tones matching the artifact's palette. This eliminates the blank-white flash during the ~1-2 second calendar fetch and signals that the view is loading rather than broken.
 - **In-memory cache with 5-minute TTL.** `_cache` and `_cacheTime` are declared at module scope (outside the IIFE) so they outlive a single script execution and survive sidebar re-focus. On open, the cache is checked first: if valid, `renderDays()` and the footer are called immediately with no MCP calls. The cache stores the fully processed `days` array (including `Date` objects, which survive fine in memory) and the pre-rendered footer HTML string. `CACHE_TTL` (default `5 * 60 * 1000` ms) is the single tunable constant.
 - **Cache badge makes the data source visible.** A small pill in the date sub-header shows "⚡ from cache · fetched Ns ago" (grey) on a cache hit, or "↻ live · Nms" (green) after a live fetch. It makes it unambiguous whether the view reflects live data or a recent snapshot - important when a calendar event was just created.
-- **Light-mode, storage-free, inline.** `:root { color-scheme: light }` with a warm off-white palette; no `localStorage` (the in-memory cache is sufficient for sidebar re-focus; it resets on hard reload, which is the right moment for a fresh fetch); all CSS and JS inlined; error banner on top-level `.catch`. See **Live Artifact Baseline** in [[Pillars/Knowledge Islands/Governance/Tools/Claude/AI Automation Patterns|AI Automation Patterns]].
+- **Light-mode, storage-free, inline.** `:root { color-scheme: light }` with a warm off-white palette; no `localStorage` (the in-memory cache is sufficient for sidebar re-focus; it resets on hard reload, which is the right moment for a fresh fetch); all CSS and JS inlined; error banner on top-level `.catch`. See **Live Artifact Baseline** in [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]].
 
 ---
 
@@ -112,7 +112,7 @@ One-liner version that gets you the same result via the usual clarification flow
 
 ## Updating
 
-Follow the **Two-Mechanic Update Protocol** in [[Pillars/Knowledge Islands/Governance/Tools/Claude/AI Automation Patterns|AI Automation Patterns]]; this artifact's `id` is `week-at-a-glance`.
+Follow the **Two-Mechanic Update Protocol** in [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]]; this artifact's `id` is `week-at-a-glance`.
 
 Common in-place changes and where to make them:
 
@@ -123,8 +123,8 @@ Common in-place changes and where to make them:
 - **Tune the overlap test** - the `a/b` pair loop sets `a._conflict = true` when `b.start < a.end && b.end > a.start`. To ignore short back-to-back touches, relax the comparison with a minute-tolerance; to suppress the pill on trivial overlaps, add a `Math.min(a.end - b.start, b.end - a.start) >= THRESHOLD` guard.
 - **Change the moon-glyph mapping** - `moonGlyph()` maps phase title prefixes to glyphs; add or reorder cases there. Moon calendars are detected by `MOON_SUMMARY_REGEX` (default `/moon/i`) on the calendar label; tighten or loosen that if multiple calendars match. The shared `isMoonItem()` helper drives both the header-glyph extraction and the list/summary filtering - keep all three in sync if you change the predicate.
 - **Tune the cache TTL** - edit the `CACHE_TTL` constant (default `5 * 60 * 1000` ms = 5 minutes). The cache stores the fully processed `days` array and the pre-rendered footer HTML. Set to `0` to effectively disable caching. `_cache` and `_cacheTime` must be declared at module scope outside the IIFE - if they move inside, they reset on every execution and the cache never hits.
-- **Rewired MCP connector** - see **MCP Connector Rewiring** in [[Pillars/Knowledge Islands/Governance/Tools/Claude/AI Automation Patterns|AI Automation Patterns]]. Constants to update: the `LIST_EVENTS` and `LIST_CALENDARS` tool-name constants, and the two entries in the `mcp_tools` declaration. Parameter names passed to `list_events` are camelCase - `calendarId`, `startTime`, `endTime`, `timeZone`, `pageSize` - match the schema exactly; snake_case silently fails. If the moon-phase calendar is renamed, only `MOON_SUMMARY_REGEX` needs a look.
-- **Swap to narrative summaries** - replace the `summarise()` body with `await window.cowork.sample()` calls run in parallel via `Promise.all` over the days. Warmer tone at the cost of some latency and variance. See **Deterministic vs `sample()` Synthesis** in [[Pillars/Knowledge Islands/Governance/Tools/Claude/AI Automation Patterns|AI Automation Patterns]].
+- **Rewired MCP connector** - see **MCP Connector Rewiring** in [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]]. Constants to update: the `LIST_EVENTS` and `LIST_CALENDARS` tool-name constants, and the two entries in the `mcp_tools` declaration. Parameter names passed to `list_events` are camelCase - `calendarId`, `startTime`, `endTime`, `timeZone`, `pageSize` - match the schema exactly; snake_case silently fails. If the moon-phase calendar is renamed, only `MOON_SUMMARY_REGEX` needs a look.
+- **Swap to narrative summaries** - replace the `summarise()` body with `await window.cowork.sample()` calls run in parallel via `Promise.all` over the days. Warmer tone at the cost of some latency and variance. See **Deterministic vs `sample()` Synthesis** in [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]].
 
 Verify per the **Two-Mechanic Update Protocol**: open the artifact, hit Reload, check the footer timestamp and calendars-loaded count. Re-focus within 5 minutes and confirm the cache badge reads "⚡ from cache"; a cold open reads "↻ live · Nms". Then apply **Recipe Self-Synchronisation** - update this note at `Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Week at a Glance Artifact.md` using the `hnrkb` skill.
 
@@ -148,5 +148,5 @@ Ordered roughly by effort - small and practical first, creative last. _Conflict 
 ## Related Topics
 
 - [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Live Artifacts|Live Artifacts]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/AI Automation Patterns|AI Automation Patterns]] - general patterns for recurring AI automations
+- [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]] - general patterns for recurring AI automations
 - [[Pillars/Knowledge Islands/Governance/Tools/Claude/Cowork Configuration Layers|Cowork Configuration Layers]] - where Cowork preferences and rules live

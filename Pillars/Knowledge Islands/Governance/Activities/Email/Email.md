@@ -6,7 +6,7 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Index of email management activities within the Regular Activities framework
+purpose: Index of email management activities
 author: Written with Claude
 ---
 
@@ -14,13 +14,13 @@ author: Written with Claude
 
 ## Overview
 
-Inbox management as a scheduled, repeatable process. The goal is inbox zero across each working day, with each message triaged to a clear outcome. See [[Pillars/Knowledge Islands/Governance/Regular Activities/Email/Approach|Approach]] for the shared concepts, definitions, and data model.
+Inbox management as a scheduled, repeatable process. The goal is inbox zero across each working day, with each message triaged to a clear outcome. See [[Pillars/Knowledge Islands/Governance/Activities/Email/Approach|Approach]] for the shared concepts, definitions, and data model.
 
 ---
 
 ## Activities
 
-This table is copied here for ease of use, but the canonical version is in [[Pillars/Knowledge Islands/Governance/Regular Activities/Email/Approach|Approach]]
+This table is copied here for ease of use, but the canonical version is in [[Pillars/Knowledge Islands/Governance/Activities/Email/Approach|Approach]]
 
 | Activity | Type | Schedule | Trigger | Summary |
 | --- | --- | --- | --- | --- |
@@ -35,5 +35,5 @@ This table is copied here for ease of use, but the canonical version is in [[Pil
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Regular Activities|Regular Activities]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - parent index
 - [[Pillars/Knowledge Capital/Email/Email Routing Config|Email Routing Config]] - routing rules for the email triage system, filed in Knowledge Capital

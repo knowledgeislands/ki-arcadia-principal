@@ -54,6 +54,6 @@ If tracking.json5 is present, note its entry count.
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Email/Approach|Approach]] - concept reference and shared definitions
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Email/Email|Email]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Email/Route Review|Route Review]] - apply agreed suggestions and resolve Unknown queue
+- [[Pillars/Knowledge Islands/Governance/Activities/Email/Approach|Approach]] - concept reference and shared definitions
+- [[Pillars/Knowledge Islands/Governance/Activities/Email/Email|Email]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Email/Route Review|Route Review]] - apply agreed suggestions and resolve Unknown queue

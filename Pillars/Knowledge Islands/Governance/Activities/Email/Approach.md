@@ -220,7 +220,7 @@ The KB-specific email files live in `$EMAIL_DIR` (`Knowledge Capital/Email/`) in
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Email/Email|Email]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Email/Email|Email]] - parent index
 - [[Pillars/Knowledge Capital/Email/Email Routing Config|Email Routing Config]] - ordered route list evaluated by Route Inbound
 - [[Pillars/Knowledge Capital/Email/Email Routing Queue|Email Routing Queue]] - pending suggestions and run state
 - [[Pillars/Knowledge Capital/Email/Email|Knowledge Capital → Email]] - KB-specific configuration (routing rules, routes, queue, status)

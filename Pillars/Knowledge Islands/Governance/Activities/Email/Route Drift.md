@@ -79,6 +79,6 @@ Output concisely:
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Email/Approach|Approach]] - concept reference and shared definitions
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Email/Email|Email]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Email/Route Triage|Route Triage]] - sibling scheduled activity (runs at 09:00, after this scan)
+- [[Pillars/Knowledge Islands/Governance/Activities/Email/Approach|Approach]] - concept reference and shared definitions
+- [[Pillars/Knowledge Islands/Governance/Activities/Email/Email|Email]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Email/Route Triage|Route Triage]] - sibling scheduled activity (runs at 09:00, after this scan)

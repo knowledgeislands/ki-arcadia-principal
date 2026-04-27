@@ -28,4 +28,4 @@ Daily automations that prime the island at the start of each day - creating miss
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Regular Activities|Regular Activities]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - parent index

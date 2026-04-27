@@ -34,7 +34,7 @@ A self-contained Cowork HTML artifact that renders the six living guides from th
 - **No CDN dependencies.** CDN scripts (including `cdnjs.cloudflare.com`) are blocked in the Cowork artifact iframe. The Markdown renderer is a self-contained ~100-line JS parser inlined in the script tag. No `<script src="">` for any library.
 - **Inline Markdown renderer.** A two-pass parser: pass 1 splits the source into `code` and `line` blocks (preserving fenced code verbatim); pass 2 classifies lines into headings, horizontal rules, blockquotes, tables, lists, and paragraphs. Inline formatting (bold, italic, code, links) is applied last. H1 headings are suppressed - the guide title is shown as the `guide-title` element above the content. Pre/code blocks use a dark-green monospace style; tables have column alternation and header shading.
 - **Live vs stub detection.** A guide is treated as a stub if its Markdown source matches `/Content to be added/i`. Live guides are sorted before stubs; within each group, alphabetical by slug.
-- **`window.cowork.callMcpTool` is only for external connectors.** Slack, Linear, Calendar, and similar connected services work via this API. Workspace file tools do not - they are Claude's own sandbox tools, not user connectors. See [[Pillars/Knowledge Islands/Governance/Tools/Claude/AI Automation Patterns|AI Automation Patterns]].
+- **`window.cowork.callMcpTool` is only for external connectors.** Slack, Linear, Calendar, and similar connected services work via this API. Workspace file tools do not - they are Claude's own sandbox tools, not user connectors. See [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]].
 - **Light-mode, storage-free, inline.** `:root { color-scheme: light }`, warm off-white background (`#f8f7f4`), brand green (`#1F3D2B`) for headers and active tabs, amber-toned highlights for the "Live" pill. No `localStorage`. All CSS and JS inlined in a single file.
 
 ---
@@ -107,4 +107,4 @@ Ordered roughly by effort - practical first, creative last.
 ## Related Topics
 
 - [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Live Artifacts|Live Artifacts]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/AI Automation Patterns|AI Automation Patterns]] - general patterns for recurring AI automations; see Live Artifact Baseline
+- [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]] - general patterns for recurring AI automations; see Live Artifact Baseline

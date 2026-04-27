@@ -39,28 +39,33 @@ Adhoc - _"kb convergence check"_.
 
 ## Shared notes (must be identical across all KBs)
 
-These notes must remain byte-for-byte identical. Any difference is drift to be resolved.
+These notes must remain byte-for-byte identical. Any difference is drift to be resolved. Paths are relative to each KB's `Pillars/Knowledge Islands/Governance/` folder.
 
+- `Agents/Agents.md`
+- `Agents/Agentic AI/Agentic AI.md`
+- `Agents/Agentic AI/AI Automation Patterns.md`
+- `Agents/ChatGPT/ChatGPT.md`
+- `Agents/Claude/Claude.md`
+- `Agents/Claude/Claude Behaviour.md`
+- `Agents/Claude/Island Skill.md`
+- `Agents/Claude/Memory Architecture.md`
 - `Conventions/Conventions.md`
 - `Conventions/Notes/Frontmatter/Tags.md`
 - `Conventions/Notes.md`
-- `Integrations/ChatGPT/ChatGPT.md`
-- `Integrations/Claude/Claude.md`
-- `Integrations/Claude/Island Skill.md`
-- `Integrations/Integrations.md`
-- `Integrations/Linear/Linear.md`
-- `Knowledge Management.md`
-- `Methodology/Future Improvements.md`
-- `Methodology/Methodology.md`
-- `Regular Activities/Maintenance/Asset Audit.md`
-- `Regular Activities/Maintenance/Health Check.md`
-- `Regular Activities/Maintenance/Inbox Review.md`
-- `Regular Activities/Maintenance/KB Convergence Check.md`
-- `Regular Activities/Maintenance/Knowledge Rebuild.md`
-- `Regular Activities/Briefings/Morning Briefing.md`
-- `Regular Activities/Maintenance/Status Review.md`
-- `Regular Activities/Maintenance/Structural Audit.md`
-- `Regular Activities/Maintenance/Wikilink Review.md`
+- `Activities/Activities.md`
+- `Activities/Authoring Activities.md`
+- `Activities/Maintenance/Asset Audit.md`
+- `Activities/Maintenance/Health Check.md`
+- `Activities/Maintenance/Inbox Review.md`
+- `Activities/Maintenance/KB Convergence Check.md`
+- `Activities/Maintenance/Knowledge Rebuild.md`
+- `Activities/Briefings/Morning Briefing.md`
+- `Activities/Maintenance/Status Review.md`
+- `Activities/Maintenance/Structural Audit.md`
+- `Activities/Maintenance/Wikilink Review.md`
+- `Tools/Tools.md`
+- `Tools/Claude/Claude.md`
+- `Tools/Claude/Cowork Configuration Layers.md`
 
 ---
 
@@ -72,9 +77,8 @@ These notes are intentionally different between KBs. Do not flag differences her
 | --- | --- |
 | `Knowledge Capital/` (entire folder) | Identity, skill name, task prefix, integrations, routing rules, and canonical notes list - by design |
 | `Conventions/Structure/Structure.md` | Pillars/Resources boundary semantics, Calendar folder naming, and routing rules are specific to each KB |
-| `Integrations/Claude/Mistakes and Lessons.md` | Logs KB-specific incidents - accumulates independently in each KB |
-| `Regular Activities/Regular Activities.md` | Activity listings vary - each KB includes only the automations it actively runs (e.g. Linear Sync is HNR-only) |
-| `Integrations/Claude/Cowork Configuration Layers.md` | The "Recommended Content for the Instructions Box" section contains KB-specific recommendations - organisation description, role, and codebase stack context |
+| `Tools/Claude/Mistakes and Lessons.md` | Logs KB-specific incidents - accumulates independently in each KB |
+| `Tools/Claude/Activities/` (entire folder) | Activity prompts are Claude-specific and island-specific; each KB maintains its own Layer 5 prompt library |
 
 ---
 
@@ -132,6 +136,6 @@ State which files were updated and summarise what was synced, deferred, or inten
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Maintenance/Maintenance|Maintenance]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Regular Activities|Regular Activities]] - grandparent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Maintenance|Maintenance]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - grandparent index
 - [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - KB-specific parameters folder that makes portability possible

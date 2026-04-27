@@ -120,5 +120,5 @@ He moves between spiritual experience and practical detail without friction. A v
 
 - [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - parent index
 - [[Pillars/Knowledge Islands/Governance/Tools/Claude/Claude|Claude]] - Claude integration note that references this style guide
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Claude Behaviour|Claude Behaviour]] - behavioural constraints for Claude
+- [[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude Behaviour|Claude Behaviour]] - behavioural constraints for Claude
 - [[Pillars/Knowledge Islands/Governance/Conventions/Notes|Notes]] - note format conventions for the island

@@ -6,7 +6,7 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Index of Linear project management sync activities within the Regular Activities framework
+purpose: Index of Linear project management sync activities
 author: Written with Claude
 ---
 
@@ -28,5 +28,5 @@ Daily automation that keeps the island aligned with the Linear project managemen
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Regular Activities|Regular Activities]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - parent index
 - [[Pillars/Knowledge Islands/Governance/Tools/Linear/Linear|Linear]] - integration configuration and browser-based view management

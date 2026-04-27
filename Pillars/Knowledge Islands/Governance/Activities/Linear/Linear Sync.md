@@ -98,6 +98,6 @@ Write a session digest to the KB Calendar at the appropriate path: Calendar/YYYY
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Linear/Linear|Linear]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Regular Activities/Regular Activities|Regular Activities]] - grandparent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Linear/Linear|Linear]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - grandparent index
 - [[Pillars/Knowledge Islands/Governance/Tools/Linear/Linear|Linear]] - MCP connection details and browser-based interaction patterns
