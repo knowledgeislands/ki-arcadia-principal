@@ -15,9 +15,9 @@ Background streams are projects and ideas that are alive and being slowly pursue
 
 ---
 
-## Contents
+## Harbour, Routes and Customs
 
-- None.
+[[Streams/Background/Harbour Routes and Customs/Harbour Routes and Customs|Harbour, Routes and Customs]] tracks the work of completing the three unresolved elements of the KI geographic metaphor. All three are present in [[Pillars/Knowledge Islands/Concept/Concept|Concept]] and [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure|Structure]] but stub out at the point of specification — Harbour has conventions yet to be written, Routes and Customs exist as definitions without structural depth. The stream captures the open questions and provides a home for design thinking before the sections are written.
 
 ---
 
