@@ -28,6 +28,18 @@ The operating layer: who and what acts on the island, and how. Two distinct mode
 
 ---
 
+## Claude
+
+[[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude|Claude]] covers how Claude operates as an agent within the island: the five operating modes, behavioural constraints, and memory architecture. Claude is currently the primary agentic AI — it has direct write access, runs scheduled automations, and maintains persistent memory across sessions.
+
+---
+
+## ChatGPT
+
+[[Pillars/Knowledge Islands/Governance/Agents/ChatGPT/ChatGPT|ChatGPT]] is used as a read-heavy tool rather than an agent. Context is loaded manually; outputs are routed into the island by the user. No scheduled automations or direct write access. Documented here for structural consistency.
+
+---
+
 ## Related Topics
 
 - [[Pillars/Knowledge Islands/Governance/Governance|Governance]] - parent index

@@ -70,5 +70,5 @@ Infer the mode from the request, or ask if unclear:
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Claude|Claude]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude|Claude]] - parent index
 - [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - the scheduled tasks that use this skill

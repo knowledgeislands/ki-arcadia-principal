@@ -6,7 +6,7 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Document how Claude integrates with the island, including operating modes and routing rules
+purpose: Document how Claude is configured as a tool — Cowork connection, token economics, memory, and the activity prompt layer
 author: Written with Claude
 ---
 
@@ -14,7 +14,7 @@ author: Written with Claude
 
 ## Overview
 
-This note documents how Claude integrates with the island - both as a tool for querying existing knowledge and as a source of new notes to be captured into it. The integration is bidirectional: the island informs Claude, and Claude outputs are routed back into the island.
+This note documents the Claude tool layer — how Cowork connects Claude to the island, the token economics of the integration, and the prompt library for activities. How Claude operates as an agent (five modes, behavioural constraints, memory architecture) is documented in [[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude|Agents/Claude]].
 
 ---
 
@@ -28,23 +28,11 @@ The integration relies on three components:
 
 ---
 
-## Five Modes
+## Operating Modes
 
-**Save** - create a new note from a Claude conversation. Claude determines the correct folder using the routing rules in [[CLAUDE]], drafts the note in island format, and confirms before writing.
+Claude operates in five modes (Save, Update, Query, Extract, Digest) defined in [[Pillars/Knowledge Islands/Governance/Agents/Claude/Island Skill|Island Skill]]. The prompt that drives them is the island skill installed in Cowork — configured in [[Pillars/Knowledge Capital/Identity|Identity]].
 
-**Update** - enrich an existing note. Claude reads the current file first, then merges new content in without replacing existing structure.
-
-**Query** - answer a question from island content. Claude searches and reads relevant notes, then responds citing `[[Note Name]]` sources. If the answer can't be found in the island, it captures the answer as a new note and links it to related notes.
-
-**Extract** - distil a whole conversation. Claude reviews the session, identifies distinct reusable knowledge, proposes titles and destination folders for each piece, and writes the approved ones.
-
-**Digest** - write a session digest into today's daily Calendar note. Structured fields: Context, Decisions, Facts Learned, Related Projects, Keywords.
-
----
-
-## Routing Rules
-
-Routing is defined canonically in [[Structure]]. All Claude-generated notes carry the `source/claude` tag.
+All Claude-generated notes carry the `source/claude` tag. Routing is defined canonically in [[Structure]].
 
 ---
 
@@ -108,13 +96,10 @@ The `productivity:memory-management` skill provides a structured **deep memory**
 
 ## Contents
 
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Memory Architecture|Memory Architecture]] - auto-memory file conventions, canonical vs auxiliary classes, and the KB↔memory mapping for this KB
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Claude Behaviour|Claude Behaviour]] - behavioural constraints for Claude: what to do and avoid, regardless of who is using the KB
 - [[Pillars/Knowledge Islands/Governance/Tools/Claude/Cowork Configuration Layers|Cowork Configuration Layers]] - the four layers through which Claude receives preferences and rules, and what belongs in the Cowork project instructions box
 - [[Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons|Mistakes and Lessons]] - documented errors, resolutions, and lessons learned from Claude island sessions
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Island Skill|Island Skill]] - the Cowork skill that provides the five operating modes
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/AI Automation Patterns|AI Automation Patterns]] - design patterns for recurring AI automations, including the execution/change frequency caching principle
 - [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Live Artifacts|Live Artifacts]] - reusable prompts and design notes for Cowork live-artifact HTML pages
+- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Activities|Activities]] - the prompt library for scheduled and conversational activities; one subfolder per activity group
 
 ---
 

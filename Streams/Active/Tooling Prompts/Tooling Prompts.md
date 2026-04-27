@@ -1,0 +1,61 @@
+---
+tags:
+  - card/stream
+  - topic/ai
+  - topic/automation
+  - topic/knowledge-management
+status: in-progress - April 2026
+purpose: Track the work of building out the Tools/Claude/Activities/ prompt library — migrating, authoring, and refining the Layer 5 prompt layer
+author: Written with Claude
+---
+
+# Tooling Prompts
+
+## Overview
+
+Building out the `Tools/Claude/Activities/` prompt library — the Layer 5 content layer in the [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|five-layer model]]. This stream tracks migration of existing embedded prompts, authoring of new ones, and the ongoing discipline of keeping prompts aligned with their KB activity notes.
+
+The structural scaffolding (folder structure, stub index notes, authoring conventions) was created in the April 2026 governance restructuring session alongside [[Streams/Active/Knowledge Islands Inception/Knowledge Islands Inception|Knowledge Islands Inception]].
+
+---
+
+## Phase Summary
+
+| Phase | Status | Description |
+| --- | --- | --- |
+| Scaffolding | ✅ Complete | `Tools/Claude/Activities/` folder structure and stub indexes created; `Authoring Activities.md` written |
+| Email prompts | 🔲 Not started | Migrate Route Triage, Route Drift, Route Review, Re-route Triaged, Recap, Email Test prompts to Layer 5 |
+| Maintenance prompts | 🔲 Not started | Migrate Health Check, Knowledge Rebuild, Scheduled Task Audit, KB Convergence Check prompts |
+| Briefings prompts | 🔲 Not started | Migrate Morning Briefing prompt |
+| Linear prompts | 🔲 Not started | Migrate Linear Sync prompt |
+| Prompt sync audit | 🔲 Not started | Verify all Layer 5 prompts are in sync with their Cowork scheduled tasks |
+
+---
+
+## Design Decisions
+
+| Decision | Rationale |
+| --- | --- |
+| Layer 5 lives under `Tools/Claude/Activities/`, not `Activities/` | Prompts are Claude-specific and island-specific; Layer 1 (`Activities/`) stays agent-agnostic |
+| Stubs first, content second | Scaffolding unblocks the structural work; prompts migrate incrementally |
+| KB note is the draft; scheduled task is the release | Maintains the prompt editing discipline from [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] |
+| Each activity group gets its own subfolder | Mirrors the `Activities/` group structure for navigability |
+
+---
+
+## Open Issues
+
+| Issue | Notes |
+| --- | --- |
+| Route Triage prompt is ~200 lines — does it live inline or as a linked file? | Probably inline; island format uses H2 sections not separate files |
+| Some existing prompts reference `Tools/Claude/Island Skill.md` — needs updating to new path | `Agents/Claude/Island Skill.md` — catch in reference update pass |
+| Prompt sync status between KB notes and Cowork scheduler is unknown | Scheduled Task Audit will surface any drift on its next run |
+
+---
+
+## Related Topics
+
+- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Activities|Tools/Claude/Activities]] - the prompt library this stream is building
+- [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] - conventions governing prompt authoring and sync
+- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - Layer 1 notes that prompts implement
+- [[Streams/Active/Knowledge Islands Inception/Knowledge Islands Inception|Knowledge Islands Inception]] - sibling stream; governance restructuring that created the scaffold

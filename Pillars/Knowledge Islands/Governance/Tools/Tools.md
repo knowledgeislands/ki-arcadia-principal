@@ -24,7 +24,7 @@ The primary editor and visualisation environment for the island. [[Pillars/Knowl
 
 ## Claude
 
-The primary AI tool. [[Pillars/Knowledge Islands/Governance/Tools/Claude/Claude|Claude]] documents the Cowork integration, MCP connections, memory architecture, operating modes, automation patterns, and behavioural conventions.
+The primary AI tool. [[Pillars/Knowledge Islands/Governance/Tools/Claude/Claude|Claude]] documents the Cowork configuration layer: MCP connection, token economics, and the activity prompt library. How Claude operates as an agent — modes, behaviour, memory — is in [[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude|Agents/Claude]].
 
 ---
 

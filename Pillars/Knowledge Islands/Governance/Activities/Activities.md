@@ -16,7 +16,9 @@ memory_file:
 
 ## Overview
 
-Routine maintenance keeps the island accurate, well-structured, and free of stale content. Activities are either scheduled (time-driven, autonomous) or conversational (chat-triggered, human-in-the-loop). Each activity has its own note with full prompt and implementation detail.
+Routine maintenance keeps the island accurate, well-structured, and free of stale content. Activities are either scheduled (time-driven, autonomous) or conversational (chat-triggered, human-in-the-loop).
+
+This index covers Layer 1 content: what each activity does and why. The prompts that drive them — Claude-specific and island-specific — live at Layer 5 in [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Activities|Tools/Claude/Activities]]. For the full five-layer model and prompt authoring conventions, see [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]].
 
 ---
 
@@ -73,19 +75,6 @@ Daily automation that keeps the island aligned with the Linear project managemen
 
 ---
 
-## Scheduled Task Prompt Editing
-
-When iterating on a scheduled task's prompt via its KB activity note (the `## Prompt` section of the corresponding note in `Activities/`):
-
-- Edit the KB note freely - treat it as the draft. As many iterations as needed.
-- Do **not** call `update_scheduled_task` after every edit. The scheduled task is a release target, not a live editor.
-- Only push accumulated changes to the scheduled task when the user signals readiness: _"push it"_, _"sync the task"_, _"ready to run"_, or equivalent.
-- At the end of any session where prompt changes were made without a push, flag that the push is still pending.
-
-Pushing every small edit wastes API calls, creates noisy scheduler state, and risks a half-baked prompt running if a schedule fires mid-iteration.
-
----
-
 ## Per Session (AI-assisted)
 
 See [[Session Digest]] for the full convention and [[CLAUDE]] for the operational protocol.
@@ -94,4 +83,6 @@ See [[Session Digest]] for the full convention and [[CLAUDE]] for the operationa
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Management|Knowledge Management]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Governance|Governance]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] - how to design and maintain activities
+- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Activities|Tools/Claude/Activities]] - the prompt library (Layer 5)

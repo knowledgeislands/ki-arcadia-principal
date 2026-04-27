@@ -99,7 +99,7 @@ _The table below uses `{kb_prefix}` and `{user_prefix}` placeholders - substitut
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Claude|Claude]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude|Claude]] - parent index
 - [[Pillars/Knowledge Islands/Governance/Conventions/Residency/Residency|Residency]] - the three-tier model and residency principles this architecture implements
 - [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Knowledge Rebuild|Knowledge Rebuild]] - the scheduled task that maintains the canonical memory layer
 - [[Pillars/Knowledge Capital/Identity|KB Identity]] - source of `kb_prefix` and `user_prefix` values

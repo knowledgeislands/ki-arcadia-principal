@@ -80,7 +80,7 @@ For explicit invalidation, delete the cache file. The next run will recompile. T
 
 ## Concrete Example - Route Inbound
 
-The [[Pillars/Knowledge Islands/Governance/Activities/Email/Route Inbound|Route Inbound]] activity runs three times each working day. Its routing rules (the ordered rule list in `Email Routing Config.md` plus every `Route - *.md` file) change only when the user manually edits them or applies a suggestion - typically a few times a week at most.
+The [[Pillars/Knowledge Islands/Governance/Activities/Email/Route Triage|Route Triage]] activity runs three times each working day. Its routing rules (the ordered rule list in `Email Routing Config.md` plus every `Route - *.md` file) change only when the user manually edits them or applies a suggestion - typically a few times a week at most.
 
 Without a cache, every run parses 19+ Route files plus the routing rules note before doing any email work. With the ratio firmly in caching territory, the routing table is compiled once and stored as `tasks/email-triage/routing-table.json5`. Subsequent runs load a single pre-parsed file and skip source parsing entirely.
 
@@ -198,7 +198,7 @@ Preserve this comment through any regeneration or patch. It is the single source
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Claude|Claude]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/Agentic AI|Agentic AI]] - parent index
 - [[Pillars/Knowledge Islands/Governance/Activities/Email/Email|Email]] - the activity that originated the JSON5 Cache Pattern
 - [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - all scheduled activities; apply these patterns when designing new ones
 - [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Live Artifacts|Live Artifacts]] - source collection for the Live Artifact Patterns

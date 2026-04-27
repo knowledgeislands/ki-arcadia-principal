@@ -50,5 +50,5 @@ For the user's personal voice and communication style, see [[Pillars/Knowledge C
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Claude|Claude]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude|Claude]] - parent index
 - [[Pillars/Knowledge Capital/Communication Style|Communication Style]] - Kit's personal voice and style guide; feeds the user profile
