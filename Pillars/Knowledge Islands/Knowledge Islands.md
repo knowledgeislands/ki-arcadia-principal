@@ -47,7 +47,7 @@ Changes to canonical knowledge move through the [[Pillars/Knowledge Islands/Gove
 
 [[Pillars/Knowledge Islands/Governance/Governance|Governance]] covers the methodology, conventions, integrations, and maintenance activities
 
-TODO: exand and include a summary of Management here. the two subsections below should be put in the management section (most likely merged in)
+TODO: exand and include a summary of Governance here. the two subsections below should be put in the management section (most likely merged in)
 
 ### Physical Stores
 
