@@ -109,12 +109,14 @@ Streams that conclude (`Settled`) should have their durable knowledge already in
 Every folder must have an **index note** with the same name as the folder (e.g. `Productivity/Productivity.md`). The index note:
 
 - Acts as the entry point and overview for that folder
-- Introduces direct sub-notes in body prose — rich content is always preferred over a bare `## Contents` list
-- Uses a `## Contents` list only for children that cannot be meaningfully introduced in prose, and only at depth 1
 - Uses the collection card format (`card/note`) rather than the full Note template
 - Does **not** duplicate content — it contextualises and points
 
-When creating a new folder, create its index note at the same time. When auditing an existing folder, verify its index note exists and is up to date.
+**What an index note is not:** a nav menu. A list of sub-note names with one-line descriptions tells the reader nothing they could not learn from the folder structure itself. An index note earns its place by explaining what each sub-area contains, why it exists, and how it relates to the others — substantively enough that a reader can decide whether to follow a link without having to open it.
+
+**What an index note is:** a miniature overview of the subtree. The body should have a prose **Overview** section that explains the folder's purpose and how its contents fit together, followed by one named H2 section per direct child — not a `## Contents` list. Each child section introduces that sub-note or sub-folder in two to four sentences: what it covers, what problem it solves or what role it plays, and what a reader will find there. `## Contents` lists are a fallback for children that genuinely cannot be contextualised in prose, and only at depth 1.
+
+When creating a new folder, create its index note at the same time. When auditing an existing folder, verify its index note exists and is substantive — not a nav menu.
 
 **Calendar folder exception:** Time-based Calendar folders (year, month, week) use date-prefixed periodic notes as their effective entry points (e.g. `2026-03 March.md` within `2026-03 March/`). These do not require a separate same-named index file. Year folders are the exception — they require a `YYYY.md` index (e.g. `2026.md`) listing their month and week sub-folders, since no single periodic note covers the whole year.
 

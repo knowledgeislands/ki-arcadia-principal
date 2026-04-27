@@ -38,7 +38,7 @@ Collection cards follow the same structural rules as full notes but with fewer b
 
 - **Person cards** — role, context, relationship to the island, key notes
 - **Organisation cards** — what they are, relationship to the island, key contacts
-- **Index notes** — body prose introducing direct children; `## Contents` for any children not contextualised in the body
+- **Index notes** — one named H2 section per direct child, each introduced in two to four substantive sentences (what it covers, why it exists, what a reader will find). `## Contents` lists are a fallback only for children that cannot be contextualised in prose. A list of names with one-line descriptions is a nav menu, not an index note — avoid it.
 
 `## Further Reading` is rarely appropriate for collection cards. Omit it unless there is a clear reason to include it.
 

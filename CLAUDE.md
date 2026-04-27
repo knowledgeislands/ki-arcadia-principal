@@ -34,7 +34,11 @@ See [[Pillars-Resources Boundary]] for the specific boundary definition and link
 
 ### Index Notes (strictly enforced)
 
-Every folder must have an index note with the same name (e.g. `Productivity/Productivity.md`). It references all direct sub-notes at depth 1 via wikilinks, uses `card/note` format, and does not duplicate content. Create it when creating the folder.
+Every folder must have an index note with the same name (e.g. `Productivity/Productivity.md`). It uses `card/note` format and does not duplicate content — it contextualises and points. Create it when creating the folder.
+
+**Structure:** A prose `## Overview` section explaining the folder's purpose and how its contents fit together, followed by one named H2 section per direct child. Each child section introduces the sub-note or sub-folder in two to four substantive sentences — what it covers, why it exists, what a reader will find. A `## Contents` list is a last resort for children that cannot be contextualised in prose.
+
+**Anti-pattern:** A list of sub-note names with one-line descriptions is a nav menu — it tells the reader nothing they could not learn from the folder structure itself. Index notes must be richer than this.
 
 **Calendar exception:** Year folders require a `YYYY.md` index. Month and week folders use their date-prefixed periodic notes as entry points - no separate index note is needed.
 

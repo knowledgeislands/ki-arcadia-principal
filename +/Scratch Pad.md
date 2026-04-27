@@ -38,3 +38,19 @@ In the big one, we established the overall structure of the knowledge repository
   - No references to specific agents
 - `/Pillars/Knowledge Islands/Governance/Agents`
   - No references to specific activities
+
+## Duplication of content in Knowledge Islands and Knowledge Capital
+
+Look for this specifically to ensure that there is a canonical source of truth for each piece of information, and that the duplication is intentional and adds value rather than causing confusion.
+
+## Claude.md
+
+Needs updating
+
+## Acadia Skill
+
+???
+
+## Acadia Scheduled Tasks
+
+???
