@@ -2,7 +2,7 @@
 
 ## Depth first review of index notes
 
-Starting at `Knowledge Islands`, review each index note starting with the deepest first (leaf to root) and ensure that it is a suitably rich index page, until knowledge islands itself is reviewed and enriched.  For each page be sure to tell me you are starting to look at it, and we can make any calls through UI prompt in claude cowork, so that they can be factored into the rest of the review
+Starting at `Knowledge Islands`, review each index note starting with the deepest first (leaf to root) and ensure that it is a suitably rich index page, until knowledge islands itself is reviewed and enriched. For each page be sure to tell me you are starting to look at it, and we can make any calls through UI prompt in claude cowork, so that they can be factored into the rest of the review
 
 ## Auto Proposal Research Activity
 

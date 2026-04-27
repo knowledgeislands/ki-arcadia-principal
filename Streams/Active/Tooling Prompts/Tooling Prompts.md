@@ -21,25 +21,25 @@ The structural scaffolding (folder structure, stub index notes, authoring conven
 
 ## Phase Summary
 
-| Phase | Status | Description |
-| --- | --- | --- |
-| Scaffolding | ✅ Complete | `Tools/Claude/Activities/` folder structure and stub indexes created; `Authoring Activities.md` written |
-| Email prompts | 🔲 Not started | Migrate Route Triage, Route Drift, Route Review, Re-route Triaged, Recap, Email Test prompts to Layer 5 |
-| Maintenance prompts | 🔲 Not started | Migrate Health Check, Knowledge Rebuild, Scheduled Task Audit, KB Convergence Check prompts |
-| Briefings prompts | 🔲 Not started | Migrate Morning Briefing prompt |
-| Linear prompts | 🔲 Not started | Migrate Linear Sync prompt |
-| Prompt sync audit | 🔲 Not started | Verify all Layer 5 prompts are in sync with their Cowork scheduled tasks |
+| Phase               | Status         | Description                                                                                             |
+| ------------------- | -------------- | ------------------------------------------------------------------------------------------------------- |
+| Scaffolding         | ✅ Complete    | `Tools/Claude/Activities/` folder structure and stub indexes created; `Authoring Activities.md` written |
+| Email prompts       | 🔲 Not started | Migrate Route Triage, Route Drift, Route Review, Re-route Triaged, Recap, Email Test prompts to Layer 5 |
+| Maintenance prompts | 🔲 Not started | Migrate Health Check, Knowledge Rebuild, Scheduled Task Audit, KB Convergence Check prompts             |
+| Briefings prompts   | 🔲 Not started | Migrate Morning Briefing prompt                                                                         |
+| Linear prompts      | 🔲 Not started | Migrate Linear Sync prompt                                                                              |
+| Prompt sync audit   | 🔲 Not started | Verify all Layer 5 prompts are in sync with their Cowork scheduled tasks                                |
 
 ---
 
 ## Design Decisions
 
-| Decision | Rationale |
-| --- | --- |
-| Layer 5 lives under `Tools/Claude/Activities/`, not `Activities/` | Prompts are Claude-specific and island-specific; Layer 1 (`Activities/`) stays agent-agnostic |
-| Stubs first, content second | Scaffolding unblocks the structural work; prompts migrate incrementally |
-| KB note is the draft; scheduled task is the release | Maintains the prompt editing discipline from [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] |
-| Each activity group gets its own subfolder | Mirrors the `Activities/` group structure for navigability |
+| Decision                                                          | Rationale                                                                                                           |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| Layer 5 lives under `Tools/Claude/Activities/`, not `Activities/` | Prompts are Claude-specific and island-specific; Layer 1 (`Activities/`) stays agent-agnostic                       |
+| Stubs first, content second                                       | Scaffolding unblocks the structural work; prompts migrate incrementally                                             |
+| KB note is the draft; scheduled task is the release               | Maintains the prompt editing discipline from [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities | Authoring Activities]] |
+| Each activity group gets its own subfolder                        | Mirrors the `Activities/` group structure for navigability                                                          |
 
 ---
 

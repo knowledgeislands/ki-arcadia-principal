@@ -34,7 +34,7 @@ Activities that keep the island structurally sound, content-healthy, and free of
 | [[Inbox Review]]         | Conversational | _"kb inbox review"_       | Weekly - processes notes held in the `+/` inbox and files them to the correct Pillar or Stream                   |
 | [[Asset Audit]]          | Conversational | _"kb asset audit"_        | Weekly - surfaces unlinked repository assets and removes redundant ones                                          |
 | [[Status Review]]        | Conversational | _"kb status review"_      | Weekly - updates `status` frontmatter fields when a note's standing has changed                                  |
-| [[Structural Audit]]     | Conversational | _"kb structural audit"_   | Adhoc - comprehensive structural review of an island section or the whole repository                      |
+| [[Structural Audit]]     | Conversational | _"kb structural audit"_   | Adhoc - comprehensive structural review of an island section or the whole repository                             |
 | [[Wikilink Review]]      | Conversational | _"kb wikilink review"_    | Adhoc - surfaces broken wikilinks and orphan notes across the repository                                         |
 | [[KB Convergence Check]] | Conversational | _"kb convergence check"_  | Adhoc - compares shared notes across all KBs; surfaces drift; cross-pollinates improvements                      |
 

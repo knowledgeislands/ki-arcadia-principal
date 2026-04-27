@@ -62,13 +62,13 @@ The prefix distinguishes files from multiple KBs sharing the same `.auto-memory/
 
 **Canonical files** are managed exclusively by [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Knowledge Rebuild|Knowledge Rebuild]]. They are rewritten from the KB on a regular schedule. Do not edit them manually between rebuilds - changes will be overwritten. The five canonical files are:
 
-| File                                 | Source KB notes                                                                   |
-| ------------------------------------ | --------------------------------------------------------------------------------- |
-| `user_{user_prefix}_profile.md`      | KB Identity + Communication Style                                                 |
+| File                                 | Source KB notes                                                           |
+| ------------------------------------ | ------------------------------------------------------------------------- |
+| `user_{user_prefix}_profile.md`      | KB Identity + Communication Style                                         |
 | `project_{kb_prefix}_structure.md`   | Island Structure + Routing Rules + Knowledge Residency                    |
-| `project_{kb_prefix}_note_format.md` | Notes/Format + Notes/Frontmatter                                             |
-| `feedback_{kb_prefix}_operations.md` | Mistakes and Lessons + Activities                                                 |
-| `reference_{kb_prefix}_key_notes.md` | KB Identity + Activities + Integrations + Claude.md + Memory Architecture         |
+| `project_{kb_prefix}_note_format.md` | Notes/Format + Notes/Frontmatter                                          |
+| `feedback_{kb_prefix}_operations.md` | Mistakes and Lessons + Activities                                         |
+| `reference_{kb_prefix}_key_notes.md` | KB Identity + Activities + Integrations + Claude.md + Memory Architecture |
 
 **Auxiliary files** are created ad-hoc during sessions when Claude saves something worth preserving. They persist between rebuilds and are never overwritten by Knowledge Rebuild. They accumulate until promoted to the KB or explicitly pruned. See [[Pillars/Knowledge Islands/Governance/Conventions/Residency/Residency|Residency]] for promotion criteria and lifecycle.
 

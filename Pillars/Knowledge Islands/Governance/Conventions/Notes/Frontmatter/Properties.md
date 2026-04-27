@@ -36,12 +36,12 @@ All fields except `creator` are required. Frontmatter must be YAML properties â€
 
 `outdated` signals that a note has not been reviewed and should be verified before being relied on â€” typically applied to bulk-added notes or notes that have not kept pace with changes elsewhere. It is distinct from `archive`, which is a deliberate retirement of content that is no longer relevant.
 
-| Value       | Meaning                                                                    |
-| ----------- | -------------------------------------------------------------------------- |
-| `draft`     | Work in progress - content may be incomplete                               |
-| `current`   | Reviewed and up to date                                                    |
-| `outdated`  | Not reviewed - verify before relying on it                                 |
-| `archive`   | Deliberately retired - content is no longer relevant but preserved for reference |
+| Value      | Meaning                                                                          |
+| ---------- | -------------------------------------------------------------------------------- |
+| `draft`    | Work in progress - content may be incomplete                                     |
+| `current`  | Reviewed and up to date                                                          |
+| `outdated` | Not reviewed - verify before relying on it                                       |
+| `archive`  | Deliberately retired - content is no longer relevant but preserved for reference |
 
 ---
 

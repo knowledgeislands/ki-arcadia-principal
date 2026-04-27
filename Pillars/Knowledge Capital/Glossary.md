@@ -69,25 +69,25 @@ Knowledge Islands is not the only model of knowledge organisation. Other systems
 
 ## Governance & Change
 
-| Term              | Meaning                                                                                                                                                |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Term              | Meaning                                                                                                                                        |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | Enactment Process | The council's operating mechanism — how Streams enact change in the island; proposals are submitted, reviewed, ratified, returned, or rejected |
-| Contribution      | A proposed change to the Knowledge Capital, submitted through the Enactment Process for council review                                                 |
-| Customs           | Boundary rules governing what knowledge may enter or leave an island                                                                                   |
-| Ratify            | Council approves a change; it proceeds to rollout                                                                                                      |
-| Return            | Council sends a change back to draft for further work, with reasons                                                                                    |
-| Reject            | Council definitively rejects a change; terminal outcome, reasons recorded                                                                              |
+| Contribution      | A proposed change to the Knowledge Capital, submitted through the Enactment Process for council review                                         |
+| Customs           | Boundary rules governing what knowledge may enter or leave an island                                                                           |
+| Ratify            | Council approves a change; it proceeds to rollout                                                                                              |
+| Return            | Council sends a change back to draft for further work, with reasons                                                                            |
+| Reject            | Council definitively rejects a change; terminal outcome, reasons recorded                                                                      |
 
 ---
 
 ## Acronyms
 
-| Acronym | Meaning                                          |
-| ------- | ------------------------------------------------ |
-| KI      | Knowledge Island                                 |
-| KIA     | Knowledge Island Archipelago                     |
-| KIG     | Knowledge Island Governance                      |
-| KISS    | Knowledge Island Storage System                  |
+| Acronym | Meaning                                  |
+| ------- | ---------------------------------------- |
+| KI      | Knowledge Island                         |
+| KIA     | Knowledge Island Archipelago             |
+| KIG     | Knowledge Island Governance              |
+| KISS    | Knowledge Island Storage System          |
 | KB      | island — the text store and its contents |
 
 ---

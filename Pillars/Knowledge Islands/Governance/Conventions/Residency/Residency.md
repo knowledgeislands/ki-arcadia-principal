@@ -23,7 +23,7 @@ These tiers are complementary, not competing. The Library is what the knowledge 
 
 | Tier                 | What it is                                                                            | Lifetime                                          |
 | -------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------- |
-| **The Library**     | Structured notes in the KB vault - rules, conventions, style, architecture            | Permanent - versioned in git                      |
+| **The Library**      | Structured notes in the KB vault - rules, conventions, style, architecture            | Permanent - versioned in git                      |
 | **Canonical memory** | Operational distillation of KB notes - rebuilt regularly from the KB                  | Rebuilt on a schedule; always derived from the KB |
 | **Auxiliary memory** | In-flight observations from sessions - corrections, patterns, not-yet-validated rules | Temporary - promoted to KB or pruned              |
 

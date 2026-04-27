@@ -29,8 +29,7 @@ The Library's internal structure — top-level folders, routing rules, the Pilla
 
 ## Harbour
 
-> [!todo] Harbour
-> The Harbour is the port of entry — where incoming material arrives before being assessed and routed inward. Nothing flows directly from the Harbour into the Library; all material is assessed first, relevant content routed to the right Stream or zone, the rest discarded. The Harbour's structural conventions are not yet fully specified.
+> [!todo] Harbour The Harbour is the port of entry — where incoming material arrives before being assessed and routed inward. Nothing flows directly from the Harbour into the Library; all material is assessed first, relevant content routed to the right Stream or zone, the rest discarded. The Harbour's structural conventions are not yet fully specified.
 
 ---
 
@@ -48,13 +47,13 @@ Streams/$Focus/$Category/$ProposalName/$ProposalName.md
 
 **Focus** is mandatory. It expresses the current level of attention the stream is receiving:
 
-| Focus | Meaning |
-| --- | --- |
-| `Active` | Receiving focused attention |
-| `Background` | Being progressed in the background |
-| `Dormant` | Paused with intention to return |
-| `Future` | Planned or ideated; not yet started |
-| `Settled` | Concluded |
+| Focus        | Meaning                             |
+| ------------ | ----------------------------------- |
+| `Active`     | Receiving focused attention         |
+| `Background` | Being progressed in the background  |
+| `Dormant`    | Paused with intention to return     |
+| `Future`     | Planned or ideated; not yet started |
+| `Settled`    | Concluded                           |
 
 **Category** is optional. It groups related streams within a Focus for comprehensibility. Category can itself be a path. The guiding principle is easy navigation — too much depth is as unhelpful as too much breadth in a single level.
 
@@ -70,8 +69,7 @@ Category is a local decision. Active, Background, Dormant, and Future often shar
 
 ## Routes and Customs
 
-> [!todo] Routes and Customs
-> Routes are the explicit pathways and relationships between zones and between islands. Customs is the jurisdictional layer at each boundary, controlling what passes between territories. Both need fuller specification as the model develops.
+> [!todo] Routes and Customs Routes are the explicit pathways and relationships between zones and between islands. Customs is the jurisdictional layer at each boundary, controlling what passes between territories. Both need fuller specification as the model develops.
 
 ---
 

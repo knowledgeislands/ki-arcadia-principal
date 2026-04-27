@@ -73,11 +73,11 @@ These notes must remain byte-for-byte identical. Any difference is drift to be r
 
 These notes are intentionally different between KBs. Do not flag differences here as drift - verify only that the correct version is internally consistent.
 
-| Note | Why it differs |
-| --- | --- |
-| `Knowledge Capital/` (entire folder) | Identity, skill name, task prefix, integrations, routing rules, and canonical notes list - by design |
-| `Conventions/Structure/Structure.md` | Pillars/Resources boundary semantics, Calendar folder naming, and routing rules are specific to each KB |
-| `Tools/Claude/Mistakes and Lessons.md` | Logs KB-specific incidents - accumulates independently in each KB |
+| Note                                       | Why it differs                                                                                             |
+| ------------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
+| `Knowledge Capital/` (entire folder)       | Identity, skill name, task prefix, integrations, routing rules, and canonical notes list - by design       |
+| `Conventions/Structure/Structure.md`       | Pillars/Resources boundary semantics, Calendar folder naming, and routing rules are specific to each KB    |
+| `Tools/Claude/Mistakes and Lessons.md`     | Logs KB-specific incidents - accumulates independently in each KB                                          |
 | `Tools/Claude/Activities/` (entire folder) | Activity prompts are Claude-specific and island-specific; each KB maintains its own Layer 5 prompt library |
 
 ---

@@ -53,10 +53,10 @@ Git is the source of truth for canonical knowledge. The working space is ephemer
 
 The governance infrastructure belongs to the principal island and serves the entire archipelago. It is not a store — it is the operational layer through which knowledge is managed and evolved:
 
-| Infrastructure     | Purpose                                                                                               |
-| ------------------ | ----------------------------------------------------------------------------------------------------- |
-| **Cowork project** | The parliament — where proposals are reviewed, sessions are run, and archipelago-wide decisions made  |
-| **Working folder** | The yard — temporary scratch space for in-progress work; discarded once committed or abandoned        |
+| Infrastructure     | Purpose                                                                                              |
+| ------------------ | ---------------------------------------------------------------------------------------------------- |
+| **Cowork project** | The parliament — where proposals are reviewed, sessions are run, and archipelago-wide decisions made |
+| **Working folder** | The yard — temporary scratch space for in-progress work; discarded once committed or abandoned       |
 
 Specific paths for this island are defined in [[Physical Locations]].
 

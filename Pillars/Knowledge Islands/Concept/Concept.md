@@ -13,7 +13,7 @@ author: Written with Claude
 
 Knowledge Islands is a model for how knowledge can be structured, governed, and evolved — across individuals, communities, and generations. It treats knowledge not as a filing problem but as a civilisation question: who creates it, who holds authority over it, how it travels, and how it endures.
 
-The model is built in layers. It begins with what knowledge *is* — distinct from information and from wisdom — and how it matures through a continuous cycle of capture, connection, and reflection. It then provides a geographic framework: the island as the home of knowledge, with its Capital, Library, and Streams; the territory as the unit of governance; the archipelago as the larger structure that forms when territories connect. A jurisdictional model defines who holds authority over canonical knowledge and who may act within it. A governance layer makes all of this practical day to day.
+The model is built in layers. It begins with what knowledge _is_ — distinct from information and from wisdom — and how it matures through a continuous cycle of capture, connection, and reflection. It then provides a geographic framework: the island as the home of knowledge, with its Capital, Library, and Streams; the territory as the unit of governance; the archipelago as the larger structure that forms when territories connect. A jurisdictional model defines who holds authority over canonical knowledge and who may act within it. A governance layer makes all of this practical day to day.
 
 The diagram below shows the model at a glance — the island at the centre, the cycle that keeps it alive, and the structures through which knowledge extends beyond the individual.
 
@@ -37,8 +37,7 @@ Wisdom is the ability to use knowledge well: to judge, to choose, to act under u
 
 Information is the raw material that enters the system; knowledge is what is held and grown; wisdom is the goal. The work of a knowledge system is to take in information and, through deliberate effort, transform it into knowledge — and as that body of knowledge deepens over time, the conditions for wisdom are created.
 
-> "Where is the wisdom we have lost in knowledge? Where is the knowledge we have lost in information?"
-> — T.S. Eliot, *The Rock* (1934)
+> "Where is the wisdom we have lost in knowledge? Where is the knowledge we have lost in information?" — T.S. Eliot, _The Rock_ (1934)
 
 ---
 
@@ -72,8 +71,7 @@ The cycle produces two kinds of change. **Informational change** occurs when new
 
 These loops are not sequential — they run in parallel at different cadences. A single session may involve all three. The cumulative effect is that knowledge improves continuously rather than simply accumulating.
 
-> "Learning without thought is labour lost; thought without learning is perilous."
-> — Confucius, *Analects*
+> "Learning without thought is labour lost; thought without learning is perilous." — Confucius, _Analects_
 
 ---
 
@@ -112,8 +110,7 @@ The principal island also holds the shared operational infrastructure for the te
 
 Islands within a territory share the same governance conventions (note format, routing rules, enactment process) but maintain independent stores. A change to one island does not automatically affect another — each change goes through the territory's enactment process.
 
-> [!todo] Customs and Routes
-> Two further elements of the geographic model need fuller specification. **Customs** is the jurisdictional layer at each boundary, controlling what passes between territories. **Routes** are the explicit pathways and relationships between islands. Harbour is introduced above.
+> [!todo] Customs and Routes Two further elements of the geographic model need fuller specification. **Customs** is the jurisdictional layer at each boundary, controlling what passes between territories. **Routes** are the explicit pathways and relationships between islands. Harbour is introduced above.
 
 ---
 
@@ -151,12 +148,12 @@ An island may evolve its governance pattern as it grows. The processes that enac
 
 Every person who interacts with an island has a standing within it:
 
-|                           | Visitor  | Citizen  | Council Member |
-| ------------------------- | -------- | -------- | -------------- |
-| **Standing**              | Informal | Full     | Full |
-| **Council eligibility**   | ✗        | Eligible | Member |
-| **Formal proposals**      | ✗        | ✗        | ✓ via [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]] |
-| **Informal contribution** | ✓        | ✓        | ✓ |
+|                           | Visitor  | Citizen  | Council Member                                                           |
+| ------------------------- | -------- | -------- | ------------------------------------------------------------------------ | ------------------- |
+| **Standing**              | Informal | Full     | Full                                                                     |
+| **Council eligibility**   | ✗        | Eligible | Member                                                                   |
+| **Formal proposals**      | ✗        | ✗        | ✓ via [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process | Enactment Process]] |
+| **Informal contribution** | ✓        | ✓        | ✓                                                                        |
 
 Citizenship is a prerequisite for council membership — a council member must be a Citizen of the island they govern. The council (or governor, for single-governor islands) grants citizenship. Citizenship is not restricted to a single island; a person may hold citizenship across multiple territories simultaneously, and therefore be eligible for council membership in each. A Visitor with a substantive contribution may seek citizenship, or ask an existing council member to carry the proposal forward on their behalf.
 
@@ -170,8 +167,7 @@ Jurisdiction is enacted in practice through the [[Pillars/Knowledge Islands/Gove
 
 The operational layer that makes the island function day to day — conventions (note format, frontmatter, folder structure, routing rules), regular maintenance activities, integrations, and the processes that govern how knowledge changes over time.
 
-> [!todo] Governance
-> Expand based on Governance section
+> [!todo] Governance Expand based on Governance section
 
 ---
 
