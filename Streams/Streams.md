@@ -18,24 +18,45 @@ Streams are projects and workstreams organised by their current level of focus. 
 
 Live tracking view of all active proposals. Sorted by Stream (Active → Background → Dormant → Future → Settled), then by Status within each stream (`in-progress` → `ready` → `draft`). Update whenever a proposal is created, its status changes, or its priority changes. See [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]] for the full lifecycle.
 
-| Topic                                                                                                                           | Stream | Status        | Priority |
-| ------------------------------------------------------------------------------------------------------------------------------- | ------ | ------------- | -------- |
-| [[Streams/Active/Knowledge Islands Inception/Knowledge Islands Inception\|Knowledge Islands Inception]]                         | Active | `in-progress` | `urgent` |
-| [[Streams/Active/Kit Legal Inception/Kit Legal Inception\|Kit Legal Inception]]                                                 | Active | `draft`       | `urgent` |
-| [[Streams/Active/Kit Principal Inception/Kit Principal Inception\|Kit Principal Inception]]                                     | Active | `draft`       | `urgent` |
-| [[Streams/Active/Intention in Knowledge Islands/Intention in Knowledge Islands\|Intention in Knowledge Islands]]                | Active | `draft`       | `medium` |
-| [[Streams/Future/Future Improvements/Future Improvements\|Future Improvements]]                                                 | Future | `draft`       | `low`    |
-| [[Streams/Future/Token Economics for Scheduled Tasks/Token Economics for Scheduled Tasks\|Token Economics for Scheduled Tasks]] | Future | `draft`       | `low`    |
+| Topic                                                                                                                           | Stream     | Status        | Priority |
+| ------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------- | -------- |
+| [[Streams/Active/Tooling Prompts/Tooling Prompts\|Tooling Prompts]]                                                             | Active     | `in-progress` | `medium` |
+| [[Streams/Active/Kit Legal Inception/Kit Legal Inception\|Kit Legal Inception]]                                                 | Active     | `draft`       | `urgent` |
+| [[Streams/Active/Kit Principal Inception/Kit Principal Inception\|Kit Principal Inception]]                                     | Active     | `draft`       | `urgent` |
+| [[Streams/Active/Intention in Knowledge Islands/Intention in Knowledge Islands\|Intention in Knowledge Islands]]                | Active     | `draft`       | `medium` |
+| [[Streams/Background/Harbour Routes and Customs/Harbour Routes and Customs\|Harbour, Routes and Customs]]                       | Background | `draft`       | `low`    |
+| [[Streams/Future/Future Improvements/Future Improvements\|Future Improvements]]                                                 | Future     | `draft`       | `low`    |
+| [[Streams/Future/Token Economics for Scheduled Tasks/Token Economics for Scheduled Tasks\|Token Economics for Scheduled Tasks]] | Future     | `draft`       | `low`    |
 
 ---
 
-## Contents
+## Active
 
-- [[Streams/Active/Active|Active]] - streams currently receiving focused attention
-- [[Streams/Background/Background|Background]] - streams being progressed in the background
-- [[Streams/Dormant/Dormant|Dormant]] - streams paused with intention to return
-- [[Streams/Future/Future|Future]] - ideas and planned work not yet started
-- [[Streams/Settled/Settled|Settled]] - concluded streams kept for reference
+[[Streams/Active/Active|Active]] streams are receiving focused attention now — the work is happening. Active is not a queue; it should hold only what is genuinely in motion. When a stream stalls or loses urgency, it moves to Background or Dormant.
+
+---
+
+## Background
+
+[[Streams/Background/Background|Background]] streams are alive but not the current focus. They surface periodically, accumulate thinking, and may graduate to Active when circumstances change. A stream in Background is not forgotten — it is incubating.
+
+---
+
+## Dormant
+
+[[Streams/Dormant/Dormant|Dormant]] streams are paused with intention to return. Something specific blocked or deprioritised them — not abandoned, but not being worked. The distinction from Background is intent: Dormant means "we will return when the blocker clears"; Background means "we are working on it, just not urgently".
+
+---
+
+## Future
+
+[[Streams/Future/Future|Future]] holds ideas and planned work that has not yet started. Entries here are candidates for promotion to Active or Background when capacity or priority aligns. They are recorded so that nothing is lost to memory.
+
+---
+
+## Settled
+
+[[Streams/Settled/Settled|Settled]] holds concluded streams kept for reference. A stream moves here when its work is complete and its knowledge has been extracted to the appropriate Pillars notes. Over time, Settled entries may be removed entirely once their content has been fully absorbed.
 
 ---
 

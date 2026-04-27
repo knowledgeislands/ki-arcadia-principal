@@ -18,18 +18,39 @@ Inbox management as a scheduled, repeatable process. The goal is inbox zero acro
 
 ---
 
-## Activities
+## Scheduled Activities
 
-The six email activities divide into two scheduled automations that run without human prompting and four conversational activities triggered by phrase. See [[Pillars/Knowledge Islands/Governance/Activities/Email/Approach|Approach]] for the shared concepts, data model, and the routing taxonomy that all activities operate against.
+The two scheduled automations run without human prompting, driven by the cron parameters in [[Pillars/Knowledge Capital/Activities/Schedule|Schedule]].
 
-| Activity | Type | Schedule | Trigger | Summary |
-| --- | --- | --- | --- | --- |
-| [[Route Drift]] | Scheduled | Each working day at 08:00 | _"email route drift"_ | Reads tracking.json5; compares each recorded destination against the email's current folder; prunes re-routed entries and those older than 21 days |
-| [[Route Triage]] | Scheduled | Each working day at 09:00, 12:00, 18:00 | _"email route triage"_ | Combined aged archival + inbound routing in a single pass; applies aged rules to existing triage emails, then classifies new inbound with inline aged bypass; replaces Route Aged and Route Inbound |
-| [[Route Review]] | Conversational | - | _"email route review"_ | Runs taxonomy and collision checks; applies agreed/disagreed suggestions from the queue; re-evaluates `_TRIAGE/000 Unknown` against fresh rules |
-| [[Re-route Triaged]] | Conversational | - | _"email re-route triaged"_ | Steps through `_TRIAGE/000 Unknown` one email at a time; confirmed rules are written immediately so subsequent emails in the session benefit |
-| [[Recap]] | Conversational | - | _"email recap"_ | Summarises current triage state - folder counts, last run, pending suggestions - without running any processing |
-| [[Email Test]] | Conversational | - | _"email test"_ | Dry-runs both scheduled activities in order; reports what each would do without making any changes; use after structural changes or to verify a run |
+### Route Drift
+
+[[Pillars/Knowledge Islands/Governance/Activities/Email/Route Drift|Route Drift]] runs each working day at 08:00. It reads `tracking.json5` — the record of emails that were triaged to specific destinations — and compares each entry against where that email currently sits. Entries that have since been re-routed by the user, or that are older than 21 days, are pruned from the tracking file. Its purpose is to keep the tracking record clean so Route Triage is not confused by stale or redundant entries. Trigger phrase: _"email route drift"_.
+
+### Route Triage
+
+[[Pillars/Knowledge Islands/Governance/Activities/Email/Route Triage|Route Triage]] runs each working day at 09:00, 12:00, and 18:00. It combines two previously separate activities — aged archival and inbound routing — into a single pass: first it applies aged rules to emails that have been sitting in triage, then it classifies new inbound using the routing taxonomy with an inline aged bypass. This single-pass design reduces redundant reads and means that by end of day, every email that arrived has been assessed. Trigger phrase: _"email route triage"_.
+
+---
+
+## Conversational Activities
+
+The four conversational activities are triggered by phrase during a session and do not run on a schedule.
+
+### Route Review
+
+[[Pillars/Knowledge Islands/Governance/Activities/Email/Route Review|Route Review]] runs a health check across the routing system: it validates the taxonomy for consistency and collision, applies any pending agreed or disagreed suggestions from the suggestion queue, and re-evaluates the `_TRIAGE/000 Unknown` folder against the current ruleset. It is the maintenance activity for the routing rules themselves rather than for individual emails. Trigger phrase: _"email route review"_.
+
+### Re-route Triaged
+
+[[Pillars/Knowledge Islands/Governance/Activities/Email/Re-route Triaged|Re-route Triaged]] steps through `_TRIAGE/000 Unknown` one email at a time, prompting for a routing decision on each. Rules confirmed during the session are written immediately, so later emails in the same pass can benefit from freshly created rules. It is the mechanism for clearing the Unknown folder when automatic classification has not been able to resolve an email. Trigger phrase: _"email re-route triaged"_.
+
+### Recap
+
+[[Pillars/Knowledge Islands/Governance/Activities/Email/Recap|Recap]] produces a read-only summary of the current triage state: folder counts, the timestamp of the last scheduled run, and any pending suggestions awaiting decision. It makes no changes to the inbox or tracking file. Use it to get a quick picture of where things stand before deciding whether to run a full triage pass. Trigger phrase: _"email recap"_.
+
+### Email Test
+
+[[Pillars/Knowledge Islands/Governance/Activities/Email/Email Test|Email Test]] dry-runs both scheduled activities in sequence — Route Drift then Route Triage — and reports what each would do without making any actual changes. Use it after structural changes to the routing taxonomy, or to verify that a scheduled run will behave as expected before committing. Trigger phrase: _"email test"_.
 
 ---
 
