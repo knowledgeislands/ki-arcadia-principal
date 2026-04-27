@@ -1,0 +1,805 @@
+<!DOCTYPE html><script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "Email Pulse",
+  "schemaVersion": 1,
+  "description": "Live read-only view of the HNR Outlook _TRIAGE folder set - SVG pie and folder-count table with unread and flagged counts that re-query M365 on every open, with an optional per-folder message drill-down and a Suggestions panel for pending routing-queue entries. Companion to Email Status.md.",
+  "mcpTools": [
+    "mcp__mcp-m365__list-folders",
+    "mcp__mcp-m365__list-emails",
+    "mcp__mcp-m365__search-emails",
+    "mcp__hnr-knowledge-base-mcp-server__kb_read_note"
+  ],
+  "mcpServerNames": [
+    "mcp-m365",
+    "mcp-m365",
+    "mcp-m365",
+    "hnr-knowledge-base-mcp-server"
+  ]
+}
+</script>
+<html lang="en-GB">
+<head>
+<!-- Recipe: Pillars/Productivity/Knowledge Management/Integrations/Claude/Live Artifacts/Email Pulse Artifact.md -->
+<meta charset="UTF-8">
+<title>Email Pulse</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background: #fafaf7; color: #1f1f1f;
+  margin: 0; padding: 18px 22px 60px; font-size: 13px; line-height: 1.45;
+}
+h1 { font-size: 18px; margin: 0 0 6px; font-weight: 600; letter-spacing: -0.01em; }
+.meta {
+  color: #555; font-size: 12px; margin-bottom: 12px;
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap; min-height: 20px;
+}
+.meta strong { color: #1f1f1f; }
+.since-fresh { color: #4a4a4a; }
+.since-warn  { color: #b57400; }
+.since-alert { color: #b42318; font-weight: 600; }
+.delta-pill {
+  display: inline-block; padding: 2px 9px; border-radius: 999px;
+  background: #f6efda; color: #8a5a12; font-size: 11px; font-weight: 600;
+  border: 1px solid #e9dfbf; white-space: nowrap;
+}
+.delta-pill.neutral { background: #eeeeee; color: #555; border-color: #dadada; }
+.delta-pill.stale   { opacity: 0.6; }
+@keyframes shimmer {
+  0%   { background-position: -600px 0; }
+  100% { background-position:  600px 0; }
+}
+.skel {
+  background: linear-gradient(90deg, #ece9e0 25%, #f5f2eb 50%, #ece9e0 75%);
+  background-size: 600px 100%; animation: shimmer 1.4s infinite linear; border-radius: 4px;
+}
+.skel-circle {
+  width: 100%; aspect-ratio: 1; border-radius: 50%;
+  background: linear-gradient(90deg, #ece9e0 25%, #f5f2eb 50%, #ece9e0 75%);
+  background-size: 600px 100%; animation: shimmer 1.4s infinite linear;
+}
+.skel-meta { height: 14px; width: 65%; margin: 2px 0; }
+.skel-row-cell { height: 11px; border-radius: 3px; }
+.controls { display: flex; align-items: center; gap: 12px; margin: 6px 0 14px; flex-wrap: wrap; }
+.controls label { font-size: 12px; color: #444; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+.controls input[type="checkbox"] { margin: 0; }
+.cache-badge {
+  display: inline-flex; align-items: center; gap: 4px; font-size: 10px;
+  color: #6a6a5a; background: #edeae0; border: 1px solid #dcd8cc;
+  border-radius: 999px; padding: 1px 8px; white-space: nowrap;
+}
+.cache-badge.live { background: #e8f5e2; border-color: #b8dba8; color: #3a6627; }
+.actions { margin: 0 0 18px; padding: 10px 14px; background: #f6f4ec; border: 1px solid #e0dcd0; border-radius: 6px; }
+.actions-header { font-size: 11px; font-weight: 500; color: #777; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 7px; }
+.actions ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 3px; }
+.actions li { display: flex; align-items: center; gap: 10px; padding: 5px 8px; border-radius: 5px; cursor: pointer; transition: background 0.1s; }
+.actions li:hover { background: #eee9d4; }
+.actions li:hover .action-copy { opacity: 1; }
+.action-label { font-size: 12px; font-weight: 500; color: #3a3a33; min-width: 130px; flex: 0 0 auto; }
+.action-phrase {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 11px; color: #7a6430; background: #ede8d0; padding: 2px 6px; border-radius: 3px;
+  flex: 1 1 auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.action-copy { font-size: 10px; color: #999; flex: 0 0 auto; opacity: 0; transition: opacity 0.1s; white-space: nowrap; }
+.layout { display: grid; grid-template-columns: minmax(180px, 220px) 1fr; gap: 22px; align-items: start; }
+.pie-wrap { position: sticky; top: 8px; }
+@media (max-width: 560px) {
+  .layout { grid-template-columns: 1fr; }
+  .pie-wrap { max-width: 220px; margin: 0 auto 12px; position: static; }
+}
+svg.pie { width: 100%; height: auto; display: block; }
+table.folders { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+table.folders th, table.folders td { text-align: left; padding: 5px 8px; border-bottom: 1px solid #efece6; }
+table.folders th { font-size: 11px; color: #777; font-weight: 500; text-transform: uppercase; letter-spacing: 0.03em; }
+table.folders th.num, table.folders td.num { text-align: right; font-variant-numeric: tabular-nums; }
+table.folders tr.row.expandable { cursor: default; }
+table.folders tr.row.expandable.can-drill { cursor: pointer; }
+table.folders tr.row.expandable.can-drill:hover td { background: #f4f3ee; }
+table.folders tr.totals td { font-weight: 600; border-top: 2px solid #d7d3c5; border-bottom: none; padding-top: 9px; }
+table.folders tr.dim-row td { color: #a9a9a4; }
+.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; }
+.chev { display: inline-block; width: 12px; color: #999; transition: transform 0.15s; user-select: none; }
+.chev.open { transform: rotate(90deg); }
+.chev.hidden { visibility: hidden; }
+.unread-badge { display: inline-block; min-width: 16px; padding: 1px 5px; border-radius: 8px; background: #fde3cc; color: #8a4b0b; font-size: 11px; font-weight: 600; text-align: center; }
+.unread-badge.zero { background: transparent; color: #a9a9a4; font-weight: 400; }
+.drill { padding: 8px 14px 12px; background: #f6f4ec; border-left: 3px solid #e0dcd0; }
+.drill ul { list-style: none; padding: 0; margin: 0; }
+.drill li { padding: 6px 4px; border-bottom: 1px solid #eae6d6; cursor: pointer; line-height: 1.35; }
+.drill li:last-child { border-bottom: none; }
+.drill li:hover { background: #eee9d4; }
+.drill .subj { font-weight: 500; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.drill .from { color: #6a6a6a; font-size: 11px; margin-top: 2px; }
+.drill .empty { color: #8a8a84; font-style: italic; }
+.suggestions { margin-top: 22px; padding: 12px 16px; background: #fdf9ec; border: 1px solid #ecdfb7; border-radius: 6px; }
+.suggestions h2 { margin: 0 0 8px; font-size: 13px; color: #6a4a07; font-weight: 600; }
+.suggestions ul { list-style: none; padding: 0; margin: 0 0 8px; font-size: 12px; }
+.suggestions li { padding: 3px 0; color: #3a3a33; }
+.suggestions .match-note { color: #8a6f30; }
+.suggestions .hint { font-size: 11px; color: #7b5a14; }
+.suggestions.error { background: #fdeaea; border-color: #b42318; }
+.suggestions.error h2 { color: #6b1414; }
+.suggestions.error .hint { color: #8a3a3a; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; background: #f0ece0; padding: 1px 5px; border-radius: 3px; color: #3a2f12; }
+.error-banner { padding: 12px 16px; background: #fdeaea; border: 1px solid #b42318; color: #6b1414; border-radius: 6px; margin: 10px 0; font-size: 12px; }
+.mcp-unavail {
+  padding: 14px 18px; background: #eef3ff; border: 1px solid #a0b8e8;
+  border-radius: 6px; margin: 10px 0; color: #1a3670;
+}
+.mcp-unavail h3 { margin: 0 0 6px; font-size: 13px; font-weight: 600; color: #1a3670; }
+.mcp-unavail p { margin: 4px 0 0; font-size: 12px; color: #2a4480; line-height: 1.5; }
+.mcp-unavail code { background: #d6e4ff; color: #1a3670; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11px; }
+.mcp-unavail.suggestions { background: #eef3ff; border-color: #a0b8e8; margin-top: 22px; }
+.mcp-unavail .detail { margin-top: 8px; font-size: 11px; color: #4a6090; border-top: 1px solid #c0d0f0; padding-top: 6px; }
+.toast { position: fixed; bottom: 20px; right: 20px; padding: 8px 14px; background: #1f1f1f; color: #fff; font-size: 12px; border-radius: 6px; opacity: 0; transition: opacity 0.2s; pointer-events: none; z-index: 1000; }
+.toast.show { opacity: 1; }
+#debug-panel { margin-top: 14px; }
+.dbg-header {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 10px; font-weight: 700; color: #5a4a28;
+  padding: 5px 10px 5px 0; letter-spacing: 0.03em;
+  display: flex; align-items: center; gap: 10px;
+}
+.dbg-header .dbg-count { font-weight: 400; color: #8a7a5a; }
+.dbg-list {
+  border: 1px solid #cec8b0; border-radius: 4px; overflow: hidden;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 10px;
+}
+.dbg-item { border-bottom: 1px solid #e4dccc; }
+.dbg-item:last-child { border-bottom: none; }
+.dbg-row {
+  display: flex; align-items: baseline; gap: 0;
+  padding: 5px 8px; background: #f0ece0;
+  cursor: pointer; user-select: none; transition: background 0.1s;
+}
+.dbg-row:hover { background: #e8e2cc; }
+.dbg-item.open > .dbg-row { background: #e2d8c0; }
+.dbg-item.has-error > .dbg-row { background: #fdf0ee; }
+.dbg-item.has-error > .dbg-row:hover { background: #f8e4e0; }
+.dbg-item.has-error.open > .dbg-row { background: #f5dbd6; }
+.dbg-icon  { flex: 0 0 18px; font-size: 11px; line-height: 1; }
+.dbg-label { flex: 0 0 auto; max-width: 210px; font-weight: 700; color: #3a2f12; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-right: 10px; }
+.dbg-item.has-error .dbg-label { color: #7a1a10; }
+.dbg-stat  { flex: 1; color: #7a6a4a; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dbg-item.has-error .dbg-stat { color: #a03020; }
+.dbg-chev  { flex: 0 0 12px; color: #8a7a5a; font-size: 9px; text-align: right; padding-left: 4px; }
+.dbg-detail {
+  background: #faf8f2; border-top: 1px solid #ddd4b8;
+  padding: 10px 12px; white-space: pre-wrap; word-break: break-all;
+  max-height: 400px; overflow-y: auto; color: #3a2810;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 10px;
+}
+.dbg-item.has-error .dbg-detail { background: #fdf6f4; border-top-color: #e8c8c0; }
+.dbg-detail-label { font-weight: 700; display: block; margin-bottom: 4px; color: #2a1a08; }
+.dbg-detail-label.err-label { color: #7a1a10; }
+.dbg-sep { border: none; border-top: 1px solid #ddd4b8; margin: 10px 0; }
+.dbg-copy-btn {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 9px; padding: 1px 6px; border-radius: 3px; cursor: pointer;
+  border: 1px solid #cec8b0; background: #e8e2cc; color: #5a4a28;
+  margin-left: 8px; vertical-align: middle; transition: background 0.1s;
+}
+.dbg-copy-btn:hover { background: #d8d0b0; }
+.dbg-item.has-error .dbg-copy-btn { border-color: #e8c8c0; background: #f5dbd6; color: #7a1a10; }
+.dbg-item.has-error .dbg-copy-btn:hover { background: #eecec8; }
+</style>
+</head>
+<body>
+<h1>Email Pulse</h1>
+<div id="meta" class="meta"><span class="skel skel-meta"></span></div>
+
+<div class="controls">
+  <label><input id="drill-toggle" type="checkbox"> Show messages on click</label>
+  <label><input id="debug-toggle" type="checkbox"> Show raw responses</label>
+  <span id="cache-badge" class="cache-badge" style="display:none"></span>
+</div>
+
+<div class="actions">
+  <div class="actions-header">Actions - click to copy phrase, then paste into Claude</div>
+  <ul id="actions-list">
+    <li data-phrase="run the email route review">
+      <span class="action-label">Route Inbound</span>
+      <span class="action-phrase">run the email route review</span>
+      <span class="action-copy">copy ↗</span>
+    </li>
+    <li data-phrase="refresh Email Pulse snapshot">
+      <span class="action-label">Refresh Snapshot</span>
+      <span class="action-phrase">refresh Email Pulse snapshot</span>
+      <span class="action-copy">copy ↗</span>
+    </li>
+    <li data-phrase="review the email routing queue and suggest new rules">
+      <span class="action-label">Review Routing Queue</span>
+      <span class="action-phrase">review the email routing queue and suggest new rules</span>
+      <span class="action-copy">copy ↗</span>
+    </li>
+    <li data-phrase="process the 981 Delete and 991 Junk folders">
+      <span class="action-label">Clear Disposal</span>
+      <span class="action-phrase">process the 981 Delete and 991 Junk folders</span>
+      <span class="action-copy">copy ↗</span>
+    </li>
+  </ul>
+</div>
+
+<div id="content"></div>
+<div id="flagged-panel"></div>
+<div id="suggestions-panel" class="suggestions" style="display:none;"></div>
+<div id="footer" class="footer"></div>
+<div id="toast" class="toast"></div>
+
+<script>
+const LIST_FOLDERS  = "mcp__mcp-m365__list-folders";
+const LIST_EMAILS   = "mcp__mcp-m365__list-emails";
+const SEARCH_EMAILS = "mcp__mcp-m365__search-emails";
+const KB_READ_NOTE  = "mcp__hnr-knowledge-base-mcp-server__kb_read_note";
+
+const ROUTING_QUEUE_PATH =
+  "Pillars/Productivity/Knowledge Management/KB Specifics/Email/Email Routing Queue.md";
+
+const TRIAGE_FOLDER        = "_TRIAGE";
+const SNAPSHOT_TOTAL       = 427;
+const SNAPSHOT_AT          = "2026-04-21T18:16:21+01:00";
+const RUN_WARN_HOURS       = 4;
+const RUN_ALERT_HOURS      = 12;
+const STALE_SNAPSHOT_HOURS = 24;
+const DRILL_PAGE_SIZE      = 25;
+const TZ                   = "Europe/London";
+const CACHE_TTL            = 5 * 60 * 1000;
+const ERR_BRIEF_LEN        = 120;
+
+const FOLDER_ORDER = [
+  "000 Unknown", "101 Do", "102 Urgent",
+  "111 5G-EMERGE", "112 BEACON", "113 Bouygues",
+  "201 Decide", "221 News", "231 Networking",
+  "241 Media Industry", "251 Events",
+  "261 HNR Presales", "262 HNR Marketing", "263 HNR BizDev",
+  "281 HNR Exec", "282 HNR Finance", "283 HNR Investors", "284 HNR HR",
+  "301 Delegate", "311 HNR Expenses",
+  "401 Defer", "451 Read Later",
+  "901 Disposal", "981 Delete", "991 Junk",
+];
+
+const FOLDER_META = {
+  "000 Unknown":       "#9a9a94", "101 Do":           "#d94a4a",
+  "102 Urgent":        "#e67700", "111 5G-EMERGE":    "#1f77b4",
+  "112 BEACON":        "#2ca02c", "113 Bouygues":     "#9467bd",
+  "201 Decide":        "#8c564b", "221 News":         "#17becf",
+  "231 Networking":    "#bcbd22", "241 Media Industry":"#e377c2",
+  "251 Events":        "#98df8a", "261 HNR Presales": "#ffbb78",
+  "262 HNR Marketing": "#c49c94", "263 HNR BizDev":   "#aec7e8",
+  "281 HNR Exec":      "#d62728", "282 HNR Finance":  "#3f7f3f",
+  "283 HNR Investors": "#7f7fcf", "284 HNR HR":       "#ff9896",
+  "301 Delegate":      "#c5b0d5", "311 HNR Expenses": "#f7b6d2",
+  "401 Defer":         "#dbdb8d", "451 Read Later":   "#9edae5",
+  "901 Disposal":      "#c49696", "981 Delete":       "#6b4c3b",
+  "991 Junk":          "#4a4a4a",
+};
+
+function folderColor(name) {
+  if (FOLDER_META[name]) return FOLDER_META[name];
+  let h = 0;
+  for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) >>> 0;
+  return `hsl(${h % 360},55%,48%)`;
+}
+
+/* ── Cache ── */
+let _cache = null, _cacheTime = 0;
+function getCached() { return (_cache && (Date.now() - _cacheTime) < CACHE_TTL) ? _cache : null; }
+function setCache(d) { _cache = d; _cacheTime = Date.now(); }
+function clearCache() { _cache = null; _cacheTime = 0; }
+function cacheAgeLabel() {
+  if (!_cacheTime) return "";
+  const s = Math.round((Date.now() - _cacheTime) / 1000);
+  return s < 10 ? "just now" : s < 60 ? `${s}s ago` : `${Math.floor(s/60)}m ago`;
+}
+
+/* ── State ── */
+let _callIdSeq = 0;
+const state = {
+  drillOn: false, debugOn: false, parseMethod: "",
+  callLog: [], debugOpen: new Set(),
+  folderPaths: new Map(), folderIds: new Map(),
+  expanded: new Set(), drillCache: new Map(),
+};
+
+function buildFolderMaps(rows) {
+  state.folderPaths = new Map(rows.map(r => [r.name, r.path ?? (TRIAGE_FOLDER + "/" + r.name)]));
+  state.folderIds   = new Map(rows.filter(r => r.id).map(r => [r.name, r.id]));
+}
+function folderPath(name) {
+  return state.folderPaths.get(name) ?? (TRIAGE_FOLDER + "/" + name);
+}
+
+/* ── MCP wrapper ── */
+async function callMcp(toolName, params, label) {
+  const id = ++_callIdSeq;
+  const entry = { id, label: label || toolName.split('__').pop(), tool: toolName, params,
+    rawText: '', done: false, error: null, errorKind: null, t0: Date.now(), ms: 0 };
+  state.callLog.push(entry);
+  syncDebugVisibility();
+  try {
+    const res = await window.cowork.callMcpTool(toolName, params);
+    entry.ms = Date.now() - entry.t0; entry.rawText = extractText(res);
+    if (res?.isError) { entry.error = entry.rawText; entry.errorKind = 'api'; }
+    entry.done = true; syncDebugVisibility(); return res;
+  } catch (err) {
+    entry.ms = Date.now() - entry.t0; entry.error = err.message || String(err);
+    entry.errorKind = 'exception'; entry.done = true; syncDebugVisibility(); throw err;
+  }
+}
+
+/* ── Utilities ── */
+const $ = id => document.getElementById(id);
+function toast(msg) {
+  const el = $("toast"); el.textContent = msg; el.classList.add("show");
+  clearTimeout(toast._t); toast._t = setTimeout(() => el.classList.remove("show"), 1500);
+}
+async function copyToClipboard(text) {
+  if (navigator.clipboard?.writeText) {
+    try { await navigator.clipboard.writeText(text); toast("Copied - paste into Claude"); return; } catch (_) {}
+  }
+  try {
+    const ta = Object.assign(document.createElement("textarea"), { value: text });
+    ta.style.cssText = "position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;pointer-events:none;";
+    document.body.appendChild(ta); ta.focus(); ta.select();
+    if (document.execCommand("copy")) { document.body.removeChild(ta); toast("Copied - paste into Claude"); return; }
+    document.body.removeChild(ta);
+  } catch (_) {}
+  toast("“" + text + "”");
+}
+function hoursBetween(a, b) { return Math.abs(b - a) / 3_600_000; }
+function fmtInt(n) { return Number(n).toLocaleString("en-GB"); }
+function escapeHtml(s) { return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c])); }
+function escapeAttr(s) { return String(s).replace(/"/g, "&quot;"); }
+function fmtLondon(d, opts) { return new Date(d).toLocaleString("en-GB", { timeZone: TZ, ...opts }); }
+function formatSinceRun(iso) {
+  const now = new Date(), last = new Date(iso);
+  const hours = hoursBetween(last, now);
+  const hh = last.toLocaleTimeString("en-GB", { hour:"2-digit", minute:"2-digit", timeZone: TZ });
+  const rounded = hours < 1 ? `${Math.max(1, Math.round(hours*60))}m` : `${Math.round(hours)}h`;
+  const cls = hours >= RUN_ALERT_HOURS ? "since-alert" : hours >= RUN_WARN_HOURS ? "since-warn" : "since-fresh";
+  return { html: `<span class="${cls}">since last Route Inbound run ${escapeHtml(hh)} (\xb1${escapeHtml(rounded)} ago)</span>`, hours };
+}
+function relTime(date) {
+  if (!date || isNaN(date.getTime())) return "";
+  const d = (Date.now() - date.getTime()) / 1000;
+  if (d < 60) return "just now"; if (d < 3600) return `${Math.round(d/60)}m ago`;
+  if (d < 86400) return `${Math.round(d/3600)}h ago`; if (d < 604800) return `${Math.round(d/86400)}d ago`;
+  return date.toLocaleDateString("en-GB", { day:"numeric", month:"short", timeZone: TZ });
+}
+function extractText(res) {
+  if (!res) return "";
+  if (typeof res === "string") return res;
+  if (res.content && Array.isArray(res.content)) return res.content.map(c => c?.text ?? "").join("\n");
+  if (res.text) return res.text;
+  return JSON.stringify(res);
+}
+function safeParseJson(text) { try { return JSON.parse(text); } catch (_) { return null; } }
+function briefError(msg) {
+  const flat = (msg || '').replace(/\s+/g, ' ').trim();
+  return flat.length > ERR_BRIEF_LEN ? flat.slice(0, ERR_BRIEF_LEN) + '…' : flat;
+}
+/* Returns true when an error message indicates the MCP server is unavailable or
+   not in the artifact allowlist - as opposed to a successful MCP call that returned
+   an API-level error (e.g. 404, auth failure). */
+function isMcpConnectionError(msg) {
+  const s = (msg || '').toLowerCase();
+  return s.includes('allowlist') ||
+         s.includes('not connected') ||
+         s.includes('mcp server') ||
+         s.includes('connection refused') ||
+         s.includes('not available') ||
+         s.includes('tool not found') ||
+         s.includes('is not enabled') ||
+         s.includes('failed to connect');
+}
+
+/* ── Skeleton ── */
+function renderSkeleton() {
+  const rows = Array.from({length:12}, () =>
+    `<tr>
+      <td><span class="skel skel-row-cell" style="display:block;width:${60+Math.floor(Math.random()*30)}%"></span></td>
+      <td class="num"><span class="skel skel-row-cell" style="display:block;width:28px;margin-left:auto"></span></td>
+      <td class="num"><span class="skel skel-row-cell" style="display:block;width:20px;margin-left:auto"></span></td>
+      <td></td>
+    </tr>`).join("");
+  return `<div class="layout"><div class="pie-wrap"><div class="skel-circle"></div></div>
+    <div><table class="folders">
+      <thead><tr><th>Folder</th><th class="num">Count</th><th class="num">Unread</th><th></th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table></div></div>`;
+}
+
+/* ── Parsers ── */
+function parseFoldersJson(data) {
+  const triageItems = (data.items || []).filter(f => f.parentFolder === TRIAGE_FOLDER);
+  const orderIndex  = new Map(FOLDER_ORDER.map((n, i) => [n, i]));
+  const rows = triageItems.map(f => ({
+    name: f.displayName, path: `${TRIAGE_FOLDER}/${f.displayName}`,
+    id: f.id ?? null, count: f.totalItemCount ?? 0, unread: f.unreadItemCount ?? 0,
+  }));
+  rows.sort((a, b) => {
+    const ai = orderIndex.has(a.name) ? orderIndex.get(a.name) : Infinity;
+    const bi = orderIndex.has(b.name) ? orderIndex.get(b.name) : Infinity;
+    return ai !== bi ? ai - bi : a.name.localeCompare(b.name);
+  });
+  state.parseMethod = `json (${rows.length} folders from ${TRIAGE_FOLDER})`;
+  return rows;
+}
+
+function parseEmailsJson(data) {
+  if (!data?.items) return [];
+  return data.items.map(m => ({
+    date:      new Date(m.receivedDateTime ?? m.received ?? ""),
+    fromName:  m.from?.name  ?? m.fromName  ?? "",
+    fromEmail: m.from?.email ?? m.fromEmail ?? "",
+    subject:   m.subject ?? "",
+    folder:    m.folder ?? m.parentFolderName ?? m.folderDisplayName ?? null,
+  }));
+}
+
+function parseRoutingQueue(markdown) {
+  const lines = markdown.split("\n");
+  let lastRouteInboundRun = null;
+  const suggestions = [];
+  let section = null, headerSeen = false;
+  for (const line of lines) {
+    const t = line.trim();
+    if (/^## Run State\s*$/.test(t))   { section = "runstate";    headerSeen = false; continue; }
+    if (/^## Suggestions\s*$/.test(t)) { section = "suggestions"; headerSeen = false; continue; }
+    if (/^## /.test(t))                { section = null;           continue; }
+    if (!section || !t.startsWith("|")) continue;
+    if (/^\|[\s\-:|]+\|$/.test(t)) continue;
+    const cols = t.split("|").map(c => c.trim()).filter((_, i, a) => i > 0 && i < a.length - 1);
+    if (cols.length >= 1 && /^[\-:\s]+$/.test(cols[0])) continue;
+    if (section === "runstate") {
+      if (!headerSeen) { headerSeen = true; continue; }
+      if (cols[0] === "Last Route Inbound Run" && cols[1]) lastRouteInboundRun = cols[1].trim();
+    }
+    if (section === "suggestions") {
+      if (!headerSeen) { headerSeen = true; continue; }
+      if (cols.length < 4) continue;
+      const pattern = cols[0].replace(/^`|`$/g,"").trim();
+      const target  = cols[1].replace(/^`|`$/g,"").replace(/^\[\[|\]\]$/g,"").trim();
+      const status  = cols[2].trim().toLowerCase();
+      const matches = parseInt(cols[3].replace(/[^\d]/g,""),10) || 0;
+      if (status !== "agreed" && status !== "disagreed")
+        suggestions.push({ pattern, target, status: status || "pending", matches });
+    }
+  }
+  return { lastRouteInboundRun, fetchedAt: new Date().toISOString(), suggestions };
+}
+
+/* ── Flagged panel - DISABLED
+   The updated m365-assistant search-emails no longer has a flaggedOnly parameter.
+   To re-enable: use { unreadOnly: false, query: "flag:flagged", ... } or equivalent
+   once the correct query syntax is confirmed. ── */
+async function fetchFlaggedPanel() {
+  $("flagged-panel").innerHTML = "";  // disabled - remove this line to re-enable
+}
+
+/* ── Debug panel ── */
+function buildDebugHtml() {
+  if (!state.callLog.length) return '';
+  const done = state.callLog.filter(e => e.done).length, total = state.callLog.length;
+  const items = state.callLog.map(e => {
+    const isOpen = state.debugOpen.has(e.id), hasErr = !!e.error;
+    const icon = !e.done ? '⏳' : hasErr ? '❌' : '✓ ';
+    let stat;
+    if (!e.done) { stat = 'pending…'; }
+    else if (hasErr) { stat = briefError(e.error); }
+    else {
+      const data = safeParseJson(e.rawText);
+      stat = `${e.ms}ms \xb7 ${e.rawText.length} chars`;
+      const rc = data?.returnedCount; const ni = data?.items?.length;
+      if (rc != null) stat += ` \xb7 returnedCount: ${rc}`; else if (ni != null) stat += ` \xb7 ${ni} items`;
+    }
+    let detail = '';
+    if (isOpen) {
+      const reqText = `tool:   ${e.tool}\nparams: ${JSON.stringify(e.params, null, 2)}`;
+      let responseHtml;
+      if (!e.done) {
+        responseHtml = `<span class="dbg-detail-label">&#9658; Response</span>(still in flight)`;
+      } else if (hasErr) {
+        const kl = e.errorKind === 'api' ? 'API error - tool returned isError: true' : 'Exception thrown by runtime';
+        responseHtml = `<span class="dbg-detail-label err-label">&#9658; Error (${escapeHtml(kl)})</span>${escapeHtml(e.error)}`;
+        if (e.rawText && e.rawText !== e.error)
+          responseHtml += `<hr class="dbg-sep"><span class="dbg-detail-label">&#9658; Raw response body <button class="dbg-copy-btn" data-copy-cid="${e.id}" data-copy-type="raw">copy</button></span>${escapeHtml(e.rawText)}`;
+      } else {
+        responseHtml = `<span class="dbg-detail-label">&#9658; Response (${e.rawText.length} chars) <button class="dbg-copy-btn" data-copy-cid="${e.id}" data-copy-type="raw">copy</button></span>${escapeHtml(e.rawText || '(empty)')}`;
+      }
+      detail = `<div class="dbg-detail"><span class="dbg-detail-label">&#9658; Request</span>${escapeHtml(reqText)}<hr class="dbg-sep">${responseHtml}</div>`;
+    }
+    return `<div class="dbg-item${isOpen?' open':''}${hasErr?' has-error':''}" data-cid="${e.id}">
+      <div class="dbg-row"><span class="dbg-icon">${icon}</span>
+        <span class="dbg-label" title="${escapeAttr(e.label)}">${escapeHtml(e.label)}</span>
+        <span class="dbg-stat">${escapeHtml(stat)}</span>
+        <span class="dbg-chev">${isOpen?'▼':'▶'}</span></div>${detail}</div>`;
+  }).join('');
+  return `<div class="dbg-header">MCP Call Log <span class="dbg-count">${done}/${total} complete</span></div>
+  <div class="dbg-list">${items}</div>`;
+}
+function syncDebugVisibility() {
+  const footer = $("footer"); let panel = $("debug-panel");
+  if (!state.debugOn) { if (panel) panel.remove(); return; }
+  const html = buildDebugHtml(); if (!html) return;
+  if (!panel) { panel = document.createElement("div"); panel.id = "debug-panel"; footer.appendChild(panel); }
+  panel.innerHTML = html; attachDebugHandlers(panel);
+}
+function attachDebugHandlers(panel) {
+  panel.querySelectorAll('.dbg-item[data-cid]').forEach(item => {
+    item.querySelector('.dbg-row')?.addEventListener('click', () => {
+      const id = parseInt(item.dataset.cid, 10);
+      state.debugOpen.has(id) ? state.debugOpen.delete(id) : state.debugOpen.add(id);
+      syncDebugVisibility();
+    });
+    item.querySelectorAll('.dbg-copy-btn[data-copy-cid]').forEach(btn => {
+      btn.addEventListener('click', ev => {
+        ev.stopPropagation();
+        const cid = parseInt(btn.dataset.copyCid, 10);
+        const entry = state.callLog.find(e => e.id === cid);
+        if (entry?.rawText) copyToClipboard(entry.rawText);
+      });
+    });
+  });
+}
+
+/* ── Rendering ── */
+function renderPie(rows, total) {
+  const S = 200, r = 88, cx = S/2, cy = S/2;
+  const nz = rows.filter(row => row.count > 0);
+  if (!total || !nz.length)
+    return `<svg class="pie" viewBox="0 0 ${S} ${S}"><circle cx="${cx}" cy="${cy}" r="${r}" fill="#eee9d4"/></svg>`;
+  if (nz.length === 1)
+    return `<svg class="pie" viewBox="0 0 ${S} ${S}"><circle cx="${cx}" cy="${cy}" r="${r}" fill="${folderColor(nz[0].name)}"><title>${escapeHtml(nz[0].name)} - ${fmtInt(nz[0].count)}</title></circle></svg>`;
+  let a = -Math.PI / 2;
+  const slices = nz.map(row => {
+    const f = row.count/total, e = a + f*2*Math.PI;
+    const x1 = cx+r*Math.cos(a), y1 = cy+r*Math.sin(a);
+    const x2 = cx+r*Math.cos(e), y2 = cy+r*Math.sin(e);
+    const d = `M ${cx} ${cy} L ${x1.toFixed(2)} ${y1.toFixed(2)} A ${r} ${r} 0 ${f>0.5?1:0} 1 ${x2.toFixed(2)} ${y2.toFixed(2)} Z`;
+    a = e;
+    return `<path d="${d}" fill="${folderColor(row.name)}" stroke="#fafaf7" stroke-width="0.8"><title>${escapeHtml(row.name)} - ${fmtInt(row.count)}</title></path>`;
+  });
+  return `<svg class="pie" viewBox="0 0 ${S} ${S}" aria-label="Triage folder distribution">${slices.join("")}</svg>`;
+}
+
+function renderTable(rows) {
+  const total = rows.reduce((a,r) => a+r.count, 0), unread = rows.reduce((a,r) => a+r.unread, 0);
+  const body = rows.map(row => {
+    const zero = row.count === 0;
+    const rowCls = zero ? "row expandable dim-row" : "row expandable" + (state.drillOn ? " can-drill" : "");
+    const bdgCls = "unread-badge" + (row.unread === 0 ? " zero" : "");
+    return `<tr class="${rowCls}" data-folder="${escapeAttr(row.name)}">
+      <td><span class="dot" style="background:${folderColor(row.name)}"></span><code>${escapeHtml(row.name)}</code></td>
+      <td class="num">${fmtInt(row.count)}</td>
+      <td class="num"><span class="${bdgCls}">${fmtInt(row.unread)}</span></td>
+      <td><span class="chev${zero?' hidden':''}" data-folder="${escapeAttr(row.name)}">&#9656;</span></td>
+    </tr>
+    <tr class="drill-row" data-drill="${escapeAttr(row.name)}" style="display:none;">
+      <td colspan="4"><div class="drill" data-folder="${escapeAttr(row.name)}">Loading…</div></td>
+    </tr>`;
+  }).join("");
+  return `<table class="folders">
+    <thead><tr><th>Folder</th><th class="num">Count</th><th class="num">Unread</th><th></th></tr></thead>
+    <tbody>${body}
+      <tr class="totals"><td>Total</td><td class="num">${fmtInt(total)}</td><td class="num">${fmtInt(unread)}</td><td></td></tr>
+    </tbody></table>`;
+}
+
+function renderSuggestions(queue) {
+  const panel = $("suggestions-panel");
+  if (queue.error) {
+    panel.style.display = "block";
+    if (isMcpConnectionError(queue.error)) {
+      panel.className = "mcp-unavail suggestions";
+      panel.innerHTML = `<h3>Routing suggestions unavailable - KB MCP not connected</h3>
+        <p>This panel needs the <code>hnr-knowledge-base-mcp-server</code> MCP server to read the routing queue.</p>
+        <p>Reconnect <code>hnr-knowledge-base-mcp-server</code> in your Claude config and reload.</p>
+        <p class="detail">Error: ${escapeHtml(briefError(queue.error))}</p>`;
+    } else {
+      panel.className = "suggestions error";
+      panel.innerHTML = `<h2>Routing suggestions unavailable</h2>
+        <div class="hint">${escapeHtml(queue.error)}</div>`;
+    }
+    return;
+  }
+  if (!queue.suggestions?.length) { panel.style.display = "none"; return; }
+  panel.className = "suggestions";
+  const at = fmtLondon(queue.fetchedAt, { day:"numeric", month:"short", hour:"2-digit", minute:"2-digit" });
+  panel.innerHTML = `<h2>${queue.suggestions.length} pending routing suggestion${queue.suggestions.length===1?"":"s"}</h2>
+    <ul>${queue.suggestions.map(s =>
+      `<li><code>${escapeHtml(s.pattern)}</code> → <code>${escapeHtml(s.target)}</code>
+       <span class="match-note">\xb7 ${s.matches} match${s.matches===1?"":"es"}</span></li>`
+    ).join("")}</ul>
+    <div class="hint">Live as at ${escapeHtml(at)}. Edit <code>Email Routing Queue.md</code> to agree or dismiss.</div>`;
+  panel.style.display = "block";
+}
+
+function renderDrill(msgs) {
+  if (!msgs.length) return `<div class="empty">No messages returned.</div>`;
+  return `<ul>${msgs.map(m => {
+    const when = isNaN(m.date.getTime()) ? "" : relTime(m.date);
+    const whenAbs = isNaN(m.date.getTime()) ? "" : m.date.toLocaleString("en-GB", { timeZone: TZ });
+    return `<li data-subj="${escapeAttr(m.subject)}" data-from-name="${escapeAttr(m.fromName)}"
+                data-from-email="${escapeAttr(m.fromEmail)}" data-when="${escapeAttr(whenAbs)}">
+      <div class="subj">${escapeHtml(m.subject || "(no subject)")}</div>
+      <div class="from">${escapeHtml(m.fromName)} &lt;${escapeHtml(m.fromEmail)}&gt; \xb7 ${escapeHtml(when)}</div>
+    </li>`;
+  }).join("")}</ul>`;
+}
+
+function renderAll({ rows, total, unread, queue, latencyMs, fromCache }) {
+  const snapshotStale = hoursBetween(new Date(SNAPSHOT_AT), new Date()) > STALE_SNAPSHOT_HOURS;
+  const delta = total - SNAPSHOT_TOTAL;
+  const deltaCls = snapshotStale ? "delta-pill stale" : delta===0 ? "delta-pill neutral" : "delta-pill";
+  const sinceFragment = formatSinceRun(queue.lastRouteInboundRun || SNAPSHOT_AT);
+
+  if (sinceFragment.hours >= RUN_ALERT_HOURS) {
+    const li = document.querySelector('#actions-list li[data-phrase="run the email route review"]');
+    if (li) { li.style.background="#fff3f0"; li.querySelector(".action-label").style.color="#b42318"; }
+  }
+
+  $("meta").innerHTML = `
+    <span><strong>${fmtInt(total)}</strong> emails across ${rows.length} triage folders
+      \xb7 <strong>${fmtInt(unread)}</strong> unread \xb7 ${sinceFragment.html}</span>
+    <span class="${deltaCls}" title="vs Email Status snapshot at ${escapeAttr(fmtLondon(SNAPSHOT_AT))}">${delta>=0?"+":""}${fmtInt(delta)} since last run</span>`;
+
+  const badge = $("cache-badge");
+  badge.className   = fromCache ? "cache-badge" : "cache-badge live";
+  badge.textContent = fromCache ? `⚡ from cache \xb7 fetched ${cacheAgeLabel()}` : `↻ live \xb7 ${latencyMs}ms`;
+  badge.title       = fromCache ? "Served from memory - expires after 5 min." : "Fetched live from Outlook this load.";
+  badge.style.display = "";
+
+  $("content").innerHTML = `<div class="layout">
+    <div class="pie-wrap">${renderPie(rows, total)}</div>
+    <div>${renderTable(rows)}</div>
+  </div>`;
+  attachTableHandlers();
+  renderSuggestions(queue);
+
+  const queueNote  = queue.error ? "Routing queue: unavailable" : `Routing queue fetched live at ${escapeHtml(fmtLondon(queue.fetchedAt))}`;
+  const sourceNote = fromCache
+    ? `Served from memory cache (fetched ${cacheAgeLabel()} \xb7 expires after 5 min)`
+    : `Generated ${escapeHtml(fmtLondon(new Date()))} \xb7 list-folders in ${latencyMs}ms \xb7 ${state.parseMethod}`;
+  $("footer").innerHTML = `${sourceNote}<br>Snapshot baked from Email Status.md at ${escapeHtml(fmtLondon(SNAPSHOT_AT))} \xb7 ${queueNote}`;
+
+  if (total === 0) { state.debugOn = true; $("debug-toggle").checked = true; }
+  syncDebugVisibility();
+}
+
+/* ── Drill-down ── */
+async function toggleRow(folderName) {
+  const drillTr = document.querySelector(`tr.drill-row[data-drill="${CSS.escape(folderName)}"]`);
+  const chev    = document.querySelector(`.chev[data-folder="${CSS.escape(folderName)}"]`);
+  if (!drillTr) return;
+  if (state.expanded.has(folderName)) {
+    drillTr.style.display="none"; chev?.classList.remove("open"); state.expanded.delete(folderName); return;
+  }
+  drillTr.style.display=""; chev?.classList.add("open"); state.expanded.add(folderName);
+  const drillDiv = drillTr.querySelector(".drill");
+  if (state.drillCache.has(folderName)) { drillDiv.innerHTML = renderDrill(state.drillCache.get(folderName)); return; }
+  drillDiv.textContent = "Loading…";
+  try {
+    const res = await callMcp(LIST_EMAILS, { folder: folderPath(folderName), count: DRILL_PAGE_SIZE, responseFormat: "json" }, `list-emails: ${folderName}`);
+    if (res?.isError) throw new Error(extractText(res));
+    const msgs = parseEmailsJson(safeParseJson(extractText(res)));
+    state.drillCache.set(folderName, msgs);
+    drillDiv.innerHTML = renderDrill(msgs);
+  } catch (err) {
+    const errMsg = err.message || String(err);
+    if (isMcpConnectionError(errMsg)) {
+      drillDiv.innerHTML = `<div class="mcp-unavail" style="margin:0;border-radius:4px;">
+        <h3>M365 MCP not connected</h3>
+        <p>Reconnect <code>mcp-m365</code> and reload to browse messages.</p>
+      </div>`;
+    } else {
+      drillDiv.innerHTML = `<div class="error-banner">Could not load messages: ${escapeHtml(errMsg)}</div>`;
+    }
+  }
+}
+
+/* ── Event wiring ── */
+function attachTableHandlers() {
+  document.querySelectorAll("tr.row.expandable").forEach(tr => {
+    tr.addEventListener("click", () => {
+      if (!state.drillOn || tr.classList.contains("dim-row")) return;
+      toggleRow(tr.dataset.folder);
+    });
+  });
+  document.querySelectorAll(".drill").forEach(container => {
+    container.addEventListener("click", e => {
+      const li = e.target.closest("li"); if (!li) return;
+      copyToClipboard(`"${li.dataset.subj||"(no subject)"}" - ${li.dataset.fromName||""} <${li.dataset.fromEmail||""}>${li.dataset.when ? ` (${li.dataset.when})` : ""}`);
+    });
+  });
+}
+$("drill-toggle").addEventListener("change", e => {
+  state.drillOn = e.target.checked;
+  document.querySelectorAll("tr.row.expandable").forEach(tr => {
+    if (!tr.classList.contains("dim-row")) tr.classList.toggle("can-drill", state.drillOn);
+  });
+  if (!state.drillOn) {
+    document.querySelectorAll("tr.drill-row").forEach(tr => tr.style.display="none");
+    document.querySelectorAll(".chev").forEach(c => c.classList.remove("open"));
+    state.expanded.clear();
+  }
+});
+$("debug-toggle").addEventListener("change", e => { state.debugOn = e.target.checked; syncDebugVisibility(); });
+document.getElementById("actions-list").addEventListener("click", e => {
+  const li = e.target.closest("li[data-phrase]"); if (li) copyToClipboard(li.dataset.phrase);
+});
+
+/* ── Boot ── */
+async function boot({ force = false } = {}) {
+  if (force) clearCache();
+  const cached = getCached();
+  if (cached) {
+    buildFolderMaps(cached.rows);
+    renderAll({ ...cached, fromCache: true });
+    fetchFlaggedPanel();
+    return;
+  }
+
+  $("content").innerHTML = renderSkeleton();
+  const t0 = Date.now();
+
+  try {
+    const [foldersRes, queueRes] = await Promise.allSettled([
+      callMcp(LIST_FOLDERS, { includeChildren: true, includeItemCounts: true, responseFormat: "json" }, 'list-folders'),
+      callMcp(KB_READ_NOTE, { path: ROUTING_QUEUE_PATH }, 'kb_read_note: Email Routing Queue'),
+    ]);
+
+    if (foldersRes.status === "rejected") throw foldersRes.reason;
+    const foldersRaw = foldersRes.value;
+    if (foldersRaw?.isError) throw new Error(extractText(foldersRaw));
+
+    const foldersData = safeParseJson(extractText(foldersRaw));
+    if (!foldersData) throw new Error("list-folders did not return valid JSON");
+
+    const rows   = parseFoldersJson(foldersData);
+    buildFolderMaps(rows);
+    const total  = rows.reduce((a,r) => a+r.count,  0);
+    const unread = rows.reduce((a,r) => a+r.unread, 0);
+
+    let queue;
+    if (queueRes.status === "rejected") {
+      queue = { error: `Failed: ${queueRes.reason?.message??queueRes.reason}` };
+    } else if (queueRes.value?.isError) {
+      queue = { error: extractText(queueRes.value) };
+    } else {
+      try   { queue = parseRoutingQueue(extractText(queueRes.value)); }
+      catch (e) { queue = { error: `Parse error: ${e.message}` }; }
+    }
+
+    const latencyMs = Date.now() - t0;
+    setCache({ rows, total, unread, queue, latencyMs });
+    renderAll({ rows, total, unread, queue, latencyMs, fromCache: false });
+
+    fetchFlaggedPanel();
+
+  } catch (err) {
+    $("meta").innerHTML = "";
+    const errMsg = err.message || String(err);
+    if (isMcpConnectionError(errMsg)) {
+      $("content").innerHTML = `<div class="mcp-unavail">
+        <h3>Outlook folders unavailable - M365 MCP not connected</h3>
+        <p>This panel needs the <code>mcp-m365</code> MCP server to load Outlook folder data.</p>
+        <p>Reconnect <code>mcp-m365</code> in your Claude config and reload this artifact.</p>
+        <p class="detail">Error: ${escapeHtml(briefError(errMsg))}</p>
+      </div>`;
+    } else {
+      $("content").innerHTML = `<div class="error-banner"><strong>Could not load Outlook folders.</strong><br>${escapeHtml(errMsg)}</div>`;
+    }
+  }
+}
+
+boot();
+
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible' && !getCached()) boot();
+});
+</script>
+</body>
+</html>

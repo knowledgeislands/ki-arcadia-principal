@@ -1,0 +1,429 @@
+<!DOCTYPE html><script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "Slack Digest",
+  "schemaVersion": 1,
+  "description": "Live digest of Kit's Slack channel conversations and direct messages over the last 24 hours. Channels are discovered by name prefix (prd-, hnr-, group-) via slack_search_channels, fanned out to slack_read_channel for the 24h window, and summarised per-channel as a 2-3 sentence British-English paragraph via window.cowork.sample. DMs remain per-conversation. Refreshes on open.",
+  "mcpTools": [
+    "mcp__b27a16c4-79c7-4758-8d0a-4f4ade6af0d9__slack_search_public_and_private",
+    "mcp__b27a16c4-79c7-4758-8d0a-4f4ade6af0d9__slack_search_channels",
+    "mcp__b27a16c4-79c7-4758-8d0a-4f4ade6af0d9__slack_read_channel"
+  ],
+  "mcpServerNames": [
+    "Slack",
+    "Slack",
+    "Slack"
+  ]
+}
+</script>
+<html lang="en-GB">
+<head>
+<!-- Recipe: Pillars/Productivity/Knowledge Management/Integrations/Claude/Live Artifacts/Slack Digest Artifact.md -->
+<meta charset="UTF-8">
+<title>Slack digest</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:24px 28px 40px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',sans-serif; background:#fafafa; color:#1a1a1a; line-height:1.5; font-size:14px; }
+  header { margin-bottom:22px; }
+  h1 { font-size:20px; margin:0 0 4px 0; font-weight:600; letter-spacing:-0.01em; }
+  .subtitle { color:#666; font-size:12px; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  section { margin-bottom:28px; }
+  h2 { font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:#666; margin:0 0 12px 0; font-weight:600; display:flex; align-items:center; gap:8px; }
+  h3 { font-size:12px; color:#444; margin:14px 0 6px 0; font-weight:600; display:flex; align-items:center; gap:6px; }
+  h3:first-of-type { margin-top:0; }
+  .count { background:#ececec; color:#555; border-radius:10px; padding:1px 8px; font-size:10px; font-weight:600; letter-spacing:0.04em; }
+  h3 .count { font-size:10px; padding:0 6px; }
+  .card { background:white; border:1px solid #e5e5e5; border-radius:8px; padding:12px 14px; margin-bottom:8px; text-decoration:none; color:inherit; display:block; transition:border-color 0.1s ease,box-shadow 0.1s ease; }
+  .card:hover { border-color:#4A154B; box-shadow:0 1px 4px rgba(74,21,75,0.08); }
+  .card-head { display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-bottom:6px; }
+  .card-title { font-weight:600; font-size:13px; color:#1a1a1a; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .card-title .sender { color:#666; font-weight:400; }
+  .card-time { color:#999; font-size:11px; white-space:nowrap; flex-shrink:0; font-variant-numeric:tabular-nums; }
+  .card-summary { font-size:13px; color:#333; margin:0; }
+  .card-summary.loading { color:#aaa; font-style:italic; }
+  .card-replies { color:#888; font-size:11px; margin-top:4px; }
+  .empty { color:#999; font-size:13px; padding:4px 0; font-style:italic; }
+  .error { background:#fff3f3; border:1px solid #ffcccc; color:#c00; padding:12px 14px; border-radius:6px; font-size:13px; }
+  .spinner { display:inline-block; width:9px; height:9px; border:2px solid #ddd; border-top-color:#4A154B; border-radius:50%; animation:spin 0.7s linear infinite; vertical-align:-1px; margin-right:6px; }
+  @keyframes spin { to { transform:rotate(360deg); } }
+  /* Cache badge */
+  .cache-badge { font-size:10px; color:#6a6a5a; background:#edeae0; border:1px solid #dcd8cc; border-radius:999px; padding:1px 8px; white-space:nowrap; }
+  .cache-badge.live { background:#e8f5e2; border-color:#b8dba8; color:#3a6627; }
+  /* Shimmer skeleton */
+  @keyframes shimmer { 0%{background-position:-600px 0} 100%{background-position:600px 0} }
+  .skel { background:linear-gradient(90deg,#ece9e0 25%,#f5f2eb 50%,#ece9e0 75%); background-size:600px 100%; animation:shimmer 1.4s infinite linear; border-radius:4px; display:inline-block; }
+  .skel-card { background:white; border:1px solid #e5e5e5; border-radius:8px; padding:12px 14px; margin-bottom:8px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Slack digest</h1>
+  <div class="subtitle" id="subtitle-label"></div>
+</header>
+<div id="root">
+  <p class="empty"><span class="spinner"></span>Loading the last 24 hours…</p>
+</div>
+
+<script>
+// Module-level cache so it survives sidebar re-focus
+const CACHE_TTL = 5 * 60 * 1000;
+let _cache = null, _cacheTime = 0;
+const getCached = () => (_cache && (Date.now() - _cacheTime) < CACHE_TTL) ? _cache : null;
+const setCache  = d => { _cache = d; _cacheTime = Date.now(); };
+
+(async function () {
+  const SEARCH_TOOL   = 'mcp__b27a16c4-79c7-4758-8d0a-4f4ade6af0d9__slack_search_public_and_private';
+  const CHANNELS_TOOL = 'mcp__b27a16c4-79c7-4758-8d0a-4f4ade6af0d9__slack_search_channels';
+  const READ_TOOL     = 'mcp__b27a16c4-79c7-4758-8d0a-4f4ade6af0d9__slack_read_channel';
+  const CURRENT_USER_ID = 'U01MGHHM7MY';
+  const PREFIXES = ['prd-', 'hnr-', 'group-'];
+  const PREFIX_LABELS = { hnr:'HNR', prd:'Product & engineering', group:'Partner groups' };
+
+  const root = document.getElementById('root');
+  const subtitleLabel = document.getElementById('subtitle-label');
+
+  const now = new Date();
+  const windowStart = new Date(now.getTime() - 24 * 60 * 60 * 1000);
+  const windowStartUnix = Math.floor(windowStart.getTime() / 1000);
+  subtitleLabel.innerHTML = `Last 24 hours · since ${windowStart.toLocaleString('en-GB',{weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})} <span id="cache-badge-span"></span>`;
+
+  function showBadge(fromCache) {
+    const el = document.getElementById('cache-badge-span');
+    if (!el) return;
+    if (fromCache) {
+      el.innerHTML = `<span class="cache-badge">⚡ from cache · fetched ${Math.round((Date.now()-_cacheTime)/1000)}s ago</span>`;
+    } else {
+      el.innerHTML = '<span class="cache-badge live">↻ live</span>';
+    }
+  }
+
+  // ---------- helpers ----------
+  const escapeHtml = s => String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+  const fmtTime = tsStr => {
+    const m=/(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2})/.exec(tsStr||'');
+    if (!m) return '';
+    const d=new Date(`${m[1]}T${m[2]}:00`);
+    const diffMin=Math.round((Date.now()-d.getTime())/60000);
+    if (diffMin<1) return 'just now';
+    if (diffMin<60) return `${diffMin}m ago`;
+    const diffHr=Math.round(diffMin/60);
+    if (diffHr<24) return `${diffHr}h ago`;
+    return m[2];
+  };
+
+  function channelPrefix(channelName) {
+    const name=String(channelName||'').replace(/^#/,'');
+    const dash=name.indexOf('-');
+    const prefix=dash===-1?name:name.slice(0,dash);
+    return {key:prefix,label:PREFIX_LABELS[prefix]||(prefix.charAt(0).toUpperCase()+prefix.slice(1))};
+  }
+
+  function cleanSlackText(text) {
+    return String(text||'').replace(/<@[A-Z0-9]+\|([^>]+)>/g,'@$1').replace(/<@[A-Z0-9]+>/g,'@user')
+      .replace(/<#[A-Z0-9]+\|([^>]+)>/g,'#$1').replace(/<([^|>]+)\|([^>]+)>/g,'$2').replace(/<([^>]+)>/g,'$1')
+      .replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').trim();
+  }
+
+  function extractField(resp, fieldName) {
+    if (!resp) return '';
+    if (resp.structuredContent && typeof resp.structuredContent[fieldName]==='string') return resp.structuredContent[fieldName];
+    const textBlob=(resp.content&&resp.content[0]&&resp.content[0].text)||'';
+    if (typeof textBlob!=='string') return '';
+    const trimmed=textBlob.trim();
+    if (trimmed.startsWith('{')) { try { const p=JSON.parse(trimmed); return p[fieldName]||''; } catch{} }
+    return textBlob;
+  }
+
+  // ---------- skeleton ----------
+  function renderSkeleton() {
+    const skelCard = (wTitle=140, w1=90, w2=70) => `
+      <div class="skel-card">
+        <div class="card-head">
+          <span class="skel" style="width:${wTitle}px;height:12px"></span>
+          <span class="skel" style="width:38px;height:10px"></span>
+        </div>
+        <span class="skel" style="width:${w1}%;height:11px;display:block;margin-top:6px"></span>
+        <span class="skel" style="width:${w2}%;height:11px;display:block;margin-top:4px"></span>
+      </div>`;
+    return `
+      <section>
+        <h2><span class="skel" style="width:165px;height:11px"></span></h2>
+        ${skelCard(145,88,65)}${skelCard(120,92,72)}${skelCard(160,80,58)}
+      </section>
+      <section>
+        <h2><span class="skel" style="width:120px;height:11px"></span></h2>
+        ${skelCard(110,85,60)}${skelCard(130,78,55)}
+      </section>`;
+  }
+
+  // ---------- cached render ----------
+  function renderChannelCardCached(ch, idx) {
+    const meta=`${ch.messageCount} message${ch.messageCount===1?'':'s'} · ${ch.senderCount} ${ch.senderCount===1?'person':'people'}`;
+    return `<a class="card" href="${escapeHtml(ch.permalink)}" target="_blank" rel="noopener noreferrer">
+      <div class="card-head">
+        <div class="card-title">#${escapeHtml(ch.name)} <span class="sender">· ${escapeHtml(meta)}</span></div>
+        <div class="card-time">${escapeHtml(fmtTime(ch.latestTime))}</div>
+      </div>
+      <p class="card-summary" id="summary-${idx}">${escapeHtml(ch.summaryText)}</p>
+    </a>`;
+  }
+
+  function renderDMCardCached(g, idx) {
+    const replyNote=g.conversationCount>1?`<div class="card-replies">${g.conversationCount} messages</div>`:'';
+    return `<a class="card" href="${escapeHtml(g.headPermalink)}" target="_blank" rel="noopener noreferrer">
+      <div class="card-head">
+        <div class="card-title"><span class="sender">DM · </span><span>${escapeHtml(g.headFromName)}</span></div>
+        <div class="card-time">${escapeHtml(fmtTime(g.headTime))}</div>
+      </div>
+      <p class="card-summary" id="summary-${idx}">${escapeHtml(g.summaryText)}</p>
+      ${replyNote}
+    </a>`;
+  }
+
+  // ---------- channel discovery ----------
+  function parseChannelSearchResults(markdown) {
+    if (!markdown||!markdown.includes('### Result')) return [];
+    const blocks=markdown.split(/\n---\n/).map(b=>b.trim()).filter(b=>b.startsWith('### Result'));
+    const out=[];
+    for (const block of blocks) {
+      const nameMatch=/Name:\s*#([^\n]+)/.exec(block);
+      const linkMatch=/Permalink:\s*\[link\]\(([^)]+)\)/.exec(block);
+      const archivedMatch=/Is Archived:\s*(true|false)/.exec(block);
+      if (!nameMatch||!linkMatch) continue;
+      const permalink=linkMatch[1].trim();
+      const idMatch=/\/archives\/([A-Z0-9]+)/.exec(permalink);
+      if (!idMatch) continue;
+      out.push({name:nameMatch[1].trim(),id:idMatch[1],permalink,archived:archivedMatch?archivedMatch[1]==='true':false});
+    }
+    return out;
+  }
+
+  async function discoverChannelsByPrefix(prefix) {
+    const all=[];let cursor='';
+    for (let page=0;page<3;page++) {
+      const args={query:prefix,channel_types:'public_channel,private_channel',limit:20,response_format:'detailed'};
+      if (cursor) args.cursor=cursor;
+      const resp=await window.cowork.callMcpTool(CHANNELS_TOOL,args);
+      if (resp&&resp.isError) break;
+      const md=extractField(resp,'results');
+      all.push(...parseChannelSearchResults(md));
+      const pag=extractField(resp,'pagination_info')||'';
+      const cursorMatch=/cursor[:\s]*`([^`]+)`/.exec(pag);
+      if (cursorMatch){cursor=cursorMatch[1].trim();}else{break;}
+    }
+    return all.filter(c=>c.name.startsWith(prefix)&&!c.archived);
+  }
+
+  // ---------- channel reading ----------
+  function parseChannelMessages(markdown) {
+    if (!markdown||!markdown.includes('=== Message from')) return [];
+    const parts=markdown.split(/=== Message from /).slice(1);
+    const out=[];
+    for (const raw of parts) {
+      const headerMatch=/^([^()]+)\(([A-Z0-9]+)\)\s+at\s+([^=]+?)===/.exec(raw);
+      if (!headerMatch) continue;
+      const tsMatch=/Message TS:\s*([\d.]+)/.exec(raw);
+      const bodyMatch=/Message TS:\s*[\d.]+\s*\n([\s\S]*?)(?=\nThread:|\nFiles:|\nReactions:|$)/.exec(raw);
+      out.push({fromName:headerMatch[1].trim(),fromId:headerMatch[2].trim(),time:headerMatch[3].trim(),ts:tsMatch?tsMatch[1].trim():'',text:bodyMatch?bodyMatch[1].trim():''});
+    }
+    return out;
+  }
+
+  async function readChannelActivity(channel) {
+    try {
+      const resp=await window.cowork.callMcpTool(READ_TOOL,{channel_id:channel.id,oldest:String(windowStartUnix),limit:50,response_format:'detailed'});
+      if (resp&&resp.isError) return Object.assign({},channel,{messages:[],error:'fetch failed'});
+      const messages=parseChannelMessages(extractField(resp,'messages')).filter(m=>m.ts&&parseFloat(m.ts)>=windowStartUnix).sort((a,b)=>parseFloat(a.ts)-parseFloat(b.ts));
+      return Object.assign({},channel,{messages});
+    } catch(e){return Object.assign({},channel,{messages:[],error:e.message||String(e)});}
+  }
+
+  // ---------- DM helpers ----------
+  function parseSearchResults(markdown) {
+    if (!markdown||!markdown.includes('Result ')) return [];
+    const blocks=markdown.split(/\n---\n/).map(b=>b.trim()).filter(b=>b.startsWith('### Result'));
+    const results=[];
+    for (const block of blocks) {
+      const channelMatch=/Channel:\s*([^\n]+?)\s*\(ID:\s*([^)]+)\)/.exec(block);
+      const fromMatch=/From:\s*([^\n]+?)\s*\(ID:\s*([^)]+)\)/.exec(block);
+      const timeMatch=/Time:\s*([^\n]+)/.exec(block);
+      const tsMatch=/Message_ts:\s*([\d.]+)/.exec(block);
+      const linkMatch=/Permalink:\s*\[link\]\(([^)]+)\)/.exec(block);
+      const textMatch=/Text:\s*\n([\s\S]*?)(?:\nContext (?:before|after):|\n### |$)/.exec(block);
+      if (!channelMatch||!fromMatch) continue;
+      const ctx=[];const ctxRegex=/-\s+From:\s*([^\n]+?)\s*\(ID:\s*([^)]+)\)\s*\n\s*Message_ts:\s*([\d.]+)\s*\n\s+([^\n]*)/g;let m;
+      while((m=ctxRegex.exec(block))!==null){ctx.push({fromName:m[1].trim(),fromId:m[2].trim(),ts:m[3].trim(),text:m[4].trim()});}
+      results.push({channelLabel:channelMatch[1].trim(),channelId:channelMatch[2].trim(),fromName:fromMatch[1].trim(),fromId:fromMatch[2].trim(),time:timeMatch?timeMatch[1].trim():'',ts:tsMatch?tsMatch[1].trim():'',permalink:linkMatch?linkMatch[1].trim():'',text:textMatch?textMatch[1].trim():'',context:ctx});
+    }
+    return results;
+  }
+
+  async function runMessageSearch(query, extraArgs) {
+    const args=Object.assign({query,limit:20,sort:'timestamp',sort_dir:'desc',response_format:'detailed',after:String(windowStartUnix)},extraArgs||{});
+    const resp=await window.cowork.callMcpTool(SEARCH_TOOL,args);
+    if (resp&&resp.isError) throw new Error((resp.content&&resp.content[0]&&resp.content[0].text)||'unknown error');
+    return parseSearchResults(extractField(resp,'results'));
+  }
+
+  function groupDMsByChannel(messages) {
+    const groups=new Map();
+    for (const m of messages){if(!groups.has(m.channelId))groups.set(m.channelId,[]);groups.get(m.channelId).push(m);}
+    const out=[];
+    for (const [channelId,msgs] of groups) {
+      msgs.sort((a,b)=>parseFloat(b.ts)-parseFloat(a.ts));
+      const head=msgs[0];
+      const byTs=new Map();
+      for (const m of msgs){if(m.text&&parseFloat(m.ts)>=windowStartUnix)byTs.set(m.ts,{from:m.fromName,text:m.text});for(const c of m.context){if(c.text&&parseFloat(c.ts)>=windowStartUnix)byTs.set(c.ts,{from:c.fromName,text:c.text});}}
+      const conversation=Array.from(byTs.entries()).sort((a,b)=>parseFloat(a[0])-parseFloat(b[0])).map(([,v])=>v);
+      out.push({channelId,channelLabel:head.channelLabel,head,messageCount:msgs.length,conversation});
+    }
+    out.sort((a,b)=>parseFloat(b.head.ts)-parseFloat(a.head.ts));
+    return out;
+  }
+
+  // ---------- channel grouping ----------
+  function groupActiveChannelsByPrefix(activeChannels) {
+    const buckets=new Map();
+    for (const c of activeChannels){const p=channelPrefix(c.name);if(!buckets.has(p.key))buckets.set(p.key,{key:p.key,label:p.label,channels:[]});buckets.get(p.key).channels.push(c);}
+    const preferredOrder=['prd','hnr','group'];
+    const out=Array.from(buckets.values());
+    out.sort((a,b)=>{const ai=preferredOrder.indexOf(a.key),bi=preferredOrder.indexOf(b.key);if(ai!==-1||bi!==-1)return(ai===-1?99:ai)-(bi===-1?99:bi);return b.channels.length-a.channels.length||a.label.localeCompare(b.label);});
+    for (const bucket of out){bucket.channels.sort((a,b)=>{const at=a.messages.length?parseFloat(a.messages[a.messages.length-1].ts):0,bt=b.messages.length?parseFloat(b.messages[b.messages.length-1].ts):0;return bt-at;});}
+    return out;
+  }
+
+  // ---------- live render ----------
+  function renderChannelCard(c, idx) {
+    const latest=c.messages[c.messages.length-1];
+    const senders=new Set(c.messages.map(m=>m.fromName));
+    const meta=`${c.messages.length} message${c.messages.length===1?'':'s'} · ${senders.size} ${senders.size===1?'person':'people'}`;
+    return `<a class="card" href="${escapeHtml(c.permalink)}" target="_blank" rel="noopener noreferrer">
+      <div class="card-head">
+        <div class="card-title">#${escapeHtml(c.name)} <span class="sender">· ${escapeHtml(meta)}</span></div>
+        <div class="card-time">${escapeHtml(fmtTime(latest.time))}</div>
+      </div>
+      <p class="card-summary loading" id="summary-${idx}"><span class="spinner"></span>Summarising…</p>
+    </a>`;
+  }
+
+  function renderDMCard(g, idx) {
+    const title=`<span class="sender">DM · </span><span>${escapeHtml(g.head.fromName)}</span>`;
+    const replyNote=g.conversation.length>1?`<div class="card-replies">${g.conversation.length} messages</div>`:'';
+    return `<a class="card" href="${escapeHtml(g.head.permalink)}" target="_blank" rel="noopener noreferrer">
+      <div class="card-head"><div class="card-title">${title}</div><div class="card-time">${escapeHtml(fmtTime(g.head.time))}</div></div>
+      <p class="card-summary loading" id="summary-${idx}"><span class="spinner"></span>Summarising…</p>
+      ${replyNote}
+    </a>`;
+  }
+
+  // ---------- summarise ----------
+  async function summariseChannel(c, idx) {
+    const el=document.getElementById('summary-'+idx);
+    if (!el) return;
+    const lines=c.messages.slice(-30).map(m=>`${m.fromName}: ${cleanSlackText(m.text)}`).filter(l=>l.trim().length>l.indexOf(':')+2).join('\n');
+    const fallback=()=>{const senders=Array.from(new Set(c.messages.map(m=>m.fromName))).slice(0,3);const tail=c.messages[c.messages.length-1];const lastLine=cleanSlackText(tail.text||'').slice(0,140);el.textContent=`Recent activity from ${senders.join(', ')}${lastLine?'. Latest: '+lastLine:'.'}`;el.classList.remove('loading');};
+    if (!lines.trim()){fallback();return;}
+    try {
+      const r=await window.cowork.sample('Summarise the last 24 hours of this Slack channel in 2-3 short sentences using British English. Cover the main topics being discussed, key participants, and any decisions or open asks. Do not list every message; keep it tight and informative. Return only the paragraph - no preamble, no quotes, no headings.',[lines]);
+      if (r&&r.text&&!r.isError){el.textContent=r.text.trim().replace(/^["']|["']$/g,'').replace(/\s+/g,' ');el.classList.remove('loading');}else{fallback();}
+    } catch{fallback();}
+  }
+
+  async function summariseDM(g, idx) {
+    const el=document.getElementById('summary-'+idx);
+    if (!el) return;
+    const convoLines=(g.conversation.length?g.conversation:[{from:g.head.fromName,text:g.head.text}]).slice(-10).map(m=>`${m.from}: ${cleanSlackText(m.text)}`).join('\n');
+    const fallback=()=>{const firstMsg=cleanSlackText(g.conversation[0]?.text||g.head.text);el.textContent=firstMsg.length>160?firstMsg.slice(0,157)+'…':firstMsg;el.classList.remove('loading');};
+    try {
+      const r=await window.cowork.sample('Summarise this Slack DM conversation in one concise sentence (max 18 words) using British English. Return only the sentence - no preamble, no quotes.',[convoLines]);
+      if (r&&r.text&&!r.isError){el.textContent=r.text.trim().replace(/^["']|["']$/g,'').replace(/\s+/g,' ');el.classList.remove('loading');}else{fallback();}
+    } catch{fallback();}
+  }
+
+  // ---------- cache-hit render ----------
+  const cached = getCached();
+  if (cached) {
+    let html='';
+    html+=`<section><h2>Channel conversations <span class="count">${cached.activeChannelCount}</span></h2>`;
+    if (!cached.channelBuckets.some(b=>b.channels.length>0)) {
+      html+='<div class="empty">No channel activity in the last 24 hours.</div>';
+    } else {
+      let cIdx=0;
+      for (const bucket of cached.channelBuckets) {
+        if (!bucket.channels.length) continue;
+        html+=`<h3>${escapeHtml(bucket.label)} <span class="count">${bucket.channels.length}</span></h3>`;
+        for (const ch of bucket.channels){html+=renderChannelCardCached(ch,'c'+cIdx);cIdx++;}
+      }
+    }
+    html+='</section>';
+    html+=`<section><h2>Direct messages <span class="count">${cached.dmGroups.length}</span></h2>
+      ${cached.dmGroups.length===0?'<div class="empty">No new DMs in the last 24 hours.</div>':cached.dmGroups.map((g,i)=>renderDMCardCached(g,'d'+i)).join('')}
+    </section>`;
+    root.innerHTML=html;
+    showBadge(true);
+    return;
+  }
+
+  // ---------- show skeleton immediately ----------
+  root.innerHTML = renderSkeleton();
+
+  // ---------- main fetch ----------
+  try {
+    const [discoveredArr, toMeResults, dmResults] = await Promise.all([
+      Promise.all(PREFIXES.map(p=>discoverChannelsByPrefix(p))),
+      runMessageSearch('to:me'),
+      runMessageSearch(`-from:<@${CURRENT_USER_ID}>`,{channel_types:'im,mpim'})
+    ]);
+
+    const seenChannelIds=new Set();const uniqueChannels=[];
+    for (const ch of discoveredArr.flat()){if(seenChannelIds.has(ch.id))continue;seenChannelIds.add(ch.id);uniqueChannels.push(ch);}
+
+    const channelData=await Promise.all(uniqueChannels.map(readChannelActivity));
+    const activeChannels=channelData.filter(c=>c.messages.length>0);
+    const channelBuckets=groupActiveChannelsByPrefix(activeChannels);
+
+    const seenDM=new Set();
+    const dmMessages=[...toMeResults.filter(m=>m.channelId.startsWith('D')),...dmResults].filter(m=>{const key=m.channelId+':'+m.ts;if(seenDM.has(key))return false;seenDM.add(key);return true;});
+    const dmGroups=groupDMsByChannel(dmMessages);
+
+    let html='';
+    html+=`<section><h2>Channel conversations <span class="count">${activeChannels.length}</span></h2>`;
+    if (activeChannels.length===0){html+='<div class="empty">No channel activity in the last 24 hours.</div>';}
+    else{let cIdx=0;for(const bucket of channelBuckets){html+=`<h3>${escapeHtml(bucket.label)} <span class="count">${bucket.channels.length}</span></h3>`;for(const c of bucket.channels){html+=renderChannelCard(c,'c'+cIdx);cIdx++;}}}
+    html+='</section>';
+    html+=`<section><h2>Direct messages <span class="count">${dmGroups.length}</span></h2>${dmGroups.length===0?'<div class="empty">No new DMs in the last 24 hours.</div>':dmGroups.map((g,i)=>renderDMCard(g,'d'+i)).join('')}</section>`;
+    root.innerHTML=html;
+    showBadge(false);
+
+    // Phase 3: summarise in parallel
+    const channelTasks=[];let cIdx2=0;
+    for(const bucket of channelBuckets){for(const c of bucket.channels){channelTasks.push(summariseChannel(c,'c'+cIdx2));cIdx2++;}}
+    const dmTasks=dmGroups.map((g,i)=>summariseDM(g,'d'+i));
+    await Promise.all([...channelTasks,...dmTasks]);
+
+    // Store cache - collect summary text from DOM now that all summaries are complete
+    let cIdx3=0;
+    const cacheChannelBuckets=channelBuckets.map(bucket=>({
+      key:bucket.key,label:bucket.label,
+      channels:bucket.channels.map(c=>{
+        const idx='c'+cIdx3++;
+        const el=document.getElementById('summary-'+idx);
+        const latest=c.messages[c.messages.length-1];
+        const senders=new Set(c.messages.map(m=>m.fromName));
+        return{name:c.name,permalink:c.permalink,messageCount:c.messages.length,senderCount:senders.size,latestTime:latest.time,summaryText:el?el.textContent:''};
+      })
+    }));
+    const cacheDMGroups=dmGroups.map((g,i)=>{
+      const el=document.getElementById('summary-d'+i);
+      return{channelId:g.channelId,headFromName:g.head.fromName,headTime:g.head.time,headPermalink:g.head.permalink,conversationCount:g.conversation.length,summaryText:el?el.textContent:''};
+    });
+    setCache({channelBuckets:cacheChannelBuckets,dmGroups:cacheDMGroups,activeChannelCount:activeChannels.length});
+
+  } catch(e) {
+    root.innerHTML=`<div class="error">Couldn't load Slack activity: ${escapeHtml(e.message||String(e))}</div>`;
+  }
+})();
+</script>
+</body>
+</html>

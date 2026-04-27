@@ -1,0 +1,248 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 480" width="920" height="480"
+     font-family="ui-sans-serif, system-ui, -apple-system, sans-serif">
+
+
+<!-- ══════════════════════════════════════════════════════ -->
+  <!-- LHS - Email Stores (25 %, full height)               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <rect x="10" y="10" width="225" height="460" rx="7"
+        fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="10" y="10" width="225" height="36" rx="7" fill="#1d4ed8"/>
+  <rect x="10" y="33" width="225" height="13" fill="#1d4ed8"/>
+  <text x="122" y="28" text-anchor="middle" font-size="13" font-weight="700"
+        fill="white" dominant-baseline="middle">Email Stores</text>
+
+  <!-- Inbound -->
+  <rect x="25" y="56" width="195" height="128" rx="5"
+        fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="122" y="79" text-anchor="middle" fill="#1e3a8a"
+        font-size="13" font-weight="700">Inbound</text>
+  <line x1="25" y1="89" x2="220" y2="89" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="122" y="136" text-anchor="middle" fill="#1d4ed8"
+        font-size="11" font-family="ui-monospace, monospace">Inbox  ·  Sent</text>
+
+  <!-- Triage -->
+  <rect x="25" y="194" width="195" height="128" rx="5"
+        fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="122" y="217" text-anchor="middle" fill="#1e3a8a"
+        font-size="13" font-weight="700">Triage</text>
+  <line x1="25" y1="227" x2="220" y2="227" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="122" y="275" text-anchor="middle" fill="#1d4ed8"
+        font-size="11" font-family="ui-monospace, monospace">_TRIAGE</text>
+
+  <!-- Archive -->
+  <rect x="25" y="332" width="195" height="128" rx="5"
+        fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="122" y="355" text-anchor="middle" fill="#1e3a8a"
+        font-size="13" font-weight="700">Archive</text>
+  <line x1="25" y1="365" x2="220" y2="365" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="122" y="413" text-anchor="middle" fill="#1d4ed8"
+        font-size="11" font-family="ui-monospace, monospace">_ARCHIVE</text>
+
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- MIDDLE TOP - Scheduled (50 %, top half)              -->
+  <!-- Order: Route Drift · Route Aged · Route Inbound      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <rect x="260" y="10" width="450" height="175" rx="7"
+        fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="260" y="10" width="450" height="36" rx="7" fill="#15803d"/>
+  <rect x="260" y="33" width="450" height="13" fill="#15803d"/>
+  <text x="485" y="28" text-anchor="middle" font-size="13" font-weight="700"
+        fill="white" dominant-baseline="middle">⏱  Scheduled</text>
+
+  <!-- ── Route Triage (left, 50 %) ── -->
+  <rect x="278" y="56" width="201" height="121" rx="5" fill="white" stroke="#4ade80" stroke-width="1"/>
+  <rect x="278" y="56" width="201" height="28" rx="5" fill="#f0fdf4"/>
+  <rect x="278" y="70" width="201" height="14" fill="#f0fdf4"/>
+  <text x="379" y="70" text-anchor="middle" fill="#14532d" font-size="12"
+        font-weight="700" dominant-baseline="middle">Route Triage</text>
+  <line x1="278" y1="84" x2="479" y2="84" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="379" y="95" text-anchor="middle" fill="#15803d" font-size="10"
+        dominant-baseline="middle">09:00 · 12:00 · 18:00</text>
+  <line x1="278" y1="106" x2="479" y2="106" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="379" y="120" text-anchor="middle" fill="#166534" font-size="9.5"
+        dominant-baseline="middle">Aged archival + inbound routing</text>
+  <text x="379" y="134" text-anchor="middle" fill="#166534" font-size="9.5"
+        dominant-baseline="middle">in one pass; inline aged bypass</text>
+  <text x="379" y="149" text-anchor="middle" fill="#166534" font-size="9.5"
+        dominant-baseline="middle">for fast-ageing arrivals</text>
+
+  <!-- ── Route Drift (right, 50 %) ── -->
+  <rect x="489" y="56" width="202" height="121" rx="5" fill="white" stroke="#4ade80" stroke-width="1"/>
+  <rect x="489" y="56" width="202" height="28" rx="5" fill="#f0fdf4"/>
+  <rect x="489" y="70" width="202" height="14" fill="#f0fdf4"/>
+  <text x="590" y="70" text-anchor="middle" fill="#14532d" font-size="12"
+        font-weight="700" dominant-baseline="middle">Route Drift</text>
+  <line x1="489" y1="84" x2="691" y2="84" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="590" y="95" text-anchor="middle" fill="#15803d" font-size="10"
+        dominant-baseline="middle">08:00 daily</text>
+  <line x1="489" y1="106" x2="691" y2="106" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="590" y="120" text-anchor="middle" fill="#166534" font-size="9.5"
+        dominant-baseline="middle">Learn from your moves</text>
+  <text x="590" y="134" text-anchor="middle" fill="#166534" font-size="9.5"
+        dominant-baseline="middle">to improve the</text>
+  <text x="590" y="149" text-anchor="middle" fill="#166534" font-size="9.5"
+        dominant-baseline="middle">routing rules</text>
+
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- MIDDLE BOTTOM - Conversational (50 %, bottom half)   -->
+  <!-- Order: Route Review · Re-route Triaged               -->
+  <!--         Recap · Email Test                           -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <rect x="260" y="197" width="450" height="273" rx="7"
+        fill="#f3e8ff" stroke="#9333ea" stroke-width="1.5"/>
+  <rect x="260" y="197" width="450" height="36" rx="7" fill="#7e22ce"/>
+  <rect x="260" y="220" width="450" height="13" fill="#7e22ce"/>
+  <text x="485" y="215" text-anchor="middle" font-size="13" font-weight="700"
+        fill="white" dominant-baseline="middle">💬  Conversational</text>
+
+  <!-- ── Route Review (row 1, col 1 - x=278, y=243) ── -->
+  <rect x="278" y="243" width="202" height="104" rx="5" fill="white" stroke="#c084fc" stroke-width="1"/>
+  <rect x="278" y="243" width="202" height="28" rx="5" fill="#faf5ff"/>
+  <rect x="278" y="257" width="202" height="14" fill="#faf5ff"/>
+  <text x="379" y="257" text-anchor="middle" fill="#4c1d95" font-size="12"
+        font-weight="700" dominant-baseline="middle">Route Review</text>
+  <line x1="278" y1="271" x2="480" y2="271" stroke="#e9d5ff" stroke-width="1"/>
+  <text x="379" y="280" text-anchor="middle" fill="#7e22ce" font-size="10"
+        dominant-baseline="middle">on demand</text>
+  <line x1="278" y1="289" x2="480" y2="289" stroke="#e9d5ff" stroke-width="1"/>
+  <text x="379" y="305" text-anchor="middle" fill="#6b21a8" font-size="9.5"
+        dominant-baseline="middle">The human checkpoint -</text>
+  <text x="379" y="319" text-anchor="middle" fill="#6b21a8" font-size="9.5"
+        dominant-baseline="middle">approve suggestions &amp;</text>
+  <text x="379" y="333" text-anchor="middle" fill="#6b21a8" font-size="9.5"
+        dominant-baseline="middle">tidy the rule set</text>
+
+  <!-- ── Re-route Triaged (row 1, col 2 - x=490, y=243) ── -->
+  <rect x="490" y="243" width="202" height="104" rx="5" fill="white" stroke="#c084fc" stroke-width="1"/>
+  <rect x="490" y="243" width="202" height="28" rx="5" fill="#faf5ff"/>
+  <rect x="490" y="257" width="202" height="14" fill="#faf5ff"/>
+  <text x="591" y="257" text-anchor="middle" fill="#4c1d95" font-size="12"
+        font-weight="700" dominant-baseline="middle">Re-route Triaged</text>
+  <line x1="490" y1="271" x2="692" y2="271" stroke="#e9d5ff" stroke-width="1"/>
+  <text x="591" y="280" text-anchor="middle" fill="#7e22ce" font-size="10"
+        dominant-baseline="middle">on demand</text>
+  <line x1="490" y1="289" x2="692" y2="289" stroke="#e9d5ff" stroke-width="1"/>
+  <text x="591" y="305" text-anchor="middle" fill="#6b21a8" font-size="9.5"
+        dominant-baseline="middle">Interactively triage email</text>
+  <text x="591" y="319" text-anchor="middle" fill="#6b21a8" font-size="9.5"
+        dominant-baseline="middle">Claude couldn't classify</text>
+  <text x="591" y="333" text-anchor="middle" fill="#6b21a8" font-size="9.5"
+        dominant-baseline="middle">on its own</text>
+
+  <!-- ── Recap (row 2, col 1 - x=278, y=357) ── -->
+  <rect x="278" y="357" width="202" height="104" rx="5" fill="white" stroke="#c084fc" stroke-width="1"/>
+  <rect x="278" y="357" width="202" height="28" rx="5" fill="#faf5ff"/>
+  <rect x="278" y="371" width="202" height="14" fill="#faf5ff"/>
+  <text x="379" y="371" text-anchor="middle" fill="#4c1d95" font-size="12"
+        font-weight="700" dominant-baseline="middle">Recap</text>
+  <line x1="278" y1="385" x2="480" y2="385" stroke="#e9d5ff" stroke-width="1"/>
+  <text x="379" y="394" text-anchor="middle" fill="#7e22ce" font-size="10"
+        dominant-baseline="middle">on demand</text>
+  <line x1="278" y1="403" x2="480" y2="403" stroke="#e9d5ff" stroke-width="1"/>
+  <text x="379" y="419" text-anchor="middle" fill="#6b21a8" font-size="9.5"
+        dominant-baseline="middle">Quick read of where</text>
+  <text x="379" y="433" text-anchor="middle" fill="#6b21a8" font-size="9.5"
+        dominant-baseline="middle">things stand before</text>
+  <text x="379" y="447" text-anchor="middle" fill="#6b21a8" font-size="9.5"
+        dominant-baseline="middle">deciding what to run</text>
+
+  <!-- ── Email Test (row 2, col 2 - x=490, y=357) ── -->
+  <rect x="490" y="357" width="202" height="104" rx="5" fill="white" stroke="#c084fc" stroke-width="1"/>
+  <rect x="490" y="357" width="202" height="28" rx="5" fill="#faf5ff"/>
+  <rect x="490" y="371" width="202" height="14" fill="#faf5ff"/>
+  <text x="591" y="371" text-anchor="middle" fill="#4c1d95" font-size="12"
+        font-weight="700" dominant-baseline="middle">Email Test</text>
+  <line x1="490" y1="385" x2="692" y2="385" stroke="#e9d5ff" stroke-width="1"/>
+  <text x="591" y="394" text-anchor="middle" fill="#7e22ce" font-size="10"
+        dominant-baseline="middle">on demand</text>
+  <line x1="490" y1="403" x2="692" y2="403" stroke="#e9d5ff" stroke-width="1"/>
+  <text x="591" y="419" text-anchor="middle" fill="#6b21a8" font-size="9.5"
+        dominant-baseline="middle">Sanity-check the system</text>
+  <text x="591" y="433" text-anchor="middle" fill="#6b21a8" font-size="9.5"
+        dominant-baseline="middle">after changes without</text>
+  <text x="591" y="447" text-anchor="middle" fill="#6b21a8" font-size="9.5"
+        dominant-baseline="middle">touching any email</text>
+
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- RHS TOP - KB State (25 %, top half)                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <rect x="735" y="10" width="175" height="175" rx="7"
+        fill="#fefce8" stroke="#d97706" stroke-width="1.5"/>
+  <rect x="735" y="10" width="175" height="36" rx="7" fill="#b45309"/>
+  <rect x="735" y="33" width="175" height="13" fill="#b45309"/>
+  <text x="822" y="28" text-anchor="middle" font-size="13" font-weight="700"
+        fill="white" dominant-baseline="middle">KB State</text>
+
+  <!-- KB State Box 1: Email Routing Rules -->
+  <rect x="743" y="54" width="152" height="35" rx="4" fill="white" stroke="#fcd34d" stroke-width="1"/>
+  <rect x="743" y="54" width="152" height="16" rx="4" fill="#fef3c7"/>
+  <rect x="743" y="58" width="152" height="12" fill="#fef3c7"/>
+  <line x1="743" y1="70" x2="895" y2="70" stroke="#fcd34d" stroke-width="1"/>
+  <text x="819" y="62" text-anchor="middle" fill="#78350f" font-size="10" font-weight="700" dominant-baseline="middle">Email Routing Config</text>
+  <text x="819" y="80" text-anchor="middle" fill="#92400e" font-size="9" font-family="ui-monospace, monospace" dominant-baseline="middle">route files</text>
+
+  <!-- KB State Box 2: Email Routing Queue -->
+  <rect x="743" y="92" width="152" height="35" rx="4" fill="white" stroke="#fcd34d" stroke-width="1"/>
+  <rect x="743" y="92" width="152" height="16" rx="4" fill="#fef3c7"/>
+  <rect x="743" y="96" width="152" height="12" fill="#fef3c7"/>
+  <line x1="743" y1="108" x2="895" y2="108" stroke="#fcd34d" stroke-width="1"/>
+  <text x="819" y="100" text-anchor="middle" fill="#78350f" font-size="10" font-weight="700" dominant-baseline="middle">Email Routing Queue</text>
+  <text x="819" y="118" text-anchor="middle" fill="#92400e" font-size="9" dominant-baseline="middle">routing suggestions</text>
+
+  <!-- KB State Box 3: Email Status -->
+  <rect x="743" y="130" width="152" height="35" rx="4" fill="white" stroke="#fcd34d" stroke-width="1"/>
+  <rect x="743" y="130" width="152" height="16" rx="4" fill="#fef3c7"/>
+  <rect x="743" y="134" width="152" height="12" fill="#fef3c7"/>
+  <line x1="743" y1="146" x2="895" y2="146" stroke="#fcd34d" stroke-width="1"/>
+  <text x="819" y="138" text-anchor="middle" fill="#78350f" font-size="10" font-weight="700" dominant-baseline="middle">Email Status</text>
+  <text x="819" y="156" text-anchor="middle" fill="#92400e" font-size="9" dominant-baseline="middle">triage counts</text>
+
+  <text x="822" y="178" text-anchor="middle" fill="#92400e" font-size="9.5">KB Specifics/Email/</text>
+
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- RHS BOTTOM - Temp State (25 %, bottom half)          -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <rect x="735" y="197" width="175" height="273" rx="7"
+        fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <rect x="735" y="197" width="175" height="36" rx="7" fill="#475569"/>
+  <rect x="735" y="220" width="175" height="13" fill="#475569"/>
+  <text x="822" y="215" text-anchor="middle" font-size="13" font-weight="700"
+        fill="white" dominant-baseline="middle">Temp State</text>
+
+  <!-- Temp State Box 1: Routing Table -->
+  <rect x="743" y="241" width="152" height="70" rx="4" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="743" y="241" width="152" height="22" rx="4" fill="#f1f5f9"/>
+  <rect x="743" y="245" width="152" height="18" fill="#f1f5f9"/>
+  <line x1="743" y1="263" x2="895" y2="263" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="819" y="252" text-anchor="middle" fill="#334155" font-size="10" font-weight="700" dominant-baseline="middle">Routing Table</text>
+  <text x="819" y="280" text-anchor="middle" fill="#475569" font-size="9" font-family="ui-monospace, monospace" dominant-baseline="middle">routing-table.json5</text>
+  <text x="819" y="294" text-anchor="middle" fill="#64748b" font-size="9" dominant-baseline="middle">inbound route cache</text>
+
+  <!-- Temp State Box 2: Aged Table -->
+  <rect x="743" y="316" width="152" height="70" rx="4" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="743" y="316" width="152" height="22" rx="4" fill="#f1f5f9"/>
+  <rect x="743" y="320" width="152" height="18" fill="#f1f5f9"/>
+  <line x1="743" y1="338" x2="895" y2="338" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="819" y="327" text-anchor="middle" fill="#334155" font-size="10" font-weight="700" dominant-baseline="middle">Aged Table</text>
+  <text x="819" y="355" text-anchor="middle" fill="#475569" font-size="9" font-family="ui-monospace, monospace" dominant-baseline="middle">aged-table.json5</text>
+  <text x="819" y="369" text-anchor="middle" fill="#64748b" font-size="9" dominant-baseline="middle">aged rules cache</text>
+
+  <!-- Temp State Box 3: Tracking -->
+  <rect x="743" y="391" width="152" height="70" rx="4" fill="white" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="743" y="391" width="152" height="22" rx="4" fill="#f1f5f9"/>
+  <rect x="743" y="395" width="152" height="18" fill="#f1f5f9"/>
+  <line x1="743" y1="413" x2="895" y2="413" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="819" y="402" text-anchor="middle" fill="#334155" font-size="10" font-weight="700" dominant-baseline="middle">Tracking</text>
+  <text x="819" y="430" text-anchor="middle" fill="#475569" font-size="9" font-family="ui-monospace, monospace" dominant-baseline="middle">tracking.json5</text>
+  <text x="819" y="444" text-anchor="middle" fill="#64748b" font-size="9" dominant-baseline="middle">in-flight email state</text>
+
+  <text x="822" y="467" text-anchor="middle" fill="#475569" font-size="9.5">tasks/email-triage/</text>
+
+
+
+</svg>

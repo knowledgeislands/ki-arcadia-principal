@@ -1,0 +1,97 @@
+---
+tags:
+  - card/note
+  - topic/productivity
+  - topic/automation
+  - source/claude
+status: current - April 2026
+purpose: Index and overview of island activities - scheduled automations and conversational triggers
+author: Written with Claude
+memory_file:
+  - reference_{kb_prefix}_key_notes.md
+  - feedback_{kb_prefix}_operations.md
+---
+
+# Activities
+
+## Overview
+
+Routine maintenance keeps the island accurate, well-structured, and free of stale content. Activities are either scheduled (time-driven, autonomous) or conversational (chat-triggered, human-in-the-loop). Each activity has its own note with full prompt and implementation detail.
+
+---
+
+## [[Maintenance]]
+
+Activities that keep the island structurally sound, content-healthy, and free of stale or orphaned material - spanning daily automations through to weekly reviews and deeper adhoc audits.
+
+| Activity                 | Type           | When                      | Summary                                                                                                          |
+| ------------------------ | -------------- | ------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| [[Scheduled Task Audit]] | Scheduled      | Each working day at 05:00 | Compares live scheduled task prompts against KB notes; reconciles any drift; runs first before other automations |
+| [[Health Check]]         | Scheduled      | Mondays at 08:00          | Reviews structural drift, skill alignment, and content health across the repository                              |
+| [[Knowledge Rebuild]]    | Scheduled      | Wednesdays at 07:00       | Reconstructs Claude's auto-memory from canonical meta notes; keeps the memory layer accurate as the KB evolves   |
+| [[Inbox Review]]         | Conversational | _"kb inbox review"_       | Weekly - processes notes held in the `+/` inbox and files them to the correct Pillar or Stream                   |
+| [[Asset Audit]]          | Conversational | _"kb asset audit"_        | Weekly - surfaces unlinked repository assets and removes redundant ones                                          |
+| [[Status Review]]        | Conversational | _"kb status review"_      | Weekly - updates `status` frontmatter fields when a note's standing has changed                                  |
+| [[Structural Audit]]     | Conversational | _"kb structural audit"_   | Adhoc - comprehensive structural review of an island section or the whole repository                      |
+| [[Wikilink Review]]      | Conversational | _"kb wikilink review"_    | Adhoc - surfaces broken wikilinks and orphan notes across the repository                                         |
+| [[KB Convergence Check]] | Conversational | _"kb convergence check"_  | Adhoc - compares shared notes across all KBs; surfaces drift; cross-pollinates improvements                      |
+
+---
+
+## [[Briefings]]
+
+Daily automations that prime the island at the start of each day - creating missing calendar infrastructure and surfacing agenda, task, and inbox context.
+
+| Activity | Type | When | Summary |
+| --- | --- | --- | --- |
+| [[Morning Briefing]] | Scheduled | Each working day at 06:00 | Prepares today's daily note with calendar events, due and overdue tasks, upcoming tasks for the next 5 working days, and inbox items; creates missing weekly or monthly notes as needed |
+
+---
+
+## [[Email]]
+
+Inbox management as a scheduled, repeatable process. The goal is inbox zero across each working day, with each message triaged to a clear outcome. See [[Pillars/Knowledge Islands/Governance/Activities/Email/Approach|Approach]] for the shared concepts, definitions, and data model.
+
+| Activity | Type | When | Summary |
+| --- | --- | --- | --- |
+| [[Route Drift]] | Scheduled | Each working day at 08:00 - _"email route drift"_ | Reads tracking.json5; compares each recorded destination against the email's current folder; prunes re-routed entries and those older than 21 days |
+| [[Route Triage]] | Scheduled | Each working day at 09:00, 12:00, 18:00 - _"email route triage"_ | Combined aged archival + inbound routing in a single pass; applies aged rules to existing triage emails, then classifies new inbound with inline aged bypass; replaces Route Aged and Route Inbound |
+| [[Route Review]] | Conversational | _"email route review"_ | Runs taxonomy and collision checks; applies agreed/disagreed suggestions from the queue; re-evaluates `_TRIAGE/000 Unknown` against fresh rules |
+| [[Re-route Triaged]] | Conversational | _"email re-route triaged"_ | Steps through `_TRIAGE/000 Unknown` one email at a time; confirmed rules are written immediately so subsequent emails in the session benefit |
+| [[Recap]] | Conversational | _"email recap"_ | Summarises current triage state - folder counts, last run, pending suggestions - without running any processing |
+| [[Email Test]] | Conversational | _"email test"_ | Dry-runs both scheduled activities in order; reports what each would do without making any changes; use after structural changes or to verify a run |
+
+---
+
+## [[Linear]]
+
+Daily automation that keeps the island aligned with the Linear project management workspace, detecting and surfacing drift between stream notes and the live Linear state.
+
+| Activity | Type | When | Summary |
+| --- | --- | --- | --- |
+| [[Linear Sync]] | Scheduled | Each working day at 09:00 | Compares Linear initiatives and projects against KB stream notes and the mapping table; surfaces misalignment; flags candidates for new notes or archival |
+
+---
+
+## Scheduled Task Prompt Editing
+
+When iterating on a scheduled task's prompt via its KB activity note (the `## Prompt` section of the corresponding note in `Activities/`):
+
+- Edit the KB note freely - treat it as the draft. As many iterations as needed.
+- Do **not** call `update_scheduled_task` after every edit. The scheduled task is a release target, not a live editor.
+- Only push accumulated changes to the scheduled task when the user signals readiness: _"push it"_, _"sync the task"_, _"ready to run"_, or equivalent.
+- At the end of any session where prompt changes were made without a push, flag that the push is still pending.
+
+Pushing every small edit wastes API calls, creates noisy scheduler state, and risks a half-baked prompt running if a schedule fires mid-iteration.
+
+---
+
+## Per Session (AI-assisted)
+
+See [[Session Digest]] for the full convention and [[CLAUDE]] for the operational protocol.
+
+---
+
+## Related Topics
+
+- [[Pillars/Knowledge Islands/Governance/Management|Knowledge Management]] - parent index

@@ -1,0 +1,394 @@
+<!doctype html><script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "Week At A Glance",
+  "schemaVersion": 1,
+  "description": "Rolling next-7-days overview across every Google calendar. Per-day British-English summary, busy/free sparkline, overlap detection, moon-phase glyphs. Re-fetches on open; discovers calendars via list_calendars.",
+  "mcpTools": [
+    "mcp__4a8021d5-b85c-4af8-a034-d186a3fb6221__list_events",
+    "mcp__4a8021d5-b85c-4af8-a034-d186a3fb6221__list_calendars"
+  ],
+  "mcpServerNames": [
+    "Google Calendar",
+    "Google Calendar"
+  ]
+}
+</script>
+<html lang="en-GB">
+<head>
+<!-- Recipe: Pillars/Productivity/Knowledge Management/Integrations/Claude/Live Artifacts/Week at a Glance Artifact.md -->
+<meta charset="utf-8">
+<title>Week at a Glance</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #fafaf7;
+    color: #2b2a26;
+    padding: 24px 20px 48px;
+  }
+  h1 { margin: 0 0 4px; font-size: 22px; font-weight: 600; letter-spacing: -0.01em; }
+  .sub { color: #7b756a; font-size: 13px; margin-bottom: 22px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .status { padding: 10px 12px; border-radius: 8px; margin-bottom: 18px; font-size: 13px; }
+  .status.loading { background: #f3efe2; color: #5a5043; }
+  .status.error { background: #fbecec; color: #8a2a2a; }
+  .status.hidden { display: none; }
+  .day { background: #fff; border: 1px solid #ece7db; border-radius: 10px; padding: 14px 16px 12px; margin-bottom: 12px; }
+  .day.today { border-color: #d8b894; background: #fff6ea; }
+  .day.weekend { background: #f7f3ea; }
+  .day.today.weekend { background: #fff1df; }
+  .day-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 6px; }
+  .day-date { font-weight: 600; font-size: 15px; }
+  .moon { font-size: 17px; line-height: 1; }
+  .pill { display: inline-block; font-size: 11px; padding: 1px 8px; border-radius: 999px; background: #a65a1f; color: #fff; text-transform: uppercase; letter-spacing: 0.04em; }
+  .summary { color: #4b463d; font-size: 13.5px; margin: 2px 0 8px; }
+  .summary .line + .line { margin-top: 2px; }
+  .summary .backdrop { color: #7b756a; font-style: italic; }
+  .spark { position: relative; height: 8px; background: #f3efe2; border-radius: 4px; margin: 8px 0 4px; overflow: hidden; }
+  .spark-block { position: absolute; top: 0; bottom: 0; background: #c8945a; border-radius: 2px; }
+  .day.today .spark-block { background: #a65a1f; }
+  .spark-labels { display: flex; justify-content: space-between; font-size: 10px; color: #9b9487; margin-bottom: 6px; letter-spacing: 0.02em; }
+  ul.events { list-style: none; margin: 0; padding: 0; }
+  ul.events li { display: flex; gap: 10px; padding: 4px 0; font-size: 13.5px; border-top: 1px dotted #ece7db; flex-wrap: wrap; align-items: baseline; }
+  ul.events li:first-child { border-top: none; }
+  li.backdrop { color: #8a8375; font-style: italic; }
+  .time { min-width: 120px; color: #7b756a; font-variant-numeric: tabular-nums; font-size: 13px; }
+  .title { flex: 1 1 240px; color: #2b2a26; }
+  li.backdrop .title { color: #8a8375; }
+  .cal { font-size: 11.5px; color: #a65a1f; background: #fdf2e6; padding: 1px 6px; border-radius: 4px; white-space: nowrap; }
+  li.backdrop .cal { background: #f1ebde; color: #8a8375; }
+  .loc { color: #7b756a; font-size: 12.5px; flex-basis: 100%; margin-left: 130px; }
+  .overlap { font-size: 10.5px; padding: 1px 6px; border-radius: 999px; background: #f4d9a8; color: #8a5a14; letter-spacing: 0.03em; text-transform: uppercase; }
+  .empty { color: #9b9487; font-style: italic; font-size: 13px; }
+  footer { margin-top: 24px; color: #8a8375; font-size: 12px; }
+  footer .err { color: #8a2a2a; }
+  /* Cache badge */
+  .cache-badge { font-size: 10px; color: #6a6a5a; background: #edeae0; border: 1px solid #dcd8cc; border-radius: 999px; padding: 1px 8px; white-space: nowrap; }
+  .cache-badge.live { background: #e8f5e2; border-color: #b8dba8; color: #3a6627; }
+  /* Shimmer skeleton */
+  @keyframes shimmer {
+    0%   { background-position: -600px 0; }
+    100% { background-position:  600px 0; }
+  }
+  .skel {
+    background: linear-gradient(90deg, #ede9df 25%, #f5f1e8 50%, #ede9df 75%);
+    background-size: 600px 100%;
+    animation: shimmer 1.4s infinite linear;
+    border-radius: 4px;
+    display: block;
+  }
+  .skel-day { background: #fff; border: 1px solid #ece7db; border-radius: 10px; padding: 14px 16px 12px; margin-bottom: 12px; }
+  .skel-day.weekend { background: #f7f3ea; }
+</style>
+</head>
+<body>
+  <h1>Week at a Glance</h1>
+  <div class="sub" id="window-sub"></div>
+  <div class="status loading" id="status">Loading calendars…</div>
+  <div id="days"></div>
+  <footer id="footer"></footer>
+
+<script>
+(async () => {
+  const TZ = "Europe/London";
+  const LIST_EVENTS    = "mcp__4a8021d5-b85c-4af8-a034-d186a3fb6221__list_events";
+  const LIST_CALENDARS = "mcp__4a8021d5-b85c-4af8-a034-d186a3fb6221__list_calendars";
+  const MOON_SUMMARY_REGEX = /moon/i;
+
+  const CACHE_TTL = 5 * 60 * 1000;
+  let _cache = null, _cacheTime = 0;
+  const getCached = () => (_cache && (Date.now() - _cacheTime) < CACHE_TTL) ? _cache : null;
+  const setCache  = d => { _cache = d; _cacheTime = Date.now(); };
+
+  const statusEl  = document.getElementById("status");
+  const daysEl    = document.getElementById("days");
+  const footerEl  = document.getElementById("footer");
+  const windowSub = document.getElementById("window-sub");
+
+  // --- Date helpers (Europe/London) -----------------------------------------
+  const ymdFmt  = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit" });
+  const longFmt  = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, weekday: "long", day: "numeric", month: "long" });
+  const timeFmt  = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, hour: "2-digit", minute: "2-digit", hourCycle: "h23" });
+  const hmFmt    = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, hour: "2-digit", minute: "2-digit", hourCycle: "h23" });
+  const wdayFmt  = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, weekday: "short" });
+
+  const ymd = (d) => {
+    const p = ymdFmt.formatToParts(d);
+    return `${p.find(x=>x.type==="year").value}-${p.find(x=>x.type==="month").value}-${p.find(x=>x.type==="day").value}`;
+  };
+  const longLabel   = (d) => longFmt.format(d);
+  const weekdayShort = (d) => wdayFmt.format(d);
+  const isWeekend   = (d) => { const w = weekdayShort(d); return w === "Sat" || w === "Sun"; };
+  const londonMinutes = (d) => {
+    const p = hmFmt.formatToParts(d);
+    return parseInt(p.find(x=>x.type==="hour").value,10)*60 + parseInt(p.find(x=>x.type==="minute").value,10);
+  };
+  const fmtTime = (d) => timeFmt.format(d);
+  const escapeHtml = (s) => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const shortLocation = (loc) => {
+    if (!loc) return "";
+    const seg = loc.split("\n")[0].split(",")[0].trim();
+    return seg.length > 60 ? seg.slice(0,57)+"…" : seg;
+  };
+  const isMoonItem = (i) => MOON_SUMMARY_REGEX.test(i.cal);
+
+  // --- Build day window (always computed fresh for display) -----------------
+  const now = new Date();
+  const todayYMD = ymd(now);
+  const days = [];
+  for (let i = 0; i < 7; i++) {
+    const d = new Date(now.getTime() + i * 86400000);
+    days.push({ date: d, ymd: ymd(d), long: longLabel(d), weekend: isWeekend(d), isToday: ymd(d) === todayYMD, items: [] });
+  }
+  const startYMD = days[0].ymd;
+  const endYMD   = ymd(new Date(now.getTime() + 7 * 86400000));
+
+  windowSub.innerHTML = `${escapeHtml(longLabel(now))} - ${escapeHtml(longLabel(new Date(now.getTime() + 6*86400000)))} (${TZ}) <span id="badge"></span>`;
+
+  // --- Helpers ------------------------------------------------------------------
+  const unwrap = (r) => {
+    if (!r) return null;
+    if (r.structuredContent) return r.structuredContent;
+    if (r.content && r.content[0] && r.content[0].text) { try { return JSON.parse(r.content[0].text); } catch(_){return null;} }
+    return r;
+  };
+
+  // --- Summarise ---------------------------------------------------------------
+  const summarise = (items) => {
+    if (!items.length) return [{ text: "Nothing scheduled.", kind: "empty" }];
+    const lines = [];
+    const timedSolid = items.filter(i => !i.allDay && !i.transparent);
+    const timedBack  = items.filter(i => !i.allDay &&  i.transparent);
+    const allSolid   = items.filter(i =>  i.allDay && !i.transparent);
+    const allBack    = items.filter(i =>  i.allDay &&  i.transparent);
+    if (timedSolid.length) {
+      const first = timedSolid[0], last = timedSolid[timedSolid.length-1];
+      const titles = timedSolid.slice(0,3).map(i=>i.title).join(", ");
+      const extra  = timedSolid.length > 3 ? `, and ${timedSolid.length-3} more` : "";
+      lines.push({ text: `${timedSolid.length} event${timedSolid.length===1?"":"s"} from ${fmtTime(first.start)} to ${fmtTime(last.end)} - ${titles}${extra}.`, kind: "solid" });
+    } else if (!allSolid.length && !allBack.length && !timedBack.length) {
+      lines.push({ text: "Nothing scheduled.", kind: "empty" });
+    }
+    if (allSolid.length) lines.push({ text: `All-day: ${allSolid.map(i=>i.title).join(", ")}.`, kind: "solid" });
+    const backdrop = [...allBack, ...timedBack];
+    if (backdrop.length) lines.push({ text: `Backdrop: ${backdrop.map(i=>i.title).join(", ")}.`, kind: "backdrop" });
+    return lines;
+  };
+
+  const SPARK_START = 6*60, SPARK_END = 23*60, SPARK_SPAN = SPARK_END - SPARK_START;
+  const buildSpark = (items) => {
+    const timed = items.filter(i => !i.allDay && !i.transparent);
+    if (!timed.length) return null;
+    const ivs = timed.map(i => {
+      let a = londonMinutes(i.start), b = londonMinutes(i.end);
+      if (b <= a) b = a + 15;
+      return [Math.max(a,SPARK_START), Math.min(b,SPARK_END)];
+    }).filter(([a,b])=>b>a).sort((x,y)=>x[0]-y[0]);
+    if (!ivs.length) return null;
+    const merged = [ivs[0].slice()];
+    for (let i=1;i<ivs.length;i++) {
+      const [a,b]=ivs[i], top=merged[merged.length-1];
+      if (a<=top[1]) top[1]=Math.max(top[1],b); else merged.push([a,b]);
+    }
+    return merged.map(([a,b]) => ({ left:((a-SPARK_START)/SPARK_SPAN)*100, width:((b-a)/SPARK_SPAN)*100 }));
+  };
+
+  const moonGlyph = (s) => {
+    const l = (s||"").toLowerCase();
+    if (l.startsWith("new moon")) return "🌑";
+    if (l.startsWith("first quarter")) return "🌓";
+    if (l.startsWith("full moon")) return "🌕";
+    if (l.startsWith("last quarter")||l.startsWith("third quarter")) return "🌗";
+    return "🌙";
+  };
+
+  // --- Skeleton ----------------------------------------------------------------
+  function renderSkeleton() {
+    const dayNames = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
+    return days.map((d, i) => `
+      <div class="skel-day${d.weekend?" weekend":""}">
+        <div class="day-head">
+          <span class="skel" style="width:${90+i*8}px;height:14px;margin-bottom:2px"></span>
+        </div>
+        <span class="skel" style="width:${70+i*12}%;height:11px;margin-bottom:6px"></span>
+        <span class="skel" style="width:${40+i*5}%;height:11px;margin-bottom:8px"></span>
+        <span class="skel" style="height:8px;border-radius:4px;margin-bottom:10px"></span>
+        <span class="skel" style="width:100%;height:11px;margin-bottom:4px"></span>
+        <span class="skel" style="width:80%;height:11px"></span>
+      </div>`).join("");
+  }
+
+  // --- Render days -------------------------------------------------------------
+  function renderDays(processedDays) {
+    const html = processedDays.map(d => {
+      const displayItems = d.items.filter(i => !isMoonItem(i));
+      const summaryLines = summarise(displayItems);
+      const spark = buildSpark(displayItems);
+      const pillHtml  = d.isToday ? '<span class="pill">Today</span>' : "";
+      const moonHtml  = d.moon ? `<span class="moon" title="${escapeHtml(d.moonTitle||"")}">${d.moon}</span>` : "";
+      const cls = ["day"];
+      if (d.isToday) cls.push("today");
+      if (d.weekend) cls.push("weekend");
+      const summaryHtml = summaryLines.map(l=>`<div class="line ${l.kind==="backdrop"?"backdrop":""}">${escapeHtml(l.text)}</div>`).join("");
+      const sparkHtml = spark ? `
+        <div class="spark" title="Busy 06:00-23:00">
+          ${spark.map(b=>`<div class="spark-block" style="left:${b.left.toFixed(2)}%;width:${b.width.toFixed(2)}%"></div>`).join("")}
+        </div>
+        <div class="spark-labels"><span>06</span><span>12</span><span>18</span><span>23</span></div>` : "";
+      const eventsHtml = displayItems.length ? `<ul class="events">${displayItems.map(i => {
+        const time = i.allDay ? "all day" : `${fmtTime(i.start)} - ${fmtTime(i.end)}`;
+        const overlapPill = i._conflict ? ' <span class="overlap" title="Overlaps another event">Overlap</span>' : "";
+        const loc = shortLocation(i.location);
+        return `<li class="${i.transparent?"backdrop":""}">
+          <span class="time">${escapeHtml(time)}</span>
+          <span class="title">${escapeHtml(i.title)}${overlapPill}</span>
+          <span class="cal">${escapeHtml(i.cal)}</span>
+          ${loc?`<span class="loc">${escapeHtml(loc)}</span>`:""}
+        </li>`;
+      }).join("")}</ul>` : '<div class="empty">Nothing scheduled.</div>';
+      return `<section class="${cls.join(" ")}">
+        <div class="day-head"><span class="day-date">${escapeHtml(d.long)}</span>${moonHtml}${pillHtml}</div>
+        <div class="summary">${summaryHtml}</div>
+        ${sparkHtml}${eventsHtml}
+      </section>`;
+    }).join("");
+    daysEl.innerHTML = html;
+  }
+
+  function showBadge(fromCache, ms) {
+    const el = document.getElementById("badge");
+    if (!el) return;
+    if (fromCache) {
+      const ago = Math.round((Date.now() - _cacheTime) / 1000);
+      el.className = "cache-badge";
+      el.textContent = `⚡ from cache · fetched ${ago}s ago`;
+    } else {
+      el.className = "cache-badge live";
+      el.textContent = `↻ live · ${ms}ms`;
+    }
+  }
+
+  // --- Boot -------------------------------------------------------------------
+  const cached = getCached();
+  if (cached) {
+    statusEl.classList.add("hidden");
+    renderDays(cached.days);
+    footerEl.innerHTML = cached.footerHtml;
+    showBadge(true, 0);
+    return;
+  }
+
+  // Show skeleton immediately
+  statusEl.classList.add("hidden");
+  daysEl.innerHTML = renderSkeleton();
+
+  const t0 = Date.now();
+
+  // Discover calendars
+  let calendars = [];
+  try {
+    const resp = await window.cowork.callMcpTool(LIST_CALENDARS, { pageSize: 250 });
+    if (resp && resp.isError) throw new Error(resp.content?.[0]?.text || "error");
+    const payload = unwrap(resp);
+    const entries = (payload && (payload.calendars || payload.items)) || [];
+    calendars = entries.map(e => ({ id: e.id, label: e.summary || e.id }));
+  } catch (e) {
+    statusEl.className = "status error";
+    statusEl.textContent = "Failed to list calendars: " + (e.message || e);
+    statusEl.classList.remove("hidden");
+    daysEl.innerHTML = "";
+    return;
+  }
+  if (!calendars.length) {
+    statusEl.className = "status error";
+    statusEl.textContent = "No calendars returned.";
+    statusEl.classList.remove("hidden");
+    daysEl.innerHTML = "";
+    return;
+  }
+
+  // Fetch events
+  const errors = [], loadedLabels = [];
+  const results = await Promise.all(calendars.map(async (c) => {
+    try {
+      const resp = await window.cowork.callMcpTool(LIST_EVENTS, { calendarId: c.id, startTime: startYMD+"T00:00:00", endTime: endYMD+"T00:00:00", timeZone: TZ, pageSize: 250 });
+      if (resp && resp.isError) throw new Error(resp.content?.[0]?.text || "error");
+      const payload = unwrap(resp);
+      const evs = (payload && payload.events) || [];
+      loadedLabels.push(c.label);
+      return { cal: c, events: evs };
+    } catch (e) {
+      errors.push(`${c.label}: ${e.message || e}`);
+      return { cal: c, events: [] };
+    }
+  }));
+
+  // Bucket events
+  let totalEvents = 0;
+  for (const { cal, events } of results) {
+    for (const ev of events) {
+      totalEvents++;
+      const transparent = ev.transparency === "transparent";
+      const label = cal.label;
+      if (ev.start && ev.start.date) {
+        const startDay = ev.start.date, endExclusive = ev.end && ev.end.date ? ev.end.date : startDay;
+        for (const d of days) {
+          if (d.ymd >= startDay && d.ymd < endExclusive) {
+            d.items.push({ allDay: true, start: null, end: null, title: ev.summary||"(no title)", location: ev.location||"", cal: label, transparent });
+          }
+        }
+      } else if (ev.start && ev.start.dateTime) {
+        const s = new Date(ev.start.dateTime), e = new Date(ev.end?.dateTime || ev.start.dateTime);
+        const dayKey = ymd(s);
+        const target = days.find(d => d.ymd === dayKey);
+        if (target) target.items.push({ allDay: false, start: s, end: e, title: ev.summary||"(no title)", location: ev.location||"", cal: label, transparent });
+      }
+    }
+  }
+
+  // Sort
+  for (const d of days) {
+    d.items.sort((a,b) => { if (a.allDay!==b.allDay) return a.allDay?-1:1; if (!a.allDay) return a.start-b.start; return a.title.localeCompare(b.title); });
+  }
+
+  // Conflict detection
+  for (const d of days) {
+    const timed = d.items.filter(i => !i.allDay && !i.transparent);
+    for (const a of timed) {
+      a._conflict = false;
+      for (const b of timed) { if (a!==b && b.start<a.end && b.end>a.start) { a._conflict=true; break; } }
+    }
+  }
+
+  // Moon glyphs
+  for (const d of days) {
+    const moon = d.items.find(isMoonItem);
+    d.moon = moon ? moonGlyph(moon.title) : null;
+    d.moonTitle = moon ? moon.title : null;
+  }
+
+  const latencyMs = Date.now() - t0;
+
+  const genAt = new Intl.DateTimeFormat("en-GB", { timeZone: TZ, weekday: "short", day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).format(new Date());
+  const footerHtml = `
+    ${totalEvents} event${totalEvents===1?"":"s"} across ${loadedLabels.length} of ${calendars.length} calendar${calendars.length===1?"":"s"} (${escapeHtml(loadedLabels.join(", "))}).
+    Generated ${escapeHtml(genAt)}.
+    ${errors.length ? `<div class="err">Errors: ${escapeHtml(errors.join("; "))}</div>` : ""}
+  `;
+
+  const cacheData = { days, footerHtml };
+  setCache(cacheData);
+  renderDays(days);
+  footerEl.innerHTML = footerHtml;
+  showBadge(false, latencyMs);
+})().catch(err => {
+  const s = document.getElementById("status");
+  s.className = "status error";
+  s.textContent = "Failed to load: " + (err && err.message || err);
+  s.classList.remove("hidden");
+  document.getElementById("days").innerHTML = "";
+});
+</script>
+</body>
+</html>
