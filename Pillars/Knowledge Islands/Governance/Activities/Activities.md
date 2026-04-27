@@ -75,12 +75,6 @@ Daily automation that keeps the island aligned with the Linear project managemen
 
 ---
 
-## Per Session (AI-assisted)
-
-See [[Session Digest]] for the full convention and [[CLAUDE]] for the operational protocol.
-
----
-
 ## Related Topics
 
 - [[Pillars/Knowledge Islands/Governance/Governance|Governance]] - parent index
