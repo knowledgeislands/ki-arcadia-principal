@@ -36,50 +36,7 @@ A piece of content that is "what this activity does" → Layer 1. A piece that i
 
 ## Activity Note Format (Layer 1)
 
-Activity notes at Layer 1 follow a consistent format:
-
-```
----
-[standard frontmatter]
----
-
-# Activity Name
-
-## Overview
-
-One paragraph: what this activity does, why it exists, and how often it runs.
-
----
-
-## Trigger
-
-For scheduled activities: schedule and Cowork task name.
-For conversational activities: trigger phrase(s) and who initiates.
-
----
-
-## Outcome
-
-What a successful run produces — files written, state updated, output delivered.
-
----
-
-## Prompt
-
-[For activities where the prompt lives here rather than in Tools/Claude/Activities/]
-Full prompt text.
-
----
-
-## Related Topics
-
-- [[Activities]] - parent index
-- [[Authoring Activities]] - authoring and maintenance guide
-- [relevant Knowledge Capital notes]
-- [relevant Tools/Claude/Activities/ prompt note, once created]
-```
-
-The `## Prompt` section is used when the activity is straightforward and its prompt has no complex versioning or variant needs. For activities with substantial prompts (Route Triage, Knowledge Rebuild), the prompt migrates to `Tools/Claude/Activities/{group}/` and the Layer 1 note links to it.
+The canonical format for Layer 1 activity notes is defined in [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Types/Activity Note|Activity Note]] under `Conventions/Notes/Types/`. Required sections are Overview, Trigger, and Outcome. The optional `## Prompt` section holds the executable prompt when the activity is lightweight enough to keep it inline — for substantial prompts (Route Triage, Knowledge Rebuild), the prompt migrates to `Tools/Claude/Activities/{group}/` and the Layer 1 note links to it.
 
 ---
 
@@ -93,8 +50,6 @@ When iterating on a scheduled task's prompt via its activity note:
 - At the end of any session where prompt changes were made without a push, flag that the push is still pending.
 
 Pushing every small edit wastes API calls, creates noisy scheduler state, and risks a half-baked prompt running if a schedule fires mid-iteration.
-
-For the sync protocol between KB notes and scheduled task prompts, see [[Pillars/Knowledge Islands/Governance/KB Specifics/KB Specifics|KB Specifics]].
 
 ---
 
@@ -112,6 +67,7 @@ For the sync protocol between KB notes and scheduled task prompts, see [[Pillars
 ## Related Topics
 
 - [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - the full activity index
+- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Types/Activity Note|Activity Note]] - the canonical format spec for Layer 1 activity notes
 - [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]] - Layer 3 patterns for activity design
 - [[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude|Agents/Claude]] - Layer 4: Claude-specific operating conventions
 - [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Activities|Tools/Claude/Activities]] - Layer 5: the prompt library

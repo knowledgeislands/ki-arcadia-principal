@@ -34,6 +34,12 @@ The structure for AI-assisted work session summaries, including the five standar
 
 ---
 
+## Activity Note
+
+The structure for Layer 1 activity notes: required sections (Overview, Trigger, Outcome), the optional Prompt section and when to use it versus migrating the prompt to Layer 5, and the sync discipline for keeping KB notes and Cowork scheduled tasks aligned. See [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Types/Activity Note|Activity Note]].
+
+---
+
 ## Related Topics
 
 - [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Notes|Notes]] - parent index

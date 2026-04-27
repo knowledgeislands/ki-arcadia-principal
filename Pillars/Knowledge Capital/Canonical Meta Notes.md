@@ -18,7 +18,7 @@ The ordered list of notes that [[Knowledge Rebuild]] loads to reconstruct the is
 ## Note List
 
 - `CLAUDE.md`
-- `Pillars/Knowledge Islands/Governance/Concept/Concept.md`
+- `Pillars/Knowledge Islands/Concept/Concept.md`
 - `Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure.md`
 - `Pillars/Knowledge Islands/Governance/Conventions/Notes/Notes.md`
 - `Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Frontmatter.md`
