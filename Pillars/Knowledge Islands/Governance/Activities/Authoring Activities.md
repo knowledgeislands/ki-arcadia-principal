@@ -22,13 +22,13 @@ How to design, document, and maintain island activities. Covers the five-layer m
 
 Every activity involves five layers of content, each at a different level of generality. The rule is: **notes live at the most generic layer that accurately describes them**.
 
-| Layer | Location | Generality | Contains |
-| --- | --- | --- | --- |
-| 1 | `Activities/{group}/` | Activity-specific, agent-agnostic, island-agnostic | What the activity does, why it exists, trigger phrases, outcome definition |
-| 2 | `Knowledge Capital/{group}/` | Activity-specific, island-specific, agent-agnostic | Island configuration the activity reads — routing rules, config files, data models |
-| 3 | `Agents/Agentic AI/` | Activity-agnostic, island-agnostic, agent-agnostic | General AI operating patterns — caching, parallelism, rolling windows, artifact lifecycle |
-| 4 | `Agents/Claude/` | Activity-agnostic, island-agnostic, Claude-specific | Claude's implementation — five modes, behavioural constraints, memory architecture |
-| 5 | `Tools/Claude/Activities/{group}/` | Activity-specific, island-specific, Claude-specific | The actual prompt text; references Layers 2–4 at runtime |
+| Layer | Location                           | Generality                                          | Contains                                                                                  |
+| ----- | ---------------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| 1     | `Activities/{group}/`              | Activity-specific, agent-agnostic, island-agnostic  | What the activity does, why it exists, trigger phrases, outcome definition                |
+| 2     | `Knowledge Capital/{group}/`       | Activity-specific, island-specific, agent-agnostic  | Island configuration the activity reads — routing rules, config files, data models        |
+| 3     | `Agents/Agentic AI/`               | Activity-agnostic, island-agnostic, agent-agnostic  | General AI operating patterns — caching, parallelism, rolling windows, artifact lifecycle |
+| 4     | `Agents/Claude/`                   | Activity-agnostic, island-agnostic, Claude-specific | Claude's implementation — five modes, behavioural constraints, memory architecture        |
+| 5     | `Tools/Claude/Activities/{group}/` | Activity-specific, island-specific, Claude-specific | The actual prompt text; references Layers 2–4 at runtime                                  |
 
 A piece of content that is "what this activity does" → Layer 1. A piece that is "how Claude does it for this island" → Layer 5. Content that would apply to any island's email triage → Layer 3 or 4. Content that is this island's routing config → Layer 2.
 

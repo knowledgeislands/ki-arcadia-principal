@@ -37,4 +37,4 @@ Activities that keep the island structurally sound, content-healthy, and free of
 ## Related Topics
 
 - [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Management|Knowledge Management]] - overarching knowledge management index
+- [[Pillars/Knowledge Islands/Governance/Governance|Governance]] - overarching knowledge management index

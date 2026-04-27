@@ -19,8 +19,6 @@ Combines the aged archival pass and inbound routing into a single execution. Eac
 1. **Aged pass** - applies age-based archival rules to emails already sitting in `_TRIAGE` subfolders. Emails that have passed their threshold are moved directly to their archive destination.
 2. **Inbound pass** - fetches new messages from Inbox and Sent and evaluates them against the routing table. The key improvement over Route Inbound: before routing a matched email to its `_TRIAGE` subfolder, the aged criteria for that folder are checked inline. If the email already meets them (e.g. it arrived late, or inbound processing was delayed), it is routed straight to the archive destination, bypassing the triage folder entirely.
 
-This replaces [[Route Aged]] and [[Route Inbound]]. Both have been retired and their scheduled tasks disabled (April 2026).
-
 ---
 
 ## Schedule
@@ -194,7 +192,5 @@ Transition completed April 2026:
 
 - [[Pillars/Knowledge Islands/Governance/Activities/Email/Approach|Approach]] - concept reference and shared definitions
 - [[Pillars/Knowledge Islands/Governance/Activities/Email/Email|Email]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Activities/Email/Route Drift|Route Drift]] - runs at 08:00 before this; prunes tracking before aged and inbound run
-- [[Pillars/Knowledge Islands/Governance/Activities/Email/Route Aged|Route Aged]] - predecessor (scheduled for removal after transition)
 - [[Pillars/Knowledge Islands/Governance/Activities/Email/Route Inbound|Route Inbound]] - predecessor (scheduled for removal after transition)
 ```

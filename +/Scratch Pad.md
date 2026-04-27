@@ -24,6 +24,8 @@ In the big one, we established the overall structure of the knowledge repository
 
 - `/Pillars`
   - No references to HNR, Kit (other than as a council member), Valle Armonia, legal etc.
+  - No use of the phrase 'knowledge management', or 'km', or 'pkm' unless in a historical context describing the origin of the repository
+  - No use of the phrase 'knowledge base', or 'kb' unless in a historical context describing the origin of the repository
 - `/Pillars/Knowledge Capital/Governance`
   - No references to specific agents, or tools other than as examples
 - `/Pillars/Knowledge Islands`
