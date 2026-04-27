@@ -20,12 +20,27 @@ What an activity does and why it exists is documented at Layer 1 under [[Pillars
 
 ---
 
-## Activity Groups
+## Email
 
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Email/Email|Email]] - prompts for the email triage and routing activities
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Maintenance/Maintenance|Maintenance]] - prompts for island maintenance activities (Health Check, Knowledge Rebuild, Scheduled Task Audit, KB Convergence Check)
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Briefings/Briefings|Briefings]] - prompts for the daily briefing and periodic review activities
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Linear/Linear|Linear]] - prompts for Linear issue management activities
+[[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Email/Email|Email]] holds the prompts for the email triage and routing activities — Route Drift, Route Triage, Route Review, Re-route Triaged, Recap, and Email Test. These prompts are tightly coupled to the routing configuration in Knowledge Capital and should not be run independently of it.
+
+---
+
+## Maintenance
+
+[[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Maintenance/Maintenance|Maintenance]] holds the prompts for island maintenance activities: the Scheduled Task Audit, Health Check, Knowledge Rebuild, and KB Convergence Check automations, plus the conversational activities (Inbox Review, Asset Audit, Status Review, Structural Audit, Wikilink Review). Several of these prompts read or write the auto-memory layer directly.
+
+---
+
+## Briefings
+
+[[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Briefings/Briefings|Briefings]] holds the prompts for the daily Morning Briefing automation — the activity that constructs the day's daily note, creates any missing calendar infrastructure, and surfaces agenda and inbox context.
+
+---
+
+## Linear
+
+[[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Linear/Linear|Linear]] holds the prompts for the Linear Sync activity — the daily automation that compares live Linear state against KB stream notes and surfaces drift for human review.
 
 ---
 

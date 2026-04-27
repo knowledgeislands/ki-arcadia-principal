@@ -94,19 +94,34 @@ The `productivity:memory-management` skill provides a structured **deep memory**
 
 ---
 
-## Contents
+## Cowork Configuration Layers
 
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Cowork Configuration Layers|Cowork Configuration Layers]] - the four layers through which Claude receives preferences and rules, and what belongs in the Cowork project instructions box
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons|Mistakes and Lessons]] - documented errors, resolutions, and lessons learned from Claude island sessions
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Live Artifacts|Live Artifacts]] - reusable prompts and design notes for Cowork live-artifact HTML pages
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Activities|Activities]] - the prompt library for scheduled and conversational activities; one subfolder per activity group
+[[Pillars/Knowledge Islands/Governance/Tools/Claude/Cowork Configuration Layers|Cowork Configuration Layers]] documents the four layers through which Claude receives preferences and rules in a Cowork session: the system prompt, the Cowork project instructions box, the island skill, and the CLAUDE.md context file. Understanding which layer each type of instruction belongs in prevents duplication and keeps the configuration coherent as the island evolves.
+
+---
+
+## Mistakes and Lessons
+
+[[Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons|Mistakes and Lessons]] is the human-readable incident register for Claude sessions — documented errors, their resolutions, and the lessons extracted from them. All resolved lessons are extracted to auto-memory files so they are active in every session without a file read; this note is the audit trail, not the operational source.
+
+---
+
+## Live Artifacts
+
+[[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Live Artifacts|Live Artifacts]] is the canonical home for Cowork live-artifact HTML pages — self-contained dashboards that persist in the Cowork sidebar and re-fetch data from MCP tools on each open. Each artifact is represented by a recipe note (design decisions, reusable prompt, updating instructions) and a colocated HTML backup of the approved version.
+
+---
+
+## Activities
+
+[[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Activities|Activities]] is the Layer 5 prompt library — the executable prompts that drive scheduled and conversational activities, organised into one subfolder per activity group (Email, Maintenance, Briefings, Linear). What each activity does and why is documented at Layer 1 under [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]].
 
 ---
 
 ## Further Reading
 
 - [[CLAUDE|CLAUDE]] - top-level context file loaded by Claude at session start
-- [[Concept|Methodology]] - overall Knowledge Management methodology this integration supports
+- [[Pillars/Knowledge Islands/Concept/Concept|Concept]] - the conceptual model this integration supports
 
 ---
 

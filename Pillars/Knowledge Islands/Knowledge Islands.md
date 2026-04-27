@@ -19,35 +19,21 @@ Arcadia is the Knowledge Island of Knowledge Islands — a legendary utopia in t
 
 ---
 
-## Concepts
+## Concept
 
-See [[Concept|Concept]] for the full methodology. Key concepts:
-
-**Ecosystem architecture** — the system is organised in three layers. The **island** (core) is the repository: Markdown files, version-controlled, single source of truth. **Knowledge Management** (ring) is the methodology layer — conventions, structure, and integration patterns that govern how the core is maintained. **Integrations** (petals) are the tools and surfaces through which the island is accessed and enriched; all integrations operate through the Knowledge Management layer and do not bypass it.
-
-**Island types** — an **island** is a discrete, self-contained body of knowledge with defined boundaries. The unit of governance is a **territory**: one or more islands with exactly one **principal island** — the seat of governance, holding the Capital and carrying the shared governance infrastructure. A **satellite island** is a separate, governed extension: its own stores, same governance as the principal, but with an independent boundary. The boundary rule: **if customs exist at the boundary, it is a separate territory**. If knowledge flows freely with no boundary controls, it is internal structure.
-
-**Archipelago** — a territory spanning multiple islands. Islands within a territory share governance conventions but maintain independent stores. A change to one island does not automatically affect another — each change goes through the shared [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]].
+[[Pillars/Knowledge Islands/Concept/Concept|Concept]] is the full conceptual model. It defines what knowledge is — distinct from information and from wisdom — and how it matures through continuous cycles of capture, connection, and reflection. It maps the geography of an island: the Capital and its Library (the canonical record, organised into Calendar, Pillars, and Resources) and Streams (knowledge in motion); the Harbour as the port of entry; and the territory and archipelago structures that govern how islands relate. It defines agents — human and artificial — and the jurisdictional model of Citizen, Visitor, and Council Member. The model is portable: Arcadia holds the canonical definition; any archipelago may adopt it and derive its own realisation.
 
 ---
 
 ## Governance
 
-Every island holds jurisdiction over its own canonical knowledge. [[Concept|Concept]] defines the authority structure — nothing reaches stable knowledge in Pillars or Resources except through the island's own governance.
+Every island holds jurisdiction over its own canonical knowledge — nothing reaches stable knowledge in Pillars or Resources except through the island's own ratification process. [[Pillars/Knowledge Islands/Governance/Governance|Governance]] is the operational layer that makes this work day to day: the conventions that define what a note looks like and where it lives, the processes through which changes are proposed and ratified, the activities that keep the island healthy, and the agents and tools through which all of this happens.
 
-The governance model is portable: each island adopts the pattern that fits its scale and collaborative structure. Three patterns are defined — council, single-governor, and joint-governor — and each island's specific realisation lives in its own [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]].
-
-Every person who interacts with an island has a standing within it: a **Citizen** has full standing and is eligible for council membership; a **Visitor** may contribute informally but holds no formal standing. Council members must be Citizens. Citizenship may be held across multiple territories simultaneously. See [[Concept|Concept]] for the full model.
-
-Changes to canonical knowledge move through the [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]] - the mechanism through which proposals move from draft to ratified knowledge. Formal proposals may only be submitted by council members. The [[Pillars/Knowledge Islands/Governance/Processes/Contribution Process|Contribution Process]] defines who can contribute to the Knowledge Islands model itself, and what customs govern knowledge at the boundary between islands.
+The governance model is portable. Three patterns are defined — council, single-governor, and joint-governor — and each island's specific realisation lives in its own [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]]. Every person interacting with an island holds a standing within it: a **Citizen** has full standing and is eligible for council membership; a **Visitor** may contribute informally but holds no formal standing. Changes to canonical knowledge move through the [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]]. The [[Pillars/Knowledge Islands/Governance/Processes/Contribution Process|Contribution Process]] governs how knowledge crosses the boundary between islands and how other archipelagos may contribute back to the canonical model in Arcadia.
 
 ---
 
 ## Management
-
-[[Pillars/Knowledge Islands/Governance/Governance|Governance]] covers the methodology, conventions, integrations, and maintenance activities
-
-TODO: exand and include a summary of Governance here. the two subsections below should be put in the management section (most likely merged in)
 
 ### Physical Stores
 
@@ -67,10 +53,10 @@ Git is the source of truth for canonical knowledge. The working space is ephemer
 
 The governance infrastructure belongs to the principal island and serves the entire archipelago. It is not a store — it is the operational layer through which knowledge is managed and evolved:
 
-| Infrastructure     | Purpose                                                                                                               |     |
-| ------------------ | --------------------------------------------------------------------------------------------------------------------- | --- |
-| **Cowork project** | The parliament — where proposals are reviewed, sessions are run, and archipelago-wide decisions are made              |     |
-| **Working folder** | The yard — temporary scratch space for in-progress work; discarded once the work is committed to a store or abandoned |     |
+| Infrastructure     | Purpose                                                                                               |
+| ------------------ | ----------------------------------------------------------------------------------------------------- |
+| **Cowork project** | The parliament — where proposals are reviewed, sessions are run, and archipelago-wide decisions made  |
+| **Working folder** | The yard — temporary scratch space for in-progress work; discarded once committed or abandoned        |
 
 Specific paths for this island are defined in [[Physical Locations]].
 
@@ -78,7 +64,7 @@ Specific paths for this island are defined in [[Physical Locations]].
 
 ## Knowledge Capitals
 
-Every general concept defined in [[Knowledge Islands]] has a corresponding specific realisation in [[Knowledge Capital]]. The two sections are structural mirrors: Knowledge Islands holds the portable, island-agnostic definition; Knowledge Capital holds Arcadia's instance of that definition. When adding a new generic concept to Knowledge Islands, its island-specific counterpart belongs in Knowledge Capital — not in Knowledge Islands itself.
+Every general concept defined in [[Knowledge Islands]] has a corresponding specific realisation in [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]]. The two are structural mirrors: Knowledge Islands holds the portable, island-agnostic definition; Knowledge Capital holds Arcadia's instance of that definition — this island's council, citizenship records, integration configuration, routing overrides, and identity. When adding a new generic concept here, its island-specific counterpart belongs in Knowledge Capital, not in Knowledge Islands itself.
 
 ---
 

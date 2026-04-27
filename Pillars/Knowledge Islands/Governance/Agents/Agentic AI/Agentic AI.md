@@ -20,9 +20,9 @@ This is Layer 3 of the [[Pillars/Knowledge Islands/Governance/Activities/Authori
 
 ---
 
-## Contents
+## AI Automation Patterns
 
-- [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]] - design patterns for AI-driven productivity automations: execution/change ratio, JSON5 cache, live artifact baseline, parallel MCP fetch, rolling window, and the two-mechanic update protocol
+[[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]] documents the reusable design patterns for AI-driven productivity automations: the execution/change ratio principle (prefer reading and reporting over writing), the JSON5 cache pattern for reducing redundant MCP fetches, the live artifact baseline and two-mechanic update protocol, parallel MCP fetch for latency reduction, and the rolling time window convention. Any AI agent implementing an island activity should draw on these patterns rather than re-deriving them from scratch.
 
 ---
 

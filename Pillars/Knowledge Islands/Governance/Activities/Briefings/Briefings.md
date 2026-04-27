@@ -14,18 +14,19 @@ author: Written with Claude
 
 ## Overview
 
-Daily automations that prime the island at the start of each day - creating missing calendar infrastructure and surfacing agenda, task, and inbox context.
+Briefings prime the island and the working day. They run before any other work begins, ensuring that calendar infrastructure exists, today's daily note is ready, and the agenda — tasks due, meetings, and inbox items — is surfaced in one place. A briefing does not produce knowledge; it produces context. Its output is a prepared environment from which the rest of the day's work starts.
+
+The Morning Briefing is the sole activity in this group. It is scheduled to run automatically each working day and creates missing notes (weekly, monthly) as needed before populating today's daily note.
 
 ---
 
-## Activities
+## Morning Briefing
 
-| Activity             | Type      | When                      | Summary                                                                                                                         |
-| -------------------- | --------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| [[Morning Briefing]] | Scheduled | Each working day at 06:00 | Prepares today's daily note with calendar events, due tasks, and inbox items; creates missing weekly or monthly notes as needed |
+[[Morning Briefing]] runs each working day at 06:00. It fetches calendar events for the day, surfaces tasks due today and overdue, pulls in upcoming tasks for the next five working days, and lists any items sitting in the `+/` inbox. If the current week's weekly note or month's monthly note does not yet exist, the briefing creates it before proceeding. The result is a daily note that is ready to use as the anchor for the day.
 
 ---
 
 ## Related Topics
 
 - [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Briefings/Briefings|Tools/Claude/Activities/Briefings]] - Layer 5 prompts that drive this activity

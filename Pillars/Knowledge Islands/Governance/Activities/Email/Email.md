@@ -20,7 +20,7 @@ Inbox management as a scheduled, repeatable process. The goal is inbox zero acro
 
 ## Activities
 
-This table is copied here for ease of use, but the canonical version is in [[Pillars/Knowledge Islands/Governance/Activities/Email/Approach|Approach]]
+The six email activities divide into two scheduled automations that run without human prompting and four conversational activities triggered by phrase. See [[Pillars/Knowledge Islands/Governance/Activities/Email/Approach|Approach]] for the shared concepts, data model, and the routing taxonomy that all activities operate against.
 
 | Activity | Type | Schedule | Trigger | Summary |
 | --- | --- | --- | --- | --- |

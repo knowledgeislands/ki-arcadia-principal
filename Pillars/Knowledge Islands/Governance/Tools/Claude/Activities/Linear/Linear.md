@@ -13,9 +13,9 @@ author: Written with Claude
 
 ## Overview
 
-Prompts for Linear issue management activities. These are Layer 5 content: Claude-specific, island-specific, referencing Linear configuration from [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]].
+Layer 5 prompts for the Linear sync activity — the executable, Claude-specific and island-specific prompts that drive the daily Linear Sync automation. These prompts reference Linear workspace configuration from [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] and use the Linear MCP connection documented in [[Pillars/Knowledge Islands/Governance/Tools/Linear/Linear|Tools/Linear]] to compare live Linear state against KB stream notes.
 
-For what these activities do and why, see [[Pillars/Knowledge Islands/Governance/Activities/Linear/Linear|Activities/Linear]].
+What the Linear Sync does and why is documented at Layer 1 in [[Pillars/Knowledge Islands/Governance/Activities/Linear/Linear|Activities/Linear]]. This folder holds only the executable prompts — one note per activity once migrated from the scheduled task definitions.
 
 ---
 
