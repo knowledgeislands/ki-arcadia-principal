@@ -225,5 +225,6 @@ We should definitely consider building the mental map of the knowledge for this 
 
 ## Next Steps
 
+Step 0: read `+/BigOne.md`
 Step 1. read all of Governance and these conversations and thoughts above
 Step 2. discuss the open questions in each thread and decide on the structural changes to make and where content should go.
