@@ -9,7 +9,7 @@ dependencies: []
 author: Written with Claude
 ---
 
-# Intention in Knowledge Islands
+# KI Intentional
 
 ## Overview
 
@@ -77,6 +77,6 @@ If this holds, Intention might belong in the _Overview_ or as a brief addition t
 
 ## Related Topics
 
-- [[Streams/Active/Active]] - parent stream index
+- [[Streams/Active/Active|Active]] - parent stream index
 - [[Pillars/Knowledge Islands/Concept/Concept|Concept]] - the note this stream will modify
 - [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]] - governance model for this stream

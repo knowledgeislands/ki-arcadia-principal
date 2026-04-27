@@ -20,6 +20,12 @@ What an activity does and why it exists is documented at Layer 1 under [[Pillars
 
 ---
 
+## Constitutional
+
+[[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Constitutional/Constitutional|Constitutional]] holds the prompt for the Conformance Check — the sole constitutional activity, required of any island running Knowledge Islands. The prompt reads the Manifest and the Activities index to verify constitutional baseline, adoption completeness, and adoption consistency. It is read-only and produces a structured conformance report.
+
+---
+
 ## Email
 
 [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Email/Email|Email]] holds the prompts for the email triage and routing activities — Route Drift, Route Triage, Route Review, Re-route Triaged, Recap, and Email Test. These prompts are tightly coupled to the routing configuration in Knowledge Capital and should not be run independently of it.
