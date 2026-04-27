@@ -174,23 +174,9 @@ Output concisely:
 - Unknown: count + top suggested rules.
 - Quiet runs collapsed (if applicable).
 
-```
-
----
-
-## Transition notes
-
-Transition completed April 2026:
-1. `hnrkb-email-route-aged` scheduled task disabled.
-2. `hnrkb-email-route-inbound` scheduled task disabled.
-3. [[Pillars/Knowledge Islands/Governance/Activities/Email/Approach|Approach]] and [[Pillars/Knowledge Islands/Governance/Activities/Email/Email|Email]] index updated.
-4. [[Route Aged]] and [[Route Inbound]] marked `status: archive`.
-
 ---
 
 ## Related Topics
 
 - [[Pillars/Knowledge Islands/Governance/Activities/Email/Approach|Approach]] - concept reference and shared definitions
 - [[Pillars/Knowledge Islands/Governance/Activities/Email/Email|Email]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Activities/Email/Route Inbound|Route Inbound]] - predecessor (scheduled for removal after transition)
-```

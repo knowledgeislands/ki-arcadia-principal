@@ -45,7 +45,7 @@ Changes to canonical knowledge move through the [[Pillars/Knowledge Islands/Gove
 
 ## Management
 
-[[Pillars/Knowledge Islands/Governance/Management|Management]] covers the methodology, conventions, integrations, and maintenance activities
+[[Pillars/Knowledge Islands/Governance/Governance|Governance]] covers the methodology, conventions, integrations, and maintenance activities
 
 TODO: exand and include a summary of Management here. the two subsections below should be put in the management section (most likely merged in)
 
@@ -85,7 +85,7 @@ Every general concept defined in [[Knowledge Islands]] has a corresponding speci
 ## Related Topics
 
 - [[Pillars/Pillars|Pillars]] - parent index
-- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - the specific realisation of [[Streams/Active/Knowledge Islands/Knowledge Islands|Knowledge Islands]] for this island
+- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - the specific realisation of Knowledge Islands for this island
 
 [zettelkasten]: https://zettelkasten.de/introduction/
 [para]: https://fortelabs.com/blog/para/
