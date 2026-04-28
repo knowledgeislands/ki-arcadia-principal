@@ -65,6 +65,22 @@ Three common approaches:
 
 Category is a local decision. Active, Background, Dormant, and Future often share the same scheme. Settled frequently warrants a different approach - time-based categorisation (e.g. by year or quarter) works well when the volume of settled streams makes a flat listing unwieldy.
 
+### Stream Index Notes
+
+Every stream focus folder (Active, Background, Dormant, Future, Settled) has an index note. Its `## Streams` section is a table with three columns:
+
+| Column | Content |
+| ------ | ------- |
+| Topic | Full-path wikilink to the stream note |
+| Status | Stream lifecycle status: `in-progress`, `ready`, or `draft` |
+| Priority | `urgent`, `high`, `medium`, or `low` |
+
+Rows are ordered by status first (`in-progress` → `ready` → `draft`), then by priority within each status group (`urgent` → `high` → `medium` → `low`). Streams without an explicit priority are listed after prioritised streams at the same status level. When categories are in use, group by category first, then apply status/priority ordering within each category.
+
+The top-level [[Streams/Streams|Streams]] index aggregates all focuses into one table with an additional `Stream` column, ordered by focus (Active → Background → Dormant → Future → Settled), then by the same status/priority rule within each focus block.
+
+Both the focus indexes and the top-level table reflect the same streams. Keep them in sync: when a stream is created, promoted, or settled, update both the relevant focus index and the top-level table.
+
 ---
 
 ## Routes and Customs

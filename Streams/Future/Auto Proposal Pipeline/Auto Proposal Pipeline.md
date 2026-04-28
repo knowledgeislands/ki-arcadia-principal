@@ -9,7 +9,7 @@ dependencies: []
 author: Written with Claude
 ---
 
-# KI Proposal Pipeline
+# Proposal Pipeline
 
 ## Overview
 

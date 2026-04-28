@@ -3,7 +3,7 @@ tags:
   - card/proposal
   - topic/knowledge-islands
 status: draft - April 2026
-purpose: Design for token-efficient scheduled task prompts - conventions for lean context, caching, and prompt structure
+purpose: Design for token-efficient scheduled task prompts - conventions for lean context, caching, and prompt structure; includes investigation of caveman as a potential tool
 priority: low
 dependencies: []
 author: Written with Claude
@@ -33,7 +33,7 @@ author: Written with Claude
 
 ## Open Questions
 
-- What is the intended KI destination - a standalone convention note, or guidance embedded in task prompts themselves?
+- What is the intended destination - a standalone convention note, or guidance embedded in task prompts themselves?
 
 ---
 
@@ -47,6 +47,7 @@ Questions to resolve:
 2. Which context to include vs. exclude in prompts
 3. Caching strategies or prompt structure conventions
 4. Whether to document this as a KI convention, or as guidance embedded in the task prompts themselves
+5. Whether [caveman](https://github.com/JuliusBrussee/caveman) is relevant here as a token-efficiency tool — investigate alongside the above
 
 ---
 

@@ -4,7 +4,7 @@
   "showUnsupportedFiles": false,
   "attachmentFolderPath": "./",
   "showLineNumber": false,
-  "newFileLocation": "folder",
+  "newFileLocation": "current",
   "newFileFolderPath": "+",
   "showInlineTitle": false,
   "propertiesInDocument": "hidden",
@@ -15,5 +15,6 @@
     "margin": "0",
     "downscalePercent": 95
   },
-  "readableLineLength": false
+  "readableLineLength": false,
+  "newLinkFormat": "absolute"
 }

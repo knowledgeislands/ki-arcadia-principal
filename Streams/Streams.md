@@ -16,21 +16,26 @@ Streams are projects and workstreams organised by their current level of focus. 
 
 ## Proposals Index
 
-Live tracking view of all active proposals. Sorted by Stream (Active → Background → Dormant → Future → Settled), then by Status within each stream (`in-progress` → `ready` → `draft`). Update whenever a proposal is created, its status changes, or its priority changes. See [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]] for the full lifecycle.
+Live tracking view of all active proposals. Ordered by Stream (Active → Background → Dormant → Future → Settled), then by Status within each stream (`in-progress` → `ready` → `draft`). Update whenever a proposal is created, its status changes, or its priority changes. See [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]] for the full lifecycle.
 
 | Topic                                                                                                                           | Stream     | Status        | Priority |
 | ------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------- | -------- |
-| [[Streams/Active/KI Conformance/KI Conformance\|KI Conformance]]                                                                | Active     | `draft`       | `urgent` |
-| [[Streams/Active/KI Conventions/KI Conventions\|KI Conventions]]                                                                | Active     | `draft`       | `urgent` |
 | [[Streams/Active/Tooling Prompts/Tooling Prompts\|Tooling Prompts]]                                                             | Active     | `in-progress` | `high`   |
-| [[Streams/Active/KI Index Review/KI Index Review\|KI Index Review]]                                                             | Active     | `draft`       | `medium` |
-| [[Streams/Active/KI Proposal Pipeline/KI Proposal Pipeline\|KI Proposal Pipeline]]                                              | Active     | `draft`       | `medium` |
+| [[Streams/Active/Conformance/Conformance\|Conformance]]                   | Active     | `draft`       | `urgent` |
+| [[Streams/Active/Boundary Rules/Boundary Rules\|Boundary Rules]]                   | Active     | `draft`       | `urgent` |
+| [[Streams/Active/Index Review/Index Review\|Index Review]]                | Active     | `draft`       | `medium` |
+| [[Streams/Future/Auto Proposal Pipeline/Auto Proposal Pipeline\|Proposal Pipeline]] | Active     | `draft`       | `medium` |
+| [[Streams/Active/Intentional/Intentional\|Intentional]]                   | Active     | `draft`       | `medium` |
 | [[Streams/Active/Kit Legal Inception/Kit Legal Inception\|Kit Legal Inception]]                                                 | Active     | `draft`       | `medium` |
 | [[Streams/Active/Kit Principal Inception/Kit Principal Inception\|Kit Principal Inception]]                                     | Active     | `draft`       | `medium` |
-| [[Streams/Active/KI Intentional/KI Intentional\|KI Intentional]]                                                                | Active     | `draft`       | `medium` |
 | [[Streams/Background/Harbour Routes and Customs/Harbour Routes and Customs\|Harbour, Routes and Customs]]                       | Background | `draft`       | `low`    |
-| [[Streams/Future/Future Improvements/Future Improvements\|Future Improvements]]                                                 | Future     | `draft`       | `low`    |
+| [[Streams/Future/Scheduled Automations/Scheduled Automations\|Scheduled Automations]]                                           | Future     | `draft`       | `low`    |
+| [[Streams/Future/Agent and Session Improvements/Agent and Session Improvements\|Agent and Session Improvements]]                | Future     | `draft`       | `low`    |
+| [[Streams/Future/Island Conventions/Island Conventions\|Island Conventions]]                                                    | Future     | `draft`       | `low`    |
+| [[Streams/Future/Calendar Templates/Calendar Templates\|Calendar Templates]]                                                    | Future     | `draft`       | `low`    |
+| [[Streams/Future/External Integrations/External Integrations\|External Integrations]]                                           | Future     | `draft`       | `low`    |
 | [[Streams/Future/Token Economics for Scheduled Tasks/Token Economics for Scheduled Tasks\|Token Economics for Scheduled Tasks]] | Future     | `draft`       | `low`    |
+
 
 ---
 

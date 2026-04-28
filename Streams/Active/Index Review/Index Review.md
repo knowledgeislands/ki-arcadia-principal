@@ -3,19 +3,21 @@ tags:
   - card/stream
   - topic/knowledge-islands
 status: draft - April 2026
-purpose: Leaf-to-root review and enrichment of all index notes under Knowledge Islands - ensuring each is a substantive contextualising note, not a navigation menu
+purpose: Leaf-to-root review and enrichment of all index notes under Knowledge Islands, and verification of stream focus index tables - ensuring each is correct, substantive, and in sync
 priority: medium
 dependencies: []
 author: Written with Claude
 ---
 
-# KI Index Review
+# Index Review
 
 ## Overview
 
 A structured review of every index note under `Pillars/Knowledge Islands/`, working from the deepest leaf nodes up to `Knowledge Islands` itself. Each index note is reviewed against the index note standard - a prose Overview plus substantive H2 sections per direct child, each two to four sentences long - and enriched as needed before moving to the next level. The review is interactive: each note is announced before work begins, and decisions can be made through the Cowork UI before the changes are committed.
 
-The goal is that by the end of the review, every index note in the Knowledge Islands pillar accurately contextualises its contents rather than simply listing them.
+The stream also covers stream focus index tables (Active, Background, Dormant, Future, Settled) — verifying each `## Streams` table matches the top-level [[Streams/Streams|Streams]] table, and adding a recurring audit step to whichever maintenance activity owns structural health checks.
+
+The goal is that by the end of the review, every index note in the Knowledge Islands pillar accurately contextualises its contents, and stream focus indexes are in sync and covered by ongoing maintenance.
 
 ---
 
@@ -50,6 +52,8 @@ The order follows the folder structure of `Pillars/Knowledge Islands/`, leaf nod
 - [ ] All index notes under `Pillars/Knowledge Islands/Governance/` reviewed and enriched
 - [ ] All index notes under `Pillars/Knowledge Islands/` reviewed and enriched
 - [ ] `Pillars/Knowledge Islands/Knowledge Islands.md` reviewed and enriched last
+- [ ] Verify stream focus index tables (Active, Background, Dormant, Future, Settled) match the top-level `Streams.md` table
+- [ ] Add a stream index table audit step to the appropriate maintenance activity (Health Check or Conformance Check)
 
 ---
 

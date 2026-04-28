@@ -15,9 +15,11 @@ Settled streams are projects and workstreams that have reached a natural conclus
 
 ---
 
-## Contents
+## Streams
 
-- None.
+| Topic | Status | Priority |
+| ----- | ------ | -------- |
+| — | — | — |
 
 ---
 

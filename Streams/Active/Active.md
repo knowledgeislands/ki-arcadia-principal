@@ -15,17 +15,19 @@ Streams currently receiving active attention - projects being worked on now.
 
 ---
 
-## Contents
+## Streams
 
-- [[Streams/Active/KI Conformance/KI Conformance|KI Conformance]] - constitutional layer and adoption framework for Knowledge Islands
-- [[Streams/Active/KI Conventions/KI Conventions|KI Conventions]] - content boundary rules for the Knowledge Islands pillar areas
-- [[Streams/Active/KI Index Review/KI Index Review|KI Index Review]] - leaf-to-root review and enrichment of all index notes under Knowledge Islands
-- [[Streams/Active/KI Proposal Pipeline/KI Proposal Pipeline|KI Proposal Pipeline]] - designing the Auto Proposal Research activity and proposal maturation model
-- [[Streams/Active/Tooling Prompts/Tooling Prompts|Tooling Prompts]] - building out the Tools/Claude/Activities/ prompt library (Layer 5 of the five-layer model)
-- [[Streams/Active/KI Intentional/KI Intentional|KI Intentional]] - exploring where Intention belongs in the Knowledge Islands conceptual model
-- [[Streams/Active/Kit Legal Inception/Kit Legal Inception|Kit Legal Inception]]
-- [[Streams/Active/Kit Principal Inception/Kit Principal Inception|Kit Principal Inception]]
-- [[Streams/Active/Productivity/Productivity|Productivity]] - active productivity improvement streams
+| Topic | Status | Priority |
+| ----- | ------ | -------- |
+| [[Streams/Active/Tooling Prompts/Tooling Prompts\|Tooling Prompts]] | `in-progress` | `high` |
+| [[Streams/Active/Conformance/Conformance\|Conformance]] | `draft` | `urgent` |
+| [[Streams/Active/Boundary Rules/Boundary Rules\|Boundary Rules]] | `draft` | `urgent` |
+| [[Streams/Active/Index Review/Index Review\|Index Review]] | `draft` | `medium` |
+| [[Streams/Future/Auto Proposal Pipeline/Auto Proposal Pipeline\|Proposal Pipeline]] | `draft` | `medium` |
+| [[Streams/Active/Intentional/Intentional\|Intentional]] | `draft` | `medium` |
+| [[Streams/Active/Kit Legal Inception/Kit Legal Inception\|Kit Legal Inception]] | `draft` | `medium` |
+| [[Streams/Active/Kit Principal Inception/Kit Principal Inception\|Kit Principal Inception]] | `draft` | `medium` |
+| [[Streams/Active/Wiki Link Format/Wiki Link Format\|Wiki Link Format]] | `draft` | `medium` |
 
 ---
 

@@ -15,9 +15,11 @@ Dormant streams are projects that are on hold indefinitely - not abandoned, but 
 
 ---
 
-## Contents
+## Streams
 
-- None.
+| Topic | Status | Priority |
+| ----- | ------ | -------- |
+| — | — | — |
 
 ---
 

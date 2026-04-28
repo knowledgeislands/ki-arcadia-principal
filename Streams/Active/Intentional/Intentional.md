@@ -9,7 +9,7 @@ dependencies: []
 author: Written with Claude
 ---
 
-# KI Intentional
+# Intentional
 
 ## Overview
 

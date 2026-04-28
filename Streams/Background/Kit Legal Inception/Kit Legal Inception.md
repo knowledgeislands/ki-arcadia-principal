@@ -34,7 +34,7 @@ Pending - not yet started. Depends on arcadia-principal governance being stable.
 1. Add `kit-legal` to the Cowork project (mount the folder)
 2. Review existing content and structure
 3. Create `Pillars/Knowledge Capital/` following the standard pattern (Identity, Physical Locations, Routing Rules, Glossary, Governance instance)
-4. Create or update `CLAUDE.md` to reflect the KI model
+4. Create or update `CLAUDE.md` to reflect the Knowledge Islands model
 5. Create `Pillars/Knowledge Islands/Known Lands.md` - the satellite's personal chart of known islands
 6. Link back to arcadia-principal concepts where relevant
 

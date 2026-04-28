@@ -76,5 +76,5 @@ Customs at the boundary rule is already implicit in Concept.md: "if customs exis
 - [[Streams/Background/Background|Background]] - parent stream index
 - [[Pillars/Knowledge Islands/Concept/Concept|Concept]] - primary target note
 - [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure|Structure]] - secondary target note
-- [[Streams/Active/KI Intentional/KI Intentional|KI Intentional]] - related conceptual stream; Intention may inform the Customs framing
+- [[Streams/Active/Intentional/Intentional|Intentional]] - related conceptual stream; Intention may inform the Customs framing
 - [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]] - governance model for this stream

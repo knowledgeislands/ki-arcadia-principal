@@ -9,7 +9,7 @@ dependencies: []
 author: Written with Claude
 ---
 
-# KI Conformance
+# Conformance
 
 ## Overview
 
@@ -91,4 +91,4 @@ Group index notes in `Activities/` now carry an Adoption Requirements section li
 - [[Streams/Active/Active|Active]] - parent stream index
 - [[Pillars/Knowledge Islands/Governance/Activities/Constitutional/Constitutional|Constitutional]] - the group this stream defined
 - [[Pillars/Knowledge Capital/Charter|Charter]] - the key output of this stream
-- [[Streams/Active/KI Intentional/KI Intentional|KI Intentional]] - related conceptual stream
+- [[Streams/Active/Intentional/Intentional|Intentional]] - related conceptual stream
