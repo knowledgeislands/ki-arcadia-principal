@@ -27,16 +27,16 @@ The Morning Briefing is the sole activity in this group. It is scheduled to run 
 
 ## Adoption Requirements
 
-To adopt this activity group, an island must create the following Knowledge Capital notes. A vetoed island must create an index stub at `Knowledge Capital/Governance/Activities/Briefings/Briefings` acknowledging the veto.
+To adopt this activity group, an island must create the following Knowledge Capital notes. A vetoed island must create an index stub at `Knowledge Capital/Activities/Briefings/Briefings` acknowledging the veto.
 
 | Note | Path | Purpose |
 | --- | --- | --- |
-| Briefings index | `Knowledge Capital/Governance/Activities/Briefings/Briefings` | Group index; confirms adoption and links to tool config |
-| Schedule | `Knowledge Capital/Governance/Activities/Schedule` | Day-type taxonomy read by the Morning Briefing schedule |
+| Briefings index | `Knowledge Capital/Activities/Briefings/Briefings` | Group index; confirms adoption and links to tool config |
+| Schedule | `Knowledge Capital/Activities/Schedule` | Day-type taxonomy read by the Morning Briefing schedule |
 
 ---
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Briefings/Briefings|Tools/Claude/Activities/Briefings]] - Layer 5 prompts that drive this activity
+- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - parent index
+- [[Pillars/Knowledge Islands/Tools/Claude/Activities/Briefings/Briefings|Tools/Claude/Activities/Briefings]] - Layer 5 prompts that drive this activity

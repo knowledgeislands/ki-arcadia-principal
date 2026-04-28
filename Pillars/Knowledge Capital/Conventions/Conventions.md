@@ -29,4 +29,4 @@ This folder holds Arcadia's island-specific conventions: the vocabulary that mak
 ## Related Topics
 
 - [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure|Structure]] - generic structural conventions this island follows
+- [[Pillars/Knowledge Islands/Conventions/Structure/Structure|Structure]] - generic structural conventions this island follows

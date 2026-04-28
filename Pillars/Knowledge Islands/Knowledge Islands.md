@@ -62,35 +62,6 @@ The tool layer and the agent layer are kept separate by design. Tool notes cover
 
 ---
 
-## Management
-
-### Physical Stores
-
-Each island realises its knowledge through one or more physical stores:
-
-| Store             | Purpose                                                         | Structure                     |
-| ----------------- | --------------------------------------------------------------- | ----------------------------- |
-| **Text store**    | Markdown notes - version-controlled, git-backed, human-readable | Canonical KI folder structure |
-| **Binary store**  | Large binary files - images, PDFs, exports, attachments         | Mirrors text store exactly    |
-| **Working space** | Temporary area used by tools and agents; ephemeral              | None required                 |
-
-The text and binary stores must share an identical folder structure so that files are co-located by topic regardless of which store they live in. When creating or referencing a binary asset, save it to the binary store under the same relative subfolder as the corresponding note.
-
-Git is the source of truth for canonical knowledge. The working space is ephemeral - nothing in it is canonical until committed to a store.
-
-### Governance Infrastructure
-
-The governance infrastructure belongs to the principal island and serves the entire archipelago. It is not a store - it is the operational layer through which knowledge is managed and evolved:
-
-| Infrastructure     | Purpose                                                                                              |
-| ------------------ | ---------------------------------------------------------------------------------------------------- |
-| **Cowork project** | The parliament - where proposals are reviewed, sessions are run, and archipelago-wide decisions made |
-| **Working folder** | The yard - temporary scratch space for in-progress work; discarded once committed or abandoned       |
-
-Specific paths for this island are defined in [[Physical Locations]].
-
----
-
 ## Knowledge Capitals
 
 Every general concept defined in [[Knowledge Islands]] has a corresponding specific realisation in [[Knowledge Capital]]. The two are structural mirrors: Knowledge Islands holds the portable, island-agnostic definition; Knowledge Capital holds Arcadia's instance of that definition - this island's council, citizenship records, integration configuration, routing overrides, and identity. When adding a new generic concept here, its island-specific counterpart belongs in Knowledge Capital, not in Knowledge Islands itself.

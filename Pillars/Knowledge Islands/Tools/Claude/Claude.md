@@ -113,7 +113,7 @@ The `productivity:memory-management` skill provides a structured **deep memory**
 
 ## Activities
 
-[[Claude/Activities/Activities]] is the Layer 5 prompt library - the executable prompts that drive scheduled and conversational activities, organised into one subfolder per activity group (Email, Tending, Briefings, Linear). What each activity does and why is documented at Layer 1 under [[Knowledge Islands/Governance/Activities/Activities]].
+[[Claude/Activities/Activities]] is the Layer 5 prompt library - the executable prompts that drive scheduled and conversational activities, organised into one subfolder per activity group (Email, Tending, Briefings, Linear). What each activity does and why is documented at Layer 1 under [[Knowledge Islands/Activities/Activities]].
 
 ---
 
@@ -126,5 +126,5 @@ The `productivity:memory-management` skill provides a structured **deep memory**
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Tools/Tools|Tools]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Tools/Obsidian|Obsidian]] - primary interface used alongside the Claude integration
+- [[Pillars/Knowledge Islands/Tools/Tools|Tools]] - parent index
+- [[Pillars/Knowledge Islands/Tools/Obsidian|Obsidian]] - primary interface used alongside the Claude integration

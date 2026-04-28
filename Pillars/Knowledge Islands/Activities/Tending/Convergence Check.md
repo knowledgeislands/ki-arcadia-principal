@@ -38,7 +38,7 @@ Adhoc - _"ki convergence check"_.
 
 ## Shared notes (must be identical across all KIs)
 
-These notes must remain byte-for-byte identical. Any difference is drift to be resolved. Paths are relative to each KI's `Pillars/Knowledge Islands/Governance/` folder.
+These notes must remain byte-for-byte identical. Any difference is drift to be resolved. Paths are relative to each KI's `Pillars/Knowledge Islands/` folder.
 
 - `Agents/Agents.md`
 - `Agents/Agentic AI/Agentic AI.md`
@@ -135,6 +135,6 @@ State which files were updated and summarise what was synced, deferred, or inten
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Activities/Tending/Tending|Tending]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - grandparent index
+- [[Pillars/Knowledge Islands/Activities/Tending/Tending|Tending]] - parent index
+- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - grandparent index
 - [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - KI-specific parameters folder that makes portability possible

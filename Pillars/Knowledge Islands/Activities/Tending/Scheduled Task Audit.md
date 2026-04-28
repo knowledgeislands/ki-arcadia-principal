@@ -54,12 +54,12 @@ You are running the Scheduled Task Audit. Your job is to verify that each live C
 Run this bash command to find the Knowledge Capital folder and derive the repository root:
   KI_PROPS=$(find /sessions/*/mnt -maxdepth 7 -name "Knowledge Capital.md" -path "*/Knowledge Capital/*" 2>/dev/null | head -1)
   REPOSITORY=$(echo "$KI_PROPS" | sed 's|||')
-  ACTIVITIES_DIR="$REPOSITORY/Pillars/Knowledge Islands/Governance/Activities"
+  ACTIVITIES_DIR="$REPOSITORY/Pillars/Knowledge Islands/Activities"
   echo "Repository: $REPOSITORY"
 
 Then read:
 1. $REPOSITORY/CLAUDE.md - KI operating instructions
-2. $REPOSITORY/Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons.md - pre-flight check
+2. $REPOSITORY/Pillars/Knowledge Islands/Tools/Claude/Mistakes and Lessons.md - pre-flight check
 3. $REPOSITORY/Pillars/Knowledge Capital/Charter.md - task ID prefix
 
 ## Step 1 - List all scheduled tasks
@@ -107,7 +107,7 @@ Call `mcp__scheduled-tasks__list_scheduled_tasks` to retrieve metadata for all a
 
 ### 2. Identify the corresponding KI note
 
-For each task, locate the matching activity note under `Pillars/Knowledge Islands/Governance/Activities/`. The task ID prefix is documented in [[Charter]].
+For each task, locate the matching activity note under `Pillars/Knowledge Islands/Activities/`. The task ID prefix is documented in [[Charter]].
 
 ### 3. Verify schedule and description
 
@@ -139,5 +139,5 @@ When updating a prompt during an active session: update the KI note first, then 
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Activities/Tending/Tending|Tending]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - grandparent index
+- [[Pillars/Knowledge Islands/Activities/Tending/Tending|Tending]] - parent index
+- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - grandparent index

@@ -49,7 +49,7 @@ Optional (add when relevant):
 `## Related Topics` must include:
 
 1. The parent group index - `[[Activities/{group}/{group}|{group}]]`
-2. `[[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]]` - grandparent index
+2. `[[Pillars/Knowledge Islands/Activities/Activities|Activities]]` - grandparent index
 3. The corresponding Layer 5 prompt note at `[[Tools/Claude/Activities/{group}/...]]`, once created
 4. Any Knowledge Capital notes the activity reads (Layer 2 config)
 
@@ -80,6 +80,6 @@ The KI note is the canonical source. The Cowork scheduled task is a deployment a
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Types/Types|Types]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] - five-layer model and activity design process
-- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - index of all island activities
+- [[Pillars/Knowledge Islands/Conventions/Notes/Types/Types|Types]] - parent index
+- [[Pillars/Knowledge Islands/Activities/Authoring Activities|Authoring Activities]] - five-layer model and activity design process
+- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - index of all island activities

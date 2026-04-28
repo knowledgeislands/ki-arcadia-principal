@@ -91,6 +91,6 @@ After processing, output:
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Activities/Email/Approach|Approach]] - concept reference and shared definitions
-- [[Pillars/Knowledge Islands/Governance/Activities/Email/Email|Email]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Activities/Email/Route Review|Route Review]] - alternative for batch-applying agreed suggestions
+- [[Pillars/Knowledge Islands/Activities/Email/Approach|Approach]] - concept reference and shared definitions
+- [[Pillars/Knowledge Islands/Activities/Email/Email|Email]] - parent index
+- [[Pillars/Knowledge Islands/Activities/Email/Route Review|Route Review]] - alternative for batch-applying agreed suggestions

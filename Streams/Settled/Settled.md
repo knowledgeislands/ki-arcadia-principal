@@ -26,4 +26,4 @@ Settled streams are projects and workstreams that have reached a natural conclus
 ## Related Topics
 
 - [[Streams/Streams|Streams]] - parent index
-- [[Streams/Dormant/Dormant|Dormant]] - streams on hold that may resume
+- [[Streams/Dormant/Dormant|Dormant]] - dormant streams

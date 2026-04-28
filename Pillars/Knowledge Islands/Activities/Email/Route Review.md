@@ -125,7 +125,7 @@ Output a structured summary:
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Activities/Email/Approach|Approach]] - concept reference and shared definitions
-- [[Pillars/Knowledge Islands/Governance/Activities/Email/Email|Email]] - parent index
+- [[Pillars/Knowledge Islands/Activities/Email/Approach|Approach]] - concept reference and shared definitions
+- [[Pillars/Knowledge Islands/Activities/Email/Email|Email]] - parent index
 - [[Email Routing Queue|Email Routing Queue]] - the queue file reviewed before invoking this activity
-- [[Pillars/Knowledge Islands/Governance/Activities/Email/Re-route Triaged|Re-route Triaged]] - alternative for manually working Unknown one at a time
+- [[Pillars/Knowledge Islands/Activities/Email/Re-route Triaged|Re-route Triaged]] - alternative for manually working Unknown one at a time

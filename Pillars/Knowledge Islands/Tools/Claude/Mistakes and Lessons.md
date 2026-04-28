@@ -58,5 +58,5 @@ Log active mistakes here. Delete each entry once the fix is applied and the less
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Claude|Claude]] - parent index
+- [[Pillars/Knowledge Islands/Tools/Claude/Claude|Claude]] - parent index
 - [[CLAUDE|CLAUDE]] - the CLAUDE.md instruction file that references this note as a pre-flight check

@@ -37,7 +37,7 @@ Infer the mode from the request, or ask if unclear:
 1. Read [[Mistakes and Lessons]] as pre-flight check before writing
 2. Identify content; determine folder using the routing rules in CLAUDE.md
 3. Propose filename (title case, spaces, `.md`)
-4. Draft note using `Pillars/Knowledge Islands/Governance/Tools/Obsidian/Templates/Note - General.md`; include `source/claude` tag in frontmatter
+4. Draft note using `Pillars/Knowledge Islands/Tools/Obsidian/Templates/Note - General.md`; include `source/claude` tag in frontmatter
 5. Confirm, then write
 
 ### Mode B: UPDATE - enrich an existing note
@@ -62,12 +62,12 @@ Infer the mode from the request, or ask if unclear:
 ### Mode E: DIGEST - session digest
 
 1. Create a sibling Calendar note (`YYYY-MM-DD Session - [Topic].md`) following the Session Digests format in CLAUDE.md. Reference it from today's daily note by wikilink - do not write digest content inline into the daily note
-2. If today's daily note doesn't exist, create it first using `Pillars/Knowledge Islands/Governance/Tools/Obsidian/Templates/Calendar - Daily.md`
+2. If today's daily note doesn't exist, create it first using `Pillars/Knowledge Islands/Tools/Obsidian/Templates/Calendar - Daily.md`
 3. Session notes are temporary - see CLAUDE.md (Session Digests section) for the full lifecycle: once a note's content has been extracted to Pillars or Streams, delete the session note
 
 ---
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude|Claude]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - the scheduled tasks that use this skill
+- [[Pillars/Knowledge Islands/Agents/Claude/Claude|Claude]] - parent index
+- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - the scheduled tasks that use this skill

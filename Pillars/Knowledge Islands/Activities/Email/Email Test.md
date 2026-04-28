@@ -119,7 +119,7 @@ Close with: "What would you like to do next?" followed by a prioritised list of 
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Activities/Email/Approach|Approach]] - concept reference and shared definitions
-- [[Pillars/Knowledge Islands/Governance/Activities/Email/Email|Email]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Activities/Email/Route Drift|Route Drift]] - scheduled activity tested by this
-- [[Pillars/Knowledge Islands/Governance/Activities/Email/Route Triage|Route Triage]] - scheduled activity tested by this (aged pass + inbound pass)
+- [[Pillars/Knowledge Islands/Activities/Email/Approach|Approach]] - concept reference and shared definitions
+- [[Pillars/Knowledge Islands/Activities/Email/Email|Email]] - parent index
+- [[Pillars/Knowledge Islands/Activities/Email/Route Drift|Route Drift]] - scheduled activity tested by this
+- [[Pillars/Knowledge Islands/Activities/Email/Route Triage|Route Triage]] - scheduled activity tested by this (aged pass + inbound pass)

@@ -66,5 +66,5 @@ The test: if the note were deleted today, would any knowledge be lost? If not, d
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Types/Types|Notes]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - the per-session protocol that triggers session digest creation
+- [[Pillars/Knowledge Islands/Conventions/Notes/Types/Types|Notes]] - parent index
+- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - the per-session protocol that triggers session digest creation

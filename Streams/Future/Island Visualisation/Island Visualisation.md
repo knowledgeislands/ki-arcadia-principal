@@ -20,7 +20,7 @@ The concept extends the geographic metaphor that runs through the whole Knowledg
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Process]].
+This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -53,5 +53,5 @@ _Not yet specified - this stream needs a planning pass before destinations can b
 ## Related Topics
 
 - [[Streams/Future/Future|Future]] - parent stream index
-- [[Streams/Active/Boundary Rules/Boundary Rules|Boundary Rules]] - walls and gates become literal in the visualisation
-- [[Pillars/Knowledge Islands/Concept/Concept|Concept]] - the geographic model this visualisation would express
+- [[Streams/Active/Boundary Rules/Boundary Rules|Boundary Rules]] - boundary rules stream
+- [[Pillars/Knowledge Islands/Concept/Concept|Concept]] - geographic model

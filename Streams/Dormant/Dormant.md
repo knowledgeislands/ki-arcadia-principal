@@ -24,4 +24,4 @@ Dormant streams are projects that are on hold indefinitely - not abandoned, but 
 
 ## Related Topics
 
-- [[Streams/Streams|Streams]] - parent index for all project streams
+- [[Streams/Streams|Streams]] - parent index

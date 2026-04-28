@@ -73,25 +73,25 @@ Pillars
 │       ├── Governance.md ←────────────── [[Knowledge Capital/Governance]]
 │       ├── Home.md ←──────────────────── [[Governance/Home]]
 │       ├── Activities
-│       │   └── Activities.md ←────────── [[Knowledge Capital/Governance/Activities]]
+│       │   └── Activities.md ←────────── [[Knowledge Capital/Activities]]
 │       ├── Agents
-│       │   └── Agents.md ←────────────── [[Knowledge Capital/Governance/Agents]]
+│       │   └── Agents.md ←────────────── [[Knowledge Capital/Agents]]
 │       ├── Pillars
-│       │   └── Pillars.md ←───────────── [[Knowledge Capital/Governance/Pillars]]
+│       │   └── Pillars.md ←───────────── [[Knowledge Capital/Pillars]]
 │       └── Tools
-│           └── Tools.md ←─────────────── [[Knowledge Capital/Governance/Tools]]
+│           └── Tools.md ←─────────────── [[Knowledge Capital/Tools]]
 └── Knowledge Islands
     ├── Knowledge Islands.md ←─────────── [[Knowledge Islands]]
     └── Governance
         ├── Governance.md ←────────────── [[Knowledge Islands/Governance]]
         ├── Activities
-        │   └── Activities.md ←────────── [[Knowledge Islands/Governance/Activities]]
+        │   └── Activities.md ←────────── [[Knowledge Islands/Activities]]
         ├── Agents
-        │   └── Agents.md ←────────────── [[Knowledge Islands/Governance/Agents]]
+        │   └── Agents.md ←────────────── [[Knowledge Islands/Agents]]
         ├── Pillars
-        │   └── Pillars.md ←───────────── [[Knowledge Islands/Governance/Pillars]]
+        │   └── Pillars.md ←───────────── [[Knowledge Islands/Pillars]]
         └── Tools
-            └── Tools.md ←─────────────── [[Knowledge Islands/Governance/Tools]]
+            └── Tools.md ←─────────────── [[Knowledge Islands/Tools]]
             └── Linear.md ←────────────── [[Linear]]  (unique)
 ```
 
@@ -109,7 +109,7 @@ Examples:
 
 - `Linear` → array entry → `[[Linear]]`.
 - `Governance` at `Pillars/Knowledge Islands/Governance` → object entry, key `Knowledge Islands` → `[[Knowledge Islands/Governance]]`.
-- `Activities` at KI/Governance → object entry `*` → inherit Governance's prefix → `[[Knowledge Islands/Governance/Activities]]`.
+- `Activities` at KI/Governance → object entry `*` → inherit Governance's prefix → `[[Knowledge Islands/Activities]]`.
 
 ---
 
@@ -145,4 +145,4 @@ Rebuilding: a tending activity traverses the full vault, builds the complete reg
 ## Related Topics
 
 - [[Streams/Active/Active|Active]] - parent stream index
-- [[Streams/Settled/Wiki Link Format/Wiki Link Format|Wiki Link Format]] - completed stream; used the registry for shortest-path link resolution and migration
+- [[Streams/Settled/Wiki Link Format/Wiki Link Format|Wiki Link Format]] - wiki link stream

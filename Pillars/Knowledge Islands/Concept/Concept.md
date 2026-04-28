@@ -105,9 +105,9 @@ The unit of governance in the model is a **territory**: one or more islands unde
 | **Principal island** | The seat of governance for a territory. Holds the Capital and carries the shared governance infrastructure for the whole territory. Every territory has exactly one principal island. |
 | **Satellite island** | A separate, governed extension of a territory. Has its own stores and operates within the same governance as the principal island, but maintains an independent boundary - different topic scope, access rules, or publication target. |
 
-A territory that adopts Knowledge Islands does so unconditionally with respect to its **constitutional layer** - the minimum conditions that distinguish a Knowledge Island from an unstructured repository. This layer is prior to the adoption framework, not governed by it: constitutional requirements cannot be vetoed. Two elements are constitutional: **Charter** (the island must have a Charter in its Knowledge Capital, declaring its identity and adoption position on every non-constitutional activity group, with no unknowns permitted); and **Conformance** (the island must maintain a mechanism to verify it continues to meet the constitutional baseline). Beyond these, every activity group is subject to the adoption model - each territory explicitly adopts or vetoes each group. See [[Governance/Activities/Constitutional/Constitutional]] for the full specification.
+A territory that adopts Knowledge Islands does so unconditionally with respect to its **constitutional layer** - the minimum conditions that distinguish a Knowledge Island from an unstructured repository. This layer is prior to the adoption framework, not governed by it: constitutional requirements cannot be vetoed. Two elements are constitutional: **Charter** (the island must have a Charter in its Knowledge Capital, declaring its identity and adoption position on every non-constitutional activity group, with no unknowns permitted); and **Conformance** (the island must maintain a mechanism to verify it continues to meet the constitutional baseline). Beyond these, every activity group is subject to the adoption model - each territory explicitly adopts or vetoes each group. See [[Knowledge Islands/Activities/Constitutional/Constitutional]] for the full specification.
 
-The principal island also holds the shared operational infrastructure for the territory - the working spaces and tools through which the whole territory is managed. The current implementation is described in [[Knowledge Islands/Governance/Governance]].
+The principal island also holds the shared operational infrastructure for the territory - the working spaces and tools through which the whole territory is managed. The current implementation is described in [[Knowledge Islands]].
 
 Islands within a territory share the same governance conventions (note format, routing rules, enactment process) but maintain independent stores. A change to one island does not automatically affect another - each change goes through the territory's enactment process.
 
@@ -153,14 +153,14 @@ Every person who interacts with an island has a standing within it:
 | ------------------------- | -------- | -------- | ------------------------------------------------------------------------ | ------------------- |
 | **Standing**              | Informal | Full     | Full                                                                     |
 | **Council eligibility**   | ✗        | Eligible | Member                                                                   |
-| **Formal proposals**      | ✗        | ✗        | ✓ via [[Knowledge Islands/Governance/Processes/Enactment Process]] |
+| **Formal proposals**      | ✗        | ✗        | ✓ via [[Knowledge Islands/Processes/Enactment Process]] |
 | **Informal contribution** | ✓        | ✓        | ✓                                                                        |
 
 Citizenship is a prerequisite for council membership - a council member must be a Citizen of the island they govern. The council (or governor, for single-governor islands) grants citizenship. Citizenship is not restricted to a single island; a person may hold citizenship across multiple territories simultaneously, and therefore be eligible for council membership in each. A Visitor with a substantive contribution may seek citizenship, or ask an existing council member to carry the proposal forward on their behalf.
 
 Each island's governance pattern, council membership, and citizenship are tracked in its [[Knowledge Capital]].
 
-Jurisdiction is enacted in practice through the [[Knowledge Islands/Governance/Processes/Enactment Process]] and [[Contribution Process]].
+Jurisdiction is enacted in practice through the [[Knowledge Islands/Processes/Enactment Process]] and [[Contribution Process]].
 
 ---
 
@@ -180,7 +180,7 @@ Five areas work together to constitute governance.
 
 **Tools** are the editors, AI systems, task managers, and connected services through which agents act. The tool layer covers configuration and connection; the agent layer covers operating behaviour. Neither duplicates the other.
 
-The full operational specification - conventions, processes, activities, agents, and tools - is in [[Knowledge Islands/Governance/Governance]]. Each island's specific realisation (its council, integrations, and routing configuration) lives in its [[Knowledge Capital]].
+The full operational specification - conventions, processes, activities, agents, and tools is covered in the rest of [[Knowledge Islands]]. Each island's specific realisation (its council, integrations, and routing configuration) lives in its [[Knowledge Capital]].
 
 ---
 
@@ -193,7 +193,6 @@ The wider PKM and AI community has produced a number of approaches worth drawing
 ## Related Topics
 
 - [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Governance|Governance]] - conventions, integrations, and maintenance activities
 - [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - the specific realisation of this model for this island
 
 [zettelkasten]: https://zettelkasten.de/introduction/

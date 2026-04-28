@@ -30,4 +30,4 @@ The foundational archipelago - the Knowledge Island of Knowledge Islands. Arcadi
 ## Related Topics
 
 - [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - parent index
-- [[Pillars/Knowledge Capital/Governance/Governance|Governance]] - Arcadia's council and governance instance
+- [[Pillars/Knowledge Capital/Governance|Governance]] - Arcadia's council and governance instance

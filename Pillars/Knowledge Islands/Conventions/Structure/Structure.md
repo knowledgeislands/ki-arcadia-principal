@@ -16,6 +16,31 @@ An island has geography - both natural and constructed. The streams run through 
 
 Structure is where those geographic conventions are specified. Each zone has its own note covering its internal organisation, routing rules, and governing logic. What you find here is the map; what you find in each sub-note is the territory.
 
+### Physical Stores
+
+Each island realises its knowledge through one or more physical stores:
+
+| Store             | Purpose                                                         | Structure                     |
+| ----------------- | --------------------------------------------------------------- | ----------------------------- |
+| **Text store**    | Markdown notes - version-controlled, git-backed, human-readable | Canonical KI folder structure |
+| **Binary store**  | Large binary files - images, PDFs, exports, attachments         | Mirrors text store exactly    |
+| **Working space** | Temporary area used by tools and agents; ephemeral              | None required                 |
+
+The text and binary stores must share an identical folder structure so that files are co-located by topic regardless of which store they live in. When creating or referencing a binary asset, save it to the binary store under the same relative subfolder as the corresponding note.
+
+Git is the source of truth for canonical knowledge. The working space is ephemeral - nothing in it is canonical until committed to a store.
+
+### Governance Infrastructure
+
+The governance infrastructure belongs to the principal island and serves the entire archipelago. It is not a store - it is the operational layer through which knowledge is managed and evolved:
+
+| Infrastructure     | Purpose                                                                                              |
+| ------------------ | ---------------------------------------------------------------------------------------------------- |
+| **Cowork project** | The parliament - where proposals are reviewed, sessions are run, and archipelago-wide decisions made |
+| **Working folder** | The yard - temporary scratch space for in-progress work; discarded once committed or abandoned       |
+
+Specific paths for this island are defined in [[Physical Locations]].
+
 ---
 
 ## Library
@@ -59,7 +84,7 @@ Streams/$Focus/$Category/$ProposalName/$ProposalName.md
 Three common approaches:
 
 - **No category** - suitable for simple islands with few concurrent proposals; keeps the structure flat and unambiguous
-- **Pillar path** - category mirrors the destination in Pillars (e.g. `Active/Knowledge Islands/Governance/`); scales well at volume and echoes where the knowledge is heading
+- **Pillar path** - category mirrors the destination in Pillars (e.g. `Active/Knowledge Islands/`); scales well at volume and echoes where the knowledge is heading
 - **Proposal status** - category expresses current status; useful for islands processing many proposals concurrently across a single domain
 
 Category is a local decision. Active, Background, Dormant, and Future often share the same scheme. Settled frequently warrants a different approach - time-based categorisation (e.g. by year or quarter) works well when the volume of settled streams makes a flat listing unwieldy.
@@ -90,6 +115,6 @@ Both the focus indexes and the top-level table reflect the same streams. Keep th
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Conventions/Conventions|Conventions]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Library/Library|Library]] - internal Library structure, routing rules, and index note conventions
+- [[Pillars/Knowledge Islands/Conventions/Conventions|Conventions]] - parent index
+- [[Pillars/Knowledge Islands/Conventions/Structure/Library/Library|Library]] - internal Library structure, routing rules, and index note conventions
 - [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - island types, archipelago model, and the full geographic model

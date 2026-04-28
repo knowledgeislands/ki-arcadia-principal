@@ -23,7 +23,7 @@ These tiers are complementary, not competing. The Library is what the knowledge 
 | Tier                 | What it is                                                                            | Lifetime                                          |
 | -------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------- |
 | **The Library**      | Structured notes in the KI vault - rules, conventions, style, architecture            | Permanent - versioned in git                      |
-| **Canonical memory** | Operational distillation of KI notes - rebuilt regularly from the KI                  | Rebuilt on a schedule; always derived from the KI |
+| **Canonical memory** | Operational distillation notes - rebuilt regularly from the KI                        | Rebuilt on a schedule; always derived from the KI |
 | **Auxiliary memory** | In-flight observations from sessions - corrections, patterns, not-yet-validated rules | Temporary - promoted to KI or pruned              |
 
 ---
@@ -119,7 +119,7 @@ Notes in `Knowledge Capital/` are already KI-specific by definition; they may us
 ```markdown
 ## KI Sources
 
-- `Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure.md` - folder layout, routing rules
+- `Pillars/Knowledge Islands/Conventions/Structure/Structure.md` - folder layout, routing rules
 - `Pillars/.../Routing Rules.md` - three-domain model
 ```
 
@@ -129,6 +129,6 @@ Both directions should be maintained. `memory_file:` enables Knowledge Rebuild t
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Conventions/Conventions|Conventions]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Agents/Claude/Memory Architecture|Memory Architecture]] - the Claude-specific implementation of this model for this KI
-- [[Pillars/Knowledge Islands/Governance/Activities/Tending/Knowledge Rebuild|Knowledge Rebuild]] - the scheduled task that maintains the canonical memory layer
+- [[Pillars/Knowledge Islands/Conventions/Conventions|Conventions]] - parent index
+- [[Pillars/Knowledge Islands/Agents/Claude/Memory Architecture|Memory Architecture]] - the Claude-specific implementation of this model for this KI
+- [[Pillars/Knowledge Islands/Activities/Tending/Knowledge Rebuild|Knowledge Rebuild]] - the scheduled task that maintains the canonical memory layer

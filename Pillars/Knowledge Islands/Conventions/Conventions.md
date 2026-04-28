@@ -37,4 +37,4 @@ The island has geography - both natural and constructed. [[Structure]] maps its 
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Governance|Governance]] - parent index
+- [[Pillars/Knowledge Islands/Governance|Governance]] - parent index

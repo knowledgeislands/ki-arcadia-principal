@@ -18,7 +18,7 @@ Structural note-taking conventions that could improve the semantic richness and 
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Process]].
+This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -32,5 +32,5 @@ This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Proce
 ## Related Topics
 
 - [[Streams/Future/Future|Future]] - parent stream index
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Notes|Notes]] - the note convention standard these would extend
-- [[Streams/Active/Boundary Rules/Boundary Rules|Boundary Rules]] - related active stream defining boundary rules; prospective conventions may surface here first
+- [[Pillars/Knowledge Islands/Conventions/Notes/Notes|Notes]] - note conventions
+- [[Streams/Active/Boundary Rules/Boundary Rules|Boundary Rules]] - related boundary rules

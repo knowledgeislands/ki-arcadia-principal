@@ -42,5 +42,5 @@ Weekly - _"ki inbox review"_. Typically on Monday alongside the [[Health Check]]
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Activities/Tending/Tending|Tending]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - grandparent index
+- [[Pillars/Knowledge Islands/Activities/Tending/Tending|Tending]] - parent index
+- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - grandparent index

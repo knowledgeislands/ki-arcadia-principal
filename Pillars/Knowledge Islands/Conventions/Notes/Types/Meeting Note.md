@@ -65,4 +65,4 @@ Must include, in order:
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Types/Types|Notes]] - parent index
+- [[Pillars/Knowledge Islands/Conventions/Notes/Types/Types|Notes]] - parent index

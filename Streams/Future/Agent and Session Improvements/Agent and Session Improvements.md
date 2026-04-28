@@ -19,7 +19,7 @@ Ideas for improving how Claude operates within the island — both deeper AI cap
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Process]].
+This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -35,5 +35,5 @@ This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Proce
 ## Related Topics
 
 - [[Streams/Future/Future|Future]] - parent stream index
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Claude|Claude]] - the integration layer these improvements would extend
-- [[Pillars/Knowledge Capital/Charter|Charter]] - agent configuration is declared here
+- [[Pillars/Knowledge Islands/Tools/Claude/Claude|Claude]] - Claude integration
+- [[Pillars/Knowledge Capital/Charter|Charter]] - agent configuration

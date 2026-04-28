@@ -11,7 +11,7 @@ author: Written with Claude
 
 ## Overview
 
-This folder holds the island-specific material that shapes how AI agents interact with Arcadia. Generic agent behaviour - reasoning patterns, safety conventions, and the conceptual model for agentic AI in the KI system - is defined in [[Knowledge Islands/Governance/Agents/Agents]] under Knowledge Islands. What lives here is the island-specific layer: the user profile Claude draws on to calibrate its voice, and the ordered list of notes that ground an agent in this island's operational context when memory is cold.
+This folder holds the island-specific material that shapes how AI agents interact with Arcadia. Generic agent behaviour - reasoning patterns, safety conventions, and the conceptual model for agentic AI in the KI system - is defined in [[Knowledge Islands/Agents/Agents]] under Knowledge Islands. What lives here is the island-specific layer: the user profile Claude draws on to calibrate its voice, and the ordered list of notes that ground an agent in this island's operational context when memory is cold.
 
 ---
 
@@ -30,5 +30,5 @@ This folder holds the island-specific material that shapes how AI agents interac
 ## Related Topics
 
 - [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Agents/Agents|Agents]] - generic agent patterns this island follows
-- [[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude Behaviour|Claude Behaviour]] - Claude-specific behavioural conventions
+- [[Pillars/Knowledge Islands/Agents/Agents|Agents]] - generic agent patterns this island follows
+- [[Pillars/Knowledge Islands/Agents/Claude/Claude Behaviour|Claude Behaviour]] - Claude-specific behavioural conventions

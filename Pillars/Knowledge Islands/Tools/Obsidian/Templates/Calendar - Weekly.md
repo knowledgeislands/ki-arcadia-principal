@@ -24,4 +24,4 @@ Week of {{date:DD MMMM YYYY}}.
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Tools/Obsidian/Templates/Templates|Templates]] - parent index
+- [[Pillars/Knowledge Islands/Tools/Obsidian/Templates/Templates|Templates]] - parent index

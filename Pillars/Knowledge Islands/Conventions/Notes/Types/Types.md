@@ -41,4 +41,4 @@ The structure for Layer 1 activity notes: required sections (Overview, Trigger, 
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Notes|Notes]] - parent index
+- [[Pillars/Knowledge Islands/Conventions/Notes/Notes|Notes]] - parent index

@@ -36,14 +36,14 @@ Content belongs in this folder when it:
 Content does **not** belong here when it:
 
 - Is specific to Claude's implementation (→ [[Agents/Claude/Claude|Agents/Claude]])
-- Describes how a particular tool is configured or connected (→ [[Knowledge Islands/Governance/Tools/Tools]])
+- Describes how a particular tool is configured or connected (→ [[Knowledge Islands/Tools/Tools]])
 - Is tied to a specific activity's logic or prompt (→ [[Claude/Activities/Activities|Tools/Claude/Activities]])
 
 ---
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Agents/Agents|Agents]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude|Agents/Claude]] - Claude's implementation of these general patterns
-- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - the scheduled tasks and conversational activities these patterns apply to
-- [[Pillars/Knowledge Islands/Governance/Tools/Tools|Tools]] - tool-level configuration for the AI systems that run these patterns
+- [[Pillars/Knowledge Islands/Agents/Agents|Agents]] - parent index
+- [[Pillars/Knowledge Islands/Agents/Claude/Claude|Agents/Claude]] - Claude's implementation of these general patterns
+- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - the scheduled tasks and conversational activities these patterns apply to
+- [[Pillars/Knowledge Islands/Tools/Tools|Tools]] - tool-level configuration for the AI systems that run these patterns

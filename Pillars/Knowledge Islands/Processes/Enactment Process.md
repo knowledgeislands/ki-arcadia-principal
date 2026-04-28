@@ -187,5 +187,5 @@ These rules apply to every change and are enforced by Claude:
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Processes/Processes|Processes]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Processes/Contribution Process|Contribution Process]] - who can propose changes
+- [[Pillars/Knowledge Islands/Processes/Processes|Processes]] - parent index
+- [[Pillars/Knowledge Islands/Processes/Contribution Process|Contribution Process]] - who can propose changes

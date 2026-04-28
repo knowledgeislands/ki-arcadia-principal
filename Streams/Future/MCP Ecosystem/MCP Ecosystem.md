@@ -19,7 +19,7 @@ A survey stream to identify MCP servers and registries relevant to the island's 
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Process]].
+This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -34,6 +34,6 @@ This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Proce
 ## Related Topics
 
 - [[Streams/Future/Future|Future]] - parent stream index
-- [[Streams/Future/Workflow Integrations/Workflow Integrations|Workflow Integrations]] - related stream for workflow automation tools
-- [[Pillars/Knowledge Capital/Charter|Charter]] - active MCP connections are declared here
-- [[Pillars/Knowledge Capital/Governance/Tools/Tools|Tools]] - the connected tools registry
+- [[Streams/Future/Workflow Integrations/Workflow Integrations|Workflow Integrations]] - related workflow stream
+- [[Pillars/Knowledge Capital/Charter|Charter]] - MCP connections
+- [[Pillars/Knowledge Capital/Tools/Tools|Tools]] - connected tools registry

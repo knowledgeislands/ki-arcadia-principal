@@ -52,13 +52,14 @@ The structural scaffolding (folder structure, stub index notes, authoring conven
 | Route Triage prompt is ~200 lines - does it live inline or as a linked file? | Probably inline; island format uses H2 sections not separate files |
 | Some existing prompts reference `Tools/Claude/Island Skill.md` - needs updating to new path | `Agents/Claude/Island Skill.md` - catch in reference update pass |
 | Prompt sync status between Knowledge Islands notes and Cowork scheduler is unknown | Scheduled Task Audit will surface any drift on its next run |
-| `Activities/Email/Approach.md` belongs in `Knowledge Capital/Governance/Activities/Email/` - it's island-specific system design (Layer 2), not a generic activity doc | Move and update all wikilinks pointing to it; check email prompts that reference it |
+| `Activities/Email/Approach.md` belongs in `Knowledge Capital/Activities/Email/` - it's island-specific system design (Layer 2), not a generic activity doc | Move and update all wikilinks pointing to it; check email prompts that reference it |
 
 ---
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Activities|Tools/Claude/Activities]] - the prompt library this stream is building
-- [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] - conventions governing prompt authoring and sync
-- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - Layer 1 notes that prompts implement
-- [[Pillars/Knowledge Islands/Governance/Governance|Governance]] - the restructured layer this stream is populating
+- [[Streams/Active/Active|Active]] - parent stream index
+- [[Pillars/Knowledge Islands/Tools/Claude/Activities/Activities|Tools/Claude/Activities]] - prompt library
+- [[Pillars/Knowledge Islands/Activities/Authoring Activities|Authoring Activities]] - authoring conventions
+- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - Layer 1 activities
+- [[Pillars/Knowledge Islands/Governance|Governance]] - parent governance layer

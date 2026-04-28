@@ -35,6 +35,6 @@ url:
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Tools/Obsidian/Templates/Templates|Templates]] - parent index
+- [[Pillars/Knowledge Islands/Tools/Obsidian/Templates/Templates|Templates]] - parent index
 - [[Related Concept]] - [description]
 - [[Related Note]] - [description]

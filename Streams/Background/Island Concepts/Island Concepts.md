@@ -23,7 +23,7 @@ All of these belong to the same layer of the model: the geographic and jurisdict
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Process]].
+This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -50,8 +50,8 @@ This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Proce
 
 - [ ] `Pillars/Knowledge Islands/Concept/Concept.md` - resolve settlement type naming and add Town to the type table
 - [ ] `Pillars/Knowledge Islands/Concept/Concept.md` - replace `[!todo] Customs and Routes` with conceptual prose
-- [ ] `Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure.md` - replace `[!todo] Harbour` with structural conventions for the `+/` inbox pattern
-- [ ] `Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure.md` - replace `[!todo] Routes and Customs` with structural specification for inter-island links and boundary controls
+- [ ] `Pillars/Knowledge Islands/Conventions/Structure/Structure.md` - replace `[!todo] Harbour` with structural conventions for the `+/` inbox pattern
+- [ ] `Pillars/Knowledge Islands/Conventions/Structure/Structure.md` - replace `[!todo] Routes and Customs` with structural specification for inter-island links and boundary controls
 
 ---
 
@@ -83,6 +83,6 @@ The working hypothesis on settlement types: the repository is the defining bound
 
 - [[Streams/Background/Background|Background]] - parent stream index
 - [[Pillars/Knowledge Islands/Concept/Concept|Concept]] - primary target note
-- [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure|Structure]] - secondary target note
-- [[Streams/Active/Intentional/Intentional|Intentional]] - related conceptual stream; Intention may inform the Customs framing
-- [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]] - governance model for this stream
+- [[Pillars/Knowledge Islands/Conventions/Structure/Structure|Structure]] - secondary target note
+- [[Streams/Active/Intentional/Intentional|Intentional]] - related conceptual stream
+- [[Pillars/Knowledge Islands/Processes/Enactment Process|Enactment Process]] - governance model

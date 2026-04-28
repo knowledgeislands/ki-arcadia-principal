@@ -22,7 +22,7 @@ The goal is that by the end of the review, every index note in the Knowledge Isl
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Process]].
+This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -48,7 +48,7 @@ The order follows the folder structure of `Pillars/Knowledge Islands/`, leaf nod
 
 ## Checklist
 
-- [ ] All index notes under `Pillars/Knowledge Islands/Governance/` reviewed and enriched
+- [ ] All index notes under `Pillars/Knowledge Islands/` reviewed and enriched
 - [ ] All index notes under `Pillars/Knowledge Islands/` reviewed and enriched
 - [ ] `Pillars/Knowledge Islands/Knowledge Islands.md` reviewed and enriched last
 - [ ] Verify stream focus index tables (Active, Background, Dormant, Future, Settled) match the top-level `Streams.md` table
@@ -59,5 +59,5 @@ The order follows the folder structure of `Pillars/Knowledge Islands/`, leaf nod
 ## Related Topics
 
 - [[Streams/Active/Active|Active]] - parent stream index
-- [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - the root note this stream culminates in
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Notes|Notes]] - the index note standard against which each note is assessed
+- [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - target root note
+- [[Pillars/Knowledge Islands/Conventions/Notes/Notes|Notes]] - index note standard

@@ -19,7 +19,7 @@ A stream to understand and improve how tokens are spent across all island AI ope
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Process]].
+This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -36,13 +36,13 @@ This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Proce
 
 | Type     | Detail                                                                           |
 | -------- | -------------------------------------------------------------------------------- |
-| Artefact | Convention note under `Pillars/Knowledge Islands/Governance/` (destination TBD) |
+| Artefact | Convention note under `Pillars/Knowledge Islands/` (destination TBD) |
 
 ---
 
 ## Checklist
 
-- [ ] Create token economics convention note at `Pillars/Knowledge Islands/Governance/` (path TBD once scope is resolved)
+- [ ] Create token economics convention note at `Pillars/Knowledge Islands/` (path TBD once scope is resolved)
 - [ ] Document findings as guidance in the relevant Layer 5 prompts
 
 ---
@@ -78,5 +78,5 @@ This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Proce
 ## Related Topics
 
 - [[Streams/Future/Future|Future]] - parent stream index
-- [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] - prompt authoring conventions this stream will extend
-- [[Streams/Future/Scheduled Automations/Scheduled Automations|Scheduled Automations]] - the automation suite whose prompts are a primary target
+- [[Pillars/Knowledge Islands/Activities/Authoring Activities|Authoring Activities]] - prompt authoring conventions
+- [[Streams/Future/Scheduled Automations/Scheduled Automations|Scheduled Automations]] - target automation suite

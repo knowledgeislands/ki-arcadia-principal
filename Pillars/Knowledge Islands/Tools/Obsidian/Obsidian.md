@@ -26,6 +26,6 @@ Templates implement the structures defined in [[Format]] and [[Types]] - they ar
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Tools/Tools|Tools]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Notes|Notes]] - note format conventions that templates implement
-- [[Pillars/Knowledge Islands/Governance/Tools/Obsidian/Templates/Templates|Templates]] - Templater scaffolding templates
+- [[Pillars/Knowledge Islands/Tools/Tools|Tools]] - parent index
+- [[Pillars/Knowledge Islands/Conventions/Notes/Notes|Notes]] - note format conventions that templates implement
+- [[Pillars/Knowledge Islands/Tools/Obsidian/Templates/Templates|Templates]] - Templater scaffolding templates

@@ -37,6 +37,6 @@ Unlike the [[Claude]] integration, ChatGPT does not have direct file access to t
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Tools/Tools|Tools]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Claude|Claude]] - primary AI integration with direct island access
+- [[Pillars/Knowledge Islands/Tools/Tools|Tools]] - parent index
+- [[Pillars/Knowledge Islands/Tools/Claude/Claude|Claude]] - primary AI integration with direct island access
 - [[Pillars/Knowledge Islands/Concept/Concept|Concept]] - the conceptual model this integration supports

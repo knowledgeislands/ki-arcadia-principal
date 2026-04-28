@@ -66,7 +66,7 @@ Check notes where `author:` incorrectly stores an external creator (e.g. `author
 
 ### Template Coverage
 
-Ensure every `card/*` tag type has a corresponding template in `Pillars/Knowledge Islands/Governance/Tools/Obsidian/Templates/`:
+Ensure every `card/*` tag type has a corresponding template in `Pillars/Knowledge Islands/Tools/Obsidian/Templates/`:
 
 1. Survey all `card/*` tags in use across the repository
 2. Check which have a template file
@@ -97,5 +97,5 @@ Session digests are recorded in the **daily note** for the session date, under `
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Activities/Tending/Tending|Tending]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - grandparent index
+- [[Pillars/Knowledge Islands/Activities/Tending/Tending|Tending]] - parent index
+- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - grandparent index

@@ -18,7 +18,7 @@ The folder contains the Charter (the island's constitutional document), Known La
 
 ## Charter
 
-[[Charter]] is Arcadia's island charter - the authoritative declaration of what this island is and what it has adopted. Its Identity section records the fixed parameters that distinguish the island; below that it carries adoption positions for every non-constitutional activity group, the roster of enabled activities, active tool integrations, and the agent configuration. The [[Governance/Activities/Constitutional/Conformance|Conformance Check]] uses the Charter as its source of truth. Agents starting cold and humans checking operational state both read it first.
+[[Charter]] is Arcadia's island charter - the authoritative declaration of what this island is and what it has adopted. Its Identity section records the fixed parameters that distinguish the island; below that it carries adoption positions for every non-constitutional activity group, the roster of enabled activities, active tool integrations, and the agent configuration. The [[Knowledge Islands/Activities/Constitutional/Conformance|Conformance Check]] uses the Charter as its source of truth. Agents starting cold and humans checking operational state both read it first.
 
 ---
 

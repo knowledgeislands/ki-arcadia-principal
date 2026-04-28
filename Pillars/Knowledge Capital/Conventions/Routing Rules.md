@@ -27,9 +27,9 @@ Arcadia's Pillars are organised into two domains:
 Common routing decisions:
 
 - The KI concept, island types, and governance patterns → **Knowledge Islands**
-- The Enactment Process and Contribution Process (generic) → **Knowledge Islands/Governance/Processes/**
-- Arcadia's council membership and governance instance → **Knowledge Capital/Governance/**
-- KI conventions, note format, frontmatter, Claude integration → **Knowledge Islands/Governance/**
+- The Enactment Process and Contribution Process (generic) → **Knowledge Islands/Processes/**
+- Arcadia's council membership and governance instance → **Knowledge Capital/**
+- KI conventions, note format, frontmatter, Claude integration → **Knowledge Islands/**
 - Known Lands, Identity, Physical Locations → **Knowledge Capital/**
 
 ---
@@ -46,4 +46,4 @@ The `productivity:memory-management` skill stores reference material under `memo
 ## Related Topics
 
 - [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure|Structure]] - general folder structure conventions
+- [[Pillars/Knowledge Islands/Conventions/Structure/Structure|Structure]] - general folder structure conventions

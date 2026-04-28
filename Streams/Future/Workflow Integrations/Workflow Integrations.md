@@ -19,7 +19,7 @@ Tools that provide workflow automation capabilities beyond what the current Cowo
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Process]].
+This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -33,6 +33,6 @@ This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Proce
 ## Related Topics
 
 - [[Streams/Future/Future|Future]] - parent stream index
-- [[Streams/Future/MCP Ecosystem/MCP Ecosystem|MCP Ecosystem]] - related stream for protocol-level integrations
-- [[Pillars/Knowledge Capital/Governance/Tools/Tools|Tools]] - the connected tools registry; adopted integrations are recorded here
-- [[Pillars/Knowledge Capital/Charter|Charter]] - active tool connections are declared in the Charter
+- [[Streams/Future/MCP Ecosystem/MCP Ecosystem|MCP Ecosystem]] - related integrations stream
+- [[Pillars/Knowledge Capital/Tools/Tools|Tools]] - connected tools registry
+- [[Pillars/Knowledge Capital/Charter|Charter]] - tool connections

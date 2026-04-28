@@ -168,7 +168,7 @@ Where a note references several external sources, use Markdown reference-style l
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Notes|Notes]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Frontmatter|Frontmatter]] - properties and tags
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Types/Types|Types]] - note type extensions
-- [[Pillars/Knowledge Islands/Governance/Tools/Obsidian/Obsidian|Obsidian]] - Templater templates
+- [[Pillars/Knowledge Islands/Conventions/Notes/Notes|Notes]] - parent index
+- [[Pillars/Knowledge Islands/Conventions/Notes/Frontmatter/Frontmatter|Frontmatter]] - properties and tags
+- [[Pillars/Knowledge Islands/Conventions/Notes/Types/Types|Types]] - note type extensions
+- [[Pillars/Knowledge Islands/Tools/Obsidian/Obsidian|Obsidian]] - Templater templates

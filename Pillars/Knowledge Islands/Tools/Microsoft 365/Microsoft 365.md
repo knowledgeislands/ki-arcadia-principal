@@ -62,4 +62,4 @@ Source: [ryaker/outlook-mcp](https://github.com/ryaker/outlook-mcp)
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Tools/Tools|Tools]] - parent index
+- [[Pillars/Knowledge Islands/Tools/Tools|Tools]] - parent index

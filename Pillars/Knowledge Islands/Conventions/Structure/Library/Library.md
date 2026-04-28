@@ -124,5 +124,5 @@ When creating a new folder, create its index note at the same time. When auditin
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure|Structure]] - parent index
+- [[Pillars/Knowledge Islands/Conventions/Structure/Structure|Structure]] - parent index
 - [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - island types, archipelago model, and governance infrastructure

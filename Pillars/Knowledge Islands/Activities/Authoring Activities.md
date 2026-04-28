@@ -24,7 +24,7 @@ Every activity involves five layers of content, each at a different level of gen
 | Layer | Location                           | Generality                                          | Contains                                                                                  |
 | ----- | ---------------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | 1     | `Activities/{group}/`              | Activity-specific, agent-agnostic, island-agnostic  | What the activity does, why it exists, trigger phrases, outcome definition                |
-| 2     | `Knowledge Capital/Governance/Activities/{group}/` | Activity-specific, island-specific, agent-agnostic  | Island configuration the activity reads - routing rules, config files, data models        |
+| 2     | `Knowledge Capital/Activities/{group}/` | Activity-specific, island-specific, agent-agnostic  | Island configuration the activity reads - routing rules, config files, data models        |
 | 3     | `Agents/Agentic AI/`               | Activity-agnostic, island-agnostic, agent-agnostic  | General AI operating patterns - caching, parallelism, rolling windows, artifact lifecycle |
 | 4     | `Agents/Claude/`                   | Activity-agnostic, island-agnostic, Claude-specific | Claude's implementation - five modes, behavioural constraints, memory architecture        |
 | 5     | `Tools/Claude/Activities/{group}/` | Activity-specific, island-specific, Claude-specific | The actual prompt text; references Layers 2–4 at runtime                                  |
@@ -37,7 +37,7 @@ A piece of content that is "what this activity does" → Layer 1. A piece that i
 
 Activity groups divide into two categories that are treated differently throughout this guide.
 
-**Constitutional groups** are prior to the adoption framework - they define what it means to be a Knowledge Island and cannot be vetoed. Currently there is one constitutional group: [[Governance/Activities/Constitutional/Constitutional]], which contains the Conformance Check. Constitutional group indexes do not carry an Adoption Requirements section.
+**Constitutional groups** are prior to the adoption framework - they define what it means to be a Knowledge Island and cannot be vetoed. Currently there is one constitutional group: [[Knowledge Islands/Activities/Constitutional/Constitutional]], which contains the Conformance Check. Constitutional group indexes do not carry an Adoption Requirements section.
 
 **Adoptable groups** are everything else. Each island takes an explicit `adopted` or `vetoed` position on each adoptable group; absence of a position is non-conformant. Every adoptable group index note must carry an Adoption Requirements section (see below) that declares exactly what Knowledge Capital notes an island must create to adopt or veto the group. This makes the adoption contract explicit and machine-verifiable by the Conformance Check.
 
@@ -57,7 +57,7 @@ Every adoptable group index note must include an Adoption Requirements section. 
 
 **Placement:** Immediately before the `## Related Topics` section, separated by `---`.
 
-**What to include:** List every KC note the group's activities read at runtime. Notes shared across groups (e.g. `Knowledge Capital/Governance/Activities/Schedule`) should still be listed in each group that requires them - the Conformance Check verifies each group's requirements independently.
+**What to include:** List every KC note the group's activities read at runtime. Notes shared across groups (e.g. `Knowledge Capital/Activities/Schedule`) should still be listed in each group that requires them - the Conformance Check verifies each group's requirements independently.
 
 **Veto stubs:** A vetoed group must have a KC index stub at its group path acknowledging the veto. If the group has additional required notes, each needs a corresponding N/A stub. State this explicitly in the adoption requirements text.
 
@@ -89,9 +89,9 @@ Pushing every small edit wastes API calls, creates noisy scheduler state, and ri
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - the full activity index
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Types/Activity Note|Activity Note]] - the canonical format spec for Layer 1 activity notes
-- [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]] - Layer 3 patterns for activity design
-- [[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude|Agents/Claude]] - Layer 4: Claude-specific operating conventions
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Activities|Tools/Claude/Activities]] - Layer 5: the prompt library
+- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - the full activity index
+- [[Pillars/Knowledge Islands/Conventions/Notes/Types/Activity Note|Activity Note]] - the canonical format spec for Layer 1 activity notes
+- [[Pillars/Knowledge Islands/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]] - Layer 3 patterns for activity design
+- [[Pillars/Knowledge Islands/Agents/Claude/Claude|Agents/Claude]] - Layer 4: Claude-specific operating conventions
+- [[Pillars/Knowledge Islands/Tools/Claude/Activities/Activities|Tools/Claude/Activities]] - Layer 5: the prompt library
 - [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - Layer 2: island configuration for activities

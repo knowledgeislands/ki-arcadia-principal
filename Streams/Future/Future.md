@@ -32,4 +32,4 @@ Ideas and projects not yet started - queued for when the time or circumstances a
 
 ## Related Topics
 
-- [[Streams/Streams|Streams]] - parent index for all project streams
+- [[Streams/Streams|Streams]] - parent index

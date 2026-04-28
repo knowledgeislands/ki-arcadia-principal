@@ -18,7 +18,7 @@ Local path: `~/kis/krisb/kit-principal`
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Process]] - the standard model for how streams enact change in the island.
+This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactment Process]] - the standard model for how streams enact change in the island.
 
 ---
 
@@ -26,7 +26,7 @@ This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Proce
 
 | Item | Description | Derives from |
 | --- | --- | --- |
-| Kit's council membership | Personal context: Kit's role on the Arcadia council, what that means day-to-day. Kit appears in arcadia-principal only as a council member - the personal depth lives here. | `Pillars/Knowledge Capital/Governance/Governance.md` |
+| Kit's council membership | Personal context: Kit's role on the Arcadia council, what that means day-to-day. Kit appears in arcadia-principal only as a council member - the personal depth lives here. | `Pillars/Knowledge Capital/Governance.md` |
 | Known Lands | Already created (`Pillars/Knowledge Islands/Known Lands.md`). May need enriching once arcadia-principal governance is stable. | `Pillars/Knowledge Capital/Known Lands.md` |
 | Knowledge Capital | `Pillars/Knowledge Capital/` needs creating in kit-principal following the same pattern - Identity, Physical Locations, Routing Rules, Glossary, Governance instance | Phase B.3 output |
 | Cross-island links | Notes linking kit-principal's streams/pillars to relevant arcadia-principal concepts | Ongoing |
@@ -35,7 +35,7 @@ This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Proce
 
 ## Related Topics
 
-- [[Streams/Active/Knowledge Islands/Knowledge Islands Inception/Knowledge Islands Inception|Arcadia Bootstrap]] - parent stream note
-- [[Pillars/Knowledge Capital/Known Lands|Known Lands]] - Arcadia's island map; kit-principal holds its own chart under the same name
-- [[Pillars/Knowledge Capital/Governance/Governance|Governance]] - Kit's council membership is recorded here in arcadia-principal
-- [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]] - governance model for this stream
+- [[Streams/Background/Background|Background]] - parent stream index
+- [[Pillars/Knowledge Capital/Known Lands|Known Lands]] - Arcadia island map
+- [[Pillars/Knowledge Capital/Governance|Governance]] - council membership
+- [[Pillars/Knowledge Islands/Processes/Enactment Process|Enactment Process]] - governance model

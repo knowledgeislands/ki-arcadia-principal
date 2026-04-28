@@ -15,7 +15,7 @@ author: Written with Claude
 
 The prompt library for activities that Claude executes. Each subfolder maps to an activity group and holds the executable prompts - the Layer 5 content in the [[Authoring Activities|five-layer model]]. Prompts in this library are Claude-specific and island-specific: they reference island configuration from [[Knowledge Capital]] and agentic patterns from [[Agentic AI]].
 
-What an activity does and why it exists is documented at Layer 1 under [[Knowledge Islands/Governance/Activities/Activities]]. This layer holds only the executable "how".
+What an activity does and why it exists is documented at Layer 1 under [[Knowledge Islands/Activities/Activities]]. This layer holds only the executable "how".
 
 ---
 
@@ -51,8 +51,8 @@ What an activity does and why it exists is documented at Layer 1 under [[Knowled
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Claude|Claude]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - Layer 1: what each activity does and why
-- [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] - how to write and maintain activity prompts
+- [[Pillars/Knowledge Islands/Tools/Claude/Claude|Claude]] - parent index
+- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - Layer 1: what each activity does and why
+- [[Pillars/Knowledge Islands/Activities/Authoring Activities|Authoring Activities]] - how to write and maintain activity prompts
 - [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - island configuration referenced by prompts
-- [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/Agentic AI|Agentic AI]] - general patterns that prompts build on
+- [[Pillars/Knowledge Islands/Agents/Agentic AI/Agentic AI|Agentic AI]] - general patterns that prompts build on

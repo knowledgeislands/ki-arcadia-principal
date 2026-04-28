@@ -16,7 +16,7 @@ Arcadia has adopted the Tending activity group. All nine activities are enabled 
 
 ## Related Topics
 
-- [[Pillars/Knowledge Capital/Governance/Activities/Activities|Activities]] - parent index
+- [[Pillars/Knowledge Capital/Activities/Activities|Activities]] - parent index
 - [[Pillars/Knowledge Capital/Charter|Charter]] - adoption position and activity roster
-- [[Pillars/Knowledge Capital/Governance/Activities/Schedule|Schedule]] - day-type taxonomy
-- [[Pillars/Knowledge Islands/Governance/Activities/Tending/Tending|Tending]] - activity definitions
+- [[Pillars/Knowledge Capital/Activities/Schedule|Schedule]] - day-type taxonomy
+- [[Pillars/Knowledge Islands/Activities/Tending/Tending|Tending]] - activity definitions

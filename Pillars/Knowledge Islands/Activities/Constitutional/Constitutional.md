@@ -30,6 +30,6 @@ The Conformance Check is the sole activity in this group. It verifies that the i
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - parent index
+- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - parent index
 - [[Pillars/Knowledge Islands/Concept/Concept|Concept]] - the constitutional layer in the broader conceptual model
-- [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] - how activities are designed and maintained
+- [[Pillars/Knowledge Islands/Activities/Authoring Activities|Authoring Activities]] - how activities are designed and maintained

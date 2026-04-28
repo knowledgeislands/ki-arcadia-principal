@@ -107,7 +107,7 @@ status:flagged
 
 ### Routes
 
-Routes encapsulate a category of email: the match conditions (allow/deny), the inbound actions, and any aged rules - all in one note. Each route lives in its own `Route - *.md` note under [[Knowledge Capital/Governance/Activities/Email/Email]].
+Routes encapsulate a category of email: the match conditions (allow/deny), the inbound actions, and any aged rules - all in one note. Each route lives in its own `Route - *.md` note under [[Knowledge Capital/Activities/Email/Email]].
 
 #### Route structure
 
@@ -211,7 +211,7 @@ Before writing a new suggestion, check for an existing row with the same `Patter
 | `Email Routing Config.md` | Route Review | Route Triage (cache miss), Route Review (taxonomy check) | Rule ordering |
 | `Route - *.md` | Route Review | Route Triage (cache miss), Route Review (taxonomy check) | Source of truth; compiled tables derived from these |
 
-The KI-specific email files live in `$EMAIL_DIR` (`Knowledge Capital/Governance/Activities/Email/`) in the text store. The remaining files live in `$TRACKING_DIR` (`tasks/email-triage/`) in the temporary store.
+The KI-specific email files live in `$EMAIL_DIR` (`Knowledge Capital/Activities/Email/`) in the text store. The remaining files live in `$TRACKING_DIR` (`tasks/email-triage/`) in the temporary store.
 
 `routing-table.json5` and `aged-table.json5` are **session-scoped caches** - derived from source files and safe to delete at any time; they are regenerated on the next cache miss. They must not be committed to the text store. `tracking.json5` is **persistent** and should be retained across sessions as it records classification history used by Route Drift.
 
@@ -219,8 +219,8 @@ The KI-specific email files live in `$EMAIL_DIR` (`Knowledge Capital/Governance/
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Activities/Email/Email|Email]] - parent index
+- [[Pillars/Knowledge Islands/Activities/Email/Email|Email]] - parent index
 - [[Email Routing Config|Email Routing Config]] - ordered route list evaluated by Route Inbound
 - [[Email Routing Queue|Email Routing Queue]] - pending suggestions and run state
-- [[Pillars/Knowledge Capital/Governance/Activities/Email/Email|Knowledge Capital → Email]] - KI-specific configuration (routing rules, routes, queue, status)
+- [[Pillars/Knowledge Capital/Activities/Email/Email|Knowledge Capital → Email]] - KI-specific configuration (routing rules, routes, queue, status)
 - [[Integrations|Integrations]] - email platform MCP configuration

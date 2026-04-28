@@ -18,7 +18,7 @@ Local path: `~/kis/krisb/kit-legal`
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Process]] - the standard model for how streams enact change in the island.
+This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactment Process]] - the standard model for how streams enact change in the island.
 
 ---
 
@@ -41,6 +41,6 @@ Pending - not yet started. Depends on arcadia-principal governance being stable.
 
 ## Related Topics
 
-- [[Streams/Active/Knowledge Islands/Knowledge Islands Inception/Knowledge Islands Inception|Arcadia Bootstrap]] - parent stream note
-- [[Pillars/Knowledge Capital/Known Lands|Known Lands]] - Arcadia's record of kit-legal as a known island
-- [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]] - governance model for this stream
+- [[Streams/Background/Background|Background]] - parent stream index
+- [[Pillars/Knowledge Capital/Known Lands|Known Lands]] - known island record
+- [[Pillars/Knowledge Islands/Processes/Enactment Process|Enactment Process]] - governance model

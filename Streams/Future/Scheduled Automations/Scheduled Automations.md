@@ -19,7 +19,7 @@ Ideas for new scheduled tasks and improvements to the existing automation suite.
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Process]].
+This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -36,5 +36,5 @@ This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Proce
 ## Related Topics
 
 - [[Streams/Future/Future|Future]] - parent stream index
-- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - the activity framework these tasks would extend
-- [[Pillars/Knowledge Capital/Charter|Charter]] - the scheduled task roster; new tasks are registered here
+- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - activity framework
+- [[Pillars/Knowledge Capital/Charter|Charter]] - scheduled task roster

@@ -18,7 +18,7 @@ The current Calendar templates (Daily, Weekly, Monthly) are minimal placeholders
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Process]].
+This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -36,4 +36,4 @@ This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Proce
 ## Related Topics
 
 - [[Streams/Future/Future|Future]] - parent stream index
-- [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Library/Library|Library]] - Calendar structure conventions live here
+- [[Pillars/Knowledge Islands/Conventions/Structure/Library/Library|Library]] - Calendar conventions

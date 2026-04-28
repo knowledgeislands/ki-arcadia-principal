@@ -16,7 +16,7 @@ memory_file: feedback_{ki_prefix}_operations.md
 
 A daily scheduled task that reconciles Linear's initiative and project state against the island. Catches naming drift, missing projects in stream notes, and initiatives that have concluded and need their stream notes archived.
 
-The authoritative rules for naming conventions, lifecycle management, project labels, and the Initiative → KI Mapping table are in [[Knowledge Capital/Governance/Activities/Linear/Linear|Linear Workspace]]. Generic MCP query patterns and browser-based interaction rules are in [[Tools/Linear/Linear]].
+The authoritative rules for naming conventions, lifecycle management, project labels, and the Initiative → KI Mapping table are in [[Knowledge Capital/Activities/Linear/Linear|Linear Workspace]]. Generic MCP query patterns and browser-based interaction rules are in [[Tools/Linear/Linear]].
 
 ---
 
@@ -30,11 +30,11 @@ The authoritative rules for naming conventions, lifecycle management, project la
 
 ## What It Does
 
-Using the Linear MCP, fetches all active and planned initiatives and their projects, then compares them against the Initiative → KI Mapping table in [[Knowledge Capital/Governance/Activities/Linear/Linear|Linear Workspace]]. Specifically checks:
+Using the Linear MCP, fetches all active and planned initiatives and their projects, then compares them against the Initiative → KI Mapping table in [[Knowledge Capital/Activities/Linear/Linear|Linear Workspace]]. Specifically checks:
 
 - **New or removed initiatives** - creates or archives stream notes, Pillars notes, and Resources company profiles as needed, and updates the mapping table
 - **Initiative name drift** - names changed in Linear but not reflected in the KI
-- **Project naming conventions** - enforces bracket spacing and hyphenation rules per [[Knowledge Capital/Governance/Activities/Linear/Linear|Linear Workspace]]
+- **Project naming conventions** - enforces bracket spacing and hyphenation rules per [[Knowledge Capital/Activities/Linear/Linear|Linear Workspace]]
 - **Stream note project coverage** - ensures every uncompleted project under an initiative appears in the corresponding stream note's projects table
 
 All fixes are applied directly - project renames in Linear via `save_project`, KI note updates via file writes.
@@ -57,9 +57,9 @@ Read $KI_PROPS_DIR/Identity.md.
 All file paths below are relative to $REPOSITORY.
 
 ## Step 1 - Load context
-Read $REPOSITORY/CLAUDE.md and $REPOSITORY/Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons.md (pre-flight check).
-Read $REPOSITORY/Pillars/Knowledge Capital/Governance/Activities/Linear/Linear.md - this contains the Initiative → KI Mapping table, naming conventions, and project labels.
-Read $REPOSITORY/Pillars/Knowledge Islands/Governance/Tools/Linear/Linear.md - this contains the generic MCP connection details and browser-based interaction patterns.
+Read $REPOSITORY/CLAUDE.md and $REPOSITORY/Pillars/Knowledge Islands/Tools/Claude/Mistakes and Lessons.md (pre-flight check).
+Read $REPOSITORY/Pillars/Knowledge Capital/Activities/Linear/Linear.md - this contains the Initiative → KI Mapping table, naming conventions, and project labels.
+Read $REPOSITORY/Pillars/Knowledge Islands/Tools/Linear/Linear.md - this contains the generic MCP connection details and browser-based interaction patterns.
 
 ## Step 2 - Fetch current initiatives
 Use list_initiatives (Linear MCP) to retrieve all active and planned initiatives. Compare against the Initiative → KI Mapping table in Linear Workspace.md.
@@ -97,6 +97,6 @@ Write a session digest to the KI Calendar at the appropriate path: Calendar/YYYY
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Activities/Linear/Linear|Linear]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - grandparent index
-- [[Pillars/Knowledge Islands/Governance/Tools/Linear/Linear|Linear]] - MCP connection details and browser-based interaction patterns
+- [[Pillars/Knowledge Islands/Activities/Linear/Linear|Linear]] - parent index
+- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - grandparent index
+- [[Pillars/Knowledge Islands/Tools/Linear/Linear|Linear]] - MCP connection details and browser-based interaction patterns

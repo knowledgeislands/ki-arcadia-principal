@@ -40,5 +40,5 @@ The base format applies to all notes. [[Types]] documents the specialised struct
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Conventions/Conventions|Conventions]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Frontmatter|Frontmatter]] - YAML properties and tag taxonomy
+- [[Pillars/Knowledge Islands/Conventions/Conventions|Conventions]] - parent index
+- [[Pillars/Knowledge Islands/Conventions/Notes/Frontmatter/Frontmatter|Frontmatter]] - YAML properties and tag taxonomy

@@ -10,7 +10,7 @@ author: Written with Claude
 
 ## Overview
 
-This folder holds the island-specific configuration for the tools and infrastructure that Arcadia runs on. Generic tool patterns - the categories of tools, how MCP connections work, the roles of Obsidian and Cowork - are defined in [[Knowledge Islands/Governance/Tools/Tools]] under Knowledge Islands. What lives here is the concrete detail for this island: which external services are actually connected and under which MCP identifiers, and where on the filesystem the island's stores physically live.
+This folder holds the island-specific configuration for the tools and infrastructure that Arcadia runs on. Generic tool patterns - the categories of tools, how MCP connections work, the roles of Obsidian and Cowork - are defined in [[Knowledge Islands/Tools/Tools]] under Knowledge Islands. What lives here is the concrete detail for this island: which external services are actually connected and under which MCP identifiers, and where on the filesystem the island's stores physically live.
 
 ---
 
@@ -29,4 +29,4 @@ This folder holds the island-specific configuration for the tools and infrastruc
 ## Related Topics
 
 - [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Tools/Tools|Tools]] - generic tool index this island follows
+- [[Pillars/Knowledge Islands/Tools/Tools|Tools]] - generic tool index this island follows

@@ -64,6 +64,6 @@ Collection card templates for external reference entries - items that exist inde
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Tools/Obsidian/Obsidian|Obsidian]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Format/Format|Format]] - note format conventions these templates implement
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Types/Types|Types]] - note type specifications these templates implement
+- [[Pillars/Knowledge Islands/Tools/Obsidian/Obsidian|Obsidian]] - parent index
+- [[Pillars/Knowledge Islands/Conventions/Notes/Format/Format|Format]] - note format conventions these templates implement
+- [[Pillars/Knowledge Islands/Conventions/Notes/Types/Types|Types]] - note type specifications these templates implement

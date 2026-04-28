@@ -15,20 +15,18 @@ Streams are projects and workstreams organised by their current level of focus. 
 
 ## Proposals Index
 
-Live tracking view of all active proposals. Ordered by Stream (Active → Background → Dormant → Future → Settled), then by Status within each stream (`in-progress` → `ready` → `draft`). Update whenever a proposal is created, its status changes, or its priority changes. See [[Knowledge Islands/Governance/Processes/Enactment Process]] for the full lifecycle.
+Live tracking view of all active proposals. Ordered by Stream (Active → Background → Dormant → Future → Settled), then by Status within each stream (`in-progress` → `ready` → `draft`). Update whenever a proposal is created, its status changes, or its priority changes. See [[Knowledge Islands/Processes/Enactment Process|Enactment Process]] for the full lifecycle.
 
 | Topic                                                                                                                           | Stream     | Status        | Priority |
 | ------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------- | -------- |
 | [[Tooling Prompts]]                                                             | Active     | `in-progress` | `high`   |
-| [[Streams/Settled/Conformance/Conformance\|Conformance]]                  | Settled    | `completed`   | `urgent` |
 | [[Streams/Settled/Wiki Link Format/Wiki Link Format\|Wiki Link Format]]   | Settled    | `completed`   | `medium` |
 | [[Boundary Rules]]                   | Active     | `draft`       | `urgent` |
 | [[Index Review]]                | Active     | `draft`       | `medium` |
 | [[Auto Proposal Pipeline|Proposal Pipeline]] | Active     | `draft`       | `medium` |
 | [[Intentional]]                   | Active     | `draft`       | `medium` |
-| [[Kit Legal Inception]]                                                 | Active     | `draft`       | `medium` |
-| [[Kit Principal Inception]]                                     | Active     | `draft`       | `medium` |
-| [[Streams/Background/Harbour Routes and Customs/Harbour Routes and Customs\|Harbour, Routes and Customs]]                       | Background | `draft`       | `low`    |
+| [[Kit Legal Inception]]                                                 | Background | `draft`       | `medium` |
+| [[Kit Principal Inception]]                                     | Background | `draft`       | `medium` |
 | [[Scheduled Automations]]                                           | Future     | `draft`       | `low`    |
 | [[Agent and Session Improvements]]                | Future     | `draft`       | `low`    |
 | [[Semantic Conventions|Island Conventions]]                                                    | Future     | `draft`       | `low`    |
@@ -73,4 +71,4 @@ Live tracking view of all active proposals. Ordered by Stream (Active → Backgr
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure|Structure]] - routing rules that govern how streams are filed and promoted
+- [[Pillars/Knowledge Islands/Conventions/Structure/Structure|Structure]] - routing conventions

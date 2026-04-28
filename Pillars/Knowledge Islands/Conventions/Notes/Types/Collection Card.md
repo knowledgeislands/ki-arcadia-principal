@@ -45,4 +45,4 @@ Collection cards follow the same structural rules as full notes but with fewer b
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Types/Types|Notes]] - parent index
+- [[Pillars/Knowledge Islands/Conventions/Notes/Types/Types|Notes]] - parent index

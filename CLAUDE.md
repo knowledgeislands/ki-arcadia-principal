@@ -30,7 +30,7 @@ Full specification in [[Structure]]. Summary:
 
 ### Pillars/Resources boundary (strictly enforced)
 
-The general principle: `Pillars` holds internal knowledge owned by the Knowledge Island; `Resources` holds external reference material that exists independently. Methodology or internal content found in Resources belongs in Pillars. The canonical boundary definition is in [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Library/Library|Library]] under "Pillars/Resources Boundary".
+The general principle: `Pillars` holds internal knowledge owned by the Knowledge Island; `Resources` holds external reference material that exists independently. Methodology or internal content found in Resources belongs in Pillars. The canonical boundary definition is in [[Pillars/Knowledge Islands/Conventions/Structure/Library/Library|Library]] under "Pillars/Resources Boundary".
 
 ### Index Notes (strictly enforced)
 
@@ -91,7 +91,7 @@ See [[Routing Rules]] for any additional routing rules specific to this island.
 
 ## Knowledge Island Specifics (strictly enforced)
 
-All values specific to this island - identity parameters, task prefix, skill triggers, schedule configuration, integration details, and physical paths - live in `Pillars/Knowledge Capital/`. The [[Pillars/Knowledge Capital/Charter|Charter]] is the primary reference: it holds the identity parameters and the full adoption and activity roster. Deeper configuration lives in the corresponding `Pillars/Knowledge Capital/Governance/` subfolders (Activities for schedule config, Tools for integrations, Agents for agent config).
+All values specific to this island - identity parameters, task prefix, skill triggers, schedule configuration, integration details, and physical paths - live in `Pillars/Knowledge Capital/`. The [[Pillars/Knowledge Capital/Charter|Charter]] is the primary reference: it holds the identity parameters and the full adoption and activity roster. Deeper configuration lives in the corresponding `Pillars/Knowledge Capital/` subfolders (Activities for schedule config, Tools for integrations, Agents for agent config).
 
 **Automations and skills must read their configuration from these notes at runtime, not hardcode values.** This keeps prompts portable across islands and ensures a single source of truth. When an integration changes (e.g. a new TickTick list, a different calendar), update the relevant KC note - the automations will pick up the change on their next run.
 
@@ -101,14 +101,14 @@ All values specific to this island - identity parameters, task prefix, skill tri
 | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
 | [[Pillars/Knowledge Capital/Charter\|Charter]]                                    | `Pillars/Knowledge Capital/Charter.md`                                              |
 | [[Pillars/Knowledge Capital/Knowledge Capital\|Knowledge Capital]]                | `Pillars/Knowledge Capital/Knowledge Capital.md`                                    |
-| [[Pillars/Knowledge Islands/Governance/Governance\|Governance]]                   | `Pillars/Knowledge Islands/Governance/Governance.md`                                |
+| [[Pillars/Knowledge Islands/Knowledge Islands\|Knowledge Islands]]      | `Pillars/Knowledge Islands/Knowledge Islands.md`                         |
 | [[Pillars/Knowledge Islands/Concept/Concept\|Concept]]                            | `Pillars/Knowledge Islands/Concept/Concept.md`                                      |
-| [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure\|Structure]] | `Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure.md`           |
-| [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Notes\|Notes]]           | `Pillars/Knowledge Islands/Governance/Conventions/Notes/Notes.md`                   |
-| [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Frontmatter\|Frontmatter]] | `Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Frontmatter.md` |
-| [[Pillars/Knowledge Islands/Governance/Activities/Activities\|Activities]]        | `Pillars/Knowledge Islands/Governance/Activities/Activities.md`                     |
-| [[Pillars/Knowledge Islands/Governance/Agents/Agents\|Agents]]                    | `Pillars/Knowledge Islands/Governance/Agents/Agents.md`                             |
-| [[Pillars/Knowledge Islands/Governance/Tools/Tools\|Tools]]                       | `Pillars/Knowledge Islands/Governance/Tools/Tools.md`                               |
-| [[Pillars/Knowledge Islands/Governance/Tools/Claude/Claude\|Claude]]              | `Pillars/Knowledge Islands/Governance/Tools/Claude/Claude.md`                       |
-| [[Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons\|Mistakes and Lessons]] | `Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons.md`         |
+| [[Pillars/Knowledge Islands/Conventions/Structure/Structure\|Structure]] | `Pillars/Knowledge Islands/Conventions/Structure/Structure.md`           |
+| [[Pillars/Knowledge Islands/Conventions/Notes/Notes\|Notes]]           | `Pillars/Knowledge Islands/Conventions/Notes/Notes.md`                   |
+| [[Pillars/Knowledge Islands/Conventions/Notes/Frontmatter/Frontmatter\|Frontmatter]] | `Pillars/Knowledge Islands/Conventions/Notes/Frontmatter/Frontmatter.md` |
+| [[Pillars/Knowledge Islands/Activities/Activities\|Activities]]        | `Pillars/Knowledge Islands/Activities/Activities.md`                     |
+| [[Pillars/Knowledge Islands/Agents/Agents\|Agents]]                    | `Pillars/Knowledge Islands/Agents/Agents.md`                             |
+| [[Pillars/Knowledge Islands/Tools/Tools\|Tools]]                       | `Pillars/Knowledge Islands/Tools/Tools.md`                               |
+| [[Pillars/Knowledge Islands/Tools/Claude/Claude\|Claude]]              | `Pillars/Knowledge Islands/Tools/Claude/Claude.md`                       |
+| [[Pillars/Knowledge Islands/Tools/Claude/Mistakes and Lessons\|Mistakes and Lessons]] | `Pillars/Knowledge Islands/Tools/Claude/Mistakes and Lessons.md`         |
 | [[CLAUDE]]                                                                        | `CLAUDE.md`                                                                         |

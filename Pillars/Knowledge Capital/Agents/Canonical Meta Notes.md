@@ -19,22 +19,22 @@ The ordered list of notes that [[Knowledge Rebuild]] loads to reconstruct the is
 - `CLAUDE.md`
 - `Pillars/Knowledge Capital/Charter.md`
 - `Pillars/Knowledge Islands/Concept/Concept.md`
-- `Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure.md`
-- `Pillars/Knowledge Islands/Governance/Conventions/Notes/Notes.md`
-- `Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Frontmatter.md`
-- `Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Properties.md`
-- `Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Tags.md`
-- `Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons.md`
-- `Pillars/Knowledge Islands/Governance/Tools/Claude/Claude.md`
-- `Pillars/Knowledge Islands/Governance/Activities/Activities.md`
-- `Pillars/Knowledge Capital/Governance/Agents/Communication Style.md`
-- `Pillars/Knowledge Islands/Governance/Agents/Claude/Claude Behaviour.md`
-- `Pillars/Knowledge Islands/Governance/Conventions/Residency/Residency.md`
-- `Pillars/Knowledge Islands/Governance/Agents/Claude/Memory Architecture.md`
+- `Pillars/Knowledge Islands/Conventions/Structure/Structure.md`
+- `Pillars/Knowledge Islands/Conventions/Notes/Notes.md`
+- `Pillars/Knowledge Islands/Conventions/Notes/Frontmatter/Frontmatter.md`
+- `Pillars/Knowledge Islands/Conventions/Notes/Frontmatter/Properties.md`
+- `Pillars/Knowledge Islands/Conventions/Notes/Frontmatter/Tags.md`
+- `Pillars/Knowledge Islands/Tools/Claude/Mistakes and Lessons.md`
+- `Pillars/Knowledge Islands/Tools/Claude/Claude.md`
+- `Pillars/Knowledge Islands/Activities/Activities.md`
+- `Pillars/Knowledge Capital/Agents/Communication Style.md`
+- `Pillars/Knowledge Islands/Agents/Claude/Claude Behaviour.md`
+- `Pillars/Knowledge Islands/Conventions/Residency/Residency.md`
+- `Pillars/Knowledge Islands/Agents/Claude/Memory Architecture.md`
 
 ---
 
 ## Related Topics
 
 - [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Activities/Tending/Knowledge Rebuild|Knowledge Rebuild]] - the activity that consumes this list
+- [[Pillars/Knowledge Islands/Activities/Tending/Knowledge Rebuild|Knowledge Rebuild]] - the activity that consumes this list

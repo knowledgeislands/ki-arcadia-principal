@@ -98,7 +98,7 @@ _The table below uses `{ki_prefix}` and `{user_prefix}` placeholders - substitut
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude|Claude]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Conventions/Residency/Residency|Residency]] - the three-tier model and residency principles this architecture implements
-- [[Pillars/Knowledge Islands/Governance/Activities/Tending/Knowledge Rebuild|Knowledge Rebuild]] - the scheduled task that maintains the canonical memory layer
+- [[Pillars/Knowledge Islands/Agents/Claude/Claude|Claude]] - parent index
+- [[Pillars/Knowledge Islands/Conventions/Residency/Residency|Residency]] - the three-tier model and residency principles this architecture implements
+- [[Pillars/Knowledge Islands/Activities/Tending/Knowledge Rebuild|Knowledge Rebuild]] - the scheduled task that maintains the canonical memory layer
 - [[Pillars/Knowledge Capital/Charter|Charter]] - source of `ki_prefix` and `user_prefix` values

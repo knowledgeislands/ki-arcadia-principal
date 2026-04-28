@@ -20,7 +20,7 @@ The stream also covers what "proposal-ready" means in practice - the criteria fo
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Process]].
+This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -57,6 +57,6 @@ This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Proce
 
 ## Related Topics
 
-- [[Streams/Active/Active|Active]] - parent stream index
-- [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]] - the process proposals feed into
-- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - where the new activity will be registered
+- [[Streams/Future/Future|Future]] - parent stream index
+- [[Pillars/Knowledge Islands/Processes/Enactment Process|Enactment Process]] - enactment process
+- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - activity registry

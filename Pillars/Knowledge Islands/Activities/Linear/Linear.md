@@ -27,17 +27,17 @@ The group contains a single scheduled automation. The MCP connection it relies o
 
 ## Adoption Requirements
 
-To adopt this activity group, an island must create the following Knowledge Capital notes. A vetoed island must create an index stub at `Knowledge Capital/Governance/Activities/Linear/Linear` acknowledging the veto.
+To adopt this activity group, an island must create the following Knowledge Capital notes. A vetoed island must create an index stub at `Knowledge Capital/Activities/Linear/Linear` acknowledging the veto.
 
 | Note | Path | Purpose |
 | --- | --- | --- |
-| Linear index | `Knowledge Capital/Governance/Activities/Linear/Linear` | Group index; for adoption: contains Initiative→KI Mapping table, naming conventions, and project labels; for veto: stub acknowledging the veto |
-| Schedule | `Knowledge Capital/Governance/Activities/Schedule` | Day-type taxonomy read by the Linear Sync schedule |
+| Linear index | `Knowledge Capital/Activities/Linear/Linear` | Group index; for adoption: contains Initiative→KI Mapping table, naming conventions, and project labels; for veto: stub acknowledging the veto |
+| Schedule | `Knowledge Capital/Activities/Schedule` | Day-type taxonomy read by the Linear Sync schedule |
 
 ---
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Tools/Linear/Linear|Tools/Linear]] - Linear MCP connection and browser-based interaction patterns
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Linear/Linear|Tools/Claude/Activities/Linear]] - Layer 5 prompts that drive this activity
+- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - parent index
+- [[Pillars/Knowledge Islands/Tools/Linear/Linear|Tools/Linear]] - Linear MCP connection and browser-based interaction patterns
+- [[Pillars/Knowledge Islands/Tools/Claude/Activities/Linear/Linear|Tools/Claude/Activities/Linear]] - Layer 5 prompts that drive this activity

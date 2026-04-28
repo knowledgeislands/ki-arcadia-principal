@@ -14,7 +14,7 @@ author: Written with Claude
 
 This is the executable prompt for the Conformance Check. It is a read-only activity: no files are modified. The output is a structured conformance report surfacing issues for human review.
 
-Layer 1 specification: [[Governance/Activities/Constitutional/Conformance]] Island configuration: [[Charter]]
+Layer 1 specification: [[Knowledge Islands/Activities/Constitutional/Conformance]] Island configuration: [[Charter]]
 
 ---
 
@@ -31,7 +31,7 @@ You are running the KI Conformance Check. This is a constitutional activity - it
 Read all of the following before proceeding. Do not skip any.
 
 1. `Pillars/Knowledge Capital/Charter.md` - the island's charter: identity parameters, adoption record, and activity roster
-2. `Pillars/Knowledge Islands/Governance/Activities/Activities.md` - the full list of activity groups defined in the framework
+2. `Pillars/Knowledge Islands/Activities/Activities.md` - the full list of activity groups defined in the framework
 
 ### Step 1 - Constitutional baseline
 
@@ -62,7 +62,7 @@ Work through each group in the Charter's Activity Groups table.
 
 **For each vetoed group:** Read the file path given in the Knowledge Capital column. Verify the file exists and explicitly states the veto - a note that is merely empty or a bare title does not count. Flag as non-conformant if the file is absent or does not acknowledge the veto.
 
-**For each adopted group:** Read the file path given in the Knowledge Capital column (the group's KC index note). Then read the corresponding group index note in `Pillars/Knowledge Islands/Governance/Activities/[Group]/[Group].md`. Find the Adoption Requirements section in that note and extract the list of required KC note paths.
+**For each adopted group:** Read the file path given in the Knowledge Capital column (the group's KC index note). Then read the corresponding group index note in `Pillars/Knowledge Islands/Activities/[Group]/[Group].md`. Find the Adoption Requirements section in that note and extract the list of required KC note paths.
 
 For each required KC note:
 
@@ -98,6 +98,6 @@ Present the report, then stop. Do not propose fixes, do not modify files, do not
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Constitutional/Constitutional|Constitutional (Claude Prompts)]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Activities/Constitutional/Conformance|Conformance]] - Layer 1 specification
+- [[Pillars/Knowledge Islands/Tools/Claude/Activities/Constitutional/Constitutional|Constitutional (Claude Prompts)]] - parent index
+- [[Pillars/Knowledge Islands/Activities/Constitutional/Conformance|Conformance]] - Layer 1 specification
 - [[Pillars/Knowledge Capital/Charter|Charter]] - primary input

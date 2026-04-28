@@ -18,7 +18,7 @@ A stream to establish explicit content boundary rules (conceptually Boundary Wal
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Process]].
+This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -26,16 +26,16 @@ This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Proce
 
 | Type                 | Detail                                                                                                                   |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Convention note      | `Pillars/Knowledge Islands/Governance/Conventions/Boundary Rules.md` — new standalone note                              |
-| Tending activity | Boundary rules scan activity in `Pillars/Knowledge Capital/Governance/Activities/` (schedule and trigger TBD at rollout) |
+| Convention note      | `Pillars/Knowledge Islands/Conventions/Boundary Rules.md` — new standalone note                              |
+| Tending activity | Boundary rules scan activity in `Pillars/Knowledge Capital/Activities/` (schedule and trigger TBD at rollout) |
 
 ---
 
 ## Checklist
 
-- [ ] Create `Pillars/Knowledge Islands/Governance/Conventions/Boundary Rules.md`
-- [ ] Update `Pillars/Knowledge Islands/Governance/Conventions/Conventions.md` index to reference the new note
-- [ ] Create boundary-rules scan maintenance activity in `Pillars/Knowledge Capital/Governance/Activities/`
+- [ ] Create `Pillars/Knowledge Islands/Conventions/Boundary Rules.md`
+- [ ] Update `Pillars/Knowledge Islands/Conventions/Conventions.md` index to reference the new note
+- [ ] Create boundary-rules scan maintenance activity in `Pillars/Knowledge Capital/Activities/`
 - [ ] Audit existing notes in each area against the new rules and flag violations (follow-on; may become its own stream)
 - [ ] Audit for content duplication between Knowledge Islands and KC (follow-on; may become its own stream)
 
@@ -99,12 +99,12 @@ For Soft violations that are intentionally retained, the note carrying the excep
 | KC operational content | `Pillars/Knowledge Islands` | Hard | Prevents bleed-back into the portable framework |
 | KI framework content | `Pillars/Knowledge Capital` | None | KC may freely reference KI |
 | Named agents (specific tools, AI systems, automations) | `Pillars/Knowledge Islands/Governance` | Hard | |
-| Named agents | `Pillars/Knowledge Islands/Governance/Activities` | Soft | Capability statements permitted; name only where no capability abstraction is possible |
+| Named agents | `Pillars/Knowledge Islands/Activities` | Soft | Capability statements permitted; name only where no capability abstraction is possible |
 | Named agents | `Pillars/Knowledge Capital/Governance` | None | KC agent config is inherently specific |
-| Named activities | `Pillars/Knowledge Islands/Governance/Agents` | Soft | |
-| Named activities | `Pillars/Knowledge Capital/Governance/Agents` | None | KC agent config may list assigned activities |
-| Specific tools or integrations | `Pillars/Knowledge Islands/Governance/Conventions` | Hard | Generic capability references permitted |
-| Specific tools or integrations | `Pillars/Knowledge Islands/Governance/Processes` | Hard | |
+| Named activities | `Pillars/Knowledge Islands/Agents` | Soft | |
+| Named activities | `Pillars/Knowledge Capital/Agents` | None | KC agent config may list assigned activities |
+| Specific tools or integrations | `Pillars/Knowledge Islands/Conventions` | Hard | Generic capability references permitted |
+| Specific tools or integrations | `Pillars/Knowledge Islands/Processes` | Hard | |
 | Specific tools or integrations | `Pillars/Knowledge Capital/Governance` | None | KC tools config is inherently specific |
 | KM/PKM/KB terminology | `Pillars` | Soft | Historical context permitted; document inline |
 
@@ -113,5 +113,4 @@ For Soft violations that are intentionally retained, the note carrying the excep
 ## Related Topics
 
 - [[Streams/Active/Active|Active]] - parent stream index
-- [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure|Structure]] - structural conventions for the island
-- [[Streams/Active/Conformance/Conformance|Conformance]] - related stream; violations could feed into Conformance checks
+- [[Pillars/Knowledge Islands/Conventions/Structure/Structure|Structure]] - structural conventions

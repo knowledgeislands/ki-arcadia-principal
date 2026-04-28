@@ -13,7 +13,7 @@ author: Written with Claude
 
 The tools that agents use to interact with the island and with connected services. Each tool has its own sub-folder documenting its connection configuration, operating conventions, and any lessons specific to working with it.
 
-`Tools/` is the configuration layer - it covers how each tool is set up and connected. How agents use those tools to act on the island is a separate concern: operating behaviour lives in [[Knowledge Islands/Governance/Agents/Agents]]. For AI tools in particular, both layers exist: a tool note for the connection, and an agent note for the operating conventions. Neither duplicates the other.
+`Tools/` is the configuration layer - it covers how each tool is set up and connected. How agents use those tools to act on the island is a separate concern: operating behaviour lives in [[Knowledge Islands/Agents/Agents]]. For AI tools in particular, both layers exist: a tool note for the connection, and an agent note for the operating conventions. Neither duplicates the other.
 
 Tools are connected via MCP (Model Context Protocol) servers where available. MCP gives Claude direct access to external services - email, calendar, task management, issue tracking - without requiring the human to relay information manually. The [[Integrations|Integrations]] note in Knowledge Capital holds the island-specific connection identifiers and configuration for each MCP server.
 
@@ -51,6 +51,6 @@ The M365 integration covering Outlook, OneDrive, and Power Automate. [[Microsoft
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Governance|Governance]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Agents/Agents|Agents]] - the operating layer that uses these tools
+- [[Pillars/Knowledge Islands/Governance|Governance]] - parent index
+- [[Pillars/Knowledge Islands/Agents/Agents|Agents]] - the operating layer that uses these tools
 - [[Integrations|Integrations]] - island-specific connection identifiers and MCP configuration for each tool

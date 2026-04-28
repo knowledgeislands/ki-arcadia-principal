@@ -45,5 +45,5 @@ All fields except `creator` are required. Frontmatter must be YAML properties - 
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Frontmatter|Frontmatter]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Tags|Tags]] - tag taxonomy
+- [[Pillars/Knowledge Islands/Conventions/Notes/Frontmatter/Frontmatter|Frontmatter]] - parent index
+- [[Pillars/Knowledge Islands/Conventions/Notes/Frontmatter/Tags|Tags]] - tag taxonomy

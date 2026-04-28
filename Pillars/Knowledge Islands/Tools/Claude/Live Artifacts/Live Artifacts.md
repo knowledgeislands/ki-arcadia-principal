@@ -49,9 +49,9 @@ Save this artifact as a recipe note in my Knowledge Island.
 
 Use the specific Knowledge Island's skill in SAVE mode.
 
-Recipe note path: `Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/<Artifact Name> Artifact.md`
+Recipe note path: `Pillars/Knowledge Islands/Tools/Claude/Live Artifacts/<Artifact Name> Artifact.md`
 
-`Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/<Existing Artifact Name> Artifact.md` is the reference note with the canonical shape - follow its structure exactly.
+`Pillars/Knowledge Islands/Tools/Claude/Live Artifacts/<Existing Artifact Name> Artifact.md` is the reference note with the canonical shape - follow its structure exactly.
 
 Required sections, in this order:
 
@@ -65,13 +65,13 @@ Required sections, in this order:
 
 Frontmatter: standard Knowledge Islands YAML properties (`status`, `purpose`, `author: Written with Claude`). Tags must include `card/note`, `topic/ai`, `topic/productivity`, `topic/automation`, `source/claude`, plus one or two domain tags that fit the artifact's subject.
 
-After writing the recipe note, also write the current artifact HTML to `Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/<Artifact Name>.html` as the initial colocation backup.
+After writing the recipe note, also write the current artifact HTML to `Pillars/Knowledge Islands/Tools/Claude/Live Artifacts/<Artifact Name>.html` as the initial colocation backup.
 
-Then add a bullet for the new artifact to the parent index at `Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Live Artifacts.md`.
+Then add a bullet for the new artifact to the parent index at `Pillars/Knowledge Islands/Tools/Claude/Live Artifacts/Live Artifacts.md`.
 
 Embed the comment
 
-  <!-- Recipe: Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/<Artifact Name> Artifact.md -->
+  <!-- Recipe: Pillars/Knowledge Islands/Tools/Claude/Live Artifacts/<Artifact Name> Artifact.md -->
 
 as the first line of the artifact's <head>; preserve it through any regeneration or patch.
 
@@ -81,12 +81,12 @@ Tone: British English throughout. Structured and direct. No emojis. Use backtick
 Notes:
 
 - If the other conversation has lost track of what its artifact does (e.g. context has since been trimmed), ask it to re-open the artifact from the sidebar and re-inspect before drafting - otherwise the recipe will be generic.
-- Once three or four recipes are collected, skim the set together to factor any recurring cross-cutting patterns into [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]] rather than repeating them in each recipe.
+- Once three or four recipes are collected, skim the set together to factor any recurring cross-cutting patterns into [[Pillars/Knowledge Islands/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]] rather than repeating them in each recipe.
 
 ---
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Claude|Claude]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]] - general patterns for recurring AI automations
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Cowork Configuration Layers|Cowork Configuration Layers]] - where Cowork preferences and rules live
+- [[Pillars/Knowledge Islands/Tools/Claude/Claude|Claude]] - parent index
+- [[Pillars/Knowledge Islands/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]] - general patterns for recurring AI automations
+- [[Pillars/Knowledge Islands/Tools/Claude/Cowork Configuration Layers|Cowork Configuration Layers]] - where Cowork preferences and rules live

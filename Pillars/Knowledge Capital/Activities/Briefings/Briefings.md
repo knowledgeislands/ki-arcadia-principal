@@ -16,8 +16,8 @@ Arcadia has adopted the Briefings activity group. The Morning Briefing is enable
 
 ## Related Topics
 
-- [[Pillars/Knowledge Capital/Governance/Activities/Activities|Activities]] - parent index
+- [[Pillars/Knowledge Capital/Activities/Activities|Activities]] - parent index
 - [[Pillars/Knowledge Capital/Charter|Charter]] - adoption position and activity roster
-- [[Pillars/Knowledge Capital/Governance/Activities/Schedule|Schedule]] - day-type taxonomy
-- [[Pillars/Knowledge Capital/Governance/Tools/Integrations|Integrations]] - calendar and task tool connections
-- [[Pillars/Knowledge Islands/Governance/Activities/Briefings/Briefings|Briefings]] - activity definitions
+- [[Pillars/Knowledge Capital/Activities/Schedule|Schedule]] - day-type taxonomy
+- [[Pillars/Knowledge Capital/Tools/Integrations|Integrations]] - calendar and task tool connections
+- [[Pillars/Knowledge Islands/Activities/Briefings/Briefings|Briefings]] - activity definitions

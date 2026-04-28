@@ -26,7 +26,7 @@ WikiLinks come in 3 formats.  Most systems opt for Shortest due to the compactne
 | ------------ | ----------- | --------------- | -------------- | --------------- | -------------- | -------- | ------------------------------------------------------------------------------ |
 | **Shortest** | ✓           | ~               | ~              | ✓               | ✓              | ✓        | `[[Concept]]`; or `[[Knowledge Islands/Governance]]` on collision              |
 | **Full**     | ✓           | ✓               | ✓              | ✗               | ✓              | ✗        | `[[Pillars/Knowledge Islands/Concept/Concept\|Concept]]`                       |
-| **Relative** | ✓           | ✓               | ✓              | ~               | ✗              | ~        | `[[../Concept]]` for a sibling; `[[../../Governance/Governance]]` for a cousin |
+| **Relative** | ✓           | ✓               | ✓              | ~               | ✗              | ~        | `[[../Concept]]` for a sibling; `[[../../Governance]]` for a cousin |
 We can do better.  In order for Shortest to also become read and write efficient, the [[Page Registry]] is required — it provides the pre-built index needed to efficiently detect collisions and compute minimum disambiguating prefixes without live filesystem scanning.  Obsidian has its own cache, so Human agents get the benefit of that, whereas Agentic AI does not.
 
 ---
@@ -41,7 +41,7 @@ We can do better.  In order for Shortest to also become read and write efficient
 ## Related Topics
 
 - [[Streams/Settled/Settled|Settled]] - parent stream index
-- [[Streams/Active/Page Registry/Page Registry|Page Registry]] - dependency; provides the index for collision detection and shortest-path resolution
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Notes|Notes]] - conventions for note content and formatting
-- [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure|Structure]] - library structure conventions
-- [[Streams/Active/Boundary Rules/Boundary Rules|Boundary Rules]] - related stream on content boundary rules
+- [[Streams/Active/Page Registry/Page Registry|Page Registry]] - collision detection dependency
+- [[Pillars/Knowledge Islands/Conventions/Notes/Notes|Notes]] - note conventions
+- [[Pillars/Knowledge Islands/Conventions/Structure/Structure|Structure]] - library structure
+- [[Streams/Active/Boundary Rules/Boundary Rules|Boundary Rules]] - boundary rules stream

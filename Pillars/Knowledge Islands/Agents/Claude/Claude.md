@@ -38,6 +38,6 @@ For Cowork integration specifics - connection type, token economics, platform co
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Agents/Agents|Agents]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/Agentic AI|Agentic AI]] - the general AI agent patterns this agent implements
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Claude|Tools → Claude]] - Cowork integration, token economics, platform configuration
+- [[Pillars/Knowledge Islands/Agents/Agents|Agents]] - parent index
+- [[Pillars/Knowledge Islands/Agents/Agentic AI/Agentic AI|Agentic AI]] - the general AI agent patterns this agent implements
+- [[Pillars/Knowledge Islands/Tools/Claude/Claude|Tools → Claude]] - Cowork integration, token economics, platform configuration

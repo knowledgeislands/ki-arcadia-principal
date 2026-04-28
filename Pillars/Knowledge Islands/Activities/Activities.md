@@ -61,7 +61,7 @@ Daily automations that prime the island at the start of each day - creating miss
 
 ---
 
-## [[Knowledge Islands/Governance/Activities/Email/Email|]]
+## [[Knowledge Islands/Activities/Email/Email|]]
 
 Inbox management as a scheduled, repeatable process. The goal is inbox zero across each working day, with each message triaged to a clear outcome. See [[Approach]] for the shared concepts, definitions, and data model.
 
@@ -76,7 +76,7 @@ Inbox management as a scheduled, repeatable process. The goal is inbox zero acro
 
 ---
 
-## [[Knowledge Islands/Governance/Activities/Linear/Linear]]
+## [[Knowledge Islands/Activities/Linear/Linear]]
 
 Daily automation that keeps the island aligned with the Linear project management workspace, detecting and surfacing drift between stream notes and the live Linear state.
 
@@ -88,6 +88,6 @@ Daily automation that keeps the island aligned with the Linear project managemen
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Governance|Governance]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] - how to design and maintain activities
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Activities|Tools/Claude/Activities]] - the prompt library (Layer 5)
+- [[Pillars/Knowledge Islands/Governance|Governance]] - parent index
+- [[Pillars/Knowledge Islands/Activities/Authoring Activities|Authoring Activities]] - how to design and maintain activities
+- [[Pillars/Knowledge Islands/Tools/Claude/Activities/Activities|Tools/Claude/Activities]] - the prompt library (Layer 5)

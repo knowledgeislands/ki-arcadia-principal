@@ -19,7 +19,7 @@ Linear is used for issue tracking and project management. It integrates with the
 
 ## MCP Integration
 
-Linear is connected as an MCP server, providing tool-based access to issues, projects, cycles, and documents directly from Claude sessions. See [[Integrations|Integrations]] for the full list of MCP-connected services for this island, and [[Knowledge Islands/Governance/Tools/Tools]] for the generic integrations index.
+Linear is connected as an MCP server, providing tool-based access to issues, projects, cycles, and documents directly from Claude sessions. See [[Integrations|Integrations]] for the full list of MCP-connected services for this island, and [[Knowledge Islands/Tools/Tools]] for the generic integrations index.
 
 ---
 
@@ -35,5 +35,5 @@ When interacting with Linear's UI via Claude in Chrome, the following patterns a
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Tools/Tools|Tools]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons|Mistakes and Lessons]] - operational lessons including Linear UI interaction patterns
+- [[Pillars/Knowledge Islands/Tools/Tools|Tools]] - parent index
+- [[Pillars/Knowledge Islands/Tools/Claude/Mistakes and Lessons|Mistakes and Lessons]] - operational lessons including Linear UI interaction patterns

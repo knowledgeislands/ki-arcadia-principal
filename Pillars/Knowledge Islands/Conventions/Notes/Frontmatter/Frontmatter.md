@@ -32,6 +32,6 @@ The tag taxonomy used across the island - covering card types, calendar note typ
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Notes|Notes]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Properties|Properties]] - standard frontmatter fields
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Tags|Tags]] - tag taxonomy
+- [[Pillars/Knowledge Islands/Conventions/Notes/Notes|Notes]] - parent index
+- [[Pillars/Knowledge Islands/Conventions/Notes/Frontmatter/Properties|Properties]] - standard frontmatter fields
+- [[Pillars/Knowledge Islands/Conventions/Notes/Frontmatter/Tags|Tags]] - tag taxonomy

@@ -81,6 +81,6 @@ If the instructions box grows large, review for content that belongs in `user_pr
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Claude|Claude]] - parent index
+- [[Pillars/Knowledge Islands/Tools/Claude/Claude|Claude]] - parent index
 - [[CLAUDE|CLAUDE]] - the repository-level instruction file for KI sessions
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons|Mistakes and Lessons]] - operational error log; a companion to understanding how Claude operates in practice
+- [[Pillars/Knowledge Islands/Tools/Claude/Mistakes and Lessons|Mistakes and Lessons]] - operational error log; a companion to understanding how Claude operates in practice

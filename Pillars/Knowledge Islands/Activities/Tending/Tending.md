@@ -75,16 +75,16 @@ Activities divide by cadence and initiation. Three are scheduled automations tha
 
 ## Adoption Requirements
 
-To adopt this activity group, an island must create the following Knowledge Capital notes. A vetoed island must create an index stub at `Knowledge Capital/Governance/Activities/Tending/Tending` acknowledging the veto.
+To adopt this activity group, an island must create the following Knowledge Capital notes. A vetoed island must create an index stub at `Knowledge Capital/Activities/Tending/Tending` acknowledging the veto.
 
 | Note | Path | Purpose |
 | --- | --- | --- |
-| Tending index | `Knowledge Capital/Governance/Activities/Tending/Tending` | Group index; confirms adoption and links to timing config |
-| Schedule | `Knowledge Capital/Governance/Activities/Schedule` | Day-type taxonomy read by all scheduled automations |
+| Tending index | `Knowledge Capital/Activities/Tending/Tending` | Group index; confirms adoption and links to timing config |
+| Schedule | `Knowledge Capital/Activities/Schedule` | Day-type taxonomy read by all scheduled automations |
 
 ---
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Tending/Tending|Tools/Claude/Activities/Tending]] - Layer 5 prompts that drive these activities
+- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - parent index
+- [[Pillars/Knowledge Islands/Tools/Claude/Activities/Tending/Tending|Tools/Claude/Activities/Tending]] - Layer 5 prompts that drive these activities

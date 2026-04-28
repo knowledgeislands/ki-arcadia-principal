@@ -18,7 +18,7 @@ Two distinct processes are documented here. The **Enactment Process** is interna
 
 ## Enactment Process
 
-[[Knowledge Islands/Governance/Processes/Enactment Process]] is the island's governance in action. It is the gate through which all changes to Pillars and Resources must pass - nothing reaches stable knowledge except through council ratification of a formal proposal. The process runs in an iterative cycle: work develops in Streams, a proposal document emerges, the council reviews and iterates, and on ratification the change lands in Pillars or Resources. Rejection returns the proposal to Streams or closes it.
+[[Knowledge Islands/Processes/Enactment Process]] is the island's governance in action. It is the gate through which all changes to Pillars and Resources must pass - nothing reaches stable knowledge except through council ratification of a formal proposal. The process runs in an iterative cycle: work develops in Streams, a proposal document emerges, the council reviews and iterates, and on ratification the change lands in Pillars or Resources. Rejection returns the proposal to Streams or closes it.
 
 The pattern is portable: any island adopts it as their governance baseline, localising only the working area, council structure, and status vocabulary to suit their scale.
 
@@ -32,6 +32,6 @@ The pattern is portable: any island adopts it as their governance baseline, loca
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Governance|Governance]] - parent index
+- [[Pillars/Knowledge Islands/Governance|Governance]] - parent index
 - [[Pillars/Knowledge Islands/Concept/Concept|Concept]] - the conceptual model; defines standing, citizenship, and council authority that these processes enact
 - [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - holds this island's specific council membership and citizenship records

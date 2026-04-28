@@ -79,5 +79,5 @@ Tags follow a hierarchical `namespace/value` pattern and are defined as a supers
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Frontmatter|Frontmatter]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Properties|Properties]] - standard frontmatter fields
+- [[Pillars/Knowledge Islands/Conventions/Notes/Frontmatter/Frontmatter|Frontmatter]] - parent index
+- [[Pillars/Knowledge Islands/Conventions/Notes/Frontmatter/Properties|Properties]] - standard frontmatter fields

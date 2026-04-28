@@ -25,12 +25,12 @@ The human operating mode covers everything a person does directly in the island 
 
 **Graph navigation** - Using Obsidian's graph view and wikilink traversal to explore connections, identify orphaned notes, and maintain structural health.
 
-**Periodic maintenance** - Running the scheduled activities documented in [[Knowledge Islands/Governance/Activities/Activities]], including status reviews, wikilink audits, and inbox clearance.
+**Periodic maintenance** - Running the scheduled activities documented in [[Knowledge Islands/Activities/Activities]], including status reviews, wikilink audits, and inbox clearance.
 
 ---
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Agents/Agents|Agents]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Tools/Obsidian/Obsidian|Obsidian]] - the primary tool for human operation
-- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - scheduled tasks that include human-operated steps
+- [[Pillars/Knowledge Islands/Agents/Agents|Agents]] - parent index
+- [[Pillars/Knowledge Islands/Tools/Obsidian/Obsidian|Obsidian]] - the primary tool for human operation
+- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - scheduled tasks that include human-operated steps

@@ -47,6 +47,6 @@ The report distinguishes **critical** non-conformances (constitutional baseline 
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Activities/Constitutional/Constitutional|Constitutional]] - parent group index
-- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - full activity index
-- [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] - five-layer content model
+- [[Pillars/Knowledge Islands/Activities/Constitutional/Constitutional|Constitutional]] - parent group index
+- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - full activity index
+- [[Pillars/Knowledge Islands/Activities/Authoring Activities|Authoring Activities]] - five-layer content model
