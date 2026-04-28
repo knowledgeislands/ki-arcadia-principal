@@ -6,7 +6,7 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Daily automated activity - verify scheduled task schedules and descriptions against KB notes, and self-verify this task's own prompt; flags orphaned tasks and notes
+purpose: Daily automated activity - verify scheduled task schedules and descriptions against KI notes, and self-verify this task's own prompt; flags orphaned tasks and notes
 author: Written with Claude
 ---
 
@@ -14,7 +14,7 @@ author: Written with Claude
 
 ## Overview
 
-A daily automated task that verifies each live Cowork scheduled task has a corresponding KB note, that schedules and descriptions match, and that this task's own prompt is current. The Conformance Check runs earlier at 04:30; the Scheduled Task Audit runs at 05:00 and is the first maintenance activity of the day.
+A daily automated task that verifies each live Cowork scheduled task has a corresponding KI note, that schedules and descriptions match, and that this task's own prompt is current. The Conformance Check runs earlier at 04:30; the Scheduled Task Audit runs at 05:00 and is the first maintenance activity of the day.
 
 Full prompt comparison across all tasks is not currently possible - see [[#Known Limitations]] below.
 
@@ -49,12 +49,12 @@ The practical effect: this audit can verify schedule/cron/description alignment 
 The prompt below is the canonical version. It must match the prompt stored in the `{skill-name}-scheduled-task-audit` scheduled task - see [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] § Prompt Editing Discipline.
 
 ```txt
-You are running the Scheduled Task Audit. Your job is to verify that each live Cowork scheduled task has a corresponding KB note and that schedules match - and to self-verify this task's own prompt. Full prompt comparison across all tasks is not currently possible; see the Known Limitations section in the KB note.
+You are running the Scheduled Task Audit. Your job is to verify that each live Cowork scheduled task has a corresponding KI note and that schedules match - and to self-verify this task's own prompt. Full prompt comparison across all tasks is not currently possible; see the Known Limitations section in the KI note.
 
 ## Step 0 - Locate the repository and load configuration
 Run this bash command to find the Knowledge Capital folder and derive the repository root:
-  KB_PROPS=$(find /sessions/*/mnt -maxdepth 7 -name "Knowledge Capital.md" -path "*/Knowledge Capital/*" 2>/dev/null | head -1)
-  REPOSITORY=$(echo "$KB_PROPS" | sed 's|||')
+  KI_PROPS=$(find /sessions/*/mnt -maxdepth 7 -name "Knowledge Capital.md" -path "*/Knowledge Capital/*" 2>/dev/null | head -1)
+  REPOSITORY=$(echo "$KI_PROPS" | sed 's|||')
   ACTIVITIES_DIR="$REPOSITORY/Pillars/Knowledge Islands/Governance/Activities"
   echo "Repository: $REPOSITORY"
 
@@ -66,14 +66,14 @@ Then read:
 ## Step 1 - List all scheduled tasks
 Call mcp__scheduled-tasks__list_scheduled_tasks to retrieve all scheduled tasks and their metadata.
 
-## Step 2 - Identify the corresponding KB note for each task
+## Step 2 - Identify the corresponding KI note for each task
 For each task whose ID begins with the task prefix from KB Identity, locate the matching activity note in $ACTIVITIES_DIR/. The note filename corresponds to the task name (e.g. {skill-name}-morning-briefing → Morning Briefing.md).
 
 ## Step 3 - Verify schedule and description alignment
-For each task, read its KB note and check:
-- **Cron:** Does the live cron expression match what the KB note documents in its Schedule section?
-- **Description:** Does the live task description match the KB note's purpose?
-- **No KB note:** Flag any task with no corresponding KB note - do not modify the task.
+For each task, read its KI note and check:
+- **Cron:** Does the live cron expression match what the KI note documents in its Schedule section?
+- **Description:** Does the live task description match the KI note's purpose?
+- **No KI note:** Flag any task with no corresponding KI note - do not modify the task.
 - **Orphaned notes:** Scan $ACTIVITIES_DIR/ for any note that documents a scheduled task (contains a Task ID field) but has no corresponding live task. Flag these.
 
 ## Step 4 - Self-verify this task's prompt
@@ -82,16 +82,16 @@ This task's own SKILL.md is mounted at the path returned by:
 
 Read it and compare against the ## Prompt block in $ACTIVITIES_DIR/Maintenance/Scheduled Task Audit.md. This is the only task whose prompt can be verified with current tooling.
 
-If the KB note is ahead of the live task: call mcp__scheduled-tasks__update_scheduled_task to push the KB version.
-If the live task is ahead of the KB note: update the KB note to match, then confirm alignment.
+If the KI note is ahead of the live task: call mcp__scheduled-tasks__update_scheduled_task to push the KB version.
+If the live task is ahead of the KI note: update the KI note to match, then confirm alignment.
 
 ## Step 5 - Report
 Output a brief summary:
 - Tasks checked: N
 - Schedule/description in sync: N / N (list any that differ)
 - Prompt verified (this task only): in sync / updated - describe what changed if updated
-- Tasks with no KB note: N (list task IDs)
-- Orphaned KB notes: N (list)
+- Tasks with no KI note: N (list task IDs)
+- Orphaned KI notes: N (list)
 
 Write the summary to today's daily note under ## KB, under a ### Scheduled Task Audit heading. If today's daily note does not yet exist (this task runs before the Morning Briefing creates it), skip the daily note write and note it in the output.
 ```
@@ -100,31 +100,31 @@ Write the summary to today's daily note under ## KB, under a ### Scheduled Task 
 
 ## Procedure
 
-The prompt above runs this automatically. For manual runs, the same steps apply - with the additional ability to do full prompt comparison by reading KB notes and cross-checking against task prompts known from context.
+The prompt above runs this automatically. For manual runs, the same steps apply - with the additional ability to do full prompt comparison by reading KI notes and cross-checking against task prompts known from context.
 
 ### 1. List all scheduled tasks
 
 Call `mcp__scheduled-tasks__list_scheduled_tasks` to retrieve metadata for all active tasks.
 
-### 2. Identify the corresponding KB note
+### 2. Identify the corresponding KI note
 
 For each task, locate the matching activity note under `Pillars/Knowledge Islands/Governance/Activities/`. The task ID prefix is documented in [[Pillars/Knowledge Capital/Charter|Charter]].
 
 ### 3. Verify schedule and description
 
-Compare cron expressions and descriptions against KB note content. Flag mismatches.
+Compare cron expressions and descriptions against KI note content. Flag mismatches.
 
 ### 4. Self-verify prompt (automated runs) / full prompt comparison (manual runs)
 
-Automated: read the mounted SKILL.md and compare against the KB note prompt block. Manual: compare KB note prompt blocks against any known live prompt content.
+Automated: read the mounted SKILL.md and compare against the KI note prompt block. Manual: compare KI note prompt blocks against any known live prompt content.
 
-The KB note is always the canonical source. Push KB → task via `mcp__scheduled-tasks__update_scheduled_task` if the KB is ahead; update the KB note if the live task is ahead.
+The KI note is always the canonical source. Push KB → task via `mcp__scheduled-tasks__update_scheduled_task` if the KB is ahead; update the KI note if the live task is ahead.
 
 ---
 
 ## Sync Protocol
 
-When updating a prompt during an active session: update the KB note first, then push to the scheduled task via `mcp__scheduled-tasks__update_scheduled_task`. Batch edits - do not push after every small change. Push when:
+When updating a prompt during an active session: update the KI note first, then push to the scheduled task via `mcp__scheduled-tasks__update_scheduled_task`. Batch edits - do not push after every small change. Push when:
 
 - The user explicitly signals readiness ("push it", "sync the task", "ready to run"), or
 - The iteration is confirmed complete, or
@@ -133,8 +133,8 @@ When updating a prompt during an active session: update the KB note first, then 
 ## Notes
 
 - Minor whitespace or formatting differences can be ignored if they do not affect execution
-- Prompt changes should always originate in the KB note - direct Cowork edits are the primary source of untracked drift
-- If a task has no corresponding KB note, create one before the next run
+- Prompt changes should always originate in the KI note - direct Cowork edits are the primary source of untracked drift
+- If a task has no corresponding KI note, create one before the next run
 
 ---
 

@@ -68,7 +68,7 @@ You are running...
 ```
 ````
 
-The KB note is the canonical source. The Cowork scheduled task is a deployment artefact - push to it only when the prompt is stable. See [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] § Prompt Editing Discipline for the sync protocol.
+The KI note is the canonical source. The Cowork scheduled task is a deployment artefact - push to it only when the prompt is stable. See [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] § Prompt Editing Discipline for the sync protocol.
 
 ---
 

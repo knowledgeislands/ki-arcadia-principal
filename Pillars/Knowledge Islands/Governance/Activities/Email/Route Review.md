@@ -63,13 +63,13 @@ You are running Email Automation - Route Review.
 
 ## Step 1 - Locate and load
 Run:
-  KB_PROPS=$(find /sessions/*/mnt -maxdepth 7 -name "Knowledge Capital.md" -path "*/Knowledge Capital/*" 2>/dev/null | head -1)
-  KB_PROPS_DIR=$(dirname "$KB_PROPS")
-  EMAIL_DIR="$KB_PROPS_DIR/Email"
+  KI_PROPS=$(find /sessions/*/mnt -maxdepth 7 -name "Knowledge Capital.md" -path "*/Knowledge Capital/*" 2>/dev/null | head -1)
+  KI_PROPS_DIR=$(dirname "$KI_PROPS")
+  EMAIL_DIR="$KI_PROPS_DIR/Email"
   TRACKING=$(find /sessions/*/mnt -path "*/tasks/email-triage/tracking.json5" 2>/dev/null | head -1)
   TRACKING_DIR=$(dirname "$TRACKING")
 
-Read $KB_PROPS_DIR/Integrations.md. If no email integration is listed, stop.
+Read $KI_PROPS_DIR/Integrations.md. If no email integration is listed, stop.
 
 Parse all source files: read $EMAIL_DIR/Email Routing Config.md and all $EMAIL_DIR/Route - *.md. For each Route file: parse the destination folder from `### Inbound → #### Actions` (`move:` predicate) and the conditions from `### Inbound → #### Conditions`. In the conditions table, rows prefixed `` `+ `` are allow rows; rows prefixed `` `- `` are deny rows. Build the full ordered rule list and route map in memory. (Do not use cache - full source data is required for taxonomy and collision checks.)
 

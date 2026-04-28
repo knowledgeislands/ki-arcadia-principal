@@ -67,14 +67,14 @@ Day types are defined in [[Schedule|Schedule]].
 
 Active conversational activities within adopted groups. Trigger phrases are the canonical activation strings.
 
-| Activity                                                                                                   | Group       | Trigger                  | Status  |
-| ---------------------------------------------------------------------------------------------------------- | ----------- | ------------------------ | ------- |
-| [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Inbox Review\|Inbox Review]]                 | Maintenance | _"kb inbox review"_      | enabled |
-| [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Asset Audit\|Asset Audit]]                   | Maintenance | _"kb asset audit"_       | enabled |
-| [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Status Review\|Status Review]]               | Maintenance | _"kb status review"_     | enabled |
-| [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Structural Audit\|Structural Audit]]         | Maintenance | _"kb structural audit"_  | enabled |
-| [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Wikilink Review\|Wikilink Review]]           | Maintenance | _"kb wikilink review"_   | enabled |
-| [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/KB Convergence Check\|KB Convergence Check]] | Maintenance | _"kb convergence check"_ | enabled |
+| Activity                                                                                             | Group       | Trigger                  | Status  |
+| ---------------------------------------------------------------------------------------------------- | ----------- | ------------------------ | ------- |
+| [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Inbox Review\|Inbox Review]]           | Maintenance | _"ki inbox review"_      | enabled |
+| [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Asset Audit\|Asset Audit]]             | Maintenance | _"ki asset audit"_       | enabled |
+| [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Status Review\|Status Review]]         | Maintenance | _"ki status review"_     | enabled |
+| [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Structural Audit\|Structural Audit]]   | Maintenance | _"ki structural audit"_  | enabled |
+| [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Wikilink Review\|Wikilink Review]]     | Maintenance | _"ki wikilink review"_   | enabled |
+| [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Convergence Check\|Convergence Check]] | Maintenance | _"ki convergence check"_ | enabled |
 
 ---
 

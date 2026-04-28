@@ -18,13 +18,12 @@ Routing rules specific to this island, supplementing the general conventions in 
 
 ## Within Pillars
 
-Arcadia's Pillars are organised into three domains:
+Arcadia's Pillars are organised into two domains:
 
 | Domain            | Folder                       | Concern                                                        | Key question                                                            |
 | ----------------- | ---------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | Knowledge Islands | `Pillars/Knowledge Islands/` | The KI concept, architecture, and governance framework         | What is the Knowledge Islands system and how does it work generically?  |
 | Knowledge Capital | `Pillars/Knowledge Capital/` | Arcadia's own identity, governance instance, and configuration | What makes Arcadia itself - how is this island specifically configured? |
-| Productivity      | `Pillars/Productivity/`      | Working practices                                              | How does Arcadia's council operate day-to-day?                          |
 
 Common routing decisions:
 

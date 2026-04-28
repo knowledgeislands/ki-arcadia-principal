@@ -46,7 +46,7 @@ In this model:
 | `draft`       | Work in progress - iterating in a Stream's proposal document                          |
 | `ready`       | Proposal stable; no open questions remaining; submitted to the council for review     |
 | `rejected`    | Council has rejected; reasons documented; terminal                                    |
-| `in-progress` | Council has ratified; rollout underway - writing final KB notes to their destinations |
+| `in-progress` | Council has ratified; rollout underway - writing final KI notes to their destinations |
 | `rolled-out`  | Changes made; post-change review pending                                              |
 | `reviewed`    | Post-change review complete                                                           |
 | `completed`   | Confirmed complete; corresponding Stream settles                                      |
@@ -136,7 +136,7 @@ Priority may increase over time (e.g. `medium` → `urgent` as a launch approach
 
 ## Rollout
 
-Rollout means writing the final KB notes to their intended destinations. It is not complete until:
+Rollout means writing the final KI notes to their intended destinations. It is not complete until:
 
 - All creates, updates, and deletes listed in the proposal document have been executed
 - Index notes for any new folders have been created

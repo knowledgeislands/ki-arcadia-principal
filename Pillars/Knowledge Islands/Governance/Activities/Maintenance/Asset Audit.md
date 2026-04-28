@@ -19,7 +19,7 @@ A weekly scan for unlinked assets in the island. The repository is primarily Mar
 
 ## When
 
-Weekly - _"kb asset audit"_. Typically alongside the [[Health Check]] automation.
+Weekly - _"ki asset audit"_. Typically alongside the [[Health Check]] automation.
 
 ---
 

@@ -30,7 +30,7 @@ Full specification in [[Structure]]. Summary:
 
 ### Pillars/Resources boundary (strictly enforced)
 
-The general principle: `Pillars` holds internal knowledge owned by the KB; `Resources` holds external reference material that exists independently. Methodology or internal content found in Resources belongs in Pillars. The canonical boundary definition is in [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Library/Library|Library]] under "Pillars/Resources Boundary".
+The general principle: `Pillars` holds internal knowledge owned by the Knowledge Island; `Resources` holds external reference material that exists independently. Methodology or internal content found in Resources belongs in Pillars. The canonical boundary definition is in [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Library/Library|Library]] under "Pillars/Resources Boundary".
 
 ### Index Notes (strictly enforced)
 
@@ -89,7 +89,7 @@ Full rules in [[Structure]]. Key reminders: do not write to `+/_Voice Notes/` - 
 
 See [[Routing Rules]] for any additional routing rules specific to this island.
 
-## KB Specifics (strictly enforced)
+## Knowledge Island Specifics (strictly enforced)
 
 All values specific to this island - identity parameters, task prefix, skill triggers, schedule configuration, integration details, and physical paths - live in `Pillars/Knowledge Capital/`. The [[Pillars/Knowledge Capital/Charter|Charter]] is the primary reference: it holds the identity parameters and the full adoption and activity roster. Deeper configuration lives in the corresponding `Pillars/Knowledge Capital/Governance/` subfolders (Activities for schedule config, Tools for integrations, Agents for agent config).
 

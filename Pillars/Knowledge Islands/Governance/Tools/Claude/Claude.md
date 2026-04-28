@@ -51,7 +51,7 @@ Mistakes and Lessons was previously loaded as a pre-flight check (~1,770 tokens,
 ### Design rules keeping costs down
 
 - **[[CLAUDE]] is the sole routing authority** - the skill defers to it rather than duplicating rules, so there is one file to read, not two.
-- **Lessons live in auto-memory** - all resolved lessons from [[Mistakes and Lessons]] are extracted to the relevant `feedback_*` memory files. The lessons are active in every session at zero marginal cost; the KB note is a human-readable register, not a machine-read file.
+- **Lessons live in auto-memory** - all resolved lessons from [[Mistakes and Lessons]] are extracted to the relevant `feedback_*` memory files. The lessons are active in every session at zero marginal cost; the KI note is a human-readable register, not a machine-read file.
 - **[[CLAUDE]] folder table is two columns only** - verbose routing logic lives in the Routing Rules section, not duplicated in the table.
 
 ### Maintenance triggers
@@ -128,4 +128,4 @@ The `productivity:memory-management` skill provides a structured **deep memory**
 ## Related Topics
 
 - [[Pillars/Knowledge Islands/Governance/Tools/Tools|Tools]] - parent index
-- [[Pillars/Productivity/Tools/Obsidian|Obsidian]] - primary interface used alongside the Claude integration
+- [[Pillars/Knowledge Islands/Governance/Tools/Obsidian|Obsidian]] - primary interface used alongside the Claude integration

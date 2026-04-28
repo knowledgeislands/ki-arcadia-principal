@@ -19,7 +19,7 @@ A focused review of wikilink health across the repository. Surfaces broken outli
 
 ## When
 
-Adhoc - _"kb wikilink review"_. Typically paired with [[Structural Audit]] or [[Inbox Review]]. Run any time new notes are created in bulk or a section of the repository has been significantly restructured.
+Adhoc - _"ki wikilink review"_. Typically paired with [[Structural Audit]] or [[Inbox Review]]. Run any time new notes are created in bulk or a section of the repository has been significantly restructured.
 
 ---
 

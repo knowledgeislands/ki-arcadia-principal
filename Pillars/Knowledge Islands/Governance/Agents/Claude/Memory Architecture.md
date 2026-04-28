@@ -54,7 +54,7 @@ The filename convention is `{type}_{scope_prefix}_{descriptor}.md`, where `scope
 | User identifier (e.g. `kit`)                           | Specific to this user                                      | `user_kit_profile.md`                                  |
 | `any`                                                  | Cross-context - applies to any Knowledge Island or session | `feedback_any_claude_behaviour.md`                     |
 
-The prefix distinguishes files from multiple KBs sharing the same `.auto-memory/` directory, and signals whether a rule is KB-specific or universally applicable.
+The prefix distinguishes files from multiple KBs sharing the same `.auto-memory/` directory, and signals whether a rule is KI-specific or universally applicable.
 
 ---
 
@@ -62,7 +62,7 @@ The prefix distinguishes files from multiple KBs sharing the same `.auto-memory/
 
 **Canonical files** are managed exclusively by [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Knowledge Rebuild|Knowledge Rebuild]]. They are rewritten from the KB on a regular schedule. Do not edit them manually between rebuilds - changes will be overwritten. The five canonical files are:
 
-| File                                 | Source KB notes                                                           |
+| File                                 | Source KI notes                                                           |
 | ------------------------------------ | ------------------------------------------------------------------------- |
 | `user_{user_prefix}_profile.md`      | KB Identity + Communication Style                                         |
 | `project_{kb_prefix}_structure.md`   | Island Structure + Routing Rules + Knowledge Residency                    |
@@ -80,8 +80,8 @@ _The table below uses `{kb_prefix}` and `{user_prefix}` placeholders - substitut
 
 | KB Note | Memory File | Class | Notes |
 | --- | --- | --- | --- |
-| `Island Structure.md`<br>`Routing Rules.md`<br>`Knowledge Residency.md` | `project_{kb_prefix}_structure.md` | Canonical | Three KB notes merged; Routing Rules adds three-domain model; Knowledge Residency adds residency tiers and lifecycle |
-| `Notes/Notes.md`<br>`Notes/Frontmatter/Frontmatter.md` | `project_{kb_prefix}_note_format.md` | Canonical | Two KB notes merged; KB has worked examples memory omits |
+| `Island Structure.md`<br>`Routing Rules.md`<br>`Knowledge Residency.md` | `project_{kb_prefix}_structure.md` | Canonical | Three KI notes merged; Routing Rules adds three-domain model; Knowledge Residency adds residency tiers and lifecycle |
+| `Notes/Notes.md`<br>`Notes/Frontmatter/Frontmatter.md` | `project_{kb_prefix}_note_format.md` | Canonical | Two KI notes merged; KB has worked examples memory omits |
 | `Mistakes and Lessons.md` | `feedback_{kb_prefix}_operations.md` | Canonical | M&L has full incident table; memory distils to actionable rules; also draws from Activities |
 | `Activities.md`<br>`KB Identity.md`<br>`Integrations.md`<br>`Claude.md`<br>`Memory Architecture.md` | `reference_{kb_prefix}_key_notes.md` | Canonical | Five KB sources merged; Memory Architecture contributes mapping table and rebuild specification |
 | `Communication Style.md`<br>`KB Identity.md` | `user_{user_prefix}_profile.md` | Canonical | Communication Style covers the user's voice and habits; KB Identity contributes role and operating context |
@@ -89,11 +89,11 @@ _The table below uses `{kb_prefix}` and `{user_prefix}` placeholders - substitut
 | `Mistakes and Lessons.md` | `feedback_{kb_prefix}_multi_column.md` | Auxiliary (kb) | M&L has general rule; memory adds syntax example not in KB |
 | `Mistakes and Lessons.md` | `feedback_any_context_limit_warning.md` | Auxiliary (any) | Closely aligned |
 | `Claude Behaviour.md` | `feedback_any_claude_behaviour.md` | Auxiliary (any) | Claude behavioural constraints; `any_` scope preserves cross-KB applicability |
-| _(ad-hoc - no KB source)_ | `reference_{kb_prefix}_deep_memory.md` | Auxiliary (kb) | Pointers to KB locations assembled from session context - not tied to a single KB note |
+| _(ad-hoc - no KB source)_ | `reference_{kb_prefix}_deep_memory.md` | Auxiliary (kb) | Pointers to KB locations assembled from session context - not tied to a single KI note |
 | `Enactment Process.md` | `feedback_{kb_prefix}_enactment_process.md` | Auxiliary (kb) | Working rules and proposal patterns; park-and-resume detail is memory-appropriate |
 | _(ad-hoc - no KB source)_ | `feedback_{kb_prefix}_scheduled_task_push_timing.md` | Auxiliary (kb) | Prompt push timing rules; core rule now covered by canonical operations file - candidate for deletion |
 | _(ad-hoc - no KB source)_ | `feedback_{kb_prefix}_theme_note_titles.md` | Auxiliary (kb) | Email theme note title conventions; ad-hoc, no KB source note yet |
-| _(ad-hoc - no KB source)_ | `feedback_any_task_naming.md` | Auxiliary (any) | TodoList task naming conventions (project tag prefixes); general, not KB-specific |
+| _(ad-hoc - no KB source)_ | `feedback_any_task_naming.md` | Auxiliary (any) | TodoList task naming conventions (project tag prefixes); general, not KI-specific |
 
 ---
 

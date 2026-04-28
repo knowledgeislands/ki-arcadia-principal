@@ -31,9 +31,9 @@ You are running Email Automation - Recap. Read files; output to chat only. No wr
 
 ## Step 1 - Load
 Run:
-  KB_PROPS=$(find /sessions/*/mnt -maxdepth 7 -name "Knowledge Capital.md" -path "*/Knowledge Capital/*" 2>/dev/null | head -1)
-  KB_PROPS_DIR=$(dirname "$KB_PROPS")
-  EMAIL_DIR="$KB_PROPS_DIR/Email"
+  KI_PROPS=$(find /sessions/*/mnt -maxdepth 7 -name "Knowledge Capital.md" -path "*/Knowledge Capital/*" 2>/dev/null | head -1)
+  KI_PROPS_DIR=$(dirname "$KI_PROPS")
+  EMAIL_DIR="$KI_PROPS_DIR/Email"
   TRACKING=$(find /sessions/*/mnt -path "*/tasks/email-triage/tracking.json5" 2>/dev/null | head -1)
   TRACKING_DIR=$(dirname "$TRACKING")
 

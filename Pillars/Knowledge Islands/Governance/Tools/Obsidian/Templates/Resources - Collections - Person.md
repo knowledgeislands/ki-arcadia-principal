@@ -28,7 +28,7 @@ location:
 
 ## Related Topics
 
-- [[Pillars/Productivity/Templates/Templates|Templates]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Tools/Obsidian/Templates/Templates|Templates]] - parent index
 - [[Related Note 1]] - [description]
 - [[Related Note 2]] - [description]
 - [[Related Note 3]] - [description]

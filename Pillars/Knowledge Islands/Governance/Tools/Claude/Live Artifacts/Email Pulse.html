@@ -7,19 +7,19 @@
     "mcp__mcp-m365__list-folders",
     "mcp__mcp-m365__list-emails",
     "mcp__mcp-m365__search-emails",
-    "mcp__hnr-knowledge-base-mcp-server__kb_read_note"
+    "mcp__ki-{island-name}-mcp-server__ki_read_note"
   ],
   "mcpServerNames": [
     "mcp-m365",
     "mcp-m365",
     "mcp-m365",
-    "hnr-knowledge-base-mcp-server"
+    "ki-{island-name}-mcp-server"
   ]
 }
 </script>
 <html lang="en-GB">
 <head>
-<!-- Recipe: Pillars/Productivity/Knowledge Management/Integrations/Claude/Live Artifacts/Email Pulse Artifact.md -->
+<!-- Recipe: Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Email Pulse Artifact.md -->
 <meta charset="UTF-8">
 <title>Email Pulse</title>
 <style>
@@ -232,10 +232,10 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fo
 const LIST_FOLDERS  = "mcp__mcp-m365__list-folders";
 const LIST_EMAILS   = "mcp__mcp-m365__list-emails";
 const SEARCH_EMAILS = "mcp__mcp-m365__search-emails";
-const KB_READ_NOTE  = "mcp__hnr-knowledge-base-mcp-server__kb_read_note";
+const KI_READ_NOTE  = "mcp__ki-{island-name}-mcp-server__ki_read_note";
 
 const ROUTING_QUEUE_PATH =
-  "Pillars/Productivity/Knowledge Management/KB Specifics/Email/Email Routing Queue.md";
+  "Pillars/Knowledge Capital/Governance/Activities/Email/Email Routing Queue.md";
 
 const TRIAGE_FOLDER        = "_TRIAGE";
 const SNAPSHOT_TOTAL       = 427;
@@ -595,8 +595,8 @@ function renderSuggestions(queue) {
     if (isMcpConnectionError(queue.error)) {
       panel.className = "mcp-unavail suggestions";
       panel.innerHTML = `<h3>Routing suggestions unavailable - KB MCP not connected</h3>
-        <p>This panel needs the <code>hnr-knowledge-base-mcp-server</code> MCP server to read the routing queue.</p>
-        <p>Reconnect <code>hnr-knowledge-base-mcp-server</code> in your Claude config and reload.</p>
+        <p>This panel needs the <code>ki-{island-name}-mcp-server</code> MCP server to read the routing queue.</p>
+        <p>Reconnect <code>ki-{island-name}-mcp-server</code> in your Claude config and reload.</p>
         <p class="detail">Error: ${escapeHtml(briefError(queue.error))}</p>`;
     } else {
       panel.className = "suggestions error";
@@ -748,7 +748,7 @@ async function boot({ force = false } = {}) {
   try {
     const [foldersRes, queueRes] = await Promise.allSettled([
       callMcp(LIST_FOLDERS, { includeChildren: true, includeItemCounts: true, responseFormat: "json" }, 'list-folders'),
-      callMcp(KB_READ_NOTE, { path: ROUTING_QUEUE_PATH }, 'kb_read_note: Email Routing Queue'),
+      callMcp(KI_READ_NOTE, { path: ROUTING_QUEUE_PATH }, 'ki_read_note: Email Routing Queue'),
     ]);
 
     if (foldersRes.status === "rejected") throw foldersRes.reason;

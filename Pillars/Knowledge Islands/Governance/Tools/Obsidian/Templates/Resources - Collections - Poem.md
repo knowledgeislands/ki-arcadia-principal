@@ -31,5 +31,5 @@ url:
 
 ## Related Topics
 
-- [[Pillars/Productivity/Templates/Templates|Templates]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Tools/Obsidian/Templates/Templates|Templates]] - parent index
 - [[Related Note]] - [description]

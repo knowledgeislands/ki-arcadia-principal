@@ -38,7 +38,7 @@ Using the Linear MCP, fetches all active and planned initiatives and their proje
 - **Project naming conventions** - enforces bracket spacing and hyphenation rules per [[Pillars/Knowledge Capital/Governance/Activities/Linear/Linear|Linear Workspace]]
 - **Stream note project coverage** - ensures every uncompleted project under an initiative appears in the corresponding stream note's projects table
 
-All fixes are applied directly - project renames in Linear via `save_project`, KB note updates via file writes.
+All fixes are applied directly - project renames in Linear via `save_project`, KI note updates via file writes.
 
 ---
 
@@ -49,12 +49,12 @@ You are running the Linear Sync. Your job is to reconcile Linear's initiative an
 
 ## Step 0 - Locate the repository and load Knowledge Capital
 Run this bash command to find the Knowledge Capital folder and derive the repository root:
-  KB_PROPS=$(find /sessions/*/mnt -maxdepth 7 -name "Knowledge Capital.md" -path "*/Knowledge Capital/*" 2>/dev/null | head -1)
-  REPOSITORY=$(echo "$KB_PROPS" | sed 's|||')
-  KB_PROPS_DIR=$(dirname "$KB_PROPS")
+  KI_PROPS=$(find /sessions/*/mnt -maxdepth 7 -name "Knowledge Capital.md" -path "*/Knowledge Capital/*" 2>/dev/null | head -1)
+  REPOSITORY=$(echo "$KI_PROPS" | sed 's|||')
+  KI_PROPS_DIR=$(dirname "$KI_PROPS")
   echo "Repository: $REPOSITORY"
 
-Read $KB_PROPS_DIR/Identity.md.
+Read $KI_PROPS_DIR/Identity.md.
 All file paths below are relative to $REPOSITORY.
 
 ## Step 1 - Load context

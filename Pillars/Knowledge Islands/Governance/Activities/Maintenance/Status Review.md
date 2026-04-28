@@ -19,7 +19,7 @@ A weekly pass over notes with stale or pending status values. Status fields sign
 
 ## When
 
-Weekly - _"kb status review"_. Typically at the end of the week or during Monday review.
+Weekly - _"ki status review"_. Typically at the end of the week or during Monday review.
 
 ---
 

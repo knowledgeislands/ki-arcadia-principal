@@ -19,7 +19,7 @@ A weekly manual review of the `+/` inbox folder. New notes arrive here from voic
 
 ## When
 
-Weekly - _"kb inbox review"_. Typically on Monday alongside the [[Health Check]] automation.
+Weekly - _"ki inbox review"_. Typically on Monday alongside the [[Health Check]] automation.
 
 ---
 

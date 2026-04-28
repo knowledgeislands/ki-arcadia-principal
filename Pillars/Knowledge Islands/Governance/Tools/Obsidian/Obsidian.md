@@ -19,7 +19,7 @@ Obsidian is the primary human interface for the island - the editor through whic
 
 ## Templater
 
-The Templater plugin scaffolds new notes to the correct format. Templates are a superset across all islands - not every template will be relevant to every KB. The full template index, with one entry per template and its purpose, is in [[Pillars/Knowledge Islands/Governance/Tools/Obsidian/Templates/Templates|Templates]].
+The Templater plugin scaffolds new notes to the correct format. Templates are a superset across all islands - not every template will be relevant to every KI. The full template index, with one entry per template and its purpose, is in [[Pillars/Knowledge Islands/Governance/Tools/Obsidian/Templates/Templates|Templates]].
 
 Templates implement the structures defined in [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Format/Format|Format]] and [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Types/Types|Types]] - they are the Obsidian-layer expression of those conventions, not the conventions themselves.
 

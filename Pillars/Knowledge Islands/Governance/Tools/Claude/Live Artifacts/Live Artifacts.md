@@ -50,9 +50,9 @@ Do not skip step 2. The vault backup should always reflect the currently deploye
 Paste the following into any live-artifact conversation to write a recipe note and initial HTML backup back to this folder. It leans on the specific Knowledge Island's skill and the canonical shape of [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Week at a Glance Artifact|Week at a Glance Artifact]], so it produces a sibling note without re-specifying the whole format each time.
 
 ```markdown
-Save this artifact as a recipe note in my HNR island.
+Save this artifact as a recipe note in my Knowledge Island.
 
-Use the specific Knowledge Island's skill in SAVE mode. If the HNR KB folder isn't mounted in this session, call `request_cowork_directory` first; the host path is `~/obsidian/vaults/hnr-knowledge-base`.
+Use the specific Knowledge Island's skill in SAVE mode.
 
 Recipe note path: `Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/<Artifact Name> Artifact.md`
 
@@ -68,7 +68,7 @@ Required sections, in this order:
 6. `## Potential Enhancements` - 5-9 ideas, ordered practical → creative, each with a bold name and a one-sentence description of the value.
 7. `## Related Topics` - wikilinks to `[[Live Artifacts]]` as parent, plus any domain-relevant notes.
 
-Frontmatter: standard HNR KB YAML properties (`status`, `purpose`, `author: Written with Claude`). Tags must include `card/note`, `topic/ai`, `topic/productivity`, `topic/automation`, `source/claude`, plus one or two domain tags that fit the artifact's subject.
+Frontmatter: standard Knowledge Islands YAML properties (`status`, `purpose`, `author: Written with Claude`). Tags must include `card/note`, `topic/ai`, `topic/productivity`, `topic/automation`, `source/claude`, plus one or two domain tags that fit the artifact's subject.
 
 After writing the recipe note, also write the current artifact HTML to `Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/<Artifact Name>.html` as the initial colocation backup.
 

@@ -16,8 +16,6 @@ memory_file: user_{user_prefix}_profile.md
 
 This note gives Claude a reference for Kit's voice, rhythm, and habits across different writing contexts. The goal is not impersonation but alignment - Claude should respond in a way that feels natural and consistent with how Kit actually thinks and communicates, rather than defaulting to generic AI register.
 
-The analysis draws from Kit's PKB notes across multiple contexts: personal journal entries, a eulogy, professional emails (Cafcass correspondence), daily notes, and reflective stream notes (Path of Love, Love v Law, spirituality). Collectively these show a consistent voice that holds across formal and informal registers.
-
 ---
 
 ## Voice and Tone

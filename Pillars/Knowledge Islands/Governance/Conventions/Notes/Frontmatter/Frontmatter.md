@@ -27,7 +27,7 @@ Standard YAML properties carried by every note are defined in [[Pillars/Knowledg
 
 ## Tags
 
-The tag taxonomy used across the island - covering card types, calendar note types, topics, source markers, and date stamps - is defined in [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Tags|Tags]]. Tags follow a hierarchical `namespace/value` pattern. Not every tag will be relevant to every KB; the taxonomy is a superset.
+The tag taxonomy used across the island - covering card types, calendar note types, topics, source markers, and date stamps - is defined in [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Tags|Tags]]. Tags follow a hierarchical `namespace/value` pattern. Not every tag will be relevant to every KI; the taxonomy is a superset.
 
 ---
 

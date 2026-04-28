@@ -15,7 +15,7 @@ author: Written with Claude
 
 | Type     | Detail                                          |
 | -------- | ----------------------------------------------- |
-| Document | Existing scheduled task prompts in KB Specifics |
+| Document | Existing scheduled task prompts in KI Specifics |
 
 ## Outputs
 
@@ -33,7 +33,7 @@ author: Written with Claude
 
 ## Open Questions
 
-- What is the intended KB destination - a standalone convention note, or guidance embedded in task prompts themselves?
+- What is the intended KI destination - a standalone convention note, or guidance embedded in task prompts themselves?
 
 ---
 
@@ -46,7 +46,7 @@ Questions to resolve:
 1. How to write scheduled task prompts that are lean (minimal token usage)
 2. Which context to include vs. exclude in prompts
 3. Caching strategies or prompt structure conventions
-4. Whether to document this as a KB convention, or as guidance embedded in the task prompts themselves
+4. Whether to document this as a KI convention, or as guidance embedded in the task prompts themselves
 
 ---
 

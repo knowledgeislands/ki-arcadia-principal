@@ -69,7 +69,7 @@ These notes must remain byte-for-byte identical. Any difference is drift to be r
 
 ---
 
-## Legitimately KB-specific notes (expected to differ)
+## Legitimately KI-specific notes (expected to differ)
 
 These notes are intentionally different between KBs. Do not flag differences here as drift - verify only that the correct version is internally consistent.
 
@@ -77,7 +77,7 @@ These notes are intentionally different between KBs. Do not flag differences her
 | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
 | `Knowledge Capital/` (entire folder)       | Identity, skill name, task prefix, integrations, routing rules, and canonical notes list - by design       |
 | `Conventions/Structure/Structure.md`       | Pillars/Resources boundary semantics, Calendar folder naming, and routing rules are specific to each KB    |
-| `Tools/Claude/Mistakes and Lessons.md`     | Logs KB-specific incidents - accumulates independently in each KB                                          |
+| `Tools/Claude/Mistakes and Lessons.md`     | Logs KI-specific incidents - accumulates independently in each KB                                          |
 | `Tools/Claude/Activities/` (entire folder) | Activity prompts are Claude-specific and island-specific; each KB maintains its own Layer 5 prompt library |
 
 ---
@@ -91,7 +91,7 @@ You are running the KB Convergence Check. Your job is to compare the shared Know
 Run this bash command to find all mounted Knowledge Capital folders:
   find /sessions/*/mnt -maxdepth 7 -name "Knowledge Capital.md" -path "*/Knowledge Capital/*" 2>/dev/null
 
-Store the list as KB_PROPS_LIST. For each, derive its REPOSITORY root by stripping "/Pillars/Knowledge Capital/Knowledge Capital.md" and its KB_PROPS_DIR via dirname.
+Store the list as KI_PROPS_LIST. For each, derive its REPOSITORY root by stripping "/Pillars/Knowledge Capital/Knowledge Capital.md" and its KI_PROPS_DIR via dirname.
 List the KBs found and their names (from KB Identity.md → KB name field in each KB's properties folder).
 
 If fewer than two KBs are found, report this and stop - convergence checking requires at least two KBs.
@@ -103,7 +103,7 @@ Read all files in each KB's Knowledge Capital folder. Note any parameters that d
 For each note in the Shared Notes list, read all versions across all KBs. For each note:
 - If all versions are identical: mark as ✓ Converged
 - If versions differ: identify the specific lines that differ, and determine whether:
-  a. The difference is legitimate KB-specific content that slipped into a shared note - flag for extraction to Knowledge Capital
+  a. The difference is legitimate KI-specific content that slipped into a shared note - flag for extraction to Knowledge Capital
   b. One KB has a genuine improvement or fix the others are missing - flag for cross-pollination
   c. The versions have diverged arbitrarily - flag for reconciliation (pick the best version)
 
@@ -138,4 +138,4 @@ State which files were updated and summarise what was synced, deferred, or inten
 
 - [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Maintenance|Maintenance]] - parent index
 - [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - grandparent index
-- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - KB-specific parameters folder that makes portability possible
+- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - KI-specific parameters folder that makes portability possible

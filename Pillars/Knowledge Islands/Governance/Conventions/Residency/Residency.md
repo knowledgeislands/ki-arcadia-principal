@@ -24,7 +24,7 @@ These tiers are complementary, not competing. The Library is what the knowledge 
 | Tier                 | What it is                                                                            | Lifetime                                          |
 | -------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------- |
 | **The Library**      | Structured notes in the KB vault - rules, conventions, style, architecture            | Permanent - versioned in git                      |
-| **Canonical memory** | Operational distillation of KB notes - rebuilt regularly from the KB                  | Rebuilt on a schedule; always derived from the KB |
+| **Canonical memory** | Operational distillation of KI notes - rebuilt regularly from the KB                  | Rebuilt on a schedule; always derived from the KB |
 | **Auxiliary memory** | In-flight observations from sessions - corrections, patterns, not-yet-validated rules | Temporary - promoted to KB or pruned              |
 
 ---
@@ -63,7 +63,7 @@ More specifically:
 New observation in a session
     → saved as auxiliary memory (ad-hoc)
         → recurs / proves stable
-            → promoted to KB note
+            → promoted to KI note
                 → canonical memory rebuilt from KB
                     → auxiliary file deleted
 ```
@@ -76,18 +76,18 @@ Auxiliary files that never recur or are situational should be pruned, not promot
 
 ## Promotion Criteria
 
-Promote an auxiliary memory file to a KB note when any of the following apply:
+Promote an auxiliary memory file to a KI note when any of the following apply:
 
 - It has been relied on across three or more sessions
 - It captures a rule that prevents a repeatable mistake
-- It is specific enough to be placed in a named KB note
+- It is specific enough to be placed in a named KI note
 - A scheduled gap analysis surfaces it as memory-only for a second consecutive cycle
 
 Do not promote:
 
 - Implementation details likely to change (API internals, property keys, IDs)
 - Session-specific context with no future relevance
-- Rules already covered by canonical KB notes
+- Rules already covered by canonical KI notes
 
 ---
 
@@ -95,7 +95,7 @@ Do not promote:
 
 Bidirectional links keep KB and memory in sync and enable automated drift detection.
 
-**KB → memory** - `memory_file:` frontmatter property on the KB note. Generic (portable) notes use placeholder syntax; [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Knowledge Rebuild|Knowledge Rebuild]] substitutes the actual prefix from [[Pillars/Knowledge Capital/Charter|KB Identity]] at runtime:
+**KB → memory** - `memory_file:` frontmatter property on the KI note. Generic (portable) notes use placeholder syntax; [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Knowledge Rebuild|Knowledge Rebuild]] substitutes the actual prefix from [[Pillars/Knowledge Capital/Charter|KB Identity]] at runtime:
 
 ```yaml
 # Generic note - portable across islands
@@ -113,7 +113,7 @@ memory_file:
   - feedback_{kb_prefix}_multi_column.md
 ```
 
-Notes in `Knowledge Capital/` are already KB-specific by definition; they may use either form - placeholder is preferred for consistency.
+Notes in `Knowledge Capital/` are already KI-specific by definition; they may use either form - placeholder is preferred for consistency.
 
 **Memory → KB** - `## KB Sources` section at the bottom of each memory file:
 

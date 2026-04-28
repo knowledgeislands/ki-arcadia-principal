@@ -36,5 +36,5 @@ author: Written with Claude
 
 ## Related Topics
 
-- [[Pillars/Productivity/Templates/Templates|Templates]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Tools/Obsidian/Templates/Templates|Templates]] - parent index
 - [[{{date:YYYY-MM-DD dddd}}]] - daily note

@@ -48,7 +48,7 @@ The `MEMORY.md` index is injected as a `system-reminder` every session. Individu
 
 ### `CLAUDE.md` files
 
-Repo-specific instruction files loaded automatically when Claude operates within that folder. Precise and reliable _within context_, but invisible when working outside the repo. The HNR island `CLAUDE.md` carries detailed KB conventions; the `hnr-frontend` `CLAUDE.md` carries frontend-specific rules (e.g. MUI import restrictions).
+Repo-specific instruction files loaded automatically when Claude operates within that folder. Precise and reliable _within context_, but invisible when working outside the repo. The Knowledge Island `CLAUDE.md` carries detailed Knowledge Islands conventions; the repository `CLAUDE.md` carries repository-specific rules.
 
 ### Skills
 

@@ -13,7 +13,7 @@ memory_file: project_{kb_prefix}_note_format.md
 
 ## Overview
 
-Tags follow a hierarchical `namespace/value` pattern and are defined as a superset across all islands - not every tag will be relevant to every KB. Island-specific tag extensions live in [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]].
+Tags follow a hierarchical `namespace/value` pattern and are defined as a superset across all islands - not every tag will be relevant to every KI. Island-specific tag extensions live in [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]].
 
 ---
 
