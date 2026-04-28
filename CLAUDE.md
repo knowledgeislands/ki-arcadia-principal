@@ -77,7 +77,7 @@ Full note format specification in [[Notes]]. Key rules:
 
 ### Session Digests
 
-At the close of any substantive session, offer to write a session digest as a sibling Calendar note alongside today's daily note - the same pattern as meeting notes (see [[Pillars/Knowledge Capital/Governance/Activities/Activities]]). File at `Calendar/YYYY/YYYY-MM MonthName/YYYY-MM-DD Session - Topic.md`, then reference it from the daily note by wikilink. The session digest's Related Topics must also link back to the daily note. Include: **Context** (what the session was about and why it was needed), **Decisions**, **Facts Learned**, **Related Projects**, **Keywords**.
+At the close of any substantive session, offer to write a session digest as a sibling Calendar note alongside today's daily note - the same pattern as meeting notes. File at `Calendar/YYYY/YYYY-MM MonthName/YYYY-MM-DD Session - Topic.md`, then reference it from the daily note by wikilink. The session digest's Related Topics must also link back to the daily note. Include: **Context** (what the session was about and why it was needed), **Decisions**, **Facts Learned**, **Related Projects**, **Keywords**.
 
 If a daily note has no sessions, omit the `### Sessions` section entirely - do not leave a placeholder.
 
@@ -91,25 +91,24 @@ See [[Routing Rules]] for any additional routing rules specific to this island.
 
 ## KB Specifics (strictly enforced)
 
-All values specific to this island - integration tools, project IDs, calendar sources, schedule parameters, task prefixes, routing overrides - live in `Pillars/Knowledge Islands/Governance/KB Specifics/`. See [[KB Specifics]] for the full index.
+All values specific to this island — identity parameters, task prefix, skill triggers, schedule configuration, integration details, and physical paths — live in `Pillars/Knowledge Capital/`. The [[Pillars/Knowledge Capital/Charter|Charter]] is the primary reference: it holds the identity parameters and the full adoption and activity roster. Deeper configuration lives in the corresponding `Pillars/Knowledge Capital/Governance/` subfolders (Activities for schedule config, Tools for integrations, Agents for agent config).
 
-**Automations and skills must read their configuration from these notes at runtime, not hardcode values.** This keeps prompts portable across islands and ensures a single source of truth. When an integration changes (e.g. a new TickTick list, a different calendar), update the relevant KB Specifics note - the automations will pick up the change on their next run.
-
-The [[Pillars/Knowledge Capital/Governance/Activities/Activities]] note documents the sync protocol between scheduled task prompts and their corresponding KB notes.
+**Automations and skills must read their configuration from these notes at runtime, not hardcode values.** This keeps prompts portable across islands and ensures a single source of truth. When an integration changes (e.g. a new TickTick list, a different calendar), update the relevant KC note — the automations will pick up the change on their next run.
 
 ## Key Meta Notes
 
-| Note                                                           | Path                                                                                |
-| -------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| [[Governance]]                                                 | `Pillars/Knowledge Islands/Governance/Management.md`                                |
-| [[Knowledge Capital]]                                          | `Pillars/Knowledge Capital/Knowledge Capital.md`                                    |
-| [[Concept]]                                                    | `Pillars/Knowledge Islands/Concept/Concept.md`                                      |
-| [[Structure]]                                                  | `Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure.md`           |
-| [[Notes]]                                                      | `Pillars/Knowledge Islands/Governance/Conventions/Notes/Notes.md`                   |
-| [[Frontmatter/Frontmatter]]                                    | `Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Frontmatter.md` |
-| [[Pillars/Knowledge Capital/Governance/Activities/Activities]] | `Pillars/Knowledge Islands/Governance/Activities/Activities.md`                     |
-| [[Pillars/Knowledge Capital/Governance/Agents/Agents]]         | `Pillars/Knowledge Islands/Governance/Agents/Agents.md`                             |
-| [[Pillars/Knowledge Capital/Governance/Tools/Tools]]           | `Pillars/Knowledge Islands/Governance/Tools/Tools.md`                               |
-| [[Claude]]                                                     | `Pillars/Knowledge Islands/Governance/Tools/Claude/Claude.md`                       |
-| [[Mistakes and Lessons]]                                       | `Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons.md`         |
-| [[CLAUDE]]                                                     | `CLAUDE.md`                                                                         |
+| Note                                                                              | Path                                                                                |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| [[Pillars/Knowledge Capital/Charter\|Charter]]                                    | `Pillars/Knowledge Capital/Charter.md`                                              |
+| [[Pillars/Knowledge Capital/Knowledge Capital\|Knowledge Capital]]                | `Pillars/Knowledge Capital/Knowledge Capital.md`                                    |
+| [[Pillars/Knowledge Islands/Governance/Governance\|Governance]]                   | `Pillars/Knowledge Islands/Governance/Governance.md`                                |
+| [[Pillars/Knowledge Islands/Concept/Concept\|Concept]]                            | `Pillars/Knowledge Islands/Concept/Concept.md`                                      |
+| [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure\|Structure]] | `Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure.md`           |
+| [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Notes\|Notes]]           | `Pillars/Knowledge Islands/Governance/Conventions/Notes/Notes.md`                   |
+| [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Frontmatter\|Frontmatter]] | `Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Frontmatter.md` |
+| [[Pillars/Knowledge Islands/Governance/Activities/Activities\|Activities]]        | `Pillars/Knowledge Islands/Governance/Activities/Activities.md`                     |
+| [[Pillars/Knowledge Islands/Governance/Agents/Agents\|Agents]]                    | `Pillars/Knowledge Islands/Governance/Agents/Agents.md`                             |
+| [[Pillars/Knowledge Islands/Governance/Tools/Tools\|Tools]]                       | `Pillars/Knowledge Islands/Governance/Tools/Tools.md`                               |
+| [[Pillars/Knowledge Islands/Governance/Tools/Claude/Claude\|Claude]]              | `Pillars/Knowledge Islands/Governance/Tools/Claude/Claude.md`                       |
+| [[Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons\|Mistakes and Lessons]] | `Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons.md`         |
+| [[CLAUDE]]                                                                        | `CLAUDE.md`                                                                         |

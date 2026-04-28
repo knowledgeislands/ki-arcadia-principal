@@ -63,10 +63,10 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 - [x] Write the Layer 5 Conformance prompt
 - [ ] Add Adoption Requirements to Maintenance, Briefings, and Linear group indexes
 - [ ] Update Authoring Activities — document constitutional concept and Adoption Requirements convention
-- [ ] Update Canonical Meta Notes — add Charter to the cold-start reading list
-- [ ] Update Scheduled Task Audit description — Conformance now runs first at 04:30
+- [x] Update Canonical Meta Notes — add Charter to the cold-start reading list
+- [x] Update Scheduled Task Audit description — Conformance now runs first at 04:30
 - [x] Review KC structure alignment with KI and the five-layer model
-- [ ] Update CLAUDE.md to reflect current structure and constitutional model
+- [x] Update CLAUDE.md to reflect current structure and constitutional model
 
 ---
 

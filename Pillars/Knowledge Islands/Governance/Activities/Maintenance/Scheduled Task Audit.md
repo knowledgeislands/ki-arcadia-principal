@@ -14,7 +14,7 @@ author: Written with Claude
 
 ## Overview
 
-A daily automated task that runs before all other scheduled activities to verify that each live Cowork scheduled task has a corresponding KB note, that schedules and descriptions match, and that this task's own prompt is current. Runs early enough to catch drift before any other automation fires.
+A daily automated task that verifies each live Cowork scheduled task has a corresponding KB note, that schedules and descriptions match, and that this task's own prompt is current. The Conformance Check runs earlier at 04:30; the Scheduled Task Audit runs at 05:00 and is the first maintenance activity of the day.
 
 Full prompt comparison across all tasks is not currently possible - see [[#Known Limitations]] below.
 
@@ -23,7 +23,7 @@ Full prompt comparison across all tasks is not currently possible - see [[#Known
 ## Schedule
 
 - **Task ID:** `hnrkb-scheduled-task-audit` - prefix defined in [[Pillars/Knowledge Capital/Charter|Charter]]
-- **Runs:** Weekdays at 05:00, before all other scheduled tasks - working days and cron defined in [[Schedule]]
+- **Runs:** Weekdays at 05:00 — after the Conformance Check (04:30), before all other maintenance and briefing tasks — working days and cron defined in [[Schedule]]
 - **Cron:** See [[Schedule]] → Scheduled Task Audit cron
 
 ---

@@ -20,13 +20,13 @@ Live tracking view of all active proposals. Sorted by Stream (Active → Backgro
 
 | Topic                                                                                                                           | Stream     | Status        | Priority |
 | ------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------- | -------- |
-| [[Streams/Active/KI Conformance/KI Conformance\|KI Conformance]]                                                                | Active     | `draft`       | `medium` |
-| [[Streams/Active/KI Conventions/KI Conventions\|KI Conventions]]                                                                | Active     | `draft`       | `medium` |
+| [[Streams/Active/KI Conformance/KI Conformance\|KI Conformance]]                                                                | Active     | `draft`       | `urgent` |
+| [[Streams/Active/KI Conventions/KI Conventions\|KI Conventions]]                                                                | Active     | `draft`       | `urgent` |
+| [[Streams/Active/Tooling Prompts/Tooling Prompts\|Tooling Prompts]]                                                             | Active     | `in-progress` | `high`   |
 | [[Streams/Active/KI Index Review/KI Index Review\|KI Index Review]]                                                             | Active     | `draft`       | `medium` |
 | [[Streams/Active/KI Proposal Pipeline/KI Proposal Pipeline\|KI Proposal Pipeline]]                                              | Active     | `draft`       | `medium` |
-| [[Streams/Active/Tooling Prompts/Tooling Prompts\|Tooling Prompts]]                                                             | Active     | `in-progress` | `medium` |
-| [[Streams/Active/Kit Legal Inception/Kit Legal Inception\|Kit Legal Inception]]                                                 | Active     | `draft`       | `urgent` |
-| [[Streams/Active/Kit Principal Inception/Kit Principal Inception\|Kit Principal Inception]]                                     | Active     | `draft`       | `urgent` |
+| [[Streams/Active/Kit Legal Inception/Kit Legal Inception\|Kit Legal Inception]]                                                 | Active     | `draft`       | `medium` |
+| [[Streams/Active/Kit Principal Inception/Kit Principal Inception\|Kit Principal Inception]]                                     | Active     | `draft`       | `medium` |
 | [[Streams/Active/KI Intentional/KI Intentional\|KI Intentional]]                                                                | Active     | `draft`       | `medium` |
 | [[Streams/Background/Harbour Routes and Customs/Harbour Routes and Customs\|Harbour, Routes and Customs]]                       | Background | `draft`       | `low`    |
 | [[Streams/Future/Future Improvements/Future Improvements\|Future Improvements]]                                                 | Future     | `draft`       | `low`    |
