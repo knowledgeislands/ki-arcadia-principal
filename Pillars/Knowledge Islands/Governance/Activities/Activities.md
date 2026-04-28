@@ -18,7 +18,7 @@ memory_file:
 
 Routine maintenance keeps the island accurate, well-structured, and free of stale content. Activities are either scheduled (time-driven, autonomous) or conversational (chat-triggered, human-in-the-loop).
 
-Activities divide into two categories. **Constitutional** activities are required of any island adopting Knowledge Islands and cannot be vetoed — they define the baseline that makes an island valid. All other groups are **adoptable**: each territory must take an explicit position on each group (adopted or vetoed), with no unknowns permitted. The island's [[Pillars/Knowledge Capital/Manifest|Manifest]] is the authoritative record of adoption decisions.
+Activities divide into two categories. **Constitutional** activities are required of any island adopting Knowledge Islands and cannot be vetoed — they define the baseline that makes an island valid. All other groups are **adoptable**: each territory must take an explicit position on each group (adopted or vetoed), with no unknowns permitted. The island's [[Pillars/Knowledge Capital/Charter|Charter]] is the authoritative record of adoption decisions.
 
 This index covers Layer 1 content: what each activity does and why. The prompts that drive them — Claude-specific and island-specific — live at Layer 5 in [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Activities|Tools/Claude/Activities]]. For the full five-layer model and prompt authoring conventions, see [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]].
 
@@ -30,7 +30,7 @@ The constitutional baseline required of any Knowledge Island. Not subject to the
 
 | Activity | Type | When | Summary |
 | --- | --- | --- | --- |
-| [[Conformance]] | Scheduled | Island-specific cadence | Verifies constitutional baseline and that all non-constitutional activity groups have an explicit adopted or vetoed position in the Manifest |
+| [[Conformance]] | Scheduled | Island-specific cadence | Verifies constitutional baseline and that all non-constitutional activity groups have an explicit adopted or vetoed position in the Charter |
 
 ---
 
@@ -62,7 +62,7 @@ Daily automations that prime the island at the start of each day - creating miss
 
 ---
 
-## [[Email]]
+## [[Pillars/Knowledge Islands/Governance/Activities/Email/Email]]
 
 Inbox management as a scheduled, repeatable process. The goal is inbox zero across each working day, with each message triaged to a clear outcome. See [[Pillars/Knowledge Islands/Governance/Activities/Email/Approach|Approach]] for the shared concepts, definitions, and data model.
 
@@ -77,7 +77,7 @@ Inbox management as a scheduled, repeatable process. The goal is inbox zero acro
 
 ---
 
-## [[Linear]]
+## [[Pillars/Knowledge Islands/Governance/Activities/Linear/Linear]]
 
 Daily automation that keeps the island aligned with the Linear project management workspace, detecting and surfacing drift between stream notes and the live Linear state.
 

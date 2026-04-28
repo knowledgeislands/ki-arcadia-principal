@@ -3,32 +3,46 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Authoritative declaration of Arcadia's adoption positions, enabled activities, connected tools, and active agent configuration
+purpose: Arcadia's island charter — identity, adoption positions, enabled activities, connected tools, and active agent configuration
 author: Written with Claude
 ---
 
-# Manifest
+# Charter
 
 ## Overview
 
-Arcadia's operational manifest — the authoritative declaration of what this island has adopted, enabled, and connected. An activity group, integration, or agent configuration not listed here has no defined position and is therefore non-conformant. The [[Pillars/Knowledge Islands/Governance/Activities/Constitutional/Conformance|Conformance Check]] uses this note as its source of truth.
+Arcadia's island charter — the authoritative declaration of what this island is and what it has adopted. It has two parts that change at different rates. The **Identity** section is static: these parameters define the island and do not change without a constitutional amendment. The operational sections below it change as activities are enabled or disabled, integrations connected, and agent configuration updated.
 
-Constitutional elements (Identity, Manifest, Conformance) are not listed in the adoption table — they are pre-adoptive and not subject to the adoption framework.
+The [[Pillars/Knowledge Islands/Governance/Activities/Constitutional/Conformance|Conformance Check]] uses this note as its source of truth. Agents starting cold and humans checking operational state both read it first.
 
-The Manifest is updated whenever an adoption decision changes, an activity is enabled or disabled, or an integration is connected or disconnected.
+---
+
+## Identity
+
+Fixed parameters that distinguish this island. Automations and skill prompts read from here rather than hardcoding values.
+
+| Parameter | Value |
+| --- | --- |
+| **KB name** | Arcadia Principal |
+| **Repository folder** | `arcadia-principal` |
+| **Skill name** | `arcadia` |
+| **Skill triggers** | "save to Arcadia", "add to Arcadia", "search Arcadia", "what does Arcadia say about", "update the Arcadia notes on" |
+| **Task ID prefix** | `arcadia-` |
+| **Auto-memory prefix** | `arcadia` |
+| **User prefix** | `kit` |
 
 ---
 
 ## Activity Groups
 
-Adoption positions for all non-constitutional activity groups defined in the Knowledge Islands framework. Every group must carry an explicit position — `adopted` or `vetoed`. A vetoed group must have a corresponding stub in the Knowledge Capital acknowledging the decision.
+Adoption positions for all non-constitutional activity groups. Every group must carry an explicit position — `adopted` or `vetoed`. A vetoed group must have a corresponding stub in the Knowledge Capital acknowledging the decision. Constitutional activities (Charter, Conformance) are not listed here — they are pre-adoptive.
 
 | Group | Position | Knowledge Capital |
 | --- | --- | --- |
 | Maintenance | adopted | — |
 | Briefings | adopted | — |
-| Email | vetoed | [[Pillars/Knowledge Capital/Email/Email\|Email]] |
-| Linear | vetoed | [[Pillars/Knowledge Capital/Linear Workspace\|Linear Workspace]] |
+| Email | vetoed | [[Pillars/Knowledge Capital/Governance/Activities/Email/Email\|Email]] |
+| Linear | vetoed | [[Pillars/Knowledge Capital/Governance/Activities/Linear/Linear\|Linear Workspace]] |
 
 ---
 
@@ -44,7 +58,7 @@ Active scheduled automations within adopted groups. An activity listed here is e
 | [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Knowledge Rebuild\|Knowledge Rebuild]] | Maintenance | Wednesday work-day | 07:00 | enabled |
 | [[Pillars/Knowledge Islands/Governance/Activities/Briefings/Morning Briefing\|Morning Briefing]] | Briefings | work-day | 06:00 | enabled |
 
-Day types are defined in [[Pillars/Knowledge Capital/Activities/Schedule|Schedule]].
+Day types are defined in [[Schedule|Schedule]].
 
 ---
 
@@ -65,7 +79,7 @@ Active conversational activities within adopted groups. Trigger phrases are the 
 
 ## Tools
 
-Active integrations. See [[Pillars/Knowledge Capital/Tools/Integrations|Integrations]] for MCP prefix detail.
+Active integrations. See [[Integrations|Integrations]] for MCP prefix detail.
 
 | Purpose | Tool | Status |
 | --- | --- | --- |
@@ -77,7 +91,7 @@ Active integrations. See [[Pillars/Knowledge Capital/Tools/Integrations|Integrat
 
 | Element | Value |
 | --- | --- |
-| KB skill | `pkb` |
+| KB skill | `arcadia` |
 | Memory configuration | Auto-memory at `.auto-memory/` in the Cowork workspace; indexed at `MEMORY.md` |
 
 ---
@@ -86,5 +100,5 @@ Active integrations. See [[Pillars/Knowledge Capital/Tools/Integrations|Integrat
 
 - [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - parent index
 - [[Pillars/Knowledge Islands/Governance/Activities/Constitutional/Conformance|Conformance]] - the activity that validates this note
-- [[Pillars/Knowledge Capital/Activities/Schedule|Schedule]] - day-type taxonomy used by scheduled activities
-- [[Pillars/Knowledge Capital/Tools/Integrations|Integrations]] - full integration detail including MCP prefixes
+- [[Schedule|Schedule]] - day-type taxonomy used by scheduled activities
+- [[Integrations|Integrations]] - full integration detail including MCP prefixes

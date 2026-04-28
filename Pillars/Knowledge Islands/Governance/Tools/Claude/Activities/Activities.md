@@ -22,7 +22,7 @@ What an activity does and why it exists is documented at Layer 1 under [[Pillars
 
 ## Constitutional
 
-[[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Constitutional/Constitutional|Constitutional]] holds the prompt for the Conformance Check — the sole constitutional activity, required of any island running Knowledge Islands. The prompt reads the Manifest and the Activities index to verify constitutional baseline, adoption completeness, and adoption consistency. It is read-only and produces a structured conformance report.
+[[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Constitutional/Constitutional|Constitutional]] holds the prompt for the Conformance Check — the sole constitutional activity, required of any island running Knowledge Islands. The prompt reads the Charter and the Activities index to verify constitutional baseline, adoption completeness, and adoption consistency. It is read-only and produces a structured conformance report.
 
 ---
 

@@ -77,7 +77,7 @@ Full note format specification in [[Notes]]. Key rules:
 
 ### Session Digests
 
-At the close of any substantive session, offer to write a session digest as a sibling Calendar note alongside today's daily note - the same pattern as meeting notes (see [[Activities]]). File at `Calendar/YYYY/YYYY-MM MonthName/YYYY-MM-DD Session - Topic.md`, then reference it from the daily note by wikilink. The session digest's Related Topics must also link back to the daily note. Include: **Context** (what the session was about and why it was needed), **Decisions**, **Facts Learned**, **Related Projects**, **Keywords**.
+At the close of any substantive session, offer to write a session digest as a sibling Calendar note alongside today's daily note - the same pattern as meeting notes (see [[Pillars/Knowledge Capital/Governance/Activities/Activities]]). File at `Calendar/YYYY/YYYY-MM MonthName/YYYY-MM-DD Session - Topic.md`, then reference it from the daily note by wikilink. The session digest's Related Topics must also link back to the daily note. Include: **Context** (what the session was about and why it was needed), **Decisions**, **Facts Learned**, **Related Projects**, **Keywords**.
 
 If a daily note has no sessions, omit the `### Sessions` section entirely - do not leave a placeholder.
 
@@ -95,7 +95,7 @@ All values specific to this island - integration tools, project IDs, calendar so
 
 **Automations and skills must read their configuration from these notes at runtime, not hardcode values.** This keeps prompts portable across islands and ensures a single source of truth. When an integration changes (e.g. a new TickTick list, a different calendar), update the relevant KB Specifics note - the automations will pick up the change on their next run.
 
-The [[Activities]] note documents the sync protocol between scheduled task prompts and their corresponding KB notes.
+The [[Pillars/Knowledge Capital/Governance/Activities/Activities]] note documents the sync protocol between scheduled task prompts and their corresponding KB notes.
 
 ## Key Meta Notes
 
@@ -107,9 +107,9 @@ The [[Activities]] note documents the sync protocol between scheduled task promp
 | [[Structure]]               | `Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure.md`           |
 | [[Notes]]                   | `Pillars/Knowledge Islands/Governance/Conventions/Notes/Notes.md`                   |
 | [[Frontmatter/Frontmatter]] | `Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Frontmatter.md` |
-| [[Activities]]              | `Pillars/Knowledge Islands/Governance/Activities/Activities.md`                     |
-| [[Agents]]                  | `Pillars/Knowledge Islands/Governance/Agents/Agents.md`                             |
-| [[Tools]]                   | `Pillars/Knowledge Islands/Governance/Tools/Tools.md`                               |
+| [[Pillars/Knowledge Capital/Governance/Activities/Activities]]              | `Pillars/Knowledge Islands/Governance/Activities/Activities.md`                     |
+| [[Pillars/Knowledge Capital/Governance/Agents/Agents]]                  | `Pillars/Knowledge Islands/Governance/Agents/Agents.md`                             |
+| [[Pillars/Knowledge Capital/Governance/Tools/Tools]]                   | `Pillars/Knowledge Islands/Governance/Tools/Tools.md`                               |
 | [[Claude]]                  | `Pillars/Knowledge Islands/Governance/Tools/Claude/Claude.md`                       |
 | [[Mistakes and Lessons]]    | `Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons.md`         |
 | [[CLAUDE]]                  | `CLAUDE.md`                                                                         |

@@ -17,15 +17,9 @@ The folder mirrors the five governance areas defined in [[Pillars/Knowledge Isla
 
 ---
 
-## Manifest
+## Charter
 
-[[Pillars/Knowledge Capital/Manifest|Manifest]] is Arcadia's operational manifest — the authoritative declaration of what this island has adopted, enabled, and connected. It records the adoption position (adopted or vetoed) for every non-constitutional activity group, the roster of enabled scheduled and conversational activities, active tool integrations, and the agent configuration. The [[Pillars/Knowledge Islands/Governance/Activities/Constitutional/Conformance|Conformance Check]] uses the Manifest as its source of truth. Agents starting cold and humans checking operational state both read this first.
-
----
-
-## Identity
-
-[[Pillars/Knowledge Capital/Identity|Identity]] is Arcadia's registration card: the KB name, the Cowork skill name, the task prefix used in TickTick, and the trigger phrases that activate the island's skill. These identifiers are the fixed, rarely-changing facts that distinguish Arcadia from every other island. Automations and skill prompts read from here rather than hardcoding values.
+[[Pillars/Knowledge Capital/Charter|Charter]] is Arcadia's island charter — the authoritative declaration of what this island is and what it has adopted. Its Identity section records the fixed parameters that distinguish the island; below that it carries adoption positions for every non-constitutional activity group, the roster of enabled activities, active tool integrations, and the agent configuration. The [[Pillars/Knowledge Islands/Governance/Activities/Constitutional/Conformance|Conformance Check]] uses the Charter as its source of truth. Agents starting cold and humans checking operational state both read it first.
 
 ---
 
@@ -43,25 +37,25 @@ The [[Pillars/Knowledge Capital/Governance/Governance|Governance]] folder holds 
 
 ## Conventions
 
-The [[Pillars/Knowledge Capital/Conventions/Conventions|Conventions]] folder holds the island-specific vocabulary and routing rules that supplement the generic KI conventions. The Glossary decodes Knowledge Islands terminology; the Routing Rules records the filing decisions that recur in this island's specific domain structure. Neither note restates generic rules — both record only what is particular to Arcadia.
+The [[Pillars/Knowledge Capital/Governance/Conventions/Conventions|Conventions]] folder holds the island-specific vocabulary and routing rules that supplement the generic KI conventions. The Glossary decodes Knowledge Islands terminology; the Routing Rules records the filing decisions that recur in this island's specific domain structure. Neither note restates generic rules — both record only what is particular to Arcadia.
 
 ---
 
 ## Activities
 
-The [[Pillars/Knowledge Capital/Activities/Activities|Activities]] folder holds Arcadia's timing configuration for automated activities. The Schedule note defines the day-type taxonomy (`work-day`, `bank-holiday`, `annual-leave`, `weekend`) that all automations read from daily note frontmatter. The authoritative roster of enabled activities — what is running and at what cron — lives in the [[Pillars/Knowledge Capital/Manifest|Manifest]], not here.
+The [[Pillars/Knowledge Capital/Governance/Activities/Activities|Activities]] folder holds Arcadia's timing configuration for automated activities. The Schedule note defines the day-type taxonomy (`work-day`, `bank-holiday`, `annual-leave`, `weekend`) that all automations read from daily note frontmatter. The authoritative roster of enabled activities — what is running and at what cron — lives in the [[Pillars/Knowledge Capital/Charter|Charter]], not here.
 
 ---
 
 ## Agents
 
-The [[Pillars/Knowledge Capital/Agents/Agents|Agents]] folder holds the island-specific material that shapes how AI agents interact with Arcadia. Communication Style gives Claude a reference for Kit's voice so its output feels natural rather than generically helpful. Canonical Meta Notes provides the ordered reading list that Knowledge Rebuild uses to ground an agent in this island's operational context when starting cold.
+The [[Pillars/Knowledge Capital/Governance/Agents/Agents|Agents]] folder holds the island-specific material that shapes how AI agents interact with Arcadia. Communication Style gives Claude a reference for Kit's voice so its output feels natural rather than generically helpful. Canonical Meta Notes provides the ordered reading list that Knowledge Rebuild uses to ground an agent in this island's operational context when starting cold.
 
 ---
 
 ## Tools
 
-The [[Pillars/Knowledge Capital/Tools/Tools|Tools]] folder holds the concrete infrastructure configuration for this island: the Integrations note lists the external services actually connected and their MCP identifiers; Physical Locations records the three filesystem paths — text store, binary store, and Cowork working folder — that make up Arcadia's physical footprint.
+The [[Pillars/Knowledge Capital/Governance/Tools/Tools|Tools]] folder holds the concrete infrastructure configuration for this island: the Integrations note lists the external services actually connected and their MCP identifiers; Physical Locations records the three filesystem paths — text store, binary store, and Cowork working folder — that make up Arcadia's physical footprint.
 
 ---
 

@@ -40,7 +40,7 @@ Common routing decisions:
 
 The `productivity:memory-management` skill stores reference material under `memory/` as a staging convention. When a `memory/` folder appears in a session, treat it as temporary — migrate content to the correct KB location and then remove the folder:
 
-- KI terminology and acronyms → [[Pillars/Knowledge Capital/Conventions/Glossary|Glossary]]
+- KI terminology and acronyms → [[Glossary|Glossary]]
 - Custodian profiles → `Resources/People/`
 
 ---

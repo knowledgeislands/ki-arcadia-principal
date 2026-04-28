@@ -15,7 +15,7 @@ author: Written with Claude
 
 ## Overview
 
-This defines the island Cowork skill for interacting with the island. The skill name and trigger phrases are defined in [[Pillars/Knowledge Capital/Identity|Identity]]. It provides structured operating modes for saving new notes, updating existing notes, querying information, extracting reusable knowledge from conversations, and writing session digests.
+This defines the island Cowork skill for interacting with the island. The skill name and trigger phrases are defined in [[Pillars/Knowledge Capital/Charter|Charter]]. It provides structured operating modes for saving new notes, updating existing notes, querying information, extracting reusable knowledge from conversations, and writing session digests.
 
 All operations follow the routing rules and conventions in [[CLAUDE]].
 

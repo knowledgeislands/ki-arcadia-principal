@@ -95,7 +95,7 @@ Do not promote:
 
 Bidirectional links keep KB and memory in sync and enable automated drift detection.
 
-**KB → memory** - `memory_file:` frontmatter property on the KB note. Generic (portable) notes use placeholder syntax; [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Knowledge Rebuild|Knowledge Rebuild]] substitutes the actual prefix from [[Pillars/Knowledge Capital/Identity|KB Identity]] at runtime:
+**KB → memory** - `memory_file:` frontmatter property on the KB note. Generic (portable) notes use placeholder syntax; [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Knowledge Rebuild|Knowledge Rebuild]] substitutes the actual prefix from [[Pillars/Knowledge Capital/Charter|KB Identity]] at runtime:
 
 ```yaml
 # Generic note - portable across islands

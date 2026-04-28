@@ -20,7 +20,7 @@ A daily scheduled task that runs each morning to prepare today's daily note, pre
 
 ## Schedule
 
-- **Task ID:** `{task-prefix}-morning-briefing` - prefix defined in [[Pillars/Knowledge Capital/Identity|Identity]]
+- **Task ID:** `{task-prefix}-morning-briefing` - prefix defined in [[Pillars/Knowledge Capital/Charter|Charter]]
 - **Runs:** Working days at ~06:00 AM (with a small jitter) - working days and cron defined in [[Schedule]]
 - **Cron:** See [[Schedule]] → Morning Briefing cron
 
@@ -28,7 +28,7 @@ A daily scheduled task that runs each morning to prepare today's daily note, pre
 
 ## What It Does
 
-Using the integrations configured in [[Pillars/Knowledge Capital/Tools/Integrations|Integrations]], fetches today's calendar events, meetings, tasks (due and overdue), and outstanding inbox items, then creates the daily note pre-populated with that content.
+Using the integrations configured in [[Integrations|Integrations]], fetches today's calendar events, meetings, tasks (due and overdue), and outstanding inbox items, then creates the daily note pre-populated with that content.
 
 ---
 

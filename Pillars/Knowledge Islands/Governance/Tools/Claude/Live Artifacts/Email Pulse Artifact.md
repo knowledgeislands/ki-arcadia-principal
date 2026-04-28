@@ -15,7 +15,7 @@ author: Written with Claude
 
 ## Overview
 
-A self-contained Cowork HTML artifact that mirrors the shape of [[Pillars/Knowledge Capital/Email/Email Status|Email Status]] - the pie and folder-count table - but re-queries Microsoft 365 on every open, so counts are always current rather than frozen to the last `Route Inbound` run. Pinned in the Cowork sidebar; re-fetches via `window.cowork.callMcpTool`. Designed as a live companion to the `Email Status.md` snapshot rather than a replacement: the scheduled tasks continue to rewrite the markdown (preserving the KB graph and audit trail), while the artifact is the live read surface used during the day.
+A self-contained Cowork HTML artifact that mirrors the shape of [[Email Status|Email Status]] - the pie and folder-count table - but re-queries Microsoft 365 on every open, so counts are always current rather than frozen to the last `Route Inbound` run. Pinned in the Cowork sidebar; re-fetches via `window.cowork.callMcpTool`. Designed as a live companion to the `Email Status.md` snapshot rather than a replacement: the scheduled tasks continue to rewrite the markdown (preserving the KB graph and audit trail), while the artifact is the live read surface used during the day.
 
 v1 is deliberately **read-only**: the artifact never modifies inbox or KB state. One optional surface layers on top of the core counts view - a per-folder message drill-down that fetches and lists subjects on click, toggled via a checkbox at the top of the page and off by default. A compact Suggestions panel surfaces pending routing suggestions fetched live from `Email Routing Queue.md` via the `hnr-knowledge-base-mcp-server` MCP on every open; decisions on those suggestions are taken by editing the markdown file directly; write-back from the artifact is the primary v2 direction and is captured under Potential Enhancements.
 
@@ -271,8 +271,8 @@ Ordered roughly by effort - small and practical first, creative last.
 ## Related Topics
 
 - [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Live Artifacts|Live Artifacts]] - parent index
-- [[Pillars/Knowledge Capital/Email/Email|Email]] - KB-specific email configuration this artifact renders
-- [[Pillars/Knowledge Capital/Email/Email Status|Email Status]] - the markdown snapshot this artifact complements
-- [[Pillars/Knowledge Capital/Email/Email Routing Queue|Email Routing Queue]] - live source for the Suggestions panel, fetched via `hnr-knowledge-base-mcp-server`
+- [[Pillars/Knowledge Capital/Governance/Activities/Email/Email|Email]] - KB-specific email configuration this artifact renders
+- [[Email Status|Email Status]] - the markdown snapshot this artifact complements
+- [[Email Routing Queue|Email Routing Queue]] - live source for the Suggestions panel, fetched via `hnr-knowledge-base-mcp-server`
 - [[Pillars/Knowledge Islands/Governance/Activities/Email/Email|Email]] - the activity that writes `Email Status.md` and `Email Routing Queue.md`
 - [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]] - general patterns for recurring AI automations

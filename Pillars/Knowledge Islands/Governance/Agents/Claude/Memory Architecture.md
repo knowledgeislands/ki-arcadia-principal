@@ -76,7 +76,7 @@ The prefix distinguishes files from multiple KBs sharing the same `.auto-memory/
 
 ## KB ↔ Memory Mapping
 
-_The table below uses `{kb_prefix}` and `{user_prefix}` placeholders - substitute the actual values from [[Pillars/Knowledge Capital/Identity|KB Identity]] when reading for a specific KB. [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Knowledge Rebuild|Knowledge Rebuild]] uses this table during its gap analysis to validate that every listed file exists in `.auto-memory/` and that every file in `.auto-memory/` is documented here._
+_The table below uses `{kb_prefix}` and `{user_prefix}` placeholders - substitute the actual values from [[Pillars/Knowledge Capital/Charter|KB Identity]] when reading for a specific KB. [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Knowledge Rebuild|Knowledge Rebuild]] uses this table during its gap analysis to validate that every listed file exists in `.auto-memory/` and that every file in `.auto-memory/` is documented here._
 
 | KB Note | Memory File | Class | Notes |
 | --- | --- | --- | --- |
@@ -102,4 +102,4 @@ _The table below uses `{kb_prefix}` and `{user_prefix}` placeholders - substitut
 - [[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude|Claude]] - parent index
 - [[Pillars/Knowledge Islands/Governance/Conventions/Residency/Residency|Residency]] - the three-tier model and residency principles this architecture implements
 - [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Knowledge Rebuild|Knowledge Rebuild]] - the scheduled task that maintains the canonical memory layer
-- [[Pillars/Knowledge Capital/Identity|KB Identity]] - source of `kb_prefix` and `user_prefix` values
+- [[Pillars/Knowledge Capital/Charter|KB Identity]] - source of `kb_prefix` and `user_prefix` values

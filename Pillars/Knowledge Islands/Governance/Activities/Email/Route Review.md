@@ -24,7 +24,7 @@ No changes are made automatically - all writes require the taxonomy and collisio
 
 ## Invocation
 
-Chat trigger: _"email route review"_. Typically invoked after reviewing the [[Pillars/Knowledge Capital/Email/Email Routing Queue|Email Routing Queue]] in Obsidian and setting suggestion statuses.
+Chat trigger: _"email route review"_. Typically invoked after reviewing the [[Email Routing Queue|Email Routing Queue]] in Obsidian and setting suggestion statuses.
 
 ---
 
@@ -128,5 +128,5 @@ Output a structured summary:
 
 - [[Pillars/Knowledge Islands/Governance/Activities/Email/Approach|Approach]] - concept reference and shared definitions
 - [[Pillars/Knowledge Islands/Governance/Activities/Email/Email|Email]] - parent index
-- [[Pillars/Knowledge Capital/Email/Email Routing Queue|Email Routing Queue]] - the queue file reviewed before invoking this activity
+- [[Email Routing Queue|Email Routing Queue]] - the queue file reviewed before invoking this activity
 - [[Pillars/Knowledge Islands/Governance/Activities/Email/Re-route Triaged|Re-route Triaged]] - alternative for manually working Unknown one at a time

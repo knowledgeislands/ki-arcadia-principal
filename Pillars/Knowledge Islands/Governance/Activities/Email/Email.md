@@ -20,7 +20,7 @@ Inbox management as a scheduled, repeatable process. The goal is inbox zero acro
 
 ## Scheduled Activities
 
-The two scheduled automations run without human prompting, driven by the cron parameters in [[Pillars/Knowledge Capital/Activities/Schedule|Schedule]].
+The two scheduled automations run without human prompting, driven by the cron parameters in [[Schedule|Schedule]].
 
 ### Route Drift
 
@@ -72,4 +72,4 @@ To adopt this activity group, an island must create the following Knowledge Capi
 ## Related Topics
 
 - [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - parent index
-- [[Pillars/Knowledge Capital/Email/Email Routing Config|Email Routing Config]] - routing rules for the email triage system, filed in Knowledge Capital
+- [[Email Routing Config|Email Routing Config]] - routing rules for the email triage system, filed in Knowledge Capital

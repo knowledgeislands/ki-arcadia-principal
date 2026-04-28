@@ -31,7 +31,7 @@ The structural scaffolding (folder structure, stub index notes, authoring conven
 | Prompt sync audit   | 🔲 Not started | Verify all Layer 5 prompts are in sync with their Cowork scheduled tasks                                |
 | Activity navigation | 🔲 Not started | Investigate cached/synthesised views of the five-layer stack for human and agent consumers              |
 | Arcadia skill       | 🔲 Not started | Define and configure the Arcadia KB skill                                                               |
-| Scheduled tasks     | 🔲 Not started | Configure Arcadia's scheduled tasks in Cowork; verify against Manifest                                  |
+| Scheduled tasks     | 🔲 Not started | Configure Arcadia's scheduled tasks in Cowork; verify against Charter                                  |
 
 ---
 

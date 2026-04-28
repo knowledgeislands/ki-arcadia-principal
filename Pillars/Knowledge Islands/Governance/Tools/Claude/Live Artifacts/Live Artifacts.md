@@ -40,7 +40,7 @@ Do not skip step 2. The vault backup should always reflect the currently deploye
 - [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Week at a Glance Artifact|Week at a Glance Artifact]] - rolling next-7-days multi-calendar overview with per-day summaries
 - [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Slack Digest Artifact|Slack Digest Artifact]] - last 24 hours of channel conversations (discovered by name prefix) and DMs, with a 2-3 sentence per-channel summary and one-liner DMs
 - [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Linear Open Issues Tracker Artifact|Linear Open Issues Tracker Artifact]] - workspace-wide open-issues view grouped by project and priority
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Email Pulse Artifact|Email Pulse Artifact]] - live, read-only companion to [[Pillars/Knowledge Capital/Email/Email Status|Email Status]], with an optional per-folder message drill-down
+- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Email Pulse Artifact|Email Pulse Artifact]] - live, read-only companion to [[Email Status|Email Status]], with an optional per-folder message drill-down
 - [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Valle Armonia Guides Artifact|Valle Armonia Guides Artifact]] - static tab-navigated viewer for the six living guides in the vallearmonia-website repo; content embedded at update time, no runtime tool calls
 
 ---

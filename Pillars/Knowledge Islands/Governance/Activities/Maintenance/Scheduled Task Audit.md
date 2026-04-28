@@ -22,7 +22,7 @@ Full prompt comparison across all tasks is not currently possible - see [[#Known
 
 ## Schedule
 
-- **Task ID:** `hnrkb-scheduled-task-audit` - prefix defined in [[Pillars/Knowledge Capital/Identity|Identity]]
+- **Task ID:** `hnrkb-scheduled-task-audit` - prefix defined in [[Pillars/Knowledge Capital/Charter|Charter]]
 - **Runs:** Weekdays at 05:00, before all other scheduled tasks - working days and cron defined in [[Schedule]]
 - **Cron:** See [[Schedule]] → Scheduled Task Audit cron
 
@@ -61,7 +61,7 @@ Run this bash command to find the Knowledge Capital folder and derive the reposi
 Then read:
 1. $REPOSITORY/CLAUDE.md - KB operating instructions
 2. $REPOSITORY/Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons.md - pre-flight check
-3. $REPOSITORY/Pillars/Knowledge Capital/Identity.md - task ID prefix
+3. $REPOSITORY/Pillars/Knowledge Capital/Charter.md - task ID prefix
 
 ## Step 1 - List all scheduled tasks
 Call mcp__scheduled-tasks__list_scheduled_tasks to retrieve all scheduled tasks and their metadata.
@@ -108,7 +108,7 @@ Call `mcp__scheduled-tasks__list_scheduled_tasks` to retrieve metadata for all a
 
 ### 2. Identify the corresponding KB note
 
-For each task, locate the matching activity note under `Pillars/Knowledge Islands/Governance/Activities/`. The task ID prefix is documented in [[Pillars/Knowledge Capital/Identity|Identity]].
+For each task, locate the matching activity note under `Pillars/Knowledge Islands/Governance/Activities/`. The task ID prefix is documented in [[Pillars/Knowledge Capital/Charter|Charter]].
 
 ### 3. Verify schedule and description
 
