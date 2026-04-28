@@ -61,7 +61,7 @@ Daily automations that prime the island at the start of each day - creating miss
 
 ---
 
-## [[Knowledge Islands/Governance/Activities/Email/Email]]
+## [[Knowledge Islands/Governance/Activities/Email/Email|]]
 
 Inbox management as a scheduled, repeatable process. The goal is inbox zero across each working day, with each message triaged to a clear outcome. See [[Approach]] for the shared concepts, definitions, and data model.
 
