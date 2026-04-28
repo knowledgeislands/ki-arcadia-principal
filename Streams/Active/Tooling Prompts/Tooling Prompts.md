@@ -5,7 +5,7 @@ tags:
   - topic/automation
   - topic/knowledge-management
 status: in-progress - April 2026
-purpose: Track the work of building out the Tools/Claude/Activities/ prompt library — migrating, authoring, and refining the Layer 5 prompt layer
+purpose: Track the work of building out Arcadia's operational tooling — the Layer 5 prompt library, activity navigation aids, the Arcadia skill, and scheduled task configuration
 author: Written with Claude
 ---
 
@@ -13,7 +13,7 @@ author: Written with Claude
 
 ## Overview
 
-Building out the `Tools/Claude/Activities/` prompt library — the Layer 5 content layer in the [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|five-layer model]]. This stream tracks migration of existing embedded prompts, authoring of new ones, and the ongoing discipline of keeping prompts aligned with their KB activity notes.
+Building out Arcadia's operational tooling across three areas. First, the `Tools/Claude/Activities/` prompt library — the Layer 5 content layer in the [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|five-layer model]] — migrating existing embedded prompts, authoring new ones, and keeping them aligned with their KB activity notes. Second, activity navigation aids: cached or synthesised views of the five-layer stack that reduce the number of notes a human or agent needs to read. Third, Arcadia's operational infrastructure: the Arcadia skill definition and the scheduled task configuration.
 
 The structural scaffolding (folder structure, stub index notes, authoring conventions) was created in the April 2026 governance restructuring session alongside [[Streams/Active/Knowledge Islands Inception/Knowledge Islands Inception|Knowledge Islands Inception]].
 
@@ -29,6 +29,9 @@ The structural scaffolding (folder structure, stub index notes, authoring conven
 | Briefings prompts   | 🔲 Not started | Migrate Morning Briefing prompt                                                                         |
 | Linear prompts      | 🔲 Not started | Migrate Linear Sync prompt                                                                              |
 | Prompt sync audit   | 🔲 Not started | Verify all Layer 5 prompts are in sync with their Cowork scheduled tasks                                |
+| Activity navigation | 🔲 Not started | Investigate cached/synthesised views of the five-layer stack for human and agent consumers              |
+| Arcadia skill       | 🔲 Not started | Define and configure the Arcadia KB skill                                                               |
+| Scheduled tasks     | 🔲 Not started | Configure Arcadia's scheduled tasks in Cowork; verify against Manifest                                  |
 
 ---
 

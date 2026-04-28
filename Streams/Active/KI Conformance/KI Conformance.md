@@ -65,7 +65,9 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 - [ ] Update Authoring Activities — document constitutional concept and Adoption Requirements convention
 - [ ] Update Canonical Meta Notes — add Manifest to the cold-start reading list
 - [ ] Update Scheduled Task Audit description — Conformance now runs first at 04:30
-- [ ] Add KI Conformance to Streams.md proposals index
+- [ ] Review KC structure alignment with KI and the five-layer model
+- [ ] Audit for content duplication between KI and KC — establish canonical source of truth for each piece of information
+- [ ] Update CLAUDE.md to reflect current structure and constitutional model
 
 ---
 
