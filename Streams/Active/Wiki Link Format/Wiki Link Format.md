@@ -20,19 +20,13 @@ Wiki links currently use full paths throughout the island (e.g. `[[Pillars/Knowl
 
 ## Options
 
-| Format       | Unambiguous | Token-efficient | Native Support | Flexible |
-| ------------ | ----------- | --------------- | -------------- | -------- |
-| **Full**     | ✓           | ✗               | ✓              | ✗        |
-| **Shortest** | ~           | ✓               | ✓              | ✓        |
-| **Relative** | ✓           | ~               | ✗              | ~        |
+| Format       | Unambiguous | Token-efficient | Native Support | Flexible | Example                                                                        |
+| ------------ | ----------- | --------------- | -------------- | -------- | ------------------------------------------------------------------------------ |
+| **Full**     | ✓           | ✗               | ✓              | ✗        | `[[Pillars/Knowledge Islands/Concept/Concept\|Concept]]`                      |
+| **Shortest** | ~           | ✓               | ✓              | ✓        | `[[Concept]]`; or `[[Knowledge Islands/Governance]]` on collision              |
+| **Relative** | ✓           | ~               | ✗              | ~        | `[[../Concept]]` for a sibling; `[[../../Governance/Governance]]` for a cousin |
 
-_~ = partial: Shortest is unambiguous only when no collision exists; Relative is token-efficient for nearby notes only, and flexible locally but awkward cross-folder._
-
-**Full** — `[[Pillars/Knowledge Islands/Concept/Concept|Concept]]`
-
-**Shortest** — `[[Concept]]` when unique; `[[Knowledge Islands/Governance]]` when a collision exists
-
-**Relative** — `[[../Concept]]` for a sibling; `[[../../Governance/Governance]]` for a cousin
+*~ = partial: Shortest is unambiguous only when no collision exists; Relative is token-efficient for nearby notes only, and flexible locally but awkward cross-folder.*
 
 ---
 
@@ -52,6 +46,8 @@ _~ = partial: Shortest is unambiguous only when no collision exists; Relative is
 
 Rather than scanning the filesystem on every link write, maintain a pre-built **collision registry** — a map from leaf filename to the list of vault paths that share that name. Only collisions are stored; unique filenames have no entry. The registry is rebuilt by a maintenance/tending activity and is compact enough to load into an agent session as a JSON blob.
 
+[[A]]
+[[B/A|A]]
 ### Structure
 
 ```json
@@ -76,10 +72,16 @@ Rather than scanning the filesystem on every link write, maintain a pre-built **
 Both `Knowledge Capital` and `Knowledge Islands` have a `Governance` folder with the same set of child names (`Activities`, `Agents`, `Conventions`, `Processes`, `Tools`), so almost every index note in the subtree collides.
 
 ```
-Pillars ←─────-----------───────────── [[Pillars]]
+Home.md
+Pillars
+|── Pillars.md  ←─────-----------───────────── [[Pillars/Pillars]]
 ├── Knowledge Capital
-│   └── Governance ←────────────────── [[Knowledge Capital/Governance]]
-│       ├── Activities ←────────────── [[Knowledge Capital/Governance/Activities]]
+│   ├── Knowledge Capital.md  ←─────---[[Knowledge Capital]]
+│   └── Governance
+│       ├── Governance.md  ←────────────────── [[Knowledge Capital/Governance]]
+│       ├── Home.md
+│       ├── Activities
+│       │   └── Activities ←────────────── [[Knowledge Capital/Governance/Activities]]
 │       ├── Agents
 │       ├── Pillars ←──────────────    [[Governance/Pillars]]
 │       └── Tools
