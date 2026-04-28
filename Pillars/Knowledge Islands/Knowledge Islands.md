@@ -66,7 +66,7 @@ The tool layer and the agent layer are kept separate by design. Tool notes cover
 
 ## Knowledge Capitals
 
-Every general concept defined in [[Knowledge Islands]] may have a corresponding specific realisation in [[Knowledge Capital]]. The two are structural mirrors: Knowledge Islands holds the portable, island-agnostic definition; Knowledge Capital holds Arcadia's instance of that definition - this island's council, citizenship records, integration configuration, routing overrides, and identity. When adding a new generic concept here, any island-specific counterpart belongs in Knowledge Capital, not in Knowledge Islands itself.
+Every general concept defined in [[Knowledge Islands]] may have a corresponding specific realisation in [[Knowledge Capital]]. Knowledge Islands holds the portable, island-agnostic definition; Knowledge Capital holds Arcadia's instance — this island's council, citizenship records, integration configuration, routing overrides, and identity.
 
 ---
 

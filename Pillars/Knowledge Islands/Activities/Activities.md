@@ -15,7 +15,7 @@ memory_file:
 
 ## Overview
 
-Routine maintenance keeps the island accurate, well-structured, and free of stale content. Activities are either scheduled (time-driven, autonomous) or conversational (chat-triggered, human-in-the-loop).
+Routine maintenance keeps the island accurate, well-structured, and free of stale content. Activities are either scheduled (time-driven, autonomous) or conversational (chat-triggered, human-in-the-loop). Together they implement the maintenance cycle that prevents the island from drifting from the world it reflects.
 
 Activities divide into two categories. **Constitutional** activities are required of any island adopting Knowledge Islands and cannot be vetoed - they define the baseline that makes an island valid. All other groups are **adoptable**: each territory must take an explicit position on each group (adopted or vetoed), with no unknowns permitted. The island's [[Charter]] is the authoritative record of adoption decisions.
 
