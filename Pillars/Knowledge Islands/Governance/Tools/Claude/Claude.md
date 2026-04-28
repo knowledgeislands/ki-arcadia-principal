@@ -6,7 +6,7 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Document how Claude is configured as a tool — Cowork connection, token economics, memory, and the activity prompt layer
+purpose: Document how Claude is configured as a tool - Cowork connection, token economics, memory, and the activity prompt layer
 author: Written with Claude
 ---
 
@@ -14,7 +14,7 @@ author: Written with Claude
 
 ## Overview
 
-This note documents the Claude tool layer — how Cowork connects Claude to the island, the token economics of the integration, and the prompt library for activities. How Claude operates as an agent (five modes, behavioural constraints, memory architecture) is documented in [[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude|Agents/Claude]].
+This note documents the Claude tool layer - how Cowork connects Claude to the island, the token economics of the integration, and the prompt library for activities. How Claude operates as an agent (five modes, behavioural constraints, memory architecture) is documented in [[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude|Agents/Claude]].
 
 ---
 
@@ -30,7 +30,7 @@ The integration relies on three components:
 
 ## Operating Modes
 
-Claude operates in five modes (Save, Update, Query, Extract, Digest) defined in [[Pillars/Knowledge Islands/Governance/Agents/Claude/Island Skill|Island Skill]]. The prompt that drives them is the island skill installed in Cowork — configured in [[Pillars/Knowledge Capital/Charter|Charter]].
+Claude operates in five modes (Save, Update, Query, Extract, Digest) defined in [[Pillars/Knowledge Islands/Governance/Agents/Claude/Island Skill|Island Skill]]. The prompt that drives them is the island skill installed in Cowork - configured in [[Pillars/Knowledge Capital/Charter|Charter]].
 
 All Claude-generated notes carry the `source/claude` tag. Routing is defined canonically in [[Structure]].
 
@@ -102,19 +102,19 @@ The `productivity:memory-management` skill provides a structured **deep memory**
 
 ## Mistakes and Lessons
 
-[[Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons|Mistakes and Lessons]] is the human-readable incident register for Claude sessions — documented errors, their resolutions, and the lessons extracted from them. All resolved lessons are extracted to auto-memory files so they are active in every session without a file read; this note is the audit trail, not the operational source.
+[[Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons|Mistakes and Lessons]] is the human-readable incident register for Claude sessions - documented errors, their resolutions, and the lessons extracted from them. All resolved lessons are extracted to auto-memory files so they are active in every session without a file read; this note is the audit trail, not the operational source.
 
 ---
 
 ## Live Artifacts
 
-[[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Live Artifacts|Live Artifacts]] is the canonical home for Cowork live-artifact HTML pages — self-contained dashboards that persist in the Cowork sidebar and re-fetch data from MCP tools on each open. Each artifact is represented by a recipe note (design decisions, reusable prompt, updating instructions) and a colocated HTML backup of the approved version.
+[[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Live Artifacts|Live Artifacts]] is the canonical home for Cowork live-artifact HTML pages - self-contained dashboards that persist in the Cowork sidebar and re-fetch data from MCP tools on each open. Each artifact is represented by a recipe note (design decisions, reusable prompt, updating instructions) and a colocated HTML backup of the approved version.
 
 ---
 
 ## Activities
 
-[[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Activities|Activities]] is the Layer 5 prompt library — the executable prompts that drive scheduled and conversational activities, organised into one subfolder per activity group (Email, Maintenance, Briefings, Linear). What each activity does and why is documented at Layer 1 under [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]].
+[[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Activities|Activities]] is the Layer 5 prompt library - the executable prompts that drive scheduled and conversational activities, organised into one subfolder per activity group (Email, Maintenance, Briefings, Linear). What each activity does and why is documented at Layer 1 under [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]].
 
 ---
 

@@ -23,7 +23,7 @@ Arcadia's Pillars are organised into three domains:
 | Domain            | Folder                       | Concern                                                        | Key question                                                            |
 | ----------------- | ---------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | Knowledge Islands | `Pillars/Knowledge Islands/` | The KI concept, architecture, and governance framework         | What is the Knowledge Islands system and how does it work generically?  |
-| Knowledge Capital | `Pillars/Knowledge Capital/` | Arcadia's own identity, governance instance, and configuration | What makes Arcadia itself — how is this island specifically configured? |
+| Knowledge Capital | `Pillars/Knowledge Capital/` | Arcadia's own identity, governance instance, and configuration | What makes Arcadia itself - how is this island specifically configured? |
 | Productivity      | `Pillars/Productivity/`      | Working practices                                              | How does Arcadia's council operate day-to-day?                          |
 
 Common routing decisions:
@@ -38,7 +38,7 @@ Common routing decisions:
 
 ## Memory Folder Migration
 
-The `productivity:memory-management` skill stores reference material under `memory/` as a staging convention. When a `memory/` folder appears in a session, treat it as temporary — migrate content to the correct KB location and then remove the folder:
+The `productivity:memory-management` skill stores reference material under `memory/` as a staging convention. When a `memory/` folder appears in a session, treat it as temporary - migrate content to the correct KB location and then remove the folder:
 
 - KI terminology and acronyms → [[Glossary|Glossary]]
 - Custodian profiles → `Resources/People/`

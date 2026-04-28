@@ -778,7 +778,7 @@ var Batch = class _Batch {
   #maybe_dirty_effects = /* @__PURE__ */ new Set();
   /**
    * A set of branches that still exist, but will be destroyed when this batch
-   * is committed — we skip over these during `process`
+   * is committed - we skip over these during `process`
    * @type {Set<Effect>}
    */
   skipped_effects = /* @__PURE__ */ new Set();

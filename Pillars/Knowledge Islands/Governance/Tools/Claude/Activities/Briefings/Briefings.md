@@ -5,7 +5,7 @@ tags:
   - topic/automation
   - source/claude
 status: draft - April 2026
-purpose: Index for briefing activity prompts — the Claude-specific, island-specific prompts that drive daily briefings and periodic reviews
+purpose: Index for briefing activity prompts - the Claude-specific, island-specific prompts that drive daily briefings and periodic reviews
 author: Written with Claude
 ---
 
@@ -13,15 +13,15 @@ author: Written with Claude
 
 ## Overview
 
-Layer 5 prompts for the daily briefing activities — the executable, Claude-specific and island-specific prompts that run the Morning Briefing automation each working day. These prompts reference calendar configuration, task lists, and note-creation paths from [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]], and build on the agentic patterns in [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/Agentic AI|Agentic AI]] for efficient MCP fetching and daily note construction.
+Layer 5 prompts for the daily briefing activities - the executable, Claude-specific and island-specific prompts that run the Morning Briefing automation each working day. These prompts reference calendar configuration, task lists, and note-creation paths from [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]], and build on the agentic patterns in [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/Agentic AI|Agentic AI]] for efficient MCP fetching and daily note construction.
 
-What the Morning Briefing does and why it exists is documented at Layer 1 in [[Pillars/Knowledge Islands/Governance/Activities/Briefings/Briefings|Activities/Briefings]]. This folder holds only the executable prompts — one note per activity once migrated from the scheduled task definitions.
+What the Morning Briefing does and why it exists is documented at Layer 1 in [[Pillars/Knowledge Islands/Governance/Activities/Briefings/Briefings|Activities/Briefings]]. This folder holds only the executable prompts - one note per activity once migrated from the scheduled task definitions.
 
 ---
 
 ## Prompts
 
-_Prompt notes to be filed here — one note per activity._
+_Prompt notes to be filed here - one note per activity._
 
 ---
 

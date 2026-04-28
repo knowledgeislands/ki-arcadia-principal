@@ -6,7 +6,7 @@ tags:
   - topic/ai
   - topic/automation
 status: current - April 2026
-purpose: Index for the AI operating layer — generalised patterns and conventions for how AI agents work within the island, independent of any specific tool
+purpose: Index for the AI operating layer - generalised patterns and conventions for how AI agents work within the island, independent of any specific tool
 author: Written with Claude
 ---
 
@@ -14,7 +14,7 @@ author: Written with Claude
 
 ## Overview
 
-The AI operating layer — patterns and conventions that govern how AI agents work within the island, independent of any specific tool. Content here applies across AI tools; anything Claude-specific lives under [[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude|Agents/Claude]].
+The AI operating layer - patterns and conventions that govern how AI agents work within the island, independent of any specific tool. Content here applies across AI tools; anything Claude-specific lives under [[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude|Agents/Claude]].
 
 This is Layer 3 of the [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|five-layer content model]]: Activity-agnostic, Island-agnostic, Agent-agnostic.
 
@@ -30,7 +30,7 @@ This is Layer 3 of the [[Pillars/Knowledge Islands/Governance/Activities/Authori
 
 Content belongs in this folder when it:
 
-- Describes how AI agents should behave when operating within a Knowledge Island — regardless of which AI tool is doing the work
+- Describes how AI agents should behave when operating within a Knowledge Island - regardless of which AI tool is doing the work
 - Captures structural patterns for automations, scheduled tasks, or agent workflows that are not specific to Claude
 - Generalises from a specific activity or tool to a reusable convention
 

@@ -36,19 +36,19 @@ Live tracking view of all active proposals. Sorted by Stream (Active → Backgro
 
 ## Active
 
-[[Streams/Active/Active|Active]] streams are receiving focused attention now — the work is happening. Active is not a queue; it should hold only what is genuinely in motion. When a stream stalls or loses urgency, it moves to Background or Dormant.
+[[Streams/Active/Active|Active]] streams are receiving focused attention now - the work is happening. Active is not a queue; it should hold only what is genuinely in motion. When a stream stalls or loses urgency, it moves to Background or Dormant.
 
 ---
 
 ## Background
 
-[[Streams/Background/Background|Background]] streams are alive but not the current focus. They surface periodically, accumulate thinking, and may graduate to Active when circumstances change. A stream in Background is not forgotten — it is incubating.
+[[Streams/Background/Background|Background]] streams are alive but not the current focus. They surface periodically, accumulate thinking, and may graduate to Active when circumstances change. A stream in Background is not forgotten - it is incubating.
 
 ---
 
 ## Dormant
 
-[[Streams/Dormant/Dormant|Dormant]] streams are paused with intention to return. Something specific blocked or deprioritised them — not abandoned, but not being worked. The distinction from Background is intent: Dormant means "we will return when the blocker clears"; Background means "we are working on it, just not urgently".
+[[Streams/Dormant/Dormant|Dormant]] streams are paused with intention to return. Something specific blocked or deprioritised them - not abandoned, but not being worked. The distinction from Background is intent: Dormant means "we will return when the blocker clears"; Background means "we are working on it, just not urgently".
 
 ---
 

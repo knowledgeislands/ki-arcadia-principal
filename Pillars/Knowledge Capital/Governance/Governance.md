@@ -3,7 +3,7 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Arcadia's governance instance — council model, membership, and operating conventions
+purpose: Arcadia's governance instance - council model, membership, and operating conventions
 author: Written with Claude
 ---
 
@@ -11,7 +11,7 @@ author: Written with Claude
 
 ## Overview
 
-Arcadia governs itself using the **council model** as defined in [[Pillars/Knowledge Islands/Concept/Concept|Concept]]. The council is Arcadia's sole ratification authority — all changes to canonical knowledge pass through it via the Enactment Process.
+Arcadia governs itself using the **council model** as defined in [[Pillars/Knowledge Islands/Concept/Concept|Concept]]. The council is Arcadia's sole ratification authority - all changes to canonical knowledge pass through it via the Enactment Process.
 
 ---
 
@@ -19,7 +19,7 @@ Arcadia governs itself using the **council model** as defined in [[Pillars/Knowl
 
 | Attribute           | Value                                                                                   |
 | ------------------- | --------------------------------------------------------------------------------------- |
-| Model               | Council — see [[Pillars/Knowledge Islands/Concept/Concept\|Concept]]                    |
+| Model               | Council - see [[Pillars/Knowledge Islands/Concept/Concept\|Concept]]                    |
 | Operating mechanism | [[Pillars/Knowledge Capital/Governance/Processes/Enactment Process\|Enactment Process]] |
 | Membership          | Open to principals of any archipelago that contributes to or builds on Arcadia          |
 
@@ -51,13 +51,13 @@ The [[Pillars/Knowledge Capital/Governance/Conventions/Conventions|Conventions]]
 
 ## Processes
 
-The [[Pillars/Knowledge Capital/Governance/Processes/Processes|Processes]] folder holds Arcadia's instance of the KI process definitions. Currently it contains the [[Pillars/Knowledge Capital/Governance/Processes/Enactment Process|Enactment Process]] — Arcadia's ratification mechanism for changes to canonical knowledge.
+The [[Pillars/Knowledge Capital/Governance/Processes/Processes|Processes]] folder holds Arcadia's instance of the KI process definitions. Currently it contains the [[Pillars/Knowledge Capital/Governance/Processes/Enactment Process|Enactment Process]] - Arcadia's ratification mechanism for changes to canonical knowledge.
 
 ---
 
 ## Tools
 
-The [[Pillars/Knowledge Capital/Governance/Tools/Tools|Tools]] folder holds the concrete infrastructure configuration for this island. Integrations lists the external services connected and their MCP identifiers; Physical Locations records the three filesystem paths — text store, binary store, and Cowork working folder — that make up Arcadia's physical footprint.
+The [[Pillars/Knowledge Capital/Governance/Tools/Tools|Tools]] folder holds the concrete infrastructure configuration for this island. Integrations lists the external services connected and their MCP identifiers; Physical Locations records the three filesystem paths - text store, binary store, and Cowork working folder - that make up Arcadia's physical footprint.
 
 ---
 

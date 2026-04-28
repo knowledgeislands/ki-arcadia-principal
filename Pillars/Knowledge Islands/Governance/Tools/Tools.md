@@ -4,7 +4,7 @@ tags:
   - topic/knowledge-islands
   - topic/knowledge-management
 status: current - April 2026
-purpose: Index of tools connected to the island — what each does, how it connects, and where its configuration lives
+purpose: Index of tools connected to the island - what each does, how it connects, and where its configuration lives
 author: Written with Claude
 ---
 
@@ -14,9 +14,9 @@ author: Written with Claude
 
 The tools that agents use to interact with the island and with connected services. Each tool has its own sub-folder documenting its connection configuration, operating conventions, and any lessons specific to working with it.
 
-`Tools/` is the configuration layer — it covers how each tool is set up and connected. How agents use those tools to act on the island is a separate concern: operating behaviour lives in [[Pillars/Knowledge Islands/Governance/Agents/Agents|Agents]]. For AI tools in particular, both layers exist: a tool note for the connection, and an agent note for the operating conventions. Neither duplicates the other.
+`Tools/` is the configuration layer - it covers how each tool is set up and connected. How agents use those tools to act on the island is a separate concern: operating behaviour lives in [[Pillars/Knowledge Islands/Governance/Agents/Agents|Agents]]. For AI tools in particular, both layers exist: a tool note for the connection, and an agent note for the operating conventions. Neither duplicates the other.
 
-Tools are connected via MCP (Model Context Protocol) servers where available. MCP gives Claude direct access to external services — email, calendar, task management, issue tracking — without requiring the human to relay information manually. The [[Integrations|Integrations]] note in Knowledge Capital holds the island-specific connection identifiers and configuration for each MCP server.
+Tools are connected via MCP (Model Context Protocol) servers where available. MCP gives Claude direct access to external services - email, calendar, task management, issue tracking - without requiring the human to relay information manually. The [[Integrations|Integrations]] note in Knowledge Capital holds the island-specific connection identifiers and configuration for each MCP server.
 
 ---
 
@@ -28,7 +28,7 @@ The primary editor and visualisation environment. [[Pillars/Knowledge Islands/Go
 
 ## Claude
 
-The primary AI tool, connected via Cowork. [[Pillars/Knowledge Islands/Governance/Tools/Claude/Claude|Claude]] documents the Cowork configuration layer: the MCP connection, token economics of the integration, and the activity prompt library at `Tools/Claude/Activities/`. How Claude operates as an agent — its five modes, behavioural constraints, and memory architecture — is in [[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude|Agents/Claude]].
+The primary AI tool, connected via Cowork. [[Pillars/Knowledge Islands/Governance/Tools/Claude/Claude|Claude]] documents the Cowork configuration layer: the MCP connection, token economics of the integration, and the activity prompt library at `Tools/Claude/Activities/`. How Claude operates as an agent - its five modes, behavioural constraints, and memory architecture - is in [[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude|Agents/Claude]].
 
 ---
 

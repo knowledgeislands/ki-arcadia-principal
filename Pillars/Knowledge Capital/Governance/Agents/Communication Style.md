@@ -5,7 +5,7 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Style guide for Claude — how Kit communicates, so Claude can match his voice rather than defaulting to AI conventions
+purpose: Style guide for Claude - how Kit communicates, so Claude can match his voice rather than defaulting to AI conventions
 author: Written with Claude
 memory_file: user_{user_prefix}_profile.md
 ---

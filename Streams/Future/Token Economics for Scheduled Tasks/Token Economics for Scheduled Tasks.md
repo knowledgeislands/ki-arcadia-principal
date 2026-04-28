@@ -3,7 +3,7 @@ tags:
   - card/proposal
   - topic/knowledge-islands
 status: draft - April 2026
-purpose: Design for token-efficient scheduled task prompts — conventions for lean context, caching, and prompt structure
+purpose: Design for token-efficient scheduled task prompts - conventions for lean context, caching, and prompt structure
 priority: low
 dependencies: []
 author: Written with Claude
@@ -33,7 +33,7 @@ author: Written with Claude
 
 ## Open Questions
 
-- What is the intended KB destination — a standalone convention note, or guidance embedded in task prompts themselves?
+- What is the intended KB destination - a standalone convention note, or guidance embedded in task prompts themselves?
 
 ---
 

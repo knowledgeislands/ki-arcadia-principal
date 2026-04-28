@@ -3,7 +3,7 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Arcadia's island charter — identity, adoption positions, enabled activities, connected tools, and active agent configuration
+purpose: Arcadia's island charter - identity, adoption positions, enabled activities, connected tools, and active agent configuration
 author: Written with Claude
 ---
 
@@ -11,7 +11,7 @@ author: Written with Claude
 
 ## Overview
 
-Arcadia's island charter — the authoritative declaration of what this island is and what it has adopted. It has two parts that change at different rates. The **Identity** section is static: these parameters define the island and do not change without a constitutional amendment. The operational sections below it change as activities are enabled or disabled, integrations connected, and agent configuration updated.
+Arcadia's island charter - the authoritative declaration of what this island is and what it has adopted. It has two parts that change at different rates. The **Identity** section is static: these parameters define the island and do not change without a constitutional amendment. The operational sections below it change as activities are enabled or disabled, integrations connected, and agent configuration updated.
 
 The [[Pillars/Knowledge Islands/Governance/Activities/Constitutional/Conformance|Conformance Check]] uses this note as its source of truth. Agents starting cold and humans checking operational state both read it first.
 
@@ -23,26 +23,28 @@ Fixed parameters that distinguish this island. Automations and skill prompts rea
 
 | Parameter              | Value                                                                                                               |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Territory name**     | Arcadia                                                                                                             |
+| **Island name**        | Arcadia Principal                                                                                                   |
 | **KB name**            | Arcadia Principal                                                                                                   |
 | **Repository folder**  | `arcadia-principal`                                                                                                 |
-| **Skill name**         | `arcadia`                                                                                                           |
+| **Skill name**         | `arcadia-principal`                                                                                                 |
 | **Skill triggers**     | "save to Arcadia", "add to Arcadia", "search Arcadia", "what does Arcadia say about", "update the Arcadia notes on" |
-| **Task ID prefix**     | `arcadia-`                                                                                                          |
-| **Auto-memory prefix** | `arcadia`                                                                                                           |
+| **Task ID prefix**     | `arcadia-principal-`                                                                                                |
+| **Auto-memory prefix** | `arcadia-principal`                                                                                                 |
 | **User prefix**        | `kit`                                                                                                               |
 
 ---
 
 ## Activity Groups
 
-Adoption positions for all non-constitutional activity groups. Every group must carry an explicit position — `adopted` or `vetoed`. A vetoed group must have a corresponding stub in the Knowledge Capital acknowledging the decision. Constitutional activities (Charter, Conformance) are not listed here — they are pre-adoptive.
+Adoption positions for all non-constitutional activity groups. Every group must carry an explicit position - `adopted` or `vetoed`. A vetoed group must have a corresponding stub in the Knowledge Capital acknowledging the decision. Constitutional activities (Charter, Conformance) are not listed here - they are pre-adoptive.
 
-| Group       | Position | Knowledge Capital                                                                   |
-| ----------- | -------- | ----------------------------------------------------------------------------------- |
-| Maintenance | adopted  | —                                                                                   |
-| Briefings   | adopted  | —                                                                                   |
-| Email       | vetoed   | [[Pillars/Knowledge Capital/Governance/Activities/Email/Email\|Email]]              |
-| Linear      | vetoed   | [[Pillars/Knowledge Capital/Governance/Activities/Linear/Linear\|Linear Workspace]] |
+| Group       | Position | Knowledge Capital                                                                        |
+| ----------- | -------- | ---------------------------------------------------------------------------------------- |
+| Maintenance | adopted  | [[Pillars/Knowledge Capital/Governance/Activities/Maintenance/Maintenance\|Maintenance]] |
+| Briefings   | adopted  | [[Pillars/Knowledge Capital/Governance/Activities/Briefings/Briefings\|Briefings]]       |
+| Email       | vetoed   | [[Pillars/Knowledge Capital/Governance/Activities/Email/Email\|Email]]                   |
+| Linear      | vetoed   | [[Pillars/Knowledge Capital/Governance/Activities/Linear/Linear\|Linear Workspace]]      |
 
 ---
 

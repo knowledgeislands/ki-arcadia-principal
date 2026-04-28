@@ -34,11 +34,11 @@ The general principle: `Pillars` holds internal knowledge owned by the KB; `Reso
 
 ### Index Notes (strictly enforced)
 
-Every folder must have an index note with the same name (e.g. `Productivity/Productivity.md`). It uses `card/note` format and does not duplicate content — it contextualises and points. Create it when creating the folder.
+Every folder must have an index note with the same name (e.g. `Productivity/Productivity.md`). It uses `card/note` format and does not duplicate content - it contextualises and points. Create it when creating the folder.
 
-**Structure:** A prose `## Overview` section explaining the folder's purpose and how its contents fit together, followed by one named H2 section per direct child. Each child section introduces the sub-note or sub-folder in two to four substantive sentences — what it covers, why it exists, what a reader will find. A `## Contents` list is a last resort for children that cannot be contextualised in prose.
+**Structure:** A prose `## Overview` section explaining the folder's purpose and how its contents fit together, followed by one named H2 section per direct child. Each child section introduces the sub-note or sub-folder in two to four substantive sentences - what it covers, why it exists, what a reader will find. A `## Contents` list is a last resort for children that cannot be contextualised in prose.
 
-**Anti-pattern:** A list of sub-note names with one-line descriptions is a nav menu — it tells the reader nothing they could not learn from the folder structure itself. Index notes must be richer than this.
+**Anti-pattern:** A list of sub-note names with one-line descriptions is a nav menu - it tells the reader nothing they could not learn from the folder structure itself. Index notes must be richer than this.
 
 **Calendar exception:** Year folders require a `YYYY.md` index. Month and week folders use their date-prefixed periodic notes as entry points - no separate index note is needed.
 
@@ -91,9 +91,9 @@ See [[Routing Rules]] for any additional routing rules specific to this island.
 
 ## KB Specifics (strictly enforced)
 
-All values specific to this island — identity parameters, task prefix, skill triggers, schedule configuration, integration details, and physical paths — live in `Pillars/Knowledge Capital/`. The [[Pillars/Knowledge Capital/Charter|Charter]] is the primary reference: it holds the identity parameters and the full adoption and activity roster. Deeper configuration lives in the corresponding `Pillars/Knowledge Capital/Governance/` subfolders (Activities for schedule config, Tools for integrations, Agents for agent config).
+All values specific to this island - identity parameters, task prefix, skill triggers, schedule configuration, integration details, and physical paths - live in `Pillars/Knowledge Capital/`. The [[Pillars/Knowledge Capital/Charter|Charter]] is the primary reference: it holds the identity parameters and the full adoption and activity roster. Deeper configuration lives in the corresponding `Pillars/Knowledge Capital/Governance/` subfolders (Activities for schedule config, Tools for integrations, Agents for agent config).
 
-**Automations and skills must read their configuration from these notes at runtime, not hardcode values.** This keeps prompts portable across islands and ensures a single source of truth. When an integration changes (e.g. a new TickTick list, a different calendar), update the relevant KC note — the automations will pick up the change on their next run.
+**Automations and skills must read their configuration from these notes at runtime, not hardcode values.** This keeps prompts portable across islands and ensures a single source of truth. When an integration changes (e.g. a new TickTick list, a different calendar), update the relevant KC note - the automations will pick up the change on their next run.
 
 ## Key Meta Notes
 

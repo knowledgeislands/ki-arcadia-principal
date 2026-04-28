@@ -14,7 +14,7 @@ author: Written with Claude
 
 ## Overview
 
-Maintenance activities keep the island structurally sound, content-healthy, and aligned with the world it reflects. Without them, drift accumulates silently: notes go stale, wikilinks break as notes move, auto-memory diverges from the KB, scheduled task prompts fall out of sync with their KB notes, and the inbox fills with uncaptured material. Maintenance is the mechanism that prevents that entropy — running on a regular cadence, lightweight enough to be sustainable, thorough enough to catch what matters.
+Maintenance activities keep the island structurally sound, content-healthy, and aligned with the world it reflects. Without them, drift accumulates silently: notes go stale, wikilinks break as notes move, auto-memory diverges from the KB, scheduled task prompts fall out of sync with their KB notes, and the inbox fills with uncaptured material. Maintenance is the mechanism that prevents that entropy - running on a regular cadence, lightweight enough to be sustainable, thorough enough to catch what matters.
 
 Activities divide by cadence and initiation. Three are scheduled automations that run without human prompting: the Scheduled Task Audit (daily, runs first), the Health Check (weekly), and the Knowledge Rebuild (midweek). Six are conversational: triggered by phrase, human-in-the-loop, run when the maintenance window arrives or when a specific need arises.
 
@@ -28,7 +28,7 @@ Activities divide by cadence and initiation. Three are scheduled automations tha
 
 ## Health Check
 
-[[Health Check]] runs each Monday at 08:00. It reviews the island for structural drift — index notes without their folders, notes without correct frontmatter, orphaned content, skills that no longer align with activities — and produces a report of issues requiring attention. It operates at a higher level than the Wikilink Review, covering the health of the KB as a system rather than individual broken references.
+[[Health Check]] runs each Monday at 08:00. It reviews the island for structural drift - index notes without their folders, notes without correct frontmatter, orphaned content, skills that no longer align with activities - and produces a report of issues requiring attention. It operates at a higher level than the Wikilink Review, covering the health of the KB as a system rather than individual broken references.
 
 ---
 
@@ -40,7 +40,7 @@ Activities divide by cadence and initiation. Three are scheduled automations tha
 
 ## Inbox Review
 
-[[Inbox Review]] is triggered conversationally with _"kb inbox review"_, typically weekly. It processes notes held in the `+/` inbox — voice note transcripts, quick captures, and other unsorted material — routing each to its correct permanent home in `Pillars`, `Resources`, or `Streams`, and creating any necessary index notes. Items that cannot be placed are flagged for human decision. The inbox should not be the permanent home for any note; this review keeps it clear.
+[[Inbox Review]] is triggered conversationally with _"kb inbox review"_, typically weekly. It processes notes held in the `+/` inbox - voice note transcripts, quick captures, and other unsorted material - routing each to its correct permanent home in `Pillars`, `Resources`, or `Streams`, and creating any necessary index notes. Items that cannot be placed are flagged for human decision. The inbox should not be the permanent home for any note; this review keeps it clear.
 
 ---
 
@@ -52,25 +52,36 @@ Activities divide by cadence and initiation. Three are scheduled automations tha
 
 ## Status Review
 
-[[Status Review]] is triggered with _"kb status review"_, typically weekly. It sweeps the vault for notes whose `status` frontmatter field no longer reflects their actual standing — notes marked `current` that contain stale content, or `draft` notes that have matured to current. Updated status fields keep Obsidian filters and dataview queries accurate. A note with an outdated status is effectively invisible to queries that rely on it.
+[[Status Review]] is triggered with _"kb status review"_, typically weekly. It sweeps the vault for notes whose `status` frontmatter field no longer reflects their actual standing - notes marked `current` that contain stale content, or `draft` notes that have matured to current. Updated status fields keep Obsidian filters and dataview queries accurate. A note with an outdated status is effectively invisible to queries that rely on it.
 
 ---
 
 ## Structural Audit
 
-[[Structural Audit]] is triggered with _"kb structural audit"_ and run adhoc — typically when a significant restructure has been completed, or when the overall KB health is uncertain. It performs a comprehensive review of an island section or the whole repository: folder structure against conventions, index notes against their folders, wikilink validity, routing compliance, and boundary enforcement between Pillars and Resources. More thorough than the Health Check; intended for periodic deep review rather than regular cadence.
+[[Structural Audit]] is triggered with _"kb structural audit"_ and run adhoc - typically when a significant restructure has been completed, or when the overall KB health is uncertain. It performs a comprehensive review of an island section or the whole repository: folder structure against conventions, index notes against their folders, wikilink validity, routing compliance, and boundary enforcement between Pillars and Resources. More thorough than the Health Check; intended for periodic deep review rather than regular cadence.
 
 ---
 
 ## Wikilink Review
 
-[[Wikilink Review]] is triggered with _"kb wikilink review"_ and run adhoc. It surfaces broken wikilinks — references to notes that have moved, been renamed, or deleted — and orphan notes that are not referenced from anywhere. Broken links are repaired or removed; orphans are either linked in or assessed for deletion. Should be run after any significant file movement or rename operation.
+[[Wikilink Review]] is triggered with _"kb wikilink review"_ and run adhoc. It surfaces broken wikilinks - references to notes that have moved, been renamed, or deleted - and orphan notes that are not referenced from anywhere. Broken links are repaired or removed; orphans are either linked in or assessed for deletion. Should be run after any significant file movement or rename operation.
 
 ---
 
 ## KB Convergence Check
 
 [[KB Convergence Check]] is triggered with _"kb convergence check"_ and run adhoc. It compares notes shared across multiple KBs in the same archipelago, surfaces drift between versions, and identifies improvements in one KB that should be cross-pollinated to others. Relevant for islands that maintain parallel notes (e.g. shared governance notes in both Arcadia and a satellite island). Not relevant for standalone islands.
+
+---
+
+## Adoption Requirements
+
+To adopt this activity group, an island must create the following Knowledge Capital notes. A vetoed island must create an index stub at `Knowledge Capital/Governance/Activities/Maintenance/Maintenance` acknowledging the veto.
+
+| Note | Path | Purpose |
+| --- | --- | --- |
+| Maintenance index | `Knowledge Capital/Governance/Activities/Maintenance/Maintenance` | Group index; confirms adoption and links to timing config |
+| Schedule | `Knowledge Capital/Governance/Activities/Schedule` | Day-type taxonomy read by all scheduled automations |
 
 ---
 

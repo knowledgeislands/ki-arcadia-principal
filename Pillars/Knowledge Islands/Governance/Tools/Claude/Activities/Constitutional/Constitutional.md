@@ -5,7 +5,7 @@ tags:
   - topic/automation
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Index for constitutional activity prompts — the Claude-specific, island-specific prompt that drives the Conformance Check
+purpose: Index for constitutional activity prompts - the Claude-specific, island-specific prompt that drives the Conformance Check
 author: Written with Claude
 ---
 
@@ -13,7 +13,7 @@ author: Written with Claude
 
 ## Overview
 
-Layer 5 prompts for the constitutional activity group — the executable, Claude-specific and island-specific prompt that drives the Conformance Check. This prompt is not optional: the Conformance Check is constitutional and cannot be vetoed or disabled.
+Layer 5 prompts for the constitutional activity group - the executable, Claude-specific and island-specific prompt that drives the Conformance Check. This prompt is not optional: the Conformance Check is constitutional and cannot be vetoed or disabled.
 
 The prompt reads the island's [[Pillars/Knowledge Capital/Charter|Charter]] and [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] index to verify that the island meets its constitutional baseline and that every non-constitutional activity group has an explicit adoption position with the required Knowledge Capital configuration in place.
 

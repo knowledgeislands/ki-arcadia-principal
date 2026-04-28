@@ -12,7 +12,7 @@ memory_file: reference_{kb_prefix}_key_notes.md
 
 ## Overview
 
-The day-type taxonomy used by all KB automations to determine whether and how to run on a given day. The active schedule — which automations are enabled and at what time — is declared in the [[Pillars/Knowledge Capital/Charter|Charter]]. This note defines the day-type model that those cron entries reference.
+The day-type taxonomy used by all KB automations to determine whether and how to run on a given day. The active schedule - which automations are enabled and at what time - is declared in the [[Pillars/Knowledge Capital/Charter|Charter]]. This note defines the day-type model that those cron entries reference.
 
 ---
 

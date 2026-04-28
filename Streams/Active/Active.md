@@ -2,8 +2,8 @@
 tags:
   - card/note
   - topic/streams
-status: current — April 2026
-purpose: Index of active streams — currently receiving focused attention
+status: current - April 2026
+purpose: Index of active streams - currently receiving focused attention
 author: Written with Claude
 ---
 
@@ -11,7 +11,7 @@ author: Written with Claude
 
 ## Overview
 
-Streams currently receiving active attention — projects being worked on now.
+Streams currently receiving active attention - projects being worked on now.
 
 ---
 

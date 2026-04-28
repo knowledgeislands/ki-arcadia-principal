@@ -5,7 +5,7 @@ tags:
   - topic/automation
   - source/claude
 status: draft - April 2026
-purpose: Index for email activity prompts — the Claude-specific, island-specific prompts that drive the email triage and routing activities
+purpose: Index for email activity prompts - the Claude-specific, island-specific prompts that drive the email triage and routing activities
 author: Written with Claude
 ---
 
@@ -13,15 +13,15 @@ author: Written with Claude
 
 ## Overview
 
-Layer 5 prompts for the email triage and routing activities — the executable, Claude-specific and island-specific prompts that drive Route Drift, Route Triage, Route Review, Re-route Triaged, Recap, and Email Test. These prompts are tightly coupled to the routing configuration in [[Email Routing Config|Email Routing Config]] and the route definitions in [[Pillars/Knowledge Capital/Governance/Activities/Email/Email|Knowledge Capital/Email]]; they should not be run without first reading those configuration notes.
+Layer 5 prompts for the email triage and routing activities - the executable, Claude-specific and island-specific prompts that drive Route Drift, Route Triage, Route Review, Re-route Triaged, Recap, and Email Test. These prompts are tightly coupled to the routing configuration in [[Email Routing Config|Email Routing Config]] and the route definitions in [[Pillars/Knowledge Capital/Governance/Activities/Email/Email|Knowledge Capital/Email]]; they should not be run without first reading those configuration notes.
 
-What each activity does and why is documented at Layer 1 in [[Pillars/Knowledge Islands/Governance/Activities/Email/Email|Activities/Email]]. This folder holds only the executable prompts — one note per activity once migrated from the scheduled task definitions.
+What each activity does and why is documented at Layer 1 in [[Pillars/Knowledge Islands/Governance/Activities/Email/Email|Activities/Email]]. This folder holds only the executable prompts - one note per activity once migrated from the scheduled task definitions.
 
 ---
 
 ## Prompts
 
-_Prompt notes to be filed here — one note per activity or major prompt variant._
+_Prompt notes to be filed here - one note per activity or major prompt variant._
 
 ---
 

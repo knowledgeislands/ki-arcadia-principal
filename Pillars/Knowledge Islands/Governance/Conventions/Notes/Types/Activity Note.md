@@ -13,7 +13,7 @@ author: Written with Claude
 
 ## Overview
 
-Defines the delta from [[Notes]] for Layer 1 activity notes — notes that document what an island activity does and why. These live under `Activities/{group}/` and are agent-agnostic: they describe the activity, not the prompt or implementation.
+Defines the delta from [[Notes]] for Layer 1 activity notes - notes that document what an island activity does and why. These live under `Activities/{group}/` and are agent-agnostic: they describe the activity, not the prompt or implementation.
 
 For the five-layer model and how activity notes relate to the other four layers, see [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]].
 
@@ -37,20 +37,20 @@ Optional (add when relevant):
 ### Required sections
 
 - **Overview** - one paragraph: what the activity does, why it exists, and how often it runs
-- **Trigger** — for scheduled activities: schedule and Cowork task name. For conversational activities: trigger phrase(s) and who initiates
-- **Outcome** — what a successful run produces: files written, state updated, output delivered
+- **Trigger** - for scheduled activities: schedule and Cowork task name. For conversational activities: trigger phrase(s) and who initiates
+- **Outcome** - what a successful run produces: files written, state updated, output delivered
 
 ### Optional sections
 
-- **Prompt** — the executable prompt, when the prompt lives here rather than in `Tools/Claude/Activities/{group}/`. Use for lightweight activities. For substantial prompts (Route Triage, Knowledge Rebuild), omit this section and link to the Layer 5 note instead
-- **Known Limitations** — documented constraints on what the automation can and cannot do with current tooling
+- **Prompt** - the executable prompt, when the prompt lives here rather than in `Tools/Claude/Activities/{group}/`. Use for lightweight activities. For substantial prompts (Route Triage, Knowledge Rebuild), omit this section and link to the Layer 5 note instead
+- **Known Limitations** - documented constraints on what the automation can and cannot do with current tooling
 
 ### Footer
 
 `## Related Topics` must include:
 
-1. The parent group index — `[[Activities/{group}/{group}|{group}]]`
-2. `[[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]]` — grandparent index
+1. The parent group index - `[[Activities/{group}/{group}|{group}]]`
+2. `[[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]]` - grandparent index
 3. The corresponding Layer 5 prompt note at `[[Tools/Claude/Activities/{group}/...]]`, once created
 4. Any Knowledge Capital notes the activity reads (Layer 2 config)
 
@@ -68,14 +68,14 @@ You are running...
 ```
 ````
 
-The KB note is the canonical source. The Cowork scheduled task is a deployment artefact — push to it only when the prompt is stable. See [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] § Prompt Editing Discipline for the sync protocol.
+The KB note is the canonical source. The Cowork scheduled task is a deployment artefact - push to it only when the prompt is stable. See [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] § Prompt Editing Discipline for the sync protocol.
 
 ---
 
 ## Exceptions
 
-- `## Contents` — never used; activity notes have no sub-notes
-- `## Further Reading` — rarely used; prefer Related Topics
+- `## Contents` - never used; activity notes have no sub-notes
+- `## Further Reading` - rarely used; prefer Related Topics
 
 ---
 

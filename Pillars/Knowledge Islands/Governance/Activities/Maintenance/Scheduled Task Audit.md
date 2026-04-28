@@ -23,7 +23,7 @@ Full prompt comparison across all tasks is not currently possible - see [[#Known
 ## Schedule
 
 - **Task ID:** `hnrkb-scheduled-task-audit` - prefix defined in [[Pillars/Knowledge Capital/Charter|Charter]]
-- **Runs:** Weekdays at 05:00 — after the Conformance Check (04:30), before all other maintenance and briefing tasks — working days and cron defined in [[Schedule]]
+- **Runs:** Weekdays at 05:00 - after the Conformance Check (04:30), before all other maintenance and briefing tasks - working days and cron defined in [[Schedule]]
 - **Cron:** See [[Schedule]] → Scheduled Task Audit cron
 
 ---

@@ -3,7 +3,7 @@ tags:
   - card/stream
   - topic/knowledge-islands
 status: draft - April 2026
-purpose: Bootstrap items for kit-principal — content that needs to exist there once arcadia-principal's governance is stable
+purpose: Bootstrap items for kit-principal - content that needs to exist there once arcadia-principal's governance is stable
 author: Written with Claude
 ---
 
@@ -27,9 +27,9 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 | Item | Description | Derives from |
 | --- | --- | --- |
-| Kit's council membership | Personal context: Kit's role on the Arcadia council, what that means day-to-day. Kit appears in arcadia-principal only as a council member — the personal depth lives here. | `Pillars/Knowledge Capital/Governance/Governance.md` |
+| Kit's council membership | Personal context: Kit's role on the Arcadia council, what that means day-to-day. Kit appears in arcadia-principal only as a council member - the personal depth lives here. | `Pillars/Knowledge Capital/Governance/Governance.md` |
 | Known Lands | Already created (`Pillars/Knowledge Islands/Known Lands.md`). May need enriching once arcadia-principal governance is stable. | `Pillars/Knowledge Capital/Known Lands.md` |
-| Knowledge Capital | `Pillars/Knowledge Capital/` needs creating in kit-principal following the same pattern — Identity, Physical Locations, Routing Rules, Glossary, Governance instance | Phase B.3 output |
+| Knowledge Capital | `Pillars/Knowledge Capital/` needs creating in kit-principal following the same pattern - Identity, Physical Locations, Routing Rules, Glossary, Governance instance | Phase B.3 output |
 | Cross-island links | Notes linking kit-principal's streams/pillars to relevant arcadia-principal concepts | Ongoing |
 
 ---

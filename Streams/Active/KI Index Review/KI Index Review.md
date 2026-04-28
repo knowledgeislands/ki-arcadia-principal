@@ -3,7 +3,7 @@ tags:
   - card/stream
   - topic/knowledge-islands
 status: draft - April 2026
-purpose: Leaf-to-root review and enrichment of all index notes under Knowledge Islands — ensuring each is a substantive contextualising note, not a navigation menu
+purpose: Leaf-to-root review and enrichment of all index notes under Knowledge Islands - ensuring each is a substantive contextualising note, not a navigation menu
 priority: medium
 dependencies: []
 author: Written with Claude
@@ -13,7 +13,7 @@ author: Written with Claude
 
 ## Overview
 
-A structured review of every index note under `Pillars/Knowledge Islands/`, working from the deepest leaf nodes up to `Knowledge Islands` itself. Each index note is reviewed against the index note standard — a prose Overview plus substantive H2 sections per direct child, each two to four sentences long — and enriched as needed before moving to the next level. The review is interactive: each note is announced before work begins, and decisions can be made through the Cowork UI before the changes are committed.
+A structured review of every index note under `Pillars/Knowledge Islands/`, working from the deepest leaf nodes up to `Knowledge Islands` itself. Each index note is reviewed against the index note standard - a prose Overview plus substantive H2 sections per direct child, each two to four sentences long - and enriched as needed before moving to the next level. The review is interactive: each note is announced before work begins, and decisions can be made through the Cowork UI before the changes are committed.
 
 The goal is that by the end of the review, every index note in the Knowledge Islands pillar accurately contextualises its contents rather than simply listing them.
 
@@ -21,7 +21,7 @@ The goal is that by the end of the review, every index note in the Knowledge Isl
 
 ## Governance
 
-This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]] — the standard model for how streams enact change in the knowledge base.
+This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -35,7 +35,7 @@ Work leaf-to-root within each subtree. For each index note:
 4. Apply agreed changes
 5. Move to the parent
 
-Session boundaries are natural pause points — the review can be picked up at the next unreviewed note in the sequence.
+Session boundaries are natural pause points - the review can be picked up at the next unreviewed note in the sequence.
 
 ---
 

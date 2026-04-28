@@ -4,7 +4,7 @@ tags:
   - topic/knowledge-islands
   - topic/knowledge-management
 status: current - April 2026
-purpose: Standard YAML frontmatter properties for all notes — required fields, optional fields, and their permitted values
+purpose: Standard YAML frontmatter properties for all notes - required fields, optional fields, and their permitted values
 author: Written with Claude
 memory_file: project_{kb_prefix}_note_format.md
 ---
@@ -13,9 +13,9 @@ memory_file: project_{kb_prefix}_note_format.md
 
 ## Overview
 
-Every note carries a YAML frontmatter block. The properties below apply to all `card/note` type notes. Collection cards (`card/person`, `card/org`, etc.) use relevant custom properties instead — see [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Tags|Tags]] for the full card taxonomy.
+Every note carries a YAML frontmatter block. The properties below apply to all `card/note` type notes. Collection cards (`card/person`, `card/org`, etc.) use relevant custom properties instead - see [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Tags|Tags]] for the full card taxonomy.
 
-All fields except `creator` are required. Frontmatter must be YAML properties — not inline bullet points.
+All fields except `creator` are required. Frontmatter must be YAML properties - not inline bullet points.
 
 ---
 
@@ -34,7 +34,7 @@ All fields except `creator` are required. Frontmatter must be YAML properties �
 
 ## Status Values
 
-`outdated` signals that a note has not been reviewed and should be verified before being relied on — typically applied to bulk-added notes or notes that have not kept pace with changes elsewhere. It is distinct from `archive`, which is a deliberate retirement of content that is no longer relevant.
+`outdated` signals that a note has not been reviewed and should be verified before being relied on - typically applied to bulk-added notes or notes that have not kept pace with changes elsewhere. It is distinct from `archive`, which is a deliberate retirement of content that is no longer relevant.
 
 | Value      | Meaning                                                                          |
 | ---------- | -------------------------------------------------------------------------------- |

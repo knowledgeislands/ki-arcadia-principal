@@ -4,7 +4,7 @@ tags:
   - topic/knowledge-islands
   - topic/knowledge-management
 status: current - April 2026
-purpose: Index of note types — specialised structures that extend the base note format for specific purposes
+purpose: Index of note types - specialised structures that extend the base note format for specific purposes
 author: Written with Claude
 ---
 
@@ -12,13 +12,13 @@ author: Written with Claude
 
 ## Overview
 
-The base note format applies to all notes. Each type below extends or overrides it for a specific purpose. Types are additive — they define what changes, not what replaces.
+The base note format applies to all notes. Each type below extends or overrides it for a specific purpose. Types are additive - they define what changes, not what replaces.
 
 ---
 
 ## Collection Card
 
-A lighter format for reference entries — people, organisations, concepts — and for index notes. Uses `card/*` tags and typically has fewer body sections than a full note. See [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Types/Collection Card|Collection Card]].
+A lighter format for reference entries - people, organisations, concepts - and for index notes. Uses `card/*` tags and typically has fewer body sections than a full note. See [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Types/Collection Card|Collection Card]].
 
 ---
 
@@ -30,7 +30,7 @@ The structure for recording meetings: a themed body with optional Key Decisions,
 
 ## Session Digest
 
-The structure for AI-assisted work session summaries, including the five standard sections and the note's temporary lifecycle — session digests are deleted once their content has been extracted to the appropriate Pillars or Streams notes. See [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Types/Session Digest|Session Digest]].
+The structure for AI-assisted work session summaries, including the five standard sections and the note's temporary lifecycle - session digests are deleted once their content has been extracted to the appropriate Pillars or Streams notes. See [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Types/Session Digest|Session Digest]].
 
 ---
 

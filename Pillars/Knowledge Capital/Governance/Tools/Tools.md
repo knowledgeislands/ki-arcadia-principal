@@ -3,7 +3,7 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Index for Arcadia's tool configuration — integrations and physical store locations
+purpose: Index for Arcadia's tool configuration - integrations and physical store locations
 author: Written with Claude
 ---
 
@@ -11,13 +11,13 @@ author: Written with Claude
 
 ## Overview
 
-This folder holds the island-specific configuration for the tools and infrastructure that Arcadia runs on. Generic tool patterns — the categories of tools, how MCP connections work, the roles of Obsidian and Cowork — are defined in [[Pillars/Knowledge Islands/Governance/Tools/Tools|Tools]] under Knowledge Islands. What lives here is the concrete detail for this island: which external services are actually connected and under which MCP identifiers, and where on the filesystem the island's stores physically live.
+This folder holds the island-specific configuration for the tools and infrastructure that Arcadia runs on. Generic tool patterns - the categories of tools, how MCP connections work, the roles of Obsidian and Cowork - are defined in [[Pillars/Knowledge Islands/Governance/Tools/Tools|Tools]] under Knowledge Islands. What lives here is the concrete detail for this island: which external services are actually connected and under which MCP identifiers, and where on the filesystem the island's stores physically live.
 
 ---
 
 ## Integrations
 
-[[Integrations|Integrations]] lists the external tools connected to Arcadia, with their MCP tool prefixes. It is the island-specific lookup for anything that varies by KB — which email MCP to use, which task list to write to, which calendar to read. Arcadia's current integration surface is intentionally minimal (the `+/` inbox folder via the filesystem; no external calendar, task, or issue tracker is configured), but the note is the correct place to record connections as they are introduced. Activity prompts reference this note to resolve their platform-specific configuration rather than hardcoding service identifiers.
+[[Integrations|Integrations]] lists the external tools connected to Arcadia, with their MCP tool prefixes. It is the island-specific lookup for anything that varies by KB - which email MCP to use, which task list to write to, which calendar to read. Arcadia's current integration surface is intentionally minimal (the `+/` inbox folder via the filesystem; no external calendar, task, or issue tracker is configured), but the note is the correct place to record connections as they are introduced. Activity prompts reference this note to resolve their platform-specific configuration rather than hardcoding service identifiers.
 
 ---
 

@@ -4,7 +4,7 @@ tags:
   - topic/knowledge-islands
   - topic/knowledge-management
 status: current - April 2026
-purpose: The physical structure of a note — sections, headings, tables, markdown conventions, and templates
+purpose: The physical structure of a note - sections, headings, tables, markdown conventions, and templates
 author: Written with Claude
 memory_file: project_{kb_prefix}_note_format.md
 ---
@@ -134,11 +134,11 @@ Every file must end with a single trailing newline - the last content line is fo
 
 ## Wikilinks and Images
 
-Wikilinks (`[[Note Name]]`) are preferred over repeating content — link rather than duplicate. When a concept, decision, or piece of reference material has its own note, link to it rather than restating it.
+Wikilinks (`[[Note Name]]`) are preferred over repeating content - link rather than duplicate. When a concept, decision, or piece of reference material has its own note, link to it rather than restating it.
 
-Wikilinks in the body of a note may use short-form (`[[Note Name]]`) or path-form (`[[Full/Path/Note]]`) depending on context. Footer sections require the full absolute path with an alias — see the footer link format rules above.
+Wikilinks in the body of a note may use short-form (`[[Note Name]]`) or path-form (`[[Full/Path/Note]]`) depending on context. Footer sections require the full absolute path with an alias - see the footer link format rules above.
 
-Images and diagrams used by a single note must be saved in the same folder as that note. Images shared across multiple notes may sit in a folder common to all the notes that use them. Do not place note-specific assets in `+` — that folder is the inbox for unsorted captures, not an asset store.
+Images and diagrams used by a single note must be saved in the same folder as that note. Images shared across multiple notes may sit in a folder common to all the notes that use them. Do not place note-specific assets in `+` - that folder is the inbox for unsorted captures, not an asset store.
 
 Always include a width constraint of `800` when embedding an image, using Obsidian's pipe syntax:
 
@@ -154,7 +154,7 @@ Bare URLs must be wrapped in angle brackets so they render as clickable links in
 <https://example.com>
 ```
 
-Where a note references several external sources, use Markdown reference-style links — define the URL at the foot of the file and use a short label inline. This keeps the body text readable and groups all external references in one place.
+Where a note references several external sources, use Markdown reference-style links - define the URL at the foot of the file and use a short label inline. This keeps the body text readable and groups all external references in one place.
 
 ---
 

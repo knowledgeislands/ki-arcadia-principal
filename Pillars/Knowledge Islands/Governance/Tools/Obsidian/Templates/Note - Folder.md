@@ -3,7 +3,7 @@ tags:
   - card/note
   - [relevant tags]
 status: current - Month YYYY
-purpose: Index of [folder name] — [one-line description of the folder's purpose]
+purpose: Index of [folder name] - [one-line description of the folder's purpose]
 author: [Manual / Written with Claude / Mixed]
 ---
 
@@ -17,7 +17,7 @@ author: [Manual / Written with Claude / Mixed]
 
 ## [Child Note or Subfolder Name]
 
-[Two to four sentences introducing this child. What does it cover? Why does it exist? What will a reader find there? Do not duplicate its content — contextualise and point.]
+[Two to four sentences introducing this child. What does it cover? Why does it exist? What will a reader find there? Do not duplicate its content - contextualise and point.]
 
 ---
 

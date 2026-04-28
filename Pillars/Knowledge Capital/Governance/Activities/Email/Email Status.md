@@ -3,7 +3,7 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: N/A stub — Email activity group vetoed for Arcadia
+purpose: N/A stub - Email activity group vetoed for Arcadia
 author: Written with Claude
 ---
 

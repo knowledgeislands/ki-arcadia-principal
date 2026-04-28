@@ -4,7 +4,7 @@ tags:
   - topic/knowledge-islands
   - topic/knowledge-management
 status: current - April 2026
-purpose: Document the human operating mode — manual curation, navigation, and review of the island
+purpose: Document the human operating mode - manual curation, navigation, and review of the island
 author: Written with Claude
 ---
 
@@ -12,7 +12,7 @@ author: Written with Claude
 
 ## Overview
 
-The human operating mode covers everything a person does directly in the island — creating and editing notes, navigating the graph, reviewing AI outputs, filing captures from the inbox, and curating structure over time. The primary tool for this mode is [[Pillars/Knowledge Islands/Governance/Tools/Obsidian/Obsidian|Obsidian]].
+The human operating mode covers everything a person does directly in the island - creating and editing notes, navigating the graph, reviewing AI outputs, filing captures from the inbox, and curating structure over time. The primary tool for this mode is [[Pillars/Knowledge Islands/Governance/Tools/Obsidian/Obsidian|Obsidian]].
 
 ---
 

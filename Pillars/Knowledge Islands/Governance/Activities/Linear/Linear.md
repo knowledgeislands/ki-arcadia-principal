@@ -22,7 +22,18 @@ The group contains a single scheduled automation. The MCP connection it relies o
 
 ## Linear Sync
 
-[[Linear Sync]] runs each working day at 09:00. It reads live Linear initiatives and projects via MCP, compares them against the current KB stream notes and a mapping table, and surfaces misalignment: stream notes that no longer correspond to a live Linear item, Linear items that have no corresponding stream note, and cases where the KB description has drifted from the Linear state. It flags candidates for new stream notes or archival but does not make changes autonomously — decisions are surfaced for human review.
+[[Linear Sync]] runs each working day at 09:00. It reads live Linear initiatives and projects via MCP, compares them against the current KB stream notes and a mapping table, and surfaces misalignment: stream notes that no longer correspond to a live Linear item, Linear items that have no corresponding stream note, and cases where the KB description has drifted from the Linear state. It flags candidates for new stream notes or archival but does not make changes autonomously - decisions are surfaced for human review.
+
+---
+
+## Adoption Requirements
+
+To adopt this activity group, an island must create the following Knowledge Capital notes. A vetoed island must create an index stub at `Knowledge Capital/Governance/Activities/Linear/Linear` acknowledging the veto.
+
+| Note | Path | Purpose |
+| --- | --- | --- |
+| Linear index | `Knowledge Capital/Governance/Activities/Linear/Linear` | Group index; for adoption: contains Initiative→KB Mapping table, naming conventions, and project labels; for veto: stub acknowledging the veto |
+| Schedule | `Knowledge Capital/Governance/Activities/Schedule` | Day-type taxonomy read by the Linear Sync schedule |
 
 ---
 

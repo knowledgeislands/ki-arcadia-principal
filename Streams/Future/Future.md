@@ -2,8 +2,8 @@
 tags:
   - card/note
   - topic/streams
-status: current — April 2026
-purpose: Index of future streams — ideas and intentions not yet started
+status: current - April 2026
+purpose: Index of future streams - ideas and intentions not yet started
 author: Written with Claude
 ---
 
@@ -11,7 +11,7 @@ author: Written with Claude
 
 ## Overview
 
-Ideas and projects not yet started — queued for when the time or circumstances are right.
+Ideas and projects not yet started - queued for when the time or circumstances are right.
 
 ---
 

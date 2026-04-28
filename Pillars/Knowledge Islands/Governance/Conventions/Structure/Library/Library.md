@@ -13,13 +13,13 @@ memory_file: project_{kb_prefix}_structure.md
 
 ## Overview
 
-The Library is the canonical record of the island — version-controlled, governed, and the single source of truth for all ratified knowledge. This note covers its internal structure: the top-level folders, how notes are routed to the right place, the boundary between Pillars and Resources, and the index note conventions that hold the hierarchy together.
+The Library is the canonical record of the island - version-controlled, governed, and the single source of truth for all ratified knowledge. This note covers its internal structure: the top-level folders, how notes are routed to the right place, the boundary between Pillars and Resources, and the index note conventions that hold the hierarchy together.
 
 ---
 
 ## Physical Locations
 
-The Knowledge Islands model — island types, archipelago structure, and governance infrastructure — is defined canonically in [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]]. This section covers only the physical stores: where notes and assets live on disk.
+The Knowledge Islands model - island types, archipelago structure, and governance infrastructure - is defined canonically in [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]]. This section covers only the physical stores: where notes and assets live on disk.
 
 **Stores (all islands, including islets):**
 
@@ -30,7 +30,7 @@ The Knowledge Islands model — island types, archipelago structure, and governa
 
 The text and binary stores must share an identical folder structure so that files are colocated by topic regardless of which store they live in.
 
-When creating or referencing a binary asset, save it to the binary store under the same relative subfolder as the corresponding note. Wikilinks in notes use vault-relative paths — the mirrored structure ensures colocation without any special handling.
+When creating or referencing a binary asset, save it to the binary store under the same relative subfolder as the corresponding note. Wikilinks in notes use vault-relative paths - the mirrored structure ensures colocation without any special handling.
 
 Specific paths for this island are defined in [[Physical Locations]].
 
@@ -48,7 +48,7 @@ Specific paths for this island are defined in [[Physical Locations]].
 
 `Pillars` and `Resources` share subfolder names by design. For example, `Pillars/Finance` covers internal / private personal finances; `Resources/Finance` covers general finance knowledge such as banking regulations.
 
-Streams notes track current status, progress, and next steps — they are not knowledge stores. When a stream produces durable knowledge, it is extracted to the relevant Pillars note; the stream note links to it. Path structure, focus levels, and category conventions are defined in [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure|Structure]].
+Streams notes track current status, progress, and next steps - they are not knowledge stores. When a stream produces durable knowledge, it is extracted to the relevant Pillars note; the stream note links to it. Path structure, focus levels, and category conventions are defined in [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure|Structure]].
 
 `Calendar` contains several note types. Daily notes, meeting notes, session digests, and the monthly index are filed in the month folder and referenced from the daily note by wikilink; the daily note does not duplicate their content. Weekly notes are filed separately in a per-year `YYYY By Week/` folder alongside the month folders.
 
@@ -76,7 +76,7 @@ When creating or filing a note, route to the most specific matching folder:
 8. **Concluded project** → `Streams/Settled/[Title].md`
 9. **Unsure** → `+/[Title].md` (inbox, to be filed)
 
-`+/_Voice Notes/` is managed entirely by the voicenotes-sync plugin — do not write Claude-generated content there.
+`+/_Voice Notes/` is managed entirely by the voicenotes-sync plugin - do not write Claude-generated content there.
 
 When updating an existing note: read it first, then merge new content in, preserving structure and enriching rather than replacing.
 
@@ -84,8 +84,8 @@ When updating an existing note: read it first, then merge new content in, preser
 
 ## Pillars/Resources Boundary (strictly enforced)
 
-- `Pillars` notes contain internal / private knowledge — things that should not need to exist outside of the island
-- `Resources` notes contain external knowledge — things that exist independently of this island but add value by being synthesised in it
+- `Pillars` notes contain internal / private knowledge - things that should not need to exist outside of the island
+- `Resources` notes contain external knowledge - things that exist independently of this island but add value by being synthesised in it
 - Links between Pillars and Resources are **bidirectional** where relevant
 - If a Resources note has accumulated internal knowledge, that knowledge belongs in a new or existing Pillars note that references the Resources one
 
@@ -110,15 +110,15 @@ Every folder must have an **index note** with the same name as the folder (e.g. 
 
 - Acts as the entry point and overview for that folder
 - Uses the collection card format (`card/note`) rather than the full Note template
-- Does **not** duplicate content — it contextualises and points
+- Does **not** duplicate content - it contextualises and points
 
-**What an index note is not:** a nav menu. A list of sub-note names with one-line descriptions tells the reader nothing they could not learn from the folder structure itself. An index note earns its place by explaining what each sub-area contains, why it exists, and how it relates to the others — substantively enough that a reader can decide whether to follow a link without having to open it.
+**What an index note is not:** a nav menu. A list of sub-note names with one-line descriptions tells the reader nothing they could not learn from the folder structure itself. An index note earns its place by explaining what each sub-area contains, why it exists, and how it relates to the others - substantively enough that a reader can decide whether to follow a link without having to open it.
 
-**What an index note is:** a miniature overview of the subtree. The body should have a prose **Overview** section that explains the folder's purpose and how its contents fit together, followed by one named H2 section per direct child — not a `## Contents` list. Each child section introduces that sub-note or sub-folder in two to four sentences: what it covers, what problem it solves or what role it plays, and what a reader will find there. `## Contents` lists are a fallback for children that genuinely cannot be contextualised in prose, and only at depth 1.
+**What an index note is:** a miniature overview of the subtree. The body should have a prose **Overview** section that explains the folder's purpose and how its contents fit together, followed by one named H2 section per direct child - not a `## Contents` list. Each child section introduces that sub-note or sub-folder in two to four sentences: what it covers, what problem it solves or what role it plays, and what a reader will find there. `## Contents` lists are a fallback for children that genuinely cannot be contextualised in prose, and only at depth 1.
 
-When creating a new folder, create its index note at the same time. When auditing an existing folder, verify its index note exists and is substantive — not a nav menu.
+When creating a new folder, create its index note at the same time. When auditing an existing folder, verify its index note exists and is substantive - not a nav menu.
 
-**Calendar folder exception:** Time-based Calendar folders (year, month, week) use date-prefixed periodic notes as their effective entry points (e.g. `2026-03 March.md` within `2026-03 March/`). These do not require a separate same-named index file. Year folders are the exception — they require a `YYYY.md` index (e.g. `2026.md`) listing their month and week sub-folders, since no single periodic note covers the whole year.
+**Calendar folder exception:** Time-based Calendar folders (year, month, week) use date-prefixed periodic notes as their effective entry points (e.g. `2026-03 March.md` within `2026-03 March/`). These do not require a separate same-named index file. Year folders are the exception - they require a `YYYY.md` index (e.g. `2026.md`) listing their month and week sub-folders, since no single periodic note covers the whole year.
 
 **`+` inbox exception:** The `+` folder is the inbox for unsorted captures awaiting filing. It is not a structured notes area and is exempt from the index note rule. Files in `+` should be routed to their correct location as soon as their destination is known.
 

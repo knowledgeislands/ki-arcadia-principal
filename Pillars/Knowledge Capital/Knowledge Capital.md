@@ -3,7 +3,7 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Index note for Arcadia's Knowledge Capital — the island's knowledge of itself; identity, governance instance, and configuration
+purpose: Index note for Arcadia's Knowledge Capital - the island's knowledge of itself; identity, governance instance, and configuration
 author: Written with Claude
 ---
 
@@ -11,15 +11,15 @@ author: Written with Claude
 
 ## Overview
 
-Arcadia's Knowledge Capital is the island's knowledge of itself — its identity, governance, physical locations, vocabulary, and operational configuration. Every island in the Knowledge Islands ecosystem has a [[Knowledge Capital]]; the name is universal, the content is island-specific.
+Arcadia's Knowledge Capital is the island's knowledge of itself - its identity, governance, physical locations, vocabulary, and operational configuration. Every island in the Knowledge Islands ecosystem has a [[Knowledge Capital]]; the name is universal, the content is island-specific.
 
-The folder has three direct children: the Charter (the island's constitutional document), Known Lands (its map of the archipelago), and Governance (the operational mirror of [[Pillars/Knowledge Islands/Governance/Governance|KI/Governance]]). The Governance subfolder carries Arcadia's realisation of all five KI governance areas — Activities, Agents, Conventions, Processes, and Tools — each holding island-specific configuration that makes the generic patterns concrete.
+The folder has three direct children: the Charter (the island's constitutional document), Known Lands (its map of the archipelago), and Governance (the operational mirror of [[Pillars/Knowledge Islands/Governance/Governance|KI/Governance]]). The Governance subfolder carries Arcadia's realisation of all five KI governance areas - Activities, Agents, Conventions, Processes, and Tools - each holding island-specific configuration that makes the generic patterns concrete.
 
 ---
 
 ## Charter
 
-[[Pillars/Knowledge Capital/Charter|Charter]] is Arcadia's island charter — the authoritative declaration of what this island is and what it has adopted. Its Identity section records the fixed parameters that distinguish the island; below that it carries adoption positions for every non-constitutional activity group, the roster of enabled activities, active tool integrations, and the agent configuration. The [[Pillars/Knowledge Islands/Governance/Activities/Constitutional/Conformance|Conformance Check]] uses the Charter as its source of truth. Agents starting cold and humans checking operational state both read it first.
+[[Pillars/Knowledge Capital/Charter|Charter]] is Arcadia's island charter - the authoritative declaration of what this island is and what it has adopted. Its Identity section records the fixed parameters that distinguish the island; below that it carries adoption positions for every non-constitutional activity group, the roster of enabled activities, active tool integrations, and the agent configuration. The [[Pillars/Knowledge Islands/Governance/Activities/Constitutional/Conformance|Conformance Check]] uses the Charter as its source of truth. Agents starting cold and humans checking operational state both read it first.
 
 ---
 

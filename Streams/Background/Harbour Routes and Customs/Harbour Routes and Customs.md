@@ -3,7 +3,7 @@ tags:
   - card/proposal
   - topic/knowledge-islands
 status: draft - April 2026
-purpose: Specify the three unresolved elements of the KI geographic model — Harbour, Routes, and Customs — in both Concept.md and Structure.md
+purpose: Specify the three unresolved elements of the KI geographic model - Harbour, Routes, and Customs - in both Concept.md and Structure.md
 priority: low
 dependencies: []
 author: Written with Claude
@@ -21,7 +21,7 @@ All three are part of the same geographic metaphor layer: they describe how know
 
 ## Governance
 
-This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]] — the standard model for how streams enact change in the knowledge base.
+This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -29,8 +29,8 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 | Type     | Detail                                                                                                                                         |
 | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| Document | [[Pillars/Knowledge Islands/Concept/Concept\|Concept]] — `[!todo] Customs and Routes` at the end of the Geography section                      |
-| Document | [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure\|Structure]] — `[!todo] Harbour` and `[!todo] Routes and Customs` stubs |
+| Document | [[Pillars/Knowledge Islands/Concept/Concept\|Concept]] - `[!todo] Customs and Routes` at the end of the Geography section                      |
+| Document | [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure\|Structure]] - `[!todo] Harbour` and `[!todo] Routes and Customs` stubs |
 
 ---
 
@@ -38,26 +38,26 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 | Type     | Detail                                                                                                             |
 | -------- | ------------------------------------------------------------------------------------------------------------------ |
-| Artefact | Updated `Concept.md` — `[!todo] Customs and Routes` resolved into prose covering both concepts at conceptual level |
-| Artefact | Updated `Structure.md` — `[!todo] Harbour` and `[!todo] Routes and Customs` resolved into structural specification |
+| Artefact | Updated `Concept.md` - `[!todo] Customs and Routes` resolved into prose covering both concepts at conceptual level |
+| Artefact | Updated `Structure.md` - `[!todo] Harbour` and `[!todo] Routes and Customs` resolved into structural specification |
 
 ---
 
 ## Intended Destinations
 
-- [ ] `Pillars/Knowledge Islands/Concept/Concept.md` — replace `[!todo] Customs and Routes` with conceptual prose
-- [ ] `Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure.md` — replace `[!todo] Harbour` with structural conventions for the `+/` inbox pattern
-- [ ] `Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure.md` — replace `[!todo] Routes and Customs` with structural specification for inter-island links and boundary controls
+- [ ] `Pillars/Knowledge Islands/Concept/Concept.md` - replace `[!todo] Customs and Routes` with conceptual prose
+- [ ] `Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure.md` - replace `[!todo] Harbour` with structural conventions for the `+/` inbox pattern
+- [ ] `Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure.md` - replace `[!todo] Routes and Customs` with structural specification for inter-island links and boundary controls
 
 ---
 
 ## Open Questions
 
-1. **Customs: is it a governance concept or a structural one?** Concept.md treats it as jurisdictional (controls what passes between territories). Structure.md would need to translate that into something concrete — what does Customs look like as a structural convention?
+1. **Customs: is it a governance concept or a structural one?** Concept.md treats it as jurisdictional (controls what passes between territories). Structure.md would need to translate that into something concrete - what does Customs look like as a structural convention?
 
 2. **Routes: inter-island or intra-island?** Concept.md frames Routes as pathways between islands. Structure.md frames them as pathways between zones and between islands. Are intra-island routes (e.g. the relationship between Streams and Pillars) meaningfully different from inter-island routes?
 
-3. **Harbour: is the `+/` folder the full specification?** The Harbour is already implemented as `+/` — material lands there and is routed inward. Is the structural spec just a formalisation of the existing convention, or is there more to say (e.g. sub-zones within `+/`, retention rules, voice notes handling)?
+3. **Harbour: is the `+/` folder the full specification?** The Harbour is already implemented as `+/` - material lands there and is routed inward. Is the structural spec just a formalisation of the existing convention, or is there more to say (e.g. sub-zones within `+/`, retention rules, voice notes handling)?
 
 4. **Relationship between the three?** Harbour is where material arrives; Routes are the pathways it travels; Customs controls what crosses jurisdictional lines. They may form a natural sequence at the boundary level.
 

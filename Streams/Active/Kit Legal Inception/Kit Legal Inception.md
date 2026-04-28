@@ -3,7 +3,7 @@ tags:
   - card/stream
   - topic/knowledge-islands
 status: draft - April 2026
-purpose: Bootstrap plan for kit-legal — satellite island of the Kit archipelago
+purpose: Bootstrap plan for kit-legal - satellite island of the Kit archipelago
 author: Written with Claude
 ---
 
@@ -25,7 +25,7 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 ## Status
 
-Pending — not yet started. Depends on arcadia-principal governance being stable.
+Pending - not yet started. Depends on arcadia-principal governance being stable.
 
 ---
 
@@ -35,7 +35,7 @@ Pending — not yet started. Depends on arcadia-principal governance being stabl
 2. Review existing content and structure
 3. Create `Pillars/Knowledge Capital/` following the standard pattern (Identity, Physical Locations, Routing Rules, Glossary, Governance instance)
 4. Create or update `CLAUDE.md` to reflect the KI model
-5. Create `Pillars/Knowledge Islands/Known Lands.md` — the satellite's personal chart of known islands
+5. Create `Pillars/Knowledge Islands/Known Lands.md` - the satellite's personal chart of known islands
 6. Link back to arcadia-principal concepts where relevant
 
 ---
