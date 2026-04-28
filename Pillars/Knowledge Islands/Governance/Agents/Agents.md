@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/knowledge-management
 status: current - April 2026
-purpose: Index of the operating layer - who and what acts on the island, at what level of capability, and under what patterns
 author: Written with Claude
 ---
 

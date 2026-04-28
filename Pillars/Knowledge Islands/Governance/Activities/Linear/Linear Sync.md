@@ -6,7 +6,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Daily automation that reconciles Linear initiatives and projects against KI stream notes and mapping table
 author: Written with Claude
 memory_file: feedback_{ki_prefix}_operations.md
 ---

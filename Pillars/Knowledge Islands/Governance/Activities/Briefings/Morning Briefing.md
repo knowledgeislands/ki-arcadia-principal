@@ -6,7 +6,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Morning Briefing scheduled automation
 author: Written with Claude
 ---
 

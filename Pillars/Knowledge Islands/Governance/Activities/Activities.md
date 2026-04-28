@@ -5,7 +5,6 @@ tags:
   - topic/automation
   - source/claude
 status: current - April 2026
-purpose: Index and overview of island activities - scheduled automations and conversational triggers
 author: Written with Claude
 memory_file:
   - reference_{ki_prefix}_key_notes.md

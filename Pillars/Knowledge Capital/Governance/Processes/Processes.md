@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Index for Arcadia's governance processes - the island's instance of KI process definitions
 author: Written with Claude
 ---
 

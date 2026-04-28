@@ -3,7 +3,6 @@ tags:
   - card/concept
   - [topic/relevant]
 status: current - Month YYYY
-purpose: Concept reference card - [name]
 author: [Manual / Written with Claude / Mixed]
 url:
 ---

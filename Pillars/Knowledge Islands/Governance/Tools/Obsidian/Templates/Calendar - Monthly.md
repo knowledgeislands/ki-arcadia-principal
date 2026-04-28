@@ -3,7 +3,6 @@ tags:
   - date/{{date:YYYY}}/{{date:MM}}
   - calendar/monthly
 status: current - {{date:MMMM YYYY}}
-purpose: Monthly note for {{date:MMMM YYYY}}
 author: Manual
 ---
 

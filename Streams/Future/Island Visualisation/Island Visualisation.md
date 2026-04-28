@@ -3,7 +3,6 @@ tags:
   - card/stream
   - topic/knowledge-islands
 status: draft - April 2026
-purpose: A visual map of an island rendered as isometric tiles and bricks - bringing the island metaphor to life as an explorable spatial view
 priority: low
 dependencies: []
 author: Written with Claude

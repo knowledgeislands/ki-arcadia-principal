@@ -3,7 +3,6 @@ tags:
   - card/stream
   - topic/knowledge-islands
 status: draft - April 2026
-purpose: Leaf-to-root review and enrichment of all index notes under Knowledge Islands, and verification of stream focus index tables - ensuring each is correct, substantive, and in sync
 priority: medium
 dependencies: []
 author: Written with Claude

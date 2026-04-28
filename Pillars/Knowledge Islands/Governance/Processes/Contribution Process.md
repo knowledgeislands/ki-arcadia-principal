@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Who can propose changes to the Knowledge Islands model, from which islands, and under what conditions - the process and customs at the boundary
 author: Written with Claude
 ---
 

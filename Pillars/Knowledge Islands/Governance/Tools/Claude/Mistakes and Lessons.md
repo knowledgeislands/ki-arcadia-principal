@@ -5,7 +5,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Human-readable incident register for Claude KI operational errors; lessons are extracted to auto-memory files and do not require this note to be loaded at session start
 author: Written with Claude
 memory_file:
   - feedback_{ki_prefix}_operations.md

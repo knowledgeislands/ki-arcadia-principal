@@ -2,7 +2,6 @@
 tags:
   - card/movie
 status: current - Month YYYY
-purpose: Film reference card - [title]
 author: [Manual / Written with Claude / Mixed]
 url:
 year:

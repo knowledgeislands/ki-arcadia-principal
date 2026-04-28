@@ -3,7 +3,6 @@ tags:
   - card/stream
   - topic/knowledge-islands
 status: draft - April 2026
-purpose: Redesign the Calendar templates (Daily, Weekly, Monthly) around the Bullet Journal methodology
 priority: low
 dependencies: []
 author: Written with Claude

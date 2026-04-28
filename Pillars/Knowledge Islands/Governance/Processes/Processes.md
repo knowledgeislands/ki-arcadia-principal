@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Index for the Processes subtree - the mechanisms through which governance is enacted and knowledge crosses island boundaries
 author: Written with Claude
 ---
 

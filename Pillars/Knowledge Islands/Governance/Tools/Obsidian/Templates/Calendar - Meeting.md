@@ -3,7 +3,6 @@ tags:
   - date/{{date:YYYY}}/{{date:MM}}/{{date:DD}}
   - calendar/meeting
 status: current - {{date:MMMM YYYY}}
-purpose: Meeting note for [Meeting Name], {{date:DD MMMM YYYY}}
 author: Manual
 ---
 

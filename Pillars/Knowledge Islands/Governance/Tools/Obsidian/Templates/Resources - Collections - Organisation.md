@@ -2,7 +2,6 @@
 tags:
   - card/org
 status: current - Month YYYY
-purpose: Organisation reference card - [name]
 author: [Manual / Written with Claude / Mixed]
 type:
 url:

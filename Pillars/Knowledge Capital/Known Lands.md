@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Arcadia's map of all known Knowledge Islands archipelagos - the canonical objective record of islands, their roles, and their repositories
 author: Written with Claude
 ---
 

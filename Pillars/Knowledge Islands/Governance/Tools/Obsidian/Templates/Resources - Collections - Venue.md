@@ -3,7 +3,6 @@ tags:
   - card/org
   - [card/restaurant / card/bar / card/shop / etc.]
 status: current - Month YYYY
-purpose: Venue reference card - [name]
 author: [Manual / Written with Claude / Mixed]
 url:
 location:

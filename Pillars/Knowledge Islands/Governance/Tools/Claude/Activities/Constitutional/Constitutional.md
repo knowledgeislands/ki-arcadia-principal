@@ -5,7 +5,6 @@ tags:
   - topic/automation
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Index for constitutional activity prompts - the Claude-specific, island-specific prompt that drives the Conformance Check
 author: Written with Claude
 ---
 

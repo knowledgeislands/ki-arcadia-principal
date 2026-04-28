@@ -6,7 +6,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Conversational activity - step through the Unknown queue one email at a time with user confirmation
 author: Written with Claude
 ---
 

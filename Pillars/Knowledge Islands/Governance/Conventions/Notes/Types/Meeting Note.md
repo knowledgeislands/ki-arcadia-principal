@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/knowledge-management
 status: current - April 2026
-purpose: Additions and exceptions to Note Format specific to meeting notes
 author: Written with Claude
 ---
 
@@ -22,8 +21,6 @@ Required tags in addition to any topic tags:
 
 - `calendar/meeting`
 - `date/YYYY/MM/DD` - matching the meeting date
-
-The `purpose` field should follow the pattern: _Notes from [Meeting Name] covering [key themes]_.
 
 ---
 

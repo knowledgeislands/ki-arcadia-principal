@@ -6,7 +6,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Conversational activity - dry-run both scheduled activities and report system health without making any changes
 author: Written with Claude
 ---
 

@@ -3,7 +3,6 @@ tags:
   - card/stream
   - topic/knowledge-islands
 status: draft - April 2026
-purpose: Define content boundary rules for the Knowledge Islands pillar areas - what must not appear in each section to preserve separation of concerns
 priority: urgent
 dependencies: []
 author: Written with Claude

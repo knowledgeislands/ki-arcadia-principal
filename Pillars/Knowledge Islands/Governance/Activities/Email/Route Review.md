@@ -6,7 +6,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Manual activity - taxonomy check, collision check, apply agreed rules, and re-evaluate Unknown queue
 author: Written with Claude
 ---
 

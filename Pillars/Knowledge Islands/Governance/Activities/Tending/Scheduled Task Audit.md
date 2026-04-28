@@ -6,7 +6,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Daily automated activity - verify scheduled task schedules and descriptions against KI notes, and self-verify this task's own prompt; flags orphaned tasks and notes
 author: Written with Claude
 ---
 

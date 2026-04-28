@@ -5,7 +5,6 @@ tags:
   - topic/automation
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Layer 5 prompt for the Conformance Check - verifies constitutional baseline and adoption completeness and consistency
 author: Written with Claude
 ---
 

@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/knowledge-management
 status: current - April 2026
-purpose: Index for the Governance subtree - methodology, conventions, processes, agents, tools, and activities
 author: Written with Claude
 ---
 

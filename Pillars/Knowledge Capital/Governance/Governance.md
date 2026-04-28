@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Arcadia's governance instance - council model, membership, and operating conventions
 author: Written with Claude
 ---
 

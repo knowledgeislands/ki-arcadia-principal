@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/knowledge-management
 status: current - April 2026
-purpose: Folder structure, routing rules, index note conventions, and the Pillars/Resources boundary for the Library
 author: Written with Claude
 memory_file: project_{ki_prefix}_structure.md
 ---

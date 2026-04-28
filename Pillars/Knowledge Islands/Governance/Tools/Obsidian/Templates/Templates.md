@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/knowledge-management
 status: current - April 2026
-purpose: Index of note and card templates in the island - Obsidian Templater scaffolding for all note types
 author: Written with Claude
 ---
 

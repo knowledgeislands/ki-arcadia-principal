@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/automation
 status: draft - April 2026
-purpose: New and improved scheduled automations for the island - extending and hardening the existing task suite
 priority: low
 dependencies: []
 author: Written with Claude

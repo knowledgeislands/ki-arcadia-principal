@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/governance
 status: current - April 2026
-purpose: Constitutional activity - verifies that an island meets its Knowledge Islands baseline and that every non-constitutional activity group has an explicit adoption position
 author: Written with Claude
 ---
 

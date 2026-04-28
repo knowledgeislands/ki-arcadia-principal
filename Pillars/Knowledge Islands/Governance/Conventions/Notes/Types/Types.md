@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/knowledge-management
 status: current - April 2026
-purpose: Index of note types - specialised structures that extend the base note format for specific purposes
 author: Written with Claude
 ---
 

@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/automation
 status: draft - April 2026
-purpose: Workflow automation tools worth investigating as complements or alternatives to the island's scheduled task stack
 priority: low
 dependencies: []
 author: Written with Claude

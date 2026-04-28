@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/streams
 status: current - April 2026
-purpose: Index of dormant streams - paused projects that may be revisited
 author: Written with Claude
 ---
 

@@ -3,7 +3,6 @@ tags:
   - card/video
   - [topic/relevant]
 status: current - Month YYYY
-purpose: Video reference card - [title]
 author: [Manual / Written with Claude / Mixed]
 url:
 published:

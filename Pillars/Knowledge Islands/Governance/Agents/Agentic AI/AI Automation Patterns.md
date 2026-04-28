@@ -6,7 +6,6 @@ tags:
   - topic/automation
   - source/claude
 status: current - April 2026
-purpose: Design patterns for AI-driven productivity automations, covering performance, caching, and structural decisions
 author: Written with Claude
 ---
 

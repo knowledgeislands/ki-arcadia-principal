@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: The canonical enactment process pattern for Knowledge Islands - how Streams enact change in the island via the governance model
 author: Written with Claude
 memory_file: feedback_{ki_prefix}_enactment_process.md
 ---

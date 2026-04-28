@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Ordered list of foundational notes used by Knowledge Rebuild
 author: Written with Claude
 ---
 

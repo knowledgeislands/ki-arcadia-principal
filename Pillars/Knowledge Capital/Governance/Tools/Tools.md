@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Index for Arcadia's tool configuration - integrations and physical store locations
 author: Written with Claude
 ---
 

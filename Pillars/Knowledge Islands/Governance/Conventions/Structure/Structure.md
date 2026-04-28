@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/knowledge-management
 status: current - April 2026
-purpose: The geographic structure of the island - Library, Harbour, Streams, and the pathways between them
 author: Written with Claude
 memory_file: project_{ki_prefix}_structure.md
 ---

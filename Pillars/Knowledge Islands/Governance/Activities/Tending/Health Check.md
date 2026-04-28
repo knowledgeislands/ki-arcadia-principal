@@ -6,7 +6,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Weekly automation that checks island structure, skill alignment, and content health
 author: Written with Claude
 ---
 

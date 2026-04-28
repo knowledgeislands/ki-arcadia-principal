@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/streams
 status: current - April 2026
-purpose: Index of settled streams - concluded projects and completed workstreams
 author: Written with Claude
 ---
 

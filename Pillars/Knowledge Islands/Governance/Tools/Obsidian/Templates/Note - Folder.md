@@ -3,7 +3,6 @@ tags:
   - card/note
   - [relevant tags]
 status: current - Month YYYY
-purpose: Index of [folder name] - [one-line description of the folder's purpose]
 author: [Manual / Written with Claude / Mixed]
 ---
 

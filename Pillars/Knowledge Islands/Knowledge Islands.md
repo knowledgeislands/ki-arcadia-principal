@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Canonical definition of the Knowledge Islands model - island types, archipelago structure, physical stores, and governance infrastructure
 author: Written with Claude
 ---
 

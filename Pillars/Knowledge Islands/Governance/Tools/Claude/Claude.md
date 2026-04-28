@@ -6,7 +6,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Document how Claude is configured as a tool - Cowork connection, token economics, memory, and the activity prompt layer
 author: Written with Claude
 ---
 

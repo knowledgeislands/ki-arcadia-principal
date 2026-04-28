@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/knowledge-management
 status: current - April 2026
-purpose: Index of tools connected to the island - what each does, how it connects, and where its configuration lives
 author: Written with Claude
 ---
 

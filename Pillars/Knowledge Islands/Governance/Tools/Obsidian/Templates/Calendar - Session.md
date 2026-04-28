@@ -4,7 +4,6 @@ tags:
   - calendar/session
   - source/claude
 status: current - {{date:MMMM YYYY}}
-purpose: Session digest for [Topic], {{date:DD MMMM YYYY}}
 author: Written with Claude
 ---
 

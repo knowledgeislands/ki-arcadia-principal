@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: N/A stub - Linear activity group vetoed for Arcadia
 author: Written with Claude
 ---
 

@@ -3,7 +3,6 @@ tags:
   - date/{{date:YYYY}}
   - calendar/yearly
 status: current - {{date:YYYY}}
-purpose: Year index for {{date:YYYY}} - all monthly, weekly, and daily Calendar notes
 author: Manual
 ---
 

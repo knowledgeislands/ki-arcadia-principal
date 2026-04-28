@@ -5,7 +5,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Index of all Calendar notes - daily notes, meeting notes, and periodic reviews
 author: Written with Claude
 ---
 

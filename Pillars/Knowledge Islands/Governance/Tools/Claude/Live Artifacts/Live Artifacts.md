@@ -6,7 +6,6 @@ tags:
   - topic/automation
   - source/claude
 status: current - April 2026
-purpose: Index and convention reference for all Cowork live-artifact HTML pages - each artifact is represented by a recipe note and a colocated HTML backup
 author: Written with Claude
 ---
 

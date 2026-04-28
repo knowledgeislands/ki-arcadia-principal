@@ -5,7 +5,6 @@ tags:
   - topic/automation
   - source/claude
 status: draft - April 2026
-purpose: Index for Linear activity prompts - the Claude-specific, island-specific prompts that drive Linear issue management activities
 author: Written with Claude
 ---
 

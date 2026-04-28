@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Decoder ring for Knowledge Islands vocabulary - concepts, acronyms, and terminology used across the archipelago system
 author: Written with Claude
 ---
 

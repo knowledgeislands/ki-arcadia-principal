@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/knowledge-management
 status: current - April 2026
-purpose: Standard YAML frontmatter properties for all notes - required fields, optional fields, and their permitted values
 author: Written with Claude
 memory_file: project_{ki_prefix}_note_format.md
 ---
@@ -24,7 +23,6 @@ All fields except `creator` are required. Frontmatter must be YAML properties - 
 | Property      | Values / Format                                                                                                                                                 |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `status`      | `draft - Month YYYY` / `current - Month YYYY` / `archive - Month YYYY` / `outdated - Month YYYY`                                                                |
-| `purpose`     | One-line description of what the note is for                                                                                                                    |
 | `author`      | `Manual` / `Written with Claude` / `Mixed` - always the note's author, not the subject's                                                                        |
 | `creator`     | Optional - the author of the external work being referenced, e.g. `creator: "[[Author Name]]"`                                                                  |
 | `memory_file` | Optional - filename(s) of the auto-memory file(s) that mirror this note (e.g. `reference_{ki_prefix}_key_notes.md`). Use a YAML list when multiple files apply. |

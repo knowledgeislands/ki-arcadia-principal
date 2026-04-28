@@ -3,7 +3,6 @@ tags:
   - card/proposal
   - topic/knowledge-islands
 status: draft - April 2026
-purpose: Explore where Intention belongs in the Knowledge Islands conceptual model - as a property of islands, a phase in the cycle, or something more fundamental
 priority: medium
 dependencies: []
 author: Written with Claude

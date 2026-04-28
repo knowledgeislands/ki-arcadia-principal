@@ -6,7 +6,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Guide for designing and maintaining island activities - the five-layer content model, activity note format, and prompt editing discipline
 author: Written with Claude
 ---
 

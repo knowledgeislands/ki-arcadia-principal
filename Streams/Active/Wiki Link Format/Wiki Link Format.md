@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/conventions
 status: draft - April 2026
-purpose: Decide the canonical wiki link format for the island - full path, shortest path, or relative path - and update conventions and tooling accordingly
 priority: medium
 dependencies:
   - Page Registry

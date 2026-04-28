@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Index note for Arcadia's Knowledge Capital - the island's knowledge of itself; identity, governance instance, and configuration
 author: Written with Claude
 ---
 

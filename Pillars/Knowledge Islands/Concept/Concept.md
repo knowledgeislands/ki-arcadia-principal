@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: The conceptual model for Knowledge Islands - what knowledge is, how it improves, where it lives, who acts within it, and the system built to govern it
 author: Written with Claude
 ---
 

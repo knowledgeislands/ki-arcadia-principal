@@ -6,7 +6,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Conversational activity - lightweight status summary without any processing
 author: Written with Claude
 ---
 

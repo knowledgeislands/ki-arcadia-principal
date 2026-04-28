@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/knowledge-management
 status: current - April 2026
-purpose: Tag taxonomy for the island - hierarchical namespace/value tags covering card types, calendar types, topics, and source markers
 author: Written with Claude
 memory_file: project_{ki_prefix}_note_format.md
 ---

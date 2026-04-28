@@ -69,7 +69,7 @@ Full note format specification in [[Notes]]. Key rules:
 
 - Before writing any changes, confirm with the user first
 - Tag conventions: [[Frontmatter/Tags|Tags]]
-- Frontmatter must include `status`, `purpose`, and `author` as YAML properties
+- Frontmatter must include `status` and `author` as YAML properties
   - `status`: `draft - Month YYYY`, `current - Month YYYY`, `outdated - Month YYYY`, or `archive - Month YYYY`
   - `author`: `Manual`, `Written with Claude`, or `Mixed`
 - Sections separated by `---`; body uses H2 headings; omit empty footer sections

@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Index for Arcadia's island-specific activity configuration - timing parameters for automations
 author: Written with Claude
 ---
 

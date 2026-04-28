@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/knowledge-management
 status: current - April 2026
-purpose: Notes are the written form of knowledge on the island - how they are structured, typed, and what metadata they carry
 author: Written with Claude
 memory_file: project_{ki_prefix}_note_format.md
 ---
@@ -29,7 +28,7 @@ The physical structure of a note - its sections, heading conventions, footer rul
 
 ## Frontmatter
 
-Every note carries a YAML frontmatter block. [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Frontmatter|Frontmatter]] has two parts: [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Properties|Properties]] defines the standard fields (`status`, `purpose`, `author`, and optional fields), and [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Tags|Tags]] defines the hierarchical tag taxonomy used across all notes. Both are a superset - not every property or tag applies to every island.
+Every note carries a YAML frontmatter block. [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Frontmatter|Frontmatter]] has two parts: [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Properties|Properties]] defines the standard fields (`status`, `author`, and optional fields), and [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Tags|Tags]] defines the hierarchical tag taxonomy used across all notes. Both are a superset - not every property or tag applies to every island.
 
 ---
 

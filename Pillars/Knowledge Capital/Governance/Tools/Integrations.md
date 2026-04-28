@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: External tools connected to this island
 author: Written with Claude
 memory_file: reference_{ki_prefix}_key_notes.md
 ---

@@ -6,7 +6,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Adhoc activity to ensure generic Knowledge Islands notes remain identical across islands and cross-pollinate improvements
 author: Written with Claude
 ---
 

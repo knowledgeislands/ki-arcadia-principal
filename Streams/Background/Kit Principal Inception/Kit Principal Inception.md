@@ -3,7 +3,6 @@ tags:
   - card/stream
   - topic/knowledge-islands
 status: draft - April 2026
-purpose: Bootstrap items for kit-principal - content that needs to exist there once arcadia-principal's governance is stable
 author: Written with Claude
 ---
 

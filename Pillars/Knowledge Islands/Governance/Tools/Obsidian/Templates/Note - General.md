@@ -4,7 +4,6 @@ tags:
   - card/note
   - [relevant tags]
 status: current - Month YYYY
-purpose: [one-liner purpose of the note]
 author: [Manual / Written with Claude / Mixed]
 ---
 

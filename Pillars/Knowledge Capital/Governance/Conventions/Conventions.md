@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Index for Arcadia's island-specific conventions - vocabulary and routing rules
 author: Written with Claude
 ---
 

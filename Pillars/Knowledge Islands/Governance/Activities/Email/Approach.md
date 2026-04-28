@@ -6,7 +6,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Approach and shared reference for the Email Automation system - architecture, definitions, and data model
 author: Mixed
 ---
 

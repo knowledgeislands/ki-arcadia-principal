@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Knowledge Capital index for the Email activity group - records Arcadia's veto of this group
 author: Written with Claude
 ---
 

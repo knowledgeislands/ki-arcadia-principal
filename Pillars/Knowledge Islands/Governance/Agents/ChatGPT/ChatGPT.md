@@ -5,7 +5,6 @@ tags:
   - topic/knowledge-islands
   - source/claude
 status: current - April 2026
-purpose: Placeholder - ChatGPT is used as a tool in this island, not as an agent; no agentic patterns documented here yet
 author: Written with Claude
 ---
 

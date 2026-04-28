@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/streams
 status: current - April 2026
-purpose: Index of active streams - currently receiving focused attention
 author: Written with Claude
 ---
 

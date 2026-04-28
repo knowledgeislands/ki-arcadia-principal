@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/ai
 status: current - April 2026
-purpose: Index for Arcadia's agent-facing configuration - communication style and canonical context notes
 author: Written with Claude
 ---
 

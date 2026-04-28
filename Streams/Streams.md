@@ -2,7 +2,6 @@
 tags:
   - card/note
 status: current - April 2026
-purpose: Top-level index for all projects and workstreams
 author: Written with Claude
 ---
 

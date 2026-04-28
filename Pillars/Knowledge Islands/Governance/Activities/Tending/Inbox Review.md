@@ -5,7 +5,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Weekly manual activity - filing inbox notes to the correct island location
 author: Written with Claude
 ---
 

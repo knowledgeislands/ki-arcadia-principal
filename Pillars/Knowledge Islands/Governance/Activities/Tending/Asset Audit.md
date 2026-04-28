@@ -5,7 +5,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Weekly manual activity - locating and linking unlinked repository assets
 author: Written with Claude
 ---
 

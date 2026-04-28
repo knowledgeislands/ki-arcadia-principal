@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Island-specific routing rules beyond the generic conventions
 author: Written with Claude
 memory_file: project_{ki_prefix}_structure.md
 ---

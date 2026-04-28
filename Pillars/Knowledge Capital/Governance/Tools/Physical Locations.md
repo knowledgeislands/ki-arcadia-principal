@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Filesystem paths for the island's text store, binary store, and working folder
 author: Written with Claude
 ---
 

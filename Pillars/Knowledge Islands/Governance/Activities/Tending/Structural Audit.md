@@ -5,7 +5,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Adhoc activity - comprehensive structural audit of the island
 author: Written with Claude
 ---
 

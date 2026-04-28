@@ -5,7 +5,6 @@ tags:
   - topic/automation
   - source/claude
 status: draft - April 2026
-purpose: Index for tending activity prompts - the Claude-specific, island-specific prompts that drive Health Check, Knowledge Rebuild, Scheduled Task Audit, and Convergence Check
 author: Written with Claude
 ---
 

@@ -5,7 +5,6 @@ tags:
   - topic/knowledge-islands
   - source/claude
 status: current - April 2026
-purpose: Index for the Claude agent layer - how Claude operates as an agent within the island, independent of Cowork platform specifics
 author: Written with Claude
 ---
 

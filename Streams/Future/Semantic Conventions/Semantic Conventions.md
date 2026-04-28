@@ -3,7 +3,6 @@ tags:
   - card/stream
   - topic/knowledge-islands
 status: draft - April 2026
-purpose: Prospective island conventions worth researching and trialling before formal adoption
 priority: low
 dependencies: []
 author: Written with Claude

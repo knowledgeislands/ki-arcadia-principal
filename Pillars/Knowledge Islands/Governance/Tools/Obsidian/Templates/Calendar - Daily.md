@@ -3,7 +3,6 @@ tags:
   - date/{{date:YYYY}}/{{date:MM}}/{{date:DD}}
   - calendar/daily
 status: current - {{date:MMMM YYYY}}
-purpose: Daily note for {{date:DD MMMM YYYY}}
 author: Manual
 day_type: work-day
 ---

@@ -5,7 +5,6 @@ tags:
   - topic/automation
   - source/claude
 status: draft - April 2026
-purpose: Index for briefing activity prompts - the Claude-specific, island-specific prompts that drive daily briefings and periodic reviews
 author: Written with Claude
 ---
 

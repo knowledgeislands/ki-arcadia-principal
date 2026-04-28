@@ -6,7 +6,6 @@ tags:
   - topic/microsoft-365
   - source/claude
 status: current - April 2026
-purpose: Integration reference for the M365 Assistant MCP server - connecting Claude to Microsoft 365 via the Microsoft Graph API
 author: Written with Claude
 ---
 

@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/knowledge-management
 status: current - April 2026
-purpose: Index for the Frontmatter area - YAML properties and tag taxonomy that apply across all notes
 author: Written with Claude
 memory_file: project_{ki_prefix}_note_format.md
 ---
@@ -21,7 +20,7 @@ Both are defined as a superset across all islands. Island-specific extensions an
 
 ## Properties
 
-Standard YAML properties carried by every note are defined in [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Properties|Properties]]. These include `status`, `purpose`, `author`, and optional fields such as `creator`, `memory_file`, and `day_type`.
+Standard YAML properties carried by every note are defined in [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Properties|Properties]]. These include `status`, `author`, and optional fields such as `creator`, `memory_file`, and `day_type`.
 
 ---
 

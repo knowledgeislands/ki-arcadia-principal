@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/knowledge-management
 status: current - April 2026
-purpose: The three convention areas that govern the island - the form of notes, the residency of knowledge, and the geographic structure of the island
 author: Written with Claude
 ---
 

@@ -6,7 +6,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Scheduled activity - combined aged archival and inbound routing in a single pass; replaces Route Aged and Route Inbound
 author: Written with Claude
 ---
 

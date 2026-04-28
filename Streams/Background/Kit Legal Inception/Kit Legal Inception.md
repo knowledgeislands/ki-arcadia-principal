@@ -3,7 +3,6 @@ tags:
   - card/stream
   - topic/knowledge-islands
 status: draft - April 2026
-purpose: Bootstrap plan for kit-legal - satellite island of the Kit archipelago
 author: Written with Claude
 ---
 

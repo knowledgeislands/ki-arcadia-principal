@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/conventions
 status: draft - April 2026
-purpose: Design and implement the page registry - a compact pre-built index that maps every leaf filename to its vault location(s), enabling shortest-path link resolution without live filesystem scanning
 priority: medium
 dependencies: []
 author: Written with Claude

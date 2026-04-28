@@ -6,7 +6,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Index of daily briefing activities that prepare the island and day-plan at session start
 author: Written with Claude
 ---
 

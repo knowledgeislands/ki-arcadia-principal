@@ -3,7 +3,6 @@ tags:
   - card/stream
   - topic/knowledge-islands
 status: draft - April 2026
-purpose: Design and implement the Auto Proposal Research activity - a periodic review that matures stream thinking into proposal-ready notes ahead of council meetings
 priority: medium
 dependencies: []
 author: Written with Claude

@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Arcadia's enactment process instance - follows the canonical KI pattern; records any Arcadia-specific conventions
 author: Written with Claude
 ---
 

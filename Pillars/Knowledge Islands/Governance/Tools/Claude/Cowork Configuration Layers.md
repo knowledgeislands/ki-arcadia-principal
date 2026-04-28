@@ -6,7 +6,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Document the four layers through which Claude receives preferences and rules, and define what belongs in the Cowork project instructions box
 author: Written with Claude
 ---
 

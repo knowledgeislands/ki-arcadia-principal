@@ -5,7 +5,6 @@ tags:
   - topic/knowledge-management
   - topic/automation
 status: current - April 2026
-purpose: Additions and exceptions to Note Format specific to Layer 1 activity notes
 author: Written with Claude
 ---
 

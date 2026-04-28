@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Arcadia's island charter - identity, adoption positions, enabled activities, connected tools, and active agent configuration
 author: Written with Claude
 ---
 

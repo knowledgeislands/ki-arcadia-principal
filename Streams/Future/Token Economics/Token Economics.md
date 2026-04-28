@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/ai
 status: draft - April 2026
-purpose: Understand and improve the token economics of island AI operations - prompt efficiency, context design, caching, and tooling
 priority: low
 dependencies: []
 author: Written with Claude

@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/ai
 status: draft - April 2026
-purpose: Survey the MCP ecosystem for integrations relevant to the island's connected tools and workflows
 priority: low
 dependencies: []
 author: Written with Claude

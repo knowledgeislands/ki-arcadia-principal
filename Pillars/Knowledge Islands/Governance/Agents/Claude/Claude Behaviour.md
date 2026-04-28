@@ -5,7 +5,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Behavioural expectations for Claude - what to do and what to avoid, regardless of who is using the KI
 author: Written with Claude
 memory_file: feedback_any_claude_behaviour.md
 ---

@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/governance
 status: current - April 2026
-purpose: Index and definition of the Constitutional activity group - the pre-adoptive baseline required of any Knowledge Island
 author: Written with Claude
 ---
 

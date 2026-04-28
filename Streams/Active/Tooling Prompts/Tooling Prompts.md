@@ -5,7 +5,6 @@ tags:
   - topic/automation
   - topic/knowledge-management
 status: in-progress - April 2026
-purpose: Track the work of building out Arcadia's operational tooling - the Layer 5 prompt library, activity navigation aids, the Arcadia skill, and scheduled task configuration
 author: Written with Claude
 ---
 m

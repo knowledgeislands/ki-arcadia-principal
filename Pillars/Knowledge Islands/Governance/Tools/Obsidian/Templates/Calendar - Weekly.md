@@ -3,7 +3,6 @@ tags:
   - date/{{date:YYYY}}/W{{date:ww}}
   - calendar/weekly
 status: current - {{date:MMMM YYYY}}
-purpose: Index for {{date:YYYY}}, Week {{date:ww}}
 author: Manual
 ---
 

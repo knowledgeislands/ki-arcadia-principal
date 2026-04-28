@@ -3,7 +3,6 @@ tags:
   - card/book
   - [topic/relevant]
 status: current - Month YYYY
-purpose: Book reference card - [title]
 author: [Manual / Written with Claude / Mixed]
 creator: [Author Name]
 url:

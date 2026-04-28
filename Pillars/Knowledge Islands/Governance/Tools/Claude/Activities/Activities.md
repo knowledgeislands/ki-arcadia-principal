@@ -6,7 +6,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Index of the Claude activity prompt library - the actual prompts that drive scheduled and conversational activities
 author: Written with Claude
 ---
 

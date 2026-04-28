@@ -7,7 +7,6 @@ tags:
   - topic/automation
   - source/claude
 status: current - April 2026
-purpose: island skill reference note
 author: Written with Claude
 ---
 

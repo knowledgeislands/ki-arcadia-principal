@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/knowledge-management
 status: current - April 2026
-purpose: Document the human operating mode - manual curation, navigation, and review of the island
 author: Written with Claude
 ---
 

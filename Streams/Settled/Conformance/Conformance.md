@@ -3,7 +3,6 @@ tags:
   - card/proposal
   - topic/knowledge-islands
 status: completed - April 2026
-purpose: Define the constitutional layer and adoption framework for Knowledge Islands - making islands self-describing, self-verifying, and explicit about what they have and have not adopted
 priority: urgent
 dependencies: []
 author: Written with Claude

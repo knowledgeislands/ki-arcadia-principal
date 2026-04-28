@@ -3,7 +3,6 @@ tags:
   - card/poem
   - [topic/relevant]
 status: current - Month YYYY
-purpose: Poem reference card - [title]
 author: [Manual / Written with Claude / Mixed]
 creator: [Poet Name]
 url:

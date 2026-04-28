@@ -5,7 +5,6 @@ tags:
   - topic/ai
   - source/claude
 status: current - April 2026
-purpose: Document how Claude's auto-memory is structured for this Knowledge Island - file conventions, canonical vs auxiliary classes, and the KI ↔ memory mapping
 author: Written with Claude
 memory_file: reference_{ki_prefix}_key_notes.md
 ---

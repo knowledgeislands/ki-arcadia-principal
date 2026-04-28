@@ -5,7 +5,6 @@ tags:
   - topic/automation
   - source/claude
 status: draft - April 2026
-purpose: Index for email activity prompts - the Claude-specific, island-specific prompts that drive the email triage and routing activities
 author: Written with Claude
 ---
 

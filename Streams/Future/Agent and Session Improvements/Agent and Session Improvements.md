@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/ai
 status: draft - April 2026
-purpose: Improvements to Claude's capabilities and the human-AI session experience within the island
 priority: low
 dependencies: []
 author: Written with Claude

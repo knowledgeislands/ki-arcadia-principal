@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-management
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Define where knowledge lives across the three-tier model - KI, canonical memory, and auxiliary memory - and how it moves between them
 author: Written with Claude
 memory_file: project_{ki_prefix}_structure.md
 ---

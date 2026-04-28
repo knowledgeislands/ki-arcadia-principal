@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: current - April 2026
-purpose: Arcadia's adoption record for the Tending activity group - confirms adoption and links to timing config
 author: Written with Claude
 ---
 

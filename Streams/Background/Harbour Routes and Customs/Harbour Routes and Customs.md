@@ -3,7 +3,6 @@ tags:
   - card/proposal
   - topic/knowledge-islands
 status: draft - April 2026
-purpose: Specify the three unresolved elements of the KI geographic model - Harbour, Routes, and Customs - in both Concept.md and Structure.md
 priority: low
 dependencies: []
 author: Written with Claude

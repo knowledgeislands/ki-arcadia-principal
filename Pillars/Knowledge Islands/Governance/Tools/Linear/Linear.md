@@ -6,7 +6,6 @@ tags:
   - topic/mcp
   - source/claude
 status: current - April 2026
-purpose: Index for the Linear integration - MCP connection details and browser-based interaction patterns
 author: Written with Claude
 ---
 

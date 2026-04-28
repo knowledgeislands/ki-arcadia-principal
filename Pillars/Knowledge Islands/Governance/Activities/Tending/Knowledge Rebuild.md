@@ -6,7 +6,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Weekly automation that rebuilds Claude's memory of the island from canonical meta notes
 author: Written with Claude
 ---
 

@@ -5,7 +5,6 @@ tags:
   - topic/knowledge-management
   - topic/tools
 status: current - April 2026
-purpose: Obsidian as the primary interface for the island - editor, graph, and Templater plugin configuration
 author: Written with Claude
 ---
 

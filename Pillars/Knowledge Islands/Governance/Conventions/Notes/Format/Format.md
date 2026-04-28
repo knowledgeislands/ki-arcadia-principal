@@ -4,7 +4,6 @@ tags:
   - topic/knowledge-islands
   - topic/knowledge-management
 status: current - April 2026
-purpose: The physical structure of a note - sections, headings, tables, markdown conventions, and templates
 author: Written with Claude
 memory_file: project_{ki_prefix}_note_format.md
 ---
@@ -19,7 +18,7 @@ Every note follows a consistent physical structure. The rules here govern what s
 
 ## Full Note Structure
 
-1. **Frontmatter** - YAML block with `tags`, `status`, `purpose`, `author` (and optionally `creator`)
+1. **Frontmatter** - YAML block with `tags`, `status`, `author` (and optionally `creator`)
 2. **Title** - H1 heading matching the filename (see H1 and Filenames below)
 3. **Overview** - `## Overview` section; high-level introduction
 4. **Body** - H2 sections on the topic; one topic per section
@@ -91,7 +90,6 @@ If the content is too wide to fit within 200 characters, collapse all padding so
 | Field     | Format / Values                     |
 | --------- | ----------------------------------- |
 | `status`  | `draft - Month YYYY`                |
-| `purpose` | One-line description of the note    |
 ```
 
 ### Too wide - collapse whitespace
@@ -100,7 +98,6 @@ If the content is too wide to fit within 200 characters, collapse all padding so
 | Field | Format / Values |
 | --- | --- |
 | `status` | `draft - Month YYYY`, `current - Month YYYY`, `archive - Month YYYY`, `outdated - Month YYYY` |
-| `purpose` | One-line description of what the note is for |
 ```
 
 ---

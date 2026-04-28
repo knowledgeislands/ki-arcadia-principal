@@ -6,7 +6,6 @@ tags:
   - topic/ai
   - topic/automation
 status: current - April 2026
-purpose: Index for the AI operating layer - generalised patterns and conventions for how AI agents work within the island, independent of any specific tool
 author: Written with Claude
 ---
 

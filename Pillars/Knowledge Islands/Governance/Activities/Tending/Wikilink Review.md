@@ -5,7 +5,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Adhoc activity - surfacing broken wikilinks and orphan notes across the repository
 author: Written with Claude
 ---
 

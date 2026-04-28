@@ -6,7 +6,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: draft - April 2026
-purpose: Document how ChatGPT integrates with the island
 author: Written with Claude
 ---
 

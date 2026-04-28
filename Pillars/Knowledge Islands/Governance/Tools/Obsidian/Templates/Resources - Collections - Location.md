@@ -3,7 +3,6 @@ tags:
   - card/location
   - [topic/geography / topic/history / etc.]
 status: current - Month YYYY
-purpose: Location reference card - [name]
 author: [Manual / Written with Claude / Mixed]
 url:
 ---

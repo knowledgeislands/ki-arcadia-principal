@@ -6,7 +6,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Index of island maintenance activities - scheduled and conversational
 author: Written with Claude
 ---
 

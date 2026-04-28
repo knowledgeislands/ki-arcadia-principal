@@ -3,7 +3,6 @@ tags:
   - card/note
   - topic/streams
 status: current - April 2026
-purpose: Index of background streams - active but low-urgency projects and ideas
 author: Written with Claude
 ---
 

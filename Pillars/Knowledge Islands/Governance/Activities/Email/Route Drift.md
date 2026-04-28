@@ -6,7 +6,6 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Scheduled activity - detect user re-routes from tracking data and prune stale entries
 author: Written with Claude
 ---
 

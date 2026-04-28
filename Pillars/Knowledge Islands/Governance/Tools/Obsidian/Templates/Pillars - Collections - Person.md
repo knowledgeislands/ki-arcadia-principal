@@ -2,7 +2,6 @@
 tags:
   - card/person
 status: current - Month YYYY
-purpose: Person card - [name]
 author: [Manual / Written with Claude / Mixed]
 dob:
 relationship:
