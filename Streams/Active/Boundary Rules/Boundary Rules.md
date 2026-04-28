@@ -74,11 +74,11 @@ A boundary rule is a **route entry**: `(content, target_path, severity)`.
 
 **Severity:**
 
-| Level | Meaning |
-|-------|---------|
+| Level | Meaning                                                                                                                                        |
+| ----- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | Hard  | Gate is closed. Flagged by maintenance scan; must be resolved by removal, relocation, or a more specific None entry with documented rationale. |
-| Soft  | Gate logs passage. Flagged by maintenance scan; an inline exception comment in the note clears it. |
-| None  | Gate is open. Overrides a broader rule at a more specific target path, or makes an implicit permission explicit. |
+| Soft  | Gate logs passage. Flagged by maintenance scan; an inline exception comment in the note clears it.                                             |
+| None  | Gate is open. Overrides a broader rule at a more specific target path, or makes an implicit permission explicit.                               |
 
 ### Exception mechanism
 
