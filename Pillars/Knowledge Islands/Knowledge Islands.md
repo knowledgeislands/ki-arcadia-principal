@@ -14,7 +14,7 @@ Knowledge Islands is a conceptual model for organising knowledge. It is informed
 
 In Knowledge Islands, knowledge is treated as a natural, evolving system - islands are discrete bodies of knowledge, archipelagos are groups of islands governed together under the same rules of access, contribution, and change.
 
-Arcadia is the Knowledge Island of Knowledge Islands - a legendary utopia in the form of an archipelago that holds the canonical definition and governance model for the entire Knowledge Islands concept. Every other archipelago that adopts the model derives its baseline from Arcadia.
+Arcadia is the Knowledge Island of Knowledge Islands - a legendary utopia in the form of an archipelago that holds the canonical definition and governance model for the entire Knowledge Islands concept. Every other archipelago that adopts the model derives its baseline from Arcadia. The governance model is portable: three patterns are defined - council, single-governor, and joint-governor - and each island's specific realisation lives in its own [[Knowledge Capital]]. Every person interacting with an island holds a standing within it: a **Citizen** has full standing and is eligible for council membership; a **Visitor** may contribute informally but holds no formal standing.
 
 ---
 
@@ -24,11 +24,41 @@ Arcadia is the Knowledge Island of Knowledge Islands - a legendary utopia in the
 
 ---
 
-## Governance
+## Conventions
 
-Every island holds jurisdiction over its own canonical knowledge - nothing reaches stable knowledge in Pillars or Resources except through the island's own ratification process. [[Knowledge Islands/Governance/Governance]] is the operational layer that makes this work day to day: the conventions that define what a note looks like and where it lives, the processes through which changes are proposed and ratified, the activities that keep the island healthy, and the agents and tools through which all of this happens.
+[[Knowledge Islands/Conventions/Conventions]] defines the shared language for the entire island: note format and structure, frontmatter properties and tags, folder layout, routing rules, and the enforced boundary between Pillars and Resources. Conventions are not stylistic preferences - they are the mechanism through which notes remain consistent enough to be processed by both human and AI agents without ambiguity.
 
-The governance model is portable. Three patterns are defined - council, single-governor, and joint-governor - and each island's specific realisation lives in its own [[Knowledge Capital]]. Every person interacting with an island holds a standing within it: a **Citizen** has full standing and is eligible for council membership; a **Visitor** may contribute informally but holds no formal standing. Changes to canonical knowledge move through the [[Knowledge Islands/Governance/Processes/Enactment Process]]. The [[Contribution Process]] governs how knowledge crosses the boundary between islands and how other archipelagos may contribute back to the canonical model in Arcadia.
+Two sub-areas carry the most weight. [[Notes]] defines what a note is and how it is written - including the specialised types (collection cards, meeting notes, session digests, activity notes) that extend the base format. [[Library]] defines where notes live - the top-level folder structure, routing rules, index note conventions, and the Pillars/Resources boundary.
+
+---
+
+## Processes
+
+[[Knowledge Islands/Processes/Processes]] holds the formal mechanisms through which knowledge changes are made and ratified. The [[Knowledge Islands/Processes/Enactment Process]] is the internal gate: nothing enters Pillars or Resources except through council ratification of a formal proposal. The [[Contribution Process]] is the external boundary: how knowledge developed in other archipelagos can be proposed as a canonical addition to the Knowledge Islands model in Arcadia, and how inbound and outbound patterns work at that boundary.
+
+---
+
+## Activities
+
+[[Knowledge Islands/Activities/Activities]] documents the ongoing work that keeps the island structurally sound, content-healthy, and aligned with connected services. Activities divide into two kinds: scheduled automations (time-driven, running without human initiation - daily briefings, email triage, Linear sync, and periodic health checks) and conversational activities (chat-triggered, human-in-the-loop - inbox reviews, status sweeps, wikilink audits). Together they implement the maintenance cycle that prevents the island from drifting from the world it reflects.
+
+The prompts that drive scheduled activities live at Layer 5 in [[Claude/Activities/Activities|Tools/Claude/Activities]]. The five-layer model that separates what an activity does from how it is prompted is documented in [[Authoring Activities]].
+
+---
+
+## Agents
+
+[[Knowledge Islands/Agents/Agents]] is the operating layer: who and what acts on the island, at what level of capability, and under what patterns. An agent is anything that reads, writes, or reasons over island content - human or AI. Agents divide into human operation (editorial judgement, manual curation, final authority on ratification) and agentic AI operation (routine processing, automation, and AI-specific behavioural patterns). The two modes are complementary rather than competing.
+
+The distinction between Agents and Tools is deliberate: Agents covers how each agent operates; Tools covers how each tool is configured and connected. A given AI system appears in both - once for operating conventions, once for connection setup.
+
+---
+
+## Tools
+
+[[Knowledge Islands/Tools/Tools]] is the configuration layer: the editors, AI systems, task managers, and connected services through which agents act on the island. Each tool sub-folder documents its connection setup, operating conventions, and any tool-specific lessons. Tools connect to external services primarily through MCP (Model Context Protocol) servers, which give Claude direct access to email, calendar, issue tracking, and other services without requiring manual relay by the human agent.
+
+The tool layer and the agent layer are kept separate by design. Tool notes cover the what and how of connection; agent notes cover the patterns and constraints of operation. Neither duplicates the other.
 
 ---
 
