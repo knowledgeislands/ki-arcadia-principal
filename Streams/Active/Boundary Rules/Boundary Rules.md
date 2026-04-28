@@ -13,7 +13,7 @@ author: Written with Claude
 
 ## Overview
 
-A stream to establish explicit content boundary rules across the Knowledge Islands pillar structure. Without these rules, sections accumulate content that belongs elsewhere - Arcadia-specific detail in generic Knowledge Islands notes, tool references in convention notes, activity references in agent notes, and so on. The rules make the separation of concerns enforceable rather than aspirational.
+A stream to establish explicit content boundary rules (conceptually Boundary Walls) across the Knowledge Islands pillar structure. Without these rules, sections accumulate content that belongs elsewhere - Arcadia-specific detail in generic Knowledge Islands notes, tool references in convention notes, activity references in agent notes, and so on. The rules make the separation of concerns enforceable rather than aspirational.
 
 ---
 
@@ -58,19 +58,27 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 ### Model
 
+Boundary rules are conceptually **boundary walls with gates**. Each area of the island is enclosed; content and references may only pass through a gate, and gates check both entry and exit.
+
+- A **Hard** wall has no gate — nothing passes
+- A **Soft** wall has a gate that logs passage — content may pass but is flagged for review
+- A **None** entry is an open gate — passage is explicitly permitted
+
+The gate check runs in both directions: entry (content arriving into an area) and exit (references or content leaving an area). A route entry makes a gate explicit.
+
 A boundary rule is a **route entry**: `(content, target_path, severity)`.
 
-- **content** — what is being restricted: a content type (e.g. "owned methodology"), a source-area character (e.g. "Resources-type content"), or a specific entity class (e.g. "named agents")
-- **target_path** — the path where the restriction applies; rules cascade to all notes under the path unless a more specific entry overrides
+- **content** — what is being checked at the gate: a content type (e.g. "owned methodology"), a source-area character (e.g. "Resources-type content"), or a specific entity class (e.g. "named agents")
+- **target_path** — the area whose wall the gate belongs to; rules cascade to all notes under the path unless a more specific entry overrides
 - **severity** — Hard / Soft / None; more specific paths take precedence over less specific ones
 
 **Severity:**
 
 | Level | Meaning |
 |-------|---------|
-| Hard  | Must not appear. Flagged by maintenance scan; must be resolved by removal, relocation, or a more specific None entry with documented rationale. |
-| Soft  | Should not appear without justification. Flagged by maintenance scan; an inline exception comment in the note clears it. |
-| None  | Explicitly permitted. Overrides a broader rule at a more specific target path, or makes an implicit permission explicit. |
+| Hard  | Gate is closed. Flagged by maintenance scan; must be resolved by removal, relocation, or a more specific None entry with documented rationale. |
+| Soft  | Gate logs passage. Flagged by maintenance scan; an inline exception comment in the note clears it. |
+| None  | Gate is open. Overrides a broader rule at a more specific target path, or makes an implicit permission explicit. |
 
 ### Exception mechanism
 

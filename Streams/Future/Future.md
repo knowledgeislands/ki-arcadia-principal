@@ -26,6 +26,7 @@ Ideas and projects not yet started - queued for when the time or circumstances a
 | [[Streams/Future/Workflow Integrations/Workflow Integrations\|Workflow Integrations]]                                           | `draft` | `low`    |
 | [[Streams/Future/MCP Ecosystem/MCP Ecosystem\|MCP Ecosystem]]                                                                  | `draft` | `low`    |
 | [[Streams/Future/Token Economics/Token Economics\|Token Economics]] | `draft` | `low`    |
+| [[Streams/Future/Island Visualisation/Island Visualisation\|Island Visualisation]] | `draft` | `low`    |
 
 
 ---

@@ -20,47 +20,19 @@ Wiki links currently use full paths throughout the island (e.g. `[[Pillars/Knowl
 
 ## Options
 
-### Option A — Full Path (current)
+| Format       | Unambiguous | Token-efficient | Native Support | Flexible |
+| ------------ | ----------- | --------------- | -------------- | -------- |
+| **Full**     | ✓           | ✗               | ✓              | ✗        |
+| **Shortest** | ~           | ✓               | ✓              | ✓        |
+| **Relative** | ✓           | ~               | ✗              | ~        |
 
-`[[Pillars/Knowledge Islands/Concept/Concept|Concept]]`
+_~ = partial: Shortest is unambiguous only when no collision exists; Relative is token-efficient for nearby notes only, and flexible locally but awkward cross-folder._
 
-Every link spells out the complete vault path. No resolution algorithm is needed - the path is the link.
+**Full** — `[[Pillars/Knowledge Islands/Concept/Concept|Concept]]`
 
-Strengths: unambiguous; works in any tool without a resolver; safe under renames only if the new path is updated too.
+**Shortest** — `[[Concept]]` when unique; `[[Knowledge Islands/Governance]]` when a collision exists
 
-Weaknesses: verbose; high token cost in AI sessions; brittle - a file move breaks every inbound link unless a find-and-replace is run.
-
----
-
-### Option B — Shortest Path (Obsidian algorithm)
-
-`[[Concept]]` or `[[Structure/Structure]]` if disambiguation is needed.
-
-The Obsidian resolution algorithm: find all notes whose filename matches the link text; if exactly one match exists, use it; if multiple matches exist, use the shortest unique path prefix that disambiguates. This is the Obsidian default and is implemented by most wikilink plugins for other tools (including the main Eleventy wikilink plugins).
-
-Strengths: minimal tokens; matches Obsidian's native behaviour; tooling support is broad; links read cleanly.
-
-Weaknesses: silent ambiguity risk - adding a second note with the same filename silently changes which note an existing link resolves to; agents must implement the disambiguation search before writing a new link.
-
----
-
-### Option C — Relative Path
-
-`[[../Concept]]` or `[[../../Governance/Governance]]`
-
-Links are resolved relative to the current file's location, using standard filesystem path semantics.
-
-Strengths: unambiguous without a vault-wide index; parent and sibling links are very short; no collision risk.
-
-Weaknesses: cross-folder links become long and fragile; most wikilink processors treat `[[...]]` as a title lookup, not a path - relative path syntax is non-standard and requires a custom resolver; deeply nested cross-folder links are arguably worse than full paths.
-
----
-
-## Recommendation
-
-Option B — Shortest Path with the Obsidian algorithm documented explicitly as the resolution rule. The token saving is material over a large vault. Obsidian already implements the algorithm natively; agents can replicate it by searching filenames across the vault before writing a link.
-
-Option C is attractive for parent-relative links but introduces non-standard semantics that every tool and agent would need to handle specially. The net cost outweighs the gain.
+**Relative** — `[[../Concept]]` for a sibling; `[[../../Governance/Governance]]` for a cousin
 
 ---
 
@@ -76,18 +48,88 @@ Option C is attractive for parent-relative links but introduces non-standard sem
 
 ---
 
+## Collision Registry Proposal
+
+Rather than scanning the filesystem on every link write, maintain a pre-built **collision registry** — a map from leaf filename to the list of vault paths that share that name. Only collisions are stored; unique filenames have no entry. The registry is rebuilt by a maintenance/tending activity and is compact enough to load into an agent session as a JSON blob.
+
+### Structure
+
+```json
+{
+  "Pillars": {
+    "Governance": ["Knowledge Capital", "Pillars"],
+    "": [] 
+  },
+  "Governance": {
+    "Knowledge Capital": "Pillars",
+    "Knowledge Islands": "Pillars"
+  },
+  "Activities": {
+    "Governance": "*"
+  },
+  "Linear": ["Tools", "Governance", "Knowledge Islands", "Pillars"]
+}
+```
+
+### Tree diagram — Governance collision
+
+Both `Knowledge Capital` and `Knowledge Islands` have a `Governance` folder with the same set of child names (`Activities`, `Agents`, `Conventions`, `Processes`, `Tools`), so almost every index note in the subtree collides.
+
+```
+Pillars ←─────-----------───────────── [[Pillars]]
+├── Knowledge Capital
+│   └── Governance ←────────────────── [[Knowledge Capital/Governance]]
+│       ├── Activities ←────────────── [[Knowledge Capital/Governance/Activities]]
+│       ├── Agents
+│       ├── Pillars ←──────────────    [[Governance/Pillars]]
+│       └── Tools
+└── Knowledge Islands
+    └── Governance ←────────────────── [[Knowledge Islands/Governance]]
+        ├── Activities ←────────────── [[Knowledge Islands/Governance/Activities]]
+        ├── Agents
+        └── Tools
+            └── Linear ←────────────── [[Tools/Linear]]  (unique at one level up)
+```
+
+### Disambiguation algorithm
+
+Given the target leaf name and the intended path:
+
+1. Look up the leaf name in the registry. If not found → `[[Leaf]]`.
+2. If found, walk the path arrays from right (leaf) to left (root) in parallel. Find the first position where the target path diverges from all other registered paths. Use that prefix as the link. Example for `Governance` → Knowledge Islands:
+   - `Governance` — shared with KC entry → go left
+   - `Knowledge Islands` vs `Knowledge Capital` — diverge → stop
+   - Result: `[[Knowledge Islands/Governance]]`
+
+3. For `Activities` → Knowledge Islands: `Activities` shared → `Governance` shared → `Knowledge Islands` vs `Knowledge Capital` → stop → `[[Knowledge Islands/Governance/Activities]]`.
+
+4. For `Linear` → Knowledge Islands Tools: `Linear` shared → `Tools` vs `Activities` → diverge → `[[Tools/Linear]]`.
+
+### Implementation notes
+
+The registry is a map keyed by filename. In a compiled TypeScript context an ES `Map` (O(1) lookup) suffices; a red-black tree would give O(log n) ordered traversal if prefix-range queries ever become useful. The JSON form (collision-only, path-as-array) is compact: the full Arcadia collision set is likely under 2 KB and can be embedded directly in a session prompt or maintenance activity.
+
+Rebuilding: a tending activity traverses the vault, groups filenames with 2+ occurrences, and rewrites the registry file. Any agent writing a new note that would introduce a collision should also trigger a registry rebuild.
+
+---
+
 ## Decision
 
-*Pending.*
+**Option B — Shortest Path (Obsidian algorithm).** Adopted April 2026.
+
+Body links use the bare filename when unique across the vault, and the minimum disambiguating prefix when not. Footer links (`## Related Topics`, `## Contents`) retain the full absolute path with alias — they are navigation-critical and the explicitness is worth the verbosity. Agents must check for filename collisions before writing a bare link. Pipe aliases are omitted in body links unless the display text genuinely differs from the filename.
 
 ---
 
 ## Intended Destinations
 
-- [ ] Update `CLAUDE.md` - replace full-path wikilink instruction with shortest-path rule, document the Obsidian resolution algorithm
-- [ ] Update `Pillars/Knowledge Islands/Governance/Conventions/Notes/Notes.md` - add wiki link format section
-- [ ] Update agent memory files - reflect new link format rule
-- [ ] Decide migration approach for existing full-path links (all at once, opportunistic, or leave as-is)
+- [x] Update `CLAUDE.md` - replace full-path wikilink instruction with shortest-path rule, document the Obsidian resolution algorithm
+- [x] Update `Pillars/Knowledge Islands/Governance/Conventions/Notes/Format/Format.md` - sharpen Wikilinks and Images section with explicit algorithm and collision-checking rule
+- [x] Update agent memory files - reflect new link format rule
+- [ ] Review and approve Collision Registry proposal — decide structure, implementation language, and where the registry file lives
+- [ ] Build collision registry — initial generation script + registry file
+- [ ] Wire registry into maintenance/tending activity for rebuild
+- [ ] Decide migration approach for existing full-path body links (all at once, opportunistic, or leave as-is)
 - [ ] Run migration pass (if decided)
 
 ---

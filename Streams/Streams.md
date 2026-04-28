@@ -36,6 +36,7 @@ Live tracking view of all active proposals. Ordered by Stream (Active → Backgr
 | [[Streams/Future/Workflow Integrations/Workflow Integrations\|Workflow Integrations]]                                           | Future     | `draft`       | `low`    |
 | [[Streams/Future/MCP Ecosystem/MCP Ecosystem\|MCP Ecosystem]]                                                                  | Future     | `draft`       | `low`    |
 | [[Streams/Future/Token Economics/Token Economics\|Token Economics]] | Future     | `draft`       | `low`    |
+| [[Streams/Future/Island Visualisation/Island Visualisation\|Island Visualisation]] | Future     | `draft`       | `low`    |
 
 
 ---

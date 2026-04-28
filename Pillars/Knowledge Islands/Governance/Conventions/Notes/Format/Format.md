@@ -136,7 +136,18 @@ Every file must end with a single trailing newline - the last content line is fo
 
 Wikilinks (`[[Note Name]]`) are preferred over repeating content - link rather than duplicate. When a concept, decision, or piece of reference material has its own note, link to it rather than restating it.
 
-Wikilinks in the body of a note may use short-form (`[[Note Name]]`) or path-form (`[[Full/Path/Note]]`) depending on context. Footer sections require the full absolute path with an alias - see the footer link format rules above.
+### Body link format — shortest unique path (Obsidian algorithm)
+
+Body links use the shortest unique path that resolves unambiguously. The algorithm is the same one Obsidian uses:
+
+1. Use the bare filename if it is unique across the vault — `[[Concept]]`
+2. If another note shares the same filename, use the minimum path prefix needed to disambiguate — `[[Structure/Structure]]` rather than `[[Conventions/Structure/Structure]]` if that is sufficient
+
+Agents writing a new body link must check for filename collisions first. If another note shares the filename, use the shortest disambiguating prefix rather than the bare name.
+
+Path-form links (`[[Full/Path/To/Note]]`) are accepted where they already exist but should not be introduced in new writing. Footer sections are an explicit exception — they always use the full absolute path with an alias (see the footer link format rules above).
+
+The pipe alias (`[[Note|Display Text]]`) should be omitted in body links unless the display text genuinely differs from the filename. Where the bare name reads clearly, `[[Concept]]` is preferred over `[[Concept|Concept]]`.
 
 Images and diagrams used by a single note must be saved in the same folder as that note. Images shared across multiple notes may sit in a folder common to all the notes that use them. Do not place note-specific assets in `+` - that folder is the inbox for unsorted captures, not an asset store.
 

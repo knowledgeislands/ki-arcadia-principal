@@ -73,7 +73,7 @@ Full note format specification in [[Notes]]. Key rules:
   - `status`: `draft - Month YYYY`, `current - Month YYYY`, `outdated - Month YYYY`, or `archive - Month YYYY`
   - `author`: `Manual`, `Written with Claude`, or `Mixed`
 - Sections separated by `---`; body uses H2 headings; omit empty footer sections
-- Prefer `[[wikilinks]]` over repeating content
+- Prefer `[[wikilinks]]` over repeating content; body links use the shortest unique path (Obsidian algorithm: bare filename if unique, minimum disambiguating prefix if not); footer links (`## Related Topics`, `## Contents`) always use the full absolute path with an alias — `[[Full/Path/Note|Note Name]]`; agents must check for filename collisions before writing a bare link
 
 ### Session Digests
 
