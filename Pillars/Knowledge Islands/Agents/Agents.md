@@ -45,6 +45,6 @@ Agents divide into two broad modes: **human operation** (manual curation, naviga
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance|Governance]] - parent index
+- [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - parent index
 - [[Pillars/Knowledge Islands/Tools/Tools|Tools]] - configuration layer for the tools agents use
 - [[Pillars/Knowledge Islands/Activities/Authoring Activities|Authoring Activities]] - the five-layer model that defines where agent content belongs

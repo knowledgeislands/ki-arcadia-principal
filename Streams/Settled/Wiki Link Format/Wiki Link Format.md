@@ -24,9 +24,9 @@ WikiLinks come in 3 formats.  Most systems opt for Shortest due to the compactne
 
 | Format       | Unambiguous | Write Efficient | Read Efficient | Token-efficient | Native Support | Flexible | Example                                                                        |
 | ------------ | ----------- | --------------- | -------------- | --------------- | -------------- | -------- | ------------------------------------------------------------------------------ |
-| **Shortest** | ✓           | ~               | ~              | ✓               | ✓              | ✓        | `[[Concept]]`; or `[[Knowledge Islands/Governance]]` on collision              |
+| **Shortest** | ✓           | ~               | ~              | ✓               | ✓              | ✓        | `[[Concept]]`; or `[[Knowledge Islands/Activities]]` on collision              |
 | **Full**     | ✓           | ✓               | ✓              | ✗               | ✓              | ✗        | `[[Pillars/Knowledge Islands/Concept/Concept\|Concept]]`                       |
-| **Relative** | ✓           | ✓               | ✓              | ~               | ✗              | ~        | `[[../Concept]]` for a sibling; `[[../../Governance]]` for a cousin |
+| **Relative** | ✓           | ✓               | ✓              | ~               | ✗              | ~        | `[[../Concept]]` for a sibling; `[[../../Activities]]` for a cousin |
 We can do better.  In order for Shortest to also become read and write efficient, the [[Page Registry]] is required — it provides the pre-built index needed to efficiently detect collisions and compute minimum disambiguating prefixes without live filesystem scanning.  Obsidian has its own cache, so Human agents get the benefit of that, whereas Agentic AI does not.
 
 ---

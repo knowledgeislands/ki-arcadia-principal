@@ -98,14 +98,14 @@ For Soft violations that are intentionally retained, the note carrying the excep
 | Arcadia as custodian of Knowledge Islands | `Pillars/Knowledge Islands` | None | One named exception; Arcadia may be named in this role |
 | KC operational content | `Pillars/Knowledge Islands` | Hard | Prevents bleed-back into the portable framework |
 | KI framework content | `Pillars/Knowledge Capital` | None | KC may freely reference KI |
-| Named agents (specific tools, AI systems, automations) | `Pillars/Knowledge Islands/Governance` | Hard | |
+| Named agents (specific tools, AI systems, automations) | `Pillars/Knowledge Islands/Agents` | Hard | |
 | Named agents | `Pillars/Knowledge Islands/Activities` | Soft | Capability statements permitted; name only where no capability abstraction is possible |
-| Named agents | `Pillars/Knowledge Capital/Governance` | None | KC agent config is inherently specific |
+| Named agents | `Pillars/Knowledge Capital/Agents` | None | KC agent config is inherently specific |
 | Named activities | `Pillars/Knowledge Islands/Agents` | Soft | |
 | Named activities | `Pillars/Knowledge Capital/Agents` | None | KC agent config may list assigned activities |
 | Specific tools or integrations | `Pillars/Knowledge Islands/Conventions` | Hard | Generic capability references permitted |
 | Specific tools or integrations | `Pillars/Knowledge Islands/Processes` | Hard | |
-| Specific tools or integrations | `Pillars/Knowledge Capital/Governance` | None | KC tools config is inherently specific |
+| Specific tools or integrations | `Pillars/Knowledge Capital/Tools` | None | KC tools config is inherently specific |
 | KM/PKM/KB terminology | `Pillars` | Soft | Historical context permitted; document inline |
 
 ---

@@ -88,6 +88,6 @@ Daily automation that keeps the island aligned with the Linear project managemen
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance|Governance]] - parent index
+- [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - parent index
 - [[Pillars/Knowledge Islands/Activities/Authoring Activities|Authoring Activities]] - how to design and maintain activities
 - [[Pillars/Knowledge Islands/Tools/Claude/Activities/Activities|Tools/Claude/Activities]] - the prompt library (Layer 5)

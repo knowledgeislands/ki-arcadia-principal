@@ -62,4 +62,4 @@ The structural scaffolding (folder structure, stub index notes, authoring conven
 - [[Pillars/Knowledge Islands/Tools/Claude/Activities/Activities|Tools/Claude/Activities]] - prompt library
 - [[Pillars/Knowledge Islands/Activities/Authoring Activities|Authoring Activities]] - authoring conventions
 - [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - Layer 1 activities
-- [[Pillars/Knowledge Islands/Governance|Governance]] - parent governance layer
+- [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - parent index

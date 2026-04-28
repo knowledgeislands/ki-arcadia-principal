@@ -34,5 +34,5 @@ None currently defined. Arcadia follows the canonical pattern in full. If deviat
 
 ## Related Topics
 
-- [[Pillars/Knowledge Capital/Governance|Governance]] - parent index
+- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - parent index
 - [[Pillars/Knowledge Islands/Processes/Enactment Process|Enactment Process]] - the canonical pattern this instance follows

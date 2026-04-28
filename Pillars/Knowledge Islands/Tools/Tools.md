@@ -51,6 +51,6 @@ The M365 integration covering Outlook, OneDrive, and Power Automate. [[Microsoft
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance|Governance]] - parent index
+- [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - parent index
 - [[Pillars/Knowledge Islands/Agents/Agents|Agents]] - the operating layer that uses these tools
 - [[Integrations|Integrations]] - island-specific connection identifiers and MCP configuration for each tool

@@ -32,6 +32,6 @@ The pattern is portable: any island adopts it as their governance baseline, loca
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance|Governance]] - parent index
+- [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - parent index
 - [[Pillars/Knowledge Islands/Concept/Concept|Concept]] - the conceptual model; defines standing, citizenship, and council authority that these processes enact
 - [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - holds this island's specific council membership and citizenship records
