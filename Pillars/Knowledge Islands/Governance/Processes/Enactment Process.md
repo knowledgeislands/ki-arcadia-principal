@@ -65,7 +65,7 @@ Statuses progress in order: `draft` → `ready` → ratification decision (`in-p
    - **Ratify** → status moves to `in-progress`; rollout begins
    - **Return to draft** → feedback is recorded; the cycle continues
    - **Reject** → status moves to `rejected`; reasons are documented; the proposal settles with a record of why
-6. On ratification, the proposal's agreed changes are performed and any output is written to its intended destinations
+6. On ratification, the proposal's agreed changes are performed and any output is written to its Checklist
 7. Status moves to `rolled-out`; a post-change review is conducted
 8. Status moves to `reviewed`, then `completed`; the proposals index row is updated
 9. The proposal document is deleted - its knowledge is now in Pillars or Resources, and the proposal document has no residual value
@@ -95,9 +95,9 @@ Fill in what is known at opening; update as further inputs are identified during
 
 Outputs should be complete and accurate before the change moves to `ready`.
 
-### Intended Destinations
+### Checklist
 
-A file-level map of every create, update, and delete operation the change will perform. This section doubles as the rollout checklist - items are ticked off as they are executed.
+A list of the operations the change will perform. This section doubles as the rollout status - items are ticked off as they are executed.
 
 ### Open Questions
 
@@ -136,7 +136,7 @@ Priority may increase over time (e.g. `medium` → `urgent` as a launch approach
 
 ## Rollout
 
-Rollout means writing the final KI notes to their intended destinations. It is not complete until:
+Rollout means writing the operations from their Checklist. It is not complete until:
 
 - All creates, updates, and deletes listed in the proposal document have been executed
 - Index notes for any new folders have been created

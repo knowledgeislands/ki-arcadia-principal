@@ -53,7 +53,7 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 ---
 
-## Intended Destinations
+## Checklist
 
 - [x] Define the constitutional concept - Charter (containing Identity) and Conformance
 - [x] Create `Activities/Constitutional/` group and Conformance activity

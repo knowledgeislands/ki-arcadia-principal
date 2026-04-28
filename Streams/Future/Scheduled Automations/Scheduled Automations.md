@@ -24,7 +24,7 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 ---
 
-## Intended Destinations
+## Checklist
 
 - [ ] **Proactive meeting prep heartbeat** — A frequent check (every 15-30 minutes during working hours, e.g. `*/15 9-18 * * 1-5`) that detects an imminent meeting and automatically sends a prep brief pulling from prior meeting notes and Calendar context. Only fires when a meeting is found.
 - [ ] **Email intelligence in morning briefing** — Extend the morning briefing task to include a nightly scan of the email inbox. Distil active threads into a 3-5 line awareness layer: what is live, what needs attention, what can wait.

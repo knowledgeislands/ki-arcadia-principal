@@ -37,17 +37,13 @@ Do not skip step 2. The vault backup should always reflect the currently deploye
 
 ## Contents
 
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Week at a Glance Artifact|Week at a Glance Artifact]] - rolling next-7-days multi-calendar overview with per-day summaries
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Slack Digest Artifact|Slack Digest Artifact]] - last 24 hours of channel conversations (discovered by name prefix) and DMs, with a 2-3 sentence per-channel summary and one-liner DMs
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Linear Open Issues Tracker Artifact|Linear Open Issues Tracker Artifact]] - workspace-wide open-issues view grouped by project and priority
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Email Pulse Artifact|Email Pulse Artifact]] - live, read-only companion to [[Email Status|Email Status]], with an optional per-folder message drill-down
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Valle Armonia Guides Artifact|Valle Armonia Guides Artifact]] - static tab-navigated viewer for the six living guides in the vallearmonia-website repo; content embedded at update time, no runtime tool calls
+_Knowledge Islands has no build in Live Artifacts at this time_
 
 ---
 
 ## Capturing a New Recipe
 
-Paste the following into any live-artifact conversation to write a recipe note and initial HTML backup back to this folder. It leans on the specific Knowledge Island's skill and the canonical shape of [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Week at a Glance Artifact|Week at a Glance Artifact]], so it produces a sibling note without re-specifying the whole format each time.
+Paste the following into any live-artifact conversation to write a recipe note and initial HTML backup back to this folder. It leans on the specific Knowledge Island's skill and an existing Live Artifact, so it produces a sibling note without re-specifying the whole format each time.
 
 ```markdown
 Save this artifact as a recipe note in my Knowledge Island.
@@ -56,7 +52,7 @@ Use the specific Knowledge Island's skill in SAVE mode.
 
 Recipe note path: `Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/<Artifact Name> Artifact.md`
 
-Reference note with the canonical shape: [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Week at a Glance Artifact|Week at a Glance Artifact]] - follow its structure exactly.
+`Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/<Existing Artifact Name> Artifact.md` is the reference note with the canonical shape - follow its structure exactly.
 
 Required sections, in this order:
 

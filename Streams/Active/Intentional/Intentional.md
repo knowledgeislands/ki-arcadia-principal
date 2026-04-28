@@ -39,7 +39,7 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 ---
 
-## Intended Destinations
+## Checklist
 
 - [ ] Update `Pillars/Knowledge Islands/Concept/Concept.md` - add Intention to the model (section TBD)
 

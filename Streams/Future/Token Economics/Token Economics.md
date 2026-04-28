@@ -41,7 +41,7 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 ---
 
-## Intended Destinations
+## Checklist
 
 - [ ] Create token economics convention note at `Pillars/Knowledge Islands/Governance/` (path TBD once scope is resolved)
 - [ ] Document findings as guidance in the relevant Layer 5 prompts

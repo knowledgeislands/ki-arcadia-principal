@@ -33,7 +33,7 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 ---
 
-## Intended Destinations
+## Checklist
 
 _Not yet specified - this stream needs a planning pass before destinations can be defined._
 

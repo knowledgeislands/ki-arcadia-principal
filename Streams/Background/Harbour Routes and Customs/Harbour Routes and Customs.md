@@ -43,7 +43,7 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 ---
 
-## Intended Destinations
+## Checklist
 
 - [ ] `Pillars/Knowledge Islands/Concept/Concept.md` - replace `[!todo] Customs and Routes` with conceptual prose
 - [ ] `Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure.md` - replace `[!todo] Harbour` with structural conventions for the `+/` inbox pattern

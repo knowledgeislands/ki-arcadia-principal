@@ -24,7 +24,7 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 ---
 
-## Intended Destinations
+## Checklist
 
 - [ ] **Semantic retrieval (RAG)** — Currently relying on keyword/filename search and selective reading. Worth investigating once island size makes this feel slow. Options: Smart Connections Obsidian plugin, or a local vector store (Chroma/Qdrant). No urgency until the island grows significantly.
 - [ ] **Subagent routing by task type** — For background and batch tasks (inbox processing, nightly review), route to a lighter model rather than Sonnet. Reduces cost and preserves the larger model budget for reasoning-heavy work. More relevant if moving to API-based access than current Cowork usage.

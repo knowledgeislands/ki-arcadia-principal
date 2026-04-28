@@ -47,7 +47,7 @@ The order follows the folder structure of `Pillars/Knowledge Islands/`, leaf nod
 
 ---
 
-## Intended Destinations
+## Checklist
 
 - [ ] All index notes under `Pillars/Knowledge Islands/Governance/` reviewed and enriched
 - [ ] All index notes under `Pillars/Knowledge Islands/` reviewed and enriched

@@ -35,7 +35,7 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 ---
 
-## Intended Destinations
+## Checklist
 
 - [ ] Define what "proposal-ready" means - criteria for when a stream idea is sufficiently developed to become a formal proposal
 - [ ] Define the proposal note format - what a well-formed proposal contains, how it links to source material and rationale

@@ -32,7 +32,7 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 ---
 
-## Intended Destinations
+## Checklist
 
 - [ ] Create `Pillars/Knowledge Islands/Governance/Conventions/Boundary Rules.md`
 - [ ] Update `Pillars/Knowledge Islands/Governance/Conventions/Conventions.md` index to reference the new note

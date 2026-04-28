@@ -23,7 +23,7 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 ---
 
-## Intended Destinations
+## Checklist
 
 - [ ] Research the Bullet Journal methodology from primary sources — [bulletjournal.com](https://bulletjournal.com) / Ryder Carroll's original method
 - [ ] Identify which BuJo concepts map cleanly to Obsidian's daily/weekly/monthly note structure and which require adaptation

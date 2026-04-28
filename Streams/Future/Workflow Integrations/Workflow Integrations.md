@@ -24,7 +24,7 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 ---
 
-## Intended Destinations
+## Checklist
 
 - [ ] **n8n** — Investigate [n8n](https://n8n.io/) as a workflow automation layer; assess whether it adds value over the existing Cowork scheduled task approach or solves problems the current stack cannot
 - [ ] **Node-RED** — Investigate [Node-RED](https://nodered.org/) as a flow-based programming tool for wiring together integrations; assess fit for event-driven island automation

@@ -28,6 +28,7 @@ Streams currently receiving active attention - projects being worked on now.
 | [[Streams/Active/Kit Legal Inception/Kit Legal Inception\|Kit Legal Inception]] | `draft` | `medium` |
 | [[Streams/Active/Kit Principal Inception/Kit Principal Inception\|Kit Principal Inception]] | `draft` | `medium` |
 | [[Streams/Active/Wiki Link Format/Wiki Link Format\|Wiki Link Format]] | `draft` | `medium` |
+| [[Streams/Active/Page Registry/Page Registry\|Page Registry]] | `draft` | `medium` |
 
 ---
 
