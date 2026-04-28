@@ -59,7 +59,7 @@ All file paths below are relative to $REPOSITORY.
 
 ## Step 1 - Load context
 Read $REPOSITORY/CLAUDE.md and $REPOSITORY/Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons.md (pre-flight check).
-Read $REPOSITORY/Pillars/Knowledge Capital/Linear Workspace.md - this contains the Initiative → KB Mapping table, naming conventions, and project labels.
+Read $REPOSITORY/Pillars/Knowledge Capital/Governance/Activities/Linear/Linear.md - this contains the Initiative → KB Mapping table, naming conventions, and project labels.
 Read $REPOSITORY/Pillars/Knowledge Islands/Governance/Tools/Linear/Linear.md - this contains the generic MCP connection details and browser-based interaction patterns.
 
 ## Step 2 - Fetch current initiatives

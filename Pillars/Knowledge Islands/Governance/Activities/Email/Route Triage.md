@@ -161,7 +161,7 @@ Write $EMAIL_DIR/Email Routing Queue.md (create with full frontmatter and headin
 - Set `Last Route Triage Run: <now>` (no quiet counter - this was an active run).
 - The `## Suggestions` section intro callout must contain exactly two lines:
   - `> If you make changes, tell Claude "run the email route review" to action it`
-  - `> See [[Pillars/Knowledge Capital/Email/Email Routing Config|Email Routing Config]] for the full rule ordering and available routes` Preserve these lines verbatim if already present; add them if missing.
+  - `> See [[Pillars/Knowledge Capital/Governance/Activities/Email/Email Routing Config|Email Routing Config]] for the full rule ordering and available routes` Preserve these lines verbatim if already present; add them if missing.
 - Preserve all existing Suggestion rows; append any new `unknown` suggestions from Step 4c.
 
 ## Step 7 - Chat acknowledgement

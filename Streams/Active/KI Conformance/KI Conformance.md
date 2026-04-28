@@ -43,13 +43,13 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 | New note | `Tools/Claude/Activities/Constitutional/Constitutional.md` — Layer 5 group index |
 | New note | `Tools/Claude/Activities/Constitutional/Conformance.md` — executable Layer 5 prompt |
 | New note | `Knowledge Capital/Charter.md` — authoritative adoption and activation record |
-| New notes | `Knowledge Capital/Email/` stubs — veto record for Email activity group |
-| New note | `Knowledge Capital/Linear Workspace.md` — veto record for Linear activity group |
+| New notes | `Knowledge Capital/Governance/Activities/Email/` stubs — veto record for Email activity group |
+| New note | `Knowledge Capital/Governance/Activities/Linear/Linear.md` — veto record for Linear activity group |
 | Edited | `Concept.md` — constitutional references in Territories/Archipelagos and Governance |
 | Edited | `Activities/Activities.md` — Constitutional group added; constitutional/adoptable distinction |
 | Edited | `Activities/Email/Email.md` — Adoption Requirements section |
 | Edited | `Knowledge Capital/Knowledge Capital.md` — Charter section; Activities reframed |
-| Edited | `Knowledge Capital/Activities/` notes — reframed as timing model, not activation record |
+| Edited | `Knowledge Capital/Governance/Activities/` notes — reframed as timing model, not activation record |
 
 ---
 
@@ -65,7 +65,7 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 - [ ] Update Authoring Activities — document constitutional concept and Adoption Requirements convention
 - [ ] Update Canonical Meta Notes — add Charter to the cold-start reading list
 - [ ] Update Scheduled Task Audit description — Conformance now runs first at 04:30
-- [ ] Review KC structure alignment with KI and the five-layer model
+- [x] Review KC structure alignment with KI and the five-layer model
 - [ ] Audit for content duplication between KI and KC — establish canonical source of truth for each piece of information
 - [ ] Update CLAUDE.md to reflect current structure and constitutional model
 

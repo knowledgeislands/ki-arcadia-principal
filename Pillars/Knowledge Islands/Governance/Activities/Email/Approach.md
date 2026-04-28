@@ -212,7 +212,7 @@ Before writing a new suggestion, check for an existing row with the same `Patter
 | `Email Routing Config.md` | Route Review | Route Triage (cache miss), Route Review (taxonomy check) | Rule ordering |
 | `Route - *.md` | Route Review | Route Triage (cache miss), Route Review (taxonomy check) | Source of truth; compiled tables derived from these |
 
-The KB-specific email files live in `$EMAIL_DIR` (`Knowledge Capital/Email/`) in the text store. The remaining files live in `$TRACKING_DIR` (`tasks/email-triage/`) in the temporary store.
+The KB-specific email files live in `$EMAIL_DIR` (`Knowledge Capital/Governance/Activities/Email/`) in the text store. The remaining files live in `$TRACKING_DIR` (`tasks/email-triage/`) in the temporary store.
 
 `routing-table.json5` and `aged-table.json5` are **session-scoped caches** - derived from source files and safe to delete at any time; they are regenerated on the next cache miss. They must not be committed to the text store. `tracking.json5` is **persistent** and should be retained across sessions as it records classification history used by Route Drift.
 

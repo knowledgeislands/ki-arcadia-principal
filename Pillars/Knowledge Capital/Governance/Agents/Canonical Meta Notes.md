@@ -27,7 +27,7 @@ The ordered list of notes that [[Knowledge Rebuild]] loads to reconstruct the is
 - `Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons.md`
 - `Pillars/Knowledge Islands/Governance/Tools/Claude/Claude.md`
 - `Pillars/Knowledge Islands/Governance/Activities/Activities.md`
-- `Pillars/Knowledge Capital/Agents/Communication Style.md`
+- `Pillars/Knowledge Capital/Governance/Agents/Communication Style.md`
 - `Pillars/Knowledge Islands/Governance/Agents/Claude/Claude Behaviour.md`
 - `Pillars/Knowledge Islands/Governance/Conventions/Residency/Residency.md`
 - `Pillars/Knowledge Islands/Governance/Agents/Claude/Memory Architecture.md`
