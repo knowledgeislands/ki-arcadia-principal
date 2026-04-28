@@ -26,7 +26,7 @@ Arcadia is the Knowledge Island of Knowledge Islands - a legendary utopia in the
 
 ## Conventions
 
-[[Knowledge Islands/Conventions/Conventions]] defines the shared language for the entire island: note format and structure, frontmatter properties and tags, folder layout, routing rules, and the enforced boundary between Pillars and Resources. Conventions are not stylistic preferences - they are the mechanism through which notes remain consistent enough to be processed by both human and AI agents without ambiguity.
+[[Knowledge Islands/Conventions/Conventions|Conventions]] defines the shared language for the entire island: note format and structure, frontmatter properties and tags, folder layout, routing rules, and the enforced boundary between Pillars and Resources. Conventions are not stylistic preferences - they are the mechanism through which notes remain consistent enough to be processed by both human and AI agents without ambiguity.
 
 Two sub-areas carry the most weight. [[Notes]] defines what a note is and how it is written - including the specialised types (collection cards, meeting notes, session digests, activity notes) that extend the base format. [[Library]] defines where notes live - the top-level folder structure, routing rules, index note conventions, and the Pillars/Resources boundary.
 
@@ -42,7 +42,7 @@ Two sub-areas carry the most weight. [[Notes]] defines what a note is and how it
 
 [[Knowledge Islands/Activities/Activities]] documents the ongoing work that keeps the island structurally sound, content-healthy, and aligned with connected services. Activities divide into two kinds: scheduled automations (time-driven, running without human initiation - daily briefings, email triage, Linear sync, and periodic health checks) and conversational activities (chat-triggered, human-in-the-loop - inbox reviews, status sweeps, wikilink audits). Together they implement the maintenance cycle that prevents the island from drifting from the world it reflects.
 
-The prompts that drive scheduled activities live at Layer 5 in [[Claude/Activities/Activities|Tools/Claude/Activities]]. The five-layer model that separates what an activity does from how it is prompted is documented in [[Authoring Activities]].
+The prompts that drive scheduled activities live in [[Claude/Activities/Activities|Tools/Claude/Activities]]. A layered model that separates what an activity does from how it is prompted is documented in [[Authoring Activities]].
 
 ---
 

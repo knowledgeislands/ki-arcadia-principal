@@ -138,13 +138,13 @@ Wikilinks (`[[Note Name]]`) are preferred over repeating content - link rather t
 Body links use the shortest unique path that resolves unambiguously. The algorithm is the same one Obsidian uses:
 
 1. Use the bare filename if it is unique across the vault — `[[Concept]]`
-2. If another note shares the same filename, use the minimum path prefix needed to disambiguate — `[[Structure/Structure]]` rather than `[[Conventions/Structure/Structure]]` if that is sufficient
+2. If another note shares the same filename, use the minimum path prefix needed to disambiguate, and add a pipe alias showing just the leaf name — `[[Knowledge Islands/Processes/Processes|Processes]]` rather than the bare path `[[Knowledge Islands/Processes/Processes]]`
 
-Agents writing a new body link must check for filename collisions first. If another note shares the filename, use the shortest disambiguating prefix rather than the bare name.
+Agents writing a new body link must check for filename collisions first. If another note shares the filename, use the shortest disambiguating prefix and alias to the leaf name.
 
 Path-form links (`[[Full/Path/To/Note]]`) are accepted where they already exist but should not be introduced in new writing. Footer sections are an explicit exception — they always use the full absolute path with an alias (see the footer link format rules above).
 
-The pipe alias (`[[Note|Display Text]]`) should be omitted in body links unless the display text genuinely differs from the filename. Where the bare name reads clearly, `[[Concept]]` is preferred over `[[Concept|Concept]]`.
+The pipe alias should be omitted for unique bare-name links — `[[Concept]]` is preferred over `[[Concept|Concept]]`. It is required whenever a path prefix is needed, so that the rendered link shows only the leaf name.
 
 Images and diagrams used by a single note must be saved in the same folder as that note. Images shared across multiple notes may sit in a folder common to all the notes that use them. Do not place note-specific assets in `+` - that folder is the inbox for unsorted captures, not an asset store.
 
