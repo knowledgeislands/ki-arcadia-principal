@@ -23,7 +23,7 @@ This folder holds Arcadia's island-specific conventions: the vocabulary that mak
 
 ## Routing Rules
 
-[[Routing Rules|Routing Rules]] captures the KB-specific routing decisions that supplement the general conventions. It maps Arcadia's three Pillars domains (Knowledge Islands, Knowledge Capital, Productivity) and lists the common judgment calls that recur during filing - where working memory goes, how imported external material is treated, how the Memory Folder Migration pattern is applied. It does not restate generic rules already defined in [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure|Structure]]; it records only the decisions that are specific to this island's shape.
+[[Routing Rules|Routing Rules]] captures the island-specific routing decisions that supplement the general conventions. It maps Arcadia's three Pillars domains (Knowledge Islands, Knowledge Capital, Productivity) and lists the common judgment calls that recur during filing - where working memory goes, how imported external material is treated, how the Memory Folder Migration pattern is applied. It does not restate generic rules already defined in [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure|Structure]]; it records only the decisions that are specific to this island's shape.
 
 ---
 

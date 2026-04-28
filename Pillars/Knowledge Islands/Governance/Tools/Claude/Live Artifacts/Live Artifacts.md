@@ -29,7 +29,7 @@ Each live artifact is represented by a pair of sibling files:
 
 1. Call `mcp__cowork__update_artifact` with the revised HTML - get it approved.
 2. Write the HTML backup: read the artifact from its path on disk and write it to `<Artifact Name>.html` in this folder. The recipe note's `## Updating` section specifies the exact paths.
-3. Update the recipe note with whatever changed - use the `hnrkb` skill in UPDATE mode, read first and merge in.
+3. Update the recipe note with whatever changed - use the specific Knowledge Island's skill in UPDATE mode, read first and merge in.
 
 Do not skip step 2. The vault backup should always reflect the currently deployed version.
 
@@ -47,12 +47,12 @@ Do not skip step 2. The vault backup should always reflect the currently deploye
 
 ## Capturing a New Recipe
 
-Paste the following into any live-artifact conversation to write a recipe note and initial HTML backup back to this folder. It leans on the `hnrkb` skill and the canonical shape of [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Week at a Glance Artifact|Week at a Glance Artifact]], so it produces a sibling note without re-specifying the whole format each time.
+Paste the following into any live-artifact conversation to write a recipe note and initial HTML backup back to this folder. It leans on the specific Knowledge Island's skill and the canonical shape of [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Week at a Glance Artifact|Week at a Glance Artifact]], so it produces a sibling note without re-specifying the whole format each time.
 
 ```markdown
 Save this artifact as a recipe note in my HNR island.
 
-Use the hnrkb skill in SAVE mode. If the HNR KB folder isn't mounted in this session, call `request_cowork_directory` first; the host path is `~/obsidian/vaults/hnr-knowledge-base`.
+Use the specific Knowledge Island's skill in SAVE mode. If the HNR KB folder isn't mounted in this session, call `request_cowork_directory` first; the host path is `~/obsidian/vaults/hnr-knowledge-base`.
 
 Recipe note path: `Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/<Artifact Name> Artifact.md`
 

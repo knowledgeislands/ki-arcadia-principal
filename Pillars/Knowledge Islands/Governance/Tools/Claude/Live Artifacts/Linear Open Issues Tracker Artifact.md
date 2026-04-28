@@ -128,7 +128,7 @@ Create a Cowork HTML artifact called "Linear Open Issues Tracker" that:
 If an error banner appears on open, surface the thrown message so a broken
 MCP connector is diagnosable without DevTools.
 - Embed the comment <!-- Recipe: Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Linear Open Issues Tracker Artifact.md --> as the first line of the <head>; preserve it through any regeneration or patch.
-- If you modify this artifact, update the recipe note at the path in that comment - use the hnrkb skill in SAVE mode. Read the note first and merge in; update only the sections that changed.
+- If you modify this artifact, update the recipe note at the path in that comment - use the specific Knowledge Island's skill in SAVE mode. Read the note first and merge in; update only the sections that changed.
 ```
 
 One-liner version that gets you the same result via the usual clarification flow:
@@ -156,7 +156,7 @@ Common in-place changes and where to make them:
 - **Tune the cache TTL** - change the `CACHE_TTL` constant (milliseconds). What's cached: `{ issues: state.issues, projectsByIdEntries: Array.from(state.projectsById.entries()) }`. Filter chips are always re-derived from the cached issues array on each hit. Set `CACHE_TTL = 0` to disable caching entirely and always fetch live.
 - **Rewired MCP connector** - see **MCP Connector Rewiring** in [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]]. Constants to update: the `ISSUES_TOOL` and `PROJECTS_TOOL` constants in the script and both entries of the `mcp_tools` declaration. A mismatch fires the error banner with `list_issues failed for state=backlog`.
 
-Verify per the **Two-Mechanic Update Protocol**: open the artifact, hit Reload, check the meta line (issue count, teams count, updated timestamp) plus the state-type colour on a known in-progress issue. On a second open within 5 minutes, confirm the cache badge reads "⚡ from cache" and the issue count matches. Then apply **Recipe Self-Synchronisation** - update this note at `Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Linear Open Issues Tracker Artifact.md` using the `hnrkb` skill.
+Verify per the **Two-Mechanic Update Protocol**: open the artifact, hit Reload, check the meta line (issue count, teams count, updated timestamp) plus the state-type colour on a known in-progress issue. On a second open within 5 minutes, confirm the cache badge reads "⚡ from cache" and the issue count matches. Then apply **Recipe Self-Synchronisation** - update this note at `Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Linear Open Issues Tracker Artifact.md` using the specific Knowledge Island's skill.
 
 ---
 

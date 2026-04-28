@@ -19,13 +19,12 @@ The [[Pillars/Knowledge Islands/Governance/Activities/Constitutional/Conformance
 
 ## Identity
 
-Fixed parameters that distinguish this island. Automations and skill prompts read from here rather than hardcoding values.
+Fixed parameters that distinguish this Knowledge Island. Automations and skill prompts read from here rather than hardcoding values.
 
 | Parameter              | Value                                                                                                               |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | **Territory name**     | Arcadia                                                                                                             |
 | **Island name**        | Arcadia Principal                                                                                                   |
-| **KB name**            | Arcadia Principal                                                                                                   |
 | **Repository folder**  | `arcadia-principal`                                                                                                 |
 | **Skill name**         | `arcadia-principal`                                                                                                 |
 | **Skill triggers**     | "save to Arcadia", "add to Arcadia", "search Arcadia", "what does Arcadia say about", "update the Arcadia notes on" |
@@ -50,7 +49,7 @@ Adoption positions for all non-constitutional activity groups. Every group must 
 
 ## Scheduled Activities
 
-Active scheduled automations within adopted groups. An activity listed here is enabled and deployed to the scheduler. An activity defined in the KB but not listed here is not running.
+Active scheduled automations within adopted groups. An activity listed here is enabled and deployed to the scheduler. An activity defined in the island but not listed here is not running.
 
 | Activity                                                                                                   | Group          | Day Type           | Time  | Status  |
 | ---------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | ----- | ------- |
@@ -93,7 +92,6 @@ Active integrations. See [[Integrations|Integrations]] for MCP prefix detail.
 
 | Element              | Value                                                                          |
 | -------------------- | ------------------------------------------------------------------------------ |
-| KB skill             | `arcadia`                                                                      |
 | Memory configuration | Auto-memory at `.auto-memory/` in the Cowork workspace; indexed at `MEMORY.md` |
 
 ---

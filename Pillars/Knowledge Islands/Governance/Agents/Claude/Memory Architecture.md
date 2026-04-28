@@ -48,11 +48,11 @@ The `type` field is a Cowork convention - not part of the base [Claude Code auto
 
 The filename convention is `{type}_{scope_prefix}_{descriptor}.md`, where `scope_prefix` is one of:
 
-| Scope prefix                 | Meaning                                      | Example                            |
-| ---------------------------- | -------------------------------------------- | ---------------------------------- |
-| KB identifier (e.g. `hnrkb`) | Specific to this KB                          | `feedback_hnrkb_operations.md`     |
-| User identifier (e.g. `kit`) | Specific to this user                        | `user_kit_profile.md`              |
-| `any`                        | Cross-context - applies to any KB or session | `feedback_any_claude_behaviour.md` |
+| Scope prefix                                           | Meaning                                                    | Example                                                |
+| ------------------------------------------------------ | ---------------------------------------------------------- | ------------------------------------------------------ |
+| Knowledge Island identifier (e.g. `arcadia-principal`) | Specific to this Knowledge Island                          | `feedback_{island-name}_operations.md` |
+| User identifier (e.g. `kit`)                           | Specific to this user                                      | `user_kit_profile.md`                                  |
+| `any`                                                  | Cross-context - applies to any Knowledge Island or session | `feedback_any_claude_behaviour.md`                     |
 
 The prefix distinguishes files from multiple KBs sharing the same `.auto-memory/` directory, and signals whether a rule is KB-specific or universally applicable.
 

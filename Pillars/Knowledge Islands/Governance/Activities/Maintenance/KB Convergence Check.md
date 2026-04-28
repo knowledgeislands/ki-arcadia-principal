@@ -6,7 +6,7 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Adhoc activity to ensure generic Knowledge Management notes remain identical across islands and cross-pollinate improvements
+purpose: Adhoc activity to ensure generic Knowledge Islands notes remain identical across islands and cross-pollinate improvements
 author: Written with Claude
 ---
 
@@ -14,21 +14,21 @@ author: Written with Claude
 
 ## Overview
 
-An adhoc activity that compares the generic Knowledge Management notes across all islands, surfaces any drift that has accumulated, and propagates improvements from one KB to the others. Ensures the portability model stays intact: KB-specific content stays in [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]], everything else stays identical.
+An adhoc activity that compares the generic Knowledge Islands notes across all islands, surfaces any drift that has accumulated, and propagates improvements from one Knowledge Island to the others. Ensures the portability model stays intact: Knowledge Island specific content stays in [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]], everything else stays identical.
 
-Run this when changes have been made to shared notes in one KB, when a new KB is being onboarded, or as a quarterly health check on the portability structure.
+Run this when changes have been made to shared notes in one Knowledge Island, when a new Knowledge Island is being onboarded, or as a quarterly health check on the portability structure.
 
 ---
 
 ## When
 
-Adhoc - _"kb convergence check"_.
+Adhoc - _"ki convergence check"_.
 
 ---
 
 ## What It Does
 
-1. Identifies all islands with the generic Knowledge Management structure
+1. Identifies all islands with the generic Knowledge Islands structure
 2. Compares each shared note across KBs, flagging any divergence
 3. Checks Knowledge Capital files for new parameters that should be standardised
 4. Checks Tags for any tags in use that are not yet in the superset

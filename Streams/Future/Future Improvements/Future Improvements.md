@@ -4,7 +4,7 @@ tags:
   - topic/productivity
   - topic/knowledge-management
 status: current - April 2026
-purpose: Capture future improvements and tools to investigate for the Knowledge Management system
+purpose: Capture future improvements and tools to investigate for Knowledge Islands
 author: Mixed
 ---
 
@@ -12,7 +12,7 @@ author: Mixed
 
 ## Overview
 
-A running list of tools, integrations, and improvements worth investigating for the knowledge management system.
+A running list of tools, integrations, and improvements worth investigating for Knowledge Islands.
 
 ---
 

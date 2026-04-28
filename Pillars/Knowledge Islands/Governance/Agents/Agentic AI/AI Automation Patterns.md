@@ -189,10 +189,10 @@ Preserve this comment through any regeneration or patch. It is the single source
 
 ```
 - Embed the comment <!-- Recipe: Pillars/.../This Recipe.md --> as the first line of the <head>; preserve it through any regeneration or patch.
-- If you modify this artifact, update the recipe note at the path in that comment - use the hnrkb skill in SAVE mode. Read the note first and merge in; update only the sections that changed: Overview for scope changes, Key Design Decisions for structural changes, Updating for new in-place edit patterns, Potential Enhancements to mark items as built-in.
+- If you modify this artifact, update the recipe note at the path in that comment - use the specific Knowledge Island's skill in SAVE mode. Read the note first and merge in; update only the sections that changed: Overview for scope changes, Key Design Decisions for structural changes, Updating for new in-place edit patterns, Potential Enhancements to mark items as built-in.
 ```
 
-**After modifying an artifact** - update the recipe note using the `hnrkb` skill in SAVE mode. Read the note first and merge in, preserving existing structure.
+**After modifying an artifact** - update the recipe note using the specific Knowledge Island's skill in SAVE mode. Read the note first and merge in, preserving existing structure.
 
 ---
 

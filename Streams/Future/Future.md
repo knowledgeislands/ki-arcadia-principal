@@ -17,7 +17,7 @@ Ideas and projects not yet started - queued for when the time or circumstances a
 
 ## Contents
 
-- [[Future Improvements|Future Improvements]] - planned enhancements, integrations, and open ideas for the Knowledge Management system
+- [[Future Improvements|Future Improvements]] - planned enhancements, integrations, and open ideas for Knowledge Islands
 
 ---
 

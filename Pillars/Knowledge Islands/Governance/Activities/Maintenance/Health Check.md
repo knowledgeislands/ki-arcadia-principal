@@ -61,8 +61,8 @@ Read $REPOSITORY/Pillars/Knowledge Islands/Governance/Agents/Claude/Island Skill
 Compare it against CLAUDE.md. Identify any gaps, contradictions, or outdated references.
 List proposed changes - do not apply them yet.
 
-## Step 3 - Knowledge Management folder review
-Read the notes in $REPOSITORY/Pillars/Knowledge Islands/Governance/ (top level only).
+## Step 3 - Knowledge Islands folder review
+Read the notes in $REPOSITORY/Pillars/Knowledge Islands/Governance/.
 Check for: stale content, broken wikilinks, notes that reference old paths or removed files, and anything that contradicts CLAUDE.md.
 List proposed changes - do not apply them yet.
 

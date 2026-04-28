@@ -111,7 +111,7 @@ Constants at the top of the script:
   search/discover/read.
 
 - Embed the comment <!-- Recipe: Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Slack Digest Artifact.md --> as the first line of the <head>; preserve it through any regeneration or patch.
-- If you modify this artifact, update the recipe note at the path in that comment - use the hnrkb skill in SAVE mode. Read the note first and merge in; update only the sections that changed.
+- If you modify this artifact, update the recipe note at the path in that comment - use the specific Knowledge Island's skill in SAVE mode. Read the note first and merge in; update only the sections that changed.
 ```
 
 One-liner version that gets you the same result via the usual clarification flow:
@@ -136,7 +136,7 @@ Common in-place changes and where to make them:
 - **Swap to deterministic summaries** - replace the body of `summariseChannel`/`summariseDM` with a JS-derived line. Avoids `sample()` latency and variance at the cost of warmth.
 - **Tune the cache TTL** - change the `CACHE_TTL` constant (milliseconds). What's cached: `{ channelBuckets, dmGroups, activeChannelCount }` where each channel entry carries pre-collected `summaryText`. Cache is written only after all `sample()` calls complete. Set `CACHE_TTL = 0` to disable caching entirely and always fetch live.
 
-Verify per the **Two-Mechanic Update Protocol**: open the artifact, hit Reload, confirm the subtitle reflects the new window, the prefix buckets repopulate, and each card shows a coherent paragraph rather than a fallback line. On a second open within 5 minutes, confirm the cache badge reads "⚡ from cache" and summary text is intact. The artifact has no diagnostics footer, so open the browser devtools console (or the Cowork artifact log) to catch silent parse failures - a malformed regex will render an empty section without a visible error. Adding a footer is listed as an enhancement below. Then apply **Recipe Self-Synchronisation** - update this note at `Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Slack Digest Artifact.md` using the `hnrkb` skill.
+Verify per the **Two-Mechanic Update Protocol**: open the artifact, hit Reload, confirm the subtitle reflects the new window, the prefix buckets repopulate, and each card shows a coherent paragraph rather than a fallback line. On a second open within 5 minutes, confirm the cache badge reads "⚡ from cache" and summary text is intact. The artifact has no diagnostics footer, so open the browser devtools console (or the Cowork artifact log) to catch silent parse failures - a malformed regex will render an empty section without a visible error. Adding a footer is listed as an enhancement below. Then apply **Recipe Self-Synchronisation** - update this note at `Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Slack Digest Artifact.md` using the specific Knowledge Island's skill.
 
 ---
 

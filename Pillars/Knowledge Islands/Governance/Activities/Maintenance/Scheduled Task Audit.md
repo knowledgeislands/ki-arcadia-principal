@@ -22,7 +22,7 @@ Full prompt comparison across all tasks is not currently possible - see [[#Known
 
 ## Schedule
 
-- **Task ID:** `hnrkb-scheduled-task-audit` - prefix defined in [[Pillars/Knowledge Capital/Charter|Charter]]
+- **Task ID:** `{skill-name}-scheduled-task-audit` - prefix defined in [[Pillars/Knowledge Capital/Charter|Charter]]
 - **Runs:** Weekdays at 05:00 - after the Conformance Check (04:30), before all other maintenance and briefing tasks - working days and cron defined in [[Schedule]]
 - **Cron:** See [[Schedule]] → Scheduled Task Audit cron
 
@@ -46,7 +46,7 @@ The practical effect: this audit can verify schedule/cron/description alignment 
 
 ## Prompt
 
-The prompt below is the canonical version. It must match the prompt stored in the `hnrkb-scheduled-task-audit` scheduled task - see [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] § Prompt Editing Discipline.
+The prompt below is the canonical version. It must match the prompt stored in the `{skill-name}-scheduled-task-audit` scheduled task - see [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] § Prompt Editing Discipline.
 
 ```txt
 You are running the Scheduled Task Audit. Your job is to verify that each live Cowork scheduled task has a corresponding KB note and that schedules match - and to self-verify this task's own prompt. Full prompt comparison across all tasks is not currently possible; see the Known Limitations section in the KB note.
@@ -67,7 +67,7 @@ Then read:
 Call mcp__scheduled-tasks__list_scheduled_tasks to retrieve all scheduled tasks and their metadata.
 
 ## Step 2 - Identify the corresponding KB note for each task
-For each task whose ID begins with the task prefix from KB Identity, locate the matching activity note in $ACTIVITIES_DIR/. The note filename corresponds to the task name (e.g. hnrkb-morning-briefing → Morning Briefing.md).
+For each task whose ID begins with the task prefix from KB Identity, locate the matching activity note in $ACTIVITIES_DIR/. The note filename corresponds to the task name (e.g. {skill-name}-morning-briefing → Morning Briefing.md).
 
 ## Step 3 - Verify schedule and description alignment
 For each task, read its KB note and check:

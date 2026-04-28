@@ -101,7 +101,7 @@ Create a Cowork HTML artifact called "Week at a Glance" that:
 - Inlines all CSS and JS; no localStorage; no external fetches.
 
 - Embed the comment <!-- Recipe: Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Week at a Glance Artifact.md --> as the first line of the <head>; preserve it through any regeneration or patch.
-- If you modify this artifact, update the recipe note at the path in that comment - use the hnrkb skill in SAVE mode. Read the note first and merge in; update only the sections that changed.
+- If you modify this artifact, update the recipe note at the path in that comment - use the specific Knowledge Island's skill in SAVE mode. Read the note first and merge in; update only the sections that changed.
 ```
 
 One-liner version that gets you the same result via the usual clarification flow:
@@ -126,7 +126,7 @@ Common in-place changes and where to make them:
 - **Rewired MCP connector** - see **MCP Connector Rewiring** in [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]]. Constants to update: the `LIST_EVENTS` and `LIST_CALENDARS` tool-name constants, and the two entries in the `mcp_tools` declaration. Parameter names passed to `list_events` are camelCase - `calendarId`, `startTime`, `endTime`, `timeZone`, `pageSize` - match the schema exactly; snake_case silently fails. If the moon-phase calendar is renamed, only `MOON_SUMMARY_REGEX` needs a look.
 - **Swap to narrative summaries** - replace the `summarise()` body with `await window.cowork.sample()` calls run in parallel via `Promise.all` over the days. Warmer tone at the cost of some latency and variance. See **Deterministic vs `sample()` Synthesis** in [[Pillars/Knowledge Islands/Governance/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]].
 
-Verify per the **Two-Mechanic Update Protocol**: open the artifact, hit Reload, check the footer timestamp and calendars-loaded count. Re-focus within 5 minutes and confirm the cache badge reads "⚡ from cache"; a cold open reads "↻ live · Nms". Then apply **Recipe Self-Synchronisation** - update this note at `Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Week at a Glance Artifact.md` using the `hnrkb` skill.
+Verify per the **Two-Mechanic Update Protocol**: open the artifact, hit Reload, check the footer timestamp and calendars-loaded count. Re-focus within 5 minutes and confirm the cache badge reads "⚡ from cache"; a cold open reads "↻ live · Nms". Then apply **Recipe Self-Synchronisation** - update this note at `Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Week at a Glance Artifact.md` using the specific Knowledge Island's skill.
 
 ---
 

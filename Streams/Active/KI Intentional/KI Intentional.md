@@ -19,7 +19,7 @@ A conceptual stream to explore where Intention fits in the Knowledge Islands mod
 
 ## Governance
 
-This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]] - the standard model for how streams enact change in the knowledge base.
+This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]].
 
 ---
 

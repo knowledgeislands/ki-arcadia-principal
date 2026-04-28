@@ -68,13 +68,12 @@ When creating or filing a note, route to the most specific matching folder:
 
 1. **Meeting note** → `Calendar/YYYY/YYYY-MM MonthName/YYYY-MM-DD [Meeting Name].md`; reference from the corresponding daily note
 2. **Session digest** → `Calendar/YYYY/YYYY-MM MonthName/YYYY-MM-DD Session - [Topic].md`; reference from the corresponding daily note
-3. **Knowledge management methodology or system design** → `Pillars/Knowledge Islands/Governance/[Title].md`
-4. **Internal knowledge on a topic** → `Pillars/[Topic]/[Title].md`
-5. **External knowledge on a topic** → `Resources/[Topic]/[Title].md`
-6. **Active project** → `Streams/Active/[Stream]/[Title].md`
-7. **Background stream** → `Streams/Background/[Title].md`
-8. **Concluded project** → `Streams/Settled/[Title].md`
-9. **Unsure** → `+/[Title].md` (inbox, to be filed)
+3. **Internal knowledge on a topic** → `Pillars/[Topic]/[Title].md`
+4. **External knowledge on a topic** → `Resources/[Topic]/[Title].md`
+5. **Active project** → `Streams/Active/[Stream]/[Title].md`
+6. **Background stream** → `Streams/Background/[Title].md`
+7. **Concluded project** → `Streams/Settled/[Title].md`
+8. **Unsure** → `+/[Title].md` (inbox, to be filed)
 
 `+/_Voice Notes/` is managed entirely by the voicenotes-sync plugin - do not write Claude-generated content there.
 
