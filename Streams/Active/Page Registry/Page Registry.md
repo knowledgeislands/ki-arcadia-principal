@@ -145,4 +145,4 @@ Rebuilding: a tending activity traverses the full vault, builds the complete reg
 ## Related Topics
 
 - [[Streams/Active/Active|Active]] - parent stream index
-- [[Streams/Active/Wiki Link Format/Wiki Link Format|Wiki Link Format]] - dependent stream; uses the registry for shortest-path link resolution
+- [[Streams/Settled/Wiki Link Format/Wiki Link Format|Wiki Link Format]] - completed stream; used the registry for shortest-path link resolution and migration

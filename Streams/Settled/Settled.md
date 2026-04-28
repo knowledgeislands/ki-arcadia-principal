@@ -19,6 +19,7 @@ Settled streams are projects and workstreams that have reached a natural conclus
 | Topic | Status | Priority |
 | ----- | ------ | -------- |
 | Conformance | `completed` | `urgent` |
+| [[Streams/Settled/Wiki Link Format/Wiki Link Format\|Wiki Link Format]] | `completed` | `medium` |
 
 ---
 
