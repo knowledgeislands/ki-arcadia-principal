@@ -12,11 +12,13 @@ author: Written with Claude
 
 Knowledge Islands is a model for how knowledge can be structured, governed, and evolved - across individuals, communities, and generations. It treats knowledge not as a filing problem but as a civilisation question: who creates it, who holds authority over it, how it travels, and how it endures.
 
+The model draws on Zettelkasten and PARA as foundations and extends their possibilities substantially through LLM AI, following the emerging pattern of AI-native wikis. Its canonical home is Arcadia — the Knowledge Island of Knowledge Islands, a legendary utopia that holds the portable definition from which every archipelago that adopts the model derives its baseline.
+
 The model is built in layers. It begins with what knowledge _is_ - distinct from information and from wisdom - and how it matures through a continuous cycle of capture, connection, and reflection. It then provides a geographic framework: the island as the home of knowledge, with its Capital, Library, and Streams; the territory as the unit of governance; the archipelago as the larger structure that forms when territories connect. A jurisdictional model defines who holds authority over canonical knowledge and who may act within it. A governance layer makes all of this practical day to day.
 
 The diagram below shows the model at a glance - the island at the centre, the cycle that keeps it alive, and the structures through which knowledge extends beyond the individual.
 
-![[knowledge-islands-at-a-glace.png|800]]
+![[knowledge-islands-at-a-glance.png|800]]
 
 The mind creates knowledge. Agents - human and artificial - act to evolve it. Knowledge Islands gives that knowledge structure, allowing it to extend beyond the limits of any single mind - without replacing the mind as the source of meaning.
 
@@ -153,14 +155,14 @@ Every person who interacts with an island has a standing within it:
 | ------------------------- | -------- | -------- | ------------------------------------------------------- |
 | **Standing**              | Informal | Full     | Full                                                    |
 | **Council eligibility**   | ✗        | Eligible | Member                                                  |
-| **Formal proposals**      | ✗        | ✗        | ✓ via [[Knowledge Islands/Processes/Enactment Process]] |
+| **Formal proposals**      | ✗        | ✗        | ✓ via [[Knowledge Islands/Processes/Enactment Process|Enactment Process]] |
 | **Informal contribution** | ✓        | ✓        | ✓                                                       |
 
 Citizenship is a prerequisite for council membership - a council member must be a Citizen of the island they govern. The council (or governor, for single-governor islands) grants citizenship. Citizenship is not restricted to a single island; a person may hold citizenship across multiple territories simultaneously, and therefore be eligible for council membership in each. A Visitor with a substantive contribution may seek citizenship, or ask an existing council member to carry the proposal forward on their behalf.
 
 Each island's governance pattern, council membership, and citizenship are tracked in its [[Knowledge Capital]].
 
-Jurisdiction is enacted in practice through the [[Knowledge Islands/Processes/Enactment Process]] and [[Contribution Process]].
+Jurisdiction is enacted in practice through the [[Knowledge Islands/Processes/Enactment Process|Enactment Process]] and [[Contribution Process]].
 
 ---
 
@@ -180,7 +182,9 @@ Five areas work together to constitute governance.
 
 **Tools** are the editors, AI systems, task managers, and connected services through which agents act. The tool layer covers configuration and connection; the agent layer covers operating behaviour. Neither duplicates the other.
 
-The full operational specification - conventions, processes, activities, agents, and tools is covered in the rest of [[Knowledge Islands]]. Each island's specific realisation (its council, integrations, and routing configuration) lives in its [[Knowledge Capital]].
+The full operational specification - conventions, processes, activities, agents, and tools are covered in the rest of [[Knowledge Islands]]. Each island's specific realisation (its council, integrations, and routing configuration) lives in its [[Knowledge Capital]].
+
+Every generic concept defined in Knowledge Islands may have a corresponding specific realisation in Knowledge Capital — the two are structural mirrors. Knowledge Islands holds the portable, island-agnostic definition; Knowledge Capital holds Arcadia's instance of it. When adding a new concept to Knowledge Islands, any island-specific counterpart belongs in Knowledge Capital, not here.
 
 ---
 

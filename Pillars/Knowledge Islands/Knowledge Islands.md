@@ -16,6 +16,8 @@ In Knowledge Islands, knowledge is treated as a natural, evolving system - islan
 
 Arcadia is the Knowledge Island of Knowledge Islands - a legendary utopia in the form of an archipelago that holds the canonical definition and governance model for the entire Knowledge Islands concept. Every other archipelago that adopts the model derives its baseline from Arcadia. The governance model is portable: three patterns are defined - council, single-governor, and joint-governor - and each island's specific realisation lives in its own [[Knowledge Capital]]. Every person interacting with an island holds a standing within it: a **Citizen** has full standing and is eligible for council membership; a **Visitor** may contribute informally but holds no formal standing.
 
+[[Reading Order]] records the canonical sequence for reading this content — useful for onboarding and for reviewers checking that no concept is introduced without prior context. It is a living note: extend it as new sections and sub-areas are added.
+
 ---
 
 ## Concept

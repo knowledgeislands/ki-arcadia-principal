@@ -104,6 +104,8 @@ Streams that conclude (`Settled`) should have their durable knowledge already in
 
 ## Index Notes (strictly enforced)
 
+**The governing principle: leaf notes carry all the material; index notes are recaps that orient and point.** A leaf note is self-contained — it covers its subject fully without assuming the reader has visited any other note first. An index note introduces nothing new; it contextualises what already exists in its children and helps the reader decide where to go next. Conversely, if content only appears in an index note and not in any of its children, it is in the wrong place — move it to the appropriate leaf.
+
 Every folder must have an **index note** with the same name as the folder (e.g. `Productivity/Productivity.md`). The index note:
 
 - Acts as the entry point and overview for that folder
