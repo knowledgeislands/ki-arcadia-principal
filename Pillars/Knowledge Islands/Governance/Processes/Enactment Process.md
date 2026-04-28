@@ -57,7 +57,7 @@ Statuses progress in order: `draft` → `ready` → ratification decision (`in-p
 ## The Cycle
 
 1. A change is conceived and work begins in a **Stream**
-2. A proposal folder and note are created in Streams under the appropriate Focus and Category (`Streams/$Focus/$Category/$ProposalName/`) - see [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure|Structure]] for path conventions - and a row is added to the proposals index
+2. A proposal folder and note are created in Streams under the appropriate Focus and Category (`Streams/$Focus/$Category/$ProposalName/`) - see [[Structure]] for path conventions - and a row is added to the proposals index
 3. Work iterates: the proposal develops, questions resolve, open issues are closed with resolution notes, the proposal takes shape
 4. When stable (no open issues remaining), verify all prerequisites are satisfied, then mark `ready` and submit to the council
 5. The council reviews:
@@ -114,7 +114,7 @@ Every stream operating under this process carries a `Governance` section in its 
 
 ## Proposals Index
 
-[[Streams/Streams|Streams]] maintains a proposals index as a live tracking view of all proposals. The index records each change's topic, current status, and priority. Update it whenever a change is created, its status changes, or its priority changes. The index has no value if it lags.
+[[Streams]] maintains a proposals index as a live tracking view of all proposals. The index records each change's topic, current status, and priority. Update it whenever a change is created, its status changes, or its priority changes. The index has no value if it lags.
 
 ---
 

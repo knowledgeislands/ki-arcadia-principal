@@ -11,7 +11,7 @@ memory_file: project_{ki_prefix}_structure.md
 
 ## Overview
 
-Routing rules specific to this island, supplementing the general conventions in [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure|Structure]].
+Routing rules specific to this island, supplementing the general conventions in [[Structure]].
 
 ---
 

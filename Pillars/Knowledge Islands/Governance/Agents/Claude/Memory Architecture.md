@@ -13,7 +13,7 @@ memory_file: reference_{ki_prefix}_key_notes.md
 
 ## Overview
 
-How Claude's auto-memory is structured for this island. For the underlying three-tier model and residency principles, see [[Pillars/Knowledge Islands/Governance/Conventions/Residency/Residency|Residency]]. This note covers the implementation: file conventions, the two classes of memory file, and the full KI ↔ memory mapping for this KI.
+How Claude's auto-memory is structured for this island. For the underlying three-tier model and residency principles, see [[Residency]]. This note covers the implementation: file conventions, the two classes of memory file, and the full KI ↔ memory mapping for this KI.
 
 ---
 
@@ -59,7 +59,7 @@ The prefix distinguishes files from multiple KIs sharing the same `.auto-memory/
 
 ## Two Classes of Memory File
 
-**Canonical files** are managed exclusively by [[Pillars/Knowledge Islands/Governance/Activities/Tending/Knowledge Rebuild|Knowledge Rebuild]]. They are rewritten from the KI on a regular schedule. Do not edit them manually between rebuilds - changes will be overwritten. The five canonical files are:
+**Canonical files** are managed exclusively by [[Knowledge Rebuild]]. They are rewritten from the KI on a regular schedule. Do not edit them manually between rebuilds - changes will be overwritten. The five canonical files are:
 
 | File                                 | Source KI notes                                                           |
 | ------------------------------------ | ------------------------------------------------------------------------- |
@@ -69,13 +69,13 @@ The prefix distinguishes files from multiple KIs sharing the same `.auto-memory/
 | `feedback_{ki_prefix}_operations.md` | Mistakes and Lessons + Activities                                         |
 | `reference_{ki_prefix}_key_notes.md` | KI Identity + Activities + Integrations + Claude.md + Memory Architecture |
 
-**Auxiliary files** are created ad-hoc during sessions when Claude saves something worth preserving. They persist between rebuilds and are never overwritten by Knowledge Rebuild. They accumulate until promoted to the KI or explicitly pruned. See [[Pillars/Knowledge Islands/Governance/Conventions/Residency/Residency|Residency]] for promotion criteria and lifecycle.
+**Auxiliary files** are created ad-hoc during sessions when Claude saves something worth preserving. They persist between rebuilds and are never overwritten by Knowledge Rebuild. They accumulate until promoted to the KI or explicitly pruned. See [[Residency]] for promotion criteria and lifecycle.
 
 ---
 
 ## KI ↔ Memory Mapping
 
-_The table below uses `{ki_prefix}` and `{user_prefix}` placeholders - substitute the actual values from [[Pillars/Knowledge Capital/Charter|Charter]] when reading for a specific KI. [[Pillars/Knowledge Islands/Governance/Activities/Tending/Knowledge Rebuild|Knowledge Rebuild]] uses this table during its gap analysis to validate that every listed file exists in `.auto-memory/` and that every file in `.auto-memory/` is documented here._
+_The table below uses `{ki_prefix}` and `{user_prefix}` placeholders - substitute the actual values from [[Charter]] when reading for a specific KI. [[Knowledge Rebuild]] uses this table during its gap analysis to validate that every listed file exists in `.auto-memory/` and that every file in `.auto-memory/` is documented here._
 
 | KI Note | Memory File | Class | Notes |
 | --- | --- | --- | --- |

@@ -19,7 +19,7 @@ A daily scheduled task that runs each morning to prepare today's daily note, pre
 
 ## Schedule
 
-- **Task ID:** `{task-prefix}-morning-briefing` - prefix defined in [[Pillars/Knowledge Capital/Charter|Charter]]
+- **Task ID:** `{task-prefix}-morning-briefing` - prefix defined in [[Charter]]
 - **Runs:** Working days at ~06:00 AM (with a small jitter) - working days and cron defined in [[Schedule]]
 - **Cron:** See [[Schedule]] → Morning Briefing cron
 
@@ -33,7 +33,7 @@ Using the integrations configured in [[Integrations|Integrations]], fetches toda
 
 ## Prompt
 
-The prompt below is the canonical version. It must match the prompt stored in the `{task-prefix}-morning-briefing` scheduled task - see [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] § Prompt Editing Discipline.
+The prompt below is the canonical version. It must match the prompt stored in the `{task-prefix}-morning-briefing` scheduled task - see [[Authoring Activities]] § Prompt Editing Discipline.
 
 ```txt
 You are running the Morning Briefing. Your job is to prepare today's daily note so it is ready before the day begins.

@@ -77,7 +77,7 @@ Ensure every `card/*` tag type has a corresponding template in `Pillars/Knowledg
 
 ## Audit Log
 
-Session digests are recorded in the **daily note** for the session date, under `## Personal Assistant Sessions`. Each session heading describes what was done - not a session number. Decisions extracted from each session are propagated to [[Notes]], [[Structure]], and [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Tags|Tags]] as standing rules.
+Session digests are recorded in the **daily note** for the session date, under `## Personal Assistant Sessions`. Each session heading describes what was done - not a session number. Decisions extracted from each session are propagated to [[Notes]], [[Structure]], and [[Tags]] as standing rules.
 
 **Section title format:** `### island Structural Audit - [scope of work]` Example: `### island Structural Audit - Boundary Fixes, Pillars Frontmatter, Status Review`
 
@@ -90,7 +90,7 @@ Session digests are recorded in the **daily note** for the session date, under `
 
 - A full audit is a multi-session effort - scope it by folder or concern rather than attempting the whole repository in one pass
 - The `outdated` status is a useful signal: notes flagged during a bulk audit are queued for individual review via [[Status Review]]
-- Document decisions made during the audit - they feed into [[Notes]], [[Structure]], and [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Tags|Tags]]
+- Document decisions made during the audit - they feed into [[Notes]], [[Structure]], and [[Tags]]
 - Log significant errors or surprises in [[Mistakes and Lessons]]
 
 ---

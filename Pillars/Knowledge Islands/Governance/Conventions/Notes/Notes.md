@@ -22,19 +22,19 @@ Three convention areas govern notes. Format defines the physical structure: what
 
 ## Format
 
-The physical structure of a note - its sections, heading conventions, footer rules, table formatting, markdown norms, and wikilink and image conventions - is defined in [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Format/Format|Format]]. All notes follow this structure; type-specific variations are always additions or overrides, never replacements.
+The physical structure of a note - its sections, heading conventions, footer rules, table formatting, markdown norms, and wikilink and image conventions - is defined in [[Format]]. All notes follow this structure; type-specific variations are always additions or overrides, never replacements.
 
 ---
 
 ## Frontmatter
 
-Every note carries a YAML frontmatter block. [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Frontmatter|Frontmatter]] has two parts: [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Properties|Properties]] defines the standard fields (`status`, `author`, and optional fields), and [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Tags|Tags]] defines the hierarchical tag taxonomy used across all notes. Both are a superset - not every property or tag applies to every island.
+Every note carries a YAML frontmatter block. [[Frontmatter]] has two parts: [[Properties]] defines the standard fields (`status`, `author`, and optional fields), and [[Tags]] defines the hierarchical tag taxonomy used across all notes. Both are a superset - not every property or tag applies to every island.
 
 ---
 
 ## Types
 
-The base format applies to all notes. [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Types/Types|Types]] documents the specialised structures that extend it for specific purposes - collection cards for reference entries and index notes, meeting notes for structured meeting records, and session digests for AI-assisted work session summaries.
+The base format applies to all notes. [[Types]] documents the specialised structures that extend it for specific purposes - collection cards for reference entries and index notes, meeting notes for structured meeting records, and session digests for AI-assisted work session summaries.
 
 ---
 

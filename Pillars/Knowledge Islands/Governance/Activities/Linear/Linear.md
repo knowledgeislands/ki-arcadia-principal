@@ -15,7 +15,7 @@ author: Written with Claude
 
 The Linear activity group keeps the island's stream notes aligned with the live state of the Linear workspace. Linear is the external source of truth for active projects and initiatives; the KI is the source of truth for knowledge and context. Drift accumulates naturally as Linear items are created, completed, or reprioritised without corresponding changes to stream notes. The Linear Sync surfaces that drift daily rather than letting it compound.
 
-The group contains a single scheduled automation. The MCP connection it relies on is documented in [[Pillars/Knowledge Islands/Governance/Tools/Linear/Linear|Tools/Linear]].
+The group contains a single scheduled automation. The MCP connection it relies on is documented in [[Tools/Linear/Linear|Tools/Linear]].
 
 ---
 

@@ -18,7 +18,7 @@ Background streams are projects and ideas that are alive and being slowly pursue
 
 | Topic | Status | Priority |
 | ----- | ------ | -------- |
-| [[Streams/Background/Island Concepts/Island Concepts\|Island Concepts]] | `draft` | `low` |
+| [[Island Concepts]] | `draft` | `low` |
 
 ---
 

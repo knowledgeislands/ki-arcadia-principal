@@ -21,7 +21,7 @@ Full prompt comparison across all tasks is not currently possible - see [[#Known
 
 ## Schedule
 
-- **Task ID:** `{skill-name}-scheduled-task-audit` - prefix defined in [[Pillars/Knowledge Capital/Charter|Charter]]
+- **Task ID:** `{skill-name}-scheduled-task-audit` - prefix defined in [[Charter]]
 - **Runs:** Weekdays at 05:00 - after the Conformance Check (04:30), before all other maintenance and briefing tasks - working days and cron defined in [[Schedule]]
 - **Cron:** See [[Schedule]] → Scheduled Task Audit cron
 
@@ -45,7 +45,7 @@ The practical effect: this audit can verify schedule/cron/description alignment 
 
 ## Prompt
 
-The prompt below is the canonical version. It must match the prompt stored in the `{skill-name}-scheduled-task-audit` scheduled task - see [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] § Prompt Editing Discipline.
+The prompt below is the canonical version. It must match the prompt stored in the `{skill-name}-scheduled-task-audit` scheduled task - see [[Authoring Activities]] § Prompt Editing Discipline.
 
 ```txt
 You are running the Scheduled Task Audit. Your job is to verify that each live Cowork scheduled task has a corresponding KI note and that schedules match - and to self-verify this task's own prompt. Full prompt comparison across all tasks is not currently possible; see the Known Limitations section in the KI note.
@@ -107,7 +107,7 @@ Call `mcp__scheduled-tasks__list_scheduled_tasks` to retrieve metadata for all a
 
 ### 2. Identify the corresponding KI note
 
-For each task, locate the matching activity note under `Pillars/Knowledge Islands/Governance/Activities/`. The task ID prefix is documented in [[Pillars/Knowledge Capital/Charter|Charter]].
+For each task, locate the matching activity note under `Pillars/Knowledge Islands/Governance/Activities/`. The task ID prefix is documented in [[Charter]].
 
 ### 3. Verify schedule and description
 

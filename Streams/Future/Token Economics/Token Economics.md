@@ -19,7 +19,7 @@ A stream to understand and improve how tokens are spent across all island AI ope
 
 ## Governance
 
-This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Process]].
 
 ---
 
@@ -28,7 +28,7 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 | Type     | Detail                                                                    |
 | -------- | ------------------------------------------------------------------------- |
 | Document | Existing scheduled task prompts in `Tools/Claude/Activities/`             |
-| Document | [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] - prompt authoring conventions |
+| Document | [[Authoring Activities]] - prompt authoring conventions |
 
 ---
 

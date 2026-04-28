@@ -19,7 +19,7 @@ A weekly scheduled task that reads all canonical meta notes from the island and 
 
 ## Schedule
 
-- **Task ID:** `{task-prefix}-knowledge-rebuild` - prefix defined in [[Pillars/Knowledge Capital/Charter|Charter]]
+- **Task ID:** `{task-prefix}-knowledge-rebuild` - prefix defined in [[Charter]]
 - **Runs:** Wednesdays at ~07:00 - working days defined in [[Schedule|Schedule]]
 - **Cron:** See [[Schedule|Schedule]] → Knowledge Rebuild cron
 
@@ -27,7 +27,7 @@ A weekly scheduled task that reads all canonical meta notes from the island and 
 
 ## What It Does
 
-1. Locates the island repository via [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]]
+1. Locates the island repository via [[Knowledge Capital]]
 2. Reads all canonical meta notes (as listed in [[Canonical Meta Notes]])
 3. Reads the existing canonical auto-memory files and compares them against the canonical notes - surfacing gaps, stale content, and anything worth adding before overwriting
 4. Verifies cross-references in both directions: KI notes with `memory_file:` frontmatter have a corresponding auto-memory file; auto-memory files with `## KI Sources` reference KI notes that still exist at those paths

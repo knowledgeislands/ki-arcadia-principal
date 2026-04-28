@@ -14,7 +14,7 @@ author: Written with Claude
 
 Defines the delta from [[Notes]] for Layer 1 activity notes - notes that document what an island activity does and why. These live under `Activities/{group}/` and are agent-agnostic: they describe the activity, not the prompt or implementation.
 
-For the five-layer model and how activity notes relate to the other four layers, see [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]].
+For the five-layer model and how activity notes relate to the other four layers, see [[Authoring Activities]].
 
 ---
 
@@ -67,7 +67,7 @@ You are running...
 ```
 ````
 
-The KI note is the canonical source. The Cowork scheduled task is a deployment artefact - push to it only when the prompt is stable. See [[Pillars/Knowledge Islands/Governance/Activities/Authoring Activities|Authoring Activities]] § Prompt Editing Discipline for the sync protocol.
+The KI note is the canonical source. The Cowork scheduled task is a deployment artefact - push to it only when the prompt is stable. See [[Authoring Activities]] § Prompt Editing Discipline for the sync protocol.
 
 ---
 

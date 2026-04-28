@@ -22,7 +22,7 @@ The island spans three physical locations. The text and binary stores mirror the
 | Text store     | Git / Obsidian | `~/kis/knowledgeislands/arcadia-principal`      | Markdown notes - version-controlled via Git                                         |
 | Binary store   | -              | Not yet defined                                 | Arcadia currently has no binary store                                               |
 
-See [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure|Structure]] for the general store convention.
+See [[Structure]] for the general store convention.
 
 ---
 

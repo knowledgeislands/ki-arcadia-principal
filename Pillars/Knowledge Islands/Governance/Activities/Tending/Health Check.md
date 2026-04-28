@@ -19,7 +19,7 @@ A weekly scheduled task that reviews the island for structural drift, CLAUDE.md 
 
 ## Schedule
 
-- **Task ID:** `{task-prefix}-health-check` - prefix defined in [[Pillars/Knowledge Capital/Charter|Charter]]
+- **Task ID:** `{task-prefix}-health-check` - prefix defined in [[Charter]]
 - **Runs:** Mondays at ~08:00 AM (with a small jitter) - working days defined in [[Schedule|Schedule]]
 - **Cron:** See [[Schedule|Schedule]] → Health Check cron
 

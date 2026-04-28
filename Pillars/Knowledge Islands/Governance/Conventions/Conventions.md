@@ -19,19 +19,19 @@ Three areas of convention govern how the island operates. Together they answer t
 
 ## [[Notes]]
 
-Knowledge takes written form as notes - and the form is not incidental. [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Notes|Notes]] governs what a note looks like: the physical structure every note follows, the Markdown it is written in, the YAML frontmatter it carries, and the specialised structures that extend the base for specific purposes - meeting notes, session digests, collection cards. The discipline of form is what transforms a note into knowledge: structured, classifiable, and durable.
+Knowledge takes written form as notes - and the form is not incidental. [[Notes]] governs what a note looks like: the physical structure every note follows, the Markdown it is written in, the YAML frontmatter it carries, and the specialised structures that extend the base for specific purposes - meeting notes, session digests, collection cards. The discipline of form is what transforms a note into knowledge: structured, classifiable, and durable.
 
 ---
 
 ## [[Residency]]
 
-Knowledge does not live in one place. [[Pillars/Knowledge Islands/Governance/Conventions/Residency/Residency|Residency]] defines the three tiers - the canonical Library, the working memory of agents, and auxiliary memory systems - and the rules governing what belongs in each and how knowledge moves between them. Residency is what keeps the Library authoritative without making it the only place work can happen: agents carry operational context in memory, session observations accumulate in auxiliary stores, and the promotion lifecycle ensures that what proves durable eventually reaches the Library.
+Knowledge does not live in one place. [[Residency]] defines the three tiers - the canonical Library, the working memory of agents, and auxiliary memory systems - and the rules governing what belongs in each and how knowledge moves between them. Residency is what keeps the Library authoritative without making it the only place work can happen: agents carry operational context in memory, session observations accumulate in auxiliary stores, and the promotion lifecycle ensures that what proves durable eventually reaches the Library.
 
 ---
 
 ## [[Structure]]
 
-The island has geography - both natural and constructed. [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure|Structure]] maps its zones: the Library as a built place where knowledge is held, the Harbour as the natural port of entry where material arrives, and the Streams as living waterways where knowledge flows before it is ready to be housed. The conventions for each zone - how they are organised internally, how notes are routed between them, where boundaries lie - live under Structure.
+The island has geography - both natural and constructed. [[Structure]] maps its zones: the Library as a built place where knowledge is held, the Harbour as the natural port of entry where material arrives, and the Streams as living waterways where knowledge flows before it is ready to be housed. The conventions for each zone - how they are organised internally, how notes are routed between them, where boundaries lie - live under Structure.
 
 ---
 

@@ -107,7 +107,7 @@ status:flagged
 
 ### Routes
 
-Routes encapsulate a category of email: the match conditions (allow/deny), the inbound actions, and any aged rules - all in one note. Each route lives in its own `Route - *.md` note under [[Pillars/Knowledge Capital/Governance/Activities/Email/Email|Email]].
+Routes encapsulate a category of email: the match conditions (allow/deny), the inbound actions, and any aged rules - all in one note. Each route lives in its own `Route - *.md` note under [[Knowledge Capital/Governance/Activities/Email/Email]].
 
 #### Route structure
 

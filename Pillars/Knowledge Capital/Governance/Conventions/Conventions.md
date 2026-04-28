@@ -10,7 +10,7 @@ author: Written with Claude
 
 ## Overview
 
-This folder holds Arcadia's island-specific conventions: the vocabulary that makes communication precise and the routing rules that direct knowledge to the right place. Both notes are supplements, not replacements - they extend the generic conventions in [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure|Structure]] and [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Notes|Notes]] with the particulars of this island.
+This folder holds Arcadia's island-specific conventions: the vocabulary that makes communication precise and the routing rules that direct knowledge to the right place. Both notes are supplements, not replacements - they extend the generic conventions in [[Structure]] and [[Notes]] with the particulars of this island.
 
 ---
 
@@ -22,7 +22,7 @@ This folder holds Arcadia's island-specific conventions: the vocabulary that mak
 
 ## Routing Rules
 
-[[Routing Rules|Routing Rules]] captures the island-specific routing decisions that supplement the general conventions. It maps Arcadia's three Pillars domains (Knowledge Islands, Knowledge Capital, Productivity) and lists the common judgment calls that recur during filing - where working memory goes, how imported external material is treated, how the Memory Folder Migration pattern is applied. It does not restate generic rules already defined in [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure|Structure]]; it records only the decisions that are specific to this island's shape.
+[[Routing Rules|Routing Rules]] captures the island-specific routing decisions that supplement the general conventions. It maps Arcadia's three Pillars domains (Knowledge Islands, Knowledge Capital, Productivity) and lists the common judgment calls that recur during filing - where working memory goes, how imported external material is treated, how the Memory Folder Migration pattern is applied. It does not restate generic rules already defined in [[Structure]]; it records only the decisions that are specific to this island's shape.
 
 ---
 

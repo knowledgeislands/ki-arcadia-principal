@@ -10,7 +10,7 @@ author: Written with Claude
 
 ## Overview
 
-Arcadia has adopted the Tending activity group. All nine activities are enabled - three scheduled automations (Scheduled Task Audit, Health Check, Knowledge Rebuild) and six conversational activities. See [[Pillars/Knowledge Capital/Charter|Charter]] for the adoption position and the full activity roster, and [[Pillars/Knowledge Capital/Governance/Activities/Schedule|Schedule]] for the day-type taxonomy that the scheduled automations read.
+Arcadia has adopted the Tending activity group. All nine activities are enabled - three scheduled automations (Scheduled Task Audit, Health Check, Knowledge Rebuild) and six conversational activities. See [[Charter]] for the adoption position and the full activity roster, and [[Schedule]] for the day-type taxonomy that the scheduled automations read.
 
 ---
 

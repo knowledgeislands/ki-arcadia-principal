@@ -18,7 +18,7 @@ Local path: `~/kis/krisb/kit-principal`
 
 ## Governance
 
-This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]] - the standard model for how streams enact change in the island.
+This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Process]] - the standard model for how streams enact change in the island.
 
 ---
 

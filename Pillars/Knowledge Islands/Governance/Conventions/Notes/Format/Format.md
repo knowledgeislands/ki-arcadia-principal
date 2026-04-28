@@ -12,7 +12,7 @@ memory_file: project_{ki_prefix}_note_format.md
 
 ## Overview
 
-Every note follows a consistent physical structure. The rules here govern what sections a note contains, how those sections are organised, how content within them is formatted, and how notes reference each other and embed external material. Type-specific extensions are in [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Types/Types|Types]]; the properties and tags that live in frontmatter are in [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Frontmatter|Frontmatter]].
+Every note follows a consistent physical structure. The rules here govern what sections a note contains, how those sections are organised, how content within them is formatted, and how notes reference each other and embed external material. Type-specific extensions are in [[Types]]; the properties and tags that live in frontmatter are in [[Frontmatter]].
 
 ---
 
@@ -36,14 +36,14 @@ The H1 heading should use the canonical title of the note. Filenames must avoid 
 
 ## Footer Sections
 
-Both `## Contents` and `## Related Topics` entries must include a brief description after the wikilink, separated by `-`. This applies consistently across all note types.
+Both `## Contents` and `## Related Topics` entries should include a short label after the wikilink, separated by `-`. Labels orient the reader in two to four words — they describe the relationship, not the note. Keep them succinct: `parent index`, `related methodology`, `external reference` are the right register. When reviewing, check that entries are still relevant and remove any that are stale or tangential.
 
 ### Prefer body content over Contents section
 
 Rich body content is always preferred to a bare `## Contents` list. Where a child note can be introduced, contextualised, or grouped meaningfully in the body, do that - and omit the corresponding entry from `## Contents`. A `## Contents` list that exists only because there is no body prose to put links in is a signal that the index note needs more work, not that the list is correct.
 
 - `## Contents` - **direct children only** (depth 1), and only those **not already linked in the body**. If a sub-page is contextualised and linked in the body prose, omit it from `Contents` - the body link is better contextualised. Deeper descendants (grandchildren and below) must never appear here; they belong in the body prose of the relevant child note. If this leaves no items, omit the `## Contents` section entirely. When present, `## Contents` is always the **last section before `## Related Topics`** - never interspersed with body content.
-- `## Related Topics` - contextually relevant notes lateral to this one; description explains the relationship or relevance. Must not reference sub-pages of this note at any depth - those belong in the body or `## Contents`. No duplicate entries permitted - each linked note must appear at most once.
+- `## Related Topics` - contextually relevant notes lateral to this one; label describes the relationship in a word or two. Must not reference sub-pages of this note at any depth - those belong in the body or `## Contents`. No duplicate entries permitted - each linked note must appear at most once.
 
 ### Link format in footer sections
 

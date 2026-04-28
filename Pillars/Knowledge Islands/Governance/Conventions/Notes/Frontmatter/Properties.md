@@ -12,7 +12,7 @@ memory_file: project_{ki_prefix}_note_format.md
 
 ## Overview
 
-Every note carries a YAML frontmatter block. The properties below apply to all `card/note` type notes. Collection cards (`card/person`, `card/org`, etc.) use relevant custom properties instead - see [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Tags|Tags]] for the full card taxonomy.
+Every note carries a YAML frontmatter block. The properties below apply to all `card/note` type notes. Collection cards (`card/person`, `card/org`, etc.) use relevant custom properties instead - see [[Tags]] for the full card taxonomy.
 
 All fields except `creator` are required. Frontmatter must be YAML properties - not inline bullet points.
 

@@ -20,7 +20,7 @@ The concept extends the geographic metaphor that runs through the whole Knowledg
 
 ## Governance
 
-This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Process]].
 
 ---
 

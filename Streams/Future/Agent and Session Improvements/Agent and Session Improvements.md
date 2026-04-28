@@ -19,7 +19,7 @@ Ideas for improving how Claude operates within the island — both deeper AI cap
 
 ## Governance
 
-This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Process]].
 
 ---
 

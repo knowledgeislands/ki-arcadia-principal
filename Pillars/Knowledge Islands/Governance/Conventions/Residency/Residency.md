@@ -69,7 +69,7 @@ New observation in a session
 
 Auxiliary files that never recur or are situational should be pruned, not promoted. The test: _would a future Claude session benefit from knowing this, and is it stable enough to belong in the KI?_
 
-**Deletion after rebuild:** Auxiliary files whose content is fully covered by canonical memory are deleted after the next [[Pillars/Knowledge Islands/Governance/Activities/Tending/Knowledge Rebuild|Knowledge Rebuild]] confirms coverage. There is no value in keeping a redundant auxiliary - the canonical file is the live version. At rebuild time: compare auxiliary content against the five canonical files; delete any auxiliary whose rules, facts, or pointers are fully present in canonical.
+**Deletion after rebuild:** Auxiliary files whose content is fully covered by canonical memory are deleted after the next [[Knowledge Rebuild]] confirms coverage. There is no value in keeping a redundant auxiliary - the canonical file is the live version. At rebuild time: compare auxiliary content against the five canonical files; delete any auxiliary whose rules, facts, or pointers are fully present in canonical.
 
 ---
 
@@ -94,7 +94,7 @@ Do not promote:
 
 Bidirectional links keep KI and memory in sync and enable automated drift detection.
 
-**KI → memory** - `memory_file:` frontmatter property on the KI note. Generic (portable) notes use placeholder syntax; [[Pillars/Knowledge Islands/Governance/Activities/Tending/Knowledge Rebuild|Knowledge Rebuild]] substitutes the actual prefix from [[Pillars/Knowledge Capital/Charter|Charter]] at runtime:
+**KI → memory** - `memory_file:` frontmatter property on the KI note. Generic (portable) notes use placeholder syntax; [[Knowledge Rebuild]] substitutes the actual prefix from [[Charter]] at runtime:
 
 ```yaml
 # Generic note - portable across islands

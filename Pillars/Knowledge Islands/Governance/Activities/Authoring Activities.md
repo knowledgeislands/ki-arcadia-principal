@@ -37,7 +37,7 @@ A piece of content that is "what this activity does" → Layer 1. A piece that i
 
 Activity groups divide into two categories that are treated differently throughout this guide.
 
-**Constitutional groups** are prior to the adoption framework - they define what it means to be a Knowledge Island and cannot be vetoed. Currently there is one constitutional group: [[Pillars/Knowledge Islands/Governance/Activities/Constitutional/Constitutional|Constitutional]], which contains the Conformance Check. Constitutional group indexes do not carry an Adoption Requirements section.
+**Constitutional groups** are prior to the adoption framework - they define what it means to be a Knowledge Island and cannot be vetoed. Currently there is one constitutional group: [[Governance/Activities/Constitutional/Constitutional]], which contains the Conformance Check. Constitutional group indexes do not carry an Adoption Requirements section.
 
 **Adoptable groups** are everything else. Each island takes an explicit `adopted` or `vetoed` position on each adoptable group; absence of a position is non-conformant. Every adoptable group index note must carry an Adoption Requirements section (see below) that declares exactly what Knowledge Capital notes an island must create to adopt or veto the group. This makes the adoption contract explicit and machine-verifiable by the Conformance Check.
 
@@ -45,7 +45,7 @@ Activity groups divide into two categories that are treated differently througho
 
 ## Activity Note Format (Layer 1)
 
-The canonical format for Layer 1 activity notes is defined in [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Types/Activity Note|Activity Note]] under `Conventions/Notes/Types/`. Required sections are Overview, Trigger, and Outcome. The optional `## Prompt` section holds the executable prompt when the activity is lightweight enough to keep it inline - for substantial prompts (Route Triage, Knowledge Rebuild), the prompt migrates to `Tools/Claude/Activities/{group}/` and the Layer 1 note links to it.
+The canonical format for Layer 1 activity notes is defined in [[Activity Note]] under `Conventions/Notes/Types/`. Required sections are Overview, Trigger, and Outcome. The optional `## Prompt` section holds the executable prompt when the activity is lightweight enough to keep it inline - for substantial prompts (Route Triage, Knowledge Rebuild), the prompt migrates to `Tools/Claude/Activities/{group}/` and the Layer 1 note links to it.
 
 ---
 

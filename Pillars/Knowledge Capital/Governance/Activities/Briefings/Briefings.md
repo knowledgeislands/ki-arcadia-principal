@@ -10,7 +10,7 @@ author: Written with Claude
 
 ## Overview
 
-Arcadia has adopted the Briefings activity group. The Morning Briefing is enabled and runs each working day at 06:00. See [[Pillars/Knowledge Capital/Charter|Charter]] for the adoption position, [[Pillars/Knowledge Capital/Governance/Activities/Schedule|Schedule]] for the day-type taxonomy, and [[Pillars/Knowledge Capital/Governance/Tools/Integrations|Integrations]] for the calendar and task tool configuration the briefing reads.
+Arcadia has adopted the Briefings activity group. The Morning Briefing is enabled and runs each working day at 06:00. See [[Charter]] for the adoption position, [[Schedule]] for the day-type taxonomy, and [[Integrations]] for the calendar and task tool configuration the briefing reads.
 
 ---
 

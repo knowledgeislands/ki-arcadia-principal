@@ -13,7 +13,7 @@ author: Written with Claude
 
 ## Overview
 
-Recurring patterns and design principles for AI-driven productivity automations - scheduled tasks, regular activities, and any Claude-powered workflow that runs repeatedly against the same KI configuration. These are generalisations derived from the design of specific activities such as [[Pillars/Knowledge Islands/Governance/Activities/Email/Email|Email]].
+Recurring patterns and design principles for AI-driven productivity automations - scheduled tasks, regular activities, and any Claude-powered workflow that runs repeatedly against the same KI configuration. These are generalisations derived from the design of specific activities such as [[Knowledge Islands/Governance/Activities/Email/Email]].
 
 ---
 
@@ -79,19 +79,19 @@ For explicit invalidation, delete the cache file. The next run will recompile. T
 
 ## Concrete Example - Route Inbound
 
-The [[Pillars/Knowledge Islands/Governance/Activities/Email/Route Triage|Route Triage]] activity runs three times each working day. Its routing rules (the ordered rule list in `Email Routing Config.md` plus every `Route - *.md` file) change only when the user manually edits them or applies a suggestion - typically a few times a week at most.
+The [[Route Triage]] activity runs three times each working day. Its routing rules (the ordered rule list in `Email Routing Config.md` plus every `Route - *.md` file) change only when the user manually edits them or applies a suggestion - typically a few times a week at most.
 
 Without a cache, every run parses 19+ Route files plus the routing rules note before doing any email work. With the ratio firmly in caching territory, the routing table is compiled once and stored as `tasks/email-triage/routing-table.json5`. Subsequent runs load a single pre-parsed file and skip source parsing entirely.
 
 Invalidation is handled by the mtime check across `Email Routing Config.md` and all `Route - *.md` files. When Route Review applies an agreed suggestion (modifying a source file), the cache file is deleted at the end of that phase - the next run recompiles from the updated sources.
 
-The cache schema is documented in the [[Pillars/Knowledge Islands/Governance/Activities/Email/Approach|Approach]] note under Routing Table Cache.
+The cache schema is documented in the [[Approach]] note under Routing Table Cache.
 
 ---
 
 ## Live Artifact Patterns
 
-Recurring design decisions for Cowork HTML artifacts - self-contained pages that re-fetch data via `window.cowork.callMcpTool` on every open. Derived from the [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Live Artifacts|Live Artifacts]] collection.
+Recurring design decisions for Cowork HTML artifacts - self-contained pages that re-fetch data via `window.cowork.callMcpTool` on every open. Derived from the [[Live Artifacts]] collection.
 
 ### Live Artifact Baseline
 

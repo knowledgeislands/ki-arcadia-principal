@@ -11,7 +11,7 @@ author: Written with Claude
 
 ## Overview
 
-The human operating mode covers everything a person does directly in the island - creating and editing notes, navigating the graph, reviewing AI outputs, filing captures from the inbox, and curating structure over time. The primary tool for this mode is [[Pillars/Knowledge Islands/Governance/Tools/Obsidian/Obsidian|Obsidian]].
+The human operating mode covers everything a person does directly in the island - creating and editing notes, navigating the graph, reviewing AI outputs, filing captures from the inbox, and curating structure over time. The primary tool for this mode is [[Obsidian]].
 
 ---
 
@@ -25,7 +25,7 @@ The human operating mode covers everything a person does directly in the island 
 
 **Graph navigation** - Using Obsidian's graph view and wikilink traversal to explore connections, identify orphaned notes, and maintain structural health.
 
-**Periodic maintenance** - Running the scheduled activities documented in [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]], including status reviews, wikilink audits, and inbox clearance.
+**Periodic maintenance** - Running the scheduled activities documented in [[Knowledge Islands/Governance/Activities/Activities]], including status reviews, wikilink audits, and inbox clearance.
 
 ---
 

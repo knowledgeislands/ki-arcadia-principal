@@ -18,14 +18,14 @@ Ideas and projects not yet started - queued for when the time or circumstances a
 
 | Topic                                                                                                                           | Status  | Priority |
 | ------------------------------------------------------------------------------------------------------------------------------- | ------- | -------- |
-| [[Streams/Future/Scheduled Automations/Scheduled Automations\|Scheduled Automations]]                                           | `draft` | `low`    |
-| [[Streams/Future/Agent and Session Improvements/Agent and Session Improvements\|Agent and Session Improvements]]                | `draft` | `low`    |
-| [[Streams/Future/Semantic Conventions/Semantic Conventions\|Island Conventions]]                                                    | `draft` | `low`    |
-| [[Streams/Future/Bullet Journal Support/Bullet Journal Support\|Calendar Templates]]                                            | `draft` | `low`    |
-| [[Streams/Future/Workflow Integrations/Workflow Integrations\|Workflow Integrations]]                                           | `draft` | `low`    |
-| [[Streams/Future/MCP Ecosystem/MCP Ecosystem\|MCP Ecosystem]]                                                                  | `draft` | `low`    |
-| [[Streams/Future/Token Economics/Token Economics\|Token Economics]] | `draft` | `low`    |
-| [[Streams/Future/Island Visualisation/Island Visualisation\|Island Visualisation]] | `draft` | `low`    |
+| [[Scheduled Automations]]                                           | `draft` | `low`    |
+| [[Agent and Session Improvements]]                | `draft` | `low`    |
+| [[Semantic Conventions|Island Conventions]]                                                    | `draft` | `low`    |
+| [[Bullet Journal Support|Calendar Templates]]                                            | `draft` | `low`    |
+| [[Workflow Integrations]]                                           | `draft` | `low`    |
+| [[MCP Ecosystem]]                                                                  | `draft` | `low`    |
+| [[Token Economics]] | `draft` | `low`    |
+| [[Island Visualisation]] | `draft` | `low`    |
 
 
 ---

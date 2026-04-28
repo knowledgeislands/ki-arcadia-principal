@@ -18,7 +18,7 @@ Two distinct processes are documented here. The **Enactment Process** is interna
 
 ## Enactment Process
 
-[[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]] is the island's governance in action. It is the gate through which all changes to Pillars and Resources must pass - nothing reaches stable knowledge except through council ratification of a formal proposal. The process runs in an iterative cycle: work develops in Streams, a proposal document emerges, the council reviews and iterates, and on ratification the change lands in Pillars or Resources. Rejection returns the proposal to Streams or closes it.
+[[Knowledge Islands/Governance/Processes/Enactment Process]] is the island's governance in action. It is the gate through which all changes to Pillars and Resources must pass - nothing reaches stable knowledge except through council ratification of a formal proposal. The process runs in an iterative cycle: work develops in Streams, a proposal document emerges, the council reviews and iterates, and on ratification the change lands in Pillars or Resources. Rejection returns the proposal to Streams or closes it.
 
 The pattern is portable: any island adopts it as their governance baseline, localising only the working area, council structure, and status vocabulary to suit their scale.
 
@@ -26,7 +26,7 @@ The pattern is portable: any island adopts it as their governance baseline, loca
 
 ## Contribution Process
 
-[[Pillars/Knowledge Islands/Governance/Processes/Contribution Process|Contribution Process]] governs how the Knowledge Islands model itself evolves. Arcadia holds the canonical definition; other archipelagos can adopt the model but do not automatically gain the authority to change it. The Contribution Process defines who may submit formal proposals to the canonical definition (council members only; Citizens are eligible), how those proposals enter the Enactment Process, and what customs apply at the boundary - including the inbound pattern (any archipelago may pull and adopt the model at a known version) and the outbound pattern (validated, portable knowledge from any archipelago may be proposed back to Arcadia).
+[[Contribution Process]] governs how the Knowledge Islands model itself evolves. Arcadia holds the canonical definition; other archipelagos can adopt the model but do not automatically gain the authority to change it. The Contribution Process defines who may submit formal proposals to the canonical definition (council members only; Citizens are eligible), how those proposals enter the Enactment Process, and what customs apply at the boundary - including the inbound pattern (any archipelago may pull and adopt the model at a known version) and the outbound pattern (validated, portable knowledge from any archipelago may be proposed back to Arcadia).
 
 ---
 

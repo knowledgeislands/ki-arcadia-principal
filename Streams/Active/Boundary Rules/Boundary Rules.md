@@ -18,7 +18,7 @@ A stream to establish explicit content boundary rules (conceptually Boundary Wal
 
 ## Governance
 
-This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Process]].
 
 ---
 

@@ -12,7 +12,7 @@ author: Written with Claude
 
 Arcadia's island charter - the authoritative declaration of what this island is and what it has adopted. It has two parts that change at different rates. The **Identity** section is static: these parameters define the island and do not change without a constitutional amendment. The operational sections below it change as activities are enabled or disabled, integrations connected, and agent configuration updated.
 
-The [[Pillars/Knowledge Islands/Governance/Activities/Constitutional/Conformance|Conformance Check]] uses this note as its source of truth. Agents starting cold and humans checking operational state both read it first.
+The [[Governance/Activities/Constitutional/Conformance|Conformance Check]] uses this note as its source of truth. Agents starting cold and humans checking operational state both read it first.
 
 ---
 
@@ -39,10 +39,10 @@ Adoption positions for all non-constitutional activity groups. Every group must 
 
 | Group       | Position | Knowledge Capital                                                                        |
 | ----------- | -------- | ---------------------------------------------------------------------------------------- |
-| Tending | adopted  | [[Pillars/Knowledge Capital/Governance/Activities/Tending/Tending\|Tending]] |
-| Briefings   | adopted  | [[Pillars/Knowledge Capital/Governance/Activities/Briefings/Briefings\|Briefings]]       |
-| Email       | vetoed   | [[Pillars/Knowledge Capital/Governance/Activities/Email/Email\|Email]]                   |
-| Linear      | vetoed   | [[Pillars/Knowledge Capital/Governance/Activities/Linear/Linear\|Linear Workspace]]      |
+| Tending | adopted  | [[Knowledge Capital/Governance/Activities/Tending/Tending]] |
+| Briefings   | adopted  | [[Knowledge Capital/Governance/Activities/Briefings/Briefings]]       |
+| Email       | vetoed   | [[Knowledge Capital/Governance/Activities/Email/Email]]                   |
+| Linear      | vetoed   | [[Knowledge Capital/Governance/Activities/Linear/Linear|Linear Workspace]]      |
 
 ---
 
@@ -52,11 +52,11 @@ Active scheduled automations within adopted groups. An activity listed here is e
 
 | Activity                                                                                                   | Group          | Day Type           | Time  | Status  |
 | ---------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | ----- | ------- |
-| [[Pillars/Knowledge Islands/Governance/Activities/Constitutional/Conformance\|Conformance]]                | Constitutional | work-day           | 04:30 | enabled |
-| [[Pillars/Knowledge Islands/Governance/Activities/Tending/Scheduled Task Audit\|Scheduled Task Audit]] | Tending        | work-day           | 05:00 | enabled |
-| [[Pillars/Knowledge Islands/Governance/Activities/Tending/Health Check\|Health Check]]                 | Tending        | Monday work-day    | 08:00 | enabled |
-| [[Pillars/Knowledge Islands/Governance/Activities/Tending/Knowledge Rebuild\|Knowledge Rebuild]]       | Tending        | Wednesday work-day | 07:00 | enabled |
-| [[Pillars/Knowledge Islands/Governance/Activities/Briefings/Morning Briefing\|Morning Briefing]]           | Briefings      | work-day           | 06:00 | enabled |
+| [[Governance/Activities/Constitutional/Conformance]]                | Constitutional | work-day           | 04:30 | enabled |
+| [[Scheduled Task Audit]] | Tending        | work-day           | 05:00 | enabled |
+| [[Health Check]]                 | Tending        | Monday work-day    | 08:00 | enabled |
+| [[Knowledge Rebuild]]       | Tending        | Wednesday work-day | 07:00 | enabled |
+| [[Morning Briefing]]           | Briefings      | work-day           | 06:00 | enabled |
 
 Day types are defined in [[Schedule|Schedule]].
 
@@ -68,11 +68,11 @@ Active conversational activities within adopted groups. Trigger phrases are the 
 
 | Activity                                                                                             | Group       | Trigger                  | Status  |
 | ---------------------------------------------------------------------------------------------------- | ----------- | ------------------------ | ------- |
-| [[Pillars/Knowledge Islands/Governance/Activities/Tending/Inbox Review\|Inbox Review]]           | Tending | _"ki inbox review"_      | enabled |
-| [[Pillars/Knowledge Islands/Governance/Activities/Tending/Asset Audit\|Asset Audit]]             | Tending | _"ki asset audit"_       | enabled |
-| [[Pillars/Knowledge Islands/Governance/Activities/Tending/Status Review\|Status Review]]         | Tending | _"ki status review"_     | enabled |
-| [[Pillars/Knowledge Islands/Governance/Activities/Tending/Structural Audit\|Structural Audit]]   | Tending | _"ki structural audit"_  | enabled |
-| [[Pillars/Knowledge Islands/Governance/Activities/Tending/Wikilink Review\|Wikilink Review]]     | Tending | _"ki wikilink review"_   | enabled |
+| [[Inbox Review]]           | Tending | _"ki inbox review"_      | enabled |
+| [[Asset Audit]]             | Tending | _"ki asset audit"_       | enabled |
+| [[Status Review]]         | Tending | _"ki status review"_     | enabled |
+| [[Structural Audit]]   | Tending | _"ki structural audit"_  | enabled |
+| [[Wikilink Review]]     | Tending | _"ki wikilink review"_   | enabled |
 | [[Pillars/Knowledge Islands/Governance/Activities/Tending/Convergence Check\|Convergence Check]] | Tending | _"ki convergence check"_ | enabled |
 
 ---

@@ -18,7 +18,7 @@ The Library is the canonical record of the island - version-controlled, governed
 
 ## Physical Locations
 
-The Knowledge Islands model - island types, archipelago structure, and governance infrastructure - is defined canonically in [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]]. This section covers only the physical stores: where notes and assets live on disk.
+The Knowledge Islands model - island types, archipelago structure, and governance infrastructure - is defined canonically in [[Knowledge Islands]]. This section covers only the physical stores: where notes and assets live on disk.
 
 **Stores (all islands, including islets):**
 
@@ -47,7 +47,7 @@ Specific paths for this island are defined in [[Physical Locations]].
 
 `Pillars` and `Resources` share subfolder names by design. For example, `Pillars/Finance` covers internal / private personal finances; `Resources/Finance` covers general finance knowledge such as banking regulations.
 
-Streams notes track current status, progress, and next steps - they are not knowledge stores. When a stream produces durable knowledge, it is extracted to the relevant Pillars note; the stream note links to it. Path structure, focus levels, and category conventions are defined in [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure|Structure]].
+Streams notes track current status, progress, and next steps - they are not knowledge stores. When a stream produces durable knowledge, it is extracted to the relevant Pillars note; the stream note links to it. Path structure, focus levels, and category conventions are defined in [[Structure]].
 
 `Calendar` contains several note types. Daily notes, meeting notes, session digests, and the monthly index are filed in the month folder and referenced from the daily note by wikilink; the daily note does not duplicate their content. Weekly notes are filed separately in a per-year `YYYY By Week/` folder alongside the month folders.
 

@@ -23,7 +23,7 @@ All of these belong to the same layer of the model: the geographic and jurisdict
 
 ## Governance
 
-This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Knowledge Islands/Governance/Processes/Enactment Process]].
 
 ---
 
@@ -31,8 +31,8 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 | Type     | Detail                                                                                                                                         |
 | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| Document | [[Pillars/Knowledge Islands/Concept/Concept\|Concept]] - `[!todo] Customs and Routes` at the end of the Geography section; settlement type table |
-| Document | [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure\|Structure]] - `[!todo] Harbour` and `[!todo] Routes and Customs` stubs |
+| Document | [[Concept]] - `[!todo] Customs and Routes` at the end of the Geography section; settlement type table |
+| Document | [[Structure]] - `[!todo] Harbour` and `[!todo] Routes and Customs` stubs |
 
 ---
 

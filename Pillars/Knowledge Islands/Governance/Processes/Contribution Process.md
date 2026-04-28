@@ -16,11 +16,11 @@ The Knowledge Islands model is defined canonically in Arcadia. Any island in the
 
 ## Who Can Contribute
 
-Formal proposals for changes to the canonical definition can come from any council member. Council members must be Citizens of the island - citizenship is a prerequisite for council eligibility, and citizenship of multiple territories is permitted. See [[Pillars/Knowledge Islands/Concept/Concept|Concept]] for the full standing model.
+Formal proposals for changes to the canonical definition can come from any council member. Council members must be Citizens of the island - citizenship is a prerequisite for council eligibility, and citizenship of multiple territories is permitted. See [[Concept]] for the full standing model.
 
-Visitors may identify gaps or suggest ideas informally, but formal proposals (those that enter the [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]]) must be submitted by a council member. A Visitor who has a substantive contribution may seek citizenship, or ask an existing council member to carry the proposal forward.
+Visitors may identify gaps or suggest ideas informally, but formal proposals (those that enter the [[Knowledge Islands/Governance/Processes/Enactment Process]]) must be submitted by a council member. A Visitor who has a substantive contribution may seek citizenship, or ask an existing council member to carry the proposal forward.
 
-Current citizenship and council membership are tracked in the island's [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]].
+Current citizenship and council membership are tracked in the island's [[Knowledge Capital]].
 
 ---
 

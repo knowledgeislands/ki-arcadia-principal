@@ -10,7 +10,7 @@ author: Written with Claude
 
 ## Overview
 
-Arcadia follows the canonical Knowledge Islands enactment process as defined in [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]]. This note records Arcadia's specific conventions and any localised adaptations.
+Arcadia follows the canonical Knowledge Islands enactment process as defined in [[Knowledge Islands/Governance/Processes/Enactment Process]]. This note records Arcadia's specific conventions and any localised adaptations.
 
 ---
 

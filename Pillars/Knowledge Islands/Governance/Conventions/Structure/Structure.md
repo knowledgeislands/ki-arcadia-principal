@@ -22,7 +22,7 @@ Structure is where those geographic conventions are specified. Each zone has its
 
 The Library is the canonical record: version-controlled, ratified, and the single source of truth for all stable knowledge. It contains three zones - Calendar (time-bound notes), Pillars (internal knowledge owned by the island), and Resources (external reference material). Nothing enters the Library except through the governance process.
 
-The Library's internal structure - top-level folders, routing rules, the Pillars/Resources boundary, and index note conventions - is documented in [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Library/Library|Library]].
+The Library's internal structure - top-level folders, routing rules, the Pillars/Resources boundary, and index note conventions - is documented in [[Library]].
 
 ---
 
@@ -76,7 +76,7 @@ Every stream focus folder (Active, Background, Dormant, Future, Settled) has an 
 
 Rows are ordered by status first (`in-progress` → `ready` → `draft`), then by priority within each status group (`urgent` → `high` → `medium` → `low`). Streams without an explicit priority are listed after prioritised streams at the same status level. When categories are in use, group by category first, then apply status/priority ordering within each category.
 
-The top-level [[Streams/Streams|Streams]] index aggregates all focuses into one table with an additional `Stream` column, ordered by focus (Active → Background → Dormant → Future → Settled), then by the same status/priority rule within each focus block.
+The top-level [[Streams]] index aggregates all focuses into one table with an additional `Stream` column, ordered by focus (Active → Background → Dormant → Future → Settled), then by the same status/priority rule within each focus block.
 
 Both the focus indexes and the top-level table reflect the same streams. Keep them in sync: when a stream is created, promoted, or settled, update both the relevant focus index and the top-level table.
 

@@ -14,7 +14,7 @@ author: Written with Claude
 
 ## Overview
 
-This defines the island Cowork skill for interacting with the island. The skill name and trigger phrases are defined in [[Pillars/Knowledge Capital/Charter|Charter]]. It provides structured operating modes for saving new notes, updating existing notes, querying information, extracting reusable knowledge from conversations, and writing session digests.
+This defines the island Cowork skill for interacting with the island. The skill name and trigger phrases are defined in [[Charter]]. It provides structured operating modes for saving new notes, updating existing notes, querying information, extracting reusable knowledge from conversations, and writing session digests.
 
 All operations follow the routing rules and conventions in [[CLAUDE]].
 
@@ -24,7 +24,7 @@ All operations follow the routing rules and conventions in [[CLAUDE]].
 
 `CLAUDE.md` is loaded automatically as project context - it is the complete authority on island structure, note format, routing rules, tagging conventions, pre-flight checks, and British English. No explicit read is required. Follow it precisely for all operations.
 
-When an operation needs integration configuration (MCP tools, project IDs, calendar sources), read the relevant note from `Pillars/Knowledge Capital/` - do not hardcode tool identifiers or project IDs. See [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] for the full index.
+When an operation needs integration configuration (MCP tools, project IDs, calendar sources), read the relevant note from `Pillars/Knowledge Capital/` - do not hardcode tool identifiers or project IDs. See [[Knowledge Capital]] for the full index.
 
 ---
 

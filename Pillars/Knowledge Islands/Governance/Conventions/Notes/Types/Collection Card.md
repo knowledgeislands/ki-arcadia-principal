@@ -27,7 +27,7 @@ The `tags` field uses a specific `card/` type tag. Common types:
 | `card/concept` | Concepts and ideas                      |
 | `card/adr`     | Architecture Decision Records           |
 
-See [[Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Tags|Tags]] for the full tag reference.
+See [[Tags]] for the full tag reference.
 
 ---
 

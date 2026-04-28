@@ -15,58 +15,58 @@ Streams are projects and workstreams organised by their current level of focus. 
 
 ## Proposals Index
 
-Live tracking view of all active proposals. Ordered by Stream (Active → Background → Dormant → Future → Settled), then by Status within each stream (`in-progress` → `ready` → `draft`). Update whenever a proposal is created, its status changes, or its priority changes. See [[Pillars/Knowledge Islands/Governance/Processes/Enactment Process|Enactment Process]] for the full lifecycle.
+Live tracking view of all active proposals. Ordered by Stream (Active → Background → Dormant → Future → Settled), then by Status within each stream (`in-progress` → `ready` → `draft`). Update whenever a proposal is created, its status changes, or its priority changes. See [[Knowledge Islands/Governance/Processes/Enactment Process]] for the full lifecycle.
 
 | Topic                                                                                                                           | Stream     | Status        | Priority |
 | ------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------- | -------- |
-| [[Streams/Active/Tooling Prompts/Tooling Prompts\|Tooling Prompts]]                                                             | Active     | `in-progress` | `high`   |
+| [[Tooling Prompts]]                                                             | Active     | `in-progress` | `high`   |
 | [[Streams/Settled/Conformance/Conformance\|Conformance]]                  | Settled    | `completed`   | `urgent` |
-| [[Streams/Active/Boundary Rules/Boundary Rules\|Boundary Rules]]                   | Active     | `draft`       | `urgent` |
-| [[Streams/Active/Index Review/Index Review\|Index Review]]                | Active     | `draft`       | `medium` |
-| [[Streams/Future/Auto Proposal Pipeline/Auto Proposal Pipeline\|Proposal Pipeline]] | Active     | `draft`       | `medium` |
-| [[Streams/Active/Intentional/Intentional\|Intentional]]                   | Active     | `draft`       | `medium` |
-| [[Streams/Active/Kit Legal Inception/Kit Legal Inception\|Kit Legal Inception]]                                                 | Active     | `draft`       | `medium` |
-| [[Streams/Active/Kit Principal Inception/Kit Principal Inception\|Kit Principal Inception]]                                     | Active     | `draft`       | `medium` |
+| [[Boundary Rules]]                   | Active     | `draft`       | `urgent` |
+| [[Index Review]]                | Active     | `draft`       | `medium` |
+| [[Auto Proposal Pipeline|Proposal Pipeline]] | Active     | `draft`       | `medium` |
+| [[Intentional]]                   | Active     | `draft`       | `medium` |
+| [[Kit Legal Inception]]                                                 | Active     | `draft`       | `medium` |
+| [[Kit Principal Inception]]                                     | Active     | `draft`       | `medium` |
 | [[Streams/Background/Harbour Routes and Customs/Harbour Routes and Customs\|Harbour, Routes and Customs]]                       | Background | `draft`       | `low`    |
-| [[Streams/Future/Scheduled Automations/Scheduled Automations\|Scheduled Automations]]                                           | Future     | `draft`       | `low`    |
-| [[Streams/Future/Agent and Session Improvements/Agent and Session Improvements\|Agent and Session Improvements]]                | Future     | `draft`       | `low`    |
-| [[Streams/Future/Semantic Conventions/Semantic Conventions\|Island Conventions]]                                                    | Future     | `draft`       | `low`    |
-| [[Streams/Future/Bullet Journal Support/Bullet Journal Support\|Calendar Templates]]                                            | Future     | `draft`       | `low`    |
-| [[Streams/Future/Workflow Integrations/Workflow Integrations\|Workflow Integrations]]                                           | Future     | `draft`       | `low`    |
-| [[Streams/Future/MCP Ecosystem/MCP Ecosystem\|MCP Ecosystem]]                                                                  | Future     | `draft`       | `low`    |
-| [[Streams/Future/Token Economics/Token Economics\|Token Economics]] | Future     | `draft`       | `low`    |
-| [[Streams/Future/Island Visualisation/Island Visualisation\|Island Visualisation]] | Future     | `draft`       | `low`    |
+| [[Scheduled Automations]]                                           | Future     | `draft`       | `low`    |
+| [[Agent and Session Improvements]]                | Future     | `draft`       | `low`    |
+| [[Semantic Conventions|Island Conventions]]                                                    | Future     | `draft`       | `low`    |
+| [[Bullet Journal Support|Calendar Templates]]                                            | Future     | `draft`       | `low`    |
+| [[Workflow Integrations]]                                           | Future     | `draft`       | `low`    |
+| [[MCP Ecosystem]]                                                                  | Future     | `draft`       | `low`    |
+| [[Token Economics]] | Future     | `draft`       | `low`    |
+| [[Island Visualisation]] | Future     | `draft`       | `low`    |
 
 
 ---
 
 ## Active
 
-[[Streams/Active/Active|Active]] streams are receiving focused attention now - the work is happening. Active is not a queue; it should hold only what is genuinely in motion. When a stream stalls or loses urgency, it moves to Background or Dormant.
+[[Active]] streams are receiving focused attention now - the work is happening. Active is not a queue; it should hold only what is genuinely in motion. When a stream stalls or loses urgency, it moves to Background or Dormant.
 
 ---
 
 ## Background
 
-[[Streams/Background/Background|Background]] streams are alive but not the current focus. They surface periodically, accumulate thinking, and may graduate to Active when circumstances change. A stream in Background is not forgotten - it is incubating.
+[[Background]] streams are alive but not the current focus. They surface periodically, accumulate thinking, and may graduate to Active when circumstances change. A stream in Background is not forgotten - it is incubating.
 
 ---
 
 ## Dormant
 
-[[Streams/Dormant/Dormant|Dormant]] streams are paused with intention to return. Something specific blocked or deprioritised them - not abandoned, but not being worked. The distinction from Background is intent: Dormant means "we will return when the blocker clears"; Background means "we are working on it, just not urgently".
+[[Dormant]] streams are paused with intention to return. Something specific blocked or deprioritised them - not abandoned, but not being worked. The distinction from Background is intent: Dormant means "we will return when the blocker clears"; Background means "we are working on it, just not urgently".
 
 ---
 
 ## Future
 
-[[Streams/Future/Future|Future]] holds ideas and planned work that has not yet started. Entries here are candidates for promotion to Active or Background when capacity or priority aligns. They are recorded so that nothing is lost to memory.
+[[Future]] holds ideas and planned work that has not yet started. Entries here are candidates for promotion to Active or Background when capacity or priority aligns. They are recorded so that nothing is lost to memory.
 
 ---
 
 ## Settled
 
-[[Streams/Settled/Settled|Settled]] holds concluded streams kept for reference. A stream moves here when its work is complete and its knowledge has been extracted to the appropriate Pillars notes. Over time, Settled entries may be removed entirely once their content has been fully absorbed.
+[[Settled]] holds concluded streams kept for reference. A stream moves here when its work is complete and its knowledge has been extracted to the appropriate Pillars notes. Over time, Settled entries may be removed entirely once their content has been fully absorbed.
 
 ---
 

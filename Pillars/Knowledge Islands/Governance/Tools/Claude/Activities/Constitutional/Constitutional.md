@@ -14,9 +14,9 @@ author: Written with Claude
 
 Layer 5 prompts for the constitutional activity group - the executable, Claude-specific and island-specific prompt that drives the Conformance Check. This prompt is not optional: the Conformance Check is constitutional and cannot be vetoed or disabled.
 
-The prompt reads the island's [[Pillars/Knowledge Capital/Charter|Charter]] and [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] index to verify that the island meets its constitutional baseline and that every non-constitutional activity group has an explicit adoption position with the required Knowledge Capital configuration in place.
+The prompt reads the island's [[Charter]] and [[Knowledge Islands/Governance/Activities/Activities]] index to verify that the island meets its constitutional baseline and that every non-constitutional activity group has an explicit adoption position with the required Knowledge Capital configuration in place.
 
-What the Conformance Check does and why it exists is documented at Layer 1 in [[Pillars/Knowledge Islands/Governance/Activities/Constitutional/Conformance|Activities/Constitutional/Conformance]]. This folder holds only the executable prompt.
+What the Conformance Check does and why it exists is documented at Layer 1 in [[Governance/Activities/Constitutional/Conformance|Activities/Constitutional/Conformance]]. This folder holds only the executable prompt.
 
 ---
 

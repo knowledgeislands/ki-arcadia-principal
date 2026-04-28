@@ -16,13 +16,13 @@ memory_file: feedback_{ki_prefix}_operations.md
 
 A daily scheduled task that reconciles Linear's initiative and project state against the island. Catches naming drift, missing projects in stream notes, and initiatives that have concluded and need their stream notes archived.
 
-The authoritative rules for naming conventions, lifecycle management, project labels, and the Initiative → KI Mapping table are in [[Pillars/Knowledge Capital/Governance/Activities/Linear/Linear|Linear Workspace]]. Generic MCP query patterns and browser-based interaction rules are in [[Pillars/Knowledge Islands/Governance/Tools/Linear/Linear|Linear]].
+The authoritative rules for naming conventions, lifecycle management, project labels, and the Initiative → KI Mapping table are in [[Knowledge Capital/Governance/Activities/Linear/Linear|Linear Workspace]]. Generic MCP query patterns and browser-based interaction rules are in [[Tools/Linear/Linear]].
 
 ---
 
 ## Schedule
 
-- **Task ID:** `{task-prefix}-linear-sync` - prefix defined in [[Pillars/Knowledge Capital/Charter|Charter]]
+- **Task ID:** `{task-prefix}-linear-sync` - prefix defined in [[Charter]]
 - **Runs:** Working days at ~09:00 AM (with a small jitter) - working days defined in [[Schedule]]
 - **Cron:** See [[Schedule|Schedule]] → Linear Sync cron
 
@@ -30,11 +30,11 @@ The authoritative rules for naming conventions, lifecycle management, project la
 
 ## What It Does
 
-Using the Linear MCP, fetches all active and planned initiatives and their projects, then compares them against the Initiative → KI Mapping table in [[Pillars/Knowledge Capital/Governance/Activities/Linear/Linear|Linear Workspace]]. Specifically checks:
+Using the Linear MCP, fetches all active and planned initiatives and their projects, then compares them against the Initiative → KI Mapping table in [[Knowledge Capital/Governance/Activities/Linear/Linear|Linear Workspace]]. Specifically checks:
 
 - **New or removed initiatives** - creates or archives stream notes, Pillars notes, and Resources company profiles as needed, and updates the mapping table
 - **Initiative name drift** - names changed in Linear but not reflected in the KI
-- **Project naming conventions** - enforces bracket spacing and hyphenation rules per [[Pillars/Knowledge Capital/Governance/Activities/Linear/Linear|Linear Workspace]]
+- **Project naming conventions** - enforces bracket spacing and hyphenation rules per [[Knowledge Capital/Governance/Activities/Linear/Linear|Linear Workspace]]
 - **Stream note project coverage** - ensures every uncompleted project under an initiative appears in the corresponding stream note's projects table
 
 All fixes are applied directly - project renames in Linear via `save_project`, KI note updates via file writes.
