@@ -23,7 +23,7 @@ This index covers Layer 1 content: what each activity does and why. The prompts 
 
 ---
 
-## [[Constitutional]]
+## [[Knowledge Islands/Activities/Constitutional/Constitutional|Constitutional]]
 
 The constitutional baseline required of any Knowledge Island. Not subject to the adoption framework - these activities define what it means to be a Knowledge Island at all.
 
@@ -33,7 +33,7 @@ The constitutional baseline required of any Knowledge Island. Not subject to the
 
 ---
 
-## [[Tending]]
+## [[Knowledge Islands/Activities/Tending/Tending|Tending]]
 
 Activities that keep the island structurally sound, content-healthy, and free of stale or orphaned material - spanning daily automations through to weekly reviews and deeper adhoc audits.
 
@@ -51,7 +51,7 @@ Activities that keep the island structurally sound, content-healthy, and free of
 
 ---
 
-## [[Briefings]]
+## [[Knowledge Islands/Activities/Briefings/Briefings|Briefings]]
 
 Daily automations that prime the island at the start of each day - creating missing calendar infrastructure and surfacing agenda, task, and inbox context.
 
@@ -61,7 +61,7 @@ Daily automations that prime the island at the start of each day - creating miss
 
 ---
 
-## [[Knowledge Islands/Activities/Email/Email|]]
+## [[Knowledge Islands/Activities/Email/Email|Email]]
 
 Inbox management as a scheduled, repeatable process. The goal is inbox zero across each working day, with each message triaged to a clear outcome. See [[Approach]] for the shared concepts, definitions, and data model.
 
@@ -76,7 +76,7 @@ Inbox management as a scheduled, repeatable process. The goal is inbox zero acro
 
 ---
 
-## [[Knowledge Islands/Activities/Linear/Linear]]
+## [[Knowledge Islands/Activities/Linear/Linear|Linear]]
 
 Daily automation that keeps the island aligned with the Linear project management workspace, detecting and surfacing drift between stream notes and the live Linear state.
 
@@ -88,6 +88,6 @@ Daily automation that keeps the island aligned with the Linear project managemen
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - parent index
-- [[Pillars/Knowledge Islands/Activities/Authoring Activities|Authoring Activities]] - how to design and maintain activities
-- [[Pillars/Knowledge Islands/Tools/Claude/Activities/Activities|Tools/Claude/Activities]] - the prompt library (Layer 5)
+- [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - the KI framework index; Activities is one of its five governance areas
+- [[Pillars/Knowledge Islands/Activities/Authoring Activities|Authoring Activities]] - how to design, document, and maintain activities using the five-layer model
+- [[Pillars/Knowledge Islands/Tools/Claude/Activities/Activities|Tools/Claude/Activities]] - the Layer 5 prompt library; executable Claude-specific versions of these activities

@@ -26,7 +26,7 @@ Standard YAML properties carried by every note are defined in [[Properties]]. Th
 
 ## Tags
 
-The tag taxonomy used across the island - covering card types, calendar note types, topics, source markers, and date stamps - is defined in [[Tags]]. Tags follow a hierarchical `namespace/value` pattern. Not every tag will be relevant to every KI; the taxonomy is a superset.
+The tag taxonomy used across the island - covering card types, calendar note types, topics, source markers, and date stamps - is defined in [[Tags]]. Tags follow a hierarchical `namespace/value` pattern. Not every tag will be relevant to every Knowledge Island; the taxonomy is a superset.
 
 ---
 

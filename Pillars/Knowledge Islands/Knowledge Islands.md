@@ -34,13 +34,13 @@ Two sub-areas carry the most weight. [[Notes]] defines what a note is and how it
 
 ## Processes
 
-[[Knowledge Islands/Processes/Processes]] holds the formal mechanisms through which knowledge changes are made and ratified. The [[Knowledge Islands/Processes/Enactment Process]] is the internal gate: nothing enters Pillars or Resources except through council ratification of a formal proposal. The [[Contribution Process]] is the external boundary: how knowledge developed in other archipelagos can be proposed as a canonical addition to the Knowledge Islands model in Arcadia, and how inbound and outbound patterns work at that boundary.
+[[Knowledge Islands/Processes/Processes|Processes]] holds the formal mechanisms through which knowledge changes are made and ratified. The [[Knowledge Islands/Processes/Enactment Process|Enactment Process]] is the internal gate: nothing enters Pillars or Resources except through council ratification of a formal proposal. The [[Contribution Process]] is the external boundary: how knowledge developed in other archipelagos can be proposed as a canonical addition to the Knowledge Islands model in Arcadia, and how inbound and outbound patterns work at that boundary.
 
 ---
 
 ## Activities
 
-[[Knowledge Islands/Activities/Activities]] documents the ongoing work that keeps the island structurally sound, content-healthy, and aligned with connected services. Activities divide into two kinds: scheduled automations (time-driven, running without human initiation - daily briefings, email triage, Linear sync, and periodic health checks) and conversational activities (chat-triggered, human-in-the-loop - inbox reviews, status sweeps, wikilink audits). Together they implement the maintenance cycle that prevents the island from drifting from the world it reflects.
+[[Knowledge Islands/Activities/Activities|Activities]] documents the ongoing work that keeps the island structurally sound, content-healthy, and aligned with connected services. Activities divide into two kinds: scheduled automations (time-driven, running without human initiation - daily briefings, email triage, Linear sync, and periodic health checks) and conversational activities (chat-triggered, human-in-the-loop - inbox reviews, status sweeps, wikilink audits). Together they implement the maintenance cycle that prevents the island from drifting from the world it reflects.
 
 The prompts that drive scheduled activities live in [[Claude/Activities/Activities|Tools/Claude/Activities]]. A layered model that separates what an activity does from how it is prompted is documented in [[Authoring Activities]].
 
@@ -48,7 +48,7 @@ The prompts that drive scheduled activities live in [[Claude/Activities/Activiti
 
 ## Agents
 
-[[Knowledge Islands/Agents/Agents]] is the operating layer: who and what acts on the island, at what level of capability, and under what patterns. An agent is anything that reads, writes, or reasons over island content - human or AI. Agents divide into human operation (editorial judgement, manual curation, final authority on ratification) and agentic AI operation (routine processing, automation, and AI-specific behavioural patterns). The two modes are complementary rather than competing.
+[[Knowledge Islands/Agents/Agents|Agents]] is the operating layer: who and what acts on the island, at what level of capability, and under what patterns. An agent is anything that reads, writes, or reasons over island content - human or AI. Agents divide into human operation (editorial judgement, manual curation, final authority on ratification) and agentic AI operation (routine processing, automation, and AI-specific behavioural patterns). The two modes are complementary rather than competing.
 
 The distinction between Agents and Tools is deliberate: Agents covers how each agent operates; Tools covers how each tool is configured and connected. A given AI system appears in both - once for operating conventions, once for connection setup.
 
@@ -56,7 +56,7 @@ The distinction between Agents and Tools is deliberate: Agents covers how each a
 
 ## Tools
 
-[[Knowledge Islands/Tools/Tools]] is the configuration layer: the editors, AI systems, task managers, and connected services through which agents act on the island. Each tool sub-folder documents its connection setup, operating conventions, and any tool-specific lessons. Tools connect to external services primarily through MCP (Model Context Protocol) servers, which give Claude direct access to email, calendar, issue tracking, and other services without requiring manual relay by the human agent.
+[[Knowledge Islands/Tools/Tools|Tools]] is the configuration layer: the editors, AI systems, task managers, and connected services through which agents act on the island. Each tool sub-folder documents its connection setup, operating conventions, and any tool-specific lessons. Tools connect to external services primarily through MCP (Model Context Protocol) servers, which give Claude direct access to email, calendar, issue tracking, and other services without requiring manual relay by the human agent.
 
 The tool layer and the agent layer are kept separate by design. Tool notes cover the what and how of connection; agent notes cover the patterns and constraints of operation. Neither duplicates the other.
 
@@ -64,14 +64,14 @@ The tool layer and the agent layer are kept separate by design. Tool notes cover
 
 ## Knowledge Capitals
 
-Every general concept defined in [[Knowledge Islands]] has a corresponding specific realisation in [[Knowledge Capital]]. The two are structural mirrors: Knowledge Islands holds the portable, island-agnostic definition; Knowledge Capital holds Arcadia's instance of that definition - this island's council, citizenship records, integration configuration, routing overrides, and identity. When adding a new generic concept here, its island-specific counterpart belongs in Knowledge Capital, not in Knowledge Islands itself.
+Every general concept defined in [[Knowledge Islands]] may have a corresponding specific realisation in [[Knowledge Capital]]. The two are structural mirrors: Knowledge Islands holds the portable, island-agnostic definition; Knowledge Capital holds Arcadia's instance of that definition - this island's council, citizenship records, integration configuration, routing overrides, and identity. When adding a new generic concept here, any island-specific counterpart belongs in Knowledge Capital, not in Knowledge Islands itself.
 
 ---
 
 ## Related Topics
 
-- [[Pillars/Pillars|Pillars]] - parent index
-- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - the specific realisation of Knowledge Islands for this island
+- [[Pillars/Pillars|Pillars]] - the Library's top-level index; Knowledge Islands is one of its Pillar domains
+- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - Arcadia's island-specific instance of everything defined here
 
 [zettelkasten]: https://zettelkasten.de/introduction/
 [para]: https://fortelabs.com/blog/para/

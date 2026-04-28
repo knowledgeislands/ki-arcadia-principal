@@ -30,35 +30,35 @@ The folder contains the Charter (the island's constitutional document), Known La
 
 ## Activities
 
-[[Knowledge Capital/Activities/Activities]] holds Arcadia's timing configuration for automated activities and the adoption stubs for non-adopted groups. The Schedule note defines the day-type taxonomy that automations read from daily note frontmatter. Veto stubs for Email and Linear sit in their respective subfolders.
+[[Knowledge Capital/Activities/Activities|Activities]] holds Arcadia's timing configuration for automated activities and the adoption stubs for non-adopted groups. The Schedule note defines the day-type taxonomy that automations read from daily note frontmatter. Veto stubs for Email and Linear sit in their respective subfolders.
 
 ---
 
 ## Agents
 
-[[Knowledge Capital/Agents/Agents]] holds the island-specific material that shapes how AI agents interact with Arcadia. Communication Style gives Claude a reference for Kit's voice; Canonical Meta Notes provides the ordered reading list that Knowledge Rebuild uses to ground an agent when starting cold.
+[[Knowledge Capital/Agents/Agents|Agents]] holds the island-specific material that shapes how AI agents interact with Arcadia. Communication Style gives Claude a reference for Kit's voice; Canonical Meta Notes provides the ordered reading list that Knowledge Rebuild uses to ground an agent when starting cold.
 
 ---
 
 ## Conventions
 
-[[Knowledge Capital/Conventions/Conventions]] holds the island-specific vocabulary and routing rules that supplement the generic KI conventions. The Glossary decodes Knowledge Islands terminology; Routing Rules records the filing decisions that recur in Arcadia's specific domain structure.
+[[Knowledge Capital/Conventions/Conventions|Conventions]] holds the island-specific vocabulary and routing rules that supplement the generic KI conventions. The Glossary decodes Knowledge Islands terminology; Routing Rules records the filing decisions that recur in Arcadia's specific domain structure.
 
 ---
 
 ## Processes
 
-[[Knowledge Capital/Processes/Processes]] holds Arcadia's instance of the KI process definitions. Currently it contains the [[Knowledge Capital/Processes/Enactment Process]] - Arcadia's ratification mechanism for changes to canonical knowledge.
+[[Knowledge Capital/Processes/Processes|Processes]] holds Arcadia's instance of the KI process definitions. Currently it contains the [[Knowledge Capital/Processes/Enactment Process|Enactment Process]] - Arcadia's ratification mechanism for changes to canonical knowledge.
 
 ---
 
 ## Tools
 
-[[Knowledge Capital/Tools/Tools]] holds the concrete infrastructure configuration for this island. Integrations lists the external services connected and their MCP identifiers; Physical Locations records the three filesystem paths - text store, binary store, and Cowork working folder - that make up Arcadia's physical footprint.
+[[Knowledge Capital/Tools/Tools|Tools]] holds the concrete infrastructure configuration for this island. Integrations lists the external services connected and their MCP identifiers; Physical Locations records the three filesystem paths - text store, binary store, and Cowork working folder - that make up Arcadia's physical footprint.
 
 ---
 
 ## Related Topics
 
-- [[Pillars/Pillars|Pillars]] - parent index
-- [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - the generic framework this Capital realises
+- [[Pillars/Pillars|Pillars]] - the Library's top-level index; Knowledge Capital is one of its Pillar domains
+- [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - the portable framework of which this is Arcadia's specific instance

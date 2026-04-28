@@ -25,16 +25,16 @@ Knowledge takes written form as notes - and the form is not incidental. [[Notes]
 
 ## [[Residency]]
 
-Knowledge does not live in one place. [[Residency]] defines the three tiers - the canonical Library, the working memory of agents, and auxiliary memory systems - and the rules governing what belongs in each and how knowledge moves between them. Residency is what keeps the Library authoritative without making it the only place work can happen: agents carry operational context in memory, session observations accumulate in auxiliary stores, and the promotion lifecycle ensures that what proves durable eventually reaches the Library.
+Knowledge does not live in one place. [[Residency]] defines the three tiers - the canonical Library, the working memory of agents, and auxiliary memory systems - and the rules governing what belongs in each and how knowledge moves between them. Residency is what keeps the Library authoritative without making it the only place work can happen: agents carry operational context in memory, session observations accumulate in auxiliary stores, and the promotion lifecycle ensures that what proves durable eventually reaches the [[Library]].
 
 ---
 
 ## [[Structure]]
 
-The island has geography - both natural and constructed. [[Structure]] maps its zones: the Library as a built place where knowledge is held, the Harbour as the natural port of entry where material arrives, and the Streams as living waterways where knowledge flows before it is ready to be housed. The conventions for each zone - how they are organised internally, how notes are routed between them, where boundaries lie - live under Structure.
+Islands have geography - both natural and constructed. [[Structure]] maps its zones: the [[Library]] as a built place where knowledge is held, the Harbour as the natural port of entry where material arrives, and the Streams as living waterways where knowledge flows before it is ready to be housed. The conventions for each zone - how they are organised internally, how notes are routed between them, where boundaries lie - live under [[Structure]].
 
 ---
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - parent index
+- [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - the KI framework index; Conventions is one of its five governance areas

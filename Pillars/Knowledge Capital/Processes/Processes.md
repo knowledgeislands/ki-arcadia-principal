@@ -14,7 +14,7 @@ Arcadia's governance processes - the island's realisation of the process definit
 
 ---
 
-## [[Enactment Process]]
+## [[Knowledge Capital/Processes/Enactment Process|Enactment Process]]
 
 Arcadia's ratification mechanism for changes to canonical knowledge. All changes that affect shared governance infrastructure - conventions, activity definitions, the constitutional layer - pass through this process before taking effect. The generic process model is defined in [[Knowledge Islands/Processes/Enactment Process|KI/Processes/Enactment Process]]; this note is Arcadia's instance of it.
 
@@ -22,5 +22,5 @@ Arcadia's ratification mechanism for changes to canonical knowledge. All changes
 
 ## Related Topics
 
-- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - parent index
-- [[Pillars/Knowledge Islands/Processes/Processes|KI/Processes]] - the generic process definitions this folder instances
+- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - the island self-knowledge index; Processes is one of its five governance areas
+- [[Pillars/Knowledge Islands/Processes/Processes|Processes (KI)]] - the generic process definitions this folder instances; the Enactment and Contribution processes are defined there

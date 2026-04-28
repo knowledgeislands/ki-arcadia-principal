@@ -76,9 +76,9 @@ These loops are not sequential - they run in parallel at different cadences. A s
 
 ## The Home of Knowledge
 
-Knowledge needs a place to live - somewhere with structure, boundaries, and stability. Without a home, the cycle of knowledge produces activity without memory. Without the cycle, the home becomes an archive.
+Knowledge needs a place to live - somewhere with structure, boundaries, and stability. Without a home, the cycle of knowledge produces activity without memory.
 
-That home is an **island**: a discrete, self-contained body of knowledge with defined boundaries and internal geography.
+That home is a **Knowledge Island**: a discrete, self-contained body of knowledge with defined boundaries and internal geography.
 
 At the heart of every island is **the Capital** - the settled civic centre where canonical, ratified knowledge is held. The Capital contains two buildings:
 
@@ -135,7 +135,7 @@ Every agent holds a standing within each island they interact with - Visitor, Ci
 
 Every island holds jurisdiction over its own canonical knowledge - the authority to determine what reaches its Library. Nothing becomes stable knowledge in Pillars or Resources except through the island's own governance.
 
-At the territory level, jurisdiction flows through the principal island: it carries the shared governance baseline for the whole territory. Satellite islands operate within this frame while maintaining their own jurisdictional scope for their specific domain.
+At the territory level, jurisdiction flows through the principal island: it carries the shared governance baseline for the whole territory. Satellite islands operate within this framework while maintaining their own jurisdictional scope for their specific domain.
 
 Three structural patterns define how jurisdiction is administered:
 
@@ -149,12 +149,12 @@ An island may evolve its governance pattern as it grows. The processes that enac
 
 Every person who interacts with an island has a standing within it:
 
-|                           | Visitor  | Citizen  | Council Member                                                           |
-| ------------------------- | -------- | -------- | ------------------------------------------------------------------------ | ------------------- |
-| **Standing**              | Informal | Full     | Full                                                                     |
-| **Council eligibility**   | ✗        | Eligible | Member                                                                   |
+|                           | Visitor  | Citizen  | Council Member                                          |
+| ------------------------- | -------- | -------- | ------------------------------------------------------- |
+| **Standing**              | Informal | Full     | Full                                                    |
+| **Council eligibility**   | ✗        | Eligible | Member                                                  |
 | **Formal proposals**      | ✗        | ✗        | ✓ via [[Knowledge Islands/Processes/Enactment Process]] |
-| **Informal contribution** | ✓        | ✓        | ✓                                                                        |
+| **Informal contribution** | ✓        | ✓        | ✓                                                       |
 
 Citizenship is a prerequisite for council membership - a council member must be a Citizen of the island they govern. The council (or governor, for single-governor islands) grants citizenship. Citizenship is not restricted to a single island; a person may hold citizenship across multiple territories simultaneously, and therefore be eligible for council membership in each. A Visitor with a substantive contribution may seek citizenship, or ask an existing council member to carry the proposal forward on their behalf.
 
