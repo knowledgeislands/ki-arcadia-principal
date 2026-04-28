@@ -26,7 +26,7 @@ The human operating mode covers everything a person does directly in the island 
 
 **Graph navigation** - Using Obsidian's graph view and wikilink traversal to explore connections, identify orphaned notes, and maintain structural health.
 
-**Periodic maintenance** - Running the scheduled maintenance activities documented in [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]], including status reviews, wikilink audits, and inbox clearance.
+**Periodic maintenance** - Running the scheduled activities documented in [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]], including status reviews, wikilink audits, and inbox clearance.
 
 ---
 

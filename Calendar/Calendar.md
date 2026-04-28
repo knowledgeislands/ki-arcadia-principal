@@ -34,5 +34,5 @@ The Calendar folder contains all time-stamped notes: daily notes, meeting notes,
 ## Related Topics
 
 - [[Pillars/Knowledge Islands/Governance/Conventions/Notes|Notes]] - conventions for daily, meeting, and session digest note structure
-- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - recurring Calendar maintenance tasks
+- [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - recurring Calendar tasks
 - [[Pillars/Knowledge Islands/Governance/Tools/Obsidian/Obsidian|Obsidian]] - primary interface for viewing and editing Calendar notes

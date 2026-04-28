@@ -39,7 +39,7 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 - [ ] Define what "proposal-ready" means - criteria for when a stream idea is sufficiently developed to become a formal proposal
 - [ ] Define the proposal note format - what a well-formed proposal contains, how it links to source material and rationale
-- [ ] Decide which activity group Auto Proposal Research belongs to (Maintenance is likely; a new Governance group is possible)
+- [ ] Decide which activity group Auto Proposal Research belongs to (Tending is likely; a new Governance group is possible)
 - [ ] Write the Layer 1 activity note
 - [ ] Write the Layer 5 prompt
 - [ ] Consider cadence - weekly or fortnightly makes sense given council meeting rhythm
@@ -48,7 +48,7 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 ## Open Questions
 
-1. **Which activity group?** Maintenance covers island health and structure; this is more about governance readiness. A dedicated Governance activity group under Activities may be warranted if other governance-facing activities emerge.
+1. **Which activity group?** Tending covers island health and structure; this is more about governance readiness. A dedicated Governance activity group under Activities may be warranted if other governance-facing activities emerge.
 
 2. **What triggers a proposal?** The activity needs a definition of "ready" - otherwise it produces proposals prematurely or misses mature ideas. Likely a combination of: stream status (`in-progress`), presence of a Design section with substantive content, and explicit open questions that have been resolved.
 

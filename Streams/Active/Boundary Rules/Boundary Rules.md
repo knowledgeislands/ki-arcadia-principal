@@ -28,7 +28,7 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 | Type                 | Detail                                                                                                                   |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | Convention note      | `Pillars/Knowledge Islands/Governance/Conventions/Boundary Rules.md` — new standalone note                              |
-| Maintenance activity | Boundary rules scan activity in `Pillars/Knowledge Capital/Governance/Activities/` (schedule and trigger TBD at rollout) |
+| Tending activity | Boundary rules scan activity in `Pillars/Knowledge Capital/Governance/Activities/` (schedule and trigger TBD at rollout) |
 
 ---
 

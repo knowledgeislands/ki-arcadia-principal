@@ -40,7 +40,7 @@ Adoption positions for all non-constitutional activity groups. Every group must 
 
 | Group       | Position | Knowledge Capital                                                                        |
 | ----------- | -------- | ---------------------------------------------------------------------------------------- |
-| Maintenance | adopted  | [[Pillars/Knowledge Capital/Governance/Activities/Maintenance/Maintenance\|Maintenance]] |
+| Tending | adopted  | [[Pillars/Knowledge Capital/Governance/Activities/Tending/Tending\|Tending]] |
 | Briefings   | adopted  | [[Pillars/Knowledge Capital/Governance/Activities/Briefings/Briefings\|Briefings]]       |
 | Email       | vetoed   | [[Pillars/Knowledge Capital/Governance/Activities/Email/Email\|Email]]                   |
 | Linear      | vetoed   | [[Pillars/Knowledge Capital/Governance/Activities/Linear/Linear\|Linear Workspace]]      |
@@ -54,9 +54,9 @@ Active scheduled automations within adopted groups. An activity listed here is e
 | Activity                                                                                                   | Group          | Day Type           | Time  | Status  |
 | ---------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | ----- | ------- |
 | [[Pillars/Knowledge Islands/Governance/Activities/Constitutional/Conformance\|Conformance]]                | Constitutional | work-day           | 04:30 | enabled |
-| [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Scheduled Task Audit\|Scheduled Task Audit]] | Maintenance    | work-day           | 05:00 | enabled |
-| [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Health Check\|Health Check]]                 | Maintenance    | Monday work-day    | 08:00 | enabled |
-| [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Knowledge Rebuild\|Knowledge Rebuild]]       | Maintenance    | Wednesday work-day | 07:00 | enabled |
+| [[Pillars/Knowledge Islands/Governance/Activities/Tending/Scheduled Task Audit\|Scheduled Task Audit]] | Tending        | work-day           | 05:00 | enabled |
+| [[Pillars/Knowledge Islands/Governance/Activities/Tending/Health Check\|Health Check]]                 | Tending        | Monday work-day    | 08:00 | enabled |
+| [[Pillars/Knowledge Islands/Governance/Activities/Tending/Knowledge Rebuild\|Knowledge Rebuild]]       | Tending        | Wednesday work-day | 07:00 | enabled |
 | [[Pillars/Knowledge Islands/Governance/Activities/Briefings/Morning Briefing\|Morning Briefing]]           | Briefings      | work-day           | 06:00 | enabled |
 
 Day types are defined in [[Schedule|Schedule]].
@@ -69,12 +69,12 @@ Active conversational activities within adopted groups. Trigger phrases are the 
 
 | Activity                                                                                             | Group       | Trigger                  | Status  |
 | ---------------------------------------------------------------------------------------------------- | ----------- | ------------------------ | ------- |
-| [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Inbox Review\|Inbox Review]]           | Maintenance | _"ki inbox review"_      | enabled |
-| [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Asset Audit\|Asset Audit]]             | Maintenance | _"ki asset audit"_       | enabled |
-| [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Status Review\|Status Review]]         | Maintenance | _"ki status review"_     | enabled |
-| [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Structural Audit\|Structural Audit]]   | Maintenance | _"ki structural audit"_  | enabled |
-| [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Wikilink Review\|Wikilink Review]]     | Maintenance | _"ki wikilink review"_   | enabled |
-| [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Convergence Check\|Convergence Check]] | Maintenance | _"ki convergence check"_ | enabled |
+| [[Pillars/Knowledge Islands/Governance/Activities/Tending/Inbox Review\|Inbox Review]]           | Tending | _"ki inbox review"_      | enabled |
+| [[Pillars/Knowledge Islands/Governance/Activities/Tending/Asset Audit\|Asset Audit]]             | Tending | _"ki asset audit"_       | enabled |
+| [[Pillars/Knowledge Islands/Governance/Activities/Tending/Status Review\|Status Review]]         | Tending | _"ki status review"_     | enabled |
+| [[Pillars/Knowledge Islands/Governance/Activities/Tending/Structural Audit\|Structural Audit]]   | Tending | _"ki structural audit"_  | enabled |
+| [[Pillars/Knowledge Islands/Governance/Activities/Tending/Wikilink Review\|Wikilink Review]]     | Tending | _"ki wikilink review"_   | enabled |
+| [[Pillars/Knowledge Islands/Governance/Activities/Tending/Convergence Check\|Convergence Check]] | Tending | _"ki convergence check"_ | enabled |
 
 ---
 

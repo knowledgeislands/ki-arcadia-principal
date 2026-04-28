@@ -34,7 +34,7 @@ The constitutional baseline required of any Knowledge Island. Not subject to the
 
 ---
 
-## [[Maintenance]]
+## [[Tending]]
 
 Activities that keep the island structurally sound, content-healthy, and free of stale or orphaned material - spanning daily automations through to weekly reviews and deeper adhoc audits.
 

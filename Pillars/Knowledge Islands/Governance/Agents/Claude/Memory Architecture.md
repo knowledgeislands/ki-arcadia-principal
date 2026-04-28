@@ -60,7 +60,7 @@ The prefix distinguishes files from multiple KIs sharing the same `.auto-memory/
 
 ## Two Classes of Memory File
 
-**Canonical files** are managed exclusively by [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Knowledge Rebuild|Knowledge Rebuild]]. They are rewritten from the KI on a regular schedule. Do not edit them manually between rebuilds - changes will be overwritten. The five canonical files are:
+**Canonical files** are managed exclusively by [[Pillars/Knowledge Islands/Governance/Activities/Tending/Knowledge Rebuild|Knowledge Rebuild]]. They are rewritten from the KI on a regular schedule. Do not edit them manually between rebuilds - changes will be overwritten. The five canonical files are:
 
 | File                                 | Source KI notes                                                           |
 | ------------------------------------ | ------------------------------------------------------------------------- |
@@ -76,7 +76,7 @@ The prefix distinguishes files from multiple KIs sharing the same `.auto-memory/
 
 ## KI ↔ Memory Mapping
 
-_The table below uses `{ki_prefix}` and `{user_prefix}` placeholders - substitute the actual values from [[Pillars/Knowledge Capital/Charter|Charter]] when reading for a specific KI. [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Knowledge Rebuild|Knowledge Rebuild]] uses this table during its gap analysis to validate that every listed file exists in `.auto-memory/` and that every file in `.auto-memory/` is documented here._
+_The table below uses `{ki_prefix}` and `{user_prefix}` placeholders - substitute the actual values from [[Pillars/Knowledge Capital/Charter|Charter]] when reading for a specific KI. [[Pillars/Knowledge Islands/Governance/Activities/Tending/Knowledge Rebuild|Knowledge Rebuild]] uses this table during its gap analysis to validate that every listed file exists in `.auto-memory/` and that every file in `.auto-memory/` is documented here._
 
 | KI Note | Memory File | Class | Notes |
 | --- | --- | --- | --- |
@@ -101,5 +101,5 @@ _The table below uses `{ki_prefix}` and `{user_prefix}` placeholders - substitut
 
 - [[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude|Claude]] - parent index
 - [[Pillars/Knowledge Islands/Governance/Conventions/Residency/Residency|Residency]] - the three-tier model and residency principles this architecture implements
-- [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Knowledge Rebuild|Knowledge Rebuild]] - the scheduled task that maintains the canonical memory layer
+- [[Pillars/Knowledge Islands/Governance/Activities/Tending/Knowledge Rebuild|Knowledge Rebuild]] - the scheduled task that maintains the canonical memory layer
 - [[Pillars/Knowledge Capital/Charter|Charter]] - source of `ki_prefix` and `user_prefix` values

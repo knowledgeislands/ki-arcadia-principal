@@ -8,7 +8,7 @@ status: in-progress - April 2026
 purpose: Track the work of building out Arcadia's operational tooling - the Layer 5 prompt library, activity navigation aids, the Arcadia skill, and scheduled task configuration
 author: Written with Claude
 ---
-
+m
 # Tooling Prompts
 
 ## Overview
@@ -25,7 +25,7 @@ The structural scaffolding (folder structure, stub index notes, authoring conven
 | ------------------- | -------------- | ---------------------------------------------------------------------------------------------------------- |
 | Scaffolding         | ✅ Complete    | `Tools/Claude/Activities/` folder structure and stub indexes created; `Authoring Activities.md` written    |
 | Email prompts       | 🔲 Not started | Migrate Route Triage, Route Drift, Route Review, Re-route Triaged, Recap, Email Test prompts to Layer 5    |
-| Maintenance prompts | 🔲 Not started | Migrate Health Check, Knowledge Rebuild, Scheduled Task Audit, Knowledge Islands Convergence Check prompts |
+| Tending prompts | 🔲 Not started | Migrate Health Check, Knowledge Rebuild, Scheduled Task Audit, Knowledge Islands Convergence Check prompts |
 | Briefings prompts   | 🔲 Not started | Migrate Morning Briefing prompt                                                                            |
 | Linear prompts      | 🔲 Not started | Migrate Linear Sync prompt                                                                                 |
 | Prompt sync audit   | 🔲 Not started | Verify all Layer 5 prompts are in sync with their Cowork scheduled tasks                                   |

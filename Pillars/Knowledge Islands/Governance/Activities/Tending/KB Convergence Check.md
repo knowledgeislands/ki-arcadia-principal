@@ -54,15 +54,15 @@ These notes must remain byte-for-byte identical. Any difference is drift to be r
 - `Conventions/Notes.md`
 - `Activities/Activities.md`
 - `Activities/Authoring Activities.md`
-- `Activities/Maintenance/Asset Audit.md`
-- `Activities/Maintenance/Health Check.md`
-- `Activities/Maintenance/Inbox Review.md`
-- `Activities/Maintenance/Convergence Check.md`
-- `Activities/Maintenance/Knowledge Rebuild.md`
+- `Activities/Tending/Asset Audit.md`
+- `Activities/Tending/Health Check.md`
+- `Activities/Tending/Inbox Review.md`
+- `Activities/Tending/Convergence Check.md`
+- `Activities/Tending/Knowledge Rebuild.md`
 - `Activities/Briefings/Morning Briefing.md`
-- `Activities/Maintenance/Status Review.md`
-- `Activities/Maintenance/Structural Audit.md`
-- `Activities/Maintenance/Wikilink Review.md`
+- `Activities/Tending/Status Review.md`
+- `Activities/Tending/Structural Audit.md`
+- `Activities/Tending/Wikilink Review.md`
 - `Tools/Tools.md`
 - `Tools/Claude/Claude.md`
 - `Tools/Claude/Cowork Configuration Layers.md`
@@ -136,6 +136,6 @@ State which files were updated and summarise what was synced, deferred, or inten
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Maintenance|Maintenance]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Tending/Tending|Tending]] - parent index
 - [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - grandparent index
 - [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - KI-specific parameters folder that makes portability possible

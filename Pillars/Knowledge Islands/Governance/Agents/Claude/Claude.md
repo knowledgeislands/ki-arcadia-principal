@@ -33,7 +33,7 @@ For Cowork integration specifics - connection type, token economics, platform co
 
 ## Memory
 
-[[Pillars/Knowledge Islands/Governance/Agents/Claude/Memory Architecture|Memory Architecture]] documents how Claude's auto-memory is structured for this island - file conventions, the two classes of memory file (canonical and auxiliary), and the KI↔memory mapping that [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Knowledge Rebuild|Knowledge Rebuild]] uses to maintain the canonical layer.
+[[Pillars/Knowledge Islands/Governance/Agents/Claude/Memory Architecture|Memory Architecture]] documents how Claude's auto-memory is structured for this island - file conventions, the two classes of memory file (canonical and auxiliary), and the KI↔memory mapping that [[Pillars/Knowledge Islands/Governance/Activities/Tending/Knowledge Rebuild|Knowledge Rebuild]] uses to maintain the canonical layer.
 
 ---
 

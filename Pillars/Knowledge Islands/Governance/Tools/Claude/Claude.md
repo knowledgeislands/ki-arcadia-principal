@@ -54,7 +54,7 @@ Mistakes and Lessons was previously loaded as a pre-flight check (~1,770 tokens,
 - **Lessons live in auto-memory** - all resolved lessons from [[Mistakes and Lessons]] are extracted to the relevant `feedback_*` memory files. The lessons are active in every session at zero marginal cost; the KI note is a human-readable register, not a machine-read file.
 - **[[CLAUDE]] folder table is two columns only** - verbose routing logic lives in the Routing Rules section, not duplicated in the table.
 
-### Maintenance triggers
+### Tending triggers
 
 Flag for review if:
 
@@ -114,7 +114,7 @@ The `productivity:memory-management` skill provides a structured **deep memory**
 
 ## Activities
 
-[[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Activities|Activities]] is the Layer 5 prompt library - the executable prompts that drive scheduled and conversational activities, organised into one subfolder per activity group (Email, Maintenance, Briefings, Linear). What each activity does and why is documented at Layer 1 under [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]].
+[[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Activities|Activities]] is the Layer 5 prompt library - the executable prompts that drive scheduled and conversational activities, organised into one subfolder per activity group (Email, Tending, Briefings, Linear). What each activity does and why is documented at Layer 1 under [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]].
 
 ---
 

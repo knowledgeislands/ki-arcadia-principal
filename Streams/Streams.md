@@ -21,7 +21,7 @@ Live tracking view of all active proposals. Ordered by Stream (Active → Backgr
 | Topic                                                                                                                           | Stream     | Status        | Priority |
 | ------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------- | -------- |
 | [[Streams/Active/Tooling Prompts/Tooling Prompts\|Tooling Prompts]]                                                             | Active     | `in-progress` | `high`   |
-| [[Streams/Active/Conformance/Conformance\|Conformance]]                   | Active     | `draft`       | `urgent` |
+| [[Streams/Settled/Conformance/Conformance\|Conformance]]                  | Settled    | `completed`   | `urgent` |
 | [[Streams/Active/Boundary Rules/Boundary Rules\|Boundary Rules]]                   | Active     | `draft`       | `urgent` |
 | [[Streams/Active/Index Review/Index Review\|Index Review]]                | Active     | `draft`       | `medium` |
 | [[Streams/Future/Auto Proposal Pipeline/Auto Proposal Pipeline\|Proposal Pipeline]] | Active     | `draft`       | `medium` |

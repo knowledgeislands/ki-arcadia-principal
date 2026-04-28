@@ -80,7 +80,7 @@ For each task, read its KI note and check:
 This task's own SKILL.md is mounted at the path returned by:
   find /sessions/*/mnt/uploads -name "SKILL.md" 2>/dev/null | head -1
 
-Read it and compare against the ## Prompt block in $ACTIVITIES_DIR/Maintenance/Scheduled Task Audit.md. This is the only task whose prompt can be verified with current tooling.
+Read it and compare against the ## Prompt block in $ACTIVITIES_DIR/Tending/Scheduled Task Audit.md. This is the only task whose prompt can be verified with current tooling.
 
 If the KI note is ahead of the live task: call mcp__scheduled-tasks__update_scheduled_task to push the KI version.
 If the live task is ahead of the KI note: update the KI note to match, then confirm alignment.
@@ -140,5 +140,5 @@ When updating a prompt during an active session: update the KI note first, then 
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Maintenance|Maintenance]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Tending/Tending|Tending]] - parent index
 - [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - grandparent index

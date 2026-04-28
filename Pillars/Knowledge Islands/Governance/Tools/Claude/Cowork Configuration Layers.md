@@ -72,7 +72,7 @@ The following categories belong in the Cowork project instructions box - rules t
 
 ---
 
-## Maintenance
+## Tending
 
 When a preference or rule is added to auto-memory, ask: should this be always-on? If yes, move it to the instructions box. Auto-memory is appropriate for facts about ongoing work and validated approaches that accumulate over time - not for invariant behavioural rules.
 

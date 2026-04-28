@@ -228,6 +228,6 @@ Run this in Terminal on the Mac. The result will be the path to `MEMORY.md`; the
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Maintenance|Maintenance]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Tending/Tending|Tending]] - parent index
 - [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - grandparent index
 - [[Canonical Meta Notes|Canonical Meta Notes]] - the ordered list of notes this task reads

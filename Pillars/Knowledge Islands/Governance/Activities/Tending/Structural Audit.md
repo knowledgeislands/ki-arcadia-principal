@@ -98,5 +98,5 @@ Session digests are recorded in the **daily note** for the session date, under `
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Maintenance|Maintenance]] - parent index
+- [[Pillars/Knowledge Islands/Governance/Activities/Tending/Tending|Tending]] - parent index
 - [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - grandparent index

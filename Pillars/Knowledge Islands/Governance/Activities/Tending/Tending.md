@@ -10,11 +10,11 @@ purpose: Index of island maintenance activities - scheduled and conversational
 author: Written with Claude
 ---
 
-# Maintenance
+# Tending
 
 ## Overview
 
-Maintenance activities keep the island structurally sound, content-healthy, and aligned with the world it reflects. Without them, drift accumulates silently: notes go stale, wikilinks break as notes move, auto-memory diverges from the KI, scheduled task prompts fall out of sync with their KI notes, and the inbox fills with uncaptured material. Maintenance is the mechanism that prevents that entropy - running on a regular cadence, lightweight enough to be sustainable, thorough enough to catch what matters.
+Tending activities keep the island structurally sound, content-healthy, and aligned with the world it reflects. Without them, drift accumulates silently: notes go stale, wikilinks break as notes move, auto-memory diverges from the KI, scheduled task prompts fall out of sync with their KI notes, and the inbox fills with uncaptured material. Tending is the mechanism that prevents that entropy - running on a regular cadence, lightweight enough to be sustainable, thorough enough to catch what matters.
 
 Activities divide by cadence and initiation. Three are scheduled automations that run without human prompting: the Scheduled Task Audit (daily, runs first), the Health Check (weekly), and the Knowledge Rebuild (midweek). Six are conversational: triggered by phrase, human-in-the-loop, run when the maintenance window arrives or when a specific need arises.
 
@@ -76,11 +76,11 @@ Activities divide by cadence and initiation. Three are scheduled automations tha
 
 ## Adoption Requirements
 
-To adopt this activity group, an island must create the following Knowledge Capital notes. A vetoed island must create an index stub at `Knowledge Capital/Governance/Activities/Maintenance/Maintenance` acknowledging the veto.
+To adopt this activity group, an island must create the following Knowledge Capital notes. A vetoed island must create an index stub at `Knowledge Capital/Governance/Activities/Tending/Tending` acknowledging the veto.
 
 | Note | Path | Purpose |
 | --- | --- | --- |
-| Maintenance index | `Knowledge Capital/Governance/Activities/Maintenance/Maintenance` | Group index; confirms adoption and links to timing config |
+| Tending index | `Knowledge Capital/Governance/Activities/Tending/Tending` | Group index; confirms adoption and links to timing config |
 | Schedule | `Knowledge Capital/Governance/Activities/Schedule` | Day-type taxonomy read by all scheduled automations |
 
 ---
@@ -88,4 +88,4 @@ To adopt this activity group, an island must create the following Knowledge Capi
 ## Related Topics
 
 - [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - parent index
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Maintenance/Maintenance|Tools/Claude/Activities/Maintenance]] - Layer 5 prompts that drive these activities
+- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Tending/Tending|Tools/Claude/Activities/Tending]] - Layer 5 prompts that drive these activities

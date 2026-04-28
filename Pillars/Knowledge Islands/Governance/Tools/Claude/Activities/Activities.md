@@ -32,9 +32,9 @@ What an activity does and why it exists is documented at Layer 1 under [[Pillars
 
 ---
 
-## Maintenance
+## Tending
 
-[[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Maintenance/Maintenance|Maintenance]] holds the prompts for island maintenance activities: the Scheduled Task Audit, Health Check, Knowledge Rebuild, and Convergence Check automations, plus the conversational activities (Inbox Review, Asset Audit, Status Review, Structural Audit, Wikilink Review). Several of these prompts read or write the auto-memory layer directly.
+[[Pillars/Knowledge Islands/Governance/Tools/Claude/Activities/Tending/Tending|Tending]] holds the prompts for island tending activities: the Scheduled Task Audit, Health Check, Knowledge Rebuild, and Convergence Check automations, plus the conversational activities (Inbox Review, Asset Audit, Status Review, Structural Audit, Wikilink Review). Several of these prompts read or write the auto-memory layer directly.
 
 ---
 

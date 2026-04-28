@@ -14,7 +14,7 @@ author: Written with Claude
 
 The Conformance Check verifies that a Knowledge Island continues to meet its constitutional baseline and that its adoption record is complete and internally consistent. It is the sole constitutional activity: required of any island running Knowledge Islands, not subject to the adoption framework, and self-grounding - the mechanism that checks conformance is itself part of what conformance means.
 
-Unlike maintenance activities, which check the health of a running island, Conformance checks whether the island is valid at all. It runs prior to other checks in the maintenance sequence.
+Unlike tending activities, which check the health of a running island, Conformance checks whether the island is valid at all.
 
 ---
 

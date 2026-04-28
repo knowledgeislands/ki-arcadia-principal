@@ -24,7 +24,7 @@ This folder holds the island-specific material that shapes how AI agents interac
 
 ## Canonical Meta Notes
 
-[[Canonical Meta Notes|Canonical Meta Notes]] is the ordered reading list for [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Knowledge Rebuild|Knowledge Rebuild]]. When an agent starts cold - with no prior context about this island - it reads this list in sequence to reconstruct operational awareness: CLAUDE.md first, then governance notes, then the configuration notes in this folder. The order is intentional; each note builds on the context established by the ones before it.
+[[Canonical Meta Notes|Canonical Meta Notes]] is the ordered reading list for [[Pillars/Knowledge Islands/Governance/Activities/Tending/Knowledge Rebuild|Knowledge Rebuild]]. When an agent starts cold - with no prior context about this island - it reads this list in sequence to reconstruct operational awareness: CLAUDE.md first, then governance notes, then the configuration notes in this folder. The order is intentional; each note builds on the context established by the ones before it.
 
 ---
 
