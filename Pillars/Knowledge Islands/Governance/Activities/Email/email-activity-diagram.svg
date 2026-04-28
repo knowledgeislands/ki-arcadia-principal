@@ -168,16 +168,16 @@
 
 
   <!-- ══════════════════════════════════════════════════════ -->
-  <!-- RHS TOP - KB State (25 %, top half)                  -->
+  <!-- RHS TOP - Knowledge Capital (25 %, top half)                  -->
   <!-- ══════════════════════════════════════════════════════ -->
   <rect x="735" y="10" width="175" height="175" rx="7"
         fill="#fefce8" stroke="#d97706" stroke-width="1.5"/>
   <rect x="735" y="10" width="175" height="36" rx="7" fill="#b45309"/>
   <rect x="735" y="33" width="175" height="13" fill="#b45309"/>
   <text x="822" y="28" text-anchor="middle" font-size="13" font-weight="700"
-        fill="white" dominant-baseline="middle">KB State</text>
+        fill="white" dominant-baseline="middle">Knowledge Capital</text>
 
-  <!-- KB State Box 1: Email Routing Rules -->
+  <!-- Knowledge Capital Box 1: Email Routing Rules -->
   <rect x="743" y="54" width="152" height="35" rx="4" fill="white" stroke="#fcd34d" stroke-width="1"/>
   <rect x="743" y="54" width="152" height="16" rx="4" fill="#fef3c7"/>
   <rect x="743" y="58" width="152" height="12" fill="#fef3c7"/>
@@ -185,7 +185,7 @@
   <text x="819" y="62" text-anchor="middle" fill="#78350f" font-size="10" font-weight="700" dominant-baseline="middle">Email Routing Config</text>
   <text x="819" y="80" text-anchor="middle" fill="#92400e" font-size="9" font-family="ui-monospace, monospace" dominant-baseline="middle">route files</text>
 
-  <!-- KB State Box 2: Email Routing Queue -->
+  <!-- Knowledge Capital Box 2: Email Routing Queue -->
   <rect x="743" y="92" width="152" height="35" rx="4" fill="white" stroke="#fcd34d" stroke-width="1"/>
   <rect x="743" y="92" width="152" height="16" rx="4" fill="#fef3c7"/>
   <rect x="743" y="96" width="152" height="12" fill="#fef3c7"/>
@@ -193,7 +193,7 @@
   <text x="819" y="100" text-anchor="middle" fill="#78350f" font-size="10" font-weight="700" dominant-baseline="middle">Email Routing Queue</text>
   <text x="819" y="118" text-anchor="middle" fill="#92400e" font-size="9" dominant-baseline="middle">routing suggestions</text>
 
-  <!-- KB State Box 3: Email Status -->
+  <!-- Knowledge Capital Box 3: Email Status -->
   <rect x="743" y="130" width="152" height="35" rx="4" fill="white" stroke="#fcd34d" stroke-width="1"/>
   <rect x="743" y="130" width="152" height="16" rx="4" fill="#fef3c7"/>
   <rect x="743" y="134" width="152" height="12" fill="#fef3c7"/>
@@ -201,7 +201,7 @@
   <text x="819" y="138" text-anchor="middle" fill="#78350f" font-size="10" font-weight="700" dominant-baseline="middle">Email Status</text>
   <text x="819" y="156" text-anchor="middle" fill="#92400e" font-size="9" dominant-baseline="middle">triage counts</text>
 
-  <text x="822" y="178" text-anchor="middle" fill="#92400e" font-size="9.5">KB Specifics/Email/</text>
+  <text x="822" y="178" text-anchor="middle" fill="#92400e" font-size="9.5">Knowledge Capital</text>
 
 
   <!-- ══════════════════════════════════════════════════════ -->

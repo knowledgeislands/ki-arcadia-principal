@@ -40,7 +40,7 @@ A frequent check (every 15-30 minutes during working hours) that detects an immi
 
 ### Email intelligence in morning briefing
 
-Extend the morning briefing task to include a nightly scan of the email inbox via the configured email MCP (see [[Pillars/Knowledge Islands/Governance/KB Specifics/Integrations|KB Specifics → Integrations]]). Distil active threads into a 3-5 line awareness layer: what conversations are live, what needs attention, what can wait.
+Extend the morning briefing task to include a nightly scan of the email inbox via the configured email MCP (see [[Pillars/Knowledge Capital/Governance/Tools/Integrations.md|Knowledge Capital → Integrations]]). Distil active threads into a 3-5 line awareness layer: what conversations are live, what needs attention, what can wait.
 
 ### Nightly repository organiser
 
