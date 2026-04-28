@@ -40,7 +40,7 @@ Check each of the two constitutional elements in turn.
 
 **Charter.** The file `Pillars/Knowledge Capital/Charter.md` must exist and contain both parts:
 
-- An Identity section with at minimum: an island name, a KB skill identifier, and a task prefix. Flag as CRITICAL if any of these fields are missing.
+- An Identity section with at minimum: an island name, a KI skill identifier, and a task prefix. Flag as CRITICAL if any of these fields are missing.
 - An Activity Groups table with at least one row carrying a clear `adopted` or `vetoed` position; a Scheduled Activities table; and a Tools section. Flag as CRITICAL if any of these sections are absent or the Activity Groups table is empty.
 
 Flag as CRITICAL if the file is absent or empty.

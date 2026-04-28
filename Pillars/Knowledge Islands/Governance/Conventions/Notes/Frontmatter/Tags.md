@@ -6,7 +6,7 @@ tags:
 status: current - April 2026
 purpose: Tag taxonomy for the island - hierarchical namespace/value tags covering card types, calendar types, topics, and source markers
 author: Written with Claude
-memory_file: project_{kb_prefix}_note_format.md
+memory_file: project_{ki_prefix}_note_format.md
 ---
 
 # Tags

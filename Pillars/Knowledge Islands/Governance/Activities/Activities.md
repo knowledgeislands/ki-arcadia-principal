@@ -8,8 +8,8 @@ status: current - April 2026
 purpose: Index and overview of island activities - scheduled automations and conversational triggers
 author: Written with Claude
 memory_file:
-  - reference_{kb_prefix}_key_notes.md
-  - feedback_{kb_prefix}_operations.md
+  - reference_{ki_prefix}_key_notes.md
+  - feedback_{ki_prefix}_operations.md
 ---
 
 # Activities
@@ -48,7 +48,7 @@ Activities that keep the island structurally sound, content-healthy, and free of
 | [[Status Review]]        | Conversational | _"ki status review"_      | Weekly - updates `status` frontmatter fields when a note's standing has changed                                  |
 | [[Structural Audit]]     | Conversational | _"ki structural audit"_   | Adhoc - comprehensive structural review of an island section or the whole repository                             |
 | [[Wikilink Review]]      | Conversational | _"ki wikilink review"_    | Adhoc - surfaces broken wikilinks and orphan notes across the repository                                         |
-| [[KB Convergence Check]] | Conversational | _"ki convergence check"_  | Adhoc - compares shared notes across all KBs; surfaces drift; cross-pollinates improvements                      |
+| [[Convergence Check]]    | Conversational | _"ki convergence check"_  | Adhoc - compares shared notes across all KIs; surfaces drift; cross-pollinates improvements                      |
 
 ---
 
@@ -83,7 +83,7 @@ Daily automation that keeps the island aligned with the Linear project managemen
 
 | Activity | Type | When | Summary |
 | --- | --- | --- | --- |
-| [[Linear Sync]] | Scheduled | Each working day at 09:00 | Compares Linear initiatives and projects against KB stream notes and the mapping table; surfaces misalignment; flags candidates for new notes or archival |
+| [[Linear Sync]] | Scheduled | Each working day at 09:00 | Compares Linear initiatives and projects against KI stream notes and the mapping table; surfaces misalignment; flags candidates for new notes or archival |
 
 ---
 

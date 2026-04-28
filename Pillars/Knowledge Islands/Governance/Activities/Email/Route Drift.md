@@ -24,7 +24,7 @@ This activity makes no mailbox API calls beyond listing folder contents - it is 
 
 - **Runs:** 08:00 daily - working days per [[Schedule|Schedule]]
 - **Alongside:** [[Route Triage]] (runs at 09:00, after this; Route Drift prunes tracking before Route Triage applies its aged and inbound passes)
-- **Task ID:** `{task-prefix}-email-route-drift` - prefix defined in [[Pillars/Knowledge Capital/Charter|KB Identity]]
+- **Task ID:** `{task-prefix}-email-route-drift` - prefix defined in [[Pillars/Knowledge Capital/Charter|Charter]]
 
 ---
 

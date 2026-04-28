@@ -50,7 +50,7 @@ At the heart of the knowledge management is a cycle of continuous improvement / 
 
 ### Pre-Flight Checks
 
-Operational rules and known pitfalls are captured in auto-memory (`feedback_{kb_prefix}_operations.md` and related files) - no separate file read is required at session start. If an error occurs during a session, log it in [[Mistakes and Lessons]], apply the fix, update the relevant memory file, and record the resolved lesson in the table.
+Operational rules and known pitfalls are captured in auto-memory (`feedback_{ki_prefix}_operations.md` and related files) - no separate file read is required at session start. If an error occurs during a session, log it in [[Mistakes and Lessons]], apply the fix, update the relevant memory file, and record the resolved lesson in the table.
 
 ### Querying
 

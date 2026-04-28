@@ -40,7 +40,7 @@ A secondary AI tool used for read-heavy sessions. [[Pillars/Knowledge Islands/Go
 
 ## Linear
 
-The issue and project management integration. [[Pillars/Knowledge Islands/Governance/Tools/Linear/Linear|Linear]] covers the MCP connection, the scope boundary between Linear and the KB (what lives in Linear vs what belongs in Streams), and the browser-based interaction patterns used when the MCP is insufficient.
+The issue and project management integration. [[Pillars/Knowledge Islands/Governance/Tools/Linear/Linear|Linear]] covers the MCP connection, the scope boundary between Linear and the KI (what lives in Linear vs what belongs in Streams), and the browser-based interaction patterns used when the MCP is insufficient.
 
 ---
 

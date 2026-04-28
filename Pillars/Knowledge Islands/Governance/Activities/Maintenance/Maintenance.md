@@ -14,7 +14,7 @@ author: Written with Claude
 
 ## Overview
 
-Maintenance activities keep the island structurally sound, content-healthy, and aligned with the world it reflects. Without them, drift accumulates silently: notes go stale, wikilinks break as notes move, auto-memory diverges from the KB, scheduled task prompts fall out of sync with their KI notes, and the inbox fills with uncaptured material. Maintenance is the mechanism that prevents that entropy - running on a regular cadence, lightweight enough to be sustainable, thorough enough to catch what matters.
+Maintenance activities keep the island structurally sound, content-healthy, and aligned with the world it reflects. Without them, drift accumulates silently: notes go stale, wikilinks break as notes move, auto-memory diverges from the KI, scheduled task prompts fall out of sync with their KI notes, and the inbox fills with uncaptured material. Maintenance is the mechanism that prevents that entropy - running on a regular cadence, lightweight enough to be sustainable, thorough enough to catch what matters.
 
 Activities divide by cadence and initiation. Three are scheduled automations that run without human prompting: the Scheduled Task Audit (daily, runs first), the Health Check (weekly), and the Knowledge Rebuild (midweek). Six are conversational: triggered by phrase, human-in-the-loop, run when the maintenance window arrives or when a specific need arises.
 
@@ -28,13 +28,13 @@ Activities divide by cadence and initiation. Three are scheduled automations tha
 
 ## Health Check
 
-[[Health Check]] runs each Monday at 08:00. It reviews the island for structural drift - index notes without their folders, notes without correct frontmatter, orphaned content, skills that no longer align with activities - and produces a report of issues requiring attention. It operates at a higher level than the Wikilink Review, covering the health of the KB as a system rather than individual broken references.
+[[Health Check]] runs each Monday at 08:00. It reviews the island for structural drift - index notes without their folders, notes without correct frontmatter, orphaned content, skills that no longer align with activities - and produces a report of issues requiring attention. It operates at a higher level than the Wikilink Review, covering the health of the KI as a system rather than individual broken references.
 
 ---
 
 ## Knowledge Rebuild
 
-[[Knowledge Rebuild]] runs each Wednesday at 07:00. It reconstructs Claude's canonical auto-memory from the KB's meta notes, ensuring that the memory layer stays accurate as the KI evolves. Notes with a `memory_file:` frontmatter property are the sources; the rebuild reads them, distils their content, and writes or updates the corresponding canonical memory files. Auxiliary memory files that are fully covered by the rebuilt canonical layer are deleted. This is the mechanism that keeps the KB as the source of truth for memory, rather than letting memory drift into its own independent state.
+[[Knowledge Rebuild]] runs each Wednesday at 07:00. It reconstructs Claude's canonical auto-memory from the KI's meta notes, ensuring that the memory layer stays accurate as the KI evolves. Notes with a `memory_file:` frontmatter property are the sources; the rebuild reads them, distils their content, and writes or updates the corresponding canonical memory files. Auxiliary memory files that are fully covered by the rebuilt canonical layer are deleted. This is the mechanism that keeps the KI as the source of truth for memory, rather than letting memory drift into its own independent state.
 
 ---
 
@@ -58,7 +58,7 @@ Activities divide by cadence and initiation. Three are scheduled automations tha
 
 ## Structural Audit
 
-[[Structural Audit]] is triggered with _"ki structural audit"_ and run adhoc - typically when a significant restructure has been completed, or when the overall KB health is uncertain. It performs a comprehensive review of an island section or the whole repository: folder structure against conventions, index notes against their folders, wikilink validity, routing compliance, and boundary enforcement between Pillars and Resources. More thorough than the Health Check; intended for periodic deep review rather than regular cadence.
+[[Structural Audit]] is triggered with _"ki structural audit"_ and run adhoc - typically when a significant restructure has been completed, or when the overall KI health is uncertain. It performs a comprehensive review of an island section or the whole repository: folder structure against conventions, index notes against their folders, wikilink validity, routing compliance, and boundary enforcement between Pillars and Resources. More thorough than the Health Check; intended for periodic deep review rather than regular cadence.
 
 ---
 
@@ -68,9 +68,9 @@ Activities divide by cadence and initiation. Three are scheduled automations tha
 
 ---
 
-## KB Convergence Check
+## Convergence Check
 
-[[KB Convergence Check]] is triggered with _"ki convergence check"_ and run adhoc. It compares notes shared across multiple KBs in the same archipelago, surfaces drift between versions, and identifies improvements in one KB that should be cross-pollinated to others. Relevant for islands that maintain parallel notes (e.g. shared governance notes in both Arcadia and a satellite island). Not relevant for standalone islands.
+[[Convergence Check]] is triggered with _"ki convergence check"_ and run adhoc. It compares notes shared across multiple KIs in the same archipelago, surfaces drift between versions, and identifies improvements in one KI that should be cross-pollinated to others. Relevant for islands that maintain parallel notes (e.g. shared governance notes in both Arcadia and a satellite island). Not relevant for standalone islands.
 
 ---
 

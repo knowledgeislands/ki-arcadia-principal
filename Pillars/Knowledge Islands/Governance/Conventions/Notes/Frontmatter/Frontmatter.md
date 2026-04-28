@@ -6,7 +6,7 @@ tags:
 status: current - April 2026
 purpose: Index for the Frontmatter area - YAML properties and tag taxonomy that apply across all notes
 author: Written with Claude
-memory_file: project_{kb_prefix}_note_format.md
+memory_file: project_{ki_prefix}_note_format.md
 ---
 
 # Frontmatter

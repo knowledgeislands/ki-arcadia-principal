@@ -5,12 +5,12 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Human-readable incident register for Claude KB operational errors; lessons are extracted to auto-memory files and do not require this note to be loaded at session start
+purpose: Human-readable incident register for Claude KI operational errors; lessons are extracted to auto-memory files and do not require this note to be loaded at session start
 author: Written with Claude
 memory_file:
-  - feedback_{kb_prefix}_operations.md
-  - feedback_{kb_prefix}_notion_tag_updates.md
-  - feedback_{kb_prefix}_multi_column.md
+  - feedback_{ki_prefix}_operations.md
+  - feedback_{ki_prefix}_notion_tag_updates.md
+  - feedback_{ki_prefix}_multi_column.md
   - feedback_any_context_limit_warning.md
 ---
 
@@ -27,7 +27,7 @@ This note is a **human-readable reference**. All lessons are extracted to auto-m
 ## How It Works
 
 1. **Log it** - record the incident below with date, description, and root cause
-2. **Fix it** - apply the fix (update the relevant auto-memory file, correct the KB file, adjust routing)
+2. **Fix it** - apply the fix (update the relevant auto-memory file, correct the KI file, adjust routing)
 3. **Audit it** - confirm the fix is permanent and won't recur
 4. **Summarise** - move the resolved lesson to the table below; delete the log entry
 
@@ -51,8 +51,8 @@ Log active mistakes here. Delete each entry once the fix is applied and the less
 | 01-04-26 | Could not rename a Cowork project folder path when the folder was actively mounted | The mounted folder path is locked by the OS while in use; `mv` fails with "Device or resource busy" | Rename the folder in Finder or Terminal while Cowork is not using it, then update the path in `~/Library/Application Support/Claude/local-agent-mode-sessions/<account-id>/<org-id>/spaces.json` - restart the Claude desktop app afterwards for the change to take effect |
 | 08-04-26 | Notion MCP `update_properties` returned 200 success but tags were silently not saved on Notion wiki database pages | Notion's API blocks custom property updates on wiki databases via the MCP/public API - success responses are misleading | Use the Claude in Chrome integration to set tags via Notion's internal `/api/v3/saveTransactions` API (cookie-authenticated). Command is `addSelectOptionAfter` with `args: {option: "Value"}`. Batch all pages into one transaction. Capture the exact format by monkey-patching `window.fetch` if unsure. Never rely on the Notion MCP `update_properties` for wiki database property values. |
 | 10-04-26 | Chrome coordinate clicks for Linear UI elements (title field, filter button, save button) were unreliable - often hit adjacent elements or missed entirely | Linear's UI elements are small and densely packed; fixed coordinates diverge from actual positions at different zoom levels or window states | Use `find` to get element refs and click via ref. Pair title field clicks with `cmd+a` before typing. Fall back to coordinates only when `find` cannot locate an element. Full patterns documented in [[Pillars/Knowledge Islands/Governance/Tools/Linear/Linear\|Linear]] - Browser-Based View Management. |
-| 10-04-26 | KB-wide Related Topics sections had three systematic errors: (1) duplicate parent index entries where the self-referencing entry came first and the correct parent second - a naïve "keep the first" fix preserved the wrong one; (2) `## Related Topics` headings immediately followed by list items with no blank line; (3) grandparent index links present alongside the true parent index | Notes were authored with self-referencing parent index entries; the blank-line rule was not enforced; some notes accumulated links two levels up. On the first bulk-fix attempt, "keep first" ordering logic was used without verifying which entry was actually correct | When bulk-fixing parent index entries, derive the correct parent from the file's path (immediate containing folder's index), not from entry order. See updated rules in [[Pillars/Knowledge Islands/Governance/Conventions/Notes\|Notes]] - Parent index rule and Lists. |
-| 17-04-26 | Used raw HTML `<table><td>` wrapper to place a mermaid chart beside a markdown table in a KI note; rendered poorly in Obsidian | HTML tables do not reliably render fenced mermaid blocks or nested markdown tables in Obsidian's live preview - the layout looks broken even when blank lines are used around the inner content | For multi-column layouts in the HNR KB, use the [Modular CSS Layout plugin](https://github.com/efemkay/obsidian-modular-css-layout) syntax: a `> [!multi-column]` callout containing nested `> [!blank]` callouts (one per column). Every line inside each column - including mermaid fences and markdown table rows - must be prefixed with `>> `. Do not fall back to HTML `<table>` for layout purposes. |
+| 10-04-26 | KI-wide Related Topics sections had three systematic errors: (1) duplicate parent index entries where the self-referencing entry came first and the correct parent second - a naïve "keep the first" fix preserved the wrong one; (2) `## Related Topics` headings immediately followed by list items with no blank line; (3) grandparent index links present alongside the true parent index | Notes were authored with self-referencing parent index entries; the blank-line rule was not enforced; some notes accumulated links two levels up. On the first bulk-fix attempt, "keep first" ordering logic was used without verifying which entry was actually correct | When bulk-fixing parent index entries, derive the correct parent from the file's path (immediate containing folder's index), not from entry order. See updated rules in [[Pillars/Knowledge Islands/Governance/Conventions/Notes\|Notes]] - Parent index rule and Lists. |
+| 17-04-26 | Used raw HTML `<table><td>` wrapper to place a mermaid chart beside a markdown table in a KI note; rendered poorly in Obsidian | HTML tables do not reliably render fenced mermaid blocks or nested markdown tables in Obsidian's live preview - the layout looks broken even when blank lines are used around the inner content | For multi-column layouts in the HNR KI, use the [Modular CSS Layout plugin](https://github.com/efemkay/obsidian-modular-css-layout) syntax: a `> [!multi-column]` callout containing nested `> [!blank]` callouts (one per column). Every line inside each column - including mermaid fences and markdown table rows - must be prefixed with `>> `. Do not fall back to HTML `<table>` for layout purposes. |
 | 18-04-26 | Context limit hit mid-task during a multi-step email triage run; session continued via summary in a new context without warning the user | No proactive monitoring for context window depletion; the transition appeared seamless from the model side but caused continuity loss for the user | When context is running low, warn explicitly - state what's been done and what remains. When resuming after a limit, open with a clear statement that the context was exhausted, not a silent continuation. Never let a context limit look like normal task completion. |
 
 ---

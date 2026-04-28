@@ -59,7 +59,7 @@ Run this bash command to find the Knowledge Capital folder and derive the reposi
   echo "Repository: $REPOSITORY"
 
 Then read:
-1. $REPOSITORY/CLAUDE.md - KB operating instructions
+1. $REPOSITORY/CLAUDE.md - KI operating instructions
 2. $REPOSITORY/Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons.md - pre-flight check
 3. $REPOSITORY/Pillars/Knowledge Capital/Charter.md - task ID prefix
 
@@ -67,7 +67,7 @@ Then read:
 Call mcp__scheduled-tasks__list_scheduled_tasks to retrieve all scheduled tasks and their metadata.
 
 ## Step 2 - Identify the corresponding KI note for each task
-For each task whose ID begins with the task prefix from KB Identity, locate the matching activity note in $ACTIVITIES_DIR/. The note filename corresponds to the task name (e.g. {skill-name}-morning-briefing → Morning Briefing.md).
+For each task whose ID begins with the task prefix from KI Identity, locate the matching activity note in $ACTIVITIES_DIR/. The note filename corresponds to the task name (e.g. {skill-name}-morning-briefing → Morning Briefing.md).
 
 ## Step 3 - Verify schedule and description alignment
 For each task, read its KI note and check:
@@ -82,7 +82,7 @@ This task's own SKILL.md is mounted at the path returned by:
 
 Read it and compare against the ## Prompt block in $ACTIVITIES_DIR/Maintenance/Scheduled Task Audit.md. This is the only task whose prompt can be verified with current tooling.
 
-If the KI note is ahead of the live task: call mcp__scheduled-tasks__update_scheduled_task to push the KB version.
+If the KI note is ahead of the live task: call mcp__scheduled-tasks__update_scheduled_task to push the KI version.
 If the live task is ahead of the KI note: update the KI note to match, then confirm alignment.
 
 ## Step 5 - Report
@@ -93,7 +93,7 @@ Output a brief summary:
 - Tasks with no KI note: N (list task IDs)
 - Orphaned KI notes: N (list)
 
-Write the summary to today's daily note under ## KB, under a ### Scheduled Task Audit heading. If today's daily note does not yet exist (this task runs before the Morning Briefing creates it), skip the daily note write and note it in the output.
+Write the summary to today's daily note under ## KI, under a ### Scheduled Task Audit heading. If today's daily note does not yet exist (this task runs before the Morning Briefing creates it), skip the daily note write and note it in the output.
 ```
 
 ---
@@ -118,7 +118,7 @@ Compare cron expressions and descriptions against KI note content. Flag mismatch
 
 Automated: read the mounted SKILL.md and compare against the KI note prompt block. Manual: compare KI note prompt blocks against any known live prompt content.
 
-The KI note is always the canonical source. Push KB → task via `mcp__scheduled-tasks__update_scheduled_task` if the KB is ahead; update the KI note if the live task is ahead.
+The KI note is always the canonical source. Push KI → task via `mcp__scheduled-tasks__update_scheduled_task` if the KI is ahead; update the KI note if the live task is ahead.
 
 ---
 

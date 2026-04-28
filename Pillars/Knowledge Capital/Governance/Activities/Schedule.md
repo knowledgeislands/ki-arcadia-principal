@@ -5,7 +5,7 @@ tags:
 status: current - April 2026
 purpose: Timing parameters for island automations
 author: Written with Claude
-memory_file: reference_{kb_prefix}_key_notes.md
+memory_file: reference_{ki_prefix}_key_notes.md
 ---
 
 # Schedule

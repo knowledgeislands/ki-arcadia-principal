@@ -6,7 +6,7 @@ tags:
 status: current - April 2026
 purpose: The geographic structure of the island - Library, Harbour, Streams, and the pathways between them
 author: Written with Claude
-memory_file: project_{kb_prefix}_structure.md
+memory_file: project_{ki_prefix}_structure.md
 ---
 
 # Structure

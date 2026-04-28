@@ -5,7 +5,7 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Behavioural expectations for Claude - what to do and what to avoid, regardless of who is using the KB
+purpose: Behavioural expectations for Claude - what to do and what to avoid, regardless of who is using the KI
 author: Written with Claude
 memory_file: feedback_any_claude_behaviour.md
 ---
@@ -14,7 +14,7 @@ memory_file: feedback_any_claude_behaviour.md
 
 ## Overview
 
-Behavioural constraints and expectations for Claude when working with this island. These apply regardless of who is using the KB - they are not personal style preferences but operating conventions for the AI layer.
+Behavioural constraints and expectations for Claude when working with this island. These apply regardless of who is using the KI - they are not personal style preferences but operating conventions for the AI layer.
 
 For the user's personal voice and communication style, see [[Communication Style|Communication Style]].
 

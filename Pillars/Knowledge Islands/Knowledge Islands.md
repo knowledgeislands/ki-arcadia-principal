@@ -41,7 +41,7 @@ Each island realises its knowledge through one or more physical stores:
 
 | Store             | Purpose                                                         | Structure                     |
 | ----------------- | --------------------------------------------------------------- | ----------------------------- |
-| **Text store**    | Markdown notes - version-controlled, git-backed, human-readable | Canonical KB folder structure |
+| **Text store**    | Markdown notes - version-controlled, git-backed, human-readable | Canonical KI folder structure |
 | **Binary store**  | Large binary files - images, PDFs, exports, attachments         | Mirrors text store exactly    |
 | **Working space** | Temporary area used by tools and agents; ephemeral              | None required                 |
 

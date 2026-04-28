@@ -6,9 +6,9 @@ tags:
   - topic/knowledge-management
   - source/claude
 status: current - April 2026
-purpose: Daily automation that reconciles Linear initiatives and projects against KB stream notes and mapping table
+purpose: Daily automation that reconciles Linear initiatives and projects against KI stream notes and mapping table
 author: Written with Claude
-memory_file: feedback_{kb_prefix}_operations.md
+memory_file: feedback_{ki_prefix}_operations.md
 ---
 
 # Linear Sync
@@ -17,7 +17,7 @@ memory_file: feedback_{kb_prefix}_operations.md
 
 A daily scheduled task that reconciles Linear's initiative and project state against the island. Catches naming drift, missing projects in stream notes, and initiatives that have concluded and need their stream notes archived.
 
-The authoritative rules for naming conventions, lifecycle management, project labels, and the Initiative → KB Mapping table are in [[Pillars/Knowledge Capital/Governance/Activities/Linear/Linear|Linear Workspace]]. Generic MCP query patterns and browser-based interaction rules are in [[Pillars/Knowledge Islands/Governance/Tools/Linear/Linear|Linear]].
+The authoritative rules for naming conventions, lifecycle management, project labels, and the Initiative → KI Mapping table are in [[Pillars/Knowledge Capital/Governance/Activities/Linear/Linear|Linear Workspace]]. Generic MCP query patterns and browser-based interaction rules are in [[Pillars/Knowledge Islands/Governance/Tools/Linear/Linear|Linear]].
 
 ---
 
@@ -31,10 +31,10 @@ The authoritative rules for naming conventions, lifecycle management, project la
 
 ## What It Does
 
-Using the Linear MCP, fetches all active and planned initiatives and their projects, then compares them against the Initiative → KB Mapping table in [[Pillars/Knowledge Capital/Governance/Activities/Linear/Linear|Linear Workspace]]. Specifically checks:
+Using the Linear MCP, fetches all active and planned initiatives and their projects, then compares them against the Initiative → KI Mapping table in [[Pillars/Knowledge Capital/Governance/Activities/Linear/Linear|Linear Workspace]]. Specifically checks:
 
 - **New or removed initiatives** - creates or archives stream notes, Pillars notes, and Resources company profiles as needed, and updates the mapping table
-- **Initiative name drift** - names changed in Linear but not reflected in the KB
+- **Initiative name drift** - names changed in Linear but not reflected in the KI
 - **Project naming conventions** - enforces bracket spacing and hyphenation rules per [[Pillars/Knowledge Capital/Governance/Activities/Linear/Linear|Linear Workspace]]
 - **Stream note project coverage** - ensures every uncompleted project under an initiative appears in the corresponding stream note's projects table
 
@@ -59,16 +59,16 @@ All file paths below are relative to $REPOSITORY.
 
 ## Step 1 - Load context
 Read $REPOSITORY/CLAUDE.md and $REPOSITORY/Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons.md (pre-flight check).
-Read $REPOSITORY/Pillars/Knowledge Capital/Governance/Activities/Linear/Linear.md - this contains the Initiative → KB Mapping table, naming conventions, and project labels.
+Read $REPOSITORY/Pillars/Knowledge Capital/Governance/Activities/Linear/Linear.md - this contains the Initiative → KI Mapping table, naming conventions, and project labels.
 Read $REPOSITORY/Pillars/Knowledge Islands/Governance/Tools/Linear/Linear.md - this contains the generic MCP connection details and browser-based interaction patterns.
 
 ## Step 2 - Fetch current initiatives
-Use list_initiatives (Linear MCP) to retrieve all active and planned initiatives. Compare against the Initiative → KB Mapping table in Linear Workspace.md.
+Use list_initiatives (Linear MCP) to retrieve all active and planned initiatives. Compare against the Initiative → KI Mapping table in Linear Workspace.md.
 
 Check for:
 - New initiatives not yet in the mapping table → create a stream note (in Streams/Active/), a Pillars note, and for CS engagements a Resources company profile, then add a row to the mapping table.
-- Completed or canceled initiatives → remove from the mapping table and move the KB stream note from Streams/Active/ to Streams/Settled/. Extract any durable knowledge to Pillars before archiving.
-- Initiative name drift - renamed in Linear but not reflected in the KB → update KB references.
+- Completed or canceled initiatives → remove from the mapping table and move the KI stream note from Streams/Active/ to Streams/Settled/. Extract any durable knowledge to Pillars before archiving.
+- Initiative name drift - renamed in Linear but not reflected in the KI → update KI references.
 
 ## Step 3 - Check project naming conventions
 For each active initiative, review project names against the naming conventions defined in the Linear Workspace note loaded in Step 1.
@@ -85,13 +85,13 @@ Check that the stream note's projects table includes every remaining uncompleted
 ## Step 5 - Resolve drift
 Apply fixes in this order:
 1. Rename projects in Linear where naming conventions are violated
-2. Update the KB stream note to reflect the corrected names and current project set
+2. Update the KI stream note to reflect the corrected names and current project set
 3. Update the mapping table in Linear Workspace.md for any initiative-level changes
 
 ## Step 6 - Report
 Produce a brief summary of what changed (initiatives added/removed/renamed, projects renamed, stream notes updated). If nothing changed, confirm the sync found no drift.
 
-Write a session digest to the KB Calendar at the appropriate path: Calendar/YYYY/YYYY-MM MonthName/YYYY-MM-DD Session - Linear Sync.md and reference it from the daily note. Use British English throughout.
+Write a session digest to the KI Calendar at the appropriate path: Calendar/YYYY/YYYY-MM MonthName/YYYY-MM-DD Session - Linear Sync.md and reference it from the daily note. Use British English throughout.
 ```
 
 ---

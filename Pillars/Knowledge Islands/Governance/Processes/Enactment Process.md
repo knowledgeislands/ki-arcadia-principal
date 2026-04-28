@@ -5,7 +5,7 @@ tags:
 status: current - April 2026
 purpose: The canonical enactment process pattern for Knowledge Islands - how Streams enact change in the island via the governance model
 author: Written with Claude
-memory_file: feedback_{kb_prefix}_enactment_process.md
+memory_file: feedback_{ki_prefix}_enactment_process.md
 ---
 
 # Enactment Process
@@ -145,9 +145,9 @@ Rollout means writing the final KI notes to their intended destinations. It is n
 
 ### Working Area Previews
 
-**Storage boundary:** Proposal documents live in the text repository (in Streams), version-controlled alongside the KB. The agent's working area is for previews only - temporary staging files that are never committed. Each island's agent configuration specifies where the working area is located.
+**Storage boundary:** Proposal documents live in the text repository (in Streams), version-controlled alongside the KI. The agent's working area is for previews only - temporary staging files that are never committed. Each island's agent configuration specifies where the working area is located.
 
-For complex or destructive rollout steps, stage the intended output as a preview file in the agent's working area before applying changes to the KB. This creates a review checkpoint - the user can inspect the output before it lands permanently, and the preview serves as a concrete artefact for the post-change review: what was intended vs. what was executed.
+For complex or destructive rollout steps, stage the intended output as a preview file in the agent's working area before applying changes to the KI. This creates a review checkpoint - the user can inspect the output before it lands permanently, and the preview serves as a concrete artefact for the post-change review: what was intended vs. what was executed.
 
 ---
 
@@ -181,7 +181,7 @@ These rules apply to every change and are enforced by Claude:
 - **Check prerequisites before marking ready.** A change may not move to `ready` while any prerequisite has not reached `rolled-out` status. Verify the current status of each listed prerequisite before proceeding.
 - **Do not begin rollout without explicit authorisation.** Claude must not execute rollout steps until the user explicitly instructs it - e.g. "roll this out", "go ahead", "execute". The `ready` status is a necessary condition, not a sufficient one. Exploratory language ("let's look at this", "let's work through it") is iteration, not authorisation.
 - **Re-verify each rollout item against the live file.** Plans can drift between drafting and execution. Confirm each item still applies before making the edit.
-- **Delete the proposal document on completion.** Once content is in the KB, the proposal document has no residual value. The test: if it were deleted today, would any knowledge be lost? If not, delete it.
+- **Delete the proposal document on completion.** Once content is in the KI, the proposal document has no residual value. The test: if it were deleted today, would any knowledge be lost? If not, delete it.
 - **Iterate freely.** Use the proposal document to work through the change, closing open issues as decisions are made. No pressure to get it right immediately.
 
 ---

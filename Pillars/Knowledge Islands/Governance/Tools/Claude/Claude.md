@@ -42,8 +42,8 @@ Every context file loaded costs tokens. The integration is designed to minimise 
 
 | File                        | ~Tokens    | Bytes  | Loaded when            |
 | --------------------------- | ---------- | ------ | ---------------------- |
-| KB Skill SKILL.md           | ~400       | -      | Every KB skill session |
-| CLAUDE.md                   | ~2,250     | ~9,000 | Every KB skill session |
+| KI Skill SKILL.md           | ~400       | -      | Every KI skill session |
+| CLAUDE.md                   | ~2,250     | ~9,000 | Every KI skill session |
 | **Total (writing session)** | **~2,650** |        |                        |
 
 Mistakes and Lessons was previously loaded as a pre-flight check (~1,770 tokens, 7,082 bytes) on every writing session. All resolved lessons are now extracted to auto-memory files and are active in every session without a file read - saving ~1,770 tokens per writing session. [[Mistakes and Lessons]] is retained as a human-readable incident register only.
@@ -59,7 +59,7 @@ Mistakes and Lessons was previously loaded as a pre-flight check (~1,770 tokens,
 Flag for review if:
 
 - [[CLAUDE]] grows above ~10,000 bytes (~2,500 tokens). Audit for redundant or over-explained sections. _(Currently ~9,000 bytes - approaching threshold.)_
-- The auto-memory operations file (`feedback_{kb_prefix}_operations.md` - prefix from [[Pillars/Knowledge Capital/Charter|Charter]]) grows unwieldy. Check whether any rules can be tightened or consolidated - it is loaded every session.
+- The auto-memory operations file (`feedback_{ki_prefix}_operations.md` - prefix from [[Pillars/Knowledge Capital/Charter|Charter]]) grows unwieldy. Check whether any rules can be tightened or consolidated - it is loaded every session.
 - A new permanent section is added to [[CLAUDE]] - reconsider whether it is actually needed at load time or could be lazily read only when relevant.
 
 ---
@@ -90,7 +90,7 @@ The `productivity:memory-management` skill provides a structured **deep memory**
 - `CLAUDE.md` as a hot cache (~30 people, ~30 terms, active projects)
 - `memory/` directory for full-depth storage: `glossary.md`, `people/`, `projects/`, `context/`
 
-**KB routing convention:** the `memory/` directory is a skill convention, not an island convention. If a `memory/` folder is created during a session, it should be treated as a staging area, not a permanent home. Consult [[Routing Rules|Routing Rules]] for the correct destination paths in this KB, then migrate content and remove the folder.
+**KI routing convention:** the `memory/` directory is a skill convention, not an island convention. If a `memory/` folder is created during a session, it should be treated as a staging area, not a permanent home. Consult [[Routing Rules|Routing Rules]] for the correct destination paths in this KI, then migrate content and remove the folder.
 
 ---
 

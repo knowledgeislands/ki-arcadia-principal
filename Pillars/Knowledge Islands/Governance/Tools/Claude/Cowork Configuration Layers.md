@@ -66,9 +66,9 @@ The following categories belong in the Cowork project instructions box - rules t
 
 **Output format defaults** - more specific than the current `user_preferences` entry. Markdown for notes and briefs, `docx` for formal deliverables, avoid prose-list hybrids in favour of either proper lists or flowing paragraphs.
 
-**KB as default knowledge store** - an offer to save substantive outputs to the island at session end. Currently embedded in the KB `CLAUDE.md` and only active when that vault is mounted. Appropriate as a project-level default.
+**KI as default knowledge store** - an offer to save substantive outputs to the island at session end. Currently embedded in the KI `CLAUDE.md` and only active when that vault is mounted. Appropriate as a project-level default.
 
-**Primary codebase stack context** - for ad-hoc code questions outside the main code repository. Specific to this KB - the relevant `CLAUDE.md` in the code repository carries this, but is invisible in sessions where that folder is not mounted. A brief summary in the instructions box keeps it always-on. See [[Pillars/Knowledge Capital/Charter|Charter]] for the repository name.
+**Primary codebase stack context** - for ad-hoc code questions outside the main code repository. Specific to this KI - the relevant `CLAUDE.md` in the code repository carries this, but is invisible in sessions where that folder is not mounted. A brief summary in the instructions box keeps it always-on. See [[Pillars/Knowledge Capital/Charter|Charter]] for the repository name.
 
 ---
 
@@ -83,5 +83,5 @@ If the instructions box grows large, review for content that belongs in `user_pr
 ## Related Topics
 
 - [[Pillars/Knowledge Islands/Governance/Tools/Claude/Claude|Claude]] - parent index
-- [[CLAUDE|CLAUDE]] - the repository-level instruction file for KB sessions
+- [[CLAUDE|CLAUDE]] - the repository-level instruction file for KI sessions
 - [[Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons|Mistakes and Lessons]] - operational error log; a companion to understanding how Claude operates in practice

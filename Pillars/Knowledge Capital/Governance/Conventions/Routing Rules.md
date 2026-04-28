@@ -5,7 +5,7 @@ tags:
 status: current - April 2026
 purpose: Island-specific routing rules beyond the generic conventions
 author: Written with Claude
-memory_file: project_{kb_prefix}_structure.md
+memory_file: project_{ki_prefix}_structure.md
 ---
 
 # Routing Rules

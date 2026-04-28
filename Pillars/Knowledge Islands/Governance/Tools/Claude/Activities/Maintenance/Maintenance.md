@@ -5,7 +5,7 @@ tags:
   - topic/automation
   - source/claude
 status: draft - April 2026
-purpose: Index for maintenance activity prompts - the Claude-specific, island-specific prompts that drive Health Check, Knowledge Rebuild, Scheduled Task Audit, and KB Convergence Check
+purpose: Index for maintenance activity prompts - the Claude-specific, island-specific prompts that drive Health Check, Knowledge Rebuild, Scheduled Task Audit, and Convergence Check
 author: Written with Claude
 ---
 
@@ -13,7 +13,7 @@ author: Written with Claude
 
 ## Overview
 
-Layer 5 prompts for the island maintenance activities - the executable, Claude-specific and island-specific prompts that drive the Scheduled Task Audit, Health Check, Knowledge Rebuild, and KB Convergence Check automations, plus the conversational activities (Inbox Review, Asset Audit, Status Review, Structural Audit, Wikilink Review). These prompts reference island configuration and memory file paths from [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]], and several of them read or write the auto-memory layer directly.
+Layer 5 prompts for the island maintenance activities - the executable, Claude-specific and island-specific prompts that drive the Scheduled Task Audit, Health Check, Knowledge Rebuild, and Convergence Check automations, plus the conversational activities (Inbox Review, Asset Audit, Status Review, Structural Audit, Wikilink Review). These prompts reference island configuration and memory file paths from [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]], and several of them read or write the auto-memory layer directly.
 
 What each maintenance activity does and why is documented at Layer 1 in [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Maintenance|Activities/Maintenance]]. This folder holds only the executable prompts - one note per activity once migrated from the scheduled task definitions.
 

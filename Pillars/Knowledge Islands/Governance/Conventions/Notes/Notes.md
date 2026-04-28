@@ -6,7 +6,7 @@ tags:
 status: current - April 2026
 purpose: Notes are the written form of knowledge on the island - how they are structured, typed, and what metadata they carry
 author: Written with Claude
-memory_file: project_{kb_prefix}_note_format.md
+memory_file: project_{ki_prefix}_note_format.md
 ---
 
 # Notes

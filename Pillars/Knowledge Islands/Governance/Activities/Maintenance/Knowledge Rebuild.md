@@ -31,7 +31,7 @@ A weekly scheduled task that reads all canonical meta notes from the island and 
 1. Locates the island repository via [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]]
 2. Reads all canonical meta notes (as listed in [[Canonical Meta Notes]])
 3. Reads the existing canonical auto-memory files and compares them against the canonical notes - surfacing gaps, stale content, and anything worth adding before overwriting
-4. Verifies cross-references in both directions: KI notes with `memory_file:` frontmatter have a corresponding auto-memory file; auto-memory files with `## KB Sources` reference KI notes that still exist at those paths
+4. Verifies cross-references in both directions: KI notes with `memory_file:` frontmatter have a corresponding auto-memory file; auto-memory files with `## KI Sources` reference KI notes that still exist at those paths
 5. Prompts for confirmation or additions before proceeding
 6. Rewrites the five canonical auto-memory files at `/sessions/*/mnt/.auto-memory/` to reflect the current state of the island. Any auxiliary memory files that have accumulated via ad-hoc session saves (for example domain acronyms, operational lessons, deep memory stores) are left untouched
 7. Rewrites `MEMORY.md` to index both the canonical files and any auxiliary files that exist
@@ -41,13 +41,13 @@ A weekly scheduled task that reads all canonical meta notes from the island and 
 
 ## Gap Analysis Checklist
 
-Run before overwriting any canonical file. The goal is to surface drift between the KB and memory, and flag auxiliary files that have become redundant, before committing the rebuild.
+Run before overwriting any canonical file. The goal is to surface drift between the KI and memory, and flag auxiliary files that have become redundant, before committing the rebuild.
 
-**Canonical memory vs KB**
+**Canonical memory vs KI**
 
 - [ ] List all files in `$MEMORY_DIR` - identify which are canonical (the five managed files) and which are auxiliary (everything else)
 - [ ] Read each of the five canonical memory files
-- [ ] Compare each against the canonical meta notes - for each file note: gaps (knowledge in KB but absent or thin in memory), stale entries (memory that contradicts the current KB), and candidate additions (KB content not yet captured anywhere in memory)
+- [ ] Compare each against the canonical meta notes - for each file note: gaps (knowledge in KI but absent or thin in memory), stale entries (memory that contradicts the current KI), and candidate additions (KI content not yet captured anywhere in memory)
 
 **Auxiliary memory triage**
 
@@ -57,14 +57,14 @@ Run before overwriting any canonical file. The goal is to surface drift between 
 
 **Mapping table check** (requires `Memory Architecture.md` in canonical notes)
 
-- [ ] For every non-deleted row in the KB↔memory mapping table: confirm the listed memory file exists in `$MEMORY_DIR`
+- [ ] For every non-deleted row in the KI↔memory mapping table: confirm the listed memory file exists in `$MEMORY_DIR`
 - [ ] For every file in `$MEMORY_DIR` (excluding `MEMORY.md`): confirm it has a row in the mapping table
 - [ ] Flag missing files and undocumented files as drift between the documented architecture and actual `.auto-memory/` state
 
 **Cross-reference integrity**
 
-- [ ] For every KI note with a `memory_file:` frontmatter property: expand `{kb_prefix}` → `$MEMORY_PREFIX` and `{user_prefix}` → `$USER_PREFIX`, then confirm the resolved filename exists in `$MEMORY_DIR`. Flag missing files.
-- [ ] For every auto-memory file with a `## KB Sources` section: confirm each listed KB path still exists in the repository. Flag broken paths.
+- [ ] For every KI note with a `memory_file:` frontmatter property: expand `{ki_prefix}` → `$MEMORY_PREFIX` and `{user_prefix}` → `$USER_PREFIX`, then confirm the resolved filename exists in `$MEMORY_DIR`. Flag missing files.
+- [ ] For every auto-memory file with a `## KI Sources` section: confirm each listed KI path still exists in the repository. Flag broken paths.
 
 **Before proceeding**
 
@@ -92,8 +92,8 @@ Store the result as MEMORY_DIR.
 
 Read $KI_PROPS_DIR/Identity.md and $KI_PROPS_DIR/Canonical Meta Notes.md.
 Extract and store:
-- MEMORY_PREFIX (KB Identity → Auto-memory prefix)
-- USER_PREFIX (KB Identity → User prefix)
+- MEMORY_PREFIX (KI Identity → Auto-memory prefix)
+- USER_PREFIX (KI Identity → User prefix)
 - CANONICAL_NOTES (Canonical Meta Notes → the ordered list of file paths)
 
 ## Step 1 - Read all canonical meta notes
@@ -110,14 +110,14 @@ Read each of the five canonical auto-memory files (they may or may not exist). C
 
 Also scan the auxiliary memory files for anything that duplicates, contradicts, or has become superseded by content in the canonical notes. Do not rewrite them - surface findings for the user to triage manually.
 
-**Mapping table check:** If `Memory Architecture.md` was read in Step 1, use its KB↔memory mapping table to:
+**Mapping table check:** If `Memory Architecture.md` was read in Step 1, use its KI↔memory mapping table to:
 - Confirm every non-deleted row has a corresponding file in `$MEMORY_DIR`. Flag any that are missing.
 - Confirm every file in `$MEMORY_DIR` (excluding `MEMORY.md`) has a row in the table. Flag any undocumented files.
 This catches drift between the documented architecture and the actual state of `.auto-memory/`.
 
 **Cross-reference check:** Verify bidirectional links between KI notes and auto-memory files:
-- For every auto-memory file that has a `## KB Sources` section: confirm each listed KB path still exists in the repository. Flag any broken paths.
-- For every KI note that has a `memory_file:` frontmatter property: before resolving, expand any placeholders in the value - substitute `{kb_prefix}` with $MEMORY_PREFIX and `{user_prefix}` with $USER_PREFIX. Then confirm the resolved filename(s) exist in $MEMORY_DIR. Flag any missing files.
+- For every auto-memory file that has a `## KI Sources` section: confirm each listed KI path still exists in the repository. Flag any broken paths.
+- For every KI note that has a `memory_file:` frontmatter property: before resolving, expand any placeholders in the value - substitute `{ki_prefix}` with $MEMORY_PREFIX and `{user_prefix}` with $USER_PREFIX. Then confirm the resolved filename(s) exist in $MEMORY_DIR. Flag any missing files.
 Surface broken cross-references alongside the gap analysis findings.
 
 Present a concise summary of your findings to the user. For each candidate addition, describe what it is and which canonical note it comes from. Ask whether anything should be added, adjusted, or left out before the rebuild proceeds.
@@ -129,9 +129,9 @@ Present a concise summary of your findings to the user. For each candidate addit
 ## Step 3 - Rewrite canonical auto-memory files
 Using the content read above (and any additions confirmed by the user), rewrite the five canonical files listed below at $MEMORY_DIR/. Read each file first (it may or may not exist), then write the updated version. Do not touch any auxiliary memory files in this directory - they are preserved between rebuilds.
 
-Use $MEMORY_PREFIX (from KB Identity) as the prefix for KI-specific filenames, and $USER_PREFIX as the prefix for the user profile filename:
+Use $MEMORY_PREFIX (from KI Identity) as the prefix for KI-specific filenames, and $USER_PREFIX as the prefix for the user profile filename:
 
-**user_{USER_PREFIX}_profile.md** - The user's profile, preferences, and ways of working. Include their role, technical expertise, language preferences, and output format preferences - extract from KB Identity and the operating environment.
+**user_{USER_PREFIX}_profile.md** - The user's profile, preferences, and ways of working. Include their role, technical expertise, language preferences, and output format preferences - extract from KI Identity and the operating environment.
 
 **project_{MEMORY_PREFIX}_structure.md** - Full folder layout, routing rules, Pillars/Resources/Streams boundaries, index note rules, Calendar path conventions. Extract from Island Structure and CLAUDE.md.
 
@@ -152,12 +152,12 @@ type: <user | project | feedback | reference>
 
 ---
 
-## KB Sources
+## KI Sources
 
 - `<relative path to KI note>` - <what it contributes to this memory file>
 - ...
 
-The `## KB Sources` section is mandatory for all canonical memory files. It lists every KI note that was read to produce this memory file, with a brief note on what each contributes. This enables bidirectional reconciliation: future rebuilds can verify that source notes still exist and haven't drifted.
+The `## KI Sources` section is mandatory for all canonical memory files. It lists every KI note that was read to produce this memory file, with a brief note on what each contributes. This enables bidirectional reconciliation: future rebuilds can verify that source notes still exist and haven't drifted.
 
 ## Step 4 - Rewrite MEMORY.md index
 Read $MEMORY_DIR/MEMORY.md (it may already exist), then rewrite it as a concise index with one line per memory file - covering both the five canonical files and every auxiliary file present in the directory. Format:

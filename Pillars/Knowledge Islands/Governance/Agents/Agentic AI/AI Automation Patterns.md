@@ -14,7 +14,7 @@ author: Written with Claude
 
 ## Overview
 
-Recurring patterns and design principles for AI-driven productivity automations - scheduled tasks, regular activities, and any Claude-powered workflow that runs repeatedly against the same KB configuration. These are generalisations derived from the design of specific activities such as [[Pillars/Knowledge Islands/Governance/Activities/Email/Email|Email]].
+Recurring patterns and design principles for AI-driven productivity automations - scheduled tasks, regular activities, and any Claude-powered workflow that runs repeatedly against the same KI configuration. These are generalisations derived from the design of specific activities such as [[Pillars/Knowledge Islands/Governance/Activities/Email/Email|Email]].
 
 ---
 
@@ -183,7 +183,7 @@ Every live artifact should carry a pointer back to its recipe note, and any modi
 <!-- Recipe: Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/<Recipe Name>.md -->
 ```
 
-Preserve this comment through any regeneration or patch. It is the single source of truth for where the recipe lives, readable without opening the KB.
+Preserve this comment through any regeneration or patch. It is the single source of truth for where the recipe lives, readable without opening the KI.
 
 **In the Reusable Prompt** - include the following instruction so that future rebuilds preserve the comment and the sync discipline:
 
@@ -202,4 +202,4 @@ Preserve this comment through any regeneration or patch. It is the single source
 - [[Pillars/Knowledge Islands/Governance/Activities/Email/Email|Email]] - the activity that originated the JSON5 Cache Pattern
 - [[Pillars/Knowledge Islands/Governance/Activities/Activities|Activities]] - all scheduled activities; apply these patterns when designing new ones
 - [[Pillars/Knowledge Islands/Governance/Tools/Claude/Live Artifacts/Live Artifacts|Live Artifacts]] - source collection for the Live Artifact Patterns
-- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons|Mistakes and Lessons]] - operational lessons from Claude KB sessions
+- [[Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons|Mistakes and Lessons]] - operational lessons from Claude KI sessions

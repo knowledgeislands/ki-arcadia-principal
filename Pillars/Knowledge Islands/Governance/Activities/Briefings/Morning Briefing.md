@@ -47,7 +47,7 @@ Run this bash command to find the Knowledge Capital folder and derive the reposi
   echo "Repository: $REPOSITORY"
 
 Then read these files:
-1. $REPOSITORY/CLAUDE.md - KB operating instructions
+1. $REPOSITORY/CLAUDE.md - KI operating instructions
 2. $REPOSITORY/Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons.md - pre-flight check
 3. $KI_PROPS_DIR/Integrations.md - integration configuration (tools, calendar source, inbox path)
 

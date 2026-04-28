@@ -10,7 +10,7 @@ purpose: Adhoc activity to ensure generic Knowledge Islands notes remain identic
 author: Written with Claude
 ---
 
-# KB Convergence Check
+# Convergence Check
 
 ## Overview
 
@@ -29,17 +29,17 @@ Adhoc - _"ki convergence check"_.
 ## What It Does
 
 1. Identifies all islands with the generic Knowledge Islands structure
-2. Compares each shared note across KBs, flagging any divergence
+2. Compares each shared note across KIs, flagging any divergence
 3. Checks Knowledge Capital files for new parameters that should be standardised
 4. Checks Tags for any tags in use that are not yet in the superset
-5. Merges and cross-pollinates confirmed improvements back to all KBs
+5. Merges and cross-pollinates confirmed improvements back to all KIs
 6. Reports what was synced, deferred, or intentionally kept different
 
 ---
 
-## Shared notes (must be identical across all KBs)
+## Shared notes (must be identical across all KIs)
 
-These notes must remain byte-for-byte identical. Any difference is drift to be resolved. Paths are relative to each KB's `Pillars/Knowledge Islands/Governance/` folder.
+These notes must remain byte-for-byte identical. Any difference is drift to be resolved. Paths are relative to each KI's `Pillars/Knowledge Islands/Governance/` folder.
 
 - `Agents/Agents.md`
 - `Agents/Agentic AI/Agentic AI.md`
@@ -57,7 +57,7 @@ These notes must remain byte-for-byte identical. Any difference is drift to be r
 - `Activities/Maintenance/Asset Audit.md`
 - `Activities/Maintenance/Health Check.md`
 - `Activities/Maintenance/Inbox Review.md`
-- `Activities/Maintenance/KB Convergence Check.md`
+- `Activities/Maintenance/Convergence Check.md`
 - `Activities/Maintenance/Knowledge Rebuild.md`
 - `Activities/Briefings/Morning Briefing.md`
 - `Activities/Maintenance/Status Review.md`
@@ -71,46 +71,46 @@ These notes must remain byte-for-byte identical. Any difference is drift to be r
 
 ## Legitimately KI-specific notes (expected to differ)
 
-These notes are intentionally different between KBs. Do not flag differences here as drift - verify only that the correct version is internally consistent.
+These notes are intentionally different between KIs. Do not flag differences here as drift - verify only that the correct version is internally consistent.
 
 | Note                                       | Why it differs                                                                                             |
 | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
 | `Knowledge Capital/` (entire folder)       | Identity, skill name, task prefix, integrations, routing rules, and canonical notes list - by design       |
-| `Conventions/Structure/Structure.md`       | Pillars/Resources boundary semantics, Calendar folder naming, and routing rules are specific to each KB    |
-| `Tools/Claude/Mistakes and Lessons.md`     | Logs KI-specific incidents - accumulates independently in each KB                                          |
-| `Tools/Claude/Activities/` (entire folder) | Activity prompts are Claude-specific and island-specific; each KB maintains its own Layer 5 prompt library |
+| `Conventions/Structure/Structure.md`       | Pillars/Resources boundary semantics, Calendar folder naming, and routing rules are specific to each KI    |
+| `Tools/Claude/Mistakes and Lessons.md`     | Logs KI-specific incidents - accumulates independently in each KI                                          |
+| `Tools/Claude/Activities/` (entire folder) | Activity prompts are Claude-specific and island-specific; each KI maintains its own Layer 5 prompt library |
 
 ---
 
 ## Prompt
 
 ```txt
-You are running the KB Convergence Check. Your job is to compare the shared Knowledge Management notes across all mounted islands, surface any drift, and propose cross-pollination of improvements.
+You are running the Convergence Check. Your job is to compare the shared Knowledge Management notes across all mounted islands, surface any drift, and propose cross-pollination of improvements.
 
 ## Step 0 - Discover all islands
 Run this bash command to find all mounted Knowledge Capital folders:
   find /sessions/*/mnt -maxdepth 7 -name "Knowledge Capital.md" -path "*/Knowledge Capital/*" 2>/dev/null
 
 Store the list as KI_PROPS_LIST. For each, derive its REPOSITORY root by stripping "/Pillars/Knowledge Capital/Knowledge Capital.md" and its KI_PROPS_DIR via dirname.
-List the KBs found and their names (from KB Identity.md → KB name field in each KB's properties folder).
+List the KIs found and their names (from KI Identity.md → KI name field in each KI's properties folder).
 
-If fewer than two KBs are found, report this and stop - convergence checking requires at least two KBs.
+If fewer than two KIs are found, report this and stop - convergence checking requires at least two KIs.
 
 ## Step 1 - Load Knowledge Capital
-Read all files in each KB's Knowledge Capital folder. Note any parameters that differ between KBs - these are expected differences (skill name, task prefix, integrations, canonical notes). Note any property files that are unexpectedly absent from one KB.
+Read all files in each KI's Knowledge Capital folder. Note any parameters that differ between KIs - these are expected differences (skill name, task prefix, integrations, canonical notes). Note any property files that are unexpectedly absent from one KI.
 
 ## Step 2 - Compare shared notes
-For each note in the Shared Notes list, read all versions across all KBs. For each note:
+For each note in the Shared Notes list, read all versions across all KIs. For each note:
 - If all versions are identical: mark as ✓ Converged
 - If versions differ: identify the specific lines that differ, and determine whether:
   a. The difference is legitimate KI-specific content that slipped into a shared note - flag for extraction to Knowledge Capital
-  b. One KB has a genuine improvement or fix the others are missing - flag for cross-pollination
+  b. One KI has a genuine improvement or fix the others are missing - flag for cross-pollination
   c. The versions have diverged arbitrarily - flag for reconciliation (pick the best version)
 
 List all findings before proposing any changes.
 
 ## Step 3 - Check Tags superset
-For each KB, scan for any `topic/*`, `card/*`, `date/*`, or `source/*` tags in use across notes that are not in the shared Tags. Any such tags are candidates for addition to the superset.
+For each KI, scan for any `topic/*`, `card/*`, `date/*`, or `source/*` tags in use across notes that are not in the shared Tags. Any such tags are candidates for addition to the superset.
 
 List candidates with their meaning inferred from context.
 
@@ -124,9 +124,9 @@ Group by type. Wait for confirmation before making any writes.
 
 ## Step 5 - Apply confirmed changes
 For each confirmed change:
-- If updating a shared note: write the same content to all KBs simultaneously
-- If adding tags to Tags: update all KBs simultaneously
-- If updating a Knowledge Capital file: update only the relevant KB
+- If updating a shared note: write the same content to all KIs simultaneously
+- If adding tags to Tags: update all KIs simultaneously
+- If updating a Knowledge Capital file: update only the relevant KI
 
 ## Step 6 - Report
 State which files were updated and summarise what was synced, deferred, or intentionally kept different.

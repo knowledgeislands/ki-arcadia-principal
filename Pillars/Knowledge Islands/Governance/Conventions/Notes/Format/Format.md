@@ -6,7 +6,7 @@ tags:
 status: current - April 2026
 purpose: The physical structure of a note - sections, headings, tables, markdown conventions, and templates
 author: Written with Claude
-memory_file: project_{kb_prefix}_note_format.md
+memory_file: project_{ki_prefix}_note_format.md
 ---
 
 # Format
@@ -54,7 +54,7 @@ All wikilinks in `## Contents` and `## Related Topics` must use the full absolut
 [[Full/Path/To/Note|Note Name]]
 ```
 
-This keeps links unambiguous as the KB grows and makes path and display name independently legible. Bare links (`[[Note Name]]`) and path-only links (`[[Full/Path/To/Note]]`) are not permitted in footer sections.
+This keeps links unambiguous as the KI grows and makes path and display name independently legible. Bare links (`[[Note Name]]`) and path-only links (`[[Full/Path/To/Note]]`) are not permitted in footer sections.
 
 Example:
 
@@ -70,7 +70,7 @@ Example:
 
 The `## Related Topics` section must always include a link to the note's parent index (the index note of its immediate containing folder), and that link must always be the **first item** in the list. Label it `- parent index`.
 
-Index notes themselves link to their _own_ parent index first (the grandparent folder's index) - except top-level folder indexes (e.g. `Pillars/Pillars.md`), which have no parent within the KB and may omit this.
+Index notes themselves link to their _own_ parent index first (the grandparent folder's index) - except top-level folder indexes (e.g. `Pillars/Pillars.md`), which have no parent within the KI and may omit this.
 
 Two errors to avoid:
 

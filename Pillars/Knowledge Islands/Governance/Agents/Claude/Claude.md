@@ -27,13 +27,13 @@ For Cowork integration specifics - connection type, token economics, platform co
 
 ## Behavioural Constraints
 
-[[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude Behaviour|Claude Behaviour]] documents the behavioural expectations for Claude when working with this island - what to do, what to avoid, and what tone and style to maintain. These apply regardless of who is using the KB.
+[[Pillars/Knowledge Islands/Governance/Agents/Claude/Claude Behaviour|Claude Behaviour]] documents the behavioural expectations for Claude when working with this island - what to do, what to avoid, and what tone and style to maintain. These apply regardless of who is using the KI.
 
 ---
 
 ## Memory
 
-[[Pillars/Knowledge Islands/Governance/Agents/Claude/Memory Architecture|Memory Architecture]] documents how Claude's auto-memory is structured for this island - file conventions, the two classes of memory file (canonical and auxiliary), and the KB↔memory mapping that [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Knowledge Rebuild|Knowledge Rebuild]] uses to maintain the canonical layer.
+[[Pillars/Knowledge Islands/Governance/Agents/Claude/Memory Architecture|Memory Architecture]] documents how Claude's auto-memory is structured for this island - file conventions, the two classes of memory file (canonical and auxiliary), and the KI↔memory mapping that [[Pillars/Knowledge Islands/Governance/Activities/Maintenance/Knowledge Rebuild|Knowledge Rebuild]] uses to maintain the canonical layer.
 
 ---
 

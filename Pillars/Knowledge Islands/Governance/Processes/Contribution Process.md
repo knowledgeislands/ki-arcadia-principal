@@ -44,7 +44,7 @@ Knowledge that remains specific to a contributing archipelago does not belong in
 
 | Situation                                                                            | Rule                                                                                |
 | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
-| Copying governance content to a new archipelago                                      | Allowed freely; copy at a known version, note the version in the new KB             |
+| Copying governance content to a new archipelago                                      | Allowed freely; copy at a known version, note the version in the new KI             |
 | Proposing a change to the Knowledge Islands model                                    | Requires council membership; enters Enactment Process at `draft`                    |
 | Referencing the Knowledge Islands model from another archipelago                     | Allowed; use a wikilink noting the source                                           |
 | A Visitor identifying a gap in the Knowledge Islands model                           | Welcome informally; a council member must carry the formal proposal                 |

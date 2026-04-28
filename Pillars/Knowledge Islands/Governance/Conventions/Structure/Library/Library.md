@@ -6,7 +6,7 @@ tags:
 status: current - April 2026
 purpose: Folder structure, routing rules, index note conventions, and the Pillars/Resources boundary for the Library
 author: Written with Claude
-memory_file: project_{kb_prefix}_structure.md
+memory_file: project_{ki_prefix}_structure.md
 ---
 
 # Library
@@ -25,7 +25,7 @@ The Knowledge Islands model - island types, archipelago structure, and governanc
 
 | Location     | Purpose                                                 | Structure                     |
 | ------------ | ------------------------------------------------------- | ----------------------------- |
-| Text store   | Markdown notes - version-controlled                     | Canonical KB folder structure |
+| Text store   | Markdown notes - version-controlled                     | Canonical KI folder structure |
 | Binary store | Large binary files - images, PDFs, exports, attachments | Mirrors text store exactly    |
 
 The text and binary stores must share an identical folder structure so that files are colocated by topic regardless of which store they live in.
