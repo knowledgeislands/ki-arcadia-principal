@@ -31,10 +31,11 @@ Live tracking view of all active proposals. Ordered by Stream (Active → Backgr
 | [[Streams/Background/Harbour Routes and Customs/Harbour Routes and Customs\|Harbour, Routes and Customs]]                       | Background | `draft`       | `low`    |
 | [[Streams/Future/Scheduled Automations/Scheduled Automations\|Scheduled Automations]]                                           | Future     | `draft`       | `low`    |
 | [[Streams/Future/Agent and Session Improvements/Agent and Session Improvements\|Agent and Session Improvements]]                | Future     | `draft`       | `low`    |
-| [[Streams/Future/Island Conventions/Island Conventions\|Island Conventions]]                                                    | Future     | `draft`       | `low`    |
-| [[Streams/Future/Calendar Templates/Calendar Templates\|Calendar Templates]]                                                    | Future     | `draft`       | `low`    |
-| [[Streams/Future/External Integrations/External Integrations\|External Integrations]]                                           | Future     | `draft`       | `low`    |
-| [[Streams/Future/Token Economics for Scheduled Tasks/Token Economics for Scheduled Tasks\|Token Economics for Scheduled Tasks]] | Future     | `draft`       | `low`    |
+| [[Streams/Future/Semantic Conventions/Semantic Conventions\|Island Conventions]]                                                    | Future     | `draft`       | `low`    |
+| [[Streams/Future/Bullet Journal Support/Bullet Journal Support\|Calendar Templates]]                                            | Future     | `draft`       | `low`    |
+| [[Streams/Future/Workflow Integrations/Workflow Integrations\|Workflow Integrations]]                                           | Future     | `draft`       | `low`    |
+| [[Streams/Future/MCP Ecosystem/MCP Ecosystem\|MCP Ecosystem]]                                                                  | Future     | `draft`       | `low`    |
+| [[Streams/Future/Token Economics/Token Economics\|Token Economics]] | Future     | `draft`       | `low`    |
 
 
 ---
