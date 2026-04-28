@@ -19,7 +19,7 @@ This distinction matters because the adoption model otherwise treats every activ
 Two elements are constitutional, spanning both activities and Knowledge Capital configuration:
 
 - **Charter** — the island must have a Charter in its Knowledge Capital. Its Identity section establishes the island's fixed parameters; its operational sections declare adoption positions for every non-constitutional activity group. Without it, the island's identity and adoption state are unknown and Conformance cannot proceed.
-- **Conformance** — the island must run the Conformance Check. This is the sole constitutional *activity*, and it is self-grounding: the mechanism that verifies constitutional compliance is itself constitutional.
+- **Conformance** — the island must run the Conformance Check. This is the sole constitutional _activity_, and it is self-grounding: the mechanism that verifies constitutional compliance is itself constitutional.
 
 ---
 

@@ -17,11 +17,11 @@ Arcadia governs itself using the **council model** as defined in [[Pillars/Knowl
 
 ## Council
 
-| Attribute           | Value                                                                          |
-| ------------------- | ------------------------------------------------------------------------------ |
-| Model               | Council — see [[Pillars/Knowledge Islands/Concept/Concept\|Concept]]           |
-| Operating mechanism | [[Pillars/Knowledge Capital/Governance/Processes/Enactment Process\|Enactment Process]]  |
-| Membership          | Open to principals of any archipelago that contributes to or builds on Arcadia |
+| Attribute           | Value                                                                                   |
+| ------------------- | --------------------------------------------------------------------------------------- |
+| Model               | Council — see [[Pillars/Knowledge Islands/Concept/Concept\|Concept]]                    |
+| Operating mechanism | [[Pillars/Knowledge Capital/Governance/Processes/Enactment Process\|Enactment Process]] |
+| Membership          | Open to principals of any archipelago that contributes to or builds on Arcadia          |
 
 **Current membership (April 2026):**
 

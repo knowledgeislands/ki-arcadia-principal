@@ -25,8 +25,8 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 ## Outputs
 
-| Type | Detail |
-| --- | --- |
+| Type                         | Detail                                                                                                    |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------- |
 | Convention note or additions | Content boundary rules for each pillar area, filed in `Pillars/Knowledge Islands/Governance/Conventions/` |
 
 ---
@@ -41,6 +41,7 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 - [ ] Define boundary rules for `/Pillars/Knowledge Islands/Governance/Activities` — no references to specific agents
 - [ ] Define boundary rules for `/Pillars/Knowledge Islands/Governance/Agents` — no references to specific activities
 - [ ] Audit existing notes in each area against the new rules and flag violations
+- [ ] Audit for content duplication between KI and KC — establish the canonical source of truth for each piece of information and remove or redirect duplicates
 
 ---
 

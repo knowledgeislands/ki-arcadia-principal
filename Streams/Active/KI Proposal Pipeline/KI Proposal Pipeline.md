@@ -27,11 +27,11 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 ## Outputs
 
-| Type | Detail |
-| --- | --- |
+| Type          | Detail                                                                                                |
+| ------------- | ----------------------------------------------------------------------------------------------------- |
 | Activity note | `Activities/[Group]/Auto Proposal Research.md` — Layer 1 definition of what the activity does and why |
-| Prompt note | `Tools/Claude/Activities/[Group]/Auto Proposal Research.md` — Layer 5 executable prompt |
-| Convention | Definition of "proposal-ready" criteria and proposal note format |
+| Prompt note   | `Tools/Claude/Activities/[Group]/Auto Proposal Research.md` — Layer 5 executable prompt               |
+| Convention    | Definition of "proposal-ready" criteria and proposal note format                                      |
 
 ---
 

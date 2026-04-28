@@ -28,8 +28,8 @@ This index covers Layer 1 content: what each activity does and why. The prompts 
 
 The constitutional baseline required of any Knowledge Island. Not subject to the adoption framework — these activities define what it means to be a Knowledge Island at all.
 
-| Activity | Type | When | Summary |
-| --- | --- | --- | --- |
+| Activity        | Type      | When                    | Summary                                                                                                                                     |
+| --------------- | --------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | [[Conformance]] | Scheduled | Island-specific cadence | Verifies constitutional baseline and that all non-constitutional activity groups have an explicit adopted or vetoed position in the Charter |
 
 ---

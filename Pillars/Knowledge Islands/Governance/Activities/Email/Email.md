@@ -60,12 +60,12 @@ The four conversational activities are triggered by phrase during a session and 
 
 To adopt this activity group, an island must create the following Knowledge Capital notes. A vetoed island must create an index stub at `Knowledge Capital/Governance/Activities/Email/Email` acknowledging the veto, and individual N/A stubs for each note below.
 
-| Note | Path | Purpose |
-| --- | --- | --- |
-| Email index | `Knowledge Capital/Governance/Activities/Email/Email` | Group index; states adoption position and links to config notes |
-| Email Routing Config | `Knowledge Capital/Governance/Activities/Email/Email Routing Config` | Routing taxonomy, rules, and the suggestion queue format |
-| Email Routing Queue | `Knowledge Capital/Governance/Activities/Email/Email Routing Queue` | Live queue of pending routing suggestions awaiting review |
-| Email Status | `Knowledge Capital/Governance/Activities/Email/Email Status` | Current triage state — folder counts, last run, tracking file summary |
+| Note                 | Path                                                                 | Purpose                                                               |
+| -------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| Email index          | `Knowledge Capital/Governance/Activities/Email/Email`                | Group index; states adoption position and links to config notes       |
+| Email Routing Config | `Knowledge Capital/Governance/Activities/Email/Email Routing Config` | Routing taxonomy, rules, and the suggestion queue format              |
+| Email Routing Queue  | `Knowledge Capital/Governance/Activities/Email/Email Routing Queue`  | Live queue of pending routing suggestions awaiting review             |
+| Email Status         | `Knowledge Capital/Governance/Activities/Email/Email Status`         | Current triage state — folder counts, last run, tracking file summary |
 
 ---
 

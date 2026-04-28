@@ -27,29 +27,29 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 ## Inputs
 
-| Type | Detail |
-| --- | --- |
+| Type       | Detail                                                                                         |
+| ---------- | ---------------------------------------------------------------------------------------------- |
 | Discussion | Entry points into Arcadia — what makes the Knowledge Capital directive rather than descriptive |
-| Discussion | Explicit adoption contracts — framework notes declaring their KC requirements |
+| Discussion | Explicit adoption contracts — framework notes declaring their KC requirements                  |
 
 ---
 
 ## Outputs
 
-| Type | Detail |
-| --- | --- |
-| New note | `Activities/Constitutional/Constitutional.md` — group index defining the constitutional concept |
-| New note | `Activities/Constitutional/Conformance.md` — Layer 1 activity specification |
-| New note | `Tools/Claude/Activities/Constitutional/Constitutional.md` — Layer 5 group index |
-| New note | `Tools/Claude/Activities/Constitutional/Conformance.md` — executable Layer 5 prompt |
-| New note | `Knowledge Capital/Charter.md` — authoritative adoption and activation record |
-| New notes | `Knowledge Capital/Governance/Activities/Email/` stubs — veto record for Email activity group |
-| New note | `Knowledge Capital/Governance/Activities/Linear/Linear.md` — veto record for Linear activity group |
-| Edited | `Concept.md` — constitutional references in Territories/Archipelagos and Governance |
-| Edited | `Activities/Activities.md` — Constitutional group added; constitutional/adoptable distinction |
-| Edited | `Activities/Email/Email.md` — Adoption Requirements section |
-| Edited | `Knowledge Capital/Knowledge Capital.md` — Charter section; Activities reframed |
-| Edited | `Knowledge Capital/Governance/Activities/` notes — reframed as timing model, not activation record |
+| Type      | Detail                                                                                             |
+| --------- | -------------------------------------------------------------------------------------------------- |
+| New note  | `Activities/Constitutional/Constitutional.md` — group index defining the constitutional concept    |
+| New note  | `Activities/Constitutional/Conformance.md` — Layer 1 activity specification                        |
+| New note  | `Tools/Claude/Activities/Constitutional/Constitutional.md` — Layer 5 group index                   |
+| New note  | `Tools/Claude/Activities/Constitutional/Conformance.md` — executable Layer 5 prompt                |
+| New note  | `Knowledge Capital/Charter.md` — authoritative adoption and activation record                      |
+| New notes | `Knowledge Capital/Governance/Activities/Email/` stubs — veto record for Email activity group      |
+| New note  | `Knowledge Capital/Governance/Activities/Linear/Linear.md` — veto record for Linear activity group |
+| Edited    | `Concept.md` — constitutional references in Territories/Archipelagos and Governance                |
+| Edited    | `Activities/Activities.md` — Constitutional group added; constitutional/adoptable distinction      |
+| Edited    | `Activities/Email/Email.md` — Adoption Requirements section                                        |
+| Edited    | `Knowledge Capital/Knowledge Capital.md` — Charter section; Activities reframed                    |
+| Edited    | `Knowledge Capital/Governance/Activities/` notes — reframed as timing model, not activation record |
 
 ---
 
@@ -66,7 +66,6 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 - [ ] Update Canonical Meta Notes — add Charter to the cold-start reading list
 - [ ] Update Scheduled Task Audit description — Conformance now runs first at 04:30
 - [x] Review KC structure alignment with KI and the five-layer model
-- [ ] Audit for content duplication between KI and KC — establish canonical source of truth for each piece of information
 - [ ] Update CLAUDE.md to reflect current structure and constitutional model
 
 ---

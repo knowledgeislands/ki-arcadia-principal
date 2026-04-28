@@ -99,17 +99,17 @@ The [[Pillars/Knowledge Capital/Governance/Activities/Activities]] note document
 
 ## Key Meta Notes
 
-| Note                        | Path                                                                                |
-| --------------------------- | ----------------------------------------------------------------------------------- |
-| [[Governance]]              | `Pillars/Knowledge Islands/Governance/Management.md`                                |
-| [[Knowledge Capital]]       | `Pillars/Knowledge Capital/Knowledge Capital.md`                                    |
-| [[Concept]]                 | `Pillars/Knowledge Islands/Concept/Concept.md`                                      |
-| [[Structure]]               | `Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure.md`           |
-| [[Notes]]                   | `Pillars/Knowledge Islands/Governance/Conventions/Notes/Notes.md`                   |
-| [[Frontmatter/Frontmatter]] | `Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Frontmatter.md` |
-| [[Pillars/Knowledge Capital/Governance/Activities/Activities]]              | `Pillars/Knowledge Islands/Governance/Activities/Activities.md`                     |
-| [[Pillars/Knowledge Capital/Governance/Agents/Agents]]                  | `Pillars/Knowledge Islands/Governance/Agents/Agents.md`                             |
-| [[Pillars/Knowledge Capital/Governance/Tools/Tools]]                   | `Pillars/Knowledge Islands/Governance/Tools/Tools.md`                               |
-| [[Claude]]                  | `Pillars/Knowledge Islands/Governance/Tools/Claude/Claude.md`                       |
-| [[Mistakes and Lessons]]    | `Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons.md`         |
-| [[CLAUDE]]                  | `CLAUDE.md`                                                                         |
+| Note                                                           | Path                                                                                |
+| -------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| [[Governance]]                                                 | `Pillars/Knowledge Islands/Governance/Management.md`                                |
+| [[Knowledge Capital]]                                          | `Pillars/Knowledge Capital/Knowledge Capital.md`                                    |
+| [[Concept]]                                                    | `Pillars/Knowledge Islands/Concept/Concept.md`                                      |
+| [[Structure]]                                                  | `Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure.md`           |
+| [[Notes]]                                                      | `Pillars/Knowledge Islands/Governance/Conventions/Notes/Notes.md`                   |
+| [[Frontmatter/Frontmatter]]                                    | `Pillars/Knowledge Islands/Governance/Conventions/Notes/Frontmatter/Frontmatter.md` |
+| [[Pillars/Knowledge Capital/Governance/Activities/Activities]] | `Pillars/Knowledge Islands/Governance/Activities/Activities.md`                     |
+| [[Pillars/Knowledge Capital/Governance/Agents/Agents]]         | `Pillars/Knowledge Islands/Governance/Agents/Agents.md`                             |
+| [[Pillars/Knowledge Capital/Governance/Tools/Tools]]           | `Pillars/Knowledge Islands/Governance/Tools/Tools.md`                               |
+| [[Claude]]                                                     | `Pillars/Knowledge Islands/Governance/Tools/Claude/Claude.md`                       |
+| [[Mistakes and Lessons]]                                       | `Pillars/Knowledge Islands/Governance/Tools/Claude/Mistakes and Lessons.md`         |
+| [[CLAUDE]]                                                     | `CLAUDE.md`                                                                         |

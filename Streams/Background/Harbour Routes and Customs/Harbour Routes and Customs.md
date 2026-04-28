@@ -27,17 +27,17 @@ This stream follows the [[Pillars/Knowledge Islands/Governance/Processes/Enactme
 
 ## Inputs
 
-| Type     | Detail                                                                                               |
-| -------- | ---------------------------------------------------------------------------------------------------- |
-| Document | [[Pillars/Knowledge Islands/Concept/Concept\|Concept]] — `[!todo] Customs and Routes` at the end of the Geography section |
+| Type     | Detail                                                                                                                                         |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Document | [[Pillars/Knowledge Islands/Concept/Concept\|Concept]] — `[!todo] Customs and Routes` at the end of the Geography section                      |
 | Document | [[Pillars/Knowledge Islands/Governance/Conventions/Structure/Structure\|Structure]] — `[!todo] Harbour` and `[!todo] Routes and Customs` stubs |
 
 ---
 
 ## Outputs
 
-| Type     | Detail                                                                                                         |
-| -------- | -------------------------------------------------------------------------------------------------------------- |
+| Type     | Detail                                                                                                             |
+| -------- | ------------------------------------------------------------------------------------------------------------------ |
 | Artefact | Updated `Concept.md` — `[!todo] Customs and Routes` resolved into prose covering both concepts at conceptual level |
 | Artefact | Updated `Structure.md` — `[!todo] Harbour` and `[!todo] Routes and Customs` resolved into structural specification |
 

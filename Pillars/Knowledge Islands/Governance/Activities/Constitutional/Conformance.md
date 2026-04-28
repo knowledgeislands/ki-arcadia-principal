@@ -29,12 +29,14 @@ Scheduled. Conformance should run at least weekly — daily on working days is t
 A conformance report covering three areas:
 
 **Constitutional baseline** — verifies that the two constitutional elements exist and are correctly populated:
+
 - `Knowledge Capital/Charter` exists, contains the required Identity parameters, and declares adoption positions for all known non-constitutional activity groups
 - This activity (Conformance) is present in the island's scheduled task configuration
 
 **Adoption completeness** — for every non-constitutional activity group defined in `Activities/`, verifies that the island's Charter carries an explicit `adopted` or `vetoed` position. Any group with no position is flagged as non-conformant (unknown).
 
 **Adoption consistency** — for every group marked `adopted` in the Charter:
+
 - Verifies that the required Knowledge Capital configuration notes exist (as declared in each group's Adoption Requirements)
 - Verifies that the required KC notes are populated, not empty stubs
 
