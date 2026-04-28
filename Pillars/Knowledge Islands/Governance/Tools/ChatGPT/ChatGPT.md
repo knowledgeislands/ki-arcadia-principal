@@ -21,7 +21,7 @@ This note documents how ChatGPT integrates with the island - primarily as a quer
 
 The integration relies on island content being made available as context:
 
-- **Custom GPT / Project instructions** - key context files (structure, conventions, routing rules) are loaded into the system prompt or attached as knowledge files, giving ChatGPT an understanding of HNR's domain and working practices
+- **Custom GPT / Project instructions** - key context files (structure, conventions, routing rules) are loaded into the system prompt or attached as knowledge files, giving ChatGPT an understanding of the domain and working practices
 - **Manual routing** - outputs from ChatGPT sessions that contain reusable knowledge are reviewed and written into the island following the standard [[Notes]] and routing rules in [[Structure]]
 
 ---
