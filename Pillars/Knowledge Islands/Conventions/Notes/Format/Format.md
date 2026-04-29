@@ -131,7 +131,7 @@ Every file must end with a single trailing newline - the last content line is fo
 
 ## Wikilinks and Images
 
-Wikilinks (`[[Note Name]]`) are preferred over repeating content - link rather than duplicate. When a concept, decision, or piece of reference material has its own note, link to it rather than restating it.
+Wikilinks (`[[Note Name]]`) are preferred over repeating content - link rather than duplicate. When a concept, decision, or piece of reference material has its own note, link to it rather than restating it. Notes in the vault are worked with in Obsidian, a Markdown editor — its link resolution and image embedding conventions shape the rules that follow.
 
 ### Body link format — shortest unique path (Obsidian algorithm)
 
