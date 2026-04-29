@@ -22,7 +22,7 @@ The authoritative rules for naming conventions, lifecycle management, project la
 
 ## Schedule
 
-- **Task ID:** `{task-prefix}-linear-sync` - prefix defined in [[Charter]]
+- **Task ID:** `{task-prefix}-linear-sync`
 - **Runs:** Working days at ~09:00 AM (with a small jitter) - working days defined in [[Schedule]]
 - **Cron:** See [[Schedule|Schedule]] → Linear Sync cron
 

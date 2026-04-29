@@ -19,15 +19,15 @@ Inbox management as a scheduled, repeatable process. The goal is inbox zero acro
 
 ## Scheduled Activities
 
-The two scheduled automations run without human prompting, driven by the cron parameters in [[Schedule|Schedule]].
+The two scheduled automations run without human prompting, driven by the cron parameters in [[Schedule]].
 
 ### Route Drift
 
-[[Route Drift]] runs each working day at 08:00. It reads `tracking.json5` - the record of emails that were triaged to specific destinations - and compares each entry against where that email currently sits. Entries that have since been re-routed by the user, or that are older than 21 days, are pruned from the tracking file. Its purpose is to keep the tracking record clean so Route Triage is not confused by stale or redundant entries. Trigger phrase: _"email route drift"_.
+[[Route Drift]] runs each working day at 08:00. It reads `tracking.json5` — the record of emails that were triaged to specific destinations — and compares each entry against where that email currently sits. Entries that have since been re-routed by the user, or that are older than 21 days, are pruned from the tracking file. Its purpose is to keep the tracking record clean so Route Triage is not confused by stale or redundant entries. Trigger phrase: _"email route drift"_.
 
 ### Route Triage
 
-[[Route Triage]] runs each working day at 09:00, 12:00, and 18:00. It combines two previously separate activities - aged archival and inbound routing - into a single pass: first it applies aged rules to emails that have been sitting in triage, then it classifies new inbound using the routing taxonomy with an inline aged bypass. This single-pass design reduces redundant reads and means that by end of day, every email that arrived has been assessed. Trigger phrase: _"email route triage"_.
+[[Route Triage]] runs each working day at 09:00, 12:00, and 18:00. It combines two previously separate activities — aged archival and inbound routing — into a single pass: first it applies aged rules to emails that have been sitting in triage, then it classifies new inbound using the routing taxonomy with an inline aged bypass. This single-pass design reduces redundant reads and means that by end of day, every email that arrived has been assessed. Trigger phrase: _"email route triage"_.
 
 ---
 
@@ -49,9 +49,7 @@ The four conversational activities are triggered by phrase during a session and 
 
 ### Email Test
 
-[[Email Test]] dry-runs both scheduled activities in sequence - Route Drift then Route Triage - and reports what each would do without making any actual changes. Use it after structural changes to the routing taxonomy, or to verify that a scheduled run will behave as expected before committing. Trigger phrase: _"email test"_.
-
----
+[[Email Test]] dry-runs both scheduled activities in sequence — Route Drift then Route Triage — and reports what each would do without making any actual changes. Use it after structural changes to the routing taxonomy, or to verify that a scheduled run will behave as expected before committing. Trigger phrase: _"email test"_.
 
 ---
 
@@ -59,16 +57,15 @@ The four conversational activities are triggered by phrase during a session and 
 
 To adopt this activity group, an island must create the following Knowledge Capital notes. A vetoed island must create an index stub at `Knowledge Capital/Activities/Email/Email` acknowledging the veto, and individual N/A stubs for each note below.
 
-| Note                 | Path                                                                 | Purpose                                                               |
-| -------------------- | -------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| Email index          | `Knowledge Capital/Activities/Email/Email`                | Group index; states adoption position and links to config notes       |
+| Note                 | Path                                                     | Purpose                                                               |
+| -------------------- | -------------------------------------------------------- | --------------------------------------------------------------------- |
+| Email index          | `Knowledge Capital/Activities/Email/Email`               | Group index; states adoption position and links to config notes       |
 | Email Routing Config | `Knowledge Capital/Activities/Email/Email Routing Config` | Routing taxonomy, rules, and the suggestion queue format              |
 | Email Routing Queue  | `Knowledge Capital/Activities/Email/Email Routing Queue`  | Live queue of pending routing suggestions awaiting review             |
-| Email Status         | `Knowledge Capital/Activities/Email/Email Status`         | Current triage state - folder counts, last run, tracking file summary |
+| Email Status         | `Knowledge Capital/Activities/Email/Email Status`         | Current triage state — folder counts, last run, tracking file summary |
 
 ---
 
 ## Related Topics
 
-- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - parent index
-- [[Email Routing Config|Email Routing Config]] - routing rules for the email triage system, filed in Knowledge Capital
+- [[Activities]] — parent index
