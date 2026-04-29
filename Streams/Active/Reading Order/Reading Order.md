@@ -203,7 +203,7 @@ This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactmen
 
 - ~~**Residency placement** — Residency is currently in the reading order after Notes subareas but before Structure. It references Knowledge Rebuild (an Activity, not yet covered at that point) and contains dense operational detail about `memory_file` and `{ki_prefix}` syntax. Decision needed: keep in sequence, move later, or treat as reference material outside the reading order?~~ Resolved: Knowledge Rebuild links removed from body and Related Topics; `{ki_prefix}` syntax remains (dense but accurate). Residency stays in sequence.
 - **Related Topics sections** — the section is felt to be mechanical, noisy, and not earning its place across notes generally. Body wikilinks and Obsidian navigation should carry the connection work instead. Significant convention change — needs a decision on whether to remove entirely or keep in exceptional cases only.
-- **Format note / Obsidian reference** — Format.md references "Obsidian's pipe syntax" and "the Obsidian algorithm" without introducing what Obsidian is. Obsidian appears only in Tools, which comes last in the reading order. Needs a brief contextualising phrase or a fix to the note.
+- ~~**Format note / Obsidian reference** — Format.md references "Obsidian's pipe syntax" and "the Obsidian algorithm" without introducing what Obsidian is.~~ Resolved: brief contextualising sentence added to Wikilinks and Images section.
 
 ---
 
@@ -213,7 +213,7 @@ This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactmen
 - [x] Add leaf/index principle to Library.md
 - [x] Enrich Concept.md opening
 - [x] Fix index-only content in Knowledge Islands.md
-- [ ] Resolve Residency placement
+- [x] Resolve Residency placement
 - [x] Resolve index notes in reading order — Option B: list leaves only, index notes are chapter openers not reading stops
 - [x] Fix Format.md Obsidian reference
 - [x] Contextualisation check: Activities and subareas
