@@ -19,7 +19,7 @@ A weekly scheduled task that reads all canonical meta notes from the island and 
 
 ## Schedule
 
-- **Task ID:** `{task-prefix}-knowledge-rebuild` - prefix defined in [[Charter]]
+- **Task ID:** `{task-prefix}-knowledge-rebuild`
 - **Runs:** Wednesdays at ~07:00 - working days defined in [[Schedule|Schedule]]
 - **Cron:** See [[Schedule|Schedule]] → Knowledge Rebuild cron
 

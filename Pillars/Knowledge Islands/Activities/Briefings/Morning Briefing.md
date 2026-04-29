@@ -19,7 +19,7 @@ A daily scheduled task that runs each morning to prepare today's daily note, pre
 
 ## Schedule
 
-- **Task ID:** `{task-prefix}-morning-briefing` - prefix defined in [[Charter]]
+- **Task ID:** `{task-prefix}-morning-briefing`
 - **Runs:** Working days at ~06:00 AM (with a small jitter) - working days and cron defined in [[Schedule]]
 - **Cron:** See [[Schedule]] → Morning Briefing cron
 
