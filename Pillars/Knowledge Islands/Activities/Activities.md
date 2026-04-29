@@ -83,11 +83,3 @@ Daily automation that keeps the island aligned with the Linear project managemen
 | Activity | Type | When | Summary |
 | --- | --- | --- | --- |
 | [[Linear Sync]] | Scheduled | Each working day at 09:00 | Compares Linear initiatives and projects against KI stream notes and the mapping table; surfaces misalignment; flags candidates for new notes or archival |
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - the KI framework index; Activities is one of its five governance areas
-- [[Pillars/Knowledge Islands/Activities/Authoring Activities|Authoring Activities]] - how to design, document, and maintain activities using the five-layer model
-- [[Pillars/Knowledge Islands/Tools/Claude/Activities/Activities|Tools/Claude/Activities]] - the Layer 5 prompt library; executable Claude-specific versions of these activities
