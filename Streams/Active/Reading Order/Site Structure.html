@@ -8,7 +8,7 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     background-color: #f4f4f2;
     background-image:
       linear-gradient(rgba(0,0,0,0.07) 1px, transparent 1px),
@@ -21,39 +21,53 @@
     border: 1.5px solid #1a1a1a; vertical-align: top;
     background: white; padding: 5px 9px; line-height: 1.4;
   }
-  th { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#555; background:#fafafa; }
-  th .lnum  { display:block; font-size:9px; color:#aaa; font-weight:600; margin-bottom:1px; }
-  th .lname { display:block; font-weight:700; font-size:11px; color:#1a1a1a; text-transform:none; letter-spacing:0; }
-  .col-l1{width:16%;} .col-l2{width:16%;} .col-l3{width:21%;} .col-l4{width:47%;}
+  th { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#555; background:#fafafa; }
+  th .lnum  { display:block; font-size:10px; color:#aaa; font-weight:600; margin-bottom:1px; }
+  th .lname { display:block; font-weight:700; font-size:13px; color:#1a1a1a; text-transform:none; letter-spacing:0; }
+  .col-l1{width:11%;} .col-l2{width:11%;} .col-l3{width:15%;} .col-l4{width:47%;} .col-status{width:16%;}
   .vm { vertical-align:middle !important; }
   .c-fill{background:#dbeafe !important;} .c-fill2{background:#eff6ff !important;}
   .s-fill{background:#dcfce7 !important;} .s-fill2{background:#f0fdf4 !important;}
   .a-fill{background:#fef3c7 !important;} .a-fill2{background:#fffbeb !important;}
   .c-ink{color:#1d4ed8;} .s-ink{color:#15803d;} .a-ink{color:#b45309;}
-  .act-label{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;display:block;margin-bottom:4px;}
-  .act-title{font-weight:700;font-size:12px;display:block;}
-  .act-q{font-size:9.5px;font-style:italic;color:#888;margin-top:4px;display:block;}
-  .ch-name{font-weight:700;font-size:11px;display:block;}
-  .ch-q{font-size:9px;font-style:italic;color:#999;margin-top:3px;display:block;}
-  td.sec{font-size:11px;color:#1a1a1a;}
-  td.sec-reveal{font-size:11px;font-weight:700;background:#fffbeb !important;color:#b45309;}
-  td.sec-gap{font-size:11px;background:#fef2f2 !important;color:#b91c1c;}
-  td.sec-new{font-size:11px;background:#f0fdf4 !important;color:#15803d;}
-  td.sec-setup{font-size:11px;color:#6b7280;font-style:italic;}
-  td.sec-todo{font-size:11px;color:#b0b7c3;font-style:italic;}
-  td.sec-blank{background:#fafafa !important;}
-  .tag{display:inline-block;font-size:9px;border-radius:3px;padding:1px 5px;margin-left:6px;font-weight:600;vertical-align:middle;}
-  .t-new{background:#f0fdf4;color:#15803d;border:1px solid #86efac;}
-  .t-setup{background:#f9fafb;color:#9ca3af;border:1px solid #e5e7eb;}
+  .act-title{font-weight:700;font-size:14px;display:block;}
+  .act-q{font-size:11px;font-style:italic;color:#888;margin-top:4px;display:block;}
+  .ch-name{font-weight:700;font-size:13px;display:block;}
+  .ch-q{font-size:10px;font-style:italic;color:#999;margin-top:3px;display:block;}
+  td.sec       { font-size:13px; color:#1a1a1a; }
+  td.sec-reveal{ font-size:13px; font-weight:700; background:#fffbeb !important; color:#b45309; }
+  td.sec-gap   { font-size:13px; background:#fef2f2 !important; color:#b91c1c; }
+  td.sec-new   { font-size:13px; background:#f0fdf4 !important; color:#15803d; }
+  td.sec-setup { font-size:13px; color:#6b7280; font-style:italic; }
+  td.sec-todo  { font-size:13px; color:#b0b7c3; font-style:italic; }
+  td.sec-blank { background:#fafafa !important; }
+  .tag{display:inline-block;font-size:10px;border-radius:3px;padding:1px 5px;margin-left:6px;font-weight:600;vertical-align:middle;}
+  .t-new   {background:#f0fdf4;color:#15803d;border:1px solid #86efac;}
+  .t-setup {background:#f9fafb;color:#9ca3af;border:1px solid #e5e7eb;}
   .t-reveal{background:#fef3c7;color:#b45309;border:1px solid #fcd34d;}
-  .t-gap{background:#fef2f2;color:#b91c1c;border:1px solid #fecaca;}
-  .t-todo{background:#f9fafb;color:#b0b7c3;border:1px solid #e5e7eb;}
-  .legend{margin-top:14px;display:flex;gap:16px;flex-wrap:wrap;font-size:10px;color:#666;}
+  .t-gap   {background:#fef2f2;color:#b91c1c;border:1px solid #fecaca;}
+  .t-todo  {background:#f9fafb;color:#b0b7c3;border:1px solid #e5e7eb;}
+  .path   { display:block; font-size:10px; color:#bbb; margin-top:2px; font-family:monospace; }
+  .src-full    { display:block; font-size:10px; color:#15803d; margin-top:1px; font-family:monospace; }
+  .src-full::before    { content:"→ "; }
+  .src-partial { display:block; font-size:10px; color:#c4a000; margin-top:1px; font-family:monospace; }
+  .src-partial::before { content:"⊂ "; }
+  .src-merge   { display:block; font-size:10px; color:#7c3aed; margin-top:1px; font-family:monospace; }
+  .src-merge::before   { content:"⊕ "; }
+  .src-rewrite { display:block; font-size:10px; color:#0369a1; margin-top:1px; font-family:monospace; }
+  .src-rewrite::before { content:"✎ "; }
+  .src-new     { display:block; font-size:10px; color:#dc2626; margin-top:1px; font-family:monospace; }
+  .src-new::before     { content:"✦ new"; }
+  td.st-ns  { font-size:11px; color:#9ca3af; background:#fafafa !important; vertical-align:middle; text-align:center; }
+  td.st-ip  { font-size:11px; color:#b45309; background:#fef3c7 !important; vertical-align:middle; text-align:center; font-weight:600; }
+  td.st-done{ font-size:11px; color:#15803d; background:#dcfce7 !important; vertical-align:middle; text-align:center; font-weight:600; }
+  .legend{margin-top:14px;display:flex;gap:16px;flex-wrap:wrap;font-size:11px;color:#666;}
   .legend-item{display:flex;align-items:center;gap:5px;}
   .legend-swatch{width:11px;height:11px;border-radius:2px;border:1px solid #ccc;flex-shrink:0;}
 </style>
 </head>
 <body>
+
 <table>
   <thead>
     <tr>
@@ -61,90 +75,492 @@
       <th class="col-l2"><span class="lnum">Level 2</span><span class="lname">Acts</span></th>
       <th class="col-l3"><span class="lnum">Level 3</span><span class="lname">Chapters</span></th>
       <th class="col-l4"><span class="lnum">Level 4</span><span class="lname">Sections</span></th>
+      <th class="col-status"><span class="lnum">Rollout</span><span class="lname">Status</span></th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td rowspan="42" class="vm" style="text-align:center;color:#777;font-size:10.5px;line-height:1.75;font-style:italic;padding:12px 10px;">Knowledge Islands treats the problem of knowledge not as filing, but as civilisation: who owns it, how it changes, and how it endures.</td>
-      <td rowspan="10" class="vm c-fill" style="text-align:center;"><span class="act-label c-ink">Introduction</span><span class="act-title c-ink">Concept</span><span class="act-q">Why does this exist?</span></td>
-      <td rowspan="6" class="vm c-fill2" style="text-align:center;"><span class="ch-name c-ink">First Principles</span><span class="ch-q">history → raw material → scope → existing attempts → mechanism → reveal</span></td>
-      <td class="sec-new">History of Knowledge Systems <span class="tag t-new">new</span></td>
-    </tr>
-    <tr><td class="sec">What is Knowledge</td></tr>
-    <tr><td class="sec">Layers of Knowledge</td></tr>
-    <tr><td class="sec-setup">Other Approaches <span class="tag t-setup">setup</span></td></tr>
-    <tr><td class="sec">The Cycle of Knowledge</td></tr>
-    <tr><td class="sec-reveal">The Home of Knowledge <span class="tag t-reveal">★ reveal</span></td></tr>
-    <tr>
-      <td rowspan="4" class="vm c-fill2" style="text-align:center;"><span class="ch-name c-ink">Knowledge Islands</span><span class="ch-q">scale → actors → authority → operation</span></td>
-      <td class="sec">Territories &amp; Archipelagos</td>
-    </tr>
-    <tr><td class="sec">Agents</td></tr>
-    <tr><td class="sec">Jurisdiction</td></tr>
-    <tr><td class="sec">Governance</td></tr>
-    <tr>
-      <td rowspan="24" class="vm s-fill" style="text-align:center;"><span class="act-label s-ink">System</span><span class="act-title s-ink">The Portable Model</span><span class="act-q">Any island can adopt this</span></td>
-      <td rowspan="7" class="vm s-fill2" style="text-align:center;"><span class="ch-name s-ink">Conventions</span><span class="ch-q">What is the language?</span></td>
-      <td class="sec">Notes</td>
-    </tr>
-    <tr><td class="sec">Frontmatter</td></tr>
-    <tr><td class="sec">Format</td></tr>
-    <tr><td class="sec">Types</td></tr>
-    <tr><td class="sec">Residency</td></tr>
-    <tr><td class="sec">Structure</td></tr>
-    <tr><td class="sec">Library</td></tr>
-    <tr>
-      <td rowspan="2" class="vm s-fill2" style="text-align:center;"><span class="ch-name s-ink">Processes</span><span class="ch-q">How does change happen?</span></td>
-      <td class="sec">Enactment Process</td>
-    </tr>
-    <tr><td class="sec">Contribution Process</td></tr>
-    <tr>
-      <td rowspan="6" class="vm s-fill2" style="text-align:center;"><span class="ch-name s-ink">Activities</span><span class="ch-q">How does the island stay alive?</span></td>
-      <td class="sec">Authoring Activities</td>
-    </tr>
-    <tr><td class="sec">Constitutional</td></tr>
-    <tr><td class="sec">Tending</td></tr>
-    <tr><td class="sec">Briefings</td></tr>
-    <tr><td class="sec">Email</td></tr>
-    <tr><td class="sec">Linear</td></tr>
-    <tr>
-      <td rowspan="4" class="vm s-fill2" style="text-align:center;"><span class="ch-name s-ink">Agents</span><span class="ch-q">Who acts?</span></td>
-      <td class="sec">Human</td>
-    </tr>
-    <tr><td class="sec">Agentic AI</td></tr>
-    <tr><td class="sec">Claude</td></tr>
-    <tr><td class="sec">ChatGPT</td></tr>
-    <tr>
-      <td rowspan="5" class="vm s-fill2" style="text-align:center;"><span class="ch-name s-ink">Tools</span><span class="ch-q">With what?</span></td>
-      <td class="sec">Obsidian</td>
-    </tr>
-    <tr><td class="sec">Claude</td></tr>
-    <tr><td class="sec">ChatGPT</td></tr>
-    <tr><td class="sec">Linear</td></tr>
-    <tr><td class="sec">Microsoft 365</td></tr>
-    <tr>
-      <td rowspan="8" class="vm a-fill" style="text-align:center;"><span class="act-label a-ink">Application</span><span class="act-title a-ink">The Specific Realisation</span><span class="act-q">Where the System becomes real</span></td>
-      <td rowspan="4" class="vm a-fill2" style="text-align:center;"><span class="ch-name a-ink">Knowledge Capital</span><span class="ch-q">The model instantiated</span></td>
-      <td class="sec-todo">Charter <span class="tag t-todo">todo</span></td>
-    </tr>
-    <tr><td class="sec-todo">Council <span class="tag t-todo">todo</span></td></tr>
-    <tr><td class="sec-todo">Integrations <span class="tag t-todo">todo</span></td></tr>
-    <tr><td class="sec-todo">Configuration <span class="tag t-todo">todo</span></td></tr>
-    <tr>
-      <td rowspan="4" class="vm a-fill2" style="text-align:center;"><span class="ch-name a-ink">Arcadia</span><span class="ch-q">The living island</span></td>
-      <td class="sec-blank"></td>
-    </tr>
-    <tr><td class="sec-blank"></td></tr>
-    <tr><td class="sec-blank"></td></tr>
-    <tr><td class="sec-blank"></td></tr>
-  </tbody>
+  <tbody id="tbody"></tbody>
 </table>
+
 <div class="legend">
-  <div class="legend-item"><div class="legend-swatch" style="background:#f0fdf4;border-color:#86efac;"></div>new section</div>
   <div class="legend-item"><div class="legend-swatch" style="background:#fffbeb;border-color:#fcd34d;"></div>reveal</div>
-  <div class="legend-item"><div class="legend-swatch" style="background:#fef2f2;border-color:#fecaca;"></div>contextualisation gap</div>
   <div class="legend-item"><div class="legend-swatch" style="background:#f9fafb;border-color:#e5e7eb;"></div>setup beat / todo</div>
-  <div class="legend-item"><div class="legend-swatch" style="background:#fafafa;border-color:#ddd;"></div>placeholder rows</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#f0fdf4;border-color:#86efac;"></div>new section</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#fef2f2;border-color:#fecaca;"></div>contextualisation gap</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#fafafa;border-color:#ddd;"></div>placeholder</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#fef3c7;border-color:#fcd34d;"></div>in progress</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#dcfce7;border-color:#86efac;"></div>done</div>
+  <div class="legend-item" style="border-left:1px solid #ddd;padding-left:16px;margin-left:4px;">sources:</div>
+  <div class="legend-item"><span style="color:#15803d;font-family:monospace;font-size:10px;">→</span> full</div>
+  <div class="legend-item"><span style="color:#c4a000;font-family:monospace;font-size:10px;">⊂</span> partial</div>
+  <div class="legend-item"><span style="color:#7c3aed;font-family:monospace;font-size:10px;">⊕</span> merge</div>
+  <div class="legend-item"><span style="color:#0369a1;font-family:monospace;font-size:10px;">✎</span> rewrite</div>
+  <div class="legend-item"><span style="color:#dc2626;font-family:monospace;font-size:10px;">✦</span> new</div>
 </div>
+
+<script>
+// ---------------------------------------------------------------------------
+// DATA
+// source paths are relative to Pillars/Knowledge Islandz/
+// prefix KC: for Pillars/Knowledge Capital/ sources
+// section type:  normal | reveal | setup | new | gap | todo | blank
+// source type:   full (copy as-is) | rewrite (copy with content pass) | partial (extract from file) | merge (absorbed into target) | new (write from scratch)
+// status:        ns | ip | done
+// ---------------------------------------------------------------------------
+
+const data = {
+  premise: "Knowledge Islands treats the problem of knowledge not as filing, but as civilisation: who owns it, how it changes, and how it endures.",
+  acts: [
+    {
+      title: "Introduction",
+      question: "Why does this exist?",
+      color: "c",
+      chapters: [
+        {
+          name: "Background",
+          question: "history → raw material → scope → existing attempts → mechanism → reveal",
+          sections: [
+            {
+              title: "History of Knowledge Systems",
+              path: "Pillars/Knowledge Islandz/Introduction/Background/History of Knowledge Systems/",
+              type: "new",
+              sources: [{ path: "Concept/History of Knowledge Systems.md", type: "new" }],
+              status: "ns"
+            },
+            {
+              title: "What is Knowledge",
+              path: "Pillars/Knowledge Islandz/Introduction/Background/What is Knowledge/",
+              type: "normal",
+              sources: [{ path: "Concept/Concept.md", type: "partial" }],
+              status: "ns"
+            },
+            {
+              title: "Layers of Knowledge",
+              path: "Pillars/Knowledge Islandz/Introduction/Background/Layers of Knowledge/",
+              type: "normal",
+              sources: [{ path: "Concept/Concept.md", type: "partial" }],
+              status: "ns"
+            },
+            {
+              title: "Other Approaches",
+              path: "Pillars/Knowledge Islandz/Introduction/Background/Other Approaches/",
+              type: "setup",
+              sources: [{ path: "Concept/Concept.md", type: "partial" }],
+              status: "ns"
+            },
+            {
+              title: "The Cycle of Knowledge",
+              path: "Pillars/Knowledge Islandz/Introduction/Background/The Cycle of Knowledge/",
+              type: "normal",
+              sources: [{ path: "Concept/Concept.md", type: "partial" }],
+              status: "ns"
+            },
+            {
+              title: "The Home of Knowledge",
+              path: "Pillars/Knowledge Islandz/Introduction/Background/The Home of Knowledge/",
+              type: "reveal",
+              sources: [{ path: "Concept/Concept.md", type: "partial" }],
+              status: "ns"
+            }
+          ]
+        },
+        {
+          name: "Concept",
+          question: "scale → actors → authority → operation",
+          sections: [
+            {
+              title: "Territories & Archipelagos",
+              path: "Pillars/Knowledge Islandz/Introduction/Concept/Territories and Archipelagos/",
+              type: "normal",
+              sources: [{ path: "Concept/Concept.md", type: "partial" }],
+              status: "ns"
+            },
+            {
+              title: "Agents",
+              path: "Pillars/Knowledge Islandz/Introduction/Concept/Agents/",
+              type: "normal",
+              sources: [{ path: "Concept/Concept.md", type: "partial" }],
+              status: "ns"
+            },
+            {
+              title: "Jurisdiction",
+              path: "Pillars/Knowledge Islandz/Introduction/Concept/Jurisdiction/",
+              type: "normal",
+              sources: [{ path: "Concept/Concept.md", type: "partial" }],
+              status: "ns"
+            },
+            {
+              title: "Governance",
+              path: "Pillars/Knowledge Islandz/Introduction/Concept/Governance/",
+              type: "normal",
+              sources: [{ path: "Concept/Concept.md", type: "partial" }],
+              status: "ns"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      title: "Model",
+      question: "Any island can adopt this",
+      color: "s",
+      chapters: [
+        {
+          name: "Conventions",
+          question: "What is the language?",
+          sections: [
+            {
+              title: "Notes",
+              path: "Pillars/Knowledge Islandz/Model/Conventions/Notes/",
+              type: "normal",
+              sources: [
+                { path: "Conventions/Notes/Notes.md", type: "full" },
+                { path: "Conventions/Notes/Frontmatter/Frontmatter.md", type: "merge" },
+                { path: "Conventions/Notes/Frontmatter/Properties.md", type: "full" },
+                { path: "Conventions/Notes/Frontmatter/Tags.md", type: "full" },
+                { path: "Conventions/Notes/Format/Format.md", type: "full" },
+                { path: "Conventions/Notes/Types/Types.md", type: "merge" },
+                { path: "Conventions/Notes/Types/Activity Note.md", type: "full" },
+                { path: "Conventions/Notes/Types/Collection Card.md", type: "full" },
+                { path: "Conventions/Notes/Types/Meeting Note.md", type: "full" },
+                { path: "Conventions/Notes/Types/Session Digest.md", type: "full" }
+              ],
+              status: "ns"
+            },
+            {
+              title: "Residency",
+              path: "Pillars/Knowledge Islandz/Model/Conventions/Residency/",
+              type: "normal",
+              sources: [{ path: "Conventions/Residency/Residency.md", type: "full" }],
+              status: "ns"
+            },
+            {
+              title: "Structure",
+              path: "Pillars/Knowledge Islandz/Model/Conventions/Structure/",
+              type: "normal",
+              sources: [
+                { path: "Conventions/Structure/Structure.md", type: "full" },
+                { path: "Conventions/Structure/Library/Library.md", type: "merge" }
+              ],
+              status: "ns"
+            }
+          ]
+        },
+        {
+          name: "Processes",
+          question: "How does change happen?",
+          sections: [
+            {
+              title: "Enactment Process",
+              path: "Pillars/Knowledge Islandz/Model/Processes/Enactment Process/",
+              type: "normal",
+              sources: [{ path: "Processes/Enactment Process.md", type: "full" }],
+              status: "ns"
+            },
+            {
+              title: "Contribution Process",
+              path: "Pillars/Knowledge Islandz/Model/Processes/Contribution Process/",
+              type: "normal",
+              sources: [{ path: "Processes/Contribution Process.md", type: "full" }],
+              status: "ns"
+            }
+          ]
+        },
+        {
+          name: "Activities",
+          question: "How does the island stay alive?",
+          sections: [
+            {
+              title: "Authoring Activities",
+              path: "Pillars/Knowledge Islandz/Model/Activities/Authoring Activities/",
+              type: "normal",
+              sources: [{ path: "Activities/Authoring Activities.md", type: "full" }],
+              status: "ns"
+            },
+            {
+              title: "Constitutional",
+              path: "Pillars/Knowledge Islandz/Model/Activities/Constitutional/",
+              type: "normal",
+              sources: [
+                { path: "Activities/Constitutional/Constitutional.md", type: "full" },
+                { path: "Activities/Constitutional/Conformance.md", type: "full" }
+              ],
+              status: "ns"
+            },
+            {
+              title: "Tending",
+              path: "Pillars/Knowledge Islandz/Model/Activities/Tending/",
+              type: "normal",
+              sources: [{ path: "Activities/Tending/Tending.md", type: "full" }],
+              status: "ns"
+            },
+            {
+              title: "Briefings",
+              path: "Pillars/Knowledge Islandz/Model/Activities/Briefings/",
+              type: "normal",
+              sources: [
+                { path: "Activities/Briefings/Briefings.md", type: "full" },
+                { path: "Activities/Briefings/Morning Briefing.md", type: "full" }
+              ],
+              status: "ns"
+            },
+            {
+              title: "Email",
+              path: "Pillars/Knowledge Islandz/Model/Activities/Email/",
+              type: "normal",
+              sources: [{ path: "Activities/Email/Email.md", type: "full" }],
+              status: "ns"
+            },
+            {
+              title: "Linear",
+              path: "Pillars/Knowledge Islandz/Model/Activities/Linear/",
+              type: "normal",
+              sources: [
+                { path: "Activities/Linear/Linear.md", type: "full" },
+                { path: "Activities/Linear/Linear Sync.md", type: "full" }
+              ],
+              status: "ns"
+            }
+          ]
+        },
+        {
+          name: "Agents",
+          question: "Who acts?",
+          sections: [
+            {
+              title: "Human",
+              path: "Pillars/Knowledge Islandz/Model/Agents/Human/",
+              type: "normal",
+              sources: [{ path: "Agents/Human/Human.md", type: "full" }],
+              status: "ns"
+            },
+            {
+              title: "Agentic AI",
+              path: "Pillars/Knowledge Islandz/Model/Agents/Agentic AI/",
+              type: "normal",
+              sources: [
+                { path: "Agents/Agentic AI/Agentic AI.md", type: "full" },
+                { path: "Agents/Agentic AI/AI Automation Patterns.md", type: "full" }
+              ],
+              status: "ns"
+            },
+            {
+              title: "Claude",
+              path: "Pillars/Knowledge Islandz/Model/Agents/Claude/",
+              type: "normal",
+              sources: [
+                { path: "Agents/Claude/Claude.md", type: "full" },
+                { path: "Agents/Claude/Claude Behaviour.md", type: "full" },
+                { path: "Agents/Claude/Island Skill.md", type: "full" },
+                { path: "Agents/Claude/Memory Architecture.md", type: "full" }
+              ],
+              status: "ns"
+            },
+            {
+              title: "ChatGPT",
+              path: "Pillars/Knowledge Islandz/Model/Agents/ChatGPT/",
+              type: "normal",
+              sources: [{ path: "Agents/ChatGPT/ChatGPT.md", type: "full" }],
+              status: "ns"
+            }
+          ]
+        },
+        {
+          name: "Tools",
+          question: "With what?",
+          sections: [
+            {
+              title: "Obsidian",
+              path: "Pillars/Knowledge Islandz/Model/Tools/Obsidian/",
+              type: "normal",
+              sources: [{ path: "Tools/Obsidian/Obsidian.md", type: "full" }],
+              status: "ns"
+            },
+            {
+              title: "Claude",
+              path: "Pillars/Knowledge Islandz/Model/Tools/Claude/",
+              type: "normal",
+              sources: [{ path: "Tools/Claude/Claude.md", type: "full" }],
+              status: "ns"
+            },
+            {
+              title: "ChatGPT",
+              path: "Pillars/Knowledge Islandz/Model/Tools/ChatGPT/",
+              type: "normal",
+              sources: [{ path: "Tools/ChatGPT/ChatGPT.md", type: "full" }],
+              status: "ns"
+            },
+            {
+              title: "Linear",
+              path: "Pillars/Knowledge Islandz/Model/Tools/Linear/",
+              type: "normal",
+              sources: [{ path: "Tools/Linear/Linear.md", type: "full" }],
+              status: "ns"
+            },
+            {
+              title: "Microsoft 365",
+              path: "Pillars/Knowledge Islandz/Model/Tools/Microsoft 365/",
+              type: "normal",
+              sources: [{ path: "Tools/Microsoft 365/Microsoft 365.md", type: "full" }],
+              status: "ns"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      title: "Realisation",
+      question: "Where the model becomes real",
+      color: "a",
+      chapters: [
+        {
+          name: "Knowledge Capital",
+          question: "The model instantiated",
+          sections: [
+            {
+              title: "Charter",
+              path: "Pillars/Knowledge Islandz/Realisation/Knowledge Capital/Charter/",
+              type: "todo",
+              sources: [{ path: "", type: "new" }],
+              status: "ns"
+            },
+            {
+              title: "Council",
+              path: "Pillars/Knowledge Islandz/Realisation/Knowledge Capital/Council/",
+              type: "todo",
+              sources: [{ path: "", type: "new" }],
+              status: "ns"
+            },
+            {
+              title: "Integrations",
+              path: "Pillars/Knowledge Islandz/Realisation/Knowledge Capital/Integrations/",
+              type: "todo",
+              sources: [{ path: "", type: "new" }],
+              status: "ns"
+            },
+            {
+              title: "Configuration",
+              path: "Pillars/Knowledge Islandz/Realisation/Knowledge Capital/Configuration/",
+              type: "todo",
+              sources: [{ path: "", type: "new" }],
+              status: "ns"
+            }
+          ]
+        },
+        {
+          name: "Arcadia",
+          question: "The living island",
+          sections: [
+            {
+              title: "Great Library of Arcadia",
+              path: "Pillars/Knowledge Islandz/Realisation/Arcadia/Great Library of Arcadia/",
+              type: "todo",
+              sources: [{ path: "", type: "new" }],
+              status: "ns"
+            },
+            { title: "", path: "", type: "blank", sources: [], status: "ns" },
+            { title: "", path: "", type: "blank", sources: [], status: "ns" },
+            { title: "", path: "", type: "blank", sources: [], status: "ns" }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+// ---------------------------------------------------------------------------
+// RENDER
+// ---------------------------------------------------------------------------
+
+const typeMap = {
+  normal:  { cls: "sec",         tag: null },
+  reveal:  { cls: "sec-reveal",  tag: { label: "★ reveal", cls: "t-reveal" } },
+  setup:   { cls: "sec-setup",   tag: { label: "setup",    cls: "t-setup"  } },
+  new:     { cls: "sec-new",     tag: { label: "new",      cls: "t-new"    } },
+  gap:     { cls: "sec-gap",     tag: { label: "gap",      cls: "t-gap"    } },
+  todo:    { cls: "sec-todo",    tag: { label: "todo",     cls: "t-todo"   } },
+  blank:   { cls: "sec-blank",   tag: null }
+};
+
+const statusMap = {
+  ns:   { cls: "st-ns",   label: "–"           },
+  ip:   { cls: "st-ip",   label: "in progress" },
+  done: { cls: "st-done", label: "done"         }
+};
+
+const colorMap = {
+  c: { fill: "c-fill", fill2: "c-fill2", ink: "c-ink" },
+  s: { fill: "s-fill", fill2: "s-fill2", ink: "s-ink" },
+  a: { fill: "a-fill", fill2: "a-fill2", ink: "a-ink" }
+};
+
+function countSections(act) {
+  return act.chapters.reduce((n, ch) => n + ch.sections.length, 0);
+}
+
+function buildTable() {
+  const totalRows = data.acts.reduce((n, act) => n + countSections(act), 0);
+  const rows = [];
+  let firstRow = true;
+
+  for (const act of data.acts) {
+    const actRows = countSections(act);
+    const col = colorMap[act.color];
+    let firstActRow = true;
+
+    for (const chapter of act.chapters) {
+      let firstChRow = true;
+
+      for (const sec of chapter.sections) {
+        const tm = typeMap[sec.type] || typeMap.normal;
+        const sm = statusMap[sec.status] || statusMap.ns;
+        let cells = "";
+
+        // Premise — first row only
+        if (firstRow) {
+          cells += `<td rowspan="${totalRows}" class="vm" style="text-align:center;color:#777;font-size:10.5px;line-height:1.75;font-style:italic;padding:12px 10px;">${data.premise}</td>`;
+          firstRow = false;
+        }
+
+        // Act — first row of act
+        if (firstActRow) {
+          cells += `<td rowspan="${actRows}" class="vm ${col.fill}" style="text-align:center;"><span class="act-title ${col.ink}">${act.title}</span><span class="act-q">${act.question}</span></td>`;
+          firstActRow = false;
+        }
+
+        // Chapter — first row of chapter
+        if (firstChRow) {
+          cells += `<td rowspan="${chapter.sections.length}" class="vm ${col.fill2}" style="text-align:center;"><span class="ch-name ${col.ink}">${chapter.name}</span><span class="ch-q">${chapter.question}</span></td>`;
+          firstChRow = false;
+        }
+
+        // Section
+        let content = "";
+        if (sec.type !== "blank") {
+          content += sec.title;
+          if (tm.tag) content += ` <span class="tag ${tm.tag.cls}">${tm.tag.label}</span>`;
+          if (sec.path) content += `<span class="path">${sec.path}</span>`;
+          for (const src of sec.sources) {
+            if (src.type === "new") {
+              content += `<span class="src-new"></span>`;
+            } else {
+              content += `<span class="src-${src.type}">${src.path}</span>`;
+            }
+          }
+        }
+        cells += `<td class="${tm.cls}">${content}</td>`;
+
+        // Status
+        cells += `<td class="${sm.cls}">${sm.label}</td>`;
+
+        rows.push(`<tr>${cells}</tr>`);
+      }
+    }
+  }
+
+  document.getElementById("tbody").innerHTML = rows.join("\n");
+}
+
+buildTable();
+</script>
 </body>
 </html>

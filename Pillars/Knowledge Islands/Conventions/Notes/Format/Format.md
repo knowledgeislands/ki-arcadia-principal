@@ -22,59 +22,14 @@ Every note follows a consistent physical structure. The rules here govern what s
 2. **Title** - H1 heading matching the filename (see H1 and Filenames below)
 3. **Overview** - `## Overview` section; high-level introduction
 4. **Body** - H2 sections on the topic; one topic per section
-5. **Footer** - `## Further Reading` and/or `## Related Topics`
 
-Each section is separated by a `---` horizontal rule. Omit footer sections if genuinely empty.
+Each section is separated by a `---` horizontal rule. Type-specific notes (see [[Types]]) may extend this structure with additional footer sections.
 
 ---
 
 ## H1 and Filenames
 
 The H1 heading should use the canonical title of the note. Filenames must avoid characters that are invalid on most filesystems - use `-` as a substitute for `:` and `-` where needed. This means the H1 and filename may differ in punctuation; this is expected and not an error.
-
----
-
-## Footer Sections
-
-Both `## Contents` and `## Related Topics` entries should include a short label after the wikilink, separated by `-`. Labels orient the reader in two to four words — they describe the relationship, not the note. Keep them succinct: `parent index`, `related methodology`, `external reference` are the right register. When reviewing, check that entries are still relevant and remove any that are stale or tangential.
-
-### Prefer body content over Contents section
-
-Rich body content is always preferred to a bare `## Contents` list. Where a child note can be introduced, contextualised, or grouped meaningfully in the body, do that - and omit the corresponding entry from `## Contents`. A `## Contents` list that exists only because there is no body prose to put links in is a signal that the index note needs more work, not that the list is correct.
-
-- `## Contents` - **direct children only** (depth 1), and only those **not already linked in the body**. If a sub-page is contextualised and linked in the body prose, omit it from `Contents` - the body link is better contextualised. Deeper descendants (grandchildren and below) must never appear here; they belong in the body prose of the relevant child note. If this leaves no items, omit the `## Contents` section entirely. When present, `## Contents` is always the **last section before `## Related Topics`** - never interspersed with body content.
-- `## Related Topics` - contextually relevant notes lateral to this one; label describes the relationship in a word or two. Must not reference sub-pages of this note at any depth - those belong in the body or `## Contents`. No duplicate entries permitted - each linked note must appear at most once.
-
-### Link format in footer sections
-
-All wikilinks in `## Contents` and `## Related Topics` must use the full absolute path with an alias matching the note's base name:
-
-```markdown
-[[Full/Path/To/Note|Note Name]]
-```
-
-This keeps links unambiguous as the KI grows and makes path and display name independently legible. Bare links (`[[Note Name]]`) and path-only links (`[[Full/Path/To/Note]]`) are not permitted in footer sections.
-
-Example:
-
-```markdown
-## Related Topics
-
-- [[Pillars/Topic/Subject/Subject|Subject]] - parent index
-- [[Pillars/Topic/Approach/Approach|Approach]] - related methodology
-- [[Resources/Topic/Organisation/Organisation|Organisation]] - external reference
-```
-
-### Parent index rule
-
-The `## Related Topics` section must always include a link to the note's parent index (the index note of its immediate containing folder), and that link must always be the **first item** in the list. Label it `- parent index`.
-
-Index notes themselves link to their _own_ parent index first (the grandparent folder's index) - except top-level folder indexes (e.g. `Pillars/Pillars.md`), which have no parent within the KI and may omit this.
-
-Two errors to avoid:
-
-- **Self-reference** - a note must never link to itself as parent index. For an index note at `A/B/C/C.md`, the parent is `A/B/B.md`, not `A/B/C/C.md`.
-- **Grandparent link** - only one level up. Do not also link to the grandparent's index; the chain upward is traversed by following parent index links, not by duplicating them in every note.
 
 ---
 

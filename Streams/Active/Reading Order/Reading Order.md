@@ -2,7 +2,7 @@
 tags:
   - card/stream
   - topic/knowledge-islands
-status: draft - April 2026
+status: rolled-out - April 2026
 priority: medium
 dependencies: []
 author: Written with Claude
@@ -201,8 +201,11 @@ This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactmen
 
 ## Open Questions
 
+- **Five-layer model terminology** — "Layer 1", "Layer 5", "five-layer model" reads as internal scaffolding that has leaked into the content. The layers are referenced across Activities, Agents, and Authoring Activities. Needs a dedicated pass: either rename the layers to something reader-facing, or restructure so the layering is implicit rather than labelled.
+- **Activity Note naming** — "Activity Spec" was considered as a more precise alternative. Deferred pending resolution of the five-layer terminology, which may reframe what Layer 1 notes actually are.
+
 - ~~**Residency placement** — Residency is currently in the reading order after Notes subareas but before Structure. It references Knowledge Rebuild (an Activity, not yet covered at that point) and contains dense operational detail about `memory_file` and `{ki_prefix}` syntax. Decision needed: keep in sequence, move later, or treat as reference material outside the reading order?~~ Resolved: Knowledge Rebuild links removed from body and Related Topics; `{ki_prefix}` syntax remains (dense but accurate). Residency stays in sequence.
-- **Related Topics sections** — the section is felt to be mechanical, noisy, and not earning its place across notes generally. Body wikilinks and Obsidian navigation should carry the connection work instead. Significant convention change — needs a decision on whether to remove entirely or keep in exceptional cases only.
+- ~~**Related Topics sections**~~ Resolved: `## Related Topics` convention removed from Format.md and CLAUDE.md entirely. The section is a preference of individual notes, not a mandated format. Body wikilinks and Obsidian navigation carry the connection work. Existing sections in notes left in place — no sweep required.
 - ~~**Format note / Obsidian reference** — Format.md references "Obsidian's pipe syntax" and "the Obsidian algorithm" without introducing what Obsidian is.~~ Resolved: brief contextualising sentence added to Wikilinks and Images section.
 
 ---

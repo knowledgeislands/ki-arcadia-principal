@@ -72,12 +72,12 @@ Full note format specification in [[Notes]]. Key rules:
 - Frontmatter must include `status` and `author` as YAML properties
   - `status`: `draft - Month YYYY`, `current - Month YYYY`, `outdated - Month YYYY`, or `archive - Month YYYY`
   - `author`: `Manual`, `Written with Claude`, or `Mixed`
-- Sections separated by `---`; body uses H2 headings; omit empty footer sections
-- Prefer `[[wikilinks]]` over repeating content; body links use the shortest unique path (Obsidian algorithm: bare filename if unique, minimum disambiguating prefix if not); footer links (`## Related Topics`, `## Contents`) always use the full absolute path with an alias — `[[Full/Path/Note|Note Name]]`; agents must check for filename collisions before writing a bare link
+- Sections separated by `---`; body uses H2 headings
+- Prefer `[[wikilinks]]` over repeating content; body links use the shortest unique path (Obsidian algorithm: bare filename if unique, minimum disambiguating prefix if not); `## Contents` links always use the full absolute path with an alias — `[[Full/Path/Note|Note Name]]`; agents must check for filename collisions before writing a bare link
 
 ### Session Digests
 
-At the close of any substantive session, offer to write a session digest as a sibling Calendar note alongside today's daily note - the same pattern as meeting notes. File at `Calendar/YYYY/YYYY-MM MonthName/YYYY-MM-DD Session - Topic.md`, then reference it from the daily note by wikilink. The session digest's Related Topics must also link back to the daily note. Include: **Context** (what the session was about and why it was needed), **Decisions**, **Facts Learned**, **Related Projects**, **Keywords**.
+At the close of any substantive session, offer to write a session digest as a sibling Calendar note alongside today's daily note - the same pattern as meeting notes. File at `Calendar/YYYY/YYYY-MM MonthName/YYYY-MM-DD Session - Topic.md`, then reference it from the daily note by wikilink. Include: **Context** (what the session was about and why it was needed), **Decisions**, **Facts Learned**, **Related Projects**, **Keywords**.
 
 If a daily note has no sessions, omit the `### Sessions` section entirely - do not leave a placeholder.
 
