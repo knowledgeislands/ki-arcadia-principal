@@ -104,7 +104,7 @@ Streams that conclude (`Settled`) should have their durable knowledge already in
 
 ## Index Notes (strictly enforced)
 
-**The governing principle: leaf notes carry all the material; index notes are recaps that orient and point.** A leaf note is self-contained — it covers its subject fully without assuming the reader has visited any other note first. An index note introduces nothing new; it contextualises what already exists in its children and helps the reader decide where to go next. Conversely, if content only appears in an index note and not in any of its children, it is in the wrong place — move it to the appropriate leaf.
+**The governing principle: leaf notes carry all the material; index notes are recaps that orient and point.** Think of an index note as a chapter: the overview is the chapter introduction, and the Related Topics section is the outro. Leaf notes are the sections within that chapter — they carry the actual content. An index note introduces nothing new; it contextualises what already exists in its children and helps the reader decide where to go next. Conversely, if content only appears in an index note and not in any of its children, it is in the wrong place — move it to the appropriate leaf, or give it its own sub-note.
 
 Every folder must have an **index note** with the same name as the folder (e.g. `Productivity/Productivity.md`). The index note:
 
@@ -114,7 +114,7 @@ Every folder must have an **index note** with the same name as the folder (e.g. 
 
 **What an index note is not:** a nav menu. A list of sub-note names with one-line descriptions tells the reader nothing they could not learn from the folder structure itself. An index note earns its place by explaining what each sub-area contains, why it exists, and how it relates to the others - substantively enough that a reader can decide whether to follow a link without having to open it.
 
-**What an index note is:** a miniature overview of the subtree. The body should have a prose **Overview** section that explains the folder's purpose and how its contents fit together, followed by one named H2 section per direct child - not a `## Contents` list. Each child section introduces that sub-note or sub-folder in two to four sentences: what it covers, what problem it solves or what role it plays, and what a reader will find there. `## Contents` lists are a fallback for children that genuinely cannot be contextualised in prose, and only at depth 1.
+**What an index note is:** a chapter opener for the subtree. The body should have a prose **Overview** section that explains the folder's purpose and how its contents fit together, followed by one named H2 section per direct child. Each child section introduces that sub-note or sub-folder in two to four sentences: what it covers, what problem it solves or what role it plays, and what a reader will find there. `## Contents` lists are a fallback for children that genuinely cannot be contextualised in prose, and only at depth 1.
 
 When creating a new folder, create its index note at the same time. When auditing an existing folder, verify its index note exists and is substantive - not a nav menu.
 

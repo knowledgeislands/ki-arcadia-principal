@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Knowledge Islands — Site Structure</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 12px;
+    background-color: #f4f4f2;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.07) 1px, transparent 1px);
+    background-size: 22px 22px;
+    padding: 28px 28px 20px;
+  }
+  table { border-collapse: collapse; width: 100%; table-layout: fixed; }
+  th, td {
+    border: 1.5px solid #1a1a1a; vertical-align: top;
+    background: white; padding: 5px 9px; line-height: 1.4;
+  }
+  th { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:#555; background:#fafafa; }
+  th .lnum  { display:block; font-size:9px; color:#aaa; font-weight:600; margin-bottom:1px; }
+  th .lname { display:block; font-weight:700; font-size:11px; color:#1a1a1a; text-transform:none; letter-spacing:0; }
+  .col-l1{width:16%;} .col-l2{width:16%;} .col-l3{width:21%;} .col-l4{width:47%;}
+  .vm { vertical-align:middle !important; }
+  .c-fill{background:#dbeafe !important;} .c-fill2{background:#eff6ff !important;}
+  .s-fill{background:#dcfce7 !important;} .s-fill2{background:#f0fdf4 !important;}
+  .a-fill{background:#fef3c7 !important;} .a-fill2{background:#fffbeb !important;}
+  .c-ink{color:#1d4ed8;} .s-ink{color:#15803d;} .a-ink{color:#b45309;}
+  .act-label{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;display:block;margin-bottom:4px;}
+  .act-title{font-weight:700;font-size:12px;display:block;}
+  .act-q{font-size:9.5px;font-style:italic;color:#888;margin-top:4px;display:block;}
+  .ch-name{font-weight:700;font-size:11px;display:block;}
+  .ch-q{font-size:9px;font-style:italic;color:#999;margin-top:3px;display:block;}
+  td.sec{font-size:11px;color:#1a1a1a;}
+  td.sec-reveal{font-size:11px;font-weight:700;background:#fffbeb !important;color:#b45309;}
+  td.sec-gap{font-size:11px;background:#fef2f2 !important;color:#b91c1c;}
+  td.sec-new{font-size:11px;background:#f0fdf4 !important;color:#15803d;}
+  td.sec-setup{font-size:11px;color:#6b7280;font-style:italic;}
+  td.sec-todo{font-size:11px;color:#b0b7c3;font-style:italic;}
+  td.sec-blank{background:#fafafa !important;}
+  .tag{display:inline-block;font-size:9px;border-radius:3px;padding:1px 5px;margin-left:6px;font-weight:600;vertical-align:middle;}
+  .t-new{background:#f0fdf4;color:#15803d;border:1px solid #86efac;}
+  .t-setup{background:#f9fafb;color:#9ca3af;border:1px solid #e5e7eb;}
+  .t-reveal{background:#fef3c7;color:#b45309;border:1px solid #fcd34d;}
+  .t-gap{background:#fef2f2;color:#b91c1c;border:1px solid #fecaca;}
+  .t-todo{background:#f9fafb;color:#b0b7c3;border:1px solid #e5e7eb;}
+  .legend{margin-top:14px;display:flex;gap:16px;flex-wrap:wrap;font-size:10px;color:#666;}
+  .legend-item{display:flex;align-items:center;gap:5px;}
+  .legend-swatch{width:11px;height:11px;border-radius:2px;border:1px solid #ccc;flex-shrink:0;}
+</style>
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+      <th class="col-l1"><span class="lnum">Level 1</span><span class="lname">Premise</span></th>
+      <th class="col-l2"><span class="lnum">Level 2</span><span class="lname">Acts</span></th>
+      <th class="col-l3"><span class="lnum">Level 3</span><span class="lname">Chapters</span></th>
+      <th class="col-l4"><span class="lnum">Level 4</span><span class="lname">Sections</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="38" class="vm" style="text-align:center;color:#777;font-size:10.5px;line-height:1.75;font-style:italic;padding:12px 10px;">Knowledge Islands treats the problem of knowledge not as filing, but as civilisation: who owns it, how it changes, and how it endures.</td>
+      <td rowspan="10" class="vm c-fill" style="text-align:center;"><span class="act-label c-ink">Introduction</span><span class="act-title c-ink">Concept</span><span class="act-q">Why does this exist?</span></td>
+      <td rowspan="6" class="vm c-fill2" style="text-align:center;"><span class="ch-name c-ink">First Principles</span><span class="ch-q">history → raw material → scope → existing attempts → mechanism → reveal</span></td>
+      <td class="sec-new">History of Knowledge Systems <span class="tag t-new">new</span></td>
+    </tr>
+    <tr><td class="sec">What is Knowledge</td></tr>
+    <tr><td class="sec">Layers of Knowledge</td></tr>
+    <tr><td class="sec-setup">Other Approaches <span class="tag t-setup">setup</span></td></tr>
+    <tr><td class="sec">The Cycle of Knowledge</td></tr>
+    <tr><td class="sec-reveal">The Home of Knowledge <span class="tag t-reveal">★ reveal</span></td></tr>
+    <tr>
+      <td rowspan="4" class="vm c-fill2" style="text-align:center;"><span class="ch-name c-ink">Knowledge Islands</span><span class="ch-q">scale → actors → authority → operation</span></td>
+      <td class="sec">Territories &amp; Archipelagos</td>
+    </tr>
+    <tr><td class="sec">Agents</td></tr>
+    <tr><td class="sec">Jurisdiction</td></tr>
+    <tr><td class="sec">Governance</td></tr>
+    <tr>
+      <td rowspan="20" class="vm s-fill" style="text-align:center;"><span class="act-label s-ink">System</span><span class="act-title s-ink">The Portable Model</span><span class="act-q">Any island can adopt this</span></td>
+      <td rowspan="7" class="vm s-fill2" style="text-align:center;"><span class="ch-name s-ink">Conventions</span><span class="ch-q">What is the language?</span></td>
+      <td class="sec">Notes</td>
+    </tr>
+    <tr><td class="sec">Frontmatter</td></tr>
+    <tr><td class="sec-gap">Format <span class="tag t-gap">gap</span></td></tr>
+    <tr><td class="sec">Types</td></tr>
+    <tr><td class="sec-gap">Residency <span class="tag t-gap">gap</span></td></tr>
+    <tr><td class="sec">Structure</td></tr>
+    <tr><td class="sec">Library</td></tr>
+    <tr>
+      <td rowspan="2" class="vm s-fill2" style="text-align:center;"><span class="ch-name s-ink">Processes</span><span class="ch-q">How does change happen?</span></td>
+      <td class="sec">Enactment Process</td>
+    </tr>
+    <tr><td class="sec">Contribution Process</td></tr>
+    <tr>
+      <td rowspan="5" class="vm s-fill2" style="text-align:center;"><span class="ch-name s-ink">Activities</span><span class="ch-q">How does the island stay alive?</span></td>
+      <td class="sec-todo">Constitutional <span class="tag t-todo">todo</span></td>
+    </tr>
+    <tr><td class="sec-todo">Tending <span class="tag t-todo">todo</span></td></tr>
+    <tr><td class="sec-todo">Briefings <span class="tag t-todo">todo</span></td></tr>
+    <tr><td class="sec-todo">Email <span class="tag t-todo">todo</span></td></tr>
+    <tr><td class="sec-todo">Linear <span class="tag t-todo">todo</span></td></tr>
+    <tr>
+      <td rowspan="3" class="vm s-fill2" style="text-align:center;"><span class="ch-name s-ink">Agents</span><span class="ch-q">Who acts?</span></td>
+      <td class="sec-todo">Human <span class="tag t-todo">todo</span></td>
+    </tr>
+    <tr><td class="sec-todo">Agentic AI <span class="tag t-todo">todo</span></td></tr>
+    <tr><td class="sec-todo">Claude <span class="tag t-todo">todo</span></td></tr>
+    <tr>
+      <td rowspan="3" class="vm s-fill2" style="text-align:center;"><span class="ch-name s-ink">Tools</span><span class="ch-q">With what?</span></td>
+      <td class="sec-blank"></td>
+    </tr>
+    <tr><td class="sec-blank"></td></tr>
+    <tr><td class="sec-todo">Tools overview <span class="tag t-todo">todo</span></td></tr>
+    <tr>
+      <td rowspan="8" class="vm a-fill" style="text-align:center;"><span class="act-label a-ink">Application</span><span class="act-title a-ink">The Specific Realisation</span><span class="act-q">Where the System becomes real</span></td>
+      <td rowspan="4" class="vm a-fill2" style="text-align:center;"><span class="ch-name a-ink">Knowledge Capital</span><span class="ch-q">The model instantiated</span></td>
+      <td class="sec-todo">Charter <span class="tag t-todo">todo</span></td>
+    </tr>
+    <tr><td class="sec-todo">Council <span class="tag t-todo">todo</span></td></tr>
+    <tr><td class="sec-todo">Integrations <span class="tag t-todo">todo</span></td></tr>
+    <tr><td class="sec-todo">Configuration <span class="tag t-todo">todo</span></td></tr>
+    <tr>
+      <td rowspan="4" class="vm a-fill2" style="text-align:center;"><span class="ch-name a-ink">Arcadia</span><span class="ch-q">The living island</span></td>
+      <td class="sec-blank"></td>
+    </tr>
+    <tr><td class="sec-blank"></td></tr>
+    <tr><td class="sec-blank"></td></tr>
+    <tr><td class="sec-blank"></td></tr>
+  </tbody>
+</table>
+<div class="legend">
+  <div class="legend-item"><div class="legend-swatch" style="background:#f0fdf4;border-color:#86efac;"></div>new section</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#fffbeb;border-color:#fcd34d;"></div>reveal</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#fef2f2;border-color:#fecaca;"></div>contextualisation gap</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#f9fafb;border-color:#e5e7eb;"></div>setup beat / todo</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#fafafa;border-color:#ddd;"></div>placeholder rows</div>
+</div>
+</body>
+</html>

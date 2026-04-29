@@ -23,6 +23,7 @@ Live tracking view of all active proposals. Ordered by Stream (Active → Backgr
 | [[Streams/Settled/Wiki Link Format/Wiki Link Format\|Wiki Link Format]]   | Settled    | `completed`   | `medium` |
 | [[Boundary Rules]]                   | Active     | `draft`       | `urgent` |
 | [[Index Review]]                | Active     | `draft`       | `medium` |
+| [[Reading Order]]               | Active     | `draft`       | `medium` |
 | [[Auto Proposal Pipeline|Proposal Pipeline]] | Active     | `draft`       | `medium` |
 | [[Intentional]]                   | Active     | `draft`       | `medium` |
 | [[Kit Legal Inception]]                                                 | Background | `draft`       | `medium` |
