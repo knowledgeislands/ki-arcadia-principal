@@ -2,11 +2,11 @@
 
 ## Prompt 2
 
-under Knowledge Islands, get rid of the Related Topics sections if still present
+where do we still have Related Topics sections? Can we consider removing them
 
-## Authoring Activities
+## Prompt - Short Links
 
-~~`Authoring Activities` rename to `Authoring Guidelines`~~ - done 2026-04-30
+Review and fix
 
 ## Prompt - 5 layers
 
