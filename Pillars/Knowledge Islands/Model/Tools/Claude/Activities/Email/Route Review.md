@@ -1,0 +1,90 @@
+---
+tags:
+  - card/note
+  - topic/productivity
+  - topic/automation
+  - topic/knowledge-management
+  - source/claude
+status: current - April 2026
+author: Written with Claude
+---
+
+# Route Review
+
+## Overview
+
+The Claude agent specific activity prompt for the Email Route Review activity. This is maintained as an agentic AI specific task instruction that it can easily use at runtime rather than having to read and understand all of the note hierachy and inheritance at runtime.
+
+---
+
+## Invocation
+
+Chat trigger: _"email route review"_. Typically invoked after reviewing the [[Email Routing Queue|Email Routing Queue]] in Obsidian and setting suggestion statuses.
+
+---
+
+## Prompt
+
+```txt
+You are running Email Automation - Route Review.
+
+## Step 1 - Locate and load
+Run:
+  KI_PROPS=$(find /sessions/*/mnt -maxdepth 7 -name "Knowledge Capital.md" -path "*/Knowledge Capital/*" 2>/dev/null | head -1)
+  KI_PROPS_DIR=$(dirname "$KI_PROPS")
+  EMAIL_DIR="$KI_PROPS_DIR/Email"
+  TRACKING=$(find /sessions/*/mnt -path "*/tasks/email-triage/tracking.json5" 2>/dev/null | head -1)
+  TRACKING_DIR=$(dirname "$TRACKING")
+
+Read $KI_PROPS_DIR/Integrations.md. If no email integration is listed, stop.
+
+Parse all source files: read $EMAIL_DIR/Email Routing Config.md and all $EMAIL_DIR/Route - *.md. For each Route file: parse the destination folder from `### Inbound → #### Actions` (`move:` predicate) and the conditions from `### Inbound → #### Conditions`. In the conditions table, rows prefixed `` `+ `` are allow rows; rows prefixed `` `- `` are deny rows. Build the full ordered rule list and route map in memory. (Do not use cache - full source data is required for taxonomy and collision checks.)
+
+## Step 2 - Taxonomy check
+List actual `_TRIAGE` subfolders from the mailbox. Derive the declared folder set from the `move:` actions in all loaded routes.
+
+Report as a chat section **Taxonomy Issues**:
+- Folders in mailbox not declared by any route (undeclared - possible orphans).
+- Folders declared by a route but absent from the mailbox - offer to create each one.
+- `Route - *.md` files present in $EMAIL_DIR but not referenced in Email Routing Config.md.
+- Entries in Email Routing Config.md referencing a route file that does not exist.
+
+If any folder creation is requested, create it in the mailbox now.
+
+## Step 3 - Collision check
+Analyse the rule set for conflicts. Report as a chat section **Collision Issues**:
+
+1. **Cross-route collisions:** identify pairs of routes whose `+` (allow) patterns would match the same email. For each pair, name the conflicting patterns and their routes.
+2. **Allow/deny conflicts:** a `-` (deny) pattern in one route that would also fire on emails a `+` (allow) pattern in the same or another route intends to handle.
+3. **Shadowed rules:** a broad `+` pattern earlier in the rule order that makes a more specific `+` pattern later unreachable.
+4. **Duplicate patterns:** identical predicate strings appearing in more than one rule.
+
+For each collision: if the fix is clear (e.g. narrowing a pattern, adjusting ordering), offer the change inline and ask for confirmation. If the fix is unclear or the user cannot resolve it now, disable the affected rule by commenting it out in its source file - emails matching it will route to 000 Unknown until Route Review is run again after correction.
+
+Apply any confirmed fixes to the source files now.
+
+## Step 4 - Apply agreed rules
+Read $EMAIL_DIR/Email Routing Queue.md. For each row with `Status: agreed`:
+- The Target column names the route directly (e.g. `[[Route - Media Industry]]`) - open `$EMAIL_DIR/<Target>.md` and insert the new row (with `` `+ `` prefix) into its `### Inbound → #### Conditions` table.
+- **Predicate efficiency order:** insert the new row so the table remains sorted `type:` → `importance:` → `status:` → `age:` → `party:` → `sender:/to:/cc:` → `subject:` → `body:`. More specific/cheaper predicates first; `body:` last as it requires full-text search.
+- **`party` consolidation:** before inserting a `sender:*@domain` or `to:*@domain` rule, check whether the same domain already appears in the table under any direction-specific predicate (`sender:`, `to:`, or `cc:`). If it does, replace all direction-specific rows for that domain with a single `party:*@domain` row (with `` `+ `` prefix).
+- Clear the row from the queue.
+
+For each row with `Status: disagreed`: remove from the queue.
+
+If any source file was modified in Steps 3 or 4: delete $TRACKING_DIR/routing-table.json5 and $TRACKING_DIR/aged-table.json5 (forces recompilation on the next Route Inbound run). Before deleting, call `allow_cowork_file_delete` with one of the file paths to grant deletion permission for the folder - then use `rm` via bash. Do not attempt overwriting as a substitute.
+
+Write the updated queue file.
+
+## Step 5 - Re-evaluate 000 Unknown
+Recompile the routing table from the now-updated source files (force full recompile - cache is invalidated). Write the new $TRACKING_DIR/routing-table.json5.
+
+Fetch every email in _TRIAGE/000 Unknown. Evaluate each against the updated `rules` array - first match wins. **`party:` predicates match if ANY ONE of sender (From), To, or CC contains the address - equivalent to `from:x OR to:x OR cc:x`. The listing result typically shows only From. Before declaring no match against any `party:` rule, read each email's full headers to check the To and CC fields.** For each email that now matches: move to the declared folder; update the tracking entry.
+
+## Step 6 - Chat report
+Output a structured summary:
+- **Taxonomy issues** found and resolved (folders created, orphans flagged).
+- **Collisions** found: fixed, disabled, or deferred.
+- **Rules applied** from agreed suggestions (Pattern → target file).
+- **Unknown resolved** - count moved out of 000 Unknown; count remaining.
+```
