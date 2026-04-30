@@ -28,7 +28,7 @@ This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactmen
 | Type     | Detail                                                                    |
 | -------- | ------------------------------------------------------------------------- |
 | Document | Existing scheduled task prompts in `Tools/Claude/Activities/`             |
-| Document | [[Authoring Activities]] - prompt authoring conventions |
+| Document | [[Authoring Guidelines]] - prompt authoring conventions |
 
 ---
 
@@ -72,11 +72,3 @@ This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactmen
 ### Tooling
 
 1. **[caveman](https://github.com/JuliusBrussee/caveman)** - Investigate as a token-efficiency or prompt analysis tool; assess whether it provides useful visibility into token usage or prompt structure
-
----
-
-## Related Topics
-
-- [[Streams/Future/Future|Future]] - parent stream index
-- [[Pillars/Knowledge Islands/Activities/Authoring Activities|Authoring Activities]] - prompt authoring conventions
-- [[Streams/Future/Scheduled Automations/Scheduled Automations|Scheduled Automations]] - target automation suite

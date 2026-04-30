@@ -12,7 +12,7 @@ m
 
 ## Overview
 
-Building out Arcadia's operational tooling across three areas. First, the `Tools/Claude/Activities/` prompt library - the Layer 5 content layer in the [[Authoring Activities|five-layer model]] - migrating existing embedded prompts, authoring new ones, and keeping them aligned with their Knowledge Islands activity notes. Second, activity navigation aids: cached or synthesised views of the five-layer stack that reduce the number of notes a human or agent needs to read. Third, Arcadia's operational infrastructure: the Arcadia skill definition and the scheduled task configuration.
+Building out Arcadia's operational tooling across three areas. First, the `Tools/Claude/Activities/` prompt library - the Layer 5 content layer in the [[Authoring Guidelines|five-layer model]] - migrating existing embedded prompts, authoring new ones, and keeping them aligned with their Knowledge Islands activity notes. Second, activity navigation aids: cached or synthesised views of the five-layer stack that reduce the number of notes a human or agent needs to read. Third, Arcadia's operational infrastructure: the Arcadia skill definition and the scheduled task configuration.
 
 The structural scaffolding (folder structure, stub index notes, authoring conventions) was created in the April 2026 governance restructuring session alongside [[Streams/Active/Knowledge Islands Inception/Knowledge Islands Inception|Knowledge Islands Inception]].
 
@@ -22,7 +22,7 @@ The structural scaffolding (folder structure, stub index notes, authoring conven
 
 | Phase               | Status         | Description                                                                                                |
 | ------------------- | -------------- | ---------------------------------------------------------------------------------------------------------- |
-| Scaffolding         | ✅ Complete    | `Tools/Claude/Activities/` folder structure and stub indexes created; `Authoring Activities.md` written    |
+| Scaffolding         | ✅ Complete    | `Tools/Claude/Activities/` folder structure and stub indexes created; `Authoring Guidelines.md` written    |
 | Email prompts       | 🔲 Not started | Migrate Route Triage, Route Drift, Route Review, Re-route Triaged, Recap, Email Test prompts to Layer 5    |
 | Tending prompts | 🔲 Not started | Migrate Health Check, Knowledge Rebuild, Scheduled Task Audit, Knowledge Islands Convergence Check prompts |
 | Briefings prompts   | 🔲 Not started | Migrate Morning Briefing prompt                                                                            |
@@ -40,7 +40,7 @@ The structural scaffolding (folder structure, stub index notes, authoring conven
 | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- | ---------------------- |
 | Layer 5 lives under `Tools/Claude/Activities/`, not `Activities/`  | Prompts are Claude-specific and island-specific; Layer 1 (`Activities/`) stays agent-agnostic                       |
 | Stubs first, content second                                        | Scaffolding unblocks the structural work; prompts migrate incrementally                                             |
-| Knowledge Islands note is the draft; scheduled task is the release | Maintains the prompt editing discipline from [[Authoring Activities]] |
+| Knowledge Islands note is the draft; scheduled task is the release | Maintains the prompt editing discipline from [[Authoring Guidelines]] |
 | Each activity group gets its own subfolder                         | Mirrors the `Activities/` group structure for navigability                                                          |
 
 ---
@@ -60,6 +60,6 @@ The structural scaffolding (folder structure, stub index notes, authoring conven
 
 - [[Streams/Active/Active|Active]] - parent stream index
 - [[Pillars/Knowledge Islands/Tools/Claude/Activities/Activities|Tools/Claude/Activities]] - prompt library
-- [[Pillars/Knowledge Islands/Activities/Authoring Activities|Authoring Activities]] - authoring conventions
+- [[Pillars/Knowledge Islands/Model/Activities/Authoring Guidelines/Authoring Guidelines|Authoring Guidelines]] - authoring conventions
 - [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - Layer 1 activities
 - [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - parent index

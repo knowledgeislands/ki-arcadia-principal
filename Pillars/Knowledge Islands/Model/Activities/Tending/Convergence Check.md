@@ -52,7 +52,7 @@ These notes must remain byte-for-byte identical. Any difference is drift to be r
 - `Conventions/Notes/Frontmatter/Tags.md`
 - `Conventions/Notes.md`
 - `Activities/Activities.md`
-- `Activities/Authoring Activities.md`
+- `Activities/Authoring Guidelines.md`
 - `Activities/Tending/Asset Audit.md`
 - `Activities/Tending/Health Check.md`
 - `Activities/Tending/Inbox Review.md`

@@ -76,7 +76,7 @@ The second part is the portable, generic model. It covers the language of the is
 
 ### Activities - How does the island stay alive?
 
-- [[Authoring Activities]] - the five-layer content model; how activity notes are written and maintained
+- [[Authoring Guidelines]] - the five-layer content model; how activity notes are written and maintained
   - _Constitutional (always-on):_
     - [[Constitutional]] - the set of activities every island must run; includes [[Conformance]]
   - _Tending (island health):_

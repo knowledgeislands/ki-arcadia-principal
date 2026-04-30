@@ -6,7 +6,7 @@ under Knowledge Islands, get rid of the Related Topics sections if still present
 
 ## Authoring Activities
 
-`Authoring Activities` rename to `Authoring Guidelines`
+~~`Authoring Activities` rename to `Authoring Guidelines`~~ - done 2026-04-30
 
 ## Prompt - 5 layers
 

@@ -9,7 +9,7 @@ status: current - April 2026
 author: Written with Claude
 ---
 
-# Authoring Activities
+# Authoring Guidelines
 
 ## Overview
 

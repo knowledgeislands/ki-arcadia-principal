@@ -15,13 +15,13 @@ Routine maintenance keeps the island accurate, well-structured, and free of stal
 
 Activities divide into two categories. **Constitutional** activities are required of any island adopting Knowledge Islands and cannot be vetoed - they define the baseline that makes an island valid. All other groups are **adoptable**: each territory must take an explicit position on each group (adopted or vetoed), with no unknowns permitted. The island's [[Knowledge Capital/Charter|Charter]] is the authoritative record of adoption decisions.
 
-The content here covers what each activity does and why. The prompts that drive them - Claude-specific and island-specific - live in [[Model/Tools/Claude/Activities/Activities|Tools/Claude/Activities]]. For the full five-layer model and prompt authoring conventions, see [[Authoring Activities]].
+The content here covers what each activity does and why. The prompts that drive them - Claude-specific and island-specific - live in [[Model/Tools/Claude/Activities/Activities|Tools/Claude/Activities]]. For the full five-layer model and prompt authoring conventions, see [[Authoring Guidelines]].
 
 ---
 
-## Authoring Activities
+## Authoring Guidelines
 
-Authoring Activities documents the five-layer model for activity prompts and the conventions for writing, updating, and layering them. It is the prerequisite for anyone working with the Layer 5 prompt notes in Tools/Claude/Activities, and the reference for understanding how a generic activity note and an island-specific prompt relate to each other.
+Authoring Guidelines documents the five-layer model for activity prompts and the conventions for writing, updating, and layering them. It is the prerequisite for anyone working with the Layer 5 prompt notes in Tools/Claude/Activities, and the reference for understanding how a generic activity note and an island-specific prompt relate to each other.
 
 ## Constitutional
 
