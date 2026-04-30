@@ -20,8 +20,11 @@ this is in some places
 
 ## Banned characters
 
-—
+hypens
 
+```text
+—
+```
 
 
 Index Notes are Folder Notes really
