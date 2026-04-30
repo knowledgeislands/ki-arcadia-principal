@@ -71,7 +71,7 @@ The second part is the portable, generic model. It covers the language of the is
 
 ### Processes - How does change happen?
 
-- [[Enactment Process]] - Stream ↔ Council → Pillars/Resources; the iterative governance cycle
+- [[Enactment Process/Enactment Process|Enactment Process]] - Stream ↔ Council → Pillars/Resources; the iterative governance cycle
 - [[Contribution Process]] - who can contribute; customs at the boundary; inbound vs outbound
 
 ### Activities - How does the island stay alive?

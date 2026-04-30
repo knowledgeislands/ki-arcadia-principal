@@ -17,19 +17,6 @@ The bulk fix pass disambiguated 42 of 49 ambiguous bare links. The 7 below need 
 
 There are four `Linear.md` files (KC instance, Layer 5 Claude prompt, KI generic Tool, KI Model Activity). Page Registry is a worked example - the right target depends on which Linear note the example was meant to demonstrate.
 
-### Enactment Process - in body intros
-
-`Pillars/Knowledge Islands/Knowledge Islands.md:74`
-```
-- [[Enactment Process]] - Stream ↔ Council → Pillars/Resources; the iterative governance cycle
-```
-`Pillars/Knowledge Islands/Model/Processes/Contribution Process/Contribution Process.md:21`
-```
-Visitors may identify gaps or suggest ideas informally, but formal proposals (those that enter the [[Enactment Process]]) must be submitted by a council member.
-```
-
-Two candidates: KC instance vs KI generic. Both are written from inside KI generic territory describing the abstract process - so KI generic (`Model/Processes/Enactment Process/Enactment Process`) is the likely target, but worth confirming.
-
 ### Activities - Human and Claude tool notes
 
 `Pillars/Knowledge Islands/Model/Agents/Human/Human.md:28`
