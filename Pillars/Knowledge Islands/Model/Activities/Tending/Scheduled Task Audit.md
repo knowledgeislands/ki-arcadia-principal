@@ -45,7 +45,7 @@ The practical effect: this audit can verify schedule/cron/description alignment 
 
 ## Prompt
 
-The prompt below is the canonical version. It must match the prompt stored in the `{skill-name}-scheduled-task-audit` scheduled task - see [[Authoring Activities]] § Prompt Editing Discipline.
+The prompt below is the canonical version. It must match the prompt stored in the `{skill-name}-scheduled-task-audit` scheduled task - see [[Authoring Guidelines]] § Prompt Editing Discipline.
 
 ```txt
 You are running the Scheduled Task Audit. Your job is to verify that each live Cowork scheduled task has a corresponding KI note and that schedules match - and to self-verify this task's own prompt. Full prompt comparison across all tasks is not currently possible; see the Known Limitations section in the KI note.
