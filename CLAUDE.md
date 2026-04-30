@@ -6,7 +6,7 @@ IMPORTANT: Load this file at the start of any session involving the island.
 
 ## Approach
 
-Full specification in [[Concept]]. Summary:
+Full specification in [[Introduction/Introduction|Introduction]]. Summary:
 
 - **Goal**: Build a canonical, living record of knowledge such that the island informs decisions, onboarding, tooling, and AI interactions
 - **Continual Improvement**: Outputs from interactions should feed back into the island, creating a cycle of improvement
@@ -31,7 +31,7 @@ Full specification in [[Structure]]. Summary:
 
 ### Pillars/Resources boundary (strictly enforced)
 
-The general principle: `Pillars` holds internal knowledge owned by the Knowledge Island; `Resources` holds external reference material that exists independently. Methodology or internal content found in Resources belongs in Pillars. The canonical boundary definition is in [[Pillars/Knowledge Islands/Conventions/Structure/Library/Library|Library]] under "Pillars/Resources Boundary".
+The general principle: `Pillars` holds internal knowledge owned by the Knowledge Island; `Resources` holds external reference material that exists independently. Methodology or internal content found in Resources belongs in Pillars. The canonical boundary definition is in [[Pillars/Knowledge Islands/Model/Conventions/Structure/Library/Library|Library]] under "Pillars/Resources Boundary".
 
 ### Index Notes (strictly enforced)
 
