@@ -13,23 +13,49 @@ author: Written with Claude
 
 ## Overview
 
-How to design, document, and maintain island activities. Covers the content layers that determine where each type of content lives, the standard format for activity notes, and the discipline for iterating on scheduled task prompts.
-
-This note is the framework: it applies to every island. Arcadia-specific authoring decisions, where they exist, are recorded in [[Authoring]] under Knowledge Capital. Today that note is a stub - Arcadia follows this framework as written.
+Whilst activites can be pretty straightforward, designing and maintaining a coherent system of activities across multiple islands and agents is complex. This note is the framework for that system - it defines the layers that structure where different types of information live, the format for activity notes, the discipline for iterating on scheduled task prompts, and the contract for adoptable activity groups.
 
 ---
 
 ## Content Layers
 
-Every activity is composed of content in five distinct layers, each at a different level of generality. The rule is: **notes live at the most generic layer that accurately describes them**.
+Every activity is designed in consideration of five distinct layers (some of which are optional), each at a different level of generality.  The full picture of an activity's design is the combination of all layers; the layers themselves are modular and reusable.
 
-| Layer | Location | Generality | Contains |
-| --- | --- | --- | --- |
-| Definition | `Activities/{group}/` | Activity-specific, agent-agnostic, island-agnostic | What the activity does, why it exists, trigger phrases, outcome definition |
-| Configuration | `Knowledge Capital/Activities/{group}/` | Activity-specific, island-specific, agent-agnostic | Island configuration the activity reads - routing rules, config files, data models |
-| Pattern | `Agents/Agentic AI/` | Activity-agnostic, island-agnostic, agent-agnostic | General AI operating patterns - caching, parallelism, rolling windows, artefact lifecycle |
-| Agent Behaviour | `Agents/Claude/` | Activity-agnostic, island-agnostic, Claude-specific | Claude's implementation - five modes, behavioural constraints, memory architecture |
-| Prompt | `Tools/Claude/Activities/{group}/` | Activity-specific, island-specific, Claude-specific | The actual prompt text; references the other layers at runtime |
+The layers are Definition, Configuration, Pattern, Agent Behaviour, and Prompt. Each layer has a specific purpose and a canonical location in the repository.
+
+The rule is: **design is split across layers such that the scope of each element in the design lives at the most generic layer that provides the widest applicability whilst accurately describing them**.
+
+### Definition
+
+- **Location:** `Activities/{group}/`
+- **Generality:** Activity-specific, agent-agnostic, island-agnostic
+- **Contains:** What the activity does, why it exists, trigger phrases, outcome definition
+
+### Configuration
+
+- **Location:** `Knowledge Capital/Activities/{group}/`
+- **Generality:** Activity-specific, island-specific, agent-agnostic
+- **Contains:** Island configuration the activity reads - routing rules, config files, data models
+
+### Pattern
+
+- **Location:** `Agents/Agentic AI/`
+- **Generality:** Activity-agnostic, island-agnostic, agent-agnostic
+- **Contains:** General AI operating patterns - caching, parallelism, rolling windows, artefact lifecycle
+
+### Agent Behaviour
+
+- **Location:** `Agents/Claude/`
+- **Generality:** Activity-agnostic, island-agnostic, Claude-specific
+- **Contains:** Claude's implementation - five modes, behavioural constraints, memory architecture
+
+### Prompt
+
+- **Location:** `Tools/Claude/Activities/{group}/`
+- **Generality:** Activity-specific, island-specific, Claude-specific
+- **Contains:** The actual prompt text; references the other layers at runtime
+
+### Routing rule of thumb
 
 A piece of content that is "what this activity does" → Definition. A piece that is "how Claude does it for this island" → Prompt. Content that would apply to any island's email triage → Pattern or Agent Behaviour. Content that is this island's routing config → Configuration.
 
