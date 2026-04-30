@@ -15,6 +15,8 @@ author: Written with Claude
 
 How to design, document, and maintain island activities. Covers the content layers that determine where each type of content lives, the standard format for activity notes, and the discipline for iterating on scheduled task prompts.
 
+This note is the framework: it applies to every island. Arcadia-specific authoring decisions, where they exist, are recorded in [[Authoring]] under Knowledge Capital. Today that note is a stub - Arcadia follows this framework as written.
+
 ---
 
 ## Content Layers

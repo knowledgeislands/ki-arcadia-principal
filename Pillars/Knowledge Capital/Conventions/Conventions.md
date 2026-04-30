@@ -10,7 +10,13 @@ author: Written with Claude
 
 ## Overview
 
-This folder holds Arcadia's island-specific conventions: the vocabulary that makes communication precise and the routing rules that direct knowledge to the right place. Both notes are supplements, not replacements - they extend the generic conventions in [[Structure]] and [[Notes]] with the particulars of this island.
+This folder holds Arcadia's island-specific conventions: the vocabulary that makes communication precise, the routing rules that direct knowledge to the right place, and any local authoring decisions that supplement the framework. All three notes are supplements, not replacements - they extend the generic conventions in [[Structure]], [[Notes]], and [[Authoring Guidelines]] with the particulars of this island.
+
+---
+
+## Authoring
+
+[[Authoring]] records Arcadia's local decisions about how it authors content within the Knowledge Islands authoring framework. The framework itself - the content layers, the activity note format, the prompt editing discipline - is defined in [[Authoring Guidelines]] and applies to every island; this note records only Arcadia-specific choices on top of it. It exists as a stub: today Arcadia follows the framework as written, and the note's job is to be the home for any local divergence as it emerges.
 
 ---
 
