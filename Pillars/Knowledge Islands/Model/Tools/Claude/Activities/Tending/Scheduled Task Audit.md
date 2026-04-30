@@ -17,6 +17,8 @@ A daily automated task that verifies each live Cowork scheduled task has a corre
 
 Full prompt comparison across all tasks is not currently possible - see [[#Known Limitations]] below.
 
+This is a Claude-specific activity: it reads scheduled task metadata, the running task's own SKILL.md, and the Prompt notes under `Tools/Claude/Activities/`. It has no agent-agnostic Definition counterpart.
+
 ---
 
 ## Schedule
@@ -54,7 +56,7 @@ You are running the Scheduled Task Audit. Your job is to verify that each live C
 Run this bash command to find the Knowledge Capital folder and derive the repository root:
   KI_PROPS=$(find /sessions/*/mnt -maxdepth 7 -name "Knowledge Capital.md" -path "*/Knowledge Capital/*" 2>/dev/null | head -1)
   REPOSITORY=$(echo "$KI_PROPS" | sed 's|||')
-  ACTIVITIES_DIR="$REPOSITORY/Pillars/Knowledge Islands/Model/Activities"
+  PROMPTS_DIR="$REPOSITORY/Pillars/Knowledge Islands/Model/Tools/Claude/Activities"
   echo "Repository: $REPOSITORY"
 
 Then read:
@@ -66,20 +68,20 @@ Then read:
 Call mcp__scheduled-tasks__list_scheduled_tasks to retrieve all scheduled tasks and their metadata.
 
 ## Step 2 - Identify the corresponding KI note for each task
-For each task whose ID begins with the task prefix from KI Identity, locate the matching activity note in $ACTIVITIES_DIR/. The note filename corresponds to the task name (e.g. {skill-name}-morning-briefing → Morning Briefing.md).
+For each task whose ID begins with the task prefix from KI Identity, locate the matching Prompt note in $PROMPTS_DIR/. The note filename corresponds to the task name (e.g. {skill-name}-morning-briefing → Briefings/Morning Briefing.md).
 
 ## Step 3 - Verify schedule and description alignment
-For each task, read its KI note and check:
-- **Cron:** Does the live cron expression match what the KI note documents in its Schedule section?
-- **Description:** Does the live task description match the KI note's purpose?
+For each task, read its Prompt note and check:
+- **Cron:** Does the live cron expression match what the Prompt note documents in its Schedule section?
+- **Description:** Does the live task description match the Prompt note's purpose?
 - **No KI note:** Flag any task with no corresponding KI note - do not modify the task.
-- **Orphaned notes:** Scan $ACTIVITIES_DIR/ for any note that documents a scheduled task (contains a Task ID field) but has no corresponding live task. Flag these.
+- **Orphaned notes:** Scan $PROMPTS_DIR/ for any Prompt note that documents a scheduled task (contains a Task ID field) but has no corresponding live task. Flag these.
 
 ## Step 4 - Self-verify this task's prompt
 This task's own SKILL.md is mounted at the path returned by:
   find /sessions/*/mnt/uploads -name "SKILL.md" 2>/dev/null | head -1
 
-Read it and compare against the ## Prompt block in $ACTIVITIES_DIR/Tending/Scheduled Task Audit.md. This is the only task whose prompt can be verified with current tooling.
+Read it and compare against the ## Prompt block in $PROMPTS_DIR/Tending/Scheduled Task Audit.md. This is the only task whose prompt can be verified with current tooling.
 
 If the KI note is ahead of the live task: call mcp__scheduled-tasks__update_scheduled_task to push the KI version.
 If the live task is ahead of the KI note: update the KI note to match, then confirm alignment.
@@ -107,23 +109,23 @@ Call `mcp__scheduled-tasks__list_scheduled_tasks` to retrieve metadata for all a
 
 ### 2. Identify the corresponding island note
 
-For each task, locate the matching activity note under `Pillars/Knowledge Islands/Model/Activities/`. The task ID prefix is documented in [[Knowledge Capital/Charter|Charter]].
+For each task, locate the matching Prompt note under `Pillars/Knowledge Islands/Model/Tools/Claude/Activities/`. The task ID prefix is documented in [[Knowledge Capital/Charter|Charter]].
 
 ### 3. Verify schedule and description
 
-Compare cron expressions and descriptions against island note content. Flag mismatches.
+Compare cron expressions and descriptions against the Prompt note content. Flag mismatches.
 
 ### 4. Self-verify prompt (automated runs) / full prompt comparison (manual runs)
 
-Automated: read the mounted SKILL.md and compare against the island note prompt block. Manual: compare island note prompt blocks against any known live prompt content.
+Automated: read the mounted SKILL.md and compare against the Prompt note's prompt block. Manual: compare Prompt note prompt blocks against any known live prompt content.
 
-The island note is always the canonical source. Push KI → task via `mcp__scheduled-tasks__update_scheduled_task` if the island is ahead; update the island note if the live task is ahead.
+The Prompt note is always the canonical source. Push KI → task via `mcp__scheduled-tasks__update_scheduled_task` if the island is ahead; update the Prompt note if the live task is ahead.
 
 ---
 
 ## Sync Protocol
 
-When updating a prompt during an active session: update the island note first, then push to the scheduled task via `mcp__scheduled-tasks__update_scheduled_task`. Batch edits - do not push after every small change. Push when:
+When updating a prompt during an active session: update the Prompt note first, then push to the scheduled task via `mcp__scheduled-tasks__update_scheduled_task`. Batch edits - do not push after every small change. Push when:
 
 - The user explicitly signals readiness ("push it", "sync the task", "ready to run"), or
 - The iteration is confirmed complete, or
@@ -132,5 +134,5 @@ When updating a prompt during an active session: update the island note first, t
 ## Notes
 
 - Minor whitespace or formatting differences can be ignored if they do not affect execution
-- Prompt changes should always originate in the island note - direct Cowork edits are the primary source of untracked drift
-- If a task has no corresponding island note, create one before the next run
+- Prompt changes should always originate in the Prompt note - direct Cowork edits are the primary source of untracked drift
+- If a task has no corresponding Prompt note, create one before the next run
