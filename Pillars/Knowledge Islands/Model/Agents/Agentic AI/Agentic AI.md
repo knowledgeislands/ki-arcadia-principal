@@ -13,7 +13,7 @@ author: Written with Claude
 
 ## Overview
 
-The AI operating layer - patterns and conventions that govern how AI agents work within the island, independent of any specific tool. Content here applies across AI tools; anything Claude-specific lives under [[Agents/Claude/Claude|Agents/Claude]].
+The AI operating layer - patterns and conventions that govern how AI agents work within the island, independent of any specific tool. Content here applies across AI tools; see tool specific notes for further details.
 
 This is the Pattern layer in the [[Authoring Guidelines|content layers]]: activity-agnostic, island-agnostic, agent-agnostic.
 
