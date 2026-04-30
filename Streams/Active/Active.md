@@ -20,6 +20,7 @@ Streams currently receiving active attention - projects being worked on now.
 | ----- | ------ | -------- |
 | [[Tooling Prompts]] | `in-progress` | `high` |
 | [[Boundary Rules]] | `draft` | `urgent` |
+| [[Authoring Layers]] | `draft` | `medium` |
 | [[Index Review]] | `draft` | `medium` |
 | [[Reading Order]] | `draft` | `medium` |
 | [[Auto Proposal Pipeline|Proposal Pipeline]] | `draft` | `medium` |

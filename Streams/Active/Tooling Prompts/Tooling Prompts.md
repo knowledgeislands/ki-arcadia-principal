@@ -7,7 +7,9 @@ tags:
 status: in-progress - April 2026
 author: Written with Claude
 ---
+
 m
+
 # Tooling Prompts
 
 ## Overview
@@ -20,28 +22,28 @@ The structural scaffolding (folder structure, stub index notes, authoring conven
 
 ## Phase Summary
 
-| Phase               | Status         | Description                                                                                                |
-| ------------------- | -------------- | ---------------------------------------------------------------------------------------------------------- |
-| Scaffolding         | ✅ Complete    | `Tools/Claude/Activities/` folder structure and stub indexes created; `Authoring Guidelines.md` written    |
+| Phase               | Status         | Description                                                                                                      |
+| ------------------- | -------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Scaffolding         | ✅ Complete    | `Tools/Claude/Activities/` folder structure and stub indexes created; `Authoring Guidelines.md` written          |
 | Email prompts       | 🔲 Not started | Migrate Route Triage, Route Drift, Route Review, Re-route Triaged, Recap, Email Test prompts to the Prompt layer |
-| Tending prompts | 🔲 Not started | Migrate Health Check, Knowledge Rebuild, Scheduled Task Audit, Knowledge Islands Convergence Check prompts |
-| Briefings prompts   | 🔲 Not started | Migrate Morning Briefing prompt                                                                            |
-| Linear prompts      | 🔲 Not started | Migrate Linear Sync prompt                                                                                 |
-| Prompt sync audit   | 🔲 Not started | Verify all Prompt notes are in sync with their Cowork scheduled tasks                                      |
-| Activity navigation | 🔲 Not started | Investigate cached/synthesised views of the content layers for human and agent consumers                   |
-| Arcadia skill       | 🔲 Not started | Define and configure the Arcadia Knowledge Islands skill                                                   |
-| Scheduled tasks     | 🔲 Not started | Configure Arcadia's scheduled tasks in Cowork; verify against Charter                                      |
+| Tending prompts     | 🔲 Not started | Migrate Health Check, Knowledge Rebuild, Scheduled Task Audit, Knowledge Islands Convergence Check prompts       |
+| Briefings prompts   | 🔲 Not started | Migrate Morning Briefing prompt                                                                                  |
+| Linear prompts      | 🔲 Not started | Migrate Linear Sync prompt                                                                                       |
+| Prompt sync audit   | 🔲 Not started | Verify all Prompt notes are in sync with their Cowork scheduled tasks                                            |
+| Activity navigation | 🔲 Not started | Investigate cached/synthesised views of the content layers for human and agent consumers                         |
+| Arcadia skill       | 🔲 Not started | Define and configure the Arcadia Knowledge Islands skill                                                         |
+| Scheduled tasks     | 🔲 Not started | Configure Arcadia's scheduled tasks in Cowork; verify against Charter                                            |
 
 ---
 
 ## Design Decisions
 
-| Decision                                                           | Rationale                                                                                                           |
-| ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- | ---------------------- |
-| The Prompt layer lives under `Tools/Claude/Activities/`, not `Activities/`  | Prompts are Claude-specific and island-specific; the Definition layer (`Activities/`) stays agent-agnostic |
-| Stubs first, content second                                        | Scaffolding unblocks the structural work; prompts migrate incrementally                                             |
-| Knowledge Islands note is the draft; scheduled task is the release | Maintains the prompt editing discipline from [[Authoring Guidelines]] |
-| Each activity group gets its own subfolder                         | Mirrors the `Activities/` group structure for navigability                                                          |
+| Decision                                                                   | Rationale                                                                                                  |
+| -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| The Prompt layer lives under `Tools/Claude/Activities/`, not `Activities/` | Prompts are Claude-specific and island-specific; the Definition layer (`Activities/`) stays agent-agnostic |
+| Stubs first, content second                                                | Scaffolding unblocks the structural work; prompts migrate incrementally                                    |
+| Knowledge Islands note is the draft; scheduled task is the release         | Maintains the prompt editing discipline from [[Authoring Guidelines]]                                      |
+| Each activity group gets its own subfolder                                 | Mirrors the `Activities/` group structure for navigability                                                 |
 
 ---
 
