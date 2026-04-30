@@ -45,20 +45,6 @@ Still outstanding - every folder in the tree still needs an index note:
 - Section folders within chapters (e.g. `Tending/Tending.md`, `Email/Email.md`, each agent folder, each tool folder)
 - Realisation: `Realisation/Arcadia/Arcadia.md`
 
-### Prose audit - terminology
-
-Older notes carry stale terminology that was not fully cleaned during migration. A sweep is needed for:
-
-- "KI" used where "island" should now appear
-- "vault" (should be "island" or "repository" depending on context)
-- "Knowledge Capital" where the new term is "Knowledge Capitals"
-- Any surviving references to the old flat paths (e.g. `Pillars/Knowledge Islands/Activities/...`)
-
-### Contextual review - reading order walk
-
-A step-by-step pass down the reading order checking that every concept is introduced before it is used. The known tension points from the original review were in the Residency and Format areas; the migration may have introduced new gaps, particularly around concepts that appear in the Model chapters before the Introduction has fully grounded them.
-
-
 ## Five Layers Terminology
 
 `Authoring Guidelines` is the source of the five-layers.  Open question still
@@ -72,3 +58,7 @@ Need to move
 this is in some places
 
 "Layer 1", "Layer 5", "five-layer model" reads as internal scaffolding that has leaked into the content. Needs a dedicated pass: either rename the layers to something reader-facing, or restructure so the layering is implicit rather than labelled.
+
+### Contextual review - reading order walk
+
+A step-by-step pass down the reading order checking that every concept is introduced before it is used. The known tension points from the original review were in the Residency and Format areas; the migration may have introduced new gaps, particularly around concepts that appear in the Model chapters before the Introduction has fully grounded them.
