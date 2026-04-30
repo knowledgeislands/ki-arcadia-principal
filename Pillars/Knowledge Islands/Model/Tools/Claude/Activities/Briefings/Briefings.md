@@ -20,4 +20,4 @@ What the Morning Briefing does and why it exists is documented in the Definition
 
 ## Prompts
 
-_Prompt notes to be filed here - one note per activity._
+- [[Knowledge Islands/Model/Tools/Claude/Activities/Briefings/Morning Briefing|Morning Briefing]] - daily working-day briefing run that prepares today's daily note

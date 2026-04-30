@@ -20,4 +20,4 @@ What the Linear Sync does and why is documented in the Definition layer at [[Kno
 
 ## Prompts
 
-_Prompt notes to be filed here - one note per activity._
+- [[Knowledge Islands/Model/Tools/Claude/Activities/Linear/Linear Sync|Linear Sync]] - daily reconciliation of Linear initiatives and projects against island stream notes
