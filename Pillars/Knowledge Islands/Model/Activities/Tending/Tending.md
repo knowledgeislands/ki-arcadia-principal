@@ -21,7 +21,7 @@ Activities divide by cadence and initiation. Three are scheduled automations tha
 
 ## Scheduled Task Audit
 
-[[Scheduled Task Audit]] runs each working day at 05:00, before any other automations. It compares the live scheduled task prompts in Cowork against their corresponding island notes in this folder, reconciling any drift between the two. If a prompt has changed since the island note was last updated, or if a scheduled task exists without an island note (or vice versa), the audit surfaces the discrepancy for resolution. It is the quality gate that ensures the five-layer model stays coherent at the boundary between Layers 1 and 5.
+[[Scheduled Task Audit]] runs each working day at 05:00, before any other automations. It compares the live scheduled task prompts in Cowork against their corresponding island notes in this folder, reconciling any drift between the two. If a prompt has changed since the island note was last updated, or if a scheduled task exists without an island note (or vice versa), the audit surfaces the discrepancy for resolution. It is the quality gate that ensures the content layers stay coherent at the boundary between Definition and Prompt.
 
 ---
 

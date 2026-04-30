@@ -14,7 +14,7 @@ author: Written with Claude
 
 This is the executable prompt for the Conformance Check. It is a read-only activity: no files are modified. The output is a structured conformance report surfacing issues for human review.
 
-Layer 1 specification: [[Knowledge Islands/Model/Activities/Constitutional/Conformance]] Island configuration: [[Knowledge Capital/Charter|Charter]]
+Definition: [[Knowledge Islands/Model/Activities/Constitutional/Conformance]] Configuration: [[Knowledge Capital/Charter|Charter]]
 
 ---
 

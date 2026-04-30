@@ -12,9 +12,9 @@ author: Written with Claude
 
 ## Overview
 
-Layer 5 prompts for the daily briefing activities - the executable, Claude-specific and island-specific prompts that run the Morning Briefing automation each working day. These prompts reference calendar configuration, task lists, and note-creation paths from [[Knowledge Capital]], and build on the agentic patterns in [[Agentic AI]] for efficient MCP fetching and daily note construction.
+Prompts for the daily briefing activities - the executable, Claude-specific and island-specific prompts that run the Morning Briefing automation each working day. These prompts reference calendar configuration, task lists, and note-creation paths from [[Knowledge Capital]], and build on the agentic patterns in [[Agentic AI]] for efficient MCP fetching and daily note construction.
 
-What the Morning Briefing does and why it exists is documented at Layer 1 in [[Knowledge Islands/Model/Activities/Briefings/Briefings|Activities/Briefings]]. This folder holds only the executable prompts - one note per activity once migrated from the scheduled task definitions.
+What the Morning Briefing does and why it exists is documented in the Definition layer at [[Knowledge Islands/Model/Activities/Briefings/Briefings|Activities/Briefings]]. This folder holds only the executable prompts - one note per activity once migrated from the scheduled task definitions.
 
 ---
 

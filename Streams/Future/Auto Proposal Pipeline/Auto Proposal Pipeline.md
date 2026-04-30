@@ -28,8 +28,8 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
 
 | Type          | Detail                                                                                                |
 | ------------- | ----------------------------------------------------------------------------------------------------- |
-| Activity note | `Activities/[Group]/Auto Proposal Research.md` - Layer 1 definition of what the activity does and why |
-| Prompt note   | `Tools/Claude/Activities/[Group]/Auto Proposal Research.md` - Layer 5 executable prompt               |
+| Activity note | `Activities/[Group]/Auto Proposal Research.md` - the Definition: what the activity does and why       |
+| Prompt note   | `Tools/Claude/Activities/[Group]/Auto Proposal Research.md` - the Prompt: executable prompt           |
 | Convention    | Definition of "proposal-ready" criteria and proposal note format                                      |
 
 ---
@@ -39,8 +39,8 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
 - [ ] Define what "proposal-ready" means - criteria for when a stream idea is sufficiently developed to become a formal proposal
 - [ ] Define the proposal note format - what a well-formed proposal contains, how it links to source material and rationale
 - [ ] Decide which activity group Auto Proposal Research belongs to (Tending is likely; a new Governance group is possible)
-- [ ] Write the Layer 1 activity note
-- [ ] Write the Layer 5 prompt
+- [ ] Write the Definition note
+- [ ] Write the Prompt
 - [ ] Consider cadence - weekly or fortnightly makes sense given council meeting rhythm
 
 ---

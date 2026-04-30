@@ -77,7 +77,7 @@ These notes are intentionally different between islands. Do not flag differences
 | `Knowledge Capital/` (entire folder)       | Identity, skill name, task prefix, integrations, routing rules, and canonical notes list - by design       |
 | `Conventions/Structure/Structure.md`       | Pillars/Resources boundary semantics, Calendar folder naming, and routing rules are specific to each island    |
 | `Tools/Claude/Mistakes and Lessons.md`     | Logs island-specific incidents - accumulates independently in each island                                          |
-| `Tools/Claude/Activities/` (entire folder) | Activity prompts are Claude-specific and island-specific; each island maintains its own Layer 5 prompt library |
+| `Tools/Claude/Activities/` (entire folder) | Activity prompts are Claude-specific and island-specific; each island maintains its own prompt library |
 
 ---
 

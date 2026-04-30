@@ -43,7 +43,7 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
 ## Checklist
 
 - [ ] Create token economics convention note at `Pillars/Knowledge Islands/` (path TBD once scope is resolved)
-- [ ] Document findings as guidance in the relevant Layer 5 prompts
+- [ ] Document findings as guidance in the relevant Prompt notes
 
 ---
 

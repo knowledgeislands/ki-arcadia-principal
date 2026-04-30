@@ -13,23 +13,36 @@ author: Written with Claude
 
 ## Overview
 
-How to design, document, and maintain island activities. Covers the five-layer model that determines where each type of content lives, the standard format for activity notes, and the discipline for iterating on scheduled task prompts.
+How to design, document, and maintain island activities. Covers the content layers that determine where each type of content lives, the standard format for activity notes, and the discipline for iterating on scheduled task prompts.
 
 ---
 
-## Five-Layer Content Model
+## Content Layers
 
-Every activity involves five layers of content, each at a different level of generality. The rule is: **notes live at the most generic layer that accurately describes them**.
+Every activity is composed of content in five distinct layers, each at a different level of generality. The rule is: **notes live at the most generic layer that accurately describes them**.
 
-| Layer | Location                                | Generality                                          | Contains                                                                                  |
-| ----- | --------------------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| 1     | `Activities/{group}/`                   | Activity-specific, agent-agnostic, island-agnostic  | What the activity does, why it exists, trigger phrases, outcome definition                |
-| 2     | `Knowledge Capital/Activities/{group}/` | Activity-specific, island-specific, agent-agnostic  | Island configuration the activity reads - routing rules, config files, data models        |
-| 3     | `Agents/Agentic AI/`                    | Activity-agnostic, island-agnostic, agent-agnostic  | General AI operating patterns - caching, parallelism, rolling windows, artefact lifecycle |
-| 4     | `Agents/Claude/`                        | Activity-agnostic, island-agnostic, Claude-specific | Claude's implementation - five modes, behavioural constraints, memory architecture        |
-| 5     | `Tools/Claude/Activities/{group}/`      | Activity-specific, island-specific, Claude-specific | The actual prompt text; references Layers 2-4 at runtime                                  |
+| Layer           | Location                                | Generality                                          | Contains                                                                                  |
+| --------------- | --------------------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Definition      | `Activities/{group}/`                   | Activity-specific, agent-agnostic, island-agnostic  | What the activity does, why it exists, trigger phrases, outcome definition                |
+| Configuration   | `Knowledge Capital/Activities/{group}/` | Activity-specific, island-specific, agent-agnostic  | Island configuration the activity reads - routing rules, config files, data models        |
+| Pattern         | `Agents/Agentic AI/`                    | Activity-agnostic, island-agnostic, agent-agnostic  | General AI operating patterns - caching, parallelism, rolling windows, artefact lifecycle |
+| Agent Behaviour | `Agents/Claude/`                        | Activity-agnostic, island-agnostic, Claude-specific | Claude's implementation - five modes, behavioural constraints, memory architecture        |
+| Prompt          | `Tools/Claude/Activities/{group}/`      | Activity-specific, island-specific, Claude-specific | The actual prompt text; references the other layers at runtime                            |
 
-A piece of content that is "what this activity does" → Layer 1. A piece that is "how Claude does it for this island" → Layer 5. Content that would apply to any island's email triage → Layer 3 or 4. Content that is this island's routing config → Layer 2.
+A piece of content that is "what this activity does" → Definition. A piece that is "how Claude does it for this island" → Prompt. Content that would apply to any island's email triage → Pattern or Agent Behaviour. Content that is this island's routing config → Configuration.
+
+### The Lattice
+
+The three generality axes - activity, island, agent - form a 2x2x2 lattice with eight corners. The five layers populate five of those corners; the remaining three are empty by design.
+
+| Generality                       | Activity-specific | Activity-agnostic |
+| -------------------------------- | ----------------- | ----------------- |
+| island-agnostic, agent-agnostic  | **Definition**    | **Pattern**       |
+| island-specific, agent-agnostic  | **Configuration** | —                 |
+| island-agnostic, Claude-specific | —                 | **Agent Behaviour** |
+| island-specific, Claude-specific | **Prompt**        | —                 |
+
+The empty corners are informative. There is no "Claude-specific definition of an activity" because activity definitions are agent-agnostic by construction; if Claude needs to do it differently from another agent, that lives in the Prompt. There is no "island-specific generic agentic pattern" because patterns are by definition portable across islands; an island that needs to bend a pattern records the exception in its Configuration. There is no "island-specific Claude behaviour without an activity" because Claude's island-specific behaviour is always in service of an activity, and therefore lives in the Prompt.
 
 ---
 
@@ -43,9 +56,9 @@ Activity groups divide into two categories that are treated differently througho
 
 ---
 
-## Activity Note Format (Layer 1)
+## Activity Note Format (Definition)
 
-The canonical format for Layer 1 activity notes is defined in [[Activity Note]] under `Conventions/Notes/Types/`. Required sections are Overview, Trigger, and Outcome. The optional `## Prompt` section holds the executable prompt when the activity is lightweight enough to keep it inline - for substantial prompts (Route Triage, Knowledge Rebuild), the prompt migrates to `Tools/Claude/Activities/{group}/` and the Layer 1 note links to it.
+The canonical format for Definition notes is defined in [[Activity Note]] under `Conventions/Notes/Types/`. Required sections are Overview, Trigger, and Outcome. The optional `## Prompt` section holds the executable prompt when the activity is lightweight enough to keep it inline - for substantial prompts (Route Triage, Knowledge Rebuild), the prompt migrates to `Tools/Claude/Activities/{group}/` and the Definition note links to it.
 
 ---
 
@@ -78,9 +91,9 @@ Pushing every small edit wastes API calls, creates noisy scheduler state, and ri
 
 ## Designing a New Activity
 
-1. **Identify the layer** - is this truly a new activity (new Layer 1 note needed) or a new prompt variant of an existing one (Layer 5 only)?
-2. **Check Knowledge Capital** - does island-specific config for this activity already exist, or does it need a new Layer 2 note?
-3. **Check Agentic AI patterns** - does the activity need caching, parallel MCP calls, or a rolling window? Use existing Layer 3 patterns; don't re-derive them in the prompt.
-4. **Write Layer 1 first** - document what and why before writing the prompt. If you can't articulate a clear outcome, the activity isn't ready to prompt yet.
-5. **Write the prompt at Layer 5** - reference Layer 2 config by path; invoke Layer 3 patterns by name. Avoid duplicating logic that already exists at a higher layer.
+1. **Identify the layer** - is this truly a new activity (new Definition note needed) or a new prompt variant of an existing one (Prompt only)?
+2. **Check Knowledge Capital** - does island-specific Configuration for this activity already exist, or does it need a new Configuration note?
+3. **Check Agentic AI patterns** - does the activity need caching, parallel MCP calls, or a rolling window? Use existing Patterns; don't re-derive them in the prompt.
+4. **Write the Definition first** - document what and why before writing the prompt. If you can't articulate a clear outcome, the activity isn't ready to prompt yet.
+5. **Write the Prompt** - reference Configuration by path; invoke Patterns by name. Avoid duplicating logic that already exists at a higher layer.
 6. **Create the scheduled task last** - only when the prompt is stable. The scheduled task is a deployment artefact, not a scratchpad.

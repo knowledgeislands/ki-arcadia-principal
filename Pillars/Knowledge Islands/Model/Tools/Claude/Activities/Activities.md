@@ -13,9 +13,9 @@ author: Written with Claude
 
 ## Overview
 
-The prompt library for activities that Claude executes. Each subfolder maps to an activity group and holds the executable prompts - the Layer 5 content in the [[Authoring Guidelines|five-layer model]]. Prompts in this library are Claude-specific and island-specific: they reference island configuration from [[Knowledge Capital]] and agentic patterns from [[Agentic AI]].
+The prompt library for activities that Claude executes. Each subfolder maps to an activity group and holds the executable prompts - the Prompt layer in the [[Authoring Guidelines|content layers]]. Prompts in this library are Claude-specific and island-specific: they reference island configuration from [[Knowledge Capital]] and agentic patterns from [[Agentic AI]].
 
-What an activity does and why it exists is documented at Layer 1 under [[Knowledge Islands/Model/Activities/Activities]]. This layer holds only the executable "how".
+What an activity does and why it exists is documented in the Definition layer under [[Knowledge Islands/Model/Activities/Activities]]. This layer holds only the executable "how".
 
 ---
 

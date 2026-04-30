@@ -113,4 +113,4 @@ The `productivity:memory-management` skill provides a structured **deep memory**
 
 ## Activities
 
-[[Activities]] is the Layer 5 prompt library - the executable prompts that drive scheduled and conversational activities, organised into one subfolder per activity group (Email, Tending, Briefings, Linear). What each activity does and why is documented at Layer 1 under [[Activities]].
+[[Activities]] is the Prompt library - the executable prompts that drive scheduled and conversational activities, organised into one subfolder per activity group (Email, Tending, Briefings, Linear). What each activity does and why is documented under [[Activities]] (the Definition layer).

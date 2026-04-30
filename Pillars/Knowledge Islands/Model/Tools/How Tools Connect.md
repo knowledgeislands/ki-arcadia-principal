@@ -25,7 +25,7 @@ Obsidian is the primary interface for browsing and editing island content. The O
 
 ## Claude
 
-Claude is the primary AI agent and the most deeply integrated tool. The Claude note covers the Cowork setup, the configuration layers for activity prompts, and the live artifact infrastructure. The Activities sub-folder holds all Layer 5 prompt notes - the island-specific prompts that drive each scheduled and conversational activity.
+Claude is the primary AI agent and the most deeply integrated tool. The Claude note covers the Cowork setup, the configuration layers for activity prompts, and the live artifact infrastructure. The Activities sub-folder holds all Prompt notes - the island-specific prompts that drive each scheduled and conversational activity.
 
 ## ChatGPT
 

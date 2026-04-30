@@ -39,7 +39,7 @@ Optional (add when relevant):
 
 ### Optional sections
 
-- **Prompt** - the executable prompt, when it lives here rather than in a separate Layer 5 prompt note. Use for lightweight activities; for substantial prompts, omit this section and link to the prompt note instead
+- **Prompt** - the executable prompt, when it lives here rather than in a separate Prompt note. Use for lightweight activities; for substantial prompts, omit this section and link to the prompt note instead
 - **Known Limitations** - documented constraints on what the automation can and cannot do with current tooling
 
 ---
