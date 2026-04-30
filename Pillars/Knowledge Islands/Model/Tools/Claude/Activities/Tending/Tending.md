@@ -20,5 +20,8 @@ What each tending activity does and why is documented in the Definition layer at
 
 ## Prompts
 
-_Prompt notes to be filed here - one note per activity._
+- [[Knowledge Islands/Model/Tools/Claude/Activities/Tending/Convergence Check|Convergence Check]] - cross-island shared-notes drift detection
+- [[Knowledge Islands/Model/Tools/Claude/Activities/Tending/Health Check|Health Check]] - weekly structural and content review
+- [[Knowledge Islands/Model/Tools/Claude/Activities/Tending/Knowledge Rebuild|Knowledge Rebuild]] - weekly rewrite of canonical auto-memory files
+- [[Knowledge Islands/Model/Tools/Claude/Activities/Tending/Scheduled Task Audit|Scheduled Task Audit]] - daily verification that scheduled tasks match their Prompt notes
 
