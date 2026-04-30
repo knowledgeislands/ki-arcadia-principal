@@ -18,6 +18,6 @@ At the heart of every island is **the Capital** - the settled civic centre where
 
 **The Council Hall** is the civic governance space. Not a store - it is where proposals are reviewed, decisions are made, and the island's direction is set.
 
-Beyond the Capital, **Streams** are the island's lifeblood — flowing water that irrigates the landscape and sustains the agents who live and work within it. They carry knowledge in motion: active projects, evolving ideas, ongoing work. Streams are not part of the Library; their content is not canonical. The lifecycle is: emerge as a Stream → mature through work → stabilise into Pillars or Resources → the Stream is retired.
+Beyond the Capital, **Streams** are the island's lifeblood - flowing water that irrigates the landscape and sustains the agents who live and work within it. They carry knowledge in motion: active projects, evolving ideas, ongoing work. Streams are not part of the Library; their content is not canonical. The lifecycle is: emerge as a Stream → mature through work → stabilise into Pillars or Resources → the Stream is retired.
 
 At the shore lies **the Harbour** - the port of entry. Incoming material arrives here before being assessed and routed inward. Nothing flows directly from the Harbour into the Library; it is assessed first, relevant material routed to the right Stream or zone, the rest discarded.

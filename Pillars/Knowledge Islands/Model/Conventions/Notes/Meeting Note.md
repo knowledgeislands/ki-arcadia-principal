@@ -11,7 +11,7 @@ author: Written with Claude
 
 ## Overview
 
-Defines the delta from [[Notes]] for meeting notes. Meeting notes are point-in-time records of a specific meeting — one note per meeting, filed in the Calendar alongside the daily note for that date.
+Defines the delta from [[Notes]] for meeting notes. Meeting notes are point-in-time records of a specific meeting - one note per meeting, filed in the Calendar alongside the daily note for that date.
 
 ---
 
@@ -20,7 +20,7 @@ Defines the delta from [[Notes]] for meeting notes. Meeting notes are point-in-t
 Required tags in addition to any topic tags:
 
 - `calendar/meeting`
-- `date/YYYY/MM/DD` — matching the meeting date
+- `date/YYYY/MM/DD` - matching the meeting date
 
 ---
 
@@ -32,8 +32,8 @@ The `## Overview` section must include:
 
 - **Attendees:** comma-separated list of names
 - **Date:** written out in full (e.g. `21 April 2026`)
-- A 2–3 sentence summary of what the meeting covered and its key outcome
-- **Transcript:** link to source, if available — wrapped in angle brackets or as a labelled link
+- A 2-3 sentence summary of what the meeting covered and its key outcome
+- **Transcript:** link to source, if available - wrapped in angle brackets or as a labelled link
 
 ### Body sections
 
@@ -41,8 +41,8 @@ One H2 section per theme covered in the meeting. The section title is the theme 
 
 Each theme section may optionally include any or all of the following H3 sub-sections:
 
-- `### Key Decisions` — decisions locked in during this theme
-- `### Open Items` — questions or tensions that remain unresolved and need further discussion
-- `### Action Items` — named actions from this theme, each with owner and deadline where agreed
+- `### Key Decisions` - decisions locked in during this theme
+- `### Open Items` - questions or tensions that remain unresolved and need further discussion
+- `### Action Items` - named actions from this theme, each with owner and deadline where agreed
 
 Not every theme will need all three sub-sections. Omit any that are empty.

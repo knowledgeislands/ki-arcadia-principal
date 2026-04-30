@@ -13,6 +13,7 @@ Full specification in [[Concept]]. Summary:
 - **Structure**: Interconnected notes using `[[wikilinks]]`, frontmatter tags, and a loose Zettelkasten approach. Quality over quantity
 - **Tone**: Structured and direct, with depth where warranted. Not corporate or flowery
 - **Language**: British English throughout - spellings, idioms, and phrasing
+- **Punctuation**: ASCII hyphens only (`-`) - no em-dashes (—) or en-dashes (–) anywhere in island content
 
 ## Library Structure
 

@@ -27,6 +27,6 @@ Linear is connected as an MCP server, providing tool-based access to issues, pro
 
 When interacting with Linear's UI via Claude in Chrome, the following patterns apply:
 
-- **Use `find` for element references** — Linear's UI elements are small and densely packed. Fixed pixel coordinates are unreliable across zoom levels and window states. Always use `find` to get an element reference and click via ref.
-- **Title field interaction** — pair title field clicks with `cmd+a` before typing, to ensure the existing text is selected and replaced.
-- **Coordinate fallback** — only fall back to fixed coordinates when `find` cannot locate the target element.
+- **Use `find` for element references** - Linear's UI elements are small and densely packed. Fixed pixel coordinates are unreliable across zoom levels and window states. Always use `find` to get an element reference and click via ref.
+- **Title field interaction** - pair title field clicks with `cmd+a` before typing, to ensure the existing text is selected and replaced.
+- **Coordinate fallback** - only fall back to fixed coordinates when `find` cannot locate the target element.

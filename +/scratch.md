@@ -6,7 +6,7 @@ under Knowledge Islands, get rid of the Related Topics sections if still present
 
 ## Authoring Activities
 
-`Authoring Activities` rename to `Authoring Guidelines` and move to the end of the document, after `Banned characters`
+`Authoring Activities` rename to `Authoring Guidelines`
 
 ## Prompt - 5 layers
 
@@ -19,12 +19,3 @@ Need to move
 ## Adoption Requirements
 
 this is in some places
-
-## Banned characters
-
-hypens
-
-```text
-—
-```
-

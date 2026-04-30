@@ -50,7 +50,7 @@ This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactmen
 ## Open Questions
 
 - Should this produce a standalone convention note, or guidance embedded directly in task prompts?
-- What is the right granularity — general principles, or prompt-by-prompt annotations?
+- What is the right granularity - general principles, or prompt-by-prompt annotations?
 
 ---
 
@@ -59,19 +59,19 @@ This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactmen
 ### Scheduled task prompt efficiency
 
 1. How to write scheduled task prompts that are lean (minimal token usage)
-2. Which context to include vs. exclude — what the model actually needs vs. what is habitually included
+2. Which context to include vs. exclude - what the model actually needs vs. what is habitually included
 3. Pre-invocation gate pattern: run a cheap check before committing full inference; return early on quiet days
 4. Caching strategies and prompt structure conventions to maximise cache hits
 
 ### Interactive session efficiency
 
-1. Context window discipline — what to load, when to summarise, when to start fresh
-2. Tool call batching — reducing round-trips by issuing independent calls in parallel
-3. Memory file design — keeping memory files lean so they load quickly without diluting context
+1. Context window discipline - what to load, when to summarise, when to start fresh
+2. Tool call batching - reducing round-trips by issuing independent calls in parallel
+3. Memory file design - keeping memory files lean so they load quickly without diluting context
 
 ### Tooling
 
-1. **[caveman](https://github.com/JuliusBrussee/caveman)** — Investigate as a token-efficiency or prompt analysis tool; assess whether it provides useful visibility into token usage or prompt structure
+1. **[caveman](https://github.com/JuliusBrussee/caveman)** - Investigate as a token-efficiency or prompt analysis tool; assess whether it provides useful visibility into token usage or prompt structure
 
 ---
 

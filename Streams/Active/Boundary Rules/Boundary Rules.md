@@ -26,7 +26,7 @@ This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactmen
 
 | Type                 | Detail                                                                                                                   |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Convention note      | `Pillars/Knowledge Islands/Conventions/Boundary Rules.md` — new standalone note                              |
+| Convention note      | `Pillars/Knowledge Islands/Conventions/Boundary Rules.md` - new standalone note                              |
 | Tending activity | Boundary rules scan activity in `Pillars/Knowledge Capital/Activities/` (schedule and trigger TBD at rollout) |
 
 ---
@@ -59,17 +59,17 @@ This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactmen
 
 Boundary rules are conceptually **boundary walls with gates**. Each area of the island is enclosed; content and references may only pass through a gate, and gates check both entry and exit.
 
-- A **Hard** wall has no gate — nothing passes
-- A **Soft** wall has a gate that logs passage — content may pass but is flagged for review
-- A **None** entry is an open gate — passage is explicitly permitted
+- A **Hard** wall has no gate - nothing passes
+- A **Soft** wall has a gate that logs passage - content may pass but is flagged for review
+- A **None** entry is an open gate - passage is explicitly permitted
 
 The gate check runs in both directions: entry (content arriving into an area) and exit (references or content leaving an area). A route entry makes a gate explicit.
 
 A boundary rule is a **route entry**: `(content, target_path, severity)`.
 
-- **content** — what is being checked at the gate: a content type (e.g. "owned methodology"), a source-area character (e.g. "Resources-type content"), or a specific entity class (e.g. "named agents")
-- **target_path** — the area whose wall the gate belongs to; rules cascade to all notes under the path unless a more specific entry overrides
-- **severity** — Hard / Soft / None; more specific paths take precedence over less specific ones
+- **content** - what is being checked at the gate: a content type (e.g. "owned methodology"), a source-area character (e.g. "Resources-type content"), or a specific entity class (e.g. "named agents")
+- **target_path** - the area whose wall the gate belongs to; rules cascade to all notes under the path unless a more specific entry overrides
+- **severity** - Hard / Soft / None; more specific paths take precedence over less specific ones
 
 **Severity:**
 
@@ -81,9 +81,9 @@ A boundary rule is a **route entry**: `(content, target_path, severity)`.
 
 ### Exception mechanism
 
-Exceptions are additional route entries with lower severity at a more specific target path. The pair `(broad_rule, exception_path)` is the route pair. No separate exceptions list is needed — the table is self-contained.
+Exceptions are additional route entries with lower severity at a more specific target path. The pair `(broad_rule, exception_path)` is the route pair. No separate exceptions list is needed - the table is self-contained.
 
-For Soft violations that are intentionally retained, the note carrying the exception includes an inline comment: `> [!exception] Boundary rule exception: <rule> — <rationale>`.
+For Soft violations that are intentionally retained, the note carrying the exception includes an inline comment: `> [!exception] Boundary rule exception: <rule> - <rationale>`.
 
 ### Rules table (draft)
 

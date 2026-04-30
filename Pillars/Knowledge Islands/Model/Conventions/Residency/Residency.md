@@ -11,7 +11,7 @@ author: Written with Claude
 
 ## Overview
 
-Knowledge on the island does not live in one place. It exists across three tiers depending on its maturity, purpose, and who needs to access it. The Library is the authoritative store — durable, structured, version-controlled, permanent. But agents also carry working knowledge in their own memory: operational shorthand, session observations, patterns not yet stable enough for the Library.
+Knowledge on the island does not live in one place. It exists across three tiers depending on its maturity, purpose, and who needs to access it. The Library is the authoritative store - durable, structured, version-controlled, permanent. But agents also carry working knowledge in their own memory: operational shorthand, session observations, patterns not yet stable enough for the Library.
 
 These tiers are complementary, not competing. The Library is what the knowledge _is_; agent memory is how it is _accessed_ efficiently. Understanding where knowledge resides determines how it is maintained, when it is promoted, and when it can be discarded.
 
@@ -21,9 +21,9 @@ These tiers are complementary, not competing. The Library is what the knowledge 
 
 | Tier                 | What it is                                                                            | Lifetime                                              |
 | -------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| **The Library**      | Structured notes in the island — rules, conventions, style, architecture              | Permanent — versioned in git                          |
-| **Canonical memory** | Operational distillation notes — rebuilt regularly from the island                    | Rebuilt on a schedule; always derived from the island |
-| **Auxiliary memory** | In-flight observations from sessions — corrections, patterns, not-yet-validated rules | Temporary — promoted to island notes or pruned        |
+| **The Library**      | Structured notes in the island - rules, conventions, style, architecture              | Permanent - versioned in git                          |
+| **Canonical memory** | Operational distillation notes - rebuilt regularly from the island                    | Rebuilt on a schedule; always derived from the island |
+| **Auxiliary memory** | In-flight observations from sessions - corrections, patterns, not-yet-validated rules | Temporary - promoted to island notes or pruned        |
 
 ---
 
@@ -41,17 +41,17 @@ More specifically:
 
 | Type of knowledge                          | Library   | Canonical memory   | Auxiliary memory           | Memory `type`           |
 | ------------------------------------------ | --------- | ------------------ | -------------------------- | ----------------------- |
-| Folder structure and routing rules         | ✅        | ✅ summary         | —                          | `project`               |
-| Note format and frontmatter conventions    | ✅        | ✅ summary         | —                          | `project`               |
-| Tag taxonomy                               | ✅        | ✅ full list       | —                          | `project`               |
-| Operational rules (file ops, known errors) | ✅ source | ✅ actionable form | —                          | `feedback`              |
-| Communication style and voice              | ✅        | ✅ user profile    | —                          | `user`                  |
-| Activity schedules and integration config  | ✅        | ✅ summary table   | —                          | `reference`             |
-| In-session corrections (one-off)           | —         | —                  | ✅ until promoted          | `feedback`              |
+| Folder structure and routing rules         | ✅        | ✅ summary         | -                          | `project`               |
+| Note format and frontmatter conventions    | ✅        | ✅ summary         | -                          | `project`               |
+| Tag taxonomy                               | ✅        | ✅ full list       | -                          | `project`               |
+| Operational rules (file ops, known errors) | ✅ source | ✅ actionable form | -                          | `feedback`              |
+| Communication style and voice              | ✅        | ✅ user profile    | -                          | `user`                  |
+| Activity schedules and integration config  | ✅        | ✅ summary table   | -                          | `reference`             |
+| In-session corrections (one-off)           | -         | -                  | ✅ until promoted          | `feedback`              |
 | Recurring corrections (validated)          | ✅        | ✅ via rebuild     | ✅ auxiliary until rebuilt | `feedback`              |
-| Volatile implementation details            | —         | —                  | ✅ if useful               | `project` or `feedback` |
-| User preferences (chat behaviour)          | ✅        | ✅ user profile    | —                          | `user`                  |
-| Pointers to where knowledge lives          | —         | ✅                 | —                          | `reference`             |
+| Volatile implementation details            | -         | -                  | ✅ if useful               | `project` or `feedback` |
+| User preferences (chat behaviour)          | ✅        | ✅ user profile    | -                          | `user`                  |
+| Pointers to where knowledge lives          | -         | ✅                 | -                          | `reference`             |
 
 ---
 
@@ -93,7 +93,7 @@ Do not promote:
 
 Bidirectional links keep island notes and memory in sync and enable automated drift detection.
 
-**Island → memory** — `memory_file:` frontmatter property on the island note. Generic (portable) notes use placeholder syntax; a scheduled rebuild activity substitutes the actual prefix from the Charter at runtime:
+**Island → memory** - `memory_file:` frontmatter property on the island note. Generic (portable) notes use placeholder syntax; a scheduled rebuild activity substitutes the actual prefix from the Charter at runtime:
 
 ```yaml
 # Generic note - portable across islands
@@ -111,7 +111,7 @@ memory_file:
   - feedback_{ki_prefix}_multi_column.md
 ```
 
-**Memory → island** — `## Island Sources` section at the bottom of each memory file:
+**Memory → island** - `## Island Sources` section at the bottom of each memory file:
 
 ```markdown
 ## Island Sources

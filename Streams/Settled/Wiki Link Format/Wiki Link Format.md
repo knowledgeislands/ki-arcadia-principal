@@ -27,14 +27,14 @@ WikiLinks come in 3 formats.  Most systems opt for Shortest due to the compactne
 | **Shortest** | ✓           | ~               | ~              | ✓               | ✓              | ✓        | `[[Concept]]`; or `[[Knowledge Islands/Activities]]` on collision              |
 | **Full**     | ✓           | ✓               | ✓              | ✗               | ✓              | ✗        | `[[Pillars/Knowledge Islands/Concept/Concept\|Concept]]`                       |
 | **Relative** | ✓           | ✓               | ✓              | ~               | ✗              | ~        | `[[../Concept]]` for a sibling; `[[../../Activities]]` for a cousin |
-We can do better.  In order for Shortest to also become read and write efficient, the [[Page Registry]] is required — it provides the pre-built index needed to efficiently detect collisions and compute minimum disambiguating prefixes without live filesystem scanning.  Obsidian has its own cache, so Human agents get the benefit of that, whereas Agentic AI does not.
+We can do better.  In order for Shortest to also become read and write efficient, the [[Page Registry]] is required - it provides the pre-built index needed to efficiently detect collisions and compute minimum disambiguating prefixes without live filesystem scanning.  Obsidian has its own cache, so Human agents get the benefit of that, whereas Agentic AI does not.
 
 ---
 
 ## Checklist
 
-- [x] Decide migration approach for existing full-path body links — migrated all at once in April 2026
-- [x] Run migration pass — 94 files, 334 links rewritten
+- [x] Decide migration approach for existing full-path body links - migrated all at once in April 2026
+- [x] Run migration pass - 94 files, 334 links rewritten
 
 ---
 

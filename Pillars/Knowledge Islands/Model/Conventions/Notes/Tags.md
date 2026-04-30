@@ -11,7 +11,7 @@ author: Written with Claude
 
 ## Overview
 
-Tags follow a hierarchical `namespace/value` pattern and are defined as a superset across all islands — not every tag will be relevant to every island. Island-specific tag extensions live in Knowledge Capital.
+Tags follow a hierarchical `namespace/value` pattern and are defined as a superset across all islands - not every tag will be relevant to every island. Island-specific tag extensions live in Knowledge Capital.
 
 ---
 
@@ -37,7 +37,7 @@ Tags follow a hierarchical `namespace/value` pattern and are defined as a supers
 | `card/tvshow`                | Individual TV show                                                    |
 | `card/wine`                  | Wine tasting note                                                     |
 | `date/YYYY/MM/DD`            | Date-stamped (daily notes and point-in-time references)               |
-| `date/YYYY/Www`              | Week-stamped — ISO week number (weekly notes, e.g. `date/2026/W14`)   |
+| `date/YYYY/Www`              | Week-stamped - ISO week number (weekly notes, e.g. `date/2026/W14`)   |
 | `source/claude`              | Generated or co-created with Claude                                   |
 | `topic/5g`                   | Topic: 5G mobile network technology and standards                     |
 | `topic/ai`                   | Topic: AI and machine learning                                        |

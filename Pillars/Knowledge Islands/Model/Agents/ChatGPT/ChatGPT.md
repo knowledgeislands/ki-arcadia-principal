@@ -10,7 +10,7 @@ author: Written with Claude
 
 # ChatGPT
 
-ChatGPT is used in this island as a read-heavy tool — context is loaded manually and outputs are routed back to the island by the user. It does not have direct write access to the island and does not run scheduled automations.
+ChatGPT is used in this island as a read-heavy tool - context is loaded manually and outputs are routed back to the island by the user. It does not have direct write access to the island and does not run scheduled automations.
 
 As a result, there are no agentic patterns to document here yet. This folder exists to make the structure consistent: every AI system the island uses has a presence under [[Agents]], whether or not it currently operates agentically.
 

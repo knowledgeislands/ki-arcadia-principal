@@ -9,7 +9,7 @@ author: Written with Claude
 
 # Charter
 
-_Placeholder — content to be written._
+_Placeholder - content to be written._
 
 The Charter is the identity document at the heart of every Knowledge Island's Knowledge Capital. This section will walk through a concrete Charter: the fixed identity parameters that define an island (name, principal, task prefix, council), the adoption table that records each activity group's position (adopted or vetoed), and the configuration entries that connect adopted groups to their scheduled tasks and integrations.
 

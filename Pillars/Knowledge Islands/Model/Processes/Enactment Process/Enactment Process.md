@@ -10,7 +10,7 @@ author: Written with Claude
 
 ## Overview
 
-The Enactment Process is the island's governance in action. It is not a tool the council uses — it is _how the council operates_. The council's authority is expressed entirely through this process. Nothing reaches stable knowledge in Pillars or Resources except through the Enactment Process gate.
+The Enactment Process is the island's governance in action. It is not a tool the council uses - it is _how the council operates_. The council's authority is expressed entirely through this process. Nothing reaches stable knowledge in Pillars or Resources except through the Enactment Process gate.
 
 This process is a portable pattern: any island copies it as their governance baseline, localising only as needed (different working area, informal council for single-person islands, adjusted status vocabulary).
 
@@ -41,10 +41,10 @@ In this model:
 
 | Status        | Meaning                                                                                      |
 | ------------- | -------------------------------------------------------------------------------------------- |
-| `draft`       | Work in progress — iterating in a Stream's proposal document                                 |
+| `draft`       | Work in progress - iterating in a Stream's proposal document                                 |
 | `ready`       | Proposal stable; no open questions remaining; submitted to the council for review            |
 | `rejected`    | Council has rejected; reasons documented; terminal                                           |
-| `in-progress` | Council has ratified; rollout underway — writing final island notes to their destinations    |
+| `in-progress` | Council has ratified; rollout underway - writing final island notes to their destinations    |
 | `rolled-out`  | Changes made; post-change review pending                                                     |
 | `reviewed`    | Post-change review complete                                                                  |
 | `completed`   | Confirmed complete; corresponding Stream settles                                             |
@@ -66,7 +66,7 @@ Statuses progress in order: `draft` → `ready` → ratification decision (`in-p
 6. On ratification, the proposal's agreed changes are performed and any output is written to its Checklist
 7. Status moves to `rolled-out`; a post-change review is conducted
 8. Status moves to `reviewed`, then `completed`; the proposals index row is updated
-9. The proposal document is deleted — its knowledge is now in Pillars or Resources, and the proposal document has no residual value
+9. The proposal document is deleted - its knowledge is now in Pillars or Resources, and the proposal document has no residual value
 
 ---
 
@@ -74,28 +74,28 @@ Statuses progress in order: `draft` → `ready` → ratification decision (`in-p
 
 Proposal documents are the physical carrier of an Enactment Process proposal.
 
-Each proposal document carries `status`, `priority`, and `dependencies` in its frontmatter. The `dependencies` field lists prerequisite change document filenames as a machine-readable gate — used to verify all prerequisites have reached `rolled-out` status before a change moves to `ready`. It mirrors the `Prerequisite`-type rows in the Inputs section and must be kept in sync with them.
+Each proposal document carries `status`, `priority`, and `dependencies` in its frontmatter. The `dependencies` field lists prerequisite change document filenames as a machine-readable gate - used to verify all prerequisites have reached `rolled-out` status before a change moves to `ready`. It mirrors the `Prerequisite`-type rows in the Inputs section and must be kept in sync with them.
 
 ### Inputs and Outputs
 
 **Inputs** are what the change draws on. Three types:
 
-- `Document` — a source file, brief, or reference
-- `Decision` — a prior agreement or sign-off that shapes this change
-- `Prerequisite` — another change that must reach `rolled-out` status before this one can proceed
+- `Document` - a source file, brief, or reference
+- `Decision` - a prior agreement or sign-off that shapes this change
+- `Prerequisite` - another change that must reach `rolled-out` status before this one can proceed
 
 Fill in what is known at opening; update as further inputs are identified during iteration.
 
 **Outputs** are what the change produces. Two types:
 
-- `Decision` — a conclusion or agreement reached
-- `Artefact` — a note or other asset created or modified
+- `Decision` - a conclusion or agreement reached
+- `Artefact` - a note or other asset created or modified
 
 Outputs should be complete and accurate before the change moves to `ready`.
 
 ### Checklist
 
-A list of the operations the change will perform. This section doubles as the rollout status — items are ticked off as they are executed.
+A list of the operations the change will perform. This section doubles as the rollout status - items are ticked off as they are executed.
 
 ### Open Questions
 
@@ -103,7 +103,7 @@ Unresolved decisions that must be answered before the proposal is `ready`. Close
 
 ### Design Sections
 
-The substance of the proposal: analysis, diagrams, draft content. May be extensive for complex changes — that is expected and correct.
+The substance of the proposal: analysis, diagrams, draft content. May be extensive for complex changes - that is expected and correct.
 
 ### Stream Notes
 
@@ -128,7 +128,7 @@ Every proposal document carries a priority, set at creation and reviewed wheneve
 | `medium` | Valuable but not time-pressured; pick up after high-priority items  |
 | `low`    | Background or nice-to-have; address when nothing higher is pending  |
 
-Priority may increase over time (e.g. `medium` → `urgent` as a launch approaches) — update the proposal document and the change index when this happens.
+Priority may increase over time (e.g. `medium` → `urgent` as a launch approaches) - update the proposal document and the change index when this happens.
 
 ---
 
@@ -143,9 +143,9 @@ Rollout means executing the operations from the Checklist. It is not complete un
 
 ### Working Area Previews
 
-**Storage boundary:** Proposal documents live in the text repository (in Streams), version-controlled alongside the island. The agent's working area is for previews only — temporary staging files that are never committed. Each island's agent configuration specifies where the working area is located.
+**Storage boundary:** Proposal documents live in the text repository (in Streams), version-controlled alongside the island. The agent's working area is for previews only - temporary staging files that are never committed. Each island's agent configuration specifies where the working area is located.
 
-For complex or destructive rollout steps, stage the intended output as a preview file in the agent's working area before applying changes to the island. This creates a review checkpoint — the user can inspect the output before it lands permanently, and the preview serves as a concrete artefact for the post-change review: what was intended vs. what was executed.
+For complex or destructive rollout steps, stage the intended output as a preview file in the agent's working area before applying changes to the island. This creates a review checkpoint - the user can inspect the output before it lands permanently, and the preview serves as a concrete artefact for the post-change review: what was intended vs. what was executed.
 
 ---
 
@@ -155,8 +155,8 @@ After rollout, a post-change review is conducted before the change moves to `rev
 
 **How to run the review:**
 
-1. The agent prepares an initial review summary — what went well, issues encountered, and lessons observed — and presents it as a starting point for discussion
-2. The review is conducted as an interactive conversation; the initial summary is input, not output — the user should challenge, correct, and add to it
+1. The agent prepares an initial review summary - what went well, issues encountered, and lessons observed - and presents it as a starting point for discussion
+2. The review is conducted as an interactive conversation; the initial summary is input, not output - the user should challenge, correct, and add to it
 3. Outputs of the review may include revisions to the summary itself, immediate improvements to the proposal document, and new change documents or process improvements triggered by lessons learned
 
 Record the final review in the change document under a Post-Change Review section, or as a note in the relevant process or governance doc if the lesson is structural.
@@ -165,7 +165,7 @@ Record the final review in the change document under a Post-Change Review sectio
 
 ## Rejection
 
-A rejection is a first-class outcome — not a failure. The council's reasons are documented in the Stream note, and the Stream settles with a `rejected` status. A rejected proposal may be reopened as a new `draft` if circumstances change; the prior rejection and its reasons remain on record.
+A rejection is a first-class outcome - not a failure. The council's reasons are documented in the Stream note, and the Stream settles with a `rejected` status. A rejected proposal may be reopened as a new `draft` if circumstances change; the prior rejection and its reasons remain on record.
 
 ---
 

@@ -40,7 +40,7 @@ _Not yet specified - this stream needs a planning pass before destinations can b
 
 ## Ideas and Notes
 
-- Streams are the island's lifeblood — flowing water irrigating the landscape and sustaining the agents in the cities and beyond. In the visualisation they should feel alive: moving, branching, feeding into the land
+- Streams are the island's lifeblood - flowing water irrigating the landscape and sustaining the agents in the cities and beyond. In the visualisation they should feel alive: moving, branching, feeding into the land
 - Isometric bricks/tiles as the rendering primitive - the island looks built, not drawn
 - Structure maps to geography: Pillars = the library district; Streams = waterways; Harbour = the port; Resources = external reference shelves; Calendar = the archive tower
 - Notes could appear as buildings or structures; links as paths between them
