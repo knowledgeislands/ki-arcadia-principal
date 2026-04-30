@@ -1,0 +1,78 @@
+---
+tags:
+  - card/note
+  - topic/productivity
+  - topic/automation
+  - topic/knowledge-management
+  - source/claude
+status: current - April 2026
+author: Written with Claude
+---
+
+# Linear Sync
+
+## Overview
+
+The Claude agent specific activity prompt for the Linear Sync activity. This is maintained as an agentic AI specific task instruction that it can easily use at runtime rather than having to read and understand all of the note hierachy and inheritance at runtime.
+
+---
+
+## Schedule
+
+- **Task ID:** `{task-prefix}-linear-sync`
+- **Runs:** Working days at ~09:00 AM (with a small jitter) - working days defined in [[Schedule]]
+- **Cron:** See [[Schedule|Schedule]] → Linear Sync cron
+
+---
+
+## Prompt
+
+```txt
+You are running the Linear Sync. Your job is to reconcile Linear's initiative and project state against the island.
+
+## Step 0 - Locate the repository and load Knowledge Capital
+Run this bash command to find the Knowledge Capital folder and derive the repository root:
+  KI_PROPS=$(find /sessions/*/mnt -maxdepth 7 -name "Knowledge Capital.md" -path "*/Knowledge Capital/*" 2>/dev/null | head -1)
+  REPOSITORY=$(echo "$KI_PROPS" | sed 's|||')
+  KI_PROPS_DIR=$(dirname "$KI_PROPS")
+  echo "Repository: $REPOSITORY"
+
+Read $KI_PROPS_DIR/Identity.md.
+All file paths below are relative to $REPOSITORY.
+
+## Step 1 - Load context
+Read $REPOSITORY/CLAUDE.md and $REPOSITORY/Pillars/Knowledge Islands/Model/Tools/Claude/Mistakes and Lessons.md (pre-flight check).
+Read $REPOSITORY/Pillars/Knowledge Capital/Activities/Linear/Linear.md - this contains the Initiative → KI Mapping table, naming conventions, and project labels.
+Read $REPOSITORY/Pillars/Knowledge Islands/Model/Tools/Linear/Linear.md - this contains the generic MCP connection details and browser-based interaction patterns.
+
+## Step 2 - Fetch current initiatives
+Use list_initiatives (Linear MCP) to retrieve all active and planned initiatives. Compare against the Initiative → KI Mapping table in Linear Workspace.md.
+
+Check for:
+- New initiatives not yet in the mapping table → create a stream note (in Streams/Active/), a Pillars note, and for CS engagements a Resources company profile, then add a row to the mapping table.
+- Completed or canceled initiatives → remove from the mapping table and move the KI stream note from Streams/Active/ to Streams/Settled/. Extract any durable knowledge to Pillars before archiving.
+- Initiative name drift - renamed in Linear but not reflected in the KI → update KI references.
+
+## Step 3 - Check project naming conventions
+For each active initiative, review project names against the naming conventions defined in the Linear Workspace note loaded in Step 1.
+
+Rename non-conforming projects in Linear directly using save_project.
+
+## Step 4 - Verify stream note project coverage
+For each active initiative with a stream note, use list_projects filtered by initiative (NEVER call list_projects without an initiative filter - this exceeds Linear's complexity limit of ~10,000). Exclude Completed and Canceled projects.
+
+Note: list_projects with an initiative filter still exceeds the complexity limit at limit: 100. Use get_initiative with includeProjects: true instead - it returns project IDs and names without hitting the limit. Then use get_project to check the status of any projects that appear in the initiative but not in the stream note, to confirm whether they are Completed or Canceled before treating them as missing.
+
+Check that the stream note's projects table includes every remaining uncompleted project. Add missing rows; remove rows for projects now completed or canceled.
+
+## Step 5 - Resolve drift
+Apply fixes in this order:
+1. Rename projects in Linear where naming conventions are violated
+2. Update the KI stream note to reflect the corrected names and current project set
+3. Update the mapping table in Linear Workspace.md for any initiative-level changes
+
+## Step 6 - Report
+Produce a brief summary of what changed (initiatives added/removed/renamed, projects renamed, stream notes updated). If nothing changed, confirm the sync found no drift.
+
+Write a session digest to the KI Calendar at the appropriate path: Calendar/YYYY/YYYY-MM MonthName/YYYY-MM-DD Session - Linear Sync.md and reference it from the daily note. Use British English throughout.
+```
