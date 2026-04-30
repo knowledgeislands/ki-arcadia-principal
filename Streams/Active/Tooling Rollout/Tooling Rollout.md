@@ -8,8 +8,6 @@ status: in-progress - April 2026
 author: Written with Claude
 ---
 
-m
-
 # Tooling Rollout
 
 ## Overview
