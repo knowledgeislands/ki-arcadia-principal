@@ -18,7 +18,7 @@ Streams currently receiving active attention - projects being worked on now.
 
 | Topic | Status | Priority |
 | ----- | ------ | -------- |
-| [[Tooling Prompts]] | `in-progress` | `high` |
+| [[Tooling Rollout]] | `in-progress` | `high` |
 | [[Boundary Rules]] | `draft` | `urgent` |
 | [[Authoring Layers]] | `draft` | `medium` |
 | [[Index Review]] | `draft` | `medium` |
