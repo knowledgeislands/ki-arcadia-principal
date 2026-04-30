@@ -20,24 +20,28 @@ See [[Site Structure]] — the storyboard at a glance (HTML, sibling file).
 
 ## Outstanding Work
 
-### Index notes
+### Index notes — remaining
 
-Every folder in the new tree needs a same-named index note per the CLAUDE.md convention. None currently exist for any of the act or chapter folders (`Introduction/`, `Introduction/Background/`, `Model/Activities/`, etc.). These are not decorative — they are the contextualising layer that makes the folder navigable.
+One act-level index note has been created: `Introduction/Introduction.md`.
 
-### CLAUDE.md
+Five leftover flat notes have been repurposed as intro sections within their respective chapters:
 
-The Key Meta Notes table in CLAUDE.md still points to the old flat paths (`Pillars/Knowledge Islands/Concept/Concept.md`, `Activities/Activities.md`, etc.). These are all dead paths now. The table needs to be rewritten to reflect the new tree before any automated task can reliably navigate the island.
+- `Model/Conventions/What Conventions Cover.md`
+- `Model/Processes/How Change Happens.md`
+- `Model/Activities/What Keeps an Island Alive.md`
+- `Model/Agents/Who Acts on the Island.md`
+- `Model/Tools/How Tools Connect.md`
 
-### Old flat notes as chapter introductions
+Still outstanding — every folder in the tree still needs an index note:
 
-The six leftover flat index notes in `+/Knowledge Islands Left Overs/` each contain content that was not migrated because it is introductory or overview material, not leaf content. Rather than discarding it, each should be reviewed as a candidate introduction section for its chapter's index note:
+- Act level: `Model/Model.md`, `Realisation/Realisation.md`
+- Introduction sub-chapters: `Introduction/Background/Background.md`, `Introduction/Concept/Concept.md`
+- Section folders within chapters (e.g. `Tending/Tending.md`, `Email/Email.md`, each agent folder, each tool folder)
+- Realisation: `Realisation/Arcadia/Arcadia.md`
 
-- `Concept.md` → Introduction chapter indexes
-- `Activities.md` → Model/Activities index (contains a useful schedule/trigger/summary table for all activities)
-- `Agents.md` → Model/Agents index (contains a clean human vs agentic AI overview)
-- `Tools.md` → Model/Tools index
-- `Conventions.md` → Model/Conventions index
-- `Processes.md` → Model/Processes index
+### CLAUDE.md ✓
+
+Key Meta Notes table updated to the three-act paths. `Concept` removed (content distributed across Introduction); `Frontmatter` replaced with `Properties`. Note: `Introduction/Introduction.md` is a candidate to add once the contextual review confirms it as the right automation entry point for the model overview.
 
 ### Prose audit — terminology
 
