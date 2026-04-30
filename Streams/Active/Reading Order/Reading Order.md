@@ -18,6 +18,12 @@ See [[Site Structure]] - the storyboard at a glance (HTML, sibling file).
 
 ---
 
+## Governance
+
+This stream follows the [[Enactment Process]].
+
+---
+
 ## Outstanding Work
 
 ### Index notes - remaining
@@ -39,10 +45,6 @@ Still outstanding - every folder in the tree still needs an index note:
 - Section folders within chapters (e.g. `Tending/Tending.md`, `Email/Email.md`, each agent folder, each tool folder)
 - Realisation: `Realisation/Arcadia/Arcadia.md`
 
-### CLAUDE.md ✓
-
-Key Meta Notes table updated to the three-act paths. `Concept` removed (content distributed across Introduction); `Frontmatter` replaced with `Properties`. Note: `Introduction/Introduction.md` is a candidate to add once the contextual review confirms it as the right automation entry point for the model overview.
-
 ### Prose audit - terminology
 
 Older notes carry stale terminology that was not fully cleaned during migration. A sweep is needed for:
@@ -56,19 +58,17 @@ Older notes carry stale terminology that was not fully cleaned during migration.
 
 A step-by-step pass down the reading order checking that every concept is introduced before it is used. The known tension points from the original review were in the Residency and Format areas; the migration may have introduced new gaps, particularly around concepts that appear in the Model chapters before the Introduction has fully grounded them.
 
-### Site Structure in the overview
 
-The [[Site Structure]] HTML diagram should be referenced from (or embedded as a screenshot in) the `Knowledge Islands.md` root index note, giving a first-time reader a visual map alongside the prose entry point.
+## Five Layers Terminology
 
----
+`Authoring Guidelines` is the source of the five-layers.  Open question still
 
-## Open Questions
+## Prompt - Prompts
 
-- **Five-layer model terminology** - "Layer 1", "Layer 5", "five-layer model" reads as internal scaffolding that has leaked into the content. Needs a dedicated pass: either rename the layers to something reader-facing, or restructure so the layering is implicit rather than labelled.
-- **Activity Note naming** - "Activity Spec" was considered as a more precise alternative. Deferred pending resolution of the five-layer terminology.
+Need to move
 
----
+## Adoption Requirements
 
-## Governance
+this is in some places
 
-This stream follows the [[Enactment Process]].
+"Layer 1", "Layer 5", "five-layer model" reads as internal scaffolding that has leaked into the content. Needs a dedicated pass: either rename the layers to something reader-facing, or restructure so the layering is implicit rather than labelled.
