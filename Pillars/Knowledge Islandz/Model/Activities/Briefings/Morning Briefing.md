@@ -87,10 +87,3 @@ Check whether this month's monthly note exists at the path from Step 1. If not, 
 
 Do not ask for confirmation - create the notes and report what was done.
 ```
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Activities/Briefings/Briefings|Briefings]] - parent index
-- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - grandparent index

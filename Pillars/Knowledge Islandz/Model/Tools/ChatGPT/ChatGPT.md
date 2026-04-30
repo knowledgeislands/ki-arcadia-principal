@@ -32,10 +32,3 @@ Unlike the [[Claude]] integration, ChatGPT does not have direct file access to t
 
 - **Read** — island content informs ChatGPT responses via loaded context
 - **Write** — only through manual extraction and routing; no automated note writing
-
----
-
-## Related Topics
-
-- [[Tools]] — parent index
-- [[Claude]] — primary AI integration with direct island access

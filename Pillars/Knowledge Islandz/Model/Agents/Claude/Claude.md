@@ -176,10 +176,4 @@ _The table below uses `{ki_prefix}` and `{user_prefix}` placeholders — substit
 
 ---
 
-## Related Topics
-
-- [[Agents]] — parent index
-- [[Agentic AI]] — the general AI agent patterns this agent implements
-- [[Tools/Claude/Claude|Tools → Claude]] — Cowork integration, token economics, platform configuration
-
 [claude-memory]: https://code.claude.com/docs/en/memory

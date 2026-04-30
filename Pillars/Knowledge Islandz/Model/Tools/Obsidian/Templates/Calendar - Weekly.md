@@ -19,9 +19,3 @@ Week of {{date:DD MMMM YYYY}}.
 ### Daily Notes
 
 [List of days in the week as links with a description.]
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Tools/Obsidian/Templates/Templates|Templates]] - parent index

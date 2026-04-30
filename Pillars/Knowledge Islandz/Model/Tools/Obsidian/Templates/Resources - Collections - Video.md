@@ -28,10 +28,3 @@ duration:
 ## Notes
 
 [Personal observations, connections to other notes, things to follow up on.]
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Tools/Obsidian/Templates/Templates|Templates]] - parent index
-- [[Related Note]] - [description]

@@ -21,11 +21,3 @@ Obsidian is the primary human interface for the island — the editor through wh
 The Templater plugin scaffolds new notes to the correct format. Templates are a superset across all islands — not every template will be relevant to every island. The full template index, with one entry per template and its purpose, is in [[Templates]].
 
 Templates implement the structures defined in [[Format]] and [[Types]] — they are the Obsidian-layer expression of those conventions, not the conventions themselves.
-
----
-
-## Related Topics
-
-- [[Tools]] — parent index
-- [[Notes]] — note format conventions that templates implement
-- [[Templates]] — Templater scaffolding templates

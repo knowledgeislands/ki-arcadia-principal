@@ -22,10 +22,3 @@ What each tending activity does and why is documented at Layer 1 in [[Knowledge 
 
 _Prompt notes to be filed here - one note per activity._
 
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Tools/Claude/Activities/Activities|Activities (Claude Prompts)]] - parent index
-- [[Pillars/Knowledge Islands/Activities/Tending/Tending|Activities/Tending]] - Layer 1: what these activities do
-- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - island configuration these prompts reference

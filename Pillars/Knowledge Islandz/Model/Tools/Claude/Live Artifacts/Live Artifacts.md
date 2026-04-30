@@ -61,7 +61,6 @@ Required sections, in this order:
 4. `## Reusable Prompt` - a fenced code block with a paste-ready prompt that would rebuild the artifact from scratch, followed by a one-liner trigger + clarification answers if the artifact has one.
 5. `## Updating` - four parts: (a) the two mechanics (regenerate via `mcp__cowork__create_artifact` with the same `id`; patch via `mcp__cowork__update_artifact`); (b) common in-place edits naming the specific constants/arrays to change; (c) a verification checklist; (d) the colocation backup step - after every approved `update_artifact`, read the artifact HTML from disk and write it to `<Artifact Name>.html` in this folder.
 6. `## Potential Enhancements` - 5-9 ideas, ordered practical → creative, each with a bold name and a one-sentence description of the value.
-7. `## Related Topics` - wikilinks to `[[Live Artifacts]]` as parent, plus any domain-relevant notes.
 
 Frontmatter: standard Knowledge Islands YAML properties (`status`, `purpose`, `author: Written with Claude`). Tags must include `card/note`, `topic/ai`, `topic/productivity`, `topic/automation`, `source/claude`, plus one or two domain tags that fit the artifact's subject.
 
@@ -82,11 +81,3 @@ Notes:
 
 - If the other conversation has lost track of what its artifact does (e.g. context has since been trimmed), ask it to re-open the artifact from the sidebar and re-inspect before drafting - otherwise the recipe will be generic.
 - Once three or four recipes are collected, skim the set together to factor any recurring cross-cutting patterns into [[Pillars/Knowledge Islands/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]] rather than repeating them in each recipe.
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Tools/Claude/Claude|Claude]] - parent index
-- [[Pillars/Knowledge Islands/Agents/Agentic AI/AI Automation Patterns|AI Automation Patterns]] - general patterns for recurring AI automations
-- [[Pillars/Knowledge Islands/Tools/Claude/Cowork Configuration Layers|Cowork Configuration Layers]] - where Cowork preferences and rules live

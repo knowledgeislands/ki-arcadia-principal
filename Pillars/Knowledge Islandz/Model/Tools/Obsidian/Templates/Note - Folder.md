@@ -23,10 +23,3 @@ author: [Manual / Written with Claude / Mixed]
 ## [Child Note or Subfolder Name]
 
 [Two to four sentences introducing this child.]
-
----
-
-## Related Topics
-
-- [[Parent/Parent|Parent]] - parent index
-- [[Related/Note|Note]] - [relationship or relevance]

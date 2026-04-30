@@ -26,11 +26,3 @@ The human operating mode covers everything a person does directly in the island 
 **Graph navigation** — Using Obsidian's graph view and wikilink traversal to explore connections, identify orphaned notes, and maintain structural health.
 
 **Periodic maintenance** — Running the scheduled activities documented in [[Activities]], including status reviews, wikilink audits, and inbox clearance.
-
----
-
-## Related Topics
-
-- [[Agents]] — parent index
-- [[Obsidian]] — the primary tool for human operation
-- [[Activities]] — scheduled tasks that include human-operated steps

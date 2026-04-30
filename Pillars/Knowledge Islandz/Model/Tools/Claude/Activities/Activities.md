@@ -46,13 +46,3 @@ What an activity does and why it exists is documented at Layer 1 under [[Knowled
 ## Linear
 
 [[Claude/Activities/Linear/Linear]] holds the prompts for the Linear Sync activity - the daily automation that compares live Linear state against KI stream notes and surfaces drift for human review.
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Tools/Claude/Claude|Claude]] - parent index
-- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - Layer 1: what each activity does and why
-- [[Pillars/Knowledge Islands/Activities/Authoring Activities|Authoring Activities]] - how to write and maintain activity prompts
-- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - island configuration referenced by prompts
-- [[Pillars/Knowledge Islands/Agents/Agentic AI/Agentic AI|Agentic AI]] - general patterns that prompts build on

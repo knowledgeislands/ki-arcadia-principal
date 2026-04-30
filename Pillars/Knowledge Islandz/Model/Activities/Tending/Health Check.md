@@ -82,10 +82,3 @@ Do a lightweight scan for:
 ## Step 6 - Report and confirm
 Present a summary of all proposed changes grouped by type. Wait for confirmation before making any writes.
 ```
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Activities/Tending/Tending|Tending]] - parent index
-- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - grandparent index

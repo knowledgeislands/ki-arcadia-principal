@@ -30,10 +30,3 @@ author: Written with Claude
 ## Keywords
 
 [Searchable terms.]
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Tools/Obsidian/Templates/Templates|Templates]] - parent index
-- [[{{date:YYYY-MM-DD dddd}}]] - daily note

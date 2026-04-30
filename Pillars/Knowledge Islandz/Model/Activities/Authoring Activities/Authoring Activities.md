@@ -55,7 +55,7 @@ Every adoptable group index note must include an Adoption Requirements section. 
 
 **Format:** A short framing sentence, then a table with three columns: Note (a short label), Path (the canonical KC path, relative to the repository root, no `.md` extension), and Purpose (one-sentence description of what the note contains and why it is needed). Follow the table with a note for the veto case: what stub an island must create if it vetoes the group.
 
-**Placement:** Immediately before the `## Related Topics` section, separated by `---`.
+**Placement:** At the end of the note, separated by `---`.
 
 **What to include:** List every KC note the group's activities read at runtime. Notes shared across groups (e.g. `Knowledge Capital/Activities/Schedule`) should still be listed in each group that requires them — the Conformance Check verifies each group's requirements independently.
 

@@ -46,17 +46,3 @@ Each theme section may optionally include any or all of the following H3 sub-sec
 - `### Action Items` — named actions from this theme, each with owner and deadline where agreed
 
 Not every theme will need all three sub-sections. Omit any that are empty.
-
-### Related Topics section
-
-Must include, in order:
-
-1. The corresponding daily note
-2. Relevant Streams or Pillars notes for the project or context covered
-
----
-
-## Exceptions
-
-- `## Further Reading` — never used in meeting notes
-- `## Contents` — never used in meeting notes; they have no sub-notes

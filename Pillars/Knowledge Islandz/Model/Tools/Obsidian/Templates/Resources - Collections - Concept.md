@@ -24,17 +24,3 @@ url:
 ## Applications
 
 [Where this concept applies - fields, contexts, examples.]
-
----
-
-## Further Reading
-
-- [Source Title](url) - [description]
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Tools/Obsidian/Templates/Templates|Templates]] - parent index
-- [[Related Concept]] - [description]
-- [[Related Note]] - [description]

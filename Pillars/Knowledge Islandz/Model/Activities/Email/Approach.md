@@ -214,13 +214,3 @@ Before writing a new suggestion, check for an existing row with the same `Patter
 The KI-specific email files live in `$EMAIL_DIR` (`Knowledge Capital/Activities/Email/`) in the text store. The remaining files live in `$TRACKING_DIR` (`tasks/email-triage/`) in the temporary store.
 
 `routing-table.json5` and `aged-table.json5` are **session-scoped caches** - derived from source files and safe to delete at any time; they are regenerated on the next cache miss. They must not be committed to the text store. `tracking.json5` is **persistent** and should be retained across sessions as it records classification history used by Route Drift.
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Activities/Email/Email|Email]] - parent index
-- [[Email Routing Config|Email Routing Config]] - ordered route list evaluated by Route Inbound
-- [[Email Routing Queue|Email Routing Queue]] - pending suggestions and run state
-- [[Pillars/Knowledge Capital/Activities/Email/Email|Knowledge Capital → Email]] - KI-specific configuration (routing rules, routes, queue, status)
-- [[Integrations|Integrations]] - email platform MCP configuration

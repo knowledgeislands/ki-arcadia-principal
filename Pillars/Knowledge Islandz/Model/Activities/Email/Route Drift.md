@@ -73,11 +73,3 @@ Output concisely:
 - Entries pruned: count (gone from _TRIAGE) + count (aged out >21 days).
 - Suggestions added to queue: count.
 ```
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Activities/Email/Approach|Approach]] - concept reference and shared definitions
-- [[Pillars/Knowledge Islands/Activities/Email/Email|Email]] - parent index
-- [[Pillars/Knowledge Islands/Activities/Email/Route Triage|Route Triage]] - sibling scheduled activity (runs at 09:00, after this scan)

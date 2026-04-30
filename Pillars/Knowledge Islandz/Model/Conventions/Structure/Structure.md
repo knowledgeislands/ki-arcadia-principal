@@ -103,31 +103,16 @@ When a stream produces lasting insight, extract it to the relevant Pillars note 
 
 Streams that conclude (`Settled`) should have their durable knowledge already in Pillars. The settled note becomes a record of what was done and where the knowledge now lives.
 
-### Index Notes
+### Pillars/Resources Folder Notes
 
-**The governing principle: leaf notes carry all the material; index notes are recaps that orient and point.** Think of an index note as a chapter: the overview is the chapter introduction, and the Related Topics section is the outro. Leaf notes are the sections within that chapter — they carry the actual content. An index note introduces nothing new; it contextualises what already exists in its children and helps the reader decide where to go next.
+Every folder in Pillars and Resources must have a note with the same name as the folder (e.g. `Productivity/Productivity.md`). The folder note:
 
-Every folder must have an **index note** with the same name as the folder (e.g. `Productivity/Productivity.md`). The index note:
+- Acts as the entry point and overview for that folder / subtree
+- Does **not** duplicate content — it can however summarise, contextualise and point
 
-- Acts as the entry point and overview for that folder
-- Uses the collection card format (`card/note`)
-- Does **not** duplicate content — it contextualises and points
+Folder notes may act as a narrative guide for the subtree.
 
-**What an index note is not:** a nav menu. A list of sub-note names with one-line descriptions tells the reader nothing they could not learn from the folder structure itself.
-
-**What an index note is:** a chapter opener for the subtree. The body should have a prose Overview section followed by one named H2 section per direct child. Each child section introduces that sub-note in two to four sentences. `## Contents` lists are a fallback for children that genuinely cannot be contextualised in prose.
-
-When creating a new folder, create its index note at the same time.
-
-**Calendar folder exception:** Time-based Calendar folders use date-prefixed periodic notes as their effective entry points. Year folders are the exception — they require a `YYYY.md` index listing their month and week sub-folders.
-
-**`+` inbox exception:** The `+` folder is exempt from the index note rule.
-
----
-
-## Harbour
-
-> [!todo] Harbour The Harbour is the port of entry — where incoming material arrives before being assessed and routed inward. Nothing flows directly from the Harbour into the Library; all material is assessed first, relevant content routed to the right Stream or zone, the rest discarded. The Harbour's structural conventions are not yet fully specified.
+When creating a new folder, create its folder note at the same time.
 
 ---
 
@@ -139,7 +124,7 @@ Streams carry knowledge in motion: active projects, evolving ideas, ongoing work
 
 Every stream follows the path:
 
-```
+```text
 Streams/$Focus/$Category/$ProposalName/$ProposalName.md
 ```
 
@@ -172,6 +157,12 @@ Every stream focus folder has an index note. Its `## Streams` section is a table
 | Priority | `urgent`, `high`, `medium`, or `low`                              |
 
 Rows are ordered by status first (`in-progress` → `ready` → `draft`), then by priority within each status group. When categories are in use, group by category first.
+
+---
+
+## Harbour
+
+> [!todo] Harbour The Harbour is the port of entry — where incoming material arrives before being assessed and routed inward. Nothing flows directly from the Harbour into the Library; all material is assessed first, relevant content routed to the right Stream or zone, the rest discarded. The Harbour's structural conventions are not yet fully specified.
 
 ---
 

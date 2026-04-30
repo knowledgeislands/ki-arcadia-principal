@@ -23,9 +23,3 @@ Monthly note for {{date:MMMM YYYY}}.
 ### Weekly Notes
 
 [List of weeks starting on Monday in the month as links with a description.]
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Tools/Obsidian/Templates/Templates|Templates]] - parent index

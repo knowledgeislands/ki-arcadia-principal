@@ -17,10 +17,3 @@ As a result, there are no agentic patterns to document here yet. This folder exi
 If ChatGPT is given direct write access or used to run scheduled tasks in future, this note will expand into a full agent layer alongside [[Claude]].
 
 For tool-level configuration and usage notes, see [[Tools/ChatGPT/ChatGPT|Tools → ChatGPT]].
-
----
-
-## Related Topics
-
-- [[Agents]] — parent index
-- [[Tools/ChatGPT/ChatGPT|Tools → ChatGPT]] — tool-level configuration and usage

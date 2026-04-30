@@ -19,16 +19,3 @@ url:
 ## The Poem
 
 [Full text of the poem.]
-
----
-
-## Further Reading
-
-- [Source Title](url) - [description]
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Tools/Obsidian/Templates/Templates|Templates]] - parent index
-- [[Related Note]] - [description]

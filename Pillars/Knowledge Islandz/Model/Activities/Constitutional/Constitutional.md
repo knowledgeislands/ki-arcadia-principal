@@ -25,11 +25,3 @@ Two elements are constitutional, spanning both activities and Knowledge Capital 
 ## [[Conformance]]
 
 The Conformance Check is the sole activity in this group. It verifies that the island meets its constitutional baseline - Charter and Conformance itself - and that every non-constitutional activity group has an explicit adopted or vetoed position in the Charter, with the required Knowledge Capital configuration present for adopted groups. It runs on a scheduled cadence and cannot be vetoed.
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - parent index
-- [[Pillars/Knowledge Islands/Concept/Concept|Concept]] - the constitutional layer in the broader conceptual model
-- [[Pillars/Knowledge Islands/Activities/Authoring Activities|Authoring Activities]] - how activities are designed and maintained

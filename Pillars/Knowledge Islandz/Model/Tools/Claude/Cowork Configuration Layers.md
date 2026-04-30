@@ -76,11 +76,3 @@ The following categories belong in the Cowork project instructions box - rules t
 When a preference or rule is added to auto-memory, ask: should this be always-on? If yes, move it to the instructions box. Auto-memory is appropriate for facts about ongoing work and validated approaches that accumulate over time - not for invariant behavioural rules.
 
 If the instructions box grows large, review for content that belongs in `user_preferences` (truly global) or in a specific `CLAUDE.md` (folder-scoped).
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Tools/Claude/Claude|Claude]] - parent index
-- [[CLAUDE|CLAUDE]] - the repository-level instruction file for KI sessions
-- [[Pillars/Knowledge Islands/Tools/Claude/Mistakes and Lessons|Mistakes and Lessons]] - operational error log; a companion to understanding how Claude operates in practice

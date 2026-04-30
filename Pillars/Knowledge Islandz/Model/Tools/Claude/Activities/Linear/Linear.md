@@ -21,12 +21,3 @@ What the Linear Sync does and why is documented at Layer 1 in [[Knowledge Island
 ## Prompts
 
 _Prompt notes to be filed here - one note per activity._
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Tools/Claude/Activities/Activities|Activities (Claude Prompts)]] - parent index
-- [[Pillars/Knowledge Islands/Activities/Linear/Linear|Activities/Linear]] - Layer 1: what these activities do
-- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - island configuration these prompts reference
-- [[Pillars/Knowledge Islands/Tools/Linear/Linear|Tools/Linear]] - the Linear tool connection

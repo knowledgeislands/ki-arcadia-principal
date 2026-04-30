@@ -45,7 +45,6 @@ Check all notes (or a target section - e.g. `Resources/`, `Streams/`) against [[
 - **Bad status values**: must match `draft - Month YYYY`, `current - Month YYYY`, `outdated - Month YYYY`, or `archive - Month YYYY`
 - **Bad `author` values**: must be `Manual`, `Written with Claude`, or `Mixed`; external work authors go in `creator:` field
 - **H1 missing or mismatched**: H1 should match the filename (accounting for the colon/dash substitution convention)
-- **Bare Related Topics**: every `[[wikilink]]` in Related Topics and Contents sections must be followed by ` - description`
 - **Tables without padding**: columns should be padded for plain-text readability
 
 ### Boundary Enforcement
@@ -92,10 +91,3 @@ Session digests are recorded in the **daily note** for the session date, under `
 - The `outdated` status is a useful signal: notes flagged during a bulk audit are queued for individual review via [[Status Review]]
 - Document decisions made during the audit - they feed into [[Notes]], [[Structure]], and [[Tags]]
 - Log significant errors or surprises in [[Mistakes and Lessons]]
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Activities/Tending/Tending|Tending]] - parent index
-- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - grandparent index

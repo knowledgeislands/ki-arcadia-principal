@@ -22,9 +22,3 @@ Daily note for {{date:DD MMMM YYYY}}.
 ### Tasks
 
 [List of tasks.]
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Tools/Obsidian/Templates/Templates|Templates]] - parent index

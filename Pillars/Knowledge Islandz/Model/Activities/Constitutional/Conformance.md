@@ -42,11 +42,3 @@ A conformance report covering three areas:
 A vetoed group requires a corresponding stub in the Knowledge Capital acknowledging the veto. Any veto without a stub is flagged.
 
 The report distinguishes **critical** non-conformances (constitutional baseline failures) from **standard** non-conformances (adoption gaps or consistency failures). Critical failures are surfaced first.
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Activities/Constitutional/Constitutional|Constitutional]] - parent group index
-- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - full activity index
-- [[Pillars/Knowledge Islands/Activities/Authoring Activities|Authoring Activities]] - five-layer content model

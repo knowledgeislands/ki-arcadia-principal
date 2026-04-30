@@ -192,13 +192,3 @@ Preserve this comment through any regeneration or patch. It is the single source
 ```
 
 **After modifying an artifact** - update the recipe note using the specific Knowledge Island's skill in SAVE mode. Read the note first and merge in, preserving existing structure.
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Agents/Agentic AI/Agentic AI|Agentic AI]] - parent index
-- [[Pillars/Knowledge Islands/Activities/Email/Email|Email]] - the activity that originated the JSON5 Cache Pattern
-- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - all scheduled activities; apply these patterns when designing new ones
-- [[Pillars/Knowledge Islands/Tools/Claude/Live Artifacts/Live Artifacts|Live Artifacts]] - source collection for the Live Artifact Patterns
-- [[Pillars/Knowledge Islands/Tools/Claude/Mistakes and Lessons|Mistakes and Lessons]] - operational lessons from Claude KI sessions

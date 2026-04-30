@@ -42,15 +42,6 @@ Optional (add when relevant):
 - **Prompt** — the executable prompt, when it lives here rather than in a separate Layer 5 prompt note. Use for lightweight activities; for substantial prompts, omit this section and link to the prompt note instead
 - **Known Limitations** — documented constraints on what the automation can and cannot do with current tooling
 
-### Footer
-
-`## Related Topics` must include:
-
-1. The parent group index
-2. The parent Activities index
-3. The corresponding prompt note, once created
-4. Any Knowledge Capital notes the activity reads
-
 ---
 
 ## Prompt Section Convention
@@ -66,10 +57,3 @@ You are running...
 ````
 
 The island note is the canonical source. The scheduled task is a deployment artefact — push to it only when the prompt is stable.
-
----
-
-## Exceptions
-
-- `## Contents` — never used; activity notes have no sub-notes
-- `## Further Reading` — rarely used; prefer Related Topics

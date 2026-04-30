@@ -25,16 +25,3 @@ url:
 ## Takeaways
 
 [What to apply or remember - the most useful insights.]
-
----
-
-## Further Reading
-
-- [Source Title](url) - [description]
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Tools/Obsidian/Templates/Templates|Templates]] - parent index
-- [[Related Note]] - [description]

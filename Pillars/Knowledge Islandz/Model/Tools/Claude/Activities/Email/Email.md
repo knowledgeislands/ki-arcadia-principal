@@ -21,11 +21,3 @@ What each activity does and why is documented at Layer 1 in [[Knowledge Islands/
 ## Prompts
 
 _Prompt notes to be filed here - one note per activity or major prompt variant._
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Tools/Claude/Activities/Activities|Activities (Claude Prompts)]] - parent index
-- [[Pillars/Knowledge Islands/Activities/Email/Email|Activities/Email]] - Layer 1: what these activities do
-- [[Pillars/Knowledge Capital/Activities/Email/Email|Knowledge Capital/Email]] - routing configuration this prompt layer reads

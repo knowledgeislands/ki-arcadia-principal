@@ -77,8 +77,6 @@ Some introductory sentence.
 - Second item
 ```
 
-This applies after `##` headings too — footer sections in particular (`## Related Topics`, `## Contents`, `## Further Reading`) must have a blank line between the heading and the first list item.
-
 ### Trailing newlines
 
 Every file must end with a single trailing newline — the last content line is followed by exactly one `\n`, with no blank line after it. Do not end files mid-line or with multiple trailing newlines (`\n\n` or more).

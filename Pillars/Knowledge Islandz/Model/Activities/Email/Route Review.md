@@ -120,12 +120,3 @@ Output a structured summary:
 - **Rules applied** from agreed suggestions (Pattern → target file).
 - **Unknown resolved** - count moved out of 000 Unknown; count remaining.
 ```
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Activities/Email/Approach|Approach]] - concept reference and shared definitions
-- [[Pillars/Knowledge Islands/Activities/Email/Email|Email]] - parent index
-- [[Email Routing Queue|Email Routing Queue]] - the queue file reviewed before invoking this activity
-- [[Pillars/Knowledge Islands/Activities/Email/Re-route Triaged|Re-route Triaged]] - alternative for manually working Unknown one at a time

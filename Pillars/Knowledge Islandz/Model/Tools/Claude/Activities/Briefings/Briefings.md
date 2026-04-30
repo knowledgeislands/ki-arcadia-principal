@@ -21,11 +21,3 @@ What the Morning Briefing does and why it exists is documented at Layer 1 in [[K
 ## Prompts
 
 _Prompt notes to be filed here - one note per activity._
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Tools/Claude/Activities/Activities|Activities (Claude Prompts)]] - parent index
-- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - Layer 1: what these activities do
-- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - island configuration these prompts reference

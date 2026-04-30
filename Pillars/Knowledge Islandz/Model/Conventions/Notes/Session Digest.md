@@ -40,13 +40,6 @@ Five standard sections, all required:
 - **Related Projects** — island areas, Streams, or Pillars notes touched
 - **Keywords** — searchable terms to aid future retrieval
 
-### Related Topics section
-
-Must include:
-
-1. The corresponding daily note
-2. Any Streams or Pillars notes materially affected by the session
-
 ---
 
 ## Lifecycle
@@ -54,10 +47,3 @@ Must include:
 Session digests are temporary by design. Once all durable content has been extracted to the appropriate Pillars or Streams notes, the session note should be deleted — it has no long-term value as a standalone calendar artefact.
 
 The test: if the note were deleted today, would any knowledge be lost? If not, delete it. If yes, extract first.
-
----
-
-## Exceptions
-
-- `## Further Reading` — never used in session digests
-- `## Contents` — never used in session digests; they have no sub-notes

@@ -31,9 +31,3 @@ author: Manual
 ## Actions
 
 [List of actions arising.]
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Tools/Obsidian/Templates/Templates|Templates]] - parent index

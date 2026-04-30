@@ -202,7 +202,7 @@ Sections (separated by --- horizontal rules):
 
 Check whether $DAILY_NOTE exists. If it does:
 - Read it
-- Locate the `### Sessions` section; if absent, add it before the `## Related Topics` footer (or at the end of the main content if no footer exists)
+- Locate the `### Sessions` section; if absent, add it at the end of the main content if no footer exists
 - Add: `- [[<YYYY-MM-DD> Session - Knowledge Rebuild]] - weekly auto-memory rebuild`
 - Write the updated daily note
 
@@ -222,11 +222,3 @@ find ~/Library -name "MEMORY.md" 2>/dev/null
 ```
 
 Run this in Terminal on the Mac. The result will be the path to `MEMORY.md`; the other auto-memory files sit alongside it in the same directory.
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Activities/Tending/Tending|Tending]] - parent index
-- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - grandparent index
-- [[Canonical Meta Notes|Canonical Meta Notes]] - the ordered list of notes this task reads

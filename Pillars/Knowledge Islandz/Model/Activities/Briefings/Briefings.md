@@ -33,10 +33,3 @@ To adopt this activity group, an island must create the following Knowledge Capi
 | --- | --- | --- |
 | Briefings index | `Knowledge Capital/Activities/Briefings/Briefings` | Group index; confirms adoption and links to tool config |
 | Schedule | `Knowledge Capital/Activities/Schedule` | Day-type taxonomy read by the Morning Briefing schedule |
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - parent index
-- [[Pillars/Knowledge Islands/Tools/Claude/Activities/Briefings/Briefings|Tools/Claude/Activities/Briefings]] - Layer 5 prompts that drive this activity

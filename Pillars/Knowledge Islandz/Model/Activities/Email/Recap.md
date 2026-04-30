@@ -48,11 +48,3 @@ If tracking.json5 is present, note its entry count.
 
 **Action items** - short bullet list of things needing attention: folders accumulating, high Unknown count, stale agreed suggestions not yet applied.
 ```
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Activities/Email/Approach|Approach]] - concept reference and shared definitions
-- [[Pillars/Knowledge Islands/Activities/Email/Email|Email]] - parent index
-- [[Pillars/Knowledge Islands/Activities/Email/Route Review|Route Review]] - apply agreed suggestions and resolve Unknown queue

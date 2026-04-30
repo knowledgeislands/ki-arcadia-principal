@@ -14,17 +14,3 @@ rating:
 ## Overview
 
 [One sentence - what this venue is, what it serves or offers, and where it is.]
-
----
-
-## Further Reading
-
-- [Source Title](url) - [description]
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Tools/Obsidian/Templates/Templates|Templates]] - parent index
-- [[Location]] - [description]
-- [[Related Note]] - [description]

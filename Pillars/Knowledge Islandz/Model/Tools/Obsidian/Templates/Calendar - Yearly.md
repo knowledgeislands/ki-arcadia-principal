@@ -65,9 +65,3 @@ Yearly note for {{date:YYYY}}.
 ### December
 
 - [[YYYY-12 December]] - monthly note for December
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Tools/Obsidian/Templates/Templates|Templates]] - parent index

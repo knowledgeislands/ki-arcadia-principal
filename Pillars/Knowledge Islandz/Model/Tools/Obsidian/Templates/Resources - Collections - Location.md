@@ -25,17 +25,3 @@ url:
 
 - [[Landmark 1]] - [description]
 - [[Landmark 2]] - [description]
-
----
-
-## Further Reading
-
-- [Source Title](url) - [description]
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Tools/Obsidian/Templates/Templates|Templates]] - parent index
-- [[Parent Location]] - [description]
-- [[Related Note]] - [description]

@@ -86,11 +86,3 @@ After processing, output:
 - Rules added and where they were written.
 - Items still remaining in 000 Unknown.
 ```
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Activities/Email/Approach|Approach]] - concept reference and shared definitions
-- [[Pillars/Knowledge Islands/Activities/Email/Email|Email]] - parent index
-- [[Pillars/Knowledge Islands/Activities/Email/Route Review|Route Review]] - alternative for batch-applying agreed suggestions

@@ -92,11 +92,3 @@ Produce a brief summary of what changed (initiatives added/removed/renamed, proj
 
 Write a session digest to the KI Calendar at the appropriate path: Calendar/YYYY/YYYY-MM MonthName/YYYY-MM-DD Session - Linear Sync.md and reference it from the daily note. Use British English throughout.
 ```
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Activities/Linear/Linear|Linear]] - parent index
-- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - grandparent index
-- [[Pillars/Knowledge Islands/Tools/Linear/Linear|Linear]] - MCP connection details and browser-based interaction patterns

@@ -58,10 +58,4 @@ Source: [ryaker/outlook-mcp][outlook-mcp]
 - **Finding your Tenant ID**: Go to `portal.azure.com` → it lands on the Microsoft Entra ID Overview page directly (or navigate via _More services_ → _Microsoft Entra ID_ → _Overview_) — Tenant ID is listed under Basic information; add it to the Claude Desktop MCP config as `OUTLOOK_TENANT_ID`
 - **Homeshick / dotfiles**: Claude Desktop uses atomic writes and will replace the `claude_desktop_config.json` symlink with a real file — re-symlink after any config change: `homeshick symlink <castle>`
 
----
-
-## Related Topics
-
-- [[Tools]] — parent index
-
 [outlook-mcp]: https://github.com/ryaker/outlook-mcp

@@ -23,12 +23,3 @@ What the Conformance Check does and why it exists is documented at Layer 1 in [[
 ## [[Conformance]]
 
 The prompt that runs the Conformance Check.
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Tools/Claude/Activities/Activities|Activities (Claude Prompts)]] - parent index
-- [[Pillars/Knowledge Islands/Activities/Constitutional/Constitutional|Activities/Constitutional]] - Layer 1: what the constitutional group is
-- [[Pillars/Knowledge Islands/Activities/Constitutional/Conformance|Activities/Constitutional/Conformance]] - Layer 1: what the Conformance Check does
-- [[Pillars/Knowledge Capital/Charter|Charter]] - the primary input this prompt reads

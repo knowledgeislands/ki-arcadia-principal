@@ -130,11 +130,3 @@ For each confirmed change:
 ## Step 6 - Report
 State which files were updated and summarise what was synced, deferred, or intentionally kept different.
 ```
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Activities/Tending/Tending|Tending]] - parent index
-- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - grandparent index
-- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - KI-specific parameters folder that makes portability possible

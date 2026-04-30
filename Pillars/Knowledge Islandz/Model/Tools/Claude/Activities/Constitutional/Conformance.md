@@ -93,11 +93,3 @@ Produce a conformance report with the following structure.
 ---
 
 Present the report, then stop. Do not propose fixes, do not modify files, do not begin any other activity.
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Tools/Claude/Activities/Constitutional/Constitutional|Constitutional (Claude Prompts)]] - parent index
-- [[Pillars/Knowledge Islands/Activities/Constitutional/Conformance|Conformance]] - Layer 1 specification
-- [[Pillars/Knowledge Capital/Charter|Charter]] - primary input

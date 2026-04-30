@@ -63,9 +63,3 @@ To adopt this activity group, an island must create the following Knowledge Capi
 | Email Routing Config | `Knowledge Capital/Activities/Email/Email Routing Config` | Routing taxonomy, rules, and the suggestion queue format              |
 | Email Routing Queue  | `Knowledge Capital/Activities/Email/Email Routing Queue`  | Live queue of pending routing suggestions awaiting review             |
 | Email Status         | `Knowledge Capital/Activities/Email/Email Status`         | Current triage state — folder counts, last run, tracking file summary |
-
----
-
-## Related Topics
-
-- [[Activities]] — parent index

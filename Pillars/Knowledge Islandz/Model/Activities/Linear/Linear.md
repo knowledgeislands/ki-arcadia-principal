@@ -33,11 +33,3 @@ To adopt this activity group, an island must create the following Knowledge Capi
 | --- | --- | --- |
 | Linear index | `Knowledge Capital/Activities/Linear/Linear` | Group index; for adoption: contains Initiative→KI Mapping table, naming conventions, and project labels; for veto: stub acknowledging the veto |
 | Schedule | `Knowledge Capital/Activities/Schedule` | Day-type taxonomy read by the Linear Sync schedule |
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - parent index
-- [[Pillars/Knowledge Islands/Tools/Linear/Linear|Tools/Linear]] - Linear MCP connection and browser-based interaction patterns
-- [[Pillars/Knowledge Islands/Tools/Claude/Activities/Linear/Linear|Tools/Claude/Activities/Linear]] - Layer 5 prompts that drive this activity

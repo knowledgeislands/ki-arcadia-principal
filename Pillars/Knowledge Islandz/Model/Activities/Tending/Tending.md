@@ -81,9 +81,3 @@ To adopt this activity group, an island must create the following Knowledge Capi
 | ------------- | --------------------------------------- | ------------------------------------------------------------ |
 | Tending index | `Knowledge Capital/Activities/Tending/Tending` | Group index; confirms adoption and links to timing config    |
 | Schedule      | `Knowledge Capital/Activities/Schedule` | Day-type taxonomy read by all scheduled automations          |
-
----
-
-## Related Topics
-
-- [[Activities]] — parent index
