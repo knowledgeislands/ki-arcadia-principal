@@ -19,7 +19,7 @@ Live tracking view of all active proposals. Ordered by Stream (Active → Backgr
 
 | Topic                                                                                                                           | Stream     | Status        | Priority |
 | ------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------- | -------- |
-| [[Tooling Prompts]]                                                             | Active     | `in-progress` | `high`   |
+| [[Tooling Rollout]]                                                             | Active     | `in-progress` | `high`   |
 | [[Streams/Settled/Wiki Link Format/Wiki Link Format\|Wiki Link Format]]   | Settled    | `completed`   | `medium` |
 | [[Boundary Rules]]                   | Active     | `draft`       | `urgent` |
 | [[Index Review]]                | Active     | `draft`       | `medium` |
