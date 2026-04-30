@@ -26,9 +26,9 @@ This stream follows the [[Enactment Process]].
 
 ## Outstanding Work
 
-### Index notes - remaining
+### Folder Notes
 
-One act-level index note has been created: `Introduction/Introduction.md`.
+One act-level folder note has been created: `Introduction/Introduction.md`.
 
 Five leftover flat notes have been repurposed as intro sections within their respective chapters:
 
@@ -38,26 +38,12 @@ Five leftover flat notes have been repurposed as intro sections within their res
 - `Model/Agents/Who Acts on the Island.md`
 - `Model/Tools/How Tools Connect.md`
 
-Still outstanding - every folder in the tree still needs an index note:
+Still outstanding - every folder in the tree still needs a folder note:
 
 - Act level: `Model/Model.md`, `Realisation/Realisation.md`
 - Introduction sub-chapters: `Introduction/Background/Background.md`, `Introduction/Concept/Concept.md`
 - Section folders within chapters (e.g. `Tending/Tending.md`, `Email/Email.md`, each agent folder, each tool folder)
 - Realisation: `Realisation/Arcadia/Arcadia.md`
-
-## Five Layers Terminology
-
-`Authoring Guidelines` is the source of the five-layers.  Open question still
-
-## Prompt - Prompts
-
-Need to move
-
-## Adoption Requirements
-
-this is in some places
-
-"Layer 1", "Layer 5", "five-layer model" reads as internal scaffolding that has leaked into the content. Needs a dedicated pass: either rename the layers to something reader-facing, or restructure so the layering is implicit rather than labelled.
 
 ### Contextual review - reading order walk
 
