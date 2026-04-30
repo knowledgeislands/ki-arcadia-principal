@@ -22,36 +22,20 @@ The structural scaffolding (folder structure, stub index notes, authoring conven
 
 ## Phase Summary
 
-| Phase               | Status         | Description                                                                                                      |
-| ------------------- | -------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Scaffolding         | ✅ Complete    | `Tools/Claude/Activities/` folder structure and stub indexes created; `Authoring Guidelines.md` written          |
-| Email prompts       | 🔲 Not started | Migrate Route Triage, Route Drift, Route Review, Re-route Triaged, Recap, Email Test prompts to the Prompt layer |
-| Tending prompts     | 🔲 Not started | Migrate Health Check, Knowledge Rebuild, Scheduled Task Audit, Knowledge Islands Convergence Check prompts       |
-| Briefings prompts   | 🔲 Not started | Migrate Morning Briefing prompt                                                                                  |
-| Linear prompts      | 🔲 Not started | Migrate Linear Sync prompt                                                                                       |
-| Prompt sync audit   | 🔲 Not started | Verify all Prompt notes are in sync with their Cowork scheduled tasks                                            |
-| Activity navigation | 🔲 Not started | Investigate cached/synthesised views of the content layers for human and agent consumers                         |
-| Arcadia skill       | 🔲 Not started | Define and configure the Arcadia Knowledge Islands skill                                                         |
-| Scheduled tasks     | 🔲 Not started | Configure Arcadia's scheduled tasks in Cowork; verify against Charter                                            |
-
----
-
-## Design Decisions
-
-| Decision                                                                   | Rationale                                                                                                  |
-| -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| The Prompt layer lives under `Tools/Claude/Activities/`, not `Activities/` | Prompts are Claude-specific and island-specific; the Definition layer (`Activities/`) stays agent-agnostic |
-| Stubs first, content second                                                | Scaffolding unblocks the structural work; prompts migrate incrementally                                    |
-| Knowledge Islands note is the draft; scheduled task is the release         | Maintains the prompt editing discipline from [[Authoring Guidelines]]                                      |
-| Each activity group gets its own subfolder                                 | Mirrors the `Activities/` group structure for navigability                                                 |
+| Phase               | Status         | Description                                                                                                                                            |
+| ------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Scaffolding         | ✅ Complete    | `Tools/Claude/Activities/` folder structure and stub indexes created; `Authoring Guidelines.md` written                                                |
+| Email prompts       | ✅ Complete    | Route Triage, Route Drift, Route Review, Re-route Triaged, Recap, Email Test all migrated to `Tools/Claude/Activities/Email/`                          |
+| Tending prompts     | ✅ Complete    | Health Check, Knowledge Rebuild, Convergence Check migrated; Scheduled Task Audit consolidated as a Claude-specific note (Definition deleted)          |
+| Briefings prompts   | ✅ Complete    | Morning Briefing migrated to `Tools/Claude/Activities/Briefings/`                                                                                      |
+| Linear prompts      | ✅ Complete    | Linear Sync migrated to `Tools/Claude/Activities/Linear/`                                                                                              |
+| Prompt sync audit   | 🔲 Not started | Verify all Prompt notes are in sync with their Cowork scheduled tasks                                                                                  |
+| Activity navigation | 🔲 Not started | Investigate cached/synthesised views of the content layers for human and agent consumers                                                               |
+| Arcadia skill       | 🔲 Not started | Define and configure the Arcadia Knowledge Islands skill                                                                                               |
+| Scheduled tasks     | 🔲 Not started | Configure Arcadia's scheduled tasks in Cowork; verify against Charter                                                                                  |
 
 ---
 
 ## Open Issues
 
-| Issue | Notes |
-| --- | --- |
-| Route Triage prompt is ~200 lines - does it live inline or as a linked file? | Probably inline; island format uses H2 sections not separate files |
-| Some existing prompts reference `Tools/Claude/Island Skill.md` - needs updating to new path | `Agents/Claude/Island Skill.md` - catch in reference update pass |
-| Prompt sync status between Knowledge Islands notes and Cowork scheduler is unknown | Scheduled Task Audit will surface any drift on its next run |
-| `Activities/Email/Approach.md` belongs in `Knowledge Capital/Activities/Email/` - it's island-specific system design (Configuration), not a generic activity doc | Move and update all wikilinks pointing to it; check email prompts that reference it |
+None.
