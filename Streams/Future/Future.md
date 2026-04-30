@@ -24,5 +24,6 @@ Ideas and projects not yet started - queued for when the time or circumstances a
 | [[Bullet Journal Support|Calendar Templates]]                                            | `draft` | `low`    |
 | [[Workflow Integrations]]                                           | `draft` | `low`    |
 | [[MCP Ecosystem]]                                                                  | `draft` | `low`    |
+| [[Island MCP]]                                                                     | `draft` | `low`    |
 | [[Token Economics]] | `draft` | `low`    |
 | [[Island Visualisation]] | `draft` | `low`    |
