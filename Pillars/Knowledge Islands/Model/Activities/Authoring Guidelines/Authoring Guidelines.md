@@ -21,13 +21,13 @@ How to design, document, and maintain island activities. Covers the content laye
 
 Every activity is composed of content in five distinct layers, each at a different level of generality. The rule is: **notes live at the most generic layer that accurately describes them**.
 
-| Layer           | Location                                | Generality                                          | Contains                                                                                  |
-| --------------- | --------------------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| Definition      | `Activities/{group}/`                   | Activity-specific, agent-agnostic, island-agnostic  | What the activity does, why it exists, trigger phrases, outcome definition                |
-| Configuration   | `Knowledge Capital/Activities/{group}/` | Activity-specific, island-specific, agent-agnostic  | Island configuration the activity reads - routing rules, config files, data models        |
-| Pattern         | `Agents/Agentic AI/`                    | Activity-agnostic, island-agnostic, agent-agnostic  | General AI operating patterns - caching, parallelism, rolling windows, artefact lifecycle |
-| Agent Behaviour | `Agents/Claude/`                        | Activity-agnostic, island-agnostic, Claude-specific | Claude's implementation - five modes, behavioural constraints, memory architecture        |
-| Prompt          | `Tools/Claude/Activities/{group}/`      | Activity-specific, island-specific, Claude-specific | The actual prompt text; references the other layers at runtime                            |
+| Layer | Location | Generality | Contains |
+| --- | --- | --- | --- |
+| Definition | `Activities/{group}/` | Activity-specific, agent-agnostic, island-agnostic | What the activity does, why it exists, trigger phrases, outcome definition |
+| Configuration | `Knowledge Capital/Activities/{group}/` | Activity-specific, island-specific, agent-agnostic | Island configuration the activity reads - routing rules, config files, data models |
+| Pattern | `Agents/Agentic AI/` | Activity-agnostic, island-agnostic, agent-agnostic | General AI operating patterns - caching, parallelism, rolling windows, artefact lifecycle |
+| Agent Behaviour | `Agents/Claude/` | Activity-agnostic, island-agnostic, Claude-specific | Claude's implementation - five modes, behavioural constraints, memory architecture |
+| Prompt | `Tools/Claude/Activities/{group}/` | Activity-specific, island-specific, Claude-specific | The actual prompt text; references the other layers at runtime |
 
 A piece of content that is "what this activity does" → Definition. A piece that is "how Claude does it for this island" → Prompt. Content that would apply to any island's email triage → Pattern or Agent Behaviour. Content that is this island's routing config → Configuration.
 
@@ -35,12 +35,12 @@ A piece of content that is "what this activity does" → Definition. A piece tha
 
 The three generality axes - activity, island, agent - form a 2x2x2 lattice with eight corners. The five layers populate five of those corners; the remaining three are empty by design.
 
-| Generality                       | Activity-specific | Activity-agnostic |
-| -------------------------------- | ----------------- | ----------------- |
-| island-agnostic, agent-agnostic  | **Definition**    | **Pattern**       |
-| island-specific, agent-agnostic  | **Configuration** | —                 |
+| Generality                       | Activity-specific | Activity-agnostic   |
+| -------------------------------- | ----------------- | ------------------- |
+| island-agnostic, agent-agnostic  | **Definition**    | **Pattern**         |
+| island-specific, agent-agnostic  | **Configuration** | —                   |
 | island-agnostic, Claude-specific | —                 | **Agent Behaviour** |
-| island-specific, Claude-specific | **Prompt**        | —                 |
+| island-specific, Claude-specific | **Prompt**        | —                   |
 
 The empty corners are informative. There is no "Claude-specific definition of an activity" because activity definitions are agent-agnostic by construction; if Claude needs to do it differently from another agent, that lives in the Prompt. There is no "island-specific generic agentic pattern" because patterns are by definition portable across islands; an island that needs to bend a pattern records the exception in its Configuration. There is no "island-specific Claude behaviour without an activity" because Claude's island-specific behaviour is always in service of an activity, and therefore lives in the Prompt.
 
