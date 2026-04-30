@@ -92,7 +92,7 @@ See [[Routing Rules]] for any additional routing rules specific to this island.
 
 ## Knowledge Island Specifics (strictly enforced)
 
-All values specific to this island - identity parameters, task prefix, skill triggers, schedule configuration, integration details, and physical paths - live in `Pillars/Knowledge Capital/`. The [[Pillars/Knowledge Capital/Charter|Charter]] is the primary reference: it holds the identity parameters and the full adoption and activity roster. Deeper configuration lives in the corresponding `Pillars/Knowledge Capital/` subfolders (Activities for schedule config, Tools for integrations, Agents for agent config).
+All values specific to this island - identity parameters, task prefix, skill triggers, schedule configuration, integration details, and physical paths - live in `Pillars/Knowledge Capital/`. The [[Knowledge Capital/Charter|Charter]] is the primary reference: it holds the identity parameters and the full adoption and activity roster. Deeper configuration lives in the corresponding `Pillars/Knowledge Capital/` subfolders (Activities for schedule config, Tools for integrations, Agents for agent config).
 
 **Automations and skills must read their configuration from these notes at runtime, not hardcode values.** This keeps prompts portable across islands and ensures a single source of truth. When an integration changes (e.g. a new TickTick list, a different calendar), update the relevant KC note - the automations will pick up the change on their next run.
 
@@ -100,16 +100,16 @@ All values specific to this island - identity parameters, task prefix, skill tri
 
 | Note                                                                                          | Path                                                                                          |
 | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| [[Pillars/Knowledge Capital/Charter\|Charter]]                                                | `Pillars/Knowledge Capital/Charter.md`                                                        |
-| [[Pillars/Knowledge Capital/Knowledge Capital\|Knowledge Capital]]                            | `Pillars/Knowledge Capital/Knowledge Capital.md`                                              |
-| [[Pillars/Knowledge Islands/Knowledge Islands\|Knowledge Islands]]                            | `Pillars/Knowledge Islands/Knowledge Islands.md`                                              |
+| [[Knowledge Capital/Charter\|Charter]]                                                | `Pillars/Knowledge Capital/Charter.md`                                                        |
+| [[Knowledge Capital\|Knowledge Capital]]                            | `Pillars/Knowledge Capital/Knowledge Capital.md`                                              |
+| [[Knowledge Islands\|Knowledge Islands]]                            | `Pillars/Knowledge Islands/Knowledge Islands.md`                                              |
 | [[Pillars/Knowledge Islands/Introduction/Introduction\|Introduction]]                         | `Pillars/Knowledge Islands/Introduction/Introduction.md`                                      |
-| [[Pillars/Knowledge Islands/Model/Conventions/Structure/Structure\|Structure]]                | `Pillars/Knowledge Islands/Model/Conventions/Structure/Structure.md`                          |
-| [[Pillars/Knowledge Islands/Model/Conventions/Notes/Notes\|Notes]]                            | `Pillars/Knowledge Islands/Model/Conventions/Notes/Notes.md`                                  |
-| [[Pillars/Knowledge Islands/Model/Conventions/Notes/Properties\|Properties]]                  | `Pillars/Knowledge Islands/Model/Conventions/Notes/Properties.md`                             |
-| [[Pillars/Knowledge Islands/Model/Activities/What Keeps an Island Alive\|What Keeps an Island Alive]]                         | `Pillars/Knowledge Islands/Model/Activities/What Keeps an Island Alive.md`                                    |
-| [[Pillars/Knowledge Islands/Model/Agents/Who Acts on the Island\|Who Acts on the Island]]                                     | `Pillars/Knowledge Islands/Model/Agents/Who Acts on the Island.md`                                            |
-| [[Pillars/Knowledge Islands/Model/Tools/How Tools Connect\|How Tools Connect]]                                        | `Pillars/Knowledge Islands/Model/Tools/How Tools Connect.md`                                              |
-| [[Pillars/Knowledge Islands/Model/Tools/Claude/Claude\|Claude]]                               | `Pillars/Knowledge Islands/Model/Tools/Claude/Claude.md`                                      |
-| [[Pillars/Knowledge Islands/Model/Tools/Claude/Mistakes and Lessons\|Mistakes and Lessons]]   | `Pillars/Knowledge Islands/Model/Tools/Claude/Mistakes and Lessons.md`                        |
+| [[Structure\|Structure]]                | `Pillars/Knowledge Islands/Model/Conventions/Structure/Structure.md`                          |
+| [[Notes\|Notes]]                            | `Pillars/Knowledge Islands/Model/Conventions/Notes/Notes.md`                                  |
+| [[Properties\|Properties]]                  | `Pillars/Knowledge Islands/Model/Conventions/Notes/Properties.md`                             |
+| [[What Keeps an Island Alive\|What Keeps an Island Alive]]                         | `Pillars/Knowledge Islands/Model/Activities/What Keeps an Island Alive.md`                                    |
+| [[Who Acts on the Island\|Who Acts on the Island]]                                     | `Pillars/Knowledge Islands/Model/Agents/Who Acts on the Island.md`                                            |
+| [[How Tools Connect\|How Tools Connect]]                                        | `Pillars/Knowledge Islands/Model/Tools/How Tools Connect.md`                                              |
+| [[Tools/Claude/Claude\|Claude]]                               | `Pillars/Knowledge Islands/Model/Tools/Claude/Claude.md`                                      |
+| [[Mistakes and Lessons\|Mistakes and Lessons]]   | `Pillars/Knowledge Islands/Model/Tools/Claude/Mistakes and Lessons.md`                        |
 | [[CLAUDE]]                                                                                    | `CLAUDE.md`                                                                                   |

@@ -20,7 +20,7 @@ For Cowork integration specifics - connection type, token economics, platform co
 
 ## Operating Modes
 
-Claude operates in five modes that define its structured repertoire for knowledge work - each maps a type of intent to a defined sequence of actions. The skill name and trigger phrases are defined in [[Charter]].
+Claude operates in five modes that define its structured repertoire for knowledge work - each maps a type of intent to a defined sequence of actions. The skill name and trigger phrases are defined in [[Knowledge Capital/Charter|Charter]].
 
 ### Load Island Context
 
@@ -37,7 +37,7 @@ Infer the mode from the request, or ask if unclear:
 1. Read [[Mistakes and Lessons]] as pre-flight check before writing
 2. Identify content; determine folder using the routing rules in CLAUDE.md
 3. Propose filename (title case, spaces, `.md`)
-4. Draft note using `Pillars/Knowledge Islands/Tools/Obsidian/Templates/Note - General.md`; include `source/claude` tag in frontmatter
+4. Draft note using `Pillars/Knowledge Islands/Model/Tools/Obsidian/Templates/Note - General.md`; include `source/claude` tag in frontmatter
 5. Confirm, then write
 
 #### Mode B: Update - enrich an existing note
@@ -62,7 +62,7 @@ Infer the mode from the request, or ask if unclear:
 #### Mode E: Digest - session digest
 
 1. Create a sibling Calendar note (`YYYY-MM-DD Session - [Topic].md`) following the Session Digests format in CLAUDE.md. Reference it from today's daily note by wikilink - do not write digest content inline into the daily note
-2. If today's daily note doesn't exist, create it first using `Pillars/Knowledge Islands/Tools/Obsidian/Templates/Calendar - Daily.md`
+2. If today's daily note doesn't exist, create it first using `Pillars/Knowledge Islands/Model/Tools/Obsidian/Templates/Calendar - Daily.md`
 3. Session notes are temporary - see CLAUDE.md (Session Digests section) for the full lifecycle: once a note's content has been extracted to Pillars or Streams, delete the session note
 
 ---
@@ -155,7 +155,7 @@ The prefix distinguishes files from multiple islands sharing the same `.auto-mem
 
 ### Island ↔ Memory Mapping
 
-_The table below uses `{ki_prefix}` and `{user_prefix}` placeholders - substitute the actual values from [[Charter]] when reading for a specific island. [[Knowledge Rebuild]] uses this table during its gap analysis to validate that every listed file exists in `.auto-memory/` and that every file in `.auto-memory/` is documented here._
+_The table below uses `{ki_prefix}` and `{user_prefix}` placeholders - substitute the actual values from [[Knowledge Capital/Charter|Charter]] when reading for a specific island. [[Knowledge Rebuild]] uses this table during its gap analysis to validate that every listed file exists in `.auto-memory/` and that every file in `.auto-memory/` is documented here._
 
 | Island Note | Memory File | Class | Notes |
 | --- | --- | --- | --- |

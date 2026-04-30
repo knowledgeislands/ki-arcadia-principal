@@ -36,5 +36,5 @@ Content belongs in this folder when it:
 Content does **not** belong here when it:
 
 - Is specific to Claude's implementation (→ [[Agents/Claude/Claude|Agents/Claude]])
-- Describes how a particular tool is configured or connected (→ [[Knowledge Islands/Tools/Tools]])
+- Describes how a particular tool is configured or connected (→ [[Knowledge Islands/Model/Tools/Tools]])
 - Is tied to a specific activity's logic or prompt (→ [[Claude/Activities/Activities|Tools/Claude/Activities]])

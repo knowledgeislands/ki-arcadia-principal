@@ -45,7 +45,7 @@ The first part establishes the problem and the model. It does not assume the rea
 ### Concept
 
 - [[Territories and Archipelagos]] - how islands relate; principal vs satellite; the geography at scale
-- [[Introduction/Concept/Agents/Agents|Agents]] - who acts within the system; human and AI; the force of change
+- [[Concept/Agents/Agents|Agents]] - who acts within the system; human and AI; the force of change
 - [[Jurisdiction]] - authority and standing; who can decide what
 - [[Governance]] - the five areas that make an island function day to day
 
@@ -78,10 +78,10 @@ The second part is the portable, generic model. It covers the language of the is
 
 - [[Authoring Guidelines]] - the five-layer content model; how activity notes are written and maintained
   - _Constitutional (always-on):_
-    - [[Constitutional]] - the set of activities every island must run; includes [[Conformance]]
+    - [[Model/Activities/Constitutional/Constitutional|Constitutional]] - the set of activities every island must run; includes [[Model/Activities/Constitutional/Conformance|Conformance]]
   - _Tending (island health):_
-    - [[Tending]] - the full tending cycle overview
-    - [[Scheduled Task Audit]] - verifies live tasks match KI notes; runs daily at 05:00
+    - [[Model/Activities/Tending/Tending|Tending]] - the full tending cycle overview
+    - [[Scheduled Task Audit]] - verifies live tasks match island notes; runs daily at 05:00
     - [[Health Check]] - weekly structural and content health review
     - [[Knowledge Rebuild]] - weekly rewrite of auto-memory from canonical notes
     - [[Inbox Review]] - weekly manual pass over the `+/` inbox
@@ -91,9 +91,9 @@ The second part is the portable, generic model. It covers the language of the is
     - [[Wikilink Review]] - adhoc broken-link and orphan-note check
     - [[Convergence Check]] - adhoc cross-island shared-note sync
   - _Briefings (situational awareness):_
-    - [[Briefings]] - the briefings group overview; includes [[Morning Briefing]]
+    - [[Model/Activities/Briefings/Briefings|Briefings]] - the briefings group overview; includes [[Morning Briefing]]
   - _Email (inbox management):_
-    - [[Email]] - the email automation group overview
+    - [[Model/Activities/Email/Email|Email]] - the email automation group overview
     - [[Approach]] - the routing rule system; Eisenhower matrix; routes and predicates
     - [[Route Triage]] - scheduled aged + inbound routing pass; 09:00, 12:00, 18:00
     - [[Route Drift]] - scheduled re-route detection; 08:00 daily
@@ -108,15 +108,15 @@ The second part is the portable, generic model. It covers the language of the is
 
 - [[Human]] - the human agent; roles, standing, and council participation
 - [[Agentic AI]] - non-conversational AI agents; automation patterns; JSON5 cache pattern
-- [[Model/Agents/Claude/Claude|Claude]] - Claude as island agent; operating modes, behavioural constraints, memory architecture
-- [[Model/Agents/ChatGPT/ChatGPT|ChatGPT]] - ChatGPT as island agent; strengths and working patterns
+- [[Agents/Claude/Claude|Claude]] - Claude as island agent; operating modes, behavioural constraints, memory architecture
+- [[Agents/ChatGPT/ChatGPT|ChatGPT]] - ChatGPT as island agent; strengths and working patterns
 
 ### Tools - With what?
 
 - [[Obsidian]] - the primary authoring and navigation tool; vault structure and plugins
-- [[Model/Tools/Claude/Claude|Claude]] - Claude as tool; token economics, memory, Cowork configuration layers
-- [[Model/Tools/ChatGPT/ChatGPT|ChatGPT]] - ChatGPT as tool; use cases and limitations
-- [[Model/Tools/Linear/Linear|Linear]] - Linear as tool; browser-based view management; island integration
+- [[Tools/Claude/Claude|Claude]] - Claude as tool; token economics, memory, Cowork configuration layers
+- [[Tools/ChatGPT/ChatGPT|ChatGPT]] - ChatGPT as tool; use cases and limitations
+- [[Tools/Linear/Linear|Linear]] - Linear as tool; browser-based view management; island integration
 - [[Microsoft 365]] - M365 as tool; Outlook MCP, calendar, email integration
 
 ---
@@ -127,9 +127,9 @@ The third part is Arcadia - the canonical living instance of the model described
 
 ### Knowledge Capital - The model instantiated
 
-- [[Charter]] - Arcadia's identity, council membership, activity roster, and task prefix
+- [[Knowledge Capital/Charter|Charter]] - Arcadia's identity, council membership, activity roster, and task prefix
 - [[Council]] - citizen and visitor standing; council eligibility; governance in practice
-- [[Integrations]] - connected services; MCP tools, calendar sources, task managers, inbox paths
+- [[Tools/Integrations|Integrations]] - connected services; MCP tools, calendar sources, task managers, inbox paths
 - [[Configuration]] - island-specific values: task prefix, schedule, and activity-level config
 
 ### Arcadia - The living island

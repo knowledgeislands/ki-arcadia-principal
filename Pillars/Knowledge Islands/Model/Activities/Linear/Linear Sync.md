@@ -33,11 +33,11 @@ The authoritative rules for naming conventions, lifecycle management, project la
 Using the Linear MCP, fetches all active and planned initiatives and their projects, then compares them against the Initiative → KI Mapping table in [[Knowledge Capital/Activities/Linear/Linear|Linear Workspace]]. Specifically checks:
 
 - **New or removed initiatives** - creates or archives stream notes, Pillars notes, and Resources company profiles as needed, and updates the mapping table
-- **Initiative name drift** - names changed in Linear but not reflected in the KI
+- **Initiative name drift** - names changed in Linear but not reflected in the island
 - **Project naming conventions** - enforces bracket spacing and hyphenation rules per [[Knowledge Capital/Activities/Linear/Linear|Linear Workspace]]
 - **Stream note project coverage** - ensures every uncompleted project under an initiative appears in the corresponding stream note's projects table
 
-All fixes are applied directly - project renames in Linear via `save_project`, KI note updates via file writes.
+All fixes are applied directly - project renames in Linear via `save_project`, island note updates via file writes.
 
 ---
 
@@ -57,9 +57,9 @@ Read $KI_PROPS_DIR/Identity.md.
 All file paths below are relative to $REPOSITORY.
 
 ## Step 1 - Load context
-Read $REPOSITORY/CLAUDE.md and $REPOSITORY/Pillars/Knowledge Islands/Tools/Claude/Mistakes and Lessons.md (pre-flight check).
+Read $REPOSITORY/CLAUDE.md and $REPOSITORY/Pillars/Knowledge Islands/Model/Tools/Claude/Mistakes and Lessons.md (pre-flight check).
 Read $REPOSITORY/Pillars/Knowledge Capital/Activities/Linear/Linear.md - this contains the Initiative → KI Mapping table, naming conventions, and project labels.
-Read $REPOSITORY/Pillars/Knowledge Islands/Tools/Linear/Linear.md - this contains the generic MCP connection details and browser-based interaction patterns.
+Read $REPOSITORY/Pillars/Knowledge Islands/Model/Tools/Linear/Linear.md - this contains the generic MCP connection details and browser-based interaction patterns.
 
 ## Step 2 - Fetch current initiatives
 Use list_initiatives (Linear MCP) to retrieve all active and planned initiatives. Compare against the Initiative → KI Mapping table in Linear Workspace.md.

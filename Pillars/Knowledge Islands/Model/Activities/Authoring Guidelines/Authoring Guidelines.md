@@ -37,7 +37,7 @@ A piece of content that is "what this activity does" → Layer 1. A piece that i
 
 Activity groups divide into two categories that are treated differently throughout this guide.
 
-**Constitutional groups** are prior to the adoption framework - they define what it means to be a Knowledge Island and cannot be vetoed. Currently there is one constitutional group: [[Constitutional]], which contains the Conformance Check. Constitutional group indexes do not carry an Adoption Requirements section.
+**Constitutional groups** are prior to the adoption framework - they define what it means to be a Knowledge Island and cannot be vetoed. Currently there is one constitutional group: [[Model/Activities/Constitutional/Constitutional|Constitutional]], which contains the Conformance Check. Constitutional group indexes do not carry an Adoption Requirements section.
 
 **Adoptable groups** are everything else. Each island takes an explicit `adopted` or `vetoed` position on each adoptable group; absence of a position is non-conformant. Every adoptable group index note must carry an Adoption Requirements section (see below) that declares exactly what Knowledge Capital notes an island must create to adopt or veto the group. This makes the adoption contract explicit and machine-verifiable by the Conformance Check.
 

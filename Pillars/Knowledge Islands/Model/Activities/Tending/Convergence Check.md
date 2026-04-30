@@ -28,17 +28,17 @@ Adhoc - _"ki convergence check"_.
 ## What It Does
 
 1. Identifies all islands with the generic Knowledge Islands structure
-2. Compares each shared note across KIs, flagging any divergence
+2. Compares each shared note across islands, flagging any divergence
 3. Checks Knowledge Capital files for new parameters that should be standardised
 4. Checks Tags for any tags in use that are not yet in the superset
-5. Merges and cross-pollinates confirmed improvements back to all KIs
+5. Merges and cross-pollinates confirmed improvements back to all islands
 6. Reports what was synced, deferred, or intentionally kept different
 
 ---
 
-## Shared notes (must be identical across all KIs)
+## Shared notes (must be identical across all islands)
 
-These notes must remain byte-for-byte identical. Any difference is drift to be resolved. Paths are relative to each KI's `Pillars/Knowledge Islands/` folder.
+These notes must remain byte-for-byte identical. Any difference is drift to be resolved. Paths are relative to each island's `Pillars/Knowledge Islands/` folder.
 
 - `Agents/Agents.md`
 - `Agents/Agentic AI/Agentic AI.md`
@@ -68,16 +68,16 @@ These notes must remain byte-for-byte identical. Any difference is drift to be r
 
 ---
 
-## Legitimately KI-specific notes (expected to differ)
+## Legitimately island-specific notes (expected to differ)
 
-These notes are intentionally different between KIs. Do not flag differences here as drift - verify only that the correct version is internally consistent.
+These notes are intentionally different between islands. Do not flag differences here as drift - verify only that the correct version is internally consistent.
 
 | Note                                       | Why it differs                                                                                             |
 | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
 | `Knowledge Capital/` (entire folder)       | Identity, skill name, task prefix, integrations, routing rules, and canonical notes list - by design       |
-| `Conventions/Structure/Structure.md`       | Pillars/Resources boundary semantics, Calendar folder naming, and routing rules are specific to each KI    |
-| `Tools/Claude/Mistakes and Lessons.md`     | Logs KI-specific incidents - accumulates independently in each KI                                          |
-| `Tools/Claude/Activities/` (entire folder) | Activity prompts are Claude-specific and island-specific; each KI maintains its own Layer 5 prompt library |
+| `Conventions/Structure/Structure.md`       | Pillars/Resources boundary semantics, Calendar folder naming, and routing rules are specific to each island    |
+| `Tools/Claude/Mistakes and Lessons.md`     | Logs island-specific incidents - accumulates independently in each island                                          |
+| `Tools/Claude/Activities/` (entire folder) | Activity prompts are Claude-specific and island-specific; each island maintains its own Layer 5 prompt library |
 
 ---
 

@@ -40,7 +40,7 @@ A weekly scheduled task that reads all canonical meta notes from the island and 
 
 ## Gap Analysis Checklist
 
-Run before overwriting any canonical file. The goal is to surface drift between the KI and memory, and flag auxiliary files that have become redundant, before committing the rebuild.
+Run before overwriting any canonical file. The goal is to surface drift between the island and memory, and flag auxiliary files that have become redundant, before committing the rebuild.
 
 **Canonical memory vs KI**
 
@@ -62,7 +62,7 @@ Run before overwriting any canonical file. The goal is to surface drift between 
 
 **Cross-reference integrity**
 
-- [ ] For every KI note with a `memory_file:` frontmatter property: expand `{ki_prefix}` → `$MEMORY_PREFIX` and `{user_prefix}` → `$USER_PREFIX`, then confirm the resolved filename exists in `$MEMORY_DIR`. Flag missing files.
+- [ ] For every island note with a `memory_file:` frontmatter property: expand `{ki_prefix}` → `$MEMORY_PREFIX` and `{user_prefix}` → `$USER_PREFIX`, then confirm the resolved filename exists in `$MEMORY_DIR`. Flag missing files.
 - [ ] For every auto-memory file with a `## KI Sources` section: confirm each listed KI path still exists in the repository. Flag broken paths.
 
 **Before proceeding**

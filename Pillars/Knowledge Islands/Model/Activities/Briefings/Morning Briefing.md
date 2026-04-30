@@ -27,7 +27,7 @@ A daily scheduled task that runs each morning to prepare today's daily note, pre
 
 ## What It Does
 
-Using the integrations configured in [[Integrations|Integrations]], fetches today's calendar events, meetings, tasks (due and overdue), and outstanding inbox items, then creates the daily note pre-populated with that content.
+Using the integrations configured in [[Tools/Integrations|Integrations]], fetches today's calendar events, meetings, tasks (due and overdue), and outstanding inbox items, then creates the daily note pre-populated with that content.
 
 ---
 
@@ -47,7 +47,7 @@ Run this bash command to find the Knowledge Capital folder and derive the reposi
 
 Then read these files:
 1. $REPOSITORY/CLAUDE.md - KI operating instructions
-2. $REPOSITORY/Pillars/Knowledge Islands/Tools/Claude/Mistakes and Lessons.md - pre-flight check
+2. $REPOSITORY/Pillars/Knowledge Islands/Model/Tools/Claude/Mistakes and Lessons.md - pre-flight check
 3. $KI_PROPS_DIR/Integrations.md - integration configuration (tools, calendar source, inbox path)
 
 The Integrations note is the single source of truth for which MCP tools to use, which TickTick lists to query, and which calendar source to read from. Do NOT hardcode these values - read them from the note.
@@ -71,7 +71,7 @@ Using the Integrations note loaded in Step 0, gather today's data:
 - If none of the above, omit the ### Tasks subsection.
 
 ## Step 3 - Create or update today's daily note
-If the daily note doesn't exist, create it using the template at $REPOSITORY/Pillars/Knowledge Islands/Tools/Obsidian/Templates/Calendar - Daily.md.
+If the daily note doesn't exist, create it using the template at $REPOSITORY/Pillars/Knowledge Islands/Model/Tools/Obsidian/Templates/Calendar - Daily.md.
 Populate the briefing content from Step 2 into the appropriate sections of the template.
 Leave any sections unrelated to briefing content as empty placeholders - do not remove or alter them.
 
@@ -82,8 +82,8 @@ Set the `day_type` frontmatter property on the daily note (first match wins):
 4. Otherwise → `work-day`
 
 ## Step 4 - Periodic notes
-Check whether this week's weekly note exists at the path from Step 1. If not, create it from $REPOSITORY/Pillars/Knowledge Islands/Tools/Obsidian/Templates/Calendar - Weekly.md.
-Check whether this month's monthly note exists at the path from Step 1. If not, create it from $REPOSITORY/Pillars/Knowledge Islands/Tools/Obsidian/Templates/Calendar - Monthly.md.
+Check whether this week's weekly note exists at the path from Step 1. If not, create it from $REPOSITORY/Pillars/Knowledge Islands/Model/Tools/Obsidian/Templates/Calendar - Weekly.md.
+Check whether this month's monthly note exists at the path from Step 1. If not, create it from $REPOSITORY/Pillars/Knowledge Islands/Model/Tools/Obsidian/Templates/Calendar - Monthly.md.
 
 Do not ask for confirmation - create the notes and report what was done.
 ```

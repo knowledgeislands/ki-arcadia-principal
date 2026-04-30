@@ -13,7 +13,7 @@ author: Written with Claude
 
 ## Overview
 
-Recurring patterns and design principles for AI-driven productivity automations - scheduled tasks, regular activities, and any Claude-powered workflow that runs repeatedly against the same KI configuration. These are generalisations derived from the design of specific activities such as [[Knowledge Islands/Activities/Email/Email]].
+Recurring patterns and design principles for AI-driven productivity automations - scheduled tasks, regular activities, and any Claude-powered workflow that runs repeatedly against the same island configuration. These are generalisations derived from the design of specific activities such as [[Knowledge Islands/Model/Activities/Email/Email]].
 
 ---
 
@@ -179,10 +179,10 @@ Every live artifact should carry a pointer back to its recipe note, and any modi
 **In the artifact HTML** - embed the recipe path as the first line of the `<head>`:
 
 ```html
-<!-- Recipe: Pillars/Knowledge Islands/Tools/Claude/Live Artifacts/<Recipe Name>.md -->
+<!-- Recipe: Pillars/Knowledge Islands/Model/Tools/Claude/Live Artifacts/<Recipe Name>.md -->
 ```
 
-Preserve this comment through any regeneration or patch. It is the single source of truth for where the recipe lives, readable without opening the KI.
+Preserve this comment through any regeneration or patch. It is the single source of truth for where the recipe lives, readable without opening the island.
 
 **In the Reusable Prompt** - include the following instruction so that future rebuilds preserve the comment and the sync discipline:
 

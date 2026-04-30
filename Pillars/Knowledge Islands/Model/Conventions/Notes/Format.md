@@ -92,7 +92,7 @@ Wikilinks (`[[Note Name]]`) are preferred over repeating content - link rather t
 Body links use the shortest unique path that resolves unambiguously. The algorithm:
 
 1. Use the bare filename if it is unique across the island - `[[Concept]]`
-2. If another note shares the same filename, use the minimum path prefix needed to disambiguate, and add a pipe alias showing just the leaf name - `[[Knowledge Islands/Processes/Processes|Processes]]`
+2. If another note shares the same filename, use the minimum path prefix needed to disambiguate, and add a pipe alias showing just the leaf name - `[[Knowledge Islands/Model/Processes/Processes|Processes]]`
 
 Agents writing a new body link must check for filename collisions first. If another note shares the filename, use the shortest disambiguating prefix and alias to the leaf name.
 

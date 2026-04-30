@@ -11,7 +11,7 @@ author: Written with Claude
 
 ## Overview
 
-Obsidian templates used with the Templater plugin to scaffold new notes consistently. Each template implements the structures defined in [[Format]] and [[Types]] - providing a starting point with the correct frontmatter, heading structure, and section layout pre-filled. Templates are a superset across all islands; not every template will be relevant to every KI. Invoke via the Templater plugin command palette or a keyboard shortcut configured in Obsidian.
+Obsidian templates used with the Templater plugin to scaffold new notes consistently. Each template implements the structures defined in [[Format]] and [[Types]] - providing a starting point with the correct frontmatter, heading structure, and section layout pre-filled. Templates are a superset across all islands; not every template will be relevant to every island. Invoke via the Templater plugin command palette or a keyboard shortcut configured in Obsidian.
 
 ---
 

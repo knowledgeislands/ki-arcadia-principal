@@ -19,7 +19,7 @@ A survey stream to identify MCP servers and registries relevant to the island's 
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]].
 
 ---
 

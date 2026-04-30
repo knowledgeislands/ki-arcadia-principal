@@ -15,7 +15,7 @@ author: Written with Claude
 
 The prompt library for activities that Claude executes. Each subfolder maps to an activity group and holds the executable prompts - the Layer 5 content in the [[Authoring Guidelines|five-layer model]]. Prompts in this library are Claude-specific and island-specific: they reference island configuration from [[Knowledge Capital]] and agentic patterns from [[Agentic AI]].
 
-What an activity does and why it exists is documented at Layer 1 under [[Knowledge Islands/Activities/Activities]]. This layer holds only the executable "how".
+What an activity does and why it exists is documented at Layer 1 under [[Knowledge Islands/Model/Activities/Activities]]. This layer holds only the executable "how".
 
 ---
 
@@ -45,4 +45,4 @@ What an activity does and why it exists is documented at Layer 1 under [[Knowled
 
 ## Linear
 
-[[Claude/Activities/Linear/Linear]] holds the prompts for the Linear Sync activity - the daily automation that compares live Linear state against KI stream notes and surfaces drift for human review.
+[[Claude/Activities/Linear/Linear]] holds the prompts for the Linear Sync activity - the daily automation that compares live Linear state against island stream notes and surfaces drift for human review.

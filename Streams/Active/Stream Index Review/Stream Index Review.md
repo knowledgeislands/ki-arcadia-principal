@@ -20,7 +20,7 @@ The goal is that by the end of the review, every index note in the Knowledge Isl
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]].
 
 ---
 

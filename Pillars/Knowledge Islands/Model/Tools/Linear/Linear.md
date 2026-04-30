@@ -19,7 +19,7 @@ Linear is used for issue tracking and project management. It integrates with the
 
 ## MCP Integration
 
-Linear is connected as an MCP server, providing tool-based access to issues, projects, cycles, and documents directly from Claude sessions. See [[Integrations]] for the full list of MCP-connected services for this island, and [[Tools]] for the generic integrations index.
+Linear is connected as an MCP server, providing tool-based access to issues, projects, cycles, and documents directly from Claude sessions. See [[Tools/Integrations|Integrations]] for the full list of MCP-connected services for this island, and [[Tools]] for the generic integrations index.
 
 ---
 

@@ -116,7 +116,7 @@ memory_file:
 ```markdown
 ## Island Sources
 
-- `Pillars/Knowledge Islands/Conventions/Structure/Structure.md` - folder layout, routing rules
+- `Pillars/Knowledge Islands/Model/Conventions/Structure/Structure.md` - folder layout, routing rules
 - `Pillars/.../Routing Rules.md` - three-domain model
 ```
 

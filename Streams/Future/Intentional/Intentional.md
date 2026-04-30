@@ -18,7 +18,7 @@ A conceptual stream to explore where Intention fits in the Knowledge Islands mod
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]].
 
 ---
 

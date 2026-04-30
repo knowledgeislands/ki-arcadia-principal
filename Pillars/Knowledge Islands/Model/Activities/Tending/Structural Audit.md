@@ -65,7 +65,7 @@ Check notes where `author:` incorrectly stores an external creator (e.g. `author
 
 ### Template Coverage
 
-Ensure every `card/*` tag type has a corresponding template in `Pillars/Knowledge Islands/Tools/Obsidian/Templates/`:
+Ensure every `card/*` tag type has a corresponding template in `Pillars/Knowledge Islands/Model/Tools/Obsidian/Templates/`:
 
 1. Survey all `card/*` tags in use across the repository
 2. Check which have a template file

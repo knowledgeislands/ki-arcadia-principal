@@ -3,7 +3,7 @@ tags:
   - card/proposal
   - topic/knowledge-islands
 status: draft - April 2026
-purpose: Specify and resolve unresolved elements of the KI conceptual and geographic model - settlement types, Harbour, Routes, and Customs
+purpose: Specify and resolve unresolved elements of the island conceptual and geographic model - settlement types, Harbour, Routes, and Customs
 priority: low
 dependencies: []
 author: Written with Claude
@@ -23,7 +23,7 @@ All of these belong to the same layer of the model: the geographic and jurisdict
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -50,8 +50,8 @@ This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactmen
 
 - [ ] `Pillars/Knowledge Islands/Concept/Concept.md` - resolve settlement type naming and add Town to the type table
 - [ ] `Pillars/Knowledge Islands/Concept/Concept.md` - replace `[!todo] Customs and Routes` with conceptual prose
-- [ ] `Pillars/Knowledge Islands/Conventions/Structure/Structure.md` - replace `[!todo] Harbour` with structural conventions for the `+/` inbox pattern
-- [ ] `Pillars/Knowledge Islands/Conventions/Structure/Structure.md` - replace `[!todo] Routes and Customs` with structural specification for inter-island links and boundary controls
+- [ ] `Pillars/Knowledge Islands/Model/Conventions/Structure/Structure.md` - replace `[!todo] Harbour` with structural conventions for the `+/` inbox pattern
+- [ ] `Pillars/Knowledge Islands/Model/Conventions/Structure/Structure.md` - replace `[!todo] Routes and Customs` with structural specification for inter-island links and boundary controls
 
 ---
 

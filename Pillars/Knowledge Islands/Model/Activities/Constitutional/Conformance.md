@@ -19,7 +19,7 @@ Unlike tending activities, which check the health of a running island, Conforman
 
 ## Trigger
 
-Scheduled. Conformance should run at least weekly - daily on working days is the recommended cadence. Because it is constitutional, any gap longer than a week means the island has gone without verification of its own validity. The actual cron is defined in the island's [[Charter]].
+Scheduled. Conformance should run at least weekly - daily on working days is the recommended cadence. Because it is constitutional, any gap longer than a week means the island has gone without verification of its own validity. The actual cron is defined in the island's [[Knowledge Capital/Charter|Charter]].
 
 ---
 

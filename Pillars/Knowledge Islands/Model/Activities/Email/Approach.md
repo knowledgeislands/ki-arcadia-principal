@@ -15,7 +15,7 @@ author: Mixed
 
 A system for processing the email inbox toward zero using a structured triage folder hierarchy. Emails are classified to `_TRIAGE` subfolders via an ordered set of routing rules and routes. A tracking file records each classification, allowing the user's manual re-routes to be detected and fed back as suggested rule changes.
 
-The system is email-platform agnostic. It operates against whichever email MCP is configured in [[Integrations|Integrations]] (e.g. M365 MCP, Gmail MCP). Two platform constructs are normalised throughout: folder and label constructs are treated interchangeably as "folders"; tag and category constructs are treated interchangeably as "tags". The implementation detail of mapping these to the specific platform operation is handled by the activity prompts, not the route definitions.
+The system is email-platform agnostic. It operates against whichever email MCP is configured in [[Tools/Integrations|Integrations]] (e.g. M365 MCP, Gmail MCP). Two platform constructs are normalised throughout: folder and label constructs are treated interchangeably as "folders"; tag and category constructs are treated interchangeably as "tags". The implementation detail of mapping these to the specific platform operation is handled by the activity prompts, not the route definitions.
 
 Whilst the classification can follow any chosen scheme, this works best following an **Eisenhower Matrix** (urgency vs importance) approach. Sub-folders follow a numeric prefix so folders sort in priority order; first digit is the category (`0` Inbound, `1` Do, `2` Decide, `3` Delegate, `4` Defer, `9` Disposal) with remaining digits identifying the sub-classification.
 
@@ -44,7 +44,7 @@ The diagram below shows all six activities, the email stores they operate on, an
 
 ### Rules
 
-Rules are evaluated in order during classification - **first match wins**. The KI-specific rule list lives in [[Email Routing Config|Email Routing Config]].
+Rules are evaluated in order during classification - **first match wins**. The island-specific rule list lives in [[Email Routing Config|Email Routing Config]].
 
 Each item in the list is a **route reference** (`[[Route - Name]]`). When a route reference is evaluated, its allow/deny rules are checked; a match routes to the route's declared folder. Routes cannot reference other routes - evaluation is always one level deep.
 
@@ -211,6 +211,6 @@ Before writing a new suggestion, check for an existing row with the same `Patter
 | `Email Routing Config.md` | Route Review | Route Triage (cache miss), Route Review (taxonomy check) | Rule ordering |
 | `Route - *.md` | Route Review | Route Triage (cache miss), Route Review (taxonomy check) | Source of truth; compiled tables derived from these |
 
-The KI-specific email files live in `$EMAIL_DIR` (`Knowledge Capital/Activities/Email/`) in the text store. The remaining files live in `$TRACKING_DIR` (`tasks/email-triage/`) in the temporary store.
+The island-specific email files live in `$EMAIL_DIR` (`Knowledge Capital/Activities/Email/`) in the text store. The remaining files live in `$TRACKING_DIR` (`tasks/email-triage/`) in the temporary store.
 
 `routing-table.json5` and `aged-table.json5` are **session-scoped caches** - derived from source files and safe to delete at any time; they are regenerated on the next cache miss. They must not be committed to the text store. `tracking.json5` is **persistent** and should be retained across sessions as it records classification history used by Route Drift.

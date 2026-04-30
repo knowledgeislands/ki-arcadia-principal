@@ -13,7 +13,7 @@ author: Written with Claude
 
 ## Overview
 
-The page registry is a pre-built index that maps every leaf filename to its location(s) in the vault. It exists to support shortest-path wikilink resolution: rather than scanning the filesystem on every link read or write, agents load the registry once and perform O(1) lookups. Every page is stored - not just collisions - because if only collisions were stored, adding a second page with a previously unique name would silently break existing bare links with no way to detect it.
+The page registry is a pre-built index that maps every leaf filename to its location(s) in the repository. It exists to support shortest-path wikilink resolution: rather than scanning the filesystem on every link read or write, agents load the registry once and perform O(1) lookups. Every page is stored - not just collisions - because if only collisions were stored, adding a second page with a previously unique name would silently break existing bare links with no way to detect it.
 
 ---
 
@@ -54,7 +54,7 @@ The page registry is a pre-built index that maps every leaf filename to its loca
 
 Two sentinel values appear in the JSON:
 
-- **Array** (e.g. `["Pillars"]`) - this entry is unique; the array is the parent path from immediate parent to vault root.
+- **Array** (e.g. `["Pillars"]`) - this entry is unique; the array is the parent path from immediate parent to repository root.
 - **`"*"`** - this node appears under every instance of its parent. Rather than enumerating all parent instances (which would duplicate the parent's own disambiguation logic and break if a new instance is added), the serialiser records only the parent name and defers resolution to the parent's entry at deserialisation time. A `"*"` value is never resolved directly - the deserialiser walks up to the parent key and resolves from there.
 
 ---
@@ -128,13 +128,13 @@ When a new page is created, the registry must be updated. This is where the stru
 
 The registry is a map keyed by filename. In a compiled TypeScript context an ES `Map` (O(1) lookup) suffices; a red-black tree would give O(log n) ordered traversal if prefix-range queries ever become useful. The JSON form is compact: unique entries are a single path array, collision entries are an object. The full Arcadia registry is likely under 4 KB and can be embedded directly in a session prompt or maintenance activity.
 
-Rebuilding: a tending activity traverses the full vault, builds the complete registry from scratch, and overwrites the registry file. A full rebuild is the source of truth - run it after any bulk file operation or rename. Incremental mutation (algorithm above) keeps the registry current between rebuilds.
+Rebuilding: a tending activity traverses the full repository, builds the complete registry from scratch, and overwrites the registry file. A full rebuild is the source of truth - run it after any bulk file operation or rename. Incremental mutation (algorithm above) keeps the registry current between rebuilds.
 
 ---
 
 ## Checklist
 
-- [ ] Decide implementation language and where the registry file lives in the vault
+- [ ] Decide implementation language and where the registry file lives in the repository
 - [ ] Build initial generation script
 - [ ] Generate and commit the initial registry file
 - [ ] Wire registry into maintenance/tending activity for rebuild

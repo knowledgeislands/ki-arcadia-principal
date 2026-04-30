@@ -13,7 +13,7 @@ author: Written with Claude
 
 ## Overview
 
-A daily automated task that verifies each live Cowork scheduled task has a corresponding KI note, that schedules and descriptions match, and that this task's own prompt is current. The Conformance Check runs earlier at 04:30; the Scheduled Task Audit runs at 05:00 and is the first maintenance activity of the day.
+A daily automated task that verifies each live Cowork scheduled task has a corresponding island note, that schedules and descriptions match, and that this task's own prompt is current. The Conformance Check runs earlier at 04:30; the Scheduled Task Audit runs at 05:00 and is the first maintenance activity of the day.
 
 Full prompt comparison across all tasks is not currently possible - see [[#Known Limitations]] below.
 
@@ -54,12 +54,12 @@ You are running the Scheduled Task Audit. Your job is to verify that each live C
 Run this bash command to find the Knowledge Capital folder and derive the repository root:
   KI_PROPS=$(find /sessions/*/mnt -maxdepth 7 -name "Knowledge Capital.md" -path "*/Knowledge Capital/*" 2>/dev/null | head -1)
   REPOSITORY=$(echo "$KI_PROPS" | sed 's|||')
-  ACTIVITIES_DIR="$REPOSITORY/Pillars/Knowledge Islands/Activities"
+  ACTIVITIES_DIR="$REPOSITORY/Pillars/Knowledge Islands/Model/Activities"
   echo "Repository: $REPOSITORY"
 
 Then read:
 1. $REPOSITORY/CLAUDE.md - KI operating instructions
-2. $REPOSITORY/Pillars/Knowledge Islands/Tools/Claude/Mistakes and Lessons.md - pre-flight check
+2. $REPOSITORY/Pillars/Knowledge Islands/Model/Tools/Claude/Mistakes and Lessons.md - pre-flight check
 3. $REPOSITORY/Pillars/Knowledge Capital/Charter.md - task ID prefix
 
 ## Step 1 - List all scheduled tasks
@@ -99,31 +99,31 @@ Write the summary to today's daily note under ## KI, under a ### Scheduled Task 
 
 ## Procedure
 
-The prompt above runs this automatically. For manual runs, the same steps apply - with the additional ability to do full prompt comparison by reading KI notes and cross-checking against task prompts known from context.
+The prompt above runs this automatically. For manual runs, the same steps apply - with the additional ability to do full prompt comparison by reading island notes and cross-checking against task prompts known from context.
 
 ### 1. List all scheduled tasks
 
 Call `mcp__scheduled-tasks__list_scheduled_tasks` to retrieve metadata for all active tasks.
 
-### 2. Identify the corresponding KI note
+### 2. Identify the corresponding island note
 
-For each task, locate the matching activity note under `Pillars/Knowledge Islands/Activities/`. The task ID prefix is documented in [[Charter]].
+For each task, locate the matching activity note under `Pillars/Knowledge Islands/Model/Activities/`. The task ID prefix is documented in [[Knowledge Capital/Charter|Charter]].
 
 ### 3. Verify schedule and description
 
-Compare cron expressions and descriptions against KI note content. Flag mismatches.
+Compare cron expressions and descriptions against island note content. Flag mismatches.
 
 ### 4. Self-verify prompt (automated runs) / full prompt comparison (manual runs)
 
-Automated: read the mounted SKILL.md and compare against the KI note prompt block. Manual: compare KI note prompt blocks against any known live prompt content.
+Automated: read the mounted SKILL.md and compare against the island note prompt block. Manual: compare island note prompt blocks against any known live prompt content.
 
-The KI note is always the canonical source. Push KI → task via `mcp__scheduled-tasks__update_scheduled_task` if the KI is ahead; update the KI note if the live task is ahead.
+The island note is always the canonical source. Push KI → task via `mcp__scheduled-tasks__update_scheduled_task` if the island is ahead; update the island note if the live task is ahead.
 
 ---
 
 ## Sync Protocol
 
-When updating a prompt during an active session: update the KI note first, then push to the scheduled task via `mcp__scheduled-tasks__update_scheduled_task`. Batch edits - do not push after every small change. Push when:
+When updating a prompt during an active session: update the island note first, then push to the scheduled task via `mcp__scheduled-tasks__update_scheduled_task`. Batch edits - do not push after every small change. Push when:
 
 - The user explicitly signals readiness ("push it", "sync the task", "ready to run"), or
 - The iteration is confirmed complete, or
@@ -132,5 +132,5 @@ When updating a prompt during an active session: update the KI note first, then 
 ## Notes
 
 - Minor whitespace or formatting differences can be ignored if they do not affect execution
-- Prompt changes should always originate in the KI note - direct Cowork edits are the primary source of untracked drift
-- If a task has no corresponding KI note, create one before the next run
+- Prompt changes should always originate in the island note - direct Cowork edits are the primary source of untracked drift
+- If a task has no corresponding island note, create one before the next run

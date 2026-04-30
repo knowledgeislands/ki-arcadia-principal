@@ -15,7 +15,7 @@ Routine maintenance keeps the island accurate, well-structured, and free of stal
 
 Activities divide into two categories. **Constitutional** activities are required of any island adopting Knowledge Islands and cannot be vetoed - they define the baseline that makes an island valid. All other groups are **adoptable**: each territory must take an explicit position on each group (adopted or vetoed), with no unknowns permitted. The island's [[Knowledge Capital/Charter|Charter]] is the authoritative record of adoption decisions.
 
-The content here covers what each activity does and why. The prompts that drive them - Claude-specific and island-specific - live in [[Model/Tools/Claude/Activities/Activities|Tools/Claude/Activities]]. For the full five-layer model and prompt authoring conventions, see [[Authoring Guidelines]].
+The content here covers what each activity does and why. The prompts that drive them - Claude-specific and island-specific - live in [[Claude/Activities/Activities|Tools/Claude/Activities]]. For the full five-layer model and prompt authoring conventions, see [[Authoring Guidelines]].
 
 ---
 
@@ -29,7 +29,7 @@ The constitutional baseline required of any Knowledge Island. Not subject to the
 
 | Activity | Type | When | Summary |
 | --- | --- | --- | --- |
-| [[Conformance]] | Scheduled | Island-specific cadence | Verifies constitutional baseline and that all non-constitutional activity groups have an explicit adopted or vetoed position in the Charter |
+| [[Model/Activities/Constitutional/Conformance|Conformance]] | Scheduled | Island-specific cadence | Verifies constitutional baseline and that all non-constitutional activity groups have an explicit adopted or vetoed position in the Charter |
 
 ---
 
@@ -39,15 +39,15 @@ Activities that keep the island structurally sound, content-healthy, and free of
 
 | Activity | Type | When | Summary |
 | --- | --- | --- | --- |
-| [[Scheduled Task Audit]] | Scheduled | Each working day at 05:00 | Compares live scheduled task prompts against KI notes; reconciles any drift; runs first before other automations |
+| [[Scheduled Task Audit]] | Scheduled | Each working day at 05:00 | Compares live scheduled task prompts against island notes; reconciles any drift; runs first before other automations |
 | [[Health Check]] | Scheduled | Mondays at 08:00 | Reviews structural drift, skill alignment, and content health across the repository |
-| [[Knowledge Rebuild]] | Scheduled | Wednesdays at 07:00 | Reconstructs Claude's auto-memory from canonical meta notes; keeps the memory layer accurate as the KI evolves |
+| [[Knowledge Rebuild]] | Scheduled | Wednesdays at 07:00 | Reconstructs Claude's auto-memory from canonical meta notes; keeps the memory layer accurate as the island evolves |
 | [[Inbox Review]] | Conversational | _"ki inbox review"_ | Weekly - processes notes held in the `+/` inbox and files them to the correct Pillar or Stream |
 | [[Asset Audit]] | Conversational | _"ki asset audit"_ | Weekly - surfaces unlinked repository assets and removes redundant ones |
 | [[Status Review]] | Conversational | _"ki status review"_ | Weekly - updates `status` frontmatter fields when a note's standing has changed |
 | [[Structural Audit]] | Conversational | _"ki structural audit"_ | Adhoc - comprehensive structural review of an island section or the whole repository |
 | [[Wikilink Review]] | Conversational | _"ki wikilink review"_ | Adhoc - surfaces broken wikilinks and orphan notes across the repository |
-| [[Convergence Check]] | Conversational | _"ki convergence check"_ | Adhoc - compares shared notes across all KIs; surfaces drift; cross-pollinates improvements |
+| [[Convergence Check]] | Conversational | _"ki convergence check"_ | Adhoc - compares shared notes across all islands; surfaces drift; cross-pollinates improvements |
 
 ---
 
@@ -82,4 +82,4 @@ Daily automation that keeps the island aligned with the Linear project managemen
 
 | Activity | Type | When | Summary |
 | --- | --- | --- | --- |
-| [[Linear Sync]] | Scheduled | Each working day at 09:00 | Compares Linear initiatives and projects against KI stream notes and the mapping table; surfaces misalignment; flags candidates for new notes or archival |
+| [[Linear Sync]] | Scheduled | Each working day at 09:00 | Compares Linear initiatives and projects against island stream notes and the mapping table; surfaces misalignment; flags candidates for new notes or archival |

@@ -18,7 +18,7 @@ Local path: `~/kis/krisb/kit-legal`
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactment Process]] - the standard model for how streams enact change in the island.
+This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]] - the standard model for how streams enact change in the island.
 
 ---
 

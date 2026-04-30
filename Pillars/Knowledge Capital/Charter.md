@@ -79,7 +79,7 @@ Active conversational activities within adopted groups. Trigger phrases are the 
 
 ## Tools
 
-Active integrations. See [[Integrations|Integrations]] for MCP prefix detail.
+Active integrations. See [[Tools/Integrations|Integrations]] for MCP prefix detail.
 
 | Purpose | Tool                     | Status    |
 | ------- | ------------------------ | --------- |

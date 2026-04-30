@@ -15,7 +15,7 @@ Streams are projects and workstreams organised by their current level of focus. 
 
 ## Proposals Index
 
-Live tracking view of all active proposals. Ordered by Stream (Active → Background → Dormant → Future → Settled), then by Status within each stream (`in-progress` → `ready` → `draft`). Update whenever a proposal is created, its status changes, or its priority changes. See [[Knowledge Islands/Processes/Enactment Process|Enactment Process]] for the full lifecycle.
+Live tracking view of all active proposals. Ordered by Stream (Active → Background → Dormant → Future → Settled), then by Status within each stream (`in-progress` → `ready` → `draft`). Update whenever a proposal is created, its status changes, or its priority changes. See [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]] for the full lifecycle.
 
 | Topic                                                                                                                           | Stream     | Status        | Priority |
 | ------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------- | -------- |

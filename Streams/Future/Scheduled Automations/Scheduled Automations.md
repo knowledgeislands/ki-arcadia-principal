@@ -19,7 +19,7 @@ Ideas for new scheduled tasks and improvements to the existing automation suite.
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]].
 
 ---
 

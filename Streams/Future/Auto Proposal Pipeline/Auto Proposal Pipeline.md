@@ -20,7 +20,7 @@ The stream also covers what "proposal-ready" means in practice - the criteria fo
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]].
 
 ---
 

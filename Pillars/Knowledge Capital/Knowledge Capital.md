@@ -18,7 +18,7 @@ The folder contains the Charter (the island's constitutional document), Known La
 
 ## Charter
 
-[[Charter]] is Arcadia's island charter - the authoritative declaration of what this island is and what it has adopted. Its Identity section records the fixed parameters that distinguish the island; below that it carries adoption positions for every non-constitutional activity group, the roster of enabled activities, active tool integrations, and the agent configuration. The [[Knowledge Islands/Activities/Constitutional/Conformance|Conformance Check]] uses the Charter as its source of truth. Agents starting cold and humans checking operational state both read it first.
+[[Knowledge Capital/Charter|Charter]] is Arcadia's island charter - the authoritative declaration of what this island is and what it has adopted. Its Identity section records the fixed parameters that distinguish the island; below that it carries adoption positions for every non-constitutional activity group, the roster of enabled activities, active tool integrations, and the agent configuration. The [[Knowledge Islands/Activities/Constitutional/Conformance|Conformance Check]] uses the Charter as its source of truth. Agents starting cold and humans checking operational state both read it first.
 
 ---
 
@@ -42,16 +42,16 @@ The folder contains the Charter (the island's constitutional document), Known La
 
 ## Conventions
 
-[[Knowledge Capital/Conventions/Conventions|Conventions]] holds the island-specific vocabulary and routing rules that supplement the generic KI conventions. The Glossary decodes Knowledge Islands terminology; Routing Rules records the filing decisions that recur in Arcadia's specific domain structure.
+[[Conventions|Conventions]] holds the island-specific vocabulary and routing rules that supplement the generic KI conventions. The Glossary decodes Knowledge Islands terminology; Routing Rules records the filing decisions that recur in Arcadia's specific domain structure.
 
 ---
 
 ## Processes
 
-[[Knowledge Capital/Processes/Processes|Processes]] holds Arcadia's instance of the KI process definitions. Currently it contains the [[Knowledge Capital/Processes/Enactment Process|Enactment Process]] - Arcadia's ratification mechanism for changes to canonical knowledge.
+[[Processes|Processes]] holds Arcadia's instance of the KI process definitions. Currently it contains the [[Processes/Enactment Process|Enactment Process]] - Arcadia's ratification mechanism for changes to canonical knowledge.
 
 ---
 
 ## Tools
 
-[[Knowledge Capital/Tools/Tools|Tools]] holds the concrete infrastructure configuration for this island. Integrations lists the external services connected and their MCP identifiers; Physical Locations records the three filesystem paths - text store, binary store, and Cowork working folder - that make up Arcadia's physical footprint.
+[[Tools|Tools]] holds the concrete infrastructure configuration for this island. Integrations lists the external services connected and their MCP identifiers; Physical Locations records the three filesystem paths - text store, binary store, and Cowork working folder - that make up Arcadia's physical footprint.
