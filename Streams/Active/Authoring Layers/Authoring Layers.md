@@ -38,57 +38,51 @@ The remaining work is structural: making the layering implicit rather than label
 
 ## Term Distribution
 
-Role-name mentions across the Pillars notes touched by the rename pass and across all activity Definition notes. Sorted by path. `x` marks a presence (prose mention or `## Prompt` section heading); `—` marks none.
+Role-name mentions across the Pillars notes in scope, regenerated after the prompt migration. Only notes with at least one mention are listed; 17 activity Definitions ended up clean and are not shown (named in observation 5 below). [[Authoring Guidelines]] is also excluded as the framework note that defines the role names - its mentioning all five is tautological and not informative for Option B targeting. Sorted by path. `x` marks a presence (prose mention or `## Prompt` section heading).
 
 | Note                                                              | Definition | Configuration | Pattern | Agent Behaviour | Prompt |
 | ----------------------------------------------------------------- | :--------: | :-----------: | :-----: | :-------------: | :----: |
-| `Model/Activities/Authoring Guidelines/Authoring Guidelines.md`   |     x      |       x       |    x    |        x        |   x    |
-| `Model/Activities/Briefings/Morning Briefing.md`                  |     —      |       —       |    —    |        —        |   x    |
-| `Model/Activities/Constitutional/Conformance.md`                  |     —      |       —       |    —    |        —        |   —    |
-| `Model/Activities/Email/Email Test.md`                            |     —      |       —       |    —    |        —        |   x    |
-| `Model/Activities/Email/Re-route Triaged.md`                      |     —      |       —       |    —    |        —        |   x    |
-| `Model/Activities/Email/Recap.md`                                 |     —      |       —       |    —    |        —        |   x    |
-| `Model/Activities/Email/Route Drift.md`                           |     —      |       —       |    —    |        —        |   x    |
-| `Model/Activities/Email/Route Review.md`                          |     —      |       —       |    —    |        —        |   x    |
-| `Model/Activities/Email/Route Triage.md`                          |     —      |       —       |    —    |        —        |   x    |
-| `Model/Activities/Linear/Linear Sync.md`                          |     —      |       —       |    —    |        —        |   x    |
-| `Model/Activities/Tending/Asset Audit.md`                         |     —      |       —       |    —    |        —        |   —    |
-| `Model/Activities/Tending/Convergence Check.md`                   |     —      |       —       |    —    |        —        |   x    |
-| `Model/Activities/Tending/Health Check.md`                        |     —      |       —       |    —    |        —        |   x    |
-| `Model/Activities/Tending/Inbox Review.md`                        |     —      |       —       |    —    |        —        |   —    |
-| `Model/Activities/Tending/Knowledge Rebuild.md`                   |     —      |       —       |    —    |        —        |   x    |
-| `Model/Activities/Tending/Scheduled Task Audit.md`                |     —      |       —       |    —    |        —        |   x    |
-| `Model/Activities/Tending/Status Review.md`                       |     —      |       —       |    —    |        —        |   —    |
-| `Model/Activities/Tending/Structural Audit.md`                    |     —      |       —       |    —    |        —        |   —    |
 | `Model/Activities/Tending/Tending.md`                             |     x      |       —       |    —    |        —        |   x    |
-| `Model/Activities/Tending/Wikilink Review.md`                     |     —      |       —       |    —    |        —        |   —    |
 | `Model/Activities/What Keeps an Island Alive.md`                  |     —      |       —       |    —    |        —        |   x    |
 | `Model/Agents/Agentic AI/Agentic AI.md`                           |     —      |       —       |    x    |        —        |   —    |
 | `Model/Conventions/Notes/Activity Note.md`                        |     —      |       —       |    —    |        —        |   x    |
 | `Model/Tools/Claude/Activities/Activities.md`                     |     x      |       —       |    —    |        —        |   x    |
 | `Model/Tools/Claude/Activities/Briefings/Briefings.md`            |     x      |       —       |    —    |        —        |   x    |
+| `Model/Tools/Claude/Activities/Briefings/Morning Briefing.md`     |     —      |       —       |    —    |        —        |   x    |
 | `Model/Tools/Claude/Activities/Constitutional/Conformance.md`     |     x      |       x       |    —    |        —        |   x    |
 | `Model/Tools/Claude/Activities/Constitutional/Constitutional.md`  |     x      |       —       |    —    |        —        |   x    |
+| `Model/Tools/Claude/Activities/Email/Email Test.md`               |     —      |       —       |    —    |        —        |   x    |
 | `Model/Tools/Claude/Activities/Email/Email.md`                    |     x      |       —       |    —    |        —        |   x    |
+| `Model/Tools/Claude/Activities/Email/Re-route Triaged.md`         |     —      |       —       |    —    |        —        |   x    |
+| `Model/Tools/Claude/Activities/Email/Recap.md`                    |     —      |       —       |    —    |        —        |   x    |
+| `Model/Tools/Claude/Activities/Email/Route Drift.md`              |     —      |       —       |    —    |        —        |   x    |
+| `Model/Tools/Claude/Activities/Email/Route Review.md`             |     —      |       —       |    —    |        —        |   x    |
+| `Model/Tools/Claude/Activities/Email/Route Triage.md`             |     —      |       —       |    —    |        —        |   x    |
+| `Model/Tools/Claude/Activities/Linear/Linear Sync.md`             |     —      |       —       |    —    |        —        |   x    |
 | `Model/Tools/Claude/Activities/Linear/Linear.md`                  |     x      |       —       |    —    |        —        |   x    |
+| `Model/Tools/Claude/Activities/Tending/Convergence Check.md`      |     —      |       —       |    —    |        —        |   x    |
+| `Model/Tools/Claude/Activities/Tending/Health Check.md`           |     —      |       —       |    —    |        —        |   x    |
+| `Model/Tools/Claude/Activities/Tending/Knowledge Rebuild.md`      |     —      |       —       |    —    |        —        |   x    |
+| `Model/Tools/Claude/Activities/Tending/Scheduled Task Audit.md`   |     x      |       —       |    —    |        —        |   x    |
 | `Model/Tools/Claude/Activities/Tending/Tending.md`                |     x      |       —       |    —    |        —        |   x    |
 | `Model/Tools/Claude/Claude.md`                                    |     x      |       —       |    —    |        —        |   x    |
 | `Model/Tools/How Tools Connect.md`                                |     —      |       —       |    —    |        —        |   x    |
 
 ### Observations
 
-1. **Definition + Prompt is the dominant pair.** Ten notes carry both. Eight are `Tools/Claude/Activities/*/*.md` index notes pointing Prompt-side at their Definition counterparts; the other two are [[Authoring Guidelines]] and the [[Knowledge Islands/Model/Activities/Tending/Tending|Activities/Tending]] index. The eight index notes are the highest-volume target for the per-group index pass.
-2. **`Pattern` appears only in [[Agentic AI]]** outside the framework note. One reader-facing reference. Can be rephrased as "this is general operating guidance, portable across islands" with the role term retired.
-3. **`Agent Behaviour` appears nowhere outside [[Authoring Guidelines]].** Zero reader-facing presence already - useful precedent that a framework term need not propagate outward.
-4. **`Configuration` appears in only one non-framework Pillars note** ([[Conformance]]). The use points the reader at where island-specific config lives - a candidate for replacement with the wikilink alone.
-5. **Twelve of eighteen activity Definition notes carry an inline `## Prompt` H2.** This is the structural form of the convention defined in [[Activity Note]]. Not a target for Option B - the section heading is descriptive, not layer scaffolding. The six without inline prompts are Constitutional/Conformance (whose prompt lives in the separate Prompt note) and the five conversational tending activities (Asset Audit, Inbox Review, Status Review, Structural Audit, Wikilink Review).
-6. **Six activity Definition notes carry no role-name mentions at all** - the same six listed in observation 5. They describe themselves with ordinary nouns plus links, demonstrating that the implicit-layering shape is already viable.
+1. **Definition + Prompt is the dominant pair.** Eleven notes carry both: the [[Knowledge Islands/Model/Activities/Tending/Tending|Activities/Tending]] index, [[Knowledge Islands/Model/Tools/Claude/Claude|Claude]], the seven `Tools/Claude/Activities/*/*.md` per-group index notes, and the consolidated [[Knowledge Islands/Model/Tools/Claude/Activities/Tending/Scheduled Task Audit|Scheduled Task Audit]] note. The seven group index notes plus `Activities.md` and `Claude.md` (nine notes) are the highest-volume target for the per-group index pass - each contains "in the Definition layer" or equivalent prose pointing Prompt-side at Definition-side.
+2. **`Pattern` appears only in [[Agentic AI]]** outside the framework. One reader-facing reference. Can be rephrased as "this is general operating guidance, portable across islands" with the role term retired.
+3. **`Agent Behaviour` appears nowhere outside the framework.** Zero reader-facing presence already - useful precedent that a framework term need not propagate outward.
+4. **`Configuration` appears in only one non-framework Pillars note** ([[Conformance]] under `Tools/Claude/Activities/Constitutional/`). The use points the reader at where island-specific config lives - a candidate for replacement with the wikilink alone.
+5. **All individual activity Definitions are now clean of role-name mentions.** The migration completed the structural separation: Definitions hold descriptive content, Prompts hold executable content, and neither side carries the layer name as part of its prose. The Definition-side notes that still mention role names are the convention ([[Activity Note]]), the activity index ([[What Keeps an Island Alive]]), and the Tending group index. The inline-`## Prompt`-in-Definition convention from [[Activity Note]] format remains as a documented option but is no longer in active use here.
+6. **Role-name mentions concentrate on the `Tools/Claude/` side.** Of 25 notes with at least one mention (excluding the framework note), 20 sit under `Model/Tools/Claude/`. The remaining five are the convention, the activity index, the Tending Definition index, `Agentic AI`, and `How Tools Connect`. Option B's prose work focuses on the Tools/Claude side; the Definition side is already at the implicit-layering target.
 
 ### Caveats on the count
 
 - Case-sensitive; only capitalised role-name uses are counted as "the layer", which is the right filter for the question the matrix answers.
-- The Prompt column conflates two kinds of presence: prose mentions ("the Prompt library", "the prompt below") and `## Prompt` H2 section headings. The H2 use is structural, follows the [[Activity Note]] format convention, and is not a target for Option B. Observations 1-4 concern prose mentions; observation 5 isolates the structural use.
-- Excluded as collisions: `Configuration` as the title of `Realisation/Knowledge Capitals/Configuration/` (a separate concept); `Pattern` as a column header in Email routing tables; `Definitions` as an H2 heading in `Email/Approach.md` (terminology definitions, not the Definition layer).
+- The Prompt column counts both prose mentions ("the Prompt library", "the prompt below") and `## Prompt` H2 section headings. After the migration these are now in the same notes (every Prompt-side activity note has both an H2 and prose), so the conflation is no longer ambiguous.
+- Excluded as the framework: [[Authoring Guidelines]] is the note that defines the role names. Its mentioning all five is by definition, not a sign of leakage, so it is disregarded as a source.
+- Excluded as collisions: `Configuration` as the title of `Realisation/Knowledge Capitals/Configuration/` (a separate concept); `Pattern` as a column header in Email routing tables; `Definitions` as an H2 heading in `Email/Approach.md` (terminology definitions, not the Definition layer); `Prompts` as a verb at line 26 of the Knowledge Rebuild Definition ("Prompts for confirmation").
 
 ---
 
@@ -109,6 +103,8 @@ Role-name mentions across the Pillars notes touched by the rename pass and acros
 | --- | --- |
 | Keep the lattice visible in [[Authoring Guidelines]] | The asymmetry of the cube (5 corners filled, 3 empty) is the analytical heart of the model and earns its place even after the layering becomes implicit |
 | Make layering implicit elsewhere | The numbering and "five-layer model" framing read as scaffolding to readers who do not need to know the model exists; the role names carry enough meaning on their own |
+| Activities can be Claude-specific from the start | Demonstrated by [[Knowledge Islands/Model/Tools/Claude/Activities/Tending/Scheduled Task Audit\|Scheduled Task Audit]]: when an activity has no agent-agnostic content, it lives only at the Prompt layer with no Definition counterpart. The empty `agent-agnostic Definition` corner is a structural option, not a requirement |
+| Schedule, Invocation, and Useful Commands move with the Prompt | These sections describe how a prompt is invoked or supported, not what the activity is. Consolidating them on the Prompt side keeps the Definition focused on "what and why" and avoids duplicating runtime-adjacent detail across two notes |
 
 ---
 
@@ -116,5 +112,7 @@ Role-name mentions across the Pillars notes touched by the rename pass and acros
 
 | Issue | Notes |
 | --- | --- |
-| Whether to retain "in the Definition layer" pointers in per-group index notes | The pointers were a navigational signpost; removing them risks readers who land cold losing context. Mitigation is wikilink quality and the lattice in Authoring Guidelines |
+| Whether to retain "in the Definition layer" pointers in per-group index notes | The pointers were a navigational signpost; removing them risks readers who land cold losing context. Mitigation is wikilink quality and the lattice in Authoring Guidelines. Concrete target: nine notes carry this phrasing today |
 | Whether to keep capitalised role names or downgrade to ordinary nouns | "the Prompt library" reads as a proper noun; "the prompt library" reads as descriptive. The descriptive form is closer to implicit layering |
+| Convergence Check shared-notes list still references the deleted `Activities/Tending/Scheduled Task Audit.md` | The activity is now a Claude-specific Prompt note at `Tools/Claude/Activities/Tending/Scheduled Task Audit.md`. Per the existing convention, `Tools/Claude/Activities/` is "legitimately island-specific" and excluded from the shared-notes list - so the entry should be removed rather than relocated |
+| Frontmatter conventions for Prompt notes are inconsistent | Two patterns coexist: Conformance Prompt note uses `card/prompt` with `# X - Prompt` title and explicit `Definition: [[...]] Configuration: [[...]]` cross-link; the newly migrated Prompt notes use `card/note` with a plain `# X` title and no cross-link. Captured for review in [[Streams/Background/Reading Order/Reading Order\|Reading Order]] - decision will affect the capitalisation pass |
