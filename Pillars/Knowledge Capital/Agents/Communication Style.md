@@ -110,12 +110,3 @@ And:
 These are plain declarations. No performance, no rhetorical lift. They arrive with the weight of something believed rather than composed.
 
 He moves between spiritual experience and practical detail without friction. A vision in a reiki session leads to booking a flight; a community on the edge of primary jungle leads to a clear-eyed assessment of what he learnt about himself. The mystical and the practical occupy the same paragraph without either diminishing the other.
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - parent index
-- [[Pillars/Knowledge Islands/Tools/Claude/Claude|Claude]] - Claude integration note that references this style guide
-- [[Pillars/Knowledge Islands/Agents/Claude/Claude Behaviour|Claude Behaviour]] - behavioural constraints for Claude
-- [[Pillars/Knowledge Islands/Conventions/Notes|Notes]] - note format conventions for the island

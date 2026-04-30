@@ -36,11 +36,3 @@ Pending - not yet started. Depends on arcadia-principal governance being stable.
 4. Create or update `CLAUDE.md` to reflect the Knowledge Islands model
 5. Create `Pillars/Knowledge Islands/Known Lands.md` - the satellite's personal chart of known islands
 6. Link back to arcadia-principal concepts where relevant
-
----
-
-## Related Topics
-
-- [[Streams/Background/Background|Background]] - parent stream index
-- [[Pillars/Knowledge Capital/Known Lands|Known Lands]] - known island record
-- [[Pillars/Knowledge Islands/Processes/Enactment Process|Enactment Process]] - governance model

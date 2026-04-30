@@ -107,10 +107,3 @@ For Soft violations that are intentionally retained, the note carrying the excep
 | Specific tools or integrations | `Pillars/Knowledge Islands/Processes` | Hard | |
 | Specific tools or integrations | `Pillars/Knowledge Capital/Tools` | None | KC tools config is inherently specific |
 | KM/PKM/KB terminology | `Pillars` | Soft | Historical context permitted; document inline |
-
----
-
-## Related Topics
-
-- [[Streams/Active/Active|Active]] - parent stream index
-- [[Pillars/Knowledge Islands/Conventions/Structure/Structure|Structure]] - structural conventions

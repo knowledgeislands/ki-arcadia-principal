@@ -23,10 +23,3 @@ This folder holds the island-specific configuration for the tools and infrastruc
 ## Physical Locations
 
 [[Physical Locations]] documents the three filesystem paths that make up Arcadia's physical footprint: the text store (Git repository in Obsidian), the binary store (not yet defined), and the Cowork working folder used for temporary session outputs. Having these in one place means that any process that needs to know where to read, write, or cache content can find the canonical path here rather than relying on convention or memory.
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - the island self-knowledge index; Tools is one of its five governance areas
-- [[Pillars/Knowledge Islands/Tools/Tools|Tools (KI)]] - the generic tool index; defines MCP patterns, the Obsidian/Cowork/Claude stack, and the separation between tool configuration and agent operating conventions

@@ -87,10 +87,3 @@ Knowledge Islands is not the only model of knowledge organisation. Other systems
 | KIA     | Knowledge Island Archipelago             |
 | KIG     | Knowledge Island Governance              |
 | KISS    | Knowledge Island Storage System          |
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - parent index
-- [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - the concept this vocabulary describes

@@ -33,10 +33,3 @@ Not applicable - Email activity group vetoed.
 ## [[Email Status|Email Status]]
 
 Not applicable - Email activity group vetoed.
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Capital/Charter|Charter]] - records the veto
-- [[Pillars/Knowledge Islands/Activities/Email/Email|Activities/Email]] - the framework activity definitions

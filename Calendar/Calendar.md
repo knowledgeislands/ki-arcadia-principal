@@ -27,11 +27,3 @@ The Calendar folder contains all time-stamped notes: daily notes, meeting notes,
 ## Contents
 
 - [[Calendar/2026/2026|2026]] - periodic notes for 2026
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Conventions/Notes|Notes]] - conventions for daily, meeting, and session digest note structure
-- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - recurring Calendar tasks
-- [[Pillars/Knowledge Islands/Tools/Obsidian/Obsidian|Obsidian]] - primary interface for viewing and editing Calendar notes

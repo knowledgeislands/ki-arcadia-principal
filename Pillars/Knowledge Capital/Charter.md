@@ -92,12 +92,3 @@ Active integrations. See [[Integrations|Integrations]] for MCP prefix detail.
 | Element              | Value                                                                          |
 | -------------------- | ------------------------------------------------------------------------------ |
 | Memory configuration | Auto-memory at `.auto-memory/` in the Cowork workspace; indexed at `MEMORY.md` |
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - parent index
-- [[Pillars/Knowledge Islands/Activities/Constitutional/Conformance|Conformance]] - the activity that validates this note
-- [[Schedule|Schedule]] - day-type taxonomy used by scheduled activities
-- [[Integrations|Integrations]] - full integration detail including MCP prefixes

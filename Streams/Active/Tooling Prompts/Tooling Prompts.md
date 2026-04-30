@@ -53,13 +53,3 @@ The structural scaffolding (folder structure, stub index notes, authoring conven
 | Some existing prompts reference `Tools/Claude/Island Skill.md` - needs updating to new path | `Agents/Claude/Island Skill.md` - catch in reference update pass |
 | Prompt sync status between Knowledge Islands notes and Cowork scheduler is unknown | Scheduled Task Audit will surface any drift on its next run |
 | `Activities/Email/Approach.md` belongs in `Knowledge Capital/Activities/Email/` - it's island-specific system design (Layer 2), not a generic activity doc | Move and update all wikilinks pointing to it; check email prompts that reference it |
-
----
-
-## Related Topics
-
-- [[Streams/Active/Active|Active]] - parent stream index
-- [[Pillars/Knowledge Islands/Tools/Claude/Activities/Activities|Tools/Claude/Activities]] - prompt library
-- [[Pillars/Knowledge Islands/Model/Activities/Authoring Guidelines/Authoring Guidelines|Authoring Guidelines]] - authoring conventions
-- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - Layer 1 activities
-- [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - parent index

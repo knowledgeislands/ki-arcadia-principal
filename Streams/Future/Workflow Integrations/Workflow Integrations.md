@@ -27,12 +27,3 @@ This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactmen
 
 - [ ] **n8n** - Investigate [n8n](https://n8n.io/) as a workflow automation layer; assess whether it adds value over the existing Cowork scheduled task approach or solves problems the current stack cannot
 - [ ] **Node-RED** - Investigate [Node-RED](https://nodered.org/) as a flow-based programming tool for wiring together integrations; assess fit for event-driven island automation
-
----
-
-## Related Topics
-
-- [[Streams/Future/Future|Future]] - parent stream index
-- [[Streams/Future/MCP Ecosystem/MCP Ecosystem|MCP Ecosystem]] - related integrations stream
-- [[Pillars/Knowledge Capital/Tools/Tools|Tools]] - connected tools registry
-- [[Pillars/Knowledge Capital/Charter|Charter]] - tool connections

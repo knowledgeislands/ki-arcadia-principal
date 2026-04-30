@@ -24,11 +24,3 @@ This folder holds the island-specific material that shapes how AI agents interac
 ## Canonical Meta Notes
 
 [[Canonical Meta Notes]] is the ordered reading list for [[Knowledge Rebuild]]. When an agent starts cold - with no prior context about this island - it reads this list in sequence to reconstruct operational awareness: CLAUDE.md first, then governance notes, then the configuration notes in this folder. The order is intentional; each note builds on the context established by the ones before it.
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - the island self-knowledge index; Agents is one of its five governance areas
-- [[Pillars/Knowledge Islands/Agents/Agents|Agents]] - the generic agent model; defines reasoning patterns, modes, and memory architecture that this island configures
-- [[Pillars/Knowledge Islands/Agents/Claude/Claude Behaviour|Claude Behaviour]] - Claude-specific behavioural conventions; the operating layer that sits below the island-specific voice and context notes

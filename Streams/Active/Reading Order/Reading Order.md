@@ -72,10 +72,3 @@ The [[Site Structure]] HTML diagram should be referenced from (or embedded as a 
 ## Governance
 
 This stream follows the [[Enactment Process]].
-
----
-
-## Related Topics
-
-- [[Streams/Active/Active|Active]] - parent stream index
-- [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - the content being sequenced

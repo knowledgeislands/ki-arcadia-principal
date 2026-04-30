@@ -71,11 +71,3 @@ This connects to the civilisational knowledge layer in the model: the choice to 
 A possible framing: **Intention is what distinguishes a living island from an archive.** The cycle of knowledge (Capture, Connect, Reflect) is the mechanism; Intention is what keeps it purposeful rather than just accumulative.
 
 If this holds, Intention might belong in the _Overview_ or as a brief addition to _The Home of Knowledge_ - alongside the point that an island has a defined purpose, not just defined boundaries.
-
----
-
-## Related Topics
-
-- [[Streams/Active/Active|Active]] - parent stream index
-- [[Pillars/Knowledge Islands/Concept/Concept|Concept]] - the note this stream will modify
-- [[Pillars/Knowledge Islands/Processes/Enactment Process|Enactment Process]] - governance model for this stream

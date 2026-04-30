@@ -26,10 +26,3 @@ Ideas and projects not yet started - queued for when the time or circumstances a
 | [[MCP Ecosystem]]                                                                  | `draft` | `low`    |
 | [[Token Economics]] | `draft` | `low`    |
 | [[Island Visualisation]] | `draft` | `low`    |
-
-
----
-
-## Related Topics
-
-- [[Streams/Streams|Streams]] - parent index

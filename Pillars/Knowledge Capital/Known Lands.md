@@ -24,10 +24,3 @@ The foundational archipelago - the Knowledge Island of Knowledge Islands. Arcadi
 | `arcadia-website`   | Satellite; public presence at knowledgeislands.info | `knowledgeislands/arcadia-website`   | `~/kis/knowledgeislands/arcadia-website`   |
 
 **Council:** Kit (Brown) - founding member.
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - parent index
-- [[Pillars/Knowledge Capital/Charter|Charter]] - Arcadia's council model and adoption record

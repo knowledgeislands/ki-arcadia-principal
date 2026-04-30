@@ -55,10 +55,3 @@ The folder contains the Charter (the island's constitutional document), Known La
 ## Tools
 
 [[Knowledge Capital/Tools/Tools|Tools]] holds the concrete infrastructure configuration for this island. Integrations lists the external services connected and their MCP identifiers; Physical Locations records the three filesystem paths - text store, binary store, and Cowork working folder - that make up Arcadia's physical footprint.
-
----
-
-## Related Topics
-
-- [[Pillars/Pillars|Pillars]] - the Library's top-level index; Knowledge Capital is one of its Pillar domains
-- [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - the portable framework of which this is Arcadia's specific instance

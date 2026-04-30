@@ -48,11 +48,3 @@ The order follows the folder structure of `Pillars/Knowledge Islands/`, leaf nod
 
 - [ ] Verify stream focus index tables (Active, Background, Dormant, Future, Settled) match the top-level `Streams.md` table
 - [ ] Add a stream index table audit step to the appropriate maintenance activity (Health Check or Conformance Check)
-
----
-
-## Related Topics
-
-- [[Streams/Active/Active|Active]] - parent stream index
-- [[Pillars/Knowledge Islands/Knowledge Islands|Knowledge Islands]] - target root note
-- [[Pillars/Knowledge Islands/Conventions/Notes/Notes|Notes]] - index note standard

@@ -40,10 +40,3 @@ The `productivity:memory-management` skill stores reference material under `memo
 
 - KI terminology and acronyms → [[Glossary|Glossary]]
 - Custodian profiles → `Resources/People/`
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - parent index
-- [[Pillars/Knowledge Islands/Conventions/Structure/Structure|Structure]] - general folder structure conventions

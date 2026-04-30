@@ -30,12 +30,3 @@ This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactmen
 | Known Lands | Already created (`Pillars/Knowledge Islands/Known Lands.md`). May need enriching once arcadia-principal governance is stable. | `Pillars/Knowledge Capital/Known Lands.md` |
 | Knowledge Capital | `Pillars/Knowledge Capital/` needs creating in kit-principal following the same pattern - Identity, Physical Locations, Routing Rules, Glossary, Governance instance | Phase B.3 output |
 | Cross-island links | Notes linking kit-principal's streams/pillars to relevant arcadia-principal concepts | Ongoing |
-
----
-
-## Related Topics
-
-- [[Streams/Background/Background|Background]] - parent stream index
-- [[Pillars/Knowledge Capital/Known Lands|Known Lands]] - Arcadia island map
-- [[Pillars/Knowledge Capital/Charter|Charter]] - council membership
-- [[Pillars/Knowledge Islands/Processes/Enactment Process|Enactment Process]] - governance model

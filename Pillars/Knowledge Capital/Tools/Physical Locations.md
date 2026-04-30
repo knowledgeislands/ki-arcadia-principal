@@ -23,9 +23,3 @@ The island spans three physical locations. The text and binary stores mirror the
 | Binary store   | -              | Not yet defined                                 | Arcadia currently has no binary store                                               |
 
 See [[Structure]] for the general store convention.
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - parent index

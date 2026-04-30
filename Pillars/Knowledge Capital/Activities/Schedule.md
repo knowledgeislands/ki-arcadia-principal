@@ -34,9 +34,3 @@ When creating a daily note, set `day_type` as follows (first match wins):
 2. Date appears in `Calendar/YYYY/YYYY UK Bank Holidays.md` → `bank-holiday`
 3. Date appears in `Calendar/YYYY/YYYY Annual Leave.md` → `annual-leave`
 4. Otherwise → `work-day`
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - parent index

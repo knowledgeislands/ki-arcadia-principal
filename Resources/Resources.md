@@ -12,9 +12,3 @@ author: Written with Claude
 ---
 
 ## Contents
-
----
-
-## Related Topics
-
-- [[Pillars/Pillars|Pillars]]

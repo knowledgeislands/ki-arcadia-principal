@@ -29,10 +29,3 @@ Arcadia follows the standard pattern without modification:
 ## Localised Conventions
 
 None currently defined. Arcadia follows the canonical pattern in full. If deviations are introduced, document them here.
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - parent index
-- [[Pillars/Knowledge Islands/Processes/Enactment Process|Enactment Process]] - the canonical pattern this instance follows

@@ -52,11 +52,3 @@ This stream follows the [[Knowledge Islands/Processes/Enactment Process|Enactmen
 2. **What triggers a proposal?** The activity needs a definition of "ready" - otherwise it produces proposals prematurely or misses mature ideas. Likely a combination of: stream status (`in-progress`), presence of a Design section with substantive content, and explicit open questions that have been resolved.
 
 3. **Who reviews the proposals?** The activity produces proposal notes; council members decide whether to ratify. The activity itself should not make that call - it surfaces; humans decide.
-
----
-
-## Related Topics
-
-- [[Streams/Future/Future|Future]] - parent stream index
-- [[Pillars/Knowledge Islands/Processes/Enactment Process|Enactment Process]] - enactment process
-- [[Pillars/Knowledge Islands/Activities/Activities|Activities]] - activity registry

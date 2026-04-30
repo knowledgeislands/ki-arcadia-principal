@@ -76,13 +76,3 @@ The existing introduction of Harbour in Concept.md (§ The Shore) already says: 
 Customs at the boundary rule is already implicit in Concept.md: "if customs exist at the boundary, it is a separate territory. If knowledge flows freely with no controls, it is internal structure." The conceptual section may only need to expand this into a definition rather than invent something new.
 
 The working hypothesis on settlement types: the repository is the defining boundary. An island is an island because it has its own repository. Below that threshold - a named division within a single repository - is a Town. This would be added to the settlement type table in Concept.md alongside Principal and Satellite.
-
----
-
-## Related Topics
-
-- [[Streams/Background/Background|Background]] - parent stream index
-- [[Pillars/Knowledge Islands/Concept/Concept|Concept]] - primary target note
-- [[Pillars/Knowledge Islands/Conventions/Structure/Structure|Structure]] - secondary target note
-- [[Streams/Active/Intentional/Intentional|Intentional]] - related conceptual stream
-- [[Pillars/Knowledge Islands/Processes/Enactment Process|Enactment Process]] - governance model

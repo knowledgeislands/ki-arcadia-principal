@@ -67,9 +67,3 @@ Live tracking view of all active proposals. Ordered by Stream (Active → Backgr
 ## Settled
 
 [[Settled]] holds concluded streams kept for reference. A stream moves here when its work is complete and its knowledge has been extracted to the appropriate Pillars notes. Over time, Settled entries may be removed entirely once their content has been fully absorbed.
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Islands/Conventions/Structure/Structure|Structure]] - routing conventions

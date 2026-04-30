@@ -25,9 +25,3 @@ Streams currently receiving active attention - projects being worked on now.
 | [[Auto Proposal Pipeline|Proposal Pipeline]] | `draft` | `medium` |
 | [[Intentional]] | `draft` | `medium` |
 | [[Page Registry]] | `draft` | `medium` |
-
----
-
-## Related Topics
-
-- [[Streams/Streams|Streams]] - parent index

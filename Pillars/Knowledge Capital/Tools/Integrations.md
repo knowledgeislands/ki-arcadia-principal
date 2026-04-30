@@ -22,9 +22,3 @@ External tools connected to Arcadia. Arcadia's integration surface is minimal - 
 | Inbox   | `+/` folder - exclude `+/_Voice Notes/` | (filesystem)    |
 
 No external calendar, task, issue, or email integrations are currently configured for Arcadia. Integrations are added here as they are introduced.
-
----
-
-## Related Topics
-
-- [[Pillars/Knowledge Capital/Knowledge Capital|Knowledge Capital]] - parent index

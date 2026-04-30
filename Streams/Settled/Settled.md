@@ -20,10 +20,3 @@ Settled streams are projects and workstreams that have reached a natural conclus
 | ----- | ------ | -------- |
 | Conformance | `completed` | `urgent` |
 | [[Streams/Settled/Wiki Link Format/Wiki Link Format\|Wiki Link Format]] | `completed` | `medium` |
-
----
-
-## Related Topics
-
-- [[Streams/Streams|Streams]] - parent index
-- [[Streams/Dormant/Dormant|Dormant]] - dormant streams
