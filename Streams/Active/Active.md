@@ -22,7 +22,6 @@ Streams currently receiving active attention - projects being worked on now.
 | [[Boundary Rules]] | `draft` | `urgent` |
 | [[Authoring Layers]] | `draft` | `medium` |
 | [[Index Review]] | `draft` | `medium` |
-| [[Reading Order]] | `draft` | `medium` |
 | [[Auto Proposal Pipeline|Proposal Pipeline]] | `draft` | `medium` |
 | [[Intentional]] | `draft` | `medium` |
 | [[Knowledge Capital Extraction]] | `draft` | `medium` |
