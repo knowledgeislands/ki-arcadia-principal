@@ -35,13 +35,12 @@
   .ch-name{font-weight:700;font-size:13px;display:block;}
   .ch-q{font-size:10px;font-style:italic;color:#999;margin-top:3px;display:block;}
   td.sec       { font-size:13px; color:#1a1a1a; }
-  td.sec-blank { background:#fafafa !important; }
+  td.sec-blank { background:#fafafa !important; height:28px; }
   .tag{display:inline-block;font-size:10px;border-radius:3px;padding:1px 5px;margin-left:6px;font-weight:600;vertical-align:middle;}
-  .t-reveal{background:#fef3c7;color:#b45309;border:1px solid #fcd34d;}
-  .t-new   {background:#f0fdf4;color:#15803d;border:1px solid #86efac;}
-  .t-setup {background:#f9fafb;color:#9ca3af;border:1px solid #e5e7eb;}
-  .t-gap   {background:#fef2f2;color:#b91c1c;border:1px solid #fecaca;}
-  .t-todo  {background:#f9fafb;color:#b0b7c3;border:1px solid #e5e7eb;}
+  .t-intro  {background:#f9fafb;color:#b0b7c3;border:1px solid #e5e7eb;}
+  .t-todo   {background:#eff6ff;color:#1d4ed8;border:1px solid #bfdbfe;}
+  .t-revise {background:#fef3c7;color:#b45309;border:1px solid #fcd34d;}
+  .t-expand {background:#f5f3ff;color:#7c3aed;border:1px solid #ddd6fe;}
   .path    { display:block; font-size:10px; color:#bbb; margin-top:2px; font-family:monospace; }
   .child     { display:block; font-size:10px; color:#94a3b8; margin-top:1px; font-family:monospace; padding-left:8px; }
   .child::before     { content:"↳ "; color:#cbd5e1; }
@@ -70,11 +69,10 @@
 </table>
 
 <div class="legend">
-  <div class="legend-item"><div class="legend-swatch" style="background:#fffbeb;border-color:#fcd34d;"></div>intro</div>
-  <div class="legend-item"><div class="legend-swatch" style="background:#f9fafb;border-color:#e5e7eb;"></div>setup beat / todo</div>
-  <div class="legend-item"><div class="legend-swatch" style="background:#f0fdf4;border-color:#86efac;"></div>new section</div>
-  <div class="legend-item"><div class="legend-swatch" style="background:#fef2f2;border-color:#fecaca;"></div>contextualisation gap</div>
-  <div class="legend-item"><div class="legend-swatch" style="background:#fafafa;border-color:#ddd;"></div>placeholder</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#f9fafb;border-color:#e5e7eb;"></div>intro</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#eff6ff;border-color:#bfdbfe;"></div>todo</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#fef3c7;border-color:#fcd34d;"></div>revise</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#f5f3ff;border-color:#ddd6fe;"></div>expand</div>
   <div class="legend-item" style="border-left:1px solid #ddd;padding-left:16px;margin-left:4px;">review:</div>
   <div class="legend-item"><div class="legend-swatch" style="background:#fef3c7;border-color:#fcd34d;"></div>flag</div>
   <div class="legend-item"><div class="legend-swatch" style="background:#dcfce7;border-color:#86efac;"></div>done</div>
@@ -84,7 +82,7 @@
 <script>
 // ---------------------------------------------------------------------------
 // DATA
-// tags:     [] | any of: reveal | new | setup | gap | todo   — shown as pills after title
+// tags:     [] | any of: intro | todo | revise | expand   — shown as pills after title
 // review:   ns | flag | done
 // sources:  child notes inside the section folder (listed inline at Level 4)
 // ---------------------------------------------------------------------------
@@ -101,23 +99,23 @@ const data = {
           name: "Background",
           question: "overview → history → raw material → scope → existing attempts → mechanism → reveal",
           sections: [
-            { title: "What is Knowledge Islands",      path: "Pillars/Knowledge Islands/Introduction/Background/What is Knowledge Islands/",      tags: [],           review: "ns",   sources: []                                                                                                                                                                                                              },
-            { title: "History of Knowledge Systems",   path: "Pillars/Knowledge Islands/Introduction/Background/History of Knowledge Systems/",   tags: ["new"],      review: "done", sources: []                                                                                                                                                                                                              },
-            { title: "What is Knowledge",              path: "Pillars/Knowledge Islands/Introduction/Background/What is Knowledge/",              tags: [],           review: "ns",   sources: []                                                                                                                                                                                                              },
-            { title: "Layers of Knowledge",            path: "Pillars/Knowledge Islands/Introduction/Background/Layers of Knowledge/",            tags: [],           review: "ns",   sources: []                                                                                                                                                                                                              },
-            { title: "Other Approaches",               path: "Pillars/Knowledge Islands/Introduction/Background/Other Approaches/",               tags: ["setup"],    review: "ns",   sources: []                                                                                                                                                                                                              },
-            { title: "The Cycle of Knowledge",         path: "Pillars/Knowledge Islands/Introduction/Background/The Cycle of Knowledge/",         tags: [],           review: "ns",   sources: []                                                                                                                                                                                                              },
-            { title: "The Home of Knowledge",          path: "Pillars/Knowledge Islands/Introduction/Background/The Home of Knowledge/",          tags: ["reveal"],   review: "flag", sources: []                                                                                                                                                                                                              }
+            { title: "What is Knowledge Islands",                 tags: ["intro"],       review: "ns",            path: "Pillars/Knowledge Islands/Introduction/Background/What is Knowledge Islands/",        sources: [] },
+            { title: "History of Knowledge Systems",              tags: [],              review: "done",          path: "Pillars/Knowledge Islands/Introduction/Background/History of Knowledge Systems/",     sources: [] },
+            { title: "What is Knowledge",                         tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Introduction/Background/What is Knowledge/",                sources: [] },
+            { title: "Layers of Knowledge",                       tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Introduction/Background/Layers of Knowledge/",              sources: [] },
+            { title: "Other Approaches",                          tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Introduction/Background/Other Approaches/",                 sources: [] },
+            { title: "The Cycle of Knowledge",                    tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Introduction/Background/The Cycle of Knowledge/",           sources: [] },
+            { title: "The Home of Knowledge",                     tags: [],              review: "flag",          path: "Pillars/Knowledge Islands/Introduction/Background/The Home of Knowledge/",            sources: [] }
           ]
         },
         {
           name: "Concept",
           question: "scale → actors → authority → operation",
           sections: [
-            { title: "Territories & Archipelagos",     path: "Pillars/Knowledge Islands/Introduction/Concept/Territories and Archipelagos/",     tags: [],           review: "flag", sources: []                                                                                                                                                                                                              },
-            { title: "Agents",                         path: "Pillars/Knowledge Islands/Introduction/Concept/Agents/",                           tags: [],           review: "ns",   sources: []                                                                                                                                                                                                              },
-            { title: "Jurisdiction",                   path: "Pillars/Knowledge Islands/Introduction/Concept/Jurisdiction/",                     tags: [],           review: "ns",   sources: []                                                                                                                                                                                                              },
-            { title: "Governance",                     path: "Pillars/Knowledge Islands/Introduction/Concept/Governance/",                       tags: [],           review: "ns",   sources: []                                                                                                                                                                                                              }
+            { title: "Territories & Archipelagos",                tags: [],              review: "flag",          path: "Pillars/Knowledge Islands/Introduction/Concept/Territories and Archipelagos/",        sources: [] },
+            { title: "Agents",                                    tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Introduction/Concept/Agents/",                              sources: [] },
+            { title: "Jurisdiction",                              tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Introduction/Concept/Jurisdiction/",                        sources: [] },
+            { title: "Governance",                                tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Introduction/Concept/Governance/",                          sources: [] }
           ]
         }
       ]
@@ -131,50 +129,50 @@ const data = {
           name: "Conventions",
           question: "What is the language?",
           sections: [
-            { title: "Notes",                          path: "Pillars/Knowledge Islands/Model/Conventions/Notes/",                               tags: [],           review: "flag", sources: ["Format.md", "Properties.md", "Tags.md", "Activity Note.md", "Collection Card.md", "Meeting Note.md", "Session Digest.md"]                                                                                     },
-            { title: "Residency",                      path: "Pillars/Knowledge Islands/Model/Conventions/Residency/",                          tags: [],           review: "ns",   sources: []                                                                                                                                                                                                              },
-            { title: "Structure",                      path: "Pillars/Knowledge Islands/Model/Conventions/Structure/",                          tags: [],           review: "flag", sources: []                                                                                                                                                                                                              }
+            { title: "Notes",                                     tags: [],              review: "flag",          path: "Pillars/Knowledge Islands/Model/Conventions/Notes/",                                  sources: ["Format.md", "Properties.md", "Tags.md", "Activity Note.md", "Collection Card.md", "Meeting Note.md", "Session Digest.md"] },
+            { title: "Residency",                                 tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Model/Conventions/Residency/",                              sources: [] },
+            { title: "Structure",                                 tags: [],              review: "flag",          path: "Pillars/Knowledge Islands/Model/Conventions/Structure/",                              sources: [] }
           ]
         },
         {
           name: "Processes",
           question: "How does change happen?",
           sections: [
-            { title: "Enactment Process",              path: "Pillars/Knowledge Islands/Model/Processes/Enactment Process/",                    tags: [],           review: "ns",   sources: []                                                                                                                                                                                                              },
-            { title: "Contribution Process",           path: "Pillars/Knowledge Islands/Model/Processes/Contribution Process/",                 tags: [],           review: "ns",   sources: []                                                                                                                                                                                                              }
+            { title: "Enactment Process",                         tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Model/Processes/Enactment Process/",                        sources: [] },
+            { title: "Contribution Process",                      tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Model/Processes/Contribution Process/",                     sources: [] }
           ]
         },
         {
           name: "Activities",
           question: "How does the island stay alive?",
           sections: [
-            { title: "Authoring Activities",           path: "Pillars/Knowledge Islands/Model/Activities/Authoring Activities/",                tags: [],           review: "ns",   sources: []                                                                                                                                                                                                              },
-            { title: "Constitutional",                 path: "Pillars/Knowledge Islands/Model/Activities/Constitutional/",                      tags: [],           review: "ns",   sources: ["Conformance.md"]                                                                                                                                                                                              },
-            { title: "Tending",                        path: "Pillars/Knowledge Islands/Model/Activities/Tending/",                             tags: [],           review: "ns",   sources: ["Scheduled Task Audit.md", "Health Check.md", "Knowledge Rebuild.md", "Inbox Review.md", "Asset Audit.md", "Status Review.md", "Structural Audit.md", "Wikilink Review.md", "Convergence Check.md"]          },
-            { title: "Briefings",                      path: "Pillars/Knowledge Islands/Model/Activities/Briefings/",                          tags: [],           review: "ns",   sources: ["Morning Briefing.md"]                                                                                                                                                                                         },
-            { title: "Email",                          path: "Pillars/Knowledge Islands/Model/Activities/Email/",                              tags: [],           review: "ns",   sources: ["Approach.md", "Route Drift.md", "Route Review.md", "Route Triage.md", "Re-route Triaged.md", "Recap.md", "Email Test.md"]                                                                                     },
-            { title: "Linear",                         path: "Pillars/Knowledge Islands/Model/Activities/Linear/",                             tags: [],           review: "ns",   sources: ["Linear Sync.md"]                                                                                                                                                                                              }
+            { title: "Authoring Activities",                      tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Model/Activities/Authoring Activities/",                    sources: [] },
+            { title: "Constitutional",                            tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Model/Activities/Constitutional/",                          sources: ["Conformance.md"] },
+            { title: "Tending",                                   tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Model/Activities/Tending/",                                 sources: ["Scheduled Task Audit.md", "Health Check.md", "Knowledge Rebuild.md", "Inbox Review.md", "Asset Audit.md", "Status Review.md", "Structural Audit.md", "Wikilink Review.md", "Convergence Check.md"] },
+            { title: "Briefings",                                 tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Model/Activities/Briefings/",                               sources: ["Morning Briefing.md"] },
+            { title: "Email",                                     tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Model/Activities/Email/",                                   sources: ["Approach.md", "Route Drift.md", "Route Review.md", "Route Triage.md", "Re-route Triaged.md", "Recap.md", "Email Test.md"] },
+            { title: "Linear",                                    tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Model/Activities/Linear/",                                  sources: ["Linear Sync.md"] }
           ]
         },
         {
           name: "Agents",
           question: "Who acts?",
           sections: [
-            { title: "Human",                          path: "Pillars/Knowledge Islands/Model/Agents/Human/",                                   tags: [],           review: "ns",   sources: []                                                                                                                                                                                                              },
-            { title: "Agentic AI",                     path: "Pillars/Knowledge Islands/Model/Agents/Agentic AI/",                              tags: [],           review: "ns",   sources: ["AI Automation Patterns.md"]                                                                                                                                                                                   },
-            { title: "Claude",                         path: "Pillars/Knowledge Islands/Model/Agents/Claude/",                                  tags: [],           review: "ns",   sources: []                                                                                                                                                                                                              },
-            { title: "ChatGPT",                        path: "Pillars/Knowledge Islands/Model/Agents/ChatGPT/",                                 tags: [],           review: "ns",   sources: []                                                                                                                                                                                                              }
+            { title: "Human",                                     tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Model/Agents/Human/",                                       sources: [] },
+            { title: "Agentic AI",                                tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Model/Agents/Agentic AI/",                                  sources: ["AI Automation Patterns.md"] },
+            { title: "Claude",                                    tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Model/Agents/Claude/",                                      sources: [] },
+            { title: "ChatGPT",                                   tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Model/Agents/ChatGPT/",                                     sources: [] }
           ]
         },
         {
           name: "Tools",
           question: "With what?",
           sections: [
-            { title: "Obsidian",                       path: "Pillars/Knowledge Islands/Model/Tools/Obsidian/",                                 tags: [],           review: "ns",   sources: ["Templates/  (14 templates)"]                                                                                                                                                                                  },
-            { title: "Claude",                         path: "Pillars/Knowledge Islands/Model/Tools/Claude/",                                   tags: [],           review: "ns",   sources: ["Cowork Configuration Layers.md", "Mistakes and Lessons.md", "Live Artifacts/Live Artifacts.md", "Activities/  (Layer 5 prompts)"]                                                                             },
-            { title: "ChatGPT",                        path: "Pillars/Knowledge Islands/Model/Tools/ChatGPT/",                                  tags: [],           review: "ns",   sources: []                                                                                                                                                                                                              },
-            { title: "Linear",                         path: "Pillars/Knowledge Islands/Model/Tools/Linear/",                                   tags: [],           review: "ns",   sources: []                                                                                                                                                                                                              },
-            { title: "Microsoft 365",                  path: "Pillars/Knowledge Islands/Model/Tools/Microsoft 365/",                            tags: [],           review: "ns",   sources: []                                                                                                                                                                                                              }
+            { title: "Obsidian",                                  tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Model/Tools/Obsidian/",                                     sources: ["Templates/  (14 templates)"] },
+            { title: "Claude",                                    tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Model/Tools/Claude/",                                       sources: ["Cowork Configuration Layers.md", "Mistakes and Lessons.md", "Live Artifacts/Live Artifacts.md", "Activities/  (Layer 5 prompts)"] },
+            { title: "ChatGPT",                                   tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Model/Tools/ChatGPT/",                                      sources: [] },
+            { title: "Linear",                                    tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Model/Tools/Linear/",                                       sources: [] },
+            { title: "Microsoft 365",                             tags: [],              review: "ns",            path: "Pillars/Knowledge Islands/Model/Tools/Microsoft 365/",                                sources: [] }
           ]
         }
       ]
@@ -188,20 +186,20 @@ const data = {
           name: "Knowledge Capitals",
           question: "The model instantiated",
           sections: [
-            { title: "Charter",                        path: "Pillars/Knowledge Islands/Realisation/Knowledge Capitals/Charter/",               tags: ["todo"],     review: "flag", sources: []                                                                                                                                                                                                              },
-            { title: "Council",                        path: "Pillars/Knowledge Islands/Realisation/Knowledge Capitals/Council/",               tags: ["todo"],     review: "flag", sources: []                                                                                                                                                                                                              },
-            { title: "Integrations",                   path: "Pillars/Knowledge Islands/Realisation/Knowledge Capitals/Integrations/",          tags: ["todo"],     review: "flag", sources: []                                                                                                                                                                                                              },
-            { title: "Configuration",                  path: "Pillars/Knowledge Islands/Realisation/Knowledge Capitals/Configuration/",         tags: ["todo"],     review: "flag", sources: []                                                                                                                                                                                                              }
+            { title: "Charter",                                   tags: ["todo"],        review: "flag",          path: "Pillars/Knowledge Islands/Realisation/Knowledge Capitals/Charter/",                   sources: [] },
+            { title: "Council",                                   tags: ["todo"],        review: "flag",          path: "Pillars/Knowledge Islands/Realisation/Knowledge Capitals/Council/",                   sources: [] },
+            { title: "Integrations",                              tags: ["todo"],        review: "flag",          path: "Pillars/Knowledge Islands/Realisation/Knowledge Capitals/Integrations/",              sources: [] },
+            { title: "Configuration",                             tags: ["todo"],        review: "flag",          path: "Pillars/Knowledge Islands/Realisation/Knowledge Capitals/Configuration/",             sources: [] }
           ]
         },
         {
           name: "Arcadia",
           question: "The living island",
           sections: [
-            { title: "Great Library of Arcadia",       path: "Pillars/Knowledge Islands/Realisation/Arcadia/Great Library of Arcadia/",         tags: ["todo"],     review: "flag", sources: []                                                                                                                                                                                                              },
-            { title: "", path: "", tags: [], review: null, sources: [] },
-            { title: "", path: "", tags: [], review: null, sources: [] },
-            { title: "", path: "", tags: [], review: null, sources: [] }
+            { title: "Great Library of Arcadia",                  tags: ["todo"],        review: "flag",          path: "Pillars/Knowledge Islands/Realisation/Arcadia/Great Library of Arcadia/",             sources: [] },
+            { title: "",                                          tags: [],              review: null,        path: "",                                                                                    sources: [] },
+            { title: "",                                          tags: [],              review: null,        path: "",                                                                                    sources: [] },
+            { title: "",                                          tags: [],              review: null,        path: "",                                                                                    sources: [] }
           ]
         }
       ]
@@ -214,11 +212,10 @@ const data = {
 // ---------------------------------------------------------------------------
 
 const tagMap = {
-  reveal: { label: "★ reveal", cls: "t-reveal" },
-  new:    { label: "new",      cls: "t-new"    },
-  setup:  { label: "setup",    cls: "t-setup"  },
-  gap:    { label: "gap",      cls: "t-gap"    },
-  todo:   { label: "todo",     cls: "t-todo"   }
+  intro:  { label: "intro",  cls: "t-intro"  },
+  todo:   { label: "todo",   cls: "t-todo"   },
+  revise: { label: "revise", cls: "t-revise" },
+  expand: { label: "expand", cls: "t-expand" }
 };
 
 const reviewMap = {
