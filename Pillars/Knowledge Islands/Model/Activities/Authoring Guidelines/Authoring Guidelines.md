@@ -105,19 +105,6 @@ Every adoptable group index note must include an Adoption Requirements section. 
 
 ---
 
-## Prompt Editing Discipline
-
-When iterating on a scheduled task's prompt via its activity note:
-
-- Edit the island note freely - treat it as the draft. As many iterations as needed.
-- Do **not** call `update_scheduled_task` after every edit. The scheduled task is a release target, not a live editor.
-- Only push accumulated changes to the scheduled task when the user signals readiness: _"push it"_, _"sync the task"_, _"ready to run"_, or equivalent.
-- At the end of any session where prompt changes were made without a push, flag that the push is still pending.
-
-Pushing every small edit wastes API calls, creates noisy scheduler state, and risks a half-baked prompt running if a schedule fires mid-iteration.
-
----
-
 ## Designing a New Activity
 
 1. **Identify the layer** - is this truly a new activity (new Definition note needed) or a new prompt variant of an existing one (Prompt only)?

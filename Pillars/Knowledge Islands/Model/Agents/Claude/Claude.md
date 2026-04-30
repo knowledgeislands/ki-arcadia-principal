@@ -97,6 +97,125 @@ Behavioural expectations for Claude when working with this island. These apply r
 
 ---
 
+## Release Targets
+
+Some artefacts Claude maintains in this island have a deployed counterpart - a Cowork scheduled task, a live artifact, or similar. The island note (or source file) is the draft; the deployed surface is the release target. Apply changes to the source freely; refresh the release surface in batches.
+
+- Edit the source freely - treat it as the draft. As many iterations as needed.
+- Do **not** call `update_scheduled_task` (or its equivalent for live artifacts) after every edit. The release surface is a target, not a live editor.
+- Push accumulated changes to the release target when the user signals readiness: _"push it"_, _"sync the task"_, _"ready to run"_, or equivalent.
+- At the end of any session where source changes were made without a push, flag that the push is still pending.
+
+Pushing every small edit wastes API calls, creates noisy scheduler or deployment state, and risks a half-baked release running if a schedule fires (or another consumer reads the artifact) mid-iteration.
+
+---
+
+## Live Artifact Patterns
+
+Recurring design decisions for Cowork HTML artifacts - self-contained pages that re-fetch data via `window.cowork.callMcpTool` on every open. Derived from the [[Live Artifacts]] collection.
+
+### Live Artifact Baseline
+
+Structural rules that apply to every Cowork HTML artifact:
+
+- **Light-mode only.** `:root { color-scheme: light }`. Cowork's artifact chrome is light; dark-mode CSS adds complexity with no benefit.
+- **No browser storage.** `localStorage` and `sessionStorage` are not reliably available in the artifact sandbox. All state lives in JS variables for the duration of the load.
+- **Inline all CSS and JS; no external fetches.** The artifact must be self-contained. External CDN links introduce network dependencies and potential load failures.
+- **Error banner on top-level `.catch`.** Wrap the entire fetch-and-render flow in a try/catch (or `.catch` on the top-level promise). On failure, replace the content area with a visible red banner carrying the thrown message - a broken MCP connector must be diagnosable without opening DevTools.
+- **Verification surface.** Include a footer or meta line showing generated-at timestamp, entity counts, and any tool errors. This is the target for the reload-and-check step after any update - both mechanics can succeed silently while leaving the artifact in a broken state.
+
+### Parallel MCP Fetch
+
+When an artifact needs data from multiple endpoints or must fan out across repeated calls against the same endpoint, use `Promise.all` rather than sequential awaits:
+
+```js
+const results = await Promise.all(SOURCES.map((src) => window.cowork.callMcpTool(TOOL, { ...src })))
+```
+
+Where calls may return overlapping entities (e.g. fetching the same issue under different state buckets), de-dup after merging using a `Map` keyed by the entity's stable ID field:
+
+```js
+const seen = new Map()
+for (const batch of results) {
+  for (const item of batch) {
+    if (!seen.has(item.id)) seen.set(item.id, item)
+  }
+}
+```
+
+If partial results are acceptable (one failing source should not abort all others), use `Promise.allSettled` instead and handle rejected entries individually.
+
+### Client-Side Rolling Window
+
+For time-based views, compute the window in JS from `new Date()` rather than baking dates into the prompt. This keeps the artifact useful indefinitely without a rebuild:
+
+```js
+const TZ = 'Europe/London' // single source of truth for the timezone
+const now = new Date()
+const windowStart = new Date(now - 24 * 60 * 60 * 1000)
+```
+
+Run all date formatting through `Intl.DateTimeFormat` with `timeZone: TZ` - nothing else needs touching when the timezone changes. Expose named constants for window bounds (e.g. `SPARK_START`, `SPARK_END` in minutes-of-day) rather than scattering literals through the code; the percentage maths and axis labels should all derive from those two constants.
+
+### MCP Connector Rewiring
+
+Tool names are `mcp__<uuid>__<method>`. The UUID is not stable - it changes when an MCP server is reinstalled or re-authenticated. The symptom is a silent failure that fires the error banner with a cryptic message.
+
+Mitigation: expose the fully-qualified tool name as a named constant at the top of the script, and keep it in sync with the `mcp_tools` declaration on the artifact. When the connector is rewired, it is a one-line fix rather than a grep through the HTML:
+
+```js
+const TOOL = 'mcp__<uuid>__list_events' // update here and in mcp_tools if MCP is reinstalled
+```
+
+The `mcp_tools` declaration must reference the same string; a mismatch causes the call to be rejected before it reaches the network.
+
+### Deterministic vs `sample()` Synthesis
+
+Two modes for rendering derived text in an artifact:
+
+- **Deterministic** - plain JS (counts, truncation, string concatenation). Fast, consistent across reloads, works offline, zero latency. Prefer for structured labels, grouping headers, and stat tiles.
+- **`sample()`** - `window.cowork.sample()` with a tight prompt specifying language, a hard word cap, and a "no preamble, no quotes" instruction. Warmer and more readable for one-line summaries of unstructured text. Adds latency and variance.
+
+When using `sample()`:
+
+- Strip markdown and ID syntax (e.g. Slack's `<@Uxxx|Name>`, `<url|label>`) before passing text to the model - otherwise tokens are wasted on format artefacts.
+- Always provide a deterministic fallback for when `sample()` errors or returns empty; the artifact must never block on summarisation.
+- Run summary calls in `Promise.all` across all cards - do not await them sequentially.
+
+To swap modes later: replace the `sample()`-driven function body with a JS-derived line (or vice versa). The swap is localised to one function.
+
+### Two-Mechanic Update Protocol
+
+Two mechanics are available for changing a live artifact without starting from scratch:
+
+- **Regenerate in place.** Call `mcp__cowork__create_artifact` with the same `id` and replacement HTML. Cowork overwrites in place; the pinned artifact refreshes on next open. Use when touching more than one section.
+- **Patch a fragment.** Use `mcp__cowork__update_artifact` to swap a targeted region. Cheaper when only a small area changes.
+
+After either mechanic: open the artifact, hit the Reload button in the Cowork header, and check the verification surface (footer timestamp, counts, error banner). Both mechanics can succeed silently while leaving the artifact in a broken state. Then apply the Recipe Self-Synchronisation pattern below.
+
+### Recipe Self-Synchronisation
+
+Every live artifact should carry a pointer back to its recipe note, and any modification to the artifact should be reflected in that note.
+
+**In the artifact HTML** - embed the recipe path as the first line of the `<head>`:
+
+```html
+<!-- Recipe: Pillars/Knowledge Islands/Model/Tools/Claude/Live Artifacts/<Recipe Name>.md -->
+```
+
+Preserve this comment through any regeneration or patch. It is the single source of truth for where the recipe lives, readable without opening the island.
+
+**In the Reusable Prompt** - include the following instruction so that future rebuilds preserve the comment and the sync discipline:
+
+```
+- Embed the comment <!-- Recipe: Pillars/.../This Recipe.md --> as the first line of the <head>; preserve it through any regeneration or patch.
+- If you modify this artifact, update the recipe note at the path in that comment - use the specific Knowledge Island's skill in SAVE mode. Read the note first and merge in; update only the sections that changed: Overview for scope changes, Key Design Decisions for structural changes, Updating for new in-place edit patterns, Potential Enhancements to mark items as built-in.
+```
+
+**After modifying an artifact** - update the recipe note using the specific Knowledge Island's skill in SAVE mode. Read the note first and merge in, preserving existing structure.
+
+---
+
 ## Memory
 
 How Claude's auto-memory is structured for this island. For the underlying three-tier model and residency principles, see [[Residency]]. This section covers the implementation: file conventions, the two classes of memory file, and the full island ↔ memory mapping.
