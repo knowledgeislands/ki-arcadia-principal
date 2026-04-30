@@ -33,7 +33,7 @@ Using the integrations configured in [[Integrations|Integrations]], fetches toda
 
 ## Prompt
 
-The prompt below is the canonical version. It must match the prompt stored in the `{task-prefix}-morning-briefing` scheduled task - see [[Authoring Activities]] § Prompt Editing Discipline.
+The prompt below is the canonical version. It must match the prompt stored in the `{task-prefix}-morning-briefing` scheduled task - see [[Authoring Guidelines]] § Prompt Editing Discipline.
 
 ```txt
 You are running the Morning Briefing. Your job is to prepare today's daily note so it is ready before the day begins.
