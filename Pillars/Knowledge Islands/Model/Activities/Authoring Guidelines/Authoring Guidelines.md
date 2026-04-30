@@ -27,37 +27,38 @@ The rule is: **design is split across layers such that the scope of each element
 
 ### Definition
 
-- **Location:** `Activities/{group}/`
+- **Location:** `/Pillars/Knowledge Islands/Model/Activities/{group}/`
 - **Generality:** Activity-specific, agent-agnostic, island-agnostic
 - **Contains:** What the activity does, why it exists, trigger phrases, outcome definition
+- **Rule of thumb:** Content that is "what this activity does".
 
 ### Configuration
 
-- **Location:** `Knowledge Capital/Activities/{group}/`
+- **Location:** `/Pillars/Knowledge Capital/Activities/{group}/`
 - **Generality:** Activity-specific, island-specific, agent-agnostic
 - **Contains:** Island configuration the activity reads - routing rules, config files, data models
+- **Rule of thumb:** Content that is "this island's config for the activity".
 
 ### Pattern
 
-- **Location:** `Agents/Agentic AI/`
+- **Location:** `/Pillars/Knowledge Islands/Model/Agents/Agentic AI/`
 - **Generality:** Activity-agnostic, island-agnostic, agent-agnostic
 - **Contains:** General AI operating patterns - caching, parallelism, rolling windows, artefact lifecycle
+- **Rule of thumb:** Content that applies to any AI doing any activity on any island.
 
 ### Agent Behaviour
 
-- **Location:** `Agents/Claude/`
-- **Generality:** Activity-agnostic, island-agnostic, Claude-specific
+- **Location:** `/Pillars/Knowledge Islands/Model/Agents/{Agent}/`
+- **Generality:** Activity-agnostic, island-agnostic, Agent-specific
 - **Contains:** Claude's implementation - five modes, behavioural constraints, memory architecture
+- **Rule of thumb:** Content that applies to Claude doing any activity on any island.
 
 ### Prompt
 
-- **Location:** `Tools/Claude/Activities/{group}/`
-- **Generality:** Activity-specific, island-specific, Claude-specific
+- **Location:** `/Pillars/Knowledge Capital/Activities/{group}/`
+- **Generality:** Activity-specific, island-specific, Agent-specific
 - **Contains:** The actual prompt text; references the other layers at runtime
-
-### Routing rule of thumb
-
-A piece of content that is "what this activity does" → Definition. A piece that is "how Claude does it for this island" → Prompt. Content that would apply to any island's email triage → Pattern or Agent Behaviour. Content that is this island's routing config → Configuration.
+- **Rule of thumb:** Content that is "how an agent does it for this island".
 
 ### The Lattice
 
@@ -67,10 +68,10 @@ The three generality axes - activity, island, agent - form a 2x2x2 lattice with 
 | -------------------------------- | ----------------- | ------------------- |
 | island-agnostic, agent-agnostic  | **Definition**    | **Pattern**         |
 | island-specific, agent-agnostic  | **Configuration** | —                   |
-| island-agnostic, Claude-specific | —                 | **Agent Behaviour** |
-| island-specific, Claude-specific | **Prompt**        | —                   |
+| island-agnostic, agent-specific | —                 | **Agent Behaviour** |
+| island-specific, agent-specific | **Prompt**        | —                   |
 
-The empty corners are informative. There is no "Claude-specific definition of an activity" because activity definitions are agent-agnostic by construction; if Claude needs to do it differently from another agent, that lives in the Prompt. There is no "island-specific generic agentic pattern" because patterns are by definition portable across islands; an island that needs to bend a pattern records the exception in its Configuration. There is no "island-specific Claude behaviour without an activity" because Claude's island-specific behaviour is always in service of an activity, and therefore lives in the Prompt.
+The empty corners are informative. There is no "Agent-specific definition of an activity" because activity definitions are agent-agnostic by construction; if an agent needs to do it differently from another agent, that lives in the Prompt. There is no "island-specific generic agentic pattern" because patterns are by definition portable across islands; an island that needs to bend a pattern records the exception in its Configuration. There is no "island-specific Agent behaviour without an activity" because an agent's island-specific behaviour is always in service of an activity, and therefore lives in the Prompt.
 
 ---
 
