@@ -14,9 +14,7 @@
 
     /* Language and Environment */
     "target": "esnext" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
-    "lib": [
-      "esnext"
-    ] /* Specify a set of bundled library declaration files that describe the target runtime environment. */,
+    "lib": ["esnext"] /* Specify a set of bundled library declaration files that describe the target runtime environment. */,
     // "jsx": "preserve",                                /* Specify what JSX code is generated. */
     // "libReplacement": true,                           /* Enable lib replacement. */
     "experimentalDecorators": true /* Enable experimental support for legacy experimental decorators. */,
@@ -114,20 +112,6 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
-  "include": [
-    "**/*.ts",
-    "**/*.mjs",
-    ".ncurc.cjs",
-    "commitlint.config.ts",
-    "lint-staged.config.ts",
-    "prettier.config.ts",
-    "syncpack.config.ts",
-    "vitest.config.ts"
-  ],
-  "exclude": [
-    "cdk.out", 
-    "node_modules", 
-    "dist"
-  ]
+  "include": ["**/*.ts", "**/*.mjs", ".ncurc.cjs", "commitlint.config.ts", "lint-staged.config.ts", "prettier.config.ts", "syncpack.config.ts", "vitest.config.ts"],
+  "exclude": ["cdk.out", "node_modules", "dist"]
 }
-
