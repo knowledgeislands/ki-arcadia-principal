@@ -19,11 +19,11 @@ Structure is where those geographic conventions are specified. Each zone has its
 
 Each island realises its knowledge through one or more physical stores:
 
-| Store             | Purpose                                                         | Structure                          |
-| ----------------- | --------------------------------------------------------------- | ---------------------------------- |
-| **Text store**    | Markdown notes - version-controlled, git-backed, human-readable | Canonical island folder structure  |
-| **Binary store**  | Large binary files - images, PDFs, exports, attachments         | Mirrors text store exactly         |
-| **Working space** | Temporary area used by tools and agents; ephemeral              | None required                      |
+| Store             | Purpose                                                         | Structure                         |
+| ----------------- | --------------------------------------------------------------- | --------------------------------- |
+| **Text store**    | Markdown notes - version-controlled, git-backed, human-readable | Canonical island folder structure |
+| **Binary store**  | Large binary files - images, PDFs, exports, attachments         | Mirrors text store exactly        |
+| **Working space** | Temporary area used by tools and agents; ephemeral              | None required                     |
 
 The text and binary stores must share an identical folder structure so that files are co-located by topic regardless of which store they live in. When creating or referencing a binary asset, save it to the binary store under the same relative subfolder as the corresponding note.
 
@@ -54,7 +54,11 @@ The Library is the canonical record - version-controlled, governed, and the sing
 | `Pillars`   | Internal knowledge - philosophies, methodologies, approaches                        |
 | `Resources` | External knowledge - things that exist independently                                |
 | `Streams`   | Status tracking for projects and workstreams - durable knowledge belongs in Pillars |
-| `+`         | Inbox - unsorted captures awaiting filing                                           |
+| `Admin`     | Base-agnostic governance and operations - present but minimal (see note below)      |
+| `+`         | Inbox - unsorted captures awaiting filing (inbound staging, not a zone)             |
+| `-`         | Outbound staging - produced artefacts leaving the island; present but minimal       |
+
+`Admin` and `-` are introduced minimally to align with the canonical Knowledge Islands model (five zones - `Calendar`, `Pillars`, `Resources`, `Streams`, `Admin` - flanked by the inbound `+` and outbound `-` staging areas). For now this island's governance remains in [[Knowledge Capital]] and session digests remain sibling `Calendar` notes; migrating governance into [[Admin]] and digest output into `-` is deliberate future work, tracked but not yet done.
 
 `Pillars` and `Resources` share subfolder names by design. For example, `Pillars/Finance` covers internal finances; `Resources/Finance` covers general finance knowledge such as banking regulations.
 
@@ -150,11 +154,11 @@ Three common approaches:
 
 Every stream focus folder has an index note. Its `## Streams` section is a table with three columns:
 
-| Column   | Content                                                           |
-| -------- | ----------------------------------------------------------------- |
-| Topic    | Full-path wikilink to the stream note                             |
-| Status   | Stream lifecycle status: `in-progress`, `ready`, or `draft`      |
-| Priority | `urgent`, `high`, `medium`, or `low`                              |
+| Column   | Content                                                     |
+| -------- | ----------------------------------------------------------- |
+| Topic    | Full-path wikilink to the stream note                       |
+| Status   | Stream lifecycle status: `in-progress`, `ready`, or `draft` |
+| Priority | `urgent`, `high`, `medium`, or `low`                        |
 
 Rows are ordered by status first (`in-progress` → `ready` → `draft`), then by priority within each status group. When categories are in use, group by category first.
 

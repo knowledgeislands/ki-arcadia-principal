@@ -20,6 +20,7 @@ Full specification in [[Introduction/Introduction|Introduction]]. Summary:
 Full specification in [[Structure]]. Summary:
 
 - 4 top-level folders: `Calendar` (daily notes, meeting notes, session digests, and periodic reviews), `Pillars` (internal knowledge - methodology, approach, and domain-specific reference), `Resources` (external reference - things that exist independently), `Streams` (status tracking for projects and workstreams - durable knowledge belongs in Pillars)
+- `Admin` and `-` (outbound) are present but minimal - introduced to align with the canonical Knowledge Islands zone model (five zones - `Calendar`, `Pillars`, `Resources`, `Streams`, `Admin` - flanked by the inbound `+` and outbound `-` staging areas). For now governance stays in [[Knowledge Capital]] and session digests stay in `Calendar`; migrating governance into [[Admin]] and digest output into `-` is deliberate future work. [[Admin/MEMORY|MEMORY]] is the root memory index of active Pillars
 - `Pillars` and `Resources` share subfolder names by design - e.g. `Pillars/Finance` holds internal knowledge; `Resources/Finance` holds general reference
 - `Streams` sub-folders by priority: `Active`, `Background`, `Dormant`, `Future`, `Settled` (concluded)
 - Calendar note types - daily notes, meeting notes, session digests, and the monthly index are all siblings in the same month folder, each referenced from the daily note by wikilink; the daily note does not duplicate their content. Weekly notes are filed separately in a per-year `YYYY By Week/` folder:
@@ -44,6 +45,8 @@ Every folder must have an index note with the same name (e.g. `Productivity/Prod
 **Calendar exception:** Year folders require a `YYYY.md` index. Month and week folders use their date-prefixed periodic notes as entry points - no separate index note is needed.
 
 **`+` folder exception:** The `+` folder is the inbox for unsorted captures awaiting filing and is exempt from the index note rule. Its subfolders do not require index notes. Do not use it as an asset store - images and diagrams belong in the same folder as the note they support.
+
+**`-` folder exception:** The `-` folder is outbound staging (the counterpart to `+`) and is likewise exempt from the same-name index rule - both are staging areas, not zones. [[Outbound]] documents it; it does not need a `-.md` index.
 
 ## Knowledge Management Workflow
 
@@ -98,18 +101,18 @@ All values specific to this island - identity parameters, task prefix, skill tri
 
 ## Key Meta Notes
 
-| Note                                                                                          | Path                                                                                          |
-| --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| [[Knowledge Capital/Charter\|Charter]]                                                | `Pillars/Knowledge Capital/Charter.md`                                                        |
-| [[Knowledge Capital\|Knowledge Capital]]                            | `Pillars/Knowledge Capital/Knowledge Capital.md`                                              |
-| [[Knowledge Islands\|Knowledge Islands]]                            | `Pillars/Knowledge Islands/Knowledge Islands.md`                                              |
-| [[Pillars/Knowledge Islands/Introduction/Introduction\|Introduction]]                         | `Pillars/Knowledge Islands/Introduction/Introduction.md`                                      |
-| [[Structure\|Structure]]                | `Pillars/Knowledge Islands/Model/Conventions/Structure/Structure.md`                          |
-| [[Notes\|Notes]]                            | `Pillars/Knowledge Islands/Model/Conventions/Notes/Notes.md`                                  |
-| [[Properties\|Properties]]                  | `Pillars/Knowledge Islands/Model/Conventions/Notes/Properties.md`                             |
-| [[What Keeps an Island Alive\|What Keeps an Island Alive]]                         | `Pillars/Knowledge Islands/Model/Activities/What Keeps an Island Alive.md`                                    |
-| [[Who Acts on the Island\|Who Acts on the Island]]                                     | `Pillars/Knowledge Islands/Model/Agents/Who Acts on the Island.md`                                            |
-| [[How Tools Connect\|How Tools Connect]]                                        | `Pillars/Knowledge Islands/Model/Tools/How Tools Connect.md`                                              |
-| [[Tools/Claude/Claude\|Claude]]                               | `Pillars/Knowledge Islands/Model/Tools/Claude/Claude.md`                                      |
-| [[Mistakes and Lessons\|Mistakes and Lessons]]   | `Pillars/Knowledge Islands/Model/Tools/Claude/Mistakes and Lessons.md`                        |
-| [[CLAUDE]]                                                                                    | `CLAUDE.md`                                                                                   |
+| Note                                                                  | Path                                                                       |
+| --------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| [[Knowledge Capital/Charter\|Charter]]                                | `Pillars/Knowledge Capital/Charter.md`                                     |
+| [[Knowledge Capital\|Knowledge Capital]]                              | `Pillars/Knowledge Capital/Knowledge Capital.md`                           |
+| [[Knowledge Islands\|Knowledge Islands]]                              | `Pillars/Knowledge Islands/Knowledge Islands.md`                           |
+| [[Pillars/Knowledge Islands/Introduction/Introduction\|Introduction]] | `Pillars/Knowledge Islands/Introduction/Introduction.md`                   |
+| [[Structure\|Structure]]                                              | `Pillars/Knowledge Islands/Model/Conventions/Structure/Structure.md`       |
+| [[Notes\|Notes]]                                                      | `Pillars/Knowledge Islands/Model/Conventions/Notes/Notes.md`               |
+| [[Properties\|Properties]]                                            | `Pillars/Knowledge Islands/Model/Conventions/Notes/Properties.md`          |
+| [[What Keeps an Island Alive\|What Keeps an Island Alive]]            | `Pillars/Knowledge Islands/Model/Activities/What Keeps an Island Alive.md` |
+| [[Who Acts on the Island\|Who Acts on the Island]]                    | `Pillars/Knowledge Islands/Model/Agents/Who Acts on the Island.md`         |
+| [[How Tools Connect\|How Tools Connect]]                              | `Pillars/Knowledge Islands/Model/Tools/How Tools Connect.md`               |
+| [[Tools/Claude/Claude\|Claude]]                                       | `Pillars/Knowledge Islands/Model/Tools/Claude/Claude.md`                   |
+| [[Mistakes and Lessons\|Mistakes and Lessons]]                        | `Pillars/Knowledge Islands/Model/Tools/Claude/Mistakes and Lessons.md`     |
+| [[CLAUDE]]                                                            | `CLAUDE.md`                                                                |
