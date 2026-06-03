@@ -1,0 +1,60 @@
+---
+type: stream-proposal
+tags:
+  - topic/knowledge-islands
+status: draft
+priority: medium
+dependencies: []
+priority: medium
+dependencies: []
+author: Written with Claude
+---
+
+# Proposal Pipeline
+
+## Overview
+
+A stream to design the Auto Proposal Research activity - a periodic governance activity that reviews active streams, identifies ideas ready for progression, and produces proposal notes with clear rationale and links to source material. The goal is that council meetings are more productive because proposals arrive pre-formed: the thinking is documented, the connections are explicit, and the council can evaluate rather than reconstruct.
+
+The stream also covers what "proposal-ready" means in practice - the criteria for promoting a stream idea to a formal proposal, and the standard format a proposal note should take.
+
+---
+
+## Governance
+
+This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]].
+
+---
+
+## Outputs
+
+| Type          | Detail                                                                                                |
+| ------------- | ----------------------------------------------------------------------------------------------------- |
+| Activity note | `Activities/[Group]/Auto Proposal Research.md` - the Definition: what the activity does and why       |
+| Prompt note   | `Tools/Claude/Activities/[Group]/Auto Proposal Research.md` - the Prompt: executable prompt           |
+| Convention    | Definition of "proposal-ready" criteria and proposal note format                                      |
+
+---
+
+## Checklist
+
+- [ ] Define what "proposal-ready" means - criteria for when a stream idea is sufficiently developed to become a formal proposal
+- [ ] Define the proposal note format - what a well-formed proposal contains, how it links to source material and rationale
+- [ ] Decide which activity group Auto Proposal Research belongs to (Tending is likely; a new Governance group is possible)
+- [ ] Write the Definition note
+- [ ] Write the Prompt
+- [ ] Consider cadence - weekly or fortnightly makes sense given council meeting rhythm
+
+---
+
+## Open Questions
+
+1. **Which activity group?** Tending covers island health and structure; this is more about governance readiness. A dedicated Governance activity group under Activities may be warranted if other governance-facing activities emerge.
+
+2. **What triggers a proposal?** The activity needs a definition of "ready" - otherwise it produces proposals prematurely or misses mature ideas. Likely a combination of: stream status (`in-progress`), presence of a Design section with substantive content, and explicit open questions that have been resolved.
+
+3. **Who reviews the proposals?** The activity produces proposal notes; council members decide whether to ratify. The activity itself should not make that call - it surfaces; humans decide.
+
+## Governance
+
+This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.
