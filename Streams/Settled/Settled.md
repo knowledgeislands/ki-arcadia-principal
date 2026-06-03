@@ -1,6 +1,6 @@
 ---
+type: stream-focus
 tags:
-  - card/note
   - topic/streams
 status: current - April 2026
 author: Written with Claude
@@ -18,5 +18,6 @@ Settled streams are projects and workstreams that have reached a natural conclus
 
 | Topic | Status | Priority |
 | ----- | ------ | -------- |
+| [[Streams Enactment Conformance Proposal]] | `completed` | `high` |
 | Conformance | `completed` | `urgent` |
 | [[Streams/Settled/Wiki Link Format/Wiki Link Format\|Wiki Link Format]] | `completed` | `medium` |

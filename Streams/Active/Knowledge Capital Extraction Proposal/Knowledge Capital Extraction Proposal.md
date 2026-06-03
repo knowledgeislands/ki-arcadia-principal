@@ -5,8 +5,6 @@ tags:
 status: draft
 priority: medium
 dependencies: []
-priority: medium
-dependencies: []
 author: Written with Claude
 ---
 
@@ -15,7 +13,7 @@ author: Written with Claude
 
 A stream to extract Arcadia-specific values currently embedded in `Pillars/Knowledge Islands/Model/` notes and relocate them to `Pillars/Knowledge Capital/`, leaving Model truly abstract. The premise: Model documents the generic Knowledge Islands framework; KC documents what Arcadia specifically is and how it is configured. Where the two are currently entangled - schedule times in activity definitions, install paths in tool overviews, byte counts in design rationale - the value belongs in KC and Model should backref to it.
 
-This stream is the concrete application of the boundary the [[Boundary Rules]] stream is establishing. Where Boundary Rules defines the gates, this stream walks through them and tidies what is on the wrong side.
+This stream is the concrete application of the boundary the [[Boundary Rules Proposal]] stream is establishing. Where Boundary Rules defines the gates, this stream walks through them and tidies what is on the wrong side.
 
 ---
 
@@ -91,7 +89,7 @@ The order is smallest to largest, so each step can be reviewed before the next b
 
 ## Related Streams
 
-- [[Boundary Rules]] - establishes the rules this stream is applying. Several rules in its draft table speak directly to the extractions here ("KC operational content in Pillars/Knowledge Islands - Hard"; "Specific tools or integrations in Pillars/Knowledge Islands/Model/Conventions - Hard"). If Boundary Rules ratifies before this stream completes, re-check alignment; if this stream completes first, the extractions become a worked example for the rules.
+- [[Boundary Rules Proposal]] - establishes the rules this stream is applying. Several rules in its draft table speak directly to the extractions here ("KC operational content in Pillars/Knowledge Islands - Hard"; "Specific tools or integrations in Pillars/Knowledge Islands/Model/Conventions - Hard"). If Boundary Rules ratifies before this stream completes, re-check alignment; if this stream completes first, the extractions become a worked example for the rules.
 
 ## Governance
 

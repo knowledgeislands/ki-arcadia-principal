@@ -150,6 +150,36 @@ Three common approaches:
 - **Pillar path** - category mirrors the destination in Pillars (e.g. `Active/Knowledge Islands/`); scales well at volume and echoes where the knowledge is heading
 - **Proposal status** - category expresses current status; useful for islands processing many proposals concurrently across a single domain
 
+### The Proposal suffix
+
+A proposal note's name always ends with a space and the word `Proposal` - on its filename, `# H1`, and `title:` (and, in a leaf stream, on the folder too). The suffix marks every stream as a proposal under the [[Enactment Process]] at a glance, lets the proposal double as the leaf folder's index, and preemptively disambiguates the note from same-named artefacts elsewhere in the island.
+
+### Folder layout - leaf, parent, multi
+
+A stream is a **leaf** (the proposal is its only note) or a **parent** (it has child notes or sub-folders):
+
+```text
+Leaf:    Streams/$Focus/$Category?/$Name Proposal/$Name Proposal.md
+Parent:  Streams/$Focus/$Category?/$Name/$Name Proposal.md          (+ slim $Name.md index + children)
+Multi:   Streams/$Focus/$Category?/$Name/$ProposalName/$ProposalName Proposal.md
+```
+
+In a leaf the suffixed folder's same-name note is both index and proposal. In a parent the folder is the bare topic, a slim same-named `stream-index` note resolves the folder link, and the proposal is one child. **Transition:** when a leaf gains its first child, rename the folder to drop the suffix, keep the proposal note as `$Name Proposal.md`, and add the slim `$Name.md` index; reverse when the last child goes. The proposal's filename and link stay stable across the transition.
+
+### Note types
+
+Each stream note carries a `type:` marking its role:
+
+| `type`            | Where                                      | Purpose                                                  |
+| ----------------- | ------------------------------------------ | -------------------------------------------------------- |
+| `stream-zone`     | `Streams/Streams.md`                       | Zone root index; carries the cross-Focus proposals index |
+| `stream-focus`    | `Streams/$Focus/$Focus.md`                 | Focus dashboard; the status / priority table             |
+| `stream-index`    | `Streams/$Focus/$Name/$Name.md` (parent)   | Slim index for a parent stream folder                    |
+| `stream-proposal` | the `$Name Proposal.md` note               | The proposal + status tracker (and leaf folder index)    |
+| `stream-note`     | `Streams/$Focus/$Name/$Sub/$Sub.md`        | A sub-proposal or working note within a stream           |
+
+Only `stream-proposal` and `stream-note` carry `status` / `priority` / `dependencies`; `stream-zone` and `stream-focus` carry `type` and the common fields only.
+
 ### Stream Index Notes
 
 Every stream focus folder has an index note. Its `## Streams` section is a table with three columns:
@@ -161,6 +191,10 @@ Every stream focus folder has an index note. Its `## Streams` section is a table
 | Priority | `urgent`, `high`, `medium`, or `low`                        |
 
 Rows are ordered by status first (`in-progress` → `ready` → `draft`), then by priority within each status group. When categories are in use, group by category first.
+
+### Settled streams - point in time
+
+A `Settled` stream is the record of a decision at the point of settlement, not a living document. Settled streams are not maintained - their links may go stale as canonical-store files move or are absorbed, and that is acceptable; audits do not flag them. A settled stream may be deleted once its durable content has been absorbed into Pillars or Resources and its reference value has dropped. There is no `retain_until` clock on a settled stream; it expires when reference value drops.
 
 ---
 

@@ -1,14 +1,15 @@
 ---
+type: stream-note
 tags:
-  - card/note
   - topic/knowledge-islands
   - topic/tools
-status: draft - April 2026
+status: draft
+priority: low
+dependencies: []
 author: Mixed
 ---
 
-# Island MCP - Proposal
-
+# Island MCP Design
 ## Overview
 
 Each Knowledge Island is fronted by its own MCP server. Agents read from and write to the island only through the MCP - never via direct file access. The MCP becomes the canonical interface to the island; the file system becomes an implementation detail.
@@ -47,7 +48,7 @@ Multi-agent access with role-scoped permissions, audited centrally. Auditability
 | `link_check`        | Resolve and validate wikilinks for a note or folder        |
 | `get_metadata`      | Charter, Knowledge Capital, agent registry                 |
 
-This is a sketch, not a specification. The actual surface is part of the design work tracked in the [[Island MCP|stream]].
+This is a sketch, not a specification. The actual surface is part of the design work tracked in the [[Island MCP Proposal|stream]].
 
 ---
 
@@ -63,7 +64,7 @@ This is a sketch, not a specification. The actual surface is part of the design 
 
 ## Related
 
-- [[Island MCP|Stream tracking]] - sibling stream note
+- [[Island MCP Proposal|Stream tracking]] - sibling stream note
 - [[How Tools Connect]] - the current model the proposal extends
 - [[Who Acts on the Island]] - the agent classes that would receive distinct permissions
 - [[Knowledge Capital/Tools/Integrations|Integrations]] - where the MCP connection details would live once adopted

@@ -6,8 +6,6 @@ tags:
 status: draft
 priority: medium
 dependencies: []
-priority: medium
-dependencies: []
 author: Written with Claude
 ---
 

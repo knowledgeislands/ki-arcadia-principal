@@ -181,3 +181,13 @@ These rules apply to every change:
 - **Re-verify each rollout item against the live file.** Plans can drift between drafting and execution. Confirm each item still applies before making the edit.
 - **Delete the proposal document on completion.** Once content is in the island, the proposal document has no residual value. The test: if it were deleted today, would any knowledge be lost? If not, delete it.
 - **Iterate freely.** Use the proposal document to work through the change, closing open issues as decisions are made.
+
+## Out of Scope
+
+Not every change needs a proposal. The following are out of scope and may proceed directly: time-bound `Calendar/` entries; routine person- or profile-note auto-appends of unambiguous facts (substantive restructures still go through); inbound `+/` triage (though where routing is non-trivial, the triage may itself be a proposal); and trivial typo or formatting fixes. When in doubt, prefer a proposal - the cost of a lightweight one is low, the cost of an unauthorised change to canonical content is high.
+
+A **lightweight stream** is the minimal form: a low-effort request ("add this to the list") is captured as a stream without the full name-confirmation gate. Reserve the gate for substantive new streams, sub-proposal splits, and renames.
+
+## Convention Rollouts
+
+A convention rollout - sweeping the island to apply a newly-introduced rule - is bundled into a single consolidated stream so inventory, sweep, and verification run in one coordinated pass. Each rollout is an independently approvable workstream within it, lifted into its own `$Name Proposal` sub-folder only when its checklist diverges enough to justify a separate approval document. A stream that runs as repeating cycles accumulates per-cycle artefacts under `Pass N/` sub-folders, with the proposal recording each cycle's closure inline.

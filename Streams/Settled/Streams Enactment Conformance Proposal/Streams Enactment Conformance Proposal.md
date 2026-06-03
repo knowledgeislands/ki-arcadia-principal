@@ -1,7 +1,7 @@
 ---
 type: stream-proposal
 title: Streams Enactment Conformance Proposal
-status: draft
+status: completed
 priority: high
 dependencies: []
 author: Written with Claude
@@ -92,7 +92,28 @@ faithful canonical source the skill points to.
 **Frontmatter migration** — per proposal: `tags: [card/stream, topic/*]` → `type: stream-proposal` + keep `topic/*`; `status: "<token> - April 2026"` → bare
 `status: <token>`; add `priority` (from the proposals index, default `medium`) and `dependencies: []`; keep `author`. Index notes: `card/note` → `type: stream-zone` (`Streams.md`) / `type: stream-focus` (`Active.md` etc.).
 
+## Rolled-out
+
+Executed 2026-06-04 on user authorisation.
+
+- **(A) Model promoted.** `Model/Conventions/Structure` (Streams section) gained the `Proposal` suffix, the leaf/parent/multi layout + transition, the `type:`
+  note-type table, and the Settled point-in-time policy; `Model/Processes/Enactment Process` gained Out of Scope, lightweight streams, and Convention Rollouts.
+  Canonical Model now matches the `knowledgeislands-streams` skill.
+- **(B) Streams conformed.** 20 leaf streams renamed with the `Proposal` suffix; `Future/Island MCP/` resolved to the parent layout (slim `Island MCP.md` index +
+  `Island MCP Proposal.md` + `Island MCP Design.md`). Frontmatter migrated to `type: stream-proposal` with a bare-token `status` (incl. `current`→`draft`) plus
+  `priority` and `dependencies`; `Governance` footers added; the focus indexes and the `Streams/Streams.md` proposals index relinked to the suffixed names.
+- **Verified.** `streams:audit` PASS (22 proposals), `kb:audit` PASS, no residual bare `[[OldName]]` links.
+
+## Post-Change Review
+
+_Initial summary (input to an interactive review):_
+
+- **Went well.** The mechanical sweep was clean and both audits are green; the principal base now leads, not lags, its own Model.
+- **Surfaced + fixed.** Two notes already carried `priority`/`dependencies`, producing duplicate keys on migration — deduped. The checker was treating a
+  notes-only parent as a leaf; it now recognises a folder containing a `* Proposal.md` as a conforming parent (fix shipped in the skill).
+- **Watch.** The zone/focus index notes still carry legacy `card/*` tags rather than `type: stream-zone` / `stream-focus` — a small cosmetic follow-up (the audit
+  does not check index-note type). `Island MCP Design` is a `stream-note` without a Governance footer (not required for child notes).
+
 ## Governance
 
-This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal; rollout follows the
-Checklist and does not begin without explicit authorisation.
+This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.

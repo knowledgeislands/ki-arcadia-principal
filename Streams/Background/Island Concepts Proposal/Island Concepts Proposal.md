@@ -7,8 +7,6 @@ status: draft
 priority: low
 dependencies: []
 purpose: Specify and resolve unresolved elements of the island conceptual and geographic model - settlement types, Harbour, Routes, and Customs
-priority: low
-dependencies: []
 author: Written with Claude
 ---
 

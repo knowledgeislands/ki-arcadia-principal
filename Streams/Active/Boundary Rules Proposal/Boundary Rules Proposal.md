@@ -5,8 +5,6 @@ tags:
 status: draft
 priority: urgent
 dependencies: []
-priority: urgent
-dependencies: []
 author: Written with Claude
 ---
 

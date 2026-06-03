@@ -1,6 +1,6 @@
 ---
+type: stream-focus
 tags:
-  - card/note
   - topic/streams
 status: current - April 2026
 author: Written with Claude
@@ -18,12 +18,12 @@ Ideas and projects not yet started - queued for when the time or circumstances a
 
 | Topic                                                                                                                           | Status  | Priority |
 | ------------------------------------------------------------------------------------------------------------------------------- | ------- | -------- |
-| [[Scheduled Automations]]                                           | `draft` | `low`    |
-| [[Agent and Session Improvements]]                | `draft` | `low`    |
-| [[Semantic Conventions|Island Conventions]]                                                    | `draft` | `low`    |
-| [[Bullet Journal Support|Calendar Templates]]                                            | `draft` | `low`    |
-| [[Workflow Integrations]]                                           | `draft` | `low`    |
-| [[MCP Ecosystem]]                                                                  | `draft` | `low`    |
-| [[Island MCP]]                                                                     | `draft` | `low`    |
-| [[Token Economics]] | `draft` | `low`    |
-| [[Island Visualisation]] | `draft` | `low`    |
+| [[Scheduled Automations Proposal]]                                           | `draft` | `low`    |
+| [[Agent and Session Improvements Proposal]]                | `draft` | `low`    |
+| [[Semantic Conventions Proposal|Island Conventions]]                                                    | `draft` | `low`    |
+| [[Bullet Journal Support Proposal|Calendar Templates]]                                            | `draft` | `low`    |
+| [[Workflow Integrations Proposal]]                                           | `draft` | `low`    |
+| [[MCP Ecosystem Proposal]]                                                                  | `draft` | `low`    |
+| [[Island MCP Proposal]]                                                                     | `draft` | `low`    |
+| [[Token Economics Proposal]] | `draft` | `low`    |
+| [[Island Visualisation Proposal]] | `draft` | `low`    |

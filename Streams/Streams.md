@@ -1,6 +1,5 @@
 ---
-tags:
-  - card/note
+type: stream-zone
 status: current - April 2026
 author: Written with Claude
 ---
@@ -19,23 +18,23 @@ Live tracking view of all active proposals. Ordered by Stream (Active → Backgr
 
 | Topic                                                                                                                           | Stream     | Status        | Priority |
 | ------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------- | -------- |
-| [[Tooling Rollout]]                                                             | Active     | `in-progress` | `high`   |
+| [[Tooling Rollout Proposal]]                                                             | Active     | `in-progress` | `high`   |
 | [[Streams/Settled/Wiki Link Format/Wiki Link Format\|Wiki Link Format]]   | Settled    | `completed`   | `medium` |
-| [[Boundary Rules]]                   | Active     | `draft`       | `urgent` |
+| [[Boundary Rules Proposal]]                   | Active     | `draft`       | `urgent` |
 | [[Index Review]]                | Active     | `draft`       | `medium` |
-| [[Reading Order]]               | Active     | `draft`       | `medium` |
-| [[Auto Proposal Pipeline|Proposal Pipeline]] | Active     | `draft`       | `medium` |
-| [[Intentional]]                   | Active     | `draft`       | `medium` |
-| [[Kit Legal Inception]]                                                 | Background | `draft`       | `medium` |
-| [[Kit Principal Inception]]                                     | Background | `draft`       | `medium` |
-| [[Scheduled Automations]]                                           | Future     | `draft`       | `low`    |
-| [[Agent and Session Improvements]]                | Future     | `draft`       | `low`    |
-| [[Semantic Conventions|Island Conventions]]                                                    | Future     | `draft`       | `low`    |
-| [[Bullet Journal Support|Calendar Templates]]                                            | Future     | `draft`       | `low`    |
-| [[Workflow Integrations]]                                           | Future     | `draft`       | `low`    |
-| [[MCP Ecosystem]]                                                                  | Future     | `draft`       | `low`    |
-| [[Token Economics]] | Future     | `draft`       | `low`    |
-| [[Island Visualisation]] | Future     | `draft`       | `low`    |
+| [[Reading Order Proposal]]               | Active     | `draft`       | `medium` |
+| [[Auto Proposal Pipeline Proposal|Proposal Pipeline]] | Active     | `draft`       | `medium` |
+| [[Intentional Proposal]]                   | Active     | `draft`       | `medium` |
+| [[Kit Legal Inception Proposal]]                                                 | Background | `draft`       | `medium` |
+| [[Kit Principal Inception Proposal]]                                     | Background | `draft`       | `medium` |
+| [[Scheduled Automations Proposal]]                                           | Future     | `draft`       | `low`    |
+| [[Agent and Session Improvements Proposal]]                | Future     | `draft`       | `low`    |
+| [[Semantic Conventions Proposal|Island Conventions]]                                                    | Future     | `draft`       | `low`    |
+| [[Bullet Journal Support Proposal|Calendar Templates]]                                            | Future     | `draft`       | `low`    |
+| [[Workflow Integrations Proposal]]                                           | Future     | `draft`       | `low`    |
+| [[MCP Ecosystem Proposal]]                                                                  | Future     | `draft`       | `low`    |
+| [[Token Economics Proposal]] | Future     | `draft`       | `low`    |
+| [[Island Visualisation Proposal]] | Future     | `draft`       | `low`    |
 
 
 ---
