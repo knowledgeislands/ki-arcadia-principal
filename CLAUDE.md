@@ -36,7 +36,7 @@ The general principle: `Pillars` holds internal knowledge owned by the Knowledge
 
 ### Changing canonical content (strictly enforced)
 
-Substantive changes to canonical stores (`Pillars`, `Resources`) go through the **Enactment Process**: open a proposal in `Streams/` and roll it out under the gate - do not edit `Pillars`/`Resources` directly. When starting any such change, load the `knowledgeislands-streams` skill - it owns the proposal lifecycle (`draft` -> `ready` -> ratify -> `rolled-out` -> `reviewed` -> `completed`). See [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]]. Exempt: trivial typo/formatting fixes, `Calendar/` entries, and `+/` triage.
+Substantive changes to a canonical zone (`Admin`, `Pillars`, `Resources`) go through the **Enactment Process**: open a proposal in `Streams/` and roll it out under the gate - do not edit `Admin`/`Pillars`/`Resources` directly. When starting any such change, load the `knowledgeislands-streams` skill - it owns the proposal lifecycle (`draft` -> `ready` -> ratify -> `rolled-out` -> `reviewed` -> `completed`). See [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]]. Exempt: trivial typo/formatting fixes, `Calendar/` entries, and `+/` triage.
 
 ### Index Notes (strictly enforced)
 
