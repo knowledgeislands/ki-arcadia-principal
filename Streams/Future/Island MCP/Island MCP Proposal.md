@@ -10,6 +10,7 @@ author: Mixed
 ---
 
 # Island MCP Proposal
+
 ## Overview
 
 A stream to design and propose an MCP server that fronts each Knowledge Island - all read and write operations go through the MCP rather than direct file access. The stream tracks design questions, dependencies, and the path to a ratified proposal. The full design is in [[Island MCP Design]].
@@ -26,11 +27,11 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
 
 ## Outputs
 
-| Type        | Detail                                                                                          |
-| ----------- | ----------------------------------------------------------------------------------------------- |
-| Proposal    | [[Island MCP Design]] - the design proposal, refined through this stream and ratified via Enactment      |
-| Pillar note | On ratification, a tool note under `Pillars/Knowledge Islands/Model/Tools/Island MCP/`          |
-| Convention  | Updates to [[How Tools Connect]] reflecting the gateway model                                   |
+| Type        | Detail                                                                                              |
+| ----------- | --------------------------------------------------------------------------------------------------- |
+| Proposal    | [[Island MCP Design]] - the design proposal, refined through this stream and ratified via Enactment |
+| Pillar note | On ratification, a tool note under `Pillars/Knowledge Islands/Model/Tools/Island MCP/`              |
+| Convention  | Updates to [[How Tools Connect]] reflecting the gateway model                                       |
 
 ---
 

@@ -10,6 +10,7 @@ author: Written with Claude
 ---
 
 # Token Economics Proposal
+
 ## Overview
 
 A stream to understand and improve how tokens are spent across all island AI operations. Token cost is a meaningful constraint: wasteful prompts inflate cost and exhaust context budgets faster; well-designed prompts do more with less. This covers three areas: scheduled task prompt design, interactive session efficiency, and tooling that assists with token measurement or reduction.
@@ -24,17 +25,17 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
 
 ## Inputs
 
-| Type     | Detail                                                                    |
-| -------- | ------------------------------------------------------------------------- |
-| Document | Existing scheduled task prompts in `Tools/Claude/Activities/`             |
-| Document | [[Authoring Guidelines]] - prompt authoring conventions |
+| Type     | Detail                                                        |
+| -------- | ------------------------------------------------------------- |
+| Document | Existing scheduled task prompts in `Tools/Claude/Activities/` |
+| Document | [[Authoring Guidelines]] - prompt authoring conventions       |
 
 ---
 
 ## Outputs
 
-| Type     | Detail                                                                           |
-| -------- | -------------------------------------------------------------------------------- |
+| Type     | Detail                                                               |
+| -------- | -------------------------------------------------------------------- |
 | Artefact | Convention note under `Pillars/Knowledge Islands/` (destination TBD) |
 
 ---

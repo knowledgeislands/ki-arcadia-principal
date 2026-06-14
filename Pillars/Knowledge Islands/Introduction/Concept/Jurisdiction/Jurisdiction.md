@@ -24,12 +24,12 @@ An island may evolve its governance pattern as it grows. The processes that enac
 
 Every person who interacts with an island has a standing within it:
 
-|                           | Visitor  | Citizen  | Council Member                                          |
-| ------------------------- | -------- | -------- | ------------------------------------------------------- |
-| **Standing**              | Informal | Full     | Full                                                    |
-| **Council eligibility**   | ✗        | Eligible | Member                                                  |
-| **Formal proposals**      | ✗        | ✗        | ✓ via [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]] |
-| **Informal contribution** | ✓        | ✓        | ✓                                                       |
+|                           | Visitor  | Citizen  | Council Member                                              |
+| ------------------------- | -------- | -------- | ----------------------------------------------------------- | ------------------- |
+| **Standing**              | Informal | Full     | Full                                                        |
+| **Council eligibility**   | ✗        | Eligible | Member                                                      |
+| **Formal proposals**      | ✗        | ✗        | ✓ via [[Knowledge Islands/Model/Processes/Enactment Process | Enactment Process]] |
+| **Informal contribution** | ✓        | ✓        | ✓                                                           |
 
 Citizenship is a prerequisite for council membership - a council member must be a Citizen of the island they govern. The council (or governor, for single-governor islands) grants citizenship. Citizenship is not restricted to a single island; a person may hold citizenship across multiple territories simultaneously, and therefore be eligible for council membership in each. A Visitor with a substantive contribution may seek citizenship, or ask an existing council member to carry the proposal forward on their behalf.
 

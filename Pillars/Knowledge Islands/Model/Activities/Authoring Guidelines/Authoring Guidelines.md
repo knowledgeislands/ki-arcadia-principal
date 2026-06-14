@@ -58,9 +58,9 @@ This would be some definition that applies to all activities, for example, addin
 For example:
 
 - For the agent name, `Human` maps to all human agents; it cannot be used for a specific agent. Human agents tag themselves with `agent:human` in their Agent note frontmatter to be included in this group.
-- For the agent name, `Agentic AI` maps to all agentic AI agents; it cannot be used for a specific agent.  Agentic AI agents tag themselves with `agent:agentic` in their Agent note frontmatter to be included in this group.
+- For the agent name, `Agentic AI` maps to all agentic AI agents; it cannot be used for a specific agent. Agentic AI agents tag themselves with `agent:agentic` in their Agent note frontmatter to be included in this group.
 
-This would be in a Definition section in a note located at `/Pillars/Knowledge Islands/Model/Activities/All/All/All.md`, and would be inherited by all agents and all activities on all islands.  As such it should be used sparingly and only for truly universal behaviours.
+This would be in a Definition section in a note located at `/Pillars/Knowledge Islands/Model/Activities/All/All/All.md`, and would be inherited by all agents and all activities on all islands. As such it should be used sparingly and only for truly universal behaviours.
 
 #### Universal Behaviours
 
@@ -70,7 +70,7 @@ For example:
 
 > at the end of any activity, provide a digest of what was done and why, and link it back to confirmation of the goals
 
-This would be in a Behaviour section in a note located at `/Pillars/Knowledge Islands/Model/Activities/All/All/All.md`, and would be inherited by all agents and all activities on all islands.  As such it should be used sparingly and only for truly universal behaviours.
+This would be in a Behaviour section in a note located at `/Pillars/Knowledge Islands/Model/Activities/All/All/All.md`, and would be inherited by all agents and all activities on all islands. As such it should be used sparingly and only for truly universal behaviours.
 
 #### Island Wide Specific Behaviours
 
@@ -80,7 +80,7 @@ For example:
 
 > at the end of any activity, ensure that any outputs contain the company name and the date, to ensure traceability and context for future reference
 
-This would be in a Behaviour section in a note located at `/Pillars/Knowledge Capital/Model/Activities/All/All/All.md`, and would be inherited by all agents and all activities on all islands.  As such it should be used sparingly and only for truly universal behaviours.
+This would be in a Behaviour section in a note located at `/Pillars/Knowledge Capital/Model/Activities/All/All/All.md`, and would be inherited by all agents and all activities on all islands. As such it should be used sparingly and only for truly universal behaviours.
 
 #### Abstract Activities
 
@@ -91,14 +91,12 @@ For example:
 > Email Route Triage is the activity of triaging email from a location on a schedule and deciding on a recommended action based on criteria.
 >
 > Required Configuration:
-> 
+>
 > - the location to check for email
 > - the schedule for when to check it
 > - the criteria for triage decisions
 
 #### Definitive Activities
-
-
 
 ### Behaviour
 

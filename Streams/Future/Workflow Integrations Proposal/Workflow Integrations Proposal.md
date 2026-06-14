@@ -10,6 +10,7 @@ author: Written with Claude
 ---
 
 # Workflow Integrations Proposal
+
 ## Overview
 
 Tools that provide workflow automation capabilities beyond what the current Cowork scheduled task stack offers. Items here are at the investigation stage - nothing has been trialled yet. Each warrants a dedicated session to assess fit before any adoption decision.

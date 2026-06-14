@@ -10,6 +10,7 @@ author: Written with Claude
 ---
 
 # MCP Ecosystem Proposal
+
 ## Overview
 
 A survey stream to identify MCP servers and registries relevant to the island's connected tools. The MCP ecosystem is growing quickly; a periodic survey ensures the island's tooling stays current and any high-value connectors are identified before they are needed.

@@ -9,6 +9,7 @@ author: Written with Claude
 ---
 
 # Reading Order Proposal
+
 ## Overview
 
 The three-act structure of `Pillars/Knowledge Islands` is in place. The migration from the old flat-folder layout is complete; the reading order runs Introduction → Model → Realisation, with each act answering a question and each chapter building on the last. The foundation is solid. The work from here is content quality, contextual integrity, and structural completeness.

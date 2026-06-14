@@ -39,11 +39,11 @@ All Claude-generated notes carry the `source/claude` tag. Routing is defined can
 
 Every context file loaded costs tokens. The integration is designed to minimise overhead without losing operating capability. Approximate sizes:
 
-| File                        | ~Tokens    | Bytes  | Loaded when              |
-| --------------------------- | ---------- | ------ | ------------------------ |
+| File                        | ~Tokens    | Bytes  | Loaded when                |
+| --------------------------- | ---------- | ------ | -------------------------- |
 | Island Skill SKILL.md       | ~400       | -      | Every island skill session |
 | CLAUDE.md                   | ~2,250     | ~9,000 | Every island skill session |
-| **Total (writing session)** | **~2,650** |        |                          |
+| **Total (writing session)** | **~2,650** |        |                            |
 
 Mistakes and Lessons was previously loaded as a pre-flight check (~1,770 tokens, 7,082 bytes) on every writing session. All resolved lessons are now extracted to auto-memory files and are active in every session without a file read - saving ~1,770 tokens per writing session. [[Mistakes and Lessons]] is retained as a human-readable incident register only.
 

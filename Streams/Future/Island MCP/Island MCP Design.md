@@ -10,6 +10,7 @@ author: Mixed
 ---
 
 # Island MCP Design
+
 ## Overview
 
 Each Knowledge Island is fronted by its own MCP server. Agents read from and write to the island only through the MCP - never via direct file access. The MCP becomes the canonical interface to the island; the file system becomes an implementation detail.
@@ -38,15 +39,15 @@ Multi-agent access with role-scoped permissions, audited centrally. Auditability
 
 ## Tool Surface (Sketch)
 
-| Tool                | Purpose                                                    |
-| ------------------- | ---------------------------------------------------------- |
-| `read_note`         | Fetch a note by path or wikilink resolution                |
-| `search`            | Search by content, frontmatter, or tag                     |
-| `list_folder`       | Enumerate a folder's children with metadata                |
-| `write_note`        | Create or update a note with convention validation         |
-| `validate_routing`  | Dry-run a proposed note against routing rules              |
-| `link_check`        | Resolve and validate wikilinks for a note or folder        |
-| `get_metadata`      | Charter, Knowledge Capital, agent registry                 |
+| Tool               | Purpose                                             |
+| ------------------ | --------------------------------------------------- |
+| `read_note`        | Fetch a note by path or wikilink resolution         |
+| `search`           | Search by content, frontmatter, or tag              |
+| `list_folder`      | Enumerate a folder's children with metadata         |
+| `write_note`       | Create or update a note with convention validation  |
+| `validate_routing` | Dry-run a proposed note against routing rules       |
+| `link_check`       | Resolve and validate wikilinks for a note or folder |
+| `get_metadata`     | Charter, Knowledge Capital, agent registry          |
 
 This is a sketch, not a specification. The actual surface is part of the design work tracked in the [[Island MCP Proposal|stream]].
 

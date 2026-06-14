@@ -8,32 +8,33 @@ Use this prompt as a reusable foundation for generating all future **Knowledge I
 
 **Knowledge Islands** is a human-centred knowledge ecosystem inspired by:
 
-* archipelagos
-* exploration
-* libraries
-* stewardship
-* civilisational memory
-* interconnected understanding
-* organic growth of knowledge
+- archipelagos
+- exploration
+- libraries
+- stewardship
+- civilisational memory
+- interconnected understanding
+- organic growth of knowledge
 
 The visual language should feel like:
 
-* a fusion of:
+- a fusion of:
 
-  * modern systems thinking
-  * elegant cartography
-  * knowledge architecture
-  * calm technological futurism
-  * natural geography
-* with subtle inspiration from:
+  - modern systems thinking
+  - elegant cartography
+  - knowledge architecture
+  - calm technological futurism
+  - natural geography
 
-  * atlas illustrations
-  * studio ghibli environmental harmony
-  * modern infographic systems
-  * premium SaaS design systems
-  * scientific visualisation
-  * archival libraries
-  * Mediterranean / ancient Alexandrian knowledge culture
+- with subtle inspiration from:
+
+  - atlas illustrations
+  - studio ghibli environmental harmony
+  - modern infographic systems
+  - premium SaaS design systems
+  - scientific visualisation
+  - archival libraries
+  - Mediterranean / ancient Alexandrian knowledge culture
 
 ---
 
@@ -43,20 +44,20 @@ Knowledge Islands treats knowledge not as static storage, but as a **navigable e
 
 The system should feel like:
 
-* living knowledge landscapes
-* federated ecosystems of understanding
-* calm infrastructure for thought
-* a cartography of interconnected meaning
-* human-centred augmentation rather than replacement
+- living knowledge landscapes
+- federated ecosystems of understanding
+- calm infrastructure for thought
+- a cartography of interconnected meaning
+- human-centred augmentation rather than replacement
 
 Core conceptual themes:
 
-* stewardship over extraction
-* wisdom over noise
-* navigation over consumption
-* continuity over disruption
-* interconnectedness over fragmentation
-* augmentation over automation
+- stewardship over extraction
+- wisdom over noise
+- navigation over consumption
+- continuity over disruption
+- interconnectedness over fragmentation
+- augmentation over automation
 
 ---
 
@@ -64,26 +65,26 @@ Core conceptual themes:
 
 The imagery should evoke:
 
-* calm intelligence
-* thoughtful exploration
-* trust
-* stewardship
-* continuity
-* interconnectedness
-* wisdom over hype
-* depth over noise
-* human-centred technology
-* hopeful futurism
+- calm intelligence
+- thoughtful exploration
+- trust
+- stewardship
+- continuity
+- interconnectedness
+- wisdom over hype
+- depth over noise
+- human-centred technology
+- hopeful futurism
 
 Avoid:
 
-* cyberpunk
-* dystopian aesthetics
-* neon overload
-* aggressive AI imagery
-* dark hacker themes
-* generic corporate stock illustration
-* overly cartoonish visuals
+- cyberpunk
+- dystopian aesthetics
+- neon overload
+- aggressive AI imagery
+- dark hacker themes
+- generic corporate stock illustration
+- overly cartoonish visuals
 
 ---
 
@@ -93,34 +94,34 @@ Knowledge is represented geographically.
 
 Common motifs:
 
-* islands
-* archipelagos
-* coastlines
-* sea routes
-* bridges
-* harbours
-* lighthouses
-* libraries
-* observatories
-* pathways
-* flowing currents
-* woven connective threads
-* cartographic lines
-* layered terrain
+- islands
+- archipelagos
+- coastlines
+- sea routes
+- bridges
+- harbours
+- lighthouses
+- libraries
+- observatories
+- pathways
+- flowing currents
+- woven connective threads
+- cartographic lines
+- layered terrain
 
 The world should feel:
 
-* explorable
-* interconnected
-* breathable
-* calm
-* layered with meaning
+- explorable
+- interconnected
+- breathable
+- calm
+- layered with meaning
 
 Avoid:
 
-* disconnected floating UI panels
-* abstract technical voids
-* sterile grid-only environments
+- disconnected floating UI panels
+- abstract technical voids
+- sterile grid-only environments
 
 ---
 
@@ -128,33 +129,33 @@ Avoid:
 
 Connections between knowledge should feel:
 
-* organic
-* woven
-* flowing
-* networked but natural
+- organic
+- woven
+- flowing
+- networked but natural
 
 Visual references:
 
-* currents
-* threads
-* routes
-* constellations
-* subtle glowing pathways
-* interconnected ecosystems
+- currents
+- threads
+- routes
+- constellations
+- subtle glowing pathways
+- interconnected ecosystems
 
 Avoid:
 
-* overly technical node graphs
-* blockchain aesthetics
-* rigid circuit-board patterns
+- overly technical node graphs
+- blockchain aesthetics
+- rigid circuit-board patterns
 
 The connective fabric should feel more like:
 
-* ecosystems
-* ocean currents
-* migratory routes
-* mycelial networks
-* celestial navigation
+- ecosystems
+- ocean currents
+- migratory routes
+- mycelial networks
+- celestial navigation
 
 than machine circuitry.
 
@@ -206,40 +207,40 @@ This metaphor system should remain subtle rather than literal.
 
 Diagrams should:
 
-* feel elegant and spacious
-* use clean hierarchy
-* combine infographic clarity with organic flow
-* balance systems thinking with warmth
+- feel elegant and spacious
+- use clean hierarchy
+- combine infographic clarity with organic flow
+- balance systems thinking with warmth
 
 Preferred layouts:
 
-* radial growth diagrams
-* spirals
-* left-to-right trajectories
-* archipelago maps
-* layered ecosystems
-* modular territory structures
-* constellational layouts
-* current-flow structures
+- radial growth diagrams
+- spirals
+- left-to-right trajectories
+- archipelago maps
+- layered ecosystems
+- modular territory structures
+- constellational layouts
+- current-flow structures
 
 Use:
 
-* rounded geometry
-* smooth curves
-* subtle gradients
-* soft shadows
-* restrained iconography
-* high readability
-* atmospheric depth
-* breathable spacing
+- rounded geometry
+- smooth curves
+- subtle gradients
+- soft shadows
+- restrained iconography
+- high readability
+- atmospheric depth
+- breathable spacing
 
 Avoid:
 
-* clutter
-* dense text walls
-* hard angular diagrams
-* overly technical UML-like visuals
-* excessive wireframe aesthetics
+- clutter
+- dense text walls
+- hard angular diagrams
+- overly technical UML-like visuals
+- excessive wireframe aesthetics
 
 ---
 
@@ -249,18 +250,18 @@ Space is meaningful.
 
 Core principles:
 
-* space represents clarity
-* density represents complexity
-* routes represent understanding
-* proximity implies relationship
-* boundaries imply governance
-* openness implies exploration
+- space represents clarity
+- density represents complexity
+- routes represent understanding
+- proximity implies relationship
+- boundaries imply governance
+- openness implies exploration
 
 Whitespace should feel like:
 
-* oceans
-* atmosphere
-* navigable distance
+- oceans
+- atmosphere
+- navigable distance
 
 The user should feel like they are exploring a map of meaning rather than navigating software panels.
 
@@ -270,29 +271,29 @@ The user should feel like they are exploring a map of meaning rather than naviga
 
 Animations and transitions should feel:
 
-* slow
-* intentional
-* fluid
-* tidal
-* orbital
-* infrastructural
-* calm
+- slow
+- intentional
+- fluid
+- tidal
+- orbital
+- infrastructural
+- calm
 
 Motion references:
 
-* ocean currents
-* celestial mechanics
-* wind patterns
-* migration routes
-* flowing water
+- ocean currents
+- celestial mechanics
+- wind patterns
+- migration routes
+- flowing water
 
 Avoid:
 
-* hyperactive animations
-* bouncing interactions
-* flashy transitions
-* chaotic particle effects
-* attention-seeking motion
+- hyperactive animations
+- bouncing interactions
+- flashy transitions
+- chaotic particle effects
+- attention-seeking motion
 
 Motion should support orientation and comprehension rather than spectacle.
 
@@ -302,36 +303,36 @@ Motion should support orientation and comprehension rather than spectacle.
 
 Typography should feel:
 
-* intelligent
-* editorial
-* timeless
-* calm
-* premium
+- intelligent
+- editorial
+- timeless
+- calm
+- premium
 
 Combination:
 
-* elegant serif headings
-* clean sans-serif body text
+- elegant serif headings
+- clean sans-serif body text
 
 Suggested vibe:
 
-* modern atlas
-* scientific publication
-* premium strategy consultancy
-* thoughtful knowledge platform
+- modern atlas
+- scientific publication
+- premium strategy consultancy
+- thoughtful knowledge platform
 
 Avoid:
 
-* futuristic sci-fi fonts
-* playful startup fonts
-* overly condensed typography
+- futuristic sci-fi fonts
+- playful startup fonts
+- overly condensed typography
 
 Typography should reinforce:
 
-* readability
-* trust
-* longevity
-* intellectual clarity
+- readability
+- trust
+- longevity
+- intellectual clarity
 
 ---
 
@@ -339,43 +340,43 @@ Typography should reinforce:
 
 ## Primary Palette
 
-* Deep ocean blue
-* Midnight navy
-* Forest green
-* Moss green
-* Sandstone
-* Warm parchment
-* Soft teal
-* Muted turquoise
+- Deep ocean blue
+- Midnight navy
+- Forest green
+- Moss green
+- Sandstone
+- Warm parchment
+- Soft teal
+- Muted turquoise
 
 ## Accent Colours
 
-* Gold
-* Amber
-* Copper
-* Soft sunlight tones
+- Gold
+- Amber
+- Copper
+- Soft sunlight tones
 
 ## Backgrounds
 
-* Off-white
-* Warm paper
-* Mist grey
-* Soft atmospheric gradients
+- Off-white
+- Warm paper
+- Mist grey
+- Soft atmospheric gradients
 
 Avoid:
 
-* pure black
-* harsh white
-* oversaturated neon colours
-* bright RGB palettes
+- pure black
+- harsh white
+- oversaturated neon colours
+- bright RGB palettes
 
 Overall palettes should feel:
 
-* natural
-* enduring
-* navigable
-* calm
-* atmospheric
+- natural
+- enduring
+- navigable
+- calm
+- atmospheric
 
 ---
 
@@ -383,34 +384,34 @@ Overall palettes should feel:
 
 Illustrations should be:
 
-* semi-flat
-* lightly painterly
-* premium infographic quality
-* detailed but clean
-* atmospheric without becoming fantasy art
+- semi-flat
+- lightly painterly
+- premium infographic quality
+- detailed but clean
+- atmospheric without becoming fantasy art
 
 Preferred balance:
 
-* 70% infographic clarity
-* 30% illustrative warmth
+- 70% infographic clarity
+- 30% illustrative warmth
 
 Use:
 
-* soft lighting
-* subtle texture
-* atmospheric depth
-* calm oceans
-* layered terrain
-* elegant icons
-* restrained detail
+- soft lighting
+- subtle texture
+- atmospheric depth
+- calm oceans
+- layered terrain
+- elegant icons
+- restrained detail
 
 Avoid:
 
-* photorealism
-* comic-book style
-* childish illustration
-* excessive realism
-* low-detail flat clipart
+- photorealism
+- comic-book style
+- childish illustration
+- excessive realism
+- low-detail flat clipart
 
 ---
 
@@ -418,35 +419,35 @@ Avoid:
 
 Interfaces should feel:
 
-* modular
-* breathable
-* knowledge-centric
-* layered
-* map-inspired
-* infrastructural rather than app-like
+- modular
+- breathable
+- knowledge-centric
+- layered
+- map-inspired
+- infrastructural rather than app-like
 
 UI motifs:
 
-* navigation as exploration
-* islands as domains
-* routes as relationships
-* fabric as continuity
-* governance as subtle framing
+- navigation as exploration
+- islands as domains
+- routes as relationships
+- fabric as continuity
+- governance as subtle framing
 
 Think:
 
-* premium observability platform
-* modern knowledge atlas
-* digital library
-* calm mission-control system
-* navigable intelligence infrastructure
+- premium observability platform
+- modern knowledge atlas
+- digital library
+- calm mission-control system
+- navigable intelligence infrastructure
 
 Avoid:
 
-* cluttered dashboards
-* noisy widgets
-* growth-hacker SaaS aesthetics
-* gamification-heavy interfaces
+- cluttered dashboards
+- noisy widgets
+- growth-hacker SaaS aesthetics
+- gamification-heavy interfaces
 
 ---
 
@@ -454,33 +455,33 @@ Avoid:
 
 Human and AI agents should:
 
-* coexist naturally
-* not compete visually
-* feel collaborative
-* operate within shared ecosystems
+- coexist naturally
+- not compete visually
+- feel collaborative
+- operate within shared ecosystems
 
 Human agents represent:
 
-* stewardship
-* interpretation
-* context
-* wisdom
-* judgement
+- stewardship
+- interpretation
+- context
+- wisdom
+- judgement
 
 AI agents represent:
 
-* augmentation
-* operational scale
-* synthesis
-* continuity
-* infrastructure support
+- augmentation
+- operational scale
+- synthesis
+- continuity
+- infrastructure support
 
 Avoid:
 
-* humanoid robots
-* glowing evil AI eyes
-* sci-fi android aesthetics
-* AI dominance imagery
+- humanoid robots
+- glowing evil AI eyes
+- sci-fi android aesthetics
+- AI dominance imagery
 
 AI should feel infrastructural and supportive rather than anthropomorphic.
 
@@ -490,39 +491,39 @@ AI should feel infrastructural and supportive rather than anthropomorphic.
 
 Logos should:
 
-* work at favicon scale
-* use simple memorable silhouettes
-* be symbolic rather than literal
-* scale cleanly to monochrome
-* feel timeless
+- work at favicon scale
+- use simple memorable silhouettes
+- be symbolic rather than literal
+- scale cleanly to monochrome
+- feel timeless
 
 Strong symbols:
 
-* islands
-* arches
-* gateways
-* lighthouses
-* routes
-* woven pathways
-* abstract archipelagos
-* circular systems
-* currents
-* navigational markers
+- islands
+- arches
+- gateways
+- lighthouses
+- routes
+- woven pathways
+- abstract archipelagos
+- circular systems
+- currents
+- navigational markers
 
 Avoid:
 
-* excessive detail
-* tiny text
-* photorealistic scenes
-* cluttered compositions
-* generic tech startup marks
+- excessive detail
+- tiny text
+- photorealistic scenes
+- cluttered compositions
+- generic tech startup marks
 
 The logo should feel like:
 
-* a navigational symbol
-* a civilisational mark
-* a cartographic emblem
-* a timeless knowledge sigil
+- a navigational symbol
+- a civilisational mark
+- a cartographic emblem
+- a timeless knowledge sigil
 
 ---
 
@@ -534,19 +535,19 @@ Knowledge Islands should feel like:
 
 Not:
 
-* productivity hype
-* AI maximalism
-* cybernetic futurism
-* startup velocity culture
+- productivity hype
+- AI maximalism
+- cybernetic futurism
+- startup velocity culture
 
 But instead:
 
-* enduring systems
-* humane technology
-* navigable complexity
-* thoughtful augmentation
-* long-term stewardship
-* resilient knowledge ecosystems
+- enduring systems
+- humane technology
+- navigable complexity
+- thoughtful augmentation
+- long-term stewardship
+- resilient knowledge ecosystems
 
 ---
 

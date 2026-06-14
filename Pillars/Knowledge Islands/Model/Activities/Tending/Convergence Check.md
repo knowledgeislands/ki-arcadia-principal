@@ -28,7 +28,7 @@ Adhoc - _"ki convergence check"_.
 ## What It Does
 
 1. Identifies all islands with the generic Knowledge Islands structure
-2. Compares each shared note across islands, flagging any divergence to check if its intentional drift or accidental. Resolves any accidental drift by reverting to the most recently updated version.  Intentional drift is a signal that it needs reviewing.
+2. Compares each shared note across islands, flagging any divergence to check if its intentional drift or accidental. Resolves any accidental drift by reverting to the most recently updated version. Intentional drift is a signal that it needs reviewing.
 3. Checks Knowledge Capital files for new parameters that should be standardised
 4. Merges and cross-pollinates confirmed improvements back to all islands
 5. Reports what was synced, deferred, or intentionally kept different
@@ -47,6 +47,6 @@ These notes must remain byte-for-byte identical. Any difference is drift to be r
 
 These notes are intentionally different between islands. Do not flag differences here as drift - verify only that the correct version is internally consistent.
 
-| Note                                       | Why it differs                                                                                              |
-| ------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
-| `Knowledge Capital/` (entire folder)       | Identity, skill name, task prefix, integrations, routing rules, and canonical notes list - by design        |
+| Note                                 | Why it differs                                                                                       |
+| ------------------------------------ | ---------------------------------------------------------------------------------------------------- |
+| `Knowledge Capital/` (entire folder) | Identity, skill name, task prefix, integrations, routing rules, and canonical notes list - by design |

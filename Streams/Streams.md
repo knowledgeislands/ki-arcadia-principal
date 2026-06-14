@@ -16,26 +16,25 @@ Streams are projects and workstreams organised by their current level of focus. 
 
 Live tracking view of all active proposals. Ordered by Stream (Active → Background → Dormant → Future → Settled), then by Status within each stream (`in-progress` → `ready` → `draft`). Update whenever a proposal is created, its status changes, or its priority changes. See [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]] for the full lifecycle.
 
-| Topic                                                                                                                           | Stream     | Status        | Priority |
-| ------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------- | -------- |
-| [[Tooling Rollout Proposal]]                                                             | Active     | `in-progress` | `high`   |
-| [[Streams/Settled/Wiki Link Format/Wiki Link Format\|Wiki Link Format]]   | Settled    | `completed`   | `medium` |
-| [[Boundary Rules Proposal]]                   | Active     | `draft`       | `urgent` |
-| [[Index Review]]                | Active     | `draft`       | `medium` |
-| [[Reading Order Proposal]]               | Active     | `draft`       | `medium` |
-| [[Auto Proposal Pipeline Proposal|Proposal Pipeline]] | Active     | `draft`       | `medium` |
-| [[Intentional Proposal]]                   | Active     | `draft`       | `medium` |
-| [[Kit Legal Inception Proposal]]                                                 | Background | `draft`       | `medium` |
-| [[Kit Principal Inception Proposal]]                                     | Background | `draft`       | `medium` |
-| [[Scheduled Automations Proposal]]                                           | Future     | `draft`       | `low`    |
-| [[Agent and Session Improvements Proposal]]                | Future     | `draft`       | `low`    |
-| [[Semantic Conventions Proposal|Island Conventions]]                                                    | Future     | `draft`       | `low`    |
-| [[Bullet Journal Support Proposal|Calendar Templates]]                                            | Future     | `draft`       | `low`    |
-| [[Workflow Integrations Proposal]]                                           | Future     | `draft`       | `low`    |
-| [[MCP Ecosystem Proposal]]                                                                  | Future     | `draft`       | `low`    |
-| [[Token Economics Proposal]] | Future     | `draft`       | `low`    |
-| [[Island Visualisation Proposal]] | Future     | `draft`       | `low`    |
-
+| Topic                                                                   | Stream               | Status        | Priority |
+| ----------------------------------------------------------------------- | -------------------- | ------------- | -------- | -------- |
+| [[Tooling Rollout Proposal]]                                            | Active               | `in-progress` | `high`   |
+| [[Streams/Settled/Wiki Link Format/Wiki Link Format\|Wiki Link Format]] | Settled              | `completed`   | `medium` |
+| [[Boundary Rules Proposal]]                                             | Active               | `draft`       | `urgent` |
+| [[Index Review]]                                                        | Active               | `draft`       | `medium` |
+| [[Reading Order Proposal]]                                              | Active               | `draft`       | `medium` |
+| [[Auto Proposal Pipeline Proposal                                       | Proposal Pipeline]]  | Active        | `draft`  | `medium` |
+| [[Intentional Proposal]]                                                | Active               | `draft`       | `medium` |
+| [[Kit Legal Inception Proposal]]                                        | Background           | `draft`       | `medium` |
+| [[Kit Principal Inception Proposal]]                                    | Background           | `draft`       | `medium` |
+| [[Scheduled Automations Proposal]]                                      | Future               | `draft`       | `low`    |
+| [[Agent and Session Improvements Proposal]]                             | Future               | `draft`       | `low`    |
+| [[Semantic Conventions Proposal                                         | Island Conventions]] | Future        | `draft`  | `low`    |
+| [[Bullet Journal Support Proposal                                       | Calendar Templates]] | Future        | `draft`  | `low`    |
+| [[Workflow Integrations Proposal]]                                      | Future               | `draft`       | `low`    |
+| [[MCP Ecosystem Proposal]]                                              | Future               | `draft`       | `low`    |
+| [[Token Economics Proposal]]                                            | Future               | `draft`       | `low`    |
+| [[Island Visualisation Proposal]]                                       | Future               | `draft`       | `low`    |
 
 ---
 

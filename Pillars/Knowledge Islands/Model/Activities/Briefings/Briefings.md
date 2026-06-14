@@ -29,7 +29,7 @@ The Morning Briefing is the sole activity in this group. It is scheduled to run 
 
 To adopt this activity group, an island must create the following Knowledge Capital notes. A vetoed island must create an index stub at `Knowledge Capital/Activities/Briefings/Briefings` acknowledging the veto.
 
-| Note | Path | Purpose |
-| --- | --- | --- |
+| Note            | Path                                               | Purpose                                                 |
+| --------------- | -------------------------------------------------- | ------------------------------------------------------- |
 | Briefings index | `Knowledge Capital/Activities/Briefings/Briefings` | Group index; confirms adoption and links to tool config |
-| Schedule | `Knowledge Capital/Activities/Schedule` | Day-type taxonomy read by the Morning Briefing schedule |
+| Schedule        | `Knowledge Capital/Activities/Schedule`            | Day-type taxonomy read by the Morning Briefing schedule |

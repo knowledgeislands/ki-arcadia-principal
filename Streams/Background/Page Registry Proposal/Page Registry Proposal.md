@@ -10,6 +10,7 @@ author: Written with Claude
 ---
 
 # Page Registry Proposal
+
 ## Overview
 
 The page registry is a pre-built index that maps every leaf filename to its location(s) in the repository. It exists to support shortest-path wikilink resolution: rather than scanning the filesystem on every link read or write, agents load the registry once and perform O(1) lookups. Every page is stored - not just collisions - because if only collisions were stored, adding a second page with a previously unique name would silently break existing bare links with no way to detect it.

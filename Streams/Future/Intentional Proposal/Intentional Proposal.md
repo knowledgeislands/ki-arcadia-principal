@@ -10,6 +10,7 @@ author: Written with Claude
 ---
 
 # Intentional Proposal
+
 ## Overview
 
 A conceptual stream to explore where Intention fits in the Knowledge Islands model. The question arose during a review of `Pillars/Knowledge Islands/Concept/Concept.md` and has not yet been resolved into a specific placement or definition.
@@ -24,8 +25,8 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
 
 ## Inputs
 
-| Type     | Detail                                                                                               |
-| -------- | ---------------------------------------------------------------------------------------------------- |
+| Type     | Detail                                                    |
+| -------- | --------------------------------------------------------- |
 | Document | [[Concept]] - the note this stream will eventually modify |
 
 ---

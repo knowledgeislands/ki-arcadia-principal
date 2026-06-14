@@ -11,6 +11,7 @@ author: Written with Claude
 ---
 
 # Island Concepts Proposal
+
 ## Overview
 
 Several elements of the Knowledge Islands conceptual and geographic model remain unresolved or only partially specified. This stream tracks the work of completing them.
@@ -29,10 +30,10 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
 
 ## Inputs
 
-| Type     | Detail                                                                                                                                         |
-| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Type     | Detail                                                                                                |
+| -------- | ----------------------------------------------------------------------------------------------------- |
 | Document | [[Concept]] - `[!todo] Customs and Routes` at the end of the Geography section; settlement type table |
-| Document | [[Structure]] - `[!todo] Harbour` and `[!todo] Routes and Customs` stubs |
+| Document | [[Structure]] - `[!todo] Harbour` and `[!todo] Routes and Customs` stubs                              |
 
 ---
 

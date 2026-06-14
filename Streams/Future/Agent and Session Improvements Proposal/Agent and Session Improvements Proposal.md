@@ -10,6 +10,7 @@ author: Written with Claude
 ---
 
 # Agent and Session Improvements Proposal
+
 ## Overview
 
 Ideas for improving how Claude operates within the island - both deeper AI capabilities (retrieval, model routing) and the session-level interaction patterns that make work feel consistent and low-friction.

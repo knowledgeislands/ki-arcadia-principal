@@ -9,6 +9,7 @@ author: Written with Claude
 ---
 
 # Knowledge Capital Extraction Proposal
+
 ## Overview
 
 A stream to extract Arcadia-specific values currently embedded in `Pillars/Knowledge Islands/Model/` notes and relocate them to `Pillars/Knowledge Capital/`, leaving Model truly abstract. The premise: Model documents the generic Knowledge Islands framework; KC documents what Arcadia specifically is and how it is configured. Where the two are currently entangled - schedule times in activity definitions, install paths in tool overviews, byte counts in design rationale - the value belongs in KC and Model should backref to it.
@@ -25,18 +26,18 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
 
 ## Outputs
 
-| Type             | Detail                                                                                                                                          |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| Model edits      | Strip Arcadia-specific values from 5 Model notes (Activities, Email, Claude tool, Cowork Layers, Microsoft 365); replace with backref to KC     |
+| Type             | Detail                                                                                                                                         |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Model edits      | Strip Arcadia-specific values from 5 Model notes (Activities, Email, Claude tool, Cowork Layers, Microsoft 365); replace with backref to KC    |
 | New KC notes     | `KC/Tools/Claude/Token Budget.md`; `KC/Agents/Cowork Project Instructions.md`; `KC/Tools/Microsoft 365.md` (further notes added if discovered) |
-| KC index updates | `Knowledge Capital.md`, `Activities/Activities.md`, `Tools/Tools.md`, `Agents/Agents.md` updated to reference new notes and current state       |
+| KC index updates | `Knowledge Capital.md`, `Activities/Activities.md`, `Tools/Tools.md`, `Agents/Agents.md` updated to reference new notes and current state      |
 
 ---
 
 ## Checklist
 
 - [ ] **Activities** - strip schedule times and trigger phrases from `Model/Activities/What Keeps an Island Alive.md`; backref to [[Knowledge Capital/Charter|Charter]]
-- [ ] **Email** - strip schedule and triggers from `Model/Activities/Email/Email.md`; preserve the *Adoption Requirements* table (it is an abstract contract, not specific config)
+- [ ] **Email** - strip schedule and triggers from `Model/Activities/Email/Email.md`; preserve the _Adoption Requirements_ table (it is an abstract contract, not specific config)
 - [ ] **Claude tool** - extract token-economics measurements (file sizes, Tending threshold) from `Model/Tools/Claude/Claude.md` to a new `KC/Tools/Claude/Token Budget.md`
 - [ ] **Cowork Layers** - extract "Recommended Content for the Instructions Box" from `Model/Tools/Claude/Cowork Configuration Layers.md` to a new `KC/Agents/Cowork Project Instructions.md`
 - [ ] **Microsoft 365** - split: keep the generic MCP-for-Outlook framing in Model; move setup steps, env vars, tenant lookup, and dotfiles trick to a new `KC/Tools/Microsoft 365.md`
@@ -59,19 +60,19 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
 Four working rules applied to every extraction:
 
 - **Model treatment.** Strip Arcadia-specific values from Model docs; replace with a single sentence pointing to the KC note that holds them.
-- **KC scope.** KC notes describe Arcadia's instance only. The contract for what any KC needs (e.g. the Email *Adoption Requirements* table) stays in Model.
+- **KC scope.** KC notes describe Arcadia's instance only. The contract for what any KC needs (e.g. the Email _Adoption Requirements_ table) stays in Model.
 - **Backref direction.** Model points down to KC (`See [[KC note]] for Arcadia's values`). KC points up to Model (`See [[Model note]] for the abstract definition`).
 - **No abstract prose loss.** Only specific values get extracted. The reasoning, framing, and abstract description in Model stays.
 
 ### Inventory of extractions
 
-| Source (Model)                                          | Specific content                                            | Destination (KC)                                  |
-| ------------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------- |
-| `Activities/What Keeps an Island Alive.md`              | Schedule times, trigger phrases in activity tables          | Already held in [[Knowledge Capital/Charter\|Charter]] |
-| `Activities/Email/Email.md`                             | Schedule times, trigger phrases                             | Already held in [[Knowledge Capital/Charter\|Charter]] |
-| `Tools/Claude/Claude.md`                                | Token economics file sizes; Tending threshold values        | New `KC/Tools/Claude/Token Budget.md`             |
-| `Tools/Claude/Cowork Configuration Layers.md`           | "Recommended Content for the Instructions Box" section      | New `KC/Agents/Cowork Project Instructions.md`    |
-| `Tools/Microsoft 365/Microsoft 365.md`                  | Setup steps, Azure tenant lookup, env vars, dotfiles trick | New `KC/Tools/Microsoft 365.md`                   |
+| Source (Model)                                | Specific content                                           | Destination (KC)                                       |
+| --------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------ |
+| `Activities/What Keeps an Island Alive.md`    | Schedule times, trigger phrases in activity tables         | Already held in [[Knowledge Capital/Charter\|Charter]] |
+| `Activities/Email/Email.md`                   | Schedule times, trigger phrases                            | Already held in [[Knowledge Capital/Charter\|Charter]] |
+| `Tools/Claude/Claude.md`                      | Token economics file sizes; Tending threshold values       | New `KC/Tools/Claude/Token Budget.md`                  |
+| `Tools/Claude/Cowork Configuration Layers.md` | "Recommended Content for the Instructions Box" section     | New `KC/Agents/Cowork Project Instructions.md`         |
+| `Tools/Microsoft 365/Microsoft 365.md`        | Setup steps, Azure tenant lookup, env vars, dotfiles trick | New `KC/Tools/Microsoft 365.md`                        |
 
 ### Order of work
 

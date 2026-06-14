@@ -37,12 +37,12 @@ Fixed parameters that distinguish this Knowledge Island. Automations and skill p
 
 Adoption positions for all non-constitutional activity groups. Every group must carry an explicit position - `adopted` or `vetoed`. A vetoed group must have a corresponding stub in the Knowledge Capital acknowledging the decision. Constitutional activities (Charter, Conformance) are not listed here - they are pre-adoptive.
 
-| Group       | Position | Knowledge Capital                                                                        |
-| ----------- | -------- | ---------------------------------------------------------------------------------------- |
-| Tending | adopted  | [[Knowledge Capital/Activities/Tending/Tending]] |
-| Briefings   | adopted  | [[Knowledge Capital/Activities/Briefings/Briefings]]       |
-| Email       | vetoed   | [[Knowledge Capital/Activities/Email/Email]]                   |
-| Linear      | vetoed   | [[Knowledge Capital/Activities/Linear/Linear|Linear Workspace]]      |
+| Group     | Position | Knowledge Capital                                    |
+| --------- | -------- | ---------------------------------------------------- | ------------------ |
+| Tending   | adopted  | [[Knowledge Capital/Activities/Tending/Tending]]     |
+| Briefings | adopted  | [[Knowledge Capital/Activities/Briefings/Briefings]] |
+| Email     | vetoed   | [[Knowledge Capital/Activities/Email/Email]]         |
+| Linear    | vetoed   | [[Knowledge Capital/Activities/Linear/Linear         | Linear Workspace]] |
 
 ---
 
@@ -50,13 +50,13 @@ Adoption positions for all non-constitutional activity groups. Every group must 
 
 Active scheduled automations within adopted groups. An activity listed here is enabled and deployed to the scheduler. An activity defined in the island but not listed here is not running.
 
-| Activity                                                                                                   | Group          | Day Type           | Time  | Status  |
-| ---------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | ----- | ------- |
-| [[Knowledge Islands/Activities/Constitutional/Conformance]]                | Constitutional | work-day           | 04:30 | enabled |
-| [[Scheduled Task Audit]] | Tending        | work-day           | 05:00 | enabled |
-| [[Health Check]]                 | Tending        | Monday work-day    | 08:00 | enabled |
-| [[Knowledge Rebuild]]       | Tending        | Wednesday work-day | 07:00 | enabled |
-| [[Morning Briefing]]           | Briefings      | work-day           | 06:00 | enabled |
+| Activity                                                    | Group          | Day Type           | Time  | Status  |
+| ----------------------------------------------------------- | -------------- | ------------------ | ----- | ------- |
+| [[Knowledge Islands/Activities/Constitutional/Conformance]] | Constitutional | work-day           | 04:30 | enabled |
+| [[Scheduled Task Audit]]                                    | Tending        | work-day           | 05:00 | enabled |
+| [[Health Check]]                                            | Tending        | Monday work-day    | 08:00 | enabled |
+| [[Knowledge Rebuild]]                                       | Tending        | Wednesday work-day | 07:00 | enabled |
+| [[Morning Briefing]]                                        | Briefings      | work-day           | 06:00 | enabled |
 
 Day types are defined in [[Schedule|Schedule]].
 
@@ -66,13 +66,13 @@ Day types are defined in [[Schedule|Schedule]].
 
 Active conversational activities within adopted groups. Trigger phrases are the canonical activation strings.
 
-| Activity                                                                                             | Group       | Trigger                  | Status  |
-| ---------------------------------------------------------------------------------------------------- | ----------- | ------------------------ | ------- |
-| [[Inbox Review]]           | Tending | _"ki inbox review"_      | enabled |
-| [[Asset Audit]]             | Tending | _"ki asset audit"_       | enabled |
-| [[Status Review]]         | Tending | _"ki status review"_     | enabled |
-| [[Structural Audit]]   | Tending | _"ki structural audit"_  | enabled |
-| [[Wikilink Review]]     | Tending | _"ki wikilink review"_   | enabled |
+| Activity                                                                              | Group   | Trigger                  | Status  |
+| ------------------------------------------------------------------------------------- | ------- | ------------------------ | ------- |
+| [[Inbox Review]]                                                                      | Tending | _"ki inbox review"_      | enabled |
+| [[Asset Audit]]                                                                       | Tending | _"ki asset audit"_       | enabled |
+| [[Status Review]]                                                                     | Tending | _"ki status review"_     | enabled |
+| [[Structural Audit]]                                                                  | Tending | _"ki structural audit"_  | enabled |
+| [[Wikilink Review]]                                                                   | Tending | _"ki wikilink review"_   | enabled |
 | [[Pillars/Knowledge Islands/Activities/Tending/Convergence Check\|Convergence Check]] | Tending | _"ki convergence check"_ | enabled |
 
 ---

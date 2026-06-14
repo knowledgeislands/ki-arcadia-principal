@@ -9,6 +9,7 @@ author: Written with Claude
 ---
 
 # Island Visualisation Proposal
+
 ## Overview
 
 A visual representation of a Knowledge Island rendered as an isometric tile map. The island's geography - Library, Harbour, Streams, Pillars, Resources - becomes literal: bricks and tiles arranged spatially, with the structure of the island determining the layout. The graph view in Obsidian shows connections; this would show the island as a place.
@@ -25,9 +26,9 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
 
 ## Outputs
 
-| Type   | Detail                                                            |
-| ------ | ----------------------------------------------------------------- |
-| TBD    | Likely a tool, plugin, or web component - format TBD at planning |
+| Type | Detail                                                           |
+| ---- | ---------------------------------------------------------------- |
+| TBD  | Likely a tool, plugin, or web component - format TBD at planning |
 
 ---
 

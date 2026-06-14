@@ -9,6 +9,7 @@ author: Written with Claude
 ---
 
 # Boundary Rules Proposal
+
 ## Overview
 
 A stream to establish explicit content boundary rules (conceptually Boundary Walls) across the Knowledge Islands pillar structure. Without these rules, sections accumulate content that belongs elsewhere - Arcadia-specific detail in generic Knowledge Islands notes, tool references in convention notes, activity references in agent notes, and so on. The rules make the separation of concerns enforceable rather than aspirational.
@@ -23,9 +24,9 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
 
 ## Outputs
 
-| Type                 | Detail                                                                                                                   |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Convention note      | `Pillars/Knowledge Islands/Model/Conventions/Boundary Rules.md` - new standalone note                              |
+| Type             | Detail                                                                                                        |
+| ---------------- | ------------------------------------------------------------------------------------------------------------- |
+| Convention note  | `Pillars/Knowledge Islands/Model/Conventions/Boundary Rules.md` - new standalone note                         |
 | Tending activity | Boundary rules scan activity in `Pillars/Knowledge Capital/Activities/` (schedule and trigger TBD at rollout) |
 
 ---
@@ -87,23 +88,23 @@ For Soft violations that are intentionally retained, the note carrying the excep
 ### Rules table (draft)
 
 | Content | Target Path | Severity | Notes |
-|---------|-------------|----------|-------|
+| --- | --- | --- | --- |
 | Internally-owned methodology or island knowledge | `Resources` | Hard | Belongs in Pillars; relocate if found |
 | External reference material (content that exists independently) | `Pillars` | Soft | Primary record belongs in Resources; Pillars note may summarise or link |
 | References to Pillars notes | `Resources` | Hard | Resources content exists independently of the island; it must not point inward |
 | References to Resources notes | `Pillars` | None | Pillars may link outward to Resources freely |
-| Named island entities (principals, citizens, organisations) | `Pillars/Knowledge Islands` | Hard | |
+| Named island entities (principals, citizens, organisations) | `Pillars/Knowledge Islands` | Hard |  |
 | Named island entities | `Pillars/Knowledge Islands/Knowledge Capital` | None | KC is island-specific by design |
 | Arcadia as custodian of Knowledge Islands | `Pillars/Knowledge Islands` | None | One named exception; Arcadia may be named in this role |
 | KC operational content | `Pillars/Knowledge Islands` | Hard | Prevents bleed-back into the portable framework |
 | KI framework content | `Pillars/Knowledge Capital` | None | KC may freely reference KI |
-| Named agents (specific tools, AI systems, automations) | `Pillars/Knowledge Islands/Model/Agents` | Hard | |
+| Named agents (specific tools, AI systems, automations) | `Pillars/Knowledge Islands/Model/Agents` | Hard |  |
 | Named agents | `Pillars/Knowledge Islands/Model/Activities` | Soft | Capability statements permitted; name only where no capability abstraction is possible |
 | Named agents | `Pillars/Knowledge Capital/Agents` | None | KC agent config is inherently specific |
-| Named activities | `Pillars/Knowledge Islands/Model/Agents` | Soft | |
+| Named activities | `Pillars/Knowledge Islands/Model/Agents` | Soft |  |
 | Named activities | `Pillars/Knowledge Capital/Agents` | None | KC agent config may list assigned activities |
 | Specific tools or integrations | `Pillars/Knowledge Islands/Model/Conventions` | Hard | Generic capability references permitted |
-| Specific tools or integrations | `Pillars/Knowledge Islands/Model/Processes` | Hard | |
+| Specific tools or integrations | `Pillars/Knowledge Islands/Model/Processes` | Hard |  |
 | Specific tools or integrations | `Pillars/Knowledge Capital/Tools` | None | KC tools config is inherently specific |
 | KM/PKM/KB terminology | `Pillars` | Soft | Historical context permitted; document inline |
 

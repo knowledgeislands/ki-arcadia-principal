@@ -10,6 +10,7 @@ author: Written with Claude
 ---
 
 # Scheduled Automations Proposal
+
 ## Overview
 
 Ideas for new scheduled tasks and improvements to the existing automation suite. Most of these extend coverage into areas the current task set does not reach, or add efficiency gates to reduce token usage on quiet days.

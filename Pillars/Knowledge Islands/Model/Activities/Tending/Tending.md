@@ -77,7 +77,7 @@ Activities divide by cadence and initiation. Three are scheduled automations tha
 
 To adopt this activity group, an island must create the following Knowledge Capital notes. A vetoed island must create an index stub at `Knowledge Capital/Activities/Tending/Tending` acknowledging the veto.
 
-| Note          | Path                                    | Purpose                                                      |
-| ------------- | --------------------------------------- | ------------------------------------------------------------ |
-| Tending index | `Knowledge Capital/Activities/Tending/Tending` | Group index; confirms adoption and links to timing config    |
-| Schedule      | `Knowledge Capital/Activities/Schedule` | Day-type taxonomy read by all scheduled automations          |
+| Note          | Path                                           | Purpose                                                   |
+| ------------- | ---------------------------------------------- | --------------------------------------------------------- |
+| Tending index | `Knowledge Capital/Activities/Tending/Tending` | Group index; confirms adoption and links to timing config |
+| Schedule      | `Knowledge Capital/Activities/Schedule`        | Day-type taxonomy read by all scheduled automations       |

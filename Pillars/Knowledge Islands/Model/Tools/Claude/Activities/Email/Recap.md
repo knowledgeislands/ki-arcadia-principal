@@ -13,7 +13,7 @@ author: Written with Claude
 
 ## Overview
 
-The Claude agent specific activity prompt for the Email Recap activity.  This is maintained as an agentic AI specific task instruction that it can easily use at runtime rather than having to read and understand all of the note hierachy and inheritance at runtime.
+The Claude agent specific activity prompt for the Email Recap activity. This is maintained as an agentic AI specific task instruction that it can easily use at runtime rather than having to read and understand all of the note hierachy and inheritance at runtime.
 
 ---
 

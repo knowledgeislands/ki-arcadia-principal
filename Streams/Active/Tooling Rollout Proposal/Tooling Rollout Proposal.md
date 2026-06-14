@@ -11,6 +11,7 @@ author: Written with Claude
 ---
 
 # Tooling Rollout Proposal
+
 ## Overview
 
 Building out Arcadia's operational tooling across three areas. First, the `Tools/Claude/Activities/` prompt library - the Prompt layer in the [[Authoring Guidelines|content layers]] - migrating existing embedded prompts, authoring new ones, and keeping them aligned with their Knowledge Islands activity notes. Second, activity navigation aids: cached or synthesised views of the content layers that reduce the number of notes a human or agent needs to read. Third, Arcadia's operational infrastructure: the Arcadia skill definition and the scheduled task configuration.

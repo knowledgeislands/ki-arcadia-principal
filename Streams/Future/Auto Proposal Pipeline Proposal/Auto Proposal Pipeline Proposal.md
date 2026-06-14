@@ -26,11 +26,11 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
 
 ## Outputs
 
-| Type          | Detail                                                                                                |
-| ------------- | ----------------------------------------------------------------------------------------------------- |
-| Activity note | `Activities/[Group]/Auto Proposal Research.md` - the Definition: what the activity does and why       |
-| Prompt note   | `Tools/Claude/Activities/[Group]/Auto Proposal Research.md` - the Prompt: executable prompt           |
-| Convention    | Definition of "proposal-ready" criteria and proposal note format                                      |
+| Type          | Detail                                                                                          |
+| ------------- | ----------------------------------------------------------------------------------------------- |
+| Activity note | `Activities/[Group]/Auto Proposal Research.md` - the Definition: what the activity does and why |
+| Prompt note   | `Tools/Claude/Activities/[Group]/Auto Proposal Research.md` - the Prompt: executable prompt     |
+| Convention    | Definition of "proposal-ready" criteria and proposal note format                                |
 
 ---
 

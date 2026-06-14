@@ -250,11 +250,11 @@ The `type` field is a Cowork convention - not part of the base Claude Code auto-
 
 The filename convention is `{type}_{scope_prefix}_{descriptor}.md`, where `scope_prefix` is one of:
 
-| Scope prefix                                                   | Meaning                                                      | Example                                |
-| -------------------------------------------------------------- | ------------------------------------------------------------ | -------------------------------------- |
-| Knowledge Island identifier (e.g. `arcadia-principal`)         | Specific to this Knowledge Island                            | `feedback_{island-name}_operations.md` |
-| User identifier (e.g. `kit`)                                   | Specific to this user                                        | `user_kit_profile.md`                  |
-| `any`                                                          | Cross-context - applies to any Knowledge Island or session   | `feedback_any_claude_behaviour.md`     |
+| Scope prefix                                           | Meaning                                                    | Example                                |
+| ------------------------------------------------------ | ---------------------------------------------------------- | -------------------------------------- |
+| Knowledge Island identifier (e.g. `arcadia-principal`) | Specific to this Knowledge Island                          | `feedback_{island-name}_operations.md` |
+| User identifier (e.g. `kit`)                           | Specific to this user                                      | `user_kit_profile.md`                  |
+| `any`                                                  | Cross-context - applies to any Knowledge Island or session | `feedback_any_claude_behaviour.md`     |
 
 The prefix distinguishes files from multiple islands sharing the same `.auto-memory/` directory, and signals whether a rule is island-specific or universally applicable.
 
@@ -262,13 +262,13 @@ The prefix distinguishes files from multiple islands sharing the same `.auto-mem
 
 **Canonical files** are managed exclusively by [[Knowledge Rebuild]]. They are rewritten from the island on a regular schedule. Do not edit them manually between rebuilds - changes will be overwritten. The five canonical files are:
 
-| File                                 | Source island notes                                                          |
-| ------------------------------------ | ---------------------------------------------------------------------------- |
-| `user_{user_prefix}_profile.md`      | Identity + Communication Style                                               |
-| `project_{ki_prefix}_structure.md`   | Island Structure + Routing Rules + Knowledge Residency                       |
-| `project_{ki_prefix}_note_format.md` | Notes/Format + Notes/Frontmatter                                             |
-| `feedback_{ki_prefix}_operations.md` | Mistakes and Lessons + Activities                                            |
-| `reference_{ki_prefix}_key_notes.md` | Identity + Activities + Integrations + Claude.md + Memory Architecture       |
+| File                                 | Source island notes                                                    |
+| ------------------------------------ | ---------------------------------------------------------------------- |
+| `user_{user_prefix}_profile.md`      | Identity + Communication Style                                         |
+| `project_{ki_prefix}_structure.md`   | Island Structure + Routing Rules + Knowledge Residency                 |
+| `project_{ki_prefix}_note_format.md` | Notes/Format + Notes/Frontmatter                                       |
+| `feedback_{ki_prefix}_operations.md` | Mistakes and Lessons + Activities                                      |
+| `reference_{ki_prefix}_key_notes.md` | Identity + Activities + Integrations + Claude.md + Memory Architecture |
 
 **Auxiliary files** are created ad-hoc during sessions when Claude saves something worth preserving. They persist between rebuilds and are never overwritten by Knowledge Rebuild. They accumulate until promoted to the island or explicitly pruned. See [[Residency]] for promotion criteria and lifecycle.
 

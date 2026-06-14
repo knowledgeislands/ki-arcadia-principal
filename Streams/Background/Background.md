@@ -16,9 +16,9 @@ Background streams are projects and ideas that are alive and being slowly pursue
 
 ## Streams
 
-| Topic | Status | Priority |
-| ----- | ------ | -------- |
-| [[Island Concepts Proposal]] | `draft` | `low` |
+| Topic                                | Status  | Priority |
+| ------------------------------------ | ------- | -------- |
+| [[Island Concepts Proposal]]         | `draft` | `low`    |
 | [[Kit Principal Inception Proposal]] | `draft` | `medium` |
-| [[Kit Legal Inception Proposal]] | `draft` | `medium` |
-| [[Reading Order Proposal]] | `draft` | `medium` |
+| [[Kit Legal Inception Proposal]]     | `draft` | `medium` |
+| [[Reading Order Proposal]]           | `draft` | `medium` |
