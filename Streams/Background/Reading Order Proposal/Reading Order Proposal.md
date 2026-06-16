@@ -12,7 +12,9 @@ author: Written with Claude
 
 ## Overview
 
-The three-act structure of `Pillars/Knowledge Islands` is in place. The migration from the old flat-folder layout is complete; the reading order runs Introduction → Model → Realisation, with each act answering a question and each chapter building on the last. The foundation is solid. The work from here is content quality, contextual integrity, and structural completeness.
+The three-act structure of `Pillars/Knowledge Islands` is in place. The migration from the old flat-folder layout is complete; the reading
+order runs Introduction → Model → Realisation, with each act answering a question and each chapter building on the last. The foundation is
+solid. The work from here is content quality, contextual integrity, and structural completeness.
 
 See [[Site Structure]] - the storyboard at a glance (HTML, sibling file).
 
@@ -47,11 +49,17 @@ Still outstanding - every folder in the tree still needs a folder note:
 
 ### Prompt note frontmatter conventions
 
-Two existing patterns conflict for the `Tools/Claude/Activities/{group}/` Prompt notes. The Conformance Prompt note uses `card/prompt` with a `# X - Prompt` title and an explicit `Definition: [[...]] Configuration: [[...]]` cross-link. The newer notes coming out of [[Authoring Layers Proposal]] use `card/note` with a plain `# X` title and no cross-link, mirroring the Definition's frontmatter. Needs a deliberate decision on the canonical shape, then a sweep to bring all Prompt notes into line. Connects to [[Authoring Layers Proposal]] - if its capitalisation pass downgrades role-name proper nouns, the title convention ("- Prompt" suffix) becomes part of the same question.
+Two existing patterns conflict for the `Tools/Claude/Activities/{group}/` Prompt notes. The Conformance Prompt note uses `card/prompt` with
+a `# X - Prompt` title and an explicit `Definition: [[...]] Configuration: [[...]]` cross-link. The newer notes coming out of
+[[Authoring Layers Proposal]] use `card/note` with a plain `# X` title and no cross-link, mirroring the Definition's frontmatter. Needs a
+deliberate decision on the canonical shape, then a sweep to bring all Prompt notes into line. Connects to [[Authoring Layers Proposal]] - if
+its capitalisation pass downgrades role-name proper nouns, the title convention ("- Prompt" suffix) becomes part of the same question.
 
 ### Contextual review - reading order walk
 
-A step-by-step pass down the reading order checking that every concept is introduced before it is used. The known tension points from the original review were in the Residency and Format areas; the migration may have introduced new gaps, particularly around concepts that appear in the Model chapters before the Introduction has fully grounded them.
+A step-by-step pass down the reading order checking that every concept is introduced before it is used. The known tension points from the
+original review were in the Residency and Format areas; the migration may have introduced new gaps, particularly around concepts that appear
+in the Model chapters before the Introduction has fully grounded them.
 
 ## Governance
 

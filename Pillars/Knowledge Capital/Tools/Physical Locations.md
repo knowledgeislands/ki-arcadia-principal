@@ -10,7 +10,8 @@ author: Written with Claude
 
 ## Overview
 
-The island spans three physical locations. The text and binary stores mirror the same folder structure; the working folder has no structure requirement.
+The island spans three physical locations. The text and binary stores mirror the same folder structure; the working folder has no structure
+requirement.
 
 ---
 

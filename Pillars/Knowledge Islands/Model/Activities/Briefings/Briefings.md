@@ -13,21 +13,28 @@ author: Written with Claude
 
 ## Overview
 
-Briefings prime the island and the working day. They run before any other work begins, ensuring that calendar infrastructure exists, today's daily note is ready, and the agenda - tasks due, meetings, and inbox items - is surfaced in one place. A briefing does not produce knowledge; it produces context. Its output is a prepared environment from which the rest of the day's work starts.
+Briefings prime the island and the working day. They run before any other work begins, ensuring that calendar infrastructure exists, today's
+daily note is ready, and the agenda - tasks due, meetings, and inbox items - is surfaced in one place. A briefing does not produce
+knowledge; it produces context. Its output is a prepared environment from which the rest of the day's work starts.
 
-The Morning Briefing is the sole activity in this group. It is scheduled to run automatically each working day and creates missing notes (weekly, monthly) as needed before populating today's daily note.
+The Morning Briefing is the sole activity in this group. It is scheduled to run automatically each working day and creates missing notes
+(weekly, monthly) as needed before populating today's daily note.
 
 ---
 
 ## Morning Briefing
 
-[[Morning Briefing]] runs each working day at 06:00. It fetches calendar events for the day, surfaces tasks due today and overdue, pulls in upcoming tasks for the next five working days, and lists any items sitting in the `+/` inbox. If the current week's weekly note or month's monthly note does not yet exist, the briefing creates it before proceeding. The result is a daily note that is ready to use as the anchor for the day.
+[[Morning Briefing]] runs each working day at 06:00. It fetches calendar events for the day, surfaces tasks due today and overdue, pulls in
+upcoming tasks for the next five working days, and lists any items sitting in the `+/` inbox. If the current week's weekly note or month's
+monthly note does not yet exist, the briefing creates it before proceeding. The result is a daily note that is ready to use as the anchor
+for the day.
 
 ---
 
 ## Adoption Requirements
 
-To adopt this activity group, an island must create the following Knowledge Capital notes. A vetoed island must create an index stub at `Knowledge Capital/Activities/Briefings/Briefings` acknowledging the veto.
+To adopt this activity group, an island must create the following Knowledge Capital notes. A vetoed island must create an index stub at
+`Knowledge Capital/Activities/Briefings/Briefings` acknowledging the veto.
 
 | Note            | Path                                               | Purpose                                                 |
 | --------------- | -------------------------------------------------- | ------------------------------------------------------- |

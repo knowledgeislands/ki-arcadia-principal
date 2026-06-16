@@ -13,7 +13,10 @@ author: Written with Claude
 
 ## Overview
 
-A read-only health check for the Email Automation system. Dry-runs both scheduled activities in order - Route Drift, Route Triage - and reports what each would do without making any moves, writes, or tracking changes. Route Triage covers both the aged archival pass and the inbound routing pass (including the inline aged check). Use after structural changes (Route file renames, cache invalidation, scheduling changes) or when a scheduled run seems to have misbehaved.
+A read-only health check for the Email Automation system. Dry-runs both scheduled activities in order - Route Drift, Route Triage - and
+reports what each would do without making any moves, writes, or tracking changes. Route Triage covers both the aged archival pass and the
+inbound routing pass (including the inline aged check). Use after structural changes (Route file renames, cache invalidation, scheduling
+changes) or when a scheduled run seems to have misbehaved.
 
 ---
 

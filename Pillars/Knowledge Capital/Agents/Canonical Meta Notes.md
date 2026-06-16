@@ -10,7 +10,8 @@ author: Written with Claude
 
 ## Overview
 
-The ordered list of notes that [[Knowledge Rebuild]] loads to reconstruct the island's operational context. All paths are relative to the repository root.
+The ordered list of notes that [[Knowledge Rebuild]] loads to reconstruct the island's operational context. All paths are relative to the
+repository root.
 
 ---
 

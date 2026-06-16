@@ -11,7 +11,8 @@ author: Written with Claude
 
 ## Overview
 
-Defines the delta from [[Notes]] for session digest notes. Session digests are temporary summaries of AI-assisted work sessions, filed in the Calendar alongside the daily note for that date.
+Defines the delta from [[Notes]] for session digest notes. Session digests are temporary summaries of AI-assisted work sessions, filed in
+the Calendar alongside the daily note for that date.
 
 ---
 
@@ -44,6 +45,7 @@ Five standard sections, all required:
 
 ## Lifecycle
 
-Session digests are temporary by design. Once all durable content has been extracted to the appropriate Pillars or Streams notes, the session note should be deleted - it has no long-term value as a standalone calendar artefact.
+Session digests are temporary by design. Once all durable content has been extracted to the appropriate Pillars or Streams notes, the
+session note should be deleted - it has no long-term value as a standalone calendar artefact.
 
 The test: if the note were deleted today, would any knowledge be lost? If not, delete it. If yes, extract first.

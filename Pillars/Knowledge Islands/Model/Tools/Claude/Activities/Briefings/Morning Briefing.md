@@ -13,7 +13,8 @@ author: Written with Claude
 
 ## Overview
 
-The Claude agent specific activity prompt for the Morning Briefing activity. This is maintained as an agentic AI specific task instruction that it can easily use at runtime rather than having to read and understand all of the note hierachy and inheritance at runtime.
+The Claude agent specific activity prompt for the Morning Briefing activity. This is maintained as an agentic AI specific task instruction
+that it can easily use at runtime rather than having to read and understand all of the note hierachy and inheritance at runtime.
 
 ---
 
@@ -27,7 +28,8 @@ The Claude agent specific activity prompt for the Morning Briefing activity. Thi
 
 ## Prompt
 
-The prompt below is the canonical version. It must match the prompt stored in the `{task-prefix}-morning-briefing` scheduled task - see [[Authoring Guidelines]] § Prompt Editing Discipline.
+The prompt below is the canonical version. It must match the prompt stored in the `{task-prefix}-morning-briefing` scheduled task - see
+[[Authoring Guidelines]] § Prompt Editing Discipline.
 
 ```txt
 You are running the Morning Briefing. Your job is to prepare today's daily note so it is ready before the day begins.

@@ -11,7 +11,8 @@ author: Written with Claude
 
 ## Overview
 
-Defines the delta from [[Notes]] for collection cards. Collection cards are lightweight reference entries for people, organisations, concepts, and index notes. They use a `card/*` type tag rather than the generic `card/note`.
+Defines the delta from [[Notes]] for collection cards. Collection cards are lightweight reference entries for people, organisations,
+concepts, and index notes. They use a `card/*` type tag rather than the generic `card/note`.
 
 ---
 
@@ -33,7 +34,8 @@ See [[Tags]] for the full tag reference.
 
 ## Structure
 
-Collection cards follow the same structural rules as full notes but with fewer body sections. The body should reflect what is meaningful for the card type:
+Collection cards follow the same structural rules as full notes but with fewer body sections. The body should reflect what is meaningful for
+the card type:
 
 - **Person cards** - role, context, relationship to the island, key notes
 - **Organisation cards** - what they are, relationship to the island, key contacts

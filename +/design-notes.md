@@ -1,6 +1,7 @@
 # Knowledge Islands — Visual Style Prompt / Brand System
 
-Use this prompt as a reusable foundation for generating all future **Knowledge Islands** visuals, diagrams, logos, slide graphics, maps, UI concepts, animations, interfaces, and illustrations.
+Use this prompt as a reusable foundation for generating all future **Knowledge Islands** visuals, diagrams, logos, slide graphics, maps, UI
+concepts, animations, interfaces, and illustrations.
 
 ---
 
@@ -555,4 +556,11 @@ But instead:
 
 Use this as a base prefix for future generations:
 
-> Create a premium “Knowledge Islands” visual in a calm, human-centred systems aesthetic. Blend elegant cartography, modern infographic design, organic interconnected knowledge systems, and subtle civilisational library influences. Use oceanic and natural colour palettes with deep blues, greens, sandstone, parchment, and restrained gold accents. The style should feel intelligent, timeless, exploratory, and structured — combining knowledge architecture, archipelago metaphors, woven connective fabric, and thoughtful technological futurism. Represent knowledge as a navigable ecology rather than a database. Prioritise breathable layouts, soft gradients, smooth curves, atmospheric depth, layered terrain, and calm infrastructural clarity. Motion and composition should evoke ocean currents, celestial navigation, and interconnected ecosystems. Avoid cyberpunk, harsh corporate aesthetics, neon colours, rigid technical diagrams, and generic AI imagery. Prioritise clarity, stewardship, wisdom, interconnectedness, and elegant systems thinking.
+> Create a premium “Knowledge Islands” visual in a calm, human-centred systems aesthetic. Blend elegant cartography, modern infographic
+> design, organic interconnected knowledge systems, and subtle civilisational library influences. Use oceanic and natural colour palettes
+> with deep blues, greens, sandstone, parchment, and restrained gold accents. The style should feel intelligent, timeless, exploratory, and
+> structured — combining knowledge architecture, archipelago metaphors, woven connective fabric, and thoughtful technological futurism.
+> Represent knowledge as a navigable ecology rather than a database. Prioritise breathable layouts, soft gradients, smooth curves,
+> atmospheric depth, layered terrain, and calm infrastructural clarity. Motion and composition should evoke ocean currents, celestial
+> navigation, and interconnected ecosystems. Avoid cyberpunk, harsh corporate aesthetics, neon colours, rigid technical diagrams, and
+> generic AI imagery. Prioritise clarity, stewardship, wisdom, interconnectedness, and elegant systems thinking.

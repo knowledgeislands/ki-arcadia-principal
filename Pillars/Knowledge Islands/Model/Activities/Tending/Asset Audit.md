@@ -12,7 +12,8 @@ author: Written with Claude
 
 ## Overview
 
-A weekly scan for unlinked assets in the island. The repository is primarily Markdown, but images, SVGs, PDFs, and other files accumulate over time. This task surfaces assets that nothing links to and flags them for removal or proper integration.
+A weekly scan for unlinked assets in the island. The repository is primarily Markdown, but images, SVGs, PDFs, and other files accumulate
+over time. This task surfaces assets that nothing links to and flags them for removal or proper integration.
 
 ---
 

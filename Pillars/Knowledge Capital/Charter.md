@@ -10,9 +10,13 @@ author: Written with Claude
 
 ## Overview
 
-Arcadia's island charter - the authoritative declaration of what this island is and what it has adopted. It has two parts that change at different rates. The **Identity** section is static: these parameters define the island and do not change without a constitutional amendment. The operational sections below it change as activities are enabled or disabled, integrations connected, and agent configuration updated.
+Arcadia's island charter - the authoritative declaration of what this island is and what it has adopted. It has two parts that change at
+different rates. The **Identity** section is static: these parameters define the island and do not change without a constitutional
+amendment. The operational sections below it change as activities are enabled or disabled, integrations connected, and agent configuration
+updated.
 
-The [[Knowledge Islands/Activities/Constitutional/Conformance|Conformance Check]] uses this note as its source of truth. Agents starting cold and humans checking operational state both read it first.
+The [[Knowledge Islands/Activities/Constitutional/Conformance|Conformance Check]] uses this note as its source of truth. Agents starting
+cold and humans checking operational state both read it first.
 
 ---
 
@@ -35,7 +39,9 @@ Fixed parameters that distinguish this Knowledge Island. Automations and skill p
 
 ## Activity Groups
 
-Adoption positions for all non-constitutional activity groups. Every group must carry an explicit position - `adopted` or `vetoed`. A vetoed group must have a corresponding stub in the Knowledge Capital acknowledging the decision. Constitutional activities (Charter, Conformance) are not listed here - they are pre-adoptive.
+Adoption positions for all non-constitutional activity groups. Every group must carry an explicit position - `adopted` or `vetoed`. A vetoed
+group must have a corresponding stub in the Knowledge Capital acknowledging the decision. Constitutional activities (Charter, Conformance)
+are not listed here - they are pre-adoptive.
 
 | Group     | Position | Knowledge Capital                                    |
 | --------- | -------- | ---------------------------------------------------- | ------------------ |
@@ -48,7 +54,8 @@ Adoption positions for all non-constitutional activity groups. Every group must 
 
 ## Scheduled Activities
 
-Active scheduled automations within adopted groups. An activity listed here is enabled and deployed to the scheduler. An activity defined in the island but not listed here is not running.
+Active scheduled automations within adopted groups. An activity listed here is enabled and deployed to the scheduler. An activity defined in
+the island but not listed here is not running.
 
 | Activity                                                    | Group          | Day Type           | Time  | Status  |
 | ----------------------------------------------------------- | -------------- | ------------------ | ----- | ------- |

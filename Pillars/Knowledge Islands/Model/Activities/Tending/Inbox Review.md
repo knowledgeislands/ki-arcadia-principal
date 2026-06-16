@@ -12,7 +12,8 @@ author: Written with Claude
 
 ## Overview
 
-A weekly manual review of the `+/` inbox folder. New notes arrive here from voice notes (via plugin), quick captures, and anything unsorted. The review files each note to the correct Pillar, Resource, or Stream and ensures the inbox stays clear.
+A weekly manual review of the `+/` inbox folder. New notes arrive here from voice notes (via plugin), quick captures, and anything unsorted.
+The review files each note to the correct Pillar, Resource, or Stream and ensures the inbox stays clear.
 
 ---
 

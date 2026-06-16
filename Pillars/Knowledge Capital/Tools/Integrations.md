@@ -11,7 +11,8 @@ memory_file: reference_{ki_prefix}_key_notes.md
 
 ## Overview
 
-External tools connected to Arcadia. Arcadia's integration surface is minimal - it is a knowledge repository and framework custodian, not an operational system.
+External tools connected to Arcadia. Arcadia's integration surface is minimal - it is a knowledge repository and framework custodian, not an
+operational system.
 
 ---
 
@@ -21,4 +22,5 @@ External tools connected to Arcadia. Arcadia's integration surface is minimal - 
 | ------- | --------------------------------------- | --------------- |
 | Inbox   | `+/` folder - exclude `+/_Voice Notes/` | (filesystem)    |
 
-No external calendar, task, issue, or email integrations are currently configured for Arcadia. Integrations are added here as they are introduced.
+No external calendar, task, issue, or email integrations are currently configured for Arcadia. Integrations are added here as they are
+introduced.

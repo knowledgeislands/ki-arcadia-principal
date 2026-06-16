@@ -8,4 +8,5 @@ author: Written with Claude
 
 # Email Routing Config
 
-Not applicable. Arcadia has vetoed the Email activity group. See [[Knowledge Capital/Activities/Email/Email]] for the veto record and [[Knowledge Capital/Charter|Charter]] for the adoption position.
+Not applicable. Arcadia has vetoed the Email activity group. See [[Knowledge Capital/Activities/Email/Email]] for the veto record and
+[[Knowledge Capital/Charter|Charter]] for the adoption position.

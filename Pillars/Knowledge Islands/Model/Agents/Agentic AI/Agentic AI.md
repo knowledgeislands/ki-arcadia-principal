@@ -13,7 +13,8 @@ author: Written with Claude
 
 ## Overview
 
-The AI operating layer - patterns and conventions that govern how AI agents work within the island, independent of any specific tool. Content here applies across AI tools; see tool specific notes for further details.
+The AI operating layer - patterns and conventions that govern how AI agents work within the island, independent of any specific tool.
+Content here applies across AI tools; see tool specific notes for further details.
 
 This is the Pattern layer in the [[Authoring Guidelines|content layers]]: activity-agnostic, island-agnostic, agent-agnostic.
 
@@ -21,7 +22,10 @@ This is the Pattern layer in the [[Authoring Guidelines|content layers]]: activi
 
 ## AI Automation Patterns
 
-[[AI Automation Patterns]] documents the reusable design patterns for AI-driven productivity automations: the execution/change ratio principle (prefer reading and reporting over writing), the JSON5 cache pattern for reducing redundant MCP fetches, the live artifact baseline and two-mechanic update protocol, parallel MCP fetch for latency reduction, and the rolling time window convention. Any AI agent implementing an island activity should draw on these patterns rather than re-deriving them from scratch.
+[[AI Automation Patterns]] documents the reusable design patterns for AI-driven productivity automations: the execution/change ratio
+principle (prefer reading and reporting over writing), the JSON5 cache pattern for reducing redundant MCP fetches, the live artifact
+baseline and two-mechanic update protocol, parallel MCP fetch for latency reduction, and the rolling time window convention. Any AI agent
+implementing an island activity should draw on these patterns rather than re-deriving them from scratch.
 
 ---
 

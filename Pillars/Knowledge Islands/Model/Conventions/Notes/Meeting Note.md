@@ -11,7 +11,8 @@ author: Written with Claude
 
 ## Overview
 
-Defines the delta from [[Notes]] for meeting notes. Meeting notes are point-in-time records of a specific meeting - one note per meeting, filed in the Calendar alongside the daily note for that date.
+Defines the delta from [[Notes]] for meeting notes. Meeting notes are point-in-time records of a specific meeting - one note per meeting,
+filed in the Calendar alongside the daily note for that date.
 
 ---
 

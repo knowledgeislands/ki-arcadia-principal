@@ -11,9 +11,12 @@ author: Written with Claude
 
 ## Overview
 
-Knowledge on the island does not live in one place. It exists across three tiers depending on its maturity, purpose, and who needs to access it. The Library is the authoritative store - durable, structured, version-controlled, permanent. But agents also carry working knowledge in their own memory: operational shorthand, session observations, patterns not yet stable enough for the Library.
+Knowledge on the island does not live in one place. It exists across three tiers depending on its maturity, purpose, and who needs to access
+it. The Library is the authoritative store - durable, structured, version-controlled, permanent. But agents also carry working knowledge in
+their own memory: operational shorthand, session observations, patterns not yet stable enough for the Library.
 
-These tiers are complementary, not competing. The Library is what the knowledge _is_; agent memory is how it is _accessed_ efficiently. Understanding where knowledge resides determines how it is maintained, when it is promoted, and when it can be discarded.
+These tiers are complementary, not competing. The Library is what the knowledge _is_; agent memory is how it is _accessed_ efficiently.
+Understanding where knowledge resides determines how it is maintained, when it is promoted, and when it can be discarded.
 
 ---
 
@@ -66,9 +69,12 @@ New observation in a session
                     → auxiliary file deleted
 ```
 
-Auxiliary files that never recur or are situational should be pruned, not promoted. The test: _would a future agent session benefit from knowing this, and is it stable enough to belong in the island notes?_
+Auxiliary files that never recur or are situational should be pruned, not promoted. The test: _would a future agent session benefit from
+knowing this, and is it stable enough to belong in the island notes?_
 
-**Deletion after rebuild:** Auxiliary files whose content is fully covered by canonical memory are deleted after the next scheduled rebuild confirms coverage. At rebuild time: compare auxiliary content against the canonical files; delete any auxiliary whose rules, facts, or pointers are fully present in canonical.
+**Deletion after rebuild:** Auxiliary files whose content is fully covered by canonical memory are deleted after the next scheduled rebuild
+confirms coverage. At rebuild time: compare auxiliary content against the canonical files; delete any auxiliary whose rules, facts, or
+pointers are fully present in canonical.
 
 ---
 
@@ -93,7 +99,8 @@ Do not promote:
 
 Bidirectional links keep island notes and memory in sync and enable automated drift detection.
 
-**Island → memory** - `memory_file:` frontmatter property on the island note. Generic (portable) notes use placeholder syntax; a scheduled rebuild activity substitutes the actual prefix from the Charter at runtime:
+**Island → memory** - `memory_file:` frontmatter property on the island note. Generic (portable) notes use placeholder syntax; a scheduled
+rebuild activity substitutes the actual prefix from the Charter at runtime:
 
 ```yaml
 # Generic note - portable across islands
@@ -120,4 +127,5 @@ memory_file:
 - `Pillars/.../Routing Rules.md` - three-domain model
 ```
 
-Both directions should be maintained. `memory_file:` enables Knowledge Rebuild to verify that referenced memory files still exist. `## Island Sources` tells agents (and human readers) where to find the authoritative version.
+Both directions should be maintained. `memory_file:` enables Knowledge Rebuild to verify that referenced memory files still exist.
+`## Island Sources` tells agents (and human readers) where to find the authoritative version.

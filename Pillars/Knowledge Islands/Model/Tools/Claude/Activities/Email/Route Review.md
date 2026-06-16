@@ -13,13 +13,15 @@ author: Written with Claude
 
 ## Overview
 
-The Claude agent specific activity prompt for the Email Route Review activity. This is maintained as an agentic AI specific task instruction that it can easily use at runtime rather than having to read and understand all of the note hierachy and inheritance at runtime.
+The Claude agent specific activity prompt for the Email Route Review activity. This is maintained as an agentic AI specific task instruction
+that it can easily use at runtime rather than having to read and understand all of the note hierachy and inheritance at runtime.
 
 ---
 
 ## Invocation
 
-Chat trigger: _"email route review"_. Typically invoked after reviewing the [[Email Routing Queue|Email Routing Queue]] in Obsidian and setting suggestion statuses.
+Chat trigger: _"email route review"_. Typically invoked after reviewing the [[Email Routing Queue|Email Routing Queue]] in Obsidian and
+setting suggestion statuses.
 
 ---
 

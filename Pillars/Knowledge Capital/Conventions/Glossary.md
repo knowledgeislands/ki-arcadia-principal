@@ -10,7 +10,8 @@ author: Written with Claude
 
 ## Overview
 
-A reference for Knowledge Islands terminology - concepts, acronyms, and structural terms used across Arcadia and the wider archipelago system.
+A reference for Knowledge Islands terminology - concepts, acronyms, and structural terms used across Arcadia and the wider archipelago
+system.
 
 ---
 
@@ -56,7 +57,8 @@ A reference for Knowledge Islands terminology - concepts, acronyms, and structur
 
 ## Other Planes of Existence
 
-Knowledge Islands is not the only model of knowledge organisation. Other systems - wikis, drives, legacy vaults, corporate intranets - exist as **Planes of Existence**: parallel worlds of knowledge that operate independently of the KI model.
+Knowledge Islands is not the only model of knowledge organisation. Other systems - wikis, drives, legacy vaults, corporate intranets - exist
+as **Planes of Existence**: parallel worlds of knowledge that operate independently of the KI model.
 
 | Term                | Meaning                                                                                                                                            |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |

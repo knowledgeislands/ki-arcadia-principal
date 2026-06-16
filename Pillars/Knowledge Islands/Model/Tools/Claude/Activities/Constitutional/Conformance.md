@@ -12,7 +12,8 @@ author: Written with Claude
 
 ## Overview
 
-This is the executable prompt for the Conformance Check. It is a read-only activity: no files are modified. The output is a structured conformance report surfacing issues for human review.
+This is the executable prompt for the Conformance Check. It is a read-only activity: no files are modified. The output is a structured
+conformance report surfacing issues for human review.
 
 Definition: [[Knowledge Islands/Model/Activities/Constitutional/Conformance]] Configuration: [[Knowledge Capital/Charter|Charter]]
 
@@ -24,7 +25,8 @@ Read this prompt in full before taking any action.
 
 ---
 
-You are running the KI Conformance Check. This is a constitutional activity - it verifies that the island meets its Knowledge Islands baseline and that its adoption record is complete and internally consistent. It is read-only: make no changes to any file.
+You are running the KI Conformance Check. This is a constitutional activity - it verifies that the island meets its Knowledge Islands
+baseline and that its adoption record is complete and internally consistent. It is read-only: make no changes to any file.
 
 ### Preparation
 
@@ -39,18 +41,23 @@ Check each of the two constitutional elements in turn.
 
 **Charter.** The file `Pillars/Knowledge Capital/Charter.md` must exist and contain both parts:
 
-- An Identity section with at minimum: an island name, an island skill identifier, and a task prefix. Flag as CRITICAL if any of these fields are missing.
-- An Activity Groups table with at least one row carrying a clear `adopted` or `vetoed` position; a Scheduled Activities table; and a Tools section. Flag as CRITICAL if any of these sections are absent or the Activity Groups table is empty.
+- An Identity section with at minimum: an island name, an island skill identifier, and a task prefix. Flag as CRITICAL if any of these
+  fields are missing.
+- An Activity Groups table with at least one row carrying a clear `adopted` or `vetoed` position; a Scheduled Activities table; and a Tools
+  section. Flag as CRITICAL if any of these sections are absent or the Activity Groups table is empty.
 
 Flag as CRITICAL if the file is absent or empty.
 
-**Conformance.** Check that the Conformance Check appears in the Charter's Scheduled Activities table with status `enabled`. Flag as CRITICAL if it is absent or carries any other status.
+**Conformance.** Check that the Conformance Check appears in the Charter's Scheduled Activities table with status `enabled`. Flag as
+CRITICAL if it is absent or carries any other status.
 
 ### Step 2 - Adoption completeness
 
-From the Activities index you read in preparation, extract all top-level activity groups. Exclude `Constitutional` - it is not subject to the adoption model.
+From the Activities index you read in preparation, extract all top-level activity groups. Exclude `Constitutional` - it is not subject to
+the adoption model.
 
-For each remaining group, check whether the Charter's Activity Groups table contains a row for that group with either `adopted` or `vetoed` in the Position column.
+For each remaining group, check whether the Charter's Activity Groups table contains a row for that group with either `adopted` or `vetoed`
+in the Position column.
 
 - Present with a clear position → pass
 - Present but position is neither `adopted` nor `vetoed` → flag as non-conformant: ambiguous position
@@ -60,9 +67,12 @@ For each remaining group, check whether the Charter's Activity Groups table cont
 
 Work through each group in the Charter's Activity Groups table.
 
-**For each vetoed group:** Read the file path given in the Knowledge Capital column. Verify the file exists and explicitly states the veto - a note that is merely empty or a bare title does not count. Flag as non-conformant if the file is absent or does not acknowledge the veto.
+**For each vetoed group:** Read the file path given in the Knowledge Capital column. Verify the file exists and explicitly states the veto -
+a note that is merely empty or a bare title does not count. Flag as non-conformant if the file is absent or does not acknowledge the veto.
 
-**For each adopted group:** Read the file path given in the Knowledge Capital column (the group's KC index note). Then read the corresponding group index note in `Pillars/Knowledge Islands/Model/Activities/[Group]/[Group].md`. Find the Adoption Requirements section in that note and extract the list of required KC note paths.
+**For each adopted group:** Read the file path given in the Knowledge Capital column (the group's KC index note). Then read the
+corresponding group index note in `Pillars/Knowledge Islands/Model/Activities/[Group]/[Group].md`. Find the Adoption Requirements section in
+that note and extract the list of required KC note paths.
 
 For each required KC note:
 

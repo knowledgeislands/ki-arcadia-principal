@@ -16,7 +16,8 @@ Yearly note for {{date:YYYY}}.
 
 ## Contents
 
-[One section per month in chronological order. Each section lists the monthly note followed by any weekly notes whose Monday falls in that month.]
+[One section per month in chronological order. Each section lists the monthly note followed by any weekly notes whose Monday falls in that
+month.]
 
 ### January
 

@@ -13,7 +13,9 @@ author: Written with Claude
 
 ## Overview
 
-A weekly scheduled task that reads all canonical meta notes from the island and rewrites the auto-memory files that Claude uses as working context across sessions. Ensures that any changes to structure, conventions, routing rules, or operational lessons are reflected in Claude's memory without requiring manual intervention.
+A weekly scheduled task that reads all canonical meta notes from the island and rewrites the auto-memory files that Claude uses as working
+context across sessions. Ensures that any changes to structure, conventions, routing rules, or operational lessons are reflected in Claude's
+memory without requiring manual intervention.
 
 ---
 
@@ -21,10 +23,14 @@ A weekly scheduled task that reads all canonical meta notes from the island and 
 
 1. Locates the island repository via [[Knowledge Capital]]
 2. Reads all canonical meta notes (as listed in [[Canonical Meta Notes]])
-3. Reads the existing canonical auto-memory files and compares them against the canonical notes - surfacing gaps, stale content, and anything worth adding before overwriting
-4. Verifies cross-references in both directions: KI notes with `memory_file:` frontmatter have a corresponding auto-memory file; auto-memory files with `## KI Sources` reference KI notes that still exist at those paths
+3. Reads the existing canonical auto-memory files and compares them against the canonical notes - surfacing gaps, stale content, and
+   anything worth adding before overwriting
+4. Verifies cross-references in both directions: KI notes with `memory_file:` frontmatter have a corresponding auto-memory file; auto-memory
+   files with `## KI Sources` reference KI notes that still exist at those paths
 5. Prompts for confirmation or additions before proceeding
-6. Rewrites the five canonical auto-memory files at `/sessions/*/mnt/.auto-memory/` to reflect the current state of the island. Any auxiliary memory files that have accumulated via ad-hoc session saves (for example domain acronyms, operational lessons, deep memory stores) are left untouched
+6. Rewrites the five canonical auto-memory files at `/sessions/*/mnt/.auto-memory/` to reflect the current state of the island. Any
+   auxiliary memory files that have accumulated via ad-hoc session saves (for example domain acronyms, operational lessons, deep memory
+   stores) are left untouched
 7. Rewrites `MEMORY.md` to index both the canonical files and any auxiliary files that exist
 8. Reports what changed
 
@@ -32,13 +38,15 @@ A weekly scheduled task that reads all canonical meta notes from the island and 
 
 ## Gap Analysis Checklist
 
-Run before overwriting any canonical file. The goal is to surface drift between the island and memory, and flag auxiliary files that have become redundant, before committing the rebuild.
+Run before overwriting any canonical file. The goal is to surface drift between the island and memory, and flag auxiliary files that have
+become redundant, before committing the rebuild.
 
 **Canonical memory vs KI**
 
 - [ ] List all files in `$MEMORY_DIR` - identify which are canonical (the five managed files) and which are auxiliary (everything else)
 - [ ] Read each of the five canonical memory files
-- [ ] Compare each against the canonical meta notes - for each file note: gaps (knowledge in KI but absent or thin in memory), stale entries (memory that contradicts the current KI), and candidate additions (KI content not yet captured anywhere in memory)
+- [ ] Compare each against the canonical meta notes - for each file note: gaps (knowledge in KI but absent or thin in memory), stale entries
+      (memory that contradicts the current KI), and candidate additions (KI content not yet captured anywhere in memory)
 
 **Auxiliary memory triage**
 
@@ -54,8 +62,10 @@ Run before overwriting any canonical file. The goal is to surface drift between 
 
 **Cross-reference integrity**
 
-- [ ] For every island note with a `memory_file:` frontmatter property: expand `{ki_prefix}` → `$MEMORY_PREFIX` and `{user_prefix}` → `$USER_PREFIX`, then confirm the resolved filename exists in `$MEMORY_DIR`. Flag missing files.
-- [ ] For every auto-memory file with a `## KI Sources` section: confirm each listed KI path still exists in the repository. Flag broken paths.
+- [ ] For every island note with a `memory_file:` frontmatter property: expand `{ki_prefix}` → `$MEMORY_PREFIX` and `{user_prefix}` →
+      `$USER_PREFIX`, then confirm the resolved filename exists in `$MEMORY_DIR`. Flag missing files.
+- [ ] For every auto-memory file with a `## KI Sources` section: confirm each listed KI path still exists in the repository. Flag broken
+      paths.
 
 **Before proceeding**
 

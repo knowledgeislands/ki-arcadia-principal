@@ -13,7 +13,9 @@ author: Written with Claude
 
 ## Overview
 
-A stream to understand and improve how tokens are spent across all island AI operations. Token cost is a meaningful constraint: wasteful prompts inflate cost and exhaust context budgets faster; well-designed prompts do more with less. This covers three areas: scheduled task prompt design, interactive session efficiency, and tooling that assists with token measurement or reduction.
+A stream to understand and improve how tokens are spent across all island AI operations. Token cost is a meaningful constraint: wasteful
+prompts inflate cost and exhaust context budgets faster; well-designed prompts do more with less. This covers three areas: scheduled task
+prompt design, interactive session efficiency, and tooling that assists with token measurement or reduction.
 
 ---
 
@@ -71,7 +73,8 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
 
 ### Tooling
 
-1. **[caveman](https://github.com/JuliusBrussee/caveman)** - Investigate as a token-efficiency or prompt analysis tool; assess whether it provides useful visibility into token usage or prompt structure
+1. **[caveman](https://github.com/JuliusBrussee/caveman)** - Investigate as a token-efficiency or prompt analysis tool; assess whether it
+   provides useful visibility into token usage or prompt structure
 
 ## Governance
 

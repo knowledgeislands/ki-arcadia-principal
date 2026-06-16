@@ -12,9 +12,11 @@ author: Written with Claude
 
 ## Overview
 
-The stream also covers stream focus index tables (Active, Background, Dormant, Future, Settled) - verifying each `## Streams` table matches the top-level [[Streams]] table, and adding a recurring audit step to whichever maintenance activity owns structural health checks.
+The stream also covers stream focus index tables (Active, Background, Dormant, Future, Settled) - verifying each `## Streams` table matches
+the top-level [[Streams]] table, and adding a recurring audit step to whichever maintenance activity owns structural health checks.
 
-The goal is that by the end of the review, every index note in the Knowledge Islands pillar accurately contextualises its contents, and stream focus indexes are in sync and covered by ongoing maintenance.
+The goal is that by the end of the review, every index note in the Knowledge Islands pillar accurately contextualises its contents, and
+stream focus indexes are in sync and covered by ongoing maintenance.
 
 ---
 
@@ -40,7 +42,8 @@ Session boundaries are natural pause points - the review can be picked up at the
 
 ## Sequence
 
-The order follows the folder structure of `Pillars/Knowledge Islands/`, leaf nodes first within each subtree. To be confirmed at session start by reading the current folder structure.
+The order follows the folder structure of `Pillars/Knowledge Islands/`, leaf nodes first within each subtree. To be confirmed at session
+start by reading the current folder structure.
 
 ---
 
