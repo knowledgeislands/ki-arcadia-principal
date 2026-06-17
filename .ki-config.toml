@@ -9,3 +9,12 @@ visibility = "private"   # "public" | "private"
 [knowledgeislands-engineering]
 # This repo fully conforms, so it declares no check overrides. To diverge, add a
 # [knowledgeislands-engineering.checks] table with one boolean per check (true = enforce).
+
+# Read by the knowledgeislands-kb skill (the Knowledge Islands knowledge-base standard).
+# Presence opts this base into the kb standard; it uses the canonical zone names, so it
+# declares no [knowledgeislands-kb.zones] aliases / required_frontmatter / preflight.
+[knowledgeislands-kb]
+
+# Read by the knowledgeislands-streams skill (the Streams zone + Enactment Process).
+# Presence opts the Streams zone into the Enactment Process; it uses the defaults.
+[knowledgeislands-streams]
