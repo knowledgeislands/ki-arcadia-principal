@@ -55,7 +55,8 @@
     "lint:md:check": "bunx prettier --check \"**/*.md\" --ignore-path .gitignore && bunx markdownlint-cli2",
     "lint:package": "bunx syncpack format",
     "lint:types": "tsc --noEmit",
-    "prepare": "husky"
+    "prepare": "husky",
+    "skills:link:project": "bun $HOME/.claude/skills/knowledgeislands-bootstrap/scripts/link-skills.ts"
   },
   "type": "module"
 }
