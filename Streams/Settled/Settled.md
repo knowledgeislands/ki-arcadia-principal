@@ -18,8 +18,8 @@ what was learned.
 
 ## Streams
 
-| Topic                                                                   | Status      | Priority |
-| ----------------------------------------------------------------------- | ----------- | -------- |
-| [[Streams Enactment Conformance Proposal]]                              | `completed` | `high`   |
-| Conformance                                                             | `completed` | `urgent` |
-| [[Streams/Settled/Wiki Link Format/Wiki Link Format\|Wiki Link Format]] | `completed` | `medium` |
+| Topic                                  | Status      | Priority |
+| -------------------------------------- | ----------- | -------- |
+| Streams Enactment Conformance Proposal | `completed` | `high`   |
+| Conformance                            | `completed` | `urgent` |
+| Wiki Link Format                       | `completed` | `medium` |
