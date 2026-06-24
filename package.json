@@ -1,6 +1,6 @@
 {
   "name": "@knowledgeislands/arcadia-principal",
-  "description": "The core knowledge repository of the Knowledge Islands project, serving as the primary hub of evolving ideas and governance",
+  "description": "The core knowledge repository of the Knowledge Islands project — governance base, evolving KB, and decision record.",
   "version": "1.0.0",
   "author": "kris@kris.me.uk",
   "bugs": {
