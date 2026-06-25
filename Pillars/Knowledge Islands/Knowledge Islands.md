@@ -45,7 +45,7 @@ showing what knowledge is, why it needs a home, and what has been tried before. 
 - [[History of Knowledge Systems]] - the long arc from oral tradition to LLM-native tools; places Knowledge Islands in lineage
 - [[What is Knowledge]] - defines the raw material; separates information, knowledge, and wisdom
 - [[Layers of Knowledge]] - individual to collective to civilisational; the scope of the problem
-- [[Other Approaches]] - Zettelkasten, PARA, LLM wikis; what each gets right and what each leaves open
+- [[Prior Art]] - Zettelkasten, PARA, LLM wikis, OKF; what each gets right and what each leaves open
 - [[The Cycle of Knowledge]] - capture, connect, reflect; the engine that keeps an island alive
 - [[The Home of Knowledge]] ★ - the island, Capital, Library, Streams, Harbour; the model lands here
 
