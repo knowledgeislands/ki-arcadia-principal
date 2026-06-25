@@ -25,7 +25,7 @@ visibility = "private"   # "public" | "private"
 # Decision Records — island adopts DRs for significant structural decisions.
 # Decisions live in Admin/Governance/Decisions/ under the Governance arm of the Admin zone.
 [knowledgeislands-decision-records]
-scope = "ARCADIA"
+scope = "KI-ARCADIA"
 repo_type = "kb"
 
 [knowledgeislands-tokenomics]
