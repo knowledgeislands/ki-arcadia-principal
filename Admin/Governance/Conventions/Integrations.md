@@ -14,6 +14,9 @@ memory_file: reference_{ki_prefix}_key_notes.md
 External tools connected to Arcadia. Arcadia's integration surface is minimal - it is a knowledge repository and framework custodian, not an
 operational system.
 
+Activity prompts reference this note to resolve platform-specific configuration — MCP tool prefixes, inbox paths, service identifiers —
+rather than hardcoding values. When an integration changes, updating this note is sufficient.
+
 ---
 
 ## Tools

@@ -12,4 +12,4 @@ Not applicable. Arcadia has vetoed the Linear activity group. Arcadia does not r
 island exists as a canonical framework definition because Arcadia is the custodian of the Knowledge Islands framework, not because it has
 adopted the activity.
 
-See [[Knowledge Capital/Charter|Charter]] for the adoption position and [[Linear Sync]] for the framework activity definition.
+See [[Admin/Governance/Charter|Charter]] for the adoption position and [[Linear Sync]] for the framework activity definition.

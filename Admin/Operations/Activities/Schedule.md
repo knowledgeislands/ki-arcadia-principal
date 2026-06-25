@@ -12,7 +12,7 @@ memory_file: reference_{ki_prefix}_key_notes.md
 ## Overview
 
 The day-type taxonomy used by all island automations to determine whether and how to run on a given day. The active schedule - which
-automations are enabled and at what time - is declared in the [[Knowledge Capital/Charter|Charter]]. This note defines the day-type model
+automations are enabled and at what time - is declared in the [[Admin/Governance/Charter|Charter]]. This note defines the day-type model
 that those cron entries reference.
 
 ---

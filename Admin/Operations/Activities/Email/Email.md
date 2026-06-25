@@ -12,7 +12,7 @@ author: Written with Claude
 
 Arcadia has vetoed the Email activity group. Email inbox management is not a function of this island - Arcadia is a knowledge repository and
 framework custodian, not an operational system with an inbox to manage. The veto is deliberate and is recorded in the
-[[Knowledge Capital/Charter|Charter]].
+[[Admin/Governance/Charter|Charter]].
 
 The activity definitions for the Email group - Route Drift, Route Triage, Route Review, Re-route Triaged, Recap, and Email Test - are held
 in this island as canonical framework definitions under [[Knowledge Islands/Activities/Email/Email|Activities/Email]]. They exist here

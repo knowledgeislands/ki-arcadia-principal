@@ -43,12 +43,12 @@ Adoption positions for all non-constitutional activity groups. Every group must 
 group must have a corresponding stub in the Knowledge Capital acknowledging the decision. Constitutional activities (Charter, Conformance)
 are not listed here - they are pre-adoptive.
 
-| Group     | Position | Knowledge Capital                                    |
-| --------- | -------- | ---------------------------------------------------- | ------------------ |
-| Tending   | adopted  | [[Knowledge Capital/Activities/Tending/Tending]]     |
-| Briefings | adopted  | [[Knowledge Capital/Activities/Briefings/Briefings]] |
-| Email     | vetoed   | [[Knowledge Capital/Activities/Email/Email]]         |
-| Linear    | vetoed   | [[Knowledge Capital/Activities/Linear/Linear         | Linear Workspace]] |
+| Group     | Position | Knowledge Capital                                   |
+| --------- | -------- | --------------------------------------------------- | ------------------ |
+| Tending   | adopted  | [[Admin/Operations/Activities/Tending/Tending]]     |
+| Briefings | adopted  | [[Admin/Operations/Activities/Briefings/Briefings]] |
+| Email     | vetoed   | [[Admin/Operations/Activities/Email/Email]]         |
+| Linear    | vetoed   | [[Admin/Operations/Activities/Linear/Linear         | Linear Workspace]] |
 
 ---
 
