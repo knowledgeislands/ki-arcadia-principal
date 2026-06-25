@@ -22,11 +22,10 @@ Full specification in [[Structure]]. Summary:
 - 4 top-level folders: `Calendar` (daily notes, meeting notes, session digests, and periodic reviews), `Pillars` (internal knowledge -
   methodology, approach, and domain-specific reference), `Resources` (external reference - things that exist independently), `Streams`
   (status tracking for projects and workstreams - durable knowledge belongs in Pillars)
-- `Admin` and `-` (outbound) are present but minimal - introduced to align with the canonical Knowledge Islands zone model (five zones -
-  `Calendar`, `Pillars`, `Resources`, `Streams`, `Admin` - flanked by the inbound `+` and outbound `-` staging areas). For now governance
-  stays in [[Knowledge Capital]] and session digests stay in `Calendar`; migrating governance into [[Admin]] and digest output into `-` is
-  deliberate future work. `Admin` is nonetheless a canonical zone, gated through the Enactment Process alongside `Pillars` and `Resources` -
-  changes route through a proposal once it holds operating-model content. [[Admin/MEMORY|MEMORY]] is the root memory index of active Pillars
+- `Admin` and `-` (outbound) are canonical zones - `Admin` holds governance (`Admin/Governance/`: charter, known lands, conventions,
+  decisions, note templates, policies) and operations (`Admin/Operations/`: activities, processes, live artifacts, skills) - migrated from
+  Knowledge Capital per GDR-KI-ARCADIA-003; `-` is outbound staging. `Admin` is gated through the Enactment Process alongside `Pillars` and
+  `Resources` - changes route through a proposal. [[Admin/MEMORY|MEMORY]] is the root memory index of active Admin content
 - `Pillars` and `Resources` share subfolder names by design - e.g. `Pillars/Finance` holds internal knowledge; `Resources/Finance` holds
   general reference
 - `Streams` sub-folders by priority: `Active`, `Background`, `Dormant`, `Future`, `Settled` (concluded)
@@ -44,15 +43,15 @@ Full specification in [[Structure]]. Summary:
 
 The general principle: `Pillars` holds internal knowledge owned by the Knowledge Island; `Resources` holds external reference material that
 exists independently. Methodology or internal content found in Resources belongs in Pillars. The canonical boundary definition is in
-[[Pillars/Knowledge Islands/Model/Conventions/Structure/Library/Library|Library]] under "Pillars/Resources Boundary".
+[[Pillars/Philosophy/Model/Conventions/Structure/Library/Library|Library]] under "Pillars/Resources Boundary".
 
 ### Changing canonical content (strictly enforced)
 
 Substantive changes to a canonical zone (`Admin`, `Pillars`, `Resources`) go through the **Enactment Process**: open a proposal in
 `Streams/` and roll it out under the gate - do not edit `Admin`/`Pillars`/`Resources` directly. When starting any such change, load the
 `knowledgeislands-streams` skill - it owns the proposal lifecycle (`draft` -> `ready` -> ratify -> `rolled-out` -> `reviewed` ->
-`completed`). See [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]]. Exempt: trivial typo/formatting fixes,
-`Calendar/` entries, and `+/` triage.
+`completed`). See [[Philosophy/Model/Processes/Enactment Process|Enactment Process]]. Exempt: trivial typo/formatting fixes, `Calendar/`
+entries, and `+/` triage.
 
 ### Index Notes (strictly enforced)
 
@@ -134,13 +133,13 @@ See [[Routing Rules]] for any additional routing rules specific to this island.
 ## Knowledge Island Specifics (strictly enforced)
 
 All values specific to this island - identity parameters, task prefix, skill triggers, schedule configuration, integration details, and
-physical paths - live in `Pillars/Knowledge Capital/`. The [[Knowledge Capital/Charter|Charter]] is the primary reference: it holds the
-identity parameters and the full adoption and activity roster. Deeper configuration lives in the corresponding `Pillars/Knowledge Capital/`
-subfolders (Activities for schedule config, Tools for integrations, Agents for agent config).
+physical paths - live in `Admin/Governance/`. The [[Admin/Governance/Charter|Charter]] is the primary reference: it holds the identity
+parameters and the full adoption and activity roster. Integration and platform configuration lives in
+[[Admin/Governance/Conventions/Admin Conventions/Integrations|Integrations]] under `Admin/Governance/Conventions/Admin Conventions/`.
 
 **Automations and skills must read their configuration from these notes at runtime, not hardcode values.** This keeps prompts portable
-across islands and ensures a single source of truth. When an integration changes (e.g. a new TickTick list, a different calendar), update
-the relevant KC note - the automations will pick up the change on their next run.
+across islands and ensures a single source of truth. When an integration changes, update the relevant `Admin/Governance/Conventions/` note -
+the automations will pick up the change on their next run.
 
 ## Decision Records
 

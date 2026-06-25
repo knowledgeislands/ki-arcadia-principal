@@ -61,6 +61,6 @@ A step-by-step pass down the reading order checking that every concept is introd
 original review were in the Residency and Format areas; the migration may have introduced new gaps, particularly around concepts that appear
 in the Model chapters before the Introduction has fully grounded them.
 
-## Governance
+## Adherence
 
 This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.

@@ -27,3 +27,4 @@ Ideas and projects not yet started - queued for when the time or circumstances a
 | [[Island MCP Proposal]]                     | `draft`              | `low`    |
 | [[Token Economics Proposal]]                | `draft`              | `low`    |
 | [[Island Visualisation Proposal]]           | `draft`              | `low`    |
+| [[KI Skill Extraction Candidates Proposal]] | `draft`              | `medium` |

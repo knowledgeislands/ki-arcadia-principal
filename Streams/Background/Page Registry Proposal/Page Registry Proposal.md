@@ -70,7 +70,7 @@ Two sentinel values appear in the JSON:
 The example below shows how `Knowledge Capital` and `Knowledge Islands` share a `Governance` folder with the same set of child names,
 causing almost every index note in the subtree to collide.
 
-```
+```text
 Home.md ←──────────────────────────────── [[Home]]
 Pillars
 |── Pillars.md ←───────────────────────── [[Pillars/Pillars]]
@@ -90,15 +90,15 @@ Pillars
 └── Knowledge Islands
     ├── Knowledge Islands.md ←─────────── [[Knowledge Islands]]
     └── Governance
-        ├── Governance.md ←────────────── [[Knowledge Islands/Governance]]
+        ├── Governance.md ←────────────── [[Philosophy/Governance]]
         ├── Activities
-        │   └── Activities.md ←────────── [[Knowledge Islands/Activities]]
+        │   └── Activities.md ←────────── [[Philosophy/Activities]]
         ├── Agents
-        │   └── Agents.md ←────────────── [[Knowledge Islands/Agents]]
+        │   └── Agents.md ←────────────── [[Philosophy/Agents]]
         ├── Pillars
-        │   └── Pillars.md ←───────────── [[Knowledge Islands/Pillars]]
+        │   └── Pillars.md ←───────────── [[Philosophy/Pillars]]
         └── Tools
-            └── Tools.md ←─────────────── [[Knowledge Islands/Tools]]
+            └── Tools.md ←─────────────── [[Philosophy/Tools]]
             └── Linear.md ←────────────── [[Linear]]  (unique)
 ```
 
@@ -116,8 +116,8 @@ Given a full path, find the shortest unambiguous link. This is a straightforward
 Examples:
 
 - `Linear` → array entry → `[[Linear]]`.
-- `Governance` at `Pillars/Knowledge Islands/Governance` → object entry, key `Knowledge Islands` → `[[Knowledge Islands/Governance]]`.
-- `Activities` at KI/Governance → object entry `*` → inherit Governance's prefix → `[[Knowledge Islands/Activities]]`.
+- `Governance` at `Pillars/Philosophy/Governance` → object entry, key `Knowledge Islands` → `[[Philosophy/Governance]]`.
+- `Activities` at KI/Governance → object entry `*` → inherit Governance's prefix → `[[Philosophy/Activities]]`.
 
 ---
 

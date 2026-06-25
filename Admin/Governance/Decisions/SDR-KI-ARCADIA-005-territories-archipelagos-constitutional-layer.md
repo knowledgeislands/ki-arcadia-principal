@@ -87,6 +87,6 @@ the canonical definition. The **Contribution Process** governs this:
 
 - [SDR-KI-ARCADIA-001: Knowledge Islands — The Strategy](SDR-KI-ARCADIA-001-knowledge-islands-strategy.md)
 - [SDR-KI-ARCADIA-003: The Governance of an Island](SDR-KI-ARCADIA-003-the-governance-of-an-island.md)
-- [Territories and Archipelagos](../../../Pillars/Knowledge%20Islands/Introduction/Concept/Territories%20and%20Archipelagos/Territories%20and%20Archipelagos.md)
-- [Jurisdiction](../../../Pillars/Knowledge%20Islands/Introduction/Concept/Jurisdiction/Jurisdiction.md)
-- [Contribution Process](../../../Pillars/Knowledge%20Islands/Model/Processes/Contribution%20Process/Contribution%20Process.md)
+- [Territories and Archipelagos](../../../Pillars/Philosophy/Introduction/Concept/Territories%20and%20Archipelagos/Territories%20and%20Archipelagos.md)
+- [Jurisdiction](../../../Pillars/Philosophy/Introduction/Concept/Jurisdiction/Jurisdiction.md)
+- [Contribution Process](../../../Pillars/Philosophy/Model/Processes/Contribution%20Process/Contribution%20Process.md)

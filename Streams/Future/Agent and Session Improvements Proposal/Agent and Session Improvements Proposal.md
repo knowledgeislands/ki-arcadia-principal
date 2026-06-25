@@ -20,7 +20,7 @@ interaction patterns that make work feel consistent and low-friction.
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -39,6 +39,6 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
       editing `CLAUDE.md`. A `teach` mode on the island skill could write a new entry to a `Preferences.md` file and optionally update
       `CLAUDE.md`.
 
-## Governance
+## Adherence
 
 This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.

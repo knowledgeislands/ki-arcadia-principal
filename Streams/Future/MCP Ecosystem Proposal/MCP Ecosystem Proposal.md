@@ -20,7 +20,7 @@ periodic survey ensures the island's tooling stays current and any high-value co
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -34,6 +34,6 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
 - [ ] **Adoption candidates** - For any strong candidates, create an investigation item in the relevant tools stream or propose directly via
       the Enactment Process
 
-## Governance
+## Adherence
 
 This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.

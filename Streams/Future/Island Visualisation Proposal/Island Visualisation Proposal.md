@@ -23,7 +23,7 @@ inhabit, not just a folder tree you navigate.
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -53,6 +53,6 @@ _Not yet specified - this stream needs a planning pass before destinations can b
 - Follows naturally from the Boundary Rules stream: walls are literal walls, gates are literal gates
 - Relationship to Obsidian graph view: complementary rather than replacing it - the graph shows connections, the map shows place
 
-## Governance
+## Adherence
 
 This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.

@@ -30,7 +30,7 @@ exchanged.
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -55,12 +55,12 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
 
 ## Intended Destinations
 
-- [ ] `Pillars/Knowledge Islands/Concept/Concept.md` - resolve settlement type naming and add Town to the type table
-- [ ] `Pillars/Knowledge Islands/Concept/Concept.md` - replace `[!todo] Customs and Routes` with conceptual prose
-- [ ] `Pillars/Knowledge Islands/Model/Conventions/Structure/Structure.md` - replace `[!todo] Harbour` with structural conventions for the
-      `+/` inbox pattern
-- [ ] `Pillars/Knowledge Islands/Model/Conventions/Structure/Structure.md` - replace `[!todo] Routes and Customs` with structural
-      specification for inter-island links and boundary controls
+- [ ] `Pillars/Philosophy/Concept/Concept.md` - resolve settlement type naming and add Town to the type table
+- [ ] `Pillars/Philosophy/Concept/Concept.md` - replace `[!todo] Customs and Routes` with conceptual prose
+- [ ] `Pillars/Philosophy/Model/Conventions/Structure/Structure.md` - replace `[!todo] Harbour` with structural conventions for the `+/`
+      inbox pattern
+- [ ] `Pillars/Philosophy/Model/Conventions/Structure/Structure.md` - replace `[!todo] Routes and Customs` with structural specification for
+      inter-island links and boundary controls
 
 ---
 
@@ -103,6 +103,6 @@ The working hypothesis on settlement types: the repository is the defining bound
 repository. Below that threshold - a named division within a single repository - is a Town. This would be added to the settlement type table
 in Concept.md alongside Principal and Satellite.
 
-## Governance
+## Adherence
 
 This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.

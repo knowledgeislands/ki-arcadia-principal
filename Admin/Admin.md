@@ -10,22 +10,21 @@ author: Written with Claude
 
 ## Overview
 
-`Admin` is the base-agnostic governance and operations zone of the canonical Knowledge Islands model - one of the five zones (`Calendar`,
-`Pillars`, `Resources`, `Streams`, `Admin`), flanked by the inbound `+` and outbound `-` staging areas. It is introduced here minimally so
-this island carries the full structure while it moves toward that model.
+`Admin` is the governance and operations zone — one of the five canonical Knowledge Islands zones (`Calendar`, `Pillars`, `Resources`,
+`Streams`, `Admin`). It holds everything that defines what this island is and how it runs, migrated from Knowledge Capital per
+[[Admin/Governance/Decisions/GDR-KI-ARCADIA-003-admin-governance-operations|GDR-KI-ARCADIA-003]].
 
-For now the island's governance, identity, and operational configuration continue to live under [[Knowledge Capital]] - the
-[[Knowledge Capital/Charter|Charter]] remains the authoritative declaration. The migration of that material into `Admin` is deliberate
-future work, not yet done; until then this zone holds only the root memory index.
+## Structure
 
-## Admin structure
+`Admin` organises into two arms:
 
-`Admin` organises into two arms, per [[Admin/Governance/Decisions/GDR-ARCADIA-003-admin-governance-operations|GDR-ARCADIA-003]]:
-
-- **`Governance/`** -- what things must look like: conventions, policies, note templates, decision records.
-- **`Operations/`** -- how things get done: processes, activities, skills, live artefacts. (Deliberate future work -- currently empty.)
+- **`Governance/`** — artefacts that define what this island IS: charter, known lands, conventions, note templates, policies, decisions.
+- **`Operations/`** — artefacts that describe how this island RUNS: activities, processes, live artifacts, skills.
 
 ## Contents
 
-- [[MEMORY]] - root memory index: the island's active Pillars.
-- [[Admin/Governance/Decisions/Decisions|Decisions]] - the island's Decision Records (`Admin/Governance/Decisions/`).
+- [[MEMORY]] — root memory index: the island's active Admin content.
+- [[Admin/Governance/Charter|Charter]] — island identity and adoption position; authoritative cold-start document.
+- [[Admin/Governance/Governance|Governance]] — governance arm index.
+- [[Admin/Operations/Operations|Operations]] — operations arm index.
+- [[Admin/Governance/Decisions/Decisions|Decisions]] — the island's Decision Records.

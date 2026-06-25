@@ -20,7 +20,7 @@ adapting that structure to Obsidian's note format before updating the templates.
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -34,6 +34,6 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
 - [ ] Draft revised Monthly note template
 - [ ] Update template files in the island; document the conventions in a Calendar structure note
 
-## Governance
+## Adherence
 
 This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.

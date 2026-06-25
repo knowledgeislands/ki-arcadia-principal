@@ -25,7 +25,7 @@ behind a stable tool surface. Storage and structure can change without breaking 
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -34,7 +34,7 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
 | Type        | Detail                                                                                              |
 | ----------- | --------------------------------------------------------------------------------------------------- |
 | Proposal    | [[Island MCP Design]] - the design proposal, refined through this stream and ratified via Enactment |
-| Pillar note | On ratification, a tool note under `Pillars/Knowledge Islands/Model/Tools/Island MCP/`              |
+| Pillar note | On ratification, a tool note under `Pillars/Philosophy/Model/Tools/Island MCP/`                     |
 | Convention  | Updates to [[How Tools Connect]] reflecting the gateway model                                       |
 
 ---

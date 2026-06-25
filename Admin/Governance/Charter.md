@@ -15,8 +15,8 @@ different rates. The **Identity** section is static: these parameters define the
 amendment. The operational sections below it change as activities are enabled or disabled, integrations connected, and agent configuration
 updated.
 
-The [[Knowledge Islands/Activities/Constitutional/Conformance|Conformance Check]] uses this note as its source of truth. Agents starting
-cold and humans checking operational state both read it first.
+The [[Philosophy/Activities/Constitutional/Conformance|Conformance Check]] uses this note as its source of truth. Agents starting cold and
+humans checking operational state both read it first.
 
 ---
 
@@ -43,12 +43,12 @@ Adoption positions for all non-constitutional activity groups. Every group must 
 group must have a corresponding stub in the Knowledge Capital acknowledging the decision. Constitutional activities (Charter, Conformance)
 are not listed here - they are pre-adoptive.
 
-| Group     | Position | Knowledge Capital                                   |
-| --------- | -------- | --------------------------------------------------- | ------------------ |
-| Tending   | adopted  | [[Admin/Operations/Activities/Tending/Tending]]     |
-| Briefings | adopted  | [[Admin/Operations/Activities/Briefings/Briefings]] |
-| Email     | vetoed   | [[Admin/Operations/Activities/Email/Email]]         |
-| Linear    | vetoed   | [[Admin/Operations/Activities/Linear/Linear         | Linear Workspace]] |
+| Group     | Position | Activity Definition                                           |
+| --------- | -------- | ------------------------------------------------------------- |
+| Tending   | adopted  | [[Admin/Operations/Activities/Tending Activity\|Tending]]     |
+| Briefings | adopted  | [[Admin/Operations/Activities/Briefings Activity\|Briefings]] |
+| Email     | vetoed   | [[Admin/Operations/Activities/Email Activity\|Email]]         |
+| Linear    | vetoed   | [[Admin/Operations/Activities/Linear Activity\|Linear]]       |
 
 ---
 
@@ -57,13 +57,13 @@ are not listed here - they are pre-adoptive.
 Active scheduled automations within adopted groups. An activity listed here is enabled and deployed to the scheduler. An activity defined in
 the island but not listed here is not running.
 
-| Activity                                                    | Group          | Day Type           | Time  | Status  |
-| ----------------------------------------------------------- | -------------- | ------------------ | ----- | ------- |
-| [[Knowledge Islands/Activities/Constitutional/Conformance]] | Constitutional | work-day           | 04:30 | enabled |
-| [[Scheduled Task Audit]]                                    | Tending        | work-day           | 05:00 | enabled |
-| [[Health Check]]                                            | Tending        | Monday work-day    | 08:00 | enabled |
-| [[Knowledge Rebuild]]                                       | Tending        | Wednesday work-day | 07:00 | enabled |
-| [[Morning Briefing]]                                        | Briefings      | work-day           | 06:00 | enabled |
+| Activity                                                             | Group          | Day Type           | Time  | Status  |
+| -------------------------------------------------------------------- | -------------- | ------------------ | ----- | ------- |
+| [[Philosophy/Activities/Constitutional/Conformance]]                 | Constitutional | work-day           | 04:30 | enabled |
+| [[Scheduled Task Audit]]                                             | Tending        | work-day           | 05:00 | enabled |
+| [[Health Check]]                                                     | Tending        | Monday work-day    | 08:00 | enabled |
+| [[Knowledge Rebuild]]                                                | Tending        | Wednesday work-day | 07:00 | enabled |
+| [[Admin/Operations/Activities/Briefings Activity\|Morning Briefing]] | Briefings      | work-day           | 06:00 | enabled |
 
 Day types are defined in [[Schedule|Schedule]].
 
@@ -73,20 +73,20 @@ Day types are defined in [[Schedule|Schedule]].
 
 Active conversational activities within adopted groups. Trigger phrases are the canonical activation strings.
 
-| Activity                                                                              | Group   | Trigger                  | Status  |
-| ------------------------------------------------------------------------------------- | ------- | ------------------------ | ------- |
-| [[Inbox Review]]                                                                      | Tending | _"ki inbox review"_      | enabled |
-| [[Asset Audit]]                                                                       | Tending | _"ki asset audit"_       | enabled |
-| [[Status Review]]                                                                     | Tending | _"ki status review"_     | enabled |
-| [[Structural Audit]]                                                                  | Tending | _"ki structural audit"_  | enabled |
-| [[Wikilink Review]]                                                                   | Tending | _"ki wikilink review"_   | enabled |
-| [[Pillars/Knowledge Islands/Activities/Tending/Convergence Check\|Convergence Check]] | Tending | _"ki convergence check"_ | enabled |
+| Activity                                                                       | Group   | Trigger                  | Status  |
+| ------------------------------------------------------------------------------ | ------- | ------------------------ | ------- |
+| [[Inbox Review]]                                                               | Tending | _"ki inbox review"_      | enabled |
+| [[Asset Audit]]                                                                | Tending | _"ki asset audit"_       | enabled |
+| [[Status Review]]                                                              | Tending | _"ki status review"_     | enabled |
+| [[Structural Audit]]                                                           | Tending | _"ki structural audit"_  | enabled |
+| [[Wikilink Review]]                                                            | Tending | _"ki wikilink review"_   | enabled |
+| [[Pillars/Philosophy/Activities/Tending/Convergence Check\|Convergence Check]] | Tending | _"ki convergence check"_ | enabled |
 
 ---
 
 ## Tools
 
-Active integrations. See [[Tools/Integrations|Integrations]] for MCP prefix detail.
+Active integrations. See [[Admin Conventions/Integrations|Integrations]] for MCP prefix detail.
 
 | Purpose | Tool                     | Status    |
 | ------- | ------------------------ | --------- |

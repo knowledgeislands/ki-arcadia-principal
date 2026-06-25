@@ -12,7 +12,7 @@ author: Written with Claude
 
 ## Overview
 
-A stream to extract Arcadia-specific values currently embedded in `Pillars/Knowledge Islands/Model/` notes and relocate them to
+A stream to extract Arcadia-specific values currently embedded in `Pillars/Philosophy/Model/` notes and relocate them to
 `Pillars/Knowledge Capital/`, leaving Model truly abstract. The premise: Model documents the generic Knowledge Islands framework; KC
 documents what Arcadia specifically is and how it is configured. Where the two are currently entangled - schedule times in activity
 definitions, install paths in tool overviews, byte counts in design rationale - the value belongs in KC and Model should backref to it.
@@ -24,7 +24,7 @@ the gates, this stream walks through them and tidies what is on the wrong side.
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -114,6 +114,6 @@ The order is smallest to largest, so each step can be reviewed before the next b
   Islands/Model/Conventions - Hard"). If Boundary Rules ratifies before this stream completes, re-check alignment; if this stream completes
   first, the extractions become a worked example for the rules.
 
-## Governance
+## Adherence
 
 This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.

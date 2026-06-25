@@ -20,7 +20,7 @@ investigation stage - nothing has been trialled yet. Each warrants a dedicated s
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -31,6 +31,6 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
 - [ ] **Node-RED** - Investigate [Node-RED](https://nodered.org/) as a flow-based programming tool for wiring together integrations; assess
       fit for event-driven island automation
 
-## Governance
+## Adherence
 
 This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.

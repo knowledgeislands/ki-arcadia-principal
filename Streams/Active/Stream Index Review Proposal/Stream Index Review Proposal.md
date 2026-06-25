@@ -22,7 +22,7 @@ stream focus indexes are in sync and covered by ongoing maintenance.
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -42,8 +42,8 @@ Session boundaries are natural pause points - the review can be picked up at the
 
 ## Sequence
 
-The order follows the folder structure of `Pillars/Knowledge Islands/`, leaf nodes first within each subtree. To be confirmed at session
-start by reading the current folder structure.
+The order follows the folder structure of `Pillars/Philosophy/`, leaf nodes first within each subtree. To be confirmed at session start by
+reading the current folder structure.
 
 ---
 
@@ -52,6 +52,6 @@ start by reading the current folder structure.
 - [ ] Verify stream focus index tables (Active, Background, Dormant, Future, Settled) match the top-level `Streams.md` table
 - [ ] Add a stream index table audit step to the appropriate maintenance activity (Health Check or Conformance Check)
 
-## Governance
+## Adherence
 
 This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.

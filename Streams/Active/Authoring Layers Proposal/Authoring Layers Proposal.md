@@ -77,10 +77,10 @@ Sorted by path. `x` marks a presence (prose mention or `## Prompt` section headi
 ### Observations
 
 1. **Definition + Prompt is the dominant pair.** Eleven notes carry both: the
-   [[Knowledge Islands/Model/Activities/Tending/Tending|Activities/Tending]] index, [[Knowledge Islands/Model/Tools/Claude/Claude|Claude]],
-   the seven `Tools/Claude/Activities/*/*.md` per-group index notes, and the consolidated
-   [[Knowledge Islands/Model/Tools/Claude/Activities/Tending/Scheduled Task Audit|Scheduled Task Audit]] note. The seven group index notes
-   plus `Activities.md` and `Claude.md` (nine notes) are the highest-volume target for the per-group index pass - each contains "in the
+   [[Philosophy/Model/Activities/Tending/Tending|Activities/Tending]] index, [[Philosophy/Model/Tools/Claude/Claude|Claude]], the seven
+   `Tools/Claude/Activities/*/*.md` per-group index notes, and the consolidated
+   [[Philosophy/Model/Tools/Claude/Activities/Tending/Scheduled Task Audit|Scheduled Task Audit]] note. The seven group index notes plus
+   `Activities.md` and `Claude.md` (nine notes) are the highest-volume target for the per-group index pass - each contains "in the
    Definition layer" or equivalent prose pointing Prompt-side at Definition-side.
 2. **`Pattern` appears only in [[Agentic AI]]** outside the framework. One reader-facing reference. Can be rephrased as "this is general
    operating guidance, portable across islands" with the role term retired.
@@ -125,12 +125,12 @@ Sorted by path. `x` marks a presence (prose mention or `## Prompt` section headi
 
 ## Design Decisions
 
-| Decision                                                       | Rationale                                                                                                                                                                                                                                                                                                                        |
-| -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Keep the lattice visible in [[Authoring Guidelines]]           | The asymmetry of the cube (5 corners filled, 3 empty) is the analytical heart of the model and earns its place even after the layering becomes implicit                                                                                                                                                                          |
-| Make layering implicit elsewhere                               | The numbering and "five-layer model" framing read as scaffolding to readers who do not need to know the model exists; the role names carry enough meaning on their own                                                                                                                                                           |
-| Activities can be Claude-specific from the start               | Demonstrated by [[Knowledge Islands/Model/Tools/Claude/Activities/Tending/Scheduled Task Audit\|Scheduled Task Audit]]: when an activity has no agent-agnostic content, it lives only at the Prompt layer with no Definition counterpart. The empty `agent-agnostic Definition` corner is a structural option, not a requirement |
-| Schedule, Invocation, and Useful Commands move with the Prompt | These sections describe how a prompt is invoked or supported, not what the activity is. Consolidating them on the Prompt side keeps the Definition focused on "what and why" and avoids duplicating runtime-adjacent detail across two notes                                                                                     |
+| Decision                                                       | Rationale                                                                                                                                                                                                                                                                                                                 |
+| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Keep the lattice visible in [[Authoring Guidelines]]           | The asymmetry of the cube (5 corners filled, 3 empty) is the analytical heart of the model and earns its place even after the layering becomes implicit                                                                                                                                                                   |
+| Make layering implicit elsewhere                               | The numbering and "five-layer model" framing read as scaffolding to readers who do not need to know the model exists; the role names carry enough meaning on their own                                                                                                                                                    |
+| Activities can be Claude-specific from the start               | Demonstrated by [[Philosophy/Model/Tools/Claude/Activities/Tending/Scheduled Task Audit\|Scheduled Task Audit]]: when an activity has no agent-agnostic content, it lives only at the Prompt layer with no Definition counterpart. The empty `agent-agnostic Definition` corner is a structural option, not a requirement |
+| Schedule, Invocation, and Useful Commands move with the Prompt | These sections describe how a prompt is invoked or supported, not what the activity is. Consolidating them on the Prompt side keeps the Definition focused on "what and why" and avoids duplicating runtime-adjacent detail across two notes                                                                              |
 
 ---
 
@@ -143,6 +143,6 @@ Sorted by path. `x` marks a presence (prose mention or `## Prompt` section headi
 | Convergence Check shared-notes list still references the deleted `Activities/Tending/Scheduled Task Audit.md` | The activity is now a Claude-specific Prompt note at `Tools/Claude/Activities/Tending/Scheduled Task Audit.md`. Per the existing convention, `Tools/Claude/Activities/` is "legitimately island-specific" and excluded from the shared-notes list - so the entry should be removed rather than relocated                                                                                             |
 | Frontmatter conventions for Prompt notes are inconsistent                                                     | Two patterns coexist: Conformance Prompt note uses `card/prompt` with `# X - Prompt` title and explicit `Definition: [[...]] Configuration: [[...]]` cross-link; the newly migrated Prompt notes use `card/note` with a plain `# X` title and no cross-link. Captured for review in [[Streams/Background/Reading Order/Reading Order\|Reading Order]] - decision will affect the capitalisation pass |
 
-## Governance
+## Adherence
 
 This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.

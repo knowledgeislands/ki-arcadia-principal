@@ -22,18 +22,11 @@ territory maps, conceptual diagrams, and the logo.
 
 ---
 
-## Knowledge Capital
+## Philosophy
 
-[[Knowledge Capital/Knowledge Capital|Knowledge Capital]] holds the identity and configuration of this island - the charter, council
-membership, activity roster, integrations, and island-specific operational values.
-
----
-
-## Knowledge Islands
-
-[[Knowledge Islands/Knowledge Islands|Knowledge Islands]] is the portable model itself - the concepts, conventions, processes, activities,
-agents, and tools that define how any Knowledge Island operates. Arcadia, as the Knowledge Island of Knowledge Islands, holds the canonical
-definition here.
+[[Philosophy/Knowledge Islands|Philosophy]] is the portable Knowledge Islands model - the concepts, conventions, processes, activities,
+agents, and tools that define how any Knowledge Island operates. Arcadia, as the canonical seat of the Knowledge Islands system, holds the
+authoritative definition here.
 
 ---
 

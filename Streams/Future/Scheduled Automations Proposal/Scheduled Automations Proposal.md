@@ -20,7 +20,7 @@ set does not reach, or add efficiency gates to reduce token usage on quiet days.
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -40,6 +40,6 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
       anything to act on? A lightweight gate returns early on quiet days, saving significant tokens. Design pattern to apply across all
       applicable tasks.
 
-## Governance
+## Adherence
 
 This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.

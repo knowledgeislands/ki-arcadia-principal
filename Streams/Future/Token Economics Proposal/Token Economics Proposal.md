@@ -21,7 +21,7 @@ prompt design, interactive session efficiency, and tooling that assists with tok
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -36,15 +36,15 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
 
 ## Outputs
 
-| Type     | Detail                                                               |
-| -------- | -------------------------------------------------------------------- |
-| Artefact | Convention note under `Pillars/Knowledge Islands/` (destination TBD) |
+| Type     | Detail                                                        |
+| -------- | ------------------------------------------------------------- |
+| Artefact | Convention note under `Pillars/Philosophy/` (destination TBD) |
 
 ---
 
 ## Checklist
 
-- [ ] Create token economics convention note at `Pillars/Knowledge Islands/` (path TBD once scope is resolved)
+- [ ] Create token economics convention note at `Pillars/Philosophy/` (path TBD once scope is resolved)
 - [ ] Document findings as guidance in the relevant Prompt notes
 
 ---
@@ -76,6 +76,6 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
 1. **[caveman](https://github.com/JuliusBrussee/caveman)** - Investigate as a token-efficiency or prompt analysis tool; assess whether it
    provides useful visibility into token usage or prompt structure
 
-## Governance
+## Adherence
 
 This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.

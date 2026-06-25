@@ -19,7 +19,7 @@ change. Both ideas below are patterns to research and trial before committing - 
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -32,6 +32,6 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
       `- [decision] Chose X over Y because Z` or `- [risk] Dependency on external API`. Enables targeted retrieval without reading full note
       prose. Needs an agreed tag vocabulary and a trial before adopting broadly.
 
-## Governance
+## Adherence
 
 This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.

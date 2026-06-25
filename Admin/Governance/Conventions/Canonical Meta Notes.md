@@ -19,16 +19,16 @@ repository root.
 
 - `CLAUDE.md`
 - `Pillars/Knowledge Capital/Charter.md`
-- `Pillars/Knowledge Islands/Concept/Concept.md`
-- `Pillars/Knowledge Islands/Conventions/Structure/Structure.md`
-- `Pillars/Knowledge Islands/Conventions/Notes/Notes.md`
-- `Pillars/Knowledge Islands/Conventions/Notes/Frontmatter/Frontmatter.md`
-- `Pillars/Knowledge Islands/Conventions/Notes/Frontmatter/Properties.md`
-- `Pillars/Knowledge Islands/Conventions/Notes/Frontmatter/Tags.md`
-- `Pillars/Knowledge Islands/Tools/Claude/Mistakes and Lessons.md`
-- `Pillars/Knowledge Islands/Tools/Claude/Claude.md`
-- `Pillars/Knowledge Islands/Activities/Activities.md`
+- `Pillars/Philosophy/Concept/Concept.md`
+- `Pillars/Philosophy/Conventions/Structure/Structure.md`
+- `Pillars/Philosophy/Conventions/Notes/Notes.md`
+- `Pillars/Philosophy/Conventions/Notes/Frontmatter/Frontmatter.md`
+- `Pillars/Philosophy/Conventions/Notes/Frontmatter/Properties.md`
+- `Pillars/Philosophy/Conventions/Notes/Frontmatter/Tags.md`
+- `Pillars/Philosophy/Tools/Claude/Mistakes and Lessons.md`
+- `Pillars/Philosophy/Tools/Claude/Claude.md`
+- `Pillars/Philosophy/Activities/Activities.md`
 - `Pillars/Knowledge Capital/Agents/Communication Style.md`
-- `Pillars/Knowledge Islands/Agents/Claude/Claude Behaviour.md`
-- `Pillars/Knowledge Islands/Conventions/Residency/Residency.md`
-- `Pillars/Knowledge Islands/Agents/Claude/Memory Architecture.md`
+- `Pillars/Philosophy/Agents/Claude/Claude Behaviour.md`
+- `Pillars/Philosophy/Conventions/Residency/Residency.md`
+- `Pillars/Philosophy/Agents/Claude/Memory Architecture.md`

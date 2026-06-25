@@ -24,7 +24,7 @@ standard format a proposal note should take.
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -61,6 +61,6 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
 3. **Who reviews the proposals?** The activity produces proposal notes; council members decide whether to ratify. The activity itself should
    not make that call - it surfaces; humans decide.
 
-## Governance
+## Adherence
 
 This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.

@@ -14,13 +14,13 @@ author: Written with Claude
 ## Overview
 
 A conceptual stream to explore where Intention fits in the Knowledge Islands model. The question arose during a review of
-`Pillars/Knowledge Islands/Concept/Concept.md` and has not yet been resolved into a specific placement or definition.
+`Pillars/Philosophy/Concept/Concept.md` and has not yet been resolved into a specific placement or definition.
 
 ---
 
 ## Governance
 
-This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]].
+This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment Process]].
 
 ---
 
@@ -34,15 +34,15 @@ This stream follows the [[Knowledge Islands/Model/Processes/Enactment Process|En
 
 ## Outputs
 
-| Type     | Detail                                                                                                   |
-| -------- | -------------------------------------------------------------------------------------------------------- |
-| Artefact | Updated `Pillars/Knowledge Islands/Concept/Concept.md` - Intention woven into the appropriate section(s) |
+| Type     | Detail                                                                                            |
+| -------- | ------------------------------------------------------------------------------------------------- |
+| Artefact | Updated `Pillars/Philosophy/Concept/Concept.md` - Intention woven into the appropriate section(s) |
 
 ---
 
 ## Checklist
 
-- [ ] Update `Pillars/Knowledge Islands/Concept/Concept.md` - add Intention to the model (section TBD)
+- [ ] Update `Pillars/Philosophy/Concept/Concept.md` - add Intention to the model (section TBD)
 
 ---
 
@@ -81,6 +81,6 @@ is the mechanism; Intention is what keeps it purposeful rather than just accumul
 If this holds, Intention might belong in the _Overview_ or as a brief addition to _The Home of Knowledge_ - alongside the point that an
 island has a defined purpose, not just defined boundaries.
 
-## Governance
+## Adherence
 
 This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.

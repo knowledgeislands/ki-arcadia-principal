@@ -25,3 +25,5 @@ Rows are ordered by reveal order — the logical sequence in which the decisions
 | [GDR-KI-ARCADIA-001](GDR-KI-ARCADIA-001-adopting-decision-records.md)                     | Adopting Decision Records                               | Accepted | 2026-06-25 |
 | [GDR-KI-ARCADIA-002](GDR-KI-ARCADIA-002-arcadia-archipelago-three-islands.md)             | The Arcadia Archipelago — Three Islands                 | Accepted | 2026-06-25 |
 | [GDR-KI-ARCADIA-003](GDR-KI-ARCADIA-003-admin-governance-operations.md)                   | Admin Zone — Governance and Operations                  | Accepted | 2026-06-25 |
+| [SDR-KI-ARCADIA-006](SDR-KI-ARCADIA-006-agents-in-the-knowledge-islands-model.md)         | Agents in the Knowledge Islands Model                   | Accepted | 2026-06-25 |
+| [SDR-KI-ARCADIA-007](SDR-KI-ARCADIA-007-the-great-library-of-arcadia.md)                  | The Great Library of Arcadia                            | Accepted | 2026-06-25 |
