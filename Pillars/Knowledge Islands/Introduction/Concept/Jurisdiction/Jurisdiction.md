@@ -41,5 +41,4 @@ contribution may seek citizenship, or ask an existing council member to carry th
 
 Each island's governance pattern, council membership, and citizenship are tracked in its [[Knowledge Capital]].
 
-Jurisdiction is enacted in practice through the [[Knowledge Islands/Model/Processes/Enactment Process|Enactment Process]] and
-[[Contribution Process]].
+Jurisdiction is enacted in practice through the [[Enactment Process]] and [[Contribution Process]].
