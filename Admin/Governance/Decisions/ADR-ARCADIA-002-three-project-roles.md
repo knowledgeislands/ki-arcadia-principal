@@ -1,12 +1,11 @@
 ---
-tags:
-  - card/kdr
-type: architecture
+type: admin/governance/decision
+decision_type: architecture
 status: current - June 2026
 author: Written with Claude
 ---
 
-# KDR-ARCADIA-002: Three Arcadia Project Roles
+# ADR-ARCADIA-002: Three Arcadia Project Roles
 
 **Status:** Accepted
 
@@ -49,6 +48,6 @@ Each repo has a distinct, non-overlapping role:
 
 ## References
 
-- [Knowledge Islands](../../Pillars/Knowledge Islands/Knowledge%20Islands.md) -- the philosophy arcadia-principal owns
-- [Great Library of Arcadia](../../Pillars/Knowledge%20Islands/Realisation/Arcadia/Great%20Library%20of%20Arcadia/Great%20Library%20of%20Arcadia.md)
+- [Knowledge Islands](../../../Pillars/Knowledge%20Islands/Knowledge%20Islands.md) -- the philosophy arcadia-principal owns
+- [Great Library of Arcadia](../../../Pillars/Knowledge%20Islands/Realisation/Arcadia/Great%20Library%20of%20Arcadia/Great%20Library%20of%20Arcadia.md)
   -- the living instantiation of the model in this repo

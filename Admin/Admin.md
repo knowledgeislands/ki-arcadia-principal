@@ -18,6 +18,14 @@ For now the island's governance, identity, and operational configuration continu
 [[Knowledge Capital/Charter|Charter]] remains the authoritative declaration. The migration of that material into `Admin` is deliberate
 future work, not yet done; until then this zone holds only the root memory index.
 
+## Admin structure
+
+`Admin` organises into two arms, per [[Admin/Governance/Decisions/GDR-ARCADIA-003-admin-governance-operations|GDR-ARCADIA-003]]:
+
+- **`Governance/`** -- what things must look like: conventions, policies, note templates, decision records.
+- **`Operations/`** -- how things get done: processes, activities, skills, live artefacts. (Deliberate future work -- currently empty.)
+
 ## Contents
 
 - [[MEMORY]] - root memory index: the island's active Pillars.
+- [[Admin/Governance/Decisions/Decisions|Decisions]] - the island's Decision Records (`Admin/Governance/Decisions/`).

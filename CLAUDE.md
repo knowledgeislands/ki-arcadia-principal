@@ -144,10 +144,12 @@ the relevant KC note - the automations will pick up the change on their next run
 
 ## Decision Records
 
-Significant structural decisions about this island are recorded as Knowledge Decision Records (KDRs) in `Admin/Decisions/`. Create a KDR
-when an Enactment Process proposal produces a `Decision` output that warrants a standalone permanent record -- structural choices, adoption
-of tools or formats, cross-repo boundaries. Routine content additions do not need a KDR. The `knowledgeislands-kdrs` skill governs the
-format. The index is `Admin/Decisions/Decisions.md`.
+Significant structural decisions about this island are recorded as Decision Records (DRs) in `Admin/Governance/Decisions/`. Each
+`decision_type` has its own prefix: `GDR-` (governance), `ADR-` (architecture), `KDR-` (knowledge), `SDR-` (strategy), `PDR-` (product),
+`DDR-` (data), `XDR-` (security), `ODR-` (operations), `RDR-` (research). Serials are global within `ARCADIA`. Create a DR when an Enactment
+Process proposal produces a `Decision` output that warrants a standalone permanent record -- structural choices, adoption of tools or
+formats, cross-repo boundaries. Routine content additions do not need a DR. The `knowledgeislands-decision-records` skill governs the
+format. The index is `Admin/Governance/Decisions/Decisions.md`.
 
 ## Key Meta Notes
 

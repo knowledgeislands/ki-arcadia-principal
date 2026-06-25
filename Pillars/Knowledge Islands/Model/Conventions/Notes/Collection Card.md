@@ -26,8 +26,11 @@ The `tags` field uses a specific `card/` type tag. Common types:
 | `card/person`  | Individual people                       |
 | `card/org`     | Organisations                           |
 | `card/concept` | Concepts and ideas                      |
-| `card/adr`     | Architecture Decision Records           |
-| `card/kdr`     | Knowledge Decision Records              |
+| `card/adr`     | Architecture Decision Records †         |
+| `card/kdr`     | Knowledge Decision Records †            |
+
+† Legacy tags from the former ADR/KDR instruments. No longer applied to new notes; the DR instrument (governed by
+`knowledgeislands-decision-records`) uses `type: admin/governance/decision` instead.
 
 See [[Tags]] for the full tag reference.
 
