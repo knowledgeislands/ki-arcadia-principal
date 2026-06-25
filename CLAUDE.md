@@ -142,6 +142,13 @@ subfolders (Activities for schedule config, Tools for integrations, Agents for a
 across islands and ensures a single source of truth. When an integration changes (e.g. a new TickTick list, a different calendar), update
 the relevant KC note - the automations will pick up the change on their next run.
 
+## Decision Records
+
+Significant structural decisions about this island are recorded as Knowledge Decision Records (KDRs) in `Admin/Decisions/`. Create a KDR
+when an Enactment Process proposal produces a `Decision` output that warrants a standalone permanent record -- structural choices, adoption
+of tools or formats, cross-repo boundaries. Routine content additions do not need a KDR. The `knowledgeislands-kdrs` skill governs the
+format. The index is `Admin/Decisions/Decisions.md`.
+
 ## Key Meta Notes
 
 Read `KEY-META-NOTES.md` at the island root when you need canonical note paths.

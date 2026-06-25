@@ -27,6 +27,7 @@ The `tags` field uses a specific `card/` type tag. Common types:
 | `card/org`     | Organisations                           |
 | `card/concept` | Concepts and ideas                      |
 | `card/adr`     | Architecture Decision Records           |
+| `card/kdr`     | Knowledge Decision Records              |
 
 See [[Tags]] for the full tag reference.
 

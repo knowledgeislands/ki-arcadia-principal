@@ -22,6 +22,11 @@ visibility = "private"   # "public" | "private"
 # Tokenomics governance — audits the standing context surface for this environment.
 # MCP server count is user-scoped (not repo-controlled); the raised budget documents
 # the acknowledged state (same as the harness).
+# Knowledge Decision Records — island adopts KDRs for significant structural decisions.
+# Decisions live in Admin/Decisions/ per the KI zone model.
+[knowledgeislands-kdrs]
+scope = "ARCADIA"
+
 [knowledgeislands-tokenomics]
 headroom = "recommended"
 preferred_model = "sonnet"
