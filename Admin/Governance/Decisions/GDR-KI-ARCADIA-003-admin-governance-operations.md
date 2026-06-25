@@ -21,9 +21,8 @@ done_). A flat `Admin/` directory cannot express this distinction. Without struc
 the same space, making it harder to locate the authoritative record of a convention or understand which documents govern the island versus
 which describe its running.
 
-The `kit-legal` Knowledge Island demonstrates a two-arm pattern — `Admin/Governance/` and `Admin/Operations/` — that maps cleanly onto this
-distinction. A Decision Record is always a governance artefact regardless of its `decision_type`: it records why a policy, convention, or
-structural commitment became what it is. DRs are the provenance layer beneath governance.
+A Decision Record is always a governance artefact regardless of its `decision_type`: it records why a policy, convention, or structural
+commitment became what it is. DRs are the provenance layer beneath governance.
 
 This pattern applies to any Knowledge Island that has adopted the Knowledge Islands model, not only to Arcadia.
 

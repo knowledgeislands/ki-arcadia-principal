@@ -15,9 +15,13 @@ edited; it is superseded.
 
 Rows are ordered by reveal order — the logical sequence in which the decisions build on one another.
 
-| DR ID                                                                         | Title                                   | Status   | Date       |
-| ----------------------------------------------------------------------------- | --------------------------------------- | -------- | ---------- |
-| [SDR-KI-ARCADIA-001](SDR-KI-ARCADIA-001-knowledge-islands-strategy.md)        | Knowledge Islands — The Strategy        | Accepted | 2026-06-25 |
-| [GDR-KI-ARCADIA-001](GDR-KI-ARCADIA-001-adopting-decision-records.md)         | Adopting Decision Records               | Accepted | 2026-06-25 |
-| [GDR-KI-ARCADIA-002](GDR-KI-ARCADIA-002-arcadia-archipelago-three-islands.md) | The Arcadia Archipelago — Three Islands | Accepted | 2026-06-25 |
-| [GDR-KI-ARCADIA-003](GDR-KI-ARCADIA-003-admin-governance-operations.md)       | Admin Zone — Governance and Operations  | Accepted | 2026-06-25 |
+| DR ID                                                                                     | Title                                                   | Status   | Date       |
+| ----------------------------------------------------------------------------------------- | ------------------------------------------------------- | -------- | ---------- |
+| [SDR-KI-ARCADIA-001](SDR-KI-ARCADIA-001-knowledge-islands-strategy.md)                    | Knowledge Islands — The Strategy                        | Accepted | 2026-06-25 |
+| [SDR-KI-ARCADIA-002](SDR-KI-ARCADIA-002-the-home-of-knowledge.md)                         | The Home of Knowledge                                   | Accepted | 2026-06-25 |
+| [SDR-KI-ARCADIA-003](SDR-KI-ARCADIA-003-the-governance-of-an-island.md)                   | The Governance of an Island                             | Accepted | 2026-06-25 |
+| [SDR-KI-ARCADIA-004](SDR-KI-ARCADIA-004-the-enactment-process.md)                         | The Enactment Process                                   | Accepted | 2026-06-25 |
+| [SDR-KI-ARCADIA-005](SDR-KI-ARCADIA-005-territories-archipelagos-constitutional-layer.md) | Territories, Archipelagos, and the Constitutional Layer | Accepted | 2026-06-25 |
+| [GDR-KI-ARCADIA-001](GDR-KI-ARCADIA-001-adopting-decision-records.md)                     | Adopting Decision Records                               | Accepted | 2026-06-25 |
+| [GDR-KI-ARCADIA-002](GDR-KI-ARCADIA-002-arcadia-archipelago-three-islands.md)             | The Arcadia Archipelago — Three Islands                 | Accepted | 2026-06-25 |
+| [GDR-KI-ARCADIA-003](GDR-KI-ARCADIA-003-admin-governance-operations.md)                   | Admin Zone — Governance and Operations                  | Accepted | 2026-06-25 |
