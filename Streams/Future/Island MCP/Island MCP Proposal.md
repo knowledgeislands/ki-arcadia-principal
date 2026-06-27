@@ -44,7 +44,7 @@ This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment
 - [ ] Sketch the tool surface (e.g. `read_note`, `write_note`, `search`, `list_folder`, `validate_routing`)
 - [ ] Decide scope - one MCP per island, or one shared MCP scoped by island parameter
 - [ ] Map the permissions model - which agent classes (Citizens, Visitors, Council Members) get which operations
-- [ ] Define how the MCP enforces conventions ([[Notes]], [[Knowledge Capital/Conventions/Routing Rules|Routing Rules]], [[Tags]]) at write
+- [ ] Define how the MCP enforces conventions ([[Notes]], [[Admin/Governance/Conventions/Routing Rules|Routing Rules]], [[Tags]]) at write
       time
 - [ ] Decide the relationship to [[How Tools Connect]] - currently tools connect to the island; an MCP gateway inverts the model
 - [ ] Decide how the MCP coexists with direct file access (Obsidian, manual edits) - likely: humans bypass, agents do not
@@ -63,8 +63,8 @@ This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment
 3. **How do existing tools fit?** Obsidian writes directly to the file system, bypassing any MCP layer. The MCP cannot be the only path
    unless Obsidian is also routed through it - unlikely. The MCP therefore governs agent access, not human access.
 
-4. **Relationship to Knowledge Capital?** Identity, charter, and integration values live in `Pillars/Knowledge Capital/`. The MCP could
-   expose these as first-class metadata or treat them as ordinary notes.
+4. **Relationship to Admin/Governance?** Identity, charter, and integration values live in `Pillars/Admin/Governance/`. The MCP could expose
+   these as first-class metadata or treat them as ordinary notes.
 
 5. **Relationship to [[Cowork Configuration Layers]]?** The Cowork plugin already exposes some KI operations via skills and prompts. An
    Island MCP would either subsume or complement that surface - the boundary needs deciding.

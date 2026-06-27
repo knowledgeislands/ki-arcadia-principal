@@ -27,10 +27,10 @@ This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment
 
 ## Outputs
 
-| Type             | Detail                                                                                                        |
-| ---------------- | ------------------------------------------------------------------------------------------------------------- |
-| Convention note  | `Pillars/Philosophy/Model/Conventions/Boundary Rules.md` - new standalone note                                |
-| Tending activity | Boundary rules scan activity in `Pillars/Knowledge Capital/Activities/` (schedule and trigger TBD at rollout) |
+| Type             | Detail                                                                                                       |
+| ---------------- | ------------------------------------------------------------------------------------------------------------ |
+| Convention note  | `Pillars/Philosophy/Model/Conventions/Boundary Rules.md` - new standalone note                               |
+| Tending activity | Boundary rules scan activity in `Pillars/Admin/Governance/Activities/` (schedule and trigger TBD at rollout) |
 
 ---
 
@@ -38,7 +38,7 @@ This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment
 
 - [ ] Create `Pillars/Philosophy/Model/Conventions/Boundary Rules.md`
 - [ ] Update `Pillars/Philosophy/Model/Conventions/Conventions.md` index to reference the new note
-- [ ] Create boundary-rules scan maintenance activity in `Pillars/Knowledge Capital/Activities/`
+- [ ] Create boundary-rules scan maintenance activity in `Pillars/Admin/Governance/Activities/`
 - [ ] Audit existing notes in each area against the new rules and flag violations (follow-on; may become its own stream)
 - [ ] Audit for content duplication between Knowledge Islands and KC (follow-on; may become its own stream)
 
@@ -106,18 +106,18 @@ For Soft violations that are intentionally retained, the note carrying the excep
 | References to Pillars notes                                     | `Resources`                            | Hard     | Resources content exists independently of the island; it must not point inward         |
 | References to Resources notes                                   | `Pillars`                              | None     | Pillars may link outward to Resources freely                                           |
 | Named island entities (principals, citizens, organisations)     | `Pillars/Knowledge Islands`            | Hard     |                                                                                        |
-| Named island entities                                           | `Pillars/Philosophy/Knowledge Capital` | None     | KC is island-specific by design                                                        |
+| Named island entities                                           | `Pillars/Philosophy/Admin/Governance`  | None     | KC is island-specific by design                                                        |
 | Arcadia as custodian of Knowledge Islands                       | `Pillars/Knowledge Islands`            | None     | One named exception; Arcadia may be named in this role                                 |
 | KC operational content                                          | `Pillars/Knowledge Islands`            | Hard     | Prevents bleed-back into the portable framework                                        |
-| KI framework content                                            | `Pillars/Knowledge Capital`            | None     | KC may freely reference KI                                                             |
+| KI framework content                                            | `Pillars/Admin/Governance`             | None     | KC may freely reference KI                                                             |
 | Named agents (specific tools, AI systems, automations)          | `Pillars/Philosophy/Model/Agents`      | Hard     |                                                                                        |
 | Named agents                                                    | `Pillars/Philosophy/Model/Activities`  | Soft     | Capability statements permitted; name only where no capability abstraction is possible |
-| Named agents                                                    | `Pillars/Knowledge Capital/Agents`     | None     | KC agent config is inherently specific                                                 |
+| Named agents                                                    | `Pillars/Admin/Governance/Agents`      | None     | KC agent config is inherently specific                                                 |
 | Named activities                                                | `Pillars/Philosophy/Model/Agents`      | Soft     |                                                                                        |
-| Named activities                                                | `Pillars/Knowledge Capital/Agents`     | None     | KC agent config may list assigned activities                                           |
+| Named activities                                                | `Pillars/Admin/Governance/Agents`      | None     | KC agent config may list assigned activities                                           |
 | Specific tools or integrations                                  | `Pillars/Philosophy/Model/Conventions` | Hard     | Generic capability references permitted                                                |
 | Specific tools or integrations                                  | `Pillars/Philosophy/Model/Processes`   | Hard     |                                                                                        |
-| Specific tools or integrations                                  | `Pillars/Knowledge Capital/Tools`      | None     | KC tools config is inherently specific                                                 |
+| Specific tools or integrations                                  | `Pillars/Admin/Governance/Tools`       | None     | KC tools config is inherently specific                                                 |
 | KM/PKM/KB terminology                                           | `Pillars`                              | Soft     | Historical context permitted; document inline                                          |
 
 ## Adherence

@@ -16,7 +16,7 @@ Make the five-layer authoring framing implicit in reader-facing notes. The layer
 Prompt - are defined in [[Authoring Guidelines]] and remain useful as a design tool for authors; the goal is to stop them reading as
 scaffolding everywhere else. The earlier renaming pass is closed; this stream is the structural rewrite that follows it.
 
-Arcadia-specific authoring decisions, when they emerge, live in [[Authoring]] under Knowledge Capital.
+Arcadia-specific authoring decisions, when they emerge, live in [[Authoring]] under Admin/Governance.
 
 ---
 
@@ -32,7 +32,7 @@ This stream is the second half of a two-phase pass. The first phase (now closed)
 
 - Layers are now named: Definition, Configuration, Pattern, Agent Behaviour, Prompt.
 - Audited 22 reader-facing references across 14 Pillars notes, 4 Streams notes, and 1 HTML view.
-- Created the stub [[Authoring]] note in Knowledge Capital for Arcadia-specific authoring decisions; updated the KC Conventions index; added
+- Created the stub [[Authoring]] note in Admin/Governance for Arcadia-specific authoring decisions; updated the KC Conventions index; added
   a pointer at the top of [[Authoring Guidelines]].
 
 The remaining work is structural: making the layering implicit rather than labelled.
@@ -106,9 +106,9 @@ Sorted by path. `x` marks a presence (prose mention or `## Prompt` section headi
   ambiguous.
 - Excluded as the framework: [[Authoring Guidelines]] is the note that defines the role names. Its mentioning all five is by definition, not
   a sign of leakage, so it is disregarded as a source.
-- Excluded as collisions: `Configuration` as the title of `Realisation/Knowledge Capitals/Configuration/` (a separate concept); `Pattern` as
-  a column header in Email routing tables; `Definitions` as an H2 heading in `Email/Approach.md` (terminology definitions, not the
-  Definition layer); `Prompts` as a verb at line 26 of the Knowledge Rebuild Definition ("Prompts for confirmation").
+- Excluded as collisions: `Configuration` as the title of `Realisation/Configuration/` (a separate concept); `Pattern` as a column header in
+  Email routing tables; `Definitions` as an H2 heading in `Email/Approach.md` (terminology definitions, not the Definition layer); `Prompts`
+  as a verb at line 26 of the Knowledge Rebuild Definition ("Prompts for confirmation").
 
 ---
 

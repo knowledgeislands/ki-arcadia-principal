@@ -26,7 +26,7 @@ previously unique name would silently break existing bare links with no way to d
 {
   "Home": {
     "/": [],
-    "Governance": ["Knowledge Capital", "Pillars"]
+    "Governance": ["Admin/Governance", "Pillars"]
   },
   "Activities": {
     "Governance": "*"
@@ -35,14 +35,14 @@ previously unique name would silently break existing bare links with no way to d
     "Governance": "*"
   },
   "Governance": {
-    "Knowledge Capital": ["Pillars"],
+    "Admin/Governance": ["Pillars"],
     "Knowledge Islands": ["Pillars"]
   },
   "Pillars": {
     "Governance": "*",
     "Pillars": []
   },
-  "Knowledge Capital": ["Pillars"],
+  "Admin/Governance": ["Pillars"],
   "Knowledge Islands": ["Pillars"],
   "Linear": ["Tools", "Governance", "Knowledge Islands", "Pillars"],
   "Tools": {
@@ -67,26 +67,26 @@ Two sentinel values appear in the JSON:
 
 ## Tree diagram
 
-The example below shows how `Knowledge Capital` and `Knowledge Islands` share a `Governance` folder with the same set of child names,
-causing almost every index note in the subtree to collide.
+The example below shows how `Admin/Governance` and `Knowledge Islands` share a `Governance` folder with the same set of child names, causing
+almost every index note in the subtree to collide.
 
 ```text
 Home.md ←──────────────────────────────── [[Home]]
 Pillars
 |── Pillars.md ←───────────────────────── [[Pillars/Pillars]]
-├── Knowledge Capital
-│   ├── Knowledge Capital.md ←─────────── [[Knowledge Capital]]
+├── Admin/Governance
+│   ├── Admin/Governance.md ←─────────── [[Admin/Governance]]
 │   └── Governance
-│       ├── Governance.md ←────────────── [[Knowledge Capital/Governance]]
+│       ├── Governance.md ←────────────── [[Admin/Governance/Governance]]
 │       ├── Home.md ←──────────────────── [[Governance/Home]]
 │       ├── Activities
-│       │   └── Activities.md ←────────── [[Knowledge Capital/Activities]]
+│       │   └── Activities.md ←────────── [[Admin/Governance/Activities]]
 │       ├── Agents
-│       │   └── Agents.md ←────────────── [[Knowledge Capital/Agents]]
+│       │   └── Agents.md ←────────────── [[Admin/Governance/Agents]]
 │       ├── Pillars
-│       │   └── Pillars.md ←───────────── [[Knowledge Capital/Pillars]]
+│       │   └── Pillars.md ←───────────── [[Admin/Governance/Pillars]]
 │       └── Tools
-│           └── Tools.md ←─────────────── [[Knowledge Capital/Tools]]
+│           └── Tools.md ←─────────────── [[Admin/Governance/Tools]]
 └── Knowledge Islands
     ├── Knowledge Islands.md ←─────────── [[Knowledge Islands]]
     └── Governance
