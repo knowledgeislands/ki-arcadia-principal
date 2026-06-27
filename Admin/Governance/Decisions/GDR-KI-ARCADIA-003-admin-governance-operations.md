@@ -35,20 +35,17 @@ The `Admin/` zone of a Knowledge Island organises into two arms:
 - **`Admin/Operations/`** — processes, activities, skills, and live operational artefacts: the things that describe how the island runs day
   to day
 
-Decision Records live at `Admin/Governance/Decisions/`. The path `Admin/Decisions/` established in GDR-KI-ARCADIA-001 is retired; all
-tooling and references are updated to `Admin/Governance/Decisions/`.
+Decision Records live at `Admin/Governance/Decisions/`. The path `Admin/Decisions/` established in GDR-KI-ARCADIA-001 is updated; all
+tooling and references are moved to `Admin/Governance/Decisions/`.
 
-The legacy zone name "Knowledge Capital" is retired. `Admin/` with the Governance/Operations structure is the canonical zone name and layout
-for a Knowledge Island's administrative layer.
+`Admin/` with the Governance/Operations structure is the canonical zone name and layout for a Knowledge Island's administrative layer.
 
 ## Consequences
 
 - All KI KB repos conforming to this pattern should adopt the `Admin/Governance/` and `Admin/Operations/` structure.
 - The `knowledgeislands-decision-records` skill's placement rule for KB repos is updated: `Admin/Governance/Decisions/` is the canonical
   path.
-- Enactment Process documentation and activity records — currently in Knowledge Capital — are future work for migration to
-  `Admin/Operations/`.
-- "Knowledge Capital" as a zone name is deprecated across KI documentation and tooling.
+- Enactment Process documentation and activity records are future work for migration to `Admin/Operations/`.
 
 ## References
 

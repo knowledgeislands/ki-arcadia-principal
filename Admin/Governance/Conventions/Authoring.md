@@ -36,5 +36,5 @@ qualify if they ever became Arcadia practice:
 - Codifying a local naming convention for activity prompts.
 
 An entry does not belong here when the decision is already captured by a more specific note. Activity-specific configuration belongs under
-`Knowledge Capital/Activities/{group}/`; routing decisions belong in [[Routing Rules]]; integration details belong in [[Integrations]]. This
-note is the home for authoring practice that does not have a more specific home.
+`Admin/Activities/{group}/`; routing decisions belong in [[Routing Rules]]; integration details belong in [[Integrations]]. This note is the
+home for authoring practice that does not have a more specific home.

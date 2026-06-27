@@ -39,6 +39,6 @@ governor, for single-governor islands) grants citizenship. Citizenship is not re
 across multiple territories simultaneously, and therefore be eligible for council membership in each. A Visitor with a substantive
 contribution may seek citizenship, or ask an existing council member to carry the proposal forward on their behalf.
 
-Each island's governance pattern, council membership, and citizenship are tracked in its [[Knowledge Capital]].
+Each island's governance pattern, council membership, and citizenship are tracked in its [[Admin/Governance]].
 
 Jurisdiction is enacted in practice through the [[Enactment Process]] and [[Contribution Process]].

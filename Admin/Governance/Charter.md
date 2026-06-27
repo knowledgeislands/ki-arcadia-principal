@@ -40,8 +40,8 @@ Fixed parameters that distinguish this Knowledge Island. Automations and skill p
 ## Activity Groups
 
 Adoption positions for all non-constitutional activity groups. Every group must carry an explicit position - `adopted` or `vetoed`. A vetoed
-group must have a corresponding stub in the Knowledge Capital acknowledging the decision. Constitutional activities (Charter, Conformance)
-are not listed here - they are pre-adoptive.
+group must have a corresponding stub in `Admin/` acknowledging the decision. Constitutional activities (Charter, Conformance) are not listed
+here - they are pre-adoptive.
 
 | Group     | Position | Activity Definition                                           |
 | --------- | -------- | ------------------------------------------------------------- |

@@ -17,17 +17,17 @@ system.
 
 ## Core Concepts
 
-| Term                  | Meaning                                                                                                                                                |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Knowledge Island (KI) | A discrete, self-contained body of knowledge - a repository of notes with its own governance and identity                                              |
-| Archipelago           | A geographic grouping of islands by proximity or shared natural character; independent of governance†                                                  |
-| Principal Island      | The seat of governance for a territory — holds the Capital, the governance infrastructure, and the Cowork project for the whole territory              |
-| Satellite Island      | A governed extension of a territory, ring-fenced for a specific purpose (e.g. a different audience or publication target)                              |
-| Islet                 | A small, purpose-specific knowledge area that shares governance with its principal island but maintains its own store                                  |
-| Council               | The governing body of an island using the council model - the custodians who ratify, reject, or return proposed changes                                |
-| Custodian             | A council member; a traveller who knows the location of the archipelago and is authorised to contribute to its canonical knowledge                     |
-| Known Lands           | A map of known islands held in an island - Arcadia's is the canonical objective record; each principal's own island holds a personal navigator's chart |
-| Knowledge Capital     | The folder (`Pillars/Knowledge Capital/`) holding an island's knowledge of itself - identity, governance instance, and configuration                   |
+| Term                  | Meaning                                                                                                                                                                     |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Knowledge Island (KI) | A discrete, self-contained body of knowledge - a repository of notes with its own governance and identity                                                                   |
+| Archipelago           | A geographic grouping of islands by proximity or shared natural character; independent of governance†                                                                       |
+| Principal Island      | The seat of governance for a territory — holds the Capital, the governance infrastructure, and the Cowork project for the whole territory                                   |
+| Satellite Island      | A governed extension of a territory, ring-fenced for a specific purpose (e.g. a different audience or publication target)                                                   |
+| Islet                 | A small, purpose-specific knowledge area that shares governance with its principal island but maintains its own store                                                       |
+| Council               | The governing body of an island using the council model - the custodians who ratify, reject, or return proposed changes                                                     |
+| Custodian             | A council member; a traveller who knows the location of the archipelago and is authorised to contribute to its canonical knowledge                                          |
+| Known Lands           | A map of known islands held in an island - Arcadia's is the canonical objective record; each principal's own island holds a personal navigator's chart                      |
+| Capital               | The seat of governance for a jurisdiction. Held by the principal island of a territory. Charter and Council are its required elements, both residing in `Admin/Governance`. |
 
 † A territory may contain one or more archipelagos; an archipelago may span multiple territories. The boundary rule (customs vs. free
 knowledge flow) determines territory; proximity and shared character determine archipelago.
@@ -42,7 +42,7 @@ knowledge flow) determines territory; proximity and shared character determine a
 | Text Store                      | The canonical Markdown repository, version-controlled in git                                               |
 | Binary Store                    | External storage for large binary files (PDFs, images, exports); mirrors the text store folder structure   |
 | Working Space                   | Ephemeral scratch space for AI-assisted session work; not version-controlled; cleared once obsolete        |
-| Governance Infrastructure       | The Cowork project and working folder that belong to a principal island and serve the whole archipelago    |
+| Governance Infrastructure       | The Cowork project and working folder that belong to a principal island and serve the whole territory      |
 
 ---
 
@@ -76,7 +76,7 @@ as **Planes of Existence**: parallel worlds of knowledge that operate independen
 | Term              | Meaning                                                                                                                                        |
 | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | Enactment Process | The council's operating mechanism - how Streams enact change in the island; proposals are submitted, reviewed, ratified, returned, or rejected |
-| Contribution      | A proposed change to the Knowledge Capital, submitted through the Enactment Process for council review                                         |
+| Contribution      | A proposed change to an island's canonical knowledge, submitted through the Enactment Process for council review                               |
 | Customs           | Boundary rules governing what knowledge may enter or leave an island                                                                           |
 | Ratify            | Council approves a change; it proceeds to rollout                                                                                              |
 | Return            | Council sends a change back to draft for further work, with reasons                                                                            |

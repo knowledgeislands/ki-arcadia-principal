@@ -25,6 +25,15 @@ simple: if customs exist at the boundary, it is a separate territory. If knowled
 | **Principal island** | The seat of governance for a territory. Holds the Capital and carries the shared governance infrastructure for the whole territory. Every territory has exactly one principal island.                                                  |
 | **Satellite island** | A separate, governed extension of a territory. Has its own stores and operates within the same governance as the principal island, but maintains an independent boundary - different topic scope, access rules, or publication target. |
 
+## The Capital
+
+The **Capital** is the seat of governance for a jurisdiction — not a folder or zone, but a role held by the principal island of a territory.
+At the territory level, the principal island is the Capital. For structures spanning multiple territories, each territory has its own
+Capital; if the overarching structure carries governance authority, there is also a meta-Capital — the principal island of the governing
+territory.
+
+Arcadia is the meta-Capital of the Knowledge Islands model.
+
 ## Archipelagos
 
 An **archipelago** is a geographic concept: a natural grouping of islands by proximity or shared character, independent of governance. The
@@ -44,8 +53,8 @@ each.
 
 A territory that adopts Knowledge Islands does so unconditionally with respect to its **constitutional layer** - the minimum conditions that
 distinguish a Knowledge Island from an unstructured repository. This layer is prior to the adoption framework, not governed by it:
-constitutional requirements cannot be vetoed. Two elements are constitutional: **Charter** (the island must have a Charter in its Knowledge
-Capital, declaring its identity and adoption position on every non-constitutional activity group, with no unknowns permitted); and
+constitutional requirements cannot be vetoed. Two elements are constitutional: **Charter** (the island must have a Charter in its `Admin/`
+zone, declaring its identity and adoption position on every non-constitutional activity group, with no unknowns permitted); and
 **Conformance** (the island must maintain a mechanism to verify it continues to meet the constitutional baseline). Beyond these, every
 activity group is subject to the adoption model - each territory explicitly adopts or vetoes each group. See
 [[Philosophy/Model/Activities/Constitutional/Constitutional]] for the full specification.

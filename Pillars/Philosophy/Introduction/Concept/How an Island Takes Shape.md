@@ -12,9 +12,9 @@ The Concept chapter establishes the vocabulary through which Knowledge Islands o
 scale, agency, jurisdiction, and governance. Together they answer the question of what kind of thing a Knowledge Island actually is - not a
 file store, but a governed territory with defined actors, bounded authority, and a mechanism for ratified change.
 
-Every concept here is portable and island-agnostic. Each may have a corresponding specific realisation in Knowledge Capital, the
-island-specific layer of the model. Knowledge Islands holds the portable definition; Knowledge Capital holds Arcadia's instance. The two are
-structural mirrors - when a new concept enters Knowledge Islands, any island-specific version of it belongs in Knowledge Capital, not here.
+Every concept here is portable and island-agnostic. Each may have a corresponding island-specific realisation in `Admin/`. Knowledge Islands
+holds the portable definition; `Admin/` holds Arcadia's instance. The two are structural mirrors — when a new concept enters Knowledge
+Islands, any island-specific version of it belongs in `Admin/`, not here.
 
 The chapter moves in sequence: territories and archipelagos establish how islands relate and compose at scale; agents establish who acts
 within them; jurisdiction establishes the limits of their authority; governance establishes how their content changes. Each concept is a

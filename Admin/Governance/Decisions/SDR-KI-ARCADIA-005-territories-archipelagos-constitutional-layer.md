@@ -38,6 +38,15 @@ islands** extend the territory for specific purposes: a different topic scope, a
 The boundary rule is simple: if customs exist at the boundary, it is a separate territory. If knowledge flows freely with no controls, it is
 internal structure.
 
+### The Capital
+
+The **Capital** is the seat of governance for a jurisdiction — not a folder or zone, but a role held by the principal island of a territory.
+At the territory level, the principal island is the Capital. For structures spanning multiple territories, each territory has its own
+Capital; if the overarching structure carries governance authority, there is also a meta-Capital — the principal island of the governing
+territory.
+
+Arcadia is the meta-Capital of the Knowledge Islands model.
+
 ### Archipelagos
 
 An **archipelago** is a geographic concept — a natural grouping of islands by proximity or shared character — distinct from a territory. A
@@ -49,7 +58,7 @@ determines territory; proximity and shared character determine archipelago. The 
 A territory that adopts Knowledge Islands does so unconditionally with respect to its **constitutional layer** — the minimum conditions that
 distinguish a Knowledge Island from an unstructured repository. Two elements are constitutional and cannot be vetoed:
 
-- **Charter** — the island must have a Charter in its Knowledge Capital, declaring its identity and adoption position on every
+- **Charter** — the island must have a Charter in its `Admin/` zone, declaring its identity and adoption position on every
   non-constitutional activity group. No unknowns are permitted.
 - **Conformance** — the island must maintain a mechanism to verify it continues to meet the constitutional baseline.
 

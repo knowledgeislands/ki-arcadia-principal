@@ -40,11 +40,8 @@ A Knowledge Island is governed across five areas that together make it operate d
 
 These five areas constitute the **portable model** — the generic framework that Knowledge Islands defines and that any island can adopt.
 
-Each island's specific realisation of this model is held in its **Knowledge Capital**: the island's council, citizenship records,
-integration configuration, routing overrides, and declared adoption position on each activity group. Knowledge Capital is the bridge between
-the portable model and the island as it actually operates.
-
-Two elements of Knowledge Capital are required by every island:
+Each island's specific realisation of this model is held in its `Admin/` zone: the island's council, citizenship records, integration
+configuration, routing overrides, and declared adoption position on each activity group. Two elements are required by every island:
 
 - **Charter** — the island's identity and its declared adoption position on every activity group; no unknowns are permitted.
 - **Council** — the governance body that ratifies proposals and holds authority on the island. On a single-person island, the sole member
@@ -54,14 +51,13 @@ Two elements of Knowledge Capital are required by every island:
 
 - The five governance areas — Conventions, Processes, Activities, Agents, Tools — provide the complete vocabulary for describing how any
   island works.
-- The portable model (defined in Arcadia, adopted by any island) is distinguished from Knowledge Capital (the island's specific
-  realisation). Documentation of the portable model belongs in Pillars; island-specific realisation belongs in Knowledge Capital.
-- Charter and Council are required elements of every Knowledge Capital; their absence makes an island's governance incomplete.
-- "Knowledge Capital" names the realisation layer of a Knowledge Island — the specific instance of the portable model for that island.
+- The portable model (defined in Arcadia, adopted by any island) is distinguished from island-specific realisation. Documentation of the
+  portable model belongs in Pillars; island-specific realisation belongs in `Admin/`.
+- Charter and Council are required elements of every island's governance; their absence makes governance incomplete. Both live in `Admin/`.
 
 ## References
 
 - [SDR-KI-ARCADIA-002: The Home of Knowledge](SDR-KI-ARCADIA-002-the-home-of-knowledge.md)
+- [SDR-KI-ARCADIA-005: Territories, Archipelagos, and the Constitutional Layer](SDR-KI-ARCADIA-005-territories-archipelagos-constitutional-layer.md)
 - [Governance](../../../Pillars/Knowledge%20Islands/Introduction/Concept/Governance/Governance.md)
 - [How an Island Takes Shape](../../../Pillars/Knowledge%20Islands/Introduction/Concept/How%20an%20Island%20Takes%20Shape.md)
-- [Knowledge Capitals](../../../Pillars/Knowledge%20Islands/Realisation/Knowledge%20Capitals/Knowledge%20Capitals.md)
