@@ -17,14 +17,30 @@ crosses a boundary and under what rules, and how knowledge travels between commu
 
 The unit of governance in the model is a **territory**: one or more islands under a shared jurisdiction, with exactly one **principal
 island** - the seat of governance, holding the Capital and the shared governance infrastructure. Additional **satellite islands** extend the
-territory for specific purposes (a different topic scope, a different audience, a different publication target). A territory spanning
-multiple islands forms an **archipelago**. The boundary rule is simple: if customs exist at the boundary, it is a separate territory. If
-knowledge flows freely with no controls, it is internal structure.
+territory for specific purposes (a different topic scope, a different audience, a different publication target). The boundary rule is
+simple: if customs exist at the boundary, it is a separate territory. If knowledge flows freely with no controls, it is internal structure.
 
 | Type                 | Description                                                                                                                                                                                                                            |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Principal island** | The seat of governance for a territory. Holds the Capital and carries the shared governance infrastructure for the whole territory. Every territory has exactly one principal island.                                                  |
 | **Satellite island** | A separate, governed extension of a territory. Has its own stores and operates within the same governance as the principal island, but maintains an independent boundary - different topic scope, access rules, or publication target. |
+
+## Archipelagos
+
+An **archipelago** is a geographic concept: a natural grouping of islands by proximity or shared character, independent of governance. The
+islands of Tristan da Cunha form an archipelago in the South Atlantic — Tristan da Cunha, Inaccessible Island, Nightingale Islands, Gough
+Island — but their territory is _Saint Helena, Ascension and Tristan da Cunha_, a distinct governance layer that does not map one-to-one
+onto the geographic grouping.
+
+The same separation holds in Knowledge Islands. Archipelago and territory are orthogonal structures that overlap without being equivalent:
+
+- A territory may contain all the islands of one archipelago, or span several.
+- An archipelago may sit wholly within one territory, or straddle two.
+- The boundary rule (customs vs. free flow) determines territory; proximity and shared character determine archipelago.
+
+The distinction matters because it separates the question _what islands are near each other or share a domain?_ (geography) from the
+question _who governs what, and where does jurisdiction end?_ (governance). Both questions are real; conflating them obscures the answer to
+each.
 
 A territory that adopts Knowledge Islands does so unconditionally with respect to its **constitutional layer** - the minimum conditions that
 distinguish a Knowledge Island from an unstructured repository. This layer is prior to the adoption framework, not governed by it:

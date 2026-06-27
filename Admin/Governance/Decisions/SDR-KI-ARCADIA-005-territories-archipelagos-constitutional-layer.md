@@ -35,8 +35,14 @@ islands** extend the territory for specific purposes: a different topic scope, a
 | Principal island | Seat of governance; holds the Capital and shared infrastructure; every territory has exactly one     |
 | Satellite island | Governed extension with an independent boundary; same governance conventions as the principal island |
 
-A territory spanning multiple islands forms an **archipelago**. The boundary rule is simple: if customs exist at the boundary, it is a
-separate territory. If knowledge flows freely with no controls, it is internal structure.
+The boundary rule is simple: if customs exist at the boundary, it is a separate territory. If knowledge flows freely with no controls, it is
+internal structure.
+
+### Archipelagos
+
+An **archipelago** is a geographic concept — a natural grouping of islands by proximity or shared character — distinct from a territory. A
+territory may contain one archipelago or span several; an archipelago may sit wholly within one territory or straddle two. The boundary rule
+determines territory; proximity and shared character determine archipelago. The two structures overlap without being equivalent.
 
 ### The Constitutional Layer
 

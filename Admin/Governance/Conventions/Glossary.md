@@ -20,14 +20,17 @@ system.
 | Term                  | Meaning                                                                                                                                                |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Knowledge Island (KI) | A discrete, self-contained body of knowledge - a repository of notes with its own governance and identity                                              |
-| Archipelago           | A group of islands governed together under a shared principal island                                                                                   |
-| Principal Island      | The seat of governance for an archipelago - holds governance infrastructure, the Cowork project, and the canonical island for the group                |
-| Satellite Island      | An island connected to an archipelago but ring-fenced for a specific purpose (e.g. a public website)                                                   |
+| Archipelago           | A geographic grouping of islands by proximity or shared natural character; independent of governance†                                                  |
+| Principal Island      | The seat of governance for a territory — holds the Capital, the governance infrastructure, and the Cowork project for the whole territory              |
+| Satellite Island      | A governed extension of a territory, ring-fenced for a specific purpose (e.g. a different audience or publication target)                              |
 | Islet                 | A small, purpose-specific knowledge area that shares governance with its principal island but maintains its own store                                  |
 | Council               | The governing body of an island using the council model - the custodians who ratify, reject, or return proposed changes                                |
 | Custodian             | A council member; a traveller who knows the location of the archipelago and is authorised to contribute to its canonical knowledge                     |
 | Known Lands           | A map of known islands held in an island - Arcadia's is the canonical objective record; each principal's own island holds a personal navigator's chart |
 | Knowledge Capital     | The folder (`Pillars/Knowledge Capital/`) holding an island's knowledge of itself - identity, governance instance, and configuration                   |
+
+† A territory may contain one or more archipelagos; an archipelago may span multiple territories. The boundary rule (customs vs. free
+knowledge flow) determines territory; proximity and shared character determine archipelago.
 
 ---
 

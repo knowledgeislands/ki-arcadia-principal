@@ -14,12 +14,11 @@ decision_depends_on: ['SDR-KI-ARCADIA-001']
 
 ## Context
 
-The Knowledge Islands strategy (SDR-KI-ARCADIA-001) adopts the archipelago as the structural intent — each domain of human concern becomes
-an independent Knowledge Island with its own repos, governance, and territory. Within the Knowledge domain, the Arcadia territory currently
-operates through three repos: `arcadia-principal`, `arcadia-agentic-harness`, and `arcadia-website`. Their boundaries and relationships have
-remained implicit. Concerns have blurred — where does new work go? Who holds authority over the model? What can the harness decide
-independently? Without explicit island-level separation of concerns, these questions are settled by convention or accident rather than by
-deliberate structure.
+The Knowledge Islands strategy (SDR-KI-ARCADIA-001) structures each domain of human concern as an independent territory with its own
+governance. Within the Knowledge domain, the Arcadia territory currently operates through three repos: `arcadia-principal`,
+`arcadia-agentic-harness`, and `arcadia-website`. Their boundaries and relationships have remained implicit. Concerns have blurred — where
+does new work go? Who holds authority over the model? What can the harness decide independently? Without explicit island-level separation of
+concerns, these questions are settled by convention or accident rather than by deliberate structure.
 
 ## Decision
 
@@ -43,8 +42,8 @@ The canonical flow is: **principal** (prove and model) → **harness** (generali
 - Content decisions about the KI model are made in arcadia-principal under its Enactment Process.
 - The harness pulls from arcadia-principal; it does not push decisions back.
 - arcadia-website publishes from arcadia-principal; it does not independently develop knowledge.
-- This island-level separation applies as a pattern to future archipelago domains: each domain may have a source island, a realisation
-  island, and a publication island, structured to the same principle.
+- This island-level separation applies as a pattern to future territories: each domain may have a source island, a realisation island, and a
+  publication island, structured to the same principle.
 
 ## References
 
