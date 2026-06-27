@@ -1,18 +1,22 @@
 ---
-tags:
-  - card/note
-  - topic/knowledge-islands
-status: draft - May 2026
-author: Written with Claude
+tags: card/note topic/knowledge-islands
+status: active 2026
+author: Claude
 ---
 
 # Outbound
 
-## Overview
+The `-/` outbound staging area holds produced artefacts that are leaving the base — session digests, handoffs, compiled outputs. It is
+staging, not a zone: it carries no same-name index and is exempt from the zone audit rules.
 
-`-` is the outbound staging area of the canonical Knowledge Islands model - the counterpart to the inbound `+` - where produced artefacts
-leave the island: session digests, compiled outputs, and material prepared for use elsewhere. Like `+`, it is staging rather than a zone, so
-it is exempt from the same-name index rule; this note documents it minimally so the island carries the full structure.
+## Subdirectories
 
-The zone is introduced empty for now. Session digests currently remain sibling Calendar notes (see [[CLAUDE]]); when digest output migrates
-here it lands under `-/_DIGESTS/`, alongside the move of governance into [[Admin]].
+| Path           | Purpose                                                                    |
+| -------------- | -------------------------------------------------------------------------- |
+| `-/_DIGESTS/`  | Session digests (`type: session-digest`) — ephemeral session records       |
+| `-/_HANDOFFS/` | Handoff notes (`type: handoff`) — directed at a specific recipient or base |
+
+Files carrying `type: session-digest` or `type: handoff` that are found outside `-/` (e.g. in `Calendar/` or `Streams/`) are a ZONE-5 audit
+FAIL.
+
+See [[Admin]] for move governance and [[CLAUDE]] for base-level configuration.

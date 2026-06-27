@@ -1,51 +1,34 @@
 ---
-tags:
-  - card/note
-  - topic/knowledge-islands
-  - topic/knowledge-management
-status: draft - April 2026
-author: Written with Claude
+tags: card/note topic/knowledge-islands topic/knowledge-management
+status: active 2026
+author: Claude
 ---
 
 # Session Digest
 
-## Overview
+A session digest is a produced artefact that documents an AI-assisted work session. It is **not a Calendar note** — it does not represent a
+time-stamped record to keep; it is an output to extract from and then discard. It lives in outbound staging under `-/_DIGESTS/`.
 
-Defines the delta from [[Notes]] for session digest notes. Session digests are temporary summaries of AI-assisted work sessions, filed in
-the Calendar alongside the daily note for that date.
+## Filing
 
----
+- Path: `-/_DIGESTS/<UTC timestamp> <Short Topic>.md` (timestamp `YYYY-MM-DDTHHMMSSZ`)
+- Frontmatter: `type: session-digest`, `retain_until: YYYY-MM-DD` (default 30 days)
 
-## Frontmatter
-
-Required tags in addition to any topic tags:
-
-- `calendar/session`
-- `date/YYYY/MM/DD` - matching the session date
-
----
+Required tags: `topic/` tags covering the session's subject matter.
 
 ## Structure
 
-### Overview section
+Five sections, all required:
 
-A brief description of the session's purpose and scope.
-
-### Body sections
-
-Five standard sections, all required:
-
-- **Context** - what the session was about and why it was needed
-- **Decisions** - any decisions made during the session
-- **Facts Learned** - new information captured or confirmed
-- **Related Projects** - island areas, Streams, or Pillars notes touched
-- **Keywords** - searchable terms to aid future retrieval
-
----
+- **Context** — what prompted the session and what was in scope
+- **Decisions** — decisions made during the session
+- **Facts Learned** — new information captured or confirmed
+- **Related Work** — Streams, Pillars, or `-/_HANDOFFS/` notes touched
+- **Keywords** — searchable terms for future retrieval
 
 ## Lifecycle
 
-Session digests are temporary by design. Once all durable content has been extracted to the appropriate Pillars or Streams notes, the
-session note should be deleted - it has no long-term value as a standalone calendar artefact.
+Session digests are ephemeral by design. Once their content is extracted into Pillars or Streams notes, or passed on as a `-/_HANDOFFS/`
+note, the digest can be deleted.
 
-The test: if the note were deleted today, would any knowledge be lost? If not, delete it. If yes, extract first.
+Test: if you deleted this note today, would knowledge be lost? If yes, extract first. If no, delete.
