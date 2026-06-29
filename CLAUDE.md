@@ -149,7 +149,3 @@ Significant structural decisions about this island are recorded as Decision Reco
 Process proposal produces a `Decision` output that warrants a standalone permanent record -- structural choices, adoption of tools or
 formats, cross-repo boundaries. Routine content additions do not need a DR. The `knowledgeislands-decision-records` skill governs the
 format. The index is `Admin/Governance/Decisions/Decisions.md`.
-
-## Key Meta Notes
-
-Read `KEY-META-NOTES.md` at the island root when you need canonical note paths.
