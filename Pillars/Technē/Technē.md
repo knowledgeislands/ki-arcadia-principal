@@ -23,7 +23,8 @@ discipline through which the ecosystem functions. It aligns naturally with Kuber
 systems thinking.
 
 This Pillar holds the conceptual and architectural foundations of Technē. Sub-notes will be created as the design matures into
-implementation.
+implementation. The [[Tool Ecosystem Map]] is the first: it maps the current tool layer (harness, MCPs, KB, website) as a grounded starting
+point for the broader architecture described here.
 
 ---
 
