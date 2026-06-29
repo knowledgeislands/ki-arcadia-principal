@@ -4,68 +4,89 @@ tags:
   - topic/productivity
   - topic/mcp
   - topic/microsoft-365
-  - source/claude
-status: current - April 2026
-author: Written with Claude
+  - topic/knowledge-islands
+source: claude
+status: current - June 2026
 ---
 
 # Microsoft 365
 
-## Overview
-
-MCP server that connects Claude to Microsoft 365 services via the Microsoft Graph API and Power Automate API. Covers Outlook (email and
-calendar), OneDrive, and Power Automate flows.
-
-Source: [ryaker/outlook-mcp][outlook-mcp]
-
----
+Microsoft 365 integration via the Knowledge Islands `mcp-m365` server — a bespoke MCP built and maintained in this workspace, published as
+`@knowledgeislands/mcp-m365`. It provides full Outlook (email, calendar, folders, rules) and OneDrive coverage via Microsoft Graph, with
+standalone OAuth 2.0 handling.
 
 ## Tools
 
-**Email & Calendar** - `list-emails`, `search-emails`, `read-email`, `send-email`, `mark-as-read`, `list-events`, `create-event`,
-`accept-event`, `decline-event`, `delete-event`
+**Auth and meta**
 
-**Folder Management** - `list-folders`, `create-folder`, `move-emails`
+| Tool               | Purpose                                                                |
+| ------------------ | ---------------------------------------------------------------------- |
+| `m365_about`       | Returns server info                                                    |
+| `m365_auth_start`  | Initiates the OAuth flow; persists tokens to `~/.mcp-m365-tokens.json` |
+| `m365_auth_status` | Checks auth status — presence and scope/expiry metadata only           |
 
-**Rules** - `list-rules`, `create-rule`
+**Email**
 
-**OneDrive** - `onedrive-list`, `onedrive-search`, `onedrive-download`, `onedrive-upload`, `onedrive-upload-large`, `onedrive-share`,
-`onedrive-create-folder`, `onedrive-delete`
+| Tool                           | Purpose                                                 |
+| ------------------------------ | ------------------------------------------------------- |
+| `m365_email_messages_list`     | List recent emails from inbox or a folder               |
+| `m365_email_messages_search`   | Search by query and/or date range                       |
+| `m365_email_message_get`       | Read email content                                      |
+| `m365_email_message_send`      | Send a new email                                        |
+| `m365_email_draft_create`      | Save an email draft                                     |
+| `m365_email_message_mark_read` | Mark email as read/unread                               |
+| `m365_email_message_delete`    | Move to Deleted Items (or hard delete with `permanent`) |
+| `m365_email_messages_move`     | Move emails between folders                             |
 
-**Power Automate** - `flow-list-environments`, `flow-list`, `flow-run`, `flow-list-runs`, `flow-toggle`
+**Calendar**
 
----
+| Tool                          | Purpose               |
+| ----------------------------- | --------------------- |
+| `m365_calendar_events_list`   | List calendar events  |
+| `m365_calendar_event_create`  | Create an event       |
+| `m365_calendar_event_accept`  | Accept an invitation  |
+| `m365_calendar_event_decline` | Decline an invitation |
+| `m365_calendar_event_cancel`  | Cancel an event       |
+| `m365_calendar_event_delete`  | Delete an event       |
+
+**Folder management**
+
+| Tool                       | Purpose                   |
+| -------------------------- | ------------------------- |
+| `m365_email_folders_list`  | List mail folders         |
+| `m365_email_folder_create` | Create a mail folder      |
+| `m365_email_folder_rename` | Rename an existing folder |
+| `m365_email_folder_delete` | Delete a folder           |
+
+**Inbox rules**
+
+| Tool                       | Purpose                      |
+| -------------------------- | ---------------------------- |
+| `m365_email_rules_list`    | List inbox rules             |
+| `m365_email_rule_create`   | Create an inbox rule         |
+| `m365_email_rules_reorder` | Reorder rule execution order |
+
+**OneDrive**
+
+| Tool                              | Purpose                  |
+| --------------------------------- | ------------------------ |
+| `m365_onedrive_items_list`        | List files at a path     |
+| `m365_onedrive_items_search`      | Search files by query    |
+| `m365_onedrive_item_download`     | Get a download URL       |
+| `m365_onedrive_item_upload`       | Upload a file under 4 MB |
+| `m365_onedrive_item_upload_large` | Chunked upload over 4 MB |
+| `m365_onedrive_item_share`        | Create a sharing link    |
+| `m365_onedrive_folder_create`     | Create a folder          |
+| `m365_onedrive_item_delete`       | Delete a file or folder  |
 
 ## Setup
 
-**Requirements**: Node.js 14.0+, Azure account
+Requires an Azure App Registration with the relevant Microsoft Graph scopes.
 
-1. Clone the repo and run `npm install`
-2. Register an app in the Azure Portal (navigate via _More services_ → _App Registrations_) with redirect URI
-   `http://localhost:3333/auth/callback`
-3. Configure Claude Desktop - pass credentials as env vars in the MCP server entry (no `.env` file needed):
-   - `OUTLOOK_CLIENT_ID`
-   - `OUTLOOK_CLIENT_SECRET`
-   - `OUTLOOK_TENANT_ID` - find this in Azure Portal → Microsoft Entra ID → Overview → Basic information
-   - `USE_TEST_MODE` - set to `"false"` for production
-4. Run `npm run auth-server` in a terminal - this starts a local OAuth callback listener on port 3333
-5. In Claude (with the MCP now connected), ask it to authenticate with Microsoft 365 - Claude calls the `authenticate` tool, which returns a
-   Microsoft OAuth URL
-6. Open the URL in a browser, sign in, and you'll be redirected to `localhost:3333/auth/callback` - tokens are saved automatically to
-   `~/.outlook-mcp-tokens.json`
+1. Register an app in Azure Portal; add `http://localhost:3333/auth/callback` as a redirect URI.
+2. Set `MCP_M365_CLIENT_ID` and `MCP_M365_CLIENT_SECRET` in the MCP environment (or `.env.development`).
+3. Run the auth server: `bun run ki:server:auth:dev` (listens on `localhost:3333`).
+4. Call `m365_auth_start` in Claude — it returns a URL; open it, sign in, and grant consent. Tokens are cached at `~/.mcp-m365-tokens.json`
+   and refreshed transparently.
 
-**Re-authentication**: if tokens expire, delete `~/.outlook-mcp-tokens.json` and repeat steps 5-7. If port 3333 is busy:
-`npx kill-port 3333`
-
----
-
-## Notes
-
-- **Azure Portal - App Registrations**: Not visible in the default services list; click _More services_ to find it
-- **Finding your Tenant ID**: Go to `portal.azure.com` → it lands on the Microsoft Entra ID Overview page directly (or navigate via _More
-  services_ → _Microsoft Entra ID_ → _Overview_) - Tenant ID is listed under Basic information; add it to the Claude Desktop MCP config as
-  `OUTLOOK_TENANT_ID`
-- **Homeshick / dotfiles**: Claude Desktop uses atomic writes and will replace the `claude_desktop_config.json` symlink with a real file -
-  re-symlink after any config change: `homeshick symlink <castle>`
-
-[outlook-mcp]: https://github.com/ryaker/outlook-mcp
+Connection details live in [[Integrations]].
