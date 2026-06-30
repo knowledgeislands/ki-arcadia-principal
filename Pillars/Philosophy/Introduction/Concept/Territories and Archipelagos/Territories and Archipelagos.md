@@ -14,10 +14,14 @@ A single island with a cycle of knowledge is a personal practice. Knowledge Isla
 
 The unit of governance in the model is a **territory**: one or more islands under a shared jurisdiction, with exactly one **principal island** - the seat of governance, holding the Capital and the shared governance infrastructure. Additional **satellite islands** extend the territory for specific purposes (a different topic scope, a different audience, a different publication target). The boundary rule is simple: if customs exist at the boundary, it is a separate territory. If knowledge flows freely with no controls, it is internal structure.
 
-| Type                 | Description                                                                                                                                                                                                                            |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Principal island** | The seat of governance for a territory. Holds the Capital and carries the shared governance infrastructure for the whole territory. Every territory has exactly one principal island.                                                  |
-| **Satellite island** | A separate, governed extension of a territory. Has its own stores and operates within the same governance as the principal island, but maintains an independent boundary - different topic scope, access rules, or publication target. |
+| Type                 | Description †                                                                  |
+| -------------------- | ------------------------------------------------------------------------------ |
+| **Principal island** | The seat of governance for a territory; every territory has exactly one. †     |
+| **Satellite island** | A separate, governed extension of a territory, with an independent boundary. ‡ |
+
+† **Principal island** — holds the Capital and carries the shared governance infrastructure for the whole territory.
+
+‡ **Satellite island** — has its own stores and operates within the same governance as the principal island, but maintains an independent boundary: different topic scope, access rules, or publication target.
 
 ## The Capital
 

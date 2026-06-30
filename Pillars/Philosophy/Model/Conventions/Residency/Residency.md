@@ -19,11 +19,17 @@ These tiers are complementary, not competing. The Library is what the knowledge 
 
 ## Three Tiers
 
-| Tier                 | What it is                                                                            | Lifetime                                              |
-| -------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------- |
-| **The Library**      | Structured notes in the island - rules, conventions, style, architecture              | Permanent - versioned in git                          |
-| **Canonical memory** | Operational distillation notes - rebuilt regularly from the island                    | Rebuilt on a schedule; always derived from the island |
-| **Auxiliary memory** | In-flight observations from sessions - corrections, patterns, not-yet-validated rules | Temporary - promoted to island notes or pruned        |
+| Tier                 | What it is                                                               | Lifetime                         |
+| -------------------- | ------------------------------------------------------------------------ | -------------------------------- |
+| **The Library**      | Structured notes in the island - rules, conventions, style, architecture | Permanent - versioned in git     |
+| **Canonical memory** | Operational distillation notes - rebuilt regularly from the island       | Rebuilt on a schedule †          |
+| **Auxiliary memory** | In-flight observations from sessions ‡                                   | Temporary - promoted or pruned § |
+
+† Always derived from the island.
+
+‡ Corrections, patterns, not-yet-validated rules.
+
+§ Promoted to island notes or pruned.
 
 ---
 

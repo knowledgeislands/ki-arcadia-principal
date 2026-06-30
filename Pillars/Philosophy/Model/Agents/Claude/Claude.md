@@ -263,20 +263,34 @@ type: user | project | feedback | reference
 
 The `type` field is a Cowork convention - not part of the base Claude Code auto-memory spec. The four allowed values:
 
-| Type        | Purpose                                                        | Typical island knowledge                                                     |
-| ----------- | -------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| `user`      | Who the user is - role, preferences, working style             | Communication style, personal preferences, profile                           |
-| `project`   | Ongoing work context - decisions, structure, configuration     | Island structure, note format, tag taxonomy, volatile implementation details |
-| `feedback`  | Corrections and validated approaches - what to repeat or avoid | Operational rules, file operation lessons, recurring corrections             |
-| `reference` | Pointers to where information lives in external systems        | Activity schedules, integration config, paths to canonical notes             |
+| Type | Purpose | Typical island knowledge |
+| ----------- | ------------------------------------------------------ | ---------------------------------------------------------------- |
+| `user` | Who the user is - role, preferences, working style | Communication style, personal preferences, profile |
+| `project` | Ongoing work context - decisions, structure, config | Structure, note format, tag taxonomy, volatile detail ¥¥ |
+| `feedback` | Corrections and validated approaches ††† | Operational rules, file-op lessons ¶¶¶ |
+| `reference` | Pointers to external systems ‖‖‖ | Activity schedules, integration config ※※※ |
+
+¥¥ Island structure, note format, tag taxonomy, volatile implementation details.
+
+††† Corrections and validated approaches - what to repeat or avoid.
+
+¶¶¶ Operational rules, file operation lessons, recurring corrections.
+
+‖‖‖ Pointers to where information lives in external systems.
+
+※※※ Activity schedules, integration config, paths to canonical notes.
 
 The filename convention is `{type}_{scope_prefix}_{descriptor}.md`, where `scope_prefix` is one of:
 
-| Scope prefix                                           | Meaning                                                    | Example                                |
-| ------------------------------------------------------ | ---------------------------------------------------------- | -------------------------------------- |
-| Knowledge Island identifier (e.g. `arcadia-principal`) | Specific to this Knowledge Island                          | `feedback_{island-name}_operations.md` |
-| User identifier (e.g. `kit`)                           | Specific to this user                                      | `user_kit_profile.md`                  |
-| `any`                                                  | Cross-context - applies to any Knowledge Island or session | `feedback_any_claude_behaviour.md`     |
+| Scope prefix | Meaning | Example |
+| ---------------------------------- | ---------------------------------- | -------------------------------------- |
+| Knowledge Island identifier ‡‡‡ | Specific to this Knowledge Island | `feedback_{island-name}_operations.md` |
+| User identifier (e.g. `kit`) | Specific to this user | `user_kit_profile.md` |
+| `any` | Cross-context §§§ | `feedback_any_claude_behaviour.md` |
+
+‡‡‡ Knowledge Island identifier (e.g. `arcadia-principal`).
+
+§§§ Cross-context - applies to any Knowledge Island or session.
 
 The prefix distinguishes files from multiple islands sharing the same `.auto-memory/` directory, and signals whether a rule is
 island-specific or universally applicable.
@@ -286,12 +300,12 @@ island-specific or universally applicable.
 **Canonical files** are managed exclusively by [[Knowledge Rebuild]]. They are rewritten from the island on a regular schedule. Do not edit
 them manually between rebuilds - changes will be overwritten. The five canonical files are:
 
-| File                                 | Source island notes                                                    |
+| File | Source island notes |
 | ------------------------------------ | ---------------------------------------------------------------------- |
-| `user_{user_prefix}_profile.md`      | Identity + Communication Style                                         |
-| `project_{ki_prefix}_structure.md`   | Island Structure + Routing Rules + Knowledge Residency                 |
-| `project_{ki_prefix}_note_format.md` | Notes/Format + Notes/Frontmatter                                       |
-| `feedback_{ki_prefix}_operations.md` | Mistakes and Lessons + Activities                                      |
+| `user_{user_prefix}_profile.md` | Identity + Communication Style |
+| `project_{ki_prefix}_structure.md` | Island Structure + Routing Rules + Knowledge Residency |
+| `project_{ki_prefix}_note_format.md` | Notes/Format + Notes/Frontmatter |
+| `feedback_{ki_prefix}_operations.md` | Mistakes and Lessons + Activities |
 | `reference_{ki_prefix}_key_notes.md` | Identity + Activities + Integrations + Claude.md + Memory Architecture |
 
 **Auxiliary files** are created ad-hoc during sessions when Claude saves something worth preserving. They persist between rebuilds and are
@@ -304,22 +318,60 @@ _The table below uses `{ki_prefix}` and `{user_prefix}` placeholders - substitut
 [[Knowledge Capital/Charter|Charter]] when reading for a specific island. [[Knowledge Rebuild]] uses this table during its gap analysis to
 validate that every listed file exists in `.auto-memory/` and that every file in `.auto-memory/` is documented here._
 
-| Island Note                                                                                      | Memory File                                          | Class              | Notes                                                                                                                    |
-| ------------------------------------------------------------------------------------------------ | ---------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| `Island Structure.md`<br>`Routing Rules.md`<br>`Knowledge Residency.md`                          | `project_{ki_prefix}_structure.md`                   | Canonical          | Three island notes merged; Routing Rules adds three-domain model; Knowledge Residency adds residency tiers and lifecycle |
-| `Notes/Notes.md`<br>`Notes/Frontmatter/Frontmatter.md`                                           | `project_{ki_prefix}_note_format.md`                 | Canonical          | Two island notes merged; island has worked examples memory omits                                                         |
-| `Mistakes and Lessons.md`                                                                        | `feedback_{ki_prefix}_operations.md`                 | Canonical          | M&L has full incident table; memory distils to actionable rules; also draws from Activities                              |
-| `Activities.md`<br>`Identity.md`<br>`Integrations.md`<br>`Claude.md`<br>`Memory Architecture.md` | `reference_{ki_prefix}_key_notes.md`                 | Canonical          | Five island sources merged; Memory Architecture contributes mapping table and rebuild specification                      |
-| `Communication Style.md`<br>`Identity.md`                                                        | `user_{user_prefix}_profile.md`                      | Canonical          | Communication Style covers the user's voice and habits; Identity contributes role and operating context                  |
-| `Mistakes and Lessons.md`                                                                        | `feedback_{ki_prefix}_notion_tag_updates.md`         | Auxiliary (island) | M&L has general rule; memory adds implementation detail not in island                                                    |
-| `Mistakes and Lessons.md`                                                                        | `feedback_{ki_prefix}_multi_column.md`               | Auxiliary (island) | M&L has general rule; memory adds syntax example not in island                                                           |
-| `Mistakes and Lessons.md`                                                                        | `feedback_any_context_limit_warning.md`              | Auxiliary (any)    | Closely aligned                                                                                                          |
-| `Claude Behaviour.md`                                                                            | `feedback_any_claude_behaviour.md`                   | Auxiliary (any)    | Claude behavioural constraints; `any_` scope preserves cross-island applicability                                        |
-| _(ad-hoc - no island source)_                                                                    | `reference_{ki_prefix}_deep_memory.md`               | Auxiliary (island) | Pointers to island locations assembled from session context - not tied to a single island note                           |
-| `Enactment Process.md`                                                                           | `feedback_{ki_prefix}_enactment_process.md`          | Auxiliary (island) | Working rules and proposal patterns; park-and-resume detail is memory-appropriate                                        |
-| _(ad-hoc - no island source)_                                                                    | `feedback_{ki_prefix}_scheduled_task_push_timing.md` | Auxiliary (island) | Prompt push timing rules; core rule now covered by canonical operations file - candidate for deletion                    |
-| _(ad-hoc - no island source)_                                                                    | `feedback_{ki_prefix}_theme_note_titles.md`          | Auxiliary (island) | Email theme note title conventions; ad-hoc, no island source note yet                                                    |
-| _(ad-hoc - no island source)_                                                                    | `feedback_any_task_naming.md`                        | Auxiliary (any)    | TodoList task naming conventions (project tag prefixes); general, not island-specific                                    |
+| Island Note | Memory File | Class | Notes |
+| ------------------------- | ---------------------------------------------------- | ------------------ | ----- |
+| Structure trio ¥ | `project_{ki_prefix}_structure.md` | Canonical | † |
+| Note-format pair ※※ | `project_{ki_prefix}_note_format.md` | Canonical | ‡ |
+| `Mistakes and Lessons.md` | `feedback_{ki_prefix}_operations.md` | Canonical | § |
+| Key-notes quintet ❡❡ | `reference_{ki_prefix}_key_notes.md` | Canonical | ¶ |
+| Profile pair ¤¤ | `user_{user_prefix}_profile.md` | Canonical | ‖ |
+| `Mistakes and Lessons.md` | `feedback_{ki_prefix}_notion_tag_updates.md` | Auxiliary (island) | †† |
+| `Mistakes and Lessons.md` | `feedback_{ki_prefix}_multi_column.md` | Auxiliary (island) | ‡‡ |
+| `Mistakes and Lessons.md` | `feedback_any_context_limit_warning.md` | Auxiliary (any) | §§§§ |
+| `Claude Behaviour.md` | `feedback_any_claude_behaviour.md` | Auxiliary (any) | §§ |
+| Ad-hoc ¥¥¥ | `reference_{ki_prefix}_deep_memory.md` | Auxiliary (island) | ¶¶ |
+| `Enactment Process.md` | `feedback_{ki_prefix}_enactment_process.md` | Auxiliary (island) | ‖‖ |
+| Ad-hoc ¥¥¥ | `feedback_{ki_prefix}_scheduled_task_push_timing.md` | Auxiliary (island) | ※ |
+| Ad-hoc ¥¥¥ | `feedback_{ki_prefix}_theme_note_titles.md` | Auxiliary (island) | ❡ |
+| Ad-hoc ¥¥¥ | `feedback_any_task_naming.md` | Auxiliary (any) | ¤ |
+
+¥ Island Note sources: `Island Structure.md`, `Routing Rules.md`, `Knowledge Residency.md`.
+
+※※ Island Note sources: `Notes/Notes.md`, `Notes/Frontmatter/Frontmatter.md`.
+
+❡❡ Island Note sources: `Activities.md`, `Identity.md`, `Integrations.md`, `Claude.md`, `Memory Architecture.md`.
+
+¤¤ Island Note sources: `Communication Style.md`, `Identity.md`.
+
+† Three island notes merged; Routing Rules adds three-domain model; Knowledge Residency adds residency tiers and lifecycle.
+
+‡ Two island notes merged; island has worked examples memory omits.
+
+§ M&L has full incident table; memory distils to actionable rules; also draws from Activities.
+
+¶ Five island sources merged; Memory Architecture contributes mapping table and rebuild specification.
+
+‖ Communication Style covers the user's voice and habits; Identity contributes role and operating context.
+
+†† M&L has general rule; memory adds implementation detail not in island.
+
+‡‡ M&L has general rule; memory adds syntax example not in island.
+
+§§ Claude behavioural constraints; `any_` scope preserves cross-island applicability.
+
+¶¶ Pointers to island locations assembled from session context - not tied to a single island note.
+
+‖‖ Working rules and proposal patterns; park-and-resume detail is memory-appropriate.
+
+※ Prompt push timing rules; core rule now covered by canonical operations file - candidate for deletion.
+
+❡ Email theme note title conventions; ad-hoc, no island source note yet.
+
+¤ TodoList task naming conventions (project tag prefixes); general, not island-specific.
+
+§§§§ Closely aligned.
+
+¥¥¥ Island Note source: _(ad-hoc - no island source)_.
 
 ---
 

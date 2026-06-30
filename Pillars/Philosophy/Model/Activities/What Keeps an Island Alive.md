@@ -27,9 +27,11 @@ Authoring Guidelines documents the content layers for activity prompts and the c
 
 The constitutional baseline required of any Knowledge Island. Not subject to the adoption framework - these activities define what it means to be a Knowledge Island at all.
 
-| Activity                                                     | Type      | When                    | Summary                                                                                                                                     |
-| ------------------------------------------------------------ | --------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| [[Model/Activities/Constitutional/Conformance\|Conformance]] | Scheduled | Island-specific cadence | Verifies constitutional baseline and that all non-constitutional activity groups have an explicit adopted or vetoed position in the Charter |
+| Activity                                                     | Type      | When                    | Summary                        |
+| ------------------------------------------------------------ | --------- | ----------------------- | ------------------------------ |
+| [[Model/Activities/Constitutional/Conformance\|Conformance]] | Scheduled | Island-specific cadence | Baseline + Charter positions † |
+
+† Confirms the constitutional baseline holds and that every non-constitutional activity group has an explicit adopted or vetoed position in the Charter.
 
 ---
 
@@ -37,14 +39,24 @@ The constitutional baseline required of any Knowledge Island. Not subject to the
 
 Activities that keep the island structurally sound, content-healthy, and free of stale or orphaned material - spanning daily automations through to weekly reviews and deeper adhoc audits.
 
-| Activity                 | Type           | When                      | Summary                                                                                                              |
-| ------------------------ | -------------- | ------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| [[Scheduled Task Audit]] | Scheduled      | Each working day at 05:00 | Compares live scheduled task prompts against island notes; reconciles any drift; runs first before other automations |
-| [[Health Check]]         | Scheduled      | Mondays at 08:00          | Reviews structural drift, skill alignment, and content health across the repository                                  |
-| [[Knowledge Rebuild]]    | Scheduled      | Wednesdays at 07:00       | Reconstructs Claude's auto-memory from canonical meta notes; keeps the memory layer accurate as the island evolves   |
-| [[Inbox Review]]         | Conversational | _"ki inbox review"_       | Weekly - processes notes held in the `+/` inbox and files them to the correct Pillar or Stream                       |
-| [[Asset Audit]]          | Conversational | _"ki asset audit"_        | Weekly - surfaces unlinked repository assets and removes redundant ones                                              |
-| [[Status Review]]        | Conversational | _"ki status review"_      | Weekly - updates `status` frontmatter fields when a note's standing has changed                                      |
-| [[Structural Audit]]     | Conversational | _"ki structural audit"_   | Adhoc - comprehensive structural review of an island section or the whole repository                                 |
-| [[Wikilink Review]]      | Conversational | _"ki wikilink review"_    | Adhoc - surfaces broken wikilinks and orphan notes across the repository                                             |
-| [[Convergence Check]]    | Conversational | _"ki convergence check"_  | Adhoc - compares shared notes across all islands; surfaces drift; cross-pollinates improvements                      |
+| Activity | Type | When | Summary |
+| --- | --- | --- | --- |
+| [[Scheduled Task Audit]] | Scheduled | Each working day at 05:00 | Reconciles live scheduled task prompts against island notes ‡ |
+| [[Health Check]] | Scheduled | Mondays at 08:00 | Reviews structural drift, skill alignment, and content health § |
+| [[Knowledge Rebuild]] | Scheduled | Wednesdays at 07:00 | Reconstructs Claude's auto-memory from canonical meta notes ¶ |
+| [[Inbox Review]] | Conversational | _"ki inbox review"_ | Weekly - files notes held in the `+/` inbox ‖ |
+| [[Asset Audit]] | Conversational | _"ki asset audit"_ | Weekly - surfaces unlinked assets and removes redundant ones |
+| [[Status Review]] | Conversational | _"ki status review"_ | Weekly - updates `status` frontmatter when a note's standing shifts |
+| [[Structural Audit]] | Conversational | _"ki structural audit"_ | Adhoc - structural review of a section or the whole repository |
+| [[Wikilink Review]] | Conversational | _"ki wikilink review"_ | Adhoc - surfaces broken wikilinks and orphan notes |
+| [[Convergence Check]] | Conversational | _"ki convergence check"_ | Adhoc - compares shared notes across islands; cross-pollinates †† |
+
+‡ Compares live scheduled task prompts against island notes; reconciles any drift; runs first before other automations.
+
+§ Reviews structural drift, skill alignment, and content health across the repository.
+
+¶ Reconstructs Claude's auto-memory from canonical meta notes; keeps the memory layer accurate as the island evolves.
+
+‖ Processes notes held in the `+/` inbox and files them to the correct Pillar or Stream.
+
+†† Compares shared notes across all islands; surfaces drift; cross-pollinates improvements.

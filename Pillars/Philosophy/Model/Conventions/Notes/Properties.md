@@ -19,13 +19,17 @@ All fields except `creator` are required. Frontmatter must be YAML properties - 
 
 ## Standard Properties
 
-| Property      | Values / Format                                                                                                                                                 |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `status`      | `draft - Month YYYY` / `current - Month YYYY` / `archive - Month YYYY` / `outdated - Month YYYY`                                                                |
-| `author`      | `Manual` / `Written with Claude` / `Mixed` - always the note's author, not the subject's                                                                        |
-| `creator`     | Optional - the author of the external work being referenced, e.g. `creator: "[[Author Name]]"`                                                                  |
-| `memory_file` | Optional - filename(s) of the auto-memory file(s) that mirror this note (e.g. `reference_{ki_prefix}_key_notes.md`). Use a YAML list when multiple files apply. |
-| `day_type`    | Calendar daily notes only - `work-day`, `bank-holiday`, `annual-leave`, or `weekend`. Set by Morning Briefing automation; see [[Schedule]].                     |
+| Property      | Values / Format                                                                                  |
+| ------------- | ------------------------------------------------------------------------------------------------ |
+| `status`      | `draft - Month YYYY` / `current - Month YYYY` / `archive - Month YYYY` / `outdated - Month YYYY` |
+| `author`      | `Manual` / `Written with Claude` / `Mixed` - always the note's author, not the subject's         |
+| `creator`     | Optional - the author of the external work being referenced, e.g. `creator: "[[Author Name]]"`   |
+| `memory_file` | Optional - filename(s) of the auto-memory file(s) that mirror this note †                        |
+| `day_type`    | Calendar daily notes only - `work-day`, `bank-holiday`, `annual-leave`, or `weekend` ‡           |
+
+† E.g. `reference_{ki_prefix}_key_notes.md`. Use a YAML list when multiple files apply.
+
+‡ Set by Morning Briefing automation; see [[Schedule]].
 
 ---
 

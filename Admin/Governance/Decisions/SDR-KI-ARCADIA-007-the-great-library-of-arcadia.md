@@ -32,11 +32,17 @@ The Library is "great" in the sense of scope: it does not specialise in a single
 
 The Library is organised into three pillars, each with a distinct scope and purpose:
 
-| Pillar         | Scope                                                                                                                                                     |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Philosophy** | The Knowledge Islands model: its structure, conventions, processes, activities, agents, and tools. The canonical definition of what Knowledge Islands is. |
-| **Aesthetics** | The design language of the Knowledge Islands system: visual identity, component library, isometric tile sets, maps, diagrams, and the logo.               |
-| **Technē**     | Technical knowledge: engineering conventions, infrastructure, tooling, and the technical substrate on which the islands run.                              |
+| Pillar         | Scope                                                                                  |
+| -------------- | -------------------------------------------------------------------------------------- |
+| **Philosophy** | The Knowledge Islands model †                                                          |
+| **Aesthetics** | The design language of the Knowledge Islands system ‡                                  |
+| **Technē**     | Technical knowledge: engineering conventions, infrastructure, tooling, and substrate § |
+
+† Its structure, conventions, processes, activities, agents, and tools. The canonical definition of what Knowledge Islands is.
+
+‡ Visual identity, component library, isometric tile sets, maps, diagrams, and the logo.
+
+§ The technical substrate on which the islands run.
 
 This structure reflects the three registers of any complex system: the governing model (Philosophy), the visible identity (Aesthetics), and the technical execution (Technē). Each pillar has its own conventions, its own depth, and its own audience - but they are held together because Arcadia governs all three.
 

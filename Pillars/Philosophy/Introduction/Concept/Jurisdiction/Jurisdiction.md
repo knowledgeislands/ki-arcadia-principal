@@ -14,11 +14,21 @@ At the territory level, jurisdiction flows through the principal island: it carr
 
 Three structural patterns define how jurisdiction is administered:
 
-| Pattern             | Description                                                                                                 | Typical use                                                   |
-| ------------------- | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| **Council**         | A group of members with shared ratification authority. Changes require council review and ratification.     | Collaborative or multi-governor islands; framework custodians |
-| **Single-governor** | One person governs alone. Ratification is informal - the governor decides.                                  | Personal or solo-run islands                                  |
-| **Joint-governor**  | Two or more people share governance without a formal council structure. Decisions are made collaboratively. | Small collaborative projects with a defined set of co-owners  |
+| Pattern | Description | Typical use § |
+| --- | --- | --- |
+| **Council** | A group of members with shared ratification authority. † | Collaborative or multi-governor islands ¶ |
+| **Single-governor** | One person governs alone; ratification is informal — the governor decides. | Personal or solo-run islands |
+| **Joint-governor** | Two or more people share governance without a formal council structure. ‡ | Small collaborative projects ‖ |
+
+† **Council** — changes require council review and ratification.
+
+‡ **Joint-governor** — decisions are made collaboratively.
+
+§ **Typical use** — the kind of island each pattern usually fits.
+
+¶ **Council, typical use** — collaborative or multi-governor islands; framework custodians.
+
+‖ **Joint-governor, typical use** — small collaborative projects with a defined set of co-owners.
 
 An island may evolve its governance pattern as it grows. The processes that enact governance remain consistent across patterns; only the ratification authority changes.
 

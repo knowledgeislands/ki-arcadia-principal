@@ -16,10 +16,12 @@ The island spans three physical locations. The text and binary stores mirror the
 
 ## Stores
 
-| Store          | Tool           | Path                                            | Purpose                                                                             |
-| -------------- | -------------- | ----------------------------------------------- | ----------------------------------------------------------------------------------- |
-| Working folder | Cowork         | `~/Documents/Claude/Projects/Knowledge Islands` | Temporary files Cowork generates before moving to a store or deleting once obsolete |
-| Text store     | Git / Obsidian | `~/kis/knowledgeislands/arcadia-principal`      | Markdown notes - version-controlled via Git                                         |
-| Binary store   | -              | Not yet defined                                 | Arcadia currently has no binary store                                               |
+| Store          | Tool           | Path                                            | Purpose                                     |
+| -------------- | -------------- | ----------------------------------------------- | ------------------------------------------- |
+| Working folder | Cowork         | `~/Documents/Claude/Projects/Knowledge Islands` | Temporary files Cowork generates †          |
+| Text store     | Git / Obsidian | `~/kis/knowledgeislands/arcadia-principal`      | Markdown notes - version-controlled via Git |
+| Binary store   | -              | Not yet defined                                 | Arcadia currently has no binary store       |
+
+† **Working folder purpose** — temporary files Cowork generates before moving to a store or deleting once obsolete.
 
 See [[Structure]] for the general store convention.

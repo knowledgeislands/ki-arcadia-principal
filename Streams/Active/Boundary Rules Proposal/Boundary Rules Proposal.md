@@ -73,11 +73,15 @@ A boundary rule is a **route entry**: `(content, target_path, severity)`.
 
 **Severity:**
 
-| Level | Meaning                                                                                                                                        |
-| ----- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| Hard  | Gate is closed. Flagged by maintenance scan; must be resolved by removal, relocation, or a more specific None entry with documented rationale. |
-| Soft  | Gate logs passage. Flagged by maintenance scan; an inline exception comment in the note clears it.                                             |
-| None  | Gate is open. Overrides a broader rule at a more specific target path, or makes an implicit permission explicit.                               |
+| Level | Meaning                                                                                                  |
+| ----- | -------------------------------------------------------------------------------------------------------- |
+| Hard  | Gate is closed. Flagged by maintenance scan; must be resolved by removal, relocation, or a None. †       |
+| Soft  | Gate logs passage. Flagged by maintenance scan; an inline exception comment in the note clears it.       |
+| None  | Gate is open. Overrides a broader rule at a more specific target path, or makes a permission explicit. ‡ |
+
+† Resolved by removal, relocation, or a more specific None entry with documented rationale.
+
+‡ Overrides a broader rule at a more specific target path, or makes an implicit permission explicit.
 
 ### Exception mechanism
 
@@ -87,26 +91,40 @@ For Soft violations that are intentionally retained, the note carrying the excep
 
 ### Rules table (draft)
 
-| Content                                                         | Target Path                            | Severity | Notes                                                                                  |
-| --------------------------------------------------------------- | -------------------------------------- | -------- | -------------------------------------------------------------------------------------- |
-| Internally-owned methodology or island knowledge                | `Resources`                            | Hard     | Belongs in Pillars; relocate if found                                                  |
-| External reference material (content that exists independently) | `Pillars`                              | Soft     | Primary record belongs in Resources; Pillars note may summarise or link                |
-| References to Pillars notes                                     | `Resources`                            | Hard     | Resources content exists independently of the island; it must not point inward         |
-| References to Resources notes                                   | `Pillars`                              | None     | Pillars may link outward to Resources freely                                           |
-| Named island entities (principals, citizens, organisations)     | `Pillars/Knowledge Islands`            | Hard     |                                                                                        |
-| Named island entities                                           | `Pillars/Philosophy/Admin/Governance`  | None     | KC is island-specific by design                                                        |
-| Arcadia as custodian of Knowledge Islands                       | `Pillars/Knowledge Islands`            | None     | One named exception; Arcadia may be named in this role                                 |
-| KC operational content                                          | `Pillars/Knowledge Islands`            | Hard     | Prevents bleed-back into the portable framework                                        |
-| KI framework content                                            | `Pillars/Admin/Governance`             | None     | KC may freely reference KI                                                             |
-| Named agents (specific tools, AI systems, automations)          | `Pillars/Philosophy/Model/Agents`      | Hard     |                                                                                        |
-| Named agents                                                    | `Pillars/Philosophy/Model/Activities`  | Soft     | Capability statements permitted; name only where no capability abstraction is possible |
-| Named agents                                                    | `Pillars/Admin/Governance/Agents`      | None     | KC agent config is inherently specific                                                 |
-| Named activities                                                | `Pillars/Philosophy/Model/Agents`      | Soft     |                                                                                        |
-| Named activities                                                | `Pillars/Admin/Governance/Agents`      | None     | KC agent config may list assigned activities                                           |
-| Specific tools or integrations                                  | `Pillars/Philosophy/Model/Conventions` | Hard     | Generic capability references permitted                                                |
-| Specific tools or integrations                                  | `Pillars/Philosophy/Model/Processes`   | Hard     |                                                                                        |
-| Specific tools or integrations                                  | `Pillars/Admin/Governance/Tools`       | None     | KC tools config is inherently specific                                                 |
-| KM/PKM/KB terminology                                           | `Pillars`                              | Soft     | Historical context permitted; document inline                                          |
+| Content | Target Path | Severity | Notes |
+| --- | --- | --- | --- |
+| Internally-owned methodology or island knowledge | `Resources` | Hard | Belongs in Pillars; relocate if found |
+| External reference material § | `Pillars` | Soft | Primary record belongs in Resources; may link ¶ |
+| References to Pillars notes | `Resources` | Hard | Resources content is independent; must not point inward ‖ |
+| References to Resources notes | `Pillars` | None | Pillars may link outward to Resources freely |
+| Named island entities †† | `Pillars/Knowledge Islands` | Hard |  |
+| Named island entities | `Pillars/Philosophy/Admin/Governance` | None | KC is island-specific by design |
+| Arcadia as custodian of Knowledge Islands | `Pillars/Knowledge Islands` | None | One named exception ‡‡ |
+| KC operational content | `Pillars/Knowledge Islands` | Hard | Prevents bleed-back into the portable framework |
+| KI framework content | `Pillars/Admin/Governance` | None | KC may freely reference KI |
+| Named agents §§ | `Pillars/Philosophy/Model/Agents` | Hard |  |
+| Named agents | `Pillars/Philosophy/Model/Activities` | Soft | Capability statements permitted ¶¶ |
+| Named agents | `Pillars/Admin/Governance/Agents` | None | KC agent config is inherently specific |
+| Named activities | `Pillars/Philosophy/Model/Agents` | Soft |  |
+| Named activities | `Pillars/Admin/Governance/Agents` | None | KC agent config may list assigned activities |
+| Specific tools or integrations | `Pillars/Philosophy/Model/Conventions` | Hard | Generic capability references permitted |
+| Specific tools or integrations | `Pillars/Philosophy/Model/Processes` | Hard |  |
+| Specific tools or integrations | `Pillars/Admin/Governance/Tools` | None | KC tools config is inherently specific |
+| KM/PKM/KB terminology | `Pillars` | Soft | Historical context permitted; document inline |
+
+§ External reference material (content that exists independently).
+
+¶ Primary record belongs in Resources; Pillars note may summarise or link.
+
+‖ Resources content exists independently of the island; it must not point inward.
+
+†† Named island entities (principals, citizens, organisations).
+
+‡‡ Arcadia may be named in this role.
+
+§§ Named agents (specific tools, AI systems, automations).
+
+¶¶ Name only where no capability abstraction is possible.
 
 ## Adherence
 

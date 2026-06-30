@@ -66,13 +66,15 @@ Streams notes track current status, progress, and next steps - they are not know
 
 `Calendar` contains several note types. Daily notes, meeting notes, session digests, and the monthly index are filed in the month folder and referenced from the daily note by wikilink; the daily note does not duplicate their content. Weekly notes are filed separately in a per-year `YYYY By Week/` folder alongside the month folders.
 
-| Note type      | Path pattern                    | Purpose                                                                                                        |
-| -------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| Daily note     | `YYYY-MM-DD DayName.md`         | The anchor for the day - links out to all other Calendar notes for that date                                   |
-| Meeting note   | `YYYY-MM-DD Meeting Name.md`    | Record of a specific meeting - one note per meeting                                                            |
-| Session digest | `YYYY-MM-DD Session - Topic.md` | Summary of a substantive AI-assisted work session                                                              |
-| Monthly index  | `YYYY-MM MonthName.md`          | Index note for the month - same name as the containing folder                                                  |
-| Weekly note    | `YYYY WXX.md`                   | Weekly note filed in the year's `YYYY By Week/` sibling folder (e.g. `Calendar/2026/2026 By Week/2026 W14.md`) |
+| Note type      | Path pattern                    | Purpose                                                                      |
+| -------------- | ------------------------------- | ---------------------------------------------------------------------------- |
+| Daily note     | `YYYY-MM-DD DayName.md`         | The anchor for the day - links out to all other Calendar notes for that date |
+| Meeting note   | `YYYY-MM-DD Meeting Name.md`    | Record of a specific meeting - one note per meeting                          |
+| Session digest | `YYYY-MM-DD Session - Topic.md` | Summary of a substantive AI-assisted work session                            |
+| Monthly index  | `YYYY-MM MonthName.md`          | Index note for the month - same name as the containing folder                |
+| Weekly note    | `YYYY WXX.md`                   | Weekly note filed in the year's `YYYY By Week/` sibling folder †             |
+
+† **Weekly note purpose** — weekly note filed in the year's `YYYY By Week/` sibling folder (e.g. `Calendar/2026/2026 By Week/2026 W14.md`).
 
 ### Routing Rules
 

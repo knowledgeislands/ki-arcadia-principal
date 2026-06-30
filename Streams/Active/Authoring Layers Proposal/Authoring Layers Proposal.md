@@ -88,34 +88,58 @@ Role-name mentions across the Pillars notes in scope, regenerated after the prom
 
 ## Phase Summary
 
-| Phase                            | Status         | Description                                                                                                                                                 |
-| -------------------------------- | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Authoring Guidelines restructure | 🔲 Not started | Restructure [[Authoring Guidelines]] so the layered framing is descriptive rather than enumerated; keep the lattice as the analytical heart                 |
-| Per-group index pass             | 🔲 Not started | Drop "in the Definition layer" / "in the Prompt layer" phrasing from each `Tools/Claude/Activities/*/*.md`; let the wikilink alone do the navigational work |
-| Capitalisation pass              | 🔲 Not started | Downgrade capitalised role names where they read as proper nouns ("the Prompt library" → "the prompt library")                                              |
-| Cross-check pass                 | 🔲 Not started | Read every touched note end-to-end to catch awkward phrasing introduced by mechanical replacement                                                           |
+| Phase                            | Status         | Description |
+| -------------------------------- | -------------- | ----------- |
+| Authoring Guidelines restructure | 🔲 Not started | †           |
+| Per-group index pass             | 🔲 Not started | ‡           |
+| Capitalisation pass              | 🔲 Not started | §           |
+| Cross-check pass                 | 🔲 Not started | ¶           |
+
+† Restructure [[Authoring Guidelines]] so the layered framing is descriptive rather than enumerated; keep the lattice as the analytical heart.
+
+‡ Drop "in the Definition layer" / "in the Prompt layer" phrasing from each `Tools/Claude/Activities/*/*.md`; let the wikilink alone do the navigational work.
+
+§ Downgrade capitalised role names where they read as proper nouns ("the Prompt library" → "the prompt library").
+
+¶ Read every touched note end-to-end to catch awkward phrasing introduced by mechanical replacement.
 
 ---
 
 ## Design Decisions
 
-| Decision                                                       | Rationale                                                                                                                                                                                                                                                                                                                 |
-| -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Keep the lattice visible in [[Authoring Guidelines]]           | The asymmetry of the cube (5 corners filled, 3 empty) is the analytical heart of the model and earns its place even after the layering becomes implicit                                                                                                                                                                   |
-| Make layering implicit elsewhere                               | The numbering and "five-layer model" framing read as scaffolding to readers who do not need to know the model exists; the role names carry enough meaning on their own                                                                                                                                                    |
-| Activities can be Claude-specific from the start               | Demonstrated by [[Philosophy/Model/Tools/Claude/Activities/Tending/Scheduled Task Audit\|Scheduled Task Audit]]: when an activity has no agent-agnostic content, it lives only at the Prompt layer with no Definition counterpart. The empty `agent-agnostic Definition` corner is a structural option, not a requirement |
-| Schedule, Invocation, and Useful Commands move with the Prompt | These sections describe how a prompt is invoked or supported, not what the activity is. Consolidating them on the Prompt side keeps the Definition focused on "what and why" and avoids duplicating runtime-adjacent detail across two notes                                                                              |
+| Decision                                                       | Rationale |
+| -------------------------------------------------------------- | --------- |
+| Keep the lattice visible in [[Authoring Guidelines]]           | ‖         |
+| Make layering implicit elsewhere                               | ††        |
+| Activities can be Claude-specific from the start               | ‡‡        |
+| Schedule, Invocation, and Useful Commands move with the Prompt | §§        |
+
+‖ The asymmetry of the cube (5 corners filled, 3 empty) is the analytical heart of the model and earns its place even after the layering becomes implicit.
+
+†† The numbering and "five-layer model" framing read as scaffolding to readers who do not need to know the model exists; the role names carry enough meaning on their own.
+
+‡‡ Demonstrated by [[Philosophy/Model/Tools/Claude/Activities/Tending/Scheduled Task Audit\|Scheduled Task Audit]]: when an activity has no agent-agnostic content, it lives only at the Prompt layer with no Definition counterpart. The empty `agent-agnostic Definition` corner is a structural option, not a requirement.
+
+§§ These sections describe how a prompt is invoked or supported, not what the activity is. Consolidating them on the Prompt side keeps the Definition focused on "what and why" and avoids duplicating runtime-adjacent detail across two notes.
 
 ---
 
 ## Open Issues
 
-| Issue                                                                                                         | Notes                                                                                                                                                                                                                                                                                                                                                                                                |
-| ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Whether to retain "in the Definition layer" pointers in per-group index notes                                 | The pointers were a navigational signpost; removing them risks readers who land cold losing context. Mitigation is wikilink quality and the lattice in Authoring Guidelines. Concrete target: nine notes carry this phrasing today                                                                                                                                                                   |
-| Whether to keep capitalised role names or downgrade to ordinary nouns                                         | "the Prompt library" reads as a proper noun; "the prompt library" reads as descriptive. The descriptive form is closer to implicit layering                                                                                                                                                                                                                                                          |
-| Convergence Check shared-notes list still references the deleted `Activities/Tending/Scheduled Task Audit.md` | The activity is now a Claude-specific Prompt note at `Tools/Claude/Activities/Tending/Scheduled Task Audit.md`. Per the existing convention, `Tools/Claude/Activities/` is "legitimately island-specific" and excluded from the shared-notes list - so the entry should be removed rather than relocated                                                                                             |
-| Frontmatter conventions for Prompt notes are inconsistent                                                     | Two patterns coexist: Conformance Prompt note uses `card/prompt` with `# X - Prompt` title and explicit `Definition: [[...]] Configuration: [[...]]` cross-link; the newly migrated Prompt notes use `card/note` with a plain `# X` title and no cross-link. Captured for review in [[Streams/Background/Reading Order/Reading Order\|Reading Order]] - decision will affect the capitalisation pass |
+| Issue                                                                                                         | Notes |
+| ------------------------------------------------------------------------------------------------------------- | ----- |
+| Whether to retain "in the Definition layer" pointers in per-group index notes                                 | ¶¶    |
+| Whether to keep capitalised role names or downgrade to ordinary nouns                                         | ‖‖    |
+| Convergence Check shared-notes list still references the deleted `Activities/Tending/Scheduled Task Audit.md` | ※     |
+| Frontmatter conventions for Prompt notes are inconsistent                                                     | ❡     |
+
+¶¶ The pointers were a navigational signpost; removing them risks readers who land cold losing context. Mitigation is wikilink quality and the lattice in Authoring Guidelines. Concrete target: nine notes carry this phrasing today.
+
+‖‖ "the Prompt library" reads as a proper noun; "the prompt library" reads as descriptive. The descriptive form is closer to implicit layering.
+
+※ The activity is now a Claude-specific Prompt note at `Tools/Claude/Activities/Tending/Scheduled Task Audit.md`. Per the existing convention, `Tools/Claude/Activities/` is "legitimately island-specific" and excluded from the shared-notes list - so the entry should be removed rather than relocated.
+
+❡ Two patterns coexist: Conformance Prompt note uses `card/prompt` with `# X - Prompt` title and explicit `Definition: [[...]] Configuration: [[...]]` cross-link; the newly migrated Prompt notes use `card/note` with a plain `# X` title and no cross-link. Captured for review in [[Streams/Background/Reading Order/Reading Order\|Reading Order]] - decision will affect the capitalisation pass.
 
 ## Adherence
 

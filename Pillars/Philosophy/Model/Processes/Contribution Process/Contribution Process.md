@@ -41,10 +41,14 @@ Knowledge that remains specific to a contributing archipelago does not belong in
 
 ## Customs Rules in Practice
 
-| Situation                                                                            | Rule                                                                                |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
-| Copying governance content to a new archipelago                                      | Allowed freely; copy at a known version, note the version in the new island         |
-| Proposing a change to the Knowledge Islands model                                    | Requires council membership; enters Enactment Process at `draft`                    |
-| Referencing the Knowledge Islands model from another archipelago                     | Allowed; use a wikilink noting the source                                           |
-| A Visitor identifying a gap in the Knowledge Islands model                           | Welcome informally; a council member must carry the formal proposal                 |
-| Knowledge Islands model content becoming outdated due to an archipelago's experience | Log as an open question or Stream; propose the update through the Enactment Process |
+| Situation                                                        | Rule                                                             |
+| ---------------------------------------------------------------- | ---------------------------------------------------------------- |
+| Copying governance content to a new archipelago                  | Allowed freely †                                                 |
+| Proposing a change to the Knowledge Islands model                | Requires council membership; enters Enactment Process at `draft` |
+| Referencing the Knowledge Islands model from another archipelago | Allowed; use a wikilink noting the source                        |
+| A Visitor identifying a gap in the Knowledge Islands model       | Welcome informally; a council member must carry the proposal     |
+| KI model content outdated by an archipelago's experience         | Log as an open question or Stream ‡                              |
+
+† **Copying governance content rule** — allowed freely; copy at a known version, and note the version in the new island.
+
+‡ **Outdated-content rule** — log as an open question or Stream; propose the update through the Enactment Process.

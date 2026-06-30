@@ -47,6 +47,8 @@ These notes must remain byte-for-byte identical. Any difference is drift to be r
 
 These notes are intentionally different between islands. Do not flag differences here as drift - verify only that the correct version is internally consistent.
 
-| Note                                 | Why it differs                                                                                       |
-| ------------------------------------ | ---------------------------------------------------------------------------------------------------- |
-| `Knowledge Capital/` (entire folder) | Identity, skill name, task prefix, integrations, routing rules, and canonical notes list - by design |
+| Note                                 | Why it differs                                                  |
+| ------------------------------------ | --------------------------------------------------------------- |
+| `Knowledge Capital/` (entire folder) | Island-specific identity and conventions, different by design † |
+
+† **`Knowledge Capital/` — why it differs** — identity, skill name, task prefix, integrations, routing rules, and canonical notes list, all island-specific by design.

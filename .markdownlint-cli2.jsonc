@@ -25,11 +25,18 @@
     // MD036 - bold as heading: disabled. Scenario labels in e2e-scenarios.md and
     // audit steps in process-audit.md use bold intentionally as visual labels,
     // not as structural headings.
-    "MD036": false
+    "MD036": false,
+
+    // MD060 - table column style: disabled. Prettier owns table formatting; it
+    // emits the "compact" form (single-space cells, `|  |` for empties) for tables
+    // wider than printWidth, which MD060 flags. The KB has legitimately wide tables
+    // (multi-column stream dashboards, code-span path matrices) that cannot fit and
+    // so are compacted by Prettier - let the formatter own column style.
+    "MD060": false
   },
 
-  // Globs to lint.
-  "globs": ["src/**/*.md", "docs/**/*.md", "README.md"],
+  // Globs to lint. Covers the whole vault so KB notes are rule-checked, not just src/docs.
+  "globs": ["**/*.md"],
 
   // Never lint generated output or dependencies.
   "ignores": ["dist/**", "node_modules/**"]

@@ -19,14 +19,24 @@ Identified during the Admin normalisation session (June 2026, GDR-KI-ARCADIA-003
 
 ## Extraction Candidates
 
-| Pattern                                                                                       | Current status in skills                                                                                             | Suggested extraction                                                                                                 |
-| --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| Admin zone structure (Governance/Operations arms)                                             | `knowledgeislands-kb` declares zones; no skill governs the arm structure or what belongs in each arm                 | Extend `knowledgeislands-kb` or new `knowledgeislands-admin` skill                                                   |
-| Activity system (naming convention, `[Group] [Name] Activity.md`, Activities.md index)        | Activity type declared in `admin/operations/activity`; no skill governs file naming or the index format              | New `knowledgeislands-activities` or extend `knowledgeislands-kb`                                                    |
-| Charter + Conformance baseline                                                                | No skill - only implied by SDR-003 and SDR-005 in Arcadia; kit-legal implemented independently                       | Extend `knowledgeislands-kb` with a bootstrap checker that validates a new island's Charter has the mandatory fields |
-| Live artifacts (`.md` + `.html` pairs)                                                        | No skill - kit-legal pattern only                                                                                    | New `knowledgeislands-live-artifacts`                                                                                |
-| Note templates system                                                                         | Template type declared; no skill governs the template structure or the `Admin/Governance/Note Templates/` convention | Extend `knowledgeislands-kb`                                                                                         |
-| Conventions zone sub-folders (Admin Conventions/, Pillars Conventions/, Streams Conventions/) | No skill                                                                                                             | Extend `knowledgeislands-kb` CONFORM mode                                                                            |
+| Pattern                          | Current status in skills          | Suggested extraction                  |
+| -------------------------------- | --------------------------------- | ------------------------------------- |
+| Admin zone structure             | †                                 | †                                     |
+| Activity system ‡                | ‡                                 | ‡                                     |
+| Charter + Conformance baseline   | §                                 | §                                     |
+| Live artifacts (`.md` + `.html`) | No skill - kit-legal pattern only | New `knowledgeislands-live-artifacts` |
+| Note templates system            | ¶                                 | Extend `knowledgeislands-kb`          |
+| Conventions zone sub-folders ‖   | No skill                          | ‖                                     |
+
+† **Pattern:** Admin zone structure (Governance/Operations arms). **Current status in skills:** `knowledgeislands-kb` declares zones; no skill governs the arm structure or what belongs in each arm. **Suggested extraction:** Extend `knowledgeislands-kb` or new `knowledgeislands-admin` skill.
+
+‡ **Pattern:** Activity system (naming convention, `[Group] [Name] Activity.md`, Activities.md index). **Current status in skills:** Activity type declared in `admin/operations/activity`; no skill governs file naming or the index format. **Suggested extraction:** New `knowledgeislands-activities` or extend `knowledgeislands-kb`.
+
+§ **Current status in skills:** No skill - only implied by SDR-003 and SDR-005 in Arcadia; kit-legal implemented independently. **Suggested extraction:** Extend `knowledgeislands-kb` with a bootstrap checker that validates a new island's Charter has the mandatory fields.
+
+¶ **Current status in skills:** Template type declared; no skill governs the template structure or the `Admin/Governance/Note Templates/` convention.
+
+‖ **Pattern:** Conventions zone sub-folders (Admin Conventions/, Pillars Conventions/, Streams Conventions/). **Suggested extraction:** Extend `knowledgeislands-kb` CONFORM mode.
 
 ---
 
