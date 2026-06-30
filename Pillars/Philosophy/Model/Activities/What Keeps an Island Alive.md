@@ -11,31 +11,21 @@ author: Written with Claude
 
 ## Overview
 
-Routine maintenance keeps the island accurate, well-structured, and free of stale content. Activities are either scheduled (time-driven,
-autonomous) or conversational (chat-triggered, human-in-the-loop). Together they implement the maintenance cycle that prevents the island
-from drifting from the world it reflects.
+Routine maintenance keeps the island accurate, well-structured, and free of stale content. Activities are either scheduled (time-driven, autonomous) or conversational (chat-triggered, human-in-the-loop). Together they implement the maintenance cycle that prevents the island from drifting from the world it reflects.
 
-Activities divide into two categories. **Constitutional** activities are required of any island adopting Knowledge Islands and cannot be
-vetoed - they define the baseline that makes an island valid. All other groups are **adoptable**: each territory must take an explicit
-position on each group (adopted or vetoed), with no unknowns permitted. The island's [[Admin/Governance/Charter|Charter]] is the
-authoritative record of adoption decisions.
+Activities divide into two categories. **Constitutional** activities are required of any island adopting Knowledge Islands and cannot be vetoed - they define the baseline that makes an island valid. All other groups are **adoptable**: each territory must take an explicit position on each group (adopted or vetoed), with no unknowns permitted. The island's [[Admin/Governance/Charter|Charter]] is the authoritative record of adoption decisions.
 
-The content here covers what each activity does and why. The prompts that drive them - Claude-specific and island-specific - live in
-[[Claude/Activities/Activities|Tools/Claude/Activities]]. For the content layers and prompt authoring conventions, see
-[[Authoring Guidelines]].
+The content here covers what each activity does and why. The prompts that drive them - Claude-specific and island-specific - live in [[Claude/Activities/Activities|Tools/Claude/Activities]]. For the content layers and prompt authoring conventions, see [[Authoring Guidelines]].
 
 ---
 
 ## Authoring Guidelines
 
-Authoring Guidelines documents the content layers for activity prompts and the conventions for writing, updating, and layering them. It is
-the prerequisite for anyone working with the Prompt notes in Tools/Claude/Activities, and the reference for understanding how a generic
-activity note and an island-specific prompt relate to each other.
+Authoring Guidelines documents the content layers for activity prompts and the conventions for writing, updating, and layering them. It is the prerequisite for anyone working with the Prompt notes in Tools/Claude/Activities, and the reference for understanding how a generic activity note and an island-specific prompt relate to each other.
 
 ## Constitutional
 
-The constitutional baseline required of any Knowledge Island. Not subject to the adoption framework - these activities define what it means
-to be a Knowledge Island at all.
+The constitutional baseline required of any Knowledge Island. Not subject to the adoption framework - these activities define what it means to be a Knowledge Island at all.
 
 | Activity                                                     | Type      | When                    | Summary                                                                                                                                     |
 | ------------------------------------------------------------ | --------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -45,8 +35,7 @@ to be a Knowledge Island at all.
 
 ## Tending
 
-Activities that keep the island structurally sound, content-healthy, and free of stale or orphaned material - spanning daily automations
-through to weekly reviews and deeper adhoc audits.
+Activities that keep the island structurally sound, content-healthy, and free of stale or orphaned material - spanning daily automations through to weekly reviews and deeper adhoc audits.
 
 | Activity                 | Type           | When                      | Summary                                                                                                              |
 | ------------------------ | -------------- | ------------------------- | -------------------------------------------------------------------------------------------------------------------- |

@@ -10,8 +10,7 @@ author: Written with Claude
 
 ## Overview
 
-Dormant streams are projects that are on hold indefinitely - not abandoned, but not being actively pursued. They are retained in case
-circumstances change and the project becomes relevant again.
+Dormant streams are projects that are on hold indefinitely - not abandoned, but not being actively pursued. They are retained in case circumstances change and the project becomes relevant again.
 
 ---
 

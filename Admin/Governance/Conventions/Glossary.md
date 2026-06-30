@@ -10,8 +10,7 @@ author: Written with Claude
 
 ## Overview
 
-A reference for Knowledge Islands terminology - concepts, acronyms, and structural terms used across Arcadia and the wider archipelago
-system.
+A reference for Knowledge Islands terminology - concepts, acronyms, and structural terms used across Arcadia and the wider archipelago system.
 
 ---
 
@@ -29,8 +28,7 @@ system.
 | Known Lands           | A map of known islands held in an island - Arcadia's is the canonical objective record; each principal's own island holds a personal navigator's chart                      |
 | Capital               | The seat of governance for a jurisdiction. Held by the principal island of a territory. Charter and Council are its required elements, both residing in `Admin/Governance`. |
 
-† A territory may contain one or more archipelagos; an archipelago may span multiple territories. The boundary rule (customs vs. free
-knowledge flow) determines territory; proximity and shared character determine archipelago.
+† A territory may contain one or more archipelagos; an archipelago may span multiple territories. The boundary rule (customs vs. free knowledge flow) determines territory; proximity and shared character determine archipelago.
 
 ---
 
@@ -60,8 +58,7 @@ knowledge flow) determines territory; proximity and shared character determine a
 
 ## Other Planes of Existence
 
-Knowledge Islands is not the only model of knowledge organisation. Other systems - wikis, drives, legacy vaults, corporate intranets - exist
-as **Planes of Existence**: parallel worlds of knowledge that operate independently of the KI model.
+Knowledge Islands is not the only model of knowledge organisation. Other systems - wikis, drives, legacy vaults, corporate intranets - exist as **Planes of Existence**: parallel worlds of knowledge that operate independently of the KI model.
 
 | Term                | Meaning                                                                                                                                            |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |

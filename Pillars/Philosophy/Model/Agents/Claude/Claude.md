@@ -12,27 +12,21 @@ author: Written with Claude
 
 ## Overview
 
-The Claude agent layer - how Claude operates as an agent within the island. This covers Claude's operating modes, behavioural constraints,
-and memory model, viewed as an agent rather than as a configured tool. Claude is the current implementation of the general [[Agentic AI]]
-patterns documented in this island's operating layer.
+The Claude agent layer - how Claude operates as an agent within the island. This covers Claude's operating modes, behavioural constraints, and memory model, viewed as an agent rather than as a configured tool. Claude is the current implementation of the general [[Agentic AI]] patterns documented in this island's operating layer.
 
-For Cowork integration specifics - connection type, token economics, platform configuration layers, and live artifacts - see
-[[Tools/Claude/Claude|Tools → Claude]].
+For Cowork integration specifics - connection type, token economics, platform configuration layers, and live artifacts - see [[Tools/Claude/Claude|Tools → Claude]].
 
 ---
 
 ## Operating Modes
 
-Claude operates in five modes that define its structured repertoire for knowledge work - each maps a type of intent to a defined sequence of
-actions. The skill name and trigger phrases are defined in [[Knowledge Capital/Charter|Charter]].
+Claude operates in five modes that define its structured repertoire for knowledge work - each maps a type of intent to a defined sequence of actions. The skill name and trigger phrases are defined in [[Knowledge Capital/Charter|Charter]].
 
 ### Load Island Context
 
-`CLAUDE.md` is loaded automatically as project context - it is the complete authority on island structure, note format, routing rules,
-tagging conventions, pre-flight checks, and British English. No explicit read is required. Follow it precisely for all operations.
+`CLAUDE.md` is loaded automatically as project context - it is the complete authority on island structure, note format, routing rules, tagging conventions, pre-flight checks, and British English. No explicit read is required. Follow it precisely for all operations.
 
-When an operation needs integration configuration (MCP tools, project IDs, calendar sources), read the relevant note from
-`Pillars/Knowledge Capital/` - do not hardcode tool identifiers or project IDs. See [[Knowledge Capital]] for the full index.
+When an operation needs integration configuration (MCP tools, project IDs, calendar sources), read the relevant note from `Pillars/Knowledge Capital/` - do not hardcode tool identifiers or project IDs. See [[Knowledge Capital]] for the full index.
 
 ### Determine Mode
 
@@ -67,18 +61,15 @@ Infer the mode from the request, or ask if unclear:
 
 #### Mode E: Digest - session digest
 
-1. Create a sibling Calendar note (`YYYY-MM-DD Session - [Topic].md`) following the Session Digests format in CLAUDE.md. Reference it from
-   today's daily note by wikilink - do not write digest content inline into the daily note
+1. Create a sibling Calendar note (`YYYY-MM-DD Session - [Topic].md`) following the Session Digests format in CLAUDE.md. Reference it from today's daily note by wikilink - do not write digest content inline into the daily note
 2. If today's daily note doesn't exist, create it first using `Pillars/Philosophy/Model/Tools/Obsidian/Templates/Calendar - Daily.md`
-3. Session notes are temporary - see CLAUDE.md (Session Digests section) for the full lifecycle: once a note's content has been extracted to
-   Pillars or Streams, delete the session note
+3. Session notes are temporary - see CLAUDE.md (Session Digests section) for the full lifecycle: once a note's content has been extracted to Pillars or Streams, delete the session note
 
 ---
 
 ## Behavioural Constraints
 
-Behavioural expectations for Claude when working with this island. These apply regardless of who is using the island - they are not personal
-style preferences but operating conventions for the AI layer.
+Behavioural expectations for Claude when working with this island. These apply regardless of who is using the island - they are not personal style preferences but operating conventions for the AI layer.
 
 ### What Claude Should Do
 
@@ -102,53 +93,40 @@ style preferences but operating conventions for the AI layer.
 - American spellings (analyze, color, recognize, etc.)
 - Long, winding compound sentences with multiple subordinate clauses
 - Starting every response with the same opener (e.g. "Great question!")
-- Phrases that frame honesty or transparency as a deliberate act - "to be honest", "I should be transparent", "I'll be candid" - these imply
-  the alternative and unnecessarily anthropomorphise. State things directly.
+- Phrases that frame honesty or transparency as a deliberate act - "to be honest", "I should be transparent", "I'll be candid" - these imply the alternative and unnecessarily anthropomorphise. State things directly.
 
 ---
 
 ## Release Targets
 
-Some artefacts Claude maintains in this island have a deployed counterpart - a Cowork scheduled task, a live artifact, or similar. The
-island note (or source file) is the draft; the deployed surface is the release target. Apply changes to the source freely; refresh the
-release surface in batches.
+Some artefacts Claude maintains in this island have a deployed counterpart - a Cowork scheduled task, a live artifact, or similar. The island note (or source file) is the draft; the deployed surface is the release target. Apply changes to the source freely; refresh the release surface in batches.
 
 - Edit the source freely - treat it as the draft. As many iterations as needed.
-- Do **not** call `update_scheduled_task` (or its equivalent for live artifacts) after every edit. The release surface is a target, not a
-  live editor.
-- Push accumulated changes to the release target when the user signals readiness: _"push it"_, _"sync the task"_, _"ready to run"_, or
-  equivalent.
+- Do **not** call `update_scheduled_task` (or its equivalent for live artifacts) after every edit. The release surface is a target, not a live editor.
+- Push accumulated changes to the release target when the user signals readiness: _"push it"_, _"sync the task"_, _"ready to run"_, or equivalent.
 - At the end of any session where source changes were made without a push, flag that the push is still pending.
 
-Pushing every small edit wastes API calls, creates noisy scheduler or deployment state, and risks a half-baked release running if a schedule
-fires (or another consumer reads the artifact) mid-iteration.
+Pushing every small edit wastes API calls, creates noisy scheduler or deployment state, and risks a half-baked release running if a schedule fires (or another consumer reads the artifact) mid-iteration.
 
 ---
 
 ## Live Artifact Patterns
 
-Recurring design decisions for Cowork HTML artifacts - self-contained pages that re-fetch data via `window.cowork.callMcpTool` on every
-open. Derived from the [[Live Artifacts]] collection.
+Recurring design decisions for Cowork HTML artifacts - self-contained pages that re-fetch data via `window.cowork.callMcpTool` on every open. Derived from the [[Live Artifacts]] collection.
 
 ### Live Artifact Baseline
 
 Structural rules that apply to every Cowork HTML artifact:
 
 - **Light-mode only.** `:root { color-scheme: light }`. Cowork's artifact chrome is light; dark-mode CSS adds complexity with no benefit.
-- **No browser storage.** `localStorage` and `sessionStorage` are not reliably available in the artifact sandbox. All state lives in JS
-  variables for the duration of the load.
-- **Inline all CSS and JS; no external fetches.** The artifact must be self-contained. External CDN links introduce network dependencies and
-  potential load failures.
-- **Error banner on top-level `.catch`.** Wrap the entire fetch-and-render flow in a try/catch (or `.catch` on the top-level promise). On
-  failure, replace the content area with a visible red banner carrying the thrown message - a broken MCP connector must be diagnosable
-  without opening DevTools.
-- **Verification surface.** Include a footer or meta line showing generated-at timestamp, entity counts, and any tool errors. This is the
-  target for the reload-and-check step after any update - both mechanics can succeed silently while leaving the artifact in a broken state.
+- **No browser storage.** `localStorage` and `sessionStorage` are not reliably available in the artifact sandbox. All state lives in JS variables for the duration of the load.
+- **Inline all CSS and JS; no external fetches.** The artifact must be self-contained. External CDN links introduce network dependencies and potential load failures.
+- **Error banner on top-level `.catch`.** Wrap the entire fetch-and-render flow in a try/catch (or `.catch` on the top-level promise). On failure, replace the content area with a visible red banner carrying the thrown message - a broken MCP connector must be diagnosable without opening DevTools.
+- **Verification surface.** Include a footer or meta line showing generated-at timestamp, entity counts, and any tool errors. This is the target for the reload-and-check step after any update - both mechanics can succeed silently while leaving the artifact in a broken state.
 
 ### Parallel MCP Fetch
 
-When an artifact needs data from multiple endpoints or must fan out across repeated calls against the same endpoint, use `Promise.all`
-rather than sequential awaits:
+When an artifact needs data from multiple endpoints or must fan out across repeated calls against the same endpoint, use `Promise.all` rather than sequential awaits:
 
 ````js
 const results = await Promise.all(SOURCES.map((src) => window.cowork.callMcpTool(TOOL, { ...src })))

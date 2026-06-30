@@ -9,8 +9,7 @@ status: background
 
 # Conventions: Make Implicit Explicit
 
-Systematically identify conventions in arcadia-principal that are asserted without documented rationale, and add the _why_ alongside the
-_what_ for each one.
+Systematically identify conventions in arcadia-principal that are asserted without documented rationale, and add the _why_ alongside the _what_ for each one.
 
 ## Governance
 
@@ -22,14 +21,12 @@ Follows the [[Philosophy/Model/Processes/Enactment Process|Enactment Process]].
 
 Several structural conventions are in active use but have no rationale written down:
 
-- **Digest routing**: digests go to `-/_DIGESTS/` (produced artefacts, not work-in-motion), but this is codified without explanation. The
-  `session-digest` type is not in the frontmatter type taxonomy at all.
+- **Digest routing**: digests go to `-/_DIGESTS/` (produced artefacts, not work-in-motion), but this is codified without explanation. The `session-digest` type is not in the frontmatter type taxonomy at all.
 - **Staging zone distinctions**: the `+/` and `-/` staging zones have meaning, but the rules for what goes where and why are implicit.
 - **Stream status vocabulary** (`future`, `background`, `active`, `ratified`): the progression is used but not formally defined.
 - Others may surface as the island is used more systematically by agents.
 
-The risk is that these conventions become load-bearing infrastructure that no one can safely change or explain. Each one that gets an
-_explicit_ rationale becomes a decision that can be revisited, extended, and correctly applied.
+The risk is that these conventions become load-bearing infrastructure that no one can safely change or explain. Each one that gets an _explicit_ rationale becomes a decision that can be revisited, extended, and correctly applied.
 
 ## Scope
 
@@ -42,8 +39,7 @@ For each identified convention:
 
 ## Sequencing
 
-Background priority. Work starts when the Agentic Tool Documentation stream is ratified — that stream is the simpler first pass and will
-surface additional conventions that need rationale.
+Background priority. Work starts when the Agentic Tool Documentation stream is ratified — that stream is the simpler first pass and will surface additional conventions that need rationale.
 
 ## Tracking
 

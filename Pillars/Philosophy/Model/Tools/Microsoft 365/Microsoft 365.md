@@ -11,9 +11,7 @@ status: current - June 2026
 
 # Microsoft 365
 
-Microsoft 365 integration via the Knowledge Islands `mcp-m365` server — a bespoke MCP built and maintained in this workspace, published as
-`@knowledgeislands/mcp-m365`. It provides full Outlook (email, calendar, folders, rules) and OneDrive coverage via Microsoft Graph, with
-standalone OAuth 2.0 handling.
+Microsoft 365 integration via the Knowledge Islands `mcp-m365` server — a bespoke MCP built and maintained in this workspace, published as `@knowledgeislands/mcp-m365`. It provides full Outlook (email, calendar, folders, rules) and OneDrive coverage via Microsoft Graph, with standalone OAuth 2.0 handling.
 
 ## Tools
 
@@ -86,7 +84,6 @@ Requires an Azure App Registration with the relevant Microsoft Graph scopes.
 1. Register an app in Azure Portal; add `http://localhost:3333/auth/callback` as a redirect URI.
 2. Set `MCP_M365_CLIENT_ID` and `MCP_M365_CLIENT_SECRET` in the MCP environment (or `.env.development`).
 3. Run the auth server: `bun run ki:server:auth:dev` (listens on `localhost:3333`).
-4. Call `m365_auth_start` in Claude — it returns a URL; open it, sign in, and grant consent. Tokens are cached at `~/.mcp-m365-tokens.json`
-   and refreshed transparently.
+4. Call `m365_auth_start` in Claude — it returns a URL; open it, sign in, and grant consent. Tokens are cached at `~/.mcp-m365-tokens.json` and refreshed transparently.
 
 Connection details live in [[Integrations]].

@@ -11,12 +11,9 @@ author: Written with Claude
 
 ## Overview
 
-Knowledge on the island does not live in one place. It exists across three tiers depending on its maturity, purpose, and who needs to access
-it. The Library is the authoritative store - durable, structured, version-controlled, permanent. But agents also carry working knowledge in
-their own memory: operational shorthand, session observations, patterns not yet stable enough for the Library.
+Knowledge on the island does not live in one place. It exists across three tiers depending on its maturity, purpose, and who needs to access it. The Library is the authoritative store - durable, structured, version-controlled, permanent. But agents also carry working knowledge in their own memory: operational shorthand, session observations, patterns not yet stable enough for the Library.
 
-These tiers are complementary, not competing. The Library is what the knowledge _is_; agent memory is how it is _accessed_ efficiently.
-Understanding where knowledge resides determines how it is maintained, when it is promoted, and when it can be discarded.
+These tiers are complementary, not competing. The Library is what the knowledge _is_; agent memory is how it is _accessed_ efficiently. Understanding where knowledge resides determines how it is maintained, when it is promoted, and when it can be discarded.
 
 ---
 

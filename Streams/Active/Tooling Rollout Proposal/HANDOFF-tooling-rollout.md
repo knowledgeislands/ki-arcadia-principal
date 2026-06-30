@@ -34,5 +34,4 @@ Start **Phase 1: Prompt sync audit**.
 - Cross-reference against the Cowork scheduled task list.
 - Log any gaps.
 
-Also worth noting: the `HANDOFF-capital-terminology.md` in the Knowledge Capital Extraction Proposal suggests that proposal may now be
-closeable (the work was absorbed by GDR-KI-ARCADIA-003). Consider settling it as complete before opening new streams.
+Also worth noting: the `HANDOFF-capital-terminology.md` in the Knowledge Capital Extraction Proposal suggests that proposal may now be closeable (the work was absorbed by GDR-KI-ARCADIA-003). Consider settling it as complete before opening new streams.

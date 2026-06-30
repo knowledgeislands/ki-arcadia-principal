@@ -6,8 +6,7 @@ author: Claude
 
 # Session Digest
 
-A session digest is a produced artefact that documents an AI-assisted work session. It is **not a Calendar note** — it does not represent a
-time-stamped record to keep; it is an output to extract from and then discard. It lives in outbound staging under `-/_DIGESTS/`.
+A session digest is a produced artefact that documents an AI-assisted work session. It is **not a Calendar note** — it does not represent a time-stamped record to keep; it is an output to extract from and then discard. It lives in outbound staging under `-/_DIGESTS/`.
 
 ## Filing
 
@@ -28,7 +27,6 @@ Five sections, all required:
 
 ## Lifecycle
 
-Session digests are ephemeral by design. Once their content is extracted into Pillars or Streams notes, or passed on as a `-/_HANDOFFS/`
-note, the digest can be deleted.
+Session digests are ephemeral by design. Once their content is extracted into Pillars or Streams notes, or passed on as a `-/_HANDOFFS/` note, the digest can be deleted.
 
 Test: if you deleted this note today, would knowledge be lost? If yes, extract first. If no, delete.

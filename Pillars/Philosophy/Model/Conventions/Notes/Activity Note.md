@@ -12,8 +12,7 @@ author: Written with Claude
 
 ## Overview
 
-Defines the delta from [[Notes]] for activity notes - notes that document what an island activity does and why. These live under
-`Activities/{group}/` and are agent-agnostic: they describe the activity, not the prompt or implementation.
+Defines the delta from [[Notes]] for activity notes - notes that document what an island activity does and why. These live under `Activities/{group}/` and are agent-agnostic: they describe the activity, not the prompt or implementation.
 
 ---
 
@@ -40,8 +39,7 @@ Optional (add when relevant):
 
 ### Optional sections
 
-- **Prompt** - the executable prompt, when it lives here rather than in a separate Prompt note. Use for lightweight activities; for
-  substantial prompts, omit this section and link to the prompt note instead
+- **Prompt** - the executable prompt, when it lives here rather than in a separate Prompt note. Use for lightweight activities; for substantial prompts, omit this section and link to the prompt note instead
 - **Known Limitations** - documented constraints on what the automation can and cannot do with current tooling
 
 ---

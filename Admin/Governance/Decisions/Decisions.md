@@ -5,13 +5,9 @@ status: current - June 2026
 
 # Decision Records — Arcadia
 
-Decision Records (DRs) capture significant standalone decisions made within the Knowledge Islands model as instantiated by Arcadia. DRs use
-the Nygard five-section format (Context, Decision, Consequences) with a `decision_type` taxonomy. Each type has its own prefix and its own
-serial sequence within the `KI-ARCADIA` scope.
+Decision Records (DRs) capture significant standalone decisions made within the Knowledge Islands model as instantiated by Arcadia. DRs use the Nygard five-section format (Context, Decision, Consequences) with a `decision_type` taxonomy. Each type has its own prefix and its own serial sequence within the `KI-ARCADIA` scope.
 
-Not every change warrants a DR. DRs record decisions with standalone standing: significant structural choices, adopted instruments, and
-cross-repo commitments. Trivial or implementation-only changes do not need one. A DR is an immutable record — once `Accepted`, it is not
-edited; it is superseded.
+Not every change warrants a DR. DRs record decisions with standalone standing: significant structural choices, adopted instruments, and cross-repo commitments. Trivial or implementation-only changes do not need one. A DR is an immutable record — once `Accepted`, it is not edited; it is superseded.
 
 Rows are ordered by reveal order — the logical sequence in which the decisions build on one another.
 

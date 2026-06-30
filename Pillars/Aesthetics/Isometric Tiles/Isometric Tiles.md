@@ -11,12 +11,9 @@ author: Written with Claude
 
 ## Overview
 
-The Isometric Tiles are a modular asset set for constructing map-like visual representations of Knowledge Islands territories,
-architectures, and systems. Tiles are designed on a consistent isometric grid so that they compose cleanly into larger scenes - individual
-islands, full archipelagos, or abstract system maps.
+The Isometric Tiles are a modular asset set for constructing map-like visual representations of Knowledge Islands territories, architectures, and systems. Tiles are designed on a consistent isometric grid so that they compose cleanly into larger scenes - individual islands, full archipelagos, or abstract system maps.
 
-The set covers terrain, structures, connectors, and props at multiple scales, and includes guidance on seamless edges, water alignment,
-height layers, and grid composition.
+The set covers terrain, structures, connectors, and props at multiple scales, and includes guidance on seamless edges, water alignment, height layers, and grid composition.
 
 ---
 

@@ -11,8 +11,7 @@ author: Written with Claude
 
 ## Overview
 
-Tags follow a hierarchical `namespace/value` pattern and are defined as a superset across all islands - not every tag will be relevant to
-every island. Island-specific tag extensions live in Knowledge Capital.
+Tags follow a hierarchical `namespace/value` pattern and are defined as a superset across all islands - not every tag will be relevant to every island. Island-specific tag extensions live in Knowledge Capital.
 
 ---
 

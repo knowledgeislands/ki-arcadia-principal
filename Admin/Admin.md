@@ -10,9 +10,7 @@ author: Written with Claude
 
 ## Overview
 
-`Admin` is the governance and operations zone — one of the five canonical Knowledge Islands zones (`Calendar`, `Pillars`, `Resources`,
-`Streams`, `Admin`). It holds everything that defines what this island is and how it runs, migrated from Knowledge Capital per
-[[Admin/Governance/Decisions/GDR-KI-ARCADIA-003-admin-governance-operations|GDR-KI-ARCADIA-003]].
+`Admin` is the governance and operations zone — one of the five canonical Knowledge Islands zones (`Calendar`, `Pillars`, `Resources`, `Streams`, `Admin`). It holds everything that defines what this island is and how it runs, migrated from Knowledge Capital per [[Admin/Governance/Decisions/GDR-KI-ARCADIA-003-admin-governance-operations|GDR-KI-ARCADIA-003]].
 
 ## Structure
 

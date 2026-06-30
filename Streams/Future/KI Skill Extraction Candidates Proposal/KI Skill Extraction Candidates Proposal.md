@@ -11,9 +11,7 @@ author: Written with Claude
 
 ## Overview
 
-Several patterns are implemented independently in both `arcadia-principal` and `kit-legal`, with no corresponding `knowledgeislands-*` skill
-to govern them. Any new island that adopts Knowledge Islands would need to re-implement these patterns from scratch. This stream captures
-the extraction candidates - patterns that warrant codification as portable skills.
+Several patterns are implemented independently in both `arcadia-principal` and `kit-legal`, with no corresponding `knowledgeislands-*` skill to govern them. Any new island that adopts Knowledge Islands would need to re-implement these patterns from scratch. This stream captures the extraction candidates - patterns that warrant codification as portable skills.
 
 Identified during the Admin normalisation session (June 2026, GDR-KI-ARCADIA-003 follow-up).
 
@@ -35,8 +33,7 @@ Identified during the Admin normalisation session (June 2026, GDR-KI-ARCADIA-003
 ## Suggested Priority
 
 1. **Activity system** - both islands need it; clearly defined by kit-legal; straightforward to extract.
-2. **Admin zone structure** - GDR-KI-ARCADIA-003 established the pattern; a skill that bootstraps the Governance/Operations arms would save
-   the entire migration work for any future island.
+2. **Admin zone structure** - GDR-KI-ARCADIA-003 established the pattern; a skill that bootstraps the Governance/Operations arms would save the entire migration work for any future island.
 3. **Charter bootstrap checker** - high value: any new island would immediately know if their Charter is missing mandatory fields.
 4. **Note templates** - lower urgency; the pattern is simple but not blocking for new islands.
 5. **Live artifacts** - niche; only applies if an island publishes rendered HTML artifacts.
@@ -46,13 +43,11 @@ Identified during the Admin normalisation session (June 2026, GDR-KI-ARCADIA-003
 ## Notes
 
 - These are all forward-looking extractions, not blockers for current work.
-- The `knowledgeislands-kb` skill is the natural home for the Admin zone, Conventions, and Charter patterns - it already governs zone
-  structure.
+- The `knowledgeislands-kb` skill is the natural home for the Admin zone, Conventions, and Charter patterns - it already governs zone structure.
 - A standalone `knowledgeislands-activities` skill would allow any island to get the activity naming and index convention for free.
 - The `knowledgeislands-harness` repo is where the extracted skills would live.
 
 ## Related
 
-- [[Admin/Governance/Decisions/GDR-KI-ARCADIA-003-admin-governance-operations|GDR-KI-ARCADIA-003]] - the decision that established the Admin
-  zone structure being extracted.
+- [[Admin/Governance/Decisions/GDR-KI-ARCADIA-003-admin-governance-operations|GDR-KI-ARCADIA-003]] - the decision that established the Admin zone structure being extracted.
 - [[Admin/Governance/Decisions/Decisions|Decisions]] - the Decision Records index.

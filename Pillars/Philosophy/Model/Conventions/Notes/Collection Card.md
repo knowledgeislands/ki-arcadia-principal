@@ -11,8 +11,7 @@ author: Written with Claude
 
 ## Overview
 
-Defines the delta from [[Notes]] for collection cards. Collection cards are lightweight reference entries for people, organisations,
-concepts, and index notes. They use a `card/*` type tag rather than the generic `card/note`.
+Defines the delta from [[Notes]] for collection cards. Collection cards are lightweight reference entries for people, organisations, concepts, and index notes. They use a `card/*` type tag rather than the generic `card/note`.
 
 ---
 
@@ -29,8 +28,7 @@ The `tags` field uses a specific `card/` type tag. Common types:
 | `card/adr`     | Architecture Decision Records †         |
 | `card/kdr`     | Knowledge Decision Records †            |
 
-† Legacy tags from the former ADR/KDR instruments. No longer applied to new notes; the DR instrument (governed by
-`knowledgeislands-decision-records`) uses `type: admin/governance/decision` instead.
+† Legacy tags from the former ADR/KDR instruments. No longer applied to new notes; the DR instrument (governed by `knowledgeislands-decision-records`) uses `type: admin/governance/decision` instead.
 
 See [[Tags]] for the full tag reference.
 
@@ -38,8 +36,7 @@ See [[Tags]] for the full tag reference.
 
 ## Structure
 
-Collection cards follow the same structural rules as full notes but with fewer body sections. The body should reflect what is meaningful for
-the card type:
+Collection cards follow the same structural rules as full notes but with fewer body sections. The body should reflect what is meaningful for the card type:
 
 - **Person cards** - role, context, relationship to the island, key notes
 - **Organisation cards** - what they are, relationship to the island, key contacts

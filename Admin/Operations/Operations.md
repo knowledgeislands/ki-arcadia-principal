@@ -8,8 +8,7 @@ author: Written with Claude
 
 # Operations
 
-The `Admin/Operations/` arm holds the artefacts that describe **how Arcadia runs day to day** — activities, processes, tools, and agent
-configuration. These are operational artefacts: live, mutable, and specific to Arcadia's particular integrations and conventions.
+The `Admin/Operations/` arm holds the artefacts that describe **how Arcadia runs day to day** — activities, processes, tools, and agent configuration. These are operational artefacts: live, mutable, and specific to Arcadia's particular integrations and conventions.
 
 ## Contents
 

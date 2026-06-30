@@ -10,8 +10,7 @@ status: current - June 2026
 
 # Claude Housekeeping
 
-MCP server that audits the filesystem areas where Claude applications accumulate state on macOS. Source: `mcp-claude-housekeeping`
-(Knowledge Islands workspace).
+MCP server that audits the filesystem areas where Claude applications accumulate state on macOS. Source: `mcp-claude-housekeeping` (Knowledge Islands workspace).
 
 ## Tools
 
@@ -25,5 +24,4 @@ MCP server that audits the filesystem areas where Claude applications accumulate
 
 ## Notes
 
-Read-only by design — the server surfaces state for review but does not delete or modify files. Useful for understanding session
-accumulation and deciding what to archive or prune manually.
+Read-only by design — the server surfaces state for review but does not delete or modify files. Useful for understanding session accumulation and deciding what to archive or prune manually.

@@ -16,13 +16,11 @@ MCP server that connects Claude to Gmail via the Google Gmail API. Source: `mcp-
 
 **Reading**
 
-`gmail_search_threads` — search threads using Gmail query syntax. `gmail_get_thread` — read a full thread by ID. `gmail_list_labels` — list
-all labels in the mailbox.
+`gmail_search_threads` — search threads using Gmail query syntax. `gmail_get_thread` — read a full thread by ID. `gmail_list_labels` — list all labels in the mailbox.
 
 **Organisation**
 
-`gmail_label_message`, `gmail_unlabel_message` — add or remove labels. `gmail_apply_sensitive_message_label` — apply TRASH or SPAM to a
-message or thread.
+`gmail_label_message`, `gmail_unlabel_message` — add or remove labels. `gmail_apply_sensitive_message_label` — apply TRASH or SPAM to a message or thread.
 
 **Drafting** (never sends)
 
@@ -30,5 +28,4 @@ message or thread.
 
 ## Notes
 
-Destructive operations (trash, spam) require elevated access level. No send capability is exposed by design — outbound mail always passes
-through human review.
+Destructive operations (trash, spam) require elevated access level. No send capability is exposed by design — outbound mail always passes through human review.

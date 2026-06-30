@@ -12,16 +12,11 @@ author: Written with Claude
 
 ## Overview
 
-Prompts for the constitutional activity group - the executable, Claude-specific and island-specific prompt that drives the Conformance
-Check. This prompt is not optional: the Conformance Check is constitutional and cannot be vetoed or disabled.
+Prompts for the constitutional activity group - the executable, Claude-specific and island-specific prompt that drives the Conformance Check. This prompt is not optional: the Conformance Check is constitutional and cannot be vetoed or disabled.
 
-The prompt reads the island's [[Knowledge Capital/Charter|Charter]] and [[Philosophy/Model/Activities/Activities]] index to verify that the
-island meets its constitutional baseline and that every non-constitutional activity group has an explicit adoption position with the
-required Knowledge Capital configuration in place.
+The prompt reads the island's [[Knowledge Capital/Charter|Charter]] and [[Philosophy/Model/Activities/Activities]] index to verify that the island meets its constitutional baseline and that every non-constitutional activity group has an explicit adoption position with the required Knowledge Capital configuration in place.
 
-What the Conformance Check does and why it exists is documented in the Definition layer at
-[[Philosophy/Model/Activities/Constitutional/Conformance|Activities/Constitutional/Conformance]]. This folder holds only the executable
-prompt.
+What the Conformance Check does and why it exists is documented in the Definition layer at [[Philosophy/Model/Activities/Constitutional/Conformance|Activities/Constitutional/Conformance]]. This folder holds only the executable prompt.
 
 ---
 

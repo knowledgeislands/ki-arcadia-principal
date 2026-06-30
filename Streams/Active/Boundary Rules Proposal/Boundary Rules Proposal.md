@@ -12,10 +12,7 @@ author: Written with Claude
 
 ## Overview
 
-A stream to establish explicit content boundary rules (conceptually Boundary Walls) across the Knowledge Islands pillar structure. Without
-these rules, sections accumulate content that belongs elsewhere - Arcadia-specific detail in generic Knowledge Islands notes, tool
-references in convention notes, activity references in agent notes, and so on. The rules make the separation of concerns enforceable rather
-than aspirational.
+A stream to establish explicit content boundary rules (conceptually Boundary Walls) across the Knowledge Islands pillar structure. Without these rules, sections accumulate content that belongs elsewhere - Arcadia-specific detail in generic Knowledge Islands notes, tool references in convention notes, activity references in agent notes, and so on. The rules make the separation of concerns enforceable rather than aspirational.
 
 ---
 
@@ -46,16 +43,13 @@ This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment
 
 ## Open Questions
 
-1. **Where do the rules live?** ~~Options: a single `Conventions/Boundary Rules.md` note; additions to each area's index note; or additions
-   to the existing `Conventions/Structure.md`. The last is probably cleanest - Structure already governs what goes where.~~
+1. **Where do the rules live?** ~~Options: a single `Conventions/Boundary Rules.md` note; additions to each area's index note; or additions to the existing `Conventions/Structure.md`. The last is probably cleanest - Structure already governs what goes where.~~
 
    **Resolved:** New standalone `Conventions/Boundary Rules.md`. Keeps Structure clean; makes the rules citable and auditable as a unit.
 
-2. **How are violations surfaced?** ~~The Conformance Check or Health Check could include a boundary rule scan. Alternatively, rules are
-   enforced by convention and surfaced only during structural audits.~~
+2. **How are violations surfaced?** ~~The Conformance Check or Health Check could include a boundary rule scan. Alternatively, rules are enforced by convention and surfaced only during structural audits.~~
 
-   **Resolved:** Violations surfaced by a dedicated maintenance activity. Keeps the rules lightweight and avoids a dependency on the
-   Conformance stream.
+   **Resolved:** Violations surfaced by a dedicated maintenance activity. Keeps the rules lightweight and avoids a dependency on the Conformance stream.
 
 ---
 
@@ -63,22 +57,18 @@ This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment
 
 ### Model
 
-Boundary rules are conceptually **boundary walls with gates**. Each area of the island is enclosed; content and references may only pass
-through a gate, and gates check both entry and exit.
+Boundary rules are conceptually **boundary walls with gates**. Each area of the island is enclosed; content and references may only pass through a gate, and gates check both entry and exit.
 
 - A **Hard** wall has no gate - nothing passes
 - A **Soft** wall has a gate that logs passage - content may pass but is flagged for review
 - A **None** entry is an open gate - passage is explicitly permitted
 
-The gate check runs in both directions: entry (content arriving into an area) and exit (references or content leaving an area). A route
-entry makes a gate explicit.
+The gate check runs in both directions: entry (content arriving into an area) and exit (references or content leaving an area). A route entry makes a gate explicit.
 
 A boundary rule is a **route entry**: `(content, target_path, severity)`.
 
-- **content** - what is being checked at the gate: a content type (e.g. "owned methodology"), a source-area character (e.g. "Resources-type
-  content"), or a specific entity class (e.g. "named agents")
-- **target_path** - the area whose wall the gate belongs to; rules cascade to all notes under the path unless a more specific entry
-  overrides
+- **content** - what is being checked at the gate: a content type (e.g. "owned methodology"), a source-area character (e.g. "Resources-type content"), or a specific entity class (e.g. "named agents")
+- **target_path** - the area whose wall the gate belongs to; rules cascade to all notes under the path unless a more specific entry overrides
 - **severity** - Hard / Soft / None; more specific paths take precedence over less specific ones
 
 **Severity:**
@@ -91,11 +81,9 @@ A boundary rule is a **route entry**: `(content, target_path, severity)`.
 
 ### Exception mechanism
 
-Exceptions are additional route entries with lower severity at a more specific target path. The pair `(broad_rule, exception_path)` is the
-route pair. No separate exceptions list is needed - the table is self-contained.
+Exceptions are additional route entries with lower severity at a more specific target path. The pair `(broad_rule, exception_path)` is the route pair. No separate exceptions list is needed - the table is self-contained.
 
-For Soft violations that are intentionally retained, the note carrying the exception includes an inline comment:
-`> [!exception] Boundary rule exception: <rule> - <rationale>`.
+For Soft violations that are intentionally retained, the note carrying the exception includes an inline comment: `> [!exception] Boundary rule exception: <rule> - <rationale>`.
 
 ### Rules table (draft)
 

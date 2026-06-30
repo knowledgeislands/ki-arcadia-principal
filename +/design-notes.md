@@ -1,11 +1,10 @@
 # Knowledge Islands — Visual Style Prompt / Brand System
 
-Use this prompt as a reusable foundation for generating all future **Knowledge Islands** visuals, diagrams, logos, slide graphics, maps, UI
-concepts, animations, interfaces, and illustrations.
+Use this prompt as a reusable foundation for generating all future **Knowledge Islands** visuals, diagrams, logos, slide graphics, maps, UI concepts, animations, interfaces, and illustrations.
 
 ---
 
-# Core Brand Essence
+## Core Brand Essence
 
 **Knowledge Islands** is a human-centred knowledge ecosystem inspired by:
 
@@ -39,7 +38,7 @@ The visual language should feel like:
 
 ---
 
-# Foundational Philosophy
+## Foundational Philosophy
 
 Knowledge Islands treats knowledge not as static storage, but as a **navigable ecology**.
 
@@ -62,7 +61,7 @@ Core conceptual themes:
 
 ---
 
-# Emotional Tone
+## Emotional Tone
 
 The imagery should evoke:
 
@@ -89,7 +88,7 @@ Avoid:
 
 ---
 
-# Geographic Knowledge Metaphor
+## Geographic Knowledge Metaphor
 
 Knowledge is represented geographically.
 
@@ -126,7 +125,7 @@ Avoid:
 
 ---
 
-# Knowledge Fabric
+## Knowledge Fabric
 
 Connections between knowledge should feel:
 
@@ -162,7 +161,7 @@ than machine circuitry.
 
 ---
 
-# Symbolic Semantics
+## Symbolic Semantics
 
 Visual symbols should maintain consistent conceptual meaning.
 
@@ -185,7 +184,7 @@ Visual symbols should maintain consistent conceptual meaning.
 
 ---
 
-# Knowledge Terrain Language
+## Knowledge Terrain Language
 
 Different forms of knowledge may be represented through terrain metaphors.
 
@@ -204,7 +203,7 @@ This metaphor system should remain subtle rather than literal.
 
 ---
 
-# Diagram Style
+## Diagram Style
 
 Diagrams should:
 
@@ -245,7 +244,7 @@ Avoid:
 
 ---
 
-# Spatial Philosophy
+## Spatial Philosophy
 
 Space is meaningful.
 
@@ -268,7 +267,7 @@ The user should feel like they are exploring a map of meaning rather than naviga
 
 ---
 
-# Motion Language
+## Motion Language
 
 Animations and transitions should feel:
 
@@ -300,7 +299,7 @@ Motion should support orientation and comprehension rather than spectacle.
 
 ---
 
-# Typography Style
+## Typography Style
 
 Typography should feel:
 
@@ -337,7 +336,7 @@ Typography should reinforce:
 
 ---
 
-# Colour Palette
+## Colour Palette
 
 ## Primary Palette
 
@@ -381,7 +380,7 @@ Overall palettes should feel:
 
 ---
 
-# Illustration Style
+## Illustration Style
 
 Illustrations should be:
 
@@ -416,7 +415,7 @@ Avoid:
 
 ---
 
-# UI / System Design Style
+## UI / System Design Style
 
 Interfaces should feel:
 
@@ -452,7 +451,7 @@ Avoid:
 
 ---
 
-# Agent Representation
+## Agent Representation
 
 Human and AI agents should:
 
@@ -488,7 +487,7 @@ AI should feel infrastructural and supportive rather than anthropomorphic.
 
 ---
 
-# Logo Style
+## Logo Style
 
 Logos should:
 
@@ -528,7 +527,7 @@ The logo should feel like:
 
 ---
 
-# System Archetype
+## System Archetype
 
 Knowledge Islands should feel like:
 
@@ -552,15 +551,8 @@ But instead:
 
 ---
 
-# Reusable Master Prompt
+## Reusable Master Prompt
 
 Use this as a base prefix for future generations:
 
-> Create a premium “Knowledge Islands” visual in a calm, human-centred systems aesthetic. Blend elegant cartography, modern infographic
-> design, organic interconnected knowledge systems, and subtle civilisational library influences. Use oceanic and natural colour palettes
-> with deep blues, greens, sandstone, parchment, and restrained gold accents. The style should feel intelligent, timeless, exploratory, and
-> structured — combining knowledge architecture, archipelago metaphors, woven connective fabric, and thoughtful technological futurism.
-> Represent knowledge as a navigable ecology rather than a database. Prioritise breathable layouts, soft gradients, smooth curves,
-> atmospheric depth, layered terrain, and calm infrastructural clarity. Motion and composition should evoke ocean currents, celestial
-> navigation, and interconnected ecosystems. Avoid cyberpunk, harsh corporate aesthetics, neon colours, rigid technical diagrams, and
-> generic AI imagery. Prioritise clarity, stewardship, wisdom, interconnectedness, and elegant systems thinking.
+> Create a premium “Knowledge Islands” visual in a calm, human-centred systems aesthetic. Blend elegant cartography, modern infographic design, organic interconnected knowledge systems, and subtle civilisational library influences. Use oceanic and natural colour palettes with deep blues, greens, sandstone, parchment, and restrained gold accents. The style should feel intelligent, timeless, exploratory, and structured — combining knowledge architecture, archipelago metaphors, woven connective fabric, and thoughtful technological futurism. Represent knowledge as a navigable ecology rather than a database. Prioritise breathable layouts, soft gradients, smooth curves, atmospheric depth, layered terrain, and calm infrastructural clarity. Motion and composition should evoke ocean currents, celestial navigation, and interconnected ecosystems. Avoid cyberpunk, harsh corporate aesthetics, neon colours, rigid technical diagrams, and generic AI imagery. Prioritise clarity, stewardship, wisdom, interconnectedness, and elegant systems thinking.

@@ -12,8 +12,7 @@ author: Written with Claude
 
 ## Overview
 
-A weekly pass over notes with stale or pending status values. Status fields signal the health of a note - `draft` means unfinished,
-`current` means maintained, `outdated` means flagged for review, and `archive` means superseded. This task keeps those signals accurate.
+A weekly pass over notes with stale or pending status values. Status fields signal the health of a note - `draft` means unfinished, `current` means maintained, `outdated` means flagged for review, and `archive` means superseded. This task keeps those signals accurate.
 
 ---
 

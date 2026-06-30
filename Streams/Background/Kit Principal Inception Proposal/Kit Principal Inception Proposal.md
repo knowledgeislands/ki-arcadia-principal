@@ -12,8 +12,7 @@ author: Written with Claude
 
 ## Overview
 
-Content that will need to exist in `kit-principal` to bring it into alignment with the Knowledge Islands model. This work is executed in a
-separate session once arcadia-principal's governance is stable enough to provide a reliable baseline.
+Content that will need to exist in `kit-principal` to bring it into alignment with the Knowledge Islands model. This work is executed in a separate session once arcadia-principal's governance is stable enough to provide a reliable baseline.
 
 Local path: `~/kis/krisb/kit-principal`
 
@@ -21,8 +20,7 @@ Local path: `~/kis/krisb/kit-principal`
 
 ## Governance
 
-This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment Process]] - the standard model for how streams enact change
-in the island.
+This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment Process]] - the standard model for how streams enact change in the island.
 
 ---
 

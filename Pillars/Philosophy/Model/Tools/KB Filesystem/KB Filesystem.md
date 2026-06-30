@@ -22,10 +22,8 @@ MCP server that exposes this island's markdown knowledge base as read/write tool
 
 **Writing**
 
-`kb_note_write` — write or overwrite a note. Validates the target path against the configured KB root before writing; the root is injected
-at server startup, not hard-coded.
+`kb_note_write` — write or overwrite a note. Validates the target path against the configured KB root before writing; the root is injected at server startup, not hard-coded.
 
 ## Notes
 
-The primary programmatic interface to arcadia-principal. Path safety is enforced server-side. The Read tool in Claude Code fails silently on
-paths containing spaces — use `Bash cat "path"` for those.
+The primary programmatic interface to arcadia-principal. Path safety is enforced server-side. The Read tool in Claude Code fails silently on paths containing spaces — use `Bash cat "path"` for those.

@@ -12,9 +12,7 @@ author: Written with Claude
 
 ## Overview
 
-The current Calendar templates (Daily, Weekly, Monthly) are minimal placeholders. This stream covers redesigning them around the Bullet
-Journal methodology by Ryder Carroll - specifically the rapid logging system, the migration process, and the collections concept - and
-adapting that structure to Obsidian's note format before updating the templates.
+The current Calendar templates (Daily, Weekly, Monthly) are minimal placeholders. This stream covers redesigning them around the Bullet Journal methodology by Ryder Carroll - specifically the rapid logging system, the migration process, and the collections concept - and adapting that structure to Obsidian's note format before updating the templates.
 
 ---
 
@@ -26,8 +24,7 @@ This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment
 
 ## Checklist
 
-- [ ] Research the Bullet Journal methodology from primary sources - [bulletjournal.com](https://bulletjournal.com) / Ryder Carroll's
-      original method
+- [ ] Research the Bullet Journal methodology from primary sources - [bulletjournal.com](https://bulletjournal.com) / Ryder Carroll's original method
 - [ ] Identify which BuJo concepts map cleanly to Obsidian's daily/weekly/monthly note structure and which require adaptation
 - [ ] Draft revised Daily note template incorporating rapid logging and migration markers
 - [ ] Draft revised Weekly note template

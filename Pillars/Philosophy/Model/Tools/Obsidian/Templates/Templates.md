@@ -11,10 +11,7 @@ author: Written with Claude
 
 ## Overview
 
-Obsidian templates used with the Templater plugin to scaffold new notes consistently. Each template implements the structures defined in
-[[Format]] and [[Types]] - providing a starting point with the correct frontmatter, heading structure, and section layout pre-filled.
-Templates are a superset across all islands; not every template will be relevant to every island. Invoke via the Templater plugin command
-palette or a keyboard shortcut configured in Obsidian.
+Obsidian templates used with the Templater plugin to scaffold new notes consistently. Each template implements the structures defined in [[Format]] and [[Types]] - providing a starting point with the correct frontmatter, heading structure, and section layout pre-filled. Templates are a superset across all islands; not every template will be relevant to every island. Invoke via the Templater plugin command palette or a keyboard shortcut configured in Obsidian.
 
 ---
 
@@ -33,9 +30,7 @@ Six templates covering the time-based note types that live under `Calendar/`. Ea
 
 ## Notes
 
-Two templates for general knowledge notes in `Pillars/` and `Resources/`. `Note - General` is the standard format for any substantive note.
-`Note - Folder` scaffolds an index note for a new folder, with the correct structure: a prose Overview section followed by one named H2
-section per direct child, each introduced in two to four sentences.
+Two templates for general knowledge notes in `Pillars/` and `Resources/`. `Note - General` is the standard format for any substantive note. `Note - Folder` scaffolds an index note for a new folder, with the correct structure: a prose Overview section followed by one named H2 section per direct child, each introduced in two to four sentences.
 
 - [[Note - General]] - standard note; frontmatter, overview, body sections, further reading, related topics
 - [[Note - Folder]] - folder index note; prose overview and one named H2 section per direct child
@@ -44,8 +39,7 @@ section per direct child, each introduced in two to four sentences.
 
 ## Pillars Cards
 
-Collection card templates for internal knowledge entries - people and organisations as they relate to this island specifically. These use
-the `card/*` tag and a lighter structure than a full note. See [[Collection Card]] for the format specification.
+Collection card templates for internal knowledge entries - people and organisations as they relate to this island specifically. These use the `card/*` tag and a lighter structure than a full note. See [[Collection Card]] for the format specification.
 
 - [[Pillars - Collections - Organisation]] - internal organisation card; overview, relationship to the island, key contacts, related topics
 - [[Pillars - Collections - Person]] - internal person card; role, relationship to the island, key notes, related topics
@@ -54,9 +48,7 @@ the `card/*` tag and a lighter structure than a full note. See [[Collection Card
 
 ## Resources Cards
 
-Collection card templates for external reference entries - items that exist independently of the island but are worth capturing and
-contextualising within it. Cover books, concepts, films, locations, organisations, people, poems, venues, and videos. Each template provides
-a structure suited to the specific type of external reference, with sections for synopsis, key ideas, or takeaways as appropriate.
+Collection card templates for external reference entries - items that exist independently of the island but are worth capturing and contextualising within it. Cover books, concepts, films, locations, organisations, people, poems, venues, and videos. Each template provides a structure suited to the specific type of external reference, with sections for synopsis, key ideas, or takeaways as appropriate.
 
 - [[Resources - Collections - Book]] - book reference card; synopsis, key ideas, takeaways
 - [[Resources - Collections - Concept]] - concept reference card; definition, detail, applications

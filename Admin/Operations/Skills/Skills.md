@@ -8,8 +8,7 @@ author: Written with Claude
 
 # Skills
 
-Agent skills installed and active on Arcadia. Skills extend what agents can do on this island — each skill is a named capability with its
-own invocation conventions, scope, and configuration.
+Agent skills installed and active on Arcadia. Skills extend what agents can do on this island — each skill is a named capability with its own invocation conventions, scope, and configuration.
 
 ## Skills
 

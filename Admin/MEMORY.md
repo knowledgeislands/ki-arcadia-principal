@@ -10,9 +10,7 @@ author: Written with Claude
 
 ## Overview
 
-Root memory index for the island, per the canonical Knowledge Islands zone model: it lists the active Pillars so a session can scope to one
-before substantive work. This is the knowledge-base navigation index - distinct from the Cowork workspace auto-memory (`.auto-memory/`) that
-captures operational rules at session start.
+Root memory index for the island, per the canonical Knowledge Islands zone model: it lists the active Pillars so a session can scope to one before substantive work. This is the knowledge-base navigation index - distinct from the Cowork workspace auto-memory (`.auto-memory/`) that captures operational rules at session start.
 
 ## Active Zones
 

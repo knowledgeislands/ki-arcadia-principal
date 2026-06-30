@@ -11,12 +11,9 @@ author: Written with Claude
 
 ## Overview
 
-An island has geography - both natural and constructed. The streams run through the landscape; the harbour opens onto the sea; the library
-is built at the heart of the capital. Each zone has a different character: some feel organic, shaped by flow and movement; others feel
-institutional, shaped by governance and permanence. Both are of the place.
+An island has geography - both natural and constructed. The streams run through the landscape; the harbour opens onto the sea; the library is built at the heart of the capital. Each zone has a different character: some feel organic, shaped by flow and movement; others feel institutional, shaped by governance and permanence. Both are of the place.
 
-Structure is where those geographic conventions are specified. Each zone has its own section covering its internal organisation, routing
-rules, and governing logic.
+Structure is where those geographic conventions are specified. Each zone has its own section covering its internal organisation, routing rules, and governing logic.
 
 ### Physical Stores
 
@@ -28,16 +25,13 @@ Each island realises its knowledge through one or more physical stores:
 | **Binary store**  | Large binary files - images, PDFs, exports, attachments         | Mirrors text store exactly        |
 | **Working space** | Temporary area used by tools and agents; ephemeral              | None required                     |
 
-The text and binary stores must share an identical folder structure so that files are co-located by topic regardless of which store they
-live in. When creating or referencing a binary asset, save it to the binary store under the same relative subfolder as the corresponding
-note.
+The text and binary stores must share an identical folder structure so that files are co-located by topic regardless of which store they live in. When creating or referencing a binary asset, save it to the binary store under the same relative subfolder as the corresponding note.
 
 Git is the source of truth for canonical knowledge. The working space is ephemeral - nothing in it is canonical until committed to a store.
 
 ### Governance Infrastructure
 
-The governance infrastructure belongs to the principal island and serves the entire archipelago. It is not a store - it is the operational
-layer through which knowledge is managed and evolved:
+The governance infrastructure belongs to the principal island and serves the entire archipelago. It is not a store - it is the operational layer through which knowledge is managed and evolved:
 
 | Infrastructure     | Purpose                                                                                              |
 | ------------------ | ---------------------------------------------------------------------------------------------------- |
@@ -50,9 +44,7 @@ Specific paths for each island are defined in its Knowledge Capital.
 
 ## Library
 
-The Library is the canonical record - version-controlled, governed, and the single source of truth for all ratified knowledge. It contains
-three zones: Calendar (time-bound notes), Pillars (internal knowledge owned by the island), and Resources (external reference material).
-Nothing enters the Library except through the governance process.
+The Library is the canonical record - version-controlled, governed, and the single source of truth for all ratified knowledge. It contains three zones: Calendar (time-bound notes), Pillars (internal knowledge owned by the island), and Resources (external reference material). Nothing enters the Library except through the governance process.
 
 ### Top-Level Folders
 
@@ -66,20 +58,13 @@ Nothing enters the Library except through the governance process.
 | `+`         | Inbox - unsorted captures awaiting filing (inbound staging, not a zone)             |
 | `-`         | Outbound staging - produced artefacts leaving the island; present but minimal       |
 
-`Admin` and `-` are introduced minimally to align with the canonical Knowledge Islands model (five zones - `Calendar`, `Pillars`,
-`Resources`, `Streams`, `Admin` - flanked by the inbound `+` and outbound `-` staging areas). For now this island's governance remains in
-[[Knowledge Capital]] and session digests remain sibling `Calendar` notes; migrating governance into [[Admin]] and digest output into `-` is
-deliberate future work, tracked but not yet done.
+`Admin` and `-` are introduced minimally to align with the canonical Knowledge Islands model (five zones - `Calendar`, `Pillars`, `Resources`, `Streams`, `Admin` - flanked by the inbound `+` and outbound `-` staging areas). For now this island's governance remains in [[Knowledge Capital]] and session digests remain sibling `Calendar` notes; migrating governance into [[Admin]] and digest output into `-` is deliberate future work, tracked but not yet done.
 
-`Pillars` and `Resources` share subfolder names by design. For example, `Pillars/Finance` covers internal finances; `Resources/Finance`
-covers general finance knowledge such as banking regulations.
+`Pillars` and `Resources` share subfolder names by design. For example, `Pillars/Finance` covers internal finances; `Resources/Finance` covers general finance knowledge such as banking regulations.
 
-Streams notes track current status, progress, and next steps - they are not knowledge stores. When a stream produces durable knowledge, it
-is extracted to the relevant Pillars note; the stream note links to it.
+Streams notes track current status, progress, and next steps - they are not knowledge stores. When a stream produces durable knowledge, it is extracted to the relevant Pillars note; the stream note links to it.
 
-`Calendar` contains several note types. Daily notes, meeting notes, session digests, and the monthly index are filed in the month folder and
-referenced from the daily note by wikilink; the daily note does not duplicate their content. Weekly notes are filed separately in a per-year
-`YYYY By Week/` folder alongside the month folders.
+`Calendar` contains several note types. Daily notes, meeting notes, session digests, and the monthly index are filed in the month folder and referenced from the daily note by wikilink; the daily note does not duplicate their content. Weekly notes are filed separately in a per-year `YYYY By Week/` folder alongside the month folders.
 
 | Note type      | Path pattern                    | Purpose                                                                                                        |
 | -------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------- |
@@ -109,27 +94,22 @@ When updating an existing note: read it first, then merge new content in, preser
 - `Pillars` notes contain internal knowledge - things that should not need to exist outside of the island
 - `Resources` notes contain external knowledge - things that exist independently of this island but add value by being synthesised in it
 - Links between Pillars and Resources are **bidirectional** where relevant
-- If a Resources note has accumulated internal knowledge, that knowledge belongs in a new or existing Pillars note that references the
-  Resources one
+- If a Resources note has accumulated internal knowledge, that knowledge belongs in a new or existing Pillars note that references the Resources one
 
 ### Streams/Pillars Convention
 
 Streams notes are status trackers, not knowledge stores.
 
-- **In a Stream note:** current status, progress updates, decisions made within the stream, next steps, blockers, and links to relevant
-  Pillars notes
+- **In a Stream note:** current status, progress updates, decisions made within the stream, next steps, blockers, and links to relevant Pillars notes
 - **In Pillars:** technical findings, architectural knowledge, reusable methodologies, designs, and approaches that outlive the stream
 
-When a stream produces lasting insight, extract it to the relevant Pillars note and link back from the stream. A stream note that
-accumulates deep technical content is a signal that content needs to move.
+When a stream produces lasting insight, extract it to the relevant Pillars note and link back from the stream. A stream note that accumulates deep technical content is a signal that content needs to move.
 
-Streams that conclude (`Settled`) should have their durable knowledge already in Pillars. The settled note becomes a record of what was done
-and where the knowledge now lives.
+Streams that conclude (`Settled`) should have their durable knowledge already in Pillars. The settled note becomes a record of what was done and where the knowledge now lives.
 
 ### Pillars/Resources Folder Notes
 
-Every folder in Pillars and Resources must have a note with the same name as the folder (e.g. `Productivity/Productivity.md`). The folder
-note:
+Every folder in Pillars and Resources must have a note with the same name as the folder (e.g. `Productivity/Productivity.md`). The folder note:
 
 - Acts as the entry point and overview for that folder / subtree
 - Does **not** duplicate content - it can however summarise, contextualise and point
@@ -142,9 +122,7 @@ When creating a new folder, create its folder note at the same time.
 
 ## Streams
 
-Streams carry knowledge in motion: active projects, evolving ideas, ongoing work. They are not part of the Library; their content is not
-canonical. The lifecycle is: emerge as a Stream → mature through work → stabilise into Pillars or Resources → the Stream is retired. Every
-stream is a **proposal** under the [[Enactment Process]].
+Streams carry knowledge in motion: active projects, evolving ideas, ongoing work. They are not part of the Library; their content is not canonical. The lifecycle is: emerge as a Stream → mature through work → stabilise into Pillars or Resources → the Stream is retired. Every stream is a **proposal** under the [[Enactment Process]].
 
 A stream lives under a mandatory **Focus** folder expressing its current level of attention:
 
@@ -156,21 +134,16 @@ A stream lives under a mandatory **Focus** folder expressing its current level o
 | `Future`     | Planned or ideated; not yet started |
 | `Settled`    | Concluded                           |
 
-The full Streams structure - the path and optional Category, the `Proposal` name suffix, the leaf/parent/multi folder layout, the `type:`
-note types, the focus-index `## Streams` table and its ordering, and the Settled point-in-time policy - is **canonical in the
-`knowledgeislands-streams` skill**, which this island defers to. See [[Enactment Process]] for the local governance framing.
+The full Streams structure - the path and optional Category, the `Proposal` name suffix, the leaf/parent/multi folder layout, the `type:` note types, the focus-index `## Streams` table and its ordering, and the Settled point-in-time policy - is **canonical in the `knowledgeislands-streams` skill**, which this island defers to. See [[Enactment Process]] for the local governance framing.
 
 ---
 
 ## Harbour
 
-> [!todo] Harbour The Harbour is the port of entry - where incoming material arrives before being assessed and routed inward. Nothing flows
-> directly from the Harbour into the Library; all material is assessed first, relevant content routed to the right Stream or zone, the rest
-> discarded. The Harbour's structural conventions are not yet fully specified.
+> [!todo] Harbour The Harbour is the port of entry - where incoming material arrives before being assessed and routed inward. Nothing flows directly from the Harbour into the Library; all material is assessed first, relevant content routed to the right Stream or zone, the rest discarded. The Harbour's structural conventions are not yet fully specified.
 
 ---
 
 ## Routes and Customs
 
-> [!todo] Routes and Customs Routes are the explicit pathways and relationships between zones and between islands. Customs is the
-> jurisdictional layer at each boundary, controlling what passes between territories. Both need fuller specification as the model develops.
+> [!todo] Routes and Customs Routes are the explicit pathways and relationships between zones and between islands. Customs is the jurisdictional layer at each boundary, controlling what passes between territories. Both need fuller specification as the model develops.

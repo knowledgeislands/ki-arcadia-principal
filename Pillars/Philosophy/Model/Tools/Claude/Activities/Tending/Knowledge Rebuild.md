@@ -13,8 +13,7 @@ author: Written with Claude
 
 ## Overview
 
-The Claude agent specific activity prompt for the Knowledge Rebuild activity. This is maintained as an agentic AI specific task instruction
-that it can easily use at runtime rather than having to read and understand all of the note hierachy and inheritance at runtime.
+The Claude agent specific activity prompt for the Knowledge Rebuild activity. This is maintained as an agentic AI specific task instruction that it can easily use at runtime rather than having to read and understand all of the note hierachy and inheritance at runtime.
 
 ---
 
@@ -174,5 +173,4 @@ The auto-memory files are mounted into the Cowork session at `/sessions/*/mnt/.a
 find ~/Library -name "MEMORY.md" 2>/dev/null
 ```
 
-Run this in Terminal on the Mac. The result will be the path to `MEMORY.md`; the other auto-memory files sit alongside it in the same
-directory.
+Run this in Terminal on the Mac. The result will be the path to `MEMORY.md`; the other auto-memory files sit alongside it in the same directory.

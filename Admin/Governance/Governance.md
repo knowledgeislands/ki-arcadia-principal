@@ -8,9 +8,7 @@ author: Written with Claude
 
 # Governance
 
-The `Admin/Governance/` arm holds the artefacts that define **what the island is and how it must be structured** — conventions, policies,
-charters, and decision records. These are things that must be true for the island to be what it is; they do not describe day-to-day
-operations.
+The `Admin/Governance/` arm holds the artefacts that define **what the island is and how it must be structured** — conventions, policies, charters, and decision records. These are things that must be true for the island to be what it is; they do not describe day-to-day operations.
 
 ## Contents
 

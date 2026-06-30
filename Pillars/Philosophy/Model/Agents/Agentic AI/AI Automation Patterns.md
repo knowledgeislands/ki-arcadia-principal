@@ -13,9 +13,7 @@ author: Written with Claude
 
 ## Overview
 
-Recurring patterns and design principles for AI-driven productivity automations - scheduled tasks, regular activities, and any
-Claude-powered workflow that runs repeatedly against the same island configuration. These are generalisations derived from the design of
-specific activities such as [[Philosophy/Model/Activities/Email/Email]].
+Recurring patterns and design principles for AI-driven productivity automations - scheduled tasks, regular activities, and any Claude-powered workflow that runs repeatedly against the same island configuration. These are generalisations derived from the design of specific activities such as [[Philosophy/Model/Activities/Email/Email]].
 
 ---
 
@@ -26,8 +24,7 @@ When designing a scheduled automation, assess two independent rates for every in
 - **Execution frequency** - how often the task runs (e.g., 3× daily)
 - **Change frequency** - how often the inputs to the task change (e.g., routing rules revised once a week or less)
 
-When execution frequency significantly exceeds change frequency, loading and parsing those inputs fresh on every run is wasteful. The inputs
-are effectively static between runs - re-parsing them is redundant work that costs tokens and time.
+When execution frequency significantly exceeds change frequency, loading and parsing those inputs fresh on every run is wasteful. The inputs are effectively static between runs - re-parsing them is redundant work that costs tokens and time.
 
 The **execution/change ratio** is the key diagnostic:
 

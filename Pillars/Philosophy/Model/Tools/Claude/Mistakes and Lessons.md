@@ -17,12 +17,9 @@ memory_file:
 
 ## Overview
 
-A closed-loop incident register for mistakes made during island operations - file creation, routing, automation, and daily note tasks. When
-Claude gets something wrong, the error is logged here, the fix is applied to the relevant auto-memory file, and the resolved lesson is
-recorded permanently in the table below.
+A closed-loop incident register for mistakes made during island operations - file creation, routing, automation, and daily note tasks. When Claude gets something wrong, the error is logged here, the fix is applied to the relevant auto-memory file, and the resolved lesson is recorded permanently in the table below.
 
-This note is a **human-readable reference**. All lessons are extracted to auto-memory and are active in every session without this file
-needing to be loaded. See [[CLAUDE]] for the incident logging workflow.
+This note is a **human-readable reference**. All lessons are extracted to auto-memory and are active in every session without this file needing to be loaded. See [[CLAUDE]] for the incident logging workflow.
 
 ---
 

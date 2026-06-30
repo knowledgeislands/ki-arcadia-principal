@@ -13,18 +13,11 @@ author: Written with Claude
 
 ## Overview
 
-Technē is the methodology, harness, orchestration fabric, and operational system underlying the [[Knowledge Islands]] ecosystem. It is not
-simply "a way to run agents" - it is the craft through which the system operates: a Git-native cognitive orchestration fabric running on
-Kubernetes.
+Technē is the methodology, harness, orchestration fabric, and operational system underlying the [[Knowledge Islands]] ecosystem. It is not simply "a way to run agents" - it is the craft through which the system operates: a Git-native cognitive orchestration fabric running on Kubernetes.
 
-The name is deliberate. Technē (Greek: τέχνη) means craft, method, practised skill, intentional creation, disciplined execution. It captures
-what the harness fundamentally is: not a deity, not a place, not a singular intelligence - but the operational philosophy and engineered
-discipline through which the ecosystem functions. It aligns naturally with Kubernetes, GitOps, agent orchestration, reproducibility, and
-systems thinking.
+The name is deliberate. Technē (Greek: τέχνη) means craft, method, practised skill, intentional creation, disciplined execution. It captures what the harness fundamentally is: not a deity, not a place, not a singular intelligence - but the operational philosophy and engineered discipline through which the ecosystem functions. It aligns naturally with Kubernetes, GitOps, agent orchestration, reproducibility, and systems thinking.
 
-This Pillar holds the conceptual and architectural foundations of Technē. Sub-notes will be created as the design matures into
-implementation. The [[Tool Ecosystem Map]] is the first: it maps the current tool layer (harness, MCPs, KB, website) as a grounded starting
-point for the broader architecture described here.
+This Pillar holds the conceptual and architectural foundations of Technē. Sub-notes will be created as the design matures into implementation. The [[Tool Ecosystem Map]] is the first: it maps the current tool layer (harness, MCPs, KB, website) as a grounded starting point for the broader architecture described here.
 
 ---
 
@@ -42,8 +35,7 @@ Technē sits within a layered conceptual model:
 | Second Brain      | Human-centric long-term synthesis repository                       |
 | Archipelago       | Federated collection of knowledge systems                          |
 
-Technē is effectively an AI operating fabric, a distributed cognitive system, a persistent second brain, an orchestrated swarm of
-specialised agents, a Git-backed knowledge ecosystem, and a human-governed intelligence platform - all unified under one conceptual model.
+Technē is effectively an AI operating fabric, a distributed cognitive system, a persistent second brain, an orchestrated swarm of specialised agents, a Git-backed knowledge ecosystem, and a human-governed intelligence platform - all unified under one conceptual model.
 
 ---
 
@@ -64,16 +56,13 @@ Knowledge Islands
         └── Human Governance
 ```
 
-The runtime runs on Amazon EKS, chosen for growth, resilience, and scalability. A hybrid local/cloud model is intended: local (Mac Studio,
-laptop) for experimentation and development; cloud (AWS) for the scalable agent fleet, persistent services, telemetry, and long-running
-tasks.
+The runtime runs on Amazon EKS, chosen for growth, resilience, and scalability. A hybrid local/cloud model is intended: local (Mac Studio, laptop) for experimentation and development; cloud (AWS) for the scalable agent fleet, persistent services, telemetry, and long-running tasks.
 
 ---
 
 ## Git as Memory
 
-The most important architectural principle: each agent has its own repository, its own persistent memory, versioned context, audit trail,
-rollback capability, and collaboration workflow. This turns cognition, planning, reasoning, and outputs into inspectable infrastructure.
+The most important architectural principle: each agent has its own repository, its own persistent memory, versioned context, audit trail, rollback capability, and collaboration workflow. This turns cognition, planning, reasoning, and outputs into inspectable infrastructure.
 
 | Capability  | Benefit                |
 | ----------- | ---------------------- |
@@ -126,11 +115,9 @@ Each agent follows the model: Runtime Container / Git Brain / Task Queue / Telem
 | Service Mesh (future) | Istio/Linkerd         |
 | Queueing              | NATS/Kafka/SQS        |
 
-Primary language: TypeScript throughout most of the platform (CDK support, ecosystem, readability). Python reserved for ML-heavy or
-experimental AI tooling only.
+Primary language: TypeScript throughout most of the platform (CDK support, ecosystem, readability). Python reserved for ML-heavy or experimental AI tooling only.
 
-**Observability stack:** Grafana (dashboards) / Grafana Alloy (collection and pipelines) / Prometheus (metrics) / Loki (logs) / Tempo
-(traces) / OpenTelemetry (standard instrumentation).
+**Observability stack:** Grafana (dashboards) / Grafana Alloy (collection and pipelines) / Prometheus (metrics) / Loki (logs) / Tempo (traces) / OpenTelemetry (standard instrumentation).
 
 ---
 

@@ -12,12 +12,9 @@ author: Written with Claude
 
 ## Overview
 
-A comprehensive, hands-on review of the island's structure, note quality, and conformance to Knowledge Management conventions. Unlike the
-lighter weekly checks, a structural audit is a focused session (or series of sessions) that systematically examines a scope of the
-repository and brings it into full alignment.
+A comprehensive, hands-on review of the island's structure, note quality, and conformance to Knowledge Management conventions. Unlike the lighter weekly checks, a structural audit is a focused session (or series of sessions) that systematically examines a scope of the repository and brings it into full alignment.
 
-Structural audits are run adhoc - when the Knowledge Management approach has meaningfully evolved, when a section of the repository has
-grown without oversight, or after a period of heavy note-taking that has outpaced curation.
+Structural audits are run adhoc - when the Knowledge Management approach has meaningfully evolved, when a section of the repository has grown without oversight, or after a period of heavy note-taking that has outpaced curation.
 
 ---
 
@@ -79,12 +76,9 @@ Ensure every `card/*` tag type has a corresponding template in `Pillars/Philosop
 
 ## Audit Log
 
-Session digests are recorded in the **daily note** for the session date, under `## Personal Assistant Sessions`. Each session heading
-describes what was done - not a session number. Decisions extracted from each session are propagated to [[Notes]], [[Structure]], and
-[[Tags]] as standing rules.
+Session digests are recorded in the **daily note** for the session date, under `## Personal Assistant Sessions`. Each session heading describes what was done - not a session number. Decisions extracted from each session are propagated to [[Notes]], [[Structure]], and [[Tags]] as standing rules.
 
-**Section title format:** `### island Structural Audit - [scope of work]` Example:
-`### island Structural Audit - Boundary Fixes, Pillars Frontmatter, Status Review`
+**Section title format:** `### island Structural Audit - [scope of work]` Example: `### island Structural Audit - Boundary Fixes, Pillars Frontmatter, Status Review`
 
 | Date | Scope | Calendar Note |
 | ---- | ----- | ------------- |

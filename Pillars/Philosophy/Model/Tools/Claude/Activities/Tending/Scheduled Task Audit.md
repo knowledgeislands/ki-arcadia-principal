@@ -13,22 +13,18 @@ author: Written with Claude
 
 ## Overview
 
-A daily automated task that verifies each live Cowork scheduled task has a corresponding island note, that schedules and descriptions match,
-and that this task's own prompt is current. The Conformance Check runs earlier at 04:30; the Scheduled Task Audit runs at 05:00 and is the
-first maintenance activity of the day.
+A daily automated task that verifies each live Cowork scheduled task has a corresponding island note, that schedules and descriptions match, and that this task's own prompt is current. The Conformance Check runs earlier at 04:30; the Scheduled Task Audit runs at 05:00 and is the first maintenance activity of the day.
 
 Full prompt comparison across all tasks is not currently possible - see [[#Known Limitations]] below.
 
-This is a Claude-specific activity: it reads scheduled task metadata, the running task's own SKILL.md, and the Prompt notes under
-`Tools/Claude/Activities/`. It has no agent-agnostic Definition counterpart.
+This is a Claude-specific activity: it reads scheduled task metadata, the running task's own SKILL.md, and the Prompt notes under `Tools/Claude/Activities/`. It has no agent-agnostic Definition counterpart.
 
 ---
 
 ## Schedule
 
 - **Task ID:** `{skill-name}-scheduled-task-audit`
-- **Runs:** Weekdays at 05:00 - after the Conformance Check (04:30), before all other maintenance and briefing tasks - working days and cron
-  defined in [[Schedule]]
+- **Runs:** Weekdays at 05:00 - after the Conformance Check (04:30), before all other maintenance and briefing tasks - working days and cron defined in [[Schedule]]
 - **Cron:** See [[Schedule]] → Scheduled Task Audit cron
 
 ---
@@ -37,32 +33,21 @@ This is a Claude-specific activity: it reads scheduled task metadata, the runnin
 
 The Cowork scheduled-tasks MCP has three tools: `create_scheduled_task`, `list_scheduled_tasks`, and `update_scheduled_task`.
 
-`list_scheduled_tasks` returns task metadata only - ID, description, cron expression, enabled state, and run timestamps. **It does not
-return prompt content.** There is no `get_scheduled_task` tool. Scheduled task SKILL.md files live at
-`/Users/<user>/Documents/Claude/Scheduled/<taskId>/SKILL.md` on the Mac filesystem and are not mounted into Cowork sessions, so file-based
-reading is also not possible for tasks other than the currently running one.
+`list_scheduled_tasks` returns task metadata only - ID, description, cron expression, enabled state, and run timestamps. **It does not return prompt content.** There is no `get_scheduled_task` tool. Scheduled task SKILL.md files live at `/Users/<user>/Documents/Claude/Scheduled/<taskId>/SKILL.md` on the Mac filesystem and are not mounted into Cowork sessions, so file-based reading is also not possible for tasks other than the currently running one.
 
-The practical effect: this audit can verify schedule/cron/description alignment for all tasks, and can self-verify its own prompt (since the
-SKILL.md for the running task is mounted in the current session). Prompt comparison for all other tasks is not possible with current
-tooling.
+The practical effect: this audit can verify schedule/cron/description alignment for all tasks, and can self-verify its own prompt (since the SKILL.md for the running task is mounted in the current session). Prompt comparison for all other tasks is not possible with current tooling.
 
 ### Potential future paths
 
-**Option A - Platform feature (preferred):** If `list_scheduled_tasks` is updated to return prompt content, or a `get_scheduled_task` tool
-is added, prompt comparison can be fully enabled with no changes to this audit's process.
+**Option A - Platform feature (preferred):** If `list_scheduled_tasks` is updated to return prompt content, or a `get_scheduled_task` tool is added, prompt comparison can be fully enabled with no changes to this audit's process.
 
-**Option B - Computer-use workaround:** Scheduled task SKILL.md files live at `~/Documents/Claude/Scheduled/<taskId>/SKILL.md` on the Mac
-filesystem. In principle, computer-use could navigate Finder to that directory and read each file. This would need to be added as an
-optional step after the main audit, gated on computer-use access being available in the session. It is more fragile than Option A (depends
-on the path being stable and the user having granted computer-use access) but workable as an interim measure if the platform does not
-evolve.
+**Option B - Computer-use workaround:** Scheduled task SKILL.md files live at `~/Documents/Claude/Scheduled/<taskId>/SKILL.md` on the Mac filesystem. In principle, computer-use could navigate Finder to that directory and read each file. This would need to be added as an optional step after the main audit, gated on computer-use access being available in the session. It is more fragile than Option A (depends on the path being stable and the user having granted computer-use access) but workable as an interim measure if the platform does not evolve.
 
 ---
 
 ## Prompt
 
-The prompt below is the canonical version. It must match the prompt stored in the `{skill-name}-scheduled-task-audit` scheduled task - see
-[[Authoring Guidelines]] § Prompt Editing Discipline.
+The prompt below is the canonical version. It must match the prompt stored in the `{skill-name}-scheduled-task-audit` scheduled task - see [[Authoring Guidelines]] § Prompt Editing Discipline.
 
 ```txt
 You are running the Scheduled Task Audit. Your job is to verify that each live Cowork scheduled task has a corresponding KI note and that schedules match - and to self-verify this task's own prompt. Full prompt comparison across all tasks is not currently possible; see the Known Limitations section in the KI note.
@@ -116,8 +101,7 @@ Write the summary to today's daily note under ## KI, under a ### Scheduled Task 
 
 ## Procedure
 
-The prompt above runs this automatically. For manual runs, the same steps apply - with the additional ability to do full prompt comparison
-by reading island notes and cross-checking against task prompts known from context.
+The prompt above runs this automatically. For manual runs, the same steps apply - with the additional ability to do full prompt comparison by reading island notes and cross-checking against task prompts known from context.
 
 ### 1. List all scheduled tasks
 
@@ -125,8 +109,7 @@ Call `mcp__scheduled-tasks__list_scheduled_tasks` to retrieve metadata for all a
 
 ### 2. Identify the corresponding island note
 
-For each task, locate the matching Prompt note under `Pillars/Philosophy/Model/Tools/Claude/Activities/`. The task ID prefix is documented
-in [[Knowledge Capital/Charter|Charter]].
+For each task, locate the matching Prompt note under `Pillars/Philosophy/Model/Tools/Claude/Activities/`. The task ID prefix is documented in [[Knowledge Capital/Charter|Charter]].
 
 ### 3. Verify schedule and description
 
@@ -134,23 +117,19 @@ Compare cron expressions and descriptions against the Prompt note content. Flag 
 
 ### 4. Self-verify prompt (automated runs) / full prompt comparison (manual runs)
 
-Automated: read the mounted SKILL.md and compare against the Prompt note's prompt block. Manual: compare Prompt note prompt blocks against
-any known live prompt content.
+Automated: read the mounted SKILL.md and compare against the Prompt note's prompt block. Manual: compare Prompt note prompt blocks against any known live prompt content.
 
-The Prompt note is always the canonical source. Push KI → task via `mcp__scheduled-tasks__update_scheduled_task` if the island is ahead;
-update the Prompt note if the live task is ahead.
+The Prompt note is always the canonical source. Push KI → task via `mcp__scheduled-tasks__update_scheduled_task` if the island is ahead; update the Prompt note if the live task is ahead.
 
 ---
 
 ## Sync Protocol
 
-When updating a prompt during an active session: update the Prompt note first, then push to the scheduled task via
-`mcp__scheduled-tasks__update_scheduled_task`. Batch edits - do not push after every small change. Push when:
+When updating a prompt during an active session: update the Prompt note first, then push to the scheduled task via `mcp__scheduled-tasks__update_scheduled_task`. Batch edits - do not push after every small change. Push when:
 
 - The user explicitly signals readiness ("push it", "sync the task", "ready to run"), or
 - The iteration is confirmed complete, or
-- An area has stabilised (no further prompt changes for a few hours within the same conversation) - in this case, proactively suggest
-  syncing before the conversation ends.
+- An area has stabilised (no further prompt changes for a few hours within the same conversation) - in this case, proactively suggest syncing before the conversation ends.
 
 ## Notes
 

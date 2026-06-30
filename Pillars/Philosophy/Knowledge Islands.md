@@ -12,32 +12,25 @@ author: Written with Claude
 
 Knowledge Islands is a conceptual model for organising knowledge.
 
-In Knowledge Islands, knowledge is treated as a natural, evolving system - islands are discrete bodies of knowledge, teritories are
-archipelagos, groups of islands governed together under the same rules of access, contribution, and change.
+In Knowledge Islands, knowledge is treated as a natural, evolving system - islands are discrete bodies of knowledge, teritories are archipelagos, groups of islands governed together under the same rules of access, contribution, and change.
 
-Where the Knowledge Islands model holds the portable, agnostic definition; Knowledge Capitals defines the realisation of the model through
-concepts such as the island's charter, council, citizenship, integrations and routing.
+Where the Knowledge Islands model holds the portable, agnostic definition; Knowledge Capitals defines the realisation of the model through concepts such as the island's charter, council, citizenship, integrations and routing.
 
-Arcadia is the Knowledge Island of Knowledge Islands, the Knowledge Capital of Knowledge Capitals - a legendary utopia that holds the
-canonical definition and governance model for the entire Knowledge Islands concept.
+Arcadia is the Knowledge Island of Knowledge Islands, the Knowledge Capital of Knowledge Capitals - a legendary utopia that holds the canonical definition and governance model for the entire Knowledge Islands concept.
 
 Every knowledge island that adopts the Knowledge Islands model derives its baseline from Arcadia.
 
 ## How to read this
 
-> If you are new to Knowledge Islands, follow the reading order below - it traces a path through the content that builds the model up step
-> by step, so nothing arrives without context - or jump straight to a section if you are already familiar and looking for specific
-> information.
+> If you are new to Knowledge Islands, follow the reading order below - it traces a path through the content that builds the model up step by step, so nothing arrives without context - or jump straight to a section if you are already familiar and looking for specific information.
 
-Knowledge Islands is structured as a three-part narrative. Each part answers a question. Read in sequence and each idea arrives with its
-context already in place.
+Knowledge Islands is structured as a three-part narrative. Each part answers a question. Read in sequence and each idea arrives with its context already in place.
 
 ---
 
 ## Part I - Introduction: Why does this exist?
 
-The first part establishes the problem and the model. It does not assume the reader knows what Knowledge Islands is; it earns the concept by
-showing what knowledge is, why it needs a home, and what has been tried before. The model arrives as a reveal, not a definition.
+The first part establishes the problem and the model. It does not assume the reader knows what Knowledge Islands is; it earns the concept by showing what knowledge is, why it needs a home, and what has been tried before. The model arrives as a reveal, not a definition.
 
 ### Background
 
@@ -60,9 +53,7 @@ showing what knowledge is, why it needs a home, and what has been tried before. 
 
 ## Part II - Model: Any island can adopt this
 
-The second part is the portable, generic model. It covers the language of the island (Conventions), the gates that govern change
-(Processes), the work that keeps the island alive (Activities), the actors who do that work (Agents), and the instruments they use (Tools).
-Nothing here is specific to Arcadia - any island can adopt it as-is.
+The second part is the portable, generic model. It covers the language of the island (Conventions), the gates that govern change (Processes), the work that keeps the island alive (Activities), the actors who do that work (Agents), and the instruments they use (Tools). Nothing here is specific to Arcadia - any island can adopt it as-is.
 
 ### Conventions - What is the language?
 
@@ -87,8 +78,7 @@ Nothing here is specific to Arcadia - any island can adopt it as-is.
 
 - [[Authoring Guidelines]] - the content layers; how activity notes are written and maintained
   - _Constitutional (always-on):_
-    - [[Model/Activities/Constitutional/Constitutional|Constitutional]] - the set of activities every island must run; includes
-      [[Model/Activities/Constitutional/Conformance|Conformance]]
+    - [[Model/Activities/Constitutional/Constitutional|Constitutional]] - the set of activities every island must run; includes [[Model/Activities/Constitutional/Conformance|Conformance]]
   - _Tending (island health):_
     - [[Model/Activities/Tending/Tending|Tending]] - the full tending cycle overview
     - [[Scheduled Task Audit]] - verifies live tasks match island notes; runs daily at 05:00
@@ -133,9 +123,7 @@ Nothing here is specific to Arcadia - any island can adopt it as-is.
 
 ## Part III - Realisation: Where the model becomes real
 
-The third part is Arcadia - the canonical living instance of the model described in Parts I and II. Here the abstract becomes concrete: a
-real charter, a real council, real integrations, and a real library. This part is the reveal at the end of the sequence: the model you have
-just learned, instantiated.
+The third part is Arcadia - the canonical living instance of the model described in Parts I and II. Here the abstract becomes concrete: a real charter, a real council, real integrations, and a real library. This part is the reveal at the end of the sequence: the model you have just learned, instantiated.
 
 ### Knowledge Capital - The model instantiated
 
@@ -146,13 +134,8 @@ just learned, instantiated.
 
 ### Arcadia - The living island
 
-- [[Great Library of Arcadia]] - Arcadia's Library as a concrete example: top-level structure, Pillars and Resources, active Streams, and
-  how the model's conventions play out in practice
+- [[Great Library of Arcadia]] - Arcadia's Library as a concrete example: top-level structure, Pillars and Resources, active Streams, and how the model's conventions play out in practice
 
 ## Conclusion
 
-Knowledge Islands is a model for organising knowledge that treats it as a natural, evolving system. The model is portable: any island can
-adopt it by implementing its own [[Knowledge Capital]] - the specific realisation of the model through concepts such as the island's
-charter, council, citizenship, integrations and routing. Arcadia is the Knowledge Island of Knowledge Islands, the Knowledge Capital of
-Knowledge Capitals - a legendary utopia that holds the canonical definition and governance model for the entire Knowledge Islands concept.
-Every knowledge island that adopts the Knowledge Islands model derives its baseline from Arcadia.
+Knowledge Islands is a model for organising knowledge that treats it as a natural, evolving system. The model is portable: any island can adopt it by implementing its own [[Knowledge Capital]] - the specific realisation of the model through concepts such as the island's charter, council, citizenship, integrations and routing. Arcadia is the Knowledge Island of Knowledge Islands, the Knowledge Capital of Knowledge Capitals - a legendary utopia that holds the canonical definition and governance model for the entire Knowledge Islands concept. Every knowledge island that adopts the Knowledge Islands model derives its baseline from Arcadia.

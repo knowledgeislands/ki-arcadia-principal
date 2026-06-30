@@ -11,9 +11,7 @@ author: Written with Claude
 
 ## Overview
 
-Every note follows a consistent physical structure. The rules here govern what sections a note contains, how those sections are organised,
-how content within them is formatted, and how notes reference each other and embed external material. Type-specific extensions are in
-[[Notes]] (Types section); the properties and tags that live in frontmatter are in [[Notes]] (Frontmatter section).
+Every note follows a consistent physical structure. The rules here govern what sections a note contains, how those sections are organised, how content within them is formatted, and how notes reference each other and embed external material. Type-specific extensions are in [[Notes]] (Types section); the properties and tags that live in frontmatter are in [[Notes]] (Frontmatter section).
 
 ---
 
@@ -26,25 +24,21 @@ how content within them is formatted, and how notes reference each other and emb
 
 Each section is separated by a `---` horizontal rule. Type-specific notes may extend this structure with additional footer sections.
 
-**Single-section exception:** If a note has only one H2 section (its Overview), omit the `## Overview` heading - the content follows the H1
-title directly. A heading that labels the only section adds no structure and no navigation value.
+**Single-section exception:** If a note has only one H2 section (its Overview), omit the `## Overview` heading - the content follows the H1 title directly. A heading that labels the only section adds no structure and no navigation value.
 
 ---
 
 ## H1 and Filenames
 
-The H1 heading should use the canonical title of the note. Filenames must avoid characters that are invalid on most filesystems - use `-` as
-a substitute for `:` and `-` where needed. This means the H1 and filename may differ in punctuation; this is expected and not an error.
+The H1 heading should use the canonical title of the note. Filenames must avoid characters that are invalid on most filesystems - use `-` as a substitute for `:` and `-` where needed. This means the H1 and filename may differ in punctuation; this is expected and not an error.
 
 ---
 
 ## Tables
 
-Target a total table width of 200 characters. Pad columns with spaces so that column borders align vertically, making them readable in a
-plain text editor. The separator row should match the width of the widest cell in each column.
+Target a total table width of 200 characters. Pad columns with spaces so that column borders align vertically, making them readable in a plain text editor. The separator row should match the width of the widest cell in each column.
 
-If the content is too wide to fit within 200 characters, collapse all padding so each cell contains only its value with single spaces either
-side of the `|` - no alignment padding.
+If the content is too wide to fit within 200 characters, collapse all padding so each cell contains only its value with single spaces either side of the `|` - no alignment padding.
 
 ### Fits within 200 characters - pad to align
 

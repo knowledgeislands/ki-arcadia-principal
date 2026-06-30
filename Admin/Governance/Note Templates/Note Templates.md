@@ -8,8 +8,7 @@ author: Written with Claude
 
 # Note Templates
 
-Canonical templates for structured note types used across Arcadia. Templates define the expected frontmatter, headings, and sections for
-each note type — ensuring consistent structure regardless of who or what creates the note.
+Canonical templates for structured note types used across Arcadia. Templates define the expected frontmatter, headings, and sections for each note type — ensuring consistent structure regardless of who or what creates the note.
 
 ## Templates
 

@@ -12,13 +12,9 @@ author: Written with Claude
 
 ## Overview
 
-A stream to design the Auto Proposal Research activity - a periodic governance activity that reviews active streams, identifies ideas ready
-for progression, and produces proposal notes with clear rationale and links to source material. The goal is that council meetings are more
-productive because proposals arrive pre-formed: the thinking is documented, the connections are explicit, and the council can evaluate
-rather than reconstruct.
+A stream to design the Auto Proposal Research activity - a periodic governance activity that reviews active streams, identifies ideas ready for progression, and produces proposal notes with clear rationale and links to source material. The goal is that council meetings are more productive because proposals arrive pre-formed: the thinking is documented, the connections are explicit, and the council can evaluate rather than reconstruct.
 
-The stream also covers what "proposal-ready" means in practice - the criteria for promoting a stream idea to a formal proposal, and the
-standard format a proposal note should take.
+The stream also covers what "proposal-ready" means in practice - the criteria for promoting a stream idea to a formal proposal, and the standard format a proposal note should take.
 
 ---
 
@@ -51,15 +47,11 @@ This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment
 
 ## Open Questions
 
-1. **Which activity group?** Tending covers island health and structure; this is more about governance readiness. A dedicated Governance
-   activity group under Activities may be warranted if other governance-facing activities emerge.
+1. **Which activity group?** Tending covers island health and structure; this is more about governance readiness. A dedicated Governance activity group under Activities may be warranted if other governance-facing activities emerge.
 
-2. **What triggers a proposal?** The activity needs a definition of "ready" - otherwise it produces proposals prematurely or misses mature
-   ideas. Likely a combination of: stream status (`in-progress`), presence of a Design section with substantive content, and explicit open
-   questions that have been resolved.
+2. **What triggers a proposal?** The activity needs a definition of "ready" - otherwise it produces proposals prematurely or misses mature ideas. Likely a combination of: stream status (`in-progress`), presence of a Design section with substantive content, and explicit open questions that have been resolved.
 
-3. **Who reviews the proposals?** The activity produces proposal notes; council members decide whether to ratify. The activity itself should
-   not make that call - it surfaces; humans decide.
+3. **Who reviews the proposals?** The activity produces proposal notes; council members decide whether to ratify. The activity itself should not make that call - it surfaces; humans decide.
 
 ## Adherence
 

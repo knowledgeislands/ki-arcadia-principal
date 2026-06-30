@@ -8,8 +8,7 @@ author: Written with Claude
 
 # Policies
 
-Standing rules that govern behaviour on Arcadia outside of the formal Decision Record process. Policies record persistent operational
-constraints — things the island always does or never does — without requiring a full proposal lifecycle.
+Standing rules that govern behaviour on Arcadia outside of the formal Decision Record process. Policies record persistent operational constraints — things the island always does or never does — without requiring a full proposal lifecycle.
 
 ## Policies
 

@@ -12,27 +12,21 @@ author: Written with Claude
 
 ## Overview
 
-A focused review of wikilink health across the repository. Surfaces broken outlinks (wikilinks pointing to files that do not exist) and
-orphan notes (files with no incoming links). Run before or after a Structural Audit, or whenever navigation across the repository feels
-incomplete.
+A focused review of wikilink health across the repository. Surfaces broken outlinks (wikilinks pointing to files that do not exist) and orphan notes (files with no incoming links). Run before or after a Structural Audit, or whenever navigation across the repository feels incomplete.
 
 ---
 
 ## When
 
-Adhoc - _"ki wikilink review"_. Typically paired with [[Structural Audit]] or [[Inbox Review]]. Run any time new notes are created in bulk
-or a section of the repository has been significantly restructured.
+Adhoc - _"ki wikilink review"_. Typically paired with [[Structural Audit]] or [[Inbox Review]]. Run any time new notes are created in bulk or a section of the repository has been significantly restructured.
 
 ---
 
 ## What It Does
 
-1. Query for broken outlinks - wikilinks that point to a file which does not exist; decide whether to create the missing note or correct the
-   link
-2. Query for orphan notes - files with no backlinks; decide whether to link them from an appropriate index or parent note, or whether they
-   are genuinely standalone
-3. Cross-reference both lists against [[Inbox Review]] - new notes in `+/` that haven't been linked yet are the most common source of
-   orphans
+1. Query for broken outlinks - wikilinks that point to a file which does not exist; decide whether to create the missing note or correct the link
+2. Query for orphan notes - files with no backlinks; decide whether to link them from an appropriate index or parent note, or whether they are genuinely standalone
+3. Cross-reference both lists against [[Inbox Review]] - new notes in `+/` that haven't been linked yet are the most common source of orphans
 
 ---
 
@@ -78,7 +72,6 @@ SORT file.path ASC
 ## Notes
 
 - Requires the [Dataview](https://github.com/blacksmithgu/obsidian-dataview) plugin to be installed and enabled
-- The broken links query only catches simple single-level wikilinks - path-based links (e.g. `[[Folder/Note]]`) require the query to be
-  extended
+- The broken links query only catches simple single-level wikilinks - path-based links (e.g. `[[Folder/Note]]`) require the query to be extended
 - Not all orphan notes are problems - some reference notes are genuinely standalone; use judgement
 - Do not remove a link without first checking whether the target note should exist

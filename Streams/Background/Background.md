@@ -10,8 +10,7 @@ author: Written with Claude
 
 ## Overview
 
-Background streams are projects and ideas that are alive and being slowly pursued, but are not the current focus of attention. They surface
-periodically and may graduate to Active when circumstances change.
+Background streams are projects and ideas that are alive and being slowly pursued, but are not the current focus of attention. They surface periodically and may graduate to Active when circumstances change.
 
 ---
 

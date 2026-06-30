@@ -13,13 +13,9 @@ author: Mixed
 
 ## Overview
 
-Each Knowledge Island is fronted by its own MCP server. Agents read from and write to the island only through the MCP - never via direct
-file access. The MCP becomes the canonical interface to the island; the file system becomes an implementation detail.
+Each Knowledge Island is fronted by its own MCP server. Agents read from and write to the island only through the MCP - never via direct file access. The MCP becomes the canonical interface to the island; the file system becomes an implementation detail.
 
-This inverts the current model. Today, tools connect to the island - Claude reads files, automations run scripts against the file tree, and
-conventions like [[Notes]] and [[Admin/Governance/Conventions/Routing Rules|Routing Rules]] are honoured by convention rather than by
-enforcement. With the proposal, agents connect to the island's MCP, and the MCP mediates and enforces all access. The file tree continues to
-exist - Obsidian and humans still touch it directly - but agent traffic is routed through the gateway.
+This inverts the current model. Today, tools connect to the island - Claude reads files, automations run scripts against the file tree, and conventions like [[Notes]] and [[Admin/Governance/Conventions/Routing Rules|Routing Rules]] are honoured by convention rather than by enforcement. With the proposal, agents connect to the island's MCP, and the MCP mediates and enforces all access. The file tree continues to exist - Obsidian and humans still touch it directly - but agent traffic is routed through the gateway.
 
 ---
 
@@ -27,27 +23,17 @@ exist - Obsidian and humans still touch it directly - but agent traffic is route
 
 Three benefits, in order of priority.
 
-**Enforced construction.** The MCP can validate at write time that any new or modified note conforms to the island's conventions -
-frontmatter, naming, routing, link integrity. An agent cannot create a malformed note because the tool surface refuses to accept one. This
-makes [[Notes]], [[Admin/Governance/Conventions/Routing Rules|Routing Rules]], and [[Tags]] executable contracts rather than aspirational
-documents.
+**Enforced construction.** The MCP can validate at write time that any new or modified note conforms to the island's conventions - frontmatter, naming, routing, link integrity. An agent cannot create a malformed note because the tool surface refuses to accept one. This makes [[Notes]], [[Admin/Governance/Conventions/Routing Rules|Routing Rules]], and [[Tags]] executable contracts rather than aspirational documents.
 
-**Permissioning.** The MCP exposes explicit read and write operations per agent class. A Visitor agent might be granted `read_note` and
-`search` only; a Citizen agent gets writes; a Council Member gets governance operations. Today everything is implicit - any agent with file
-system access can do anything.
+**Permissioning.** The MCP exposes explicit read and write operations per agent class. A Visitor agent might be granted `read_note` and `search` only; a Citizen agent gets writes; a Council Member gets governance operations. Today everything is implicit - any agent with file system access can do anything.
 
-**Encapsulation.** The internal layout becomes an implementation detail. The MCP exposes a stable tool surface (`get_note(path)`,
-`search(query)`, etc.); the underlying file structure can change without breaking agents that consume the island. The same tool surface
-could be backed by Obsidian today and a graph database tomorrow.
+**Encapsulation.** The internal layout becomes an implementation detail. The MCP exposes a stable tool surface (`get_note(path)`, `search(query)`, etc.); the underlying file structure can change without breaking agents that consume the island. The same tool surface could be backed by Obsidian today and a graph database tomorrow.
 
 ---
 
 ## What it Enables
 
-Multi-agent access with role-scoped permissions, audited centrally. Auditability of writes - the MCP logs every mutation with agent,
-timestamp, and diff. Portability - swap the storage backend without touching agent code. Cross-island federation - a single agent can hold
-MCP connections to several islands and move knowledge between them under controlled rules. Tooling separation - authoring tools (Obsidian,
-manual edits) remain unmediated for humans; consumption and automation go through the gateway.
+Multi-agent access with role-scoped permissions, audited centrally. Auditability of writes - the MCP logs every mutation with agent, timestamp, and diff. Portability - swap the storage backend without touching agent code. Cross-island federation - a single agent can hold MCP connections to several islands and move knowledge between them under controlled rules. Tooling separation - authoring tools (Obsidian, manual edits) remain unmediated for humans; consumption and automation go through the gateway.
 
 ---
 
@@ -72,10 +58,8 @@ This is a sketch, not a specification. The actual surface is part of the design 
 1. **One server per island or one server many islands?** Cleanest isolation versus operational simplicity.
 2. **Write-time vs read-time enforcement?** Strict (reject non-conforming writes) versus forgiving (flag drift on read).
 3. **How does the MCP coexist with Obsidian's direct file access?** Likely: humans bypass, agents do not.
-4. **What's the bootstrapping path?** Build the MCP against the existing file tree and onboard agents incrementally, or wait for a full
-   design before any migration.
-5. **Relationship to [[Cowork Configuration Layers]]?** The Cowork plugin already exposes some KI operations via skills and prompts. An
-   Island MCP would either subsume or complement that surface.
+4. **What's the bootstrapping path?** Build the MCP against the existing file tree and onboard agents incrementally, or wait for a full design before any migration.
+5. **Relationship to [[Cowork Configuration Layers]]?** The Cowork plugin already exposes some KI operations via skills and prompts. An Island MCP would either subsume or complement that surface.
 
 ---
 
