@@ -1,36 +1,36 @@
-# Knowledge Islands repo config — read by the knowledgeislands-repo skill.
+# Knowledge Islands repo config — read by the ki-repo skill.
 # One [table] per skill that needs per-repo options.
-[knowledgeislands-repo]
+[ki-repo]
 visibility = "private"   # "public" | "private"
 # This repo fully conforms, so it declares no check overrides. To diverge, add a
-# [knowledgeislands-repo.checks] table with one boolean per check (true = enforce).
+# [ki-repo.checks] table with one boolean per check (true = enforce).
 
-# Read by the knowledgeislands-engineering skill (the common build/lint/test toolchain).
-[knowledgeislands-engineering]
+# Read by the ki-engineering skill (the common build/lint/test toolchain).
+[ki-engineering]
 # This repo fully conforms, so it declares no check overrides. To diverge, add a
-# [knowledgeislands-engineering.checks] table with one boolean per check (true = enforce).
+# [ki-engineering.checks] table with one boolean per check (true = enforce).
 
-# Read by the knowledgeislands-kb skill (the Knowledge Islands knowledge-base standard).
+# Read by the ki-kb-base skill (the Knowledge Islands knowledge-base standard).
 # Presence opts this base into the kb standard; it uses the canonical zone names, so it
-# declares no [knowledgeislands-kb.zones] aliases / required_frontmatter / preflight.
-[knowledgeislands-kb]
+# declares no [ki-kb-base.zones] aliases / required_frontmatter / preflight.
+[ki-kb-base]
 
-# Read by the knowledgeislands-streams skill (the Streams zone + Enactment Process).
+# Read by the ki-kb-streams skill (the Streams zone + Enactment Process).
 # Presence opts the Streams zone into the Enactment Process; it uses the defaults.
-[knowledgeislands-streams]
+[ki-kb-streams]
 
 # Tokenomics governance — audits the standing context surface for this environment.
 # MCP server count is user-scoped (not repo-controlled); the raised budget documents
 # the acknowledged state (same as the harness).
 # Decision Records — island adopts DRs for significant structural decisions.
 # Decisions live in Admin/Governance/Decisions/ under the Governance arm of the Admin zone.
-[knowledgeislands-decision-records]
+[ki-decision-records]
 scope = "KI-ARCADIA"
 repo_type = "kb"
 
-[knowledgeislands-tokenomics]
+[ki-tokenomics]
 headroom = "recommended"
 preferred_model = "sonnet"
 
-[knowledgeislands-tokenomics.budgets]
+[ki-tokenomics.budgets]
 mcp_servers = 20   # 19 user-scoped at time of first audit (2026-06-22); revisit when scoped
