@@ -11,7 +11,7 @@ author: Written with Claude
 
 ## Overview
 
-Several patterns are implemented independently in both `arcadia-principal` and `kit-legal`, with no corresponding `knowledgeislands-*` skill to govern them. Any new island that adopts Knowledge Islands would need to re-implement these patterns from scratch. This stream captures the extraction candidates - patterns that warrant codification as portable skills.
+Several patterns are implemented independently in both `ki-arcadia-principal` and `kit-legal`, with no corresponding `knowledgeislands-*` skill to govern them. Any new island that adopts Knowledge Islands would need to re-implement these patterns from scratch. This stream captures the extraction candidates - patterns that warrant codification as portable skills.
 
 Identified during the Admin normalisation session (June 2026, GDR-KI-ARCADIA-003 follow-up).
 

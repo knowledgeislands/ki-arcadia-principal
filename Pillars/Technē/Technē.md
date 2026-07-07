@@ -129,7 +129,7 @@ techne/
 ├── platform/         # orchestrator, scheduler, dispatch, memory, policy-engine
 ├── agents/           # per-agent directories
 ├── telemetry/        # Grafana, Alloy, Prometheus, Loki
-├── knowledge/        # arcadia-principal, second-brain
+├── knowledge/        # ki-arcadia-principal, second-brain
 ├── docs/             # ADRs, architecture, concepts, operations
 └── scripts/
 ```

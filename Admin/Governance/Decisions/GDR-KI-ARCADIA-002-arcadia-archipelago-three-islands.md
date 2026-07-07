@@ -6,7 +6,7 @@ author: Written with Claude
 decision_depends_on: ['SDR-KI-ARCADIA-001']
 ---
 
-# GDR-KI-ARCADIA-002: The Arcadia Archipelago — Three Islands
+# GDR-KI-ARCADIA-002: Arcadia's repositories — the island and the framework
 
 **Status:** Accepted
 
@@ -14,26 +14,26 @@ decision_depends_on: ['SDR-KI-ARCADIA-001']
 
 ## Context
 
-The Knowledge Islands strategy (SDR-KI-ARCADIA-001) structures each domain of human concern as an independent territory with its own governance. Within the Knowledge domain, the Arcadia territory currently operates through three repos: `arcadia-principal`, `arcadia-agentic-harness`, and `arcadia-website`. Their boundaries and relationships have remained implicit. Concerns have blurred — where does new work go? Who holds authority over the model? What can the harness decide independently? Without explicit island-level separation of concerns, these questions are settled by convention or accident rather than by deliberate structure.
+The Knowledge Islands strategy (SDR-KI-ARCADIA-001) structures each domain of human concern as an independent territory with its own governance. **Knowledge Islands** is the portable framework — the model, the `ki-*` skill family, and the `KI-` decision-record scope — and **Arcadia** is its first and canonical island: the exemplar base that proves the model in practice. The work of Arcadia spans three repositories in the `knowledgeislands` organisation, and their concerns differ: one is the island itself, and two are framework-level infrastructure that any island can adopt or is served by. Repository names carry that distinction, and their boundaries are stated here so new work has a home rather than being placed by convention or accident.
 
 ## Decision
 
-The Knowledge domain of Arcadia manifests as three islands, each with a distinct and non-overlapping concern:
+The Arcadia work is held in three repositories, each with a distinct and non-overlapping concern:
 
-**arcadia-principal** is the **source of knowledge**. It owns the Knowledge Islands philosophy and model. It is the exemplar island: the one that proves the model in practice. New KI concepts are developed and validated here. Pillars are authoritative; the canonical portable model that other islands derive from lives here. arcadia-principal does not deliver tooling.
+**`ki-arcadia-principal`** is the **canonical base** — the first Knowledge Island and the source of the KI model. It owns the Knowledge Islands philosophy and model; it is the exemplar island that proves the model in practice. New KI concepts are developed and validated here, its Pillars are authoritative, and the canonical portable model that other islands derive from lives here. It does not deliver tooling.
 
-**arcadia-agentic-harness** is the **realisation**. It owns general-purpose KI tooling — skills, agent definitions, and evals — that any island can adopt. It receives patterns proven in arcadia-principal and generalises them into reusable instruments. The harness does not originate philosophy; it makes philosophy usable. Skills in the harness cite source notes from arcadia-principal and do not fork them.
+**`ki-agentic-harness`** is the **framework's general tooling** (scope `KI-HARNESS`). It holds the skills, agent definitions, MCP wrappers, and evals that any island adopts. It is framework-level, not Arcadia-territory-scoped: it receives patterns proven in `ki-arcadia-principal` and generalises them into reusable instruments. The harness does not originate philosophy; it makes philosophy usable. Skills in the harness cite source notes from `ki-arcadia-principal` and do not fork them.
 
-**arcadia-website** is the **publication**. It disseminates the philosophy outward from arcadia-principal to the world. It does not originate philosophy or tooling; it translates and publishes.
+**`ki-website`** is the **framework's public site** (knowledgeislands.info). It is framework-level: it disseminates the Knowledge Islands model outward to the world. It does not originate philosophy or tooling; it translates and publishes.
 
-The canonical flow is: **principal** (prove and model) → **harness** (generalise and realise) → **website** (disseminate and publish).
+The canonical flow is: **base** (prove and model) → **harness** (generalise into portable tooling) → **website** (disseminate and publish).
 
 ## Consequences
 
-- Content decisions about the KI model are made in arcadia-principal under its Enactment Process.
-- The harness pulls from arcadia-principal; it does not push decisions back.
-- arcadia-website publishes from arcadia-principal; it does not independently develop knowledge.
-- This island-level separation applies as a pattern to future territories: each domain may have a source island, a realisation island, and a publication island, structured to the same principle.
+- Content decisions about the KI model are made in `ki-arcadia-principal` under its Enactment Process.
+- The harness pulls from `ki-arcadia-principal`; it does not push decisions back.
+- `ki-website` publishes the framework outward; it does not independently develop knowledge.
+- The base/framework separation applies as a pattern to future islands: each adopts the framework's shared tooling and public presence rather than standing up its own, and holds its own knowledge in its principal repository.
 
 ## References
 

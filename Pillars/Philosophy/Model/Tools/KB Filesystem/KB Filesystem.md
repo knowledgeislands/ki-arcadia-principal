@@ -26,4 +26,4 @@ MCP server that exposes this island's markdown knowledge base as read/write tool
 
 ## Notes
 
-The primary programmatic interface to arcadia-principal. Path safety is enforced server-side. The Read tool in Claude Code fails silently on paths containing spaces — use `Bash cat "path"` for those.
+The primary programmatic interface to ki-arcadia-principal. Path safety is enforced server-side. The Read tool in Claude Code fails silently on paths containing spaces — use `Bash cat "path"` for those.

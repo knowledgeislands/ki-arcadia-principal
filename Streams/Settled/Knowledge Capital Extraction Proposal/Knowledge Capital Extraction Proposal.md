@@ -20,7 +20,7 @@ This proposal was overtaken by two sessions that did the underlying work directl
 
 **Session: capital-as-governance-seat (commit `5ccfa16`)** — retired "Knowledge Capital" as a concept name for an island's realisation layer. "Capital" now means the governance-seat role held by a territory's principal island — not a folder or zone.
 
-Key files updated in those sessions: SDR-KI-ARCADIA-003, SDR-KI-ARCADIA-005, Territories and Archipelagos, Glossary, How an Island Takes Shape, Jurisdiction, Charter, Authoring conventions, arcadia-website.
+Key files updated in those sessions: SDR-KI-ARCADIA-003, SDR-KI-ARCADIA-005, Territories and Archipelagos, Glossary, How an Island Takes Shape, Jurisdiction, Charter, Authoring conventions, ki-website.
 
 **GDR-KI-ARCADIA-003** is the formal decision record for the Admin zone restructure that this proposal anticipated: island-specific realisation (Charter, Council) now lives canonically in `Admin/Governance/`, not in a `Knowledge Capitals/` folder.
 

@@ -26,7 +26,7 @@ This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment
 
 ## Status
 
-Pending - not yet started. Depends on arcadia-principal governance being stable.
+Pending - not yet started. Depends on ki-arcadia-principal governance being stable.
 
 ---
 
@@ -37,7 +37,7 @@ Pending - not yet started. Depends on arcadia-principal governance being stable.
 3. Create `Pillars/Admin/Governance/` following the standard pattern (Identity, Physical Locations, Routing Rules, Glossary, Governance instance)
 4. Create or update `CLAUDE.md` to reflect the Knowledge Islands model
 5. Create `Pillars/Philosophy/Known Lands.md` - the satellite's personal chart of known islands
-6. Link back to arcadia-principal concepts where relevant
+6. Link back to ki-arcadia-principal concepts where relevant
 
 ## Adherence
 

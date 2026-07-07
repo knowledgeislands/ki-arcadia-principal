@@ -9,7 +9,7 @@ status: background
 
 # Conventions: Make Implicit Explicit
 
-Systematically identify conventions in arcadia-principal that are asserted without documented rationale, and add the _why_ alongside the _what_ for each one.
+Systematically identify conventions in ki-arcadia-principal that are asserted without documented rationale, and add the _why_ alongside the _what_ for each one.
 
 ## Governance
 

@@ -16,9 +16,9 @@ How the Knowledge Islands tooling layer fits together: what each component is, w
 
 | Component               | Role                                                                          | Repo                      |
 | ----------------------- | ----------------------------------------------------------------------------- | ------------------------- |
-| arcadia-principal       | Knowledge base — the source of truth; all tooling serves or publishes from it | `arcadia-principal`       |
-| arcadia-agentic-harness | Agentic harness †                                                             | `arcadia-agentic-harness` |
-| arcadia-website         | Publication layer ‡                                                           | `arcadia-website`         |
+| ki-arcadia-principal    | Knowledge base — the source of truth; all tooling serves or publishes from it | `ki-arcadia-principal`    |
+| ki-agentic-harness      | Agentic harness †                                                             | `ki-agentic-harness`      |
+| ki-website              | Publication layer ‡                                                           | `ki-website`              |
 | mcp-git-audit           | Git fleet auditor — surfaces repo state across all workspace repositories     | `mcp-git-audit`           |
 | mcp-ki-kb-fs            | KB filesystem — read/write access to KB notes via MCP                         | `mcp-ki-kb-fs`            |
 | mcp-kb-notion-mirror    | Notion mirror — publishes KB notes into Notion with URL back-writes           | `mcp-kb-notion-mirror`    |
@@ -26,19 +26,19 @@ How the Knowledge Islands tooling layer fits together: what each component is, w
 | mcp-m365                | Microsoft 365 — Outlook, OneDrive, and Power Automate via Microsoft Graph     | `mcp-m365`                |
 | mcp-claude-housekeeping | Claude housekeeping — audits Claude app state accumulation on macOS           | `mcp-claude-housekeeping` |
 
-† **arcadia-agentic-harness role** — agentic harness: governance skills, agents, and MCP configuration for working on and with the KB.
+† **ki-agentic-harness role** — the framework's general tooling: governance skills, agents, and MCP configuration any island adopts for working on and with a KB. Framework-level, not Arcadia-territory-scoped.
 
-‡ **arcadia-website role** — publication layer: the public realisation of arcadia-principal (see [[Arcadia]]).
+‡ **ki-website role** — the Knowledge Islands framework's public site at knowledgeislands.info (see [[Arcadia]]). Framework-level, not Arcadia-territory-scoped.
 
 ## Relationships
 
 ```text
-arcadia-principal (KB — source of truth)
+ki-arcadia-principal (KB — source of truth)
 ├── ← mcp-ki-kb-fs reads/writes notes
 ├── ← mcp-kb-notion-mirror publishes notes to Notion
-└── → arcadia-website publishes KB outward (pipeline not yet automated — see [[Arcadia]])
+└── → ki-website publishes KB outward (pipeline not yet automated — see [[Arcadia]])
 
-arcadia-agentic-harness (governance tooling)
+ki-agentic-harness (governance tooling)
 ├── ships skills that govern how work is done on the KB
 ├── ships agents that orchestrate governance tasks
 └── configures which MCPs are connected to the Claude workspace
@@ -54,10 +54,10 @@ MCPs (capability surface — external services)
 
 The ecosystem has four layers, each with a distinct responsibility:
 
-1. **Knowledge** (`arcadia-principal`) — what is known; the authoritative record
-2. **Governance** (`arcadia-agentic-harness`) — how work is done; skills and conventions
+1. **Knowledge** (`ki-arcadia-principal`) — what is known; the authoritative record
+2. **Governance** (`ki-agentic-harness`) — how work is done; skills and conventions
 3. **Capability** (MCP servers) — what can be acted on; external services and tools
-4. **Publication** (`arcadia-website`) — what is made visible; the public realisation
+4. **Publication** (`ki-website`) — what is made visible; the public realisation
 
 The user works at the intersection of all four, via Claude Code, with the harness skills shaping how each layer is accessed.
 

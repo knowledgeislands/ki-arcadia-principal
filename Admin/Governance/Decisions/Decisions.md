@@ -19,7 +19,7 @@ Rows are ordered by reveal order — the logical sequence in which the decisions
 | [SDR-KI-ARCADIA-004][sdr004] | The Enactment Process                                   | Accepted | 2026-06-25 |
 | [SDR-KI-ARCADIA-005][sdr005] | Territories, Archipelagos, and the Constitutional Layer | Accepted | 2026-06-25 |
 | [GDR-KI-ARCADIA-001][gdr001] | Adopting Decision Records                               | Accepted | 2026-06-25 |
-| [GDR-KI-ARCADIA-002][gdr002] | The Arcadia Archipelago — Three Islands                 | Accepted | 2026-06-25 |
+| [GDR-KI-ARCADIA-002][gdr002] | Arcadia's repositories — the island and the framework   | Accepted | 2026-06-25 |
 | [GDR-KI-ARCADIA-003][gdr003] | Admin Zone — Governance and Operations                  | Accepted | 2026-06-25 |
 | [SDR-KI-ARCADIA-006][sdr006] | Agents in the Knowledge Islands Model                   | Accepted | 2026-06-25 |
 | [SDR-KI-ARCADIA-007][sdr007] | The Great Library of Arcadia                            | Accepted | 2026-06-25 |

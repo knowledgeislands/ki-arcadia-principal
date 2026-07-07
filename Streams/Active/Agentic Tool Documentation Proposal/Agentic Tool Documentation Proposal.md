@@ -9,7 +9,7 @@ status: active
 
 # Agentic Tool Documentation
 
-Document the agentic harness and its connected MCP servers as KB notes, establishing a human-legible map of the tool ecosystem and its relationships to arcadia-principal and arcadia-website.
+Document the agentic harness and its connected MCP servers as KB notes, establishing a human-legible map of the tool ecosystem and its relationships to ki-arcadia-principal and ki-website.
 
 ## Governance
 
@@ -31,7 +31,7 @@ Gaps being filled:
 
 **Phase 2 — System map**: a note in `Pillars/Technē/` that shows how the harness, MCPs, KB, and website interrelate as a system.
 
-**Phase 3 — Realisation principle**: author `Pillars/Philosophy/Realisation/Arcadia/Arcadia.md` to formally state that arcadia-website is the public realisation of arcadia-principal and name the current architectural gap.
+**Phase 3 — Realisation principle**: author `Pillars/Philosophy/Realisation/Arcadia/Arcadia.md` to formally state that ki-website is the public realisation of ki-arcadia-principal and name the current architectural gap.
 
 ## Adherence
 

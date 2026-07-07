@@ -24,7 +24,7 @@ Fixed parameters that distinguish this Knowledge Island. Automations and skill p
 | --- | --- |
 | **Territory name** | Arcadia |
 | **Island name** | Arcadia Principal |
-| **Repository folder** | `arcadia-principal` |
+| **Repository folder** | `ki-arcadia-principal` |
 | **Skill name** | `arcadia-principal` |
 | **Skill triggers** | "save to Arcadia", "add to Arcadia", "search Arcadia", "what does Arcadia say about", "update the Arcadia notes on" |
 | **Task ID prefix** | `arcadia-principal-` |
