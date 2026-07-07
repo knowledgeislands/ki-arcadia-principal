@@ -1,10 +1,10 @@
 {
-  "name": "@knowledgeislands/arcadia-principal",
+  "name": "@knowledgeislands/ki-arcadia-principal",
   "description": "The core knowledge repository of the Knowledge Islands project — governance base, evolving KB, and decision record.",
   "version": "1.0.0",
   "author": "kris@kris.me.uk",
   "bugs": {
-    "url": "https://github.com/knowledgeislands/arcadia-principal/issues"
+    "url": "https://github.com/knowledgeislands/ki-arcadia-principal/issues"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.2",
@@ -20,7 +20,7 @@
   "engines": {
     "node": ">=22.0.0"
   },
-  "homepage": "https://github.com/knowledgeislands/arcadia-principal#readme",
+  "homepage": "https://github.com/knowledgeislands/ki-arcadia-principal#readme",
   "keywords": [
     "arcadia",
     "knowledge-base",
@@ -39,7 +39,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/knowledgeislands/arcadia-principal.git"
+    "url": "git+https://github.com/knowledgeislands/ki-arcadia-principal.git"
   },
   "scripts": {
     "clean": "rm -rf node_modules",
