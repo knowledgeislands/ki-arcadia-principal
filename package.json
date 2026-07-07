@@ -58,7 +58,14 @@
     "ki:lint:types": "tsc --noEmit",
     "ki:skills:link:project": "bun $HOME/.claude/skills/knowledgeislands-bootstrap/scripts/link-skills.ts",
     "ki:verify": "bun run ki:lint:check && bun run ki:lint:types && bun run ki:lint:md:check && bun run ki:knip",
-    "prepare": "husky"
+    "prepare": "husky",
+    "ki:authoring:audit": "bun .claude/skills/ki-authoring/scripts/audit-authoring.ts .",
+    "ki:decision-records:audit": "bun .claude/skills/ki-decision-records/scripts/audit-drs.ts .",
+    "ki:engineering:audit": "bun .claude/skills/ki-engineering/scripts/audit-engineering.ts .",
+    "ki:kb-base:audit": "bun .claude/skills/ki-kb-base/scripts/audit-kb.ts .",
+    "ki:kb-streams:audit": "bun .claude/skills/ki-kb-streams/scripts/audit-streams.ts .",
+    "ki:repo:audit": "bun .claude/skills/ki-repo/scripts/audit-repo.ts .",
+    "ki:tokenomics:audit": "bun .claude/skills/ki-tokenomics/scripts/audit-tokenomics.ts ."
   },
   "type": "module"
 }
