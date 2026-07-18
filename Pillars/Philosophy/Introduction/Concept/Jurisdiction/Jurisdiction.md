@@ -14,11 +14,11 @@ At the territory level, jurisdiction flows through the principal island: it carr
 
 Three structural patterns define how jurisdiction is administered:
 
-| Pattern | Description | Typical use § |
-| --- | --- | --- |
-| **Council** | A group of members with shared ratification authority. † | Collaborative or multi-governor islands ¶ |
-| **Single-governor** | One person governs alone; ratification is informal — the governor decides. | Personal or solo-run islands |
-| **Joint-governor** | Two or more people share governance without a formal council structure. ‡ | Small collaborative projects ‖ |
+| Pattern             | Description                                                                | Typical use §                             |
+| ------------------- | -------------------------------------------------------------------------- | ----------------------------------------- |
+| **Council**         | A group of members with shared ratification authority. †                   | Collaborative or multi-governor islands ¶ |
+| **Single-governor** | One person governs alone; ratification is informal — the governor decides. | Personal or solo-run islands              |
+| **Joint-governor**  | Two or more people share governance without a formal council structure. ‡  | Small collaborative projects ‖            |
 
 † **Council** — changes require council review and ratification.
 

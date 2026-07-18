@@ -39,17 +39,17 @@ The constitutional baseline required of any Knowledge Island. Not subject to the
 
 Activities that keep the island structurally sound, content-healthy, and free of stale or orphaned material - spanning daily automations through to weekly reviews and deeper adhoc audits.
 
-| Activity | Type | When | Summary |
-| --- | --- | --- | --- |
-| [[Scheduled Task Audit]] | Scheduled | Each working day at 05:00 | Reconciles live scheduled task prompts against island notes ‡ |
-| [[Health Check]] | Scheduled | Mondays at 08:00 | Reviews structural drift, skill alignment, and content health § |
-| [[Knowledge Rebuild]] | Scheduled | Wednesdays at 07:00 | Reconstructs Claude's auto-memory from canonical meta notes ¶ |
-| [[Inbox Review]] | Conversational | _"ki inbox review"_ | Weekly - files notes held in the `+/` inbox ‖ |
-| [[Asset Audit]] | Conversational | _"ki asset audit"_ | Weekly - surfaces unlinked assets and removes redundant ones |
-| [[Status Review]] | Conversational | _"ki status review"_ | Weekly - updates `status` frontmatter when a note's standing shifts |
-| [[Structural Audit]] | Conversational | _"ki structural audit"_ | Adhoc - structural review of a section or the whole repository |
-| [[Wikilink Review]] | Conversational | _"ki wikilink review"_ | Adhoc - surfaces broken wikilinks and orphan notes |
-| [[Convergence Check]] | Conversational | _"ki convergence check"_ | Adhoc - compares shared notes across islands; cross-pollinates †† |
+| Activity                 | Type           | When                      | Summary                                                             |
+| ------------------------ | -------------- | ------------------------- | ------------------------------------------------------------------- |
+| [[Scheduled Task Audit]] | Scheduled      | Each working day at 05:00 | Reconciles live scheduled task prompts against island notes ‡       |
+| [[Health Check]]         | Scheduled      | Mondays at 08:00          | Reviews structural drift, skill alignment, and content health §     |
+| [[Knowledge Rebuild]]    | Scheduled      | Wednesdays at 07:00       | Reconstructs Claude's auto-memory from canonical meta notes ¶       |
+| [[Inbox Review]]         | Conversational | _"ki inbox review"_       | Weekly - files notes held in the `+/` inbox ‖                       |
+| [[Asset Audit]]          | Conversational | _"ki asset audit"_        | Weekly - surfaces unlinked assets and removes redundant ones        |
+| [[Status Review]]        | Conversational | _"ki status review"_      | Weekly - updates `status` frontmatter when a note's standing shifts |
+| [[Structural Audit]]     | Conversational | _"ki structural audit"_   | Adhoc - structural review of a section or the whole repository      |
+| [[Wikilink Review]]      | Conversational | _"ki wikilink review"_    | Adhoc - surfaces broken wikilinks and orphan notes                  |
+| [[Convergence Check]]    | Conversational | _"ki convergence check"_  | Adhoc - compares shared notes across islands; cross-pollinates ††   |
 
 ‡ Compares live scheduled task prompts against island notes; reconciles any drift; runs first before other automations.
 

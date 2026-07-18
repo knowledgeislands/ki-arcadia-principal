@@ -97,18 +97,18 @@ For Soft violations that are intentionally retained, the note carrying the excep
 | External reference material § | `Pillars` | Soft | Primary record belongs in Resources; may link ¶ |
 | References to Pillars notes | `Resources` | Hard | Resources content is independent; must not point inward ‖ |
 | References to Resources notes | `Pillars` | None | Pillars may link outward to Resources freely |
-| Named island entities †† | `Pillars/Knowledge Islands` | Hard |  |
+| Named island entities †† | `Pillars/Knowledge Islands` | Hard | |
 | Named island entities | `Pillars/Philosophy/Admin/Governance` | None | KC is island-specific by design |
 | Arcadia as custodian of Knowledge Islands | `Pillars/Knowledge Islands` | None | One named exception ‡‡ |
 | KC operational content | `Pillars/Knowledge Islands` | Hard | Prevents bleed-back into the portable framework |
 | KI framework content | `Pillars/Admin/Governance` | None | KC may freely reference KI |
-| Named agents §§ | `Pillars/Philosophy/Model/Agents` | Hard |  |
+| Named agents §§ | `Pillars/Philosophy/Model/Agents` | Hard | |
 | Named agents | `Pillars/Philosophy/Model/Activities` | Soft | Capability statements permitted ¶¶ |
 | Named agents | `Pillars/Admin/Governance/Agents` | None | KC agent config is inherently specific |
-| Named activities | `Pillars/Philosophy/Model/Agents` | Soft |  |
+| Named activities | `Pillars/Philosophy/Model/Agents` | Soft | |
 | Named activities | `Pillars/Admin/Governance/Agents` | None | KC agent config may list assigned activities |
 | Specific tools or integrations | `Pillars/Philosophy/Model/Conventions` | Hard | Generic capability references permitted |
-| Specific tools or integrations | `Pillars/Philosophy/Model/Processes` | Hard |  |
+| Specific tools or integrations | `Pillars/Philosophy/Model/Processes` | Hard | |
 | Specific tools or integrations | `Pillars/Admin/Governance/Tools` | None | KC tools config is inherently specific |
 | KM/PKM/KB terminology | `Pillars` | Soft | Historical context permitted; document inline |
 

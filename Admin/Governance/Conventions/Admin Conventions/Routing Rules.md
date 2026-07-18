@@ -19,11 +19,11 @@ Routing rules specific to this island, supplementing the general conventions in 
 
 Notes route to one of three zones depending on whether the content is portable, island-specific governance, or island-specific operations:
 
-| Zone | Folder | Concern | Key question † |
-| --- | --- | --- | --- |
-| Philosophy | `Pillars/Philosophy/` | The KI concept, architecture, and governance framework | What is the KI system, generically? ‡ |
-| Governance | `Admin/Governance/` | Arcadia's identity, decisions, conventions, policies, and templates | What defines this island? § |
-| Operations | `Admin/Operations/` | Arcadia's day-to-day running — activities, processes, skills | How does this island operate? |
+| Zone       | Folder                | Concern                                                             | Key question †                        |
+| ---------- | --------------------- | ------------------------------------------------------------------- | ------------------------------------- |
+| Philosophy | `Pillars/Philosophy/` | The KI concept, architecture, and governance framework              | What is the KI system, generically? ‡ |
+| Governance | `Admin/Governance/`   | Arcadia's identity, decisions, conventions, policies, and templates | What defines this island? §           |
+| Operations | `Admin/Operations/`   | Arcadia's day-to-day running — activities, processes, skills        | How does this island operate?         |
 
 † **Key question** — the discriminating question for routing a note into each zone.
 
