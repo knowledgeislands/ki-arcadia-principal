@@ -16,4 +16,13 @@ Streams currently receiving active attention - projects being worked on now.
 
 ## Streams
 
-| Topic | Status | Priority | | --------------------------------- | ------------------- | -------- | -------- | | [[Tooling Rollout Proposal]] | `in-progress` | `high` | | [[Boundary Rules Proposal]] | `draft` | `urgent` | | [[Authoring Layers Proposal]] | `draft` | `medium` | | [[Index Review]] | `draft` | `medium` | | [[Auto Proposal Pipeline Proposal | Proposal Pipeline]] | `draft` | `medium` | | [[Intentional Proposal]] | `draft` | `medium` | | [[Page Registry Proposal]] | `draft` | `medium` |
+| Topic                                                    | Status        | Priority |
+| -------------------------------------------------------- | ------------- | -------- |
+| [[Ecosystem Alignment Proposal]]                         | `in-progress` | `high`   |
+| [[Tooling Rollout Proposal]]                             | `in-progress` | `high`   |
+| [[Boundary Rules Proposal]]                              | `draft`       | `urgent` |
+| [[Authoring Layers Proposal]]                            | `draft`       | `medium` |
+| [[Index Review]]                                         | `draft`       | `medium` |
+| [[Auto Proposal Pipeline Proposal \| Proposal Pipeline]] | `draft`       | `medium` |
+| [[Intentional Proposal]]                                 | `draft`       | `medium` |
+| [[Page Registry Proposal]]                               | `draft`       | `medium` |
