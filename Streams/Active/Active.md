@@ -18,7 +18,6 @@ Streams currently receiving active attention - projects being worked on now.
 
 | Topic                                                    | Status        | Priority |
 | -------------------------------------------------------- | ------------- | -------- |
-| [[Ecosystem Alignment Proposal]]                         | `in-progress` | `high`   |
 | [[Tooling Rollout Proposal]]                             | `in-progress` | `high`   |
 | [[Boundary Rules Proposal]]                              | `draft`       | `urgent` |
 | [[Authoring Layers Proposal]]                            | `draft`       | `medium` |

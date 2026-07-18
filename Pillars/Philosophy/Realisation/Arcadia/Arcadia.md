@@ -9,19 +9,28 @@ status: current - June 2026
 
 # Arcadia
 
-Arcadia is the public face of this Knowledge Islands island — the site (`ki-website`, at knowledgeislands.info) that makes the island's knowledge visible beyond the KB itself. `ki-website` is the Knowledge Islands framework's own public site, framework-level rather than Arcadia-territory-scoped; the KB here remains the source of truth it publishes from. See [[Great Library of Arcadia]] for what the site hosts.
+The Knowledge Islands website (`ki-website`, at knowledgeislands.info) is the public publication for the framework. It makes selected knowledge from this base visible beyond the KB and also publishes the agentic harness and KI Specifications. The website is framework-level rather than Arcadia-territory-scoped; the canonical sources remain this KB for philosophy and model, `ki-agentic-harness` for reusable tooling, and `ki-specifications` for normative portable contracts. See [[Great Library of Arcadia]] for what the site hosts.
 
-## The realisation principle
+## The publication principle
 
-The website is a _realisation_ of ki-arcadia-principal: the KB is the source of truth; the website renders and publishes that knowledge outward. Content should flow from KB notes to the website, not be authored directly in the site repository.
+The website is an independently deployable publication, not a third source of truth. It vendors selected source material so it can build and operate autonomously, while retaining the canonical source for every published item.
 
-This mirrors the broader Knowledge Islands model: an island's knowledge capital lives in its KB; publications (websites, documents, reports) derive from it rather than standing alongside it as parallel sources.
+The publication flows are:
+
+```text
+ki-arcadia-principal -> ki-agentic-harness
+ki-arcadia-principal -> ki-specifications
+ki-arcadia-principal -> ki-website
+ki-agentic-harness   -> ki-specifications
+ki-agentic-harness   -> ki-website
+ki-specifications    -> ki-website
+```
+
+The base informs the website directly for philosophy and model. The harness informs the website for practical tooling documentation. Arcadia and the harness also inform Specifications, whose normative contracts are published through the website. The website does not author canonical material for any source.
 
 ## Current state
 
-ki-website presently mirrors the agentic harness documentation (`docs/`) rather than KB content. The site's pages are maintained in `ki-agentic-harness` and copied into the website repository — a workable shortcut that predates the island having substantive KB content to publish.
-
-This is known debt. The intended pipeline is: KB note → automated build step → ki-website page. When that pipeline exists, the harness docs mirror can be retired.
+The website currently contains its own curated public pages. It should acquire material through explicit, source-labelled vendor paths from this base, the harness, and Specifications. The intended pipeline is source note, guide, or specification -> curated vendor input -> website build. The vendor input is a deployable copy, never a replacement for its source.
 
 ## Related
 

@@ -2,6 +2,8 @@
 
 This repository is the island - a structured repository of knowledge, comprising of folders and Markdown files.
 
+Read [[AGENTS]] for the shared runtime-neutral progress and commit convention.
+
 IMPORTANT: Load this file at the start of any session involving the island.
 
 ## Approach

@@ -18,6 +18,7 @@ How the Knowledge Islands tooling layer fits together: what each component is, w
 | ----------------------- | ----------------------------------------------------------------------------- | ------------------------- |
 | ki-arcadia-principal    | Knowledge base — the source of truth; all tooling serves or publishes from it | `ki-arcadia-principal`    |
 | ki-agentic-harness      | Agentic harness †                                                             | `ki-agentic-harness`      |
+| ki-specifications       | Normative portable contracts §                                                | `ki-specifications`       |
 | ki-website              | Publication layer ‡                                                           | `ki-website`              |
 | mcp-git-audit           | Git fleet auditor — surfaces repo state across all workspace repositories     | `mcp-git-audit`           |
 | mcp-ki-kb-fs            | KB filesystem — read/write access to KB notes via MCP                         | `mcp-ki-kb-fs`            |
@@ -30,18 +31,28 @@ How the Knowledge Islands tooling layer fits together: what each component is, w
 
 ‡ **ki-website role** — the Knowledge Islands framework's public site at knowledgeislands.info (see [[Arcadia]]). Framework-level, not Arcadia-territory-scoped.
 
+§ **ki-specifications role** - the normative standards layer: KIPs, KIS documents, schemas, templates, conformance rules, and reference examples.
+
 ## Relationships
 
 ```text
-ki-arcadia-principal (KB — source of truth)
+ki-arcadia-principal (KB - source of truth)
 ├── ← mcp-ki-kb-fs reads/writes notes
 ├── ← mcp-kb-notion-mirror publishes notes to Notion
-└── → ki-website publishes KB outward (pipeline not yet automated — see [[Arcadia]])
+├── → ki-agentic-harness generalises proven patterns into reusable tooling
+├── → ki-specifications formalises proven concepts into normative contracts
+└── → ki-website publishes philosophy and model outward
 
 ki-agentic-harness (governance tooling)
 ├── ships skills that govern how work is done on the KB
 ├── ships agents that orchestrate governance tasks
-└── configures which MCPs are connected to the Claude workspace
+├── configures which MCPs are connected to the Claude workspace
+├── → ki-specifications supplies implementation evidence
+└── → ki-website publishes practical harness documentation
+
+ki-specifications (normative contracts)
+├── formalises portable requirements, schemas, and conformance rules
+└── → ki-website publishes specifications outward
 
 MCPs (capability surface — external services)
 ├── mcp-git-audit     → inspects all repos in the workspace
@@ -56,8 +67,9 @@ The ecosystem has four layers, each with a distinct responsibility:
 
 1. **Knowledge** (`ki-arcadia-principal`) — what is known; the authoritative record
 2. **Governance** (`ki-agentic-harness`) — how work is done; skills and conventions
-3. **Capability** (MCP servers) — what can be acted on; external services and tools
-4. **Publication** (`ki-website`) — what is made visible; the public realisation
+3. **Specification** (`ki-specifications`) - what portable implementations may claim and must satisfy
+4. **Capability** (MCP servers) — what can be acted on; external services and tools
+5. **Publication** (`ki-website`) - what is made visible; an autonomous public publication that vendors material from the Knowledge, Governance, and Specification layers
 
 The user works at the intersection of all four, via Claude Code, with the harness skills shaping how each layer is accessed.
 
