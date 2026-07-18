@@ -113,5 +113,5 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
   "include": ["**/*.ts", "**/*.cts", "**/*.mts", "**/*.mjs"],
-  "exclude": ["cdk.out", "node_modules", "dist"]
+  "exclude": ["cdk.out", "node_modules", "dist", "scripts/ki"]
 }

@@ -7,6 +7,7 @@ import type { KnipConfig } from 'knip'
 // .obsidian/ is the Obsidian app's own data, not ours.
 const config: KnipConfig = {
   ignore: ['.obsidian/**', 'scripts/ki/**', '.ki-meta/**', '.claude/skills/**'],
+  ignoreDependencies: ['syncpack'],
   ignoreExportsUsedInFile: true
 }
 
