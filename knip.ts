@@ -6,7 +6,7 @@ import type { KnipConfig } from 'knip'
 // (copied verbatim from the harness) — ignored here as generated code, never conformed.
 // .obsidian/ is the Obsidian app's own data, not ours.
 const config: KnipConfig = {
-  ignore: ['.obsidian/**', 'scripts/ki/**'],
+  ignore: ['.obsidian/**', 'scripts/ki/**', '.ki-meta/**', '.claude/skills/**'],
   ignoreExportsUsedInFile: true
 }
 
