@@ -23,6 +23,12 @@ visibility = "private"   # "public" | "private"
 # Presence opts the Streams zone into the Enactment Process; it uses the defaults.
 [ki-kb-streams]
 
+# Read by the ki-kb-activities skill (the governed activity catalogue).
+[ki-kb-activities]
+
+# Read by the ki-kb-live-artifacts skill (mutable operational artefact pairs).
+[ki-kb-live-artifacts]
+
 # Tokenomics governance — audits the standing context surface for this environment.
 # MCP server count is user-scoped (not repo-controlled); the raised budget documents
 # the acknowledged state (same as the harness).
