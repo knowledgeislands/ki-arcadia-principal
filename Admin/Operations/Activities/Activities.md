@@ -35,6 +35,7 @@ Each activity is a flat `.md` file here. Naming follows the `[Group] [Name] Acti
 | [[Email Routing Queue Activity\|Email Routing Queue Activity]]   | Email     | Routing queue snapshot        |
 | [[Email Status Activity\|Email Status Activity]]                 | Email     | Status tracking note          |
 | [[Linear Activity\|Linear Activity]]                             | Linear    | Vetoed — adoption record only |
+
 - [Briefings](Briefings Activity.md)
 - [Schedule](Schedule.md)
 - [Tending](Tending Activity.md)
