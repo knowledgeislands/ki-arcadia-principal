@@ -29,10 +29,12 @@
   ],
   "license": "UNLICENSED",
   "lint-staged": {
-    "*.{ts,js,mjs,json,jsonc}": "bunx @biomejs/biome check --write --no-errors-on-unmatched",
+    "*.{ts,tsx,js,jsx,json}": [
+      "bunx @biomejs/biome check --write --no-errors-on-unmatched"
+    ],
     "*.md": [
       "bunx prettier --write",
-      "bunx markdownlint-cli2"
+      "bunx markdownlint-cli2 --no-globs"
     ]
   },
   "packageManager": "bun@1.3.14",
@@ -44,30 +46,30 @@
   "scripts": {
     "clean": "rm -rf node_modules",
     "ki:audit": "bun .ki-meta/bin/aggregate.ts audit",
-    "ki:authoring:audit": "bun .ki-meta/checkers/ki-authoring/scripts/audit.ts .",
-    "ki:authoring:conform": "bun .ki-meta/checkers/ki-authoring/scripts/conform.ts .",
+    "ki:authoring:audit": "bun .ki-meta/bin/aggregate.ts audit --skill ki-authoring",
+    "ki:authoring:conform": "bun .ki-meta/bin/aggregate.ts conform --skill ki-authoring",
     "ki:conform": "bun .ki-meta/bin/aggregate.ts conform",
-    "ki:decision-records:audit": "bun .ki-meta/checkers/ki-decision-records/scripts/audit.ts .",
-    "ki:decision-records:conform": "bun .ki-meta/checkers/ki-decision-records/scripts/conform.ts .",
+    "ki:decision-records:audit": "bun .ki-meta/bin/aggregate.ts audit --skill ki-decision-records",
+    "ki:decision-records:conform": "bun .ki-meta/bin/aggregate.ts conform --skill ki-decision-records",
     "ki:educate": "bun .ki-meta/bin/aggregate.ts educate",
-    "ki:engineering:audit": "bun .ki-meta/checkers/ki-engineering/scripts/audit.ts .",
-    "ki:engineering:conform": "bun .ki-meta/checkers/ki-engineering/scripts/conform.ts .",
+    "ki:engineering:audit": "bun .ki-meta/bin/aggregate.ts audit --skill ki-engineering",
+    "ki:engineering:conform": "bun .ki-meta/bin/aggregate.ts conform --skill ki-engineering",
     "ki:help": "bun .ki-meta/bin/aggregate.ts help",
     "ki:init": "bun scripts/ki/aggregate.ts init",
-    "ki:kb-activities:audit": "bun .ki-meta/checkers/ki-kb-activities/scripts/audit.ts .",
-    "ki:kb-activities:conform": "bun .ki-meta/checkers/ki-kb-activities/scripts/conform.ts .",
+    "ki:kb-activities:audit": "bun .ki-meta/bin/aggregate.ts audit --skill ki-kb-activities",
+    "ki:kb-activities:conform": "bun .ki-meta/bin/aggregate.ts conform --skill ki-kb-activities",
     "ki:kb-base:audit": "bun .claude/skills/ki-kb-base/scripts/audit-kb.ts .",
-    "ki:kb-live-artifacts:audit": "bun .ki-meta/checkers/ki-kb-live-artifacts/scripts/audit.ts .",
-    "ki:kb-live-artifacts:conform": "bun .ki-meta/checkers/ki-kb-live-artifacts/scripts/conform.ts .",
-    "ki:kb-streams:audit": "bun .ki-meta/checkers/ki-kb-streams/scripts/audit.ts .",
-    "ki:kb-streams:conform": "bun .ki-meta/checkers/ki-kb-streams/scripts/conform.ts .",
-    "ki:kb:audit": "bun .ki-meta/checkers/ki-kb/scripts/audit.ts .",
-    "ki:kb:conform": "bun .ki-meta/checkers/ki-kb/scripts/conform.ts .",
-    "ki:repo:audit": "bun .ki-meta/checkers/ki-repo/scripts/audit.ts .",
-    "ki:repo:conform": "bun .ki-meta/checkers/ki-repo/scripts/conform.ts .",
+    "ki:kb-live-artifacts:audit": "bun .ki-meta/bin/aggregate.ts audit --skill ki-kb-live-artifacts",
+    "ki:kb-live-artifacts:conform": "bun .ki-meta/bin/aggregate.ts conform --skill ki-kb-live-artifacts",
+    "ki:kb-streams:audit": "bun .ki-meta/bin/aggregate.ts audit --skill ki-kb-streams",
+    "ki:kb-streams:conform": "bun .ki-meta/bin/aggregate.ts conform --skill ki-kb-streams",
+    "ki:kb:audit": "bun .ki-meta/bin/aggregate.ts audit --skill ki-kb",
+    "ki:kb:conform": "bun .ki-meta/bin/aggregate.ts conform --skill ki-kb",
+    "ki:repo:audit": "bun .ki-meta/bin/aggregate.ts audit --skill ki-repo",
+    "ki:repo:conform": "bun .ki-meta/bin/aggregate.ts conform --skill ki-repo",
     "ki:skills:link:project": "bun $HOME/.claude/skills/knowledgeislands-bootstrap/scripts/link-skills.ts",
-    "ki:tokenomics:audit": "bun .ki-meta/checkers/ki-tokenomics/scripts/audit.ts .",
-    "ki:tokenomics:conform": "bun .ki-meta/checkers/ki-tokenomics/scripts/conform.ts .",
+    "ki:tokenomics:audit": "bun .ki-meta/bin/aggregate.ts audit --skill ki-tokenomics",
+    "ki:tokenomics:conform": "bun .ki-meta/bin/aggregate.ts conform --skill ki-tokenomics",
     "prepare": "husky"
   },
   "type": "module"
