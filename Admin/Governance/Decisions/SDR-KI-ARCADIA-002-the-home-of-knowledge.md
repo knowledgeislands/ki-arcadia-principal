@@ -1,16 +1,15 @@
 ---
-type: admin/governance/decision
+id: SDR-KI-ARCADIA-002
+title: 'The Home of Knowledge'
+date: 2026-06-25
+status: current
+type: Strategy Decision Record
+type_url: https://knowledgeislands.info/specifications/decision-records/sdr
 decision_type: strategy
-status: current - June 2026
-author: Written with Claude
 decision_depends_on: ['SDR-KI-ARCADIA-001']
 ---
 
 # SDR-KI-ARCADIA-002: The Home of Knowledge
-
-**Status:** Accepted
-
-**Date:** 2026-06-25
 
 ## Context
 
@@ -57,7 +56,7 @@ The physical zone layout of a knowledge base is therefore:
 
 ## References
 
-- [SDR-KI-ARCADIA-001: Knowledge Islands — The Strategy](SDR-KI-ARCADIA-001-knowledge-islands-strategy.md)
+- [SDR-KI-ARCADIA-001: Knowledge Islands — The Strategy](SDR-KI-ARCADIA-001-knowledge-islands-the-strategy.md)
 - [The Home of Knowledge](../../../Pillars/Knowledge%20Islands/Introduction/Background/The%20Home%20of%20Knowledge/The%20Home%20of%20Knowledge.md)
 - [Layers of Knowledge](../../../Pillars/Knowledge%20Islands/Introduction/Background/Layers%20of%20Knowledge/Layers%20of%20Knowledge.md)
 - [Structure](../../../Pillars/Knowledge%20Islands/Model/Conventions/Structure/Structure.md)

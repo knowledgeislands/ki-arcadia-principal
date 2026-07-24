@@ -1,15 +1,14 @@
 ---
-type: admin/governance/decision
+id: SDR-KI-ARCADIA-001
+title: 'Knowledge Islands — The Strategy'
+date: 2026-06-25
+status: current
+type: Strategy Decision Record
+type_url: https://knowledgeislands.info/specifications/decision-records/sdr
 decision_type: strategy
-status: current - June 2026
-author: Written with Claude
 ---
 
 # SDR-KI-ARCADIA-001: Knowledge Islands — The Strategy
-
-**Status:** Accepted
-
-**Date:** 2026-06-25
 
 ## Context
 

@@ -1,16 +1,15 @@
 ---
-type: admin/governance/decision
+id: SDR-KI-ARCADIA-005
+title: 'Territories, Archipelagos, and the Constitutional Layer'
+date: 2026-06-25
+status: current
+type: Strategy Decision Record
+type_url: https://knowledgeislands.info/specifications/decision-records/sdr
 decision_type: strategy
-status: current - June 2026
-author: Written with Claude
 decision_depends_on: ['SDR-KI-ARCADIA-001', 'SDR-KI-ARCADIA-003']
 ---
 
 # SDR-KI-ARCADIA-005: Territories, Archipelagos, and the Constitutional Layer
-
-**Status:** Accepted
-
-**Date:** 2026-06-25
 
 ## Context
 
@@ -81,7 +80,7 @@ The Knowledge Islands model is defined canonically in Arcadia. Any island may ad
 
 ## References
 
-- [SDR-KI-ARCADIA-001: Knowledge Islands — The Strategy](SDR-KI-ARCADIA-001-knowledge-islands-strategy.md)
+- [SDR-KI-ARCADIA-001: Knowledge Islands — The Strategy](SDR-KI-ARCADIA-001-knowledge-islands-the-strategy.md)
 - [SDR-KI-ARCADIA-003: The Governance of an Island](SDR-KI-ARCADIA-003-the-governance-of-an-island.md)
 - [Territories and Archipelagos](../../../Pillars/Philosophy/Introduction/Concept/Territories%20and%20Archipelagos/Territories%20and%20Archipelagos.md)
 - [Jurisdiction](../../../Pillars/Philosophy/Introduction/Concept/Jurisdiction/Jurisdiction.md)

@@ -1,16 +1,15 @@
 ---
-type: admin/governance/decision
+id: SDR-KI-ARCADIA-006
+title: 'Agents in the Knowledge Islands Model'
+date: 2026-06-25
+status: current
+type: Strategy Decision Record
+type_url: https://knowledgeislands.info/specifications/decision-records/sdr
 decision_type: strategy
-status: current - June 2026
-author: Written with Claude
 decision_depends_on: ['SDR-KI-ARCADIA-001', 'SDR-KI-ARCADIA-003', 'SDR-KI-ARCADIA-005']
 ---
 
 # SDR-KI-ARCADIA-006: Agents in the Knowledge Islands Model
-
-**Status:** Accepted
-
-**Date:** 2026-06-25
 
 ## Context
 
@@ -78,9 +77,9 @@ An AI agent operates as a Citizen when it is acting under a skill prompt that gr
 
 ## References
 
-- [SDR-KI-ARCADIA-001: Knowledge Islands - The Strategy](SDR-KI-ARCADIA-001-knowledge-islands-strategy.md)
+- [SDR-KI-ARCADIA-001: Knowledge Islands - The Strategy](SDR-KI-ARCADIA-001-knowledge-islands-the-strategy.md)
 - [SDR-KI-ARCADIA-003: The Governance of an Island](SDR-KI-ARCADIA-003-the-governance-of-an-island.md)
-- [SDR-KI-ARCADIA-005: Territories, Archipelagos, and the Constitutional Layer](SDR-KI-ARCADIA-005-territories-archipelagos-constitutional-layer.md)
+- [SDR-KI-ARCADIA-005: Territories, Archipelagos, and the Constitutional Layer](SDR-KI-ARCADIA-005-territories-archipelagos-and-the-constitutional-layer.md)
 - [Agents - Concept](../../../Pillars/Philosophy/Introduction/Concept/Agents/Agents.md)
 - [Who Acts on the Island](../../../Pillars/Philosophy/Model/Agents/Who%20Acts%20on%20the%20Island.md)
 - [Agentic AI](../../../Pillars/Philosophy/Model/Agents/Agentic%20AI/Agentic%20AI.md)

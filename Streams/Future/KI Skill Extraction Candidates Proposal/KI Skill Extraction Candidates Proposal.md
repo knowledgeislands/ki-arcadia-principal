@@ -59,5 +59,5 @@ Identified during the Admin normalisation session (June 2026, GDR-KI-ARCADIA-003
 
 ## Related
 
-- [[Admin/Governance/Decisions/GDR-KI-ARCADIA-003-admin-governance-operations|GDR-KI-ARCADIA-003]] - the decision that established the Admin zone structure being extracted.
+- [[Admin/Governance/Decisions/GDR-KI-ARCADIA-003-admin-zone-governance-and-operations|GDR-KI-ARCADIA-003]] - the decision that established the Admin zone structure being extracted.
 - [[Admin/Governance/Decisions/Decisions|Decisions]] - the Decision Records index.

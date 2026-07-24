@@ -1,16 +1,15 @@
 ---
-type: admin/governance/decision
+id: SDR-KI-ARCADIA-003
+title: 'The Governance of an Island'
+date: 2026-06-25
+status: current
+type: Strategy Decision Record
+type_url: https://knowledgeislands.info/specifications/decision-records/sdr
 decision_type: strategy
-status: current - June 2026
-author: Written with Claude
 decision_depends_on: ['SDR-KI-ARCADIA-002']
 ---
 
 # SDR-KI-ARCADIA-003: The Governance of an Island
-
-**Status:** Accepted
-
-**Date:** 2026-06-25
 
 ## Context
 
@@ -44,6 +43,6 @@ Each island's specific realisation of this model is held in its `Admin/` zone: t
 ## References
 
 - [SDR-KI-ARCADIA-002: The Home of Knowledge](SDR-KI-ARCADIA-002-the-home-of-knowledge.md)
-- [SDR-KI-ARCADIA-005: Territories, Archipelagos, and the Constitutional Layer](SDR-KI-ARCADIA-005-territories-archipelagos-constitutional-layer.md)
+- [SDR-KI-ARCADIA-005: Territories, Archipelagos, and the Constitutional Layer](SDR-KI-ARCADIA-005-territories-archipelagos-and-the-constitutional-layer.md)
 - [Governance](../../../Pillars/Knowledge%20Islands/Introduction/Concept/Governance/Governance.md)
 - [How an Island Takes Shape](../../../Pillars/Knowledge%20Islands/Introduction/Concept/How%20an%20Island%20Takes%20Shape.md)
