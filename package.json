@@ -45,8 +45,6 @@
   },
   "scripts": {
     "clean": "rm -rf node_modules",
-    "ki:kb-base:audit": "bun .claude/skills/ki-kb-base/scripts/audit-kb.ts .",
-    "ki:skills:link:project": "bun $HOME/.claude/skills/knowledgeislands-bootstrap/scripts/link-skills.ts",
     "prepare": "husky"
   },
   "type": "module"
