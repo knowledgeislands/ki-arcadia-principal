@@ -17,7 +17,7 @@ author: Written with Claude
 
 Several patterns are implemented independently in both `ki-arcadia-principal` and `kit-legal`, with no corresponding `knowledgeislands-*` skill to govern them. Any new island that adopts Knowledge Islands would need to re-implement these patterns from scratch. This stream captures the extraction candidates - patterns that warrant codification as portable skills.
 
-Identified during the Admin normalisation session (June 2026, GDR-KI-ARCADIA-003 follow-up).
+Identified during the Admin normalisation session (June 2026, GDR-KI-ARCADIA-002 follow-up).
 
 ---
 
@@ -47,7 +47,7 @@ Identified during the Admin normalisation session (June 2026, GDR-KI-ARCADIA-003
 ## Suggested Priority
 
 1. **Activity system** - both islands need it; clearly defined by kit-legal; straightforward to extract.
-2. **Admin zone structure** - GDR-KI-ARCADIA-003 established the pattern; a skill that bootstraps the Governance/Operations arms would save the entire migration work for any future island.
+2. **Admin zone structure** - GDR-KI-ARCADIA-002 established the pattern; a skill that bootstraps the Governance/Operations arms would save the entire migration work for any future island.
 3. **Charter bootstrap checker** - high value: any new island would immediately know if their Charter is missing mandatory fields.
 4. **Note templates** - lower urgency; the pattern is simple but not blocking for new islands.
 5. **Live artifacts** - niche; only applies if an island publishes rendered HTML artifacts.
@@ -63,5 +63,5 @@ Identified during the Admin normalisation session (June 2026, GDR-KI-ARCADIA-003
 
 ## Related
 
-- [[Admin/Governance/Decisions/GDR-KI-ARCADIA-003-admin-zone-governance-and-operations|GDR-KI-ARCADIA-003]] - the decision that established the Admin zone structure being extracted.
+- [[Admin/Governance/Decisions/GDR-KI-ARCADIA-002-admin-zone-governance-and-operations|GDR-KI-ARCADIA-002]] - the decision that established the Admin zone structure being extracted.
 - [[Admin/Governance/Decisions/Decisions|Decisions]] - the Decision Records index.

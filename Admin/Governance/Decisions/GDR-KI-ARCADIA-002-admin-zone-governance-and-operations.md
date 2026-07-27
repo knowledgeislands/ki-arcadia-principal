@@ -1,5 +1,5 @@
 ---
-id: GDR-KI-ARCADIA-003
+id: GDR-KI-ARCADIA-002
 title: 'Admin Zone — Governance and Operations'
 date: 2026-06-25
 status: current
@@ -9,7 +9,7 @@ decision_type: governance
 decision_depends_on: ['GDR-KI-ARCADIA-001']
 ---
 
-# GDR-KI-ARCADIA-003: Admin Zone — Governance and Operations
+# GDR-KI-ARCADIA-002: Admin Zone — Governance and Operations
 
 ## Context
 

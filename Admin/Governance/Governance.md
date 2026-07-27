@@ -21,4 +21,4 @@ The `Admin/Governance/` arm holds the artefacts that define **what the island is
 | [Policies/](Policies/Policies.md)                       | Standing rules that govern behaviour outside the DR process               |
 | [Decisions/](Decisions/Decisions.md)                    | Decision Records — the permanent record of governance rationale           |
 
-Charter and Known Lands are populated by migration from Knowledge Capital per GDR-KI-ARCADIA-003.
+Charter and Known Lands are populated by migration from Knowledge Capital per GDR-KI-ARCADIA-002.

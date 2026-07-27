@@ -11,7 +11,7 @@ author: Written with Claude
 
 # Knowledge Capital Extraction Proposal
 
-**Rejected as superseded: absorbed by GDR-KI-ARCADIA-003 and the capital terminology overhaul (2026-06-27).**
+**Rejected as superseded: absorbed by GDR-KI-ARCADIA-002 and the capital terminology overhaul (2026-06-27).**
 
 ## What happened
 
@@ -23,7 +23,7 @@ This proposal was overtaken by two sessions that did the underlying work directl
 
 Key files updated in those sessions: SDR-KI-ARCADIA-003, SDR-KI-ARCADIA-005, Territories and Archipelagos, Glossary, How an Island Takes Shape, Jurisdiction, Charter, Authoring conventions, ki-website.
 
-**GDR-KI-ARCADIA-003** is the formal decision record for the Admin zone restructure that this proposal anticipated: island-specific realisation (Charter, Council) now lives canonically in `Admin/Governance/`, not in a `Knowledge Capitals/` folder.
+**GDR-KI-ARCADIA-002** is the formal decision record for the Admin zone restructure that this proposal anticipated: island-specific realisation (Charter, Council) now lives canonically in `Admin/Governance/`, not in a `Knowledge Capitals/` folder.
 
 ## What remains
 

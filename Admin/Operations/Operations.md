@@ -19,4 +19,4 @@ The `Admin/Operations/` arm holds the artefacts that describe **how Arcadia runs
 | [Live Artifacts/](Live%20Artifacts/Live%20Artifacts.md) | Dynamic status documents: dashboards, queues, trackers                 |
 | [Skills/](Skills/Skills.md)                             | Agent skills installed and active on this island                       |
 
-Populated by migration from `Pillars/Knowledge Capital/` per GDR-KI-ARCADIA-003.
+Populated by migration from `Pillars/Knowledge Capital/` per GDR-KI-ARCADIA-002.
