@@ -1,5 +1,6 @@
 ---
 type: stream-proposal
+title: Workflow Integrations Proposal
 tags:
   - topic/knowledge-islands
   - topic/automation

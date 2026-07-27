@@ -1,5 +1,6 @@
 ---
 type: stream-proposal
+title: Bullet Journal Support Proposal
 tags:
   - topic/knowledge-islands
 status: draft
@@ -8,7 +9,7 @@ dependencies: []
 author: Written with Claude
 ---
 
-# Calendar Templates
+# Bullet Journal Support Proposal
 
 ## Overview
 

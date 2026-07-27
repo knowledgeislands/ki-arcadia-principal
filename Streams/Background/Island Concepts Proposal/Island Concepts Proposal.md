@@ -1,5 +1,6 @@
 ---
 type: stream-proposal
+title: Island Concepts Proposal
 tags:
   - card/proposal
   - topic/knowledge-islands

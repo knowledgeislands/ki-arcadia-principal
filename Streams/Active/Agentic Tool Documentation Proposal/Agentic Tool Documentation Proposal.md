@@ -1,13 +1,16 @@
 ---
 type: stream-proposal
+title: Agentic Tool Documentation Proposal
 tags:
   - topic/knowledge-islands
   - topic/documentation
   - topic/ai
-status: active
+status: draft
+priority: medium
+dependencies: []
 ---
 
-# Agentic Tool Documentation
+# Agentic Tool Documentation Proposal
 
 Document the agentic harness and its connected MCP servers as KB notes, establishing a human-legible map of the tool ecosystem and its relationships to ki-arcadia-principal and ki-website.
 

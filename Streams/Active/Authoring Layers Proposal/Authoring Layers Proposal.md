@@ -1,5 +1,6 @@
 ---
 type: stream-proposal
+title: Authoring Layers Proposal
 tags:
   - topic/knowledge-islands
 status: draft

@@ -16,8 +16,6 @@ Settled streams are projects and workstreams that have reached a natural conclus
 
 ## Streams
 
-| Topic                                  | Status      | Priority |
-| -------------------------------------- | ----------- | -------- |
-| Streams Enactment Conformance Proposal | `completed` | `high`   |
-| Conformance                            | `completed` | `urgent` |
-| Wiki Link Format                       | `completed` | `medium` |
+| Topic                                     | Status     | Priority |
+| ----------------------------------------- | ---------- | -------- |
+| [[Knowledge Capital Extraction Proposal]] | `rejected` | `medium` |

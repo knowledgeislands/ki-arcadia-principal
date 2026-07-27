@@ -1,5 +1,6 @@
 ---
 type: stream-proposal
+title: Kit Principal Inception Proposal
 tags:
   - topic/knowledge-islands
 status: draft
@@ -8,7 +9,7 @@ dependencies: []
 author: Written with Claude
 ---
 
-# Bootstrap kit-principal
+# Kit Principal Inception Proposal
 
 ## Overview
 

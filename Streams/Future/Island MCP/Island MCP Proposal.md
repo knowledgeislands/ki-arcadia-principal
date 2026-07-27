@@ -1,5 +1,6 @@
 ---
 type: stream-proposal
+title: Island MCP Proposal
 tags:
   - topic/knowledge-islands
   - topic/tools

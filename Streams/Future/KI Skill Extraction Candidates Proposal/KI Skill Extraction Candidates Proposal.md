@@ -1,13 +1,17 @@
 ---
+type: stream-proposal
+title: KI Skill Extraction Candidates Proposal
 tags:
   - stream/future
   - topic/knowledge-islands
   - topic/engineering
 status: draft
+priority: medium
+dependencies: []
 author: Written with Claude
 ---
 
-# KI Skill Extraction Candidates
+# KI Skill Extraction Candidates Proposal
 
 ## Overview
 

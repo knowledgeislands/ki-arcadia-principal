@@ -1,5 +1,6 @@
 ---
 type: stream-proposal
+title: Scheduled Automations Proposal
 tags:
   - topic/knowledge-islands
   - topic/automation

@@ -1,5 +1,6 @@
 ---
 type: stream-proposal
+title: Semantic Conventions Proposal
 tags:
   - topic/knowledge-islands
 status: draft
@@ -8,7 +9,7 @@ dependencies: []
 author: Written with Claude
 ---
 
-# Island Conventions
+# Semantic Conventions Proposal
 
 ## Overview
 

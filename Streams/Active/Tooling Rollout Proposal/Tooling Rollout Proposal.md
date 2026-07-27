@@ -1,10 +1,11 @@
 ---
 type: stream-proposal
+title: Tooling Rollout Proposal
 tags:
   - topic/ai
   - topic/automation
   - topic/knowledge-management
-status: in-progress
+status: draft
 priority: high
 dependencies: []
 author: Written with Claude
@@ -30,6 +31,16 @@ Once the remaining phases land and Arcadia is fully organised, the patterns this
 | Activity navigation | `[ ]` Not started | Investigate cached/synthesised views of the content layers for human and agent consumers |
 | Arcadia skill       | `[ ]` Not started | Define and configure the Arcadia Knowledge Islands skill                                 |
 | Scheduled tasks     | `[ ]` Not started | Configure Arcadia's scheduled tasks in Cowork; verify against Charter                    |
+
+---
+
+## Next Step
+
+Start **Phase 1: Prompt sync audit**.
+
+- Read `Tools/Claude/Activities/` to enumerate Prompt notes and their current sync state.
+- Cross-reference the notes against the Cowork scheduled task list.
+- Log any gaps before proceeding to the next phase.
 
 ---
 

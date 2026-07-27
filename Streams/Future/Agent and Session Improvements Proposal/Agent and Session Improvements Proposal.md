@@ -1,5 +1,6 @@
 ---
 type: stream-proposal
+title: Agent and Session Improvements Proposal
 tags:
   - topic/knowledge-islands
   - topic/ai

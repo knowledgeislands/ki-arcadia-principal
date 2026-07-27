@@ -1,5 +1,6 @@
 ---
 type: stream-proposal
+title: Page Registry Proposal
 tags:
   - topic/knowledge-islands
   - topic/conventions

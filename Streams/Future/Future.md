@@ -16,4 +16,17 @@ Ideas and projects not yet started - queued for when the time or circumstances a
 
 ## Streams
 
-| Topic | Status | Priority | | ------------------------------------------- | -------------------- | -------- | ----- | | [[Scheduled Automations Proposal]] | `draft` | `low` | | [[Agent and Session Improvements Proposal]] | `draft` | `low` | | [[Semantic Conventions Proposal             | Island Conventions]] | `draft` | `low` | | [[Bullet Journal Support Proposal           | Calendar Templates]] | `draft` | `low` | | [[Workflow Integrations Proposal]] | `draft` | `low` | | [[MCP Ecosystem Proposal]] | `draft` | `low` | | [[Island MCP Proposal]] | `draft` | `low` | | [[Token Economics Proposal]] | `draft` | `low` | | [[Island Visualisation Proposal]] | `draft` | `low` | | [[KI Skill Extraction Candidates Proposal]] | `draft` | `medium` |
+| Topic                                       | Status  | Priority |
+| ------------------------------------------- | ------- | -------- |
+| [[Auto Proposal Pipeline Proposal]]         | `draft` | `medium` |
+| [[Intentional Proposal]]                    | `draft` | `medium` |
+| [[KI Skill Extraction Candidates Proposal]] | `draft` | `medium` |
+| [[Agent and Session Improvements Proposal]] | `draft` | `low`    |
+| [[Bullet Journal Support Proposal]]         | `draft` | `low`    |
+| [[Island MCP Proposal]]                     | `draft` | `low`    |
+| [[Island Visualisation Proposal]]           | `draft` | `low`    |
+| [[MCP Ecosystem Proposal]]                  | `draft` | `low`    |
+| [[Scheduled Automations Proposal]]          | `draft` | `low`    |
+| [[Semantic Conventions Proposal]]           | `draft` | `low`    |
+| [[Token Economics Proposal]]                | `draft` | `low`    |
+| [[Workflow Integrations Proposal]]          | `draft` | `low`    |

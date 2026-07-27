@@ -1,5 +1,6 @@
 ---
 type: stream-proposal
+title: Auto Proposal Pipeline Proposal
 tags:
   - topic/knowledge-islands
 status: draft
@@ -8,7 +9,7 @@ dependencies: []
 author: Written with Claude
 ---
 
-# Proposal Pipeline
+# Auto Proposal Pipeline Proposal
 
 ## Overview
 

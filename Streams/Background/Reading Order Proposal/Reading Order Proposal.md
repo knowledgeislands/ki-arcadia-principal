@@ -1,5 +1,6 @@
 ---
 type: stream-proposal
+title: Reading Order Proposal
 tags:
   - topic/knowledge-islands
 status: draft

@@ -3,9 +3,6 @@ type: stream-note
 tags:
   - topic/knowledge-islands
   - topic/tools
-status: draft
-priority: low
-dependencies: []
 author: Mixed
 ---
 

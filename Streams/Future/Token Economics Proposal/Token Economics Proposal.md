@@ -1,5 +1,6 @@
 ---
 type: stream-proposal
+title: Token Economics Proposal
 tags:
   - topic/knowledge-islands
   - topic/ai

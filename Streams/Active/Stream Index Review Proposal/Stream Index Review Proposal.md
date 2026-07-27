@@ -1,5 +1,6 @@
 ---
 type: stream-proposal
+title: Stream Index Review Proposal
 tags:
   - topic/knowledge-islands
 status: draft
@@ -8,7 +9,7 @@ dependencies: []
 author: Written with Claude
 ---
 
-# String Index Review
+# Stream Index Review Proposal
 
 ## Overview
 

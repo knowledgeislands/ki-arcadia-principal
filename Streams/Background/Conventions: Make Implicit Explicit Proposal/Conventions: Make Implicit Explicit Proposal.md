@@ -1,13 +1,17 @@
 ---
 type: stream-proposal
+title: 'Conventions: Make Implicit Explicit Proposal'
 tags:
   - topic/knowledge-islands
   - topic/knowledge-management
   - topic/conventions
-status: background
+status: draft
+priority: low
+dependencies:
+  - Agentic Tool Documentation Proposal.md
 ---
 
-# Conventions: Make Implicit Explicit
+# Conventions: Make Implicit Explicit Proposal
 
 Systematically identify conventions in ki-arcadia-principal that are asserted without documented rationale, and add the _why_ alongside the _what_ for each one.
 

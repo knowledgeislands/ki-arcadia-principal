@@ -1,5 +1,6 @@
 ---
 type: stream-proposal
+title: Intentional Proposal
 tags:
   - card/proposal
   - topic/knowledge-islands

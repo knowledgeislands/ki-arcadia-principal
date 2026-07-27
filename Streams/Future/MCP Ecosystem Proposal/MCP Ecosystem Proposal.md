@@ -1,5 +1,6 @@
 ---
 type: stream-proposal
+title: MCP Ecosystem Proposal
 tags:
   - topic/knowledge-islands
   - topic/ai

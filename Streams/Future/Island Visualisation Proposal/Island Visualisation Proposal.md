@@ -1,5 +1,6 @@
 ---
 type: stream-proposal
+title: Island Visualisation Proposal
 tags:
   - topic/knowledge-islands
 status: draft

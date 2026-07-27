@@ -1,5 +1,6 @@
 ---
 type: stream-proposal
+title: Kit Legal Inception Proposal
 tags:
   - topic/knowledge-islands
 status: draft
@@ -8,7 +9,7 @@ dependencies: []
 author: Written with Claude
 ---
 
-# Bootstrap kit-legal
+# Kit Legal Inception Proposal
 
 ## Overview
 

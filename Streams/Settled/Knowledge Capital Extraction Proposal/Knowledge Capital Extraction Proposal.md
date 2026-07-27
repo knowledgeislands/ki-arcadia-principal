@@ -1,8 +1,9 @@
 ---
 type: stream-proposal
+title: Knowledge Capital Extraction Proposal
 tags:
   - topic/knowledge-islands
-status: settled - June 2026
+status: rejected
 priority: medium
 dependencies: []
 author: Written with Claude
@@ -10,7 +11,7 @@ author: Written with Claude
 
 # Knowledge Capital Extraction Proposal
 
-**Settled: absorbed by GDR-KI-ARCADIA-003 and the capital terminology overhaul (2026-06-27)**
+**Rejected as superseded: absorbed by GDR-KI-ARCADIA-003 and the capital terminology overhaul (2026-06-27).**
 
 ## What happened
 
