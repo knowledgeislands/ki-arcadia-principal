@@ -1,6 +1,7 @@
 ["knowledgeislands/ki-agentic-harness:ki-repo"]
 supported_runtimes = ["claude-code", "codex"]
-visibility = "private"
+visibility = "public"
+license = "MIT"
 
 ["knowledgeislands/ki-agentic-harness:ki-git"]
 
