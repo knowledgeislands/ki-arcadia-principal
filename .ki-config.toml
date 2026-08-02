@@ -19,6 +19,8 @@ license = "MIT"
 
 ["knowledgeislands/ki-agentic-harness:ki-kb-live-artifacts"]
 
+["knowledgeislands/ki-agentic-harness:ki-principal"]
+
 ["knowledgeislands/ki-agentic-harness:ki-decision-records"]
 scope = "KI-ARCADIA"
 repo_type = "kb"
