@@ -18,7 +18,7 @@
     "typescript": "^7.0.2"
   },
   "engines": {
-    "node": ">=22.0.0"
+    "node": ">=22"
   },
   "homepage": "https://github.com/knowledgeislands/ki-arcadia-principal#readme",
   "keywords": [
@@ -29,7 +29,7 @@
   ],
   "license": "MIT",
   "lint-staged": {
-    "*.{ts,tsx,js,jsx,json}": [
+    "*.{ts,tsx,js,jsx,json,jsonc}": [
       "bunx @biomejs/biome check --write --no-errors-on-unmatched"
     ],
     "*.md": [
@@ -44,6 +44,7 @@
   },
   "scripts": {
     "clean": "rm -rf node_modules",
+    "ki:deps:update": "bun update --latest",
     "prepare": "husky"
   },
   "type": "module"
