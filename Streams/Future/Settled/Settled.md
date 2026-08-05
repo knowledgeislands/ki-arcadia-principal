@@ -6,11 +6,11 @@ status: current - April 2026
 author: Written with Claude
 ---
 
-# Settled
+# Future
 
 ## Overview
 
-Settled streams are projects and workstreams that have reached a natural conclusion - completed, shipped, or otherwise finished. Unlike [[Dormant]] streams (which are paused and may resume), Settled streams are closed. Notes are retained here as a record of what was done and what was learned.
+Future streams are projects and workstreams that have reached a natural conclusion - completed, shipped, or otherwise finished. Unlike [[Parked]] streams (which are paused and may resume), Future streams are closed. Notes are retained here as a record of what was done and what was learned.
 
 ---
 

@@ -6,7 +6,7 @@ status: current - April 2026
 author: Written with Claude
 ---
 
-# Active
+# Now
 
 ## Overview
 

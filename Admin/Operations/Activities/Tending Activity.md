@@ -2,7 +2,8 @@
 tags:
   - card/note
   - topic/knowledge-islands
-status: current - April 2026
+status: active
+realization: workflow
 author: Written with Claude
 ---
 

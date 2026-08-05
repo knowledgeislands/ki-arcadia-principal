@@ -43,7 +43,7 @@ For each identified convention:
 
 ## Sequencing
 
-Background priority. Work starts when the Agentic Tool Documentation stream is ratified — that stream is the simpler first pass and will surface additional conventions that need rationale.
+Soon priority. Work starts when the Agentic Tool Documentation stream is ratified — that stream is the simpler first pass and will surface additional conventions that need rationale.
 
 ## Tracking
 

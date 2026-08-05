@@ -13,7 +13,7 @@ author: Written with Claude
 
 ## Overview
 
-The stream also covers stream focus index tables (Active, Background, Dormant, Future, Settled) - verifying each `## Streams` table matches the top-level [[Streams]] table, and adding a recurring audit step to whichever maintenance activity owns structural health checks.
+The stream also covers stream focus index tables (Now, Soon, Parked, Future, Future) - verifying each `## Streams` table matches the top-level [[Streams]] table, and adding a recurring audit step to whichever maintenance activity owns structural health checks.
 
 The goal is that by the end of the review, every index note in the Knowledge Islands pillar accurately contextualises its contents, and stream focus indexes are in sync and covered by ongoing maintenance.
 
@@ -47,7 +47,7 @@ The order follows the folder structure of `Pillars/Philosophy/`, leaf nodes firs
 
 ## Checklist
 
-- [ ] Verify stream focus index tables (Active, Background, Dormant, Future, Settled) match the top-level `Streams.md` table
+- [ ] Verify stream focus index tables (Now, Soon, Parked, Future, Future) match the top-level `Streams.md` table
 - [ ] Add a stream index table audit step to the appropriate maintenance activity (Health Check or Conformance Check)
 
 ## Adherence

@@ -25,7 +25,7 @@ This stream follows the [[Enactment Process]].
 
 ---
 
-## Background
+## Soon
 
 This stream is the second half of a two-phase pass. The first phase (now closed) did the mechanical work:
 
@@ -140,7 +140,7 @@ Role-name mentions across the Pillars notes in scope, regenerated after the prom
 
 ※ The activity is now a Claude-specific Prompt note at `Tools/Claude/Activities/Tending/Scheduled Task Audit.md`. Per the existing convention, `Tools/Claude/Activities/` is "legitimately island-specific" and excluded from the shared-notes list - so the entry should be removed rather than relocated.
 
-❡ Two patterns coexist: Conformance Prompt note uses `card/prompt` with `# X - Prompt` title and explicit `Definition: [[...]] Configuration: [[...]]` cross-link; the newly migrated Prompt notes use `card/note` with a plain `# X` title and no cross-link. Captured for review in [[Streams/Background/Reading Order/Reading Order\|Reading Order]] - decision will affect the capitalisation pass.
+❡ Two patterns coexist: Conformance Prompt note uses `card/prompt` with `# X - Prompt` title and explicit `Definition: [[...]] Configuration: [[...]]` cross-link; the newly migrated Prompt notes use `card/note` with a plain `# X` title and no cross-link. Captured for review in [[Streams/Soon/Reading Order/Reading Order\|Reading Order]] - decision will affect the capitalisation pass.
 
 ## Adherence
 

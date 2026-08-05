@@ -3,7 +3,7 @@ type: stream-proposal
 title: Knowledge Capital Extraction Proposal
 tags:
   - topic/knowledge-islands
-status: rejected
+status: done
 priority: medium
 dependencies: []
 author: Written with Claude

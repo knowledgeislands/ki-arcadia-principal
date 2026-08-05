@@ -2,7 +2,8 @@
 tags:
   - card/note
   - topic/knowledge-islands
-status: current - April 2026
+status: paused
+realization: manual
 author: Written with Claude
 ---
 

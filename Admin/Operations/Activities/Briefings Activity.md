@@ -2,7 +2,9 @@
 tags:
   - card/note
   - topic/knowledge-islands
-status: current - April 2026
+status: active
+realization: scheduled-task
+schedule_name: Morning Briefing
 author: Written with Claude
 ---
 

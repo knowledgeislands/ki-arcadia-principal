@@ -42,7 +42,7 @@ Five leftover flat notes have been repurposed as intro sections within their res
 Still outstanding - every folder in the tree still needs a folder note:
 
 - Act level: `Model/Model.md`, `Realisation/Realisation.md`
-- Introduction sub-chapters: `Introduction/Background/Background.md`, `Introduction/Concept/Concept.md`
+- Introduction sub-chapters: `Introduction/Soon/Soon.md`, `Introduction/Concept/Concept.md`
 - Section folders within chapters (e.g. `Tending/Tending.md`, `Email/Email.md`, each agent folder, each tool folder)
 - Realisation: `Realisation/Arcadia/Arcadia.md`
 
