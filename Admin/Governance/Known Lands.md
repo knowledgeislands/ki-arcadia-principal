@@ -18,10 +18,10 @@ The canonical record of all known archipelagos and islands in the Knowledge Isla
 
 The foundational archipelago - the Knowledge Island of Knowledge Islands. Arcadia holds the canonical definition, architecture, and governance model for the entire ecosystem. All other archipelagos derive their governance baseline from Arcadia.
 
-| Island                 | Role               | Repository                              | Local path                                    |
-| ---------------------- | ------------------ | --------------------------------------- | --------------------------------------------- |
+| Island | Role | Repository | Local path |
+| --- | --- | --- | --- |
 | `ki-arcadia-principal` | Principal island † | `knowledgeislands/ki-arcadia-principal` | `~/kis/knowledgeislands/ki-arcadia-principal` |
-| `ki-website`           | Framework site ‡   | `knowledgeislands/ki-website`           | `~/kis/knowledgeislands/ki-website`           |
+| `ki-website` | Framework site ‡ | `knowledgeislands/ki-website` | `~/kis/knowledgeislands/ki-website` |
 
 † **`ki-arcadia-principal` role** — principal island; the canonical base and source of the KI model.
 

@@ -27,8 +27,8 @@ These apply across all zones:
 
 Convention sets specific to each zone:
 
-| Zone    | Sub-folder                                                       | Covers                                                |
-| ------- | ---------------------------------------------------------------- | ----------------------------------------------------- |
-| Admin   | [[Admin Conventions/Admin Conventions\|Admin Conventions]]       | Routing rules, integrations, physical locations       |
-| Pillars | [[Pillars Conventions/Pillars Conventions\|Pillars Conventions]] | How Pillars notes are structured and named            |
+| Zone | Sub-folder | Covers |
+| --- | --- | --- |
+| Admin | [[Admin Conventions/Admin Conventions\|Admin Conventions]] | Routing rules, integrations, physical locations |
+| Pillars | [[Pillars Conventions/Pillars Conventions\|Pillars Conventions]] | How Pillars notes are structured and named |
 | Streams | [[Streams Conventions/Streams Conventions\|Streams Conventions]] | Proposal structure, focus folder naming, stream notes |

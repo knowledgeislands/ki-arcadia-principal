@@ -14,18 +14,18 @@ How the Knowledge Islands tooling layer fits together: what each component is, w
 
 ## Components
 
-| Component               | Role                                                                          | Repo                      |
-| ----------------------- | ----------------------------------------------------------------------------- | ------------------------- |
-| ki-arcadia-principal    | Knowledge base — the source of truth; all tooling serves or publishes from it | `ki-arcadia-principal`    |
-| ki-agentic-harness      | Agentic harness †                                                             | `ki-agentic-harness`      |
-| ki-specifications       | Normative portable contracts §                                                | `ki-specifications`       |
-| ki-website              | Publication layer ‡                                                           | `ki-website`              |
-| mcp-git-audit           | Git fleet auditor — surfaces repo state across all workspace repositories     | `mcp-git-audit`           |
-| mcp-ki-kb-fs            | KB filesystem — read/write access to KB notes via MCP                         | `mcp-ki-kb-fs`            |
-| mcp-kb-notion-mirror    | Notion mirror — publishes KB notes into Notion with URL back-writes           | `mcp-kb-notion-mirror`    |
-| mcp-gmail               | Gmail — email read, triage, and draft creation via Google API                 | `mcp-gmail`               |
-| mcp-m365                | Microsoft 365 — Outlook, OneDrive, and Power Automate via Microsoft Graph     | `mcp-m365`                |
-| mcp-claude-housekeeping | Claude housekeeping — audits Claude app state accumulation on macOS           | `mcp-claude-housekeeping` |
+| Component | Role | Repo |
+| --- | --- | --- |
+| ki-arcadia-principal | Knowledge base — the source of truth; all tooling serves or publishes from it | `ki-arcadia-principal` |
+| ki-agentic-harness | Agentic harness † | `ki-agentic-harness` |
+| ki-specifications | Normative portable contracts § | `ki-specifications` |
+| ki-website | Publication layer ‡ | `ki-website` |
+| mcp-git-audit | Git fleet auditor — surfaces repo state across all workspace repositories | `mcp-git-audit` |
+| mcp-ki-kb-fs | KB filesystem — read/write access to KB notes via MCP | `mcp-ki-kb-fs` |
+| mcp-kb-notion-mirror | Notion mirror — publishes KB notes into Notion with URL back-writes | `mcp-kb-notion-mirror` |
+| mcp-gmail | Gmail — email read, triage, and draft creation via Google API | `mcp-gmail` |
+| mcp-m365 | Microsoft 365 — Outlook, OneDrive, and Power Automate via Microsoft Graph | `mcp-m365` |
+| mcp-claude-housekeeping | Claude housekeeping — audits Claude app state accumulation on macOS | `mcp-claude-housekeeping` |
 
 † **ki-agentic-harness role** — the framework's general tooling: governance skills, agents, and MCP configuration any island adopts for working on and with a KB. Framework-level, not Arcadia-territory-scoped.
 

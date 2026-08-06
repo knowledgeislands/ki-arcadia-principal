@@ -25,12 +25,12 @@ Once the remaining phases land and Arcadia is fully organised, the patterns this
 
 ## Phase Summary
 
-| Phase               | Status            | Description                                                                              |
-| ------------------- | ----------------- | ---------------------------------------------------------------------------------------- |
-| Prompt sync audit   | `[ ]` Not started | Verify all Prompt notes are in sync with their Cowork scheduled tasks                    |
+| Phase | Status | Description |
+| --- | --- | --- |
+| Prompt sync audit | `[ ]` Not started | Verify all Prompt notes are in sync with their Cowork scheduled tasks |
 | Activity navigation | `[ ]` Not started | Investigate cached/synthesised views of the content layers for human and agent consumers |
-| Arcadia skill       | `[ ]` Not started | Define and configure the Arcadia Knowledge Islands skill                                 |
-| Scheduled tasks     | `[ ]` Not started | Configure Arcadia's scheduled tasks in Cowork; verify against Charter                    |
+| Arcadia skill | `[ ]` Not started | Define and configure the Arcadia Knowledge Islands skill |
+| Scheduled tasks | `[ ]` Not started | Configure Arcadia's scheduled tasks in Cowork; verify against Charter |
 
 ---
 

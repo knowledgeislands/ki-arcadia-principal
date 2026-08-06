@@ -19,11 +19,11 @@ Structure is where those geographic conventions are specified. Each zone has its
 
 Each island realises its knowledge through one or more physical stores:
 
-| Store             | Purpose                                                         | Structure                         |
-| ----------------- | --------------------------------------------------------------- | --------------------------------- |
-| **Text store**    | Markdown notes - version-controlled, git-backed, human-readable | Canonical island folder structure |
-| **Binary store**  | Large binary files - images, PDFs, exports, attachments         | Mirrors text store exactly        |
-| **Working space** | Temporary area used by tools and agents; ephemeral              | None required                     |
+| Store | Purpose | Structure |
+| --- | --- | --- |
+| **Text store** | Markdown notes - version-controlled, git-backed, human-readable | Canonical island folder structure |
+| **Binary store** | Large binary files - images, PDFs, exports, attachments | Mirrors text store exactly |
+| **Working space** | Temporary area used by tools and agents; ephemeral | None required |
 
 The text and binary stores must share an identical folder structure so that files are co-located by topic regardless of which store they live in. When creating or referencing a binary asset, save it to the binary store under the same relative subfolder as the corresponding note.
 
@@ -33,10 +33,10 @@ Git is the source of truth for canonical knowledge. The working space is ephemer
 
 The governance infrastructure belongs to the principal island and serves the entire archipelago. It is not a store - it is the operational layer through which knowledge is managed and evolved:
 
-| Infrastructure     | Purpose                                                                                              |
-| ------------------ | ---------------------------------------------------------------------------------------------------- |
+| Infrastructure | Purpose |
+| --- | --- |
 | **Cowork project** | The parliament - where proposals are reviewed, sessions are run, and archipelago-wide decisions made |
-| **Working folder** | The yard - temporary scratch space for in-progress work; discarded once committed or abandoned       |
+| **Working folder** | The yard - temporary scratch space for in-progress work; discarded once committed or abandoned |
 
 Specific paths for each island are defined in its Knowledge Capital.
 
@@ -66,13 +66,13 @@ Streams notes track current status, progress, and next steps - they are not know
 
 `Calendar` contains several note types. Daily notes, meeting notes, session digests, and the monthly index are filed in the month folder and referenced from the daily note by wikilink; the daily note does not duplicate their content. Weekly notes are filed separately in a per-year `YYYY By Week/` folder alongside the month folders.
 
-| Note type      | Path pattern                    | Purpose                                                                      |
-| -------------- | ------------------------------- | ---------------------------------------------------------------------------- |
-| Daily note     | `YYYY-MM-DD DayName.md`         | The anchor for the day - links out to all other Calendar notes for that date |
-| Meeting note   | `YYYY-MM-DD Meeting Name.md`    | Record of a specific meeting - one note per meeting                          |
-| Session digest | `YYYY-MM-DD Session - Topic.md` | Summary of a substantive AI-assisted work session                            |
-| Monthly index  | `YYYY-MM MonthName.md`          | Index note for the month - same name as the containing folder                |
-| Weekly note    | `YYYY WXX.md`                   | Weekly note filed in the year's `YYYY By Week/` sibling folder †             |
+| Note type | Path pattern | Purpose |
+| --- | --- | --- |
+| Daily note | `YYYY-MM-DD DayName.md` | The anchor for the day - links out to all other Calendar notes for that date |
+| Meeting note | `YYYY-MM-DD Meeting Name.md` | Record of a specific meeting - one note per meeting |
+| Session digest | `YYYY-MM-DD Session - Topic.md` | Summary of a substantive AI-assisted work session |
+| Monthly index | `YYYY-MM MonthName.md` | Index note for the month - same name as the containing folder |
+| Weekly note | `YYYY WXX.md` | Weekly note filed in the year's `YYYY By Week/` sibling folder † |
 
 † **Weekly note purpose** — weekly note filed in the year's `YYYY By Week/` sibling folder (e.g. `Calendar/2026/2026 By Week/2026 W14.md`).
 

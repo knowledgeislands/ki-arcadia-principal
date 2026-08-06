@@ -23,11 +23,11 @@ In practice, Arcadia is worked by a combination of the island owner acting throu
 
 Three types of agent participate in the Knowledge Islands cycle:
 
-| Type                  | Role in the cycle                                             | Interface                              |
-| --------------------- | ------------------------------------------------------------- | -------------------------------------- |
-| **Human**             | Judgment, meaning-making, editorial authority                 | Documents, editors, chat, review       |
-| **Artificial (tool)** | Capture, connection, curation                                 | Protocols, APIs, MCP tools             |
-| **Agentic AI**        | Autonomous processing, structured output, scheduled execution | Skill prompts, tool calls, file writes |
+| Type | Role in the cycle | Interface |
+| --- | --- | --- |
+| **Human** | Judgment, meaning-making, editorial authority | Documents, editors, chat, review |
+| **Artificial (tool)** | Capture, connection, curation | Protocols, APIs, MCP tools |
+| **Agentic AI** | Autonomous processing, structured output, scheduled execution | Skill prompts, tool calls, file writes |
 
 The distinction between human and AI is not structural - both can edit a file - but semantic: humans determine what knowledge is valuable and decide what the island should contain. Artificial agents and agentic AIs execute reliably against patterns; they do not originate editorial judgement. The island's authoritativeness comes from human authorship at its root, even when AI produces the draft or the automation produces the update.
 

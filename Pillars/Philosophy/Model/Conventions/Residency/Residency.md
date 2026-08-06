@@ -19,11 +19,11 @@ These tiers are complementary, not competing. The Library is what the knowledge 
 
 ## Three Tiers
 
-| Tier                 | What it is                                                               | Lifetime                         |
-| -------------------- | ------------------------------------------------------------------------ | -------------------------------- |
-| **The Library**      | Structured notes in the island - rules, conventions, style, architecture | Permanent - versioned in git     |
-| **Canonical memory** | Operational distillation notes - rebuilt regularly from the island       | Rebuilt on a schedule †          |
-| **Auxiliary memory** | In-flight observations from sessions ‡                                   | Temporary - promoted or pruned § |
+| Tier | What it is | Lifetime |
+| --- | --- | --- |
+| **The Library** | Structured notes in the island - rules, conventions, style, architecture | Permanent - versioned in git |
+| **Canonical memory** | Operational distillation notes - rebuilt regularly from the island | Rebuilt on a schedule † |
+| **Auxiliary memory** | In-flight observations from sessions ‡ | Temporary - promoted or pruned § |
 
 † Always derived from the island.
 
@@ -45,19 +45,19 @@ The guiding question for each piece of knowledge:
 
 More specifically:
 
-| Type of knowledge                          | Library   | Canonical memory   | Auxiliary memory           | Memory `type`           |
-| ------------------------------------------ | --------- | ------------------ | -------------------------- | ----------------------- |
-| Folder structure and routing rules         | ✅        | ✅ summary         | -                          | `project`               |
-| Note format and frontmatter conventions    | ✅        | ✅ summary         | -                          | `project`               |
-| Tag taxonomy                               | ✅        | ✅ full list       | -                          | `project`               |
-| Operational rules (file ops, known errors) | ✅ source | ✅ actionable form | -                          | `feedback`              |
-| Communication style and voice              | ✅        | ✅ user profile    | -                          | `user`                  |
-| Activity schedules and integration config  | ✅        | ✅ summary table   | -                          | `reference`             |
-| In-session corrections (one-off)           | -         | -                  | ✅ until promoted          | `feedback`              |
-| Recurring corrections (validated)          | ✅        | ✅ via rebuild     | ✅ auxiliary until rebuilt | `feedback`              |
-| Volatile implementation details            | -         | -                  | ✅ if useful               | `project` or `feedback` |
-| User preferences (chat behaviour)          | ✅        | ✅ user profile    | -                          | `user`                  |
-| Pointers to where knowledge lives          | -         | ✅                 | -                          | `reference`             |
+| Type of knowledge | Library | Canonical memory | Auxiliary memory | Memory `type` |
+| --- | --- | --- | --- | --- |
+| Folder structure and routing rules | ✅ | ✅ summary | - | `project` |
+| Note format and frontmatter conventions | ✅ | ✅ summary | - | `project` |
+| Tag taxonomy | ✅ | ✅ full list | - | `project` |
+| Operational rules (file ops, known errors) | ✅ source | ✅ actionable form | - | `feedback` |
+| Communication style and voice | ✅ | ✅ user profile | - | `user` |
+| Activity schedules and integration config | ✅ | ✅ summary table | - | `reference` |
+| In-session corrections (one-off) | - | - | ✅ until promoted | `feedback` |
+| Recurring corrections (validated) | ✅ | ✅ via rebuild | ✅ auxiliary until rebuilt | `feedback` |
+| Volatile implementation details | - | - | ✅ if useful | `project` or `feedback` |
+| User preferences (chat behaviour) | ✅ | ✅ user profile | - | `user` |
+| Pointers to where knowledge lives | - | ✅ | - | `reference` |
 
 ---
 

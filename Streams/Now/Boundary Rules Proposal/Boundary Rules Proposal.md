@@ -25,9 +25,9 @@ This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment
 
 ## Outputs
 
-| Type             | Detail                                                                                                       |
-| ---------------- | ------------------------------------------------------------------------------------------------------------ |
-| Convention note  | `Pillars/Philosophy/Model/Conventions/Boundary Rules.md` - new standalone note                               |
+| Type | Detail |
+| --- | --- |
+| Convention note | `Pillars/Philosophy/Model/Conventions/Boundary Rules.md` - new standalone note |
 | Tending activity | Boundary rules scan activity in `Pillars/Admin/Governance/Activities/` (schedule and trigger TBD at rollout) |
 
 ---

@@ -16,17 +16,17 @@ A reference for Knowledge Islands terminology - concepts, acronyms, and structur
 
 ## Core Concepts
 
-| Term                  | Meaning                                                                                                   |
-| --------------------- | --------------------------------------------------------------------------------------------------------- |
+| Term | Meaning |
+| --- | --- |
 | Knowledge Island (KI) | A discrete, self-contained body of knowledge - a repository of notes with its own governance and identity |
-| Archipelago           | A geographic grouping of islands by proximity or shared natural character; independent of governance†     |
-| Principal Island      | The seat of governance for a territory ‡                                                                  |
-| Satellite Island      | A governed extension of a territory, ring-fenced for a specific purpose §                                 |
-| Islet                 | A small, purpose-specific knowledge area sharing its principal island's governance ¶                      |
-| Council               | The governing body of an island using the council model ‖                                                 |
-| Custodian             | A council member; a traveller who knows the archipelago and may contribute to its canonical knowledge ††  |
-| Known Lands           | A map of known islands held in an island ‡‡                                                               |
-| Capital               | The seat of governance for a jurisdiction §§                                                              |
+| Archipelago | A geographic grouping of islands by proximity or shared natural character; independent of governance† |
+| Principal Island | The seat of governance for a territory ‡ |
+| Satellite Island | A governed extension of a territory, ring-fenced for a specific purpose § |
+| Islet | A small, purpose-specific knowledge area sharing its principal island's governance ¶ |
+| Council | The governing body of an island using the council model ‖ |
+| Custodian | A council member; a traveller who knows the archipelago and may contribute to its canonical knowledge †† |
+| Known Lands | A map of known islands held in an island ‡‡ |
+| Capital | The seat of governance for a jurisdiction §§ |
 
 † A territory may contain one or more archipelagos; an archipelago may span multiple territories. The boundary rule (customs vs. free knowledge flow) determines territory; proximity and shared character determine archipelago.
 
@@ -48,13 +48,13 @@ A reference for Knowledge Islands terminology - concepts, acronyms, and structur
 
 ## Storage & Infrastructure
 
-| Term                            | Meaning                                                                                               |
-| ------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| Knowledge Island Storage (KISS) | The physical storage layer of an island ¶¶                                                            |
-| Text Store                      | The canonical Markdown repository, version-controlled in git                                          |
-| Binary Store                    | External storage for large binary files (PDFs, images, exports) ‖‖                                    |
-| Working Space                   | Ephemeral scratch space for AI-assisted session work; not version-controlled; cleared once obsolete   |
-| Governance Infrastructure       | The Cowork project and working folder that belong to a principal island and serve the whole territory |
+| Term | Meaning |
+| --- | --- |
+| Knowledge Island Storage (KISS) | The physical storage layer of an island ¶¶ |
+| Text Store | The canonical Markdown repository, version-controlled in git |
+| Binary Store | External storage for large binary files (PDFs, images, exports) ‖‖ |
+| Working Space | Ephemeral scratch space for AI-assisted session work; not version-controlled; cleared once obsolete |
+| Governance Infrastructure | The Cowork project and working folder that belong to a principal island and serve the whole territory |
 
 ¶¶ Text store (Markdown, git-backed) and binary store (large files).
 
@@ -78,11 +78,11 @@ A reference for Knowledge Islands terminology - concepts, acronyms, and structur
 
 Knowledge Islands is not the only model of knowledge organisation. Other systems - wikis, drives, legacy vaults, corporate intranets - exist as **Planes of Existence**: parallel worlds of knowledge that operate independently of the KI model.
 
-| Term                | Meaning                                                                                                  |
-| ------------------- | -------------------------------------------------------------------------------------------------------- |
-| Planes of Existence | Other knowledge systems that exist outside the Knowledge Islands model †††                               |
-| Legacy Plane        | A predecessor system from which Knowledge Islands content is being or has been migrated; the "old world" |
-| Migration           | Bringing knowledge from a Plane of Existence into a Knowledge Island ‡‡‡                                 |
+| Term | Meaning |
+| --- | --- |
+| Planes of Existence | Other knowledge systems that exist outside the Knowledge Islands model ††† |
+| Legacy Plane | A predecessor system from which Knowledge Islands content is being or has been migrated; the "old world" |
+| Migration | Bringing knowledge from a Plane of Existence into a Knowledge Island ‡‡‡ |
 
 ††† For example, Notion, Confluence, Google Drive, SharePoint, legacy Obsidian vaults.
 
@@ -92,14 +92,14 @@ Knowledge Islands is not the only model of knowledge organisation. Other systems
 
 ## Governance & Change
 
-| Term              | Meaning                                                                                                          |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Enactment Process | The council's operating mechanism - how Streams enact change in the island §§§                                   |
-| Contribution      | A proposed change to an island's canonical knowledge, submitted through the Enactment Process for council review |
-| Customs           | Boundary rules governing what knowledge may enter or leave an island                                             |
-| Ratify            | Council approves a change; it proceeds to rollout                                                                |
-| Return            | Council sends a change back to draft for further work, with reasons                                              |
-| Reject            | Council definitively rejects a change; terminal outcome, reasons recorded                                        |
+| Term | Meaning |
+| --- | --- |
+| Enactment Process | The council's operating mechanism - how Streams enact change in the island §§§ |
+| Contribution | A proposed change to an island's canonical knowledge, submitted through the Enactment Process for council review |
+| Customs | Boundary rules governing what knowledge may enter or leave an island |
+| Ratify | Council approves a change; it proceeds to rollout |
+| Return | Council sends a change back to draft for further work, with reasons |
+| Reject | Council definitively rejects a change; terminal outcome, reasons recorded |
 
 ---
 

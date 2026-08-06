@@ -41,33 +41,33 @@ The remaining work is structural: making the layering implicit rather than label
 
 Role-name mentions across the Pillars notes in scope, regenerated after the prompt migration. Only notes with at least one mention are listed; 17 activity Definitions ended up clean and are not shown (named in observation 5 below). [[Authoring Guidelines]] is also excluded as the framework note that defines the role names - its mentioning all five is tautological and not informative for Option B targeting. Sorted by path. `x` marks a presence (prose mention or `## Prompt` section heading).
 
-| Note                                                             | Definition | Configuration | Pattern | Agent Behaviour | Prompt |
-| ---------------------------------------------------------------- | :--------: | :-----------: | :-----: | :-------------: | :----: |
-| `Model/Activities/Tending/Tending.md`                            |     x      |       —       |    —    |        —        |   x    |
-| `Model/Activities/What Keeps an Island Alive.md`                 |     —      |       —       |    —    |        —        |   x    |
-| `Model/Agents/Agentic AI/Agentic AI.md`                          |     —      |       —       |    x    |        —        |   —    |
-| `Model/Conventions/Notes/Activity Note.md`                       |     —      |       —       |    —    |        —        |   x    |
-| `Model/Tools/Claude/Activities/Activities.md`                    |     x      |       —       |    —    |        —        |   x    |
-| `Model/Tools/Claude/Activities/Briefings/Briefings.md`           |     x      |       —       |    —    |        —        |   x    |
-| `Model/Tools/Claude/Activities/Briefings/Morning Briefing.md`    |     —      |       —       |    —    |        —        |   x    |
-| `Model/Tools/Claude/Activities/Constitutional/Conformance.md`    |     x      |       x       |    —    |        —        |   x    |
-| `Model/Tools/Claude/Activities/Constitutional/Constitutional.md` |     x      |       —       |    —    |        —        |   x    |
-| `Model/Tools/Claude/Activities/Email/Email Test.md`              |     —      |       —       |    —    |        —        |   x    |
-| `Model/Tools/Claude/Activities/Email/Email.md`                   |     x      |       —       |    —    |        —        |   x    |
-| `Model/Tools/Claude/Activities/Email/Re-route Triaged.md`        |     —      |       —       |    —    |        —        |   x    |
-| `Model/Tools/Claude/Activities/Email/Recap.md`                   |     —      |       —       |    —    |        —        |   x    |
-| `Model/Tools/Claude/Activities/Email/Route Drift.md`             |     —      |       —       |    —    |        —        |   x    |
-| `Model/Tools/Claude/Activities/Email/Route Review.md`            |     —      |       —       |    —    |        —        |   x    |
-| `Model/Tools/Claude/Activities/Email/Route Triage.md`            |     —      |       —       |    —    |        —        |   x    |
-| `Model/Tools/Claude/Activities/Linear/Linear Sync.md`            |     —      |       —       |    —    |        —        |   x    |
-| `Model/Tools/Claude/Activities/Linear/Linear.md`                 |     x      |       —       |    —    |        —        |   x    |
-| `Model/Tools/Claude/Activities/Tending/Convergence Check.md`     |     —      |       —       |    —    |        —        |   x    |
-| `Model/Tools/Claude/Activities/Tending/Health Check.md`          |     —      |       —       |    —    |        —        |   x    |
-| `Model/Tools/Claude/Activities/Tending/Knowledge Rebuild.md`     |     —      |       —       |    —    |        —        |   x    |
-| `Model/Tools/Claude/Activities/Tending/Scheduled Task Audit.md`  |     x      |       —       |    —    |        —        |   x    |
-| `Model/Tools/Claude/Activities/Tending/Tending.md`               |     x      |       —       |    —    |        —        |   x    |
-| `Model/Tools/Claude/Claude.md`                                   |     x      |       —       |    —    |        —        |   x    |
-| `Model/Tools/How Tools Connect.md`                               |     —      |       —       |    —    |        —        |   x    |
+| Note | Definition | Configuration | Pattern | Agent Behaviour | Prompt |
+| --- | :-: | :-: | :-: | :-: | :-: |
+| `Model/Activities/Tending/Tending.md` | x | — | — | — | x |
+| `Model/Activities/What Keeps an Island Alive.md` | — | — | — | — | x |
+| `Model/Agents/Agentic AI/Agentic AI.md` | — | — | x | — | — |
+| `Model/Conventions/Notes/Activity Note.md` | — | — | — | — | x |
+| `Model/Tools/Claude/Activities/Activities.md` | x | — | — | — | x |
+| `Model/Tools/Claude/Activities/Briefings/Briefings.md` | x | — | — | — | x |
+| `Model/Tools/Claude/Activities/Briefings/Morning Briefing.md` | — | — | — | — | x |
+| `Model/Tools/Claude/Activities/Constitutional/Conformance.md` | x | x | — | — | x |
+| `Model/Tools/Claude/Activities/Constitutional/Constitutional.md` | x | — | — | — | x |
+| `Model/Tools/Claude/Activities/Email/Email Test.md` | — | — | — | — | x |
+| `Model/Tools/Claude/Activities/Email/Email.md` | x | — | — | — | x |
+| `Model/Tools/Claude/Activities/Email/Re-route Triaged.md` | — | — | — | — | x |
+| `Model/Tools/Claude/Activities/Email/Recap.md` | — | — | — | — | x |
+| `Model/Tools/Claude/Activities/Email/Route Drift.md` | — | — | — | — | x |
+| `Model/Tools/Claude/Activities/Email/Route Review.md` | — | — | — | — | x |
+| `Model/Tools/Claude/Activities/Email/Route Triage.md` | — | — | — | — | x |
+| `Model/Tools/Claude/Activities/Linear/Linear Sync.md` | — | — | — | — | x |
+| `Model/Tools/Claude/Activities/Linear/Linear.md` | x | — | — | — | x |
+| `Model/Tools/Claude/Activities/Tending/Convergence Check.md` | — | — | — | — | x |
+| `Model/Tools/Claude/Activities/Tending/Health Check.md` | — | — | — | — | x |
+| `Model/Tools/Claude/Activities/Tending/Knowledge Rebuild.md` | — | — | — | — | x |
+| `Model/Tools/Claude/Activities/Tending/Scheduled Task Audit.md` | x | — | — | — | x |
+| `Model/Tools/Claude/Activities/Tending/Tending.md` | x | — | — | — | x |
+| `Model/Tools/Claude/Claude.md` | x | — | — | — | x |
+| `Model/Tools/How Tools Connect.md` | — | — | — | — | x |
 
 ### Observations
 
@@ -127,12 +127,12 @@ Role-name mentions across the Pillars notes in scope, regenerated after the prom
 
 ## Open Issues
 
-| Issue                                                                                                         | Notes |
-| ------------------------------------------------------------------------------------------------------------- | ----- |
-| Whether to retain "in the Definition layer" pointers in per-group index notes                                 | ¶¶    |
-| Whether to keep capitalised role names or downgrade to ordinary nouns                                         | ‖‖    |
-| Convergence Check shared-notes list still references the deleted `Activities/Tending/Scheduled Task Audit.md` | ※     |
-| Frontmatter conventions for Prompt notes are inconsistent                                                     | ❡     |
+| Issue | Notes |
+| --- | --- |
+| Whether to retain "in the Definition layer" pointers in per-group index notes | ¶¶ |
+| Whether to keep capitalised role names or downgrade to ordinary nouns | ‖‖ |
+| Convergence Check shared-notes list still references the deleted `Activities/Tending/Scheduled Task Audit.md` | ※ |
+| Frontmatter conventions for Prompt notes are inconsistent | ❡ |
 
 ¶¶ The pointers were a navigational signpost; removing them risks readers who land cold losing context. Mitigation is wikilink quality and the lattice in Authoring Guidelines. Concrete target: nine notes carry this phrasing today.
 

@@ -40,11 +40,11 @@ This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment
 
 ## Outputs
 
-| Type     | Detail                                                                                                                   |
-| -------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Type | Detail |
+| --- | --- |
 | Artefact | Updated `Concept.md` - settlement type table expanded with Towns; island defined by repository boundary; naming resolved |
-| Artefact | Updated `Concept.md` - `[!todo] Customs and Routes` resolved into prose covering both concepts at conceptual level       |
-| Artefact | Updated `Structure.md` - `[!todo] Harbour` and `[!todo] Routes and Customs` resolved into structural specification       |
+| Artefact | Updated `Concept.md` - `[!todo] Customs and Routes` resolved into prose covering both concepts at conceptual level |
+| Artefact | Updated `Structure.md` - `[!todo] Harbour` and `[!todo] Routes and Customs` resolved into structural specification |
 
 ---
 

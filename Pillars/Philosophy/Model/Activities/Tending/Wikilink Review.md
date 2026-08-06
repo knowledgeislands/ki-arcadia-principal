@@ -32,11 +32,11 @@ Adhoc - _"ki wikilink review"_. Typically paired with [[Structural Audit]] or [[
 
 ## Link Types
 
-| Type             | Description                                                 | Resolution                                |
-| ---------------- | ----------------------------------------------------------- | ----------------------------------------- |
-| Broken outlink   | A `[[wikilink]]` in a note with no matching file ‡          | Create the missing note, or fix/remove it |
-| Orphan note      | A file that no other note links to - unreachable by graph † | Link from a parent index note, or archive |
-| Placeholder link | A link intentionally left unresolved pending a future note  | Create the note when the topic is ready   |
+| Type | Description | Resolution |
+| --- | --- | --- |
+| Broken outlink | A `[[wikilink]]` in a note with no matching file ‡ | Create the missing note, or fix/remove it |
+| Orphan note | A file that no other note links to - unreachable by graph † | Link from a parent index note, or archive |
+| Placeholder link | A link intentionally left unresolved pending a future note | Create the note when the topic is ready |
 
 † It exists but is unreachable by graph.
 

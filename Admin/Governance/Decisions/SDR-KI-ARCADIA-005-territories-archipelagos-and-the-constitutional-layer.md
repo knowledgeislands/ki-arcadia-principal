@@ -23,9 +23,9 @@ A single island with a cycle of knowledge is a personal practice. Knowledge Isla
 
 The unit of governance in the Knowledge Islands model is a **territory**: one or more islands under a shared jurisdiction, with exactly one **principal island** — the seat of governance, holding the Capital and the shared governance infrastructure. Additional **satellite islands** extend the territory for specific purposes: a different topic scope, a different audience, or a different publication target.
 
-| Type             | Role                                                                                                 |
-| ---------------- | ---------------------------------------------------------------------------------------------------- |
-| Principal island | Seat of governance; holds the Capital and shared infrastructure; every territory has exactly one     |
+| Type | Role |
+| --- | --- |
+| Principal island | Seat of governance; holds the Capital and shared infrastructure; every territory has exactly one |
 | Satellite island | Governed extension with an independent boundary; same governance conventions as the principal island |
 
 The boundary rule is simple: if customs exist at the boundary, it is a separate territory. If knowledge flows freely with no controls, it is internal structure.

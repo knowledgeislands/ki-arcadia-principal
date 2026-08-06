@@ -138,11 +138,11 @@ techne/
 
 ## Phased Roadmap
 
-| Phase                | Goal                                                                      | Deliverable                    |
-| -------------------- | ------------------------------------------------------------------------- | ------------------------------ |
-| 1 - Foundation       | AWS, EKS, CDK, networking, secrets                                        | Functioning Kubernetes cluster |
-| 2 - Observability    | Grafana stack, Alloy, Prometheus, Loki                                    | Observable platform            |
-| 3 - Technē Core      | Orchestrator, agent lifecycle, dispatch, task routing, queue              | Basic orchestration engine     |
-| 4 - Git Memory       | Git memory abstraction, commit pipelines, PR workflows, context retrieval | Persistent agent memory        |
-| 5 - Agent Fleet      | Agent SDK, contracts, policy controls, tools, first agents deployed       | Operational swarm              |
-| 6 - Human Governance | PR approvals, policy validation, audit logging, rollback workflows        | Governed AI platform           |
+| Phase | Goal | Deliverable |
+| --- | --- | --- |
+| 1 - Foundation | AWS, EKS, CDK, networking, secrets | Functioning Kubernetes cluster |
+| 2 - Observability | Grafana stack, Alloy, Prometheus, Loki | Observable platform |
+| 3 - Technē Core | Orchestrator, agent lifecycle, dispatch, task routing, queue | Basic orchestration engine |
+| 4 - Git Memory | Git memory abstraction, commit pipelines, PR workflows, context retrieval | Persistent agent memory |
+| 5 - Agent Fleet | Agent SDK, contracts, policy controls, tools, first agents deployed | Operational swarm |
+| 6 - Human Governance | PR approvals, policy validation, audit logging, rollback workflows | Governed AI platform |
