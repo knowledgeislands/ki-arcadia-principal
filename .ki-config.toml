@@ -5,6 +5,8 @@ description = "The core knowledge repository of the Knowledge Islands project â€
 supported_runtimes = ["claude-code", "chatgpt-codex"]
 visibility = "public"
 license = "MIT"
+repo_type = "kb"
+store_roles = ["notes"]
 
 ["knowledgeislands/ki-agentic-harness:ki-git"]
 
@@ -24,7 +26,6 @@ license = "MIT"
 
 ["knowledgeislands/ki-agentic-harness:ki-decision-records"]
 scope = "KI-ARCADIA"
-repo_type = "kb"
 
 ["knowledgeislands/ki-agentic-harness:ki-tokenomics"]
 headroom = "recommended"
