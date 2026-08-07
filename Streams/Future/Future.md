@@ -25,7 +25,6 @@ Ideas and projects not yet started - queued for when the time or circumstances a
 | [[Bullet Journal Support Proposal]]         | `draft` | `low`    |
 | [[Island MCP Proposal]]                     | `draft` | `low`    |
 | [[Island Visualisation Proposal]]           | `draft` | `low`    |
-| [[MCP Ecosystem Proposal]]                  | `draft` | `low`    |
 | [[Scheduled Automations Proposal]]          | `draft` | `low`    |
 | [[Semantic Conventions Proposal]]           | `draft` | `low`    |
 | [[Token Economics Proposal]]                | `draft` | `low`    |

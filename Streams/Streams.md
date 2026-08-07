@@ -36,7 +36,6 @@ Live tracking view of all active proposals. Ordered by Stream (Now → Soon → 
 | [[Bullet Journal Support Proposal]]              | Future | `draft`    | `low`    |
 | [[Island MCP Proposal]]                          | Future | `draft`    | `low`    |
 | [[Island Visualisation Proposal]]                | Future | `draft`    | `low`    |
-| [[MCP Ecosystem Proposal]]                       | Future | `draft`    | `low`    |
 | [[Scheduled Automations Proposal]]               | Future | `draft`    | `low`    |
 | [[Semantic Conventions Proposal]]                | Future | `draft`    | `low`    |
 | [[Token Economics Proposal]]                     | Future | `draft`    | `low`    |
