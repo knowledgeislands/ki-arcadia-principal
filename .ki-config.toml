@@ -1,4 +1,7 @@
-["knowledgeislands/ki-agentic-harness:ki-repo"]
+[repo]
+harnesses = ["knowledgeislands/ki-agentic-harness"]
+
+[skills.ki-repo]
 repository = "https://github.com/knowledgeislands/ki-arcadia-principal"
 title = "Arcadia Principal"
 description = "The core knowledge repository of the Knowledge Islands project — governance base, evolving KB, and decision record."
@@ -8,34 +11,34 @@ license = "MIT"
 repo_type = "kb"
 store_roles = ["notes"]
 
-["knowledgeislands/ki-agentic-harness:ki-git"]
+[skills.ki-git]
 
-["knowledgeislands/ki-agentic-harness:ki-authoring"]
+[skills.ki-authoring]
 
-["knowledgeislands/ki-agentic-harness:ki-engineering"]
+[skills.ki-engineering]
 
-["knowledgeislands/ki-agentic-harness:ki-kb"]
+[skills.ki-kb]
 
-["knowledgeislands/ki-agentic-harness:ki-kb-streams"]
+[skills.ki-kb-streams]
 
-["knowledgeislands/ki-agentic-harness:ki-kb-activities"]
+[skills.ki-kb-activities]
 
-["knowledgeislands/ki-agentic-harness:ki-kb-live-artifacts"]
+[skills.ki-kb-live-artifacts]
 
-["knowledgeislands/ki-agentic-harness:ki-principal"]
+[skills.ki-principal]
 
-["knowledgeislands/ki-agentic-harness:ki-decision-records"]
+[skills.ki-decision-records]
 scope = "KI-ARCADIA"
 
-["knowledgeislands/ki-agentic-harness:ki-tokenomics"]
+[skills.ki-tokenomics]
 headroom = "recommended"
 preferred_model_type = "standard"
 
-["knowledgeislands/ki-agentic-harness:ki-tokenomics".budgets]
+[skills.ki-tokenomics.budgets]
 mcp_servers = 20 # User-scoped; revisit if the global MCP set is pruned.
 
-["knowledgeislands/ki-agentic-harness:ki-housekeeping-claude"]
+[skills.ki-housekeeping-claude]
 
-["knowledgeislands/ki-agentic-harness:ki-tokenomics-claude"]
+[skills.ki-tokenomics-claude]
 
-["knowledgeislands/ki-agentic-harness:ki-tokenomics-codex"]
+[skills.ki-tokenomics-codex]
