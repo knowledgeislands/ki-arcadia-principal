@@ -9,6 +9,7 @@ supported_runtimes = ["claude-code", "chatgpt-codex"]
 visibility = "public"
 license = "MIT"
 repo_type = "kb"
+repo_code = "KI-ARCADIA"
 store_roles = ["notes"]
 
 [skills.ki-git]
@@ -20,6 +21,7 @@ store_roles = ["notes"]
 [skills.ki-repo-kb]
 
 [skills.ki-repo-kb-streams]
+process_note = "Admin/Operations/Processes/Enactment Process"
 
 [skills.ki-repo-kb-activities]
 

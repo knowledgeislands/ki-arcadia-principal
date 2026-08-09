@@ -36,20 +36,18 @@ Stream  ←→  Enactment Process (Council)
 
 A proposal moves through a defined status lifecycle:
 
-`draft → ready → in-progress` → `rolled-out → reviewed → completed`
-
-or, if rejected: `draft → ready → rejected`
+`draft → ready → in-progress → awaiting-review → done`
 
 The Enactment Process is not a tool the council uses — it is how the council operates. The council's authority is expressed entirely through this process. On a single-person island, the sole member stands in for the council.
 
-The operational mechanics — the full status lifecycle, proposal-document anatomy, rollout discipline, post-change review rules, and working conventions — are defined canonically in the `knowledgeislands-streams` skill. This DR establishes the governance commitment; the skill is the single source of truth for the mechanics.
+The operational mechanics - the full status lifecycle, roadmap-record anatomy, rollout discipline, post-change review rules, and working conventions - are defined canonically in `ki-repo-kb-streams` and the shared change-management skills. This DR establishes the governance commitment; those skills are the source of truth for the mechanics.
 
 ## Consequences
 
 - The boundary between Streams and Pillars/Resources is a governance boundary, not merely a physical one. Work in motion lives in Streams; ratified knowledge lives in Pillars/Resources.
 - Every significant change to canonical knowledge — whether informational or reflective — requires a proposal that passes through the Enactment Process.
-- Proposals are ephemeral: they are deleted once settled, leaving only the resulting artefact and any Decision Record that captures the rationale.
-- The `knowledgeislands-streams` skill is the canonical reference for operational mechanics. Islands working the process load that skill.
+- Completed roadmap records are retained as review evidence until their owner explicitly selects them for pruning. Durable outputs and Decision Records retain their own standing.
+- `ki-repo-kb-streams` and the shared change-management skills are the canonical references for operational mechanics. Islands working the process load the relevant skills.
 - Decision Records (when adopted) are one class of output that a settled proposal may produce — the permanent record of rationale that proposals themselves cannot provide.
 
 ## References

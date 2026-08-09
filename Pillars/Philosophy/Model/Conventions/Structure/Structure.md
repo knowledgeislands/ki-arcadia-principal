@@ -84,10 +84,9 @@ When creating or filing a note, route to the most specific matching folder:
 2. **Session digest** → `Calendar/YYYY/YYYY-MM MonthName/YYYY-MM-DD Session - [Topic].md`; reference from the corresponding daily note
 3. **Internal knowledge on a topic** → `Pillars/[Topic]/[Title].md`
 4. **External knowledge on a topic** → `Resources/[Topic]/[Title].md`
-5. **Active project** → `Streams/Active/[Stream]/[Title].md`
-6. **Background stream** → `Streams/Background/[Title].md`
-7. **Concluded project** → `Streams/Settled/[Title].md`
-8. **Unsure** → `+/[Title].md` (inbox, to be filed)
+5. **Finite forward work** → `Streams/Roadmap/[ID]-[slug].md`
+6. **Recurring obligation** → `Streams/Housekeeping/[Name] Housekeeping.md`
+7. **Unsure** → `+/[Title].md` (inbox, to be filed)
 
 When updating an existing note: read it first, then merge new content in, preserving structure and enriching rather than replacing.
 
@@ -107,7 +106,7 @@ Streams notes are status trackers, not knowledge stores.
 
 When a stream produces lasting insight, extract it to the relevant Pillars note and link back from the stream. A stream note that accumulates deep technical content is a signal that content needs to move.
 
-Streams that conclude (`Settled`) should have their durable knowledge already in Pillars. The settled note becomes a record of what was done and where the knowledge now lives.
+Completed roadmap records should have their durable knowledge already in Pillars. The `done` record is retained as review evidence until its owner explicitly selects it for pruning.
 
 ### Pillars/Resources Folder Notes
 
@@ -124,19 +123,9 @@ When creating a new folder, create its folder note at the same time.
 
 ## Streams
 
-Streams carry knowledge in motion: active projects, evolving ideas, ongoing work. They are not part of the Library; their content is not canonical. The lifecycle is: emerge as a Stream → mature through work → stabilise into Pillars or Resources → the Stream is retired. Every stream is a **proposal** under the [[Enactment Process]].
+Streams carry knowledge in motion: finite forward work, recurring obligations, and their review evidence. They are not part of the Library; their content is not canonical. Work matures through an approved record, stabilises into `Admin/`, `Pillars/`, or `Resources/`, and its reviewed record is retained until explicitly pruned.
 
-A stream lives under a mandatory **Focus** folder expressing its current level of attention:
-
-| Focus        | Meaning                             |
-| ------------ | ----------------------------------- |
-| `Active`     | Receiving focused attention         |
-| `Background` | Being progressed in the background  |
-| `Dormant`    | Paused with intention to return     |
-| `Future`     | Planned or ideated; not yet started |
-| `Settled`    | Concluded                           |
-
-The full Streams structure - the path and optional Category, the `Proposal` name suffix, the leaf/parent/multi folder layout, the `type:` note types, the focus-index `## Streams` table and its ordering, and the Settled point-in-time policy - is **canonical in the `knowledgeislands-streams` skill**, which this island defers to. See [[Enactment Process]] for the local governance framing.
+`Streams/Roadmap/` holds flat finite work records and its allocation ledger. `Streams/Housekeeping/` holds recurring-work templates. A record's horizon and lifecycle are frontmatter metadata, not navigation folders. The full Streams structure and routing are canonical in `ki-repo-kb-streams`; see [[Enactment Process]] for the local governance framing.
 
 ---
 

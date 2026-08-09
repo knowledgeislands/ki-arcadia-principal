@@ -4,16 +4,16 @@ tags:
   - topic/knowledge-islands
 type: admin-process
 title: Enactment Process
-description: How content reaches Arcadia's canonical stores. The canonical process lives in the knowledgeislands-streams skill; this note records Arcadia's local specifics.
+description: How content reaches Arcadia's canonical stores. The canonical process is implemented through shared change-management skills and the Streams adapter; this note records Arcadia's local specifics.
 status: current - June 2026
 author: Written with Claude
 ---
 
 # Enactment Process
 
-Arcadia runs the canonical **Enactment Process** - Knowledge Islands' change process for how content reaches the canonical stores. Nothing reaches a canonical store except through it: a proposal is iterated in a `Streams/` stream, submitted for approval, rolled out, retired to `Settled/`, reviewed in practice, and completed. Authority to edit a stream is granted by presence in the workspace; authority to edit a store is granted only by explicit user approval of a `ready` proposal that specifies the change.
+Arcadia runs the canonical **Enactment Process** - Knowledge Islands' change process for how content reaches the canonical stores. Nothing reaches a canonical store except through it: finite work is iterated in a `Streams/Roadmap/` record, approved for delivery, implemented, reviewed, and retained as a `done` record until explicitly pruned. Recurring obligations are templates in `Streams/Housekeeping/` and spawn ordinary roadmap work when due. Authority to edit a Stream is granted by presence in the workspace; authority to edit a store is granted only by explicit user approval of a `ready` record that specifies the change.
 
-The full definition is canonical in the **`knowledgeislands-streams` skill** - the Streams structure, the proposal lifecycle (`draft → ready → in-progress` | `rejected` `→ rolled-out → reviewed → completed`, priority `urgent` / `high` / `medium` / `low`), the proposal-document anatomy (Inputs / Outputs / Checklist / Open Questions / Design / Governance), rollout discipline, and the post-change review. The skill is self-contained and available to this repository; for anything not recorded below, the skill governs. This note records only **Arcadia's local specifics**.
+The full definition is canonical in **`ki-repo-kb-streams`** and the shared change-management skills - the Streams structure, lifecycle (`draft → ready → in-progress → awaiting-review → done`), priority (`urgent` / `high` / `medium` / `low`), roadmap-record anatomy, rollout discipline, and post-change review. This note records only **Arcadia's local specifics**.
 
 ---
 
@@ -28,19 +28,19 @@ The full definition is canonical in the **`knowledgeislands-streams` skill** - t
 
 ---
 
-## Stream Governance footer
+## Roadmap governance footer
 
-Every stream note carries a short footer declaring adherence to this process. Suggested form:
+Every roadmap record carries a short footer declaring adherence to this process. Suggested form:
 
 ```markdown
 ## Governance
 
-This stream adheres to the [[Enactment Process]]. Move content to `Pillars/` or `Resources/` only on user approval of a `ready` proposal.
+This roadmap record adheres to the [[Enactment Process]]. Move content to `Admin/`, `Pillars/`, or `Resources/` only on user approval of a `ready` record.
 ```
 
 ---
 
 ## Related conventions
 
-- [[Streams Conventions/Streams Conventions|Streams Conventions]] - the Streams zone structure, note types, and frontmatter schema.
+- [[Streams Conventions/Streams Conventions|Streams Conventions]] - the Streams zone structure and routing conventions.
 - [[Admin Conventions/Routing Rules|Routing Rules]] - where content belongs across zones.

@@ -24,7 +24,7 @@ Full specification in [[Structure]]. Summary:
 - 4 top-level folders: `Calendar` (daily notes, meeting notes, session digests, and periodic reviews), `Pillars` (internal knowledge - methodology, approach, and domain-specific reference), `Resources` (external reference - things that exist independently), `Streams` (status tracking for projects and workstreams - durable knowledge belongs in Pillars)
 - `Admin` and `-` (outbound) are canonical zones - `Admin` holds governance (`Admin/Governance/`: charter, known lands, conventions, decisions, note templates, policies) and operations (`Admin/Operations/`: activities, processes, live artifacts, skills) - migrated from Knowledge Capital per GDR-KI-ARCADIA-002; `-` is outbound staging. `Admin` is gated through the Enactment Process alongside `Pillars` and `Resources` - changes route through a proposal. [[Admin/MEMORY|MEMORY]] is the root memory index of active Admin content
 - `Pillars` and `Resources` share subfolder names by design - e.g. `Pillars/Finance` holds internal knowledge; `Resources/Finance` holds general reference
-- `Streams` sub-folders by priority: `Active`, `Background`, `Dormant`, `Future`, `Settled` (concluded)
+- `Streams` is an operational container: `Streams/Roadmap/` holds flat finite work records, while `Streams/Housekeeping/` holds recurring-work templates. A work record's horizon and lifecycle are frontmatter metadata, never a folder path.
 - Calendar note types - daily notes, meeting notes, session digests, and the monthly index are all siblings in the same month folder, each referenced from the daily note by wikilink; the daily note does not duplicate their content. Weekly notes are filed separately in a per-year `YYYY By Week/` folder:
   - Daily notes: `Calendar/YYYY/YYYY-MM MonthName/YYYY-MM-DD DayName.md`
   - Meeting notes: `Calendar/YYYY/YYYY-MM MonthName/YYYY-MM-DD Meeting Name.md` - one note per meeting
@@ -38,7 +38,7 @@ The general principle: `Pillars` holds internal knowledge owned by the Knowledge
 
 ### Changing canonical content (strictly enforced)
 
-Substantive changes to a canonical zone (`Admin`, `Pillars`, `Resources`) go through the **Enactment Process**: open a proposal in `Streams/` and roll it out under the gate - do not edit `Admin`/`Pillars`/`Resources` directly. When starting any such change, load the `knowledgeislands-streams` skill - it owns the proposal lifecycle (`draft` -> `ready` -> ratify -> `rolled-out` -> `reviewed` -> `completed`). See [[Philosophy/Model/Processes/Enactment Process|Enactment Process]]. Exempt: trivial typo/formatting fixes, `Calendar/` entries, and `+/` triage.
+Substantive changes to a canonical zone (`Admin`, `Pillars`, `Resources`) go through the **Enactment Process**: create or advance the relevant record in `Streams/Roadmap/` and use the shared change-management lifecycle - do not edit `Admin`/`Pillars`/`Resources` directly. When starting such work, load `ki-repo-kb-streams` and the relevant shared change-management skill. The lifecycle is `draft` -> `ready` -> `in-progress` -> `awaiting-review` -> `done`. See [[Philosophy/Model/Processes/Enactment Process|Enactment Process]]. Exempt: trivial typo/formatting fixes, `Calendar/` entries, and `+/` triage.
 
 ### Index Notes (strictly enforced)
 

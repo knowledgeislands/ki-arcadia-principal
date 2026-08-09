@@ -8,8 +8,12 @@ author: Written with Claude
 
 # Streams Conventions
 
-Conventions specific to the `Streams/` zone — how proposals, focus folders, and stream notes are structured and named.
+Conventions specific to the `Streams/` zone - how flat roadmap records and recurring-work templates are routed and named.
 
-## Contents
+## Structure
 
-_To be populated as streams conventions are formalised._
+`Streams/Roadmap/` holds flat finite work records. `Streams/Housekeeping/` holds recurring-work templates that create linked roadmap runs when due. Horizon and lifecycle are frontmatter metadata, so Streams has no Focus, priority, or completion folders.
+
+## Authority
+
+The canonical container and routing are defined by `ki-repo-kb-streams`. The shared change-management skills own record lifecycle, planning, delivery, review, and closure.

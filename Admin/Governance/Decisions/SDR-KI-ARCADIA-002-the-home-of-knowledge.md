@@ -30,7 +30,7 @@ The island's physical home is organised around a geographic metaphor made struct
 - **The Library** — the canonical record of the island's knowledge, organised into zones: **Calendar** (time-bound notes), **Pillars** (internal canonical knowledge), and **Resources** (external reference material). Nothing enters Pillars or Resources as settled knowledge without passing through the island's governance gate.
 - **The Council Hall** — the governance space: the home of proposals, decisions, and the Enactment Process.
 
-**Streams** are knowledge in motion — the working layer of the island. Active projects, evolving ideas, and incoming material under development live in Streams. Streams carry knowledge at five focus levels: Active, Background, Dormant, Future, and Settled.
+**Streams** are knowledge in motion - the working layer of the island. Finite forward work lives as flat records in `Streams/Roadmap/`; recurring obligations live as templates in `Streams/Housekeeping/`. Work horizon and lifecycle are record metadata, not focus folders.
 
 **The Harbour** is the port of entry — the inbox where material arrives from outside before being assessed, routed, or discarded.
 
