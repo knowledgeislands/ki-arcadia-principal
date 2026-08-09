@@ -17,15 +17,18 @@ store_roles = ["notes"]
 
 [skills.ki-engineering]
 
-[skills.ki-kb]
+[skills.ki-repo-kb]
 
-[skills.ki-kb-streams]
+[skills.ki-repo-kb-streams]
 
-[skills.ki-kb-activities]
+[skills.ki-repo-kb-activities]
 
-[skills.ki-kb-live-artifacts]
+[skills.ki-repo-kb-live-artifacts]
 
-[skills.ki-principal]
+[skills.ki-repo-kb-principal]
+
+[skills.ki-change-management]
+adapter = "kb-streams"
 
 [skills.ki-decision-records]
 scope = "KI-ARCADIA"
