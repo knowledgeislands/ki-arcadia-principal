@@ -37,6 +37,12 @@ export = ["knowledge"]
 [skills.ki-trades.routes."knowledgeislands/ki-website"]
 export = ["knowledge"]
 
+[skills.ki-trades.routes."knowledgeislands/ki-specifications"]
+export = ["knowledge"]
+
+[skills.ki-trades.routes."knowledgeislands/ki-techne-principal"]
+export = ["knowledge"]
+
 [skills.ki-change-management]
 adapter = "kb-streams"
 
