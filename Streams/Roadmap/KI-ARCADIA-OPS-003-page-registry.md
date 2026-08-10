@@ -11,8 +11,8 @@ status: draft
 priority: medium
 horizon: soon
 blocks: []
-blocked-by: []
-baseline-ref: null
+blocked_by: []
+baseline_ref: null
 author: Written with Claude
 ---
 

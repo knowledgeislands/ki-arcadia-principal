@@ -12,8 +12,8 @@ status: draft
 priority: low
 horizon: soon
 blocks: []
-blocked-by: [KI-ARCADIA-OPS-001]
-baseline-ref: null
+blocked_by: [KI-ARCADIA-OPS-001]
+baseline_ref: null
 ---
 
 # Conventions: Make Implicit Explicit Proposal

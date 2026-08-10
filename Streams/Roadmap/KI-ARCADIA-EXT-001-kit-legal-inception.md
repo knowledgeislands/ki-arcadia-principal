@@ -10,8 +10,8 @@ status: draft
 priority: medium
 horizon: waiting-for
 blocks: []
-blocked-by: []
-baseline-ref: null
+blocked_by: []
+baseline_ref: null
 author: Written with Claude
 ---
 

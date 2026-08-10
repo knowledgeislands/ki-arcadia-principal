@@ -12,8 +12,8 @@ priority: low
 horizon: future
 candidate: true
 blocks: []
-blocked-by: []
-baseline-ref: null
+blocked_by: []
+baseline_ref: null
 purpose: Specify and resolve unresolved elements of the island conceptual and geographic model - settlement types, Harbour, Routes, and Customs
 author: Written with Claude
 ---

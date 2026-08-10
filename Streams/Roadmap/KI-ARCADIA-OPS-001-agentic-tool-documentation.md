@@ -12,8 +12,8 @@ status: draft
 priority: medium
 horizon: now
 blocks: []
-blocked-by: []
-baseline-ref: null
+blocked_by: []
+baseline_ref: null
 ---
 
 # Agentic Tool Documentation Proposal
