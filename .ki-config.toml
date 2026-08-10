@@ -29,6 +29,23 @@ process_note = "Admin/Operations/Processes/Enactment Process"
 
 [skills.ki-repo-kb-principal]
 
+[skills.ki-trades]
+
+[skills.ki-trades.routes."knowledgeislands/ki-agentic-harness"]
+export = ["work", "knowledge"]
+import = ["work", "knowledge"]
+
+[skills.ki-trades.routes."knowledgeislands/ki-website"]
+export = ["work", "knowledge"]
+
+[skills.ki-trades.routes."knowledgeislands/tools-ki"]
+export = ["work", "knowledge"]
+import = ["work", "knowledge"]
+
+[skills.ki-trades.routes."knowledgeislands/tools-mgit"]
+export = ["work", "knowledge"]
+import = ["work", "knowledge"]
+
 [skills.ki-change-management]
 adapter = "kb-streams"
 
