@@ -37,12 +37,6 @@ export = ["knowledge"]
 [skills.ki-trades.routes."knowledgeislands/ki-website"]
 export = ["knowledge"]
 
-[skills.ki-trades.routes."knowledgeislands/tools-ki"]
-export = ["knowledge"]
-
-[skills.ki-trades.routes."knowledgeislands/tools-mgit"]
-export = ["knowledge"]
-
 [skills.ki-change-management]
 adapter = "kb-streams"
 
