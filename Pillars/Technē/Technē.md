@@ -1,5 +1,5 @@
 ---
-type: note
+note_type: note
 tags:
   - topic/ai
   - topic/architecture
