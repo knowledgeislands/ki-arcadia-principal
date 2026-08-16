@@ -3,8 +3,7 @@ id: SDR-KI-ARCADIA-001
 title: 'Knowledge Islands — The Strategy'
 date: 2026-06-25
 status: current
-type: Strategy Decision Record
-type_url: https://knowledgeislands.info/specifications/decision-records/sdr
+decision_type_url: https://knowledgeislands.info/specifications/decision-records/sdr
 decision_type: strategy
 ---
 

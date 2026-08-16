@@ -3,8 +3,7 @@ id: GDR-KI-ARCADIA-002
 title: 'Admin Zone — Governance and Operations'
 date: 2026-06-25
 status: current
-type: Governance Decision Record
-type_url: https://knowledgeislands.info/specifications/decision-records/gdr
+decision_type_url: https://knowledgeislands.info/specifications/decision-records/gdr
 decision_type: governance
 decision_depends_on: ['GDR-KI-ARCADIA-001']
 ---
