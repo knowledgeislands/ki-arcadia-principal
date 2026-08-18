@@ -1,5 +1,5 @@
 ---
-type: stream-housekeeping-index
+note_type: stream-housekeeping-index
 title: Housekeeping
 status: current - August 2026
 author: Written with Codex

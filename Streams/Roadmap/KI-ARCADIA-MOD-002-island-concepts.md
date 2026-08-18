@@ -1,5 +1,5 @@
 ---
-type: stream-roadmap
+note_type: stream-roadmap
 id: KI-ARCADIA-MOD-002
 area: MOD
 title: Island concepts

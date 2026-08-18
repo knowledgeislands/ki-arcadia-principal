@@ -1,5 +1,5 @@
 ---
-type: stream-roadmap
+note_type: stream-roadmap
 id: KI-ARCADIA-OPS-009
 area: OPS
 title: Token economics

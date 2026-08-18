@@ -1,5 +1,5 @@
 ---
-type: resume-prompt
+note_type: resume-prompt
 title: Fable Review Session - Consolidate Knowledge Islands Concepts and Reconcile Streams
 description: Prompt to run in a Fable session (plan mode) that builds up the Knowledge Islands concept knowledge in Pillars and reconciles Streams into a logical, actionable rollout sequence
 created: 2026-07-04T00:00:00Z

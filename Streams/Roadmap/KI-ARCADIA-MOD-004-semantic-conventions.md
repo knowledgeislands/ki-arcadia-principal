@@ -1,5 +1,5 @@
 ---
-type: stream-roadmap
+note_type: stream-roadmap
 id: KI-ARCADIA-MOD-004
 area: MOD
 title: Semantic conventions

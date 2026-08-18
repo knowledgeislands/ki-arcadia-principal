@@ -1,5 +1,5 @@
 ---
-type: stream-roadmap
+note_type: stream-roadmap
 id: KI-ARCADIA-OPS-007
 area: OPS
 title: Agent session improvements

@@ -1,5 +1,5 @@
 ---
-type: stream-roadmap
+note_type: stream-roadmap
 id: KI-ARCADIA-EXT-001
 area: EXT
 title: Kit Legal inception

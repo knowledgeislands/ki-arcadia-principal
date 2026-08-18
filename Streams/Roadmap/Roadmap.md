@@ -1,5 +1,5 @@
 ---
-type: stream-roadmap-index
+note_type: stream-roadmap-index
 title: Roadmap
 status: current - August 2026
 author: Written with Codex

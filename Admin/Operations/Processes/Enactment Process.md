@@ -2,7 +2,7 @@
 tags:
   - card/note
   - topic/knowledge-islands
-type: admin-process
+note_type: admin-process
 title: Enactment Process
 description: How content reaches Arcadia's canonical stores. The canonical process is implemented through shared change-management skills and the Streams adapter; this note records Arcadia's local specifics.
 status: current - June 2026

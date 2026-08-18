@@ -1,5 +1,5 @@
 ---
-type: stream-zone
+note_type: stream-zone
 status: current - August 2026
 author: Written with Codex
 ---

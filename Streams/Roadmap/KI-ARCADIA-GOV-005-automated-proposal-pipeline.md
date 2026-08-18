@@ -1,5 +1,5 @@
 ---
-type: stream-roadmap
+note_type: stream-roadmap
 id: KI-ARCADIA-GOV-005
 area: GOV
 title: Automated proposal pipeline
