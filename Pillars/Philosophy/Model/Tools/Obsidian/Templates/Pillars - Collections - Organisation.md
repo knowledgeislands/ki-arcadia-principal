@@ -3,7 +3,7 @@ tags:
   - card/org
 status: current - Month YYYY
 author: [Manual / Written with Claude / Mixed]
-note_type:
+note_type: pillars/note
 url:
 location:
 ---

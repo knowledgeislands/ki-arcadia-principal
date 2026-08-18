@@ -1,4 +1,5 @@
 ---
+note_type: admin/governance/decision
 id: GDR-KI-ARCADIA-001
 title: 'Adopting Decision Records'
 date: 2026-07-18

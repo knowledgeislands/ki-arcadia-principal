@@ -1,4 +1,5 @@
 ---
+note_type: admin/operations/skill
 tags:
   - card/note
   - topic/knowledge-islands

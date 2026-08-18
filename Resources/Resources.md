@@ -1,4 +1,5 @@
 ---
+note_type: resources/index
 tags:
   - card/note
 status: current - April 2026

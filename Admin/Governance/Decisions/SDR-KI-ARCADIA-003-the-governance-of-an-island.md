@@ -1,4 +1,5 @@
 ---
+note_type: admin/governance/decision
 id: SDR-KI-ARCADIA-003
 title: 'The Governance of an Island'
 date: 2026-06-25

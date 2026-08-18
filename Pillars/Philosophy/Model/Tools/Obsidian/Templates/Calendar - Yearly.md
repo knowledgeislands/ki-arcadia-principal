@@ -1,4 +1,5 @@
 ---
+note_type: pillars/note
 tags:
   - date/{{date:YYYY}}
   - calendar/yearly

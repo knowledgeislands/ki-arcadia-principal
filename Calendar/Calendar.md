@@ -1,4 +1,5 @@
 ---
+note_type: calendar/index
 tags:
   - card/note
   - topic/productivity

@@ -1,4 +1,5 @@
 ---
+note_type: admin/governance/decision
 id: GDR-KI-ARCADIA-002
 title: 'Admin Zone — Governance and Operations'
 date: 2026-06-25

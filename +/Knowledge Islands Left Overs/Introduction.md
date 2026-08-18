@@ -1,4 +1,5 @@
 ---
+note_type: inbound-capture
 tags:
   - card/note
   - topic/knowledge-islands

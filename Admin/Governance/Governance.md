@@ -1,4 +1,5 @@
 ---
+note_type: admin/index
 tags:
   - card/note
   - topic/knowledge-islands

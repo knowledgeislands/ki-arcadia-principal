@@ -1,4 +1,5 @@
 ---
+note_type: admin/operations/live-artifact
 tags:
   - card/note
   - topic/knowledge-islands

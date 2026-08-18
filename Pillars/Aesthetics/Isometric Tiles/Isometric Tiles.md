@@ -1,4 +1,5 @@
 ---
+note_type: pillars/index
 tags:
   - card/note
   - topic/aesthetics

@@ -1,4 +1,5 @@
 ---
+note_type: outbound-index
 tags: card/note topic/knowledge-islands
 status: active 2026
 author: Claude

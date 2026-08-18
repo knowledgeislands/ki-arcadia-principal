@@ -1,4 +1,5 @@
 ---
+note_type: admin/governance/decision
 id: SDR-KI-ARCADIA-007
 title: 'The Great Library of Arcadia'
 date: 2026-06-25

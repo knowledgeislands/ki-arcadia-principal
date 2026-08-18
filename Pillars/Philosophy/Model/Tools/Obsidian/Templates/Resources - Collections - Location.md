@@ -1,4 +1,5 @@
 ---
+note_type: pillars/note
 tags:
   - card/location
   - [topic/geography / topic/history / etc.]

@@ -1,4 +1,5 @@
 ---
+note_type: admin/governance/decision
 id: SDR-KI-ARCADIA-002
 title: 'The Home of Knowledge'
 date: 2026-06-25

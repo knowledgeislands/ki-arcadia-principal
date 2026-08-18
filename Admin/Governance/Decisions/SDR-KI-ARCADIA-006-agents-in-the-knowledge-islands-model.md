@@ -1,4 +1,5 @@
 ---
+note_type: admin/governance/decision
 id: SDR-KI-ARCADIA-006
 title: 'Agents in the Knowledge Islands Model'
 date: 2026-06-25

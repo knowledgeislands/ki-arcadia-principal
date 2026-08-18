@@ -1,4 +1,5 @@
 ---
+note_type: pillars/note
 tags: card/note topic/knowledge-islands topic/knowledge-management
 status: active 2026
 author: Claude

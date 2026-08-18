@@ -1,4 +1,5 @@
 ---
+note_type: pillars/note
 tags:
   - card/org
   - [card/restaurant / card/bar / card/shop / etc.]

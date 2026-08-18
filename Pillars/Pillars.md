@@ -1,4 +1,5 @@
 ---
+note_type: pillars/index
 tags:
   - card/note
 status: current - June 2026

@@ -1,4 +1,5 @@
 ---
+note_type: admin/governance/decision
 id: SDR-KI-ARCADIA-005
 title: 'Territories, Archipelagos, and the Constitutional Layer'
 date: 2026-06-25

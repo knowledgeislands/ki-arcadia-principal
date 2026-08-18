@@ -1,4 +1,5 @@
 ---
+note_type: pillars/note
 tags:
   - card/concept
   - [topic/relevant]

@@ -1,4 +1,5 @@
 ---
+note_type: admin/governance/convention
 tags:
   - card/note
   - topic/knowledge-islands

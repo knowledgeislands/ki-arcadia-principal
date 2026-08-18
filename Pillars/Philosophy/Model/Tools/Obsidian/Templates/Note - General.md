@@ -1,4 +1,5 @@
 ---
+note_type: pillars/note
 tags:
   - date/{{date:YYYY}}/{{date:MM}}/{{date:DD}}
   - card/note
