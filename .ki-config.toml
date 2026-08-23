@@ -38,6 +38,7 @@ map_bonus = 1
 
 [skills.ki-trades.routes."knowledgeislands/ki-agentic-harness"]
 export = ["knowledge"]
+import = ["knowledge"]
 
 [skills.ki-trades.routes."knowledgeislands/ki-website"]
 export = ["knowledge"]
