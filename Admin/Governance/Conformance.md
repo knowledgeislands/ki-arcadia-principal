@@ -10,7 +10,7 @@ author: Knowledge Islands
 
 ## Adopted standards
 
-Arcadia Principal follows the Knowledge Islands repository, authoring, engineering, Knowledge Base, Streams, activity, live-artifact, principal, decision-record, tokenomics, and Git standards declared in `.ki-config.toml`.
+Arcadia Principal follows the Knowledge Islands repository, authoring, engineering, Knowledge Base, Streams, activity, live-artifact, principal, decision-record, tokenomics, and Git standards declared in `.ki.toml`.
 
 ## Current review
 
