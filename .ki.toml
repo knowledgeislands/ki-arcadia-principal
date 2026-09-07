@@ -1,6 +1,10 @@
 # Knowledge Islands repository configuration.
 # Its presence declares conformance with the Knowledge Islands repository standard.
 
+# -----------------------------------------------------------------------------
+# Foundation
+# -----------------------------------------------------------------------------
+
 [repo]
 harnesses = ["knowledgeislands/ki-agentic-harness"]
 
@@ -15,11 +19,11 @@ repo_type = "kb"
 repo_code = "KI-ARCADIA"
 store_roles = ["notes"]
 
-[skills.ki-git]
-
 [skills.ki-authoring]
 
-[skills.ki-engineering]
+# -----------------------------------------------------------------------------
+# Repository shape
+# -----------------------------------------------------------------------------
 
 [skills.ki-repo-kb]
 
@@ -31,6 +35,41 @@ process_note = "Admin/Operations/Processes/Enactment Process"
 [skills.ki-repo-kb-live-artifacts]
 
 [skills.ki-repo-kb-principal]
+
+# -----------------------------------------------------------------------------
+# Governance runtime
+# -----------------------------------------------------------------------------
+
+[skills.ki-engineering]
+
+[skills.ki-decision-records]
+scope = "KI-ARCADIA"
+
+# -----------------------------------------------------------------------------
+# Change management
+# -----------------------------------------------------------------------------
+
+[skills.ki-git]
+
+[skills.ki-work]
+adapter = "kb-streams"
+
+[skills.ki-tokenomics]
+headroom = "recommended"
+preferred_model_type = "standard"
+
+[skills.ki-tokenomics.budgets]
+mcp_servers = 20 # User-scoped; revisit if the global MCP set is pruned.
+
+[skills.ki-housekeeping-claude]
+
+[skills.ki-tokenomics-claude]
+
+[skills.ki-tokenomics-codex]
+
+# -----------------------------------------------------------------------------
+# Relationships
+# -----------------------------------------------------------------------------
 
 [skills.ki-trades]
 # Arcadia's principal knowledge role is visible in the generated estate map.
@@ -48,25 +87,6 @@ export = ["knowledge"]
 
 [skills.ki-trades.routes."knowledgeislands/ki-techne-principal"]
 export = ["knowledge"]
-
-[skills.ki-work]
-adapter = "kb-streams"
-
-[skills.ki-decision-records]
-scope = "KI-ARCADIA"
-
-[skills.ki-tokenomics]
-headroom = "recommended"
-preferred_model_type = "standard"
-
-[skills.ki-tokenomics.budgets]
-mcp_servers = 20 # User-scoped; revisit if the global MCP set is pruned.
-
-[skills.ki-housekeeping-claude]
-
-[skills.ki-tokenomics-claude]
-
-[skills.ki-tokenomics-codex]
 
 [skills.ki-agora]
 
