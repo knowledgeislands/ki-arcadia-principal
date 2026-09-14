@@ -13,6 +13,8 @@ horizon: soon
 blocks: []
 blocked_by: []
 baseline_ref: null
+created_at: 2026-08-23T12:33:49Z
+updated_at: 2026-08-23T12:33:49Z
 ---
 
 # Knowledge Acquisition Lifecycle

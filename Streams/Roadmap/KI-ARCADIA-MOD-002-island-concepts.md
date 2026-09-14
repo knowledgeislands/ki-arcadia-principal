@@ -14,6 +14,8 @@ candidate: true
 blocks: []
 blocked_by: []
 baseline_ref: null
+created_at: 2026-04-27T22:57:50Z
+updated_at: 2026-09-01T16:31:09Z
 purpose: Specify and resolve unresolved elements of the island conceptual and geographic model - settlement types, Harbour, Known Lands, Routes, and Customs
 author: Mixed
 ---

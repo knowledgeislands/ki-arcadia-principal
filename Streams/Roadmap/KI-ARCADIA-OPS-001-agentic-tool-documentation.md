@@ -14,6 +14,8 @@ horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: null
+created_at: 2026-06-29T17:12:25Z
+updated_at: 2026-08-18T13:08:06Z
 ---
 
 # Agentic Tool Documentation Proposal

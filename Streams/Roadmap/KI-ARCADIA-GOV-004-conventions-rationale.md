@@ -14,6 +14,8 @@ horizon: soon
 blocks: []
 blocked_by: [KI-ARCADIA-OPS-001]
 baseline_ref: null
+created_at: 2026-06-29T17:12:25Z
+updated_at: 2026-08-18T13:08:06Z
 ---
 
 # Conventions: Make Implicit Explicit Proposal
