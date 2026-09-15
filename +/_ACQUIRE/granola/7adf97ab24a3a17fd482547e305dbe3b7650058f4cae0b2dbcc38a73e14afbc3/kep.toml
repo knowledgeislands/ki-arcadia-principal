@@ -1,0 +1,32 @@
+format = "kep"
+format_version = "0.1.0"
+package_id = "kep:sha256:7adf97ab24a3a17fd482547e305dbe3b7650058f4cae0b2dbcc38a73e14afbc3"
+payload_sha256 = "7adf97ab24a3a17fd482547e305dbe3b7650058f4cae0b2dbcc38a73e14afbc3"
+omissions = ["attachments","audio","content_version","created_at","deletion_tombstone","native_folder_membership","recording","source_url","tags","transcript_timestamps","updated_at"]
+normalisations = []
+checksum_manifest = "checksums/sha256sums.txt"
+
+[connector]
+id = "knowledgeislands.granola.mcp"
+version = "0.1.0"
+mode = "read-only-mcp"
+
+[source]
+system = "granola"
+account_sha256 = "fddbc4161b2bc2d666c4e5550bbd8610be128c4fa336fec24062c0d23c75d2cd"
+meeting_id = "e8fbfc78-dc6c-448c-9ce0-d262c3316499"
+observed_at = "2026-09-15T13:37:20.592Z"
+
+[acquisition]
+since = "1970-01-01"
+until = "2026-09-15"
+source_schema_sha256 = "18709680d3024e803fd53eae2aec1628792f577042a6a157b0aab9d272e41b8d"
+identity_checkpoint_sha256 = "c701b448d2b993430cccfb100cdd139db719039dc1dba1d3f479717b67937ade"
+folder_ids = ["2454f927-221b-4905-8583-a2daa85af625"]
+inferred_unfoldered = false
+
+[inventory]
+records = 0
+assets = 0
+relationships = 1
+originals = 4

@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "provider": "granola",
+  "account_sha256": "fddbc4161b2bc2d666c4e5550bbd8610be128c4fa336fec24062c0d23c75d2cd",
+  "source_schema_sha256": "18709680d3024e803fd53eae2aec1628792f577042a6a157b0aab9d272e41b8d",
+  "identity_checkpoint_sha256": "c701b448d2b993430cccfb100cdd139db719039dc1dba1d3f479717b67937ade",
+  "interval": {
+    "since": "1970-01-01",
+    "until": "2026-09-15"
+  },
+  "exhaustive": true,
+  "windows": [
+    {
+      "since": "1970-01-01",
+      "until": "2026-09-15",
+      "scope": "global",
+      "count": 197,
+      "responseSha256": "4dbc6114dd6c93f485252b24ea9c5cf6c1f9fbd7d84385a2f0e9d727264265db",
+      "saturated": false
+    },
+    {
+      "since": "1970-01-01",
+      "until": "2026-09-15",
+      "scope": "folder:2454f927-221b-4905-8583-a2daa85af625",
+      "count": 2,
+      "responseSha256": "1bee722777e7ae21499eaae869590dd994ff7a6e4eccf79c170bd03802428ef1",
+      "saturated": false
+    },
+    {
+      "since": "1970-01-01",
+      "until": "2026-09-15",
+      "scope": "folder:474e17a9-860d-4a80-b4d9-daa14450273f",
+      "count": 126,
+      "responseSha256": "169680680e796fbd70c939c283df351a2ddbd3d4cf1784fcf9a5ca6a6043ccef",
+      "saturated": false
+    },
+    {
+      "since": "1970-01-01",
+      "until": "2026-09-15",
+      "scope": "folder:629e510b-2347-442e-9931-741707a34a10",
+      "count": 36,
+      "responseSha256": "52a49218245c9d4e20690da12f05d43c82483514696ae951d5d945cd6b847aab",
+      "saturated": false
+    },
+    {
+      "since": "1970-01-01",
+      "until": "2026-09-15",
+      "scope": "folder:811ac564-dd24-4a13-8a8a-ed5041f3a5c6",
+      "count": 13,
+      "responseSha256": "7c508d921d9d9b55137157ca5d791642b8aadf92bd8ffbd2d67908b3b626928d",
+      "saturated": false
+    },
+    {
+      "since": "1970-01-01",
+      "until": "2026-09-15",
+      "scope": "folder:9bd26fa8-4fec-4289-9fb2-55edeeee29ab",
+      "count": 2,
+      "responseSha256": "0cf122e02c30101b8dc9b23366e7071779d76004eb59c5bd1b157757162f22bd",
+      "saturated": false
+    },
+    {
+      "since": "1970-01-01",
+      "until": "2026-09-15",
+      "scope": "folder:aef87a23-0d66-4472-83c3-721e9fd8f375",
+      "count": 14,
+      "responseSha256": "b675f59d7f7f4822ace41f8efd3fbb0c0152627f57a3af58c7b373550a472887",
+      "saturated": false
+    }
+  ],
+  "meetings": {
+    "3989eee1-0033-4a72-b0f7-a37ec3b60834": {
+      "latest_payload_sha256": "06b2d4f6d034f304e1c4f296d7a761dfa8bb0359fbe2ac631cff941f5f811814",
+      "versions": [
+        "06b2d4f6d034f304e1c4f296d7a761dfa8bb0359fbe2ac631cff941f5f811814"
+      ],
+      "folder_ids": [
+        "2454f927-221b-4905-8583-a2daa85af625"
+      ],
+      "inferred_unfoldered": false
+    },
+    "e8fbfc78-dc6c-448c-9ce0-d262c3316499": {
+      "latest_payload_sha256": "7adf97ab24a3a17fd482547e305dbe3b7650058f4cae0b2dbcc38a73e14afbc3",
+      "versions": [
+        "7adf97ab24a3a17fd482547e305dbe3b7650058f4cae0b2dbcc38a73e14afbc3"
+      ],
+      "folder_ids": [
+        "2454f927-221b-4905-8583-a2daa85af625"
+      ],
+      "inferred_unfoldered": false
+    }
+  },
+  "updated_at": "2026-09-15T13:37:20.592Z"
+}
