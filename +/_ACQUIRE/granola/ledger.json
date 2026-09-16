@@ -1,9 +1,9 @@
 {
-  "schema": 1,
+  "schema": 2,
   "provider": "granola",
   "account_sha256": "fddbc4161b2bc2d666c4e5550bbd8610be128c4fa336fec24062c0d23c75d2cd",
   "source_schema_sha256": "18709680d3024e803fd53eae2aec1628792f577042a6a157b0aab9d272e41b8d",
-  "identity_checkpoint_sha256": "c701b448d2b993430cccfb100cdd139db719039dc1dba1d3f479717b67937ade",
+  "identity_checkpoint_sha256": "f79acecd45b1aa9ccea48ab50277b0b8015f5c6493f7a932b116c2a3cf061ad9",
   "interval": {
     "since": "1970-01-01",
     "until": "2026-09-15"
@@ -14,8 +14,8 @@
       "since": "1970-01-01",
       "until": "2026-09-15",
       "scope": "global",
-      "count": 197,
-      "responseSha256": "4dbc6114dd6c93f485252b24ea9c5cf6c1f9fbd7d84385a2f0e9d727264265db",
+      "count": 198,
+      "responseSha256": "921aa1a6fd8a8db58556b18a5b4be90450463d12e2b652306ad043bbd462a0ee",
       "saturated": false
     },
     {
@@ -69,25 +69,42 @@
   ],
   "meetings": {
     "3989eee1-0033-4a72-b0f7-a37ec3b60834": {
-      "latest_payload_sha256": "06b2d4f6d034f304e1c4f296d7a761dfa8bb0359fbe2ac631cff941f5f811814",
+      "path": "2026-08-24--ancient-civilizations-insights--3989eee1-0033-4a72-b0f7-a37ec3b60834.md",
+      "latest_content_sha256": "5835b3906c87d5518bc57bf655c6b1c92f36ecf21ac6c3efc88b68aeb107935a",
+      "latest_source_sha256": "5bf1bc26cc3431b063a46c7fd3a51dc3bfc8ffaf89d0fd5816a5c4b2a7171c76",
       "versions": [
-        "06b2d4f6d034f304e1c4f296d7a761dfa8bb0359fbe2ac631cff941f5f811814"
+        "06b2d4f6d034f304e1c4f296d7a761dfa8bb0359fbe2ac631cff941f5f811814",
+        "43a306b85f80c6a31f7b3ea2009f776826961f519d1565df00963261af2e75f9",
+        "f7ee4329880dfa53d6d57f34b5e64b0a53743b374807eddc2871e4cc546f7119",
+        "3566ef22818e6f78ba81252dca74bbdff38165434f37dd8a8d7cb0e825b7d64f",
+        "3ffadfa357f579e63af07806c1e6e86ba1d61164aa0924f67353feb803ee9df2",
+        "b863265f18f2be33d255a56ea5252fec28bd06c9cb5e865be9708a19f99ab4b6",
+        "5835b3906c87d5518bc57bf655c6b1c92f36ecf21ac6c3efc88b68aeb107935a"
       ],
       "folder_ids": [
         "2454f927-221b-4905-8583-a2daa85af625"
       ],
-      "inferred_unfoldered": false
+      "inferred_unfoldered": false,
+      "acquired_at": "2026-09-16T09:45:30.188Z"
     },
     "e8fbfc78-dc6c-448c-9ce0-d262c3316499": {
-      "latest_payload_sha256": "7adf97ab24a3a17fd482547e305dbe3b7650058f4cae0b2dbcc38a73e14afbc3",
+      "path": "2026-07-28--catch-up-w-alec--e8fbfc78-dc6c-448c-9ce0-d262c3316499.md",
+      "latest_content_sha256": "fe2818202e40adde25d6933758b3a5292f590836055e2defc7fdfd8f96b4f825",
+      "latest_source_sha256": "f65d22aa3f836d5003a545e70892cad349fa3fc243e74a375f02a866ab95d454",
       "versions": [
-        "7adf97ab24a3a17fd482547e305dbe3b7650058f4cae0b2dbcc38a73e14afbc3"
+        "7adf97ab24a3a17fd482547e305dbe3b7650058f4cae0b2dbcc38a73e14afbc3",
+        "289c419d0266a432eb7c7673c1c1bf4c18ea58455cd6aeae143f14ce277b231c",
+        "c83b1c56853043c390551d944396f98b6d006b4288301406eaf228cae9c59125",
+        "3410a55cb1adbc539f12a0f2fa179b87555e13d5114fb7e02060e92e7dffa0d9",
+        "cfa6d21eef5f934c79bd7361070747ccb519a03f66527e0ec03ff74ab63d4a0c",
+        "fe2818202e40adde25d6933758b3a5292f590836055e2defc7fdfd8f96b4f825"
       ],
       "folder_ids": [
         "2454f927-221b-4905-8583-a2daa85af625"
       ],
-      "inferred_unfoldered": false
+      "inferred_unfoldered": false,
+      "acquired_at": "2026-09-16T09:45:30.188Z"
     }
   },
-  "updated_at": "2026-09-15T13:37:20.592Z"
+  "updated_at": "2026-09-16T09:56:53.219Z"
 }
