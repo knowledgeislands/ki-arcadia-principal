@@ -5,12 +5,12 @@ area: GOV
 title: Reconcile Shared Fundamentals Decision
 theme: governance
 horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: 072f5217d9c705ea628b6f0ae520ae110036df53
 created_at: 2026-09-16T09:08:39Z
-updated_at: 2026-09-16T21:23:28Z
+updated_at: 2026-09-16T21:36:41Z
 ---
 
 # Reconcile Shared Fundamentals Decision
@@ -101,6 +101,10 @@ The projection now matches the approved shared identity while Arcadia's containe
 ### Mini recap
 
 Arcadia's decision projection is aligned, verified, and awaiting review; no unrelated island content changed.
+
+## Done
+
+Accepted 2026-09-16 by Kris Brown on the review packet above.
 
 ## Discussion
 
