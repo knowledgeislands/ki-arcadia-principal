@@ -1,6 +1,8 @@
 # Knowledge Islands repository configuration.
 # Its presence declares conformance with the Knowledge Islands repository standard.
 
+# =============================================================================
+
 # -----------------------------------------------------------------------------
 # Foundation
 # -----------------------------------------------------------------------------
@@ -37,7 +39,7 @@ process_note = "Admin/Operations/Processes/Enactment Process"
 [skills.ki-repo-kb-principal]
 
 # -----------------------------------------------------------------------------
-# Governance runtime
+# Governance and runtime
 # -----------------------------------------------------------------------------
 
 [skills.ki-engineering]
@@ -57,9 +59,7 @@ adapter = "kb-streams"
 [skills.ki-tokenomics]
 headroom = "recommended"
 preferred_model_type = "standard"
-
-[skills.ki-tokenomics.budgets]
-mcp_servers = 20 # User-scoped; revisit if the global MCP set is pruned.
+budgets.mcp_servers = 20 # User-scoped; revisit if the global MCP set is pruned.
 
 [skills.ki-housekeeping-claude]
 
@@ -77,26 +77,11 @@ folder_ids = ["2454f927-221b-4905-8583-a2daa85af625"]
 [skills.ki-trades]
 # Arcadia's principal knowledge role is visible in the generated estate map.
 map_bonus = 1
-
-[skills.ki-trades.routes."knowledgeislands/ki-agentic-harness"]
-export = ["knowledge"]
-import = ["knowledge"]
-
-[skills.ki-trades.routes."knowledgeislands/ki-website"]
-export = ["knowledge"]
-
-[skills.ki-trades.routes."knowledgeislands/ki-specifications"]
-export = ["knowledge"]
-
-[skills.ki-trades.routes."knowledgeislands/ki-techne-principal"]
-export = ["knowledge"]
+routes."knowledgeislands/ki-agentic-harness" = { export = ["knowledge"], import = ["knowledge"] }
+routes."knowledgeislands/ki-website" = { export = ["knowledge"] }
+routes."knowledgeislands/ki-specifications" = { export = ["knowledge"] }
+routes."knowledgeislands/ki-techne-principal" = { export = ["knowledge"] }
 
 [skills.ki-agora]
-
-[skills.ki-agora.memberships.ki-all]
-home = "https://github.com/knowledgeislands/ki-agentic-harness"
-role = "maintainer"
-
-[skills.ki-agora.memberships.ki-fnd]
-home = "https://github.com/knowledgeislands/ki-agentic-harness"
-role = "maintainer"
+memberships.ki-all = { home = "https://github.com/knowledgeislands/ki-agentic-harness", role = "maintainer" }
+memberships.ki-fnd = { home = "https://github.com/knowledgeislands/ki-agentic-harness", role = "maintainer" }
