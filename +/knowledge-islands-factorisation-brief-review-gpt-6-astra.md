@@ -211,3 +211,225 @@ Merge housekeeping providers if they converge on one user-facing product, contra
 Remove a generated repository when its host supports direct source delivery and no independent discovery, deployment, or permission boundary remains.
 
 Revisit the six-authority structure if ordinary changes repeatedly require conceptual approval across several repositories without changing distinct authoritative concerns. That would indicate either duplicated authority or unnecessarily broad change procedures.
+
+## 11. Specific change list
+
+This section translates the recommendation into concrete candidate changes. It remains review advice, not an adopted implementation plan.
+
+### Immediate documentation and ownership fixes
+
+1. **Correct the stale projection reference in `ki-plugins`.**
+
+   - Change the README reference from `ADR-KI-HARNESS-005` to the source-versus-projection decision, `ADR-KI-HARNESS-002`.
+   - State explicitly that `ki-plugins` is generated, lossy, and not independently editable.
+
+2. **Expand the Harness governance boundary matrix.**
+
+   - Add Techne Principal, Techne Tools, controller and execution-fabric responsibilities, and runtime state.
+   - Narrow any "no duplicate authority" conclusion to the concerns the matrix actually covers.
+
+3. **Clarify historical Arcadia engineering authority.**
+
+   - Mark older references to Arcadia's Techne pillar as historical where Techne Principal now owns engineering discipline.
+   - Preserve the historical decisions rather than rewriting them.
+
+4. **Create an estate-wide ownership and write-target register.**
+
+   Name exactly one writer for each of these concerns or states:
+
+   - Harness capability semantics;
+   - `tools-ki` host mechanics;
+   - repository work records;
+   - controller attempts, leases, retries, and cleanup;
+   - Rig catalogue declarations;
+   - dotfiles environment declarations;
+   - native provider state;
+   - generated plugins;
+   - website publication copies; and
+   - installed runtime configuration.
+
+### Formalise the difficult interfaces
+
+5. **Define the Harness-to-`tools-ki` compatibility contract.**
+
+   Specify:
+
+   - capability identifiers and versions;
+   - portable semantics versus CLI execution ownership;
+   - installation and activation behaviour;
+   - compatibility checks;
+   - unsupported-runtime reporting;
+   - failure and rollback behaviour; and
+   - fixtures that both repositories can run.
+
+6. **Define the `tools-ki`-to-Techne Tools controller boundary.**
+
+   Record that:
+
+   - the selected work adapter owns the authoritative work record and review status;
+   - Techne Tools owns attempts, leases, retries, expiry, supervision, evidence, and cleanup;
+   - the controller integrates results through authorised repository operations; and
+   - the controller must not create a competing authoritative backlog in its own state.
+
+7. **Define the Rig, dotfiles, and bootstrap boundary.**
+
+   Separate:
+
+   - Rig's catalogue of intended tools;
+   - dotfiles' personal environment declarations;
+   - `ki` repository and Harness activation;
+   - Techne Tools application bootstrap;
+   - infrastructure deployment; and
+   - provider-owned mutable state.
+
+### MCP control pilot
+
+8. **Audit current security behaviour before extracting shared code.**
+
+   Compare all nine MCPs for:
+
+   - access classification and gating;
+   - annotation semantics;
+   - audit-event schema;
+   - argument sanitisation;
+   - nested sensitive values;
+   - URL user information;
+   - denied and failed calls; and
+   - configuration precedence.
+
+   The current logger implementations differ meaningfully, but the desired common policy has not yet been established.
+
+9. **Adopt a dedicated Harness decision for shared MCP mechanics.**
+
+   The decision should narrowly permit canonical implementations of:
+
+   - access classification;
+   - access-gate mechanics;
+   - annotation presets or validation; and
+   - generic audit-sanitisation mechanics.
+
+   It should exclude:
+
+   - credentials;
+   - provider-specific policy;
+   - provider-specific redaction metadata;
+   - allowed paths and scopes;
+   - server identity;
+   - SDK-version bindings; and
+   - product-specific business logic.
+
+10. **Build a small canonical MCP kit in the Harness.**
+
+    Each vendored consumer should record:
+
+    - canonical source path;
+    - source revision;
+    - file digest;
+    - supported interface version;
+    - local configuration surface; and
+    - whether local editing is prohibited.
+
+11. **Pilot the kit in two deliberately different MCPs.**
+
+    Use:
+
+    - one SDK v1 MCP; and
+    - `mcp-git-audit`, which uses SDK v2.
+
+    This tests whether the shared mechanics are genuinely SDK-neutral rather than copied from one implementation generation.
+
+12. **Add adversarial conformance tests.**
+
+    At minimum, test:
+
+    - denied registration and invocation;
+    - missing or malformed access metadata;
+    - nested secrets;
+    - sensitive values in arrays and error objects;
+    - URL credentials;
+    - log rotation;
+    - failed tool calls; and
+    - provider-specific redaction extensions.
+
+13. **Add an explicit vendoring update and drift check.**
+
+    The update should produce ordinary reviewable commits in each consumer. The audit should report:
+
+    - current canonical revision;
+    - consumer revision;
+    - modified vendored files;
+    - incompatible interface versions; and
+    - consumers missing a confirmed security update.
+
+14. **Roll the kit out incrementally after the pilot succeeds.**
+
+    Each MCP must remain independently buildable and deployable while migration is incomplete. Preserve the previous implementation so each adoption can be reverted independently.
+
+### Projection and deployment controls
+
+15. **Create a projection inventory.**
+
+    Cover at least:
+
+    - `ki-plugins`;
+    - installed Harness skills and agents;
+    - website source copies;
+    - shared decision copies;
+    - MCPorter configuration;
+    - dotfiles-rendered configuration; and
+    - controller runtime configuration.
+
+    For every projection, record its source, transformation, version, editability, regeneration command, and drift check.
+
+16. **Make `ki-plugins` reproducibly generated.**
+
+    A clean generation should either reproduce the repository exactly or produce a reviewed explanation of unavoidable differences.
+
+17. **Add provenance checks to website-vendored material.**
+
+    Published copies should name their source and revision and report when they have fallen behind it.
+
+18. **Validate Homebrew formulae against immutable release inputs.**
+
+    Check that each formula points to the intended tag or archive and that installation, upgrade, and rollback remain testable.
+
+19. **Inventory deployed MCP instances.**
+
+    Record which build is running, its repository revision, launch path, configuration source, permissions, and rollback target. Unknown deployed versions are a larger risk than the current source layout.
+
+### Evidence before consolidation
+
+20. **Measure cross-repository coordination for representative changes.**
+
+    Track:
+
+    - repositories touched per change;
+    - repeated implementation edits;
+    - time until every consumer adopts a fix;
+    - compatibility failures;
+    - projection drift;
+    - CI duration; and
+    - rollback time.
+
+21. **Study the three housekeeping MCPs as one possible product.**
+
+    Merge them only if they demonstrate a shared:
+
+    - user-facing outcome;
+    - contract and schema;
+    - permission model;
+    - release cadence;
+    - lifecycle; and
+    - maintenance pattern.
+
+22. **Revisit consolidation after gathering measurements.**
+
+    Merge repositories only when co-change evidence, aligned visibility, and aligned deployment requirements show that a workspace would reduce total cost. Until then, retain all 22 repository boundaries.
+
+### Suggested delivery units
+
+The first coherent delivery unit is changes 1 to 7: correct the known documentation drift and record the three critical ownership contracts.
+
+The second coherent delivery unit is changes 8 to 14: design and complete the two-server MCP-kit pilot.
+
+Changes 15 to 22 then provide the operational controls and evidence needed before making structural repository changes.
