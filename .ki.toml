@@ -63,7 +63,7 @@ budgets.mcp_servers = 20 # User-scoped; revisit if the global MCP set is pruned.
 
 [skills.ki-housekeeping-claude]
 
-[skills.ki-housekeeping-granola]
+[skills.ki-acquire-granola]
 folder_ids = ["2454f927-221b-4905-8583-a2daa85af625"]
 
 [skills.ki-tokenomics-claude]

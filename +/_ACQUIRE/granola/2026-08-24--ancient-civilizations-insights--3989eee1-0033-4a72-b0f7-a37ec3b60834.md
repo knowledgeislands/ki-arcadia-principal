@@ -1,5 +1,5 @@
 ---
-type: granola-meeting-summary
+note_type: granola-meeting-summary
 source: granola
 source_id: "3989eee1-0033-4a72-b0f7-a37ec3b60834"
 title: "Ancient civilizations insights"

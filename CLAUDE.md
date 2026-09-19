@@ -1,5 +1,7 @@
 # CLAUDE
 
+@AGENTS.md
+
 This repository is the island - a structured repository of knowledge, comprising of folders and Markdown files.
 
 Read [[AGENTS]] for the shared runtime-neutral progress and commit convention.
