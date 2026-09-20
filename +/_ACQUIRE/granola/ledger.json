@@ -1,0 +1,122 @@
+{
+  "schema": 3,
+  "generation": "d9f61bb5-d8b3-4f44-997c-902226508635",
+  "adapter": "granola",
+  "repository": "https://github.com/knowledgeislands/ki-arcadia-principal",
+  "provider": "granola",
+  "account_sha256": "fddbc4161b2bc2d666c4e5550bbd8610be128c4fa336fec24062c0d23c75d2cd",
+  "source_schema_sha256": "18709680d3024e803fd53eae2aec1628792f577042a6a157b0aab9d272e41b8d",
+  "identity_checkpoint_sha256": "f488c0762717e3b106458a8559308a531487ed8576515dd961fda58d42759cb2",
+  "interval": {
+    "since": "1970-01-01",
+    "until": "2026-09-20"
+  },
+  "exhaustive": true,
+  "windows": [
+    {
+      "since": "1970-01-01",
+      "until": "2026-09-20",
+      "scope": "global",
+      "count": 215,
+      "responseSha256": "0f5e1dbf272f5a9cb0a50612552b1de7c361b1180c3158a7634b5ebdbb55b18f",
+      "saturated": false
+    },
+    {
+      "since": "1970-01-01",
+      "until": "2026-09-20",
+      "scope": "folder:2454f927-221b-4905-8583-a2daa85af625",
+      "count": 2,
+      "responseSha256": "1bee722777e7ae21499eaae869590dd994ff7a6e4eccf79c170bd03802428ef1",
+      "saturated": false
+    },
+    {
+      "since": "1970-01-01",
+      "until": "2026-09-20",
+      "scope": "folder:474e17a9-860d-4a80-b4d9-daa14450273f",
+      "count": 140,
+      "responseSha256": "5588ff16cc0af0da4ceb395cacc96ac244857164ae27f59b21d3ecef5e60eca9",
+      "saturated": false
+    },
+    {
+      "since": "1970-01-01",
+      "until": "2026-09-20",
+      "scope": "folder:629e510b-2347-442e-9931-741707a34a10",
+      "count": 40,
+      "responseSha256": "8cdad31ed0c188e918dad0c20fd663ac260d97aecf5528737db2b893f67acf46",
+      "saturated": false
+    },
+    {
+      "since": "1970-01-01",
+      "until": "2026-09-20",
+      "scope": "folder:811ac564-dd24-4a13-8a8a-ed5041f3a5c6",
+      "count": 14,
+      "responseSha256": "eb139642aee5b665cd09d7003a3d8c9f46e93444f1aa16ebdfb71a4ad91cfa6d",
+      "saturated": false
+    },
+    {
+      "since": "1970-01-01",
+      "until": "2026-09-20",
+      "scope": "folder:9bd26fa8-4fec-4289-9fb2-55edeeee29ab",
+      "count": 2,
+      "responseSha256": "0cf122e02c30101b8dc9b23366e7071779d76004eb59c5bd1b157757162f22bd",
+      "saturated": false
+    },
+    {
+      "since": "1970-01-01",
+      "until": "2026-09-20",
+      "scope": "folder:aef87a23-0d66-4472-83c3-721e9fd8f375",
+      "count": 15,
+      "responseSha256": "a80564195a01efd02022ef964bab18cd66fffbdaea9fd749d8790cf753d76649",
+      "saturated": false
+    }
+  ],
+  "meetings": {
+    "3989eee1-0033-4a72-b0f7-a37ec3b60834": {
+      "path": "2026-08-24--ancient-civilizations-insights--3989eee1-0033-4a72-b0f7-a37ec3b60834.md",
+      "document_sha256": "283aa88d3ac2c297901017271b55313c065882d9b2f26495035ddd1a2317e22d",
+      "detail_sha256": "1a1246b0f056e98c1d862e8886c15936d3a31dab318e131310bafd8aecec2bdd",
+      "transcript_sha256": "f404a35ffd2b9d54528d40b2d4e2a3be2b99a6702602603aef882362be98baeb",
+      "transcript_state": "available",
+      "transcript_observed_at": "2026-09-20T11:23:57.604Z",
+      "transcript_retry_count": 0,
+      "versions": [
+        "283aa88d3ac2c297901017271b55313c065882d9b2f26495035ddd1a2317e22d"
+      ],
+      "folder_ids": [
+        "2454f927-221b-4905-8583-a2daa85af625"
+      ],
+      "inferred_unfoldered": false,
+      "acquired_at": "2026-09-20T11:23:57.604Z",
+      "disposition": {
+        "state": "staged",
+        "document_sha256": "283aa88d3ac2c297901017271b55313c065882d9b2f26495035ddd1a2317e22d",
+        "disposed_at": "2026-09-20T11:23:57.604Z",
+        "source_version_sha256": "080d4103f8a3152dcf4da8afff60a6f3d55697191e28a3fd217b894fe2c1dd85"
+      }
+    },
+    "e8fbfc78-dc6c-448c-9ce0-d262c3316499": {
+      "path": "2026-07-28--catch-up-w-alec--e8fbfc78-dc6c-448c-9ce0-d262c3316499.md",
+      "document_sha256": "bc5425656ea3be79a15c52585411f584f97c7963b45f59f2f402179a7badcf91",
+      "detail_sha256": "7ff394f9511210f3f1ef8912c9131673d93b8e6cfd6ed6a21d354b6921385050",
+      "transcript_sha256": "10381918a785b0e3cea67c0d4678606df35432963bde62800713ffd76faa1128",
+      "transcript_state": "available",
+      "transcript_observed_at": "2026-09-20T11:23:57.604Z",
+      "transcript_retry_count": 0,
+      "versions": [
+        "bc5425656ea3be79a15c52585411f584f97c7963b45f59f2f402179a7badcf91"
+      ],
+      "folder_ids": [
+        "2454f927-221b-4905-8583-a2daa85af625"
+      ],
+      "inferred_unfoldered": false,
+      "acquired_at": "2026-09-20T11:23:57.604Z",
+      "disposition": {
+        "state": "staged",
+        "document_sha256": "bc5425656ea3be79a15c52585411f584f97c7963b45f59f2f402179a7badcf91",
+        "disposed_at": "2026-09-20T11:23:57.604Z",
+        "source_version_sha256": "3dbd749152694b8398d4e8c6539f444efb9ec123f62f306637f09253f106f9b5"
+      }
+    }
+  },
+  "updated_at": "2026-09-20T11:23:57.604Z"
+}
