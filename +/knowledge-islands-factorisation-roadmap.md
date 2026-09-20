@@ -70,7 +70,7 @@ These responsibilities and their routing rules belong in `GDR-KI-FUNDAMENTALS-00
 
 ### Decision records
 
-Update a current decision record in place when the change clarifies, completes, or extends its existing decision. Preserve its identifier, original date, and current status, and add a dated amendment note explaining what changed and why.
+Update a current decision record in place when the change clarifies, completes, or extends its existing decision. Preserve its identifier and current status, advance its date to the current as-of date, and rewrite the record as a present-state decision. Git history preserves what changed and why; do not add a changelog or amendment-history section to the living record.
 
 Do not create a successor merely to avoid editing a shared record. Create a new decision only when a genuinely new decision has no honest existing home, and only after explicit approval.
 
@@ -127,7 +127,7 @@ The intended order is:
 
 ### FND-2 - Amend and distribute `GDR-KI-FUNDAMENTALS-001`
 
-**What it is.** Amend the existing shared fundamentals record in place. Keep its identifier, original date, and current status, and add a dated 2026-09-20 amendment history. Arcadia remains the canonical source.
+**What it is.** Amend the existing shared fundamentals record in place. Keep its identifier and current status, advance its date to the delivery date, and rewrite it as a self-contained present-state decision without an amendment history. Arcadia remains the canonical source.
 
 The amendment should add or clarify:
 
@@ -161,15 +161,17 @@ The responsibility and routing map should answer at least:
 
 **Why it is justified.** These rules apply across the whole estate, not only the six current primary authorities. Housing responsibilities, routing, and boundary tests in one shared fundamentals record gives every repository the same answer to "where does this belong?" and gives Arcadia a coherent basis for disseminating shared work. Amending in place avoids competing old and new artefacts, preserves the record's history, and matches the maintainer's preference for updating existing decisions.
 
-**Owner and scope.** Arcadia authors the canonical amendment. The six existing projections are updated in one coordinated pass. The target is then extended to all 21 Knowledge Islands organisation repositories. `krisb/dotfiles` should carry the same attributed projection unless its own repository contract requires a durable canonical pointer instead; any exception must be recorded, not inferred.
+**Owner and scope.** Arcadia authors the canonical amendment. The six existing projections are updated in one coordinated pass. Broader projection is deferred to post-merge ALIGN-1, when each of the 20 surviving Knowledge Islands organisation repositories and `krisb/dotfiles` can choose the governed full copy or recorded canonical pointer appropriate to its repository contract. Do not project the amended record into the retiring `mcp-housekeeping-codex` repository.
 
-**Deliverables.** Update the canonical record, add source and canonical markers, project it to the agreed estate set, and provide a byte-identity or semantic-equivalence check appropriate to each repository path.
+**Deliverables.** Update the canonical record and its five existing projections, identify Arcadia as the authoring source in shared prose and local indexes, and provide the established semantic-equivalence check for the six-copy set. Do not introduce a repository-local `canonical` frontmatter field: the shared-record contract fails closed on unknown metadata. ALIGN-1 owns any later extension beyond the existing six repositories.
 
 **Completion gate.** The amendment is review-approved, every declared projection identifies Arcadia as canonical, all copies pass the shared-record check, and no repository presents an older copy as current.
 
 **Dependency.** FND-1.
 
 ### FND-3 - Repair confirmed documentary and configuration drift
+
+**Confirmed during FND-1.** The repair set now includes `ki-plugins` lacking a declared work adapter, `repo_code`, and roadmap ledger; Techne Principal's `OPS` ledger high-water mark remaining at 008 while `TECHNE-OPS-009` exists; dotfiles roadmap-shape failures in `DOTFILES-UE-026` and `DOTFILES-UE-028`; and the Harness Decision Records audit reporting a non-canonical filename for `ADR-KI-HARNESS-SKILLS-009`. These findings remain repository-owned and do not authorise correction inside FND-1.
 
 **What it is.** Correct the small factual and cross-reference errors exposed by the reviews, after FND-1 confirms they still exist.
 
@@ -195,6 +197,8 @@ Candidate corrections include:
 **Dependency.** FND-1. This may run alongside FND-2 after the evidence report is stable.
 
 ### FND-4 - Record ownership seams and Arcadia-led dissemination
+
+Arcadia's current `ki-trades` declaration exports knowledge only, and only to Harness, Website, Specifications, and Techne Principal. The dissemination design must therefore distinguish a declared work-trade route from a direct repository-local handoff under the existing cross-repository choreography; it must not present the current knowledge routes as an estate-wide work transport.
 
 **What it is.** Amend the current local governance documents that describe the three difficult interfaces:
 
@@ -417,6 +421,8 @@ For each relationship record source, transformation, revision, editability, rege
 ## Phase 6 - Consolidate every repository with the resulting standards
 
 ### ALIGN-1 - Create and complete one local alignment item per repository
+
+`ki-plugins` cannot receive its item until it declares a valid work adapter, stable repository code, and issue ledger. Dotfiles can receive a new conforming item through its existing adapter, but its pre-existing roadmap failures remain separately owned and must not be hidden by ALIGN-1.
 
 **What it is.** Arcadia issues one bounded forward-work item to every repository in the post-merge target estate through that repository's configured work adapter. The common intent is to reconcile the repository with the shared fundamentals routing record, applicable Agentic Harness governance skills, current repository standards, and the repository-local contracts produced by this factorisation work.
 
