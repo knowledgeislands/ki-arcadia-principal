@@ -1,72 +1,72 @@
 {
   "schema": 3,
-  "generation": "d9f61bb5-d8b3-4f44-997c-902226508635",
+  "generation": "ec63e80f-139f-4e0e-b128-4ff5f7781dfa",
   "adapter": "granola",
   "repository": "https://github.com/knowledgeislands/ki-arcadia-principal",
   "provider": "granola",
   "account_sha256": "fddbc4161b2bc2d666c4e5550bbd8610be128c4fa336fec24062c0d23c75d2cd",
   "source_schema_sha256": "18709680d3024e803fd53eae2aec1628792f577042a6a157b0aab9d272e41b8d",
-  "identity_checkpoint_sha256": "f488c0762717e3b106458a8559308a531487ed8576515dd961fda58d42759cb2",
+  "identity_checkpoint_sha256": "bed9f318ae2cdaa0ef92023ff2c6e53fe855722f685cc6a8ee1a8fe7687a5936",
   "interval": {
-    "since": "1970-01-01",
+    "since": "2026-09-13",
     "until": "2026-09-20"
   },
   "exhaustive": true,
   "windows": [
     {
-      "since": "1970-01-01",
+      "since": "2026-09-13",
       "until": "2026-09-20",
       "scope": "global",
-      "count": 215,
-      "responseSha256": "0f5e1dbf272f5a9cb0a50612552b1de7c361b1180c3158a7634b5ebdbb55b18f",
+      "count": 22,
+      "responseSha256": "178d6111e354c4d1f5397ea0a7be03622fa2116b9e8b5c96b89be573fb6408e4",
       "saturated": false
     },
     {
-      "since": "1970-01-01",
+      "since": "2026-09-13",
       "until": "2026-09-20",
       "scope": "folder:2454f927-221b-4905-8583-a2daa85af625",
-      "count": 2,
-      "responseSha256": "1bee722777e7ae21499eaae869590dd994ff7a6e4eccf79c170bd03802428ef1",
+      "count": 0,
+      "responseSha256": "7b76c823c3f3214724ff08b7558a4c0a0793afb8e7495747bbdff421248df6c5",
       "saturated": false
     },
     {
-      "since": "1970-01-01",
+      "since": "2026-09-13",
       "until": "2026-09-20",
       "scope": "folder:474e17a9-860d-4a80-b4d9-daa14450273f",
-      "count": 140,
-      "responseSha256": "5588ff16cc0af0da4ceb395cacc96ac244857164ae27f59b21d3ecef5e60eca9",
+      "count": 15,
+      "responseSha256": "a31ee0bf00d8f40400c7ad63c508939e3935d0eb8eee990a97f91f6a5068c84f",
       "saturated": false
     },
     {
-      "since": "1970-01-01",
+      "since": "2026-09-13",
       "until": "2026-09-20",
       "scope": "folder:629e510b-2347-442e-9931-741707a34a10",
-      "count": 40,
-      "responseSha256": "8cdad31ed0c188e918dad0c20fd663ac260d97aecf5528737db2b893f67acf46",
+      "count": 3,
+      "responseSha256": "7d6232387ccdad876b67c719525018ee7142d09efded584ee1c64c10698be1f3",
       "saturated": false
     },
     {
-      "since": "1970-01-01",
+      "since": "2026-09-13",
       "until": "2026-09-20",
       "scope": "folder:811ac564-dd24-4a13-8a8a-ed5041f3a5c6",
-      "count": 14,
-      "responseSha256": "eb139642aee5b665cd09d7003a3d8c9f46e93444f1aa16ebdfb71a4ad91cfa6d",
+      "count": 2,
+      "responseSha256": "cd320ee8aa2a9a50fbdca90faf1c6f798000f1b62924395c65a73e42c0ab505f",
       "saturated": false
     },
     {
-      "since": "1970-01-01",
+      "since": "2026-09-13",
       "until": "2026-09-20",
       "scope": "folder:9bd26fa8-4fec-4289-9fb2-55edeeee29ab",
-      "count": 2,
-      "responseSha256": "0cf122e02c30101b8dc9b23366e7071779d76004eb59c5bd1b157757162f22bd",
+      "count": 0,
+      "responseSha256": "7b76c823c3f3214724ff08b7558a4c0a0793afb8e7495747bbdff421248df6c5",
       "saturated": false
     },
     {
-      "since": "1970-01-01",
+      "since": "2026-09-13",
       "until": "2026-09-20",
       "scope": "folder:aef87a23-0d66-4472-83c3-721e9fd8f375",
-      "count": 15,
-      "responseSha256": "a80564195a01efd02022ef964bab18cd66fffbdaea9fd749d8790cf753d76649",
+      "count": 1,
+      "responseSha256": "eb5dec76ab8b7689a1fe4fda86a20113a16ff05a6632af07abfbacc96fc4cfaa",
       "saturated": false
     }
   ],
@@ -118,5 +118,5 @@
       }
     }
   },
-  "updated_at": "2026-09-20T11:23:57.604Z"
+  "updated_at": "2026-09-20T12:31:51.640Z"
 }
