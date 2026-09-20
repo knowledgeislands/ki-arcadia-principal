@@ -101,12 +101,12 @@ The descriptions below are a starting map, not a claim that every present bounda
 
 ### Product and general tool repositories
 
-- `ki-techne-tools`: Bun/Turborepo product monorepo for personal-controller and execution-fabric tooling, including controller, bootstrap, Kubernetes resources, AWS proof infrastructure, and operational scripts. Techne Principal retains architecture authority; Techne Tools owns implementation, verification, packaging, bootstrap, deployment, and provider adapters.
+- `ki-techne-harness`: Bun/Turborepo product monorepo for personal-controller and execution-fabric tooling, including controller, bootstrap, Kubernetes resources, AWS proof infrastructure, and operational scripts. Techne Principal retains architecture authority; Techne Harness owns implementation, verification, packaging, bootstrap, deployment, and provider adapters.
 - `tools-mgit`: shell CLI for running commands across multiple Git repositories.
 - `tools-rig`: declarative working-setup catalogue and provider materialisation tool. It defers native manifests and state to systems such as Homebrew and chezmoi.
 - `tools-git-almanac`: local Git history inspection and reporting CLI.
 
-Techne Tools is direct evidence that the estate does not require one package or executable per repository.
+Techne Harness is direct evidence that the estate does not require one package or executable per repository.
 
 ### MCP server repositories
 
@@ -168,9 +168,9 @@ The Harness owns reusable capability semantics while `tools-ki` owns public CLI 
 
 Review who owns runnable rubric behaviour, compatibility negotiation, capability installation, host-specific mechanics, and failures that cross the boundary.
 
-### Techne Tools and `tools-ki`
+### Techne Harness and `tools-ki`
 
-Techne Tools owns the personal controller implementation; Techne Principal describes a controller that owns identity, policy, credential brokerage, lifecycle, and result integration while allowing runtimes, task environments, bootstrap, and execution tiers to vary.
+Techne Harness owns the personal controller implementation; Techne Principal describes a controller that owns identity, policy, credential brokerage, lifecycle, and result integration while allowing runtimes, task environments, bootstrap, and execution tiers to vary.
 
 Review who owns admission, work identity, authoritative lifecycle state, result integration, retries, leases, execution evidence, and cleanup. Do not move controller architecture into `ki` merely because `ki` already exposes work commands.
 
@@ -245,7 +245,7 @@ Merge only repositories that represent one product with aligned users, permissio
 
 ### Broader monorepo consolidation
 
-Consider an MCP workspace, a Harness workspace, Techne Tools, or another product home. Explain authority, subtree governance, release units, visibility, permissions, CI scope, and worktree practices. Do not assume a monorepo implies one release or one active writer.
+Consider an MCP workspace, a Harness workspace, Techne Harness, or another product home. Explain authority, subtree governance, release units, visibility, permissions, CI scope, and worktree practices. Do not assume a monorepo implies one release or one active writer.
 
 ### Reduce or rebuild projections
 
@@ -287,9 +287,9 @@ If a scenario needs edits in many repositories, explain whether that is meaningf
 2. What principle should determine a repository boundary in this estate: authority, product, trust, visibility, release cadence, runtime, or something else?
 3. Which present repositories should be kept, merged, split, moved, generated, or archived? Name every disposition.
 4. Where should shared MCP security and protocol behaviour be authoritative, and how should consumers prove conformance?
-5. Should MCPs stay independent, form one or more product workspaces, live in the Harness, live in Techne Tools, or use another structure?
+5. Should MCPs stay independent, form one or more product workspaces, live in the Harness, live in Techne Harness, or use another structure?
 6. Where exactly is the boundary between Harness capability semantics and `tools-ki` host mechanics?
-7. Where exactly is the boundary between `tools-ki` work operations and the Techne Tools controller?
+7. Where exactly is the boundary between `tools-ki` work operations and the Techne Harness controller?
 8. Are `tools-mgit` and `tools-rig` genuinely foundational members, general utilities, or candidates for another home?
 9. Can `ki-plugins`, website material, installed harness state, shared decisions, and runtime configuration be rebuilt and checked from their sources? Which copies may be edited?
 10. Is dotfiles an estate authority, an operational projection, or an external consumer? What does each answer change?
@@ -326,7 +326,7 @@ Reviewers should inspect current source rather than rely only on this summary. U
 - `ki-agentic-harness/docs/decisions/ADR-KI-HARNESS-SKILLS-007-provider-neutral-ai-session-acquisition-and-adapter-pairing.md`
 - `ki-agentic-harness/docs/decisions/ADR-KI-HARNESS-SKILLS-012-local-copies-for-shared-modules.md`
 - `ki-agentic-harness/mcp/README.md`
-- `ki-techne-tools/README.md`
+- `ki-techne-harness/README.md`
 - `ki-specifications/README.md`
 - `ki-plugins/README.md`
 - the `.ki.toml` or `.ki-config.toml` declarations and README in every repository;

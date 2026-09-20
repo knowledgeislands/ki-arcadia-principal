@@ -39,7 +39,7 @@ The evidence report should record source revisions and measured facts for reposi
 
 The amendment plan should name the canonical source, exact initial projection set, receiver-local metadata exceptions, semantic-equivalence check, and the responsibilities and routing text to add. It should preserve the decision record identifier and current status, advance its date to the delivery date, rewrite the record as a self-contained present-state decision without an amendment history, treat R1/R2/R3 as strong presumptions rather than a mechanical rule, and keep portable specifications dormant before overall V1. The initial amendment should update only the existing six-copy set; post-merge ALIGN-1 should govern any broader projection and should not seed the retiring Codex repository.
 
-The structure review should distinguish two base structures, composable structural overlays, replaceable adapters, and estate roles. It should keep repository shape separate from authority, projection, runtime state, and R1/R2/R3 boundary evidence; account for the `ki-techne-tools` execution harness and new `tools-techne` operator-CLI target; and propose explicit `repo_type = "project" | "kb"` as later Harness-owned standards work.
+The structure review should distinguish two base structures, composable structural overlays, replaceable adapters, and estate roles. It should keep repository shape separate from authority, projection, runtime state, and R1/R2/R3 boundary evidence; account for the `ki-techne-harness` execution harness and new `tools-techne` operator-CLI target; and propose explicit `repo_type = "project" | "kb"` as later Harness-owned standards work.
 
 The approved adoption places this first unit in `now` and keeps its delivery boundary limited to the evidence appendix plus a reviewable FND-2 amendment plan. Cross-repository implementation remains behind a later review checkpoint.
 
@@ -80,7 +80,7 @@ The structure review now records Project and Knowledge Base as the only base str
 
 ## Dependencies and blocks
 
-The planning inputs are resolved. WhatsApp remains a deliberately unverified product-test baseline while its owner has a dirty worktree; that blocks MCP-3 rather than the FND-2 responsibility amendment. Harness and `ki-techne-tools` were clean at the latest structure recheck, while `tools-techne` remains an ungoverned onboarding target. FND-2 implementation remains a separate later Arcadia record with receiver-owned local records; this planning item does not block unrelated repository work.
+The planning inputs are resolved. WhatsApp remains a deliberately unverified product-test baseline while its owner has a dirty worktree; that blocks MCP-3 rather than the FND-2 responsibility amendment. Harness and `ki-techne-harness` were clean at the latest structure recheck, while `tools-techne` remains an ungoverned onboarding target. FND-2 implementation remains a separate later Arcadia record with receiver-owned local records; this planning item does not block unrelated repository work.
 
 ## Delegation
 

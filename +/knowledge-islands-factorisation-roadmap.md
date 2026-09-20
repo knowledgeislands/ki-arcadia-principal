@@ -58,7 +58,7 @@ The target remains federated:
 - Techne Principal owns engineering discipline and architecture.
 - The Agentic Harness owns the reusable agent-facing capabilities it publishes, together with generic MCP governance, binding semantics, and black-box conformance. It does not own MCP products or server source merely because it governs or tests them.
 - `tools-ki` owns generic host mechanics and the public `ki` command surface.
-- `ki-techne-tools` owns the Techne execution-harness applications, controller and execution-fabric implementation.
+- `ki-techne-harness` owns the Techne execution-harness applications, controller and execution-fabric implementation.
 - `tools-techne` is the intended independently released operator CLI. It gains that responsibility only when its source, release contract and KI repository governance are established.
 - Each product repository owns its executable source, product behaviour, provider policy, schemas, trust boundary, build identity, release, and lifecycle state.
 - Website, Plugins, Homebrew, and installed payloads remain attributable publication, projection, distribution, or deployment surfaces.
@@ -127,7 +127,7 @@ The register below applies the structure vocabulary to the post-OpenAI target. E
 - **Agentic capability Harness — `ki-agentic-harness`.** Base: Project. Overlay: compatible agentic Harness, with target source shelves for skills, subagents, evals, and hooks. It owns reusable capability semantics and MCP governance or conformance, not executable MCP products.
 - **MCP products — eight surviving `mcp-*` repositories.** Base: Project. Overlay: MCP plus engineering. Each owns its executable, provider policy, trust boundary, build, and release while consuming Harness governance. `mcp-housekeeping-openai` replaces the ChatGPT and Codex pair.
 - **Standalone CLI products — `tools-ki`, `tools-mgit`, `tools-rig`, `tools-git-almanac`, and target `tools-techne`.** Base: Project. Overlay: standalone CLI tool; engineering applies where its toolchain fits. `tools-techne` must first establish source and the universal KI repository contract.
-- **Techne execution harness — `ki-techne-tools`.** Base: Project with engineering. Its “harness” is an execution-system product role, not the compatible agentic-Harness overlay. No new generic execution-harness structural overlay is justified while this shape occurs only once.
+- **Techne execution harness — `ki-techne-harness`.** Base: Project with engineering. Its “harness” is an execution-system product role, not the compatible agentic-Harness overlay. No new generic execution-harness structural overlay is justified while this shape occurs only once.
 - **Website — `ki-website`.** Base: Project. Overlays: Website, content implementation, and Cloudflare hosting. It owns public editorial publication and deployment without acquiring authority over attributed source material.
 - **Plugin projection — `ki-plugins`.** Base: Project. Overlay: plugin projection. It owns marketplace packaging and generated layout, not projected Harness semantics.
 - **Command-line distribution — `homebrew-tap`.** Base: Project. Overlay: Homebrew tap. It owns formula acceptance and transport metadata, not tool behaviour.
@@ -226,7 +226,7 @@ The responsibility and routing map should answer at least:
 - reusable agent capability semantics and generic MCP governance or conformance -> Agentic Harness;
 - universal repository contract and reusable structural-overlay semantics -> Agentic Harness, with each repository owning its declaration and conformance;
 - generic CLI hosting, repository mechanics, or public `ki` grammar -> `tools-ki`;
-- Techne execution-harness applications, controller, and execution-fabric implementation -> `ki-techne-tools`;
+- Techne execution-harness applications, controller, and execution-fabric implementation -> `ki-techne-harness`;
 - independently released Techne operator CLI -> `tools-techne`, once its source and repository contract are established;
 - MCP executable source, product behaviour, provider policy, schema, trust boundary, build, or release -> the product repository;
 - public editorial publication -> Website;
@@ -252,7 +252,7 @@ The responsibility and routing map should answer at least:
 
 While the estate remains V0.x, replace the implicit ordinary `repository` default with explicit `repo_type = "project" | "kb"` and one matching primary declaration. Update the current repository standard, configuration standard, rubric, examples, and project or KB structural skills in place. Do not create compatibility aliases or a third generic “code”, “product”, “principal”, or “harness” base type.
 
-**Why it is justified.** The current sources alternate between `repository` and Project, while “principal”, “harness”, “tools”, “projection”, and “code repository” are also used as authority, product, distribution, or implementation descriptions. That ambiguity can make a local directory shape look like authority. The live split between the compatible agentic Harness, the singular Techne execution harness, `ki-techne-tools`, and the new standalone `tools-techne` makes the distinction operational rather than editorial.
+**Why it is justified.** The current sources alternate between `repository` and Project, while “principal”, “harness”, “tools”, “projection”, and “code repository” are also used as authority, product, distribution, or implementation descriptions. That ambiguity can make a local directory shape look like authority. The live split between the compatible agentic Harness, the singular Techne execution harness, `ki-techne-harness`, and the new standalone `tools-techne` makes the distinction operational rather than editorial.
 
 **Owner and scope.** Arcadia owns the estate vocabulary and target register through FND-2. The Agentic Harness owns the enforceable repository standards. Each repository owns its later declaration change through ALIGN-1. `tools-techne` first requires an onboarding item that establishes its source, stable repository code, work adapter, universal repository contract, and intended standalone-CLI overlay.
 
@@ -298,14 +298,14 @@ This phase also removes the empty MCP source shelf from the Harness model, amend
 **What it is.** Amend the current local governance documents that describe the three difficult interfaces:
 
 - Harness semantics versus `tools-ki` host mechanics;
-- repository work state versus `ki-techne-tools` controller execution state; and
+- repository work state versus `ki-techne-harness` controller execution state; and
 - Rig catalogue intent versus dotfiles bindings, `ki` activation, application bootstrap, infrastructure deployment, and provider state.
 
 Also define the Arcadia initiative pattern for multi-repository changes: shared outcome, exact receiving set, route to each owner, per-repository state, evidence, and finish/defer/abandon disposition.
 
 **Why it is justified.** Separate repositories do not make these interfaces independent. Harness rubric modules execute inside `ki`; controller work eventually integrates into repository-owned Git state; and several tools can plausibly claim to "bootstrap" a machine. Without explicit write ownership, the estate can create competing state even when its repository layout looks tidy. The reviews also found several partially completed estate initiatives with no mechanism proving completion.
 
-**Owner and scope.** Arcadia owns the shared initiative and routing record. Harness and `tools-ki` jointly evidence the first seam; Techne Principal, `ki-techne-tools`, and `tools-ki` the second; Rig and dotfiles the third. Update suitable current records in place. Create a new decision only if no existing record can honestly carry it and the maintainer approves it.
+**Owner and scope.** Arcadia owns the shared initiative and routing record. Harness and `tools-ki` jointly evidence the first seam; Techne Principal, `ki-techne-harness`, and `tools-ki` the second; Rig and dotfiles the third. Update suitable current records in place. Create a new decision only if no existing record can honestly carry it and the maintainer approves it.
 
 **Deliverables.** Ownership statements, compatibility or state diagrams where useful, and a reusable Arcadia-to-repository dissemination checklist referenced by FND-2.
 
@@ -415,7 +415,7 @@ The product contract is:
 
 **Why it is justified.** The current estate has one conceptual security surface implemented nine times, but behavioural conformance may remove the risk without creating another source owner. This evidence gate avoids treating shared implementation code as a Harness capability or creating a new repository merely because files look similar. If extraction is justified, one reviewed source can reduce semantic edits while provider policy remains local.
 
-**Owner and scope.** The Agentic Harness owns policy, fixtures, and the black-box conformance suite, not the shared implementation source. Arcadia coordinates the ownership decision. Any extracted source receives an explicit owner justified by R1 and R2; it does not default to Harness, `tools-ki`, or `ki-techne-tools`. Each MCP retains product ownership and acceptance. This creates no pre-V1 portable specification.
+**Owner and scope.** The Agentic Harness owns policy, fixtures, and the black-box conformance suite, not the shared implementation source. Arcadia coordinates the ownership decision. Any extracted source receives an explicit owner justified by R1 and R2; it does not default to Harness, `tools-ki`, or `ki-techne-harness`. Each MCP retains product ownership and acceptance. This creates no pre-V1 portable specification.
 
 **Deliverables.** A recorded extract-or-retain decision. If extraction is justified: canonical modules, an explicit source owner, a manifest containing source revision and hashes, a configuration interface, unit tests, a provenance header, and sync and verification commands for the local pilot.
 
@@ -595,20 +595,20 @@ Track:
 
 The roadmap's current disposition is:
 
-- Keep Arcadia Principal, Techne Principal, Agentic Harness, `tools-ki`, Specifications, Website, `ki-techne-tools`, Plugins, Homebrew tap, `tools-mgit`, `tools-rig`, and Git Almanac.
+- Keep Arcadia Principal, Techne Principal, Agentic Harness, `tools-ki`, Specifications, Website, `ki-techne-harness`, Plugins, Homebrew tap, `tools-mgit`, `tools-rig`, and Git Almanac.
 - Retain newly created `tools-techne` as the intended standalone Techne operator CLI repository, but do not call it governed or operational until its source and KI repository contract are established.
 - Keep `mcp-m365`, `mcp-gsuite`, `mcp-git-audit`, `mcp-ki-kb-fs`, `mcp-ki-kb-notion-mirror`, `mcp-acquire-whatsapp`, and `mcp-housekeeping-claude` as separate products.
 - Rename `mcp-housekeeping-chatgpt` to `mcp-housekeeping-openai` and merge `mcp-housekeeping-codex` into it.
 - Retire `mcp-housekeeping-codex` after its source has been absorbed into `mcp-housekeeping-openai`; no compatibility redirect is required before V1.
 - Keep `krisb/dotfiles` external, with explicit ownership of personal environment bindings.
-- Archive, split, or move no other repository under the present evidence. Do not invent a generic execution-harness overlay solely for `ki-techne-tools`; add one only if reusable structure recurs.
+- Archive, split, or move no other repository under the present evidence. Do not invent a generic execution-harness overlay solely for `ki-techne-harness`; add one only if reusable structure recurs.
 
 ## Out of scope before overall V1
 
 - New estate-wide KIPs, KIS documents, schemas, or portable specifications.
 - Legacy compatibility, state migration, rollback plans, or dual-running old and new repository structures before V1.
 - Publishing shared packages to a public registry.
-- Treating an executable MCP product as a Harness capability member, or moving MCP product source into the Harness or `ki-techne-tools`.
+- Treating an executable MCP product as a Harness capability member, or moving MCP product source into the Harness or `ki-techne-harness`.
 - Treating principal authority, product ownership, publication, distribution, runtime binding, or the word “harness” as a third base repository structure.
 - Treating a repository, worktree, or visibility setting as runtime security isolation.
 - Replacing every existing decision record with a successor solely because the estate vocabulary changed.

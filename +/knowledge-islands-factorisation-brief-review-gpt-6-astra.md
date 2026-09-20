@@ -8,7 +8,7 @@ Status: independent recommendation, not an adopted decision
 
 Brief: `knowledge-islands-factorisation-brief.md`
 
-Evidence inspected: the brief; Arcadia's shared fundamentals and historical governance records; repository declarations across the 21 Knowledge Islands repositories; Techne Principal, Techne Tools, Rig, Specifications, and Plugins READMEs; the Harness MCP shelf, governance boundary matrix, acquisition and shared-module decisions; the CLI compatible-harness decision; all nine MCP dependency manifests; selected audit-logging implementations; and the dotfiles README.
+Evidence inspected: the brief; Arcadia's shared fundamentals and historical governance records; repository declarations across the 21 Knowledge Islands repositories; Techne Principal, Techne Harness, Rig, Specifications, and Plugins READMEs; the Harness MCP shelf, governance boundary matrix, acquisition and shared-module decisions; the CLI compatible-harness decision; all nine MCP dependency manifests; selected audit-logging implementations; and the dotfiles README.
 
 This was an architectural review, not a complete code, deployment, permission, or security audit.
 
@@ -16,7 +16,7 @@ This was an architectural review, not a complete code, deployment, permission, o
 
 Keep the current 22 repository boundaries for now. Make ownership and compatibility concrete, remove selected MCP implementation duplication through controlled vendoring, and improve the provenance of projections. There is insufficient evidence that repository consolidation would recover its migration cost.
 
-The existing six-authority model is coherent as a map of concerns but incomplete as an ownership register. Extend the register to recognise product behaviour and deployment state. Techne Tools owns controller implementation; each tool or MCP owns its product behaviour; operators and native providers own deployment-specific state. These do not require additional philosophical authorities or new governance repositories.
+The existing six-authority model is coherent as a map of concerns but incomplete as an ownership register. Extend the register to recognise product behaviour and deployment state. Techne Harness owns controller implementation; each tool or MCP owns its product behaviour; operators and native providers own deployment-specific state. These do not require additional philosophical authorities or new governance repositories.
 
 Make four changes:
 
@@ -31,7 +31,7 @@ The no-change baseline is to retain all repositories and add shared behavioural 
 
 The inventory correctly contains 21 Knowledge Islands repositories plus `krisb/dotfiles`. My initial working count of sibling repositories was mistaken; the brief's final count is correct.
 
-The six-authority decision exists. Techne Tools already uses a product monorepo. Plugins is a generated projection. The inspected Specifications README lists both current KIS documents as Draft. Eight MCP manifests use SDK v1 and Git Audit uses v2. That version split alone establishes neither a defect nor a stalled migration.
+The six-authority decision exists. Techne Harness already uses a product monorepo. Plugins is a generated projection. The inspected Specifications README lists both current KIS documents as Draft. Eight MCP manifests use SDK v1 and Git Audit uses v2. That version split alone establishes neither a defect nor a stalled migration.
 
 Current Claude audit sanitisation treats top-level `content` specially and removes URL user information recursively. M365 applies a larger top-level field set. This confirms meaningful implementation variation but does not establish which calls disclose sensitive values. Truncating a serialised argument into a preview is not, by itself, a confidentiality control. Review logging policy before extracting it.
 
@@ -48,7 +48,7 @@ Missing evidence includes change frequency and co-change history, time spent pro
 | Accepted portable contracts | Specifications | Accepted or Active contracts bind |
 | Reusable capability semantics | Agentic Harness | Capability behaviour, adapters, and rubrics |
 | Generic capability host and `ki` grammar | `tools-ki` | Resolution, validation, execution, and reporting |
-| Controller and execution-fabric implementation | Techne Tools | Admission, attempts, supervision, and integration |
+| Controller and execution-fabric implementation | Techne Harness | Admission, attempts, supervision, and integration |
 | Individual tool and MCP behaviour | Its implementation repository | Product logic and compatibility |
 | Shared MCP control implementation | Harness MCP kit | Generic mechanics only |
 | Public editorial prose and routes | Website | Publication does not transfer source authority |
@@ -79,7 +79,7 @@ Harness capabilities + compatibility manifest <-> tools-ki host
         +-> generated ki-plugins
         +-> pinned MCP kit copies -> independent MCP builds/processes
 
-Techne Tools controller -> isolated task environments
+Techne Harness controller -> isolated task environments
         |                         |
         +-> leases/attempts       +-> evidence/results
         +-> authorised integration through repository operations
@@ -105,7 +105,7 @@ An edge needs a named contract and version only where incompatibility matters. A
 | `tools-ki` | Keep; retain the generic host and repository operations |
 | `ki-specifications` | Keep; promote contracts after demonstrated implementation evidence |
 | `ki-website` | Keep; make publication provenance and source updates checkable |
-| `ki-techne-tools` | Keep the product monorepo; own controller/fabric implementation |
+| `ki-techne-harness` | Keep the product monorepo; own controller/fabric implementation |
 | `tools-mgit` | Keep as a utility; Agora membership need not imply normative foundation |
 | `tools-rig` | Keep as a setup product; preserve provider-native authority |
 | `tools-git-almanac` | Keep; distinct offline reporting product |
@@ -144,7 +144,7 @@ Capture implementation evidence, disagreements, and migration examples in Specif
 
 ### Run unattended controller work
 
-Techne Tools admits an attempt against a work record, immutable baseline, and bounded authority. It owns lease, retry, and credential lifetime; the environment owns disposable execution state. The agent returns changes and evidence. Integration uses repository operations under the recorded authority and review gate. Test duplicate delivery, expired leases, interrupted cleanup, and conflicting integration. Stop or rollback revokes admission and credentials, preserves evidence, and avoids automatic reversal of already accepted external effects.
+Techne Harness admits an attempt against a work record, immutable baseline, and bounded authority. It owns lease, retry, and credential lifetime; the environment owns disposable execution state. The agent returns changes and evidence. Integration uses repository operations under the recorded authority and review gate. Test duplicate delivery, expired leases, interrupted cleanup, and conflicting integration. Stop or rollback revokes admission and credentials, preserves evidence, and avoids automatic reversal of already accepted external effects.
 
 ### Publish a changed concept
 
@@ -192,7 +192,7 @@ An MCP monorepo is the strongest competitor: it makes shared changes atomic and 
 
 Moving all MCPs into the Harness confuses reusable mechanics with provider products and would expand its release and maintenance surface substantially.
 
-Moving them into Techne Tools would make the controller product a general infrastructure container without a demonstrated ownership reason.
+Moving them into Techne Harness would make the controller product a general infrastructure container without a demonstrated ownership reason.
 
 Merging the three housekeeping repositories immediately assumes that provider-specific acquisition and legacy housekeeping share a product lifecycle. The evidence does not yet support that assumption.
 
@@ -225,7 +225,7 @@ This section translates the recommendation into concrete candidate changes. It r
 
 2. **Expand the Harness governance boundary matrix.**
 
-   - Add Techne Principal, Techne Tools, controller and execution-fabric responsibilities, and runtime state.
+   - Add Techne Principal, Techne Harness, controller and execution-fabric responsibilities, and runtime state.
    - Narrow any "no duplicate authority" conclusion to the concerns the matrix actually covers.
 
 3. **Clarify historical Arcadia engineering authority.**
@@ -262,12 +262,12 @@ This section translates the recommendation into concrete candidate changes. It r
    - failure and rollback behaviour; and
    - fixtures that both repositories can run.
 
-6. **Define the `tools-ki`-to-Techne Tools controller boundary.**
+6. **Define the `tools-ki`-to-Techne Harness controller boundary.**
 
    Record that:
 
    - the selected work adapter owns the authoritative work record and review status;
-   - Techne Tools owns attempts, leases, retries, expiry, supervision, evidence, and cleanup;
+   - Techne Harness owns attempts, leases, retries, expiry, supervision, evidence, and cleanup;
    - the controller integrates results through authorised repository operations; and
    - the controller must not create a competing authoritative backlog in its own state.
 
@@ -278,7 +278,7 @@ This section translates the recommendation into concrete candidate changes. It r
    - Rig's catalogue of intended tools;
    - dotfiles' personal environment declarations;
    - `ki` repository and Harness activation;
-   - Techne Tools application bootstrap;
+   - Techne Harness application bootstrap;
    - infrastructure deployment; and
    - provider-owned mutable state.
 

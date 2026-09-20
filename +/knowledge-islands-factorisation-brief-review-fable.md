@@ -23,7 +23,7 @@ Measured (counts, hashes and file contents taken from working checkouts at HEAD 
 - `GDR-KI-FUNDAMENTALS-001` in full from the Arcadia copy (read directly), plus the dossier's six-copy hash comparison.
 - `ADR-TECHNE-003` in full (read directly); `ADR-KI-HARNESS-SKILLS-012` body (read directly).
 - `tools-ki` command tree, core module line counts, in-process rubric loading at `src/core/rubric/loader.ts:208`, release packaging and signing, CI `KI_VERSION` pins across the estate (dossier section 6).
-- `ki-techne-tools` tracked layout at HEAD and the fact of extensive uncommitted work by another writer (dossier section 7).
+- `ki-techne-harness` tracked layout at HEAD and the fact of extensive uncommitted work by another writer (dossier section 7).
 - Release mechanisms for `rig`, `mgit`, `git-almanac`, `ki` and the four Homebrew formulae, the tap's `notify-website` dispatch, and the website's `update-tool-release.yml` receiver (dossier sections 8 and 10).
 - `ki-plugins` generator location, marketplace manifest, projected skill counts versus harness skill counts, and the timing of the last projection relative to the newest harness skill (dossier section 9).
 - `krisb/dotfiles`: `.ki.toml`, Brewfile tap lines, Claude Code hook binding templates, `.chezmoidata/mcp-servers.yaml` registrations by absolute `dist` path, `.chezmoiignore` entries, rendered `.mgit.toml` (dossier section 11).
@@ -38,14 +38,14 @@ Declared (taken from decision records, READMEs and roadmap text rather than from
 - Website README claim of vendoring; `docs/guides/guidance-ownership.md` ownership test.
 - Agora membership lists (from `.ki.toml` dumps, not from `ki agora show`, which was not run).
 
-Not verified, and treated as such throughout: `ki-plugins` rebuild determinism (a rebuild would write into a repository and was prohibited); the `mcp-acquire-whatsapp` audit log path; `ki-techne-tools` CI (dirty tree); the tenth `ki-fnd` member; whether same-named annotation presets carry identical hint values in all nine MCP repositories; whether `marketplace.json` records the harness commit it was built from; why the `mcp-housekeeping-chatgpt` lockfile carries `@modelcontextprotocol/server@2.0.0`; the exact name of the tap's structure skill and theme.
+Not verified, and treated as such throughout: `ki-plugins` rebuild determinism (a rebuild would write into a repository and was prohibited); the `mcp-acquire-whatsapp` audit log path; `ki-techne-harness` CI (dirty tree); the tenth `ki-fnd` member; whether same-named annotation presets carry identical hint values in all nine MCP repositories; whether `marketplace.json` records the harness commit it was built from; why the `mcp-housekeeping-chatgpt` lockfile carries `@modelcontextprotocol/server@2.0.0`; the exact name of the tap's structure skill and theme.
 
 **Assumptions.**
 
 - The maintainer is one person working with several agents, and that will remain true for the planning horizon of this review. The recommendation is tuned to that, not to a team.
 - Constraint 1 (no public registry by default) is treated as binding, not merely a preference.
 - Cross-repository work stays choreographed (each repository accepts its own commits) unless a decision record changes that.
-- The two repositories with another writer active at capture (`ki-agentic-harness`, `ki-techne-tools`) and the one with uncommitted foreign files (`mcp-housekeeping-chatgpt`) are described at their captured state; their in-flight work is out of scope and not assessed.
+- The two repositories with another writer active at capture (`ki-agentic-harness`, `ki-techne-harness`) and the one with uncommitted foreign files (`mcp-housekeeping-chatgpt`) are described at their captured state; their in-flight work is out of scope and not assessed.
 
 **Material uncertainties.**
 
@@ -98,7 +98,7 @@ Authority never creates a repository by itself. Authority is recorded in decisio
 - `ki-plugins`: 832 tracked files, no `package.json`, no CI, no scripts. The last projection commit is 2026-09-19 11:12; the harness skill `ki-housekeeping-granola` is dated 2026-09-19 12:43. The projection is stale relative to its source at the moment of capture. Nine harness skills are deliberately not projected. `SKILL.md` for `ki-repo-plugins` requires byte-for-byte generated output; nothing checks it.
 - `ki-website`: README and `GDR-KI-FUNDAMENTALS-001` say it vendors source-labelled material; no vendoring or sync mechanism exists; provenance is carried only by frontmatter `source`, `provenance` and `canonical` fields; the only automation is the tap's `repository_dispatch` that opens a release PR.
 - `GDR-KI-FUNDAMENTALS-001` exists in six repositories in two byte-variants that differ only by the `note_type` line; `ki-specifications` roadmap RGV-002 treats the harness copy as the canonical projection and verifies byte identity against it.
-- `ki-techne-tools` has 57 tracked files and 7 commits at HEAD, a Python controller (514 lines) and a workspace root; the working tree carried an untracked TypeScript CLI and other changes by a different writer. `packages/bootstrap` is tracked at HEAD and deleted in the working tree.
+- `ki-techne-harness` has 57 tracked files and 7 commits at HEAD, a Python controller (514 lines) and a workspace root; the working tree carried an untracked TypeScript CLI and other changes by a different writer. `packages/bootstrap` is tracked at HEAD and deleted in the working tree.
 - `homebrew-tap` carries four formulae (`ki`, `mgit`, `rig`, `git-almanac`), a script that parses formula URLs into tool, repository and version, and a CI job that dispatches `tool-release-published` to `ki-website`. `GDR-KI-FUNDAMENTALS-001` says the tap "implements release transport owned by `tools-ki`"; the tap's own `.ki.toml` imports work from four tool repositories.
 
 ### 2.2 Inferences
@@ -117,7 +117,7 @@ Authority never creates a repository by itself. Authority is recorded in decisio
 - No CI timing data anywhere.
 - No record of the harness commit from which the current `ki-plugins` projection was built.
 - No `ki agora show` output; membership is from `.ki.toml` declarations.
-- No inspection of `ki-techne-tools` beyond HEAD because another writer was active.
+- No inspection of `ki-techne-harness` beyond HEAD because another writer was active.
 - The `mcp-acquire-whatsapp` audit log path and mode wiring beyond the `WHATSAPP_AUDIT_LOG` environment variable.
 
 ### 2.4 Contradictions in the evidence and which record wins
@@ -180,7 +180,7 @@ The matrix separates the five decisions the brief asks reviewers to keep apart. 
 | --- | --- | --- | --- | --- | --- |
 | `ki` CLI: install, registry, activation, native ops | `tools-ki` † | `tools-ki` | same | signed tarballs, formula | user process, XDG |
 | Shared-module materialiser and drift audit | harness (`ki-repo-mcp`) | `tools-ki` | `tools-ki` | with `ki` | user process |
-| Controller: admission, leases, retries, evidence | `ki-techne-principal` ‡ | `ki-techne-tools` | same | bootstrap, K8s, AWS | cluster |
+| Controller: admission, leases, retries, evidence | `ki-techne-principal` ‡ | `ki-techne-harness` | same | bootstrap, K8s, AWS | cluster |
 | Each MCP's tools, config, redaction policy, confinement | that MCP repo | same | same | local build, dist path | own process and env |
 | Multi-repository command runner | `tools-mgit` | `tools-mgit` | same | source tag, tap formula | user process |
 | Working-setup catalogue and provider materialisation | `tools-rig` | `tools-rig` | same | source tag, tap formula | user process |
@@ -188,7 +188,7 @@ The matrix separates the five decisions the brief asks reviewers to keep apart. 
 
 † `tools-ki` owns the public command grammar and host mechanics. Capability semantics remain with `ki-agentic-harness` (section 3.1).
 
-‡ ADR-TECHNE-001 for the architecture; ADR-TECHNE-003 for implementation ownership by `ki-techne-tools`.
+‡ ADR-TECHNE-001 for the architecture; ADR-TECHNE-003 for implementation ownership by `ki-techne-harness`.
 
 ### 3.3 Mutable state
 
@@ -200,7 +200,7 @@ The matrix separates the five decisions the brief asks reviewers to keep apart. 
 | Catalogue intent for a machine | `tools-rig` semantics; dotfiles holds the catalogue files | `~/.config/rig/conf.d` | `rig --dry-run` |
 | Provider state (Homebrew cellar, launchd, XDG state dirs) | the provider | provider locations | provider tools |
 | MCP audit logs | each MCP process | `~/.local/state/mcp-<name>/audit.jsonl` | conformance suite, rotation test |
-| Controller execution journal, leases, job records | `ki-techne-tools` controller | SQLite in cluster | controller tests and proof guide |
+| Controller execution journal, leases, job records | `ki-techne-harness` controller | SQLite in cluster | controller tests and proof guide |
 | Governed work state (roadmaps, trades, handoffs) | the receiving repository | Git | `ki repo roadmap`, `ki trade` |
 | Credentials | machine-local secret authority (1Password, secret files) | outside Git | never copied |
 
@@ -226,14 +226,14 @@ The matrix separates the five decisions the brief asks reviewers to keep apart. 
 NORMATIVE (prose and schema; no executable)
   ki-arcadia-principal --informs--> ki-techne-principal
   ki-arcadia-principal --informs--> ki-agentic-harness, tools-ki, ki-specifications
-  ki-techne-principal  --informs--> ki-agentic-harness, tools-ki, ki-techne-tools
+  ki-techne-principal  --informs--> ki-agentic-harness, tools-ki, ki-techne-harness
   ki-specifications    --constrains (Active KIS only)--> every repo that claims conformance
   ki-agentic-harness, tools-ki, each mcp-* --evidence--> ki-specifications
 
 EXECUTABLE SOURCE
   ki-agentic-harness (skills, agents, hooks, evals, rubric modules, mcp/shared, mcp/conformance)
   tools-ki (ki CLI; loads harness payload in-process; materialises shared modules)
-  ki-techne-tools (controller, bootstrap, deploy, adapters)
+  ki-techne-harness (controller, bootstrap, deploy, adapters)
   mcp-* x8 after merge (each: tools + config + vendored shared modules + vendored conformance)
   tools-mgit, tools-rig, tools-git-almanac
 
@@ -256,7 +256,7 @@ DISTRIBUTION AND INSTALLATION
 BINDING AND RUNTIME
   krisb/dotfiles (chezmoi) --sole writer--> Claude settings, hooks, mcp-servers.yaml, launchd, Brewfile
   mcporter daemon (launchd) --spawns--> each mcp-* process with its own env and access level
-  ki-techne-tools controller --spawns--> K8s Jobs (workload pods receive no tokens)
+  ki-techne-harness controller --spawns--> K8s Jobs (workload pods receive no tokens)
   Jobs --invoke--> ki, mgit inside task environments; results --commits--> Git
 
 PUBLICATION
@@ -288,7 +288,7 @@ Consequence: no change to boundary. Required edits: mark `Pillars/Techne` (2 fil
 
 ### 5.2 `ki-techne-principal`: keep
 
-Rule: R1. A separate knowledge package (`manifest.yaml`, `knowledge_package: true`) with its own decision series and its own consumers (`ki-techne-tools`, `tools-ki`). Splitting it from Arcadia is decided (GDR-FUND-001, ADR-TECHNE-003) and the evidence supports the split: 21 engineering-practice notes and three ADRs that no philosophy reader needs.
+Rule: R1. A separate knowledge package (`manifest.yaml`, `knowledge_package: true`) with its own decision series and its own consumers (`ki-techne-harness`, `tools-ki`). Splitting it from Arcadia is decided (GDR-FUND-001, ADR-TECHNE-003) and the evidence supports the split: 21 engineering-practice notes and three ADRs that no philosophy reader needs.
 
 Consequence: no change. It remains the normative owner of the controller architecture; it must not acquire runnable code again (ADR-TECHNE-003 already moved it out).
 
@@ -316,7 +316,7 @@ Rule: R1 (independent Cloudflare deployment on its own cadence, triggered by tap
 
 Consequence: keep. Replace the unsubstantiated "vendors" claim (C3) with a provenance check: a script that reads every page's `source` and `canonical` frontmatter and fails the build if the referenced path does not exist in the named repository at the named commit. This is cheaper than a vendoring pipeline and gives the property the GDR actually wants (attributable copies). Guide prose remains editable in the website under the existing ownership test.
 
-### 5.7 `ki-techne-tools`: keep
+### 5.7 `ki-techne-harness`: keep
 
 Rule: R1 (bootstrap script, K8s and AWS manifests, its own proof guide) and R2 (cluster and AWS credentials, controller service accounts). Decided by ADR-TECHNE-003 two days before this review.
 
@@ -477,11 +477,11 @@ Traced with KIS-0003 as the concrete case.
 ### Scenario 5: run controller work unattended with isolated credentials, retries, leases, evidence, and cleanup
 
 - Authoritative edit: `ki-techne-principal` if any invariant changes (ADR-TECHNE-001 already defines the unattended isolated tier and that workload pods receive no tokens). Otherwise none.
-- Implementation change: `ki-techne-tools` controller (admission, work identity, lease and retry in the SQLite journal, Job creation, result integration, cleanup). Task environments invoke `ki` and `mgit` from inside the pod; `tools-ki` does not change unless the task needs a new `ki` command.
+- Implementation change: `ki-techne-harness` controller (admission, work identity, lease and retry in the SQLite journal, Job creation, result integration, cleanup). Task environments invoke `ki` and `mgit` from inside the pod; `tools-ki` does not change unless the task needs a new `ki` command.
 - Generated output: Kubernetes Job manifests from the controller; execution evidence written to the journal and to Git as commits on the receiving repository (Git is authoritative work state; the journal is authoritative execution state).
 - Test: controller tests (`test_controller.py`) and the proof guide's checklist; `deploy/kubernetes/execution/job.example.json` as the fixture.
 - Release or install effect: controller deployment (single-replica Recreate) via the bootstrap script; credentials delivered to the runtime store by bootstrap, never through Git or through `ki`.
-- Approval boundary: `ki-techne-tools` alone for implementation; the receiving repository for the work result (choreography: the controller proposes a commit, the repository's own checks accept it). `tools-ki` is not on the path unless a command is missing. The boundary between `ki` and the controller is: `ki` reads and writes repository-scope work state and trade routing; the controller owns execution state and supervision. If `ki` ever supervises a process, that is a breach.
+- Approval boundary: `ki-techne-harness` alone for implementation; the receiving repository for the work result (choreography: the controller proposes a commit, the repository's own checks accept it). `tools-ki` is not on the path unless a command is missing. The boundary between `ki` and the controller is: `ki` reads and writes repository-scope work state and trade routing; the controller owns execution state and supervision. If `ki` ever supervises a process, that is a breach.
 - Rollback: lease expiry and cleanup are the controller's responsibility; a failed job leaves evidence in the journal and no commit in Git. Controller version rollback is a redeploy of the previous image.
 
 ### Scenario 6: publish a revised Knowledge Islands concept to the website and update any host projections
@@ -640,7 +640,7 @@ Where the dossier allows a number, it is given. Where it does not, the cost is s
 
 ### 9.1 Strongest competitor: an MCP Bun workspace (in the harness `mcp/` shelf or a new `mcp-workspace` repository)
 
-What it offers: one lockfile, one SDK bump, one CI, shared modules as ordinary workspace imports with no materialiser, and one place to read all MCP code. The harness `mcp/README.md` records it as the intended consolidation path, and `ki-techne-tools` proves the estate can run a workspace.
+What it offers: one lockfile, one SDK bump, one CI, shared modules as ordinary workspace imports with no materialiser, and one place to read all MCP code. The harness `mcp/README.md` records it as the intended consolidation path, and `ki-techne-harness` proves the estate can run a workspace.
 
 Why it loses on the measured evidence:
 
@@ -730,7 +730,7 @@ The recommendation's additional cost over the minimal baseline is the materialis
 
 ## Appendix A: the brief's fifteen questions
 
-**Q1. Is the six-authority model coherent and complete?** Coherent for the six things it names; incomplete as an authority model. It is a list of primary repositories, not a map of ownership kinds. Add: an explicit executable-ownership class for product repositories (each MCP, `ki-techne-tools`, the three tools), of which ADR-TECHNE-003 is the only worked instance; `krisb/dotfiles` as sole writer of machine binding state; the harness as executable owner of shared MCP controls. Narrow: Specifications' claim to "an Active KIS governs" is true but currently vacuous, and the record should say what is Active. Correct: the harness publishes MCP standards, not MCP servers (C9); the tap serves four tools (C12). Remove or combine: nothing.
+**Q1. Is the six-authority model coherent and complete?** Coherent for the six things it names; incomplete as an authority model. It is a list of primary repositories, not a map of ownership kinds. Add: an explicit executable-ownership class for product repositories (each MCP, `ki-techne-harness`, the three tools), of which ADR-TECHNE-003 is the only worked instance; `krisb/dotfiles` as sole writer of machine binding state; the harness as executable owner of shared MCP controls. Narrow: Specifications' claim to "an Active KIS governs" is true but currently vacuous, and the record should say what is Active. Correct: the harness publishes MCP standards, not MCP servers (C9); the tap serves four tools (C12). Remove or combine: nothing.
 
 **Q2. What principle should determine a repository boundary?** Independent acceptance, tested by three conditions: R1 own release line and consumers; R2 distinct trust class (visibility, licence, credential scope, personal data); R3 host-mandated location. Authority is never the criterion; product is the usual carrier of R1; trust is the criterion that overrides code reuse. Applied to all 22 in section 5 without exception.
 
@@ -738,11 +738,11 @@ The recommendation's additional cost over the minimal baseline is the materialis
 
 **Q4. Where should shared MCP security and protocol behaviour be authoritative, and how should consumers prove conformance?** Normative: KIS-0003 in `ki-specifications` (Draft now, Active when all public servers pass). Executable: `ki-agentic-harness/mcp/shared/` with the conformance suite in `mcp/conformance/`. Consumers prove conformance by running the vendored suite against their built server in their own CI and by `ki repo audit` showing their copies match the harness manifest. Byte identity proves the copy; the suite proves the behaviour; both are required and neither substitutes for the other.
 
-**Q5. Should MCPs stay independent, form workspaces, live in the harness, live in Techne Tools, or use another structure?** Independent, with vendored shared controls and a shared conformance suite. Not a workspace (section 9.1); not in the harness as servers (the harness owns the standard, the modules and the suite, and its `mcp/` shelf is repurposed for those); not in Techne Tools (nothing in an MCP is controller or fabric).
+**Q5. Should MCPs stay independent, form workspaces, live in the harness, live in Techne Harness, or use another structure?** Independent, with vendored shared controls and a shared conformance suite. Not a workspace (section 9.1); not in the harness as servers (the harness owns the standard, the modules and the suite, and its `mcp/` shelf is repurposed for those); not in Techne Harness (nothing in an MCP is controller or fabric).
 
 **Q6. Where exactly is the boundary between harness capability semantics and `tools-ki` host mechanics?** The frontmatter and reference-file contract plus the rubric module interface. The harness owns everything declared in skill, agent, hook and eval content, the rubric checks and remediation text, the adapter deltas per runtime, and now the MCP shared modules and suite. `tools-ki` owns loading, resolution, registry, activation, materialisation, transactions, progress, reporting, error envelopes, the command grammar, and installation. Runnable rubric behaviour: harness owns what is checked; `ki` owns how it runs. Compatibility negotiation: `ki` owns it, as host and registry, and both CIs must test against the other's current release because the modules execute in one process. Failures crossing the boundary: `ki` owns the envelope and the report; the harness owns the fix.
 
-**Q7. Where exactly is the boundary between `tools-ki` work operations and the Techne Tools controller?** `ki` owns repository-scope, Git-resident, declarative work state and cross-repository trade routing (`ki repo roadmap`, `ki trade`, `ki batch`). The controller owns admission, work identity, leases, retries, execution evidence, result integration and cleanup: machine- or cluster-resident mutable execution state in its journal. The controller invokes `ki` inside task environments; `ki` never supervises a process. Git is authoritative work state (ADR-TECHNE-001); the journal is authoritative execution state; result integration is the controller proposing commits that the receiving repository accepts by its own checks. There is no `ki work` command today (C16) and the review recommends none be added that supervises.
+**Q7. Where exactly is the boundary between `tools-ki` work operations and the Techne Harness controller?** `ki` owns repository-scope, Git-resident, declarative work state and cross-repository trade routing (`ki repo roadmap`, `ki trade`, `ki batch`). The controller owns admission, work identity, leases, retries, execution evidence, result integration and cleanup: machine- or cluster-resident mutable execution state in its journal. The controller invokes `ki` inside task environments; `ki` never supervises a process. Git is authoritative work state (ADR-TECHNE-001); the journal is authoritative execution state; result integration is the controller proposing commits that the receiving repository accepts by its own checks. There is no `ki work` command today (C16) and the review recommends none be added that supervises.
 
 **Q8. Are `tools-mgit` and `tools-rig` foundational members, general utilities, or candidates for another home?** Both are general utilities that are operationally foundational: `mgit` is the fan-out instrument for every choreographed estate change and reads Agora membership; `rig` is the catalogue-intent owner for a machine and defers state to Homebrew and chezmoi. Keep both as `ki-fnd` members and as separate R1 repositories. Neither is a semantic authority for anything in Knowledge Islands.
 
@@ -750,7 +750,7 @@ The recommendation's additional cost over the minimal baseline is the materialis
 
 **Q10. Is dotfiles an estate authority, an operational projection, or an external consumer?** All three, for different things, and the fundamentals record should say which. It is the authoritative sole writer of machine binding state (which servers, which hooks, which settings, which formulae) under ADR-KI-HARNESS-010 and -014. It is an external consumer of every KI payload and tool. It is never a semantic source. What each answer changes: as binding authority, `ki bootstrap` and `rig` must not write bindings (T6); as consumer, it must pin what it consumes (it does, by Brewfile and by `active.json` check in the hook binding); as non-source, nothing in it may be cited as the definition of a capability.
 
-**Q11. Which boundaries are justified by private data, credentials, visibility, or failure containment rather than code organisation?** `mcp-acquire-whatsapp` (private, personal data, 1Password); `mcp-housekeeping-openai` after merge (private, local state); each remote-API MCP (`m365`, `gsuite`, `notion-mirror`: separate credentials and separate audit scopes); `mcp-git-audit` (remote mutation capability); `mcp-ki-kb-fs` (confinement to a KB list that includes private KBs, held in dotfiles); `ki-techne-tools` (cluster and AWS credentials); `krisb/dotfiles` (secret references). Boundaries justified by code organisation or host mandate only: the four tool repositories (release cadence), `homebrew-tap`, `ki-plugins`, `ki-website`. The two knowledge bases are justified by authority kind and consumer set, not trust.
+**Q11. Which boundaries are justified by private data, credentials, visibility, or failure containment rather than code organisation?** `mcp-acquire-whatsapp` (private, personal data, 1Password); `mcp-housekeeping-openai` after merge (private, local state); each remote-API MCP (`m365`, `gsuite`, `notion-mirror`: separate credentials and separate audit scopes); `mcp-git-audit` (remote mutation capability); `mcp-ki-kb-fs` (confinement to a KB list that includes private KBs, held in dotfiles); `ki-techne-harness` (cluster and AWS credentials); `krisb/dotfiles` (secret references). Boundaries justified by code organisation or host mandate only: the four tool repositories (release cadence), `homebrew-tap`, `ki-plugins`, `ki-website`. The two knowledge bases are justified by authority kind and consumer set, not trust.
 
 **Q12. What changes when MCP, tool, provider, and agent counts double?** What scales once: shared modules, suite, materialiser, drift script, KIS-0003. What scales linearly and is acceptable: `.ki.toml` files, CI files (templated by `ki repo conform`), Agora lists, formulae. What breaks: absolute-path registration of sixteen servers in dotfiles (T3 becomes pressing); the `ki-plugins` projection at 1,600 files; CI pin drift across 40 repositories (already two versions across four files at 22). At sixteen public same-SDK MCPs the workspace question reopens (T2). The choreography model has no estate-wide change owner, and doubling makes that the binding constraint (Q15).
 

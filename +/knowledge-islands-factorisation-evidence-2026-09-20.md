@@ -30,7 +30,7 @@ The initial GitHub inventory contained 21 active Knowledge Islands organisation 
 
 `krisb/dotfiles` was also private and active. At that evidence cut, the factorisation scope was therefore 22 repositories before the OpenAI merge and 21 after it: 20 Knowledge Islands repositories plus dotfiles. The later structure recheck below supersedes those inventory counts after `tools-techne` was created.
 
-Evidence was obtained with GitHub repository metadata queries and local Git revision checks. Local and GitHub-main revisions differed for Homebrew Tap, Harness, Arcadia, Techne Principal, Techne Tools, Website, WhatsApp, Git Audit, Rig, and dotfiles. Any implementation campaign must reread the receiving repository immediately before creating or applying work.
+Evidence was obtained with GitHub repository metadata queries and local Git revision checks. Local and GitHub-main revisions differed for Homebrew Tap, Harness, Arcadia, Techne Principal, Techne Harness, Website, WhatsApp, Git Audit, Rig, and dotfiles. Any implementation campaign must reread the receiving repository immediately before creating or applying work.
 
 ## Repository structure recheck
 
@@ -43,7 +43,7 @@ The 22 currently governed repositories have exactly two formal base structures:
 - two Knowledge Bases: Arcadia Principal and Techne Principal, both with the principal and KB-feature overlays; and
 - 20 Projects, with composable Harness, MCP, tool, Website, plugin, Specifications, Homebrew, dotfiles, or no specialised structural overlay.
 
-The OpenAI merge and `tools-techne` onboarding offset one another numerically, so the post-merge target remains two Knowledge Bases and 20 Projects. `ki-techne-tools` is currently Project plus engineering with no specialised structural overlay. Its accepted local direction at `0cf5236b24ca` calls it the Techne execution harness and reserves `tools-techne` for the independently released operator CLI. That product use of “harness” is not the compatible agentic-Harness overlay.
+The OpenAI merge and `tools-techne` onboarding offset one another numerically, so the post-merge target remains two Knowledge Bases and 20 Projects. `ki-techne-harness` is currently Project plus engineering with no specialised structural overlay. Its accepted local direction at `0cf5236b24ca` calls it the Techne execution harness and reserves `tools-techne` for the independently released operator CLI. That product use of “harness” is not the compatible agentic-Harness overlay.
 
 The recheck also identified vocabulary that must not be conflated:
 
@@ -128,7 +128,7 @@ Dotfiles declares all four tap products: Git Almanac `v0.1.0`, `ki` `v0.4.0`, `m
 
 ## Configuration and projection drift
 
-Four workflows still pin `KI_VERSION` `v0.3.6`: Harness, Specifications, Git Almanac, and `tools-mgit`. Homebrew Tap, Techne Tools, and `tools-ki` use `v0.4.0`.
+Four workflows still pin `KI_VERSION` `v0.3.6`: Harness, Specifications, Git Almanac, and `tools-mgit`. Homebrew Tap, Techne Harness, and `tools-ki` use `v0.4.0`.
 
 The `ki-plugins` projection is measurably stale against local Harness revision `23dcdc953492`:
 
@@ -184,7 +184,7 @@ Before FND-1 is accepted as complete, record the final Arcadia commit containing
 After the earlier final recheck, the moving repositories settled again:
 
 - Agentic Harness was clean at `aa487a960d1a`;
-- `ki-techne-tools` was clean at `0cf5236b24ca` after accepting its execution-harness boundary review; and
+- `ki-techne-harness` was clean at `0cf5236b24ca` after accepting its execution-harness boundary review; and
 - `tools-techne` was clean at its initial commit `46be296837b6`, still with only `README.md` and no KI contract.
 
-These revisions supersede the earlier Harness and Techne Tools worktree warnings for structure planning only. Receiver-owned delivery must still re-read its own baseline immediately before implementation.
+These revisions supersede the earlier Harness and Techne Harness worktree warnings for structure planning only. Receiver-owned delivery must still re-read its own baseline immediately before implementation.

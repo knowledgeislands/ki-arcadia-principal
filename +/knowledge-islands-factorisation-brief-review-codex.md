@@ -47,7 +47,7 @@ Conceptual authority, executable ownership, source organisation, distribution, a
 
 ### Retain the wider federation
 
-Apart from the OpenAI housekeeping consolidation, no merge, split, move, or archive is sufficiently justified now. Arcadia, Techne Principal, the Harness, `tools-ki`, Techne Tools, Website, Plugins, Homebrew, the general tools, provider MCPs, and dotfiles continue to serve distinct responsibilities.
+Apart from the OpenAI housekeeping consolidation, no merge, split, move, or archive is sufficiently justified now. Arcadia, Techne Principal, the Harness, `tools-ki`, Techne Harness, Website, Plugins, Homebrew, the general tools, provider MCPs, and dotfiles continue to serve distinct responsibilities.
 
 ### Build behavioural assurance before sharing implementation
 

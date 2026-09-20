@@ -104,7 +104,7 @@ The Decision should route work as follows:
 - **Agentic Harness** owns the reusable agent-facing capabilities it publishes, together with generic MCP governance, binding semantics, token policy, and black-box conformance assets. It does not own executable MCP products or server source merely because it governs or tests them.
 - **Repository structure standards** are reusable Agentic Harness governance capabilities; each repository owns its local declarations, implementation, conformance, and accepted exceptions.
 - **`tools-ki`** owns generic repository host mechanics and the public `ki` command grammar.
-- **`ki-techne-tools`** owns the Techne execution-harness applications, controller and execution-fabric implementation, runtime packaging, deployment, and provider adapters.
+- **`ki-techne-harness`** owns the Techne execution-harness applications, controller and execution-fabric implementation, runtime packaging, deployment, and provider adapters.
 - **`tools-techne`** owns the independently released Techne operator CLI once its source and KI repository contract are established; until then it is a reserved target, not a governed authority.
 - **Each tool or MCP product repository** owns its executable source, product behaviour, provider policy, schemas, trust boundary, compatibility, tests, build identity, release artefact, and lifecycle state.
 - **KI Website** owns public editorial publication without acquiring source authority.
@@ -125,11 +125,11 @@ These categories must not substitute for one another:
 - a base structure or overlay is not authority proof;
 - a principal-KB overlay is not the source of Arcadia or Techne's authority;
 - the compatible agentic-Harness overlay does not own every product that consumes Harness governance;
-- the Techne execution harness is a product role in `ki-techne-tools`, not the compatible agentic-Harness structure;
+- the Techne execution harness is a product role in `ki-techne-harness`, not the compatible agentic-Harness structure;
 - MCP product, standalone CLI, Website, plugin, Homebrew, Specifications, and chezmoi shapes remain overlays on a Project base; and
 - `ki-engineering` and code presence are cross-cutting implementation concerns, not another base structure.
 
-The target register should cover all 22 post-OpenAI repositories: two principal Knowledge Bases; the agentic Harness; eight MCP products; five standalone CLI repositories including `tools-techne`; `ki-techne-tools`; Website; Plugins; Homebrew; Specifications; and dotfiles. `tools-techne` remains explicitly pending until its source and universal repository contract exist. No reusable execution-harness overlay should be invented for the single `ki-techne-tools` case.
+The target register should cover all 22 post-OpenAI repositories: two principal Knowledge Bases; the agentic Harness; eight MCP products; five standalone CLI repositories including `tools-techne`; `ki-techne-harness`; Website; Plugins; Homebrew; Specifications; and dotfiles. `tools-techne` remains explicitly pending until its source and universal repository contract exist. No reusable execution-harness overlay should be invented for the single `ki-techne-harness` case.
 
 The enforceable V0.x repository standard should make `repo_type = "project" | "kb"` explicit, with exactly one matching primary structure declaration. That mechanical change remains receiver-owned Harness and repository alignment work rather than Decision Record implementation detail.
 
@@ -199,7 +199,7 @@ Beyond the initial six:
 
 - nine surviving repositories already have Decision Record collections and can receive the shared record through local alignment: WhatsApp, Git Audit, Google Workspace, Claude housekeeping, KI KB filesystem, Notion mirror, Microsoft 365, Git Almanac, and Rig;
 - dotfiles also has a conforming Decision Record collection and can carry the normal projection;
-- Homebrew Tap, KI Plugins, `ki-techne-tools`, and `tools-mgit` need a local Decision Records collection before accepting a shared foreign-scope record; and
+- Homebrew Tap, KI Plugins, `ki-techne-harness`, and `tools-mgit` need a local Decision Records collection before accepting a shared foreign-scope record; and
 - the renamed OpenAI housekeeping repository inherits ChatGPT's skill declaration but needs its collection established as part of its post-merge alignment.
 
 `tools-techne` needs the universal KI repository contract, stable repository code, work adapter, source and release identity, and a Decision Records collection before accepting a projection or ALIGN-1 item.
@@ -213,7 +213,7 @@ Before implementation, review and approve:
 - the five-dimension factorisation model, two-base structure vocabulary, target 22-repository register, and direct V0.x move to explicit `repo_type = "project" | "kb"`;
 - the classification of executable MCPs as independently owned products rather than Harness capability members;
 - removal of the empty Harness MCP source shelf and rehoming of the three estate Agoras to Arcadia through receiver-owned work;
-- the proposed responsibility wording and whether `ki-techne-tools` packaging/deployment wording is at the right altitude;
+- the proposed responsibility wording and whether `ki-techne-harness` packaging/deployment wording is at the right altitude;
 - the six-copy initial receiving set;
 - present-state date handling and the absence of amendment history;
 - the Arcadia source statement and local index-gloss approach;
