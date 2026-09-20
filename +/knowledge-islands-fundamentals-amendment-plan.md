@@ -83,6 +83,16 @@ The Context should explain that one repository boundary currently carries severa
 
 It should state that conceptual authority alone does not require a separate source repository. It should also state that KI Specifications is dormant for portable contracts before overall V1, so no current work may treat a new KIP, KIS, schema, or conformance contract as a prerequisite.
 
+The final wording should organise those concerns into five independent factorisation dimensions:
+
+1. repository structure;
+2. authority and responsibility, with conceptual authority distinct from executable and source ownership;
+3. projection and distribution;
+4. runtime binding and mutable state; and
+5. repository-boundary justification.
+
+A change in one dimension must not imply a change in another.
+
 ## Proposed Decision
 
 ### Responsibility and routing
@@ -92,8 +102,10 @@ The Decision should route work as follows:
 - **Arcadia Principal** owns philosophy, the conceptual model, shared estate governance, the canonical initiative record for estate-wide work, and the estate coordination Agoras.
 - **Techne Principal** owns engineering discipline and architecture.
 - **Agentic Harness** owns the reusable agent-facing capabilities it publishes, together with generic MCP governance, binding semantics, token policy, and black-box conformance assets. It does not own executable MCP products or server source merely because it governs or tests them.
+- **Repository structure standards** are reusable Agentic Harness governance capabilities; each repository owns its local declarations, implementation, conformance, and accepted exceptions.
 - **`tools-ki`** owns generic repository host mechanics and the public `ki` command grammar.
-- **Techne Tools** owns controller and execution-fabric implementation, packaging, deployment, and provider adapters.
+- **`ki-techne-tools`** owns the Techne execution-harness applications, controller and execution-fabric implementation, runtime packaging, deployment, and provider adapters.
+- **`tools-techne`** owns the independently released Techne operator CLI once its source and KI repository contract are established; until then it is a reserved target, not a governed authority.
 - **Each tool or MCP product repository** owns its executable source, product behaviour, provider policy, schemas, trust boundary, compatibility, tests, build identity, release artefact, and lifecycle state.
 - **KI Website** owns public editorial publication without acquiring source authority.
 - **KI Plugins** owns generated runtime packaging and projection without acquiring Harness semantics.
@@ -103,6 +115,23 @@ The Decision should route work as follows:
 - **KI Specifications** has no active route before overall V1. Activation requires an explicit later decision.
 
 This routing distinguishes who explains a concept, who implements it, who distributes it, and who mutates runtime state. A repository may participate in several routes without those responsibilities collapsing into one authority.
+
+### Repository structure and estate roles
+
+The Decision should establish two mutually exclusive base structures: Project and Knowledge Base. Structural overlays are composable repository-local shapes declared by specialised `ki-repo-*` skills. Adapters are replaceable implementation, hosting, provider, runtime, or work-tracker bindings. Estate roles are concern-scoped authority and routing responsibilities established by this Decision.
+
+These categories must not substitute for one another:
+
+- a base structure or overlay is not authority proof;
+- a principal-KB overlay is not the source of Arcadia or Techne's authority;
+- the compatible agentic-Harness overlay does not own every product that consumes Harness governance;
+- the Techne execution harness is a product role in `ki-techne-tools`, not the compatible agentic-Harness structure;
+- MCP product, standalone CLI, Website, plugin, Homebrew, Specifications, and chezmoi shapes remain overlays on a Project base; and
+- `ki-engineering` and code presence are cross-cutting implementation concerns, not another base structure.
+
+The target register should cover all 22 post-OpenAI repositories: two principal Knowledge Bases; the agentic Harness; eight MCP products; five standalone CLI repositories including `tools-techne`; `ki-techne-tools`; Website; Plugins; Homebrew; Specifications; and dotfiles. `tools-techne` remains explicitly pending until its source and universal repository contract exist. No reusable execution-harness overlay should be invented for the single `ki-techne-tools` case.
+
+The enforceable V0.x repository standard should make `repo_type = "project" | "kb"` explicit, with exactly one matching primary structure declaration. That mechanical change remains receiver-owned Harness and repository alignment work rather than Decision Record implementation detail.
 
 ### Repository-boundary presumptions
 
@@ -136,6 +165,8 @@ The Decision should name Arcadia's copy as the canonical authoring source and th
 
 The Consequences should make clear that:
 
+- repository structure, estate role, projection, runtime ownership, and boundary evidence remain independently attributable;
+- every governed repository declares one base structure while structural overlays compose without granting authority;
 - work routes to an executable owner separately from conceptual authority;
 - Specifications cannot become a pre-V1 delivery dependency;
 - dotfiles and native providers retain different state ownership;
@@ -158,18 +189,20 @@ After the amendment text and six-repository receiving set are approved:
 7. Arcadia observes all six accepted revisions and verifies semantic identity fail-closed.
 8. Record any receiver blocker explicitly; do not mark the campaign complete on the receiver's behalf.
 
-Arcadia's current `ki-trades` declaration does not provide estate-wide work routes. The first campaign should therefore use the repository-local choreography already authorised by the participating repositories and record the resulting local links in the Arcadia campaign. FND-4 should decide whether a broader formal work-route declaration is needed.
+Arcadia's current `ki-trades` declaration does not provide estate-wide work routes. The first campaign should therefore use the repository-local choreography already authorised by the participating repositories and record the resulting local links in the Arcadia campaign. FND-5 should decide whether a broader formal work-route declaration is needed.
 
 ## Post-merge extension through ALIGN-1
 
-The later target is the 20 surviving Knowledge Islands repositories plus `krisb/dotfiles`. Do not install the amended projection in the retiring `mcp-housekeeping-codex` repository.
+The later target is the 21 surviving Knowledge Islands repositories plus `krisb/dotfiles`. Do not install the amended projection in the retiring `mcp-housekeeping-codex` repository.
 
 Beyond the initial six:
 
 - nine surviving repositories already have Decision Record collections and can receive the shared record through local alignment: WhatsApp, Git Audit, Google Workspace, Claude housekeeping, KI KB filesystem, Notion mirror, Microsoft 365, Git Almanac, and Rig;
 - dotfiles also has a conforming Decision Record collection and can carry the normal projection;
-- Homebrew Tap, KI Plugins, Techne Tools, and `tools-mgit` need a local Decision Records collection before accepting a shared foreign-scope record; and
+- Homebrew Tap, KI Plugins, `ki-techne-tools`, and `tools-mgit` need a local Decision Records collection before accepting a shared foreign-scope record; and
 - the renamed OpenAI housekeeping repository inherits ChatGPT's skill declaration but needs its collection established as part of its post-merge alignment.
+
+`tools-techne` needs the universal KI repository contract, stable repository code, work adapter, source and release identity, and a Decision Records collection before accepting a projection or ALIGN-1 item.
 
 KI Plugins additionally needs a valid work adapter, stable repository code, and issue ledger before any local item can be issued. Any pointer instead of a full projection is an explicit repository-contract exception; it is not inferred from missing infrastructure.
 
@@ -177,9 +210,10 @@ KI Plugins additionally needs a valid work adapter, stable repository code, and 
 
 Before implementation, review and approve:
 
+- the five-dimension factorisation model, two-base structure vocabulary, target 22-repository register, and direct V0.x move to explicit `repo_type = "project" | "kb"`;
 - the classification of executable MCPs as independently owned products rather than Harness capability members;
 - removal of the empty Harness MCP source shelf and rehoming of the three estate Agoras to Arcadia through receiver-owned work;
-- the proposed responsibility wording and whether Techne Tools' packaging/deployment wording is at the right altitude;
+- the proposed responsibility wording and whether `ki-techne-tools` packaging/deployment wording is at the right altitude;
 - the six-copy initial receiving set;
 - present-state date handling and the absence of amendment history;
 - the Arcadia source statement and local index-gloss approach;

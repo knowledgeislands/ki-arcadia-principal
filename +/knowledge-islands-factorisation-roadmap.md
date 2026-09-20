@@ -4,7 +4,7 @@ Status: consolidated coordination roadmap, not yet an adopted delivery record
 
 Prepared: 2026-09-20
 
-Updated: 2026-09-20 after routing and pre-V1 direction
+Updated: 2026-09-20 after repository-structure review
 
 ## Purpose
 
@@ -43,14 +43,14 @@ The following are inputs to the roadmap rather than open design questions:
 - Amend existing decision records in place rather than creating successor records merely to carry clarified or expanded scope.
 - Amend `GDR-KI-FUNDAMENTALS-001` in place as the estate responsibility, routing, and repository-boundary record, then distribute the coherent shared record across the estate.
 - Originate estate-wide shared initiatives in Arcadia Principal and disseminate implementation work to the owning repositories.
-- Give every surviving repository its own bounded roadmap item to reconcile with the shared fundamentals record, applicable Agentic Harness skills, current repository standards, and relevant standards emerging from this factorisation work.
+- Give every surviving repository its own bounded roadmap item to reconcile the shared fundamentals record, its base structure and structural overlays, applicable Agentic Harness skills, current repository standards, and relevant standards emerging from this factorisation work.
 - Test common MCP behaviour before extracting and rolling out shared implementation.
 - Retain every other repository boundary unless measured evidence justifies a later change.
 - Treat the V0.x estate as pre-live: establish the intended target directly without legacy compatibility, migration, or rollback machinery.
 
 ## Target estate
 
-After the OpenAI merge, the review estate contains 21 repositories: 20 in the Knowledge Islands organisation plus external `krisb/dotfiles`.
+After the OpenAI merge, the current target estate contains 22 repositories: 21 in the Knowledge Islands organisation plus external `krisb/dotfiles`. This count includes the newly created `tools-techne`; it currently contains only a README and is not yet a governed KI repository.
 
 The target remains federated:
 
@@ -58,13 +58,81 @@ The target remains federated:
 - Techne Principal owns engineering discipline and architecture.
 - The Agentic Harness owns the reusable agent-facing capabilities it publishes, together with generic MCP governance, binding semantics, and black-box conformance. It does not own MCP products or server source merely because it governs or tests them.
 - `tools-ki` owns generic host mechanics and the public `ki` command surface.
-- Techne Tools owns controller and execution-fabric implementation.
+- `ki-techne-tools` owns the Techne execution-harness applications, controller and execution-fabric implementation.
+- `tools-techne` is the intended independently released operator CLI. It gains that responsibility only when its source, release contract and KI repository governance are established.
 - Each product repository owns its executable source, product behaviour, provider policy, schemas, trust boundary, build identity, release, and lifecycle state.
 - Website, Plugins, Homebrew, and installed payloads remain attributable publication, projection, distribution, or deployment surfaces.
 - Dotfiles owns personal machine binding and registration state; native providers own their own mutable state.
 - Specifications remains reserved for possible post-V1 portable contracts and receives no current factorisation work beyond a faithful shared fundamentals projection.
 
 These responsibilities and their routing rules belong in `GDR-KI-FUNDAMENTALS-001`, not only in this roadmap. The roadmap explains how to enact the target; the shared fundamentals record tells every repository where a future question or initiative belongs.
+
+## Factorisation model
+
+Factorisation makes five independent decisions. A change in one dimension does not imply a change in another.
+
+### Repository structure
+
+Structure describes how a repository is organised and governed locally. The target has two mutually exclusive base structures:
+
+- **Project** — a non-Knowledge-Base repository with `[skills.ki-repo-project]`;
+- **Knowledge Base** — a repository with `repo_type = "kb"`, `[skills.ki-repo-kb]`, and the KI knowledge zones.
+
+The current contract calls the ordinary default both `repository` and Project and permits its `repo_type` to be omitted. FND-3 should remove this V0.x ambiguity by making `repo_type = "project" | "kb"` explicit and keeping exactly one corresponding primary structure declaration.
+
+Structural overlays are composable declared deltas, not additional base types. Current overlays cover principal Knowledge Bases, the compatible agentic Harness, MCP products, standalone CLI tools, the Specifications container, plugin projection, Homebrew tap, website implementation and hosting, chezmoi source, and Knowledge Base features. `ki-engineering` is a cross-cutting implementation standard; work adapters, hosting adapters, and provider adapters are replaceable bindings rather than repository types.
+
+Structure does not establish authority. In particular, the principal-KB overlay does not prove conceptual authority, the agentic-Harness overlay does not own every governed product, and a Project containing code is not thereby a new repository class.
+
+### Authority and responsibility
+
+The shared fundamentals record should name the canonical decision or write owner for each concern. Conceptual authority, executable ownership, source maintenance, publication, distribution, environment binding, and native mutable state remain separable. A repository can own one concern while carrying a projection of another repository's material.
+
+### Projection and distribution
+
+Every important source-to-target relationship should identify its source, target, transformation, fidelity, revision model, editability, provenance, reproduction or drift check, and owner. Projection does not transfer canonical authority; distribution owns transport and packaging rather than product semantics.
+
+Shared Decision Record copies, installed Harness payloads, generated plugin contents, Website excerpts, Homebrew formulae, and any controlled MCP copies are therefore different relationships even when each moves material between repositories.
+
+### Runtime binding and mutable state
+
+Source, build identity, distribution, installation, declarative machine registration, credential reference, running provider state, restart, and diagnostics should be attributable separately. Product repositories own product source and build identity; distribution repositories own transport metadata; dotfiles owns personal machine declarations and bindings; native providers own mutable process or service state. One declared writer should exist for every mutable target.
+
+### Repository-boundary justification
+
+Use three strong, testable presumptions:
+
+- **R1 — independent acceptance or release:** content is accepted, versioned, released, or consumed as its own unit.
+- **R2 — distinct trust boundary:** visibility, licence, credentials, personal data, security, or failure containment differ materially.
+- **R3 — host mandate:** a consuming or distribution platform requires a distinct repository, root layout, or deployment location.
+
+These are not an exhaustive mechanical rule. Independent governance, audience, change coupling, cognitive scope, or historical continuity may justify an explicit exception. Absence of current R1, R2, or R3 evidence creates a review flag rather than an automatic merge. Authority alone does not create a repository boundary, and a host-mandated projection is not automatically a new authority.
+
+### Cross-dimensional invariants
+
+- Structure does not grant authority.
+- Authority does not by itself require a separate repository.
+- Projection or distribution does not transfer source or product ownership.
+- Runtime binding does not transfer product semantics.
+- Agora membership, a dependency, or a work route does not transfer authority, priority, implementation, release, or acceptance.
+- R1, R2, and R3 justify a boundary; they do not select its owner.
+- Rename, source movement, projection, installation, binding, and runtime activation are separate changes.
+- Dormant or reserved authority is not active authority.
+
+## Target repository structures
+
+The register below applies the structure vocabulary to the post-OpenAI target. Estate role remains a routing description, not mechanical proof supplied by a structural overlay.
+
+- **Principal Knowledge Bases — `ki-arcadia-principal`, `ki-techne-principal`.** Base: Knowledge Base. Overlays: principal, Streams, Activities, Live Artifacts, and local governance collections. Arcadia and Techne authority comes from `GDR-KI-FUNDAMENTALS-001`, not from the principal overlay.
+- **Agentic capability Harness — `ki-agentic-harness`.** Base: Project. Overlay: compatible agentic Harness, with target source shelves for skills, subagents, evals, and hooks. It owns reusable capability semantics and MCP governance or conformance, not executable MCP products.
+- **MCP products — eight surviving `mcp-*` repositories.** Base: Project. Overlay: MCP plus engineering. Each owns its executable, provider policy, trust boundary, build, and release while consuming Harness governance. `mcp-housekeeping-openai` replaces the ChatGPT and Codex pair.
+- **Standalone CLI products — `tools-ki`, `tools-mgit`, `tools-rig`, `tools-git-almanac`, and target `tools-techne`.** Base: Project. Overlay: standalone CLI tool; engineering applies where its toolchain fits. `tools-techne` must first establish source and the universal KI repository contract.
+- **Techne execution harness — `ki-techne-tools`.** Base: Project with engineering. Its “harness” is an execution-system product role, not the compatible agentic-Harness overlay. No new generic execution-harness structural overlay is justified while this shape occurs only once.
+- **Website — `ki-website`.** Base: Project. Overlays: Website, content implementation, and Cloudflare hosting. It owns public editorial publication and deployment without acquiring authority over attributed source material.
+- **Plugin projection — `ki-plugins`.** Base: Project. Overlay: plugin projection. It owns marketplace packaging and generated layout, not projected Harness semantics.
+- **Command-line distribution — `homebrew-tap`.** Base: Project. Overlay: Homebrew tap. It owns formula acceptance and transport metadata, not tool behaviour.
+- **Specifications scaffold — `ki-specifications`.** Base: Project. Overlay: Specifications container. It remains dormant before overall V1; its structure does not activate estate-wide normative authority.
+- **Personal environment source — `krisb/dotfiles`.** Base: Project. Overlay: chezmoi source, with binding adapters. It owns personal environment declarations and runtime registrations, not product behaviour or native provider state.
 
 ## Delivery principles
 
@@ -74,15 +142,15 @@ Update a current decision record in place when the change clarifies, completes, 
 
 Do not create a successor merely to avoid editing a shared record. Create a new decision only when a genuinely new decision has no honest existing home, and only after explicit approval.
 
-### Repository boundaries
+### Boundary enactment
 
-Use Fable's three boundary reasons as strong, testable presumptions:
+Apply the factorisation model's boundary presumptions when a roadmap item creates, merges, or retires a repository:
 
-- **R1 - independent acceptance or release:** the content is accepted, versioned, or consumed as its own unit.
-- **R2 - distinct trust boundary:** visibility, licence, credentials, personal data, or failure containment differ materially.
-- **R3 - host mandate:** a consuming platform requires a distinct repository, root layout, or deployment location.
+- State the R1, R2, and R3 evidence or the explicit secondary exception.
+- State which other factorisation dimensions change and which remain unchanged.
+- Re-run the target inventory and receiving set after the boundary change.
 
-These are not an exhaustive mechanical rule. Independent governance, audience, change coupling, cognitive scope, and historical continuity may justify an explicit exception. Conceptual authority alone does not automatically require a separate source repository.
+This delivery rule applies the definitions above without duplicating or weakening them.
 
 ### Cross-repository campaigns
 
@@ -102,16 +170,17 @@ The intended order is:
 
 1. Re-verify the point-in-time evidence.
 2. Amend and distribute the shared fundamentals record.
-3. Repair confirmed documentation and configuration drift.
-4. Record the difficult ownership seams and Arcadia-led dissemination mechanism.
-5. Decide the repository-local MCP access and audit policy.
-6. Build and run the behavioural MCP conformance suite.
-7. Merge the ChatGPT and Codex MCPs.
-8. Pilot the narrow shared MCP kit.
-9. Roll the kit out incrementally if the pilot succeeds.
-10. Make projections, deployments, and releases observable.
-11. Complete a repository-local alignment item in every surviving repository.
-12. Measure the result and revisit deferred structural choices at explicit gates.
+3. Standardise repository base structures, overlays, adapters, and estate-role vocabulary.
+4. Repair confirmed documentation and configuration drift.
+5. Record the difficult ownership seams and Arcadia-led dissemination mechanism.
+6. Decide the repository-local MCP access and audit policy.
+7. Build and run the behavioural MCP conformance suite.
+8. Merge the ChatGPT and Codex MCPs.
+9. Pilot the narrow shared MCP kit.
+10. Roll the kit out incrementally if the pilot succeeds.
+11. Make projections, deployments, and releases observable.
+12. Complete a repository-local alignment item in every surviving repository.
+13. Measure the result and revisit deferred structural choices at explicit gates.
 
 ## Phase 1 - Establish the estate contract
 
@@ -127,13 +196,16 @@ The intended order is:
 
 **Completion gate.** Every fact used to justify FND-2, MCP-1, or OAI-1 is either re-confirmed or explicitly corrected. Unverified claims are labelled as assumptions rather than silently retained.
 
+**Inventory correction.** The original evidence pass covered 22 repositories. The structure recheck added newly created `tools-techne`, making the live inventory 23 before the OpenAI merge and 22 after it. `tools-techne` is inventory evidence, not yet a governed receiver.
+
 ### FND-2 - Amend and distribute `GDR-KI-FUNDAMENTALS-001`
 
 **What it is.** Amend the existing shared fundamentals record in place. Keep its identifier and current status, advance its date to the delivery date, and rewrite it as a self-contained present-state decision without an amendment history. Arcadia remains the canonical source.
 
 The amendment should add or clarify:
 
-- the five distinct factorisation decisions: conceptual or normative authority, executable ownership, source organisation, distribution, and runtime security;
+- the five distinct factorisation dimensions: repository structure; authority and responsibility, including conceptual versus executable ownership; projection and distribution; runtime binding and mutable state; and repository-boundary justification;
+- the two base structures, composable structural overlays, replaceable adapters, and estate roles as separate vocabularies;
 - executable ownership as a class distinct from conceptual authority;
 - product repositories as owners of product behaviour, compatibility, and lifecycle state;
 - executable MCP products as independently governed products rather than Harness capability members, while the Harness retains reusable MCP governance, binding, and conformance capabilities;
@@ -152,8 +224,10 @@ The responsibility and routing map should answer at least:
 - philosophy, conceptual model, shared governance, or estate-wide initiative -> Arcadia Principal;
 - engineering discipline or architecture -> Techne Principal;
 - reusable agent capability semantics and generic MCP governance or conformance -> Agentic Harness;
+- universal repository contract and reusable structural-overlay semantics -> Agentic Harness, with each repository owning its declaration and conformance;
 - generic CLI hosting, repository mechanics, or public `ki` grammar -> `tools-ki`;
-- controller or execution-fabric implementation -> Techne Tools;
+- Techne execution-harness applications, controller, and execution-fabric implementation -> `ki-techne-tools`;
+- independently released Techne operator CLI -> `tools-techne`, once its source and repository contract are established;
 - MCP executable source, product behaviour, provider policy, schema, trust boundary, build, or release -> the product repository;
 - public editorial publication -> Website;
 - generated runtime packaging -> Plugins or the named projection repository;
@@ -164,7 +238,7 @@ The responsibility and routing map should answer at least:
 
 **Why it is justified.** These rules apply across the whole estate, not only the six current primary authorities. Housing responsibilities, routing, and boundary tests in one shared fundamentals record gives every repository the same answer to "where does this belong?" and gives Arcadia a coherent basis for disseminating shared work. Amending in place avoids competing old and new artefacts, preserves the record's history, and matches the maintainer's preference for updating existing decisions.
 
-**Owner and scope.** Arcadia authors the canonical amendment. The six existing projections are updated in one coordinated pass. Broader projection is deferred to post-merge ALIGN-1, when each of the 20 surviving Knowledge Islands organisation repositories and `krisb/dotfiles` can choose the governed full copy or recorded canonical pointer appropriate to its repository contract. Do not project the amended record into the retiring `mcp-housekeeping-codex` repository.
+**Owner and scope.** Arcadia authors the canonical amendment. The six existing projections are updated in one coordinated pass. Broader projection is deferred to post-merge ALIGN-1, when each of the 21 surviving Knowledge Islands organisation repositories and `krisb/dotfiles` can choose the governed full copy or recorded canonical pointer appropriate to its repository contract. Do not project the amended record into the retiring `mcp-housekeeping-codex` repository.
 
 **Deliverables.** Update the canonical record and its five existing projections, identify Arcadia as the authoring source in shared prose and local indexes, and provide the established semantic-equivalence check for the six-copy set. Do not introduce a repository-local `canonical` frontmatter field: the shared-record contract fails closed on unknown metadata. ALIGN-1 owns any later extension beyond the existing six repositories.
 
@@ -172,7 +246,23 @@ The responsibility and routing map should answer at least:
 
 **Dependency.** FND-1.
 
-### FND-3 - Repair confirmed documentary and configuration drift
+### FND-3 - Standardise repository structure vocabulary
+
+**What it is.** Make the repository model mechanically explicit in the Agentic Harness standards. Retain exactly two base structures, Project and Knowledge Base; treat specialised `ki-repo-*` skills as composable structural overlays; reserve adapter for replaceable implementation, hosting, provider, runtime, or work-tracker bindings; and reserve estate role for authority and routing recorded in the shared fundamentals record.
+
+While the estate remains V0.x, replace the implicit ordinary `repository` default with explicit `repo_type = "project" | "kb"` and one matching primary declaration. Update the current repository standard, configuration standard, rubric, examples, and project or KB structural skills in place. Do not create compatibility aliases or a third generic “code”, “product”, “principal”, or “harness” base type.
+
+**Why it is justified.** The current sources alternate between `repository` and Project, while “principal”, “harness”, “tools”, “projection”, and “code repository” are also used as authority, product, distribution, or implementation descriptions. That ambiguity can make a local directory shape look like authority. The live split between the compatible agentic Harness, the singular Techne execution harness, `ki-techne-tools`, and the new standalone `tools-techne` makes the distinction operational rather than editorial.
+
+**Owner and scope.** Arcadia owns the estate vocabulary and target register through FND-2. The Agentic Harness owns the enforceable repository standards. Each repository owns its later declaration change through ALIGN-1. `tools-techne` first requires an onboarding item that establishes its source, stable repository code, work adapter, universal repository contract, and intended standalone-CLI overlay.
+
+**Deliverables.** Amended Harness standards and current decisions where they already own structure composition; explicit base declarations; updated coverage and cardinality tests; a checked estate structure register; and clear terminology distinguishing agentic capability Harness from Techne execution harness.
+
+**Completion gate.** Every governed repository declares exactly one base structure, detected overlays agree with declared skills, no structural overlay is cited as authority proof, `tools-techne` is either governed and classified or explicitly pending, and the register accounts for all 22 post-merge repositories.
+
+**Dependencies.** FND-2 supplies estate roles and routing. It may proceed alongside drift repair after the FND-1 inventory correction.
+
+### FND-4 - Repair confirmed documentary and configuration drift
 
 **Confirmed during FND-1.** The repair set now includes `ki-plugins` lacking a declared work adapter, `repo_code`, and roadmap ledger; Techne Principal's `OPS` ledger high-water mark remaining at 008 while `TECHNE-OPS-009` exists; dotfiles roadmap-shape failures in `DOTFILES-UE-026` and `DOTFILES-UE-028`; and the Harness Decision Records audit reporting a non-canonical filename for `ADR-KI-HARNESS-SKILLS-009`. These findings remain repository-owned and do not authorise correction inside FND-1.
 
@@ -199,7 +289,7 @@ Candidate corrections include:
 
 **Dependency.** FND-1. This may run alongside FND-2 after the evidence report is stable.
 
-### FND-4 - Record ownership seams and Arcadia-led dissemination
+### FND-5 - Record ownership seams and Arcadia-led dissemination
 
 Arcadia's current `ki-trades` declaration exports knowledge only, and only to Harness, Website, Specifications, and Techne Principal. The dissemination design must therefore distinguish a declared work-trade route from a direct repository-local handoff under the existing cross-repository choreography; it must not present the current knowledge routes as an estate-wide work transport.
 
@@ -208,14 +298,14 @@ This phase also removes the empty MCP source shelf from the Harness model, amend
 **What it is.** Amend the current local governance documents that describe the three difficult interfaces:
 
 - Harness semantics versus `tools-ki` host mechanics;
-- repository work state versus Techne Tools controller execution state; and
+- repository work state versus `ki-techne-tools` controller execution state; and
 - Rig catalogue intent versus dotfiles bindings, `ki` activation, application bootstrap, infrastructure deployment, and provider state.
 
 Also define the Arcadia initiative pattern for multi-repository changes: shared outcome, exact receiving set, route to each owner, per-repository state, evidence, and finish/defer/abandon disposition.
 
 **Why it is justified.** Separate repositories do not make these interfaces independent. Harness rubric modules execute inside `ki`; controller work eventually integrates into repository-owned Git state; and several tools can plausibly claim to "bootstrap" a machine. Without explicit write ownership, the estate can create competing state even when its repository layout looks tidy. The reviews also found several partially completed estate initiatives with no mechanism proving completion.
 
-**Owner and scope.** Arcadia owns the shared initiative and routing record. Harness and `tools-ki` jointly evidence the first seam; Techne Principal, Techne Tools, and `tools-ki` the second; Rig and dotfiles the third. Update suitable current records in place. Create a new decision only if no existing record can honestly carry it and the maintainer approves it.
+**Owner and scope.** Arcadia owns the shared initiative and routing record. Harness and `tools-ki` jointly evidence the first seam; Techne Principal, `ki-techne-tools`, and `tools-ki` the second; Rig and dotfiles the third. Update suitable current records in place. Create a new decision only if no existing record can honestly carry it and the maintainer approves it.
 
 **Deliverables.** Ownership statements, compatibility or state diagrams where useful, and a reusable Arcadia-to-repository dissemination checklist referenced by FND-2.
 
@@ -248,7 +338,7 @@ The policy must define:
 
 **Completion gate.** Every testable rule has an unambiguous expected result, provider-specific variations are named, and no rule depends on an unpublished estate-wide specification.
 
-**Dependencies.** FND-2 and FND-4.
+**Dependencies.** FND-2 and FND-5.
 
 ### MCP-2 - Build the black-box conformance suite
 
@@ -325,7 +415,7 @@ The product contract is:
 
 **Why it is justified.** The current estate has one conceptual security surface implemented nine times, but behavioural conformance may remove the risk without creating another source owner. This evidence gate avoids treating shared implementation code as a Harness capability or creating a new repository merely because files look similar. If extraction is justified, one reviewed source can reduce semantic edits while provider policy remains local.
 
-**Owner and scope.** The Agentic Harness owns policy, fixtures, and the black-box conformance suite, not the shared implementation source. Arcadia coordinates the ownership decision. Any extracted source receives an explicit owner justified by R1 and R2; it does not default to Harness, `tools-ki`, or Techne Tools. Each MCP retains product ownership and acceptance. This creates no pre-V1 portable specification.
+**Owner and scope.** The Agentic Harness owns policy, fixtures, and the black-box conformance suite, not the shared implementation source. Arcadia coordinates the ownership decision. Any extracted source receives an explicit owner justified by R1 and R2; it does not default to Harness, `tools-ki`, or `ki-techne-tools`. Each MCP retains product ownership and acceptance. This creates no pre-V1 portable specification.
 
 **Deliverables.** A recorded extract-or-retain decision. If extraction is justified: canonical modules, an explicit source owner, a manifest containing source revision and hashes, a configuration interface, unit tests, a provenance header, and sync and verification commands for the local pilot.
 
@@ -357,7 +447,7 @@ The product contract is:
 
 **Deliverables.** An in-place update to the relevant existing ownership records, plus either a retained source-local mechanism or a narrowly generic `ki` operation.
 
-**Completion gate.** The chosen owner follows the Harness/CLI seam from FND-4, supports offline and pinned operation, and does not introduce a public registry or hidden cross-repository runtime dependency.
+**Completion gate.** The chosen owner follows the Harness/CLI seam from FND-5, supports offline and pinned operation, and does not introduce a public registry or hidden cross-repository runtime dependency.
 
 **Dependency.** MCP-5.
 
@@ -405,7 +495,7 @@ For each relationship record source, transformation, revision, editability, rege
 
 **Completion gate.** Every registered MCP and installed tool can answer "what is running, from which source, and with which configuration?"
 
-**Dependencies.** FND-4. Run after OAI-1 so the inventory reflects the combined registration.
+**Dependencies.** FND-5. Run after OAI-1 so the inventory reflects the combined registration.
 
 ### DIST-1 - Verify immutable tool distribution
 
@@ -419,7 +509,7 @@ For each relationship record source, transformation, revision, editability, rege
 
 **Completion gate.** Each formula resolves to a verifiable immutable input and installs the intended current tool.
 
-**Dependency.** FND-4. This work is independent of the MCP kit.
+**Dependency.** FND-5. This work is independent of the MCP kit.
 
 ## Phase 6 - Consolidate every repository with the resulting standards
 
@@ -433,6 +523,7 @@ Each local item should assess and, where applicable, conform:
 
 - the repository's declared responsibility and incoming or outgoing routes under `GDR-KI-FUNDAMENTALS-001`;
 - its `.ki.toml` or `.ki-config.toml` skill declarations and selected work adapter;
+- its explicit Project or Knowledge Base declaration, detected structural overlays, replaceable adapters, and estate role without treating one as proof of another;
 - the current versions of the applicable Agentic Harness repository, authoring, engineering, Git, decision, trade, and domain-specific skills;
 - README and decision-record descriptions of authority, product behaviour, projections, distribution, and runtime state;
 - the shared fundamentals projection and its canonical-source marker;
@@ -447,13 +538,13 @@ The item is an alignment review, not a demand that every repository adopt every 
 
 **Owner and scope.** Arcadia owns the shared alignment initiative, standard checklist, receiving set, and completion view. The Agentic Harness owns the skills and repository standards being applied. Each receiving repository owns its local record, applicability decisions, changes, verification, and acceptance. `tools-ki` may execute generic audits and conformance but does not decide the repository's responsibility.
 
-**Receiving set.** Issue the item to every surviving repository after OAI-1: the 20 Knowledge Islands organisation repositories plus `krisb/dotfiles`. Do not create an item for the retired `mcp-housekeeping-codex`; its relevant obligations move into `mcp-housekeeping-openai`.
+**Receiving set.** Issue the item to every surviving repository after OAI-1: the 21 Knowledge Islands organisation repositories plus `krisb/dotfiles`. Do not create an item for the retired `mcp-housekeeping-codex`; its relevant obligations move into `mcp-housekeeping-openai`. `tools-techne` receives onboarding and alignment as one ordered local unit because it does not yet have a work adapter.
 
 **Deliverables.** One local roadmap or configured-adapter record per repository, a completed applicability checklist, exact changes or justified no-change findings, verification evidence, and an Arcadia roll-up showing every repository's disposition.
 
 **Completion gate.** Every surviving repository is recorded as aligned, aligned with explicit exceptions, or blocked by a named dependency. No repository is silently omitted, no central campaign marks a repository complete on its behalf, and the Arcadia roll-up matches the local records.
 
-**Dependencies.** FND-2 defines the responsibility and routing baseline. Complete each local item only after the standards applicable to that repository have stabilised; MCP repositories therefore follow MCP-7, projection repositories follow PROJ-1, active bindings follow OPS-1, and tool distribution repositories follow DIST-1.
+**Dependencies.** FND-2 defines the responsibility and routing baseline; FND-3 defines the structural vocabulary and enforceable declarations. Complete each local item only after the standards applicable to that repository have stabilised; MCP repositories therefore follow MCP-7, projection repositories follow PROJ-1, active bindings follow OPS-1, and tool distribution repositories follow DIST-1.
 
 ## Phase 7 - Measure and reconsider
 
@@ -504,19 +595,21 @@ Track:
 
 The roadmap's current disposition is:
 
-- Keep Arcadia Principal, Techne Principal, Agentic Harness, `tools-ki`, Specifications, Website, Techne Tools, Plugins, Homebrew tap, `tools-mgit`, `tools-rig`, and Git Almanac.
+- Keep Arcadia Principal, Techne Principal, Agentic Harness, `tools-ki`, Specifications, Website, `ki-techne-tools`, Plugins, Homebrew tap, `tools-mgit`, `tools-rig`, and Git Almanac.
+- Retain newly created `tools-techne` as the intended standalone Techne operator CLI repository, but do not call it governed or operational until its source and KI repository contract are established.
 - Keep `mcp-m365`, `mcp-gsuite`, `mcp-git-audit`, `mcp-ki-kb-fs`, `mcp-ki-kb-notion-mirror`, `mcp-acquire-whatsapp`, and `mcp-housekeeping-claude` as separate products.
 - Rename `mcp-housekeeping-chatgpt` to `mcp-housekeeping-openai` and merge `mcp-housekeeping-codex` into it.
 - Retire `mcp-housekeeping-codex` after its source has been absorbed into `mcp-housekeeping-openai`; no compatibility redirect is required before V1.
 - Keep `krisb/dotfiles` external, with explicit ownership of personal environment bindings.
-- Archive, split, or move no other repository under the present evidence.
+- Archive, split, or move no other repository under the present evidence. Do not invent a generic execution-harness overlay solely for `ki-techne-tools`; add one only if reusable structure recurs.
 
 ## Out of scope before overall V1
 
 - New estate-wide KIPs, KIS documents, schemas, or portable specifications.
 - Legacy compatibility, state migration, rollback plans, or dual-running old and new repository structures before V1.
 - Publishing shared packages to a public registry.
-- Treating an executable MCP product as a Harness capability member, or moving MCP product source into the Harness or Techne Tools.
+- Treating an executable MCP product as a Harness capability member, or moving MCP product source into the Harness or `ki-techne-tools`.
+- Treating principal authority, product ownership, publication, distribution, runtime binding, or the word “harness” as a third base repository structure.
 - Treating a repository, worktree, or visibility setting as runtime security isolation.
 - Replacing every existing decision record with a successor solely because the estate vocabulary changed.
 - Making `tools-ki` the controller or owner of product-specific MCP behaviour.

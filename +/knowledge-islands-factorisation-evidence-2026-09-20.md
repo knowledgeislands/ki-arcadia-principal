@@ -22,15 +22,38 @@ These are not failures in themselves. They mean each result below names its evid
 
 ## Estate inventory and visibility
 
-The GitHub inventory contains 21 active Knowledge Islands organisation repositories. Eighteen are public and three are private. The private repositories are:
+The initial GitHub inventory contained 21 active Knowledge Islands organisation repositories. Eighteen were public and three were private. The private repositories were:
 
 - `mcp-acquire-whatsapp`;
 - `mcp-housekeeping-chatgpt`; and
 - `mcp-housekeeping-codex`.
 
-`krisb/dotfiles` is also private and active. The factorisation scope is therefore 22 repositories before the OpenAI merge and 21 after it: 20 Knowledge Islands repositories plus dotfiles.
+`krisb/dotfiles` was also private and active. At that evidence cut, the factorisation scope was therefore 22 repositories before the OpenAI merge and 21 after it: 20 Knowledge Islands repositories plus dotfiles. The later structure recheck below supersedes those inventory counts after `tools-techne` was created.
 
 Evidence was obtained with GitHub repository metadata queries and local Git revision checks. Local and GitHub-main revisions differed for Homebrew Tap, Harness, Arcadia, Techne Principal, Techne Tools, Website, WhatsApp, Git Audit, Rig, and dotfiles. Any implementation campaign must reread the receiving repository immediately before creating or applying work.
+
+## Repository structure recheck
+
+The initial evidence pass covered 22 governed repositories: 21 in the Knowledge Islands organisation plus `krisb/dotfiles`. A new `knowledgeislands/tools-techne` repository then appeared at commit `46be296837b6`; it contains only `README.md`, has no `.ki.toml`, and is not yet a governed KI repository.
+
+The live physical inventory is therefore 23 repositories before the OpenAI merge. The post-merge target is 22: 21 in the Knowledge Islands organisation plus dotfiles. The new repository belongs in the inventory and receiver planning, but no current evidence supports calling it operational or assigning authority before its source and repository contract exist.
+
+The 22 currently governed repositories have exactly two formal base structures:
+
+- two Knowledge Bases: Arcadia Principal and Techne Principal, both with the principal and KB-feature overlays; and
+- 20 Projects, with composable Harness, MCP, tool, Website, plugin, Specifications, Homebrew, dotfiles, or no specialised structural overlay.
+
+The OpenAI merge and `tools-techne` onboarding offset one another numerically, so the post-merge target remains two Knowledge Bases and 20 Projects. `ki-techne-tools` is currently Project plus engineering with no specialised structural overlay. Its accepted local direction at `0cf5236b24ca` calls it the Techne execution harness and reserves `tools-techne` for the independently released operator CLI. That product use of “harness” is not the compatible agentic-Harness overlay.
+
+The recheck also identified vocabulary that must not be conflated:
+
+- base structure is Project or Knowledge Base;
+- a structural overlay is a composable `ki-repo-*` shape;
+- an adapter is a replaceable implementation, hosting, provider, runtime, or work-tracker binding;
+- an estate role is authority and routing recorded in the shared fundamentals record; and
+- `ki-engineering` is a cross-cutting implementation standard, not a repository type.
+
+The current standard calls the ordinary base both `repository` and Project and permits its `repo_type` to be omitted. Because the estate is V0.x, the roadmap can directly target explicit `repo_type = "project" | "kb"` with one matching primary declaration. This is a proposed standards change, not a claim about present conformance.
 
 ## Shared fundamentals projections
 
@@ -120,7 +143,7 @@ No projection-drift CI was found. The Plugins README also cites `ADR-KI-HARNESS-
 
 ## Work-routing readiness
 
-Twenty-one of the 22 current repositories have a resolving work adapter. `ki-plugins` is the only exception: it has no `[skills.ki-work]`, no `repo_code`, no issue ledger, and no usable roadmap destination.
+Twenty-one of the 23 current physical repositories resolve a work adapter. `ki-plugins` is the governed exception: it has no `[skills.ki-work]`, no `repo_code`, no issue ledger, and no usable roadmap destination. New `tools-techne` has not yet established the universal KI repository contract or a work adapter, so it is an onboarding target rather than a governed exception.
 
 Dotfiles has a usable roadmap adapter, but its audit reports three pre-existing shape failures across `DOTFILES-UE-026` and `DOTFILES-UE-028`. Techne Principal's ledger records `OPS` high-water mark 008 even though `TECHNE-OPS-009` exists. The Harness Decision Records audit reports a non-canonical filename for `ADR-KI-HARNESS-SKILLS-009`.
 
@@ -155,3 +178,13 @@ Techne Principal was observed clean at `4d276893b0f5` during the final planning 
 The facts needed to plan FND-2 and OAI-1 are confirmed or corrected. MCP-1 has enough evidence to define its policy boundary, but WhatsApp remains explicitly unverified and live-process state remains unavailable. Neither gap should be converted into an assumption.
 
 Before FND-1 is accepted as complete, record the final Arcadia commit containing this appendix. Rerun the WhatsApp product suite only after its owner settles the current worktree; that later MCP baseline is a prerequisite for MCP-3, not for the FND-2 responsibility amendment.
+
+### Repository-structure recheck
+
+After the earlier final recheck, the moving repositories settled again:
+
+- Agentic Harness was clean at `aa487a960d1a`;
+- `ki-techne-tools` was clean at `0cf5236b24ca` after accepting its execution-harness boundary review; and
+- `tools-techne` was clean at its initial commit `46be296837b6`, still with only `README.md` and no KI contract.
+
+These revisions supersede the earlier Harness and Techne Tools worktree warnings for structure planning only. Receiver-owned delivery must still re-read its own baseline immediately before implementation.
