@@ -19,7 +19,7 @@ The Harbour defined by SDR-KI-ARCADIA-002 needs a common ingress model that pres
 
 ## Decision
 
-Knowledge Islands adopts provider-neutral acquisition: **discover → acquire → stage → harvest → durable knowledge → archive/delete source**. `ki space acquire <provider> import` is the repository-context operation that stages material in the receiving island's `+` Harbour and maintains incremental checkpoint state.
+Knowledge Islands adopts provider-neutral acquisition: **discover → acquire → stage → harvest → durable knowledge → archive/delete source**. `ki acquire import --adapter <provider>` is the repository-context operation that stages material in the receiving island's `+` Harbour and maintains incremental checkpoint state.
 
 Every provider adapter must faithfully preserve available original content, source identity, timestamps, media and attachments as byte-preserved assets, provenance, and declared omissions. It must distinguish content-minimised discovery and checkpoint data from faithful source reads. MCPs, APIs, local parsers, and export importers are provider mechanics, not the acquisition architecture.
 
