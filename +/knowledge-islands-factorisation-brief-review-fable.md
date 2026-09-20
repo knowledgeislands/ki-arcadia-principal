@@ -791,3 +791,82 @@ A third, smaller question is implied by the evidence but not asked: what is the 
 | harness `.ki.toml` Agora lists, dotfiles `mcp-servers.yaml` and `mgit` data | Amend | Merge and rename |
 
 † The superseding record should also state the estate-wide change ownership answer from Appendix A, Q15, and name Arcadia's copy as canonical for shared records (C14).
+
+---
+
+## Addendum: maintainer direction and reviewer response, 2026-09-20
+
+**Status of this addendum.** Sections 1 to 11 and Appendices A and B above are the independent Fable 5.1 pass of 2026-09-19 and are preserved exactly as originally written, in line with the brief's instruction to preserve independent reviews that predate the maintainer direction. This addendum is a later, dependent record: it was written on 2026-09-20 by Claude Opus 5 (`claude-opus-5[1m]`) after reading the maintainer direction added to the brief, the GPT-6 Astra review, and fresh evidence from the working checkouts. It is not part of the independent pass and must not be read as one. Where it conflicts with a section above, this addendum is the later position and wins.
+
+### A1. Maintainer direction received
+
+Four constraints were confirmed by the maintainer on 2026-09-20. The first three are recorded in the brief under "Maintainer direction after the initial reviews"; the fourth was given directly.
+
+1. Consolidate `mcp-housekeeping-chatgpt` and `mcp-housekeeping-codex` into one OpenAI-family MCP able to serve ChatGPT and Codex on the same machine, with separate adapters. Preferred name `mcp-housekeeping-openai`. Keep the combined repository private during the merge; review visibility separately afterwards.
+2. Create no estate-wide KIPs, KIS documents, schemas, or comparable portable specifications before Knowledge Islands reaches overall V1. Use repository-local decisions, contracts, tests, and compatibility evidence instead. `ki-specifications` is not an active delivery target for this work.
+3. Preserve the independent reviews as originally written where they predate this direction.
+4. `GDR-KI-FUNDAMENTALS-001` must be updated in place and must not be superseded.
+
+### A2. Recommendations above that are now withdrawn
+
+| Location | Original recommendation | Disposition |
+| --- | --- | --- |
+| Section 1, change 3 | Promote the conformance assertions into `KIS-0003` and take it Active | Withdrawn under direction 2 |
+| Section 5.3 | "Give it something to govern"; `KIS-0003` as first contract | Withdrawn; the R1 classification still stands † |
+| Appendix B row 1 | `GDR-KI-FUNDAMENTALS-001`, supersede by 002 | Replaced by amendment in place under direction 4 |
+| Appendix B | Create `KIP-000003` and `KIS-0003` | Withdrawn under direction 2 |
+| Appendix B | Decide the `KIS-0001` schema host, `.org` versus `.info` | Moot; no KIS documents exist |
+| Section 793 | "The superseding record should also state..." | Applies to the amendment instead |
+
+† The repository's classification under R1 in section 5.3 is unaffected; only the proposed contract work inside it is withdrawn.
+
+The conformance suite itself is not withdrawn. It remains the first deliverable, but it lives in `ki-agentic-harness` as a repository-local contract with tests, and it is not promoted to a portable specification before V1.
+
+### A3. Evidence corrections since the independent pass
+
+`ki-specifications` was reset to an empty scaffold at commit `1a140df` ("chore(specs): reset proposals and specifications to an empty scaffold"). The statement in section 5.3 and in the brief that it holds two Draft KIS documents is stale. There are now zero KIS documents, one schema file, and the template set. This strengthens the observation that Specifications constrains nothing today, and removes the proposed remedy.
+
+`mcp-housekeeping-codex` has no deployment footprint. `.chezmoidata/mcp-servers.yaml` in `krisb/dotfiles` registers `kit-mcp-housekeeping-claude` and `kit-mcp-housekeeping-chatgpt` only; Codex is absent. Combined with its lack of CI and absence from the tap, the merge has no installed-state transition to manage beyond one renamed registration.
+
+The two path roots that must coexist are `~/Library/Application Support/com.openai.chat` for ChatGPT and `~/.codex/` for Codex, as recorded in the dotfiles registration.
+
+### A4. Confirmed disposition: the OpenAI-family merge
+
+The merge recommended in section 5.20 and 5.21 is confirmed by the maintainer and is now a decision rather than a proposal. GPT-6 Astra's competing position, that all three housekeeping repositories should be kept pending further evidence, is rejected. Astra asked for evidence on visibility, permission model, release cadence, lifecycle, and user outcome before merging. Four of those axes were measured in the independent pass and all point the same way, and the Codex server has since been shown to have no registration, no CI, and no consumers. Astra's caution was well founded in the abstract and is answered by the specifics.
+
+**Naming rule.** Name the repository after the smallest brand that accurately covers everything it inspects. `chatgpt` fails that test as soon as the server reads Codex state, because Codex is not ChatGPT-branded, so the merged repository is `mcp-housekeeping-openai`. `claude` passes the test today, because Claude Desktop, Cowork, and Claude Code are all Claude-branded, so `mcp-housekeeping-claude` is not renamed to `mcp-housekeeping-anthropic`. The resulting asymmetry between a product name and a vendor name reflects a real asymmetry in how the two vendors brand their coding tools. Scope accuracy beats cosmetic symmetry, consistent with the brief's preference for explicit contracts over aesthetic symmetry.
+
+**Coexistence is a contract, not an adapter choice.** Both providers may be installed on one machine. The merged server detects each root independently, carries an independent access level per adapter, assumes neither the presence nor the absence of the other, and degrades to whichever is installed. This belongs in the conformance suite as a test, not in prose.
+
+**Visibility.** Private during the merge, as directed. Recorded honestly: repository visibility is not a control over the session data these servers read, since that data sits on the machine either way. The real precondition for making them public is test-fixture hygiene. Note the knock-on for the boundary rule in section 1: visibility is one of the R2 trust axes currently separating the OpenAI pair from the Claude server, so if all housekeeping repositories become public, the Claude and OpenAI split then rests on runtime support and user outcome alone. It still holds, on narrower grounds.
+
+### A5. Adjudicated difference: sequencing
+
+Section 1 orders the work as conformance suite first, then vendored shared modules. GPT-6 Astra orders it as policy decision first, then a two-server pilot, then incremental migration. **Astra's order is adopted and the order in section 1 is not.**
+
+The reason is Astra's observation that the desired common policy has not yet been established. The plan in section 1 assumes the common redaction and access policy can be recovered by reading the nine existing implementations. It cannot, because they disagree and none is authoritative. Redaction policy is a decision to be taken, not a fact to be discovered. Section 2.5 of this review already concedes the underlying uncertainty, noting that behavioural equivalence was inferred from a normalised diff rather than proven by test, without acting on it.
+
+The adopted order is therefore: decide the access and redaction policy explicitly and record it in `ADR-KI-HARNESS-MCP-001`; then write the conformance suite that tests that policy; then vendor the shared modules; then migrate consumers incrementally, each remaining independently buildable and revertible.
+
+### A6. Positions held unchanged
+
+The governing boundary rule in section 1 stands: R1 release, R2 trust, R3 host mandate, with authority never creating a repository by itself. It is retained because it is the only proposal in either review that can decide a repository that does not yet exist, and because its negative clause severs conceptual authority from source organisation, which is the conflation the brief set out to break. Two caveats are recorded: the clauses were derived from this estate and so carry some risk of having been fitted to the answer, the test being whether they hold for repository 23; and the rule is falsifiable in the way section 1 states, namely that where it disagrees with operational evidence the rule is wrong.
+
+The finding that four of the nine MCP servers, including `mcp-gsuite` and `mcp-m365`, have no test of the access gate, and that `UTIL-1` conformance asserts only that a file exists, stands as the sharpest evidence in the review. It reframes the duplication question: the defect is absent verification rather than repeated code.
+
+### A7. The `GDR-KI-FUNDAMENTALS-001` amendment
+
+The record is amended in place, retaining its identifier, its original `date: 2026-09-16`, and `status: current`, with a dated amendment entry for 2026-09-20 so that the history survives in the record itself, satisfying the brief's constraint 6. Amendment rather than supersession is also the better call on the record's own terms: every change identified is a completion rather than a reversal, and superseding a record carrying `shared_record: true` would produce a `-002` projected into six repositories while six copies of `-001` persist as historical, which is twelve artefacts and a standing risk that a stale projection is read as current.
+
+The amendment carries four changes.
+
+1. Executable ownership is named as a class distinct from normative authority. Each product repository owns its own behaviour, compatibility, and lifecycle state. Both independent reviews found this gap.
+2. Machine and deployment state gains a named owner. `krisb/dotfiles` owns environment binding and registration; native providers own their own state. This is currently unowned in the record.
+3. `ki-specifications` is narrowed to dormant until V1. The clause stating that an Active KIS governs implementations claiming conformance becomes explicitly forward-looking rather than a live mechanism.
+4. The boundary rule is stated: R1, R2, R3, and authority never creating a repository by itself.
+
+Mechanically, the record itself requires that any modification considers all six repositories and updates every projection coherently. So all six projections are updated in one pass, byte identity across the six copies is re-verified afterwards, and Arcadia's copy is marked canonical. Per Arcadia's `CLAUDE.md` this is a substantive change to a canonical zone and routes through the Enactment Process as a `Streams/Roadmap/` record rather than a direct edit.
+
+### A8. Open question carried forward
+
+GPT-6 Astra's strongest unique contribution is unanswered by this review and by the direction so far: can every deployed MCP and tool instance be identified, updated, and rolled back? The dotfiles registrations point at absolute `dist` paths, so the running version is whatever was last built locally in that checkout. Neither source reorganisation nor vendoring addresses this, and it is the most consequential gap in the estate's operational model.
