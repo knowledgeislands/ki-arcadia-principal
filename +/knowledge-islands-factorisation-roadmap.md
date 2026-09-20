@@ -56,10 +56,10 @@ The target remains federated:
 
 - Arcadia owns philosophy, the conceptual model, shared estate governance, and the canonical initiative record for work that spans repositories.
 - Techne Principal owns engineering discipline and architecture.
-- The Agentic Harness owns reusable capability semantics and repository-local shared MCP controls.
+- The Agentic Harness owns the reusable agent-facing capabilities it publishes, together with generic MCP governance, binding semantics, and black-box conformance. It does not own MCP products or server source merely because it governs or tests them.
 - `tools-ki` owns generic host mechanics and the public `ki` command surface.
 - Techne Tools owns controller and execution-fabric implementation.
-- Each product repository owns its product behaviour, provider policy, and lifecycle state.
+- Each product repository owns its executable source, product behaviour, provider policy, schemas, trust boundary, build identity, release, and lifecycle state.
 - Website, Plugins, Homebrew, and installed payloads remain attributable publication, projection, distribution, or deployment surfaces.
 - Dotfiles owns personal machine binding and registration state; native providers own their own mutable state.
 - Specifications remains reserved for possible post-V1 portable contracts and receives no current factorisation work beyond a faithful shared fundamentals projection.
@@ -85,6 +85,8 @@ Use Fable's three boundary reasons as strong, testable presumptions:
 These are not an exhaustive mechanical rule. Independent governance, audience, change coupling, cognitive scope, and historical continuity may justify an explicit exception. Conceptual authority alone does not automatically require a separate source repository.
 
 ### Cross-repository campaigns
+
+Arcadia also becomes the home of the estate coordination Agoras `ki-all`, `ki-fnd`, and `ki-mcps`. Agora membership expresses a purposeful working set and reciprocal consent; it does not transfer source, product, priority, implementation, release, or acceptance ownership. Rehome the declarations directly during the relevant coordinated campaign, with the MCP group moving after OAI-1 so the retiring Codex repository is never repointed.
 
 Arcadia Principal is the home and campaign owner for every estate-wide shared initiative. Its canonical initiative record states the outcome, exact participating repositories, routing, current disposition, evidence, and completion condition. Work is then disseminated to the receiving repositories through local records or handoffs. Each receiving repository still owns its implementation, verification, commits, and acceptance.
 
@@ -134,6 +136,7 @@ The amendment should add or clarify:
 - the five distinct factorisation decisions: conceptual or normative authority, executable ownership, source organisation, distribution, and runtime security;
 - executable ownership as a class distinct from conceptual authority;
 - product repositories as owners of product behaviour, compatibility, and lifecycle state;
+- executable MCP products as independently governed products rather than Harness capability members, while the Harness retains reusable MCP governance, binding, and conformance capabilities;
 - dotfiles as owner of personal environment binding and registration, with native providers owning native mutable state;
 - `ki-specifications` as dormant until overall V1;
 - R1, R2, and R3 as strong repository-boundary presumptions, with explicit secondary considerations rather than an exhaustive mechanical rule;
@@ -148,10 +151,10 @@ The responsibility and routing map should answer at least:
 
 - philosophy, conceptual model, shared governance, or estate-wide initiative -> Arcadia Principal;
 - engineering discipline or architecture -> Techne Principal;
-- reusable agent capability semantics -> Agentic Harness;
+- reusable agent capability semantics and generic MCP governance or conformance -> Agentic Harness;
 - generic CLI hosting, repository mechanics, or public `ki` grammar -> `tools-ki`;
 - controller or execution-fabric implementation -> Techne Tools;
-- product behaviour or provider policy -> the product repository;
+- MCP executable source, product behaviour, provider policy, schema, trust boundary, build, or release -> the product repository;
 - public editorial publication -> Website;
 - generated runtime packaging -> Plugins or the named projection repository;
 - command-line distribution -> the product release plus Homebrew tap;
@@ -199,6 +202,8 @@ Candidate corrections include:
 ### FND-4 - Record ownership seams and Arcadia-led dissemination
 
 Arcadia's current `ki-trades` declaration exports knowledge only, and only to Harness, Website, Specifications, and Techne Principal. The dissemination design must therefore distinguish a declared work-trade route from a direct repository-local handoff under the existing cross-repository choreography; it must not present the current knowledge routes as an estate-wide work transport.
+
+This phase also removes the empty MCP source shelf from the Harness model, amends the current Harness purpose, layout, publication, repository-specification, rubric, and orientation surfaces in place, and rehomes `ki-all`, `ki-fnd`, and `ki-mcps` to Arcadia. Every Agora member retains independent consent, and the MCP repositories continue to consume the Harness's `ki-repo-mcp` governance skill without becoming Harness product members.
 
 **What it is.** Amend the current local governance documents that describe the three difficult interfaces:
 
@@ -304,7 +309,7 @@ The product contract is:
 
 **Why it is justified.** The two repositories have the same visibility, version, supported runtime family, four-operation read-only outcome, and near-identical project scaffolding. Codex has no current registration, CI, release, or installed-state footprint, while ChatGPT is the deployed base. The merge therefore removes one maintenance boundary without combining different trust classes or disrupting an installed Codex service. `openai` is the smallest brand name that honestly covers both products; `chatgpt` would misdescribe Codex.
 
-**Owner and scope.** `mcp-housekeeping-chatgpt` is renamed and remains the operational base. `mcp-housekeeping-codex` contributes its adapter and any useful source history. Harness Agora membership and dotfiles registrations are changed directly to the target name after the combined server passes its gates.
+**Owner and scope.** The existing `mcp-housekeeping-chatgpt` repository is renamed and remains the operational base. `mcp-housekeeping-codex` contributes its adapter and any useful source history. Dotfiles registrations change directly to the target name after the combined server passes its gates. The Harness-owned `ki-mcps` Agora is coordination rather than product ownership; after the merge, move the surviving MCP coordination group to Arcadia in one coordinated declaration change rather than repointing the retiring Codex member.
 
 **Deliverables.** Renamed combined repository, ChatGPT and Codex adapter boundaries, concurrent-operation tests, independent failure tests, updated private repository metadata, registrations, and Agora membership, followed by retirement of the absorbed Codex repository.
 
@@ -314,29 +319,27 @@ The product contract is:
 
 ## Phase 4 - Pilot shared MCP implementation
 
-### MCP-4 - Create the narrow Harness MCP kit
+### MCP-4 - Decide and pilot a narrow shared MCP implementation source
 
-**What it is.** Extract only the common mechanics proven by MCP-3 into a small Harness-owned source set. Likely candidates are access derivation, generic gate mechanics, common annotation validation, and audit-event or sanitisation mechanics with provider policy injected.
+**What it is.** Decide whether the common mechanics proven by MCP-3 justify a single implementation source at all. If they do, establish an explicitly governed source boundary outside the Agentic Harness and pilot only access derivation, generic gate mechanics, common annotation validation, and audit-event or sanitisation mechanics with provider policy injected. The source must exclude credentials, provider-specific redaction fields, allowed paths, scopes, server identity, SDK bindings, and product logic.
 
-The kit must exclude credentials, provider-specific redaction fields, allowed paths, scopes, server identity, SDK bindings, and product logic.
+**Why it is justified.** The current estate has one conceptual security surface implemented nine times, but behavioural conformance may remove the risk without creating another source owner. This evidence gate avoids treating shared implementation code as a Harness capability or creating a new repository merely because files look similar. If extraction is justified, one reviewed source can reduce semantic edits while provider policy remains local.
 
-**Why it is justified.** The current estate has one conceptual security surface implemented nine times. A single reviewed source reduces semantic edits from one per server to one canonical edit plus controlled consumer updates. Keeping provider policy outside the kit avoids erasing legitimate differences or expanding Harness authority into product behaviour.
+**Owner and scope.** The Agentic Harness owns policy, fixtures, and the black-box conformance suite, not the shared implementation source. Arcadia coordinates the ownership decision. Any extracted source receives an explicit owner justified by R1 and R2; it does not default to Harness, `tools-ki`, or Techne Tools. Each MCP retains product ownership and acceptance. This creates no pre-V1 portable specification.
 
-**Owner and scope.** The Agentic Harness owns source and unit tests. The policy remains repository-local and creates no pre-V1 portable specification.
+**Deliverables.** A recorded extract-or-retain decision. If extraction is justified: canonical modules, an explicit source owner, a manifest containing source revision and hashes, a configuration interface, unit tests, a provenance header, and sync and verification commands for the local pilot.
 
-**Deliverables.** Canonical modules, manifest containing source revision and hashes, configuration interface, unit tests, provenance header, and explicit sync and verification commands local to the pilot.
-
-**Completion gate.** Every extracted line is justified by MCP-3 as common behaviour, every variation is injected or left local, and no module imports an MCP SDK version.
+**Completion gate.** Either conformance alone is retained with evidence that a shared source is unnecessary, or every extracted line is justified by MCP-3 as common behaviour, the source owner is explicit, every variation is injected or left local, and no module imports an MCP SDK version.
 
 **Dependency.** MCP-3.
 
 ### MCP-5 - Pilot controlled copies in SDK v1 and v2 consumers
 
-**What it is.** Materialise pinned ordinary-file copies into one representative SDK v1 server and `mcp-git-audit` on SDK v2. Each consumer records the Harness revision, hashes, supported interface, configuration inputs, and prohibition on local edits.
+**What it is.** If MCP-4 approves extraction, materialise pinned ordinary-file copies into one representative SDK v1 server and `mcp-git-audit` on SDK v2. Each consumer records the selected source revision, hashes, supported interface, configuration inputs, and prohibition on local edits.
 
 **Why it is justified.** Two deliberately different consumers test whether the kit is genuinely SDK-neutral and whether controlled copies preserve independent builds. A pilot avoids prematurely adding MCP-specific materialisation behaviour to `tools-ki`.
 
-**Owner and scope.** Harness owns the sync source and verification. Each pilot MCP owns its adaptation commit and local tests.
+**Owner and scope.** The selected shared-source repository owns canonical code and copy identity. Harness owns behavioural conformance. Each pilot MCP owns its adaptation commit and local tests.
 
 **Deliverables.** Two consumer adoptions, conformance results, drift detection, and a short assessment of update effort and failure modes.
 
@@ -346,29 +349,29 @@ The kit must exclude credentials, provider-specific redaction fields, allowed pa
 
 ### MCP-6 - Decide materialisation ownership
 
-**What it is.** After the pilot, decide whether sync and verification remain Harness-local or become generic mechanics executed through `ki repo conform` and `ki repo audit`.
+**What it is.** After the pilot, decide whether sync and verification remain source-local or become generic mechanics executed through `ki repo conform` and `ki repo audit`.
 
 **Why it is justified.** `tools-ki` owns generic host mechanics, but it should not gain MCP-specific layout knowledge simply because it can write files. The pilot provides the missing evidence: whether materialisation is reusable host behaviour or still an MCP-specific experiment.
 
-**Owner and scope.** Harness defines what content and checks mean. `tools-ki` owns any approved generic execution, transactions, and reporting.
+**Owner and scope.** The selected source owner defines canonical content and copy identity. Harness defines behavioural conformance. `tools-ki` owns any approved generic execution, transactions, and reporting.
 
-**Deliverables.** An in-place update to the relevant existing ownership records, plus either a retained Harness-local mechanism or a narrowly generic `ki` operation.
+**Deliverables.** An in-place update to the relevant existing ownership records, plus either a retained source-local mechanism or a narrowly generic `ki` operation.
 
 **Completion gate.** The chosen owner follows the Harness/CLI seam from FND-4, supports offline and pinned operation, and does not introduce a public registry or hidden cross-repository runtime dependency.
 
 **Dependency.** MCP-5.
 
-### MCP-7 - Adopt the kit across the remaining MCPs
+### MCP-7 - Adopt any approved kit across remaining MCPs
 
-**What it is.** Apply the proven kit to the remaining MCP consumers one repository at a time. A temporary mixed state is visible implementation sequencing, not a supported legacy configuration.
+**What it is.** If MCP-4 approves extraction and MCP-5 proves the pilot, apply the kit to the remaining MCP consumers one repository at a time. A temporary mixed state is visible implementation sequencing, not a supported legacy configuration. If MCP-4 retains conformance-only governance, record that no kit adoption is required.
 
 **Why it is justified.** Independent adoption preserves repository acceptance while removing repeated semantic maintenance. Requiring simultaneous adoption would recreate the release coupling the current layout was designed to avoid.
 
 **Owner and scope.** Arcadia owns the shared adoption initiative. Each MCP repository owns its adoption, while the Arcadia record tracks revisions and unresolved consumers.
 
-**Deliverables.** One focused consumer commit per repository, green local and conformance tests, updated manifest evidence, and an unresolved-consumer report.
+**Deliverables.** Either one focused consumer commit per repository with green local and conformance tests, updated manifest evidence, and an unresolved-consumer report; or the reviewed conformance-only decision showing that no consumer source adoption is required.
 
-**Completion gate.** Every intended consumer has adopted, explicitly deferred, or rejected the kit with a documented reason. Confirmed security fixes have an adoption deadline and no silent stragglers.
+**Completion gate.** Every intended consumer has adopted, explicitly deferred, or rejected the kit with a documented reason, or MCP-4 has accepted the conformance-only outcome. Confirmed security fixes have an adoption deadline and no silent stragglers.
 
 **Dependency.** MCP-6.
 
@@ -513,7 +516,7 @@ The roadmap's current disposition is:
 - New estate-wide KIPs, KIS documents, schemas, or portable specifications.
 - Legacy compatibility, state migration, rollback plans, or dual-running old and new repository structures before V1.
 - Publishing shared packages to a public registry.
-- Moving every MCP into the Harness or Techne Tools.
+- Treating an executable MCP product as a Harness capability member, or moving MCP product source into the Harness or Techne Tools.
 - Treating a repository, worktree, or visibility setting as runtime security isolation.
 - Replacing every existing decision record with a successor solely because the estate vocabulary changed.
 - Making `tools-ki` the controller or owner of product-specific MCP behaviour.

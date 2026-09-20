@@ -51,6 +51,16 @@ The existing fail-closed contract permits only `note_type` as receiver-local met
 
 ## MCP implementation baseline
 
+### Harness product boundary
+
+At Agentic Harness revision `23dcdc953492`, the only tracked file under `mcp/` is a README describing an empty possible consolidation shelf. The repository has no MCP workspace, server source, MCP SDK dependency, or server runtime dependency. Its compatible installed payload already contains only skills, subagents, and hooks, and the current host recognises only `skill` as a published capability kind.
+
+The shared fundamentals record nevertheless names an MCP server as a typed Harness member, while the Harness purpose decision says product and sibling MCP artefacts live outside it. Current operation follows the latter model: every MCP product is independently governed, built, tested, released, and bound from its own repository.
+
+The target should remove executable MCP products and server source from the Harness capability boundary. The Harness remains the owner of reusable MCP governance and conformance capabilities, including `ki-repo-mcp`, binding semantics, token policy, and the black-box suite. An MCP product does not become a Harness member because the Harness governs or tests it.
+
+The Harness worktree acquired unrelated concurrent edits during this read-only inspection. No Harness file was changed by the factorisation review, and its live worktree must be reread before any receiver-owned implementation begins.
+
 Eight MCP servers declare `@modelcontextprotocol/sdk ^1.30.0` and resolve version `1.30.0`. `mcp-git-audit` uses `@modelcontextprotocol/server` and client version `2.0.0`. The earlier eight-v1 and one-v2 observation remains correct.
 
 The common-looking implementation surfaces are not one implementation:
@@ -128,6 +138,8 @@ The evidence supports these changes to the consolidated plan:
 
 - update the six existing fundamentals projections in FND-2 and extend only through post-merge ALIGN-1;
 - use the Decision Records living-record rule: advance the current as-of date and do not add amendment history;
+- remove executable MCP products and the empty MCP source shelf from the Harness capability model while retaining MCP governance and conformance skills;
+- rehome the estate coordination Agoras to Arcadia without changing independent repository ownership;
 - describe Specifications as dormant for KIPs and KISs rather than literally empty;
 - treat Plugins drift as measured, not merely suspected;
 - add MCP build provenance as an operational gap;
@@ -136,6 +148,10 @@ The evidence supports these changes to the consolidated plan:
 
 ## FND-1 disposition
 
+### Final recheck
+
+Techne Principal was observed clean at `4d276893b0f5` during the final planning recheck, confirming that its earlier movement was active concurrent delivery rather than an unresolved dirty worktree. WhatsApp had advanced to `4abf6a5f17bb` and still carried multiple user-owned modified and untracked acquisition files, so its test baseline remains deliberately unverified. The Harness remained at `23dcdc953492` with six unrelated AI-session and housekeeping files modified by another writer; no receiver-owned Harness change may begin from that worktree state.
+
 The facts needed to plan FND-2 and OAI-1 are confirmed or corrected. MCP-1 has enough evidence to define its policy boundary, but WhatsApp remains explicitly unverified and live-process state remains unavailable. Neither gap should be converted into an assumption.
 
-Before FND-1 is accepted as complete, reread the two moving repositories, record the final Arcadia commit containing this appendix, and rerun only the checks whose evidence depends on their settled state.
+Before FND-1 is accepted as complete, record the final Arcadia commit containing this appendix. Rerun the WhatsApp product suite only after its owner settles the current worktree; that later MCP baseline is a prerequisite for MCP-3, not for the FND-2 responsibility amendment.

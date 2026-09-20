@@ -16,6 +16,30 @@ The current record already owns the relationship between Arcadia, Techne Princip
 
 Creating another Decision Record would leave two competing answers to “where does this belong?”. Updating the shared record preserves one durable routing authority while Git retains the earlier state.
 
+## Resolved Harness and MCP boundary
+
+Executable MCP servers are products, not Agentic Harness capability members. Their source, schemas, provider policy, trust boundary, build, release, and lifecycle remain in independently governed `mcp-*` repositories. The Harness contains no MCP server implementation today: its `mcp/` path is an empty shelf, the installed payload excludes MCP products, and the current host recognises only `skill` as a published capability kind.
+
+The Harness continues to publish reusable capabilities that govern or support MCP products: the `ki-repo-mcp` standard and rubric, binding semantics, token policy, and black-box conformance assets. An MCP repository continues to declare the Harness so those skills resolve; that dependency does not make its product a Harness member.
+
+The empty MCP shelf and five-part Harness-source claim should be removed through receiver-owned Harness work. Shared production-library code is not placed in the Harness by default. MCP-3 must first show that conformance alone is insufficient and that a separately governed shared source satisfies R1 or R2.
+
+Arcadia becomes the home of `ki-all`, `ki-fnd`, and `ki-mcps` because they are estate coordination Agoras. Membership expresses reciprocal participation in a working set; it transfers no source, product, release, priority, implementation, or acceptance authority. Rehome the MCP group after OAI-1 so the retiring Codex repository is never repointed.
+
+### Harness receiver change
+
+The later Harness-owned implementation record should amend the current surfaces in place rather than add successor decisions or compatibility aliases:
+
+- `SDR-KI-HARNESS-001` and `ADR-KI-HARNESS-001` clarify the four source shelves: skills, subagents, evals, and hooks;
+- `ADR-KI-HARNESS-002` and the compatible-Harness publication decision remove MCP products from the future Harness capability and projection model;
+- the Harness README, `.ki.toml` description, `package.json` description, orientation, repository specification, and `ki-repo-harness` standard use the same boundary;
+- the `ki-repo-harness` rubric, `HARNESS_PARTS` implementation, tests, exemplars, and generated publications enforce the four-shelf source layout;
+- the empty `mcp/README.md` and directory are removed;
+- `KI-HARNESS-RTP-002` is rerouted to the product, binding, and distribution owners rather than treating reachability as a Harness product responsibility; and
+- KI Plugins is regenerated so its projection no longer describes MCP products as a deferred Harness shelf.
+
+The change must retain `ki-repo-mcp`, the binding skills, MCP behavioural evals, and the declarations through which MCP repositories consume Harness governance. Removing those would confuse “not a Harness product” with “not governed by Harness capabilities”.
+
 ## Decision-record constraints
 
 The amendment must:
@@ -65,12 +89,12 @@ It should state that conceptual authority alone does not require a separate sour
 
 The Decision should route work as follows:
 
-- **Arcadia Principal** owns philosophy, the conceptual model, shared estate governance, and the canonical initiative record for estate-wide work.
+- **Arcadia Principal** owns philosophy, the conceptual model, shared estate governance, the canonical initiative record for estate-wide work, and the estate coordination Agoras.
 - **Techne Principal** owns engineering discipline and architecture.
-- **Agentic Harness** owns reusable capability semantics, governance standards, shared repository-local MCP controls, and conformance behaviour. It does not own product MCP implementations.
+- **Agentic Harness** owns the reusable agent-facing capabilities it publishes, together with generic MCP governance, binding semantics, token policy, and black-box conformance assets. It does not own executable MCP products or server source merely because it governs or tests them.
 - **`tools-ki`** owns generic repository host mechanics and the public `ki` command grammar.
 - **Techne Tools** owns controller and execution-fabric implementation, packaging, deployment, and provider adapters.
-- **Each tool or MCP product repository** owns its executable behaviour, provider policy, compatibility, lifecycle state, tests, and release artefact.
+- **Each tool or MCP product repository** owns its executable source, product behaviour, provider policy, schemas, trust boundary, compatibility, tests, build identity, release artefact, and lifecycle state.
 - **KI Website** owns public editorial publication without acquiring source authority.
 - **KI Plugins** owns generated runtime packaging and projection without acquiring Harness semantics.
 - **Homebrew Tap** owns formula acceptance and command-line distribution without acquiring product behaviour.
@@ -102,6 +126,8 @@ The Decision should state that Arcadia originates and tracks estate-wide initiat
 
 Every receiving repository retains ownership of its local work record, implementation, verification, commit, and acceptance. Arcadia's campaign role is directional governance and completion tracking, not central implementation authority.
 
+The estate Agoras are Arcadia-owned coordination declarations. A member independently consents to participation, and membership grants no source ownership, product membership, priority, work-routing, release, or acceptance authority.
+
 ### Shared projection
 
 The Decision should name Arcadia's copy as the canonical authoring source and the other copies as exact shared projections under the Harness projector. KB projections may add only the receiver-local `note_type` field.
@@ -114,6 +140,8 @@ The Consequences should make clear that:
 - Specifications cannot become a pre-V1 delivery dependency;
 - dotfiles and native providers retain different state ownership;
 - an Arcadia initiative does not let Arcadia accept work on a receiving repository's behalf;
+- Agora membership coordinates independently governed repositories without making their products Harness capabilities or Arcadia-owned implementations;
+- shared MCP production code receives no Harness home by default and is extracted only after behavioural evidence identifies a separately governable unit;
 - a repository boundary is retained, created, or reconsidered against R1, R2, R3, and any explicit exception; and
 - projections and distribution surfaces remain attributable to their source without becoming parallel authorities.
 
@@ -149,6 +177,8 @@ KI Plugins additionally needs a valid work adapter, stable repository code, and 
 
 Before implementation, review and approve:
 
+- the classification of executable MCPs as independently owned products rather than Harness capability members;
+- removal of the empty Harness MCP source shelf and rehoming of the three estate Agoras to Arcadia through receiver-owned work;
 - the proposed responsibility wording and whether Techne Tools' packaging/deployment wording is at the right altitude;
 - the six-copy initial receiving set;
 - present-state date handling and the absence of amendment history;
