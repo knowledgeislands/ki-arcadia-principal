@@ -4,6 +4,8 @@ Status: open review brief
 
 Prepared: 2026-09-19
 
+Updated: 2026-09-20
+
 ## Review protocol
 
 Review the whole Knowledge Islands estate independently. Do not treat the current repository layout, the six-authority model, or the options in this brief as conclusions that must be preserved.
@@ -15,6 +17,15 @@ knowledge-islands-factorisation-brief-review-<model>.md
 ```
 
 Use a lowercase, hyphenated model identifier, for example `gpt-6-astra`. Keep one model's response in each file. State the model, review date, evidence inspected, assumptions, and material uncertainties at the top. A later synthesis should be saved as `knowledge-islands-factorisation-brief-review-consolidated.md`; reviewers should not read that synthesis or one another's responses before completing an independent pass.
+
+## Maintainer direction after the initial reviews
+
+The following constraints were confirmed on 2026-09-20 and should govern subsequent synthesis:
+
+- Consolidate `mcp-housekeeping-chatgpt` and `mcp-housekeeping-codex` into one OpenAI-family MCP capable of serving both ChatGPT and Codex on the same machine. The current preferred name is `mcp-housekeeping-openai`, with separate ChatGPT and Codex adapters. Keep the combined repository private during the merge; visibility can be reviewed independently afterwards.
+- Do not create estate-wide KIPs, KIS documents, schemas, or comparable portable specifications before Knowledge Islands reaches overall V1. Use repository-local decisions, contracts, tests, and compatibility evidence in the meantime. `ki-specifications` is not an active delivery target for this factorisation work.
+
+These are maintainer constraints, not conclusions inferred by a reviewing model. Preserve the independent reviews as originally written where they predate this direction.
 
 ## The question
 
@@ -28,7 +39,7 @@ The original prompt considered duplication across MCP repositories. That remains
 
 The target should support:
 
-- a coherent path from learning and decisions through specifications, implementation, verification, publication, and operational use;
+- a coherent path from learning and decisions through repository-local contracts, implementation, verification, publication, and operational use;
 - one intelligible authority for each concept, contract, executable behaviour, and mutable state;
 - independently understandable and replaceable parts without unnecessary cross-repository ceremony;
 - explicit dependency and projection directions, with generated or vendored copies attributable to their source;
@@ -70,7 +81,7 @@ A local `worktrees/` directory is a checkout mechanism, not another product or r
 - `ki-techne-principal` owns engineering discipline and architecture.
 - `ki-agentic-harness` owns reusable agent capabilities and compatible harness semantics, including skills, agents, hooks, MCP semantics, and evaluations. It does not own the public `ki` executable or originate normative portable contracts.
 - `tools-ki` owns the `ki` executable platform: installation, inventory, activation, repository resolution, registered native operations, reports, migrations, and public command grammar.
-- `ki-specifications` owns normative portable contracts such as KIPs, KIS documents, and schemas. KIS-0001 and KIS-0002 are currently Draft, so declaration is not the same as Active conformance.
+- `ki-specifications` is the declared future home for normative portable contracts such as KIPs, KIS documents, and schemas. It is not an active delivery surface before overall V1 and should receive no factorisation output from this review.
 - `ki-website` owns the autonomous public publication layer. It vendors source-labelled material but does not acquire the source's authority.
 
 Cross-repository work is currently treated as choreography rather than central orchestration: each receiving repository owns its priority, plan, execution, and commit history.
@@ -85,7 +96,7 @@ The descriptions below are a starting map, not a claim that every present bounda
 - `ki-techne-principal`: canonical engineering island for architecture, engineering practice, and the execution-fabric model.
 - `ki-agentic-harness`: canonical source for reusable skills, agents, hooks, evaluations, and compatible harness semantics. It installs or projects capabilities into host environments.
 - `tools-ki`: source and release home of the `ki` CLI and the executable repository platform.
-- `ki-specifications`: normative standards and governance layer for portable contracts. Its current KIS documents remain Draft.
+- `ki-specifications`: reserved standards and governance layer for future portable contracts. It remains outside current delivery until overall V1.
 - `ki-website`: independently deployable public presentation of selected, source-labelled Knowledge Islands material.
 
 ### Product and general tool repositories
@@ -109,7 +120,7 @@ Techne Tools is direct evidence that the estate does not require one package or 
 - `mcp-housekeeping-chatgpt`: inspection of ChatGPT local state.
 - `mcp-housekeeping-codex`: inspection of Codex local state.
 
-The three housekeeping repositories and `mcp-acquire-whatsapp` are private at the time of review; visibility and permission differences may constrain consolidation.
+`mcp-housekeeping-chatgpt`, `mcp-housekeeping-codex`, and `mcp-acquire-whatsapp` are private at the time of review. `mcp-housekeeping-claude` is public. Visibility remains a separate decision from product consolidation.
 
 ### Projection, distribution, and user-environment repositories
 
@@ -147,9 +158,9 @@ This diagram describes observed intent, not a verified absence of overlaps. A go
 
 ### Arcadia, Techne, and Specifications
 
-The estate needs a crisp test for when a concept becomes engineering practice and when practice becomes normative portable conformance. Some older Arcadia records describe technical execution through the Arcadia Techne pillar, while the newer shared fundamentals decision assigns engineering discipline to Techne Principal. Historical context must remain readable without appearing to be current authority.
+The estate needs a crisp test for when a concept becomes engineering practice. Before overall V1, engineering contracts and compatibility evidence remain repository-local rather than becoming normative portable specifications. Some older Arcadia records describe technical execution through the Arcadia Techne pillar, while the newer shared fundamentals decision assigns engineering discipline to Techne Principal. Historical context must remain readable without appearing to be current authority.
 
-Routine implementation should not require ceremonial edits across all six authority repositories. Conversely, a genuinely portable behavioural change needs an explicit route from evidence to accepted contract.
+Routine implementation should not require ceremonial edits across all six authority repositories. Evidence that may eventually justify a portable contract should be retained locally for reconsideration at overall V1.
 
 ### Agentic Harness and `tools-ki`
 
@@ -192,7 +203,7 @@ Nine MCP repositories each contain local variants of common scaffolding. A prior
 | File | Copies | Distinct contents | Approximate size |
 | --- | ---: | ---: | ---: |
 | `src/utils/audit-log.ts` | 9 | 9 | 175 to 217 lines |
-| `src/utils/annotations.ts` | 9 | 8 | 12 to 80 lines |
+| `src/utils/annotations.ts` | 9 | 9 | 12 to 80 lines |
 | `src/utils/access-level.ts` | 9 | 5 | 52 to 64 lines |
 | `src/config/index.ts` | 9 | 9 | 63 to 219 lines |
 
@@ -230,7 +241,7 @@ Consume a shared package by Git ref or another reversible private mechanism. Thi
 
 ### Selective product consolidation
 
-Merge only repositories that represent one product with aligned users, permissions, schemas, cadence, and lifecycle. The three housekeeping MCPs are an obvious case to test, not a predetermined merge.
+Merge only repositories that represent one product with aligned users, permissions, schemas, cadence, and lifecycle. The ChatGPT and Codex adapters are now a confirmed consolidation target under `mcp-housekeeping-openai`; `mcp-housekeeping-claude` remains separate.
 
 ### Broader monorepo consolidation
 
@@ -253,6 +264,7 @@ Any recommendation must engage with these constraints, but may challenge their i
 7. **Generated projections are not canonical.** A projection may be independently deployed without gaining authority over its source material.
 8. **Private and host-local components need explicit treatment.** Filesystem access, personal data, secrets, visibility, and provider permissions may justify boundaries that source reuse alone would not.
 9. **Do not assume repository count is bad.** Justify each keep, merge, split, move, generation, or archive decision with operational consequences.
+10. **No estate-wide specifications before overall V1.** Keep contracts, decisions, tests, and compatibility evidence in their owning implementation or governance repository. Do not propose new KIPs, KIS documents, or portable schemas as part of this work.
 
 ## Change scenarios the target must survive
 
@@ -261,7 +273,7 @@ Work each scenario through the proposed target. Name every authoritative edit, g
 1. Add a new acquisition provider and import its faithful source material into a knowledge base.
 2. Change an access-control or audit-redaction invariant used by every MCP.
 3. Add a runtime adapter for an existing harness capability without changing its portable semantics.
-4. Promote implementation evidence into a revised portable contract, including the Draft-to-Active path.
+4. Evolve a shared behaviour through repository-local contracts and compatibility evidence without creating an estate-wide specification.
 5. Run controller work unattended with isolated credentials, retries, leases, evidence, and cleanup.
 6. Publish a revised Knowledge Islands concept to the website and update any host projections.
 7. Change a tool's release shape while preserving Homebrew installation and rollback.
