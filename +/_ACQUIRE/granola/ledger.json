@@ -1,12 +1,12 @@
 {
   "schema": 3,
-  "generation": "cb0ee9fe-1c13-4150-b0bb-a2729b467f8c",
+  "generation": "42be3a04-65e4-4c57-8280-a74f1c502c63",
   "adapter": "granola",
   "repository": "https://github.com/knowledgeislands/ki-arcadia-principal",
   "provider": "granola",
   "account_sha256": "fddbc4161b2bc2d666c4e5550bbd8610be128c4fa336fec24062c0d23c75d2cd",
   "source_schema_sha256": "18709680d3024e803fd53eae2aec1628792f577042a6a157b0aab9d272e41b8d",
-  "identity_checkpoint_sha256": "788a75442f7b279bb2057924c50eb682e6bfedd2571840801ee0a8cb281291a5",
+  "identity_checkpoint_sha256": "4e717b66755c6ec317a7bfe274c1c206d1b544a72e93abb49e6f5667fe4ef93f",
   "interval": {
     "since": "1970-01-01",
     "until": "2026-09-20"
@@ -17,56 +17,56 @@
       "since": "1970-01-01",
       "until": "2026-09-20",
       "scope": "global",
-      "count": 215,
-      "responseSha256": "f937630c0dd4637cfe0cc65faa782e63bccdbf0796dc58b89e7bc185f7addf96",
+      "count": 0,
+      "responseSha256": "201989084602433bff39af21aee697e85f961b441cc5b858920dac5b3363b312",
       "saturated": false
     },
     {
       "since": "1970-01-01",
       "until": "2026-09-20",
       "scope": "folder:2454f927-221b-4905-8583-a2daa85af625",
-      "count": 2,
-      "responseSha256": "1bee722777e7ae21499eaae869590dd994ff7a6e4eccf79c170bd03802428ef1",
+      "count": 0,
+      "responseSha256": "201989084602433bff39af21aee697e85f961b441cc5b858920dac5b3363b312",
       "saturated": false
     },
     {
       "since": "1970-01-01",
       "until": "2026-09-20",
       "scope": "folder:474e17a9-860d-4a80-b4d9-daa14450273f",
-      "count": 140,
-      "responseSha256": "5588ff16cc0af0da4ceb395cacc96ac244857164ae27f59b21d3ecef5e60eca9",
+      "count": 0,
+      "responseSha256": "201989084602433bff39af21aee697e85f961b441cc5b858920dac5b3363b312",
       "saturated": false
     },
     {
       "since": "1970-01-01",
       "until": "2026-09-20",
       "scope": "folder:629e510b-2347-442e-9931-741707a34a10",
-      "count": 39,
-      "responseSha256": "3d797909ab405699471fe23322f91fed5e614c12fc6e3a7d40a0bcff917ecb3f",
+      "count": 0,
+      "responseSha256": "201989084602433bff39af21aee697e85f961b441cc5b858920dac5b3363b312",
       "saturated": false
     },
     {
       "since": "1970-01-01",
       "until": "2026-09-20",
       "scope": "folder:811ac564-dd24-4a13-8a8a-ed5041f3a5c6",
-      "count": 14,
-      "responseSha256": "eb139642aee5b665cd09d7003a3d8c9f46e93444f1aa16ebdfb71a4ad91cfa6d",
+      "count": 0,
+      "responseSha256": "201989084602433bff39af21aee697e85f961b441cc5b858920dac5b3363b312",
       "saturated": false
     },
     {
       "since": "1970-01-01",
       "until": "2026-09-20",
       "scope": "folder:9bd26fa8-4fec-4289-9fb2-55edeeee29ab",
-      "count": 2,
-      "responseSha256": "0cf122e02c30101b8dc9b23366e7071779d76004eb59c5bd1b157757162f22bd",
+      "count": 0,
+      "responseSha256": "201989084602433bff39af21aee697e85f961b441cc5b858920dac5b3363b312",
       "saturated": false
     },
     {
       "since": "1970-01-01",
       "until": "2026-09-20",
       "scope": "folder:aef87a23-0d66-4472-83c3-721e9fd8f375",
-      "count": 15,
-      "responseSha256": "dae4f400acd564664a83aad5f38b84232625011391883bce8345564b06626a08",
+      "count": 0,
+      "responseSha256": "201989084602433bff39af21aee697e85f961b441cc5b858920dac5b3363b312",
       "saturated": false
     }
   ],
@@ -118,5 +118,5 @@
       }
     }
   },
-  "updated_at": "2026-09-20T12:59:01.160Z"
+  "updated_at": "2026-09-20T17:23:11.841Z"
 }
