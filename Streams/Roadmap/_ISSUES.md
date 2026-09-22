@@ -7,7 +7,7 @@ Arcadia's repository code is `KI-ARCADIA`. This Knowledge Base issues area-quali
 | Area | Theme | High-water mark |
 | --- | --- | --- |
 | `EXT` | `ecosystem-adoption` | 003 |
-| `GOV` | `governance` | 009 |
+| `GOV` | `governance` | 010 |
 | `MOD` | `knowledge-model` | 006 |
 | `OPS` | `operational-tooling` | 009 |
 
