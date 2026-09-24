@@ -5,12 +5,12 @@ area: ECO
 title: Rehome ecosystem Agoras
 theme: ecosystem-coordination
 horizon: now
-status: ready
+status: in-progress
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: 1419d03170c5de0fa37ba8902d43fb9594851022
 created_at: 2026-09-24T08:33:22Z
-updated_at: 2026-09-24T08:33:22Z
+updated_at: 2026-09-24T08:53:57Z
 ---
 
 # Rehome ecosystem Agoras
@@ -42,7 +42,7 @@ It does not move `ki-mcps`, merge or rename an MCP repository, change source own
 
 ## Steps
 
-- [ ] Record the immutable Arcadia baseline and mark the item In progress.
+- [x] Record the immutable Arcadia baseline and mark the item In progress.
 - [ ] Declare the three Arcadia homes with the exact current member set and roles.
 - [ ] Replace the Agentic Harness `ki-all` and `ki-fnd` homes with reciprocal membership in all three Arcadia-owned Agoras; retain its `ki-mcps` home unchanged.
 - [ ] Repoint and reconcile every current member declaration without touching unrelated working-tree changes.
