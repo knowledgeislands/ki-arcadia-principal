@@ -83,5 +83,58 @@ routes."knowledgeislands/ki-specifications" = { export = ["knowledge"] }
 routes."knowledgeislands/ki-techne-principal" = { export = ["knowledge"] }
 
 [skills.ki-agora]
-memberships.ki-all = { home = "https://github.com/knowledgeislands/ki-agentic-harness", role = "maintainer" }
-memberships.ki-fnd = { home = "https://github.com/knowledgeislands/ki-agentic-harness", role = "maintainer" }
+
+[skills.ki-agora.homes.ki-all]
+owner = "https://github.com/knowledgeislands/ki-arcadia-principal"
+purpose = "All governed Knowledge Islands ecosystem repositories"
+
+[skills.ki-agora.homes.ki-all.members]
+"https://github.com/knowledgeislands/apps-observatory" = "product"
+"https://github.com/knowledgeislands/homebrew-tap" = "distribution"
+"https://github.com/knowledgeislands/ki-agentic-harness" = "governance-harness"
+"https://github.com/knowledgeislands/ki-plugins" = "product"
+"https://github.com/knowledgeislands/ki-specifications" = "product"
+"https://github.com/knowledgeislands/ki-techne-harness" = "execution-harness"
+"https://github.com/knowledgeislands/ki-techne-principal" = "product"
+"https://github.com/knowledgeislands/ki-website" = "product"
+"https://github.com/knowledgeislands/mcp-acquire-whatsapp" = "product"
+"https://github.com/knowledgeislands/mcp-git-audit" = "product"
+"https://github.com/knowledgeislands/mcp-gsuite" = "product"
+"https://github.com/knowledgeislands/mcp-housekeeping-chatgpt" = "product"
+"https://github.com/knowledgeislands/mcp-housekeeping-claude" = "product"
+"https://github.com/knowledgeislands/mcp-housekeeping-codex" = "product"
+"https://github.com/knowledgeislands/mcp-ki-kb-fs" = "product"
+"https://github.com/knowledgeislands/mcp-ki-kb-notion-mirror" = "product"
+"https://github.com/knowledgeislands/mcp-m365" = "product"
+"https://github.com/knowledgeislands/tools-git-almanac" = "product"
+"https://github.com/knowledgeislands/tools-ki" = "product"
+"https://github.com/knowledgeislands/tools-mgit" = "product"
+"https://github.com/knowledgeislands/tools-rig" = "product"
+"https://github.com/knowledgeislands/tools-techne" = "product"
+"https://github.com/krisb/dotfiles" = "environment"
+
+[skills.ki-agora.homes.ki-fnd]
+owner = "https://github.com/knowledgeislands/ki-arcadia-principal"
+purpose = "The canonical ki-* repository family"
+
+[skills.ki-agora.homes.ki-fnd.members]
+"https://github.com/knowledgeislands/ki-agentic-harness" = "governance-harness"
+"https://github.com/knowledgeislands/ki-plugins" = "product"
+"https://github.com/knowledgeislands/ki-specifications" = "product"
+"https://github.com/knowledgeislands/ki-techne-harness" = "execution-harness"
+"https://github.com/knowledgeislands/ki-techne-principal" = "product"
+"https://github.com/knowledgeislands/ki-website" = "product"
+
+[skills.ki-agora.homes.ki-tools]
+owner = "https://github.com/knowledgeislands/ki-arcadia-principal"
+purpose = "The tools-* repository family and its closely related governance, execution, and distribution repositories"
+
+[skills.ki-agora.homes.ki-tools.members]
+"https://github.com/knowledgeislands/homebrew-tap" = "distribution"
+"https://github.com/knowledgeislands/ki-agentic-harness" = "governance-harness"
+"https://github.com/knowledgeislands/ki-techne-harness" = "execution-harness"
+"https://github.com/knowledgeislands/tools-git-almanac" = "product"
+"https://github.com/knowledgeislands/tools-ki" = "product"
+"https://github.com/knowledgeislands/tools-mgit" = "product"
+"https://github.com/knowledgeislands/tools-rig" = "product"
+"https://github.com/knowledgeislands/tools-techne" = "product"
