@@ -1,8 +1,8 @@
 # Knowledge Islands fundamentals amendment plan
 
-Status: FND-2 preparation for review; no amendment authorised
+Status: FND-2 implementation authorised
 
-Campaign: `KI-ARCADIA-GOV-009`
+Campaign: `KI-ARCADIA-ECO-001`
 
 ## Outcome
 
@@ -24,7 +24,7 @@ The Harness continues to publish reusable capabilities that govern or support MC
 
 The empty MCP shelf and five-part Harness-source claim should be removed through receiver-owned Harness work. Shared production-library code is not placed in the Harness by default. MCP-3 must first show that conformance alone is insufficient and that a separately governed shared source satisfies R1 or R2.
 
-Arcadia becomes the home of `ki-all`, `ki-fnd`, and `ki-mcps` because they are estate coordination Agoras. Membership expresses reciprocal participation in a working set; it transfers no source, product, release, priority, implementation, or acceptance authority. Rehome the MCP group after OAI-1 so the retiring Codex repository is never repointed.
+Arcadia owns the estate coordination Agoras `ki-all`, `ki-fnd`, `ki-mcps`, and `ki-tools`. `ki-all` contains every governed ecosystem repository. `ki-fnd` contains the canonical `ki-*` family. `ki-mcps` contains `mcp-*` products plus the Agentic Harness and Techne Harness. `ki-tools` contains `tools-*` products plus `homebrew-tap`, the Agentic Harness, and Techne Harness. Prefix selection defines the expected set, but every membership is explicit and reciprocal. Membership transfers no source, product, release, publication, priority, routing, implementation, or acceptance authority. `KI-ARCADIA-ECO-002` moves the non-MCP groups directly; OAI-1 moves `ki-mcps` after the merge so the retiring Codex repository is never repointed.
 
 ### Harness receiver change
 
@@ -105,7 +105,8 @@ The Decision should route work as follows:
 - **Repository structure standards** are reusable Agentic Harness governance capabilities; each repository owns its local declarations, implementation, conformance, and accepted exceptions.
 - **`tools-ki`** owns generic repository host mechanics and the public `ki` command grammar.
 - **`ki-techne-harness`** owns the Techne execution-harness applications, controller and execution-fabric implementation, runtime packaging, deployment, and provider adapters.
-- **`tools-techne`** owns the independently released Techne operator CLI once its source and KI repository contract are established; until then it is a reserved target, not a governed authority.
+- **`tools-techne`** owns the independently released Techne operator CLI, its source, release contract, and repository governance.
+- **`apps-observatory`** owns the Observatory application, evidence presentation and history, and governed operator experience; machine contracts and provider access remain with their natural owners.
 - **Each tool or MCP product repository** owns its executable source, product behaviour, provider policy, schemas, trust boundary, compatibility, tests, build identity, release artefact, and lifecycle state.
 - **KI Website** owns public editorial publication without acquiring source authority.
 - **KI Plugins** owns generated runtime packaging and projection without acquiring Harness semantics.
@@ -129,7 +130,7 @@ These categories must not substitute for one another:
 - MCP product, standalone CLI, Website, plugin, Homebrew, Specifications, and chezmoi shapes remain overlays on a Project base; and
 - `ki-engineering` and code presence are cross-cutting implementation concerns, not another base structure.
 
-The target register should cover all 22 post-OpenAI repositories: two principal Knowledge Bases; the agentic Harness; eight MCP products; five standalone CLI repositories including `tools-techne`; `ki-techne-harness`; Website; Plugins; Homebrew; Specifications; and dotfiles. `tools-techne` remains explicitly pending until its source and universal repository contract exist. No reusable execution-harness overlay should be invented for the single `ki-techne-harness` case.
+The target register covers all 23 post-OpenAI repositories: two principal Knowledge Bases and 21 Projects comprising the agentic Harness, eight MCP products, five standalone CLI products including `tools-techne`, `ki-techne-harness`, Website, Plugins, Homebrew, Specifications, `apps-observatory`, and dotfiles. No reusable execution-harness overlay should be invented for the single `ki-techne-harness` case.
 
 The enforceable V0.x repository standard should make `repo_type = "project" | "kb"` explicit, with exactly one matching primary structure declaration. That mechanical change remains receiver-owned Harness and repository alignment work rather than Decision Record implementation detail.
 
@@ -153,7 +154,9 @@ The Decision should state that Arcadia originates and tracks estate-wide initiat
 - evidence and current disposition; and
 - the completion condition.
 
-Every receiving repository retains ownership of its local work record, implementation, verification, commit, and acceptance. Arcadia's campaign role is directional governance and completion tracking, not central implementation authority.
+Questions route first to a natural repository owner. A clear bilateral handoff uses a direct handoff or declared trade route. Cross-estate work, ownership ambiguity, or work with no natural home uses an Arcadia `ECO` coordination record. Arcadia owns the question, participant set, routing, evidence, and estate roll-up. Unassigned implementation cannot become Ready until a receiver accepts it or a new repository is justified under R1, R2, or R3.
+
+Every receiving repository retains ownership of its local work record, implementation, verification, commit, release, and acceptance. Arcadia's campaign role is directional governance and completion tracking, not central implementation authority.
 
 The estate Agoras are Arcadia-owned coordination declarations. A member independently consents to participation, and membership grants no source ownership, product membership, priority, work-routing, release, or acceptance authority.
 
@@ -193,26 +196,26 @@ Arcadia's current `ki-trades` declaration does not provide estate-wide work rout
 
 ## Post-merge extension through ALIGN-1
 
-The later target is the 21 surviving Knowledge Islands repositories plus `krisb/dotfiles`. Do not install the amended projection in the retiring `mcp-housekeeping-codex` repository.
+The later target is the 22 surviving Knowledge Islands organisation repositories plus `krisb/dotfiles`. Do not install the amended projection in the retiring `mcp-housekeeping-codex` repository.
 
 Beyond the initial six:
 
 - nine surviving repositories already have Decision Record collections and can receive the shared record through local alignment: WhatsApp, Git Audit, Google Workspace, Claude housekeeping, KI KB filesystem, Notion mirror, Microsoft 365, Git Almanac, and Rig;
 - dotfiles also has a conforming Decision Record collection and can carry the normal projection;
-- Homebrew Tap, KI Plugins, `ki-techne-harness`, and `tools-mgit` need a local Decision Records collection before accepting a shared foreign-scope record; and
+- Homebrew Tap, KI Plugins, `ki-techne-harness`, `tools-mgit`, `tools-techne`, and `apps-observatory` need a local Decision Records collection before accepting a shared foreign-scope record; and
 - the renamed OpenAI housekeeping repository inherits ChatGPT's skill declaration but needs its collection established as part of its post-merge alignment.
 
-`tools-techne` needs the universal KI repository contract, stable repository code, work adapter, source and release identity, and a Decision Records collection before accepting a projection or ALIGN-1 item.
+`tools-techne` and `apps-observatory` are ordinary governed ALIGN-1 receivers. Their local item decides whether to establish a Decision Records collection or record a canonical pointer exception.
 
 KI Plugins additionally needs a valid work adapter, stable repository code, and issue ledger before any local item can be issued. Any pointer instead of a full projection is an explicit repository-contract exception; it is not inferred from missing infrastructure.
 
-## Review decisions required
+## Approved implementation decisions
 
-Before implementation, review and approve:
+The maintainer approved:
 
-- the five-dimension factorisation model, two-base structure vocabulary, target 22-repository register, and direct V0.x move to explicit `repo_type = "project" | "kb"`;
+- the five-dimension factorisation model, two-base structure vocabulary, current 23-repository post-merge register, and direct V0.x move to explicit `repo_type = "project" | "kb"`;
 - the classification of executable MCPs as independently owned products rather than Harness capability members;
-- removal of the empty Harness MCP source shelf and rehoming of the three estate Agoras to Arcadia through receiver-owned work;
+- removal of the empty Harness MCP source shelf and Arcadia ownership of four estate Agoras through reciprocal receiver-owned declarations;
 - the proposed responsibility wording and whether `ki-techne-harness` packaging/deployment wording is at the right altitude;
 - the six-copy initial receiving set;
 - present-state date handling and the absence of amendment history;

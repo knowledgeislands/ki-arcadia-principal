@@ -162,11 +162,12 @@ The evidence supports these changes to the consolidated plan:
 - update the six existing fundamentals projections in FND-2 and extend only through post-merge ALIGN-1;
 - use the Decision Records living-record rule: advance the current as-of date and do not add amendment history;
 - remove executable MCP products and the empty MCP source shelf from the Harness capability model while retaining MCP governance and conformance skills;
-- rehome the estate coordination Agoras to Arcadia without changing independent repository ownership;
+- establish four Arcadia-owned estate coordination Agoras through explicit reciprocal declarations without changing independent repository ownership;
 - describe Specifications as dormant for KIPs and KISs rather than literally empty;
 - treat Plugins drift as measured, not merely suspected;
 - add MCP build provenance as an operational gap;
-- add `ki-plugins` work-adapter enablement and the confirmed ledger, roadmap, and Decision Record findings to FND-3; and
+- add `ki-plugins` work-adapter enablement and the confirmed ledger, roadmap, and Decision Record findings to FND-3;
+- add `apps-observatory` and governed `tools-techne` to the current inventory, alignment set, and structure register; and
 - retain WhatsApp and Techne Principal as moving observations until a final evidence cut.
 
 ## FND-1 disposition
@@ -188,3 +189,14 @@ After the earlier final recheck, the moving repositories settled again:
 - `tools-techne` was clean at its initial commit `46be296837b6`, still with only `README.md` and no KI contract.
 
 These revisions supersede the earlier Harness and Techne Harness worktree warnings for structure planning only. Receiver-owned delivery must still re-read its own baseline immediately before implementation.
+
+## Current-state recheck - 2026-09-24
+
+This recheck supersedes the earlier structure, count, work-routing-readiness, and receiver-state claims without rewriting the dated revision-specific MCP and test evidence above.
+
+- The current pre-merge estate contains 24 repositories: 23 in the Knowledge Islands organisation plus `krisb/dotfiles`. The post-merge target contains 23: 22 organisation repositories plus dotfiles.
+- `apps-observatory` is a governed Project application at `c77cd0435ad841e2bad81b79ee4b54da1218f480`. It is an ALIGN-1 receiver and a true `ki-all` member.
+- `tools-techne` is a governed, operational Project with the tools overlay, source, repository code, work adapter, release contract, and implementation at `ed9cf4ddd05ff0f16c831db9ab3ac5e4f21d2034`. It is no longer an onboarding target.
+- The post-merge structure register is two Knowledge Bases and 21 Projects.
+- Twenty-three of the 24 current pre-merge repositories have a configured work adapter. `ki-plugins` remains the sole exception requiring a stable repository code, adapter, and issue ledger before local ALIGN-1 work can be issued.
+- The target coordination model has four Arcadia-owned Agoras: `ki-all`, `ki-fnd`, `ki-mcps`, and `ki-tools`. Family selection is explicitly materialised and reciprocally consented; membership grants no ownership or delivery authority.
