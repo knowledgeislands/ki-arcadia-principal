@@ -5,12 +5,12 @@ area: ECO
 title: Amend ecosystem fundamentals
 theme: ecosystem-coordination
 horizon: now
-status: ready
+status: in-progress
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: 67d386d8169673505516402249fbce57b39cb9c5
 created_at: 2026-09-24T08:33:22Z
-updated_at: 2026-09-24T08:33:22Z
+updated_at: 2026-09-24T08:40:00Z
 ---
 
 # Amend ecosystem fundamentals
@@ -45,7 +45,7 @@ It does not create KI-wide specifications, add projections to repositories outsi
 
 ## Steps
 
-- [ ] Record the immutable Arcadia baseline and mark the item In progress.
+- [x] Record the immutable Arcadia baseline and mark the item In progress.
 - [ ] Rewrite the Arcadia Decision Record and update its index gloss.
 - [ ] Install the same decision-owned projection in Techne Principal, Agentic Harness, `tools-ki`, KI Specifications, and KI Website.
 - [ ] Update each receiver's local index gloss without changing shared decision-owned content.
