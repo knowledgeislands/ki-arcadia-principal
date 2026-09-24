@@ -13,7 +13,7 @@ Roadmap records are Arcadia's finite, forward work. Each record is flat in this 
 
 ## Areas
 
-`GOV` covers Arcadia governance and operating-model changes. `MOD` covers the Knowledge Islands model and its canonical concepts. `OPS` covers Arcadia's tools, automation, and operating practice. `EXT` covers work that adopts or extracts the model across other islands and the wider ecosystem.
+`ECO` covers cross-estate coordination and work with no natural repository owner. Arcadia owns the question, participating set, routing, evidence, and estate roll-up; receiving repositories retain implementation, release, and acceptance. `GOV` covers Arcadia governance and operating-model changes. `MOD` covers the Knowledge Islands model and its canonical concepts. `OPS` covers Arcadia's tools, automation, and operating practice. `EXT` covers work that adopts or extracts the model across other islands and the wider ecosystem.
 
 ## Using the roadmap
 
