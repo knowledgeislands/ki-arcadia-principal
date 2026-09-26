@@ -3,9 +3,6 @@
   "description": "The core knowledge repository of the Knowledge Islands project — governance base, evolving KB, and decision record.",
   "version": "1.0.0",
   "author": "kris@kris.me.uk",
-  "bugs": {
-    "url": "https://github.com/knowledgeislands/ki-arcadia-principal/issues"
-  },
   "devDependencies": {
     "@biomejs/biome": "2.5.14",
     "@commitlint/cli": "^21.2.3",
