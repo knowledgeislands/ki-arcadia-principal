@@ -12,11 +12,10 @@ status: draft
 priority: medium
 horizon: future
 blocks: []
-blocked_by:
-  - KI-ARCADIA-GOV-009
+blocked_by: []
 baseline_ref: e3eedc265f40c9fe49ef02081d98cb4de5ab8c49
 created_at: 2026-09-22T06:37:24Z
-updated_at: 2026-09-22T06:37:24Z
+updated_at: 2026-09-26T18:10:38Z
 author: Written with Codex
 ---
 
@@ -30,7 +29,7 @@ After the Knowledge Islands ecosystem has completed its current consolidation an
 
 Rig's adaptive progress bar and human-readable table work expose a broader question. Several Knowledge Islands tools solve adjacent command-line concerns such as progress reporting, tables, help, diagnostics, completions, XDG paths, release surfaces, and shell or terminal behaviour. Similarity alone does not prove one implementation should own them, especially while repository boundaries and product responsibilities are still being consolidated.
 
-`KI-ARCADIA-GOV-009` and the consolidated factorisation roadmap establish the estate model and its later receiver-owned alignment work. This item is deliberately deferred until that consolidation is complete so it compares intended products rather than extracting from transitional copies.
+The completed factorisation campaign and consolidated roadmap establish the estate model and its later receiver-owned alignment work. This item remains deferred until that consolidation is complete so it compares intended products rather than extracting from transitional copies.
 
 ## Boundary
 
@@ -68,7 +67,7 @@ The ecosystem remains in consolidation. Rig now has a Bash 3.2-compatible adapti
 
 ## Dependencies / blocks
 
-Blocked by `KI-ARCADIA-GOV-009` as the current Arcadia consolidation anchor. Completion of that record alone is not sufficient: keep this item in Future until the consolidated factorisation roadmap's repository consolidation and alignment work is complete.
+No closed roadmap record blocks this item. Keep it in Future until the consolidated factorisation roadmap's repository consolidation and alignment work is complete.
 
 ## Documentation impact
 
