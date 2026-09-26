@@ -5,12 +5,12 @@ area: GOV
 title: Establish estate factorisation contract
 theme: governance
 horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-09-20T10:33:52Z
-updated_at: 2026-09-24T08:55:00Z
+updated_at: 2026-09-26T18:10:38Z
 ---
 
 # Establish estate factorisation contract
@@ -77,7 +77,7 @@ Read-only delegated reviews covered the Harness capability model, live dependenc
 
 The dated evidence, consolidated factorisation roadmap, and exact amendment plan now reflect the current estate and approved coordination model. Two bounded implementation records carry the canonical change and Agora cutover.
 
-### Summary of changes
+### Change Summary
 
 The planning set now includes Observatory, governed `tools-techne`, the 23-repository post-merge target, Arcadia default routing, the `ECO` area, and four target Agoras. It retains direct V0.x delivery without legacy migration or reversibility machinery.
 
@@ -97,6 +97,12 @@ The item achieved its evidence and planning goal without modifying receiver repo
 
 Arcadia now has a fixed ecosystem-coordination area and exact implementation records. Durable policy belongs in the amended fundamentals Decision Record; mutable membership belongs in reciprocal `.ki.toml` declarations.
 
-## Governance
+## Done
+
+Accepted 2026-09-26 by the maintainer after review of the delivery packet and verification evidence.
+
+## Discussion
+
+### Governance
 
 This roadmap record adheres to [[Enactment Process]]. Human review through `ki-accept` is required before closure.

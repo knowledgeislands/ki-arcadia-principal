@@ -5,12 +5,12 @@ area: ECO
 title: Rehome ecosystem Agoras
 theme: ecosystem-coordination
 horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: 1419d03170c5de0fa37ba8902d43fb9594851022
 created_at: 2026-09-24T08:33:22Z
-updated_at: 2026-09-24T09:20:00Z
+updated_at: 2026-09-26T18:10:38Z
 ---
 
 # Rehome ecosystem Agoras
@@ -79,7 +79,7 @@ Stop on a changed target `.ki.toml`, an identity mismatch, an unapproved family 
 
 Arcadia is now the reciprocal home of `ki-all`, `ki-fnd`, and `ki-tools`. Every current member independently declares the matching home and role. The Agentic Harness remains the healthy `ki-mcps` home until OAI-1.
 
-### Summary of changes
+### Change Summary
 
 `ki-all` now includes all 24 current pre-merge repositories, including Observatory and `tools-techne`. `ki-fnd` now contains Arcadia and the six canonical `ki-*` members only. `ki-tools` contains Arcadia, all five `tools-*` products, both harnesses, and `homebrew-tap` as a true `distribution` member. Dotfiles participates in `ki-all` with role `environment`.
 
@@ -126,6 +126,12 @@ The three independently executable working sets now match the approved repositor
 
 Arcadia now provides the central ecosystem coordination point requested by the factorisation review. The only deferred Agora change is the intentionally sequenced `ki-mcps` move under OAI-1.
 
-## Governance
+## Done
+
+Accepted 2026-09-26 by the maintainer after review of the delivery packet and verification evidence.
+
+## Discussion
+
+### Governance
 
 This roadmap record adheres to [[Enactment Process]]. Each repository independently consents by accepting its local declaration; Arcadia's home declaration cannot grant consent on its behalf.

@@ -5,12 +5,12 @@ area: ECO
 title: Amend ecosystem fundamentals
 theme: ecosystem-coordination
 horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: 67d386d8169673505516402249fbce57b39cb9c5
 created_at: 2026-09-24T08:33:22Z
-updated_at: 2026-09-24T09:08:00Z
+updated_at: 2026-09-26T18:10:38Z
 ---
 
 # Amend ecosystem fundamentals
@@ -83,7 +83,7 @@ Stop if a receiver copy has diverged semantically, a receiver's target file has 
 
 `GDR-KI-FUNDAMENTALS-001` now provides the present-state estate responsibility, routing, structure, boundary, and coordination contract in Arcadia and all five existing receivers.
 
-### Summary of changes
+### Change Summary
 
 The record now makes Arcadia the default coordination home where no natural repository owns a question, separates MCP products from the Agentic Harness, defines Project and Knowledge Base structures, records R1/R2/R3 boundary presumptions, keeps KI Specifications dormant before overall V1, and defines four Arcadia-owned Agoras with explicit reciprocal membership. The factorisation roadmap, amendment plan, and evidence appendix now include `apps-observatory`, governed `tools-techne`, and the 23-repository post-merge estate.
 
@@ -112,6 +112,12 @@ The shared record now answers where work belongs without transferring receiver i
 
 The estate has one current routing authority and six verified projections. The next independent unit is the non-MCP Agora cutover under `KI-ARCADIA-ECO-002`.
 
-## Governance
+## Done
+
+Accepted 2026-09-26 by the maintainer after review of the delivery packet and verification evidence.
+
+## Discussion
+
+### Governance
 
 This roadmap record adheres to [[Enactment Process]]. Arcadia coordinates the campaign; each receiver remains owner of its local projection, verification, commit, and acceptance.
