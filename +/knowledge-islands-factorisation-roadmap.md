@@ -34,9 +34,9 @@ The independent reviews remain unchanged historical inputs. A withdrawn recommen
 
 The following are inputs to the roadmap rather than open design questions:
 
-- Merge `mcp-housekeeping-chatgpt` and `mcp-housekeeping-codex` into `mcp-housekeeping-openai`.
+- Fold `mcp-housekeeping-codex` into `mcp-housekeeping-chatgpt`, retaining ChatGPT as the product-family name.
 - Support ChatGPT and Codex concurrently through separate adapters in the same server.
-- Keep `mcp-housekeeping-openai` private through the merge and review visibility separately afterwards.
+- Keep `mcp-housekeeping-chatgpt` private through the merge and review visibility separately afterwards.
 - Keep `mcp-housekeeping-claude` separate.
 - Create no estate-wide KIP, KIS, schema, or comparable portable specification before overall Knowledge Islands V1.
 - Keep `ki-specifications` as a dormant scaffold during this work.
@@ -126,7 +126,7 @@ The register below applies the structure vocabulary to the post-OpenAI target. E
 
 - **Principal Knowledge Bases — `ki-arcadia-principal`, `ki-techne-principal`.** Base: Knowledge Base. Overlays: principal, Streams, Activities, Live Artifacts, and local governance collections. Arcadia and Techne authority comes from `GDR-KI-FUNDAMENTALS-001`, not from the principal overlay.
 - **Agentic capability Harness — `ki-agentic-harness`.** Base: Project. Overlay: compatible agentic Harness, with target source shelves for skills, subagents, evals, and hooks. It owns reusable capability semantics and MCP governance or conformance, not executable MCP products.
-- **MCP products — eight surviving `mcp-*` repositories.** Base: Project. Overlay: MCP plus engineering. Each owns its executable, provider policy, trust boundary, build, and release while consuming Harness governance. `mcp-housekeeping-openai` replaces the ChatGPT and Codex pair.
+- **MCP products — eight surviving `mcp-*` repositories.** Base: Project. Overlay: MCP plus engineering. Each owns its executable, provider policy, trust boundary, build, and release while consuming Harness governance. `mcp-housekeeping-chatgpt` replaces the ChatGPT and Codex pair.
 - **Standalone CLI products — `tools-ki`, `tools-mgit`, `tools-rig`, `tools-git-almanac`, and `tools-techne`.** Base: Project. Overlay: standalone CLI tool; engineering applies where its toolchain fits.
 - **Application product — `apps-observatory`.** Base: Project. Overlay: application and current engineering bindings. It owns Observatory behaviour and operator experience without acquiring machine-contract or provider-source authority.
 - **Techne execution harness — `ki-techne-harness`.** Base: Project with engineering. Its “harness” is an execution-system product role, not the compatible agentic-Harness overlay. No new generic execution-harness structural overlay is justified while this shape occurs only once.
@@ -388,9 +388,9 @@ The initial suite should cover:
 
 ## Phase 3 - Consolidate the OpenAI housekeeping product
 
-### OAI-1 - Merge ChatGPT and Codex into `mcp-housekeeping-openai`
+### OAI-1 - Merge ChatGPT and Codex into `mcp-housekeeping-chatgpt`
 
-**What it is.** Rename the existing ChatGPT repository to `mcp-housekeeping-openai`, merge the Codex source into it under a clear adapter boundary, and expose both adapters from one server. ChatGPT is the receiving repository; no third repository is created.
+**What it is.** Keep the existing `mcp-housekeeping-chatgpt` repository, merge the Codex source into it under a clear adapter boundary, and expose both adapters from one server. ChatGPT is the receiving repository; no third repository is created.
 
 The product contract is:
 
@@ -402,13 +402,13 @@ The product contract is:
 - source-specific checkpoint and provenance schemas remain distinguishable; and
 - the repository remains private while the combined target is established.
 
-**Why it is justified.** The two repositories have the same visibility, version, supported runtime family, four-operation read-only outcome, and near-identical project scaffolding. Codex has no current registration, CI, release, or installed-state footprint, while ChatGPT is the deployed base. The merge therefore removes one maintenance boundary without combining different trust classes or disrupting an installed Codex service. `openai` is the smallest brand name that honestly covers both products; `chatgpt` would misdescribe Codex.
+**Why it is justified.** The two repositories have the same visibility, version, supported runtime family, four-operation read-only outcome, and near-identical project scaffolding. Codex has no current registration, CI, release, or installed-state footprint, while ChatGPT is the deployed base. The merge therefore removes one maintenance boundary without combining different trust classes or disrupting an installed Codex service. ChatGPT is the product-family name; Codex remains the explicit adapter name.
 
-**Owner and scope.** The existing `mcp-housekeeping-chatgpt` repository is renamed and remains the operational base. `mcp-housekeeping-codex` contributes its adapter and any useful source history. Dotfiles registrations change directly to the target name after the combined server passes its gates. The Harness-owned `ki-mcps` Agora is coordination rather than product ownership; after the merge, move the surviving MCP coordination group to Arcadia in one coordinated declaration change rather than repointing the retiring Codex member.
+**Owner and scope.** The existing `mcp-housekeeping-chatgpt` repository remains the operational base. `mcp-housekeeping-codex` contributes its adapter and any useful source history. Dotfiles registrations change directly to the target name after the combined server passes its gates. The Harness-owned `ki-mcps` Agora is coordination rather than product ownership; after the merge, move the surviving MCP coordination group to Arcadia in one coordinated declaration change rather than repointing the retiring Codex member.
 
-**Deliverables.** Renamed combined repository, ChatGPT and Codex adapter boundaries, concurrent-operation tests, independent failure tests, updated private repository metadata, registrations, and Agora membership, followed by retirement of the absorbed Codex repository.
+**Deliverables.** Combined ChatGPT-family repository, ChatGPT and Codex adapter boundaries, concurrent-operation tests, independent failure tests, updated private repository metadata, registrations, and Agora membership, followed by retirement of the absorbed Codex repository.
 
-**Completion gate.** Both adapters pass MCP-2 independently and together, the target repository has the final OpenAI identity everywhere, current machine binding points only to the target, and the old Codex repository is retired. No compatibility alias or rollback demonstration is required.
+**Completion gate.** Both adapters pass MCP-2 independently and together, the target repository has the final ChatGPT-family identity everywhere, current machine binding points only to the target, and the old Codex repository is retired. No compatibility alias or rollback demonstration is required.
 
 **Dependencies.** MCP-3 and clean working trees in both source repositories.
 
@@ -545,7 +545,7 @@ The item is an alignment review, not a demand that every repository adopt every 
 
 **Owner and scope.** Arcadia owns the shared alignment initiative, standard checklist, receiving set, and completion view. The Agentic Harness owns the skills and repository standards being applied. Each receiving repository owns its local record, applicability decisions, changes, verification, and acceptance. `tools-ki` may execute generic audits and conformance but does not decide the repository's responsibility.
 
-**Receiving set.** Issue the item to every surviving repository after OAI-1: the 22 Knowledge Islands organisation repositories plus `krisb/dotfiles`. Do not create an item for the retired `mcp-housekeeping-codex`; its relevant obligations move into `mcp-housekeeping-openai`. `tools-techne` and `apps-observatory` are ordinary governed receivers. `ki-plugins` first needs its separately owned work-adapter, repository-code, and issue-ledger repair.
+**Receiving set.** Issue the item to every surviving repository after OAI-1: the 22 Knowledge Islands organisation repositories plus `krisb/dotfiles`. Do not create an item for the retired `mcp-housekeeping-codex`; its relevant obligations move into `mcp-housekeeping-chatgpt`. `tools-techne` and `apps-observatory` are ordinary governed receivers. `ki-plugins` first needs its separately owned work-adapter, repository-code, and issue-ledger repair.
 
 **Deliverables.** One local roadmap or configured-adapter record per repository, a completed applicability checklist, exact changes or justified no-change findings, verification evidence, and an Arcadia roll-up showing every repository's disposition.
 
@@ -605,8 +605,8 @@ The roadmap's current disposition is:
 - Keep Arcadia Principal, Techne Principal, Agentic Harness, `tools-ki`, Specifications, Website, `ki-techne-harness`, Plugins, Homebrew tap, `tools-mgit`, `tools-rig`, Git Almanac, and `apps-observatory`.
 - Keep governed, operational `tools-techne` as the independently released Techne operator CLI repository.
 - Keep `mcp-m365`, `mcp-gsuite`, `mcp-git-audit`, `mcp-ki-kb-fs`, `mcp-ki-kb-notion-mirror`, `mcp-acquire-whatsapp`, and `mcp-housekeeping-claude` as separate products.
-- Rename `mcp-housekeeping-chatgpt` to `mcp-housekeeping-openai` and merge `mcp-housekeeping-codex` into it.
-- Retire `mcp-housekeeping-codex` after its source has been absorbed into `mcp-housekeeping-openai`; no compatibility redirect is required before V1.
+- Keep `mcp-housekeeping-chatgpt` and merge `mcp-housekeeping-codex` into it.
+- Retire `mcp-housekeeping-codex` after its source has been absorbed into `mcp-housekeeping-chatgpt`; no compatibility redirect is required before V1.
 - Keep `krisb/dotfiles` external, with explicit ownership of personal environment bindings.
 - Archive, split, or move no other repository under the present evidence. Do not invent a generic execution-harness overlay solely for `ki-techne-harness`; add one only if reusable structure recurs.
 

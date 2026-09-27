@@ -22,6 +22,11 @@ repo_code = "KI-ARCADIA"
 store_roles = ["notes"]
 
 [skills.ki-authoring]
+[skills.ki-binding]
+[skills.ki-binding-claude]
+[skills.ki-binding-chatgpt]
+[skills.ki-housekeeping-chatgpt]
+auto_memory = "disabled"
 
 # -----------------------------------------------------------------------------
 # Repository shape
@@ -51,6 +56,9 @@ scope = "KI-ARCADIA"
 # Change management
 # -----------------------------------------------------------------------------
 
+[skills.ki-agent-coordination-paperclip]
+organisation_code = "KIS"
+
 [skills.ki-git]
 
 [skills.ki-work]
@@ -69,7 +77,7 @@ folder_ids = ["2454f927-221b-4905-8583-a2daa85af625"]
 
 [skills.ki-tokenomics-claude]
 
-[skills.ki-tokenomics-codex]
+[skills.ki-tokenomics-chatgpt]
 
 # -----------------------------------------------------------------------------
 # Relationships
@@ -99,12 +107,12 @@ knowledge = ["public-source-change"]
 
 [skills.ki-agora]
 
-[skills.ki-agora.homes.ki-all]
+[skills.ki-agora.homes.kis]
 owner = "https://github.com/knowledgeislands/ki-arcadia-principal"
 purpose = "All governed Knowledge Islands ecosystem repositories"
 order = ["https://github.com/knowledgeislands/ki-arcadia-principal"]
 
-[skills.ki-agora.homes.ki-all.members]
+[skills.ki-agora.homes.kis.members]
 "https://github.com/knowledgeislands/apps-observatory" = "product"
 "https://github.com/knowledgeislands/homebrew-tap" = "distribution"
 "https://github.com/knowledgeislands/ki-agentic-harness" = "governance-harness"
@@ -128,31 +136,3 @@ order = ["https://github.com/knowledgeislands/ki-arcadia-principal"]
 "https://github.com/knowledgeislands/tools-rig" = "product"
 "https://github.com/knowledgeislands/tools-techne" = "product"
 "https://github.com/krisb/dotfiles" = "environment"
-
-[skills.ki-agora.homes.ki-fnd]
-owner = "https://github.com/knowledgeislands/ki-arcadia-principal"
-purpose = "The canonical ki-* repository family"
-order = ["https://github.com/knowledgeislands/ki-arcadia-principal"]
-
-[skills.ki-agora.homes.ki-fnd.members]
-"https://github.com/knowledgeislands/ki-agentic-harness" = "governance-harness"
-"https://github.com/knowledgeislands/ki-plugins" = "product"
-"https://github.com/knowledgeislands/ki-specifications" = "product"
-"https://github.com/knowledgeislands/ki-techne-harness" = "execution-harness"
-"https://github.com/knowledgeislands/ki-techne-principal" = "product"
-"https://github.com/knowledgeislands/ki-website" = "product"
-
-[skills.ki-agora.homes.ki-tools]
-owner = "https://github.com/knowledgeislands/ki-arcadia-principal"
-purpose = "The tools-* repository family and its closely related governance, execution, and distribution repositories"
-order = ["https://github.com/knowledgeislands/ki-arcadia-principal"]
-
-[skills.ki-agora.homes.ki-tools.members]
-"https://github.com/knowledgeislands/homebrew-tap" = "distribution"
-"https://github.com/knowledgeislands/ki-agentic-harness" = "governance-harness"
-"https://github.com/knowledgeislands/ki-techne-harness" = "execution-harness"
-"https://github.com/knowledgeislands/tools-git-almanac" = "product"
-"https://github.com/knowledgeislands/tools-ki" = "product"
-"https://github.com/knowledgeislands/tools-mgit" = "product"
-"https://github.com/knowledgeislands/tools-rig" = "product"
-"https://github.com/knowledgeislands/tools-techne" = "product"
