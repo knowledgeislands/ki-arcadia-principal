@@ -85,21 +85,21 @@ folder_ids = ["2454f927-221b-4905-8583-a2daa85af625"]
 
 [skills.ki-trades]
 map_bonus = 1
-routes."knowledgeislands/ki-specifications" = { export = ["knowledge"] }
-routes."knowledgeislands/ki-techne-principal" = { export = ["knowledge"] }
 
 [skills.ki-trades.routes."knowledgeislands/ki-agentic-harness"]
 export = ["work", "knowledge"]
 import = ["knowledge"]
+standing.export.knowledge = ["shared-capability-maintenance"]
 
-[skills.ki-trades.routes."knowledgeislands/ki-agentic-harness".standing.export]
-knowledge = ["shared-capability-maintenance"]
+[skills.ki-trades.routes."knowledgeislands/ki-specifications"]
+export = ["knowledge"]
+
+[skills.ki-trades.routes."knowledgeislands/ki-techne-principal"]
+export = ["knowledge"]
 
 [skills.ki-trades.routes."knowledgeislands/ki-website"]
 export = ["knowledge"]
-
-[skills.ki-trades.routes."knowledgeislands/ki-website".standing.export]
-knowledge = ["public-source-change"]
+standing.export.knowledge = ["public-source-change"]
 
 [skills.ki-agora]
 
