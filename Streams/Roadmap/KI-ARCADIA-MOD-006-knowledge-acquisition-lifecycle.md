@@ -14,7 +14,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-08-23T12:33:49Z
-updated_at: 2026-08-23T12:33:49Z
+updated_at: 2026-09-27T22:02:31Z
 ---
 
 # Knowledge Acquisition Lifecycle
@@ -82,3 +82,11 @@ The first operation must favour preservation over interpretation. Opaque source 
 ### Source retirement
 
 Archive and deletion require a later, provider-specific safety decision. Successful discovery, staging, or even harvesting alone does not authorise source mutation.
+
+### Pickup checkpoint - 2026-09-27
+
+Before further implementation, reconcile the current destination branch, linked coordination tasks, and retained worktrees where applicable. Missing evidence does not release ownership or a hold; this checkpoint is guidance, not a mechanical execution block.
+
+- **Observed:** `ADR-KI-ARCADIA-001` establishes the provider-neutral lifecycle, and the Context identifies initial read-only housekeeping and repository-context staging evidence. Those are foundations, not the common provenance package or retirement policy sought by this record.
+- **Resolve:** Verify one direct local source and one export/API-style source against the same acquisition and staging evidence. Settle the provenance record, harvest checkpoint, imperfect-routing handling, and source archive/deletion threshold; leave provider mechanics with their owning repositories.
+- **Close:** Review the provider-neutral documentation and source-class evidence against the Goal before seeking owner acceptance through `ki-accept`. Retain the `done` record; pruning is a later explicit owner choice.

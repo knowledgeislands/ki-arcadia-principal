@@ -10,7 +10,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-09-27T17:43:10Z
-updated_at: 2026-09-27T17:43:10Z
+updated_at: 2026-09-27T22:02:31Z
 ---
 
 # Simplify Ecosystem Agora Declarations
@@ -39,6 +39,14 @@ Amend the existing living shared Decision Record in place. Its replacement Agora
 - No `.ki.toml` declares `ki-all`, `ki-fnd`, `ki-mcps`, or `ki-tools`.
 - Current user guidance names `kis`; historical evidence and test fixtures may retain old identifiers as examples.
 - Decision Record audits pass in repositories whose shared copy changes.
+
+### Pickup checkpoint - 2026-09-27
+
+Before further implementation, reconcile the current destination branch, linked coordination tasks, and retained worktrees where applicable. Missing evidence does not release ownership or a hold; this checkpoint is guidance, not a mechanical execution block.
+
+- **Observed:** `ki agora audit kis` reports one healthy profile with no findings. The live declaration work described above is present, while `GDR-KI-FUNDAMENTALS-001` still names the four retired groups.
+- **Resolve:** Treat the Decision Record amendment and any shared-copy reconciliation as the remaining canonical change. Verify the proposed roles and memberships against live declarations, then adopt and plan this Triage record through the Enactment Process before editing canonical content. Re-run the Agora and Decision Record checks after delivery.
+- **Close:** A healthy live audit alone does not close this draft. After the canonical amendment is reviewed, seek owner acceptance through `ki-accept`, retain the `done` record, and leave pruning for a later explicit selection.
 
 ## Governance
 

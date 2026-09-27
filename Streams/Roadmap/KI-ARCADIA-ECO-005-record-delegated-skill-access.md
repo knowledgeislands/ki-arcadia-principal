@@ -10,7 +10,7 @@ blocks: []
 blocked_by: []
 baseline_ref: 95f85a1a14ab9ff2834fe6d4f32355754e6de708
 created_at: 2026-09-26T16:22:01Z
-updated_at: 2026-09-27T16:56:00Z
+updated_at: 2026-09-27T22:02:31Z
 ---
 
 # Record How Delegated Agents Reach Governance Skills
@@ -72,3 +72,11 @@ This roadmap record adheres to [[Enactment Process]]. The Agentic Harness owns t
 ### Retained provenance
 
 The originating diagnosis and sharing boundary remain in Arcadia. Reusable guidance and any runtime-specific downstream changes are coordinated from KI-HARNESS-GOV-118; no Agora membership or display order transfers implementation authority.
+
+### Pickup checkpoint - 2026-09-27
+
+Before further implementation, reconcile the current destination branch, linked coordination tasks, and retained worktrees where applicable. Missing evidence does not release ownership or a hold; this checkpoint is guidance, not a mechanical execution block.
+
+- **Observed:** The harness-owned `KI-HARNESS-GOV-118` record exists, and the first local Step is checked. Its implementation remains the harness's work, not a prerequisite for closing this Arcadia handoff.
+- **Resolve:** Compare the harness record with the reported failure, evidence limits, reciprocal origin, and authority boundary. Record any correction request there, then verify whether Arcadia's remaining two Steps are complete.
+- **Close:** Once the local handoff is verified, prepare its delivery review packet and seek owner acceptance through `ki-accept`. Retain the `done` record; leave pruning to a later explicit owner selection.

@@ -13,7 +13,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-29T00:09:30Z
-updated_at: 2026-08-18T13:08:06Z
+updated_at: 2026-09-27T22:02:31Z
 author: Written with Claude
 ---
 
@@ -61,6 +61,14 @@ Two existing patterns conflict for the `Tools/Claude/Activities/{group}/` Prompt
 ### Contextual review - reading order walk
 
 A step-by-step pass down the reading order checking that every concept is introduced before it is used. The known tension points from the original review were in the Residency and Format areas; the migration may have introduced new gaps, particularly around concepts that appear in the Model chapters before the Introduction has fully grounded them.
+
+### Pickup checkpoint - 2026-09-27
+
+Before further implementation, reconcile the current destination branch, linked coordination tasks, and retained worktrees where applicable. Missing evidence does not release ownership or a hold; this checkpoint is guidance, not a mechanical execution block.
+
+- **Observed:** The three-act tree now sits under `Pillars/Philosophy/`, not the `Pillars/Knowledge Islands/` path in the Overview. The structural migration reported there is real, but the named index-note inventory in Outstanding Work predates later moves; for example, `Model/Model.md` and `Realisation/Realisation.md` are absent at their current paths.
+- **Resolve:** Re-enumerate current folders and their index notes before creating anything. Replace the stale missing-note list with current paths, then assess reading order, chapter introductions, links, and contextual completeness against that tree. Do not recreate retired folders just to satisfy this historical list.
+- **Close:** Separate verified structural work from remaining editorial work in the review packet. Seek owner acceptance through `ki-accept` only once the current reading-order outcomes are met; retain the `done` record and leave pruning to a later explicit selection.
 
 ## Adherence
 

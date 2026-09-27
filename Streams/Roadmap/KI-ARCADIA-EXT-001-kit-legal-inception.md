@@ -13,7 +13,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-27T19:18:58Z
-updated_at: 2026-08-18T13:08:06Z
+updated_at: 2026-09-27T22:02:31Z
 author: Written with Claude
 ---
 
@@ -23,7 +23,7 @@ author: Written with Claude
 
 `kit-legal` is a satellite island of the Kit archipelago. It needs adding to the Cowork project and then bootstrapping into the Knowledge Islands model.
 
-Local path: `~/kis/krisb/kit-legal`
+Historical local path: `~/kis/krisb/kit-legal`. Resolve the current checkout through the local KI registry before pickup.
 
 ---
 
@@ -35,7 +35,7 @@ This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment
 
 ## Status
 
-Pending - not yet started. Depends on ki-arcadia-principal governance being stable.
+Partially evidenced in the receiving repository; the original "not yet started" assessment is obsolete. Completion of the remaining steps has not been verified.
 
 ---
 
@@ -47,6 +47,14 @@ Pending - not yet started. Depends on ki-arcadia-principal governance being stab
 4. Create or update `CLAUDE.md` to reflect the Knowledge Islands model
 5. Create `Pillars/Philosophy/Known Lands.md` - the satellite's personal chart of known islands
 6. Link back to ki-arcadia-principal concepts where relevant
+
+### Pickup checkpoint - 2026-09-27
+
+Before further implementation, reconcile the current destination branch, linked coordination tasks, and retained worktrees where applicable. Missing evidence does not release ownership or a hold; this checkpoint is guidance, not a mechanical execution block.
+
+- **Observed:** The current `kit-legal` checkout has a `.ki.toml`, `AGENTS.md`, `CLAUDE.md`, and `Admin/Governance/Charter.md`. These establish that repository setup and governance authoring have progressed beyond the original Status. This checkpoint did not verify the Cowork mount, the quality of those documents, or every cross-island link.
+- **Resolve:** Reconcile each original Step against the current KI layout before changing the receiving repository. Step 3's `Pillars/Admin/Governance/` path is historical; inspect the existing `Admin/Governance/` instead. Determine whether a Known Lands note and the required Arcadia links exist at their current governed locations, and verify the Cowork project separately.
+- **Close:** Record evidence for each fulfilled Step and the disposition of any superseded Step. Once the receiving repository's owner confirms the inception scope is satisfied, prepare the review packet and seek owner acceptance through `ki-accept`. Retain the `done` record; pruning is a later explicit owner choice.
 
 ## Adherence
 

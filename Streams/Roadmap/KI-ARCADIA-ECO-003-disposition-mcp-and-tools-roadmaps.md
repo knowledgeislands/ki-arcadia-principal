@@ -10,7 +10,7 @@ blocks: []
 blocked_by: []
 baseline_ref: 95f85a1a14ab9ff2834fe6d4f32355754e6de708
 created_at: 2026-09-26T16:22:01Z
-updated_at: 2026-09-26T16:22:01Z
+updated_at: 2026-09-27T22:02:31Z
 ---
 
 # Disposition the MCP and Tools Roadmap Backlog
@@ -90,6 +90,14 @@ Two questions are the owner's and were left open when the batch was delivered.
 The live-smoke allowlist in `mcp-acquire-whatsapp` omitted `whatsapp_history_backfill_run` from an otherwise sixteen-of-nineteen list. The delivering agent permitted it. Confirm that permission or prohibit the tool explicitly, so the omission is a decision rather than an oversight.
 
 The protocol-profile records were promoted off `soon` inconsistently: three to `now` and two to `next`. The horizons no longer affect the delivered work, but the inconsistency should be settled before the records close so the estate reads coherently.
+
+### Pickup checkpoint - 2026-09-27
+
+Before further implementation, reconcile the current destination branch, linked coordination tasks, and retained worktrees where applicable. Missing evidence does not release ownership or a hold; this checkpoint is guidance, not a mechanical execution block.
+
+- **Observed:** The Context reports fourteen delivered records and seven conformance-audit proposals whose opening condition has passed. That is evidence to reconcile, not an acceptance decision for any receiving repository; none of this record's Steps is checked.
+- **Resolve:** Recheck each named receiver record and its current owner decision. Record the exact accepted delivery or approved terminal Triage disposition beside each entry, and preserve reciprocal references. Do not infer either decision from a passing audit or a completed implementation.
+- **Close:** Review this coordination record only after all twenty-one entries have an evidenced disposition. Seek owner acceptance through `ki-accept`, retain the `done` record, and leave pruning to a later explicit owner selection.
 
 ## Governance
 

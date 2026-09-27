@@ -13,7 +13,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-30T07:53:50Z
-updated_at: 2026-08-18T13:08:06Z
+updated_at: 2026-09-27T22:02:31Z
 author: Written with Claude
 ---
 
@@ -149,6 +149,14 @@ Role-name mentions across the Pillars notes in scope, regenerated after the prom
 ※ The activity is now a Claude-specific Prompt note at `Tools/Claude/Activities/Tending/Scheduled Task Audit.md`. Per the existing convention, `Tools/Claude/Activities/` is "legitimately island-specific" and excluded from the shared-notes list - so the entry should be removed rather than relocated.
 
 ❡ Two patterns coexist: Conformance Prompt note uses `card/prompt` with `# X - Prompt` title and explicit `Definition: [[...]] Configuration: [[...]]` cross-link; the newly migrated Prompt notes use `card/note` with a plain `# X` title and no cross-link. Captured for review in [[Streams/Roadmap/KI-ARCADIA-MOD-001-reading-order|Reading order]] - the decision will affect the capitalisation pass.
+
+### Pickup checkpoint - 2026-09-27
+
+Before further implementation, reconcile the current destination branch, linked coordination tasks, and retained worktrees where applicable. Missing evidence does not release ownership or a hold; this checkpoint is guidance, not a mechanical execution block.
+
+- **Observed:** The mechanical renaming pass described in Soon was closed separately. The Phase Summary still marks all four phases of this record's structural rewrite as not started; that earlier closure is not completion of this item.
+- **Resolve:** Verify current reader-facing layer labels and note locations, then carry out or explicitly re-scope the Authoring Guidelines restructure, per-group index pass, capitalisation pass, and cross-check. Do not repeat the completed renaming pass as new work.
+- **Close:** Seek owner acceptance through `ki-accept` only after this record's own phases have a reviewed outcome. Retain the `done` record; pruning is a later explicit owner choice.
 
 ## Adherence
 

@@ -10,7 +10,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-09-26T16:26:40Z
-updated_at: 2026-09-26T16:26:40Z
+updated_at: 2026-09-27T22:02:31Z
 ---
 
 # Reconcile GitHub Live Settings with the Declared Contract
@@ -46,3 +46,11 @@ Disabling Issues affirms that `Streams/Roadmap/` is Arcadia's single forward-wor
 ### Verification
 
 `ki repo audit --skill ki-repo` is the gate. It reads live GitHub state, so it will keep failing until the settings change has actually been applied, which makes it a usable check rather than a formality.
+
+### Pickup checkpoint - 2026-09-27
+
+Before further implementation, reconcile the current destination branch, linked coordination tasks, and retained worktrees where applicable. Missing evidence does not release ownership or a hold; this checkpoint is guidance, not a mechanical execution block.
+
+- **Observed:** Commit `1cc7136` removed the local `package.json` `bugs` field; this checkout is still one commit ahead of `origin/main`. The GitHub API was unavailable at this checkpoint, so the current Issues toggle and topics were not verified.
+- **Resolve:** Re-run `ki repo audit --skill ki-repo` against live GitHub state. Confirm the selected single-queue resolution with the owner, reconcile Issues and any related `KI-ARCADIA-GOV-006` topics work within the approved scope, and push only with separate authority. Do not treat the local commit as a live-settings fix.
+- **Close:** This is a Triage draft, not a delivered record. If work remains, adopt and deliver it through the shared lifecycle; if another retained record fully owns it, seek an exact approved Triage disposition. Retain any `done` record and leave pruning to a later explicit owner selection.

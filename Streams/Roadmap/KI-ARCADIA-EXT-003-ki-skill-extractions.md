@@ -15,7 +15,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-06-25T15:59:04Z
-updated_at: 2026-08-18T13:08:06Z
+updated_at: 2026-09-27T22:02:31Z
 author: Written with Claude
 ---
 
@@ -68,6 +68,14 @@ Identified during the Admin normalisation session (June 2026, GDR-KI-ARCADIA-002
 - The `knowledgeislands-kb` skill is the natural home for the Admin zone, Conventions, and Charter patterns - it already governs zone structure.
 - A standalone `knowledgeislands-activities` skill would allow any island to get the activity naming and index convention for free.
 - The `knowledgeislands-harness` repo is where the extracted skills would live.
+
+### Pickup checkpoint - 2026-09-27
+
+Before further implementation, reconcile the current destination branch, linked coordination tasks, and retained worktrees where applicable. Missing evidence does not release ownership or a hold; this checkpoint is guidance, not a mechanical execution block.
+
+- **Observed:** The harness now provides `ki-repo-kb-activities` and `ki-repo-kb-live-artifacts`; `ki-repo-kb-principal` covers the principal Admin/Charter overlay; and `ki-repo-kb` ships zone-scoped note templates. The candidate table's "no skill" statements are historical, not a current inventory.
+- **Resolve:** Map all six extraction candidates to the current skill contracts. Verify actual coverage, especially general Admin/Conventions rules versus the principal-only overlay and any Charter checker beyond structural presence. Record a receiver-owned work item for each genuine gap or explicitly retire the candidate with evidence.
+- **Close:** Do not equate the presence of a similarly named skill with full delivery. After the mapping and any required receiver handoffs are reviewed, seek owner acceptance through `ki-accept` and retain the `done` record. Pruning is a later explicit owner choice.
 
 ## Related
 

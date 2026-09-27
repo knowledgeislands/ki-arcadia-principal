@@ -15,7 +15,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-06-29T17:12:25Z
-updated_at: 2026-08-18T13:08:06Z
+updated_at: 2026-09-27T22:02:31Z
 ---
 
 # Agentic Tool Documentation Proposal
@@ -43,6 +43,14 @@ Gaps being filled:
 **Phase 2 — System map**: a note in `Pillars/Technē/` that shows how the harness, MCPs, KB, and website interrelate as a system.
 
 **Phase 3 — Realisation principle**: author `Pillars/Philosophy/Realisation/Arcadia/Arcadia.md` to formally state that ki-website is the public realisation of ki-arcadia-principal and name the current architectural gap.
+
+### Pickup checkpoint - 2026-09-27
+
+Before further implementation, reconcile the current destination branch, linked coordination tasks, and retained worktrees where applicable. Missing evidence does not release ownership or a hold; this checkpoint is guidance, not a mechanical execution block.
+
+- **Observed:** All five tool notes named in Phase 1 are present and non-empty under `Pillars/Philosophy/Model/Tools/`. `Pillars/Technē/Tool Ecosystem Map.md` covers the Phase 2 system map. `Pillars/Philosophy/Realisation/Arcadia/Arcadia.md` covers the Phase 3 publication relationship and describes the remaining source-labelled vendor-path gap.
+- **Resolve:** Review those seven notes against the three phase outcomes, especially whether the current framework-level website description supersedes the original wording that called it Arcadia's public realisation. Record any actual content gap here rather than re-creating an existing note.
+- **Close:** If the reviewed outputs satisfy the scope, prepare the required delivery review packet and seek owner acceptance through `ki-accept`. Mark this record `done` only after that review; retain the accepted record. Pruning is a separate later owner choice.
 
 ## Adherence
 
