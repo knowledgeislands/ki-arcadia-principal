@@ -18,6 +18,7 @@ supported_runtimes = ["claude-code", "claude-desktop", "chatgpt-codex"]
 visibility = "public"
 license = "MIT"
 repo_type = "kb"
+primary_shape = "ki-repo-kb"
 repo_code = "KI-ARCADIA"
 store_roles = ["notes"]
 
