@@ -102,6 +102,7 @@ knowledge = ["public-source-change"]
 [skills.ki-agora.homes.ki-all]
 owner = "https://github.com/knowledgeislands/ki-arcadia-principal"
 purpose = "All governed Knowledge Islands ecosystem repositories"
+order = ["https://github.com/knowledgeislands/ki-arcadia-principal"]
 
 [skills.ki-agora.homes.ki-all.members]
 "https://github.com/knowledgeislands/apps-observatory" = "product"
@@ -131,6 +132,7 @@ purpose = "All governed Knowledge Islands ecosystem repositories"
 [skills.ki-agora.homes.ki-fnd]
 owner = "https://github.com/knowledgeislands/ki-arcadia-principal"
 purpose = "The canonical ki-* repository family"
+order = ["https://github.com/knowledgeislands/ki-arcadia-principal"]
 
 [skills.ki-agora.homes.ki-fnd.members]
 "https://github.com/knowledgeislands/ki-agentic-harness" = "governance-harness"
@@ -143,6 +145,7 @@ purpose = "The canonical ki-* repository family"
 [skills.ki-agora.homes.ki-tools]
 owner = "https://github.com/knowledgeislands/ki-arcadia-principal"
 purpose = "The tools-* repository family and its closely related governance, execution, and distribution repositories"
+order = ["https://github.com/knowledgeislands/ki-arcadia-principal"]
 
 [skills.ki-agora.homes.ki-tools.members]
 "https://github.com/knowledgeislands/homebrew-tap" = "distribution"
