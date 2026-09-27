@@ -10,14 +10,14 @@ blocks: []
 blocked_by: []
 baseline_ref: 95f85a1a14ab9ff2834fe6d4f32355754e6de708
 created_at: 2026-09-26T16:22:01Z
-updated_at: 2026-09-26T16:22:01Z
+updated_at: 2026-09-27T16:56:00Z
 ---
 
 # Record How Delegated Agents Reach Governance Skills
 
 ## Goal
 
-Write down, where a delegating agent will read it before writing a prompt, that the Knowledge Islands governance skills are not invocable through the runtime `Skill` tool, and that a delegated agent must read them from the Agentic Harness working tree instead.
+Preserve the observed delegation-access failure and its handoff to the harness-owned principal ticket, so the reusable remedy has one delivery owner rather than a second implementation plan in Arcadia.
 
 ## Context
 
@@ -31,29 +31,33 @@ This is a fact about how the skill estate is installed, not a fault in any one p
 
 Arcadia records the finding and hands it over. It does not change the harness, alter what `ki bootstrap` installs, or decide whether the governance skills should become installed user skills. The receiving repository owns that question. If the answer is to install them, this record's observation becomes obsolete rather than authoritative, so the harness must own the wording.
 
+## Coordination
+
+[KI-HARNESS-GOV-118](https://github.com/knowledgeislands/ki-agentic-harness/blob/main/docs/roadmap/KI-HARNESS-GOV-118-resolve-delegated-skill-access.md) is the principal delivery record. It owns fresh runtime grounding, the supported access route, any bounded downstream implementation records and final verification. The principal approved this ownership split on 27 September 2026; the existing Next / draft position is preserved in both this originating handoff record and the relocated principal scope, without implementation approval.
+
+Arcadia retains the dated batch observation and local handoff verification only. The installation claims in Context remain historical evidence, not a standing assertion about every current runtime. Creating the principal ticket is not delivery or acceptance of its outcome.
+
 ## Steps
 
-- [ ] Re-confirm the installed skill set and the harness governance set before handing over; both may have changed since 2026-09-26.
-- [ ] Open a receiver-owned record in `ki-agentic-harness` to document how a delegated agent reaches a governance skill, naming this record as the origin.
-- [ ] Let the harness decide between documenting the harness path in its delegation guidance and installing the governance skills so the `Skill` tool resolves them.
-- [ ] Ensure whatever the harness decides is reachable from `ki-delegation`, since that is the skill a delegating agent reads before writing a prompt.
-- [ ] Mark this record `done` once the harness record exists, whatever the harness chooses to do about it.
+- [x] Establish the harness-owned principal record, KI-HARNESS-GOV-118, with a reciprocal origin reference.
+- [ ] Review that the principal preserves the reported failure, evidence limitations and authority boundary; request correction there if needed.
+- [ ] Seek explicit lifecycle disposition of this handoff record once its limited remit is verified, without claiming the principal's implementation has completed.
 
 ## Files touched
 
-- `Streams/Roadmap/KI-ARCADIA-ECO-005-record-delegated-skill-access.md`
-- `Streams/Roadmap/_ISSUES.md`
-- The harness record is created by the harness.
+- Streams/Roadmap/KI-ARCADIA-ECO-005-record-delegated-skill-access.md
+
+Implementation files and any further downstream roadmap records belong to the principal ticket and their respective repositories, not this Arcadia handoff.
 
 ## Verify
 
-- The claim is restated from a fresh listing of `~/.claude/skills/` and the harness `skills/governance/` directory at the time of handover, not from this record.
-- A delegating agent following the harness's delegation guidance can tell, without trying it, whether a named skill is invocable.
-- Nothing is written into agent memory in place of the harness record; the point of the item is that the fact must be visible to other writers.
+- The principal ticket and this origin refer to each other by canonical repository and record path.
+- The principal owns fresh validation of the reported access limitation rather than treating the 26 September installation snapshot as universally current.
+- Arcadia contains no competing implementation plan, private-memory remedy or automatic completion claim.
 
 ## Dependencies and blocks
 
-Independent of `KI-ARCADIA-ECO-003` and `KI-ARCADIA-ECO-004`. It affects how future batches are delegated rather than the work those records carry.
+Independent of KI-ARCADIA-ECO-003 and KI-ARCADIA-ECO-004. KI-HARNESS-GOV-118 is the delivery principal, not a local build-order blocker. Arcadia can verify the handoff independently; closing that handoff does not close or accept the principal outcome.
 
 ## Escalation points
 
@@ -62,3 +66,9 @@ Whether the governance skills should be installed as user skills is a harness de
 ## Governance
 
 This roadmap record adheres to [[Enactment Process]]. The Agentic Harness owns the skills and the delegation convention; Arcadia owns only the observation and the handover.
+
+## Discussion
+
+### Retained provenance
+
+The originating diagnosis and sharing boundary remain in Arcadia. Reusable guidance and any runtime-specific downstream changes are coordinated from KI-HARNESS-GOV-118; no Agora membership or display order transfers implementation authority.
