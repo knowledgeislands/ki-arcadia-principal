@@ -133,3 +133,24 @@ order = ["https://github.com/knowledgeislands/ki-arcadia-principal"]
 "https://github.com/knowledgeislands/tools-rig" = "member"
 "https://github.com/knowledgeislands/tools-techne" = "member"
 "https://github.com/krisb/dotfiles" = "member"
+
+[skills.ki-agora.homes.paperclip]
+owner = "https://github.com/knowledgeislands/ki-arcadia-principal"
+purpose = "Primary repository of each Paperclip organisation for cross-organisation coordination and coherent rollouts"
+order = [
+  "https://github.com/knowledgeislands/ki-arcadia-principal",
+  "https://github.com/equalremedy/er-research",
+  "https://github.com/krisb/kit-hnr",
+  "https://github.com/krisb/kit-legal",
+  "https://github.com/krisb/kit-principal",
+  "https://github.com/krisb/kit-techmedix",
+  "https://github.com/vallearmonia/vallearmonia-principal",
+]
+
+[skills.ki-agora.homes.paperclip.members]
+"https://github.com/equalremedy/er-research" = "member"
+"https://github.com/krisb/kit-hnr" = "member"
+"https://github.com/krisb/kit-legal" = "member"
+"https://github.com/krisb/kit-principal" = "member"
+"https://github.com/krisb/kit-techmedix" = "member"
+"https://github.com/vallearmonia/vallearmonia-principal" = "member"
