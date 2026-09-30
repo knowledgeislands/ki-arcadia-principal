@@ -104,11 +104,8 @@ standing.export.knowledge = ["public-source-change"]
 
 [skills.ki-agora]
 
-[skills.ki-agora.homes.kis]
-owner = "https://github.com/knowledgeislands/ki-arcadia-principal"
+[skills.ki-agora.kis]
 purpose = "All governed Knowledge Islands ecosystem repositories"
-order = ["https://github.com/knowledgeislands/ki-arcadia-principal"]
-
 members = [
   "https://github.com/knowledgeislands/apps-observatory",
   "https://github.com/knowledgeislands/homebrew-tap",
@@ -132,27 +129,4 @@ members = [
   "https://github.com/knowledgeislands/tools-mgit",
   "https://github.com/knowledgeislands/tools-rig",
   "https://github.com/knowledgeislands/tools-techne",
-  "https://github.com/krisb/dotfiles",
-]
-
-[skills.ki-agora.homes.paperclip]
-owner = "https://github.com/knowledgeislands/ki-arcadia-principal"
-purpose = "Primary repository of each Paperclip organisation for cross-organisation coordination and coherent rollouts"
-order = [
-  "https://github.com/knowledgeislands/ki-arcadia-principal",
-  "https://github.com/equalremedy/er-research",
-  "https://github.com/krisb/kit-hnr",
-  "https://github.com/krisb/kit-legal",
-  "https://github.com/krisb/kit-principal",
-  "https://github.com/krisb/kit-techmedix",
-  "https://github.com/vallearmonia/vallearmonia-principal",
-]
-
-members = [
-  "https://github.com/equalremedy/er-research",
-  "https://github.com/krisb/kit-hnr",
-  "https://github.com/krisb/kit-legal",
-  "https://github.com/krisb/kit-principal",
-  "https://github.com/krisb/kit-techmedix",
-  "https://github.com/vallearmonia/vallearmonia-principal",
 ]
