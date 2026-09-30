@@ -109,30 +109,31 @@ owner = "https://github.com/knowledgeislands/ki-arcadia-principal"
 purpose = "All governed Knowledge Islands ecosystem repositories"
 order = ["https://github.com/knowledgeislands/ki-arcadia-principal"]
 
-[skills.ki-agora.homes.kis.members]
-"https://github.com/knowledgeislands/apps-observatory" = "member"
-"https://github.com/knowledgeislands/homebrew-tap" = "member"
-"https://github.com/knowledgeislands/ki-agentic-harness" = "member"
-"https://github.com/knowledgeislands/ki-plugins" = "member"
-"https://github.com/knowledgeislands/ki-specifications" = "member"
-"https://github.com/knowledgeislands/ki-techne-harness" = "member"
-"https://github.com/knowledgeislands/ki-techne-principal" = "member"
-"https://github.com/knowledgeislands/ki-website" = "member"
-"https://github.com/knowledgeislands/mcp-acquire-whatsapp" = "member"
-"https://github.com/knowledgeislands/mcp-git-audit" = "member"
-"https://github.com/knowledgeislands/mcp-gsuite" = "member"
-"https://github.com/knowledgeislands/mcp-housekeeping-chatgpt" = "member"
-"https://github.com/knowledgeislands/mcp-housekeeping-claude" = "member"
-"https://github.com/knowledgeislands/mcp-housekeeping-codex" = "member"
-"https://github.com/knowledgeislands/mcp-ki-kb-fs" = "member"
-"https://github.com/knowledgeislands/mcp-ki-kb-notion-mirror" = "member"
-"https://github.com/knowledgeislands/mcp-m365" = "member"
-"https://github.com/knowledgeislands/tools-git-almanac" = "member"
-"https://github.com/knowledgeislands/tools-ki" = "member"
-"https://github.com/knowledgeislands/tools-mgit" = "member"
-"https://github.com/knowledgeislands/tools-rig" = "member"
-"https://github.com/knowledgeislands/tools-techne" = "member"
-"https://github.com/krisb/dotfiles" = "member"
+members = [
+  "https://github.com/knowledgeislands/apps-observatory",
+  "https://github.com/knowledgeislands/homebrew-tap",
+  "https://github.com/knowledgeislands/ki-agentic-harness",
+  "https://github.com/knowledgeislands/ki-plugins",
+  "https://github.com/knowledgeislands/ki-specifications",
+  "https://github.com/knowledgeislands/ki-techne-harness",
+  "https://github.com/knowledgeislands/ki-techne-principal",
+  "https://github.com/knowledgeislands/ki-website",
+  "https://github.com/knowledgeislands/mcp-acquire-whatsapp",
+  "https://github.com/knowledgeislands/mcp-git-audit",
+  "https://github.com/knowledgeislands/mcp-gsuite",
+  "https://github.com/knowledgeislands/mcp-housekeeping-chatgpt",
+  "https://github.com/knowledgeislands/mcp-housekeeping-claude",
+  "https://github.com/knowledgeislands/mcp-housekeeping-codex",
+  "https://github.com/knowledgeislands/mcp-ki-kb-fs",
+  "https://github.com/knowledgeislands/mcp-ki-kb-notion-mirror",
+  "https://github.com/knowledgeislands/mcp-m365",
+  "https://github.com/knowledgeislands/tools-git-almanac",
+  "https://github.com/knowledgeislands/tools-ki",
+  "https://github.com/knowledgeislands/tools-mgit",
+  "https://github.com/knowledgeislands/tools-rig",
+  "https://github.com/knowledgeislands/tools-techne",
+  "https://github.com/krisb/dotfiles",
+]
 
 [skills.ki-agora.homes.paperclip]
 owner = "https://github.com/knowledgeislands/ki-arcadia-principal"
@@ -147,10 +148,11 @@ order = [
   "https://github.com/vallearmonia/vallearmonia-principal",
 ]
 
-[skills.ki-agora.homes.paperclip.members]
-"https://github.com/equalremedy/er-research" = "member"
-"https://github.com/krisb/kit-hnr" = "member"
-"https://github.com/krisb/kit-legal" = "member"
-"https://github.com/krisb/kit-principal" = "member"
-"https://github.com/krisb/kit-techmedix" = "member"
-"https://github.com/vallearmonia/vallearmonia-principal" = "member"
+members = [
+  "https://github.com/equalremedy/er-research",
+  "https://github.com/krisb/kit-hnr",
+  "https://github.com/krisb/kit-legal",
+  "https://github.com/krisb/kit-principal",
+  "https://github.com/krisb/kit-techmedix",
+  "https://github.com/vallearmonia/vallearmonia-principal",
+]
