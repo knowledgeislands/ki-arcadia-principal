@@ -6,7 +6,11 @@ This is the runtime-neutral working convention for Arcadia Principal.
 
 Arcadia is the Capital of the Knowledge Islands territory. [Charter](Admin/Governance/Charter.md) declares its authority and [Known Lands](<Admin/Governance/Known Lands.md>) owns the internal inventory and external signposting. Registry resolution, Agora working sets and Paperclip companies confer no jurisdiction or cross-repository write authority. Each island retains its source access, canonical acceptance and product ownership.
 
-Techné remains a specialist island pending separately verified knowledge consolidation. Its [programme hold](https://github.com/knowledgeislands/ki-techne-principal/blob/main/AGENTS.md#techne-holding-position), retained work and independent implementation products remain in force. This conceptual rollout does not authorise migration, branch integration or programme resumption.
+Arcadia owns Techné's canonical [Engineering Practice](<Pillars/Engineering Practice/Engineering Practice.md>) and engineering decisions. The former `ki-techne-principal` knowledge tree is retained noncanonical evidence and the location of its unchanged held work; `ki-techne-harness` and `tools-techne` retain separate implementation ownership.
+
+## Techné programme hold
+
+The [Techne Programme Hold](<Admin/Governance/Policies/Techne Programme Hold.md>) remains in force across the retained source, harness and CLI. Read it before any Techné work. Knowledge consolidation and the human's source-Enactment exception are scoped documentary authority changes, not permission for branch integration, new implementation, remote rollout or programme resumption.
 
 ## Progress and commits
 

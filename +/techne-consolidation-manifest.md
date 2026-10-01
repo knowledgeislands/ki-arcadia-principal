@@ -3,12 +3,14 @@ note_type: review
 status: current
 author: AI-assisted
 observed_at: 2026-10-01T21:53:41Z
-updated: 2026-10-01T22:03:17Z
+updated: 2026-10-01T22:25:04Z
 ---
 
 # Techné consolidation manifest
 
 ## Authority and frozen source
+
+The reviewed dispositions below have now been implemented under the committed Ready baseline `d6d6d18e578d08310691f41b0a09ebe327312756`; the governing work item is awaiting human review. Planning and future-tense treatment descriptions preserve the approved instructions, while Delivery verification records the actual result. No source repository disposal or programme resumption is implied.
 
 This is the reviewed manifest for [[KI-ARCADIA-ECO-007-consolidate-techne-knowledge|Consolidate Techné knowledge]]. Its exact dispositions and preservation/projection design are approved within that Ready record's documentary scope; implementation waits for the coordinator's committed baseline and start signal. It authorises no resumption, acceptance, source repository retirement, deletion, branch integration, publication or runtime change. The approved direction is to absorb engineering knowledge into Arcadia while retaining `knowledgeislands/ki-techne-harness` and `knowledgeislands/tools-techne` as separate implementation products.
 
@@ -498,3 +500,22 @@ The website's project catalogue and source-labelling mechanism need receiver-own
 ## Planning verification
 
 The Arcadia selector and selected Streams adapter audits passed before authoring this draft. Final planning checks must prove the 69-entry source set equals `git ls-tree -r --name-only` at the pinned source, the adopted subtree covers all 23 Engineering Practice paths, all five TECHNE decisions retain identity, and the six fundamentals projections are equal under the canonical projector. Destination planning creates only this manifest and the ECO-007 draft; no transfer or source mutation has happened.
+
+## Delivery verification
+
+The coordinator and independent reviewer verified the complete 69-path census, all 23 adopted destinations, five preserved TECHNE identities and six equal fundamentals projections. All 50 source paths outside the approved 19 transition files are byte-identical to the pinned source. The three held work records, ledger, candidate branches and five registered source worktrees remain in place. The complete hold text is unchanged, and all 74 imported wikilinks resolve uniquely in the destination.
+
+Both diagram assets remain byte-identical. `Engineering Estate.svg` has 31,132 bytes, no final newline, and SHA-256 `d62745aa65918d969155d1709aedb6801827de4d0cd8a7c96b1b7e2f29cd17de`. A guarded formatting-only correction removed the single final newline introduced during patch creation; no image content was changed. The final fundamentals decision projection has SHA-256 `395c686070077e22986154b045b88e9ac6359a13261c9d53702b5cd4d1052e22`.
+
+The exact delivery boundary is 67 implementation paths plus this manifest and the governing work record. The immutable repository baselines were:
+
+- Arcadia: `d6d6d18e578d08310691f41b0a09ebe327312756`.
+- Retained Techné source: `b25e9c950fd87715d12f76b69bb2079c3a4fc054`.
+- Techné Harness: `ab2aa41847aa3b829b23a2f9c92c42d11b428a18`.
+- Techné CLI: `951157fa841f7b7b5331d76a937921f29a0e5d6b`.
+- Shared agentic harness: `9ff90dbdd52a1a003966640d598166692e8be134`.
+- KI CLI: `ac286457170c91eba3dfa72a8cd7b7713afc1a01`.
+- Specifications: `a19fb365bb20d567152fef1b12fdaa0c4c605a14`.
+- Website: `bf939b40f920b9b2df314ad042cbda04aac15d83`.
+
+The work item's Review section owns the audit, test, independent-review and remaining-concern evidence. Its receiver-follow-up boundaries remain in force. Local integration uses explicit file sets and checks each commit's actual contents; no push or external publication is included.

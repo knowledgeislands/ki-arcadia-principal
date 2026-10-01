@@ -1,6 +1,6 @@
 ---
 note_type: admin/governance/decision
-status: current - July 2026
+status: current - October 2026
 ---
 
 # Decision Records — Arcadia
@@ -22,3 +22,13 @@ Records are ordered by reveal order — the logical sequence in which the decisi
 9. [SDR-KI-ARCADIA-005](SDR-KI-ARCADIA-005-territories-archipelagos-and-the-constitutional-layer.md) — Territories, Archipelagos, and the Constitutional Layer
 10. [SDR-KI-ARCADIA-006](SDR-KI-ARCADIA-006-agents-in-the-knowledge-islands-model.md) — Agents in the Knowledge Islands Model
 11. [SDR-KI-ARCADIA-007](SDR-KI-ARCADIA-007-the-great-library-of-arcadia.md) — The Great Library of Arcadia
+
+## Shared engineering decisions
+
+Arcadia maintains these canonical TECHNE records; their original identifiers are preserved as shared records outside the local KI-ARCADIA series. The retained source copies are semantically identical projections, not a second decision authority.
+
+1. [GDR-TECHNE-001](GDR-TECHNE-001-adopting-decision-records.md)
+2. [ADR-TECHNE-001](ADR-TECHNE-001-provider-neutral-isolated-agent-execution.md)
+3. [ADR-TECHNE-002](ADR-TECHNE-002-one-persona-across-explicit-working-contexts.md)
+4. [ADR-TECHNE-003](ADR-TECHNE-003-techne-implementation-ownership.md)
+5. [GDR-TECHNE-002](GDR-TECHNE-002-governing-technology-investigations.md)

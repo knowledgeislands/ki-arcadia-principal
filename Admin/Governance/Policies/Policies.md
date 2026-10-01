@@ -1,16 +1,15 @@
 ---
 note_type: admin/governance/policy
-tags:
-  - card/note
-  - topic/knowledge-islands
-status: current - June 2026
-author: Written with Claude
+updated: 2026-10-01T22:07:06Z
+author: AI-assisted
 ---
 
 # Policies
 
-Standing rules that govern behaviour on Arcadia outside of the formal Decision Record process. Policies record persistent operational constraints — things the island always does or never does — without requiring a full proposal lifecycle.
+## Overview
 
-## Policies
+Policies hold persistent operating constraints under Arcadia's governance. Substantive policy changes follow the [[Enactment Process]]; a policy's presence or successful audit does not replace its owner approval.
 
-_To be populated as policies are formalised._
+## Techne Programme Hold
+
+The [[Techne Programme Hold]] preserves the programme constraints, retained-work protection and restart evidence for Techné's retained source and two implementation products. Arcadia maintains the policy after knowledge consolidation; relocation does not resume implementation, integrate candidates or alter services.

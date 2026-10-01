@@ -1,0 +1,49 @@
+---
+note_type: admin/governance/decision
+id: ADR-TECHNE-001
+title: 'Provider-neutral isolated agent execution'
+date: 2026-09-16
+status: current
+shared_record: true
+decision_type: architecture
+decision_type_url: https://knowledgeislands.info/specifications/decision-records/adr
+decision_depends_on: [GDR-TECHNE-001]
+---
+
+# ADR-TECHNE-001: Provider-neutral isolated agent execution
+
+## Context
+
+Techne separates engineering intent, deterministic orchestration, persistent execution, human interaction, and governed knowledge. Its AI Execution Fabric selects local, managed, elastic, or dedicated capacity according to workload constraints. Those models do not alone define the boundary given to an independently acting agent task.
+
+An attached agent may reasonably share an engineer's workstation context. A persistent supervised session must survive client disconnection while retaining observable human control. An unattended task has different authority, credential, network, state, recovery, and evidence consequences. A Git worktree separates repository changes but does not isolate the host filesystem, processes, credentials, or network. Provider-specific sandboxes supply stronger boundaries but couple the architecture if their APIs or snapshots become authoritative.
+
+## Decision
+
+Techne adopts three explicit working modes: attached interactive work, persistent human-supervised work, and unattended isolated work. Each unattended task receives a disposable or explicitly resumable task environment created from an immutable repository baseline and a portable bootstrap profile. A persistent controller owns identity, policy, credential brokerage, lifecycle supervision, and result integration. The task environment, bootstrap profile, agent runtime, and execution tier remain independently replaceable. Git and the selected change-management process remain authoritative for work state, returned evidence, and review.
+
+Isolation is proportionate to task authority and risk rather than mandatory for every use of AI. Provider APIs, images, and snapshots remain adapter concerns; open environment descriptions, OCI artifacts, Git references, manifests, logs, and review evidence form the portable hand-off.
+
+Every unattended execution binds its objective, immutable baseline, working context, authority, footprint identity, target-capability evidence, result destination and lifetime before admission. Deterministic admission verifies eligibility; the execution returns review evidence and cleanup status without making provider state authoritative.
+
+Arcadia owns the architectural meaning of this contract. Normative portable schemas and conformance rules follow the shared repository-authority decision and belong to `ki-specifications` after implementation evidence supports standardisation. Before overall V1, KI Specifications remains dormant and repository-local contracts remain authoritative. Personal-controller and execution-fabric implementations belong to `ki-techne-harness`; the operator interface belongs to `tools-techne`. These implementations remain replaceable.
+
+## Consequences
+
+- Interactive assistance can remain lightweight while persistent and unattended work receive explicit continuity and isolation controls.
+- Remote hosts, local microVMs, Kubernetes sandboxes, and managed services can implement the same model without defining it.
+- Controllers and environments must expose identity, authority, credential, network, state, recovery, evidence, expiry, and cleanup behaviour.
+- Independent filesystems remove shared-path contention but not competing Git claims, change-record concurrency, or accountable review.
+- Provider-native checkpoints may improve recovery but cannot be the only authoritative copy of task state or results.
+- Implementations carry additional bootstrap, conformance, observability, and teardown work in exchange for replaceability and safer unattended execution.
+- Implementations must preserve the contract's meaning even when provider mechanisms differ.
+- A provider proof cannot define portable architecture merely by being the first working implementation.
+- Unassigned implementation ownership remains visible instead of being silently absorbed by `ki`, a runtime or a provider adapter.
+
+Arcadia maintains this shared decision record. The copy in `knowledgeislands/ki-techne-principal` is a semantically identical retained projection, not an independent authority. Original source evidence remains in Git at `b25e9c950fd87715d12f76b69bb2079c3a4fc054`; the Techné programme hold and retained work are unchanged.
+
+## References
+
+- [GDR-TECHNE-001](GDR-TECHNE-001-adopting-decision-records.md) — records the engineering discipline's Decision Records instrument.
+- [Development Container specification](https://github.com/devcontainers/spec/blob/main/docs/specs/devcontainer-reference.md) — portable development-environment description.
+- [OCI Image specification](https://github.com/opencontainers/image-spec/blob/main/spec.md) — portable image packaging and transport.

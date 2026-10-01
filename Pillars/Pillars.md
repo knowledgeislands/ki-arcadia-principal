@@ -2,8 +2,8 @@
 note_type: pillars/index
 tags:
   - card/note
-status: current - June 2026
-author: Written with Claude
+status: current - October 2026
+author: Mixed
 ---
 
 # Pillars
@@ -26,6 +26,12 @@ Pillars holds the internal knowledge of this island - the methodologies, framewo
 
 ---
 
+## Engineering Practice
+
+[[Engineering Practice/Engineering Practice|Engineering Practice]] holds Arcadia's Techné engineering discipline: foundations, architecture, operating model, technology posture and diagrams. It is the canonical destination of the adopted source knowledge; [[Engineering Practice/MEMORY|Engineering Practice memory]] records scope and the unchanged programme hold.
+
+---
+
 ## Technē
 
-[[Technē/Technē|Technē]] holds technical knowledge and engineering reference for this island.
+[[Technē/Technē|Technē]] is a retained entry point for existing links into the discipline. Its [[Tool Ecosystem Map]] supplies current ownership signposting rather than a second engineering knowledge store.

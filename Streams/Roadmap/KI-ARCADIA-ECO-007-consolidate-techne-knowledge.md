@@ -4,12 +4,12 @@ area: ECO
 title: Consolidate Techné knowledge
 theme: ecosystem-coordination
 horizon: now
-status: ready
+status: awaiting-review
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: d6d6d18e578d08310691f41b0a09ebe327312756
 created_at: 2026-10-01T21:53:41Z
-updated_at: 2026-10-01T22:03:17Z
+updated_at: 2026-10-01T22:25:04Z
 ---
 
 # KI-ARCADIA-ECO-007: Consolidate Techné knowledge
@@ -32,6 +32,8 @@ The human explicitly instructed the coordinator to disregard the retiring source
 
 ## Current state
 
+The paragraphs below preserve the inspected planning baseline. The approved transfer has now been delivered; the Review section records the resulting authority, preservation checks and remaining concerns. Readiness and start-signal wording elsewhere in the planning packet records the gate already satisfied by the immutable baseline, not a new implementation prerequisite.
+
 The source commit contains 69 tracked files, including 21 Engineering Practice Markdown notes and two diagram assets, five TECHNE Decision Records, one shared fundamentals record, three retained work records and their own issue ledger. Calendar and Resources have no captured records beyond their indexes. Engineering knowledge currently claims source-principal authority in multiple entry points.
 
 Arcadia has no Engineering Practice subtree. Its `Pillars/Technē/Technē.md` and `Pillars/Technē/Tool Ecosystem Map.md` hold stale architecture/ownership claims and must become consistent navigation. Arcadia's Aesthetics Diagrams note makes the imported Architecture index's bare `[[Diagrams]]` ambiguous. Other imported links require combined-tree resolution.
@@ -44,14 +46,14 @@ Source records `TECHNE-OPS-002`, `TECHNE-OPS-004` and `TECHNE-OPS-005` remain re
 
 ## Steps
 
-- [ ] Re-read this record, the manifest, relevant skills and each affected repository's AGENTS.md; establish exclusive path ownership, record immutable repository baselines, and check that the pinned source, retained work and candidates have not drifted. Stop on contested source or destination paths.
-- [ ] Adopt all 23 Engineering Practice paths into Arcadia at the manifest's exact destinations from pinned Git objects. Preserve note/asset meaning and source provenance; reconcile owning-island language, already-decided product ownership and dormant-Specifications wording without reopening substantive architecture. Resolve wikilinks against the combined destination tree and keep editable/rendered diagrams together.
-- [ ] Adopt all five TECHNE decision identities in Arcadia's existing collection. Declare shared_record in source and destination, reconcile decision-owner/adoption wording identically, and index their dependency/reveal order after Arcadia's root. Verify canonical projection equality; preserve the pinned originals as historical evidence.
-- [ ] Establish Arcadia's Techne Programme Hold policy with the complete existing hold coverage, retained-evidence protection and restart criteria. Link it from Policies, AGENTS and engineering memory; then update source/product hold pointers. Do not interpret this documentation/hold-administration scope as programme resumption.
-- [ ] Reconcile Arcadia's pillar/memory/README/governance navigation and the two existing Technē entry points. Reconcile the manifest-listed source authority/navigation surfaces so the retained knowledge tree is explicitly noncanonical and shared decision copies are projections, while source work governance remains intact.
-- [ ] Amend the existing fundamentals owner decision in all six declared locations as one reviewed projection update. Preserve its ID, repository/product boundaries and dormant Specifications position; introduce no private consumer identities or unrelated jurisdiction claims.
-- [ ] Update only the authority and hold references in harness/CLI AGENTS.md and README.md to portable Arcadia links. Do not change implementation, release, commands, infrastructure, company bindings or trade routes.
-- [ ] Run the exact verification below, compare the returned scope against the manifest and locked decisions, and hand back a complete review packet. Preserve unfinished source work and secondary receiver concerns with explicit owners; do not self-accept or retire the source.
+- [x] Re-read this record, the manifest, relevant skills and each affected repository's AGENTS.md; establish exclusive path ownership, record immutable repository baselines, and check that the pinned source, retained work and candidates have not drifted. Stop on contested source or destination paths.
+- [x] Adopt all 23 Engineering Practice paths into Arcadia at the manifest's exact destinations from pinned Git objects. Preserve note/asset meaning and source provenance; reconcile owning-island language, already-decided product ownership and dormant-Specifications wording without reopening substantive architecture. Resolve wikilinks against the combined destination tree and keep editable/rendered diagrams together.
+- [x] Adopt all five TECHNE decision identities in Arcadia's existing collection. Declare shared_record in source and destination, reconcile decision-owner/adoption wording identically, and index their dependency/reveal order after Arcadia's root. Verify canonical projection equality; preserve the pinned originals as historical evidence.
+- [x] Establish Arcadia's Techne Programme Hold policy with the complete existing hold coverage, retained-evidence protection and restart criteria. Link it from Policies, AGENTS and engineering memory; then update source/product hold pointers. Do not interpret this documentation/hold-administration scope as programme resumption.
+- [x] Reconcile Arcadia's pillar/memory/README/governance navigation and the two existing Technē entry points. Reconcile the manifest-listed source authority/navigation surfaces so the retained knowledge tree is explicitly noncanonical and shared decision copies are projections, while source work governance remains intact.
+- [x] Amend the existing fundamentals owner decision in all six declared locations as one reviewed projection update. Preserve its ID, repository/product boundaries and dormant Specifications position; introduce no private consumer identities or unrelated jurisdiction claims.
+- [x] Update only the authority and hold references in harness/CLI AGENTS.md and README.md to portable Arcadia links. Do not change implementation, release, commands, infrastructure, company bindings or trade routes.
+- [x] Run the exact verification below, compare the returned scope against the manifest and locked decisions, and hand back a complete review packet. Preserve unfinished source work and secondary receiver concerns with explicit owners; do not self-accept or retire the source.
 
 ## Files touched
 
@@ -240,6 +242,40 @@ This new record owns knowledge consolidation. The three TECHNE work records and 
 ## Governance
 
 This record adheres to the [[Enactment Process]]. The exact documentary scope is approved Ready; execution waits for its committed baseline and coordinator start signal. The direct human source-gate override is limited to its stated scope and authorises no held-work transition or programme resumption.
+
+## Review
+
+### Delivered
+
+Arcadia now maintains Techné engineering knowledge and its five preserved decision identities. The 23 Engineering Practice paths were adopted with pinned provenance, the two existing Technē entry points were reconciled, and the complete unchanged programme hold is discoverable in Arcadia. The former principal is explicitly retained noncanonical evidence and the location of existing held work, not a second active Capital or knowledge authority. Harness and CLI remain independently governed implementation products.
+
+### Change Summary
+
+Delivery changes 67 canonical or orientation paths across eight repositories: 40 in Arcadia, 19 in the retained source, two in each implementation product and one shared fundamentals projection in each of four other receivers. This record and the manifest add two coordinator-owned evidence paths. No source record, ledger, branch, candidate, worktree or service was transferred or retired. Source Enactment was waived only for this bounded documentary transition under the human's explicit instruction.
+
+### Verification
+
+- Exact manifest set equals all 69 pinned source paths; the destination contains all 23 adopted Engineering Practice files. Both diagram assets are byte-identical to their pinned sources. All 21 adopted Markdown notes retain source/revision provenance.
+- All 50 source paths outside the approved 19-file transition remain byte-identical, including three held work records, issue ledger and retained scaffold. Both unmerged candidate commits remain reachable on their original branches; the five-source-worktree inventory is preserved.
+- The five TECHNE source/destination decision pairs and six fundamentals copies are equal under the existing decision-owned projector. The final fundamentals projection SHA-256 is `395c686070077e22986154b045b88e9ac6359a13261c9d53702b5cd4d1052e22`.
+- The three programme-hold paragraphs exactly match the pinned source. Their coverage, preservation protections and restart criteria are unchanged.
+- Independent review resolved all 74 imported wikilinks uniquely and checked Contents/local Markdown navigation. All affected decision and principal/KB/Streams/work audits pass; touched-document lint and `git diff --check` pass. The retained source still has its two baseline STREAM-1 scaffold warnings, with no source cleanup.
+- The shared harness's complete suite passes: 851 tests, zero failures and 3,591 assertions across 141 files. `bunx tsc --noEmit` and its decision-record audit pass. No live-service or remote verification was performed.
+- Review found two documentation-only corrections: maintenance provenance now sits in the standard Consequences section in every TECHNE decision projection, and both product entry points link the exact Arcadia ownership decision. The author reran pair equality, section-shape, affected lint and decision audits successfully; the candidate returned to independent review before integration.
+
+### Outstanding concerns
+
+Human KI acceptance remains outstanding. The programme execution hold remains in force. Source repository disposal, held-work transfer, foreign work-identifier policy and the missing source reference to `TECHNE-GOV-005` require separate disposition; none is silently resolved here.
+
+Website project catalogue/source labels, other receiver README links, Agoras, trade routes, registry entries and company/runtime bindings remain outside this delivery. Existing source entry points redirect readers to Arcadia; later receiver work must reconcile those references through its own authority. The two legacy source Streams warnings are preserved baseline evidence, not delivery regressions.
+
+### Post-change review
+
+The coordinator and an independent reviewer checked the exact eight-root scope, single knowledge authority, separate product ownership, public/private boundary, complete hold and retained evidence. The independent follow-up approved both corrected findings: exactly 14 already-scoped paths changed, all five decision pairs remain equal, all ten decision copies use the prescribed sections and all four product entry points link the ownership decision. The other 53 worker paths are unchanged. The candidate is approved for serial explicit-path local integration; passing checks does not accept this item or resume Techné.
+
+### Mini recap
+
+Techné is now the engineering discipline within Arcadia, with its original source retained for provenance and held work. The shared fundamentals decision and both product orientations agree on that ownership. The verified documentary delivery is ready for local integration and human review; no push, release, archive, deletion or runtime action is authorised.
 
 ## Discussion
 

@@ -28,11 +28,11 @@ Each island owns its accepted knowledge or executable behaviour within the share
 | [apps-observatory][apps-observatory] | Product | Repository and knowledge reader |
 | [homebrew-tap][homebrew-tap] | Delivery | Homebrew distribution |
 | [ki-agentic-harness][ki-agentic-harness] | Capability | Reusable agentic contracts |
-| [ki-arcadia-principal][ki-arcadia-principal] | Capital | KI governance and model |
+| [ki-arcadia-principal][ki-arcadia-principal] | Capital | KI governance, model and engineering practice |
 | [ki-plugins][ki-plugins] | Delivery | Plugin packaging |
 | [ki-specifications][ki-specifications] | Standards | Portable contracts after V1 |
 | [ki-techne-harness][ki-techne-harness] | Product | Controller and execution fabric |
-| [ki-techne-principal][ki-techne-principal] | Specialist Knowledge Base | Engineering practice; held |
+| [ki-techne-principal][ki-techne-principal] | Retained evidence | Source snapshots and held work |
 | [ki-website][ki-website] | Publication | Public source-labelled website |
 | [mcp-acquire-whatsapp][mcp-acquire-whatsapp] | MCP | WhatsApp acquisition |
 | [mcp-git-audit][mcp-git-audit] | MCP | Repository inspection |
@@ -49,7 +49,7 @@ Each island owns its accepted knowledge or executable behaviour within the share
 | [tools-rig][tools-rig] | Tool | Local environment tooling |
 | [tools-techne][tools-techne] | Tool | Techné operator command |
 
-Techné Principal remains the specialist engineering knowledge island until its separately reviewed migration is verified. Its programme execution hold remains effective across Techné Principal, Techné Harness and `tools-techne`. The two implementation products retain independent ownership, and no branch integration or service change follows from this inventory.
+Arcadia's [[Engineering Practice/Engineering Practice|Engineering Practice]] is the canonical home of Techné's engineering knowledge and decisions. The former source repository remains a member as retained noncanonical evidence and the location of its unchanged held work; its maintained decision copies are explicitly Arcadia-owned projections. The [[Techne Programme Hold]] remains effective across the retained source, Techné Harness and `tools-techne`. The two implementation products retain independent ownership; knowledge adoption changes neither branches, services nor programme execution.
 
 Specifications remains dormant as a normative authority until the overall V1 boundary. The inventory records its membership without representing future standards as current obligations.
 
