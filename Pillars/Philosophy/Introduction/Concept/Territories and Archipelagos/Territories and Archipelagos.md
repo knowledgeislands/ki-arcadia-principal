@@ -3,49 +3,56 @@ note_type: pillars/index
 tags:
   - card/note
   - topic/knowledge-islands
-status: draft - April 2026
-author: Written with Claude
+status: current - October 2026
+author: Mixed
 ---
 
 # Territories and Archipelagos
 
-A single island with a cycle of knowledge is a personal practice. Knowledge Islands is the model for what happens when islands are organised together, governed, and connected to one another.
+## Overview
 
-**Knowledge Islands** is the geographic model that provides structure, governance, and relationship for how knowledge is held and shared across communities. It treats the problem not as a filing system but as a civilisation question: who governs what, who can contribute, what crosses a boundary and under what rules, and how knowledge travels between communities.
+Knowledge Islands distinguishes shared governance from subject matter, geography and the products that put knowledge to work. A territory is a governed collection of islands under one accountable authority. An archipelago groups islands by proximity or shared character. These relationships may overlap without being equivalent.
 
-The unit of governance in the model is a **territory**: one or more islands under a shared jurisdiction, with exactly one **principal island** - the seat of governance, holding the Capital and the shared governance infrastructure. Additional **satellite islands** extend the territory for specific purposes (a different topic scope, a different audience, a different publication target). The boundary rule is simple: if customs exist at the boundary, it is a separate territory. If knowledge flows freely with no controls, it is internal structure.
+An island is a governed repository of knowledge or work. It may be a Knowledge Base or a product repository; neither subject expertise nor executable ownership makes it a territorial principal.
 
-| Type                 | Description †                                                                  |
-| -------------------- | ------------------------------------------------------------------------------ |
-| **Principal island** | The seat of governance for a territory; every territory has exactly one. †     |
-| **Satellite island** | A separate, governed extension of a territory, with an independent boundary. ‡ |
+## Territories and the Capital
 
-† **Principal island** — holds the Capital and carries the shared governance infrastructure for the whole territory.
+Every territory has exactly one Capital: the island that holds its Charter, authoritative internal inventory and shared governance. The Capital role is also called the principal island. Other islands retain their own purposes, stores, access rules and acceptance boundaries within the territory's adopted governance.
 
-‡ **Satellite island** — has its own stores and operates within the same governance as the principal island, but maintains an independent boundary: different topic scope, access rules, or publication target.
+Territorial membership is an explicit governed relationship. Shared governance does not imply unrestricted internal flow: islands may serve different audiences or hold protected sources. A change to one repository is accepted by its own owner through its applicable process; membership grants no cross-repository write, execution, publication or release authority.
 
-## The Capital
+Arcadia is the Capital of the Knowledge Islands territory. Its [[Admin/Governance/Charter|Charter]] declares that role and its [[Admin/Governance/Known Lands|Known Lands]] records the internal inventory. Arcadia is the canonical home of the public Knowledge Islands model, but that authorship gives it no jurisdiction over another territory that follows or adopts the model.
 
-The **Capital** is the seat of governance for a jurisdiction — not a folder or zone, but a role held by the principal island of a territory. At the territory level, the principal island is the Capital. For structures spanning multiple territories, each territory has its own Capital; if the overarching structure carries governance authority, there is also a meta-Capital — the principal island of the governing territory.
-
-Arcadia is the meta-Capital of the Knowledge Islands model.
+A territory's existence and membership are not established by a local registry entry, Agora working set, shared person or Paperclip company. Those mechanisms may resolve or coordinate an already governed relationship. A disagreement between them and the governed inventory requires owner reconciliation.
 
 ## Archipelagos
 
-An **archipelago** is a geographic concept: a natural grouping of islands by proximity or shared character, independent of governance. The islands of Tristan da Cunha form an archipelago in the South Atlantic — Tristan da Cunha, Inaccessible Island, Nightingale Islands, Gough Island — but their territory is _Saint Helena, Ascension and Tristan da Cunha_, a distinct governance layer that does not map one-to-one onto the geographic grouping.
+An archipelago is a grouping of islands by proximity or shared character, independent of governance. A territory may contain one archipelago or span several; an archipelago may sit within one territory or include islands from several.
 
-The same separation holds in Knowledge Islands. Archipelago and territory are orthogonal structures that overlap without being equivalent:
+Use the territory to answer who governs a collection and where authority ends. Use the archipelago to describe what its islands have in common. Neither geographic grouping nor open access alone establishes jurisdiction.
 
-- A territory may contain all the islands of one archipelago, or span several.
-- An archipelago may sit wholly within one territory, or straddle two.
-- The boundary rule (customs vs. free flow) determines territory; proximity and shared character determine archipelago.
+## Known Lands and signposting
 
-The distinction matters because it separates the question _what islands are near each other or share a domain?_ (geography) from the question _who governs what, and where does jurisdiction end?_ (governance). Both questions are real; conflating them obscures the answer to each.
+The Capital's Known Lands separates two relationships: islands governed within its territory, and external lands it knows about. The internal inventory names canonical repository identities and roles under the territory's authority. External entries describe a relationship to another authority without claiming membership or jurisdiction.
 
-A territory that adopts Knowledge Islands does so unconditionally with respect to its **constitutional layer** - the minimum conditions that distinguish a Knowledge Island from an unstructured repository. This layer is prior to the adoption framework, not governed by it: constitutional requirements cannot be vetoed. Two elements are constitutional: **Charter** (the island must have a Charter in its `Admin/` zone, declaring its identity and adoption position on every non-constitutional activity group, with no unknowns permitted); and **Conformance** (the island must maintain a mechanism to verify it continues to meet the constitutional baseline). Beyond these, every activity group is subject to the adoption model - each territory explicitly adopts or vetoes each group. See [[Philosophy/Model/Activities/Constitutional/Constitutional]] for the full specification.
+Any island may keep a narrower chart of topics, sources and useful neighbours. A person's home island can signpost destinations for queries, captures and work without becoming the territorial Capital. Such charts contextualise knowledge; they do not replace the governed internal inventory.
 
-The principal island also holds the shared operational infrastructure for the territory - the working spaces and tools through which the whole territory is managed. The current implementation is described in [[Knowledge Islands]].
+Public governance names canonical identities. Machine-local checkout and source-store locations belong to the local registry. A declared island may be unavailable on a particular machine without ceasing to be a known member.
 
-Islands within a territory share the same governance conventions (note format, routing rules, enactment process) but maintain independent stores. A change to one island does not automatically affect another - each change goes through the territory's enactment process.
+## Knowledge exchange
 
-> [!todo] Customs and Routes Two further elements of the geographic model need fuller specification. **Customs** is the jurisdictional layer at each boundary, controlling what passes between territories. **Routes** are the explicit pathways and relationships between islands. Harbour is introduced above.
+Reading public knowledge, adopting it locally, offering a contribution, transferring restricted material and requesting another island's work are distinct actions. [[Contribution Process]] explains public adoption and contribution to the KI model. The receiving island chooses whether to admit, adapt or accept material and owns its resulting knowledge and work.
+
+A territory may adopt shared internal routing rules while preserving each island's audience, source permissions and acceptance authority. Restricted exchange between territories requires the participating owners' explicit rules for audience, purpose, admission and onward use. A shared working set or coordination company does not supply that permission.
+
+A route records a governed relationship between source and destination. Its meaning precedes the transport used to carry material. Classification identifies subject and audience; permission determines allowed exchange; provenance identifies source and revision. The applicable note or record owner defines their representation, rather than this concept prescribing universal metadata keys.
+
+## Constitutional layer
+
+A territory adopting Knowledge Islands accepts its constitutional layer: a Charter declaring identity and authority, and Conformance against the adopted baseline. For a Knowledge Base, these are governed through its Admin surface, including explicit adoption or veto of non-constitutional activity groups.
+
+Product islands express their adoption and verification through the applicable repository contract. Territorial membership does not require a product repository to acquire Knowledge Base zones, an Admin folder or the Knowledge Base activity roster.
+
+Charter and Conformance cannot be vetoed. Other activity groups receive an explicit adopted or vetoed position. This baseline is adopted under the receiving territory's own authority; it does not give Arcadia approval rights over that territory.
+
+Shared tooling and operating arrangements implement the territory's adopted policy. They remain subordinate to the authority, access and acceptance boundaries recorded by their owners.

@@ -3,18 +3,18 @@ note_type: review
 status: draft
 author: AI-assisted
 observed_at: 2026-10-01T19:37:14Z
-updated: 2026-10-01T19:40:44Z
+updated: 2026-10-01T21:54:20Z
 ---
 
 # Territory governance reconciliation review
 
 ## Purpose and authority
 
-This is the requested evidence-backed revision of the territory, knowledge exchange, and Observatory design sequence. It is a working proposal for review, not an enacted standard or an executable migration plan. The human has authorised the investigation and plan revision. Repository consolidation, canonical knowledge changes, runtime changes, and publication require the resulting scoped delivery decisions.
+This dated review records the evidence behind the territory-first sequence. The human subsequently approved the direction and supervised rollout using lower-cost workers. Current authority and delivered evidence are in [Territory and island governance](../Streams/Roadmap/KI-ARCADIA-MOD-002-island-concepts.md), now awaiting review; this document is not a second execution plan.
 
-[Island concepts](../Streams/Roadmap/KI-ARCADIA-MOD-002-island-concepts.md) already owns territory vocabulary, Known Lands, Routes, Customs, and knowledge signposting. Enrich that record when its adapter preflight permits shaping; do not allocate a competing concept item. [Island visualisation](../Streams/Roadmap/KI-ARCADIA-MOD-003-island-visualisation.md) supplies earlier cartographic ideas, but its proposed isometric presentation does not determine the Observatory's reader requirements. The harness's [inter-territory exchange intake](https://github.com/knowledgeislands/ki-agentic-harness/blob/main/docs/roadmap/KI-HARNESS-GOV-122-design-inter-territory-exchange.md) remains downstream of this conceptual work.
+The obsolete empty Housekeeping scaffold was removed with Git recovery and the Streams preflight now passes. The governing concept, Charter, Known Lands, strategic decision and Contribution Process have been reconciled. The sections below retain the original proposal and observations as review evidence; consult those canonical sources for current meaning.
 
-Arcadia's current `ki-repo-kb-streams` audit reports the retained `Streams/Housekeeping/` area. The selected process preflight stops roadmap mutation on warnings. This review therefore remains in `+/`, attached by reference to the existing concept concern, until that finding is reconciled. It introduces no new work identifier or queue transition. The private estate census is retained by its owner outside this public repository; this document carries reusable findings and public KI evidence only.
+Techné knowledge consolidation uses its separate preservation manifest and delivery plan. Its held work, branches, independent implementation products and execution hold remain unchanged by the conceptual delivery. Detailed exchange remains in the harness's [inter-territory intake](https://github.com/knowledgeislands/ki-agentic-harness/blob/main/docs/roadmap/KI-HARNESS-GOV-122-design-inter-territory-exchange.md). The private estate census remains with its owner outside this public repository.
 
 ## Proposed principles
 

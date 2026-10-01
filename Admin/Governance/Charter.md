@@ -3,8 +3,8 @@ note_type: admin/governance/policy
 tags:
   - card/note
   - topic/knowledge-islands
-status: current - April 2026
-author: Written with Claude
+status: current - October 2026
+author: Mixed
 ---
 
 # Charter
@@ -23,7 +23,9 @@ Fixed parameters that distinguish this Knowledge Island. Automations and skill p
 
 | Parameter | Value |
 | --- | --- |
-| **Territory name** | Arcadia |
+| **Territory name** | Knowledge Islands |
+| **Capital** | Arcadia |
+| **Canonical repository** | `knowledgeislands/ki-arcadia-principal` |
 | **Island name** | Arcadia Principal |
 | **Repository folder** | `ki-arcadia-principal` |
 | **Skill name** | `arcadia-principal` |
@@ -31,6 +33,20 @@ Fixed parameters that distinguish this Knowledge Island. Automations and skill p
 | **Task ID prefix** | `arcadia-principal-` |
 | **Auto-memory prefix** | `arcadia-principal` |
 | **User prefix** | `kit` |
+
+---
+
+## Territorial authority
+
+Arcadia is the sole Capital of the Knowledge Islands territory. Its canonical repository identity is [knowledgeislands/ki-arcadia-principal](https://github.com/knowledgeislands/ki-arcadia-principal). [[Known Lands]] records the authoritative internal inventory and distinguishes external signposting.
+
+The Capital holds shared territorial governance. Each member island retains its subject or product ownership, source access rules, canonical acceptance and repository-owned delivery authority. A specialist engineering island or an implementation product does not become another territorial principal.
+
+Other territories may reference or adopt the public KI model under their own authority. Arcadia's authorship grants no jurisdiction over those consumers and does not require them to disclose private membership or adoption.
+
+An Agora is a working set, the registry resolves canonical identities to machine-local locations, and a Paperclip company coordinates admitted work. None establishes territorial membership, permission or cross-repository write authority. Reconcile any disagreement with this Charter and Known Lands through the accountable owners.
+
+Techné remains a specialist engineering island pending a separately verified knowledge consolidation. Its existing execution hold, retained work and product-repository boundaries remain in force; territorial clarification neither moves that material nor resumes its programme.
 
 ---
 

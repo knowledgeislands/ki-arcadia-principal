@@ -2,7 +2,7 @@
 note_type: admin/governance/decision
 id: SDR-KI-ARCADIA-005
 title: 'Territories, Archipelagos, and the Constitutional Layer'
-date: 2026-06-25
+date: 2026-10-01
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/sdr
 decision_type: strategy
@@ -13,75 +13,58 @@ decision_depends_on: ['SDR-KI-ARCADIA-001', 'SDR-KI-ARCADIA-003']
 
 ## Context
 
-SDR-KI-ARCADIA-001 established the archipelago of Knowledge Islands domains and named Arcadia as the first island. SDR-KI-ARCADIA-002 and SDR-KI-ARCADIA-003 defined what a single island is — physically and in governance terms. What remains undefined is how islands organise together: how governance is shared across multiple islands, what relationships and boundaries exist between them, and how the canonical Knowledge Islands model can be adopted and extended without fragmenting into incompatible variants.
+Knowledge Islands needs to distinguish shared jurisdiction, subject expertise, repository ownership and geographic grouping. A public conceptual model can inform independently governed territories without its author acquiring authority over their knowledge or work.
 
-A single island with a cycle of knowledge is a personal practice. Knowledge Islands is the model for what happens when islands are organised together, governed, and connected.
+Shared governance also needs to accommodate different audiences and protected sources within one territory. Registry resolution, working sets and coordination bindings describe operational relationships but cannot substitute for governed membership or permission.
 
 ## Decision
 
-### Territories and the Principal Island
+### Territories and the Capital
 
-The unit of governance in the Knowledge Islands model is a **territory**: one or more islands under a shared jurisdiction, with exactly one **principal island** — the seat of governance, holding the Capital and the shared governance infrastructure. Additional **satellite islands** extend the territory for specific purposes: a different topic scope, a different audience, or a different publication target.
+A territory is a governed collection of islands with exactly one Capital, also called its principal island. The Capital holds its Charter, authoritative internal inventory and shared governance. Other islands retain repository-owned purposes, access, canonical acceptance and executable product boundaries.
 
-| Type | Role |
-| --- | --- |
-| Principal island | Seat of governance; holds the Capital and shared infrastructure; every territory has exactly one |
-| Satellite island | Governed extension with an independent boundary; same governance conventions as the principal island |
+Arcadia is the Capital of the Knowledge Islands territory and the canonical home of its public model. Other territories adopt that model under their own authority; Arcadia has no universal meta-jurisdiction over them.
 
-The boundary rule is simple: if customs exist at the boundary, it is a separate territory. If knowledge flows freely with no controls, it is internal structure.
+Territorial membership is declared by the accountable authority in the Charter and Known Lands. Neither a registry, an Agora, company affiliation nor shared ownership creates that authority. Arcadia's current internal inventory includes Techné as a specialist engineering island; its knowledge remains there pending a separately verified consolidation.
 
-### The Capital
+### Archipelagos and Known Lands
 
-The **Capital** is the seat of governance for a jurisdiction — not a folder or zone, but a role held by the principal island of a territory. At the territory level, the principal island is the Capital. For structures spanning multiple territories, each territory has its own Capital; if the overarching structure carries governance authority, there is also a meta-Capital — the principal island of the governing territory.
+An archipelago groups islands by proximity or shared character, independently of jurisdiction. A territory may span archipelagos and an archipelago may span territories.
 
-Arcadia is the meta-Capital of the Knowledge Islands model.
+The Capital's Known Lands distinguishes authoritative internal membership from external signposting. Any island may keep a local chart of useful sources, topics and destinations. A person's home island need not be a territorial principal. Public records name canonical identities; machine-local locations are resolved through the registry.
 
-### Archipelagos
+### Constitutional layer
 
-An **archipelago** is a geographic concept — a natural grouping of islands by proximity or shared character — distinct from a territory. A territory may contain one archipelago or span several; an archipelago may sit wholly within one territory or straddle two. The boundary rule determines territory; proximity and shared character determine archipelago. The two structures overlap without being equivalent.
+An adopting territory accepts Charter and Conformance as its constitutional baseline. Its Knowledge Bases express identity, authority and explicit adoption or veto of other activity groups through their Admin governance, and verify that adopted baseline.
 
-### The Constitutional Layer
+Product islands express adoption and conformance through their applicable repository contracts. Membership creates no requirement to add Knowledge Base zones, an Admin folder or the Knowledge Base activity roster to a product repository.
 
-A territory that adopts Knowledge Islands does so unconditionally with respect to its **constitutional layer** — the minimum conditions that distinguish a Knowledge Island from an unstructured repository. Two elements are constitutional and cannot be vetoed:
+This baseline is adopted by the receiving authority. It does not give the model's author write, approval or execution authority over a consumer.
 
-- **Charter** — the island must have a Charter in its `Admin/` zone, declaring its identity and adoption position on every non-constitutional activity group. No unknowns are permitted.
-- **Conformance** — the island must maintain a mechanism to verify it continues to meet the constitutional baseline.
+### Standing and acceptance
 
-Beyond these, every activity group is subject to the adoption model: each territory explicitly adopts or vetoes each group.
+Visitor, Citizen and Council describe local standing. A Visitor may read accessible knowledge and offer ideas; a Citizen may contribute within admitted scope; the Council ratifies canonical changes under the island's process. Council membership requires citizenship, and citizenship of multiple territories is permitted.
 
-### Standing: Visitor, Citizen, Council
+Standing does not override access restrictions or repository-owned acceptance. Shared territorial governance permits internal routing conventions while retaining the audience and permission boundary of each source and destination.
 
-Islands within a territory share governance conventions but maintain independent stores. Who may act on an island is governed by **standing**:
+### Adoption and contribution
 
-| Standing | Access                                                         |
-| -------- | -------------------------------------------------------------- |
-| Visitor  | May read, identify gaps, and suggest informally                |
-| Citizen  | Full contributor; formal proposals enter the Enactment Process |
-| Council  | Ratifies proposals; holds governance authority                 |
+A receiving territory chooses whether to reference or adopt public KI knowledge, records its source and revision, owns any local adaptation and chooses when to review updates. It may declare that relationship privately without KI maintaining a reciprocal consumer list.
 
-Citizenship of multiple territories is permitted. Council membership requires citizenship as a prerequisite.
+A formal contribution to Arcadia's canonical model is carried by its Council through its Enactment Process. The contribution is authorised for its intended audience, scoped to portable knowledge and accepted by Arcadia before landing.
 
-### The Contribution Process
-
-The Knowledge Islands model is defined canonically in Arcadia. Any island may adopt it; not every island has authority to propose changes to the canonical definition. The **Contribution Process** governs this:
-
-- Formal proposals for changes to the canonical model must be carried by a council member.
-- Proposals must be scoped to generic, portable knowledge — not specific to the contributing island.
-- Proposals enter the Enactment Process at `draft` status and pass through the full council review cycle.
-- Any island may copy the model as their baseline; copies are owned by the receiving island from that point. The model does not push updates — islands pull when they choose to synchronise.
+Restricted exchange requires the participating owners' explicit audience, purpose and admission rules. Concrete routes, transport and product implementation follow their respective owners; shared citizenship, company affiliation or working-set membership supplies no permission.
 
 ## Consequences
 
-- Every territory has exactly one principal island; satellite islands are governed extensions, not independent territories.
-- The constitutional layer (Charter + Conformance) is the minimum condition for adopting Knowledge Islands; it cannot be vetoed or deferred.
-- The standing model (Visitor / Citizen / Council) provides the vocabulary for describing who may act on any island.
-- The Contribution Process protects the canonical model in Arcadia: only council members may propose changes, and only portable knowledge enters the canonical layer.
-- New islands joining an archipelago adopt the constitutional layer unconditionally, then declare their adoption position on all other activity groups in their Charter.
+- Each territory has one accountable Capital and an explicit governed internal inventory.
+- Specialist knowledge and product ownership do not create competing territorial principals.
+- Public model adoption remains useful to independent and private consumers without granting KI jurisdiction over them.
+- Internal routing preserves repository-owned access, canonical acceptance and executable boundaries.
+- Known Lands can describe external relationships without confusing awareness with authority.
+- Charter and Conformance provide an adopted baseline, while provenance and owner permission govern knowledge movement.
 
 ## References
 
-- [SDR-KI-ARCADIA-001: Knowledge Islands — The Strategy](SDR-KI-ARCADIA-001-knowledge-islands-the-strategy.md)
+- [SDR-KI-ARCADIA-001: Knowledge Islands - The Strategy](SDR-KI-ARCADIA-001-knowledge-islands-the-strategy.md)
 - [SDR-KI-ARCADIA-003: The Governance of an Island](SDR-KI-ARCADIA-003-the-governance-of-an-island.md)
-- [Territories and Archipelagos](../../../Pillars/Philosophy/Introduction/Concept/Territories%20and%20Archipelagos/Territories%20and%20Archipelagos.md)
-- [Jurisdiction](../../../Pillars/Philosophy/Introduction/Concept/Jurisdiction/Jurisdiction.md)
-- [Contribution Process](../../../Pillars/Philosophy/Model/Processes/Contribution%20Process/Contribution%20Process.md)

@@ -2,6 +2,12 @@
 
 This is the runtime-neutral working convention for Arcadia Principal.
 
+## Territorial authority
+
+Arcadia is the Capital of the Knowledge Islands territory. [Charter](Admin/Governance/Charter.md) declares its authority and [Known Lands](<Admin/Governance/Known Lands.md>) owns the internal inventory and external signposting. Registry resolution, Agora working sets and Paperclip companies confer no jurisdiction or cross-repository write authority. Each island retains its source access, canonical acceptance and product ownership.
+
+Techné remains a specialist island pending separately verified knowledge consolidation. Its [programme hold](https://github.com/knowledgeislands/ki-techne-principal/blob/main/AGENTS.md#techne-holding-position), retained work and independent implementation products remain in force. This conceptual rollout does not authorise migration, branch integration or programme resumption.
+
 ## Progress and commits
 
 - Give concise progress updates at meaningful checkpoints and at least every few minutes during sustained work.
@@ -34,7 +40,7 @@ Full specification in [[Structure]]. Summary:
 - 4 top-level folders: `Calendar` (daily notes, meeting notes, session digests, and periodic reviews), `Pillars` (internal knowledge - methodology, approach, and domain-specific reference), `Resources` (external reference - things that exist independently), `Streams` (status tracking for projects and workstreams - durable knowledge belongs in Pillars)
 - `Admin` and `-` (outbound) are canonical zones - `Admin` holds governance (`Admin/Governance/`: charter, known lands, conventions, decisions, note templates, policies) and operations (`Admin/Operations/`: activities, processes, live artifacts, skills) - migrated from Knowledge Capital per GDR-KI-ARCADIA-002; `-` is outbound staging. `Admin` is gated through the Enactment Process alongside `Pillars` and `Resources` - changes route through a proposal. [[Admin/MEMORY|MEMORY]] is the root memory index of active Admin content
 - `Pillars` and `Resources` share subfolder names by design - e.g. `Pillars/Finance` holds internal knowledge; `Resources/Finance` holds general reference
-- `Streams` is an operational container: `Streams/Roadmap/` holds flat finite work records, while `Streams/Housekeeping/` holds recurring-work templates. A work record's horizon and lifecycle are frontmatter metadata, never a folder path.
+- `Streams` is an operational container: `Streams/Roadmap/` holds flat finite work records. Recurring obligations are Activity notes in the configured collection, currently `Admin/Operations/Activities/`; opted-in housekeeping Activities produce ordinary roadmap runs. A work record's horizon and lifecycle are frontmatter metadata, never a folder path.
 - Calendar note types - daily notes, meeting notes, session digests, and the monthly index are all siblings in the same month folder, each referenced from the daily note by wikilink; the daily note does not duplicate their content. Weekly notes are filed separately in a per-year `YYYY By Week/` folder:
   - Daily notes: `Calendar/YYYY/YYYY-MM MonthName/YYYY-MM-DD DayName.md`
   - Meeting notes: `Calendar/YYYY/YYYY-MM MonthName/YYYY-MM-DD Meeting Name.md` - one note per meeting
@@ -48,11 +54,11 @@ The general principle: `Pillars` holds internal knowledge owned by the Knowledge
 
 ### Changing canonical content (strictly enforced)
 
-Substantive changes to a canonical zone (`Admin`, `Pillars`, `Resources`) go through the **Enactment Process**: create or advance the relevant record in `Streams/Roadmap/` and use the shared change-management lifecycle - do not edit `Admin`/`Pillars`/`Resources` directly. When starting such work, load `ki-repo-kb-streams` and the relevant shared change-management skill. The lifecycle is `draft` -> `ready` -> `in-progress` -> `awaiting-review` -> `done`. See [[Philosophy/Model/Processes/Enactment Process|Enactment Process]]. Exempt: trivial typo/formatting fixes, `Calendar/` entries, and `+/` triage.
+Substantive changes to a canonical zone (`Admin`, `Pillars`, `Resources`) go through the **Enactment Process**: create or advance the relevant record in `Streams/Roadmap/` and use the shared change-management lifecycle - do not edit `Admin`/`Pillars`/`Resources` directly. When starting such work, load `ki-repo-kb-streams` and the relevant shared change-management skill. The lifecycle is `draft` -> `ready` -> `in-progress` -> `awaiting-review` -> `done`. See the [local Enactment Process](<Admin/Operations/Processes/Enactment Process.md>). Exempt: trivial typo/formatting fixes, `Calendar/` entries, and `+/` triage.
 
 ### Index Notes (strictly enforced)
 
-Every folder must have an index note with the same name (e.g. `Productivity/Productivity.md`). It uses `card/note` format and does not duplicate content - it contextualises and points. Create it when creating the folder.
+Every folder must have an index note with the same name (e.g. `Productivity/Productivity.md`). Its `note_type` follows the `ki-repo-kb` index taxonomy and it does not duplicate content - it contextualises and points. Create it when creating the folder.
 
 **Structure:** A prose `## Overview` section explaining the folder's purpose and how its contents fit together, followed by one named H2 section per direct child. Each child section introduces the sub-note or sub-folder in two to four substantive sentences - what it covers, why it exists, what a reader will find. A `## Contents` list is a last resort for children that cannot be contextualised in prose.
 
@@ -85,15 +91,13 @@ Operational rules and known pitfalls are captured in auto-memory (`feedback_{ki_
 
 ### Updating the island
 
-Full note format specification in [[Notes]]. Key rules:
+The `ki-repo-kb` skill owns note metadata and internal links; instrument-specific record skills own their additional fields. Local authoring and routing pointers:
 
 - Before writing any changes, confirm with the user first
 - Tag conventions: [[Frontmatter/Tags|Tags]]
-- Frontmatter must include `status` and `author` as YAML properties
-  - `status`: `draft - Month YYYY`, `current - Month YYYY`, `outdated - Month YYYY`, or `archive - Month YYYY`
-  - `author`: `Manual`, `Written with Claude`, or `Mixed`
+- `note_type` classifies note kind and tags describe subject. `updated` and human `reviewed` timestamps describe freshness; `author` records authorship. A note's lifecycle or state, where applicable, follows its owning note type rather than a universal dated `status` vocabulary. Work, Activity, Decision Record and trade metadata follow their owning skills.
 - Sections separated by `---`; body uses H2 headings
-- Prefer `[[wikilinks]]` over repeating content; body links use the shortest unique path (Obsidian algorithm: bare filename if unique, minimum disambiguating prefix if not); `## Contents` links always use the full absolute path with an alias — `[[Full/Path/Note|Note Name]]`; agents must check for filename collisions before writing a bare link
+- `ki-repo-kb` owns links between Knowledge Base notes: use shortest-unique `[[wikilinks]]`, including table cells, and escape an alias separator as `\|` in a cell. This scoped rule takes precedence over general `ki-authoring` relative-link guidance. Repository orientation and other house documents use descriptive relative Markdown links; cross-repository provenance uses canonical source references and a known revision. The applicable note or record skill owns metadata.
 
 ### Session Digests
 
@@ -111,10 +115,10 @@ See [[Routing Rules]] for any additional routing rules specific to this island.
 
 ## Knowledge Island Specifics (strictly enforced)
 
-All values specific to this island - identity parameters, task prefix, skill triggers, schedule configuration, integration details, and physical paths - live in `Admin/Governance/`. The [[Admin/Governance/Charter|Charter]] is the primary reference: it holds the identity parameters and the full adoption and activity roster. Integration and platform configuration lives in [[Admin/Governance/Conventions/Admin Conventions/Integrations|Integrations]] under `Admin/Governance/Conventions/Admin Conventions/`.
+Public island identity, task prefix, skill triggers, schedules and adopted integration policy live in `Admin/Governance/`. The local registry owns physical checkout and source-store paths; private runtime identities and credentials stay outside public governance. The [[Admin/Governance/Charter|Charter]] is the primary reference: it holds the identity parameters and the full adoption and activity roster. Integration and platform configuration lives in [[Admin/Governance/Conventions/Admin Conventions/Integrations|Integrations]] under `Admin/Governance/Conventions/Admin Conventions/`.
 
 **Automations and skills must read their configuration from these notes at runtime, not hardcode values.** This keeps prompts portable across islands and ensures a single source of truth. When an integration changes, update the relevant `Admin/Governance/Conventions/` note - the automations will pick up the change on their next run.
 
 ## Decision Records
 
-Significant structural decisions about this island are recorded as Decision Records (DRs) in `Admin/Governance/Decisions/`. Each `decision_type` has its own prefix: `GDR-` (governance), `ADR-` (architecture), `KDR-` (knowledge), `SDR-` (strategy), `PDR-` (product), `DDR-` (data), `XDR-` (security), `ODR-` (operations), `RDR-` (research). Serials are global within `ARCADIA`. Create a DR when an Enactment Process proposal produces a `Decision` output that warrants a standalone permanent record -- structural choices, adoption of tools or formats, cross-repo boundaries. Routine content additions do not need a DR. The `knowledgeislands-decision-records` skill governs the format. The index is `Admin/Governance/Decisions/Decisions.md`.
+Significant structural decisions about this island are recorded as Decision Records (DRs) in `Admin/Governance/Decisions/`. Each `decision_type` has its own prefix: `GDR-` (governance), `ADR-` (architecture), `KDR-` (knowledge), `SDR-` (strategy), `PDR-` (product), `DDR-` (data), `XDR-` (security), `ODR-` (operations), `RDR-` (research). Serials are per decision-type prefix within the `KI-ARCADIA` scope. Create a DR when an Enactment Process proposal produces a `Decision` output that warrants a standalone permanent record -- structural choices, adoption of tools or formats, cross-repo boundaries. Routine content additions do not need a DR. The `ki-decision-records` skill governs the format. The index is `Admin/Governance/Decisions/Decisions.md`.

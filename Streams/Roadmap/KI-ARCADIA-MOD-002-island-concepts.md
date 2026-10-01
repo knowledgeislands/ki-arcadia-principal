@@ -4,13 +4,13 @@ id: KI-ARCADIA-MOD-002
 area: MOD
 title: Territory and island governance
 theme: knowledge-model
-status: ready
+status: awaiting-review
 horizon: now
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: 843954a3c2f24e8456eeb6b0401570b6abc9d17f
 created_at: 2026-04-27T22:57:50Z
-updated_at: 2026-10-01T21:40:54Z
+updated_at: 2026-10-01T21:54:20Z
 author: Mixed
 ---
 
@@ -38,11 +38,11 @@ The Streams preflight blocker was a single obsolete Housekeeping index explicitl
 
 ## Steps
 
-- [ ] Reconcile the territory concept and its existing strategic decision: one Capital per governed territory, independent archipelago grouping, local acceptance boundaries, and no implied universal jurisdiction.
-- [ ] Update Arcadia's Charter and Known Lands with its canonical identity, explicit internal inventory, separate external signposting, and local-registry boundary.
-- [ ] Reconcile the Contribution Process with receiver-controlled public adoption and separately authorised contributions and restricted exchange.
-- [ ] Correct Arcadia's recurring-work and metadata/link ownership pointers in its Enactment Process and root orientation without bulk rewriting unrelated knowledge.
-- [ ] Verify the conceptual sources against the shared baseline and exact public inventory, record review evidence, and leave the item awaiting human review.
+- [x] Reconcile the territory concept and its existing strategic decision: one Capital per governed territory, independent archipelago grouping, local acceptance boundaries, and no implied universal jurisdiction.
+- [x] Update Arcadia's Charter and Known Lands with its canonical identity, explicit internal inventory, separate external signposting, and local-registry boundary.
+- [x] Reconcile the Contribution Process with receiver-controlled public adoption and separately authorised contributions and restricted exchange.
+- [x] Correct Arcadia's recurring-work and metadata/link ownership pointers in its Enactment Process and root orientation without bulk rewriting unrelated knowledge.
+- [x] Verify the conceptual sources against the shared baseline and exact public inventory, record review evidence, and leave the item awaiting human review.
 
 ## Files touched
 
@@ -107,6 +107,40 @@ This record owns conceptual delivery. Receiver-owned shared standards, knowledge
 - **Verify:** Focused governance audits, touched-document lint, public-identity check, and coordinator review.
 - **Return:** Touched paths, concise semantic diff, check outcomes, and any unresolved boundary.
 - **Checkpoint:** Return the uncommitted patch for coordinator integration.
+
+## Review
+
+### Delivered
+
+The territory-first conceptual and public KI governance baseline is delivered from `843954a3c2f24e8456eeb6b0401570b6abc9d17f`. Arcadia is the Knowledge Islands Capital; Techné remains a specialist island pending its separate knowledge-consolidation delivery.
+
+### Change Summary
+
+The concept, existing strategic decision, Charter, Known Lands and Contribution Process agree on one territorial Capital, repository-owned acceptance, receiver-controlled public adoption and separately permitted restricted exchange. Known Lands has 23 explicit public repository identities, with external signposting separate and machine paths removed.
+
+Local Enactment and root orientation now route recurring obligations to Activities, finite-work metadata to the shared lifecycle owners, and KB link conventions to the KB standard. Product islands acquire no Knowledge Base folder requirement. The execution hold and independent Techné implementation products remain intact.
+
+### Verification
+
+- `ki repo audit --skill ki-work`: passed.
+- `ki repo audit --skill ki-repo-kb-streams`: passed.
+- `ki repo audit --skill ki-repo-kb-principal`: all six composed skills passed.
+- `ki repo audit --skill ki-decision-records`: passed.
+- Touched Markdown lint, added-link resolution and `git diff --check`: passed.
+- A parsed TOML comparison independently confirmed the exact 23 canonical repository identities against the inspected owner and direct-member roster.
+- Coordinator judgment review confirmed Charter/inventory agreement, external authority, no private consumer publication, no new project Admin-folder mandate and no programme resumption.
+
+### Outstanding concerns
+
+Knowledge consolidation, other Capitals' local adoption, detailed cross-territory exchange, and the Observatory reader are separate work. This record neither migrates Techné content nor retires its source repository. The prior empty Housekeeping scaffold was removed in its own recoverable Git commit before planning.
+
+### Post-change review
+
+The governing documents now distinguish jurisdiction, working sets and machine-local resolution. The inventory is adopted under the human-approved rollout, not appointed by Agora membership. Existing accepted standing and contribution rules survive without universal Arcadia jurisdiction. The delivery is ready for human review, not self-accepted.
+
+### Mini recap
+
+Public territorial meaning and Arcadia's own declarations are coherent and verified. Shared harness guidance consumes the same principles. Consolidation must use the preservation manifest and retain held work, historical identities and authority before any source retirement.
 
 ## Discussion
 
