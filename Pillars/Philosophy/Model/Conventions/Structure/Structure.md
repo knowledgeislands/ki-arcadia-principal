@@ -4,8 +4,8 @@ tags:
   - card/note
   - topic/knowledge-islands
   - topic/knowledge-management
-status: draft - April 2026
-author: Written with Claude
+status: current - October 2026
+author: Mixed
 ---
 
 # Structure
@@ -18,28 +18,23 @@ Structure is where those geographic conventions are specified. Each zone has its
 
 ### Physical Stores
 
-Each island realises its knowledge through one or more physical stores:
+A Knowledge Base declares its notes store and any additional source-store roles in tracked configuration. Product islands use their applicable repository contract rather than acquiring this folder layout.
 
-| Store | Purpose | Structure |
+| Store | Purpose | Authority |
 | --- | --- | --- |
-| **Text store** | Markdown notes - version-controlled, git-backed, human-readable | Canonical island folder structure |
-| **Binary store** | Large binary files - images, PDFs, exports, attachments | Mirrors text store exactly |
-| **Working space** | Temporary area used by tools and agents; ephemeral | None required |
+| **Notes store** | Governed Markdown knowledge | Repository history and canonical-change process |
+| **Optional sources store** | Material unsuitable for Git | Explicit declared need and source access policy |
+| **Working space** | Temporary work by people or tools | No canonical standing |
 
-The text and binary stores must share an identical folder structure so that files are co-located by topic regardless of which store they live in. When creating or referencing a binary asset, save it to the binary store under the same relative subfolder as the corresponding note.
-
-Git is the source of truth for canonical knowledge. The working space is ephemeral - nothing in it is canonical until committed to a store.
+An external source store is opt-in, not inferred from the repository name. The local registry resolves physical checkout and source-store locations; portable governance and citations use canonical identities or declared store aliases. Source access and publication remain separate decisions.
 
 ### Governance Infrastructure
 
-The governance infrastructure belongs to the principal island and serves the entire archipelago. It is not a store - it is the operational layer through which knowledge is managed and evolved:
+The Capital holds shared governance for its territory. Each island retains its own source permissions, canonical acceptance and product responsibilities. An archipelago groups islands by shared character and does not independently confer jurisdiction.
 
-| Infrastructure | Purpose |
-| --- | --- |
-| **Cowork project** | The parliament - where proposals are reviewed, sessions are run, and archipelago-wide decisions made |
-| **Working folder** | The yard - temporary scratch space for in-progress work; discarded once committed or abandoned |
+Collaboration tools, companies and working sets implement the owners' chosen processes. They do not appoint a Capital or grant cross-repository authority. Temporary working folders likewise confer no canonical standing.
 
-Specific paths for each island are defined in its Knowledge Capital.
+Governed identity and policy belong in Admin; machine-specific paths belong in the local registry.
 
 ---
 
@@ -55,11 +50,11 @@ The Library is the canonical record - version-controlled, governed, and the sing
 | `Pillars`   | Internal knowledge - philosophies, methodologies, approaches                        |
 | `Resources` | External knowledge - things that exist independently                                |
 | `Streams`   | Status tracking for projects and workstreams - durable knowledge belongs in Pillars |
-| `Admin`     | Base-agnostic governance and operations - present but minimal (see note below)      |
+| `Admin`     | Local governance and operations      |
 | `+`         | Inbox - unsorted captures awaiting filing (inbound staging, not a zone)             |
 | `-`         | Outbound staging - produced artefacts leaving the island; present but minimal       |
 
-`Admin` and `-` are introduced minimally to align with the canonical Knowledge Islands model (five zones - `Calendar`, `Pillars`, `Resources`, `Streams`, `Admin` - flanked by the inbound `+` and outbound `-` staging areas). For now this island's governance remains in [[Knowledge Capital]] and session digests remain sibling `Calendar` notes; migrating governance into [[Admin]] and digest output into `-` is deliberate future work, tracked but not yet done.
+The five Knowledge Base zones are `Calendar`, `Pillars`, `Resources`, `Streams` and `Admin`, with inbound `+` and outbound `-` staging. Arcadia's governance lives in Admin, not a separate Knowledge Capital folder. Calendar records and outbound artifacts follow their own note-type and process owners; a shared staging convention does not authorise relocating existing records.
 
 `Pillars` and `Resources` share subfolder names by design. For example, `Pillars/Finance` covers internal finances; `Resources/Finance` covers general finance knowledge such as banking regulations.
 
@@ -86,7 +81,7 @@ When creating or filing a note, route to the most specific matching folder:
 3. **Internal knowledge on a topic** → `Pillars/[Topic]/[Title].md`
 4. **External knowledge on a topic** → `Resources/[Topic]/[Title].md`
 5. **Finite forward work** → `Streams/Roadmap/[ID]-[slug].md`
-6. **Recurring obligation** → `Streams/Housekeeping/[Name] Housekeeping.md`
+6. **Recurring obligation** → the configured Activity collection, currently `Admin/Operations/Activities/`; opted-in housekeeping Activities create ordinary roadmap runs
 7. **Unsure** → `+/[Title].md` (inbox, to be filed)
 
 When updating an existing note: read it first, then merge new content in, preserving structure and enriching rather than replacing.
@@ -124,9 +119,9 @@ When creating a new folder, create its folder note at the same time.
 
 ## Streams
 
-Streams carry knowledge in motion: finite forward work, recurring obligations, and their review evidence. They are not part of the Library; their content is not canonical. Work matures through an approved record, stabilises into `Admin/`, `Pillars/`, or `Resources/`, and its reviewed record is retained until explicitly pruned.
+Streams carry knowledge in motion: finite forward work, runs of recurring obligations, and their review evidence. They are not part of the Library; their content is not canonical. Work matures through an approved record, stabilises into `Admin/`, `Pillars/`, or `Resources/`, and its reviewed record is retained until explicitly pruned.
 
-`Streams/Roadmap/` holds flat finite work records and its allocation ledger. `Streams/Housekeeping/` holds recurring-work templates. A record's horizon and lifecycle are frontmatter metadata, not navigation folders. The full Streams structure and routing are canonical in `ki-repo-kb-streams`; see [[Enactment Process]] for the local governance framing.
+`Streams/Roadmap/` holds flat finite work records and its allocation ledger. Recurring obligations are defined as Activity notes in the configured collection; `ki-repo-kb-activities` owns their shape and `ki-work-housekeeping` owns opted-in cadence and run evidence. A record's horizon and lifecycle are frontmatter metadata, not navigation folders. The full Streams structure and routing are canonical in `ki-repo-kb-streams`; see [[Enactment Process]] for the local governance framing.
 
 ---
 

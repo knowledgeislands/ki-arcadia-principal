@@ -10,7 +10,7 @@ blocks: []
 blocked_by: []
 baseline_ref: 843954a3c2f24e8456eeb6b0401570b6abc9d17f
 created_at: 2026-04-27T22:57:50Z
-updated_at: 2026-10-01T21:54:20Z
+updated_at: 2026-10-01T22:01:32Z
 author: Mixed
 ---
 
@@ -53,6 +53,10 @@ The Streams preflight blocker was a single obsolete Housekeeping index explicitl
 - `Admin/Governance/Known Lands.md`
 - `Admin/Operations/Processes/Enactment Process.md`
 - `AGENTS.md`
+- `Admin/Governance/Conventions/Streams Conventions/Streams Conventions.md`
+- `Admin/Governance/Decisions/SDR-KI-ARCADIA-002-the-home-of-knowledge.md`
+- `Pillars/Philosophy/Model/Conventions/Structure/Structure.md`
+- `Pillars/Philosophy/Model/Processes/Enactment Process/Enactment Process.md`
 - This record and the linked review's current-state pointer
 
 ## Verify
@@ -101,7 +105,7 @@ This record owns conceptual delivery. Receiver-owned shared standards, knowledge
 
 - **Deliverable:** Coherent territorial model and public Capital declarations.
 - **Inputs:** This record, the reconciliation review, current Charter, Known Lands, concept, strategic decision and Contribution Process.
-- **Scope:** Exactly the seven canonical/orientation files listed above; no other repository writes.
+- **Scope:** The concept, SDR-005, Charter, Known Lands, Contribution Process, Admin Enactment Process and root AGENTS; no other repository writes. The coordinator owns the four additional consistency corrections and review evidence.
 - **Authority:** Edit and locally verify these files under the human's rollout approval; no commits, publication, service actions, roadmap mutation or worktree changes.
 - **Isolation:** Exclusive file ownership in the primary checkout; the coordinator alone edits this work record and serialises Git writes.
 - **Verify:** Focused governance audits, touched-document lint, public-identity check, and coordinator review.
@@ -120,13 +124,15 @@ The concept, existing strategic decision, Charter, Known Lands and Contribution 
 
 Local Enactment and root orientation now route recurring obligations to Activities, finite-work metadata to the shared lifecycle owners, and KB link conventions to the KB standard. Product islands acquire no Knowledge Base folder requirement. The execution hold and independent Techné implementation products remain intact.
 
+The coordinator's wider consistency pass found four canonical sources that would contradict this delivery. Streams Conventions, the philosophical Enactment Process and Structure now agree on Activity routing and owner approval. The existing Home of Knowledge decision now scopes KB folders to Knowledge Bases instead of every island. Structure also distinguishes territorial governance from archipelago grouping, makes sources stores opt-in, and leaves physical paths in the registry. No records or external stores were relocated.
+
 ### Verification
 
 - `ki repo audit --skill ki-work`: passed.
 - `ki repo audit --skill ki-repo-kb-streams`: passed.
 - `ki repo audit --skill ki-repo-kb-principal`: all six composed skills passed.
 - `ki repo audit --skill ki-decision-records`: passed.
-- Touched Markdown lint, added-link resolution and `git diff --check`: passed.
+- Touched Markdown lint, added-link resolution and `git diff --check`: passed. The four consistency corrections also passed principal and Decision Record audits; no remaining `Streams/Housekeeping/` instruction occurs in Admin or Pillars.
 - A parsed TOML comparison independently confirmed the exact 23 canonical repository identities against the inspected owner and direct-member roster.
 - Coordinator judgment review confirmed Charter/inventory agreement, external authority, no private consumer publication, no new project Admin-folder mandate and no programme resumption.
 

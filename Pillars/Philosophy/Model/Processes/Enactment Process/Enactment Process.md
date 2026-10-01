@@ -3,8 +3,8 @@ note_type: pillars/index
 tags:
   - card/note
   - topic/knowledge-islands
-status: draft - April 2026
-author: Written with Claude
+status: current - October 2026
+author: Mixed
 ---
 
 # Enactment Process
@@ -29,7 +29,7 @@ The Enactment Process works alongside Streams, Pillars and Resources in an itera
 └──────────────────────────────────────────────┘
 ```
 
-- **Streams** are the home of ongoing work; authority to work there is granted by its presence in the workspace.
+- **Streams** are the home of ongoing work. Draft capture follows the shared process; adoption and delivery require the applicable owner's approval, not merely workspace presence.
 - **Pillars / Resources** are the home of stable, ratified knowledge; nothing lands there except through the council's ratification of a proposal that specifies the change.
 
 A roadmap record moves through `draft → ready → in-progress → awaiting-review → done`; the shared change-management skills define what each status means and the transitions between them.
@@ -43,4 +43,4 @@ These localise the canonical process to this island:
 - **Approver.** The council ratifies proposals; on a single-person island the user stands in for it.
 - **Stores.** Internal canonical knowledge settles into `Pillars/`; external reference into `Resources/`.
 - **Working area.** For complex or destructive rollout steps, stage previews in the Cowork working area before they land in the island - a review checkpoint; nothing there is canonical until committed.
-- **Naming.** Finite work is a flat, identifier-qualified record in `Streams/Roadmap/`; recurring work is a template in `Streams/Housekeeping/`. Horizon and lifecycle are record metadata. Full structure is in `ki-repo-kb-streams` and [[Structure]].
+- **Naming.** Finite work is a flat, identifier-qualified record in `Streams/Roadmap/`; recurring obligations are Activity notes in the configured collection and opted-in housekeeping creates ordinary roadmap runs. Horizon and lifecycle are record metadata. `ki-repo-kb-streams` owns the container, `ki-repo-kb-activities` owns Activity definitions and `ki-work-housekeeping` owns opted-in recurrence. [[Structure]] supplies the local placement.
