@@ -1,131 +1,123 @@
 ---
-note_type: stream-roadmap
+note_type: stream-proposal
 id: KI-ARCADIA-MOD-002
 area: MOD
-title: Island concepts
+title: Territory and island governance
 theme: knowledge-model
-tags:
-  - card/proposal
-  - topic/knowledge-islands
-status: draft
-priority: low
-horizon: future
-candidate: true
+status: ready
+horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-27T22:57:50Z
-updated_at: 2026-09-01T16:31:09Z
-purpose: Specify and resolve unresolved elements of the island conceptual and geographic model - settlement types, Harbour, Known Lands, Routes, and Customs
+updated_at: 2026-10-01T21:40:54Z
 author: Mixed
 ---
 
-# Island Concepts Proposal
+# Territory and island governance
 
-## Overview
+## Goal
 
-Several elements of the Knowledge Islands conceptual and geographic model remain unresolved or only partially specified. This stream tracks the work of completing them.
+Make the territory, Capital, island, Known Lands, and knowledge-exchange principles agree across Arcadia's governed conceptual sources, with an explicit public Knowledge Islands instance from which repository-owned rollout can proceed.
 
-The scope falls into two areas. **Settlement types** concern the vocabulary for how knowledge stores are classified and named - what makes something an island rather than something smaller, and how internal divisions of an island are described. **Boundary geography** covers three unresolved elements of the geographic metaphor - Harbour, Routes, and Customs - which are present in the model but not yet fully specified in Concept or Structure.
+## Context
 
-All of these belong to the same layer of the model: the geographic and jurisdictional frame through which knowledge is held, bounded, and exchanged. Knowledge signposting gives Routes a practical purpose: an island can identify where a question, capture, or piece of work belongs before the destination applies its own internal routing rules.
+The human approved the territory-first sequence and Techné knowledge consolidation direction on 1 October 2026, then requested supervised delivery using lower-cost workers. The [governance reconciliation review](../../+/territory-governance-reconciliation-review.md) records the evidence and wider sequence. This record already owns island concepts and signposting; it is being shaped in place rather than duplicated.
 
----
+## Boundary
 
-## Governance
+This delivery settles the conceptual and public KI governance baseline and corrects the local recurring-work guidance that contradicted the current shared standard. It establishes Arcadia as the Knowledge Islands territorial Capital, separates governed internal membership from external signposting, and preserves each island's content, access, and acceptance authority.
 
-This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment Process]].
+Techné's separate knowledge repository will be absorbed through a preservation manifest and a separate consolidation delivery. This record does not retire it, move held work, resume the execution programme, change services or company bindings, or implement a knowledge reader or transport. Town naming and an isometric map remain outside this delivery. Private estate inventories stay in their owning private territories.
 
----
+## Current state
 
-## Inputs
+The old conceptual sources mixed governance and geography, described unrestricted internal flow despite satellite audience boundaries, and presented Arcadia as a universal meta-Capital. Known Lands listed two repositories and obsolete machine paths. The older proposal treated reciprocal Agora membership as authoritative. These claims need one coherent replacement.
 
-| Type     | Detail                                                                                                |
-| -------- | ----------------------------------------------------------------------------------------------------- |
-| Document | [[Concept]] - `[!todo] Customs and Routes` at the end of the Geography section; settlement type table |
-| Document | [[Structure]] - `[!todo] Harbour` and `[!todo] Routes and Customs` stubs                              |
-| Document | [[Known Lands]] - Arcadia's objective estate map and the current pointer to personal navigators' charts |
+The Streams preflight blocker was a single obsolete Housekeeping index explicitly containing no retained templates. The empty scaffold was removed with Git recovery, and the selected Streams audit now passes. The source review remains evidence, not an independent execution authority.
 
----
+## Steps
 
-## Outputs
+- [ ] Reconcile the territory concept and its existing strategic decision: one Capital per governed territory, independent archipelago grouping, local acceptance boundaries, and no implied universal jurisdiction.
+- [ ] Update Arcadia's Charter and Known Lands with its canonical identity, explicit internal inventory, separate external signposting, and local-registry boundary.
+- [ ] Reconcile the Contribution Process with receiver-controlled public adoption and separately authorised contributions and restricted exchange.
+- [ ] Correct Arcadia's recurring-work and metadata/link ownership pointers in its Enactment Process and root orientation without bulk rewriting unrelated knowledge.
+- [ ] Verify the conceptual sources against the shared baseline and exact public inventory, record review evidence, and leave the item awaiting human review.
 
-| Type | Detail |
-| --- | --- |
-| Artefact | Updated `Concept.md` - settlement type table expanded with Towns; island defined by repository boundary; naming resolved |
-| Artefact | Updated `Concept.md` - `[!todo] Customs and Routes` resolved into prose covering both concepts at conceptual level |
-| Artefact | Updated `Structure.md` - `[!todo] Harbour` and `[!todo] Routes and Customs` resolved into structural specification |
-| Artefact | Knowledge Signposting model and graduated Known Lands expectations |
+## Files touched
 
----
+- `Pillars/Philosophy/Introduction/Concept/Territories and Archipelagos/Territories and Archipelagos.md`
+- `Pillars/Philosophy/Model/Processes/Contribution Process/Contribution Process.md`
+- `Admin/Governance/Decisions/SDR-KI-ARCADIA-005-territories-archipelagos-and-the-constitutional-layer.md`
+- `Admin/Governance/Charter.md`
+- `Admin/Governance/Known Lands.md`
+- `Admin/Operations/Processes/Enactment Process.md`
+- `AGENTS.md`
+- This record and the linked review's current-state pointer
 
-## Intended Destinations
+## Verify
 
-- [ ] `Pillars/Philosophy/Concept/Concept.md` - resolve settlement type naming and add Town to the type table
-- [ ] `Pillars/Philosophy/Concept/Concept.md` - replace `[!todo] Customs and Routes` with conceptual prose
-- [ ] `Pillars/Philosophy/Model/Conventions/Structure/Structure.md` - replace `[!todo] Harbour` with structural conventions for the `+/` inbox pattern
-- [ ] `Pillars/Philosophy/Model/Conventions/Structure/Structure.md` - replace `[!todo] Routes and Customs` with structural specification for inter-island links and boundary controls
-- [ ] `Pillars/Philosophy/Introduction/Concept/Territories Archipelagos/Territories Archipelagos.md` - establish island-relative Known Lands and persona-home signposting without conflating them with principal governance
-- [ ] `Pillars/Philosophy/Model/Conventions/Structure/Structure.md` - specify cross-island signposting before the destination island's internal zone routing
-- [ ] `Admin/Governance/Known Lands.md` - conform Arcadia's instance to the settled signposting model
+Run focused `ki-work`, `ki-repo-kb-streams`, `ki-repo-kb-principal`, and `ki-decision-records` audits. Lint only touched Markdown, verify local references, and compare the internal inventory's canonical identities with the inspected owner declaration. Review human-readable authority separately from structural audit results. Ensure there are no private consumer identities, machine-local paths, implied cross-repository write grants, or unapproved programme resumption.
 
----
+## Dependencies / blocks
 
-## Open Questions
+No local work-item dependency blocks this conceptual delivery. The harness's territory-governance work consumes the same human-approved principles; the existing inter-territory exchange intake remains downstream for detailed transport semantics. Knowledge consolidation depends on its own preservation manifest and consumer review, not on automatic acceptance of this record.
 
-1. **Satellite vs Subsidiary?** The current model uses "satellite island" for a governed extension of a territory. Does "satellite" carry the right connotation - something orbiting a principal - or does "subsidiary" better convey the governance relationship? Both imply dependency; the distinction is whether the framing is spatial or organisational.
+## Documentation impact
 
-2. **What characterises a Town?** The working definition is: an internal division of an island that has distinct identity but no separate repository. Is the repository boundary sufficient as the defining criterion, or does a Town also imply something about community - a group of citizens with a shared focus, as opposed to a folder structure? Can a solo practitioner have a town, or is the concept inherently collective?
+### Decision Records
 
-3. **Customs: governance concept or structural one?** Concept.md treats it as jurisdictional (controls what passes between territories). Structure.md would need to translate that into something concrete - what does Customs look like as a structural convention?
+Amend the existing territorial strategy record in place. The shared fundamentals' engineering ownership changes with the separately verified consolidation.
 
-4. **Routes: inter-island or intra-island?** Concept.md frames Routes as pathways between islands. Structure.md frames them as pathways between zones and between islands. Are intra-island routes (e.g. the relationship between Streams and Pillars) meaningfully different from inter-island routes?
+### Specifications
 
-5. **Harbour: is the `+/` folder the full specification?** The Harbour is already implemented as `+/` - material lands there and is routed inward. Is the structural spec just a formalisation of the existing convention, or is there more to say (e.g. sub-zones within `+/`, retention rules, voice notes handling)?
+The conceptual notes, Charter, and Known Lands establish the territorial model; this delivery adds no executable schema.
 
----
+### Guides
 
-## Design Notes
+Update the Contribution Process and local Enactment/orientation pointers. Keep the supporting review as dated evidence linked to current work.
 
-The existing introduction of Harbour in Concept.md (§ The Shore) already says: "Nothing flows directly from the Harbour into the Library; it is assessed first, relevant material routed to the right Stream or zone, the rest discarded." The structural specification in Structure.md needs to give that concreteness: the `+/` folder is the Harbour; `+/_Voice Notes/` is managed by the voicenotes-sync plugin and excluded from manual routing; items age out if not processed.
+### Roadmap
 
-Customs at the boundary rule is already implicit in Concept.md: "if customs exist at the boundary, it is a separate territory. If knowledge flows freely with no controls, it is internal structure." The conceptual section may only need to expand this into a definition rather than invent something new.
+This record owns conceptual delivery. Receiver-owned shared standards, knowledge migration and reader implementation retain their own work records.
 
-The working hypothesis on settlement types: the repository is the defining boundary. An island is an island because it has its own repository. Below that threshold - a named division within a single repository - is a Town. This would be added to the settlement type table in Concept.md alongside Principal and Satellite.
+## Delegation
 
-### Knowledge Signposting
+### Locked decisions
 
-Knowledge signposting is an island-level capability rather than a principal-only responsibility. Known Lands is not merely an estate inventory: it is an island-relative navigational chart identifying other islands, their scope, their relationship to this island, and the topics or intents that should be routed to them.
+- Territory membership belongs to governed knowledge; the local registry resolves availability.
+- Each territory has one Capital, while any island may maintain external signposting.
+- Public KI does not catalogue private consumers; public knowledge adoption is receiver-controlled.
+- Techné harness and operator CLI remain separate implementation products.
+- Product execution holds, retained branches, and repository-owned acceptance remain intact.
 
-The working routing model is:
+### Escalate
 
-1. When the destination is known, a person or agent may work directly in that island.
-2. When the destination is unknown, the interaction begins in the persona's home island.
-3. The home island uses its Known Lands and routing rules to signpost the question, capture, or work.
-4. Customs governs what may cross the boundary and any required handoff.
-5. The destination island retains canonical authority and applies its own internal routing between Calendar, Streams, Pillars, Resources, and Admin.
+- A change to private or joint-governed territory membership not supported by the existing owner evidence.
+- A destructive migration, changed accepted decision meaning outside these principles, or a need to mutate runtime state.
+- A source collision or contradictory authority that the bounded plan cannot resolve.
 
-The home island need not be a principal island. Principal describes governance position within a territory; persona describes the identity or role through which someone interacts; signposting describes navigation between islands. These are independent characteristics.
+### Worker: arcadia-contract
 
-Known Lands expectations should be graduated:
+- **Deliverable:** Coherent territorial model and public Capital declarations.
+- **Inputs:** This record, the reconciliation review, current Charter, Known Lands, concept, strategic decision and Contribution Process.
+- **Scope:** Exactly the seven canonical/orientation files listed above; no other repository writes.
+- **Authority:** Edit and locally verify these files under the human's rollout approval; no commits, publication, service actions, roadmap mutation or worktree changes.
+- **Isolation:** Exclusive file ownership in the primary checkout; the coordinator alone edits this work record and serialises Git writes.
+- **Verify:** Focused governance audits, touched-document lint, public-identity check, and coordinator review.
+- **Return:** Touched paths, concise semantic diff, check outcomes, and any unresolved boundary.
+- **Checkpoint:** Return the uncommitted patch for coordinator integration.
 
-- Every island may maintain Known Lands.
-- An island with cross-island relationships should maintain it.
-- A persona's home island is expected to maintain it because signposting is part of its purpose.
-- A principal island must maintain it because it coordinates a territory.
-- A specialist island may keep a narrower chart containing only relevant neighbours.
+## Discussion
 
-Potential signpost data includes canonical island identity, relationship, owned scope, topics or intents routed there, what remains local, and the handoff mechanism. Query signposting, capture signposting, and work signposting may select different destinations for the same topic.
+### Signposting and governance
 
-This model must not turn Known Lands into an assertion of membership or authority. Agora declarations remain the reciprocal contract for formal repository membership. Known Lands may describe any relevant destination, while trades or another handoff mechanism carry concrete work between independently governed repositories.
+The earlier proposal's useful distinction survives: a person's home island is not necessarily a territorial principal, and query, capture, and work signposting can choose different destinations. Every island may maintain a local chart. The Capital additionally owns the governed internal inventory. Agora membership describes a working set and no longer supplies territorial authority.
 
-Open design questions for this part of the work are:
+### Retained adjacent questions
 
-1. Whether Known Lands becomes a default `ki-repo-kb` governance surface, remains optional for ordinary islands, or is structurally required only when cross-island relationships exist.
-2. Whether "persona island" and "home island" are separate terms, with a persona nominating one home, or one combined concept.
-3. Which minimum fields make a Known Lands entry actionable without turning it into a second repository registry.
-4. Whether reusable signposting belongs in `ki-repo-kb`, a separate capability, or a runtime resolver; it must not be limited to `ki-repo-kb-principal`.
+The earlier Town-versus-island naming discussion, detailed Harbour routing, and geographic presentation ideas remain design inputs for later independently scoped work. They do not block the present authority model and are not claimed as delivered. The Observatory reader should first make governed knowledge navigable and readable; its eventual visual metaphor is a product decision.
 
-## Adherence
+### Techné transition
 
-This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.
+The human approved absorbing the engineering knowledge into Arcadia while retaining the implementation harness and CLI. Preserve source identity, decision and work provenance, held branches, and the hold's authority before any source retirement. This conceptual delivery may describe Techné as a specialist island during that migration; it must not claim that content has moved before verified consolidation.
