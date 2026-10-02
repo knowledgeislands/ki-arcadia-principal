@@ -3,14 +3,14 @@ note_type: review
 status: draft
 author: AI-assisted
 observed_at: 2026-10-01T19:37:14Z
-updated: 2026-10-01T21:54:20Z
+updated: 2026-10-02T06:46:29Z
 ---
 
 # Territory governance reconciliation review
 
 ## Purpose and authority
 
-This dated review records the evidence behind the territory-first sequence. The human subsequently approved the direction and supervised rollout using lower-cost workers. Current authority and delivered evidence are in [Territory and island governance](../Streams/Roadmap/KI-ARCADIA-MOD-002-island-concepts.md), now awaiting review; this document is not a second execution plan.
+This dated review records the evidence behind the territory-first sequence. The human subsequently approved the direction and supervised rollout using lower-cost workers. Current authority and delivered evidence are in [Territory and island governance](../Streams/Roadmap/KI-ARCADIA-MOD-002-island-concepts.md), accepted on 2 October 2026; this document is not a second execution plan.
 
 The obsolete empty Housekeeping scaffold was removed with Git recovery and the Streams preflight now passes. The governing concept, Charter, Known Lands, strategic decision and Contribution Process have been reconciled. The sections below retain the original proposal and observations as review evidence; consult those canonical sources for current meaning.
 

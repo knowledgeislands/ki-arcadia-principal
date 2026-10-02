@@ -3,14 +3,14 @@ note_type: review
 status: current
 author: AI-assisted
 observed_at: 2026-10-01T21:53:41Z
-updated: 2026-10-01T22:25:04Z
+updated: 2026-10-02T06:46:29Z
 ---
 
 # Techné consolidation manifest
 
 ## Authority and frozen source
 
-The reviewed dispositions below have now been implemented under the committed Ready baseline `d6d6d18e578d08310691f41b0a09ebe327312756`; the governing work item is awaiting human review. Planning and future-tense treatment descriptions preserve the approved instructions, while Delivery verification records the actual result. No source repository disposal or programme resumption is implied.
+The reviewed dispositions below have now been implemented under the committed Ready baseline `d6d6d18e578d08310691f41b0a09ebe327312756`; the governing work item was accepted on 2 October 2026. Planning and future-tense treatment descriptions preserve the approved instructions, while Delivery verification records the actual result. No source repository disposal or programme resumption is implied.
 
 This is the reviewed manifest for [[KI-ARCADIA-ECO-007-consolidate-techne-knowledge|Consolidate Techné knowledge]]. Its exact dispositions and preservation/projection design are approved within that Ready record's documentary scope; implementation waits for the coordinator's committed baseline and start signal. It authorises no resumption, acceptance, source repository retirement, deletion, branch integration, publication or runtime change. The approved direction is to absorb engineering knowledge into Arcadia while retaining `knowledgeislands/ki-techne-harness` and `knowledgeislands/tools-techne` as separate implementation products.
 
