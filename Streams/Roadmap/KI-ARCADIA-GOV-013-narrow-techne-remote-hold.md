@@ -5,12 +5,12 @@ area: GOV
 title: Narrow Techné remote hold
 theme: governance
 horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: d3b641aaa2c874572a2b7110924bf89a3844b85c
 created_at: 2026-10-02T02:56:44Z
-updated_at: 2026-10-02T03:02:15Z
+updated_at: 2026-10-02T06:14:03Z
 ---
 
 # KI-ARCADIA-GOV-013: Narrow Techné remote hold
@@ -21,7 +21,7 @@ Keep Techné tooling development active and conformant with its repository stand
 
 ## Context
 
-The canonical programme hold currently blocks new implementation, architecture changes and branch integration across the retained source, harness and CLI. The human clarified that this is too broad: the concern is tooling used for remote running and attempts to manage a remote environment. The two implementation repositories already describe a narrower hold and need Arcadia's canonical policy to agree.
+The canonical programme hold originally blocked new implementation, architecture changes and branch integration across the retained source, harness and CLI. The human clarified that this was too broad: the concern is tooling used for remote running and attempts to manage a remote environment. The two implementation repositories already described a narrower hold and needed Arcadia's canonical policy to agree.
 
 ## Boundary
 
@@ -29,7 +29,7 @@ This change is documentary governance only. It does not run remote agents, modif
 
 ## Current state
 
-Arcadia's policy and several standing orientation notes still describe a blanket programme hold. `tools-techne` and `ki-techne-harness` now permit local development but explicitly mark Arcadia's policy as awaiting reconciliation.
+At selection, Arcadia's policy and several standing orientation notes still described a blanket programme hold. `tools-techne` and `ki-techne-harness` permitted local development but explicitly marked Arcadia's policy as awaiting reconciliation.
 
 ## Steps
 
@@ -83,15 +83,19 @@ Arcadia's `ki-repo-kb-streams`, `ki-authoring`, `ki-repo-kb` and `ki-repo-kb-pri
 
 ### Outstanding concerns
 
-The retained `ki-techne-principal` source repository's `AGENTS.md` and `README.md` still describe the former blanket hold. They are outside this approved Arcadia and product-repository boundary and have their own change-management gate. A source-owned identifier and reconciliation are needed before this record is accepted as estate-wide consistent. Existing candidate acceptance and any remote-delivery policy remain separate.
+No outstanding concern remains within the approved Arcadia and product-repository boundary. The retained `ki-techne-principal` source repository's `AGENTS.md` and `README.md` still describe the former blanket hold; the canonical policy now identifies that discrepancy and leaves reconciliation to the source repository's own authority. This acceptance does not assert estate-wide documentary consistency. Existing candidate acceptance and any remote-delivery policy remain separate.
 
 ### Post-change review
 
-The canonical policy and active product guidance meet the requested distinction without weakening the remote-operation gate. The only identified consistency risk is the retained source's older standing text; no runtime or release regression was introduced by this documentation-only delivery. Human review should decide the source-owned follow-up before acceptance.
+The canonical policy and active product guidance meet the requested distinction without weakening the remote-operation gate. The human accepted this bounded delivery and left the retained source's older standing text to its own repository. No runtime or release regression was introduced by this documentation-only delivery.
 
 ### Mini recap
 
-GOV-013 narrowed Arcadia's hold, kept tool-building and CI active under standards, and aligned the two product entry points. Markdown and focused KI audits passed. Route the retained source's standing-text reconciliation through its own work authority; do not infer permission for remote operations or automatic candidate integration.
+GOV-013 narrowed Arcadia's hold, kept tool-building and CI active under standards, and aligned the two product entry points. Markdown and focused KI audits passed. The source repository retains ownership of its older wording; no remote operation or automatic candidate integration was authorised.
+
+## Done
+
+Accepted 2026-10-02 by the accountable principal on the review packet above.
 
 ## Discussion
 

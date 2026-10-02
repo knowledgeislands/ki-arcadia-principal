@@ -24,8 +24,8 @@ Before remote execution or environment management resumes, the Convenor must bri
 
 The approved [[KI-ARCADIA-ECO-007-consolidate-techne-knowledge|knowledge consolidation]] transfers canonical engineering knowledge to [[Engineering Practice/Engineering Practice|Engineering Practice]] while retaining source evidence and existing work. The human's exception to the retiring source's Enactment prerequisite permits the scoped documentary authority transition only. It does not itself accept candidates, change source work records or permit remote operations.
 
-Source snapshots remain readable in `knowledgeislands/ki-techne-principal`, and the existing work records, ledger, candidates and worktrees remain in place.
+Source snapshots remain readable in `knowledgeislands/ki-techne-principal`, and the existing work records, ledger, candidates and worktrees remain in place. That retained repository's `AGENTS.md` and `README.md` still describe the earlier blanket hold; their wording is not the current canonical policy and remains for the source repository to reconcile under its own authority.
 
 ## Provenance
 
-The broader original hold is preserved as historical evidence in [the source instruction](https://github.com/knowledgeislands/ki-techne-principal/blob/b25e9c950fd87715d12f76b69bb2079c3a4fc054/AGENTS.md#techne-holding-position) at revision `b25e9c950fd87715d12f76b69bb2079c3a4fc054`. The principal narrowed its live scope on 2 October 2026 to remote running and remote-environment management through [[KI-ARCADIA-GOV-013-narrow-techne-remote-hold|GOV-013]].
+The broader original hold is preserved as historical evidence in [the source instruction](https://github.com/knowledgeislands/ki-techne-principal/blob/b25e9c950fd87715d12f76b69bb2079c3a4fc054/AGENTS.md#techne-holding-position) at revision `b25e9c950fd87715d12f76b69bb2079c3a4fc054`. The principal narrowed its live scope on 2 October 2026 to remote running and remote-environment management. The local acceptance and prune commits for `KI-ARCADIA-GOV-013` preserve the delivery record in Git history.
