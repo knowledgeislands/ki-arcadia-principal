@@ -4,12 +4,12 @@ area: ECO
 title: Consolidate Techné knowledge
 theme: ecosystem-coordination
 horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: d6d6d18e578d08310691f41b0a09ebe327312756
 created_at: 2026-10-01T21:53:41Z
-updated_at: 2026-10-01T22:25:04Z
+updated_at: 2026-10-02T06:40:37Z
 ---
 
 # KI-ARCADIA-ECO-007: Consolidate Techné knowledge
@@ -276,6 +276,10 @@ The coordinator and an independent reviewer checked the exact eight-root scope, 
 ### Mini recap
 
 Techné is now the engineering discipline within Arcadia, with its original source retained for provenance and held work. The shared fundamentals decision and both product orientations agree on that ownership. The verified documentary delivery is ready for local integration and human review; no push, release, archive, deletion or runtime action is authorised.
+
+## Done
+
+Accepted 2026-10-02 by Kris Brown on review packet above.
 
 ## Discussion
 

@@ -4,13 +4,13 @@ id: KI-ARCADIA-MOD-002
 area: MOD
 title: Territory and island governance
 theme: knowledge-model
-status: awaiting-review
+status: done
 horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: 843954a3c2f24e8456eeb6b0401570b6abc9d17f
 created_at: 2026-04-27T22:57:50Z
-updated_at: 2026-10-01T22:01:32Z
+updated_at: 2026-10-02T06:40:37Z
 author: Mixed
 ---
 
@@ -147,6 +147,10 @@ The governing documents now distinguish jurisdiction, working sets and machine-l
 ### Mini recap
 
 Public territorial meaning and Arcadia's own declarations are coherent and verified. Shared harness guidance consumes the same principles. Consolidation must use the preservation manifest and retain held work, historical identities and authority before any source retirement.
+
+## Done
+
+Accepted 2026-10-02 by Kris Brown on review packet above.
 
 ## Discussion
 
