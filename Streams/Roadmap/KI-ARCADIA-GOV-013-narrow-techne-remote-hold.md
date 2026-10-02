@@ -5,12 +5,12 @@ area: GOV
 title: Narrow Techné remote hold
 theme: governance
 horizon: now
-status: ready
+status: in-progress
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: d3b641aaa2c874572a2b7110924bf89a3844b85c
 created_at: 2026-10-02T02:56:44Z
-updated_at: 2026-10-02T02:56:44Z
+updated_at: 2026-10-02T03:00:20Z
 ---
 
 # KI-ARCADIA-GOV-013: Narrow Techné remote hold
@@ -33,8 +33,8 @@ Arcadia's policy and several standing orientation notes still describe a blanket
 
 ## Steps
 
-- [ ] Narrow the canonical policy to remote agent execution and remote-environment operations while stating that local implementation, architecture, testing, review, branch integration and ordinary CI continue under declared repository standards.
-- [ ] Reconcile Arcadia's standing policy and engineering navigation so none presents local tool development as generally suspended.
+- [x] Narrow the canonical policy to remote agent execution and remote-environment operations while stating that local implementation, architecture, testing, review, branch integration and ordinary CI continue under declared repository standards.
+- [x] Reconcile Arcadia's standing policy and engineering navigation so none presents local tool development as generally suspended.
 - [ ] Verify the policy, linked notes, work record and residual hold language with focused searches, Markdown checks and KI audits.
 
 ## Files touched

@@ -28,7 +28,7 @@ Pillars holds the internal knowledge of this island - the methodologies, framewo
 
 ## Engineering Practice
 
-[[Engineering Practice/Engineering Practice|Engineering Practice]] holds Arcadia's Techné engineering discipline: foundations, architecture, operating model, technology posture and diagrams. It is the canonical destination of the adopted source knowledge; [[Engineering Practice/MEMORY|Engineering Practice memory]] records scope and the unchanged programme hold.
+[[Engineering Practice/Engineering Practice|Engineering Practice]] holds Arcadia's Techné engineering discipline: foundations, architecture, operating model, technology posture and diagrams. It is the canonical destination of the adopted source knowledge; [[Engineering Practice/MEMORY|Engineering Practice memory]] records scope and the remote-operation hold.
 
 ---
 

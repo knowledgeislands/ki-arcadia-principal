@@ -46,7 +46,7 @@ Other territories may reference or adopt the public KI model under their own aut
 
 An Agora is a working set, the registry resolves canonical identities to machine-local locations, and a Paperclip company coordinates admitted work. None establishes territorial membership, permission or cross-repository write authority. Reconcile any disagreement with this Charter and Known Lands through the accountable owners.
 
-Arcadia owns the Techné engineering discipline in [[Engineering Practice/Engineering Practice|Engineering Practice]], including canonical architecture, operating models, technology posture and engineering decision criteria. The former `knowledgeislands/ki-techne-principal` knowledge tree is retained noncanonical source evidence with unchanged held work; it is not another Capital or canonical engineering owner. The [[Techne Programme Hold]] preserves existing execution constraints and restart authority across the source, harness and CLI. Knowledge adoption does not integrate candidates, alter services or resume the programme.
+Arcadia owns the Techné engineering discipline in [[Engineering Practice/Engineering Practice|Engineering Practice]], including canonical architecture, operating models, technology posture and engineering decision criteria. The former `knowledgeislands/ki-techne-principal` knowledge tree is retained noncanonical source evidence with existing work; it is not another Capital or canonical engineering owner. The [[Techne Programme Hold]] restricts remote running and remote-environment management across the source, harness and CLI while local engineering continues under repository standards. Knowledge adoption does not itself integrate candidates or alter services.
 
 ---
 
