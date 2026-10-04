@@ -16,7 +16,7 @@ author: Written with Claude
 
 The AI operating layer - patterns and conventions that govern how AI agents work within the island, independent of any specific tool. Content here applies across AI tools; see tool specific notes for further details.
 
-This is the Pattern layer in the [[Authoring Guidelines|content layers]]: activity-agnostic, island-agnostic, agent-agnostic.
+Guidance here holds for any activity, any island and any AI agent; [[Authoring Guidelines]] explains where more specific guidance belongs.
 
 ---
 

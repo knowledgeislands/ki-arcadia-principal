@@ -22,7 +22,7 @@ The content here covers what each activity does and why. The prompts that drive 
 
 ## Authoring Guidelines
 
-Authoring Guidelines documents the content layers for activity prompts and the conventions for writing, updating, and layering them. It is the prerequisite for anyone working with the Prompt notes in Tools/Claude/Activities, and the reference for understanding how a generic activity note and an island-specific prompt relate to each other.
+Authoring Guidelines documents the content layers for activity prompts and the conventions for writing, updating, and layering them. It is the prerequisite for anyone working with the prompt notes in Tools/Claude/Activities, and the reference for understanding how a generic activity note and an island-specific prompt relate to each other.
 
 ## Constitutional
 

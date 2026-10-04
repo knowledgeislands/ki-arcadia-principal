@@ -6,14 +6,14 @@ title: Authoring layers
 theme: governance
 tags:
   - topic/knowledge-islands
-status: ready
+status: awaiting-review
 priority: medium
 horizon: next
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: aa0a9b6881c050f9fcd1f436a6b61245bc15a4a0
 created_at: 2026-04-30T07:53:50Z
-updated_at: 2026-10-04T19:25:00Z
+updated_at: 2026-10-04T19:40:00Z
 author: Written with Claude
 ---
 
@@ -48,10 +48,10 @@ Re-surveyed on 2026-10-04. Layer labels outside [[Authoring Guidelines]] remain 
 
 ## Steps
 
-- [ ] Rewrite the layer-label sentences in the three Claude prompt indexes, `Tools/Claude/Claude.md`, `Agentic AI` and the Tending definition index as descriptive prose that keeps the wikilinks.
-- [ ] Downgrade capitalised "Prompt note", "Prompt library" and similar role names to ordinary nouns outside fenced prompt blocks.
-- [ ] Confirm the Convergence Check shared-notes list carries no Scheduled Task Audit entry.
-- [ ] Read every touched note end to end and smooth any awkward phrasing.
+- [x] Rewrite the layer-label sentences in the three Claude prompt indexes, `Tools/Claude/Claude.md`, `Agentic AI` and the Tending definition index as descriptive prose that keeps the wikilinks.
+- [x] Downgrade capitalised "Prompt note", "Prompt library" and similar role names to ordinary nouns outside fenced prompt blocks.
+- [x] Confirm the Convergence Check shared-notes list carries no Scheduled Task Audit entry.
+- [x] Read every touched note end to end and smooth any awkward phrasing.
 
 ## Files touched
 
@@ -74,6 +74,47 @@ None blocking. Follows [[KI-ARCADIA-MOD-001-reading-order|MOD-001]] (prompt fron
 ## Delegation
 
 None; the edits are small and sequential.
+
+---
+
+## Review
+
+### Delivered
+
+Phases 2 to 4 of the approved boundary: layer labels removed from reader-facing notes outside [[Authoring Guidelines]], the per-group "Definition layer" and "Prompt layer" pointers dropped in favour of the wikilinks, capitalised role names downgraded outside fenced prompt blocks, and an end-to-end read of every touched note. Phase 1, the [[Authoring Guidelines]] restructure, is held for an owner decision (see Decisions). Baseline `aa0a9b6`; the full SHA is in `baseline_ref`.
+
+### Change Summary
+
+- **Claude prompt indexes:** `Activities.md`, `Constitutional.md` and the Claude `Tending.md` no longer say "the Prompt layer" or "documented in the Definition layer"; each sentence now just links the definition.
+- **Prose rewrites:** `Tools/Claude/Claude.md` calls `Activities` "the prompt library", drops "(the Definition layer)" and replaces the stale Email, Tending, Briefings and Linear group list with the current Constitutional and Tending groups. `Agentic AI` replaces "This is the Pattern layer" with a plain statement that its guidance holds for any activity, island and AI agent. The Tending definition index describes Scheduled Task Audit as keeping definition, prompt and live task in step, and now points at the prompt notes in `Tools/Claude/Activities` rather than "this folder".
+- **Capitalisation:** "Prompt note" becomes "prompt note" in `Activity Note`, `What Keeps an Island Alive`, `How Tools Connect`, the Claude `Tending.md` and eight prose lines of Scheduled Task Audit; "Definition counterpart" becomes "definition note".
+- **Convergence Check:** confirmed no Scheduled Task Audit entry remains; the shared-notes list now names the whole `Pillars/Philosophy/` folder, so no edit was needed.
+- **Deviation:** phase 1 not delivered (owner hold); prompt text inside fenced blocks deliberately unchanged to avoid drift from the live scheduled task.
+
+### Verification
+
+- Outside [[Authoring Guidelines]] and fenced prompt blocks, grep finds no "Definition layer", "Prompt layer", "Pattern layer", "Prompt library", capitalised "Prompt note" or "Definition counterpart" in `Pillars/` or `Admin/`.
+- The shortest-unique resolver reports `bad 0` across all touched files, including this record's previously ambiguous `[[Conformance]]` link; no em or en dashes added.
+- `ki repo audit`, `--skill ki-repo-kb` and `--skill ki-repo-kb-streams` PASS; rumdl hook passes on commit.
+
+### Outstanding concerns
+
+- [[Authoring Guidelines]] needs an owner decision before phase 1 can proceed: four layers (Definition, Configuration, Behaviour, Script) or the five-corner lattice (Definition, Configuration, Pattern, Agent Behaviour, Script); the answer to its "Note to Reviewer" on a self-referencing `All/All/All` note; and completion of the "Definitive Activities" example. It also still cites `Pillars/Knowledge Capital/` paths. On acceptance, capture phase 1 as a follow-up record rather than closing it silently.
+- The Convergence Check shared-notes list now covers all of `Pillars/Philosophy/`, which includes the island-specific `Tools/Claude/Activities/` prompts, and its island-specific table still names `Knowledge Capital/`; worth a tending review.
+
+### Post-change review
+
+Reader-facing notes outside the framework no longer carry layer labels, so the goal of implicit layering is met everywhere except the framework note itself, whose restructure now depends on an owner vocabulary choice. Edits were sentence-level and checked mechanically for links, dashes and residual labels. Ready for review as a partial delivery.
+
+### Mini recap
+
+Nine notes de-labelled, eight Scheduled Task Audit lines recased, stale group list fixed; Authoring Guidelines restructure held for owner. Learning route: the owner's April rewrite of the framework diverged from this record's five-name vocabulary, so re-read the target note before planning a terminology pass.
+
+---
+
+## Discussion
+
+The survey, phase plan, design decisions and open issues below are this record's earlier analysis, retained as context for review.
 
 ---
 
@@ -114,7 +155,7 @@ Role-name mentions across the Pillars notes in scope, regenerated after the prom
 1. **Definition + Prompt is the dominant pair.** Eleven notes carry both: the [[Philosophy/Model/Activities/Tending/Tending|Activities/Tending]] index, [[Philosophy/Model/Tools/Claude/Claude|Claude]], the seven `Tools/Claude/Activities/*/*.md` per-group index notes, and the consolidated [[Philosophy/Model/Tools/Claude/Activities/Tending/Scheduled Task Audit|Scheduled Task Audit]] note. The seven group index notes plus `Activities.md` and `Claude.md` (nine notes) are the highest-volume target for the per-group index pass - each contains "in the Definition layer" or equivalent prose pointing Prompt-side at Definition-side.
 2. **`Pattern` appears only in [[Agentic AI]]** outside the framework. One reader-facing reference. Can be rephrased as "this is general operating guidance, portable across islands" with the role term retired.
 3. **`Agent Behaviour` appears nowhere outside the framework.** Zero reader-facing presence already - useful precedent that a framework term need not propagate outward.
-4. **`Configuration` appears in only one non-framework Pillars note** ([[Conformance]] under `Tools/Claude/Activities/Constitutional/`). The use points the reader at where island-specific config lives - a candidate for replacement with the wikilink alone.
+4. **`Configuration` appears in only one non-framework Pillars note** ([[Tools/Claude/Activities/Constitutional/Conformance|Conformance]] under `Tools/Claude/Activities/Constitutional/`). The use points the reader at where island-specific config lives - a candidate for replacement with the wikilink alone.
 5. **All individual activity Definitions are now clean of role-name mentions.** The migration completed the structural separation: Definitions hold descriptive content, Prompts hold executable content, and neither side carries the layer name as part of its prose. The Definition-side notes that still mention role names are the convention ([[Activity Note]]), the activity index ([[What Keeps an Island Alive]]), and the Tending group index. The inline-`## Prompt`-in-Definition convention from [[Activity Note]] format remains as a documented option but is no longer in active use here.
 6. **Role-name mentions concentrate on the `Tools/Claude/` side.** Of 25 notes with at least one mention (excluding the framework note), 20 sit under `Model/Tools/Claude/`. The remaining five are the convention, the activity index, the Tending Definition index, `Agentic AI`, and `How Tools Connect`. Option B's prose work focuses on the Tools/Claude side; the Definition side is already at the implicit-layering target.
 
@@ -129,12 +170,12 @@ Role-name mentions across the Pillars notes in scope, regenerated after the prom
 
 ## Phase Summary
 
-| Phase                            | Status         | Description |
-| -------------------------------- | -------------- | ----------- |
-| Authoring Guidelines restructure | 🔲 Not started | †           |
-| Per-group index pass             | 🔲 Not started | ‡           |
-| Capitalisation pass              | 🔲 Not started | §           |
-| Cross-check pass                 | 🔲 Not started | ¶           |
+| Phase                            | Status        | Description |
+| -------------------------------- | ------------- | ----------- |
+| Authoring Guidelines restructure | Held (owner)  | †           |
+| Per-group index pass             | Delivered     | ‡           |
+| Capitalisation pass              | Delivered     | §           |
+| Cross-check pass                 | Delivered     | ¶           |
 
 † Restructure [[Authoring Guidelines]] so the layered framing is descriptive rather than enumerated; keep the lattice as the analytical heart.
 
@@ -189,6 +230,8 @@ Before further implementation, reconcile the current destination branch, linked 
 - **Observed:** The mechanical renaming pass described in Soon was closed separately. The Phase Summary still marks all four phases of this record's structural rewrite as not started; that earlier closure is not completion of this item.
 - **Resolve:** Verify current reader-facing layer labels and note locations, then carry out or explicitly re-scope the Authoring Guidelines restructure, per-group index pass, capitalisation pass, and cross-check. Do not repeat the completed renaming pass as new work.
 - **Close:** Seek owner acceptance through `ki-accept` only after this record's own phases have a reviewed outcome. Retain the `done` record; pruning is a later explicit owner choice.
+
+---
 
 ## Adherence
 

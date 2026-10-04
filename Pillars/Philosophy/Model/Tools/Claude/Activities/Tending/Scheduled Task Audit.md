@@ -18,7 +18,7 @@ A daily automated task that verifies each live Cowork scheduled task has a corre
 
 Full prompt comparison across all tasks is not currently possible - see [[#Known Limitations]] below.
 
-This is a Claude-specific activity: it reads scheduled task metadata, the running task's own SKILL.md, and the Prompt notes under `Tools/Claude/Activities/`. It has no agent-agnostic Definition counterpart.
+This is a Claude-specific activity: it reads scheduled task metadata, the running task's own SKILL.md, and the prompt notes under `Tools/Claude/Activities/`. It has no agent-agnostic definition note.
 
 ---
 
@@ -110,23 +110,23 @@ Call `mcp__scheduled-tasks__list_scheduled_tasks` to retrieve metadata for all a
 
 ### 2. Identify the corresponding island note
 
-For each task, locate the matching Prompt note under `Pillars/Philosophy/Model/Tools/Claude/Activities/`. The task ID prefix is documented in [[Admin/Governance/Charter|Charter]].
+For each task, locate the matching prompt note under `Pillars/Philosophy/Model/Tools/Claude/Activities/`. The task ID prefix is documented in [[Admin/Governance/Charter|Charter]].
 
 ### 3. Verify schedule and description
 
-Compare cron expressions and descriptions against the Prompt note content. Flag mismatches.
+Compare cron expressions and descriptions against the prompt note content. Flag mismatches.
 
 ### 4. Self-verify prompt (automated runs) / full prompt comparison (manual runs)
 
-Automated: read the mounted SKILL.md and compare against the Prompt note's prompt block. Manual: compare Prompt note prompt blocks against any known live prompt content.
+Automated: read the mounted SKILL.md and compare against the prompt note's prompt block. Manual: compare prompt note prompt blocks against any known live prompt content.
 
-The Prompt note is always the canonical source. Push KI → task via `mcp__scheduled-tasks__update_scheduled_task` if the island is ahead; update the Prompt note if the live task is ahead.
+The prompt note is always the canonical source. Push KI → task via `mcp__scheduled-tasks__update_scheduled_task` if the island is ahead; update the prompt note if the live task is ahead.
 
 ---
 
 ## Sync Protocol
 
-When updating a prompt during an active session: update the Prompt note first, then push to the scheduled task via `mcp__scheduled-tasks__update_scheduled_task`. Batch edits - do not push after every small change. Push when:
+When updating a prompt during an active session: update the prompt note first, then push to the scheduled task via `mcp__scheduled-tasks__update_scheduled_task`. Batch edits - do not push after every small change. Push when:
 
 - The user explicitly signals readiness ("push it", "sync the task", "ready to run"), or
 - The iteration is confirmed complete, or
@@ -135,5 +135,5 @@ When updating a prompt during an active session: update the Prompt note first, t
 ## Notes
 
 - Minor whitespace or formatting differences can be ignored if they do not affect execution
-- Prompt changes should always originate in the Prompt note - direct Cowork edits are the primary source of untracked drift
-- If a task has no corresponding Prompt note, create one before the next run
+- Prompt changes should always originate in the prompt note - direct Cowork edits are the primary source of untracked drift
+- If a task has no corresponding prompt note, create one before the next run

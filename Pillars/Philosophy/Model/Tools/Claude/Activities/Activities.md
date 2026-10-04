@@ -14,9 +14,9 @@ author: Written with Claude
 
 ## Overview
 
-The prompt library for activities that Claude executes. Each subfolder maps to an activity group and holds the executable prompts - the Prompt layer in the [[Authoring Guidelines|content layers]]. Prompts in this library are Claude-specific and island-specific: they reference island configuration from [[Admin/Governance/Conventions/Admin Conventions/Integrations|Integrations]] and agentic patterns from [[Agentic AI]].
+The prompt library for activities that Claude executes. Each subfolder maps to an activity group and holds its executable prompts, written to the conventions in [[Authoring Guidelines]]. Prompts in this library are Claude-specific and island-specific: they reference island configuration from [[Admin/Governance/Conventions/Admin Conventions/Integrations|Integrations]] and agentic patterns from [[Agentic AI]].
 
-What an activity does and why it exists is documented in the Definition layer under [[Philosophy/Model/Activities/Activities]]. This layer holds only the executable "how".
+What an activity does and why it exists is documented under [[Model/Activities/Activities|Activities]]; this library holds only the executable "how".
 
 Activity groups that are vetoed on this island do not have a prompts folder here. The adoption position is recorded in [[Admin/Governance/Charter|Charter]].
 
