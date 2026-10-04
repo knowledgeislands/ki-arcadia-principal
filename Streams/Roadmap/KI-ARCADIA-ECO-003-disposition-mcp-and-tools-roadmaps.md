@@ -5,12 +5,12 @@ area: ECO
 title: Disposition the MCP and tools roadmap backlog
 theme: ecosystem-coordination
 horizon: now
-status: draft
+status: ready
 blocks: []
 blocked_by: []
 baseline_ref: 95f85a1a14ab9ff2834fe6d4f32355754e6de708
 created_at: 2026-09-26T16:22:01Z
-updated_at: 2026-10-04T11:00:23Z
+updated_at: 2026-10-04T11:41:51Z
 ---
 
 # Disposition the MCP and Tools Roadmap Backlog
@@ -28,6 +28,10 @@ The protocol records' three `now` and two `next` horizons remain historical queu
 ## Boundary
 
 Arcadia records the estate position and its own review. Each repository retained authority over its acceptance or Triage disposition. This reconciliation makes no receiver roadmap, ledger, or Git change. Other retained MCP drafts remain owner-controlled forward work; `KI-ARCADIA-ECO-004` separately tracks verified deferred findings.
+
+## Current state
+
+The receiver evidence is reconciled and the retained-work count is current as of 2026-10-04. The only remaining work is Arcadia's own delivery review packet, followed by independent review and acceptance through `ki-accept`.
 
 ## Receiver dispositions
 
@@ -81,7 +85,7 @@ The eighteen previously retained MCP records, three newly captured `KI-ARCADIA-E
 - [x] Re-ground all twenty-one records against their receiver Git histories and confirm their terminal decisions and later prune commits.
 - [x] Resolve the two historical escalation questions using the accepted receiver evidence.
 - [x] Count retained work in the nine MCP and two tools repositories, including four new Triage captures, without treating it as this record's closure scope.
-- [ ] Review Arcadia's reconciled evidence and accept this coordination record through its own lifecycle.
+- [ ] Re-verify the twenty-one Done and prune commits and the retained draft count, then prepare the delivery review packet for independent review and `ki-accept`.
 
 ## Files touched
 
