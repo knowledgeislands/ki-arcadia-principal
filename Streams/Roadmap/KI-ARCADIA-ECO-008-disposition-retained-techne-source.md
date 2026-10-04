@@ -5,12 +5,12 @@ area: ECO
 title: Retire the Techne source and disposition its work
 theme: ecosystem-coordination
 horizon: now
-status: in-progress
+status: awaiting-review
 blocks: []
 blocked_by: []
 baseline_ref: e06d1d902f892c7bac37f1a4ebf61201378b0f6d
 created_at: 2026-10-04T11:03:22Z
-updated_at: 2026-10-04T17:25:00Z
+updated_at: 2026-10-04T17:55:00Z
 ---
 
 # Retire the Techne Source and Disposition Its Work
@@ -59,13 +59,13 @@ Adopted into Now and shaped to Ready on 2026-10-04 on the owner's explicit instr
 
 ## Steps
 
-- [ ] Push the three Paperclip candidate branches unchanged to `knowledgeislands/ki-techne-principal`, verify each remote tip equals its local commit, record each as preserved unaccepted in the archived source, then `git worktree remove` each worktree. Do not accept, integrate or delete the branches, and do not mutate Paperclip companies or issues.
-- [ ] Obtain an independent judgement on each open draft and the issue ledger; transfer a surviving outcome as a new receiver-owned Triage record citing its originating identifier as provenance, or close it in the source with a terminal note. Never reuse a foreign identifier. Resolve the `TECHNE-GOV-005` reference from evidence without inventing a record.
-- [ ] Commit a final source change marking the repository retired and archived in `README.md` and `AGENTS.md`, pointing to Arcadia Engineering Practice; push it, confirm every branch and tag is on the remote, then run `gh repo archive knowledgeislands/ki-techne-principal --yes`.
-- [ ] Enact the Arcadia governance change: Charter, Known Lands, Techne Programme Hold, `AGENTS.md`, `README.md`, the Tool Ecosystem Map and any other note describing the source as live or retained; remove the source from `[skills.ki-agora.kis].members` and its trade route in `.ki.toml`. Decision Records stay historical unless their own convention requires an amendment.
-- [ ] Run `ki registry remove ki-techne-principal`.
-- [ ] Remove live references in their owning repositories: trade routes in `ki-techne-harness`, `tools-techne`, `ki-agentic-harness` and `ki-website`; the harness README; the website README and project catalogue; and chezmoi repository, trusted-folder, `ki` config and workspace entries, followed by a reviewed `chezmoi diff` and `chezmoi apply` and removal of trusted-folder entries from runtime configuration. Leave historical records unchanged.
-- [ ] Verify and report whether the local source checkout is clean and fully pushed; do not delete it.
+- [x] Push the three Paperclip candidate branches unchanged to `knowledgeislands/ki-techne-principal`, verify each remote tip equals its local commit, record each as preserved unaccepted in the archived source, then `git worktree remove` each worktree. Do not accept, integrate or delete the branches, and do not mutate Paperclip companies or issues.
+- [x] Obtain an independent judgement on each open draft and the issue ledger; transfer a surviving outcome as a new receiver-owned Triage record citing its originating identifier as provenance, or close it in the source with a terminal note. Never reuse a foreign identifier. Resolve the `TECHNE-GOV-005` reference from evidence without inventing a record.
+- [x] Commit a final source change marking the repository retired and archived in `README.md` and `AGENTS.md`, pointing to Arcadia Engineering Practice; push it, confirm every branch and tag is on the remote, then run `gh repo archive knowledgeislands/ki-techne-principal --yes`.
+- [x] Enact the Arcadia governance change: Charter, Known Lands, Techne Programme Hold, `AGENTS.md`, `README.md`, the Tool Ecosystem Map and any other note describing the source as live or retained; remove the source from `[skills.ki-agora.kis].members` and its trade route in `.ki.toml`. Decision Records stay historical unless their own convention requires an amendment.
+- [x] Run `ki registry remove ki-techne-principal`.
+- [x] Remove live references in their owning repositories: trade routes in `ki-techne-harness`, `tools-techne`, `ki-agentic-harness` and `ki-website`; the harness README; the website README and project catalogue; and chezmoi repository, trusted-folder, `ki` config and workspace entries, followed by a reviewed `chezmoi diff` and `chezmoi apply` and removal of trusted-folder entries from runtime configuration. Leave historical records unchanged.
+- [x] Verify and report whether the local source checkout is clean and fully pushed; do not delete it.
 
 ## Files touched
 
@@ -91,6 +91,45 @@ Owner approval for retirement, archive, branch preservation, governance change a
 ## Delegation
 
 One independent judgement on draft disposition and one independent final review; the coordinator performs all writes and commits.
+
+---
+
+## Review
+
+### Delivered
+
+The approved retirement sequence, from Arcadia baseline `e06d1d902f892c7bac37f1a4ebf61201378b0f6d` (Ready at `099d2e4`) and source baseline `ee5e84806eb0b250b316d3db57748a4d907cba0b`. Candidates were preserved, never accepted or integrated; no Paperclip company or issue, remote environment, Decision Record or local checkout was changed or deleted.
+
+### Change Summary
+
+- **Source** `knowledgeislands/ki-techne-principal`: three `paperclip/aligned-20260926/` branches pushed unchanged and their worktrees removed; final commit `c6f190a` marks `README.md` and `AGENTS.md` retired and archived with an Arcadia pointer, closes `TECHNE-OPS-002`, `-004` and `-005` in place and resolves the `TECHNE-GOV-005` reference; the GitHub repository is archived.
+- **Arcadia** `6336c6b`: Charter, Known Lands (inventory now 22 identities), Techne Programme Hold, Policies index, `AGENTS.md`, `README.md`, `Admin/MEMORY.md` and the Tool Ecosystem Map describe the source as retired; `.ki.toml` drops it from the `kis` Agora and removes its trade route. Dispositions and the foreign-work-identifier policy are recorded in Discussion.
+- **Registry**: `ki registry remove ki-techne-principal`.
+- **Estate**: trade route removed in `ki-techne-harness` `23a320c` and `tools-techne` `cfa84d8`; `ki-agentic-harness` `.ki.toml` route and README authority pointer; `ki-website` `f4417d5` removes the project entry and route, redirects `/projects/ki-techne-principal` to Arcadia and credits Engineering Practice; chezmoi `162a635` drops trusted-folder, `ki` repository-path, mgit and VS Code workspace entries, then `chezmoi apply`; trusted-folder entries removed from Claude Code settings, Claude Desktop configuration and Codex configuration.
+- **Deviation**: none of the drafts was transferred, on independent judgement; see Discussion.
+
+### Verification
+
+- `git ls-remote origin` equals every local branch tip in the source; no tags or stashes; `main` level with `origin/main`; `git worktree list` shows only the primary checkout.
+- `gh repo view knowledgeislands/ki-techne-principal --json isArchived` returned `true`.
+- `ki registry list` no longer lists the source; `chezmoi diff` is empty after apply.
+- `ki repo audit` PASS in Arcadia, the source before archival, `ki-techne-harness`, `tools-techne`, `ki-website` and chezmoi; `ki-agentic-harness` PASS with one pre-existing housekeeping WARN (SELECT-2 auto-memory) unrelated to this change.
+- Website `verify:projects`, `verify:routes`, `verify:docs`, `verify:provenance`, `verify:prose`, `bun test scripts` and a clean `build` including `verify:reachable` pass.
+- An estate grep outside historical records leaves only pinned provenance links in Arcadia, Arcadia `+/` captures, the harness `+/` prior-art note, the website redirect and the `tools-ki` and `tools-mgit` references below.
+
+### Outstanding concerns
+
+- `tools-ki` (`.ki.toml` route, `README.md`) and `tools-mgit` (`.ki.toml` route) are owned by a concurrent agent; a handoff was sent rather than editing them.
+- The local checkout is clean and fully pushed, holding only regenerable ignored caches; the owner may delete it.
+- Paperclip's own records of KIS-7, KIS-10 and KIS-44 still name the removed worktree paths; they were deliberately not mutated.
+
+### Post-change review
+
+The goal is met: the source is retired and archived with every branch recoverable, Arcadia is the sole live engineering-knowledge authority, and no live estate surface treats the source as a member or work location. Scope held to the approved sequence, with the drafts closed rather than transferred on recorded rationale. Regression risk is low; archival is reversible and the hold is neither lifted nor broadened.
+
+### Mini recap
+
+Retired `ki-techne-principal` end to end: candidates preserved unaccepted, drafts closed in place, `TECHNE-GOV-005` explained, governance, Agora, registry and estate references updated, repository archived. Learning route: the foreign-work-identifier policy recorded here may warrant promotion into the shared work-roadmap standard through `ki-agentic-harness`.
 
 ---
 
