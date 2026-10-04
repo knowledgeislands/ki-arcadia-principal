@@ -6,14 +6,14 @@ title: Authoring layers
 theme: governance
 tags:
   - topic/knowledge-islands
-status: draft
+status: ready
 priority: medium
-horizon: soon
+horizon: next
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-30T07:53:50Z
-updated_at: 2026-09-27T22:02:31Z
+updated_at: 2026-10-04T19:25:00Z
 author: Written with Claude
 ---
 
@@ -29,19 +29,51 @@ Arcadia-specific authoring decisions, when they emerge, live in [[Authoring]] un
 
 ## Governance
 
-This stream follows the [[Enactment Process]].
+This stream follows the [[Admin/Operations/Processes/Enactment Process|Enactment Process]].
 
 ---
 
-## Soon
+## Decisions
 
-This stream is the second half of a two-phase pass. The first phase (now closed) did the mechanical work:
+- **Scope.** Proceed with the structural rewrite: make the layer framing implicit outside [[Authoring Guidelines]], drop the "in the Definition layer" and "Prompt layer" pointers from the Claude prompt indexes and let the wikilink carry the navigation, and downgrade capitalised role names to ordinary nouns ("the prompt library", "prompt note"). Targets are the Claude prompt indexes (`Activities.md`, `Constitutional.md`, `Tending.md`), `Tools/Claude/Claude.md`, `Agentic AI`, `Activity Note`, `What Keeps an Island Alive`, the Tending definition index, `How Tools Connect` and the Scheduled Task Audit prose. Remove the stale Convergence Check shared-notes entry for Scheduled Task Audit. Prompt-note frontmatter is left to [[KI-ARCADIA-MOD-001-reading-order|MOD-001]]. Decided by the Fable reviewer under delegated autonomy (2026-10-04), reversible.
+- **Open issues resolved.** The per-group "in the Definition layer" pointers are dropped (wikilinks and the lattice in [[Authoring Guidelines]] carry the context); capitalised role names are downgraded; the Convergence Check entry is removed or confirmed absent; prompt frontmatter was standardised by MOD-001.
+- **Authoring Guidelines restructure held for the owner.** On 2026-04-30, after this record was created, the owner rewrote [[Authoring Guidelines]] by hand: it now describes four layers (Definition, Configuration, Behaviour, Script) while its lattice still names five (Definition, Configuration, Pattern, Agent Behaviour, Script), it carries an open "Note to Reviewer" question about a self-referencing `All/All/All` note, and its "Definitive Activities" example is unfinished. Restructuring it would overwrite owner design work and needs an owner decision on the layer vocabulary, so phase 1 is not delivered here. The remaining phases are vocabulary-neutral: they remove layer labels rather than choose names.
+- **Prompt blocks unchanged.** Text inside fenced prompt blocks is the canonical copy of a live scheduled task prompt; it is not recased, so the change introduces no prompt drift.
 
-- Layers are now named: Definition, Configuration, Pattern, Agent Behaviour, Prompt.
-- Audited 22 reader-facing references across 14 Pillars notes, 4 Streams notes, and 1 HTML view.
-- Created the stub [[Authoring]] note in Admin/Governance for Arcadia-specific authoring decisions; updated the KC Conventions index; added a pointer at the top of [[Authoring Guidelines]].
+---
 
-The remaining work is structural: making the layering implicit rather than labelled.
+## Current state
+
+Re-surveyed on 2026-10-04. Layer labels outside [[Authoring Guidelines]] remain in: the Claude prompt indexes ("the Prompt layer", "the Definition layer"), `Tools/Claude/Claude.md` ("the Prompt library", "the Definition layer", and a stale list of Email, Briefings and Linear groups that no longer exist), `Agentic AI` ("This is the Pattern layer"), the Tending definition index ("the boundary between Definition and Prompt"), and capitalised "Prompt note" in `Activity Note`, `What Keeps an Island Alive`, `How Tools Connect`, the Claude Tending index and the Scheduled Task Audit prose. Pointers that name [[Authoring Guidelines]] as the home of the "content layers" are framework references and stay. The Convergence Check shared-notes list now names the whole `Pillars/Philosophy/` folder and no longer lists Scheduled Task Audit.
+
+## Steps
+
+- [ ] Rewrite the layer-label sentences in the three Claude prompt indexes, `Tools/Claude/Claude.md`, `Agentic AI` and the Tending definition index as descriptive prose that keeps the wikilinks.
+- [ ] Downgrade capitalised "Prompt note", "Prompt library" and similar role names to ordinary nouns outside fenced prompt blocks.
+- [ ] Confirm the Convergence Check shared-notes list carries no Scheduled Task Audit entry.
+- [ ] Read every touched note end to end and smooth any awkward phrasing.
+
+## Files touched
+
+- `Pillars/Philosophy/Model/Tools/Claude/Activities/Activities.md`, `Constitutional/Constitutional.md`, `Tending/Tending.md`, `Tending/Scheduled Task Audit.md`.
+- `Pillars/Philosophy/Model/Tools/Claude/Claude.md`; `Pillars/Philosophy/Model/Tools/How Tools Connect.md`.
+- `Pillars/Philosophy/Model/Agents/Agentic AI/Agentic AI.md`; `Pillars/Philosophy/Model/Conventions/Notes/Activity Note.md`.
+- `Pillars/Philosophy/Model/Activities/What Keeps an Island Alive.md`; `Pillars/Philosophy/Model/Activities/Tending/Tending.md`.
+- This record.
+
+## Verify
+
+- Outside [[Authoring Guidelines]] and fenced prompt blocks, no Pillars note uses "Definition layer", "Prompt layer", "Pattern layer", "Prompt library" or capitalised "Prompt note".
+- Every changed wikilink resolves to exactly one note; no em or en dashes introduced.
+- `ki repo audit`, `--skill ki-repo-kb` and `--skill ki-repo-kb-streams` pass; markdown hooks pass on commit.
+
+## Dependencies / blocks
+
+None blocking. Follows [[KI-ARCADIA-MOD-001-reading-order|MOD-001]] (prompt frontmatter, delivered to review) and coordinates with [[KI-ARCADIA-GOV-003-index-note-review|GOV-003]].
+
+## Delegation
+
+None; the edits are small and sequential.
 
 ---
 
@@ -51,31 +83,31 @@ Role-name mentions across the Pillars notes in scope, regenerated after the prom
 
 | Note | Definition | Configuration | Pattern | Agent Behaviour | Prompt |
 | --- | :-: | :-: | :-: | :-: | :-: |
-| `Model/Activities/Tending/Tending.md` | x | — | — | — | x |
-| `Model/Activities/What Keeps an Island Alive.md` | — | — | — | — | x |
-| `Model/Agents/Agentic AI/Agentic AI.md` | — | — | x | — | — |
-| `Model/Conventions/Notes/Activity Note.md` | — | — | — | — | x |
-| `Model/Tools/Claude/Activities/Activities.md` | x | — | — | — | x |
-| `Model/Tools/Claude/Activities/Briefings/Briefings.md` | x | — | — | — | x |
-| `Model/Tools/Claude/Activities/Briefings/Morning Briefing.md` | — | — | — | — | x |
-| `Model/Tools/Claude/Activities/Constitutional/Conformance.md` | x | x | — | — | x |
-| `Model/Tools/Claude/Activities/Constitutional/Constitutional.md` | x | — | — | — | x |
-| `Model/Tools/Claude/Activities/Email/Email Test.md` | — | — | — | — | x |
-| `Model/Tools/Claude/Activities/Email/Email.md` | x | — | — | — | x |
-| `Model/Tools/Claude/Activities/Email/Re-route Triaged.md` | — | — | — | — | x |
-| `Model/Tools/Claude/Activities/Email/Recap.md` | — | — | — | — | x |
-| `Model/Tools/Claude/Activities/Email/Route Drift.md` | — | — | — | — | x |
-| `Model/Tools/Claude/Activities/Email/Route Review.md` | — | — | — | — | x |
-| `Model/Tools/Claude/Activities/Email/Route Triage.md` | — | — | — | — | x |
-| `Model/Tools/Claude/Activities/Linear/Linear Sync.md` | — | — | — | — | x |
-| `Model/Tools/Claude/Activities/Linear/Linear.md` | x | — | — | — | x |
-| `Model/Tools/Claude/Activities/Tending/Convergence Check.md` | — | — | — | — | x |
-| `Model/Tools/Claude/Activities/Tending/Health Check.md` | — | — | — | — | x |
-| `Model/Tools/Claude/Activities/Tending/Knowledge Rebuild.md` | — | — | — | — | x |
-| `Model/Tools/Claude/Activities/Tending/Scheduled Task Audit.md` | x | — | — | — | x |
-| `Model/Tools/Claude/Activities/Tending/Tending.md` | x | — | — | — | x |
-| `Model/Tools/Claude/Claude.md` | x | — | — | — | x |
-| `Model/Tools/How Tools Connect.md` | — | — | — | — | x |
+| `Model/Activities/Tending/Tending.md` | x | - | - | - | x |
+| `Model/Activities/What Keeps an Island Alive.md` | - | - | - | - | x |
+| `Model/Agents/Agentic AI/Agentic AI.md` | - | - | x | - | - |
+| `Model/Conventions/Notes/Activity Note.md` | - | - | - | - | x |
+| `Model/Tools/Claude/Activities/Activities.md` | x | - | - | - | x |
+| `Model/Tools/Claude/Activities/Briefings/Briefings.md` | x | - | - | - | x |
+| `Model/Tools/Claude/Activities/Briefings/Morning Briefing.md` | - | - | - | - | x |
+| `Model/Tools/Claude/Activities/Constitutional/Conformance.md` | x | x | - | - | x |
+| `Model/Tools/Claude/Activities/Constitutional/Constitutional.md` | x | - | - | - | x |
+| `Model/Tools/Claude/Activities/Email/Email Test.md` | - | - | - | - | x |
+| `Model/Tools/Claude/Activities/Email/Email.md` | x | - | - | - | x |
+| `Model/Tools/Claude/Activities/Email/Re-route Triaged.md` | - | - | - | - | x |
+| `Model/Tools/Claude/Activities/Email/Recap.md` | - | - | - | - | x |
+| `Model/Tools/Claude/Activities/Email/Route Drift.md` | - | - | - | - | x |
+| `Model/Tools/Claude/Activities/Email/Route Review.md` | - | - | - | - | x |
+| `Model/Tools/Claude/Activities/Email/Route Triage.md` | - | - | - | - | x |
+| `Model/Tools/Claude/Activities/Linear/Linear Sync.md` | - | - | - | - | x |
+| `Model/Tools/Claude/Activities/Linear/Linear.md` | x | - | - | - | x |
+| `Model/Tools/Claude/Activities/Tending/Convergence Check.md` | - | - | - | - | x |
+| `Model/Tools/Claude/Activities/Tending/Health Check.md` | - | - | - | - | x |
+| `Model/Tools/Claude/Activities/Tending/Knowledge Rebuild.md` | - | - | - | - | x |
+| `Model/Tools/Claude/Activities/Tending/Scheduled Task Audit.md` | x | - | - | - | x |
+| `Model/Tools/Claude/Activities/Tending/Tending.md` | x | - | - | - | x |
+| `Model/Tools/Claude/Claude.md` | x | - | - | - | x |
+| `Model/Tools/How Tools Connect.md` | - | - | - | - | x |
 
 ### Observations
 
@@ -160,4 +192,4 @@ Before further implementation, reconcile the current destination branch, linked 
 
 ## Adherence
 
-This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.
+This stream adheres to the [[Admin/Operations/Processes/Enactment Process|Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.
