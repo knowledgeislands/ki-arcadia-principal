@@ -10,7 +10,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-04T11:03:22Z
-updated_at: 2026-10-04T11:03:22Z
+updated_at: 2026-10-04T16:52:15Z
 ---
 
 # Decide Retained Techne Source and Work Disposition
@@ -49,6 +49,19 @@ Capture authorises no source disposal or archival action, work transfer, identif
 ## Discussion
 
 Captured on 2026-10-04 with the owner's permission to reserve and commit a Triage item. Before adoption, re-read the retained source state, the accepted consolidation evidence and the live hold policy, then present bounded alternatives and their evidence-retention consequences. No implementation choice is made by this record.
+
+On 2026-10-04 the owner stated a preference for retiring `ki-techne-principal` and asked for this record to carry the retirement path. A point-in-time census taken that day, to be re-grounded on adoption:
+
+- Candidate work in three Paperclip worktrees under `~/.paperclip/instances/default/worktrees/`: `0f77071` (KIS-10 write-root enforcement), `c99592a` (KIS-44 landing `0f77071` onto source `main`) and `eb7292a` (KIS-7 AWS cluster proof for `TECHNE-OPS-002`). The [[Techne Programme Hold]] keeps these reviewable, neither accepted nor discarded.
+- Three open drafts: `TECHNE-OPS-002`, `TECHNE-OPS-004` and `TECHNE-OPS-005`, plus the source `_ISSUES.md` ledger.
+- Live references: Arcadia `AGENTS.md`, the Charter, Known Lands, the Techne Programme Hold and five Decision Records; membership of the `kis` Agora in `.ki.toml`; a `ki` registry entry.
+
+The retirement sequence the owner asked to be shaped, each step subject to its own approval:
+
+1. Disposition each candidate: accept into its owning repository, transfer with provenance, or record it as discarded; then remove its Paperclip worktree and branch.
+2. Transfer or close the three open drafts under the foreign-work-identifier policy decided above.
+3. Update Arcadia governance to describe the source as retired, remove it from the `kis` Agora, and deregister it.
+4. Archive the GitHub repository rather than delete it, so the evidence stays readable, then remove the local checkout.
 
 ---
 
