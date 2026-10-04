@@ -5,12 +5,12 @@ area: ECO
 title: Retire the Techne source and disposition its work
 theme: ecosystem-coordination
 horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: e06d1d902f892c7bac37f1a4ebf61201378b0f6d
 created_at: 2026-10-04T11:03:22Z
-updated_at: 2026-10-04T17:55:00Z
+updated_at: 2026-10-04T18:10:00Z
 ---
 
 # Retire the Techne Source and Disposition Its Work
@@ -133,6 +133,12 @@ Retired `ki-techne-principal` end to end: candidates preserved unaccepted, draft
 
 ---
 
+## Done
+
+Accepted 2026-10-04 by Kris Brown on review packet above.
+
+---
+
 ## Discussion
 
 Captured on 2026-10-04 with the owner's permission to reserve and commit a Triage item. Before adoption, re-read the retained source state, the accepted consolidation evidence and the live hold policy, then present bounded alternatives and their evidence-retention consequences. No implementation choice is made by this record.
@@ -160,6 +166,10 @@ Recorded during delivery from the re-grounded census and an independent judgemen
 - **`_ISSUES.md`.** Left untouched as a frozen ledger at GOV 13 and OPS 9. The `TECHNE-` namespace issues and reuses nothing further, and the ledger is not copied into any receiver.
 - **`TECHNE-GOV-005`.** Not a missing record: "Govern isolated agent execution" was accepted at `aab2376` and pruned at `d381648` on 2026-09-15 under the source's prune-after-done convention, and is recoverable from `aab2376`. Its outcome is `ADR-TECHNE-001`. The source's `TECHNE-OPS-002` now says so; no replacement record was created and the identifier was not reissued.
 - **Foreign work identifiers.** Arcadia neither issues, reuses nor adopts another repository's work identifiers. Work received from another repository takes a fresh identifier from the receiver's own ledger, records its origin in `transferred_from` with a canonical source URL at a pinned revision, and cites the source identifier only as provenance, never in `blocks` or `blocked_by`. A transfer carries no authority the receiver did not already hold, including any remote-operation authority under the hold.
+
+### Acceptance notes - 2026-10-04
+
+An independent review returned ACCEPT on the review packet, confirming the branch mirror, archive state, worktree removal, the `TECHNE-GOV-005` evidence at `aab2376` and `d381648`, and that the hold is unchanged. After review, the `tools-ki` owner removed its trade route and README reference at `08cc0d6`. The `tools-mgit` trade route remains for its owner.
 
 ---
 
