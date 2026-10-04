@@ -13,7 +13,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T18:32:31Z
-updated_at: 2026-10-04T12:00:40Z
+updated_at: 2026-10-04T18:01:50Z
 author: Written with Claude
 ---
 
@@ -144,3 +144,9 @@ This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or 
 ## Blocker (2026-10-04)
 
 Not shaped to Ready during the 2026-10-04 delegated roadmap push. The record predates the Admin-zone migration: its planned activity location `Pillars/Admin/Governance/Activities/` no longer exists (Activities now live in `Admin/Operations/Activities/`), and the Governance link points at the former `Philosophy/Model/Processes/` Enactment Process. The design also needs owner decisions on the rule set and severities before execution Steps can be written. Re-ground with the owner before planning.
+
+### Question for Kris (2026-10-04)
+
+Do you still want a standalone Boundary Rules convention note with the Hard/Soft/None gate model, and if so do you accept the draft rules table, with its paths re-mapped to the current `Pillars/Philosophy/...` and `Admin/...` layout, as the starting rule set?
+
+Classified as an owner decision by the Fable reviewer under delegated autonomy (2026-10-04): The premises are stale (activity path, Enactment Process link, and every `Pillars/Admin/Governance/*` and `Pillars/Knowledge Islands` path in the table), and the rule set and severities are canonical governance content whose acceptance is the owner's under the Enactment gate.

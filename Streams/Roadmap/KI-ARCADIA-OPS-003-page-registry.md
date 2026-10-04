@@ -14,7 +14,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T20:40:18Z
-updated_at: 2026-08-18T13:08:06Z
+updated_at: 2026-10-04T18:01:50Z
 author: Written with Claude
 ---
 
@@ -152,3 +152,9 @@ Rebuilding: a tending activity traverses the full repository, builds the complet
 ## Governance
 
 This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.
+
+## Question for Kris (2026-10-04)
+
+Do you still want a committed page registry for shortest-unique wikilinks in this repository, or should that capability live in `tools-ki` so every Knowledge Base benefits?
+
+Classified as an owner decision by the Fable reviewer under delegated autonomy (2026-10-04): The design is sound and reversible, but its example tree and paths are stale and the open question is which repository owns the capability, a cross-repository ownership boundary.

@@ -14,7 +14,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-08-23T12:33:49Z
-updated_at: 2026-09-27T22:02:31Z
+updated_at: 2026-10-04T18:01:50Z
 ---
 
 # Knowledge Acquisition Lifecycle
@@ -90,3 +90,9 @@ Before further implementation, reconcile the current destination branch, linked 
 - **Observed:** `ADR-KI-ARCADIA-001` establishes the provider-neutral lifecycle, and the Context identifies initial read-only housekeeping and repository-context staging evidence. Those are foundations, not the common provenance package or retirement policy sought by this record.
 - **Resolve:** Verify one direct local source and one export/API-style source against the same acquisition and staging evidence. Settle the provenance record, harvest checkpoint, imperfect-routing handling, and source archive/deletion threshold; leave provider mechanics with their owning repositories.
 - **Close:** Review the provider-neutral documentation and source-class evidence against the Goal before seeking owner acceptance through `ki-accept`. Retain the `done` record; pruning is a later explicit owner choice.
+
+### Question for Kris (2026-10-04)
+
+Which two sources should prove the common provenance package (for example Claude housekeeping as the direct local source and Granola as the export or API source), and is a content hash plus source identity, timestamps and omissions record sufficient as the harvest checkpoint?
+
+Classified as an owner decision by the Fable reviewer under delegated autonomy (2026-10-04): Promotion needs two real source mechanisms demonstrated end to end with live provider access and cross-repository evidence, and the provenance record shape is a KI-wide architectural choice recorded against ADR-KI-ARCADIA-001.

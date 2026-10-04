@@ -15,7 +15,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-30T09:55:30Z
-updated_at: 2026-10-04T12:00:40Z
+updated_at: 2026-10-04T18:01:50Z
 author: Written with Claude
 ---
 
@@ -65,3 +65,9 @@ This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or 
 ## Blocker (2026-10-04)
 
 Not shaped to Ready during the 2026-10-04 delegated roadmap push. The record assumes a `Tools/Claude/Activities/` prompt library and Cowork scheduled tasks; no `Tools/` folder exists, Activities now live in `Admin/Operations/Activities/`, and scheduled automation is separately proposed in `KI-ARCADIA-OPS-008`. The owner needs to decide which phases still apply before it can be re-scoped.
+
+### Question for Kris (2026-10-04)
+
+Should this record be closed as obsolete, with any surviving concern (an Arcadia skill definition, scheduled-task verification) folded into KI-ARCADIA-OPS-008 or a fresh record?
+
+Classified as an owner decision by the Fable reviewer under delegated autonomy (2026-10-04): No `Tools/` prompt library exists, Activities live in `Admin/Operations/Activities/`, scheduled tasks are governed by KI-ARCADIA-OPS-008 and the Charter, and the Techne Programme Hold constrains remote scheduled execution; closing versus re-scoping is the owner's disposition.
