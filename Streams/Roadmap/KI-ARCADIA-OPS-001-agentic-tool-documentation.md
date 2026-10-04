@@ -8,14 +8,14 @@ tags:
   - topic/knowledge-islands
   - topic/documentation
   - topic/ai
-status: awaiting-review
+status: done
 priority: medium
 horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: 0d1a2e0e697a38caf68ad6d1e0e8bb8cd9aa1a22
 created_at: 2026-06-29T17:12:25Z
-updated_at: 2026-10-04T11:53:14Z
+updated_at: 2026-10-04T11:55:36Z
 ---
 
 # Agentic Tool Documentation Proposal
@@ -123,5 +123,9 @@ Scope held to the recorded Phase 1 gap. Inbound wikilinks are unaffected because
 ### Mini recap
 
 Phases 2 and 3 were already delivered; Phase 1 drift in four notes is corrected. Possible learning route: a folder-wide metadata refresh for `Pillars/Philosophy/Model/Tools/`, not promoted automatically.
+
+## Done
+
+Accepted 2026-10-04 on the review packet above, after an independent re-review returned ACCEPT following review round 1, under the owner's delegated authority for the 2026-10-04 estate roadmap push. Non-blocking residue: the Scope's original server names are retained as historical scope, and How Tools Connect keeps its April 2026 status line.
 
 ## Discussion
