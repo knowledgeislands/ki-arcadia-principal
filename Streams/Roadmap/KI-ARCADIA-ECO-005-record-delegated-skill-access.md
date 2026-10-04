@@ -5,12 +5,12 @@ area: ECO
 title: Record how delegated agents reach governance skills
 theme: ecosystem-coordination
 horizon: next
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: d2a8147521e1faa6dbe56fa46a849b5b5ab75034
 created_at: 2026-09-26T16:22:01Z
-updated_at: 2026-10-04T11:47:30Z
+updated_at: 2026-10-04T11:52:38Z
 ---
 
 # Record How Delegated Agents Reach Governance Skills
@@ -99,6 +99,10 @@ The limited remit - preserve the observation and verify the handoff - is met wit
 ### Mini recap
 
 Handoff to KI-HARNESS-GOV-118 verified as faithful and reciprocal; no corrections needed. No learning route proposed.
+
+## Done
+
+Accepted 2026-10-04 on the review packet above, after an independent review returned ACCEPT, under the owner's delegated authority for the 2026-10-04 estate roadmap push.
 
 ## Discussion
 

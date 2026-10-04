@@ -5,12 +5,12 @@ area: ECO
 title: Disposition the MCP and tools roadmap backlog
 theme: ecosystem-coordination
 horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: b81116d407c4b1765e0d877060a8926861faace2
 created_at: 2026-09-26T16:22:01Z
-updated_at: 2026-10-04T11:42:09Z
+updated_at: 2026-10-04T11:52:38Z
 ---
 
 # Disposition the MCP and Tools Roadmap Backlog
@@ -138,5 +138,9 @@ The goal - reconcile Arcadia's coordination record with receiver evidence - is m
 ### Mini recap
 
 Re-verified twenty-one receiver Done and prune commits plus the twenty-two retained drafts; no concerns. No learning route is proposed beyond the existing `KI-ARCADIA-ECO-004` follow-on.
+
+## Done
+
+Accepted 2026-10-04 on the review packet above, after an independent review returned ACCEPT, under the owner's delegated authority for the 2026-10-04 estate roadmap push.
 
 ## Discussion
