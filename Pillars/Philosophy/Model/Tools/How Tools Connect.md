@@ -42,24 +42,24 @@ Microsoft 365 is the email and calendar integration. The Microsoft 365 note cove
 
 ---
 
-The following tools are Knowledge Islands-built MCP servers — bespoke capability extensions developed within the Knowledge Islands workspace rather than adopted from third parties. See [[Tool Ecosystem Map]] for how they fit into the broader system.
+The following tools are Knowledge Islands-built MCP servers - bespoke capability extensions developed within the Knowledge Islands workspace rather than adopted from third parties. See [[Tool Ecosystem Map]] for how they fit into the broader system.
 
 ## Git Audit
 
-Git Audit is the git fleet inspector. The Git Audit note covers the `mcp-git-audit` server, which scans a configured root and returns the state (branch, cleanliness, ahead/behind, last commit) of every repository found — a fleet-wide view without visiting each repo in turn.
+Git Audit is the git fleet inspector. The Git Audit note covers the `mcp-git-audit` server, which scans a configured root and returns the state (branch, cleanliness, ahead/behind, last commit) of every repository found - a fleet-wide view without visiting each repo in turn.
 
 ## KB Filesystem
 
-KB Filesystem is the programmatic interface to this island's knowledge base. The KB Filesystem note covers the `mcp-ki-kb-fs` server, which exposes read/write tools for KB notes and enforces path safety server-side.
+KB Filesystem is the programmatic interface to this island's knowledge base. The KB Filesystem note covers the `mcp-ki-kb-fs` server, which exposes access-gated read and write tools over one or more aliased knowledge bases and enforces path safety server-side.
 
 ## Notion Mirror
 
-Notion Mirror publishes KB notes into Notion. The Notion Mirror note covers the `mcp-kb-notion-mirror` server, which mirrors individual notes or subtrees and writes the resulting Notion URLs back into each note's frontmatter.
+Notion Mirror publishes KB notes into Notion. The Notion Mirror note covers the `mcp-ki-kb-notion-mirror` server, which mirrors individual notes or folder subtrees under a caller-supplied Notion parent and writes the resulting Notion URLs back into each note's frontmatter.
 
 ## Gmail
 
-Gmail is the email integration via the Google Gmail API. The Gmail note covers the `mcp-gmail` server, which provides read, triage, and draft-creation capabilities. No send tool is exposed — outbound mail passes through human review.
+Gmail is the email integration, reached through the Google Workspace server. The Gmail note covers the `mcp-gsuite` server, which provides read, triage, and draft-creation capabilities alongside Calendar, Drive and Sheets. No send tool is exposed - outbound mail passes through human review.
 
 ## Claude Housekeeping
 
-Claude Housekeeping audits the filesystem areas where Claude applications accumulate state on macOS. The Claude Housekeeping note covers the `mcp-claude-housekeeping` server, which surfaces session and settings data across Claude Desktop, the VS Code extension, and `~/.claude/`.
+Claude Housekeeping audits the filesystem areas where Claude applications accumulate state on macOS. The Claude Housekeeping note covers the `mcp-housekeeping-claude` server, which audits session, memory and storage state across Claude Desktop, Claude Code (`~/.claude/`) and the VS Code extension, with prune tools available only at an elevated access level.

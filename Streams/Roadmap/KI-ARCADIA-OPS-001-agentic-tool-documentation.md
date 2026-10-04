@@ -15,7 +15,7 @@ blocks: []
 blocked_by: []
 baseline_ref: 0d1a2e0e697a38caf68ad6d1e0e8bb8cd9aa1a22
 created_at: 2026-06-29T17:12:25Z
-updated_at: 2026-10-04T11:45:32Z
+updated_at: 2026-10-04T11:53:14Z
 ---
 
 # Agentic Tool Documentation Proposal
@@ -24,25 +24,25 @@ Document the agentic harness and its connected MCP servers as KB notes, establis
 
 ## Governance
 
-Follows the [[Philosophy/Model/Processes/Enactment Process|Enactment Process]].
+Follows the [[Admin/Operations/Processes/Enactment Process|Enactment Process]].
 
 ---
 
 ## Scope
 
-**Phase 1 — Tool notes** (in progress): create a KB note in `Pillars/Philosophy/Model/Tools/` for each MCP server that does not yet have one, following the existing tool-note pattern established by [[Tools/Microsoft 365/Microsoft 365|Microsoft 365]] and [[Tools/Claude/Claude|Claude]].
+**Phase 1 - Tool notes**: create a KB note in `Pillars/Philosophy/Model/Tools/` for each MCP server that does not yet have one, following the existing tool-note pattern established by [[Tools/Microsoft 365/Microsoft 365|Microsoft 365]] and [[Tools/Claude/Claude|Claude]].
 
 Gaps being filled:
 
-- Git Audit (`mcp-git-audit`) → [[Tools/Git Audit/Git Audit|Git Audit]]
-- KB Filesystem (`mcp-ki-kb-fs`) → [[Tools/KB Filesystem/KB Filesystem|KB Filesystem]]
-- Notion Mirror (`mcp-kb-notion-mirror`) → [[Tools/Notion Mirror/Notion Mirror|Notion Mirror]]
-- Gmail (`mcp-gmail`) → [[Tools/Gmail/Gmail|Gmail]]
-- Claude Housekeeping (`mcp-claude-housekeeping`) → [[Tools/Claude Housekeeping/Claude Housekeeping|Claude Housekeeping]]
+- Git Audit (`mcp-git-audit`) - [[Tools/Git Audit/Git Audit|Git Audit]]
+- KB Filesystem (`mcp-ki-kb-fs`) - [[Tools/KB Filesystem/KB Filesystem|KB Filesystem]]
+- Notion Mirror (`mcp-kb-notion-mirror`) - [[Tools/Notion Mirror/Notion Mirror|Notion Mirror]]
+- Gmail (`mcp-gmail`) - [[Tools/Gmail/Gmail|Gmail]]
+- Claude Housekeeping (`mcp-claude-housekeeping`) - [[Tools/Claude Housekeeping/Claude Housekeeping|Claude Housekeeping]]
 
-**Phase 2 — System map**: a note in `Pillars/Technē/` that shows how the harness, MCPs, KB, and website interrelate as a system.
+**Phase 2 - System map**: a note in `Pillars/Technē/` that shows how the harness, MCPs, KB, and website interrelate as a system.
 
-**Phase 3 — Realisation principle**: author `Pillars/Philosophy/Realisation/Arcadia/Arcadia.md` to formally state that ki-website is the public realisation of ki-arcadia-principal and name the current architectural gap.
+**Phase 3 - Realisation principle**: author `Pillars/Philosophy/Realisation/Arcadia/Arcadia.md` to formally state that ki-website is the public realisation of ki-arcadia-principal and name the current architectural gap.
 
 ### Pickup checkpoint - 2026-09-27
 
@@ -66,6 +66,7 @@ Reviewed on 2026-10-04 against current repository sources. Phases 2 and 3 are sa
 
 - [x] Correct the four drifted tool notes so each states the current repository identity, the tool families by purpose and the access-level model, and points to the repository README as the authoritative tool catalogue rather than duplicating exact tool lists.
 - [x] Keep note paths, titles and inbound wikilinks unchanged, use ASCII hyphens and British English, and refresh each note's `status` line to October 2026.
+- [x] Align the four matching sections of [[How Tools Connect]] with the corrected notes (added after review round 1).
 - [x] Prepare the delivery review packet.
 
 ## Files touched
@@ -74,6 +75,7 @@ Reviewed on 2026-10-04 against current repository sources. Phases 2 and 3 are sa
 - `Pillars/Philosophy/Model/Tools/KB Filesystem/KB Filesystem.md`
 - `Pillars/Philosophy/Model/Tools/Notion Mirror/Notion Mirror.md`
 - `Pillars/Philosophy/Model/Tools/Claude Housekeeping/Claude Housekeeping.md`
+- `Pillars/Philosophy/Model/Tools/How Tools Connect.md`
 - `Streams/Roadmap/KI-ARCADIA-OPS-001-agentic-tool-documentation.md`
 
 ## Verify
@@ -102,16 +104,17 @@ Phase 1 tool-note corrections from immutable baseline `0d1a2e0e697a38caf68ad6d1e
 - Refreshed their `status` lines to October 2026; paths, titles, tags and `note_type` are unchanged.
 - Dropped the KB Filesystem remark about Claude Code's Read tool failing on paths with spaces: it described a client quirk rather than the server and is unverified today.
 - Corrected the Claude Housekeeping read-only claim: destructive prune tools exist behind the access gate.
+- Review round 1 (independent review returned CHANGES): aligned the KB Filesystem, Notion Mirror, Gmail and Claude Housekeeping sections of [[How Tools Connect]] with the corrected notes; replaced em-dashes and arrows in this record's Scope with ASCII hyphens, dropped the stale "(in progress)" label, and pointed the Governance link at the canonical Admin Enactment Process.
 
 ### Verification
 
 - Every backticked tool name or family prefix in the four notes was found in its repository's `src/` or README (scripted check, no misses).
 - Each named repository matches its [[Known Lands]] identity.
-- No em or en dashes in the four notes. `ki repo audit` passed.
+- No em or en dashes in the four notes, How Tools Connect (two further pre-existing em-dashes there were also replaced), or this record. `ki repo audit` passed after review round 1.
 
 ### Outstanding concerns
 
-The tool notes still carry the older `source: claude` and dated `status` frontmatter shared by the whole Tools folder; reconciling that metadata convention is a separate, folder-wide question and was not changed here.
+The tool notes still carry the older `source: claude` and dated `status` frontmatter shared by the whole Tools folder, and the folder has no same-name index note; both are pre-existing, folder-wide questions outside this record's scope.
 
 ### Post-change review
 
