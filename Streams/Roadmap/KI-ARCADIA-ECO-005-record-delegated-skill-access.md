@@ -5,12 +5,12 @@ area: ECO
 title: Record how delegated agents reach governance skills
 theme: ecosystem-coordination
 horizon: next
-status: draft
+status: ready
 blocks: []
 blocked_by: []
 baseline_ref: 95f85a1a14ab9ff2834fe6d4f32355754e6de708
 created_at: 2026-09-26T16:22:01Z
-updated_at: 2026-09-27T22:02:31Z
+updated_at: 2026-10-04T11:47:16Z
 ---
 
 # Record How Delegated Agents Reach Governance Skills
@@ -37,11 +37,15 @@ Arcadia records the finding and hands it over. It does not change the harness, a
 
 Arcadia retains the dated batch observation and local handoff verification only. The installation claims in Context remain historical evidence, not a standing assertion about every current runtime. Creating the principal ticket is not delivery or acceptance of its outcome.
 
+## Current state
+
+On 2026-10-04 the harness principal record was read at `ki-agentic-harness` `9fda7bc0b178` (record last changed in `7032da5b`). It links this origin by canonical URL, treats the 26 September installation observation as dated evidence to recheck, keeps its own Next / draft position, and excludes Arcadia knowledge files and runtime configuration from its remit. No correction request is needed.
+
 ## Steps
 
 - [x] Establish the harness-owned principal record, KI-HARNESS-GOV-118, with a reciprocal origin reference.
 - [ ] Review that the principal preserves the reported failure, evidence limitations and authority boundary; request correction there if needed.
-- [ ] Seek explicit lifecycle disposition of this handoff record once its limited remit is verified, without claiming the principal's implementation has completed.
+- [ ] Prepare the handoff delivery review packet for independent review and `ki-accept`, without claiming the principal's implementation has completed.
 
 ## Files touched
 
