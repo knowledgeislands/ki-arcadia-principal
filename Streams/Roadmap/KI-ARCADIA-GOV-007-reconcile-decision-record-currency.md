@@ -5,12 +5,12 @@ area: GOV
 title: Reconcile decision record currency
 theme: governance
 horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: 5d6c7abddbc5a7f6fb8625722bd958a3d268a739
 created_at: 2026-09-14T22:07:41Z
-updated_at: 2026-10-04T11:56:44Z
+updated_at: 2026-10-04T11:59:59Z
 ---
 
 # Reconcile Decision Record Currency
@@ -93,6 +93,10 @@ Scope held to the recorded boundary. Each removed link's concept remains named i
 ### Mini recap
 
 Seven stale References links removed and one migration Consequence made present-tense; audits pass. Possible learning route: a `ki-decision-records` checker rule for non-decision References links, not promoted automatically.
+
+## Done
+
+Accepted on 2026-10-04 under the owner's delegated roadmap authority after an independent review returned ACCEPT. The reviewer confirmed the delivery touched only the five listed files, every remaining References link resolves to a sibling Decision Record, the removed concepts stay named in each record body, the `GDR-KI-ARCADIA-002` restatement is true of the repository, and `ki repo audit` passes on 23 skills. The em-dashes and former skill name in `GDR-KI-ARCADIA-002` remain for a separate editorial pass.
 
 ## Discussion
 
