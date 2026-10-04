@@ -6,23 +6,23 @@ tags:
   - topic/ai
   - topic/knowledge-islands
 source: claude
-status: current - June 2026
+status: current - October 2026
 ---
 
 # Claude Housekeeping
 
-MCP server that audits the filesystem areas where Claude applications accumulate state on macOS. Source: `mcp-claude-housekeeping` (Knowledge Islands workspace).
+MCP server that audits and, when permitted, cleans the filesystem state Claude applications accumulate on macOS. Source: `mcp-housekeeping-claude`. The authoritative tool catalogue is the [mcp-housekeeping-claude README](https://github.com/knowledgeislands/mcp-housekeeping-claude#readme).
 
 ## Tools
 
-**Audit**
+Tools follow the `<app>_<resource>_<action>` convention across three surfaces.
 
-`housekeeping_session_audit` — list and summarise Claude Desktop and Cowork sessions under `~/Library/Application Support/Claude/`.
+**Claude Desktop and Cowork** - `claude_desktop_*` tools summarise storage, sessions, outputs, artifacts, memory, plugins and backups.
 
-`housekeeping_settings_audit` — report on files under `~/.claude/` (settings, memory, skills, plans).
+**Claude Code** - `claude_code_*` tools report global status, projects, sessions and memory under `~/.claude/`.
 
-`housekeeping_vscode_audit` — list Claude chat sessions stored by the VS Code extension.
+**VS Code** - `vscode_*` tools list and summarise Claude chat sessions stored by the VS Code extension.
 
 ## Notes
 
-Read-only by design — the server surfaces state for review but does not delete or modify files. Useful for understanding session accumulation and deciding what to archive or prune manually.
+Access is gated: each tool is `read` or `destructive`, and the default `read` level exposes only audits. Prune, delete and memory-write tools are registered only when the operator raises the level. Each audit step is a dedicated tool; the agent orchestrates the checks and writes the report.

@@ -6,25 +6,19 @@ tags:
   - topic/knowledge-management
   - topic/knowledge-islands
 source: claude
-status: current - June 2026
+status: current - October 2026
 ---
 
 # KB Filesystem
 
-MCP server that exposes this island's markdown knowledge base as read/write tools. Source: `mcp-ki-kb-fs` (Knowledge Islands workspace).
+MCP server that gives a model read and write access to one or more local knowledge-base directories. Source: `mcp-ki-kb-fs`. The authoritative tool catalogue is the [mcp-ki-kb-fs README](https://github.com/knowledgeislands/mcp-ki-kb-fs#readme).
 
 ## Tools
 
-**Reading**
+**Reading** - `kb_list` lists notes and folders and `kb_read` reads a note; `kb_config` reports the declared bases.
 
-`kb_note_read` — read a markdown note by path relative to the KB root. Accepts `.md` files only; rejects dotfiles and repo-meta paths.
-
-`kb_note_list` — list notes under a given directory path.
-
-**Writing**
-
-`kb_note_write` — write or overwrite a note. Validates the target path against the configured KB root before writing; the root is injected at server startup, not hard-coded.
+**Writing** - `kb_write`, `kb_rename`, `kb_folder_create` and `kb_delete` change content and are registered only when the access level permits.
 
 ## Notes
 
-The primary programmatic interface to ki-arcadia-principal. Path safety is enforced server-side. The Read tool in Claude Code fails silently on paths containing spaces — use `Bash cat "path"` for those.
+One registration serves many bases: the environment declares alias-to-path pairs and every call names its `kb` alias. Paths are validated in two layers, lexical normalisation and a `realpath` check, so a call cannot escape its base or reach a sibling base. Only content under the base's declared Knowledge Islands zones and staging areas is reachable. The access level defaults to `read`.

@@ -8,14 +8,14 @@ tags:
   - topic/knowledge-islands
   - topic/documentation
   - topic/ai
-status: ready
+status: awaiting-review
 priority: medium
 horizon: now
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: 0d1a2e0e697a38caf68ad6d1e0e8bb8cd9aa1a22
 created_at: 2026-06-29T17:12:25Z
-updated_at: 2026-10-04T11:44:42Z
+updated_at: 2026-10-04T11:45:32Z
 ---
 
 # Agentic Tool Documentation Proposal
@@ -64,9 +64,9 @@ Reviewed on 2026-10-04 against current repository sources. Phases 2 and 3 are sa
 
 ## Steps
 
-- [ ] Correct the four drifted tool notes so each states the current repository identity, the tool families by purpose and the access-level model, and points to the repository README as the authoritative tool catalogue rather than duplicating exact tool lists.
-- [ ] Keep note paths, titles and inbound wikilinks unchanged, use ASCII hyphens and British English, and refresh each note's `status` line to October 2026.
-- [ ] Prepare the delivery review packet.
+- [x] Correct the four drifted tool notes so each states the current repository identity, the tool families by purpose and the access-level model, and points to the repository README as the authoritative tool catalogue rather than duplicating exact tool lists.
+- [x] Keep note paths, titles and inbound wikilinks unchanged, use ASCII hyphens and British English, and refresh each note's `status` line to October 2026.
+- [x] Prepare the delivery review packet.
 
 ## Files touched
 
@@ -89,3 +89,36 @@ None. Notes for the WhatsApp acquisition and ChatGPT or Codex housekeeping serve
 ## Adherence
 
 Follows the [[Enactment Process]]. Content reaches `Pillars/` only once this proposal reaches `ready` status and the enactment process clears it.
+
+## Review
+
+### Delivered
+
+Phase 1 tool-note corrections from immutable baseline `0d1a2e0e697a38caf68ad6d1e0e8bb8cd9aa1a22`, with the Phase 2 and Phase 3 outputs reviewed and found satisfied as recorded under Current state. Excluded: new notes for servers without one, and any change to Git Audit, [[Tool Ecosystem Map]] or [[Pillars/Philosophy/Realisation/Arcadia/Arcadia|Arcadia]].
+
+### Change Summary
+
+- Rewrote the bodies of the Gmail, KB Filesystem, Notion Mirror and Claude Housekeeping notes to name `mcp-gsuite`, `mcp-ki-kb-fs`, `mcp-ki-kb-notion-mirror` and `mcp-housekeeping-claude`, describe tool families by purpose and access level, and link each repository README as the authoritative catalogue.
+- Refreshed their `status` lines to October 2026; paths, titles, tags and `note_type` are unchanged.
+- Dropped the KB Filesystem remark about Claude Code's Read tool failing on paths with spaces: it described a client quirk rather than the server and is unverified today.
+- Corrected the Claude Housekeeping read-only claim: destructive prune tools exist behind the access gate.
+
+### Verification
+
+- Every backticked tool name or family prefix in the four notes was found in its repository's `src/` or README (scripted check, no misses).
+- Each named repository matches its [[Known Lands]] identity.
+- No em or en dashes in the four notes. `ki repo audit` passed.
+
+### Outstanding concerns
+
+The tool notes still carry the older `source: claude` and dated `status` frontmatter shared by the whole Tools folder; reconciling that metadata convention is a separate, folder-wide question and was not changed here.
+
+### Post-change review
+
+Scope held to the recorded Phase 1 gap. Inbound wikilinks are unaffected because no note moved or was renamed. Pointing to READMEs for exact tool lists reduces future drift. Ready for acceptance.
+
+### Mini recap
+
+Phases 2 and 3 were already delivered; Phase 1 drift in four notes is corrected. Possible learning route: a folder-wide metadata refresh for `Pillars/Philosophy/Model/Tools/`, not promoted automatically.
+
+## Discussion

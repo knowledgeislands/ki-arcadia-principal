@@ -6,21 +6,21 @@ tags:
   - topic/notion
   - topic/knowledge-management
 source: claude
-status: current - June 2026
+status: current - October 2026
 ---
 
 # Notion Mirror
 
-MCP server that mirrors Knowledge Islands KB notes into Notion, writing the resulting page URLs back into each note's frontmatter. Source: `mcp-kb-notion-mirror` (Knowledge Islands workspace).
+MCP server that mirrors Knowledge Base notes into Notion and records the resulting page URL in each note's frontmatter. Source: `mcp-ki-kb-notion-mirror`. The authoritative tool catalogue is the [mcp-ki-kb-notion-mirror README](https://github.com/knowledgeislands/mcp-ki-kb-notion-mirror#readme).
 
 ## Tools
 
-**Mirroring**
+**Notes** - `kb_notion_mirror_note_*` tools act on one `kb_path` per call: preflight, status, diff, get, touch, update, move and delete under a caller-supplied Notion parent.
 
-`notion_mirror_note` — mirror a single KB note into Notion under a specified parent page. Writes the Notion URL into the note's `notion-url` frontmatter field.
+**Trees** - `kb_notion_mirror_tree_*` tools act on a caller-supplied folder subtree: preflight, status, touch, update, prune and delete.
 
-`notion_mirror_subtree` — mirror all notes under a given KB path into Notion, preserving the folder hierarchy.
+**Roots** - `kb_notion_mirror_roots_list` lists configured mirror roots.
 
 ## Notes
 
-One-directional: the KB is the source of truth. Notion serves as a human-readable sharing or publication layer. Do not edit mirrored content in Notion directly — changes will be overwritten on the next mirror run.
+One-directional: the KB is the source of truth and Notion is a derivative read surface for people who do not work in the KB. There is no fixed root folder or wiki database; every mutation names its KB path and Notion parent. Destructive operations default to `dry_run`. Do not edit mirrored content in Notion directly - the next mirror run overwrites it.
