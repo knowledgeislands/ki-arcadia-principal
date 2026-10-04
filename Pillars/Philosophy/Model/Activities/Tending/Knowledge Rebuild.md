@@ -20,7 +20,7 @@ A weekly scheduled task that reads all canonical meta notes from the island and 
 
 ## What It Does
 
-1. Locates the island repository via [[Knowledge Capital]]
+1. Locates the island repository via [[Admin/Governance/Governance|Admin/Governance]]
 2. Reads all canonical meta notes (as listed in [[Canonical Meta Notes]])
 3. Reads the existing canonical auto-memory files and compares them against the canonical notes - surfacing gaps, stale content, and anything worth adding before overwriting
 4. Verifies cross-references in both directions: KI notes with `memory_file:` frontmatter have a corresponding auto-memory file; auto-memory files with `## KI Sources` reference KI notes that still exist at those paths

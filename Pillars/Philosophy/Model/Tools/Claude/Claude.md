@@ -23,14 +23,14 @@ This note documents the Claude tool layer - how Cowork connects Claude to the is
 The integration relies on three components:
 
 - **[[CLAUDE]]** (repository root) - the master context file loaded automatically at the start of any island session. Contains the folder structure, note format, tagging conventions, routing rules, and the British English requirement.
-- **Island skill** - an installed Cowork skill that provides five operating modes (save, update, query, extract, digest). The skill name and trigger phrases are defined in [[Knowledge Capital/Charter|Charter]].
+- **Island skill** - an installed Cowork skill that provides five operating modes (save, update, query, extract, digest). The skill name and trigger phrases are defined in [[Admin/Governance/Charter|Charter]].
 - **[[Note - General]]** (`Templates/Note - General.md`) - the standard note template for new notes.
 
 ---
 
 ## Operating Modes
 
-Claude operates in five modes (Save, Update, Query, Extract, Digest) defined in [[Island Skill]]. The prompt that drives them is the island skill installed in Cowork - configured in [[Knowledge Capital/Charter|Charter]].
+Claude operates in five modes (Save, Update, Query, Extract, Digest) defined in the [[Agents/Claude/Claude|Claude agent]] note. The prompt that drives them is the island skill installed in Cowork - configured in [[Admin/Governance/Charter|Charter]].
 
 All Claude-generated notes carry the `source/claude` tag. Routing is defined canonically in [[Structure]].
 
@@ -57,7 +57,7 @@ Every context file loaded costs tokens. The integration is designed to minimise 
 Flag for review if:
 
 - [[CLAUDE]] grows above ~10,000 bytes (~2,500 tokens). Audit for redundant or over-explained sections. _(Currently ~9,000 bytes - approaching threshold.)_
-- The auto-memory operations file (`feedback_{ki_prefix}_operations.md` - prefix from [[Knowledge Capital/Charter|Charter]]) grows unwieldy. Check whether any rules can be tightened or consolidated - it is loaded every session.
+- The auto-memory operations file (`feedback_{ki_prefix}_operations.md` - prefix from [[Admin/Governance/Charter|Charter]]) grows unwieldy. Check whether any rules can be tightened or consolidated - it is loaded every session.
 - A new permanent section is added to [[CLAUDE]] - reconsider whether it is actually needed at load time or could be lazily read only when relevant.
 
 ---
@@ -106,7 +106,7 @@ The `productivity:memory-management` skill provides a structured **deep memory**
 
 ## Live Artifacts
 
-[[Live Artifacts]] is the canonical home for Cowork live-artifact HTML pages - self-contained dashboards that persist in the Cowork sidebar and re-fetch data from MCP tools on each open. Each artifact is represented by a recipe note (design decisions, reusable prompt, updating instructions) and a collocated HTML backup of the approved version.
+[[Claude/Live Artifacts/Live Artifacts|Live Artifacts]] is the canonical home for Cowork live-artifact HTML pages - self-contained dashboards that persist in the Cowork sidebar and re-fetch data from MCP tools on each open. Each artifact is represented by a recipe note (design decisions, reusable prompt, updating instructions) and a collocated HTML backup of the approved version.
 
 ---
 

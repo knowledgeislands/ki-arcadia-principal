@@ -35,5 +35,5 @@ The website currently contains its own curated public pages. It should acquire m
 
 ## Related
 
-- [[Tool Ecosystem Map]] — how the harness, MCPs, KB, and website interrelate as a system
-- [[Pillars/Philosophy/Realisation/Integrations|Integrations]] — island-specific connection configuration
+- [[Tool Ecosystem Map]] - how the harness, MCPs, KB, and website interrelate as a system
+- [[Realisation/Integrations/Integrations|Integrations]] - island-specific connection configuration

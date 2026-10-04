@@ -29,7 +29,7 @@ The integration relies on island content being made available as context:
 
 ## Scope and Limitations
 
-Unlike the [[Claude]] integration, ChatGPT does not have direct file access to the island. The integration is therefore:
+Unlike the [[Tools/Claude/Claude|Claude]] integration, ChatGPT does not have direct file access to the island. The integration is therefore:
 
 - **Read** - island content informs ChatGPT responses via loaded context
 - **Write** - only through manual extraction and routing; no automated note writing

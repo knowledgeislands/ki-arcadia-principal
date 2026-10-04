@@ -14,7 +14,7 @@ author: Written with Claude
 
 ## Overview
 
-An adhoc activity that compares the generic Knowledge Islands notes across all islands, surfaces any drift that has accumulated, and propagates improvements from one Knowledge Island to the others. Ensures the portability model stays intact: Knowledge Island specific content stays in [[Knowledge Capital]], everything else stays identical.
+An adhoc activity that compares the generic Knowledge Islands notes across all islands, surfaces any drift that has accumulated, and propagates improvements from one Knowledge Island to the others. Ensures the portability model stays intact: Knowledge Island specific content stays in [[Admin/Governance/Governance|Admin/Governance]], everything else stays identical.
 
 Run this when changes have been made to shared notes in one Knowledge Island, when a new Knowledge Island is being onboarded, or as a quarterly health check on the portability structure.
 
@@ -52,4 +52,4 @@ These notes are intentionally different between islands. Do not flag differences
 | ------------------------------------ | --------------------------------------------------------------- |
 | `Knowledge Capital/` (entire folder) | Island-specific identity and conventions, different by design † |
 
-† **`Knowledge Capital/` — why it differs** — identity, skill name, task prefix, integrations, routing rules, and canonical notes list, all island-specific by design.
+† **`Knowledge Capital/` - why it differs** - identity, skill name, task prefix, integrations, routing rules, and canonical notes list, all island-specific by design.

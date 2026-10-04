@@ -18,18 +18,18 @@ Three structural patterns define how jurisdiction is administered:
 | Pattern | Description | Typical use § |
 | --- | --- | --- |
 | **Council** | A group of members with shared ratification authority. † | Collaborative or multi-governor islands ¶ |
-| **Single-governor** | One person governs alone; ratification is informal — the governor decides. | Personal or solo-run islands |
+| **Single-governor** | One person governs alone; ratification is informal - the governor decides. | Personal or solo-run islands |
 | **Joint-governor** | Two or more people share governance without a formal council structure. ‡ | Small collaborative projects ‖ |
 
-† **Council** — changes require council review and ratification.
+† **Council** - changes require council review and ratification.
 
-‡ **Joint-governor** — decisions are made collaboratively.
+‡ **Joint-governor** - decisions are made collaboratively.
 
-§ **Typical use** — the kind of island each pattern usually fits.
+§ **Typical use** - the kind of island each pattern usually fits.
 
-¶ **Council, typical use** — collaborative or multi-governor islands; framework custodians.
+¶ **Council, typical use** - collaborative or multi-governor islands; framework custodians.
 
-‖ **Joint-governor, typical use** — small collaborative projects with a defined set of co-owners.
+‖ **Joint-governor, typical use** - small collaborative projects with a defined set of co-owners.
 
 An island may evolve its governance pattern as it grows. The processes that enact governance remain consistent across patterns; only the ratification authority changes.
 
@@ -39,11 +39,11 @@ Every person who interacts with an island has a standing within it:
 | --- | --- | --- | --- |
 | **Standing** | Informal | Full | Full |
 | **Council eligibility** | ✗ | Eligible | Member |
-| **Formal proposals** | ✗ | ✗ | ✓ via [[Philosophy/Model/Processes/Enactment Process \| Enactment Process]] |
+| **Formal proposals** | ✗ | ✗ | ✓ via [[Processes/Enactment Process/Enactment Process \| Enactment Process]] |
 | **Informal contribution** | ✓ | ✓ | ✓ |
 
 Citizenship is a prerequisite for council membership - a council member must be a Citizen of the island they govern. The council (or governor, for single-governor islands) grants citizenship. Citizenship is not restricted to a single island; a person may hold citizenship across multiple territories simultaneously, and therefore be eligible for council membership in each. A Visitor with a substantive contribution may seek citizenship, or ask an existing council member to carry the proposal forward on their behalf.
 
-Each island's governance pattern, council membership, and citizenship are tracked in its [[Admin/Governance]].
+Each island's governance pattern, council membership, and citizenship are tracked in its [[Admin/Governance/Governance|Admin/Governance]].
 
-Jurisdiction is enacted in practice through the [[Enactment Process]] and [[Contribution Process]].
+Jurisdiction is enacted in practice through the [[Processes/Enactment Process/Enactment Process|Enactment Process]] and [[Contribution Process]].

@@ -16,6 +16,8 @@ author: Written with Claude
 
 The Claude agent specific activity prompt for the Knowledge Rebuild activity. This is maintained as an agentic AI specific task instruction that it can easily use at runtime rather than having to read and understand all of the note hierachy and inheritance at runtime.
 
+This prompt runs the activity defined in [[Model/Activities/Tending/Knowledge Rebuild|Knowledge Rebuild]].
+
 ---
 
 ## Schedule

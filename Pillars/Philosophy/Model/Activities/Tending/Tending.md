@@ -28,13 +28,13 @@ Activities divide by cadence and initiation. Three are scheduled automations tha
 
 ## Health Check
 
-[[Health Check]] runs each Monday at 08:00. It reviews the island for structural drift - index notes without their folders, notes without correct frontmatter, orphaned content, skills that no longer align with activities - and produces a report of issues requiring attention. It operates at a higher level than the Wikilink Review, covering the health of the island as a system rather than individual broken references.
+[[Model/Activities/Tending/Health Check|Health Check]] runs each Monday at 08:00. It reviews the island for structural drift - index notes without their folders, notes without correct frontmatter, orphaned content, skills that no longer align with activities - and produces a report of issues requiring attention. It operates at a higher level than the Wikilink Review, covering the health of the island as a system rather than individual broken references.
 
 ---
 
 ## Knowledge Rebuild
 
-[[Knowledge Rebuild]] runs each Wednesday at 07:00. It reconstructs Claude's canonical auto-memory from the island's meta notes, ensuring that the memory layer stays accurate as the island evolves. Notes with a `memory_file:` frontmatter property are the sources; the rebuild reads them, distils their content, and writes or updates the corresponding canonical memory files. Auxiliary memory files that are fully covered by the rebuilt canonical layer are deleted. This is the mechanism that keeps the island as the source of truth for memory, rather than letting memory drift into its own independent state.
+[[Model/Activities/Tending/Knowledge Rebuild|Knowledge Rebuild]] runs each Wednesday at 07:00. It reconstructs Claude's canonical auto-memory from the island's meta notes, ensuring that the memory layer stays accurate as the island evolves. Notes with a `memory_file:` frontmatter property are the sources; the rebuild reads them, distils their content, and writes or updates the corresponding canonical memory files. Auxiliary memory files that are fully covered by the rebuilt canonical layer are deleted. This is the mechanism that keeps the island as the source of truth for memory, rather than letting memory drift into its own independent state.
 
 ---
 
@@ -70,7 +70,7 @@ Activities divide by cadence and initiation. Three are scheduled automations tha
 
 ## Convergence Check
 
-[[Convergence Check]] is triggered with _"ki convergence check"_ and run ad hoc. It compares notes shared across multiple islands in the same archipelago, surfaces drift between versions, and identifies improvements in one island that should be cross-pollinated to others. Relevant for islands that maintain parallel notes (e.g. shared governance notes in both Arcadia and a satellite island). Not relevant for standalone islands.
+[[Model/Activities/Tending/Convergence Check|Convergence Check]] is triggered with _"ki convergence check"_ and run ad hoc. It compares notes shared across multiple islands in the same archipelago, surfaces drift between versions, and identifies improvements in one island that should be cross-pollinated to others. Relevant for islands that maintain parallel notes (e.g. shared governance notes in both Arcadia and a satellite island). Not relevant for standalone islands.
 
 ---
 

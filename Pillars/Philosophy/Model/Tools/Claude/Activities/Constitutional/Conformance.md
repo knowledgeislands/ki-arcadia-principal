@@ -1,7 +1,7 @@
 ---
 note_type: pillars/note
 tags:
-  - card/prompt
+  - card/note
   - topic/ai
   - topic/automation
   - topic/knowledge-islands
@@ -9,13 +9,13 @@ status: current - April 2026
 author: Written with Claude
 ---
 
-# Conformance Check - Prompt
+# Conformance Check
 
 ## Overview
 
 This is the executable prompt for the Conformance Check. It is a read-only activity: no files are modified. The output is a structured conformance report surfacing issues for human review.
 
-Definition: [[Philosophy/Model/Activities/Constitutional/Conformance]] Configuration: [[Knowledge Capital/Charter|Charter]]
+This prompt runs the activity defined in [[Model/Activities/Constitutional/Conformance|Conformance Check]]. It reads the island's adoption record and activity roster from the island [[Admin/Governance/Charter|Charter]].
 
 ---
 

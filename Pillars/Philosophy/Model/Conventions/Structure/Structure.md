@@ -70,7 +70,7 @@ Streams notes track current status, progress, and next steps - they are not know
 | Monthly index | `YYYY-MM MonthName.md` | Index note for the month - same name as the containing folder |
 | Weekly note | `YYYY WXX.md` | Weekly note filed in the year's `YYYY By Week/` sibling folder † |
 
-† **Weekly note purpose** — weekly note filed in the year's `YYYY By Week/` sibling folder (e.g. `Calendar/2026/2026 By Week/2026 W14.md`).
+† **Weekly note purpose** - weekly note filed in the year's `YYYY By Week/` sibling folder (e.g. `Calendar/2026/2026 By Week/2026 W14.md`).
 
 ### Routing Rules
 
@@ -121,7 +121,7 @@ When creating a new folder, create its folder note at the same time.
 
 Streams carry knowledge in motion: finite forward work, runs of recurring obligations, and their review evidence. They are not part of the Library; their content is not canonical. Work matures through an approved record, stabilises into `Admin/`, `Pillars/`, or `Resources/`, and its reviewed record is retained until explicitly pruned.
 
-`Streams/Roadmap/` holds flat finite work records and its allocation ledger. Recurring obligations are defined as Activity notes in the configured collection; `ki-repo-kb-activities` owns their shape and `ki-work-housekeeping` owns opted-in cadence and run evidence. A record's horizon and lifecycle are frontmatter metadata, not navigation folders. The full Streams structure and routing are canonical in `ki-repo-kb-streams`; see [[Enactment Process]] for the local governance framing.
+`Streams/Roadmap/` holds flat finite work records and its allocation ledger. Recurring obligations are defined as Activity notes in the configured collection; `ki-repo-kb-activities` owns their shape and `ki-work-housekeeping` owns opted-in cadence and run evidence. A record's horizon and lifecycle are frontmatter metadata, not navigation folders. The full Streams structure and routing are canonical in `ki-repo-kb-streams`; see [[Processes/Enactment Process/Enactment Process|Enactment Process]] for the local governance framing.
 
 ---
 

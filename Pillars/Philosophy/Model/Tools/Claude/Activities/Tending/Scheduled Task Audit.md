@@ -110,7 +110,7 @@ Call `mcp__scheduled-tasks__list_scheduled_tasks` to retrieve metadata for all a
 
 ### 2. Identify the corresponding island note
 
-For each task, locate the matching Prompt note under `Pillars/Philosophy/Model/Tools/Claude/Activities/`. The task ID prefix is documented in [[Knowledge Capital/Charter|Charter]].
+For each task, locate the matching Prompt note under `Pillars/Philosophy/Model/Tools/Claude/Activities/`. The task ID prefix is documented in [[Admin/Governance/Charter|Charter]].
 
 ### 3. Verify schedule and description
 

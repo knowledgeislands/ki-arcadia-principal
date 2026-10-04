@@ -60,7 +60,7 @@ Skills carry their own embedded instructions and are activated per-session when 
 
 The following categories belong in the Cowork project instructions box - rules that should be universally active but are either absent from `user_preferences` or currently buried in auto-memory files.
 
-**Operating context** - a brief description of the organisation, user's role, the key repositories, and the domain model - read from [[Knowledge Capital/Charter|Charter]] and [[Knowledge Capital]]. Without this, Claude infers context from conversation rather than knowing it from the start.
+**Operating context** - a brief description of the organisation, user's role, the key repositories, and the domain model - read from [[Admin/Governance/Charter|Charter]] and [[Admin/Governance/Governance|Admin/Governance]]. Without this, Claude infers context from conversation rather than knowing it from the start.
 
 **Language framing** - the no-anthropomorphism rule (state things directly; do not frame honesty or directness as a choice). Currently in an auto-memory file; should be always-on.
 
@@ -68,7 +68,7 @@ The following categories belong in the Cowork project instructions box - rules t
 
 **island as default knowledge store** - an offer to save substantive outputs to the island at session end. Currently embedded in the island `CLAUDE.md` and only active when that repository is mounted. Appropriate as a project-level default.
 
-**Primary codebase stack context** - for ad-hoc code questions outside the main code repository. Specific to this island - the relevant `CLAUDE.md` in the code repository carries this, but is invisible in sessions where that folder is not mounted. A brief summary in the instructions box keeps it always-on. See [[Knowledge Capital/Charter|Charter]] for the repository name.
+**Primary codebase stack context** - for ad-hoc code questions outside the main code repository. Specific to this island - the relevant `CLAUDE.md` in the code repository carries this, but is invisible in sessions where that folder is not mounted. A brief summary in the instructions box keeps it always-on. See [[Admin/Governance/Charter|Charter]] for the repository name.
 
 ---
 

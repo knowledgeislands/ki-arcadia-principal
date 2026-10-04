@@ -21,13 +21,13 @@ For Cowork integration specifics - connection type, token economics, platform co
 
 ## Operating Modes
 
-Claude operates in five modes that define its structured repertoire for knowledge work - each maps a type of intent to a defined sequence of actions. The skill name and trigger phrases are defined in [[Knowledge Capital/Charter|Charter]].
+Claude operates in five modes that define its structured repertoire for knowledge work - each maps a type of intent to a defined sequence of actions. The skill name and trigger phrases are defined in [[Admin/Governance/Charter|Charter]].
 
 ### Load Island Context
 
 `CLAUDE.md` is loaded automatically as project context - it is the complete authority on island structure, note format, routing rules, tagging conventions, pre-flight checks, and British English. No explicit read is required. Follow it precisely for all operations.
 
-When an operation needs integration configuration (MCP tools, project IDs, calendar sources), read the relevant note from `Pillars/Knowledge Capital/` - do not hardcode tool identifiers or project IDs. See [[Knowledge Capital]] for the full index.
+When an operation needs integration configuration (MCP tools, project IDs, calendar sources), read the relevant note from `Admin/Governance/` - do not hardcode tool identifiers or project IDs. See [[Admin/Governance/Governance|Admin/Governance]] for the full index.
 
 ### Determine Mode
 
@@ -113,7 +113,7 @@ Pushing every small edit wastes API calls, creates noisy scheduler or deployment
 
 ## Live Artifact Patterns
 
-Recurring design decisions for Cowork HTML artifacts - self-contained pages that re-fetch data via `window.cowork.callMcpTool` on every open. Derived from the [[Live Artifacts]] collection.
+Recurring design decisions for Cowork HTML artifacts - self-contained pages that re-fetch data via `window.cowork.callMcpTool` on every open. Derived from the [[Claude/Live Artifacts/Live Artifacts|Live Artifacts]] collection.
 
 ### Live Artifact Baseline
 
@@ -298,7 +298,7 @@ island-specific or universally applicable.
 
 ### Two Classes of Memory File
 
-**Canonical files** are managed exclusively by [[Knowledge Rebuild]]. They are rewritten from the island on a regular schedule. Do not edit
+**Canonical files** are managed exclusively by [[Model/Activities/Tending/Knowledge Rebuild|Knowledge Rebuild]]. They are rewritten from the island on a regular schedule. Do not edit
 them manually between rebuilds - changes will be overwritten. The five canonical files are:
 
 | File | Source island notes |
@@ -316,7 +316,7 @@ criteria and lifecycle.
 ### Island ↔ Memory Mapping
 
 _The table below uses `{ki_prefix}` and `{user_prefix}` placeholders - substitute the actual values from
-[[Knowledge Capital/Charter|Charter]] when reading for a specific island. [[Knowledge Rebuild]] uses this table during its gap analysis to
+[[Admin/Governance/Charter|Charter]] when reading for a specific island. [[Model/Activities/Tending/Knowledge Rebuild|Knowledge Rebuild]] uses this table during its gap analysis to
 validate that every listed file exists in `.auto-memory/` and that every file in `.auto-memory/` is documented here._
 
 | Island Note | Memory File | Class | Notes |

@@ -14,7 +14,7 @@ author: Written with Claude
 
 ## Overview
 
-Recurring patterns and design principles for AI-driven productivity automations - scheduled tasks, regular activities, and any Claude-powered workflow that runs repeatedly against the same island configuration. These are generalisations derived from the design of specific activities such as [[Philosophy/Model/Activities/Email/Email]].
+Recurring patterns and design principles for AI-driven productivity automations - scheduled tasks, regular activities, and any Claude-powered workflow that runs repeatedly against the same island configuration. These are generalisations derived from the design of specific activities such as the Email activity group.
 
 ---
 
@@ -84,7 +84,7 @@ single run - delete before stopping so the post-run state is clean.
 
 ## Concrete Example - Route Inbound
 
-The [[Route Triage]] activity runs three times each working day. Its routing rules (the ordered rule list in `Email Routing Config.md` plus
+The Route Triage activity runs three times each working day. Its routing rules (the ordered rule list in `Email Routing Config.md` plus
 every `Route - *.md` file) change only when the user manually edits them or applies a suggestion - typically a few times a week at most.
 
 Without a cache, every run parses 19+ Route files plus the routing rules note before doing any email work. With the ratio firmly in caching
@@ -95,5 +95,5 @@ Invalidation is handled by the mtime check across `Email Routing Config.md` and 
 agreed suggestion (modifying a source file), the cache file is deleted at the end of that phase - the next run recompiles from the updated
 sources.
 
-The cache schema is documented in the [[Approach]] note under Routing Table Cache.
+The cache schema was documented in the Email group's former Approach note under Routing Table Cache, now retired.
 ````
