@@ -22,7 +22,7 @@ Before remote execution or environment management resumes, the Convenor must bri
 
 ## Knowledge-owner transition
 
-The approved [[KI-ARCADIA-ECO-007-consolidate-techne-knowledge|knowledge consolidation]] transfers canonical engineering knowledge to [[Engineering Practice/Engineering Practice|Engineering Practice]] while retaining source evidence and existing work. The human's exception to the retiring source's Enactment prerequisite permits the scoped documentary authority transition only. It does not itself accept candidates, change source work records or permit remote operations.
+The approved [knowledge consolidation](https://github.com/knowledgeislands/ki-arcadia-principal/blob/688fb4e4a019a0ef9590edb0e2f95413010c6318/Streams/Roadmap/KI-ARCADIA-ECO-007-consolidate-techne-knowledge.md) transfers canonical engineering knowledge to [[Engineering Practice/Engineering Practice|Engineering Practice]] while retaining source evidence and existing work. The human's exception to the retiring source's Enactment prerequisite permits the scoped documentary authority transition only. It does not itself accept candidates, change source work records or permit remote operations.
 
 The source `knowledgeislands/ki-techne-principal` was retired on 4 October 2026 under [[KI-ARCADIA-ECO-008-disposition-retained-techne-source|ECO-008]] and is archived read-only. Its snapshots, closed work records, frozen ledger and preserved candidate branches remain readable there as historical evidence; its own `AGENTS.md` and `README.md` now point to this policy rather than carrying a hold of their own. Retirement neither lifts nor broadens this hold.
 

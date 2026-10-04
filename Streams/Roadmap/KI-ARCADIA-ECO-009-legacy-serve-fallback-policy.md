@@ -15,7 +15,7 @@ updated_at: 2026-10-04T11:57:35Z
 
 # Gather Evidence for a Legacy Serve Fallback Policy
 
-This record is a discussion proposal carved out of [[KI-ARCADIA-ECO-004-route-deferred-mcp-findings|KI-ARCADIA-ECO-004]]. It is not accepted, prioritised, or implementation authority.
+This record is a discussion proposal carved out of [KI-ARCADIA-ECO-004](https://github.com/knowledgeislands/ki-arcadia-principal/blob/688fb4e4a019a0ef9590edb0e2f95413010c6318/Streams/Roadmap/KI-ARCADIA-ECO-004-route-deferred-mcp-findings.md). It is not accepted, prioritised, or implementation authority.
 
 ## Goal
 
