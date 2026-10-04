@@ -5,12 +5,12 @@ area: ECO
 title: Record how delegated agents reach governance skills
 theme: ecosystem-coordination
 horizon: next
-status: ready
+status: awaiting-review
 blocks: []
 blocked_by: []
-baseline_ref: 95f85a1a14ab9ff2834fe6d4f32355754e6de708
+baseline_ref: d2a8147521e1faa6dbe56fa46a849b5b5ab75034
 created_at: 2026-09-26T16:22:01Z
-updated_at: 2026-10-04T11:47:16Z
+updated_at: 2026-10-04T11:47:30Z
 ---
 
 # Record How Delegated Agents Reach Governance Skills
@@ -44,8 +44,8 @@ On 2026-10-04 the harness principal record was read at `ki-agentic-harness` `9fd
 ## Steps
 
 - [x] Establish the harness-owned principal record, KI-HARNESS-GOV-118, with a reciprocal origin reference.
-- [ ] Review that the principal preserves the reported failure, evidence limitations and authority boundary; request correction there if needed.
-- [ ] Prepare the handoff delivery review packet for independent review and `ki-accept`, without claiming the principal's implementation has completed.
+- [x] Review that the principal preserves the reported failure, evidence limitations and authority boundary; request correction there if needed.
+- [x] Prepare the handoff delivery review packet for independent review and `ki-accept`, without claiming the principal's implementation has completed.
 
 ## Files touched
 
@@ -70,6 +70,35 @@ Whether the governance skills should be installed as user skills is a harness de
 ## Governance
 
 This roadmap record adheres to [[Enactment Process]]. The Agentic Harness owns the skills and the delegation convention; Arcadia owns only the observation and the handover.
+
+## Review
+
+### Delivered
+
+Verification of this Arcadia handoff only, from immutable baseline `d2a8147521e1faa6dbe56fa46a849b5b5ab75034`. Excluded: any change to KI-HARNESS-GOV-118, the harness, `ki bootstrap` or runtime configuration, and any claim about the principal's outcome.
+
+### Change Summary
+
+Only this record changed: a Current state section with the dated harness evidence, the two remaining Steps completed, lifecycle metadata, and this packet. No harness file was touched and no correction request was raised.
+
+### Verification
+
+- The harness record links this origin by canonical GitHub URL, and this record links the harness record by canonical URL: reciprocal.
+- The harness record states the 26 September observation is dated evidence to recheck and keeps a Next / draft position with fresh grounding as its first Step.
+- This record contains no implementation plan, private-memory remedy or completion claim for the principal.
+- `ki repo audit --skill ki-repo-kb-streams` passed.
+
+### Outstanding concerns
+
+None for the handoff. The principal outcome remains open in KI-HARNESS-GOV-118 under harness authority.
+
+### Post-change review
+
+The limited remit - preserve the observation and verify the handoff - is met without scope expansion. Closing this record does not close or accept the principal. Ready for acceptance.
+
+### Mini recap
+
+Handoff to KI-HARNESS-GOV-118 verified as faithful and reciprocal; no corrections needed. No learning route proposed.
 
 ## Discussion
 
