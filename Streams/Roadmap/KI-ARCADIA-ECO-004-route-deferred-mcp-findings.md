@@ -10,67 +10,62 @@ blocks: []
 blocked_by: []
 baseline_ref: 95f85a1a14ab9ff2834fe6d4f32355754e6de708
 created_at: 2026-09-26T16:22:01Z
-updated_at: 2026-09-26T16:22:01Z
+updated_at: 2026-10-04T10:38:12Z
 ---
 
 # Route Deferred MCP and Tools Findings to Their Owners
 
 ## Goal
 
-Give every defect found during the 2026-09-22 protocol and guides batch a record in the repository that owns it, so that findings deliberately excluded from their delivering item's boundary are not lost when the session that found them ends.
+Reconcile the findings deferred from the 2026-09-22 MCP and tools deliveries, then route only reproduced, still-open work to its owning repository. Preserve the disposition of historical observations so they do not reappear as unverified defects.
 
 ## Context
 
-Ten delegated agents worked across the MCP server and tools repositories to deliver two duplicate roadmap families. Each was held to its record's stated boundary, so defects they encountered outside that boundary were reported rather than fixed. That was the correct call for the delivery, and it leaves the findings with no durable home: they exist only in a session transcript.
-
-Several findings are behavioural rather than cosmetic, and at least two classes appear to be estate-wide rather than local. This record is the routing ledger that converts them into receiver-owned work.
+The original findings were reports from bounded delivery lanes, not verified defects. A fresh 2026-10-04 source and fixture review separated live issues from fixes and unsupported claims. Receiver roadmaps, trade records, and issue ledgers still need a deduplication pass before any new work is captured. Arcadia owns this evidence and routing plan; receivers decide their own priority and implementation.
 
 ## Boundary
 
-Arcadia routes; it does not fix. This record must not change another repository, and it must not assert any finding as confirmed. Each entry is a reported observation from a delegated agent, not an Arcadia verification: the receiving repository reproduces the finding first and closes the entry as not-a-defect if it does not reproduce. Nothing here authorises publishing a package to any registry, and the dead-badge entry is to be resolved by removing the badge, consistent with the owner's standing preference against registry publication.
+This record changes no receiving repository and does not authorise live MCP operations, publishing, or a shared utility migration. Authentication persists tokens in GSuite and M365, so its write annotation remains truthful. Recovery guidance should explain how an operator reaches the required tier. A `--dry-run` investigation must use mocked roots and mutation calls, never a real Notion workspace.
 
-## Findings to route
+## Reconciled findings
 
-| Finding | Owner | Shape |
-| --- | --- | --- |
-| `m365_auth_start` is unreachable at the default `MCP_M365_ACCESS_LEVEL=read` because of its `WRITE_REMOTE` annotation, while `errMessage()` names that same tool in the 401 hint, so the recovery path points at a tool the caller cannot call | `mcp-m365` | Defect, likely shared |
-| `roots publish --dry-run` is a silent no-op; `--dry-run` is honoured by `delete` and `prune` only, so a caller rehearsing a publish gets no rehearsal and no warning | `mcp-ki-kb-notion-mirror` | Defect |
-| `gsuite_auth_start` instructs the user to run `bun run server:auth:dev` or `server:auth:start`; both scripts were renamed to the `ki:` prefix, so the instruction fails | `mcp-gsuite` | Defect |
-| Hand-maintained tool catalogues disagree with the servers they document: `mcp-gsuite` lists 32 against 42, `mcp-housekeeping-claude` lists 39 against 42 and omits the whole `claude_code_sessions_*` group, `mcp-m365` lists 37 against 36, and `mcp-git-audit`'s inventory claims are unverified | Each server, plus an estate decision | Drift, estate-wide |
-| npm badges point at packages that do not exist; nothing is published under `@knowledgeislands`. `mcp-git-audit`, `mcp-gsuite`, and `mcp-ki-kb-fs` are affected | Each repository | Documentation defect |
-| `mcp-ki-kb-fs` carries four local problems: a README H1 that disagrees with the name a test pins at `src/main/files/repository-contract.test.ts:28`, apparently dead behaviour under `src/main/notes/`, CI uploading `coverage/` while Vitest writes `reports/coverage`, and a Node floor that disagrees across the README, `engines`, and `mise.toml` | `mcp-ki-kb-fs` | Mixed |
-| `tools-ki` defers four procedures to `knowledgeislands.info/guidance/cli/...` while the site derives that guidance from the repository, and those URLs have become 301 redirects under `KI-WEB-SITE-025`; the documentation depends on itself in a circle | `tools-ki` and `ki-website` | Structural |
-| The migrated servers retain `legacy: 'serve'` as a deliberate compatibility fallback; whether to keep, date, or drop it is one estate decision, not five local ones | Estate decision | Decision |
+- **Live — authentication recovery, M365 and GSuite.** At default `read`, a synthetic 401 points to `m365_auth_start` or `gsuite_auth_start`, yet each is registered as a write tool and absent from that tier. Fixture-only registration reproduced the mismatch at M365 `8d7d09d7e9a1` and GSuite `f9ab8d400806`. Route reachable recovery instructions to both owners; do not relabel token-persisting authentication as read-only.
+- **Live — Notion Mirror publish dry-run.** `roots publish --dry-run` parses the flag but the publish branches do not consume it and can still call mutating touch/update operations. This is more serious than the original “silent no-op” description. Source evidence is `src/cli/cli.ts` at `4774ab686f84`; a mocked CLI reproduction is still needed before a receiver fix. No live publish was run.
+- **Live — GSuite authentication commands.** Startup guidance still names `server:auth:dev` and `server:auth:start`, while package scripts use the `ki:` prefix. Source evidence is `src/main/auth-info/index.ts` and `package.json` at `f9ab8d400806`. This can be scoped with GSuite's recovery-guidance fix.
+- **Partly resolved — tool catalogues.** Current README name sets match registration and smoke inventories in GSuite (49), Claude housekeeping (44), M365 (44), and Git Audit (12). The historical missing-tool counts are no longer a defect. GSuite's access-tier prose remains inaccurate at `f9ab8d400806`. Generated or checked catalogues remain a separate maintenance decision, subject to full rubric and receiver review.
+- **Partly resolved — npm badges.** Git Audit removed its dead badge in `171ac88`; KBFS did so in `b63fd39`. GSuite and M365 still show badges for package names whose checked registry metadata endpoints return 404. Route badge removal to those two owners. This evidence does not establish that every `@knowledgeislands` package is unpublished; registry publication is outside this record's scope.
+- **Resolved or unsupported — four KBFS claims.** The root-contract test passes, coverage upload was corrected in `6a4991b`, and the current guides and package minimum agree. The notes module has a public export and `createFolder` is used by an MCP tool, so the blanket dead-code claim is unsupported. No receiver defect should be created from these claims without new evidence.
+- **Resolved in source — tools-ki guide cycle.** Local guides and README routes replaced the circular source links in `03fe090`; current source at `ba0e68a690d1` contains no old guidance links in the reviewed surfaces. Deployed website redirects were not checked and should not be inferred from this source result.
+- **Open policy question — legacy serve fallback.** Six migrated servers retain `legacy: 'serve'`, and the Harness transition contract permits it. A retirement decision needs observed client compatibility evidence; retention is not a conformance defect.
 
 ## Steps
 
-- [ ] Reproduce each finding in its owning repository before routing it; drop any entry that does not reproduce and say so here.
-- [ ] Confirm whether the `m365` access-level defect is shared by the sibling servers that use the same annotation-derived model, and route it once per affected repository.
-- [ ] Open a receiver-owned record in each owning repository for the findings that reproduce, stating that this record is the origin.
-- [ ] Decide whether tool catalogues should be generated from the server's own registry rather than hand-maintained, as one estate decision; four of five were factually wrong, which suggests the maintenance model rather than the maintainers.
-- [ ] Decide the `legacy: 'serve'` retention question once, and record it where the migrated servers can cite it.
-- [ ] Record the reciprocal relationship in each receiver record and mark this one `done` when every finding has a home.
+- [x] Recheck the historical observations against current receiver source, fixture evidence, and known fix commits.
+- [x] Distinguish resolved or unsupported claims from reproduced live issues without deleting their history.
+- [ ] Deduplicate live findings against each receiver's roadmap and trade records; capture only uncovered substantive work in receiver-owned Triage with an Arcadia origin reference.
+- [ ] Review the catalogue-check and legacy-fallback policy questions against the full skill rubrics and receiver implementations before proposing any shared change.
+- [ ] Record reciprocal receiver references and present Arcadia's routing packet for its own review and acceptance.
 
 ## Files touched
 
 - `Streams/Roadmap/KI-ARCADIA-ECO-004-route-deferred-mcp-findings.md`
-- `Streams/Roadmap/_ISSUES.md`
-- Receiver records are created by their own repositories, not from Arcadia.
+
+Receiver records, if justified, are authored and governed in their own repositories.
 
 ## Verify
 
-- Every row in the table above resolves to either a receiver-owned record identifier or a written note that it did not reproduce.
-- No receiver record is created without the finding being reproduced first in that repository.
-- The two estate decisions are recorded as decisions, with a Decision Record where the outcome is durable, rather than being settled implicitly inside one repository's fix.
+Each live finding needs an owning receiver record or a documented deduplication result. Resolved claims retain their fix or counter-evidence here. The Notion dry-run path needs a mocked behavioural reproduction before changing publication code. Estate policy questions need a written decision only after client or rubric evidence supports one.
+
+The sequential 2026-10-04 MCP audit of all nine repositories had no failures and four warnings: GSuite registration order twice, Notion Mirror registration order once, and Codex housekeeping's stale `zod` hold. These are retained findings, not blanket proof that every historical observation reproduces.
 
 ## Dependencies and blocks
 
-This record does not block `KI-ARCADIA-ECO-003`. The delivered work in those items is acceptable on its own terms, and holding acceptance behind unrelated findings would leave delivered work permanently uncredited.
+This record does not block `KI-ARCADIA-ECO-003` or the receiver approvals already completed. Receiver intake and priority remain independent.
 
 ## Escalation points
 
-The tool-catalogue question and the `legacy: 'serve'` question are both estate decisions the owner should settle, because each repository fixing them locally produces five divergent answers to one question.
+The owner should settle catalogue generation or verification and the eventual `legacy: 'serve'` policy only after the stated rubric and client evidence is assembled. Neither question is an automatic per-repository conformance fix.
 
 ## Governance
 
-This roadmap record adheres to [[Enactment Process]]. Arcadia owns the routing ledger; each receiving repository owns whether a finding is real, how it is fixed, and when.
+This roadmap record adheres to [[Enactment Process]]. Arcadia owns the routing ledger; each receiving repository owns whether to adopt a finding, how to fix it, and when to accept it.
