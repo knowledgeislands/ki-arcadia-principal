@@ -56,6 +56,8 @@ The Library is the canonical record - version-controlled, governed, and the sing
 
 The five Knowledge Base zones are `Calendar`, `Pillars`, `Resources`, `Streams` and `Admin`, with inbound `+` and outbound `-` staging. Arcadia's governance lives in Admin, not a separate Knowledge Capital folder. Calendar records and outbound artifacts follow their own note-type and process owners; a shared staging convention does not authorise relocating existing records.
 
+Inbound and outbound staging are kept apart, and outside the zones, for three reasons. Material in `+` is arriving and waits to be filed into a zone or discarded; material in `-` is leaving and waits to be delivered, extracted or deleted, so mixing them would hide one queue inside the other. Neither area holds content the island keeps, so neither carries a same-name index or follows the zone rules, which stops transient material being read as canonical. And because each zone holds only governed content, an audit can treat anything ephemeral found in a zone as a mistake. [[Outbound]] and [[Session Digest]] give the outbound detail.
+
 `Pillars` and `Resources` share subfolder names by design. For example, `Pillars/Finance` covers internal finances; `Resources/Finance` covers general finance knowledge such as banking regulations.
 
 Streams notes track current status, progress, and next steps - they are not knowledge stores. When a stream produces durable knowledge, it is extracted to the relevant Pillars note; the stream note links to it.

@@ -32,7 +32,7 @@ The Enactment Process works alongside Streams, Pillars and Resources in an itera
 - **Streams** are the home of ongoing work. Draft capture follows the shared process; adoption and delivery require the applicable owner's approval, not merely workspace presence.
 - **Pillars / Resources** are the home of stable, ratified knowledge; nothing lands there except through the council's ratification of a proposal that specifies the change.
 
-A roadmap record moves through `draft → ready → in-progress → awaiting-review → done`; the shared change-management skills define what each status means and the transitions between them.
+A roadmap record moves through `draft → ready → in-progress → awaiting-review → done`; the shared change-management skills define what each status means and the transitions between them. Each gate protects something specific. `ready` means the plan is settled and approved before any canonical content changes, so work never starts on an open question. `in-progress` records the baseline the change starts from, so the result can be compared with it. `awaiting-review` separates finishing the work from accepting it: the review evidence sits in the record until someone with authority accepts it. A `done` record is retained until it is explicitly pruned, so the evidence behind a canonical change outlives the change itself. This sequence replaces the earlier stream vocabulary of `future`, `background`, `active` and `ratified`.
 
 ---
 

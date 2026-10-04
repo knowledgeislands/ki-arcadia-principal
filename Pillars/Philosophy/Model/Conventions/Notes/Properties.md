@@ -22,6 +22,7 @@ All fields except `creator` are required. Frontmatter must be YAML properties - 
 
 | Property      | Values / Format                                                                                  |
 | ------------- | ------------------------------------------------------------------------------------------------ |
+| `note_type`   | Note kind from the KI-wide taxonomy, e.g. `pillars/note`, `pillars/index`, `session-digest` §    |
 | `status`      | `draft - Month YYYY` / `current - Month YYYY` / `archive - Month YYYY` / `outdated - Month YYYY` |
 | `author`      | `Manual` / `Written with Claude` / `Mixed` - always the note's author, not the subject's         |
 | `creator`     | Optional - the author of the external work being referenced, e.g. `creator: "[[Author Name]]"`   |
@@ -31,6 +32,8 @@ All fields except `creator` are required. Frontmatter must be YAML properties - 
 † E.g. `reference_{ki_prefix}_key_notes.md`. Use a YAML list when multiple files apply.
 
 ‡ Set by Morning Briefing automation; see [[Schedule]].
+
+§ The taxonomy is owned by the `ki-repo-kb` skill's frontmatter standard, so every island classifies notes the same way and audits can check placement by type. `note_type` says what kind of note this is; tags say what it is about. A `session-digest` is valid only under `-/_DIGESTS/` - see [[Session Digest]].
 
 ---
 
