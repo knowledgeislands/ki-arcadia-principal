@@ -10,7 +10,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-09-26T16:26:40Z
-updated_at: 2026-09-27T22:02:31Z
+updated_at: 2026-10-04T11:49:49Z
 ---
 
 # Reconcile GitHub Live Settings with the Declared Contract
@@ -54,3 +54,8 @@ Before further implementation, reconcile the current destination branch, linked 
 - **Observed:** Commit `1cc7136` removed the local `package.json` `bugs` field; this checkout is still one commit ahead of `origin/main`. The GitHub API was unavailable at this checkpoint, so the current Issues toggle and topics were not verified.
 - **Resolve:** Re-run `ki repo audit --skill ki-repo` against live GitHub state. Confirm the selected single-queue resolution with the owner, reconcile Issues and any related `KI-ARCADIA-GOV-006` topics work within the approved scope, and push only with separate authority. Do not treat the local commit as a live-settings fix.
 - **Close:** This is a Triage draft, not a delivered record. If work remains, adopt and deliver it through the shared lifecycle; if another retained record fully owns it, seek an exact approved Triage disposition. Retain any `done` record and leave pruning to a later explicit owner selection.
+
+### Re-check - 2026-10-04
+
+- **Observed:** Live GitHub state now has Issues disabled, commit `1cc7136` is on `origin/main`, and `ki repo audit` on Arcadia passes with no `ki-repo` finding. GitHub topics also equal the `package.json` keywords, so the related [[Streams/Roadmap/KI-ARCADIA-GOV-006-audit-topics-discussion|KI-ARCADIA-GOV-006]] observation is likewise resolved.
+- **Recommendation:** No settings work remains. Close this Triage record as `rejected` (already reconciled, no change needed); that terminal disposition needs the owner's explicit approval under `ki-accept`.

@@ -10,7 +10,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-09-26T16:26:40Z
-updated_at: 2026-09-26T16:26:40Z
+updated_at: 2026-10-04T11:49:49Z
 ---
 
 # Repair Granola Capture Note Metadata
@@ -53,3 +53,8 @@ These two captures are also unharvested: nothing yet extracts them into durable 
 ### Verification
 
 `ki repo audit --skill ki-repo-kb` is the gate, and it currently fails only on this finding.
+
+### Re-check - 2026-10-04
+
+- **Observed:** The structural resolution already landed in the harness: `ki-agentic-harness` `a9071b5e` ("delegate acquisition record metadata", 26 September 2026) delegates acquisition-record metadata out of NOTE-1c. Both captures remain unchanged with their original provenance, and `ki repo audit` on Arcadia passes with no `ki-repo-kb` finding.
+- **Recommendation:** No local work remains. Close this Triage record as `rejected` (resolved upstream, no local change needed); that terminal disposition needs the owner's explicit approval under `ki-accept`.
