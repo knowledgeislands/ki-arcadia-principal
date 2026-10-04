@@ -95,9 +95,6 @@ standing.export.knowledge = ["shared-capability-maintenance"]
 [skills.ki-trades.routes."knowledgeislands/ki-specifications"]
 export = ["knowledge"]
 
-[skills.ki-trades.routes."knowledgeislands/ki-techne-principal"]
-export = ["knowledge"]
-
 [skills.ki-trades.routes."knowledgeislands/ki-website"]
 export = ["knowledge"]
 standing.export.knowledge = ["public-source-change"]
@@ -113,7 +110,6 @@ members = [
   "https://github.com/knowledgeislands/ki-plugins",
   "https://github.com/knowledgeislands/ki-specifications",
   "https://github.com/knowledgeislands/ki-techne-harness",
-  "https://github.com/knowledgeislands/ki-techne-principal",
   "https://github.com/knowledgeislands/ki-website",
   "https://github.com/knowledgeislands/mcp-acquire-whatsapp",
   "https://github.com/knowledgeislands/mcp-git-audit",

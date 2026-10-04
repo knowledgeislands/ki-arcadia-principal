@@ -19,7 +19,7 @@ Any island may maintain its own chart of useful topics, sources and destinations
 
 ## Internal inventory
 
-The current inventory contains 23 canonical KI repository identities: Arcadia and 22 member islands. This owner-approved inventory agrees with the inspected KIS owner and direct-member declaration in `.ki.toml`. That working-set declaration is evidence for reconciliation; Agora membership itself grants no territorial authority.
+The current inventory contains 22 canonical KI repository identities: Arcadia and 21 member islands. This owner-approved inventory agrees with the inspected KIS owner and direct-member declaration in `.ki.toml`. That working-set declaration is evidence for reconciliation; Agora membership itself grants no territorial authority.
 
 Each island owns its accepted knowledge or executable behaviour within the shared governance. The roles below distinguish Capital, specialist knowledge, reusable capabilities, products, integrations, tools and delivery without turning a product boundary into another territory.
 
@@ -32,7 +32,6 @@ Each island owns its accepted knowledge or executable behaviour within the share
 | [ki-plugins][ki-plugins] | Delivery | Plugin packaging |
 | [ki-specifications][ki-specifications] | Standards | Portable contracts after V1 |
 | [ki-techne-harness][ki-techne-harness] | Product | Controller and execution fabric |
-| [ki-techne-principal][ki-techne-principal] | Retained evidence | Source snapshots and existing work |
 | [ki-website][ki-website] | Publication | Public source-labelled website |
 | [mcp-acquire-whatsapp][mcp-acquire-whatsapp] | MCP | WhatsApp acquisition |
 | [mcp-git-audit][mcp-git-audit] | MCP | Repository inspection |
@@ -49,7 +48,7 @@ Each island owns its accepted knowledge or executable behaviour within the share
 | [tools-rig][tools-rig] | Tool | Local environment tooling |
 | [tools-techne][tools-techne] | Tool | Techné operator command |
 
-Arcadia's [[Engineering Practice/Engineering Practice|Engineering Practice]] is the canonical home of Techné's engineering knowledge and decisions. The former source repository remains a member as retained noncanonical evidence and the location of its existing work; its maintained decision copies are explicitly Arcadia-owned projections. The [[Techne Programme Hold]] restricts remote running and remote-environment management across the retained source, Techné Harness and `tools-techne`. The two implementation products retain independent ownership; local development continues under their repository standards, and knowledge adoption does not itself change services or accept candidates.
+Arcadia's [[Engineering Practice/Engineering Practice|Engineering Practice]] is the canonical home of Techné's engineering knowledge and decisions. The former source repository, [ki-techne-principal][ki-techne-principal], was retired on 4 October 2026 under [[KI-ARCADIA-ECO-008-disposition-retained-techne-source|ECO-008]]: it is archived read-only as historical evidence, is no longer a member, and holds no live work. The [[Techne Programme Hold]] restricts remote running and remote-environment management across Techné Harness and `tools-techne`. The two implementation products retain independent ownership; local development continues under their repository standards, and knowledge adoption does not itself change services or accept candidates.
 
 Specifications remains dormant as a normative authority until the overall V1 boundary. The inventory records its membership without representing future standards as current obligations.
 

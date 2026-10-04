@@ -1,6 +1,6 @@
 ---
 note_type: pillars/note
-updated: 2026-10-01T22:07:06Z
+updated: 2026-10-04T17:20:00Z
 author: AI-assisted
 ---
 
@@ -21,7 +21,6 @@ The Knowledge Islands tooling layer combines governed knowledge, reusable capabi
 | `tools-techne` | Implementation product | Operator CLI, diagnostics and releases |
 | `ki-website` | Publication | Selected source-labelled public material |
 | `ki-specifications` | Dormant standards home | Possible portable contracts after overall V1 |
-| `ki-techne-principal` | Retained evidence | Original knowledge, shared projections and held work |
 
 ## Knowledge and implementation
 
@@ -35,8 +34,8 @@ MCP and environment tools provide specific capabilities under their own reposito
 
 The website selects and publishes material under its own authority without acquiring source ownership. Specifications is dormant before overall V1; repository-local contracts remain with their owners.
 
-## Hold and retained source
+## Hold and retired source
 
-The former Techné knowledge repository remains readable evidence and the location of its held work. Its source snapshots are noncanonical, with Arcadia-maintained shared decision projections explicitly distinguished.
+The former Techné knowledge repository, `ki-techne-principal`, was retired on 4 October 2026 and is archived read-only as historical evidence. It holds no live work; its snapshots are noncanonical, and its decision copies are frozen projections of the Arcadia-maintained records.
 
-The [[Techne Programme Hold]] remains effective across the retained source, harness and operator CLI. This map changes neither services, runtime bindings, work states nor release authority.
+The [[Techne Programme Hold]] remains effective across the harness and operator CLI. This map changes neither services, runtime bindings, work states nor release authority.

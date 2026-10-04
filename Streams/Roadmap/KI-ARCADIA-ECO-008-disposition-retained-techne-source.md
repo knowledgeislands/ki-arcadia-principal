@@ -5,12 +5,12 @@ area: ECO
 title: Retire the Techne source and disposition its work
 theme: ecosystem-coordination
 horizon: now
-status: ready
+status: in-progress
 blocks: []
 blocked_by: []
 baseline_ref: e06d1d902f892c7bac37f1a4ebf61201378b0f6d
 created_at: 2026-10-04T11:03:22Z
-updated_at: 2026-10-04T16:59:00Z
+updated_at: 2026-10-04T17:25:00Z
 ---
 
 # Retire the Techne Source and Disposition Its Work
@@ -110,6 +110,17 @@ The retirement sequence the owner asked to be shaped, each step subject to its o
 2. Transfer or close the three open drafts under the foreign-work-identifier policy decided above.
 3. Update Arcadia governance to describe the source as retired, remove it from the `kis` Agora, and deregister it.
 4. Archive the GitHub repository rather than delete it, so the evidence stays readable, then remove the local checkout.
+
+### Retirement dispositions - 2026-10-04
+
+Recorded during delivery from the re-grounded census and an independent judgement on the open drafts.
+
+- **Candidates.** `0f77071572aa649a936be3069f635ab8ea721858` (KIS-10), `c99592a2a2e2872a95fe4c4f44506291a0b825c8` (KIS-44) and `eb7292a1f1bd515fcb7c44715caac48bfe5770ad` (KIS-7): preserved unaccepted in archived source. Each branch was pushed unchanged to `knowledgeislands/ki-techne-principal` under its `paperclip/aligned-20260926/` name and its remote tip verified equal to the local commit before its Paperclip worktree was removed with `git worktree remove`. None was accepted or integrated, and no Paperclip company or issue was changed.
+- **`TECHNE-OPS-002`.** Closed in source, not transferred. Its knowledge outcome was enacted by `TECHNE-GOV-005` through `ADR-TECHNE-001` and the Arcadia Operating Model, AI Execution Fabric and Engineering Estate notes. Its remaining proof steps are remote-environment work under the [[Techne Programme Hold]], and the supervised-host decision is already carried by `TECHNE-TOOLS-OPS-008` in `ki-techne-harness`; transferring it would create a live record whose only steps are held remote operations.
+- **`TECHNE-OPS-004` and `TECHNE-OPS-005`.** Closed in source, not transferred. Both were parked with nothing executed. If their reconsideration triggers are met - a real workflow needing durable pause, retry or approval, or an approved Fabric contract exposing a framework-sized gap - Arcadia may capture a fresh record citing the originating identifier as provenance.
+- **`_ISSUES.md`.** Left untouched as a frozen ledger at GOV 13 and OPS 9. The `TECHNE-` namespace issues and reuses nothing further, and the ledger is not copied into any receiver.
+- **`TECHNE-GOV-005`.** Not a missing record: "Govern isolated agent execution" was accepted at `aab2376` and pruned at `d381648` on 2026-09-15 under the source's prune-after-done convention, and is recoverable from `aab2376`. Its outcome is `ADR-TECHNE-001`. The source's `TECHNE-OPS-002` now says so; no replacement record was created and the identifier was not reissued.
+- **Foreign work identifiers.** Arcadia neither issues, reuses nor adopts another repository's work identifiers. Work received from another repository takes a fresh identifier from the receiver's own ledger, records its origin in `transferred_from` with a canonical source URL at a pinned revision, and cites the source identifier only as provenance, never in `blocks` or `blocked_by`. A transfer carries no authority the receiver did not already hold, including any remote-operation authority under the hold.
 
 ---
 
