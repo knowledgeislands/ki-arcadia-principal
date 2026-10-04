@@ -66,7 +66,15 @@ List proposed changes or new ADRs - do not write them yet.
 Do a lightweight scan for:
 - Notes in $REPOSITORY/+/ inbox that have been there more than a week (suggest routing)
 - Any obvious orphaned notes with no wikilinks in or out
-- Folders missing an index note per the index note convention in CLAUDE.md
+- Folders missing an index note per the index note convention in AGENTS.md
+
+## Step 5a - Index note audit
+For every folder outside +/ and -/ (Calendar month and week folders excepted, per AGENTS.md):
+- Confirm a same-name index note exists.
+- Confirm it has a prose ## Overview and one H2 section per direct child (sub-folder or note), each with two to four substantive sentences.
+- Flag direct children with no section, and sections whose child no longer exists.
+Then read Streams/Streams.md, Streams/Roadmap/Roadmap.md and Streams/Roadmap/_ISSUES.md and confirm they agree with the flat records in Streams/Roadmap/ (each area's high-water mark is at least its highest record serial; no horizon or status folders).
+List proposed changes - do not apply them yet.
 
 ## Step 6 - Report and confirm
 Present a summary of all proposed changes grouped by type. Wait for confirmation before making any writes.

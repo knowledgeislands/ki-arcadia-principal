@@ -26,4 +26,4 @@ The human operating mode covers everything a person does directly in the island 
 
 **Graph navigation** - Using Obsidian's graph view and wikilink traversal to explore connections, identify orphaned notes, and maintain structural health.
 
-**Periodic maintenance** - Running the scheduled activities documented in [[Activities]], including status reviews, wikilink audits, and inbox clearance.
+**Periodic maintenance** - Running the scheduled activities documented in [[Model/Activities/Activities|Activities]], including status reviews, wikilink audits, and inbox clearance.

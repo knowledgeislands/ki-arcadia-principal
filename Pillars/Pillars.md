@@ -22,7 +22,7 @@ Pillars holds the internal knowledge of this island - the methodologies, framewo
 
 ## Philosophy
 
-[[Philosophy/Knowledge Islands|Philosophy]] is the portable Knowledge Islands model - the concepts, conventions, processes, activities, agents, and tools that define how any Knowledge Island operates. Arcadia, as the canonical seat of the Knowledge Islands system, holds the authoritative definition here.
+[[Philosophy/Philosophy|Philosophy]] is the portable Knowledge Islands model - the concepts, conventions, processes, activities, agents, and tools that define how any Knowledge Island operates. Arcadia, as the canonical seat of the Knowledge Islands system, holds the authoritative definition here; [[Knowledge Islands]] is its narrative entry point.
 
 ---
 

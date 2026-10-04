@@ -11,7 +11,7 @@ author: Written with Claude
 
 ## Overview
 
-This folder holds the island-specific timing configuration for Arcadia's automated activities. The generic activity patterns - what each automation does and why - are defined in [[Philosophy/Activities/Activities|Activities]] under Knowledge Islands. What lives here is the timing model: the day-type taxonomy that automations read from daily note frontmatter to decide whether and how to run.
+This folder holds the island-specific timing configuration for Arcadia's automated activities. The generic activity patterns - what each automation does and why - are defined in [[Model/Activities/Activities|Activities]] under Knowledge Islands. What lives here is the timing model: the day-type taxonomy that automations read from daily note frontmatter to decide whether and how to run.
 
 The authoritative record of which activities are enabled - the operational roster - lives in the [[Admin/Governance/Charter|Charter]]. This folder is the timing model; the Charter is the activation record.
 

@@ -6,14 +6,14 @@ title: Index note review
 theme: governance
 tags:
   - topic/knowledge-islands
-status: ready
+status: awaiting-review
 priority: medium
 horizon: next
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: f517a4743bc56136a3c17903f1a04dfeaa9d0869
 created_at: 2026-04-28T00:13:43Z
-updated_at: 2026-10-04T18:06:00Z
+updated_at: 2026-10-04T18:30:00Z
 author: Written with Claude
 ---
 
@@ -56,12 +56,12 @@ Roadmap navigation: `_ISSUES.md` high-water marks agree with the flat records (G
 
 ## Steps
 
-- [ ] Create `Introduction/Background/Background.md` and `Introduction/Concept/Concept.md`, then `Introduction/Introduction.md`.
-- [ ] Create `Model/Activities/Activities.md`, `Model/Agents/Agents.md`, `Model/Conventions/Conventions.md`, `Model/Processes/Processes.md` and `Model/Tools/Tools.md`, then `Model/Model.md`.
-- [ ] Create `Realisation/Realisation.md`, then `Philosophy/Philosophy.md`, and point [[Pillars]] at the new pillar index.
-- [ ] Disambiguate or repair the inbound links listed under Current state so each resolves to exactly one note.
-- [ ] Replace the stale `Housekeeping` description in [[Streams]] with the Activity collection.
-- [ ] Add an index-note audit step (presence, Overview, one H2 per direct child, Streams navigation agreement) to the Health Check definition and its Claude prompt.
+- [x] Create `Introduction/Background/Background.md` and `Introduction/Concept/Concept.md`, then `Introduction/Introduction.md`.
+- [x] Create `Model/Activities/Activities.md`, `Model/Agents/Agents.md`, `Model/Conventions/Conventions.md`, `Model/Processes/Processes.md` and `Model/Tools/Tools.md`, then `Model/Model.md`.
+- [x] Create `Realisation/Realisation.md`, then `Philosophy/Philosophy.md`, and point [[Pillars]] at the new pillar index.
+- [x] Disambiguate or repair the inbound links listed under Current state so each resolves to exactly one note.
+- [x] Replace the stale `Housekeeping` description in [[Streams]] with the Activity collection.
+- [x] Add an index-note audit step (presence, Overview, one H2 per direct child, Streams navigation agreement) to the Health Check definition and its Claude prompt.
 
 ## Files touched
 
@@ -85,6 +85,42 @@ None. Coordinates with [[KI-ARCADIA-MOD-001-reading-order|MOD-001]] (narrative r
 ## Delegation
 
 Parallel drafting lanes per subtree may draft index notes from the children; the coordinator reviews every note and performs all commits.
+
+---
+
+## Review
+
+### Delivered
+
+The approved boundary: same-name index notes for every `Pillars/Philosophy/` folder that lacked one, built leaf-to-root with no content moves; inbound link repair for the new notes; the Streams navigation correction; and an index-note audit step in Health Check. Narrative chapter notes, reading order and pre-existing link quality are excluded and remain with [[KI-ARCADIA-MOD-001-reading-order|MOD-001]]. Baseline `f517a4743bc56136a3c17903f1a04dfeaa9d0869`.
+
+### Change Summary
+
+- **New index notes (11):** `Philosophy`, `Introduction`, `Introduction/Background`, `Introduction/Concept`, `Model`, `Model/Activities`, `Model/Agents`, `Model/Conventions`, `Model/Processes`, `Model/Tools` and `Realisation`, each `pillars/index` with an `## Overview` and one H2 per direct child; each chapter index introduces its narrative chapter note first.
+- **Links:** [[Pillars]] now points at the Philosophy index; disambiguated the bare `[[Activities]]` and `[[Agents]]` links in `Human.md`, `Claude.md` and `ChatGPT.md`; repaired the stale `Philosophy/Activities` and `Philosophy/Processes` paths in the Admin Activities and Processes indexes. Previously broken links such as `[[Introduction/Introduction]]`, `[[Model/Tools/Tools]]` and `[[Model/Agents/Agents]]` now resolve.
+- **Streams:** [[Streams]] no longer describes the retired Housekeeping area; it points at the Activity collection. `_ISSUES.md` and [[Roadmap]] already agreed with the flat records and are unchanged.
+- **Health Check:** the definition note gains an index note audit bullet and the Claude prompt gains Step 5a covering presence, shape and Streams navigation agreement.
+- **Deviation:** none. Three drafting subagents wrote the nine leaf and chapter indexes; the coordinator wrote `Model` and `Philosophy`, reviewed every note and linked the act indexes to one another.
+
+### Verification
+
+- `find Pillars/Philosophy -type d` with a same-name check reports no folder without an index note.
+- A shape script confirms every new index has `## Overview` and an H2 for each direct child.
+- A shortest-unique suffix resolver finds every new or changed wikilink resolves to exactly one note; the only unresolved links in touched files pre-date this record (see concerns).
+- No em or en dashes in new content; `ki repo audit`, `--skill ki-repo-kb` and `--skill ki-repo-kb-streams` PASS; rumdl hook passes on commit.
+
+### Outstanding concerns
+
+- Pre-existing broken or ambiguous links remain in touched files and are left to MOD-001 link quality: `[[Knowledge Capital/Charter]]`, `[[Island Skill]]` and `[[Live Artifacts]]` in `Tools/Claude/Claude.md`, `[[Claude]]` in `Agents/ChatGPT/ChatGPT.md`, `[[Model/Activities/Linear/Linear]]` in [[Knowledge Islands]], the truncated Integrations link in `Realisation/Arcadia/Arcadia.md`, and two stale paths in `AGENTS.md` (`Structure/Library/Library`, `Frontmatter/Tags`).
+- Some pre-existing index notes (`Notes`, `Tending`, `Constitutional`, `Obsidian/Templates`, Claude `Tending`) do not carry one H2 per direct child; the new Health Check step will surface them on its next run.
+
+### Post-change review
+
+The goal - every Philosophy folder carries a standard index note and roadmap navigation is coherent and covered by maintenance - is met. Scope held to new notes plus targeted link repairs, so regression risk is limited to link resolution, which was checked mechanically. Ready for acceptance.
+
+### Mini recap
+
+Eleven index notes created, eight link repairs, Streams navigation corrected, Health Check extended; audits pass. Learning route: the Health Check prompt still assumes a Cowork `Knowledge Capital` path in Step 0, worth a later tending review.
 
 ---
 
