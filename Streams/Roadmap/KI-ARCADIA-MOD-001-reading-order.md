@@ -6,14 +6,14 @@ title: Reading order
 theme: knowledge-model
 tags:
   - topic/knowledge-islands
-status: awaiting-review
+status: done
 priority: medium
 horizon: next
 blocks: []
 blocked_by: []
 baseline_ref: 5c65c03d9e7b1b3e6aa4405b26a25e607d21d0a9
 created_at: 2026-04-29T00:09:30Z
-updated_at: 2026-10-04T19:10:00Z
+updated_at: 2026-10-04T21:30:00Z
 author: Written with Claude
 ---
 
@@ -116,6 +116,10 @@ The pillar now reads in one order from a single entry point, and its link graph 
 Entry point refreshed, roughly 70 links repaired, prompt notes standardised, storyboard labelled historical; audits pass. Learning route: duplicate note names between activity definitions and Claude prompts make bare links fragile, so prefer path-qualified links for those names.
 
 ---
+
+## Done
+
+Accepted 2026-10-04 on the review packet above after an independent Fable review returned ACCEPT (no unresolved or ambiguous note links across Pillars/Philosophy; reading order follows Introduction, Model, Realisation). Decided by the Fable reviewer under delegated autonomy (2026-10-04), reversible.
 
 ## Discussion
 

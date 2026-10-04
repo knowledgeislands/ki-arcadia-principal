@@ -8,14 +8,14 @@ tags:
   - topic/knowledge-islands
   - topic/knowledge-management
   - topic/conventions
-status: awaiting-review
+status: done
 priority: low
 horizon: next
 blocks: []
 blocked_by: []
 baseline_ref: 7a9ce716b2816883c947a2ddeb597753b91be82b
 created_at: 2026-06-29T17:12:25Z
-updated_at: 2026-10-04T20:10:00Z
+updated_at: 2026-10-04T21:30:00Z
 ---
 
 # Conventions: Make Implicit Explicit Proposal
@@ -134,6 +134,10 @@ The three named conventions now carry their reasons at the point of assertion, s
 Rationale was added to five notes, the taxonomy is now reachable, the lifecycle reasons are explained and OPS-001 is released; the audits pass. Learning route: the remaining Calendar versus `-/_DIGESTS/` conflict is an owner routing decision.
 
 ---
+
+## Done
+
+Accepted 2026-10-04 on the review packet above after an independent Fable review returned ACCEPT (convention rationale added without changing routing; note_type and retired handoff handled; links resolve, no dashes added). Decided by the Fable reviewer under delegated autonomy (2026-10-04), reversible.
 
 ## Discussion
 

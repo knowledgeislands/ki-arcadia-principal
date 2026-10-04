@@ -6,14 +6,14 @@ title: Index note review
 theme: governance
 tags:
   - topic/knowledge-islands
-status: awaiting-review
+status: done
 priority: medium
 horizon: next
 blocks: []
 blocked_by: []
 baseline_ref: f517a4743bc56136a3c17903f1a04dfeaa9d0869
 created_at: 2026-04-28T00:13:43Z
-updated_at: 2026-10-04T18:30:00Z
+updated_at: 2026-10-04T21:30:00Z
 author: Written with Claude
 ---
 
@@ -123,6 +123,10 @@ The goal - every Philosophy folder carries a standard index note and roadmap nav
 Eleven index notes created, eight link repairs, Streams navigation corrected, Health Check extended; audits pass. Learning route: the Health Check prompt still assumes a Cowork `Knowledge Capital` path in Step 0, worth a later tending review.
 
 ---
+
+## Done
+
+Accepted 2026-10-04 on the review packet above after an independent Fable review returned ACCEPT (all Philosophy index notes present with prose Overview and one section per child; link repairs resolve; audit PASS). Decided by the Fable reviewer under delegated autonomy (2026-10-04), reversible.
 
 ## Discussion
 

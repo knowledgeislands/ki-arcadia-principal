@@ -6,14 +6,14 @@ title: Authoring layers
 theme: governance
 tags:
   - topic/knowledge-islands
-status: awaiting-review
+status: done
 priority: medium
 horizon: next
 blocks: []
 blocked_by: []
 baseline_ref: aa0a9b6881c050f9fcd1f436a6b61245bc15a4a0
 created_at: 2026-04-30T07:53:50Z
-updated_at: 2026-10-04T19:40:00Z
+updated_at: 2026-10-04T21:30:00Z
 author: Written with Claude
 ---
 
@@ -111,6 +111,10 @@ Reader-facing notes outside the framework no longer carry layer labels, so the g
 Nine notes de-labelled, eight Scheduled Task Audit lines recased, stale group list fixed; Authoring Guidelines restructure held for owner. Learning route: the owner's April rewrite of the framework diverged from this record's five-name vocabulary, so re-read the target note before planning a terminology pass.
 
 ---
+
+## Done
+
+Accepted 2026-10-04 on the review packet above after an independent Fable review returned ACCEPT (implicit authoring layers rewritten with resolving links; remaining Prompt note wording confined to the fenced prompt block as decided). Decided by the Fable reviewer under delegated autonomy (2026-10-04), reversible.
 
 ## Discussion
 
