@@ -10,7 +10,7 @@ blocks: []
 blocked_by: []
 baseline_ref: 95f85a1a14ab9ff2834fe6d4f32355754e6de708
 created_at: 2026-09-26T16:22:01Z
-updated_at: 2026-10-04T10:41:57Z
+updated_at: 2026-10-04T11:00:23Z
 ---
 
 # Route Deferred MCP and Tools Findings to Their Owners
@@ -42,12 +42,17 @@ This record changes no receiving repository and does not authorise live MCP oper
 
 Deduplication found no existing receiver roadmap or trade record for the three live concerns. GSuite captured `MCP-GSUITE-FND-007` in `0f61e97`, M365 captured `MCP-M365-FND-006` in `06c50a4`, and Notion Mirror captured `MCP-NOTION-TOOL-009` in `31a70e8`. Each receiver first committed its issue-ledger reservation separately, then published a `triage` / `draft` record citing this Arcadia origin. These captures grant no adoption, priority, readiness, or implementation authority.
 
+## Shared follow-on
+
+The full rubric comparison identified one narrow Harness standards gap for reachable authentication recovery and complete-operation dry-run semantics. `KI-HARNESS-GOV-134` now owns that proposal as Triage; it does not replace the three receiver fixes. Git Audit separately captured `MCP-GIT-FND-005` to pilot the existing `modern-v2-core` profile. Its receiver adoption waits for the independently verified projection-ancestor repair in `KI-HARNESS-GOV-133`; neither item grants fleet-wide migration authority. Current tool-name catalogues match registration, so a mandatory generator is not justified by this evidence.
+
 ## Steps
 
 - [x] Recheck the historical observations against current receiver source, fixture evidence, and known fix commits.
 - [x] Distinguish resolved or unsupported claims from reproduced live issues without deleting their history.
 - [x] Deduplicate live findings against each receiver's roadmap and trade records; capture only uncovered substantive work in receiver-owned Triage with an Arcadia origin reference.
-- [ ] Review the catalogue-check and legacy-fallback policy questions against the full skill rubrics and receiver implementations before proposing any shared change.
+- [x] Compare catalogue accuracy, recovery, and dry-run findings with the full skill rubrics and receiver implementations; capture the narrow standard gap in `KI-HARNESS-GOV-134`.
+- [ ] Gather client compatibility evidence before proposing a shared `legacy: 'serve'` retirement policy.
 - [x] Record reciprocal receiver references in this ledger and each receiver Triage record.
 - [ ] Present Arcadia's routing packet for its own review and acceptance.
 
@@ -69,7 +74,7 @@ This record does not block `KI-ARCADIA-ECO-003` or the receiver approvals alread
 
 ## Escalation points
 
-The owner should settle catalogue generation or verification and the eventual `legacy: 'serve'` policy only after the stated rubric and client evidence is assembled. Neither question is an automatic per-repository conformance fix.
+The current catalogue evidence supports receiver-local equality checks; it does not require an estate-wide generator decision. Any later generator proposal should show maintenance value beyond those checks. The eventual `legacy: 'serve'` policy needs observed client compatibility evidence before an owner decision. Neither question is an automatic per-repository conformance fix.
 
 ## Governance
 

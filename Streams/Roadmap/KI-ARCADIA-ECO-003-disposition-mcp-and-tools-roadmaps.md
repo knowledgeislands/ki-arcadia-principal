@@ -10,7 +10,7 @@ blocks: []
 blocked_by: []
 baseline_ref: 95f85a1a14ab9ff2834fe6d4f32355754e6de708
 created_at: 2026-09-26T16:22:01Z
-updated_at: 2026-10-04T10:41:57Z
+updated_at: 2026-10-04T11:00:23Z
 ---
 
 # Disposition the MCP and Tools Roadmap Backlog
@@ -62,7 +62,7 @@ The Done commit contains the receiver's approval and disposition evidence. The l
 | Repository | Draft records |
 | --- | ---: |
 | `mcp-acquire-whatsapp` | 2 |
-| `mcp-git-audit` | 4 |
+| `mcp-git-audit` | 5 |
 | `mcp-gsuite` | 5 |
 | `mcp-housekeeping-chatgpt` | 0 |
 | `mcp-housekeeping-claude` | 0 |
@@ -72,15 +72,15 @@ The Done commit contains the receiver's approval and disposition evidence. The l
 | `mcp-m365` | 4 |
 | `tools-git-almanac` | 0 |
 | `tools-mgit` | 0 |
-| **Total** | **21** |
+| **Total** | **22** |
 
-The eighteen previously retained MCP records and three newly captured `KI-ARCADIA-ECO-004` findings are all drafts. The two tools repositories named by this coordination record retain no roadmap records.
+The eighteen previously retained MCP records, three newly captured `KI-ARCADIA-ECO-004` findings, and Git Audit's shared-utility pilot `MCP-GIT-FND-005` are all drafts. The two tools repositories named by this coordination record retain no roadmap records.
 
 ## Steps
 
 - [x] Re-ground all twenty-one records against their receiver Git histories and confirm their terminal decisions and later prune commits.
 - [x] Resolve the two historical escalation questions using the accepted receiver evidence.
-- [x] Count retained work in the nine MCP and two tools repositories, including three new Triage captures, without treating it as this record's closure scope.
+- [x] Count retained work in the nine MCP and two tools repositories, including four new Triage captures, without treating it as this record's closure scope.
 - [ ] Review Arcadia's reconciled evidence and accept this coordination record through its own lifecycle.
 
 ## Files touched
