@@ -15,7 +15,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-30T09:55:30Z
-updated_at: 2026-08-18T13:08:06Z
+updated_at: 2026-10-04T12:00:40Z
 author: Written with Claude
 ---
 
@@ -59,3 +59,9 @@ None.
 ## Governance
 
 This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.
+
+---
+
+## Blocker (2026-10-04)
+
+Not shaped to Ready during the 2026-10-04 delegated roadmap push. The record assumes a `Tools/Claude/Activities/` prompt library and Cowork scheduled tasks; no `Tools/` folder exists, Activities now live in `Admin/Operations/Activities/`, and scheduled automation is separately proposed in `KI-ARCADIA-OPS-008`. The owner needs to decide which phases still apply before it can be re-scoped.

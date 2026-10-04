@@ -13,7 +13,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T18:32:31Z
-updated_at: 2026-08-18T13:08:06Z
+updated_at: 2026-10-04T12:00:40Z
 author: Written with Claude
 ---
 
@@ -138,3 +138,9 @@ For Soft violations that are intentionally retained, the note carrying the excep
 ## Adherence
 
 This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.
+
+---
+
+## Blocker (2026-10-04)
+
+Not shaped to Ready during the 2026-10-04 delegated roadmap push. The record predates the Admin-zone migration: its planned activity location `Pillars/Admin/Governance/Activities/` no longer exists (Activities now live in `Admin/Operations/Activities/`), and the Governance link points at the former `Philosophy/Model/Processes/` Enactment Process. The design also needs owner decisions on the rule set and severities before execution Steps can be written. Re-ground with the owner before planning.
