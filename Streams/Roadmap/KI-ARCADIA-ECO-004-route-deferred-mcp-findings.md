@@ -5,12 +5,12 @@ area: ECO
 title: Route deferred MCP and tools findings to their owners
 theme: ecosystem-coordination
 horizon: next
-status: draft
+status: awaiting-review
 blocks: []
 blocked_by: []
 baseline_ref: 95f85a1a14ab9ff2834fe6d4f32355754e6de708
 created_at: 2026-09-26T16:22:01Z
-updated_at: 2026-10-04T11:00:23Z
+updated_at: 2026-10-04T11:59:03Z
 ---
 
 # Route Deferred MCP and Tools Findings to Their Owners
@@ -27,16 +27,20 @@ The original findings were reports from bounded delivery lanes, not verified def
 
 This record changes no receiving repository and does not authorise live MCP operations, publishing, or a shared utility migration. Authentication persists tokens in GSuite and M365, so its write annotation remains truthful. Recovery guidance should explain how an operator reaches the required tier. A `--dry-run` investigation must use mocked roots and mutation calls, never a real Notion workspace.
 
+## Current state
+
+Re-grounded on 2026-10-04 and shaped to Ready under the owner's delegated authority for the estate roadmap push. Reconciliation, deduplication, receiver intake and the shared Harness follow-on are complete and evidenced below. The only remaining open question, the `legacy: 'serve'` retirement policy, needs client compatibility evidence that this routing ledger cannot supply, so it is carried by its own Triage record, [[KI-ARCADIA-ECO-009-legacy-serve-fallback-policy|KI-ARCADIA-ECO-009]].
+
 ## Reconciled findings
 
-- **Live — authentication recovery, M365 and GSuite.** At default `read`, a synthetic 401 points to `m365_auth_start` or `gsuite_auth_start`, yet each is registered as a write tool and absent from that tier. Fixture-only registration reproduced the mismatch at M365 `8d7d09d7e9a1` and GSuite `f9ab8d400806`. Route reachable recovery instructions to both owners; do not relabel token-persisting authentication as read-only.
-- **Live — Notion Mirror publish dry-run.** `roots publish --dry-run` parses the flag but the publish branches do not consume it and can still call mutating touch/update operations. This is more serious than the original “silent no-op” description. Source evidence is `src/cli/cli.ts` at `4774ab686f84`; a mocked CLI reproduction is still needed before a receiver fix. No live publish was run.
-- **Live — GSuite authentication commands.** Startup guidance still names `server:auth:dev` and `server:auth:start`, while package scripts use the `ki:` prefix. Source evidence is `src/main/auth-info/index.ts` and `package.json` at `f9ab8d400806`. This can be scoped with GSuite's recovery-guidance fix.
-- **Partly resolved — tool catalogues.** Current README name sets match registration and smoke inventories in GSuite (49), Claude housekeeping (44), M365 (44), and Git Audit (12). The historical missing-tool counts are no longer a defect. GSuite's access-tier prose remains inaccurate at `f9ab8d400806`. Generated or checked catalogues remain a separate maintenance decision, subject to full rubric and receiver review.
-- **Resolved — npm badges and M365 installation claim.** Git Audit removed its dead badge in `171ac88`; KBFS did so in `b63fd39`. Fresh registry metadata checks returned 404 for the GSuite and M365 badge targets, so those owners removed their badges in `9f290cd` and `cdd8bf2`. M365 also corrected its published-package installation claim in `60bc8c1`. This evidence does not establish that every `@knowledgeislands` package is unpublished; registry publication is outside this record's scope.
-- **Resolved or unsupported — four KBFS claims.** The root-contract test passes, coverage upload was corrected in `6a4991b`, and the current guides and package minimum agree. The notes module has a public export and `createFolder` is used by an MCP tool, so the blanket dead-code claim is unsupported. No receiver defect should be created from these claims without new evidence.
-- **Resolved in source — tools-ki guide cycle.** Local guides and README routes replaced the circular source links in `03fe090`; current source at `ba0e68a690d1` contains no old guidance links in the reviewed surfaces. Deployed website redirects were not checked and should not be inferred from this source result.
-- **Open policy question — legacy serve fallback.** Six migrated servers retain `legacy: 'serve'`, and the Harness transition contract permits it. A retirement decision needs observed client compatibility evidence; retention is not a conformance defect.
+- **Live - authentication recovery, M365 and GSuite.** At default `read`, a synthetic 401 points to `m365_auth_start` or `gsuite_auth_start`, yet each is registered as a write tool and absent from that tier. Fixture-only registration reproduced the mismatch at M365 `8d7d09d7e9a1` and GSuite `f9ab8d400806`. Route reachable recovery instructions to both owners; do not relabel token-persisting authentication as read-only.
+- **Live - Notion Mirror publish dry-run.** `roots publish --dry-run` parses the flag but the publish branches do not consume it and can still call mutating touch/update operations. This is more serious than the original "silent no-op" description. Source evidence is `src/cli/cli.ts` at `4774ab686f84`; a mocked CLI reproduction is still needed before a receiver fix. No live publish was run.
+- **Live - GSuite authentication commands.** Startup guidance still names `server:auth:dev` and `server:auth:start`, while package scripts use the `ki:` prefix. Source evidence is `src/main/auth-info/index.ts` and `package.json` at `f9ab8d400806`. This can be scoped with GSuite's recovery-guidance fix.
+- **Partly resolved - tool catalogues.** Current README name sets match registration and smoke inventories in GSuite (49), Claude housekeeping (44), M365 (44), and Git Audit (12). The historical missing-tool counts are no longer a defect. GSuite's access-tier prose remains inaccurate at `f9ab8d400806`. Generated or checked catalogues remain a separate maintenance decision, subject to full rubric and receiver review.
+- **Resolved - npm badges and M365 installation claim.** Git Audit removed its dead badge in `171ac88`; KBFS did so in `b63fd39`. Fresh registry metadata checks returned 404 for the GSuite and M365 badge targets, so those owners removed their badges in `9f290cd` and `cdd8bf2`. M365 also corrected its published-package installation claim in `60bc8c1`. This evidence does not establish that every `@knowledgeislands` package is unpublished; registry publication is outside this record's scope.
+- **Resolved or unsupported - four KBFS claims.** The root-contract test passes, coverage upload was corrected in `6a4991b`, and the current guides and package minimum agree. The notes module has a public export and `createFolder` is used by an MCP tool, so the blanket dead-code claim is unsupported. No receiver defect should be created from these claims without new evidence.
+- **Resolved in source - tools-ki guide cycle.** Local guides and README routes replaced the circular source links in `03fe090`; current source at `ba0e68a690d1` contains no old guidance links in the reviewed surfaces. Deployed website redirects were not checked and should not be inferred from this source result.
+- **Open policy question - legacy serve fallback.** Six migrated servers retain `legacy: 'serve'`, and the Harness transition contract permits it. A retirement decision needs observed client compatibility evidence; retention is not a conformance defect. The question now lives in [[KI-ARCADIA-ECO-009-legacy-serve-fallback-policy|KI-ARCADIA-ECO-009]].
 
 ## Receiver intake
 
@@ -52,13 +56,15 @@ The full rubric comparison identified one narrow Harness standards gap for reach
 - [x] Distinguish resolved or unsupported claims from reproduced live issues without deleting their history.
 - [x] Deduplicate live findings against each receiver's roadmap and trade records; capture only uncovered substantive work in receiver-owned Triage with an Arcadia origin reference.
 - [x] Compare catalogue accuracy, recovery, and dry-run findings with the full skill rubrics and receiver implementations; capture the narrow standard gap in `KI-HARNESS-GOV-134`.
-- [ ] Gather client compatibility evidence before proposing a shared `legacy: 'serve'` retirement policy.
+- [x] Carve the client compatibility evidence and any shared `legacy: 'serve'` retirement policy into [[KI-ARCADIA-ECO-009-legacy-serve-fallback-policy|KI-ARCADIA-ECO-009]], leaving this record a closed routing ledger.
 - [x] Record reciprocal receiver references in this ledger and each receiver Triage record.
-- [ ] Present Arcadia's routing packet for its own review and acceptance.
+- [x] Present Arcadia's routing packet for its own review and acceptance.
 
 ## Files touched
 
 - `Streams/Roadmap/KI-ARCADIA-ECO-004-route-deferred-mcp-findings.md`
+- `Streams/Roadmap/KI-ARCADIA-ECO-009-legacy-serve-fallback-policy.md` (new Triage record)
+- `Streams/Roadmap/_ISSUES.md` (ECO high-water mark 009)
 
 Receiver records, if justified, are authored and governed in their own repositories.
 
@@ -74,7 +80,40 @@ This record does not block `KI-ARCADIA-ECO-003` or the receiver approvals alread
 
 ## Escalation points
 
-The current catalogue evidence supports receiver-local equality checks; it does not require an estate-wide generator decision. Any later generator proposal should show maintenance value beyond those checks. The eventual `legacy: 'serve'` policy needs observed client compatibility evidence before an owner decision. Neither question is an automatic per-repository conformance fix.
+The current catalogue evidence supports receiver-local equality checks; it does not require an estate-wide generator decision. Any later generator proposal should show maintenance value beyond those checks. The eventual `legacy: 'serve'` policy needs observed client compatibility evidence before an owner decision; [[KI-ARCADIA-ECO-009-legacy-serve-fallback-policy|KI-ARCADIA-ECO-009]] carries it. Neither question is an automatic per-repository conformance fix.
+
+## Review
+
+### Delivered
+
+A closed Arcadia routing ledger for the findings deferred from the 2026-09-22 MCP and tools deliveries: every historical observation is dispositioned as live, partly resolved, resolved or unsupported, or an open policy question, and each live finding has a receiver-owned Triage record. Excluded: any receiver change, live MCP operation, publication, and the `legacy: 'serve'` policy itself.
+
+### Change Summary
+
+- Earlier work on this record (from baseline `95f85a1`) reconciled the findings and recorded receiver intake: `MCP-GSUITE-FND-007` (`0f61e97`), `MCP-M365-FND-006` (`06c50a4`), `MCP-NOTION-TOOL-009` (`31a70e8`), plus the shared follow-on `KI-HARNESS-GOV-134`.
+- This delivery added `## Current state`, carved the open `legacy: 'serve'` question into new Triage record [[KI-ARCADIA-ECO-009-legacy-serve-fallback-policy|KI-ARCADIA-ECO-009]] (`1f14837`, ECO high-water mark 009), closed the two remaining Steps, and replaced pre-existing em-dashes and curly quotes with house-style ASCII.
+
+### Verification
+
+- Every live finding names a receiver record or documented deduplication result; every resolved claim retains its fix commit or counter-evidence.
+- [[KI-ARCADIA-ECO-009-legacy-serve-fallback-policy|KI-ARCADIA-ECO-009]] exists as `horizon: triage`, `status: draft`, citing this record as its origin.
+- `ki repo audit` passed on all skills after the change.
+
+### Outstanding concerns
+
+The Notion Mirror dry-run still needs a mocked behavioural reproduction; that sits with the receiver's `MCP-NOTION-TOOL-009`, not this ledger. Receiver captures carry no adoption or priority.
+
+### Post-change review
+
+Scope held to Arcadia's routing record and its new Triage capture; no receiving repository changed. Splitting the policy question keeps it visible without holding a finished routing ledger open on unavailable evidence.
+
+### Mini recap
+
+Deferred MCP and tools findings are routed or dispositioned, and the one open policy question has its own Triage home. No learning promoted.
+
+## Discussion
+
+Receivers decide adoption and priority for their own records. Whether the `legacy: 'serve'` fallback is retired is a separate owner decision under [[KI-ARCADIA-ECO-009-legacy-serve-fallback-policy|KI-ARCADIA-ECO-009]].
 
 ## Governance
 
