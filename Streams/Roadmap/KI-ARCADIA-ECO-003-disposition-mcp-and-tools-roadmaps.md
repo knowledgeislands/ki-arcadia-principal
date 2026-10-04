@@ -5,12 +5,12 @@ area: ECO
 title: Disposition the MCP and tools roadmap backlog
 theme: ecosystem-coordination
 horizon: now
-status: ready
+status: awaiting-review
 blocks: []
 blocked_by: []
-baseline_ref: 95f85a1a14ab9ff2834fe6d4f32355754e6de708
+baseline_ref: b81116d407c4b1765e0d877060a8926861faace2
 created_at: 2026-09-26T16:22:01Z
-updated_at: 2026-10-04T11:41:51Z
+updated_at: 2026-10-04T11:42:09Z
 ---
 
 # Disposition the MCP and Tools Roadmap Backlog
@@ -85,7 +85,7 @@ The eighteen previously retained MCP records, three newly captured `KI-ARCADIA-E
 - [x] Re-ground all twenty-one records against their receiver Git histories and confirm their terminal decisions and later prune commits.
 - [x] Resolve the two historical escalation questions using the accepted receiver evidence.
 - [x] Count retained work in the nine MCP and two tools repositories, including four new Triage captures, without treating it as this record's closure scope.
-- [ ] Re-verify the twenty-one Done and prune commits and the retained draft count, then prepare the delivery review packet for independent review and `ki-accept`.
+- [x] Re-verify the twenty-one Done and prune commits and the retained draft count, then prepare the delivery review packet for independent review and `ki-accept`.
 
 ## Files touched
 
@@ -110,3 +110,33 @@ The receiver decisions and pruning are complete. Arcadia's remaining action is t
 ## Governance
 
 This roadmap record adheres to [[Enactment Process]]. Arcadia reports receiver decisions from their Git evidence and makes no disposition on their behalf.
+
+## Review
+
+### Delivered
+
+Arcadia's own roll-up of the twenty-one receiver dispositions, re-verified from immutable baseline `b81116d407c4b1765e0d877060a8926861faace2`. Excluded: any receiver roadmap, ledger or Git change, and the deferred findings owned by `KI-ARCADIA-ECO-004`.
+
+### Change Summary
+
+Only `Streams/Roadmap/KI-ARCADIA-ECO-003-disposition-mcp-and-tools-roadmaps.md` changed: a Current state section, the final Step reworded to a bounded re-verification and review-packet step, lifecycle metadata, and this packet. No receiver file was touched.
+
+### Verification
+
+- For all twenty-one table rows, the Done commit's record blob reads `status: done`, the listed prune commit deletes that record (`D`), and the Done commit is an ancestor of the prune commit. All passed on 2026-10-04.
+- Retained draft counts in the receiver checkouts re-counted as 2, 5, 5, 1, 2, 3 and 4 (total 22), matching the Current retained work table.
+- `ki repo audit --skill ki-work` and `ki repo audit --skill ki-repo-kb-streams` passed.
+
+### Outstanding concerns
+
+None for this roll-up. The four `ki-repo-mcp` warnings recorded under Verify remain receiver-owned judgements and do not reopen any disposition.
+
+### Post-change review
+
+The goal - reconcile Arcadia's coordination record with receiver evidence - is met without scope expansion. Regression risk is nil because only this record changed. Ready for acceptance.
+
+### Mini recap
+
+Re-verified twenty-one receiver Done and prune commits plus the twenty-two retained drafts; no concerns. No learning route is proposed beyond the existing `KI-ARCADIA-ECO-004` follow-on.
+
+## Discussion
