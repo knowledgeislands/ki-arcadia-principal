@@ -53,5 +53,3 @@ The operational mechanics - the full status lifecycle, roadmap-record anatomy, r
 ## References
 
 - [SDR-KI-ARCADIA-003: The Governance of an Island](SDR-KI-ARCADIA-003-the-governance-of-an-island.md)
-- [The Cycle of Knowledge](../../../Pillars/Knowledge%20Islands/Introduction/Background/The%20Cycle%20of%20Knowledge/The%20Cycle%20of%20Knowledge.md)
-- [Enactment Process](../../../Pillars/Knowledge%20Islands/Model/Processes/Enactment%20Process/Enactment%20Process.md)

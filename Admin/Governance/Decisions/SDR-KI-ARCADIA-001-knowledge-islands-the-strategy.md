@@ -42,9 +42,3 @@ The Knowledge Island of Knowledge Islands — **Arcadia** — is the first reali
 - Arcadia holds the canonical, portable definition of the model. New islands derive from Arcadia, not from one another.
 - Each domain is introduced by adding an island, not by extending an existing one. Islands are independent: their own repos, their own governance, their own territory.
 - The strategy is long-horizon and directional. Individual islands are introduced by separate decisions as each domain matures.
-
-## References
-
-- [What is Knowledge Islands](../../../Pillars/Knowledge%20Islands/Introduction/Background/What%20is%20Knowledge%20Islands/What%20is%20Knowledge%20Islands.md)
-- [Territories and Archipelagos](../../../Pillars/Knowledge%20Islands/Introduction/Concept/Territories%20and%20Archipelagos/Territories%20and%20Archipelagos.md)
-- [Knowledge Islands](../../../Pillars/Knowledge%20Islands/Knowledge%20Islands.md)

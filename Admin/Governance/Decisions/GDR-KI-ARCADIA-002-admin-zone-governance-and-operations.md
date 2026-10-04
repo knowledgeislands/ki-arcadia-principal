@@ -34,7 +34,7 @@ Decision Records live at `Admin/Governance/Decisions/`. The path `Admin/Decision
 
 - All KI KB repos conforming to this pattern should adopt the `Admin/Governance/` and `Admin/Operations/` structure.
 - The `knowledgeislands-decision-records` skill's placement rule for KB repos is updated: `Admin/Governance/Decisions/` is the canonical path.
-- Enactment Process documentation and activity records are future work for migration to `Admin/Operations/`.
+- Enactment Process documentation and Activity records live under `Admin/Operations/`.
 
 ## References
 

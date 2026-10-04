@@ -5,12 +5,12 @@ area: GOV
 title: Reconcile decision record currency
 theme: governance
 horizon: now
-status: ready
+status: awaiting-review
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: 5d6c7abddbc5a7f6fb8625722bd958a3d268a739
 created_at: 2026-09-14T22:07:41Z
-updated_at: 2026-10-04T11:55:24Z
+updated_at: 2026-10-04T11:56:44Z
 ---
 
 # Reconcile Decision Record Currency
@@ -41,9 +41,9 @@ The Admin-zone migration in `GDR-KI-ARCADIA-002` is enacted: the Enactment Proce
 
 ## Steps
 
-- [ ] Remove the seven non-resolving internal Knowledge Base links from the `## References` sections of `SDR-KI-ARCADIA-001`, `SDR-KI-ARCADIA-003` and `SDR-KI-ARCADIA-004`, keeping sibling Decision Record links; remove an emptied References section entirely.
-- [ ] Restate the final `GDR-KI-ARCADIA-002` Consequence in the present tense, preserving its meaning.
-- [ ] Run the verification below and prepare the review packet.
+- [x] Remove the seven non-resolving internal Knowledge Base links from the `## References` sections of `SDR-KI-ARCADIA-001`, `SDR-KI-ARCADIA-003` and `SDR-KI-ARCADIA-004`, keeping sibling Decision Record links; remove an emptied References section entirely.
+- [x] Restate the final `GDR-KI-ARCADIA-002` Consequence in the present tense, preserving its meaning.
+- [x] Run the verification below and prepare the review packet.
 
 ## Files touched
 
@@ -62,6 +62,37 @@ The Admin-zone migration in `GDR-KI-ARCADIA-002` is enacted: the Enactment Proce
 ## Dependencies / blocks
 
 None.
+
+## Review
+
+### Delivered
+
+The bounded currency pass from immutable baseline `5d6c7abddbc5a7f6fb8625722bd958a3d268a739`: seven non-resolving internal links removed from Decision Record References sections and one `GDR-KI-ARCADIA-002` Consequence restated in the present tense. Excluded: any change to decision substance, other Decision Records, or broader editorial work.
+
+### Change Summary
+
+- `SDR-KI-ARCADIA-001`: removed three internal links; its References section, left empty, was removed.
+- `SDR-KI-ARCADIA-003` and `SDR-KI-ARCADIA-004`: removed two internal links each; their sibling Decision Record links remain.
+- `GDR-KI-ARCADIA-002`: "Enactment Process documentation and activity records are future work for migration to `Admin/Operations/`" now reads "Enactment Process documentation and Activity records live under `Admin/Operations/`."
+- The original count of ten fell to seven because `07afdd9` had already corrected `SDR-KI-ARCADIA-002`.
+
+### Verification
+
+- Every remaining References link in the four records resolves to an existing sibling Decision Record (`SDR-KI-ARCADIA-002`, `SDR-KI-ARCADIA-003`, `GDR-KI-ARCADIA-001`); no internal Knowledge Base link remains.
+- `GDR-KI-ARCADIA-002` contains no "future" wording.
+- `ki repo audit` passed on all 23 skills.
+
+### Outstanding concerns
+
+`GDR-KI-ARCADIA-002` still uses em-dashes and names the former `knowledgeislands-decision-records` skill; both sit outside this record's boundary against broader editorial rewriting and are left for a separate editorial pass.
+
+### Post-change review
+
+Scope held to the recorded boundary. Each removed link's concept remains named in its record body, so no decision lost a disclosed dependency. Regression risk is minimal: only reference lists and one Consequence line changed. Ready for acceptance.
+
+### Mini recap
+
+Seven stale References links removed and one migration Consequence made present-tense; audits pass. Possible learning route: a `ki-decision-records` checker rule for non-decision References links, not promoted automatically.
 
 ## Discussion
 

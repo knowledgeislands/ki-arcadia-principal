@@ -43,5 +43,3 @@ Each island's specific realisation of this model is held in its `Admin/` zone: t
 ## References
 
 - [SDR-KI-ARCADIA-002: The Home of Knowledge](SDR-KI-ARCADIA-002-the-home-of-knowledge.md)
-- [Governance](../../../Pillars/Knowledge%20Islands/Introduction/Concept/Governance/Governance.md)
-- [How an Island Takes Shape](../../../Pillars/Knowledge%20Islands/Introduction/Concept/How%20an%20Island%20Takes%20Shape.md)
