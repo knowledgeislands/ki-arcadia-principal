@@ -35,4 +35,4 @@ Useful evidence would show, for each supported runtime and binding surface, whet
 
 ## Governance
 
-This roadmap record adheres to [[Admin/Operations/Processes/Enactment Process|Enactment Process]].
+This roadmap record adheres to [[Enactment Process]].

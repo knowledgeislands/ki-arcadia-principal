@@ -5,12 +5,12 @@ area: ECO
 title: Route deferred MCP and tools findings to their owners
 theme: ecosystem-coordination
 horizon: next
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: 95f85a1a14ab9ff2834fe6d4f32355754e6de708
 created_at: 2026-09-26T16:22:01Z
-updated_at: 2026-10-04T11:59:03Z
+updated_at: 2026-10-04T12:03:19Z
 ---
 
 # Route Deferred MCP and Tools Findings to Their Owners
@@ -110,6 +110,10 @@ Scope held to Arcadia's routing record and its new Triage capture; no receiving 
 ### Mini recap
 
 Deferred MCP and tools findings are routed or dispositioned, and the one open policy question has its own Triage home. No learning promoted.
+
+## Done
+
+Accepted on 2026-10-04 under the owner's delegated roadmap authority after an independent review returned ACCEPT. The reviewer confirmed the six-part packet, all Steps complete, the carve-out into KI-ARCADIA-ECO-009 as an honest scope change, the six servers retaining `legacy: 'serve'`, the cited receiver records, and a passing `ki repo audit` on 23 skills.
 
 ## Discussion
 
