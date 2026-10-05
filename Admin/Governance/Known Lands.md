@@ -19,7 +19,7 @@ Any island may maintain its own chart of useful topics, sources and destinations
 
 ## Internal inventory
 
-The current inventory contains 22 canonical KI repository identities: Arcadia and 21 member islands. This owner-approved inventory agrees with the inspected KIS owner and direct-member declaration in `.ki.toml`. That working-set declaration is evidence for reconciliation; Agora membership itself grants no territorial authority.
+The current inventory contains 21 canonical KI repository identities: Arcadia and 20 member islands. This owner-approved inventory agrees with the inspected KIS owner and direct-member declaration in `.ki.toml`. That working-set declaration is evidence for reconciliation; Agora membership itself grants no territorial authority.
 
 Each island owns its accepted knowledge or executable behaviour within the shared governance. The roles below distinguish Capital, specialist knowledge, reusable capabilities, products, integrations, tools and delivery without turning a product boundary into another territory.
 
@@ -29,7 +29,6 @@ Each island owns its accepted knowledge or executable behaviour within the share
 | [homebrew-tap][homebrew-tap] | Delivery | Homebrew distribution |
 | [ki-agentic-harness][ki-agentic-harness] | Capability | Reusable agentic contracts |
 | [ki-arcadia-principal][ki-arcadia-principal] | Capital | KI governance, model and engineering practice |
-| [ki-plugins][ki-plugins] | Delivery | Plugin packaging |
 | [ki-specifications][ki-specifications] | Standards | Portable contracts after V1 |
 | [ki-techne-harness][ki-techne-harness] | Product | Controller and execution fabric |
 | [ki-website][ki-website] | Publication | Public source-labelled website |
@@ -49,6 +48,8 @@ Each island owns its accepted knowledge or executable behaviour within the share
 | [tools-techne][tools-techne] | Tool | Techné operator command |
 
 Arcadia's [[Engineering Practice/Engineering Practice|Engineering Practice]] is the canonical home of Techné's engineering knowledge and decisions. The former source repository, [ki-techne-principal][ki-techne-principal], was retired on 4 October 2026 under [[KI-ARCADIA-ECO-008-disposition-retained-techne-source|ECO-008]]: it is archived read-only as historical evidence, is no longer a member, and holds no live work. The [[Techne Programme Hold]] restricts remote running and remote-environment management across Techné Harness and `tools-techne`. The two implementation products retain independent ownership; local development continues under their repository standards, and knowledge adoption does not itself change services or accept candidates.
+
+The former [ki-plugins][ki-plugins] Claude plugin projection was retired on 5 October 2026 under [[KI-ARCADIA-ECO-010-retire-ki-plugins|ECO-010]] and the harness decision `ADR-KI-HARNESS-015`: it is archived read-only, is no longer a member, and is not a distribution surface. The `ki` CLI installs the harness, and `npx skills add` is the quick skills-only route.
 
 Specifications remains dormant as a normative authority until the overall V1 boundary. The inventory records its membership without representing future standards as current obligations.
 
