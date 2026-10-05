@@ -25,3 +25,5 @@ Activity prompts reference this note to resolve platform-specific configuration 
 | Inbox   | `+/` folder - exclude `+/_Voice Notes/` | (filesystem)    |
 
 No external calendar, task, issue, or email integrations are currently configured for Arcadia. Integrations are added here as they are introduced.
+
+GitHub Apps and automated identities acting on `knowledgeislands` repositories, including the `ki-tools-release-bot` release chain, are organisation infrastructure rather than Arcadia integrations and are recorded in [[GitHub Apps]].
