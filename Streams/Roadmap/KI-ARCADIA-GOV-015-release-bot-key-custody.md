@@ -5,11 +5,12 @@ area: GOV
 title: Record release bot key custody and rotation
 theme: governance
 horizon: now
-status: ready
+status: awaiting-review
 blocks: []
 blocked_by: []
+baseline_ref: bb57d289c18e728b9d2aa0ed6051ffc09722dd33
 created_at: 2026-10-05T13:34:00Z
-updated_at: 2026-10-05T13:34:00Z
+updated_at: 2026-10-05T13:55:00Z
 ---
 
 # Record Release Bot Key Custody and Rotation
@@ -34,18 +35,18 @@ GOV-014 kept the App ID value out of the island alongside secret values. An App 
 
 ## Current state
 
-Planned. Facts are from Kris's brief of 2026-10-05.
+Delivered and awaiting review. Facts are from Kris's brief of 2026-10-05.
 
 ## Steps
 
-- [ ] Overview: narrow the "never in the island" statement to secret values; note that the App ID is a public identifier recorded below.
-- [ ] Attribute table: add App ID 5008264; replace the confirmed and planned installation rows with the actual selected-repository installation (`ki-website`, `homebrew-tap`); add a credential-holders row naming the 7 repositories (`homebrew-tap`, `ki-website`, `tools-ki`, `tools-mgit`, `tools-rig`, `tools-techne`, `tools-git-almanac`) with per-repository, not organisation-level, settings; point key custody at the 1Password item.
-- [ ] Add a `Key custody` subsection: 1Password Personal vault, Secure Note "ki-tools-release-bot private key" with the `.pem` attached and listing the App ID, repositories and rotation steps; key history (2026-09-20 key lost; 2026-10-05 key generated and the old key deleted the same day, leaving the 2026-10-05 key as the only active key).
-- [ ] Add a `Credential holders` explanation: installed repositories versus repositories that only hold credentials to mint a tap-targeted token.
-- [ ] Add a `Key rotation` subsection: generate, update all 7 secrets, delete the old key; `op read "op://Personal/ki-tools-release-bot private key/<file>.pem"` into a shell variable, a non-empty and `BEGIN` check, then pipe to `gh secret set`; the empty-secret trap and its 2026-10-05 cause.
-- [ ] Add a `Verification` note: tap intake run 37317227744 (workflow_dispatch) green with the new key, the `tools-ki` and `tools-techne` formulae already at their latest releases so no pull request was expected, full end-to-end proof awaiting the next immutable tool release (`BREW-010` in `homebrew-tap`).
-- [ ] Update the note's `updated` timestamp.
-- [ ] Run `ki repo audit --progress never` and scan the diff for secret material.
+- [x] Overview: narrow the "never in the island" statement to secret values; note that the App ID is a public identifier recorded below.
+- [x] Attribute table: add App ID 5008264; replace the confirmed and planned installation rows with the actual selected-repository installation (`ki-website`, `homebrew-tap`); add a credential-holders row naming the 7 repositories (`homebrew-tap`, `ki-website`, `tools-ki`, `tools-mgit`, `tools-rig`, `tools-techne`, `tools-git-almanac`) with per-repository, not organisation-level, settings; point key custody at the 1Password item.
+- [x] Add a `Key custody` subsection: 1Password Personal vault, Secure Note "ki-tools-release-bot private key" with the `.pem` attached and listing the App ID, repositories and rotation steps; key history (2026-09-20 key lost; 2026-10-05 key generated and the old key deleted the same day, leaving the 2026-10-05 key as the only active key).
+- [x] Add a `Credential holders` explanation: installed repositories versus repositories that only hold credentials to mint a tap-targeted token.
+- [x] Add a `Key rotation` subsection: generate, update all 7 secrets, delete the old key; `op read "op://Personal/ki-tools-release-bot private key/<file>.pem"` into a shell variable, a non-empty and `BEGIN` check, then pipe to `gh secret set`; the empty-secret trap and its 2026-10-05 cause.
+- [x] Add a `Verification` note: tap intake run 37317227744 (workflow_dispatch) green with the new key, the `tools-ki` and `tools-techne` formulae already at their latest releases so no pull request was expected, full end-to-end proof awaiting the next immutable tool release (`BREW-010` in `homebrew-tap`).
+- [x] Update the note's `updated` timestamp.
+- [x] Run `ki repo audit --progress never` and scan the diff for secret material.
 
 ## Files touched
 
@@ -78,6 +79,37 @@ The rotation procedure lives in [[GitHub Apps]] beside the artefact it governs.
 ### Roadmap
 
 This record carries the plan and review evidence.
+
+## Review
+
+### Delivered
+
+The approved boundary: the `ki-tools-release-bot` section and Overview credential statement of [[GitHub Apps]], plus this record. No App permission, installation, key or peer-repository change was made. Baseline `bb57d289c18e728b9d2aa0ed6051ffc09722dd33`; the resulting commit carries this record at `awaiting-review`.
+
+### Change Summary
+
+- `Admin/Governance/Conventions/Admin Conventions/GitHub Apps.md`: Overview narrowed to secret values, with the App ID noted as a public identifier; attribute table gains App ID 5008264, the actual selected-repository installation (`ki-website`, `homebrew-tap`), the 7 per-repository credential holders and the 1Password custody location, replacing the confirmed and planned installation rows; new `Key custody`, `Credential holders`, `Key rotation` and `Verification` subsections; `updated` advanced.
+- `Streams/Roadmap/_ISSUES.md`: the `GOV` high-water mark was already 015 from the plan commit, so no change was needed.
+- This record: steps checked, review packet added, status advanced.
+
+### Verification
+
+- `ki repo audit --progress never`: PASS.
+- Diff scan for `BEGIN`, `-----`, `ghs_`, `ghp_`, `github_pat` and numerals of 6 or more digits: the only hits are the literal `BEGIN` check in the rotation snippet, App ID 5008264 and run ID 37317227744. No secret value is present.
+- No en or em dashes in the changed note.
+- Every brief fact is present: custody item and vault, key history, the 7 repositories at repository level, the 2-repository installation, rotation order, the `op read` check-then-pipe form, the empty-secret trap and its cause, the run evidence and the `BREW-010` dependency.
+
+### Outstanding concerns
+
+None for this record. End-to-end proof of the release chain remains with `BREW-010` in `homebrew-tap`.
+
+### Post-change review
+
+The note now answers where the key is, which repositories hold it and why, and how to rotate it without repeating the empty-secret failure. Scope held to the planned section. Regression risk is low: one Overview sentence and one table changed, and no conflicting planned-installation claim remains.
+
+### Mini recap
+
+Recorded `ki-tools-release-bot` key custody, credential holders, rotation and verification in [[GitHub Apps]]; audit PASS; no concerns. Learning route: the pipe-guard pattern for `op read` into `gh secret set` may merit a general Engineering Practice note on secret transport, if it recurs.
 
 ## Discussion
 
