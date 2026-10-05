@@ -14,7 +14,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T18:32:31Z
-updated_at: 2026-10-05T08:15:51Z
+updated_at: 2026-10-05T08:45:00Z
 author: Written with Claude
 ---
 
@@ -94,6 +94,8 @@ The templates are not free-standing: the daily template is read and extended by 
 ## Dependencies / blocks
 
 No dependency. Calendar notes created before delivery are not migrated; the new shape applies to notes created afterwards.
+
+[[KI-ARCADIA-OPS-006-workflow-integrations|OPS-006]] also seeds the `Resources/Resources.md` `## Overview` and adds a section to it; whichever record delivers second must merge into, not overwrite, the index created by the other.
 
 ---
 

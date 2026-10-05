@@ -15,7 +15,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T18:32:31Z
-updated_at: 2026-10-05T08:14:47Z
+updated_at: 2026-10-05T08:45:00Z
 author: Written with Claude
 ---
 
@@ -87,6 +87,8 @@ Arcadia's automation today is the Cowork scheduled-task suite declared in the [[
 ## Dependencies / blocks
 
 No local or cross-repository dependency. If a later owner decision adopts either tool, that is a new record that would touch the Charter and possibly the harness complementary-tooling ADR through a handoff.
+
+[[KI-ARCADIA-OPS-004-bullet-journal-support|OPS-004]] also seeds the `Resources/Resources.md` `## Overview` and adds a section to it; whichever record delivers second must merge into, not overwrite, the index created by the other.
 
 ---
 

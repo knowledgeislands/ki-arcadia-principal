@@ -15,7 +15,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T18:32:31Z
-updated_at: 2026-10-05T08:14:47Z
+updated_at: 2026-10-05T08:41:00Z
 author: Written with Claude
 ---
 
@@ -36,7 +36,7 @@ The record was captured in April 2026, before the shared harness matured, as fou
 ## Boundary
 
 - Arcadia work is the mapping and its disposition in this record. No change to `Admin/`, `Pillars/` or `Resources/`.
-- No harness skill change. A genuine gap becomes at most one harness Triage handoff per gap, created at implementation time under the cross-repository choreography in `AGENTS.md`; the harness owns priority and delivery.
+- No harness skill change. A genuine gap becomes at most one work trade per gap to `knowledgeislands/ki-agentic-harness` over the declared work route, prepared at implementation time; Arcadia writes no file in the harness checkout, and the harness owns disposition, priority and delivery.
 - No new scheduled task, model binding change, spend or remote operation under the [[Techne Programme Hold]].
 - No change to user-level configuration (`~/.claude/`, chezmoi).
 
@@ -58,7 +58,7 @@ Checked against the live harness checkout on 2026-10-05:
 ## Steps
 
 - [ ] Re-check each row of the Current state table against the harness at implementation time and record the harness commit inspected.
-- [ ] For the model-routing row, confirm whether `ki-subagents` (or its runtime adapters) still lacks a way to assign a portable model type per role. If the gap stands, create one Triage handoff in `ki-agentic-harness/docs/roadmap/` titled for per-role model-type assignment, citing this record as origin and stating it `blocks` nothing here; link it from this record. If the gap has closed, retire the row.
+- [ ] For the model-routing row, confirm whether `ki-subagents` (or its runtime adapters) still lacks a way to assign a portable model type per role. If the gap stands, prepare one work trade with `ki-trade prepare` for `knowledgeislands/ki-agentic-harness` proposing per-role model-type assignment, citing `KI-ARCADIA-OPS-007` as origin with the evidence from the Current state table, then submit it with `ki-trade submit <TRD>` and record its `TRD-` identity against the row. If the gap has closed, retire the row.
 - [ ] Mark the check-in, preference-capture and RAG rows retired in Discussion with the evidence above; raise no handoff for them.
 - [ ] Add a `### Disposition` subsection to Discussion summarising the four outcomes in one line each.
 
@@ -67,15 +67,15 @@ Checked against the live harness checkout on 2026-10-05:
 ## Files touched
 
 - `Streams/Roadmap/KI-ARCADIA-OPS-007-agent-session-improvements.md`
-- At most one new file in `ki-agentic-harness/docs/roadmap/` (handoff), only if the model-routing gap is confirmed.
+- `-/_TRADES/knowledgeislands/ki-agentic-harness/TRD-<hex>.md` (new, sender-owned), only if the model-routing gap is confirmed.
 
 ---
 
 ## Verify
 
 - Discussion maps all four ideas, each with evidence and a retired or handed-off disposition.
-- If a handoff was raised, it exists in `ki-agentic-harness/docs/roadmap/`, names `KI-ARCADIA-OPS-007` as origin, and this record links to it (reciprocal).
-- `git diff --stat HEAD` in Arcadia shows only this record changed.
+- If a trade was raised, `-/_TRADES/knowledgeislands/ki-agentic-harness/TRD-<hex>.md` exists with `phase: submitted`, names `KI-ARCADIA-OPS-007` as origin, and its `TRD-` identity is recorded here; `ki repo audit --skill ki-trades --repo . --progress never` PASS.
+- `git diff --name-only <baseline_ref>..HEAD` in Arcadia lists only this record and, if raised, the trade file.
 - `ki repo audit --skill ki-repo-kb-streams --repo . --progress never` PASS.
 - `ki repo audit --progress never` PASS.
 
@@ -83,7 +83,7 @@ Checked against the live harness checkout on 2026-10-05:
 
 ## Dependencies / blocks
 
-No local dependency. Retrieval relies on `KI-HARNESS-FND-028` in `ki-agentic-harness`; that is context, not a blocker, because this record retires the idea locally whatever its timing. A model-routing handoff, if raised, is non-blocking for this record.
+No local dependency. Retrieval relies on `KI-HARNESS-FND-028` in `ki-agentic-harness`; that is context, not a blocker, because this record retires the idea locally whatever its timing. A model-routing trade, if raised, is non-blocking: this record closes once it is submitted, and reciprocity is carried by the trade identity recorded here and the receiver's `transferred_from`, not by `blocks` or `blocked_by`.
 
 ---
 
@@ -99,11 +99,11 @@ None. Model-purpose policy is owned by the harness `ki-tokenomics` standard; any
 
 ### Guides
 
-None in Arcadia. The harness may update `ki-subagents` guidance if it accepts the handoff.
+None in Arcadia. The harness may update `ki-subagents` guidance if it accepts the trade.
 
 ### Roadmap
 
-This record moves to awaiting-review on delivery, with possibly one reciprocal harness Triage record.
+This record moves to awaiting-review on delivery, with possibly one outbound work trade to `ki-agentic-harness`; any harness roadmap record is created by the receiver on receipt.
 
 ---
 
@@ -118,6 +118,7 @@ This record moves to awaiting-review on delivery, with possibly one reciprocal h
 
 - The triage mapped model routing to `ki-tokenomics` plus `ki-subagents`. `ki-tokenomics` does carry the model-purpose policy, but `ki-subagents` has no model-type guidance today, so per-role routing is the one candidate gap.
 - The triage mapped check-in to `ki-bootstrap`. `ki-bootstrap` covers first-time activation, not session start; the real coverage is the `CLAUDE.md` MEMORY load, `ki-checkpoint` RESUME and `ki-next`.
+- The plan first raised the model-routing handoff directly in `ki-agentic-harness/docs/roadmap/`. On the Fable reviewer's advice (2026-10-05) it now uses the declared route: Arcadia's `.ki.toml` declares a `work` export to `knowledgeislands/ki-agentic-harness` and `ki-trade` never writes a peer checkout, so the handoff is a sender-owned trade in `-/_TRADES/`, matching `KI-ARCADIA-OPS-003` and `KI-ARCADIA-EXT-003`.
 
 ### Original ideas (April 2026)
 

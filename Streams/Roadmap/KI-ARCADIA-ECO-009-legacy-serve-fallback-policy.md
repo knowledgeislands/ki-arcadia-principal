@@ -10,7 +10,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-04T11:57:35Z
-updated_at: 2026-10-05T08:14:47Z
+updated_at: 2026-10-05T08:41:00Z
 ---
 
 # Gather Evidence for a Legacy Serve Fallback Policy
@@ -31,7 +31,7 @@ This record was carved out of [KI-ARCADIA-ECO-004](https://github.com/knowledgei
 
 - Evidence comes from local binding surfaces only: the portable inventory resolved by `$KI_MCP_SOURCE`, Claude Code, Claude Desktop, Codex and mcporter configuration, plus client versions and any local logs or traces.
 - No MCP server change, no harness contract change and no fallback removal in any repository.
-- At most one harness handoff, and only if the evidence supports a time-boxed retirement; the harness owns the policy and receiver repositories schedule their own removal.
+- At most one work trade to `knowledgeislands/ki-agentic-harness` over the declared work route, and only if the evidence supports a time-boxed retirement; Arcadia writes no file in the harness checkout, and the harness owns the policy while receiver repositories schedule their own removal.
 - No remote operation under the [[Techne Programme Hold]]; no change to binding configuration or chezmoi.
 
 ---
@@ -51,14 +51,15 @@ This record was carved out of [KI-ARCADIA-ECO-004](https://github.com/knowledgei
 - [ ] For each server and client pair, determine whether the opening handshake uses the legacy `initialize` path or the modern profile: observe it from a local log or trace where one exists, otherwise infer it from the client's documented protocol support and mark the cell "inferred".
 - [ ] Write the evidence table in Discussion: server, client, launch path, client version, handshake observed or inferred, source of evidence.
 - [ ] State the conclusion: retain (some client still needs the fallback, naming the migration path first) or time-box (no client needs it).
-- [ ] If the conclusion is time-box, create one Triage handoff in `ki-agentic-harness/docs/roadmap/` proposing a dated retirement window, citing this record as origin, and link it here reciprocally. If retain, raise no handoff.
+- [ ] If the conclusion is time-box, prepare one work trade with `ki-trade prepare` for `knowledgeislands/ki-agentic-harness`, citing `KI-ARCADIA-ECO-009` as origin and carrying the evidence table and a proposed dated retirement window. If retain, raise no trade.
+- [ ] If a trade was prepared, submit it with `ki-trade submit <TRD>` and record its `TRD-` identity in Dependencies / blocks and Discussion.
 
 ---
 
 ## Files touched
 
 - `Streams/Roadmap/KI-ARCADIA-ECO-009-legacy-serve-fallback-policy.md`
-- At most one new file in `ki-agentic-harness/docs/roadmap/` (handoff), only on a time-box conclusion.
+- `-/_TRADES/knowledgeislands/ki-agentic-harness/TRD-<hex>.md` (new, sender-owned), only on a time-box conclusion.
 
 ---
 
@@ -66,7 +67,8 @@ This record was carved out of [KI-ARCADIA-ECO-004](https://github.com/knowledgei
 
 - The evidence table covers all six servers against every client declared for each, with a launch path and an observed or inferred handshake in every row.
 - A retain or time-box conclusion is stated.
-- If a handoff was raised, it exists in the harness roadmap, names `KI-ARCADIA-ECO-009` as origin, and this record links to it.
+- If a trade was raised, `-/_TRADES/knowledgeislands/ki-agentic-harness/TRD-<hex>.md` exists with `phase: submitted`, names `KI-ARCADIA-ECO-009` as origin, and its `TRD-` identity is recorded here; `ki repo audit --skill ki-trades --repo . --progress never` PASS.
+- `git diff --name-only <baseline_ref>..HEAD` in Arcadia lists only this record and, on a time-box conclusion, the trade file.
 - `git status --porcelain` in each of the six MCP repositories and in chezmoi is unchanged by this work.
 - `ki repo audit --skill ki-repo-kb-streams --repo . --progress never` PASS.
 - `ki repo audit --progress never` PASS.
@@ -75,7 +77,7 @@ This record was carved out of [KI-ARCADIA-ECO-004](https://github.com/knowledgei
 
 ## Dependencies / blocks
 
-No dependency. The harness transition contract already permits retention, so nothing waits on this record; a handoff, if raised, is non-blocking and the harness schedules it.
+No dependency. The harness transition contract already permits retention, so nothing waits on this record. A trade, if raised, is non-blocking: this record closes once it is submitted and the harness schedules any resulting work in its own horizon. Reciprocity is carried by the trade identity recorded here and the receiver's `transferred_from` on any record it creates, not by `blocks` or `blocked_by`, which must never hold trade identities.
 
 ---
 
@@ -95,7 +97,7 @@ None. The evidence table in this record is the deliverable.
 
 ### Roadmap
 
-This record moves to awaiting-review on delivery, with at most one reciprocal harness Triage record.
+This record moves to awaiting-review on delivery, with at most one outbound work trade to `ki-agentic-harness`; any harness roadmap record is created by the receiver on receipt.
 
 ---
 
@@ -109,10 +111,11 @@ This record moves to awaiting-review on delivery, with at most one reciprocal ha
 
 - The triage named the portable inventory as XDG `mcp-servers.yaml`. On this machine `$KI_MCP_SOURCE` overrides the XDG default and points at the chezmoi data file, which is therefore the evidence source.
 - The triage listed "kb-fs" among the six. Its inventory name is `kit-mcp-ki-kb-fs`, and `hnr-mcp-ki-kb-notion-mirror` and `hnr-mcp-m365` carry an `hnr-` prefix; the table uses inventory names.
+- The plan first raised the handoff directly in `ki-agentic-harness/docs/roadmap/`. On the Fable reviewer's advice (2026-10-05) it now uses the declared route: Arcadia's `.ki.toml` declares a `work` export to `knowledgeislands/ki-agentic-harness` and `ki-trade` never writes a peer checkout, so the handoff is a sender-owned trade in `-/_TRADES/`, matching `KI-ARCADIA-OPS-003` and `KI-ARCADIA-EXT-003`.
 
 ### Original framing
 
-Useful evidence shows, per supported runtime and binding surface, whether any configured server is still opened through the legacy entry point. If none is, the harness could time-box the fallback; if some are, the policy should name the migration path first. Any adopted outcome becomes a harness handoff under the cross-repository convention in `AGENTS.md`, with receiver repositories scheduling their own removal.
+Useful evidence shows, per supported runtime and binding surface, whether any configured server is still opened through the legacy entry point. If none is, the harness could time-box the fallback; if some are, the policy should name the migration path first. Any adopted outcome becomes a harness handoff, with receiver repositories scheduling their own removal.
 
 ---
 
