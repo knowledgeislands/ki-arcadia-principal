@@ -53,6 +53,8 @@ process_note = "Admin/Operations/Processes/Enactment Process"
 [skills.ki-decision-records]
 scope = "KI-ARCADIA"
 
+[skills.ki-checkpoint]
+
 # -----------------------------------------------------------------------------
 # Change management
 # -----------------------------------------------------------------------------

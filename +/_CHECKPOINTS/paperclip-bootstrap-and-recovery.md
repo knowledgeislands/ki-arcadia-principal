@@ -1,0 +1,65 @@
+---
+type: ki-checkpoint
+thread: paperclip-bootstrap-and-recovery
+state: active
+created_at: 2026-09-27T23:55:22Z
+updated_at: 2026-10-05T21:24:08Z
+---
+
+# paperclip-bootstrap-and-recovery
+
+## Objective
+
+Make Paperclip useful through reviewed roadmap work visible in the human's local main, not more rounds of setup. Prove one delivery in VA, establish useful reporting and work-review routines, then consider TMX. Keep chaotic KIS autonomous work paused and assess which other companies actually benefit from continuous operation.
+
+This operational thread now belongs in Arcadia Principal. It is a reconstruction handoff, not another backlog, adoption record or grant over other companies. The Agentic Harness retains reusable coordination capabilities; each company owns its own work and knowledge.
+
+## Current state
+
+Pre-move baselines: Arcadia main 25be451f1da6705b9e661507e5e3848dc5733105; harness main 1d05e8832437fe9b487b9431cc2e0f3f97df4e76. The older checkpoint remains recoverable in harness Git history, including update 24a8dc1b. Read current instructions and live work before continuing; dated observations are not permanent health guarantees.
+
+- **Runtime.** Health passed on 2026-10-05. The maintained build is 2c4ac3a2fd30e166517feed6906d4c3702a6c119, tagged `ki/v2026.916.1-r1`. Its source is `/Users/krisbrown/workspaces/kit/paperclip`, branch `ki/stable`. The deployed copy remains under `~/.paperclip/cli/installs/fork/`; data stays under `~/.paperclip/instances/default`. Moving the source did not restart the service or move data.
+- **Authentication.** All 16 previously inventoried employees use Claude as primary. Kris completed separate isolated VA and TMX sign-ins on 2026-10-05; Guru and Bob then passed live saved-configuration tests. Guru, Shilpin and Sakshi all use VA's updated connection. These use the renewal-capable path, but later automatic renewal was not demonstrated by those tests. Separate logins may use the same account and allowance, or different personal/work accounts.
+- **Remaining runtime gaps.** HNR's last test required login; its prior startup handshake failures are a separate concern. ER previously needed renewable sign-in too. Forseti and Kitteth had earlier successful isolated sign-ins. Wren's mise environment was repaired; fleet environment/runtime verification is incomplete. Preserve intentional timers and pauses. Displaying "connected" does not prove credentials work.
+- **Saved answers.** VA-33: no hire, keep the Sanskrit theme, move VA-6 to Shilpin. HNR-50: no hire, adopt cross-review pairings, reserve Sarge. Its former hnr-principal ownership question is superseded by Kris's correction: that repo is gone and its contents were merged into kit-hnr. Do not repeat the answered cards.
+- **Fresh task state.** VA-33 and HNR-50 still show in review; TMX-9 is done; LGL-5, KIT-2 and ER-7 remain in review, checked on 2026-10-05. Read current outcomes rather than assuming a hire occurred. VA-2 remains blocked; Guru already has a continuation request covering existing VA-6, VA-7 and VA-31. No new reviewed local-main delivery is proved by this handoff. VA-13 and other holds remain.
+- **Routines and memory.** The last inventory found only two paused KIS changelog routines and none elsewhere. The repository-first memory clause is explicit in VA, but fleet rollout and weekly knowledge return remain incomplete. Backup cleanup freed about 7 GB while preserving the pre-fork backup and recovery folders. Retained worktrees were not discarded.
+
+## Decisions made
+
+- Arcadia holds this programme's handoff and incoming operating lessons, not every company's canonical knowledge. Durable Arcadia content follows its Enactment Process. Generic rules stay in the harness's [coordination skill](../../../ki-agentic-harness/skills/agentic-systems/ki-agent-coordination-paperclip/SKILL.md); company-specific decisions and results return to their owning repositories.
+- VA is the agreed pilot, using Guru/Shilpin/Sakshi with no extra hire. TMX is the proposed next company, not authority to expand all companies. Some organisations may need only occasional review/reporting. The human-facing goal is useful delivery, not agent activity.
+- One project per admitted repository. Workspace-free Coordination only coordinates; repository discovery, planning, implementation and review use the owning repository project. A CEO may work in either context under appropriate authority, but cannot independently review their own work.
+- Claude is primary, Codex a backup. Approved hires require the [post-hire brief](../../../ki-agentic-harness/skills/agentic-systems/ki-agent-coordination-paperclip/assets/post-hire-task.md), least-necessary grants, KI/mise configuration, concurrency one, deliberate wake policy and real checks. No direct database bypass.
+- Local delivery requires isolated implementation, exact-candidate independent review and authorised integration into the designated primary checkout's main. Return the destination commit and checks. Paperclip completion is not KI acceptance or pruning authority. Verified task associations belong on each roadmap item's `task_links`.
+- Repository housekeeping/KB Activities define obligations; Paperclip routines execute them. Company-wide definitions belong in the verified home repository. Weekly/ad-hoc review shares one definition and active-run guard, including employee knowledge return under the [memory standard](../../../ki-agentic-harness/skills/agentic-systems/ki-agent-coordination-paperclip/references/standards-agent-memory.md). Keep KI skill symlink discovery; repository declarations, actual workspace access and Paperclip assignments are separate checks.
+- Use ordinary language: what changed, what is waiting, what happens next and the one human decision. Give context with questions, preserve valid approvals and avoid another general bootstrap when existing work can continue.
+- Shared Personal/Work logins and a `claude-swap` bridge are ideas, not implemented or adopted. One renewal owner would be required; duplicating rotating terminal credentials risks stale copies. Keep working VA/TMX isolated logins. Before building a broker, verify the supported integration against Anthropic's [credential-use rules](https://code.claude.com/docs/en/legal-and-compliance) and [subscription guidance](https://support.claude.com/en/articles/13189465-log-in-to-your-claude-account). Different IPs alone do not establish a fault; SSH login support is not blanket broker approval. API use is a separately priced option, not an approved switch.
+- KIS autonomous delivery remains paused. The current [Techne Programme Hold](<../../Admin/Governance/Policies/Techne Programme Hold.md>) restricts remote running and remote-environment management, not authorised local tool-building. Do not preserve the older blanket Techné hold. Remote delivery needs its own reviewed policy and authority.
+
+## Files touched
+
+This handoff adds Arcadia's checkpoint declaration, canonical README scaffold and this updated snapshot. It removes the old active harness snapshot while retaining its scaffold and Git history, and adds a harness orientation link. No agents, tasks, schedules, credentials, services, roadmap lifecycle or canonical KB content are changed by this handoff.
+
+The reusable [operational-review brief](../../../ki-agentic-harness/skills/agentic-systems/ki-agent-coordination-paperclip/assets/bootstrap-task.md), post-hire brief and standards remain in the harness. Application fixes belong in the Paperclip fork; host procedures and the repair inventory belong in `/Users/krisbrown/.local/share/chezmoi/docs/guides/tools/paperclip.md` and its managed configuration.
+
+## Open questions
+
+- What exactly blocks VA's first existing authorised delivery, and which candidate can reach local main without lifting a hold?
+- Have Guru and Wren processed the saved answers after authentication recovery? HNR must use the kit-hnr consolidation, not create ownership for the removed hnr-principal.
+- What did completed TMX-9 return, which other staffing choices are approved, and which hires need post-hire setup?
+- What timezone, cadence and budget should the missing routines use? The 08:00 report is requested; previously proposed 07:30 preflight and Friday 09:00 review are not established settings.
+- Which companies justify continuous operation? KIS needs consolidation rather than revival of a parallel backlog. The shared-login broker, HNR startup failures and the agent permission-update guard need supported, scoped follow-ups, not another blanket recovery pass.
+
+## Next step
+
+Start a fresh thread in Arcadia and resume `paperclip-bootstrap-and-recovery`. First inspect VA's existing delivery blockers read-only and return a short recommendation. These links point to existing execution records; unlinked repair gaps are not silently queued jobs.
+
+1. **Land one VA result.** Reconcile [VA-2](http://127.0.0.1:3100/VA/issues/VA-2), VA-6, VA-7 and VA-31 using the saved VA-33 answer. Shilpin implements approved scope, Sakshi independently reviews and the authorised owner integrates. Preserve VA-13. Return changed files, destination-main commit, checks and roadmap write-up/task links; ask only for genuinely missing authority.
+2. **Finish staffing continuations.** Reuse answered [VA-33](http://127.0.0.1:3100/VA/issues/VA-33) and [HNR-50](http://127.0.0.1:3100/HNR/issues/HNR-50). Read completed [TMX-9](http://127.0.0.1:3100/TMX/issues/TMX-9). Check remaining [LGL-5](http://127.0.0.1:3100/LGL/issues/LGL-5), [KIT-2](http://127.0.0.1:3100/KIT/issues/KIT-2) and [ER-7](http://127.0.0.1:3100/ER/issues/ER-7); do not invent hires or repeat questions.
+3. **Establish useful VA routines after delivery.** Reconcile definitions and seek missing activation decisions for daily audit/conform dry-run, 08:00 report/changelog, next-work review and weekly review/changelog. Include the shared [repository-review checklist](../../../ki-agentic-harness/skills/keystone/ki-repo/references/mode-review.md), task/work reconciliation and knowledge return. Make the same definitions runnable ad hoc; no automatic repairs or false clean-health reports.
+4. **Repeat the proven cycle in TMX, then assess others.** Refresh Agora/project coverage, styling, ownership and task links within current scope. KIT's home-project setup and ER's newer projects are historical gaps to verify, not blanket creation authority. LGL still owns kit-legal where ER observes it.
+5. **Route repairs and retained work to their owners.** Resolve HNR/ER runtime gaps when relevant; track the permission-update defect and fleet memory-clause rollout. Use [GOV-114](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-114-surface-held-workspaces.md) for held-workspace visibility, not deletion authority. Preserve work and backups.
+6. **Defer KIS and speculative platform changes.** Keep [KIS-105](http://127.0.0.1:3100/KIS/issues/KIS-105) and KIS autonomous work paused. A supported shared-login design and cloud policy are separate decisions, not prerequisites to proving VA locally.
+
+Resuming the checkpoint alone does not authorise waking agents, hiring, new tasks, schedule activation, deployment, pushing, lifting holds or KI acceptance. Reuse existing concrete approvals and obtain only the authority actually missing.
