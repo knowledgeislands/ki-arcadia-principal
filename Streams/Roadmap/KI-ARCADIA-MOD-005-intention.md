@@ -7,82 +7,130 @@ theme: knowledge-model
 tags:
   - card/proposal
   - topic/knowledge-islands
-status: draft
+status: ready
 priority: medium
-horizon: future
+horizon: now
 candidate: true
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-27T19:18:58Z
-updated_at: 2026-08-18T13:08:06Z
+updated_at: 2026-10-05T08:15:51Z
 author: Written with Claude
 ---
 
 # Intentional Proposal
 
-## Overview
+## Goal
 
-A conceptual stream to explore where Intention fits in the Knowledge Islands model. The question arose during a review of `Pillars/Philosophy/Concept/Concept.md` and has not yet been resolved into a specific placement or definition.
+Name Intention in the Knowledge Islands model as the purpose an island exists for, set beside its boundaries, so that readers of the Concept chapter understand that an island is a purposeful territory rather than an archive.
+
+---
+
+## Context
+
+The question arose during a review of the Concept chapter: the model gives an island defined boundaries, actors, jurisdiction and governance, but never says what an island is _for_. [[The Home of Knowledge]] introduces the island as a discrete body of knowledge with defined boundaries; SDR-KI-ARCADIA-002 records that framing as Arcadia's strategy decision. Neither names purpose.
+
+The record's own initial framing holds up: Intention is the island's purpose, and it is what distinguishes a living island from an archive. The cycle of knowledge (Capture, Connect, Reflect) is the mechanism; Intention keeps it purposeful rather than merely accumulative. It operates at two levels: the governor's intention at island level, which shapes scope and what the island holds, and the contributor's intention at capture level, which decides what is worth bringing in. Intention is distinct from jurisdiction: jurisdiction says who has authority, Intention says what for.
+
+---
+
+## Boundary
+
+- One short addition to the Concept chapter; no new note, no new chapter section structure, and no change to the cycle of knowledge, jurisdiction or governance notes.
+- No new Strategy Decision Record and no amendment to SDR-KI-ARCADIA-002.
+- No `Admin/` change: the portable concept is defined here, and any Arcadia-specific statement of its own intention would be a separate Charter matter.
+
+---
+
+## Current state
+
+- `Pillars/Philosophy/Introduction/Concept/Concept.md` is a `pillars/index` note: a prose `## Overview` and one H2 per direct child (How an Island Takes Shape, Territories and Archipelagos, Agents, Jurisdiction, Governance).
+- `Pillars/Philosophy/Introduction/Concept/How an Island Takes Shape.md` is the chapter's orienting note: three prose paragraphs, no H2 sections, naming the four foundational concepts. It contains one em dash, after "structural mirrors".
+- `grep -rli intention Pillars/Philosophy/Introduction` finds only an incidental use in Prior Art; the model does not name Intention.
+
+---
+
+## Steps
+
+- [ ] Add one short paragraph to `Pillars/Philosophy/Introduction/Concept/How an Island Takes Shape.md`, after the paragraph naming the four concepts, stating that an island exists for a purpose as well as within boundaries: Intention is the island's purpose, held by the governor at island level and exercised by contributors at capture level, distinct from jurisdiction, and what keeps the cycle purposeful rather than accumulative. Link [[The Home of Knowledge]].
+- [ ] Replace the existing em dash in that note with an ASCII hyphen while editing it.
+- [ ] Extend the `## How an Island Takes Shape` section of `Pillars/Philosophy/Introduction/Concept/Concept.md` by one clause noting that the orienting note also names Intention, keeping the index note's one-section-per-child structure.
+- [ ] Update the `status` month on each edited note per its existing convention.
+
+---
+
+## Files touched
+
+- `Pillars/Philosophy/Introduction/Concept/How an Island Takes Shape.md`
+- `Pillars/Philosophy/Introduction/Concept/Concept.md`
+- this record
+
+---
+
+## Verify
+
+- `grep -n -i intention "Pillars/Philosophy/Introduction/Concept/How an Island Takes Shape.md"` finds the new paragraph, and it links [[The Home of Knowledge]].
+- `Concept.md` still has exactly the `## Overview` section plus one H2 per direct child.
+- `grep -nP '[\x{2013}\x{2014}]'` on both edited notes returns nothing; prose uses British English.
+- `ki repo audit --skill ki-repo-kb --repo . --progress never` PASS.
+- `ki repo audit --progress never` PASS.
+- Kris reviews the wording at awaiting-review.
+
+---
+
+## Dependencies / blocks
+
+No dependency. The wording is a prose judgement for Kris at review, not a precondition.
+
+---
+
+## Documentation impact
+
+### Decision Records
+
+None. The addition elaborates the framing already recorded in SDR-KI-ARCADIA-002 and does not change it.
+
+### Specifications
+
+None.
+
+### Guides
+
+The Concept chapter orienting note and its index entry are the only documentation changed.
+
+### Roadmap
+
+This record moves to awaiting-review on delivery; no follow-up record is expected.
+
+---
+
+## Discussion
+
+### Decisions under delegated autonomy
+
+- Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible: adopt the record's initial framing - Intention is the island's purpose, at island level beside boundaries, with the governor's intention at island level and the contributor's at capture level.
+- Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible: one short addition in the Concept chapter, related to SDR-KI-ARCADIA-002, and no new SDR.
+
+### Planning corrections
+
+- The triage placed the addition in `Concept.md`. That note is an index whose H2s must be one per direct child, so a new Intention section there would break the index rule. The addition goes in the chapter's orienting note, How an Island Takes Shape, with a one-clause pointer in the index.
+- The triage asked for a link to SDR-KI-ARCADIA-002. Introduction notes are portable and carry no links to Arcadia Decision Records, so the note links [[The Home of Knowledge]], the concept that SDR records; this record cites the SDR as the rationale anchor.
+- The legacy path `Pillars/Philosophy/Concept/Concept.md` is now `Pillars/Philosophy/Introduction/Concept/Concept.md`.
+
+### Original open questions, resolved
+
+1. **Where does Intention sit?** As a property of the island itself: its purpose. The alternatives considered were a dimension of the cycle (intentional versus passive capture), a property of the agent, or something prior to the cycle. The chosen framing absorbs the agent view at capture level and the "precedes the cycle" view in the living-island-versus-archive distinction.
+2. **Is it already implicit?** Partly: boundaries, ratification and the deliberate cycle imply it. Naming it makes the implication explicit without adding machinery.
+3. **Whose intention?** The governor's at island level and the contributor's at capture level. The council's intention is exercised through jurisdiction rather than named separately.
+4. **Relation to jurisdiction?** Distinct: jurisdiction is who, Intention is what for.
+
+### Original design note
+
+A personal island has personal intentions; a community island has shared ones; an archipelago may have civilisational ones. The choice to preserve something across generations is itself an act of intention: libraries and archives are intentional acts of selection and custody, not neutral accumulation.
 
 ---
 
 ## Governance
 
-This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment Process]].
-
----
-
-## Inputs
-
-| Type     | Detail                                                    |
-| -------- | --------------------------------------------------------- |
-| Document | [[Concept]] - the note this stream will eventually modify |
-
----
-
-## Outputs
-
-| Type     | Detail                                                                                            |
-| -------- | ------------------------------------------------------------------------------------------------- |
-| Artefact | Updated `Pillars/Philosophy/Concept/Concept.md` - Intention woven into the appropriate section(s) |
-
----
-
-## Checklist
-
-- [ ] Update `Pillars/Philosophy/Concept/Concept.md` - add Intention to the model (section TBD)
-
----
-
-## Open Questions
-
-1. **Where does Intention sit in the model?** Candidate placements:
-   - As a property of the _island itself_ - an island exists for a defined purpose; Intention shapes its scope and what it holds
-   - As a dimension of the _cycle_ - is intentional capture meaningfully different from passive capture? Should the Capture phase distinguish between the two?
-   - As a property of the _agent_ - human agents are the source of meaning; their intentions drive what is created, preserved, and evolved
-   - As something more foundational - does Intention precede the cycle? An island without intention is an archive, not a living system
-
-2. **Is Intention already implicit in the model?** The island has boundaries; the Library only holds what has been ratified; the cycle is deliberate. Does the model already imply intention without naming it?
-
-3. **Whose intention?** The governor's, the council's, or the contributor's - or all three at different levels?
-
-4. **How does Intention relate to Jurisdiction?** Jurisdiction defines _who_ has authority; Intention might define _what for_. These are distinct.
-
----
-
-## Design
-
-### Initial framing
-
-Intention may be most naturally expressed as the _purpose_ of an island - not just what it holds, but why it exists and what it is for. A personal island has personal intentions; a community island has shared intentions; the archipelago has civilisational ones.
-
-This connects to the civilisational knowledge layer in the model: the choice to preserve something across generations is itself an act of intention. Libraries and archives are not neutral accumulation - they are intentional acts of selection and custody.
-
-A possible framing: **Intention is what distinguishes a living island from an archive.** The cycle of knowledge (Capture, Connect, Reflect) is the mechanism; Intention is what keeps it purposeful rather than just accumulative.
-
-If this holds, Intention might belong in the _Overview_ or as a brief addition to _The Home of Knowledge_ - alongside the point that an island has a defined purpose, not just defined boundaries.
-
-## Adherence
-
-This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.
+This roadmap record adheres to the [[Admin/Operations/Processes/Enactment Process|Enactment Process]]. Move content to `Admin/`, `Pillars/`, or `Resources/` only on user approval of a `ready` record.

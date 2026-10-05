@@ -7,40 +7,133 @@ theme: operational-tooling
 tags:
   - topic/knowledge-islands
   - topic/automation
-status: draft
+status: ready
 priority: low
-horizon: future
+horizon: now
 candidate: true
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T18:32:31Z
-updated_at: 2026-08-18T13:08:06Z
+updated_at: 2026-10-05T08:14:47Z
 author: Written with Claude
 ---
 
 # Scheduled Automations Proposal
 
-## Overview
+## Goal
 
-Ideas for new scheduled tasks and improvements to the existing automation suite. Most of these extend coverage into areas the current task set does not reach, or add efficiency gates to reduce token usage on quiet days.
+The weekly Health Check surfaces stale draft notes, and Arcadia's existing scheduled prompts stop early and cheaply on days with nothing to do, without adding any new scheduled task.
+
+---
+
+## Context
+
+The record was captured in April 2026 as five ideas for the automation suite: a meeting-prep heartbeat, email intelligence in the morning briefing, a nightly repository organiser, a decay-aware draft review, and a pre-invocation gate for scheduled tasks. The first three would each add a new scheduled task or data source and therefore new spend; the last two improve what already runs. This record carries the two low-risk improvements and leaves the three new tasks as an owner adoption choice.
+
+The active schedule is the Charter Scheduled Activities table: Conformance (work-day 04:30), Scheduled Task Audit (work-day 05:00), Morning Briefing (work-day 06:00), Health Check (Monday 08:00) and Knowledge Rebuild (Wednesday 07:00). The gate pattern itself is defined by [[KI-ARCADIA-OPS-009-token-economics|OPS-009]] in a new Token Economics note.
+
+---
+
+## Boundary
+
+- No new scheduled task and no Charter change: the meeting-prep heartbeat, email scan and nightly organiser are out of scope.
+- Prompt-note edits only. Pushing edited prompts to the live Cowork scheduled tasks follows the Scheduled Task Audit Sync Protocol and happens only on Kris's explicit "push it" signal; it is not part of this record's acceptance.
+- No prompt may lose a heading that an automation reads (`## Schedule`, `## Prompt` and the numbered `Step` headings Scheduled Task Audit compares).
+- The Morning Briefing prompt is not held in this island, so it is out of scope.
+- No spend, no remote operation under the [[Techne Programme Hold]], no cross-repository change.
+
+---
+
+## Current state
+
+- Scheduled prompt notes held in the island: `Pillars/Philosophy/Model/Tools/Claude/Activities/Constitutional/Conformance.md`, and `Tending/Scheduled Task Audit.md`, `Tending/Health Check.md` and `Tending/Knowledge Rebuild.md` in the same `Activities/` tree. `Tending/Convergence Check.md` is ad hoc, not scheduled.
+- The Health Check prompt's Step 3 checks "stale content" in general terms and Step 5 flags inbox items older than a week; nothing looks at `draft` status or last-modified age. The activity definition `Pillars/Philosophy/Model/Activities/Tending/Health Check.md` lists the checks under `## What It Does`.
+- No scheduled prompt has an early-exit gate.
+- All four scheduled prompts still locate the repository through `Knowledge Capital.md` or read `Pillars/Knowledge Capital/Charter.md`. No such file exists: governance moved to `Admin/Governance/` under GDR-KI-ARCADIA-002. Step 0 of each prompt therefore points at a missing path.
+
+---
+
+## Steps
+
+- [ ] Confirm [[KI-ARCADIA-OPS-009-token-economics|OPS-009]] has delivered the gate pattern; if not, use the pattern as written in OPS-009's Steps and cite it.
+- [ ] Add a `## Step 5b - Decay-aware draft review` to the Health Check prompt: list notes whose frontmatter `status` begins with `draft`, outside `+/`, `-/`, `Calendar/` and `Streams/Roadmap/`, with last-commit date from `git log -1 --format=%cs -- <path>`; report 30+ days as candidates for promotion, archiving or deletion and 60+ days as long-stale; propose only, write nothing.
+- [ ] Add the decay-aware draft review to `## What It Does` in the Health Check activity definition.
+- [ ] Repair the repository-locator and Charter paths in Step 0 or Preparation of each of the four scheduled prompts to resolve `Admin/Governance/Charter.md`, since the gate depends on a working Step 0.
+- [ ] For each of the four scheduled prompts, decide whether a cheap pre-invocation signal exists (for example no commits to the inputs since the last run). Where it does, add the gate as the first step with an explicit early exit and one-line report. Where it does not, record "gate not applicable" and the reason in this record's Discussion.
+- [ ] Confirm each edited prompt still carries every heading listed in the Boundary.
+- [ ] Record in Discussion which prompt notes changed and that live-task sync awaits Kris's signal.
+
+---
+
+## Files touched
+
+- `Pillars/Philosophy/Model/Tools/Claude/Activities/Tending/Health Check.md`
+- `Pillars/Philosophy/Model/Activities/Tending/Health Check.md`
+- `Pillars/Philosophy/Model/Tools/Claude/Activities/Tending/Knowledge Rebuild.md`
+- `Pillars/Philosophy/Model/Tools/Claude/Activities/Tending/Scheduled Task Audit.md`
+- `Pillars/Philosophy/Model/Tools/Claude/Activities/Constitutional/Conformance.md`
+- `Streams/Roadmap/KI-ARCADIA-OPS-008-scheduled-automations.md`
+
+---
+
+## Verify
+
+- `git diff --quiet HEAD -- Admin/Governance/Charter.md` succeeds: the Scheduled Activities table is unchanged.
+- The Health Check prompt contains `## Step 5b - Decay-aware draft review` and the definition's `## What It Does` mentions decay-aware draft review.
+- Each edited prompt still contains `## Schedule` (where it had one), `## Prompt` and every `Step` heading it had before, apart from the new ones (`git diff` shows no removed heading lines).
+- `grep -l "Knowledge Capital" Pillars/Philosophy/Model/Tools/Claude/Activities/Constitutional/Conformance.md Pillars/Philosophy/Model/Tools/Claude/Activities/Tending/{Health\ Check,Knowledge\ Rebuild,Scheduled\ Task\ Audit}.md` returns nothing.
+- Discussion records a gate or "not applicable" outcome for each of the four prompts.
+- `ki repo audit --skill ki-repo-kb-activities --repo . --progress never` PASS.
+- `ki repo audit --progress never` PASS.
+
+---
+
+## Dependencies / blocks
+
+Preferably delivered after [[KI-ARCADIA-OPS-009-token-economics|OPS-009]], which defines the gate pattern; this is sequencing, not a blocker, because the pattern is already specified in that record's Steps. Live-task sync is a later owner-signalled action outside this record.
+
+---
+
+## Documentation impact
+
+### Decision Records
+
+None. Adding a check to an existing activity and an early-exit step to existing prompts is routine; no activity is adopted or enabled.
+
+### Specifications
+
+None. Activity and prompt formats are owned by `ki-repo-kb-activities` and [[Authoring Guidelines]], and are unchanged.
+
+### Guides
+
+The Health Check definition and prompt gain the decay review; the four scheduled prompts gain a gate or a recorded reason for none.
+
+### Roadmap
+
+This record moves to awaiting-review on delivery. The three deferred new-task ideas stay recorded below for a future owner adoption record.
+
+---
+
+## Discussion
+
+### Decisions under delegated autonomy
+
+- Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible: scope is bounded to the decay-aware draft review in Health Check and the pre-invocation gate on existing scheduled prompts.
+- Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible: the meeting-prep heartbeat, email scan and nightly organiser are deferred as Kris's adoption and spend choice, noted here rather than asked.
+
+### Planning addition
+
+Planning found every scheduled prompt still resolving `Knowledge Capital.md`, which no longer exists after the GDR-KI-ARCADIA-002 migration to `Admin/Governance/`. The gate must sit in or after Step 0, so the locator repair is included as a bounded step rather than left broken under new edits. It could be split into its own record before delivery if preferred.
+
+### Deferred new-task ideas (April 2026)
+
+- **Proactive meeting-prep heartbeat**: a check every 15-30 minutes in working hours (for example `*/15 9-18 * * 1-5`) that sends a prep brief from prior meeting notes and Calendar context when a meeting is imminent.
+- **Email intelligence in the morning briefing**: a nightly inbox scan distilled into a 3-5 line awareness layer. Note that the Email activity group is vetoed in the Charter.
+- **Nightly repository organiser**: a 01:00-02:00 pass over the day's notes that adds missing wikilinks, fills omitted tags and flags `draft` notes.
 
 ---
 
 ## Governance
 
-This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment Process]].
-
----
-
-## Checklist
-
-- [ ] **Proactive meeting prep heartbeat** - A frequent check (every 15-30 minutes during working hours, e.g. `*/15 9-18 * * 1-5`) that detects an imminent meeting and automatically sends a prep brief pulling from prior meeting notes and Calendar context. Only fires when a meeting is found.
-- [ ] **Email intelligence in morning briefing** - Extend the morning briefing task to include a nightly scan of the email inbox. Distil active threads into a 3-5 line awareness layer: what is live, what needs attention, what can wait.
-- [ ] **Nightly repository organiser** - A post-hoc pass (1-2am) that reviews notes written that day: adds missing wikilinks, fills in omitted YAML tags, and flags `draft` notes for follow-up.
-- [ ] **Decay-aware draft review** - Surface `draft` notes not touched in 30+ days as candidates for archiving, deletion, or promotion to `current`. A 60-day threshold would surface long-stale content more urgently. Could be a step in the existing Health Check or a standalone task.
-- [ ] **Pre-invocation check for scheduled tasks** - Before committing full LLM inference in a cron task, run a cheap pre-check: is there anything to act on? A lightweight gate returns early on quiet days, saving significant tokens. Design pattern to apply across all applicable tasks.
-
-## Adherence
-
-This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.
+This roadmap record adheres to the [[Admin/Operations/Processes/Enactment Process|Enactment Process]]. Move content to `Admin/`, `Pillars/`, or `Resources/` only on user approval of a `ready` record.

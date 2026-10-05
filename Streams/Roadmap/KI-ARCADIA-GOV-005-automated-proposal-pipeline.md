@@ -6,63 +6,133 @@ title: Automated proposal pipeline
 theme: governance
 tags:
   - topic/knowledge-islands
-status: draft
+status: ready
 priority: medium
-horizon: future
+horizon: now
 candidate: true
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T00:13:43Z
-updated_at: 2026-08-18T13:08:06Z
+updated_at: 2026-10-05T08:15:51Z
 author: Written with Claude
 ---
 
 # Auto Proposal Pipeline Proposal
 
-## Overview
+## Goal
 
-A stream to design the Auto Proposal Research activity - a periodic governance activity that reviews active streams, identifies ideas ready for progression, and produces proposal notes with clear rationale and links to source material. The goal is that council meetings are more productive because proposals arrive pre-formed: the thinking is documented, the connections are explicit, and the council can evaluate rather than reconstruct.
+Define an Auto Proposal Research activity that periodically reviews draft roadmap records and shapes the mature ones towards Ready, so that council review starts from a pre-formed proposal rather than a reconstruction. The activity surfaces candidates; humans decide.
 
-The stream also covers what "proposal-ready" means in practice - the criteria for promoting a stream idea to a formal proposal, and the standard format a proposal note should take.
+---
+
+## Context
+
+Draft records in `Streams/Roadmap/` accumulate open questions and design notes that are only turned into decision-ready proposals when someone sits down to do it. A periodic activity that reads drafts, identifies the ones whose open questions are resolved, and shapes them under the shared `ki-next` and `ki-plan` procedures would make council review evaluative: the thinking is documented, the connections are explicit and the remaining owner decisions are named.
+
+The original framing asked for a bespoke "proposal-ready" convention and proposal note format. Both now exist in shared form: the `ki-plan` Ready criteria define when a record is decision-ready, and the `ki-work-roadmap` work-item format defines what a well-formed record contains. The activity therefore needs a definition and a prompt, not a new convention.
+
+The activity follows the existing two-part pattern: a portable Definition under `Pillars/Philosophy/Model/Activities/Tending/` and an executable Prompt under `Pillars/Philosophy/Model/Tools/Claude/Activities/Tending/`, with Arcadia's adoption position held in `Admin/Operations/Activities/Tending Activity.md` and the [[Admin/Governance/Charter|Charter]].
+
+---
+
+## Boundary
+
+- No scheduled task is created or enabled, and the Charter scheduled and conversational activity tables are not changed. Enabling a scheduled run is Kris's adoption and spend decision.
+- The activity never moves a record to Ready, adopts work, accepts work or edits `Admin/`, `Pillars/` or `Resources/`; it proposes shaping and names owner decisions, and the shared lifecycle skills remain the authority for each transition.
+- No new "proposal-ready" convention or proposal note format; the shared `ki-plan` Ready criteria and `ki-work-roadmap` format are referenced, not restated.
+- No remote operations under the [[Techne Programme Hold]]; no cross-repository writes.
+
+---
+
+## Current state
+
+- No Auto Proposal Research definition or prompt exists; `grep -rl "Auto Proposal" Pillars Admin` returns nothing.
+- `Pillars/Philosophy/Model/Activities/Tending/` holds nine definitions with `Tending.md` as index (one H2 per activity plus `## Adoption Requirements`); `Pillars/Philosophy/Model/Tools/Claude/Activities/Tending/` holds the prompts with `Tending.md` as index (`## Prompts`).
+- `Admin/Operations/Activities/Tending Activity.md` states that all nine Tending activities are enabled and defers to the Charter for the roster; the Charter lists three scheduled and six conversational Tending activities.
+- `ki repo audit --skill ki-repo-kb-activities --repo . --progress never` passes at planning time.
+
+---
+
+## Steps
+
+- [ ] Write the Definition `Pillars/Philosophy/Model/Activities/Tending/Auto Proposal Research.md` following the shape of the existing Tending definitions: purpose, inputs (draft and Next records in `Streams/Roadmap/`), the shared `ki-plan` Ready criteria as the readiness test, outputs (a shaping proposal per candidate with named owner decisions), and the rule that the activity surfaces and humans decide.
+- [ ] Add an `## Auto Proposal Research` section to `Pillars/Philosophy/Model/Activities/Tending/Tending.md` in two to four substantive sentences, before `## Adoption Requirements`.
+- [ ] Write the Prompt `Pillars/Philosophy/Model/Tools/Claude/Activities/Tending/Auto Proposal Research.md`: read the roadmap via `ki repo roadmap list`, select drafts whose open questions appear resolved, apply `ki-next` and `ki-plan` to draft a shaping proposal for each, report owner decisions and evidence gaps, and write nothing beyond the report unless the operator approves a specific record edit.
+- [ ] Add the prompt to the `## Prompts` section of `Pillars/Philosophy/Model/Tools/Claude/Activities/Tending/Tending.md`.
+- [ ] Update `Admin/Operations/Activities/Tending Activity.md` so it no longer says "all nine" are enabled, and records Auto Proposal Research as defined with realisation `manual` and not enabled pending Kris's adoption.
+- [ ] Record the suggested cadence (weekly or fortnightly, aligned to council rhythm) in the Definition as guidance for a future adoption decision, not as a schedule.
+
+---
+
+## Files touched
+
+- `Pillars/Philosophy/Model/Activities/Tending/Auto Proposal Research.md` (new)
+- `Pillars/Philosophy/Model/Activities/Tending/Tending.md`
+- `Pillars/Philosophy/Model/Tools/Claude/Activities/Tending/Auto Proposal Research.md` (new)
+- `Pillars/Philosophy/Model/Tools/Claude/Activities/Tending/Tending.md`
+- `Admin/Operations/Activities/Tending Activity.md`
+- this record
+
+---
+
+## Verify
+
+- Both new notes exist and each Tending index has a section or entry for Auto Proposal Research.
+- `git diff --quiet HEAD -- Admin/Governance/Charter.md` succeeds: the Charter scheduled and conversational tables are unchanged.
+- `ki repo audit --skill ki-repo-kb-activities --repo . --progress never` PASS.
+- `ki repo audit --skill ki-repo-kb --repo . --progress never` PASS.
+- `ki repo audit --progress never` PASS.
+- New prose uses British English and ASCII hyphens only (`grep -nP '[\x{2013}\x{2014}]'` on the new and edited notes returns nothing).
+
+---
+
+## Dependencies / blocks
+
+No local dependency. The activity consumes the shared `ki-next`, `ki-plan` and `ki-work-roadmap` standards from `ki-agentic-harness` as they stand; it raises no handoff. Enabling a scheduled realisation later is a separate owner adoption through the Charter.
+
+---
+
+## Documentation impact
+
+### Decision Records
+
+None. Adding a manual, unenabled activity inside an adopted group is routine; a Decision Record would be warranted only if a later adoption creates a new activity group or a scheduled spend.
+
+### Specifications
+
+None. The readiness test is the shared `ki-plan` Ready criteria, owned by `ki-agentic-harness`.
+
+### Guides
+
+The new Definition and Prompt notes are the guidance; the two Tending index notes gain an entry each.
+
+### Roadmap
+
+This record moves to awaiting-review on delivery. A future record may adopt a scheduled realisation through the Charter if the manual activity proves useful.
+
+---
+
+## Discussion
+
+### Decisions under delegated autonomy
+
+- Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible: "proposal-ready" means the shared `ki-plan` Ready criteria; no new convention or proposal format is defined.
+- Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible: the activity belongs to the Tending group rather than a new Governance group.
+- Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible: realisation `manual`, not enabled in the Charter; enabling a scheduled run is Kris's adoption and spend.
+
+### Planning correction
+
+The triage named the Admin Tending Activity note as the definition's home. In the current layout the portable Definition lives in `Pillars/Philosophy/Model/Activities/Tending/` beside the other nine, and the Admin note holds only Arcadia's adoption position, so both are touched. The triage also listed `Admin/Operations/Activities/Activities.md`; its Tending row ("Core maintenance loop") does not enumerate activities, so it needs no change.
+
+### Original open questions
+
+1. **Which activity group?** Resolved above as Tending. A dedicated Governance group remains possible if other governance-facing activities emerge.
+2. **What triggers a proposal?** Resolved above: the `ki-plan` Ready criteria, which already cover resolved open questions, concrete steps and verification.
+3. **Who reviews the proposals?** The activity surfaces; council members and the owner decide. The activity never ratifies.
 
 ---
 
 ## Governance
 
-This stream follows the [[Philosophy/Model/Processes/Enactment Process|Enactment Process]].
-
----
-
-## Outputs
-
-| Type          | Detail                                                                                          |
-| ------------- | ----------------------------------------------------------------------------------------------- |
-| Activity note | `Activities/[Group]/Auto Proposal Research.md` - the Definition: what the activity does and why |
-| Prompt note   | `Tools/Claude/Activities/[Group]/Auto Proposal Research.md` - the Prompt: executable prompt     |
-| Convention    | Definition of "proposal-ready" criteria and proposal note format                                |
-
----
-
-## Checklist
-
-- [ ] Define what "proposal-ready" means - criteria for when a stream idea is sufficiently developed to become a formal proposal
-- [ ] Define the proposal note format - what a well-formed proposal contains, how it links to source material and rationale
-- [ ] Decide which activity group Auto Proposal Research belongs to (Tending is likely; a new Governance group is possible)
-- [ ] Write the Definition note
-- [ ] Write the Prompt
-- [ ] Consider cadence - weekly or fortnightly makes sense given council meeting rhythm
-
----
-
-## Open Questions
-
-1. **Which activity group?** Tending covers island health and structure; this is more about governance readiness. A dedicated Governance activity group under Activities may be warranted if other governance-facing activities emerge.
-
-2. **What triggers a proposal?** The activity needs a definition of "ready" - otherwise it produces proposals prematurely or misses mature ideas. Likely a combination of: stream status (`in-progress`), presence of a Design section with substantive content, and explicit open questions that have been resolved.
-
-3. **Who reviews the proposals?** The activity produces proposal notes; council members decide whether to ratify. The activity itself should not make that call - it surfaces; humans decide.
-
-## Adherence
-
-This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.
+This roadmap record adheres to the [[Admin/Operations/Processes/Enactment Process|Enactment Process]]. Move content to `Admin/`, `Pillars/`, or `Resources/` only on user approval of a `ready` record.
