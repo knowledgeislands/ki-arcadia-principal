@@ -10,7 +10,7 @@ blocks: []
 blocked_by: []
 baseline_ref: 768814f
 created_at: 2026-10-06T09:00:00Z
-updated_at: 2026-10-06T10:30:00Z
+updated_at: 2026-10-06T11:00:00Z
 ---
 
 # Govern Territorial Classification and Exchange from the Capital
@@ -51,7 +51,7 @@ Approved by Kris Brown on 2026-10-06.
 ## Current state
 
 - Done 2026-10-06: decisions 1-6 approved; GOV-016 reserved (`768814f`); all seven non-KI opt-ins removed in their own repositories, with GDR-HNR-HARNESS-002 amended in place; `KI-HARNESS-GOV-122` re-scoped and `KI-TOOL-CLI-104` captured.
-- Remaining: the Capital's route-policy authority in the Charter and its decision record, the policy file, and the coordinated switch described under Implementation plan.
+- Remaining: the Capital's route-policy authority in the Charter and its decision record, the territory table in Arcadia's `.ki.toml`, and the coordinated switch described under Implementation plan.
 
 ## Steps
 
@@ -65,7 +65,7 @@ Approved by Kris Brown on 2026-10-06.
 
 ## Files touched
 
-- This record, [[Admin/Governance/Charter|Charter]], [[Known Lands]], the Capital policy file and a new Decision Record in `Admin/Governance/Decisions/`.
+- This record, [[Admin/Governance/Charter|Charter]], [[Known Lands]], Arcadia's `.ki.toml` territory table and a new Decision Record in `Admin/Governance/Decisions/`.
 - Delivery in other repositories is owned by their linked items.
 
 ## Verify
@@ -102,11 +102,11 @@ Closes on acceptance once the switch is verified.
 
 Grounded in the code on 2026-10-06; schema and location await owner confirmation.
 
-- **Policy location.** `Admin/Governance/trade-policy.toml` in the Capital, at a fixed path. A `.ki.toml` pointer is avoided because the current tools reject unknown `ki-trades` keys.
-- **Capital discovery.** A member resolves the unique registered `ki-repo-kb-principal` repository whose policy declares itself as `capital` and lists the member. None is unavailable; several is ambiguous; both fail closed. This mirrors Agora home resolution without consulting an Agora.
-- **Schema.** `schema = "ki-trades/territory-policy/v1"`, `territory`, `capital`, `members`, purposeful `[[channels]]` (`id`, `purpose`, `from`, `to`, `kinds`) expanding to exact source, receiver and kind triples, and `[[standing]]` grants with subtype and description. No wildcards in v1, no duplicate triple, no self-route, every endpoint a member, and every standing grant covered by a knowledge channel.
+- **Policy location.** A `[skills.ki-trades.territory]` table in the Capital's own `.ki.toml`, approved by the owner on 2026-10-06. It follows the existing precedent of the `kis` Agora home in the same file and keeps repository configuration in one place. Because today's tools reject unknown `ki-trades` keys, release A must accept the table before Arcadia adds it.
+- **Capital discovery.** The Capital is the unique registered repository whose `.ki.toml` declares `[skills.ki-trades.territory]` listing the island as a member, resolved as Agora homes already are. None is unavailable and several is ambiguous; both fail closed, and no Agora is consulted.
+- **Schema.** `[skills.ki-trades.territory]` with `name` and `members`; purposeful `[[skills.ki-trades.territory.channels]]` (`id`, `purpose`, `from`, `to`, `kinds`) expanding to exact source, receiver and kind triples; and `[[skills.ki-trades.territory.standing]]` grants with `channel`, `subtype` and `description`. Identities use canonical HTTPS GitHub form as Agora members do. No wildcards in v1, no duplicate triple, no self-route, every endpoint a territory member, and every standing grant covered by a knowledge channel. Territory members are declared separately from the `kis` Agora even where they coincide. Members keep a bare `[skills.ki-trades]`; only the Capital may carry the territory table.
 - **Standing intake.** Grants and subtype descriptions move into the Capital policy so members stay bare. The receiver still runs capture in its own checkout and owns the resulting evidence.
-- **Sequence.** Arcadia authority and decision first. `tools-ki` release A adds the parser, resolver, sweep and migration report while legacy tables stay authoritative. Arcadia then commits the policy once the report shows every active direction, standing grant and open record covered and the pending Techné-to-Homebrew direction decided. Release B and the harness change switch authority together with no fallback. Members strip their route tables only after B is installed everywhere. Release C retires legacy keys.
+- **Sequence.** Arcadia authority and decision first. `tools-ki` release A adds the parser, resolver, sweep and migration report while legacy tables stay authoritative. Arcadia then adds the territory table once the report shows every active direction, standing grant and open record covered and the pending Techné-to-Homebrew direction decided. Release B and the harness change switch authority together with no fallback. Members strip their route tables only after B is installed everywhere. Release C retires legacy keys.
 - **Known limits.** A named island that has not opted in cannot be selected by `--skill ki-trades`, so a full `ki repo audit` fails it through `ki-repo` COV-1 instead. COV-1 then depends on the registry and the Capital policy. The policy must refuse removal of a channel a live record depends on.
 
 ### Classification meanings
