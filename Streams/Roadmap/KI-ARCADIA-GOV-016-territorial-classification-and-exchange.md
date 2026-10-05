@@ -10,7 +10,7 @@ blocks: []
 blocked_by: []
 baseline_ref: 768814f
 created_at: 2026-10-06T09:00:00Z
-updated_at: 2026-10-06T11:00:00Z
+updated_at: 2026-10-06T11:30:00Z
 ---
 
 # Govern Territorial Classification and Exchange from the Capital
@@ -139,6 +139,10 @@ Central internal routing does not automatically extend across territorial bounda
 3. **A work offer or contribution:** the receiver decides whether to take it into local work. Publishing knowledge or offering a contribution does not grant execution authority; a formal trade is one possible handoff mechanism, not the mandatory form of every interaction.
 
 The classification and governance of these cases belongs in the model proposal now. Activation, transport, automation and agreements with specific external territories remain deferred until reviewed separately. No public source-store path or private consumer inventory is introduced here.
+
+### Open owner question
+
+Before the territory table is authored: activate or omit the pending `work` direction from `knowledgeislands/tools-techne` to `knowledgeislands/homebrew-tap`. Today `tools-techne` exports it and `homebrew-tap` does not import it, so it grants nothing. Activating it adds a channel; omitting it drops the export from `tools-techne` when member tables are stripped. Either way the migration report must show it as an explicit decision.
 
 ---
 
