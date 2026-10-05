@@ -6,13 +6,11 @@ title: Govern territorial classification and exchange from the Capital
 theme: governance
 horizon: now
 status: in-progress
-blocks:
-  - KI-HARNESS-GOV-122
-  - KI-TOOL-CLI-104
+blocks: []
 blocked_by: []
 baseline_ref: 768814f
 created_at: 2026-10-06T09:00:00Z
-updated_at: 2026-10-06T09:00:00Z
+updated_at: 2026-10-06T10:30:00Z
 ---
 
 # Govern Territorial Classification and Exchange from the Capital
@@ -52,14 +50,14 @@ Approved by Kris Brown on 2026-10-06.
 
 ## Current state
 
-- Done 2026-10-06: decisions 1-6 approved; GOV-016 reserved (`768814f`); the five non-HNR opt-in removals committed in their own repositories.
-- Remaining: HNR opt-in removal and decision-record amendment; harness GOV-122 re-scope and the `tools-ki` item; the Capital route policy, its authority in the Charter, the enforcement checks and the migration.
+- Done 2026-10-06: decisions 1-6 approved; GOV-016 reserved (`768814f`); all seven non-KI opt-ins removed in their own repositories, with GDR-HNR-HARNESS-002 amended in place; `KI-HARNESS-GOV-122` re-scoped and `KI-TOOL-CLI-104` captured.
+- Remaining: the Capital's route-policy authority in the Charter and its decision record, the policy file, and the coordinated switch described under Implementation plan.
 
 ## Steps
 
 - [x] Record the owner decisions and reserve this identity.
 - [x] Remove the seven unused non-KI opt-ins in their own repositories.
-- [ ] Re-scope `KI-HARNESS-GOV-122` to the shared contract and add `KI-TOOL-CLI-104`, each `blocked_by` this record.
+- [x] Re-scope `KI-HARNESS-GOV-122` to the shared contract and capture `KI-TOOL-CLI-104`, each blocked by this record.
 - [ ] Declare the Capital's route-policy authority in the [[Admin/Governance/Charter|Charter]] and record the governing decision.
 - [ ] Settle the policy location and schema, then author the Capital policy reconciling every current effective route, with the pending Techné-to-Homebrew direction as an explicit decision.
 - [ ] Deliver the harness standard and `tools-ki` resolution, member audit, Capital sweep and read-only migration report.
@@ -78,7 +76,7 @@ Approved by Kris Brown on 2026-10-06.
 
 ## Dependencies / blocks
 
-Blocks `KI-HARNESS-GOV-122` and `KI-TOOL-CLI-104`. Related but independent: [[KI-ARCADIA-ECO-006-simplify-ecosystem-agora-declarations|ECO-006]], [[KI-ARCADIA-MOD-006-knowledge-acquisition-lifecycle|MOD-006]], [[KI-ARCADIA-MOD-004-semantic-conventions|MOD-004]], [[KI-ARCADIA-GOV-001-boundary-rules|GOV-001]] and [[KI-ARCADIA-MOD-003-island-visualisation|MOD-003]] keep their own scope.
+No local dependency. This record blocks `knowledgeislands/ki-agentic-harness` `KI-HARNESS-GOV-122` and `knowledgeislands/tools-ki` `KI-TOOL-CLI-104`, which record the reciprocal relationship in prose. Related but independent: [[KI-ARCADIA-ECO-006-simplify-ecosystem-agora-declarations|ECO-006]], [[KI-ARCADIA-MOD-006-knowledge-acquisition-lifecycle|MOD-006]], [[KI-ARCADIA-MOD-004-semantic-conventions|MOD-004]], [[KI-ARCADIA-GOV-001-boundary-rules|GOV-001]] and [[KI-ARCADIA-MOD-003-island-visualisation|MOD-003]] keep their own scope.
 
 ## Documentation impact
 
@@ -99,6 +97,17 @@ The harness `ki-trades` standard and rubric change in `KI-HARNESS-GOV-122`.
 Closes on acceptance once the switch is verified.
 
 ## Discussion
+
+### Implementation plan
+
+Grounded in the code on 2026-10-06; schema and location await owner confirmation.
+
+- **Policy location.** `Admin/Governance/trade-policy.toml` in the Capital, at a fixed path. A `.ki.toml` pointer is avoided because the current tools reject unknown `ki-trades` keys.
+- **Capital discovery.** A member resolves the unique registered `ki-repo-kb-principal` repository whose policy declares itself as `capital` and lists the member. None is unavailable; several is ambiguous; both fail closed. This mirrors Agora home resolution without consulting an Agora.
+- **Schema.** `schema = "ki-trades/territory-policy/v1"`, `territory`, `capital`, `members`, purposeful `[[channels]]` (`id`, `purpose`, `from`, `to`, `kinds`) expanding to exact source, receiver and kind triples, and `[[standing]]` grants with subtype and description. No wildcards in v1, no duplicate triple, no self-route, every endpoint a member, and every standing grant covered by a knowledge channel.
+- **Standing intake.** Grants and subtype descriptions move into the Capital policy so members stay bare. The receiver still runs capture in its own checkout and owns the resulting evidence.
+- **Sequence.** Arcadia authority and decision first. `tools-ki` release A adds the parser, resolver, sweep and migration report while legacy tables stay authoritative. Arcadia then commits the policy once the report shows every active direction, standing grant and open record covered and the pending Techné-to-Homebrew direction decided. Release B and the harness change switch authority together with no fallback. Members strip their route tables only after B is installed everywhere. Release C retires legacy keys.
+- **Known limits.** A named island that has not opted in cannot be selected by `--skill ki-trades`, so a full `ki repo audit` fails it through `ki-repo` COV-1 instead. COV-1 then depends on the registry and the Capital policy. The policy must refuse removal of a channel a live record depends on.
 
 ### Classification meanings
 
