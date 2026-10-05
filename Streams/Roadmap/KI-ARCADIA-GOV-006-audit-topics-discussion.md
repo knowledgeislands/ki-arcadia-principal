@@ -5,12 +5,12 @@ area: GOV
 title: Audit topics alignment discussion
 theme: governance
 horizon: future
-status: draft
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-09-04T08:17:42Z
-updated_at: 2026-10-05T08:06:26Z
+updated_at: 2026-10-05T12:00:00Z
 ---
 
 # Audit Topics Alignment Discussion
@@ -23,8 +23,12 @@ The audit found GitHub topics differ from `package.json` keywords: missing `arca
 
 Live GitHub topics now equal the `package.json` keywords (`arcadia`, `knowledge-base`, `knowledge-islands`, `markdown`) and `ki repo audit` passes. No topics work remains; the owner may retire this record together with [[Streams/Roadmap/KI-ARCADIA-GOV-011-reconcile-github-live-settings|KI-ARCADIA-GOV-011]].
 
-### Question for Kris (2026-10-05)
+### Owner decision - 2026-10-05
 
-Do you approve closing [[KI-ARCADIA-GOV-006-audit-topics-discussion|KI-ARCADIA-GOV-006]], [[KI-ARCADIA-GOV-011-reconcile-github-live-settings|KI-ARCADIA-GOV-011]] and [[KI-ARCADIA-OPS-010-repair-granola-capture-metadata|KI-ARCADIA-OPS-010]] together as Triage / done with `intake_disposition: rejected` (already reconciled, no change needed) under `ki-accept`?
+Answered: Kris decided to close KI-ARCADIA-GOV-006, KI-ARCADIA-GOV-011 and KI-ARCADIA-OPS-010 directly as `done`, with no `intake_disposition`, because each is already resolved.
 
-Classified as an owner decision by the Fable reviewer under delegated autonomy (2026-10-05): the work is verified resolved (live GitHub settings and topics match the declared contract, and the harness delegates `+/_ACQUIRE/**` metadata), but a terminal intake disposition needs explicit human approval.
+---
+
+## Done
+
+Accepted by Kris 2026-10-05: already resolved. Live GitHub topics equal the `package.json` keywords (`arcadia`, `knowledge-base`, `knowledge-islands`, `markdown`) and `ki repo audit` passes (re-check 2026-10-04 above). No topics work remains. Retained as `done` history; not pruned.

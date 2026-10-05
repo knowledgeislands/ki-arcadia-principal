@@ -13,7 +13,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-27T19:18:58Z
-updated_at: 2026-10-05T08:17:56Z
+updated_at: 2026-10-05T12:00:00Z
 author: Written with Claude
 ---
 
@@ -44,14 +44,14 @@ Observed at planning, `kit-legal` HEAD `3967919f` (2026-10-04), resolved through
 - `Admin/Governance/` holds `Charter.md`, `Conformance.md`, `Conventions/`, `Decisions/`, `Governance.md`, `Known Lands.md`, `Note Templates/` and `Policies/`.
 - `Admin/Governance/Charter.md` § Territory: Legal is an independently governed territory and `krisb/kit-legal` is its Capital.
 - `Admin/Governance/Known Lands.md` § External signposts lists only Equal Remedy (`equalremedy/er-research`).
-- `CLAUDE.md` imports `AGENTS.md`; `COWORK.md` § Mounted folders declares the notes mount, but its host path `/Users/krisbrown/kis/kit-legal/kit-legal/` no longer exists. Live Cowork mount state cannot be verified from the filesystem.
+- `CLAUDE.md` imports `AGENTS.md`.
 - Arcadia is referenced from `Admin/Operations/Activities/File System Granola Import Activity.md`, `Admin/Governance/Policies/Claude Operating Rules Policy.md` and `Admin/Governance/Conventions/Admin Conventions/Skills Conventions.md`.
 - The working tree carries unrelated uncommitted matter edits from other sessions; this record must leave them untouched.
 
 ## Steps
 
 - [ ] Re-ground `kit-legal` read-only: record HEAD and `git status --short` before inspection, and re-run `ki repo audit --progress never` there.
-- [ ] Step 1 (Cowork mount): record `COWORK.md` § Mounted folders as evidence of intent, the stale host path as an observation for `kit-legal`'s owner, and live mount state as unverified.
+- [ ] Step 1 (Cowork mount): disposition as dropped by owner decision (Kris, 2026-10-05: "we don't bother with COWORK.md"); no Cowork mount or `COWORK.md` check is made.
 - [ ] Step 2 (review): record the `kit-legal` audit result as evidence.
 - [ ] Step 3 (`Pillars/Admin/Governance/`): disposition as superseded by `Admin/Governance/`; list the governance surface present and note that Identity, Physical Locations, Routing Rules and Glossary were replaced by the Charter and Known Lands model.
 - [ ] Step 4 (`CLAUDE.md`): record `CLAUDE.md` and `AGENTS.md` as evidence.
@@ -86,7 +86,7 @@ None. No behaviour-level contract changes.
 
 ### Guides
 
-None in Arcadia. The stale `COWORK.md` host path is reported to `kit-legal`'s owner as an observation, not edited.
+None in Arcadia.
 
 ### Roadmap
 
@@ -99,6 +99,10 @@ Closes this inception record on acceptance. Any follow-up `kit-legal` work belon
 Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible: the waiting-for blocker is no longer live and the satellite-bootstrapped-by-Arcadia premise is superseded by Legal's independent territory, so the remaining work is an evidence-reconciliation pass with superseded steps dispositioned rather than recreated.
 
 Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible: adding a public Arcadia Known Lands signpost to the private Legal territory is excluded from this record.
+
+### Owner decision - 2026-10-05
+
+Kris decided "we don't bother with COWORK.md". The Cowork mount and `COWORK.md` checks are removed from this record's scope: Step 1 is dispositioned as dropped, and no Cowork mount state or `COWORK.md` path is inspected or reported. `kit-legal` is not edited.
 
 ### Original framing
 

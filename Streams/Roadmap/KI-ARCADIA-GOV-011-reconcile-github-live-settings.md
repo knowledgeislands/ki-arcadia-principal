@@ -5,12 +5,12 @@ area: GOV
 title: Reconcile GitHub live settings with the declared contract
 theme: governance
 horizon: triage
-status: draft
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-09-26T16:26:40Z
-updated_at: 2026-10-05T08:06:26Z
+updated_at: 2026-10-05T12:00:00Z
 ---
 
 # Reconcile GitHub Live Settings with the Declared Contract
@@ -60,8 +60,12 @@ Before further implementation, reconcile the current destination branch, linked 
 - **Observed:** Live GitHub state now has Issues disabled, commit `1cc7136` is on `origin/main`, and `ki repo audit` on Arcadia passes with no `ki-repo` finding. GitHub topics also equal the `package.json` keywords, so the related [[Streams/Roadmap/KI-ARCADIA-GOV-006-audit-topics-discussion|KI-ARCADIA-GOV-006]] observation is likewise resolved.
 - **Recommendation:** No settings work remains. Close this Triage record as `rejected` (already reconciled, no change needed); that terminal disposition needs the owner's explicit approval under `ki-accept`.
 
-### Question for Kris (2026-10-05)
+### Owner decision - 2026-10-05
 
-Do you approve closing [[KI-ARCADIA-GOV-006-audit-topics-discussion|KI-ARCADIA-GOV-006]], [[KI-ARCADIA-GOV-011-reconcile-github-live-settings|KI-ARCADIA-GOV-011]] and [[KI-ARCADIA-OPS-010-repair-granola-capture-metadata|KI-ARCADIA-OPS-010]] together as Triage / done with `intake_disposition: rejected` (already reconciled, no change needed) under `ki-accept`?
+Answered: Kris decided to close KI-ARCADIA-GOV-006, KI-ARCADIA-GOV-011 and KI-ARCADIA-OPS-010 directly as `done`, with no `intake_disposition`, because each is already resolved.
 
-Classified as an owner decision by the Fable reviewer under delegated autonomy (2026-10-05): the work is verified resolved (live GitHub settings and topics match the declared contract, and the harness delegates `+/_ACQUIRE/**` metadata), but a terminal intake disposition needs explicit human approval.
+---
+
+## Done
+
+Accepted by Kris 2026-10-05: already resolved. Live GitHub state has Issues disabled, commit `1cc7136` (removing the `package.json` `bugs` field) is on `origin/main`, and `ki repo audit` passes with no `ki-repo` finding (re-check 2026-10-04 above). No settings work remains. Retained as `done` history; not pruned.

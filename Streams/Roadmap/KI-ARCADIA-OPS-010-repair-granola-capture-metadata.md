@@ -5,12 +5,12 @@ area: OPS
 title: Repair Granola capture note metadata
 theme: operational-tooling
 horizon: triage
-status: draft
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-09-26T16:26:40Z
-updated_at: 2026-10-05T08:06:26Z
+updated_at: 2026-10-05T12:00:00Z
 ---
 
 # Repair Granola Capture Note Metadata
@@ -59,8 +59,12 @@ These two captures are also unharvested: nothing yet extracts them into durable 
 - **Observed:** The structural resolution already landed in the harness: `ki-agentic-harness` `a9071b5e` ("delegate acquisition record metadata", 26 September 2026) delegates acquisition-record metadata out of NOTE-1c. Both captures remain unchanged with their original provenance, and `ki repo audit` on Arcadia passes with no `ki-repo-kb` finding.
 - **Recommendation:** No local work remains. Close this Triage record as `rejected` (resolved upstream, no local change needed); that terminal disposition needs the owner's explicit approval under `ki-accept`.
 
-### Question for Kris (2026-10-05)
+### Owner decision - 2026-10-05
 
-Do you approve closing [[KI-ARCADIA-GOV-006-audit-topics-discussion|KI-ARCADIA-GOV-006]], [[KI-ARCADIA-GOV-011-reconcile-github-live-settings|KI-ARCADIA-GOV-011]] and [[KI-ARCADIA-OPS-010-repair-granola-capture-metadata|KI-ARCADIA-OPS-010]] together as Triage / done with `intake_disposition: rejected` (already reconciled, no change needed) under `ki-accept`?
+Answered: Kris decided to close KI-ARCADIA-GOV-006, KI-ARCADIA-GOV-011 and KI-ARCADIA-OPS-010 directly as `done`, with no `intake_disposition`, because each is already resolved.
 
-Classified as an owner decision by the Fable reviewer under delegated autonomy (2026-10-05): the work is verified resolved (live GitHub settings and topics match the declared contract, and the harness delegates `+/_ACQUIRE/**` metadata), but a terminal intake disposition needs explicit human approval.
+---
+
+## Done
+
+Accepted by Kris 2026-10-05: already resolved. `ki-agentic-harness` `a9071b5e` ("delegate acquisition record metadata", 26 September 2026) delegates acquisition-record metadata out of NOTE-1c; both captures retain their original provenance and `ki repo audit` passes with no `ki-repo-kb` finding (re-check 2026-10-04 above). No local work remains. Retained as `done` history; not pruned.
