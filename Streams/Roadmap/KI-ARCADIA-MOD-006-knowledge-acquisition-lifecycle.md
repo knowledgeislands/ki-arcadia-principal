@@ -7,69 +7,107 @@ theme: knowledge-model
 tags:
   - topic/knowledge-islands
   - topic/acquisition
-status: draft
+status: ready
 priority: medium
-horizon: soon
+horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-08-23T12:33:49Z
-updated_at: 2026-10-04T18:01:50Z
+updated_at: 2026-10-05T08:17:56Z
 ---
 
 # Knowledge Acquisition Lifecycle
 
 ## Goal
 
-Make the provider-neutral Knowledge Islands acquisition lifecycle operationally clear, so material from AI sessions and other external sources can enter an island faithfully, be harvested into durable knowledge, and eventually leave its transient source safely.
+Make the provider-neutral Knowledge Islands acquisition lifecycle operationally clear in one Pillars note, so material from AI sessions and other external sources can enter an island faithfully, be harvested into durable knowledge, and eventually leave its transient source safely.
 
 ## Context
 
-[ADR-KI-ARCADIA-001](../../Admin/Governance/Decisions/ADR-KI-ARCADIA-001-provider-neutral-knowledge-acquisition.md) establishes one lifecycle: discover, acquire, stage, harvest, durable knowledge, then archive or delete source. It applies to ChatGPT, Granola, Codex, Claude, Slack, email, documents, and future sources; provider mechanics remain below the architectural boundary.
+[[ADR-KI-ARCADIA-001-provider-neutral-knowledge-acquisition|ADR-KI-ARCADIA-001]] establishes one lifecycle: discover, acquire, stage, harvest, durable knowledge, then archive or delete source. It requires every adapter to preserve available original content, source identity, timestamps, media as byte-preserved assets, provenance and declared omissions, and to distinguish content-minimised discovery and checkpoint data from faithful source reads. It applies to ChatGPT, Granola, Codex, Claude, Slack, email, documents and future sources; provider mechanics remain below the architectural boundary.
 
-The first delivery evidence now exists. Claude and Codex have comparable read-only housekeeping surfaces, while `tools-ki` stages a validated local capture in the receiving repository's Harbour. The installed ChatGPT application has an opaque local session cache, which confirms that discovery, faithful raw acquisition, interpretation, and source retirement must remain separate concerns.
+The decision states the architecture but not the operational picture: what a provenance package contains, what checkpoint makes a capture safe to harvest, and how material moves after imperfect routing. Two local evidence sets now exist to derive that picture from observation rather than design: Claude housekeeping as a direct local source and Granola as an export/API-style source already staged in this island's Harbour. The installed ChatGPT application has an opaque local session cache, which confirms that discovery, faithful raw acquisition, interpretation and source retirement must remain separate concerns.
 
 ## Boundary
 
-This item governs the KI-wide model, source-class boundaries, and evidence required to promote the lifecycle. It does not implement a provider MCP, decrypt or reverse-engineer private provider storage, require perfect initial routing, or delete a source session merely because it was imported.
+- Governs the KI-wide operational model, source-class boundaries and observed provenance evidence only.
+- No live provider calls: no `ki acquire` run without `--dry-run`, no Granola API read, no write-level or destructive `mcp-housekeeping-claude` tool. A read-level local housekeeping invocation is permitted only to confirm the documented checkpoint shape.
+- Does not implement a provider MCP or `ki acquire` adapter, decrypt or reverse-engineer private provider storage, require perfect initial routing, or mutate, archive or delete any source session or staged capture.
+- Does not decide the archive or deletion threshold; that remains a later provider-specific decision.
+- No cross-repository write; provider work stays in its owning repository's roadmap. No remote operation under the [[Techne Programme Hold]].
 
-## Shaping
+## Current state
 
-### Intended approach
+- `Admin/Governance/Decisions/ADR-KI-ARCADIA-001-provider-neutral-knowledge-acquisition.md` is `status: current` and names `ki acquire import --adapter <provider>` as the repository-context staging operation.
+- Export/API evidence: `+/_ACQUIRE/granola/ledger.json` (schema 3) records adapter, provider, hashed account identity, source-schema and identity-checkpoint SHA-256 values, the acquisition interval, `exhaustive: true` and per-window counts with response hashes. Each staged meeting note (for example `+/_ACQUIRE/granola/2026-07-28--catch-up-w-alec--e8fbfc78-dc6c-448c-9ce0-d262c3316499.md`) carries `source_id`, `acquired_at`, `detail_sha256`, `transcript_sha256`, `transcript_observed_at`, folder membership and an explicit `omissions` list. Latest checkpoint commits: `72302d2`, `68fcb51`.
+- Direct local evidence: `mcp-housekeeping-claude` exposes read-level `claude_code_sessions_discover`, `claude_code_sessions_list`, `claude_code_sessions_checkpoint` (content-minimised, provenance-preserving, writes nothing) and `claude_code_session_read`; access defaults to `read`. Arcadia describes it in [[Claude Housekeeping]].
+- Asymmetry observed at planning: `tools-ki` `src/core/acquire/` ships only `granola` and `chatgpt` adapters, so the Claude source is evidenced at discovery and checkpoint level, not as a Harbour-staged capture. Session acquisition is in flight in `ki-agentic-harness` as `KI-HARNESS-OPS-005` (in progress).
+- No Pillars note describes the lifecycle operationally; `Pillars/Philosophy/Model/Processes/` holds [[How Change Happens]] and the Enactment and Contribution processes.
 
-Describe the common provenance package and staging boundary independently of provider transport. Establish the minimum evidence that makes an acquisition safe to harvest: original available bytes, source identity, timestamps, assets, omissions, content-hash checkpoint, and repository context. Define how a repository can move material after imperfect routing without losing provenance.
+## Steps
 
-### Known dependencies
+- [ ] Re-read ADR-KI-ARCADIA-001, `+/_ACQUIRE/granola/ledger.json`, two or three staged Granola notes, and the `mcp-housekeeping-claude` README and checkpoint tool source; optionally run one read-level `claude_code_sessions_checkpoint` scoped to this repository.
+- [ ] Tabulate the provenance fields each source actually provides against the ADR's required set (original content, source identity, timestamps, assets, provenance, omissions, content hash, repository context), marking absent fields honestly.
+- [ ] Choose the note's folder under `Pillars/Philosophy/Model/` (likely `Processes/Acquisition Process/`) and create the note plus its same-name index if a new folder is needed, following the index-note rule.
+- [ ] Write the note: the six lifecycle stages with an owner per stage; the common provenance package; the harvest checkpoint as observed (source identity, timestamps, content hash, declared omissions); imperfect-routing handling (move within the Harbour or to another island without rewriting acquisition evidence); and source retirement stated as open, requiring a later provider-specific decision.
+- [ ] Cite both evidence sets by path and record the Claude staging asymmetry as an observed gap, not a design choice.
+- [ ] Add the note to its parent index with a two-to-four-sentence section.
+- [ ] Compare the observed checkpoint with ADR-KI-ARCADIA-001; amend the ADR in place only if the evidence contradicts it, otherwise leave it unchanged and say so in the review packet.
+- [ ] Prepare the review packet and set the record to `awaiting-review`.
 
-`tools-ki` owns repository-context staging. Provider MCPs and local/API/export adapters own discovery and source reads. `ki-agentic-harness` owns reusable provider-facing skills and their paired adapter surfaces. Individual provider work stays in the owning repository's roadmap.
+## Files touched
 
-### Decisions still needed
+- New note and, if a folder is created, its index under `Pillars/Philosophy/Model/` (folder chosen at implementation, likely `Pillars/Philosophy/Model/Processes/Acquisition Process/Acquisition Process.md`).
+- Parent index: `Pillars/Philosophy/Model/Processes/Processes.md` (or `Pillars/Philosophy/Model/Model.md` if placed elsewhere).
+- Conditional: `Admin/Governance/Decisions/ADR-KI-ARCADIA-001-provider-neutral-knowledge-acquisition.md`, only if the evidence contradicts it.
+- This record.
 
-Identify the durable record shape for acquisition provenance across source classes, the review checkpoint required before harvesting, and the evidence threshold before a provider-specific archive or deletion operation becomes eligible.
+## Verify
 
-### Promotion conditions
+- The note cites `+/_ACQUIRE/granola/ledger.json`, at least one staged Granola note, and the `mcp-housekeeping-claude` checkpoint tool by path or name.
+- The note states that the archive and deletion threshold is undecided.
+- `git status --short -- '+/_ACQUIRE/'` is empty after delivery: no staged capture changed.
+- No `ki acquire` command ran without `--dry-run` and no non-read housekeeping tool was invoked (stated in the review packet).
+- `grep -nP '[\x{2013}\x{2014}]' <new note paths>` returns nothing (ASCII hyphens only).
+- `ki repo audit --skill ki-repo-kb --repo . --progress never` PASS.
+- `ki repo audit --progress never` PASS.
 
-Promote this item when at least one direct local source and one export/API-style source demonstrate the common provenance and staging model without special-casing a provider in KI semantics.
+## Dependencies / blocks
+
+No local build-order dependency. Evidence comes from Arcadia's own Harbour and the read-level contract of `mcp-housekeeping-claude`. `KI-HARNESS-OPS-005` in `ki-agentic-harness` may later supply a Harbour-staged Claude capture; this record does not wait for it, and the note can be refreshed when it lands.
 
 ## Documentation impact
 
 ### Decision Records
 
-Keep ADR-KI-ARCADIA-001 current if shaping refines the lifecycle; create a separate decision only for an independent architectural choice.
+ADR-KI-ARCADIA-001 is amended in place only if the observed evidence contradicts it; otherwise no Decision Record changes. No new decision is needed for an operational description of an existing decision.
 
 ### Specifications
 
-Shape a portable acquisition specification once two source mechanisms prove the common record and checkpoint boundary.
+None now. A portable acquisition specification belongs in `ki-specifications` once two source mechanisms are both Harbour-staged through a common record; the Claude asymmetry means that threshold is not yet met.
 
 ### Guides
 
-Add operator guidance after the repository-context acquisition workflow is proven beyond prepared captures.
+The new Pillars note is the island's operational explanation. Operator procedure for `ki acquire` stays with `tools-ki`.
 
 ### Roadmap
 
-Provider implementation remains in its owning repository; this record retains the KI-wide architecture and promotion conditions.
+A later provider-specific record will be needed for the archive or deletion threshold. If the Claude staging gap persists after `KI-HARNESS-OPS-005`, capture it as a separate Triage item rather than widening this one.
 
 ## Discussion
+
+### Decisions under delegated autonomy
+
+Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible: the direct local source is Claude housekeeping (`mcp-housekeeping-claude`, read level only) and the export/API source is Granola as already staged in `+/_ACQUIRE/granola/` with `ledger.json`.
+
+Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible: the harvest checkpoint is source identity plus timestamps plus content hash plus declared omissions, documented as observed rather than prescribed.
+
+Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible: the archive and deletion threshold is explicitly left open, and ADR-KI-ARCADIA-001 is amended only if the evidence contradicts it.
+
+### Owner question resolved (2026-10-05)
+
+The 2026-10-04 question (which two sources prove the provenance package, and whether hash, identity, timestamps and omissions suffice) is resolved by the delegated decisions above, using existing local evidence instead of live end-to-end provider runs.
 
 ### Knowledge acquisition, not session archiving
 
@@ -77,22 +115,12 @@ A source-session browser is useful only because it makes transient working state
 
 ### Faithful first capture
 
-The first operation must favour preservation over interpretation. Opaque source records and unavailable media remain valid acquisition evidence when their bytes, identity, timestamps, and omissions are retained honestly. A later adapter may improve interpretation without rewriting the original acquisition evidence.
+The first operation must favour preservation over interpretation. Opaque source records and unavailable media remain valid acquisition evidence when their bytes, identity, timestamps and omissions are retained honestly. A later adapter may improve interpretation without rewriting the original acquisition evidence.
 
 ### Source retirement
 
 Archive and deletion require a later, provider-specific safety decision. Successful discovery, staging, or even harvesting alone does not authorise source mutation.
 
-### Pickup checkpoint - 2026-09-27
+### Dependencies by owner
 
-Before further implementation, reconcile the current destination branch, linked coordination tasks, and retained worktrees where applicable. Missing evidence does not release ownership or a hold; this checkpoint is guidance, not a mechanical execution block.
-
-- **Observed:** `ADR-KI-ARCADIA-001` establishes the provider-neutral lifecycle, and the Context identifies initial read-only housekeeping and repository-context staging evidence. Those are foundations, not the common provenance package or retirement policy sought by this record.
-- **Resolve:** Verify one direct local source and one export/API-style source against the same acquisition and staging evidence. Settle the provenance record, harvest checkpoint, imperfect-routing handling, and source archive/deletion threshold; leave provider mechanics with their owning repositories.
-- **Close:** Review the provider-neutral documentation and source-class evidence against the Goal before seeking owner acceptance through `ki-accept`. Retain the `done` record; pruning is a later explicit owner choice.
-
-### Question for Kris (2026-10-04)
-
-Which two sources should prove the common provenance package (for example Claude housekeeping as the direct local source and Granola as the export or API source), and is a content hash plus source identity, timestamps and omissions record sufficient as the harvest checkpoint?
-
-Classified as an owner decision by the Fable reviewer under delegated autonomy (2026-10-04): Promotion needs two real source mechanisms demonstrated end to end with live provider access and cross-repository evidence, and the provenance record shape is a KI-wide architectural choice recorded against ADR-KI-ARCADIA-001.
+`tools-ki` owns repository-context staging. Provider MCPs and local, API and export adapters own discovery and source reads. `ki-agentic-harness` owns reusable provider-facing skills and their paired adapter surfaces. Individual provider work stays in the owning repository's roadmap.

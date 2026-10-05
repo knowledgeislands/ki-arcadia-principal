@@ -7,154 +7,121 @@ theme: operational-tooling
 tags:
   - topic/knowledge-islands
   - topic/conventions
-status: draft
+status: ready
 priority: medium
-horizon: soon
+horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T20:40:18Z
-updated_at: 2026-10-04T18:01:50Z
+updated_at: 2026-10-05T08:17:56Z
 author: Written with Claude
 ---
 
 # Page Registry Proposal
 
-## Overview
+## Goal
 
-The page registry is a pre-built index that maps every leaf filename to its location(s) in the repository. It exists to support shortest-path wikilink resolution: rather than scanning the filesystem on every link read or write, agents load the registry once and perform O(1) lookups. Every page is stored - not just collisions - because if only collisions were stored, adding a second page with a previously unique name would silently break existing bare links with no way to detect it.
+Hand the shortest-unique wikilink collision problem, with the page-registry design as evidence, to the estate owner of the linking rule, so every Knowledge Base can detect links made ambiguous by a new page rather than Arcadia maintaining its own registry.
 
----
+## Context
 
-## Structure
+The page registry is a pre-built index mapping every leaf filename to its location or locations, so agents can resolve shortest-unique wikilinks with a lookup instead of scanning the filesystem. Every page is stored, not only collisions, because adding a second page with a previously unique name otherwise silently breaks existing bare links with no way to detect it.
 
-```json
-{
-  "Home": {
-    "/": [],
-    "Governance": ["Admin/Governance", "Pillars"]
-  },
-  "Activities": {
-    "Governance": "*"
-  },
-  "Agents": {
-    "Governance": "*"
-  },
-  "Governance": {
-    "Admin/Governance": ["Pillars"],
-    "Knowledge Islands": ["Pillars"]
-  },
-  "Pillars": {
-    "Governance": "*",
-    "Pillars": []
-  },
-  "Admin/Governance": ["Pillars"],
-  "Knowledge Islands": ["Pillars"],
-  "Linear": ["Tools", "Governance", "Knowledge Islands", "Pillars"],
-  "Tools": {
-    "Governance": "*"
-  }
-}
-```
+The rule it supports is estate-wide. `ki-agentic-harness` `skills/repo-structure/ki-repo-kb` defines `LINK-1` (shortest-unique Obsidian wikilinks), but `scripts/rubric/items/links.ts` implements it as a judgement-only item over sampled notes: nothing mechanically detects a collision. `tools-ki` has no wikilink code. The problem is live in Arcadia: at planning, 19 leaf names collide among tracked Markdown outside `+/` and `-/`, including `Activities.md` (three paths), `Conformance.md` (three), and `Enactment Process.md`, `Processes.md` and `Governance.md` (two each).
 
----
+## Boundary
 
-## Serialisation conventions
+- Arcadia builds no registry file, generation script, Activity or note-creation hook.
+- The deliverable is one submitted work trade to `knowledgeislands/ki-agentic-harness` over the declared work route; Arcadia writes no file in the harness or `tools-ki` checkout. The receiver owns disposition, priority, implementer choice and any resulting record.
+- No canonical `Admin/`, `Pillars/` or `Resources/` change. No remote operation under the [[Techne Programme Hold]].
 
-Two sentinel values appear in the JSON:
+## Current state
 
-- **Array** (e.g. `["Pillars"]`) - this entry is unique; the array is the parent path from immediate parent to repository root.
-- **`"*"`** - this node appears under every instance of its parent. Rather than enumerating all parent instances (which would duplicate the parent's own disambiguation logic and break if a new instance is added), the serialiser records only the parent name and defers resolution to the parent's entry at deserialisation time. A `"*"` value is never resolved directly - the deserialiser walks up to the parent key and resolves from there.
+- `.ki.toml` declares `[skills.ki-trades.routes."knowledgeislands/ki-agentic-harness"]` with `export = ["work", "knowledge"]`.
+- `-/_TRADES/` holds only its README; no prior trade for this subject exists, and no harness or `tools-ki` roadmap item mentions a page registry or wikilink collisions.
+- The registry design below is sound but its original example tree used retired `Pillars/Admin/...` and `Knowledge Islands/Governance` paths; it is remapped to the current layout in Discussion.
 
----
+## Steps
 
-## Tree diagram
+- [ ] Re-run the collision census (`git ls-files '*.md' | grep -vE '^(\+|-)/' | awk -F/ '{print $NF}' | sort | uniq -d`) and record the count and the largest sets in Discussion.
+- [ ] Prepare one work trade with `ki-trade prepare` for `knowledgeislands/ki-agentic-harness`, citing `KI-ARCADIA-OPS-003` as origin and carrying: the problem (`LINK-1` is judgement-only; collisions are undetected), the census, the registry design and algorithms from Discussion, and the proposal of a mechanical `LINK-1` companion check that flags bare links made ambiguous by a colliding leaf and reports the shortest-unique form, with `tools-ki` suggested as the natural implementer.
+- [ ] Submit the trade with `ki-trade submit <TRD>` and record its `TRD-` identity in Dependencies / blocks and Discussion.
+- [ ] Prepare the review packet and set the record to `awaiting-review`.
 
-The example below shows how `Admin/Governance` and `Knowledge Islands` share a `Governance` folder with the same set of child names, causing almost every index note in the subtree to collide.
+## Files touched
 
-```text
-Home.md ←──────────────────────────────── [[Home]]
-Pillars
-|── Pillars.md ←───────────────────────── [[Pillars/Pillars]]
-├── Admin/Governance
-│   ├── Admin/Governance.md ←─────────── [[Admin/Governance]]
-│   └── Governance
-│       ├── Governance.md ←────────────── [[Admin/Governance/Governance]]
-│       ├── Home.md ←──────────────────── [[Governance/Home]]
-│       ├── Activities
-│       │   └── Activities.md ←────────── [[Admin/Governance/Activities]]
-│       ├── Agents
-│       │   └── Agents.md ←────────────── [[Admin/Governance/Agents]]
-│       ├── Pillars
-│       │   └── Pillars.md ←───────────── [[Admin/Governance/Pillars]]
-│       └── Tools
-│           └── Tools.md ←─────────────── [[Admin/Governance/Tools]]
-└── Knowledge Islands
-    ├── Knowledge Islands.md ←─────────── [[Knowledge Islands]]
-    └── Governance
-        ├── Governance.md ←────────────── [[Philosophy/Governance]]
-        ├── Activities
-        │   └── Activities.md ←────────── [[Philosophy/Activities]]
-        ├── Agents
-        │   └── Agents.md ←────────────── [[Philosophy/Agents]]
-        ├── Pillars
-        │   └── Pillars.md ←───────────── [[Philosophy/Pillars]]
-        └── Tools
-            └── Tools.md ←─────────────── [[Philosophy/Tools]]
-            └── Linear.md ←────────────── [[Linear]]  (unique)
-```
+- `-/_TRADES/knowledgeislands/ki-agentic-harness/TRD-<hex>.md` (new, sender-owned).
+- This record.
 
----
+## Verify
 
-## Algorithm - mapping
+- `-/_TRADES/knowledgeislands/ki-agentic-harness/TRD-<hex>.md` exists with `phase: submitted` and names `KI-ARCADIA-OPS-003` as origin.
+- `ki repo audit --skill ki-trades --repo . --progress never` PASS.
+- `git diff --name-only <baseline_ref>..HEAD` lists only this record and the trade file.
+- No commit in `ki-agentic-harness` or `tools-ki` originates from this delivery.
+- `ki repo audit --progress never` PASS.
 
-Given a full path, find the shortest unambiguous link. This is a straightforward registry lookup:
+## Dependencies / blocks
 
-1. Look up the leaf name in the registry.
-2. If the entry is an **array** (unique) → use `[[Leaf]]`.
-3. If the entry is an **object** (collision) → read off the minimum prefix that uniquely identifies this instance among all entries. Use `[[Prefix/Leaf]]`.
+No local build-order dependency. The trade is non-blocking: this record closes once the trade is submitted, and the receiver schedules any resulting work in its own horizon. Reciprocity is carried by the trade identity recorded here and by the receiver's `transferred_from` on any record it creates, not by `blocks` or `blocked_by`, which the work-roadmap standard reserves for local build order and which must never hold trade identities.
 
-Examples:
+## Documentation impact
 
-- `Linear` → array entry → `[[Linear]]`.
-- `Governance` at `Pillars/Philosophy/Governance` → object entry, key `Knowledge Islands` → `[[Philosophy/Governance]]`.
-- `Activities` at KI/Governance → object entry `*` → inherit Governance's prefix → `[[Philosophy/Activities]]`.
+### Decision Records
 
----
+None. Arcadia makes no architectural choice; whether to add a mechanical check is the receiver's decision.
 
-## Algorithm - mutating
+### Specifications
 
-When a new page is created, the registry must be updated. This is where the structural complexity lives:
+None in Arcadia. Any linking-rule contract change belongs to the harness `ki-repo-kb` standard and is the receiver's call.
 
-1. Look up the leaf name in the registry.
-2. **Not found** - globally unique. Insert as a top-level array entry: `"Leaf": [immediate_parent, grandparent, …, vault_root]`. Use `[[Leaf]]`.
-3. **Found as array** (currently unique) - a collision is being introduced. Convert to an object: the existing entry becomes one keyed entry, the new page becomes another. Any existing `[[Leaf]]` links are now ambiguous - trigger a wikilink review to update them to their disambiguated prefix. Use the disambiguated form for the new page.
-4. **Found as object** (already a collision) - add the new page as a further keyed entry. Use the minimum disambiguating prefix.
+### Guides
+
+None. Arcadia authoring guidance already defers link rules to `ki-repo-kb`.
+
+### Roadmap
+
+Adds one outbound work trade to `ki-agentic-harness`. No further Arcadia item is expected unless the receiver declines and Arcadia later wants a local mitigation.
+
+## Discussion
+
+### Decisions under delegated autonomy
+
+Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible: the capability is estate-wide, so Arcadia does not build a committed registry; the Arcadia deliverable is a handoff to `ki-agentic-harness` carrying the design as evidence, with `tools-ki` named as the natural implementer.
+
+Planning correction (2026-10-05): the triage proposed raising an item directly in `ki-agentic-harness/docs/roadmap/` with reciprocal `blocks`/`blocked_by`. `ki-trade` operates only the sender's side and never writes a peer checkout, and the standard forbids trade identities in `blocks`/`blocked_by`, so the handoff is a submitted trade and reciprocity is by trade identity and `transferred_from`.
+
+### Owner question resolved (2026-10-05)
+
+The 2026-10-04 question (a committed registry here, or capability in `tools-ki`) is resolved by the delegated decision above: no Arcadia registry; the capability is handed to the estate owner of `LINK-1`.
+
+### Registry design (trade evidence)
+
+Serialisation uses two sentinel values. An **array** marks a unique entry and lists the parent path from immediate parent to repository root. **`"*"`** marks a node that appears under every instance of its parent; rather than enumerating parent instances, the serialiser records the parent name and defers resolution to the parent's entry, so a `"*"` value is never resolved directly.
+
+Mapping (path to shortest link): look up the leaf; an array entry yields `[[Leaf]]`; an object entry yields `[[Prefix/Leaf]]` with the minimum prefix that distinguishes this instance.
+
+Mutating (new page): not found inserts a top-level array entry and uses `[[Leaf]]`; found as an array converts the entry to an object, flags every existing `[[Leaf]]` link for review because it is now ambiguous, and uses the disambiguated form; found as an object adds a further keyed entry.
+
+Implementation notes: an ES `Map` keyed by filename gives constant-time lookup; the JSON form is compact and a full Arcadia registry is likely under 4 KB. A full rebuild is the source of truth after bulk moves or renames, with incremental mutation between rebuilds.
+
+### Current-layout example
+
+The original tree showed retired `Pillars/Admin/Governance` and `Knowledge Islands/Governance` paths. At planning the equivalent collisions are:
+
+| Leaf | Paths |
+| --- | --- |
+| `Activities` | `Admin/Operations/Activities/`, `Pillars/Philosophy/Model/Activities/`, `Pillars/Philosophy/Model/Tools/Claude/Activities/` |
+| `Conformance` | `Admin/Governance/`, `Pillars/Philosophy/Model/Activities/Constitutional/`, `Pillars/Philosophy/Model/Tools/Claude/Activities/Constitutional/` |
+| `Enactment Process` | `Admin/Operations/Processes/`, `Pillars/Philosophy/Model/Processes/Enactment Process/` |
+| `Processes` | `Admin/Operations/Processes/`, `Pillars/Philosophy/Model/Processes/` |
+| `Governance` | `Admin/Governance/`, `Pillars/Philosophy/Introduction/Concept/Governance/` |
+
+A bare `[[Enactment Process]]` in older records is exactly the silent ambiguity the registry was designed to catch.
 
 ---
-
-## Implementation notes
-
-The registry is a map keyed by filename. In a compiled TypeScript context an ES `Map` (O(1) lookup) suffices; a red-black tree would give O(log n) ordered traversal if prefix-range queries ever become useful. The JSON form is compact: unique entries are a single path array, collision entries are an object. The full Arcadia registry is likely under 4 KB and can be embedded directly in a session prompt or maintenance activity.
-
-Rebuilding: a tending activity traverses the full repository, builds the complete registry from scratch, and overwrites the registry file. A full rebuild is the source of truth - run it after any bulk file operation or rename. Incremental mutation (algorithm above) keeps the registry current between rebuilds.
-
----
-
-## Checklist
-
-- [ ] Decide implementation language and where the registry file lives in the repository
-- [ ] Build initial generation script
-- [ ] Generate and commit the initial registry file
-- [ ] Wire registry into maintenance/tending activity for rebuild
-- [ ] Wire mutation step into the note-creation workflow
 
 ## Governance
 
-This stream adheres to the [[Enactment Process]]. Content reaches `Pillars/` or `Resources/` only on user approval of a `ready` proposal.
-
-## Question for Kris (2026-10-04)
-
-Do you still want a committed page registry for shortest-unique wikilinks in this repository, or should that capability live in `tools-ki` so every Knowledge Base benefits?
-
-Classified as an owner decision by the Fable reviewer under delegated autonomy (2026-10-04): The design is sound and reversible, but its example tree and paths are stale and the open question is which repository owns the capability, a cross-repository ownership boundary.
+This roadmap record adheres to the [[Admin/Operations/Processes/Enactment Process|Enactment Process]]. Move content to `Admin/`, `Pillars/`, or `Resources/` only on user approval of a `ready` record.
