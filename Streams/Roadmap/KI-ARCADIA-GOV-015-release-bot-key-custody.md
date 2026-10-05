@@ -5,12 +5,12 @@ area: GOV
 title: Record release bot key custody and rotation
 theme: governance
 horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: bb57d289c18e728b9d2aa0ed6051ffc09722dd33
 created_at: 2026-10-05T13:34:00Z
-updated_at: 2026-10-05T13:55:00Z
+updated_at: 2026-10-05T14:05:00Z
 ---
 
 # Record Release Bot Key Custody and Rotation
@@ -35,7 +35,7 @@ GOV-014 kept the App ID value out of the island alongside secret values. An App 
 
 ## Current state
 
-Delivered and awaiting review. Facts are from Kris's brief of 2026-10-05.
+Done. Facts are from Kris's brief of 2026-10-05.
 
 ## Steps
 
@@ -111,6 +111,10 @@ The note now answers where the key is, which repositories hold it and why, and h
 
 Recorded `ki-tools-release-bot` key custody, credential holders, rotation and verification in [[GitHub Apps]]; audit PASS; no concerns. Learning route: the pipe-guard pattern for `op read` into `gh secret set` may merit a general Engineering Practice note on secret transport, if it recurs.
 
+## Done
+
+Accepted 2026-10-05 by Fable (independent reviewer) on the review packet above, under Kris Brown's direction to raise, plan, implement and leave this record at `done` in one pass; left at `done` for Kris's review.
+
 ## Discussion
 
 ### Owner approval - 2026-10-05
@@ -120,3 +124,7 @@ Kris approved adding key custody and rotation guidance for `ki-tools-release-bot
 ### Plan review - 2026-10-05
 
 Fable reviewed the plan and returned ACCEPT, with minor refinements applied before commit: name the 7 credential-holding repositories and the `op://` path form in the Steps, note that GOV-014's App ID boundary is superseded, list `_ISSUES.md` in the Boundary, and clarify what "ki and techne were already current" means.
+
+### Acceptance review - 2026-10-05
+
+Fable reviewed delivery commit ee11aeb against the baseline and returned ACCEPT: every brief fact present and accurate, the stale planned-installation rows removed with no conflicting release-bot facts left in the island, no secret material, the rotation snippet's guard correct and safe, scope held, British English, ASCII hyphens and disambiguated wikilinks, and `ki repo audit --progress never` PASS.
