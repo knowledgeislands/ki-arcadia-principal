@@ -1,255 +1,49 @@
-# Knowledge Islands factorisation roadmap
+# Knowledge Islands factorisation roadmap - remaining work
 
-Status: consolidated coordination roadmap, not yet an adopted delivery record
-
-Prepared: 2026-09-20
-
-Updated: 2026-09-24 after ecosystem coordination review
+- Status: residual coordination roadmap, not an adopted delivery record
+- Prepared: 2026-09-20
+- Trimmed: 2026-10-05 to remaining work only
 
 ## Purpose
 
-This roadmap consolidates the estate-wide factorisation brief, the independent GPT-6 Astra and Fable reviews, the Codex synthesis, the dated Fable addendum, and subsequent maintainer direction.
-
-It explains each proposed change, why it is justified, where it belongs, what it produces, and how completion can be demonstrated. It does not replace the forward-work queue in any repository. Before implementation, each owning repository must capture or adopt its part through its configured work adapter, with reciprocal handoffs where another repository is affected.
-
-The source set is:
-
-- [the estate factorisation brief](knowledge-islands-factorisation-brief.md);
-- [the GPT-6 Astra review](knowledge-islands-factorisation-brief-review-gpt-6-astra.md);
-- [the Fable review and dated addendum](knowledge-islands-factorisation-brief-review-fable.md); and
-- [the Codex synthesis position](knowledge-islands-factorisation-brief-review-codex.md).
-
-## Source precedence
-
-Where the source reviews conflict, use this order:
-
-1. Maintainer direction recorded on 2026-09-20.
-2. The dated addendum to the Fable review and the Codex synthesis, where they incorporate that direction.
-3. The original independent Astra and Fable reviews as evidence and alternative reasoning.
-4. The original brief where it has not been corrected by later evidence.
-
-The independent reviews remain unchanged historical inputs. A withdrawn recommendation is not revived merely because it still appears in an earlier section.
-
-## Decisions already made
-
-The following are inputs to the roadmap rather than open design questions:
-
-- Fold `mcp-housekeeping-codex` into `mcp-housekeeping-chatgpt`, retaining ChatGPT as the product-family name.
-- Support ChatGPT and Codex concurrently through separate adapters in the same server.
-- Keep `mcp-housekeeping-chatgpt` private through the merge and review visibility separately afterwards.
-- Keep `mcp-housekeeping-claude` separate.
-- Create no estate-wide KIP, KIS, schema, or comparable portable specification before overall Knowledge Islands V1.
-- Keep `ki-specifications` as a dormant scaffold during this work.
-- Amend existing decision records in place rather than creating successor records merely to carry clarified or expanded scope.
-- Amend `GDR-KI-FUNDAMENTALS-001` in place as the estate responsibility, routing, and repository-boundary record, then distribute the coherent shared record across the estate.
-- Originate estate-wide shared initiatives in Arcadia Principal and disseminate implementation work to the owning repositories.
-- Give every surviving repository its own bounded roadmap item to reconcile the shared fundamentals record, its base structure and structural overlays, applicable Agentic Harness skills, current repository standards, and relevant standards emerging from this factorisation work.
-- Test common MCP behaviour before extracting and rolling out shared implementation.
-- Retain every other repository boundary unless measured evidence justifies a later change.
-- Treat the V0.x estate as pre-live: establish the intended target directly without legacy compatibility, migration, or rollback machinery.
-
-## Target estate
-
-After the OpenAI merge, the current target estate contains 23 repositories: 22 in the Knowledge Islands organisation plus external `krisb/dotfiles`. The added repository is the governed `apps-observatory` application. `tools-techne` is now a governed, operational standalone CLI product.
-
-The target remains federated:
-
-- Arcadia owns philosophy, the conceptual model, shared estate governance, and the canonical initiative record for work that spans repositories.
-- Techne Principal owns engineering discipline and architecture.
-- The Agentic Harness owns the reusable agent-facing capabilities it publishes, together with generic MCP governance, binding semantics, and black-box conformance. It does not own MCP products or server source merely because it governs or tests them.
-- `tools-ki` owns generic host mechanics and the public `ki` command surface.
-- `ki-techne-harness` owns the Techne execution-harness applications, controller and execution-fabric implementation.
-- `tools-techne` owns the independently released Techne operator CLI, its source, release contract, and repository governance.
-- `apps-observatory` owns the Observatory application, evidence presentation and history, and governed operator experience; it consumes machine contracts and provider access owned elsewhere.
-- Each product repository owns its executable source, product behaviour, provider policy, schemas, trust boundary, build identity, release, and lifecycle state.
-- Website, Plugins, Homebrew, and installed payloads remain attributable publication, projection, distribution, or deployment surfaces.
-- Dotfiles owns personal machine binding and registration state; native providers own their own mutable state.
-- Specifications remains reserved for possible post-V1 portable contracts and receives no current factorisation work beyond a faithful shared fundamentals projection.
-
-These responsibilities and their routing rules belong in `GDR-KI-FUNDAMENTALS-001`, not only in this roadmap. The roadmap explains how to enact the target; the shared fundamentals record tells every repository where a future question or initiative belongs.
-
-## Factorisation model
-
-Factorisation makes five independent decisions. A change in one dimension does not imply a change in another.
-
-### Repository structure
-
-Structure describes how a repository is organised and governed locally. The target has two mutually exclusive base structures:
-
-- **Project** — a non-Knowledge-Base repository with `[skills.ki-repo-project]`;
-- **Knowledge Base** — a repository with `repo_type = "kb"`, `[skills.ki-repo-kb]`, and the KI knowledge zones.
-
-The current contract calls the ordinary default both `repository` and Project and permits its `repo_type` to be omitted. FND-3 should remove this V0.x ambiguity by making `repo_type = "project" | "kb"` explicit and keeping exactly one corresponding primary structure declaration.
-
-Structural overlays are composable declared deltas, not additional base types. Current overlays cover principal Knowledge Bases, the compatible agentic Harness, MCP products, standalone CLI tools, the Specifications container, plugin projection, Homebrew tap, website implementation and hosting, chezmoi source, and Knowledge Base features. `ki-engineering` is a cross-cutting implementation standard; work adapters, hosting adapters, and provider adapters are replaceable bindings rather than repository types.
-
-Structure does not establish authority. In particular, the principal-KB overlay does not prove conceptual authority, the agentic-Harness overlay does not own every governed product, and a Project containing code is not thereby a new repository class.
-
-### Authority and responsibility
-
-The shared fundamentals record should name the canonical decision or write owner for each concern. Conceptual authority, executable ownership, source maintenance, publication, distribution, environment binding, and native mutable state remain separable. A repository can own one concern while carrying a projection of another repository's material.
-
-### Projection and distribution
-
-Every important source-to-target relationship should identify its source, target, transformation, fidelity, revision model, editability, provenance, reproduction or drift check, and owner. Projection does not transfer canonical authority; distribution owns transport and packaging rather than product semantics.
-
-Shared Decision Record copies, installed Harness payloads, generated plugin contents, Website excerpts, Homebrew formulae, and any controlled MCP copies are therefore different relationships even when each moves material between repositories.
-
-### Runtime binding and mutable state
-
-Source, build identity, distribution, installation, declarative machine registration, credential reference, running provider state, restart, and diagnostics should be attributable separately. Product repositories own product source and build identity; distribution repositories own transport metadata; dotfiles owns personal machine declarations and bindings; native providers own mutable process or service state. One declared writer should exist for every mutable target.
-
-### Repository-boundary justification
-
-Use three strong, testable presumptions:
-
-- **R1 — independent acceptance or release:** content is accepted, versioned, released, or consumed as its own unit.
-- **R2 — distinct trust boundary:** visibility, licence, credentials, personal data, security, or failure containment differ materially.
-- **R3 — host mandate:** a consuming or distribution platform requires a distinct repository, root layout, or deployment location.
-
-These are not an exhaustive mechanical rule. Independent governance, audience, change coupling, cognitive scope, or historical continuity may justify an explicit exception. Absence of current R1, R2, or R3 evidence creates a review flag rather than an automatic merge. Authority alone does not create a repository boundary, and a host-mandated projection is not automatically a new authority.
-
-### Cross-dimensional invariants
-
-- Structure does not grant authority.
-- Authority does not by itself require a separate repository.
-- Projection or distribution does not transfer source or product ownership.
-- Runtime binding does not transfer product semantics.
-- Agora membership, a dependency, or a work route does not transfer authority, priority, implementation, release, or acceptance.
-- R1, R2, and R3 justify a boundary; they do not select its owner.
-- Rename, source movement, projection, installation, binding, and runtime activation are separate changes.
-- Dormant or reserved authority is not active authority.
-
-## Target repository structures
-
-The register below applies the structure vocabulary to the post-OpenAI target. Estate role remains a routing description, not mechanical proof supplied by a structural overlay.
-
-- **Principal Knowledge Bases — `ki-arcadia-principal`, `ki-techne-principal`.** Base: Knowledge Base. Overlays: principal, Streams, Activities, Live Artifacts, and local governance collections. Arcadia and Techne authority comes from `GDR-KI-FUNDAMENTALS-001`, not from the principal overlay.
-- **Agentic capability Harness — `ki-agentic-harness`.** Base: Project. Overlay: compatible agentic Harness, with target source shelves for skills, subagents, evals, and hooks. It owns reusable capability semantics and MCP governance or conformance, not executable MCP products.
-- **MCP products — eight surviving `mcp-*` repositories.** Base: Project. Overlay: MCP plus engineering. Each owns its executable, provider policy, trust boundary, build, and release while consuming Harness governance. `mcp-housekeeping-chatgpt` replaces the ChatGPT and Codex pair.
-- **Standalone CLI products — `tools-ki`, `tools-mgit`, `tools-rig`, `tools-git-almanac`, and `tools-techne`.** Base: Project. Overlay: standalone CLI tool; engineering applies where its toolchain fits.
-- **Application product — `apps-observatory`.** Base: Project. Overlay: application and current engineering bindings. It owns Observatory behaviour and operator experience without acquiring machine-contract or provider-source authority.
-- **Techne execution harness — `ki-techne-harness`.** Base: Project with engineering. Its “harness” is an execution-system product role, not the compatible agentic-Harness overlay. No new generic execution-harness structural overlay is justified while this shape occurs only once.
-- **Website — `ki-website`.** Base: Project. Overlays: Website, content implementation, and Cloudflare hosting. It owns public editorial publication and deployment without acquiring authority over attributed source material.
-- **Plugin projection — `ki-plugins`.** Base: Project. Overlay: plugin projection. It owns marketplace packaging and generated layout, not projected Harness semantics.
-- **Command-line distribution — `homebrew-tap`.** Base: Project. Overlay: Homebrew tap. It owns formula acceptance and transport metadata, not tool behaviour.
-- **Specifications scaffold — `ki-specifications`.** Base: Project. Overlay: Specifications container. It remains dormant before overall V1; its structure does not activate estate-wide normative authority.
-- **Personal environment source — `krisb/dotfiles`.** Base: Project. Overlay: chezmoi source, with binding adapters. It owns personal environment declarations and runtime registrations, not product behaviour or native provider state.
-
-## Delivery principles
-
-### Decision records
-
-Update a current decision record in place when the change clarifies, completes, or extends its existing decision. Preserve its identifier and current status, advance its date to the current as-of date, and rewrite the record as a present-state decision. Git history preserves what changed and why; do not add a changelog or amendment-history section to the living record.
-
-Do not create a successor merely to avoid editing a shared record. Create a new decision only when a genuinely new decision has no honest existing home, and only after explicit approval.
-
-### Boundary enactment
-
-Apply the factorisation model's boundary presumptions when a roadmap item creates, merges, or retires a repository:
-
-- State the R1, R2, and R3 evidence or the explicit secondary exception.
-- State which other factorisation dimensions change and which remain unchanged.
-- Re-run the target inventory and receiving set after the boundary change.
-
-This delivery rule applies the definitions above without duplicating or weakening them.
-
-### Cross-repository campaigns
-
-Arcadia owns four estate coordination Agoras. `ki-all` contains every governed ecosystem repository. `ki-fnd` contains canonical `ki-*` repositories. `ki-mcps` contains `mcp-*` products plus the Agentic Harness and Techne Harness. `ki-tools` contains `tools-*` products plus `homebrew-tap`, the Agentic Harness, and Techne Harness. Prefix selection defines the expected family, but membership is explicitly materialised by Arcadia and independently accepted by every member. Membership transfers no source, product, priority, routing, implementation, release, publication, or acceptance ownership. Rehome `ki-all`, `ki-fnd`, and `ki-tools` directly through `KI-ARCADIA-ECO-002`; move `ki-mcps` after OAI-1 so the retiring Codex repository is never repointed.
-
-Arcadia Principal is the home and campaign owner for every estate-wide shared initiative. Its canonical initiative record states the outcome, exact participating repositories, routing, current disposition, evidence, and completion condition. Work is then disseminated to the receiving repositories through local records or handoffs. Each receiving repository still owns its implementation, verification, commits, and acceptance.
-
-This is directional governance, not central implementation ownership: Arcadia decides and tracks the shared estate outcome, while the repository named by the fundamentals routing record decides how its part is delivered.
-
-Route work in this order: a natural repository owner handles local work; a clear bilateral handoff uses a direct handoff or declared trade route; cross-estate work, ownership ambiguity, or work with no natural home uses an Arcadia `ECO` coordination record. Arcadia owns the question, participant set, routing, evidence, and estate roll-up. Unassigned implementation cannot become Ready until a receiver accepts it or a new repository is justified under R1, R2, or R3.
-
-### Pre-V1 directness
-
-Knowledge Islands is at V0.x. This roadmap therefore does not require backwards compatibility, dual-running old and new structures, legacy state migration, compatibility redirects, or rollback exercises. Delivery establishes and verifies the intended target directly. Ordinary care still applies to unrelated user data and Git history, but pre-V1 structural work should not acquire release-grade migration ceremony before there is a V1 contract to preserve.
-
-## Roadmap summary
-
-The intended order is:
-
-1. Re-verify the point-in-time evidence.
-2. Amend and distribute the shared fundamentals record.
-3. Standardise repository base structures, overlays, adapters, and estate-role vocabulary.
-4. Repair confirmed documentation and configuration drift.
-5. Record the difficult ownership seams and Arcadia-led dissemination mechanism.
-6. Decide the repository-local MCP access and audit policy.
-7. Build and run the behavioural MCP conformance suite.
-8. Merge the ChatGPT and Codex MCPs.
-9. Pilot the narrow shared MCP kit.
-10. Roll the kit out incrementally if the pilot succeeds.
-11. Make projections, deployments, and releases observable.
-12. Complete a repository-local alignment item in every surviving repository.
-13. Measure the result and revisit deferred structural choices at explicit gates.
-
-## Phase 1 - Establish the estate contract
-
-### FND-1 - Re-verify the evidence baseline
-
-**What it is.** Re-run the small set of measurements on which the roadmap depends before changing source: repository inventory and visibility, MCP dependency versions, current test coverage, common-file hashes, dotfiles registrations, current CI pins, projection freshness, and the state of `ki-specifications`.
-
-**Why it is justified.** The reviews were produced against moving repositories. Fable already found facts that changed during review: Specifications was reset to an empty scaffold, the Codex MCP had no deployment footprint, `annotations.ts` had nine distinct hashes rather than eight, and Claude housekeeping was public while the OpenAI pair was private. A roadmap should not turn a dated observation into an implementation instruction without confirming it.
-
-**Owner and scope.** Arcadia owns the coordination record. The current recheck covers all 24 pre-merge repositories without modifying them.
-
-**Deliverables.** Produce a dated evidence appendix or campaign report recording the measured values, source revisions, and any changes from the reviews.
-
-**Completion gate.** Every fact used to justify FND-2, MCP-1, or OAI-1 is either re-confirmed or explicitly corrected. Unverified claims are labelled as assumptions rather than silently retained.
-
-**Inventory correction.** The original evidence pass covered 22 repositories. A later recheck added `tools-techne` and `apps-observatory`, making the live inventory 24 before the OpenAI merge and 23 after it. Both are governed receivers; `tools-techne` is operational and independently released.
-
-### FND-2 - Amend and distribute `GDR-KI-FUNDAMENTALS-001`
-
-**What it is.** Amend the existing shared fundamentals record in place. Keep its identifier and current status, advance its date to the delivery date, and rewrite it as a self-contained present-state decision without an amendment history. Arcadia remains the canonical source.
-
-The amendment should add or clarify:
-
-- the five distinct factorisation dimensions: repository structure; authority and responsibility, including conceptual versus executable ownership; projection and distribution; runtime binding and mutable state; and repository-boundary justification;
-- the two base structures, composable structural overlays, replaceable adapters, and estate roles as separate vocabularies;
-- executable ownership as a class distinct from conceptual authority;
-- product repositories as owners of product behaviour, compatibility, and lifecycle state;
-- executable MCP products as independently governed products rather than Harness capability members, while the Harness retains reusable MCP governance, binding, and conformance capabilities;
-- dotfiles as owner of personal environment binding and registration, with native providers owning native mutable state;
-- `ki-specifications` as dormant until overall V1;
-- R1, R2, and R3 as strong repository-boundary presumptions, with explicit secondary considerations rather than an exhaustive mechanical rule;
-- authority alone not creating a repository boundary;
-- the distinction between Agora membership, dependency routing, campaign coordination, and ownership;
-- Arcadia Principal as the origin and campaign home for estate-wide shared initiatives;
-- the requirement for a named receiving owner and completion condition for each disseminated part;
-- a responsibility and routing map covering every repository class in the target estate; and
-- corrected descriptions of the Harness, MCP servers, Homebrew tap, and other surfaces where the current record overstates or misstates ownership.
-
-The responsibility and routing map should answer at least:
-
-- philosophy, conceptual model, shared governance, or estate-wide initiative -> Arcadia Principal;
-- engineering discipline or architecture -> Techne Principal;
-- reusable agent capability semantics and generic MCP governance or conformance -> Agentic Harness;
-- universal repository contract and reusable structural-overlay semantics -> Agentic Harness, with each repository owning its declaration and conformance;
-- generic CLI hosting, repository mechanics, or public `ki` grammar -> `tools-ki`;
-- Techne execution-harness applications, controller, and execution-fabric implementation -> `ki-techne-harness`;
-- independently released Techne operator CLI -> `tools-techne`;
-- Observatory application, evidence presentation and history, and governed operator experience -> `apps-observatory`;
-- MCP executable source, product behaviour, provider policy, schema, trust boundary, build, or release -> the product repository;
-- public editorial publication -> Website;
-- generated runtime packaging -> Plugins or the named projection repository;
-- command-line distribution -> the product release plus Homebrew tap;
-- personal environment binding and registration -> dotfiles;
-- native mutable state -> the native provider; and
-- portable specifications -> no active route before V1, then `ki-specifications` only if explicitly activated.
-
-**Why it is justified.** These rules apply across the whole estate, not only the six current primary authorities. Housing responsibilities, routing, and boundary tests in one shared fundamentals record gives every repository the same answer to "where does this belong?" and gives Arcadia a coherent basis for disseminating shared work. Amending in place avoids competing old and new artefacts, preserves the record's history, and matches the maintainer's preference for updating existing decisions.
-
-**Owner and scope.** `KI-ARCADIA-ECO-001` delivers the canonical Arcadia amendment and five existing projections as one coordinated pass. Broader projection is deferred to post-merge ALIGN-1, when each of the 22 surviving Knowledge Islands organisation repositories and `krisb/dotfiles` can accept the governed full copy or recorded canonical pointer appropriate to its repository contract. Do not project the amended record into the retiring `mcp-housekeeping-codex` repository.
-
-**Deliverables.** Update the canonical record and its five existing projections, identify Arcadia as the authoring source in shared prose and local indexes, and provide the established semantic-equivalence check for the six-copy set. Do not introduce a repository-local `canonical` frontmatter field: the shared-record contract fails closed on unknown metadata. ALIGN-1 owns any later extension beyond the existing six repositories.
-
-**Completion gate.** The amendment is review-approved, every declared projection identifies Arcadia as canonical, all copies pass the shared-record check, and no repository presents an older copy as current.
-
-**Dependency.** FND-1.
+This is what remains of the estate factorisation roadmap that came out of the 2026-09-20 brief and reviews. Completed phases and the source papers have been removed; the full original is in Git history (`git log -- "+/knowledge-islands-factorisation-roadmap.md"`). The responsibility model, routing map and decisions it proposed now live in `GDR-KI-FUNDAMENTALS-001`, so they are not repeated here.
+
+Nothing here is Ready. To act on an item, capture or select a work record in the owning repository.
+
+## Done
+
+| Item | Delivered by |
+| --- | --- |
+| FND-1 - re-verify the evidence baseline | `KI-ARCADIA-GOV-009` (accepted, pruned 2026-09-26) |
+| FND-2 - amend and distribute `GDR-KI-FUNDAMENTALS-001` | `KI-ARCADIA-ECO-001` (accepted, pruned 2026-09-26) |
+| Rehome the estate Agoras | `KI-ARCADIA-ECO-002` (accepted, pruned 2026-09-26) |
+| MCP and tools roadmap backlog dispositions | `KI-ARCADIA-ECO-003` and `ECO-004` (accepted, pruned 2026-10-04) |
+| Retire `ki-plugins` | `KI-ARCADIA-ECO-010` (accepted, pruned) |
+| Consolidate and retire Techne Principal | `KI-ARCADIA-ECO-007` and `ECO-008` (accepted, pruned 2026-10-04/05) |
+
+Two of these changed the target estate. `ki-techne-principal` and `ki-plugins` are retired, so every reference to them below is moot: Arcadia now owns Techne engineering knowledge, and there is no plugin projection to check.
+
+## Remaining at a glance
+
+Status observed read-only on 2026-10-05.
+
+| Item | Status | Evidence |
+| --- | --- | --- |
+| FND-3 - repository structure vocabulary | Mostly done | All 21 local `knowledgeislands` checkouts declare `repo_type`; no checked estate structure register found |
+| FND-4 - repair documentary and configuration drift | Partly moot, unverified | The `ki-plugins` and Techne Principal items went with those retirements; the rest have not been rechecked |
+| FND-5 - ownership seams and dissemination | No evidence found | - |
+| MCP-1 - MCP access and audit policy | Open | Harness MCP standards exist, but no policy fixtures |
+| MCP-2 - black-box conformance suite | Open | No suite found in the Harness |
+| MCP-3 - baseline the MCPs | Partial | Shared-code inventory of 2026-09-24 in `ki-repo-mcp` `standards-mcp-shared-code.md`; no conformance results |
+| OAI-1 - merge Codex into `mcp-housekeeping-chatgpt` | Partial | `src/tools/codex` exists in ChatGPT, but `mcp-housekeeping-codex` is not archived and was still committed to on 2026-10-05 |
+| MCP-4 to MCP-7 - shared MCP implementation | Open | Gated on MCP-3 |
+| PROJ-1 - projection register | Open | Smaller now that `ki-plugins` is retired |
+| OPS-1 - inventory active bindings and builds | Open | - |
+| DIST-1 - verify tool distribution | Open | Tap formulae exist for `ki`, `mgit`, `rig`, `git-almanac` and `techne` |
+| ALIGN-1 - one alignment item per repository | Open | Waiting on FND-3, FND-5 and OAI-1 |
+| EVAL-1 and EVAL-2 - measure and reconsider | Open | Waiting on ALIGN-1 |
+
+## Phase 1 - Remaining estate contract
 
 ### FND-3 - Standardise repository structure vocabulary
 
@@ -598,18 +392,6 @@ Track:
 
 **Dependency.** EVAL-1, except the V1 specification gate, which also requires overall V1.
 
-## Repository disposition
-
-The roadmap's current disposition is:
-
-- Keep Arcadia Principal, Techne Principal, Agentic Harness, `tools-ki`, Specifications, Website, `ki-techne-harness`, Plugins, Homebrew tap, `tools-mgit`, `tools-rig`, Git Almanac, and `apps-observatory`.
-- Keep governed, operational `tools-techne` as the independently released Techne operator CLI repository.
-- Keep `mcp-m365`, `mcp-gsuite`, `mcp-git-audit`, `mcp-ki-kb-fs`, `mcp-ki-kb-notion-mirror`, `mcp-acquire-whatsapp`, and `mcp-housekeeping-claude` as separate products.
-- Keep `mcp-housekeeping-chatgpt` and merge `mcp-housekeeping-codex` into it.
-- Retire `mcp-housekeeping-codex` after its source has been absorbed into `mcp-housekeeping-chatgpt`; no compatibility redirect is required before V1.
-- Keep `krisb/dotfiles` external, with explicit ownership of personal environment bindings.
-- Archive, split, or move no other repository under the present evidence. Do not invent a generic execution-harness overlay solely for `ki-techne-harness`; add one only if reusable structure recurs.
-
 ## Out of scope before overall V1
 
 - New estate-wide KIPs, KIS documents, schemas, or portable specifications.
@@ -621,17 +403,3 @@ The roadmap's current disposition is:
 - Replacing every existing decision record with a successor solely because the estate vocabulary changed.
 - Making `tools-ki` the controller or owner of product-specific MCP behaviour.
 - Making the roadmap itself a second authoritative work tracker.
-
-## From roadmap to delivery
-
-This file is a consolidation and coordination source in the inbound `+` area. It does not mark any item Ready or authorise implementation.
-
-When the maintainer chooses a delivery unit:
-
-1. Capture or select the corresponding work record in the owning repository.
-2. Add reciprocal handoffs for other affected repositories.
-3. Shape the local records to Ready with exact baselines, touched paths, and verification.
-4. Run only the approved unit or bounded batch.
-5. Return evidence here or to the canonical Arcadia initiative record for later consolidation.
-
-The smallest coherent first delivery is FND-1 and the planning of FND-2. The first implementation campaign should not begin until the exact fundamentals projection set and amendment text have been reviewed.
