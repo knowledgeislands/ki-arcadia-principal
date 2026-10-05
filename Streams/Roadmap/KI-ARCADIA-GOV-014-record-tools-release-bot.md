@@ -5,12 +5,12 @@ area: GOV
 title: Record the tools release bot as a tracked artefact
 theme: governance
 horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: e4f6ab4f425ff3e56be9cc3d33ef04bf3921a9a5
 created_at: 2026-10-05T10:25:00Z
-updated_at: 2026-10-05T10:31:00Z
+updated_at: 2026-10-05T11:06:30Z
 ---
 
 # Record the Tools Release Bot as a Tracked Artefact
@@ -106,8 +106,16 @@ The goal is met within the boundary: the bot is now a named, tracked artefact wi
 
 New [[GitHub Apps]] note with pointer and index entry; audit PASS. Learning route: update [[GitHub Apps]] when `BREW-007` installs the bot on further repositories or a key is rotated.
 
+## Done
+
+Accepted 2026-10-05 by Fable (independent reviewer) on the review packet above, under Kris Brown's decision (a) to leave this record at `done` in one pass; left at `done` for Kris's review.
+
 ## Discussion
 
 ### Owner decision (a) - 2026-10-05
 
 Kris directed that `ki-tools-release-bot` be recorded in Arcadia as a tracked artefact, adding to [[Admin Conventions/Integrations|Integrations]] or a separate note if its structure suits that better, and that this record be raised, planned, implemented and left at `done` in one pass. Capture, shaping and approval therefore occur together, and the record lands directly at `ready`.
+
+### Review - 2026-10-05
+
+A first Fable review asked that ambiguous `[[Integrations]]` links be disambiguated, because Arcadia holds two `Integrations` notes; a2bff1a resolved this. A second Fable review confirmed the links, acceptance criteria, absence of secret or App ID values, planned-installation labelling and live organisation facts, and found one defect: the `GOV` high-water mark in `_ISSUES.md` still read `013`. The mark was advanced to `014` with this closure, and a re-check returned ACCEPT.
