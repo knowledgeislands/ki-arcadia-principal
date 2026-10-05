@@ -1,13 +1,12 @@
 # Knowledge Islands — Conceptual Lineage and Inspirations
 
-Date: 2026-10-03
-Source: ChatGPT acquisition
+Date: 2026-10-03 Source: ChatGPT acquisition
 
 ## Purpose
 
 Knowledge Islands is deliberately influenced by real-world systems and speculative fiction. These references are not decorative naming exercises: they provide metaphors and thought experiments that help expose useful architectural distinctions.
 
-The important record is not only *what* inspired the system, but *which idea* each influence contributed.
+The important record is not only _what_ inspired the system, but _which idea_ each influence contributed.
 
 ## Real-world inspirations
 
@@ -71,7 +70,7 @@ This contributes to thinking about nested or differentiated Realms and state.
 
 ### Otherland — Tad Williams
 
-The *Otherland* series contributes the idea of persistent constructed worlds through which people can move, inhabit different environments and experience different rules/forms.
+The _Otherland_ series contributes the idea of persistent constructed worlds through which people can move, inhabit different environments and experience different rules/forms.
 
 It is particularly relevant to the long-horizon concept of Avatars traversing registered Realms.
 

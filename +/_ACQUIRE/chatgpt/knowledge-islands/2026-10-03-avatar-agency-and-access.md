@@ -1,7 +1,6 @@
 # Knowledge Islands — Avatar, Agency and Access
 
-Date: 2026-10-03
-Source: ChatGPT acquisition
+Date: 2026-10-03 Source: ChatGPT acquisition
 
 ## Kitteth as Avatar
 

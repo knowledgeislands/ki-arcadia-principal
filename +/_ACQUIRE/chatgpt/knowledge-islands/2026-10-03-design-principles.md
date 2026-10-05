@@ -1,7 +1,6 @@
 # Knowledge Islands / Techne — Design Principles
 
-Date: 2026-10-03
-Source: ChatGPT acquisition
+Date: 2026-10-03 Source: ChatGPT acquisition
 
 ## 1. Durable knowledge outlives runtimes
 

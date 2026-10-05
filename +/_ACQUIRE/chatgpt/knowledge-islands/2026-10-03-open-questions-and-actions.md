@@ -1,7 +1,6 @@
 # Knowledge Islands / Techne — Open Questions and Actions
 
-Date: 2026-10-03
-Source: ChatGPT acquisition
+Date: 2026-10-03 Source: ChatGPT acquisition
 
 ## Immediate actions
 
@@ -33,6 +32,7 @@ Separate operational access from a Rig, conversational interaction with the Avat
 ### Realm / Landscape / Island semantics
 
 Current working direction:
+
 - **Island** — bounded knowledge/civilisation domain.
 - **Landscape** — structure/terrain through which knowledge is navigated.
 - **Realm** — governed environment with rules of existence, identity, capability and interaction.
