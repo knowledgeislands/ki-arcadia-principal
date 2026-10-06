@@ -54,7 +54,7 @@ Arcadia owns the Techné engineering discipline in [[Engineering Practice/Engine
 
 ## Activity Groups
 
-Adoption positions for all non-constitutional activity groups. Every group must carry an explicit position - `adopted` or `vetoed`. A vetoed group must have a corresponding stub in `Admin/` acknowledging the decision. Constitutional activities (Charter, Conformance) are not listed here - they are pre-adoptive.
+Adoption positions for all non-constitutional activity groups. Every group must carry an explicit position - `adopted` or `vetoed`. A vetoed group's Activity Definition note, `Admin/Operations/Activities/<Group> Activity.md`, must explicitly acknowledge the veto. Constitutional activities (Charter, Conformance) are not listed here - they are pre-adoptive.
 
 | Group     | Position | Activity Definition                                           |
 | --------- | -------- | ------------------------------------------------------------- |

@@ -8,12 +8,12 @@ tags:
   - topic/knowledge-islands
   - topic/automation
 horizon: now
-status: in-progress
+status: awaiting-review
 blocks: []
 blocked_by: []
 baseline_ref: 101c0280207b24f304028da55ecd5a159d574ce1
 created_at: 2026-10-06T19:53:25Z
-updated_at: 2026-10-06T19:54:37Z
+updated_at: 2026-10-06T20:01:01Z
 author: Written with Claude
 ---
 
@@ -57,11 +57,11 @@ Kris approved capturing and delivering this item on 2026-10-06.
 
 ## Steps
 
-- [ ] Charter line 57: replace the stub sentence with one requiring the vetoed group's Activity Definition note, `Admin/Operations/Activities/<Group> Activity.md`, to explicitly acknowledge the veto. Leave every other sentence of the paragraph unchanged.
-- [ ] Authoring Guidelines line 141: say the section declares which notes an island must create to adopt the group and how a veto is recorded, without the Knowledge Capital label.
-- [ ] Authoring Guidelines lines 147, 149 and 153: replace "KC note" and "KC path" with required-note wording in the current layout, use `Admin/Operations/Activities/Schedule` as the shared-note example, and point the veto-case note at the veto acknowledgement paragraph.
-- [ ] Authoring Guidelines line 155: rename **Veto stubs** to **Veto acknowledgement** and describe the current contract: the Charter records the `vetoed` position, the group's Activity Definition note explicitly states the veto, and no stub or N/A notes are created for the group's other required notes.
-- [ ] Refresh the Authoring Guidelines `status` to `current - October 2026`.
+- [x] Charter line 57: replace the stub sentence with one requiring the vetoed group's Activity Definition note, `Admin/Operations/Activities/<Group> Activity.md`, to explicitly acknowledge the veto. Leave every other sentence of the paragraph unchanged.
+- [x] Authoring Guidelines line 141: say the section declares which notes an island must create to adopt the group and how a veto is recorded, without the Knowledge Capital label.
+- [x] Authoring Guidelines lines 147, 149 and 153: replace "KC note" and "KC path" with required-note wording in the current layout, use `Admin/Operations/Activities/Schedule` as the shared-note example, and point the veto-case note at the veto acknowledgement paragraph.
+- [x] Authoring Guidelines line 155: rename **Veto stubs** to **Veto acknowledgement** and describe the current contract: the Charter records the `vetoed` position, the group's Activity Definition note explicitly states the veto, and no stub or N/A notes are created for the group's other required notes.
+- [x] Refresh the Authoring Guidelines `status` to `current - October 2026`.
 
 ---
 
@@ -107,6 +107,41 @@ None beyond the Authoring Guidelines text above.
 ### Roadmap
 
 Closes the follow-up named in [[KI-ARCADIA-OPS-011-rewrite-conformance-adoption-model|OPS-011]]. A wider Knowledge Capital terminology sweep of the Model notes remains uncaptured.
+
+---
+
+## Review
+
+### Delivered
+
+The Charter's `## Activity Groups` framing paragraph and the Authoring Guidelines veto wording now describe the contract the Conformance Check verifies: a vetoed group carries `vetoed` in the Charter and its Activity Definition note, `Admin/Operations/Activities/<Group> Activity.md`, explicitly states the veto. Boundary held: veto-mechanism wording only, Conformance still constitutional and outside the adoption table, the Charter tables and other sections untouched, the out-of-scope Knowledge Capital lines left as they were, and no prompt, Activity note, scheduled task or other repository changed. Baseline `101c0280207b24f304028da55ecd5a159d574ce1`; the delivery lands in the commit that carries this review.
+
+### Change Summary
+
+- `Admin/Governance/Charter.md`: the stub sentence in the `## Activity Groups` paragraph now requires the vetoed group's Activity Definition note to explicitly acknowledge the veto. The other sentences, including "Constitutional activities (Charter, Conformance) are not listed here - they are pre-adoptive", are unchanged.
+- `Pillars/Philosophy/Model/Activities/Authoring Guidelines/Authoring Guidelines.md`: `status` set to `current - October 2026`; the `## Constitutional and Adoptable Groups` sentence says the section declares the notes needed to adopt the group and how a veto is recorded; the `## Adoption Requirements` lead sentence, Format, What to include and veto paragraphs use required-note wording, an `Admin/Operations/Activities/` Path example and `Admin/Operations/Activities/Schedule` as the shared-note example; **Veto stubs** became **Veto acknowledgement**, with no stub or N/A notes required.
+- No deviations from the Steps.
+
+### Verification
+
+- `grep -n "stub" Admin/Governance/Charter.md` returns nothing.
+- `grep -n "Knowledge Capital\|KC "` on the Authoring Guidelines returns only the out-of-scope lines 31, 32, 84, 113 and 168.
+- `git diff -U0` on the Charter changes one line, inside `## Activity Groups`; the table rows and the pre-adoptive sentence are unchanged.
+- The new wording matches the Conformance prompt's vetoed-group check (Step 3, line 66) and the Tending `## Adoption Requirements` lead sentence (line 79).
+- No em or en dashes on any changed line. The Authoring Guidelines matrix at lines 127 to 129 keeps its pre-existing em-dash cells, which this item does not touch.
+- `ki repo audit --repo . --progress never` PASS.
+
+### Outstanding concerns
+
+None for this item. The existing N/A notes for Arcadia's vetoed Email group (`Email Routing Config Activity`, `Email Routing Queue Activity`, `Email Status Activity`) remain: the new wording says such notes need not be created, not that they are forbidden, so they stay conformant.
+
+### Post-change review
+
+A Fable reviewer (2026-10-06) independently reread the diff, reran every Verify check and compared the new wording against the Conformance prompt (Step 3, line 66), the Tending adoption contract (line 79) and the live Email and Linear veto notes; all agree, and the goal is met with no change to the Charter's adoption semantics. Scope held to the Boundary: three files, one Charter line, and the Authoring Guidelines `status`, line 141 and the `## Adoption Requirements` section, with the out-of-scope Knowledge Capital lines intact. Regression risk is negligible: no prompt, Activity note or scheduled task changed, Arcadia's existing veto records already satisfy the stated contract, and the audit passes. It raised no must-fix or should-fix findings; its three wording nits were applied ("need not be created" in the veto paragraph, a smoother veto-case sentence in Format, and a fuller Change Summary).
+
+### Mini recap
+
+The governance texts and the Conformance Check now state one veto contract. Possible learning routes, not promoted: the uncaptured Knowledge Capital terminology sweep of the Model notes (Authoring Guidelines lines 31, 32, 84, 113 and 168, `Constitutional.md`, `Tending/Convergence Check.md`), and the pre-existing em dashes in the Authoring Guidelines matrix and the `Admin/Operations/Activities/Activities.md` vetoed rows, both for separate capture through `ki-next` if wanted.
 
 ---
 
