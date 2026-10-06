@@ -104,6 +104,7 @@ standing.export.knowledge = ["public-source-change"]
 [skills.ki-agora]
 
 [skills.ki-agora.kis]
+title = "Knowledge Islands"
 purpose = "All governed Knowledge Islands ecosystem repositories"
 members = [
   "https://github.com/knowledgeislands/apps-observatory",
