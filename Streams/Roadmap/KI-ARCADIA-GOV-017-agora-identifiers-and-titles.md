@@ -4,13 +4,13 @@ id: KI-ARCADIA-GOV-017
 area: GOV
 title: Agora identifiers and titles
 theme: governance
-horizon: triage
-status: draft
+horizon: now
+status: ready
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-05T23:47:54Z
-updated_at: 2026-10-05T23:47:54Z
+updated_at: 2026-10-06T10:56:00Z
 ---
 
 # Agora Identifiers and Titles
@@ -25,28 +25,81 @@ The owner requested this work on 6 October 2026 while aligning the ChatGPT captu
 
 The agreed local convention is to use the existing Agora identifier for both `-/_CONTEXT/chatgpt/<agora-id>/` and `+/_ACQUIRE/chatgpt/<agora-id>/`, retaining readable headings such as Personal and Legal. Agora identifiers remain unchanged. The owner also requested a declared Agora title matching the context heading; that shared-contract work is captured here rather than implemented during the local folder correction.
 
+Kris Brown adopted this record into Now and approved its delivery on 2026-10-06: "Agora titles - KI-ARCADIA-GOV-017 - yes please … process as much as possible."
+
 ## Boundary
 
 - Define identifier and title as separate owner-declared meanings; keep purpose as the explanation of the group.
 - Govern the portable Agora contract and the expectations for CLI validation, resolution and presentation.
-- Coordinate later delivery in the KI Agentic Harness and tools-ki, followed by explicitly scoped owner-declaration and consumer updates.
+- Hand the shared contract to its owners: the `ki-agora` standard, rubric and decision in the KI Agentic Harness ([KI-HARNESS-GOV-143](https://github.com/knowledgeislands/ki-agentic-harness/blob/main/docs/roadmap/KI-HARNESS-GOV-143-agora-titles.md)), and declaration parsing, resolution and presentation in tools-ki ([KI-TOOL-CLI-106](https://github.com/knowledgeislands/tools-ki/blob/main/docs/roadmap/KI-TOOL-CLI-106-agora-titles.md)). Each receiving repository owns its delivery and acceptance.
+- Declare `title` on every existing Agora in the local registry, touching only each owner's `[skills.ki-agora.<id>]` table: `kis` (Arcadia), `personal` (Kit Principal), `legal` (Kit Legal), `hnr` (Kit HNR), `equalremedy` (Equal Remedy Research), `techmedix` (Kit TechMedix) and `vallearmonia` (Valle Armonia Principal).
 - Preserve existing identifiers, memberships, inclusions, repository identities and authority boundaries. A title grants no access, exchange or capture permission.
-- Do not implement the shared schema, rename Agoras, activate cross-repository capture, publish changes or select this work through intake alone.
+- Do not rename Agoras, move captured material, activate cross-repository capture, cut a release or publish. No remote operation under the [[Techne Programme Hold]].
 
 ## Current state
 
-Agora child-table names already provide stable, globally unique lower-case identifiers. The declaration currently accepts `purpose`, `members` and optional `includes`; a `title` key is rejected. CLI profiles expose an identifier and a name, but no separately declared owner title. Kit Principal's local context and capture folders have been aligned with existing Agora identifiers without changing this contract.
+Agora child-table names already provide stable, globally unique lower-case identifiers. The declaration currently accepts `purpose`, `members` and optional `includes`; a `title` key is rejected by both the harness `ki-agora` rubric (CONFIG-1) and the released `ki` v0.6.1 parser. CLI profiles expose an identifier and a `name` that merely repeats the identifier. Kit Principal's local context and capture folders have been aligned with existing Agora identifiers without changing this contract; its context headings are the titles the owner already uses.
 
 Related work remains distinct: [[KI-ARCADIA-ECO-006-simplify-ecosystem-agora-declarations|ECO-006]] concerns the existing ecosystem membership declaration; [[KI-ARCADIA-GOV-016-territorial-classification-and-exchange|GOV-016]] owns territorial classification and exchange authority. This item adds readable Agora identity metadata and its consumer convention.
+
+## Steps
+
+- [ ] Hand off the portable contract: KI-HARNESS-GOV-143 amends the `ki-agora` standard, structured rubric and GDR-KI-HARNESS-006 so `title` is a required, non-empty, single-line declaration key.
+- [ ] Hand off CLI support: KI-TOOL-CLI-106 parses the required `title`, exposes it as the profile title and presents it in `ki agora list` and `ki agora show`, leaving identifiers as every machine key.
+- [ ] Declare `title` in each owner's `.ki.toml`, using the Kit Principal ChatGPT context headings: `kis` Knowledge Islands, `personal` Personal, `legal` Legal, `hnr` Humans Not Robots, `equalremedy` Equal Remedy, `techmedix` TechMedix, `vallearmonia` Valle Armonia.
+- [ ] Note in the Kit Principal ChatGPT context README that its headings mirror the declared Agora title.
+- [ ] Record the review packet and set this record `awaiting-review`.
+
+## Files touched
+
+- This record.
+- `.ki.toml` in this repository (`[skills.ki-agora.kis]` only).
+- In other owners' primary checkouts, `[skills.ki-agora.<id>]` in `.ki.toml` only, plus `-/_CONTEXT/chatgpt/README.md` in Kit Principal.
+
+## Verify
+
+- Each owner repository: `ki repo audit --repo . --progress never --concise` reports FAIL=0 against a harness that includes KI-HARNESS-GOV-143.
+- `ki agora list` and `ki agora audit` from a tools-ki build that includes KI-TOOL-CLI-106 report every declared Agora with its title and no broken declaration.
+- `git diff` of each owner commit touches only the Agora table and, for Kit Principal, the context README.
+
+## Dependencies / blocks
+
+No local dependency. The two handoffs are non-blocking: this record is not blocked by either and neither lists it in `blocks` or `blocked_by`. Released `ki` v0.6.1 and the released harness reject `title`, so Arcadia's CI audit and local `ki agora` resolution with the released binary stay red until both receivers release.
+
+## Documentation impact
+
+### Decision Records
+
+None in this repository. The portable contract decision is recorded by amending GDR-KI-HARNESS-006 in the harness, which owns `ki-agora`.
+
+### Specifications
+
+None here; tools-ki gains the AGORA specification clause through KI-TOOL-CLI-106.
+
+### Guides
+
+None here.
+
+### Roadmap
+
+This record and the two reciprocal receiver items.
 
 ## Discussion
 
 ### Identifier, title and purpose
 
-The identifier is the stable machine key used in declarations, lookups and folder paths. The title is a non-empty readable label declared by the Agora owner and mirrored by context headings. A title change does not rename the identifier or move captured material. Purpose continues to describe why the working set exists. Repository identity and territorial authority remain separate from Agora identity.
+The identifier is the stable machine key used in declarations, lookups, repository selection, roots and folder paths. The title is a non-empty readable label declared by the Agora owner and mirrored by context headings. A title change does not rename the identifier or move captured material. Purpose continues to describe why the working set exists. Repository identity and territorial authority remain separate from Agora identity.
 
-### Compatibility and delivery questions
+### Decision: `title` is mandatory
 
-Plan whether title is initially optional with an identifier fallback for older declarations, or required with an explicitly approved migration. Specify how the CLI presents identifier and title in human and structured output, without silently changing existing machine keys. Define how derived context headings are refreshed when an owner changes its title; capture should preserve the identifier and the title observed at capture time.
+Decided 2026-10-06 under the owner's delegated direction to process this record as far as possible, leaning on the owner's mandatory direction for the parallel `capital` key: `title` is required on every Agora declaration. The `ki-agora` audit fails when it is missing, blank or multi-line, and `ki` resolution fails closed in the same way, as it already does for `purpose`. There is no identifier fallback.
 
-The shared skill and its checks belong to the KI Agentic Harness; the native declaration parser, resolution and presentation belong to tools-ki. Each receiving repository owns its eventual delivery and acceptance. This draft records the owner's requested outcome and does not schedule those implementations.
+Rationale: every declaration is owned within this estate and migrates in the same change, so an optional phase would only defer the same work; a silent identifier fallback would hide drift between declarations and the headings that mirror them; and a single rule in both the rubric and the parser keeps them in agreement. Titles need not be unique, because the identifier remains the only key.
+
+### Presentation and capture
+
+`ki agora list` and `ki agora show` present the declared title beside the identifier; the reserved `estate` keeps its system title. Machine-readable outputs such as `ki agora roots` and `--agora` selection continue to use the identifier only. Derived context headings are refreshed by their owner when a title changes; capture preserves the identifier and the title observed at capture time.
+
+### Release window
+
+Because the released `ki` v0.6.1 rejects unknown Agora keys, declaring titles before the next `ki` release makes `ki agora` and `ki repo --agora` fail with the released binary, and the released harness rubric fails Arcadia's CI audit. Both clear when the owner releases tools-ki and the harness; no release is cut here.
