@@ -4,13 +4,13 @@ id: KI-ARCADIA-GOV-018
 area: GOV
 title: CI policy principle
 theme: governance
-horizon: triage
+horizon: now
 status: draft
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-06T01:20:06Z
-updated_at: 2026-10-06T01:20:06Z
+updated_at: 2026-10-06T10:08:15Z
 ---
 
 # CI Policy Principle
@@ -29,7 +29,7 @@ Two related gaps sit outside Arcadia in the same consolidation plan: a harness i
 
 ## Boundary
 
-- Triage only. Capturing the principle does not adopt it, and nothing reaches `Pillars/` until the owner adopts and readies this record under the [[Admin/Operations/Processes/Enactment Process|Enactment Process]].
+- Adopted into Now at `draft` by Kris Brown on 2026-10-06. Adoption does not plan or ready the record, and nothing reaches `Pillars/` until the owner readies it under the [[Admin/Operations/Processes/Enactment Process|Enactment Process]].
 - Arcadia owns the principle and its rationale in Engineering Practice. It does not own the `ki-engineering` rubric, CI workflow templates, the tap consumer list or any receiver workflow.
 - No write to `ki-agentic-harness`, `homebrew-tap`, `tools-ki` or any other repository, and no change to any repository's CI.
 - No remote operation under the [[Techne Programme Hold]].
