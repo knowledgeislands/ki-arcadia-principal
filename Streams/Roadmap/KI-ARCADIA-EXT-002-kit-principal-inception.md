@@ -6,14 +6,14 @@ title: Kit Principal inception
 theme: ecosystem-adoption
 tags:
   - topic/knowledge-islands
-status: awaiting-review
+status: done
 priority: medium
 horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: 1fb429d70ec71a03eceb33cb82c8f632646a7197
 created_at: 2026-04-27T19:18:58Z
-updated_at: 2026-10-06T01:30:00Z
+updated_at: 2026-10-06T10:08:06Z
 author: Written with Claude
 ---
 
@@ -128,6 +128,10 @@ The Goal holds: every Items row is dispositioned with evidence, and the ongoing 
 ### Mini recap
 
 Reconciled the April 2026 Kit Principal inception against `kit-principal` `a34fec2e` read-only; all four rows are dispositioned. Learning route proposed, not promoted: inception plans should cite territorial signposts by their Known Lands path, where the model now places them.
+
+## Done
+
+Accepted 2026-10-06 by Kris Brown on the review packet above.
 
 ## Discussion
 

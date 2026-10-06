@@ -6,14 +6,14 @@ title: Kit Legal inception
 theme: ecosystem-adoption
 tags:
   - topic/knowledge-islands
-status: awaiting-review
+status: done
 priority: medium
 horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: 1fb429d70ec71a03eceb33cb82c8f632646a7197
 created_at: 2026-04-27T19:18:58Z
-updated_at: 2026-10-06T01:30:00Z
+updated_at: 2026-10-06T10:08:06Z
 author: Written with Claude
 ---
 
@@ -122,6 +122,10 @@ The Goal holds: each original step is shown as delivered in `kit-legal`, superse
 ### Mini recap
 
 Reconciled the April 2026 Kit Legal inception against `kit-legal` `a4c6094c` read-only; every step is evidenced or dispositioned. No learning route proposed beyond the existing territorial model.
+
+## Done
+
+Accepted 2026-10-06 by Kris Brown on the review packet above.
 
 ## Discussion
 

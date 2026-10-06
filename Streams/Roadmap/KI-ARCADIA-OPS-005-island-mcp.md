@@ -7,14 +7,14 @@ theme: operational-tooling
 tags:
   - topic/knowledge-islands
   - topic/tools
-status: awaiting-review
+status: done
 priority: low
 horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: 54228cbca9e6ae27e6fc91614f207d6d00a718a1
 created_at: 2026-04-30T07:51:03Z
-updated_at: 2026-10-06T01:22:00Z
+updated_at: 2026-10-06T10:08:06Z
 author: Mixed
 ---
 
@@ -148,6 +148,10 @@ The Goal holds: Arcadia's notes describe the real gateway and the remaining gap 
 Closed the Island MCP design question against `mcp-ki-kb-fs` `d39816a`, refreshed two tool notes and recorded the write-time validation residual. Learning route proposed, not promoted: when a tool note mirrors a product README, cite the README revision so later drift is easy to spot.
 
 ---
+
+## Done
+
+Accepted 2026-10-06 by Kris Brown on the review packet above.
 
 ## Discussion
 

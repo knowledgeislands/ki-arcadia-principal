@@ -5,12 +5,12 @@ area: ECO
 title: Simplify ecosystem Agora declarations
 theme: ecosystem-coordination
 horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: 3e573e01cdc6b80293f96fd30922025fadc9682f
 created_at: 2026-09-27T17:43:10Z
-updated_at: 2026-10-06T01:14:00Z
+updated_at: 2026-10-06T10:08:06Z
 ---
 
 # Simplify Ecosystem Agora Declarations
@@ -119,6 +119,10 @@ The Goal holds: one owner-managed `kis` Agora, the four retired groups absent fr
 ### Mini recap
 
 Verified the landed `kis` amendment against the Agora audit, four shared copies, 41 registry declarations and Arcadia's canonical zones; all clean apart from a known retained Paperclip worktree and a GitHub App name false positive. Learning route proposed, not promoted: future retired-name checks should match whole Agora identifiers in declaration context rather than hyphen-delimited words.
+
+## Done
+
+Accepted 2026-10-06 by Kris Brown on the review packet above.
 
 ## Discussion
 
