@@ -7,15 +7,14 @@ theme: operational-tooling
 tags:
   - topic/knowledge-islands
   - topic/tools
-status: ready
+status: awaiting-review
 priority: low
 horizon: now
-candidate: true
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: 54228cbca9e6ae27e6fc91614f207d6d00a718a1
 created_at: 2026-04-30T07:51:03Z
-updated_at: 2026-10-05T08:15:51Z
+updated_at: 2026-10-06T01:22:00Z
 author: Mixed
 ---
 
@@ -63,11 +62,11 @@ What it does not do is validate note conventions (frontmatter, routing, tags, li
 
 ## Steps
 
-- [ ] Write a `### Disposition of the open questions` section in Discussion giving each of the five original questions a disposition with evidence from the `mcp-ki-kb-fs` README or source at a named revision.
-- [ ] Refresh the `## KB Filesystem` section of `Pillars/Philosophy/Model/Tools/How Tools Connect.md` so it states the gateway model: agents reach the island through aliased, zone-scoped, access-levelled and audited tools, while humans and Obsidian edit the files directly.
-- [ ] Update `Pillars/Philosophy/Model/Tools/KB Filesystem/KB Filesystem.md`: add the nested `read`/`write`/`destructive` access levels, the JSONL audit of write and destructive calls, and a sentence that note conventions are enforced by `ki repo audit`, not by the server at write time. Keep the README as the authoritative tool catalogue.
-- [ ] Record the residual - optional write-time convention validation (frontmatter, routing, tags, links) - in Discussion as a note addressed to the `mcp-ki-kb-fs` owner, and mention it in the review packet for relay; do not write to that repository.
-- [ ] Update the `status` month on each edited note per its existing convention.
+- [x] Write a `### Disposition of the open questions` section in Discussion giving each of the five original questions a disposition with evidence from the `mcp-ki-kb-fs` README or source at a named revision.
+- [x] Refresh the `## KB Filesystem` section of `Pillars/Philosophy/Model/Tools/How Tools Connect.md` so it states the gateway model: agents reach the island through aliased, zone-scoped, access-levelled and audited tools, while humans and Obsidian edit the files directly.
+- [x] Update `Pillars/Philosophy/Model/Tools/KB Filesystem/KB Filesystem.md`: add the nested `read`/`write`/`destructive` access levels, the JSONL audit of write and destructive calls, and a sentence that note conventions are enforced by `ki repo audit`, not by the server at write time. Keep the README as the authoritative tool catalogue.
+- [x] Record the residual - optional write-time convention validation (frontmatter, routing, tags, links) - in Discussion as a note addressed to the `mcp-ki-kb-fs` owner, and mention it in the review packet for relay; do not write to that repository.
+- [x] Update the `status` month on each edited note per its existing convention.
 
 ---
 
@@ -115,6 +114,41 @@ This record closes the Island MCP design question on delivery. The residual writ
 
 ---
 
+## Review
+
+### Delivered
+
+Within the approved boundary: Arcadia's tool notes now describe the shipped agent gateway, the five original questions are dispositioned with `mcp-ki-kb-fs` evidence, and the residual write-time convention validation is recorded for the server's owner. No change was made in `mcp-ki-kb-fs`, to MCP bindings or to `mcp-servers.yaml`, and no trade was raised. Immutable baseline `54228cbca9e6ae27e6fc91614f207d6d00a718a1`.
+
+### Change Summary
+
+- `Pillars/Philosophy/Model/Tools/How Tools Connect.md`: the `## KB Filesystem` section now states the gateway model (aliased, zone-scoped, access-levelled, audited agent access; humans and Obsidian edit files directly; conventions checked by `ki repo audit`); `status` month advanced to October 2026.
+- `Pillars/Philosophy/Model/Tools/KB Filesystem/KB Filesystem.md`: adds `kb_search`, the nested `read`/`write`/`destructive` levels per tool, the JSONL audit log, and the write-time validation gap; `status` was already `current - October 2026`.
+- This record: Steps ticked, `### Disposition of the open questions` and `### Residual for the mcp-ki-kb-fs owner` in Discussion, and this Review packet.
+- Deviations: search has shipped as `kb_search` since planning, so it is described as delivered rather than planned. The retired `candidate` field was removed from this record's frontmatter as a format conformance fix.
+
+### Verification
+
+- Discussion holds a disposition and an evidence reference for each of the five original questions (`mcp-ki-kb-fs` README at `d39816a`).
+- `How Tools Connect.md` `## KB Filesystem` names the agent gateway model; `KB Filesystem.md` names access levels, audit and the write-time validation gap.
+- `git -C <mcp-ki-kb-fs> status --porcelain` empty before and after; HEAD `d39816a` unchanged.
+- `ki repo audit --skill ki-repo-kb --repo . --progress never`: PASS.
+- `ki repo audit --repo .` (ki 0.6.1): PASS.
+
+### Outstanding concerns
+
+- The residual write-time convention validation is recorded here for relay only; `mcp-ki-kb-fs` holds no roadmap item for it and Arcadia raised no trade, so it lives on only if the owner captures it there.
+
+### Post-change review
+
+The Goal holds: Arcadia's notes describe the real gateway and the remaining gap is named for its owner. The canonical edits are bounded to the two notes this ready record approved, are descriptive rather than normative, and introduce no new links that could break. Ready for owner acceptance through `ki-accept`.
+
+### Mini recap
+
+Closed the Island MCP design question against `mcp-ki-kb-fs` `d39816a`, refreshed two tool notes and recorded the write-time validation residual. Learning route proposed, not promoted: when a tool note mirrors a product README, cite the README revision so later drift is easy to spot.
+
+---
+
 ## Discussion
 
 ### Decisions under delegated autonomy
@@ -142,6 +176,22 @@ The original checklist asked for permissions per agent class (Citizens, Visitors
 ### Original tool-surface sketch
 
 `read_note`, `search`, `list_folder`, `write_note`, `validate_routing`, `link_check` and `get_metadata`. The first four are realised by `kb_read`, the planned search tool, `kb_list` and `kb_write`; `get_metadata` is covered by `kb_read` frontmatter selection; `validate_routing` and `link_check` are the residual write-time validation.
+
+### Disposition of the open questions
+
+Evidence: `knowledgeislands/mcp-ki-kb-fs` README at `d39816a` (2026-10-06).
+
+| Question | Disposition | Evidence |
+| --- | --- | --- |
+| One server or many? | One server; each call names a required `kb` alias resolved to a closed bundle of root, zones and allow-list | README "Many knowledge bases, one registration" and the authorisation-boundary section |
+| Where does enforcement live? | Path, zone and access enforcement in the server at call time; note conventions in `ki repo audit`; write-time convention validation is the residual | README "Path safety in two layers", "Zone scoping" and the tool-visibility gate; no convention validation in `src/` |
+| How do existing tools fit? | Humans and Obsidian bypass the server by design; it governs agent access wherever an agent is given it instead of raw filesystem tools | README overview; `How Tools Connect.md` `## KB Filesystem` |
+| Relationship to Admin/Governance? | `Admin` is an ordinary declared zone read through `kb_read`; `kb_config` exposes only zones, allow-list and base roster | README tool table (`kb_config`) |
+| Relationship to Cowork Configuration Layers? | Complementary: skills and configuration carry procedure, the server carries governed file access | README scope; no Cowork dependency in the server |
+
+### Residual for the mcp-ki-kb-fs owner
+
+Optional write-time convention validation - frontmatter, routing, tags and links, the original `validate_routing` and `link_check` ideas - is not implemented by `mcp-ki-kb-fs`. It is offered to that repository's owner as a note for its own roadmap; Arcadia makes no cross-repository write and raises no trade.
 
 ---
 

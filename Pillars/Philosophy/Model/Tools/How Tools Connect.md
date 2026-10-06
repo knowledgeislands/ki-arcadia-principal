@@ -4,7 +4,7 @@ tags:
   - card/note
   - topic/knowledge-islands
   - topic/knowledge-management
-status: current - April 2026
+status: current - October 2026
 author: Written with Claude
 ---
 
@@ -50,7 +50,7 @@ Git Audit is the git fleet inspector. The Git Audit note covers the `mcp-git-aud
 
 ## KB Filesystem
 
-KB Filesystem is the programmatic interface to this island's knowledge base. The KB Filesystem note covers the `mcp-ki-kb-fs` server, which exposes access-gated read and write tools over one or more aliased knowledge bases and enforces path safety server-side.
+KB Filesystem is the agent gateway to this island's knowledge base. Agents reach the island through the `mcp-ki-kb-fs` server's tools, which are aliased to a declared base, scoped to its Knowledge Islands zones and staging areas, gated by a nested `read`, `write` or `destructive` access level, and audited for writes; humans and Obsidian keep editing the files directly. The server enforces path, zone and access safety at call time, while note conventions are checked by `ki repo audit`. The KB Filesystem note covers the server's tools and safety model.
 
 ## Notion Mirror
 
