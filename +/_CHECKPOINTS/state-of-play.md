@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: state-of-play
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-06T21:07:00Z
+updated_at: 2026-10-06T21:20:00Z
 ---
 
 # state-of-play
@@ -43,11 +43,39 @@ Open roadmap records by repository and status (68 open, 1 done awaiting prune):
 - **Themes are not usable as recorded.** The `theme` field carries 16 distinct values across 68 records. In the harness, 30 of 39 records share `governance-consistency`, so the field does not discriminate. Arcadia uses a different vocabulary (`governance`, `knowledge-model`, `operational-tooling`). There is no shared cross-repository taxonomy.
 - **Checkpoints.** Five active in Arcadia (`baseline-and-cloud`, `delta-evaluation`, `estate-factorisation`, `paperclip-bootstrap-and-recovery`, `territories-and-trades`); none in any other repository. Their scopes already cross-reference each other, and `baseline-and-cloud` carries a record table that overlaps this inventory.
 - **Other in-flight surfaces.** `ki-website` holds batch authorisation `KI-WEB-BATCH-001` and legacy handoff `CLI-006-qualified-repository-declarations`. Arcadia `+/_ACQUIRE/` holds 8 unprocessed captures (7 ChatGPT, 1 Granola). `ki-techne-harness/+/paperclip-as-techne-prior-art.md` is an unpromoted working analysis. No trade files are pending in any `+/_TRADES/`.
-- **Outside scope but depended on.** chezmoi `DOTFILES-UE-065` and `DOTFILES-UE-067` are cited by `baseline-and-cloud`.
+- **Outside scope but depended on.** chezmoi `DOTFILES-UE-067` (serve Observatory under launchd, awaiting review) and `DOTFILES-UE-065` (diagnose same-boot mcporter stall, draft) are cited by `baseline-and-cloud` for the laptop's standing load.
+
+Records approved for acceptance and pruning (approval given 2026-10-06; not yet actioned):
+
+| Repository | Records |
+| --- | --- |
+| `ki-agentic-harness` | `GOV-092` align generated normal forms, `GOV-095` align roadmap diagnostics, `GOV-096` detect zero-match generators, `GOV-098` render every derived signal, `GOV-100` report push as action, `GOV-105` state ordering in ledger, `GOV-112` apply September source refreshes, `GOV-124` review artefact idempotence, `GOV-129` reconcile separate Git indexes, `RTP-013` route portable skill doctrine; prune `FND-027` (already done) |
+| `ki-arcadia-principal` | `GOV-012` name roadmap write locus, `GOV-019` align the veto wording with the current layout |
+| `ki-website` | `SITE-042` auto-accept verified tool versions |
+
+Checkpoint conformance, reported by each owning thread on 2026-10-06. All five pass `ki repo audit --skill ki-checkpoint` mechanically; four fail on judgement, and no mechanical check catches any of those failures:
+
+| Checkpoint | Judgement failures | Owning thread's proposed fix (not done) |
+| --- | --- | --- |
+| `territories-and-trades` | About 900 words, not concise. Only copy of the proposed trade-config format. Related-items list makes it act as a roadmap | Move the proposal and related items into a draft Arcadia roadmap record; cut the checkpoint to a short snapshot pointing at it |
+| `estate-factorisation` | Acts as a work tracker: 13 factorisation items have no work records, so their status table and phase detail exist only here. `updated_at` (21:00Z, set in `3548852`) is later than a subsequent commit's write (20:47Z) | Capture the items through `ki-next` in their owning repositories; correct the timestamp |
+| `paperclip-bootstrap-and-recovery` | About 1,200 words. Standing constraints (ticket-status freeze, pilot scope, login position) held only in "Decisions made". "Next step" is an 11-item to-do list | Move the constraints to the harness coordination skill or an Arcadia decision record; give the to-do items roadmap records; cut "Next step" to a single resumable action |
+| `baseline-and-cloud` | Thread name was chosen by an agent at Kris's request, not by Kris (RECORD-1). Otherwise points to owners rather than copying | Kris confirms or renames |
+| `delta-evaluation` | No report received yet | - |
+
+Gaps in the checkpoint standard and audit, raised by those threads:
+
+- The audit does not warn on length, list-heavy "Next step" sections, decisions held only in the checkpoint, or untracked work.
+- The audit does not compare `updated_at` with commit time.
+- The standard has no position on a checkpoint used as the "single place to look" for a thread, which is how Kris wants to use them; it conflicts with the rule that checkpoints only point to owners.
 
 ## Decisions made
 
 - Kris decided on 2026-10-06 to pause and take stock across the Knowledge Islands repositories, building the review in this single checkpoint. For the review's duration it deliberately aggregates in-flight inventory and findings, which checkpoints normally avoid; it stays derived from the owning records and is never their only copy.
+- Other work across the Knowledge Islands repositories is paused while the review runs.
+- The thirteen awaiting-review records are to be accepted, and those with `FND-027` pruned, to start from a clean sheet.
+- The review's themes are the checkpoint threads: `baseline-and-cloud`, `delta-evaluation`, `estate-factorisation`, `paperclip-bootstrap-and-recovery` and `territories-and-trades`. Every open record maps to one of them; a record that fits none is itself a finding.
+- Linear and TickTick are out of scope.
 
 ## Files touched
 
@@ -55,18 +83,18 @@ None beyond this record.
 
 ## Open questions
 
-- Should new capture, adoption and implementation pause across the Knowledge Islands repositories while the review runs, so the inventory stops moving?
-- Should the thirteen awaiting-review records be accepted before the thematic review (throughput), or after it (avoid accepting work that conflicts)?
-- Should the review propose one shared cross-repository theme taxonomy, recorded in the owning skill, or map to themes only inside this review?
-- Once the review completes, should the five sibling checkpoints be folded into this one or each be removed as its scope is routed?
-- Should the chezmoi records that Knowledge Islands checkpoints depend on be included in the review?
+- Should the two chezmoi records be included in the review under `baseline-and-cloud`?
+- Should the checkpoint standard allow the "single place to look" use, or should the audit warn on length, list-heavy "Next step" sections and checkpoint-only decisions? This needs a harness record either way.
+- Is `baseline-and-cloud` the name Kris wants for that thread?
+- Once the review completes, should the sibling checkpoints be folded into this one or each be removed as its scope is routed?
 
 ## Next step
 
-Proposed review method; Kris has not yet approved it.
+Nothing runs until Kris has read this record and directs the next action. Proposed order:
 
-1. **Per-record read.** Read every open record in full, in three read-only batches (harness, Arcadia, the other five repositories). For each, capture: intended outcome, what it changes, the canonical owner it relies on, dependencies, overlap or conflict with other records, and whether its status and horizon are still true.
-2. **Thematic synthesis.** Propose 6 to 10 cross-repository themes, map every record to one, and list duplicates, reversals and superseded items.
-3. **Specification check.** For each theme, name the canonical owner (`ki-specifications`, harness skill standards, Arcadia Pillars) and test each record against it; list remedial work where a record or the owner is wrong.
-4. **Checkpoint audit.** Run `ki repo audit --skill ki-checkpoint` on Arcadia and judge each of the five checkpoints for durable facts held only there.
-5. **Dispositions.** Bring one table of proposed dispositions to Kris; route only approved changes through the owning repositories.
+1. **Clean sheet.** Accept the thirteen awaiting-review records through `ki-accept` in their owning repositories, then prune them and `FND-027`.
+2. **Per-record read.** Read every remaining open record in full and capture its intended outcome, canonical owner, dependencies, overlaps or conflicts, and whether its status and horizon are still true.
+3. **Map to themes.** Assign each record to one checkpoint thread; list duplicates, reversals, superseded items and records that fit no thread.
+4. **Specification check.** Test each record against its canonical owner and list remedial work.
+5. **Checkpoint remediation.** Apply the owning threads' proposed fixes once Kris approves them, and capture the standard and audit gaps as a harness record.
+6. **Dispositions.** Bring one table of proposed dispositions to Kris; route only approved changes through the owning repositories.
