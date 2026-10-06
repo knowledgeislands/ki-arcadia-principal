@@ -10,7 +10,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-06T23:21:00Z
-updated_at: 2026-10-06T23:32:00Z
+updated_at: 2026-10-06T23:36:00Z
 ---
 
 # Define and Authorise the Limited Remote Agent Prototype
@@ -53,6 +53,8 @@ Further decisions by Kris on 2026-10-07:
 - **AWS access.** Kris, not an agent, creates a dedicated, least-privilege AWS access for this prototype after accepting the bounds; see "Access Kris grants".
 - **Gate and order.** The sequence is fixed; see "Gate and order".
 
+Clarified by Kris on 2026-10-07: AWS credentials reach a session through Granted (`assume <profile>`) with AWS IAM Identity Center (SSO), as documented in the chezmoi guide `docs/guides/tools/granted.md`; profiles live in the chezmoi source `dot_aws/private_config` under the SSO session `humansnotrobots`. "Access Kris grants" and "Operator tooling in chezmoi" now route the prototype's access that way.
+
 1. **Purpose.** One remotely reachable agent environment that can edit, commit and run `ki` audits across the `kis` Agora repositories while Kris has poor connectivity.
 2. **Host.** Exactly one host. Open decision, as in `TECHNE-TOOLS-OPS-008`: the existing controller t3.medium (shared blast radius, marginal headroom) or a separate host (more capacity, new standing cost). OPS-008 recommends a separate host.
 3. **Access.** Kris connects over Tailscale and uses Zed "Open Remote" (Zed remote development over SSH) to the host.
@@ -81,12 +83,14 @@ Subject to Kris's acceptance, the amendment waives these three unmet prerequisit
 
 Kris, not an agent, creates this access, and only after accepting the bounds (see "Gate and order"). It exists solely for this prototype and is removed at teardown.
 
-- **Profile.** A dedicated AWS CLI profile on Kris's Mac, backed by IAM Identity Center (SSO) or an assumed role. Never long-lived access keys, and never credentials in chat, repositories or files outside the AWS CLI's own cache. Proposed name `knowledge-islands-gov-020`, Kris to confirm; it stays separate from the existing `knowledge-islands-techne` profile.
+- **Credentials.** Credentials come from Granted. Kris runs `assume <profile>` in the shell that starts the session and verifies the account and role with `aws sts get-caller-identity` before any AWS change. They are short-lived IAM Identity Center session credentials, cached by Granted in the macOS Keychain, and never exported to files or chat. `assume --unset` ends them. Agents started from that shell inherit them only for that session; a new shell or session starts without them. Never long-lived access keys.
+- **Permission set.** The least-privilege policy below becomes an IAM Identity Center permission set (the inline policy as drafted) assigned to Kris for the one account, rather than a standalone IAM role. Kris creates the permission set and the assignment as administrator.
+- **Profile.** A new SSO profile entry in the chezmoi source `dot_aws/private_config` with `sso_session = humansnotrobots`, `sso_account_id`, `sso_role_name` set to the permission set name, and `region = eu-west-1`. It is added through the GOV-020 chezmoi deliverable (see "Operator tooling in chezmoi") and reaches `~/.aws/config` only through Kris's reviewed apply. Proposed profile name `knowledge-islands-gov-020`, Kris to confirm, along with the permission set name; it stays separate from the existing `knowledge-islands-techne` profile.
 - **Account and region.** Account `655383751458`, region `eu-west-1`, as declared by the existing Techne defaults in `tools-techne` `src/config.ts` and `ki-techne-harness` `operations/aws/controller/provision.sh`. Kris to confirm the prototype uses the same account and region.
 - **Tagging.** The prototype's instance and security group carry the `ki-work-item` and `ki-lifecycle` tag keys used by `ki-techne-harness` `infra/aws/controller-stack.yaml`, with `ki-work-item = KI-ARCADIA-GOV-020` and `ki-lifecycle = prototype`. The tag values and the `Name` prefix are proposed, Kris to confirm.
 - **Secret names.** No existing Parameter Store or Secrets Manager naming convention was found in either repository. Proposed SSM Parameter Store SecureString parameters under `/ki/arcadia/gov-020/` (`tailscale-auth-key`, `github-token`, `model-api-key`), Kris to confirm the store and names.
 
-Draft least-privilege policy for the profile. EC2 `Describe*` calls do not support resource-level scoping, so they are read-only across the region; every mutating action is limited to resources carrying the prototype tag. Kris to confirm.
+Draft least-privilege inline policy for the permission set. EC2 `Describe*` calls do not support resource-level scoping, so they are read-only across the region; every mutating action is limited to resources carrying the prototype tag. Kris to confirm.
 
 ```json
 {
@@ -142,13 +146,14 @@ Draft least-privilege policy for the profile. EC2 `Describe*` calls do not suppo
 
 In plain words: the profile can see EC2 instances and security groups in `eu-west-1`; start, stop, reboot and terminate only the instance tagged for this record; narrow or remove only the security group tagged for this record, and never open inbound access; read only the three named secrets; and never change IAM, SSO, organisation settings or tags, so it cannot pull other resources into its own scope. Creating the host and writing the secrets are not in this policy: Kris does those, or `ki-techne-harness` does them under its own provisioning path once handed off, Kris to confirm which. If Secrets Manager is chosen instead, the secret statement becomes `secretsmanager:GetSecretValue` on the three named secret ARNs and the KMS condition names `secretsmanager.eu-west-1.amazonaws.com`.
 
-Revocation: remove the permission set assignment or role, delete the profile from `~/.aws/config`, and delete the three parameters at teardown.
+Revocation: run `assume --unset` in any assumed shell, remove the permission set assignment and then the permission set, remove the profile entry from the chezmoi source and apply it after review, and delete the three parameters at teardown.
 
 ### Operator tooling in chezmoi
 
 The operator-side helpers are a deliverable of this record and live in Kris's chezmoi source (`~/.local/share/chezmoi`), alongside the existing `private_dot_ssh/private_config`, `dot_config/zed/private_settings.json`, `dot_aws/private_config` and `bin/` scripts:
 
-- **Connect.** A helper that checks `tailscale status` for the host and then opens the host in Zed.
+- **AWS profile.** The GOV-020 SSO profile entry in `dot_aws/private_config`, as described in "Access Kris grants".
+- **Connect.** A helper that checks `tailscale status` for the host and then opens the host in Zed. If it needs AWS (for example, to start a stopped host), it may call `assume` for the GOV-020 profile before any AWS call.
 - **Zed connection.** An `ssh_connections` entry for the host in Zed's settings with `upload_binary_over_ssh` enabled.
 - **SSH config.** A `Host` entry for the host's tailnet name in the SSH config.
 - **Kill switch and teardown.** Wrappers for the bound 9 stop and teardown.
@@ -172,7 +177,8 @@ An amendment to the [[Techne Programme Hold]] that names this prototype, its acc
 
 - Which host: the controller node or a separate host?
 - Which secret store (Parameter Store or Secrets Manager) and secret names, and which identity holds the GitHub and model API credentials?
-- Confirm the draft IAM policy, the profile name, the account and region, and the tag values in "Access Kris grants".
+- Confirm the draft inline policy, the permission set name, the profile name, the account and region, and the tag values in "Access Kris grants".
+- Is the Techne account (`655383751458`, from `tools-techne` config) reachable through the `humansnotrobots` SSO organisation? If not, which SSO session applies. Evidence for Kris to confirm, not a conclusion: the chezmoi `dot_aws/private_config` already declares a `knowledge-islands-techne` profile for that account under `sso_session = humansnotrobots`.
 - Who creates the host and writes the secrets: Kris directly, or `ki-techne-harness` under its own provisioning path?
 - Is a 30-day time box right, and what review date?
 - Should the amendment also be recorded as a Decision Record?
