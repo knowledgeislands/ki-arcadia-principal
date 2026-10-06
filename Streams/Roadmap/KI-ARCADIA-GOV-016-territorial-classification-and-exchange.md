@@ -8,7 +8,7 @@ horizon: now
 status: in-progress
 blocks: []
 blocked_by: []
-baseline_ref: 768814f
+baseline_ref: 768814fbed5cc878551398fc1df60eb06e78d499
 created_at: 2026-10-06T09:00:00Z
 updated_at: 2026-10-06T11:30:00Z
 ---
