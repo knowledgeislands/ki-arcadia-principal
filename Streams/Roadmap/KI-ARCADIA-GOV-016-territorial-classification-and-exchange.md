@@ -5,12 +5,12 @@ area: GOV
 title: Govern territorial classification and exchange from the Capital
 theme: governance
 horizon: now
-status: in-progress
+status: awaiting-review
 blocks: []
 blocked_by: []
 baseline_ref: 768814fbed5cc878551398fc1df60eb06e78d499
 created_at: 2026-10-06T09:00:00Z
-updated_at: 2026-10-06T15:00:00Z
+updated_at: 2026-10-06T16:30:00Z
 ---
 
 # Govern Territorial Classification and Exchange from the Capital
@@ -54,7 +54,7 @@ Approved by Kris Brown on 2026-10-06.
 ## Current state
 
 - Done 2026-10-06: decisions 1-6 approved; GOV-016 reserved (`768814f`); all seven non-KI opt-ins removed in their own repositories, with GDR-HNR-HARNESS-002 amended in place; `KI-HARNESS-GOV-122` re-scoped and `KI-TOOL-CLI-104` captured.
-- Done 2026-10-06 (single-step switch): Charter authority, GDR-KI-ARCADIA-003, the Capital, territory and trade policy in Arcadia's `.ki.toml`, Capital declarations across the registry, and the harness and `tools-ki` changes. Verification and review evidence is recorded under Discussion.
+- Delivered 2026-10-06 (single-step switch), awaiting review: Charter authority, GDR-KI-ARCADIA-003, and the Capital, territory and trade policy in Arcadia's `.ki.toml`. The Capital declarations across the registry, the harness change (KI-HARNESS-GOV-122) and the `tools-ki` change (KI-TOOL-CLI-104) are committed on their branches and land with this record. Verification and review evidence is recorded under Review.
 
 ## Steps
 
@@ -99,6 +99,44 @@ The harness `ki-trades` standard and rubric change in `KI-HARNESS-GOV-122`.
 ### Roadmap
 
 Closes on acceptance once the switch is verified.
+
+## Review
+
+### Delivered
+
+Within the approved boundary: Arcadia's Charter grants the Capital trade-route policy authority, GDR-KI-ARCADIA-003 records it, and Arcadia's `.ki.toml` declares `capital`, the Knowledge Islands territory of 21 members and the trade policy of 4 subtypes, 10 channels and 4 standing grants. The registry-wide Capital declarations, member route stripping, harness standard and `tools-ki` resolution are delivered by their own repositories. Baseline `768814fbed5cc878551398fc1df60eb06e78d499`. No release was cut and no remote operation was run.
+
+### Change Summary
+
+- [[Admin/Governance/Charter|Charter]]: one paragraph on trade-route policy authority.
+- [[Known Lands]]: the member list is also machine-readable in `.ki.toml`.
+- [[GDR-KI-ARCADIA-003-capital-governed-trade-routes|GDR-KI-ARCADIA-003]]: new governance Decision Record; [[Admin/Governance/Decisions/Decisions|Decisions]] lists it after SDR-KI-ARCADIA-005, renumbers the later entries and uses ASCII separators.
+- `.ki.toml`: `capital`, `[skills.ki-repo.territory]` and `[skills.ki-trades.territory]`; Arcadia's former member route table removed.
+- Deviation: decisions 7 to 9 collapse the staged plan into one step, make `capital` mandatory and activate the Techné-to-Homebrew direction.
+
+### Verification
+
+Run in an isolated `KI_*_HOME` registering all 41 repositories on their migration branches, with `tools-ki` from KI-TOOL-CLI-104 as `ki` and the KI-HARNESS-GOV-122 branch as the local harness.
+
+- `ki repo trade policy check` from Arcadia: MEMBERS=21 CONFORMING=21 FAILING=0 UNVERIFIABLE=0.
+- `ki repo trade policy compare --baseline` against the saved v0.6.1 estate report: COVERED=77 LOST=0 ADDED=1, the addition being `tools-techne` to `homebrew-tap` for `work`.
+- Standing grants reproduce the previous active set: GRANTS=21 in `ki-agentic-harness`, 4 in `ki-website`, and 3 each in `ki-techne-harness` and `tools-techne`, all active. `TRD-8004751b` and `TRD-d03495e9` remain visible in `tools-ki` as awaiting receipt on active routes.
+- All 41 registered repositories declare `capital`; each of the seven Capitals lists its members and no member `.ki.toml` carries a route or subtype table. Each migrated member's `ki-repo` and `ki-trades` audits show no territory or trade finding; the only remaining findings are isolated-environment runtime activation artefacts that are also present without the change.
+- `ki repo audit --repo . --progress never --concise` here: PASS across 24 skills.
+- `rumdl` on the changed notes: clean; no em or en dash in the added lines.
+
+### Outstanding concerns
+
+- Released `ki` v0.6.1 and its harness do not understand `capital` or the territory tables, so repository CI audits fail until the next `tools-ki` release and the CI `KI_VERSION` bump; the owner accepted this window.
+- A Capital that is not checked out locally leaves member audits with a stated warning rather than a failure, by design.
+
+### Post-change review
+
+The Goal holds: the territory's routes are declared once in the Capital, members carry no route tables, every named island declares `ki-trades`, and nothing previously permitted was lost. Fable's review found the policy exact against the baseline; its should-fix findings (an ambiguous Charter link, unrecorded verification, lifecycle state and over-stated delivery wording) and its nits (reference link style, migration narrative in the Decision Record, separators in the Decisions index) were addressed in this revision. Ready for acceptance.
+
+### Mini recap
+
+Arcadia now governs the Knowledge Islands trade policy in its own `.ki.toml`, every registered repository names its Capital, and the switched estate reproduces every former route plus the one decided addition. Learning route: none beyond GDR-KI-ARCADIA-003.
 
 ## Discussion
 
