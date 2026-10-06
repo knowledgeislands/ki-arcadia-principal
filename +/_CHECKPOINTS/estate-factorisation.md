@@ -3,14 +3,14 @@ type: ki-checkpoint
 thread: estate-factorisation
 state: active
 created_at: 2026-10-06T20:32:17Z
-updated_at: 2026-10-06T20:55:00Z
+updated_at: 2026-10-06T21:00:00Z
 ---
 
 # estate-factorisation
 
 ## Objective
 
-Finish the Knowledge Islands estate factorisation: a consistent repository structure vocabulary, explicit ownership seams, behavioural MCP policy evidence, a single OpenAI housekeeping product, observable copies and running systems, and one alignment item per surviving repository. Arcadia coordinates; each item is delivered through a work record in its owning repository. No factorisation item is adopted or Ready yet.
+Finish the Knowledge Islands estate factorisation: a consistent repository structure vocabulary, explicit ownership seams, behavioural MCP policy evidence, a single OpenAI housekeeping product, observable copies and running systems, and one alignment item per surviving repository. Arcadia coordinates; each item is delivered through a work record in its owning repository. No factorisation item is adopted or Ready yet. The rollout baseline and the Techné cloud move are tracked in `baseline-and-cloud` and do not wait on this thread.
 
 ## Current state
 
