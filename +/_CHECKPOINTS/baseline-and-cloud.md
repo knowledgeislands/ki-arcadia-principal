@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: baseline-and-cloud
 state: active
 created_at: 2026-10-06T20:50:00Z
-updated_at: 2026-10-06T20:50:00Z
+updated_at: 2026-10-06T21:05:00Z
 ---
 
 # baseline-and-cloud
@@ -64,7 +64,6 @@ Today's Techné controller dispatches Telegram `/run` requests as busybox-only K
 ## Decisions made
 
 - The Techne Programme Hold stands: local design, build and test may proceed, but no remote execution or remote-environment management. Moving Paperclip off the laptop is remote-environment management. Only Kris can authorise, reshape or retire the hold, once the three prerequisites are evidenced.
-- The factorisation remainder does not gate the cloud move; it continues under `estate-factorisation`.
 
 ## Files touched
 
@@ -77,10 +76,11 @@ None beyond this record.
 - Should `KI-ARCADIA-OPS-002` be closed as obsolete or folded into OPS-008?
 - Which repository owns reducing the laptop's standing load: chezmoi, `tools-rig` or both?
 - Should the `homebrew-tap` formula be bumped to `ki` v0.7.1 now? This needs Kris's go-ahead.
+- Should `tools-ki` add a terminal Granola disposition for meetings dropped without harvest? The ledger has none, so the dropped 2026-10-05 Alec catch-up is recorded as `harvested-locally`. No record exists yet.
 
 ## Next step
 
-Proposed sequence; Kris has not yet approved it.
+Proposed sequence; Kris has not yet approved it. It treats the factorisation remainder under `estate-factorisation` as not gating the cloud move.
 
 1. **Clear the review stack.** With Kris, take the twelve awaiting-review records through `ki-accept`, starting with GOV-012, GOV-019, RTP-013 and GOV-092.
 2. **Relieve the laptop.** Capture a standing-load record in its owning repository, then pause non-essential Rig agents and trim the MCP inventory.
