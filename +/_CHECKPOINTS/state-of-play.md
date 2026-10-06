@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: state-of-play
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-06T21:20:00Z
+updated_at: 2026-10-06T21:30:00Z
 ---
 
 # state-of-play
@@ -45,6 +45,18 @@ Open roadmap records by repository and status (68 open, 1 done awaiting prune):
 - **Other in-flight surfaces.** `ki-website` holds batch authorisation `KI-WEB-BATCH-001` and legacy handoff `CLI-006-qualified-repository-declarations`. Arcadia `+/_ACQUIRE/` holds 8 unprocessed captures (7 ChatGPT, 1 Granola). `ki-techne-harness/+/paperclip-as-techne-prior-art.md` is an unpromoted working analysis. No trade files are pending in any `+/_TRADES/`.
 - **Outside scope but depended on.** chezmoi `DOTFILES-UE-067` (serve Observatory under launchd, awaiting review) and `DOTFILES-UE-065` (diagnose same-boot mcporter stall, draft) are cited by `baseline-and-cloud` for the laptop's standing load.
 
+Handed over from the roadmap-delivery thread at 23:15 CEST:
+
+- **Finished and pushed.** `tools-ki` v0.7.1 released and used by CI in every repository. Harness model radar updated. `KI-HARNESS-GOV-095` and `KI-ARCADIA-GOV-019` delivered to awaiting review; follow-on `KI-TOOL-CLI-108` raised. `KI-ARCADIA-OPS-011` accepted. chezmoi now carries the quiet, timestamped-update communication rule for Claude and Codex.
+- **Approved, waiting for Kris's go:**
+  1. Ledger tidy-up: audit each Agora (kis, personal, legal, hnr, equalremedy, techmedix, vallearmonia) and, where ROAD-7 reports a superseded ledger form, conform `_ISSUES.md` only. `homebrew-tap` and `ki-website` are protected and need auto-merge pull requests.
+  2. Slim-down 1: move communication levels, report shape and the timestamped-update rule from private instructions into a portable skill, probably `ki-authoring`, through a harness record.
+  3. Slim-downs 2 and 3: reduce `dot_codex/private_AGENTS.md` to user-level content only (depends on `RTP-013`), and remove duplicated progress-update text from repository `AGENTS.md` files.
+- **Release gap.** The `homebrew-tap` formula and GitHub release for `ki` v0.7.1 still need a pull request.
+- **Acceptance knock-on.** Accepting `KI-HARNESS-GOV-124` lets `5GE-P2-GOV-015` close.
+- **Needs a Cowork or Desktop session.** Push the updated Conformance scheduled task, following the Sync Protocol in [[Scheduled Task Audit]]; CLI sessions cannot reach the scheduled-tasks tool.
+- **Admin raised for review.** `TMX-CO-006` ICO fee due 16 October. Linear, Strava, TickTick and Xero need re-authorising; Telegram failed to connect. Possible stray bootstrap files in `~/.claude` or `~/.agents`.
+
 Records approved for acceptance and pruning (approval given 2026-10-06; not yet actioned):
 
 | Repository | Records |
@@ -83,6 +95,7 @@ None beyond this record.
 
 ## Open questions
 
+- The handoff's standing rule says agents must not prune, but the clean-sheet decision includes pruning. Does Kris prune personally after `ki-accept`, or authorise an agent to prune these fourteen records explicitly?
 - Should the two chezmoi records be included in the review under `baseline-and-cloud`?
 - Should the checkpoint standard allow the "single place to look" use, or should the audit warn on length, list-heavy "Next step" sections and checkpoint-only decisions? This needs a harness record either way.
 - Is `baseline-and-cloud` the name Kris wants for that thread?
@@ -92,7 +105,7 @@ None beyond this record.
 
 Nothing runs until Kris has read this record and directs the next action. Proposed order:
 
-1. **Clean sheet.** Accept the thirteen awaiting-review records through `ki-accept` in their owning repositories, then prune them and `FND-027`.
+1. **Clean sheet.** With Kris, accept the thirteen awaiting-review records through `ki-accept` in their owning repositories, then prune them and `FND-027`.
 2. **Per-record read.** Read every remaining open record in full and capture its intended outcome, canonical owner, dependencies, overlaps or conflicts, and whether its status and horizon are still true.
 3. **Map to themes.** Assign each record to one checkpoint thread; list duplicates, reversals, superseded items and records that fit no thread.
 4. **Specification check.** Test each record against its canonical owner and list remedial work.
