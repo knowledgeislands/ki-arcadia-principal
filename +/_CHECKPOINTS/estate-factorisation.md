@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: estate-factorisation
 state: active
 created_at: 2026-10-06T20:32:17Z
-updated_at: 2026-10-06T20:32:17Z
+updated_at: 2026-10-06T20:42:00Z
 ---
 
 # estate-factorisation
@@ -32,6 +32,20 @@ Status was observed read-only on 2026-10-05; recheck before acting.
 | ALIGN-1 - one alignment item per repository | Open | Arcadia issues; each repository owns | FND-3, FND-5, OAI-1 |
 | EVAL-1 and EVAL-2 - measure and reconsider | Open | Arcadia | ALIGN-1 |
 
+Related work records already exist in their owning repositories, observed read-only on 2026-10-06. They are owned and scheduled there; this table only maps them to the items above.
+
+| Record | Status | Relates to |
+| --- | --- | --- |
+| `KI-HARNESS-GOV-134` - align MCP safety contracts | ready, now | MCP-1: authentication recovery and dry-run rules in the MCP standard |
+| `KI-HARNESS-GOV-140` - define MCP release procedure | draft, triage | DIST-1 extended to the MCPs, none of which has a tag or release workflow |
+| `KI-HARNESS-GOV-141` - auto-bump released `ki` pin | draft, triage | FND-4 stale CI `KI_VERSION` pins; DIST-1 |
+| `homebrew-tap` `BREW-011` - register `ki` pin consumers | draft, triage | Pairs with `KI-HARNESS-GOV-141` |
+| `ki-website` `KI-WEB-SITE-042` - auto-accept verified tool versions | awaiting-review, now | DIST-1 website release presentation |
+| `KI-ARCADIA-ECO-009` - legacy serve fallback evidence | ready, now | OPS-1: per-client MCP binding evidence |
+| `KI-HARNESS-GOV-127` - adopt Dependency Cruiser estatewide | in-progress, now | ALIGN-1 pattern of per-repository adoption; lists `mcp-housekeeping-codex` as an adopter, so OAI-1 retirement must update it |
+| chezmoi `DOTFILES-UE-028` - tidy retired software remnants | draft, waiting-for | Named in FND-4's roadmap-shape drift set; recheck |
+| `KI-ARCADIA-GOV-010` - assess estate tooling commonality | draft, future | Follows completion; feeds EVAL-2 |
+
 `ki-techne-principal` and `ki-plugins` are retired, so phase-spec references to them are moot; Arcadia now owns Techne engineering knowledge. The full phase specifications (purpose, justification, deliverables, completion gates) are in Git at `25be451:+/knowledge-islands-factorisation-roadmap.md`, and the untrimmed original is reachable through `git log -- "+/knowledge-islands-factorisation-roadmap.md"`.
 
 ## Decisions made
@@ -52,4 +66,4 @@ None beyond this record, which replaces `+/knowledge-islands-factorisation-roadm
 
 ## Next step
 
-Recheck the status table, then use `ki-next` to capture FND-5 as an Arcadia work record. FND-3 (estate structure register) and FND-4 (drift recheck) can be captured alongside it, in their owning repositories, as independent non-blocking work.
+Recheck the status table, then use `ki-next` to capture FND-5 as an Arcadia work record. FND-3 (estate structure register) and FND-4 (drift recheck) can be captured alongside it, in their owning repositories, as independent non-blocking work. Before capturing anything, check the related records above so new work does not duplicate them.
