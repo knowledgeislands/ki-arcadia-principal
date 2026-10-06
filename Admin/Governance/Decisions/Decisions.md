@@ -20,8 +20,9 @@ Records are ordered by reveal order — the logical sequence in which the decisi
 7. [SDR-KI-ARCADIA-003](SDR-KI-ARCADIA-003-the-governance-of-an-island.md) — The Governance of an Island
 8. [SDR-KI-ARCADIA-004](SDR-KI-ARCADIA-004-the-enactment-process.md) — The Enactment Process
 9. [SDR-KI-ARCADIA-005](SDR-KI-ARCADIA-005-territories-archipelagos-and-the-constitutional-layer.md) — Territories, Archipelagos, and the Constitutional Layer
-10. [SDR-KI-ARCADIA-006](SDR-KI-ARCADIA-006-agents-in-the-knowledge-islands-model.md) — Agents in the Knowledge Islands Model
-11. [SDR-KI-ARCADIA-007](SDR-KI-ARCADIA-007-the-great-library-of-arcadia.md) — The Great Library of Arcadia
+10. [GDR-KI-ARCADIA-003](GDR-KI-ARCADIA-003-capital-governed-trade-routes.md) - Capital-governed trade routes
+11. [SDR-KI-ARCADIA-006](SDR-KI-ARCADIA-006-agents-in-the-knowledge-islands-model.md) — Agents in the Knowledge Islands Model
+12. [SDR-KI-ARCADIA-007](SDR-KI-ARCADIA-007-the-great-library-of-arcadia.md) — The Great Library of Arcadia
 
 ## Shared engineering decisions
 
