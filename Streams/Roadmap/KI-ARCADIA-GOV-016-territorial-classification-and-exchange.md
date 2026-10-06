@@ -5,12 +5,12 @@ area: GOV
 title: Govern territorial classification and exchange from the Capital
 theme: governance
 horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: 768814fbed5cc878551398fc1df60eb06e78d499
 created_at: 2026-10-06T09:00:00Z
-updated_at: 2026-10-06T16:30:00Z
+updated_at: 2026-10-06T17:45:00Z
 ---
 
 # Govern Territorial Classification and Exchange from the Capital
@@ -137,6 +137,10 @@ The Goal holds: the territory's routes are declared once in the Capital, members
 ### Mini recap
 
 Arcadia now governs the Knowledge Islands trade policy in its own `.ki.toml`, every registered repository names its Capital, and the switched estate reproduces every former route plus the one decided addition. Learning route: none beyond GDR-KI-ARCADIA-003.
+
+## Done
+
+Accepted 2026-10-06 by Kris Brown on the review packet above. Delivered in Arcadia by `5e1c047`, `2fbd663`, `0ad5102`, `e0f2984` and `ba3819f`, alongside KI-HARNESS-GOV-122 in the harness, KI-TOOL-CLI-104 in `tools-ki` and the per-repository Capital declarations.
 
 ## Discussion
 
