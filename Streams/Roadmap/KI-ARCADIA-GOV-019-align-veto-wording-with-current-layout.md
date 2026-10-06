@@ -8,12 +8,12 @@ tags:
   - topic/knowledge-islands
   - topic/automation
 horizon: now
-status: ready
+status: in-progress
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: 101c0280207b24f304028da55ecd5a159d574ce1
 created_at: 2026-10-06T19:53:25Z
-updated_at: 2026-10-06T19:53:25Z
+updated_at: 2026-10-06T19:54:37Z
 author: Written with Claude
 ---
 
