@@ -13,6 +13,7 @@ harnesses = ["knowledgeislands/ki-agentic-harness"]
 [skills.ki-repo]
 repository = "https://github.com/knowledgeislands/ki-arcadia-principal"
 title = "Arcadia Principal"
+capital = "https://github.com/knowledgeislands/ki-arcadia-principal"
 description = "The core knowledge repository of the Knowledge Islands project — governance base, evolving KB, and decision record."
 supported_runtimes = ["claude-code", "claude-desktop", "chatgpt-codex"]
 visibility = "public"
@@ -21,6 +22,33 @@ repo_type = "kb"
 primary_shape = "ki-repo-kb"
 repo_code = "KI-ARCADIA"
 store_roles = ["notes"]
+
+[skills.ki-repo.territory]
+name = "Knowledge Islands"
+members = [
+  "https://github.com/knowledgeislands/apps-observatory",
+  "https://github.com/knowledgeislands/homebrew-tap",
+  "https://github.com/knowledgeislands/ki-agentic-harness",
+  "https://github.com/knowledgeislands/ki-arcadia-principal",
+  "https://github.com/knowledgeislands/ki-specifications",
+  "https://github.com/knowledgeislands/ki-techne-harness",
+  "https://github.com/knowledgeislands/ki-website",
+  "https://github.com/knowledgeislands/mcp-acquire-whatsapp",
+  "https://github.com/knowledgeislands/mcp-git-audit",
+  "https://github.com/knowledgeislands/mcp-gsuite",
+  "https://github.com/knowledgeislands/mcp-housekeeping-chatgpt",
+  "https://github.com/knowledgeislands/mcp-housekeeping-claude",
+  "https://github.com/knowledgeislands/mcp-housekeeping-codex",
+  "https://github.com/knowledgeislands/mcp-ki-kb-fs",
+  "https://github.com/knowledgeislands/mcp-ki-kb-notion-mirror",
+  "https://github.com/knowledgeislands/mcp-m365",
+  "https://github.com/knowledgeislands/tools-git-almanac",
+  "https://github.com/knowledgeislands/tools-ki",
+  "https://github.com/knowledgeislands/tools-mgit",
+  "https://github.com/knowledgeislands/tools-rig",
+  "https://github.com/knowledgeislands/tools-techne",
+]
+
 
 [skills.ki-authoring]
 [skills.ki-binding]
@@ -89,17 +117,180 @@ folder_ids = ["2454f927-221b-4905-8583-a2daa85af625"]
 [skills.ki-trades]
 map_bonus = 1
 
-[skills.ki-trades.routes."knowledgeislands/ki-agentic-harness"]
-export = ["work", "knowledge"]
-import = ["knowledge"]
-standing.export.knowledge = ["shared-capability-maintenance"]
+[skills.ki-trades.territory.subtypes]
+public-source-change = "Already-public committed KI source changes for documentation provenance review. Excludes unpublished or confidential material; grants no publication or deployment authority."
+shared-capability-maintenance = "Non-sensitive findings about receiver-owned KI skills and governance: defects, compatibility, convention gaps and method outcomes. Excludes acquired user data, business content and credentials; grants no execution authority."
+techne-architecture-context = "Approved Techne roles, architectural constraints and decision criteria relevant to the receiver. Grants no new implementation scope, priority, deployment or acceptance authority."
+techne-interface-compatibility = "Committed Techne interface and compatibility evidence for receiver-owned components. Excludes credentials and private runtime state; grants no implementation, deployment or release authority."
 
-[skills.ki-trades.routes."knowledgeislands/ki-specifications"]
-export = ["knowledge"]
+[[skills.ki-trades.territory.channels]]
+id = "harness-maintenance"
+purpose = "Members report work and knowledge about shared KI capabilities to the harness."
+from = [
+  "https://github.com/knowledgeislands/apps-observatory",
+  "https://github.com/knowledgeislands/homebrew-tap",
+  "https://github.com/knowledgeislands/ki-arcadia-principal",
+  "https://github.com/knowledgeislands/ki-specifications",
+  "https://github.com/knowledgeislands/ki-techne-harness",
+  "https://github.com/knowledgeislands/ki-website",
+  "https://github.com/knowledgeislands/mcp-acquire-whatsapp",
+  "https://github.com/knowledgeislands/mcp-git-audit",
+  "https://github.com/knowledgeislands/mcp-gsuite",
+  "https://github.com/knowledgeislands/mcp-housekeeping-chatgpt",
+  "https://github.com/knowledgeislands/mcp-housekeeping-claude",
+  "https://github.com/knowledgeislands/mcp-housekeeping-codex",
+  "https://github.com/knowledgeislands/mcp-ki-kb-fs",
+  "https://github.com/knowledgeislands/mcp-ki-kb-notion-mirror",
+  "https://github.com/knowledgeislands/mcp-m365",
+  "https://github.com/knowledgeislands/tools-git-almanac",
+  "https://github.com/knowledgeislands/tools-ki",
+  "https://github.com/knowledgeislands/tools-mgit",
+  "https://github.com/knowledgeislands/tools-rig",
+  "https://github.com/knowledgeislands/tools-techne",
+]
+to = ["https://github.com/knowledgeislands/ki-agentic-harness"]
+kinds = ["work", "knowledge"]
 
-[skills.ki-trades.routes."knowledgeislands/ki-website"]
-export = ["knowledge"]
-standing.export.knowledge = ["public-source-change"]
+[[skills.ki-trades.territory.channels]]
+id = "harness-guidance"
+purpose = "The harness shares guidance about shared KI capabilities with every member."
+from = ["https://github.com/knowledgeislands/ki-agentic-harness"]
+to = [
+  "https://github.com/knowledgeislands/apps-observatory",
+  "https://github.com/knowledgeislands/homebrew-tap",
+  "https://github.com/knowledgeislands/ki-arcadia-principal",
+  "https://github.com/knowledgeislands/ki-specifications",
+  "https://github.com/knowledgeislands/ki-techne-harness",
+  "https://github.com/knowledgeislands/ki-website",
+  "https://github.com/knowledgeislands/mcp-acquire-whatsapp",
+  "https://github.com/knowledgeislands/mcp-git-audit",
+  "https://github.com/knowledgeislands/mcp-gsuite",
+  "https://github.com/knowledgeislands/mcp-housekeeping-chatgpt",
+  "https://github.com/knowledgeislands/mcp-housekeeping-claude",
+  "https://github.com/knowledgeislands/mcp-housekeeping-codex",
+  "https://github.com/knowledgeislands/mcp-ki-kb-fs",
+  "https://github.com/knowledgeislands/mcp-ki-kb-notion-mirror",
+  "https://github.com/knowledgeislands/mcp-m365",
+  "https://github.com/knowledgeislands/tools-git-almanac",
+  "https://github.com/knowledgeislands/tools-ki",
+  "https://github.com/knowledgeislands/tools-mgit",
+  "https://github.com/knowledgeislands/tools-rig",
+  "https://github.com/knowledgeislands/tools-techne",
+]
+kinds = ["knowledge"]
+
+[[skills.ki-trades.territory.channels]]
+id = "harness-delivery"
+purpose = "The harness hands implementation work to the specification and command-line tool owners."
+from = ["https://github.com/knowledgeislands/ki-agentic-harness"]
+to = [
+  "https://github.com/knowledgeislands/ki-specifications",
+  "https://github.com/knowledgeislands/tools-ki",
+  "https://github.com/knowledgeislands/tools-mgit",
+]
+kinds = ["work"]
+
+[[skills.ki-trades.territory.channels]]
+id = "ki-to-mgit"
+purpose = "tools-ki coordinates work and knowledge with tools-mgit."
+from = ["https://github.com/knowledgeislands/tools-ki"]
+to = ["https://github.com/knowledgeislands/tools-mgit"]
+kinds = ["work", "knowledge"]
+
+[[skills.ki-trades.territory.channels]]
+id = "mgit-to-ki"
+purpose = "tools-mgit coordinates work and knowledge with tools-ki."
+from = ["https://github.com/knowledgeislands/tools-mgit"]
+to = ["https://github.com/knowledgeislands/tools-ki"]
+kinds = ["work", "knowledge"]
+
+[[skills.ki-trades.territory.channels]]
+id = "homebrew-release"
+purpose = "Command-line tool owners hand release work to the Homebrew tap."
+from = [
+  "https://github.com/knowledgeislands/tools-git-almanac",
+  "https://github.com/knowledgeislands/tools-ki",
+  "https://github.com/knowledgeislands/tools-mgit",
+  "https://github.com/knowledgeislands/tools-techne",
+]
+to = ["https://github.com/knowledgeislands/homebrew-tap"]
+kinds = ["work"]
+
+[[skills.ki-trades.territory.channels]]
+id = "arcadia-to-specifications"
+purpose = "The Capital shares governance knowledge with KI Specifications."
+from = ["https://github.com/knowledgeislands/ki-arcadia-principal"]
+to = ["https://github.com/knowledgeislands/ki-specifications"]
+kinds = ["knowledge"]
+
+[[skills.ki-trades.territory.channels]]
+id = "public-source"
+purpose = "Public source owners share knowledge with the KI website."
+from = [
+  "https://github.com/knowledgeislands/ki-arcadia-principal",
+  "https://github.com/knowledgeislands/ki-specifications",
+]
+to = ["https://github.com/knowledgeislands/ki-website"]
+kinds = ["knowledge"]
+
+[[skills.ki-trades.territory.channels]]
+id = "techne-cli-to-harness"
+purpose = "tools-techne coordinates work and knowledge with the Techne harness."
+from = ["https://github.com/knowledgeislands/tools-techne"]
+to = ["https://github.com/knowledgeislands/ki-techne-harness"]
+kinds = ["work", "knowledge"]
+
+[[skills.ki-trades.territory.channels]]
+id = "techne-harness-to-cli"
+purpose = "The Techne harness coordinates work and knowledge with tools-techne."
+from = ["https://github.com/knowledgeislands/ki-techne-harness"]
+to = ["https://github.com/knowledgeislands/tools-techne"]
+kinds = ["work", "knowledge"]
+
+[[skills.ki-trades.territory.standing]]
+subtype = "shared-capability-maintenance"
+from = [
+  "https://github.com/knowledgeislands/apps-observatory",
+  "https://github.com/knowledgeislands/homebrew-tap",
+  "https://github.com/knowledgeislands/ki-arcadia-principal",
+  "https://github.com/knowledgeislands/ki-specifications",
+  "https://github.com/knowledgeislands/ki-techne-harness",
+  "https://github.com/knowledgeislands/ki-website",
+  "https://github.com/knowledgeislands/mcp-acquire-whatsapp",
+  "https://github.com/knowledgeislands/mcp-git-audit",
+  "https://github.com/knowledgeislands/mcp-gsuite",
+  "https://github.com/knowledgeislands/mcp-housekeeping-chatgpt",
+  "https://github.com/knowledgeislands/mcp-housekeeping-claude",
+  "https://github.com/knowledgeislands/mcp-housekeeping-codex",
+  "https://github.com/knowledgeislands/mcp-ki-kb-fs",
+  "https://github.com/knowledgeislands/mcp-ki-kb-notion-mirror",
+  "https://github.com/knowledgeislands/mcp-m365",
+  "https://github.com/knowledgeislands/tools-git-almanac",
+  "https://github.com/knowledgeislands/tools-ki",
+  "https://github.com/knowledgeislands/tools-mgit",
+  "https://github.com/knowledgeislands/tools-rig",
+  "https://github.com/knowledgeislands/tools-techne",
+]
+to = ["https://github.com/knowledgeislands/ki-agentic-harness"]
+
+[[skills.ki-trades.territory.standing]]
+subtype = "public-source-change"
+from = [
+  "https://github.com/knowledgeislands/ki-agentic-harness",
+  "https://github.com/knowledgeislands/ki-arcadia-principal",
+  "https://github.com/knowledgeislands/ki-specifications",
+]
+to = ["https://github.com/knowledgeislands/ki-website"]
+
+[[skills.ki-trades.territory.standing]]
+subtype = "techne-interface-compatibility"
+from = ["https://github.com/knowledgeislands/tools-techne"]
+to = ["https://github.com/knowledgeislands/ki-techne-harness"]
+
+[[skills.ki-trades.territory.standing]]
+subtype = "techne-interface-compatibility"
+from = ["https://github.com/knowledgeislands/ki-techne-harness"]
+to = ["https://github.com/knowledgeislands/tools-techne"]
 
 [skills.ki-agora]
 
