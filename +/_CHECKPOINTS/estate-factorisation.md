@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: estate-factorisation
 state: active
 created_at: 2026-10-06T20:32:17Z
-updated_at: 2026-10-06T21:00:00Z
+updated_at: 2026-10-06T23:17:38Z
 ---
 
 # estate-factorisation
@@ -32,22 +32,22 @@ Item status was observed read-only on 2026-10-05; recheck before acting.
 | ALIGN-1 - one alignment item per repository | Open | Arcadia issues; each repository owns | FND-3, FND-5, OAI-1 |
 | EVAL-1 and EVAL-2 - measure and reconsider | Open | Arcadia | ALIGN-1 |
 
-Related open work already sits with its owners, observed read-only on 2026-10-06. Those repositories own priority and scheduling; this table only maps the work to the items above.
+Related work already sits with its owners, observed read-only on 2026-10-07. Those repositories own priority and scheduling; this table only maps the work to the items above.
 
 | Record | Status | Relates to |
 | --- | --- | --- |
 | `KI-HARNESS-GOV-134` - align MCP safety contracts | ready, now | MCP-1: authentication recovery and dry-run rules in the MCP standard |
-| `KI-HARNESS-GOV-140` - define MCP release procedure | draft, triage | DIST-1 extended to the MCPs, none of which has a tag or release workflow |
+| `KI-HARNESS-GOV-140` - define MCP release procedure | draft, triage; mapped to this thread | DIST-1 extended to the MCPs, none of which has a tag or release workflow |
 | `KI-ARCADIA-GOV-018` - CI policy principle | draft, now | FND-4 stale CI `KI_VERSION` pins; DIST-1 |
-| `KI-HARNESS-GOV-141` - auto-bump released `ki` pin | draft, triage | Mechanical half of `KI-ARCADIA-GOV-018` |
-| `homebrew-tap` `BREW-011` - register `ki` pin consumers | draft, triage | Pairs with `KI-HARNESS-GOV-141` |
-| `ki-website` `KI-WEB-SITE-042` - auto-accept verified tool versions | done, now | DIST-1 website release presentation |
+| `KI-HARNESS-GOV-141` - auto-bump released `ki` pin | draft, next | Mechanical half of `KI-ARCADIA-GOV-018` |
+| `homebrew-tap` `BREW-011` - register `ki` pin consumers | draft, triage; folded into `GOV-141` | Stays open until `GOV-141`'s plan places the tap work |
+| `ki-website` `KI-WEB-SITE-042` - auto-accept verified tool versions | done, pruned | DIST-1 website release presentation |
 | `KI-ARCADIA-ECO-009` - legacy serve fallback evidence | ready, now | OPS-1: per-client MCP binding evidence |
 | `KI-HARNESS-GOV-127` - adopt Dependency Cruiser estatewide | in-progress, now | ALIGN-1 pattern of per-repository adoption; lists `mcp-housekeeping-codex` as an adopter, so OAI-1 retirement must update it |
-| `TRD-8004751b` (Harness to `tools-ki`) - report dangling retired-skill projection links | submitted | PROJ-1 and FND-4; Arcadia's own skill projections still hold such links |
-| `TRD-d03495e9` (Harness to `tools-ki`) - surface trades on inactive routes | submitted | FND-5 dissemination routes |
+| `TRD-8004751b` (Harness to `tools-ki`) - report dangling retired-skill projection links | awaiting receipt | PROJ-1 and FND-4; Arcadia's own skill projections still hold such links |
+| `TRD-d03495e9` (Harness to `tools-ki`) - surface trades on inactive routes | awaiting receipt | FND-5 dissemination routes |
 | chezmoi `DOTFILES-UE-028` - tidy retired software remnants | draft, waiting-for | Named in FND-4's roadmap-shape drift set; recheck |
-| `KI-ARCADIA-GOV-010` - assess estate tooling commonality | draft, future | Follows completion; feeds EVAL-2 |
+| `KI-ARCADIA-GOV-010` - assess estate tooling commonality | draft, future; folds into this thread | Closes once this thread has a work record; feeds EVAL-2 |
 
 Phase specifications (purpose, deliverables, completion gates, dependencies) are at `25be451:+/knowledge-islands-factorisation-roadmap.md`. Where they mention `ki-techne-principal` or `ki-plugins`, read Arcadia and "no plugin projection" instead.
 

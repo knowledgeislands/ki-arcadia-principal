@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: paperclip-bootstrap-and-recovery
 state: active
 created_at: 2026-09-27T23:55:22Z
-updated_at: 2026-10-06T20:50:00Z
+updated_at: 2026-10-06T23:17:38Z
 ---
 
 # paperclip-bootstrap-and-recovery
@@ -19,6 +19,7 @@ Make Paperclip useful through reviewed roadmap work that lands in Kris's local m
 - Saved staffing answers on VA-33 and HNR-50 are not yet acted on. ER-7 is unchecked.
 - No company has routines beyond two paused KIS changelog routines, and none has adopted the weekly knowledge-return review.
 - Each company has a naming theme, but none is recorded in its home repository.
+- On 2026-10-07, with Kris's approval, the retained Paperclip worktrees and branches in the harness, `ki-techne-harness` and chezmoi were removed; only harness `KIS-70` (for `KI-HARNESS-GOV-115`) and `tools-ki` `KIS-46` (for `KI-TOOL-CLI-109`) remain.
 - Related roadmap records live with their owners and are linked from the Next step items they affect. VA-13 and the agent permission-update defect have no roadmap record.
 
 ## Decisions made

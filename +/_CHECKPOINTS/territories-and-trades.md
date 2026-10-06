@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: territories-and-trades
 state: active
 created_at: 2026-10-06T20:40:00Z
-updated_at: 2026-10-06T20:46:29Z
+updated_at: 2026-10-06T23:17:38Z
 ---
 
 # territories-and-trades
@@ -30,7 +30,7 @@ Related roadmap items:
 
 - **Stale route wording:** [[KI-ARCADIA-EXT-003-ki-skill-extractions|KI-ARCADIA-EXT-003]] and [[KI-ARCADIA-OPS-003-page-registry|KI-ARCADIA-OPS-003]] (both `ready`) still cite the retired `[skills.ki-trades.routes."knowledgeislands/ki-agentic-harness"]` declaration; the route now comes from the Capital's `harness-maintenance` channel.
 - **Routes in use that any reshape must preserve:** [[KI-ARCADIA-ECO-009-legacy-serve-fallback-policy|KI-ARCADIA-ECO-009]] and [[KI-ARCADIA-OPS-007-agent-session-improvements|KI-ARCADIA-OPS-007]] (work trades from Arcadia to the harness); `KI-HARNESS-GOV-131` in `ki-agentic-harness` (knowledge trades from the harness to `ki-website` and `apps-observatory`).
-- **Evidence for exchange across territories:** `KI-HARNESS-GOV-123`, `KI-HARNESS-GOV-124` and `KI-HARNESS-GOV-125` in `ki-agentic-harness` were raised by `5g-emerge-phase2` (HNR), which has no route to the harness, so the owner relays findings by hand. In `hnr-agentic-harness`, GDR-HNR-HARNESS-002 and HNR-HARNESS-003 still name the closed KI-ARCADIA-GOV-016 as owner of that exchange.
+- **Evidence for exchange across territories:** `KI-HARNESS-GOV-123`, `KI-HARNESS-GOV-124` (now done and pruned) and `KI-HARNESS-GOV-125` in `ki-agentic-harness` were raised by `5g-emerge-phase2` (HNR), which has no route to the harness, so the owner relays findings by hand. In `hnr-agentic-harness`, GDR-HNR-HARNESS-002 and HNR-HARNESS-003 still name the closed KI-ARCADIA-GOV-016 as owner of that exchange.
 - **No item yet** covers the trade-configuration simplification itself.
 
 ## Decisions made

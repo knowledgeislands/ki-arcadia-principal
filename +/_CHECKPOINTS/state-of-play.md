@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: state-of-play
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-06T23:05:41Z
+updated_at: 2026-10-06T23:17:38Z
 ---
 
 # state-of-play
@@ -22,131 +22,90 @@ This checkpoint is the single place the review is built up. Every review step an
 
 ## Current state
 
-Mechanical inventory, read-only, 2026-10-06 at 23:06 CEST, adjusted at 23:25 CEST for the clean sheet below. Records were still changing during the read, so recheck before acting.
+Verified read-only on 2026-10-07 at 01:15 CEST against `ki repo roadmap list`, `git log` and fetched remotes. Agent reports for every step so far are in `~/.local/state/ki/state-of-play/`.
 
-Open roadmap records by repository and status (67 open):
+Open roadmap records by repository and status (71 open):
 
-| Repository | Draft | Ready | In progress | Awaiting review | Total |
-| --- | --- | --- | --- | --- | --- |
-| `ki-agentic-harness` | 9 | 18 | 2 | 0 | 29 |
-| `ki-arcadia-principal` | 5 | 12 | 0 | 0 | 17 |
-| chezmoi | 10 | 0 | 1 | 1 | 12 |
-| `ki-specifications` | 0 | 3 | 0 | 0 | 3 |
-| `ki-website` | 1 | 1 | 0 | 0 | 2 |
-| `ki-techne-harness` | 1 | 1 | 0 | 0 | 2 |
-| `homebrew-tap` | 1 | 0 | 0 | 0 | 1 |
-| `tools-ki` | 1 | 0 | 0 | 0 | 1 |
-| 14 other `kis` repositories | 0 | 0 | 0 | 0 | 0 |
-| **Total** | **28** | **35** | **3** | **1** | **67** |
-
-- **Clean sheet done.** On 2026-10-06 the thirteen awaiting-review records were accepted on Kris's approval and pruned with `KI-HARNESS-FND-027` under Kris's express per-group prune authorisation: ten in the harness plus `FND-027`, `KI-ARCADIA-GOV-012` and `KI-ARCADIA-GOV-019`, and `KI-WEB-SITE-042`. Surviving links were repaired first: harness records now cite the pruned identifiers as plain text, `KI-TOOL-CLI-108` and `ODR-KI-WEBSITE-001` pin their references to the last pushed commits, and `baseline-and-cloud` and `estate-factorisation` show the records as done. Roadmap audits pass in all four repositories. Kris pushed the commits, and the `ki-website` changes reached `main` through pull request 22.
-- **chezmoi.** `DOTFILES-UE-067` (serve Observatory under launchd) awaits review; `DOTFILES-UE-066` (status without Touch ID) is in progress; ten records are draft. No checkpoints.
-- **Outside scope, knock-on only.** `5GE-P2-GOV-015` in `5g-emerge-phase2` can now close, since `KI-HARNESS-GOV-124` is accepted.
-- **Not in `now`.** Twelve drafts sit in triage, waiting-for, next or future: `BREW-011`, `KI-HARNESS-FND-014`, `KI-HARNESS-GOV-140`, `KI-HARNESS-GOV-141`, `KI-HARNESS-OPS-001`, `KI-ARCADIA-GOV-001`, `KI-ARCADIA-GOV-010`, `KI-ARCADIA-MOD-003`, `KI-ARCADIA-OPS-002`, `TECHNE-TOOLS-OPS-008`, `KI-WEB-SITE-001` and `KI-TOOL-CLI-108`.
-- **Themes are not usable as recorded.** The `theme` field carries 16 distinct values across 68 records. In the harness, 30 of 39 records share `governance-consistency`, so the field does not discriminate. Arcadia uses a different vocabulary (`governance`, `knowledge-model`, `operational-tooling`). There is no shared cross-repository taxonomy.
-- **Checkpoints.** Five active in Arcadia (`baseline-and-cloud`, `delta-evaluation`, `estate-factorisation`, `paperclip-bootstrap-and-recovery`, `territories-and-trades`); none in any other repository. Their scopes already cross-reference each other, and `baseline-and-cloud` carries a record table that overlaps this inventory.
-- **Other in-flight surfaces.** `ki-website` holds batch authorisation `KI-WEB-BATCH-001` and legacy handoff `CLI-006-qualified-repository-declarations`. Arcadia `+/_ACQUIRE/` holds 8 unprocessed captures (7 ChatGPT, 1 Granola). `ki-techne-harness/+/paperclip-as-techne-prior-art.md` is an unpromoted working analysis. No trade files are pending in any `+/_TRADES/`.
-- **chezmoi dependencies.** `baseline-and-cloud` cites `DOTFILES-UE-067` and `DOTFILES-UE-065` (diagnose same-boot mcporter stall, draft) for the laptop's standing load.
-
-Roadmap clearance of the six repositories, finished 23:39 CEST. Kris has since pushed every clearance commit. Agent reports are in `~/.local/state/ki/state-of-play/`.
-
-| Repository | Delivered to awaiting review | Deferred to `waiting-for` (cites this checkpoint) | Left as is | Reported, not adopted |
+| Repository | Draft | Ready | In progress | Total |
 | --- | --- | --- | --- | --- |
-| chezmoi | `DOTFILES-UE-066` status without Touch ID | `DOTFILES-UE-065` mcporter stall (needs live probes) | `UE-067` (awaiting review); `UE-020`, `UE-027`, `UE-028`, `UE-035`, `UE-056`, `UE-062` (waiting-for); `UE-043` (parked) | `UE-055` HNR agent audits (keep in Soon, map to `paperclip-bootstrap-and-recovery`); `UE-063` qmd search daemon (stale, respecify) |
-| `ki-techne-harness` | `TECHNE-TOOLS-FAB-001` agent-host profile (local only) | - | `OPS-008` (deferred by Kris) | - |
-| `ki-website` | - | `KI-WEB-SITE-039` landing pages (Kris to confirm reviewer's choices) | `SITE-001` (waiting on `KI-ARCADIA-MOD-003`) | Spent batch `KI-WEB-BATCH-001` and superseded handoff `CLI-006`: remove. `+/brand-visuals-from-arcadia/`: hold for `SITE-001` and `MOD-003` |
-| `ki-specifications` | - | `KI-SPEC-RGV-001`, `KIN-001`, `KIN-002` (overlap the specification review and `KI-ARCADIA-MOD-006`) | - | - |
-| `tools-ki` | - | - | - | `KI-TOOL-CLI-108`: keep, adopt after harness `GOV-094` and `GOV-103`, which edit the same standard |
-| `homebrew-tap` | - | - | - | `BREW-011`: keep in triage until `KI-HARNESS-GOV-141` is decided. The `ki` formula already points at v0.7.1, so the release gap is closed |
+| `ki-agentic-harness` | 14 | 18 | 2 | 34 |
+| `ki-arcadia-principal` | 5 | 12 | 0 | 17 |
+| chezmoi | 10 | 0 | 0 | 10 |
+| `ki-specifications` | 3 | 0 | 0 | 3 |
+| `ki-website` | 2 | 0 | 0 | 2 |
+| `homebrew-tap` | 2 | 0 | 0 | 2 |
+| `tools-ki` | 2 | 0 | 0 | 2 |
+| `ki-techne-harness` | 1 | 0 | 0 | 1 |
+| 14 other `kis` repositories | 0 | 0 | 0 | 0 |
+| **Total** | **39** | **30** | **2** | **71** |
 
-Dispositions of records outside `now`, applied 23:59 CEST on Kris's approval. Local commits, not yet pushed:
+Nothing is awaiting review. The harness and Arcadia hold 36 `now` records (harness 23: 18 ready, 3 draft, 2 in progress and paused; Arcadia 13: 12 ready, 1 draft); every record outside them and outside `now` is waiting, parked, triage, next or future with a recorded reason.
 
-| Record | Approved | Applied |
-| --- | --- | --- |
-| `KI-HARNESS-GOV-141` | Adopt into `next` | Adopted; specification sections still placeholders |
-| `BREW-011` | Merge into `GOV-141` | Deviation: a merge cannot cross roadmaps, so it stays open with a fold note, on `homebrew-tap` branch `roadmap/fold-brew-011` (needs a pull request) |
-| `KI-HARNESS-GOV-140` | Map to `estate-factorisation` | Note added |
-| `KI-TOOL-CLI-108` | Adopt into `next` | Adopted, noting harness `GOV-094` and `GOV-103` edit the same standard |
-| `KI-ARCADIA-GOV-010` | Fold into `estate-factorisation`, then close | Deviation: no factorisation record exists to merge into, so it stays open in `future` with a fold note |
-| `KI-ARCADIA-MOD-003` | Keep in `future` | Unchanged |
-| `DOTFILES-UE-055` | Keep, map to `paperclip-bootstrap-and-recovery` | Unchanged in `soon` |
-| `DOTFILES-UE-063` | Respecify later | Moved to `waiting-for` |
-| `KI-HARNESS-OPS-003`, `KI-HARNESS-RTP-002`, `DOTFILES-UE-043` | Leave parked | Unchanged |
+- **Clean sheet and acceptances.** The thirteen awaiting-review records of 2026-10-06 were accepted and pruned with `KI-HARNESS-FND-027`. On 2026-10-07 `DOTFILES-UE-066`, `DOTFILES-UE-067` and `TECHNE-TOOLS-FAB-001` were accepted on Kris's approval, and Kris pruned all three. The acceptance caveats (FAB-001's open egress rule before any apply; UE-066's unraised `apps-observatory` handoff) are in `accept.report.md`.
+- **Roadmap clearance and dispositions.** chezmoi, `tools-ki`, `ki-website`, `homebrew-tap`, `ki-techne-harness` and `ki-specifications` are down to waiting, triage or next records. Approved dispositions are applied: `KI-HARNESS-GOV-141` and `KI-TOOL-CLI-108` adopted into `next`; `BREW-011` and `KI-ARCADIA-GOV-010` stay open with fold notes (into `GOV-141` and `estate-factorisation`), since neither merge could close them; `KI-HARNESS-GOV-140` mapped to `estate-factorisation`; `DOTFILES-UE-063` to `waiting-for`.
+- **Git.** Every `kis` repository and chezmoi is clean, on `main` and level with `origin`; nothing is unpushed. The `homebrew-tap` fold branch is merged and deleted. The git-audit lane is abandoned and its worktree and branches deleted, its work having already reached `main` through the reviewed `MCP-GIT-TOOL-003`. The leftovers cleanup removed every remaining stray worktree and branch except two kept on purpose: harness `KIS-70` (reference implementation for `KI-HARNESS-GOV-115`) and `tools-ki` `KIS-46` (code for `KI-TOOL-CLI-109`). Patches and untracked drafts from the removed branches are in `~/.local/state/ki/state-of-play/salvage/`.
+- **New Triage captures, 2026-10-07.** From the leftovers: harness `KI-HARNESS-GOV-145` (disclose evaluated criteria count), `GOV-146` (gate acceptance on audits), `RTP-018` (audit inside sandboxed runs), `RTP-019` (fit sandbox socket paths); `tools-ki` `KI-TOOL-CLI-109` (bound rubric publication root); `homebrew-tap` `BREW-012` (document release app operations). From the delegation capture: harness `KI-HARNESS-GOV-144` (own portable background delegation).
+- **GOV-144 gate.** `KI-HARNESS-GOV-144` carries a scope decision gate in its Discussion: `ki-delegation` currently excludes routine delegation, so only Kris can choose the owning skill (widen `ki-delegation`, a separate skill, or `ki-subagents` or another owner) before it is adopted, readied or started. Until then the chezmoi interim (`dot_claude/private_delegation.md` and `claude-bg`) carries the approach; it is applied.
+- **Outside scope, knock-on only.** `5GE-P2-GOV-015` in `5g-emerge-phase2` is still open (`waiting-for`) and can close, since `KI-HARNESS-GOV-124` is accepted.
+- **Themes are not usable as recorded.** The `theme` field carries 16 distinct values; in the harness most records share `governance-consistency`, so the field does not discriminate, and Arcadia uses a different vocabulary. There is no shared cross-repository taxonomy.
+- **Checkpoints.** Five active siblings in Arcadia; none in any other `kis` repository or chezmoi. All brought up to date for step 0.
+- **Other in-flight surfaces.** `ki-website` holds spent batch `KI-WEB-BATCH-001` and superseded handoff `CLI-006-qualified-repository-declarations`, both reported for removal. Arcadia `+/_ACQUIRE/` holds 8 unprocessed captures (7 ChatGPT, 1 Granola). `ki-techne-harness/+/paperclip-as-techne-prior-art.md` is an unpromoted working analysis. Two harness trades await receipt in `tools-ki`: `TRD-8004751b` and `TRD-d03495e9` (mapped in `estate-factorisation`).
 
-`TECHNE-TOOLS-OPS-008`, `KI-ARCADIA-GOV-001` and `KI-ARCADIA-OPS-002` stay deferred by Kris. What remains for the detailed review: 36 `now` records (harness 23: 18 ready, 3 draft, 2 in progress and paused; Arcadia 13: 12 ready, 1 draft), four in `next`, and everything else waiting, parked or future with a recorded reason.
+Still pending from the roadmap-delivery hand-over of 2026-10-06, approved and waiting for Kris's go:
 
-Git cleanup across the `kis` Agora and chezmoi, 2026-10-06 at 23:59 CEST. Fetched with prune; no commits, force-pushes or stashes. Removed 10 clean worktrees, 19 merged local branches, 2 remote branches and 1 stale chezmoi worktree entry. Left for Kris (report at `~/.local/state/ki/state-of-play/git-cleanup.report.md`):
+1. Ledger tidy-up: audit each Agora and, where ROAD-7 reports a superseded ledger form, conform `_ISSUES.md` only. chezmoi still warns; `homebrew-tap` and `ki-website` need auto-merge pull requests.
+2. Slim-down 1: move communication levels, report shape and the timestamped-update rule into a portable skill through a harness record (related to `GOV-144`).
+3. Slim-downs 2 and 3: reduce `dot_codex/private_AGENTS.md` to user-level content (depends on `RTP-013`), and remove duplicated progress-update text from repository `AGENTS.md` files.
 
-- **Unmerged branches with unique commits (17 groups).** Harness: Paperclip `KNO-3`, `KNO-20`, `KNO-27` and `KIS-70`; nine unmerged weekly `skills-refresh/*` and `mcp-refresh` remote branches, probably superseded. `ki-website`: `chore/issue-ledger-conform`, `docs/release-app-receiver`, `automation/tool-release-ki-v0.5.0` (probably superseded) and `feat/techne-first-release`. `homebrew-tap`: `chore/issue-ledger-conform`, `docs/release-app-operations` and `roadmap/fold-brew-011`. `tools-ki`: `feat/private-github-harness-auth` and Paperclip `KIS-46`. chezmoi: `KNO-35`. `mcp-git-audit`: `lane/git-audit-tools`.
-- **Dirty worktrees.** 14 harness Paperclip worktrees (11 merged, kept only for their uncommitted changes) and 1 in `ki-techne-harness`.
-- **At risk.** `mcp-git-audit` worktree `/private/tmp/kiwt/git-audit-lane` holds 16 uncommitted files; `/private/tmp` does not survive a reboot.
+Also from that hand-over: the updated Conformance scheduled task needs a Cowork or Desktop session ([[Scheduled Task Audit]]); `TMX-CO-006` ICO fee is due 16 October; Linear, Strava, TickTick and Xero need re-authorising and Telegram failed to connect; possible stray bootstrap files in `~/.claude` or `~/.agents`.
 
-Questions raised by the clearance, for the dispositions step:
-
-- `DOTFILES-UE-065`: approve a bounded, sanitised live trace of the mcporter bridge (no restart) once `baseline-and-cloud` settles?
-- `DOTFILES-UE-066`: raise a consumer handoff to `apps-observatory` for its unscoped reads?
-- `KI-WEB-SITE-039`: confirm or change the landing-page choices taken under delegated autonomy.
-- `KI-SPEC-RGV-001`: confirm the delegated-autonomy choices in the specification review; split the broken manifest validation command (fails in all eight documented places) into its own small record now?
-- `KI-SPEC-KIN-001` and `KIN-002`: once `KI-ARCADIA-MOD-006` settles, do KBEP and KBIP belong in `ki-specifications`?
-- chezmoi: `.config/ki/config.toml` has a pending change from commit `9349f62` awaiting a reviewed apply; `_ISSUES.md` needs the approved ledger tidy-up.
-
-Handed over from the roadmap-delivery thread at 23:15 CEST:
-
-- **Finished and pushed.** `tools-ki` v0.7.1 released and used by CI in every repository. Harness model radar updated. `KI-HARNESS-GOV-095` and `KI-ARCADIA-GOV-019` delivered to awaiting review; follow-on `KI-TOOL-CLI-108` raised. `KI-ARCADIA-OPS-011` accepted. chezmoi now carries the quiet, timestamped-update communication rule for Claude and Codex.
-- **Approved, waiting for Kris's go:**
-  1. Ledger tidy-up: audit each Agora (kis, personal, legal, hnr, equalremedy, techmedix, vallearmonia) and, where ROAD-7 reports a superseded ledger form, conform `_ISSUES.md` only. `homebrew-tap` and `ki-website` are protected and need auto-merge pull requests.
-  2. Slim-down 1: move communication levels, report shape and the timestamped-update rule from private instructions into a portable skill, probably `ki-authoring`, through a harness record.
-  3. Slim-downs 2 and 3: reduce `dot_codex/private_AGENTS.md` to user-level content only (depends on `RTP-013`), and remove duplicated progress-update text from repository `AGENTS.md` files.
-- **Acceptance knock-on.** Accepting `KI-HARNESS-GOV-124` lets `5GE-P2-GOV-015` close.
-- **Needs a Cowork or Desktop session.** Push the updated Conformance scheduled task, following the Sync Protocol in [[Scheduled Task Audit]]; CLI sessions cannot reach the scheduled-tasks tool.
-- **Admin raised for review.** `TMX-CO-006` ICO fee due 16 October. Linear, Strava, TickTick and Xero need re-authorising; Telegram failed to connect. Possible stray bootstrap files in `~/.claude` or `~/.agents`.
-
-Checkpoint conformance, reported by each owning thread on 2026-10-06. All five pass `ki repo audit --skill ki-checkpoint` mechanically; four fail on judgement, and no mechanical check catches any of those failures:
+Checkpoint conformance, reported by each owning thread on 2026-10-06. All pass `ki repo audit --skill ki-checkpoint` mechanically; three fail on judgement, and no mechanical check catches those failures:
 
 | Checkpoint | Judgement failures | Owning thread's proposed fix (not done) |
 | --- | --- | --- |
-| `territories-and-trades` | About 900 words, not concise. Only copy of the proposed trade-config format. Related-items list makes it act as a roadmap | Move the proposal and related items into a draft Arcadia roadmap record; cut the checkpoint to a short snapshot pointing at it |
-| `estate-factorisation` | Acts as a work tracker: 13 factorisation items have no work records, so their status table and phase detail exist only here. `updated_at` (21:00Z, set in `3548852`) is later than a subsequent commit's write (20:47Z) | Capture the items through `ki-next` in their owning repositories; correct the timestamp |
-| `paperclip-bootstrap-and-recovery` | About 1,200 words. Standing constraints (ticket-status freeze, pilot scope, login position) held only in "Decisions made". "Next step" is an 11-item to-do list | Move the constraints to the harness coordination skill or an Arcadia decision record; give the to-do items roadmap records; cut "Next step" to a single resumable action |
-| `baseline-and-cloud` | None outstanding: Kris confirmed the name. Its "Next step" item 1 (clear the review stack) is now complete | - |
-| `delta-evaluation` | No report received yet. Kris judges it the best-organised checkpoint, so it is the reference shape for the others | - |
+| `territories-and-trades` | About 900 words. Only copy of the proposed trade-config format. Related-items list makes it act as a roadmap | Move the proposal and related items into a draft Arcadia roadmap record; cut the checkpoint to a short snapshot pointing at it |
+| `estate-factorisation` | Acts as a work tracker: 13 factorisation items have no work records, so their status table and phase detail exist only here | Capture the items through `ki-next` in their owning repositories |
+| `paperclip-bootstrap-and-recovery` | About 1,200 words. Standing constraints held only in "Decisions made". "Next step" is an 11-item to-do list | Move the constraints to the harness coordination skill or an Arcadia decision record; give the to-do items roadmap records; cut "Next step" to one resumable action |
+| `baseline-and-cloud` | None outstanding | - |
+| `delta-evaluation` | None; Kris judges it the reference shape | - |
 
-Gaps in the checkpoint standard and audit, raised by those threads:
-
-- The audit does not warn on length, list-heavy "Next step" sections, decisions held only in the checkpoint, or untracked work.
-- The audit does not compare `updated_at` with commit time.
-- The standard has no position on a checkpoint used as the "single place to look" for a thread, which is how Kris wants to use them; it conflicts with the rule that checkpoints only point to owners.
+Gaps in the checkpoint standard and audit, raised by those threads: the audit does not warn on length, list-heavy "Next step" sections, decisions held only in the checkpoint, untracked work, or an `updated_at` later than its commit; and the standard has no position on a checkpoint used as the "single place to look" for a thread, which conflicts with the rule that checkpoints only point to owners.
 
 ## Decisions made
 
 - Kris decided on 2026-10-06 to pause and take stock across the Knowledge Islands repositories, building the review in this single checkpoint. For the review's duration it deliberately aggregates in-flight inventory and findings, which checkpoints normally avoid; it stays derived from the owning records and is never their only copy.
 - Other work across the Knowledge Islands repositories is paused while the review runs.
-- The thirteen awaiting-review records were accepted, and pruned with `FND-027`, to start from a clean sheet. Every prune request needs Kris's express authorisation per group.
-- chezmoi joins the review scope alongside the `kis` Agora.
+- Every prune request needs Kris's express authorisation per group.
+- chezmoi joins the review scope alongside the `kis` Agora. Linear and TickTick are out of scope.
 - `baseline-and-cloud` keeps its name. `delta-evaluation` is the reference shape for a well-organised checkpoint.
 - The review's themes are the checkpoint threads: `baseline-and-cloud`, `delta-evaluation`, `estate-factorisation`, `paperclip-bootstrap-and-recovery` and `territories-and-trades`. Every open record maps to one of them; a record that fits none is itself a finding.
-- Linear and TickTick are out of scope.
-- Before the thematic review, clear the roadmaps of chezmoi, `tools-ki`, `ki-website`, `homebrew-tap`, `ki-techne-harness` and `ki-specifications`, so only the harness and Arcadia remain. One detached agent per repository delivers what is deliverable now to awaiting review and moves anything waiting on a decision arising from this review to `waiting-for`, citing this checkpoint. Records intentionally waiting or on hold stay as they are. Unadopted captures are reported, not adopted. No pushes, pull requests, releases, `chezmoi apply`, mcporter daemon restarts, remote Techné operations, acceptance or pruning.
-- After the roadmaps are down, every specification across the projects is reviewed with Kris, through review and discussion, to confirm it does what Kris intends.
-- Kris approved the dispositions of records outside `now` on 2026-10-06, applied as recorded under Current state, and approved the git cleanup of merged, clean state only.
+- The six smaller roadmaps were cleared first (deliver what was deliverable, defer what waits on this review, report captures without adopting), so only the harness and Arcadia remain for the detailed review. Kris approved the dispositions of records outside `now` and the git cleanup of merged, clean state on 2026-10-06.
+- After the roadmaps are down, every specification across the projects is reviewed with Kris to confirm it does what Kris intends.
+- On 2026-10-07 Kris accepted `DOTFILES-UE-066`, `DOTFILES-UE-067` and `TECHNE-TOOLS-FAB-001`, then pruned them himself; abandoned the git-audit lane; approved the leftovers cleanup keeping only harness `KIS-70` and `tools-ki` `KIS-46`; and approved capturing the background-delegation approach as a chezmoi interim plus `KI-HARNESS-GOV-144`. Kris handles the chezmoi interim's review and apply himself, and the `GOV-144` scope decision is reserved to him.
+- Kris approved step 0 on 2026-10-07: bring every checkpoint up to date before any other review step, changing only stale facts in the five siblings; reshaping them waits for step 4 and Kris's approval.
 
 ## Files touched
 
-- This record.
-- Acceptance and prune commits in `ki-agentic-harness`, `ki-arcadia-principal` and `ki-website`; reference repairs in those three and in `tools-ki`; the `baseline-and-cloud` and `estate-factorisation` status rows.
-- Clearance commits in chezmoi, `ki-techne-harness`, `ki-website` and `ki-specifications`.
-- Disposition commits in `ki-agentic-harness`, `tools-ki`, `ki-arcadia-principal`, chezmoi and `homebrew-tap`.
+- This record and four sibling checkpoints (step 0 refresh); `delta-evaluation` was checked and needed no change.
+- Acceptance, prune, clearance, disposition and capture commits in `ki-agentic-harness`, `ki-arcadia-principal`, `ki-website`, `ki-specifications`, `ki-techne-harness`, `tools-ki`, `homebrew-tap` and chezmoi, all pushed.
 
 ## Open questions
 
+- `KI-HARNESS-GOV-144`: which skill owns routine background delegation? Only Kris can clear the gate.
+- `BREW-012` and `KI-TOOL-CLI-109`: adopt, and when? `KIS-46` still needs rebase, re-verification and review.
+- `DOTFILES-UE-065`: approve a bounded, sanitised live trace of the mcporter bridge (no restart) once `baseline-and-cloud` settles?
+- `DOTFILES-UE-066`: raise the consumer handoff to `apps-observatory` for its unscoped reads?
+- `KI-WEB-SITE-039`: confirm or change the landing-page choices taken under delegated autonomy.
+- `KI-SPEC-RGV-001`: confirm the delegated-autonomy choices; split the broken manifest validation command into its own small record now?
+- `KI-SPEC-KIN-001` and `KIN-002`: once `KI-ARCADIA-MOD-006` settles, do KBEP and KBIP belong in `ki-specifications`?
 - Should the checkpoint standard allow the "single place to look" use, or should the audit warn on length, list-heavy "Next step" sections and checkpoint-only decisions? This needs a harness record either way.
 - Once the review completes, should the sibling checkpoints be folded into this one or each be removed as its scope is routed?
 
 ## Next step
 
-The six-repository roadmap clearance is complete; three records await Kris's acceptance (`DOTFILES-UE-066`, `DOTFILES-UE-067`, `TECHNE-TOOLS-FAB-001`). The disposition commits need pushing, `homebrew-tap` `roadmap/fold-brew-011` needs a pull request, and the remaining branches and dirty worktrees need Kris's decision. Then, in order, for the harness and Arcadia:
+Step 0 is done and nothing is awaiting review or unpushed; the leftover open questions above wait for Kris. Next is step 1 for the harness and Arcadia, in order:
 
-0. **Checkpoints up to date.** Before any other item starts, bring every checkpoint in scope (this one and the five sibling threads) up to date with the current state: records accepted, pruned, deferred, captured or abandoned since each was last written, and branches and worktrees removed. No other step begins until this is done.
+0. **Checkpoints up to date.** Done 2026-10-07: every checkpoint in scope (this one and the five sibling threads) matches the current state.
 1. **Per-record read.** Read all 67 open records in full and capture its intended outcome, canonical owner, dependencies, overlaps or conflicts, and whether its status and horizon are still true.
 2. **Map to themes.** Assign each record to one checkpoint thread; list duplicates, reversals, superseded items and records that fit no thread.
 3. **Specification check.** Test each record against its canonical owner and list remedial work.
