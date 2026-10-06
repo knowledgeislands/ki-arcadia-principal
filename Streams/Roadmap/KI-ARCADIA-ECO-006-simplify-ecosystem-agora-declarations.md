@@ -5,12 +5,12 @@ area: ECO
 title: Simplify ecosystem Agora declarations
 theme: ecosystem-coordination
 horizon: now
-status: ready
+status: awaiting-review
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: 3e573e01cdc6b80293f96fd30922025fadc9682f
 created_at: 2026-09-27T17:43:10Z
-updated_at: 2026-10-05T08:17:56Z
+updated_at: 2026-10-06T01:14:00Z
 ---
 
 # Simplify Ecosystem Agora Declarations
@@ -45,11 +45,11 @@ Observed at planning:
 
 ## Steps
 
-- [ ] Re-run `ki agora audit kis` and record the result.
-- [ ] Diff the body of each shared copy against Arcadia's canonical copy and record the result per path.
-- [ ] Grep every `ki` registry checkout's `.ki.toml` for the retired names and record the result; list any hit in retained worktrees as an observation without mutating it.
-- [ ] Grep Arcadia's canonical zones, root guidance and `.ki.toml` for the retired names, confirm `Decisions.md` names none, and list remaining `+/` and CI hits as historical or incidental.
-- [ ] Record the supersession of the proposed model by `345fcdd` in Discussion, prepare the review packet and set the record to `awaiting-review`.
+- [x] Re-run `ki agora audit kis` and record the result.
+- [x] Diff the body of each shared copy against Arcadia's canonical copy and record the result per path.
+- [x] Grep every `ki` registry checkout's `.ki.toml` for the retired names and record the result; list any hit in retained worktrees as an observation without mutating it.
+- [x] Grep Arcadia's canonical zones, root guidance and `.ki.toml` for the retired names, confirm `Decisions.md` names none, and list remaining `+/` and CI hits as historical or incidental.
+- [x] Record the supersession of the proposed model by `345fcdd` in Discussion, prepare the review packet and set the record to `awaiting-review`.
 
 ## Files touched
 
@@ -86,6 +86,40 @@ None. Live README and `mgit` examples were updated before the amendment.
 
 Closes this record on acceptance. The stale `KNO-19` Paperclip candidate is reported for whoever disposes of that candidate; it creates no Arcadia item.
 
+## Review
+
+### Delivered
+
+Verification and closure only, within the approved boundary: no edit to `GDR-KI-FUNDAMENTALS-001`, `Decisions.md`, any shared copy or any `.ki.toml`; retained Paperclip worktrees and the archived `ki-techne-principal` copy were observed, not mutated. Immutable baseline `3e573e01cdc6b80293f96fd30922025fadc9682f`. The evidence below confirms that `kis` is the only live ecosystem Agora and that the canonical amendment from `345fcdd` is consistent across every shared copy.
+
+### Change Summary
+
+- `Streams/Roadmap/KI-ARCADIA-ECO-006-simplify-ecosystem-agora-declarations.md` only: Steps ticked, this Review packet, and the supersession recorded in Discussion.
+- Deviation: the `+/` historical hits have shrunk since planning to one capture, `+/knowledge-islands-factorisation-roadmap.md`.
+
+### Verification
+
+- `ki agora audit kis` (2026-10-06): `PROFILES=1 HEALTHY=1 UNHEALTHY=0 FINDINGS=0`.
+- Body diff after the closing frontmatter fence against Arcadia's copy is empty for `ki-agentic-harness` (`e30948ad`), `tools-ki` (`d275a58`), `ki-website` (`5320886`) and `ki-specifications` (`02ddfca`), each at `docs/decisions/GDR-KI-FUNDAMENTALS-001-knowledge-islands-ecosystem-fundamentals.md`.
+- `.ki.toml` grep across all 41 `ki registry list` checkouts: no hit. The retained Paperclip worktree `ki-techne-harness/.git/paperclip-worktrees/KNO-19/.ki.toml` still declares retired groups; observed only, not mutated.
+- Canonical grep (`Admin Pillars Resources README.md AGENTS.md CLAUDE.md .ki.toml`): no Agora declaration. The only matches are the GitHub App name `ki-tools-release-bot` in `Admin/Governance/Conventions/Admin Conventions/GitHub Apps.md` and `Integrations.md`, which `grep -w` matches because hyphens are word boundaries; they are not Agora names. `Decisions.md` names no retired group.
+- Remaining tracked hits are historical or incidental: `+/knowledge-islands-factorisation-roadmap.md` and the CI temporary directory `ki-fnd-001` in `.github/workflows/ci.yml`.
+- `git diff --name-only 3e573e01cdc6b80293f96fd30922025fadc9682f..HEAD` lists only this record once committed.
+- `ki repo audit --repo .` (ki 0.6.1): PASS.
+
+### Outstanding concerns
+
+- The planned canonical-grep Verify command is not literally empty because of the `ki-tools-release-bot` false positive described above; the substantive condition holds.
+- The stale `KNO-19` Paperclip candidate is for whoever disposes of that candidate; it creates no Arcadia item.
+
+### Post-change review
+
+The Goal holds: one owner-managed `kis` Agora, the four retired groups absent from every live declaration, and the canonical amendment consistent everywhere it is copied. Scope stayed within this record and nothing was mutated outside it, so regression risk is nil. Ready for owner acceptance through `ki-accept`.
+
+### Mini recap
+
+Verified the landed `kis` amendment against the Agora audit, four shared copies, 41 registry declarations and Arcadia's canonical zones; all clean apart from a known retained Paperclip worktree and a GitHub App name false positive. Learning route proposed, not promoted: future retired-name checks should match whole Agora identifiers in declaration context rather than hyphen-delimited words.
+
 ## Discussion
 
 ### Decisions under delegated autonomy
@@ -99,6 +133,10 @@ The record proposed amending the shared Decision Record so that each non-owner m
 ### Earlier progress
 
 Before the amendment, the home and member declarations were moved to `kis`, the three other homes and their consents were removed, live README and `mgit` examples were updated, and `ki agora audit personal` and `ki agora audit equalremedy` passed for the overlapping memberships then in place.
+
+### Supersession recorded at delivery
+
+At delivery on 2026-10-06 the supersession was confirmed: `345fcdd` is the canonical amendment, the proposed per-member consent and role model is not pursued, and dotfiles sits in the Personal Agora outside `kis`.
 
 ---
 
