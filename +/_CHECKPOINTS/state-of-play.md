@@ -85,6 +85,8 @@ Gaps in the checkpoint standard and audit, raised by those threads:
 - `baseline-and-cloud` keeps its name. `delta-evaluation` is the reference shape for a well-organised checkpoint.
 - The review's themes are the checkpoint threads: `baseline-and-cloud`, `delta-evaluation`, `estate-factorisation`, `paperclip-bootstrap-and-recovery` and `territories-and-trades`. Every open record maps to one of them; a record that fits none is itself a finding.
 - Linear and TickTick are out of scope.
+- Before the thematic review, clear the roadmaps of chezmoi, `tools-ki`, `ki-website`, `homebrew-tap`, `ki-techne-harness` and `ki-specifications`, so only the harness and Arcadia remain. One detached agent per repository delivers what is deliverable now to awaiting review and moves anything waiting on a decision arising from this review to `waiting-for`, citing this checkpoint. Records intentionally waiting or on hold stay as they are. Unadopted captures are reported, not adopted. No pushes, pull requests, releases, `chezmoi apply`, mcporter daemon restarts, remote Techné operations, acceptance or pruning.
+- After the roadmaps are down, every specification across the projects is reviewed with Kris, through review and discussion, to confirm it does what Kris intends.
 
 ## Files touched
 
