@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: state-of-play
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-06T21:23:04Z
+updated_at: 2026-10-06T21:31:29Z
 ---
 
 # state-of-play
@@ -99,10 +99,11 @@ Gaps in the checkpoint standard and audit, raised by those threads:
 
 ## Next step
 
-Nothing runs until Kris has read this record and directs the next action. Proposed order:
+Running now: the six-repository roadmap clearance (see Decisions made). Then, in order:
 
 1. **Per-record read.** Read all 67 open records in full and capture its intended outcome, canonical owner, dependencies, overlaps or conflicts, and whether its status and horizon are still true.
 2. **Map to themes.** Assign each record to one checkpoint thread; list duplicates, reversals, superseded items and records that fit no thread.
 3. **Specification check.** Test each record against its canonical owner and list remedial work.
 4. **Checkpoint remediation.** Bring the four checkpoints into `delta-evaluation`'s shape, applying the owning threads' proposed fixes once Kris approves them, and capture the standard and audit gaps as a harness record.
 5. **Dispositions.** Bring one table of proposed dispositions to Kris; route only approved changes through the owning repositories.
+6. **Specification review.** With Kris, review and discuss every specification across the projects to confirm each does what Kris intends; record remedial work in the owning repositories.
