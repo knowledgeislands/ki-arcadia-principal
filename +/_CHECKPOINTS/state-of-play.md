@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: state-of-play
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-06T21:39:48Z
+updated_at: 2026-10-06T21:48:58Z
 ---
 
 # state-of-play
@@ -58,6 +58,20 @@ Roadmap clearance of the six repositories, finished 23:39 CEST. All changes are 
 | `ki-specifications` | - | `KI-SPEC-RGV-001`, `KIN-001`, `KIN-002` (overlap the specification review and `KI-ARCADIA-MOD-006`) | - | - |
 | `tools-ki` | - | - | - | `KI-TOOL-CLI-108`: keep, adopt after harness `GOV-094` and `GOV-103`, which edit the same standard |
 | `homebrew-tap` | - | - | - | `BREW-011`: keep in triage until `KI-HARNESS-GOV-141` is decided. The `ki` formula already points at v0.7.1, so the release gap is closed |
+
+Records outside `now` that still need a disposition (from `ki repo roadmap summary`, 23:50 CEST, plus chezmoi):
+
+- **Triage, unadopted:** `KI-HARNESS-GOV-140` (MCP release procedure), `KI-HARNESS-GOV-141` (auto-bump released `ki` pin), `BREW-011` (depends on `GOV-141`), `KI-TOOL-CLI-108`. `TECHNE-TOOLS-OPS-008` is deferred by Kris.
+- **Next:** `KI-ARCADIA-GOV-001` and `KI-ARCADIA-OPS-002`, both deferred by Kris. `DOTFILES-UE-066` is `next` but awaiting review.
+- **Future:** `KI-ARCADIA-GOV-010` (estate-wide tooling commonality), `KI-ARCADIA-MOD-003` (geography model and tiles; `KI-WEB-SITE-001` waits on it).
+- **Soon:** `DOTFILES-UE-055`, `DOTFILES-UE-063`.
+- **Parked:** `KI-HARNESS-OPS-003`, `KI-HARNESS-RTP-002`, `DOTFILES-UE-043`.
+
+Git hygiene across the `kis` Agora and chezmoi, read-only at 23:55 CEST. Every `main` matches `origin/main` and no pull requests are open. Left-over delivery state:
+
+- **Unmerged work:** `ki-website` `roadmap/accept-site-042` is pushed but has no pull request, so `main` lacks the `SITE-042` acceptance and prune and the `SITE-039` deferral.
+- **Extra worktrees:** 29 (20 in the harness, 4 in `tools-ki`, one each in chezmoi, `homebrew-tap`, `ki-techne-harness`, `ki-website` and `mcp-git-audit`); 16 are dirty, mostly harness Paperclip worktrees, and `mcp-git-audit` has 16 uncommitted files. One chezmoi worktree is prunable.
+- **Non-main branches:** 79 (44 local, 35 remote). 51 are already on `main` or merged by pull request; 28 still carry unique commits, mostly September Paperclip task branches and weekly harness `skills-refresh/*` branches.
 
 Questions raised by the clearance, for the dispositions step:
 
