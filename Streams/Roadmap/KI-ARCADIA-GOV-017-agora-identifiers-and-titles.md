@@ -5,12 +5,12 @@ area: GOV
 title: Agora identifiers and titles
 theme: governance
 horizon: now
-status: ready
+status: done
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: 58a05d325423cf33834ea53da7a7f05bfe9f3dfc
 created_at: 2026-10-05T23:47:54Z
-updated_at: 2026-10-06T10:56:00Z
+updated_at: 2026-10-06T13:05:00Z
 ---
 
 # Agora Identifiers and Titles
@@ -44,11 +44,11 @@ Related work remains distinct: [[KI-ARCADIA-ECO-006-simplify-ecosystem-agora-dec
 
 ## Steps
 
-- [ ] Hand off the portable contract: KI-HARNESS-GOV-143 amends the `ki-agora` standard, structured rubric and GDR-KI-HARNESS-006 so `title` is a required, non-empty, single-line declaration key.
-- [ ] Hand off CLI support: KI-TOOL-CLI-106 parses the required `title`, exposes it as the profile title and presents it in `ki agora list` and `ki agora show`, leaving identifiers as every machine key.
-- [ ] Declare `title` in each owner's `.ki.toml`, using the Kit Principal ChatGPT context headings: `kis` Knowledge Islands, `personal` Personal, `legal` Legal, `hnr` Humans Not Robots, `equalremedy` Equal Remedy, `techmedix` TechMedix, `vallearmonia` Valle Armonia.
-- [ ] Note in the Kit Principal ChatGPT context README that its headings mirror the declared Agora title.
-- [ ] Record the review packet and set this record `awaiting-review`.
+- [x] Hand off the portable contract: KI-HARNESS-GOV-143 amends the `ki-agora` standard, structured rubric and GDR-KI-HARNESS-006 so `title` is a required, non-empty, single-line declaration key.
+- [x] Hand off CLI support: KI-TOOL-CLI-106 parses the required `title`, exposes it as the profile title and presents it in `ki agora list` and `ki agora show`, leaving identifiers as every machine key.
+- [x] Declare `title` in each owner's `.ki.toml`, using the Kit Principal ChatGPT context headings: `kis` Knowledge Islands, `personal` Personal, `legal` Legal, `hnr` Humans Not Robots, `equalremedy` Equal Remedy, `techmedix` TechMedix, `vallearmonia` Valle Armonia.
+- [x] Note in the Kit Principal ChatGPT context README that its headings mirror the declared Agora title.
+- [x] Record the review packet and set this record `awaiting-review`.
 
 ## Files touched
 
@@ -83,6 +83,43 @@ None here.
 ### Roadmap
 
 This record and the two reciprocal receiver items.
+
+## Review
+
+### Delivered
+
+The approved boundary: an Agora's identifier and readable title are separate owner-declared meanings, `title` is mandatory, and every Agora in the local registry declares one. Both handoffs were delivered and accepted by their receivers. Excluded: renaming Agoras, moving captured material, cross-repository capture, releases, publication and remote operations. Baseline `58a05d325423cf33834ea53da7a7f05bfe9f3dfc`.
+
+### Change Summary
+
+- KI Agentic Harness [KI-HARNESS-GOV-143](https://github.com/knowledgeislands/ki-agentic-harness/blob/main/docs/roadmap/KI-HARNESS-GOV-143-agora-titles.md), done at `580580ab`: the `ki-agora` standard, CONFIG-1 rubric and GDR-KI-HARNESS-006 require a non-empty single-line title and keep the identifier as the only machine key.
+- tools-ki [KI-TOOL-CLI-106](https://github.com/knowledgeislands/tools-ki/blob/main/docs/roadmap/KI-TOOL-CLI-106-agora-titles.md), done at `6575e83`: `ki` parses the required title with the same rule, presents it in `ki agora list` and `ki agora show`, and documents it as AGORA-017.
+- Owner declarations, each touching only its `[skills.ki-agora.<id>]` table: `kis` Knowledge Islands (Arcadia `247e0c3`), `personal` Personal (Kit Principal `45eafea`), `legal` Legal (Kit Legal `d4f0f2f6`), `hnr` Humans Not Robots (Kit HNR `dad8985`), `equalremedy` Equal Remedy (Equal Remedy Research `416eb6d`), `techmedix` TechMedix (Kit TechMedix `421594f`), `vallearmonia` Valle Armonia (Valle Armonia Principal `f8e7227`).
+- Kit Principal's ChatGPT context README now says its headings mirror the declared title (`45eafea`, on top of the owner's earlier folder alignment `a34fec2`).
+- Material decision: `title` is mandatory, as recorded under Discussion. No approved deviations.
+
+### Verification
+
+- With a tools-ki build including KI-TOOL-CLI-106 and a harness including KI-HARNESS-GOV-143: `ki agora list` shows all seven declared titles, `ki agora audit` reports HEALTHY=7 FINDINGS=0, and `ki repo audit --skill ki-agora` passes in each of the seven owner repositories.
+- Each owner commit's diff is one added `title` line, plus the context README line in Kit Principal.
+- With the released `ki` v0.6.1 and harness, Kit Principal's full audit reports only the expected CONFIG-1 `unrecognised key title` failure.
+- Arcadia's full audit carries the pre-existing DEPS-1 Bun finding and, until release, the same expected CONFIG-1 failure.
+
+### Outstanding concerns
+
+None in this item. Until the owner releases tools-ki with a harness pin that includes KI-HARNESS-GOV-143, the installed `ki` rejects the titled declarations and CI audits that install the released harness fail CONFIG-1. The owner has accepted that window, and the coordinator holds one tools-ki release until this item, KI-TOOL-CLI-104 and KI-HARNESS-GOV-122 are all on `main`.
+
+### Post-change review
+
+Goal met: callers use the identifier for folders and selection and show the owner-declared title to people, with the rubric and parser enforcing one rule. Scope held to Agora tables and the context README. Regression risk is confined to the release window above. Fable reviewed both receiver deliveries; their findings were addressed, and one focused Fable re-review of both follow-up commits confirmed the fixes. Fable reviewed this record and found no blocking or should-fix issue; its wording nits are applied. Ready for acceptance.
+
+### Mini recap
+
+Agora titles are now a required, owner-declared part of the contract in the harness and CLI, and all seven Agoras declare the titles already used in Kit Principal's context headings. The open matter is the owner-held release. Learning route: none proposed.
+
+## Done
+
+Accepted 2026-10-06 by Kris Brown on review packet above.
 
 ## Discussion
 
