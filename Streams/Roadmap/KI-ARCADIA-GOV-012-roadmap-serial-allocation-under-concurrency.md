@@ -5,12 +5,12 @@ area: GOV
 title: Name roadmap write locus
 theme: governance
 horizon: now
-status: ready
+status: awaiting-review
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: 56f2d132546414c25cc1c63841e76584f05c971d
 created_at: 2026-09-26T16:29:58Z
-updated_at: 2026-10-06T01:36:00Z
+updated_at: 2026-10-06T17:14:00Z
 ---
 
 # Name Roadmap Write Locus
@@ -50,9 +50,9 @@ The structural fix has since landed in the shared standard. `ki-agentic-harness`
 
 ## Steps
 
-- [ ] Add a `## Write locus` section to Streams Conventions stating that every write under `Streams/Roadmap/` (capture, shaping, lifecycle transition, acceptance, prune) is made in this repository's registry-resolved primary checkout, that concurrent writers queue rather than write from isolated checkouts, and that a run in an isolated checkout takes its number and writes its record in the primary checkout.
-- [ ] In the same section, state that identifiers are reserved by committing the `_ISSUES.md` advance on its own before writing the record, citing the `ki-work-roadmap` repository-roadmaps standard as the owner of the rule.
-- [ ] Update the note's `status` month per its existing convention.
+- [x] Add a `## Write locus` section to Streams Conventions stating that every write under `Streams/Roadmap/` (capture, shaping, lifecycle transition, acceptance, prune) is made in this repository's registry-resolved primary checkout, that concurrent writers queue rather than write from isolated checkouts, and that a run in an isolated checkout takes its number and writes its record in the primary checkout.
+- [x] In the same section, state that identifiers are reserved by committing the `_ISSUES.md` advance on its own before writing the record, citing the `ki-work-roadmap` repository-roadmaps standard as the owner of the rule.
+- [x] Update the note's `status` month per its existing convention. Already `current - October 2026` at baseline, so no edit was needed.
 
 ---
 
@@ -95,6 +95,39 @@ Streams Conventions gains a `## Write locus` section.
 ### Roadmap
 
 This record moves to awaiting-review on delivery; no follow-up record is expected.
+
+---
+
+## Review
+
+### Delivered
+
+Arcadia's Streams Conventions now name the roadmap write locus and point to the shared reservation rule, within the approved boundary: one note edited, no physical path, `_ISSUES.md` untouched, no shared-skill or CLI change. Baseline `56f2d132546414c25cc1c63841e76584f05c971d`; the delivery lands in the commit that carries this review.
+
+### Change Summary
+
+- `Admin/Governance/Conventions/Streams Conventions/Streams Conventions.md`: new `## Write locus` section between `## Structure` and `## Authority`. Paragraph one names the registry-resolved primary checkout as the locus for every roadmap write, has concurrent writers queue, and sends isolated-checkout runs to the primary checkout for their number and record. Paragraph two states reservation by a standalone `_ISSUES.md` commit and cites `ki-work-roadmap`'s repository-roadmaps standard (`### Number reservation`, `### Roadmap write locus`) as owner.
+- The note's `status` already read `current - October 2026`, so it was not changed.
+- This record: steps ticked, lifecycle advanced, review packet added.
+
+### Verification
+
+- `grep -n "## Write locus"` on the note finds line 18; `grep -n "/Users/"` returns nothing; no em or en dashes.
+- `git diff --quiet 56f2d132546414c25cc1c63841e76584f05c971d -- Streams/Roadmap/_ISSUES.md` succeeds.
+- `ki repo audit --skill ki-repo-kb-streams --repo . --progress never` PASS.
+- `ki repo audit --repo . --progress never --concise` PASS, 24 skills.
+
+### Outstanding concerns
+
+None.
+
+### Post-change review
+
+A Fable reviewer (2026-10-06) approved with no blocking or should-fix findings: every Step satisfied, Boundary held, wording faithful to the shared standard. Of three nits, the self-descriptive closing clause was tightened and the status step was annotated; the suggestion to name the standard's file path was not taken, because the section headings already locate it. Regression risk is negligible: the change is additive convention text that matches practice already required by root `AGENTS.md`.
+
+### Mini recap
+
+Arcadia now names its own write locus, completing the local half of the harness `db4635d0` change. No learning to promote.
 
 ---
 
