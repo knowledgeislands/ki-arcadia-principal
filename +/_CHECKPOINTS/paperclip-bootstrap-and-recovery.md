@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: paperclip-bootstrap-and-recovery
 state: active
 created_at: 2026-09-27T23:55:22Z
-updated_at: 2026-10-06T11:45:00Z
+updated_at: 2026-10-06T12:00:00Z
 ---
 
 # paperclip-bootstrap-and-recovery
@@ -51,6 +51,8 @@ None in this repository beyond this checkpoint. Configuration snapshots for any 
 - Should LGL and KIS adopt their inferred naming themes?
 - What timezone, cadence and budget should VA routines use?
 - Which companies justify continuous operation?
+- Which owner should hold the constraints under Decisions made? Several exist only here, but a checkpoint may point to decisions, not be their only copy. Candidates are the harness coordination skill or an Arcadia decision record.
+- Which roadmap owns the agent permission-update defect: chezmoi or the Paperclip fork?
 
 ## Next step
 
@@ -74,5 +76,5 @@ Work through these in order; items 1 and 2 wait on the open questions above.
    - ER's renewable sign-in, and Guru's and Sakshi's `error` labels, which are not proof of a current failure.
    - Fleet environment and runtime verification, including a live run reaching the mcporter bridge: [KI-HARNESS-RTP-015](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-RTP-015-verify-run-mcp-connection.md) (ready). `DOTFILES-UE-062` in the chezmoi roadmap (draft) covers the Paperclip port that `rig status` reports as not listening.
 9. **Repeat in TMX, then assess the rest.** Decide which companies justify continuous operation. Verify KIT's home-project setup and ER's newer projects; LGL owns kit-legal.
-10. **Route repairs.** The agent permission-update defect still needs a roadmap owner. Held-workspace visibility goes through [KI-HARNESS-GOV-114](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-114-surface-held-workspaces.md) (ready). The harness also owns coordination-standard work that is not a prerequisite here: [GOV-103](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-103-cite-coordination-rules-once.md) (draft), [GOV-107](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-107-make-coordination-audit-mechanical.md) (ready) and [GOV-108](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-108-decide-coordination-declaration-scope.md) (ready).
+10. **Route repairs.** The agent permission-update defect needs a roadmap record once its owner is chosen (see Open questions). Held-workspace visibility goes through [KI-HARNESS-GOV-114](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-114-surface-held-workspaces.md) (ready). The harness also owns coordination-standard work that is not a prerequisite here: [GOV-103](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-103-cite-coordination-rules-once.md) (draft), [GOV-107](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-107-make-coordination-audit-mechanical.md) (ready) and [GOV-108](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-108-decide-coordination-declaration-scope.md) (ready).
 11. **Deferred.** [KIS-105](http://127.0.0.1:3100/KIS/issues/KIS-105) and KIS autonomous work stay paused. A shared-login broker and cloud policy are separate decisions, not prerequisites for VA.
