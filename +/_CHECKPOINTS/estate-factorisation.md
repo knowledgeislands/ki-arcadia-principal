@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: estate-factorisation
 state: active
 created_at: 2026-10-06T20:32:17Z
-updated_at: 2026-10-06T23:17:38Z
+updated_at: 2026-10-06T23:35:08Z
 ---
 
 # estate-factorisation
@@ -44,8 +44,8 @@ Related work already sits with its owners, observed read-only on 2026-10-07. Tho
 | `ki-website` `KI-WEB-SITE-042` - auto-accept verified tool versions | done, pruned | DIST-1 website release presentation |
 | `KI-ARCADIA-ECO-009` - legacy serve fallback evidence | ready, now | OPS-1: per-client MCP binding evidence |
 | `KI-HARNESS-GOV-127` - adopt Dependency Cruiser estatewide | in-progress, now | ALIGN-1 pattern of per-repository adoption; lists `mcp-housekeeping-codex` as an adopter, so OAI-1 retirement must update it |
-| `TRD-8004751b` (Harness to `tools-ki`) - report dangling retired-skill projection links | awaiting receipt | PROJ-1 and FND-4; Arcadia's own skill projections still hold such links |
-| `TRD-d03495e9` (Harness to `tools-ki`) - surface trades on inactive routes | awaiting receipt | FND-5 dissemination routes |
+| `tools-ki` `KI-TOOL-CLI-110` - report dangling projection links | draft, triage; replaces withdrawn trade `TRD-8004751b` | PROJ-1 and FND-4; Arcadia's own skill projections still hold such links |
+| `tools-ki` `KI-TOOL-CLI-111` - surface undeliverable trades | draft, triage; replaces withdrawn trade `TRD-d03495e9`; now also requires sender-side withdrawal | FND-5 dissemination routes |
 | chezmoi `DOTFILES-UE-028` - tidy retired software remnants | draft, waiting-for | Named in FND-4's roadmap-shape drift set; recheck |
 | `KI-ARCADIA-GOV-010` - assess estate tooling commonality | draft, future; folds into this thread | Closes once this thread has a work record; feeds EVAL-2 |
 

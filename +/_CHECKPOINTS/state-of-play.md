@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: state-of-play
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-06T23:23:04Z
+updated_at: 2026-10-06T23:35:08Z
 ---
 
 # state-of-play
@@ -51,7 +51,7 @@ Nothing is awaiting review. The harness and Arcadia held 36 `now` records at ste
 - **Outside scope, knock-on only.** `5GE-P2-GOV-015` in `5g-emerge-phase2` is still open (`waiting-for`) and can close, since `KI-HARNESS-GOV-124` is accepted.
 - **Themes are not usable as recorded.** The `theme` field carries 16 distinct values; in the harness most records share `governance-consistency`, so the field does not discriminate, and Arcadia uses a different vocabulary. There is no shared cross-repository taxonomy.
 - **Checkpoints.** Five active siblings in Arcadia; none in any other `kis` repository or chezmoi. All brought up to date for step 0.
-- **Other in-flight surfaces.** `ki-website` holds spent batch `KI-WEB-BATCH-001` and superseded handoff `CLI-006-qualified-repository-declarations`, both reported for removal. Arcadia `+/_ACQUIRE/` holds 8 unprocessed captures (7 ChatGPT, 1 Granola). `ki-techne-harness/+/paperclip-as-techne-prior-art.md` is an unpromoted working analysis. Two harness trades await receipt in `tools-ki`: `TRD-8004751b` and `TRD-d03495e9` (mapped in `estate-factorisation`).
+- **Other in-flight surfaces.** `ki-website` holds spent batch `KI-WEB-BATCH-001` and superseded handoff `CLI-006-qualified-repository-declarations`, both reported for removal. Arcadia `+/_ACQUIRE/` holds 8 unprocessed captures (7 ChatGPT, 1 Granola). `ki-techne-harness/+/paperclip-as-techne-prior-art.md` is an unpromoted working analysis. The two harness trades to `tools-ki`, `TRD-8004751b` and `TRD-d03495e9`, were never received; on 2026-10-07 they were withdrawn by hand under Kris's explicit one-off exception to the trade standard (harness `9cac0452`) and are replaced by `tools-ki` Triage records `KI-TOOL-CLI-110` and `KI-TOOL-CLI-111` (mapped in `estate-factorisation`). `CLI-111` now also requires a sender-side withdraw command (`tools-ki` `ecf8037`).
 
 Acquired ChatGPT captures of 2026-10-03 (`+/_ACQUIRE/chatgpt/knowledge-islands/`), read in full, untouched and not adopted. Each maps to a theme and touches the records shown:
 
