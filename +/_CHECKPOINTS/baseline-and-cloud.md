@@ -33,13 +33,13 @@ Baseline records:
 | --- | --- | --- |
 | `KI-HARNESS-FND-026` - complete conform activation | ready, now | Rollout depends on conform working everywhere |
 | `KI-HARNESS-GOV-109` - enforce commit gates | ready, now | Consistent gates before rollout |
-| `KI-HARNESS-GOV-095` - align roadmap diagnostics | in-progress, now | Trustworthy roadmap audits across islands |
-| `KI-HARNESS-GOV-092` - align generated normal forms | awaiting-review, now | Stable generated output for rollout |
-| `KI-HARNESS-RTP-013` - route portable skill doctrine | awaiting-review, now | Doctrine out of private files, needed for unattended runs |
+| `KI-HARNESS-GOV-095` - align roadmap diagnostics | done, now | Trustworthy roadmap audits across islands |
+| `KI-HARNESS-GOV-092` - align generated normal forms | done, now | Stable generated output for rollout |
+| `KI-HARNESS-RTP-013` - route portable skill doctrine | done, now | Doctrine out of private files, needed for unattended runs |
 | `KI-HARNESS-GOV-115` - require a current worktree base | ready, now | Reports base drift in coordinated delivery |
 | `KI-HARNESS-RTP-015` - verify run MCP connection | ready, now | Agent runs reaching the mcporter bridge |
-| [[KI-ARCADIA-GOV-012-roadmap-serial-allocation-under-concurrency\|KI-ARCADIA-GOV-012]] - roadmap serial allocation under concurrency | awaiting-review, now | Safe serial allocation while agents work concurrently |
-| [[KI-ARCADIA-GOV-019-align-veto-wording-with-current-layout\|KI-ARCADIA-GOV-019]] - veto wording | awaiting-review, now | Governance text matches the layout |
+| `KI-ARCADIA-GOV-012` - roadmap serial allocation under concurrency | done, now | Safe serial allocation while agents work concurrently |
+| `KI-ARCADIA-GOV-019` - veto wording | done, now | Governance text matches the layout |
 | [[KI-ARCADIA-OPS-008-scheduled-automations\|KI-ARCADIA-OPS-008]] - scheduled automations | ready, now | Tending prompts and scheduled work that survives a laptop move |
 | [[KI-ARCADIA-EXT-003-ki-skill-extractions\|KI-ARCADIA-EXT-003]] - skill extractions | ready, now | Arcadia-only doctrine becomes portable skills |
 | [[KI-ARCADIA-ECO-009-legacy-serve-fallback-policy\|KI-ARCADIA-ECO-009]] - legacy serve fallback evidence | ready, now | MCP launch evidence; also mapped in `estate-factorisation` |

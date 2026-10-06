@@ -41,7 +41,7 @@ Related open work already sits with its owners, observed read-only on 2026-10-06
 | `KI-ARCADIA-GOV-018` - CI policy principle | draft, now | FND-4 stale CI `KI_VERSION` pins; DIST-1 |
 | `KI-HARNESS-GOV-141` - auto-bump released `ki` pin | draft, triage | Mechanical half of `KI-ARCADIA-GOV-018` |
 | `homebrew-tap` `BREW-011` - register `ki` pin consumers | draft, triage | Pairs with `KI-HARNESS-GOV-141` |
-| `ki-website` `KI-WEB-SITE-042` - auto-accept verified tool versions | awaiting-review, now | DIST-1 website release presentation |
+| `ki-website` `KI-WEB-SITE-042` - auto-accept verified tool versions | done, now | DIST-1 website release presentation |
 | `KI-ARCADIA-ECO-009` - legacy serve fallback evidence | ready, now | OPS-1: per-client MCP binding evidence |
 | `KI-HARNESS-GOV-127` - adopt Dependency Cruiser estatewide | in-progress, now | ALIGN-1 pattern of per-repository adoption; lists `mcp-housekeeping-codex` as an adopter, so OAI-1 retirement must update it |
 | `TRD-8004751b` (Harness to `tools-ki`) - report dangling retired-skill projection links | submitted | PROJ-1 and FND-4; Arcadia's own skill projections still hold such links |
