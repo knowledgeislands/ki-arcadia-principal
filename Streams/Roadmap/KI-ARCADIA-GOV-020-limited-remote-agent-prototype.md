@@ -10,7 +10,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-06T23:21:00Z
-updated_at: 2026-10-06T23:28:00Z
+updated_at: 2026-10-06T23:32:00Z
 ---
 
 # Define and Authorise the Limited Remote Agent Prototype
@@ -44,14 +44,23 @@ Each line is a proposed bound. Kris may strike or change any of them.
 
 Refined by Kris on 2026-10-07: the prototype does not use Paperclip in any form (bound 6); access moves from session-manager only to Tailscale with Zed remote over SSH (bound 3); egress adds what Tailscale needs, and Zed's release host only if the host downloads the Zed server binary (bound 4); Tailscale and Zed leave the held list, while Paperclip remote, Kitteth and messaging including Telegram stay held (bound 11).
 
+Further decisions by Kris on 2026-10-07:
+
+- **Zed server binary (confirmed).** The binary is uploaded from Kris's Mac with `upload_binary_over_ssh`; the download option and Zed's release host leave bounds 3 and 4.
+- **SSH (recommended, pending Kris's confirmation).** Tailscale SSH, as recorded in bound 3.
+- **Auth key (recommended, pending Kris's confirmation).** A tagged, pre-approved, single-use key, as recorded in bound 3.
+- **Operator tooling.** The operator-side helpers live in Kris's chezmoi source; see "Operator tooling in chezmoi".
+- **AWS access.** Kris, not an agent, creates a dedicated, least-privilege AWS access for this prototype after accepting the bounds; see "Access Kris grants".
+- **Gate and order.** The sequence is fixed; see "Gate and order".
+
 1. **Purpose.** One remotely reachable agent environment that can edit, commit and run `ki` audits across the `kis` Agora repositories while Kris has poor connectivity.
 2. **Host.** Exactly one host. Open decision, as in `TECHNE-TOOLS-OPS-008`: the existing controller t3.medium (shared blast radius, marginal headroom) or a separate host (more capacity, new standing cost). OPS-008 recommends a separate host.
 3. **Access.** Kris connects over Tailscale and uses Zed "Open Remote" (Zed remote development over SSH) to the host.
    - **Tailnet.** The host joins Kris's tailnet. Tailscale ACLs restrict access to the host to Kris's devices.
-   - **SSH.** SSH is reachable only over the tailnet, with no public inbound rule in the security group. Open sub-decision: Tailscale SSH, or `sshd` bound to the tailnet interface only.
-   - **Auth key.** The Tailscale auth key is a one-off or tagged key, held in the secret store and named with its revocation step when it is created.
-   - **Zed server binary.** Zed remote installs its server binary on the host. It is either downloaded by the host, which needs egress to Zed's release host, or uploaded from Kris's machine over the SSH connection (Zed's `upload_binary_over_ssh` connection setting), which needs no extra egress. Default: upload from Kris's machine, because it keeps egress narrowest. Kris to confirm.
-4. **Egress.** Limited to named destinations: GitHub, the model API and the package registries the toolchain needs, plus what Tailscale needs: its coordination server (`controlplane.tailscale.com`, TCP 443) and DERP relays (TCP 443, with STUN on UDP 3478), or direct peer connections on UDP 41641. Zed's release host is added only if the download option in bound 3 is kept. The open FAB-001 TCP 443 rule must be narrowed to those destinations before any apply.
+   - **SSH.** SSH is reachable only over the tailnet, with no public inbound rule in the security group. Recommended, pending Kris's confirmation: Tailscale SSH. There are no SSH keys to manage, access is governed by tailnet ACLs and Tailscale identity, revocation is removing the device or its tag, and it works with Zed's ordinary `ssh` client. Alternative: `sshd` bound to the tailnet interface only, with keys managed by Kris.
+   - **Auth key.** Recommended, pending Kris's confirmation: a tagged, pre-approved, single-use Tailscale auth key. The tag places the host under the tailnet ACL that admits only Kris's devices, pre-approval avoids a manual device approval on a host Kris cannot yet reach, and single use means the key cannot enrol a second device. It is held in the secret store and named with its revocation step when it is created.
+   - **Zed server binary.** Confirmed by Kris: the Zed server binary is uploaded from Kris's Mac over the SSH connection (Zed's `upload_binary_over_ssh` connection setting). The host never downloads it, so no egress to Zed's release host is needed.
+4. **Egress.** Limited to named destinations: GitHub, the model API and the package registries the toolchain needs, plus what Tailscale needs: its coordination server (`controlplane.tailscale.com`, TCP 443) and DERP relays (TCP 443, with STUN on UDP 3478), or direct peer connections on UDP 41641. The open FAB-001 TCP 443 rule must be narrowed to those destinations before any apply.
 5. **Credentials.** Least-privilege, scoped to the `kis` repositories and the model API, held in a secret store and injected at runtime; never in prompts, chat, repositories or logs. Each grant is named with its revocation step when it is made.
 6. **Sessions.** Kris-initiated sessions only: agents are run directly by Kris in sessions Kris opens. No unattended schedules, cron jobs, webhooks or messaging-triggered runs. The prototype does not use Paperclip in any form: no remote Paperclip and no Paperclip-dispatched runs.
 7. **Agent rules.** Agents keep the local rules: explicit-path commits, no push without Kris's request, no prune, no acceptance, no force-push and no `--no-verify`.
@@ -68,6 +77,93 @@ Subject to Kris's acceptance, the amendment waives these three unmet prerequisit
 - A review of what Paperclip already supplies and what Techné still needs to add.
 - A repository-owned remote-delivery policy covering destination, visibility, review, integration, synchronisation and recovery.
 
+### Access Kris grants
+
+Kris, not an agent, creates this access, and only after accepting the bounds (see "Gate and order"). It exists solely for this prototype and is removed at teardown.
+
+- **Profile.** A dedicated AWS CLI profile on Kris's Mac, backed by IAM Identity Center (SSO) or an assumed role. Never long-lived access keys, and never credentials in chat, repositories or files outside the AWS CLI's own cache. Proposed name `knowledge-islands-gov-020`, Kris to confirm; it stays separate from the existing `knowledge-islands-techne` profile.
+- **Account and region.** Account `655383751458`, region `eu-west-1`, as declared by the existing Techne defaults in `tools-techne` `src/config.ts` and `ki-techne-harness` `operations/aws/controller/provision.sh`. Kris to confirm the prototype uses the same account and region.
+- **Tagging.** The prototype's instance and security group carry the `ki-work-item` and `ki-lifecycle` tag keys used by `ki-techne-harness` `infra/aws/controller-stack.yaml`, with `ki-work-item = KI-ARCADIA-GOV-020` and `ki-lifecycle = prototype`. The tag values and the `Name` prefix are proposed, Kris to confirm.
+- **Secret names.** No existing Parameter Store or Secrets Manager naming convention was found in either repository. Proposed SSM Parameter Store SecureString parameters under `/ki/arcadia/gov-020/` (`tailscale-auth-key`, `github-token`, `model-api-key`), Kris to confirm the store and names.
+
+Draft least-privilege policy for the profile. EC2 `Describe*` calls do not support resource-level scoping, so they are read-only across the region; every mutating action is limited to resources carrying the prototype tag. Kris to confirm.
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DescribeInRegion",
+      "Effect": "Allow",
+      "Action": ["ec2:DescribeInstances", "ec2:DescribeInstanceStatus", "ec2:DescribeSecurityGroups", "ec2:DescribeSecurityGroupRules", "ec2:DescribeTags"],
+      "Resource": "*",
+      "Condition": { "StringEquals": { "aws:RequestedRegion": "eu-west-1" } }
+    },
+    {
+      "Sid": "OperateThePrototypeInstance",
+      "Effect": "Allow",
+      "Action": ["ec2:StartInstances", "ec2:StopInstances", "ec2:RebootInstances", "ec2:TerminateInstances"],
+      "Resource": "arn:aws:ec2:eu-west-1:655383751458:instance/*",
+      "Condition": { "StringEquals": { "aws:ResourceTag/ki-work-item": "KI-ARCADIA-GOV-020" } }
+    },
+    {
+      "Sid": "NarrowThePrototypeSecurityGroup",
+      "Effect": "Allow",
+      "Action": ["ec2:AuthorizeSecurityGroupEgress", "ec2:RevokeSecurityGroupEgress", "ec2:RevokeSecurityGroupIngress", "ec2:DeleteSecurityGroup"],
+      "Resource": "arn:aws:ec2:eu-west-1:655383751458:security-group/*",
+      "Condition": { "StringEquals": { "aws:ResourceTag/ki-work-item": "KI-ARCADIA-GOV-020" } }
+    },
+    {
+      "Sid": "ReadTheNamedSecrets",
+      "Effect": "Allow",
+      "Action": ["ssm:GetParameter", "ssm:GetParameters"],
+      "Resource": [
+        "arn:aws:ssm:eu-west-1:655383751458:parameter/ki/arcadia/gov-020/tailscale-auth-key",
+        "arn:aws:ssm:eu-west-1:655383751458:parameter/ki/arcadia/gov-020/github-token",
+        "arn:aws:ssm:eu-west-1:655383751458:parameter/ki/arcadia/gov-020/model-api-key"
+      ]
+    },
+    {
+      "Sid": "DecryptOnlyThroughParameterStore",
+      "Effect": "Allow",
+      "Action": "kms:Decrypt",
+      "Resource": "*",
+      "Condition": { "StringEquals": { "kms:ViaService": "ssm.eu-west-1.amazonaws.com" } }
+    },
+    {
+      "Sid": "NoIdentityOrTagChanges",
+      "Effect": "Deny",
+      "Action": ["iam:*", "sso:*", "organizations:*", "ec2:CreateTags", "ec2:DeleteTags", "ec2:AuthorizeSecurityGroupIngress"],
+      "Resource": "*"
+    }
+  ]
+}
+```
+
+In plain words: the profile can see EC2 instances and security groups in `eu-west-1`; start, stop, reboot and terminate only the instance tagged for this record; narrow or remove only the security group tagged for this record, and never open inbound access; read only the three named secrets; and never change IAM, SSO, organisation settings or tags, so it cannot pull other resources into its own scope. Creating the host and writing the secrets are not in this policy: Kris does those, or `ki-techne-harness` does them under its own provisioning path once handed off, Kris to confirm which. If Secrets Manager is chosen instead, the secret statement becomes `secretsmanager:GetSecretValue` on the three named secret ARNs and the KMS condition names `secretsmanager.eu-west-1.amazonaws.com`.
+
+Revocation: remove the permission set assignment or role, delete the profile from `~/.aws/config`, and delete the three parameters at teardown.
+
+### Operator tooling in chezmoi
+
+The operator-side helpers are a deliverable of this record and live in Kris's chezmoi source (`~/.local/share/chezmoi`), alongside the existing `private_dot_ssh/private_config`, `dot_config/zed/private_settings.json`, `dot_aws/private_config` and `bin/` scripts:
+
+- **Connect.** A helper that checks `tailscale status` for the host and then opens the host in Zed.
+- **Zed connection.** An `ssh_connections` entry for the host in Zed's settings with `upload_binary_over_ssh` enabled.
+- **SSH config.** A `Host` entry for the host's tailnet name in the SSH config.
+- **Kill switch and teardown.** Wrappers for the bound 9 stop and teardown.
+
+They are written and reviewed locally. Any helper that calls AWS is not run before the gate clears. Kris reviews `chezmoi diff` before applying.
+
+### Gate and order
+
+1. Kris accepts the bounds in this record.
+2. The [[Techne Programme Hold]] is amended through this record.
+3. Kris grants the access in "Access Kris grants".
+4. The host is built.
+
+No agent requests or uses AWS credentials before step 3 is complete, and no agent creates the access in step 3.
+
 ### Intended output
 
 An amendment to the [[Techne Programme Hold]] that names this prototype, its accepted bounds, the waived prerequisites, its time box and its teardown, and states that the hold otherwise stands.
@@ -75,12 +171,13 @@ An amendment to the [[Techne Programme Hold]] that names this prototype, its acc
 ### Open questions
 
 - Which host: the controller node or a separate host?
-- Which secret store, and which identity holds the GitHub and model API credentials?
+- Which secret store (Parameter Store or Secrets Manager) and secret names, and which identity holds the GitHub and model API credentials?
+- Confirm the draft IAM policy, the profile name, the account and region, and the tag values in "Access Kris grants".
+- Who creates the host and writes the secrets: Kris directly, or `ki-techne-harness` under its own provisioning path?
 - Is a 30-day time box right, and what review date?
 - Should the amendment also be recorded as a Decision Record?
-- Tailscale SSH, or `sshd` bound to the tailnet interface only?
-- Confirm the default of uploading the Zed server binary from Kris's machine rather than letting the host download it.
-- One-off or tagged Tailscale auth key?
+- Confirm Tailscale SSH (recommended) over `sshd` bound to the tailnet interface.
+- Confirm a tagged, pre-approved, single-use Tailscale auth key (recommended), and the tag name.
 
 ## Governance
 
