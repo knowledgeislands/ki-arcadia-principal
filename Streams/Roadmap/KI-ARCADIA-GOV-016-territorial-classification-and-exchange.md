@@ -10,7 +10,7 @@ blocks: []
 blocked_by: []
 baseline_ref: 768814fbed5cc878551398fc1df60eb06e78d499
 created_at: 2026-10-06T09:00:00Z
-updated_at: 2026-10-06T11:30:00Z
+updated_at: 2026-10-06T15:00:00Z
 ---
 
 # Govern Territorial Classification and Exchange from the Capital
@@ -39,11 +39,14 @@ Approved by Kris Brown on 2026-10-06.
 4. **Unused opt-ins removed.** The seven non-KI declarations were removed on 2026-10-06 with their `_TRADES` scaffolds: `kit-legal`, `kit-hnr`, `hnr-agentic-harness`, `5g-emerge-phase2`, `5g-emerge-testbed`, `5g-emerge-apex` and chezmoi. HNR's exchange decision record was amended in place to defer its transport to this record.
 5. **Cross-territory exchange deferred.** Its governance principles are designed here; activation, transport, automation and agreements with specific territories are not.
 6. **One design home.** This record owns the model and coordinated rollout. Receiving repositories own their delivery: `KI-HARNESS-GOV-122` is narrowed to the shared skill and standard, and `KI-TOOL-CLI-104` covers resolution, validation, the sweep and the migration report. Both are blocked by this record.
+7. **One-step delivery.** Approved by Kris Brown later on 2026-10-06: "just push this through and just get to where we want to be in the config". The staged releases collapse into one change, member route tables are stripped in the same sweep, and one `tools-ki` release follows verification.
+8. **Mandatory Capital declaration.** Every `.ki.toml` names its Capital in `[skills.ki-repo].capital`, and the Capital lists its members, for every territory in the registry. A missing declaration fails immediately, with no warning phase: "just make it mandatory, and we can live with the CI failures for a few moments".
+9. **Techné-to-Homebrew direction activated.** The pending `work` direction from `tools-techne` to `homebrew-tap` is granted by the Capital policy.
 
 ## Boundary
 
 - Arcadia governs which handoffs are permitted; it does not write to another island, accept its work or schedule its agents.
-- Until the new contract and tooling are verified, the existing two-sided route contract remains in force. There is no dual-authority fallback once the switch is made.
+- The switch is one coordinated change with no dual-authority fallback and no legacy parser.
 - The two submitted records keep their observation policies and sender payloads; no route a retained record depends on is removed.
 - Other territories are not enrolled through KI's public configuration, and no private counterpart identity or source-store path enters public governance.
 - [[Techne Programme Hold]]: local implementation only; no remote operation.
@@ -51,21 +54,21 @@ Approved by Kris Brown on 2026-10-06.
 ## Current state
 
 - Done 2026-10-06: decisions 1-6 approved; GOV-016 reserved (`768814f`); all seven non-KI opt-ins removed in their own repositories, with GDR-HNR-HARNESS-002 amended in place; `KI-HARNESS-GOV-122` re-scoped and `KI-TOOL-CLI-104` captured.
-- Remaining: the Capital's route-policy authority in the Charter and its decision record, the territory table in Arcadia's `.ki.toml`, and the coordinated switch described under Implementation plan.
+- Done 2026-10-06 (single-step switch): Charter authority, GDR-KI-ARCADIA-003, the Capital, territory and trade policy in Arcadia's `.ki.toml`, Capital declarations across the registry, and the harness and `tools-ki` changes. Verification and review evidence is recorded under Discussion.
 
 ## Steps
 
 - [x] Record the owner decisions and reserve this identity.
 - [x] Remove the seven unused non-KI opt-ins in their own repositories.
 - [x] Re-scope `KI-HARNESS-GOV-122` to the shared contract and capture `KI-TOOL-CLI-104`, each blocked by this record.
-- [ ] Declare the Capital's route-policy authority in the [[Admin/Governance/Charter|Charter]] and record the governing decision.
-- [ ] Settle the policy location and schema, then author the Capital policy reconciling every current effective route, with the pending Techné-to-Homebrew direction as an explicit decision.
-- [ ] Deliver the harness standard and `tools-ki` resolution, member audit, Capital sweep and read-only migration report.
-- [ ] Review the migration report, switch members from per-island route tables to the Capital policy, re-audit the territory and demonstrate one territory-internal handoff.
+- [x] Declare the Capital's route-policy authority in [[Admin/Governance/Charter|Charter]] and record it in [[GDR-KI-ARCADIA-003-capital-governed-trade-routes|GDR-KI-ARCADIA-003]].
+- [x] Settle the policy location and schema, then author the Capital policy reconciling every current effective route, activating the Techné-to-Homebrew direction.
+- [x] Deliver the harness standard (KI-HARNESS-GOV-122) and `tools-ki` resolution, member audit, Capital sweep and migration comparison (KI-TOOL-CLI-104).
+- [x] Compare the switched estate with the saved v0.6.1 route report, strip member route tables, declare every Capital and its members across the registry, and re-audit the territory.
 
 ## Files touched
 
-- This record, [[Admin/Governance/Charter|Charter]], [[Known Lands]], Arcadia's `.ki.toml` territory table and a new Decision Record in `Admin/Governance/Decisions/`.
+- This record, [[Admin/Governance/Charter|Charter]], [[Known Lands]], [[Admin/Governance/Decisions/Decisions|Decisions]], Arcadia's `.ki.toml` (Capital, territory and trade policy) and [[GDR-KI-ARCADIA-003-capital-governed-trade-routes|GDR-KI-ARCADIA-003]].
 - Delivery in other repositories is owned by their linked items.
 
 ## Verify
@@ -73,6 +76,7 @@ Approved by Kris Brown on 2026-10-06.
 - Every `ki-trades` audit in the territory passes against the Capital policy, and the Capital sweep reports no failing island.
 - The migration report shows no effective route added or removed without an explicit decision, and both open records remain resolvable.
 - No member `.ki.toml` carries a route table after the switch.
+- Every registered repository declares its Capital, and every Capital lists its members.
 
 ## Dependencies / blocks
 
@@ -100,14 +104,19 @@ Closes on acceptance once the switch is verified.
 
 ### Implementation plan
 
-Grounded in the code on 2026-10-06; schema and location await owner confirmation.
+Grounded in the code on 2026-10-06; the location, schema and single-step sequence were confirmed by the owner the same day.
 
 - **Policy location.** A `[skills.ki-trades.territory]` table in the Capital's own `.ki.toml`, approved by the owner on 2026-10-06. It follows the existing precedent of the `kis` Agora home in the same file and keeps repository configuration in one place. Because today's tools reject unknown `ki-trades` keys, release A must accept the table before Arcadia adds it.
-- **Capital discovery.** The Capital is the unique registered repository whose `.ki.toml` declares `[skills.ki-trades.territory]` listing the island as a member, resolved as Agora homes already are. None is unavailable and several is ambiguous; both fail closed, and no Agora is consulted.
-- **Schema.** `[skills.ki-trades.territory]` with `name` and `members`; purposeful `[[skills.ki-trades.territory.channels]]` (`id`, `purpose`, `from`, `to`, `kinds`) expanding to exact source, receiver and kind triples; and `[[skills.ki-trades.territory.standing]]` grants with `channel`, `subtype` and `description`. Identities use canonical HTTPS GitHub form as Agora members do. No wildcards in v1, no duplicate triple, no self-route, every endpoint a territory member, and every standing grant covered by a knowledge channel. Territory members are declared separately from the `kis` Agora even where they coincide. Members keep a bare `[skills.ki-trades]`; only the Capital may carry the territory table.
+- **Capital discovery.** Every repository names its Capital in `[skills.ki-repo].capital`, and resolution goes through that declared URL in the local registry. The Capital must be registered exactly once, must name itself, and must list the repository in `[skills.ki-repo.territory].members`. This replaces scanning for whichever repository declares a territory table, so several territories can share one registry. An unregistered Capital makes the policy unavailable and trade operations fail closed. No permission is inferred from an Agora.
+- **Schema.** Membership lives in `[skills.ki-repo.territory]` (`name` and the sorted `members`, including the Capital). Trade policy lives in `[skills.ki-trades.territory]`:
+  - a `subtypes` table;
+  - purposeful `[[channels]]` (`id`, `purpose`, `from`, `to`, `kinds`), which expand to exact source, receiver and kind triples with no self-route, members only and no duplicate triple;
+  - `[[standing]]` grants (`subtype`, `from`, `to`), each covered by a knowledge channel.
+
+  A member's `[skills.ki-trades]` may hold only `map_bonus`, and `routes` and `subtypes` are retired. GDR-KI-ARCADIA-003 records the schema.
 - **Standing intake.** Grants and subtype descriptions move into the Capital policy so members stay bare. The receiver still runs capture in its own checkout and owns the resulting evidence.
-- **Sequence.** Arcadia authority and decision first. `tools-ki` release A adds the parser, resolver, sweep and migration report while legacy tables stay authoritative. Arcadia then adds the territory table once the report shows every active direction, standing grant and open record covered and the pending Techné-to-Homebrew direction decided. Release B and the harness change switch authority together with no fallback. Members strip their route tables only after B is installed everywhere. Release C retires legacy keys.
-- **Known limits.** A named island that has not opted in cannot be selected by `--skill ki-trades`, so a full `ki repo audit` fails it through `ki-repo` COV-1 instead. COV-1 then depends on the registry and the Capital policy. The policy must refuse removal of a channel a live record depends on.
+- **Sequence.** On 2026-10-06 the owner collapsed the staged plan (releases A, B and C) into one change. In that change, Arcadia records the authority and decision, `tools-ki` (KI-TOOL-CLI-104) and the harness (KI-HARNESS-GOV-122) switch authority with no legacy parser or fallback, and every registered repository declares its Capital. Members strip their route tables in the same sweep. The coordinator cuts one `tools-ki` release after verification.
+- **Known limits.** A named island that has not opted in cannot be selected by `--skill ki-trades`, so a full `ki repo audit` reports it through `ki-trades` resolution against the Capital instead. A Capital that is not checked out locally leaves a member audit with a warning, `territory policy lives in <capital>, not available here`, rather than a failure. A policy edit that withdraws a channel a live record depends on is caught by `ki repo trade policy compare` and by review under the Enactment Process.
 
 ### Classification meanings
 
@@ -140,9 +149,9 @@ Central internal routing does not automatically extend across territorial bounda
 
 The classification and governance of these cases belongs in the model proposal now. Activation, transport, automation and agreements with specific external territories remain deferred until reviewed separately. No public source-store path or private consumer inventory is introduced here.
 
-### Open owner question
+### Techné-to-Homebrew direction
 
-Before the territory table is authored: activate or omit the pending `work` direction from `knowledgeislands/tools-techne` to `knowledgeislands/homebrew-tap`. Today `tools-techne` exports it and `homebrew-tap` does not import it, so it grants nothing. Activating it adds a channel; omitting it drops the export from `tools-techne` when member tables are stripped. Either way the migration report must show it as an explicit decision.
+Resolved on 2026-10-06: the owner activated the `work` direction from `knowledgeislands/tools-techne` to `knowledgeislands/homebrew-tap`. Before the switch, `tools-techne` exported it but `homebrew-tap` did not import it, so it granted nothing. The Capital policy now grants it through the `homebrew-release` channel. It is the only route the migration adds.
 
 ---
 
