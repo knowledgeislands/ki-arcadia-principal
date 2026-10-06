@@ -26,7 +26,7 @@ Make the territory trade policy succinct without changing what it grants, retire
 
   Changes: short member names (bare name = Capital's GitHub owner, `owner/repo` otherwise, URL still accepted), also for `members`; `"*"` = every member except the other end; `between` for two-way pairs; `standing` attached to a route instead of separate `[[standing]]` tables, which needs the no-duplicate-triple rule relaxed to set semantics; `purpose` optional; `map_bonus` removed. About 20 lines for the same 10 channels. The only grant change is `"*"`: new members would gain the harness routes automatically.
 
-### Related roadmap items
+Related roadmap items:
 
 - **Stale route wording:** [[KI-ARCADIA-EXT-003-ki-skill-extractions|KI-ARCADIA-EXT-003]] and [[KI-ARCADIA-OPS-003-page-registry|KI-ARCADIA-OPS-003]] (both `ready`) still cite the retired `[skills.ki-trades.routes."knowledgeislands/ki-agentic-harness"]` declaration; the route now comes from the Capital's `harness-maintenance` channel.
 - **Routes in use that any reshape must preserve:** [[KI-ARCADIA-ECO-009-legacy-serve-fallback-policy|KI-ARCADIA-ECO-009]] and [[KI-ARCADIA-OPS-007-agent-session-improvements|KI-ARCADIA-OPS-007]] (work trades from Arcadia to the harness); `KI-HARNESS-GOV-131` in `ki-agentic-harness` (knowledge trades from the harness to `ki-website` and `apps-observatory`).
