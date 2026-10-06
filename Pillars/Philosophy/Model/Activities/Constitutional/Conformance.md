@@ -4,7 +4,7 @@ tags:
   - card/activity
   - topic/knowledge-islands
   - topic/governance
-status: current - April 2026
+status: current - October 2026
 author: Written with Claude
 ---
 
@@ -30,16 +30,16 @@ A conformance report covering three areas:
 
 **Constitutional baseline** - verifies that the two constitutional elements exist and are correctly populated:
 
-- `Knowledge Capital/Charter` exists, contains the required Identity parameters, and declares adoption positions for all known non-constitutional activity groups
+- The Charter (`Admin/Governance/Charter.md`) exists, contains the required Identity parameters, and declares adoption positions for all known non-constitutional activity groups
 - This activity (Conformance) is present in the island's scheduled task configuration
 
 **Adoption completeness** - for every non-constitutional activity group defined in `Activities/`, verifies that the island's Charter carries an explicit `adopted` or `vetoed` position. Any group with no position is flagged as non-conformant (unknown).
 
 **Adoption consistency** - for every group marked `adopted` in the Charter:
 
-- Verifies that the required Knowledge Capital configuration notes exist (as declared in each group's Adoption Requirements)
-- Verifies that the required KC notes are populated, not empty stubs
+- Verifies that the group's Activity Definition note linked from the Charter exists, and that every note declared in its framework group's Adoption Requirements exists
+- Verifies that the required notes are populated, not empty stubs
 
-A vetoed group requires a corresponding stub in the Knowledge Capital acknowledging the veto. Any veto without a stub is flagged.
+A vetoed group's Activity Definition note must explicitly acknowledge the veto. Any veto without such a note is flagged. A Charter group with no framework group index is reported as island-local and informational.
 
 The report distinguishes **critical** non-conformances (constitutional baseline failures) from **standard** non-conformances (adoption gaps or consistency failures). Critical failures are surfaced first.

@@ -8,12 +8,12 @@ tags:
   - topic/knowledge-islands
   - topic/automation
 horizon: now
-status: ready
+status: awaiting-review
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: 60c1aa0fadcd8c928816536dfd7a70cb573fbc9c
 created_at: 2026-10-05T08:44:07Z
-updated_at: 2026-10-05T08:44:07Z
+updated_at: 2026-10-06T17:21:00Z
 author: Written with Claude
 ---
 
@@ -56,15 +56,15 @@ Conformance is constitutional: the Charter Scheduled Activities table runs it ev
 
 ## Steps
 
-- [ ] Preparation and Step 1: point both at `Admin/Governance/Charter.md`; keep the Identity check (island name, skill identifier, task prefix) and the Activity Groups, Scheduled Activities and Tools section checks, matching the live Charter headings.
-- [ ] Step 2: define an adoptable framework group as a subfolder of `Pillars/Philosophy/Model/Activities/` whose same-name index carries an `## Adoption Requirements` Note | Path | Purpose table, excluding `Constitutional`; each such group must have an `adopted` or `vetoed` Charter row. Add that a Charter group with no framework group index (today Briefings, Email, Linear) is reported as island-local and informational, not non-conformant.
-- [ ] Step 3: replace the "Knowledge Capital column" with the Charter's Activity Definition column. A vetoed group's linked note must exist and explicitly state the veto. An adopted group's linked note must exist; where a framework group index exists, each Path in its Adoption Requirements table must resolve to an existing, non-stub note relative to the repository root.
-- [ ] Reporting: replace "KC note" with "required note"; leave the three-section structure and status values unchanged.
-- [ ] Update the Tending `## Adoption Requirements` table Paths to `Admin/Operations/Activities/Tending Activity` and `Admin/Operations/Activities/Schedule`, and the veto sentence to name the group's Activity note, so the contract the prompt reads matches the layout.
-- [ ] Update the three Knowledge Capital lines (33, 40, 43) in the Conformance activity definition to describe the Charter, Activity Definition notes and required notes in the current layout.
-- [ ] Apply the [[KI-ARCADIA-OPS-009-token-economics|OPS-009]] pre-invocation gate decision to the Conformance prompt: add the gate as the first step with an explicit early exit if a cheap signal exists (for example no commits to the Charter, `Admin/Operations/Activities/` or the Model activity indexes since the last run), otherwise record "gate not applicable" and the reason in Discussion.
-- [ ] Run the rewritten prompt read-only against the working tree and record the resulting report (expected CONFORMANT, with Briefings, Email and Linear listed as island-local) in Discussion.
-- [ ] Record in Discussion that live-task sync awaits Kris's signal, and that Scheduled Task Audit will report prompt drift for Conformance until then.
+- [x] Preparation and Step 1: point both at `Admin/Governance/Charter.md`; keep the Identity check (island name, skill identifier, task prefix) and the Activity Groups, Scheduled Activities and Tools section checks, matching the live Charter headings.
+- [x] Step 2: define an adoptable framework group as a subfolder of `Pillars/Philosophy/Model/Activities/` whose same-name index carries an `## Adoption Requirements` Note | Path | Purpose table, excluding `Constitutional`; each such group must have an `adopted` or `vetoed` Charter row. Add that a Charter group with no framework group index (today Briefings, Email, Linear) is reported as island-local and informational, not non-conformant.
+- [x] Step 3: replace the "Knowledge Capital column" with the Charter's Activity Definition column. A vetoed group's linked note must exist and explicitly state the veto. An adopted group's linked note must exist; where a framework group index exists, each Path in its Adoption Requirements table must resolve to an existing, non-stub note relative to the repository root.
+- [x] Reporting: replace "KC note" with "required note"; leave the three-section structure and status values unchanged.
+- [x] Update the Tending `## Adoption Requirements` table Paths to `Admin/Operations/Activities/Tending Activity` and `Admin/Operations/Activities/Schedule`, and the veto sentence to name the group's Activity note, so the contract the prompt reads matches the layout.
+- [x] Update the three Knowledge Capital lines (33, 40, 43) in the Conformance activity definition to describe the Charter, Activity Definition notes and required notes in the current layout.
+- [x] Apply the [[KI-ARCADIA-OPS-009-token-economics|OPS-009]] pre-invocation gate decision to the Conformance prompt: add the gate as the first step with an explicit early exit if a cheap signal exists (for example no commits to the Charter, `Admin/Operations/Activities/` or the Model activity indexes since the last run), otherwise record "gate not applicable" and the reason in Discussion.
+- [x] Run the rewritten prompt read-only against the working tree and record the resulting report (expected CONFORMANT, with Briefings, Email and Linear listed as island-local) in Discussion.
+- [x] Record in Discussion that live-task sync awaits Kris's signal, and that Scheduled Task Audit will report prompt drift for Conformance until then.
 
 ---
 
@@ -117,6 +117,44 @@ New record split from [[KI-ARCADIA-OPS-008-scheduled-automations|OPS-008]]; move
 
 ---
 
+## Review
+
+### Delivered
+
+The Conformance prompt, its activity definition and the Tending adoption contract now describe the post-GDR-KI-ARCADIA-002 layout: the Charter at `Admin/Governance/Charter.md`, its Activity Definition column linking `Admin/Operations/Activities/` notes, framework groups discovered by an Adoption Requirements table, and Charter groups without a framework index reported as island-local. Boundary held: repository files only, Charter unchanged, every automation-read heading kept, no live scheduled task touched, no cross-repository change. Baseline `60c1aa0fadcd8c928816536dfd7a70cb573fbc9c`; the delivery lands in the commit that carries this review.
+
+### Change Summary
+
+- `Pillars/Philosophy/Model/Tools/Claude/Activities/Constitutional/Conformance.md`: Preparation and Step 1 point at `Admin/Governance/Charter.md` and match its `## Identity`, `## Activity Groups`, `## Scheduled Activities` and `## Tools` headings; Preparation item 2 now tells the model to list the Activities subfolders and read each index; Step 2 defines a framework group by its Adoption Requirements table, excludes `Constitutional`, and treats Charter groups without a framework index as island-local and informational; Step 3 reads the Activity Definition column, checks vetoed notes for an explicit veto, checks adopted notes exist and are not N/A stubs, and resolves required-note Paths from the repository root with `.md` appended; Reporting replaces "KC note" with "required note" and lists island-local groups as informational under Adoption Completeness, with the three sections and status values unchanged. `status` month advanced.
+- `Pillars/Philosophy/Model/Activities/Constitutional/Conformance.md`: the Outcome lines now describe the Charter, Activity Definition notes and required notes. Deviation: line 41 ("required KC notes") was also changed, beyond the listed lines 33, 40 and 43, so that no Knowledge Capital shorthand remains in the section. `status` month advanced.
+- `Pillars/Philosophy/Model/Activities/Tending/Tending.md`: `## Adoption Requirements` Paths are now `Admin/Operations/Activities/Tending Activity` and `Admin/Operations/Activities/Schedule`, the lead sentence states that Paths are repository-root relative, and the veto sentence names the group's Activity note. `status` month advanced.
+- Pre-invocation gate: not applicable; reasons in Discussion.
+
+### Verification
+
+- `grep -n "Knowledge Capital\|KC "` on the prompt returns nothing; `grep -n "Knowledge Capital"` on the activity definition returns nothing; the Tending `## Adoption Requirements` section contains no `Knowledge Capital/` path.
+- Both Tending Adoption Requirements Paths resolve with `.md` appended: `Admin/Operations/Activities/Tending Activity.md` and `Admin/Operations/Activities/Schedule.md`.
+- `git diff -U0 HEAD -- <prompt> | grep '^-#'` returns nothing.
+- `git diff --quiet HEAD -- Admin/Governance/Charter.md` succeeds.
+- No em or en dashes in the three changed notes.
+- Discussion holds the dry-run report and the gate outcome.
+- `ki repo audit --skill ki-repo-kb-activities --repo . --progress never` PASS; `ki repo audit --skill ki-repo-kb-streams --repo . --progress never` PASS; `ki repo audit --repo . --progress never --concise` PASS, 24 skills.
+
+### Outstanding concerns
+
+- The live Cowork Conformance task still runs the old prompt until Kris gives the "push it" signal; Scheduled Task Audit will report prompt drift for Conformance until then.
+- Out of scope and left for a separate capture if wanted: the Charter's Activity Groups prose ("a corresponding stub in `Admin/`") and the Authoring Guidelines `## Adoption Requirements` format text still describe per-note Knowledge Capital veto stubs, a different veto contract from the one the prompt and Tending table now use.
+
+### Post-change review
+
+A Fable reviewer (2026-10-06) independently dry-ran the rewritten prompt against the working tree, reached the same CONFORMANT result, and agreed with the gate-not-applicable decision, the line 41 deviation and the Reporting clause. Its three should-fix findings were applied: adopted Activity Definition notes are now stub-checked, Preparation now makes subfolder discovery an explicit input, and this record now carries the gate reasons, sync note and terminology follow-up. Its wording nit on the activity definition was also applied. Regression risk is low: the check stays read-only, its headings and report shape are unchanged, and it now passes on a correct tree where it previously failed on a missing path.
+
+### Mini recap
+
+The constitutional check is trustworthy again in the repository; the live task needs Kris's sync signal. Possible learning route: a Knowledge Capital terminology sweep of the remaining Model activity notes and the Charter's veto prose, to be captured separately through `ki-next` if wanted.
+
+---
+
 ## Discussion
 
 ### Split from OPS-008 (2026-10-05)
@@ -128,6 +166,28 @@ The Fable reviewer found that OPS-008's path-repair step was in scope only for t
 - Planning decision (2026-10-05), reversible: the Tending Adoption Requirements Paths are updated rather than translated inside the prompt, because the table is the declared adoption contract and a hidden mapping in the prompt would let the two drift again.
 - Planning decision (2026-10-05), reversible: Charter groups with no framework group index (Briefings, Email, Linear) are reported as island-local and informational. Treating them as non-conformant would fail a correct island; ignoring them would hide them from the report.
 - Planning decision (2026-10-05), reversible: framework groups are discovered by the presence of an Adoption Requirements table, not by H2 sections of the Activities index, because that index also introduces What Keeps an Island Alive and Authoring Guidelines, which are not groups.
+
+### Pre-invocation gate: not applicable (2026-10-06)
+
+Decided at delivery under the Step's stated authority, and agreed by the Fable reviewer, reversible: the Conformance prompt gets no pre-invocation gate. The prompt keeps no record of its last run or last report, so an early exit on "no commits since the last run" would replace the daily constitutional statement with an unverifiable "unchanged" claim and could mask a standing non-conformance. `git log` also misses uncommitted working-tree changes, and adding a git signal would need the Step 0 repository locator that [[KI-ARCADIA-OPS-008-scheduled-automations|OPS-008]] owns for the Tending prompts. The full check reads about eight small notes, so the saving would be small.
+
+### Read-only dry run (2026-10-06)
+
+The rewritten prompt, followed by hand against the working tree, produced:
+
+**KI Conformance Report - Arcadia Principal - 2026-10-06**
+
+**Constitutional Baseline** Pass - Charter present with Island name, Skill name and Task ID prefix; Activity Groups, Scheduled Activities and Tools sections present; Conformance is `enabled` at work-day 04:30.
+
+**Adoption Completeness** Pass - Tending is the only framework group (Authoring Guidelines has no Adoption Requirements table; Constitutional is excluded) and is `adopted`. Informational: Briefings, Email and Linear are island-local.
+
+**Adoption Consistency** Pass - Tending Activity and Schedule exist with no stub markers; Briefings Activity exists and is not a stub; Email Activity and Linear Activity explicitly state the veto.
+
+**Overall status: CONFORMANT**
+
+### Live-task sync awaits Kris's signal
+
+Only the repository's prompt and definition files were edited; no live Cowork scheduled task was changed. Pushing the rewritten prompt to the live Conformance task follows the Scheduled Task Audit Sync Protocol on Kris's explicit "push it" signal, and until then Scheduled Task Audit will report prompt drift for Conformance.
 
 ---
 

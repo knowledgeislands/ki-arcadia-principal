@@ -6,7 +6,7 @@ tags:
   - topic/automation
   - topic/knowledge-management
   - source/claude
-status: current - April 2026
+status: current - October 2026
 author: Written with Claude
 ---
 
@@ -76,9 +76,9 @@ Activities divide by cadence and initiation. Three are scheduled automations tha
 
 ## Adoption Requirements
 
-To adopt this activity group, an island must create the following Knowledge Capital notes. A vetoed island must create an index stub at `Knowledge Capital/Activities/Tending/Tending` acknowledging the veto.
+To adopt this activity group, an island must create the following notes. Paths are relative to the repository root. A vetoed island must instead state the veto in the group's Activity note, `Admin/Operations/Activities/Tending Activity`.
 
 | Note | Path | Purpose |
 | --- | --- | --- |
-| Tending index | `Knowledge Capital/Activities/Tending/Tending` | Group index; confirms adoption and links to timing config |
-| Schedule | `Knowledge Capital/Activities/Schedule` | Day-type taxonomy read by all scheduled automations |
+| Tending Activity | `Admin/Operations/Activities/Tending Activity` | Group Activity note; confirms adoption and links to timing config |
+| Schedule | `Admin/Operations/Activities/Schedule` | Day-type taxonomy read by all scheduled automations |
