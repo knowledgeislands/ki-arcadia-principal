@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: delta-evaluation
 state: active
 created_at: 2026-10-06T20:30:00Z
-updated_at: 2026-10-06T20:30:00Z
+updated_at: 2026-10-06T20:35:00Z
 ---
 
 # delta-evaluation
@@ -23,10 +23,16 @@ A documentation-only assessment was completed on 2026-10-02. No Delta installati
 - **Data boundary.** Adding a project stores repository contents and thread history on Delta's servers, and sharing a thread can grant access to other worktree histories for the attached repository ([data storage](https://delta.dev/docs/privacy-and-security/data-storage)).
 - **Maturity.** Delta is in public beta; repository-based access, remote runtime, CLI handoff, MCP and ACP support are listed as in progress ([roadmap](https://delta.dev/roadmap)). Evaluation should rely only on demonstrated features.
 
+Baseline for the re-evaluation, checked 2026-10-06:
+
+- **Release.** Latest is `0.18.2` (2026-10-02, Windows crash diagnostics), after `0.18.1` (2026-10-02, subagent-merge memory and Grok fixes) and `0.18.0` (2026-09-30: subthread search, bookmarks, custom OpenAI- and Anthropic-compatible providers, Gemini via Google AI Studio, a terminal `delta` CLI, and subthreads no longer posting progress to their parent), per the [release notes](https://delta.dev/docs/whats-in-the-latest). Public beta began 2026-09-16 under the Delta Early Access Agreement.
+- **Roadmap.** In progress: repository-based access, remote runtime, Delta CLI, MCP support, @mentions, ACP support. Up next: repository-level context, sandboxing, WSL support, conversation branching, graph view, read and view permissions. The roadmap still lists the CLI as in progress although `0.18.0` shipped a terminal `delta` command; check what that command covers before relying on it for handoff.
+
 ## Decisions made
 
 - Paperclip's company coordination and KI repository authority stay unchanged during any trial.
 - No KI project is connected to Delta without an explicit repository and data-scope choice.
+- Kris decided on 2026-10-06 to wait a week and re-evaluate from the recorded baseline before deciding on a trial.
 
 ## Files touched
 
@@ -40,4 +46,4 @@ This record replaces the loose incoming note `+/delta-paperclip-assessment-2026-
 
 ## Next step
 
-Ask Kris whether to trial Delta. If yes, capture a draft roadmap record through the [Enactment Process](<../../Admin/Operations/Processes/Enactment Process.md>) for one bounded delivery in a non-sensitive test repository, checking checkout location, starting revision, exact-commit review, verification evidence, handoff into the designated local checkout, and whether the resulting record can be recovered independently of Delta. If no, route the assessment summary to its durable home through the Enactment Process and remove this checkpoint.
+On or after 2026-10-13, re-read the release notes from `0.18.2` onwards and the roadmap, and report what changed against the baseline, especially for the in-progress items above, sandboxing, and the data-storage terms. Then ask Kris whether to trial Delta. If yes, capture a draft roadmap record through the [Enactment Process](<../../Admin/Operations/Processes/Enactment Process.md>) for one bounded delivery in a non-sensitive test repository, checking checkout location, starting revision, exact-commit review, verification evidence, handoff into the designated local checkout, and whether the resulting record can be recovered independently of Delta. If no, route the assessment summary to its durable home through the Enactment Process and remove this checkpoint.
