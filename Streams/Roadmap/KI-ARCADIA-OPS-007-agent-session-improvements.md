@@ -15,7 +15,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T18:32:31Z
-updated_at: 2026-10-05T08:41:00Z
+updated_at: 2026-10-06T01:36:00Z
 author: Written with Claude
 ---
 
@@ -51,7 +51,7 @@ Checked against the live harness checkout on 2026-10-05:
 | Model routing for background and batch work | Partly covered. `ki-tokenomics` owns the portable model-purpose taxonomy (`fast` for mechanical or bulk work, `standard`, `reasoning`, `frontier`) and Arcadia declares `preferred_model_type = "standard"`. `ki-subagents` defines subagent roles but has no model-type field or guidance | `ki-agentic-harness/skills/environment/ki-tokenomics/SKILL.md`; `.ki.toml` `[skills.ki-tokenomics]`; grep of `skills/agentic-systems/` for model type returns nothing | Retire the policy part; confirm and hand off the per-role model-type gap |
 | Session check-in ritual | Covered. Arcadia `CLAUDE.md` requires loading [[Admin/MEMORY\|MEMORY]] before island work; `ki-checkpoint` RESUME reconstructs an active thread; `ki-next` selects outstanding work | `CLAUDE.md`; `skills/governance/ki-checkpoint/SKILL.md`; `skills/change-management/ki-next/SKILL.md` | Retire |
 | Preference capture (`/teach`) | Covered. The user memory-scope rule routes durable guidance to `AGENTS.md`, `CLAUDE.md` or managed user configuration; `ki-recap` names durable learning routes; `ki-authoring` owns knowledge promotion | `~/.claude/memory-scope.md` (chezmoi-managed); `skills/change-management/ki-recap/references/standards-session-recap.md`; `skills/governance/ki-authoring/references/standards-knowledge-promotion.md` | Retire |
-| Semantic retrieval (RAG) | In flight in the harness. `KI-HARNESS-FND-028` (Now, Ready) adopts qmd hybrid search behind `kb_search`, `ki kb search` and the `ki-repo-kb` QUERY procedure | `ki-agentic-harness/docs/roadmap/KI-HARNESS-FND-028-adopt-qmd-kb-search.md` | Retire locally; Arcadia consumes the harness outcome |
+| Semantic retrieval (RAG) | In flight in the harness at planning. `KI-HARNESS-FND-028` (then Now, Ready; since done and pruned) adopts qmd hybrid search behind `kb_search`, `ki kb search` and the `ki-repo-kb` QUERY procedure | Historical: `docs/roadmap/KI-HARNESS-FND-028-adopt-qmd-kb-search.md` in `knowledgeislands/ki-agentic-harness` at `cef48708`, before its prune in `47bc10e8` | Retire locally; Arcadia consumes the harness outcome |
 
 ---
 
@@ -83,7 +83,7 @@ Checked against the live harness checkout on 2026-10-05:
 
 ## Dependencies / blocks
 
-No local dependency. Retrieval relies on `KI-HARNESS-FND-028` in `ki-agentic-harness`; that is context, not a blocker, because this record retires the idea locally whatever its timing. A model-routing trade, if raised, is non-blocking: this record closes once it is submitted, and reciprocity is carried by the trade identity recorded here and the receiver's `transferred_from`, not by `blocks` or `blocked_by`.
+No local dependency. Retrieval relies on the harness qmd search delivered under `KI-HARNESS-FND-028` (historical: done, then pruned from `knowledgeislands/ki-agentic-harness` in `47bc10e8`; last present at `cef48708`); that is context, not a blocker, because this record retires the idea locally whatever its timing. A model-routing trade, if raised, is non-blocking: this record closes once it is submitted, and reciprocity is carried by the trade identity recorded here and the receiver's `transferred_from`, not by `blocks` or `blocked_by`.
 
 ---
 
@@ -119,6 +119,10 @@ This record moves to awaiting-review on delivery, with possibly one outbound wor
 - The triage mapped model routing to `ki-tokenomics` plus `ki-subagents`. `ki-tokenomics` does carry the model-purpose policy, but `ki-subagents` has no model-type guidance today, so per-role routing is the one candidate gap.
 - The triage mapped check-in to `ki-bootstrap`. `ki-bootstrap` covers first-time activation, not session start; the real coverage is the `CLAUDE.md` MEMORY load, `ki-checkpoint` RESUME and `ki-next`.
 - The plan first raised the model-routing handoff directly in `ki-agentic-harness/docs/roadmap/`. On the Fable reviewer's advice (2026-10-05) it now uses the declared route: Arcadia's `.ki.toml` declares a `work` export to `knowledgeislands/ki-agentic-harness` and `ki-trade` never writes a peer checkout, so the handoff is a sender-owned trade in `-/_TRADES/`, matching `KI-ARCADIA-OPS-003` and `KI-ARCADIA-EXT-003`.
+
+### Historical harness reference
+
+`KI-HARNESS-FND-028` reached `done` in `knowledgeislands/ki-agentic-harness` and was pruned in `47bc10e8` (2026-10-05). It is cited as historical evidence at `cef48708`, the last revision containing the record; the RAG row's disposition is unchanged.
 
 ### Original ideas (April 2026)
 

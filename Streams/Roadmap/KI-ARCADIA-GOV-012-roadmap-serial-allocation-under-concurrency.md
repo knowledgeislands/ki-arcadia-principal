@@ -2,7 +2,7 @@
 note_type: stream-roadmap
 id: KI-ARCADIA-GOV-012
 area: GOV
-title: Make roadmap serial allocation safe under concurrent writers
+title: Name roadmap write locus
 theme: governance
 horizon: now
 status: ready
@@ -10,10 +10,10 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-09-26T16:29:58Z
-updated_at: 2026-10-05T08:15:51Z
+updated_at: 2026-10-06T01:36:00Z
 ---
 
-# Make Roadmap Serial Allocation Safe Under Concurrent Writers
+# Name Roadmap Write Locus
 
 ## Goal
 
@@ -112,3 +112,7 @@ Three options were compared: enforce one writer per checkout and treat the ledge
 ### Handoff no longer needed
 
 Capture noted that a change to how the ledger is defined would belong to `ki-repo-kb-streams` in `ki-agentic-harness` as a reciprocal handoff. The harness made that change itself on the same day, so no handoff is raised.
+
+### Scope confirmed narrow (2026-10-06)
+
+The 2026-10-06 roadmap consolidation confirmed that the shared reservation and write-locus rule is owned by `ki-work-roadmap` in `knowledgeislands/ki-agentic-harness` from `db4635d0`, so this record's deliverable is only the local `## Write locus` text in Streams Conventions. The title was shortened from "Make roadmap serial allocation safe under concurrent writers" to the four-word limit and now names that narrowed deliverable; the identifier and slug are unchanged.

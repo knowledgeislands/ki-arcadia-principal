@@ -13,9 +13,9 @@ priority: medium
 horizon: future
 blocks: []
 blocked_by: []
-baseline_ref: e3eedc265f40c9fe49ef02081d98cb4de5ab8c49
+baseline_ref: null
 created_at: 2026-09-22T06:37:24Z
-updated_at: 2026-09-26T18:10:38Z
+updated_at: 2026-10-06T01:36:00Z
 author: Written with Codex
 ---
 
@@ -94,3 +94,7 @@ The desired outcome is not maximum code sharing. It is an evidence-based boundar
 ## Governance
 
 This roadmap record adheres [[Enactment Process]]. Move content to `Admin/`, `Pillars/`, or `Resources/` only on user approval of a `ready` record.
+
+### Baseline cleared (2026-10-06)
+
+The record carried `baseline_ref: e3eedc265f40c9fe49ef02081d98cb4de5ab8c49` while still `draft` in `future`. An implementation baseline is recorded only when delivery starts, so it was reset to `null`; the earlier value remains in Git history as context for when the assessment was first framed.
