@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: state-of-play
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-06T21:31:29Z
+updated_at: 2026-10-06T21:39:48Z
 ---
 
 # state-of-play
@@ -48,6 +48,26 @@ Open roadmap records by repository and status (67 open):
 - **Other in-flight surfaces.** `ki-website` holds batch authorisation `KI-WEB-BATCH-001` and legacy handoff `CLI-006-qualified-repository-declarations`. Arcadia `+/_ACQUIRE/` holds 8 unprocessed captures (7 ChatGPT, 1 Granola). `ki-techne-harness/+/paperclip-as-techne-prior-art.md` is an unpromoted working analysis. No trade files are pending in any `+/_TRADES/`.
 - **chezmoi dependencies.** `baseline-and-cloud` cites `DOTFILES-UE-067` and `DOTFILES-UE-065` (diagnose same-boot mcporter stall, draft) for the laptop's standing load.
 
+Roadmap clearance of the six repositories, finished 23:39 CEST. All changes are local commits; working trees are clean; nothing pushed. Agent reports are in `~/.local/state/ki/state-of-play/`.
+
+| Repository | Delivered to awaiting review | Deferred to `waiting-for` (cites this checkpoint) | Left as is | Reported, not adopted |
+| --- | --- | --- | --- | --- |
+| chezmoi | `DOTFILES-UE-066` status without Touch ID | `DOTFILES-UE-065` mcporter stall (needs live probes) | `UE-067` (awaiting review); `UE-020`, `UE-027`, `UE-028`, `UE-035`, `UE-056`, `UE-062` (waiting-for); `UE-043` (parked) | `UE-055` HNR agent audits (keep in Soon, map to `paperclip-bootstrap-and-recovery`); `UE-063` qmd search daemon (stale, respecify) |
+| `ki-techne-harness` | `TECHNE-TOOLS-FAB-001` agent-host profile (local only) | - | `OPS-008` (deferred by Kris) | - |
+| `ki-website` | - | `KI-WEB-SITE-039` landing pages (Kris to confirm reviewer's choices) | `SITE-001` (waiting on `KI-ARCADIA-MOD-003`) | Spent batch `KI-WEB-BATCH-001` and superseded handoff `CLI-006`: remove. `+/brand-visuals-from-arcadia/`: hold for `SITE-001` and `MOD-003` |
+| `ki-specifications` | - | `KI-SPEC-RGV-001`, `KIN-001`, `KIN-002` (overlap the specification review and `KI-ARCADIA-MOD-006`) | - | - |
+| `tools-ki` | - | - | - | `KI-TOOL-CLI-108`: keep, adopt after harness `GOV-094` and `GOV-103`, which edit the same standard |
+| `homebrew-tap` | - | - | - | `BREW-011`: keep in triage until `KI-HARNESS-GOV-141` is decided. The `ki` formula already points at v0.7.1, so the release gap is closed |
+
+Questions raised by the clearance, for the dispositions step:
+
+- `DOTFILES-UE-065`: approve a bounded, sanitised live trace of the mcporter bridge (no restart) once `baseline-and-cloud` settles?
+- `DOTFILES-UE-066`: raise a consumer handoff to `apps-observatory` for its unscoped reads?
+- `KI-WEB-SITE-039`: confirm or change the landing-page choices taken under delegated autonomy.
+- `KI-SPEC-RGV-001`: confirm the delegated-autonomy choices in the specification review; split the broken manifest validation command (fails in all eight documented places) into its own small record now?
+- `KI-SPEC-KIN-001` and `KIN-002`: once `KI-ARCADIA-MOD-006` settles, do KBEP and KBIP belong in `ki-specifications`?
+- chezmoi: `.config/ki/config.toml` has a pending change from commit `9349f62` awaiting a reviewed apply; `_ISSUES.md` needs the approved ledger tidy-up.
+
 Handed over from the roadmap-delivery thread at 23:15 CEST:
 
 - **Finished and pushed.** `tools-ki` v0.7.1 released and used by CI in every repository. Harness model radar updated. `KI-HARNESS-GOV-095` and `KI-ARCADIA-GOV-019` delivered to awaiting review; follow-on `KI-TOOL-CLI-108` raised. `KI-ARCADIA-OPS-011` accepted. chezmoi now carries the quiet, timestamped-update communication rule for Claude and Codex.
@@ -55,7 +75,6 @@ Handed over from the roadmap-delivery thread at 23:15 CEST:
   1. Ledger tidy-up: audit each Agora (kis, personal, legal, hnr, equalremedy, techmedix, vallearmonia) and, where ROAD-7 reports a superseded ledger form, conform `_ISSUES.md` only. `homebrew-tap` and `ki-website` are protected and need auto-merge pull requests.
   2. Slim-down 1: move communication levels, report shape and the timestamped-update rule from private instructions into a portable skill, probably `ki-authoring`, through a harness record.
   3. Slim-downs 2 and 3: reduce `dot_codex/private_AGENTS.md` to user-level content only (depends on `RTP-013`), and remove duplicated progress-update text from repository `AGENTS.md` files.
-- **Release gap.** The `homebrew-tap` formula and GitHub release for `ki` v0.7.1 still need a pull request.
 - **Acceptance knock-on.** Accepting `KI-HARNESS-GOV-124` lets `5GE-P2-GOV-015` close.
 - **Needs a Cowork or Desktop session.** Push the updated Conformance scheduled task, following the Sync Protocol in [[Scheduled Task Audit]]; CLI sessions cannot reach the scheduled-tasks tool.
 - **Admin raised for review.** `TMX-CO-006` ICO fee due 16 October. Linear, Strava, TickTick and Xero need re-authorising; Telegram failed to connect. Possible stray bootstrap files in `~/.claude` or `~/.agents`.
@@ -101,7 +120,7 @@ Gaps in the checkpoint standard and audit, raised by those threads:
 
 ## Next step
 
-Running now: the six-repository roadmap clearance (see Decisions made). Then, in order:
+The six-repository roadmap clearance is complete; three records await Kris's acceptance (`DOTFILES-UE-066`, `DOTFILES-UE-067`, `TECHNE-TOOLS-FAB-001`). Then, in order, for the harness and Arcadia:
 
 1. **Per-record read.** Read all 67 open records in full and capture its intended outcome, canonical owner, dependencies, overlaps or conflicts, and whether its status and horizon are still true.
 2. **Map to themes.** Assign each record to one checkpoint thread; list duplicates, reversals, superseded items and records that fit no thread.
