@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: state-of-play
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-06T22:05:00Z
+updated_at: 2026-10-06T23:05:41Z
 ---
 
 # state-of-play
@@ -146,6 +146,7 @@ Gaps in the checkpoint standard and audit, raised by those threads:
 
 The six-repository roadmap clearance is complete; three records await Kris's acceptance (`DOTFILES-UE-066`, `DOTFILES-UE-067`, `TECHNE-TOOLS-FAB-001`). The disposition commits need pushing, `homebrew-tap` `roadmap/fold-brew-011` needs a pull request, and the remaining branches and dirty worktrees need Kris's decision. Then, in order, for the harness and Arcadia:
 
+0. **Checkpoints up to date.** Before any other item starts, bring every checkpoint in scope (this one and the five sibling threads) up to date with the current state: records accepted, pruned, deferred, captured or abandoned since each was last written, and branches and worktrees removed. No other step begins until this is done.
 1. **Per-record read.** Read all 67 open records in full and capture its intended outcome, canonical owner, dependencies, overlaps or conflicts, and whether its status and horizon are still true.
 2. **Map to themes.** Assign each record to one checkpoint thread; list duplicates, reversals, superseded items and records that fit no thread.
 3. **Specification check.** Test each record against its canonical owner and list remedial work.
