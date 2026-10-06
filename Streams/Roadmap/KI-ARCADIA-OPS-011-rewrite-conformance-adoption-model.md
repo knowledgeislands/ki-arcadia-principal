@@ -8,12 +8,12 @@ tags:
   - topic/knowledge-islands
   - topic/automation
 horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: 60c1aa0fadcd8c928816536dfd7a70cb573fbc9c
 created_at: 2026-10-05T08:44:07Z
-updated_at: 2026-10-06T17:21:00Z
+updated_at: 2026-10-06T19:30:00Z
 author: Written with Claude
 ---
 
@@ -152,6 +152,12 @@ A Fable reviewer (2026-10-06) independently dry-ran the rewritten prompt against
 ### Mini recap
 
 The constitutional check is trustworthy again in the repository; the live task needs Kris's sync signal. Possible learning route: a Knowledge Capital terminology sweep of the remaining Model activity notes and the Charter's veto prose, to be captured separately through `ki-next` if wanted.
+
+---
+
+## Done
+
+Accepted 2026-10-06 by Kris Brown on the review packet above. Delivered by `7b158ce` on baseline `60c1aa0`. Kris also gave the "push it" signal for the live Conformance task; that sync follows the Scheduled Task Audit Sync Protocol from a session with the scheduled-tasks tool and remains outside this record.
 
 ---
 
