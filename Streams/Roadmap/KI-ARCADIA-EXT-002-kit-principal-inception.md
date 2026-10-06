@@ -6,14 +6,14 @@ title: Kit Principal inception
 theme: ecosystem-adoption
 tags:
   - topic/knowledge-islands
-status: ready
+status: awaiting-review
 priority: medium
 horizon: now
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: 1fb429d70ec71a03eceb33cb82c8f632646a7197
 created_at: 2026-04-27T19:18:58Z
-updated_at: 2026-10-05T08:17:56Z
+updated_at: 2026-10-06T01:30:00Z
 author: Written with Claude
 ---
 
@@ -57,12 +57,12 @@ Observed at planning, `kit-principal` HEAD `316a766` (2026-10-04), resolved thro
 
 ## Steps
 
-- [ ] Re-ground `kit-principal` read-only: record HEAD and `git status --short` before inspection, and re-run `ki repo audit --progress never` there.
-- [ ] Council membership: disposition as fulfilled in `kit-principal`-owned personal content at `Pillars/Knowledge Capital/Known Lands.md`; note that the Arcadia-side derivation (`Pillars/Admin/Governance/Charter.md`) no longer exists.
-- [ ] Known Lands: disposition the old `Pillars/Philosophy/Known Lands.md` path as superseded by `Admin/Governance/Known Lands.md` (territorial inventory) and `Pillars/Knowledge Capital/Known Lands.md` (personal chart).
-- [ ] Admin/Governance: disposition the "needs creating" claim as obsolete, citing the governance surface present, and record that Identity, Physical Locations, Routing Rules and Glossary were replaced by the Charter and Known Lands model.
-- [ ] Cross-island links: cite the Charter signpost and the Pillars and Streams notes that reference Arcadia; disposition the "ongoing" item as owned by `kit-principal`'s own roadmap.
-- [ ] Write the dispositioned table into Discussion, confirm `kit-principal` HEAD and status are unchanged by this delivery, prepare the review packet and set the record to `awaiting-review`.
+- [x] Re-ground `kit-principal` read-only: record HEAD and `git status --short` before inspection, and re-run `ki repo audit --progress never` there.
+- [x] Council membership: disposition as fulfilled in `kit-principal`-owned personal content at `Pillars/Knowledge Capital/Known Lands.md`; note that the Arcadia-side derivation (`Pillars/Admin/Governance/Charter.md`) no longer exists.
+- [x] Known Lands: disposition the old `Pillars/Philosophy/Known Lands.md` path as superseded by `Admin/Governance/Known Lands.md` (territorial inventory) and `Pillars/Knowledge Capital/Known Lands.md` (personal chart).
+- [x] Admin/Governance: disposition the "needs creating" claim as obsolete, citing the governance surface present, and record that Identity, Physical Locations, Routing Rules and Glossary were replaced by the Charter and Known Lands model.
+- [x] Cross-island links: cite the Charter signpost and the Pillars and Streams notes that reference Arcadia; disposition the "ongoing" item as owned by `kit-principal`'s own roadmap.
+- [x] Write the dispositioned table into Discussion, confirm `kit-principal` HEAD and status are unchanged by this delivery, prepare the review packet and set the record to `awaiting-review`.
 
 ## Files touched
 
@@ -97,6 +97,38 @@ None. Personal-context guidance is owned by `kit-principal`.
 
 Closes this inception record on acceptance. Any further alignment work belongs in `kit-principal`'s own roadmap.
 
+## Review
+
+### Delivered
+
+A read-only disposition of the four-row Items table against `kit-principal`, within the approved boundary: no file in `kit-principal` changed, personal content cited by path only, and no Arcadia canonical change. Immutable baseline `1fb429d70ec71a03eceb33cb82c8f632646a7197`.
+
+### Change Summary
+
+- This record only: Steps ticked, the dispositioned table in Discussion, and this Review packet.
+- Deviations: `kit-principal` HEAD has moved since planning (`316a766` to `a34fec2e`) and its working tree is now clean. The Arcadia signpost sits in `Admin/Governance/Known Lands.md`, not the Charter as the plan stated; the Charter declares the Personal territory and Capital. `Streams/Roadmap/` holds 30 `KIT-` records, as planned.
+
+### Verification
+
+- Pre-inspection capture: `kit-principal` HEAD `a34fec2e7f28f1916c4dca0697f527f2b8b30fd8`, `git status --short` empty; post-inspection capture identical.
+- `ki repo audit --progress never` in `kit-principal`: PASS, 21 skills.
+- Discussion holds the four-row table, each row dispositioned and citing a `kit-principal` path.
+- Arcadia's `Admin/Governance/Charter.md` contains no mention of a council (`grep -ci council` returns 0).
+- `git diff --name-only 1fb429d70ec71a03eceb33cb82c8f632646a7197..HEAD` in Arcadia lists only this record once committed.
+- `ki repo audit --repo .` in Arcadia (ki 0.6.1): PASS.
+
+### Outstanding concerns
+
+None.
+
+### Post-change review
+
+The Goal holds: every Items row is dispositioned with evidence, and the ongoing cross-island work is placed with `kit-principal`'s own roadmap. Nothing outside this record changed, so regression risk is nil. Ready for owner acceptance through `ki-accept`.
+
+### Mini recap
+
+Reconciled the April 2026 Kit Principal inception against `kit-principal` `a34fec2e` read-only; all four rows are dispositioned. Learning route proposed, not promoted: inception plans should cite territorial signposts by their Known Lands path, where the model now places them.
+
 ## Discussion
 
 ### Decisions under delegated autonomy
@@ -106,6 +138,17 @@ Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible:
 ### Original framing
 
 Historical local path `~/kis/krisb/kit-principal`; the current checkout is resolved through the `ki` registry. The original record followed the then-current Enactment Process note under `Pillars/Philosophy/Model/Processes/`; the live process is `Admin/Operations/Processes/Enactment Process.md`.
+
+### Dispositioned Items table (2026-10-06)
+
+Inspected read-only at `kit-principal` `a34fec2e`.
+
+| Item | Disposition | `kit-principal` evidence |
+| --- | --- | --- |
+| Kit's council membership | Fulfilled in `kit-principal`-owned personal content; the Arcadia-side derivation `Pillars/Admin/Governance/Charter.md` no longer exists, and Arcadia's Charter mentions no council | `Pillars/Knowledge Capital/Known Lands.md` § Arcadia - Council Member |
+| Known Lands | Old `Pillars/Philosophy/Known Lands.md` path superseded by the territorial inventory and the personal chart | `Admin/Governance/Known Lands.md`; `Pillars/Knowledge Capital/Known Lands.md` |
+| Admin/Governance | "Needs creating" claim obsolete; Identity, Physical Locations, Routing Rules and Glossary replaced by the Charter and Known Lands model | `Admin/Governance/` holds `Charter.md`, `Conformance.md`, `Conventions/Conventions.md`, `Decisions/` (`GDR-KIT-001`, `DDR-KIT-001`), `Governance.md` and `Known Lands.md` |
+| Cross-island links | Ongoing work owned by `kit-principal`'s own roadmap | Signpost in `Admin/Governance/Known Lands.md`; references in `Pillars/Knowledge Capital/Knowledge Capital.md`, `Pillars/Technology/Project Portfolio.md`, `Streams/Roadmap/KIT-001-knowledge-island-workbench.md` and `Streams/Roadmap/KIT-032-ship-chatgpt-capture.md` |
 
 ---
 
