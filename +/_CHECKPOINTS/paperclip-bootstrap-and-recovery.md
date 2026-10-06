@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: paperclip-bootstrap-and-recovery
 state: active
 created_at: 2026-09-27T23:55:22Z
-updated_at: 2026-10-06T11:00:00Z
+updated_at: 2026-10-06T11:20:00Z
 ---
 
 # paperclip-bootstrap-and-recovery
@@ -12,7 +12,17 @@ updated_at: 2026-10-06T11:00:00Z
 
 Make Paperclip useful through reviewed roadmap work that lands in Kris's local main, not more rounds of setup. Prove one delivery in VA, establish useful reporting and review routines, then consider TMX. Completed work is in Git history; read live tasks before acting, because dated observations are not health guarantees.
 
-## Constraints for now
+## Current state
+
+- VA delivery has no agent or runtime blocker; two of Kris's decision cards gate it (see Open questions).
+- Rita (TMX), Vár (LGL) and Maketh (KIT) are hired, configured and idle; each still waits on a prerequisite listed in Next step.
+- Saved staffing answers on VA-33 and HNR-50 have not yet been acted on. ER-7 is unchecked.
+- No company has routines beyond two paused KIS changelog routines, and none has adopted the weekly knowledge-return review.
+- Naming themes exist per company but none is recorded in its home repository.
+
+## Decisions made
+
+These constraints hold for now.
 
 - **Ticket statuses.** Leave Paperclip ticket statuses as they are, including TMX-10, LGL-6 and KIT-3, until Kris says the fleet is in shape.
 - **Authority.** Resuming this checkpoint does not authorise waking agents, hiring, creating tasks, activating schedules, deploying, pushing, lifting holds or KI acceptance. Reuse existing approvals; ask only for authority that is actually missing. Do not repeat answered cards.
@@ -27,7 +37,22 @@ Make Paperclip useful through reviewed roadmap work that lands in Kris's local m
 - **Runtime.** The build is `ki/v2026.916.1-r1` from `/Users/krisbrown/workspaces/kit/paperclip` (branch `ki/stable`), installed under `~/.paperclip/cli/installs/fork/` with data under `~/.paperclip/instances/default`. Host procedures and the repair inventory live in `/Users/krisbrown/.local/share/chezmoi/docs/guides/tools/paperclip.md`. "Connected" is not proof that credentials work. Preserve intentional pauses, timers, retained worktrees and backups.
 - **Reporting.** Use plain language: what changed, what is waiting, what happens next and the one decision needed.
 
-## To do
+## Files touched
+
+None in this repository beyond this checkpoint. Paperclip configuration changes are snapshotted under `~/.paperclip/repairs/2026-10-06-post-hire/`, and host procedures live in the chezmoi Paperclip guide named above.
+
+## Open questions
+
+- Who performs the local integration of VA-13 `94ef12c`? Kris answers on card `ce6c380e` (VA-31).
+- Will Kris review and integrate VA-6 `256251c`? Card `e08907db`.
+- When should LGL-6 close, releasing Vár's first review LGL-7?
+- Should LGL and KIS adopt their inferred naming themes?
+- What timezone, cadence and budget should VA routines use?
+- Which companies justify continuous operation?
+
+## Next step
+
+Work through these in order; items 1 and 2 wait on the open questions above.
 
 1. **Land VA-13 (`94ef12c`).** Waiting on Kris to name the local integrator on card `ce6c380e` (VA-31). Then Shilpin refreshes the branch by merge, Sakshi re-reviews the exact candidate, and the named owner fast-forwards local main without pushing. Guru returns the commit, checks and `task_links`.
 2. **Land VA-6 (`256251c`).** Waiting on Kris's review and integration card `e08907db`. Same refresh, re-review and integrate cycle; GOV-003 is in progress.
