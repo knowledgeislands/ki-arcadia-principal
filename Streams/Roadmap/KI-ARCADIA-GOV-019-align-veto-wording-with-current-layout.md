@@ -8,12 +8,12 @@ tags:
   - topic/knowledge-islands
   - topic/automation
 horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: 101c0280207b24f304028da55ecd5a159d574ce1
 created_at: 2026-10-06T19:53:25Z
-updated_at: 2026-10-06T20:01:01Z
+updated_at: 2026-10-06T21:20:15Z
 author: Written with Claude
 ---
 
@@ -142,6 +142,14 @@ A Fable reviewer (2026-10-06) independently reread the diff, reran every Verify 
 ### Mini recap
 
 The governance texts and the Conformance Check now state one veto contract. Possible learning routes, not promoted: the uncaptured Knowledge Capital terminology sweep of the Model notes (Authoring Guidelines lines 31, 32, 84, 113 and 168, `Constitutional.md`, `Tending/Convergence Check.md`), and the pre-existing em dashes in the Authoring Guidelines matrix and the `Admin/Operations/Activities/Activities.md` vetoed rows, both for separate capture through `ki-next` if wanted.
+
+## Done
+
+Accepted 2026-10-06 by Kris Brown on the review packet above.
+
+## Discussion
+
+None.
 
 ---
 

@@ -5,12 +5,12 @@ area: GOV
 title: Name roadmap write locus
 theme: governance
 horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: 56f2d132546414c25cc1c63841e76584f05c971d
 created_at: 2026-09-26T16:29:58Z
-updated_at: 2026-10-06T17:14:00Z
+updated_at: 2026-10-06T21:19:43Z
 ---
 
 # Name Roadmap Write Locus
@@ -130,6 +130,10 @@ A Fable reviewer (2026-10-06) approved with no blocking or should-fix findings: 
 Arcadia now names its own write locus, completing the local half of the harness `db4635d0` change. No learning to promote.
 
 ---
+
+## Done
+
+Accepted 2026-10-06 by Kris Brown on the review packet above.
 
 ## Discussion
 
