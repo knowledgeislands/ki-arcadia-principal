@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: state-of-play
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-07T17:38:03Z
+updated_at: 2026-10-07T19:15:00Z
 ---
 
 # state-of-play
@@ -14,7 +14,7 @@ Reduce all in-flight work across the `kis` Agora and chezmoi to a short list of 
 
 ## Current state
 
-- **Roadmap model v1** is live and enforced across the Agora ([GDR-KI-ARCADIA-005](../../Admin/Governance/Decisions/GDR-KI-ARCADIA-005-the-roadmap-model.md)). Each Project note in [Projects](../../Streams/Projects/Projects.md) holds its own status and next step.
+- **Roadmap model v1** is live and enforced across the Agora ([GDR-KI-ARCADIA-005](../../Admin/Governance/Decisions/GDR-KI-ARCADIA-005-the-roadmap-model.md)). Links point upwards only: records name their Project and Projects their Initiative. Project notes in [Projects](../../Streams/Projects/Projects.md) carry only an outcome and notes; status lives in the records and each note's `lifecycle`, and `ki` produces the views.
 - **Load:** the Agora has 26 Now, 3 Next, 1 Future, 7 Hold and 13 triage records; chezmoi adds 1 Soon, 9 Hold and 1 triage. Now is still overloaded. No horizon has moved yet.
 - **Running:** the `tidy` agent is applying the `.ki.toml` layout rules and bare trades tables across the Agora. Until it commits, `ki repo audit` fails FILES-10 in Arcadia, the harness and `tools-ki`, and BIO-1 in the harness. Check `claude-bg status gov-020` before assuming it is live.
 - **What's left:**
@@ -67,4 +67,4 @@ The decisions still in force for the remaining work (full text in `decisions.md`
 2. Once the `tidy` agent reports DONE, rerun `ki repo audit` in Arcadia, the harness and `tools-ki` and fix what remains.
 3. Kris settles the `tools-ki` v0.8.2 pin question; then release and close the roadmap-model Project.
 4. Start `/ki-design-loop start skill-refresh` and settle the trades hold before 2026-10-14.
-5. Work the chosen Projects from their notes' next steps.
+5. Work the chosen Projects from their records and `ki` views.

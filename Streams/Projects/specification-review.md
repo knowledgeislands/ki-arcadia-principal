@@ -7,7 +7,7 @@ initiative: platform-foundations
 lifecycle: planned
 lead: Kris Brown
 target: null
-updated: 2026-10-07T17:45:00Z
+updated: 2026-10-07T19:00:00Z
 author: Written with Claude
 ---
 
@@ -21,16 +21,10 @@ This Project sits in [[platform-foundations|Platform foundations]]. Kris agreed 
 
 ---
 
-## Update
+## Notes
 
-**2026-10-07.** Created as `planned`. Nothing has been reviewed yet.
-
-- **Health.** Not started. The roadmap reduction is done, so nothing blocks the first review.
-- **Why a Project.** The plan was orphaned. No Initiative note mentioned it, and `KI-SPEC-RGV-001` lost the link on 2026-10-07 when its hold condition was rewritten. The [[specifications]] Project covers only the `ki-specifications` repository and is paused.
-
-### Scope
-
-52 Specification files under each repository's `docs/specs/`:
+- **Why a Project.** The plan step was orphaned: no Initiative note mentioned it, and the `ki-specifications` review lost the link when its hold condition was rewritten. The [[specifications]] Project covers only the `ki-specifications` repository and is paused; that repository's review stays there.
+- **Scope.** 52 Specification files under each repository's `docs/specs/`:
 
 | Repository | Files |
 | --- | --- |
@@ -44,33 +38,6 @@ This Project sits in [[platform-foundations|Platform foundations]]. Kris agreed 
 | `tools-git-almanac` | 2 |
 | chezmoi | 2 |
 
-The `ki-specifications` repository review stays with [[specifications]] and its record `KI-SPEC-RGV-001`.
-
-### Decision
-
-The review order and how each outcome is recorded: a review note per repository, or a roadmap record in each owning repository. The test: Kris chooses before the first review starts.
-
-### Next step
-
-Kris picks the first repository. `tools-ki` holds the most files and is the most active, so it is the suggested start.
-
----
-
-## Open records
-
-Membership is classification, not authority. Status lives in each record.
-
-- [KI-SPEC-RGV-001](../../../ki-specifications/docs/roadmap/KI-SPEC-RGV-001-review-specifications-repository.md) - Review KI Specifications (related; it belongs to [[specifications]])
-
----
-
-## Ideas
-
+- **Open choice.** The review order, and how each outcome is recorded: a review note per repository, or a roadmap record in each owning repository. `tools-ki` holds the most files and is the most active, so it is the suggested start.
 - Run each review with `ki-specs` AUDIT first, so Kris reads findings rather than raw files.
-
----
-
-## Sources
-
-- GOV-020 state-of-play survey, section 4 (`~/.local/state/claude-bg/gov-020/survey.report.md`), 2026-10-07.
-- Decision 13 in the state-of-play design (`~/.local/state/ki/state-of-play/design/decisions.md`).
+- The scope comes from section 4 of the state-of-play survey (`~/.local/state/claude-bg/gov-020/survey.report.md`) and decision 13 of the state-of-play design.

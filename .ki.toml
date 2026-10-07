@@ -56,9 +56,10 @@ members = [
 ]
 
 [skills.ki-authoring]
-
-[skills.ki-authoring.owned_file_exceptions]
-".rumdl.toml" = "Keeps design-loop supporting files verbatim beside their Decision Record."
+owned_file_exceptions = [
+  # Keeps design-loop supporting files verbatim beside their Decision Record.
+  ".rumdl.toml",
+]
 
 # -----------------------------------------------------------------------------
 # Repository shape
@@ -82,7 +83,6 @@ process_note = "Admin/Operations/Processes/Enactment Process"
 [skills.ki-engineering]
 
 [skills.ki-decision-records]
-scope = "KI-ARCADIA"
 
 [skills.ki-binding]
 

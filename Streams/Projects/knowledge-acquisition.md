@@ -7,7 +7,7 @@ initiative: knowledge-islands-model
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-07T14:05:00Z
+updated: 2026-10-07T19:00:00Z
 author: Written with Claude
 ---
 
@@ -15,47 +15,13 @@ author: Written with Claude
 
 ## Outcome
 
-Make acquisition of external material work end to end: the provider-neutral lifecycle is clear in one Pillars note, AI-session content reaches the repository best served by it, and source conversations are retired only after the move is verified. The test: every record listed below is delivered or closed. The direction follows [[ADR-KI-ARCADIA-001-provider-neutral-knowledge-acquisition|ADR-KI-ARCADIA-001]]; this finite outcome is for Kris to confirm.
+Document the provider-neutral knowledge acquisition lifecycle in one Pillars note, acquire AI sessions into their owning repositories with source conversations retired only once each move is verified, and settle the browser-runtime and WhatsApp spool questions. The test: every record that names this Project is delivered or closed. The direction follows [[ADR-KI-ARCADIA-001-provider-neutral-knowledge-acquisition|ADR-KI-ARCADIA-001]]; Kris is to confirm the finite outcome.
 
 This Project sits in [[knowledge-islands-model|Knowledge Islands model]].
 
 ---
 
-## Update
+## Notes
 
-Created on 2026-10-07 from the theme map and the records' current status; no checkpoint existed.
-
-- **Health.** Not yet judged: the theme has had no checkpoint or review. Kris to state one.
-- Harness `KI-HARNESS-OPS-005` (acquire AI sessions) is in progress; the other records are `ready` or held in chezmoi.
-- [[KI-ARCADIA-MOD-006-knowledge-acquisition-lifecycle|KI-ARCADIA-MOD-006]] changes `Pillars/` and so runs through the Enactment Process.
-
-### Decision
-
-Kris to confirm this Project's outcome and state its health.
-
-### Next step
-
-Read the in-progress harness OPS-005 for its current checkpoint, then decide whether KI-ARCADIA-MOD-006 goes next, so the lifecycle note leads the remaining acquisition work.
-
----
-
-## Open records
-
-Membership is classification, not authority; each owning repository decides whether its record joins when the migration tags it. Status lives in each record.
-
-- [KI-HARNESS-GOV-087](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-087-evaluate-obscura-browser-runtime.md) - Evaluate Obscura browser runtime
-- [KI-HARNESS-OPS-005](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-005-acquire-ai-sessions.md) - Acquire AI sessions
-- [[KI-ARCADIA-MOD-006-knowledge-acquisition-lifecycle|KI-ARCADIA-MOD-006]] - Knowledge acquisition lifecycle
-- `DOTFILES-UE-035` (chezmoi) - Install WhatsApp spool refresh
-
----
-
-## Ideas
-
-None recorded yet.
-
----
-
-## Sources
-
-Created by KI-ARCADIA-GOV-026 from the theme map of 2026-10-07 (`knowledge-acquisition` theme), refreshed against current record status.
+- The lifecycle note changes `Pillars/`, so it runs through the [[Admin/Operations/Processes/Enactment Process|Enactment Process]].
+- The harness's AI-session acquisition is the work in flight; whether the lifecycle note should lead the remaining acquisition work depends on what that delivery has learnt.
