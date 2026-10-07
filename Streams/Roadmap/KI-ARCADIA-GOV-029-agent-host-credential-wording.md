@@ -47,7 +47,7 @@ Delivered and awaiting Kris's review. Before this record, GDR-KI-ARCADIA-004 and
 - [x] Make the same changes in the hold's exemption section, dropping the now-met identity condition from Order, and update the MEMORY summary.
 - [x] Run the verification below and write the review packet.
 - [x] Extension: reword the GDR's Context, Bounds and Consequences by role, state that there is no fixed review date in the GDR, the hold and MEMORY, and match the hold's Bounds bullet.
-- [ ] Extension: drop the 6 November review from the rollout note and its Archify source, and re-render the SVG with Archify.
+- [x] Extension: drop the 6 November review from the rollout note and its Archify source, and re-render the SVG with Archify.
 
 ## Files touched
 
@@ -96,6 +96,7 @@ The approved boundary: the role-based credential wording, the credential-identit
 - Techne Programme Hold: the Credentials and Term bullets match the GDR; the Order bullet drops the identity condition, which is now met; `updated` advances.
 - MEMORY: the hold summary says the prototype review keeps the exemption instead of naming the review date.
 - Extension: GDR-KI-ARCADIA-004's Context names the island owner where it named Kris, its Bounds name the binding owner as the person who reaches the host, opens sessions and asks for pushes, and its Consequences place the operator tooling in the binding owner's chezmoi source. Its Term bullet, and the hold's, now say there is no fixed review date and that the exemption is revisited when the hold is reshaped; the hold's Bounds bullet matches the GDR, its rollout pointer no longer mentions a review, and MEMORY says there is no fixed review date.
+- Extension, rollout: [[Agent Host Prototype Rollout]] drops the 6 November review. Its stop lane becomes "Stop, change or withdraw", the review node becomes a change or withdrawal through an Enactment record with no fixed review date, the GitHub token expiry reads 90 days (Decision 3), and the credential-identity gate records that the token and Claude login are the binding owner's own. The SVG is re-rendered with Archify `finalize` (workflow, showcase: validate, deliver, check and browser-check pass) and exported from the viewer's SVG export.
 
 ### Verification
 

@@ -19,7 +19,7 @@
           "label": "Agent work in a session Kris opens"
         },
         "messagebus": {
-          "label": "Stop, review or teardown"
+          "label": "Stop, change or teardown"
         },
         "frontend": {
           "visible": false
@@ -48,7 +48,7 @@
     },
     {
       "id": "stop",
-      "label": "Stop and review",
+      "label": "Stop, change or withdraw",
       "variant": "exception"
     }
   ],
@@ -141,7 +141,7 @@
       "col": 2,
       "type": "database",
       "label": "GitHub token",
-      "sublabel": "fine-grained, 30 days",
+      "sublabel": "fine-grained, 90 days",
       "width": 134
     },
     {
@@ -168,9 +168,9 @@
       "lane": "stop",
       "col": 4,
       "type": "messagebus",
-      "label": "GOV-021 review",
-      "sublabel": "scheduled 6 Nov 2026",
-      "tag": "keep, widen or withdraw",
+      "label": "Change or withdraw",
+      "sublabel": "Enactment record",
+      "tag": "no fixed review date",
       "width": 134
     },
     {
@@ -251,7 +251,7 @@
       "id": "e-work-review",
       "from": "agentwork",
       "to": "review",
-      "label": "scheduled review",
+      "label": "owner decides",
       "variant": "dashed",
       "role": "branch"
     },
@@ -271,7 +271,7 @@
         "Operator role: ki-techne-agent-host-operator, account-local",
         "No remote action before acceptance and the hold amendment",
         "No agent creates access or uses AWS credentials of its own",
-        "Credential identity decided before agents work on the host"
+        "GitHub token and Claude login: the binding owner's own"
       ]
     },
     {
@@ -280,7 +280,7 @@
       "items": [
         "Kill switch: stop.sh as agent-host profile, remove the device",
         "Teardown: destroy.sh as admin, then tailnet, tokens, access",
-        "No lapse: stands until Kris changes or withdraws it"
+        "No lapse or review date: stands until the island owner changes it"
       ]
     }
   ]

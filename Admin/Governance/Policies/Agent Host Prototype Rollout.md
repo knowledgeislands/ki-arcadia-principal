@@ -1,6 +1,6 @@
 ---
 note_type: admin/governance/policy
-updated: 2026-10-07T07:15:00Z
+updated: 2026-10-07T21:40:00Z
 author: AI-assisted
 ---
 
@@ -24,11 +24,11 @@ Every step in this lane is Kris's alone. The operator role, `ki-techne-agent-hos
 
 ## First use, then work
 
-Kris connects from Zed through the helper, approves the Claude Code login on the Mac and stores a fine-grained GitHub token that expires after 30 days. Only then does agent work begin: editing, committing and auditing in a session Kris opens, with no push unless Kris asks. The identity that holds the GitHub and model credentials is decided before any agent works on the host.
+Kris connects from Zed through the helper, approves the Claude Code login on the Mac and stores a fine-grained GitHub token that expires after 90 days. Only then does agent work begin: editing, committing and auditing in a session Kris opens, with no push unless Kris asks. The GitHub token and Claude login are the binding owner's own identities, because only the binding owner opens sessions there.
 
-## Stop and review
+## Stop, change or withdraw
 
-The kill switch is available at any time: stop the host with the agent-host profile and remove its tailnet device. The exemption has no automatic lapse: it stands until Kris changes or withdraws it. On 6 November 2026 [[KI-ARCADIA-GOV-021-review-the-agent-host-prototype|KI-ARCADIA-GOV-021]] reviews it, weighing its scope, bounds and cost and whether to widen or withdraw it. Only if Kris withdraws it does teardown remove the stack under the admin profile, then the tailnet entries, the tokens and the operator role. Rotating the GitHub token before it expires is part of operating the host.
+The kill switch is available at any time: stop the host with the agent-host profile and remove its tailnet device. The exemption has no automatic lapse and no fixed review date: it stands until the island owner changes or withdraws it through an Enactment record, and is revisited when the hold is reshaped. The prototype review, [[KI-ARCADIA-GOV-021-review-the-agent-host-prototype|KI-ARCADIA-GOV-021]], kept it as it stands. Only if the island owner withdraws it does teardown remove the stack under the admin profile, then the tailnet entries, the tokens and the operator role. Rotating the GitHub token before it expires is part of operating the host.
 
 ## Source
 
