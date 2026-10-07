@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: state-of-play
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-07T07:25:00Z
+updated_at: 2026-10-07T09:05:00Z
 ---
 
 # state-of-play
@@ -20,7 +20,7 @@ Take stock of all in-flight work across the `kis` Agora (the 21 repositories in 
 
 The scope also covers the seven acquired ChatGPT captures of 2026-10-03 in `+/_ACQUIRE/chatgpt/knowledge-islands/`, which describe the target Techné footprint; they are reviewed alongside the roadmap records, not adopted by this review.
 
-This checkpoint is the single place the review is built up. Every review step and finding is recorded here until it has been routed to its owner. It coordinates the five sibling checkpoints in this directory rather than replacing them.
+This checkpoint is the single place the review is built up. Every review step and finding is recorded here until it has been routed to its owner. It coordinates the six sibling checkpoints in this directory rather than replacing them.
 
 ## Current state
 
@@ -57,13 +57,13 @@ The 36 open Now records are unchanged: harness 23 (18 Ready, 3 Draft, 2 In progr
 
 Acquired ChatGPT captures of 2026-10-03 (`+/_ACQUIRE/chatgpt/knowledge-islands/`), read in full, untouched and not adopted. These are seven focused authored files, not demonstrated complete-conversation acquisition or source-retirement evidence. The held full footprint conflicts below exclude the separately authorised GOV-020 supervised-host subset. Theme mappings are review buckets and confer no canonical ownership:
 
-- `overview`: Human, Rig, Realm and Avatar model, and a first AWS milestone (EC2, K3s, Paperclip, Kitteth, Tailscale, Telegram). `baseline-and-cloud`. Its full-footprint proposal stays held outside the GOV-020 supervised-host subset; touches `TECHNE-TOOLS-OPS-008`, `TECHNE-TOOLS-FAB-001` and `KI-ARCADIA-GOV-020`.
+- `overview`: Human, Rig, Realm and Avatar model, and a first AWS milestone (EC2, K3s, Paperclip, Kitteth, Tailscale, Telegram). `techne`. Its full-footprint proposal stays held outside the GOV-020 supervised-host subset; touches `TECHNE-TOOLS-OPS-008`, `TECHNE-TOOLS-FAB-001` and `KI-ARCADIA-GOV-020`.
 - `conceptual-model`: Human, Rig, Realm and Avatar definitions, territories, Knowledge Landscapes and a Knowledge Realms registry. `territories-and-trades`. Touches `KI-ARCADIA-MOD-003` (geography model) and `KI-ARCADIA-MOD-004` (semantic conventions); vocabulary needs owner reconciliation against accepted architecture.
 - `conceptual-lineage`: the real-world and fictional influences and a rule for recording future ones. Fits no thread (a finding); nearest is `KI-ARCADIA-MOD-003`. No conflict.
-- `design-principles`: thirteen principles (tool-agnostic, FOSS-first, Kubernetes as contract, Realm separate from footprint, Paperclip replaceable, design for reconstruction). `baseline-and-cloud`. Touches [[Engineering Practice]] and the Hold's second prerequisite (what Paperclip supplies); candidate substrate and principles need owner reconciliation.
+- `design-principles`: thirteen principles (tool-agnostic, FOSS-first, Kubernetes as contract, Realm separate from footprint, Paperclip replaceable, design for reconstruction). `techne`. Touches [[Engineering Practice]] and the Hold's second prerequisite (what Paperclip supplies); candidate substrate and principles need owner reconciliation.
 - `avatar-agency-and-access`: Kitteth as Avatar, Operator and Architect authority outside Paperclip, connection modes and auditable delegation. `paperclip-bootstrap-and-recovery`. Conflicts with the Hold (remote privileged management); touches `KI-HARNESS-GOV-144` (delegation).
-- `techne-and-first-footprint`: one EC2 instance with K3s, Paperclip and Kitteth as workloads, and acceptance criteria centred on work surviving the Rig disconnecting. `baseline-and-cloud`. Conflicts with the Hold; overlaps `TECHNE-TOOLS-OPS-008` (host choice) and `TECHNE-TOOLS-FAB-001` (open TCP 443 egress); `KI-ARCADIA-GOV-020` takes only a bounded subset.
-- `open-questions-and-actions`: immediate build actions, a reconstructability inventory, access-model and infrastructure questions, and explicit non-blockers. `baseline-and-cloud`. Its immediate actions conflict with the Hold; overlaps the uncaptured "Techné cloud readiness" record proposed in `baseline-and-cloud` and `TECHNE-TOOLS-OPS-008`.
+- `techne-and-first-footprint`: one EC2 instance with K3s, Paperclip and Kitteth as workloads, and acceptance criteria centred on work surviving the Rig disconnecting. `techne`. Conflicts with the Hold; overlaps `TECHNE-TOOLS-OPS-008` (host choice) and `TECHNE-TOOLS-FAB-001` (open TCP 443 egress); `KI-ARCADIA-GOV-020` takes only a bounded subset.
+- `open-questions-and-actions`: immediate build actions, a reconstructability inventory, access-model and infrastructure questions, and explicit non-blockers. `techne`. Its immediate actions conflict with the Hold; overlaps the uncaptured "Techné cloud readiness" idea kept in `techne` and `TECHNE-TOOLS-OPS-008`.
 
 Still pending from the roadmap-delivery hand-over of 2026-10-06, approved and waiting for Kris's go:
 
@@ -80,7 +80,8 @@ Checkpoint conformance, reported by each owning thread on 2026-10-06. All pass `
 | `territories-and-trades` | Long; proposal and related work held only here | Route proposal and work; shorten snapshot |
 | `estate-factorisation` | 13 untracked items make it a work tracker | Capture through `ki-next` with each owner |
 | `paperclip-bootstrap-and-recovery` | Long; constraints and 11 actions held only here | Route constraints and actions |
-| `baseline-and-cloud` | None outstanding | - |
+| `baseline` | None; reshaped to `delta-evaluation`'s shape on 2026-10-07 | - |
+| `techne` | None; split from `baseline-and-cloud` on 2026-10-07 in the same shape | - |
 | `delta-evaluation` | None; Kris judges it the reference shape | - |
 
 The territory thread's schema proposal and related items need a draft Arcadia work record before its roughly 900-word snapshot is cut. The Paperclip thread's standing constraints need the harness coordination skill or an Arcadia Decision Record; its actions need owner work records before the roughly 1,200-word snapshot gets one resumable next action. These remain proposed fixes, not enacted changes.
@@ -89,7 +90,7 @@ Gaps in the checkpoint standard and audit, raised by those threads: the audit do
 
 **Steps 1 and 2 complete; targeted owner-contract findings.** All 36 open Now records, Done GOV-020 and all seven capture bodies were read in full. The reports are `overnight-harness-review.report.md`, `overnight-arcadia-review.report.md` and `overnight-capture-review.report.md`; `overnight-read-manifest.json` fixes the 37 roadmap source hashes, and the capture report fixes all seven file hashes. No reviewed open record has a completed delivery packet warranting acceptance or prune. Structural audits do not establish truthful readiness. The broader specification review remains step 6.
 
-The following are proposed dispositions, not lifecycle or horizon changes. B = `baseline-and-cloud`; E = `estate-factorisation`; P = `paperclip-bootstrap-and-recovery`; T = `territories-and-trades`; X = no clean fit. A loose mapping to E or T needs an owner decision about theme scope. X does not create a sixth checkpoint.
+The following are proposed dispositions, not lifecycle or horizon changes. B = `baseline`; C = `techne`; E = `estate-factorisation`; P = `paperclip-bootstrap-and-recovery`; T = `territories-and-trades`; X = no clean fit. A loose mapping to E or T needs an owner decision about theme scope. X does not create a further checkpoint. No open harness or Arcadia Now record maps to C; the Techné records live in their own repositories and are listed in `techne`.
 
 | Owner record | Theme | Proposed disposition |
 | --- | --- | --- |
@@ -138,7 +139,7 @@ Material findings for owner review:
 - **Contract choices remain choices.** GOV-134's temporary-write wording conflicts with the cited accepted Git Audit preview's disposable index unless the effect boundary is clarified. OPS-005's browser-incremental proposal conflicts with the current acquisition contract; GOV-087 can evaluate feasibility without silently adopting it. REV-011 must demonstrate current applicable-criterion coverage rather than infer it from a historical run anchor.
 - **Captures do not widen prototype authority.** Keep the existing supervised-host subset; re-sequence held Paperclip, Kitteth, Telegram and unattended continuity. Merge only actual design-principle deltas into existing Engineering Practice; Kubernetes is a candidate mapping, not an automatically adopted portable contract. Reconcile provisional Avatar/Realm vocabulary with ADR-TECHNE-002; multiple manifestations are an ambiguity, not a proven architectural conflict. Lineage fits no existing thread cleanly and has a Philosophy owner, not cloud-readiness ownership.
 - **Do not grow a duplicate backlog.** Reconstruction, privileged access, event attribution, conceptual vocabulary and lineage are proposal seams to merge into precise owners if selected. Registry, federation, historical traversal and multicloud speculation remain later candidates. No new generic cloud-readiness item is needed for the already-owned host subset. OPS-008's host-choice disposition and the GOV-021 dated follow-up are now resolved owner work.
-- **Checkpoint drift remains visible.** `baseline-and-cloud` already records the exemption correctly, but its queue and unresolved host-choice snapshots are stale. Delta is installed and Rig-declared; the Delta checkpoint's absence claim is stale, while no KI trial or repository connection follows and its 13 October re-evaluation decision remains. The territory proposal's wildcard would grant future members new routes, so it is an authority change requiring approval. Several island-model and Tending records fit none of the five themes; do not silently expand the Paperclip thread to contain them.
+- **Checkpoint drift remains visible.** `baseline-and-cloud`'s stale queue and host-choice snapshots were resolved by its 2026-10-07 split into `baseline` and `techne`. Delta is installed and Rig-declared; the Delta checkpoint's absence claim is stale, while no KI trial or repository connection follows and its 13 October re-evaluation decision remains. The territory proposal's wildcard would grant future members new routes, so it is an authority change requiring approval. Several island-model and Tending records fit none of the six themes; do not silently expand the Paperclip thread to contain them.
 
 Proposed first delivery window after Kris releases the review pause: repair the small plans, then complete harness GOV-097, GOV-123, GOV-135 and GOV-108 serially; run Arcadia ECO-009, EXT-003 and OPS-007 as bounded evidence and reconciliation work. Keep FND-026/GOV-109/GOV-117 and GOV-094/GOV-125 as their own dependency chains. Do not include owner-gated live work or the full captured cloud footprint implicitly. The table and sequence require Kris's approval before routing or implementation.
 
@@ -148,8 +149,8 @@ Proposed first delivery window after Kris releases the review pause: repair the 
 - Other work across the Knowledge Islands repositories is paused while the review runs.
 - Every prune request needs Kris's express authorisation per group.
 - chezmoi joins the review scope alongside the `kis` Agora. Linear and TickTick are out of scope.
-- `baseline-and-cloud` keeps its name. `delta-evaluation` is the reference shape for a well-organised checkpoint.
-- The review's themes are the checkpoint threads: `baseline-and-cloud`, `delta-evaluation`, `estate-factorisation`, `paperclip-bootstrap-and-recovery` and `territories-and-trades`. Every open record maps to one of them; a record that fits none is itself a finding.
+- Kris decided on 2026-10-07 to split `baseline-and-cloud` into `baseline` (the rollout baseline) and `techne` (the move into the Techné footprint). `delta-evaluation` is the reference shape for a well-organised checkpoint.
+- The review's themes are the checkpoint threads: `baseline`, `techne`, `delta-evaluation`, `estate-factorisation`, `paperclip-bootstrap-and-recovery` and `territories-and-trades`. Every open record maps to one of them; a record that fits none is itself a finding.
 - The six smaller roadmaps were cleared first (deliver what was deliverable, defer what waits on this review, report captures without adopting), so only the harness and Arcadia remain for the detailed review. Kris approved the dispositions of records outside `now` and the git cleanup of merged, clean state on 2026-10-06.
 - After the roadmaps are down, every specification across the projects is reviewed with Kris to confirm it does what Kris intends.
 - On 2026-10-07 Kris accepted `DOTFILES-UE-066`, `DOTFILES-UE-067` and `TECHNE-TOOLS-FAB-001`, then pruned them himself; abandoned the git-audit lane; approved the leftovers cleanup keeping only harness `KIS-70` and `tools-ki` `KIS-46`; and approved capturing the background-delegation approach as a chezmoi interim plus `KI-HARNESS-GOV-144`. Kris handles the chezmoi interim's review and apply himself, and the `GOV-144` scope decision is reserved to him.
@@ -162,7 +163,7 @@ Proposed first delivery window after Kris releases the review pause: repair the 
 - This record and four sibling checkpoints (step 0 refresh); `delta-evaluation` was checked and needed no change.
 - Acceptance, prune, clearance, disposition and capture commits in `ki-agentic-harness`, `ki-arcadia-principal`, `ki-website`, `ki-specifications`, `ki-techne-harness`, `tools-ki`, `homebrew-tap` and chezmoi, all pushed.
 - GOV-020 enactment and acceptance, its hold and GDR owners, and the GOV-021 reservation and Triage capture reached the owning repository. Parallel owner work also accepted UE-068 and OPS-009 and closed OPS-008 as merged; all four Done records are retained.
-- `KI-ARCADIA-GOV-023` amended the hold, GDR-KI-ARCADIA-004 (retitled and renamed), the Decisions, Policies and MEMORY entries, the rollout and concept-map diagrams, GOV-021, and this record and `baseline-and-cloud`.
+- `KI-ARCADIA-GOV-023` amended the hold, GDR-KI-ARCADIA-004 (retitled and renamed), the Decisions, Policies and MEMORY entries, the rollout and concept-map diagrams, GOV-021, and this record and `baseline-and-cloud` (since split into `baseline` and `techne`).
 - This review updates only this checkpoint, with no push, roadmap disposition, sibling reshaping or live mutation.
 
 ## Open questions
@@ -170,7 +171,7 @@ Proposed first delivery window after Kris releases the review pause: repair the 
 - `KI-HARNESS-GOV-144`: which skill owns routine background delegation? Only Kris can clear the gate.
 - Agent host: it is deployed and in use, but Arcadia holds no evidence that the named-destination egress bound and the GitHub and model API credential identity are settled; confirm them in the owning records. GOV-021 is the scheduled 6 November review of the standing exemption.
 - `BREW-012` and `KI-TOOL-CLI-109`: adopt, and when? `KIS-46` still needs rebase, re-verification and review.
-- `DOTFILES-UE-065`: approve a bounded, sanitised live trace of the mcporter bridge (no restart) once `baseline-and-cloud` settles?
+- `DOTFILES-UE-065`: approve a bounded, sanitised live trace of the mcporter bridge (no restart) once `techne` settles?
 - `DOTFILES-UE-066`: raise the consumer handoff to `apps-observatory` for its unscoped reads?
 - `KI-WEB-SITE-039`: confirm or change the landing-page choices taken under delegated autonomy.
 - `KI-SPEC-RGV-001`: confirm the delegated-autonomy choices; split the broken manifest validation command into its own small record now?

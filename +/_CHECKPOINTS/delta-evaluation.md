@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: delta-evaluation
 state: active
 created_at: 2026-10-06T20:30:00Z
-updated_at: 2026-10-06T20:50:00Z
+updated_at: 2026-10-07T09:05:00Z
 ---
 
 # delta-evaluation
@@ -40,7 +40,7 @@ This record replaces the loose incoming note `+/delta-paperclip-assessment-2026-
 
 ## Open questions
 
-- Is a trial worth running now, given the [Techne Programme Hold](<../../Admin/Governance/Policies/Techne Programme Hold.md>) on remote agent execution? Delta's hosted threads and server-side storage need checking against that policy before any trial; `baseline-and-cloud` tracks the hold prerequisites and decision.
+- Is a trial worth running now, given the [Techne Programme Hold](<../../Admin/Governance/Policies/Techne Programme Hold.md>) on remote agent execution? Delta's hosted threads and server-side storage need checking against that policy before any trial; `techne` tracks the hold prerequisites and decision.
 - Which non-sensitive test repository and bounded delivery would exercise the criteria without exposing private content?
 - Should the assessment be promoted into `Resources` as tool reference, or does it only become durable as part of an adoption or rejection decision?
 
