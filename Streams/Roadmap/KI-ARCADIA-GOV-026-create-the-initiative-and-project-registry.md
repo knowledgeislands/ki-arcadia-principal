@@ -5,12 +5,12 @@ area: GOV
 title: Create the Initiative and Project registry
 theme: governance
 horizon: now
-status: ready
+status: awaiting-review
 blocks: []
 blocked_by: []
-baseline_ref: null
-created_at: 2026-10-07T12:45:00Z
-updated_at: 2026-10-07T12:45:00Z
+baseline_ref: 0957cf80670fb5bb47c0dd2c46c3a51532c79fdb
+created_at: 2026-10-07T12:20:00Z
+updated_at: 2026-10-07T12:35:32Z
 ---
 
 # Create the Initiative and Project Registry
@@ -115,12 +115,12 @@ Kept until Kris accepts this record. Then remove, by explicit owner approval: `+
 
 ## Steps
 
-- [ ] Create `Streams/Projects/Projects.md` and `Streams/Projects/Initiatives.md`.
-- [ ] Create the ten Project notes, seeding the five checkpoint-backed notes from their checkpoints and linking `agent-host` to `techne.md`.
-- [ ] Name each Project's open records from the theme map, refreshed against current record status, omitting records now done.
-- [ ] Add a Projects section to `Streams/Streams.md`.
-- [ ] Run `ki repo audit --repo .` and `rumdl check`; check for en-dashes and em-dashes in added lines.
-- [ ] Complete the review packet and move this record to `awaiting-review`.
+- [x] Create `Streams/Projects/Projects.md` and `Streams/Projects/Initiatives.md`.
+- [x] Create the ten Project notes, seeding the five checkpoint-backed notes from their checkpoints and linking `agent-host` to `techne.md`.
+- [x] Name each Project's open records from the theme map, refreshed against current record status, omitting records now done.
+- [x] Add a Projects section to `Streams/Streams.md`.
+- [x] Run `ki repo audit --repo .` and `rumdl check`; check for en-dashes and em-dashes in added lines.
+- [x] Complete the review packet and move this record to `awaiting-review`.
 
 ## Files touched
 
@@ -173,6 +173,46 @@ Kris Brown, 2026-10-07: approved the roadmap model's recommendations, including 
 ### Capture, adoption and planning
 
 Captured, adopted into Now and planned on 2026-10-07 under the outcome authority above. Choices made in planning: the Initiatives index sits in `Streams/Projects/`; note types follow `streams/...` notation; Project notes list open records without status; the four Projects without checkpoints get finite outcomes for Kris to confirm.
+
+## Review
+
+### Delivered
+
+The approved boundary: `Streams/Projects/` with ten Project notes, `Projects.md` and `Initiatives.md`, and a Projects section in `Streams/Streams.md`. No checkpoint, member record or canonical-zone note changed. Baseline `0957cf80670fb5bb47c0dd2c46c3a51532c79fdb` (the ready plan); delivery is the commit that moves this record to `awaiting-review`.
+
+### Change Summary
+
+- `Streams/Projects/Projects.md`: new folder index - Overview plus one section per child.
+- `Streams/Projects/Initiatives.md`: new - the four Initiatives with their Projects, the projectless standards-upkeep (15) and workstation-hygiene (8) records, and three records the theme map left unclassified (harness FND-014, OPS-003, RTP-002).
+- Five checkpoint-seeded Project notes: `baseline-rollout` (from `d9931d4`), `estate-factorisation`, `paperclip-bootstrap-and-recovery`, `delta-evaluation` (from `53633b2`) and `territories-and-trades` (from `87e160f`). Each carries the checkpoint's objective as Outcome, its current state, decision and next step as Update, its decisions made as Constraints, and its open questions as Ideas or open questions.
+- `agent-host`: links to the Techne checkpoint for its update and copies nothing from it.
+- Four Projects without checkpoints - `island-model-and-tending`, `knowledge-acquisition`, `specifications` and `website` - have finite outcomes drawn from their records, for Kris to confirm.
+- Open records per Project from the theme map, refreshed against current status, with done records omitted: baseline 5, estate 9, Paperclip 11, Techne 3, island model 12, acquisition 4, territories 2, specifications 3, website 2, Delta none.
+- `Streams/Streams.md`: a Projects section.
+
+### Verification
+
+- `ki repo audit --repo .` (24 skills): PASS=23, WARN=1, FAIL=0. The warning is `ki-repo-kb-streams` STREAM-1, "unexpected Projects" - the known `Projects/` divergence the parallel harness record closes.
+- `bunx rumdl check Streams/`: no issues.
+- No en-dash or em-dash in any added or changed line.
+- Every wikilink and relative link in the new notes resolves. Four Project slugs share a basename with their checkpoints until those are removed, so their links use `[[Projects/<slug>|<slug>]]`.
+- Every Project in the model's section 3 has exactly one note; standards upkeep and workstation hygiene are not Projects.
+- `git status` before commit showed only this record, `Streams/Streams.md` and `Streams/Projects/`.
+
+### Outstanding concerns
+
+- **Finite outcomes and health are judgements.** The outcomes of the four non-checkpoint Projects and every health line are for Kris to confirm; island model and acquisition carry no health call.
+- **Note-type names are provisional.** `streams/project`, `streams/initiatives` and `streams/index` precede the harness schema; the migration conforms them if the schema differs. `Streams/Streams.md` itself uses `stream-zone`.
+- **Paperclip constraints have no other home.** Several exist only in the checkpoint and now this note; the note records the question of their durable owner.
+- **Disambiguated links.** Once the checkpoints are removed, the `[[Projects/<slug>|<slug>]]` links can shorten to `[[<slug>]]`.
+
+### Post-change review
+
+The goal is met: the registry exists with exactly the model's Projects and Initiatives, each checkpoint's content is carried into its Project, and records are named without status. Scope held to `Streams/`. Regression risk is low: one existing note gains a section. This review is the implementing agent's own rereading against the model, decisions, checkpoints and audits, not an independent reviewer.
+
+### Mini recap
+
+GOV-026 created Arcadia's Initiative and Project registry in `Streams/Projects/`: ten Project notes, a Projects index and an Initiatives index, seeded from five checkpoints and the theme map. After acceptance, Kris can approve removing the five seeded checkpoints; `techne.md` and `state-of-play.md` stay.
 
 ## Governance
 
