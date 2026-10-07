@@ -11,7 +11,7 @@ blocks: []
 blocked_by: []
 baseline_ref: 2a83eb526f15c8fc2b590aba6b2ad2c2ffde7a1b
 created_at: 2026-10-07T20:07:41Z
-updated_at: 2026-10-07T21:47:05Z
+updated_at: 2026-10-07T22:06:43Z
 ---
 
 # Territory selection cut-over
@@ -83,9 +83,13 @@ Removed only `[skills.ki-agora]` from `.ki.toml`; updated Charter, Known Lands, 
 
 Focused work, Streams, Decision Record, checkpoint and principal audits and native whole audit pass against the integrated isolated harness. Real offline TypeScript and Knip executables pass. Markdown and parsed TOML checks pass, preserving exact membership order, ki, KIS, identity, canonical references and all 11 frozen design files. Unchanged committed caller parity and defaults evidence is retained.
 
+The coordinator cherry-picked only the owned retirement commit onto fetched published main. Foreign unpublished GOV-029 ancestors remain exclusively in their original history and checkout. The final whole and focused registered-context audits and supporting Markdown gate pass against the final harness. Parsed declarations preserve all 21 ordered identities, ki and KIS; the frozen supporting files retain their current relocated paths.
+
 ### Outstanding concerns
 
 No required gate remains failing. Existing whole-audit warnings are recorded separately and remain outside this unit. Coordinator integration, final publication and Kris's human acceptance remain outstanding.
+
+Publication is held with the tools pending the KI clean-install harness pin authority addition. No foreign history, owner edits or review-pending records have been changed or pruned.
 
 ### Post-change review
 

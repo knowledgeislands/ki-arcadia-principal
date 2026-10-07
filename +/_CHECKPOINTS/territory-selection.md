@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: territory-selection
 state: active
 created_at: 2026-10-07T21:34:34Z
-updated_at: 2026-10-07T21:47:05Z
+updated_at: 2026-10-07T22:06:43Z
 ---
 
 # territory-selection
@@ -14,7 +14,7 @@ Finish the approved territory-derived repository selection cut-over and retire t
 
 ## Current state
 
-The shared contract and KI/mgit pilots are committed. Registered selection evidence preserves all 21 canonical identities, ordered roots, filters, parity and native defaults. The isolated harness includes the published classification prerequisite, and both retirement units have passing offline repository checks and complete awaiting-review packets. Local retirement commits are the delivery boundary for coordinator integration.
+All four isolated source candidates are integrated from fetched published main with only task-owned history. Final source and registered-context audits pass against the deliberately selected final harness. The combined KI producer preserves published native agent functionality; mgit prepares 0.16.0 and passes all 89 caller tests. Read-only real-estate checks preserve parity for territory ki filtered by tools- and the estate filtered by mcp-. All four records remain awaiting review. Nothing has been published by this integration run; immutable releases, user installation and downstream handoffs remain outstanding.
 
 ## Decisions made
 
@@ -26,8 +26,8 @@ The shared contract and KI/mgit pilots are committed. Registered selection evide
 
 ## Open questions
 
-None within the approved retirement scope. Coordinator integration and publication remain outstanding; human acceptance is separate.
+The built-in KI clean-install pin still acquires a harness from before the territory contract. Updating src/core/storage/registry.ts and downloading the exact published harness commit archive for its digest lie outside the immutable packet paths and named remote calls. The coordinator has requested this narrow authority addition under KI-TOOL-CLI-114. No publication proceeds while that release-readiness boundary is unresolved; human acceptance remains separate.
 
 ## Next step
 
-The coordinator integrates the verified local retirement commits and reruns combined publication gates. Publish only through the approved integration-release unit. Kris reviews the canonical packets for KI-HARNESS-GOV-156 and KI-ARCADIA-GOV-028; no acceptance or pruning is inferred.
+Resolve the exact harness-pin authority addition, then reverify the changed candidate and complete the approved fast-forward publication, immutable release/install, tap and installed parity gates. Retain the committed candidates and review records; no acceptance or pruning is inferred.
