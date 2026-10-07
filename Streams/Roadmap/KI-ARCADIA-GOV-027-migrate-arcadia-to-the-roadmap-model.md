@@ -7,13 +7,12 @@ kind: deliver
 purpose: governance
 project: roadmap-model
 component: streams
-horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: ff15cd91cb4d1f74dd38d941f90e7d021cbdd333
 created_at: 2026-10-07T14:03:00Z
-updated_at: 2026-10-07T14:12:00Z
+updated_at: 2026-10-07T14:14:00Z
 ---
 
 # Migrate Arcadia to the Roadmap Model
@@ -165,8 +164,16 @@ The goal is met: the Initiatives have their own notes and Review, the rollout ha
 
 GOV-027 moved Arcadia onto the roadmap model: an Initiatives folder with four reviewed Initiative notes, a `roadmap-model` Project, classified records and Activities, a declared component vocabulary, and five theme checkpoints retired. GOV-010 waits for its target record, and the Techne checkpoint needs one link fixed by its thread.
 
+## Done
+
+Accepted 2026-10-07 by Kris Brown on the review packet above.
+
 ## Discussion
 
 ### Capture, adoption and planning
 
 Captured, adopted into Now and planned on 2026-10-07 under decision 6: "you can just carry it all the way through". The follow-up record exists because GOV-026's delivered layout predates decision 8, and its review evidence should stay true to what it delivered.
+
+### Acceptance under the rollout grant
+
+Closed on 2026-10-07 under decision 6 of the roadmap-model rollout, which covers this record as part of the rollout: "you can just carry it all the way through, this is a really good example of thought out work." The review evidence was rechecked against the final schema before closure. The two concerns that name further work are owned elsewhere: GOV-010 closes when the estate factorisation record exists, and the Techne thread owns its checkpoint's link.

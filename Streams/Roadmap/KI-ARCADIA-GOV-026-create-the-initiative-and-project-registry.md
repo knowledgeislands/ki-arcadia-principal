@@ -7,13 +7,12 @@ kind: deliver
 purpose: governance
 project: roadmap-model
 component: streams
-horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: 0957cf80670fb5bb47c0dd2c46c3a51532c79fdb
 created_at: 2026-10-07T12:20:00Z
-updated_at: 2026-10-07T14:08:03Z
+updated_at: 2026-10-07T14:14:00Z
 ---
 
 # Create the Initiative and Project Registry
@@ -171,11 +170,9 @@ None beyond this record. Tagging member records is the migration phase.
 
 Kris Brown, 2026-10-07: approved the roadmap model's recommendations, including the Arcadia registry in `Streams/Projects/`, and asked for the rollout "ASAP". That approval is the outcome authority for capture, adoption, planning and delivery of this record to `awaiting-review`. Acceptance stays with Kris.
 
-## Discussion
+## Governance
 
-### Capture, adoption and planning
-
-Captured, adopted into Now and planned on 2026-10-07 under the outcome authority above. Choices made in planning: the Initiatives index sits in `Streams/Projects/`; note types follow `streams/...` notation; Project notes list open records without status; the four Projects without checkpoints get finite outcomes for Kris to confirm.
+This roadmap record adheres to the [[Admin/Operations/Processes/Enactment Process|Enactment Process]]. Move content to `Admin/`, `Pillars/`, or `Resources/` only on user approval of a `ready` record.
 
 ## Review
 
@@ -217,6 +214,18 @@ The goal is met: the registry exists with exactly the model's Projects and Initi
 
 GOV-026 created Arcadia's Initiative and Project registry in `Streams/Projects/`: ten Project notes, a Projects index and an Initiatives index, seeded from five checkpoints and the theme map. After acceptance, Kris can approve removing the five seeded checkpoints; `techne.md` and `state-of-play.md` stay.
 
-## Governance
+## Done
 
-This roadmap record adheres to the [[Admin/Operations/Processes/Enactment Process|Enactment Process]]. Move content to `Admin/`, `Pillars/`, or `Resources/` only on user approval of a `ready` record.
+Accepted 2026-10-07 by Kris Brown on the review packet above.
+
+## Discussion
+
+### Capture, adoption and planning
+
+Captured, adopted into Now and planned on 2026-10-07 under the outcome authority above. Choices made in planning: the Initiatives index sits in `Streams/Projects/`; note types follow `streams/...` notation; Project notes list open records without status; the four Projects without checkpoints get finite outcomes for Kris to confirm.
+
+### Acceptance under the rollout grant
+
+Closed on 2026-10-07 under decision 6 of the roadmap-model rollout (`~/.local/state/ki/state-of-play/design/decisions.md`), in which Kris granted outcome authority for the whole rollout through to `done`: "you can just carry it all the way through, this is a really good example of thought out work." The grant covers this record as a member of the `roadmap-model` Project. The review evidence was rechecked against the final schema before closure: the record now carries `kind`, `purpose`, `project` and `component`, and its Review sits immediately before Discussion.
+
+Decision 8, taken after this record was delivered, moved the Initiatives index out of `Streams/Projects/` into its own `Streams/Initiatives/` folder. [[KI-ARCADIA-GOV-027-migrate-arcadia-to-the-roadmap-model|KI-ARCADIA-GOV-027]] carries that change, the `roadmap-model` Project and the removal of the five seeded checkpoints. It also settles two outstanding concerns above: the note types now follow the harness schema, and the disambiguated links are shortened. The finite outcomes and health judgements remain for Kris to confirm in each Project note, and the owner of the Paperclip constraints remains an open question in [[paperclip-bootstrap-and-recovery]].
