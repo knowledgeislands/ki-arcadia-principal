@@ -7,12 +7,12 @@ kind: deliver
 project: agent-host
 component: techne
 horizon: now
-status: ready
+status: awaiting-review
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: b6bef4556ffa34be2304185bb2a1cba5be49c405
 created_at: 2026-10-07T08:49:50Z
-updated_at: 2026-10-07T14:08:03Z
+updated_at: 2026-10-07T14:49:12Z
 ---
 
 # Model Agent Hosts as Recipes and Bindings
@@ -203,15 +203,15 @@ The standing exemption ([[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-
 
 Arcadia, at delivery:
 
-- [ ] Amend [[ADR-TECHNE-003-techne-implementation-ownership|ADR-TECHNE-003]] in place as set out in Design, advance its `date`, and update its gloss in the [[Admin/Governance/Decisions/Decisions|Decisions]] index if the decision it names has widened.
-- [ ] Add the recipe, binding, provider and footprint vocabulary to `Pillars/Engineering Practice/MEMORY.md` beside the agent-host entry, pointing at ADR-TECHNE-003.
+- [x] Amend [[ADR-TECHNE-003-techne-implementation-ownership|ADR-TECHNE-003]] in place as set out in Design, advance its `date`, and update its gloss in the [[Admin/Governance/Decisions/Decisions|Decisions]] index if the decision it names has widened.
+- [x] Add the recipe, binding, provider and footprint vocabulary to `Pillars/Engineering Practice/MEMORY.md` beside the agent-host entry, pointing at ADR-TECHNE-003.
 
 Handoff items, each recording this record as origin and placed only under the cross-repository choreography in `AGENTS.md`; the receiver owns priority, plan and execution:
 
-- [ ] **H1, `ki-techne-harness`: parameterise the `direct-host` recipe.** Add `recipes/direct-host/recipe.toml` with `providers = ["aws"]`, provider-neutral `[paths]` and `[parameters]` for setup and host status, and a `[providers.aws]` section for the stack, provision, stop and destroy scripts, their parameters and resource selectors; turn the literal host name into a stack parameter defaulting to `ki-techne-agent-host`; read the AWS values (tag, stack, parameter prefix, profiles, account, region) from environment variables in `provision.sh`, `destroy.sh` and `stop.sh`, and the provider-neutral values (host name, repositories, workspace) in `setup.sh` and `status.sh`, so those two need nothing AWS-specific; make the personal instruction file list configurable; update the runbook. Acceptance: offline template and script checks; a manifest check that every binding field in the hard-coding table is declared once, as provider-neutral or under `[providers.aws]`; `setup.sh` and `status.sh` run with no AWS variable set; and Kris's no-change change set for the first binding. Placed as `TECHNE-TOOLS-OPS-012` in `ki-techne-harness`, Now and Ready; it neither blocks nor is blocked by this record or H2.
-- [ ] **H2, `tools-techne`: recipe, binding and provider commands.** The binding loader and `techne/host-binding/v1` schema, with exactly one provider table naming the provider and no `provider` key; a provider-adapter interface for `start`, `stop`, `status` and `teardown`, with the AWS adapter as its only implementation and today's `aws ec2` calls moved behind it; `connect` and `setup` provider-neutral; explicit to change, with `--host` required by `setup`, `start`, `stop` and `teardown` and the selection order for `status`, `list`, `connect` and `recipe list|show`; `techne recipe list|show`, `techne host list|add`, `status --all`; the controller target in `config.toml`'s `[controller.aws]` table; the provider options as in the table above, with no compatibility path for the old names, and with help, completion, manual, guide and changelog; replacing `TAG_VALUE`, `AGENT_HOST_NAME`, `OPERATOR_ROLE` and the host defaults with the selected binding, and passing binding values to the harness scripts, with the resolved profile and region in `AWS_PROFILE` and `AWS_REGION`. Acceptance: tests without AWS, SSH or Tailscale cover each selection step, including one binding and no default (selected), several and no default (refused with the list), an unknown name (refused), and each of `setup`, `start`, `stop` and `teardown` without `--host` - with and without `--dry-run`, with `TECHNE_HOST` and `default_host` set and with one binding - refused with exit 2; each provider option overrides its field for a host and for the controller target, and is refused for a stub-provider binding, for `status --all` and, for `--aws-operator-profile`, for the controller target; each old option name meets the ordinary unknown-option error with exit 2 and no pointer, and `TECHNE_HOST_PROFILE`, `EXPECTED_AWS_ACCOUNT` and `CONTROLLER_STACK_NAME` have no effect; `--aws-profile` and `--aws-region` resolve flag, then provider table, then ambient `AWS_PROFILE` or `AWS_REGION`, and refuse when all three are absent, and the resolved values reach every AWS call and harness script as `AWS_PROFILE` and `AWS_REGION`; an ambient profile in another account is refused by the account guard and, for host commands, by the operator-role guard; with no binding file a host command refuses and names `techne host add`, and with no `[controller.aws]` table a controller command refuses and names `config.toml`; a second fixture binding on a stub provider proves dispatch, so nothing outside the AWS adapter imports AWS code; a binding with no provider table, two provider tables, a provider table the recipe does not support or a `provider` key is refused; no built-in host or controller default remains. Placed as `TECHNE-TOOL-CLI-005` in `tools-techne`, Now and Ready; it neither blocks nor is blocked by this record or H1. It is built in parallel with H1 against this record's schema, using manifest fixtures, and integrated against H1's delivered manifest before release; its release and H3's apply happen together.
-- [ ] **H3, chezmoi: render Kris's binding.** Render `~/.config/techne/config.toml` (`default_host = "agent-host"` and the `[controller.aws]` table) and `~/.config/techne/hosts/agent-host.toml` as above, with a test pinning their values against the AWS profiles and SSH entry chezmoi already manages. Because the binding ships with the CLI, H3 is delivered and applied together with the H2 release, Kris applying it after reviewing `chezmoi diff`; `techne host add agent-host --recipe direct-host` remains the manual fallback. Placed directly in the chezmoi repository's roadmap on Kris's instruction, since chezmoi is not in the choreography list, as `DOTFILES-UE-070`, Now and Ready; it neither blocks nor is blocked by this record. Retiring the `techne-agent-host` helper is not part of H3: `DOTFILES-UE-069`, awaiting review, already does it.
-- [ ] Record each placed item's identifier here, with reciprocal `blocks` / `blocked by` wording only where the receiver marks a genuine prerequisite: `TECHNE-TOOLS-OPS-012` (H1), `TECHNE-TOOL-CLI-005` (H2) and `DOTFILES-UE-070` (H3), none blocking or blocked.
+- [x] **H1, `ki-techne-harness`: parameterise the `direct-host` recipe.** Add `recipes/direct-host/recipe.toml` with `providers = ["aws"]`, provider-neutral `[paths]` and `[parameters]` for setup and host status, and a `[providers.aws]` section for the stack, provision, stop and destroy scripts, their parameters and resource selectors; turn the literal host name into a stack parameter defaulting to `ki-techne-agent-host`; read the AWS values (tag, stack, parameter prefix, profiles, account, region) from environment variables in `provision.sh`, `destroy.sh` and `stop.sh`, and the provider-neutral values (host name, repositories, workspace) in `setup.sh` and `status.sh`, so those two need nothing AWS-specific; make the personal instruction file list configurable; update the runbook. Acceptance: offline template and script checks; a manifest check that every binding field in the hard-coding table is declared once, as provider-neutral or under `[providers.aws]`; `setup.sh` and `status.sh` run with no AWS variable set; and Kris's no-change change set for the first binding. Placed as `TECHNE-TOOLS-OPS-012` in `ki-techne-harness`, Now and Ready; it neither blocks nor is blocked by this record or H2.
+- [x] **H2, `tools-techne`: recipe, binding and provider commands.** The binding loader and `techne/host-binding/v1` schema, with exactly one provider table naming the provider and no `provider` key; a provider-adapter interface for `start`, `stop`, `status` and `teardown`, with the AWS adapter as its only implementation and today's `aws ec2` calls moved behind it; `connect` and `setup` provider-neutral; explicit to change, with `--host` required by `setup`, `start`, `stop` and `teardown` and the selection order for `status`, `list`, `connect` and `recipe list|show`; `techne recipe list|show`, `techne host list|add`, `status --all`; the controller target in `config.toml`'s `[controller.aws]` table; the provider options as in the table above, with no compatibility path for the old names, and with help, completion, manual, guide and changelog; replacing `TAG_VALUE`, `AGENT_HOST_NAME`, `OPERATOR_ROLE` and the host defaults with the selected binding, and passing binding values to the harness scripts, with the resolved profile and region in `AWS_PROFILE` and `AWS_REGION`. Acceptance: tests without AWS, SSH or Tailscale cover each selection step, including one binding and no default (selected), several and no default (refused with the list), an unknown name (refused), and each of `setup`, `start`, `stop` and `teardown` without `--host` - with and without `--dry-run`, with `TECHNE_HOST` and `default_host` set and with one binding - refused with exit 2; each provider option overrides its field for a host and for the controller target, and is refused for a stub-provider binding, for `status --all` and, for `--aws-operator-profile`, for the controller target; each old option name meets the ordinary unknown-option error with exit 2 and no pointer, and `TECHNE_HOST_PROFILE`, `EXPECTED_AWS_ACCOUNT` and `CONTROLLER_STACK_NAME` have no effect; `--aws-profile` and `--aws-region` resolve flag, then provider table, then ambient `AWS_PROFILE` or `AWS_REGION`, and refuse when all three are absent, and the resolved values reach every AWS call and harness script as `AWS_PROFILE` and `AWS_REGION`; an ambient profile in another account is refused by the account guard and, for host commands, by the operator-role guard; with no binding file a host command refuses and names `techne host add`, and with no `[controller.aws]` table a controller command refuses and names `config.toml`; a second fixture binding on a stub provider proves dispatch, so nothing outside the AWS adapter imports AWS code; a binding with no provider table, two provider tables, a provider table the recipe does not support or a `provider` key is refused; no built-in host or controller default remains. Placed as `TECHNE-TOOL-CLI-005` in `tools-techne`, Now and Ready; it neither blocks nor is blocked by this record or H1. It is built in parallel with H1 against this record's schema, using manifest fixtures, and integrated against H1's delivered manifest before release; its release and H3's apply happen together.
+- [x] **H3, chezmoi: render Kris's binding.** Render `~/.config/techne/config.toml` (`default_host = "agent-host"` and the `[controller.aws]` table) and `~/.config/techne/hosts/agent-host.toml` as above, with a test pinning their values against the AWS profiles and SSH entry chezmoi already manages. Because the binding ships with the CLI, H3 is delivered and applied together with the H2 release, Kris applying it after reviewing `chezmoi diff`; `techne host add agent-host --recipe direct-host` remains the manual fallback. Placed directly in the chezmoi repository's roadmap on Kris's instruction, since chezmoi is not in the choreography list, as `DOTFILES-UE-070`, Now and Ready; it neither blocks nor is blocked by this record. Retiring the `techne-agent-host` helper is not part of H3: `DOTFILES-UE-069`, awaiting review, already does it.
+- [x] Record each placed item's identifier here, with reciprocal `blocks` / `blocked by` wording only where the receiver marks a genuine prerequisite: `TECHNE-TOOLS-OPS-012` (H1), `TECHNE-TOOL-CLI-005` (H2) and `DOTFILES-UE-070` (H3), none blocking or blocked.
 
 ## Files touched
 
@@ -238,11 +238,11 @@ Handoff items, each recording this record as origin and placed only under the cr
 
 ## Dependencies / blocks
 
-No local `blocks` or `blocked_by`. All three handoff items are placed, each Now and Ready, none blocking or blocked by this record or one another:
+No local `blocks` or `blocked_by`. All three handoff items are delivered, none blocking or blocked by this record or one another:
 
-- H1: `TECHNE-TOOLS-OPS-012` in `ki-techne-harness`.
-- H2: `TECHNE-TOOL-CLI-005` in `tools-techne`.
-- H3: `DOTFILES-UE-070` in chezmoi.
+- H1: `TECHNE-TOOLS-OPS-012` in `ki-techne-harness`, delivered and in acceptance.
+- H2: `TECHNE-TOOL-CLI-005` in `tools-techne`, accepted at `a720c21`.
+- H3: `DOTFILES-UE-070` in chezmoi, accepted at `18a447c`.
 
 Order: H1 and H2 are built in parallel against this record's schema; H2 is integrated against H1's delivered manifest before release; H2's release and H3's apply happen together. These are cross-repository sequencing conditions, not recorded dependencies. No decision remains open.
 
@@ -282,6 +282,47 @@ Answered by Kris, 2026-10-07 about 11:45 CEST:
 8. **Ship the binding with the CLI** (about 14:50 CEST). No built-in defaults: host commands refuse without a binding. H3 is delivered and applied together with the H2 release, so there is no gap, and `techne host add agent-host --recipe direct-host` remains the manual fallback. This brings H3's placement forward from after the H2 release to now.
 
 No question remains open.
+
+## Review
+
+### Delivered
+
+Arcadia's part of the recipe and binding model, within the approved boundary: the amended Decision Record, the Engineering Practice vocabulary and the three handoff items, now delivered in their receiving repositories. Baseline `b6bef45`; the amendment landed in `38f0cec`. No AWS, Tailscale or other remote change was made by this record, and no second binding, provider or recipe exists outside offline test fixtures.
+
+- [[ADR-TECHNE-003-techne-implementation-ownership|ADR-TECHNE-003]] is amended in place, dated 2026-10-07. It records the recipe, binding, provider and footprint vocabulary and where each part lives: recipes, provider sections, stacks and provider operations in `ki-techne-harness`; the grammar, binding loader, adapter interface and dispatch, and each adapter's lifecycle calls in `tools-techne`; bindings and the controller target as per-person configuration outside both, Kris's rendered by chezmoi. It cites ADR-TECHNE-001 for provider neutrality, states no selection order, schema field or hold authority, and no longer carries `shared_record`: Arcadia holds the only live copy and the archived `ki-techne-principal` copy is historical evidence.
+- H1 `TECHNE-TOOLS-OPS-012` (`ki-techne-harness`): the `direct-host` recipe manifest and parameterised scripts, delivered at `b37b16c` and `f990110` and in acceptance.
+- H2 `TECHNE-TOOL-CLI-005` (`tools-techne`): recipe, binding and provider commands with no built-in defaults, accepted at `a720c21`.
+- H3 `DOTFILES-UE-070` (chezmoi): Kris's `config.toml` and `hosts/agent-host.toml`, accepted at `18a447c`.
+
+Kris's live checks of the released CLI with the applied binding passed, reported by Kris on 2026-10-07.
+
+### Change Summary
+
+- `Admin/Governance/Decisions/ADR-TECHNE-003-techne-implementation-ownership.md`: Context gains the single-host problem; Decision gains the four terms, the ownership of the model, per-person configuration and provider neutrality; Consequences gain multiple bindings and the absence of hold authority; the closing paragraph names Arcadia's copy as the only live one; `date` advances to 2026-10-07 and `shared_record` is removed; References gain this record and the reference dashes become ASCII hyphens.
+- `Admin/Governance/Decisions/Decisions.md`: the entry list is unchanged, since it carries no gloss; the TECHNE paragraph no longer claims every retained copy is identical, naming ADR-TECHNE-003's archived copy as historical evidence. Deviation: the plan allowed this file only for a gloss change; the paragraph would otherwise have been false.
+- `Pillars/Engineering Practice/MEMORY.md`: one paragraph after the agent-host entry gives the vocabulary and the ownership split, pointing at ADR-TECHNE-003.
+- This record: steps, dependencies, lifecycle and review packet.
+
+### Verification
+
+- `ki repo audit --repo .` (25 skills, including `ki-decision-records` and `ki-repo-kb-streams`): PASS after the amendment.
+- ADR-TECHNE-003 reads as a present-state record, with no amendment history, changelog or "previously" wording; `date` is 2026-10-07; no `shared_record` marker or claim of an identical retained copy remains.
+- The Design checks on binding fields, provider options, controller table and `--host` wording were met at planning and are carried in the receivers' delivered records; this delivery changes none of that text.
+- No en-dash or em-dash in any added line.
+
+### Outstanding concerns
+
+- **No-change change set.** The CloudFormation change set for the first binding's values, which must show no change, has not been run. It moves into the host rebuild, which Kris plans after accepting this record, and runs first there under [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]].
+- **OPS-012 acceptance.** H1 was awaiting review in `ki-techne-harness` when this packet was written; its acceptance is that repository's.
+- **Other Techne shared records.** The four other TECHNE records still describe their archived `ki-techne-principal` copies as identical retained projections, as the plan left them.
+
+### Post-change review
+
+The goal is met at Arcadia's level: the model, its vocabulary and its ownership are recorded in the governing ADR and Engineering Practice, and every handoff is delivered and live on Kris's machine. Scope held, apart from the one-paragraph index correction noted above. Regression risk is low; the ADR's existing two-repository split is unchanged and only extended. This is the implementing agent's own rereading against the plan and the audit, not an independent review.
+
+### Mini recap
+
+GOV-025 amended ADR-TECHNE-003 with the recipe, binding, provider and footprint model and placed H1 to H3, which their repositories delivered. The audit passes. Outstanding: the no-change change set, now the first step of the host rebuild, and OPS-012's acceptance. Proposed learning route: none beyond the Engineering Practice paragraph already added; the held controller as a delegation-capable recipe is captured as an idea in the `techne` checkpoint, not here.
 
 ## Discussion
 
