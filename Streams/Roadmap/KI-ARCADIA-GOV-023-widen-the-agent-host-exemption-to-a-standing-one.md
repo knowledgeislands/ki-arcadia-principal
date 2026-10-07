@@ -29,7 +29,7 @@ Kris Brown, 2026-10-07 08:40 CEST: "I want the exemption to cover setting this a
 
 ## Boundary
 
-- In scope: the hold's exemption section; GDR-KI-ARCADIA-004 amended in place, retitled and renamed, with every link to it updated; the Decisions index and the hold entries in [[Policies]], [[Admin/MEMORY|MEMORY]] and `Pillars/Engineering Practice/MEMORY.md`; GOV-021 reshaped to a scheduled review; the rollout and concept-map notes and diagrams only where they state the lapse or a stopgap; the `state-of-play` and `baseline-and-cloud` checkpoints.
+- In scope: the hold's exemption section; GDR-KI-ARCADIA-004 amended in place, retitled and renamed, with every link to it updated; the Decisions index and the hold entries in [[Policies]], [[Admin/MEMORY|MEMORY]] and `Pillars/Engineering Practice/MEMORY.md`; GOV-021 reshaped to a scheduled review; the rollout and concept-map notes and diagrams only where they state the lapse or a stopgap; the `state-of-play` and `techne` checkpoints.
 - Out of scope: any change to the unchanged bounds listed below; the three hold prerequisites for any other remote operation; GOV-020 itself, which is done and keeps its accepted text; any remote action, AWS, Tailscale or GitHub call; work records in other repositories.
 
 ## Exemption scope
@@ -56,7 +56,7 @@ Delivered and awaiting Kris's review. The hold, GDR-KI-ARCADIA-004 and every not
 - [x] Update the Decisions index entry and the hold entries in [[Policies]], [[Admin/MEMORY|MEMORY]] and `Pillars/Engineering Practice/MEMORY.md`.
 - [x] Reshape GOV-021 into a scheduled review on 2026-11-06 of the standing exemption: scope, bounds, cost, and whether to widen or withdraw it.
 - [x] Update the rollout and concept-map notes where they state the lapse; change the lapse labels in both Archify sources and re-render their SVGs with Archify.
-- [x] Update the `state-of-play` and `baseline-and-cloud` checkpoints with this outcome and the rollout facts since their last update.
+- [x] Update the `state-of-play` and `techne` checkpoints with this outcome and the rollout facts since their last update.
 - [x] Run the verification below and write the review packet.
 
 ## Files touched
@@ -70,7 +70,7 @@ Delivered and awaiting Kris's review. The hold, GDR-KI-ARCADIA-004 and every not
 - `Admin/Governance/Policies/Agent Host Prototype Rollout.md`, `.archify.json` and `.svg`
 - `Pillars/Engineering Practice/Architecture/Diagrams/Agent Host Prototype Concept Map.md`, `.archify.json` and `.svg`
 - `Streams/Roadmap/KI-ARCADIA-GOV-021-review-the-agent-host-prototype.md`
-- `+/_CHECKPOINTS/state-of-play.md` and `+/_CHECKPOINTS/baseline-and-cloud.md`
+- `+/_CHECKPOINTS/state-of-play.md` and `+/_CHECKPOINTS/techne.md`
 - This record
 
 ## Verify
@@ -120,7 +120,7 @@ The [[Techne Programme Hold]] exemption now covers setting up and operating the 
 - `Pillars/Engineering Practice/Architecture/Diagrams/Agent Host Prototype Concept Map.md`, `.archify.json` and `.svg`: "time-boxed" and "live until 6 November 2026" become the standing exemption; the live region label reads "Live under the standing exemption (GDR-KI-ARCADIA-004)".
 - Both SVGs were re-rendered with Archify `finalize` at `showcase` quality and exported through the viewer's "SVG Auto" export, driven in headless Chrome; the same route reproduced the previously committed rollout SVG exactly apart from trailing whitespace, which the committed files strip.
 - `Streams/Roadmap/KI-ARCADIA-GOV-021-review-the-agent-host-prototype.md`: Goal, Context and Boundary reshaped into a scheduled review (keep, widen or reshape, or withdraw); review inputs and the operator-role note updated.
-- `+/_CHECKPOINTS/state-of-play.md` and `+/_CHECKPOINTS/baseline-and-cloud.md`: the outcome and the rollout facts since their last update (GOV-022, OPS-010, OPS-011, CLI-004, the UE-068 correction, the host running and in use).
+- `+/_CHECKPOINTS/state-of-play.md` and `+/_CHECKPOINTS/techne.md`: the outcome and the rollout facts since their last update (GOV-022, OPS-010, OPS-011, CLI-004, the UE-068 correction, the host running and in use).
 - This record: plan, lifecycle and review packet.
 
 Deviation: the hold keeps an "Order" bullet, restated in the past tense for the acceptance gate and kept as a standing gate for the GitHub and model API credential identity, because Arcadia holds no evidence that the identity has been decided.
@@ -137,7 +137,7 @@ Deviation: the hold keeps an "Order" bullet, restated in the past tense for the 
 
 - **Credential identity and egress.** The host is in use, but Arcadia has no record that the GitHub and model API credential identity or the named-destination egress bound are settled; the owning records should confirm them.
 - **Runbook term.** The `ki-techne-harness` agent-host runbook may still describe a 30-day term; that repository owns any update.
-- **Stale checkpoint row.** `baseline-and-cloud` still says FAB-001's egress rule is to be narrowed "under OPS-008", which has merged into OPS-009; left as a fact outside this record's scope.
+- **Stale checkpoint row.** `techne` still says FAB-001's egress rule is to be narrowed "under OPS-008", which has merged into OPS-009; left as a fact outside this record's scope.
 - Nothing is pushed by this record; the push follows Kris's instruction for this run.
 
 ### Post-change review
