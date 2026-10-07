@@ -3,14 +3,16 @@ note_type: stream-roadmap
 id: KI-ARCADIA-ECO-009
 area: ECO
 title: Gather evidence for a legacy serve fallback policy
-theme: ecosystem-coordination
+kind: investigate
+purpose: learning
+project: estate-factorisation
 horizon: now
 status: ready
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-04T11:57:35Z
-updated_at: 2026-10-05T08:41:00Z
+updated_at: 2026-10-07T14:08:03Z
 ---
 
 # Gather Evidence for a Legacy Serve Fallback Policy

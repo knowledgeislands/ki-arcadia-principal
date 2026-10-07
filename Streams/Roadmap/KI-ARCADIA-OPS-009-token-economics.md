@@ -3,19 +3,20 @@ note_type: stream-roadmap
 id: KI-ARCADIA-OPS-009
 area: OPS
 title: Token economics
-theme: operational-tooling
+kind: deliver
+project: island-model-and-tending
+component: operations
 tags:
   - topic/knowledge-islands
   - topic/ai
 status: ready
 priority: low
 horizon: now
-candidate: true
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T18:43:39Z
-updated_at: 2026-10-05T08:14:47Z
+updated_at: 2026-10-07T14:08:03Z
 author: Written with Claude
 ---
 

@@ -3,7 +3,8 @@ note_type: stream-roadmap
 id: KI-ARCADIA-GOV-010
 area: GOV
 title: Assess estate-wide tooling commonality
-theme: governance
+kind: decide
+project: estate-factorisation
 tags:
   - topic/knowledge-islands
   - topic/tooling
@@ -15,7 +16,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-09-22T06:37:24Z
-updated_at: 2026-10-07T10:21:00Z
+updated_at: 2026-10-07T14:08:03Z
 author: Written with Codex
 ---
 

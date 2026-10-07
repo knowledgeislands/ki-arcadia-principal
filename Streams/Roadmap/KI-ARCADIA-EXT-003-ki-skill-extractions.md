@@ -3,7 +3,9 @@ note_type: stream-roadmap
 id: KI-ARCADIA-EXT-003
 area: EXT
 title: KI skill extractions
-theme: ecosystem-adoption
+kind: investigate
+purpose: upkeep
+initiative: platform-foundations
 tags:
   - topic/knowledge-islands
   - topic/engineering
@@ -14,7 +16,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-06-25T15:59:04Z
-updated_at: 2026-10-05T08:17:56Z
+updated_at: 2026-10-07T14:08:03Z
 author: Written with Claude
 ---
 

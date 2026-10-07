@@ -95,6 +95,19 @@ organisation_code = "KIS"
 [skills.ki-work]
 adapter = "kb-streams"
 
+[skills.ki-work-roadmap]
+areas = ["ECO", "EXT", "GOV", "MOD", "OPS"]
+components = [
+  "calendar",
+  "engineering-practice",
+  "governance",
+  "model",
+  "operations",
+  "resources",
+  "streams",
+  "techne",
+]
+
 [skills.ki-tokenomics]
 headroom = "recommended"
 preferred_model_type = "standard"

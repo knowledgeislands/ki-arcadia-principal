@@ -8,12 +8,12 @@ purpose: governance
 project: roadmap-model
 component: streams
 horizon: now
-status: ready
+status: awaiting-review
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: ff15cd91cb4d1f74dd38d941f90e7d021cbdd333
 created_at: 2026-10-07T14:03:00Z
-updated_at: 2026-10-07T14:03:00Z
+updated_at: 2026-10-07T14:12:00Z
 ---
 
 # Migrate Arcadia to the Roadmap Model
@@ -74,12 +74,12 @@ The Activity notes are in `Admin/`, a canonical zone. This record is the Enactme
 
 ## Steps
 
-- [ ] Create `Streams/Initiatives/` with its index and four Initiative notes; remove `Streams/Projects/Initiatives.md`.
-- [ ] Add the `roadmap-model` Project note; update `Projects.md`, `Streams.md` and the Project notes' Initiative links.
-- [ ] Migrate the open records' frontmatter and the two Activities.
-- [ ] Declare the component vocabulary in `.ki.toml`; remove the ledger Theme column; update the Roadmap index.
-- [ ] Remove the five theme checkpoints; add the pointer line to `state-of-play.md`; shorten the `[[Projects/<slug>|<slug>]]` links that become unique.
-- [ ] Run the checks below; complete the review packet.
+- [x] Create `Streams/Initiatives/` with its index and four Initiative notes; remove `Streams/Projects/Initiatives.md`.
+- [x] Add the `roadmap-model` Project note; update `Projects.md`, `Streams.md` and the Project notes' Initiative links.
+- [x] Migrate the open records' frontmatter and the two Activities.
+- [x] Declare the component vocabulary in `.ki.toml`; remove the ledger Theme column; update the Roadmap index.
+- [x] Remove the five theme checkpoints; add the pointer line to `state-of-play.md`; shorten the `[[Projects/<slug>|<slug>]]` links that become unique.
+- [x] Run the checks below; complete the review packet.
 
 ## Files touched
 
@@ -124,6 +124,46 @@ None.
 ### Roadmap
 
 The Roadmap index and ledger lose their theme references.
+
+## Review
+
+### Delivered
+
+The approved boundary: the Initiatives folder, the `roadmap-model` Project, classification of every open record and of the Tending and Briefings Activities, the component vocabulary, the ledger and Roadmap index, and retirement of five theme checkpoints. Done records, record bodies, paused Activities, `techne.md` and pruning were left alone. Baseline `ff15cd91cb4d1f74dd38d941f90e7d021cbdd333` (the ready plan); delivery is the commit that moves this record to `awaiting-review`.
+
+### Change Summary
+
+- `Streams/Initiatives/`: new folder index and four Initiative notes (`streams/initiative`), each with Direction, Projects, Upkeep, Activities and a Review dated 2026-10-07 drawn from the Project notes and the state-of-play review. The content of `Streams/Projects/Initiatives.md` moved here; that file is removed. The three records it left unclassified now sit under Platform foundations upkeep as the proposals classify them, except the cancelled RTP-002; the cancelled harness OPS-001 leaves the Rig list.
+- `Streams/Projects/roadmap-model.md`: new Project under Platform foundations. `Projects.md` gains its section and points to the Initiatives folder; every Project note links its Initiative note, and the `[[Projects/<slug>|<slug>]]` links shorten to `[[<slug>]]`.
+- `Streams/Streams.md`: an Initiatives section; the Projects section narrows to Projects.
+- Twenty-one open records: `theme` and `candidate` removed; `kind`, and where approved `purpose`, `project` or `initiative`, and `component` added; GOV-021 and GOV-024 become `status: triage` without a horizon; `updated_at` advances on each.
+- `Admin/Operations/Activities/Tending Activity.md` and `Briefings Activity.md`: `initiative`, `component` and `purpose` added; nothing else changes. This is the Enactment change this record proposed.
+- `.ki.toml`: `[skills.ki-work-roadmap]` with the issued areas and the approved components.
+- `Streams/Roadmap/_ISSUES.md`: Theme column removed. `Streams/Roadmap/Roadmap.md`: classification and cancellation described.
+- `+/_CHECKPOINTS/`: `baseline`, `delta-evaluation`, `estate-factorisation`, `paperclip-bootstrap-and-recovery` and `territories-and-trades` removed; `state-of-play.md` gains one line pointing to the Initiatives review.
+
+### Verification
+
+- `ki repo audit --progress never`: PASS on 25 skills, no warnings. `ki-work-roadmap` is now selected by the new table.
+- The roadmap checker on a scratch non-Knowledge-Base copy of `Streams/Roadmap/`, with Knowledge Base-only fields stripped: no classification or state finding on any open record. Its remaining findings are the Knowledge Base record body layout (a `## Governance` footer after Discussion, prose Steps), title length and ledger shape, all present before this change, and retired-field warnings on the three done records left out of scope.
+- `bunx rumdl check` on every changed Markdown file: no issues.
+- No en-dash or em-dash in any added line.
+- Every wikilink and relative link added or changed resolves uniquely; the unresolved links found are in untouched record bodies and code examples.
+- Checkpoint content: each removed checkpoint's objective, state, decisions, open questions and next step were compared with its Project note and are present there.
+
+### Outstanding concerns
+
+- **GOV-010 stays open.** Its approved closure as superseded needs the estate factorisation record as target, and none exists yet; it closes when that record exists.
+- **`techne.md` links to the removed `baseline.md`.** That checkpoint belongs to the active Techne thread and was not touched; the thread should update or drop the link.
+- **Reviews are first judgements.** Each Initiative Review restates existing judgements and open decisions; Kris has not yet reviewed them.
+
+### Post-change review
+
+The goal is met: the Initiatives have their own notes and Review, the rollout has its Project, every open record and live Activity is classified without a theme, and the theme checkpoints are retired with nothing lost. Scope held to the planned files. Regression risk is low: frontmatter-only record changes, and the audit passes. This review is the implementing agent's own rereading against the model, decisions and audits, not an independent reviewer.
+
+### Mini recap
+
+GOV-027 moved Arcadia onto the roadmap model: an Initiatives folder with four reviewed Initiative notes, a `roadmap-model` Project, classified records and Activities, a declared component vocabulary, and five theme checkpoints retired. GOV-010 waits for its target record, and the Techne checkpoint needs one link fixed by its thread.
 
 ## Discussion
 

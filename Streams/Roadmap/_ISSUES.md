@@ -4,13 +4,13 @@
 
 Arcadia's repository code is `KI-ARCADIA`. This Knowledge Base issues area-qualified roadmap identifiers in the form `KI-ARCADIA-<AREA>-<NNN>`.
 
-| Area | Theme | High-water mark |
-| --- | --- | --- |
-| `ECO` | `ecosystem-coordination` | 010 |
-| `EXT` | `ecosystem-adoption` | 003 |
-| `GOV` | `governance` | 027 |
-| `MOD` | `knowledge-model` | 006 |
-| `OPS` | `operational-tooling` | 011 |
+| Area | High-water mark |
+| --- | --- |
+| `ECO` | 010 |
+| `EXT` | 003 |
+| `GOV` | 027 |
+| `MOD` | 006 |
+| `OPS` | 011 |
 
 ## Owner-reviewed legacy migration
 

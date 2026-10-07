@@ -3,14 +3,17 @@ note_type: stream-roadmap
 id: KI-ARCADIA-GOV-018
 area: GOV
 title: CI policy principle
-theme: governance
+kind: deliver
+purpose: governance
+project: estate-factorisation
+component: engineering-practice
 horizon: now
 status: draft
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-06T01:20:06Z
-updated_at: 2026-10-06T10:08:15Z
+updated_at: 2026-10-07T14:08:03Z
 ---
 
 # CI Policy Principle

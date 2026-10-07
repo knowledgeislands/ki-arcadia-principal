@@ -4,6 +4,9 @@ tags:
   - card/note
   - topic/knowledge-islands
 status: active
+initiative: knowledge-islands-model
+component: operations
+purpose: upkeep
 realization: workflow
 author: Written with Claude
 ---

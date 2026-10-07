@@ -7,7 +7,7 @@ initiative: knowledge-islands-model
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-07T12:30:00Z
+updated: 2026-10-07T14:05:00Z
 author: Written with Claude
 ---
 
@@ -17,7 +17,7 @@ author: Written with Claude
 
 Make acquisition of external material work end to end: the provider-neutral lifecycle is clear in one Pillars note, AI-session content reaches the repository best served by it, and source conversations are retired only after the move is verified. The test: every record listed below is delivered or closed. The direction follows [[ADR-KI-ARCADIA-001-provider-neutral-knowledge-acquisition|ADR-KI-ARCADIA-001]]; this finite outcome is for Kris to confirm.
 
-This Project sits in [[Initiatives|Knowledge Islands model]].
+This Project sits in [[knowledge-islands-model|Knowledge Islands model]].
 
 ---
 

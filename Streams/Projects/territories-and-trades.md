@@ -7,7 +7,7 @@ initiative: knowledge-islands-model
 lifecycle: planned
 lead: Kris Brown
 target: null
-updated: 2026-10-07T12:30:00Z
+updated: 2026-10-07T14:05:00Z
 author: Written with Claude
 ---
 
@@ -17,7 +17,7 @@ author: Written with Claude
 
 Make the territory trade policy succinct without changing what it grants, retire `map_bonus`, and keep the related roadmap items consistent with the result. The test: Arcadia's `.ki.toml` declares the same routes in the agreed shorter form, `ki` parses it, the `ki-trades` audit passes, and no record cites a retired declaration. Exchange across territories remains open and is outside this outcome.
 
-This Project sits in [[Initiatives|Knowledge Islands model]]. It is `planned` until Kris agrees the proposed form below.
+This Project sits in [[knowledge-islands-model|Knowledge Islands model]]. It is `planned` until Kris agrees the proposed form below.
 
 ---
 

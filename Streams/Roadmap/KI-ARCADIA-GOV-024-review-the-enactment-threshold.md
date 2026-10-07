@@ -3,14 +3,16 @@ note_type: stream-roadmap
 id: KI-ARCADIA-GOV-024
 area: GOV
 title: Review the enactment threshold
-theme: governance
-horizon: triage
-status: draft
+kind: decide
+purpose: governance
+project: island-model-and-tending
+component: operations
+status: triage
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-07T07:44:25Z
-updated_at: 2026-10-07T07:44:25Z
+updated_at: 2026-10-07T14:08:03Z
 ---
 
 # Review the Enactment Threshold

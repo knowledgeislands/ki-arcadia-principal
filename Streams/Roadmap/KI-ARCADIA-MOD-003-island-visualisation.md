@@ -3,7 +3,9 @@ note_type: stream-roadmap
 id: KI-ARCADIA-MOD-003
 area: MOD
 title: Geography model and tiles
-theme: knowledge-model
+kind: deliver
+project: island-model-and-tending
+component: model
 tags:
   - topic/knowledge-islands
 horizon: future
@@ -12,7 +14,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T19:26:42Z
-updated_at: 2026-10-06T01:45:00Z
+updated_at: 2026-10-07T14:08:03Z
 author: Written with Claude
 ---
 

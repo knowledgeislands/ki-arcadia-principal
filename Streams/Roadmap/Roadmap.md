@@ -17,4 +17,4 @@ Roadmap records are Arcadia's finite, forward work. Each record is flat in this 
 
 ## Using the roadmap
 
-Select, shape, deliver, review, and close roadmap work through the shared change-management lifecycle. Horizon is metadata - it is not represented by another folder. Completed work remains a `done` record until its owner explicitly selects it for pruning.
+Select, shape, deliver, review, and close roadmap work through the shared change-management lifecycle. Horizon is metadata - it is not represented by another folder. Each adopted record also declares its `kind`, and optionally its `purpose`, the territory [[Projects|Project]] or [[Initiatives|Initiative]] it serves, and a `component` from the vocabulary in `.ki.toml`; the area only issues its identifier. Completed work remains a `done` record, and withdrawn work a `cancelled` one with its resolution, until its owner explicitly selects it for pruning.

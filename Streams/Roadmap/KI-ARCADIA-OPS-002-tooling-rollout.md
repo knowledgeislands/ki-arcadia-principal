@@ -3,7 +3,8 @@ note_type: stream-roadmap
 id: KI-ARCADIA-OPS-002
 area: OPS
 title: Tooling rollout
-theme: operational-tooling
+kind: deliver
+project: island-model-and-tending
 tags:
   - topic/ai
   - topic/automation
@@ -15,7 +16,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-30T09:55:30Z
-updated_at: 2026-10-07T10:21:00Z
+updated_at: 2026-10-07T14:08:03Z
 author: Written with Claude
 ---
 

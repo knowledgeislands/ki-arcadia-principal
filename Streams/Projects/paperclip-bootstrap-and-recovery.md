@@ -7,7 +7,7 @@ initiative: techne
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-07T12:30:00Z
+updated: 2026-10-07T14:05:00Z
 author: Written with Claude
 ---
 
@@ -17,7 +17,7 @@ author: Written with Claude
 
 Make Paperclip useful through reviewed roadmap work that lands in Kris's local main, not more rounds of setup. Prove one delivery in VA, establish useful reporting and review routines, then consider TMX. Read live tasks and roadmap records before acting; this note is not a health guarantee.
 
-This Project sits in [[Initiatives|Techne]]. VA delivery also supplies the first Techne Programme Hold prerequisite, which the [[agent-host]] work tracks with the cloud move.
+This Project sits in [[Initiatives/techne|Techne]]. VA delivery also supplies the first Techne Programme Hold prerequisite, which the [[agent-host]] work tracks with the cloud move.
 
 ---
 

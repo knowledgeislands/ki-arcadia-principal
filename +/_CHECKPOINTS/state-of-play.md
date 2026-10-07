@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: state-of-play
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-07T10:40:00Z
+updated_at: 2026-10-07T14:10:00Z
 ---
 
 # state-of-play
@@ -23,6 +23,8 @@ The scope also covers the seven acquired ChatGPT captures of 2026-10-03 in `+/_A
 This checkpoint is the single place the review is built up. Every review step and finding is recorded here until it has been routed to its owner. It coordinates the six sibling checkpoints in this directory rather than replacing them.
 
 ## Current state
+
+From 2026-10-07 the periodic review lives in the Review section of each Initiative note in [Initiatives](../../Streams/Initiatives/Initiatives.md), and the five theme checkpoints it coordinated are retired into their Project notes.
 
 Step 0 evidence is retained below. The current queue was re-counted read-only on 2026-10-07 at 02:37 CEST; current Git and source evidence was reconciled with parallel owner work. Detailed review reports and the exact source manifest are in `~/.local/state/ki/state-of-play/`.
 

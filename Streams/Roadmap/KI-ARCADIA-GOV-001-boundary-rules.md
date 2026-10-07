@@ -3,7 +3,9 @@ note_type: stream-roadmap
 id: KI-ARCADIA-GOV-001
 area: GOV
 title: Boundary rules
-theme: governance
+kind: deliver
+project: island-model-and-tending
+component: model
 tags:
   - topic/knowledge-islands
 status: draft
@@ -13,7 +15,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T18:32:31Z
-updated_at: 2026-10-04T18:01:50Z
+updated_at: 2026-10-07T14:08:03Z
 author: Written with Claude
 ---
 

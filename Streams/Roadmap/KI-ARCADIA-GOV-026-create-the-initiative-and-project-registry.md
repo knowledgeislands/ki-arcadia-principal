@@ -3,14 +3,17 @@ note_type: stream-roadmap
 id: KI-ARCADIA-GOV-026
 area: GOV
 title: Create the Initiative and Project registry
-theme: governance
+kind: deliver
+purpose: governance
+project: roadmap-model
+component: streams
 horizon: now
 status: awaiting-review
 blocks: []
 blocked_by: []
 baseline_ref: 0957cf80670fb5bb47c0dd2c46c3a51532c79fdb
 created_at: 2026-10-07T12:20:00Z
-updated_at: 2026-10-07T12:35:32Z
+updated_at: 2026-10-07T14:08:03Z
 ---
 
 # Create the Initiative and Project Registry

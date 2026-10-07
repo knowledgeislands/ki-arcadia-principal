@@ -3,19 +3,21 @@ note_type: stream-roadmap
 id: KI-ARCADIA-OPS-006
 area: OPS
 title: Workflow integrations
-theme: operational-tooling
+kind: investigate
+purpose: learning
+project: island-model-and-tending
+component: resources
 tags:
   - topic/knowledge-islands
   - topic/automation
 status: ready
 priority: low
 horizon: now
-candidate: true
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T18:32:31Z
-updated_at: 2026-10-05T08:45:00Z
+updated_at: 2026-10-07T14:08:03Z
 author: Written with Claude
 ---
 

@@ -20,4 +20,10 @@ Streams are Arcadia's operational container for knowledge in motion. Finite forw
 
 ## Projects
 
-[[Projects]] is the territory's Initiative and Project registry: one note per finite Project, named by its slug, and an [[Initiatives]] index describing the long-lived directions they serve and the projectless upkeep beneath them. A Project note carries its outcome, health, current decision, next step and the open records that belong to it; status stays in each record.
+[[Projects]] is the territory's Project registry: one note per finite Project, named by its slug, carrying its outcome, health, current decision, next step and the open records that belong to it. Status stays in each record.
+
+---
+
+## Initiatives
+
+[[Initiatives]] holds one note per long-lived Initiative, named by its slug, beside the Projects it groups. Each note gives the direction, its Projects, its projectless upkeep and recurring Activities, and a dated Review - the territory's periodic judgement of that direction, which replaced the theme checkpoints.

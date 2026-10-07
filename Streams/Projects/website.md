@@ -7,7 +7,7 @@ initiative: knowledge-islands-model
 lifecycle: paused
 lead: Kris Brown
 target: null
-updated: 2026-10-07T12:30:00Z
+updated: 2026-10-07T14:05:00Z
 author: Written with Claude
 ---
 
@@ -17,7 +17,7 @@ author: Written with Claude
 
 Give the Knowledge Islands website two things it lacks: landing pages where **Get Started** starts something and **Contribute** explains what it is for without restating the Contribution Process, and an interactive, accessible diagram of an island rendered from Arcadia's canonical geography model and tile set. The test: the two records below are delivered or closed. This finite outcome is for Kris to confirm.
 
-This Project sits in [[Initiatives|Knowledge Islands model]].
+This Project sits in [[knowledge-islands-model|Knowledge Islands model]].
 
 ---
 

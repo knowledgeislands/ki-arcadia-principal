@@ -3,14 +3,16 @@ note_type: stream-roadmap
 id: KI-ARCADIA-GOV-025
 area: GOV
 title: Model agent hosts as recipes and bindings
-theme: governance
+kind: deliver
+project: agent-host
+component: techne
 horizon: now
 status: ready
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-07T08:49:50Z
-updated_at: 2026-10-07T13:06:00Z
+updated_at: 2026-10-07T14:08:03Z
 ---
 
 # Model Agent Hosts as Recipes and Bindings

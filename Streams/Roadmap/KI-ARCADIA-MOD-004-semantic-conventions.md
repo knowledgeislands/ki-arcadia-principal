@@ -3,18 +3,20 @@ note_type: stream-roadmap
 id: KI-ARCADIA-MOD-004
 area: MOD
 title: Semantic conventions
-theme: knowledge-model
+kind: investigate
+purpose: learning
+project: island-model-and-tending
+component: model
 tags:
   - topic/knowledge-islands
 status: ready
 priority: low
 horizon: now
-candidate: true
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T18:32:31Z
-updated_at: 2026-10-05T08:15:51Z
+updated_at: 2026-10-07T14:08:03Z
 author: Written with Claude
 ---
 

@@ -7,7 +7,7 @@ initiative: techne
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-07T12:30:00Z
+updated: 2026-10-07T14:05:00Z
 author: Written with Claude
 ---
 
@@ -17,7 +17,7 @@ author: Written with Claude
 
 Move agent work into the Techne footprint on an agent host, inside the standing exemption from the [[Techne Programme Hold]]. The current model treats agent hosts as harness-defined recipes that a person binds into named instances ([[KI-ARCADIA-GOV-025-model-agent-hosts-as-recipes-and-bindings|KI-ARCADIA-GOV-025]]), and the prototype is reviewed under [[KI-ARCADIA-GOV-021-review-the-agent-host-prototype|KI-ARCADIA-GOV-021]].
 
-This Project sits in [[Initiatives|Techne]]. It and [[baseline-rollout]] do not gate each other.
+This Project sits in [[Initiatives/techne|Techne]]. It and [[baseline-rollout]] do not gate each other.
 
 ---
 

@@ -7,7 +7,7 @@ initiative: knowledge-islands-model
 lifecycle: paused
 lead: Kris Brown
 target: null
-updated: 2026-10-07T12:30:00Z
+updated: 2026-10-07T14:05:00Z
 author: Written with Claude
 ---
 
@@ -17,7 +17,7 @@ author: Written with Claude
 
 Bring `ki-specifications` to a consistent, dormant pre-v1 state: the repository review records each tracked file's authority class and makes the process documents agree, and the transferred Knowledge Base Extraction Protocol (KBEP) and Knowledge Base Ingress Protocol (KBIP) each get a short disposition note with one recommendation. The test: the three records below are delivered or closed. This finite outcome is for Kris to confirm.
 
-This Project sits in [[Initiatives|Knowledge Islands model]].
+This Project sits in [[knowledge-islands-model|Knowledge Islands model]].
 
 ---
 
@@ -27,7 +27,7 @@ Created on 2026-10-07 from the theme map and the records' current status; no che
 
 - **Health.** Paused: Kris parked this work with the [[website]] on 2026-10-07. No health judgement applies while paused.
 - All three records are `draft`.
-- [[Projects/territories-and-trades|territories-and-trades]] asks whether territory and trade configuration should also be specified here; that question does not unpause this Project.
+- [[territories-and-trades]] asks whether territory and trade configuration should also be specified here; that question does not unpause this Project.
 
 ### Decision
 

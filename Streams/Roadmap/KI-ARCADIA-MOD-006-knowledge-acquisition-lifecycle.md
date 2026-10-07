@@ -3,7 +3,9 @@ note_type: stream-roadmap
 id: KI-ARCADIA-MOD-006
 area: MOD
 title: Knowledge acquisition lifecycle
-theme: knowledge-model
+kind: deliver
+project: knowledge-acquisition
+component: model
 tags:
   - topic/knowledge-islands
   - topic/acquisition
@@ -14,7 +16,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-08-23T12:33:49Z
-updated_at: 2026-10-06T01:36:00Z
+updated_at: 2026-10-07T14:08:03Z
 ---
 
 # Knowledge Acquisition Lifecycle

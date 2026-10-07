@@ -3,7 +3,9 @@ note_type: stream-roadmap
 id: KI-ARCADIA-OPS-003
 area: OPS
 title: Page registry
-theme: operational-tooling
+kind: deliver
+purpose: upkeep
+initiative: platform-foundations
 tags:
   - topic/knowledge-islands
   - topic/conventions
@@ -14,7 +16,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T20:40:18Z
-updated_at: 2026-10-05T08:17:56Z
+updated_at: 2026-10-07T14:08:03Z
 author: Written with Claude
 ---
 

@@ -7,7 +7,7 @@ initiative: platform-foundations
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-07T12:30:00Z
+updated: 2026-10-07T14:05:00Z
 author: Written with Claude
 ---
 
@@ -17,7 +17,7 @@ author: Written with Claude
 
 Reach a solid Knowledge Islands baseline and roll it out to every island. The test: `ki repo audit --estate` is green and the released `ki` is installed everywhere. Arcadia coordinates; each item is delivered through a work record in its owning repository.
 
-This Project sits in [[Initiatives|Platform foundations]]. The move of agent work into the Techne footprint is the separate [[agent-host]] Project, and neither gates the other. [[Projects/estate-factorisation|estate-factorisation]] owns structure, MCP, distribution and `ki` pin automation, and its remainder does not gate this Project; [[Projects/paperclip-bootstrap-and-recovery|paperclip-bootstrap-and-recovery]] and [[Projects/territories-and-trades|territories-and-trades]] own their own scope.
+This Project sits in [[platform-foundations|Platform foundations]]. The move of agent work into the Techne footprint is the separate [[agent-host]] Project, and neither gates the other. [[estate-factorisation]] owns structure, MCP, distribution and `ki` pin automation, and its remainder does not gate this Project; [[paperclip-bootstrap-and-recovery]] and [[territories-and-trades]] own their own scope.
 
 ---
 
@@ -29,7 +29,7 @@ Seeded on 2026-10-07 from records read at about 11:00 CEST; recheck before actin
 - **Release.** `ki` v0.7.1 is tagged, installed locally and published in the `homebrew-tap` formula (`ki --version`).
 - **Gate.** Not yet evidenced. A run of `ki repo audit --estate` on 2026-10-07 did not finish within five minutes, so the gate has no current result.
 - **Pause.** Work across Knowledge Islands repositories is paused while the `state-of-play` review runs. The proposed first delivery window keeps FND-026, GOV-109 and GOV-117 in their own dependency chain.
-- **Moved out on 2026-10-07**, since none moves `ki repo audit --estate` or the `ki` install: harness GOV-115 and RTP-015 to [[Projects/paperclip-bootstrap-and-recovery|paperclip-bootstrap-and-recovery]], Arcadia OPS-008 to [[island-model-and-tending]], EXT-003 to standards upkeep and ECO-009 to [[Projects/estate-factorisation|estate-factorisation]]. Arcadia OPS-002 has approved closure as obsolete.
+- **Moved out on 2026-10-07**, since none moves `ki repo audit --estate` or the `ki` install: harness GOV-115 and RTP-015 to [[paperclip-bootstrap-and-recovery]], Arcadia OPS-008 to [[island-model-and-tending]], EXT-003 to standards upkeep and ECO-009 to [[estate-factorisation]]. Arcadia OPS-002 has approved closure as obsolete.
 - **Already delivered and pruned:** harness GOV-092, GOV-095 and RTP-013; Arcadia GOV-012 and GOV-019.
 
 Why each open record matters:
@@ -37,7 +37,7 @@ Why each open record matters:
 - **FND-026** - rollout depends on conform working everywhere.
 - **GOV-109** - consistent gates before rollout; the prepare proposal must preserve the supported boundary install.
 - **GOV-117** - waits on GOV-109.
-- **GOV-127** - in progress, but needs re-planning against existing DESIGN-2 evidence; [[Projects/estate-factorisation|estate-factorisation]]'s ALIGN-1 refers to it.
+- **GOV-127** - in progress, but needs re-planning against existing DESIGN-2 evidence; [[estate-factorisation]]'s ALIGN-1 refers to it.
 - **REV-011** - must show current criterion coverage.
 
 ### Decision

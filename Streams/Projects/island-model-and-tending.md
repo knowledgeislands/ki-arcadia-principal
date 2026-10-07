@@ -7,7 +7,7 @@ initiative: knowledge-islands-model
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-07T12:30:00Z
+updated: 2026-10-07T14:05:00Z
 author: Written with Claude
 ---
 
@@ -17,7 +17,7 @@ author: Written with Claude
 
 Settle Arcadia's current backlog on the island model and how an island is tended: boundary and enactment rules, the geography, semantic conventions and Intention in the model, and the island's own operating practice (Calendar templates, sessions, schedules and token use). The test: every record listed below is delivered, handed to its owning repository or closed. Keeping the model coherent is ongoing; this finite outcome is bounded by the current records and is for Kris to confirm.
 
-This Project sits in [[Initiatives|Knowledge Islands model]]. Its geography record feeds the paused [[website]] Project.
+This Project sits in [[knowledge-islands-model|Knowledge Islands model]]. Its geography record feeds the paused [[website]] Project.
 
 ---
 
@@ -29,7 +29,7 @@ Created on 2026-10-07 from the theme map and the records' current status; no che
 - Several records are `ready` and independent of one another; the rest are `draft`.
 - Kris has approved closing [[KI-ARCADIA-OPS-002-tooling-rollout|KI-ARCADIA-OPS-002]] as obsolete; the closure is not yet recorded.
 - [[KI-ARCADIA-OPS-008-scheduled-automations|KI-ARCADIA-OPS-008]] moved here from [[baseline-rollout]] on 2026-10-07.
-- [[KI-ARCADIA-OPS-007-agent-session-improvements|KI-ARCADIA-OPS-007]] carries a work trade to the harness that [[Projects/territories-and-trades|territories-and-trades]] must preserve.
+- [[KI-ARCADIA-OPS-007-agent-session-improvements|KI-ARCADIA-OPS-007]] carries a work trade to the harness that [[territories-and-trades]] must preserve.
 
 ### Decision
 

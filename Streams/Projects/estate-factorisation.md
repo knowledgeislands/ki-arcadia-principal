@@ -7,7 +7,7 @@ initiative: platform-foundations
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-07T12:30:00Z
+updated: 2026-10-07T14:05:00Z
 author: Written with Claude
 ---
 
@@ -17,7 +17,7 @@ author: Written with Claude
 
 Finish Knowledge Islands estate factorisation: consistent repository structure vocabulary, explicit ownership seams, behavioural MCP policy evidence, a single OpenAI housekeeping product, observable copies and running systems, and one alignment item per surviving repository. Arcadia coordinates; each item is delivered through a work record in its owning repository. The test is the phase gates below, ending with EVAL-1 and EVAL-2.
 
-This Project sits in [[Initiatives|Platform foundations]]. [[baseline-rollout]] and the Techne [[agent-host]] work do not wait on it.
+This Project sits in [[platform-foundations|Platform foundations]]. [[baseline-rollout]] and the Techne [[agent-host]] work do not wait on it.
 
 ---
 
@@ -52,7 +52,7 @@ Item status observed read-only on 2026-10-05, related records on 2026-10-07; rec
 - **ECO-009** - OPS-1: per-client MCP binding evidence.
 - **CLI-110** - PROJ-1 and FND-4; replaces withdrawn trade `TRD-8004751b`. Arcadia's own skill projections still hold such links.
 - **Arcadia GOV-010** - folds into this Project and feeds EVAL-2; approved closure intent as superseded once a factorisation record exists.
-- Also related, held elsewhere: harness GOV-127 (ALIGN-1 pattern of per-repository adoption, in [[baseline-rollout]]; it lists `mcp-housekeeping-codex` as an adopter, so OAI-1 retirement must update it), `tools-ki` CLI-111 (FND-5 dissemination routes, in [[Projects/territories-and-trades|territories-and-trades]]) and chezmoi `DOTFILES-UE-028` (FND-4 roadmap-shape drift, in Rig workstation hygiene). `ki-website` `KI-WEB-SITE-042` (DIST-1 website release presentation) is done and pruned.
+- Also related, held elsewhere: harness GOV-127 (ALIGN-1 pattern of per-repository adoption, in [[baseline-rollout]]; it lists `mcp-housekeeping-codex` as an adopter, so OAI-1 retirement must update it), `tools-ki` CLI-111 (FND-5 dissemination routes, in [[territories-and-trades]]) and chezmoi `DOTFILES-UE-028` (FND-4 roadmap-shape drift, in Rig workstation hygiene). `ki-website` `KI-WEB-SITE-042` (DIST-1 website release presentation) is done and pruned.
 
 Phase specifications (purpose, deliverables, completion gates, dependencies) are at `25be451:+/knowledge-islands-factorisation-roadmap.md`. Where they mention `ki-techne-principal` or `ki-plugins`, read Arcadia and "no plugin projection" instead.
 

@@ -3,18 +3,19 @@ note_type: stream-roadmap
 id: KI-ARCADIA-OPS-004
 area: OPS
 title: Bullet Journal support
-theme: operational-tooling
+kind: deliver
+project: island-model-and-tending
+component: calendar
 tags:
   - topic/knowledge-islands
 status: ready
 priority: low
 horizon: now
-candidate: true
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T18:32:31Z
-updated_at: 2026-10-05T08:45:00Z
+updated_at: 2026-10-07T14:08:03Z
 author: Written with Claude
 ---
 

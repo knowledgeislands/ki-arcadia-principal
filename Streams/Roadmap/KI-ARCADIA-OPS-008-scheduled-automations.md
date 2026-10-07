@@ -3,19 +3,20 @@ note_type: stream-roadmap
 id: KI-ARCADIA-OPS-008
 area: OPS
 title: Scheduled automations
-theme: operational-tooling
+kind: deliver
+project: island-model-and-tending
+component: operations
 tags:
   - topic/knowledge-islands
   - topic/automation
 status: ready
 priority: low
 horizon: now
-candidate: true
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T18:32:31Z
-updated_at: 2026-10-05T08:41:00Z
+updated_at: 2026-10-07T14:08:03Z
 author: Written with Claude
 ---
 

@@ -3,19 +3,19 @@ note_type: stream-roadmap
 id: KI-ARCADIA-OPS-007
 area: OPS
 title: Agent session improvements
-theme: operational-tooling
+kind: investigate
+project: island-model-and-tending
 tags:
   - topic/knowledge-islands
   - topic/ai
 status: ready
 priority: low
 horizon: now
-candidate: true
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T18:32:31Z
-updated_at: 2026-10-06T01:36:00Z
+updated_at: 2026-10-07T14:08:03Z
 author: Written with Claude
 ---
 

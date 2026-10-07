@@ -3,14 +3,16 @@ note_type: stream-roadmap
 id: KI-ARCADIA-GOV-021
 area: GOV
 title: Review the agent-host prototype
-theme: governance
-horizon: triage
-status: draft
+kind: decide
+purpose: governance
+project: agent-host
+component: governance
+status: triage
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-07T00:33:11Z
-updated_at: 2026-10-07T07:20:00Z
+updated_at: 2026-10-07T14:08:03Z
 ---
 
 # Review the Agent-Host Prototype
