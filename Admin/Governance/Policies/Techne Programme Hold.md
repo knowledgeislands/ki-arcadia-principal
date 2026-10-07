@@ -1,6 +1,6 @@
 ---
 note_type: admin/governance/policy
-updated: 2026-10-07T07:05:00Z
+updated: 2026-10-07T20:46:37Z
 author: AI-assisted
 ---
 
@@ -27,9 +27,9 @@ Kris Brown accepted the bounds of [[KI-ARCADIA-GOV-020-limited-remote-agent-prot
 - **Scope.** Setting up and operating the single agent host `ki-techne-agent-host`, the EC2 instance tagged `ki-agent-host-id=agent-host` in the Techne account `655383751458` in `eu-west-1`, properly and durably: building, rebuilding or replacing that one host through the `ki-techne-harness` stack; its rerunnable workspace setup, updates and status; its operator commands in the `techne` CLI, acting only on that host; its account-local operator role, its `/ki/techne/agent-host/` parameters, its tailnet tag and policy entries; and rotating its credentials.
 - **Bounds.** Exactly one host, separate from the controller instance. No public inbound access; Kris reaches it with Tailscale SSH. Agents run on it only in sessions Kris opens, with no unattended or scheduled agents. Agents keep the local rules: explicit-path commits, no push unless Kris asks, no prune and no acceptance. A kill switch and a teardown stay documented and available. Anything outside these bounds is not exempt.
 - **Prerequisites.** The three prerequisites above are waived for this host only. They stay in force for every other remote operation.
-- **Order.** No remote action under the exemption preceded GOV-020's acceptance and the hold amendment. Agents work on the host only once Kris has decided which identity holds the GitHub and model API credentials.
-- **Credentials.** Building the host and any AWS action use Kris's own credentials, through the host's account-local operator role. No agent creates access or acts in AWS on credentials of its own.
-- **Term.** The exemption has no automatic lapse. It stands until Kris changes or withdraws it through the [[Enactment Process]], and Kris reviews it on 6 November 2026.
+- **Order.** No remote action under the exemption preceded GOV-020's acceptance and the hold amendment.
+- **Credentials.** The binding owner is the person whose `agent-host` binding operates the host. Building, rebuilding and tearing down the host use the binding owner's administrator session in the Techne account; day-to-day operation (start, stop and status) uses the host's account-local operator role. No agent creates access or holds AWS credentials of its own. The host's GitHub token and Claude login are the binding owner's own identities, because only the binding owner opens sessions there; a machine identity is decided only when unattended agents arrive, and they stay held.
+- **Term.** The exemption has no automatic lapse. It stands until the island owner changes or withdraws it through the [[Enactment Process]]. The prototype review, [[KI-ARCADIA-GOV-021-review-the-agent-host-prototype|KI-ARCADIA-GOV-021]], keeps it as it stands, with `direct-host` remaining a recipe.
 - **What stays held.** Remote Paperclip in any form; Kitteth and any Avatar; Telegram and every other messaging channel; wider K3s or controller changes; the execution fabric; every other environment; anything in the organisation or its management account; and any change to existing remote services, including the controller instance `ki-techne-ops-007-primary`, its stack and its Telegram dispatch path.
 
 [[Agent Host Prototype Rollout]] illustrates the order of these gates, the kill switch, the review and teardown.
