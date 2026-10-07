@@ -22,7 +22,7 @@ Kris Brown approved the change on 2026-10-06 in [[KI-ARCADIA-GOV-016-territorial
 ## Decision
 
 1. Every Knowledge Islands repository declares its territory Capital as a canonical HTTPS URL in `[skills.ki-repo].capital`. A Capital names itself. The declaration is mandatory and its absence fails the `ki-repo` audit.
-2. A Capital, and only a Capital, declares `[skills.ki-repo.territory]`, which holds the territory name and its sorted member list including itself. Membership is authoritative at the Capital and is checked from both sides: a member names the Capital, and the Capital lists the member.
+2. A Capital, and only a Capital, declares `territory_name` and `territory_members` under `[skills.ki-repo]`, which hold the territory name and its sorted member list including itself. Membership is authoritative at the Capital and is checked from both sides: a member names the Capital, and the Capital lists the member.
 3. Trade routes, standing knowledge-intake grants and knowledge subtypes come only from the Capital's `[skills.ki-trades.territory]` policy, which holds:
    - `subtypes`;
    - `[[channels]]` naming members, directions and kinds;

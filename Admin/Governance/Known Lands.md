@@ -19,7 +19,7 @@ Any island may maintain its own chart of useful topics, sources and destinations
 
 ## Internal inventory
 
-The current inventory contains 21 canonical KI repository identities: Arcadia and 20 member islands. This owner-approved inventory agrees with the inspected KIS owner and direct-member declaration in `.ki.toml`. That working-set declaration is evidence for reconciliation; Agora membership itself grants no territorial authority. The machine-readable member list is `[skills.ki-repo.territory]` in Arcadia's `.ki.toml`, and every member names Arcadia in its own `[skills.ki-repo].capital`. A change to this inventory updates both in the same enactment.
+The current inventory contains 21 canonical KI repository identities: Arcadia and 20 member islands. This owner-approved inventory agrees with the inspected KIS owner and direct-member declaration in `.ki.toml`. That working-set declaration is evidence for reconciliation; Agora membership itself grants no territorial authority. The machine-readable member list is `territory_members` under `[skills.ki-repo]` in Arcadia's `.ki.toml`, and every member names Arcadia in its own `[skills.ki-repo].capital`. A change to this inventory updates both in the same enactment.
 
 Each island owns its accepted knowledge or executable behaviour within the shared governance. The roles below distinguish Capital, specialist knowledge, reusable capabilities, products, integrations, tools and delivery without turning a product boundary into another territory.
 
