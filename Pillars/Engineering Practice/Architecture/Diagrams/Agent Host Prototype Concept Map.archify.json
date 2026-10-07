@@ -236,7 +236,7 @@
   "boundaries": [
     {
       "kind": "region",
-      "label": "Live until 6 November 2026 (GDR-KI-ARCADIA-004)",
+      "label": "Live under the standing exemption (GDR-KI-ARCADIA-004)",
       "wraps": [
         "rig",
         "tailnet",

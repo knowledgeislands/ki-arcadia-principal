@@ -1,6 +1,6 @@
 ---
 note_type: admin/governance/policy
-updated: 2026-10-07T04:50:00Z
+updated: 2026-10-07T07:15:00Z
 author: AI-assisted
 ---
 
@@ -28,7 +28,7 @@ Kris connects from Zed through the helper, approves the Claude Code login on the
 
 ## Stop and review
 
-The kill switch is available at any time: stop the host with the agent-host profile and remove its tailnet device. At the end of the term, 6 November 2026, [[KI-ARCADIA-GOV-021-review-the-agent-host-prototype|KI-ARCADIA-GOV-021]] decides between renewal and teardown. If the prototype is not renewed, teardown removes the stack under the admin profile, then the tailnet entries, the tokens and the operator role. Renewal needs a new authorisation and a new GitHub token.
+The kill switch is available at any time: stop the host with the agent-host profile and remove its tailnet device. The exemption has no automatic lapse: it stands until Kris changes or withdraws it. On 6 November 2026 [[KI-ARCADIA-GOV-021-review-the-agent-host-prototype|KI-ARCADIA-GOV-021]] reviews it, weighing its scope, bounds and cost and whether to widen or withdraw it. Only if Kris withdraws it does teardown remove the stack under the admin profile, then the tailnet entries, the tokens and the operator role. Rotating the GitHub token before it expires is part of operating the host.
 
 ## Source
 

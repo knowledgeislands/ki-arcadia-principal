@@ -1,6 +1,6 @@
 ---
 note_type: pillars/note
-updated: 2026-10-07T04:50:00Z
+updated: 2026-10-07T07:15:00Z
 author: AI-assisted
 ---
 
@@ -8,7 +8,7 @@ author: AI-assisted
 
 ## Overview
 
-This diagram maps the limited remote agent prototype onto Knowledge Islands concepts, and separates what is live for the prototype from what stays held under the [[Techne Programme Hold]]. It reads the prototype in the vocabulary of the model rather than of AWS, so that a technology choice is never mistaken for a concept. [[KI-ARCADIA-GOV-020-limited-remote-agent-prototype|KI-ARCADIA-GOV-020]] defined the prototype and [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] records its time-boxed exemption from the hold.
+This diagram maps the limited remote agent prototype onto Knowledge Islands concepts, and separates what is live for the prototype from what stays held under the [[Techne Programme Hold]]. It reads the prototype in the vocabulary of the model rather than of AWS, so that a technology choice is never mistaken for a concept. [[KI-ARCADIA-GOV-020-limited-remote-agent-prototype|KI-ARCADIA-GOV-020]] defined the prototype and [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] records its standing exemption from the hold.
 
 ![[Agent Host Prototype Concept Map.svg]]
 
@@ -16,7 +16,7 @@ This diagram maps the limited remote agent prototype onto Knowledge Islands conc
 
 ## Live for the prototype
 
-The upper region is live until 6 November 2026. Kris, the Human, holds intent and authority and works from the Rig, Kris's Mac with Zed, Tailscale and Granted. The Rig connects over the tailnet, whose Tailscale SSH policy admits only the `techne` user, to one new Footprint, the agent host `ki-techne-agent-host`, which hosts agent sessions.
+The upper region is live while the standing exemption holds, until Kris changes or withdraws it. Kris, the Human, holds intent and authority and works from the Rig, Kris's Mac with Zed, Tailscale and Granted. The Rig connects over the tailnet, whose Tailscale SSH policy admits only the `techne` user, to one new Footprint, the agent host `ki-techne-agent-host`, which hosts agent sessions.
 
 Those sessions are Kris's own actions, not an Avatar's. Kris acts as Operator and Architect through an account-local IAM role that only a human assumes, and provisions the host through Techne, implemented in `ki-techne-harness`. Access, shown in red, is always human only.
 

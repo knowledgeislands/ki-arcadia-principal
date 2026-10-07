@@ -169,8 +169,8 @@
       "col": 4,
       "type": "messagebus",
       "label": "GOV-021 review",
-      "sublabel": "6 Nov 2026",
-      "tag": "renew or tear down",
+      "sublabel": "scheduled 6 Nov 2026",
+      "tag": "keep, widen or withdraw",
       "width": 134
     },
     {
@@ -251,7 +251,7 @@
       "id": "e-work-review",
       "from": "agentwork",
       "to": "review",
-      "label": "term ends",
+      "label": "scheduled review",
       "variant": "dashed",
       "role": "branch"
     },
@@ -259,7 +259,7 @@
       "id": "e-review-teardown",
       "from": "review",
       "to": "teardown",
-      "label": "not renewed",
+      "label": "if withdrawn",
       "variant": "security"
     }
   ],
@@ -280,7 +280,7 @@
       "items": [
         "Kill switch: stop.sh as agent-host profile, remove the device",
         "Teardown: destroy.sh as admin, then tailnet, tokens, access",
-        "Renewal needs a new authorisation and a new GitHub token"
+        "No lapse: stands until Kris changes or withdraws it"
       ]
     }
   ]

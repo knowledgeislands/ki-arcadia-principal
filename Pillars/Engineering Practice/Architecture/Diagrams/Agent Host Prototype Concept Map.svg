@@ -433,7 +433,7 @@ rect.c-bg-rect { fill: var(--bg); }
         <rect width="100%" height="100%" fill="url(#grid)"/>
 
         <!-- Boundaries (behind everything) -->
-        <rect data-graph-role="structural-frame" data-composition-frame-kind="region" data-composition-frame-id="0" data-composition-frame-label="Live until 6 November 2026 (GDR-KI-ARCADIA-004)" x="318" y="35" width="1124" height="279" rx="12" class="c-region" stroke-width="1"/>
+        <rect data-graph-role="structural-frame" data-composition-frame-kind="region" data-composition-frame-id="0" data-composition-frame-label="Live under the standing exemption (GDR-KI-ARCADIA-004)" x="318" y="35" width="1124" height="279" rx="12" class="c-region" stroke-width="1"/>
 
         <rect data-graph-role="structural-frame" data-composition-frame-kind="region" data-composition-frame-id="1" data-composition-frame-label="Held: Techne Programme Hold" x="318" y="375" width="1124" height="449" rx="12" class="c-region" stroke-width="1"/>
 
@@ -507,8 +507,8 @@ rect.c-bg-rect { fill: var(--bg); }
         <text x="130" y="106" class="t-muted" font-size="9" text-anchor="middle">intent and authority</text>
         </g>
 
-        <g id="node-rig" data-node-id="rig" data-node-label="Rig: Kris's Mac" tabindex="0" role="button" aria-label="Focus Rig: Kris's Mac, Zed, Tailscale, Granted, Live until 6 November 2026 (GDR-KI-ARCADIA-004)" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="Zed, Tailscale, Granted" data-node-context="Live until 6 November 2026 (GDR-KI-ARCADIA-004)">
-          <title>Rig: Kris's Mac · Zed, Tailscale, Granted · Live until 6 November 2026 (GDR-KI-ARCADIA-004)</title>
+        <g id="node-rig" data-node-id="rig" data-node-label="Rig: Kris's Mac" tabindex="0" role="button" aria-label="Focus Rig: Kris's Mac, Zed, Tailscale, Granted, Live under the standing exemption (GDR-KI-ARCADIA-004)" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="Zed, Tailscale, Granted" data-node-context="Live under the standing exemption (GDR-KI-ARCADIA-004)">
+          <title>Rig: Kris's Mac · Zed, Tailscale, Granted · Live under the standing exemption (GDR-KI-ARCADIA-004)</title>
           <rect x="340" y="60" width="180" height="64" rx="6" class="c-mask"/>
           <rect x="340" y="60" width="180" height="64" rx="6" class="c-frontend" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="frontend" class="semantic-sigil s-frontend" transform="translate(346 66) scale(0.6875)">
@@ -521,8 +521,8 @@ rect.c-bg-rect { fill: var(--bg); }
         <text x="430" y="106" class="t-muted" font-size="9" text-anchor="middle">Zed, Tailscale, Granted</text>
         </g>
 
-        <g id="node-tailnet" data-node-id="tailnet" data-node-label="Tailnet" tabindex="0" role="button" aria-label="Focus Tailnet, Tailscale SSH, Live until 6 November 2026 (GDR-KI-ARCADIA-004)" aria-pressed="false" data-node-kind="security" data-node-sublabel="Tailscale SSH" data-node-context="Live until 6 November 2026 (GDR-KI-ARCADIA-004)">
-          <title>Tailnet · Tailscale SSH · Live until 6 November 2026 (GDR-KI-ARCADIA-004)</title>
+        <g id="node-tailnet" data-node-id="tailnet" data-node-label="Tailnet" tabindex="0" role="button" aria-label="Focus Tailnet, Tailscale SSH, Live under the standing exemption (GDR-KI-ARCADIA-004)" aria-pressed="false" data-node-kind="security" data-node-sublabel="Tailscale SSH" data-node-context="Live under the standing exemption (GDR-KI-ARCADIA-004)">
+          <title>Tailnet · Tailscale SSH · Live under the standing exemption (GDR-KI-ARCADIA-004)</title>
           <rect x="640" y="60" width="180" height="64" rx="6" class="c-mask"/>
           <rect x="640" y="60" width="180" height="64" rx="6" class="c-security" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="security" class="semantic-sigil s-security" transform="translate(646 66) scale(0.6875)">
@@ -533,8 +533,8 @@ rect.c-bg-rect { fill: var(--bg); }
         <text x="730" y="106" class="t-muted" font-size="9" text-anchor="middle">Tailscale SSH</text>
         </g>
 
-        <g id="node-footprint" data-node-id="footprint" data-node-label="Footprint: agent host" tabindex="0" role="button" aria-label="Focus Footprint: agent host, ki-techne-agent-host, Live until 6 November 2026 (GDR-KI-ARCADIA-004)" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="ki-techne-agent-host" data-node-context="Live until 6 November 2026 (GDR-KI-ARCADIA-004)">
-          <title>Footprint: agent host · ki-techne-agent-host · Live until 6 November 2026 (GDR-KI-ARCADIA-004)</title>
+        <g id="node-footprint" data-node-id="footprint" data-node-label="Footprint: agent host" tabindex="0" role="button" aria-label="Focus Footprint: agent host, ki-techne-agent-host, Live under the standing exemption (GDR-KI-ARCADIA-004)" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="ki-techne-agent-host" data-node-context="Live under the standing exemption (GDR-KI-ARCADIA-004)">
+          <title>Footprint: agent host · ki-techne-agent-host · Live under the standing exemption (GDR-KI-ARCADIA-004)</title>
           <rect x="940" y="60" width="180" height="64" rx="6" class="c-mask"/>
           <rect x="940" y="60" width="180" height="64" rx="6" class="c-frontend" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="frontend" class="semantic-sigil s-frontend" transform="translate(946 66) scale(0.6875)">
@@ -547,8 +547,8 @@ rect.c-bg-rect { fill: var(--bg); }
         <text x="1030" y="106" class="t-muted" font-size="9" text-anchor="middle">ki-techne-agent-host</text>
         </g>
 
-        <g id="node-sessions" data-node-id="sessions" data-node-label="Agent sessions" tabindex="0" role="button" aria-label="Focus Agent sessions, Kris's own actions, Live until 6 November 2026 (GDR-KI-ARCADIA-004)" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="Kris's own actions" data-node-context="Live until 6 November 2026 (GDR-KI-ARCADIA-004)">
-          <title>Agent sessions · Kris's own actions · Live until 6 November 2026 (GDR-KI-ARCADIA-004)</title>
+        <g id="node-sessions" data-node-id="sessions" data-node-label="Agent sessions" tabindex="0" role="button" aria-label="Focus Agent sessions, Kris's own actions, Live under the standing exemption (GDR-KI-ARCADIA-004)" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="Kris's own actions" data-node-context="Live under the standing exemption (GDR-KI-ARCADIA-004)">
+          <title>Agent sessions · Kris's own actions · Live under the standing exemption (GDR-KI-ARCADIA-004)</title>
           <rect x="1240" y="60" width="180" height="64" rx="6" class="c-mask"/>
           <rect x="1240" y="60" width="180" height="64" rx="6" class="c-frontend" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="frontend" class="semantic-sigil s-frontend" transform="translate(1246 66) scale(0.6875)">
@@ -561,8 +561,8 @@ rect.c-bg-rect { fill: var(--bg); }
         <text x="1330" y="106" class="t-muted" font-size="9" text-anchor="middle">Kris's own actions</text>
         </g>
 
-        <g id="node-operator" data-node-id="operator" data-node-label="Operator / Architect" tabindex="0" role="button" aria-label="Focus Operator / Architect, account-local role, human only, Live until 6 November 2026 (GDR-KI-ARCADIA-004)" aria-pressed="false" data-node-kind="security" data-node-sublabel="account-local role, human only" data-node-context="Live until 6 November 2026 (GDR-KI-ARCADIA-004)">
-          <title>Operator / Architect · account-local role, human only · Live until 6 November 2026 (GDR-KI-ARCADIA-004)</title>
+        <g id="node-operator" data-node-id="operator" data-node-label="Operator / Architect" tabindex="0" role="button" aria-label="Focus Operator / Architect, account-local role, human only, Live under the standing exemption (GDR-KI-ARCADIA-004)" aria-pressed="false" data-node-kind="security" data-node-sublabel="account-local role, human only" data-node-context="Live under the standing exemption (GDR-KI-ARCADIA-004)">
+          <title>Operator / Architect · account-local role, human only · Live under the standing exemption (GDR-KI-ARCADIA-004)</title>
           <rect x="340" y="230" width="180" height="64" rx="6" class="c-mask"/>
           <rect x="340" y="230" width="180" height="64" rx="6" class="c-security" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="security" class="semantic-sigil s-security" transform="translate(346 236) scale(0.6875)">
@@ -573,8 +573,8 @@ rect.c-bg-rect { fill: var(--bg); }
         <text x="430" y="276" class="t-muted" font-size="9" text-anchor="middle">account-local role, human only</text>
         </g>
 
-        <g id="node-techne" data-node-id="techne" data-node-label="Techne" tabindex="0" role="button" aria-label="Focus Techne, ki-techne-harness, Live until 6 November 2026 (GDR-KI-ARCADIA-004)" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="ki-techne-harness" data-node-tag="provisioning path" data-node-context="Live until 6 November 2026 (GDR-KI-ARCADIA-004)">
-          <title>Techne · ki-techne-harness · Live until 6 November 2026 (GDR-KI-ARCADIA-004) · provisioning path</title>
+        <g id="node-techne" data-node-id="techne" data-node-label="Techne" tabindex="0" role="button" aria-label="Focus Techne, ki-techne-harness, Live under the standing exemption (GDR-KI-ARCADIA-004)" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="ki-techne-harness" data-node-tag="provisioning path" data-node-context="Live under the standing exemption (GDR-KI-ARCADIA-004)">
+          <title>Techne · ki-techne-harness · Live under the standing exemption (GDR-KI-ARCADIA-004) · provisioning path</title>
           <rect x="940" y="230" width="180" height="64" rx="6" class="c-mask"/>
           <rect x="940" y="230" width="180" height="64" rx="6" class="c-frontend" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="frontend" class="semantic-sigil s-frontend" transform="translate(946 236) scale(0.6875)">
@@ -751,9 +751,9 @@ rect.c-bg-rect { fill: var(--bg); }
         </g>
 
         <!-- Boundary labels (foreground masks keep routes out of titles) -->
-        <g data-graph-role="structural-frame-label" data-composition-frame-id="0" data-composition-frame-kind="region" data-composition-frame-label="Live until 6 November 2026 (GDR-KI-ARCADIA-004)">
-          <rect data-graph-role="structural-frame-label-mask" x="322" y="39" width="279.62841529677416" height="17" rx="3" class="c-mask"/>
-          <text data-boundary-label="" x="326" y="52.561291322580644" class="t-cloud" font-size="9.561291322580644" font-weight="600">Live until 6 November 2026 (GDR-KI-ARCADIA-004)</text>
+        <g data-graph-role="structural-frame-label" data-composition-frame-id="0" data-composition-frame-kind="region" data-composition-frame-label="Live under the standing exemption (GDR-KI-ARCADIA-004)">
+          <rect data-graph-role="structural-frame-label-mask" x="322" y="39" width="319.7858388516128" height="17" rx="3" class="c-mask"/>
+          <text data-boundary-label="" x="326" y="52.561291322580644" class="t-cloud" font-size="9.561291322580644" font-weight="600">Live under the standing exemption (GDR-KI-ARCADIA-004)</text>
         </g>
 
         <g data-graph-role="structural-frame-label" data-composition-frame-id="1" data-composition-frame-kind="region" data-composition-frame-label="Held: Techne Programme Hold">
