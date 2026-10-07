@@ -21,7 +21,7 @@ On 2026-11-06, Kris decides the limited remote agent prototype's future: renew i
 
 ## Context
 
-KI-ARCADIA-GOV-020 defined the prototype, a separate EC2 agent host, `ki-techne-agent-host`, reached only over Tailscale SSH, and Kris accepted it on 2026-10-07. Its time-box bound sets a 30-day term: the prototype authority lapses on 2026-11-06 unless Kris renews it, and without an explicit extension the prototype is torn down on that date. [[GDR-KI-ARCADIA-004-time-boxed-remote-prototype-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] records the matching time-boxed exemption from the [[Techne Programme Hold]]. GOV-020 noted that no record tracked the review date; this record tracks it.
+KI-ARCADIA-GOV-020 defined the prototype, a separate EC2 agent host, `ki-techne-agent-host`, reached only over Tailscale SSH, and Kris accepted it on 2026-10-07. Its time-box bound sets a 30-day term: the prototype authority lapses on 2026-11-06 unless Kris renews it, and without an explicit extension the prototype is torn down on that date. [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] records the matching time-boxed exemption from the [[Techne Programme Hold]]. GOV-020 noted that no record tracked the review date; this record tracks it.
 
 The host build, runbook, kill switch and teardown are in `ki-techne-harness` (`TECHNE-TOOLS-OPS-009`, `docs/guides/operator/agent-host.md`), and the Mac-side tooling is in the chezmoi source (`DOTFILES-UE-068`).
 

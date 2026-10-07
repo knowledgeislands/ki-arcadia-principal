@@ -8,7 +8,7 @@ author: AI-assisted
 
 ## Overview
 
-This diagram maps the limited remote agent prototype onto Knowledge Islands concepts, and separates what is live for the prototype from what stays held under the [[Techne Programme Hold]]. It reads the prototype in the vocabulary of the model rather than of AWS, so that a technology choice is never mistaken for a concept. [[KI-ARCADIA-GOV-020-limited-remote-agent-prototype|KI-ARCADIA-GOV-020]] defined the prototype and [[GDR-KI-ARCADIA-004-time-boxed-remote-prototype-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] records its time-boxed exemption from the hold.
+This diagram maps the limited remote agent prototype onto Knowledge Islands concepts, and separates what is live for the prototype from what stays held under the [[Techne Programme Hold]]. It reads the prototype in the vocabulary of the model rather than of AWS, so that a technology choice is never mistaken for a concept. [[KI-ARCADIA-GOV-020-limited-remote-agent-prototype|KI-ARCADIA-GOV-020]] defined the prototype and [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] records its time-boxed exemption from the hold.
 
 ![[Agent Host Prototype Concept Map.svg]]
 

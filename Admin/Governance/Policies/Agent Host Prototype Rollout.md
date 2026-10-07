@@ -8,7 +8,7 @@ author: AI-assisted
 
 ## Overview
 
-This diagram shows the order in which the limited remote agent prototype comes into use, and how it stops. It explains the gates of the exemption in the [[Techne Programme Hold]], which [[GDR-KI-ARCADIA-004-time-boxed-remote-prototype-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] records and [[KI-ARCADIA-GOV-020-limited-remote-agent-prototype|KI-ARCADIA-GOV-020]] defined. It illustrates the policy; where they differ, the hold and the Decision Record govern.
+This diagram shows the order in which the limited remote agent prototype comes into use, and how it stops. It explains the gates of the exemption in the [[Techne Programme Hold]], which [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] records and [[KI-ARCADIA-GOV-020-limited-remote-agent-prototype|KI-ARCADIA-GOV-020]] defined. It illustrates the policy; where they differ, the hold and the Decision Record govern.
 
 ![[Agent Host Prototype Rollout.svg]]
 

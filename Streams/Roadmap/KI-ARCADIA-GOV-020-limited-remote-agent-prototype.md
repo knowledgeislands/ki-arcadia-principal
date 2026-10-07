@@ -184,7 +184,7 @@ The tag `tag:ki-techne-agent-host` and the component names in "Moving parts" and
 
 ### Prototype definition
 
-Each line is a bound that Kris accepted on 2026-10-07 (see "Acceptance and decisions"). The [[Techne Programme Hold]] exemption and [[GDR-KI-ARCADIA-004-time-boxed-remote-prototype-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] cite this section, "Access Kris grants" and "Gate and order" as the prototype's bounds. Numbered cross-references in the refinement notes below name the list items as they then stood.
+Each line is a bound that Kris accepted on 2026-10-07 (see "Acceptance and decisions"). The [[Techne Programme Hold]] exemption and [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] cite this section, "Access Kris grants" and "Gate and order" as the prototype's bounds. Numbered cross-references in the refinement notes below name the list items as they then stood.
 
 Refined by Kris on 2026-10-07: the prototype does not use Paperclip in any form (bound 6); access moves from session-manager only to Tailscale with Zed remote over SSH (bound 3); egress adds what Tailscale needs, and Zed's release host only if the host downloads the Zed server binary (bound 4); Tailscale and Zed leave the held list, while Paperclip remote, Kitteth and messaging including Telegram stay held (bound 11).
 

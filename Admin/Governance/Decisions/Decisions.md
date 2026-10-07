@@ -23,7 +23,7 @@ Records are ordered by reveal order — the logical sequence in which the decisi
 10. [GDR-KI-ARCADIA-003](GDR-KI-ARCADIA-003-capital-governed-trade-routes.md) - Capital-governed trade routes
 11. [SDR-KI-ARCADIA-006](SDR-KI-ARCADIA-006-agents-in-the-knowledge-islands-model.md) - Agents in the Knowledge Islands Model
 12. [SDR-KI-ARCADIA-007](SDR-KI-ARCADIA-007-the-great-library-of-arcadia.md) - The Great Library of Arcadia
-13. [GDR-KI-ARCADIA-004](GDR-KI-ARCADIA-004-time-boxed-remote-prototype-exemption-from-the-techne-programme-hold.md) - Time-boxed remote prototype exemption from the Techne Programme Hold
+13. [GDR-KI-ARCADIA-004](GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold.md) - Standing agent-host exemption from the Techne Programme Hold
 
 ## Shared engineering decisions
 
