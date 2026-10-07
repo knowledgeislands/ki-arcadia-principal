@@ -5,12 +5,12 @@ area: GOV
 title: Define and authorise the limited remote agent prototype
 theme: governance
 horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: 2f06a58678cb9b575935c64fb4923a8e8606c694
 created_at: 2026-10-06T23:21:00Z
-updated_at: 2026-10-07T00:14:38Z
+updated_at: 2026-10-07T00:22:01Z
 ---
 
 # Define and Authorise the Limited Remote Agent Prototype
@@ -163,6 +163,10 @@ The goal is met: the hold now permits this one prototype for a fixed term and no
 ### Mini recap
 
 GOV-020 recorded Kris's acceptance and five decisions, amended the hold with a 30-day exemption lapsing on 2026-11-06, and added GDR-KI-ARCADIA-004 with its index and memory entries. Every audit passes. Open items are the untracked review date, the deferred credential identity and the handoff identifiers. Proposed learning route: Kris's naming principle (durable resources named by component, never by roadmap ID) to the Techné naming conventions through its own record.
+
+## Done
+
+Accepted 2026-10-07 by Kris Brown on the review packet above.
 
 ## Discussion
 
