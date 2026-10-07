@@ -7,7 +7,7 @@ initiative: knowledge-islands-model
 lifecycle: planned
 lead: Kris Brown
 target: null
-updated: 2026-10-07T17:45:00Z
+updated: 2026-10-07T18:45:00Z
 author: Written with Claude
 ---
 
@@ -25,7 +25,7 @@ This Project sits in [[knowledge-islands-model|Knowledge Islands model]]. It is 
 
 Seeded on 2026-10-07 from the checkpoint last updated on 2026-10-06; recheck before acting.
 
-- **Trades on hold.** Since decision 11 (2026-10-07) no new trades are sent, and the `.ki.toml` trade policy is being stripped back to bare tables (decision 13). The hold is due for review by 2026-10-14; the [[skill-refresh]] Project carries that review.
+- **Trades on hold.** Since decision 11 (2026-10-07) no new trades are sent, and under decision 13 every `.ki.toml` trade policy is stripped back to a bare `[skills.ki-trades]`. Arcadia's full policy (`[skills.ki-trades.territory]` and `map_bonus`) lives in Git history at commit `76e399b`, the commit before the strip. The hold is due for review by 2026-10-14; the [[skill-refresh]] Project carries that review.
 - **Health.** On track for a planned Project: one decision from Kris starts it, and nothing else blocks it. A stated judgement for Kris to confirm.
 - **Live model.** Arcadia's `.ki.toml` holds the territory in `[skills.ki-repo.territory]` (21 members as full HTTPS URLs) and the trade policy in `[skills.ki-trades.territory]`: 4 `subtypes`, 10 `[[channels]]` and 4 `[[standing]]` grants, about 180 lines with 93 repeated URLs. Members name their Capital in `[skills.ki-repo].capital`; a member's `[skills.ki-trades]` may hold only `map_bonus`. `ki` v0.7.1 enforces it and the `ki-trades` audit passes here.
 - **Specification.** [[Admin/Governance/Charter|Charter]] and [[GDR-KI-ARCADIA-003-capital-governed-trade-routes|GDR-KI-ARCADIA-003]] here; the `ki-trades` standard (`references/standards-trades.md`) and rubric, the `ki-repo` standard, and GDR-KI-HARNESS-013 in `ki-agentic-harness`; the parser in `tools-ki/src/core/trade/configuration.ts`. `ki-specifications` has no territory or trade specification or schema.
