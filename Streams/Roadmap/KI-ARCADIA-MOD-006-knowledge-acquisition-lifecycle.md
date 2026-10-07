@@ -16,7 +16,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-08-23T12:33:49Z
-updated_at: 2026-10-07T20:35:50Z
+updated_at: 2026-10-07T20:43:51Z
 ---
 
 # Knowledge Acquisition Lifecycle
@@ -77,7 +77,7 @@ The decision states the architecture but not the operational picture: what a pro
 
 ## Dependencies / blocks
 
-No local build-order dependency. Evidence comes from Arcadia's own Harbour and the read-level contract of `mcp-housekeeping-claude`. `KI-HARNESS-OPS-005` in `ki-agentic-harness` may later supply a Harbour-staged Claude capture; this record does not wait for it, and the note can be refreshed when it lands. `KI-HARNESS-GOV-087` in `ki-agentic-harness` evaluates the Obscura browser runtime, beginning with ChatGPT acquisition. Both harness items belong to the same acquisition cluster as this record: the relationship is a non-blocking cross-link in either direction, not build order, so neither appears in `blocks` or `blocked_by`.
+No local build-order dependency. Evidence comes from Arcadia's own Harbour and the read-level contract of `mcp-housekeeping-claude`. `KI-HARNESS-OPS-005` in `ki-agentic-harness` may later supply a Harbour-staged Claude capture; this record does not wait for it, and the note can be refreshed when it lands. `KI-HARNESS-OPS-005` also carries the isolated browser trial, beginning with ChatGPT acquisition, merged from `KI-HARNESS-GOV-087` on 2026-10-07. That harness item belongs to the same acquisition cluster as this record: the relationship is a non-blocking cross-link in either direction, not build order, so it appears in neither `blocks` nor `blocked_by`.
 
 ## Documentation impact
 
