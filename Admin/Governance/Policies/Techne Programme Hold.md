@@ -1,6 +1,6 @@
 ---
 note_type: admin/governance/policy
-updated: 2026-10-07T20:46:37Z
+updated: 2026-10-07T21:30:00Z
 author: AI-assisted
 ---
 
@@ -25,14 +25,14 @@ Before remote execution or environment management resumes, the Convenor must bri
 Kris Brown accepted the bounds of [[KI-ARCADIA-GOV-020-limited-remote-agent-prototype|KI-ARCADIA-GOV-020]] on 7 October 2026 and widened them the same day through [[KI-ARCADIA-GOV-023-widen-the-agent-host-exemption-to-a-standing-one|KI-ARCADIA-GOV-023]], so that the exemption covers setting the agent host up and operating it properly, not only as a stopgap. [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] records this exemption. It covers one agent host and nothing more.
 
 - **Scope.** Setting up and operating the single agent host `ki-techne-agent-host`, the EC2 instance tagged `ki-agent-host-id=agent-host` in the Techne account `655383751458` in `eu-west-1`, properly and durably: building, rebuilding or replacing that one host through the `ki-techne-harness` stack; its rerunnable workspace setup, updates and status; its operator commands in the `techne` CLI, acting only on that host; its account-local operator role, its `/ki/techne/agent-host/` parameters, its tailnet tag and policy entries; and rotating its credentials.
-- **Bounds.** Exactly one host, separate from the controller instance. No public inbound access; Kris reaches it with Tailscale SSH. Agents run on it only in sessions Kris opens, with no unattended or scheduled agents. Agents keep the local rules: explicit-path commits, no push unless Kris asks, no prune and no acceptance. A kill switch and a teardown stay documented and available. Anything outside these bounds is not exempt.
+- **Bounds.** Exactly one host, separate from the controller instance. No public inbound access; the binding owner reaches it with Tailscale SSH. Agents run on it only in sessions the binding owner opens, with no unattended or scheduled agents. Agents keep the local rules: explicit-path commits, no push unless the binding owner asks, no prune and no acceptance. A kill switch and a teardown stay documented and available. Anything outside these bounds is not exempt.
 - **Prerequisites.** The three prerequisites above are waived for this host only. They stay in force for every other remote operation.
 - **Order.** No remote action under the exemption preceded GOV-020's acceptance and the hold amendment.
 - **Credentials.** The binding owner is the person whose `agent-host` binding operates the host. Building, rebuilding and tearing down the host use the binding owner's administrator session in the Techne account; day-to-day operation (start, stop and status) uses the host's account-local operator role. No agent creates access or holds AWS credentials of its own. The host's GitHub token and Claude login are the binding owner's own identities, because only the binding owner opens sessions there; a machine identity is decided only when unattended agents arrive, and they stay held.
-- **Term.** The exemption has no automatic lapse. It stands until the island owner changes or withdraws it through the [[Enactment Process]]. The prototype review, [[KI-ARCADIA-GOV-021-review-the-agent-host-prototype|KI-ARCADIA-GOV-021]], keeps it as it stands, with `direct-host` remaining a recipe.
+- **Term.** The exemption has no automatic lapse and no fixed review date. It stands until the island owner changes or withdraws it through the [[Enactment Process]], and is revisited when this hold is reshaped. The prototype review, [[KI-ARCADIA-GOV-021-review-the-agent-host-prototype|KI-ARCADIA-GOV-021]], keeps it as it stands, with `direct-host` remaining a recipe.
 - **What stays held.** Remote Paperclip in any form; Kitteth and any Avatar; Telegram and every other messaging channel; wider K3s or controller changes; the execution fabric; every other environment; anything in the organisation or its management account; and any change to existing remote services, including the controller instance `ki-techne-ops-007-primary`, its stack and its Telegram dispatch path.
 
-[[Agent Host Prototype Rollout]] illustrates the order of these gates, the kill switch, the review and teardown.
+[[Agent Host Prototype Rollout]] illustrates the order of these gates, the kill switch and teardown.
 
 Outside this exemption the hold stands unchanged.
 
