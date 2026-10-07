@@ -1,6 +1,6 @@
 ---
 note_type: streams/index
-updated: 2026-10-07T14:05:00Z
+updated: 2026-10-07T17:45:00Z
 author: Written with Claude
 ---
 
@@ -65,6 +65,18 @@ Membership is classification, not authority. A Project may list records from any
 ## Roadmap model
 
 [[roadmap-model]] moves the territory's work records onto the roadmap model - classification by kind, purpose, Project or Initiative and component in place of themes - and finishes when the roadmap checker enforces it. It serves Platform foundations and is active. Its records span the harness, `tools-ki` and Arcadia.
+
+---
+
+## Skill refresh
+
+[[skill-refresh]] keeps every Knowledge Islands skill current and still relevant: a master checklist, a REFRESH prompt that runs as part of `ki repo audit`, and a keep, merge or retire question in every REFRESH. It serves Platform foundations and is planned. Its next step is Kris's `/ki-design-loop start skill-refresh` run.
+
+---
+
+## Specification review
+
+[[specification-review]] takes Kris through a review of every Specification across the projects, 52 files in nine repositories. It serves Platform foundations and is planned. Kris picks the first repository to review.
 
 ---
 

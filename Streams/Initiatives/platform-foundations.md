@@ -5,7 +5,7 @@ title: Platform foundations
 direction: Keep a solid, shared base under every island - the `ki` toolchain, the harness standards and a clearly owned estate.
 lifecycle: active
 lead: Kris Brown
-updated: 2026-10-07T17:30:00Z
+updated: 2026-10-07T17:45:00Z
 author: Written with Claude
 ---
 
@@ -22,12 +22,14 @@ The shared base every island stands on: the `ki` toolchain and its baseline, the
 - [[baseline-rollout]] - every island on a green estate audit with the released `ki`.
 - [[estate-factorisation]] - ownership seams, MCP policy, distribution and per-repository alignment.
 - [[roadmap-model]] - the territory adopts the roadmap model, finished when the checker enforces it.
+- [[skill-refresh]] - every skill kept current and still relevant, prompted by the repository audit.
+- [[specification-review]] - Kris reviews every Specification across the projects.
 
 ---
 
 ## Upkeep
 
-Standards upkeep is projectless: keeping the harness standards, rubrics and `ki` tooling accurate never finishes, so these records name this Initiative directly. They are mostly harness standard and audit refinements, with `tools-ki` roadmap and rubric fixes and Arcadia's own skill-extraction and page-registry handoffs.
+Standards upkeep is projectless: keeping the harness standards, rubrics and `ki` tooling accurate never finishes, so these records name this Initiative directly. They are mostly harness standard and audit refinements, with `tools-ki` roadmap and rubric fixes.
 
 - [KI-HARNESS-GOV-091](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-091-guide-opening-and-deferral.md) - Guide opening and deferral
 - [KI-HARNESS-GOV-094](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-094-check-constraint-reach.md) - Check constraint reach
@@ -40,12 +42,11 @@ Standards upkeep is projectless: keeping the harness standards, rubrics and `ki`
 - [KI-HARNESS-GOV-144](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-144-own-portable-background-delegation.md) - Own portable background delegation
 - [KI-HARNESS-GOV-145](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-145-disclose-evaluated-criteria-count.md) - Disclose evaluated criteria count
 - [KI-HARNESS-GOV-146](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-146-gate-acceptance-on-audits.md) - Gate acceptance on audits
+- [KI-HARNESS-GOV-155](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-155-detect-wikilink-name-collisions.md) - Detect wikilink name collisions
 - [KI-HARNESS-FND-014](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-FND-014-implement-remote-adapters.md) - Implement remote adapter execution
 - [KI-HARNESS-OPS-003](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-003-define-otlp-observability.md) - Define OTLP observability
 - [KI-TOOL-CLI-108](../../../tools-ki/docs/roadmap/KI-TOOL-CLI-108-roadmap-list-structural-validity.md) - Roadmap list structural validity
 - [KI-TOOL-CLI-109](../../../tools-ki/docs/roadmap/KI-TOOL-CLI-109-bound-rubric-publication-root.md) - Bound rubric publication root
-- [[KI-ARCADIA-EXT-003-ki-skill-extractions|KI-ARCADIA-EXT-003]] - KI skill extractions
-- [[KI-ARCADIA-OPS-003-page-registry|KI-ARCADIA-OPS-003]] - Page registry
 
 ---
 
