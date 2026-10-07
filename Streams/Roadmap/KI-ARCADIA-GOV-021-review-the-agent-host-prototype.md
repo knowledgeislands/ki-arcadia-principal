@@ -10,7 +10,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-07T00:33:11Z
-updated_at: 2026-10-07T00:33:11Z
+updated_at: 2026-10-07T04:25:11Z
 ---
 
 # Review the Agent-Host Prototype
@@ -35,3 +35,7 @@ The host build, runbook, kill switch and teardown are in `ki-techne-harness` (`T
 ### Review inputs
 
 The review should weigh whether the host was used and for what, its running cost, any boundary incident, the egress limits a security group cannot enforce (recorded in the runbook), and whether the GitHub token and tailnet policy stayed within their stated scope. The GitHub token expires after 30 days, close to the same date, so a renewal also needs a new token.
+
+### Operator access is an account-local role - 2026-10-07
+
+On Kris's instruction that the prototype is independent of any organisation setup, operator access is an account-local IAM role, not an IAM Identity Center permission set. The `KnowledgeIslandsTechneAgentHost` permission set and its account assignment were deleted from the organisation's Identity Center, and nothing else there was changed. The role `arn:aws:iam::655383751458:role/ki/ki-techne-agent-host-operator` carries the `KI-ARCADIA-GOV-020` least-privilege policy unchanged, can be assumed only from the Techne account's `AWSAdministratorAccess` SSO role, and is reached through the `knowledge-islands-techne-agent-host` profile. Teardown therefore removes that role rather than a permission set. `KI-ARCADIA-GOV-020` and `GDR-KI-ARCADIA-004` still say "permission set"; the review should decide whether the Decision Record needs a superseding wording.
