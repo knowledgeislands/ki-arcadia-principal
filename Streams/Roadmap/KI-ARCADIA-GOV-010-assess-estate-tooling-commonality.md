@@ -9,14 +9,14 @@ tags:
   - topic/knowledge-islands
   - topic/tooling
   - topic/factorisation
-status: draft
+status: cancelled
+resolution: obsolete
 priority: medium
-horizon: future
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-09-22T06:37:24Z
-updated_at: 2026-10-07T14:08:03Z
+updated_at: 2026-10-07T17:20:40Z
 author: Written with Codex
 ---
 
@@ -87,6 +87,12 @@ Document common user-facing conventions only after ownership and applicability a
 ### Roadmap
 
 Arcadia owns the ecosystem comparison. Each affected repository owns any subsequent implementation item and its release timing.
+
+## Cancelled
+
+Approved by Kris on 2026-10-07 under decision 13 of the state-of-play design ("Yes please, lets reduce stuff": cancel and prune obsolete or ownerless records).
+
+Its fold into the estate-factorisation Project was approved, so this Future record has no remaining purpose. The tooling-commonality question now sits in the [[estate-factorisation]] Project note. No outstanding changes.
 
 ## Discussion
 

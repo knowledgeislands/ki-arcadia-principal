@@ -12,7 +12,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-04T11:57:35Z
-updated_at: 2026-10-07T14:08:03Z
+updated_at: 2026-10-07T17:25:00Z
 ---
 
 # Gather Evidence for a Legacy Serve Fallback Policy
@@ -40,6 +40,7 @@ This record was carved out of [KI-ARCADIA-ECO-004](https://github.com/knowledgei
 
 ## Current state
 
+- **Trades are on hold (2026-10-07).** Decision 11 of the state-of-play design stops new trades. If the evidence supports a time-boxed retirement, record the hand-off as a `triage` record in `ki-agentic-harness` `docs/roadmap/` instead of preparing and submitting a trade; the trade steps below apply only if the hold is lifted.
 - `legacy: 'serve'` is declared in `src/mcp-server/index.ts` of `mcp-housekeeping-claude`, `mcp-ki-kb-fs`, `mcp-ki-kb-notion-mirror`, `mcp-gsuite`, `mcp-m365` and `mcp-git-audit`, each with a comment stating the choice is deliberate.
 - `$KI_MCP_SOURCE` resolves to `~/.local/share/chezmoi/.chezmoidata/mcp-servers.yaml`; there is no `~/.config/ki/mcp-servers.yaml`. In that inventory all six are declared as `kit-mcp-housekeeping-claude`, `kit-mcp-ki-kb-fs`, `hnr-mcp-ki-kb-notion-mirror`, `kit-mcp-gsuite`, `hnr-mcp-m365` and `kit-mcp-git-audit` with `clients: [claude-desktop, mcporter]`; Claude Code and Codex reach mcporter-managed servers through the `ki-mcporter` bridge (`clients: [claude-code, chatgpt-codex]`).
 - Client configuration exists at `~/Library/Application Support/Claude/claude_desktop_config.json`, `~/.claude.json` and `~/.codex/config.toml`; `mcporter` is installed at `/opt/homebrew/bin/mcporter`.

@@ -9,14 +9,14 @@ initiative: platform-foundations
 tags:
   - topic/knowledge-islands
   - topic/engineering
-status: ready
+status: cancelled
+resolution: obsolete
 priority: medium
-horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-06-25T15:59:04Z
-updated_at: 2026-10-07T14:08:03Z
+updated_at: 2026-10-07T17:20:40Z
 author: Written with Claude
 ---
 
@@ -107,6 +107,12 @@ None. Arcadia's island-local conventions stay as they are.
 ### Roadmap
 
 Adds one outbound work trade per genuine gap. No further Arcadia item unless the receiver declines a gap and Arcadia later wants a local mitigation.
+
+## Cancelled
+
+Approved by Kris on 2026-10-07 under decision 13 of the state-of-play design ("Yes please, lets reduce stuff": cancel and prune obsolete or ownerless records).
+
+The plan handed each gap to the harness as a work trade, and trades are on hold (decision 11). Most candidates were already mapped to existing harness skills for retirement. The relevance question (keep, merge or retire) now belongs to the [[skill-refresh]] Project. No outstanding changes.
 
 ## Discussion
 

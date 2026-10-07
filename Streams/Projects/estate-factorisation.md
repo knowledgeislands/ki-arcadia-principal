@@ -47,12 +47,12 @@ Item status observed read-only on 2026-10-05, related records on 2026-10-07; rec
 
 - **GOV-134** - MCP-1: authentication recovery and dry-run rules in the MCP standard.
 - **GOV-140** - DIST-1 extended to the MCPs, none of which has a tag or release workflow.
-- **Arcadia GOV-018** - FND-4 stale CI `KI_VERSION` pins; DIST-1. **GOV-141** is its mechanical half.
-- **BREW-011** - folded into GOV-141; stays open until GOV-141's plan places the tap work. The roadmap model maps it as a duplicate of GOV-141.
+- **Arcadia GOV-018** - cancelled as obsolete and pruned on 2026-10-07; **GOV-141** keeps the mechanical half (FND-4 stale CI `KI_VERSION` pins).
+- **BREW-011** - folded into GOV-141; cancelled and pruned.
 - **ECO-009** - OPS-1: per-client MCP binding evidence.
 - **CLI-110** - PROJ-1 and FND-4; replaces withdrawn trade `TRD-8004751b`. Arcadia's own skill projections still hold such links.
-- **Arcadia GOV-010** - folds into this Project and feeds EVAL-2; approved closure intent as superseded once a factorisation record exists.
-- Also related, held elsewhere: harness GOV-127 (ALIGN-1 pattern of per-repository adoption, in [[baseline-rollout]]; it lists `mcp-housekeeping-codex` as an adopter, so OAI-1 retirement must update it), `tools-ki` CLI-111 (FND-5 dissemination routes, in [[territories-and-trades]]) and chezmoi `DOTFILES-UE-028` (FND-4 roadmap-shape drift, in Rig workstation hygiene). `ki-website` `KI-WEB-SITE-042` (DIST-1 website release presentation) is done and pruned.
+- **Arcadia GOV-010** - folded into this Project; cancelled and pruned on 2026-10-07.
+- Also related, held elsewhere: harness GOV-127 (ALIGN-1 pattern of per-repository adoption, in [[baseline-rollout]]; it lists `mcp-housekeeping-codex` as an adopter, so OAI-1 retirement must update it), and chezmoi `DOTFILES-UE-028` (FND-4 roadmap-shape drift, in Rig workstation hygiene). `ki-website` `KI-WEB-SITE-042` (DIST-1 website release presentation) is done and pruned.
 
 Phase specifications (purpose, deliverables, completion gates, dependencies) are at `25be451:+/knowledge-islands-factorisation-roadmap.md`. Where they mention `ki-techne-principal` or `ki-plugins`, read Arcadia and "no plugin projection" instead.
 
@@ -84,8 +84,6 @@ Membership is classification, not authority; each owning repository decides whet
 - [KI-HARNESS-GOV-141](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-141-auto-bump-released-ki-pin.md) - Auto-bump released ki pin
 - [KI-TOOL-CLI-110](../../../tools-ki/docs/roadmap/KI-TOOL-CLI-110-report-dangling-projection-links.md) - Report dangling projection links
 - [[KI-ARCADIA-ECO-009-legacy-serve-fallback-policy|KI-ARCADIA-ECO-009]] - Gather evidence for a legacy serve fallback policy
-- [[KI-ARCADIA-GOV-010-assess-estate-tooling-commonality|KI-ARCADIA-GOV-010]] - Assess estate-wide tooling commonality
-- [[KI-ARCADIA-GOV-018-ci-policy-principle|KI-ARCADIA-GOV-018]] - CI policy principle
 
 ---
 

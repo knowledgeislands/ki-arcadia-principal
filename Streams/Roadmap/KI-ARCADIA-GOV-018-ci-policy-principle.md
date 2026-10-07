@@ -7,13 +7,13 @@ kind: deliver
 purpose: governance
 project: estate-factorisation
 component: engineering-practice
-horizon: now
-status: draft
+status: cancelled
+resolution: obsolete
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-06T01:20:06Z
-updated_at: 2026-10-07T14:08:03Z
+updated_at: 2026-10-07T17:20:40Z
 ---
 
 # CI Policy Principle
@@ -36,6 +36,12 @@ Two related gaps sit outside Arcadia in the same consolidation plan: a harness i
 - Arcadia owns the principle and its rationale in Engineering Practice. It does not own the `ki-engineering` rubric, CI workflow templates, the tap consumer list or any receiver workflow.
 - No write to `ki-agentic-harness`, `homebrew-tap`, `tools-ki` or any other repository, and no change to any repository's CI.
 - No remote operation under the [[Techne Programme Hold]].
+
+## Cancelled
+
+Approved by Kris on 2026-10-07 under decision 13 of the state-of-play design ("Yes please, lets reduce stuff": cancel and prune obsolete or ownerless records).
+
+Its premise that CI has no audit gate is stale: the `ki-engineering` rubric carries `CI-1`, and automatic pin bumps are owned by KI-HARNESS-GOV-141 in `knowledgeislands/ki-agentic-harness` (`docs/roadmap/KI-HARNESS-GOV-141-auto-bump-released-ki-pin.md`). The remaining principle note had no driver. No outstanding changes.
 
 ## Discussion
 

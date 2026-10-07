@@ -7,7 +7,7 @@ initiative: knowledge-islands-model
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-07T16:59:06Z
+updated: 2026-10-07T17:45:00Z
 author: Written with Claude
 ---
 
@@ -28,8 +28,7 @@ Created on 2026-10-07 from the theme map and the records' current status; no che
 - **Health.** Not yet judged: the theme has had no checkpoint or review, so no basis exists for a health call. Kris to state one.
 - Several records are `ready` and independent of one another; the rest are `draft`.
 - `KI-ARCADIA-OPS-002` was cancelled as obsolete and pruned on 2026-10-07.
-- [[KI-ARCADIA-OPS-008-scheduled-automations|KI-ARCADIA-OPS-008]] moved here from [[baseline-rollout]] on 2026-10-07.
-- [[KI-ARCADIA-OPS-007-agent-session-improvements|KI-ARCADIA-OPS-007]] carries a work trade to the harness that [[territories-and-trades]] must preserve.
+- On 2026-10-07, under decision 13 of the state-of-play design, six records were cancelled and pruned: `KI-ARCADIA-GOV-005` (council review), `KI-ARCADIA-MOD-004` (no driver), and `KI-ARCADIA-OPS-006`, `KI-ARCADIA-OPS-007`, `KI-ARCADIA-OPS-008` and `KI-ARCADIA-OPS-009` (premised on the retired Cowork scheduled-task stack or on work trades).
 
 ### Decision
 
@@ -37,7 +36,7 @@ Kris to confirm this Project's outcome and state its health.
 
 ### Next step
 
-Record the approved closure of KI-ARCADIA-OPS-002 through `ki-accept`, then choose which `ready` record to deliver first.
+Choose which of the two `ready` records, [[KI-ARCADIA-MOD-005-intention|KI-ARCADIA-MOD-005]] or [[KI-ARCADIA-OPS-004-bullet-journal-support|KI-ARCADIA-OPS-004]], to deliver first.
 
 ---
 
@@ -46,16 +45,10 @@ Record the approved closure of KI-ARCADIA-OPS-002 through `ki-accept`, then choo
 Membership is classification, not authority; each owning repository decides whether its record joins when the migration tags it. Status lives in each record.
 
 - [[KI-ARCADIA-GOV-001-boundary-rules|KI-ARCADIA-GOV-001]] - Boundary rules
-- [[KI-ARCADIA-GOV-005-automated-proposal-pipeline|KI-ARCADIA-GOV-005]] - Automated proposal pipeline
 - [[KI-ARCADIA-GOV-024-review-the-enactment-threshold|KI-ARCADIA-GOV-024]] - Review the enactment threshold
 - [[KI-ARCADIA-MOD-003-island-visualisation|KI-ARCADIA-MOD-003]] - Geography model and tiles
-- [[KI-ARCADIA-MOD-004-semantic-conventions|KI-ARCADIA-MOD-004]] - Semantic conventions
 - [[KI-ARCADIA-MOD-005-intention|KI-ARCADIA-MOD-005]] - Intention
 - [[KI-ARCADIA-OPS-004-bullet-journal-support|KI-ARCADIA-OPS-004]] - Bullet Journal support
-- [[KI-ARCADIA-OPS-006-workflow-integrations|KI-ARCADIA-OPS-006]] - Workflow integrations
-- [[KI-ARCADIA-OPS-007-agent-session-improvements|KI-ARCADIA-OPS-007]] - Agent session improvements
-- [[KI-ARCADIA-OPS-008-scheduled-automations|KI-ARCADIA-OPS-008]] - Scheduled automations
-- [[KI-ARCADIA-OPS-009-token-economics|KI-ARCADIA-OPS-009]] - Token economics
 
 ---
 

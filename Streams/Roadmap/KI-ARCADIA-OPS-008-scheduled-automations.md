@@ -9,14 +9,14 @@ component: operations
 tags:
   - topic/knowledge-islands
   - topic/automation
-status: ready
+status: cancelled
+resolution: obsolete
 priority: low
-horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T18:32:31Z
-updated_at: 2026-10-07T14:08:03Z
+updated_at: 2026-10-07T17:20:40Z
 author: Written with Claude
 ---
 
@@ -115,6 +115,12 @@ The Health Check definition and prompt gain the decay review; the three Tending 
 This record moves to awaiting-review on delivery. The three deferred new-task ideas stay recorded below for a future owner adoption record. The Conformance prompt's adoption-model rewrite, including its gate decision, was split out as [[KI-ARCADIA-OPS-011-rewrite-conformance-adoption-model|OPS-011]].
 
 ---
+
+## Cancelled
+
+Approved by Kris on 2026-10-07 under decision 13 of the state-of-play design ("Yes please, lets reduce stuff": cancel and prune obsolete or ownerless records).
+
+The record depends on the retired Cowork scheduled-prompt stack, and its loader was broken: 14 of 15 canonical Meta Notes paths are absent. Recurring work now follows `ki-work-housekeeping` templates and Activities. No outstanding changes.
 
 ## Discussion
 

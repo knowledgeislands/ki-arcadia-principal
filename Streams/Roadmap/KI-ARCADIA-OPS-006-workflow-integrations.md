@@ -10,14 +10,14 @@ component: resources
 tags:
   - topic/knowledge-islands
   - topic/automation
-status: ready
+status: cancelled
+resolution: obsolete
 priority: low
-horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T18:32:31Z
-updated_at: 2026-10-07T14:08:03Z
+updated_at: 2026-10-07T17:20:40Z
 author: Written with Claude
 ---
 
@@ -113,6 +113,12 @@ The two Resources notes and their folder index are the reference material; `Reso
 This record moves to awaiting-review on delivery. Any future adoption would be captured as a new Triage record.
 
 ---
+
+## Cancelled
+
+Approved by Kris on 2026-10-07 under decision 13 of the state-of-play design ("Yes please, lets reduce stuff": cancel and prune obsolete or ownerless records).
+
+The comparison was framed against the Cowork scheduled-task stack, which is retired. No outstanding changes.
 
 ## Discussion
 

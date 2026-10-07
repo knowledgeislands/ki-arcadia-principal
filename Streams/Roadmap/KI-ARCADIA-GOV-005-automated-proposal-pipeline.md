@@ -9,14 +9,14 @@ project: island-model-and-tending
 component: operations
 tags:
   - topic/knowledge-islands
-status: ready
+status: cancelled
+resolution: obsolete
 priority: medium
-horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T00:13:43Z
-updated_at: 2026-10-07T14:08:03Z
+updated_at: 2026-10-07T17:20:40Z
 author: Written with Claude
 ---
 
@@ -114,6 +114,12 @@ The new Definition and Prompt notes are the guidance; the two Tending index note
 This record moves to awaiting-review on delivery. A future record may adopt a scheduled realisation through the Charter if the manual activity proves useful.
 
 ---
+
+## Cancelled
+
+Approved by Kris on 2026-10-07 under decision 13 of the state-of-play design ("Yes please, lets reduce stuff": cancel and prune obsolete or ownerless records).
+
+The record was built around council review, which is no longer the operating model. The design loop (`ki-design-loop`, from KI-HARNESS-GOV-152) now owns how Projects and their records mature, and `ki-plan` owns readiness. No outstanding changes.
 
 ## Discussion
 

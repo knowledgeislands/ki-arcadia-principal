@@ -8,14 +8,14 @@ project: island-model-and-tending
 tags:
   - topic/knowledge-islands
   - topic/ai
-status: ready
+status: cancelled
+resolution: obsolete
 priority: low
-horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T18:32:31Z
-updated_at: 2026-10-07T14:08:03Z
+updated_at: 2026-10-07T17:20:40Z
 author: Written with Claude
 ---
 
@@ -106,6 +106,12 @@ None in Arcadia. The harness may update `ki-subagents` guidance if it accepts th
 This record moves to awaiting-review on delivery, with possibly one outbound work trade to `ki-agentic-harness`; any harness roadmap record is created by the receiver on receipt.
 
 ---
+
+## Cancelled
+
+Approved by Kris on 2026-10-07 under decision 13 of the state-of-play design ("Yes please, lets reduce stuff": cancel and prune obsolete or ownerless records).
+
+The four April 2026 agent-session ideas are covered by current harness capability, and the hand-off route it planned (work trades) is on hold. No outstanding changes.
 
 ## Discussion
 

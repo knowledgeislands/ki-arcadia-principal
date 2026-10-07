@@ -9,14 +9,14 @@ component: operations
 tags:
   - topic/knowledge-islands
   - topic/ai
-status: ready
+status: cancelled
+resolution: obsolete
 priority: low
-horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T18:43:39Z
-updated_at: 2026-10-07T14:08:03Z
+updated_at: 2026-10-07T17:20:40Z
 author: Written with Claude
 ---
 
@@ -117,6 +117,12 @@ The new Token Economics note is the guidance; `Claude.md` and `Authoring.md` gai
 This record moves to awaiting-review on delivery and supplies the gate pattern consumed by OPS-008.
 
 ---
+
+## Cancelled
+
+Approved by Kris on 2026-10-07 under decision 13 of the state-of-play design ("Yes please, lets reduce stuff": cancel and prune obsolete or ownerless records).
+
+Its scope was scheduled-task prompt design under the retired Cowork stack. The harness `ki-tokenomics` skill now owns portable context budgets and model-purpose policy, and Arcadia declares it in `.ki.toml`. No outstanding changes.
 
 ## Discussion
 

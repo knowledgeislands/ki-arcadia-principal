@@ -9,14 +9,15 @@ initiative: platform-foundations
 tags:
   - topic/knowledge-islands
   - topic/conventions
-status: ready
+status: cancelled
+resolution: superseded
+resolution_target: KI-HARNESS-GOV-155
 priority: medium
-horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T20:40:18Z
-updated_at: 2026-10-07T14:08:03Z
+updated_at: 2026-10-07T17:20:40Z
 author: Written with Claude
 ---
 
@@ -85,6 +86,12 @@ None. Arcadia authoring guidance already defers link rules to `ki-repo-kb`.
 ### Roadmap
 
 Adds one outbound work trade to `ki-agentic-harness`. No further Arcadia item is expected unless the receiver declines and Arcadia later wants a local mitigation.
+
+## Cancelled
+
+Approved by Kris on 2026-10-07 under decision 13 of the state-of-play design ("Yes please, lets reduce stuff": cancel and prune obsolete or ownerless records).
+
+The deliverable was a work trade, and trades are on hold (decision 11). The live defect, that nothing mechanically detects wikilink leaf-name collisions, is recorded directly in the receiving repository as KI-HARNESS-GOV-155 in `knowledgeislands/ki-agentic-harness` (`docs/roadmap/KI-HARNESS-GOV-155-detect-wikilink-name-collisions.md`). Arcadia still has colliding leaf names to repair once the check exists.
 
 ## Discussion
 

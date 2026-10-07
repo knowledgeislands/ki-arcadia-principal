@@ -7,7 +7,7 @@ initiative: knowledge-islands-model
 lifecycle: planned
 lead: Kris Brown
 target: null
-updated: 2026-10-07T14:05:00Z
+updated: 2026-10-07T17:45:00Z
 author: Written with Claude
 ---
 
@@ -25,6 +25,7 @@ This Project sits in [[knowledge-islands-model|Knowledge Islands model]]. It is 
 
 Seeded on 2026-10-07 from the checkpoint last updated on 2026-10-06; recheck before acting.
 
+- **Trades on hold.** Since decision 11 (2026-10-07) no new trades are sent, and the `.ki.toml` trade policy is being stripped back to bare tables (decision 13). The hold is due for review by 2026-10-14; the [[skill-refresh]] Project carries that review.
 - **Health.** On track for a planned Project: one decision from Kris starts it, and nothing else blocks it. A stated judgement for Kris to confirm.
 - **Live model.** Arcadia's `.ki.toml` holds the territory in `[skills.ki-repo.territory]` (21 members as full HTTPS URLs) and the trade policy in `[skills.ki-trades.territory]`: 4 `subtypes`, 10 `[[channels]]` and 4 `[[standing]]` grants, about 180 lines with 93 repeated URLs. Members name their Capital in `[skills.ki-repo].capital`; a member's `[skills.ki-trades]` may hold only `map_bonus`. `ki` v0.7.1 enforces it and the `ki-trades` audit passes here.
 - **Specification.** [[Admin/Governance/Charter|Charter]] and [[GDR-KI-ARCADIA-003-capital-governed-trade-routes|GDR-KI-ARCADIA-003]] here; the `ki-trades` standard (`references/standards-trades.md`) and rubric, the `ki-repo` standard, and GDR-KI-HARNESS-013 in `ki-agentic-harness`; the parser in `tools-ki/src/core/trade/configuration.ts`. `ki-specifications` has no territory or trade specification or schema.
@@ -43,10 +44,10 @@ Changes: short member names (a bare name is the Capital's GitHub owner, `owner/r
 
 ### Related roadmap items
 
-- **Stale route wording.** [[KI-ARCADIA-EXT-003-ki-skill-extractions|KI-ARCADIA-EXT-003]] and [[KI-ARCADIA-OPS-003-page-registry|KI-ARCADIA-OPS-003]] still cite the retired `[skills.ki-trades.routes."knowledgeislands/ki-agentic-harness"]` declaration; the route now comes from the Capital's `harness-maintenance` channel.
-- **Routes in use that any reshape must preserve.** [[KI-ARCADIA-ECO-009-legacy-serve-fallback-policy|KI-ARCADIA-ECO-009]] and [[KI-ARCADIA-OPS-007-agent-session-improvements|KI-ARCADIA-OPS-007]] (work trades from Arcadia to the harness); `KI-HARNESS-GOV-131` in `ki-agentic-harness` (knowledge trades from the harness to `ki-website` and `apps-observatory`).
+- **Stale route wording.** `KI-ARCADIA-EXT-003` and `KI-ARCADIA-OPS-003` cited the retired `[skills.ki-trades.routes."knowledgeislands/ki-agentic-harness"]` declaration. Both were cancelled on 2026-10-07.
+- **Routes in use that any reshape must preserve.** [[KI-ARCADIA-ECO-009-legacy-serve-fallback-policy|KI-ARCADIA-ECO-009]] (a possible work trade from Arcadia to the harness; while trades are on hold it records the hand-off directly); `KI-HARNESS-GOV-131` in `ki-agentic-harness` (knowledge trades from the harness to `ki-website` and `apps-observatory`).
 - **Evidence for exchange across territories.** `KI-HARNESS-GOV-123`, `KI-HARNESS-GOV-124` (done and pruned) and `KI-HARNESS-GOV-125` in `ki-agentic-harness` were raised by `5g-emerge-phase2` (HNR), which has no route to the harness, so Kris relays findings by hand. In `hnr-agentic-harness`, GDR-HNR-HARNESS-002 and HNR-HARNESS-003 still name the closed KI-ARCADIA-GOV-016 as owner of that exchange.
-- **No sender-side withdrawal.** The trade standard has no way for a sender to withdraw a submitted trade the receiver never received. On 2026-10-07 the harness trades `TRD-8004751b` and `TRD-d03495e9` to `tools-ki` were withdrawn by hand under Kris's explicit one-off exception (harness `9cac0452`); their content is now `tools-ki` records `KI-TOOL-CLI-110` and `KI-TOOL-CLI-111`. `KI-TOOL-CLI-111` requires a withdraw command and notes the matching `ki-trades` standard change as a harness handoff, now harness GOV-148.
+- **No sender-side withdrawal.** The trade standard has no way for a sender to withdraw a submitted trade the receiver never received. On 2026-10-07 the harness trades `TRD-8004751b` and `TRD-d03495e9` to `tools-ki` were withdrawn by hand under Kris's explicit one-off exception (harness `9cac0452`); their content is now `tools-ki` records `KI-TOOL-CLI-110` and `KI-TOOL-CLI-111`. `KI-TOOL-CLI-111` requires a withdraw command and notes the matching `ki-trades` standard change as a harness handoff, harness `KI-HARNESS-GOV-148`. Both records were cancelled on 2026-10-07 while trades are on hold; the hold review decides whether the need returns.
 - **No item yet** covers the trade-configuration simplification itself.
 
 ### Decision
@@ -55,7 +56,7 @@ Does Kris accept the proposed form, in particular `"*"` auto-granting harness ro
 
 ### Next step
 
-Agree the proposed form with Kris, then open an Arcadia roadmap record for the simplification with reciprocal handoffs to `ki-agentic-harness` (standard, rubric) and `tools-ki` (parser), folding in the stale wording in KI-ARCADIA-EXT-003 and KI-ARCADIA-OPS-003.
+Agree the proposed form with Kris, then open an Arcadia roadmap record for the simplification with reciprocal handoffs to `ki-agentic-harness` (standard, rubric) and `tools-ki` (parser).
 
 ---
 
@@ -71,8 +72,7 @@ Agree the proposed form with Kris, then open an Arcadia roadmap record for the s
 
 Membership is classification, not authority; each owning repository decides whether its record joins when the migration tags it. Status lives in each record.
 
-- [KI-HARNESS-GOV-148](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-148-let-senders-withdraw-trades.md) - Let senders withdraw trades
-- [KI-TOOL-CLI-111](../../../tools-ki/docs/roadmap/KI-TOOL-CLI-111-surface-undeliverable-trades.md) - Surface undeliverable trades
+None open. `KI-HARNESS-GOV-148` and `KI-TOOL-CLI-111` were cancelled on 2026-10-07 under decision 13 of the state-of-play design, because trades are on hold.
 
 ---
 

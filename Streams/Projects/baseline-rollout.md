@@ -66,7 +66,6 @@ Membership is classification, not authority; each owning repository decides whet
 - [KI-HARNESS-GOV-109](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-109-fail-when-commit-gates-absent.md) - Enforce commit gates
 - [KI-HARNESS-GOV-117](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-117-govern-hooks-beyond-packages.md) - Govern hooks beyond packages
 - [KI-HARNESS-GOV-127](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-127-adopt-dependency-cruiser-estatewide.md) - Adopt Dependency Cruiser estatewide
-- [KI-HARNESS-REV-011](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-REV-011-review-harness-automation-coverage.md) - Review harness automation
 
 ---
 
