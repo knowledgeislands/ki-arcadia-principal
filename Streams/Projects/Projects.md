@@ -86,9 +86,9 @@ Links point upwards only: a work record names its Project, and a Project names i
 
 ---
 
-## Territories and trades
+## Trades revamp
 
-[[territories-and-trades]] makes the territory trade policy succinct without changing what it grants, and retires `map_bonus`.
+[[trades-revamp]] makes the territory trade policy succinct without changing what it grants, and retires `map_bonus`.
 
 ---
 

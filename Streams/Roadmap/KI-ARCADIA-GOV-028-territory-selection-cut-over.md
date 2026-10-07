@@ -6,12 +6,12 @@ kind: deliver
 purpose: capability
 initiative: knowledge-islands-model
 horizon: now
-status: ready
+status: in-progress
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: 2a83eb526f15c8fc2b590aba6b2ad2c2ffde7a1b
 created_at: 2026-10-07T20:07:41Z
-updated_at: 2026-10-07T20:07:41Z
+updated_at: 2026-10-07T20:26:58Z
 ---
 
 # Territory selection cut-over
@@ -34,8 +34,8 @@ The duplicated Agora roster is still in use. Existing trade-policy changes are s
 
 ## Steps
 
-- [ ] Record the accepted design and coordinate the serial pilot.
-- [ ] Reconcile the trade-only scope and its references.
+- [x] Record the accepted design and coordinate the serial pilot.
+- [x] Reconcile the trade-only scope and its references.
 - [ ] After both tools pass, declare territory_prefix and retire Arcadia's Agora roster.
 - [ ] Update canonical governance references and verify the retained membership and Paperclip code.
 

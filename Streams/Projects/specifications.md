@@ -25,5 +25,5 @@ This Project sits in [[knowledge-islands-model|Knowledge Islands model]].
 
 - Kris paused this work with the [[website]] on 2026-10-07.
 - On release, the repository review goes first, since the KBEP and KBIP dispositions depend on the repository's agreed authority classes.
-- [[territories-and-trades]] asks whether territory and trade configuration should also be specified here; that question does not unpause this Project.
+- [[trades-revamp]] asks whether trade configuration should also be specified here; that question does not unpause this Project.
 - The review of Specifications in other repositories is the separate [[specification-review]] Project.

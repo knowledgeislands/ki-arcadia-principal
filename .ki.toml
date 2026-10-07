@@ -29,6 +29,7 @@ store_roles = [
   "notes",
 ]
 territory_name = "Knowledge Islands"
+territory_prefix = "ki"
 territory_members = [
   "https://github.com/knowledgeislands/apps-observatory",
   "https://github.com/knowledgeislands/homebrew-tap",

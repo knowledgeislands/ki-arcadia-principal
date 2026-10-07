@@ -56,7 +56,7 @@ The shared `-f, --filter` spelling is supported in both tools. Under the request
 
 A filter alone narrows the existing default selection. An explicit territory or estate supplies the base set; those primary scopes cannot be combined. Empty prefixes, no matches and unavailable selected repositories fail before execution. Repetition means OR.
 
-No Project note is required for delivery. Keep the delivery records proportionate, with no speculative consumer backlog. Territory identity, membership and selection belong to this rollout; trade routing and the existing trade hold remain separately owned. The remaining trade-only scope can be named `trades-revamp` once references are reconciled.
+No Project note is required for delivery. Keep the delivery records proportionate, with no speculative consumer backlog. Territory identity, membership and selection belong to this rollout; trade routing and the existing trade hold remain separately owned. The remaining trade-only scope is [[trades-revamp]], with current references reconciled.
 
 ## Owner approval
 
