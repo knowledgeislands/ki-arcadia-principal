@@ -8,13 +8,13 @@ project: island-model-and-tending
 component: model
 tags:
   - topic/knowledge-islands
-horizon: future
-status: draft
+status: cancelled
+resolution: rejected
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T19:26:42Z
-updated_at: 2026-10-07T14:08:03Z
+updated_at: 2026-10-07T20:35:45Z
 author: Written with Claude
 ---
 
@@ -45,6 +45,12 @@ Arcadia already holds draft concept material in `Pillars/Aesthetics/Isometric Ti
 ## Cross-repository relationship
 
 This record blocks `KI-WEB-SITE-001` in `knowledgeislands/ki-website`. The relationship is genuine build order: the website cannot build an interactive geography diagram until the geography model and an approved asset set exist. It is recorded in prose on both records because `blocks` and `blocked_by` hold local identifiers only. `KI-WEB-SITE-001` names this record as its waiting-for condition; when this record's outputs land in `Pillars/`, that condition is discharged regardless of this record's later review or acceptance.
+
+## Cancelled
+
+Approved by Kris on 2026-10-07 under decision 17 of the state-of-play design, which approved every cancel and merge in the easiest-first delivery plan.
+
+Resolution `rejected`: a speculative Future record whose only consumer, the website, is paused. `KI-WEB-SITE-001` in `knowledgeislands/ki-website` (`docs/roadmap/KI-WEB-SITE-001-interactive-island-geography-diagram.md`) keeps the geography need for a website restart. It leaves no outstanding change.
 
 ## Discussion
 

@@ -6,13 +6,13 @@ title: Gather evidence for a legacy serve fallback policy
 kind: investigate
 purpose: learning
 project: estate-factorisation
-horizon: now
-status: ready
+status: cancelled
+resolution: rejected
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-04T11:57:35Z
-updated_at: 2026-10-07T17:25:00Z
+updated_at: 2026-10-07T20:35:45Z
 ---
 
 # Gather Evidence for a Legacy Serve Fallback Policy
@@ -38,71 +38,11 @@ This record was carved out of [KI-ARCADIA-ECO-004](https://github.com/knowledgei
 
 ---
 
-## Current state
+## Cancelled
 
-- **Trades are on hold (2026-10-07).** Decision 11 of the state-of-play design stops new trades. If the evidence supports a time-boxed retirement, record the hand-off as a `triage` record in `ki-agentic-harness` `docs/roadmap/` instead of preparing and submitting a trade; the trade steps below apply only if the hold is lifted.
-- `legacy: 'serve'` is declared in `src/mcp-server/index.ts` of `mcp-housekeeping-claude`, `mcp-ki-kb-fs`, `mcp-ki-kb-notion-mirror`, `mcp-gsuite`, `mcp-m365` and `mcp-git-audit`, each with a comment stating the choice is deliberate.
-- `$KI_MCP_SOURCE` resolves to `~/.local/share/chezmoi/.chezmoidata/mcp-servers.yaml`; there is no `~/.config/ki/mcp-servers.yaml`. In that inventory all six are declared as `kit-mcp-housekeeping-claude`, `kit-mcp-ki-kb-fs`, `hnr-mcp-ki-kb-notion-mirror`, `kit-mcp-gsuite`, `hnr-mcp-m365` and `kit-mcp-git-audit` with `clients: [claude-desktop, mcporter]`; Claude Code and Codex reach mcporter-managed servers through the `ki-mcporter` bridge (`clients: [claude-code, chatgpt-codex]`).
-- Client configuration exists at `~/Library/Application Support/Claude/claude_desktop_config.json`, `~/.claude.json` and `~/.codex/config.toml`; `mcporter` is installed at `/opt/homebrew/bin/mcporter`.
+Approved by Kris on 2026-10-07 under decision 17 of the state-of-play design, which approved every cancel and merge in the easiest-first delivery plan.
 
----
-
-## Steps
-
-- [ ] For each of the six servers, read its inventory entry and record declared clients, launch command and package version.
-- [ ] For each declared client (Claude Desktop direct; mcporter daemon; Claude Code and Codex via `ki-mcporter`), record the client version and the rendered launch path from its configuration file.
-- [ ] For each server and client pair, determine whether the opening handshake uses the legacy `initialize` path or the modern profile: observe it from a local log or trace where one exists, otherwise infer it from the client's documented protocol support and mark the cell "inferred".
-- [ ] Write the evidence table in Discussion: server, client, launch path, client version, handshake observed or inferred, source of evidence.
-- [ ] State the conclusion: retain (some client still needs the fallback, naming the migration path first) or time-box (no client needs it).
-- [ ] If the conclusion is time-box, prepare one work trade with `ki-trade prepare` for `knowledgeislands/ki-agentic-harness`, citing `KI-ARCADIA-ECO-009` as origin and carrying the evidence table and a proposed dated retirement window. If retain, raise no trade.
-- [ ] If a trade was prepared, submit it with `ki-trade submit <TRD>` and record its `TRD-` identity in Dependencies / blocks and Discussion.
-
----
-
-## Files touched
-
-- `Streams/Roadmap/KI-ARCADIA-ECO-009-legacy-serve-fallback-policy.md`
-- `-/_TRADES/knowledgeislands/ki-agentic-harness/TRD-<hex>.md` (new, sender-owned), only on a time-box conclusion.
-
----
-
-## Verify
-
-- The evidence table covers all six servers against every client declared for each, with a launch path and an observed or inferred handshake in every row.
-- A retain or time-box conclusion is stated.
-- If a trade was raised, `-/_TRADES/knowledgeislands/ki-agentic-harness/TRD-<hex>.md` exists with `phase: submitted`, names `KI-ARCADIA-ECO-009` as origin, and its `TRD-` identity is recorded here; `ki repo audit --skill ki-trades --repo . --progress never` PASS.
-- `git diff --name-only <baseline_ref>..HEAD` in Arcadia lists only this record and, on a time-box conclusion, the trade file.
-- `git status --porcelain` in each of the six MCP repositories and in chezmoi is unchanged by this work.
-- `ki repo audit --skill ki-repo-kb-streams --repo . --progress never` PASS.
-- `ki repo audit --progress never` PASS.
-
----
-
-## Dependencies / blocks
-
-No dependency. The harness transition contract already permits retention, so nothing waits on this record. A trade, if raised, is non-blocking: this record closes once it is submitted and the harness schedules any resulting work in its own horizon. Reciprocity is carried by the trade identity recorded here and the receiver's `transferred_from` on any record it creates, not by `blocks` or `blocked_by`, which must never hold trade identities.
-
----
-
-## Documentation impact
-
-### Decision Records
-
-None in Arcadia. A retirement policy, if adopted, would be a harness Decision Record or standard change owned by `ki-agentic-harness`.
-
-### Specifications
-
-None in Arcadia. The transition compatibility rule lives in the harness `ki-repo-mcp` standard; any change is harness-owned.
-
-### Guides
-
-None. The evidence table in this record is the deliverable.
-
-### Roadmap
-
-This record moves to awaiting-review on delivery, with at most one outbound work trade to `ki-agentic-harness`; any harness roadmap record is created by the receiver on receipt.
-
----
+Resolution `rejected`: evidence for a decision nobody is waiting on. The legacy fallback is harmless, trades are on hold, and MCP-1 to MCP-3 wait on FND-5. Recapture if a fallback causes a fault. It leaves no outstanding change.
 
 ## Discussion
 

@@ -8,14 +8,14 @@ project: island-model-and-tending
 component: model
 tags:
   - topic/knowledge-islands
-status: draft
+status: cancelled
+resolution: rejected
 priority: urgent
-horizon: next
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T18:32:31Z
-updated_at: 2026-10-07T14:08:03Z
+updated_at: 2026-10-07T20:35:45Z
 author: Written with Claude
 ---
 
@@ -152,3 +152,9 @@ Not shaped to Ready during the 2026-10-04 delegated roadmap push. The record pre
 Do you still want a standalone Boundary Rules convention note with the Hard/Soft/None gate model, and if so do you accept the draft rules table, with its paths re-mapped to the current `Pillars/Philosophy/...` and `Admin/...` layout, as the starting rule set?
 
 Classified as an owner decision by the Fable reviewer under delegated autonomy (2026-10-04): The premises are stale (activity path, Enactment Process link, and every `Pillars/Admin/Governance/*` and `Pillars/Knowledge Islands` path in the table), and the rule set and severities are canonical governance content whose acceptance is the owner's under the Enactment gate.
+
+## Cancelled
+
+Approved by Kris on 2026-10-07 under decision 17 of the state-of-play design, which approved every cancel and merge in the easiest-first delivery plan.
+
+Resolution `rejected`: an April proposal with stale premises, including paths and the activity location, and no driver since. The Pillars/Resources boundary is already governed by `ki-repo-kb`. It leaves no outstanding change.
