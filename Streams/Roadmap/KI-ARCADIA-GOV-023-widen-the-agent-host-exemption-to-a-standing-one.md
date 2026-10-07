@@ -5,12 +5,12 @@ area: GOV
 title: Widen the agent-host exemption to a standing one
 theme: governance
 horizon: now
-status: ready
+status: awaiting-review
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: 68f245cd7485592f6e98d2c5642c82806721ce1d
 created_at: 2026-10-07T06:58:00Z
-updated_at: 2026-10-07T06:58:00Z
+updated_at: 2026-10-07T07:30:00Z
 ---
 
 # Widen the Agent-Host Exemption to a Standing One
@@ -47,17 +47,17 @@ Term: no automatic lapse. The exemption stands until Kris changes or withdraws i
 
 ## Current state
 
-The exemption section of the hold, GDR-KI-ARCADIA-004 and every note that summarises them still describe a 30-day term that lapses on 2026-11-06 unless renewed. Both diagrams carry a label stating the lapse: the rollout's GOV-021 node reads "renew or tear down" after "term ends", and the concept map's live region reads "Live until 6 November 2026".
+Delivered and awaiting Kris's review. The hold, GDR-KI-ARCADIA-004 and every note that summarised them now state the standing exemption; before this record they described a 30-day term lapsing on 2026-11-06 unless renewed, and both diagrams carried a lapse label.
 
 ## Steps
 
-- [ ] Amend the hold's exemption section to the scope, unchanged bounds and term above; no other section changes.
-- [ ] Amend GDR-KI-ARCADIA-004 in place to the new scope and term, retitle it "Standing agent-host exemption from the Techne Programme Hold", rename its file to match, and update every link to it.
-- [ ] Update the Decisions index entry and the hold entries in [[Policies]], [[Admin/MEMORY|MEMORY]] and `Pillars/Engineering Practice/MEMORY.md`.
-- [ ] Reshape GOV-021 into a scheduled review on 2026-11-06 of the standing exemption: scope, bounds, cost, and whether to widen or withdraw it.
-- [ ] Update the rollout and concept-map notes where they state the lapse; change the lapse labels in both Archify sources and re-render their SVGs with Archify.
-- [ ] Update the `state-of-play` and `baseline-and-cloud` checkpoints with this outcome and the rollout facts since their last update.
-- [ ] Run the verification below and write the review packet.
+- [x] Amend the hold's exemption section to the scope, unchanged bounds and term above; no other section changes.
+- [x] Amend GDR-KI-ARCADIA-004 in place to the new scope and term, retitle it "Standing agent-host exemption from the Techne Programme Hold", rename its file to match, and update every link to it.
+- [x] Update the Decisions index entry and the hold entries in [[Policies]], [[Admin/MEMORY|MEMORY]] and `Pillars/Engineering Practice/MEMORY.md`.
+- [x] Reshape GOV-021 into a scheduled review on 2026-11-06 of the standing exemption: scope, bounds, cost, and whether to widen or withdraw it.
+- [x] Update the rollout and concept-map notes where they state the lapse; change the lapse labels in both Archify sources and re-render their SVGs with Archify.
+- [x] Update the `state-of-play` and `baseline-and-cloud` checkpoints with this outcome and the rollout facts since their last update.
+- [x] Run the verification below and write the review packet.
 
 ## Files touched
 
@@ -102,6 +102,51 @@ None here. The agent-host runbook in `ki-techne-harness` may restate the term; i
 ### Roadmap
 
 GOV-021 is reshaped from renew-or-teardown into a scheduled review.
+
+## Review
+
+### Delivered
+
+The [[Techne Programme Hold]] exemption now covers setting up and operating the single agent host properly and durably, with the unchanged bounds and still-held items listed above, and no automatic lapse: it stands until Kris changes or withdraws it, with a scheduled review on 2026-11-06. GDR-KI-ARCADIA-004 is amended in place and retitled "Standing agent-host exemption from the Techne Programme Hold". The widened exemption is in force from commit `e25a7f9`, as GOV-020's was from its amendment commit; acceptance of this record closes the record, not the exemption's effect.
+
+### Change Summary
+
+- `Admin/Governance/Policies/Techne Programme Hold.md`: the exemption section is retitled "Agent-host exemption" and rewritten to the standing scope, bounds, order, credentials, term and held items; `updated` changes. No other section changes.
+- `Admin/Governance/Decisions/GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold.md`: amended in place, retitled, and renamed from `GDR-KI-ARCADIA-004-time-boxed-remote-prototype-exemption-from-the-techne-programme-hold.md`. It now also names the account-local operator role in place of the permission set.
+- `Admin/Governance/Decisions/Decisions.md`: entry 13 links the new filename and title.
+- `Admin/Governance/Policies/Policies.md`, `Admin/MEMORY.md` and `Pillars/Engineering Practice/MEMORY.md`: the hold entries state the standing exemption and review date.
+- Wikilinks to the GDR updated in GOV-020, GOV-021 and both diagram notes. GOV-020's "Files touched" and review packet still name the old path in code spans, as accepted history; they are not links.
+- `Admin/Governance/Policies/Agent Host Prototype Rollout.md`, `.archify.json` and `.svg`: the "Stop and review" paragraph states the standing term and scheduled review; labels change from "term ends", "renew or tear down", "6 Nov 2026" and "not renewed" to "scheduled review", "keep, widen or withdraw", "scheduled 6 Nov 2026" and "if withdrawn", and the kill-switch card's renewal line becomes "No lapse: stands until Kris changes or withdraws it".
+- `Pillars/Engineering Practice/Architecture/Diagrams/Agent Host Prototype Concept Map.md`, `.archify.json` and `.svg`: "time-boxed" and "live until 6 November 2026" become the standing exemption; the live region label reads "Live under the standing exemption (GDR-KI-ARCADIA-004)".
+- Both SVGs were re-rendered with Archify `finalize` at `showcase` quality and exported through the viewer's "SVG Auto" export, driven in headless Chrome; the same route reproduced the previously committed rollout SVG exactly apart from trailing whitespace, which the committed files strip.
+- `Streams/Roadmap/KI-ARCADIA-GOV-021-review-the-agent-host-prototype.md`: Goal, Context and Boundary reshaped into a scheduled review (keep, widen or reshape, or withdraw); review inputs and the operator-role note updated.
+- `+/_CHECKPOINTS/state-of-play.md` and `+/_CHECKPOINTS/baseline-and-cloud.md`: the outcome and the rollout facts since their last update (GOV-022, OPS-010, OPS-011, CLI-004, the UE-068 correction, the host running and in use).
+- This record: plan, lifecycle and review packet.
+
+Deviation: the hold keeps an "Order" bullet, restated in the past tense for the acceptance gate and kept as a standing gate for the GitHub and model API credential identity, because Arcadia holds no evidence that the identity has been decided.
+
+### Verification
+
+- `ki repo audit --repo .` (24 skills): PASS. `--skill` runs for `ki-repo-kb-streams`, `ki-decision-records`, `ki-checkpoint`, `ki-repo-kb`, `ki-repo-kb-principal`, `ki-authoring` and `ki-work`: PASS.
+- No wikilink or Markdown link anywhere targets the old GDR filename.
+- The hold's only date is the review date, stated with "until Kris changes or withdraws it"; its diff against the baseline touches only the exemption section and `updated`.
+- `archify finalize` passes validate, deliver, check and browser-check for both amended sources; the committed sources are byte-identical to the rendered ones.
+- No en-dash or em-dash in any added line outside the diagram files.
+
+### Outstanding concerns
+
+- **Credential identity and egress.** The host is in use, but Arcadia has no record that the GitHub and model API credential identity or the named-destination egress bound are settled; the owning records should confirm them.
+- **Runbook term.** The `ki-techne-harness` agent-host runbook may still describe a 30-day term; that repository owns any update.
+- **Stale checkpoint row.** `baseline-and-cloud` still says FAB-001's egress rule is to be narrowed "under OPS-008", which has merged into OPS-009; left as a fact outside this record's scope.
+- Nothing is pushed by this record; the push follows Kris's instruction for this run.
+
+### Post-change review
+
+The goal is met: the exemption, its Decision Record, every summary of them and both diagrams now describe a standing exemption for the one host with a scheduled review, and the unchanged bounds and held items are carried across intact. Scope held to the files listed. Regression risk is low; the hold's other sections are unchanged. This is the implementing agent's own rereading against Kris's instruction and the audits, not an independent review.
+
+### Mini recap
+
+GOV-023 widened the Techne Programme Hold's agent-host exemption to setting up and operating the host properly, removed its lapse in favour of a scheduled 2026-11-06 review, amended and retitled GDR-KI-ARCADIA-004 in place, reshaped GOV-021, re-rendered both diagrams, and updated the checkpoints. Every audit passes. No learning route proposed beyond the Archify SVG export note already proposed by GOV-022.
 
 ## Governance
 
