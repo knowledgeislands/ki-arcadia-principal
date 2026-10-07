@@ -65,3 +65,12 @@ The agent host `ki-techne-agent-host` is built for agents Kris starts in a sessi
 13. Everything here is within the exemption's scope as "rerunnable workspace setup, updates and status" of the one host, provided it adds no credential, no unattended process and no reach beyond the host. Nothing needs the hold reshaped.
 14. `DOTFILES-UE-020`'s hold is stale on both counts and should be released and rescoped: from a generic portable profile awaiting a remote-substrate contract to the agent host's personal profile under the recipe and binding model, with its current Goal and Boundary otherwise kept.
 15. Rollout: a pilot that proves the path end to end with the smallest useful set - `mgit`, `claude-bg`, the zsh login and a minimal shell profile - before chezmoi-rendered configuration grows. Records span `ki-techne-harness` (stack shell, `converge.sh` profile hook, pins and drift report), chezmoi (`UE-020` rescoped: allowlist, projection, host binding values), and possibly `tools-techne` (passing the profile through `host setup`, drift in `host status`). Arcadia holds the design and the Project link.
+
+## Addendum (2026-10-07, after the rebuild)
+
+Facts established after the brief was written, for the reviewers to weigh against the points above:
+
+- The host was rebuilt on 2026-10-07. It now has the OS hostname `ki-techne-agent-host` and the `zsh` package. The stack still creates `techne` with `useradd --create-home --shell /bin/bash`, so the login shell is unchanged - `ki-techne-harness/infra/aws/agent-host-stack.yaml` (lines 269 and 280).
+- `techne host setup --host agent-host` re-converged the rebuilt host: a first run made changes with no warnings or failures and a second run reported no changes; `techne host status` reports 21 repositories, none at risk.
+- On the host, `ki`, `claude` and `codex` are on `PATH`; `mgit`, `techne` and `chezmoi` are not, because `converge.sh` does not install them.
+- Kris decided that the host's GitHub token and Claude login are Kris's own identities for now, because only Kris opens sessions there; a machine identity is revisited when unattended agents arrive - `agent-host-durability` decisions (Decision 3, 2026-10-07).
