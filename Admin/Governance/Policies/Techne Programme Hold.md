@@ -1,6 +1,6 @@
 ---
 note_type: admin/governance/policy
-updated: 2026-10-04T17:20:00Z
+updated: 2026-10-07T00:13:38Z
 author: AI-assisted
 ---
 
@@ -19,6 +19,19 @@ The hold applies to using tooling to dispatch or run agents remotely and to prov
 The former `TECHNE-OPS-002` candidates `0f77071572aa649a936be3069f635ab8ea721858` and `eb7292a1f1bd515fcb7c44715caac48bfe5770ad` were never accepted. On the source's retirement they were preserved unaccepted on its archived remote; any later use must be captured afresh by an owning repository and gives no remote-operation authority.
 
 Before remote execution or environment management resumes, the Convenor must bring back evidence of the local review-to-live-main cycle and recovery of accumulated output; a review of what Paperclip already supplies and what Techné still needs to add; and a repository-owned remote-delivery policy covering destination, visibility, review, integration, synchronisation and recovery. The `ki-agent-coordination-paperclip` skill owns the reusable policy boundary. The principal explicitly decides whether to authorise, reshape or retire the remote-running work. These remote-operation prerequisites do not suspend local tool-building.
+
+## Limited remote prototype exemption
+
+Kris Brown accepted the bounds of [[KI-ARCADIA-GOV-020-limited-remote-agent-prototype|KI-ARCADIA-GOV-020]] on 7 October 2026, and [[GDR-KI-ARCADIA-004-time-boxed-remote-prototype-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] records this exemption. It permits that one limited remote agent prototype and nothing more.
+
+- **Bounds.** The prototype is one new EC2 instance, `ki-techne-agent-host`, separate from the existing controller instance, on which agents run only in sessions Kris opens. Its bounds are those accepted in GOV-020 under "Prototype definition", "Access Kris grants" and "Gate and order", as summarised in GDR-KI-ARCADIA-004; anything outside them is not exempt.
+- **Prerequisites.** The three prerequisites above are waived for this prototype only. They stay in force for every other remote operation.
+- **Order.** No remote action under the exemption, including creating the host for connection testing, precedes GOV-020's acceptance and this amendment. Agents work on the host only after Kris decides which identity holds the GitHub and model API credentials.
+- **Credentials.** The host build and any AWS action use Kris's own credentials. No agent creates access or acts in AWS on credentials of its own.
+- **Term.** The exemption lapses on 6 November 2026, 30 days from acceptance, unless Kris renews it through the [[Enactment Process]]; the review date is 6 November 2026. Without renewal the prototype is torn down and the hold applies in full.
+- **What stays held.** Remote Paperclip in any form; Kitteth and any Avatar; Telegram and every other messaging channel; wider K3s change beyond the agent host; every other environment; and any change to existing remote services, including the controller instance `ki-techne-ops-007-primary` and its Telegram dispatch path.
+
+Outside this exemption the hold stands unchanged.
 
 ## Knowledge-owner transition
 

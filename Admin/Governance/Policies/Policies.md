@@ -1,6 +1,6 @@
 ---
 note_type: admin/governance/policy
-updated: 2026-10-04T17:20:00Z
+updated: 2026-10-07T00:13:47Z
 author: AI-assisted
 ---
 
@@ -12,4 +12,4 @@ Policies hold persistent operating constraints under Arcadia's governance. Subst
 
 ## Techne Programme Hold
 
-The [[Techne Programme Hold]] restricts remote agent running and remote-environment management for Techné's two implementation products. Local tool-building and ordinary CI continue under their repository standards. Knowledge relocation does not itself accept candidates or authorise remote operations.
+The [[Techne Programme Hold]] restricts remote agent running and remote-environment management for Techné's two implementation products. Local tool-building and ordinary CI continue under their repository standards. Knowledge relocation does not itself accept candidates or authorise remote operations. One narrow exemption, recorded in GDR-KI-ARCADIA-004, permits the GOV-020 limited remote agent prototype until it lapses on 6 November 2026 unless renewed.

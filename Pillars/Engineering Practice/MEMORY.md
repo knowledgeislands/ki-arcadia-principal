@@ -1,6 +1,6 @@
 ---
 note_type: pillars/note
-updated: 2026-10-02T02:58:15Z
+updated: 2026-10-07T00:13:47Z
 author: AI-assisted
 ---
 
@@ -18,4 +18,4 @@ Current material establishes the v0.1 foundation. Remote engineering, local and 
 
 Adopted into Arcadia from [the retained Techné source](https://github.com/knowledgeislands/ki-techne-principal/blob/b25e9c950fd87715d12f76b69bb2079c3a4fc054/Pillars/Engineering%20Practice/MEMORY.md) at revision `b25e9c950fd87715d12f76b69bb2079c3a4fc054`. Arcadia owns this canonical engineering knowledge; the original source revision remains evidence.
 
-The [[Techne Programme Hold]] restricts remote agent running and remote-environment management. Local implementation, review and integration continue under the owning repositories' standards; knowledge adoption alone grants no remote-operation authority.
+The [[Techne Programme Hold]] restricts remote agent running and remote-environment management. Local implementation, review and integration continue under the owning repositories' standards; knowledge adoption alone grants no remote-operation authority. Its one exemption, for the GOV-020 limited remote agent prototype, lapses on 2026-11-06 unless renewed.

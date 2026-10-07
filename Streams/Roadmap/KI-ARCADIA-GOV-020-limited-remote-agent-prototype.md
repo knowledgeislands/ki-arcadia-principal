@@ -5,12 +5,12 @@ area: GOV
 title: Define and authorise the limited remote agent prototype
 theme: governance
 horizon: now
-status: ready
+status: in-progress
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: 2f06a58678cb9b575935c64fb4923a8e8606c694
 created_at: 2026-10-06T23:21:00Z
-updated_at: 2026-10-07T00:11:27Z
+updated_at: 2026-10-07T00:13:59Z
 ---
 
 # Define and Authorise the Limited Remote Agent Prototype
@@ -76,10 +76,10 @@ The [[Techne Programme Hold]] holds every remote operation and has no exemption.
 
 ## Steps
 
-- [ ] Reserve GDR-KI-ARCADIA-004 as the next governance serial in the collection and write it.
-- [ ] Add GDR-KI-ARCADIA-004 to the Decisions index in reveal order.
-- [ ] Amend the [[Techne Programme Hold]] with a narrow, time-boxed exemption for this prototype only, citing this record and the GDR, keeping every other part of the hold intact.
-- [ ] Update the hold entries in [[Policies]], [[Admin/MEMORY|MEMORY]] and `Pillars/Engineering Practice/MEMORY.md` to mention the exemption and its lapse date.
+- [x] Reserve GDR-KI-ARCADIA-004 as the next governance serial in the collection and write it.
+- [x] Add GDR-KI-ARCADIA-004 to the Decisions index in reveal order.
+- [x] Amend the [[Techne Programme Hold]] with a narrow, time-boxed exemption for this prototype only, citing this record and the GDR, keeping every other part of the hold intact.
+- [x] Update the hold entries in [[Policies]], [[Admin/MEMORY|MEMORY]] and `Pillars/Engineering Practice/MEMORY.md` to mention the exemption and its lapse date.
 - [ ] Run the verification below and write the review packet.
 
 ## Files touched
