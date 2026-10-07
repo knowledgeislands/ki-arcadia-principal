@@ -27,7 +27,7 @@ Records are ordered by reveal order — the logical sequence in which the decisi
 
 ## Shared engineering decisions
 
-Arcadia maintains these canonical TECHNE records; their original identifiers are preserved as shared records outside the local KI-ARCADIA series. The retained source copies are semantically identical projections, not a second decision authority.
+Arcadia maintains these canonical TECHNE records; their original identifiers are preserved outside the local KI-ARCADIA series. Those marked as shared records have semantically identical retained source copies, not a second decision authority; the archived copy of ADR-TECHNE-003 is historical evidence only.
 
 1. [GDR-TECHNE-001](GDR-TECHNE-001-adopting-decision-records.md)
 2. [ADR-TECHNE-001](ADR-TECHNE-001-provider-neutral-isolated-agent-execution.md)
