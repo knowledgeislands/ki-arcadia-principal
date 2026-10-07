@@ -46,7 +46,7 @@ Knowledge specific to the contributor's territory stays under that territory's o
 
 Within a territory, shared governance may define routing conventions. Each island still decides whether material may enter its stores and whether a proposed change is accepted. Membership does not remove protected audiences, source restrictions or repository-owned approval.
 
-Restricted exchange between territories requires the participating owners' explicit rules for purpose, audience, source permission, admission, adaptation and onward use. Shared citizenship, a company binding, an Agora or a checkout location is not sufficient permission. Protected source-store contents do not become public merely because their owning repository is public.
+Restricted exchange between territories requires the participating owners' explicit rules for purpose, audience, source permission, admission, adaptation and onward use. Shared citizenship, a company binding, a repository selection or a checkout location is not sufficient permission. Protected source-store contents do not become public merely because their owning repository is public.
 
 The territory owns its adopted exchange policy. Concrete repository routes and record lifecycle follow the applicable trade contract; transport implementation follows its product owner. Neither this process nor a declared route grants new implementation, release or publication authority.
 

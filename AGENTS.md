@@ -4,7 +4,7 @@ This is the runtime-neutral working convention for Arcadia Principal.
 
 ## Territorial authority
 
-Arcadia is the Capital of the Knowledge Islands territory. [Charter](Admin/Governance/Charter.md) declares its authority and [Known Lands](<Admin/Governance/Known Lands.md>) owns the internal inventory and external signposting. Registry resolution, Agora working sets and Paperclip companies confer no jurisdiction or cross-repository write authority. Each island retains its source access, canonical acceptance and product ownership.
+Arcadia is the Capital of the Knowledge Islands territory. [Charter](Admin/Governance/Charter.md) declares its authority and [Known Lands](<Admin/Governance/Known Lands.md>) owns the internal inventory and external signposting. Territory-derived repository selection, registry resolution and Paperclip companies confer no jurisdiction or cross-repository write authority. Each island retains its source access, canonical acceptance and product ownership.
 
 Arcadia owns Techné's canonical [Engineering Practice](<Pillars/Engineering Practice/Engineering Practice.md>) and engineering decisions. The former `ki-techne-principal` knowledge tree is retired and archived read-only as historical evidence; it holds no live work. `ki-techne-harness` and `tools-techne` retain separate implementation ownership.
 
