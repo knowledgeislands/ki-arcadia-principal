@@ -10,12 +10,12 @@ tags:
   - topic/knowledge-islands
 status: ready
 priority: low
-horizon: now
+horizon: next
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-28T18:32:31Z
-updated_at: 2026-10-07T17:24:21Z
+updated_at: 2026-10-07T20:35:50Z
 author: Written with Claude
 ---
 
