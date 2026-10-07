@@ -26,6 +26,7 @@ Records are ordered by reveal order — the logical sequence in which the decisi
 13. [GDR-KI-ARCADIA-004](GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold.md) - Standing agent-host exemption from the Techne Programme Hold
 14. [GDR-KI-ARCADIA-005](GDR-KI-ARCADIA-005-the-roadmap-model.md) - The roadmap model
 15. [ADR-KI-ARCADIA-002](ADR-KI-ARCADIA-002-territory-derived-repository-selection.md) - Territory-derived repository selection
+16. [ODR-KI-ARCADIA-001](ODR-KI-ARCADIA-001-keeping-work-safe-on-the-agent-host.md) - Keeping work safe on the agent host
 
 ## Shared engineering decisions
 
