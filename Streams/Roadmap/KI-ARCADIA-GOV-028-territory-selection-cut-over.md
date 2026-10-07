@@ -11,7 +11,7 @@ blocks: []
 blocked_by: []
 baseline_ref: 2a83eb526f15c8fc2b590aba6b2ad2c2ffde7a1b
 created_at: 2026-10-07T20:07:41Z
-updated_at: 2026-10-07T22:06:43Z
+updated_at: 2026-10-07T22:29:21Z
 ---
 
 # Territory selection cut-over
@@ -30,7 +30,7 @@ No new Project, speculative records, trade routing changes, other territory's go
 
 ## Current state
 
-Arcadia's duplicate Agora declaration is removed and living governance describes territory-derived selection. The exact 21 canonical identities and order, prefix ki, repository identity and Paperclip code KIS remain intact. Both committed callers retain their verified selection evidence. The integrated published harness clears the design-artifact classification boundary without changing the 11 frozen foreign files, and the offline toolchain passes its real checks. This record awaits human review; integration and publication remain with the coordinator.
+The approved rollout is published through fast-forward task-owned source integration. [KI v0.9.0](https://github.com/knowledgeislands/tools-ki/releases/tag/v0.9.0) and [mgit v0.16.0](https://github.com/knowledgeislands/tools-mgit/releases/tag/v0.16.0) are immutable and exact-tag installations pass. KI has signed archive/checksum verification, successful clean Linux installation and fresh local bootstrap of the pinned territory harness; mgit has absolute executable and manual proof. Installed callers agree for `-t ki -f tools-` and `--estate -f mcp-`, preserving membership and the ki/KIS identities. The automatic [KI formula handoff](https://github.com/knowledgeislands/homebrew-tap/pull/27) and [mgit formula handoff](https://github.com/knowledgeislands/homebrew-tap/pull/29) merged with required checks passing; both exact Homebrew upgrades and user versions are verified. Frozen design evidence, trade routing and Techne Programme Hold remain unchanged. All four records retain awaiting-review status; no acceptance or pruning occurred. The primary Arcadia checkout contains foreign history and changes, so it remains untouched; the verified owning source is published on origin/main.
 
 ## Steps
 
@@ -85,11 +85,11 @@ Focused work, Streams, Decision Record, checkpoint and principal audits and nati
 
 The coordinator cherry-picked only the owned retirement commit onto fetched published main. Foreign unpublished GOV-029 ancestors remain exclusively in their original history and checkout. The final whole and focused registered-context audits and supporting Markdown gate pass against the final harness. Parsed declarations preserve all 21 ordered identities, ki and KIS; the frozen supporting files retain their current relocated paths.
 
+Final publication evidence: [KI v0.9.0](https://github.com/knowledgeislands/tools-ki/releases/tag/v0.9.0) and [mgit v0.16.0](https://github.com/knowledgeislands/tools-mgit/releases/tag/v0.16.0). [Verified source CI](https://github.com/knowledgeislands/ki-arcadia-principal/actions/runs/37695271339) passed. Both automatic Homebrew formula handoffs merged with passing required checks, exact versions were upgraded, and read-only installed caller parity passed for both approved scopes. Immutable baseline records and original delivery packets remain unchanged.
+
 ### Outstanding concerns
 
-No required gate remains failing. Existing whole-audit warnings are recorded separately and remain outside this unit. Coordinator integration, final publication and Kris's human acceptance remain outstanding.
-
-Publication is held with the tools pending the KI clean-install harness pin authority addition. No foreign history, owner edits or review-pending records have been changed or pruned.
+Human acceptance remains outstanding. No mandatory rollout gate is failing or unchecked. Work remains awaiting review; no record was accepted or pruned. Foreign primary-checkout changes and historical user state are preserved.
 
 ### Post-change review
 

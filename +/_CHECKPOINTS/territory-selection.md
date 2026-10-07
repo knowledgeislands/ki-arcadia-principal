@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: territory-selection
 state: active
 created_at: 2026-10-07T21:34:34Z
-updated_at: 2026-10-07T22:06:43Z
+updated_at: 2026-10-07T22:29:21Z
 ---
 
 # territory-selection
@@ -14,11 +14,11 @@ Finish the approved territory-derived repository selection cut-over and retire t
 
 ## Current state
 
-All four isolated source candidates are integrated from fetched published main with only task-owned history. Final source and registered-context audits pass against the deliberately selected final harness. The combined KI producer preserves published native agent functionality; mgit prepares 0.16.0 and passes all 89 caller tests. Read-only real-estate checks preserve parity for territory ki filtered by tools- and the estate filtered by mcp-. All four records remain awaiting review. Nothing has been published by this integration run; immutable releases, user installation and downstream handoffs remain outstanding.
+The approved rollout is published through fast-forward task-owned source integration. [KI v0.9.0](https://github.com/knowledgeislands/tools-ki/releases/tag/v0.9.0) and [mgit v0.16.0](https://github.com/knowledgeislands/tools-mgit/releases/tag/v0.16.0) are immutable and exact-tag installations pass. KI has signed archive/checksum verification, successful clean Linux installation and fresh local bootstrap of the pinned territory harness; mgit has absolute executable and manual proof. Installed callers agree for `-t ki -f tools-` and `--estate -f mcp-`, preserving membership and the ki/KIS identities. The automatic [KI formula handoff](https://github.com/knowledgeislands/homebrew-tap/pull/27) and [mgit formula handoff](https://github.com/knowledgeislands/homebrew-tap/pull/29) merged with required checks passing; both exact Homebrew upgrades and user versions are verified. Frozen design evidence, trade routing and Techne Programme Hold remain unchanged. All four records retain awaiting-review status; no acceptance or pruning occurred. Primary harness and mgit checkouts were safely fast-forwarded. Dirty KI and Arcadia primary sources are preserved; KI is realised through its signed exact-tag user installation while the source runner remains available.
 
 ## Decisions made
 
-[ADR-KI-ARCADIA-002](../../Admin/Governance/Decisions/ADR-KI-ARCADIA-002-territory-derived-repository-selection.md) owns the accepted selection contract. Hard cut-over, no new Project, no speculative backlog, unchanged trade policy and local task commits are authorised. This unit has no acceptance or publication authority.
+[ADR-KI-ARCADIA-002](../../Admin/Governance/Decisions/ADR-KI-ARCADIA-002-territory-derived-repository-selection.md) owns the accepted selection contract. Decisions 1-5 and the explicit continuation authorise verified rollout publication and the required exact canonical harness pin/digest. Hard cut-over, no new Project or speculative backlog, unchanged trade policy and committed local review evidence remain in force. Human acceptance is separate.
 
 ## Files touched
 
@@ -26,8 +26,8 @@ All four isolated source candidates are integrated from fetched published main w
 
 ## Open questions
 
-The built-in KI clean-install pin still acquires a harness from before the territory contract. Updating src/core/storage/registry.ts and downloading the exact published harness commit archive for its digest lie outside the immutable packet paths and named remote calls. The coordinator has requested this narrow authority addition under KI-TOOL-CLI-114. No publication proceeds while that release-readiness boundary is unresolved; human acceptance remains separate.
+Human review of the four awaiting-review records remains separate from the completed rollout. No required publication, immutable installation, distribution or installed parity gate remains unresolved.
 
 ## Next step
 
-Resolve the exact harness-pin authority addition, then reverify the changed candidate and complete the approved fast-forward publication, immutable release/install, tap and installed parity gates. Retain the committed candidates and review records; no acceptance or pruning is inferred.
+Review the existing owning records against the committed publication evidence. No acceptance or pruning is inferred, and foreign primary-checkout changes remain untouched.
