@@ -98,7 +98,6 @@ organisation_code = "KIS"
 adapter = "kb-streams"
 
 [skills.ki-work-roadmap]
-areas = ["ECO", "EXT", "GOV", "MOD", "OPS"]
 components = [
   "calendar",
   "engineering-practice",
@@ -109,6 +108,13 @@ components = [
   "streams",
   "techne",
 ]
+
+[skills.ki-work-roadmap.areas]
+ECO = "Cross-estate coordination"
+EXT = "Ecosystem adoption and extraction"
+GOV = "Governance and operating model"
+MOD = "Knowledge Islands model"
+OPS = "Tools, automation and operating practice"
 
 [skills.ki-tokenomics]
 headroom = "recommended"
