@@ -5,12 +5,12 @@ area: GOV
 title: Define and authorise the limited remote agent prototype
 theme: governance
 horizon: now
-status: in-progress
+status: awaiting-review
 blocks: []
 blocked_by: []
 baseline_ref: 2f06a58678cb9b575935c64fb4923a8e8606c694
 created_at: 2026-10-06T23:21:00Z
-updated_at: 2026-10-07T00:13:59Z
+updated_at: 2026-10-07T00:14:38Z
 ---
 
 # Define and Authorise the Limited Remote Agent Prototype
@@ -80,7 +80,7 @@ The [[Techne Programme Hold]] holds every remote operation and has no exemption.
 - [x] Add GDR-KI-ARCADIA-004 to the Decisions index in reveal order.
 - [x] Amend the [[Techne Programme Hold]] with a narrow, time-boxed exemption for this prototype only, citing this record and the GDR, keeping every other part of the hold intact.
 - [x] Update the hold entries in [[Policies]], [[Admin/MEMORY|MEMORY]] and `Pillars/Engineering Practice/MEMORY.md` to mention the exemption and its lapse date.
-- [ ] Run the verification below and write the review packet.
+- [x] Run the verification below and write the review packet.
 
 ## Files touched
 
@@ -121,6 +121,48 @@ None in this repository. Operator guidance for connecting to the host belongs to
 ### Roadmap
 
 Enables the chezmoi operator-tooling and `ki-techne-harness` host-build handoffs. The 2026-11-06 review, renewal or teardown has no record yet; it is proposed for capture through `ki-next`.
+
+## Review
+
+### Delivered
+
+The approved boundary: the accepted bounds recorded, the [[Techne Programme Hold]] amended with one narrow, time-boxed exemption for this prototype only, and GDR-KI-ARCADIA-004 recording the decision. Excluded, as planned: any remote action, the chezmoi operator tooling and the `ki-techne-harness` host build, which are handoff items in those repositories, and any write outside this repository. Baseline `2f06a58678cb9b575935c64fb4923a8e8606c694` (the ready plan); delivery in `a16314ae1bcd9ddd6d75d14229dd5e66cad26364`.
+
+### Change Summary
+
+- `Admin/Governance/Decisions/GDR-KI-ARCADIA-004-time-boxed-remote-prototype-exemption-from-the-techne-programme-hold.md`: new governance record of the exemption, its scope, order, credentials, term and what stays held. Serial 004 is the next `GDR-KI-ARCADIA` serial in the collection; the skill derives serials from the collection and names no separate ledger.
+- `Admin/Governance/Decisions/Decisions.md`: entry 13 for GDR-KI-ARCADIA-004.
+- `Admin/Governance/Policies/Techne Programme Hold.md`: new `## Limited remote prototype exemption` section between "Holding position" and "Knowledge-owner transition", and the `updated` timestamp. No other line changed.
+- `Admin/Governance/Policies/Policies.md`, `Admin/MEMORY.md` and `Pillars/Engineering Practice/MEMORY.md`: the hold entries name the exemption and its lapse date.
+- This record: decisions, ready plan and lifecycle.
+
+No deviation from the plan.
+
+### Verification
+
+- `ki repo audit --skill ki-repo-kb-streams --repo ki-arcadia-principal`: PASS.
+- `ki repo audit --skill ki-decision-records --repo ki-arcadia-principal`: PASS.
+- `ki repo audit --skill ki-checkpoint --repo ki-arcadia-principal`: PASS.
+- `ki repo audit` for `ki-work`, `ki-repo-kb`, `ki-repo-kb-principal` and `ki-authoring`: PASS.
+- The hold states the lapse date "6 November 2026" twice; the diff of the hold against the baseline removes only the old `updated` value.
+- No en-dash or em-dash in any added line.
+
+### Outstanding concerns
+
+- **When the amendment takes effect.** The canonical gate requires explicitly approved forward work. Kris approved enacting this ready record, including the edit to the hold, so the exemption has been in force since `a16314a` was committed. Closing this record through `ki-accept` does not hold it back. If Kris wants the exemption to wait for acceptance, the hold section must say so before any remote action.
+- **Review date not tracked.** No roadmap record or Activity tracks the 2026-11-06 review, renewal or teardown. Proposed for capture through `ki-next`.
+- **Credential identity.** Which identity holds the GitHub and model API credentials is still open. It is a gate on agents working on the host, not on this record.
+- **Handoff identifiers.** The chezmoi and `ki-techne-harness` handoff records are being created in those repositories; this record names them in prose only and does not set `blocks`.
+- **Older bound numbers.** The refinement notes under "Prototype definition" cite bound numbers from earlier drafts (for example "bound 6" for Paperclip). The record flags this; the bounds themselves are unambiguous.
+- Nothing is pushed.
+
+### Post-change review
+
+The goal is met: the hold now permits this one prototype for a fixed term and nothing more, and a Decision Record carries the rationale. Scope held: six canonical files plus this record, and nothing in another repository. Regression risk is low, because the hold's existing sections are byte-identical apart from the timestamp and the exemption repeats everything that stays held, including the controller instance and its Telegram path. The review was the implementing agent's own rereading against Kris's five decisions and the audits, not an independent reviewer. The record is ready for Kris's acceptance.
+
+### Mini recap
+
+GOV-020 recorded Kris's acceptance and five decisions, amended the hold with a 30-day exemption lapsing on 2026-11-06, and added GDR-KI-ARCADIA-004 with its index and memory entries. Every audit passes. Open items are the untracked review date, the deferred credential identity and the handoff identifiers. Proposed learning route: Kris's naming principle (durable resources named by component, never by roadmap ID) to the Techné naming conventions through its own record.
 
 ## Discussion
 
