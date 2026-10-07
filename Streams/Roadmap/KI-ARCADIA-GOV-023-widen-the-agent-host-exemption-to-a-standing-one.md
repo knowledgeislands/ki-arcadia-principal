@@ -5,12 +5,12 @@ area: GOV
 title: Widen the agent-host exemption to a standing one
 theme: governance
 horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: 68f245cd7485592f6e98d2c5642c82806721ce1d
 created_at: 2026-10-07T06:58:00Z
-updated_at: 2026-10-07T07:30:00Z
+updated_at: 2026-10-07T07:40:00Z
 ---
 
 # Widen the Agent-Host Exemption to a Standing One
@@ -147,6 +147,16 @@ The goal is met: the exemption, its Decision Record, every summary of them and b
 ### Mini recap
 
 GOV-023 widened the Techne Programme Hold's agent-host exemption to setting up and operating the host properly, removed its lapse in favour of a scheduled 2026-11-06 review, amended and retitled GDR-KI-ARCADIA-004 in place, reshaped GOV-021, re-rendered both diagrams, and updated the checkpoints. Every audit passes. No learning route proposed beyond the Archify SVG export note already proposed by GOV-022.
+
+## Done
+
+Accepted 2026-10-07 by Kris Brown on the review packet above.
+
+## Discussion
+
+### Acceptance
+
+Kris Brown, 2026-10-07 09:30 CEST: "GOV-023 - accepted". The standing exemption has been in force since commit `e25a7f9`; acceptance closes this record. The outstanding concerns in the review packet stay with their owning records and repositories.
 
 ## Governance
 
