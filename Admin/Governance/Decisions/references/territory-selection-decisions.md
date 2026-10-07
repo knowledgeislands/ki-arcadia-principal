@@ -2,7 +2,7 @@
 
 **Owner:** Kris Brown - **Report:** [[territory-selection-report]] - **Date:** 2026-10-07
 
-These are the owner's own words, numbered against the report's decisions. Where they differ from the report, they win. Decision 3 needs clarification before the filter's matching domain is fixed.
+These are the owner's own words, numbered against the report's decisions. Where they differ from the report, they win. The owner approved the clarified choices below with "all agreed".
 
 ## Decisions
 
@@ -52,8 +52,14 @@ These are the owner's own words, numbered against the report's decisions. Where 
 
 The current Capital registry key is `ki-arcadia-principal`. The harness's declared prefix is `ki`; the chosen short territory identity should align with it. Paperclip's organisation code remains `KIS`.
 
-The shared `-f, --filter` spelling is supported in both tools. Under the requested cut-over it has one literal-prefix meaning, without a separate legacy glob option or Agora aliases. Which repository name supplies that prefix is still the owner's decision; the directory-name option and a registry-key alternative have been explained with examples.
+The shared `-f, --filter` spelling is supported in both tools. Under the requested cut-over it matches repository directory-name prefixes, case-sensitively and literally, before worktree expansion. There is no separate legacy glob option or Agora alias.
 
-A filter alone narrows the existing default selection. An explicit territory or estate supplies the base set; those primary scopes cannot be combined. Empty prefixes, no matches and unavailable selected repositories fail before execution. Repetition means OR if the recommended prefix rule is approved.
+A filter alone narrows the existing default selection. An explicit territory or estate supplies the base set; those primary scopes cannot be combined. Empty prefixes, no matches and unavailable selected repositories fail before execution. Repetition means OR.
 
-No Project note is required for delivery. Keep the delivery records proportionate, with no speculative consumer backlog. Territory identity, membership and selection belong to this rollout; trade routing and the existing trade hold remain separately owned. Renaming [[territories-and-trades]] to `trades-revamp` remains conditional on the scope reconciliation.
+No Project note is required for delivery. Keep the delivery records proportionate, with no speculative consumer backlog. Territory identity, membership and selection belong to this rollout; trade routing and the existing trade hold remain separately owned. The remaining trade-only scope can be named `trades-revamp` once references are reconciled.
+
+## Owner approval
+
+> all agreed
+
+This approves the clarification: use `-t ki` for the Knowledge Islands territory, preserve `KIS` for Paperclip, match directory-name prefixes in both tools, retain local defaults, perform the hard cut-over, and run the serial pilot before publishing the verified rollout.
