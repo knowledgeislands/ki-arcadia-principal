@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: baseline-and-cloud
 state: active
 created_at: 2026-10-06T20:50:00Z
-updated_at: 2026-10-06T23:17:38Z
+updated_at: 2026-10-07T00:16:00Z
 ---
 
 # baseline-and-cloud
@@ -64,6 +64,7 @@ Today's Techné controller dispatches Telegram `/run` requests as busybox-only K
 ## Decisions made
 
 - The Techne Programme Hold stands: local design, build and test may proceed, but no remote execution or remote-environment management. Moving Paperclip off the laptop is remote-environment management. Only Kris can authorise, reshape or retire the hold, once the three prerequisites are evidenced.
+- Kris accepted `KI-ARCADIA-GOV-020` on 2026-10-07: the hold carries one exemption, for a single new agent-host instance `ki-techne-agent-host` beside the untouched controller, with Kris-opened sessions only, Kris's own credentials for the build and any AWS action, and Paperclip, Kitteth, Telegram, wider K3s and existing remote services still held. It lapses on 2026-11-06 unless renewed (GDR-KI-ARCADIA-004). It does not move Paperclip and does not satisfy the three prerequisites.
 
 ## Files touched
 
@@ -71,7 +72,8 @@ None beyond this record.
 
 ## Open questions
 
-- Should the hold be reshaped so Paperclip can move to an owned host before all three prerequisites are met?
+- Should the hold be reshaped so Paperclip can move to an owned host before all three prerequisites are met? The GOV-020 exemption does not answer this.
+- By 2026-11-06: renew, reshape or let the GOV-020 exemption lapse with teardown?
 - `TECHNE-TOOLS-OPS-008`: a separate agent host, or the controller node?
 - Should `KI-ARCADIA-OPS-002` be closed as obsolete or folded into OPS-008?
 - Which repository owns reducing the laptop's standing load: chezmoi, `tools-rig` or both?

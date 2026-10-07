@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: state-of-play
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-06T23:35:08Z
+updated_at: 2026-10-07T00:15:16Z
 ---
 
 # state-of-play
@@ -26,32 +26,33 @@ This checkpoint is the single place the review is built up. Every review step an
 
 Verified read-only on 2026-10-07 at 01:15 CEST against `ki repo roadmap list`, `git log` and fetched remotes. Agent reports for every step so far are in `~/.local/state/ki/state-of-play/`.
 
-Open roadmap records by repository and status (71 open):
+Open roadmap records by repository and status, re-counted with `ki repo roadmap list` on 2026-10-07 at 02:30 CEST (76 open):
 
-| Repository | Draft | Ready | In progress | Total |
-| --- | --- | --- | --- | --- |
-| `ki-agentic-harness` | 14 | 18 | 2 | 34 |
-| `ki-arcadia-principal` | 6 | 12 | 0 | 18 |
-| chezmoi | 10 | 0 | 0 | 10 |
-| `ki-specifications` | 3 | 0 | 0 | 3 |
-| `ki-website` | 2 | 0 | 0 | 2 |
-| `homebrew-tap` | 2 | 0 | 0 | 2 |
-| `tools-ki` | 2 | 0 | 0 | 2 |
-| `ki-techne-harness` | 1 | 0 | 0 | 1 |
-| 14 other `kis` repositories | 0 | 0 | 0 | 0 |
-| **Total** | **40** | **30** | **2** | **72** |
+| Repository | Draft | Ready | In progress | Awaiting review | Total |
+| --- | --- | --- | --- | --- | --- |
+| `ki-agentic-harness` | 16 | 18 | 2 | 0 | 36 |
+| `ki-arcadia-principal` | 5 | 12 | 0 | 1 | 18 |
+| chezmoi | 10 | 0 | 0 | 0 | 10 |
+| `ki-specifications` | 3 | 0 | 0 | 0 | 3 |
+| `ki-website` | 2 | 0 | 0 | 0 | 2 |
+| `homebrew-tap` | 2 | 0 | 0 | 0 | 2 |
+| `tools-ki` | 4 | 0 | 0 | 0 | 4 |
+| `ki-techne-harness` | 1 | 0 | 0 | 0 | 1 |
+| 14 other `kis` repositories | 0 | 0 | 0 | 0 | 0 |
+| **Total** | **43** | **30** | **2** | **1** | **76** |
 
-Nothing is awaiting review. The harness and Arcadia held 36 `now` records at step 0 (harness 23: 18 ready, 3 draft, 2 in progress and paused; Arcadia 13: 12 ready, 1 draft); every record outside them and outside `now` is waiting, parked, triage, next or future with a recorded reason. Since then Arcadia added [[KI-ARCADIA-GOV-020-limited-remote-agent-prototype|KI-ARCADIA-GOV-020]] (`now`, draft), which holds the draft definition of the limited remote agent prototype and the Hold amendment as its output; Kris's acceptance of that definition gates any remote action.
+Only [[KI-ARCADIA-GOV-020-limited-remote-agent-prototype|KI-ARCADIA-GOV-020]] is awaiting review. The harness and Arcadia held 36 `now` records at step 0 (harness 23: 18 ready, 3 draft, 2 in progress and paused; Arcadia 13: 12 ready, 1 draft); every record outside them and outside `now` is waiting, parked, triage, next or future with a recorded reason. Since then Arcadia added `KI-ARCADIA-GOV-020` (`now`), the limited remote agent prototype; the harness captured `GOV-147` and `GOV-148`; and `tools-ki` gained `CLI-110` and `CLI-111`. Those account for the rise from 72 to 76.
 
 - **Clean sheet and acceptances.** The thirteen awaiting-review records of 2026-10-06 were accepted and pruned with `KI-HARNESS-FND-027`. On 2026-10-07 `DOTFILES-UE-066`, `DOTFILES-UE-067` and `TECHNE-TOOLS-FAB-001` were accepted on Kris's approval, and Kris pruned all three. The acceptance caveats (FAB-001's open egress rule before any apply; UE-066's unraised `apps-observatory` handoff) are in `accept.report.md`.
 - **Roadmap clearance and dispositions.** chezmoi, `tools-ki`, `ki-website`, `homebrew-tap`, `ki-techne-harness` and `ki-specifications` are down to waiting, triage or next records. Approved dispositions are applied: `KI-HARNESS-GOV-141` and `KI-TOOL-CLI-108` adopted into `next`; `BREW-011` and `KI-ARCADIA-GOV-010` stay open with fold notes (into `GOV-141` and `estate-factorisation`), since neither merge could close them; `KI-HARNESS-GOV-140` mapped to `estate-factorisation`; `DOTFILES-UE-063` to `waiting-for`.
 - **Git.** Every `kis` repository and chezmoi is clean, on `main` and level with `origin`; nothing is unpushed. The `homebrew-tap` fold branch is merged and deleted. The git-audit lane is abandoned and its worktree and branches deleted, its work having already reached `main` through the reviewed `MCP-GIT-TOOL-003`. The leftovers cleanup removed every remaining stray worktree and branch except two kept on purpose: harness `KIS-70` (reference implementation for `KI-HARNESS-GOV-115`) and `tools-ki` `KIS-46` (code for `KI-TOOL-CLI-109`). Patches and untracked drafts from the removed branches are in `~/.local/state/ki/state-of-play/salvage/`. The pushes seen at about 00:35 and 01:07 CEST were Kris's own; that question is resolved.
-- **New Triage captures, 2026-10-07.** From the leftovers: harness `KI-HARNESS-GOV-145` (disclose evaluated criteria count), `GOV-146` (gate acceptance on audits), `RTP-018` (audit inside sandboxed runs), `RTP-019` (fit sandbox socket paths); `tools-ki` `KI-TOOL-CLI-109` (bound rubric publication root); `homebrew-tap` `BREW-012` (document release app operations). From the delegation capture: harness `KI-HARNESS-GOV-144` (own portable background delegation).
+- **GOV-020 accepted and enacted, 2026-10-07.** Kris accepted the prototype bounds: a second, new EC2 instance `ki-techne-agent-host` beside the untouched controller `ki-techne-ops-007-primary`; acceptance and the hold amendment before any remote action, including creating the host for connection testing; GitHub and model API credential identity deferred until before agents work on the host; a 30-day term lapsing on 2026-11-06 unless renewed; and GDR-KI-ARCADIA-004. The [[Techne Programme Hold]] now carries that one exemption, in force since Arcadia `a16314a`; GOV-020 awaits Kris's acceptance through `ki-accept`. The chezmoi operator tooling and the `ki-techne-harness` host build are handoff items in those repositories.
+- **New Triage captures, 2026-10-07.** Harness `KI-HARNESS-GOV-147` (let senders withdraw trades) and `GOV-148` (make the branch durable). From the leftovers: harness `KI-HARNESS-GOV-145` (disclose evaluated criteria count), `GOV-146` (gate acceptance on audits), `RTP-018` (audit inside sandboxed runs), `RTP-019` (fit sandbox socket paths); `tools-ki` `KI-TOOL-CLI-109` (bound rubric publication root); `homebrew-tap` `BREW-012` (document release app operations). From the delegation capture: harness `KI-HARNESS-GOV-144` (own portable background delegation).
 - **GOV-144 gate.** `KI-HARNESS-GOV-144` carries a scope decision gate in its Discussion: `ki-delegation` currently excludes routine delegation, so only Kris can choose the owning skill (widen `ki-delegation`, a separate skill, or `ki-subagents` or another owner) before it is adopted, readied or started. Until then the chezmoi interim (`dot_claude/private_delegation.md` and `claude-bg`) carries the approach; it is applied.
 - **Outside scope, knock-on only.** `5GE-P2-GOV-015` in `5g-emerge-phase2` is still open (`waiting-for`) and can close, since `KI-HARNESS-GOV-124` is accepted.
 - **Themes are not usable as recorded.** The `theme` field carries 16 distinct values; in the harness most records share `governance-consistency`, so the field does not discriminate, and Arcadia uses a different vocabulary. There is no shared cross-repository taxonomy.
 - **Checkpoints.** Five active siblings in Arcadia; none in any other `kis` repository or chezmoi. All brought up to date for step 0.
-- **Other in-flight surfaces.** `ki-website` holds spent batch `KI-WEB-BATCH-001` and superseded handoff `CLI-006-qualified-repository-declarations`, both reported for removal. Arcadia `+/_ACQUIRE/` holds 8 unprocessed captures (7 ChatGPT, 1 Granola). `ki-techne-harness/+/paperclip-as-techne-prior-art.md` is an unpromoted working analysis. The two harness trades to `tools-ki`, `TRD-8004751b` and `TRD-d03495e9`, were never received; on 2026-10-07 they were withdrawn by hand under Kris's explicit one-off exception to the trade standard (harness `9cac0452`) and are replaced by `tools-ki` Triage records `KI-TOOL-CLI-110` and `KI-TOOL-CLI-111` (mapped in `estate-factorisation`). `CLI-111` now also requires a sender-side withdraw command (`tools-ki` `ecf8037`).
+- **Other in-flight surfaces.** `ki-website` holds spent batch `KI-WEB-BATCH-001` and superseded handoff `CLI-006-qualified-repository-declarations`, both reported for removal. Arcadia `+/_ACQUIRE/` holds 8 unprocessed captures (7 ChatGPT, 1 Granola). `ki-techne-harness/+/paperclip-as-techne-prior-art.md` is an unpromoted working analysis. The two harness trades to `tools-ki`, `TRD-8004751b` and `TRD-d03495e9`, were never received; on 2026-10-07 they were withdrawn and deleted by hand under Kris's explicit one-off exception to the trade standard (harness `9cac0452`) and are replaced by `tools-ki` Triage records `KI-TOOL-CLI-110` and `KI-TOOL-CLI-111` (mapped in `estate-factorisation`). `CLI-111` now also requires a sender-side withdraw command (`tools-ki` `ecf8037`).
 
 Acquired ChatGPT captures of 2026-10-03 (`+/_ACQUIRE/chatgpt/knowledge-islands/`), read in full, untouched and not adopted. Each maps to a theme and touches the records shown:
 
@@ -96,18 +97,18 @@ Gaps in the checkpoint standard and audit, raised by those threads: the audit do
 - On 2026-10-07 Kris accepted `DOTFILES-UE-066`, `DOTFILES-UE-067` and `TECHNE-TOOLS-FAB-001`, then pruned them himself; abandoned the git-audit lane; approved the leftovers cleanup keeping only harness `KIS-70` and `tools-ki` `KIS-46`; and approved capturing the background-delegation approach as a chezmoi interim plus `KI-HARNESS-GOV-144`. Kris handles the chezmoi interim's review and apply himself, and the `GOV-144` scope decision is reserved to him.
 - Kris approved step 0 on 2026-10-07: bring every checkpoint up to date before any other review step, changing only stale facts in the five siblings; reshaping them waits for step 4 and Kris's approval.
 - Kris widened the review's remit on 2026-10-07 to the seven acquired ChatGPT captures: same remit, reviewed alongside the roadmap records, not adopted by this review.
-- Kris decided on 2026-10-07 to lift the Techne Programme Hold up to an expressly limited remote prototype defined in this review, enacted through `KI-ARCADIA-GOV-020`. The Hold itself is unchanged until that record's amendment is approved; no remote action happens before Kris accepts its definition.
+- Kris decided on 2026-10-07 to lift the Techne Programme Hold up to an expressly limited remote prototype defined in this review, enacted through `KI-ARCADIA-GOV-020`. Kris accepted its bounds on 2026-10-07 and authorised the enactment, so the Hold now carries a 30-day exemption for that prototype only, lapsing on 2026-11-06 unless renewed (GDR-KI-ARCADIA-004).
 
 ## Files touched
 
 - This record and four sibling checkpoints (step 0 refresh); `delta-evaluation` was checked and needed no change.
 - Acceptance, prune, clearance, disposition and capture commits in `ki-agentic-harness`, `ki-arcadia-principal`, `ki-website`, `ki-specifications`, `ki-techne-harness`, `tools-ki`, `homebrew-tap` and chezmoi, all pushed.
-- `Streams/Roadmap/_ISSUES.md` (GOV-020 reservation) and `KI-ARCADIA-GOV-020`, committed locally, not pushed.
+- `Streams/Roadmap/_ISSUES.md` (GOV-020 reservation), `KI-ARCADIA-GOV-020`, the [[Techne Programme Hold]] exemption, GDR-KI-ARCADIA-004 and its index and memory entries, committed locally, not pushed.
 
 ## Open questions
 
 - `KI-HARNESS-GOV-144`: which skill owns routine background delegation? Only Kris can clear the gate.
-- `KI-ARCADIA-GOV-020`: accept or refine the draft prototype bounds, including the controller node or a separate host.
+- `KI-ARCADIA-GOV-020`: accept the review packet through `ki-accept`; decide the GitHub and model API credential identity before agents work on the host; capture the 2026-11-06 review, renewal or teardown through `ki-next`?
 - `BREW-012` and `KI-TOOL-CLI-109`: adopt, and when? `KIS-46` still needs rebase, re-verification and review.
 - `DOTFILES-UE-065`: approve a bounded, sanitised live trace of the mcporter bridge (no restart) once `baseline-and-cloud` settles?
 - `DOTFILES-UE-066`: raise the consumer handoff to `apps-observatory` for its unscoped reads?
@@ -119,7 +120,7 @@ Gaps in the checkpoint standard and audit, raised by those threads: the audit do
 
 ## Next step
 
-Step 0 is done and nothing is awaiting review; the leftover open questions above wait for Kris. Kris's acceptance of the prototype definition in `KI-ARCADIA-GOV-020` can run alongside the steps and gates any remote action. Next is step 1 for the harness and Arcadia, in order:
+Step 0 is done; `KI-ARCADIA-GOV-020` awaits Kris's review, and the leftover open questions above wait for Kris. The prototype's handoffs proceed in chezmoi and `ki-techne-harness` under the hold exemption, alongside the steps. Next is step 1 for the harness and Arcadia, in order:
 
 0. **Checkpoints up to date.** Done 2026-10-07: every checkpoint in scope (this one and the five sibling threads) matches the current state.
 1. **Per-record read.** Read the 36 `now` records, `KI-ARCADIA-GOV-020` and the seven captures in full, and capture for each its intended outcome, canonical owner, dependencies, overlaps or conflicts, and, for records, whether its status and horizon are still true.
