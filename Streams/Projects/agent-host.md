@@ -7,7 +7,7 @@ initiative: techne
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-07T14:05:00Z
+updated: 2026-10-07T16:59:06Z
 author: Written with Claude
 ---
 
@@ -15,7 +15,7 @@ author: Written with Claude
 
 ## Outcome
 
-Move agent work into the Techne footprint on an agent host, inside the standing exemption from the [[Techne Programme Hold]]. The current model treats agent hosts as harness-defined recipes that a person binds into named instances ([[KI-ARCADIA-GOV-025-model-agent-hosts-as-recipes-and-bindings|KI-ARCADIA-GOV-025]]), and the prototype is reviewed under [[KI-ARCADIA-GOV-021-review-the-agent-host-prototype|KI-ARCADIA-GOV-021]].
+Move agent work into the Techne footprint on an agent host, inside the standing exemption from the [[Techne Programme Hold]]. The current model treats agent hosts as harness-defined recipes that a person binds into named instances (`KI-ARCADIA-GOV-025`), and the prototype is reviewed under [[KI-ARCADIA-GOV-021-review-the-agent-host-prototype|KI-ARCADIA-GOV-021]].
 
 This Project sits in [[Initiatives/techne|Techne]]. It and [[baseline-rollout]] do not gate each other.
 
@@ -32,7 +32,6 @@ The Techne thread is active and keeps its own checkpoint, [techne](../../+/_CHEC
 Membership is classification, not authority; each owning repository decides whether its record joins when the migration tags it. Status lives in each record. Records already done (Arcadia GOV-020, GOV-022 and GOV-023; `ki-techne-harness` `TECHNE-TOOLS-OPS-011`; `tools-techne` `TECHNE-TOOL-CLI-004`) are not listed.
 
 - [[KI-ARCADIA-GOV-021-review-the-agent-host-prototype|KI-ARCADIA-GOV-021]] - Review the agent-host prototype
-- [[KI-ARCADIA-GOV-025-model-agent-hosts-as-recipes-and-bindings|KI-ARCADIA-GOV-025]] - Model agent hosts as recipes and bindings
 - `DOTFILES-UE-020` (chezmoi) - Implement Cheztoi profile
 
 ---

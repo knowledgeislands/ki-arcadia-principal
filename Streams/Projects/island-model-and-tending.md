@@ -7,7 +7,7 @@ initiative: knowledge-islands-model
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-07T14:05:00Z
+updated: 2026-10-07T16:59:06Z
 author: Written with Claude
 ---
 
@@ -27,7 +27,7 @@ Created on 2026-10-07 from the theme map and the records' current status; no che
 
 - **Health.** Not yet judged: the theme has had no checkpoint or review, so no basis exists for a health call. Kris to state one.
 - Several records are `ready` and independent of one another; the rest are `draft`.
-- Kris has approved closing [[KI-ARCADIA-OPS-002-tooling-rollout|KI-ARCADIA-OPS-002]] as obsolete; the closure is not yet recorded.
+- `KI-ARCADIA-OPS-002` was cancelled as obsolete and pruned on 2026-10-07.
 - [[KI-ARCADIA-OPS-008-scheduled-automations|KI-ARCADIA-OPS-008]] moved here from [[baseline-rollout]] on 2026-10-07.
 - [[KI-ARCADIA-OPS-007-agent-session-improvements|KI-ARCADIA-OPS-007]] carries a work trade to the harness that [[territories-and-trades]] must preserve.
 
@@ -51,7 +51,6 @@ Membership is classification, not authority; each owning repository decides whet
 - [[KI-ARCADIA-MOD-003-island-visualisation|KI-ARCADIA-MOD-003]] - Geography model and tiles
 - [[KI-ARCADIA-MOD-004-semantic-conventions|KI-ARCADIA-MOD-004]] - Semantic conventions
 - [[KI-ARCADIA-MOD-005-intention|KI-ARCADIA-MOD-005]] - Intention
-- [[KI-ARCADIA-OPS-002-tooling-rollout|KI-ARCADIA-OPS-002]] - Tooling rollout
 - [[KI-ARCADIA-OPS-004-bullet-journal-support|KI-ARCADIA-OPS-004]] - Bullet Journal support
 - [[KI-ARCADIA-OPS-006-workflow-integrations|KI-ARCADIA-OPS-006]] - Workflow integrations
 - [[KI-ARCADIA-OPS-007-agent-session-improvements|KI-ARCADIA-OPS-007]] - Agent session improvements

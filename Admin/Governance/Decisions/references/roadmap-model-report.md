@@ -76,9 +76,9 @@ The checker rule becomes one line: a horizon is required if and only if the reco
 
 Triage closure becomes an ordinary cancellation, removing today's Triage/done exception. Today the acceptance standard also requires a duplicate target in the same roadmap, which blocks the cross-repository cases. The four blocked closures map as follows:
 
-- [BREW-011](/Users/krisbrown/workspaces/kit/knowledgeislands/homebrew-tap/docs/roadmap/BREW-011-register-ki-pin-consumers.md) is a duplicate of [KI-HARNESS-GOV-141](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-141-auto-bump-released-ki-pin.md).
-- [KI-HARNESS-OPS-001](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-001-complete-claude-state-cleanup.md) is a duplicate of [DOTFILES-UE-056](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-056-review-host-claude-cleanup.md); its pointer is provenance, not a second owner.
-- [KI-ARCADIA-OPS-002](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-OPS-002-tooling-rollout.md) is obsolete.
+- `BREW-011` is a duplicate of [KI-HARNESS-GOV-141](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-141-auto-bump-released-ki-pin.md).
+- `KI-HARNESS-OPS-001` is a duplicate of [DOTFILES-UE-056](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-056-review-host-claude-cleanup.md); its pointer is provenance, not a second owner.
+- `KI-ARCADIA-OPS-002` is obsolete.
 - [KI-ARCADIA-GOV-010](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-GOV-010-assess-estate-tooling-commonality.md) is superseded, with a target once the factorisation record exists.
 
 These fields belong in `ki-work`'s abstract vocabulary, which the roadmap, KB Streams and Linear adapters all map; otherwise the first repository on `adapter = "linear"` forks the model. The roadmap and KB Streams checkers share one status and horizon table.
@@ -117,7 +117,7 @@ An **idea** has no identifier, horizon or status. Like a Command Centre Working 
 
 Unknown implementation is fine for an investigation or decision, and a missing prerequisite alone does not make capture premature. `ki-next` capture defaults to the Ideas section when a project is known.
 
-**Enactment threshold.** Record capture and Enactment are different thresholds. [KI-ARCADIA-GOV-024](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-GOV-024-review-the-enactment-threshold.md) owns when Arcadia's canonical zones need an Enactment record, and this design must not silently widen today's exemptions. Test (c) goes to GOV-024 as a candidate: an owner-instructed change finished and verified in one sitting needs only a commit. Under it, [KI-ARCADIA-GOV-022](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-GOV-022-file-the-agent-host-prototype-diagrams.md) would have been a direct edit, and [KI-ARCADIA-GOV-025](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-GOV-025-model-agent-hosts-as-recipes-and-bindings.md), now Ready in Now, would have waited as an Agent host idea until actionable.
+**Enactment threshold.** Record capture and Enactment are different thresholds. [KI-ARCADIA-GOV-024](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-GOV-024-review-the-enactment-threshold.md) owns when Arcadia's canonical zones need an Enactment record, and this design must not silently widen today's exemptions. Test (c) goes to GOV-024 as a candidate: an owner-instructed change finished and verified in one sitting needs only a commit. Under it, [KI-ARCADIA-GOV-022](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-GOV-022-file-the-agent-host-prototype-diagrams.md) would have been a direct edit, and `KI-ARCADIA-GOV-025`, now Ready in Now, would have waited as an Agent host idea until actionable.
 
 ## 5. Where the reviewers agree and differ
 

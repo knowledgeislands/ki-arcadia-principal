@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: state-of-play
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-07T14:10:00Z
+updated_at: 2026-10-07T16:59:06Z
 ---
 
 # state-of-play
@@ -129,7 +129,7 @@ Every mapped record follows, with the step 1 proposed disposition for the 36 Now
 | [KI-HARNESS-GOV-117](<../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-117-govern-hooks-beyond-packages.md>) - Govern hooks beyond packages | now / draft | `baseline` | Keep Draft; genuinely waits on GOV-109 |
 | [KI-HARNESS-GOV-127](<../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-127-adopt-dependency-cruiser-estatewide.md>) - Adopt Dependency Cruiser estatewide | now / in-progress | `baseline` | Re-plan residual work against existing DESIGN-2 evidence |
 | [KI-HARNESS-REV-011](<../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-REV-011-review-harness-automation-coverage.md>) - Review harness automation | now / ready | `baseline` | Verify actual criterion coverage; remove predetermined self-conformance |
-| [KI-ARCADIA-GOV-025](<../../Streams/Roadmap/KI-ARCADIA-GOV-025-model-agent-hosts-as-recipes-and-bindings.md>) - Model agent hosts as recipes and bindings | now / draft | `techne` | - |
+| `KI-ARCADIA-GOV-025` - Model agent hosts as recipes and bindings | now / draft | `techne` | - |
 | [TECHNE-TOOL-CLI-004](<../../../tools-techne/docs/roadmap/TECHNE-TOOL-CLI-004-host-command-group.md>) - Add host command group | now / awaiting-review | `techne` | - |
 | [TECHNE-TOOLS-OPS-011](<../../../ki-techne-harness/docs/roadmap/TECHNE-TOOLS-OPS-011-manage-the-agent-host-footprint.md>) - Manage agent-host footprint | now / done | `techne` | - |
 | [KI-ARCADIA-GOV-021](<../../Streams/Roadmap/KI-ARCADIA-GOV-021-review-the-agent-host-prototype.md>) - Review the agent-host prototype | triage / draft | `techne` | - |
@@ -138,7 +138,7 @@ Every mapped record follows, with the step 1 proposed disposition for the 36 Now
 | [KI-ARCADIA-GOV-018](<../../Streams/Roadmap/KI-ARCADIA-GOV-018-ci-policy-principle.md>) - CI policy principle | now / draft | `estate-factorisation` | Plan remaining CI rationale against the already-established audit gate |
 | [KI-HARNESS-GOV-134](<../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-134-align-mcp-recovery-and-dry-run-contracts.md>) - Align MCP safety contracts | now / ready | `estate-factorisation` | Decide protected-state effects versus disposable preview writes |
 | [KI-HARNESS-GOV-141](<../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-141-auto-bump-released-ki-pin.md>) - Auto-bump released ki pin | next / draft | `estate-factorisation` | - |
-| [BREW-011](<../../../homebrew-tap/docs/roadmap/BREW-011-register-ki-pin-consumers.md>) - Register ki pin consumers | triage / draft | `estate-factorisation` | - |
+| `BREW-011` - Register ki pin consumers | triage / draft | `estate-factorisation` | - |
 | [BREW-012](<../../../homebrew-tap/docs/roadmap/BREW-012-document-release-app-operations.md>) - Document release app operations | triage / draft | `estate-factorisation` | - |
 | [KI-HARNESS-GOV-140](<../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-140-define-mcp-release-procedure.md>) - Define MCP release procedure | triage / draft | `estate-factorisation` | - |
 | [KI-TOOL-CLI-110](<../../../tools-ki/docs/roadmap/KI-TOOL-CLI-110-report-dangling-projection-links.md>) - Report dangling projection links | triage / draft | `estate-factorisation` | - |
@@ -180,7 +180,7 @@ Every mapped record follows, with the step 1 proposed disposition for the 36 Now
 | [KI-ARCADIA-OPS-008](<../../Streams/Roadmap/KI-ARCADIA-OPS-008-scheduled-automations.md>) - Scheduled automations | now / ready | `island-model-and-tending` | Respecify complete loader repair and truthful early-exit checks |
 | [KI-ARCADIA-OPS-009](<../../Streams/Roadmap/KI-ARCADIA-OPS-009-token-economics.md>) - Token economics | now / ready | `island-model-and-tending` | Keep measured local practice; correct pre-invocation and context claims |
 | [KI-ARCADIA-GOV-001](<../../Streams/Roadmap/KI-ARCADIA-GOV-001-boundary-rules.md>) - Boundary rules | next / draft | `island-model-and-tending` | - |
-| [KI-ARCADIA-OPS-002](<../../Streams/Roadmap/KI-ARCADIA-OPS-002-tooling-rollout.md>) - Tooling rollout | next / draft | `island-model-and-tending` | - |
+| `KI-ARCADIA-OPS-002` - Tooling rollout | next / draft | `island-model-and-tending` | - |
 | [KI-ARCADIA-GOV-024](<../../Streams/Roadmap/KI-ARCADIA-GOV-024-review-the-enactment-threshold.md>) - Review the enactment threshold | triage / draft | `island-model-and-tending` | - |
 | [KI-ARCADIA-MOD-003](<../../Streams/Roadmap/KI-ARCADIA-MOD-003-island-visualisation.md>) - Geography model and tiles | future / draft | `island-model-and-tending` | - |
 | [KI-ARCADIA-MOD-006](<../../Streams/Roadmap/KI-ARCADIA-MOD-006-knowledge-acquisition-lifecycle.md>) - Knowledge acquisition lifecycle | now / ready | `knowledge-acquisition` | Keep operational description; separate any architectural amendment |
@@ -193,7 +193,7 @@ Every mapped record follows, with the step 1 proposed disposition for the 36 Now
 | [DOTFILES-UE-062](<../../../../../../.local/share/chezmoi/docs/roadmap/DOTFILES-UE-062-measure-the-live-apply.md>) - Measure the live apply | waiting-for / draft | `workstation-hygiene` | - |
 | [DOTFILES-UE-063](<../../../../../../.local/share/chezmoi/docs/roadmap/DOTFILES-UE-063-bind-qmd-search-daemon.md>) - Bind qmd search daemon | waiting-for / draft | `workstation-hygiene` | - |
 | [DOTFILES-UE-065](<../../../../../../.local/share/chezmoi/docs/roadmap/DOTFILES-UE-065-diagnose-same-boot-mcporter-stall.md>) - Diagnose same-boot mcporter stall | waiting-for / draft | `workstation-hygiene` | - |
-| [KI-HARNESS-OPS-001](<../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-001-complete-claude-state-cleanup.md>) - Complete Claude-state cleanup | waiting-for / draft | `workstation-hygiene` | - |
+| `KI-HARNESS-OPS-001` - Complete Claude-state cleanup | waiting-for / draft | `workstation-hygiene` | - |
 | [DOTFILES-UE-043](<../../../../../../.local/share/chezmoi/docs/roadmap/DOTFILES-UE-043-audit-1password-secret-hygiene.md>) - Audit 1Password secret hygiene | parked / draft | `workstation-hygiene` | - |
 | [KI-SPEC-KIN-001](<../../../ki-specifications/docs/roadmap/KI-SPEC-KIN-001-assess-kbep-extraction-protocol.md>) - Assess KBEP extraction protocol | parked / draft | `specifications` | - |
 | [KI-SPEC-KIN-002](<../../../ki-specifications/docs/roadmap/KI-SPEC-KIN-002-assess-kbip-ingress-protocol.md>) - Assess KBIP ingress protocol | parked / draft | `specifications` | - |
@@ -202,23 +202,23 @@ Every mapped record follows, with the step 1 proposed disposition for the 36 Now
 | [KI-WEB-SITE-039](<../../../ki-website/docs/roadmap/KI-WEB-SITE-039-decide-the-landing-pages.md>) - Decide the landing pages | parked / draft | `website` | - |
 | [KI-HARNESS-FND-014](<../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-FND-014-implement-remote-adapters.md>) - Implement remote adapter execution | waiting-for / draft | `none` | - |
 | [KI-HARNESS-OPS-003](<../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-003-define-otlp-observability.md>) - Define OTLP observability | parked / draft | `none` | - |
-| [KI-HARNESS-RTP-002](<../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-RTP-002-reach-cowork-mcp-servers.md>) - Reach Cowork MCP servers | parked / draft | `none` | - |
+| `KI-HARNESS-RTP-002` - Reach Cowork MCP servers | parked / draft | `none` | - |
 
 **Duplicate outcomes, 2026-10-07.** Kris confirmed four. None could be carried out under `ki-accept` and `ki-next`, so each record's Discussion now holds the approved intent and the route the skills allow; nothing was closed or pruned:
 
 | Record | Approved outcome | Why not carried out | Route the skills allow |
 | --- | --- | --- | --- |
-| [BREW-011](<../../../homebrew-tap/docs/roadmap/BREW-011-register-ki-pin-consumers.md>) | Fold into `KI-HARNESS-GOV-141` | A `merged` target must resolve in the same roadmap | Kris approves a `rejected` Triage disposition citing GOV-141, or it stays in Triage until GOV-141's plan places the tap-side work |
-| [KI-ARCADIA-OPS-002](../../Streams/Roadmap/KI-ARCADIA-OPS-002-tooling-rollout.md) | Close as obsolete | Adopted in Next; only Triage takes an intake disposition | Kris approves moving it to Triage, then a `rejected` disposition through `ki-accept` |
+| `BREW-011` | Fold into `KI-HARNESS-GOV-141` | A `merged` target must resolve in the same roadmap | Kris approves a `rejected` Triage disposition citing GOV-141, or it stays in Triage until GOV-141's plan places the tap-side work |
+| `KI-ARCADIA-OPS-002` | Close as obsolete | Adopted in Next; only Triage takes an intake disposition | Kris approves moving it to Triage, then a `rejected` disposition through `ki-accept` |
 | [KI-ARCADIA-GOV-010](../../Streams/Roadmap/KI-ARCADIA-GOV-010-assess-estate-tooling-commonality.md) | Fold into `estate-factorisation` | Adopted in Future; the thread has no work record to merge into | Capture FND-5 as an Arcadia work record, then Kris approves moving GOV-010 to Triage and a `merged` disposition naming it |
-| [KI-HARNESS-OPS-001](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-001-complete-claude-state-cleanup.md) | Fold into `DOTFILES-UE-056` | Adopted in Waiting for; the target is in the chezmoi roadmap | Kris approves moving it to Triage, then a `rejected` disposition citing UE-056 |
+| `KI-HARNESS-OPS-001` | Fold into `DOTFILES-UE-056` | Adopted in Waiting for; the target is in the chezmoi roadmap | Kris approves moving it to Triage, then a `rejected` disposition citing UE-056 |
 
 **Captured too early.** Candidates for returning to a checkpoint until they mature. No action taken; nothing moved or pruned:
 
-- [KI-ARCADIA-GOV-025](../../Streams/Roadmap/KI-ARCADIA-GOV-025-model-agent-hosts-as-recipes-and-bindings.md): open questions on recipe location, binding ownership, ADR and hold authority, and a second binding is not authorised; better held in `techne` until the GOV-021 review. It has since been adopted and planned into Now (Arcadia `ccfae8a`).
-- [KI-ARCADIA-GOV-010](../../Streams/Roadmap/KI-ARCADIA-GOV-010-assess-estate-tooling-commonality.md) and [KI-ARCADIA-OPS-002](../../Streams/Roadmap/KI-ARCADIA-OPS-002-tooling-rollout.md): covered by the duplicate outcomes above.
+- `KI-ARCADIA-GOV-025`: open questions on recipe location, binding ownership, ADR and hold authority, and a second binding is not authorised; better held in `techne` until the GOV-021 review. It has since been adopted and planned into Now (Arcadia `ccfae8a`).
+- [KI-ARCADIA-GOV-010](../../Streams/Roadmap/KI-ARCADIA-GOV-010-assess-estate-tooling-commonality.md) and `KI-ARCADIA-OPS-002`: covered by the duplicate outcomes above.
 - [KI-ARCADIA-MOD-003](../../Streams/Roadmap/KI-ARCADIA-MOD-003-island-visualisation.md): Future, and its downstream website work is parked; fine as Future, or an `island-model-and-tending` checkpoint note if one opens.
-- [KI-HARNESS-FND-014](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-FND-014-implement-remote-adapters.md), [KI-HARNESS-RTP-002](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-RTP-002-reach-cowork-mcp-servers.md) and [KI-HARNESS-OPS-003](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-003-define-otlp-observability.md): waiting or parked with no owning thread or trigger.
+- [KI-HARNESS-FND-014](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-FND-014-implement-remote-adapters.md), `KI-HARNESS-RTP-002` and [KI-HARNESS-OPS-003](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-003-define-otlp-observability.md): waiting or parked with no owning thread or trigger.
 - [DOTFILES-UE-020](<../../../../../../.local/share/chezmoi/docs/roadmap/DOTFILES-UE-020-implement-cheztoi-profile.md>): waits on two upstream contracts that do not yet exist; better in `techne`.
 - [DOTFILES-UE-063](<../../../../../../.local/share/chezmoi/docs/roadmap/DOTFILES-UE-063-bind-qmd-search-daemon.md>): its own Goal and Boundary are stale pending the search-route decision; better as an open question here.
 - [KI-HARNESS-GOV-145](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-145-disclose-evaluated-criteria-count.md) and [KI-HARNESS-GOV-146](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-146-gate-acceptance-on-audits.md): one line of evidence each; could stay in Triage and be planned with REV-011.

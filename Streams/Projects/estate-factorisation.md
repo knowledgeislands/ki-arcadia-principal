@@ -7,7 +7,7 @@ initiative: platform-foundations
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-07T14:05:00Z
+updated: 2026-10-07T16:59:06Z
 author: Written with Claude
 ---
 
@@ -78,7 +78,6 @@ Recheck the phase items and related records, then use `ki-next` to capture FND-5
 
 Membership is classification, not authority; each owning repository decides whether its record joins when the migration tags it. Status lives in each record.
 
-- [BREW-011](../../../homebrew-tap/docs/roadmap/BREW-011-register-ki-pin-consumers.md) - Register ki pin consumers
 - [BREW-012](../../../homebrew-tap/docs/roadmap/BREW-012-document-release-app-operations.md) - Document release app operations
 - [KI-HARNESS-GOV-134](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-134-align-mcp-recovery-and-dry-run-contracts.md) - Align MCP safety contracts
 - [KI-HARNESS-GOV-140](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-140-define-mcp-release-procedure.md) - Define MCP release procedure
