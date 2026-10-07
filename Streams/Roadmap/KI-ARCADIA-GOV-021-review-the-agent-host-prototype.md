@@ -7,19 +7,20 @@ kind: decide
 purpose: governance
 project: agent-host
 component: governance
-status: triage
+horizon: now
+status: awaiting-review
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: 4fcb560bde571cd4ed024dddc830625ff84648ab
 created_at: 2026-10-07T00:33:11Z
-updated_at: 2026-10-07T14:08:03Z
+updated_at: 2026-10-07T20:49:00Z
 ---
 
 # Review the Agent-Host Prototype
 
 ## Goal
 
-On 2026-11-06, Kris reviews the standing agent-host exemption from the [[Techne Programme Hold]]: its scope, its bounds, its cost, and whether to widen it, keep it or withdraw it. The exemption has no automatic lapse; this review is scheduled, not an expiry.
+Kris reviews the standing agent-host exemption from the [[Techne Programme Hold]]: its scope, its bounds, its cost, and whether to widen it, keep it or withdraw it. The review was scheduled for 2026-11-06 and is decided early, on 2026-10-07, as **keep**: the exemption stands as it is and `direct-host` stays as a recipe.
 
 ## Context
 
@@ -32,11 +33,82 @@ The host build, runbook, kill switch and teardown are in `ki-techne-harness` (`T
 - In scope: on or about 2026-11-06, a review of the standing exemption and what the host has shown, ending in one of three outcomes. **Keep** the exemption as it stands. **Widen or reshape** it through a new Enactment record that amends the hold and GDR-KI-ARCADIA-004 in place. **Withdraw** it through an Enactment record, followed by the runbook's teardown, removing the stack, its parameters, the tailnet device and policy entries, the GitHub token, the operator role and the chezmoi entries.
 - Out of scope: changing the exemption without an Enactment record, and any remote action by an agent; any teardown or rebuild is Kris's operation.
 
+## Decision
+
+Kris decided the review early on 2026-10-07, choosing "Decide 'keep' now": `direct-host` stays as a recipe, the review is decided as keep, and no evidence pack is needed ([decisions](<../../Admin/Governance/Decisions/references/agent-host-durability-decisions.md>), related decisions). The exemption therefore stands as written in [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]], with no widening and no withdrawal. [[KI-ARCADIA-GOV-029-agent-host-credential-wording|KI-ARCADIA-GOV-029]] records the keep in the GDR and the hold, together with the role-based credential wording and the credential-identity decision.
+
+## Current state
+
+Decided and awaiting Kris's approval to close. The keep needs no remote action and no Enactment change of its own beyond KI-ARCADIA-GOV-029. Before this update the record was untriaged intake for a review on 2026-11-06.
+
+## Steps
+
+- [x] Record Kris's keep decision and its source in this record.
+- [x] Point to KI-ARCADIA-GOV-029, which records the keep in GDR-KI-ARCADIA-004 and the hold.
+- [x] Write the review packet.
+
+## Files touched
+
+- This record.
+
+## Verify
+
+- `ki repo audit --repo .` passes the Streams and roadmap checks for this record.
+
+## Dependencies / blocks
+
+None. KI-ARCADIA-GOV-029 carries the canonical amendment independently.
+
+## Documentation impact
+
+### Decision Records
+
+None here: KI-ARCADIA-GOV-029 amends GDR-KI-ARCADIA-004 in place, and ODR-KI-ARCADIA-001 records the durability design.
+
+### Specifications
+
+None: no behaviour-level contract changes.
+
+### Guides
+
+None here. The harness operator guide's token expiry change is owned by the `ki-techne-harness` pilot record.
+
+### Roadmap
+
+No new work. The rollout records from ODR-KI-ARCADIA-001 are captured in `ki-techne-harness` and `tools-techne`.
+
+## Review
+
+### Delivered
+
+The keep decision, recorded with its source; no evidence pack, as Kris decided. Baseline `4fcb560bde571cd4ed024dddc830625ff84648ab`; the result is this record's commit.
+
+### Change Summary
+
+- This record: adopted at `now` and set to `awaiting-review`; the Goal states the early keep; new Decision, plan and review sections; the Review inputs note now gives the GitHub token's 90-day expiry.
+
+### Verification
+
+- `ki repo audit --repo .` on 2026-10-07: the Streams, roadmap and Knowledge Base checks pass. The audit's one failure is in `ki-decision-records`, from another session's uncommitted edits to that skill in the local `ki-agentic-harness` checkout, and is unrelated to this record.
+
+### Outstanding concerns
+
+- **No later review date.** With the review decided, nothing schedules a further review of the exemption. Whether to set one is Kris's call; KI-ARCADIA-GOV-029 raises the same point.
+- **Review date in tooling.** `host/status.sh` in `ki-techne-harness` still prints the review as due 2026-11-06; the harness pilot record owns it.
+
+### Post-change review
+
+The goal is met: the review has an outcome, keep, with its source, and the GDR change is carried by its own Enactment record. No scope was added. Regression risk is nil: no canonical content changes in this record. This is the implementing agent's own check, not an independent review.
+
+### Mini recap
+
+GOV-021 records Kris's early keep of the agent-host exemption, with `direct-host` staying a recipe and no evidence pack. Learning route: none.
+
 ## Discussion
 
 ### Review inputs
 
-The review should weigh how the host was used and for what, its running cost, any boundary incident, the egress limits a security group cannot enforce (recorded in the runbook), whether the GitHub token and tailnet policy stayed within their stated scope, and whether the scope or bounds should widen or narrow. The GitHub token expires after 30 days, close to the same date; rotating it is part of operating the host under the standing exemption.
+The review should weigh how the host was used and for what, its running cost, any boundary incident, the egress limits a security group cannot enforce (recorded in the runbook), whether the GitHub token and tailnet policy stayed within their stated scope, and whether the scope or bounds should widen or narrow. The GitHub token was rotated on 2026-10-07 with a 90-day expiry; rotating it is part of operating the host under the standing exemption.
 
 ### Operator access is an account-local role - 2026-10-07
 
