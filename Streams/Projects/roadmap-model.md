@@ -7,7 +7,7 @@ initiative: platform-foundations
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-07T14:05:00Z
+updated: 2026-10-07T17:30:00Z
 author: Written with Claude
 ---
 
@@ -22,6 +22,8 @@ This Project sits in [[platform-foundations|Platform foundations]].
 ---
 
 ## Update
+
+**2026-10-07, later.** On track. [[GDR-KI-ARCADIA-005-the-roadmap-model|GDR-KI-ARCADIA-005]] records the model, citing the design papers filed beside it. The checker now fails the retired shapes and requires areas mapped to titles, and done records are being pruned.
 
 **2026-10-07.** On track. The harness standard and checker (KI-HARNESS-GOV-149, GOV-150 and GOV-151) are done, and the harness and Arcadia records are migrated. `tools-ki` is reading the model in KI-TOOL-CLI-112.
 
@@ -43,7 +45,7 @@ Membership is classification, not authority. Status lives in each record.
 - KI-ARCADIA-GOV-026 - Create the Initiative and Project registry
 - KI-ARCADIA-GOV-027 - Migrate Arcadia to the roadmap model
 
-Done and awaiting prune in the harness: [KI-HARNESS-GOV-149](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-149-adopt-the-roadmap-model.md), [KI-HARNESS-GOV-150](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-150-check-the-roadmap-model.md) and [KI-HARNESS-GOV-151](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-151-recognise-the-initiatives-folder.md).
+Done and pruned from the harness: KI-HARNESS-GOV-149, KI-HARNESS-GOV-150 and KI-HARNESS-GOV-151; Git history keeps them.
 
 ---
 
@@ -55,4 +57,4 @@ None.
 
 ## Sources
 
-Created by KI-ARCADIA-GOV-027 under decision 7 of the rollout (`~/.local/state/ki/state-of-play/design/decisions.md`).
+Created by KI-ARCADIA-GOV-027 under decision 7 of the rollout. The decision and its design papers: [[GDR-KI-ARCADIA-005-the-roadmap-model|GDR-KI-ARCADIA-005]].

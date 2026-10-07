@@ -24,6 +24,7 @@ Records are ordered by reveal order — the logical sequence in which the decisi
 11. [SDR-KI-ARCADIA-006](SDR-KI-ARCADIA-006-agents-in-the-knowledge-islands-model.md) - Agents in the Knowledge Islands Model
 12. [SDR-KI-ARCADIA-007](SDR-KI-ARCADIA-007-the-great-library-of-arcadia.md) - The Great Library of Arcadia
 13. [GDR-KI-ARCADIA-004](GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold.md) - Standing agent-host exemption from the Techne Programme Hold
+14. [GDR-KI-ARCADIA-005](GDR-KI-ARCADIA-005-the-roadmap-model.md) - The roadmap model
 
 ## Shared engineering decisions
 

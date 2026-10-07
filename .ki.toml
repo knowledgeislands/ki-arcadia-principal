@@ -51,6 +51,8 @@ members = [
 
 
 [skills.ki-authoring]
+[skills.ki-authoring.owned_file_exceptions]
+".rumdl.toml" = "Keeps design-loop supporting files verbatim beside their Decision Record."
 [skills.ki-binding]
 [skills.ki-binding-claude]
 [skills.ki-binding-chatgpt]

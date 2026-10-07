@@ -1,0 +1,1910 @@
+{
+  "generated": "2026-10-07",
+  "spec": [
+    "roadmap-model.md",
+    "decisions.md",
+    "ki-agentic-harness working tree: skills/change-management/ki-work-roadmap/references/"
+  ],
+  "notes": [
+    "Proposals only; nothing has been applied.",
+    "No repository declares components yet, so every component value is new vocabulary: see component_vocabularies.",
+    "Initiative is set only on projectless records; a record with a project derives it from the registry.",
+    "Hold review dates are proposed only where release cannot be observed.",
+    "roadmap-model is a proposed new Project slug; it does not exist in Streams/Projects."
+  ],
+  "component_vocabularies": {
+    "ki-agentic-harness": {
+      "components": [
+        "acquire",
+        "agentic-systems",
+        "change-management",
+        "design",
+        "environment",
+        "governance",
+        "keystone",
+        "repo-structure"
+      ],
+      "change": "Mirrors the skills/ family directories. Replace areas.X = \"theme\" with areas = [\"FND\",\"GOV\",\"OPS\",\"REV\",\"RTP\"] and add components."
+    },
+    "ki-arcadia-principal": {
+      "components": [
+        "calendar",
+        "engineering-practice",
+        "governance",
+        "model",
+        "operations",
+        "resources",
+        "streams",
+        "techne"
+      ],
+      "change": "No [skills.ki-work-roadmap] table yet; add one alongside ki-repo-kb-streams with components (Admin, Pillars and Streams regions). Areas stay as issued (ECO, EXT, GOV, MOD, OPS)."
+    },
+    "chezmoi": {
+      "components": [
+        "agent-host",
+        "bootstrap",
+        "claude",
+        "rig",
+        "secrets",
+        "services"
+      ],
+      "change": "Replace areas.UE = \"user-environment\" with areas = [\"UE\"] and add components."
+    },
+    "tools-ki": {
+      "components": [
+        "acquire",
+        "agora",
+        "batch",
+        "bootstrap",
+        "dev",
+        "harness",
+        "kb",
+        "manage",
+        "registry",
+        "repo",
+        "skill",
+        "trade"
+      ],
+      "change": "Mirrors src/commands groups. Drop themes = [...]; replace areas.X = \"theme\" with areas = [\"CLI\",\"VENDOR\"]."
+    },
+    "ki-specifications": {
+      "components": [
+        "knowledge-ingress",
+        "repository-governance"
+      ],
+      "change": "The two former themes are genuine components. Drop themes; replace the area binding with areas = [\"KIN\",\"RGV\"]."
+    },
+    "homebrew-tap": {
+      "components": [],
+      "change": "Single-purpose repository: no components needed. Drop themes = [\"formula-coverage\"]."
+    },
+    "ki-website": {
+      "components": [],
+      "change": "Single-site repository: no components needed yet. Drop themes; replace the area binding with areas = [\"SITE\"]."
+    }
+  },
+  "records": {
+    "DOTFILES-UE-020": {
+      "path": "/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-020-implement-cheztoi-profile.md",
+      "repository": "chezmoi",
+      "title": "Implement Cheztoi profile",
+      "current": {
+        "status": "draft",
+        "horizon": "waiting-for",
+        "theme": "user-environment"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "agent-host",
+        "initiative": null,
+        "component": "bootstrap",
+        "purpose": null,
+        "horizon": "hold",
+        "hold": {
+          "reason": "waiting-for",
+          "condition": "TECHNE-GOV-005 settles the governing principle and layer boundaries, and KI-HARNESS-RTP-012 defines profile inputs, lifecycle capabilities, evidence shape and conformance target"
+        }
+      },
+      "confidence": "unclear",
+      "why_unclear": "Theme map rated techne low; agent-host lists it, but Cheztoi is a profile substrate that may not belong to any current Project"
+    },
+    "DOTFILES-UE-027": {
+      "path": "/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-027-honest-rationales-per-tool.md",
+      "repository": "chezmoi",
+      "title": "Honest Rig rationales",
+      "current": {
+        "status": "draft",
+        "horizon": "waiting-for",
+        "theme": "user-environment"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": null,
+        "initiative": "rig",
+        "component": "rig",
+        "purpose": "upkeep",
+        "horizon": "hold",
+        "hold": {
+          "reason": "waiting-for",
+          "condition": "Kris gives rationale decisions on the proposals in -/rig-rationale-review.md, starting with the first ten",
+          "review": "2026-11-07"
+        }
+      },
+      "confidence": "sure"
+    },
+    "DOTFILES-UE-028": {
+      "path": "/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-028-tidy-remnants-of-retired-software.md",
+      "repository": "chezmoi",
+      "title": "Tidy retired software remnants",
+      "current": {
+        "status": "draft",
+        "horizon": "waiting-for",
+        "theme": "user-environment"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": null,
+        "initiative": "rig",
+        "component": "rig",
+        "purpose": "upkeep",
+        "horizon": "hold",
+        "hold": {
+          "reason": "waiting-for",
+          "condition": "tools-rig decides the RIG-CORE-039 observation design and delivers a usable portable interface"
+        }
+      },
+      "confidence": "sure",
+      "note": "Estate-factorisation note cites it as context only; theme map places it in workstation hygiene"
+    },
+    "DOTFILES-UE-035": {
+      "path": "/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-035-install-whatsapp-spool-refresh.md",
+      "repository": "chezmoi",
+      "title": "Install WhatsApp spool refresh",
+      "current": {
+        "status": "draft",
+        "horizon": "waiting-for",
+        "theme": "user-environment"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "knowledge-acquisition",
+        "initiative": null,
+        "component": "services",
+        "purpose": null,
+        "horizon": "hold",
+        "hold": {
+          "reason": "waiting-for",
+          "condition": "A later unattended 10:15 spool refresh shows useful progress and validated counts after the logging fix, the new log is reviewed, and spool growth agrees with history",
+          "review": "2026-10-21"
+        }
+      },
+      "confidence": "sure"
+    },
+    "DOTFILES-UE-043": {
+      "path": "/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-043-audit-1password-secret-hygiene.md",
+      "repository": "chezmoi",
+      "title": "Audit 1Password secret hygiene",
+      "current": {
+        "status": "draft",
+        "horizon": "parked",
+        "theme": "user-environment"
+      },
+      "proposed": {
+        "kind": "audit",
+        "project": null,
+        "initiative": "rig",
+        "component": "secrets",
+        "purpose": "upkeep",
+        "horizon": "hold",
+        "hold": {
+          "reason": "parked",
+          "condition": "Kris schedules the one-pass secret-hygiene audit, or evidence appears that a secret is exposed beyond its owner",
+          "review": "2027-01-07"
+        }
+      },
+      "confidence": "unclear",
+      "why_unclear": "No written return trigger; condition below is inferred from \"Why parked\", and the Goal includes repair (eviction), so deliver is also arguable"
+    },
+    "DOTFILES-UE-055": {
+      "path": "/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-055-provision-hnr-agent-audits.md",
+      "repository": "chezmoi",
+      "title": "Provision HNR agent audits",
+      "current": {
+        "status": "draft",
+        "horizon": "soon",
+        "theme": "user-environment"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "paperclip-bootstrap-and-recovery",
+        "initiative": null,
+        "component": "agent-host",
+        "purpose": null
+      },
+      "confidence": "sure"
+    },
+    "DOTFILES-UE-056": {
+      "path": "/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-056-review-host-claude-cleanup.md",
+      "repository": "chezmoi",
+      "title": "Review host Claude cleanup",
+      "current": {
+        "status": "draft",
+        "horizon": "waiting-for",
+        "theme": "user-environment"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": null,
+        "initiative": "rig",
+        "component": "claude",
+        "purpose": "upkeep",
+        "horizon": "hold",
+        "hold": {
+          "reason": "waiting-for",
+          "condition": "A deliberately authorised destructive-housekeeping capability exists and a fresh candidate inventory has exact deletion approval",
+          "review": "2026-12-07"
+        }
+      },
+      "confidence": "sure"
+    },
+    "DOTFILES-UE-062": {
+      "path": "/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-062-measure-the-live-apply.md",
+      "repository": "chezmoi",
+      "title": "Measure the live apply",
+      "current": {
+        "status": "draft",
+        "horizon": "waiting-for",
+        "theme": "user-environment"
+      },
+      "proposed": {
+        "kind": "investigate",
+        "project": null,
+        "initiative": "rig",
+        "component": "rig",
+        "purpose": "corrective",
+        "horizon": "hold",
+        "hold": {
+          "reason": "waiting-for",
+          "condition": "Kris schedules and watches the live Rig resource apply, including port 3100 observation, and then the full apply",
+          "review": "2026-11-07"
+        }
+      },
+      "confidence": "unclear",
+      "why_unclear": "Theme map says workstation hygiene, but the paperclip-bootstrap-and-recovery note also lists it (port 3100 / paperclip-agents failure row)"
+    },
+    "DOTFILES-UE-063": {
+      "path": "/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-063-bind-qmd-search-daemon.md",
+      "repository": "chezmoi",
+      "title": "Bind qmd search daemon",
+      "current": {
+        "status": "draft",
+        "horizon": "waiting-for",
+        "theme": "user-environment"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": null,
+        "initiative": "rig",
+        "component": "services",
+        "purpose": "capability",
+        "horizon": "hold",
+        "hold": {
+          "reason": "waiting-for",
+          "condition": "The knowledge-base search route is decided, including whether qmd remains the engine and how ki kb search and mcp-ki-kb-fs reach it",
+          "review": "2026-11-07"
+        }
+      },
+      "confidence": "sure",
+      "note": "Hold condition cites the state-of-play review held 2026-10-07; check whether that review already settled the search route before restating"
+    },
+    "DOTFILES-UE-065": {
+      "path": "/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-065-diagnose-same-boot-mcporter-stall.md",
+      "repository": "chezmoi",
+      "title": "Diagnose same-boot mcporter stall",
+      "current": {
+        "status": "draft",
+        "horizon": "waiting-for",
+        "theme": "user-environment"
+      },
+      "proposed": {
+        "kind": "investigate",
+        "project": null,
+        "initiative": "rig",
+        "component": "services",
+        "purpose": "corrective",
+        "horizon": "hold",
+        "hold": {
+          "reason": "waiting-for",
+          "condition": "Kris schedules the approved sanitised bridge-to-daemon listTools trace (timing and error codes only, no restart)",
+          "review": "2026-11-07"
+        }
+      },
+      "confidence": "unclear",
+      "why_unclear": "Hold condition names the baseline-and-cloud checkpoint, which decision 4 retires; the trace itself was approved on 2026-10-07, so the condition needs restating or the hold releasing"
+    },
+    "DOTFILES-UE-070": {
+      "path": "/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-070-render-techne-host-binding.md",
+      "repository": "chezmoi",
+      "title": "Render techne host binding",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "user-environment"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "agent-host",
+        "initiative": null,
+        "component": "agent-host",
+        "purpose": "capability"
+      },
+      "confidence": "sure",
+      "note": "New since the theme map; implements the KI-ARCADIA-GOV-025 recipe-binding model"
+    },
+    "BREW-011": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/homebrew-tap/docs/roadmap/BREW-011-register-ki-pin-consumers.md",
+      "repository": "homebrew-tap",
+      "title": "Register ki pin consumers",
+      "current": {
+        "status": "draft",
+        "horizon": "triage",
+        "theme": "formula-coverage"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "estate-factorisation",
+        "initiative": null,
+        "component": null,
+        "purpose": null,
+        "status": "cancelled",
+        "resolution": "duplicate",
+        "resolution_target": "KI-HARNESS-GOV-141",
+        "horizon": null
+      },
+      "confidence": "sure",
+      "note": "Close as cancelled, resolution duplicate, target KI-HARNESS-GOV-141 (roadmap-model section 2)"
+    },
+    "BREW-012": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/homebrew-tap/docs/roadmap/BREW-012-document-release-app-operations.md",
+      "repository": "homebrew-tap",
+      "title": "Document release app operations",
+      "current": {
+        "status": "draft",
+        "horizon": "triage",
+        "theme": "formula-coverage"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "estate-factorisation",
+        "initiative": null,
+        "component": null,
+        "purpose": "governance",
+        "status": "triage",
+        "horizon": null
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-FND-014": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-FND-014-implement-remote-adapters.md",
+      "repository": "ki-agentic-harness",
+      "title": "Implement remote adapter execution",
+      "current": {
+        "status": "draft",
+        "horizon": "waiting-for",
+        "theme": "foundation-tooling"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": null,
+        "initiative": "platform-foundations",
+        "component": "change-management",
+        "purpose": "capability",
+        "horizon": "hold",
+        "hold": {
+          "reason": "waiting-for",
+          "condition": "Kris names the authorised GitHub repository and reversible draft Issue for the live pilot, and who owns its lifecycle metadata and write authority",
+          "review": "2026-11-07"
+        }
+      },
+      "confidence": "unclear",
+      "why_unclear": "Unclassified by the theme map; a finite capability with no matching Project (roadmap-model step 9 ties the Linear projection to it)"
+    },
+    "KI-HARNESS-FND-026": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-FND-026-complete-conform-activation.md",
+      "repository": "ki-agentic-harness",
+      "title": "Complete conform activation",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "foundation-tooling"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "baseline-rollout",
+        "initiative": null,
+        "component": "keystone",
+        "purpose": "adoption"
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-GOV-087": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-087-evaluate-obscura-browser-runtime.md",
+      "repository": "ki-agentic-harness",
+      "title": "Evaluate Obscura browser runtime",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "investigate",
+        "project": "knowledge-acquisition",
+        "initiative": null,
+        "component": "acquire",
+        "purpose": "learning"
+      },
+      "confidence": "sure",
+      "note": "The design names it as the investigate exemplar"
+    },
+    "KI-HARNESS-GOV-091": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-091-guide-opening-and-deferral.md",
+      "repository": "ki-agentic-harness",
+      "title": "Guide opening and deferral",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": null,
+        "initiative": "platform-foundations",
+        "component": "governance",
+        "purpose": "upkeep"
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-GOV-094": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-094-check-constraint-reach.md",
+      "repository": "ki-agentic-harness",
+      "title": "Check constraint reach",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": null,
+        "initiative": "platform-foundations",
+        "component": "keystone",
+        "purpose": "upkeep"
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-GOV-097": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-097-extract-format-readers.md",
+      "repository": "ki-agentic-harness",
+      "title": "Extract format readers",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": null,
+        "initiative": "platform-foundations",
+        "component": "governance",
+        "purpose": "debt"
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-GOV-099": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-099-decide-decision-serial-gaps.md",
+      "repository": "ki-agentic-harness",
+      "title": "Decide decision serial gaps",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "decide",
+        "project": null,
+        "initiative": "platform-foundations",
+        "component": "governance",
+        "purpose": "upkeep"
+      },
+      "confidence": "sure",
+      "note": "Closes by stating the serial-gap rule in ki-decision-records"
+    },
+    "KI-HARNESS-GOV-102": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-102-decide-role-record-serialization.md",
+      "repository": "ki-agentic-harness",
+      "title": "Decide role record serialization",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "decide",
+        "project": "paperclip-bootstrap-and-recovery",
+        "initiative": null,
+        "component": "agentic-systems",
+        "purpose": null
+      },
+      "confidence": "sure",
+      "note": "Closes on an amended decision"
+    },
+    "KI-HARNESS-GOV-103": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-103-cite-coordination-rules-once.md",
+      "repository": "ki-agentic-harness",
+      "title": "Cite coordination rules once",
+      "current": {
+        "status": "draft",
+        "horizon": "now",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "paperclip-bootstrap-and-recovery",
+        "initiative": null,
+        "component": "agentic-systems",
+        "purpose": "debt"
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-GOV-107": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-107-make-coordination-audit-mechanical.md",
+      "repository": "ki-agentic-harness",
+      "title": "Make coordination audit mechanical",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "paperclip-bootstrap-and-recovery",
+        "initiative": null,
+        "component": "agentic-systems",
+        "purpose": null
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-GOV-108": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-108-decide-coordination-declaration-scope.md",
+      "repository": "ki-agentic-harness",
+      "title": "Decide coordination declaration scope",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "decide",
+        "project": "paperclip-bootstrap-and-recovery",
+        "initiative": null,
+        "component": "agentic-systems",
+        "purpose": "governance"
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-GOV-109": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-109-fail-when-commit-gates-absent.md",
+      "repository": "ki-agentic-harness",
+      "title": "Enforce commit gates",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "baseline-rollout",
+        "initiative": null,
+        "component": "governance",
+        "purpose": "governance"
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-GOV-114": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-114-surface-held-workspaces.md",
+      "repository": "ki-agentic-harness",
+      "title": "Surface held workspaces",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "paperclip-bootstrap-and-recovery",
+        "initiative": null,
+        "component": "agentic-systems",
+        "purpose": null
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-GOV-115": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-115-require-a-current-base-for-a-coordinated-worktree.md",
+      "repository": "ki-agentic-harness",
+      "title": "Require current worktree base",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "paperclip-bootstrap-and-recovery",
+        "initiative": null,
+        "component": "agentic-systems",
+        "purpose": null
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-GOV-117": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-117-govern-hooks-beyond-packages.md",
+      "repository": "ki-agentic-harness",
+      "title": "Govern hooks beyond packages",
+      "current": {
+        "status": "draft",
+        "horizon": "now",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "baseline-rollout",
+        "initiative": null,
+        "component": "governance",
+        "purpose": "governance"
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-GOV-123": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-123-review-unsettled-source-readings.md",
+      "repository": "ki-agentic-harness",
+      "title": "Review unsettled-source readings",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": null,
+        "initiative": "platform-foundations",
+        "component": "governance",
+        "purpose": "upkeep"
+      },
+      "confidence": "sure",
+      "note": "Title says Review, but the outcome is a changed review standard"
+    },
+    "KI-HARNESS-GOV-125": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-125-share-batch-identifier-grammar.md",
+      "repository": "ki-agentic-harness",
+      "title": "Share batch identifier grammar",
+      "current": {
+        "status": "draft",
+        "horizon": "now",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": null,
+        "initiative": "platform-foundations",
+        "component": "change-management",
+        "purpose": "upkeep"
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-GOV-127": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-127-adopt-dependency-cruiser-estatewide.md",
+      "repository": "ki-agentic-harness",
+      "title": "Adopt Dependency Cruiser estatewide",
+      "current": {
+        "status": "in-progress",
+        "horizon": "now",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "baseline-rollout",
+        "initiative": null,
+        "component": "governance",
+        "purpose": "adoption"
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-GOV-131": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-131-govern-living-diagrams.md",
+      "repository": "ki-agentic-harness",
+      "title": "Govern living diagrams",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": null,
+        "initiative": "platform-foundations",
+        "component": "governance",
+        "purpose": "capability"
+      },
+      "confidence": "sure",
+      "note": "New ki-diagrams skill; could become its own Project if it grows"
+    },
+    "KI-HARNESS-GOV-134": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-134-align-mcp-recovery-and-dry-run-contracts.md",
+      "repository": "ki-agentic-harness",
+      "title": "Align MCP safety contracts",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "estate-factorisation",
+        "initiative": null,
+        "component": "repo-structure",
+        "purpose": "corrective"
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-GOV-135": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-135-review-governance-date-provenance.md",
+      "repository": "ki-agentic-harness",
+      "title": "Review governance date provenance",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": null,
+        "initiative": "platform-foundations",
+        "component": "keystone",
+        "purpose": "upkeep"
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-GOV-140": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-140-define-mcp-release-procedure.md",
+      "repository": "ki-agentic-harness",
+      "title": "Define MCP release procedure",
+      "current": {
+        "status": "draft",
+        "horizon": "triage",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "estate-factorisation",
+        "initiative": null,
+        "component": "repo-structure",
+        "purpose": "governance",
+        "status": "triage",
+        "horizon": null
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-GOV-141": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-141-auto-bump-released-ki-pin.md",
+      "repository": "ki-agentic-harness",
+      "title": "Auto-bump released ki pin",
+      "current": {
+        "status": "draft",
+        "horizon": "next",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "estate-factorisation",
+        "initiative": null,
+        "component": "governance",
+        "purpose": null
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-GOV-144": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-144-own-portable-background-delegation.md",
+      "repository": "ki-agentic-harness",
+      "title": "Own portable background delegation",
+      "current": {
+        "status": "draft",
+        "horizon": "triage",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": null,
+        "initiative": "platform-foundations",
+        "component": "governance",
+        "purpose": "capability",
+        "status": "triage",
+        "horizon": null
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-GOV-145": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-145-disclose-evaluated-criteria-count.md",
+      "repository": "ki-agentic-harness",
+      "title": "Disclose evaluated criteria count",
+      "current": {
+        "status": "draft",
+        "horizon": "triage",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": null,
+        "initiative": "platform-foundations",
+        "component": "keystone",
+        "purpose": "upkeep",
+        "status": "triage",
+        "horizon": null
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-GOV-146": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-146-gate-acceptance-on-audits.md",
+      "repository": "ki-agentic-harness",
+      "title": "Gate acceptance on audits",
+      "current": {
+        "status": "draft",
+        "horizon": "triage",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": null,
+        "initiative": "platform-foundations",
+        "component": "change-management",
+        "purpose": "governance",
+        "status": "triage",
+        "horizon": null
+      },
+      "confidence": "sure",
+      "note": "Settles and enforces an answer; deliver, because enforcement is the controlling outcome"
+    },
+    "KI-HARNESS-GOV-147": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-147-make-the-branch-durable.md",
+      "repository": "ki-agentic-harness",
+      "title": "Make the branch durable",
+      "current": {
+        "status": "draft",
+        "horizon": "triage",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "paperclip-bootstrap-and-recovery",
+        "initiative": null,
+        "component": "agentic-systems",
+        "purpose": null,
+        "status": "triage",
+        "horizon": null
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-GOV-148": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-148-let-senders-withdraw-trades.md",
+      "repository": "ki-agentic-harness",
+      "title": "Let senders withdraw trades",
+      "current": {
+        "status": "draft",
+        "horizon": "triage",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "territories-and-trades",
+        "initiative": null,
+        "component": "governance",
+        "purpose": "capability",
+        "status": "triage",
+        "horizon": null
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-GOV-149": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-149-adopt-the-roadmap-model.md",
+      "repository": "ki-agentic-harness",
+      "title": "Adopt roadmap model",
+      "current": {
+        "status": "in-progress",
+        "horizon": "now",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "roadmap-model",
+        "initiative": null,
+        "component": "change-management",
+        "purpose": "governance"
+      },
+      "confidence": "unclear",
+      "why_unclear": "No Project exists for the roadmap-model rollout; slug roadmap-model is proposed"
+    },
+    "KI-HARNESS-GOV-150": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-150-check-the-roadmap-model.md",
+      "repository": "ki-agentic-harness",
+      "title": "Check roadmap model",
+      "current": {
+        "status": "in-progress",
+        "horizon": "now",
+        "theme": "governance-consistency"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "roadmap-model",
+        "initiative": null,
+        "component": "change-management",
+        "purpose": "governance"
+      },
+      "confidence": "unclear",
+      "why_unclear": "As KI-HARNESS-GOV-149"
+    },
+    "KI-HARNESS-OPS-001": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-001-complete-claude-state-cleanup.md",
+      "repository": "ki-agentic-harness",
+      "title": "Complete Claude-state cleanup",
+      "current": {
+        "status": "draft",
+        "horizon": "waiting-for",
+        "theme": "operations"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": null,
+        "initiative": "rig",
+        "component": "environment",
+        "purpose": "upkeep",
+        "status": "cancelled",
+        "resolution": "duplicate",
+        "resolution_target": "DOTFILES-UE-056",
+        "horizon": null
+      },
+      "confidence": "sure",
+      "note": "Close as cancelled, resolution duplicate, target DOTFILES-UE-056; no hold needed"
+    },
+    "KI-HARNESS-OPS-003": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-003-define-otlp-observability.md",
+      "repository": "ki-agentic-harness",
+      "title": "Define OTLP observability",
+      "current": {
+        "status": "draft",
+        "horizon": "parked",
+        "theme": "operations"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": null,
+        "initiative": "platform-foundations",
+        "component": null,
+        "purpose": "capability",
+        "horizon": "hold",
+        "hold": {
+          "reason": "parked",
+          "condition": "A concrete operational question cannot be answered from existing local output and Kris chooses OTLP as the remedy, naming a consent and configuration owner",
+          "review": "2027-01-07"
+        }
+      },
+      "confidence": "unclear",
+      "why_unclear": "Unclassified by the theme map; no Project or component fits a parked OTLP definition"
+    },
+    "KI-HARNESS-OPS-005": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-005-acquire-ai-sessions.md",
+      "repository": "ki-agentic-harness",
+      "title": "Acquire AI sessions",
+      "current": {
+        "status": "in-progress",
+        "horizon": "now",
+        "theme": "operations"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "knowledge-acquisition",
+        "initiative": null,
+        "component": "acquire",
+        "purpose": "capability"
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-REV-011": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-REV-011-review-harness-automation-coverage.md",
+      "repository": "ki-agentic-harness",
+      "title": "Review harness automation",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "regular-reviews"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "baseline-rollout",
+        "initiative": null,
+        "component": "keystone",
+        "purpose": "governance"
+      },
+      "confidence": "sure",
+      "note": "The design names it as deliver despite the REV area"
+    },
+    "KI-HARNESS-RTP-002": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-RTP-002-reach-cowork-mcp-servers.md",
+      "repository": "ki-agentic-harness",
+      "title": "Reach Cowork MCP servers",
+      "current": {
+        "status": "draft",
+        "horizon": "parked",
+        "theme": "runtime-portability"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": null,
+        "initiative": "platform-foundations",
+        "component": "environment",
+        "purpose": null,
+        "horizon": "hold",
+        "hold": {
+          "reason": "parked",
+          "condition": "Kris decides to reinstate supported Cowork packaging for Knowledge Islands, reversing the ki-plugins retirement (ADR-KI-HARNESS-015)",
+          "review": "2027-01-07"
+        }
+      },
+      "confidence": "unclear",
+      "why_unclear": "Unclassified; parked on the ki-plugins retirement (ADR-KI-HARNESS-015), so cancelling as obsolete is a live alternative"
+    },
+    "KI-HARNESS-RTP-015": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-RTP-015-verify-run-mcp-connection.md",
+      "repository": "ki-agentic-harness",
+      "title": "Verify run MCP connection",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "runtime-portability"
+      },
+      "proposed": {
+        "kind": "investigate",
+        "project": "paperclip-bootstrap-and-recovery",
+        "initiative": null,
+        "component": "agentic-systems",
+        "purpose": null
+      },
+      "confidence": "sure",
+      "note": "Closes on live evidence for COORD-14 conformance"
+    },
+    "KI-HARNESS-RTP-018": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-RTP-018-audit-inside-sandboxed-runs.md",
+      "repository": "ki-agentic-harness",
+      "title": "Audit inside sandboxed runs",
+      "current": {
+        "status": "draft",
+        "horizon": "triage",
+        "theme": "runtime-portability"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "paperclip-bootstrap-and-recovery",
+        "initiative": null,
+        "component": "agentic-systems",
+        "purpose": null,
+        "status": "triage",
+        "horizon": null
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-RTP-019": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-RTP-019-fit-sandbox-socket-paths.md",
+      "repository": "ki-agentic-harness",
+      "title": "Fit sandbox socket paths",
+      "current": {
+        "status": "draft",
+        "horizon": "triage",
+        "theme": "runtime-portability"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "paperclip-bootstrap-and-recovery",
+        "initiative": null,
+        "component": "agentic-systems",
+        "purpose": null,
+        "status": "triage",
+        "horizon": null
+      },
+      "confidence": "sure",
+      "note": "Theme report: likely merges into KI-HARNESS-RTP-018; decide at adoption"
+    },
+    "KI-ARCADIA-ECO-009": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-ECO-009-legacy-serve-fallback-policy.md",
+      "repository": "ki-arcadia-principal",
+      "title": "Gather evidence for a legacy serve fallback policy",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "ecosystem-coordination"
+      },
+      "proposed": {
+        "kind": "investigate",
+        "project": "estate-factorisation",
+        "initiative": null,
+        "component": null,
+        "purpose": "learning"
+      },
+      "confidence": "sure"
+    },
+    "KI-ARCADIA-EXT-003": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-EXT-003-ki-skill-extractions.md",
+      "repository": "ki-arcadia-principal",
+      "title": "KI skill extractions",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "ecosystem-adoption"
+      },
+      "proposed": {
+        "kind": "investigate",
+        "project": null,
+        "initiative": "platform-foundations",
+        "component": null,
+        "purpose": "upkeep"
+      },
+      "confidence": "unclear",
+      "why_unclear": "Closes on six dispositions plus a trade: investigate (finding) or deliver (retirements and handoffs)"
+    },
+    "KI-ARCADIA-GOV-001": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-GOV-001-boundary-rules.md",
+      "repository": "ki-arcadia-principal",
+      "title": "Boundary rules",
+      "current": {
+        "status": "draft",
+        "horizon": "next",
+        "theme": "governance"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "island-model-and-tending",
+        "initiative": null,
+        "component": "model",
+        "purpose": null
+      },
+      "confidence": "sure"
+    },
+    "KI-ARCADIA-GOV-005": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-GOV-005-automated-proposal-pipeline.md",
+      "repository": "ki-arcadia-principal",
+      "title": "Automated proposal pipeline",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "governance"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "island-model-and-tending",
+        "initiative": null,
+        "component": "operations",
+        "purpose": "capability"
+      },
+      "confidence": "sure"
+    },
+    "KI-ARCADIA-GOV-010": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-GOV-010-assess-estate-tooling-commonality.md",
+      "repository": "ki-arcadia-principal",
+      "title": "Assess estate-wide tooling commonality",
+      "current": {
+        "status": "draft",
+        "horizon": "future",
+        "theme": "governance"
+      },
+      "proposed": {
+        "kind": "decide",
+        "project": "estate-factorisation",
+        "initiative": null,
+        "component": null,
+        "purpose": null,
+        "status": "cancelled",
+        "resolution": "superseded",
+        "resolution_target": "pending: the estate factorisation record, once it exists",
+        "horizon": null
+      },
+      "confidence": "sure",
+      "note": "Close as cancelled, resolution superseded, once the factorisation record exists to name as target"
+    },
+    "KI-ARCADIA-GOV-018": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-GOV-018-ci-policy-principle.md",
+      "repository": "ki-arcadia-principal",
+      "title": "CI policy principle",
+      "current": {
+        "status": "draft",
+        "horizon": "now",
+        "theme": "governance"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "estate-factorisation",
+        "initiative": null,
+        "component": "engineering-practice",
+        "purpose": "governance"
+      },
+      "confidence": "sure"
+    },
+    "KI-ARCADIA-GOV-021": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-GOV-021-review-the-agent-host-prototype.md",
+      "repository": "ki-arcadia-principal",
+      "title": "Review the agent-host prototype",
+      "current": {
+        "status": "draft",
+        "horizon": "triage",
+        "theme": "governance"
+      },
+      "proposed": {
+        "kind": "decide",
+        "project": "agent-host",
+        "initiative": null,
+        "component": "governance",
+        "purpose": "governance",
+        "status": "triage",
+        "horizon": null
+      },
+      "confidence": "sure",
+      "note": "Kris decides widen, keep or withdraw on 2026-11-06"
+    },
+    "KI-ARCADIA-GOV-024": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-GOV-024-review-the-enactment-threshold.md",
+      "repository": "ki-arcadia-principal",
+      "title": "Review the enactment threshold",
+      "current": {
+        "status": "draft",
+        "horizon": "triage",
+        "theme": "governance"
+      },
+      "proposed": {
+        "kind": "decide",
+        "project": "island-model-and-tending",
+        "initiative": null,
+        "component": "operations",
+        "purpose": "governance",
+        "status": "triage",
+        "horizon": null
+      },
+      "confidence": "sure",
+      "note": "Receives test (c) from the roadmap model"
+    },
+    "KI-ARCADIA-GOV-025": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-GOV-025-model-agent-hosts-as-recipes-and-bindings.md",
+      "repository": "ki-arcadia-principal",
+      "title": "Model agent hosts as recipes and bindings",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "governance"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "agent-host",
+        "initiative": null,
+        "component": "techne",
+        "purpose": null
+      },
+      "confidence": "sure"
+    },
+    "KI-ARCADIA-GOV-026": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-GOV-026-create-the-initiative-and-project-registry.md",
+      "repository": "ki-arcadia-principal",
+      "title": "Create the Initiative and Project registry",
+      "current": {
+        "status": "awaiting-review",
+        "horizon": "now",
+        "theme": "governance"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "roadmap-model",
+        "initiative": null,
+        "component": "streams",
+        "purpose": "governance"
+      },
+      "confidence": "unclear",
+      "why_unclear": "As KI-HARNESS-GOV-149; every project note also cites it as its Source"
+    },
+    "KI-ARCADIA-MOD-003": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-MOD-003-island-visualisation.md",
+      "repository": "ki-arcadia-principal",
+      "title": "Geography model and tiles",
+      "current": {
+        "status": "draft",
+        "horizon": "future",
+        "theme": "knowledge-model"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "island-model-and-tending",
+        "initiative": null,
+        "component": "model",
+        "purpose": null
+      },
+      "confidence": "sure",
+      "note": "Website (paused) depends on it"
+    },
+    "KI-ARCADIA-MOD-004": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-MOD-004-semantic-conventions.md",
+      "repository": "ki-arcadia-principal",
+      "title": "Semantic conventions",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "knowledge-model"
+      },
+      "proposed": {
+        "kind": "investigate",
+        "project": "island-model-and-tending",
+        "initiative": null,
+        "component": "model",
+        "purpose": "learning"
+      },
+      "confidence": "sure",
+      "note": "Outcome is a keep-or-drop recommendation"
+    },
+    "KI-ARCADIA-MOD-005": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-MOD-005-intention.md",
+      "repository": "ki-arcadia-principal",
+      "title": "Intention",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "knowledge-model"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "island-model-and-tending",
+        "initiative": null,
+        "component": "model",
+        "purpose": null
+      },
+      "confidence": "sure"
+    },
+    "KI-ARCADIA-MOD-006": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-MOD-006-knowledge-acquisition-lifecycle.md",
+      "repository": "ki-arcadia-principal",
+      "title": "Knowledge acquisition lifecycle",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "knowledge-model"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "knowledge-acquisition",
+        "initiative": null,
+        "component": "model",
+        "purpose": null
+      },
+      "confidence": "sure"
+    },
+    "KI-ARCADIA-OPS-002": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-OPS-002-tooling-rollout.md",
+      "repository": "ki-arcadia-principal",
+      "title": "Tooling rollout",
+      "current": {
+        "status": "draft",
+        "horizon": "next",
+        "theme": "operational-tooling"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "island-model-and-tending",
+        "initiative": null,
+        "component": null,
+        "purpose": null,
+        "status": "cancelled",
+        "resolution": "obsolete",
+        "horizon": null
+      },
+      "confidence": "sure",
+      "note": "Close as cancelled, resolution obsolete (roadmap-model section 2)"
+    },
+    "KI-ARCADIA-OPS-003": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-OPS-003-page-registry.md",
+      "repository": "ki-arcadia-principal",
+      "title": "Page registry",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "operational-tooling"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": null,
+        "initiative": "platform-foundations",
+        "component": null,
+        "purpose": "upkeep"
+      },
+      "confidence": "sure",
+      "note": "A handoff of the page-registry problem to the harness"
+    },
+    "KI-ARCADIA-OPS-004": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-OPS-004-bullet-journal-support.md",
+      "repository": "ki-arcadia-principal",
+      "title": "Bullet Journal support",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "operational-tooling"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "island-model-and-tending",
+        "initiative": null,
+        "component": "calendar",
+        "purpose": null
+      },
+      "confidence": "sure"
+    },
+    "KI-ARCADIA-OPS-006": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-OPS-006-workflow-integrations.md",
+      "repository": "ki-arcadia-principal",
+      "title": "Workflow integrations",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "operational-tooling"
+      },
+      "proposed": {
+        "kind": "investigate",
+        "project": "island-model-and-tending",
+        "initiative": null,
+        "component": "resources",
+        "purpose": "learning"
+      },
+      "confidence": "sure",
+      "note": "Closes on a recorded fit judgement"
+    },
+    "KI-ARCADIA-OPS-007": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-OPS-007-agent-session-improvements.md",
+      "repository": "ki-arcadia-principal",
+      "title": "Agent session improvements",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "operational-tooling"
+      },
+      "proposed": {
+        "kind": "investigate",
+        "project": "island-model-and-tending",
+        "initiative": null,
+        "component": null,
+        "purpose": null
+      },
+      "confidence": "unclear",
+      "why_unclear": "Closes on idea dispositions plus a possible trade: investigate or deliver; same pattern as KI-ARCADIA-EXT-003"
+    },
+    "KI-ARCADIA-OPS-008": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-OPS-008-scheduled-automations.md",
+      "repository": "ki-arcadia-principal",
+      "title": "Scheduled automations",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "operational-tooling"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "island-model-and-tending",
+        "initiative": null,
+        "component": "operations",
+        "purpose": null
+      },
+      "confidence": "sure"
+    },
+    "KI-ARCADIA-OPS-009": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-OPS-009-token-economics.md",
+      "repository": "ki-arcadia-principal",
+      "title": "Token economics",
+      "current": {
+        "status": "ready",
+        "horizon": "now",
+        "theme": "operational-tooling"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "island-model-and-tending",
+        "initiative": null,
+        "component": "operations",
+        "purpose": null
+      },
+      "confidence": "sure"
+    },
+    "KI-SPEC-KIN-001": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-specifications/docs/roadmap/KI-SPEC-KIN-001-assess-kbep-extraction-protocol.md",
+      "repository": "ki-specifications",
+      "title": "Assess KBEP extraction protocol",
+      "current": {
+        "status": "draft",
+        "horizon": "parked",
+        "theme": "knowledge-ingress"
+      },
+      "proposed": {
+        "kind": "investigate",
+        "project": "specifications",
+        "initiative": null,
+        "component": "knowledge-ingress",
+        "purpose": null,
+        "horizon": "hold",
+        "hold": {
+          "reason": "parked",
+          "condition": "Kris restarts the ki-specifications live specification effort"
+        }
+      },
+      "confidence": "sure",
+      "note": "Outcome is an informative disposition note"
+    },
+    "KI-SPEC-KIN-002": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-specifications/docs/roadmap/KI-SPEC-KIN-002-assess-kbip-ingress-protocol.md",
+      "repository": "ki-specifications",
+      "title": "Assess KBIP ingress protocol",
+      "current": {
+        "status": "draft",
+        "horizon": "parked",
+        "theme": "knowledge-ingress"
+      },
+      "proposed": {
+        "kind": "investigate",
+        "project": "specifications",
+        "initiative": null,
+        "component": "knowledge-ingress",
+        "purpose": null,
+        "horizon": "hold",
+        "hold": {
+          "reason": "parked",
+          "condition": "Kris restarts the ki-specifications live specification effort"
+        }
+      },
+      "confidence": "sure"
+    },
+    "KI-SPEC-RGV-001": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-specifications/docs/roadmap/KI-SPEC-RGV-001-review-specifications-repository.md",
+      "repository": "ki-specifications",
+      "title": "Review KI Specifications",
+      "current": {
+        "status": "draft",
+        "horizon": "parked",
+        "theme": "repository-governance"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "specifications",
+        "initiative": null,
+        "component": "repository-governance",
+        "purpose": "corrective",
+        "horizon": "hold",
+        "hold": {
+          "reason": "parked",
+          "condition": "Kris restarts the ki-specifications live specification effort"
+        }
+      },
+      "confidence": "sure",
+      "note": "Title says Review, but the outcome is a consistent repository"
+    },
+    "KI-WEB-SITE-001": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-website/docs/roadmap/KI-WEB-SITE-001-interactive-island-geography-diagram.md",
+      "repository": "ki-website",
+      "title": "Interactive island diagram",
+      "current": {
+        "status": "draft",
+        "horizon": "parked",
+        "theme": "site-experience"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "website",
+        "initiative": null,
+        "component": null,
+        "purpose": "capability",
+        "horizon": "hold",
+        "hold": {
+          "reason": "parked",
+          "condition": "Kris restarts website work and KI-ARCADIA-MOD-003 delivers the geography model and approved tile set"
+        }
+      },
+      "confidence": "sure"
+    },
+    "KI-WEB-SITE-039": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-website/docs/roadmap/KI-WEB-SITE-039-decide-the-landing-pages.md",
+      "repository": "ki-website",
+      "title": "Decide the landing pages",
+      "current": {
+        "status": "draft",
+        "horizon": "parked",
+        "theme": "site-experience"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "website",
+        "initiative": null,
+        "component": null,
+        "purpose": null,
+        "horizon": "hold",
+        "hold": {
+          "reason": "parked",
+          "condition": "Kris restarts website work; on return the record goes to now and is re-marked Ready through ki-plan with Steps unchanged"
+        }
+      },
+      "confidence": "sure",
+      "note": "Title says Decide, but Kris confirmed the editorial choices on 2026-10-07; implementation remains"
+    },
+    "KI-TOOL-CLI-108": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/tools-ki/docs/roadmap/KI-TOOL-CLI-108-roadmap-list-structural-validity.md",
+      "repository": "tools-ki",
+      "title": "Roadmap list structural validity",
+      "current": {
+        "status": "draft",
+        "horizon": "next",
+        "theme": "cli"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": null,
+        "initiative": "platform-foundations",
+        "component": "repo",
+        "purpose": "upkeep"
+      },
+      "confidence": "sure"
+    },
+    "KI-TOOL-CLI-109": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/tools-ki/docs/roadmap/KI-TOOL-CLI-109-bound-rubric-publication-root.md",
+      "repository": "tools-ki",
+      "title": "Bound rubric publication root",
+      "current": {
+        "status": "draft",
+        "horizon": "triage",
+        "theme": "cli"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": null,
+        "initiative": "platform-foundations",
+        "component": "dev",
+        "purpose": "corrective",
+        "status": "triage",
+        "horizon": null
+      },
+      "confidence": "sure"
+    },
+    "KI-TOOL-CLI-110": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/tools-ki/docs/roadmap/KI-TOOL-CLI-110-report-dangling-projection-links.md",
+      "repository": "tools-ki",
+      "title": "Report dangling projection links",
+      "current": {
+        "status": "draft",
+        "horizon": "triage",
+        "theme": "cli"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "estate-factorisation",
+        "initiative": null,
+        "component": "repo",
+        "purpose": "corrective",
+        "status": "triage",
+        "horizon": null
+      },
+      "confidence": "sure"
+    },
+    "KI-TOOL-CLI-111": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/tools-ki/docs/roadmap/KI-TOOL-CLI-111-surface-undeliverable-trades.md",
+      "repository": "tools-ki",
+      "title": "Surface undeliverable trades",
+      "current": {
+        "status": "draft",
+        "horizon": "triage",
+        "theme": "cli"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "territories-and-trades",
+        "initiative": null,
+        "component": "trade",
+        "purpose": "capability",
+        "status": "triage",
+        "horizon": null
+      },
+      "confidence": "sure"
+    },
+    "KI-TOOL-CLI-112": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/tools-ki/docs/roadmap/KI-TOOL-CLI-112-read-the-roadmap-model.md",
+      "repository": "tools-ki",
+      "title": "Read roadmap model",
+      "current": {
+        "status": "draft",
+        "horizon": "soon",
+        "theme": "cli"
+      },
+      "proposed": {
+        "kind": "deliver",
+        "project": "roadmap-model",
+        "initiative": null,
+        "component": "repo",
+        "purpose": "governance"
+      },
+      "confidence": "unclear",
+      "why_unclear": "As KI-HARNESS-GOV-149"
+    }
+  },
+  "recurring": {
+    "ki-arcadia-principal:activity:Tending": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Admin/Operations/Activities/Tending Activity.md",
+      "proposed": {
+        "initiative": "knowledge-islands-model",
+        "component": "operations",
+        "purpose": "upkeep",
+        "run_kind": "audit"
+      },
+      "confidence": "sure",
+      "note": "Covers Scheduled Task Audit, Health Check, Knowledge Rebuild and six conversational activities"
+    },
+    "ki-arcadia-principal:activity:Briefings": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Admin/Operations/Activities/Briefings Activity.md",
+      "proposed": {
+        "initiative": "knowledge-islands-model",
+        "component": "operations",
+        "purpose": "upkeep",
+        "run_kind": "audit"
+      },
+      "confidence": "unclear",
+      "why_unclear": "Morning Briefing serves Kris day to day rather than the island model; no initiative fits cleanly"
+    },
+    "ki-arcadia-principal:activity:Email": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Admin/Operations/Activities/Email Activity.md",
+      "proposed": {
+        "initiative": null,
+        "component": null,
+        "purpose": null,
+        "run_kind": null
+      },
+      "confidence": "sure",
+      "current_status": "paused",
+      "note": "Vetoed or not applicable (status paused) and spawns no runs: leave untagged"
+    },
+    "ki-arcadia-principal:activity:Email Routing Config": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Admin/Operations/Activities/Email Routing Config Activity.md",
+      "proposed": {
+        "initiative": null,
+        "component": null,
+        "purpose": null,
+        "run_kind": null
+      },
+      "confidence": "sure",
+      "current_status": "paused",
+      "note": "Vetoed or not applicable (status paused) and spawns no runs: leave untagged"
+    },
+    "ki-arcadia-principal:activity:Email Routing Queue": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Admin/Operations/Activities/Email Routing Queue Activity.md",
+      "proposed": {
+        "initiative": null,
+        "component": null,
+        "purpose": null,
+        "run_kind": null
+      },
+      "confidence": "sure",
+      "current_status": "paused",
+      "note": "Vetoed or not applicable (status paused) and spawns no runs: leave untagged"
+    },
+    "ki-arcadia-principal:activity:Email Status": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Admin/Operations/Activities/Email Status Activity.md",
+      "proposed": {
+        "initiative": null,
+        "component": null,
+        "purpose": null,
+        "run_kind": null
+      },
+      "confidence": "sure",
+      "current_status": "paused",
+      "note": "Vetoed or not applicable (status paused) and spawns no runs: leave untagged"
+    },
+    "ki-arcadia-principal:activity:Linear": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Admin/Operations/Activities/Linear Activity.md",
+      "proposed": {
+        "initiative": null,
+        "component": null,
+        "purpose": null,
+        "run_kind": null
+      },
+      "confidence": "sure",
+      "current_status": "paused",
+      "note": "Vetoed or not applicable (status paused) and spawns no runs: leave untagged"
+    },
+    "KI-HARNESS-HK-001": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/housekeeping/KI-HARNESS-HK-001-engineering-alignment-review.md",
+      "proposed": {
+        "initiative": "platform-foundations",
+        "component": null,
+        "purpose": "upkeep",
+        "run_kind": "audit"
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-HK-002": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/housekeeping/KI-HARNESS-HK-002-knowledge-reconciliation.md",
+      "proposed": {
+        "initiative": "platform-foundations",
+        "component": null,
+        "purpose": "upkeep",
+        "run_kind": "audit"
+      },
+      "confidence": "sure"
+    },
+    "KI-HARNESS-HK-003": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/housekeeping/KI-HARNESS-HK-003-weekly-model-radar-review.md",
+      "proposed": {
+        "initiative": "platform-foundations",
+        "component": "governance",
+        "purpose": "upkeep",
+        "run_kind": "audit"
+      },
+      "confidence": "unclear",
+      "why_unclear": "Model radar informs model-purpose policy (platform-foundations) but also Techne execution routes"
+    },
+    "KI-HARNESS-HK-005": {
+      "path": "/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/housekeeping/KI-HARNESS-HK-005-weekly-agentic-radar-review.md",
+      "proposed": {
+        "initiative": "platform-foundations",
+        "component": "governance",
+        "purpose": "upkeep",
+        "run_kind": "audit"
+      },
+      "confidence": "unclear",
+      "why_unclear": "Agentic radar feeds both harness standards (platform-foundations) and the Knowledge Islands model"
+    },
+    "DOTFILES-HK-001": {
+      "path": "/Users/krisbrown/.local/share/chezmoi/docs/housekeeping/DOTFILES-HK-001-review-unmanaged-and-ignored-files.md",
+      "proposed": {
+        "initiative": "rig",
+        "component": null,
+        "purpose": "upkeep",
+        "run_kind": "audit"
+      },
+      "confidence": "sure"
+    },
+    "DOTFILES-HK-002": {
+      "path": "/Users/krisbrown/.local/share/chezmoi/docs/housekeeping/DOTFILES-HK-002-reconcile-sources-after-tooling-changes.md",
+      "proposed": {
+        "initiative": "rig",
+        "component": null,
+        "purpose": "upkeep",
+        "run_kind": "audit"
+      },
+      "confidence": "sure"
+    },
+    "DOTFILES-HK-003": {
+      "path": "/Users/krisbrown/.local/share/chezmoi/docs/housekeeping/DOTFILES-HK-003-review-workstation-software.md",
+      "proposed": {
+        "initiative": "rig",
+        "component": "rig",
+        "purpose": "upkeep",
+        "run_kind": "audit"
+      },
+      "confidence": "sure"
+    }
+  },
+  "summary": {
+    "records": 82,
+    "recurring": 14,
+    "unclear": 16,
+    "by_kind": {
+      "deliver": 64,
+      "audit": 1,
+      "investigate": 11,
+      "decide": 6
+    },
+    "holds": 17,
+    "triage_to_status": 14,
+    "cancellations": 4
+  }
+}

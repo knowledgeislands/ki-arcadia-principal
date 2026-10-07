@@ -5,7 +5,7 @@ title: Platform foundations
 direction: Keep a solid, shared base under every island - the `ki` toolchain, the harness standards and a clearly owned estate.
 lifecycle: active
 lead: Kris Brown
-updated: 2026-10-07T14:05:00Z
+updated: 2026-10-07T17:30:00Z
 author: Written with Claude
 ---
 
@@ -57,7 +57,7 @@ The harness housekeeping templates name this Initiative: [KI-HARNESS-HK-001](../
 
 ## Review
 
-**2026-10-07.** At risk. The roadmap model is landing: the harness schema and checker are done, and `tools-ki` is reading the model. The baseline gate has no current result and its delivery is held by the state-of-play pause, and estate factorisation has no adopted item while FND-5 has no owner.
+**2026-10-07.** At risk. The roadmap model is landing: the harness schema and checker are done, and `tools-ki` is reading the model; [[GDR-KI-ARCADIA-005-the-roadmap-model|GDR-KI-ARCADIA-005]] records it. The baseline gate has no current result and its delivery is held by the state-of-play pause, and estate factorisation has no adopted item while FND-5 has no owner.
 
 Decisions needed: approve the baseline delivery order and release the pause; choose the repository that first carries FND-5.
 
