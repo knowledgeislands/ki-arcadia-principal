@@ -22,7 +22,7 @@ Arcadia's declarations and governance use territorial selection with one roster 
 
 ## Context
 
-Kris approved the territory-selection design and its clarified choices with "all agreed" on 7 October 2026. The accepted source is [ADR-KI-ARCADIA-002](https://github.com/knowledgeislands/ki-arcadia-principal/blob/main/Admin/Governance/Decisions/ADR-KI-ARCADIA-002-territory-derived-repository-selection.md); the [owner's decisions](https://github.com/knowledgeislands/ki-arcadia-principal/blob/main/Admin/Governance/Decisions/references/territory-selection-decisions.md) grant rollout implementation, push, prune and release. No Project is required.
+Kris approved the territory-selection design and its clarified choices with "all agreed" on 7 October 2026. The accepted source is [ADR-KI-ARCADIA-002](https://github.com/knowledgeislands/ki-arcadia-principal/blob/main/Admin/Governance/Decisions/ADR-KI-ARCADIA-002-territory-derived-repository-selection.md); the [owner's decisions](https://github.com/knowledgeislands/ki-arcadia-principal/blob/main/Streams/Initiatives/knowledge-islands-model/design/territory-selection-decisions.md) grant rollout implementation, push, prune and release. No Project is required.
 
 ## Boundary
 

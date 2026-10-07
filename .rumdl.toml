@@ -10,9 +10,7 @@ exclude = [
   ".claude/commands",
   ".claude/skills",
   ".claude/agents",
-  ".agents/skills",
-  # Design-loop supporting files are kept verbatim beside their Decision Record.
-  "Admin/Governance/Decisions/references",
+  ".agents/skills"
 ]
 
 # MD005 list indentation: rumdl 0.2.54 misreads an ordered list inside a

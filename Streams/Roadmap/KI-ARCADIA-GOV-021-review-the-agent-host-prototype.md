@@ -35,7 +35,7 @@ The host build, runbook, kill switch and teardown are in `ki-techne-harness` (`T
 
 ## Decision
 
-Kris decided the review early on 2026-10-07, choosing "Decide 'keep' now": `direct-host` stays as a recipe, the review is decided as keep, and no evidence pack is needed ([decisions](<../../Admin/Governance/Decisions/references/agent-host-durability-decisions.md>), related decisions). The exemption therefore stands as written in [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]], with no widening and no withdrawal. [[KI-ARCADIA-GOV-029-agent-host-credential-wording|KI-ARCADIA-GOV-029]] records the keep in the GDR and the hold, together with the role-based credential wording and the credential-identity decision.
+Kris decided the review early on 2026-10-07, choosing "Decide 'keep' now": `direct-host` stays as a recipe, the review is decided as keep, and no evidence pack is needed ([decisions](<../Projects/agent-host/design/agent-host-durability-decisions.md>), related decisions). The exemption therefore stands as written in [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]], with no widening and no withdrawal. [[KI-ARCADIA-GOV-029-agent-host-credential-wording|KI-ARCADIA-GOV-029]] records the keep in the GDR and the hold, together with the role-based credential wording and the credential-identity decision.
 
 ## Current state
 

@@ -37,3 +37,4 @@ This Project sits in [[Initiatives/techne|Techne]]. It and [[baseline-rollout]] 
 - **Archived TECHNE copies.** Four TECHNE records still describe their archived `ki-techne-principal` copies as identical retained projections; only ADR-TECHNE-003 has been corrected.
 - **Laptop relief.** Capture a standing-load record in its owning repository, then pause non-essential Rig agents and trim the MCP inventory; the chezmoi mcporter stall is related.
 - **Techne cloud readiness.** An Arcadia record for the held full footprint - the Paperclip comparison promoted, the reconstructability inventory and the Paperclip workload design - only if Kris moves to reshape the hold.
+- **Design papers.** The durability and workstation design loops keep their working papers in this Project's [[agent-host/design/design|design folder]] until each outcome is consolidated.

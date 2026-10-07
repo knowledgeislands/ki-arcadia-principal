@@ -21,3 +21,4 @@ What a Knowledge Island is and how islands work together: the model and its tend
 
 - Arcadia's [[Tending Activity|Tending]] and [[Briefings Activity|Briefings]] Activities serve this Initiative, with component `operations` and purpose `upkeep`. The paused Email, Email Routing and Linear Activities spawn no runs and declare no Initiative.
 - There is no projectless upkeep: Arcadia's own model and tending work belongs to a Project.
+- The territory-selection design papers sit in this Initiative's [[knowledge-islands-model/design/design|design folder]] until ADR-KI-ARCADIA-002 consolidates them.

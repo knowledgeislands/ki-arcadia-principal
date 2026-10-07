@@ -55,10 +55,6 @@ territory_members = [
 ]
 
 [skills.ki-authoring]
-owned_file_exceptions = [
-  # Keeps design-loop supporting files verbatim beside their Decision Record.
-  ".rumdl.toml",
-]
 
 # -----------------------------------------------------------------------------
 # Repository shape

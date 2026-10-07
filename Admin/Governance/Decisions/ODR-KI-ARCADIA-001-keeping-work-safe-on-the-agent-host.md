@@ -19,7 +19,7 @@ On 2026-10-07 a design loop examined how to keep work safe on the host: a brief,
 
 ## Decision
 
-The agent host follows the durability model in the [merged report](references/agent-host-durability-report.md), as amended by [Kris's decisions](references/agent-host-durability-decisions.md). Where the two differ, the decisions win.
+The agent host follows the durability model in the [merged report](../../../Streams/Projects/agent-host/design/agent-host-durability-report.md), as amended by [Kris's decisions](../../../Streams/Projects/agent-host/design/agent-host-durability-decisions.md). Where the two differ, the decisions win.
 
 - **Safe work.** Work counts as safe only once it is in Git on a remote, on any branch. The repositories the host's workspace declares are protected; Claude Code and Codex sign-ins and transcripts, caches, hand-made backups and any checkout outside the declared set are disposable by rule. Inventory fails closed: a missing workspace, an absent or unexpected repository, unreadable Git state or a discovery error is `unknown`, not clean.
 - **Status contract.** The harness status script produces one versioned structured report with an outcome of `clean`, `at-risk` or `unknown` and a distinct exit status for each, tolerates a failure in one repository, and offers a read-only `--fetch`. The CLI consumes that report rather than parsing text.
@@ -42,9 +42,9 @@ The agent host follows the durability model in the [merged report](references/ag
 
 ## References
 
-- [Brief](references/agent-host-durability-brief.md) - the problem, the proposal and the numbered reflection.
-- [Review: Fable](references/agent-host-durability-review-fable.md) and [review: Codex](references/agent-host-durability-review-codex.md) - the two independent reviews.
-- [Merged report](references/agent-host-durability-report.md) - the durability model and rollout plan.
-- [Decisions](references/agent-host-durability-decisions.md) - Kris's decisions 1 to 8, the related decisions and the authority grant, verbatim.
+- [Brief](../../../Streams/Projects/agent-host/design/agent-host-durability-brief.md) - the problem, the proposal and the numbered reflection.
+- [Review: Fable](../../../Streams/Projects/agent-host/design/agent-host-durability-review-fable.md) and [review: Codex](../../../Streams/Projects/agent-host/design/agent-host-durability-review-codex.md) - the two independent reviews.
+- [Merged report](../../../Streams/Projects/agent-host/design/agent-host-durability-report.md) - the durability model and rollout plan.
+- [Decisions](../../../Streams/Projects/agent-host/design/agent-host-durability-decisions.md) - Kris's decisions 1 to 8, the related decisions and the authority grant, verbatim.
 - [[agent-host|Agent host]] - the Project note.
 - [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] - the exemption whose bounds this operates within.
