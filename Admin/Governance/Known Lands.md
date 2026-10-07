@@ -19,7 +19,7 @@ Any island may maintain its own chart of useful topics, sources and destinations
 
 ## Internal inventory
 
-The current inventory contains 21 canonical KI repository identities: Arcadia and 20 member islands. This owner-approved inventory agrees with the inspected KIS owner and direct-member declaration in `.ki.toml`. That working-set declaration is evidence for reconciliation; Agora membership itself grants no territorial authority. The machine-readable member list is `territory_members` under `[skills.ki-repo]` in Arcadia's `.ki.toml`, and every member names Arcadia in its own `[skills.ki-repo].capital`. A change to this inventory updates both in the same enactment.
+The current inventory contains 21 canonical KI repository identities: Arcadia and 20 member islands. This owner-approved inventory agrees with the single ordered territorial roster in `.ki.toml`, including Arcadia. `territory_prefix = "ki"` supplies the short selection handle and Paperclip retains organisation code `KIS`. The machine-readable member list is `territory_members` under `[skills.ki-repo]` in Arcadia's `.ki.toml`, and every member names Arcadia in its own `[skills.ki-repo].capital`. A change to this inventory updates both in the same enactment.
 
 Each island owns its accepted knowledge or executable behaviour within the shared governance. The roles below distinguish Capital, specialist knowledge, reusable capabilities, products, integrations, tools and delivery without turning a product boundary into another territory.
 
@@ -67,7 +67,7 @@ No external membership or private consumer inventory is declared here. A future 
 
 Public entries use canonical repository identities. The local registry owns machine-specific checkout and source-store resolution; physical paths do not belong in this inventory. An island's availability on one machine is a separate observation from its governed membership.
 
-Agora working sets and Paperclip company bindings support selection and coordination. They cannot automatically add or remove members, grant source access or confer acceptance authority. An inconsistent declaration is a finding for the accountable owners to reconcile.
+KI and mgit derive repository selection from the Capital's ordered territorial roster; `-t ki` selects this territory, `--estate` selects the registered estate and `-f` narrows either scope by literal, case-sensitive repository directory-name prefixes. Paperclip company bindings support coordination. They cannot automatically add or remove members, grant source access or confer acceptance authority. An inconsistent declaration is a finding for the accountable owners to reconcile.
 
 Membership and ownership changes follow the territory's Enactment Process and the affected repository's authority. A source repository remains a member until a separately verified consolidation and owner-approved retirement disposition changes this inventory.
 

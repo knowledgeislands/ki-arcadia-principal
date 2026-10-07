@@ -23,7 +23,9 @@ Territorial membership is an explicit governed relationship. Shared governance d
 
 Arcadia is the Capital of the Knowledge Islands territory. Its [[Admin/Governance/Charter|Charter]] declares that role and its [[Admin/Governance/Known Lands|Known Lands]] records the internal inventory. Arcadia is the canonical home of the public Knowledge Islands model, but that authorship gives it no jurisdiction over another territory that follows or adopts the model.
 
-A territory's existence and membership are not established by a local registry entry, Agora working set, shared person or Paperclip company. Those mechanisms may resolve or coordinate an already governed relationship. A disagreement between them and the governed inventory requires owner reconciliation.
+A territory's existence and membership are not established by a local registry entry, repository selection, shared person or Paperclip company. Those mechanisms may resolve or coordinate an already governed relationship. A disagreement between them and the governed inventory requires owner reconciliation.
+
+Repository selection derives from the Capital's ordered `territory_members`, including the Capital itself. An optional `territory_prefix` supplies a short handle; Arcadia uses `ki`. KI and mgit share explicit territory and estate scopes and literal, case-sensitive repository directory-name prefix filters, while preserving their native defaults. Resolution and selection implement the governed inventory without granting jurisdiction, cross-repository write or acceptance authority.
 
 ## Archipelagos
 

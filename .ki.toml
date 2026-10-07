@@ -143,32 +143,4 @@ OPS = "Tools, automation and operating practice"
 # Relationships
 # -----------------------------------------------------------------------------
 
-[skills.ki-agora]
-
-[skills.ki-agora.kis]
-title = "Knowledge Islands"
-purpose = "All governed Knowledge Islands ecosystem repositories"
-members = [
-  "https://github.com/knowledgeislands/apps-observatory",
-  "https://github.com/knowledgeislands/homebrew-tap",
-  "https://github.com/knowledgeislands/ki-agentic-harness",
-  "https://github.com/knowledgeislands/ki-specifications",
-  "https://github.com/knowledgeislands/ki-techne-harness",
-  "https://github.com/knowledgeislands/ki-website",
-  "https://github.com/knowledgeislands/mcp-acquire-whatsapp",
-  "https://github.com/knowledgeislands/mcp-git-audit",
-  "https://github.com/knowledgeislands/mcp-gsuite",
-  "https://github.com/knowledgeislands/mcp-housekeeping-chatgpt",
-  "https://github.com/knowledgeislands/mcp-housekeeping-claude",
-  "https://github.com/knowledgeislands/mcp-housekeeping-codex",
-  "https://github.com/knowledgeislands/mcp-ki-kb-fs",
-  "https://github.com/knowledgeislands/mcp-ki-kb-notion-mirror",
-  "https://github.com/knowledgeislands/mcp-m365",
-  "https://github.com/knowledgeislands/tools-git-almanac",
-  "https://github.com/knowledgeislands/tools-ki",
-  "https://github.com/knowledgeislands/tools-mgit",
-  "https://github.com/knowledgeislands/tools-rig",
-  "https://github.com/knowledgeislands/tools-techne",
-]
-
 [skills.ki-trades]
