@@ -1,0 +1,391 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "GOV-020 in Knowledge Islands terms: live and held",
+    "output": "Agent Host Prototype Concept Map.html",
+    "quality_profile": "showcase",
+    "locale": "en",
+    "legend": {
+      "mode": "all",
+      "entries": {
+        "external": {
+          "label": "Human"
+        },
+        "frontend": {
+          "label": "Live now, for the prototype"
+        },
+        "security": {
+          "label": "Live: access, human only"
+        },
+        "messagebus": {
+          "label": "HELD under the Techne Programme Hold"
+        },
+        "cloud": {
+          "label": "Logical, not a technology (later)"
+        },
+        "backend": {
+          "visible": false
+        },
+        "database": {
+          "visible": false
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "human",
+      "type": "external",
+      "label": "Human: Kris",
+      "sublabel": "intent and authority",
+      "pos": [
+        40,
+        60
+      ],
+      "size": [
+        180,
+        64
+      ]
+    },
+    {
+      "id": "rig",
+      "type": "frontend",
+      "label": "Rig: Kris's Mac",
+      "sublabel": "Zed, Tailscale, Granted",
+      "pos": [
+        340,
+        60
+      ],
+      "size": [
+        180,
+        64
+      ]
+    },
+    {
+      "id": "tailnet",
+      "type": "security",
+      "label": "Tailnet",
+      "sublabel": "Tailscale SSH",
+      "pos": [
+        640,
+        60
+      ],
+      "size": [
+        180,
+        64
+      ]
+    },
+    {
+      "id": "footprint",
+      "type": "frontend",
+      "label": "Footprint: agent host",
+      "sublabel": "ki-techne-agent-host",
+      "pos": [
+        940,
+        60
+      ],
+      "size": [
+        180,
+        64
+      ]
+    },
+    {
+      "id": "sessions",
+      "type": "frontend",
+      "label": "Agent sessions",
+      "sublabel": "Kris's own actions",
+      "pos": [
+        1240,
+        60
+      ],
+      "size": [
+        180,
+        64
+      ]
+    },
+    {
+      "id": "operator",
+      "type": "security",
+      "label": "Operator / Architect",
+      "sublabel": "account-local role, human only",
+      "pos": [
+        340,
+        230
+      ],
+      "size": [
+        180,
+        64
+      ]
+    },
+    {
+      "id": "techne",
+      "type": "frontend",
+      "label": "Techne",
+      "sublabel": "ki-techne-harness",
+      "tag": "provisioning path",
+      "pos": [
+        940,
+        230
+      ],
+      "size": [
+        180,
+        64
+      ]
+    },
+    {
+      "id": "ctlhost",
+      "type": "messagebus",
+      "label": "Footprint: controller",
+      "sublabel": "ki-techne-ops-007-primary",
+      "pos": [
+        940,
+        400
+      ],
+      "size": [
+        180,
+        64
+      ]
+    },
+    {
+      "id": "k3s",
+      "type": "messagebus",
+      "label": "K3s",
+      "sublabel": "single node",
+      "pos": [
+        1240,
+        400
+      ],
+      "size": [
+        180,
+        64
+      ]
+    },
+    {
+      "id": "realm",
+      "type": "cloud",
+      "label": "Realm",
+      "sublabel": "Knowledge Islands Realm",
+      "pos": [
+        40,
+        570
+      ],
+      "size": [
+        180,
+        64
+      ]
+    },
+    {
+      "id": "kitteth",
+      "type": "messagebus",
+      "label": "Avatar: Kitteth",
+      "sublabel": "delegated agency",
+      "pos": [
+        640,
+        570
+      ],
+      "size": [
+        180,
+        64
+      ]
+    },
+    {
+      "id": "dispatcher",
+      "type": "messagebus",
+      "label": "Controller",
+      "sublabel": "techne-controller",
+      "tag": "proto-handoff",
+      "pos": [
+        1240,
+        570
+      ],
+      "size": [
+        180,
+        64
+      ]
+    },
+    {
+      "id": "paperclip",
+      "type": "messagebus",
+      "label": "Paperclip",
+      "sublabel": "agent coordination",
+      "pos": [
+        340,
+        740
+      ],
+      "size": [
+        180,
+        64
+      ]
+    },
+    {
+      "id": "telegram",
+      "type": "messagebus",
+      "label": "Telegram",
+      "sublabel": "Avatar channel",
+      "pos": [
+        640,
+        740
+      ],
+      "size": [
+        180,
+        64
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "Live until 6 November 2026 (GDR-KI-ARCADIA-004)",
+      "wraps": [
+        "rig",
+        "tailnet",
+        "footprint",
+        "sessions",
+        "operator",
+        "techne"
+      ],
+      "pad": 22
+    },
+    {
+      "kind": "region",
+      "label": "Held: Techne Programme Hold",
+      "wraps": [
+        "ctlhost",
+        "k3s",
+        "dispatcher",
+        "kitteth",
+        "paperclip",
+        "telegram"
+      ],
+      "pad": 22
+    }
+  ],
+  "connections": [
+    {
+      "from": "human",
+      "to": "rig",
+      "label": "uses"
+    },
+    {
+      "from": "rig",
+      "to": "tailnet",
+      "label": "connects",
+      "variant": "emphasis"
+    },
+    {
+      "from": "tailnet",
+      "to": "footprint",
+      "label": "admits techne",
+      "variant": "security"
+    },
+    {
+      "from": "footprint",
+      "to": "sessions",
+      "label": "hosts",
+      "variant": "emphasis"
+    },
+    {
+      "from": "human",
+      "to": "operator",
+      "label": "acts as",
+      "route": "orthogonal-v"
+    },
+    {
+      "from": "operator",
+      "to": "techne",
+      "label": "provisions via",
+      "variant": "security"
+    },
+    {
+      "from": "techne",
+      "to": "footprint",
+      "label": "builds"
+    },
+    {
+      "from": "techne",
+      "to": "ctlhost",
+      "label": "built earlier",
+      "variant": "dashed"
+    },
+    {
+      "from": "ctlhost",
+      "to": "k3s",
+      "label": "runs",
+      "variant": "dashed"
+    },
+    {
+      "from": "k3s",
+      "to": "dispatcher",
+      "label": "workload",
+      "variant": "dashed"
+    },
+    {
+      "from": "dispatcher",
+      "to": "kitteth",
+      "label": "proto-handoff, no agency",
+      "variant": "dashed"
+    },
+    {
+      "from": "kitteth",
+      "to": "realm",
+      "label": "Avatar within",
+      "variant": "dashed"
+    },
+    {
+      "from": "kitteth",
+      "to": "paperclip",
+      "label": "alongside",
+      "variant": "dashed",
+      "route": "orthogonal-v"
+    },
+    {
+      "from": "kitteth",
+      "to": "telegram",
+      "label": "talks via",
+      "variant": "dashed"
+    },
+    {
+      "from": "dispatcher",
+      "to": "telegram",
+      "label": "polls as kitteth_bot",
+      "variant": "dashed",
+      "route": "orthogonal-v"
+    },
+    {
+      "from": "human",
+      "to": "realm",
+      "label": "source of intent",
+      "variant": "dashed"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Live now",
+      "items": [
+        "Human, Rig, tailnet and one new Footprint, the agent host",
+        "Agent sessions are Kris's own actions, not Avatar actions",
+        "Techne is the provisioning path; Operator access is human only"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Held",
+      "items": [
+        "Controller instance, its K3s and dispatcher: preserved as is",
+        "Kitteth, Paperclip in any form, Telegram and other channels",
+        "The three hold prerequisites still apply to everything else"
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "Readings",
+      "items": [
+        "The controller is a proto-handoff, not the Avatar",
+        "A Realm is logical: never AWS, K3s or any technology",
+        "The Footprint is kept separate from the Realm and its Avatar"
+      ]
+    }
+  ]
+}

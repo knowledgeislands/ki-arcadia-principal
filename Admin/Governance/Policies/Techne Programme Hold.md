@@ -1,6 +1,6 @@
 ---
 note_type: admin/governance/policy
-updated: 2026-10-07T00:13:38Z
+updated: 2026-10-07T04:50:00Z
 author: AI-assisted
 ---
 
@@ -30,6 +30,8 @@ Kris Brown accepted the bounds of [[KI-ARCADIA-GOV-020-limited-remote-agent-prot
 - **Credentials.** The host build and any AWS action use Kris's own credentials. No agent creates access or acts in AWS on credentials of its own.
 - **Term.** The exemption lapses on 6 November 2026, 30 days from acceptance, unless Kris renews it through the [[Enactment Process]]; the review date is 6 November 2026. Without renewal the prototype is torn down and the hold applies in full.
 - **What stays held.** Remote Paperclip in any form; Kitteth and any Avatar; Telegram and every other messaging channel; wider K3s change beyond the agent host; every other environment; and any change to existing remote services, including the controller instance `ki-techne-ops-007-primary` and its Telegram dispatch path.
+
+[[Agent Host Prototype Rollout]] illustrates the order of these gates, the kill switch and the end of the term.
 
 Outside this exemption the hold stands unchanged.
 

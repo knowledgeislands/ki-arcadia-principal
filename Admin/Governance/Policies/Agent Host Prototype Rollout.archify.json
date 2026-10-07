@@ -1,0 +1,287 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "GOV-020 rollout and its gates",
+    "output": "Agent Host Prototype Rollout.html",
+    "quality_profile": "showcase",
+    "locale": "en",
+    "legend": {
+      "mode": "all",
+      "entries": {
+        "security": {
+          "label": "Kris-only step"
+        },
+        "database": {
+          "label": "Secret written by Kris"
+        },
+        "backend": {
+          "label": "Agent work in a session Kris opens"
+        },
+        "messagebus": {
+          "label": "Stop, review or teardown"
+        },
+        "frontend": {
+          "visible": false
+        },
+        "cloud": {
+          "visible": false
+        },
+        "external": {
+          "visible": false
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "gov",
+      "label": "Governance: Kris only"
+    },
+    {
+      "id": "setup",
+      "label": "Access and build: Kris only"
+    },
+    {
+      "id": "use",
+      "label": "First use, then work"
+    },
+    {
+      "id": "stop",
+      "label": "Stop and review",
+      "variant": "exception"
+    }
+  ],
+  "mainPath": [
+    "accept",
+    "amend",
+    "oprole",
+    "tailnet",
+    "storekey",
+    "buildhost"
+  ],
+  "nodes": [
+    {
+      "id": "accept",
+      "lane": "gov",
+      "col": 0,
+      "type": "security",
+      "label": "Bounds accepted",
+      "sublabel": "GOV-020, 7 Oct 2026",
+      "width": 134
+    },
+    {
+      "id": "amend",
+      "lane": "gov",
+      "col": 1,
+      "type": "security",
+      "label": "Hold amended",
+      "sublabel": "GDR-KI-ARCADIA-004",
+      "tag": "gate for remote work",
+      "width": 134
+    },
+    {
+      "id": "oprole",
+      "lane": "setup",
+      "col": 1,
+      "type": "security",
+      "label": "Operator role",
+      "sublabel": "IAM, Techne account",
+      "width": 134
+    },
+    {
+      "id": "tailnet",
+      "lane": "setup",
+      "col": 2,
+      "type": "security",
+      "label": "Tailnet policy, key",
+      "sublabel": "single-use, tagged",
+      "width": 134
+    },
+    {
+      "id": "storekey",
+      "lane": "setup",
+      "col": 3,
+      "type": "database",
+      "label": "Store the key",
+      "sublabel": "Parameter Store",
+      "width": 134
+    },
+    {
+      "id": "buildhost",
+      "lane": "setup",
+      "col": 4,
+      "type": "security",
+      "label": "Build the host",
+      "sublabel": "provision.sh",
+      "tag": "knowledge-islands-techne",
+      "width": 134
+    },
+    {
+      "id": "connect",
+      "lane": "use",
+      "col": 0,
+      "type": "security",
+      "label": "Connect from Zed",
+      "sublabel": "helper connect",
+      "width": 134
+    },
+    {
+      "id": "login",
+      "lane": "use",
+      "col": 1,
+      "type": "security",
+      "label": "Claude Code login",
+      "sublabel": "approved on the Mac",
+      "width": 134
+    },
+    {
+      "id": "token",
+      "lane": "use",
+      "col": 2,
+      "type": "database",
+      "label": "GitHub token",
+      "sublabel": "fine-grained, 30 days",
+      "width": 134
+    },
+    {
+      "id": "agentwork",
+      "lane": "use",
+      "col": 3,
+      "type": "backend",
+      "label": "Work",
+      "sublabel": "edit, commit, audit",
+      "tag": "no push unless asked",
+      "width": 134
+    },
+    {
+      "id": "killswitch",
+      "lane": "stop",
+      "col": 3,
+      "type": "messagebus",
+      "label": "Kill switch",
+      "sublabel": "stop, remove device",
+      "width": 134
+    },
+    {
+      "id": "review",
+      "lane": "stop",
+      "col": 4,
+      "type": "messagebus",
+      "label": "GOV-021 review",
+      "sublabel": "6 Nov 2026",
+      "tag": "renew or tear down",
+      "width": 134
+    },
+    {
+      "id": "teardown",
+      "lane": "stop",
+      "col": 5,
+      "type": "messagebus",
+      "label": "Teardown",
+      "sublabel": "stack, secrets, access",
+      "width": 134
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-accept-amend",
+      "from": "accept",
+      "to": "amend",
+      "variant": "security"
+    },
+    {
+      "id": "e-amend-oprole",
+      "from": "amend",
+      "to": "oprole",
+      "variant": "security"
+    },
+    {
+      "id": "e-oprole-tailnet",
+      "from": "oprole",
+      "to": "tailnet"
+    },
+    {
+      "id": "e-tailnet-storekey",
+      "from": "tailnet",
+      "to": "storekey",
+      "label": "pbpaste, no echo"
+    },
+    {
+      "id": "e-storekey-build",
+      "from": "storekey",
+      "to": "buildhost",
+      "variant": "emphasis"
+    },
+    {
+      "id": "e-build-connect",
+      "from": "buildhost",
+      "to": "connect",
+      "label": "boot joins tailnet",
+      "variant": "emphasis",
+      "role": "return",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e-connect-login",
+      "from": "connect",
+      "to": "login"
+    },
+    {
+      "id": "e-login-token",
+      "from": "login",
+      "to": "token"
+    },
+    {
+      "id": "e-token-work",
+      "from": "token",
+      "to": "agentwork",
+      "variant": "emphasis"
+    },
+    {
+      "id": "e-work-kill",
+      "from": "agentwork",
+      "to": "killswitch",
+      "label": "any time",
+      "variant": "dashed",
+      "role": "error"
+    },
+    {
+      "id": "e-work-review",
+      "from": "agentwork",
+      "to": "review",
+      "label": "term ends",
+      "variant": "dashed",
+      "role": "branch"
+    },
+    {
+      "id": "e-review-teardown",
+      "from": "review",
+      "to": "teardown",
+      "label": "not renewed",
+      "variant": "security"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "rose",
+      "title": "Gates",
+      "items": [
+        "Operator role: ki-techne-agent-host-operator, account-local",
+        "No remote action before acceptance and the hold amendment",
+        "No agent creates access or uses AWS credentials of its own",
+        "Credential identity decided before agents work on the host"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Kill switch and teardown",
+      "items": [
+        "Kill switch: stop.sh as agent-host profile, remove the device",
+        "Teardown: destroy.sh as admin, then tailnet, tokens, access",
+        "Renewal needs a new authorisation and a new GitHub token"
+      ]
+    }
+  ]
+}
