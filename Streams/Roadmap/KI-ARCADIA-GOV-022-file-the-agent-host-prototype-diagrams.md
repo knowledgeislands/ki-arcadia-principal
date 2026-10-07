@@ -5,12 +5,12 @@ area: GOV
 title: File the agent-host prototype diagrams
 theme: governance
 horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: 11fbc2f8cb2016bd09640e90f0923a079d723b98
 created_at: 2026-10-07T04:45:00Z
-updated_at: 2026-10-07T04:58:00Z
+updated_at: 2026-10-07T06:31:47Z
 ---
 
 # File the Agent-Host Prototype Diagrams
@@ -124,6 +124,10 @@ The goal is met: both diagrams are filed beside the knowledge they illustrate, e
 ### Mini recap
 
 GOV-022 filed the concept map in Engineering Practice Diagrams and the rollout beside the Techne Programme Hold, each as Archify JSON, SVG and an explaining note, corrected the concept map's stale "permission set" label, and restructured the Diagrams index. Every audit passes. Proposed learning route: how to export Archify diagrams for Markdown, to the `archify` or `ki-authoring` guidance through its own record.
+
+## Done
+
+Accepted 2026-10-07 by Kris Brown on the review packet above.
 
 ## Governance
 
