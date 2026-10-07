@@ -39,9 +39,9 @@ Finish KI-TOOL-CLI-112 so that `ki` reads the new fields, then close the toleran
 
 Membership is classification, not authority. Status lives in each record.
 
-- [KI-TOOL-CLI-112](../../../tools-ki/docs/roadmap/KI-TOOL-CLI-112-read-the-roadmap-model.md) - Read the roadmap model
-- [[KI-ARCADIA-GOV-026-create-the-initiative-and-project-registry|KI-ARCADIA-GOV-026]] - Create the Initiative and Project registry
-- [[KI-ARCADIA-GOV-027-migrate-arcadia-to-the-roadmap-model|KI-ARCADIA-GOV-027]] - Migrate Arcadia to the roadmap model
+- KI-TOOL-CLI-112 - Read the roadmap model
+- KI-ARCADIA-GOV-026 - Create the Initiative and Project registry
+- KI-ARCADIA-GOV-027 - Migrate Arcadia to the roadmap model
 
 Done and awaiting prune in the harness: [KI-HARNESS-GOV-149](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-149-adopt-the-roadmap-model.md), [KI-HARNESS-GOV-150](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-150-check-the-roadmap-model.md) and [KI-HARNESS-GOV-151](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-151-recognise-the-initiatives-folder.md).
 
@@ -55,4 +55,4 @@ None.
 
 ## Sources
 
-Created by [[KI-ARCADIA-GOV-027-migrate-arcadia-to-the-roadmap-model|KI-ARCADIA-GOV-027]] under decision 7 of the rollout (`~/.local/state/ki/state-of-play/design/decisions.md`).
+Created by KI-ARCADIA-GOV-027 under decision 7 of the rollout (`~/.local/state/ki/state-of-play/design/decisions.md`).

@@ -23,7 +23,7 @@ On 2026-11-06, Kris reviews the standing agent-host exemption from the [[Techne 
 
 ## Context
 
-KI-ARCADIA-GOV-020 defined a separate EC2 agent host, `ki-techne-agent-host`, reached only over Tailscale SSH, and Kris accepted it on 2026-10-07 for a 30-day term. The same day, [[KI-ARCADIA-GOV-023-widen-the-agent-host-exemption-to-a-standing-one|KI-ARCADIA-GOV-023]] widened the exemption to setting the host up and operating it properly and durably, removed the automatic lapse, and made this record a scheduled review on 2026-11-06. [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] records the standing exemption: it stands until Kris changes or withdraws it.
+KI-ARCADIA-GOV-020 defined a separate EC2 agent host, `ki-techne-agent-host`, reached only over Tailscale SSH, and Kris accepted it on 2026-10-07 for a 30-day term. The same day, KI-ARCADIA-GOV-023 widened the exemption to setting the host up and operating it properly and durably, removed the automatic lapse, and made this record a scheduled review on 2026-11-06. [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] records the standing exemption: it stands until Kris changes or withdraws it.
 
 The host build, runbook, kill switch and teardown are in `ki-techne-harness` (`TECHNE-TOOLS-OPS-009`, `docs/guides/operator/agent-host.md`), with workspace setup, updates and status planned in `TECHNE-TOOLS-OPS-011`. The `techne host` command group is captured in `tools-techne` (`TECHNE-TOOL-CLI-004`), and the Mac-side tooling is in the chezmoi source (`DOTFILES-UE-068`).
 

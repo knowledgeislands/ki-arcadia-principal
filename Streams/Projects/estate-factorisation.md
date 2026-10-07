@@ -99,4 +99,4 @@ Membership is classification, not authority; each owning repository decides whet
 
 ## Sources
 
-Seeded by [[KI-ARCADIA-GOV-026-create-the-initiative-and-project-registry|KI-ARCADIA-GOV-026]] from `+/_CHECKPOINTS/estate-factorisation.md` at `53633b2`.
+Seeded by KI-ARCADIA-GOV-026 from `+/_CHECKPOINTS/estate-factorisation.md` at `53633b2`.

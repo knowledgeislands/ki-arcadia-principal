@@ -30,7 +30,7 @@ Today root `AGENTS.md` says substantive changes to `Admin`, `Pillars` and `Resou
 Evidence from 2026-10-07:
 
 - A one-paragraph change, adding `ki-techne-harness` and `tools-techne` to the cross-repository handoff list in root `AGENTS.md`, was proposed as a full Enactment record before Kris declined it: "no need for an enactment record". Root `AGENTS.md` is not a canonical zone, so the edit was made directly.
-- Three records, [[KI-ARCADIA-GOV-021-review-the-agent-host-prototype|KI-ARCADIA-GOV-021]], [[KI-ARCADIA-GOV-022-file-the-agent-host-prototype-diagrams|KI-ARCADIA-GOV-022]] and [[KI-ARCADIA-GOV-023-widen-the-agent-host-exemption-to-a-standing-one|KI-ARCADIA-GOV-023]], were opened around the one agent host that [[KI-ARCADIA-GOV-020-limited-remote-agent-prototype|KI-ARCADIA-GOV-020]] authorised.
+- Three records, [[KI-ARCADIA-GOV-021-review-the-agent-host-prototype|KI-ARCADIA-GOV-021]], KI-ARCADIA-GOV-022 and KI-ARCADIA-GOV-023, were opened around the one agent host that KI-ARCADIA-GOV-020 authorised.
 
 ## Boundary
 

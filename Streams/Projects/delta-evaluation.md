@@ -73,4 +73,4 @@ None. A trial record is captured only if Kris decides to trial.
 
 ## Sources
 
-Seeded by [[KI-ARCADIA-GOV-026-create-the-initiative-and-project-registry|KI-ARCADIA-GOV-026]] from `+/_CHECKPOINTS/delta-evaluation.md` at `53633b2`. That checkpoint replaced the loose note `+/delta-paperclip-assessment-2026-10-02.md`, which Git retains.
+Seeded by KI-ARCADIA-GOV-026 from `+/_CHECKPOINTS/delta-evaluation.md` at `53633b2`. That checkpoint replaced the loose note `+/delta-paperclip-assessment-2026-10-02.md`, which Git retains.

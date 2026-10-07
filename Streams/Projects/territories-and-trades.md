@@ -86,4 +86,4 @@ Membership is classification, not authority; each owning repository decides whet
 
 ## Sources
 
-Seeded by [[KI-ARCADIA-GOV-026-create-the-initiative-and-project-registry|KI-ARCADIA-GOV-026]] from `+/_CHECKPOINTS/territories-and-trades.md` at `87e160f`.
+Seeded by KI-ARCADIA-GOV-026 from `+/_CHECKPOINTS/territories-and-trades.md` at `87e160f`.

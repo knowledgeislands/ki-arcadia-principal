@@ -45,4 +45,4 @@ None recorded here yet; the Techne checkpoint holds the thread's working state.
 
 ## Sources
 
-Created by [[KI-ARCADIA-GOV-026-create-the-initiative-and-project-registry|KI-ARCADIA-GOV-026]]. Open records from the theme map of 2026-10-07 (`techne` theme), refreshed against current record status. The checkpoint `+/_CHECKPOINTS/techne.md` was at `1e529b3` when this note was created.
+Created by KI-ARCADIA-GOV-026. Open records from the theme map of 2026-10-07 (`techne` theme), refreshed against current record status. The checkpoint `+/_CHECKPOINTS/techne.md` was at `1e529b3` when this note was created.

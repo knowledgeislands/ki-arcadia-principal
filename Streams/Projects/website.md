@@ -56,4 +56,4 @@ None recorded yet.
 
 ## Sources
 
-Created by [[KI-ARCADIA-GOV-026-create-the-initiative-and-project-registry|KI-ARCADIA-GOV-026]] from the theme map of 2026-10-07 (`website` theme, parked), refreshed against current record status.
+Created by KI-ARCADIA-GOV-026 from the theme map of 2026-10-07 (`website` theme, parked), refreshed against current record status.

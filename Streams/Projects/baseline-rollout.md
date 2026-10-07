@@ -78,4 +78,4 @@ Membership is classification, not authority; each owning repository decides whet
 
 ## Sources
 
-Seeded by [[KI-ARCADIA-GOV-026-create-the-initiative-and-project-registry|KI-ARCADIA-GOV-026]] from `+/_CHECKPOINTS/baseline.md` at `d9931d4`.
+Seeded by KI-ARCADIA-GOV-026 from `+/_CHECKPOINTS/baseline.md` at `d9931d4`.

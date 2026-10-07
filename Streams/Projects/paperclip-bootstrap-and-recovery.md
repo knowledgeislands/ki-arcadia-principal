@@ -120,4 +120,4 @@ None beyond the open questions above.
 
 ## Sources
 
-Seeded by [[KI-ARCADIA-GOV-026-create-the-initiative-and-project-registry|KI-ARCADIA-GOV-026]] from `+/_CHECKPOINTS/paperclip-bootstrap-and-recovery.md` at `53633b2`.
+Seeded by KI-ARCADIA-GOV-026 from `+/_CHECKPOINTS/paperclip-bootstrap-and-recovery.md` at `53633b2`.
