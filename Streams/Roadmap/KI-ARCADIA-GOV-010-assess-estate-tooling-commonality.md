@@ -15,7 +15,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-09-22T06:37:24Z
-updated_at: 2026-10-06T22:06:00Z
+updated_at: 2026-10-07T10:21:00Z
 author: Written with Codex
 ---
 
@@ -94,6 +94,10 @@ The desired outcome is not maximum code sharing. It is an evidence-based boundar
 ### Folds into estate-factorisation (2026-10-06)
 
 In the state-of-play review (`+/_CHECKPOINTS/state-of-play.md`), Kris approved folding this record into the estate-factorisation thread and then closing it. That thread has no work record yet, only its checkpoint (`+/_CHECKPOINTS/estate-factorisation.md`), so there is no canonical target for a merge. This record therefore stays open in Future as a draft. Merge it into the estate-factorisation work record and close it once that thread has one.
+
+### Fold re-confirmed (2026-10-07)
+
+Kris confirmed this fold again on 2026-10-07. It still cannot be carried out. The record is adopted in Future, so it can take an intake disposition only after an explicit human disposition moves it back into Triage, and `merged` needs a retained target work record in this roadmap, which the estate-factorisation thread does not have yet. The route the skills allow: once the thread's FND-5 item is captured as an Arcadia work record, Kris approves moving this record to Triage and a `merged` disposition naming that record, closed through `ki-accept`. Until then it stays in Future as a draft.
 
 ## Governance
 

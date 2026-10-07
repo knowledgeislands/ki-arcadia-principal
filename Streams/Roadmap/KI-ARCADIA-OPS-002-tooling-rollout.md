@@ -15,7 +15,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-30T09:55:30Z
-updated_at: 2026-10-04T18:01:50Z
+updated_at: 2026-10-07T10:21:00Z
 author: Written with Claude
 ---
 
@@ -71,3 +71,9 @@ Not shaped to Ready during the 2026-10-04 delegated roadmap push. The record ass
 Should this record be closed as obsolete, with any surviving concern (an Arcadia skill definition, scheduled-task verification) folded into KI-ARCADIA-OPS-008 or a fresh record?
 
 Classified as an owner decision by the Fable reviewer under delegated autonomy (2026-10-04): No `Tools/` prompt library exists, Activities live in `Admin/Operations/Activities/`, scheduled tasks are governed by KI-ARCADIA-OPS-008 and the Charter, and the Techne Programme Hold constrains remote scheduled execution; closing versus re-scoping is the owner's disposition.
+
+## Discussion
+
+### Close as obsolete - approved 2026-10-07
+
+On 2026-10-07 Kris approved closing this record as obsolete in the state-of-play review (`+/_CHECKPOINTS/state-of-play.md`), answering the question above. Its surviving concern, Tending prompts and scheduled-task verification, sits in KI-ARCADIA-OPS-008. The closure is not carried out yet: the record is adopted in Next, `ki-accept` closes only an Awaiting-review delivery or an open Triage intake, and `ki-next` moves adopted work back into Triage only on an explicit human disposition. The route the skills allow is for Kris to approve moving this record from Next to Triage, then a `rejected` disposition (obsolete; concern carried by KI-ARCADIA-OPS-008) closed through `ki-accept`. No lifecycle field changes here.
