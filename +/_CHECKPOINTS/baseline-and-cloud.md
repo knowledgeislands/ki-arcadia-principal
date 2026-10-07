@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: baseline-and-cloud
 state: active
 created_at: 2026-10-06T20:50:00Z
-updated_at: 2026-10-07T00:16:00Z
+updated_at: 2026-10-07T07:25:00Z
 ---
 
 # baseline-and-cloud
@@ -52,19 +52,21 @@ Cloud records and evidence:
 | Item | Status | Notes |
 | --- | --- | --- |
 | `ki-techne-harness` `TECHNE-TOOLS-FAB-001` - agent-host execution profile | done, pruned | Local build; its TCP 443 egress rule must be narrowed under OPS-008 before any apply |
-| `ki-techne-harness` `TECHNE-TOOLS-OPS-008` - supervised agent host | draft, triage | Waiting on Kris: separate host or the controller node |
-| `tools-techne` | v0.2.0, no open records | AWS CLI only |
+| `ki-techne-harness` `TECHNE-TOOLS-OPS-008` and `OPS-009` - agent host | OPS-008 closed as merged; OPS-009 done | Separate host chosen; stack, runbook, kill switch and teardown delivered; host built and in use |
+| `ki-techne-harness` `TECHNE-TOOLS-OPS-010` and `OPS-011` | OPS-010 done; OPS-011 ready, now | OPS-010 diagrams the runbook; OPS-011 makes the host's workspace setup, updates and status rerunnable |
+| `tools-techne` `TECHNE-TOOL-CLI-004` - host command group | draft, triage | Captured: `techne host` operator commands acting only on the agent host |
+| Chezmoi `DOTFILES-UE-068` - agent-host operator tooling | done | Corrected after acceptance to assume the account-local operator role |
 | Target footprint | Captured, not adopted | `+/_ACQUIRE/chatgpt/knowledge-islands/2026-10-03-techne-and-first-footprint.md` and siblings. One EC2 instance with K3s; Paperclip as a workload; Kitteth as operator; Tailscale, SSH and Zed remote; Telegram; work survives the Rig disconnecting; a reconstructability inventory |
 | Hold prerequisite 1 - local review-to-live-main cycle and recovery | Not met | Next step items 1 and 2 of `paperclip-bootstrap-and-recovery` |
 | Hold prerequisite 2 - what Paperclip supplies versus what Techné must add | Partial | `ki-techne-harness/+/paperclip-as-techne-prior-art.md` (working analysis, 2026-09-24), never promoted |
 | Hold prerequisite 3 - repository-owned remote-delivery policy | Not met | Boundary owned by the harness `ki-agent-coordination-paperclip` skill; no record |
 
-Today's Techné controller dispatches Telegram `/run` requests as busybox-only K3s Jobs with no egress on one t3.medium. Paperclip, Kitteth, Tailscale and SSH access, agent execution and the reconstructability inventory are all missing.
+Today's Techné controller dispatches Telegram `/run` requests as busybox-only K3s Jobs with no egress on one t3.medium. Beside it, the separate agent host `ki-techne-agent-host` is built, reached over Tailscale SSH, and in use for Kris-opened agent sessions. Paperclip, Kitteth and the reconstructability inventory are still missing.
 
 ## Decisions made
 
 - The Techne Programme Hold stands: local design, build and test may proceed, but no remote execution or remote-environment management. Moving Paperclip off the laptop is remote-environment management. Only Kris can authorise, reshape or retire the hold, once the three prerequisites are evidenced.
-- Kris accepted `KI-ARCADIA-GOV-020` on 2026-10-07: the hold carries one exemption, for a single new agent-host instance `ki-techne-agent-host` beside the untouched controller, with Kris-opened sessions only, Kris's own credentials for the build and any AWS action, and Paperclip, Kitteth, Telegram, wider K3s and existing remote services still held. It lapses on 2026-11-06 unless renewed (GDR-KI-ARCADIA-004). It does not move Paperclip and does not satisfy the three prerequisites.
+- Kris accepted `KI-ARCADIA-GOV-020` on 2026-10-07: the hold carries one exemption, for a single new agent-host instance `ki-techne-agent-host` beside the untouched controller, with Kris-opened sessions only, Kris's own credentials for the build and any AWS action, and Paperclip, Kitteth, Telegram, wider K3s and existing remote services still held. On 2026-10-07 at 08:40 CEST Kris widened it through `KI-ARCADIA-GOV-023` to setting up and operating that one host properly and durably, with no automatic lapse: it stands until Kris changes or withdraws it, with a scheduled review on 2026-11-06 (GDR-KI-ARCADIA-004, retitled "Standing agent-host exemption from the Techne Programme Hold"). The widened exemption is in force from Arcadia `e25a7f9`. It does not move Paperclip and does not satisfy the three prerequisites.
 
 ## Files touched
 
@@ -73,8 +75,7 @@ None beyond this record.
 ## Open questions
 
 - Should the hold be reshaped so Paperclip can move to an owned host before all three prerequisites are met? The GOV-020 exemption does not answer this.
-- By 2026-11-06: renew, reshape or let the GOV-020 exemption lapse with teardown?
-- `TECHNE-TOOLS-OPS-008`: a separate agent host, or the controller node?
+- At the scheduled 2026-11-06 review (`KI-ARCADIA-GOV-021`): keep, widen or withdraw the standing agent-host exemption?
 - Should `KI-ARCADIA-OPS-002` be closed as obsolete or folded into OPS-008?
 - Which repository owns reducing the laptop's standing load: chezmoi, `tools-rig` or both?
 - Should `tools-ki` add a terminal Granola disposition for meetings dropped without harvest? The ledger has none, so the dropped 2026-10-05 Alec catch-up is recorded as `harvested-locally`. No record exists yet.
