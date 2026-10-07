@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: techne
 state: active
 created_at: 2026-10-07T09:05:00Z
-updated_at: 2026-10-07T14:50:10Z
+updated_at: 2026-10-07T16:58:31Z
 ---
 
 # techne
@@ -33,11 +33,11 @@ Records:
 | [[KI-ARCADIA-GOV-020-limited-remote-agent-prototype\|KI-ARCADIA-GOV-020]] - limited remote agent prototype | done | Defined and authorised the separate host |
 | [[KI-ARCADIA-GOV-023-widen-the-agent-host-exemption-to-a-standing-one\|KI-ARCADIA-GOV-023]] - standing exemption | done | Widened the exemption, removed the lapse, scheduled the review |
 | [[KI-ARCADIA-GOV-021-review-the-agent-host-prototype\|KI-ARCADIA-GOV-021]] - review the agent host | draft, triage | The 2026-11-06 review this checkpoint serves |
-| [[KI-ARCADIA-GOV-025-model-agent-hosts-as-recipes-and-bindings\|KI-ARCADIA-GOV-025]] - agent hosts as recipes and bindings | awaiting-review | Amended [[ADR-TECHNE-003-techne-implementation-ownership\|ADR-TECHNE-003]] in place (`38f0cec`) and handed off H1 to H3, all delivered. Kris accepts it separately. A second binding, provider or recipe needs its own authority under the hold |
+| `KI-ARCADIA-GOV-025` - agent hosts as recipes and bindings | done, pruned | Amended [[ADR-TECHNE-003-techne-implementation-ownership\|ADR-TECHNE-003]] in place (`38f0cec`) and handed off H1 to H3, all delivered. Accepted 2026-10-07 under Kris's approval of every awaiting-review record. A second binding, provider or recipe needs its own authority under the hold |
 | `ki-techne-harness` `TECHNE-TOOLS-OPS-008` and `OPS-009` - agent host | done | OPS-008 closed as merged into OPS-009, which delivered the stack, runbook, kill switch and teardown; FAB-001's egress narrowing went with it |
 | `ki-techne-harness` `TECHNE-TOOLS-OPS-010` - runbook diagrams | done | - |
 | `ki-techne-harness` `TECHNE-TOOLS-OPS-011` - manage the host footprint | done | Accepted on Kris's approval at 10:58 CEST, 2026-10-07 (`9bb2e52`, `de05a78`); not pruned, because it is the only home of its six follow-ups |
-| `ki-techne-harness` `TECHNE-TOOLS-OPS-012` - parameterise the `direct-host` recipe | awaiting-review, being accepted | GOV-025 H1: the recipe manifest and parameterised scripts (`b37b16c`). Its no-change change set has not been run; it moves into the host rebuild |
+| `ki-techne-harness` `TECHNE-TOOLS-OPS-012` - parameterise the `direct-host` recipe | done, pruned | GOV-025 H1: the recipe manifest and parameterised scripts (`b37b16c`). Its no-change change set is now the operator guide's "Before a rebuild" step |
 | `tools-techne` `TECHNE-TOOL-CLI-004` - `techne host` command group | done | `host status`, `start`, `stop`, `teardown`, `connect` and `setup` |
 | `tools-techne` `TECHNE-TOOL-CLI-005` - recipe, binding and provider commands | done | GOV-025 H2, accepted at `a720c21`; no built-in defaults, `--host` required to change a host, `--aws-*` provider options |
 | chezmoi `DOTFILES-UE-068` - agent-host operator tooling | done | Superseded in use by the CLI |
@@ -56,11 +56,12 @@ Acquired ChatGPT captures in `+/_ACQUIRE/chatgpt/knowledge-islands/` (2026-10-03
 
 Planned, not yet scheduled:
 
-- **Host rebuild** at a time Kris chooses, under the standing exemption: first the OPS-012 no-change CloudFormation change set for the first binding's values, which must show no change; then rebuild to pick up the OS hostname `ki-techne-agent-host` and `zsh`; then prove `techne host setup --host agent-host` re-converges on the fresh host.
+- **Host rebuild** at a time Kris chooses, under the standing exemption: first the no-change CloudFormation change set for the first binding's values from the `ki-techne-harness` operator guide's "Before a rebuild" step (`docs/guides/operator/agent-host.md`), which must show no change; then rebuild to pick up the OS hostname `ki-techne-agent-host` and `zsh`; then prove `techne host setup --host agent-host` re-converges on the fresh host.
 
 Untracked ideas, kept here rather than captured:
 
 - **OPS-011 follow-ups**, named in its acceptance and not captured: work durability in `stop.sh` and `destroy.sh`; the two-checkout rule and a designated roadmap writing checkout; keeping the host's pins current; a standing expiry view; an MCP source for the host (the 21 `BIND-2` failures); and moving the three `ki` behaviour fixes found live (`ki dev local set` while the checkout is active, bootstrap without `--refresh`, the estate `diag` exit status) to `tools-ki`.
+- **Archived TECHNE copies.** The four other TECHNE records still describe their archived `ki-techne-principal` copies as identical retained projections; `KI-ARCADIA-GOV-025` corrected only ADR-TECHNE-003 and left them as planned.
 - **Controller as a recipe.** The held controller (`techne controller`, stack `ki-techne-ops-007-primary`) is really a delegation-capable recipe and could later become a `techne host` binding, retiring `techne controller`. Revisit when the hold lifts.
 - **Laptop relief.** Capture a standing-load record in its owning repository, then pause non-essential Rig agents and trim the MCP inventory.
 - **Techné cloud readiness.** An Arcadia record for the held footprint: promote the prior-art note as prerequisite 2, own the reconstructability inventory and the Paperclip workload design (container, Postgres persistent volume, backup, host sizing), and hand prerequisite 3 to the harness as a reciprocal blocking item. Only relevant if Kris moves to reshape the hold.
@@ -88,4 +89,4 @@ This record takes over the cloud half of `baseline-and-cloud`, which was renamed
 
 ## Next step
 
-Kris accepts [[KI-ARCADIA-GOV-025-model-agent-hosts-as-recipes-and-bindings|KI-ARCADIA-GOV-025]], then plans the host rebuild: the no-change change set first, then the rebuild for the hostname and `zsh`, then proof that `techne host setup --host agent-host` re-converges. Only after that, ahead of 2026-11-06, assemble GOV-021's inputs from the owning records - how the host has been used, cost, credential identity, egress, token rotation and each prerequisite's status - and bring them to Kris for the keep, widen or withdraw decision and the question of reshaping the hold.
+Kris plans the host rebuild: the no-change change set first, then the rebuild for the hostname and `zsh`, then proof that `techne host setup --host agent-host` re-converges. Only after that, ahead of 2026-11-06, assemble GOV-021's inputs from the owning records - how the host has been used, cost, credential identity, egress, token rotation and each prerequisite's status - and bring them to Kris for the keep, widen or withdraw decision and the question of reshaping the hold.

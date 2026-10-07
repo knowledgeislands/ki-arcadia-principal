@@ -6,13 +6,12 @@ title: Model agent hosts as recipes and bindings
 kind: deliver
 project: agent-host
 component: techne
-horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: b6bef4556ffa34be2304185bb2a1cba5be49c405
 created_at: 2026-10-07T08:49:50Z
-updated_at: 2026-10-07T14:49:12Z
+updated_at: 2026-10-07T16:57:25Z
 ---
 
 # Model Agent Hosts as Recipes and Bindings
@@ -324,6 +323,10 @@ The goal is met at Arcadia's level: the model, its vocabulary and its ownership 
 
 GOV-025 amended ADR-TECHNE-003 with the recipe, binding, provider and footprint model and placed H1 to H3, which their repositories delivered. The audit passes. Outstanding: the no-change change set, now the first step of the host rebuild, and OPS-012's acceptance. Proposed learning route: none beyond the Engineering Practice paragraph already added; the held controller as a delegation-capable recipe is captured as an idea in the `techne` checkpoint, not here.
 
+## Done
+
+Accepted 2026-10-07 by Kris Brown on the review packet above.
+
 ## Discussion
 
 ### Capture
@@ -353,3 +356,7 @@ Kris Brown, 2026-10-07 about 14:50 CEST, answered "both" to two points, folded i
 ## Governance
 
 This roadmap record adheres to the [[Admin/Operations/Processes/Enactment Process|Enactment Process]]. Move content to `Admin/`, `Pillars/`, or `Resources/` only on user approval of a `ready` record.
+
+### Acceptance - 2026-10-07
+
+Kris Brown accepted every awaiting-review record in the Agora on 2026-10-07 ("everything that's awaiting review can be considered to be done and we can get pruned"; decision 12, state-of-play design loop). Outstanding concerns now live elsewhere: the no-change change set is the `ki-techne-harness` operator guide's "Before a rebuild" step, `TECHNE-TOOLS-OPS-012` closed done in that repository, and the four archived TECHNE copies are an untracked idea in the `techne` checkpoint.
