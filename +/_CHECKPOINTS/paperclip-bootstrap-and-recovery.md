@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: paperclip-bootstrap-and-recovery
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-08T08:35:00Z
+updated_at: 2026-10-08T13:38:00Z
 ---
 
 # paperclip-bootstrap-and-recovery
@@ -14,15 +14,15 @@ Paperclip is useful: one reviewed roadmap delivery lands in Kris's local main in
 
 ## Current state
 
-- Open records, all in `ki-agentic-harness`: [KI-HARNESS-GOV-102](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-102-decide-role-record-serialization.md), [KI-HARNESS-GOV-107](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-107-make-coordination-audit-mechanical.md), [KI-HARNESS-GOV-108](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-108-decide-coordination-declaration-scope.md) and [KI-HARNESS-RTP-015](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-RTP-015-verify-run-mcp-connection.md) (Next, ready); [KI-HARNESS-GOV-103](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-103-cite-coordination-rules-once.md) (Next, draft); [KI-HARNESS-GOV-147](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-147-make-the-branch-durable.md) and [KI-HARNESS-RTP-018](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-RTP-018-audit-inside-sandboxed-runs.md) (triage).
-- Helper `paperclip-a` (gov-020) is delivering KI-HARNESS-GOV-102, KI-HARNESS-GOV-103 and KI-HARNESS-GOV-108, and was last testing before pushing KI-HARNESS-GOV-108. Helper `paperclip-b` is delivering KI-HARNESS-GOV-107, KI-HARNESS-GOV-147 and KI-HARNESS-RTP-018, and was rewriting KI-HARNESS-GOV-147's standard rules. Check `ki agent status gov-020`.
-- KI-HARNESS-RTP-015 has no helper.
+- Delivered, closed done and pruned in `ki-agentic-harness`: KI-HARNESS-GOV-102 (`c872f093`), KI-HARNESS-GOV-103 (`408f8431`), KI-HARNESS-GOV-107 (`5186ae58`), KI-HARNESS-GOV-108 (`608d241a`), KI-HARNESS-GOV-147 (`0fc418eb`) and KI-HARNESS-RTP-018 (`cdd79c5c`). Helpers `paperclip-a` and `paperclip-b` are finished.
+- Open records, all in `ki-agentic-harness`: [KI-HARNESS-RTP-015](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-RTP-015-verify-run-mcp-connection.md) (Next, ready, no helper) and [KI-HARNESS-GOV-162](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-162-cite-rules-in-paperclip.md) (triage).
 - Two Paperclip decision cards await Kris through `state-of-play`.
 
 ## Decisions made
 
 - The master thread `state-of-play` owns cross-project priorities, releases and decisions; this thread works only this Project's records.
 - The standing Paperclip constraints (ticket statuses, authority, ownership, scope, structure, hires) are in the Project note and bind this thread. The Techne Programme Hold applies to any remote operation.
+- Workspace retirement (KI-HARNESS-GOV-147): the branch is the durable unit and the worktree a disposable checkout. Removing a worktree is safe once its work is committed to the branch; an unmerged branch is never deleted.
 
 ## Files touched
 
@@ -34,4 +34,4 @@ None for this thread; the two decision cards are Kris's, through `state-of-play`
 
 ## Next step
 
-Verify `paperclip-a` and `paperclip-b` reports once both are DONE; then delegate KI-HARNESS-RTP-015 through `ki agent`, staying within the Project note's constraints.
+Delegate KI-HARNESS-RTP-015 through `ki agent`, staying within the Project note's constraints; shape KI-HARNESS-GOV-162 when it is adopted.
