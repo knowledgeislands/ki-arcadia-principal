@@ -7,13 +7,12 @@ kind: deliver
 purpose: governance
 project: agent-host
 component: governance
-horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: 59263d985cc53d5411275e0258e706841b5bb35f
 created_at: 2026-10-07T20:47:00Z
-updated_at: 2026-10-07T21:30:00Z
+updated_at: 2026-10-08T07:21:03Z
 ---
 
 # Agent-Host Credential Wording
@@ -115,6 +114,10 @@ The goal is met: the exemption states credentials by role, matches the build and
 ### Mini recap
 
 GOV-029 rewords the agent-host exemption's credentials by role, records the binding owner's GitHub and Claude identities and the early keep, in GDR-KI-ARCADIA-004 and the hold. Learning route: none beyond the outstanding concerns above.
+
+## Done
+
+Accepted 2026-10-08 by Kris Brown under Decision 6 of the Techne run's decisions log (2026-10-07): "Kris approved accepting KI-ARCADIA-GOV-029 and KI-ARCADIA-GOV-021 through ki-accept and pruning both once accepted." The review-date output in `ki-techne-harness` stays with TECHNE-TOOLS-OPS-014, now scoped to remove it.
 
 ## Discussion
 

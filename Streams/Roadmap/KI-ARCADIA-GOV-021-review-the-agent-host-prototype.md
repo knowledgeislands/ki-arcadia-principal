@@ -7,13 +7,12 @@ kind: decide
 purpose: governance
 project: agent-host
 component: governance
-horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: 4fcb560bde571cd4ed024dddc830625ff84648ab
 created_at: 2026-10-07T00:33:11Z
-updated_at: 2026-10-07T20:49:00Z
+updated_at: 2026-10-08T07:21:03Z
 ---
 
 # Review the Agent-Host Prototype
@@ -103,6 +102,10 @@ The goal is met: the review has an outcome, keep, with its source, and the GDR c
 ### Mini recap
 
 GOV-021 records Kris's early keep of the agent-host exemption, with `direct-host` staying a recipe and no evidence pack. Learning route: none.
+
+## Done
+
+Accepted 2026-10-08 by Kris Brown under Decision 6 of the Techne run's decisions log (2026-10-07): "Kris approved accepting KI-ARCADIA-GOV-029 and KI-ARCADIA-GOV-021 through ki-accept and pruning both once accepted." The same decision resolves the first outstanding concern: the exemption has no fixed review date and is revisited when the hold is reshaped. The review-date output in `ki-techne-harness` stays with TECHNE-TOOLS-OPS-014, now scoped to remove it.
 
 ## Discussion
 
