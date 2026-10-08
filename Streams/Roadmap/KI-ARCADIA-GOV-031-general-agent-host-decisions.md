@@ -13,7 +13,7 @@ blocks: []
 blocked_by: []
 baseline_ref: ee0059f8f99c9338c7c646d2fe9acc9944e57a38
 created_at: 2026-10-08T08:43:00Z
-updated_at: 2026-10-08T08:44:00Z
+updated_at: 2026-10-08T12:58:48Z
 ---
 
 # General Agent-Host Decisions
@@ -31,6 +31,7 @@ Kris approved them the same day: "yes, all recommended, but zsh please, not bash
 ## Boundary
 
 - In scope: in-place amendments to ODR-KI-ARCADIA-001 (P4, and the P7 consequence) and ADR-KI-ARCADIA-003 (P5, P6, and the P7 recipe layer).
+- Also in scope (added 2026-10-08 under Decision 12): removing "the review date" from ODR-KI-ARCADIA-001's Expiries bullet, which Decision 6 of the Techne run had already removed from the exemption.
 - Out of scope: GDR-KI-ARCADIA-004, whose exemption stays specific to the one host (P13 is noted, not decided); the harness and chezmoi records, which their own repositories reshape; P8 to P12; any code or remote action.
 
 ## Current state
@@ -43,6 +44,7 @@ Delivered and awaiting Kris's review.
 - [x] P5: in ADR-KI-ARCADIA-003, restate the premises as cases (a host the owner may not own or administer), replace "no chezmoi on the host" with no personal-configuration tool on the host, move chezmoi, Cheztoi and `mgit` into examples, and make the Rig profile, personal-tool variants and payload validation target-OS-aware.
 - [x] P6: make the shell a per-binding choice through an optional binding field `shell`, with zsh as the recipe default; the recipe installs it, keeps the host environment sourceable from any shell and owns the hand-off; the provider's login-shell change reads the binding.
 - [x] P7: the recipe renders host instructions for Claude and Codex carrying the two-checkout and writing-checkout rules; the binding owner's personal source adds only its own wording (ODR-KI-ARCADIA-001 consequence and ADR-KI-ARCADIA-003 recipe layer).
+- [x] Fold-in: remove "the review date" from ODR-KI-ARCADIA-001's Expiries bullet.
 - [x] Run the verification below and write the review packet.
 
 ## Files touched
@@ -82,11 +84,12 @@ None beyond the paired records named under Dependencies.
 
 ### Delivered
 
-The approved P4 to P7 amendments, applied in place to the two records, with the shell default changed to zsh as Kris directed. Baseline `ee0059f8f99c9338c7c646d2fe9acc9944e57a38`; the result is this record's commit.
+The approved P4 to P7 amendments, applied in place to the two records, with the shell default changed to zsh as Kris directed, plus the review-date fold-in Kris approved in Decision 12. Baseline `ee0059f8f99c9338c7c646d2fe9acc9944e57a38`; the result is this record's commit.
 
 ### Change Summary
 
 - ODR-KI-ARCADIA-001: the premise covers any `direct-host` host whose disk may be discarded, a replaced cloud instance or a reset owned machine. The Decision defines the operator's workstation as the machine the binding owner works from and uses it for the bundle copy, the writing checkout, pin comparison and material moved off the host. Rebuild keeps reusable credentials and withdraw removes the binding's footprint and credentials, with the stack and parameter details stated for the AWS provider; the snapshot exclusion and credentials follow the same pattern. The two-checkout rule is rendered by the recipe for both runtimes, and the consequence moves it from the operator's chezmoi source to the recipe.
+- Fold-in (Decision 12): ODR-KI-ARCADIA-001's Expiries bullet now lists the GitHub token, the Tailscale key and pin drift; "the review date" is removed.
 - ADR-KI-ARCADIA-003: the Context states the general case (any owner, cloud or owned, Linux or macOS) and the hardest case the model holds for, with the current host as one instance. The recipe layer has a variant per target OS and owns the host-instructions file. The personal layer is the owner's personal-configuration source projected as the payload on the operator's workstation, with Cheztoi as Kris's example. Payload validation rejects paths invalid on the target OS. "No chezmoi on the host" becomes no personal-configuration tool on the host. The pilot installs one personal tool first, `mgit` for Kris. The shell is a per-binding choice with zsh as the recipe default. The consequences follow.
 
 ### Verification
@@ -96,7 +99,7 @@ The approved P4 to P7 amendments, applied in place to the two records, with the 
 
 ### Outstanding concerns
 
-- ODR-KI-ARCADIA-001's Expiries bullet still lists "the review date", which Decision 6 of the Techne run removed from the exemption; it was outside P4 to P7, so it is left for Kris to decide whether to fold it in.
+- Resolved: ODR-KI-ARCADIA-001's Expiries bullet listed "the review date", which Decision 6 of the Techne run removed from the exemption. Kris approved folding the fix into this record (Decision 12), and it is applied.
 - A host outside GDR-KI-ARCADIA-004, such as an owned Mac Studio or another person's host, still needs its own governance decision before agents run on it (P13).
 
 ### Post-change review

@@ -28,7 +28,7 @@ The agent host keeps work safe through the following durability model. The opera
 - **Roadmap writing checkout.** For every Knowledge Islands repository the checkout on the operator's workstation is the designated roadmap writing checkout. The host carries a marker that `ki` honours by refusing roadmap writes there; host sessions report the roadmap changes they need. A design in which the remote's `main` is the single history needs its own approval and a change to GDR-KI-ARCADIA-004.
 - **Two checkouts.** Push where you worked; before working on the other machine, fetch, check status and be level. The rule is machine-neutral; the recipe itself renders it, with the writing-checkout rule, into host instructions for both Claude and Codex.
 - **Pins.** One harness file declares the host's exact tool versions, bumped by ordinary commits, with drift reported against the pins and, from the operator's workstation, against its versions.
-- **Expiries.** A cached expiry file covering the GitHub token, the Tailscale key, the review date and pin drift feeds a login banner and a status warning within 14 days of any expiry. The GitHub token is issued with a 90-day expiry.
+- **Expiries.** A cached expiry file covering the GitHub token, the Tailscale key and pin drift feeds a login banner and a status warning within 14 days of any expiry. The GitHub token is issued with a 90-day expiry.
 - **Rollout.** One `ki-techne-harness` pilot (the status contract, the stop warning, and rebuild and withdraw with their guards) is delivered before a wave. The CLI follows first in that wave, then pins, expiries and the host marker.
 
 ## Consequences
