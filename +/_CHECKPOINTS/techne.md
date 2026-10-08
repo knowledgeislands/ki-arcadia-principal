@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: techne
 state: active
 created_at: 2026-10-07T09:05:00Z
-updated_at: 2026-10-08T07:35:49Z
+updated_at: 2026-10-08T08:06:25Z
 ---
 
 # techne
@@ -18,7 +18,7 @@ The thread moves agent work off the laptop onto the one agent host the [Techne P
 
 The host was rebuilt on 2026-10-07 by a stack-only delete that kept the GitHub token; workspace setup re-converged and status shows 21 repositories, none at risk. The GitHub token carries a 90-day expiry. Claude and Codex are not yet signed in on the host.
 
-GDR-KI-ARCADIA-004 words the exemption by role with no fixed review date. Every ODR-KI-ARCADIA-001 rollout record is captured in its owning repository. The workstation design is decided (Decision 7) and recorded in ADR-KI-ARCADIA-003; its rollout is captured in `ki-techne-harness` and the chezmoi source, with the Rig profile folded into TECHNE-TOOLS-OPS-014 and the pilot pair, TECHNE-TOOLS-OPS-015 and DOTFILES-UE-073, selected behind the durability pilot TECHNE-TOOLS-OPS-013 and stage 1. Arcadia commits are local and unpushed, because another session's commit is ahead of origin there; the other repositories are pushed. Both design loops' papers remain in the Project's design folder until their deletion is approved. No `techne` agents are running.
+GDR-KI-ARCADIA-004 words the exemption by role with no fixed review date. Every ODR-KI-ARCADIA-001 rollout record is captured in its owning repository. The workstation design is decided (Decision 7) and recorded in ADR-KI-ARCADIA-003; its rollout is captured in `ki-techne-harness` and the chezmoi source, with the Rig profile folded into TECHNE-TOOLS-OPS-014 and the pilot pair, TECHNE-TOOLS-OPS-015 and DOTFILES-UE-073, selected behind the durability pilot TECHNE-TOOLS-OPS-013 and stage 1. Arcadia commits are local and unpushed, because another session's commit is ahead of origin there; the other repositories are pushed. Both design loops' papers are deleted, their outcomes consolidated in ODR-KI-ARCADIA-001 and ADR-KI-ARCADIA-003. No `techne` agents are running.
 
 Thread rules:
 
@@ -43,7 +43,7 @@ The workstation decisions file and design index, ADR-KI-ARCADIA-003 and the Deci
 
 ## Open questions
 
-Whether to delete the two design loops' papers now that both outcomes are consolidated.
+None.
 
 ## Next step
 
