@@ -24,7 +24,7 @@ This is the master thread. It owns cross-project priorities, decisions, releases
   | island-model-and-tending | [island-model-and-tending](island-model-and-tending.md) | `Resume the island-model-and-tending checkpoint in ki-arcadia-principal and continue; delegate via ki agent; state-of-play is the master thread.` |
   | knowledge-acquisition | [knowledge-acquisition](knowledge-acquisition.md) | `Resume the knowledge-acquisition checkpoint in ki-arcadia-principal and continue; delegate via ki agent; state-of-play is the master thread.` |
   | paperclip-bootstrap-and-recovery | [paperclip-bootstrap-and-recovery](paperclip-bootstrap-and-recovery.md) | `Resume the paperclip-bootstrap-and-recovery checkpoint in ki-arcadia-principal and continue; delegate via ki agent; state-of-play is the master thread.` |
-  | agent-host | [techne](techne.md) | `Resume the techne checkpoint in ki-arcadia-principal and continue the agent-host Project; delegate via ki agent; state-of-play is the master thread.` |
+  | agent-host | [agent-host](agent-host.md) | `Re-bootstrap as the agent-host project thread under ki-delegation.` |
   | chezmoi | [chezmoi](chezmoi.md) | `Resume the chezmoi checkpoint in ki-arcadia-principal and continue; delegate via ki agent; state-of-play is the master thread.` |
   | mac-studio-bootstrap | [mac-studio-bootstrap](mac-studio-bootstrap.md) | `On the Mac Studio, resume the mac-studio-bootstrap checkpoint in ki-arcadia-principal and continue; state-of-play is the master thread.` |
   | territory-selection | [territory-selection](territory-selection.md) | `Resume the territory-selection checkpoint in ki-arcadia-principal and continue; delegate via ki agent; state-of-play is the master thread.` |
@@ -58,7 +58,6 @@ The decisions in force (full text in `decisions.md`, see Files touched):
 - **Paperclip:** answer the two decision cards.
 - **Specification review:** which repository first? `tools-ki` is suggested.
 - **kit-hnr:** map `[skills.ki-work-roadmap].areas` codes to titles.
-- **agent-host thread name:** keep `techne` as its checkpoint or rename it to `agent-host`.
 
 ## Next step
 

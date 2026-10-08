@@ -1,12 +1,12 @@
 ---
 type: ki-checkpoint
-thread: techne
+thread: agent-host
 state: active
 created_at: 2026-10-07T09:05:00Z
 updated_at: 2026-10-08T13:05:51Z
 ---
 
-# techne
+# agent-host
 
 ## Objective
 
