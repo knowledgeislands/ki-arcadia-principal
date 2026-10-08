@@ -25,8 +25,10 @@ The full definition is canonical in **`ki-repo-kb-streams`** and the shared chan
 - **Record owners.** `ki-work-roadmap` owns finite-work metadata and lifecycle; `ki-repo-kb-streams` owns its KB container. `ki-repo-kb-activities` owns Activity definitions and `ki-work-housekeeping` governs opted-in cadence, due-run identity and evidence. Decision Record and trade metadata follow their own owning skills rather than ordinary note frontmatter.
 - **Working area.** For complex or destructive rollout steps, stage the intended output as a preview in the Cowork working area before applying it to the repository - a review checkpoint and a concrete artefact for the post-change review (intended vs. executed).
 - **Git interaction.** Perform no state-changing git commands without explicit per-command instruction: use file tools (write / edit / delete) unless `git mv` is explicitly approved. After rollout, `git add` / `commit` is left to the user unless the session is operating under broader approval.
-- **In scope** (proposal required): changes to `Pillars/`, `Resources/`, `Admin/Governance/` structure or policy, Decision Records, activity definitions in `Admin/Operations/`, skill configuration or trigger updates, and any batch rename or structural reorganisation.
-- **Out of scope** (no proposal needed): `Calendar/` entries; inbound `+/` triage (where routing is non-trivial, the triage may itself be a proposal); trivial typo and formatting fixes. When in doubt, prefer a proposal - the cost of a lightweight one is low, the cost of an unauthorised change to canonical content is high.
+- **When a record is needed.** A roadmap record is needed only for new or reworked content in `Admin/`, `Pillars/` or `Resources/`: new or rewritten notes, `Admin/Governance/` structure or policy, Decision Records, activity definitions in `Admin/Operations/`, skill configuration or trigger updates, and any batch rename or structural reorganisation.
+- **Owner instruction.** An explicit instruction from the owner for a bounded change stands in for a record: the change is made directly, within the instruction's bounds. A change that grows beyond those bounds needs a record.
+- **One record for related changes.** Related changes share one record rather than opening several around the same outcome.
+- **Exempt** (no record needed): trivial typo and formatting fixes; `Calendar/` entries; inbound `+/` triage; files outside the canonical zones, such as root `AGENTS.md`.
 
 ---
 

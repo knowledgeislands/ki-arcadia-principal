@@ -45,7 +45,7 @@ The operational mechanics - the full status lifecycle, roadmap-record anatomy, r
 ## Consequences
 
 - The boundary between Streams and Pillars/Resources is a governance boundary, not merely a physical one. Work in motion lives in Streams; ratified knowledge lives in Pillars/Resources.
-- Every significant change to canonical knowledge — whether informational or reflective — requires a proposal that passes through the Enactment Process.
+- Every new or reworked piece of canonical content in Admin, Pillars or Resources - whether informational or reflective - requires a proposal that passes through the Enactment Process. Related changes share one proposal. An explicit owner instruction for a bounded change stands in for a proposal, because the owner's instruction is the ratification. Trivial typo and formatting fixes, Calendar entries and inbox triage need none.
 - Completed roadmap records are retained as review evidence until their owner explicitly selects them for pruning. Durable outputs and Decision Records retain their own standing.
 - `ki-repo-kb-streams` and the shared change-management skills are the canonical references for operational mechanics. Islands working the process load the relevant skills.
 - Decision Records (when adopted) are one class of output that a settled proposal may produce — the permanent record of rationale that proposals themselves cannot provide.

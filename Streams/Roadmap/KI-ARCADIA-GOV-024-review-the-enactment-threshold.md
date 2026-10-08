@@ -8,12 +8,12 @@ purpose: governance
 project: island-model-and-tending
 component: operations
 horizon: now
-status: in-progress
+status: awaiting-review
 blocks: []
 blocked_by: []
 baseline_ref: 13b7a2e1b528e8280556db83e7edec5635f6cb95
 created_at: 2026-10-07T07:44:25Z
-updated_at: 2026-10-08T19:26:00Z
+updated_at: 2026-10-08T19:31:00Z
 ---
 
 # Review the Enactment Threshold
@@ -82,6 +82,34 @@ Captured as Triage on Kris's instruction.
 ### Adoption and plan
 
 Adopted to Now as `decide` and planned to Ready on 2026-10-08 under Kris's agreement of the outcome (gov-020 decisions log, Decision 3).
+
+## Review
+
+### Delivered
+
+The agreed threshold is stated in all three owners from baseline `13b7a2e1b528e8280556db83e7edec5635f6cb95`.
+
+### Change Summary
+
+- The local Enactment Process note replaces its in-scope and out-of-scope bullets with four: when a record is needed, owner instruction, one record for related changes, and exemptions. "When in doubt, prefer a proposal" is gone.
+- Root `AGENTS.md` "Changing canonical content" gates only new or reworked content and lists the owner-instruction rule, the shared-record rule and the unchanged exemptions.
+- SDR-KI-ARCADIA-004 is amended in place: its Consequences carry the threshold. No new Decision Record was added, because `ki-decision-records` has the owning record amended rather than a new one created.
+
+### Verification
+
+`ki repo audit` passes for `ki-repo-kb-streams`, `ki-decision-records`, `ki-repo-kb-principal` and `ki-repo-kb`. A first principal run failed PRINCIPAL-2 because the reworded `AGENTS.md` sentence no longer matched its "must ... go through" anchor; the wording was corrected and the audit passes. The commit hooks' Markdown gate passes.
+
+### Outstanding concerns
+
+None.
+
+### Post-change review
+
+The intended threshold, three rules and unchanged exemptions, landed in the three planned files and nowhere else. The Enactment Process note also names root `AGENTS.md` as outside the canonical zones, matching the evidence in Context.
+
+### Mini recap
+
+The Enactment threshold is now proportionate and stated consistently; no follow-up work is proposed.
 
 ## Governance
 

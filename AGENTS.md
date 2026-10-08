@@ -58,7 +58,11 @@ The general principle: `Pillars` holds internal knowledge owned by the Knowledge
 
 ### Changing canonical content (strictly enforced)
 
-Substantive changes to a canonical zone (`Admin`, `Pillars`, `Resources`) go through the **Enactment Process**: create or advance the relevant record in `Streams/Roadmap/` and use the shared change-management lifecycle - do not edit `Admin`/`Pillars`/`Resources` directly. When starting such work, load `ki-repo-kb-streams` and the relevant shared change-management skill. The lifecycle is `draft` -> `ready` -> `in-progress` -> `awaiting-review` -> `done`. See the [local Enactment Process](<Admin/Operations/Processes/Enactment Process.md>). Exempt: trivial typo/formatting fixes, `Calendar/` entries, and `+/` triage.
+New or reworked content in a canonical zone (`Admin`, `Pillars`, `Resources`) must go through the **Enactment Process**: create or advance the relevant record in `Streams/Roadmap/` and use the shared change-management lifecycle - do not edit `Admin`/`Pillars`/`Resources` directly. When starting such work, load `ki-repo-kb-streams` and the relevant shared change-management skill. The lifecycle is `draft` -> `ready` -> `in-progress` -> `awaiting-review` -> `done`. See the [local Enactment Process](<Admin/Operations/Processes/Enactment Process.md>).
+
+- An explicit owner instruction for a bounded change stands in for a record; make the change directly within its bounds.
+- Related changes share one record.
+- Exempt: trivial typo/formatting fixes, `Calendar/` entries, and `+/` triage.
 
 ### Index Notes (strictly enforced)
 
