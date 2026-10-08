@@ -8,12 +8,12 @@ purpose: governance
 project: island-model-and-tending
 component: operations
 horizon: now
-status: ready
+status: in-progress
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: 13b7a2e1b528e8280556db83e7edec5635f6cb95
 created_at: 2026-10-07T07:44:25Z
-updated_at: 2026-10-08T19:25:00Z
+updated_at: 2026-10-08T19:26:00Z
 ---
 
 # Review the Enactment Threshold
