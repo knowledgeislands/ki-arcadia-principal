@@ -7,13 +7,12 @@ kind: deliver
 purpose: governance
 project: agent-host
 component: governance
-horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: ee0059f8f99c9338c7c646d2fe9acc9944e57a38
 created_at: 2026-10-08T08:43:00Z
-updated_at: 2026-10-08T12:58:48Z
+updated_at: 2026-10-08T12:59:06Z
 ---
 
 # General Agent-Host Decisions
@@ -36,7 +35,7 @@ Kris approved them the same day: "yes, all recommended, but zsh please, not bash
 
 ## Current state
 
-Delivered and awaiting Kris's review.
+Delivered and accepted.
 
 ## Steps
 
@@ -109,6 +108,10 @@ The goal is met: both records read as the general design, with Kris's setup as t
 ### Mini recap
 
 GOV-031 generalises the agent-host durability and workstation decisions so they hold for any binding owner and any host, with zsh as the default shell. Learning route: none beyond the outstanding concerns above.
+
+## Done
+
+Accepted 2026-10-08 under Kris's decision in the Techne decisions log, Decision 12 (2026-10-08): "Accept KI-ARCADIA-GOV-031, Accept TECHNE-TOOLS-OPS-013" (accept through ki-accept and prune both), with "Yes, fold it in" for the review-date fix, which is applied. P13 remains a governance question for the state-of-play thread.
 
 ## Governance
 
