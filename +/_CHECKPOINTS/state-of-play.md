@@ -3,14 +3,14 @@ type: ki-checkpoint
 thread: state-of-play
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-08T08:50:00Z
+updated_at: 2026-10-08T13:40:00Z
 ---
 
 # state-of-play
 
 ## Objective
 
-This is the master thread. It owns cross-project priorities, decisions, releases and the estate-wide view across the `kis` Agora and chezmoi, and keeps Now reflecting real intent. Each active Project is worked in its own thread (Decision 28), resumed from its checkpoint below.
+This is the master thread. It owns cross-project priorities, decisions, releases and the estate-wide view across the `kis` Agora and chezmoi, and keeps Now reflecting real intent. Each active Project is worked in its own thread, resumed from its checkpoint below.
 
 ## Current state
 
@@ -29,26 +29,26 @@ This is the master thread. It owns cross-project priorities, decisions, releases
   | mac-studio-bootstrap | [mac-studio-bootstrap](mac-studio-bootstrap.md) | `On the Mac Studio, resume the mac-studio-bootstrap checkpoint in ki-arcadia-principal and continue; state-of-play is the master thread.` |
   | territory-selection | [territory-selection](territory-selection.md) | `Resume the territory-selection checkpoint in ki-arcadia-principal and continue; delegate via ki agent; state-of-play is the master thread.` |
 
-- **Focus.** Estate factorisation and Baseline rollout are Now (Decision 17); the territory selection cut-over pair is Now in its own thread.
-- **Projects with no thread.** No open records and no recurring work: [roadmap-model](../../Streams/Projects/roadmap-model.md), [skill-refresh](../../Streams/Projects/skill-refresh.md), [specification-review](../../Streams/Projects/specification-review.md), [delta-evaluation](../../Streams/Projects/delta-evaluation.md) and [trades-revamp](../../Streams/Projects/trades-revamp.md). Paused, with Hold records only: [specifications](../../Streams/Projects/specifications.md) and [website](../../Streams/Projects/website.md). Their decisions stay here.
-- **Projectless helpers this thread owns** (gov-020; check `ki agent status gov-020`): `drscope` running the Decision Record scope rename (Decision 21); queued `harness-m1`, `harness-m2`, `diagrams2`, `deleg-rule`, `dr-refresh`, `release-policy` and `streams-homes`.
-- **Tooling.** `ki` 0.9.0 (Homebrew and `~/.local/bin`) carries `ki agent`, which replaced `claude-bg`.
+- **Focus.** Estate factorisation and Baseline rollout are Now; the territory selection cut-over pair is Now in its own thread. The goal is a near-empty roadmap, finishing the easiest Now Projects first.
+- **Projects with no thread.** No open records and no recurring work: [roadmap-model](../../Streams/Projects/roadmap-model.md), [skill-refresh](../../Streams/Projects/skill-refresh.md), [specification-review](../../Streams/Projects/specification-review.md), [delta-evaluation](../../Streams/Projects/delta-evaluation.md) and [trades-revamp](../../Streams/Projects/trades-revamp.md). Paused, with Hold records only: [specifications](../../Streams/Projects/specifications.md) and [website](../../Streams/Projects/website.md). No threads for specifications or website while they are on hold; their decisions stay here.
+- **Projectless helpers this thread owns** (gov-020; check `ki agent status gov-020`): `streams-homes-r` (recurring-work homes and Project close-out) and `dr-refresh-r` (standing Decision Record consolidation) running; `chezmoi-fix-r` and `dr-after-r` queued. The rest of today's helpers have finished, including the Decision Record scope rename, the release-on-demand policy and the Paperclip records.
+- **Tooling.** `ki` 0.9.0 (Homebrew and `~/.local/bin`) carries `ki agent`. tools-ki `main` holds unreleased changes, including KI-HARNESS-GOV-145's audit-summary disclosure.
 
 ## Decisions made
 
-The decisions in force (full text in `decisions.md`, see Files touched):
+Rules live with their durable owners: the roadmap model in GDR-KI-ARCADIA-005 and the `ki-work` standards, delegation and project threads in `ki-delegation`, releases in the `ki-repo-tools` release-readiness standard. Standing instructions for this thread:
 
-- One thread per active Project; this thread is the master (Decision 28).
+- One thread per active Project, opened only where there is active work; this thread is the master and passes directions to a project thread through its checkpoint.
+- Keep agents moving: start the next queued delivery as soon as one finishes. Never delegate Kris-attended or Kris-gated records: DOTFILES-UE-062, DOTFILES-UE-071, DOTFILES-UE-027, DOTFILES-UE-065 and KI-ARCADIA-GOV-024.
 - Trades are on hold: send no new trades; do the work directly or record it in the receiving repository.
-- Commit minor rollout changes directly, citing records by full identifier; push own commits fast-forward only.
-- Delivered records count as done and are pruned once verified; awaiting-review and obsolete records may be closed or cancelled and pruned.
-- Releases are on demand under one common policy (Decision 25).
-- Recurring work homes in a Project or Initiative, and a Project closes only after a close-out assessment (Decision 26).
+- Commit minor rollout changes directly without new records, citing records by full identifier; push own commits fast-forward only.
+- Delivered and awaiting-review records count as done; obsolete or ownerless records are cancelled; both are pruned once verified.
+- Releases are on demand; the next is one combined tools-ki release.
+- Linear and TickTick are not raised in this thread.
 
 ## Files touched
 
-- Design and decisions: `/Users/krisbrown/.local/state/ki/state-of-play/design/` (`decisions.md`, `roadmap-model.md`).
-- Helper prompts, statuses and reports: `/Users/krisbrown/.local/state/ki/agents/gov-020/`.
+- Working material, machine-local and non-durable: `/Users/krisbrown/.local/state/ki/state-of-play/design/` and helper runs in `/Users/krisbrown/.local/state/ki/agents/gov-020/`.
 - Project and Initiative notes: [Projects](../../Streams/Projects/Projects.md) and [Initiatives](../../Streams/Initiatives/Initiatives.md).
 
 ## Open questions
@@ -58,10 +58,13 @@ The decisions in force (full text in `decisions.md`, see Files touched):
 - **Paperclip:** answer the two decision cards.
 - **Specification review:** which repository first? `tools-ki` is suggested.
 - **kit-hnr:** map `[skills.ki-work-roadmap].areas` codes to titles.
+- **KI-HARNESS-GOV-164:** close through `ki-accept`, done or cancelled as delivered by direct handoff.
+- **KI-HARNESS-GOV-099:** confirm the `INDEX-8` wording (move the index entry, never renumber), and whether apps-observatory's serial-contiguity check (KI-OBS-VIS-004) is recorded there directly while trades are on hold.
 
 ## Next step
 
-1. Kris opens the Project threads from the table; each works only its own records.
-2. Here: verify each projectless helper's report as it finishes, and prune verified done records.
-3. Settle the trades hold and start `/ki-design-loop start skill-refresh` before 2026-10-14.
-4. Run a close-out assessment for roadmap-model, which has no open records.
+1. Kris opens the Project threads from the table where there is active work; each works only its own records.
+2. Here: verify `streams-homes-r`, `dr-refresh-r`, `chezmoi-fix-r` and `dr-after-r` as each finishes, and prune verified done records.
+3. Cut the combined tools-ki release under the release-on-demand policy.
+4. Settle the trades hold and start `/ki-design-loop start skill-refresh` before 2026-10-14.
+5. Close the Projects `streams-homes-r` reports ready to close, starting with roadmap-model.
