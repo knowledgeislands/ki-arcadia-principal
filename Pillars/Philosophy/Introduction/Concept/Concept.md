@@ -19,7 +19,7 @@ Every concept here is portable and island-agnostic. Where Arcadia needs its own 
 
 ## How an Island Takes Shape
 
-[[How an Island Takes Shape]] is the chapter's orienting note. It names the four foundational concepts, explains the order in which they build on one another and sets out the split between the portable definition held here and the island-specific realisation held in `Admin/`. Read it first to see why the chapter is sequenced the way it is.
+[[How an Island Takes Shape]] is the chapter's orienting note. It names the four foundational concepts and the Intention that gives an island its purpose, explains the order in which they build on one another and sets out the split between the portable definition held here and the island-specific realisation held in `Admin/`. Read it first to see why the chapter is sequenced the way it is.
 
 ---
 

@@ -9,14 +9,14 @@ component: model
 tags:
   - card/proposal
   - topic/knowledge-islands
-status: in-progress
+status: awaiting-review
 priority: medium
 horizon: now
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: 8d9e8b79fe73869f429c7e2432fd16add9665e33
 created_at: 2026-04-27T19:18:58Z
-updated_at: 2026-10-08T08:45:38Z
+updated_at: 2026-10-08T08:46:29Z
 author: Written with Claude
 ---
 
@@ -54,10 +54,10 @@ The record's own initial framing holds up: Intention is the island's purpose, an
 
 ## Steps
 
-- [ ] Add one short paragraph to `Pillars/Philosophy/Introduction/Concept/How an Island Takes Shape.md`, after the paragraph naming the four concepts, stating that an island exists for a purpose as well as within boundaries: Intention is the island's purpose, held by the governor at island level and exercised by contributors at capture level, distinct from jurisdiction, and what keeps the cycle purposeful rather than accumulative. Link [[The Home of Knowledge]].
-- [ ] Replace the existing em dash in that note with an ASCII hyphen while editing it.
-- [ ] Extend the `## How an Island Takes Shape` section of `Pillars/Philosophy/Introduction/Concept/Concept.md` by one clause noting that the orienting note also names Intention, keeping the index note's one-section-per-child structure.
-- [ ] Update the `status` month on each edited note per its existing convention.
+- [x] Add one short paragraph to `Pillars/Philosophy/Introduction/Concept/How an Island Takes Shape.md`, after the paragraph naming the four concepts, stating that an island exists for a purpose as well as within boundaries: Intention is the island's purpose, held by the governor at island level and exercised by contributors at capture level, distinct from jurisdiction, and what keeps the cycle purposeful rather than accumulative. Link [[The Home of Knowledge]].
+- [x] Replace the existing em dash in that note with an ASCII hyphen while editing it.
+- [x] Extend the `## How an Island Takes Shape` section of `Pillars/Philosophy/Introduction/Concept/Concept.md` by one clause noting that the orienting note also names Intention, keeping the index note's one-section-per-child structure.
+- [x] Update the `status` month on each edited note per its existing convention.
 
 ---
 
@@ -105,6 +105,37 @@ The Concept chapter orienting note and its index entry are the only documentatio
 This record moves to awaiting-review on delivery; no follow-up record is expected.
 
 ---
+
+## Review
+
+### Delivered
+
+Intention is named in the Concept chapter as the island's purpose, set beside its boundaries. Baseline `8d9e8b79fe73869f429c7e2432fd16add9665e33`; the result is the delivery commit that sets this record to awaiting-review.
+
+### Change Summary
+
+- `How an Island Takes Shape.md`: one new paragraph after the four-concepts paragraph defining Intention at island and capture level, distinct from jurisdiction, and linking [[The Home of Knowledge]]; the em dash after "structural mirrors" is now an ASCII hyphen; status month moved to October 2026.
+- `Concept.md`: the `## How an Island Takes Shape` section gains one clause noting that the orienting note names Intention; its section structure is unchanged.
+
+### Verification
+
+- `grep -n -i intention` on the orienting note finds the new paragraph, which links [[The Home of Knowledge]].
+- `Concept.md` keeps `## Overview` plus one H2 per direct child.
+- No en or em dash in either edited note.
+- `ki repo audit --skill ki-repo-kb --repo . --progress never` on 2026-10-08: PASS, 4 skills.
+- `ki repo audit --progress never` on 2026-10-08: PASS=23 WARN=1 FAIL=0; the one warning is the repository-wide missing `.githooks/pre-commit` gate (HOOK-1), unrelated to this record.
+
+### Outstanding concerns
+
+- The wording is a prose judgement; Kris may refine it at any time without reopening the record.
+
+### Post-change review
+
+The goal is met within the boundary: one paragraph and one clause, no new note, no Decision Record and no `Admin/` change. Regression risk is nil. This is the implementing agent's own check, not an independent review.
+
+### Mini recap
+
+KI-ARCADIA-MOD-005 names Intention in the Concept chapter's orienting note and points to it from the chapter index. Learning route: none.
 
 ## Discussion
 
