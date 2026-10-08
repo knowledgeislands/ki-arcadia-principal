@@ -8,14 +8,13 @@ project: island-model-and-tending
 component: calendar
 tags:
   - topic/knowledge-islands
-status: awaiting-review
+status: done
 priority: low
-horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: 3eb0dae827aa6d611a044e69025f1b40c4023582
 created_at: 2026-04-28T18:32:31Z
-updated_at: 2026-10-08T08:50:54Z
+updated_at: 2026-10-08T08:51:27Z
 author: Written with Claude
 ---
 
@@ -159,6 +158,10 @@ The goal is met within the boundary: additive template sections only, no new Cal
 ### Mini recap
 
 KI-ARCADIA-OPS-004 gives the Calendar templates a Bullet Journal shape and adds the method as Resources reference. Learning route: the marker legend in [[Structure]].
+
+## Done
+
+Accepted 2026-10-08 under Kris's standing decision in the state-of-play decisions log: Decision 17 (2026-10-07), "Delivered records count as done (Decision 12) and are pruned once verified", applied to this focus2 delivery by Decision 19. The checkbox-rendering concern needs no follow-up record unless Kris wants distinct marker icons.
 
 ## Discussion
 
