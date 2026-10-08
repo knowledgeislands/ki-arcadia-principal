@@ -73,8 +73,8 @@ Active scheduled automations within adopted groups. An activity listed here is e
 | --- | --- | --- | --- | --- |
 | [[Philosophy/Activities/Constitutional/Conformance]] | Constitutional | work-day | 04:30 | enabled |
 | [[Scheduled Task Audit]] | Tending | work-day | 05:00 | enabled |
-| [[Health Check]] | Tending | Monday work-day | 08:00 | enabled |
-| [[Knowledge Rebuild]] | Tending | Wednesday work-day | 07:00 | enabled |
+| [[Model/Activities/Tending/Health Check\|Health Check]] | Tending | Monday work-day | 08:00 | enabled |
+| [[Model/Activities/Tending/Knowledge Rebuild\|Knowledge Rebuild]] | Tending | Wednesday work-day | 07:00 | enabled |
 | [Morning Briefing](<../Operations/Activities/Briefings Activity.md>) | Briefings | work-day | 06:00 | enabled |
 
 Day types are defined in the [activity schedule](<../Operations/Activities/Schedule.md>).

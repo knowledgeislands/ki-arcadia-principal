@@ -16,7 +16,7 @@ The Knowledge Islands visual style is a coherent brand system governing how the 
 
 The system is designed to feel like calm, intelligent infrastructure - a navigable ecology of meaning rather than a software product or a database. Every visual decision reinforces that posture.
 
-See also: [[Symbol Library/Symbol Library|Symbol Library]], [[Logo/Logo|Logo]], [[Diagrams/Diagrams|Diagrams]]
+See also: [[Symbol Library/Symbol Library|Symbol Library]], [[Logo/Logo|Logo]], [[Aesthetics/Diagrams/Diagrams|Diagrams]]
 
 ---
 

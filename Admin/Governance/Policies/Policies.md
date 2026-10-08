@@ -8,7 +8,7 @@ author: AI-assisted
 
 ## Overview
 
-Policies hold persistent operating constraints under Arcadia's governance. Substantive policy changes follow the [[Enactment Process]]; a policy's presence or successful audit does not replace its owner approval.
+Policies hold persistent operating constraints under Arcadia's governance. Substantive policy changes follow the [[Admin/Operations/Processes/Enactment Process|Enactment Process]]; a policy's presence or successful audit does not replace its owner approval.
 
 ## Techne Programme Hold
 

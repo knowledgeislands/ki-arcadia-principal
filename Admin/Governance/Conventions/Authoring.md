@@ -31,4 +31,4 @@ An entry belongs in this note when Arcadia makes a recurring authoring choice th
 - Adopting a tighter prompt-editing discipline than the framework requires (e.g. always running a dry-run before pushing).
 - Codifying a local naming convention for activity prompts.
 
-An entry does not belong here when the decision is already captured by a more specific note. Activity-specific configuration belongs under `Admin/Activities/{group}/`; routing decisions belong in [[Routing Rules]]; integration details belong in [[Integrations]]. This note is the home for authoring practice that does not have a more specific home.
+An entry does not belong here when the decision is already captured by a more specific note. Activity-specific configuration belongs under `Admin/Activities/{group}/`; routing decisions belong in [[Routing Rules]]; integration details belong in [[Admin Conventions/Integrations|Integrations]]. This note is the home for authoring practice that does not have a more specific home.
