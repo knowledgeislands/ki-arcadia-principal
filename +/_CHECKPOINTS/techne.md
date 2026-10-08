@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: techne
 state: active
 created_at: 2026-10-07T09:05:00Z
-updated_at: 2026-10-07T20:53:00Z
+updated_at: 2026-10-08T07:25:30Z
 ---
 
 # techne
@@ -16,11 +16,13 @@ The thread moves agent work off the laptop onto the one agent host the [Techne P
 
 ## Current state
 
-The host was rebuilt on 2026-10-07 by a stack-only delete that kept the GitHub token; workspace setup re-converged with no changes on a second run and status shows 21 repositories, none at risk. The GitHub token was rotated with a 90-day expiry. Claude and Codex are not yet signed in on the host. The durability decisions, their Decision Record, the GDR-KI-ARCADIA-004 amendment (KI-ARCADIA-GOV-029) and the early keep on KI-ARCADIA-GOV-021 are committed locally in Arcadia, unpushed, with both records awaiting Kris's review. The rollout pilot and wave records are captured, unpushed, in `ki-techne-harness` and `tools-techne`. No `techne` agents are running.
+The host was rebuilt on 2026-10-07 by a stack-only delete that kept the GitHub token; workspace setup re-converged and status shows 21 repositories, none at risk. The GitHub token carries a 90-day expiry. Claude and Codex are not yet signed in on the host.
+
+GDR-KI-ARCADIA-004 now words the exemption by role with no fixed review date, and the rollout note and diagram match. KI-ARCADIA-GOV-029 and KI-ARCADIA-GOV-021 are accepted under Decision 6 and pruned. Every ODR-KI-ARCADIA-001 rollout record is captured in its owning repository and listed in the [[agent-host]] Project note; TECHNE-TOOLS-OPS-014 now removes the review-date line from host status. The Arcadia commits are local and unpushed, because another session's commit is ahead of origin there. No `techne` agents are running apart from the queued workstation-decisions run (`ws-decide`, Decision 7).
 
 Thread rules:
 
-- Background agents run under `claude-bg` with run name `techne`; prompts in `~/.local/state/claude-bg/techne/src/`, reusing the rules footer from `~/.local/state/claude-bg/gov-020/src/rules.md`.
+- Background agents run through `ki agent` under the run name `techne`, with status, reports and the decisions log in `~/.local/state/ki/agents/techne/`.
 - Estate rules from 2026-10-07: roadmap records use the v1 model (`kind`, `project`, `component`, `horizon` with a `hold` block); trades are on hold, so work is done directly or recorded in the receiving repository; `/ki-design-loop` runs for any Techne design question whose shape is still open.
 - No remote agent execution or remote-environment changes outside the standing exemption. Live rebuilds and withdrawals are the binding owner's alone.
 - Commit with explicit paths only; accept only through `ki-accept` on Kris's approval; never prune without approval.
@@ -29,19 +31,19 @@ Thread rules:
 ## Decisions made
 
 - Outside the exemption the hold stands. Only Kris can authorise, reshape or retire it.
-- The exemption is standing and kept: the prototype review was decided early as keep, and `direct-host` stays a recipe (GDR-KI-ARCADIA-004).
+- The exemption is standing and kept, with no fixed review date: the prototype review was decided early as keep, `direct-host` stays a recipe, and the exemption is revisited when the hold is reshaped (GDR-KI-ARCADIA-004).
 - Credentials are stated by role: the binding owner's administrator session builds and tears down, the operator role operates, and the GitHub token and Claude login are the binding owner's own until unattended agents arrive.
 - Work on the host is safe only once it is on a remote; the durability model and its rollout follow ODR-KI-ARCADIA-001, with one harness pilot before a wave.
 - Agent hosts are recipes bound by per-person bindings, with providers and footprints (ADR-TECHNE-003).
 
 ## Files touched
 
-The durability decisions file, ODR-KI-ARCADIA-001 and the Decisions index; GDR-KI-ARCADIA-004, the hold and `Admin/MEMORY.md` through KI-ARCADIA-GOV-029; KI-ARCADIA-GOV-021; the agent-host Project note; and the roadmap ledgers and new records in `ki-techne-harness` and `tools-techne`. No remote state changed.
+The agent-host Project note and this checkpoint; the state-of-play checkpoint, the hold, the rollout note and KI-ARCADIA-GOV-024 lost their links to the pruned KI-ARCADIA-GOV-021. Outside Arcadia: TECHNE-TOOLS-OPS-014 in `ki-techne-harness`, and new records and ledger advances in chezmoi, `tools-ki` and `ki-agentic-harness`. No remote state changed.
 
 ## Open questions
 
-Thread-level only: whether any later review date replaces the decided 2026-11-06 review, and whether the remaining durability captures (chezmoi, `tools-ki`, `ki-agentic-harness`) are written by this thread.
+None at thread level.
 
 ## Next step
 
-Kris reviews KI-ARCADIA-GOV-029 and KI-ARCADIA-GOV-021 through `ki-accept`, pushes the local commits when ready, signs Claude (and optionally Codex) in on the host, and then the harness pilot is planned through `ki-plan`.
+Kris signs Claude (and optionally Codex) in on the host and pushes Arcadia once the other session's commit there is settled; the workstation-decisions run records Decision 7; then the harness pilot, TECHNE-TOOLS-OPS-013, is planned through `ki-plan`.

@@ -7,7 +7,7 @@ initiative: techne
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-07T20:52:00Z
+updated: 2026-10-08T07:25:04Z
 author: Written with Claude
 ---
 
@@ -23,12 +23,11 @@ This Project sits in [[Initiatives/techne|Techne]]. It and [[baseline-rollout]] 
 
 ## Notes
 
-- **Exemption.** The [[Techne Programme Hold]] carries one standing exemption: setting up and operating the single agent host `ki-techne-agent-host`, built and torn down under the binding owner's administrator session and operated through the account-local operator role, with no automatic lapse ([[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]]). The prototype review decided keep, with `direct-host` staying a recipe. Paperclip, Kitteth, Telegram, wider K3s, the controller and every other environment stay held.
+- **Exemption.** The [[Techne Programme Hold]] carries one standing exemption: setting up and operating the single agent host `ki-techne-agent-host`, built and torn down under the binding owner's administrator session and operated through the account-local operator role, with no automatic lapse and no fixed review date ([[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]]). The prototype review decided keep, with `direct-host` staying a recipe; the exemption is revisited when the hold is reshaped. Paperclip, Kitteth, Telegram, wider K3s, the controller and every other environment stay held.
 - **Model.** `direct-host` is the first recipe and `agent-host` the first binding, rendered by chezmoi into `~/.config/techne/`. [[ADR-TECHNE-003-techne-implementation-ownership|ADR-TECHNE-003]] records the ownership split.
 - **Durability.** [[ODR-KI-ARCADIA-001-keeping-work-safe-on-the-agent-host|ODR-KI-ARCADIA-001]] decides how work on the host stays safe: a structured status verdict, stop that warns, guarded rebuild and withdraw, declared pins, an expiry view, the Mac as the roadmap writing checkout, and the two-checkout rule.
 - **Identity and egress.** The host's GitHub token and Claude login are the binding owner's own until unattended agents arrive. The security group allows TCP 443 and 80 to any address; named-destination egress is still open.
-- **Durability rollout not yet captured.** Three ODR-KI-ARCADIA-001 records still need writing in their owning repositories: the machine-neutral two-checkout rule for Claude and Codex in the chezmoi source, the `ki` refusal of roadmap writes on the host marker in `tools-ki`, and a non-blocking `ki-agentic-harness` handoff on where a writing-checkout designation lives and whether to design a remote-history serialisation.
-- **Rollout note.** [[Agent Host Prototype Rollout]] and its diagram still show a review on 6 November; correct them with the next change to that note.
+- **Durability rollout.** Every ODR-KI-ARCADIA-001 record is captured in its owning repository: TECHNE-TOOLS-OPS-013 (the pilot) and TECHNE-TOOLS-OPS-014 in `ki-techne-harness`, TECHNE-TOOL-CLI-006 in `tools-techne`, DOTFILES-UE-072 (the two-checkout rule for Claude and Codex) in the chezmoi source, KI-TOOL-CLI-115 (the `ki` refusal of roadmap writes on the host marker) in `tools-ki`, and KI-HARNESS-GOV-157 (where a writing-checkout designation lives, blocking nothing) in `ki-agentic-harness`. Host status stops showing a review date under TECHNE-TOOLS-OPS-014.
 - **Hold prerequisites.** Lifting the hold needs a local review-to-live-main cycle with recovery ([[paperclip-bootstrap-and-recovery]]), an account of what Paperclip supplies versus what Techne must add (harness working analysis `+/paperclip-as-techne-prior-art.md`), and a repository-owned remote-delivery policy.
 - **Host usable like Kris's machine.** Bring Kris's command-line tools onto the host - `mgit`, `ki`, `techne`, chezmoi and Cheztoi - most likely as a chezmoi host profile delivered as the first slice of the Cheztoi profile work, with its stale hold rewritten. Open in shape; a candidate for a design loop.
 - **Host set-up follow-ups.** An MCP source for the host (the `BIND-2` audit failures), and moving the three `ki` behaviour fixes found live (`ki dev local set` while the checkout is active, bootstrap without `--refresh`, the estate `diag` exit status) to `tools-ki`.
