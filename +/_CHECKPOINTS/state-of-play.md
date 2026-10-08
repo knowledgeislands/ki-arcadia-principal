@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: state-of-play
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-07T19:15:00Z
+updated_at: 2026-10-08T07:21:29Z
 ---
 
 # state-of-play
@@ -27,7 +27,7 @@ Reduce all in-flight work across the `kis` Agora and chezmoi to a short list of 
   - Capture FND-5 as a work record - [estate-factorisation](../../Streams/Projects/estate-factorisation.md).
   - Answer the two decision cards that gate seven Now records - Kris decides, under [paperclip-bootstrap-and-recovery](../../Streams/Projects/paperclip-bootstrap-and-recovery.md).
   - Pick the first repository to review - Kris decides, under [specification-review](../../Streams/Projects/specification-review.md).
-  - Review the agent-host prototype on 2026-11-06 and choose a time for the host rebuild - [KI-ARCADIA-GOV-021](../../Streams/Roadmap/KI-ARCADIA-GOV-021-review-the-agent-host-prototype.md), [agent-host](../../Streams/Projects/agent-host.md).
+  - Agent-host: the prototype review kept the exemption with no fixed review date; open work is in the [agent-host](../../Streams/Projects/agent-host/agent-host.md) Project note.
   - Decide on a Delta trial on or after 2026-10-13 - Kris decides, under [delta-evaluation](../../Streams/Projects/delta-evaluation.md).
   - Decide who owns routine background delegation - Kris decides, [KI-HARNESS-GOV-144](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-144-own-portable-background-delegation.md).
   - Map kit-hnr's `[skills.ki-work-roadmap].areas` codes to titles - Kris decides (kit-hnr is outside the Agora).

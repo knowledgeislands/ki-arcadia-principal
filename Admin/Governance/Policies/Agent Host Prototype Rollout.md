@@ -28,7 +28,7 @@ Kris connects from Zed through the helper, approves the Claude Code login on the
 
 ## Stop, change or withdraw
 
-The kill switch is available at any time: stop the host with the agent-host profile and remove its tailnet device. The exemption has no automatic lapse and no fixed review date: it stands until the island owner changes or withdraws it through an Enactment record, and is revisited when the hold is reshaped. The prototype review, [[KI-ARCADIA-GOV-021-review-the-agent-host-prototype|KI-ARCADIA-GOV-021]], kept it as it stands. Only if the island owner withdraws it does teardown remove the stack under the admin profile, then the tailnet entries, the tokens and the operator role. Rotating the GitHub token before it expires is part of operating the host.
+The kill switch is available at any time: stop the host with the agent-host profile and remove its tailnet device. The exemption has no automatic lapse and no fixed review date: it stands until the island owner changes or withdraws it through an Enactment record, and is revisited when the hold is reshaped. The prototype review, KI-ARCADIA-GOV-021, kept it as it stands. Only if the island owner withdraws it does teardown remove the stack under the admin profile, then the tailnet entries, the tokens and the operator role. Rotating the GitHub token before it expires is part of operating the host.
 
 ## Source
 
