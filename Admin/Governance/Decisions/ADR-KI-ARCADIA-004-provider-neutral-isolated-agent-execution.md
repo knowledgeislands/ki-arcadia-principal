@@ -1,16 +1,15 @@
 ---
 note_type: admin/governance/decision
-id: ADR-TECHNE-001
+id: ADR-KI-ARCADIA-004
 title: 'Provider-neutral isolated agent execution'
 date: 2026-09-16
 status: current
-shared_record: true
 decision_type: architecture
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/adr
-decision_depends_on: [GDR-TECHNE-001]
+decision_depends_on: [GDR-KI-ARCADIA-007]
 ---
 
-# ADR-TECHNE-001: Provider-neutral isolated agent execution
+# ADR-KI-ARCADIA-004: Provider-neutral isolated agent execution
 
 ## Context
 
@@ -40,10 +39,10 @@ Arcadia owns the architectural meaning of this contract. Normative portable sche
 - A provider proof cannot define portable architecture merely by being the first working implementation.
 - Unassigned implementation ownership remains visible instead of being silently absorbed by `ki`, a runtime or a provider adapter.
 
-Arcadia maintains this shared decision record. The copy in `knowledgeislands/ki-techne-principal` is a semantically identical retained projection, not an independent authority. Original source evidence remains in Git at `b25e9c950fd87715d12f76b69bb2079c3a4fc054`; the Techné programme hold and retained work are unchanged.
+Arcadia maintains this decision record. The archived copy in `knowledgeislands/ki-techne-principal`, under its former TECHNE identifier, is historical evidence, not an independent authority. Original source evidence remains in Git at `b25e9c950fd87715d12f76b69bb2079c3a4fc054`; the Techné programme hold and retained work are unchanged.
 
 ## References
 
-- [GDR-TECHNE-001](GDR-TECHNE-001-adopting-decision-records.md) — records the engineering discipline's Decision Records instrument.
+- [GDR-KI-ARCADIA-007](GDR-KI-ARCADIA-007-adopting-decision-records.md) — records the engineering discipline's Decision Records instrument.
 - [Development Container specification](https://github.com/devcontainers/spec/blob/main/docs/specs/devcontainer-reference.md) — portable development-environment description.
 - [OCI Image specification](https://github.com/opencontainers/image-spec/blob/main/spec.md) — portable image packaging and transport.

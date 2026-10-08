@@ -46,4 +46,3 @@ The agent host becomes the binding owner's working machine through two layers wi
 
 - [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] - the exemption whose bounds the host's profile stays within.
 - [[ODR-KI-ARCADIA-001-keeping-work-safe-on-the-agent-host|ODR-KI-ARCADIA-001]] - the durability model whose pins and writing-checkout rule this builds on.
-- [[ADR-TECHNE-003-techne-implementation-ownership|ADR-TECHNE-003]] - the recipe, binding and provider ownership split.

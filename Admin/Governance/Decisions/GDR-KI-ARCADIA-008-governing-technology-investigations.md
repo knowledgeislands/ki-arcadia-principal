@@ -1,15 +1,14 @@
 ---
 note_type: admin/governance/decision
-id: GDR-TECHNE-002
+id: GDR-KI-ARCADIA-008
 title: 'Governing Technology Investigations'
 date: 2026-09-15
 status: current
-shared_record: true
 decision_type: governance
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/gdr
 ---
 
-# GDR-TECHNE-002: Governing Technology Investigations
+# GDR-KI-ARCADIA-008: Governing Technology Investigations
 
 ## Context
 
@@ -31,4 +30,4 @@ Arcadia owns the local evidence, applicability judgment, recommendation and Tech
 - Investigation records carry more evidence than informal exploration, adding proportionate preparation and review effort.
 - A recurring technology-review cadence or reusable evaluation capability requires its own demonstrated need and authority.
 
-Arcadia maintains this shared decision record. The copy in `knowledgeislands/ki-techne-principal` is a semantically identical retained projection, not an independent authority. Original source evidence remains in Git at `b25e9c950fd87715d12f76b69bb2079c3a4fc054`; the Techné programme hold and retained work are unchanged.
+Arcadia maintains this decision record. The archived copy in `knowledgeislands/ki-techne-principal`, under its former TECHNE identifier, is historical evidence, not an independent authority. Original source evidence remains in Git at `b25e9c950fd87715d12f76b69bb2079c3a4fc054`; the Techné programme hold and retained work are unchanged.

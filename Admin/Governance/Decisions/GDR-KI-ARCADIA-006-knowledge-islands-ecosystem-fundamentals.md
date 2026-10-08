@@ -1,15 +1,14 @@
 ---
 note_type: admin/governance/decision
-id: GDR-KI-FUNDAMENTALS-001
+id: GDR-KI-ARCADIA-006
 title: 'Knowledge Islands ecosystem fundamentals'
 date: 2026-09-24
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/gdr
 decision_type: governance
-shared_record: true
 ---
 
-# GDR-KI-FUNDAMENTALS-001: Knowledge Islands ecosystem fundamentals
+# GDR-KI-ARCADIA-006: Knowledge Islands ecosystem fundamentals
 
 ## Context
 

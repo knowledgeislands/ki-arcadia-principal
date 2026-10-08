@@ -13,28 +13,28 @@ Records are ordered by reveal order — the logical sequence in which the decisi
 
 1. [GDR-KI-ARCADIA-001](GDR-KI-ARCADIA-001-adopting-decision-records.md) - Adopting Decision Records
 2. [GDR-KI-ARCADIA-002](GDR-KI-ARCADIA-002-admin-zone-governance-and-operations.md) - Admin Zone — Governance and Operations
-3. [GDR-KI-FUNDAMENTALS-001](GDR-KI-FUNDAMENTALS-001-knowledge-islands-ecosystem-fundamentals.md) - routing responsibility, repository structures and boundaries, and ecosystem coordination
-4. [SDR-KI-ARCADIA-001](SDR-KI-ARCADIA-001-knowledge-islands-the-strategy.md) - Knowledge Islands — The Strategy
-5. [SDR-KI-ARCADIA-002](SDR-KI-ARCADIA-002-the-home-of-knowledge.md) - The Home of Knowledge
-6. [ADR-KI-ARCADIA-001](ADR-KI-ARCADIA-001-provider-neutral-knowledge-acquisition.md) - Provider-neutral knowledge acquisition
-7. [SDR-KI-ARCADIA-003](SDR-KI-ARCADIA-003-the-governance-of-an-island.md) - The Governance of an Island
-8. [SDR-KI-ARCADIA-004](SDR-KI-ARCADIA-004-the-enactment-process.md) - The Enactment Process
-9. [SDR-KI-ARCADIA-005](SDR-KI-ARCADIA-005-territories-archipelagos-and-the-constitutional-layer.md) - Territories, Archipelagos, and the Constitutional Layer
-10. [GDR-KI-ARCADIA-003](GDR-KI-ARCADIA-003-capital-governed-trade-routes.md) - Capital-governed trade routes
-11. [SDR-KI-ARCADIA-006](SDR-KI-ARCADIA-006-agents-in-the-knowledge-islands-model.md) - Agents in the Knowledge Islands Model
-12. [SDR-KI-ARCADIA-007](SDR-KI-ARCADIA-007-the-great-library-of-arcadia.md) - The Great Library of Arcadia
-13. [GDR-KI-ARCADIA-004](GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold.md) - Standing agent-host exemption from the Techne Programme Hold
-14. [GDR-KI-ARCADIA-005](GDR-KI-ARCADIA-005-the-roadmap-model.md) - The roadmap model
+3. [SDR-KI-ARCADIA-001](SDR-KI-ARCADIA-001-knowledge-islands-the-strategy.md) - Knowledge Islands — The Strategy
+4. [SDR-KI-ARCADIA-002](SDR-KI-ARCADIA-002-the-home-of-knowledge.md) - The Home of Knowledge
+5. [ADR-KI-ARCADIA-001](ADR-KI-ARCADIA-001-provider-neutral-knowledge-acquisition.md) - Provider-neutral knowledge acquisition
+6. [SDR-KI-ARCADIA-003](SDR-KI-ARCADIA-003-the-governance-of-an-island.md) - The Governance of an Island
+7. [SDR-KI-ARCADIA-004](SDR-KI-ARCADIA-004-the-enactment-process.md) - The Enactment Process
+8. [SDR-KI-ARCADIA-005](SDR-KI-ARCADIA-005-territories-archipelagos-and-the-constitutional-layer.md) - Territories, Archipelagos, and the Constitutional Layer
+9. [GDR-KI-ARCADIA-003](GDR-KI-ARCADIA-003-capital-governed-trade-routes.md) - Capital-governed trade routes
+10. [SDR-KI-ARCADIA-006](SDR-KI-ARCADIA-006-agents-in-the-knowledge-islands-model.md) - Agents in the Knowledge Islands Model
+11. [SDR-KI-ARCADIA-007](SDR-KI-ARCADIA-007-the-great-library-of-arcadia.md) - The Great Library of Arcadia
+12. [GDR-KI-ARCADIA-004](GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold.md) - Standing agent-host exemption from the Techne Programme Hold
+13. [GDR-KI-ARCADIA-005](GDR-KI-ARCADIA-005-the-roadmap-model.md) - The roadmap model
+14. [GDR-KI-ARCADIA-006](GDR-KI-ARCADIA-006-knowledge-islands-ecosystem-fundamentals.md) - Knowledge Islands ecosystem fundamentals
 15. [ADR-KI-ARCADIA-002](ADR-KI-ARCADIA-002-territory-derived-repository-selection.md) - Territory-derived repository selection
 16. [ODR-KI-ARCADIA-001](ODR-KI-ARCADIA-001-keeping-work-safe-on-the-agent-host.md) - Keeping work safe on the agent host
 17. [ADR-KI-ARCADIA-003](ADR-KI-ARCADIA-003-the-agent-host-workstation-model.md) - The agent host workstation model
 
-## Shared engineering decisions
+## Engineering decisions
 
-Arcadia maintains these canonical TECHNE records; their original identifiers are preserved outside the local KI-ARCADIA series. Those marked as shared records have semantically identical retained source copies, not a second decision authority; the archived copy of ADR-TECHNE-003 is historical evidence only.
+Arcadia maintains these engineering decisions, adopted from the retired Techné principal and renumbered into the KI-ARCADIA series. Their archived source copies are historical evidence only, not a second decision authority.
 
-1. [GDR-TECHNE-001](GDR-TECHNE-001-adopting-decision-records.md)
-2. [ADR-TECHNE-001](ADR-TECHNE-001-provider-neutral-isolated-agent-execution.md)
-3. [ADR-TECHNE-002](ADR-TECHNE-002-one-persona-across-explicit-working-contexts.md)
-4. [ADR-TECHNE-003](ADR-TECHNE-003-techne-implementation-ownership.md)
-5. [GDR-TECHNE-002](GDR-TECHNE-002-governing-technology-investigations.md)
+1. [GDR-KI-ARCADIA-007](GDR-KI-ARCADIA-007-adopting-decision-records.md)
+2. [ADR-KI-ARCADIA-004](ADR-KI-ARCADIA-004-provider-neutral-isolated-agent-execution.md)
+3. [ADR-KI-ARCADIA-005](ADR-KI-ARCADIA-005-one-persona-across-explicit-working-contexts.md)
+4. [ADR-KI-ARCADIA-006](ADR-KI-ARCADIA-006-techne-implementation-ownership.md)
+5. [GDR-KI-ARCADIA-008](GDR-KI-ARCADIA-008-governing-technology-investigations.md)

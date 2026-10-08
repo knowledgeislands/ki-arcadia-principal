@@ -33,7 +33,7 @@ The agent host keeps work safe through the following durability model. The opera
 
 ## Consequences
 
-- `ki-techne-harness` owns the status contract, guards, operations, pins and expiries, and its operator guide states the protection boundary, the sequences and the 90-day token expiry. `tools-techne` follows the harness contract, as [[ADR-TECHNE-003-techne-implementation-ownership|ADR-TECHNE-003]] requires.
+- `ki-techne-harness` owns the status contract, guards, operations, pins and expiries, and its operator guide states the protection boundary, the sequences and the 90-day token expiry. `tools-techne` follows the harness contract, as [[ADR-KI-ARCADIA-006-techne-implementation-ownership|ADR-KI-ARCADIA-006]] requires.
 - `tools-ki` gains the host-marker refusal, the `direct-host` recipe carries the two-checkout and writing-checkout rules for both runtimes, with the binding owner's personal source adding only its own wording, and `ki-agentic-harness` decides where a writing-checkout designation lives. Each is recorded in its owning repository.
 - Work at risk on the host blocks a rebuild or withdrawal unless the owner discards it by name, so withdrawing the exemption cannot silently lose work.
 - Material outside Git on the host is lost on rebuild unless moved into a repository or onto the operator's workstation first.
@@ -42,4 +42,4 @@ The agent host keeps work safe through the following durability model. The opera
 
 - [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] - the exemption whose bounds this operates within.
 - [[GDR-KI-ARCADIA-005-the-roadmap-model|GDR-KI-ARCADIA-005]] - the roadmap model the writing-checkout rule serves.
-- [[ADR-TECHNE-003-techne-implementation-ownership|ADR-TECHNE-003]] - the harness and CLI ownership split.
+- [[ADR-KI-ARCADIA-006-techne-implementation-ownership|ADR-KI-ARCADIA-006]] - the harness and CLI ownership split.

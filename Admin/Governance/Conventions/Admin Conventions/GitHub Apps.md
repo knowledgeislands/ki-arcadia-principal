@@ -76,7 +76,7 @@ On 2026-10-05 the `homebrew-tap` intake run 37317227744 (`workflow_dispatch`) au
 | `homebrew-tap` | `ci.yml` (notify-consumers job) | Dispatches `tool-release-published` to consumer repositories once the formula reaches `main` |
 | `ki-website` | `update-tool-release.yml` | Verifies the release, opens or updates the registry pull request and requests squash auto-merge |
 
-In `ki-website` the `main` ruleset requires pull requests and the `build` check, with repository admins as the only bypass actor; the App cannot bypass it. The website's decision is `ODR-KI-WEBSITE-001` in `ki-website`, delivered through `KI-WEB-SITE-042`.
+In `ki-website` the `main` ruleset requires pull requests and the `build` check, with repository admins as the only bypass actor; the App cannot bypass it. The website's decision is `ODR-KI-WEB-001` in `ki-website`, delivered through `KI-WEB-SITE-042`.
 
 ---
 

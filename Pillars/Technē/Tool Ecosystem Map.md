@@ -8,7 +8,7 @@ author: AI-assisted
 
 ## Overview
 
-The Knowledge Islands tooling layer combines governed knowledge, reusable capabilities, independently owned products and publication. [[Known Lands]] supplies canonical membership and ownership boundaries; [[GDR-KI-FUNDAMENTALS-001-knowledge-islands-ecosystem-fundamentals|Ecosystem fundamentals]] supplies the shared routing decision.
+The Knowledge Islands tooling layer combines governed knowledge, reusable capabilities, independently owned products and publication. [[Known Lands]] supplies canonical membership and ownership boundaries; [[GDR-KI-ARCADIA-006-knowledge-islands-ecosystem-fundamentals|Ecosystem fundamentals]] supplies the shared routing decision.
 
 ## Components
 
@@ -24,7 +24,7 @@ The Knowledge Islands tooling layer combines governed knowledge, reusable capabi
 
 ## Knowledge and implementation
 
-[[Engineering Practice/Engineering Practice|Engineering Practice]] is Arcadia's canonical engineering discipline. [[ADR-TECHNE-003-techne-implementation-ownership|Implementation ownership]] preserves the separate harness and CLI product boundaries; neither product becomes the knowledge owner.
+[[Engineering Practice/Engineering Practice|Engineering Practice]] is Arcadia's canonical engineering discipline. [[ADR-KI-ARCADIA-006-techne-implementation-ownership|Implementation ownership]] preserves the separate harness and CLI product boundaries; neither product becomes the knowledge owner.
 
 Reusable agentic capabilities belong to the KI Agentic Harness. The `ki` executable owns its implemented governance operations; governance does not become infrastructure control through proximity to a controller or provider.
 

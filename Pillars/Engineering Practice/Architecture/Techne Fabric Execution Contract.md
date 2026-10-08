@@ -105,9 +105,9 @@ A successful proof demonstrates the same execution bindings and evidence meaning
 
 [[Agentic Operating Approach]] places the contract within the wider flow from human intent to governed outcome.
 
-[[ADR-TECHNE-001-provider-neutral-isolated-agent-execution|ADR-TECHNE-001]] records the provider-neutral isolation decision.
+[[ADR-KI-ARCADIA-004-provider-neutral-isolated-agent-execution|ADR-KI-ARCADIA-004]] records the provider-neutral isolation decision.
 
-[[ADR-TECHNE-003-techne-implementation-ownership|ADR-TECHNE-003]] records the implementation-owner decision.
+[[ADR-KI-ARCADIA-006-techne-implementation-ownership|ADR-KI-ARCADIA-006]] records the implementation-owner decision.
 
 Return to [[Architecture]].
 
