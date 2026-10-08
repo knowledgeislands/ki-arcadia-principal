@@ -27,6 +27,7 @@ Records are ordered by reveal order — the logical sequence in which the decisi
 14. [GDR-KI-ARCADIA-005](GDR-KI-ARCADIA-005-the-roadmap-model.md) - The roadmap model
 15. [ADR-KI-ARCADIA-002](ADR-KI-ARCADIA-002-territory-derived-repository-selection.md) - Territory-derived repository selection
 16. [ODR-KI-ARCADIA-001](ODR-KI-ARCADIA-001-keeping-work-safe-on-the-agent-host.md) - Keeping work safe on the agent host
+17. [ADR-KI-ARCADIA-003](ADR-KI-ARCADIA-003-the-agent-host-workstation-model.md) - The agent host workstation model
 
 ## Shared engineering decisions
 
