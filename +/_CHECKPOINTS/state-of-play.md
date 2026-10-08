@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: state-of-play
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-08T19:22:00Z
+updated_at: 2026-10-08T19:36:00Z
 ---
 
 # state-of-play
@@ -39,12 +39,13 @@ This is the master thread. It owns cross-project priorities, decisions, releases
 Rules live with their durable owners: the roadmap model in GDR-KI-ARCADIA-005 and the `ki-work` standards, delegation and project threads in `ki-delegation`, releases in the `ki-repo-tools` release-readiness standard. Standing instructions for this thread:
 
 - One thread per active Project, opened only where there is active work; this thread is the master and passes directions to a project thread through its checkpoint.
-- Keep agents moving: start the next queued delivery as soon as one finishes. Never delegate Kris-attended or Kris-gated records: DOTFILES-UE-062, DOTFILES-UE-071, DOTFILES-UE-027, DOTFILES-UE-065 and KI-ARCADIA-GOV-024.
+- Keep agents moving: start the next queued delivery as soon as one finishes. Never delegate Kris-attended or Kris-gated records: DOTFILES-UE-062, DOTFILES-UE-071, DOTFILES-UE-027 and DOTFILES-UE-065.
 - Trades are on hold: send no new trades; do the work directly or record it in the receiving repository.
 - Commit minor rollout changes directly without new records, citing records by full identifier; push own commits fast-forward only.
 - Delivered and awaiting-review records count as done; obsolete or ownerless records are cancelled; both are pruned once verified.
 - Releases are on demand; the next is one combined tools-ki release.
 - Linear and TickTick are not raised in this thread.
+- The Enactment threshold is settled under KI-ARCADIA-GOV-024 (delivered and pruned on 2026-10-08): an explicit owner instruction for a bounded change stands in for a record, related changes share one record, and a record is needed only for new or reworked content in `Admin`, `Pillars` or `Resources`.
 - The [mac-studio-bootstrap](../../Streams/Projects/mac-studio-bootstrap.md) Project lives under the Rig Initiative; Kris settled this on 2026-10-08.
 
 ## Files touched
