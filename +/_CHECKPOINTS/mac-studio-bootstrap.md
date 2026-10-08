@@ -18,7 +18,7 @@ Established over SSH on 2026-10-08, with nothing changed: the Mac Studio is `sol
 
 Remote agent use and administration are exempt from the Techne Programme Hold under [KI-ARCADIA-GOV-033](../../Streams/Roadmap/KI-ARCADIA-GOV-033-exempt-the-mac-studio-as-a-remote-agent-host.md), awaiting Kris's review. Nothing on the Mac Studio changes until Kris says so.
 
-### Remote bootstrap runbook
+**Remote bootstrap runbook.**
 
 Each step is marked **SSH** (runs in an SSH session from the laptop), **SSH + Kris** (over SSH, but Kris types a password or approves a sign-in link) or **Screen** (Kris present at the Mac Studio, or on Screen Sharing at `vnc://100.90.130.74`). Screen Sharing and SSH both ride the tailnet, so a step that interrupts Tailscale needs Kris physically present or a fallback route.
 
