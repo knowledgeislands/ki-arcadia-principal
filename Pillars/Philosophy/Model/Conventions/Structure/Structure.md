@@ -74,6 +74,20 @@ Streams notes track current status, progress, and next steps - they are not know
 
 † **Weekly note purpose** - weekly note filed in the year's `YYYY By Week/` sibling folder (e.g. `Calendar/2026/2026 By Week/2026 W14.md`).
 
+Daily, weekly and monthly notes adapt the [[Bullet Journal]] method. The daily note keeps a rapid log of short single-line entries, and open tasks are migrated at the weekly review and in full at month end. Markers use Obsidian task syntax so they render without a plugin:
+
+| Marker | Meaning |
+| --- | --- |
+| `- [ ]` | Open task |
+| `- [x]` | Done |
+| `- [>]` | Migrated to a later note |
+| `- [<]` | Scheduled to a dated note |
+| `- [-]` | Dropped |
+| `- o` | Event |
+| `-` | Note |
+
+Migration gives every open task one outcome: carried forward, scheduled against a date, or dropped. A task not worth carrying forward is dropped rather than carried again. Collections, an index and a future log are not adopted as Calendar note types: durable lists belong in Pillars or Resources, and a scheduled task points to the dated note that will hold it. Calendar notes created before this convention are not migrated.
+
 ### Routing Rules
 
 When creating or filing a note, route to the most specific matching folder:

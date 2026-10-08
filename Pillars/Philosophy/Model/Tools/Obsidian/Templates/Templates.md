@@ -4,7 +4,7 @@ tags:
   - card/note
   - topic/knowledge-islands
   - topic/knowledge-management
-status: current - April 2026
+status: current - October 2026
 author: Written with Claude
 ---
 
@@ -18,13 +18,13 @@ Obsidian templates used with the Templater plugin to scaffold new notes consiste
 
 ## Calendar
 
-Six templates covering the time-based note types that live under `Calendar/`. Each maps to a specific note type defined in [[Library]].
+Six templates covering the time-based note types that live under `Calendar/`. Each maps to a specific note type defined in [[Library]]. The daily, weekly and monthly templates adapt the [[Bullet Journal]] method's rapid logging and migration; the marker legend lives in [[Structure]].
 
-- [[Calendar - Daily]] - daily note; the hub for the day with wikilinks to meetings, sessions, and notes filed that day
+- [[Calendar - Daily]] - daily note; the hub for the day with wikilinks to meetings, sessions, and notes filed that day, plus a rapid log of tasks, events and notes
 - [[Calendar - Meeting]] - meeting note; attendees, themed discussion sections, key decisions, and action items
 - [[Calendar - Session]] - AI-assisted session digest; context, decisions, facts learned, related projects, and keywords
-- [[Calendar - Weekly]] - weekly note; daily note links and a week-level summary
-- [[Calendar - Monthly]] - monthly index; weekly note links and a month-level summary
+- [[Calendar - Weekly]] - weekly note; daily note links, a week-level summary, and a review of open and migrated tasks
+- [[Calendar - Monthly]] - monthly index; weekly note links, a month-level summary, and the monthly task migration
 - [[Calendar - Yearly]] - year index; monthly and weekly note links for the full year
 
 ---

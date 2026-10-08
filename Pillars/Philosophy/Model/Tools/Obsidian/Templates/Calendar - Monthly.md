@@ -24,3 +24,7 @@ Monthly note for {{date:MMMM YYYY}}.
 ### Weekly Notes
 
 [List of weeks starting on Monday in the month as links with a description.]
+
+### Migration
+
+[Every task still open at month end, each given one outcome: migrated `- [>]` to next month, scheduled `- [<]` to a dated note, or dropped `- [-]`. A task not worth carrying forward is dropped.]

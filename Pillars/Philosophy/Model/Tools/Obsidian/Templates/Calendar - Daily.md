@@ -23,3 +23,7 @@ Daily note for {{date:DD MMMM YYYY}}.
 ### Tasks
 
 [List of tasks.]
+
+### Log
+
+[Rapid log for the day, one short line per entry: `- [ ]` task, `- o` event, `-` note. Mark a task `- [x]` when done, `- [>]` when migrated, `- [<]` when scheduled to a dated note, or `- [-]` when dropped.]
