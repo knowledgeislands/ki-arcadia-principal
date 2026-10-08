@@ -9,14 +9,13 @@ component: model
 tags:
   - card/proposal
   - topic/knowledge-islands
-status: awaiting-review
+status: done
 priority: medium
-horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: 8d9e8b79fe73869f429c7e2432fd16add9665e33
 created_at: 2026-04-27T19:18:58Z
-updated_at: 2026-10-08T08:46:29Z
+updated_at: 2026-10-08T08:47:24Z
 author: Written with Claude
 ---
 
@@ -136,6 +135,10 @@ The goal is met within the boundary: one paragraph and one clause, no new note, 
 ### Mini recap
 
 KI-ARCADIA-MOD-005 names Intention in the Concept chapter's orienting note and points to it from the chapter index. Learning route: none.
+
+## Done
+
+Accepted 2026-10-08 under Kris's standing decision in the state-of-play decisions log: Decision 17 (2026-10-07), "Delivered records count as done (Decision 12) and are pruned once verified", applied to this focus2 delivery by Decision 19. The wording concern stays open to Kris's later refinement without reopening the record.
 
 ## Discussion
 
