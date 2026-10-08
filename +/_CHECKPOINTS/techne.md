@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: techne
 state: active
 created_at: 2026-10-07T09:05:00Z
-updated_at: 2026-10-08T08:06:25Z
+updated_at: 2026-10-08T09:10:00Z
 ---
 
 # techne
@@ -18,7 +18,7 @@ The thread moves agent work off the laptop onto the one agent host the [Techne P
 
 The host was rebuilt on 2026-10-07 by a stack-only delete that kept the GitHub token; workspace setup re-converged and status shows 21 repositories, none at risk. The GitHub token carries a 90-day expiry. Claude and Codex are not yet signed in on the host.
 
-GDR-KI-ARCADIA-004 words the exemption by role with no fixed review date. Every ODR-KI-ARCADIA-001 rollout record is captured in its owning repository. The workstation design is decided (Decision 7) and recorded in ADR-KI-ARCADIA-003; its rollout is captured in `ki-techne-harness` and the chezmoi source, with the Rig profile folded into TECHNE-TOOLS-OPS-014 and the pilot pair, TECHNE-TOOLS-OPS-015 and DOTFILES-UE-073, selected behind the durability pilot TECHNE-TOOLS-OPS-013 and stage 1. Arcadia commits are local and unpushed, because another session's commit is ahead of origin there; the other repositories are pushed. Both design loops' papers are deleted, their outcomes consolidated in ODR-KI-ARCADIA-001 and ADR-KI-ARCADIA-003. No `techne` agents are running.
+GDR-KI-ARCADIA-004 words the exemption by role with no fixed review date. Every ODR-KI-ARCADIA-001 rollout record is captured in its owning repository. The workstation design is decided (Decision 7) and recorded in ADR-KI-ARCADIA-003; its rollout is captured in `ki-techne-harness` and the chezmoi source, with the Rig profile folded into TECHNE-TOOLS-OPS-014 and the pilot pair, TECHNE-TOOLS-OPS-015 and DOTFILES-UE-073, selected behind the durability pilot TECHNE-TOOLS-OPS-013 and stage 1. TECHNE-TOOLS-OPS-013 is delivered and awaiting Kris's review, with the neutral `host.id` and guide fixes (P1, P2). Kris approved generic-review proposals P4 to P9 on 2026-10-08 (Decision 11), with zsh as the default shell: KI-ARCADIA-GOV-031 amends ODR-KI-ARCADIA-001 and ADR-KI-ARCADIA-003 to be person-neutral and target-neutral and awaits Kris's review; TECHNE-TOOLS-OPS-014, TECHNE-TOOLS-OPS-015 and TECHNE-TOOLS-OPS-017 are reshaped, TECHNE-TOOLS-OPS-019 is captured in triage for person-neutral recipe defaults, DOTFILES-UE-072 is narrowed to Kris's personal wording and DOTFILES-UE-073 is OS-aware. P10 to P12 are undecided and P13 is noted. Both design loops' papers are deleted, their outcomes consolidated in ODR-KI-ARCADIA-001 and ADR-KI-ARCADIA-003. No `techne` agents are running.
 
 Thread rules:
 
@@ -35,11 +35,12 @@ Thread rules:
 - Credentials are stated by role: the binding owner's administrator session builds and tears down, the operator role operates, and the GitHub token and Claude login are the binding owner's own until unattended agents arrive.
 - Work on the host is safe only once it is on a remote; the durability model and its rollout follow ODR-KI-ARCADIA-001, with one harness pilot before a wave.
 - Agent hosts are recipes bound by per-person bindings, with providers and footprints (ADR-TECHNE-003).
-- The host becomes the binding owner's working machine through the recipe's Rig profile and the owner's Cheztoi projection, Rig staged, zsh by guarded hand-off, no detached delegation yet, and Rig the only new binary (ADR-KI-ARCADIA-003).
+- The host becomes the binding owner's working machine through the recipe's Rig profile and the owner's profile payload (for Kris, Cheztoi), Rig staged, the shell a per-binding choice with zsh as the default, no detached delegation yet, and Rig the only new binary (ADR-KI-ARCADIA-003).
+- The design is general: any binding owner, any target (cloud or owned, Linux or macOS), with Kris's choices only as examples; the recipe itself carries the two-checkout and writing-checkout rules (Decisions 10 and 11).
 
 ## Files touched
 
-The workstation decisions file and design index, ADR-KI-ARCADIA-003 and the Decisions index, the agent-host Project note and this checkpoint. Outside Arcadia: TECHNE-TOOLS-OPS-013, OPS-014 and new records OPS-015 to OPS-018 in `ki-techne-harness`, and DOTFILES-UE-073 and UE-074 in the chezmoi source. No remote state changed beyond pushes.
+ODR-KI-ARCADIA-001, ADR-KI-ARCADIA-003, KI-ARCADIA-GOV-031, the agent-host Project note and this checkpoint. Outside Arcadia: TECHNE-TOOLS-OPS-013 to TECHNE-TOOLS-OPS-019 in `ki-techne-harness`, and DOTFILES-UE-072 to DOTFILES-UE-074 in the chezmoi source. No remote state changed beyond pushes.
 
 ## Open questions
 
@@ -47,4 +48,4 @@ None.
 
 ## Next step
 
-Kris signs Claude (and optionally Codex) in on the host and pushes Arcadia once the other session's commit there is settled; then the durability pilot, TECHNE-TOOLS-OPS-013, is planned through `ki-plan`, followed by TECHNE-TOOLS-OPS-014 and the workstation pilot pair.
+Kris signs Claude (and optionally Codex) in on the host, reviews TECHNE-TOOLS-OPS-013 and KI-ARCADIA-GOV-031, and decides P10 to P12; then TECHNE-TOOLS-OPS-014 is planned through `ki-plan`, followed by the workstation pilot pair and TECHNE-TOOLS-OPS-019.
