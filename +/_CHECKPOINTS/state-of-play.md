@@ -3,68 +3,66 @@ type: ki-checkpoint
 thread: state-of-play
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-08T07:21:29Z
+updated_at: 2026-10-08T08:50:00Z
 ---
 
 # state-of-play
 
 ## Objective
 
-Reduce all in-flight work across the `kis` Agora and chezmoi to a short list of Projects that Kris chooses between, with Now reflecting real intent.
+This is the master thread. It owns cross-project priorities, decisions, releases and the estate-wide view across the `kis` Agora and chezmoi, and keeps Now reflecting real intent. Each active Project is worked in its own thread (Decision 28), resumed from its checkpoint below.
 
 ## Current state
 
-- **Roadmap model v1** is live and enforced across the Agora ([GDR-KI-ARCADIA-005](../../Admin/Governance/Decisions/GDR-KI-ARCADIA-005-the-roadmap-model.md)). Links point upwards only: records name their Project and Projects their Initiative. Project notes in [Projects](../../Streams/Projects/Projects.md) carry only an outcome and notes; status lives in the records and each note's `lifecycle`, and `ki` produces the views.
-- **Load:** the Agora has 26 Now, 3 Next, 1 Future, 7 Hold and 13 triage records; chezmoi adds 1 Soon, 9 Hold and 1 triage. Now is still overloaded. No horizon has moved yet.
-- **Running:** the `tidy` agent is applying the `.ki.toml` layout rules and bare trades tables across the Agora. Until it commits, `ki repo audit` fails FILES-10 in Arcadia, the harness and `tools-ki`, and BIO-1 in the harness. Check `claude-bg status gov-020` before assuming it is live.
-- **What's left:**
-  - Choose the focus and move the surplus Now records to Next - Kris decides, using `focus.md`.
-  - Finish the `.ki.toml` tidy and get audits green - the `tidy` agent, then [baseline-rollout](../../Streams/Projects/baseline-rollout.md).
-  - Release `tools-ki` v0.8.2, which carries `summary --by project` and the combined Now and Next view - Kris decides (see open questions); [roadmap-model](../../Streams/Projects/roadmap-model.md) closes once it ships.
-  - Baseline rollout: [KI-HARNESS-GOV-127](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-127-adopt-dependency-cruiser-estatewide.md), [KI-HARNESS-FND-026](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-FND-026-complete-conform-activation.md) and [KI-HARNESS-GOV-109](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-109-fail-when-commit-gates-absent.md) - [baseline-rollout](../../Streams/Projects/baseline-rollout.md).
-  - Run the design loop and the trades hold review, due 2026-10-14 - [skill-refresh](../../Streams/Projects/skill-refresh.md).
-  - Finish session acquisition: [KI-HARNESS-OPS-005](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-005-acquire-ai-sessions.md), [KI-ARCADIA-MOD-006](../../Streams/Roadmap/KI-ARCADIA-MOD-006-knowledge-acquisition-lifecycle.md) and [KI-HARNESS-GOV-087](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-087-evaluate-obscura-browser-runtime.md) - [knowledge-acquisition](../../Streams/Projects/knowledge-acquisition.md).
-  - Capture FND-5 as a work record - [estate-factorisation](../../Streams/Projects/estate-factorisation.md).
-  - Answer the two decision cards that gate seven Now records - Kris decides, under [paperclip-bootstrap-and-recovery](../../Streams/Projects/paperclip-bootstrap-and-recovery.md).
-  - Pick the first repository to review - Kris decides, under [specification-review](../../Streams/Projects/specification-review.md).
-  - Agent-host: the prototype review kept the exemption with no fixed review date; open work is in the [agent-host](../../Streams/Projects/agent-host/agent-host.md) Project note.
-  - Decide on a Delta trial on or after 2026-10-13 - Kris decides, under [delta-evaluation](../../Streams/Projects/delta-evaluation.md).
-  - Decide who owns routine background delegation - Kris decides, [KI-HARNESS-GOV-144](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-144-own-portable-background-delegation.md).
-  - Map kit-hnr's `[skills.ki-work-roadmap].areas` codes to titles - Kris decides (kit-hnr is outside the Agora).
-  - Remove the stale `~/.local/bin/ki` 0.7.1, which shadows the Homebrew `ki` 0.8.1 on PATH - Kris decides.
-  - Push or drop chezmoi's unpushed local commits from other threads (`ebc6a19`, `c05815b`, `9c58e46`) - Kris decides.
-- **Other thread:** [techne](techne.md) is the separate, paused Techne thread.
+- **Threads.** One per active Project, plus chezmoi and the Mac Studio. Kris pastes the opener into a new Zed thread.
+
+  | Thread | Checkpoint | Opener |
+  | --- | --- | --- |
+  | state-of-play (master) | [state-of-play](state-of-play.md) | `Resume the state-of-play checkpoint in ki-arcadia-principal and continue; delegate via ki agent; this is the master thread.` |
+  | baseline-rollout | [baseline-rollout](baseline-rollout.md) | `Resume the baseline-rollout checkpoint in ki-arcadia-principal and continue; delegate via ki agent; state-of-play is the master thread.` |
+  | estate-factorisation | [estate-factorisation](estate-factorisation.md) | `Resume the estate-factorisation checkpoint in ki-arcadia-principal and continue; delegate via ki agent; state-of-play is the master thread.` |
+  | island-model-and-tending | [island-model-and-tending](island-model-and-tending.md) | `Resume the island-model-and-tending checkpoint in ki-arcadia-principal and continue; delegate via ki agent; state-of-play is the master thread.` |
+  | knowledge-acquisition | [knowledge-acquisition](knowledge-acquisition.md) | `Resume the knowledge-acquisition checkpoint in ki-arcadia-principal and continue; delegate via ki agent; state-of-play is the master thread.` |
+  | paperclip-bootstrap-and-recovery | [paperclip-bootstrap-and-recovery](paperclip-bootstrap-and-recovery.md) | `Resume the paperclip-bootstrap-and-recovery checkpoint in ki-arcadia-principal and continue; delegate via ki agent; state-of-play is the master thread.` |
+  | agent-host | [techne](techne.md) | `Resume the techne checkpoint in ki-arcadia-principal and continue the agent-host Project; delegate via ki agent; state-of-play is the master thread.` |
+  | chezmoi | [chezmoi](chezmoi.md) | `Resume the chezmoi checkpoint in ki-arcadia-principal and continue; delegate via ki agent; state-of-play is the master thread.` |
+  | mac-studio-bootstrap | [mac-studio-bootstrap](mac-studio-bootstrap.md) | `On the Mac Studio, resume the mac-studio-bootstrap checkpoint in ki-arcadia-principal and continue; state-of-play is the master thread.` |
+  | territory-selection | [territory-selection](territory-selection.md) | `Resume the territory-selection checkpoint in ki-arcadia-principal and continue; delegate via ki agent; state-of-play is the master thread.` |
+
+- **Focus.** Estate factorisation and Baseline rollout are Now (Decision 17); the territory selection cut-over pair is Now in its own thread.
+- **Projects with no thread.** No open records and no recurring work: [roadmap-model](../../Streams/Projects/roadmap-model.md), [skill-refresh](../../Streams/Projects/skill-refresh.md), [specification-review](../../Streams/Projects/specification-review.md), [delta-evaluation](../../Streams/Projects/delta-evaluation.md) and [trades-revamp](../../Streams/Projects/trades-revamp.md). Paused, with Hold records only: [specifications](../../Streams/Projects/specifications.md) and [website](../../Streams/Projects/website.md). Their decisions stay here.
+- **Projectless helpers this thread owns** (gov-020; check `ki agent status gov-020`): `drscope` running the Decision Record scope rename (Decision 21); queued `harness-m1`, `harness-m2`, `diagrams2`, `deleg-rule`, `dr-refresh`, `release-policy` and `streams-homes`.
+- **Tooling.** `ki` 0.9.0 (Homebrew and `~/.local/bin`) carries `ki agent`, which replaced `claude-bg`.
 
 ## Decisions made
 
-The decisions still in force for the remaining work (full text in `decisions.md`, see Files touched):
+The decisions in force (full text in `decisions.md`, see Files touched):
 
+- One thread per active Project; this thread is the master (Decision 28).
 - Trades are on hold: send no new trades; do the work directly or record it in the receiving repository.
-- Commit minor rollout changes directly, with no work record. Cite records by full identifier.
-- Pushing this rollout's own commits is authorised, fast-forward only.
-- Awaiting-review and obsolete records may be closed or cancelled and pruned.
-- Focus is chosen by Project; Kris makes the choice.
+- Commit minor rollout changes directly, citing records by full identifier; push own commits fast-forward only.
+- Delivered records count as done and are pruned once verified; awaiting-review and obsolete records may be closed or cancelled and pruned.
+- Releases are on demand under one common policy (Decision 25).
+- Recurring work homes in a Project or Initiative, and a Project closes only after a close-out assessment (Decision 26).
 
 ## Files touched
 
 - Design and decisions: `/Users/krisbrown/.local/state/ki/state-of-play/design/` (`decisions.md`, `roadmap-model.md`).
-- Agent prompts, statuses and reports: `/Users/krisbrown/.local/state/claude-bg/gov-020/`; `focus.md` there is the per-Project focus view with the recommended Now-to-Next moves.
+- Helper prompts, statuses and reports: `/Users/krisbrown/.local/state/ki/agents/gov-020/`.
 - Project and Initiative notes: [Projects](../../Streams/Projects/Projects.md) and [Initiatives](../../Streams/Initiatives/Initiatives.md).
-- Roadmap model rationale: [GDR-KI-ARCADIA-005](../../Admin/Governance/Decisions/GDR-KI-ARCADIA-005-the-roadmap-model.md).
 
 ## Open questions
 
-- **Focus:** which two or three Projects get Now, and are the 19 Now-to-Next moves in `focus.md` approved? It recommends baseline-rollout, skill-refresh and knowledge-acquisition.
-- **`tools-ki` v0.8.2 release:** authorise one read-only download of the harness `703f3d66` archive to compute the pin digest, or release on the existing `a27bbb6` pin.
 - **Trades hold, by 2026-10-14:** re-enable trades or renew the hold. HOLD-1 warns from 2026-10-15.
+- **Delta trial, on or after 2026-10-13:** yes or no, under [delta-evaluation](../../Streams/Projects/delta-evaluation.md).
 - **Paperclip:** answer the two decision cards.
 - **Specification review:** which repository first? `tools-ki` is suggested.
-- **`KI-HARNESS-GOV-144`:** which skill owns routine background delegation?
+- **kit-hnr:** map `[skills.ki-work-roadmap].areas` codes to titles.
+- **agent-host thread name:** keep `techne` as its checkpoint or rename it to `agent-host`.
 
 ## Next step
 
-1. Kris picks the focus Projects from `focus.md` and approves the Now-to-Next moves; apply them in each owning repository.
-2. Once the `tidy` agent reports DONE, rerun `ki repo audit` in Arcadia, the harness and `tools-ki` and fix what remains.
-3. Kris settles the `tools-ki` v0.8.2 pin question; then release and close the roadmap-model Project.
-4. Start `/ki-design-loop start skill-refresh` and settle the trades hold before 2026-10-14.
-5. Work the chosen Projects from their records and `ki` views.
+1. Kris opens the Project threads from the table; each works only its own records.
+2. Here: verify each projectless helper's report as it finishes, and prune verified done records.
+3. Settle the trades hold and start `/ki-design-loop start skill-refresh` before 2026-10-14.
+4. Run a close-out assessment for roadmap-model, which has no open records.

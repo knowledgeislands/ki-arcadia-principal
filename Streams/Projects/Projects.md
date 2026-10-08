@@ -1,6 +1,6 @@
 ---
 note_type: streams/index
-updated: 2026-10-07T19:00:00Z
+updated: 2026-10-08T08:45:00Z
 author: Written with Claude
 ---
 
@@ -53,6 +53,12 @@ Links point upwards only: a work record names its Project, and a Project names i
 ## Knowledge acquisition
 
 [[knowledge-acquisition]] makes acquisition of external material work end to end, from the provider-neutral lifecycle note to verified retirement of source conversations.
+
+---
+
+## Mac Studio bootstrap
+
+[[mac-studio-bootstrap]] brings Kris's Mac Studio, unused for over a month, back to full estate capability: chezmoi, Rig, Homebrew `ki`, the workspace and an agent runtime, so any thread can resume there. It sits under [[rig|Rig]] because the Mac Studio is a workstation.
 
 ---
 
