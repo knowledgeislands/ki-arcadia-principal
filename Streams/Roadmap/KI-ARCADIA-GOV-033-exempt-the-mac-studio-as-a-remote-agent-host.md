@@ -7,12 +7,12 @@ kind: deliver
 purpose: governance
 project: mac-studio-bootstrap
 component: governance
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: 81a1d230d8bf6d3e6ecba44b1dc5b21fe23362e0
 created_at: 2026-10-08T14:18:30Z
-updated_at: 2026-10-08T14:25:00Z
+updated_at: 2026-10-08T20:00:05Z
 ---
 
 # Exempt the Mac Studio as a Remote Agent Host
@@ -57,9 +57,13 @@ Facts established over SSH the same day: the Mac Studio is `sol` on the tailnet,
 
 None. The bootstrap runbook in the [mac-studio-bootstrap](../../+/_CHECKPOINTS/mac-studio-bootstrap.md) checkpoint relies on this exemption for its remote steps.
 
-## Review packet
+## Review
 
-### Change summary
+### Delivered
+
+The amendments to GDR-KI-ARCADIA-004 and the Techne Programme Hold, with this record, landed in commit `ff54792` on 2026-10-08, touching the three planned files and nothing else.
+
+### Change Summary
 
 - GDR-KI-ARCADIA-004 now carries two exempt hosts: the cloud agent host and the owner's Mac Studio as an owned remote agent host. The Mac Studio is covered for bootstrap and maintenance, its tailnet daemon and entries, remote administration over Tailscale SSH and Screen Sharing, and agent runs. The cloud host's bounds, prerequisites, credentials and term apply, adapted to an owned machine: no stack, account or operator role, the owner's own identities, a kill switch of ending sessions and stopping the tailnet daemon, and a teardown that removes agent credentials and the tailnet node without wiping the workstation. Disk encryption means a restart needs an in-person unlock.
 - The hold's exemption section mirrors this and now says the exemption covers the agent host and the owned remote agent host and nothing more.
@@ -77,6 +81,14 @@ None. The bootstrap runbook in the [mac-studio-bootstrap](../../+/_CHECKPOINTS/m
 ### Post-change review
 
 This is the implementing agent's own check, not an independent review.
+
+### Mini recap
+
+The Mac Studio is now an exempt owned remote agent host alongside the cloud agent host, so its bootstrap runbook may run remotely. The Project note's attended-only wording remains to follow.
+
+### Acceptance
+
+Accepted as done on 2026-10-08 under Kris's approval (mac-studio-bootstrap decisions log, Decision 2: "KI-ARCADIA-GOV-033 - accepted").
 
 ## Governance
 
