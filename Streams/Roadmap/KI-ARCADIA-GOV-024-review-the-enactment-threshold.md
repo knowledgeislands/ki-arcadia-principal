@@ -7,13 +7,12 @@ kind: decide
 purpose: governance
 project: island-model-and-tending
 component: operations
-horizon: now
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: 13b7a2e1b528e8280556db83e7edec5635f6cb95
 created_at: 2026-10-07T07:44:25Z
-updated_at: 2026-10-08T19:31:00Z
+updated_at: 2026-10-08T19:33:00Z
 ---
 
 # Review the Enactment Threshold
@@ -110,6 +109,10 @@ The intended threshold, three rules and unchanged exemptions, landed in the thre
 ### Mini recap
 
 The Enactment threshold is now proportionate and stated consistently; no follow-up work is proposed.
+
+### Acceptance
+
+Accepted as done on 2026-10-08 under Kris's agreement of the outcome (gov-020 decisions log, Decision 3).
 
 ## Governance
 
