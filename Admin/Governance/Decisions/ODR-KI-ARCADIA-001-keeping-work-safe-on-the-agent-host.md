@@ -13,19 +13,17 @@ decision_depends_on: ['GDR-KI-ARCADIA-004', 'GDR-KI-ARCADIA-005']
 
 ## Context
 
-[[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] exempts one agent host, `ki-techne-agent-host`, from the [[Techne Programme Hold]], and treats its disk as disposable: the host can be stopped at any time and rebuilt or withdrawn. Agent work on the host lives in Git checkouts, and nothing stopped a stop, rebuild or withdrawal from discarding commits that no remote held. The status script aborted on one broken repository and reported an empty workspace as normal, the CLI's teardown terminated the instance outside the recipe, rebuild and withdrawal were one operation, and the host's tool versions and credential expiries were tracked by hand.
-
-On 2026-10-07 a design loop examined how to keep work safe on the host: a brief, two independent reviews on different runtimes, and one merged report, after which Kris Brown recorded his decisions.
+[[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] exempts one agent host, `ki-techne-agent-host`, from the Techne Programme Hold, and treats its disk as disposable: the host can be stopped at any time and rebuilt or withdrawn. Agent work on the host lives in Git checkouts, so a stop, rebuild or withdrawal can discard commits that no remote holds unless the host's status, operations and tooling guard against it.
 
 ## Decision
 
-The agent host follows the durability model in the [merged report](../../../Streams/Projects/agent-host/design/agent-host-durability-report.md), as amended by [Kris's decisions](../../../Streams/Projects/agent-host/design/agent-host-durability-decisions.md). Where the two differ, the decisions win.
+The agent host keeps work safe through the following durability model.
 
 - **Safe work.** Work counts as safe only once it is in Git on a remote, on any branch. The repositories the host's workspace declares are protected; Claude Code and Codex sign-ins and transcripts, caches, hand-made backups and any checkout outside the declared set are disposable by rule. Inventory fails closed: a missing workspace, an absent or unexpected repository, unreadable Git state or a discovery error is `unknown`, not clean.
 - **Status contract.** The harness status script produces one versioned structured report with an outcome of `clean`, `at-risk` or `unknown` and a distinct exit status for each, tolerates a failure in one repository, and offers a read-only `--fetch`. The CLI consumes that report rather than parsing text.
 - **Stop.** Stop reads the status with a short timeout, warns about any repository at risk or unknown, and never refuses; `--now` skips the read. The kill switch stays available.
 - **Rebuild and withdraw.** These are two named operations in the harness and the CLI, both through the recipe's destroy path. Rebuild replaces the stack and keeps the GitHub token; withdraw removes the stack and every parameter, then lists the manual footprint. Both refuse unless the status is clean, with two overrides: one naming exactly the repositories at risk, and one for an unreadable host with typed confirmation. Both check that the host read is the host to be deleted, and both are idempotent. Agents implement and test them offline; the binding owner runs every live rebuild and withdrawal.
-- **Recovery routes.** Push first, then a verified `git bundle` copied to the Mac. No EBS snapshot is a recovery route.
+- **Recovery routes.** Push first, then a verified `git bundle` copied to the Mac. No EBS snapshot is a recovery route; that is revisited only if the host becomes unreadable with work on it.
 - **Credentials.** Building, rebuilding and tearing down the host use the binding owner's administrator session in the Techne account; day-to-day operation uses the host's account-local operator role, as GDR-KI-ARCADIA-004 states.
 - **Roadmap writing checkout.** For every Knowledge Islands repository the Mac checkout is the designated roadmap writing checkout. The host carries a marker that `ki` honours by refusing roadmap writes there; host sessions report the roadmap changes they need. A design in which the remote's `main` is the single history needs its own approval and a change to GDR-KI-ARCADIA-004.
 - **Two checkouts.** Push where you worked; before working on the other machine, fetch, check status and be level. The rule is machine-neutral and reaches both Claude and Codex on the host.
@@ -42,9 +40,6 @@ The agent host follows the durability model in the [merged report](../../../Stre
 
 ## References
 
-- [Brief](../../../Streams/Projects/agent-host/design/agent-host-durability-brief.md) - the problem, the proposal and the numbered reflection.
-- [Review: Fable](../../../Streams/Projects/agent-host/design/agent-host-durability-review-fable.md) and [review: Codex](../../../Streams/Projects/agent-host/design/agent-host-durability-review-codex.md) - the two independent reviews.
-- [Merged report](../../../Streams/Projects/agent-host/design/agent-host-durability-report.md) - the durability model and rollout plan.
-- [Decisions](../../../Streams/Projects/agent-host/design/agent-host-durability-decisions.md) - Kris's decisions 1 to 8, the related decisions and the authority grant, verbatim.
-- [[agent-host|Agent host]] - the Project note.
 - [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] - the exemption whose bounds this operates within.
+- [[GDR-KI-ARCADIA-005-the-roadmap-model|GDR-KI-ARCADIA-005]] - the roadmap model the writing-checkout rule serves.
+- [[ADR-TECHNE-003-techne-implementation-ownership|ADR-TECHNE-003]] - the harness and CLI ownership split.

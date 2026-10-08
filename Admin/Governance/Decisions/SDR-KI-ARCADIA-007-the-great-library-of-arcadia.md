@@ -74,5 +74,5 @@ Domain knowledge that belongs to a specific context (a client, a project, a tool
 - [SDR-KI-ARCADIA-002: The Home of Knowledge](SDR-KI-ARCADIA-002-the-home-of-knowledge.md)
 - [SDR-KI-ARCADIA-003: The Governance of an Island](SDR-KI-ARCADIA-003-the-governance-of-an-island.md)
 - [SDR-KI-ARCADIA-005: Territories, Archipelagos, and the Constitutional Layer](SDR-KI-ARCADIA-005-territories-archipelagos-and-the-constitutional-layer.md)
-- [Great Library of Arcadia](../../../Pillars/Philosophy/Realisation/Arcadia/Great%20Library%20of%20Arcadia/Great%20Library%20of%20Arcadia.md)
-- [Pillars](../../../Pillars/Pillars.md)
+- Great Library of Arcadia - the Pillars note of that name.
+- Pillars - the Pillars note of that name.

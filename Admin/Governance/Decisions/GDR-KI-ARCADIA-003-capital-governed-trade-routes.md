@@ -13,11 +13,7 @@ decision_depends_on: ['SDR-KI-ARCADIA-005']
 
 ## Context
 
-[[Admin/Governance/Charter|Charter]] and [[Known Lands]] already made Arcadia the Capital of the Knowledge Islands territory. Trade routes, however, were declared pairwise: each sender's export and each receiver's matching import lived in that repository's own `.ki.toml`. Standing knowledge-intake grants and their subtypes were declared the same way, so the receiver owned the subtype.
-
-On 2026-10-05 an inventory of 41 registered repositories found 57 partner-route entries across 21 KI repositories. Of 78 typed export directions, one had no matching import, so the territory's actual route policy existed only as the sum of 21 local tables. Nothing checked those tables against the territory's governance or its member inventory.
-
-Kris Brown approved the change on 2026-10-06 in [[KI-ARCADIA-GOV-016-territorial-classification-and-exchange|KI-ARCADIA-GOV-016]], and asked for it to be made in one step, with no staged or legacy-compatible phase.
+Arcadia is the Capital of the Knowledge Islands territory, as its Charter and Known Lands declare. A territory's trade routes, standing knowledge-intake grants and knowledge subtypes need one authoritative declaration that can be checked against the territory's governance and member inventory. Pairwise route tables in each repository's own `.ki.toml` cannot provide that: the territory's policy would exist only as the sum of the local tables, and a sender's export can lack its matching import.
 
 ## Decision
 
@@ -34,13 +30,10 @@ Kris Brown approved the change on 2026-10-06 in [[KI-ARCADIA-GOV-016-territorial
 ## Consequences
 
 - Arcadia's `.ki.toml` carries the Knowledge Islands member list and its trade policy. Changing either follows the Enactment Process.
-- The first policy reproduced the previously effective route set and added one direction, `tools-techne` to `homebrew-tap` for `work`, which the owner activated.
 - The other territories (personal, HNR, Legal, Equal Remedy, TechMedix and Valle Armonia) each declare their own Capital and member list. They hold no trade policy until their owners adopt one.
-- The harness `ki-repo` and `ki-trades` standards (KI-HARNESS-GOV-122) and the `ki` command-line tool (KI-TOOL-CLI-104) implement the model. Releases before that implementation do not understand the new tables.
-- An Agora, the registry and a Paperclip company still confer no membership or route authority.
+- The harness `ki-repo` and `ki-trades` standards (KI-HARNESS-GOV-122) and the `ki` command-line tool (KI-TOOL-CLI-104) implement the model.
+- An Agora, the registry and a Paperclip company confer no membership or route authority.
 
 ## References
 
-- [[KI-ARCADIA-GOV-016-territorial-classification-and-exchange|KI-ARCADIA-GOV-016]]
 - [[SDR-KI-ARCADIA-005-territories-archipelagos-and-the-constitutional-layer|SDR-KI-ARCADIA-005]]
-- [[Admin/Governance/Charter|Charter]] and [[Known Lands]]

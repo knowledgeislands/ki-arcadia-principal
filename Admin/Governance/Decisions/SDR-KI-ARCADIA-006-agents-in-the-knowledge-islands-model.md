@@ -80,6 +80,6 @@ An AI agent operates as a Citizen when it is acting under a skill prompt that gr
 - [SDR-KI-ARCADIA-001: Knowledge Islands - The Strategy](SDR-KI-ARCADIA-001-knowledge-islands-the-strategy.md)
 - [SDR-KI-ARCADIA-003: The Governance of an Island](SDR-KI-ARCADIA-003-the-governance-of-an-island.md)
 - [SDR-KI-ARCADIA-005: Territories, Archipelagos, and the Constitutional Layer](SDR-KI-ARCADIA-005-territories-archipelagos-and-the-constitutional-layer.md)
-- [Agents - Concept](../../../Pillars/Philosophy/Introduction/Concept/Agents/Agents.md)
-- [Who Acts on the Island](../../../Pillars/Philosophy/Model/Agents/Who%20Acts%20on%20the%20Island.md)
-- [Agentic AI](../../../Pillars/Philosophy/Model/Agents/Agentic%20AI/Agentic%20AI.md)
+- Agents - Concept - the Pillars note of that name.
+- Who Acts on the Island - the Pillars note of that name.
+- Agentic AI - the Pillars note of that name.

@@ -19,7 +19,7 @@ Technology investigations may compare direct use, configuration, adaptation, ups
 
 ## Decision
 
-Arcadia governs KI-specific technology investigations as finite, reviewable work under the [[Technology Investigation Programme]]. Each investigation starts with a concrete question and boundary, compares candidates and a baseline against a common scenario, retains reproducible evidence, and ends with a recommendation, uncertainty and review trigger. Evidence covers current primary sources, exact versions and configuration, observed normal and failure behaviour, licensing, portability, operating effort, cost and exit cost.
+Arcadia governs KI-specific technology investigations as finite, reviewable work under the Technology Investigation Programme. Each investigation starts with a concrete question and boundary, compares candidates and a baseline against a common scenario, retains reproducible evidence, and ends with a recommendation, uncertainty and review trigger. Evidence covers current primary sources, exact versions and configuration, observed normal and failure behaviour, licensing, portability, operating effort, cost and exit cost.
 
 Arcadia owns the local evidence, applicability judgment, recommendation and Technology Radar posture. A separately governed repository may own a reusable evaluation mechanism, adapter or conformance capability. Cross-repository transfer follows the declared trade process. An investigation does not automatically endorse a candidate, change the Radar or create a recurring schedule.
 

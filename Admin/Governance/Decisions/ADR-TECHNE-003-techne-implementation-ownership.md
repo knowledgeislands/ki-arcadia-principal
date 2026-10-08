@@ -13,11 +13,11 @@ decision_depends_on: [GDR-TECHNE-001, ADR-TECHNE-001, ADR-TECHNE-002]
 
 ## Context
 
-Arcadia defines the engineering architecture for personal controllers and execution-fabric operators, but a knowledge base is not an appropriate long-term home for runnable services, installation artefacts, deployment resources or provider adapters. The initial Kubernetes controller proof therefore required an independently governed implementation home.
+Arcadia defines the engineering architecture for personal controllers and execution-fabric operators, but a knowledge base is not an appropriate long-term home for runnable services, installation artefacts, deployment resources or provider adapters. Implementation therefore needs an independently governed home.
 
-Techne originally assigned controller, operator and release implementation to one `ki-techne-harness` monorepo while product boundaries were still emerging. Accepted implementation evidence now establishes two independently versioned products: the runnable controller and execution-fabric harness, and the `techne` operator interface. Coupling their releases would make an operator-tool update depend on unrelated harness application or image changes.
+Two independently versioned products exist: the runnable controller and execution-fabric harness, and the `techne` operator interface. Coupling their releases would make an operator-tool update depend on unrelated harness application or image changes.
 
-The first agent host fixed one person's single host into both repositories: its name, tags, stack, parameters, profiles, account and region were literals in the harness scripts and the CLI, and the CLI called AWS directly. One person may hold more than one agent host, of more than one kind and on more than one provider, so each repository needs a model that separates what the harness defines from what a person configures and from the infrastructure it lands on.
+One person may hold more than one agent host, of more than one kind and on more than one provider, so the repositories need a model that separates what the harness defines, what a person configures and the infrastructure a host lands on.
 
 ## Decision
 
@@ -56,7 +56,7 @@ Arcadia retains authority over engineering meaning, roles, invariants and decisi
 - Live agent-host authority is governed separately under the Techne Programme Hold; this record grants none.
 - Persona identity, governed work, credentials, canonical execution evidence and accepted portable specifications remain outside both implementation repositories unless another governing decision assigns them.
 
-Arcadia holds the only live copy of this decision record. The copy in the retired and archived `knowledgeislands/ki-techne-principal` is historical evidence at its last revision there, not an independent authority. Original source evidence remains in Git at `b25e9c950fd87715d12f76b69bb2079c3a4fc054`.
+Arcadia holds the only live copy of this decision record.
 
 ## References
 
