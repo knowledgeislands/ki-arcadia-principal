@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: mac-studio-bootstrap
 state: active
 created_at: 2026-10-08T08:45:00Z
-updated_at: 2026-10-08T19:22:00Z
+updated_at: 2026-10-08T20:00:52Z
 ---
 
 # mac-studio-bootstrap
@@ -18,7 +18,7 @@ Established over SSH on 2026-10-08: the Mac Studio is `sol` on the tailnet (`100
 
 Password-free installs over SSH as of 17:03 CEST (Techne decisions log, Decision 16): Homebrew 7.0.8 is present with 8 taps, and `knowledgeislands/tap` and the other 7 taps are untrusted. chezmoi is initialised with a clean source at `~/.local/share/chezmoi`. The `op` CLI and 1Password.app are present, but 1Password is not signed in and its CLI integration is off. `rig` 0.4.0, `ki` 0.9.0 and `mgit` 0.16.0 are installed. `mas` is missing, so `rig apply --dry-run` fails preflight and there is no full Rig plan yet; read-only `rig status` shows 59 of 225 entries needing attention. A partial `chezmoi diff` has been reviewed as a summary only: it leaves out the four 1Password-backed targets, which cannot render until `op` works and chezmoi has written its `op_cache` helper, and chezmoi asks for `chezmoi init` because its config template has changed. Nothing needing a password, sudo, 1Password, `chezmoi apply`, `rig apply` or a Tailscale change has been run.
 
-Remote agent use and administration are exempt from the Techne Programme Hold under [KI-ARCADIA-GOV-033](../../Streams/Roadmap/KI-ARCADIA-GOV-033-exempt-the-mac-studio-as-a-remote-agent-host.md), still awaiting Kris's review. Each remaining step runs only once Kris approves it.
+Remote agent use and administration are exempt from the Techne Programme Hold under [KI-ARCADIA-GOV-033](../../Streams/Roadmap/KI-ARCADIA-GOV-033-exempt-the-mac-studio-as-a-remote-agent-host.md), which Kris accepted as done on 2026-10-08. Kris has approved tap trust for `knowledgeislands/tap`, installing `mas` and the Rig dry run over SSH (mac-studio-bootstrap decisions log, Decision 3); that work is in progress in another agent, and its results are not yet recorded here. Each later step runs only once Kris approves it.
 
 **Remaining bootstrap runbook.**
 
@@ -55,10 +55,10 @@ The Project note [mac-studio-bootstrap](../../Streams/Projects/mac-studio-bootst
 
 ## Open questions
 
-- Rig declares the Tailscale GUI app for every machine on the `default` profile. Replacing it with `tailscaled` on the Mac Studio needs a chezmoi Rig declaration change (a per-machine exception or a `tailscale` formula entry) before step 12; a chezmoi roadmap record for the `sol` `tailscale-app` exception is being captured and has no identifier yet.
+- Rig declares the Tailscale GUI app for every machine on the `default` profile. Replacing it with `tailscaled` on the Mac Studio needs a chezmoi Rig declaration change (a per-machine exception or a `tailscale` formula entry) before step 12; the chezmoi roadmap record for the `sol` exception is DOTFILES-UE-075 (chezmoi `docs/roadmap/DOTFILES-UE-075-sol-tailscale-daemon-exception.md`), still unadopted, and Rig has no per-machine mechanism for it yet.
 - Whether the Mac Studio has a GitHub-accepted SSH key, or uses the 1Password SSH agent, which would add on-screen approvals to step 11.
 - Whether Kris wants a fallback route for step 12, since it briefly cuts the tailnet path.
 
 ## Next step
 
-Once Kris has reviewed KI-ARCADIA-GOV-033 and says to proceed, walk Kris through the remaining sequence in order: tap trust; `brew install mas` and the full `rig apply --dry-run`; 1Password sign-in and CLI integration over Screen Sharing; `chezmoi init`; full `chezmoi diff` review; `chezmoi apply`; `rig apply`; `ki bootstrap`; `ki doctor`. These are runbook steps 1 to 9. Update this checkpoint after each step.
+Fold in the other agent's results for runbook steps 1 and 2 (tap trust, `brew install mas` and the full `rig apply --dry-run`), then walk Kris through the remaining sequence in order: 1Password sign-in and CLI integration over Screen Sharing; `chezmoi init`; full `chezmoi diff` review; `chezmoi apply`; `rig apply`; `ki bootstrap`; `ki doctor`. These are runbook steps 3 to 9. Update this checkpoint after each step.
