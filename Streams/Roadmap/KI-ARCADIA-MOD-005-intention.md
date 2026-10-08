@@ -9,14 +9,14 @@ component: model
 tags:
   - card/proposal
   - topic/knowledge-islands
-status: ready
+status: in-progress
 priority: medium
-horizon: next
+horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-04-27T19:18:58Z
-updated_at: 2026-10-07T20:35:50Z
+updated_at: 2026-10-08T08:45:38Z
 author: Written with Claude
 ---
 
