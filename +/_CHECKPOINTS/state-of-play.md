@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: state-of-play
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-08T13:40:00Z
+updated_at: 2026-10-08T19:22:00Z
 ---
 
 # state-of-play
@@ -45,6 +45,7 @@ Rules live with their durable owners: the roadmap model in GDR-KI-ARCADIA-005 an
 - Delivered and awaiting-review records count as done; obsolete or ownerless records are cancelled; both are pruned once verified.
 - Releases are on demand; the next is one combined tools-ki release.
 - Linear and TickTick are not raised in this thread.
+- The [mac-studio-bootstrap](../../Streams/Projects/mac-studio-bootstrap.md) Project lives under the Rig Initiative; Kris settled this on 2026-10-08.
 
 ## Files touched
 

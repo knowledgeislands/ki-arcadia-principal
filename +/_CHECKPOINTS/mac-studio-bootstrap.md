@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: mac-studio-bootstrap
 state: active
 created_at: 2026-10-08T08:45:00Z
-updated_at: 2026-10-08T15:10:00Z
+updated_at: 2026-10-08T19:22:00Z
 ---
 
 # mac-studio-bootstrap
@@ -45,7 +45,7 @@ Optionally, on screen, apply any pending macOS updates and the newer Command Lin
 ## Decisions made
 
 - The master thread `state-of-play` owns cross-project priorities, releases and decisions; this thread works only the Mac Studio.
-- The Project sits in Rig: the Mac Studio is a workstation. Its use as a remote agent host is an exemption from the hold under KI-ARCADIA-GOV-033 and GDR-KI-ARCADIA-004, treated like the agent host.
+- The Project sits in Rig: the Mac Studio is a workstation. Settled: Kris confirmed the Rig home on 2026-10-08 (gov-020 decisions log, Decision 3). Its use as a remote agent host is an exemption from the hold under KI-ARCADIA-GOV-033 and GDR-KI-ARCADIA-004, treated like the agent host.
 - Remote reachability over Tailscale is the top priority (Techne decisions log, Decision 14); the runbook is prepared first and nothing on the Mac Studio changes until Kris says so (Decision 15).
 - Kris approved password-free installs over SSH on `sol`: the tap tools and the Rig and chezmoi previews, with no sudo, 1Password, `chezmoi apply`, `rig apply` or Tailscale change (Techne decisions log, Decision 16).
 
