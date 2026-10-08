@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: chezmoi
 state: active
 created_at: 2026-10-08T08:40:00Z
-updated_at: 2026-10-08T15:30:00Z
+updated_at: 2026-10-08T19:30:00Z
 ---
 
 # chezmoi
@@ -18,7 +18,8 @@ Work the open DOTFILES-UE records in the chezmoi source (`~/.local/share/chezmoi
 - Records owned by other threads: [DOTFILES-UE-073](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-073-cheztoi-host-profile.md) (Next) and [DOTFILES-UE-074](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-074-host-detached-delegation.md) (triage) belong to [agent-host](../../Streams/Projects/agent-host/agent-host.md) and the `techne` thread; [DOTFILES-UE-035](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-035-install-whatsapp-spool-refresh.md) (Hold) belongs to [knowledge-acquisition](knowledge-acquisition.md).
 - `retire-bg` (gov-020) finished: `claude-bg` is retired and survives only in `.chezmoiremove` and DOTFILES-UE-074 prose. A background agent pushed this thread's earlier commits with its own fixes; the chezmoi audit and tests pass.
 - `~/.config/ki/config.toml` now verifies against source, so that drift is closed.
-- The source is two commits ahead of `origin/main` (DOTFILES-UE-075, Sol Tailscale daemon exception, from the agent-host side) and carries an uncommitted CodexBar CLI change in `private_10-applications.toml`. Neither belongs to this thread.
+- The chezmoi source is clean and four commits ahead of `origin/main` (DOTFILES-UE-075 capture, Sol host keys, CodexBar CLI ownership); audit, tests and `rig doctor` pass. Pushing waits on Kris.
+- DOTFILES-UE-072 is held until TECHNE-TOOLS-OPS-014 ships, then likely cancelled (Decision 5).
 - The three Sol (`100.90.130.74`) host keys are adopted into the `known_hosts` source (Kris, 2026-10-08), committed locally and not pushed.
 
 ## Decisions made
@@ -32,9 +33,9 @@ Work the open DOTFILES-UE records in the chezmoi source (`~/.local/share/chezmoi
 
 ## Open questions
 
-- Who owns the CodexBar CLI change and the two unpushed DOTFILES-UE-075 commits?
+- Push the four local commits?
 - The Hold and Kris-gated records still wait on Kris through `state-of-play`.
 
 ## Next step
 
-Plan DOTFILES-UE-072 through `ki-plan` (the one record not gated on Kris), once Kris settles the ownership of the unpushed and uncommitted changes.
+Push once Kris approves; then the thread is idle until Kris picks a gated record (DOTFILES-UE-071, 027, 062 or 065).
