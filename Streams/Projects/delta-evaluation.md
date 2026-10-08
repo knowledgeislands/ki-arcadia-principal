@@ -7,7 +7,7 @@ initiative: techne
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-07T19:00:00Z
+updated: 2026-10-08T13:51:00Z
 author: Written with Claude
 ---
 
@@ -34,3 +34,7 @@ This Project sits in [[Initiatives/techne|Techne]], beside [[paperclip-bootstrap
 - Is a trial worth running now, given the [[Techne Programme Hold]] on remote agent execution? Delta's hosted threads and server-side storage need checking against that policy before any trial; [[agent-host]] tracks the hold prerequisites.
 - Which non-sensitive test repository and bounded delivery would exercise the criteria without exposing private content?
 - Should the assessment be promoted into `Resources` as tool reference, or does it only become durable as part of an adoption or rejection decision? The original loose assessment, `+/delta-paperclip-assessment-2026-10-02.md`, is retained in Git.
+
+### Close-out assessment
+
+The assessment of Delta is written, in these Notes, but the Outcome's test is not met: Kris has not yet answered whether Delta earns a trial, and the assessment has no durable home. The decision is captured as a triage record in Arcadia, so the Project stays open until it is taken.

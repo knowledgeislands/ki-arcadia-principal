@@ -7,7 +7,7 @@ initiative: platform-foundations
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-07T19:00:00Z
+updated: 2026-10-08T13:51:00Z
 author: Written with Claude
 ---
 
@@ -25,4 +25,7 @@ This Project sits in [[platform-foundations|Platform foundations]].
 
 - [[GDR-KI-ARCADIA-005-the-roadmap-model|GDR-KI-ARCADIA-005]] records the model and its refinements, citing the design papers filed beside it. Kris approved the model, every migration proposal and the rollout's carry-through on 2026-10-07.
 - Links point upwards only: a record names its Project, a Project names its Initiative, and the notes list neither records nor Projects. `ki` produces the views.
-- The remaining step is for `ki` to read the new fields; the checker then enforces the model once its migration tolerance window closes.
+
+### Close-out assessment
+
+The Outcome is delivered. Every Knowledge Islands repository records work under the model, `ki` reads its fields and builds the Project and Initiative views from the registry, and the migration tolerance window has closed, so the roadmap checker now fails retired shapes. A few residual shapes still only warn, by design of the standard rather than as unfinished work. No follow-up is needed; refinements to the model are standards upkeep under [[platform-foundations|Platform foundations]]. The Project awaits Kris's close decision.

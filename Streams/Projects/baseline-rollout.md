@@ -7,7 +7,7 @@ initiative: platform-foundations
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-07T19:00:00Z
+updated: 2026-10-08T13:51:00Z
 author: Written with Claude
 ---
 
@@ -28,3 +28,7 @@ This Project sits in [[platform-foundations|Platform foundations]]. The move of 
 - The commit-gate work must preserve the supported boundary install.
 - An estate audit did not finish within five minutes on 2026-10-07, so the gate needs a run that completes before it can be judged.
 - `tools-ki` could add a terminal Granola disposition for meetings dropped without harvest. The ledger has none, so the dropped 2026-10-05 Alec catch-up is recorded `harvested-locally`. Kris has not decided whether to capture it in `tools-ki` or leave it.
+
+### Close-out assessment
+
+Nothing has been delivered against the Outcome: the Project has carried no work since it was registered, and the estate audit has never run to completion, so the gap is unmeasured. The Outcome still stands. The follow-up is captured as a triage audit in Arcadia that measures the baseline and records each gap in its owning repository, so the Project stays open.

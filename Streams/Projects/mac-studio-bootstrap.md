@@ -7,7 +7,7 @@ initiative: rig
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-08T08:45:00Z
+updated: 2026-10-08T13:51:00Z
 author: Written with Claude
 ---
 
@@ -26,3 +26,7 @@ This Project sits in [[rig|Rig]], because the Mac Studio is a workstation. [[age
 - The work is attended: it runs on the Mac Studio itself, with Kris signing in to 1Password, the Mac App Store, GitHub and Claude.
 - The thread's checkpoint is [mac-studio-bootstrap](../../+/_CHECKPOINTS/mac-studio-bootstrap.md); its first steps assume nothing is checked out on the Mac Studio yet.
 - Anything the bootstrap finds missing or wrong in the chezmoi source, Rig declarations or `ki` install guidance becomes a record in the owning repository.
+
+### Close-out assessment
+
+Nothing has been delivered yet: the Project was registered without a work record. The bootstrap itself is captured as a triage record in Arcadia, so the Project stays open until it is done.
