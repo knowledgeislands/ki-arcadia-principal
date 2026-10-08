@@ -7,12 +7,13 @@ kind: decide
 purpose: governance
 project: island-model-and-tending
 component: operations
-status: triage
+horizon: now
+status: ready
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-07T07:44:25Z
-updated_at: 2026-10-07T14:08:03Z
+updated_at: 2026-10-08T19:25:00Z
 ---
 
 # Review the Enactment Threshold
@@ -37,11 +38,50 @@ Evidence from 2026-10-07:
 - In scope: what counts as substantive; whether an explicit owner instruction for a bounded change can stand in for a record; where the line falls between canonical zones and repository orientation files such as root `AGENTS.md`; and when related changes should share one record rather than open several.
 - Out of scope: changing the threshold before this record is adopted and planned; the Enactment lifecycle itself; other repositories' change-management rules.
 
+## Current state
+
+Kris agreed the outcome on 2026-10-08 (gov-020 decisions log, Decision 3), and that agreement approves this record for delivery and acceptance:
+
+- An explicit owner instruction for a bounded change stands in for an Enactment record.
+- Related changes share one record.
+- A record is needed only for new or reworked content in `Admin`, `Pillars` or `Resources`.
+
+Trivial typo and formatting fixes, `Calendar/` entries and `+/` triage stay exempt. The [[Admin/Operations/Processes/Enactment Process|Enactment Process]] note still says "When in doubt, prefer a proposal", and root `AGENTS.md` still gates every "substantive" change.
+
+`ki-decision-records` reserves a new Decision Record for a genuinely independent decision and has the owning record amended in place. The threshold refines the Enactment gate that SDR-KI-ARCADIA-004 owns, so that record is amended rather than a new one added.
+
+## Steps
+
+1. Rewrite the in-scope and out-of-scope bullets of the local Enactment Process note to state the threshold, replacing "When in doubt, prefer a proposal".
+2. Rewrite root `AGENTS.md` "Changing canonical content" to the same threshold.
+3. Amend SDR-KI-ARCADIA-004 in place so its Decision and Consequences carry the threshold.
+4. Run the repository's Markdown gate and the Streams, Decision Record and principal audits.
+
+## Files touched
+
+- `Admin/Operations/Processes/Enactment Process.md`
+- `AGENTS.md`
+- `Admin/Governance/Decisions/SDR-KI-ARCADIA-004-the-enactment-process.md`
+- This record
+
+## Verify
+
+- The three documents state the same three rules and the same exemptions, and none still says "When in doubt, prefer a proposal".
+- `ki repo audit` passes for `ki-repo-kb-streams`, `ki-decision-records` and `ki-repo-kb-principal`, and the commit hooks pass.
+
+## Dependencies / blocks
+
+None.
+
 ## Discussion
 
 ### Capture
 
-Captured as Triage on Kris's instruction. No plan yet.
+Captured as Triage on Kris's instruction.
+
+### Adoption and plan
+
+Adopted to Now as `decide` and planned to Ready on 2026-10-08 under Kris's agreement of the outcome (gov-020 decisions log, Decision 3).
 
 ## Governance
 
