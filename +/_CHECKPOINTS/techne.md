@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: techne
 state: active
 created_at: 2026-10-07T09:05:00Z
-updated_at: 2026-10-08T09:10:00Z
+updated_at: 2026-10-08T13:05:51Z
 ---
 
 # techne
@@ -18,7 +18,7 @@ The thread moves agent work off the laptop onto the one agent host the [Techne P
 
 The host was rebuilt on 2026-10-07 by a stack-only delete that kept the GitHub token; workspace setup re-converged and status shows 21 repositories, none at risk. The GitHub token carries a 90-day expiry. Claude and Codex are not yet signed in on the host.
 
-GDR-KI-ARCADIA-004 words the exemption by role with no fixed review date. Every ODR-KI-ARCADIA-001 rollout record is captured in its owning repository. The workstation design is decided (Decision 7) and recorded in ADR-KI-ARCADIA-003; its rollout is captured in `ki-techne-harness` and the chezmoi source, with the Rig profile folded into TECHNE-TOOLS-OPS-014 and the pilot pair, TECHNE-TOOLS-OPS-015 and DOTFILES-UE-073, selected behind the durability pilot TECHNE-TOOLS-OPS-013 and stage 1. TECHNE-TOOLS-OPS-013 is delivered and awaiting Kris's review, with the neutral `host.id` and guide fixes (P1, P2). Kris approved generic-review proposals P4 to P9 on 2026-10-08 (Decision 11), with zsh as the default shell: KI-ARCADIA-GOV-031 amends ODR-KI-ARCADIA-001 and ADR-KI-ARCADIA-003 to be person-neutral and target-neutral and awaits Kris's review; TECHNE-TOOLS-OPS-014, TECHNE-TOOLS-OPS-015 and TECHNE-TOOLS-OPS-017 are reshaped, TECHNE-TOOLS-OPS-019 is captured in triage for person-neutral recipe defaults, DOTFILES-UE-072 is narrowed to Kris's personal wording and DOTFILES-UE-073 is OS-aware. P10 to P12 are undecided and P13 is noted. Both design loops' papers are deleted, their outcomes consolidated in ODR-KI-ARCADIA-001 and ADR-KI-ARCADIA-003. No `techne` agents are running.
+GDR-KI-ARCADIA-004 words the exemption by role with no fixed review date. Every ODR-KI-ARCADIA-001 rollout record is captured in its owning repository. The workstation design is decided (Decision 7) and recorded in ADR-KI-ARCADIA-003; its rollout is captured in `ki-techne-harness` and the chezmoi source, with the Rig profile folded into TECHNE-TOOLS-OPS-014 and the pilot pair, TECHNE-TOOLS-OPS-015 and DOTFILES-UE-073, selected behind stage 1 in TECHNE-TOOLS-OPS-014. The durability pilot TECHNE-TOOLS-OPS-013 (status contract, stop warning, guarded rebuild and withdraw, neutral `host.id`) was accepted and pruned on 2026-10-08 (Decision 12); it has not yet run against the live host. Kris approved generic-review proposals P4 to P9 on 2026-10-08 (Decision 11), with zsh as the default shell: KI-ARCADIA-GOV-031 made ODR-KI-ARCADIA-001 and ADR-KI-ARCADIA-003 person-neutral and target-neutral, dropped the review date from the expiries, and was accepted and pruned on 2026-10-08 (Decision 12); TECHNE-TOOLS-OPS-014, TECHNE-TOOLS-OPS-015 and TECHNE-TOOLS-OPS-017 are reshaped, TECHNE-TOOLS-OPS-019 is captured in triage for person-neutral recipe defaults, DOTFILES-UE-072 is narrowed to Kris's personal wording and DOTFILES-UE-073 is OS-aware. P10 to P12 are captured in triage (Decision 12): TECHNE-TOOLS-OPS-020 splits the operator guide, and TECHNE-TOOLS-OPS-021 (with P12 folded in) and TECHNE-TOOL-CLI-007 in `tools-techne` pair an owned-host provider and adapter. P13, the Techne Programme Hold decision any owned or second person's host needs before it runs agents, is for the `state-of-play` thread. Both design loops' papers are deleted, their outcomes consolidated in ODR-KI-ARCADIA-001 and ADR-KI-ARCADIA-003. No `techne` agents are running.
 
 Thread rules:
 
@@ -40,12 +40,12 @@ Thread rules:
 
 ## Files touched
 
-ODR-KI-ARCADIA-001, ADR-KI-ARCADIA-003, KI-ARCADIA-GOV-031, the agent-host Project note and this checkpoint. Outside Arcadia: TECHNE-TOOLS-OPS-013 to TECHNE-TOOLS-OPS-019 in `ki-techne-harness`, and DOTFILES-UE-072 to DOTFILES-UE-074 in the chezmoi source. No remote state changed beyond pushes.
+ODR-KI-ARCADIA-001, ADR-KI-ARCADIA-003, KI-ARCADIA-GOV-031 (pruned), the agent-host Project note and this checkpoint. Outside Arcadia: TECHNE-TOOLS-OPS-013 (pruned) to TECHNE-TOOLS-OPS-021 in `ki-techne-harness`, TECHNE-TOOL-CLI-006 and TECHNE-TOOL-CLI-007 in `tools-techne`, and DOTFILES-UE-072 to DOTFILES-UE-074 in the chezmoi source. No remote state changed beyond pushes.
 
 ## Open questions
 
-None.
+- P13: whether an owned host or a second person's host gets its own exemption or a reshaped GDR-KI-ARCADIA-004; raised in `state-of-play`.
 
 ## Next step
 
-Kris signs Claude (and optionally Codex) in on the host, reviews TECHNE-TOOLS-OPS-013 and KI-ARCADIA-GOV-031, and decides P10 to P12; then TECHNE-TOOLS-OPS-014 is planned through `ki-plan`, followed by the workstation pilot pair and TECHNE-TOOLS-OPS-019.
+Kris signs Claude (and optionally Codex) in on the host; then TECHNE-TOOLS-OPS-014 is planned through `ki-plan`, followed by the workstation pilot pair and TECHNE-TOOLS-OPS-019.
