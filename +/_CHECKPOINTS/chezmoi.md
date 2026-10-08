@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: chezmoi
 state: active
 created_at: 2026-10-08T08:40:00Z
-updated_at: 2026-10-08T15:20:00Z
+updated_at: 2026-10-08T15:30:00Z
 ---
 
 # chezmoi
@@ -19,7 +19,7 @@ Work the open DOTFILES-UE records in the chezmoi source (`~/.local/share/chezmoi
 - `retire-bg` (gov-020) finished: `claude-bg` is retired and survives only in `.chezmoiremove` and DOTFILES-UE-074 prose. A background agent pushed this thread's earlier commits with its own fixes; the chezmoi audit and tests pass.
 - `~/.config/ki/config.toml` now verifies against source, so that drift is closed.
 - The source is two commits ahead of `origin/main` (DOTFILES-UE-075, Sol Tailscale daemon exception, from the agent-host side) and carries an uncommitted CodexBar CLI change in `private_10-applications.toml`. Neither belongs to this thread.
-- Target drift: `~/.ssh/known_hosts` holds three Sol (`100.90.130.74`) host keys absent from source; a blind `chezmoi apply` would drop them.
+- The three Sol (`100.90.130.74`) host keys are adopted into the `known_hosts` source (Kris, 2026-10-08), committed locally and not pushed.
 
 ## Decisions made
 
@@ -28,14 +28,13 @@ Work the open DOTFILES-UE records in the chezmoi source (`~/.local/share/chezmoi
 
 ## Files touched
 
-None in this thread.
+- `private_dot_ssh/private_known_hosts` in the chezmoi source.
 
 ## Open questions
 
 - Who owns the CodexBar CLI change and the two unpushed DOTFILES-UE-075 commits?
-- Should the Sol host keys be adopted into the `known_hosts` source?
 - The Hold and Kris-gated records still wait on Kris through `state-of-play`.
 
 ## Next step
 
-Plan DOTFILES-UE-072 through `ki-plan` (the one record not gated on Kris), once Kris settles the ownership of the unpushed and uncommitted changes and the known_hosts drift.
+Plan DOTFILES-UE-072 through `ki-plan` (the one record not gated on Kris), once Kris settles the ownership of the unpushed and uncommitted changes.
