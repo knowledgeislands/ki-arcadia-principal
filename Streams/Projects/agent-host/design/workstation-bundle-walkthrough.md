@@ -1,6 +1,6 @@
 ---
 note_type: streams/design
-updated: 2026-10-09T17:00:00Z
+updated: 2026-10-09T17:30:00Z
 author: Written with Claude
 ---
 
@@ -9,6 +9,8 @@ author: Written with Claude
 **For:** Kris Brown - **Project:** [[agent-host|Agent host]] - **Date:** 2026-10-09 - **Authority:** Decision 24(a) and 24(b) of the Techne run
 
 A reading document. It explains what the agent host receives from Kris's Mac, how Kris controls it, and where the "what to share with this host" manifest should live. It changes no record; the recommendation is for Kris to accept, amend or reject before DOTFILES-UE-073 and TECHNE-TOOLS-OPS-015 are approved.
+
+**Outcome:** Kris accepted the recommendation on 2026-10-09 (Decision 26(a) of the Techne run), including the chezmoi-native per-host manifest (one `chezmoi archive` call with `--override-data`, `scripts/cheztoi-render` as a thin wrapper) and the optional `target_host` field checked against `host.id`. DOTFILES-UE-073 and TECHNE-TOOLS-OPS-015 have been replanned to match and await Kris's approval.
 
 ---
 
