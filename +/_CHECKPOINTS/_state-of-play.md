@@ -54,16 +54,16 @@ Rules live with their durable owners: the roadmap model in GDR-KI-ARCADIA-005 an
 - Working material, machine-local and non-durable: `/Users/krisbrown/.local/state/ki/state-of-play/design/` and helper runs in `/Users/krisbrown/.local/state/ki/agents/gov-020/`.
 - Project and Initiative notes: [Projects](../../Streams/Projects/Projects.md) and [Initiatives](../../Streams/Initiatives/Initiatives.md).
 
-## Parked tangents
+## Open questions
 
-Side topics Kris raised in passing. Each one is noted so we can come back to it. When we do, it gets a home: a Project, a roadmap record, or nothing.
+Parked tangents, noted to come back to; each gets a home (Project, roadmap record or nothing) when picked up:
 
 - **2026-10-09: a clear state-of-play view of Projects and Initiatives.** Kris wants a tool that shows the state of play clearly, beyond the roadmap view. Related work: apps-observatory, the command-centre work in kit-hnr and kit-legal, and primary threads. The common thread is Kris's productivity workflows.
 - **2026-10-09: rotating claude-swap accounts.** Usage timers start only when an account is first used, so rotating early would run several accounts at the same time instead of waiting for each limit. Find out whether claude-swap can already rotate on a schedule.
 - **2026-10-09: GitHub-flavoured Markdown over Obsidian.** Kris now reads in Zed, GitHub and the observatory rather than Obsidian. Obsidian-only syntax does not render there: for example, the Release Cascade diagram embed `![[Release Cascade.svg]]` shows nothing in Zed's preview. Idea: change the standard gradually, starting with a frontmatter field that declares which flavour a note uses, rather than converting everything at once.
 - **2026-10-09: Review tags and the Admin conventions.** Do we still need the review tags? Review the Admin conventions and check the knowledge base structure is still in good order.
 
-## Open questions
+Other open questions:
 
 - **Trades hold, by 2026-10-14:** re-enable trades or renew the hold. HOLD-1 warns from 2026-10-15.
 - **Delta trial, on or after 2026-10-13:** yes or no, under [delta-evaluation](../../Streams/Projects/delta-evaluation.md).
