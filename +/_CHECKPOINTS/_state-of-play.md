@@ -79,6 +79,10 @@ Needs Kris:
 - **Specification review:** which repository first? `tools-ki` is suggested.
 - **kit-hnr:** map `[skills.ki-work-roadmap].areas` codes to titles.
 
+Parked:
+
+- 2026-10-09 - Marks are inconsistent across threads: master uses a dated "Mark:" bullet, while the agent-host and chezmoi threads use "Mark 1" and "Mark A" styles. Assess on 2026-10-10 against KI-HARNESS-GOV-169.
+
 ## Next step
 
 1. Read the `close-ki`, `close-other` and `capture-sweep` reports as each finishes; route anything left over to its Project thread and pull the affected primary checkouts.
