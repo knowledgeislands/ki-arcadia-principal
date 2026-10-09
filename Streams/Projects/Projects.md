@@ -1,6 +1,6 @@
 ---
 note_type: streams/index
-updated: 2026-10-08T08:45:00Z
+updated: 2026-10-09T14:45:00Z
 author: Written with Claude
 ---
 
@@ -71,6 +71,12 @@ Links point upwards only: a work record names its Project, and a Project names i
 ## Roadmap model
 
 [[roadmap-model]] moves the territory's work records onto the roadmap model - classification by kind, purpose, Project or Initiative and component in place of themes - and finishes when the roadmap checker enforces it.
+
+---
+
+## Secrets hygiene
+
+[[secrets-hygiene]] organises Kris's 1Password vaults by a clear layout and precedence, has chezmoi read secrets through one logical-name map from a dedicated `Rig` vault with a pre-apply reference check, and keeps it that way with a monthly triage. It sits under [[rig|Rig]] because those secrets are part of the workstation.
 
 ---
 
