@@ -7,7 +7,7 @@ initiative: techne
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-07T19:00:00Z
+updated: 2026-10-09T21:06:48Z
 author: Written with Claude
 ---
 
@@ -58,3 +58,4 @@ Each company has a naming theme, to be written into its home repository:
 - **Continuous operation.** Which companies justify it is open; repeat the VA cycle in TMX before assessing the rest.
 - **Permission-update defect.** The agent permission-update defect has no owner yet: chezmoi or the Paperclip fork.
 - **Deferred.** A shared-login broker and cloud policy are separate decisions, not prerequisites for VA.
+- **Cite the coordination rules.** The three local Paperclip agent instruction files could cite the coordination standard's rule table instead of restating its seven rules, so the agents cannot act on a diverged copy. Kept as an idea on 2026-10-09 in place of a cancelled harness work record.

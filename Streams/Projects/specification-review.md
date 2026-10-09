@@ -7,7 +7,7 @@ initiative: platform-foundations
 lifecycle: planned
 lead: Kris Brown
 target: null
-updated: 2026-10-07T19:00:00Z
+updated: 2026-10-09T21:06:48Z
 author: Written with Claude
 ---
 
@@ -41,3 +41,4 @@ This Project sits in [[platform-foundations|Platform foundations]]. Kris agreed 
 - **Open choice.** The review order, and how each outcome is recorded: a review note per repository, or a roadmap record in each owning repository. `tools-ki` holds the most files and is the most active, so it is the suggested start.
 - Run each review with `ki-specs` AUDIT first, so Kris reads findings rather than raw files.
 - The scope comes from section 4 of the state-of-play survey (`~/.local/state/claude-bg/gov-020/survey.report.md`) and decision 13 of the state-of-play design.
+- **Idea: KI Specifications consistency.** Give every tracked `ki-specifications` file a recorded authority class, align its KIP/KIS process documents with the documents the guides name as authority, and mark the Knowledge Package schema, templates and examples illustrative with a validation command that works, keeping the dormant pre-v1 posture. Kept as an idea on 2026-10-09 in place of a cancelled `ki-specifications` work record.
