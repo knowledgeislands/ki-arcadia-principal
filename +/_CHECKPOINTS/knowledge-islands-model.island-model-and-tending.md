@@ -4,7 +4,7 @@ thread: knowledge-islands-model.island-model-and-tending
 label: 'KI Model: island-model-and-tending'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-09T21:40:00Z
+updated_at: 2026-10-09T21:45:00Z
 ---
 
 # knowledge-islands-model.island-model-and-tending
@@ -15,7 +15,7 @@ Arcadia's current island-model and tending records are each delivered, handed to
 
 ## Current state
 
-- Active since the re-bootstrap at 22:30 BST on 2026-10-09; `ki-delegation` read at harness revision b03a5d55. Run `island-model-and-tending` (decisions log `~/.local/state/ki/agents/island-model-and-tending/decisions.md`) has two background agents: `apps-note` (Decision 2) and `checklist` (Decision 1, starts once `apps-note` is done).
+- Active since the re-bootstrap at 22:30 BST on 2026-10-09; `ki-delegation` read at harness revision b03a5d55. Run `island-model-and-tending` (decisions log `~/.local/state/ki/agents/island-model-and-tending/decisions.md`) has no agents running. `apps-note` (Decision 2) finished: the GitHub Apps note carries the 2026-10-07 proof and tap-guide pointer, and KI-ARCADIA-GOV-030 is closed and pruned. `checklist` (Decision 1) finished: the first full REVIEW pass fixed em dashes in 32 canonical notes and left 13 tagged findings for Kris in `~/.local/state/ki/agents/island-model-and-tending/checklist.report.md`.
 - KI-ARCADIA-MOD-005, KI-ARCADIA-OPS-004 and KI-ARCADIA-GOV-024 were delivered, closed and pruned earlier.
 - KI-ARCADIA-GOV-032 is done and pruned (the master's `close-ki` run, 2026-10-09). Its reference sweep found nothing left to fix across `~/workspaces` and the chezmoi source: nothing cited GDR-KI-ARCADIA-008, and every GDR-KI-ARCADIA-007 citation already meant Governing Technology Investigations. Decision 18's reference fix-up is complete.
 - [KI-ARCADIA-MOD-007](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-MOD-007-retire-runtime-specific-realisation-notes.md) (Next, draft, now names this Project) is the only open record here. Kris approves the goal; its disposition table still needs Kris's answer row by row.
@@ -42,7 +42,7 @@ None yet in this thread. Records live in `/Users/krisbrown/workspaces/kit/knowle
 
 ## Next step
 
-0. Read the `apps-note` and `checklist` reports; take Kris through the review findings by tag.
+0. Take Kris through the REVIEW findings by tag (DESC-DASH, TOML-TIDY, HOOK-1, CI-PIN, CLOSEOUT, INDEX-OVERVIEW, PLACEHOLDERS, ROOT-RESUME, DR-OVERLAP, DR-YAML, BUNX, NO-VERIFY-TASK); INDEX-OVERVIEW and PLACEHOLDERS follow KI-ARCADIA-MOD-007.
 1. Walk Kris through KI-ARCADIA-MOD-007's disposition table one note at a time, then plan it to ready and deliver it through `ki agent`.
 2. Take up the parked review-tags and Admin-conventions tidy-up (Decision 18) once Kris picks it up: capture it through `ki-next` or drop it.
 3. Before closing the Project, check the seven ChatGPT items against it.
