@@ -4,14 +4,14 @@ thread: rig.mac-studio-bootstrap
 label: 'Rig: mac-studio-bootstrap'
 state: active
 created_at: 2026-10-08T08:45:00Z
-updated_at: 2026-10-09T06:55:00Z
+updated_at: 2026-10-09T14:07:00Z
 ---
 
 # rig.mac-studio-bootstrap
 
 ## Objective
 
-Bring Kris's Mac Studio, unused for over a month, back to full estate capability so any thread can resume there, and make it a reliably reachable remote agent host ([mac-studio-bootstrap](../../Streams/Projects/mac-studio-bootstrap.md), Initiative [Rig](../../Streams/Initiatives/rig.md)). The thread is driven remotely over the tailnet from the laptop; from a browser the checkpoint is at `github.com/knowledgeislands/ki-arcadia-principal`, path `+/_CHECKPOINTS/mac-studio-bootstrap.md`. Kris is handing this checkpoint to the master thread `state-of-play` to reassess and perhaps redivide the work, so Open questions and Next step are written to stand alone.
+Bring Kris's Mac Studio, unused for over a month, back to full estate capability so any thread can resume there, and make it a reliably reachable remote agent host ([mac-studio-bootstrap](../../Streams/Projects/mac-studio-bootstrap.md), Initiative [Rig](../../Streams/Initiatives/rig.md)). The thread is driven remotely over the tailnet from the laptop; from a browser the checkpoint is at `github.com/knowledgeislands/ki-arcadia-principal`, path `+/_CHECKPOINTS/rig.mac-studio-bootstrap.md`. Kris is handing this checkpoint to the master thread `state-of-play` to reassess and perhaps redivide the work, so Open questions and Next step are written to stand alone.
 
 ## Current state
 
@@ -25,7 +25,7 @@ Bring Kris's Mac Studio, unused for over a month, back to full estate capability
 
 **Tailscale.** The GUI app stays, as a login item, for now. Its own start-on-login setting (`TailscaleStartOnLogin`) is off and its login helper is not loaded, so it probably will not reconnect after a restart. The in-app "Launch at login" toggle was unavailable; Kris switched Tailscale on in System Settings login items, but that does not change the app's own setting. Restart behaviour is untested. With FileVault on, any restart (macOS update, power loss) leaves sol locked and offline until Kris unlocks it in person, so any reboot needs Kris's approval and presence.
 
-**chezmoi.** sol's chezmoi source is at `423fae7` with a clean tree, fast-forwarded by Kris on screen (Decision 10). The laptop is ahead only by unpushed roadmap documents, which `.chezmoiignore` excludes, so both render the same targets. The non-secret part of the two-part apply (Decision 9) is done and verified: `chezmoi status` is empty for all 269 selected targets, all 55 `.chezmoiremove` deletions ran, sol's local VS Code settings were overwritten as approved, both run scripts finished, and a fresh login shell finds `brew`, `rig`, `ki` and `mgit` without errors. Still to do, by Kris in Terminal on sol's screen with 1Password unlocked, are the four 1Password-backed targets:
+**chezmoi.** sol's chezmoi source is at `423fae7` with a clean tree, fast-forwarded by Kris on screen (Decision 10). The laptop is now ahead of `origin/main` (`423fae7`) by unpushed commits. Most are roadmap documents, which `.chezmoiignore` excludes, but the rig.chezmoi thread's commits also change two rendered sources: the kit-mcp-gsuite 1Password reference (below) and `~/.claude/communication.md` (`5d6f43a`, `8ee4524`). The non-secret part of the two-part apply (Decision 9) is done and verified: `chezmoi status` is empty for all 269 selected targets, all 55 `.chezmoiremove` deletions ran, sol's local VS Code settings were overwritten as approved, both run scripts finished, and a fresh login shell finds `brew`, `rig`, `ki` and `mgit` without errors. Still to do, by Kris in Terminal on sol's screen with 1Password unlocked, are the four 1Password-backed targets:
 
 ```sh
 chezmoi diff ~/.claude.json "$HOME/Library/Application Support/Claude/claude_desktop_config.json" ~/.mcporter/mcporter.json ~/.codex/config.toml
@@ -34,6 +34,8 @@ chezmoi status
 ```
 
 `chezmoi status` should then be empty. sol's applied Rig config now carries the new `cli.codexbar.*` fields; if `rig status` on sol rejects them as an unknown field, the Homebrew `rig` on sol is older than the config.
+
+**1Password references.** The rig.chezmoi thread is reorganising the 1Password vaults ([DOTFILES-UE-077](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-077-reorganise-1password-vaults-safely.md), triage) and repoints references in `.chezmoidata/mcp-servers.yaml` as items move. So far only kit-mcp-gsuite has changed (`e62ec78`, then `9d76bbe` to the Rig vault). That server is declared for the `claude-desktop` and `mcporter` clients only, so of the four targets it changes `claude_desktop_config.json` and `~/.mcporter/mcporter.json`; `~/.claude.json` and `~/.codex/config.toml` are unaffected so far. sol's source at `423fae7` still holds the old reference. Kris should therefore apply the four targets only once the laptop and sol sources agree on the new references: after the rig.chezmoi thread's commits are pushed and sol's source is pulled on screen. Further DOTFILES-UE-077 repointing may reach the other two targets, so check for later reference changes before applying.
 
 **Rig plan.** `rig apply --dry-run` passes preflight (198 planned, 3 expected failures, 20 skipped). `rig status` shows the real change set, 47 of 225 entries: install 3 formulae, 18 casks (including nordvpn, displaylink, onedrive, zoom, slack, launchcontrol and processspy), 2 App Store apps (Actions, Telegram) and 4 other tools; 2 skills; 6 launchd jobs and 2 services; rewrite and restart the two mcporter services; change 4 macOS defaults; and rebuild the Dock. NordVPN stays in for now; Kris may drop it later. Rig never uninstalls software. Raw output: `sol-rig-dryrun-2.txt` in the run directory.
 
@@ -61,13 +63,12 @@ chezmoi status
 
 **Stale Project note.** [mac-studio-bootstrap](../../Streams/Projects/mac-studio-bootstrap.md) still says the work is attended-only and that the Mac Studio sits outside [agent-host](../../Streams/Projects/agent-host/agent-host.md); after KI-ARCADIA-GOV-033 that is out of date. It is unchanged.
 
-**Unpushed local commits** (pushing needs Kris's approval):
+**Unpushed local commits** (pushing needs Kris's approval; `tools-rig` has none, RIG-CORE-041 is pushed):
 
 | Repository | Commits |
 | --- | --- |
-| `ki-arcadia-principal` | `db4a4c6`, `24644eb` (this checkpoint), plus this update; also other threads' `7bcc855`, `78e195a`, `3ddf167`, `6b2fa47`, `e052df3`, `a2d9e12` |
-| chezmoi (`~/.local/share/chezmoi`) | `4812d81`, `ed3a669` (DOTFILES-UE-075 widened, DOTFILES-UE-076 captured), `42c3fcb` (DOTFILES-UE-075 adopted and planned) |
-| `tools-rig` | `ae9d68b`, `9383925` (RIG-CORE-041 captured) |
+| `ki-arcadia-principal` | This update only; the other unpushed commits belong to other threads |
+| chezmoi (`~/.local/share/chezmoi`) | `4812d81`, `ed3a669` (DOTFILES-UE-075 widened, DOTFILES-UE-076 captured), `42c3fcb` (DOTFILES-UE-075 adopted and planned); the other ten unpushed commits belong to the rig.chezmoi thread |
 
 ## Decisions made
 
@@ -95,9 +96,9 @@ This checkpoint, the Project note [mac-studio-bootstrap](../../Streams/Projects/
 - **A GitHub key sol can use over SSH.** sol's GitHub key lives in OneDrive, which SSH logins cannot read. Which key to give sol (for example one from the 1Password SSH agent, if that works outside the GUI, or a dedicated key outside OneDrive) is Kris's decision; it gates DOTFILES-UE-076 on sol.
 - **Tailscale after restart.** Kris needs, on sol's screen, to allow Tailscale in System Settings > General > Login Items & Extensions > Allow in the Background, then enable "Launch at login" in the Tailscale app, and approve a test restart with Kris present to confirm it reconnects after the FileVault unlock. Until then, assume a restart cuts off remote access.
 - **Stale Project note.** Update [mac-studio-bootstrap](../../Streams/Projects/mac-studio-bootstrap.md) to reflect KI-ARCADIA-GOV-033 (no longer attended-only; remote agent host under the exemption)? It is a Streams note, so it needs Kris's go-ahead.
-- **Pushing.** The unpushed commits listed above in three repositories need Kris's approval to push.
+- **Pushing.** The unpushed commits listed above in two repositories need Kris's approval to push.
 - **Later choices.** Whether to drop NordVPN; whether to trust any of the six other Homebrew taps; when to apply the Command Line Tools update; whether to swap Tailscale to `tailscaled`.
 
 ## Next step
 
-Kris applies the four 1Password-backed targets on sol's screen (commands under chezmoi above) and answers the DOTFILES-UE-075 questions, then approves its delivery. Deliver per-machine profiles before `rig apply` on sol, so sol gets the `studio` profile and its own Dock; Kris then runs `rig apply` on screen, followed by `ki bootstrap` and `ki doctor`. Meanwhile Kris can sign in to the App Store on sol and set Tailscale's background and login settings, and the master thread settles the work division above.
+Once the laptop and sol chezmoi sources agree on the new 1Password references, Kris applies the four 1Password-backed targets on sol's screen (commands under chezmoi above) and answers the DOTFILES-UE-075 questions, then approves its delivery. Deliver per-machine profiles before `rig apply` on sol, so sol gets the `studio` profile and its own Dock; Kris then runs `rig apply` on screen, followed by `ki bootstrap` and `ki doctor`. Meanwhile Kris can sign in to the App Store on sol and set Tailscale's background and login settings, and the master thread settles the work division above.
