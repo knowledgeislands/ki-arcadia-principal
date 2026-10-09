@@ -5,13 +5,12 @@ area: GOV
 title: Consolidate adopting Decision Records
 kind: deliver
 purpose: governance
-status: awaiting-review
-horizon: now
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: 703bb2a3af4acb561a54d8c1920109cdae473f2f
 created_at: 2026-10-08T13:49:15Z
-updated_at: 2026-10-09T15:48:23Z
+updated_at: 2026-10-09T21:07:28Z
 ---
 
 # Consolidate Adopting Decision Records
@@ -22,7 +21,7 @@ Arcadia holds one record for adopting Decision Records, so readers and citations
 
 ## Context
 
-The GOV-020 Decision Record scope rollout renumbered the former `GDR-TECHNE-001` into Arcadia as [[GDR-KI-ARCADIA-007-adopting-decision-records|GDR-KI-ARCADIA-007]]. Arcadia already held [[GDR-KI-ARCADIA-001-adopting-decision-records|GDR-KI-ARCADIA-001]], dated 2026-07-18, under the same title; GDR-KI-ARCADIA-007 is dated 2026-09-09. Both were kept unchanged as the rollout instructed.
+The GOV-020 Decision Record scope rollout renumbered the former `GDR-TECHNE-001` into Arcadia as GDR-KI-ARCADIA-007 (since folded into GDR-KI-ARCADIA-001, the serial now naming Governing Technology Investigations). Arcadia already held [[GDR-KI-ARCADIA-001-adopting-decision-records|GDR-KI-ARCADIA-001]], dated 2026-07-18, under the same title; GDR-KI-ARCADIA-007 is dated 2026-09-09. Both were kept unchanged as the rollout instructed.
 
 ## Boundary
 
@@ -90,6 +89,10 @@ This is the implementing agent's own check, not an independent review.
 ### Mini recap
 
 Arcadia holds one Decision Records adoption record, GDR-KI-ARCADIA-001, and its GDR series runs 001 to 007 without a gap.
+
+## Done
+
+Accepted 2026-10-09 by Kris Brown on the review packet above (state-of-play decisions log, Decisions 17 and 20), after the reference fix-up: a search of every Git checkout under `~/workspaces` and the chezmoi source found no citation of GDR-KI-ARCADIA-008 and no GDR-KI-ARCADIA-007 citation meaning the adoption record, apart from a dangling wikilink in this record's own Context, now plain text.
 
 ## Discussion
 
