@@ -7,12 +7,12 @@ kind: deliver
 purpose: governance
 project: estate-factorisation
 component: operations
-status: awaiting-review
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: 61f86c072cb6c03158f6640ef88e797405f9a8f1
 created_at: 2026-10-09T07:23:29Z
-updated_at: 2026-10-09T07:40:00Z
+updated_at: 2026-10-09T07:50:00Z
 ---
 
 # Document the Release Cascade
@@ -92,6 +92,10 @@ The note, its source and SVG, and the index section landed in the planned files 
 ### Mini recap
 
 The release cascade now has one Arcadia home; follow-up automation is already captured as KI-HARNESS-GOV-168.
+
+### Acceptance
+
+Accepted done on 2026-10-09 under Kris's instruction (gov-020 decisions log, Decision 7). The tools-ki releasing guide (`1852c07`, retiring the duplicate user guide) and the harness release-on-demand policy (`96a144a3`) now link the note as the overview.
 
 ## Governance
 
