@@ -4,7 +4,7 @@ thread: rig.mac-studio-bootstrap
 label: 'Rig: mac-studio-bootstrap'
 state: active
 created_at: 2026-10-08T08:45:00Z
-updated_at: 2026-10-09T21:23:00Z
+updated_at: 2026-10-09T21:43:00Z
 ---
 
 # rig.mac-studio-bootstrap
@@ -14,6 +14,8 @@ updated_at: 2026-10-09T21:23:00Z
 Bring Kris's Mac Studio, unused for over a month, back to full estate capability so any thread can resume there, and make it a reliably reachable remote agent host ([mac-studio-bootstrap](../../Streams/Projects/mac-studio-bootstrap.md), Initiative [Rig](../../Streams/Initiatives/rig.md)). The thread is driven remotely over the tailnet from the laptop; from a browser the checkpoint is at `github.com/knowledgeislands/ki-arcadia-principal`, path `+/_CHECKPOINTS/rig.mac-studio-bootstrap.md`. Kris is handing this checkpoint to the master thread `state-of-play` to reassess and perhaps redivide the work, so Open questions and Next step are written to stand alone.
 
 ## Current state
+
+**Mark.** 2026-10-09 23:25 CEST, Decision 21 in the run's `decisions.md`. A "summary since the mark" covers everything after it, including each Open question below still open at the mark.
 
 **Ownership.** The Mac Studio is Kris's personal hardware, built and managed by Kris's own Rig and chezmoi (`studio` profile on `core`), not by Techne. Techne may later deploy onto it, but never owns its build recipe, and it is separate from the Techne agent-host. Remote agent use and administration are exempt from the Techne Programme Hold under [KI-ARCADIA-GOV-033](https://github.com/knowledgeislands/ki-arcadia-principal/blob/60e8a65e5eb56b0496cf917763397339734ade1e/Streams/Roadmap/KI-ARCADIA-GOV-033-exempt-the-mac-studio-as-a-remote-agent-host.md), accepted as done on 2026-10-08. Each step on the machine still runs only once Kris approves it.
 
@@ -107,10 +109,13 @@ This checkpoint, KI-ARCADIA-GOV-033 and the Project note [mac-studio-bootstrap](
 
 ## Open questions
 
-- **sol's Rig profile.** Kris sets `rigProfile=studio` and re-applies chezmoi on sol's screen; until then `rig show` fails on sol. Then adopting and accepting RIG-DIST-010 is Kris's call.
+- **rig.chezmoi repin.** Line 23 of `rig.chezmoi.md` links the pruned DOTFILES-UE-075. Either that thread repoints it or Kris lets this thread do it.
+- **sol's Rig profile.** On sol's screen Kris pulls chezmoi, sets `rigProfile=studio`, reviews `chezmoi diff`, applies, then runs `rig apply --dry-run` and `rig apply`; until then `rig show` fails on sol. Then adopting and accepting RIG-DIST-010 is Kris's call.
+- **Laptop 1Password work.** Is it finished? The answer decides whether sol's apply includes the four 1Password-backed targets.
+- **After sol runs Rig.** This thread runs `ki bootstrap`, `ki doctor` and an SSH `git pull` check on sol.
 - **Pushing.** Kris approves pushing chezmoi `c47059e` and `eeaa891`, tools-rig `de4fdee`, and this repository's `9ea3ade` and this update (table above). The chezmoi push waits for the rig.chezmoi thread to repin line 23 of `rig.chezmoi.md`.
 - **Laptop apply.** Kris runs the laptop steps under Laptop (chezmoi apply, then the two `rig apply` passes).
-- **DOTFILES-UE-079.** Act on the add and remove items, then revisit the "leave" subset (Decision 18). Removals on sol, including the studio clean-up candidates and old Spark Mail, are by hand or through RIG-CORE-041.
+- **DOTFILES-UE-079.** Commit Kris's edits, act on the add and remove items, then revisit the "leave" subset (Decision 18). Removals on sol, including the studio clean-up candidates and old Spark Mail, are by hand or through RIG-CORE-041.
 - **Work division (for the master thread).** Mac Studio setup, chezmoi and Rig work interleave: Rig uninstall and doctor warnings (RIG-CORE-041), profile-filtered Dock items (RIG-CORE-042), always-run-from-latest (DOTFILES-UE-076), the Rig release (RIG-DIST-010) and the Tailscale variant. RIG-CORE-041, RIG-CORE-042, RIG-DIST-010 and DOTFILES-UE-076 now name mac-studio-bootstrap as their owning Project (`a1cc074` in tools-rig and `ed321f8` in chezmoi, both on `origin/main`); DOTFILES-UE-079 and the Tailscale variant remain for `state-of-play` to place.
 - **Record adoption.** RIG-CORE-041, RIG-CORE-042, RIG-DIST-010, DOTFILES-UE-076 and DOTFILES-UE-079 are triage records; horizon and adoption are Kris's call. The shared Dock waits on RIG-CORE-042.
 - **Tailscale restart and 1Password targets on sol.** Both still pending, with Kris at sol. Until a test restart succeeds, assume a restart cuts off remote access.
