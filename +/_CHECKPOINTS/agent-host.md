@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: agent-host
 state: active
 created_at: 2026-10-07T09:05:00Z
-updated_at: 2026-10-09T06:43:51Z
+updated_at: 2026-10-09T06:54:06Z
 ---
 
 # agent-host
@@ -23,7 +23,8 @@ As of 2026-10-09:
 - **The host runs ki 0.10.0.** The recipe's ki pin was raised from 0.9.0 to 0.10.0 (commit 10ea36b) and the 2026-10-09 setup `--pull` rerun took it up: 21 repositories, none at risk, no pin drift, banner silent. The host's Ubuntu login message reports a pending system restart and 32 package updates; neither was acted on, and a restart needs Kris's approval.
 - **The workstation pilot is planned, still `draft`.** TECHNE-TOOLS-OPS-015 (harness, plan commit 70c3389) and DOTFILES-UE-073 (chezmoi, plan commit 423fae7) await Kris's approval. Kris's Mac renders a checked personal payload (minimal zsh, his Claude and Codex instructions, a Rig list starting with `mgit`) that becomes the only route for personal instructions on the host, replacing the `chezmoi cat` copy. New interactive SSH sessions hand off from bash to zsh with escape hatches, while non-interactive SSH, hooks and scripts stay in bash; the recipe stays general for any owner and works with no payload.
 - **Behind the pilot**, all in triage: TECHNE-TOOLS-OPS-019 (person-neutral recipe defaults), TECHNE-TOOLS-OPS-017 (zsh at rebuild, blocked by TECHNE-TOOLS-OPS-015), TECHNE-TOOLS-OPS-016 and TECHNE-TOOLS-OPS-018 (`ki` Rig provider, then converging tools through Rig), TECHNE-TOOLS-OPS-020 (operator guide split), and TECHNE-TOOLS-OPS-021 with TECHNE-TOOL-CLI-007 (owned-host provider and adapter). TECHNE-TOOL-CLI-006 in `tools-techne` and KI-TOOL-CLI-115 in `tools-ki` are also in triage.
-- The decisions log runs to Decision 21. No `techne` agents are running other than this handover.
+- **The host's updates are not applied.** A 2026-10-09 attempt to apply the pending Ubuntu updates stopped before any change: `techne` has no `sudo` by design and the SSM agent is inactive, so a rebuild by the binding owner is the only update path today. The host has 26 upgradable packages, including the kernel and `libc6`, and has needed a restart since 2026-10-08. Status stayed clean (21 repositories, none at risk). TECHNE-TOOLS-OPS-022 (agent host OS patching, triage) captures how the recipe should patch any host (Decision 23).
+- The decisions log runs to Decision 23. No `techne` agents are running other than this handover.
 
 Thread rules:
 
@@ -48,7 +49,7 @@ Thread rules:
 
 ## Files touched
 
-ODR-KI-ARCADIA-001, ADR-KI-ARCADIA-003, KI-ARCADIA-GOV-031 (pruned), the agent-host Project note and this checkpoint. Outside Arcadia: TECHNE-TOOLS-OPS-013 and TECHNE-TOOLS-OPS-014 (both pruned) to TECHNE-TOOLS-OPS-021, `recipes/direct-host/rig.toml` and `operations/aws/agent-host/` in `ki-techne-harness`; TECHNE-TOOL-CLI-006 and TECHNE-TOOL-CLI-007 in `tools-techne`; and DOTFILES-UE-072 to DOTFILES-UE-074 in the chezmoi source. No remote state changed beyond pushes and the exempt host's setup runs.
+ODR-KI-ARCADIA-001, ADR-KI-ARCADIA-003, KI-ARCADIA-GOV-031 (pruned), the agent-host Project note and this checkpoint. Outside Arcadia: TECHNE-TOOLS-OPS-013 and TECHNE-TOOLS-OPS-014 (both pruned) to TECHNE-TOOLS-OPS-021, TECHNE-TOOLS-OPS-022, `recipes/direct-host/rig.toml` and `operations/aws/agent-host/` in `ki-techne-harness`; TECHNE-TOOL-CLI-006 and TECHNE-TOOL-CLI-007 in `tools-techne`; and DOTFILES-UE-072 to DOTFILES-UE-074 in the chezmoi source. No remote state changed beyond pushes and the exempt host's setup runs.
 
 ## Open questions
 
@@ -62,11 +63,11 @@ For Kris:
    - temporary `AGENT_HOST_PROFILE` and `AGENT_HOST_SHELL` settings until the binding fields exist.
 3. Agree to take the `chezmoi cat` removal out of TECHNE-TOOLS-OPS-019's scope, since TECHNE-TOOLS-OPS-015 takes it over.
 4. Grant SSH separately for the pilot's live run when delivery reaches it.
-5. Whether to apply the host's 32 pending Ubuntu updates and the restart they need (a remote-environment change under the exemption; the binding owner's call).
+5. Rebuild now or wait for the planned rebuild (TECHNE-TOOLS-OPS-017) to take up the pending updates (the binding owner's call). In-place patching is not possible today; TECHNE-TOOLS-OPS-022 covers the general route.
 
 Owned-host exemption for the Mac Studio is handled by KI-ARCADIA-GOV-033 in the `mac-studio-bootstrap` thread.
 
 ## Next step
 
-1. Kris answers the open questions, including whether to apply the host's pending updates and restart.
+1. Kris answers the open questions, including whether to rebuild now for the pending updates or wait for the planned rebuild.
 2. Deliver the pilot pair TECHNE-TOOLS-OPS-015 and DOTFILES-UE-073 from a fresh baseline, then TECHNE-TOOLS-OPS-019, TECHNE-TOOLS-OPS-017 and TECHNE-TOOLS-OPS-018 in that order.
