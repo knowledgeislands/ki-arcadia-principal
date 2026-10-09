@@ -54,6 +54,13 @@ Rules live with their durable owners: the roadmap model in GDR-KI-ARCADIA-005 an
 - Working material, machine-local and non-durable: `/Users/krisbrown/.local/state/ki/state-of-play/design/` and helper runs in `/Users/krisbrown/.local/state/ki/agents/gov-020/`.
 - Project and Initiative notes: [Projects](../../Streams/Projects/Projects.md) and [Initiatives](../../Streams/Initiatives/Initiatives.md).
 
+## Parked tangents
+
+Side topics Kris raised in passing. Each one is noted so we can come back to it. When we do, it gets a home: a Project, a roadmap record, or nothing.
+
+- **2026-10-09: a clear state-of-play view of Projects and Initiatives.** Kris wants a tool that shows the state of play clearly, beyond the roadmap view. Related work: apps-observatory, the command-centre work in kit-hnr and kit-legal, and primary threads. The common thread is Kris's productivity workflows.
+- **2026-10-09: rotating claude-swap accounts.** Usage timers start only when an account is first used, so rotating early would run several accounts at the same time instead of waiting for each limit. Find out whether claude-swap can already rotate on a schedule.
+
 ## Open questions
 
 - **Trades hold, by 2026-10-14:** re-enable trades or renew the hold. HOLD-1 warns from 2026-10-15.
