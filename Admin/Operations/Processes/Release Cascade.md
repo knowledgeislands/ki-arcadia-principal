@@ -22,9 +22,9 @@ This note is the canonical overview of the cascade. It explains the flow and who
 - pin rules: the `ki-engineering` pin receiver contract and [XDR-KI-HARNESS-001](https://github.com/knowledgeislands/ki-agentic-harness/blob/main/docs/decisions/XDR-KI-HARNESS-001-dependabot-security-updates-without-auto-merge.md);
 - tap sender operations and the release App's key custody: the [[GitHub Apps]] convention and the tap's release-App operations guide.
 
-![[Release Cascade.svg]]
+![Release Cascade diagram](Release%20Cascade.svg)
 
-The SVG is exported from the Archify source [[Release Cascade.archify.json|beside it]]. Solid arrows run by themselves; dashed arrows wait for a person. The `ki` pin-bump step is drawn as approved rather than as it runs today - see [Automatic, manual and approved](#automatic-manual-and-approved). To change the diagram, edit the source, run Archify's `finalize` for a `workflow` diagram at `showcase` quality, then export the SVG from the rendered viewer. The rendered HTML is a working file and is not kept.
+The SVG is exported from the Archify source [beside it](Release%20Cascade.archify.json). Solid arrows run by themselves; dashed arrows wait for a person. The `ki` pin-bump step is drawn as approved rather than as it runs today - see [Automatic, manual and approved](#automatic-manual-and-approved). To change the diagram, edit the source, run Archify's `finalize` for a `workflow` diagram at `showcase` quality, then export the SVG from the rendered viewer. The rendered HTML is a working file and is not kept.
 
 ---
 
