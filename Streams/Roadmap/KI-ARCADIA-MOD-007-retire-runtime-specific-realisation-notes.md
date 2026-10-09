@@ -3,12 +3,14 @@ note_type: stream-roadmap
 id: KI-ARCADIA-MOD-007
 area: MOD
 title: Retire runtime-specific realisation notes
-status: triage
+kind: deliver
+status: draft
+horizon: next
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-09T06:52:41Z
-updated_at: 2026-10-09T06:52:41Z
+updated_at: 2026-10-09T15:45:34Z
 ---
 
 # Retire Runtime-Specific Realisation Notes
@@ -49,6 +51,10 @@ Several model notes link into this tree, including [[Model/Activities/Activities
 ### Capture
 
 Captured as Triage from the GOV-020 owner answers (batch 4). No plan yet. Changes to `Pillars` go through the Enactment Process once the record is adopted.
+
+### Adoption
+
+Adopted by Kris on 2026-10-09 (state-of-play decisions log, Decision 9) for planning only: the knowledge base keeps no Claude- or Codex-specific notes. The proposed disposition below awaits Kris's approval before the record becomes Ready.
 
 ## Governance
 

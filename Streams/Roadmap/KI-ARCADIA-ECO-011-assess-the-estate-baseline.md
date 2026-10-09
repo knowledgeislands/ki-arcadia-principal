@@ -5,12 +5,13 @@ area: ECO
 title: Assess the estate baseline
 kind: audit
 project: baseline-rollout
-status: triage
+status: draft
+horizon: soon
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-08T13:50:51Z
-updated_at: 2026-10-08T13:50:51Z
+updated_at: 2026-10-09T15:45:34Z
 ---
 
 # Assess the Estate Baseline
@@ -33,6 +34,10 @@ The [[baseline-rollout]] Project has had no work records since it was split from
 ### Capture
 
 Captured as Triage from the close-out assessment of the Project it serves, written during the GOV-020 work on homes for recurring work. No plan yet.
+
+### Deferral
+
+Adopted and deferred to Soon by Kris on 2026-10-09 (state-of-play decisions log, Decision 10): the baseline assessment waits for the later territory rollout.
 
 ## Governance
 

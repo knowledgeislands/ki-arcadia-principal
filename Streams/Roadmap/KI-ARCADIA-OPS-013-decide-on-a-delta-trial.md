@@ -5,12 +5,13 @@ area: OPS
 title: Decide on a Delta trial
 kind: decide
 project: delta-evaluation
-status: triage
+status: draft
+horizon: soon
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-08T13:50:51Z
-updated_at: 2026-10-08T13:50:51Z
+updated_at: 2026-10-09T15:45:34Z
 ---
 
 # Decide on a Delta Trial
@@ -33,6 +34,10 @@ The [[delta-evaluation]] Project's Notes hold the assessment of Delta as a deliv
 ### Capture
 
 Captured as Triage from the close-out assessment of the Project it serves, written during the GOV-020 work on homes for recurring work. No plan yet.
+
+### Deferral
+
+Adopted and deferred to Soon by Kris on 2026-10-09 (state-of-play decisions log, Decision 10): the Delta decision waits for the Projects stock-take.
 
 ## Governance
 

@@ -3,12 +3,15 @@ note_type: stream-roadmap
 id: KI-ARCADIA-GOV-032
 area: GOV
 title: Consolidate adopting Decision Records
-status: triage
+kind: deliver
+purpose: governance
+status: draft
+horizon: now
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-08T13:49:15Z
-updated_at: 2026-10-08T13:49:15Z
+updated_at: 2026-10-09T15:45:34Z
 ---
 
 # Consolidate Adopting Decision Records
@@ -31,6 +34,10 @@ The GOV-020 Decision Record scope rollout renumbered the former `GDR-TECHNE-001`
 ### Capture
 
 Captured as Triage from the GOV-020 Decision Record scope rollout report. No plan yet.
+
+### Adoption
+
+Adopted by Kris on 2026-10-09 (state-of-play decisions log, Decision 9), with the instruction to plan, implement and advance it to Awaiting review.
 
 ## Governance
 
