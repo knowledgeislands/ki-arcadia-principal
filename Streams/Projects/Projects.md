@@ -1,6 +1,6 @@
 ---
 note_type: streams/index
-updated: 2026-10-09T14:45:00Z
+updated: 2026-10-09T17:27:11Z
 author: Written with Claude
 ---
 
@@ -101,6 +101,12 @@ Links point upwards only: a work record names its Project, and a Project names i
 ## Trades revamp
 
 [[trades-revamp]] makes the territory trade policy succinct without changing what it grants, and retires `map_bonus`.
+
+---
+
+## Ways of working
+
+[[ways-of-working]] defines how Kris works with the master and Project threads, background agents and the tools in transferable skills, and gives the state of play a clear view.
 
 ---
 
