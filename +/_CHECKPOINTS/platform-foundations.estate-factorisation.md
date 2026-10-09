@@ -15,7 +15,7 @@ The Knowledge Islands estate is factorised: consistent repository structure voca
 
 ## Current state
 
-- Open records: [KI-HARNESS-GOV-141](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-141-auto-bump-released-ki-pin.md) (Now, draft) and [KI-ARCADIA-GOV-030](../../Streams/Roadmap/KI-ARCADIA-GOV-030-refresh-the-release-app-note.md) (triage, captured from homebrew-tap BREW-012).
+- Open records: [KI-HARNESS-GOV-141](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-141-auto-bump-released-ki-pin.md) (Now, draft) and [KI-ARCADIA-GOV-030](https://github.com/knowledgeislands/ki-arcadia-principal/blob/b05e2e28e392534fc191af55fba08e61398ef90c/Streams/Roadmap/KI-ARCADIA-GOV-030-refresh-the-release-app-note.md) (closed as done and pruned on 2026-10-09; captured from homebrew-tap BREW-012).
 - Helper `estate` (gov-020) is delivering KI-HARNESS-GOV-141 and was last running its tests and audits. Check `ki agent status gov-020` before assuming it is still live.
 - The phase plan (FND-3 to ALIGN-1) and its owners are in the Project note's Notes; FND-5 opens the remaining phases.
 - Estate factorisation and Baseline rollout are the Now focus (Decision 17).
