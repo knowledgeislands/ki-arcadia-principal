@@ -60,6 +60,8 @@ Side topics Kris raised in passing. Each one is noted so we can come back to it.
 
 - **2026-10-09: a clear state-of-play view of Projects and Initiatives.** Kris wants a tool that shows the state of play clearly, beyond the roadmap view. Related work: apps-observatory, the command-centre work in kit-hnr and kit-legal, and primary threads. The common thread is Kris's productivity workflows.
 - **2026-10-09: rotating claude-swap accounts.** Usage timers start only when an account is first used, so rotating early would run several accounts at the same time instead of waiting for each limit. Find out whether claude-swap can already rotate on a schedule.
+- **2026-10-09: GitHub-flavoured Markdown over Obsidian.** Kris now reads in Zed, GitHub and the observatory rather than Obsidian. Obsidian-only syntax does not render there: for example, the Release Cascade diagram embed `![[Release Cascade.svg]]` shows nothing in Zed's preview. Idea: change the standard gradually, starting with a frontmatter field that declares which flavour a note uses, rather than converting everything at once.
+- **2026-10-09: Review tags and the Admin conventions.** Do we still need the review tags? Review the Admin conventions and check the knowledge base structure is still in good order.
 
 ## Open questions
 
