@@ -4,7 +4,7 @@ thread: knowledge-islands-model.island-model-and-tending
 label: 'KI Model: island-model-and-tending'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-09T21:45:00Z
+updated_at: 2026-10-09T21:41:00Z
 ---
 
 # knowledge-islands-model.island-model-and-tending
@@ -15,6 +15,7 @@ Arcadia's current island-model and tending records are each delivered, handed to
 
 ## Current state
 
+- **Mark:** struck 2026-10-09 22:41 BST (Decision 16 design: one mark per thread, replaced when a new one is struck). A summary "since the mark" covers what changed after it plus everything still outstanding: the Needs-Kris items in `Open questions` that remain relevant, open records, running or queued agents, and parked tangents.
 - Active since the re-bootstrap at 22:30 BST on 2026-10-09; `ki-delegation` read at harness revision b03a5d55. Run `island-model-and-tending` (decisions log `~/.local/state/ki/agents/island-model-and-tending/decisions.md`) has no agents running. `apps-note` (Decision 2) finished: the GitHub Apps note carries the 2026-10-07 proof and tap-guide pointer, and KI-ARCADIA-GOV-030 is closed and pruned. `checklist` (Decision 1) finished: the first full REVIEW pass fixed em dashes in 32 canonical notes and left 13 tagged findings for Kris in `~/.local/state/ki/agents/island-model-and-tending/checklist.report.md`.
 - KI-ARCADIA-MOD-005, KI-ARCADIA-OPS-004 and KI-ARCADIA-GOV-024 were delivered, closed and pruned earlier.
 - KI-ARCADIA-GOV-032 is done and pruned (the master's `close-ki` run, 2026-10-09). Its reference sweep found nothing left to fix across `~/workspaces` and the chezmoi source: nothing cited GDR-KI-ARCADIA-008, and every GDR-KI-ARCADIA-007 citation already meant Governing Technology Investigations. Decision 18's reference fix-up is complete.
@@ -36,9 +37,20 @@ None yet in this thread. Records live in `/Users/krisbrown/workspaces/kit/knowle
 
 ## Open questions
 
-- **KI-ARCADIA-MOD-007 dispositions:** take Kris through the table one note at a time, including the Scheduled Task Audit route (runtime-neutral Activity, or retire it from the Charter roster and Tending Activity) and whether the Claude Housekeeping note goes.
-- **2026-10-09 (parked): review tags.** Do we still need them?
-- **2026-10-09 (parked): Admin conventions and knowledge-base structure.** Tidy the Admin conventions and check the knowledge base structure is still in good order.
+Needs Kris at the mark (2026-10-09 22:41 BST); recommendations in brackets. Review details are in `~/.local/state/ki/agents/island-model-and-tending/checklist.report.md`.
+
+- **MOD7:** walk KI-ARCADIA-MOD-007's disposition table one note at a time, including the Scheduled Task Audit route and whether the Claude Housekeeping note goes.
+- **PULL:** push the unpushed checkpoint commits on Arcadia `main` (this thread's and the mac-studio-bootstrap thread's). (Push them together.)
+- **ESTATE-030:** the estate-factorisation checkpoint still tells that thread to disposition KI-ARCADIA-GOV-030, now closed; relay via the master thread.
+- **ROOT-RESUME:** stray `RESUME-fable-knowledge-islands-concepts.md` at the root. (Delete.)
+- **DESC-DASH + TOML-TIDY:** em dash in the repository description (`.ki.toml`, `package.json`, GitHub) and uneven `.ki.toml` layout. (One conform pass with the GitHub description edit authorised.)
+- **BUNX + NO-VERIFY-TASK + HOOK-1:** `bunx` in lint-staged, no `check` script, no committed pre-commit gate. (One engineering pass.)
+- **CI-PIN:** move the inline `KI_VERSION` pin to `.github/ki-version`. (Do it.)
+- **CLOSEOUT:** close-out for estate-factorisation (perhaps that thread's) and a paused line for specifications.
+- **DR-OVERLAP + DR-YAML:** possible overlaps in three Decision Record groups; mixed ID quoting. (A `ki-decision-records` CONSOLIDATE run.)
+- **INDEX-OVERVIEW + PLACEHOLDERS:** about 38 index notes lack an Overview; three placeholder Realisation notes. (One Enactment pass after KI-ARCADIA-MOD-007.)
+- Parked 2026-10-09: review tags - do we still need them?
+- Parked 2026-10-09: Admin conventions and knowledge-base structure tidy-up.
 
 ## Next step
 
