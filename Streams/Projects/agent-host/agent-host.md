@@ -7,7 +7,7 @@ initiative: techne
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-09T06:45:00Z
+updated: 2026-10-09T21:35:00Z
 author: Written with Claude
 ---
 
@@ -38,3 +38,5 @@ This Project sits in [[Initiatives/techne|Techne]]. It and [[baseline-rollout]] 
 - **Laptop relief.** Capture a standing-load record in its owning repository, then pause non-essential Rig agents and trim the MCP inventory; the chezmoi mcporter stall is related.
 - **Techne cloud readiness.** An Arcadia record for the held full footprint - the Paperclip comparison promoted, the reconstructability inventory and the Paperclip workload design - only if Kris moves to reshape the hold.
 - **Design outcomes.** The durability and workstation design loops are consolidated in [[ODR-KI-ARCADIA-001-keeping-work-safe-on-the-agent-host|ODR-KI-ARCADIA-001]] and [[ADR-KI-ARCADIA-003-the-agent-host-workstation-model|ADR-KI-ARCADIA-003]]; their working papers are deleted.
+- **Idea: owned-host provider.** The `agent-host` recipe could bind a machine its owner already runs and reaches over the tailnet, such as an owned Mac Studio, with no provision step: `techne host` drives it through an owned-host adapter beside `src/providers/aws/` in `tools-techne`, rebuild resets the operator user's workspace and home over SSH, and withdraw removes the workspace and lists the tailnet and account footprint to remove by hand. No owned host is planned. Kept as an idea on 2026-10-09 in place of a cancelled pair of `ki-techne-harness` and `tools-techne` work records (Decision 31).
+- **Idea: split the operator guide.** The `ki-techne-harness` agent-host operator guide could read as a guide to the general `agent-host` recipe, with each provider's steps in its own guide and no binding owner's deployment values in the shared repository. Kept as an idea on 2026-10-09 in place of a cancelled `ki-techne-harness` work record (Decision 31).

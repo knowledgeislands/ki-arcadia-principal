@@ -4,7 +4,7 @@ thread: _state-of-play
 label: 'Master: state-of-play'
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-09T21:05:00Z
+updated_at: 2026-10-09T21:33:00Z
 ---
 
 # _state-of-play
@@ -16,7 +16,7 @@ This is the master thread. Since 2026-10-09 it does only project management and 
 ## Current state
 
 - **Thread cap.** At most three Project threads are active at once, plus this master; the master queues the rest and prepares their checkpoints so each opens with one opener (Decision 19). Kris names a new Zed thread with the label and pastes the opener; the opener resolves the Project name to the single `*.<project>.md` checkpoint, or `_state-of-play.md` here.
-- **Active threads.** The mac-studio-bootstrap thread runs on the Mac Studio.
+- **Active threads.** The mac-studio-bootstrap thread runs on the Mac Studio. Rig: chezmoi is the thread for the [secrets-hygiene](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/secrets-hygiene.md) Project, active since 2026-10-09 (Decision 31).
 
   | Label | Checkpoint | Opener |
   | --- | --- | --- |
@@ -31,9 +31,10 @@ This is the master thread. Since 2026-10-09 it does only project management and 
   | --- | --- | --- | --- |
   | 1 | Knowledge Islands Model: island-model-and-tending | [knowledge-islands-model.island-model-and-tending](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/knowledge-islands-model.island-model-and-tending.md) | `Re-bootstrap as the island-model-and-tending project thread under ki-delegation.` |
   | 2 | Platform Foundations: baseline-rollout | [platform-foundations.baseline-rollout](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/platform-foundations.baseline-rollout.md) | `Re-bootstrap as the baseline-rollout project thread under ki-delegation.` |
-  | 3 | Knowledge Islands Model: ways-of-working | [knowledge-islands-model.ways-of-working](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/knowledge-islands-model.ways-of-working.md) | `Re-bootstrap as the ways-of-working project thread under ki-delegation.` |
+  | 3 | Knowledge Islands Model: knowledge-acquisition | [knowledge-islands-model.knowledge-acquisition](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/knowledge-islands-model.knowledge-acquisition.md) | `Re-bootstrap as the knowledge-acquisition project thread under ki-delegation.` |
+  | 4 | Knowledge Islands Model: ways-of-working | [knowledge-islands-model.ways-of-working](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/knowledge-islands-model.ways-of-working.md) | `Re-bootstrap as the ways-of-working project thread under ki-delegation.` |
 
-- **Other checkpoints, no thread open:** [platform-foundations.estate-factorisation](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/platform-foundations.estate-factorisation.md), [knowledge-islands-model.knowledge-acquisition](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/knowledge-islands-model.knowledge-acquisition.md), [techne.paperclip-bootstrap-and-recovery](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/techne.paperclip-bootstrap-and-recovery.md) and [knowledge-islands-model.territory-rollout](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/knowledge-islands-model.territory-rollout.md), which gathers what rolling the Knowledge Islands shape out to Kris's other territories needs and has no Project yet.
+- **Other checkpoints, no thread open:** [platform-foundations.estate-factorisation](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/platform-foundations.estate-factorisation.md), [techne.paperclip-bootstrap-and-recovery](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/techne.paperclip-bootstrap-and-recovery.md), which waits on the Techne Programme Hold, and [knowledge-islands-model.territory-rollout](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/knowledge-islands-model.territory-rollout.md), which gathers what rolling the Knowledge Islands shape out to Kris's other territories needs and has no Project yet.
 - **Projects with no thread.** No open records and no recurring work: [roadmap-model](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/roadmap-model.md), [skill-refresh](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/skill-refresh.md), [specification-review](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/specification-review.md), [delta-evaluation](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/delta-evaluation.md) and [trades-revamp](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/trades-revamp.md). Paused, with Hold records only: [specifications](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/specifications.md) and [website](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/website.md); their decisions stay here.
 - **Master runs** (state-of-play; check `ki agent status state-of-play`): `close-ki` and `close-other` are accepting, merging and pruning under Decisions 20 to 22; `close-ki` also fixes the KI-ARCADIA-GOV-032 references before accepting it. `capture-sweep` runs after them to check every open item sits in a Project (Decision 23). The gov-020 helpers have all finished.
 - **Parked tangents, now routed** (Decision 18):

@@ -5,13 +5,13 @@ area: ECO
 title: Assess the estate baseline
 kind: audit
 project: baseline-rollout
-status: draft
-horizon: soon
+status: cancelled
+resolution: rejected
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-08T13:50:51Z
-updated_at: 2026-10-09T15:45:34Z
+updated_at: 2026-10-09T21:40:00Z
 ---
 
 # Assess the Estate Baseline
@@ -28,6 +28,10 @@ The [[baseline-rollout]] Project has had no work records since it was split from
 
 - In scope: running the estate audit to completion, checking the installed `ki` against the latest release on each island, and capturing each gap as a triage record in the owning repository, naming this Project.
 - Out of scope: fixing the gaps, which their owning repositories plan and deliver; work that [[estate-factorisation]] or [[agent-host]] owns.
+
+## Cancelled
+
+Cancelled 2026-10-09 as rejected, approved by Kris Brown (state-of-play decisions log, Decision 31): it duplicated the baseline-rollout Project's own first step and overlapped KI-HARNESS-GOV-158, so Kris chose not to keep it as a separate record. Its measurement step is kept in the Close-out assessment of the [[baseline-rollout]] Project note (`Streams/Projects/baseline-rollout.md`). It leaves no outstanding change.
 
 ## Discussion
 
