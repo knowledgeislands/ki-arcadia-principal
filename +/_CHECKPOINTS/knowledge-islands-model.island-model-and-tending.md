@@ -4,7 +4,7 @@ thread: knowledge-islands-model.island-model-and-tending
 label: 'Knowledge Islands Model: island-model-and-tending'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-09T21:00:00Z
+updated_at: 2026-10-09T21:30:00Z
 ---
 
 # knowledge-islands-model.island-model-and-tending
@@ -15,10 +15,11 @@ Arcadia's current island-model and tending records are each delivered, handed to
 
 ## Current state
 
-- Queued, first of three, behind the three-active-thread cap; the master thread prepared this checkpoint on 2026-10-09. Last read `ki-delegation` at harness revision 01ac726c (2026-10-09).
-- KI-ARCADIA-MOD-005 and KI-ARCADIA-OPS-004 were delivered by helper `island` (gov-020), closed done and pruned. KI-ARCADIA-GOV-024 was delivered and pruned on 2026-10-08.
-- [KI-ARCADIA-GOV-032](https://github.com/knowledgeislands/ki-arcadia-principal/blob/533267bef4972eb51505d292c6a9720d0d0a4cbd/Streams/Roadmap/KI-ARCADIA-GOV-032-consolidate-adopting-decision-records.md) (done: accepted and pruned on 2026-10-09): GDR-KI-ARCADIA-001 is kept as the canonical adopting-Decision-Records record, GDR-KI-ARCADIA-007 is folded into it, and GDR-KI-ARCADIA-008 is renumbered to GDR-KI-ARCADIA-007. Kris asked that the references this leaves behind be fixed in every repository that cites them, then returned for review; Kris will accept it once they are (Decision 20). The master's background run `close-ki` (launched 2026-10-09) is fixing those references and then accepting the record; its report will be `~/.local/state/ki/agents/state-of-play/close-ki.report.md`.
-- [KI-ARCADIA-MOD-007](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-MOD-007-retire-runtime-specific-realisation-notes.md) (Next, draft): Kris approves the goal - no Claude- or Codex-specific notes in the island. Its disposition table still needs Kris's answer row by row.
+- Active since the re-bootstrap at 22:30 BST on 2026-10-09; `ki-delegation` read at harness revision b03a5d55. No background agents running; run `island-model-and-tending` not yet created.
+- KI-ARCADIA-MOD-005, KI-ARCADIA-OPS-004 and KI-ARCADIA-GOV-024 were delivered, closed and pruned earlier.
+- KI-ARCADIA-GOV-032 is done and pruned (the master's `close-ki` run, 2026-10-09). Its reference sweep found nothing left to fix across `~/workspaces` and the chezmoi source: nothing cited GDR-KI-ARCADIA-008, and every GDR-KI-ARCADIA-007 citation already meant Governing Technology Investigations. Decision 18's reference fix-up is complete.
+- [KI-ARCADIA-MOD-007](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-MOD-007-retire-runtime-specific-realisation-notes.md) (Next, draft, now names this Project) is the only open record here. Kris approves the goal; its disposition table still needs Kris's answer row by row.
+- The Arcadia primary checkout has diverged from origin: local `main` holds an unpushed mac-studio-bootstrap checkpoint commit while origin has the MOD-007 Project field. Left for the owning thread; not pulled.
 - The Tending and Briefings Activities name the knowledge-islands-model Initiative, not this Project.
 
 ## Decisions made
@@ -41,6 +42,6 @@ None yet in this thread. Records live in `/Users/krisbrown/workspaces/kit/knowle
 
 ## Next step
 
-1. Read `close-ki`'s report: confirm every GDR-KI-ARCADIA-001/007/008 reference in Arcadia and the other repositories that cite them is fixed and KI-ARCADIA-GOV-032 accepted. If the run did not finish it, fix the remaining references through `ki agent` and return KI-ARCADIA-GOV-032 to Kris for review.
-2. Walk Kris through KI-ARCADIA-MOD-007's disposition table one note at a time, then plan it to ready.
+1. Walk Kris through KI-ARCADIA-MOD-007's disposition table one note at a time, then plan it to ready and deliver it through `ki agent`.
+2. Take up the parked review-tags and Admin-conventions tidy-up (Decision 18) once Kris picks it up: capture it through `ki-next` or drop it.
 3. Before closing the Project, check the seven ChatGPT items against it.
