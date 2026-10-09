@@ -118,9 +118,10 @@ Kris approved the automatic rows on 2026-10-09, deciding KI-HARNESS-GOV-161; XDR
 
 ## What Kris does, and when
 
+- **First, before the release bot is installed in any repository:** protect that repository's `main` with a ruleset that requires a pull request and the CI status check, allows only repository admins to bypass, and leaves the App off the bypass list. The updater's own guard only stops it requesting auto-merge without required checks; the ruleset is what stops a stolen App key pushing straight to `main`. Check the ruleset is in place before each installation.
 - **To use new capability yourself:** rebuild `ki` locally from `main`, or pull the tool's checkout. Do not release for this.
 - **When a release is due:** ask for it in an explicitly authorised task naming the release, or run it yourself from the tool's releasing guide. For `tools-ki`, check the Harness pin is current first.
 - **After a release:** run `brew upgrade` on any machine that uses the Homebrew copy. The tap and website update themselves.
 - **When a repository needs new rules in CI:** today, merge or make its `ki` pin bump. Once the approved automation is in place, the bump merges itself when it is pin-only and green; look only at bumps that fail CI.
-- **Once, to switch on the automation:** install the release bot App on the `knowledgeislands` organisation for the repositories it may reach, store the App ID variable and private-key secret in each, protect `main` with a ruleset that requires CI and leaves the App off the bypass list, and allow auto-merge in each repository's settings. Add repositories as KI-HARNESS-GOV-168 converts them.
+- **Once, to switch on the automation, after the ruleset is in place:** install the release bot App on the `knowledgeislands` organisation for the repositories it may reach, store the App ID variable and private-key secret in each, and allow auto-merge in each repository's settings. Add repositories as KI-HARNESS-GOV-168 converts them.
 - **If a step looks stuck:** each scheduled workflow catches a missed event on its next daily run; a manual run of the tap's propose workflow or the receiver workflow retries at once.
