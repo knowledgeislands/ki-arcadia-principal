@@ -4,7 +4,7 @@ thread: rig.chezmoi
 label: 'Rig: chezmoi'
 state: active
 created_at: 2026-10-08T08:40:00Z
-updated_at: 2026-10-09T14:10:00Z
+updated_at: 2026-10-09T21:40:00Z
 ---
 
 # rig.chezmoi
@@ -40,4 +40,4 @@ Work the open DOTFILES-UE records in the chezmoi source (`~/.local/share/chezmoi
 
 ## Next step
 
-Verify `vault-apply` and `vault-categories` when they report DONE, report the remaining `^` tag counts to Kris, then apply the tag scheme and answered questions as further helper batches.
+Summarise for Kris from the latest mark in `~/.local/state/ki/agents/chezmoi/marks.md` (Mark 1, 2026-10-09 22:40 BST) when he asks. Record the outcome of the scoped [DOTFILES-UE-062](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-062-measure-the-live-apply.md) apply (evidence in `apply-062/`) in that record, then bring this checkpoint current with Decisions 24-33.
