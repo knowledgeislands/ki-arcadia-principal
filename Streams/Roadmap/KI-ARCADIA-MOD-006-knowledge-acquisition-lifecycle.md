@@ -16,7 +16,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-08-23T12:33:49Z
-updated_at: 2026-10-07T20:43:51Z
+updated_at: 2026-10-09T21:53:46Z
 ---
 
 # Knowledge Acquisition Lifecycle
@@ -44,7 +44,7 @@ The decision states the architecture but not the operational picture: what a pro
 - `Admin/Governance/Decisions/ADR-KI-ARCADIA-001-provider-neutral-knowledge-acquisition.md` is `status: current` and names `ki acquire import --adapter <provider>` as the repository-context staging operation.
 - Export/API evidence: `+/_ACQUIRE/granola/ledger.json` (schema 3) records adapter, provider, hashed account identity, source-schema and identity-checkpoint SHA-256 values, the acquisition interval, `exhaustive: true` and per-window counts with response hashes. Each staged meeting note (for example `+/_ACQUIRE/granola/2026-07-28--catch-up-w-alec--e8fbfc78-dc6c-448c-9ce0-d262c3316499.md`) carries `source_id`, `acquired_at`, `detail_sha256`, `transcript_sha256`, `transcript_observed_at`, folder membership and an explicit `omissions` list. Latest checkpoint commits: `72302d2`, `68fcb51`.
 - Direct local evidence: `mcp-housekeeping-claude` exposes read-level `claude_code_sessions_discover`, `claude_code_sessions_list`, `claude_code_sessions_checkpoint` (content-minimised, provenance-preserving, writes nothing) and `claude_code_session_read`; access defaults to `read`. Arcadia describes it in [[Claude Housekeeping]].
-- Asymmetry observed at planning: `tools-ki` `src/core/acquire/` ships only `granola` and `chatgpt` adapters, so the Claude source is evidenced at discovery and checkpoint level, not as a Harbour-staged capture. Session acquisition is in flight in `ki-agentic-harness` as `KI-HARNESS-OPS-005` (in progress).
+- Asymmetry observed at planning: `tools-ki` `src/core/acquire/` ships only `granola` and `chatgpt` adapters, so the Claude source is evidenced at discovery and checkpoint level, not as a Harbour-staged capture. AI session acquisition is in flight in `ki-agentic-harness`.
 - No Pillars note describes the lifecycle operationally; `Pillars/Philosophy/Model/Processes/` holds [[How Change Happens]] and the Enactment and Contribution processes.
 
 ## Steps
@@ -77,7 +77,7 @@ The decision states the architecture but not the operational picture: what a pro
 
 ## Dependencies / blocks
 
-No local build-order dependency. Evidence comes from Arcadia's own Harbour and the read-level contract of `mcp-housekeeping-claude`. `KI-HARNESS-OPS-005` in `ki-agentic-harness` may later supply a Harbour-staged Claude capture; this record does not wait for it, and the note can be refreshed when it lands. `KI-HARNESS-OPS-005` also carries the isolated browser trial, beginning with ChatGPT acquisition, merged from `KI-HARNESS-GOV-087` on 2026-10-07. That harness item belongs to the same acquisition cluster as this record: the relationship is a non-blocking cross-link in either direction, not build order, so it appears in neither `blocks` nor `blocked_by`.
+No local build-order dependency. Evidence comes from Arcadia's own Harbour and the read-level contract of `mcp-housekeeping-claude`. `ki-agentic-harness`'s AI session acquisition work may later supply a Harbour-staged Claude capture; this record does not wait for it, and the note can be refreshed when it lands. That harness work also carries an isolated browser trial, beginning with ChatGPT acquisition. It belongs to the same acquisition cluster as this record, but neither blocks the other, so it appears in neither `blocks` nor `blocked_by`.
 
 ## Documentation impact
 
@@ -95,7 +95,7 @@ The new Pillars note is the island's operational explanation. Operator procedure
 
 ### Roadmap
 
-A later provider-specific record will be needed for the archive or deletion threshold. If the Claude staging gap persists after `KI-HARNESS-OPS-005`, capture it as a separate Triage item rather than widening this one.
+A later provider-specific record will be needed for the archive or deletion threshold. If the Claude staging gap persists after the harness's AI session acquisition lands, capture it as a separate Triage item rather than widening this one.
 
 ## Discussion
 
