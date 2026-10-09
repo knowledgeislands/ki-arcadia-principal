@@ -4,13 +4,14 @@ id: KI-ARCADIA-MOD-007
 area: MOD
 title: Retire runtime-specific realisation notes
 kind: deliver
+project: island-model-and-tending
 status: draft
 horizon: next
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-09T06:52:41Z
-updated_at: 2026-10-09T15:49:45Z
+updated_at: 2026-10-09T21:18:31Z
 ---
 
 # Retire Runtime-Specific Realisation Notes
