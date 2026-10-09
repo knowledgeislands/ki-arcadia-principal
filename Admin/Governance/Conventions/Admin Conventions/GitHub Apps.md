@@ -3,7 +3,7 @@ note_type: admin/governance/convention
 tags:
   - card/note
   - topic/knowledge-islands
-updated: 2026-10-09T15:50:46Z
+updated: 2026-10-09T21:28:55Z
 author: AI-assisted
 ---
 
@@ -66,9 +66,13 @@ Never pipe an `op` read straight into `gh secret set`: if the read fails, `gh` r
 
 ### Verification
 
-On 2026-10-05 the `homebrew-tap` intake run 37317227744 (`workflow_dispatch`) authenticated with the new key and ran green. The `tools-ki` and `tools-techne` formulae were already at their latest releases, so no formula pull request was expected. Full end-to-end proof of the release chain awaits the next immutable tool release, tracked as `BREW-010` in `homebrew-tap`.
+On 2026-10-05 the `homebrew-tap` intake run 37317227744 (`workflow_dispatch`) authenticated with the new key and ran green. The `tools-ki` and `tools-techne` formulae were already at their latest releases, so no formula pull request was expected.
+
+On 2026-10-07 the release chain ran end to end: for the `ki` releases v0.8.1 to v0.9.0 and `mgit` v0.16.0, the App opened and auto-merged `homebrew-tap` formula pull requests #23 to #29 and `ki-website` registry pull requests #24 to #28.
 
 On 2026-10-09 a manual run of `update-ki-pin.yml` in `ki-agentic-harness` minted the bot's installation token successfully.
+
+The tap's sender-side operating procedures live in its [release App operations guide](https://github.com/knowledgeislands/homebrew-tap/blob/8111c9a9944f9f335a6ecfb1cf8c3a20cea6b4be/docs/guides/maintainer/release-app-operations.md) at revision `8111c9a9944f9f335a6ecfb1cf8c3a20cea6b4be`, which cites this note for key custody and rotation.
 
 ### Workflows
 
