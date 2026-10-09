@@ -4,7 +4,7 @@ thread: techne.agent-host
 label: 'Techne: agent-host'
 state: active
 created_at: 2026-10-07T09:05:00Z
-updated_at: 2026-10-09T19:10:00Z
+updated_at: 2026-10-09T20:10:00Z
 ---
 
 # techne.agent-host
@@ -26,7 +26,7 @@ As of 2026-10-09:
 - **Behind the pilot**, all in triage: TECHNE-TOOLS-OPS-019 (person-neutral recipe defaults), TECHNE-TOOLS-OPS-017 (zsh and the `vega` rename at rebuild, blocked by TECHNE-TOOLS-OPS-015), TECHNE-TOOLS-OPS-016 and TECHNE-TOOLS-OPS-018 (`ki` Rig provider, then converging tools through Rig), TECHNE-TOOLS-OPS-020 (operator guide split), and TECHNE-TOOLS-OPS-021 with TECHNE-TOOL-CLI-007 (owned-host provider and adapter). TECHNE-TOOL-CLI-006 in `tools-techne` and KI-TOOL-CLI-115 in `tools-ki` are also in triage.
 - **The host was restarted on 2026-10-09** through the operator stop/start (Decision 25), moving the kernel from 7.0.0-1012 to 7.0.0-1013 and clearing the reboot flag; status stayed clean (21 repositories, none at risk, no pin drift). Unattended-upgrades installs security updates daily but never reboots, and Livepatch is not attached, so the 7.0.0-1014 kernel due in the 2026-10-10 run will set the reboot flag again; Kris accepts the one provider stop/start it needs (Decision 26(c)).
 - **Patching is built and `awaiting-review`.** Kris approved TECHNE-TOOLS-OPS-022 on 2026-10-09 (Decision 28), including the daily `04:00` restart timer (Decision 27); it was built under Decision 29(c) (`ki-techne-harness` commits ac30788, 38be9a5 and 977abc9, not pushed). Its live step, a setup run that installs the new banner and status, stays open, so `ki repo audit` fails ITEM-3 until it is ticked or moved to a follow-up record. A read-only status check found the host clean with 34 pending updates, 12 of them security, including a kernel; the unattended-upgrades log is root-only, so whether they are phased or failing is unknown. Its decisions (Decision 26(b)): no automatic reboot by default, an optional binding reboot window as a daily host-local time, Livepatch as an opt-in binding field that Kris does not use, security-only unattended scope, updates never changing the status outcome, and no rebuild. The paired `tools-techne` record TECHNE-TOOL-CLI-008 (binding fields `reboot_window` and `livepatch`, status `updates` member) is in triage, non-blocking.
-- **Naming (Decisions 29 and 30).** The AWS agent host is to be `vega`; the laptop is now `terra`, renamed by Kris. The rename to `vega` covers the OS hostname, Tailscale name, SSH alias and its known_hosts file, AWS `Name` tag, binding host name and the bundle manifest with its `target_host`; the OS hostname needs root, so it lands at the rebuild under TECHNE-TOOLS-OPS-017. Separately, one thing gets one name everywhere: Kris chose `agent-host` to replace `direct-host` (Decision 30, no record needed). That rename is not yet applied: `rename-agent-host2` stopped without changes, leaving a survey of every `direct-host` use across the harness, `tools-techne`, Arcadia and chezmoi in its report.
+- **Naming (Decisions 29 and 30).** The AWS agent host is to be `vega`; the laptop is now `terra`, renamed by Kris. The rename to `vega` covers the OS hostname, Tailscale name, SSH alias and its known_hosts file, AWS `Name` tag, binding host name and the bundle manifest with its `target_host`; the OS hostname needs root, so it lands at the rebuild under TECHNE-TOOLS-OPS-017. Separately, one thing gets one name everywhere: Kris chose `agent-host` to replace `direct-host` (Decision 30, no record needed). `rename-agent-host3` applied it in local commits across the harness, `tools-techne`, Arcadia and chezmoi; accepted Decision Records keep their wording.
 - The decisions log runs to Decision 30. No `techne` agents are running other than this checkpoint run.
 
 Thread rules:
@@ -41,7 +41,7 @@ Thread rules:
 ## Decisions made
 
 - Outside the exemption the hold stands. Only Kris can authorise, reshape or retire it.
-- The exemption is standing and kept, with no fixed review date: the prototype review was decided early as keep, `direct-host` stays a recipe, and the exemption is revisited when the hold is reshaped (GDR-KI-ARCADIA-004).
+- The exemption is standing and kept, with no fixed review date: the prototype review was decided early as keep, `agent-host` stays a recipe, and the exemption is revisited when the hold is reshaped (GDR-KI-ARCADIA-004).
 - Credentials are stated by role: the binding owner's administrator session builds and tears down, the operator role operates, and the GitHub token and Claude login are the binding owner's own until unattended agents arrive.
 - Work on the host is safe only once it is on a remote; the durability model and its rollout follow ODR-KI-ARCADIA-001, with one harness pilot before a wave.
 - Agent hosts are recipes bound by per-person bindings, with providers and footprints (ADR-KI-ARCADIA-006).
@@ -53,7 +53,7 @@ Thread rules:
 
 ## Files touched
 
-ODR-KI-ARCADIA-001, ADR-KI-ARCADIA-003, KI-ARCADIA-GOV-031 (pruned), the agent-host Project note and this checkpoint. Outside Arcadia: TECHNE-TOOLS-OPS-013 and TECHNE-TOOLS-OPS-014 (both pruned) to TECHNE-TOOLS-OPS-021, TECHNE-TOOLS-OPS-022, `recipes/direct-host/rig.toml` and `operations/aws/agent-host/` in `ki-techne-harness`; TECHNE-TOOL-CLI-006, TECHNE-TOOL-CLI-007 and TECHNE-TOOL-CLI-008 in `tools-techne`; and DOTFILES-UE-072 to DOTFILES-UE-074 in the chezmoi source. No remote state changed beyond pushes and the exempt host's setup runs.
+ODR-KI-ARCADIA-001, ADR-KI-ARCADIA-003, KI-ARCADIA-GOV-031 (pruned), the agent-host Project note and this checkpoint. Outside Arcadia: TECHNE-TOOLS-OPS-013 and TECHNE-TOOLS-OPS-014 (both pruned) to TECHNE-TOOLS-OPS-021, TECHNE-TOOLS-OPS-022, `recipes/agent-host/rig.toml` and `operations/aws/agent-host/` in `ki-techne-harness`; TECHNE-TOOL-CLI-006, TECHNE-TOOL-CLI-007 and TECHNE-TOOL-CLI-008 in `tools-techne`; and DOTFILES-UE-072 to DOTFILES-UE-074 in the chezmoi source. No remote state changed beyond pushes and the exempt host's setup runs.
 
 ## Open questions
 
@@ -68,7 +68,7 @@ For Kris:
 3. Answered: TECHNE-TOOLS-OPS-019 no longer carries the `chezmoi cat` removal, which TECHNE-TOOLS-OPS-015 owns (Decision 24(c)); the record keeps the person-neutral defaults and the binding fields.
 4. Grant SSH separately for the pilot's live run when delivery reaches it.
 5. Answered: TECHNE-TOOLS-OPS-022 was built (Decision 29(c)). Until its live step runs, each kernel update needs a provider stop/start, starting with the 2026-10-10 kernel.
-6. One name for `direct-host` and `agent-host`: Kris chose `agent-host` (Decision 30). Open until the rename is applied everywhere in one run from the `rename-agent-host2` survey; accepted Decision Records keep their wording.
+6. Answered: one name, `agent-host` (Decision 30), applied by `rename-agent-host3` in local commits; accepted Decision Records keep their wording.
 
 Owned-host exemption for the Mac Studio is handled by KI-ARCADIA-GOV-033 in the `mac-studio-bootstrap` thread.
 
@@ -79,6 +79,6 @@ Parked tangents, noted to come back to; each gets a home (Project, roadmap recor
 ## Next step
 
 1. Kris reviews and pushes the three built records (TECHNE-TOOLS-OPS-015, TECHNE-TOOLS-OPS-022 and DOTFILES-UE-073), grants SSH for the live setup run, and stops and starts the host after the 2026-10-10 kernel update.
-2. Relaunch the `direct-host` to `agent-host` rename from the `rename-agent-host2` survey.
+2. Push the `agent-host` rename commits: the Techne Harness, then `tools-techne`, chezmoi and Arcadia; then pull the harness and apply chezmoi together, before the next setup.
 3. Hand the machine-naming convention (Decision 29(a): physical machines take solar-system names, peripherals are moons, a non-physical host gets its own star system) to the Rig thread `rig.mac-studio-bootstrap` to record durably, since Rig owns Kris's machines.
 4. Then TECHNE-TOOLS-OPS-019, TECHNE-TOOLS-OPS-017 (with the `vega` rename) and TECHNE-TOOLS-OPS-018, in that order.
