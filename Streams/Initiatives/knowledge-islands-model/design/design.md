@@ -8,7 +8,7 @@ author: Written with Claude
 
 ## Overview
 
-This folder holds the working papers of the territory-selection design loop, run within the [[knowledge-islands-model|Knowledge Islands model]] Initiative. The loop decided how repository selection derives from a territory's membership and how locally declared Agoras retire. Its outcome is stated in [[ADR-KI-ARCADIA-002-territory-derived-repository-selection|ADR-KI-ARCADIA-002]] and delivered through [[KI-ARCADIA-GOV-028-territory-selection-cut-over|KI-ARCADIA-GOV-028]]. The papers are temporary: they are deleted in one commit once their outcome is consolidated into that record.
+This folder holds the working papers of the territory-selection design loop, run within the [[knowledge-islands-model|Knowledge Islands model]] Initiative. The loop decided how repository selection derives from a territory's membership and how locally declared Agoras retire. Its outcome is stated in [[ADR-KI-ARCADIA-002-territory-derived-repository-selection|ADR-KI-ARCADIA-002]] and delivered through [KI-ARCADIA-GOV-028](https://github.com/knowledgeislands/ki-arcadia-principal/blob/60e8a65e5eb56b0496cf917763397339734ade1e/Streams/Roadmap/KI-ARCADIA-GOV-028-territory-selection-cut-over.md). The papers are temporary: they are deleted in one commit once their outcome is consolidated into that record.
 
 ## Brief
 

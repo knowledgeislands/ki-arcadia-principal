@@ -16,7 +16,7 @@ Paperclip is useful: one reviewed roadmap delivery lands in Kris's local main in
 ## Current state
 
 - Delivered, closed done and pruned in `ki-agentic-harness`: KI-HARNESS-GOV-102 (`c872f093`), KI-HARNESS-GOV-103 (`408f8431`), KI-HARNESS-GOV-107 (`5186ae58`), KI-HARNESS-GOV-108 (`608d241a`), KI-HARNESS-GOV-147 (`0fc418eb`) and KI-HARNESS-RTP-018 (`cdd79c5c`). Helpers `paperclip-a` and `paperclip-b` are finished.
-- Open records, all in `ki-agentic-harness`: [KI-HARNESS-RTP-015](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-RTP-015-verify-run-mcp-connection.md) (Next, ready, no helper) and [KI-HARNESS-GOV-162](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-162-cite-rules-in-paperclip.md) (triage).
+- Open record, in `ki-agentic-harness`: [KI-HARNESS-RTP-015](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-RTP-015-verify-run-mcp-connection.md) (Next, ready, no helper). KI-HARNESS-GOV-162 (Cite rules in Paperclip) was cancelled on 2026-10-09 and is kept as an idea in the Project note.
 - Two Paperclip decision cards await Kris through `state-of-play`.
 
 ## Decisions made
@@ -35,4 +35,4 @@ None for this thread; the two decision cards are Kris's, through `state-of-play`
 
 ## Next step
 
-Delegate KI-HARNESS-RTP-015 through `ki agent`, staying within the Project note's constraints; shape KI-HARNESS-GOV-162 when it is adopted.
+Delegate KI-HARNESS-RTP-015 through `ki agent`, staying within the Project note's constraints; the rule-citation idea waits in the Project note.
