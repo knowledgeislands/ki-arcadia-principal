@@ -4,7 +4,7 @@ thread: techne.agent-host
 label: 'Techne: agent-host'
 state: active
 created_at: 2026-10-07T09:05:00Z
-updated_at: 2026-10-09T15:25:43Z
+updated_at: 2026-10-09T15:27:33Z
 ---
 
 # techne.agent-host
@@ -24,7 +24,7 @@ As of 2026-10-09:
 - **The host runs ki 0.10.0.** The recipe's ki pin was raised from 0.9.0 to 0.10.0 (commit 10ea36b) and the 2026-10-09 setup `--pull` rerun took it up: 21 repositories, none at risk, no pin drift, banner silent. The host's Ubuntu login message reports a pending system restart and 32 package updates; neither was acted on, and a restart needs Kris's approval.
 - **The workstation pilot is planned, still `draft`.** TECHNE-TOOLS-OPS-015 (harness, plan commit 70c3389) and DOTFILES-UE-073 (chezmoi, plan commit 423fae7) await Kris's approval. Kris's Mac renders a checked personal payload (minimal zsh, his Claude and Codex instructions, a Rig list starting with `mgit`) that becomes the only route for personal instructions on the host, replacing the `chezmoi cat` copy. New interactive SSH sessions hand off from bash to zsh with escape hatches, while non-interactive SSH, hooks and scripts stay in bash; the recipe stays general for any owner and works with no payload.
 - **Behind the pilot**, all in triage: TECHNE-TOOLS-OPS-019 (person-neutral recipe defaults), TECHNE-TOOLS-OPS-017 (zsh at rebuild, blocked by TECHNE-TOOLS-OPS-015), TECHNE-TOOLS-OPS-016 and TECHNE-TOOLS-OPS-018 (`ki` Rig provider, then converging tools through Rig), TECHNE-TOOLS-OPS-020 (operator guide split), and TECHNE-TOOLS-OPS-021 with TECHNE-TOOL-CLI-007 (owned-host provider and adapter). TECHNE-TOOL-CLI-006 in `tools-techne` and KI-TOOL-CLI-115 in `tools-ki` are also in triage.
-- **The host's updates are not applied.** A 2026-10-09 attempt to apply the pending Ubuntu updates stopped before any change: `techne` has no `sudo` by design and the SSM agent is inactive, so a rebuild by the binding owner is the only update path today. The host has 26 upgradable packages, including the kernel and `libc6`, and has needed a restart since 2026-10-08. Status stayed clean (21 repositories, none at risk). TECHNE-TOOLS-OPS-022 (agent host OS patching, now adopted to Next and planned, in `draft` pending Kris's decisions) captures how the recipe should patch any host (Decision 23).
+- **The host was restarted on 2026-10-09** through the operator stop/start (Decision 25), moving the kernel from 7.0.0-1012 to 7.0.0-1013 and clearing the reboot flag; status stayed clean (21 repositories, none at risk, no pin drift). Unattended-upgrades already installs security updates daily but never reboots, and Livepatch is not attached, so the next kernel (7.0.0-1014, due in the 2026-10-10 run) will set the reboot flag again. TECHNE-TOOLS-OPS-022 (agent host OS patching, adopted to Next and planned, `draft` pending Kris's decisions) makes patching part of the recipe (Decision 23).
 - The decisions log runs to Decision 23. No `techne` agents are running other than this handover.
 
 Thread rules:
@@ -64,7 +64,7 @@ For Kris:
    - temporary `AGENT_HOST_PROFILE` and `AGENT_HOST_SHELL` settings until the binding fields exist.
 3. Answered: TECHNE-TOOLS-OPS-019 no longer carries the `chezmoi cat` removal, which TECHNE-TOOLS-OPS-015 owns (Decision 24(c)); the record keeps the person-neutral defaults and the binding fields.
 4. Grant SSH separately for the pilot's live run when delivery reaches it.
-5. Restart and patching. The stop/start restart through AWS approved in Decision 24(e) failed before any change: the AWS SSO session had expired, so the host was neither stopped nor started and still needs a restart. One restart after the 2026-10-10 unattended run (about 06:50 UTC) would pick up both pending kernels. TECHNE-TOOLS-OPS-022 is adopted to Next and planned, still `draft`; Kris answers the six decisions in its Discussion before it can become Ready.
+5. Patching. TECHNE-TOOLS-OPS-022 is adopted to Next and planned, still `draft`; Kris answers the six decisions in its Discussion before it can become Ready. Until then each kernel update needs a provider stop/start.
 
 Owned-host exemption for the Mac Studio is handled by KI-ARCADIA-GOV-033 in the `mac-studio-bootstrap` thread.
 
