@@ -10,7 +10,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-09T06:52:41Z
-updated_at: 2026-10-09T15:45:34Z
+updated_at: 2026-10-09T15:49:45Z
 ---
 
 # Retire Runtime-Specific Realisation Notes
@@ -55,6 +55,27 @@ Captured as Triage from the GOV-020 owner answers (batch 4). No plan yet. Change
 ### Adoption
 
 Adopted by Kris on 2026-10-09 (state-of-play decisions log, Decision 9) for planning only: the knowledge base keeps no Claude- or Codex-specific notes. The proposed disposition below awaits Kris's approval before the record becomes Ready.
+
+### Proposed disposition
+
+Paths are relative to `Pillars/Philosophy/Model/`. Each row awaits Kris's approval; nothing has moved yet.
+
+| Note | Worth keeping | Proposed home |
+| --- | --- | --- |
+| `Tools/Claude/Activities/` index notes: `Activities.md`, `Constitutional/Constitutional.md`, `Tending/Tending.md` | Nothing; they index the prompts below. | Delete. |
+| `Tools/Claude/Activities/Constitutional/Conformance.md`, `Tending/Health Check.md`, `Tending/Knowledge Rebuild.md`, `Tending/Convergence Check.md` | Any step or check missing from the matching model Activity note. Runtime mechanics (Cowork paths, `CLAUDE.md` alignment, auto-memory steps) are not worth keeping. | Fold missing checks into the model notes under `Activities/`; executable procedure belongs in the skill that realises each Activity. Delete the prompts. |
+| `Tools/Claude/Activities/Tending/Scheduled Task Audit.md` | Possibly the idea of auditing that scheduled automations match their Activity notes; it has no runtime-neutral definition and the [[Admin/Governance/Charter\|Charter]] roster and [[Tending Activity]] count it. | Kris to choose: write a runtime-neutral `Activities/Tending/Scheduled Task Audit.md`, or retire it and remove it from the Charter roster and Tending Activity. |
+| `Tools/Claude/Claude.md` | The token-economics point that standing context costs tokens. | `ki-tokenomics`, which already owns standing-surface budgets. Delete the note. |
+| `Tools/Claude/Cowork Configuration Layers.md` | The layering of always-on and on-demand context and how reliably each fires. | Fold any point the skill lacks into `ki-tokenomics-claude` through a harness handoff. Delete the note. |
+| `Tools/Claude/Live Artifacts/Live Artifacts.md` | The pair convention and update sequence. | Already owned by `ki-repo-kb-live-artifacts` and [[Admin/Operations/Live Artifacts/Live Artifacts\|Admin Live Artifacts]]; fold any unique step there. Delete the note. |
+| `Tools/Claude/Mistakes and Lessons.md` | The closed-loop incident register and its resolved lessons, which root `AGENTS.md` cites. | Move to `Admin/Operations/Mistakes and Lessons.md` with runtime-neutral wording ("the agent", "memory"), and repoint `AGENTS.md`. |
+| `Tools/Claude Housekeeping/Claude Housekeeping.md` | Little; the `mcp-housekeeping-claude` README is the authoritative catalogue and `ki-housekeeping-claude` owns its use. | Delete and remove the [[Tools]] entry. Kris to confirm, since it describes a KI product rather than a realisation. |
+| `Tools/ChatGPT/ChatGPT.md`, `Agents/ChatGPT/ChatGPT.md` | Only that a runtime without file access reads island context and returns work by manual routing. | One runtime-neutral sentence in [[How Tools Connect]]. Delete both notes. |
+| `Agents/Claude/Claude.md` | The behavioural constraints and the draft-then-release discipline for scheduled or published targets, both runtime-neutral. The five operating modes are owned by `ki-repo-kb`, and memory by [[Admin/MEMORY\|MEMORY]]. | Fold the constraints and release discipline into [[Agentic AI]]. Delete the note. |
+
+Inbound links to repoint or remove on delivery: [[Admin/Governance/Charter\|Charter]], [[Canonical Meta Notes]], [[Tending Activity]], [[Knowledge Islands]], [[Model/Activities/Activities\|Activities]], [[Authoring Guidelines]], [[Model/Activities/Tending/Health Check\|Health Check]], [[Structural Audit]], [[Model/Activities/Tending/Tending\|Tending]], [[What Keeps an Island Alive]], [[Agentic AI]], [[Model/Agents/Agents\|Agents]], [[How Tools Connect]], [[Tools]], root `AGENTS.md` and KI-ARCADIA-MOD-006. Root `CLAUDE.md` stays out of scope. Calendar notes keep their historical links.
+
+Questions for Kris: approve or amend each row; choose the Scheduled Task Audit route; confirm whether the Claude Housekeeping note goes.
 
 ## Governance
 
