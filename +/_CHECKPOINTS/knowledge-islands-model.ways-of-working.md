@@ -37,9 +37,10 @@ None yet in this thread. The rules live in `/Users/krisbrown/workspaces/kit/know
 - **MARK plan approval:** Kris confirms or changes the MARK-* defaults in the mark-design report; rejection returns KI-HARNESS-GOV-169 to draft.
 - **2026-10-09 (parked): state-of-play view.** A clear view of Projects and Initiatives, possibly drawing on `apps-observatory` and the command-centre ideas in `kit-hnr` and `kit-legal`.
 - **2026-10-09 (parked): Markdown flavour.** A gradual move from Obsidian-style to GitHub-flavoured Markdown, starting with a front-matter field declaring a note's flavour.
+- **2026-10-09 (parked): run-folder retention.** Kris approved adding a retention rule to `ki-delegation`: when a thread or run closes and its decisions are consolidated into durable owners, archive or delete its `~/.local/state/ki/agents/<run>/` folder. Pair with the findings of the master's `state-audit` background agent.
 
 ## Next step
 
 1. Point KI-HARNESS-GOV-169 at this Project (`project: ways-of-working`, `initiative: knowledge-islands-model`) in the harness, which clears the STREAM-10 warning. Then put the MARK-* defaults to Kris; once Kris approves the plan, delegate KI-HARNESS-GOV-169's implementation through `ki agent`.
-2. Add the thread-cap rule to `ki-delegation`'s Project threads section: at most three active Project threads plus the master; the master queues the rest and prepares their checkpoints so each opens with one opener.
+2. Add the thread-cap rule to `ki-delegation`'s Project threads section: at most three or four active Project threads plus the master; the master queues the rest and prepares their checkpoints so each opens with one opener.
 3. Review the other thread rules with Kris and refine them.
