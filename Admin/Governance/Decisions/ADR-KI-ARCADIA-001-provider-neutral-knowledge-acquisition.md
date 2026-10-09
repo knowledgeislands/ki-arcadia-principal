@@ -35,4 +35,4 @@ Acquisition does not require perfect initial routing, infer durable knowledge, o
 
 ## References
 
-- [SDR-KI-ARCADIA-002: The Home of Knowledge](SDR-KI-ARCADIA-002-the-home-of-knowledge.md) — establishes the Harbour as the island's incoming working area.
+- [SDR-KI-ARCADIA-002: The Home of Knowledge](SDR-KI-ARCADIA-002-the-home-of-knowledge.md) - establishes the Harbour as the island's incoming working area.

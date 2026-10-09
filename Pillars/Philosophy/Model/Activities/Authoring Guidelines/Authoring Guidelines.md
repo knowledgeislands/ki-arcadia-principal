@@ -124,9 +124,9 @@ The three generality axes - activity, island, agent - form a 2x2x2 lattice with 
 | Generality                      | Activity-specific | Activity-agnostic   |
 | ------------------------------- | ----------------- | ------------------- |
 | island-agnostic, agent-agnostic | **Definition**    | **Pattern**         |
-| island-specific, agent-agnostic | **Configuration** | —                   |
-| island-agnostic, agent-specific | —                 | **Agent Behaviour** |
-| island-specific, agent-specific | **Script**        | —                   |
+| island-specific, agent-agnostic | **Configuration** | -                   |
+| island-agnostic, agent-specific | -                 | **Agent Behaviour** |
+| island-specific, agent-specific | **Script**        | -                   |
 
 The empty corners are informative. There is no "Agent-specific definition of an activity" because activity definitions are agent-agnostic by construction; if an agent needs to do it differently from another agent, that lives in the Script. There is no "island-specific generic agentic pattern" because patterns are by definition portable across islands; an island that needs to bend a pattern records the exception in its Configuration. There is no "island-specific Agent behaviour without an activity" because an agent's island-specific behaviour is always in service of an activity, and therefore lives in the Script.
 

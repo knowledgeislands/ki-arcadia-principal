@@ -20,16 +20,16 @@ Component-specific configuration, APIs, and operational procedures belong in the
 
 The personal-controller role coordinates governed work across deterministic, agentic and hybrid paths. Its reasoning capability is optional for a particular request; its identity, policy and lifecycle responsibilities are not. [[Governed Work Controller]] defines the detailed boundary.
 
-- **Personal controller** — maintains persona and session continuity, task identity, context binding, delegated authority, lifecycle supervision and result integration across mechanical, agentic and hybrid work. Reasoning may propose work, while trusted deterministic boundaries enforce consequential operations.
-- **Governance layer** — selects and advances governed work, knowledge and repository relationships without acquiring execution-provider authority.
-- **Deterministic operations layer** — performs defined engineering operations repeatably and exposes an accountable control boundary.
-- **Execution-fabric operator** — prospectively matches an authorised execution with an eligible footprint and target, then manages provisioning, dispatch, observation, evidence return and cleanup through replaceable adapters.
-- **Task environment** — supplies the bounded filesystem, process, network and isolation boundary for one execution.
-- **Agent runtime** — performs the authorised assignment inside the task environment.
-- **Engineering interface** — lets a person inspect, change, review or deliberately attach to work.
-- **Governed knowledge layer** — retains durable context, decisions, evidence and relationships without becoming the store for every kind of operational state.
-- **Private connectivity layer** — connects authorised people, environments and services without making network location the primary trust boundary.
-- **Model execution capability** — supplies eligible inference independently of controller and worker placement.
+- **Personal controller** - maintains persona and session continuity, task identity, context binding, delegated authority, lifecycle supervision and result integration across mechanical, agentic and hybrid work. Reasoning may propose work, while trusted deterministic boundaries enforce consequential operations.
+- **Governance layer** - selects and advances governed work, knowledge and repository relationships without acquiring execution-provider authority.
+- **Deterministic operations layer** - performs defined engineering operations repeatably and exposes an accountable control boundary.
+- **Execution-fabric operator** - prospectively matches an authorised execution with an eligible footprint and target, then manages provisioning, dispatch, observation, evidence return and cleanup through replaceable adapters.
+- **Task environment** - supplies the bounded filesystem, process, network and isolation boundary for one execution.
+- **Agent runtime** - performs the authorised assignment inside the task environment.
+- **Engineering interface** - lets a person inspect, change, review or deliberately attach to work.
+- **Governed knowledge layer** - retains durable context, decisions, evidence and relationships without becoming the store for every kind of operational state.
+- **Private connectivity layer** - connects authorised people, environments and services without making network location the primary trust boundary.
+- **Model execution capability** - supplies eligible inference independently of controller and worker placement.
 
 ## Current and Candidate Mappings
 

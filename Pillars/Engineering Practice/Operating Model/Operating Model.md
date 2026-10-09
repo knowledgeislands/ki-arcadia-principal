@@ -113,14 +113,14 @@ The knowledge base should then be updated through a new, reviewable increment th
 
 ## Responsibilities
 
-- **Engineer** — frames work, selects or confirms context, delegates bounded authority, approves material plans, reviews outcomes and remains accountable for decisions.
-- **Personal agent controller** — maintains persona and task continuity, binds executions to contexts and delegated authority, supervises lifecycle and integrates results.
-- **Governance layer** — advances work and knowledge through their governed lifecycle without becoming an execution or infrastructure control plane.
-- **Deterministic operations layer** — performs defined engineering operations and enforces consequential control boundaries.
-- **Execution-fabric operator** — prospectively selects eligible footprints and targets, manages task-environment lifecycle and returns evidence through provider-neutral boundaries.
-- **Agent runtime** — performs the bounded assignment inside its task environment.
-- **Engineering interface** — supports interaction, inspection, approval, review and deliberate human attachment without establishing authority by itself.
-- **Governed knowledge layer** — retains durable knowledge, context, decisions and evolving guidance while leaving credentials and controller operational state to their appropriate systems.
+- **Engineer** - frames work, selects or confirms context, delegates bounded authority, approves material plans, reviews outcomes and remains accountable for decisions.
+- **Personal agent controller** - maintains persona and task continuity, binds executions to contexts and delegated authority, supervises lifecycle and integrates results.
+- **Governance layer** - advances work and knowledge through their governed lifecycle without becoming an execution or infrastructure control plane.
+- **Deterministic operations layer** - performs defined engineering operations and enforces consequential control boundaries.
+- **Execution-fabric operator** - prospectively selects eligible footprints and targets, manages task-environment lifecycle and returns evidence through provider-neutral boundaries.
+- **Agent runtime** - performs the bounded assignment inside its task environment.
+- **Engineering interface** - supports interaction, inspection, approval, review and deliberate human attachment without establishing authority by itself.
+- **Governed knowledge layer** - retains durable knowledge, context, decisions and evolving guidance while leaving credentials and controller operational state to their appropriate systems.
 
 Hermes Agent, `ki`, tools-mgit, Herdr, Zed and Knowledge Islands are current or candidate mappings for these roles. They remain replaceable: `ki` implements governance rather than fabric operation, with fabric implementation owned by `ki-techne-harness` and the operator interface independently owned by `tools-techne` under ADR-KI-ARCADIA-006.
 

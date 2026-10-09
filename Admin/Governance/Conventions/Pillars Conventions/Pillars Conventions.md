@@ -9,7 +9,7 @@ author: Written with Claude
 
 # Pillars Conventions
 
-Conventions specific to the `Pillars/` zone — how notes are structured, named, and organised within each pillar.
+Conventions specific to the `Pillars/` zone - how notes are structured, named, and organised within each pillar.
 
 ## Contents
 

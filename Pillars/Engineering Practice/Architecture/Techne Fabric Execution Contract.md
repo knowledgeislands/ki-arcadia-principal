@@ -49,14 +49,14 @@ The decision record for one execution states the considered footprint and target
 
 The architectural lifecycle has the following observable transitions:
 
-1. **Proposed** — objective, context and requested authority are known, but no capacity is allocated.
-2. **Admitted** — authority, footprint and target eligibility are validated against an immutable baseline.
-3. **Provisioned** — the bounded task environment exists and readiness checks pass.
-4. **Running** — the runtime performs only the admitted assignment.
-5. **Paused or attached** — work retains its original context and authority while awaiting input or deliberate human attachment.
-6. **Stopped, failed or completed** — execution ends with an explicit outcome and no implicit retry or scope expansion.
-7. **Reconciled** — result references, verification and material evidence reach the governed review boundary.
-8. **Cleaned** — ephemeral capacity, credentials and temporary state are removed, or an explicit retained-state policy and owner are recorded.
+1. **Proposed** - objective, context and requested authority are known, but no capacity is allocated.
+2. **Admitted** - authority, footprint and target eligibility are validated against an immutable baseline.
+3. **Provisioned** - the bounded task environment exists and readiness checks pass.
+4. **Running** - the runtime performs only the admitted assignment.
+5. **Paused or attached** - work retains its original context and authority while awaiting input or deliberate human attachment.
+6. **Stopped, failed or completed** - execution ends with an explicit outcome and no implicit retry or scope expansion.
+7. **Reconciled** - result references, verification and material evidence reach the governed review boundary.
+8. **Cleaned** - ephemeral capacity, credentials and temporary state are removed, or an explicit retained-state policy and owner are recorded.
 
 Recovery may recreate a task environment, but it preserves the execution identity, immutable bindings and deduplication boundary. A replacement environment does not create new authority.
 

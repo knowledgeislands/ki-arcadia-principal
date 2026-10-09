@@ -24,13 +24,13 @@ Notes route to one of three zones depending on whether the content is portable, 
 | --- | --- | --- | --- |
 | Philosophy | `Pillars/Philosophy/` | The KI concept, architecture, and governance framework | What is the KI system, generically? ‡ |
 | Governance | `Admin/Governance/` | Arcadia's identity, decisions, conventions, policies, and templates | What defines this island? § |
-| Operations | `Admin/Operations/` | Arcadia's day-to-day running — activities, processes, skills | How does this island operate? |
+| Operations | `Admin/Operations/` | Arcadia's day-to-day running - activities, processes, skills | How does this island operate? |
 
-† **Key question** — the discriminating question for routing a note into each zone.
+† **Key question** - the discriminating question for routing a note into each zone.
 
-‡ **Philosophy key question** — what is the Knowledge Islands system and how does it work generically?
+‡ **Philosophy key question** - what is the Knowledge Islands system and how does it work generically?
 
-§ **Governance key question** — what defines this island and how must it be structured?
+§ **Governance key question** - what defines this island and how must it be structured?
 
 Common routing decisions:
 

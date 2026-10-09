@@ -9,7 +9,7 @@ author: Written with Claude
 
 # Admin Conventions
 
-Conventions specific to the `Admin/` zone — configuration, routing, and physical context for how this island operates.
+Conventions specific to the `Admin/` zone - configuration, routing, and physical context for how this island operates.
 
 ## Contents
 
@@ -20,4 +20,4 @@ Conventions specific to the `Admin/` zone — configuration, routing, and physic
 | [[Admin Conventions/GitHub Apps\|GitHub Apps]] | GitHub Apps and automated identities acting on the organisation's repositories |
 | [[Admin Conventions/Physical Locations\|Physical Locations]] | Physical workspace locations referenced by activities and agents |
 
-† **Integrations** — external tools connected to Arcadia: MCP tool prefixes, inbox paths, service identifiers.
+† **Integrations** - external tools connected to Arcadia: MCP tool prefixes, inbox paths, service identifiers.

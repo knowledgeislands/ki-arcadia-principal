@@ -9,7 +9,7 @@ author: Written with Claude
 
 # Conventions
 
-Arcadia's island-specific conventions — the vocabulary, authoring decisions, and routing rules that supplement the portable KI framework.
+Arcadia's island-specific conventions - the vocabulary, authoring decisions, and routing rules that supplement the portable KI framework.
 
 ## General Conventions
 
@@ -19,8 +19,8 @@ These apply across all zones:
 | ------------------------ | ---------------------------------------------------------------------- |
 | [[Authoring]]            | Local authoring decisions on top of the generic KI authoring framework |
 | [[Glossary]]             | Decoder ring for KI vocabulary and Arcadia-specific terminology        |
-| [[Communication Style]]  | How agents should communicate on this island — tone, format, voice     |
-| [[Canonical Meta Notes]] | Note type taxonomy — what note types exist and what they are for       |
+| [[Communication Style]]  | How agents should communicate on this island - tone, format, voice     |
+| [[Canonical Meta Notes]] | Note type taxonomy - what note types exist and what they are for       |
 
 ---
 

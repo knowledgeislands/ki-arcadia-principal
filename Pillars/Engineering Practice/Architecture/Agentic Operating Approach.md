@@ -42,16 +42,16 @@ The `ki` governance surface and a prospective execution-fabric operator have dis
 
 The established term **personal agent controller** names the persona-bearing role, but does not mean every controller action or dispatched workload requires an agent. **Personal controller** is the shorter role name used where the mechanical, agentic and hybrid paths all apply.
 
-- **Personal controller** — the service through which a person coordinates governed mechanical, agentic and hybrid work. It maintains persona and session continuity, task identity, context binding, delegated authority, lifecycle supervision and result integration. Reasoning may interpret and propose work, while trusted deterministic boundaries enforce consequential operations.
-- **Persona** — the enduring agent identity associated with one person. Persona continuity does not permit unrestricted memory sharing or identical authority across contexts.
-- **Working context** — the explicit purpose and capacity in which the person is acting, together with the knowledge, relationships, capabilities and authority applicable to that capacity.
-- **Working mode** — how the person and agents participate: attached interactive work, persistent human-supervised work or unattended isolated work. Context answers which hat; mode answers how work proceeds. [[Operating Model]] defines these modes and their lifecycle.
-- **Workload footprint** — a reusable declaration of the runtime, tools, environment requirements, capabilities and permitted operating envelope for mechanical, agentic or hybrid work. It may include an agent runtime, describes more than a software image and contains neither a particular assignment's credentials nor its repository contents.
-- **Execution** — one identifiable, bounded assignment through a footprint, bound to an explicit context, repository baseline and grant of authority. It may outlive the conversation that initiated it.
-- **Task environment** — the bounded filesystem, process, network and isolation environment used by an execution. An execution may recover into a replacement environment; an environment is not the task's identity.
-- **Execution target** — an endpoint or pool of capacity eligible to host a task environment. Eligibility follows declared capability and policy, not connectivity or common ownership alone.
-- **Deployment** — a running installation of controller, operator or worker software in a location. Moving a deployment does not create a new persona, and creating a worker does not create another personal controller.
-- **Interface** — a means of interacting with work, such as a conversation channel or development editor. It owns neither persona nor task authority and must not be the sole durable record of ongoing work.
+- **Personal controller** - the service through which a person coordinates governed mechanical, agentic and hybrid work. It maintains persona and session continuity, task identity, context binding, delegated authority, lifecycle supervision and result integration. Reasoning may interpret and propose work, while trusted deterministic boundaries enforce consequential operations.
+- **Persona** - the enduring agent identity associated with one person. Persona continuity does not permit unrestricted memory sharing or identical authority across contexts.
+- **Working context** - the explicit purpose and capacity in which the person is acting, together with the knowledge, relationships, capabilities and authority applicable to that capacity.
+- **Working mode** - how the person and agents participate: attached interactive work, persistent human-supervised work or unattended isolated work. Context answers which hat; mode answers how work proceeds. [[Operating Model]] defines these modes and their lifecycle.
+- **Workload footprint** - a reusable declaration of the runtime, tools, environment requirements, capabilities and permitted operating envelope for mechanical, agentic or hybrid work. It may include an agent runtime, describes more than a software image and contains neither a particular assignment's credentials nor its repository contents.
+- **Execution** - one identifiable, bounded assignment through a footprint, bound to an explicit context, repository baseline and grant of authority. It may outlive the conversation that initiated it.
+- **Task environment** - the bounded filesystem, process, network and isolation environment used by an execution. An execution may recover into a replacement environment; an environment is not the task's identity.
+- **Execution target** - an endpoint or pool of capacity eligible to host a task environment. Eligibility follows declared capability and policy, not connectivity or common ownership alone.
+- **Deployment** - a running installation of controller, operator or worker software in a location. Moving a deployment does not create a new persona, and creating a worker does not create another personal controller.
+- **Interface** - a means of interacting with work, such as a conversation channel or development editor. It owns neither persona nor task authority and must not be the sole durable record of ongoing work.
 
 ## Authority, State and Continuity
 

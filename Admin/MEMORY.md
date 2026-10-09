@@ -15,8 +15,8 @@ Root memory index for the island, per the canonical Knowledge Islands zone model
 
 ## Active Zones
 
-- [[Admin/Governance/Governance|Governance]] — what this island is: charter, known lands, conventions, decisions, policies, templates.
-- [[Admin/Operations/Operations|Operations]] — how this island runs: activities, processes, live artifacts, skills.
-- [[Pillars/Philosophy/Knowledge Islands|Knowledge Islands]] — the portable model: structure, conventions, activities, agents, and tools.
+- [[Admin/Governance/Governance|Governance]] - what this island is: charter, known lands, conventions, decisions, policies, templates.
+- [[Admin/Operations/Operations|Operations]] - how this island runs: activities, processes, live artifacts, skills.
+- [[Pillars/Philosophy/Knowledge Islands|Knowledge Islands]] - the portable model: structure, conventions, activities, agents, and tools.
 - [[Engineering Practice/Engineering Practice|Engineering Practice]] - canonical Techné engineering foundations, architecture, operating model, technology posture and diagrams. Load [[Engineering Practice/MEMORY|Engineering Practice memory]] before substantive engineering knowledge work.
 - [[Techne Programme Hold]] - remote-running and remote-environment constraints for both Techné implementation products; local tool-building continues. One standing exemption covers setting up and operating the single agent host until the island owner changes or withdraws it, with no fixed review date; the prototype review keeps it.

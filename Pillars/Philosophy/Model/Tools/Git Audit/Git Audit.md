@@ -17,7 +17,7 @@ MCP server that walks a tree of git repositories and reports on their state. Sou
 
 **Inspection**
 
-`git_repos_audit` — scans a configured root directory recursively, returning branch name, working-tree cleanliness, ahead/behind count relative to upstream, last-commit metadata, and fetch age for each repository found.
+`git_repos_audit` - scans a configured root directory recursively, returning branch name, working-tree cleanliness, ahead/behind count relative to upstream, last-commit metadata, and fetch age for each repository found.
 
 **Optional mutations** (require elevated access level)
 

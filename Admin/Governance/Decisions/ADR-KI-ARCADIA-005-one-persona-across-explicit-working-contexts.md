@@ -39,4 +39,4 @@ Arcadia maintains this decision record. The archived copy in `knowledgeislands/k
 ## References
 
 - [GDR-KI-ARCADIA-001](GDR-KI-ARCADIA-001-adopting-decision-records.md) - adopts the Decision Records instrument the engineering discipline uses.
-- [ADR-KI-ARCADIA-004](ADR-KI-ARCADIA-004-provider-neutral-isolated-agent-execution.md) — establishes the provider-neutral controller, execution and isolation boundaries this decision extends.
+- [ADR-KI-ARCADIA-004](ADR-KI-ARCADIA-004-provider-neutral-isolated-agent-execution.md) - establishes the provider-neutral controller, execution and isolation boundaries this decision extends.

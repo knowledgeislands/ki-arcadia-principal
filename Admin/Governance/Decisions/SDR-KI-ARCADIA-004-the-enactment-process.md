@@ -13,9 +13,9 @@ decision_depends_on: ['SDR-KI-ARCADIA-003']
 
 ## Context
 
-Knowledge does not improve by accumulating unchanged. It improves through a continuous cycle — **Capture** (material arrives from outside), **Connect** (material is assessed, contextualised, and linked to existing knowledge), and **Reflect** (periodic review surfaces what is stale, resolves gaps, and retires what no longer holds). This cycle produces two kinds of change: **informational change**, when new material enters the body of knowledge, and **reflective change**, when existing knowledge is reframed or retired without new input. Both are necessary; neither replaces the other.
+Knowledge does not improve by accumulating unchanged. It improves through a continuous cycle - **Capture** (material arrives from outside), **Connect** (material is assessed, contextualised, and linked to existing knowledge), and **Reflect** (periodic review surfaces what is stale, resolves gaps, and retires what no longer holds). This cycle produces two kinds of change: **informational change**, when new material enters the body of knowledge, and **reflective change**, when existing knowledge is reframed or retired without new input. Both are necessary; neither replaces the other.
 
-The cycle runs continuously. Without a governance gate, both kinds of change land directly in Pillars and Resources — the stable, canonical zones of the island. Stable knowledge would degrade: proposals that have not been reviewed, material that has not been contextualised, and changes that have not been ratified would share space with knowledge the island depends on.
+The cycle runs continuously. Without a governance gate, both kinds of change land directly in Pillars and Resources - the stable, canonical zones of the island. Stable knowledge would degrade: proposals that have not been reviewed, material that has not been contextualised, and changes that have not been ratified would share space with knowledge the island depends on.
 
 SDR-KI-ARCADIA-003 established that Processes are one of the five governance areas of an island, and that they define the formal paths through which significant changes must pass. The Enactment Process is that gate.
 
@@ -31,14 +31,14 @@ Stream  ←→  Enactment Process (Council)
       Pillars / Resources
 ```
 
-- **Streams** are the home of ongoing work. Authority to work in Streams is granted by the material's presence in the workspace — no proposal is needed to begin work there.
+- **Streams** are the home of ongoing work. Authority to work in Streams is granted by the material's presence in the workspace - no proposal is needed to begin work there.
 - **Pillars and Resources** are the home of stable, ratified knowledge. A proposal must pass through the council before anything lands there as settled.
 
 A proposal moves through a defined status lifecycle:
 
 `draft → ready → in-progress → awaiting-review → done`
 
-The Enactment Process is not a tool the council uses — it is how the council operates. The council's authority is expressed entirely through this process. On a single-person island, the sole member stands in for the council.
+The Enactment Process is not a tool the council uses - it is how the council operates. The council's authority is expressed entirely through this process. On a single-person island, the sole member stands in for the council.
 
 The operational mechanics - the full status lifecycle, roadmap-record anatomy, rollout discipline, post-change review rules, and working conventions - are defined canonically in `ki-repo-kb-streams` and the shared change-management skills. This DR establishes the governance commitment; those skills are the source of truth for the mechanics.
 
@@ -48,7 +48,7 @@ The operational mechanics - the full status lifecycle, roadmap-record anatomy, r
 - Every new or reworked piece of canonical content in Admin, Pillars or Resources - whether informational or reflective - requires a proposal that passes through the Enactment Process. Related changes share one proposal. An explicit owner instruction for a bounded change stands in for a proposal, because the owner's instruction is the ratification. Trivial typo and formatting fixes, Calendar entries and inbox triage need none.
 - Completed roadmap records are retained as review evidence until their owner explicitly selects them for pruning. Durable outputs and Decision Records retain their own standing.
 - `ki-repo-kb-streams` and the shared change-management skills are the canonical references for operational mechanics. Islands working the process load the relevant skills.
-- Decision Records (when adopted) are one class of output that a settled proposal may produce — the permanent record of rationale that proposals themselves cannot provide.
+- Decision Records (when adopted) are one class of output that a settled proposal may produce - the permanent record of rationale that proposals themselves cannot provide.
 
 ## References
 
