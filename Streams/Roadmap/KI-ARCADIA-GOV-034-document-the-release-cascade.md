@@ -7,12 +7,12 @@ kind: deliver
 purpose: governance
 project: estate-factorisation
 component: operations
-status: ready
+status: awaiting-review
 blocks: []
 blocked_by: []
 baseline_ref: 61f86c072cb6c03158f6640ef88e797405f9a8f1
 created_at: 2026-10-09T07:23:29Z
-updated_at: 2026-10-09T07:23:29Z
+updated_at: 2026-10-09T07:40:00Z
 ---
 
 # Document the Release Cascade
@@ -68,6 +68,30 @@ Captured on Kris's instruction (gov-020 decisions log, Decision 7).
 ### Adoption and plan
 
 Adopted Now and planned Ready on 2026-10-09: Kris's instruction is the approval of its outcome, so the record is captured, planned, delivered, accepted and pruned in one run.
+
+## Review
+
+### Delivered
+
+`Admin/Operations/Processes/Release Cascade.md` is the canonical overview: the project table, the six stages from a change landing to Kris's machines, the automatic, manual and approved table, and "What Kris does, and when". Its Archify source and exported SVG sit beside it, and the `Processes` index introduces it. The draft and diagram from the first run were reused and brought up to date with KI-HARNESS-GOV-161's delivery: the Harness updater's guarded auto-merge request, XDR-KI-HARNESS-001's exception, and KI-HARNESS-GOV-168's rollout.
+
+### Verification
+
+- Facts checked against the live checkouts: twenty inline `KI_VERSION: v0.8.4` pins, the Harness receiver file at `v0.8.4`, nine `mcp-*` servers with no tags, the tap's single release consumer `ki-website`, and each tool's release trigger.
+- Archify `finalize` passed at `showcase` quality (validate, deliver, check and browser-check gates), and the SVG renders with its custom legend.
+- `ki repo audit` gives PASS=21 WARN=3 FAIL=0; all three warnings (CI-1, HOOK-1, STREAM-10) predate this record. The commit hooks' Markdown gate passes.
+
+### Outstanding concerns
+
+None. No GitHub settings, workflows or pins were changed.
+
+### Post-change review
+
+The note, its source and SVG, and the index section landed in the planned files only. The tools-ki and harness links are made under those repositories' own authority.
+
+### Mini recap
+
+The release cascade now has one Arcadia home; follow-up automation is already captured as KI-HARNESS-GOV-168.
 
 ## Governance
 

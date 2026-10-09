@@ -1,0 +1,279 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Knowledge Islands release cascade",
+    "quality_profile": "showcase",
+    "locale": "en",
+    "output": "release-cascade.html",
+    "viewBox": [
+      1240,
+      786
+    ],
+    "legend": {
+      "mode": "all",
+      "entries": {
+        "frontend": {
+          "label": "Website or machine"
+        },
+        "backend": {
+          "label": "Code and CI"
+        },
+        "security": {
+          "label": "Owner decision"
+        },
+        "messagebus": {
+          "label": "Bot automation"
+        },
+        "database": {
+          "label": "Published release"
+        },
+        "cloud": {
+          "visible": false
+        },
+        "external": {
+          "visible": false
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "owner",
+      "label": "Kris"
+    },
+    {
+      "id": "source",
+      "label": "Tooling project"
+    },
+    {
+      "id": "tap",
+      "label": "homebrew-tap"
+    },
+    {
+      "id": "consumers",
+      "label": "Consuming repositories"
+    },
+    {
+      "id": "machines",
+      "label": "Kris's machines"
+    }
+  ],
+  "phases": [
+    {
+      "id": "land",
+      "label": "Land and decide",
+      "fromCol": 0,
+      "toCol": 1
+    },
+    {
+      "id": "publish",
+      "label": "Release and publish",
+      "fromCol": 2,
+      "toCol": 3,
+      "variant": "emphasis"
+    },
+    {
+      "id": "notify",
+      "label": "Notify and take on",
+      "fromCol": 4,
+      "toCol": 5,
+      "variant": "dashed"
+    }
+  ],
+  "mainPath": [
+    "change",
+    "due",
+    "workflow",
+    "release",
+    "formula",
+    "dispatch",
+    "pins"
+  ],
+  "nodes": [
+    {
+      "id": "change",
+      "lane": "source",
+      "col": 0,
+      "type": "backend",
+      "label": "Change lands",
+      "sublabel": "merged to main",
+      "width": 140
+    },
+    {
+      "id": "due",
+      "lane": "owner",
+      "col": 1,
+      "type": "security",
+      "label": "Release due?",
+      "sublabel": "release on demand",
+      "tag": "Kris asks",
+      "width": 140
+    },
+    {
+      "id": "rebuild",
+      "lane": "machines",
+      "col": 1,
+      "type": "frontend",
+      "label": "Local build",
+      "sublabel": "rebuild or link main",
+      "width": 140
+    },
+    {
+      "id": "workflow",
+      "lane": "source",
+      "col": 2,
+      "type": "backend",
+      "label": "Release workflow",
+      "sublabel": "tag, sign, verify",
+      "width": 140
+    },
+    {
+      "id": "release",
+      "lane": "source",
+      "col": 3,
+      "type": "database",
+      "label": "Immutable release",
+      "sublabel": "signed archives",
+      "width": 140
+    },
+    {
+      "id": "formula",
+      "lane": "tap",
+      "col": 3,
+      "type": "messagebus",
+      "label": "Formula PR",
+      "sublabel": "bot, auto-merged",
+      "width": 140
+    },
+    {
+      "id": "dispatch",
+      "lane": "tap",
+      "col": 4,
+      "type": "messagebus",
+      "label": "Consumer dispatch",
+      "sublabel": "tool-release-published",
+      "width": 150
+    },
+    {
+      "id": "website",
+      "lane": "consumers",
+      "col": 4,
+      "type": "frontend",
+      "label": "ki-website",
+      "sublabel": "bot PR, auto-merged",
+      "width": 150
+    },
+    {
+      "id": "pins",
+      "lane": "consumers",
+      "col": 5,
+      "type": "backend",
+      "label": "ki pin bump",
+      "sublabel": "receiver PR, CI-gated",
+      "tag": "auto-merge approved",
+      "width": 150
+    },
+    {
+      "id": "brew",
+      "lane": "machines",
+      "col": 5,
+      "type": "frontend",
+      "label": "brew upgrade",
+      "sublabel": "Kris runs it",
+      "width": 150
+    }
+  ],
+  "edges": [
+    {
+      "id": "change-due",
+      "from": "change",
+      "to": "due",
+      "label": "accumulates"
+    },
+    {
+      "id": "due-rebuild",
+      "from": "due",
+      "to": "rebuild",
+      "label": "not yet",
+      "variant": "dashed",
+      "role": "branch"
+    },
+    {
+      "id": "due-workflow",
+      "from": "due",
+      "to": "workflow",
+      "label": "yes",
+      "variant": "emphasis"
+    },
+    {
+      "id": "workflow-release",
+      "from": "workflow",
+      "to": "release",
+      "label": "publish"
+    },
+    {
+      "id": "release-formula",
+      "from": "release",
+      "to": "formula",
+      "label": "notify tap",
+      "variant": "emphasis"
+    },
+    {
+      "id": "formula-dispatch",
+      "from": "formula",
+      "to": "dispatch",
+      "label": "merged"
+    },
+    {
+      "id": "dispatch-website",
+      "from": "dispatch",
+      "to": "website",
+      "label": "every tool"
+    },
+    {
+      "id": "dispatch-pins",
+      "from": "dispatch",
+      "to": "pins",
+      "label": "ki only",
+      "variant": "emphasis"
+    },
+    {
+      "id": "formula-brew",
+      "from": "formula",
+      "to": "brew",
+      "label": "manual",
+      "variant": "dashed",
+      "role": "branch"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Automatic today",
+      "items": [
+        "Release workflow signs, publishes and proves a clean install",
+        "Tap formula PR and ki-website PR auto-merge after CI",
+        "Daily schedules backstop a missed dispatch"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Manual today",
+      "items": [
+        "Deciding a release is due and starting it",
+        "Every ki pin bump: one receiver, about 20 inline KI_VERSION pins",
+        "brew upgrade, and local rebuilds of ki"
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "Approved to become automatic",
+      "items": [
+        "Release bot across the knowledgeislands organisation",
+        "Receiver pin file and update-ki-pin in every repository",
+        "Pin-bump PRs auto-merge when only the pin changes and CI passes"
+      ]
+    }
+  ]
+}
