@@ -1,6 +1,6 @@
 ---
 note_type: admin/governance/decision
-id: GDR-KI-ARCADIA-008
+id: GDR-KI-ARCADIA-007
 title: 'Governing Technology Investigations'
 date: 2026-09-15
 status: current
@@ -8,7 +8,7 @@ decision_type: governance
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/gdr
 ---
 
-# GDR-KI-ARCADIA-008: Governing Technology Investigations
+# GDR-KI-ARCADIA-007: Governing Technology Investigations
 
 ## Context
 

@@ -6,7 +6,7 @@ date: 2026-09-16
 status: current
 decision_type: architecture
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/adr
-decision_depends_on: [GDR-KI-ARCADIA-007]
+decision_depends_on: [GDR-KI-ARCADIA-001]
 ---
 
 # ADR-KI-ARCADIA-004: Provider-neutral isolated agent execution
@@ -43,6 +43,6 @@ Arcadia maintains this decision record. The archived copy in `knowledgeislands/k
 
 ## References
 
-- [GDR-KI-ARCADIA-007](GDR-KI-ARCADIA-007-adopting-decision-records.md) — records the engineering discipline's Decision Records instrument.
+- [GDR-KI-ARCADIA-001](GDR-KI-ARCADIA-001-adopting-decision-records.md) - adopts the Decision Records instrument the engineering discipline uses.
 - [Development Container specification](https://github.com/devcontainers/spec/blob/main/docs/specs/devcontainer-reference.md) — portable development-environment description.
 - [OCI Image specification](https://github.com/opencontainers/image-spec/blob/main/spec.md) — portable image packaging and transport.

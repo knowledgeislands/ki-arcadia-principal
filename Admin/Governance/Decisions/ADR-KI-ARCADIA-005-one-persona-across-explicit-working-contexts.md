@@ -6,7 +6,7 @@ date: 2026-09-15
 status: current
 decision_type: architecture
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/adr
-decision_depends_on: [GDR-KI-ARCADIA-007, ADR-KI-ARCADIA-004]
+decision_depends_on: [GDR-KI-ARCADIA-001, ADR-KI-ARCADIA-004]
 ---
 
 # ADR-KI-ARCADIA-005: One persona across explicit working contexts
@@ -38,5 +38,5 @@ Arcadia maintains this decision record. The archived copy in `knowledgeislands/k
 
 ## References
 
-- [GDR-KI-ARCADIA-007](GDR-KI-ARCADIA-007-adopting-decision-records.md) — records the engineering discipline's Decision Records instrument.
+- [GDR-KI-ARCADIA-001](GDR-KI-ARCADIA-001-adopting-decision-records.md) - adopts the Decision Records instrument the engineering discipline uses.
 - [ADR-KI-ARCADIA-004](ADR-KI-ARCADIA-004-provider-neutral-isolated-agent-execution.md) — establishes the provider-neutral controller, execution and isolation boundaries this decision extends.

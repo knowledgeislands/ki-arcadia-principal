@@ -31,10 +31,9 @@ Records are ordered by reveal order — the logical sequence in which the decisi
 
 ## Engineering decisions
 
-Arcadia maintains these engineering decisions, adopted from the retired Techné principal and renumbered into the KI-ARCADIA series. Their archived source copies are historical evidence only, not a second decision authority.
+Arcadia maintains these engineering decisions, adopted from the retired Techné principal and renumbered into the KI-ARCADIA series under GDR-KI-ARCADIA-001. Their archived source copies are historical evidence only, not a second decision authority.
 
-1. [GDR-KI-ARCADIA-007](GDR-KI-ARCADIA-007-adopting-decision-records.md)
-2. [ADR-KI-ARCADIA-004](ADR-KI-ARCADIA-004-provider-neutral-isolated-agent-execution.md)
-3. [ADR-KI-ARCADIA-005](ADR-KI-ARCADIA-005-one-persona-across-explicit-working-contexts.md)
-4. [ADR-KI-ARCADIA-006](ADR-KI-ARCADIA-006-techne-implementation-ownership.md)
-5. [GDR-KI-ARCADIA-008](GDR-KI-ARCADIA-008-governing-technology-investigations.md)
+1. [ADR-KI-ARCADIA-004](ADR-KI-ARCADIA-004-provider-neutral-isolated-agent-execution.md)
+2. [ADR-KI-ARCADIA-005](ADR-KI-ARCADIA-005-one-persona-across-explicit-working-contexts.md)
+3. [ADR-KI-ARCADIA-006](ADR-KI-ARCADIA-006-techne-implementation-ownership.md)
+4. [GDR-KI-ARCADIA-007](GDR-KI-ARCADIA-007-governing-technology-investigations.md)

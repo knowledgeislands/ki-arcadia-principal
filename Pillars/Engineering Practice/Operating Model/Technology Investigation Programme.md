@@ -75,7 +75,7 @@ Techne maintains no standing investigation inbox or automatic cadence. New candi
 
 [[Technology Radar]] records the resulting current technology posture when accepted evidence justifies a change.
 
-[[GDR-KI-ARCADIA-008-governing-technology-investigations|GDR-KI-ARCADIA-008]] records the ownership and evidence decision.
+[[GDR-KI-ARCADIA-007-governing-technology-investigations|GDR-KI-ARCADIA-007]] records the ownership and evidence decision.
 
 Return to [[Operating Model]].
 

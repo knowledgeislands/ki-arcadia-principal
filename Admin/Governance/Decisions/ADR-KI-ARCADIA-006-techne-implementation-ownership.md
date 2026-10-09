@@ -6,7 +6,7 @@ date: 2026-10-07
 status: current
 decision_type: architecture
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/adr
-decision_depends_on: [GDR-KI-ARCADIA-007, ADR-KI-ARCADIA-004, ADR-KI-ARCADIA-005]
+decision_depends_on: [GDR-KI-ARCADIA-001, ADR-KI-ARCADIA-004, ADR-KI-ARCADIA-005]
 ---
 
 # ADR-KI-ARCADIA-006: Techne implementation ownership
@@ -60,7 +60,7 @@ Arcadia holds the only live copy of this decision record.
 
 ## References
 
-- [GDR-KI-ARCADIA-007](GDR-KI-ARCADIA-007-adopting-decision-records.md) - records the engineering discipline's Decision Records instrument.
+- [GDR-KI-ARCADIA-001](GDR-KI-ARCADIA-001-adopting-decision-records.md) - adopts the Decision Records instrument the engineering discipline uses.
 - [ADR-KI-ARCADIA-004](ADR-KI-ARCADIA-004-provider-neutral-isolated-agent-execution.md) - establishes provider-neutral controller and isolated execution boundaries.
 - [ADR-KI-ARCADIA-005](ADR-KI-ARCADIA-005-one-persona-across-explicit-working-contexts.md) - establishes persona continuity across explicit working contexts.
 - Techne Harness `TECHNE-TOOLS-OPS-006` - accepted the standalone CLI extraction and retained harness boundary.
