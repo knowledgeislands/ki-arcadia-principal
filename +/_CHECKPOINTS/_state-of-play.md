@@ -15,7 +15,8 @@ This is the master thread. Since 2026-10-09 it does only project management and 
 
 ## Current state
 
-- **Thread cap.** At most three Project threads are active at once, plus this master; the master queues the rest and prepares their checkpoints so each opens with one opener (Decision 19). Kris names a new Zed thread with the label and pastes the opener; the opener resolves the Project name to the single `*.<project>.md` checkpoint, or `_state-of-play.md` here.
+- **Mark: 2026-10-09 22:37 BST.** Struck by Kris. The next roll-up covers everything after this point in the master thread only: decisions log after Decision 32; ki-arcadia-principal after `ea100c3`, ki-agentic-harness after `132a7bca`, tools-ki after `6b8954d`; background agents running at the mark: `sweep-approvals` and `state-audit`. Outstanding at the mark: the Rig and Techne threads pushing so TECHNE-TOOLS-OPS-022, DOTFILES-UE-073 and DOTFILES-UE-081 can be accepted and DOTFILES-UE-075 and DOTFILES-UE-080 pruned; island-model-and-tending doing CHECKLIST and APPS-NOTE; state-audit's clean-up proposals for Kris. Applied by hand until KI-HARNESS-GOV-169 is implemented.
+- **Thread cap.** At most three or four Project threads are active at once, plus this master; the master queues the rest and prepares their checkpoints so each opens with one opener (Decision 19). Kris names a new Zed thread with the label and pastes the opener; the opener resolves the Project name to the single `*.<project>.md` checkpoint, or `_state-of-play.md` here.
 - **Active threads.** The mac-studio-bootstrap thread runs on the Mac Studio. Rig: chezmoi is the thread for the [secrets-hygiene](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/secrets-hygiene.md) Project, active since 2026-10-09 (Decision 31).
 
   | Label | Checkpoint | Opener |
