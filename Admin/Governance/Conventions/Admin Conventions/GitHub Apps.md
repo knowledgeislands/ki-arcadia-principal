@@ -3,7 +3,7 @@ note_type: admin/governance/convention
 tags:
   - card/note
   - topic/knowledge-islands
-updated: 2026-10-05T13:50:00Z
+updated: 2026-10-09T15:50:46Z
 author: AI-assisted
 ---
 
@@ -27,33 +27,33 @@ The organisation's own App for the tool release chain: an immutable `tools-*` re
 | Created | 2026-09-20 |
 | Permissions | Contents write, Pull requests write, Metadata read |
 | App ID | 5008264 |
-| Installation | Selected repositories: `ki-website` and `homebrew-tap` |
-| Credential holders | `homebrew-tap`, `ki-website`, `tools-ki`, `tools-mgit`, `tools-rig`, `tools-techne` and `tools-git-almanac` - per-repository settings, not organisation-level |
+| Installation | Selected repositories: `ki-website`, `homebrew-tap` and `ki-agentic-harness` |
+| Credential holders | `homebrew-tap`, `ki-website`, `ki-agentic-harness`, `tools-ki`, `tools-mgit`, `tools-rig`, `tools-techne` and `tools-git-almanac` - per-repository settings, not organisation-level |
 | App ID credential | `KI_TOOLS_RELEASE_BOT_APP_ID` - Actions variable, set to 5008264 |
 | Private key credential | `KI_TOOLS_RELEASE_BOT_PRIVATE_KEY` - Actions secret |
-| Key custody | Kris's 1Password, `Personal` vault, Secure Note "ki-tools-release-bot private key" |
+| Key custody | Kris's 1Password, `Rig` vault, item "ki-tools-release-bot private key", attachment `ki-tools-release-bot.2026-10-05.private-key.pem` |
 | Key rotation | Kris |
 
 ### Key custody
 
-The private key is held in Kris's 1Password, in the `Personal` vault, as the Secure Note "ki-tools-release-bot private key" with the `.pem` file attached. The note also lists the App ID, the credential-holding repositories and the rotation steps below.
+The private key is held in Kris's 1Password, in the `Rig` vault, as the item "ki-tools-release-bot private key" with the attachment `ki-tools-release-bot.2026-10-05.private-key.pem`. Its `op read` path is `op://Rig/ki-tools-release-bot private key/ki-tools-release-bot.2026-10-05.private-key.pem`. The item also lists the App ID, the credential-holding repositories and the rotation steps below.
 
 The original key generated on 2026-09-20 was lost. A replacement key was generated on 2026-10-05 and Kris deleted the old key from the App settings the same day, so the 2026-10-05 key is the only active key.
 
 ### Credential holders
 
-The App is installed only on `ki-website` and `homebrew-tap`, the repositories it writes to. The tool repositories (`tools-ki`, `tools-mgit`, `tools-rig`, `tools-techne` and `tools-git-almanac`) are not installation targets: they hold the App ID variable and private key secret only so that their release workflows can mint an installation token targeting the tap. All 7 repositories hold the credentials as repository-level settings; there is no organisation-level secret or variable.
+The App is installed on `ki-website`, `homebrew-tap` and `ki-agentic-harness`, the repositories it writes to. The tool repositories (`tools-ki`, `tools-mgit`, `tools-rig`, `tools-techne` and `tools-git-almanac`) are not installation targets: they hold the App ID variable and private key secret only so their release workflows can mint an installation token targeting the tap. All 8 repositories hold the credentials in repository-level settings; there is no organisation-level secret or variable.
 
 ### Key rotation
 
-1. Generate a new private key on the App's settings page and attach the `.pem` to the 1Password Secure Note, replacing the old attachment.
-2. Update `KI_TOOLS_RELEASE_BOT_PRIVATE_KEY` on all 7 credential-holding repositories.
+1. Generate a new private key on the App's settings page and attach the `.pem` to the 1Password item in the `Rig` vault, replacing the old attachment.
+2. Update `KI_TOOLS_RELEASE_BOT_PRIVATE_KEY` on all 8 credential-holding repositories.
 3. Delete the old key from the App's settings page once every secret is updated.
 
 To keep the key off disk, read it into a shell variable, check it, then pipe it to GitHub for each repository:
 
 ```sh
-key="$(op read "op://Personal/ki-tools-release-bot private key/<file>.pem")"
+key="$(op read "op://Rig/ki-tools-release-bot private key/<file>.pem")"
 if [ -n "$key" ] && printf '%s' "$key" | grep -q BEGIN; then
   printf '%s' "$key" | gh secret set KI_TOOLS_RELEASE_BOT_PRIVATE_KEY -R knowledgeislands/<repo>
 else
@@ -68,15 +68,20 @@ Never pipe an `op` read straight into `gh secret set`: if the read fails, `gh` r
 
 On 2026-10-05 the `homebrew-tap` intake run 37317227744 (`workflow_dispatch`) authenticated with the new key and ran green. The `tools-ki` and `tools-techne` formulae were already at their latest releases, so no formula pull request was expected. Full end-to-end proof of the release chain awaits the next immutable tool release, tracked as `BREW-010` in `homebrew-tap`.
 
+On 2026-10-09 a manual run of `update-ki-pin.yml` in `ki-agentic-harness` minted the bot's installation token successfully.
+
 ### Workflows
 
 | Repository | Workflow | Use |
 | --- | --- | --- |
 | `homebrew-tap` | `propose-tool-releases.yml` | Proposes the formula pull request for a new immutable release |
 | `homebrew-tap` | `ci.yml` (notify-consumers job) | Dispatches `tool-release-published` to consumer repositories once the formula reaches `main` |
+| `ki-agentic-harness` | `update-ki-pin.yml` | Proposes a `.github/ki-version` bump when `tools-ki` publishes an immutable release |
 | `ki-website` | `update-tool-release.yml` | Verifies the release, opens or updates the registry pull request and requests squash auto-merge |
 
 In `ki-website` the `main` ruleset requires pull requests and the `build` check, with repository admins as the only bypass actor; the App cannot bypass it. The website's decision is `ODR-KI-WEB-001` in `ki-website`, delivered through `KI-WEB-SITE-042`.
+
+In `ki-agentic-harness`, set up on 2026-10-09, the `main` ruleset allows only repository admins to bypass, requires a pull request with 0 approvals and the `build` check, and blocks deletion and force push.
 
 ---
 
