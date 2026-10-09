@@ -3,7 +3,7 @@ type: ki-checkpoint
 thread: chezmoi
 state: active
 created_at: 2026-10-08T08:40:00Z
-updated_at: 2026-10-09T08:00:00Z
+updated_at: 2026-10-09T08:05:00Z
 ---
 
 # chezmoi
@@ -15,6 +15,7 @@ Work the open DOTFILES-UE records in the chezmoi source (`~/.local/share/chezmoi
 ## Current state
 
 - The chezmoi source is clean and level with `origin/main`; the Sol host keys, the CodexBar CLI ownership change and the [DOTFILES-UE-075](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-075-sol-tailscale-daemon-exception.md) capture are all pushed (by another session). Audit, tests and `rig doctor` pass.
+- Since then another session widened, adopted and planned DOTFILES-UE-075 (per-machine Rig profiles) and captured DOTFILES-UE-076; those three chezmoi commits are local and unpushed, and are not this thread's.
 - `claude-bg` is retired (gov-020 `retire-bg` finished); `~/.config/ki/config.toml` matches source, so that drift is closed.
 - No background agent is running in the `chezmoi` run; the `codexbar` helper finished.
 - Every record this thread holds is waiting on Kris:
@@ -38,7 +39,7 @@ Work the open DOTFILES-UE records in the chezmoi source (`~/.local/share/chezmoi
 For `state-of-play` to reassess:
 
 - **Is a chezmoi thread still worth keeping open?** It has no unblocked work; every record waits on Kris. Options: close it as dormant, or fold its records into another thread.
-- **Who owns [DOTFILES-UE-075](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-075-sol-tailscale-daemon-exception.md)?** It is Sol-specific and arrived from another session; it fits [agent-host](../../Streams/Projects/agent-host/agent-host.md) better than this thread.
+- **Who owns [DOTFILES-UE-075](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-075-sol-tailscale-daemon-exception.md)?** Another session has since adopted and planned it as per-machine Rig profiles, and captured DOTFILES-UE-076; name that thread as the owner of both.
 - **Unattributed edits:** two sessions wrote to the chezmoi source while this thread ran (DOTFILES-UE-075 capture and the CodexBar commit, neither co-authored). Which threads may write here, so changes have a clear owner?
 - **Which gated record, if any, comes next?** DOTFILES-UE-071 (privacy permissions), DOTFILES-UE-027 (tool rationales), DOTFILES-UE-062 (time a live apply) or DOTFILES-UE-065 (MCP bridge stall after restart). Each needs Kris present or Kris's sign-off.
 - **DOTFILES-UE-072:** confirm hold-then-cancel once TECHNE-TOOLS-OPS-014 ships, and which thread tracks that trigger.
