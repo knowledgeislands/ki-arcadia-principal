@@ -1,12 +1,13 @@
 ---
 type: ki-checkpoint
-thread: island-model-and-tending
+thread: knowledge-islands-model.island-model-and-tending
+label: 'Knowledge Islands Model: island-model-and-tending'
 state: active
 created_at: 2026-10-08T08:35:00Z
 updated_at: 2026-10-08T19:36:00Z
 ---
 
-# island-model-and-tending
+# knowledge-islands-model.island-model-and-tending
 
 ## Objective
 

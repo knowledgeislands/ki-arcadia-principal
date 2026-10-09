@@ -20,5 +20,5 @@ Moving agent work off the workstation into a governed Techne footprint, and maki
 ## Notes
 
 - [[Techne Programme Hold]] bounds what may run remotely. Remote delivery needs its own repository-owned policy.
-- The agent-host Project thread keeps its own checkpoint, [agent-host](../../+/_CHECKPOINTS/agent-host.md), for thread reconstruction.
+- The agent-host Project thread keeps its own checkpoint, [techne.agent-host](../../+/_CHECKPOINTS/techne.agent-host.md), for thread reconstruction.
 - There is no projectless upkeep and no recurring Activity.

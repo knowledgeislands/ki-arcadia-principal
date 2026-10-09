@@ -1,12 +1,13 @@
 ---
 type: ki-checkpoint
-thread: chezmoi
+thread: rig.chezmoi
+label: 'Rig: chezmoi'
 state: active
 created_at: 2026-10-08T08:40:00Z
 updated_at: 2026-10-09T08:05:00Z
 ---
 
-# chezmoi
+# rig.chezmoi
 
 ## Objective
 

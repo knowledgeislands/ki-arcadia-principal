@@ -1,12 +1,13 @@
 ---
 type: ki-checkpoint
-thread: state-of-play
+thread: _state-of-play
+label: 'Master: state-of-play'
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-08T19:36:00Z
+updated_at: 2026-10-09T09:00:56Z
 ---
 
-# state-of-play
+# _state-of-play
 
 ## Objective
 
@@ -14,20 +15,20 @@ This is the master thread. It owns cross-project priorities, decisions, releases
 
 ## Current state
 
-- **Threads.** One per active Project, plus chezmoi and the Mac Studio. Kris pastes the opener into a new Zed thread.
+- **Threads.** One per active Project, plus chezmoi and the Mac Studio. Kris names a new Zed thread with the label and pastes the opener; the opener resolves the Project name to the single `*.<project>.md` checkpoint, or `_state-of-play.md` here. The mac-studio-bootstrap thread runs on the Mac Studio.
 
-  | Thread | Checkpoint | Opener |
+  | Label | Checkpoint | Opener |
   | --- | --- | --- |
-  | state-of-play (master) | [state-of-play](state-of-play.md) | `Resume the state-of-play checkpoint in ki-arcadia-principal and continue; delegate via ki agent; this is the master thread.` |
-  | baseline-rollout | [baseline-rollout](baseline-rollout.md) | `Resume the baseline-rollout checkpoint in ki-arcadia-principal and continue; delegate via ki agent; state-of-play is the master thread.` |
-  | estate-factorisation | [estate-factorisation](estate-factorisation.md) | `Resume the estate-factorisation checkpoint in ki-arcadia-principal and continue; delegate via ki agent; state-of-play is the master thread.` |
-  | island-model-and-tending | [island-model-and-tending](island-model-and-tending.md) | `Resume the island-model-and-tending checkpoint in ki-arcadia-principal and continue; delegate via ki agent; state-of-play is the master thread.` |
-  | knowledge-acquisition | [knowledge-acquisition](knowledge-acquisition.md) | `Resume the knowledge-acquisition checkpoint in ki-arcadia-principal and continue; delegate via ki agent; state-of-play is the master thread.` |
-  | paperclip-bootstrap-and-recovery | [paperclip-bootstrap-and-recovery](paperclip-bootstrap-and-recovery.md) | `Resume the paperclip-bootstrap-and-recovery checkpoint in ki-arcadia-principal and continue; delegate via ki agent; state-of-play is the master thread.` |
-  | agent-host | [agent-host](agent-host.md) | `Re-bootstrap as the agent-host project thread under ki-delegation.` |
-  | chezmoi | [chezmoi](chezmoi.md) | `Resume the chezmoi checkpoint in ki-arcadia-principal and continue; delegate via ki agent; state-of-play is the master thread.` |
-  | mac-studio-bootstrap | [mac-studio-bootstrap](mac-studio-bootstrap.md) | `On the Mac Studio, resume the mac-studio-bootstrap checkpoint in ki-arcadia-principal and continue; state-of-play is the master thread.` |
-  | territory-selection | [territory-selection](territory-selection.md) | `Resume the territory-selection checkpoint in ki-arcadia-principal and continue; delegate via ki agent; state-of-play is the master thread.` |
+  | Master: state-of-play | [_state-of-play](_state-of-play.md) | `Re-bootstrap as the state-of-play master thread under ki-delegation.` |
+  | Rig: chezmoi | [rig.chezmoi](rig.chezmoi.md) | `Re-bootstrap as the chezmoi project thread under ki-delegation.` |
+  | Techne: agent-host | [techne.agent-host](techne.agent-host.md) | `Re-bootstrap as the agent-host project thread under ki-delegation.` |
+  | Rig: mac-studio-bootstrap | [rig.mac-studio-bootstrap](rig.mac-studio-bootstrap.md) | `Re-bootstrap as the mac-studio-bootstrap project thread under ki-delegation.` |
+  | Platform Foundations: baseline-rollout | [platform-foundations.baseline-rollout](platform-foundations.baseline-rollout.md) | `Re-bootstrap as the baseline-rollout project thread under ki-delegation.` |
+  | Platform Foundations: estate-factorisation | [platform-foundations.estate-factorisation](platform-foundations.estate-factorisation.md) | `Re-bootstrap as the estate-factorisation project thread under ki-delegation.` |
+  | Knowledge Islands Model: island-model-and-tending | [knowledge-islands-model.island-model-and-tending](knowledge-islands-model.island-model-and-tending.md) | `Re-bootstrap as the island-model-and-tending project thread under ki-delegation.` |
+  | Knowledge Islands Model: knowledge-acquisition | [knowledge-islands-model.knowledge-acquisition](knowledge-islands-model.knowledge-acquisition.md) | `Re-bootstrap as the knowledge-acquisition project thread under ki-delegation.` |
+  | Techne: paperclip-bootstrap-and-recovery | [techne.paperclip-bootstrap-and-recovery](techne.paperclip-bootstrap-and-recovery.md) | `Re-bootstrap as the paperclip-bootstrap-and-recovery project thread under ki-delegation.` |
+  | Knowledge Islands Model: territory-rollout | [knowledge-islands-model.territory-rollout](knowledge-islands-model.territory-rollout.md) | `Re-bootstrap as the territory-rollout project thread under ki-delegation.` |
 
 - **Focus.** Estate factorisation and Baseline rollout are Now; the territory selection cut-over pair is Now in its own thread. The goal is a near-empty roadmap, finishing the easiest Now Projects first.
 - **Projects with no thread.** No open records and no recurring work: [roadmap-model](../../Streams/Projects/roadmap-model.md), [skill-refresh](../../Streams/Projects/skill-refresh.md), [specification-review](../../Streams/Projects/specification-review.md), [delta-evaluation](../../Streams/Projects/delta-evaluation.md) and [trades-revamp](../../Streams/Projects/trades-revamp.md). Paused, with Hold records only: [specifications](../../Streams/Projects/specifications.md) and [website](../../Streams/Projects/website.md). No threads for specifications or website while they are on hold; their decisions stay here. Not active and no thread yet, with no Project or record: the [territory-rollout](territory-rollout.md) checkpoint, which gathers what rolling the Knowledge Islands shape out to Kris's other territories needs.

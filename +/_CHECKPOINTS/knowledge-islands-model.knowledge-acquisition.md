@@ -1,12 +1,13 @@
 ---
 type: ki-checkpoint
-thread: knowledge-acquisition
+thread: knowledge-islands-model.knowledge-acquisition
+label: 'Knowledge Islands Model: knowledge-acquisition'
 state: active
 created_at: 2026-10-08T08:35:00Z
 updated_at: 2026-10-08T08:35:00Z
 ---
 
-# knowledge-acquisition
+# knowledge-islands-model.knowledge-acquisition
 
 ## Objective
 

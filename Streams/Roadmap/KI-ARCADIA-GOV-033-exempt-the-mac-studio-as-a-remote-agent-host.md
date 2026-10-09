@@ -32,7 +32,7 @@ Facts established over SSH the same day: the Mac Studio is `sol` on the tailnet,
 ## Boundary
 
 - In scope: in-place amendments to GDR-KI-ARCADIA-004 and the hold's "Agent-host exemption" section, worded by role and machine.
-- Out of scope: any change on the Mac Studio itself, which follows the [mac-studio-bootstrap](../../+/_CHECKPOINTS/mac-studio-bootstrap.md) checkpoint runbook; any widening beyond this one owned machine; and acceptance, which is the island owner's.
+- Out of scope: any change on the Mac Studio itself, which follows the [rig.mac-studio-bootstrap](../../+/_CHECKPOINTS/rig.mac-studio-bootstrap.md) checkpoint runbook; any widening beyond this one owned machine; and acceptance, which is the island owner's.
 
 ## Steps
 
@@ -55,7 +55,7 @@ Facts established over SSH the same day: the Mac Studio is `sol` on the tailnet,
 
 ## Dependencies / blocks
 
-None. The bootstrap runbook in the [mac-studio-bootstrap](../../+/_CHECKPOINTS/mac-studio-bootstrap.md) checkpoint relies on this exemption for its remote steps.
+None. The bootstrap runbook in the [rig.mac-studio-bootstrap](../../+/_CHECKPOINTS/rig.mac-studio-bootstrap.md) checkpoint relies on this exemption for its remote steps.
 
 ## Review
 

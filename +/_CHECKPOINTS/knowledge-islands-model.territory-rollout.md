@@ -1,12 +1,13 @@
 ---
 type: ki-checkpoint
-thread: territory-rollout
+thread: knowledge-islands-model.territory-rollout
+label: 'Knowledge Islands Model: territory-rollout'
 state: active
 created_at: 2026-10-09T07:05:00Z
 updated_at: 2026-10-09T07:05:00Z
 ---
 
-# territory-rollout
+# knowledge-islands-model.territory-rollout
 
 ## Objective
 

@@ -24,7 +24,7 @@ This Project sits in [[rig|Rig]], because the Mac Studio is a workstation. [[age
 ## Notes
 
 - The work is attended: it runs on the Mac Studio itself, with Kris signing in to 1Password, the Mac App Store, GitHub and Claude.
-- The thread's checkpoint is [mac-studio-bootstrap](../../+/_CHECKPOINTS/mac-studio-bootstrap.md); its first steps assume nothing is checked out on the Mac Studio yet.
+- The thread's checkpoint is [rig.mac-studio-bootstrap](../../+/_CHECKPOINTS/rig.mac-studio-bootstrap.md); its first steps assume nothing is checked out on the Mac Studio yet.
 - Anything the bootstrap finds missing or wrong in the chezmoi source, Rig declarations or `ki` install guidance becomes a record in the owning repository.
 
 ### Close-out assessment

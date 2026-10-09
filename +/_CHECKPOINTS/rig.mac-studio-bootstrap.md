@@ -1,12 +1,13 @@
 ---
 type: ki-checkpoint
-thread: mac-studio-bootstrap
+thread: rig.mac-studio-bootstrap
+label: 'Rig: mac-studio-bootstrap'
 state: active
 created_at: 2026-10-08T08:45:00Z
 updated_at: 2026-10-09T06:55:00Z
 ---
 
-# mac-studio-bootstrap
+# rig.mac-studio-bootstrap
 
 ## Objective
 

@@ -21,7 +21,7 @@ Kris's Mac Studio meets the [[mac-studio-bootstrap]] Project's test, so any thre
 
 ## Context
 
-The Project was registered on 2026-10-08 with no work record. The work is attended on the Mac Studio itself, and its thread checkpoint, [mac-studio-bootstrap](../../+/_CHECKPOINTS/mac-studio-bootstrap.md), holds the steps.
+The Project was registered on 2026-10-08 with no work record. The work is attended on the Mac Studio itself, and its thread checkpoint, [rig.mac-studio-bootstrap](../../+/_CHECKPOINTS/rig.mac-studio-bootstrap.md), holds the steps.
 
 ## Boundary
 

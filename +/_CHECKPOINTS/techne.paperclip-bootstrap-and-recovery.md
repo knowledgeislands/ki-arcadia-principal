@@ -1,12 +1,13 @@
 ---
 type: ki-checkpoint
-thread: paperclip-bootstrap-and-recovery
+thread: techne.paperclip-bootstrap-and-recovery
+label: 'Techne: paperclip-bootstrap-and-recovery'
 state: active
 created_at: 2026-10-08T08:35:00Z
 updated_at: 2026-10-08T13:38:00Z
 ---
 
-# paperclip-bootstrap-and-recovery
+# techne.paperclip-bootstrap-and-recovery
 
 ## Objective
 

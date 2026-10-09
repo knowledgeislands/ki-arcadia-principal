@@ -1,12 +1,13 @@
 ---
 type: ki-checkpoint
-thread: estate-factorisation
+thread: platform-foundations.estate-factorisation
+label: 'Platform Foundations: estate-factorisation'
 state: active
 created_at: 2026-10-08T08:35:00Z
 updated_at: 2026-10-08T08:35:00Z
 ---
 
-# estate-factorisation
+# platform-foundations.estate-factorisation
 
 ## Objective
 

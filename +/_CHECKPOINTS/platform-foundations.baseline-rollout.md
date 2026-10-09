@@ -1,12 +1,13 @@
 ---
 type: ki-checkpoint
-thread: baseline-rollout
+thread: platform-foundations.baseline-rollout
+label: 'Platform Foundations: baseline-rollout'
 state: active
 created_at: 2026-10-08T08:35:00Z
 updated_at: 2026-10-08T08:35:00Z
 ---
 
-# baseline-rollout
+# platform-foundations.baseline-rollout
 
 ## Objective
 
