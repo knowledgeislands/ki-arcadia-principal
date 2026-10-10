@@ -3,6 +3,7 @@ note_type: admin/governance/decision
 id: SDR-KI-ARCADIA-006
 title: 'Agents in the Knowledge Islands Model'
 date: 2026-06-25
+updated: 2026-10-10
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/sdr
 decision_type: strategy
@@ -13,7 +14,7 @@ decision_depends_on: ['SDR-KI-ARCADIA-001', 'SDR-KI-ARCADIA-003', 'SDR-KI-ARCADI
 
 ## Context
 
-The Knowledge Islands model describes a knowledge cycle: knowledge is created, curated, and used by actors who interact with the island. SDR-KI-ARCADIA-003 established the governance of an island. SDR-KI-ARCADIA-005 introduced standing (Visitor, Citizen, Council) as the vocabulary for who may act on an island. Neither DR defined what types of agent participate in the cycle or how they differ in role, capability, and constraint.
+The Knowledge Islands model describes a knowledge cycle: knowledge is created, curated, and used by actors who interact with the island. An island's governance, and its vocabulary of standing (Visitor, Citizen, Council), say who may act on it; the types of agent that participate in the cycle also differ in role, capability, and constraint.
 
 In practice, Arcadia is worked by a combination of the island owner acting through editors and chat interfaces, Claude operating as an agentic AI with read/write access to the repository, and other tools with narrower bounded roles. The distinction between these agent types matters for governance: what an agent may propose, how it reads configuration, and what authority it may exercise are all agent-specific.
 
@@ -46,7 +47,7 @@ An agentic AI is an AI system operating with enough autonomy to take multi-step 
 
 An agentic AI may not ratify a proposal (Council is a human role), originate a DR without human review, or take destructive git actions without per-command instruction.
 
-The **Agentic Patterns** note in the Model layer captures the structural design patterns for agentic activity: the live artifact baseline protocol, the parallel MCP latency reduction pattern, the cache pattern for reducing redundant fetches, and the window convention. These are activity-agnostic and island-agnostic: any agentic AI operating on any island should apply them.
+The **AI Automation Patterns** note, under Agentic AI in the Model layer, captures the structural design patterns for agentic activity: the live artifact baseline protocol, the parallel MCP latency reduction pattern, the cache pattern for reducing redundant fetches, and the window convention. These are activity-agnostic and island-agnostic: any agentic AI operating on any island should apply them.
 
 ### Named AI agents in Arcadia
 
@@ -72,7 +73,7 @@ An AI agent operates as a Citizen when it is acting under a skill prompt that gr
 - The island model explicitly names three agent types: human, artificial (tool), and agentic AI. The distinction is semantic, not structural.
 - Humans hold exclusive authority over editorial judgement, proposal ratification, and destructive operations.
 - Agentic AIs operating as Citizens must be acting under an explicit skill prompt that scopes their authority.
-- The Agentic Patterns note captures the canonical design patterns for AI-driven activity on the island.
+- The AI Automation Patterns note captures the canonical design patterns for AI-driven activity on the island.
 - New named AI agents (e.g. a future reasoning model replacing ChatGPT) require a new agent note in `Model/Agents/`.
 
 ## References
