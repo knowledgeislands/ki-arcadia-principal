@@ -4,7 +4,7 @@ thread: knowledge-islands-model.island-model-and-tending
 label: 'KI Model: island-model-and-tending'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-10T05:30:00Z
+updated_at: 2026-10-10T15:00:00Z
 ---
 
 # knowledge-islands-model.island-model-and-tending
@@ -37,17 +37,14 @@ None yet in this thread. Records live in `/Users/krisbrown/workspaces/kit/knowle
 
 ## Open questions
 
-Needs Kris at the mark (2026-10-09 22:41 BST); recommendations in brackets. Review details are in `~/.local/state/ki/agents/island-model-and-tending/checklist.report.md`.
+Needs Kris (2026-10-10 16:00 BST); the mark of 2026-10-09 22:41 BST stands. Run decisions 4-9 are in `~/.local/state/ki/agents/island-model-and-tending/decisions.md`; reports beside it.
 
-- **MOD7:** walk KI-ARCADIA-MOD-007's disposition table one note at a time, including the Scheduled Task Audit route and whether the Claude Housekeeping note goes.
-- **ESTATE-030:** the estate-factorisation checkpoint still tells that thread to disposition KI-ARCADIA-GOV-030, now closed; relay via the master thread.
-- **ROOT-RESUME:** stray `RESUME-fable-knowledge-islands-concepts.md` at the root. (Delete.)
-- **DESC-DASH + TOML-TIDY:** em dash in the repository description (`.ki.toml`, `package.json`, GitHub) and uneven `.ki.toml` layout. (One conform pass with the GitHub description edit authorised.)
-- **BUNX + NO-VERIFY-TASK + HOOK-1:** `bunx` in lint-staged, no `check` script, no committed pre-commit gate. (One engineering pass.)
-- **CI-PIN:** move the inline `KI_VERSION` pin to `.github/ki-version`. (Do it.)
-- **CLOSEOUT:** close-out for estate-factorisation (perhaps that thread's) and a paused line for specifications.
-- **DR-OVERLAP + DR-YAML:** possible overlaps in three Decision Record groups; mixed ID quoting. (A `ki-decision-records` CONSOLIDATE run.)
-- **INDEX-OVERVIEW + PLACEHOLDERS:** about 38 index notes lack an Overview; three placeholder Realisation notes. (One Enactment pass after KI-ARCADIA-MOD-007.)
+- **MOD7-GO:** KI-ARCADIA-MOD-007 is Ready (Decision 9); approve delivery and confirm three planning judgements (Live Artifact Patterns to AI Automation Patterns; memory mapping to Knowledge Rebuild; three Canonical Meta Notes entries dropped).
+- **PIN-BUMP:** Arcadia CI is red on 12 checkpoint checks because the `ki` pin is v0.8.4; recommend bumping `.github/ki-version` to v0.10.0.
+- **DR-FIX:** approve the in-place Decision Record consolidation P1-P8 (`dr-consolidate.report.md`) as one Enactment record; answer P5 (trade hold still intended?), P3(c) (reword council or create notes) and P7 (where agentic patterns live).
+- **BUNX:** approve one engineering pass - direct `biome`/`rumdl` in lint-staged, a `check` script, a committed `.githooks/pre-commit` gate.
+- **ESTATE-030 + CLOSEOUT + GOV-168-NOTE:** messages for the master thread given to Kris to paste.
+- **INDEX-OVERVIEW + PLACEHOLDERS:** approved (Decision 8); runs after KI-ARCADIA-MOD-007. Four placeholder Realisation notes, not three.
 - Parked 2026-10-09: review tags - do we still need them?
 - Parked 2026-10-09: Admin conventions and knowledge-base structure tidy-up.
 
