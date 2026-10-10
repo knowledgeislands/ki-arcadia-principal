@@ -3,6 +3,7 @@ note_type: admin/governance/decision
 id: ADR-KI-ARCADIA-004
 title: 'Provider-neutral isolated agent execution'
 date: 2026-09-16
+updated: 2026-10-10
 status: current
 decision_type: architecture
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/adr
@@ -43,6 +44,6 @@ Arcadia maintains this decision record. The archived copy in `knowledgeislands/k
 
 ## References
 
-- [GDR-KI-ARCADIA-001](GDR-KI-ARCADIA-001-adopting-decision-records.md) - adopts the Decision Records instrument the engineering discipline uses.
+- [[GDR-KI-ARCADIA-001-adopting-decision-records|GDR-KI-ARCADIA-001]] - adopts the Decision Records instrument the engineering discipline uses.
 - [Development Container specification](https://github.com/devcontainers/spec/blob/main/docs/specs/devcontainer-reference.md) - portable development-environment description.
 - [OCI Image specification](https://github.com/opencontainers/image-spec/blob/main/spec.md) - portable image packaging and transport.
