@@ -4,7 +4,7 @@ thread: platform-foundations.baseline-rollout
 label: 'Platform Foundations: baseline-rollout'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-09T20:55:00Z
+updated_at: 2026-10-10T16:39:00Z
 ---
 
 # platform-foundations.baseline-rollout
@@ -37,6 +37,7 @@ None yet in this thread. Records live in `/Users/krisbrown/workspaces/kit/knowle
 - **PIN: how `tools-ki` takes its pin.** Recommendation: CI builds `ki` from source and `tools-ki` gets no receiver, because `tools-ki` is the source of `ki`, so testing each commit against a previously released binary checks the wrong thing and a receiver tracking its own releases is circular. Alternative: a pin bump through the receiver like every other repository. Put this to Kris with the plan.
 - **PRFLOW, with the master thread:** background agents push to harness `main` through the admin bypass. Kris to decide whether to keep direct pushes (the master recommends keeping them) or move to pull requests. If pull requests, update the run packet's push rule in `ki-delegation` and the delegation prompts.
 - **CHECKLIST, later and only if Kris approves it for Arcadia first:** adopt the stock Repository review Activity ([repository-review-activity.md](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/skills/change-management/ki-work-housekeeping/assets/repository-review-activity.md)) across the estate.
+- **Parked, 2026-10-10 (from island-model-and-tending) - for [KI-HARNESS-GOV-168](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-168-roll-out-ki-pin-receivers.md):** `update-ki-pin.yml` filters on `client_payload.source_repository` but tools-ki `release.yml` sends `client_payload.repository`, so `tool-release-published` dispatches would be skipped even after registration; tools-ki currently dispatches only to homebrew-tap. Arcadia now carries `.github/ki-version` and `update-ki-pin.yml`; its receiver stays inert until the tools-release bot App is installed on Arcadia and its secrets are set.
 
 ## Next step
 
