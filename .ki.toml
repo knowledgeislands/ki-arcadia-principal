@@ -91,11 +91,6 @@ auto_memory = "disabled"
 [skills.ki-housekeeping-chatgpt]
 auto_memory = "disabled"
 
-[skills.ki-acquire-granola]
-folder_ids = [
-  "2454f927-221b-4905-8583-a2daa85af625",
-]
-
 [skills.ki-tokenomics]
 headroom = "recommended"
 preferred_model_type = "standard"
