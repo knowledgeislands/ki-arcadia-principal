@@ -67,12 +67,8 @@ Rules live with their durable owners: the roadmap model in GDR-KI-ARCADIA-005 an
 
 Needs Kris:
 
-- **QUEUE:** confirm the queue order above.
-- **CHECKLIST:** adopt the stock Repository review Activity in Arcadia and run a first full review against the master `ki-repo` REVIEW checklist; if yes, the island-model-and-tending thread does it, and baseline-rollout later rolls it across the estate.
-- **ARC-PUSH:** Techne commits da093f5 and a9e502d sit unpushed on `main` in the Arcadia primary checkout. Leave them to their thread; do not push them from here.
-- **REVIEWS:** KI-HARNESS-GOV-166 and KI-HARNESS-GOV-165 - Kris accepted them in Decision 20; `close-ki` is carrying out the acceptance. Confirm from its report.
-- **PRFLOW:** keep background agents pushing to harness `main` through the admin bypass (recommended), or move to pull requests. Held by the baseline-rollout thread.
-- **PIN:** how `tools-ki` takes its `ki` pin; the baseline-rollout thread recommends CI building from source.
+- **CODEX:** retire `mcp-housekeeping-codex`, already superseded by `mcp-housekeeping-chatgpt` (estate-factorisation OAI-1): drop its chezmoi bindings, then archive the GitHub repository (outward-facing; Kris to confirm).
+- **CKPT:** active Projects without a thread or checkpoint (delta-evaluation, roadmap-model) and a checkpoint without a Project (territory-rollout) - tidy.
 - **Trades hold, by 2026-10-14:** re-enable trades or renew the hold. HOLD-1 warns from 2026-10-15.
 - **Delta trial, on or after 2026-10-13:** yes or no, under [delta-evaluation](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/delta-evaluation.md).
 - **Paperclip:** answer the two decision cards.

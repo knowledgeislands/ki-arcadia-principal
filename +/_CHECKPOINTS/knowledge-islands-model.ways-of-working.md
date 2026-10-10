@@ -38,6 +38,10 @@ None yet in this thread. The rules live in `/Users/krisbrown/workspaces/kit/know
 - **2026-10-09 (parked): state-of-play view.** A clear view of Projects and Initiatives, possibly drawing on `apps-observatory` and the command-centre ideas in `kit-hnr` and `kit-legal`.
 - **2026-10-09 (parked): Markdown flavour.** A gradual move from Obsidian-style to GitHub-flavoured Markdown, starting with a front-matter field declaring a note's flavour.
 - **2026-10-09 (parked): run-folder retention.** Kris approved adding a retention rule to `ki-delegation`: when a thread or run closes and its decisions are consolidated into durable owners, archive or delete its `~/.local/state/ki/agents/<run>/` folder. Pair with the findings of the master's `state-audit` background agent.
+- **2026-10-10 (approved): background-run worktree location (state-audit FIX-1).** The background-run standard names no worktree location, so agents improvised (`~/.local/state/claude-bg/...`, `~/workspaces/kit/.worktrees/...`, `<repo>.wt-*`). Add to `ki-delegation`: worktrees go under `~/.local/state/ki/agents/<run>/worktrees/<repo>`, are removed with `git worktree remove` and their branch deleted once merged, before the run reports `DONE`. Optionally a `ki agent` helper. Fold into the run-folder retention rule; no new record (master Decision 34).
+- **2026-10-10 (parked): restate open Needs.** Kris likes the short-tag Needs items. Add to `ki-delegation` Reporting: every Done/Needs report from a coordinating thread restates all still-open Needs items, not only new ones; small progress updates do not.
+- **2026-10-10 (parked): coordinator model.** Coordinating threads (master and project threads) mostly dispatch work, so they could run on a faster, lower-reasoning model, handing any heavy reasoning to a background agent or subagent. Decide whether `ki-delegation` should recommend this and how threads are opened with it.
+- **2026-10-10 (parked): mark consistency.** Threads struck marks differently (dated "Mark:" bullet in the master, "Mark 1" and "Mark A" styles elsewhere). Settle one form as part of KI-HARNESS-GOV-169.
 
 ## Next step
 
