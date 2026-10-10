@@ -13,7 +13,7 @@ author: Written with Claude
 
 Activities are the recurring work that keeps an island accurate and coherent over time. Within the Model act, this chapter defines what each activity does and why it exists, independent of any particular agent or island. Without them, an island drifts from the world it reflects: notes go stale, links break, and captured material never reaches its permanent home.
 
-The chapter is organised by activity group. One group is constitutional and binds every island; the rest are adoptable, and each island records its position on them in its Charter. Alongside the groups sits the guidance for designing and writing activities. The Claude-specific prompts that run these activities live separately in [[Claude/Activities/Activities|Tools/Claude/Activities]].
+The chapter is organised by activity group. One group is constitutional and binds every island; the rest are adoptable, and each island records its position on them in its Charter. Alongside the groups sits the guidance for designing and writing activities. The executable procedure that runs each activity lives in the skill that realises it, not in this chapter.
 
 Start with [[What Keeps an Island Alive]], the narrative chapter note, before moving into the individual groups.
 

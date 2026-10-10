@@ -101,17 +101,15 @@ For example:
 
 ### Behaviour
 
-- **Location:** `/Pillars/Philosophy/Model/Agents/Agentic AI/` or ``/Pillars/Philosophy/Model/Agents/{Agent}/`
+- **Location:** `/Pillars/Philosophy/Model/Agents/Agentic AI/`; anything specific to one agent runtime lives in the skill that realises it, not in a note
 - **Generality:** Activity-independent, island-independent, agent-independent
-- **Contains:** General AI operating patterns - caching, parallelism, rolling windows, artefact lifecycle
-- **Generality:** Activity-independent, island-independent, Agent-specific
-- **Contains:** Claude's implementation - five modes, behavioural constraints, memory architecture
-- **Rule of thumb:** Content that applies to Claude doing any activity on any island.
+- **Contains:** General AI operating patterns - caching, parallelism, rolling windows, artefact lifecycle - and the behavioural constraints every agent follows
+- **Rule of thumb:** Content that applies to any agent doing any activity on any island.
 
 ### Script
 
-- **Location:** `/Pillars/Knowledge Capital/Model/Activities/{group}/`
-- **Generality:** Activity-specific, island-specific, Agent-specific
+- **Location:** the skill that realises the activity, or an inline `## Script` section in the Definition note when the procedure is lightweight enough
+- **Generality:** Activity-specific, island-specific, agent-specific
 - **Contains:** The actual prompt text; references the other layers at runtime
 - **Rule of thumb:** Content that is "how an agent does it for this island".
 
@@ -158,7 +156,7 @@ Every adoptable group index note must include an Adoption Requirements section. 
 
 ## Activity Note Format (Definition)
 
-The canonical format for Definition notes is defined in [[Activity Note]] under `Conventions/Notes/Types/`. Required sections are Overview, Trigger, and Outcome. The optional `## Script` section holds the executable prompt when the activity is lightweight enough to keep it inline - for substantial prompts (Route Triage, Knowledge Rebuild), the prompt migrates to `Tools/Claude/Activities/{group}/` and the Definition note links to it.
+The canonical format for Definition notes is defined in [[Activity Note]] under `Conventions/Notes/Types/`. Required sections are Overview, Trigger, and Outcome. The optional `## Script` section holds the executable prompt when the activity is lightweight enough to keep it inline - for substantial procedures (Route Triage, Knowledge Rebuild), the executable procedure lives in the skill that realises the activity, and the Definition note stays runtime-neutral.
 
 ---
 

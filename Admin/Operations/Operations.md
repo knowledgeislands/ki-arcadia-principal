@@ -19,5 +19,6 @@ The `Admin/Operations/` arm holds the artefacts that describe **how Arcadia runs
 | [Processes/](Processes/Processes.md) | Formal governance gates: the Enactment Process and other defined paths |
 | [Live Artifacts/](Live%20Artifacts/Live%20Artifacts.md) | Dynamic status documents: dashboards, queues, trackers |
 | [Skills/](Skills/Skills.md) | Agent skills installed and active on this island |
+| [Mistakes and Lessons](Mistakes%20and%20Lessons.md) | Closed-loop register of operational mistakes and their resolved lessons |
 
 Populated by migration from `Pillars/Knowledge Capital/` per GDR-KI-ARCADIA-002.

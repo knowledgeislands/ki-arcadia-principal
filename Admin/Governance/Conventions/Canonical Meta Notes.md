@@ -25,10 +25,7 @@ The ordered list of notes that [[Model/Activities/Tending/Knowledge Rebuild|Know
 - `Pillars/Philosophy/Conventions/Notes/Frontmatter/Frontmatter.md`
 - `Pillars/Philosophy/Conventions/Notes/Frontmatter/Properties.md`
 - `Pillars/Philosophy/Conventions/Notes/Frontmatter/Tags.md`
-- `Pillars/Philosophy/Tools/Claude/Mistakes and Lessons.md`
-- `Pillars/Philosophy/Tools/Claude/Claude.md`
+- `Admin/Operations/Mistakes and Lessons.md`
 - `Pillars/Philosophy/Activities/Activities.md`
 - `Pillars/Knowledge Capital/Agents/Communication Style.md`
-- `Pillars/Philosophy/Agents/Claude/Claude Behaviour.md`
 - `Pillars/Philosophy/Conventions/Residency/Residency.md`
-- `Pillars/Philosophy/Agents/Claude/Memory Architecture.md`

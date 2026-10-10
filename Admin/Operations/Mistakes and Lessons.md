@@ -1,10 +1,9 @@
 ---
-note_type: pillars/note
+note_type: admin/operations/process
 tags:
   - card/note
   - topic/productivity
   - topic/knowledge-management
-  - source/claude
 status: current - April 2026
 author: Written with Claude
 memory_file:
@@ -18,16 +17,16 @@ memory_file:
 
 ## Overview
 
-A closed-loop incident register for mistakes made during island operations - file creation, routing, automation, and daily note tasks. When Claude gets something wrong, the error is logged here, the fix is applied to the relevant auto-memory file, and the resolved lesson is recorded permanently in the table below.
+A closed-loop incident register for mistakes made during island operations - file creation, routing, automation, and daily note tasks. When the agent gets something wrong, the error is logged here, the fix is applied to the relevant memory file, and the resolved lesson is recorded permanently in the table below.
 
-This note is a **human-readable reference**. All lessons are extracted to auto-memory and are active in every session without this file needing to be loaded. See [[CLAUDE]] for the incident logging workflow.
+This note is a **human-readable reference**. All lessons are extracted to memory and are active in every session without this file needing to be loaded. The root `AGENTS.md` sets out the incident logging workflow.
 
 ---
 
 ## How It Works
 
 1. **Log it** - record the incident below with date, description, and root cause
-2. **Fix it** - apply the fix (update the relevant auto-memory file, correct the island file, adjust routing)
+2. **Fix it** - apply the fix (update the relevant memory file, correct the island file, adjust routing)
 3. **Audit it** - confirm the fix is permanent and won't recur
 4. **Summarise** - move the resolved lesson to the table below; delete the log entry
 

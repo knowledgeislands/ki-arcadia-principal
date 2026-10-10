@@ -87,7 +87,6 @@ The second part is the portable, generic model. It covers the language of the is
     - [[Model/Activities/Constitutional/Constitutional|Constitutional]] - the set of activities every island must run; includes [[Model/Activities/Constitutional/Conformance|Conformance]]
   - _Tending (island health):_
     - [[Model/Activities/Tending/Tending|Tending]] - the full tending cycle overview
-    - [[Scheduled Task Audit]] - verifies live tasks match island notes; runs daily at 05:00
     - [[Model/Activities/Tending/Health Check|Health Check]] - weekly structural and content health review
     - [[Model/Activities/Tending/Knowledge Rebuild|Knowledge Rebuild]] - weekly rewrite of auto-memory from canonical notes
     - [[Inbox Review]] - weekly manual pass over the `+/` inbox
@@ -104,15 +103,11 @@ The second part is the portable, generic model. It covers the language of the is
 - [[Model/Agents/Agents|Agents]] - the chapter index; start with [[Who Acts on the Island]]
 - [[Human]] - the human agent; roles, standing, and council participation
 - [[Agentic AI]] - non-conversational AI agents; automation patterns; JSON5 cache pattern
-- [[Agents/Claude/Claude|Claude]] - Claude as island agent; operating modes, behavioural constraints, memory architecture
-- [[Agents/ChatGPT/ChatGPT|ChatGPT]] - ChatGPT as island agent; strengths and working patterns
 
 ### Tools - With what?
 
 - [[Model/Tools/Tools|Tools]] - the chapter index; start with [[How Tools Connect]]
 - [[Obsidian]] - the primary authoring and navigation tool; vault structure and plugins
-- [[Tools/Claude/Claude|Claude]] - Claude as tool; token economics, memory, Cowork configuration layers
-- [[Tools/ChatGPT/ChatGPT|ChatGPT]] - ChatGPT as tool; use cases and limitations
 - [[Tools/Linear/Linear|Linear]] - Linear as tool; browser-based view management; island integration
 - [[Microsoft 365]] - M365 as tool; Outlook MCP, calendar, email integration
 

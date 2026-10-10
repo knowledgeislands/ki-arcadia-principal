@@ -30,16 +30,18 @@ A conformance report covering three areas:
 
 **Constitutional baseline** - verifies that the two constitutional elements exist and are correctly populated:
 
-- The Charter (`Admin/Governance/Charter.md`) exists, contains the required Identity parameters, and declares adoption positions for all known non-constitutional activity groups
+- The Charter (`Admin/Governance/Charter.md`) exists, contains the required Identity parameters, and declares adoption positions for all known non-constitutional activity groups. The baseline requires an `## Identity` section with the island name, the skill name and the task prefix; an `## Activity Groups` table with at least one row; a `## Scheduled Activities` table; and a `## Tools` section
 - This activity (Conformance) is present in the island's scheduled task configuration
 
-**Adoption completeness** - for every non-constitutional activity group defined in `Activities/`, verifies that the island's Charter carries an explicit `adopted` or `vetoed` position. Any group with no position is flagged as non-conformant (unknown).
+**Adoption completeness** - for every non-constitutional activity group defined in `Activities/`, which is a subfolder whose same-name index carries an `## Adoption Requirements` table (Constitutional is excluded), verifies that the island's Charter carries an explicit `adopted` or `vetoed` position. Any group with no position is flagged as non-conformant (unknown).
 
 **Adoption consistency** - for every group marked `adopted` in the Charter:
 
 - Verifies that the group's Activity Definition note linked from the Charter exists, and that every note declared in its framework group's Adoption Requirements exists
-- Verifies that the required notes are populated, not empty stubs
+- Verifies that the required notes are populated, not empty stubs. A note that says "not applicable" or "vetoed" counts as a stub and fails for an adopted group
 
 A vetoed group's Activity Definition note must explicitly acknowledge the veto. Any veto without such a note is flagged. A Charter group with no framework group index is reported as island-local and informational.
 
-The report distinguishes **critical** non-conformances (constitutional baseline failures) from **standard** non-conformances (adoption gaps or consistency failures). Critical failures are surfaced first.
+The report distinguishes **critical** non-conformances (constitutional baseline failures) from **standard** non-conformances (adoption gaps or consistency failures). Critical failures are surfaced first. The overall status is `CONFORMANT` when all three areas pass, `NON-CONFORMANT (CRITICAL)` when the constitutional baseline has any failure, and `NON-CONFORMANT` when only standard non-conformances exist.
+
+The check is read-only. It modifies no file and proposes no fixes; it presents the report for human review.

@@ -5,13 +5,13 @@ area: MOD
 title: Retire runtime-specific realisation notes
 kind: deliver
 project: island-model-and-tending
-status: ready
-horizon: next
+status: awaiting-review
+horizon: now
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: 8e4ec432f59401c141e2850d3d3819e7797b2a3f
 created_at: 2026-10-09T06:52:41Z
-updated_at: 2026-10-10T14:52:00Z
+updated_at: 2026-10-10T16:50:16Z
 ---
 
 # Retire Runtime-Specific Realisation Notes
@@ -62,7 +62,7 @@ Planned against `origin/main` at `dbc66e8a638b86705e307f8e949b0295559f2ebb` (202
 
 Paths are relative to `Pillars/Philosophy/Model/` unless they start at the repository root. Wording follows root `AGENTS.md`: British English, ASCII hyphens only, and no Claude- or Codex-specific framing in the receiving notes.
 
-- [ ] **1. Fold the missing activity checks into the model notes.** Before deleting the prompts, add each runtime-neutral check that the prompt has and the model note lacks. Leave out runtime mechanics such as Cowork paths, `find /sessions/*/mnt`, `mcp__scheduled-tasks__*`, `$MEMORY_DIR` shell steps and Knowledge Capital discovery.
+- [x] **1. Fold the missing activity checks into the model notes.** Before deleting the prompts, add each runtime-neutral check that the prompt has and the model note lacks. Leave out runtime mechanics such as Cowork paths, `find /sessions/*/mnt`, `mcp__scheduled-tasks__*`, `$MEMORY_DIR` shell steps and Knowledge Capital discovery.
   - `Activities/Constitutional/Conformance.md` from `Tools/Claude/Activities/Constitutional/Conformance.md`:
     - The Charter sections required for the baseline: `## Identity` with island name, skill name and task prefix; a non-empty `## Activity Groups` table; `## Scheduled Activities`; and `## Tools`.
     - The rule that identifies a framework group: an `Activities/` subfolder whose index carries an `## Adoption Requirements` table, excluding Constitutional.
@@ -86,14 +86,14 @@ Paths are relative to `Pillars/Philosophy/Model/` unless they start at the repos
     - Check that the tag superset is respected: flag tags in use that are missing from the shared Tags note.
     - List all findings before proposing any change.
     - Write confirmed shared-note changes to every island at once.
-- [ ] **2. Retire Scheduled Task Audit.**
+- [x] **2. Retire Scheduled Task Audit.**
   - Remove its row from the [[Admin/Governance/Charter|Charter]] Scheduled Activities table (line 75).
   - In [[Tending Activity]], change "All nine activities are enabled - three scheduled automations (Scheduled Task Audit, Health Check, Knowledge Rebuild)" to eight activities and two scheduled automations.
   - In [[Model/Activities/Tending/Tending|Tending]], remove the `## Scheduled Task Audit` section and change the cadence sentence (line 19) to two scheduled automations.
   - In [[What Keeps an Island Alive]], remove the table row (line 45) and its `‡` footnote (line 55).
   - In [[Knowledge Islands]], remove the list entry (line 90).
   - Confirm that [[Schedule]] has no Scheduled Task Audit entry. It had none at planning.
-- [ ] **3. Move Mistakes and Lessons.**
+- [x] **3. Move Mistakes and Lessons.**
   - Move `Tools/Claude/Mistakes and Lessons.md` to `Admin/Operations/Mistakes and Lessons.md` with `git mv`, so that the bare `[[Mistakes and Lessons]]` links in root `AGENTS.md` (line 87) and [[Structural Audit]] (line 94) still resolve.
   - Give it a `note_type` that `ki repo audit --skill ki-repo-kb` accepts for `Admin/Operations/` and drop `source/claude`.
   - Reword the Overview and How It Works in runtime-neutral terms: "the agent" and "memory", with no reference to "Claude" or `[[CLAUDE]]`.
@@ -101,21 +101,21 @@ Paths are relative to `Pillars/Philosophy/Model/` unless they start at the repos
   - Keep the `memory_file:` frontmatter.
   - Add a row to the `Admin/Operations/Operations.md` Contents table.
   - In root `AGENTS.md`, change only the wording if it still names a runtime. The link needs no change.
-- [ ] **4. Fold the Claude agent note into Agentic AI.**
+- [x] **4. Fold the Claude agent note into Agentic AI.**
   - Add a runtime-neutral Behavioural Constraints section to [[Agentic AI]]. It carries the do and avoid lists from `Agents/Claude/Claude.md`, with "use em-dashes for pauses" replaced by the house ASCII-hyphen rule.
   - Add a Release Targets section to [[Agentic AI]]: draft in the source, push to the scheduled or published target in batches when the owner signals readiness, and flag any unpushed changes at session end.
   - Move the runtime-neutral Live Artifact Patterns into [[AI Automation Patterns]], whose existing summary already claims them: the live artifact baseline, parallel MCP fetch, the client-side rolling window and deterministic versus sampled synthesis. Leave out the Cowork-only mechanics: connector rewiring, `mcp__cowork__*` update calls and recipe self-synchronisation.
   - The five operating modes stay with `ki-repo-kb`, and the memory mapping goes to step 1 (Knowledge Rebuild).
-- [ ] **5. Fold the tool-note points.**
+- [x] **5. Fold the tool-note points.**
   - Add one runtime-neutral sentence to [[How Tools Connect]]: a runtime without file access reads island context loaded into it and returns work only through manual routing under [[Structure]].
   - Add one sentence to the [[Admin/Operations/Live Artifacts/Live Artifacts|Admin Live Artifacts]] overview: after each approved change, the HTML render is refreshed so that the repository copy matches what is deployed.
   - `ki-repo-kb-live-artifacts` already owns the pair convention and the rule that the render must not lag its source, so nothing else moves.
-- [ ] **6. Delete the 16 runtime-specific notes and their now-empty folders.**
+- [x] **6. Delete the 16 runtime-specific notes and their now-empty folders.**
   - `Tools/Claude/` in full: `Claude.md`, `Cowork Configuration Layers.md`, `Live Artifacts/Live Artifacts.md`, and `Activities/` in full (eight notes: three indexes and five prompts, including Scheduled Task Audit). `Mistakes and Lessons.md` has already moved in step 3.
   - `Tools/Claude Housekeeping/Claude Housekeeping.md`.
   - `Tools/ChatGPT/ChatGPT.md`.
   - `Agents/Claude/Claude.md` and `Agents/ChatGPT/ChatGPT.md`.
-- [ ] **7. Repoint or remove the remaining inbound links.** These were re-checked on 2026-10-10 with a fresh search of tracked Markdown, excluding `Calendar/`, `+/`, `-/` and the retired notes themselves.
+- [x] **7. Repoint or remove the remaining inbound links.** These were re-checked on 2026-10-10 with a fresh search of tracked Markdown, excluding `Calendar/`, `+/`, `-/` and the retired notes themselves.
   - [[Tools]]: remove the `## Claude` (line 32), `## ChatGPT` (line 38) and `## Claude Housekeeping` (line 80) sections, and edit the Overview sentence on line 16 that names Claude and ChatGPT as adopted tools.
   - [[How Tools Connect]]: replace the `## Claude` and `## ChatGPT` sections (lines 27 to 33) with the step 5 sentence, and remove `## Claude Housekeeping` (line 63).
   - [[Model/Agents/Agents|Agents]]: remove the `## Claude` (line 40) and `## ChatGPT` (line 46) sections.
@@ -129,8 +129,8 @@ Paths are relative to `Pillars/Philosophy/Model/` unless they start at the repos
   - [[Model/Activities/Tending/Tending|Tending]] (line 25): already removed in step 2.
   - [[Admin/Governance/Conventions/Canonical Meta Notes|Canonical Meta Notes]]: replace lines 28 to 34 with the new `Admin/Operations/Mistakes and Lessons.md` path and remove the three retired or non-existent entries.
   - [[Admin/Governance/Charter|Charter]]: the Scheduled Task Audit row goes in step 2. Correct the Convergence Check row's link to `Model/Activities/Tending/Convergence Check`.
-  - [KI-ARCADIA-MOD-006](KI-ARCADIA-MOD-006-knowledge-acquisition-lifecycle.md) (Current state, line 46): replace "Arcadia describes it in [[Claude Housekeeping]]" with a reference to the `mcp-housekeeping-claude` README.
-- [ ] **8. Add two non-blocking handoffs to `ki-agentic-harness`.** Add each as a `status: triage` record in `docs/roadmap/` in area `GOV`, allocating the next serial from that repository's `_ISSUES.md` at the time and bumping the ledger in the same commit. Each record names Arcadia Principal as the origin, says plainly that it blocks nothing, and links no Arcadia roadmap record. Arcadia's notes are deleted in step 6 regardless, because each handoff carries its point in its own text.
+  - [KI-ARCADIA-MOD-006](KI-ARCADIA-MOD-006-knowledge-acquisition-lifecycle.md) (Current state, line 46): replace "Arcadia describes it in `[[Claude Housekeeping]]`" with a reference to the `mcp-housekeeping-claude` README.
+- [x] **8. Add two non-blocking handoffs to `ki-agentic-harness`.** Add each as a `status: triage` record in `docs/roadmap/` in area `GOV`, allocating the next serial from that repository's `_ISSUES.md` at the time and bumping the ledger in the same commit. Each record names Arcadia Principal as the origin, says plainly that it blocks nothing, and links no Arcadia roadmap record. Arcadia's notes are deleted in step 6 regardless, because each handoff carries its point in its own text.
   - To `ki-tokenomics`, from the retired `Tools/Claude/Claude.md`: two standing-surface design rules, plus two tending triggers.
     - Design rules: keep one routing authority, so that a skill defers to the root instructions instead of restating them; and carry resolved lessons in memory, not as a note read at load time.
     - Tending triggers: review the instructions file as it nears its budget (the note used about 10,000 bytes, roughly 2,500 tokens, which matches `instructions = 2500`); and before adding a permanent always-loaded section, ask whether it could be read only when it is needed.
@@ -138,7 +138,7 @@ Paths are relative to `Pillars/Philosophy/Model/` unless they start at the repos
     - The system prompt and project instructions are always on. The memory index is always loaded, but memory files are read only on demand, so their rules apply only conditionally. `CLAUDE.md` loads only when its folder is mounted. Skills load only when invoked.
     - Hence rules meant to hold every time belong in an always-on layer. The receiving repository decides whether this belongs in the audit standard or in guidance.
   - Commit and push in `ki-agentic-harness` only under that repository's own authority and conventions.
-- [ ] **9. Verify** as set out under Verify. Prepare the review packet, then set the record to `awaiting-review`.
+- [x] **9. Verify** as set out under Verify. Prepare the review packet, then set the record to `awaiting-review`.
 
 ## Files touched
 
@@ -182,9 +182,67 @@ None in Arcadia. The receiving skills in `ki-agentic-harness` own any guidance c
 
 ### Roadmap
 
-- Two handoff records in `ki-agentic-harness` (step 8).
+- Two handoff records in `ki-agentic-harness` (step 8), added as non-blocking triage: standing-surface design rules for `ki-tokenomics`, and Claude context layer reliability for `ki-tokenomics-claude`. Each names Arcadia Principal as its origin in plain words; neither repository cites the other's record identifier, per the cross-repository choreography rule in root `AGENTS.md`.
 - The [[Model/Activities/Tending/Knowledge Rebuild|Knowledge Rebuild]] model note will still describe runtime auto-memory after step 1. Whether that whole activity should become runtime-neutral or move into a skill is a separate question. If the review raises it, capture it as Triage rather than widening this record.
 - The [[Admin/Governance/Charter|Charter]] Agents table names a Cowork memory location. That is island configuration in `Admin/`, outside this record's Pillars scope, and should be captured as Triage if it needs revisiting.
+
+## Review
+
+### Delivered
+
+The approved boundary from Decisions 9 and 10 of the island-model-and-tending decisions log: fold the missing checks and points into runtime-neutral notes, retire Scheduled Task Audit, move Mistakes and Lessons to `Admin/Operations/`, delete the 15 remaining Claude- and ChatGPT-specific notes, repoint every inbound link, correct the Charter's Convergence Check link, and add two non-blocking harness handoffs. Root `CLAUDE.md`, `Calendar/`, `+/` and `-/` were left alone. Baseline: `8e4ec432f59401c141e2850d3d3819e7797b2a3f`.
+
+### Change Summary
+
+What each retired note became, with paths relative to `Pillars/Philosophy/Model/`:
+
+| Retired note | Folded into | Deliberately dropped |
+| --- | --- | --- |
+| `Tools/Claude/Activities/Activities.md`, `Constitutional/Constitutional.md`, `Tending/Tending.md` | Nothing; they only indexed the prompts | The index text |
+| `Tools/Claude/Activities/Constitutional/Conformance.md` | [[Model/Activities/Constitutional/Conformance\|Conformance]]: the required Charter sections, the framework-group rule, the stub test, the three overall statuses and the read-only rule | Cowork discovery and report template wording |
+| `Tools/Claude/Activities/Tending/Health Check.md` | [[Model/Activities/Tending/Health Check\|Health Check]]: load [[Mistakes and Lessons]] first, flag `+/` items older than a week, flag content contradicting the root instructions, and an `AGENTS.md`-to-skills alignment check replacing the `CLAUDE.md` vs Island Skill bullet | The path to the non-existent `Island Skill.md`, Cowork paths |
+| `Tools/Claude/Activities/Tending/Knowledge Rebuild.md` and the Memory section of `Agents/Claude/Claude.md` | [[Model/Activities/Tending/Knowledge Rebuild\|Knowledge Rebuild]]: a Canonical Memory Files section (five files and their contents, required frontmatter, mandatory `## KI Sources`), the `MEMORY.md` rewrite, the closing session digest, and a canonical-file check replacing the `Memory Architecture.md` mapping-table check; memory now "the runtime's memory directory" | `/sessions/*/mnt/.auto-memory/`, `$MEMORY_DIR` shell steps, the auxiliary-file mapping table, the Cowork `type` vocabulary |
+| `Tools/Claude/Activities/Tending/Convergence Check.md` | [[Model/Activities/Tending/Convergence Check\|Convergence Check]]: stop below two islands, the tag-superset check, list findings before proposing, write shared changes to every island at once | Island discovery mechanics |
+| `Tools/Claude/Activities/Tending/Scheduled Task Audit.md` | Retired: removed from the [[Admin/Governance/Charter\|Charter]] roster, [[Tending Activity]] (now eight activities, two scheduled), [[Model/Activities/Tending/Tending\|Tending]], [[What Keeps an Island Alive]] and [[Knowledge Islands]]; [[Schedule]] had no entry | The whole activity, by Kris's choice |
+| `Tools/Claude/Mistakes and Lessons.md` | Moved with `git mv` to [[Mistakes and Lessons]] in `Admin/Operations/`, `note_type: admin/operations/process`, `source/claude` dropped, Overview and How It Works reworded to "the agent" and "memory", `memory_file:` and the historical lesson rows kept; row added to [[Operations]] | The `[[CLAUDE]]` link |
+| `Tools/Claude/Claude.md` | Two design rules and two tending triggers handed to `ki-tokenomics` | Cowork connection and token detail |
+| `Tools/Claude/Cowork Configuration Layers.md` | Layer reliability handed to `ki-tokenomics-claude` | Cowork-specific configuration detail |
+| `Tools/Claude/Live Artifacts/Live Artifacts.md` | One sentence in the [[Admin/Operations/Live Artifacts/Live Artifacts\|Admin Live Artifacts]] overview on refreshing the render after each approved change | The pair convention, already owned by `ki-repo-kb-live-artifacts` |
+| `Agents/Claude/Claude.md` | [[Agentic AI]]: Behavioural Constraints (em-dash rule replaced by the house ASCII-hyphen rule) and Release Targets; [[AI Automation Patterns]]: Live Artifact Patterns (baseline, parallel MCP fetch, rolling window, deterministic vs sampled synthesis) | The five operating modes (owned by `ki-repo-kb`), connector rewiring, `mcp__cowork__*` update calls, recipe self-synchronisation |
+| `Tools/Claude Housekeeping/Claude Housekeeping.md` | Nothing; [[Tools]] and [[How Tools Connect]] entries removed, and KI-ARCADIA-MOD-006 now points to the `mcp-housekeeping-claude` README | The catalogue, which the README owns |
+| `Tools/ChatGPT/ChatGPT.md`, `Agents/ChatGPT/ChatGPT.md` | One sentence in [[How Tools Connect]] on runtimes without file access | ChatGPT-specific detail |
+
+Inbound links repointed or removed in [[Tools]], [[How Tools Connect]], [[Model/Agents/Agents\|Agents]], [[Who Acts on the Island]], [[Agentic AI]], [[Knowledge Islands]], [[Model/Activities/Activities\|Activities]], [[What Keeps an Island Alive]], [[Authoring Guidelines]] (Behaviour and Script layers, and the Definition-note paragraph), [[Canonical Meta Notes]] (new path; three retired or non-existent entries removed), the [[Admin/Governance/Charter\|Charter]] (Convergence Check link now `Model/Activities/Tending/Convergence Check`) and KI-ARCADIA-MOD-006. Root `AGENTS.md` needed no change: its `[[Mistakes and Lessons]]` link resolves and its wording names no runtime.
+
+Approved deviations and small judgements:
+
+- [[AI Automation Patterns]] had a broken code fence (a four-backtick opener that turned most of the note into code); it was corrected while appending, and its Overview no longer says "Claude-powered". Its summary in [[Agentic AI]] now lists the patterns actually present.
+- The harness ledger reserves numbers in a commit of its own before the record is written, so the two records landed in two harness commits rather than one.
+- The handoffs name Arcadia Principal as origin in plain words and cite no Arcadia record identifier, per both repositories' cross-repository rule; this record likewise describes them without citing harness identifiers.
+
+### Verification
+
+- `find` over the five retired folders returns nothing.
+- The Verify `git grep` for retired paths and names, excluding `Calendar/`, `+/`, `-/` and this record, returns nothing.
+- Wikilink script over all 22 changed notes: every link resolves to exactly one note, except three pre-existing faults present at baseline (see Outstanding concerns); `[[Mistakes and Lessons]]` resolves to `Admin/Operations/Mistakes and Lessons.md`.
+- No en-dash or em-dash in any changed or new note.
+- `rumdl check .` clean.
+- `ki repo audit --repo . --progress never`: no new content failure against the baseline. The only new finding during delivery was COORD-15 on the delivery worktree's base, cleared by rebasing onto `origin/main` before push.
+- Harness: both records are `status: triage`, say they block nothing, and `ki repo audit --skill ki-work-roadmap` passes; the full harness audit shows no new failure.
+
+### Outstanding concerns
+
+- Pre-existing broken links, not caused by this record: the [[Admin/Governance/Charter\|Charter]] links Conformance as `Philosophy/Activities/Constitutional/Conformance` twice (missing `Model/`), and [[How Tools Connect]] links a non-existent `Tool Ecosystem Map`. Worth a trivial follow-up fix.
+- [[Canonical Meta Notes]] still lists other stale `Pillars/Knowledge Capital/` and pre-`Model/` paths outside this record's scope.
+- [[Model/Activities/Tending/Knowledge Rebuild\|Knowledge Rebuild]] still describes runtime memory, as foreseen under Roadmap.
+
+### Post-change review
+
+The goal holds: no Claude- or ChatGPT-specific note remains in `Pillars`, and each runtime-neutral point now lives in a model note, an Admin note or a harness handoff. Scope held to the approved disposition plus the corrected code fence. Regression risk is low: the changes are documentation, links were checked by script and audit, and Calendar history keeps its old links by design. Ready for acceptance review.
+
+### Mini recap
+
+Delivered the full disposition, retired 15 notes, moved one, and handed two points to the harness. Checks pass with no new failure. Proposed learning routes, not promoted: a trivial link fix for the Charter Conformance and Tool Ecosystem Map links, and a Canonical Meta Notes path refresh, each as Triage if Kris wants them.
 
 ## Discussion
 

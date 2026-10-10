@@ -28,11 +28,13 @@ Adhoc - _"ki convergence check"_.
 
 ## What It Does
 
-1. Identifies all islands with the generic Knowledge Islands structure
+1. Identifies all islands with the generic Knowledge Islands structure. Stops if fewer than two islands are found, because there is nothing to compare
 2. Compares each shared note across islands, flagging any divergence to check if its intentional drift or accidental. Resolves any accidental drift by reverting to the most recently updated version. Intentional drift is a signal that it needs reviewing.
-3. Checks Knowledge Capital files for new parameters that should be standardised
-4. Merges and cross-pollinates confirmed improvements back to all islands
-5. Reports what was synced, deferred, or intentionally kept different
+3. Checks that the tag superset is respected: flags any tag in use in an island that is missing from the shared Tags note
+4. Checks Knowledge Capital files for new parameters that should be standardised
+5. Lists all findings before proposing any change
+6. Merges and cross-pollinates confirmed improvements back to all islands. Confirmed shared-note changes are written to every island at once, so that no island is left behind
+7. Reports what was synced, deferred, or intentionally kept different
 
 ---
 

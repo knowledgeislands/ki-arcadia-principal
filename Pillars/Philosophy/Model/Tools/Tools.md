@@ -11,9 +11,9 @@ author: Written with Claude
 
 ## Overview
 
-Tools is the last chapter of the Model: having established the conventions, processes, activities and agents of an island, it documents the instruments those agents use to reach the island and the services around it. Each tool has its own subfolder covering how it is connected and configured, the operating conventions specific to it, and any lessons learned working with it. How an agent behaves when it uses a tool is a separate concern documented under Agents, so the Claude and ChatGPT notes here cover the connection and setup rather than the agent's conduct.
+Tools is the last chapter of the Model: having established the conventions, processes, activities and agents of an island, it documents the instruments those agents use to reach the island and the services around it. Each tool has its own subfolder covering how it is connected and configured, the operating conventions specific to it, and any lessons learned working with it. How an agent behaves when it uses a tool is a separate concern documented under Agents and in [[Agentic AI]]. Agent runtimes themselves have no tool note: anything specific to one runtime lives in the skill that realises it.
 
-Start with [[How Tools Connect]], the narrative chapter note that frames the tool set as a whole and explains how MCP servers give agents direct access to external services. The tools then fall into two groups: third-party tools the island adopts (Obsidian, Claude, ChatGPT, Linear), and MCP servers built within the Knowledge Islands workspace (Microsoft 365, Git Audit, KB Filesystem, Notion Mirror, Gmail and Claude Housekeeping). Island-specific connection identifiers do not live here; they belong to the island's own integrations record.
+Start with [[How Tools Connect]], the narrative chapter note that frames the tool set as a whole and explains how MCP servers give agents direct access to external services. The tools then fall into two groups: third-party tools the island adopts (Obsidian and Linear), and MCP servers built within the Knowledge Islands workspace (Microsoft 365, Git Audit, KB Filesystem, Notion Mirror and Gmail). Island-specific connection identifiers do not live here; they belong to the island's own integrations record.
 
 ---
 
@@ -26,18 +26,6 @@ Start with [[How Tools Connect]], the narrative chapter note that frames the too
 ## Obsidian
 
 [[Obsidian]] covers the primary human interface to the island - the editor through which notes are read, written and navigated as a linked graph. It explains how Obsidian relates to the island's conventions: the conventions define what the vault contains, and Obsidian is how they are enacted day to day. The folder also holds the Templater templates that scaffold every calendar and note type, with an index of each template and its purpose.
-
----
-
-## Claude
-
-[[Tools/Claude/Claude|Claude]] documents Claude as a tool: how Cowork connects it to the island, the token economics of the context files it loads, and how its auto-memory and skill-based memory work. Claude is the most deeply integrated tool, so this is the largest subfolder, holding notes on Cowork configuration, the register of mistakes and lessons from Claude sessions, the live-artifact dashboards, and the library of executable activity prompts. A reader looking for how Claude behaves as an agent should go to [[Agents/Claude/Claude|Claude]] under Agents instead.
-
----
-
-## ChatGPT
-
-[[Tools/ChatGPT/ChatGPT|ChatGPT]] describes how ChatGPT is used alongside the island as a query and drafting tool, with island context loaded into a custom GPT or Project. It makes the scope plain: ChatGPT has no direct file access, so it reads the island only through loaded context and its outputs return only through manual review and routing. Its agent-side working patterns are covered separately in [[Agents/ChatGPT/ChatGPT|ChatGPT]] under Agents.
 
 ---
 
@@ -74,9 +62,3 @@ Start with [[How Tools Connect]], the narrative chapter note that frames the too
 ## Gmail
 
 [[Gmail]] describes how Gmail is reached through `mcp-gsuite`, the Google Workspace MCP server that also serves Calendar, Drive and Sheets behind one access gate. It sets out the reading, organisation and drafting capabilities, and the deliberate absence of a send tool so that outbound mail always passes through human review.
-
----
-
-## Claude Housekeeping
-
-[[Claude Housekeeping]] documents `mcp-housekeeping-claude`, which audits and, where permitted, cleans the state that Claude Desktop, Cowork, Claude Code and the VS Code extension accumulate on macOS. By default it exposes only audits; pruning, deletion and memory-write tools appear only when the operator raises the access level. The note outlines the three surfaces it covers and points to the authoritative tool catalogue.

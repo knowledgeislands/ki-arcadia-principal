@@ -14,15 +14,9 @@ author: Written with Claude
 
 ## Overview
 
-Tending activities keep the island structurally sound, content-healthy, and aligned with the world it reflects. Without them, drift accumulates silently: notes go stale, wikilinks break as notes move, auto-memory diverges from the island, scheduled task prompts fall out of sync with their island notes, and the inbox fills with uncaptured material. Tending is the mechanism that prevents that entropy - running on a regular cadence, lightweight enough to be sustainable, thorough enough to catch what matters.
+Tending activities keep the island structurally sound, content-healthy, and aligned with the world it reflects. Without them, drift accumulates silently: notes go stale, wikilinks break as notes move, auto-memory diverges from the island, and the inbox fills with uncaptured material. Tending is the mechanism that prevents that entropy - running on a regular cadence, lightweight enough to be sustainable, thorough enough to catch what matters.
 
-Activities divide by cadence and initiation. Three are scheduled automations that run without human prompting: the Scheduled Task Audit (daily, runs first), the Health Check (weekly), and the Knowledge Rebuild (midweek). Six are conversational: triggered by phrase, human-in-the-loop, run when the maintenance window arrives or when a specific need arises.
-
----
-
-## Scheduled Task Audit
-
-[[Scheduled Task Audit]] runs each working day at 05:00, before any other automations. It compares the live scheduled task prompts in Cowork against their corresponding prompt notes in [[Claude/Activities/Activities|Tools/Claude/Activities]], reconciling any drift between the two. If a prompt has changed since the island note was last updated, or if a scheduled task exists without an island note (or vice versa), the audit surfaces the discrepancy for resolution. It is the quality gate that keeps each activity's definition, its runnable prompt and the live scheduled task in step.
+Activities divide by cadence and initiation. Two are scheduled automations that run without human prompting: the Health Check (weekly) and the Knowledge Rebuild (midweek). Six are conversational: triggered by phrase, human-in-the-loop, run when the maintenance window arrives or when a specific need arises.
 
 ---
 

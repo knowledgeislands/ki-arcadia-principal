@@ -72,7 +72,6 @@ Active scheduled automations within adopted groups. An activity listed here is e
 | Activity | Group | Day Type | Time | Status |
 | --- | --- | --- | --- | --- |
 | [[Philosophy/Activities/Constitutional/Conformance]] | Constitutional | work-day | 04:30 | enabled |
-| [[Scheduled Task Audit]] | Tending | work-day | 05:00 | enabled |
 | [[Model/Activities/Tending/Health Check\|Health Check]] | Tending | Monday work-day | 08:00 | enabled |
 | [[Model/Activities/Tending/Knowledge Rebuild\|Knowledge Rebuild]] | Tending | Wednesday work-day | 07:00 | enabled |
 | [Morning Briefing](<../Operations/Activities/Briefings Activity.md>) | Briefings | work-day | 06:00 | enabled |
@@ -92,7 +91,7 @@ Active conversational activities within adopted groups. Trigger phrases are the 
 | [[Status Review]] | Tending | _"ki status review"_ | enabled |
 | [[Structural Audit]] | Tending | _"ki structural audit"_ | enabled |
 | [[Wikilink Review]] | Tending | _"ki wikilink review"_ | enabled |
-| [[Pillars/Philosophy/Activities/Tending/Convergence Check\|Convergence Check]] | Tending | _"ki convergence check"_ | enabled |
+| [[Model/Activities/Tending/Convergence Check\|Convergence Check]] | Tending | _"ki convergence check"_ | enabled |
 
 ---
 
