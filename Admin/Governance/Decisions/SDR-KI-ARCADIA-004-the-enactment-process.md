@@ -3,6 +3,7 @@ note_type: admin/governance/decision
 id: SDR-KI-ARCADIA-004
 title: 'The Enactment Process'
 date: 2026-06-25
+updated: 2026-10-10
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/sdr
 decision_type: strategy
@@ -17,7 +18,7 @@ Knowledge does not improve by accumulating unchanged. It improves through a cont
 
 The cycle runs continuously. Without a governance gate, both kinds of change land directly in Pillars and Resources - the stable, canonical zones of the island. Stable knowledge would degrade: proposals that have not been reviewed, material that has not been contextualised, and changes that have not been ratified would share space with knowledge the island depends on.
 
-SDR-KI-ARCADIA-003 established that Processes are one of the five governance areas of an island, and that they define the formal paths through which significant changes must pass. The Enactment Process is that gate.
+Processes are one of the five governance areas of an island, defined in SDR-KI-ARCADIA-003; they set the formal paths through which significant changes must pass. The Enactment Process is that gate.
 
 ## Decision
 
@@ -48,7 +49,7 @@ The operational mechanics - the full status lifecycle, roadmap-record anatomy, r
 - Every new or reworked piece of canonical content in Admin, Pillars or Resources - whether informational or reflective - requires a proposal that passes through the Enactment Process. Related changes share one proposal. An explicit owner instruction for a bounded change stands in for a proposal, because the owner's instruction is the ratification. Trivial typo and formatting fixes, Calendar entries and inbox triage need none.
 - Completed roadmap records are retained as review evidence until their owner explicitly selects them for pruning. Durable outputs and Decision Records retain their own standing.
 - `ki-repo-kb-streams` and the shared change-management skills are the canonical references for operational mechanics. Islands working the process load the relevant skills.
-- Decision Records (when adopted) are one class of output that a settled proposal may produce - the permanent record of rationale that proposals themselves cannot provide.
+- Decision Records are one class of output that a settled proposal may produce - the permanent record of rationale that proposals themselves cannot provide.
 
 ## References
 

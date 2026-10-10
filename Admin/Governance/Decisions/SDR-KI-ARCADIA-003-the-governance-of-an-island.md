@@ -3,6 +3,7 @@ note_type: admin/governance/decision
 id: SDR-KI-ARCADIA-003
 title: 'The Governance of an Island'
 date: 2026-06-25
+updated: 2026-10-10
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/sdr
 decision_type: strategy
@@ -29,7 +30,7 @@ A Knowledge Island is governed across five areas that together make it operate d
 
 These five areas constitute the **portable model** - the generic framework that Knowledge Islands defines and that any island can adopt.
 
-Each island's specific realisation of this model is held in its `Admin/` zone: the island's council, citizenship records, integration configuration, routing overrides, and declared adoption position on each activity group. Two elements are required by every island:
+Each island's specific realisation of this model is held in its `Admin/` zone, which declares its council and holds its integration configuration, routing overrides, and adoption position on each activity group. Two elements are required by every island:
 
 - **Charter** - the island's identity and its declared adoption position on every activity group; no unknowns are permitted.
 - **Council** - the governance body that ratifies proposals and holds authority on the island. On a single-person island, the sole member stands in for the council.
