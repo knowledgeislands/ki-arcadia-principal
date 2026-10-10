@@ -3,6 +3,7 @@ note_type: admin/governance/decision
 id: GDR-KI-ARCADIA-005
 title: 'The roadmap model'
 date: 2026-10-07
+updated: 2026-10-10
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/gdr
 decision_type: governance
@@ -25,7 +26,6 @@ Knowledge Islands records work under one roadmap model.
 - **Registry.** Arcadia owns the territory registry: one note per Project in `Streams/Projects/` and one per Initiative in `Streams/Initiatives/`. Links point upwards only: a record names its Project, and a Project names its Initiative. A Project note carries its outcome, `initiative`, `lifecycle`, lead and target, with a body of only Outcome and Notes; an Initiative note carries its direction and notes. Neither lists records or Projects nor carries a dated update or status section. Status lives in the records and each note's `lifecycle`, and `ki` produces the views. A record in another territory names a Project by `<territory>/<slug>`, which classifies it without conferring authority.
 - **Ideas.** An idea has no identifier or status. It lives in its Project note's Notes, or in the repository's `_IDEAS.md`, until it passes the capture test. The issue ledger `_ISSUES.md` holds only its header and area counters.
 - **Checkpoints.** `ki-checkpoint` stays ephemeral thread reconstruction; Project and Initiative notes supplement it and do not replace it.
-- **Trades.** No new trades are sent until the territory model is settled. Work is done directly or recorded in the receiving repository.
 
 ## Consequences
 
