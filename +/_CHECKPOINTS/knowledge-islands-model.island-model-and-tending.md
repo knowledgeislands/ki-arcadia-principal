@@ -4,7 +4,7 @@ thread: knowledge-islands-model.island-model-and-tending
 label: 'KI Model: island-model-and-tending'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-09T21:41:00Z
+updated_at: 2026-10-10T05:30:00Z
 ---
 
 # knowledge-islands-model.island-model-and-tending
@@ -15,7 +15,7 @@ Arcadia's current island-model and tending records are each delivered, handed to
 
 ## Current state
 
-- **Mark:** struck 2026-10-09 22:41 BST (Decision 16 design: one mark per thread, replaced when a new one is struck). A summary "since the mark" covers what changed after it plus everything still outstanding: the Needs-Kris items in `Open questions` that remain relevant, open records, running or queued agents, and parked tangents.
+- **Mark:** struck 2026-10-09 22:41 BST; last summary since the mark given 2026-10-10 06:30 BST (Decision 16 design: one mark per thread, replaced when a new one is struck). A summary "since the mark" covers what changed after it plus everything still outstanding: the Needs-Kris items in `Open questions` that remain relevant, open records, running or queued agents, and parked tangents.
 - Active since the re-bootstrap at 22:30 BST on 2026-10-09; `ki-delegation` read at harness revision b03a5d55. Run `island-model-and-tending` (decisions log `~/.local/state/ki/agents/island-model-and-tending/decisions.md`) has no agents running. `apps-note` (Decision 2) finished: the GitHub Apps note carries the 2026-10-07 proof and tap-guide pointer, and KI-ARCADIA-GOV-030 is closed and pruned. `checklist` (Decision 1) finished: the first full REVIEW pass fixed em dashes in 32 canonical notes and left 13 tagged findings for Kris in `~/.local/state/ki/agents/island-model-and-tending/checklist.report.md`.
 - KI-ARCADIA-MOD-005, KI-ARCADIA-OPS-004 and KI-ARCADIA-GOV-024 were delivered, closed and pruned earlier.
 - KI-ARCADIA-GOV-032 is done and pruned (the master's `close-ki` run, 2026-10-09). Its reference sweep found nothing left to fix across `~/workspaces` and the chezmoi source: nothing cited GDR-KI-ARCADIA-008, and every GDR-KI-ARCADIA-007 citation already meant Governing Technology Investigations. Decision 18's reference fix-up is complete.
@@ -40,7 +40,6 @@ None yet in this thread. Records live in `/Users/krisbrown/workspaces/kit/knowle
 Needs Kris at the mark (2026-10-09 22:41 BST); recommendations in brackets. Review details are in `~/.local/state/ki/agents/island-model-and-tending/checklist.report.md`.
 
 - **MOD7:** walk KI-ARCADIA-MOD-007's disposition table one note at a time, including the Scheduled Task Audit route and whether the Claude Housekeeping note goes.
-- **PULL:** push the unpushed checkpoint commits on Arcadia `main` (this thread's and the mac-studio-bootstrap thread's). (Push them together.)
 - **ESTATE-030:** the estate-factorisation checkpoint still tells that thread to disposition KI-ARCADIA-GOV-030, now closed; relay via the master thread.
 - **ROOT-RESUME:** stray `RESUME-fable-knowledge-islands-concepts.md` at the root. (Delete.)
 - **DESC-DASH + TOML-TIDY:** em dash in the repository description (`.ki.toml`, `package.json`, GitHub) and uneven `.ki.toml` layout. (One conform pass with the GitHub description edit authorised.)
