@@ -3,6 +3,7 @@ note_type: admin/governance/decision
 id: SDR-KI-ARCADIA-002
 title: 'The Home of Knowledge'
 date: 2026-10-01
+updated: 2026-10-10
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/sdr
 decision_type: strategy
@@ -13,7 +14,7 @@ decision_depends_on: ['SDR-KI-ARCADIA-001']
 
 ## Context
 
-SDR-KI-ARCADIA-001 established the geographic metaphor - islands, territories, archipelagos - and the strategic intent behind Knowledge Islands. What it did not define is how a Knowledge Base island is physically organised: where knowledge lives, how it is organised, and what distinguishes a knowledge base from an unstructured repository.
+Knowledge Islands rests on a geographic metaphor - islands, territories, archipelagos - and the strategic intent set out in SDR-KI-ARCADIA-001. A Knowledge Base island also needs a physical organisation: where knowledge lives, how it is organised, and what distinguishes a knowledge base from an unstructured repository.
 
 Knowledge exists at three layers. **Individual knowledge** lives in the mind and its personal extensions - notes, tools, memory aids. **Collective knowledge** is shared across teams and communities. **Civilisational knowledge** is preserved across generations in libraries, archives, and cultural institutions. A Knowledge Island operates across all three layers, with the model providing the structure for knowledge to extend beyond any single mind - without replacing the mind as the source of meaning.
 

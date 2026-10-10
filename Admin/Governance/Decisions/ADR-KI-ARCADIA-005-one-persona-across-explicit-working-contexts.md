@@ -35,8 +35,6 @@ A working context may reference Agoras and repositories, but it is neither an Ag
 - A deployment, repository, Agora relationship or visible capability supplies context for an authority decision but cannot substitute for one.
 - This decision creates no controller repository, software product, provider, provisioning or deployment commitment.
 
-Arcadia maintains this decision record. The archived copy in `knowledgeislands/ki-techne-principal`, under its former TECHNE identifier, is historical evidence, not an independent authority. Original source evidence remains in Git at `b25e9c950fd87715d12f76b69bb2079c3a4fc054`; the Techné programme hold and retained work are unchanged.
-
 ## References
 
 - [[GDR-KI-ARCADIA-001-adopting-decision-records|GDR-KI-ARCADIA-001]] - adopts the Decision Records instrument the engineering discipline uses.

@@ -3,6 +3,7 @@ note_type: admin/governance/decision
 id: GDR-KI-ARCADIA-007
 title: 'Governing Technology Investigations'
 date: 2026-09-15
+updated: 2026-10-10
 status: current
 decision_type: governance
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/gdr
@@ -29,5 +30,3 @@ Arcadia owns the local evidence, applicability judgment, recommendation and Tech
 - A useful negative result completes an investigation when it eliminates uncertainty with reproducible evidence.
 - Investigation records carry more evidence than informal exploration, adding proportionate preparation and review effort.
 - A recurring technology-review cadence or reusable evaluation capability requires its own demonstrated need and authority.
-
-Arcadia maintains this decision record. The archived copy in `knowledgeislands/ki-techne-principal`, under its former TECHNE identifier, is historical evidence, not an independent authority. Original source evidence remains in Git at `b25e9c950fd87715d12f76b69bb2079c3a4fc054`; the Techné programme hold and retained work are unchanged.
