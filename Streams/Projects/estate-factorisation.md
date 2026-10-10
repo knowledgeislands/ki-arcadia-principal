@@ -7,7 +7,7 @@ initiative: platform-foundations
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-07T19:00:00Z
+updated: 2026-10-10T16:39:00Z
 author: Written with Claude
 ---
 
@@ -51,3 +51,7 @@ Phase specifications (purpose, deliverables, completion gates, dependencies) are
 
 - MCP-4: extract shared MCP source, or settle for conformance only? Any extracted source needs an explicit owner and does not default to the Harness, `tools-ki` or `ki-techne-harness`.
 - EVAL-2 deferred choices: OpenAI repository visibility, an MCP workspace, Git-ref dependencies, broader consolidation, portable specifications, and the scope of the shared fundamentals projection.
+
+### Close-out assessment
+
+Only early groundwork has been delivered against the Outcome. Four records finished: the Harness and its MCPs share one recovery and dry-run safety contract, released `ki` pins bump automatically through a receiver workflow, and Arcadia now documents the release bot App and the release cascade. None of the phase gates is met. FND-3 to EVAL-2 remain untracked ideas in the Phases list above; none has graduated into a record, including FND-5, which opens the rest, and OAI-1, retiring `mcp-housekeeping-codex` into `mcp-housekeeping-chatgpt`. No follow-up has been captured. The Project stays `active` until Kris decides whether to capture the next phase in its owning repository or to close the Project and leave the phases as ideas.
