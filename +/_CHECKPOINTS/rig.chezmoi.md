@@ -38,6 +38,7 @@ The machine-local decisions log (`~/.local/state/ki/agents/chezmoi/decisions.md`
 - Kris: file a `tools-rig` record so `rig apply` asks for the sudo password once at the start and keeps it alive for the run? An overnight apply stalled at Homebrew's sudo prompt.
 - Kris: approve CODEX, so this thread can drop `mcp-housekeeping-codex` from `dot_mgit.toml`, `dot_config/ki/config.toml`, `.chezmoidata/trusted-folders.yaml` and the VS Code workspace.
 - Kris: note the approved Claude auto-switch exception in ADR-DOTFILES-007, which says automatic rotation is off for Codex?
+- Handoff from rig.mac-studio-bootstrap (Decision 25), non-blocking: consider a 1Password service account scoped to the Rig vault ([DOTFILES-UE-077](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-077-reorganise-1password-vaults-safely.md)), so chezmoi applies need no unlock prompt and agents can apply on sol over SSH unattended; the token would be stored on each machine. That thread owns priority and design.
 
 ## Next step
 
