@@ -4,7 +4,7 @@ thread: techne.agent-host
 label: 'Techne: agent-host'
 state: active
 created_at: 2026-10-07T09:05:00Z
-updated_at: 2026-10-09T21:55:00Z
+updated_at: 2026-10-10T13:30:00Z
 ---
 
 # techne.agent-host
@@ -17,17 +17,17 @@ The thread moves agent work off the laptop onto the one agent host the [Techne P
 
 ## Current state
 
-Verified on 2026-10-09 at about 22:50 BST.
+Verified on 2026-10-10 at about 14:30 BST.
 
-- **Repositories.** `ki-techne-harness`, `tools-ki` and chezmoi are level with origin and clean. `tools-techne` is one local commit ahead (the TECHNE-TOOL-CLI-008 wording fix below), unpushed. Arcadia carries this checkpoint commit and one of Kris's own checkpoint commits, both unpushed.
-- **Delivered and closed.** OS patching (TECHNE-TOOLS-OPS-022) is accepted and pruned; the workstation bundle in chezmoi (DOTFILES-UE-073) is accepted and pruned. TECHNE-TOOLS-OPS-020, TECHNE-TOOLS-OPS-021 and TECHNE-TOOL-CLI-007 were cancelled as rejected and pruned. The `agent-host` rename (Decision 30) is pushed everywhere.
-- **Awaiting review.** The workstation pilot, TECHNE-TOOLS-OPS-015, waits for Kris's review. Its live run passed; its open concerns are the missing `target_host` until the `vega` rebuild, the provider still creating `techne` with bash, and the profile validator not yet refusing a personal-configuration tool such as `chezmoi` in the owner's Rig fragment.
-- **In triage.** TECHNE-TOOLS-OPS-016, TECHNE-TOOLS-OPS-017 (zsh and `vega` rename at rebuild, blocked by TECHNE-TOOLS-OPS-015), TECHNE-TOOLS-OPS-018 and TECHNE-TOOLS-OPS-019 in the harness; TECHNE-TOOL-CLI-006 and TECHNE-TOOL-CLI-008 (binding fields `reboot_window` and `livepatch`, and the status `updates` member) in `tools-techne`; KI-TOOL-CLI-115 in `tools-ki`.
-- **Host restarts.** The live binding sets no `reboot_window` (the field waits for TECHNE-TOOL-CLI-008), so the host never restarts itself. Each kernel update still needs the provider's stop and start, starting with the 7.0.0-1014 kernel due on 2026-10-10. The last verified host state, from the TECHNE-TOOLS-OPS-022 acceptance run, was kernel 7.0.0-1013, no reboot flag, outcome clean, 34 pending updates (12 security) and a silent banner.
-- **Host unreachable from the Mac now.** Tailscale is stopped on `terra`, so `ssh ki-techne-agent-host` does not resolve; the host's current state was not rechecked.
-- **The Mac.** Named `terra` (computer, host and Tailscale name). chezmoi's `rigProfile` is `laptop`; `chezmoi status` works, and its only differences are `~/.claude/CLAUDE.md`, `~/.codex/AGENTS.md` and a pending run script, none in the Techne settings. `mise` 2026.10.6 and `codex` 0.162.0 stay off the recipe pins (2026.10.4 and 0.161.0).
-- **`ki agent --wait-for` is still broken** in installed ki 0.10.0: the wait gate is only a prompt instruction, unchanged since 0.9.0, so a waiting run can end its turn and never resume. No record tracks it. Until fixed, sequence dependent runs by hand.
-- The decisions log runs to Decision 34. Decision 33 (handoffs name the need in plain terms, never another repository's roadmap records) is next, as the `handoff-rule` run.
+- **Repositories.** All eight touched repositories (`ki-arcadia-principal`, `ki-techne-harness`, `tools-techne`, `ki-specifications`, `ki-website`, `ki-agentic-harness`, `tools-ki`, chezmoi) are level with origin and clean.
+- **Delivered and closed.** OS patching (TECHNE-TOOLS-OPS-022) and the chezmoi workstation bundle (DOTFILES-UE-073) are accepted and pruned. The workstation pilot (TECHNE-TOOLS-OPS-015) is accepted and kept, not pruned. The `agent-host` rename (Decision 30) is live everywhere, including on the host.
+- **Ideas, not records.** The owned-host provider and the operator-guide split are now ideas in the [[agent-host]] Project note; their cancelled records are pruned.
+- **In triage.** TECHNE-TOOLS-OPS-016, TECHNE-TOOLS-OPS-017 (zsh, the `vega` rename and the remaining live record identifiers, at rebuild), TECHNE-TOOLS-OPS-018 and TECHNE-TOOLS-OPS-019 in the harness; TECHNE-TOOL-CLI-006 and TECHNE-TOOL-CLI-008 (binding fields `reboot_window` and `livepatch`, status `updates` member) in `tools-techne`; KI-TOOL-CLI-116 (launcher-held `--wait-for` gates) in `tools-ki`. KI-HARNESS-GOV-170 (keep resolution targets local) is adopted to Next in `ki-agentic-harness`.
+- **Host restart due.** The host is on kernel 7.0.0-1013 with the reboot-required flag set after the 2026-10-10 unattended run. The binding sets no `reboot_window` yet, so it needs the provider's stop and start; awaiting Kris's go.
+- **Live record identifiers.** TECHNE-TOOLS-OPS-011 (the `.bashrc` marker), TECHNE-TOOLS-OPS-022 (instance user data), KI-ARCADIA-GOV-020 and KI-ARCADIA-GOV-023 (stack tags, description, recipe and guide) stay because changing them alters live state; proposed to fold into the TECHNE-TOOLS-OPS-017 rebuild.
+- **The Mac.** `terra`; chezmoi `rigProfile` is `laptop`; Tailscale is up. `mise` 2026.10.6 and `codex` 0.162.0 stay off the recipe pins (2026.10.4 and 0.161.0).
+- **`ki agent --wait-for` is unreliable** in ki 0.10.0 (KI-TOOL-CLI-116); sequence dependent runs by hand.
+- The decisions log runs to Decision 35.
 
 Thread rules:
 
@@ -49,7 +49,7 @@ Thread rules:
 - `target_host` is checked against the host name, not the provider's `host.id`; the recipe name `agent-host` stays generic (Decision 28).
 - Patching: no automatic reboot by default, an optional daily host-local reboot window, Livepatch opt-in, security-only unattended scope, and updates never changing the status outcome (Decisions 26 and 27).
 - Naming: the AWS agent host becomes `vega` at its rebuild; the laptop is `terra`; one name, `agent-host`, for the recipe and everything that meant `direct-host` (Decisions 29 and 30).
-- Handoffs between repositories state the need in plain terms and link durable docs, never another repository's roadmap records (Decisions 32 and 33).
+- References avoid roadmap record identifiers that will not last (Decision 32). Its durable owner is the cross-repository choreography rule in each repository's `AGENTS.md` and the `ki-work-roadmap` skill: a handoff names the originating repository, states the need and whether it blocks in plain terms, and links only durable documentation, never another repository's roadmap records (Decision 33). Code, checks and guides describe behaviour rather than cite pruned records. Checkpoints still cite records by full identifier, and `ki-accept` keeps its cross-repository link check before pruning (Decision 35).
 
 ## Files touched
 
@@ -59,11 +59,11 @@ ODR-KI-ARCADIA-001, ADR-KI-ARCADIA-003, the agent-host Project note and this che
 
 For Kris:
 
-1. Review TECHNE-TOOLS-OPS-015 and decide whether to accept it.
-2. Push the `tools-techne` commit that rewords TECHNE-TOOL-CLI-008.
-3. Restart the host through the provider's stop and start once the 7.0.0-1014 kernel lands on 2026-10-10, or plan TECHNE-TOOL-CLI-008 so the binding can set a reboot window.
-4. Decide whether to capture the `ki agent --wait-for` fix in `tools-ki`.
-5. Bring `mise` and `codex` on the Mac back to their pins, or move the pins (optional).
+1. Stop and start the host now that the reboot flag is set.
+2. Fold the remaining live record identifiers into the TECHNE-TOOLS-OPS-017 rebuild?
+3. KI-HARNESS-GOV-170 scope: add `ki-accept`'s acceptance standard, and record cross-repository duplicates in plain words naming the repository but no identifier?
+4. `mise` and `codex`: lower the Mac to the pins, raise the pins, or leave them (recommended: raise the pins).
+5. Plan TECHNE-TOOLS-OPS-017 next.
 6. Hand the machine-naming convention (Decision 29(a)) to the `rig.mac-studio-bootstrap` thread; not yet done.
 
 Owned-host exemption for the Mac Studio is handled by KI-ARCADIA-GOV-033 in the `mac-studio-bootstrap` thread.
@@ -74,5 +74,4 @@ Parked tangents, each to get a home when picked up:
 
 ## Next step
 
-1. Run `handoff-rule` (Decision 33).
-2. Kris works through the open questions above.
+1. Kris answers the open questions above; restart the host on his go.
