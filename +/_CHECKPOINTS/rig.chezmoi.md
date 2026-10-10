@@ -4,40 +4,41 @@ thread: rig.chezmoi
 label: 'Rig: chezmoi'
 state: active
 created_at: 2026-10-08T08:40:00Z
-updated_at: 2026-10-09T21:40:00Z
+updated_at: 2026-10-10T14:50:00Z
 ---
 
 # rig.chezmoi
 
 ## Objective
 
-Work the open DOTFILES-UE records in the chezmoi source (`~/.local/share/chezmoi`, GitHub `krisb/dotfiles`), keeping the workstation accurate, tidy and observable under the [Rig](../../Streams/Initiatives/rig.md) Initiative. chezmoi does not declare `ki-checkpoint`, so this thread's checkpoint lives in Arcadia. Current focus: the 1Password vault reorganisation.
+Work the open DOTFILES-UE records in the chezmoi source (`~/.local/share/chezmoi`, GitHub `krisb/dotfiles`), keeping the workstation accurate, tidy and observable under the [Rig](../../Streams/Initiatives/rig.md) Initiative. chezmoi does not declare `ki-checkpoint`, so this thread's checkpoint lives in Arcadia.
 
 ## Current state
 
-- **1Password tidy-up** ([DOTFILES-UE-077](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-077-reorganise-1password-vaults-safely.md), triage). Kris restructured the vaults himself: built-in `Personal` as the inbox, Financial, Org - HNR, Org - Techmedix, ten `Personal - ...` vaults, and Rig. Read-only helpers inventoried 899 items and produced one approval sheet, `~/.local/state/ki/agents/chezmoi/vault-plan.md` (local, mode 600, never committed): 118 moves, 359 renames, 295 URL fixes, archive and duplicate lists, a tag scheme and 23 questions with recommended answers.
-- **Applying (Decision 22, tag-then-process):** helper `vault-apply` snapshots all items, tags every item `^triage`, creates `Personal - Household`, renames Howden Browns to `Personal - Parents`, sets icons and descriptions, then applies only confident moves, renames and home-page URLs, removing `^triage` from each finished item. Uncertain items go to `Personal` with `^triage`; duplicates get `^duplicate`; hand checks get `^review` or `^fix_url`. It updates chezmoi's `op://` reference whenever a chezmoi-read item moves to Rig. Every change is logged reversibly in `vault-apply.log.md`. The tag-scheme clean-up (removing `kris`, `home`) waits for Kris. Then helper `vault-categories` tags wrong-category items `^recategorise` for Kris to recreate.
-- **Repeatable triage** captured as [DOTFILES-UE-078](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-078-repeatable-1password-triage.md) (triage, blocked by DOTFILES-UE-077).
-- **chezmoi source:** renders cleanly; GSuite reference now points at its item in Rig. Local `main` is 13 commits ahead of `origin/main` (this thread's DOTFILES-UE-077/078 records, reference fixes and vocabulary note, plus another session's DOTFILES-UE-075/076 and a docs commit); pushing needs Kris.
-- **Other records this thread holds, all waiting on Kris:** [DOTFILES-UE-072](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-072-machine-neutral-two-checkout-rule.md) (held until TECHNE-TOOLS-OPS-014 ships, then likely cancelled); [DOTFILES-UE-071](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-071-audit-macos-privacy-permissions.md); [DOTFILES-UE-027](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-027-honest-rationales-per-tool.md), [DOTFILES-UE-062](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-062-measure-the-live-apply.md), [DOTFILES-UE-065](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-065-diagnose-same-boot-mcporter-stall.md) (Hold).
-- **Owned elsewhere:** [DOTFILES-UE-073](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-073-cheztoi-host-profile.md) and [DOTFILES-UE-074](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-074-host-detached-delegation.md) ([agent-host](../../Streams/Projects/agent-host/agent-host.md)); [DOTFILES-UE-075](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-075-sol-tailscale-daemon-exception.md) and [DOTFILES-UE-076](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-076-always-run-latest-source.md) (another session, per-machine Rig profiles); [DOTFILES-UE-035](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-035-install-whatsapp-spool-refresh.md) ([knowledge-acquisition](../../Streams/Projects/knowledge-acquisition.md)).
+- **1Password reorganisation applied.** The vault restructure, confident moves, renames and home-page URL fixes are done. Nine wrong-category items were recreated as API Credential, the chezmoi references repointed with byte-identical renders, and all ten originals archived (one was a duplicate). Remaining review tags: about 176 `^triage`, 75 `^duplicate`, 41 `^review` and 8 `^fix_url`, which the repeatable triage in [DOTFILES-UE-078](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-078-repeatable-1password-triage.md) will work through. Both records sit in the [secrets-hygiene](../../Streams/Projects/secrets-hygiene.md) Project.
+- **Accepted and pruned:** DOTFILES-UE-062 (scoped live-apply measurement: no failures, port 3100 briefly down twice), DOTFILES-UE-073 (cheztoi host profile) and DOTFILES-UE-081 (claude-swap auto-switch service). All pushed; the source audit passes with no failures.
+- **claude-swap** runs as the launchd service `uk.me.kris.rig.claude-swap-auto` with the consume-first strategy. Check it with `cswap list` or `cswap status --token-status`; after re-adding expired credentials with `cswap add`, restart it with `launchctl kickstart -k gui/$(id -u)/uk.me.kris.rig.claude-swap-auto`. Log: `~/Library/Logs/uk.me.kris.rig.claude-swap-auto.log`.
+- **Open records:** [DOTFILES-UE-071](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-071-audit-macos-privacy-permissions.md), [DOTFILES-UE-027](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-027-honest-rationales-per-tool.md) and [DOTFILES-UE-065](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-065-diagnose-same-boot-mcporter-stall.md) are the remaining gated records Kris approved, in that order; [DOTFILES-UE-035](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-035-install-whatsapp-spool-refresh.md) ([knowledge-acquisition](../../Streams/Projects/knowledge-acquisition.md)); [DOTFILES-UE-074](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-074-host-detached-delegation.md) ([agent-host](../../Streams/Projects/agent-host/agent-host.md)); [DOTFILES-UE-076](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-076-always-run-latest-source.md) (mac-studio-bootstrap thread); [DOTFILES-UE-072](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-072-machine-neutral-two-checkout-rule.md) (held); DOTFILES-UE-077, DOTFILES-UE-078 and DOTFILES-UE-079 (triage).
 
-## Decisions made
+## Decisions in force
 
-- The master thread `state-of-play` owns cross-project priorities, releases and decisions.
-- Edit the source, never the target; `chezmoi apply` is allowed after reviewing `chezmoi diff`.
-- Run `chezmoi` decisions log (`~/.local/state/ki/agents/chezmoi/decisions.md`, machine-local), in force: Rig is the Initiative over chezmoi (7); secrets approach: a dedicated vault named Rig, one logical-name secrets map, a pre-apply reference check, no title-search fallback (9, 10); Rig holds anything Kris uses on a machine or connects to, Wi-Fi and unlock codes included (14); Howden Browns is Kris's parents and brother, to become `Personal - Parents`, plus a new `Personal - Household` (15); Retford Browns is not Kris's parents (17); item names use a bracketed qualifier where several entries share a service (18); URL fixes need no further approval and point at the home page (19); Financial ranks above a person's own vault (20); uncertain items go to the `Personal` inbox and triage must be repeatable (21); tag-then-process with `^triage` (22); wrong-category items get `^recategorise` (23); DOTFILES-UE-072 held (5).
+The machine-local decisions log (`~/.local/state/ki/agents/chezmoi/decisions.md`) is consolidated as follows.
+
+- **In durable owners:** Rig is the Initiative over chezmoi (7). The secrets approach, vault precedence and inbox (9, 10, 20, 21) and the single-approval 1Password session (29, 30) are in [DOTFILES-UE-077](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-077-reorganise-1password-vaults-safely.md). The Rig-vault scope, naming and URL rules, the no-Archive `^archive` rule and the recategorise procedure (14, 18, 19, 25, 33) are in DOTFILES-UE-078. The secrets-hygiene Project (26) is its Project note. The claude-swap launchd exception (31, 34) is in the service declaration's rationale in `dot_config/rig/conf.d/private_50-services.toml`.
+- **Still only here:** DOTFILES-UE-072 is held (5); DOTFILES-UE-075 and DOTFILES-UE-076 belong to the mac-studio-bootstrap thread (27); work the gated records 071, 027 and 065 next (28).
+- **Spent:** the vault-plan application and tagging decisions (15, 17, 22-24) and the DOTFILES-UE-062 scope (32).
 
 ## Files touched
 
-- chezmoi source: `private_dot_ssh/private_known_hosts`, `.chezmoidata/mcp-servers.yaml`, the `communication.md` source, DOTFILES-UE-077 and DOTFILES-UE-078.
+- chezmoi source: `.chezmoidata/mcp-servers.yaml` (repointed to the API Credential items), `dot_config/rig/conf.d/private_50-services.toml` (claude-swap service), DOTFILES-UE-062, DOTFILES-UE-073, DOTFILES-UE-074, DOTFILES-UE-077, DOTFILES-UE-078 and DOTFILES-UE-081.
+- mcp-acquire-whatsapp: the operator guide's `op://` reference, pushed.
 
 ## Open questions
 
-- Kris: answer `vault-plan.md` Questions 1-23 (or "recommended") and approve the tag scheme; until then those items keep `^triage`.
-- Kris: push the 13 local chezmoi commits?
-- For `state-of-play`: keep this thread open (it now has active work); who may write to the chezmoi source, given another session commits there too.
+- Kris: file a `tools-rig` record so `rig apply` asks for the sudo password once at the start and keeps it alive for the run? An overnight apply stalled at Homebrew's sudo prompt.
+- Kris: approve CODEX, so this thread can drop `mcp-housekeeping-codex` from `dot_mgit.toml`, `dot_config/ki/config.toml`, `.chezmoidata/trusted-folders.yaml` and the VS Code workspace.
+- Kris: note the approved Claude auto-switch exception in ADR-DOTFILES-007, which says automatic rotation is off for Codex?
 
 ## Next step
 
-Summarise for Kris from the latest mark in `~/.local/state/ki/agents/chezmoi/marks.md` (Mark 1, 2026-10-09 22:40 BST) when he asks. Record the outcome of the scoped [DOTFILES-UE-062](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-062-measure-the-live-apply.md) apply (evidence in `apply-062/`) in that record, then bring this checkpoint current with Decisions 24-33.
+Start DOTFILES-UE-071 (macOS privacy-permissions audit) as a background run, then DOTFILES-UE-027 and DOTFILES-UE-065.
