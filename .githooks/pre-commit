@@ -1,0 +1,29 @@
+#!/bin/sh
+# Committed stub bound by `core.hooksPath` so every working tree, including a linked
+# worktree with no install, resolves a hook. Without the gate's tooling it refuses the
+# commit rather than letting Git find no hook and commit unchecked; with it, it runs
+# the governed Husky hook unchanged, then the Knowledge Base's check-only audit.
+root="$(git rev-parse --show-toplevel)" || exit 1
+missing=''
+for tool in lint-staged syncpack; do
+  [ -x "$root/node_modules/.bin/$tool" ] || missing="$missing $tool"
+done
+if [ -n "$missing" ]; then
+  echo "pre-commit: the commit gate cannot run; missing from node_modules/.bin:$missing" >&2
+  echo "pre-commit: run \`bun install\` in $root, then commit again." >&2
+  echo "pre-commit: do not bypass with --no-verify; a gate that cannot run is unknown, not a pass." >&2
+  exit 1
+fi
+if ! command -v ki >/dev/null 2>&1; then
+  echo "pre-commit: the commit gate cannot run; the \`ki\` CLI is not on PATH." >&2
+  echo "pre-commit: install \`ki\`, then commit again." >&2
+  echo "pre-commit: do not bypass with --no-verify; a gate that cannot run is unknown, not a pass." >&2
+  exit 1
+fi
+PATH="$root/node_modules/.bin:$PATH"
+export PATH
+sh "$root/.husky/pre-commit" "$@" || exit 1
+# The focused Knowledge Base audit is the island's own shape gate (ki-repo-kb GATE-1).
+# It stays check-only and leaves machine-local checks, such as registry and runtime
+# activation, to the full audit and CI.
+exec ki repo audit --repo "$root" --skill ki-repo-kb

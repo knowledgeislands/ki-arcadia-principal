@@ -42,7 +42,7 @@
   "scripts": {
     "clean": "rm -rf node_modules",
     "ki:deps:update": "bun update --latest",
-    "prepare": "husky"
+    "prepare": "husky && git config core.hooksPath .githooks"
   },
   "type": "module"
 }
