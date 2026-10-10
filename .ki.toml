@@ -14,7 +14,7 @@ harnesses = [
 repository = "https://github.com/knowledgeislands/ki-arcadia-principal"
 title = "Arcadia Principal"
 capital = "https://github.com/knowledgeislands/ki-arcadia-principal"
-description = "The core knowledge repository of the Knowledge Islands project — governance base, evolving KB, and decision record."
+description = "The core knowledge repository of the Knowledge Islands project - governance base, evolving KB, and decision record."
 supported_runtimes = [
   "claude-code",
   "claude-desktop",
