@@ -6,7 +6,7 @@ date: 2026-09-15
 status: current
 decision_type: architecture
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/adr
-decision_depends_on: [GDR-KI-ARCADIA-001, ADR-KI-ARCADIA-004]
+decision_depends_on: ['GDR-KI-ARCADIA-001', 'ADR-KI-ARCADIA-004']
 ---
 
 # ADR-KI-ARCADIA-005: One persona across explicit working contexts
