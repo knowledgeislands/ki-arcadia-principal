@@ -3,6 +3,7 @@ note_type: admin/governance/decision
 id: SDR-KI-ARCADIA-007
 title: 'The Great Library of Arcadia'
 date: 2026-06-25
+updated: 2026-10-10
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/sdr
 decision_type: strategy
@@ -13,9 +14,7 @@ decision_depends_on: ['SDR-KI-ARCADIA-001', 'SDR-KI-ARCADIA-002', 'SDR-KI-ARCADI
 
 ## Context
 
-SDR-KI-ARCADIA-001 named Arcadia as the first Knowledge Island and the canonical seat of the Knowledge Islands model. SDR-KI-ARCADIA-002 established Arcadia's role within the Archipelago. SDR-KI-ARCADIA-003 defined the governance of a single island and its zones.
-
-What remained undefined was what Arcadia's `Pillars` zone actually contains - the shape and scope of the library that makes Arcadia more than an administrative repository. A Knowledge Island is only as valuable as the knowledge it holds. Arcadia has a specific purpose: it is the island from which the Knowledge Islands model is maintained and extended, and from which the practical tools of the system - design language, technical infrastructure, operating philosophy - are held.
+Arcadia is the island from which the Knowledge Islands model is maintained and extended, and in which the practical knowledge of the system - design language, engineering practice, operating philosophy - is held. A Knowledge Island is only as valuable as the knowledge it holds, and Arcadia's `Pillars` zone is the library that makes it more than an administrative repository.
 
 The "Great Library of Arcadia" names this intentional structure: a curated, interconnected body of knowledge that grounds and extends the model in practice.
 
@@ -29,13 +28,14 @@ The Library is "great" in the sense of scope: it does not specialise in a single
 
 ### Pillars in Arcadia
 
-The Library is organised into three pillars, each with a distinct scope and purpose:
+The Library is organised into four pillars, each with a distinct scope and purpose:
 
-| Pillar         | Scope                                                                                  |
-| -------------- | -------------------------------------------------------------------------------------- |
-| **Philosophy** | The Knowledge Islands model †                                                          |
-| **Aesthetics** | The design language of the Knowledge Islands system ‡                                  |
-| **Technē**     | Technical knowledge: engineering conventions, infrastructure, tooling, and substrate § |
+| Pillar                   | Scope                                                                                                 |
+| ------------------------ | ----------------------------------------------------------------------------------------------------- |
+| **Philosophy**           | The Knowledge Islands model †                                                                         |
+| **Aesthetics**           | The design language of the Knowledge Islands system ‡                                                 |
+| **Engineering Practice** | Technical knowledge: engineering foundations, architecture, operating model, and technology posture § |
+| **Technē**               | The retained entry point for the engineering discipline, signposting Engineering Practice             |
 
 † Its structure, conventions, processes, activities, agents, and tools. The canonical definition of what Knowledge Islands is.
 
@@ -43,11 +43,11 @@ The Library is organised into three pillars, each with a distinct scope and purp
 
 § The technical substrate on which the islands run.
 
-This structure reflects the three registers of any complex system: the governing model (Philosophy), the visible identity (Aesthetics), and the technical execution (Technē). Each pillar has its own conventions, its own depth, and its own audience - but they are held together because Arcadia governs all three.
+This structure reflects the registers of any complex system: the governing model (Philosophy), the visible identity (Aesthetics), and the technical practice (Engineering Practice), with Technē keeping the engineering discipline's established entry point. Each pillar has its own conventions, its own depth, and its own audience - but they are held together because Arcadia governs them all.
 
 ### Philosophy as the canonical seat
 
-The Philosophy pillar is not merely Arcadia's local notes about Knowledge Islands. It is the canonical definition: the specification from which any island wishing to adopt the model would read. Changes to Philosophy's canonical layer (the `Model/` subtree) go through the Contribution Process defined in SDR-KI-ARCADIA-005. Other islands may hold their own copies; they pull from Arcadia's model, not the reverse.
+The Philosophy pillar is not merely Arcadia's local notes about Knowledge Islands. It is the canonical definition: the specification from which any island wishing to adopt the model would read. Changes to Philosophy's canonical layer (the `Model/` subtree) go through the Enactment Process. Other islands may hold their own copies; they pull from Arcadia's model, not the reverse.
 
 Philosophy is named for what its content IS - the conceptual backstory and governing principles of the Knowledge Islands system - not for who it belongs to. All pillars in Arcadia are about Knowledge Islands in one sense; Philosophy holds the philosophical and structural layer that defines the system itself.
 
@@ -63,8 +63,8 @@ Domain knowledge that belongs to a specific context (a client, a project, a tool
 
 ## Consequences
 
-- Arcadia's `Pillars/` zone is three pillars: Philosophy, Aesthetics, and Technē. This is the deliberate shape of the Great Library.
-- The Philosophy pillar is the canonical seat of the Knowledge Islands model. Changes to it pass through the Contribution Process.
+- Arcadia's `Pillars/` zone is four pillars: Philosophy, Aesthetics, Engineering Practice, and Technē as the signpost to Engineering Practice. This is the deliberate shape of the Great Library.
+- The Philosophy pillar is the canonical seat of the Knowledge Islands model. Changes to it pass through the Enactment Process.
 - New pillars require deliberate decision - they are not created by default when a new topic area emerges.
 - The "Great Library" name is not metaphor for ambition; it names the institutional role Arcadia's Pillars play within the Knowledge Islands system: the place where the model is held, maintained, and extended.
 
