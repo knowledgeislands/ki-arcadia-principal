@@ -5,13 +5,13 @@ area: OPS
 title: Decide on a Delta trial
 kind: decide
 project: delta-evaluation
-status: draft
-horizon: soon
+status: cancelled
+resolution: rejected
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-08T13:50:51Z
-updated_at: 2026-10-11T02:19:55Z
+updated_at: 2026-10-11T02:23:38Z
 ---
 
 # Decide on a Delta Trial
@@ -28,6 +28,10 @@ The [[delta-evaluation]] Project's Notes hold the assessment of Delta as a deliv
 
 - In scope: putting the open questions to Kris, recording the answer, and either drafting the trial record or routing the assessment summary to its durable owner.
 - Out of scope: running the trial, and any change to Paperclip's coordination or KI repository authority.
+
+## Cancelled
+
+Cancelled 2026-10-11 as rejected, approved by Kris Brown (state-of-play decisions log, Decision 38: roadmap triage approved in full). A decision with no deadline while Paperclip work waits on the Techne hold, so Kris chose not to keep it as a work record. It is kept as a one-line idea, with its 2026-10-13 re-evaluation point, in the [[delta-evaluation]] Project note. It leaves no outstanding change.
 
 ## Discussion
 

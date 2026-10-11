@@ -4,10 +4,10 @@ slug: delta-evaluation
 title: Delta evaluation
 outcome: Kris decides whether Delta earns a bounded trial as a delivery and review interface alongside Paperclip, and the outcome is routed to its durable owner.
 initiative: techne
-lifecycle: active
+lifecycle: paused
 lead: Kris Brown
 target: null
-updated: 2026-10-08T13:51:00Z
+updated: 2026-10-11T02:24:51Z
 author: Written with Claude
 ---
 
@@ -23,6 +23,7 @@ This Project sits in [[Initiatives/techne|Techne]], beside [[paperclip-bootstrap
 
 ## Notes
 
+- **On hold.** Paused on 2026-10-11 by Kris (Decision 38): no thread yet.
 - **Layer.** Paperclip coordinates companies, agents, tasks, execution and operational approvals, and explicitly leaves code review to a separate process ([overview](https://github.com/PaperclipAI/paperclip)). Delta centres a collaborative coding thread that holds the conversation, file changes, comments and review together ([core concepts](https://delta.dev/docs/concepts/core-concepts)).
 - **Isolated execution.** Delta normally gives each thread a separate checkout and can use an existing Git worktree; its managed checkout nests under `.delta` in a connected local clone ([worktrees](https://delta.dev/docs/concepts/worktrees)). KI delivery requires task-specific isolation and an authorised path into the designated primary checkout.
 - **Independent review.** Delta supports contextual comments and review threads with approval or change-request verdicts ([Delta on the web](https://delta.dev/docs/collaboration/delta-on-the-web)). A trial must still show that an independent reviewer assessed the exact candidate commit and that required verification ran against the proposed combined result.
@@ -34,7 +35,8 @@ This Project sits in [[Initiatives/techne|Techne]], beside [[paperclip-bootstrap
 - Is a trial worth running now, given the [[Techne Programme Hold]] on remote agent execution? Delta's hosted threads and server-side storage need checking against that policy before any trial; [[agent-host]] tracks the hold prerequisites.
 - Which non-sensitive test repository and bounded delivery would exercise the criteria without exposing private content?
 - Should the assessment be promoted into `Resources` as tool reference, or does it only become durable as part of an adoption or rejection decision? The original loose assessment, `+/delta-paperclip-assessment-2026-10-02.md`, is retained in Git.
+- **Idea: decide on a Delta trial.** Kris answers whether Delta earns a bounded trial alongside Paperclip, re-evaluating from the 2026-10-06 baseline at the 2026-10-13 decision point, and the answer gets a home. Kept as an idea on 2026-10-11 in place of a cancelled Arcadia work record (Decision 38).
 
 ### Close-out assessment
 
-The assessment of Delta is written, in these Notes, but the Outcome's test is not met: Kris has not yet answered whether Delta earns a trial, and the assessment has no durable home. The decision is captured as a triage record in Arcadia, so the Project stays open until it is taken.
+The assessment of Delta is written, in these Notes, but the Outcome's test is not met: Kris has not yet answered whether Delta earns a trial, and the assessment has no durable home. The decision is kept as an idea in these Notes, and the Project is paused until a thread takes it up.

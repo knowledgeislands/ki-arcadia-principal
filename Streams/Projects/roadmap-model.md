@@ -4,10 +4,10 @@ slug: roadmap-model
 title: Roadmap model
 outcome: The territory records work under the roadmap model, and the roadmap checker enforces it.
 initiative: platform-foundations
-lifecycle: active
+lifecycle: paused
 lead: Kris Brown
 target: null
-updated: 2026-10-08T13:51:00Z
+updated: 2026-10-11T02:24:50Z
 author: Written with Claude
 ---
 
@@ -23,6 +23,7 @@ This Project sits in [[platform-foundations|Platform foundations]].
 
 ## Notes
 
+- **On hold.** Paused on 2026-10-11 by Kris (Decision 38): no thread yet.
 - [[GDR-KI-ARCADIA-005-the-roadmap-model|GDR-KI-ARCADIA-005]] records the model and its refinements, citing the design papers filed beside it. Kris approved the model, every migration proposal and the rollout's carry-through on 2026-10-07.
 - Links point upwards only: a record names its Project, a Project names its Initiative, and the notes list neither records nor Projects. `ki` produces the views.
 
