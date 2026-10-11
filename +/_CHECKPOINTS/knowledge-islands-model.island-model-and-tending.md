@@ -4,7 +4,7 @@ thread: knowledge-islands-model.island-model-and-tending
 label: 'KI Model: island-model-and-tending'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-11T03:05:00Z
+updated_at: 2026-10-11T03:15:00Z
 ---
 
 # knowledge-islands-model.island-model-and-tending
@@ -15,51 +15,44 @@ Arcadia's current island-model and tending records each delivered, handed to an 
 
 ## Current state
 
-- Mark: 2026-10-11T01:37:00Z, decisions log at Decision 17
-- Active since re-bootstrap at 22:30 BST on 2026-10-09; `ki-delegation` read at cfa9c458. Run `island-model-and-tending` (decisions log `~/.local/state/ki/agents/island-model-and-tending/decisions.md`, Decisions 1-23; reports beside it) has no agents running.
-- Delivered 2026-10-09 to 2026-10-10: GitHub Apps note and KI-ARCADIA-GOV-030 pruned; first `ki-repo` REVIEW; repository tidy (description, CI pin layout, committed `.githooks` gate); Decision Record consolidation; KI-ARCADIA-MOD-007 delivered, accepted and handed two follow-ups to the harness; index-note overviews and the four Realisation notes written.
-- Delivered 2026-10-11 (Decisions 18-22):
-  - `agora-tidy`: retired Agora wording replaced by territory selection across 13 repositories, including GDR-KI-HARNESS-006 rewritten in place as "Territory-derived working sets".
-  - `links`: 33 dangling wikilinks resolved by purpose and about 45 unlinked record and Decision Record IDs linked; [KI-ARCADIA-MOD-007](https://github.com/knowledgeislands/ki-arcadia-principal/blob/e3ca805f6a2b8775189f3c0fe5b78dc51efe7147/Streams/Roadmap/KI-ARCADIA-MOD-007-retire-runtime-specific-realisation-notes.md) pruned.
-  - `great-library`: [Great Library of Arcadia](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Pillars/Philosophy/Realisation/Arcadia/Great%20Library%20of%20Arcadia/Great%20Library%20of%20Arcadia.md) written as a full concept, with five open questions in the note.
-  - `chatgpt-trim`: of the seven 2026-10-03 ChatGPT notes, three deleted as held elsewhere and four trimmed to their open items; open Realm and lineage items pointed from the Project note, Techne items from the agent-host Project.
-- The Project has no open roadmap records, so `ki-repo-kb-streams` warns STREAM-10; the close-out assessment waits on REALM-CLOSEOUT.
+- Mark: 2026-10-11T03:15:00Z, decisions log at Decision 29
+- `ki-delegation` read at cfa9c458. Run `island-model-and-tending` keeps its decisions log at `~/.local/state/ki/agents/island-model-and-tending/decisions.md` (Decisions 1-29) with each background agent's report beside it.
+- Everything before the mark is delivered and pushed: the first `ki-repo` REVIEW, repository tidy, Decision Record consolidation, KI-ARCADIA-MOD-007 delivered, accepted and pruned, index-note overviews, Agora retired across the estate, dangling references repaired by purpose, the Great Library note written, and the ChatGPT acquire reconciled.
+- Running at the mark (Decisions 25-29):
+  - `concepts`: reframe the Great Library as the library of all libraries; move the acquire's open concepts into a new Emerging Concepts area and the two design principles into Engineering Practice as candidates; empty the acquire.
+  - `arcadia-tidy`: settle the placeholder notes; reword citations of other repositories' roadmap records; capture the philosophy review as a later-horizon draft record in this Project (clears STREAM-10).
+  - `agora-follow`: apps-observatory engineering handoff, chezmoi `ki` and `mgit` completions, ki-website CLI and skill sync, kit-principal ChatGPT instructions source.
 - Arcadia primary checkout diverged from origin (another session's unpushed commits); left to its owner, not pulled.
 
 ## Decisions made
 
-- Relayed from master on 2026-10-09 (this run's Decisions 1-3): first full Arcadia review against the `ki-repo` REVIEW checklist here, no new roadmap records; GitHub Apps note edit and KI-ARCADIA-GOV-030 closed and pruned; thread labelled `KI Model: island-model-and-tending`.
 - The master thread `_state-of-play` owns cross-project priorities, releases and decisions; this thread works only its Project's records (Decisions 17 and 18 in `~/.local/state/ki/agents/state-of-play/decisions.md`).
 - New or reworked content in `Admin`, `Pillars` and `Resources` goes through the Enactment Process; an explicit owner instruction for a bounded change stands in for a record (KI-ARCADIA-GOV-024).
-- No runtime-specific notes in the island (KI-ARCADIA-MOD-007, Decision 9).
+- No runtime-specific notes in the island (Decision 9).
 - Keep `bunx` in lint-staged and add no check script; `ki repo audit` is the verification gate (Decisions 14-15).
-- References to old roadmap records and Decision Records are repaired by purpose, never by bare removal (Decision 19).
-- Acquired ChatGPT items are trimmed once dealt with, so what remains in the acquire stays visible (Decision 22).
-- The established Knowledge Islands philosophy, which the website was built from, is largely sound: additive changes are welcome, and any change that goes against it is flagged to Kris and double-checked before it is made (Decision 23).
-- Project close-out waits until the acquired ChatGPT items are checked against it (master Decision 7); now done, leaving the open items below.
+- References to old roadmap records and Decision Records are repaired by purpose, never by bare removal; never cite another repository's roadmap record (Decisions 19 and 29).
+- Acquired items are moved into the knowledge base proper once dealt with, so the acquire shows only what is left (Decisions 22 and 26).
+- Philosophy guard: the established Knowledge Islands philosophy, which the website was built from, is largely sound. Additive changes are welcome; anything that goes against it is flagged to Kris and double-checked first (Decision 23).
+- The whole-philosophy coherence review is scheduled for later, once most of the roadmap is cleared (Decision 24).
+- The Great Library of Arcadia is a philosophical idea - the library of all libraries, a play on the Great Library of Alexandria - and changes no knowledge-base structure (Decision 25).
+- GDR-KI-HARNESS-006 stays rewritten in place as "Territory-derived working sets" (Decision 28).
 
 ## Files touched
 
-Arcadia changes are made by run agents and pushed; see each report under `~/.local/state/ki/agents/island-model-and-tending/`. Remaining ChatGPT items: four trimmed notes in `/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_ACQUIRE/chatgpt/knowledge-islands/`.
+Arcadia and other repositories are changed only by run agents in their own worktrees; see each report under `~/.local/state/ki/agents/island-model-and-tending/`.
 
 ## Open questions
 
-Needs Kris, raised 2026-10-11:
+Actions outstanding at the mark:
 
-- **GL-SCOPE:** what the Great Library covers - Calendar, Pillars and Resources (Structure, The Home of Knowledge), Pillars and Resources (SDR-KI-ARCADIA-002) or Pillars only (SDR-KI-ARCADIA-007) - plus the note's four smaller open questions.
-- **GL-FIXES:** one-line fixes to the stale Great Library sentences in Knowledge Islands and the Arcadia note (recommended).
-- **STUBS:** nine placeholder or thin notes with recommendations (EMAIL-STUBS, LINEAR-STUB, PILLARS-CONV, SKILLS-IDX, LIVE-ARTS-IDX, AUTHORING-LOCAL, STRUCT-TODO, TECHNE-V01, BRIEF-TEND) in `great-library.report.md`; EMAIL-LINEAR (framework definitions deleted 2026-06-25 with no successor) decided with EMAIL-STUBS.
-- **ACQ-HOMES:** home for two unowned design principles (not lowest common denominator, FOSS-first) and the Knowledge Realms domain check.
-- **REALM-CLOSEOUT:** whether the open Realm and lineage items become records or stay as acquire notes when the Project closes.
-- **PHILO-REVIEW:** a whole-philosophy coherence review to confirm the model still holds together (Decision 23); recommended as this Project's next record, which also answers STREAM-10.
-- **XREPO-CITES:** reword Release Cascade, GitHub Apps and the territory-selection brief around durable Decision Records and guides, since `AGENTS.md` now forbids citing another repository's roadmap records (recommended, one small run).
-- **AGORA-FOLLOW-UPS** from `agora-tidy.report.md`: apps-observatory still implements Agoras (engineering record needed); stale chezmoi `_ki` and `_mgit` completions; stale ki-website vendored CLI and skill data (needs a network sync); kit-principal ChatGPT instructions source versus the live field; obsolete triage record HNR-HARNESS-004 to cancel; VA-PRINCIPAL-GOV-003 still names its Agora binding; GDR-KI-HARNESS-006 rewritten in place rather than archived.
-- Settled by master 2026-10-11: CI-RELEASE (tools-ki v0.10.1 cut, Arcadia pin bumped) and CHEZMOI-HEADING (routed to Rig: chezmoi).
+- **CHATGPT-RESAVE:** Kris re-saves the live ChatGPT custom-instructions field with the text `agora-follow` reports.
+- **CHEZMOI-APPLY:** Kris runs `chezmoi apply` for the regenerated completions once `agora-follow` pushes them.
+- **HNR-004 / VA-003:** pass to their owners through the master thread - HNR-HARNESS-004 (obsolete Agora triage record, cancel) and VA-PRINCIPAL-GOV-003 (still names its Agora binding).
+- **PHILO-REVIEW:** later, once most of the roadmap is cleared; its scope collects the Emerging Concepts, candidate principles, Library wording, Structure's Harbour and Routes and Customs to-dos, and Avatar names per Realm against ADR-KI-ARCADIA-005.
 - Parked 2026-10-09: review tags - do we still need them?
 - Parked 2026-10-09: Admin conventions and knowledge-base structure tidy-up.
 
 ## Next step
 
-1. Bring Kris the 2026-10-11 Needs items and act on Kris's answers through run agents.
-2. Route AGORA-FOLLOW-UPS that belong to other owners once Kris decides.
-3. Close the Project once REALM-CLOSEOUT is settled.
+1. Relay the three agents' outcomes and any Needs-Kris items.
+2. Once the philosophy review record exists and nothing else is open, write the Project's close-out position.
