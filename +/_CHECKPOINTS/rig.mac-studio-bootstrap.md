@@ -4,7 +4,7 @@ thread: rig.mac-studio-bootstrap
 label: 'Rig: mac-studio-bootstrap'
 state: active
 created_at: 2026-10-08T08:45:00Z
-updated_at: 2026-10-11T03:48:00Z
+updated_at: 2026-10-11T03:55:00Z
 ---
 
 # rig.mac-studio-bootstrap
@@ -54,6 +54,7 @@ This checkpoint only. The Project note and its hosts note are current.
   - `RESTART` - Monday evening 2026-10-12 at the earliest: restart `sol`, unlock FileVault at the screen, and confirm Tailscale relaunches and reconnects (`ssh krisbrown@100.90.130.74` from the laptop works). This closes the Project.
   - `DROPBOX` - Dropbox, PTGui Pro, PhotoSweeper, ScanSnap Home and Synology Drive Client are no longer needed on `sol`; remove them by hand if you wish, or leave them for opt-in removal under RIG-CORE-041.
   - `WARP` - `rig apply` on `sol` fails only on Warp, because Homebrew's Warp cask has an upstream checksum mismatch; the installed app is intact and updates itself. Nothing to do unless you want the failure cleared before RIG-CORE-043 lands.
+  - `ZED-MD` - Markdown opens in Zed on the laptop (set through Launch Services, Decision 42). On `sol` the change has to be made at the screen: select a `.md` file in Finder, press Cmd-I, choose Zed under Open with, then Change All. Rig support for default apps is [RIG-CORE-045](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-045-default-applications.md), with the Rig Initiative.
 
 ## Next step
 
