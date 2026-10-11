@@ -1,6 +1,6 @@
 ---
 note_type: pillars/index
-updated: 2026-10-11T01:47:00Z
+updated: 2026-10-11T12:00:00Z
 tags:
   - card/note
   - topic/knowledge-islands
@@ -38,7 +38,7 @@ The website currently contains its own curated public pages. It should acquire m
 
 ## Great Library of Arcadia
 
-[[Great Library of Arcadia]] is intended as the closing illustration of Realisation: Arcadia's Library as a concrete example of how the model's conventions play out in a real island. It is still a placeholder, holding only an outline of what it will introduce. Until it is written, the Library's current shape is best read from [[Pillars]] and its pillar index notes.
+[[Great Library of Arcadia]] closes Realisation by showing the model's Library made real: Arcadia's `Pillars/` zone, organised into the Philosophy, Aesthetics, Engineering Practice and Technē pillars. It explains how the Great Library relates to the model's Library convention, why other islands treat it as a reference rather than a jurisdiction, and how it grows only through the Enactment Process. It also records the questions its founding decision leaves open, such as whether Arcadia's Resources belong to it.
 
 ## Related
 
