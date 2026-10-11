@@ -1,6 +1,6 @@
 ---
 note_type: pillars/index
-updated: 2026-10-11T12:00:00Z
+updated: 2026-10-11T04:20:00Z
 tags:
   - card/note
   - topic/knowledge-islands
@@ -13,7 +13,7 @@ status: current - June 2026
 
 ## Overview
 
-Arcadia is the Capital of the Knowledge Islands territory and the home of the model; its [[Great Library of Arcadia]], the library of all libraries, is the idea that explains that role. The Knowledge Islands website (`ki-website`, at knowledgeislands.info) is the public publication for the framework. It makes selected knowledge from this base visible beyond the KB and also publishes the agentic harness and KI Specifications. The website is framework-level rather than Arcadia-territory-scoped; the canonical sources remain this KB for philosophy and model, `ki-agentic-harness` for reusable tooling, and `ki-specifications` for normative portable contracts.
+Arcadia is the Capital of the Knowledge Islands territory and the home of the model; its `Pillars/` zone is the [[Great Library of Arcadia]], named as the library of all libraries. The Knowledge Islands website (`ki-website`, at knowledgeislands.info) is the public publication for the framework. It makes selected knowledge from this base visible beyond the KB and also publishes the agentic harness and KI Specifications. The website is framework-level rather than Arcadia-territory-scoped; the canonical sources remain this KB for philosophy and model, `ki-agentic-harness` for reusable tooling, and `ki-specifications` for normative portable contracts.
 
 ## The publication principle
 
@@ -38,7 +38,7 @@ The website currently contains its own curated public pages. It should acquire m
 
 ## Great Library of Arcadia
 
-[[Great Library of Arcadia]] closes Realisation with the idea behind Arcadia's role. Where the model treats every island's library as a source of knowledge, Arcadia's is the library of all libraries - a deliberate play on the Great Library of Alexandria. It is a philosophical idea rather than a structure: it explains why Arcadia matters and why other islands treat it as a reference rather than a jurisdiction, without prescribing how any knowledge base is laid out.
+[[Great Library of Arcadia]] closes Realisation by showing the model's Library made real: Arcadia's `Pillars/` zone, organised into the Philosophy, Aesthetics, Engineering Practice and Technē pillars. The name is Arcadia's own - any island may name its library or parts of it after buildings, artefacts or landscape - and it plays on the Great Library of Alexandria: as the home of the model, Arcadia's is the library of all libraries. The note explains why other islands treat it as a reference rather than a jurisdiction and how it grows only through the Enactment Process; the name changes nothing about knowledge-base structure.
 
 ## Related
 

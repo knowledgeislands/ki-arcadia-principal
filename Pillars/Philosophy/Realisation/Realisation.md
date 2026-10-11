@@ -1,6 +1,6 @@
 ---
 note_type: pillars/index
-updated: 2026-10-11T01:47:00Z
+updated: 2026-10-11T04:20:00Z
 tags:
   - card/note
   - topic/knowledge-islands
@@ -22,7 +22,7 @@ Each note here explains its element at model level and uses Arcadia as the worke
 
 ## Arcadia
 
-[[Arcadia]] introduces Arcadia as a living island and its relationship to the public Knowledge Islands website. It sets out the publication principle: the website is an independently deployable publication that vendors selected material, never a third source of truth, and it records the publication flows between this knowledge base, the agentic harness, KI Specifications and the website. Its subfolder holds the Great Library of Arcadia, intended as the closing illustration of how the model's conventions play out in Arcadia's own Library.
+[[Arcadia]] introduces Arcadia as a living island and its relationship to the public Knowledge Islands website. It sets out the publication principle: the website is an independently deployable publication that vendors selected material, never a third source of truth, and it records the publication flows between this knowledge base, the agentic harness, KI Specifications and the website. Its subfolder holds the Great Library of Arcadia - Arcadia's name for its `Pillars/` zone, a play on the Great Library of Alexandria - which closes the act by showing the model's Library made real.
 
 ---
 

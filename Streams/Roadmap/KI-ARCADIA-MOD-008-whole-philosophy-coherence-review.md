@@ -16,7 +16,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-11T03:26:34Z
-updated_at: 2026-10-11T03:26:34Z
+updated_at: 2026-10-11T04:20:00Z
 ---
 
 # Whole-Philosophy Coherence Review
@@ -36,7 +36,7 @@ Schedule it once most of the current roadmap is cleared, so the review reads a s
 - **Guard (Kris's decision of 2026-10-11).** Additive changes are welcome. Any change that would contradict laid-down philosophy is flagged to Kris and double-checked before it is made; the review does not resolve a contradiction on its own authority.
 - Reviews and proposes; canonical changes still go through the [[Admin/Operations/Processes/Enactment Process|Enactment Process]].
 - Compares against the website's presentation but makes no change to `ki-website`; any website follow-up is a plain-terms handoff to that repository.
-- Does not restructure the knowledge base: the Great Library is a philosophical framing, not a structure.
+- Does not restructure the knowledge base. The Great Library is settled: it is Arcadia's name for its `Pillars/` zone, and naming changes no structure.
 
 ## Discussion
 
@@ -44,6 +44,6 @@ Scope to read and check:
 
 - The whole philosophy under [[Philosophy]], end to end, for internal coherence and against what the website presents.
 - The [[Emerging Concepts]] notes and the candidate principles in Engineering Practice [[Principles]]: which to adopt, reshape or leave open.
-- The Library wording across [[Structure]], [[The Home of Knowledge]], [[SDR-KI-ARCADIA-002-the-home-of-knowledge|SDR-KI-ARCADIA-002]] and [[SDR-KI-ARCADIA-007-the-great-library-of-arcadia|SDR-KI-ARCADIA-007]], against the [[Great Library of Arcadia]] framing as the library of all libraries.
+- The Library wording across [[Structure]], [[The Home of Knowledge]] and [[SDR-KI-ARCADIA-002-the-home-of-knowledge|SDR-KI-ARCADIA-002]], which disagree on whether Calendar sits inside the Library.
 - The Harbour and Routes and Customs to-dos in [[Structure]], which wait for this review.
 - Avatar names per Realm against [[ADR-KI-ARCADIA-005-one-persona-across-explicit-working-contexts|ADR-KI-ARCADIA-005]].

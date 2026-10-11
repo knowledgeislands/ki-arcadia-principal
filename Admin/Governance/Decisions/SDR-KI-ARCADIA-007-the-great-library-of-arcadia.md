@@ -24,7 +24,9 @@ The "Great Library of Arcadia" names this intentional structure: a curated, inte
 
 Arcadia's `Pillars/` zone is the Great Library - a living, structured repository of internal knowledge owned by the island. The Library metaphor is precise: it is an institution for organising, preserving, and making accessible a curated body of knowledge. Unlike a wiki or a note dump, the Library has structure, curation standards, and an explicit boundary (the Pillars/Resources boundary) between what the island owns and what it merely references.
 
-The Library is "great" in the sense of scope: it does not specialise in a single domain. It holds the operational and philosophical infrastructure of the entire Knowledge Islands system.
+The Library is "great" in the sense of scope and role: it does not specialise in a single domain, but holds the operational and philosophical infrastructure of the entire Knowledge Islands system. As the home of the model, which knows what a library is and where the other libraries are, it is the library of all libraries - a deliberate play on the Great Library of Alexandria.
+
+"Great Library" is Arcadia's name for its library, as any island may name its library or parts of it after buildings, artefacts or features of the landscape. The name changes nothing about knowledge-base structure: Arcadia's zones and conventions are those every island keeps.
 
 ### Pillars in Arcadia
 
@@ -66,7 +68,7 @@ Domain knowledge that belongs to a specific context (a client, a project, a tool
 - Arcadia's `Pillars/` zone is four pillars: Philosophy, Aesthetics, Engineering Practice, and Technē as the signpost to Engineering Practice. This is the deliberate shape of the Great Library.
 - The Philosophy pillar is the canonical seat of the Knowledge Islands model. Changes to it pass through the Enactment Process.
 - New pillars require deliberate decision - they are not created by default when a new topic area emerges.
-- The "Great Library" name is not metaphor for ambition; it names the institutional role Arcadia's Pillars play within the Knowledge Islands system: the place where the model is held, maintained, and extended.
+- The "Great Library" name alludes to Alexandria as the library of all libraries, not as a measure of ambition; it names the institutional role Arcadia's Pillars play within the Knowledge Islands system: the place where the model is held, maintained, and extended.
 
 ## References
 
