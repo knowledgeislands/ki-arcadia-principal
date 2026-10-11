@@ -11,7 +11,7 @@ tags:
   - topic/knowledge-islands
 status: draft
 priority: medium
-horizon: later
+horizon: future
 blocks: []
 blocked_by: []
 baseline_ref: null
