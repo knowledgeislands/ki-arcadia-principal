@@ -1,10 +1,12 @@
 ---
 note_type: pillars/index
-updated: 2026-10-01T22:07:06Z
+updated: 2026-10-11T01:44:00Z
 author: AI-assisted
 ---
 
 # Engineering Practice
+
+## Overview
 
 Techné is the engineering discipline maintained in Arcadia for the Knowledge Islands ecosystem.
 
@@ -30,12 +32,25 @@ Arcadia maintains Engineering Practice as living canonical knowledge rather than
 
 Its architecture, decisions, evaluations, and operating guidance evolve through small, reviewable changes that preserve context and record consequences.
 
-## Contents
+## Architecture
 
-- [[Pillars/Engineering Practice/Foundations/Foundations|Foundations]] establishes the intent, outcomes, boundaries, and principles of the discipline.
-- [[Pillars/Engineering Practice/Architecture/Architecture|Architecture]] defines the agentic operating approach, engineering estate, Techne Fabric, knowledge architecture, and their diagrams.
-- [[Pillars/Engineering Practice/Operating Model/Operating Model|Operating Model]] defines how engineering work is performed and evolved.
-- [[Pillars/Engineering Practice/Technology/Technology|Technology]] records the current technology posture.
+[[Pillars/Engineering Practice/Architecture/Architecture|Architecture]] defines the roles and boundaries of the engineering estate before any product is mapped onto them. It covers the agentic operating approach, the governed work controller, the Techne Fabric and its execution contract, knowledge architecture, the first controller workload evaluation and the diagrams that illustrate them. Current products appear only as replaceable mappings onto those roles.
+
+## Foundations
+
+[[Pillars/Engineering Practice/Foundations/Foundations|Foundations]] establishes why Techné exists and how its trade-offs are judged. Its Vision, Goals, Non-Goals and Principles set the discipline's purpose, intended outcomes, boundaries and decision criteria. The other chapters cite these when a choice needs justifying.
+
+## MEMORY
+
+[[Engineering Practice/MEMORY|MEMORY]] is the scoped memory index for this pillar, loaded before substantive engineering knowledge work. It states the pillar's scope and its current boundaries, including the [[Techne Programme Hold]] and the separate implementation ownership of `ki-techne-harness` and `tools-techne`.
+
+## Operating Model
+
+[[Pillars/Engineering Practice/Operating Model/Operating Model|Operating Model]] defines how Techné turns an objective into reviewed work and durable knowledge. It sets out working contexts, the attached, persistent and unattended working modes, write ownership and human handover, a six-stage lifecycle from framing to evolution, and the control points that keep engineering disciplined. It also holds the Technology Investigation Programme for evidence-backed technology questions.
+
+## Technology
+
+[[Pillars/Engineering Practice/Technology/Technology|Technology]] records the current engineering posture toward technologies that affect the Knowledge Islands ecosystem. Its Technology Radar sorts them into Adopt, Trial, Assess and Hold, with a review practice for moving them between rings. Posture changes are informed by the Technology Investigation Programme rather than by automatic adoption.
 
 ## Provenance
 

@@ -1,12 +1,12 @@
 ---
 note_type: pillars/index
-updated: 2026-10-01T22:07:06Z
+updated: 2026-10-11T01:44:00Z
 author: AI-assisted
 ---
 
 # Engineering Operating Model
 
-## Purpose
+## Overview
 
 The engineering operating model defines how Techne turns an objective into reviewed work and durable knowledge.
 
@@ -154,6 +154,10 @@ The Techne Fabric in [[AI Execution Fabric]] determines which context-eligible f
 [[Technology Investigation Programme]] defines how a bounded technology question becomes reproducible evidence and a proportionate recommendation.
 
 Future chapters will define the detailed operating practices for remote engineering, security, local AI, cloud AI, and elastic execution.
+
+## Technology Investigation Programme
+
+[[Technology Investigation Programme]] gives Knowledge Islands a finite, evidence-backed way to understand a technology before changing engineering practice or technology posture. It sets out ownership, an investigation lifecycle, the minimum evidence a recommendation needs, and the portfolio and cadence of investigations. It favours accountable learning and appropriate reuse over either automatic adoption or automatic internal reimplementation.
 
 ## Provenance
 
