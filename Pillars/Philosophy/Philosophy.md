@@ -38,3 +38,9 @@ The pillar reads as three acts. [[Introduction/Introduction|Introduction]] asks 
 ## Realisation
 
 [[Realisation/Realisation|Realisation]] is the third act, where the portable model becomes a concrete island. It describes Arcadia and the realisation concepts - charter, council, configuration and integrations - through which an island instantiates the model. It is the bridge between the portable definition here and the island-specific governance kept in `Admin/`.
+
+---
+
+## Emerging Concepts
+
+[[Emerging Concepts]] holds ideas about the model that are worth keeping but not yet settled, such as the Realm and the fictional lineage behind the Avatar. None of it is adopted philosophy; where a note there conflicts with the three acts, the acts govern. Each concept waits for the whole-philosophy review to adopt, reshape or drop it.

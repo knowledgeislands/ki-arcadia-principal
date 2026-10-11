@@ -1,6 +1,6 @@
 ---
 note_type: pillars/note
-updated: 2026-10-01T22:07:06Z
+updated: 2026-10-11T03:17:00Z
 author: AI-assisted
 ---
 
@@ -36,6 +36,8 @@ Choose execution targets according to the workload and its constraints rather th
 
 The architecture must accommodate local, managed, elastic, and future dedicated execution without coupling the overall model to a single provider.
 
+**Candidate extension, not adopted:** neutrality should reach beyond execution to models, agent frameworks, IDEs, orchestrators and vendors, without becoming lowest-common-denominator. Portability must not reduce every tool to the weakest shared feature set; the ecosystem should still exploit the distinctive capabilities of good tools. This awaits the whole-philosophy review.
+
 ## Isolate Independently Acting Work
 
 Give each independently acting agent task an execution boundary proportionate to its authority and risk. Prefer a disposable or explicitly resumable environment built from a portable declaration, with identity, state, credentials, network access, evidence return, and teardown made explicit.
@@ -65,6 +67,14 @@ When a choice introduces a limitation or debt, document it so that future review
 Prefer modular structures, replaceable components, and incremental change.
 
 The knowledge base and the platform should be able to improve without requiring a wholesale rewrite or the loss of historical reasoning.
+
+## Candidate: FOSS-First and Inspectable
+
+**Not adopted; a candidate for the whole-philosophy review.** Prefer Free and Open Source Software and open standards where practical. High-quality freemium components may be appropriate, but avoid unnecessary proprietary lock-in. Core contracts should remain inspectable and portable.
+
+## Candidate Provenance
+
+The two candidate principles, the extension to Provider-Neutral Execution and FOSS-First and Inspectable, come from a ChatGPT conversation captured on 2026-10-03 and reconciled on 2026-10-11, when the other principles it proposed were found already held. Related unsettled concepts are in [[Emerging Concepts]].
 
 ## Provenance
 
