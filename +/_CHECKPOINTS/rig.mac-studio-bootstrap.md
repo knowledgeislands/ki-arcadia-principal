@@ -37,7 +37,7 @@ Bring Kris's Mac Studio, unused for over a month, back to full estate capability
 
 - [RIG-CORE-043](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-043-self-updating-applications.md) in tools-rig (triage): self-updating applications, widened so doctor reports an app installed from a different source than declared and shows the swap steps, never deleting anything (Decisions 24, 33).
 - [DOTFILES-UE-082](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-082-tolerate-missing-template-tools.md) in chezmoi (triage): templates that look up a not-yet-installed tool warn and skip rather than fail the apply (Decision 25).
-- [RIG-DIST-010](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-DIST-010-release-current-catalogue-reader.md) is `done`, not pruned (Decision 32).
+- [RIG-DIST-010](https://github.com/knowledgeislands/tools-rig/blob/b827bf5ec2b1c5f3c85930333db65a6639cef6e1/docs/roadmap/RIG-DIST-010-release-current-catalogue-reader.md) is `done`, not pruned (Decision 32).
 - chezmoi Rig source: Apple Silicon artifact paths for Beyond Compare, GitUp and Ollama, the Observatory launch agent on mise's `latest` bun (Decision 31), and DaisyDisk from the App Store on both Macs (Decision 33; the laptop's old Homebrew record is left alone because uninstalling the cask would delete the App Store app).
 - The chezmoi workstation guide has a "Set up a new machine" section (Decision 23). The 1Password service-account option is an open question in the rig.chezmoi checkpoint (Decision 25).
 
