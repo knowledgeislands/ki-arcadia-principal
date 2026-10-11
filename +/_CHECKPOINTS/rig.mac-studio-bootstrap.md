@@ -19,7 +19,7 @@ Mark: 2026-10-11T03:48Z, decisions log at Decision 40
 
 Decisions log: `~/.local/state/ki/agents/mac-studio-bootstrap/decisions.md` (machine-local, on the laptop, not in Git); every "Decision N" in this checkpoint refers to that file.
 
-ki-delegation read at c15053c4
+ki-delegation read at f2b14dca
 
 **Remaining: the restart test** (Needs Kris item `RESTART`). The Project stays open until it passes.
 
