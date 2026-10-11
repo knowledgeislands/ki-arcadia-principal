@@ -5,13 +5,12 @@ area: MOD
 title: Retire runtime-specific realisation notes
 kind: deliver
 project: island-model-and-tending
-status: awaiting-review
-horizon: now
+status: done
 blocks: []
 blocked_by: []
 baseline_ref: 8e4ec432f59401c141e2850d3d3819e7797b2a3f
 created_at: 2026-10-09T06:52:41Z
-updated_at: 2026-10-10T16:50:16Z
+updated_at: 2026-10-11T01:38:04Z
 ---
 
 # Retire Runtime-Specific Realisation Notes
@@ -243,6 +242,10 @@ The goal holds: no Claude- or ChatGPT-specific note remains in `Pillars`, and ea
 ### Mini recap
 
 Delivered the full disposition, retired 15 notes, moved one, and handed two points to the harness. Checks pass with no new failure. Proposed learning routes, not promoted: a trivial link fix for the Charter Conformance and Tool Ecosystem Map links, and a Canonical Meta Notes path refresh, each as Triage if Kris wants them.
+
+## Done
+
+Accepted 2026-10-11 by Kris Brown, by Decision 16 of the island-model-and-tending thread ("accept KI-ARCADIA-MOD-007 as done"), against the Review packet above. The outstanding concerns it names stay unaddressed by this closure and remain available for capture as Triage.
 
 ## Discussion
 
