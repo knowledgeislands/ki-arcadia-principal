@@ -4,7 +4,7 @@ thread: _state-of-play
 label: 'Master: state-of-play'
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-11T08:59:58Z
+updated_at: 2026-10-11T09:02:14Z
 ---
 
 # _state-of-play
@@ -80,7 +80,6 @@ Needs Kris:
 
 Parked:
 
-- 2026-10-09 - Marks are inconsistent across threads: master uses a dated "Mark:" bullet, while the agent-host and chezmoi threads use "Mark 1" and "Mark A" styles. Assess on 2026-10-10 against KI-HARNESS-GOV-169.
 - 2026-10-11 - Split macOS defaults out of Rig into their own tool or layer. Not now; for a later Rig tooling Project.
 - 2026-10-11 - Command centre / council management: align the concepts across repositories as its own Project under knowledge-islands-model (Decision 37; `command-centre` background agent surveying).
 
