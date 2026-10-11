@@ -1,6 +1,6 @@
 ---
 note_type: pillars/index
-updated: 2026-10-07T04:50:00Z
+updated: 2026-10-11T02:19:55Z
 author: AI-assisted
 ---
 
@@ -18,8 +18,8 @@ The [[Pillars/Engineering Practice/Architecture/Diagrams/Engineering Estate.svg|
 
 ## Agent Host Prototype Concept Map
 
-The [[Agent Host Prototype Concept Map]] reads the GOV-020 limited remote agent prototype in Knowledge Islands terms: Human, Rig, tailnet, Footprint and agent sessions, and the Operator access and Techne provisioning path, all live for the prototype's term. It sets these against what stays held under the [[Techne Programme Hold]]: the controller, K3s, the dispatcher, Kitteth, Paperclip and Telegram. The note explains each region; the SVG sits beside its Archify source.
+The [[Agent Host Prototype Concept Map]] reads the [KI-ARCADIA-GOV-020](https://github.com/knowledgeislands/ki-arcadia-principal/blob/fddfca69b4642cb4db4113123aa7dc613c3e92f4/Streams/Roadmap/KI-ARCADIA-GOV-020-limited-remote-agent-prototype.md) limited remote agent prototype in Knowledge Islands terms: Human, Rig, tailnet, Footprint and agent sessions, and the Operator access and Techne provisioning path, all live for the prototype's term. It sets these against what stays held under the [[Techne Programme Hold]]: the controller, K3s, the dispatcher, Kitteth, Paperclip and Telegram. The note explains each region; the SVG sits beside its Archify source.
 
 ## Provenance
 
-The Engineering Estate diagram and this index were adopted into Arcadia from [the retained Techné source](https://github.com/knowledgeislands/ki-techne-principal/blob/b25e9c950fd87715d12f76b69bb2079c3a4fc054/Pillars/Engineering%20Practice/Architecture/Diagrams/Diagrams.md) at revision `b25e9c950fd87715d12f76b69bb2079c3a4fc054`. Arcadia owns this canonical engineering knowledge; the original source revision remains evidence. The concept map was drafted in Arcadia under KI-ARCADIA-GOV-022.
+The Engineering Estate diagram and this index were adopted into Arcadia from [the retained Techné source](https://github.com/knowledgeislands/ki-techne-principal/blob/b25e9c950fd87715d12f76b69bb2079c3a4fc054/Pillars/Engineering%20Practice/Architecture/Diagrams/Diagrams.md) at revision `b25e9c950fd87715d12f76b69bb2079c3a4fc054`. Arcadia owns this canonical engineering knowledge; the original source revision remains evidence. The concept map was drafted in Arcadia under [KI-ARCADIA-GOV-022](https://github.com/knowledgeislands/ki-arcadia-principal/blob/fddfca69b4642cb4db4113123aa7dc613c3e92f4/Streams/Roadmap/KI-ARCADIA-GOV-022-file-the-agent-host-prototype-diagrams.md).

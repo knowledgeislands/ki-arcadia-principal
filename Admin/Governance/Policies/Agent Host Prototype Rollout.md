@@ -1,6 +1,6 @@
 ---
 note_type: admin/governance/policy
-updated: 2026-10-07T21:40:00Z
+updated: 2026-10-11T02:19:55Z
 author: AI-assisted
 ---
 
@@ -8,7 +8,7 @@ author: AI-assisted
 
 ## Overview
 
-This diagram shows the order in which the limited remote agent prototype comes into use, and how it stops. It explains the gates of the exemption in the [[Techne Programme Hold]], which [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] records and [[KI-ARCADIA-GOV-020-limited-remote-agent-prototype|KI-ARCADIA-GOV-020]] defined. It illustrates the policy; where they differ, the hold and the Decision Record govern.
+This diagram shows the order in which the limited remote agent prototype comes into use, and how it stops. It explains the gates of the exemption in the [[Techne Programme Hold]], which [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] records and [KI-ARCADIA-GOV-020](https://github.com/knowledgeislands/ki-arcadia-principal/blob/fddfca69b4642cb4db4113123aa7dc613c3e92f4/Streams/Roadmap/KI-ARCADIA-GOV-020-limited-remote-agent-prototype.md) defined. It illustrates the policy; where they differ, the hold and the Decision Record govern.
 
 ![[Agent Host Prototype Rollout.svg]]
 
@@ -16,7 +16,7 @@ This diagram shows the order in which the limited remote agent prototype comes i
 
 ## Governance
 
-Kris accepted the prototype's bounds on 7 October 2026, and the hold was then amended through GDR-KI-ARCADIA-004. That amendment is the gate for every remote step: no remote action, including creating the host or testing a connection, precedes it.
+Kris accepted the prototype's bounds on 7 October 2026, and the hold was then amended through [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]]. That amendment is the gate for every remote step: no remote action, including creating the host or testing a connection, precedes it.
 
 ## Access and build
 
@@ -28,7 +28,7 @@ Kris connects from Zed through the helper, approves the Claude Code login on the
 
 ## Stop, change or withdraw
 
-The kill switch is available at any time: stop the host with the agent-host profile and remove its tailnet device. The exemption has no automatic lapse and no fixed review date: it stands until the island owner changes or withdraws it through an Enactment record, and is revisited when the hold is reshaped. The prototype review, KI-ARCADIA-GOV-021, kept it as it stands. Only if the island owner withdraws it does teardown remove the stack under the admin profile, then the tailnet entries, the tokens and the operator role. Rotating the GitHub token before it expires is part of operating the host.
+The kill switch is available at any time: stop the host with the agent-host profile and remove its tailnet device. The exemption has no automatic lapse and no fixed review date: it stands until the island owner changes or withdraws it through an Enactment record, and is revisited when the hold is reshaped. The prototype review, [KI-ARCADIA-GOV-021](https://github.com/knowledgeislands/ki-arcadia-principal/blob/fac82de591fa6b7fc9bdf711c50dde9d55399a69/Streams/Roadmap/KI-ARCADIA-GOV-021-review-the-agent-host-prototype.md), kept it as it stands. Only if the island owner withdraws it does teardown remove the stack under the admin profile, then the tailnet entries, the tokens and the operator role. Rotating the GitHub token before it expires is part of operating the host.
 
 ## Source
 

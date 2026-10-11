@@ -12,13 +12,13 @@ author: Written with Claude
 
 ## Overview
 
-Obsidian templates used with the Templater plugin to scaffold new notes consistently. Each template implements the structures defined in [[Format]] and [[Types]] - providing a starting point with the correct frontmatter, heading structure, and section layout pre-filled. Templates are a superset across all islands; not every template will be relevant to every island. Invoke via the Templater plugin command palette or a keyboard shortcut configured in Obsidian.
+Obsidian templates used with the Templater plugin to scaffold new notes consistently. Each template implements the structures defined in [[Format]] and [[Notes#Types|Types]] - providing a starting point with the correct frontmatter, heading structure, and section layout pre-filled. Templates are a superset across all islands; not every template will be relevant to every island. Invoke via the Templater plugin command palette or a keyboard shortcut configured in Obsidian.
 
 ---
 
 ## Calendar
 
-Six templates covering the time-based note types that live under `Calendar/`. Each maps to a specific note type defined in [[Library]]. The daily, weekly and monthly templates adapt the [[Bullet Journal]] method's rapid logging and migration; the marker legend lives in [[Structure]].
+Six templates covering the time-based note types that live under `Calendar/`. Each maps to a specific note type defined in [[Structure#Library|Library]]. The daily, weekly and monthly templates adapt the [[Bullet Journal]] method's rapid logging and migration; the marker legend lives in [[Structure]].
 
 - [[Calendar - Daily]] - daily note; the hub for the day with wikilinks to meetings, sessions, and notes filed that day, plus a rapid log of tasks, events and notes
 - [[Calendar - Meeting]] - meeting note; attendees, themed discussion sections, key decisions, and action items

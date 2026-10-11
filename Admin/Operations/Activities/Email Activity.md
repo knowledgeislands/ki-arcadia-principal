@@ -14,24 +14,24 @@ author: Written with Claude
 
 Arcadia has vetoed the Email activity group. Email inbox management is not a function of this island - Arcadia is a knowledge repository and framework custodian, not an operational system with an inbox to manage. The veto is deliberate and is recorded in the [[Admin/Governance/Charter|Charter]].
 
-The activity definitions for the Email group - Route Drift, Route Triage, Route Review, Re-route Triaged, Recap, and Email Test - are held in this island as canonical framework definitions under [[Philosophy/Activities/Email/Email|Activities/Email]]. They exist here because Arcadia is the custodian of the Knowledge Islands framework, not because Arcadia has adopted them.
+The activity definitions for the Email group - Route Drift, Route Triage, Route Review, Re-route Triaged, Recap, and Email Test - were retired from the framework model on 25 June 2026, and no current note defines them. Their last version is preserved in [Activities/Email](https://github.com/knowledgeislands/ki-arcadia-principal/blob/bbaae9811c906ba3a94839905896784255e919fa/Pillars/Knowledge%20Islands/Model/Activities/Email/Email.md).
 
-The notes below exist to fulfil the wikilink contract - framework notes link to these paths - and to make the veto explicit rather than absent.
+The sections below point to the group's sibling Activity notes and make the veto explicit rather than absent.
 
 ---
 
-## [[Email Routing Config|Email Routing Config]]
+## [[Email Routing Config Activity|Email Routing Config]]
 
 Not applicable - Email activity group vetoed.
 
 ---
 
-## [[Email Routing Queue|Email Routing Queue]]
+## [[Email Routing Queue Activity|Email Routing Queue]]
 
 Not applicable - Email activity group vetoed.
 
 ---
 
-## [[Email Status|Email Status]]
+## [[Email Status Activity|Email Status]]
 
 Not applicable - Email activity group vetoed.

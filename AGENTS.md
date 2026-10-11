@@ -42,7 +42,7 @@ Full specification in [[Introduction/Introduction|Introduction]]. Summary:
 Full specification in [[Structure]]. Summary:
 
 - 4 top-level folders: `Calendar` (daily notes, meeting notes, session digests, and periodic reviews), `Pillars` (internal knowledge - methodology, approach, and domain-specific reference), `Resources` (external reference - things that exist independently), `Streams` (status tracking for projects and workstreams - durable knowledge belongs in Pillars)
-- `Admin` and `-` (outbound) are canonical zones - `Admin` holds governance (`Admin/Governance/`: charter, known lands, conventions, decisions, note templates, policies) and operations (`Admin/Operations/`: activities, processes, live artifacts, skills) - migrated from Knowledge Capital per GDR-KI-ARCADIA-002; `-` is outbound staging. `Admin` is gated through the Enactment Process alongside `Pillars` and `Resources` - changes route through a proposal. [[Admin/MEMORY|MEMORY]] is the root memory index of active Admin content
+- `Admin` and `-` (outbound) are canonical zones - `Admin` holds governance (`Admin/Governance/`: charter, known lands, conventions, decisions, note templates, policies) and operations (`Admin/Operations/`: activities, processes, live artifacts, skills) - migrated from Knowledge Capital per [[GDR-KI-ARCADIA-002-admin-zone-governance-and-operations|GDR-KI-ARCADIA-002]]; `-` is outbound staging. `Admin` is gated through the Enactment Process alongside `Pillars` and `Resources` - changes route through a proposal. [[Admin/MEMORY|MEMORY]] is the root memory index of active Admin content
 - `Pillars` and `Resources` share subfolder names by design - e.g. `Pillars/Finance` holds internal knowledge; `Resources/Finance` holds general reference
 - `Streams` is an operational container: `Streams/Roadmap/` holds flat finite work records. Recurring obligations are Activity notes in the configured collection, currently `Admin/Operations/Activities/`; opted-in housekeeping Activities produce ordinary roadmap runs. A work record's horizon and lifecycle are frontmatter metadata, never a folder path.
 - Calendar note types - daily notes, meeting notes, session digests, and the monthly index are all siblings in the same month folder, each referenced from the daily note by wikilink; the daily note does not duplicate their content. Weekly notes are filed separately in a per-year `YYYY By Week/` folder:
@@ -54,7 +54,7 @@ Full specification in [[Structure]]. Summary:
 
 ### Pillars/Resources boundary (strictly enforced)
 
-The general principle: `Pillars` holds internal knowledge owned by the Knowledge Island; `Resources` holds external reference material that exists independently. Methodology or internal content found in Resources belongs in Pillars. The canonical boundary definition is in [[Pillars/Philosophy/Model/Conventions/Structure/Library/Library|Library]] under "Pillars/Resources Boundary".
+The general principle: `Pillars` holds internal knowledge owned by the Knowledge Island; `Resources` holds external reference material that exists independently. Methodology or internal content found in Resources belongs in Pillars. The canonical boundary definition is in [[Pillars/Philosophy/Model/Conventions/Structure/Structure#Library|Library]] under "Pillars/Resources Boundary".
 
 ### Changing canonical content (strictly enforced)
 
@@ -102,7 +102,7 @@ Operational rules and known pitfalls are captured in auto-memory (`feedback_{ki_
 The `ki-repo-kb` skill owns note metadata and internal links; instrument-specific record skills own their additional fields. Local authoring and routing pointers:
 
 - Before writing any changes, confirm with the user first
-- Tag conventions: [[Frontmatter/Tags|Tags]]
+- Tag conventions: [[Pillars/Philosophy/Model/Conventions/Notes/Tags|Tags]]
 - `note_type` classifies note kind and tags describe subject. `updated` and human `reviewed` timestamps describe freshness; `author` records authorship. A note's lifecycle or state, where applicable, follows its owning note type rather than a universal dated `status` vocabulary. Work, Activity, Decision Record and trade metadata follow their owning skills.
 - Sections separated by `---`; body uses H2 headings
 - `ki-repo-kb` owns links between Knowledge Base notes: use shortest-unique `[[wikilinks]]`, including table cells, and escape an alias separator as `\|` in a cell. This scoped rule takes precedence over general `ki-authoring` relative-link guidance. Repository orientation and other house documents use descriptive relative Markdown links; cross-repository provenance uses canonical source references and a known revision. The applicable note or record skill owns metadata.

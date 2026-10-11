@@ -3,7 +3,7 @@ note_type: admin/governance/decision
 id: SDR-KI-ARCADIA-004
 title: 'The Enactment Process'
 date: 2026-06-25
-updated: 2026-10-10
+updated: 2026-10-11
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/sdr
 decision_type: strategy
@@ -18,7 +18,7 @@ Knowledge does not improve by accumulating unchanged. It improves through a cont
 
 The cycle runs continuously. Without a governance gate, both kinds of change land directly in Pillars and Resources - the stable, canonical zones of the island. Stable knowledge would degrade: proposals that have not been reviewed, material that has not been contextualised, and changes that have not been ratified would share space with knowledge the island depends on.
 
-Processes are one of the five governance areas of an island, defined in SDR-KI-ARCADIA-003; they set the formal paths through which significant changes must pass. The Enactment Process is that gate.
+Processes are one of the five governance areas of an island, defined in [[SDR-KI-ARCADIA-003-the-governance-of-an-island|SDR-KI-ARCADIA-003]]; they set the formal paths through which significant changes must pass. The Enactment Process is that gate.
 
 ## Decision
 

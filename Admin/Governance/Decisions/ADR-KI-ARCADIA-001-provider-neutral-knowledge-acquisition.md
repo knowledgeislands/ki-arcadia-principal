@@ -15,7 +15,7 @@ decision_depends_on: ['SDR-KI-ARCADIA-002']
 
 An island's Harbour receives material from many external systems: AI sessions, ChatGPT and Granola exports, Slack, email, documents, and future sources. These systems retain transient working state or external records, but none is a Knowledge Islands knowledge base. Their storage mechanics vary between local files, export bundles, APIs, and MCP servers.
 
-The Harbour defined by SDR-KI-ARCADIA-002 needs a common ingress model that preserves available source material before interpretation. A provider-specific archive or session browser cannot provide that model because durable knowledge may emerge only after review and harvesting, and an initially imperfect routing decision must not lose the source.
+The Harbour defined by [[SDR-KI-ARCADIA-002-the-home-of-knowledge|SDR-KI-ARCADIA-002]] needs a common ingress model that preserves available source material before interpretation. A provider-specific archive or session browser cannot provide that model because durable knowledge may emerge only after review and harvesting, and an initially imperfect routing decision must not lose the source.
 
 ## Decision
 

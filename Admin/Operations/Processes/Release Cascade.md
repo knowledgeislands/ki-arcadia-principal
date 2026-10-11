@@ -81,7 +81,7 @@ Every released tool sends one `tool-release-published` event to `homebrew-tap`, 
 Consumers take on a new `ki` by moving their **pin**, held in one of two places:
 
 - **The receiver pin file**, `.github/ki-version`, read by CI and moved by the `update-ki-pin.yml` receiver workflow. The receiver verifies a new `tools-ki` release and opens a one-line pin-bump pull request, from the event or from a daily schedule. It requests auto-merge only when the diff is the pin file alone and `main` has a ruleset requiring checks. Only `ki-agentic-harness` has it today. The release bot was installed there on 2026-10-09, behind its `main` ruleset, and a manual run of `update-ki-pin.yml` minted the bot token successfully.
-- **An inline `KI_VERSION`** in `ci.yml`. The other twenty `knowledgeislands` repositories use this, all at `v0.8.4` as of October 2026. Nothing proposes a bump; a person edits the line. `ki repo audit` reports it as a CI-1 warning. KI-HARNESS-GOV-168 converts them to receivers.
+- **An inline `KI_VERSION`** in `ci.yml`. The other twenty `knowledgeislands` repositories use this, all at `v0.8.4` as of October 2026. Nothing proposes a bump; a person edits the line. `ki repo audit` reports it as a CI-1 warning. [KI-HARNESS-GOV-168](https://github.com/knowledgeislands/ki-agentic-harness/blob/92c6014286a0711b8badf9a8b9fe6294d0780a8d/docs/roadmap/KI-HARNESS-GOV-168-roll-out-ki-pin-receivers.md) converts them to receivers.
 
 A pin bump merges like any other change, and CI then runs the new `ki` and the Harness it pins. Until then, the repository keeps using its older `ki`; an older pin is not a failure.
 
@@ -107,12 +107,12 @@ To use newly delivered capability, rebuild or pull locally; do not cut a release
 | Notifying the tap | Automatic, with a daily backstop | - |
 | Tap formula pull request | Automatic: the bot opens it and it auto-merges after checks | - |
 | Website registry update | Automatic: the bot opens it and it auto-merges after CI | - |
-| Proposing a `ki` pin bump | Automatic in `ki-agentic-harness`, whose receiver has the release bot since 2026-10-09; inline pins elsewhere are edited by hand | Yes: every `knowledgeislands` repository moves to the receiver pin file and `update-ki-pin.yml` (KI-HARNESS-GOV-168) |
+| Proposing a `ki` pin bump | Automatic in `ki-agentic-harness`, whose receiver has the release bot since 2026-10-09; inline pins elsewhere are edited by hand | Yes: every `knowledgeislands` repository moves to the receiver pin file and `update-ki-pin.yml` ([KI-HARNESS-GOV-168](https://github.com/knowledgeislands/ki-agentic-harness/blob/92c6014286a0711b8badf9a8b9fe6294d0780a8d/docs/roadmap/KI-HARNESS-GOV-168-roll-out-ki-pin-receivers.md)) |
 | Merging a `ki` pin bump | Manual review; the Harness updater already requests auto-merge behind its guards | Yes: auto-merge when the diff touches only the pin, required checks pass and the release checksum verifies |
 | Release bot installation | The tap, the website and `ki-agentic-harness` use it | Yes: across all `knowledgeislands` repositories, never outside the organisation |
 | `brew upgrade` and local rebuilds | Manual: Kris | Stays manual |
 
-Kris approved the automatic rows on 2026-10-09, deciding KI-HARNESS-GOV-161; XDR-KI-HARNESS-001 now carries the exception. The bot is limited to the `knowledgeislands` GitHub organisation: hnr, infoschematics and personal repositories keep manual, reviewed pins. App installation, the App ID variable and private-key secret, the `main` ruleset and each repository's auto-merge setting are GitHub settings only Kris changes.
+Kris approved the automatic rows on 2026-10-09, deciding [KI-HARNESS-GOV-161](https://github.com/knowledgeislands/ki-agentic-harness/blob/1f32a7a9645a97c65383beb47d18865ea7a154b8/docs/roadmap/KI-HARNESS-GOV-161-auto-merge-ki-pins.md); [XDR-KI-HARNESS-001](https://github.com/knowledgeislands/ki-agentic-harness/blob/92c6014286a0711b8badf9a8b9fe6294d0780a8d/docs/decisions/XDR-KI-HARNESS-001-dependabot-security-updates-without-auto-merge.md) now carries the exception. The bot is limited to the `knowledgeislands` GitHub organisation: hnr, infoschematics and personal repositories keep manual, reviewed pins. App installation, the App ID variable and private-key secret, the `main` ruleset and each repository's auto-merge setting are GitHub settings only Kris changes.
 
 ---
 
@@ -123,5 +123,5 @@ Kris approved the automatic rows on 2026-10-09, deciding KI-HARNESS-GOV-161; XDR
 - **When a release is due:** ask for it in an explicitly authorised task naming the release, or run it yourself from the tool's releasing guide. For `tools-ki`, check the Harness pin is current first.
 - **After a release:** run `brew upgrade` on any machine that uses the Homebrew copy. The tap and website update themselves.
 - **When a repository needs new rules in CI:** today, merge or make its `ki` pin bump. Once the approved automation is in place, the bump merges itself when it is pin-only and green; look only at bumps that fail CI.
-- **Once, to switch on the automation, after the ruleset is in place:** install the release bot App on the `knowledgeislands` organisation for the repositories it may reach, store the App ID variable and private-key secret in each, and allow auto-merge in each repository's settings. Add repositories as KI-HARNESS-GOV-168 converts them.
+- **Once, to switch on the automation, after the ruleset is in place:** install the release bot App on the `knowledgeislands` organisation for the repositories it may reach, store the App ID variable and private-key secret in each, and allow auto-merge in each repository's settings. Add repositories as [KI-HARNESS-GOV-168](https://github.com/knowledgeislands/ki-agentic-harness/blob/92c6014286a0711b8badf9a8b9fe6294d0780a8d/docs/roadmap/KI-HARNESS-GOV-168-roll-out-ki-pin-receivers.md) converts them.
 - **If a step looks stuck:** each scheduled workflow catches a missed event on its next daily run; a manual run of the tap's propose workflow or the receiver workflow retries at once.

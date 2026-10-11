@@ -26,7 +26,7 @@ I recommend retaining the proposed spellings, preserving each tool's existing de
 
 - **The standalone and Paperclip boundaries are confirmed.** [mgit's instructions][mgit-instructions] preserve Bash/Git operation without mandatory KI integration. The [Paperclip standard][paperclip] independently declares organisation ownership but still uses Agora membership for admission and the verified home for default shared-report ownership. No live company state was inspected; no migration should infer company bindings or admission from territory membership alone.
 
-- **Project separation is justified.** [[territories-and-trades]] has a distinct declared outcome and [[knowledge-islands-model]] is a plausible Initiative. However, that Project's proposed simplification also touches territorial member syntax. The two Projects can remain independently deliverable while sharing the existing territory parser boundary; neither should introduce a competing interpretation.
+- **Project separation is justified.** [[trades-revamp]] has a distinct declared outcome and [[knowledge-islands-model]] is a plausible Initiative. However, that Project's proposed simplification also touches territorial member syntax. The two Projects can remain independently deliverable while sharing the existing territory parser boundary; neither should introduce a competing interpretation.
 
 Cross-repository evidence was inspected at the brief's revisions: harness `11416cde3bd0bf4933ff61d76b6421666effc78c`, tools-ki `13e046a723f6387ba829fe2b7a79825a2f455ac6`, and tools-mgit `50d658973f7918a811d0e51199f1933c56c65db7`.
 

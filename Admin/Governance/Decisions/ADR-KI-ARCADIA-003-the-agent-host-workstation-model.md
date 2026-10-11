@@ -3,7 +3,7 @@ note_type: admin/governance/decision
 id: ADR-KI-ARCADIA-003
 title: 'The agent host workstation model'
 date: 2026-10-08
-updated: 2026-10-10
+updated: 2026-10-11
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/adr
 decision_type: architecture
@@ -22,7 +22,7 @@ Each binding owner keeps their personal configuration in their own source, outsi
 
 The agent host becomes the binding owner's working machine through two layers with two owners, delivered through the existing setup path.
 
-- **Recipe layer.** The `direct-host` recipe in `ki-techne-harness` owns what every session needs, the same for any binding owner: a `direct-host` Rig profile declaring `ki`, mise, Bun, Node, Codex and Claude Code with exact pins (a minimum for Claude Code) and a variant for each target OS, Linux or macOS, plus what is not a tool - Git settings, the repository set and `ki bootstrap`, which installs the KI skills. The profile declares no managed resources. The recipe owns `~/.config/rig/rig.toml` and its `[rig]` table, `~/.config/mise/config.toml`, the agent instructions under `~/.claude/`, and a host-instructions file for both Claude and Codex carrying the two-checkout and writing-checkout rules of ODR-KI-ARCADIA-001.
+- **Recipe layer.** The `direct-host` recipe in `ki-techne-harness` owns what every session needs, the same for any binding owner: a `direct-host` Rig profile declaring `ki`, mise, Bun, Node, Codex and Claude Code with exact pins (a minimum for Claude Code) and a variant for each target OS, Linux or macOS, plus what is not a tool - Git settings, the repository set and `ki bootstrap`, which installs the KI skills. The profile declares no managed resources. The recipe owns `~/.config/rig/rig.toml` and its `[rig]` table, `~/.config/mise/config.toml`, the agent instructions under `~/.claude/`, and a host-instructions file for both Claude and Codex carrying the two-checkout and writing-checkout rules of [[ODR-KI-ARCADIA-001-keeping-work-safe-on-the-agent-host|ODR-KI-ARCADIA-001]].
 - **Personal layer.** The binding owner's personal-configuration source is the main source of the personal layer. Its projection for the host is the profile payload, rendered on the operator's workstation - the machine the binding owner works from: an explicit allowlist of host-safe files and a Rig fragment selecting the owner's personal tools and skills by their catalogue identities, with variants for the target OS. For example, Kris's projection is Cheztoi, rendered by chezmoi from Kris's chezmoi source. The personal layer contributes only Rig `conf.d` fragments and files through declared hooks, never the recipe's destinations.
 - **Payload contract.** The harness applies the binding owner's profile payload if one is supplied, without naming any person. The payload carries a revision, file ownership and permissions, removal of files dropped from the allowlist, and validation of rendered contents for secrets, paths invalid on the target OS and managed resources. Delivery is pull-on-demand through `techne host setup`; there is no second channel and no schedule.
 - **No personal-configuration tool on the host.** No personal-configuration tool is installed or applied on the host; the personal layer arrives only as the payload. The `techne` binary is not installed there either; `techne` runs from its checkout through `bun run`. Rig is the only new binary.

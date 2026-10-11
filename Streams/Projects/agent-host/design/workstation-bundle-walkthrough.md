@@ -1,6 +1,6 @@
 ---
 note_type: streams/design
-updated: 2026-10-09T17:30:00Z
+updated: 2026-10-11T02:19:55Z
 author: Written with Claude
 ---
 
@@ -51,7 +51,7 @@ An example manifest is in [Appendix A](#appendix-a-example-manifest).
 
 ## 3. Alternatives not chosen
 
-- **chezmoi on the host:** the source resolves 1Password at apply time, has no OS gating and cannot be reached from the host, and ADR-KI-ARCADIA-003 rules out personal-configuration tools there.
+- **chezmoi on the host:** the source resolves 1Password at apply time, has no OS gating and cannot be reached from the host, and [[ADR-KI-ARCADIA-003-the-agent-host-workstation-model|ADR-KI-ARCADIA-003]] rules out personal-configuration tools there.
 - **Nothing personal:** a recipe-only host works, but would not feel like Kris's workstation, which is the point of the model.
 - **A git clone of the chezmoi source:** puts the whole private source, including Mac-only and credential-adjacent material, on a host Kris may not own, and needs a new read credential.
 
@@ -61,7 +61,7 @@ Kris's idea: a small per-target-host manifest naming what to share, not a new to
 
 | Option                                    | Cost                                                                                                          | Generality                                                                                         | Fit with ownership                                                                                                                        |
 | ----------------------------------------- | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| (i) `scripts/cheztoi-render` as planned   | Medium: a bespoke renderer calling `chezmoi cat` per file, its own modes, revision and tests                  | Low: lives in Kris's source; another owner copies it                                               | Good: ADR-KI-ARCADIA-003 gives the renderer to the owner's source                                                                         |
+| (i) `scripts/cheztoi-render` as planned   | Medium: a bespoke renderer calling `chezmoi cat` per file, its own modes, revision and tests                  | Low: lives in Kris's source; another owner copies it                                               | Good: [[ADR-KI-ARCADIA-003-the-agent-host-workstation-model\|ADR-KI-ARCADIA-003]] gives the renderer to the owner's source                                                                         |
 | (ii) In the `ki-binding-chezmoi` skill    | Medium-high: new standard and rubric, and the executable still has to live somewhere                          | Medium: any chezmoi user, but only them                                                            | Poor: the skill governs the MCP render path only, is declaration-only and proposes no writes; a payload renderer is a different concern   |
 | (iii) A Rig extension for chezmoi         | High: a new verb or exporter in `tools-rig` and a spec change                                                 | High in principle                                                                                  | Poor: Rig reconciles the machine it runs on and leaves chezmoi's source and templates native (PDR-RIG-001); exporting for another host inverts that |
 | (iv) chezmoi-native, driven by a manifest | Low: `chezmoi archive` renders exactly the named targets with templates resolved and modes kept; a thin wrapper adds `manifest.json` and validation | High: the manifest file and wrapper are the same for any chezmoi user; other owners render to the same contract with their own tool | Good: chezmoi keeps templating, the owner's source keeps the allowlist, the harness keeps the contract                                    |

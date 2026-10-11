@@ -1,6 +1,6 @@
 ---
 note_type: pillars/index
-updated: 2026-10-11T01:44:00Z
+updated: 2026-10-11T02:19:55Z
 author: AI-assisted
 ---
 
@@ -85,7 +85,7 @@ Before execution, validate context and authority, then select a working mode, ag
 
 A deterministic operations layer provides the control boundary for defined operations. tools-mgit is the current mapping for that role.
 
-An execution-fabric operator may provision and supervise task environments through replaceable adapters. ADR-KI-ARCADIA-006 assigns implementation of that role to `ki-techne-harness`, while `tools-techne` owns the independent operator interface. Work that must continue beyond an interactive session may use Herdr as the current persistent supervised-execution mapping.
+An execution-fabric operator may provision and supervise task environments through replaceable adapters. [[ADR-KI-ARCADIA-006-techne-implementation-ownership|ADR-KI-ARCADIA-006]] assigns implementation of that role to `ki-techne-harness`, while `tools-techne` owns the independent operator interface. Work that must continue beyond an interactive session may use Herdr as the current persistent supervised-execution mapping.
 
 ### 4. Review the Outcome
 
@@ -122,7 +122,7 @@ The knowledge base should then be updated through a new, reviewable increment th
 - **Engineering interface** - supports interaction, inspection, approval, review and deliberate human attachment without establishing authority by itself.
 - **Governed knowledge layer** - retains durable knowledge, context, decisions and evolving guidance while leaving credentials and controller operational state to their appropriate systems.
 
-Hermes Agent, `ki`, tools-mgit, Herdr, Zed and Knowledge Islands are current or candidate mappings for these roles. They remain replaceable: `ki` implements governance rather than fabric operation, with fabric implementation owned by `ki-techne-harness` and the operator interface independently owned by `tools-techne` under ADR-KI-ARCADIA-006.
+Hermes Agent, `ki`, tools-mgit, Herdr, Zed and Knowledge Islands are current or candidate mappings for these roles. They remain replaceable: `ki` implements governance rather than fabric operation, with fabric implementation owned by `ki-techne-harness` and the operator interface independently owned by `tools-techne` under [[ADR-KI-ARCADIA-006-techne-implementation-ownership|ADR-KI-ARCADIA-006]].
 
 [[Engineering Estate]] defines these component roles in architectural terms.
 

@@ -16,7 +16,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-08-23T12:33:49Z
-updated_at: 2026-10-10T16:46:11Z
+updated_at: 2026-10-11T02:19:55Z
 ---
 
 # Knowledge Acquisition Lifecycle
@@ -49,13 +49,13 @@ The decision states the architecture but not the operational picture: what a pro
 
 ## Steps
 
-- [ ] Re-read ADR-KI-ARCADIA-001, `+/_ACQUIRE/granola/ledger.json`, two or three staged Granola notes, and the `mcp-housekeeping-claude` README and checkpoint tool source; optionally run one read-level `claude_code_sessions_checkpoint` scoped to this repository.
+- [ ] Re-read [[ADR-KI-ARCADIA-001-provider-neutral-knowledge-acquisition|ADR-KI-ARCADIA-001]], `+/_ACQUIRE/granola/ledger.json`, two or three staged Granola notes, and the `mcp-housekeeping-claude` README and checkpoint tool source; optionally run one read-level `claude_code_sessions_checkpoint` scoped to this repository.
 - [ ] Tabulate the provenance fields each source actually provides against the ADR's required set (original content, source identity, timestamps, assets, provenance, omissions, content hash, repository context), marking absent fields honestly.
 - [ ] Choose the note's folder under `Pillars/Philosophy/Model/` (likely `Processes/Acquisition Process/`) and create the note plus its same-name index if a new folder is needed, following the index-note rule.
 - [ ] Write the note: the six lifecycle stages with an owner per stage; the common provenance package; the harvest checkpoint as observed (source identity, timestamps, content hash, declared omissions); imperfect-routing handling (move within the Harbour or to another island without rewriting acquisition evidence); and source retirement stated as open, requiring a later provider-specific decision.
 - [ ] Cite both evidence sets by path and record the Claude staging asymmetry as an observed gap, not a design choice.
 - [ ] Add the note to its parent index with a two-to-four-sentence section.
-- [ ] Compare the observed checkpoint with ADR-KI-ARCADIA-001; amend the ADR in place only if the evidence contradicts it, otherwise leave it unchanged and say so in the review packet.
+- [ ] Compare the observed checkpoint with [[ADR-KI-ARCADIA-001-provider-neutral-knowledge-acquisition|ADR-KI-ARCADIA-001]]; amend the ADR in place only if the evidence contradicts it, otherwise leave it unchanged and say so in the review packet.
 - [ ] Prepare the review packet and set the record to `awaiting-review`.
 
 ## Files touched
@@ -83,7 +83,7 @@ No local build-order dependency. Evidence comes from Arcadia's own Harbour and t
 
 ### Decision Records
 
-ADR-KI-ARCADIA-001 is amended in place only if the observed evidence contradicts it; otherwise no Decision Record changes. No new decision is needed for an operational description of an existing decision.
+[[ADR-KI-ARCADIA-001-provider-neutral-knowledge-acquisition|ADR-KI-ARCADIA-001]] is amended in place only if the observed evidence contradicts it; otherwise no Decision Record changes. No new decision is needed for an operational description of an existing decision.
 
 ### Specifications
 
@@ -105,7 +105,7 @@ Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible:
 
 Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible: the harvest checkpoint is source identity plus timestamps plus content hash plus declared omissions, documented as observed rather than prescribed.
 
-Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible: the archive and deletion threshold is explicitly left open, and ADR-KI-ARCADIA-001 is amended only if the evidence contradicts it.
+Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible: the archive and deletion threshold is explicitly left open, and [[ADR-KI-ARCADIA-001-provider-neutral-knowledge-acquisition|ADR-KI-ARCADIA-001]] is amended only if the evidence contradicts it.
 
 ### Owner question resolved (2026-10-05)
 

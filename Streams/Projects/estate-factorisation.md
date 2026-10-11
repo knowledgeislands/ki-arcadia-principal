@@ -7,7 +7,7 @@ initiative: platform-foundations
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-10T16:39:00Z
+updated: 2026-10-11T02:19:55Z
 author: Written with Claude
 ---
 
@@ -43,7 +43,7 @@ Phase specifications (purpose, deliverables, completion gates, dependencies) are
 
 ### Boundaries
 
-- The responsibility model, routing map and estate decisions live in `GDR-KI-ARCADIA-006`.
+- The responsibility model, routing map and estate decisions live in [[GDR-KI-ARCADIA-006-knowledge-islands-ecosystem-fundamentals|GDR-KI-ARCADIA-006]].
 - Arcadia owns Techne engineering knowledge.
 - Out of scope before V1: estate-wide KIPs, KIS documents, schemas or portable specifications; legacy compatibility, migration, rollback or dual-running; public package registries; treating MCP products as Harness capability; a third "harness" or "principal" base structure; treating repository, worktree or visibility as runtime isolation; replacing decision records solely for vocabulary; making `tools-ki` own MCP behaviour; and making this note a second work tracker.
 

@@ -3,7 +3,7 @@ note_type: admin/governance/decision
 id: ODR-KI-ARCADIA-001
 title: 'Keeping work safe on the agent host'
 date: 2026-10-07
-updated: 2026-10-10
+updated: 2026-10-11
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/odr
 decision_type: operations
@@ -26,7 +26,7 @@ The agent host keeps work safe through the following durability model. The opera
 - **Rebuild and withdraw.** These are two named operations in the harness and the CLI, both through the recipe's destroy path. Rebuild replaces the host, keeping reusable credentials; withdraw removes the binding's footprint and credentials, then lists the manual footprint. For the AWS provider, rebuild replaces the stack and keeps the GitHub token parameter, and withdraw removes the stack and every parameter. Both refuse unless the status is clean, with two overrides: one naming exactly the repositories at risk, and one for an unreadable host with typed confirmation. Both check that the host read is the host to be deleted, and both are idempotent. Agents implement and test them offline; the binding owner runs every live rebuild and withdrawal.
 - **Recovery routes.** Push first, then a verified `git bundle` copied to the operator's workstation. No provider disk snapshot, such as an EBS snapshot for the AWS provider, is a recovery route; that is revisited only if the host becomes unreadable with work on it.
 - **Credentials.** Building, rebuilding, tearing down and operating the host use the provider access that [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] grants.
-- **Roadmap writing checkout.** For every Knowledge Islands repository the checkout on the operator's workstation is the designated roadmap writing checkout. The host carries a marker that `ki` honours by refusing roadmap writes there; host sessions report the roadmap changes they need. A design in which the remote's `main` is the single history needs its own approval and a change to GDR-KI-ARCADIA-004.
+- **Roadmap writing checkout.** For every Knowledge Islands repository the checkout on the operator's workstation is the designated roadmap writing checkout. The host carries a marker that `ki` honours by refusing roadmap writes there; host sessions report the roadmap changes they need. A design in which the remote's `main` is the single history needs its own approval and a change to [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]].
 - **Two checkouts.** Push where you worked; before working on the other machine, fetch, check status and be level. The rule is machine-neutral; the recipe itself renders it, with the writing-checkout rule, into host instructions for both Claude and Codex.
 - **Pins.** One harness file declares the host's exact tool versions, bumped by ordinary commits, with drift reported against the pins and, from the operator's workstation, against its versions.
 - **Expiries.** A cached expiry file covering the GitHub token, the Tailscale key and pin drift feeds a login banner and a status warning within 14 days of any expiry. The GitHub token is issued with a 90-day expiry.
