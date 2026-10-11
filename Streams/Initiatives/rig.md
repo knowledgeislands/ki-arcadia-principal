@@ -5,7 +5,7 @@ title: Rig
 direction: Keep the workstation every agent and person runs on accurate, tidy and observable.
 lifecycle: active
 lead: Kris Brown
-updated: 2026-10-07T19:00:00Z
+updated: 2026-10-11T01:50:00Z
 author: Written with Claude
 ---
 
@@ -21,3 +21,5 @@ The workstation every agent and person runs on: chezmoi-managed configuration, l
 
 - **Projectless upkeep.** Workstation hygiene keeps the host accurate, tidy and observable and is never finished. Its records live in the chezmoi roadmap, not in a `knowledgeislands` repository, and name this Initiative directly. chezmoi's recurring housekeeping templates run the routine checks.
 - A bounded, sanitised live trace of the mcporter bridge, without a restart, is an open question for Kris.
+- **Handed on from [[mac-studio-bootstrap|Mac Studio bootstrap]].** None of these blocks that Project. Rig itself carries opt-in removal of unwanted software; Dock items filtered by profile, so `sol` can have a Dock; and reporting apps that update themselves or were installed from another source, with Warp, OneDrive and DaisyDisk on `sol` as examples. chezmoi carries the decisions on software found on the machines but not declared: act on the add and remove items first, then revisit the ones marked "leave".
+- **Later, from the same Project:** NordVPN, the six untrusted Homebrew taps, the Command Line Tools update, and whether to swap the Tailscale GUI app for `tailscaled`. None has a record yet.

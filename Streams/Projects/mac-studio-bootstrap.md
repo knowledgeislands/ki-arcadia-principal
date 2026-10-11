@@ -7,7 +7,7 @@ initiative: rig
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-09T15:24:00Z
+updated: 2026-10-11T01:55:00Z
 author: Written with Claude
 ---
 
@@ -25,11 +25,8 @@ Under [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-program
 
 ## Notes
 
-- FileVault is on, so a reboot leaves `sol` offline until Kris unlocks it in person; every reboot needs Kris's approval.
-- 1Password and GitHub pulls work only on `sol`'s screen, so Kris does those steps there.
-- The thread's checkpoint is [rig.mac-studio-bootstrap](../../+/_CHECKPOINTS/rig.mac-studio-bootstrap.md); its first steps assume nothing is checked out on the Mac Studio yet.
-- Anything the bootstrap finds missing or wrong in the chezmoi source, Rig declarations or `ki` install guidance becomes a record in the owning repository.
-
-### Close-out assessment
-
-Nothing has been delivered yet: the Project was registered without a work record. The bootstrap itself is captured as a triage record in Arcadia, so the Project stays open until it is done.
+- The bootstrap is delivered: chezmoi applied on `sol`, Rig declarations reconciled, the released `ki` installed and passing `ki doctor`, and agents can reach `sol` over Tailscale and SSH, with GitHub through agent forwarding.
+- **Remaining: a restart test.** FileVault is on, so a reboot leaves `sol` offline until Kris unlocks it in person. Kris restarts it, no earlier than Monday evening 2026-10-12, and the Project stays open until Tailscale is proven to relaunch and reconnect after the unlock.
+- 1Password-backed chezmoi targets render only at `sol`'s screen, so Kris applies those there.
+- Follow-ups are handed on and none blocks this Project: software removal, Dock items, self-updating apps, undeclared software decisions and the later workstation items to [[rig|Rig]]; tolerating missing template tools to the chezmoi thread; rendering `.zshenv` on the agent host to chezmoi's roadmap under [[agent-host]].
+- The thread's checkpoint is [rig.mac-studio-bootstrap](../../+/_CHECKPOINTS/rig.mac-studio-bootstrap.md).

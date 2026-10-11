@@ -39,6 +39,7 @@ The machine-local decisions log (`~/.local/state/ki/agents/chezmoi/decisions.md`
 
 - Handoff from rig.mac-studio-bootstrap (Decision 25), non-blocking: consider a 1Password service account scoped to the Rig vault ([DOTFILES-UE-077](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-077-reorganise-1password-vaults-safely.md)), so chezmoi applies need no unlock prompt and agents can apply on sol over SSH unattended; the token would be stored on each machine. That thread owns priority and design.
 - For `state-of-play`, non-blocking: Kris wants a proposal for a new standalone repository holding a macOS-settings catalogue. It would merge the typed nix-darwin `system.defaults` options and macos-defaults.com entries, read each setting's live value, mark those Rig declares, and turn a System Settings change into a ready Rig declaration. Rig keeps applying; DOTFILES-HK-004 would use it as its source. Kris decided this on 2026-10-11 (Decision 44); state-of-play owns where and when it is proposed.
+- Handoff from rig.mac-studio-bootstrap (Decision 35), non-blocking: [DOTFILES-UE-082](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-082-tolerate-missing-template-tools.md) (triage), so a first `chezmoi apply` on a new machine completes when a tool a template looks up is not installed yet. That thread owns priority and adoption.
 - DOTFILES-UE-083 (first HK-004 run): Kris accepted the sheet as recommended; the 14 additions are being applied by a background run.
 
 ## Next step

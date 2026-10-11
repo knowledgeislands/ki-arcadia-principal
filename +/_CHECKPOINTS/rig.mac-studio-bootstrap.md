@@ -4,81 +4,62 @@ thread: rig.mac-studio-bootstrap
 label: 'Rig: mac-studio-bootstrap'
 state: active
 created_at: 2026-10-08T08:45:00Z
-updated_at: 2026-10-11T01:21:00Z
+updated_at: 2026-10-11T01:55:00Z
 ---
 
 # rig.mac-studio-bootstrap
 
 ## Objective
 
-Bring Kris's Mac Studio, unused for over a month, back to full estate capability so any thread can resume there, and make it a reliably reachable remote agent host ([mac-studio-bootstrap](../../Streams/Projects/mac-studio-bootstrap.md), Initiative [Rig](../../Streams/Initiatives/rig.md)). The thread is driven remotely over the tailnet from the laptop. The Project is close to done: what remains is Kris's actions at sol, a restart test, and handing the follow-ups on.
+Bring Kris's Mac Studio, unused for over a month, back to full estate capability so any thread can resume there, and make it a reliably reachable remote agent host ([mac-studio-bootstrap](../../Streams/Projects/mac-studio-bootstrap.md), Initiative [Rig](../../Streams/Initiatives/rig.md)). The thread is driven remotely over the tailnet from the laptop. The bootstrap is done and every follow-up has been handed on; the only thing left is Kris's restart test.
 
 ## Current state
 
-**Mark 2, 2026-10-10 17:37 CEST** (Decision 28 in the run's `decisions.md`). A "summary since the mark" covers everything after it, including every open question below that is still open at the mark. The earlier mark (Decision 21) is superseded.
+**Mark 2, 2026-10-10 17:37 CEST** (Decision 28 in the run's `decisions.md`). The earlier mark (Decision 21) is superseded.
 
-**Ownership.** The Mac Studio is Kris's personal hardware, built and managed by Kris's own Rig and chezmoi (`studio` profile on `core`), not by Techne, and it is separate from the Techne agent-host. Remote agent use and administration are exempt from the Techne Programme Hold under [KI-ARCADIA-GOV-033](https://github.com/knowledgeislands/ki-arcadia-principal/blob/60e8a65e5eb56b0496cf917763397339734ade1e/Streams/Roadmap/KI-ARCADIA-GOV-033-exempt-the-mac-studio-as-a-remote-agent-host.md) (done, pruned). Each step on the machine still runs only once Kris approves it.
+**Remaining: the restart test.** Kris restarts `sol` in person, Monday evening 2026-10-12 at the earliest, and checks that Tailscale relaunches and reconnects after the FileVault unlock. Kris asked not to be reminded before then (Decision 35). The Project stays open until the restart is proven.
 
-**Machine.** The Mac Studio is `sol` on the tailnet (`100.90.130.74`), user `krisbrown`, key-based SSH (plain `ssh sol` fails because `known_hosts` holds the IP). macOS 26.5.2, FileVault on, kept awake by Amphetamine, restarts after power loss, wakes on network; display sleep 30 minutes with a password required as soon as the screen locks.
+**Ownership.** The Mac Studio is Kris's personal hardware, built and managed by Kris's own Rig and chezmoi (`studio` profile on `core`), not by Techne, and separate from the Techne agent host. Remote agent use is exempt from the Techne Programme Hold under GDR-KI-ARCADIA-004 and [KI-ARCADIA-GOV-033](https://github.com/knowledgeislands/ki-arcadia-principal/blob/60e8a65e5eb56b0496cf917763397339734ade1e/Streams/Roadmap/KI-ARCADIA-GOV-033-exempt-the-mac-studio-as-a-remote-agent-host.md) (done, pruned). Each step on the machine still runs only once Kris approves it.
 
-**Rig and chezmoi on sol.** sol runs `rig 0.5.0` with `rigProfile=studio`; its chezmoi source is at `7213cea`, matching `origin/main` before this run's local commits, and `~/.config/ki/config.toml` now matches chezmoi and lists the HNR harness, which is kept on sol (Decision 34). The apply covers the four 1Password-backed targets and the GitHub key copy ([DOTFILES-UE-080](https://github.com/krisb/dotfiles/blob/4817b1947e10e047413288464280061a141de7ab/docs/roadmap/DOTFILES-UE-080-local-github-ssh-key.md), done, pruned). The 1Password Touch ID workaround over Screen Sharing works and is written up in the workstation guide. Kris has swapped sol's App Store and hand-installed copies of Slack, TickTick, WiFi Explorer and Spark Desktop for Homebrew ones and moved Telegram to the App Store (Decision 30).
+**Machine.** `sol` on the tailnet (`100.90.130.74`), user `krisbrown`, key-based SSH (plain `ssh sol` fails because `known_hosts` holds the IP). macOS 26.5.2, FileVault on, kept awake by Amphetamine, restarts after power loss. Agent forwarding from the laptop is configured for this host only, so GitHub works from SSH sessions on `sol` (`ssh -A`).
 
-**sol after the agent runs.** sol uses released `ki 0.10.0` from Homebrew with the released KI harness; `ki doctor` passes 13 of 13. The stale tools-ki dev runner (`~/.local/bin/ki`, its `.ki-local-runner` and the `ki.1` man link into tools-ki) and the parked July harness folder are deleted. apps-observatory is cloned at `~/workspaces/kit/knowledgeislands/apps-observatory`, not started. The HNR harness stays configured on sol (Decision 34).
+**chezmoi on sol (2026-10-11 02:48 BST).** Source fast-forwarded to `origin/main` (`5722843`) over forwarded SSH and applied, leaving out the four 1Password-backed targets (`~/.claude.json`, Claude Desktop config, `~/.mcporter/mcporter.json`, `~/.codex/config.toml`) because `op` has no account in an SSH session. Applied: `.zshenv`, `.ssh/config` and the Finder new-window setting in `40-macos.toml`. `XDG_STATE_HOME` is now set in `zsh -c` and `zsh -lc`.
 
-**sol `rig doctor` (2026-10-11 02:20 BST, over SSH with `XDG_STATE_HOME` set by hand):** 1 finding, a historical `tool:warp` apply failure recorded at 01:14 UTC; everything declared is present. Without `XDG_STATE_HOME`, non-interactive SSH shells also flag `skill.archify` and `skill.caveman` as `provenance-missing`. chezmoi `c0e1aee` (local, not pushed) adds a `.zshenv` that sources `~/.zsh/00_xdg_base_dirs` for every zsh, which fixes this once applied.
+**sol `rig doctor` (2026-10-11 02:49 BST, plain `zsh -lc`):** 2 findings. `setting.finder-new-window-target` drifted (new declaration from the pull; clears on the next `rig apply`), and a `tool:warp` apply failure recorded 01:44 UTC in Kris's `rig apply`. `skill.archify` and `skill.caveman` no longer flagged; 153 present.
 
-**Agents:** none running; every agent in the chain has finished. Reports are `<name>.report.md` in the run directory `~/.local/state/ki/agents/mac-studio-bootstrap/`; `sol-final-fixes.report.md` holds the latest pass.
+**Pushes.** chezmoi, tools-rig and Arcadia commits from `sol-final-fixes` reached `origin` through other threads' pushes. This run pushed chezmoi `226cc0c` and `5722843`. Reports are `<name>.report.md` in `~/.local/state/ki/agents/mac-studio-bootstrap/`; `handoff-and-push.report.md` holds the latest pass.
 
-**Pushes and apply.** `sol-final-fixes` left local commits, not pushed: chezmoi `2178335` and `c0e1aee`, tools-rig `6a1d0b5`, and Arcadia `3a322d3` plus this checkpoint update. chezmoi `2178335` forwards the laptop's SSH agent to `100.90.130.74` only; with `ssh -A`, `ssh -T git@github.com` from sol authenticates as `krisb`. The laptop's `rig doctor` has 0 findings.
+**Where the follow-ups went (Decision 35).**
 
-**Tailscale.** The GUI app stays and is listed under Open at Login (Decision 14). Restart behaviour is untested. With FileVault on, any restart leaves sol locked and offline until Kris unlocks it in person, so any reboot needs Kris's approval and presence; until a test restart succeeds, assume a restart may also leave Tailscale disconnected.
-
-**Captured since the last mark:**
-
-- [RIG-CORE-043](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-043-self-updating-applications.md) in tools-rig (triage): self-updating applications, widened so doctor reports an app installed from a different source than declared and shows the swap steps, never deleting anything (Decisions 24, 33).
-- [DOTFILES-UE-082](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-082-tolerate-missing-template-tools.md) in chezmoi (triage): templates that look up a not-yet-installed tool warn and skip rather than fail the apply (Decision 25).
-- [RIG-DIST-010](https://github.com/knowledgeislands/tools-rig/blob/b827bf5ec2b1c5f3c85930333db65a6639cef6e1/docs/roadmap/RIG-DIST-010-release-current-catalogue-reader.md) is done and pruned (Decisions 32, 34).
-- chezmoi Rig source: Apple Silicon artifact paths for Beyond Compare, GitUp and Ollama, the Observatory launch agent on mise's `latest` bun (Decision 31), and DaisyDisk from the App Store on both Macs (Decision 33; the laptop's old Homebrew record is left alone because uninstalling the cask would delete the App Store app).
-- The chezmoi workstation guide has a "Set up a new machine" section (Decision 23). The 1Password service-account option is an open question in the rig.chezmoi checkpoint (Decision 25).
-
-**Other open records:** [RIG-CORE-041](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-041-unwanted-software-removal.md) (opt-in removal), [RIG-CORE-042](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-042-profile-filtered-dock-items.md) (profile-filtered Dock items; until then `studio` selects no Dock and sol's Dock stays as it is), [DOTFILES-UE-076](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-076-always-run-latest-source.md) (always run from latest), [DOTFILES-UE-079](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-079-undeclared-software-decisions.md) (undeclared software: act on add and remove, then revisit "leave", Decision 18). All are triage; adoption is Kris's call.
+- [Rig Initiative](../../Streams/Initiatives/rig.md) Notes: [RIG-CORE-041](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-041-unwanted-software-removal.md) (opt-in removal), [RIG-CORE-042](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-042-profile-filtered-dock-items.md) (profile-filtered Dock items), [RIG-CORE-043](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-043-self-updating-applications.md) (self-updating and other-source apps: Warp, OneDrive, DaisyDisk), [DOTFILES-UE-079](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-079-undeclared-software-decisions.md) (act on add and remove, then revisit "leave"), and the Later items: NordVPN, six untrusted Homebrew taps, Command Line Tools update, `tailscaled` swap.
+- [rig.chezmoi](rig.chezmoi.md) Open questions: [DOTFILES-UE-082](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-082-tolerate-missing-template-tools.md) (new line) and the 1Password service account (line already there).
+- chezmoi roadmap: [DOTFILES-UE-084](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-084-render-zshenv-on-vega.md) (triage, agent-host Project) for the Cheztoi `vega` manifest not listing `.zshenv`; chezmoi owns the manifest.
+- [DOTFILES-UE-076](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-076-always-run-latest-source.md) (always run from latest) stays in chezmoi's roadmap.
 
 ## Decisions made
 
 - The master thread `state-of-play` owns cross-project priorities and releases; this thread works only on the Mac Studio.
-- The Project sits in Rig because the Mac Studio is Kris's workstation; remote agent use is exempt from the hold under KI-ARCADIA-GOV-033 and GDR-KI-ARCADIA-004.
-- Rig model: one list of Kris's software, a `core` profile with `laptop` and `studio` inheriting it; Rig never uninstalls but should warn and offer opt-in removal (Decisions 7, 8, 13, 14).
-- Tailscale stays as the GUI app login item; any `tailscaled` swap is deferred (Decision 5).
-- GitHub on sol uses Kris's own key, copied into `~/.ssh` by chezmoi (Decisions 15, 17); remote SSH sessions use agent forwarding from the laptop, for sol only (Decision 34).
-- New-machine and long-apply practice goes into the chezmoi workstation guide (Decision 23).
-- Self-updating apps become a Rig improvement (RIG-CORE-043); OneDrive on sol is not downgraded or reinstalled (Decisions 24, 27).
-- Missing template tools become DOTFILES-UE-082; the 1Password service account belongs to the rig.chezmoi thread (Decision 25).
-- Agents may run `ki bootstrap`, `ki doctor` and the SSH pull check, and fix sol issues without sudo (Decisions 26, 27).
-- Leave sol's App Store copies to RIG-CORE-043 rather than force `brew --adopt`; sol authenticates to GitHub with its own key (Decision 29).
-- Make sol match the laptop: Kris swaps Slack, TickTick, WiFi Explorer and Spark Desktop to Homebrew and Telegram to the App Store (Decision 30).
-- Switch sol to released ki, fix the Rig artifact paths and Observatory bun path, and clone apps-observatory on sol (Decision 31).
-- RIG-DIST-010 accepted; chezmoi, tools-rig and Arcadia pushed and chezmoi applied through `push-and-apply` (Decision 32).
-- DaisyDisk comes from the App Store on both Macs (licence); OneDrive on sol is deleted by Kris with sudo; RIG-CORE-043 widened; sol's stale ki runner and parked folder removed; HNR harness left as is (Decision 33).
-- HNR harness kept on sol; agent forwarding to sol; XDG base directories in every zsh; RIG-DIST-010 pruned (Decision 34).
+- The Project sits in Rig because the Mac Studio is Kris's workstation.
+- Rig model: one list of Kris's software, `core` profile with `laptop` and `studio` inheriting it; Rig never uninstalls but should warn and offer opt-in removal (Decisions 7, 8, 13, 14).
+- Tailscale stays the GUI app as a login item; any `tailscaled` swap deferred (Decisions 5, 14).
+- GitHub on sol uses Kris's own key, and remote SSH sessions use agent forwarding for sol only (Decisions 15, 17, 29, 34).
+- DaisyDisk from the App Store on both Macs; OneDrive on sol deleted by Kris; HNR harness kept on sol (Decisions 33, 34).
+- XDG base directories in every zsh through `.zshenv` (Decision 34).
+- Push, apply on sol after Kris's `rig apply`, hand the follow-ups on, restart test Monday evening at the earliest with no reminder before then (Decision 35).
 
 ## Files touched
 
-This checkpoint. Outside the repository, since the last mark: RIG-CORE-043, RIG-DIST-010 (now pruned) and the tools-rig `_ISSUES.md` ledger; DOTFILES-UE-082, the roadmap ledger, `docs/guides/user/macos-workstation.md`, `docs/guides/user/README.md`, `dot_config/rig/conf.d/private_10-applications.toml` and `private_50-services.toml`, `private_dot_ssh/private_config` and `dot_zshenv` in chezmoi; one Open questions line in [rig.chezmoi](rig.chezmoi.md). On sol: Rig-installed software, the full chezmoi target set, the released ki harness, the apps-observatory clone, and the removed dev runner and parked folder. Agent prompts, statuses, reports and `decisions.md` are in `~/.local/state/ki/agents/mac-studio-bootstrap/`.
+This checkpoint, the [Project note](../../Streams/Projects/mac-studio-bootstrap.md), the [Rig Initiative](../../Streams/Initiatives/rig.md) Notes and one Open questions line in [rig.chezmoi](rig.chezmoi.md). chezmoi: DOTFILES-UE-084 and the roadmap ledger. On sol: chezmoi source and applied targets above. Agent prompts, statuses, reports and `decisions.md` are in `~/.local/state/ki/agents/mac-studio-bootstrap/`.
 
 ## Open questions
 
 **Kris to do:**
 
-1. **On sol, at the screen:** if not already done, delete OneDrive (`sudo rm -rf /Applications/OneDrive.app`), then run `rig apply`. Then run `mise trust` and `bun install` in the apps-observatory clone, then `rig apply --target service:observatory`, then sign in to OneDrive again. sol's `rig doctor` now shows only a `tool:warp` apply failure, so most of this may be done.
-2. **Push this run's commits:** chezmoi `2178335` and `c0e1aee`, tools-rig `6a1d0b5`, and Arcadia `3a322d3` and this checkpoint update. Then `chezmoi apply` on the laptop (SSH agent forwarding for sol) and on sol (`.zshenv`, so `rig doctor` over SSH stops flagging `skill.archify` and `skill.caveman`).
-3. **Restart test at sol, Monday evening at the earliest,** to see whether Tailscale relaunches and reconnects after FileVault unlock.
+1. **Restart test, Monday evening 2026-10-12 at the earliest:** restart `sol`, unlock FileVault at the screen, and confirm Tailscale relaunches and reconnects (`ssh krisbrown@100.90.130.74` from the laptop works).
+2. **On sol, at the screen, with 1Password unlocked:** `chezmoi diff` then `chezmoi apply` for the four 1Password-backed targets, and `rig apply` to clear the Finder setting drift and retry Warp.
 
-Still open for the thread:
-
-1. **Close the Project** and hand follow-ups to the Rig Initiative and the rig.chezmoi thread: RIG-CORE-041, RIG-CORE-042, RIG-CORE-043, DOTFILES-UE-079 (act on add and remove, revisit "leave"), DOTFILES-UE-082, and the 1Password service account.
-2. **rig.chezmoi checkpoint** RECORD-2 heading failures (`## Decisions in force` instead of `## Decisions made`); only its own thread should fix them.
-3. **Later:** NordVPN, six untrusted Homebrew taps, Command Line Tools update, and the `tailscaled` swap.
+**Before closing:** RIG-CORE-041, RIG-CORE-042, RIG-CORE-043, DOTFILES-UE-079 and DOTFILES-UE-082 still name this Project in their `project` field; their owners should repoint them to the Rig Initiative or another Project when it closes.
 
 ## Next step
 
-Give Kris the **Kris to do** list. Once the commits are pushed and applied, check sol's `rig doctor` over a plain `ssh` `zsh -lc` shell; after the restart test, close the Project with the follow-ups handed on.
+Wait for Kris's restart result. Once Tailscale is proven to reconnect after the unlock, set the Project's `lifecycle` to done and remove this checkpoint.
