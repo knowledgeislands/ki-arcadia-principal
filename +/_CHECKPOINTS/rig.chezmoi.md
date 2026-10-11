@@ -4,7 +4,7 @@ thread: rig.chezmoi
 label: 'Rig: chezmoi'
 state: active
 created_at: 2026-10-08T08:40:00Z
-updated_at: 2026-10-11T04:00:00Z
+updated_at: 2026-10-11T11:07:00Z
 ---
 
 # rig.chezmoi
@@ -40,12 +40,14 @@ The machine-local decisions log (`~/.local/state/ki/agents/chezmoi/decisions.md`
 - chezmoi source: `.chezmoidata/mcp-servers.yaml` (repointed to the API Credential items), `dot_config/rig/conf.d/private_50-services.toml` (claude-swap service), DOTFILES-UE-062, DOTFILES-UE-073, DOTFILES-UE-074, DOTFILES-UE-077, DOTFILES-UE-078 and DOTFILES-UE-081.
 - mcp-acquire-whatsapp: the operator guide's `op://` reference, pushed.
 
-## Needs Kris
+## Open questions
+
+Needs Kris:
 
 - **UE079-OPEN:** four items in [DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-086-finish-software-alignment.md) need a keep-or-remove answer. Mercury is Mercury Weather, an App Store weather app on the laptop only. Clockology and Prime Video are iPhone apps running on the Mac. `maturin` builds Rust-backed Python packages; mise installed it in August as a non-global tool. Recommended: remove Clockology and Prime Video, leave `maturin`, Kris's call on Mercury.
 - **SOL-ALIGN:** [DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-086-finish-software-alignment.md) needs a plan to make the laptop and `sol` install shared software the same way. On `sol`, Google Drive and Home Assistant were installed outside their declared routes, and the developer toolchain (Python, `uv`, Rust, Zig and the cargo tools) comes from different places on each Mac. Recommended: pin the toolchain globally in mise on both, reinstall the two apps on `sol` through their declared routes, and do the removals in the same pass at `sol`.
 
-## Open questions
+Other open questions:
 
 - Handoff from rig.mac-studio-bootstrap (Decision 25), non-blocking: consider a 1Password service account scoped to the Rig vault ([DOTFILES-UE-077](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-077-reorganise-1password-vaults-safely.md)), so chezmoi applies need no unlock prompt and agents can apply on sol over SSH unattended; the token would be stored on each machine. That thread owns priority and design.
 - For `state-of-play`, non-blocking: Kris wants a proposal for a new standalone repository holding a macOS-settings catalogue. It would merge the typed nix-darwin `system.defaults` options and macos-defaults.com entries, read each setting's live value, mark those Rig declares, and turn a System Settings change into a ready Rig declaration. Rig keeps applying; DOTFILES-HK-004 would use it as its source. Kris decided this on 2026-10-11 (Decision 44); state-of-play owns where and when it is proposed.
