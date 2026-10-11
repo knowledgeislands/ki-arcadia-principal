@@ -1,5 +1,6 @@
 ---
 note_type: pillars/index
+updated: 2026-10-11T01:47:00Z
 tags:
   - card/note
   - topic/knowledge-islands
@@ -9,6 +10,8 @@ status: current - June 2026
 ---
 
 # Arcadia
+
+## Overview
 
 The Knowledge Islands website (`ki-website`, at knowledgeislands.info) is the public publication for the framework. It makes selected knowledge from this base visible beyond the KB and also publishes the agentic harness and KI Specifications. The website is framework-level rather than Arcadia-territory-scoped; the canonical sources remain this KB for philosophy and model, `ki-agentic-harness` for reusable tooling, and `ki-specifications` for normative portable contracts. See [[Great Library of Arcadia]] for what the site hosts.
 
@@ -32,6 +35,10 @@ The base informs the website directly for philosophy and model. The harness info
 ## Current state
 
 The website currently contains its own curated public pages. It should acquire material through explicit, source-labelled vendor paths from this base, the harness, and Specifications. The intended pipeline is source note, guide, or specification -> curated vendor input -> website build. The vendor input is a deployable copy, never a replacement for its source.
+
+## Great Library of Arcadia
+
+[[Great Library of Arcadia]] is intended as the closing illustration of Realisation: Arcadia's Library as a concrete example of how the model's conventions play out in a real island. It is still a placeholder, holding only an outline of what it will introduce. Until it is written, the Library's current shape is best read from [[Pillars]] and its pillar index notes.
 
 ## Related
 

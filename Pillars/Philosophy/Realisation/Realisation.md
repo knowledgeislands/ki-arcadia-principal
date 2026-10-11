@@ -1,5 +1,6 @@
 ---
 note_type: pillars/index
+updated: 2026-10-11T01:47:00Z
 tags:
   - card/note
   - topic/knowledge-islands
@@ -15,7 +16,7 @@ Realisation is the third act of [[Knowledge Islands]], following [[Introduction/
 
 Realisation explains the model-level elements every island must realise - its Charter and Council, which are constitutionally required, and the Integrations and Configuration that connect its adopted activities to real services and schedules. It does not hold Arcadia's live governance records themselves. Those belong to the island-specific [[Admin]] zone, chiefly `Admin/Governance/`, where the actual Charter, Council membership, integration identifiers and configuration values are kept and read by automations at runtime. Realisation describes what each of those records is and how it fits the model; Admin is where this island's instances live and change through the Enactment Process.
 
-Several notes here are still placeholders awaiting a concrete walkthrough, so a reader wanting Arcadia's current values should follow each section's pointer into Admin.
+Each note here explains its element at model level and uses Arcadia as the worked example; a reader wanting Arcadia's current values should follow each section's pointer into Admin.
 
 ---
 
@@ -33,7 +34,7 @@ Several notes here are still placeholders awaiting a concrete walkthrough, so a 
 
 ## Council
 
-[[Council]] describes the governing body of an island, whose membership and terms the Charter declares and which decides who may propose and ratify change. It is the second constitutionally required element of realisation. The note is a placeholder that will show citizen and visitor standing, council eligibility, and what council formality means for a small or solo island.
+[[Council]] describes the governing body of an island, whose membership and terms the Charter declares and which decides who may propose and ratify change. It is the second constitutionally required element of realisation. It sets out Visitor, Citizen and Council Member standing, council eligibility, the governance patterns a council sits among, and what council formality means for a single-person island such as Arcadia.
 
 ---
 
@@ -45,4 +46,4 @@ Several notes here are still placeholders awaiting a concrete walkthrough, so a 
 
 ## Configuration
 
-[[Configuration]] covers the island-specific values that vary between deployments: the task prefix used to name scheduled tasks, the Schedule note that defines working days and timings, and the configuration notes each adopted activity group requires. It exists so that the same activity definitions can run unchanged on different islands. The note is a placeholder that will show a complete configuration and how each piece connects to the activities that consume it.
+[[Configuration]] covers the island-specific values that vary between deployments: the task prefix used to name scheduled tasks, the Schedule note that defines working days and timings, and the configuration notes each adopted activity group requires. It exists so that the same activity definitions can run unchanged on different islands. It walks through each home of configuration - identity parameters, the Schedule, activity configuration notes, integrations and the `.ki.toml` declaration - and how each connects to the activities that consume it.
