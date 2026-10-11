@@ -3,7 +3,7 @@ note_type: admin/governance/decision
 id: GDR-KI-ARCADIA-004
 title: 'Standing agent-host exemption from the Techne Programme Hold'
 date: 2026-10-07
-updated: 2026-10-10
+updated: 2026-10-11
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/gdr
 decision_type: governance
@@ -20,7 +20,7 @@ The island owner needs at least one remotely reachable agent environment, becaus
 
 The island owner needs that host set up and operated properly and durably, not as a stopgap.
 
-On 8 October 2026 the island owner also approved running agents on their own Mac Studio workstation as a remote agent host, outside the hold and treated like the agent host. The Mac Studio is an owned machine, reached over the tailnet; it lets agent work continue on local hardware with more headroom when the owner is away from it.
+The island owner also runs agents on their own Mac Studio workstation as a remote agent host, outside the hold and treated like the agent host. The Mac Studio is an owned machine, reached over the tailnet; it lets agent work continue on local hardware with more headroom when the owner is away from it.
 
 ## Decision
 

@@ -1,5 +1,6 @@
 ---
 note_type: admin/governance/policy
+updated: 2026-10-11T01:41:00Z
 tags:
   - card/note
   - topic/knowledge-islands
@@ -13,7 +14,7 @@ author: Mixed
 
 Arcadia's island charter - the authoritative declaration of what this island is and what it has adopted. It has two parts that change at different rates. The **Identity** section is static: these parameters define the island and do not change without a constitutional amendment. The operational sections below it change as activities are enabled or disabled, integrations connected, and agent configuration updated.
 
-The [[Philosophy/Activities/Constitutional/Conformance|Conformance Check]] uses this note as its source of truth. Agents starting cold and humans checking operational state both read it first.
+The [[Model/Activities/Constitutional/Conformance|Conformance Check]] uses this note as its source of truth. Agents starting cold and humans checking operational state both read it first.
 
 ---
 
@@ -71,7 +72,7 @@ Active scheduled automations within adopted groups. An activity listed here is e
 
 | Activity | Group | Day Type | Time | Status |
 | --- | --- | --- | --- | --- |
-| [[Philosophy/Activities/Constitutional/Conformance]] | Constitutional | work-day | 04:30 | enabled |
+| [[Model/Activities/Constitutional/Conformance]] | Constitutional | work-day | 04:30 | enabled |
 | [[Model/Activities/Tending/Health Check\|Health Check]] | Tending | Monday work-day | 08:00 | enabled |
 | [[Model/Activities/Tending/Knowledge Rebuild\|Knowledge Rebuild]] | Tending | Wednesday work-day | 07:00 | enabled |
 | [Morning Briefing](<../Operations/Activities/Briefings Activity.md>) | Briefings | work-day | 06:00 | enabled |

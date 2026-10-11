@@ -3,7 +3,7 @@ note_type: admin/governance/decision
 id: SDR-KI-ARCADIA-007
 title: 'The Great Library of Arcadia'
 date: 2026-06-25
-updated: 2026-10-10
+updated: 2026-10-11
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/sdr
 decision_type: strategy
@@ -70,9 +70,9 @@ Domain knowledge that belongs to a specific context (a client, a project, a tool
 
 ## References
 
-- [SDR-KI-ARCADIA-001: Knowledge Islands - The Strategy](SDR-KI-ARCADIA-001-knowledge-islands-the-strategy.md)
-- [SDR-KI-ARCADIA-002: The Home of Knowledge](SDR-KI-ARCADIA-002-the-home-of-knowledge.md)
-- [SDR-KI-ARCADIA-003: The Governance of an Island](SDR-KI-ARCADIA-003-the-governance-of-an-island.md)
-- [SDR-KI-ARCADIA-005: Territories, Archipelagos, and the Constitutional Layer](SDR-KI-ARCADIA-005-territories-archipelagos-and-the-constitutional-layer.md)
-- Great Library of Arcadia - the Pillars note of that name.
-- Pillars - the Pillars note of that name.
+- [[SDR-KI-ARCADIA-001-knowledge-islands-the-strategy|SDR-KI-ARCADIA-001]] - Knowledge Islands - The Strategy
+- [[SDR-KI-ARCADIA-002-the-home-of-knowledge|SDR-KI-ARCADIA-002]] - The Home of Knowledge
+- [[SDR-KI-ARCADIA-003-the-governance-of-an-island|SDR-KI-ARCADIA-003]] - The Governance of an Island
+- [[SDR-KI-ARCADIA-005-territories-archipelagos-and-the-constitutional-layer|SDR-KI-ARCADIA-005]] - Territories, Archipelagos, and the Constitutional Layer
+- [[Great Library of Arcadia]]
+- [[Pillars]]

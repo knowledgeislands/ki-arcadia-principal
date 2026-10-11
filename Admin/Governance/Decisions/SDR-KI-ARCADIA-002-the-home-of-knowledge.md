@@ -3,7 +3,7 @@ note_type: admin/governance/decision
 id: SDR-KI-ARCADIA-002
 title: 'The Home of Knowledge'
 date: 2026-10-01
-updated: 2026-10-10
+updated: 2026-10-11
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/sdr
 decision_type: strategy
@@ -42,4 +42,4 @@ The Capital is the territorial governance role held by its one principal island.
 
 ## References
 
-- [SDR-KI-ARCADIA-001](SDR-KI-ARCADIA-001-knowledge-islands-the-strategy.md) - foundational strategy.
+- [[SDR-KI-ARCADIA-001-knowledge-islands-the-strategy|SDR-KI-ARCADIA-001]] - foundational strategy.

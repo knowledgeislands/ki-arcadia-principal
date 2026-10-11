@@ -25,7 +25,7 @@ A territory is a governed collection of islands with exactly one Capital, also c
 
 Arcadia is the Capital of the Knowledge Islands territory and the canonical home of its public model. Other territories adopt that model under their own authority; Arcadia has no universal meta-jurisdiction over them.
 
-Territorial membership is declared by the accountable authority in the Charter and Known Lands. Neither a registry, an Agora, company affiliation nor shared ownership creates that authority. Arcadia's current internal inventory includes Techné as a specialist engineering island; its knowledge remains there pending a separately verified consolidation.
+Territorial membership is declared by the accountable authority in the Charter and Known Lands. Neither a registry, an Agora, company affiliation nor shared ownership creates that authority. Arcadia owns Techné's canonical [[Engineering Practice/Engineering Practice|Engineering Practice]] and its engineering decisions; the former `ki-techne-principal` knowledge tree is retired and archived read-only as historical evidence, while `ki-techne-harness` and `tools-techne` keep their separate implementation ownership.
 
 ### Archipelagos and Known Lands
 

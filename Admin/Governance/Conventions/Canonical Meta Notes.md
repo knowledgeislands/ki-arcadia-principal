@@ -1,5 +1,6 @@
 ---
 note_type: admin/governance/convention
+updated: 2026-10-11T01:41:00Z
 tags:
   - card/note
   - topic/knowledge-islands
@@ -18,14 +19,13 @@ The ordered list of notes that [[Model/Activities/Tending/Knowledge Rebuild|Know
 ## Note List
 
 - `CLAUDE.md`
-- `Pillars/Knowledge Capital/Charter.md`
-- `Pillars/Philosophy/Concept/Concept.md`
-- `Pillars/Philosophy/Conventions/Structure/Structure.md`
-- `Pillars/Philosophy/Conventions/Notes/Notes.md`
-- `Pillars/Philosophy/Conventions/Notes/Frontmatter/Frontmatter.md`
-- `Pillars/Philosophy/Conventions/Notes/Frontmatter/Properties.md`
-- `Pillars/Philosophy/Conventions/Notes/Frontmatter/Tags.md`
+- `Admin/Governance/Charter.md`
+- `Pillars/Philosophy/Introduction/Concept/Concept.md`
+- `Pillars/Philosophy/Model/Conventions/Structure/Structure.md`
+- `Pillars/Philosophy/Model/Conventions/Notes/Notes.md`
+- `Pillars/Philosophy/Model/Conventions/Notes/Properties.md`
+- `Pillars/Philosophy/Model/Conventions/Notes/Tags.md`
 - `Admin/Operations/Mistakes and Lessons.md`
-- `Pillars/Philosophy/Activities/Activities.md`
-- `Pillars/Knowledge Capital/Agents/Communication Style.md`
-- `Pillars/Philosophy/Conventions/Residency/Residency.md`
+- `Pillars/Philosophy/Model/Activities/Activities.md`
+- `Admin/Governance/Conventions/Communication Style.md`
+- `Pillars/Philosophy/Model/Conventions/Residency/Residency.md`
