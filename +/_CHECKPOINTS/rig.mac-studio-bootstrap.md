@@ -4,7 +4,7 @@ thread: rig.mac-studio-bootstrap
 label: 'Rig: mac-studio-bootstrap'
 state: active
 created_at: 2026-10-08T08:45:00Z
-updated_at: 2026-10-11T03:20:00Z
+updated_at: 2026-10-11T03:48:00Z
 ---
 
 # rig.mac-studio-bootstrap
@@ -15,7 +15,7 @@ Bring Kris's Mac Studio back to full estate capability as a reliably reachable r
 
 ## Current state
 
-Mark: 2026-10-10T15:37Z, decisions log at Decision 28
+Mark: 2026-10-11T03:48Z, decisions log at Decision 40
 
 Decisions log: `~/.local/state/ki/agents/mac-studio-bootstrap/decisions.md` (machine-local, on the laptop, not in Git); every "Decision N" in this checkpoint refers to that file.
 
