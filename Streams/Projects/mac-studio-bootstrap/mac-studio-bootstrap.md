@@ -7,7 +7,7 @@ initiative: rig
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-11T01:55:00Z
+updated: 2026-10-11T02:38:00Z
 author: Written with Claude
 ---
 
@@ -29,4 +29,5 @@ Under [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-program
 - **Remaining: a restart test.** FileVault is on, so a reboot leaves `sol` offline until Kris unlocks it in person. Kris restarts it, no earlier than Monday evening 2026-10-12, and the Project stays open until Tailscale is proven to relaunch and reconnect after the unlock.
 - 1Password-backed chezmoi targets render only at `sol`'s screen, so Kris applies those there.
 - Follow-ups are handed on and none blocks this Project: software removal, Dock items, self-updating apps, undeclared software decisions and the later workstation items to [[rig|Rig]]; tolerating missing template tools to the chezmoi thread; rendering `.zshenv` on the agent host to chezmoi's roadmap under [[agent-host]].
-- The thread's checkpoint is [rig.mac-studio-bootstrap](../../+/_CHECKPOINTS/rig.mac-studio-bootstrap.md).
+- [[hosts|Hosts]] names the estate's machines - `vega`, `sol` and `terra` - and their machine types, from which the Rig profiles and the Cheztoi host profile take their names.
+- The thread's checkpoint is [rig.mac-studio-bootstrap](../../../+/_CHECKPOINTS/rig.mac-studio-bootstrap.md).

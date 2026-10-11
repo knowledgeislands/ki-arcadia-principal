@@ -58,7 +58,7 @@ Rules live with their durable owners: the roadmap model in GDR-KI-ARCADIA-005 an
 - Releases are on demand; the next is one combined tools-ki release.
 - Linear and TickTick are not raised in this thread.
 - The Enactment threshold is settled under KI-ARCADIA-GOV-024 (delivered and pruned on 2026-10-08): an explicit owner instruction for a bounded change stands in for a record, related changes share one record, and a record is needed only for new or reworked content in `Admin`, `Pillars` or `Resources`.
-- The [mac-studio-bootstrap](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/mac-studio-bootstrap.md) Project lives under the Rig Initiative; Kris settled this on 2026-10-08.
+- The [mac-studio-bootstrap](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/mac-studio-bootstrap/mac-studio-bootstrap.md) Project lives under the Rig Initiative; Kris settled this on 2026-10-08.
 
 ## Files touched
 
