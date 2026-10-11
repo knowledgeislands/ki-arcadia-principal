@@ -4,7 +4,7 @@ thread: techne.agent-host
 label: 'Techne: agent-host'
 state: active
 created_at: 2026-10-07T09:05:00Z
-updated_at: 2026-10-10T13:30:00Z
+updated_at: 2026-10-11T02:55:00Z
 ---
 
 # techne.agent-host
@@ -17,19 +17,21 @@ The thread moves agent work off the laptop onto the one agent host the [Techne P
 
 ## Current state
 
-Verified on 2026-10-10 at about 14:30 BST.
+Verified on 2026-10-11 at about 03:55 BST.
 
 Mark: 2026-10-09T21:40Z, decisions log at Decision 34
 
-- **Repositories.** All eight touched repositories (`ki-arcadia-principal`, `ki-techne-harness`, `tools-techne`, `ki-specifications`, `ki-website`, `ki-agentic-harness`, `tools-ki`, chezmoi) are level with origin and clean.
-- **Delivered and closed.** OS patching (TECHNE-TOOLS-OPS-022) and the chezmoi workstation bundle (DOTFILES-UE-073) are accepted and pruned. The workstation pilot (TECHNE-TOOLS-OPS-015) is accepted and kept, not pruned. The `agent-host` rename (Decision 30) is live everywhere, including on the host.
-- **Ideas, not records.** The owned-host provider and the operator-guide split are now ideas in the [[agent-host]] Project note; their cancelled records are pruned.
-- **In triage.** TECHNE-TOOLS-OPS-016, TECHNE-TOOLS-OPS-017 (zsh, the `vega` rename and the remaining live record identifiers, at rebuild), TECHNE-TOOLS-OPS-018 and TECHNE-TOOLS-OPS-019 in the harness; TECHNE-TOOL-CLI-006 and TECHNE-TOOL-CLI-008 (binding fields `reboot_window` and `livepatch`, status `updates` member) in `tools-techne`; KI-TOOL-CLI-116 (launcher-held `--wait-for` gates) in `tools-ki`. KI-HARNESS-GOV-170 (keep resolution targets local) is adopted to Next in `ki-agentic-harness`.
-- **Host restart due.** The host is on kernel 7.0.0-1013 with the reboot-required flag set after the 2026-10-10 unattended run. The binding sets no `reboot_window` yet, so it needs the provider's stop and start; awaiting Kris's go.
-- **Live record identifiers.** TECHNE-TOOLS-OPS-011 (the `.bashrc` marker), TECHNE-TOOLS-OPS-022 (instance user data), KI-ARCADIA-GOV-020 and KI-ARCADIA-GOV-023 (stack tags, description, recipe and guide) stay because changing them alters live state; proposed to fold into the TECHNE-TOOLS-OPS-017 rebuild.
-- **The Mac.** `terra`; chezmoi `rigProfile` is `laptop`; Tailscale is up. `mise` 2026.10.6 and `codex` 0.162.0 stay off the recipe pins (2026.10.4 and 0.161.0).
+ki-delegation read at cfa9c458
+
+- **Repositories.** `ki-arcadia-principal` is level with origin. Harness commits for TECHNE-TOOLS-OPS-017, TECHNE-TOOLS-OPS-023 and TECHNE-TOOLS-OPS-024, and the KI-HARNESS-GOV-170 scope change in `ki-agentic-harness`, await Kris's push.
+- **Delivered and closed.** OS patching (TECHNE-TOOLS-OPS-022) and the chezmoi workstation bundle (DOTFILES-UE-073) are accepted and pruned. The workstation pilot (TECHNE-TOOLS-OPS-015) is accepted and kept, not pruned. The `agent-host` rename is live everywhere, including on the host.
+- **The host.** Restarted through the provider on 2026-10-10: kernel 7.0.0-1014, no reboot flag, status clean.
+- **Pins.** `recipes/agent-host/rig.toml` in the harness is the one list of host tool versions; `mise` and `codex` are raised to 2026.10.6 and 0.162.0. The Mac is no longer compared against it; TECHNE-TOOLS-OPS-024 (weekly pin bump) is planned, draft.
+- **Ready, held.** TECHNE-TOOLS-OPS-017 (zsh, the `vega` rename and removal of the remaining live record identifiers, at rebuild) is ready. Its build and the approval of TECHNE-TOOLS-OPS-024 are held for the Rig and Techne boundary audit (Decision 39), written at `Streams/Projects/agent-host/design/rig-techne-boundary-audit.md` and awaiting Kris's ten decisions.
+- **In triage.** TECHNE-TOOLS-OPS-016, TECHNE-TOOLS-OPS-018, TECHNE-TOOLS-OPS-019 and TECHNE-TOOLS-OPS-023 in the harness; TECHNE-TOOL-CLI-006 and TECHNE-TOOL-CLI-008 in `tools-techne`; KI-TOOL-CLI-116 (launcher-held `--wait-for` gates) in `tools-ki`. KI-HARNESS-GOV-170 (keep resolution targets local) is planned, draft, in `ki-agentic-harness`.
+- **The Mac.** `terra`; chezmoi `rigProfile` is `laptop`; Tailscale is up.
 - **`ki agent --wait-for` is unreliable** in ki 0.10.0 (KI-TOOL-CLI-116); sequence dependent runs by hand.
-- The decisions log runs to Decision 35.
+- No background agents running. The decisions log runs to Decision 39.
 
 Thread rules:
 
@@ -61,19 +63,14 @@ ODR-KI-ARCADIA-001, ADR-KI-ARCADIA-003, the agent-host Project note and this che
 
 For Kris:
 
-1. Stop and start the host now that the reboot flag is set.
-2. Fold the remaining live record identifiers into the TECHNE-TOOLS-OPS-017 rebuild?
-3. KI-HARNESS-GOV-170 scope: add `ki-accept`'s acceptance standard, and record cross-repository duplicates in plain words naming the repository but no identifier?
-4. `mise` and `codex`: lower the Mac to the pins, raise the pins, or leave them (recommended: raise the pins).
-5. Plan TECHNE-TOOLS-OPS-017 next.
-6. Hand the machine-naming convention (Decision 29(a)) to the `rig.mac-studio-bootstrap` thread; not yet done.
+- **AUDIT:** answer the ten decisions in the Rig and Techne boundary audit; then hand the outcome to state-of-play and release or reshape the TECHNE-TOOLS-OPS-017 build and the TECHNE-TOOLS-OPS-024 approval.
+- **NAMES:** hand the machine-naming convention (Decision 29(a)) to the `rig.mac-studio-bootstrap` thread; a paste-in line was given, not yet confirmed sent.
+- **PUSH:** push the harness and `ki-agentic-harness` commits.
 
 Owned-host exemption for the Mac Studio is handled by KI-ARCADIA-GOV-033 in the `mac-studio-bootstrap` thread.
 
-Parked tangents, each to get a home when picked up:
-
-- **2026-10-09: personal harness instructions.** Kris wants the Claude and Codex instructions to become skills from a personal harness (not yet designed), leaving thin `CLAUDE.md` and `AGENTS.md`; the workstation bundle carries the files meanwhile. Cross-project: raise in state-of-play when picked up.
+- Parked 2026-10-09: personal harness instructions - Kris wants the Claude and Codex instructions to become skills from a personal harness, leaving thin `CLAUDE.md` and `AGENTS.md`; raise in state-of-play when picked up.
 
 ## Next step
 
-1. Kris answers the open questions above; restart the host on his go.
+1. Kris answers AUDIT; the thread then releases or reshapes the held work.
