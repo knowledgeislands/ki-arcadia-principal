@@ -90,3 +90,10 @@ Parked:
 3. When an active thread closes, open the next queued thread from the queue table.
 4. Cut the combined tools-ki release when Kris asks.
 5. Route the `ki-design-system` rollout (`KI-HARNESS-GOV-173`, accepted 2026-10-11) to Fnd: baseline-rollout for `ki-website` and `apps-observatory`: each declares `[skills.ki-design-system]` with its `tokens`, `guide` and `checks`, writes its design guide from the skill's skeleton where it has none, and passes `ki repo audit --skill ki-design-system` once the installed harness carries the skill. The Humans Not Robots, Valle Armonia and Personal masters carry the same item for their repositories; pass it to the Equal Remedy and TechMedix masters, whose state of play was not updated on 2026-10-11. Legal has no repository with an interface. Kris's instruction, 2026-10-11.
+
+## Overnight estate reshape (2026-10-12, Decisions 62-64)
+
+- Plan: Estate Map plan tab in kit-principal (`Admin/Operations/Live Artifacts/Estate Map.html`); source `~/.local/state/ki/agents/state-of-play/src/estate-map-plan.html`, regenerated with `src/estate-map-gen.py`.
+- Phase 0: vega agent and Zed processes stopped over Tailscale (`techne` has no sudo). Instance stop (`techne host stop --host agent-host`) waits for Kris's `techne auth login`.
+- Phase 1 terra: done apart from 8 dirty paperclip/agent worktrees (hnr-shared, kit-hnr, infoschematics) and vallearmonia-website `vision-statement.md`. kit-legal orphan `4ff8e2cf` pushed as `rescue/cc-001-exec`. Report: `phase1-secure-terra.report.md`. Branch tidy-up agent `phase1-tidy-branches` running.
+- Pending Kris: ChatGPT kit-acquire instructions (`src/chatgpt-acquire-instructions.md`), kit-acquire rename, territory slugs in kit-acquire.
