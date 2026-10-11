@@ -4,7 +4,7 @@ thread: rig.mac-studio-bootstrap
 label: 'Rig: mac-studio-bootstrap'
 state: active
 created_at: 2026-10-08T08:45:00Z
-updated_at: 2026-10-11T02:40:02Z
+updated_at: 2026-10-11T02:52:00Z
 ---
 
 # rig.mac-studio-bootstrap
@@ -16,6 +16,8 @@ Bring Kris's Mac Studio, unused for over a month, back to full estate capability
 ## Current state
 
 Mark: 2026-10-10T15:37Z, decisions log at Decision 28
+
+ki-delegation read at cfa9c458
 
 **Remaining: the restart test.** Kris restarts `sol` in person, Monday evening 2026-10-12 at the earliest, and checks that Tailscale relaunches and reconnects after the FileVault unlock. Kris asked not to be reminded (Decision 35). The Project stays open until the restart is proven.
 
@@ -50,7 +52,6 @@ This checkpoint, the [Project note](../../Streams/Projects/mac-studio-bootstrap/
 ## Open questions
 
 - **Kris to do, Monday evening 2026-10-12 at the earliest:** restart `sol`, unlock FileVault at the screen, and confirm Tailscale relaunches and reconnects (`ssh krisbrown@100.90.130.74` from the laptop works).
-- 2026-10-11, later: re-read `ki-delegation` once [KI-HARNESS-GOV-169](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-169-roll-up-since-mark.md) lands.
 
 ## Next step
 
