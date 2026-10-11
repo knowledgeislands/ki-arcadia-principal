@@ -1,6 +1,6 @@
 ---
 note_type: streams/index
-updated: 2026-10-09T17:27:11Z
+updated: 2026-10-11T02:41:04Z
 author: Written with Claude
 ---
 
@@ -29,6 +29,12 @@ Links point upwards only: a work record names its Project, and a Project names i
 ## Baseline rollout
 
 [[baseline-rollout]] gets every Knowledge Islands repository to the solid baseline: a green `ki repo audit --estate` with the released `ki` installed everywhere.
+
+---
+
+## Command centre
+
+[[command-centre]] gives Kris one vocabulary and model for the command centre across the harness, Observatory, kit-hnr and kit-legal, with one read-only state-of-play view. "Council" stays Arcadia's governance body.
 
 ---
 
