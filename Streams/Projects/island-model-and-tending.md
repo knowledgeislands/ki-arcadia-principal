@@ -7,7 +7,7 @@ initiative: knowledge-islands-model
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-10T12:00:00Z
+updated: 2026-10-11T12:00:00Z
 author: Written with Claude
 ---
 
@@ -26,3 +26,4 @@ This Project sits in [[knowledge-islands-model|Knowledge Islands model]]. Its ge
 - Intention and bullet-journal support are the natural first deliveries: both are ready and independent of the rest.
 - On 2026-10-07, under decision 13 of the state-of-play design, the council review, a model record with no driver, and the records premised on the retired Cowork scheduled-task stack or on work trades were cancelled. Tending work is now judged without that stack.
 - On 2026-10-10, from the retired Fable concept-review prompt: no cold-reader check has yet confirmed that the [[Knowledge Islands]] pillar alone teaches the island model as root `AGENTS.md` summarises it; that file still links to a Library note that does not exist (the Pillars/Resources boundary now lives in [[Structure]]).
+- On 2026-10-11, reconciling the ChatGPT acquisition of 2026-10-03: the Realm model (what a Realm defines, islands and territories within it, Avatar names per Realm), the Island, Landscape and Realm semantics, time and historical state, a Knowledge Realms registry and the fictional lineage remain open, held nowhere in Arcadia; see [[2026-10-03-conceptual-model]], [[2026-10-03-open-questions-and-actions]] and [[2026-10-03-conceptual-lineage]].

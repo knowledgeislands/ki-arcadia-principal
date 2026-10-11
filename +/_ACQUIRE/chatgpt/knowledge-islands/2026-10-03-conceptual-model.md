@@ -2,25 +2,9 @@
 
 Date: 2026-10-03 Source: ChatGPT acquisition
 
-## Human, Rig, Realm and Avatar
+Reconciled 2026-10-11: the Human, Rig and Footprint definitions, Kitteth as Kris's persona, the logical-not-technology reading of a Realm and the auditable split between human and delegated action are held in Arcadia (Agent Host Prototype Concept Map, ADR-KI-ARCADIA-005, Agentic Operating Approach) and were trimmed. What remains is the Realm model itself, which no Arcadia note holds yet.
 
-The emerging model separates the human, their means of access, the persistent digital environment and their representation within it.
-
-### Human
-
-The human remains the source of intent and ultimate authority. The architecture does not require the claim that the human has literally been digitally uploaded.
-
-### Rig
-
-A Rig is the human's local access environment and entry point into the persistent system.
-
-A laptop is currently a primary Rig, combining keyboard, voice, applications, terminals and richer interfaces. It is not a dumb terminal, but neither should it be the home of continuity.
-
-A Rig should be disposable from the perspective of ongoing work: disconnecting or shutting it down must not terminate the persistent Avatar or delegated work.
-
-Over time there may be multiple kinds of Rig and potentially more direct interfaces.
-
-### Realm
+## Realm
 
 A Realm is a logical environment with its own rules of existence and participation.
 
@@ -36,17 +20,11 @@ A Realm can define:
 
 The initial concrete Realm is the **Knowledge Islands Realm**.
 
-A Realm must not be equated with Kubernetes, AWS or any other implementation technology.
+### Avatar names per Realm
 
-### Avatar
+The same underlying human may use different Avatar names or manifestations in different Realms.
 
-An Avatar is the human's personification within a Realm.
-
-It may carry selected identity, knowledge, context and delegated agency. An Avatar can be constrained or blocked by the Realm and can receive different capabilities in different contexts.
-
-The same underlying human may use different Avatar names or manifestations in different Realms. **Kitteth** is the current Avatar identity being developed for the Knowledge Islands context.
-
-The distinction should remain auditable: actions by the human and actions performed through delegated Avatar agency should not be casually conflated.
+Open point (2026-10-11): ADR-KI-ARCADIA-005 decides one enduring persona per person across explicit working contexts, with Kitteth as Kris's instance. Whether a persona may carry a different Avatar name or manifestation per Realm is not settled there.
 
 ## Territories, islands and organisations
 

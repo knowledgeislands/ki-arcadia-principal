@@ -2,44 +2,13 @@
 
 Date: 2026-10-03 Source: ChatGPT acquisition
 
+Reconciled 2026-10-11: the real-world inspirations (ancient civilisations, libraries and their loss, geography of islands, archipelagos, territories, capitals and harbours) are held in the Knowledge Islands pillar (History of Knowledge Systems, Layers of Knowledge, Territories and Archipelagos, The Home of Knowledge) and were trimmed. The fictional lineage, its themes and the capture principle are held nowhere yet; Prior Art covers only knowledge-management prior art.
+
 ## Purpose
 
 Knowledge Islands is deliberately influenced by real-world systems and speculative fiction. These references are not decorative naming exercises: they provide metaphors and thought experiments that help expose useful architectural distinctions.
 
 The important record is not only _what_ inspired the system, but _which idea_ each influence contributed.
-
-## Real-world inspirations
-
-### Ancient civilisations
-
-Ancient civilisations inspire the idea that knowledge is accumulated culturally rather than belonging only to individuals.
-
-Relevant themes include:
-
-- civilisation as a container and producer of knowledge;
-- preservation and loss of knowledge;
-- libraries, archives and centres of learning;
-- rediscovery through archaeology and anthropology;
-- transmission of skills and culture between generations;
-- territories, governance and interaction between civilisations.
-
-This supports the deeper goal that Knowledge Islands should preserve durable cultural knowledge beyond the lifespan of individual tools, agents or runtimes.
-
-### Geography
-
-Real geographical concepts provide constraints and structure:
-
-- islands;
-- archipelagos;
-- territories;
-- landscapes;
-- harbours and routes;
-- capitals;
-- boundaries and jurisdictions.
-
-The real meanings should inform the architecture rather than merely supply labels.
-
-This lineage contributes directly to **Knowledge Islands**, **Knowledge Landscapes**, territories and the emerging idea of **Knowledge Realms**.
 
 ## Fictional and speculative inspirations
 
