@@ -4,7 +4,7 @@ thread: knowledge-islands-model.knowledge-acquisition
 label: 'Knowledge Islands Model: knowledge-acquisition'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-08T08:35:00Z
+updated_at: 2026-10-11T04:30:02Z
 ---
 
 # knowledge-islands-model.knowledge-acquisition
@@ -30,7 +30,8 @@ None yet in this thread.
 
 ## Open questions
 
-None for this thread; whether the lifecycle note leads the remaining work depends on what KI-HARNESS-OPS-005 has learnt.
+- Whether the lifecycle note leads the remaining work depends on what KI-HARNESS-OPS-005 has learnt.
+- 2026-10-11 (from island-model-and-tending, parked): ChatGPT territory keys move to kebab-case territory names (knowledge-islands, humans-not-robots, equal-remedy, valle-armonia, techmedix, legal, personal); island-model-and-tending renames the kit-principal capture folders. Use the new keys when reconciling ChatGPT captures.
 
 ## Next step
 
