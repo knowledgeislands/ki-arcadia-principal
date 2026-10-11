@@ -4,7 +4,7 @@ thread: techne.paperclip-bootstrap-and-recovery
 label: 'Techne: paperclip-bootstrap-and-recovery'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-08T13:38:00Z
+updated_at: 2026-10-11T02:42:18Z
 ---
 
 # techne.paperclip-bootstrap-and-recovery
@@ -16,7 +16,7 @@ Paperclip is useful: one reviewed roadmap delivery lands in Kris's local main in
 ## Current state
 
 - Delivered, closed done and pruned in `ki-agentic-harness`: KI-HARNESS-GOV-102 (`c872f093`), KI-HARNESS-GOV-103 (`408f8431`), KI-HARNESS-GOV-107 (`5186ae58`), KI-HARNESS-GOV-108 (`608d241a`), KI-HARNESS-GOV-147 (`0fc418eb`) and KI-HARNESS-RTP-018 (`cdd79c5c`). Helpers `paperclip-a` and `paperclip-b` are finished.
-- Open record, in `ki-agentic-harness`: [KI-HARNESS-RTP-015](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-RTP-015-verify-run-mcp-connection.md) (Next, ready, no helper). KI-HARNESS-GOV-162 (Cite rules in Paperclip) was cancelled on 2026-10-09 and is kept as an idea in the Project note.
+- No open records. The run MCP connection check is now the Project note idea "Verify the run MCP connection", kept on 2026-10-11 in place of a cancelled harness work record (state-of-play Decision 38). KI-HARNESS-GOV-162 (Cite rules in Paperclip) was cancelled on 2026-10-09 and is kept as an idea in the Project note.
 - Two Paperclip decision cards await Kris through `state-of-play`.
 
 ## Decisions made
@@ -35,4 +35,4 @@ None for this thread; the two decision cards are Kris's, through `state-of-play`
 
 ## Next step
 
-Delegate KI-HARNESS-RTP-015 through `ki agent`, staying within the Project note's constraints; the rule-citation idea waits in the Project note.
+Choose whether the Project note idea "Verify the run MCP connection" becomes work, and if so capture it through `ki-next` and delegate it through `ki agent`, staying within the Project note's constraints; the rule-citation idea also waits in the Project note.

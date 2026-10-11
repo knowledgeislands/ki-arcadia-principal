@@ -4,7 +4,7 @@ thread: _state-of-play
 label: 'Master: state-of-play'
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-09T21:33:00Z
+updated_at: 2026-10-11T02:42:18Z
 ---
 
 # _state-of-play
@@ -34,12 +34,14 @@ This is the master thread. Since 2026-10-09 it does only project management and 
   | 2 | Platform Foundations: baseline-rollout | [platform-foundations.baseline-rollout](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/platform-foundations.baseline-rollout.md) | `Re-bootstrap as the baseline-rollout project thread under ki-delegation.` |
   | 3 | Knowledge Islands Model: knowledge-acquisition | [knowledge-islands-model.knowledge-acquisition](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/knowledge-islands-model.knowledge-acquisition.md) | `Re-bootstrap as the knowledge-acquisition project thread under ki-delegation.` |
   | 4 | Knowledge Islands Model: ways-of-working | [knowledge-islands-model.ways-of-working](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/knowledge-islands-model.ways-of-working.md) | `Re-bootstrap as the ways-of-working project thread under ki-delegation.` |
+  | 5 | Knowledge Islands Model: command-centre | [knowledge-islands-model.command-centre](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/knowledge-islands-model.command-centre.md) | `Re-bootstrap as command-centre project thread under ki-delegation.` |
 
 - **Other checkpoints, no thread open:** [platform-foundations.estate-factorisation](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/platform-foundations.estate-factorisation.md), [techne.paperclip-bootstrap-and-recovery](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/techne.paperclip-bootstrap-and-recovery.md), which waits on the Techne Programme Hold (the territory-rollout checkpoint was removed 2026-10-11; its content is an idea in island-model-and-tending).
 - **Projects with no thread.** No open records and no recurring work: [roadmap-model](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/roadmap-model.md), [skill-refresh](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/skill-refresh.md), [specification-review](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/specification-review.md), [delta-evaluation](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/delta-evaluation.md) and [trades-revamp](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/trades-revamp.md). Paused, with Hold records only: [specifications](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/specifications.md) and [website](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/website.md); their decisions stay here.
 - **Master runs** (state-of-play; check `ki agent status state-of-play`): `close-ki` and `close-other` are accepting, merging and pruning under Decisions 20 to 22; `close-ki` also fixes the KI-ARCADIA-GOV-032 references before accepting it. `capture-sweep` runs after them to check every open item sits in a Project (Decision 23). The gov-020 helpers have all finished.
 - **Parked tangents, now routed** (Decision 18):
-  - State-of-play view of Projects and Initiatives, and the GitHub-flavoured Markdown move: [knowledge-islands-model.ways-of-working](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/knowledge-islands-model.ways-of-working.md).
+  - State-of-play view of Projects and Initiatives: [knowledge-islands-model.command-centre](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/knowledge-islands-model.command-centre.md) (moved 2026-10-11, Decision 42).
+  - The GitHub-flavoured Markdown move: [knowledge-islands-model.ways-of-working](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/knowledge-islands-model.ways-of-working.md).
   - Review tags and the Admin conventions: [knowledge-islands-model.island-model-and-tending](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/knowledge-islands-model.island-model-and-tending.md).
   - claude-swap auto-switching (`cswap auto --strategy consume-first` under launchd, Decision 14): with the Rig thread [rig.chezmoi](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/rig.chezmoi.md), as [DOTFILES-UE-081](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-081-claude-swap-auto-switch-service.md), accepted in Decision 20.
 - **Tooling.** `ki` 0.10.0 carries `ki agent`.

@@ -4,7 +4,7 @@ thread: knowledge-islands-model.ways-of-working
 label: 'Knowledge Islands Model: ways-of-working'
 state: active
 created_at: 2026-10-09T20:58:00Z
-updated_at: 2026-10-09T20:58:00Z
+updated_at: 2026-10-11T02:42:18Z
 ---
 
 # knowledge-islands-model.ways-of-working
@@ -35,7 +35,6 @@ None yet in this thread. The rules live in `/Users/krisbrown/workspaces/kit/know
 ## Open questions
 
 - **MARK plan approval:** Kris confirms or changes the MARK-* defaults in the mark-design report; rejection returns KI-HARNESS-GOV-169 to draft.
-- **2026-10-09 (parked): state-of-play view.** A clear view of Projects and Initiatives, possibly drawing on `apps-observatory` and the command-centre ideas in `kit-hnr` and `kit-legal`.
 - **2026-10-09 (parked): Markdown flavour.** A gradual move from Obsidian-style to GitHub-flavoured Markdown, starting with a front-matter field declaring a note's flavour.
 - **2026-10-09 (parked): run-folder retention.** Kris approved adding a retention rule to `ki-delegation`: when a thread or run closes and its decisions are consolidated into durable owners, archive or delete its `~/.local/state/ki/agents/<run>/` folder. Pair with the findings of the master's `state-audit` background agent.
 - **2026-10-10 (approved): background-run worktree location (state-audit FIX-1).** The background-run standard names no worktree location, so agents improvised (`~/.local/state/claude-bg/...`, `~/workspaces/kit/.worktrees/...`, `<repo>.wt-*`). Add to `ki-delegation`: worktrees go under `~/.local/state/ki/agents/<run>/worktrees/<repo>`, are removed with `git worktree remove` and their branch deleted once merged, before the run reports `DONE`. Optionally a `ki agent` helper. Fold into the run-folder retention rule; no new record (master Decision 34).
