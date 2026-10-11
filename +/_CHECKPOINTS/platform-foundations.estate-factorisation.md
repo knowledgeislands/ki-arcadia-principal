@@ -4,7 +4,7 @@ thread: platform-foundations.estate-factorisation
 label: 'Fnd: estate-factorisation'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-11T11:28:24Z
+updated_at: 2026-10-11T11:29:41Z
 ---
 
 # platform-foundations.estate-factorisation
@@ -20,7 +20,7 @@ Bottom out every open roadmap record in the registry-resolved `mcp-*`, `tools-*`
 - All detached lanes have finished; nothing is running or queued. Independent plan review recommends the combined tools-ki plan and the bounded Observatory readiness route. The Observatory proposal now explicitly includes offline receiver failure/protection fixtures, published in its existing record. Four Rig records are committed and published Done, retained pending cross-thread reference repairs and archived peer evidence. Seven records remain open. Await the concrete plan/repair authorities below; re-arm monitoring on the next approved launch.
 - Current count is 7 open records across the fifteen scoped repositories: tools-ki 3, tools-rig 1, tools-techne 2 and apps-observatory 1. This includes the new combined tools-ki capture. The four Rig Done records remain canonical but no longer count as open; Observatory remains open; completed preparation for the four protected host records is in the [local handoff report](/Users/krisbrown/.local/state/ki/agents/tools-burndown/host-prep.report.md).
 - Independent review recommended the self-updating applications, sudo-session and default-handler deliveries; final acceptance review also verified the published retained-uv correction and all 18 inert removal regressions. All four meet their captured delivery requirements. Durable behaviour lives in Rig's [state specification](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/specs/state.md), [orchestration specification](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/specs/orchestration.md) and [default-application guide](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/guides/user/default-applications.md). Observatory product delivery and redaction correction are complete, but full governance readiness still reports CI/hook warnings and unhealthy retired skill projections. Do not treat exit zero as clean readiness or waive a required gate.
-- ki-delegation read at 3d8f3b6a. Refreshed territory-specific master run naming; this Project run remains `tools-burndown`.
+- ki-delegation read at f2b14dca. Refreshed Summary/recap banners and explicit waiting/resting state; this Project run remains `tools-burndown`. Current thread state: waiting on KI-PLAN, OBS-EVIDENCE and RIG-PRUNE authority; protected delivery release remains with the master.
 - No mark has yet been struck for the burndown run; use the ki-delegation first-recap rule unless Kris strikes one earlier.
 - The previous factorisation close-out remains in the Project note: groundwork delivered, no phase gate met, FND-3 to EVAL-2 remain ideas, Project lifecycle active. This run does not approve those phases.
 
