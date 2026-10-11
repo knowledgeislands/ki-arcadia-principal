@@ -19,6 +19,8 @@ The thread moves agent work off the laptop onto the one agent host the [Techne P
 
 Verified on 2026-10-10 at about 14:30 BST.
 
+Mark: 2026-10-09T21:40Z, decisions log at Decision 34
+
 - **Repositories.** All eight touched repositories (`ki-arcadia-principal`, `ki-techne-harness`, `tools-techne`, `ki-specifications`, `ki-website`, `ki-agentic-harness`, `tools-ki`, chezmoi) are level with origin and clean.
 - **Delivered and closed.** OS patching (TECHNE-TOOLS-OPS-022) and the chezmoi workstation bundle (DOTFILES-UE-073) are accepted and pruned. The workstation pilot (TECHNE-TOOLS-OPS-015) is accepted and kept, not pruned. The `agent-host` rename (Decision 30) is live everywhere, including on the host.
 - **Ideas, not records.** The owned-host provider and the operator-guide split are now ideas in the [[agent-host]] Project note; their cancelled records are pruned.
