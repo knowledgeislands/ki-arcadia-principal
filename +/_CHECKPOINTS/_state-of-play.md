@@ -4,7 +4,7 @@ thread: _state-of-play
 label: 'Master: state-of-play'
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-11T11:08:16Z
+updated_at: 2026-10-11T11:20:00Z
 ---
 
 # _state-of-play
@@ -89,3 +89,4 @@ Parked:
 2. Remind Kris of the trades hold and the delta trial from 2026-10-12.
 3. When an active thread closes, open the next queued thread from the queue table.
 4. Cut the combined tools-ki release when Kris asks.
+5. Route the `ki-design-system` rollout (`KI-HARNESS-GOV-173`, accepted 2026-10-11) to Fnd: baseline-rollout for `ki-website` and `apps-observatory`: each declares `[skills.ki-design-system]` with its `tokens`, `guide` and `checks`, writes its design guide from the skill's skeleton where it has none, and passes `ki repo audit --skill ki-design-system` once the installed harness carries the skill. The Humans Not Robots, Valle Armonia and Personal masters carry the same item for their repositories; pass it to the Equal Remedy and TechMedix masters, whose state of play was not updated on 2026-10-11. Legal has no repository with an interface. Kris's instruction, 2026-10-11.
