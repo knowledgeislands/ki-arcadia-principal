@@ -4,7 +4,7 @@ thread: _state-of-play
 label: 'Master: state-of-play'
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-11T11:20:00Z
+updated_at: 2026-10-11T11:21:48Z
 ---
 
 # _state-of-play
@@ -67,7 +67,7 @@ Rules live with their durable owners: the roadmap model in GDR-KI-ARCADIA-005 an
 
 Needs Kris (outstanding at the mark; carried forward until resolved):
 
-- From [Fnd: estate-factorisation](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/platform-foundations.estate-factorisation.md), 2026-10-11: Kris approved acceptance/pruning of complete reported candidates (tools-burndown Decision 6), added homebrew-tap (zero open), and authorised one combined tools-ki capture/plan for master Decision 51, with delivery awaiting plan approval. All five existing assigned deliveries are implemented; Rig closure/pruning is next. Observatory remains blocked by full-audit CI-1/HOOK-1 warnings and dangling retired ki-agora skill projections; please route master-owned runtime projection repair. Protected release is still pending. No original record closed yet; no extra capture beyond the single explicitly requested record.
+- From [Fnd: estate-factorisation](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/platform-foundations.estate-factorisation.md), 2026-10-11: four Rig deliveries are accepted and published Done under Kris's tools-burndown Decision 6. Open count is 7: tools-ki 3, tools-rig 1, tools-techne 2, Observatory 1; MCPs/tap zero. The single authorised [KI-TOOL-CLI-118](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-ki/docs/roadmap/KI-TOOL-CLI-118-capital-stores-and-territory-aliases.md) plan is published, delivery awaiting approval. Please route prune-reference repair through Rig: mac-studio-bootstrap, Rig: chezmoi and the chezmoi software-alignment owner; their surviving links block all four approved prunes. Relevant archived peer reference evidence is also unavailable locally. Observatory has a bounded hook/CI-pin/receiver proposal awaiting repository opt-in; please route removal/reconciliation of its two retired untracked ki-agora skill projections through the configuration owner. Optional territory_aliases metadata and accepted selection rationale need Harness/Arcadia owner alignment before rollout. Protected five remain unassigned; this notice grants no peer edit or remote operation.
 - **PROTECTED:** from Fnd: estate-factorisation - release the four Techne: agent-host tooling records and the Dock engine work to its local run, or keep them with their current threads.
 - **VA-PRIMARY:** the Valle Armonia thread rebases and pushes its three local commits in vallearmonia-principal (paste prompt given 2026-10-11).
 - **KIT-ACQUIRE:** two unpushed local commits in kit-acquire (Kris's central Granola inbox work, 2026-10-10) carry its first `.ki.toml`; push, or leave for the knowledge-acquisition thread.
