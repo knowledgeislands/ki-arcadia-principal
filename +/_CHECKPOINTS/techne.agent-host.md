@@ -4,7 +4,7 @@ thread: techne.agent-host
 label: 'Techne: agent-host'
 state: active
 created_at: 2026-10-07T09:05:00Z
-updated_at: 2026-10-11T02:55:00Z
+updated_at: 2026-10-11T03:13:00Z
 ---
 
 # techne.agent-host
@@ -17,21 +17,22 @@ The thread moves agent work off the laptop onto the one agent host the [Techne P
 
 ## Current state
 
-Verified on 2026-10-11 at about 03:55 BST.
+Verified on 2026-10-11 at about 04:12 BST.
 
 Mark: 2026-10-09T21:40Z, decisions log at Decision 34
 
 ki-delegation read at cfa9c458
 
-- **Repositories.** `ki-arcadia-principal` is level with origin. Harness commits for TECHNE-TOOLS-OPS-017, TECHNE-TOOLS-OPS-023 and TECHNE-TOOLS-OPS-024, and the KI-HARNESS-GOV-170 scope change in `ki-agentic-harness`, await Kris's push.
+- **Repositories.** All touched repositories are level with origin.
 - **Delivered and closed.** OS patching (TECHNE-TOOLS-OPS-022) and the chezmoi workstation bundle (DOTFILES-UE-073) are accepted and pruned. The workstation pilot (TECHNE-TOOLS-OPS-015) is accepted and kept, not pruned. The `agent-host` rename is live everywhere, including on the host.
 - **The host.** Restarted through the provider on 2026-10-10: kernel 7.0.0-1014, no reboot flag, status clean.
 - **Pins.** `recipes/agent-host/rig.toml` in the harness is the one list of host tool versions; `mise` and `codex` are raised to 2026.10.6 and 0.162.0. The Mac is no longer compared against it; TECHNE-TOOLS-OPS-024 (weekly pin bump) is planned, draft.
-- **Ready, held.** TECHNE-TOOLS-OPS-017 (zsh, the `vega` rename and removal of the remaining live record identifiers, at rebuild) is ready. Its build and the approval of TECHNE-TOOLS-OPS-024 are held for the Rig and Techne boundary audit (Decision 39), written at `Streams/Projects/agent-host/design/rig-techne-boundary-audit.md` and awaiting Kris's ten decisions.
-- **In triage.** TECHNE-TOOLS-OPS-016, TECHNE-TOOLS-OPS-018, TECHNE-TOOLS-OPS-019 and TECHNE-TOOLS-OPS-023 in the harness; TECHNE-TOOL-CLI-006 and TECHNE-TOOL-CLI-008 in `tools-techne`; KI-TOOL-CLI-116 (launcher-held `--wait-for` gates) in `tools-ki`. KI-HARNESS-GOV-170 (keep resolution targets local) is planned, draft, in `ki-agentic-harness`.
+- **Boundary audit accepted.** Kris accepted all ten decisions of the Rig and Techne boundary audit (Decision 40). The plain-language explainer is [[Hosts, Roles and Layers]]; cross-repository handoffs go through state-of-play.
+- **Awaiting the rebuild.** TECHNE-TOOLS-OPS-017 (zsh login shell, the `vega` rename, no record identifiers in the stack) is built and awaiting review; it needs Kris's before-rebuild check and live rebuild, steps in its review packet. Setup must not be rerun on the current host before then. TECHNE-TOOLS-OPS-024 (weekly pin bump) is ready; its tool waits for the role profile to move to a `roles/` folder.
+- **In triage.** TECHNE-TOOLS-OPS-016 (to be replaced by a `tools-rig` signed-release kind), TECHNE-TOOLS-OPS-018, TECHNE-TOOLS-OPS-019 and TECHNE-TOOLS-OPS-023 in the harness; TECHNE-TOOL-CLI-006 and TECHNE-TOOL-CLI-008 in `tools-techne`; KI-TOOL-CLI-116 (launcher-held `--wait-for` gates) in `tools-ki`. KI-HARNESS-GOV-170 (keep resolution targets local) is planned, draft, in `ki-agentic-harness`.
 - **The Mac.** `terra`; chezmoi `rigProfile` is `laptop`; Tailscale is up.
 - **`ki agent --wait-for` is unreliable** in ki 0.10.0 (KI-TOOL-CLI-116); sequence dependent runs by hand.
-- No background agents running. The decisions log runs to Decision 39.
+- No background agents running. The decisions log runs to Decision 40.
 
 Thread rules:
 
@@ -63,9 +64,10 @@ ODR-KI-ARCADIA-001, ADR-KI-ARCADIA-003, the agent-host Project note and this che
 
 For Kris:
 
-- **AUDIT:** answer the ten decisions in the Rig and Techne boundary audit; then hand the outcome to state-of-play and release or reshape the TECHNE-TOOLS-OPS-017 build and the TECHNE-TOOLS-OPS-024 approval.
-- **NAMES:** hand the machine-naming convention (Decision 29(a)) to the `rig.mac-studio-bootstrap` thread; a paste-in line was given, not yet confirmed sent.
-- **PUSH:** push the harness and `ki-agentic-harness` commits.
+- **REBUILD:** run the before-rebuild check and rebuild the host as `vega` per TECHNE-TOOLS-OPS-017's review packet, then update the chezmoi binding, payload `target_host` and SSH alias to `vega`, and review TECHNE-TOOLS-OPS-017.
+- **SOP-HAND:** paste the audit handoff into state-of-play.
+- **KIM-HAND:** paste the [[Hosts, Roles and Layers]] review request into the `knowledge-islands-model.island-model-and-tending` thread.
+- **NAMES:** hand the machine-naming convention to the `rig.mac-studio-bootstrap` thread; now also written in [[Hosts, Roles and Layers]].
 
 Owned-host exemption for the Mac Studio is handled by KI-ARCADIA-GOV-033 in the `mac-studio-bootstrap` thread.
 
@@ -73,4 +75,4 @@ Owned-host exemption for the Mac Studio is handled by KI-ARCADIA-GOV-033 in the 
 
 ## Next step
 
-1. Kris answers AUDIT; the thread then releases or reshapes the held work.
+1. Kris rebuilds the host as `vega`; the thread then verifies and takes TECHNE-TOOLS-OPS-017 to acceptance.
