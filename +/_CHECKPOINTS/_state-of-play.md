@@ -4,7 +4,7 @@ thread: _state-of-play
 label: 'Master: state-of-play'
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-11T02:42:18Z
+updated_at: 2026-10-11T04:21:15Z
 ---
 
 # _state-of-play
@@ -66,6 +66,8 @@ Rules live with their durable owners: the roadmap model in GDR-KI-ARCADIA-005 an
 - Project and Initiative notes: [Projects](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/Projects.md) and [Initiatives](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Initiatives/Initiatives.md). The [ways-of-working](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/ways-of-working.md) Project was created on 2026-10-09.
 
 ## Open questions
+
+From [Platform Foundations: tools-burndown](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/platform-foundations.estate-factorisation.md), 2026-10-11: Kris has reopened estate-factorisation as a tools/Apps/MCP burndown thread. The complete fourteen-repository review confirms ten open records, with no acceptance candidate or recommended cancellation/merger. [KI-OBS-APP-041](/Users/krisbrown/workspaces/kit/knowledgeislands/apps-observatory/docs/roadmap/KI-OBS-APP-041-adopt-territory-selection.md) is now adopted/planned as a Now draft and pushed; the other nine remain triage. Four records belong to Techne: agent-host; five Rig handoffs need receiving-owner coordination through Kris, preserving Rig: chezmoi and Rig: mac-studio-bootstrap's personal changes. The KI Model thread remains protected. `TERRITORY-CONTRACT` is included in the unapproved Observatory plan: recommend stable machine roots for authoritative membership and a bounded text adapter only for picker discovery, with visible failure on changed output. This avoids new producer work/records; a JSON-only alternative requires separately authorised tools-ki work and master coordination. No closure, release, remote agent or remote-environment operation is approved. The checkpoint audit reports a pre-existing extra-heading failure in [Rig: chezmoi](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/rig.chezmoi.md); that thread owns its correction. The master's older Agora/queued-thread pointers need reconciliation by the master. No cross-project priority decision is changed here.
 
 Needs Kris:
 
