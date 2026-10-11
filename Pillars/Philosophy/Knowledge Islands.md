@@ -127,7 +127,7 @@ The third part is Arcadia - the canonical living instance of the model described
 ### Arcadia - The living island
 
 - [[Arcadia]] - Arcadia as the Capital and canonical living island; how its own instance relates to the portable model
-- [[Great Library of Arcadia]] - Arcadia's Library as a concrete example: top-level structure, Pillars and Resources, active Streams, and how the model's conventions play out in practice
+- [[Great Library of Arcadia]] - the idea behind Arcadia's role: the library of all libraries, a deliberate play on the Great Library of Alexandria
 
 ## Conclusion
 
