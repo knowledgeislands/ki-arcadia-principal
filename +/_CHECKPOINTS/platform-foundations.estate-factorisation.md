@@ -4,7 +4,7 @@ thread: platform-foundations.estate-factorisation
 label: 'Platform Foundations: tools-burndown'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-11T09:19:55Z
+updated_at: 2026-10-11T09:21:21Z
 ---
 
 # platform-foundations.estate-factorisation
@@ -19,12 +19,13 @@ Bottom out every open roadmap record in the registry-resolved `mcp-*`, `tools-*`
 - Verified starting/current count: 10 open records - tools-ki 2, tools-rig 5, tools-techne 2, apps-observatory 1. The eight MCP repositories, tools-git-almanac and tools-mgit have none. All fourteen registry-resolved scoped repositories were reviewed; all ten records started in triage. No record was initially eligible for immediate acceptance; Observatory now has delivery evidence and one bounded correction underway. No cancellation, merger or idea demotion is recommended. No record has closed or been captured.
 - Three detached background agents are running under `tools-burndown`: `obs-correct` fixes an independently reproduced picker path-disclosure gap in the existing Observatory record; `rig-deliver` plans and delivers four handed-on generic engine records serially; `delivery-review` independently assesses committed candidates against captured requirements. `obs-deliver` finished and published Observatory through Awaiting review; acceptance is deferred pending its bounded correction. `host-prep` completed read-only plans for the four Techne: agent-host records; its [local handoff report](/Users/krisbrown/.local/state/ki/agents/tools-burndown/host-prep.report.md) is ready for that owner and the master. The initial inventory and plan agents have finished. A detached run monitor and next-completion waiter are maintained under the run's `coordination/` area.
 - Current count remains 10. Five records are assigned for delivery: [KI-OBS-APP-041](/Users/krisbrown/workspaces/kit/knowledgeislands/apps-observatory/docs/roadmap/KI-OBS-APP-041-adopt-territory-selection.md), [RIG-CORE-041](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-041-unwanted-software-removal.md), [RIG-CORE-043](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-043-self-updating-applications.md), [RIG-CORE-044](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-044-single-sudo-prompt.md) and [RIG-CORE-045](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-045-default-applications.md). Four host-owned records have a preparation lane; protected Dock/profile work remains with its active thread. No record has closed and no new record has been captured.
-- ki-delegation read at c15053c4.
+- ki-delegation read at 3d8f3b6a. Refreshed territory-specific master run naming; this Project run remains `tools-burndown`.
 - No mark has yet been struck for the burndown run; use the ki-delegation first-recap rule unless Kris strikes one earlier.
 - The previous factorisation close-out remains in the Project note: groundwork delivered, no phase gate met, FND-3 to EVAL-2 remain ideas, Project lifecycle active. This run does not approve those phases.
 
 ## Decisions made
 
+- From master thread, 2026-10-11, Decisions 49 and 50 (tools-burndown Decision 5): repository names stay unchanged; current territory names become `knowledge-islands`, `humans-not-robots`, `equal-remedy`, `valle-armonia`, `techmedix`, `legal` and `personal`. The master owns interim `.ki.toml`, registry, source-store, chezmoi workspace/trust and runtime trust changes. Do not edit `.ki.toml` or those chezmoi paths during the landing window. After confirmation, safely pull and fix affected build/current-name references within our existing deliveries; await the master's remaining-reference list.
 - Decision 1 in `tools-burndown`: review every open scoped record and return one tagged batch of recommended dispositions. No acceptance, cancellation, merger closure or pruning without Kris's approval. Avoid new records.
 - Decision 2: Kris has approved adoption and planning of [KI-OBS-APP-041](/Users/krisbrown/workspaces/kit/knowledgeislands/apps-observatory/docs/roadmap/KI-OBS-APP-041-adopt-territory-selection.md) in apps-observatory; delivery requires his approval of the plan. The change replaces retired Agora scope with territory selection.
 - Decision 3: Kris approved proceeding from the captured requirements and prioritised getting existing work delivered over creating more changes. The saved Observatory plan, including its bounded picker adapter, is approved for implementation. Use existing records and report material unresolved choices; no new backlog or self-acceptance.
@@ -43,6 +44,7 @@ Bottom out every open roadmap record in the registry-resolved `mcp-*`, `tools-*`
 
 ## Open questions
 
+- `TERRITORY-LANDING`: master naming/configuration changes are expected within roughly an hour of the 2026-10-11 notice. Await landing confirmation and the remaining-reference list before pulling and validating affected builds; temporary configuration failures are transition evidence, not new records. Repository basenames and historical provenance remain unchanged.
 - `OBS-CORRECTION`: independent review reproduced embedded private paths accepted as picker labels/handles in [KI-OBS-APP-041](/Users/krisbrown/workspaces/kit/knowledgeislands/apps-observatory/docs/roadmap/KI-OBS-APP-041-adopt-territory-selection.md). `obs-correct` is addressing this captured requirement in the same record before an acceptance recommendation. No new record.
 - `OBS-RESTART`: the live Observatory service has not been restarted; delivery agents are forbidden to operate it. Route the bounded activation separately after review.
 - `PROTECTED`: awaiting Kris's answer on releasing the four host-owned records and Dock engine work for local delivery in this run. The original ownership protection stays in force until an explicit answer; elapsed time is not approval. Current delivery and independent review continue meanwhile.
