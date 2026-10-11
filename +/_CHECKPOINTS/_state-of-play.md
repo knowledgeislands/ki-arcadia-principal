@@ -4,7 +4,7 @@ thread: _state-of-play
 label: 'Master: state-of-play'
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-11T10:05:00Z
+updated_at: 2026-10-11T11:08:16Z
 ---
 
 # _state-of-play
@@ -65,7 +65,9 @@ Rules live with their durable owners: the roadmap model in GDR-KI-ARCADIA-005 an
 
 ## Open questions
 
-- From [Platform Foundations: tools-burndown](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/platform-foundations.estate-factorisation.md), 2026-10-11: three of ten scoped records are Awaiting review. Rig self-updating applications is independently acceptance-ready; Observatory required full governance evidence and removal retained-uv correction are assigned within existing records. Sudo and handlers continue. No closure or new record, protected ownership release still pending. Decisions 49/50 naming freeze received; Decision 51 alias/store request parked for reconciliation with burndown and protected tools-ki ownership. Needs Kris (outstanding at the mark; carried forward until resolved):
+Needs Kris (outstanding at the mark; carried forward until resolved):
+
+- From [Fnd: estate-factorisation](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/platform-foundations.estate-factorisation.md), 2026-10-11: Kris approved acceptance/pruning of complete reported candidates (tools-burndown Decision 6), added homebrew-tap (zero open), and authorised one combined tools-ki capture/plan for master Decision 51, with delivery awaiting plan approval. All five existing assigned deliveries are implemented; Rig closure/pruning is next. Observatory remains blocked by full-audit CI-1/HOOK-1 warnings and dangling retired ki-agora skill projections; please route master-owned runtime projection repair. Protected release is still pending. No original record closed yet; no extra capture beyond the single explicitly requested record.
 - **PROTECTED:** from Fnd: estate-factorisation - release the four Techne: agent-host tooling records and the Dock engine work to its local run, or keep them with their current threads.
 - **VA-PRIMARY:** the Valle Armonia thread rebases and pushes its three local commits in vallearmonia-principal (paste prompt given 2026-10-11).
 - **KIT-ACQUIRE:** two unpushed local commits in kit-acquire (Kris's central Granola inbox work, 2026-10-10) carry its first `.ki.toml`; push, or leave for the knowledge-acquisition thread.
