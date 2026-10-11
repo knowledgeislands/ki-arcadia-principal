@@ -4,7 +4,7 @@ thread: knowledge-islands-model.island-model-and-tending
 label: 'KI Model: island-model-and-tending'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-10T15:00:00Z
+updated_at: 2026-10-11T01:25:00Z
 ---
 
 # knowledge-islands-model.island-model-and-tending
@@ -17,6 +17,7 @@ Arcadia's current island-model and tending records are each delivered, handed to
 
 - **Mark:** struck 2026-10-09 22:41 BST; last summary since the mark given 2026-10-10 06:30 BST (Decision 16 design: one mark per thread, replaced when a new one is struck). A summary "since the mark" covers what changed after it plus everything still outstanding: the Needs-Kris items in `Open questions` that remain relevant, open records, running or queued agents, and parked tangents.
 - Active since the re-bootstrap at 22:30 BST on 2026-10-09; `ki-delegation` read at harness revision b03a5d55. Run `island-model-and-tending` (decisions log `~/.local/state/ki/agents/island-model-and-tending/decisions.md`) has no agents running. `apps-note` (Decision 2) finished: the GitHub Apps note carries the 2026-10-07 proof and tap-guide pointer, and KI-ARCADIA-GOV-030 is closed and pruned. `checklist` (Decision 1) finished: the first full REVIEW pass fixed em dashes in 32 canonical notes and left 13 tagged findings for Kris in `~/.local/state/ki/agents/island-model-and-tending/checklist.report.md`.
+- 2026-10-10: repo-tidy, dr-consolidate, dr-fix, eng-pass and mod7-deliver finished (Decisions 4-15). [KI-ARCADIA-MOD-007](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-MOD-007-retire-runtime-specific-realisation-notes.md) is awaiting review; harness handoffs KI-HARNESS-GOV-171 and KI-HARNESS-GOV-172 captured. Decision Records P1-P8 consolidated in place. `ki` pin v0.10.0 and committed `.githooks` gate landed; BUNX and the check script dropped (Decisions 14-15). Arcadia CI still red: released v0.10.0 checkpoint schema lacks `label`.
 - KI-ARCADIA-MOD-005, KI-ARCADIA-OPS-004 and KI-ARCADIA-GOV-024 were delivered, closed and pruned earlier.
 - KI-ARCADIA-GOV-032 is done and pruned (the master's `close-ki` run, 2026-10-09). Its reference sweep found nothing left to fix across `~/workspaces` and the chezmoi source: nothing cited GDR-KI-ARCADIA-008, and every GDR-KI-ARCADIA-007 citation already meant Governing Technology Investigations. Decision 18's reference fix-up is complete.
 - [KI-ARCADIA-MOD-007](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-MOD-007-retire-runtime-specific-realisation-notes.md) (Next, draft, now names this Project) is the only open record here. Kris approves the goal; its disposition table still needs Kris's answer row by row.
@@ -37,20 +38,18 @@ None yet in this thread. Records live in `/Users/krisbrown/workspaces/kit/knowle
 
 ## Open questions
 
-Needs Kris (2026-10-10 16:00 BST); the mark of 2026-10-09 22:41 BST stands. Run decisions 4-9 are in `~/.local/state/ki/agents/island-model-and-tending/decisions.md`; reports beside it.
+Needs Kris (2026-10-11 02:25 BST); the mark of 2026-10-09 22:41 BST stands. Reports in `~/.local/state/ki/agents/island-model-and-tending/`.
 
-- **MOD7-GO:** KI-ARCADIA-MOD-007 is Ready (Decision 9); approve delivery and confirm three planning judgements (Live Artifact Patterns to AI Automation Patterns; memory mapping to Knowledge Rebuild; three Canonical Meta Notes entries dropped).
-- **PIN-BUMP:** Arcadia CI is red on 12 checkpoint checks because the `ki` pin is v0.8.4; recommend bumping `.github/ki-version` to v0.10.0.
-- **DR-FIX:** approve the in-place Decision Record consolidation P1-P8 (`dr-consolidate.report.md`) as one Enactment record; answer P5 (trade hold still intended?), P3(c) (reword council or create notes) and P7 (where agentic patterns live).
-- **BUNX:** approve one engineering pass - direct `biome`/`rumdl` in lint-staged, a `check` script, a committed `.githooks/pre-commit` gate.
-- **ESTATE-030 + CLOSEOUT + GOV-168-NOTE:** messages for the master thread given to Kris to paste.
-- **INDEX-OVERVIEW + PLACEHOLDERS:** approved (Decision 8); runs after KI-ARCADIA-MOD-007. Four placeholder Realisation notes, not three.
+- **MOD7-ACCEPT:** review and accept KI-ARCADIA-MOD-007.
+- **MOD7-TIDY:** small stale links found in delivery (Conformance links missing `Model/`, How Tools Connect's missing Tool Ecosystem Map, stale Canonical Meta Notes paths) plus DR drift (GDR-KI-ARCADIA-004 history opening, SDR-KI-ARCADIA-005 Techne sentence, relative References in SDR-002/006/007).
+- **AGORA-HARNESS:** GDR-KI-HARNESS-006 (owner-declared Agoras) contradicts ADR-KI-ARCADIA-002; GDR-KI-HARNESS-013, the harness decisions index and the tools-ki decisions README carry stale Agora wording. Needs a handoff to the harness and tools-ki.
+- **CI-RELEASE + CHEZMOI-HEADING:** for the master: a harness/`ki` release including `f1233757` then a pin bump turns Arcadia CI green; `rig.chezmoi.md` uses `## Decisions in force` instead of `## Decisions made`.
+- **INDEX-OVERVIEW + PLACEHOLDERS:** approved (Decision 8); next after MOD-007 acceptance. Four placeholder Realisation notes.
 - Parked 2026-10-09: review tags - do we still need them?
 - Parked 2026-10-09: Admin conventions and knowledge-base structure tidy-up.
 
 ## Next step
 
-0. Take Kris through the REVIEW findings by tag (DESC-DASH, TOML-TIDY, HOOK-1, CI-PIN, CLOSEOUT, INDEX-OVERVIEW, PLACEHOLDERS, ROOT-RESUME, DR-OVERLAP, DR-YAML, BUNX, NO-VERIFY-TASK); INDEX-OVERVIEW and PLACEHOLDERS follow KI-ARCADIA-MOD-007.
-1. Walk Kris through KI-ARCADIA-MOD-007's disposition table one note at a time, then plan it to ready and deliver it through `ki agent`.
-2. Take up the parked review-tags and Admin-conventions tidy-up (Decision 18) once Kris picks it up: capture it through `ki-next` or drop it.
+1. Kris accepts KI-ARCADIA-MOD-007; then launch the INDEX-OVERVIEW + PLACEHOLDERS Enactment pass (Decision 8), folding in MOD7-TIDY if approved.
+2. Route AGORA-HARNESS as handoffs once Kris approves.
 3. Before closing the Project, check the seven ChatGPT items against it.
