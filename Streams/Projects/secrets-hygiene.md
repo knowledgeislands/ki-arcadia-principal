@@ -24,7 +24,6 @@ This Project sits in [[rig|Rig]], because the secrets chezmoi renders are part o
 ## Notes
 
 - Kris made the Project active on 2026-10-09 (Decision 31); the Rig: chezmoi thread carries it.
-- The work records live in the chezmoi roadmap and name this Project: one reorganises the vaults safely, and one, blocked by it, makes the triage repeatable.
-- The triage record should realise the monthly triage as an Activity, so the cadence, due runs and run evidence follow the recurring-work model rather than a one-off procedure.
-- The triage is mostly read-only: it proposes changes and applies only what Kris approves.
+- The work record that reorganises the vaults safely lives in the chezmoi roadmap and names this Project.
+- **Idea: repeatable 1Password triage.** A mostly read-only triage on a cadence, realised as a recurring Activity or a chezmoi housekeeping template, that files the inbox vault, catches misplaced, duplicate and stale items, bad titles and URLs and `^` follow-up tags, checks every `op://` reference still resolves, and applies only what Kris approves. Kept as an idea on 2026-10-11 in place of a cancelled chezmoi work record (Decision 47 of the chezmoi thread). If revived, it carries the rules Kris has already settled: the Rig vault holds anything Kris uses on a machine or connects to, Wi-Fi and unlock codes included; items sharing a service are named with a bracketed qualifier; URL fixes point to the service's home page; nothing goes to 1Password's Archive during triage - an item to retire gets `^archive` and Kris archives it; and an item in the wrong category is recreated in the right one with the same fields and tags, its `op://` references repointed and the render confirmed unchanged, before the original is archived. Values are compared by hash, never printed.
 - Notes and records here name vaults by purpose only - never item titles or personal names.
