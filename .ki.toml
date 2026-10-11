@@ -43,7 +43,6 @@ territory_members = [
   "https://github.com/knowledgeislands/mcp-gsuite",
   "https://github.com/knowledgeislands/mcp-housekeeping-chatgpt",
   "https://github.com/knowledgeislands/mcp-housekeeping-claude",
-  "https://github.com/knowledgeislands/mcp-housekeeping-codex",
   "https://github.com/knowledgeislands/mcp-ki-kb-fs",
   "https://github.com/knowledgeislands/mcp-ki-kb-notion-mirror",
   "https://github.com/knowledgeislands/mcp-m365",

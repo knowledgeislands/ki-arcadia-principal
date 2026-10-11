@@ -19,7 +19,7 @@ Any island may maintain its own chart of useful topics, sources and destinations
 
 ## Internal inventory
 
-The current inventory contains 21 canonical KI repository identities: Arcadia and 20 member islands. This owner-approved inventory agrees with the single ordered territorial roster in `.ki.toml`, including Arcadia. `territory_prefix = "ki"` supplies the short selection handle and Paperclip retains organisation code `KIS`. The machine-readable member list is `territory_members` under `[skills.ki-repo]` in Arcadia's `.ki.toml`, and every member names Arcadia in its own `[skills.ki-repo].capital`. A change to this inventory updates both in the same enactment.
+The current inventory contains 20 canonical KI repository identities: Arcadia and 19 member islands. This owner-approved inventory agrees with the single ordered territorial roster in `.ki.toml`, including Arcadia. `territory_prefix = "ki"` supplies the short selection handle and Paperclip retains organisation code `KIS`. The machine-readable member list is `territory_members` under `[skills.ki-repo]` in Arcadia's `.ki.toml`, and every member names Arcadia in its own `[skills.ki-repo].capital`. A change to this inventory updates both in the same enactment.
 
 Each island owns its accepted knowledge or executable behaviour within the shared governance. The roles below distinguish Capital, specialist knowledge, reusable capabilities, products, integrations, tools and delivery without turning a product boundary into another territory.
 
@@ -37,7 +37,6 @@ Each island owns its accepted knowledge or executable behaviour within the share
 | [mcp-gsuite][mcp-gsuite] | MCP | Google Workspace integration |
 | [mcp-housekeeping-chatgpt][mcp-housekeeping-chatgpt] | MCP | ChatGPT housekeeping |
 | [mcp-housekeeping-claude][mcp-housekeeping-claude] | MCP | Claude housekeeping |
-| [mcp-housekeeping-codex][mcp-housekeeping-codex] | MCP | Codex housekeeping |
 | [mcp-ki-kb-fs][mcp-ki-kb-fs] | MCP | Knowledge Base filesystem |
 | [mcp-ki-kb-notion-mirror][mcp-ki-kb-notion-mirror] | MCP | Knowledge Base Notion mirror |
 | [mcp-m365][mcp-m365] | MCP | Microsoft 365 integration |
@@ -50,6 +49,8 @@ Each island owns its accepted knowledge or executable behaviour within the share
 Arcadia's [[Engineering Practice/Engineering Practice|Engineering Practice]] is the canonical home of Techné's engineering knowledge and decisions. The former source repository, [ki-techne-principal][ki-techne-principal], was retired on 4 October 2026 under [KI-ARCADIA-ECO-008](https://github.com/knowledgeislands/ki-arcadia-principal/blob/7809c906a8e9531d1986ac6123932b03ac062b97/Streams/Roadmap/KI-ARCADIA-ECO-008-disposition-retained-techne-source.md): it is archived read-only as historical evidence, is no longer a member, and holds no live work. The [[Techne Programme Hold]] restricts remote running and remote-environment management across Techné Harness and `tools-techne`. The two implementation products retain independent ownership; local development continues under their repository standards, and knowledge adoption does not itself change services or accept candidates.
 
 The former [ki-plugins][ki-plugins] Claude plugin projection was retired on 5 October 2026 under [KI-ARCADIA-ECO-010](https://github.com/knowledgeislands/ki-arcadia-principal/blob/7809c906a8e9531d1986ac6123932b03ac062b97/Streams/Roadmap/KI-ARCADIA-ECO-010-retire-ki-plugins.md) and the harness decision [ADR-KI-HARNESS-015](https://github.com/knowledgeislands/ki-agentic-harness/blob/92c6014286a0711b8badf9a8b9fe6294d0780a8d/docs/decisions/ADR-KI-HARNESS-015-retire-the-claude-plugin-projection.md): it is archived read-only, is no longer a member, and is not a distribution surface. The `ki` CLI installs the harness, and `npx skills add` is the quick skills-only route.
+
+The former [mcp-housekeeping-codex][mcp-housekeeping-codex] Codex housekeeping MCP was retired on 11 October 2026 under state-of-play owner decisions 37 and 40, after its Codex tools merged into [mcp-housekeeping-chatgpt][mcp-housekeeping-chatgpt]: it is archived read-only and is no longer a member.
 
 Specifications remains dormant as a normative authority until the overall V1 boundary. The inventory records its membership without representing future standards as current obligations.
 

@@ -7,7 +7,7 @@ initiative: platform-foundations
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-11T02:19:55Z
+updated: 2026-10-11T02:38:15Z
 author: Written with Claude
 ---
 
@@ -31,7 +31,7 @@ This Project sits in [[platform-foundations|Platform foundations]]. [[baseline-r
 - **MCP-1 - MCP access and audit policy.** Owner: Agentic Harness. Waits on FND-5.
 - **MCP-2 - black-box conformance suite.** Owner: Agentic Harness. Waits on MCP-1.
 - **MCP-3 - baseline the MCPs.** Arcadia coordinates; each MCP owns. Waits on MCP-2.
-- **OAI-1 - merge Codex into `mcp-housekeeping-chatgpt`.** Owner: `mcp-housekeeping-chatgpt`. Waits on MCP-3. Retiring `mcp-housekeeping-codex` must update any per-repository adoption list that names it.
+- **OAI-1 - merge Codex into `mcp-housekeeping-chatgpt`.** Owner: `mcp-housekeeping-chatgpt`. Waits on MCP-3. Delivered 11 October 2026: `mcp-housekeeping-chatgpt` carries the Codex tools, and `mcp-housekeeping-codex` is archived and removed from the Arcadia roster, the Harness adoption lists and the Techne host repository list.
 - **MCP-4 to MCP-7 - shared MCP implementation.** An extract-or-retain decision comes first. Arcadia coordinates; each MCP owns. Waits on MCP-3.
 - **PROJ-1 - projection register.** Owner: each source repository. Waits on MCP-5 for kit manifests.
 - **OPS-1 - active bindings and builds.** Owner: chezmoi; each product. Waits on FND-5, after OAI-1.
@@ -54,4 +54,4 @@ Phase specifications (purpose, deliverables, completion gates, dependencies) are
 
 ### Close-out assessment
 
-Only early groundwork has been delivered against the Outcome. Four records finished: the Harness and its MCPs share one recovery and dry-run safety contract, released `ki` pins bump automatically through a receiver workflow, and Arcadia now documents the release bot App and the release cascade. None of the phase gates is met. FND-3 to EVAL-2 remain untracked ideas in the Phases list above; none has graduated into a record, including FND-5, which opens the rest, and OAI-1, retiring `mcp-housekeeping-codex` into `mcp-housekeeping-chatgpt`. No follow-up has been captured. The Project stays `active` until Kris decides whether to capture the next phase in its owning repository or to close the Project and leave the phases as ideas.
+Only early groundwork has been delivered against the Outcome. Four records finished: the Harness and its MCPs share one recovery and dry-run safety contract, released `ki` pins bump automatically through a receiver workflow, and Arcadia now documents the release bot App and the release cascade. None of the phase gates is met. FND-3 to EVAL-2 remain untracked ideas in the Phases list above; none has graduated into a record, including FND-5, which opens the rest. OAI-1, retiring `mcp-housekeeping-codex` into `mcp-housekeeping-chatgpt`, was delivered directly on 11 October 2026 under state-of-play owner decisions 37 and 40. No follow-up has been captured. The Project stays `active` until Kris decides whether to capture the next phase in its owning repository or to close the Project and leave the phases as ideas.
