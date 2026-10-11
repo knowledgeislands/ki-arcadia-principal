@@ -1,6 +1,6 @@
 ---
 note_type: pillars/note
-updated: 2026-10-01T22:07:06Z
+updated: 2026-10-11
 author: AI-assisted
 ---
 
@@ -21,7 +21,7 @@ The fabric is an architectural decision and operating model, not a single runtim
 ## Fabric Concepts
 
 - **Workload footprint** - a reusable declaration of the runtime, tools, environment requirements, compatible target capabilities, resource and network constraints, state handling and readiness checks for mechanical, agentic or hybrid work. An agent runtime is optional.
-- **Working context** identifies the purpose and capacity in which the person is acting. It selects applicable knowledge, repository relationships, permissions, approval rules and eligible footprints; it is distinct from a working mode, an Agora and an access grant.
+- **Working context** identifies the purpose and capacity in which the person is acting. It selects applicable knowledge, repository relationships, permissions, approval rules and eligible footprints; it is distinct from a working mode, a territory and an access grant.
 - **Agent footprint** specialises a workload footprint with an agent runtime, agent tools, state behaviour and supported human attachment.
 - **Execution** binds one objective, immutable repository baseline, working context, footprint, authority, evidence destination and lifetime. An execution retains that binding if the person later selects another context elsewhere.
 - **Task environment** is the bounded filesystem, process, network and isolation boundary in which a worker carries out the execution.
@@ -80,7 +80,7 @@ It remains a future option when requirements for control, scale, capability, eco
 
 ## Context Eligibility and Routing
 
-Before comparing targets, validate that the selected context permits the objective, repositories, data, footprint, credentials, network access and approval path. Agora membership or an editor projection may help locate repositories, but neither proves user identity, grants access or permits cross-context data transfer.
+Before comparing targets, validate that the selected context permits the objective, repositories, data, footprint, credentials, network access and approval path. Territory membership or an editor projection may help locate repositories, but neither proves user identity, grants access or permits cross-context data transfer.
 
 An ambiguous context must be resolved before consequential action. A context change applies to new work; it must not silently redirect an existing execution or widen its authority. Any deliberate scope change requires a newly validated grant.
 

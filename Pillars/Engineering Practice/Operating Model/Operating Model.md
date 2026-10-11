@@ -1,6 +1,6 @@
 ---
 note_type: pillars/index
-updated: 2026-10-11T02:19:55Z
+updated: 2026-10-11
 author: AI-assisted
 ---
 
@@ -29,7 +29,7 @@ The operating model aims to ensure that engineering work has:
 
 A working context identifies the purpose and capacity in which a person is acting. It binds relevant knowledge, repository relationships, eligible agent footprints, permissions, credential and data-handling boundaries, approval rules and resource limits without creating another persona.
 
-Context is separate from working mode. Context answers which hat and authority apply; mode answers how the person and agents participate and how work persists. A context may reference one or more Agoras, but an Agora is a governed repository relationship rather than a persona, workspace or access grant.
+Context is separate from working mode. Context answers which hat and authority apply; mode answers how the person and agents participate and how work persists. A context may reference one or more territories, but a territory is a governed repository relationship rather than a persona, workspace or access grant.
 
 Context selection must be visible before consequential work begins. A controller may suggest a context, but an ambiguous request requires clarification. A conversation or interface does not establish the context by itself, and one global current-context value must not silently govern concurrent tasks.
 

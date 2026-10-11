@@ -3,7 +3,7 @@ note_type: admin/governance/decision
 id: GDR-KI-ARCADIA-003
 title: 'Capital-governed trade routes'
 date: 2026-10-06
-updated: 2026-10-10
+updated: 2026-10-11
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/gdr
 decision_type: governance
@@ -34,7 +34,7 @@ Arcadia is the Capital of the Knowledge Islands territory, as its Charter and Kn
 - Arcadia's `.ki.toml` carries the Knowledge Islands member list and its trade policy. While the trade hold stands, that policy declares no channels, standing grants or subtypes. Changing either follows the Enactment Process.
 - The other territories (personal, HNR, Legal, Equal Remedy, TechMedix and Valle Armonia) each declare their own Capital and member list. They hold no trade policy until their owners adopt one.
 - The harness `ki-repo` and `ki-trades` standards and the `ki` command-line tool implement the model.
-- An Agora, the registry and a Paperclip company confer no membership or route authority.
+- The registry, territory selection and a Paperclip company confer no membership or route authority.
 
 ## References
 

@@ -3,7 +3,7 @@ note_type: admin/governance/decision
 id: ADR-KI-ARCADIA-005
 title: 'One persona across explicit working contexts'
 date: 2026-09-15
-updated: 2026-10-10
+updated: 2026-10-11
 status: current
 decision_type: architecture
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/adr
@@ -16,7 +16,7 @@ decision_depends_on: ['GDR-KI-ARCADIA-001', 'ADR-KI-ARCADIA-004']
 
 A person may use agentic assistance while acting in several personal, organisational or professional capacities. Those capacities can involve different knowledge, repositories, credentials, data-handling rules, eligible capabilities and approval requirements. Treating each capacity as a separate agent identity fragments the continuing relationship with the person. Treating every capacity as one undifferentiated operating scope allows authority and information to cross boundaries implicitly.
 
-Conversation channels, deployments, repository visibility and Agora membership each describe different relationships. None alone identifies the capacity in which a person is acting or grants authority for consequential work. A personal controller may also move between deployments or coordinate executions that outlive the initiating conversation, so neither interface nor location can own its identity or current authority.
+Conversation channels, deployments, repository visibility and territory membership each describe different relationships. None alone identifies the capacity in which a person is acting or grants authority for consequential work. A personal controller may also move between deployments or coordinate executions that outlive the initiating conversation, so neither interface nor location can own its identity or current authority.
 
 ## Decision
 
@@ -24,7 +24,7 @@ Techne assigns one enduring agent persona to each person and expresses the perso
 
 One active controller authority acts for the persona across all deployments. Interfaces, controller runtimes and deployment locations may change without creating another persona, but relocation and recovery must prevent stale controllers from dispatching work or publishing results. Kitteth is Kris's instance of this architecture, not the generic controller software.
 
-A working context may reference Agoras and repositories, but it is neither an Agora, an Agora membership nor an access grant. Knowledge Islands governance remains distinct from the prospective operator of the AI Execution Fabric; governing a work record does not confer infrastructure-control authority.
+A working context may reference territories and repositories, but it is neither a territory, a territory membership nor an access grant. Knowledge Islands governance remains distinct from the prospective operator of the AI Execution Fabric; governing a work record does not confer infrastructure-control authority.
 
 ## Consequences
 
@@ -32,7 +32,7 @@ A working context may reference Agoras and repositories, but it is neither an Ag
 - Controllers must make context selection, execution binding, authority validation, revocation and cross-context transfer observable and enforceable.
 - Controller coordination must preserve a single active authority during deployment, recovery and relocation; implementation-specific fencing remains outside this decision.
 - Reusable controller software, interfaces, agent runtimes and infrastructure providers remain replaceable and do not own persona identity.
-- A deployment, repository, Agora relationship or visible capability supplies context for an authority decision but cannot substitute for one.
+- A deployment, repository, territory relationship or visible capability supplies context for an authority decision but cannot substitute for one.
 - This decision creates no controller repository, software product, provider, provisioning or deployment commitment.
 
 ## References

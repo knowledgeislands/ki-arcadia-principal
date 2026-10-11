@@ -2,7 +2,7 @@
 note_type: admin/governance/decision
 id: SDR-KI-ARCADIA-005
 title: 'Territories, Archipelagos, and the Constitutional Layer'
-date: 2026-10-01
+date: 2026-10-11
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/sdr
 decision_type: strategy
@@ -25,7 +25,7 @@ A territory is a governed collection of islands with exactly one Capital, also c
 
 Arcadia is the Capital of the Knowledge Islands territory and the canonical home of its public model. Other territories adopt that model under their own authority; Arcadia has no universal meta-jurisdiction over them.
 
-Territorial membership is declared by the accountable authority in the Charter and Known Lands. Neither a registry, an Agora, company affiliation nor shared ownership creates that authority. Arcadia owns Techné's canonical Engineering Practice pillar and its engineering decisions; the former `ki-techne-principal` knowledge tree is retired and archived read-only as historical evidence, while `ki-techne-harness` and `tools-techne` keep their separate implementation ownership.
+Territorial membership is declared by the accountable authority in the Charter and Known Lands. Neither a registry, company affiliation nor shared ownership creates that authority. Arcadia owns Techné's canonical Engineering Practice pillar and its engineering decisions; the former `ki-techne-principal` knowledge tree is retired and archived read-only as historical evidence, while `ki-techne-harness` and `tools-techne` keep their separate implementation ownership.
 
 ### Archipelagos and Known Lands
 

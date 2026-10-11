@@ -1,6 +1,6 @@
 ---
 note_type: pillars/note
-updated: 2026-10-01T22:07:06Z
+updated: 2026-10-11
 author: AI-assisted
 ---
 
@@ -24,7 +24,7 @@ Those responsibilities are separated by explicit working contexts. A working con
 
 Context selection must be visible before consequential action. A controller may suggest a context, but ambiguity requires clarification. An execution retains the context and authority assigned to it even when the person changes context elsewhere. Changing context cannot redirect existing work, widen its authority or permit information to cross a boundary without a separately valid grant.
 
-A working context may refer to one or more Agoras, but it is not an Agora, a verified Agora membership or an access grant. Repository relationships help identify relevant governed knowledge; they do not establish user identity, credentials, publication authority or permission to transfer knowledge.
+A working context may refer to one or more territories, but it is not a territory, a verified territory membership or an access grant. Repository relationships help identify relevant governed knowledge; they do not establish user identity, credentials, publication authority or permission to transfer knowledge.
 
 Kitteth is Kris's personal agent-controller instance and embodies Kris's persona. It is not the generic name for Techne, for a reusable controller implementation or for software that every person following this approach must use.
 

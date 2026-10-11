@@ -1,6 +1,6 @@
 ---
 note_type: pillars/note
-updated: 2026-10-01T22:07:06Z
+updated: 2026-10-11
 author: AI-assisted
 ---
 
@@ -63,9 +63,9 @@ A local implementation note need not have the same review trail as a decision th
 
 ## Context Boundaries
 
-A working context identifies the capacity in which a person is acting and the knowledge, repository relationships, permissions and handling rules relevant to that capacity. It is distinct from a working mode, an Agora and an access grant.
+A working context identifies the capacity in which a person is acting and the knowledge, repository relationships, permissions and handling rules relevant to that capacity. It is distinct from a working mode, a territory and an access grant.
 
-An Agora declares reciprocal relationships among independently governed repositories. A context may refer to several Agoras and an Agora may serve several contexts, but membership does not prove user identity, repository permission, publication authority or permission to combine information across contexts.
+A territory's Capital declares its membership among independently governed repositories. A context may refer to several territories and a territory may serve several contexts, but membership does not prove user identity, repository permission, publication authority or permission to combine information across contexts.
 
 Shared personal preferences may be reusable where policy permits. Matter-specific memory, retrieved documents, working files, model inputs, logs and results remain within their context boundaries. Cross-context transfer requires explicit, policy-permitted authority and appropriate provenance; persona continuity is not a licence to pool all accessible knowledge.
 
