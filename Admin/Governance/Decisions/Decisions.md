@@ -1,9 +1,12 @@
 ---
 note_type: admin/governance/decision
+updated: 2026-10-11T01:41:00Z
 status: current - October 2026
 ---
 
 # Decision Records - Arcadia
+
+## Overview
 
 Decision Records (DRs) capture significant standalone decisions made within the Knowledge Islands model as instantiated by Arcadia. DRs use the Nygard five-section format (Context, Decision, Consequences) with a `decision_type` taxonomy. Each type has its own prefix and its own serial sequence within the `KI-ARCADIA` scope.
 

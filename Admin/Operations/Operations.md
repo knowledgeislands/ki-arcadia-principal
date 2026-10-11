@@ -1,5 +1,6 @@
 ---
 note_type: admin/index
+updated: 2026-10-11T01:41:00Z
 tags:
   - card/note
   - topic/knowledge-islands
@@ -9,16 +10,26 @@ author: Written with Claude
 
 # Operations
 
-The `Admin/Operations/` arm holds the artefacts that describe **how Arcadia runs day to day** - activities, processes, tools, and agent configuration. These are operational artefacts: live, mutable, and specific to Arcadia's particular integrations and conventions.
+## Overview
 
-## Contents
+The `Admin/Operations/` arm holds the artefacts that describe **how Arcadia runs day to day** - activities, processes, live artifacts, skills and the operational lessons register. These are live, mutable artefacts specific to Arcadia's integrations and conventions; what the island must be is defined in [[Admin/Governance/Governance|Governance]]. The arm was populated by migration from `Pillars/Knowledge Capital/` per [[Admin/Governance/Decisions/GDR-KI-ARCADIA-002-admin-zone-governance-and-operations|GDR-KI-ARCADIA-002]].
 
-| Path | Purpose |
-| --- | --- |
-| [Activities/](Activities/Activities.md) | Ongoing work that keeps the island alive: scheduled and conversational |
-| [Processes/](Processes/Processes.md) | Formal governance gates: the Enactment Process and other defined paths |
-| [Live Artifacts/](Live%20Artifacts/Live%20Artifacts.md) | Dynamic status documents: dashboards, queues, trackers |
-| [Skills/](Skills/Skills.md) | Agent skills installed and active on this island |
-| [Mistakes and Lessons](Mistakes%20and%20Lessons.md) | Closed-loop register of operational mistakes and their resolved lessons |
+## Activities
 
-Populated by migration from `Pillars/Knowledge Capital/` per GDR-KI-ARCADIA-002.
+[[Admin/Operations/Activities/Activities|Activities]] holds Arcadia's Activity notes and its timing model. Its Schedule defines the day-type taxonomy automations read from each daily note, and each Activity note records one group's adoption and configuration, including those adopted only to record a veto. The authoritative roster of enabled activities remains the Charter; this folder holds the definitions and timing.
+
+## Live Artifacts
+
+[[Admin/Operations/Live Artifacts/Live Artifacts|Live Artifacts]] is reserved for dynamic operational documents - dashboards, status boards, queues and trackers - that are updated in place as the island's state changes. Each is meant to pair a Markdown source with a refreshed HTML render. None have yet been formalised for Arcadia.
+
+## Mistakes and Lessons
+
+[[Mistakes and Lessons]] is a closed-loop register of mistakes made during island operations. When an agent gets something wrong, the incident is logged, the fix is applied to the relevant memory or island file, and the resolved lesson is kept in a permanent table. The incident log is meant to be empty most of the time.
+
+## Processes
+
+[[Admin/Operations/Processes/Processes|Processes]] holds Arcadia's realisations of generic Knowledge Islands processes and its territory-wide operating processes. The [[Admin/Operations/Processes/Enactment Process|Enactment Process]] is the ratification mechanism for changes to canonical knowledge; the Release Cascade shows how a tooling release reaches the tap, the website registry and every consuming repository.
+
+## Skills
+
+[[Admin/Operations/Skills/Skills|Skills]] is reserved for a record of the agent skills installed and active on Arcadia, each with its invocation conventions, scope and configuration. No island-specific skill configuration is recorded here yet; the active skill set is declared in `.ki.toml` and listed in [[Admin/Governance/Conformance|Conformance]].

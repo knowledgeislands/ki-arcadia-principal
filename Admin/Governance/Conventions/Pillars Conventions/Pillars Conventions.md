@@ -1,5 +1,6 @@
 ---
 note_type: admin/governance/convention
+updated: 2026-10-11T01:41:00Z
 tags:
   - card/note
   - topic/knowledge-islands
@@ -8,6 +9,8 @@ author: Written with Claude
 ---
 
 # Pillars Conventions
+
+## Overview
 
 Conventions specific to the `Pillars/` zone - how notes are structured, named, and organised within each pillar.
 
