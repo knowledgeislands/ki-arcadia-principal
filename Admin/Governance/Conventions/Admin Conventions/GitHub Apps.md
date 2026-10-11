@@ -83,7 +83,7 @@ The tap's sender-side operating procedures live in its [release App operations g
 | `ki-agentic-harness` | `update-ki-pin.yml` | Proposes a `.github/ki-version` bump when `tools-ki` publishes an immutable release |
 | `ki-website` | `update-tool-release.yml` | Verifies the release, opens or updates the registry pull request and requests squash auto-merge |
 
-In `ki-website` the `main` ruleset requires pull requests and the `build` check, with repository admins as the only bypass actor; the App cannot bypass it. The website's decision is [ODR-KI-WEB-001](https://github.com/knowledgeislands/ki-website/blob/a2c064ab535842ebfdc65965f79b4b659596c1f5/docs/decisions/ODR-KI-WEB-001-tool-release-updates-auto-merge.md) in `ki-website`, delivered through [KI-WEB-SITE-042](https://github.com/knowledgeislands/ki-website/blob/fa6bc4428d2f4835c3e95b129338584602f120ab/docs/roadmap/KI-WEB-SITE-042-auto-accept-verified-tool-versions.md).
+In `ki-website` the `main` ruleset requires pull requests and the `build` check, with repository admins as the only bypass actor; the App cannot bypass it. The website's decision is [ODR-KI-WEB-001](https://github.com/knowledgeislands/ki-website/blob/a2c064ab535842ebfdc65965f79b4b659596c1f5/docs/decisions/ODR-KI-WEB-001-tool-release-updates-auto-merge.md) in `ki-website`; it makes a verified tool release the human gate, so a pin-only tool-release pull request merges itself once `build` passes.
 
 In `ki-agentic-harness`, set up on 2026-10-09, the `main` ruleset allows only repository admins to bypass, requires a pull request with 0 approvals and the `build` check, and blocks deletion and force push.
 

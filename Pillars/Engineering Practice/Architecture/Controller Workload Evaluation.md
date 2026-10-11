@@ -34,7 +34,7 @@ This is a hybrid workload: deterministic preparation and gate evidence surround 
 
 ### Persistent supervised agent session
 
-**Source:** `TECHNE-OPS-002` defines the need for named, human-supervised sessions that survive a client disconnect and preserve observation, control and recovery boundaries.
+**Source:** the retired Techné principal's held work on a remote agent working style defines the need for named, human-supervised sessions that survive a client disconnect and preserve observation, control and recovery boundaries.
 
 **Operator outcome:** detach from and later resume a named engineering session while retaining its repository and process identity.
 
@@ -42,7 +42,7 @@ This is agentic and session-oriented rather than one bounded first workload. Its
 
 ### Excluded capability-shaped options
 
-A general conversational agent, arbitrary shell execution and a workflow-engine comparison are not first-workload candidates. They name mechanisms rather than a bounded operator outcome. `TECHNE-OPS-004` and `TECHNE-OPS-005` remain correctly parked until a concrete workflow or agent-runtime gap could change an adoption decision.
+A general conversational agent, arbitrary shell execution and a workflow-engine comparison are not first-workload candidates. They name mechanisms rather than a bounded operator outcome. The retired Techné principal's comparison of workflow automation tools and its exploration of agent application frameworks remain correctly parked until a concrete workflow or agent-runtime gap could change an adoption decision.
 
 ## Comparison
 
