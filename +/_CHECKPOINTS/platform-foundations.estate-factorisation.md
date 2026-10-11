@@ -4,7 +4,7 @@ thread: platform-foundations.estate-factorisation
 label: 'Platform Foundations: tools-burndown'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-11T09:04:26Z
+updated_at: 2026-10-11T09:10:30Z
 ---
 
 # platform-foundations.estate-factorisation
@@ -17,7 +17,7 @@ Bottom out every open roadmap record in the registry-resolved `mcp-*`, `tools-*`
 
 - Kris reopened this coordinating thread as `Platform Foundations: tools-burndown`, reusing this checkpoint and its Project identity. Background run: `tools-burndown`; decisions log: `/Users/krisbrown/.local/state/ki/agents/tools-burndown/decisions.md`.
 - Verified starting/current count: 10 open records - tools-ki 2, tools-rig 5, tools-techne 2, apps-observatory 1. The eight MCP repositories, tools-git-almanac and tools-mgit have none. All fourteen registry-resolved scoped repositories were reviewed; all ten records started in triage. Nothing is eligible for immediate acceptance, and no cancellation, merger or idea demotion is recommended. No record has closed or been captured.
-- Two detached background agents are running under `tools-burndown`: `obs-deliver` implements the approved Observatory plan; `rig-deliver` plans and delivers four handed-on generic engine records serially. `host-prep` has completed read-only execution plans for the four records still owned by Techne: agent-host; its [local handoff report](/Users/krisbrown/.local/state/ki/agents/tools-burndown/host-prep.report.md) is ready for that owner and the master. The initial inventory and plan agents have finished. A detached run monitor and next-completion waiter are maintained under the run's `coordination/` area.
+- Three detached background agents are running under `tools-burndown`: `obs-deliver` implements the approved Observatory plan; `rig-deliver` plans and delivers four handed-on generic engine records serially; `delivery-review` independently assesses each committed candidate against the existing requirements and writes bounded findings for fixes in the same records. `host-prep` has completed read-only execution plans for the four records still owned by Techne: agent-host; its [local handoff report](/Users/krisbrown/.local/state/ki/agents/tools-burndown/host-prep.report.md) is ready for that owner and the master. The initial inventory and plan agents have finished. A detached run monitor and next-completion waiter are maintained under the run's `coordination/` area.
 - Current count remains 10. Five records are assigned for delivery: [KI-OBS-APP-041](/Users/krisbrown/workspaces/kit/knowledgeislands/apps-observatory/docs/roadmap/KI-OBS-APP-041-adopt-territory-selection.md), [RIG-CORE-041](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-041-unwanted-software-removal.md), [RIG-CORE-043](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-043-self-updating-applications.md), [RIG-CORE-044](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-044-single-sudo-prompt.md) and [RIG-CORE-045](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-045-default-applications.md). Four host-owned records have a preparation lane; protected Dock/profile work remains with its active thread. No record has closed and no new record has been captured.
 - ki-delegation read at c15053c4.
 - No mark has yet been struck for the burndown run; use the ki-delegation first-recap rule unless Kris strikes one earlier.
@@ -43,6 +43,7 @@ Bottom out every open roadmap record in the registry-resolved `mcp-*`, `tools-*`
 
 ## Open questions
 
+- `PROTECTED`: awaiting Kris's answer on releasing the four host-owned records and Dock engine work for local delivery in this run. The original ownership protection stays in force until an explicit answer; elapsed time is not approval. Current delivery and independent review continue meanwhile.
 - `HOST-WRITES`: retain and finish [KI-TOOL-CLI-115](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-ki/docs/roadmap/KI-TOOL-CLI-115-enforce-roadmap-writing-checkout.md) through Techne: agent-host. The marker exists, but the CLI has no write guard; agree the designation contract with its owner before planning.
 - `HOST-GATES`: retain and finish [KI-TOOL-CLI-116](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-ki/docs/roadmap/KI-TOOL-CLI-116-launcher-held-wait-gates.md) through Techne: agent-host. Launcher-held dependency gates remain absent; keep manual sequencing until verified.
 - `RIG-DOCK`: retain and finish [RIG-CORE-042](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-042-profile-filtered-dock-items.md). Route profile/Dock ownership through Kris; keep the generic filtering engine separate from personal layout changes.
