@@ -1,6 +1,6 @@
 ---
 note_type: pillars/index
-updated: 2026-10-11T01:44:00Z
+updated: 2026-10-11T14:00:00Z
 author: AI-assisted
 ---
 
@@ -33,6 +33,10 @@ Architecture defines the engineering estate, AI execution model, and knowledge a
 ## Governed Work Controller
 
 [[Governed Work Controller]] defines the personal controller: the enduring service through which a person coordinates governed work. It accepts intent, binds the applicable working context and authority, chooses a bounded way to perform the work, supervises its lifecycle and integrates its outcome. It covers request paths, workload forms, identity and placement, progressive mechanisation and the controller's relationship to the Techne Fabric.
+
+## Hosts, Roles and Layers
+
+[[Hosts, Roles and Layers]] is the plain-language explainer of how every machine is built: a base from Techne, a role applied by Rig, a workspace through `ki`, and a personal layer from chezmoi or Cheztoi, with packaging as a separate supply concern. It names the roles - workstation, remote agentic rig and appliance - with the real machines `terra`, `sol` and `vega` as examples, and sets out the machine-naming convention, the version policy per role, the packaging strategy and the Omarchy position. It is the entry point; the boundary audit it links to holds the detail.
 
 ## Knowledge Architecture
 

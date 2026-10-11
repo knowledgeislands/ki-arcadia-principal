@@ -1,6 +1,6 @@
 ---
 note_type: streams/design
-updated: 2026-10-11T03:40:00Z
+updated: 2026-10-11T14:00:00Z
 author: Written with Claude
 ---
 
@@ -184,6 +184,8 @@ Plain words only. No record is changed by this audit.
 ---
 
 ## Decisions for Kris
+
+**Outcome:** Kris accepted all ten decisions as recommended on 2026-10-11. [[Hosts, Roles and Layers]] holds the plain-language summary.
 
 1. **Adopt the four layers plus workspace.** Base (Techne), role (Rig), workspace (Techne through `ki`), personal (chezmoi or Cheztoi), with packaging as a separate supply concern. _Recommended: yes._
 2. **Name the role "remote agentic rig" and narrow the recipe.** Options: (a) keep the recipe called `agent-host` and only describe it as "the AWS base for a remote agentic rig"; (b) rename it now, in TECHNE-TOOLS-OPS-017's single rebuild. _Recommended: (a)._ Renaming touches the tags, parameter prefix, GDR-KI-ARCADIA-004 scope and the controller tooling for little gain. Revisit when a second recipe (appliance or owned host) exists.

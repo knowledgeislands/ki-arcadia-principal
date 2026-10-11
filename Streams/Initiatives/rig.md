@@ -5,7 +5,7 @@ title: Rig
 direction: Keep the workstation every agent and person runs on accurate, tidy and observable.
 lifecycle: active
 lead: Kris Brown
-updated: 2026-10-11T01:50:00Z
+updated: 2026-10-11T14:00:00Z
 author: Written with Claude
 ---
 
@@ -14,6 +14,8 @@ author: Written with Claude
 ## Direction
 
 The workstation every agent and person runs on: chezmoi-managed configuration, local services, secrets hygiene and agent state. Agent hosting off the workstation belongs to [[Initiatives/techne|Techne]], and the shared toolchain to [[platform-foundations|Platform foundations]].
+
+[[Hosts, Roles and Layers]] explains where Rig sits: it applies a host's role once Techne has made the host ready.
 
 ---
 

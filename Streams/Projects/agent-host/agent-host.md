@@ -7,7 +7,7 @@ initiative: techne
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-11T12:00:01Z
+updated: 2026-10-11T14:00:00Z
 author: Written with Claude
 ---
 
@@ -18,6 +18,8 @@ author: Written with Claude
 Move agent work into the Techne footprint on an agent host, inside the standing exemption from the [[Techne Programme Hold]]. Agent hosts are harness-defined recipes that a person binds into named instances, and the prototype is reviewed before the exemption is kept, widened or withdrawn.
 
 This Project sits in [[Initiatives/techne|Techne]]. It and [[baseline-rollout]] do not gate each other.
+
+[[Hosts, Roles and Layers]] explains how a host is built in layers and which role `vega` plays.
 
 ---
 

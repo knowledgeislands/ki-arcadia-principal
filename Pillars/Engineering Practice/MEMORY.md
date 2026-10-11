@@ -1,6 +1,6 @@
 ---
 note_type: pillars/note
-updated: 2026-10-07T07:05:00Z
+updated: 2026-10-11T14:00:00Z
 author: AI-assisted
 ---
 
@@ -21,3 +21,5 @@ Adopted into Arcadia from [the retained Techné source](https://github.com/knowl
 The [[Techne Programme Hold]] restricts remote agent running and remote-environment management. Local implementation, review and integration continue under the owning repositories' standards; knowledge adoption alone grants no remote-operation authority. Its one exemption covers setting up and operating the single agent host `ki-techne-agent-host`; it stands until Kris changes or withdraws it, with a scheduled review on 2026-11-06.
 
 Agent hosts are modelled as **recipes** (harness-defined kinds of agent host, the prototype being `agent-host`), **bindings** (a person's named, configured instance of a recipe), **providers** (the infrastructure a binding's footprint lives on, AWS first) and **footprints** (what a binding leaves on its provider and host). Recipes and provider stacks live in `ki-techne-harness`; the grammar, binding loader and provider adapters in `tools-techne`; Kris's bindings in chezmoi. [[ADR-KI-ARCADIA-006-techne-implementation-ownership|ADR-KI-ARCADIA-006]] owns the split.
+
+Every host is built in layers - base (Techne), role (Rig), workspace (Techne through `ki`) and personal (chezmoi or Cheztoi) - and carries one or more roles: workstation, remote agentic rig or appliance. [[Hosts, Roles and Layers]] explains the model, machine names, version policy and packaging in plain language.
