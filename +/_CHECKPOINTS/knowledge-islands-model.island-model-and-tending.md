@@ -4,7 +4,7 @@ thread: knowledge-islands-model.island-model-and-tending
 label: 'KI Model: island-model-and-tending'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-11T02:53:00Z
+updated_at: 2026-10-11T03:05:00Z
 ---
 
 # knowledge-islands-model.island-model-and-tending
@@ -16,7 +16,7 @@ Arcadia's current island-model and tending records each delivered, handed to an 
 ## Current state
 
 - Mark: 2026-10-11T01:37:00Z, decisions log at Decision 17
-- Active since re-bootstrap at 22:30 BST on 2026-10-09; `ki-delegation` read at cfa9c458. Run `island-model-and-tending` (decisions log `~/.local/state/ki/agents/island-model-and-tending/decisions.md`, Decisions 1-22; reports beside it) has no agents running.
+- Active since re-bootstrap at 22:30 BST on 2026-10-09; `ki-delegation` read at cfa9c458. Run `island-model-and-tending` (decisions log `~/.local/state/ki/agents/island-model-and-tending/decisions.md`, Decisions 1-23; reports beside it) has no agents running.
 - Delivered 2026-10-09 to 2026-10-10: GitHub Apps note and KI-ARCADIA-GOV-030 pruned; first `ki-repo` REVIEW; repository tidy (description, CI pin layout, committed `.githooks` gate); Decision Record consolidation; KI-ARCADIA-MOD-007 delivered, accepted and handed two follow-ups to the harness; index-note overviews and the four Realisation notes written.
 - Delivered 2026-10-11 (Decisions 18-22):
   - `agora-tidy`: retired Agora wording replaced by territory selection across 13 repositories, including GDR-KI-HARNESS-006 rewritten in place as "Territory-derived working sets".
@@ -35,6 +35,7 @@ Arcadia's current island-model and tending records each delivered, handed to an 
 - Keep `bunx` in lint-staged and add no check script; `ki repo audit` is the verification gate (Decisions 14-15).
 - References to old roadmap records and Decision Records are repaired by purpose, never by bare removal (Decision 19).
 - Acquired ChatGPT items are trimmed once dealt with, so what remains in the acquire stays visible (Decision 22).
+- The established Knowledge Islands philosophy, which the website was built from, is largely sound: additive changes are welcome, and any change that goes against it is flagged to Kris and double-checked before it is made (Decision 23).
 - Project close-out waits until the acquired ChatGPT items are checked against it (master Decision 7); now done, leaving the open items below.
 
 ## Files touched
@@ -50,6 +51,7 @@ Needs Kris, raised 2026-10-11:
 - **STUBS:** nine placeholder or thin notes with recommendations (EMAIL-STUBS, LINEAR-STUB, PILLARS-CONV, SKILLS-IDX, LIVE-ARTS-IDX, AUTHORING-LOCAL, STRUCT-TODO, TECHNE-V01, BRIEF-TEND) in `great-library.report.md`; EMAIL-LINEAR (framework definitions deleted 2026-06-25 with no successor) decided with EMAIL-STUBS.
 - **ACQ-HOMES:** home for two unowned design principles (not lowest common denominator, FOSS-first) and the Knowledge Realms domain check.
 - **REALM-CLOSEOUT:** whether the open Realm and lineage items become records or stay as acquire notes when the Project closes.
+- **PHILO-REVIEW:** a whole-philosophy coherence review to confirm the model still holds together (Decision 23); recommended as this Project's next record, which also answers STREAM-10.
 - **XREPO-CITES:** reword Release Cascade, GitHub Apps and the territory-selection brief around durable Decision Records and guides, since `AGENTS.md` now forbids citing another repository's roadmap records (recommended, one small run).
 - **AGORA-FOLLOW-UPS** from `agora-tidy.report.md`: apps-observatory still implements Agoras (engineering record needed); stale chezmoi `_ki` and `_mgit` completions; stale ki-website vendored CLI and skill data (needs a network sync); kit-principal ChatGPT instructions source versus the live field; obsolete triage record HNR-HARNESS-004 to cancel; VA-PRINCIPAL-GOV-003 still names its Agora binding; GDR-KI-HARNESS-006 rewritten in place rather than archived.
 - Settled by master 2026-10-11: CI-RELEASE (tools-ki v0.10.1 cut, Arcadia pin bumped) and CHEZMOI-HEADING (routed to Rig: chezmoi).
