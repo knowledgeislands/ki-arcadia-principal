@@ -65,8 +65,7 @@ Rules live with their durable owners: the roadmap model in GDR-KI-ARCADIA-005 an
 
 ## Open questions
 
-Needs Kris (outstanding at the mark; carried forward until resolved):
-
+- From [Platform Foundations: tools-burndown](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/platform-foundations.estate-factorisation.md), 2026-10-11: three of ten scoped records are Awaiting review. Rig self-updating applications is independently acceptance-ready; Observatory required full governance evidence and removal retained-uv correction are assigned within existing records. Sudo and handlers continue. No closure or new record, protected ownership release still pending. Decisions 49/50 naming freeze received; Decision 51 alias/store request parked for reconciliation with burndown and protected tools-ki ownership. Needs Kris (outstanding at the mark; carried forward until resolved):
 - **PROTECTED:** from Fnd: estate-factorisation - release the four Techne: agent-host tooling records and the Dock engine work to its local run, or keep them with their current threads.
 - **VA-PRIMARY:** the Valle Armonia thread rebases and pushes its three local commits in vallearmonia-principal (paste prompt given 2026-10-11).
 - **KIT-ACQUIRE:** two unpushed local commits in kit-acquire (Kris's central Granola inbox work, 2026-10-10) carry its first `.ki.toml`; push, or leave for the knowledge-acquisition thread.
