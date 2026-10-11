@@ -15,6 +15,8 @@ Work the open DOTFILES-UE records in the chezmoi source (`~/.local/share/chezmoi
 
 ## Current state
 
+Mark: 2026-10-11T02:29Z, decisions log at Decision 46
+
 - **1Password reorganisation applied.** The vault restructure, confident moves, renames and home-page URL fixes are done. Nine wrong-category items were recreated as API Credential, the chezmoi references repointed with byte-identical renders, and all ten originals archived (one was a duplicate). Remaining review tags: about 176 `^triage`, 75 `^duplicate`, 41 `^review` and 8 `^fix_url`, which the repeatable triage in [DOTFILES-UE-078](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-078-repeatable-1password-triage.md) will work through. Both records sit in the [secrets-hygiene](../../Streams/Projects/secrets-hygiene.md) Project.
 - **Accepted and pruned:** DOTFILES-UE-062 (scoped live-apply measurement: no failures, port 3100 briefly down twice), DOTFILES-UE-073 (cheztoi host profile) and DOTFILES-UE-081 (claude-swap auto-switch service). All pushed; the source audit passes with no failures.
 - **Since 2026-10-10:** `mcp-housekeeping-codex` is dropped from the source (CODEX approved); ADR-DOTFILES-007 records the Claude auto-switch exception; new Finder windows open in the home folder; tools-rig carries [RIG-CORE-044](https://github.com/knowledgeislands/tools-rig/blob/main/docs/roadmap/RIG-CORE-044-single-sudo-prompt.md) for a single sudo prompt per apply; the Observatory service drift is reapplied and `rig doctor` reports no findings. All pushed.
@@ -22,7 +24,7 @@ Work the open DOTFILES-UE records in the chezmoi source (`~/.local/share/chezmoi
 - **claude-swap** runs as the launchd service `uk.me.kris.rig.claude-swap-auto` with the consume-first strategy. Check it with `cswap list` or `cswap status --token-status`; after re-adding expired credentials with `cswap add`, restart it with `launchctl kickstart -k gui/$(id -u)/uk.me.kris.rig.claude-swap-auto`. Log: `~/Library/Logs/uk.me.kris.rig.claude-swap-auto.log`.
 - **Open records:** [DOTFILES-UE-071](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-071-audit-macos-privacy-permissions.md), [DOTFILES-UE-027](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-027-honest-rationales-per-tool.md) and [DOTFILES-UE-065](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-065-diagnose-same-boot-mcporter-stall.md) are the remaining gated records Kris approved, in that order; [DOTFILES-UE-035](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-035-install-whatsapp-spool-refresh.md) ([knowledge-acquisition](../../Streams/Projects/knowledge-acquisition.md)); [DOTFILES-UE-074](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-074-host-detached-delegation.md) ([agent-host](../../Streams/Projects/agent-host/agent-host.md)); [DOTFILES-UE-076](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-076-always-run-latest-source.md) (mac-studio-bootstrap thread); [DOTFILES-UE-072](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-072-machine-neutral-two-checkout-rule.md) (held); DOTFILES-UE-077, DOTFILES-UE-078 and DOTFILES-UE-079 (triage).
 
-## Decisions in force
+## Decisions made
 
 The machine-local decisions log (`~/.local/state/ki/agents/chezmoi/decisions.md`) is consolidated as follows.
 
