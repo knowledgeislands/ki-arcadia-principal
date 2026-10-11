@@ -4,55 +4,57 @@ thread: rig.mac-studio-bootstrap
 label: 'Rig: mac-studio-bootstrap'
 state: active
 created_at: 2026-10-08T08:45:00Z
-updated_at: 2026-10-11T02:52:00Z
+updated_at: 2026-10-11T03:20:00Z
 ---
 
 # rig.mac-studio-bootstrap
 
 ## Objective
 
-Bring Kris's Mac Studio, unused for over a month, back to full estate capability so any thread can resume there, and make it a reliably reachable remote agent host ([mac-studio-bootstrap](../../Streams/Projects/mac-studio-bootstrap/mac-studio-bootstrap.md), Initiative [Rig](../../Streams/Initiatives/rig.md)). The thread is driven remotely over the tailnet from the laptop. The bootstrap is done and every follow-up has been handed on; the only thing left is Kris's restart test.
+Bring Kris's Mac Studio back to full estate capability as a reliably reachable remote agent host, under the Project [mac-studio-bootstrap](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/mac-studio-bootstrap/mac-studio-bootstrap.md) in the [Rig Initiative](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Initiatives/rig.md). The bootstrap is done and every follow-up has been handed on; only the restart test remains.
 
 ## Current state
 
 Mark: 2026-10-10T15:37Z, decisions log at Decision 28
 
-ki-delegation read at cfa9c458
+Decisions log: `~/.local/state/ki/agents/mac-studio-bootstrap/decisions.md` (machine-local, on the laptop, not in Git); every "Decision N" in this checkpoint refers to that file.
 
-**Remaining: the restart test.** Kris restarts `sol` in person, Monday evening 2026-10-12 at the earliest, and checks that Tailscale relaunches and reconnects after the FileVault unlock. Kris asked not to be reminded (Decision 35). The Project stays open until the restart is proven.
+ki-delegation read at c15053c4
 
-**Ownership.** The Mac Studio is Kris's personal hardware, built and managed by Kris's own Rig and chezmoi (`studio` profile on `core`), not by Techne, and separate from the Techne agent host. Remote agent use is exempt from the Techne Programme Hold under GDR-KI-ARCADIA-004 and KI-ARCADIA-GOV-033 (done, pruned). Each step on the machine still runs only once Kris approves it.
+**Remaining: the restart test** (Needs Kris item `RESTART`). The Project stays open until it passes.
 
-**Machine.** `sol` on the tailnet (`100.90.130.74`), user `krisbrown`, key-based SSH (plain `ssh sol` fails because `known_hosts` holds the IP). macOS 26.5.2, FileVault on, kept awake by Amphetamine, restarts after power loss. Agent forwarding from the laptop is configured for this host only, so GitHub works from SSH sessions on `sol` (`ssh -A`). chezmoi is applied on `sol` apart from four 1Password-backed targets (`~/.claude.json`, the Claude Desktop config, `~/.mcporter/mcporter.json` and `~/.codex/config.toml`), which render only at its screen.
+**Machine.** `sol` (studio, macOS) at `100.90.130.74` on the tailnet, user `krisbrown`, key-based SSH from the laptop with agent forwarding for this host only; use `ssh krisbrown@100.90.130.74`, as plain `ssh sol` fails on `known_hosts`. FileVault is on, so after a restart nothing, Tailscale included, comes up until Kris unlocks it at the screen. Four 1Password-backed chezmoi targets render only at that screen. Host names and types are in the Project's [hosts note](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/mac-studio-bootstrap/design/hosts.md).
 
-**Hosts.** The Project's [hosts note](../../Streams/Projects/mac-studio-bootstrap/design/hosts.md) names `vega` (agent-host, Ubuntu), `sol` (studio, macOS) and `terra` (laptop, macOS); the Rig profiles and the Cheztoi host profile take their names from it. Omarchy for `vega` belongs to the agent-host Project.
+**Ownership.** The Mac Studio is Kris's personal hardware, managed by Kris's Rig and chezmoi (`studio` profile on `core`), not by Techne. Remote agent use is exempt from the Techne Programme Hold under [GDR-KI-ARCADIA-004](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Admin/Governance/Decisions/GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold.md) and [KI-ARCADIA-GOV-033](https://github.com/knowledgeislands/ki-arcadia-principal/blob/75161068b46f9c8529d023c51bbbfb66dbf73b11/Streams/Roadmap/KI-ARCADIA-GOV-033-exempt-the-mac-studio-as-a-remote-agent-host.md) (done, pruned). Each step on the machine still needs Kris's approval.
 
-**sol `rig apply`.** It now fails only on Warp: Homebrew's Warp cask has a checksum mismatch upstream, while the installed app is intact and updates itself. The Rig Initiative's self-updating-apps item, [RIG-CORE-043](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-043-self-updating-applications.md), covers it.
+**Follow-ups handed on.**
 
-**Handed to [rig.chezmoi](rig.chezmoi.md).** Kris handed that thread the `op_cache` race, the copy-key script that runs on every apply, [DOTFILES-UE-082](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-082-tolerate-missing-template-tools.md), [DOTFILES-UE-084](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-084-render-zshenv-on-vega.md) and the 1Password service account.
-
-**Handed to the [Rig Initiative](../../Streams/Initiatives/rig.md).** [RIG-CORE-041](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-041-unwanted-software-removal.md) (opt-in removal), [RIG-CORE-042](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-042-profile-filtered-dock-items.md) (profile-filtered Dock items), RIG-CORE-043 and [DOTFILES-UE-079](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-079-undeclared-software-decisions.md) (undeclared software decisions) now name the Initiative rather than this Project, with the Later items: NordVPN, six untrusted Homebrew taps, a Command Line Tools update and a `tailscaled` swap. [DOTFILES-UE-076](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-076-always-run-latest-source.md) (always run from latest) stays in chezmoi's roadmap.
+- [Rig Initiative](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Initiatives/rig.md): opt-in software removal ([RIG-CORE-041](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-041-unwanted-software-removal.md)), profile-filtered Dock items ([RIG-CORE-042](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-042-profile-filtered-dock-items.md)), self-updating apps including Warp ([RIG-CORE-043](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-043-self-updating-applications.md)), undeclared software decisions ([DOTFILES-UE-079](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-079-undeclared-software-decisions.md)), and the Later items: NordVPN, six untrusted Homebrew taps, a Command Line Tools update and a `tailscaled` swap.
+- [rig.chezmoi](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/rig.chezmoi.md) thread: the `op_cache` race, the copy-key script that runs on every apply, [DOTFILES-UE-082](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-082-tolerate-missing-template-tools.md), [DOTFILES-UE-084](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-084-render-zshenv-on-vega.md) and the 1Password service account.
 
 ## Decisions made
 
-- The master thread `state-of-play` owns cross-project priorities and releases; this thread works only on the Mac Studio.
-- The Project sits in Rig because the Mac Studio is Kris's workstation.
-- Rig model: one list of Kris's software, `core` profile with `laptop` and `studio` inheriting it; Rig never uninstalls but should warn and offer opt-in removal (Decisions 7, 8, 13, 14).
+Decision numbers refer to the machine-local decisions log named in Current state.
+
+- This thread works only on the Mac Studio; the master thread `state-of-play` owns cross-project priorities and releases.
+- Rig keeps one list of Kris's software on a `core` profile that `laptop` and `studio` inherit; it never uninstalls, but warns and offers opt-in removal (Decisions 7, 8, 13, 14).
 - Tailscale stays the GUI app as a login item; any `tailscaled` swap is deferred (Decisions 5, 14).
-- GitHub on sol uses Kris's own key, and remote SSH sessions use agent forwarding for sol only (Decisions 15, 17, 29, 34).
-- DaisyDisk from the App Store on both Macs; OneDrive on sol deleted by Kris; HNR harness kept on sol (Decisions 33, 34).
-- XDG base directories in every zsh through `.zshenv` (Decision 34).
-- Follow-ups handed on, restart test Monday evening at the earliest with no reminder (Decision 35).
-- Host names and machine types recorded in the Project's hosts note; the mark uses the one-line form (Decision 38).
+- GitHub on `sol` uses Kris's own key, with SSH agent forwarding for `sol` only (Decisions 15, 17, 29, 34).
+- XDG base directories reach every zsh through `.zshenv` (Decision 34).
+- Kris restarts `sol` in person, Monday evening 2026-10-12 at the earliest, and is not to be reminded (Decision 35).
+- Host names and machine types live in the Project's hosts note (Decision 38).
 
 ## Files touched
 
-This checkpoint, the [Project note](../../Streams/Projects/mac-studio-bootstrap/mac-studio-bootstrap.md) (now a folder note) and its [hosts note](../../Streams/Projects/mac-studio-bootstrap/design/hosts.md), the [Rig Initiative](../../Streams/Initiatives/rig.md) Notes and one Open questions line in [rig.chezmoi](rig.chezmoi.md). Agent prompts, statuses, reports and `decisions.md` are in `~/.local/state/ki/agents/mac-studio-bootstrap/`.
+This checkpoint only. The Project note and its hosts note are current.
 
 ## Open questions
 
-- **Kris to do, Monday evening 2026-10-12 at the earliest:** restart `sol`, unlock FileVault at the screen, and confirm Tailscale relaunches and reconnects (`ssh krisbrown@100.90.130.74` from the laptop works).
+- **Needs Kris** (all optional, at your convenience):
+  - `RESTART` - Monday evening 2026-10-12 at the earliest: restart `sol`, unlock FileVault at the screen, and confirm Tailscale relaunches and reconnects (`ssh krisbrown@100.90.130.74` from the laptop works). This closes the Project.
+  - `DROPBOX` - Dropbox, PTGui Pro, PhotoSweeper, ScanSnap Home and Synology Drive Client are no longer needed on `sol`; remove them by hand if you wish, or leave them for opt-in removal under RIG-CORE-041.
+  - `WARP` - `rig apply` on `sol` fails only on Warp, because Homebrew's Warp cask has an upstream checksum mismatch; the installed app is intact and updates itself. Nothing to do unless you want the failure cleared before RIG-CORE-043 lands.
 
 ## Next step
 
-Wait for Kris's restart result. Once Tailscale is proven to reconnect after the unlock, set the Project's `lifecycle` to done and remove this checkpoint.
+Wait for Kris's `RESTART` result. Once Tailscale is proven to reconnect after the FileVault unlock, set the Project's `lifecycle` to done and remove this checkpoint.
