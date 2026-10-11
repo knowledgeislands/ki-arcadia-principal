@@ -4,7 +4,7 @@ thread: _state-of-play
 label: 'Master: state-of-play'
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-11T09:02:14Z
+updated_at: 2026-10-11T09:04:26Z
 ---
 
 # _state-of-play
@@ -67,7 +67,7 @@ Rules live with their durable owners: the roadmap model in GDR-KI-ARCADIA-005 an
 
 ## Open questions
 
-From [Platform Foundations: tools-burndown](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/platform-foundations.estate-factorisation.md), 2026-10-11: Kris has approved bounded existing-record delivery and explicitly requested concurrent agents, with the coordinator responsive to steering (tools-burndown Decisions 3 and 4). Three detached local lanes now run: Observatory implementation; four handed-on generic Rig engine records (removal, self-updates, single sudo prompt, default handlers); and read-only preparation of the four tooling records still owned by Techne: agent-host. Dock/profile work stays protected; personal chezmoi/machine changes remain with their threads. Please route the protected records through their owners so delivery can progress without collision. Ten open records remain; none closed or newly captured. MCP repositories have none. No remote agent/environment operation, release or self-acceptance is authorised. The existing Rig checkpoint formatting finding and old master pointers remain with their owners.
+From [Platform Foundations: tools-burndown](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/platform-foundations.estate-factorisation.md), 2026-10-11: Kris has approved bounded existing-record delivery and explicitly requested concurrent agents, with the coordinator responsive to steering (tools-burndown Decisions 3 and 4). Two delivery lanes now run: Observatory implementation and four handed-on generic Rig engine records (removal, self-updates, single sudo prompt, default handlers). Read-only preparation of the four tooling records still owned by Techne: agent-host has completed. Dock/profile work stays protected; personal chezmoi/machine changes remain with their threads. Please route the protected records through their owners so delivery can progress without collision. Ten open records remain; none closed or newly captured. MCP repositories have none. No remote agent/environment operation, release or self-acceptance is authorised. The existing Rig checkpoint formatting finding and old master pointers remain with their owners. The read-only host preparation is now complete: [local execution handoff](/Users/krisbrown/.local/state/ki/agents/tools-burndown/host-prep.report.md) covers all four protected records and their exact change/test boundaries. Recommend the owning thread deliver launcher-held waits first, then writing-checkout protection, and guarded status/commands plus patching fields as separate units sharing one parser. Its records remain untouched; no live host action or ownership transfer is implied.
 
 Needs Kris:
 

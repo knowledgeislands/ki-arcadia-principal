@@ -4,7 +4,7 @@ thread: platform-foundations.estate-factorisation
 label: 'Platform Foundations: tools-burndown'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-11T08:59:58Z
+updated_at: 2026-10-11T09:04:26Z
 ---
 
 # platform-foundations.estate-factorisation
@@ -17,7 +17,7 @@ Bottom out every open roadmap record in the registry-resolved `mcp-*`, `tools-*`
 
 - Kris reopened this coordinating thread as `Platform Foundations: tools-burndown`, reusing this checkpoint and its Project identity. Background run: `tools-burndown`; decisions log: `/Users/krisbrown/.local/state/ki/agents/tools-burndown/decisions.md`.
 - Verified starting/current count: 10 open records - tools-ki 2, tools-rig 5, tools-techne 2, apps-observatory 1. The eight MCP repositories, tools-git-almanac and tools-mgit have none. All fourteen registry-resolved scoped repositories were reviewed; all ten records started in triage. Nothing is eligible for immediate acceptance, and no cancellation, merger or idea demotion is recommended. No record has closed or been captured.
-- Three detached background agents are running under `tools-burndown`: `obs-deliver` implements the approved Observatory plan; `rig-deliver` plans and delivers four handed-on generic engine records serially; `host-prep` prepares local execution handoffs for the four records still owned by Techne: agent-host, without repository writes. The initial inventory and plan agents have finished. A detached run monitor and next-completion waiter are armed under the run's `coordination/` area.
+- Two detached background agents are running under `tools-burndown`: `obs-deliver` implements the approved Observatory plan; `rig-deliver` plans and delivers four handed-on generic engine records serially. `host-prep` has completed read-only execution plans for the four records still owned by Techne: agent-host; its [local handoff report](/Users/krisbrown/.local/state/ki/agents/tools-burndown/host-prep.report.md) is ready for that owner and the master. The initial inventory and plan agents have finished. A detached run monitor and next-completion waiter are maintained under the run's `coordination/` area.
 - Current count remains 10. Five records are assigned for delivery: [KI-OBS-APP-041](/Users/krisbrown/workspaces/kit/knowledgeislands/apps-observatory/docs/roadmap/KI-OBS-APP-041-adopt-territory-selection.md), [RIG-CORE-041](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-041-unwanted-software-removal.md), [RIG-CORE-043](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-043-self-updating-applications.md), [RIG-CORE-044](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-044-single-sudo-prompt.md) and [RIG-CORE-045](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-045-default-applications.md). Four host-owned records have a preparation lane; protected Dock/profile work remains with its active thread. No record has closed and no new record has been captured.
 - ki-delegation read at c15053c4.
 - No mark has yet been struck for the burndown run; use the ki-delegation first-recap rule unless Kris strikes one earlier.
