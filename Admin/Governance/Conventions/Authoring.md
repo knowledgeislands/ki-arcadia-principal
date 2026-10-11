@@ -13,7 +13,7 @@ author: Written with Claude
 
 Arcadia's local decisions about how it authors content within the Knowledge Islands authoring framework. The framework itself - the content layers, the activity note format, the prompt editing discipline - lives in [[Authoring Guidelines]] and applies to every island. This note records only the choices that are specific to Arcadia: optional sections we adopt by default, conventions we add on top of the framework, and any local divergence from the default authoring patterns.
 
-This note is a stub at creation. As Arcadia accumulates working customs that go beyond the framework, they are recorded here. Until then, the absence of content is itself the answer: Arcadia uses the framework as written.
+As Arcadia accumulates working customs that go beyond the framework, they are recorded here. An empty Local Decisions section is itself the answer: Arcadia uses the framework as written.
 
 ---
 

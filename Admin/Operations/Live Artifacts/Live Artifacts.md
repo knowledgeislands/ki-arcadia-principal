@@ -16,4 +16,4 @@ Dynamic operational documents that reflect the current state of the island - das
 
 ## Artifacts
 
-_To be populated as live artifacts are formalised._
+None adopted yet.

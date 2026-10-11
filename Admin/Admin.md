@@ -24,4 +24,4 @@ author: Written with Claude
 
 ## Operations
 
-[[Admin/Operations/Operations|Operations]] is the arm that describes how Arcadia runs: its Activity notes and their timing model, its governance processes, its live artifacts, its installed skills and its register of operational mistakes and lessons. Its contents are operational and mutable, specific to Arcadia's own integrations and conventions. Where Governance says what must hold, Operations shows how the island keeps it holding.
+[[Admin/Operations/Operations|Operations]] is the arm that describes how Arcadia runs: its Activity notes and their timing model, its governance processes, its live artifacts and its register of operational mistakes and lessons. Its contents are operational and mutable, specific to Arcadia's own integrations and conventions. Where Governance says what must hold, Operations shows how the island keeps it holding.

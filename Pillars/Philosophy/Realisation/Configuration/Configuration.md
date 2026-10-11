@@ -31,7 +31,7 @@ The Schedule note defines the day-type taxonomy that automations read before act
 
 ## Activity Configuration
 
-Some activity groups need configuration of their own, such as the routing rules an email activity applies. Each such group keeps a configuration note beside its Activity Definition, under the naming convention `[Group] [Name] Activity.md`. In Arcadia, [[Email Routing Config Activity]] holds that place for the Email group; because the group is vetoed, the note records only that no configuration applies.
+Some activity groups need configuration of their own, such as the routing rules an email activity applies. Each such group keeps a configuration note beside its Activity Definition, under the naming convention `[Group] [Name] Activity.md`. In Arcadia the Email group is vetoed, so [[Admin/Operations/Activities/Email Activity|Email Activity]] records in one place that no configuration applies, rather than keeping a separate configuration note.
 
 ---
 

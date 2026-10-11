@@ -32,16 +32,10 @@ Each activity is a flat `.md` file here. Naming follows the `[Group] [Name] Acti
 | [[Tending Activity\|Tending Activity]]                           | Tending   | Core maintenance loop         |
 | [[Briefings Activity\|Briefings Activity]]                       | Briefings | Morning briefing driver       |
 | [[Email Activity\|Email Activity]]                               | Email     | Vetoed - adoption record only |
-| [[Email Routing Config Activity\|Email Routing Config Activity]] | Email     | Routing configuration         |
-| [[Email Routing Queue Activity\|Email Routing Queue Activity]]   | Email     | Routing queue snapshot        |
-| [[Email Status Activity\|Email Status Activity]]                 | Email     | Status tracking note          |
 | [[Linear Activity\|Linear Activity]]                             | Linear    | Vetoed - adoption record only |
 
 - [Schedule](Schedule.md)
 - [Briefings](<Briefings Activity.md>)
 - [Tending](<Tending Activity.md>)
 - [Email](<Email Activity.md>)
-- [Email Status](<Email Status Activity.md>)
-- [Email Routing Config](<Email Routing Config Activity.md>)
 - [Linear](<Linear Activity.md>)
-- [Email Routing Queue](<Email Routing Queue Activity.md>)

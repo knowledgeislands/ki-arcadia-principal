@@ -12,7 +12,7 @@ author: Written with Claude
 
 ## Overview
 
-Arcadia's island-specific conventions - the vocabulary, authoring decisions and routing rules that supplement the portable Knowledge Islands framework in [[Model/Conventions/Conventions|Conventions]]. Four notes apply across every zone; three sub-folders hold conventions specific to a single zone. Activity prompts and agents read these notes at runtime rather than hardcoding the values they record, so a change here takes effect on the next run.
+Arcadia's island-specific conventions - the vocabulary, authoring decisions and routing rules that supplement the portable Knowledge Islands framework in [[Model/Conventions/Conventions|Conventions]]. Four notes apply across every zone; two sub-folders hold conventions specific to a single zone. Conventions for the `Pillars/` zone - how notes are structured, named and organised within each pillar - have not been formalised beyond the portable model; they gain a sub-folder here when they are. Activity prompts and agents read these notes at runtime rather than hardcoding the values they record, so a change here takes effect on the next run.
 
 ## Admin Conventions
 
@@ -33,10 +33,6 @@ Arcadia's island-specific conventions - the vocabulary, authoring decisions and 
 ## Glossary
 
 [[Glossary]] is the decoder ring for Knowledge Islands terminology - islands, archipelagos, territories, Capitals, councils, custodians, Known Lands and the other structural terms used across Arcadia and the wider territory. Footnotes carry the distinctions that matter, such as the difference between an archipelago and a territory. It is the first place to resolve an unfamiliar term.
-
-## Pillars Conventions
-
-[[Pillars Conventions/Pillars Conventions|Pillars Conventions]] is reserved for conventions specific to the `Pillars/` zone - how notes are structured, named and organised within each pillar. None have yet been formalised beyond the portable model, so the note is currently a placeholder.
 
 ## Streams Conventions
 

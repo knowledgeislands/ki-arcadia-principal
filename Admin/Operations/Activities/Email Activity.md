@@ -16,22 +16,8 @@ Arcadia has vetoed the Email activity group. Email inbox management is not a fun
 
 The activity definitions for the Email group - Route Drift, Route Triage, Route Review, Re-route Triaged, Recap, and Email Test - were retired from the framework model on 25 June 2026, and no current note defines them. Their last version is preserved in [Activities/Email](https://github.com/knowledgeislands/ki-arcadia-principal/blob/bbaae9811c906ba3a94839905896784255e919fa/Pillars/Knowledge%20Islands/Model/Activities/Email/Email.md).
 
-The sections below point to the group's sibling Activity notes and make the veto explicit rather than absent.
-
 ---
 
-## [[Email Routing Config Activity|Email Routing Config]]
+## Companion Notes
 
-Not applicable - Email activity group vetoed.
-
----
-
-## [[Email Routing Queue Activity|Email Routing Queue]]
-
-Not applicable - Email activity group vetoed.
-
----
-
-## [[Email Status Activity|Email Status]]
-
-Not applicable - Email activity group vetoed.
+The group's companion notes - Email Routing Config, Email Routing Queue and Email Status - are not applicable while the veto stands. They were once separate veto stubs; this note now records them in one place, and none exists as a separate note.
