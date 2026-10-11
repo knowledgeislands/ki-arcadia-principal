@@ -69,8 +69,8 @@ Needs Kris:
 
 - **CODEX:** retire `mcp-housekeeping-codex`, already superseded by `mcp-housekeeping-chatgpt` (estate-factorisation OAI-1): drop its chezmoi bindings, then archive the GitHub repository (outward-facing; Kris to confirm).
 - **CKPT:** active Projects without a thread or checkpoint (delta-evaluation, roadmap-model) and a checkpoint without a Project (territory-rollout) - tidy.
-- **Trades hold, by 2026-10-14:** re-enable trades or renew the hold. HOLD-1 warns from 2026-10-15.
-- **Delta trial, on or after 2026-10-13:** yes or no, under [delta-evaluation](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/delta-evaluation.md).
+- **Trades hold, follow up 2026-10-14 (remind from 2026-10-12):** re-enable trades or renew the hold. HOLD-1 warns from 2026-10-15 (Decision 41).
+- **Delta trial, follow up 2026-10-14 (remind from 2026-10-12):** yes or no, from the [delta-evaluation](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/delta-evaluation.md) Project note (Decision 41).
 - **Paperclip:** answer the two decision cards.
 - **Specification review:** which repository first? `tools-ki` is suggested.
 - **kit-hnr:** map `[skills.ki-work-roadmap].areas` codes to titles.
