@@ -23,7 +23,7 @@ The name names an institutional role, not an ambition. Like a library rather tha
 
 Every Knowledge Base island has a Library. [[The Home of Knowledge]] places it in the Capital beside the Council Hall, and [[Structure]] defines it as the canonical record - version-controlled, governed and the single source of truth - containing Calendar, Pillars and Resources. [[SDR-KI-ARCADIA-002-the-home-of-knowledge|SDR-KI-ARCADIA-002]] puts stable internal knowledge in `Pillars/` and external reference in `Resources/`, with Calendar, Admin, Streams and the staging areas each in their own home. Streams, the Harbour (`+/`) and outbound staging (`-/`) are not part of the Library: their content is in motion or in transit, not canonical.
 
-The Great Library is the realisation of that convention in Arcadia, with one deliberate narrowing: SDR-KI-ARCADIA-007 identifies it with Arcadia's `Pillars/` zone alone. Arcadia's Resources and Calendar still belong to its Library in the model's sense, but they are not what the name points at. The Pillars/Resources boundary in [[Structure]] keeps the distinction honest - internal knowledge in Pillars, independently existing reference in [[Resources]], linked both ways where relevant.
+The Great Library is the realisation of that convention in Arcadia, with one deliberate narrowing: [[SDR-KI-ARCADIA-007-the-great-library-of-arcadia|SDR-KI-ARCADIA-007]] identifies it with Arcadia's `Pillars/` zone alone. Arcadia's Resources and Calendar still belong to its Library in the model's sense, but they are not what the name points at. The Pillars/Resources boundary in [[Structure]] keeps the distinction honest - internal knowledge in Pillars, independently existing reference in [[Resources]], linked both ways where relevant.
 
 The name also answers the model's own history. [[History of Knowledge Systems]] recalls the great libraries of Alexandria, Baghdad and Nineveh - the first attempts to gather everything known in one place - and the single point of failure they shared. [[Layers of Knowledge]] places libraries at the civilisational layer, where knowledge outlives any single mind.
 
@@ -31,7 +31,7 @@ The name also answers the model's own history. [[History of Knowledge Systems]] 
 
 ## The four pillars
 
-SDR-KI-ARCADIA-007 organises the Library into four pillars, reflecting the registers of any complex system: a governing model, a visible identity and a technical practice, with a retained entry point for the engineering discipline. Each has its own conventions, depth and audience; Arcadia's governance holds them together. [[Pillars]] is the zone index.
+[[SDR-KI-ARCADIA-007-the-great-library-of-arcadia|SDR-KI-ARCADIA-007]] organises the Library into four pillars, reflecting the registers of any complex system: a governing model, a visible identity and a technical practice, with a retained entry point for the engineering discipline. Each has its own conventions, depth and audience; Arcadia's governance holds them together. [[Pillars]] is the zone index.
 
 ### Philosophy
 
@@ -65,7 +65,7 @@ Publication follows the same rule. [[Arcadia]] describes the Knowledge Islands w
 
 Nothing enters the Library except through governance. New or reworked content in `Pillars/` passes through the [[Admin/Operations/Processes/Enactment Process|Enactment Process]], Arcadia's local realisation of the model's [[Model/Processes/Enactment Process/Enactment Process|Enactment Process]]: a roadmap record moves from draft to done, or an explicit owner instruction for a bounded change stands in for one. Knowledge matures from Streams into Pillars, and the Stream is then retired; incoming material is assessed in the Harbour before it is routed inward.
 
-Growth in breadth is deliberately slow. SDR-KI-ARCADIA-007 adds a pillar only when a coherent body of internal knowledge accumulates that is distinct from the existing pillars, warrants the overhead of an index, its own conventions and several notes, and does not fit as a sub-folder of an existing pillar. Domain knowledge tied to a client, project or tool goes to Resources or Streams instead. A new pillar is a deliberate decision, never a default response to a new topic.
+Growth in breadth is deliberately slow. [[SDR-KI-ARCADIA-007-the-great-library-of-arcadia|SDR-KI-ARCADIA-007]] adds a pillar only when a coherent body of internal knowledge accumulates that is distinct from the existing pillars, warrants the overhead of an index, its own conventions and several notes, and does not fit as a sub-folder of an existing pillar. Domain knowledge tied to a client, project or tool goes to Resources or Streams instead. A new pillar is a deliberate decision, never a default response to a new topic.
 
 ---
 
@@ -73,8 +73,8 @@ Growth in breadth is deliberately slow. SDR-KI-ARCADIA-007 adds a pillar only wh
 
 These points are not settled by the island's current notes and decisions.
 
-- **Scope of the name.** [[Structure]] and [[The Home of Knowledge]] say the Library contains Calendar, Pillars and Resources; SDR-KI-ARCADIA-002 groups Pillars and Resources as the Library with Calendar alongside; SDR-KI-ARCADIA-007 identifies the Great Library with Pillars alone. Whether Arcadia's Resources - and its Calendar - are part of the Great Library is undecided, and the three framings could be aligned.
-- **Technē as a pillar.** SDR-KI-ARCADIA-007 counts Technē as one of four pillars, yet it is a signpost with no knowledge of its own and would not meet the decision's own criteria for a new pillar. Whether it stays a pillar, becomes a sub-entry of Engineering Practice or is retired once old links are repointed is open.
+- **Scope of the name.** [[Structure]] and [[The Home of Knowledge]] say the Library contains Calendar, Pillars and Resources; [[SDR-KI-ARCADIA-002-the-home-of-knowledge|SDR-KI-ARCADIA-002]] groups Pillars and Resources as the Library with Calendar alongside; [[SDR-KI-ARCADIA-007-the-great-library-of-arcadia|SDR-KI-ARCADIA-007]] identifies the Great Library with Pillars alone. Whether Arcadia's Resources - and its Calendar - are part of the Great Library is undecided, and the three framings could be aligned.
+- **Technē as a pillar.** [[SDR-KI-ARCADIA-007-the-great-library-of-arcadia|SDR-KI-ARCADIA-007]] counts Technē as one of four pillars, yet it is a signpost with no knowledge of its own and would not meet the decision's own criteria for a new pillar. Whether it stays a pillar, becomes a sub-entry of Engineering Practice or is retired once old links are repointed is open.
 - **The canonical layer.** The decision names `Model/` as the canonical layer that adopters pull from, while Philosophy also holds Introduction and Realisation. Whether those acts are part of what adopters take, or Arcadia-specific narrative around the model, is not stated.
 - **Publication.** The website is meant to acquire material through explicit, source-labelled vendor paths, but which parts of the Library are published, and how, is not yet decided.
 - **Distribution.** The model recalls the single point of failure of the ancient libraries. Version control and recorded adoption with provenance spread copies of the model, but whether the Great Library should state a resilience posture of its own has not been considered.
