@@ -1,10 +1,10 @@
 ---
 type: ki-checkpoint
 thread: platform-foundations.estate-factorisation
-label: 'Platform Foundations: tools-burndown'
+label: 'Fnd: estate-factorisation'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-11T10:01:58Z
+updated_at: 2026-10-11T10:06:56Z
 ---
 
 # platform-foundations.estate-factorisation
