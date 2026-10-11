@@ -1,6 +1,6 @@
 ---
 note_type: streams/index
-updated: 2026-10-11T02:38:00Z
+updated: 2026-10-11T03:52:00Z
 author: Written with Claude
 ---
 
@@ -9,6 +9,10 @@ author: Written with Claude
 ## Overview
 
 This folder holds the supporting notes for the [[mac-studio-bootstrap|Mac Studio bootstrap]] Project. They record working context that the Project note points to but should not carry itself. Like other design papers, they are temporary: once their content is settled in a durable home, they are deleted in one commit.
+
+## Decisions in force
+
+[[decisions-in-force|Decisions in force]] consolidates the decisions that still guide `sol`: who owns it, how agents reach it, why a reboot needs Kris present, how software is declared and swapped, and when the Project closes. It points to the full decisions log, which stays machine-local run state on the laptop rather than in Git.
 
 ## Hosts
 
