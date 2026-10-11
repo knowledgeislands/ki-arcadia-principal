@@ -4,7 +4,7 @@ thread: knowledge-islands-model.island-model-and-tending
 label: 'KI Model: island-model-and-tending'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-11T04:16:00Z
+updated_at: 2026-10-11T08:40:00Z
 ---
 
 # knowledge-islands-model.island-model-and-tending
@@ -23,6 +23,7 @@ Arcadia's current island-model and tending records each delivered, handed to an 
   - Placeholder notes settled; seven citations of other repositories' roadmap records reworded around Decision Records and guides; the philosophy review captured as [KI-ARCADIA-MOD-008](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Roadmap/KI-ARCADIA-MOD-008-whole-philosophy-coherence-review.md), later horizon.
   - Agora follow-ups: apps-observatory record KI-OBS-APP-041 captured; chezmoi `_ki` regenerated and `--agora` dropped from `_mgit`; ki-website CLI and skill data re-synced; kit-principal ChatGPT source reworded.
 - After the mark (Decisions 30-34), also delivered and pushed: Arcadia's Pillars restored as the Great Library across the note, SDR-KI-ARCADIA-007, Realisation, Structure (one additive sentence: an island may name its library after buildings, artefacts or landscape) and KI-ARCADIA-MOD-008; kit-principal `territory_members` sorted and ChatGPT folders renamed to kebab-case territory keys; chezmoi `_mgit` fully regenerated and both completions applied.
+- Master hold (state-of-play Decisions 49-50, 2026-10-11): territory names move to kebab-case (`knowledge-islands` and so on) and OneDrive stores are renamed; until the master's change lands, this thread edits no `.ki.toml` or the chezmoi registry, trust and workspace paths. Afterwards: pull, fix this Project's builds and old-name references from the master's list.
 - Primary checkouts of Arcadia, chezmoi, ki-website, kit-principal and apps-observatory fast-forwarded after the runs.
 
 ## Decisions made
@@ -47,7 +48,7 @@ Arcadia and other repositories are changed only by run agents in their own workt
 Needs Kris after the mark:
 
 - **CHATGPT-RESAVE:** no browser tools were available, so Kris re-saves the live ChatGPT instructions field with the text in `~/.local/state/ki/agents/island-model-and-tending/estate-fixes.report.md` (1,497 characters), reads it back, and the activation is recorded in kit-principal's `ChatGPT Custom Instructions.md`.
-- **ACQUIRE-KEYS:** kit-acquire keeps ChatGPT and Granola captures under shared `captures/<territory>/` folders with the old short keys (`kis`, `hnr` ...); decide whether every tool moves to kebab-case territory keys. Its primary checkout holds another session's unpushed commits.
+- **ACQUIRE-KEYS:** kit-acquire keeps ChatGPT and Granola captures under shared `captures/<territory>/` folders with the old short keys (`kis`, `hnr` ...); likely settled by the master's territory rename (state-of-play Decisions 49-50); confirm when its list arrives. Its primary checkout holds another session's unpushed commits.
 - **STRUCTURE-GLANCE:** one additive sentence in Structure's canonical Model layer (library naming freedom) is worth a glance under Decision 23.
 - **PHILO-REVIEW:** later, once most of the roadmap is cleared; its scope collects the Emerging Concepts, candidate principles, Library wording, Structure's Harbour and Routes and Customs to-dos, and Avatar names per Realm against ADR-KI-ARCADIA-005, and whether Calendar sits inside the Library.
 - Parked 2026-10-09: review tags - do we still need them?
