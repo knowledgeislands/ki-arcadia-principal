@@ -4,7 +4,7 @@ thread: techne.agent-host
 label: 'Techne: agent-host'
 state: active
 created_at: 2026-10-07T09:05:00Z
-updated_at: 2026-10-12T09:29:49Z
+updated_at: 2026-10-12T20:07:00Z
 ---
 
 # techne.agent-host
@@ -24,6 +24,7 @@ Mark: 2026-10-09T21:40Z, decisions log at Decision 34
 ki-delegation read at f2b14dca
 
 - **Repositories.** All touched repositories are level with origin.
+- **Host patching fields.** [KI-TOOL-TECHNE-CLI-008](/Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-008-host-patching-fields.md) is built locally and awaiting review (Decision 42 lifted the vega-first order for local work only); its two `tools-techne` commits are unpushed on this Mac. Live verification waits for the vega rebuild.
 - **Delivered and closed.** OS patching (TECHNE-TOOLS-OPS-022) and the chezmoi workstation bundle (DOTFILES-UE-073) are accepted and pruned. The workstation pilot (TECHNE-TOOLS-OPS-015) is accepted and kept, not pruned. Recipe/binding identity is `agent-host`; the old deployed names still need the owner-led vega rebuild below.
 - **The host.** Earlier restart/clean-status evidence is historical. At 2026-10-12 08:26 UTC, owner readiness evidence reported account `655383751458`, profile `knowledge-islands-techne`, region `eu-west-1`, stack `ki-techne-agent-host` still `CREATE_COMPLETE`, `HostName` and `TailscaleHostname` both `ki-techne-agent-host`, selector `agent-host`, and recorded instance `i-0332d9ea05c2e929d`. Neither tagged live-instance query nor recorded-instance lookup returned an instance. This is a surviving-stack/missing-instance snapshot, not proof of clean recovery or current resource state.
 - **Pins.** `recipes/agent-host/rig.toml` in the harness is the one list of host tool versions; `mise` and `codex` are raised to 2026.10.6 and 0.162.0. The Mac is no longer compared against it; TECHNE-TOOLS-OPS-024 (weekly pin bump) is planned, draft.
