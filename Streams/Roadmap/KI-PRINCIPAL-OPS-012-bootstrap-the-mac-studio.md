@@ -5,12 +5,13 @@ area: OPS
 title: Bootstrap the Mac Studio
 kind: deliver
 project: mac-studio-bootstrap
-status: triage
+status: cancelled
+resolution: rejected
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-08T13:50:51Z
-updated_at: 2026-10-11T02:19:55Z
+updated_at: 2026-10-12T19:57:12Z
 ---
 
 # Bootstrap the Mac Studio
@@ -27,6 +28,10 @@ The Project was registered on 2026-10-08 with no work record. The work is attend
 
 - In scope: applying chezmoi, reconciling Rig declarations, installing Homebrew `ki` and `mgit`, cloning and registering the workspace, and readying Claude Code and Zed.
 - Out of scope: fixing defects found in the chezmoi source, Rig declarations or `ki` install guidance, which become records in their owning repositories; agent-host work, which [[agent-host]] owns.
+
+## Cancelled
+
+Kris approved rejecting this record on 12 October 2026 (state-of-play thread, Decision 147), accepting the triage review's proposal as written. The mac-studio-bootstrap Project and its `rig.mac-studio-bootstrap` checkpoint overtook it and did the work. Only Kris's attended restart test (FileVault unlock and Tailscale relaunch) remains outstanding, and the Project's checkpoint already tracks it.
 
 ## Discussion
 
