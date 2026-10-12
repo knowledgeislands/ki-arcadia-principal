@@ -8,7 +8,7 @@ author: Written with Claude
 
 ## Overview
 
-This folder holds the working papers for design questions in the [[agent-host|Agent host]] Project that are still open. Its first paper explains, for Kris, what the workstation bundle sends to the agent host and weighs where the per-host sharing manifest should live, ahead of the approval of DOTFILES-UE-073 and TECHNE-TOOLS-OPS-015. A second paper audits the boundary between Rig and Techne across every repository involved, and is cross-project: the state-of-play thread picks up its decisions. The papers are temporary: once their outcome is consolidated into those records or into [[ADR-KI-PRINCIPAL-003-the-agent-host-workstation-model|ADR-KI-PRINCIPAL-003]], they are deleted in one commit.
+This folder holds the working papers for design questions in the [[agent-host|Agent host]] Project that are still open. Its first paper explains, for Kris, what the workstation bundle sends to the agent host and weighs where the per-host sharing manifest should live, ahead of the approval of KB-DOTFILES-UE-073 and TECHNE-TOOLS-OPS-015. A second paper audits the boundary between Rig and Techne across every repository involved, and is cross-project: the state-of-play thread picks up its decisions. The papers are temporary: once their outcome is consolidated into those records or into [[ADR-KI-PRINCIPAL-003-the-agent-host-workstation-model|ADR-KI-PRINCIPAL-003]], they are deleted in one commit.
 
 ## Workstation bundle walkthrough
 
