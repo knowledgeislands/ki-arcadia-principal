@@ -4,7 +4,7 @@ thread: knowledge-islands-model.command-centre
 label: 'Knowledge Islands Model: command-centre'
 state: active
 created_at: 2026-10-11T02:41:28Z
-updated_at: 2026-10-11T02:41:28Z
+updated_at: 2026-10-12T18:22:00Z
 ---
 
 # knowledge-islands-model.command-centre
@@ -15,7 +15,7 @@ One shared vocabulary and model for Kris's command centre, adopted across the ha
 
 ## Current state
 
-- New Project, created 2026-10-11 with `lifecycle: planned` (state-of-play Decision 42). Queued behind the active-thread cap; the master thread prepared this checkpoint. No thread has opened it yet.
+- New Project, created 2026-10-11 with `lifecycle: planned` (state-of-play Decision 42). Thread opened 2026-10-12 by Kris, ahead of its place as fourth in the master thread's queue; run `command-centre`, not yet created. No mark struck yet. ki-delegation read at f2b14dca.
 - The survey and crosswalk live in `~/.local/state/ki/agents/state-of-play/command-centre.report.md`: 21 concepts across 12 repositories, five word clashes (Council, Project, State of play, Control plane, Checkpoint) and four same-thing clusters.
 - The parked "state-of-play view" item moved here from the ways-of-working checkpoint and is an idea in the Project note.
 - A non-blocking handoff to kit-hnr raises the "HNR Council" clash with Arcadia's Council (CC-HNR, state-of-play run `cc-batch`).
