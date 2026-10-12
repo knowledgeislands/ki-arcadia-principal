@@ -11,14 +11,14 @@ updated_at: 2026-10-10T16:39:00Z
 
 ## Objective
 
-Every Knowledge Islands repository meets a solid baseline: `ki repo audit --estate` green and a released `ki` installed on each island ([baseline-rollout](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/baseline-rollout.md), Initiative [platform-foundations](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Initiatives/platform-foundations.md)).
+Every Knowledge Islands repository meets a solid baseline: `ki repo audit --estate` green and a released `ki` installed on each island ([baseline-rollout](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/baseline-rollout.md), Initiative [platform-foundations](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/platform-foundations.md)).
 
 ## Current state
 
 - Queued, second of three, behind the three-active-thread cap; the master thread prepared this checkpoint on 2026-10-09. Last read `ki-delegation` at harness revision 01ac726c (2026-10-09).
 - KI-HARNESS-GOV-117 and KI-HARNESS-GOV-127 were delivered by helper `baseline2` (gov-020), closed done and pruned. Its follow-on KI-HARNESS-GOV-163 (Bun boundary proof adapter) is deferred (Decision 10).
-- [KI-HARNESS-GOV-168](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-168-roll-out-ki-pin-receivers.md) (Next, draft): roll out pin receivers to the 20 `knowledgeislands` repositories still pinning `KI_VERSION: v0.8.4` inline. Adopted for planning (Decision 8); its steps are written but it is not yet Ready.
-- The release bot and the `main` ruleset are set up on `ki-agentic-harness` (2026-10-09, Decision 12), which is the reference receiver. The bot is also on `homebrew-tap` and `ki-website`. Every further repository needs its `main` ruleset before the bot is installed, as [Release Cascade](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Admin/Operations/Processes/Release%20Cascade.md) sets out.
+- [KI-HARNESS-GOV-168](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-168-roll-out-ki-pin-receivers.md) (Next, draft): roll out pin receivers to the 20 `knowledgeislands` repositories still pinning `KI_VERSION: v0.8.4` inline. Adopted for planning (Decision 8); its steps are written but it is not yet Ready.
+- The release bot and the `main` ruleset are set up on `ki-agentic-harness` (2026-10-09, Decision 12), which is the reference receiver. The bot is also on `homebrew-tap` and `ki-website`. Every further repository needs its `main` ruleset before the bot is installed, as [Release Cascade](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Admin/Operations/Processes/Release%20Cascade.md) sets out.
 - Background agents push to harness `main` through the ruleset's admin bypass.
 
 ## Decisions made
@@ -30,14 +30,14 @@ Every Knowledge Islands repository meets a solid baseline: `ki repo audit --esta
 
 ## Files touched
 
-None yet in this thread. Records live in `/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/`; the last helper's report is `~/.local/state/ki/agents/gov-020/baseline2.report.md`.
+None yet in this thread. Records live in `/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/`; the last helper's report is `~/.local/state/ki/agents/gov-020/baseline2.report.md`.
 
 ## Open questions
 
 - **PIN: how `tools-ki` takes its pin.** Recommendation: CI builds `ki` from source and `tools-ki` gets no receiver, because `tools-ki` is the source of `ki`, so testing each commit against a previously released binary checks the wrong thing and a receiver tracking its own releases is circular. Alternative: a pin bump through the receiver like every other repository. Put this to Kris with the plan.
 - **PRFLOW, with the master thread:** background agents push to harness `main` through the admin bypass. Kris to decide whether to keep direct pushes (the master recommends keeping them) or move to pull requests. If pull requests, update the run packet's push rule in `ki-delegation` and the delegation prompts.
-- **CHECKLIST, later and only if Kris approves it for Arcadia first:** adopt the stock Repository review Activity ([repository-review-activity.md](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/skills/change-management/ki-work-housekeeping/assets/repository-review-activity.md)) across the estate.
-- **Parked, 2026-10-10 (from island-model-and-tending) - for [KI-HARNESS-GOV-168](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-168-roll-out-ki-pin-receivers.md):** `update-ki-pin.yml` filters on `client_payload.source_repository` but tools-ki `release.yml` sends `client_payload.repository`, so `tool-release-published` dispatches would be skipped even after registration; tools-ki currently dispatches only to homebrew-tap. Arcadia now carries `.github/ki-version` and `update-ki-pin.yml`; its receiver stays inert until the tools-release bot App is installed on Arcadia and its secrets are set.
+- **CHECKLIST, later and only if Kris approves it for Arcadia first:** adopt the stock Repository review Activity ([repository-review-activity.md](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/skills/change-management/ki-work-housekeeping/assets/repository-review-activity.md)) across the estate.
+- **Parked, 2026-10-10 (from island-model-and-tending) - for [KI-HARNESS-GOV-168](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-168-roll-out-ki-pin-receivers.md):** `update-ki-pin.yml` filters on `client_payload.source_repository` but tools-ki `release.yml` sends `client_payload.repository`, so `tool-release-published` dispatches would be skipped even after registration; tools-ki currently dispatches only to homebrew-tap. Arcadia now carries `.github/ki-version` and `update-ki-pin.yml`; its receiver stays inert until the tools-release bot App is installed on Arcadia and its secrets are set.
 
 ## Next step
 

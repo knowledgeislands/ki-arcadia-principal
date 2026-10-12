@@ -32,7 +32,7 @@ The Project was registered on 2026-10-08 with no work record. The work is attend
 
 ### Capture
 
-Captured as Triage from the close-out assessment of the Project it serves, written during the [KI-ARCADIA-GOV-020](https://github.com/knowledgeislands/ki-arcadia-principal/blob/fddfca69b4642cb4db4113123aa7dc613c3e92f4/Streams/Roadmap/KI-ARCADIA-GOV-020-limited-remote-agent-prototype.md) work on homes for recurring work. No plan yet.
+Captured as Triage from the close-out assessment of the Project it serves, written during the [KI-ARCADIA-GOV-020](https://github.com/knowledgeislands/ki-principal/blob/fddfca69b4642cb4db4113123aa7dc613c3e92f4/Streams/Roadmap/KI-ARCADIA-GOV-020-limited-remote-agent-prototype.md) work on homes for recurring work. No plan yet.
 
 ## Governance
 

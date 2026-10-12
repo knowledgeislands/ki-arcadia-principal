@@ -1,6 +1,6 @@
 # Granola acquisition moved
 
-All Granola folders now acquire into the private [Kit Acquire](https://github.com/krisb/kit-acquire) inbox. This repository is a possible durable reconciliation destination and no longer receives Granola source captures directly.
+All Granola folders now acquire into the private [Kit Acquire](https://github.com/krisb/acquire) inbox. This repository is a possible durable reconciliation destination and no longer receives Granola source captures directly.
 
 Run the acquisition skill on demand from the registered `kit-acquire` checkout. Its `.ki.toml` declares the seven folder-ID mappings; unfoldered and unmatched identities are reported without fetching their content. No schedule or provider mutation is enabled.
 

@@ -50,7 +50,7 @@ These are the owner's own words, numbered against the report's decisions. Where 
 
 ## Clarifications and delivery boundary
 
-The current Capital registry key is `ki-arcadia-principal`. The harness's declared prefix is `ki`; the chosen short territory identity should align with it. Paperclip's organisation code remains `KIS`.
+The current Capital registry key is `ki-principal`. The harness's declared prefix is `ki`; the chosen short territory identity should align with it. Paperclip's organisation code remains `KIS`.
 
 The shared `-f, --filter` spelling is supported in both tools. Under the requested cut-over it matches repository directory-name prefixes, case-sensitively and literally, before worktree expansion. There is no separate legacy glob option or Agora alias.
 

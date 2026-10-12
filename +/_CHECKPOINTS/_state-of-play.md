@@ -21,25 +21,25 @@ This is the territory master thread for Knowledge Islands. It does only project 
 
   | Label | Checkpoint |
   | --- | --- |
-  | Master: state-of-play | [_state-of-play](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/_state-of-play.md) |
-  | Fnd: estate-factorisation | [platform-foundations.estate-factorisation](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/platform-foundations.estate-factorisation.md) - bottoms out the mcp-\*, tools-\* and apps-\* roadmaps (Decision 46) |
-  | KI Model: island-model-and-tending | [knowledge-islands-model.island-model-and-tending](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/knowledge-islands-model.island-model-and-tending.md) |
-  | Rig: chezmoi | [rig.chezmoi](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/rig.chezmoi.md) - also the [secrets-hygiene](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/secrets-hygiene.md) thread |
-  | Techne: agent-host | [techne.agent-host](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/techne.agent-host.md) |
-  | Rig: mac-studio-bootstrap | [rig.mac-studio-bootstrap](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/rig.mac-studio-bootstrap.md) - runs on the Mac Studio |
+  | Master: state-of-play | [_state-of-play](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/_state-of-play.md) |
+  | Fnd: estate-factorisation | [platform-foundations.estate-factorisation](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/platform-foundations.estate-factorisation.md) - bottoms out the mcp-\*, tools-\* and apps-\* roadmaps (Decision 46) |
+  | KI Model: island-model-and-tending | [knowledge-islands-model.island-model-and-tending](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/knowledge-islands-model.island-model-and-tending.md) |
+  | Rig: chezmoi | [rig.chezmoi](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/rig.chezmoi.md) - also the [secrets-hygiene](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/secrets-hygiene.md) thread |
+  | Techne: agent-host | [techne.agent-host](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/techne.agent-host.md) |
+  | Rig: mac-studio-bootstrap | [rig.mac-studio-bootstrap](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/rig.mac-studio-bootstrap.md) - runs on the Mac Studio |
 
   Opener for any of them: `Re-bootstrap as the <label> thread under ki-delegation.`
 - **Queue, in order.** Each checkpoint is prepared and ready to open when an active thread closes.
 
   | Order | Label | Checkpoint |
   | --- | --- | --- |
-  | 1 | Fnd: baseline-rollout | [platform-foundations.baseline-rollout](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/platform-foundations.baseline-rollout.md) |
-  | 2 | KI Model: knowledge-acquisition | [knowledge-islands-model.knowledge-acquisition](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/knowledge-islands-model.knowledge-acquisition.md) |
-  | 3 | KI Model: ways-of-working | [knowledge-islands-model.ways-of-working](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/knowledge-islands-model.ways-of-working.md) |
-  | 4 | KI Model: command-centre | [knowledge-islands-model.command-centre](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/knowledge-islands-model.command-centre.md) |
+  | 1 | Fnd: baseline-rollout | [platform-foundations.baseline-rollout](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/platform-foundations.baseline-rollout.md) |
+  | 2 | KI Model: knowledge-acquisition | [knowledge-islands-model.knowledge-acquisition](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/knowledge-islands-model.knowledge-acquisition.md) |
+  | 3 | KI Model: ways-of-working | [knowledge-islands-model.ways-of-working](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/knowledge-islands-model.ways-of-working.md) |
+  | 4 | KI Model: command-centre | [knowledge-islands-model.command-centre](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/knowledge-islands-model.command-centre.md) |
 
-- **Other checkpoints, no thread open:** [techne.paperclip-bootstrap-and-recovery](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/techne.paperclip-bootstrap-and-recovery.md), which waits on the Techne Programme Hold.
-- **Projects with no thread.** No open records and no recurring work: [roadmap-model](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/roadmap-model.md), [skill-refresh](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/skill-refresh.md), [specification-review](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/specification-review.md), [delta-evaluation](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/delta-evaluation.md) and [trades-revamp](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/trades-revamp.md). Paused, with Hold records only: [specifications](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/specifications.md) and [website](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/website.md).
+- **Other checkpoints, no thread open:** [techne.paperclip-bootstrap-and-recovery](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/techne.paperclip-bootstrap-and-recovery.md), which waits on the Techne Programme Hold.
+- **Projects with no thread.** No open records and no recurring work: [roadmap-model](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/roadmap-model.md), [skill-refresh](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/skill-refresh.md), [specification-review](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/specification-review.md), [delta-evaluation](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/delta-evaluation.md) and [trades-revamp](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/trades-revamp.md). Paused, with Hold records only: [specifications](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/specifications.md) and [website](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/website.md).
 - **Estate baseline, 2026-10-11 (Decisions 47 to 51).** Territory handles are knowledge-islands, humans-not-robots, equal-remedy, valle-armonia, techmedix, legal and personal; repository names may differ, every other name follows the handle. Every registered repository's `.ki.toml` is conformed; OneDrive source stores are renamed `sources-<handle>` and rebound, with `sources-knowledge-islands` new for Arcadia. The six other Capitals each have a seeded `_state-of-play.md` and an opener; their master threads confirm Initiatives and Projects. infoschematics is on the current roadmap format.
 - **Tooling.** `ki` 0.10.1.
 
@@ -56,24 +56,24 @@ Rules live with their durable owners: the roadmap model in GDR-KI-ARCADIA-005 an
 - Releases are on demand; the next is one combined tools-ki release.
 - Linear and TickTick are not raised in this thread.
 - The Enactment threshold: an explicit owner instruction for a bounded change stands in for a record, related changes share one record, and a record is needed only for new or reworked content in `Admin`, `Pillars` or `Resources`.
-- The [mac-studio-bootstrap](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/mac-studio-bootstrap/mac-studio-bootstrap.md) Project lives under the Rig Initiative.
+- The [mac-studio-bootstrap](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-bootstrap/mac-studio-bootstrap.md) Project lives under the Rig Initiative.
 
 ## Files touched
 
 - Working material, machine-local and non-durable: decisions log, prompts and run reports in `/Users/krisbrown/.local/state/ki/agents/state-of-play/`.
-- Project and Initiative notes: [Projects](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/Projects.md) and [Initiatives](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Initiatives/Initiatives.md).
+- Project and Initiative notes: [Projects](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/Projects.md) and [Initiatives](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/Initiatives.md).
 
 ## Open questions
 
 Needs Kris (outstanding at the mark; carried forward until resolved):
 
-- From [Fnd: estate-factorisation](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/platform-foundations.estate-factorisation.md), 2026-10-11: four Rig deliveries are accepted and published Done under Kris's tools-burndown Decision 6. Open count is 7: tools-ki 3, tools-rig 1, tools-techne 2, Observatory 1; MCPs/tap zero. The single authorised [KI-TOOL-CLI-118](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-ki/docs/roadmap/KI-TOOL-CLI-118-capital-stores-and-territory-aliases.md) plan is published, delivery awaiting approval. Please route prune-reference repair through Rig: mac-studio-bootstrap, Rig: chezmoi and the chezmoi software-alignment owner; their surviving links block all four approved prunes. Relevant archived peer reference evidence is also unavailable locally. Observatory has a bounded hook/CI-pin/receiver proposal awaiting repository opt-in; please route removal/reconciliation of its two retired untracked ki-agora skill projections through the configuration owner. Optional territory_aliases metadata and accepted selection rationale need Harness/Arcadia owner alignment before rollout. Protected five remain unassigned; this notice grants no peer edit or remote operation.
+- From [Fnd: estate-factorisation](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/platform-foundations.estate-factorisation.md), 2026-10-11: four Rig deliveries are accepted and published Done under Kris's tools-burndown Decision 6. Open count is 7: tools-ki 3, tools-rig 1, tools-techne 2, Observatory 1; MCPs/tap zero. The single authorised [KI-TOOL-CLI-118](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-CLI-118-capital-stores-and-territory-aliases.md) plan is published, delivery awaiting approval. Please route prune-reference repair through Rig: mac-studio-bootstrap, Rig: chezmoi and the chezmoi software-alignment owner; their surviving links block all four approved prunes. Relevant archived peer reference evidence is also unavailable locally. Observatory has a bounded hook/CI-pin/receiver proposal awaiting repository opt-in; please route removal/reconciliation of its two retired untracked ki-agora skill projections through the configuration owner. Optional territory_aliases metadata and accepted selection rationale need Harness/Arcadia owner alignment before rollout. Protected five remain unassigned; this notice grants no peer edit or remote operation.
 - **PROTECTED:** from Fnd: estate-factorisation - release the four Techne: agent-host tooling records and the Dock engine work to its local run, or keep them with their current threads.
 - **VA-PRIMARY:** the Valle Armonia thread rebases and pushes its three local commits in vallearmonia-principal (paste prompt given 2026-10-11).
 - **KIT-ACQUIRE:** two unpushed local commits in kit-acquire (Kris's central Granola inbox work, 2026-10-10) carry its first `.ki.toml`; push, or leave for the knowledge-acquisition thread.
 - **CHEZMOI-HEADING:** `rig.chezmoi.md` has an extra `## Needs Kris` section, which fails the six-section checkpoint schema and keeps Arcadia CI red; Rig: chezmoi moves it under Open questions.
 - **Trades hold, follow up 2026-10-14 (remind from 2026-10-12):** re-enable trades or renew the hold. HOLD-1 warns from 2026-10-15 (Decision 41).
-- **Delta trial, follow up 2026-10-14 (remind from 2026-10-12):** yes or no, from the [delta-evaluation](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/delta-evaluation.md) Project note (Decision 41).
+- **Delta trial, follow up 2026-10-14 (remind from 2026-10-12):** yes or no, from the [delta-evaluation](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/delta-evaluation.md) Project note (Decision 41).
 - **Paperclip:** answer the two decision cards.
 - **Specification review:** which repository first? `tools-ki` is suggested.
 - **Capital openers:** open each territory's master thread in Zed from the openers in `~/.local/state/ki/agents/state-of-play/territory-masters.report.md` and confirm its Initiatives and Projects.
@@ -101,7 +101,7 @@ Parked:
 ### Progress at 03:25 BST (Decisions 65-77)
 
 - Done: phases 0-5; phase 6a on terra except this repository's own move. 45 checkouts converged (log `~/.local/state/ki/converge/2026-10-12T01-32-20-284Z.json`), chezmoi `estate-reshape` merged and applied (branch deleted), `phase6-rewrite-unmanaged.py --apply` (backups under `state-of-play/backups/phase6-20261012-023412`), rig services reconciled, mcporter recovered (stale identity moved to `~/.mcporter/daemon/stale-2026-10-12`), hnr-principal symlinks made relative, si-principal cloned (empty on GitHub), empty testbed website and leftover `~/workspaces/hnr`, `knowledge-wayfinder` and `kit/*` parents removed (Claude local settings backed up under `state-of-play/backups/leftovers-20261012`). Techmedix GitHub description fixed.
-- Last step of 6a: move this repository to `~/workspaces/knowledge-islands/ki-principal` with `ki estate converge /tmp/estate-targets-6a.json --apply --allow-busy ~/workspaces/kit/knowledgeislands/ki-arcadia-principal`, then remove `~/workspaces/kit`.
+- Last step of 6a: move this repository to `~/workspaces/knowledge-islands/ki-principal` with `ki estate converge /tmp/estate-targets-6a.json --apply --allow-busy ~/workspaces/knowledge-islands/ki-principal`, then remove `~/workspaces/kit`.
 
 ### Resume here (fresh thread at `~/workspaces/knowledge-islands/ki-principal`)
 

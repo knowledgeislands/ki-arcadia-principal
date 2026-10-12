@@ -43,7 +43,7 @@ Connected services and the identifiers activities use to reach them are declared
 
 ## Repository Declaration
 
-An island's repository also carries a machine-readable declaration, `.ki.toml`, which tooling reads directly. It records the repository's identity and code (`KI-ARCADIA` for Arcadia), its Capital, its supported runtimes, and the skills and standards it adopts, each with any skill-specific settings. On a principal island it also carries the territory's name, prefix and ordered member roster, which must agree with [[Known Lands]]. `ki repo audit` checks the repository against these declarations, and [[Admin/Governance/Conformance|Conformance]] lists the standards adopted.
+An island's repository also carries a machine-readable declaration, `.ki.toml`, which tooling reads directly. It records the repository's identity and code (`KI-PRINCIPAL` for Arcadia), its Capital, its supported runtimes, and the skills and standards it adopts, each with any skill-specific settings. On a principal island it also carries the territory's name, prefix and ordered member roster, which must agree with [[Known Lands]]. `ki repo audit` checks the repository against these declarations, and [[Admin/Governance/Conformance|Conformance]] lists the standards adopted.
 
 ---
 

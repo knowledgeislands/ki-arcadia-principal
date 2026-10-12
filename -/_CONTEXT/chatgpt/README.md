@@ -1,6 +1,6 @@
 # Knowledge Islands / Arcadia: ChatGPT Context
 
-Reviewed: 2026-10-06. Repository: `knowledgeislands/ki-arcadia-principal`.
+Reviewed: 2026-10-06. Repository: `knowledgeislands/ki-principal`.
 
 The Knowledge Islands model, governance and methodology, with canonical Techné engineering knowledge.
 

@@ -1,6 +1,6 @@
 # Territory selection and Agora retirement: brief
 
-**Owner:** Kris Brown - **Owning repository:** knowledgeislands/ki-arcadia-principal - **Date:** 2026-10-07
+**Owner:** Kris Brown - **Owning repository:** knowledgeislands/ki-principal - **Date:** 2026-10-07
 
 ## Problem
 

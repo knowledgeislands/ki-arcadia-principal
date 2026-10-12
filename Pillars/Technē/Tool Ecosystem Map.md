@@ -8,13 +8,13 @@ author: AI-assisted
 
 ## Overview
 
-The Knowledge Islands tooling layer combines governed knowledge, reusable capabilities, independently owned products and publication. [[Known Lands]] supplies canonical membership and ownership boundaries; [[GDR-KI-ARCADIA-006-knowledge-islands-ecosystem-fundamentals|Ecosystem fundamentals]] supplies the shared routing decision.
+The Knowledge Islands tooling layer combines governed knowledge, reusable capabilities, independently owned products and publication. [[Known Lands]] supplies canonical membership and ownership boundaries; [[GDR-KI-PRINCIPAL-006-knowledge-islands-ecosystem-fundamentals|Ecosystem fundamentals]] supplies the shared routing decision.
 
 ## Components
 
 | Repository | Role | Owned concern |
 | --- | --- | --- |
-| `ki-arcadia-principal` | Capital and knowledge | Philosophy, governance and engineering practice |
+| `ki-principal` | Capital and knowledge | Philosophy, governance and engineering practice |
 | `ki-agentic-harness` | Reusable capabilities | Agent-facing contracts and conformance |
 | `tools-ki` | Governance host | Executable KI operations and projections |
 | `ki-techne-harness` | Implementation product | Controller and execution fabric |
@@ -24,7 +24,7 @@ The Knowledge Islands tooling layer combines governed knowledge, reusable capabi
 
 ## Knowledge and implementation
 
-[[Engineering Practice/Engineering Practice|Engineering Practice]] is Arcadia's canonical engineering discipline. [[ADR-KI-ARCADIA-006-techne-implementation-ownership|Implementation ownership]] preserves the separate harness and CLI product boundaries; neither product becomes the knowledge owner.
+[[Engineering Practice/Engineering Practice|Engineering Practice]] is Arcadia's canonical engineering discipline. [[ADR-KI-PRINCIPAL-006-techne-implementation-ownership|Implementation ownership]] preserves the separate harness and CLI product boundaries; neither product becomes the knowledge owner.
 
 Reusable agentic capabilities belong to the KI Agentic Harness. The `ki` executable owns its implemented governance operations; governance does not become infrastructure control through proximity to a controller or provider.
 

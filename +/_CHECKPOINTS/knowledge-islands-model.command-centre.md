@@ -11,7 +11,7 @@ updated_at: 2026-10-11T02:41:28Z
 
 ## Objective
 
-One shared vocabulary and model for Kris's command centre, adopted across the harness, Observatory, kit-hnr and kit-legal, with one read-only state-of-play view ([command-centre](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Projects/command-centre.md), Initiative [knowledge-islands-model](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/Streams/Initiatives/knowledge-islands-model/knowledge-islands-model.md)).
+One shared vocabulary and model for Kris's command centre, adopted across the harness, Observatory, kit-hnr and kit-legal, with one read-only state-of-play view ([command-centre](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/command-centre.md), Initiative [knowledge-islands-model](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/knowledge-islands-model/knowledge-islands-model.md)).
 
 ## Current state
 

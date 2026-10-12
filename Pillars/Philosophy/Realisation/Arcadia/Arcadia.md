@@ -22,9 +22,9 @@ The website is an independently deployable publication, not a third source of tr
 The publication flows are:
 
 ```text
-ki-arcadia-principal -> ki-agentic-harness
-ki-arcadia-principal -> ki-specifications
-ki-arcadia-principal -> ki-website
+ki-principal -> ki-agentic-harness
+ki-principal -> ki-specifications
+ki-principal -> ki-website
 ki-agentic-harness   -> ki-specifications
 ki-agentic-harness   -> ki-website
 ki-specifications    -> ki-website

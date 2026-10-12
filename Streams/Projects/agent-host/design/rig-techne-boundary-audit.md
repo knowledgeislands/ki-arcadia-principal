@@ -8,7 +8,7 @@ author: Written with Claude
 
 **For:** Kris Brown - **Project:** [[agent-host|Agent host]], with [[Initiatives/rig|Rig]] and [[Initiatives/techne|Techne]] - **Date:** 2026-10-11 - **Authority:** Decision 39 of the Techne run - **Scope:** cross-project, for the state-of-play thread to pick up
 
-A reading document. It inventories what Rig, the Techne harness and CLI, chezmoi and Cheztoi, the Homebrew tap and `tools-ki` actually do today, tests Kris's four-layer framing against that, and ends with numbered decisions. It changes no record. The hold on building TECHNE-TOOLS-OPS-017 and approving TECHNE-TOOLS-OPS-024 stands until Kris answers the decisions below.
+A reading document. It inventories what Rig, the Techne harness and CLI, chezmoi and Cheztoi, the Homebrew tap and `tools-ki` actually do today, tests Kris's four-layer framing against that, and ends with numbered decisions. It changes no record. The hold on building KI-TECHNE-OPS-017 and approving KI-TECHNE-OPS-024 stands until Kris answers the decisions below.
 
 ## Am I confusing things?
 
@@ -36,7 +36,7 @@ Each line is a responsibility that exists today, where it lives, and the layer i
 | Tailscale install and join, tailnet tag, SSH entry | stack boot script, `provision.sh` | Base | - |
 | Secrets from SSM (GitHub token, Tailscale key, Ubuntu Pro token) | stack boot script and IAM policy | Base | - |
 | Unattended security patching, reboot window, Livepatch, `updates` report | recipe `[patching]`, AWS provider patching table, boot script | Base | - |
-| Operator user `techne` created with `/bin/bash` | boot script | Base | the shell is a binding choice applied only by a `.bashrc` hand-off (TECHNE-TOOLS-OPS-017 fixes) |
+| Operator user `techne` created with `/bin/bash` | boot script | Base | the shell is a binding choice applied only by a `.bashrc` hand-off (KI-TECHNE-OPS-017 fixes) |
 | Base OS packages: `curl`, `git`, `jq`, `tmux`, `xz-utils`, `zsh` | boot script, `apt-get` | Base | - (Rig needs these to start) |
 | Claude Code install | boot script, as the operator user | Role | yes: a role tool installed by the base |
 | Lifecycle: status verdict, stop, rebuild, withdraw, expiries | harness scripts, `tools-techne` `techne host` | Base | - |
@@ -45,7 +45,7 @@ Each line is a responsibility that exists today, where it lives, and the layer i
 | Installing Rig and mise | `converge.sh` (curl installers) | Base-to-role bootstrap | - (Rig cannot install itself) |
 | Installing bun, node, codex through mise, and `ki` through its signed installer | `converge.sh` | Role | yes: setup installs tools itself; Rig only observes, through the custom `agent-host-pins` provider |
 | Drift of the host's tools | `status.sh` via `rig status --profile agent-host` | Role | - |
-| Drift of the Mac against the host's pins | `status.sh`, "This workstation pins" | none | yes: compares two different roles; TECHNE-TOOLS-OPS-024 removes it |
+| Drift of the Mac against the host's pins | `status.sh`, "This workstation pins" | none | yes: compares two different roles; KI-TECHNE-OPS-024 removes it |
 | Repository set, clone, `ki bootstrap`, Git settings, startup files, host marker, host instructions | `converge.sh`, `host-instructions.md`, `repositories.txt` | Workspace | the framing does not name this layer |
 | Personal files (zsh fragments, Claude and Codex instructions) and personal Rig fragment | chezmoi `config-fragments/cheztoi/hosts/vega.toml`, `scripts/cheztoi-render`, applied by `converge.sh` | Personal | - |
 | Personal tools on `vega` (only `mgit`, by direct download) | chezmoi `private_cheztoi.toml.tmpl` selecting catalogue variants | Personal through Rig | - |
@@ -55,7 +55,7 @@ Each line is a responsibility that exists today, where it lives, and the layer i
 | `ki` and `techne` signed or checksummed archives for darwin-arm64, darwin-x64 and linux-x64 | `tools-ki` and `tools-techne` releases and `install.sh` | Packaging | no linux-arm64 |
 | `sol` build | Kris by hand, with chezmoi and Rig (Mac Studio bootstrap) | Base by hand, role and personal by Rig and chezmoi | - |
 
-Three differences stand out. The tool pins are a Rig profile, but they live inside a Techne recipe and are named after it. Setup installs tools itself while Rig only watches (TECHNE-TOOLS-OPS-018 already exists to fix that). Claude Code is installed by the base, not by the role.
+Three differences stand out. The tool pins are a Rig profile, but they live inside a Techne recipe and are named after it. Setup installs tools itself while Rig only watches (KI-TECHNE-OPS-018 already exists to fix that). Claude Code is installed by the base, not by the role.
 
 ## 2. Overlaps, gaps and naming confusions
 
@@ -63,12 +63,12 @@ Three differences stand out. The tool pins are a Rig profile, but they live insi
 
 - **Recipe and role.** `recipes/agent-host/` holds both the base (stack, patching, lifecycle) and the role (`rig.toml`). A second recipe, such as an appliance or an owned-host one, would have to copy the role or reach into another recipe's folder.
 - **Two ways to say what a host needs.** For `vega` it is the recipe's pins. For `sol` it is Kris's `studio` profile. Both are remote agentic rigs, yet nothing tells you they should carry the same KI toolchain. Decision 38 stopped comparing the Mac with the host's pins. That was right for `terra`, but it leaves `sol` and `vega` with no shared definition either.
-- **Version policy in two places.** The recipe pins exact versions for reproducible rebuilds. The Mac takes the newest from Homebrew. TECHNE-TOOLS-OPS-024 would add a third mechanism, a pin-bump job, beside `rig upgrade`.
+- **Version policy in two places.** The recipe pins exact versions for reproducible rebuilds. The Mac takes the newest from Homebrew. KI-TECHNE-OPS-024 would add a third mechanism, a pin-bump job, beside `rig upgrade`.
 
 ### Gaps
 
 - **No role concept.** Rig has profiles but no published, person-neutral role that more than one source can include.
-- **Rig cannot install a signed release archive.** That is why `converge.sh` installs `ki` itself (TECHNE-TOOLS-OPS-016 and -018). `techne` and `ki` share the same archive pattern, so a second archive-shipped tool already exists. ADR-KI-PRINCIPAL-003 set that as the condition for a built-in kind in `tools-rig`.
+- **Rig cannot install a signed release archive.** That is why `converge.sh` installs `ki` itself (KI-TECHNE-OPS-016 and -018). `techne` and `ki` share the same archive pattern, so a second archive-shipped tool already exists. ADR-KI-PRINCIPAL-003 set that as the condition for a built-in kind in `tools-rig`.
 - **Linux coverage of the personal catalogue.** Only `mgit` has a Linux variant. Cheztoi's fragment accepts only built-in providers, so personal tools on Linux are limited to mise, uv, npm and direct download.
 - **No linux-arm64 builds** of `ki` or `techne`. This rules out Graviton instances and small ARM appliances.
 - **Rig's platforms are `macos`, `linux` and `any`.** Nothing distinguishes Debian from Arch, which an Arch base would need wherever native packages differ.
@@ -129,7 +129,7 @@ Techne's job ends at a **ready host**, defined as a contract the recipe can chec
 
 Setup then runs, in order: `rig apply --profile <role>` (the role layer), the workspace step (repositories and `ki bootstrap`), and the personal payload (Cheztoi files plus `rig apply --profile cheztoi`). On a ready owned host such as `sol`, the same three steps apply, with chezmoi in place of Cheztoi. The owned-host provider idea only has to reach step 4, with no provisioning.
 
-Under this split `converge.sh` stops installing tools (TECHNE-TOOLS-OPS-018's goal), and Claude Code moves from the boot script into the role, as a self-updating `minimum` tool.
+Under this split `converge.sh` stops installing tools (KI-TECHNE-OPS-018's goal), and Claude Code moves from the boot script into the role, as a self-updating `minimum` tool.
 
 ## 4. Packaging strategy
 
@@ -139,7 +139,7 @@ The need is for Kris's and KI's own tools (`ki`, `techne`, `rig`, `mgit`, `git-a
 | --- | --- | --- | --- | --- | --- |
 | Homebrew tap (today) | macOS; Linux via Linuxbrew | sha256 in the formula | Linuxbrew needs a `/home/linuxbrew` prefix set up once with root | low, exists | right for Macs; heavy and unidiomatic on servers and Arch |
 | Signed GitHub Releases plus installer (today for `ki`; `techne` checksummed) | any OS with `curl` and `tar` | Ed25519-signed checksum manifest, key embedded in the installer | no | low, exists | the right canonical artefact |
-| Rig signed-release install kind | anywhere Rig runs | verifies the same signed manifest | no | medium, one `tools-rig` feature | lets roles install KI tools declaratively; replaces TECHNE-TOOLS-OPS-016's custom provider |
+| Rig signed-release install kind | anywhere Rig runs | verifies the same signed manifest | no | medium, one `tools-rig` feature | lets roles install KI tools declaratively; replaces KI-TECHNE-OPS-016's custom provider |
 | mise (`github` or `ubi` backend) | any OS | checksums; drops `ki`'s signature check | no | low per tool | fine for third-party tools; not for signed KI tools |
 | aqua registry | any OS | checksum, cosign, SLSA | no | medium; needs a registry, public or private | a second mise-adjacent channel; no gain over the Rig kind |
 | apt repository | Debian, Ubuntu | signed repository | yes, to add it | high: signing key, hosting, tooling | only for an appliance fleet patched by `unattended-upgrades` |
@@ -170,12 +170,12 @@ As understood here (not re-checked in this run, which made no network calls), Om
 
 Plain words only. No record is changed by this audit.
 
-- **TECHNE-TOOLS-OPS-017** (binding shell at rebuild, rename to `vega`, remove record identifiers), `ki-techne-harness`: **stands**. It is base-layer work and fits any outcome below. Before the build, decide whether the rebuild also carries a recipe rename (decision 2). A rebuild costs a fresh Tailscale key and device, so it should happen once. If the recipe keeps its name, build as planned. Also update the GDR-KI-PRINCIPAL-004 scope in Arcadia when the rename lands, because it names the instance `ki-techne-agent-host`, alongside the tag and parameter prefix, which keep their values.
-- **TECHNE-TOOLS-OPS-018** (shared tools through Rig), `ki-techne-harness`: **stands and grows in importance**. It is the change that turns the recipe into "base plus hand-off". Two changes are suggested. Its first gate (the `ki` provider) becomes the `tools-rig` signed-release kind. Claude Code's install moves into its scope, out of the boot script.
-- **TECHNE-TOOLS-OPS-016** (Rig provider for `ki`), `ki-techne-harness`: **should move**. It would be replaced by a `tools-rig` record for a built-in signed-release install kind, since `techne` already makes `ki` not the only archive-shipped tool. This needs a small amendment to ADR-KI-PRINCIPAL-003 in Arcadia, whose decision 3 chose the harness provider.
-- **TECHNE-TOOLS-OPS-024** (weekly pin bump), `ki-techne-harness`: **split it**. The part that stops comparing the Mac with the host's pins is correct under any outcome and can be approved now. Hold the pin-bump tool until the role profile's home is decided (decision 3), because the job should follow the profile. If roles become a general idea, pin bumping of exact locators could be a Rig capability next to `rig upgrade` rather than a harness script.
-- **TECHNE-TOOLS-OPS-019** (person-neutral recipe defaults) and **TECHNE-TOOLS-OPS-023** (controller and target tags), `ki-techne-harness`: **stand**, unaffected.
-- **TECHNE-TOOL-CLI-006** and **TECHNE-TOOL-CLI-008**, `tools-techne`: **stand**. Both are base lifecycle work.
+- **KI-TECHNE-OPS-017** (binding shell at rebuild, rename to `vega`, remove record identifiers), `ki-techne-harness`: **stands**. It is base-layer work and fits any outcome below. Before the build, decide whether the rebuild also carries a recipe rename (decision 2). A rebuild costs a fresh Tailscale key and device, so it should happen once. If the recipe keeps its name, build as planned. Also update the GDR-KI-PRINCIPAL-004 scope in Arcadia when the rename lands, because it names the instance `ki-techne-agent-host`, alongside the tag and parameter prefix, which keep their values.
+- **KI-TECHNE-OPS-018** (shared tools through Rig), `ki-techne-harness`: **stands and grows in importance**. It is the change that turns the recipe into "base plus hand-off". Two changes are suggested. Its first gate (the `ki` provider) becomes the `tools-rig` signed-release kind. Claude Code's install moves into its scope, out of the boot script.
+- **KI-TECHNE-OPS-016** (Rig provider for `ki`), `ki-techne-harness`: **should move**. It would be replaced by a `tools-rig` record for a built-in signed-release install kind, since `techne` already makes `ki` not the only archive-shipped tool. This needs a small amendment to ADR-KI-PRINCIPAL-003 in Arcadia, whose decision 3 chose the harness provider.
+- **KI-TECHNE-OPS-024** (weekly pin bump), `ki-techne-harness`: **split it**. The part that stops comparing the Mac with the host's pins is correct under any outcome and can be approved now. Hold the pin-bump tool until the role profile's home is decided (decision 3), because the job should follow the profile. If roles become a general idea, pin bumping of exact locators could be a Rig capability next to `rig upgrade` rather than a harness script.
+- **KI-TECHNE-OPS-019** (person-neutral recipe defaults) and **KI-TECHNE-OPS-023** (controller and target tags), `ki-techne-harness`: **stand**, unaffected.
+- **KI-TECHNE-TOOL-CLI-006** and **KI-TECHNE-TOOL-CLI-008**, `tools-techne`: **stand**. Both are base lifecycle work.
 - **Rig's roadmap** (`tools-rig`: unwanted software removal, profile-filtered Dock items, self-updating applications, single sudo prompt): **stands**. All are workstation-role items. New work would be raised there: the signed-release install kind, a Debian-versus-Arch platform distinction (only if an Arch base is chosen), and role profiles that can be included from another source (if not already covered by `conf.d` fragments).
 - **chezmoi**: DOTFILES-UE-074 (host delegation) **stands**. A future item would add Linux variants for the personal tools Kris wants on remote agentic rigs.
 - **`tools-ki` and `tools-techne`**: a new item each for linux-arm64 release builds, if Kris wants ARM hosts.
@@ -188,12 +188,12 @@ Plain words only. No record is changed by this audit.
 **Outcome:** Kris accepted all ten decisions as recommended on 2026-10-11. [[Hosts, Roles and Layers]] holds the plain-language summary.
 
 1. **Adopt the four layers plus workspace.** Base (Techne), role (Rig), workspace (Techne through `ki`), personal (chezmoi or Cheztoi), with packaging as a separate supply concern. _Recommended: yes._
-2. **Name the role "remote agentic rig" and narrow the recipe.** Options: (a) keep the recipe called `agent-host` and only describe it as "the AWS base for a remote agentic rig"; (b) rename it now, in TECHNE-TOOLS-OPS-017's single rebuild. _Recommended: (a)._ Renaming touches the tags, parameter prefix, GDR-KI-PRINCIPAL-004 scope and the controller tooling for little gain. Revisit when a second recipe (appliance or owned host) exists.
+2. **Name the role "remote agentic rig" and narrow the recipe.** Options: (a) keep the recipe called `agent-host` and only describe it as "the AWS base for a remote agentic rig"; (b) rename it now, in KI-TECHNE-OPS-017's single rebuild. _Recommended: (a)._ Renaming touches the tags, parameter prefix, GDR-KI-PRINCIPAL-004 scope and the controller tooling for little gain. Revisit when a second recipe (appliance or owned host) exists.
 3. **Home of the agentic-rig role profile** (today `recipes/agent-host/rig.toml`). Options: (a) `ki-techne-harness`, moved to a recipe-independent `roles/` folder; (b) `tools-ki`, beside `ki bootstrap`, as "what a KI session needs"; (c) chezmoi, as part of Kris's catalogue. _Recommended: (a) now._ `sol` can then include the same role later, so both agentic rigs share one definition, with variants for Homebrew on macOS.
 4. **Version policy per role.** Exact pins for rebuildable hosts (`vega`), newest through Homebrew for workstations (`terra`, `sol`), with the role declaring minimums both satisfy. _Recommended: yes._
-5. **Signed-release install kind in `tools-rig`**, replacing TECHNE-TOOLS-OPS-016's harness provider and amending ADR-KI-PRINCIPAL-003 decision 3. _Recommended: yes._
+5. **Signed-release install kind in `tools-rig`**, replacing KI-TECHNE-OPS-016's harness provider and amending ADR-KI-PRINCIPAL-003 decision 3. _Recommended: yes._
 6. **Packaging strategy**: one KI release contract (per-platform archives including linux-arm64, signed manifest, embedded-key installer) with the Homebrew tap, the Rig kind and the installer as channels. Defer apt, AUR and Nix. _Recommended: yes._
 7. **Omarchy for `vega`.** Options: (a) stay on Ubuntu LTS and get the feel through role and personal layers; (b) move `vega` to Arch or Omarchy, adding an OS axis to the AWS provider and dropping security-only patching; (c) keep Omarchy for a future owned Linux workstation. _Recommended: (a) with (c)._
-8. **Release the holds.** Build TECHNE-TOOLS-OPS-017 as planned (if decision 2 is (a)), and approve TECHNE-TOOLS-OPS-024's status change while holding its pin-bump tool until decision 3 lands. _Recommended: yes._
+8. **Release the holds.** Build KI-TECHNE-OPS-017 as planned (if decision 2 is (a)), and approve KI-TECHNE-OPS-024's status change while holding its pin-bump tool until decision 3 lands. _Recommended: yes._
 9. **Appliance role.** Record it as a third role in the taxonomy now, with no recipe until the hold is reshaped. _Recommended: yes._
 10. **Hand to state-of-play.** State-of-play turns the accepted decisions into handoffs to `ki-techne-harness`, `tools-rig`, `tools-ki`, `tools-techne`, chezmoi and Arcadia (the Initiative wording, ADR-KI-PRINCIPAL-003 and the `direct-host` rename). _Recommended: yes._
