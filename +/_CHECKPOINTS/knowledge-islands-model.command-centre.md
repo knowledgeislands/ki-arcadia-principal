@@ -15,7 +15,7 @@ One shared vocabulary and model for Kris's command centre, adopted across the ha
 
 ## Current state
 
-- New Project, created 2026-10-11 with `lifecycle: planned` (state-of-play Decision 42). Thread opened 2026-10-12 by Kris, ahead of its place as fourth in the master thread's queue; run `command-centre`, not yet created. No mark struck yet. ki-delegation read at f2b14dca.
+- New Project, created 2026-10-11 with `lifecycle: planned` (state-of-play Decision 42). Thread opened 2026-10-12 by Kris, ahead of its place as fourth in the master thread's queue; run `command-centre`, not yet created. No mark struck yet. ki-delegation read at f2b14dca. At the first mark, shorten `label` to `KI Model: command-centre` (state-of-play Decision 143).
 - The survey and crosswalk live in `~/.local/state/ki/agents/state-of-play/command-centre.report.md`: 21 concepts across 12 repositories, five word clashes (Council, Project, State of play, Control plane, Checkpoint) and four same-thing clusters.
 - The parked "state-of-play view" item moved here from the ways-of-working checkpoint and is an idea in the Project note.
 - A non-blocking handoff to kit-hnr raises the "HNR Council" clash with Arcadia's Council (CC-HNR, state-of-play run `cc-batch`).
