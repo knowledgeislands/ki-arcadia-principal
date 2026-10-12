@@ -1,6 +1,6 @@
 ---
 note_type: pillars/note
-updated: 2026-10-04T17:20:00Z
+updated: 2026-10-12T06:01:00Z
 author: AI-assisted
 ---
 
@@ -19,7 +19,7 @@ The Knowledge Islands tooling layer combines governed knowledge, reusable capabi
 | `tools-ki` | Governance host | Executable KI operations and projections |
 | `ki-techne-harness` | Implementation product | Controller and execution fabric |
 | `tools-techne` | Implementation product | Operator CLI, diagnostics and releases |
-| `ki-website` | Publication | Selected source-labelled public material |
+| `apps-knowledgeislands.info` | Publication | Selected source-labelled public material |
 | `ki-specifications` | Dormant standards home | Possible portable contracts after overall V1 |
 
 ## Knowledge and implementation

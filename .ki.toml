@@ -32,13 +32,13 @@ store_roles = [
 territory_name = "Knowledge Islands"
 territory_prefix = "knowledge-islands"
 territory_members = [
-  "https://github.com/knowledgeislands/apps-observatory",
+  "https://github.com/knowledgeislands/apps-knowledgeislands.info",
+  "https://github.com/knowledgeislands/apps-observatory.local",
   "https://github.com/knowledgeislands/homebrew-tap",
   "https://github.com/knowledgeislands/ki-agentic-harness",
   "https://github.com/knowledgeislands/ki-principal",
   "https://github.com/knowledgeislands/ki-specifications",
   "https://github.com/knowledgeislands/ki-techne-harness",
-  "https://github.com/knowledgeislands/ki-website",
   "https://github.com/knowledgeislands/mcp-acquire-whatsapp",
   "https://github.com/knowledgeislands/mcp-git-audit",
   "https://github.com/knowledgeislands/mcp-gsuite",

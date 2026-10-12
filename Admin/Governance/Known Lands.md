@@ -25,13 +25,13 @@ Each island owns its accepted knowledge or executable behaviour within the share
 
 | Repository | Role | Owned concern |
 | --- | --- | --- |
-| [apps-observatory][apps-observatory] | Product | Repository and knowledge reader |
+| [apps-knowledgeislands.info][apps-knowledgeislands.info] | Publication | Public source-labelled website |
+| [apps-observatory.local][apps-observatory.local] | Product | Repository and knowledge reader |
 | [homebrew-tap][homebrew-tap] | Delivery | Homebrew distribution |
 | [ki-agentic-harness][ki-agentic-harness] | Capability | Reusable agentic contracts |
 | [ki-principal][ki-principal] | Capital | KI governance, model and engineering practice |
 | [ki-specifications][ki-specifications] | Standards | Portable contracts after V1 |
 | [ki-techne-harness][ki-techne-harness] | Product | Controller and execution fabric |
-| [ki-website][ki-website] | Publication | Public source-labelled website |
 | [mcp-acquire-whatsapp][mcp-acquire-whatsapp] | MCP | WhatsApp acquisition |
 | [mcp-git-audit][mcp-git-audit] | MCP | Repository inspection |
 | [mcp-gsuite][mcp-gsuite] | MCP | Google Workspace integration |
@@ -89,7 +89,8 @@ KI and mgit derive repository selection from the Capital's ordered territorial r
 
 Membership and ownership changes follow the territory's Enactment Process and the affected repository's authority. A source repository remains a member until a separately verified consolidation and owner-approved retirement disposition changes this inventory.
 
-[apps-observatory]: https://github.com/knowledgeislands/apps-observatory
+[apps-knowledgeislands.info]: https://github.com/knowledgeislands/apps-knowledgeislands.info
+[apps-observatory.local]: https://github.com/knowledgeislands/apps-observatory.local
 [homebrew-tap]: https://github.com/knowledgeislands/homebrew-tap
 [ki-agentic-harness]: https://github.com/knowledgeislands/ki-agentic-harness
 [ki-principal]: https://github.com/knowledgeislands/ki-principal
@@ -97,7 +98,6 @@ Membership and ownership changes follow the territory's Enactment Process and th
 [ki-specifications]: https://github.com/knowledgeislands/ki-specifications
 [ki-techne-harness]: https://github.com/knowledgeislands/ki-techne-harness
 [ki-techne-principal]: https://github.com/knowledgeislands/ki-techne-principal
-[ki-website]: https://github.com/knowledgeislands/ki-website
 [mcp-acquire-whatsapp]: https://github.com/knowledgeislands/mcp-acquire-whatsapp
 [mcp-git-audit]: https://github.com/knowledgeislands/mcp-git-audit
 [mcp-gsuite]: https://github.com/knowledgeislands/mcp-gsuite

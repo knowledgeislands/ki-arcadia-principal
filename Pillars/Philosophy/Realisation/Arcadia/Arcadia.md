@@ -1,6 +1,6 @@
 ---
 note_type: pillars/index
-updated: 2026-10-11T04:20:00Z
+updated: 2026-10-12T06:01:00Z
 tags:
   - card/note
   - topic/knowledge-islands
@@ -13,7 +13,7 @@ status: current - June 2026
 
 ## Overview
 
-Arcadia is the Capital of the Knowledge Islands territory and the home of the model; its `Pillars/` zone is the [[Great Library of Arcadia]], named as the library of all libraries. The Knowledge Islands website (`ki-website`, at knowledgeislands.info) is the public publication for the framework. It makes selected knowledge from this base visible beyond the KB and also publishes the agentic harness and KI Specifications. The website is framework-level rather than Arcadia-territory-scoped; the canonical sources remain this KB for philosophy and model, `ki-agentic-harness` for reusable tooling, and `ki-specifications` for normative portable contracts.
+Arcadia is the Capital of the Knowledge Islands territory and the home of the model; its `Pillars/` zone is the [[Great Library of Arcadia]], named as the library of all libraries. The Knowledge Islands website (`apps-knowledgeislands.info`, at knowledgeislands.info) is the public publication for the framework. It makes selected knowledge from this base visible beyond the KB and also publishes the agentic harness and KI Specifications. The website is framework-level rather than Arcadia-territory-scoped; the canonical sources remain this KB for philosophy and model, `ki-agentic-harness` for reusable tooling, and `ki-specifications` for normative portable contracts.
 
 ## The publication principle
 
@@ -24,10 +24,10 @@ The publication flows are:
 ```text
 ki-principal -> ki-agentic-harness
 ki-principal -> ki-specifications
-ki-principal -> ki-website
+ki-principal -> apps-knowledgeislands.info
 ki-agentic-harness   -> ki-specifications
-ki-agentic-harness   -> ki-website
-ki-specifications    -> ki-website
+ki-agentic-harness   -> apps-knowledgeislands.info
+ki-specifications    -> apps-knowledgeislands.info
 ```
 
 The base informs the website directly for philosophy and model. The harness informs the website for practical tooling documentation. Arcadia and the harness also inform Specifications, whose normative contracts are published through the website. The website does not author canonical material for any source.
