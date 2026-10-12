@@ -17,6 +17,7 @@ Kris's way of working with a master thread and Project threads, background agent
 
 - Opened by Kris 2026-10-12, while the master's queue still listed it third (behind Fnd: baseline-rollout and KI Model: knowledge-acquisition). No run yet; the run will be `ways-of-working`. No mark yet.
 - `ki-delegation` read at f2b14dca (2026-10-11).
+- Pending at the next mark (master Decision 143): change `label` to `KI Model: ways-of-working`.
 - In the skill now: the mark standard, carry-forward of outstanding items and stable Needs tags; the thread cap and the territory master thread; thread openers and Bootstrap; steering, not stopping; parking tangents, linking records, keeping primary checkouts current, Summary banner and resting point, and refreshing this guidance - all in [`ki-delegation`'s background-run standard](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/skills/governance/ki-delegation/references/standards-background-runs.md). They are this Project's to refine.
 - Not yet in the skill: the background-run worktree location and run-folder retention rule (approved), and the coordinator-model recommendation (undecided).
 
