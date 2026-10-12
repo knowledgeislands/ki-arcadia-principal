@@ -4,7 +4,7 @@ thread: knowledge-islands-model.knowledge-acquisition
 label: 'Knowledge Islands Model: knowledge-acquisition'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-11T04:30:02Z
+updated_at: 2026-10-12T18:30:00Z
 ---
 
 # knowledge-islands-model.knowledge-acquisition
@@ -15,18 +15,21 @@ The provider-neutral acquisition lifecycle is documented in one Pillars note, AI
 
 ## Current state
 
-- Open records: [KI-HARNESS-OPS-005](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-005-acquire-ai-sessions.md) (Now, in progress), [KI-ARCADIA-MOD-006](../../Streams/Roadmap/KI-PRINCIPAL-MOD-006-knowledge-acquisition-lifecycle.md) (Next, ready) and [DOTFILES-UE-035](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-035-install-whatsapp-spool-refresh.md) (Hold, chezmoi).
-- No gov-020 helper is working on this Project.
-- The browser-runtime question (KI-HARNESS-GOV-087) has left the open roadmap; no record carries it now.
+- Open records: [KI-HARNESS-OPS-005](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-005-acquire-ai-sessions.md) (Now, in progress), [KI-PRINCIPAL-MOD-006](../../Streams/Roadmap/KI-PRINCIPAL-MOD-006-knowledge-acquisition-lifecycle.md) (Next, ready) and [DOTFILES-UE-035](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-035-install-whatsapp-spool-refresh.md) (Hold, chezmoi).
+- Re-bootstrapped 2026-10-12 while the master thread still lists this thread as queued behind Fnd: baseline-rollout. Run: `knowledge-acquisition` (not yet created); no background agent is working on this Project.
+- KI-HARNESS-OPS-005 was waiting on its 2026-10-04 question: bind the export's 17 `g-p-` project identifiers to project names. The master thread's `chatgpt-sort` agent (Decision 137) saved the cloud project list before its renames, at `~/.local/state/ki/agents/state-of-play/backups/chatgpt-sort-20261012T1043/chatgpt-cloud-projects-before.tsv`. Its 17 identifiers match the export's 17 exactly. The 17 projects now follow Decision 135 naming (`<Territory> - <Sub-area>`); the `Kit:`, `HNR:` and `<Domain>: General` names are prior names. No chats moved. The listing sits in machine-local run state only.
+- The browser-runtime question (KI-HARNESS-GOV-087) is merged into KI-HARNESS-OPS-005 as its isolated-browser-trial step.
+- ki-delegation read at f2b14dca.
+- Mark: none yet.
 
 ## Decisions made
 
 - The master thread `state-of-play` owns cross-project priorities, releases and decisions; this thread works only this Project's records.
-- The lifecycle note changes `Pillars/`, so KI-ARCADIA-MOD-006 runs through the Enactment Process.
+- The lifecycle note changes `Pillars/`, so KI-PRINCIPAL-MOD-006 runs through the Enactment Process.
 
 ## Files touched
 
-None yet in this thread.
+- This checkpoint.
 
 ## Open questions
 
@@ -35,4 +38,4 @@ None yet in this thread.
 
 ## Next step
 
-Read KI-HARNESS-OPS-005 for its remaining steps and delegate the next one through `ki agent`; then start KI-ARCADIA-MOD-006 through `ki-implement`.
+On owner approval, launch one background agent on KI-HARNESS-OPS-005: copy the pre-rename project listing into the `sources-personal` store beside the export, record the identifier-to-name binding (current and prior names) in the record's routing inventory under Decision 135 naming and kebab-case territory keys, then convert and stage the export per the record's open steps. Then start KI-PRINCIPAL-MOD-006 through `ki-implement`.
