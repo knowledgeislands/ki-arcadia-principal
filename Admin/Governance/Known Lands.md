@@ -56,6 +56,16 @@ Specifications remains dormant as a normative authority until the overall V1 bou
 
 ---
 
+## Domains
+
+Domains the territory holds or plans to hold, recorded from the 2026-10-12 inventory. Cloudflare and the registrars remain the authority for live configuration; this table records purpose and ownership.
+
+| Domain | Purpose | Hosting | Serving repository |
+| --- | --- | --- | --- |
+| `knowledgeislands.info` | Site (apex and www); mail; www-to-apex redirect planned | Cloudflare Worker `ki-website` via Workers Builds; Email Routing. The approved www-to-apex redirect follows once a Cloudflare API token exists | `knowledgeislands/apps-knowledgeislands.info` |
+| `knowledgewayfinder.info` | Site; mail | Cloudflare Worker `kw-alejandro`; Email Routing | `knowledge-wayfinder/kw-website` |
+| `observatory.local` | Local site | Machine-local name, not a registered domain | `knowledgeislands/apps-observatory.local` |
+
 ## Estate territories
 
 The estate has eight territories. Each has a handle, a short alias used in repository names and codes, and a class: entity or individual. This list names each territory's Capital for reference only; it grants no membership, authority, access, or permission to exchange material.
