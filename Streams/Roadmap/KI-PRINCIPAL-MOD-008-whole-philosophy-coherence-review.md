@@ -20,7 +20,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-11T03:26:34Z
-updated_at: 2026-10-12T10:00:00Z
+updated_at: 2026-10-12T11:00:00Z
 ---
 
 # Whole-Philosophy Coherence Review
@@ -50,4 +50,5 @@ Scope to read and check:
 - The [[Emerging Concepts]] notes and the candidate principles in Engineering Practice [[Principles]]: which to adopt, reshape or leave open.
 - The Library wording across [[Structure]], [[The Home of Knowledge]] and [[SDR-KI-PRINCIPAL-002-the-home-of-knowledge|SDR-KI-PRINCIPAL-002]], which disagree on whether Calendar sits inside the Library.
 - The Harbour and Routes and Customs to-dos in [[Structure]], which wait for this review.
+- Tags: whether the island still needs its subject tags alongside `note_type`, folders and links (Kris's decision of 2026-10-12).
 - Avatar names per Realm against [[ADR-KI-PRINCIPAL-005-one-persona-across-explicit-working-contexts|ADR-KI-PRINCIPAL-005]].
