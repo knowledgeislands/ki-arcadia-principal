@@ -97,3 +97,17 @@ Parked:
 - Phase 0: vega agent and Zed processes stopped over Tailscale (`techne` has no sudo). Instance stop (`techne host stop --host agent-host`) waits for Kris's `techne auth login`.
 - Phase 1 terra: done apart from 8 dirty paperclip/agent worktrees (hnr-shared, kit-hnr, infoschematics) and vallearmonia-website `vision-statement.md`. kit-legal orphan `4ff8e2cf` pushed as `rescue/cc-001-exec`. Report: `phase1-secure-terra.report.md`. Branch tidy-up agent `phase1-tidy-branches` running.
 - Pending Kris: ChatGPT kit-acquire instructions (`src/chatgpt-acquire-instructions.md`), kit-acquire rename, territory slugs in kit-acquire.
+
+### Progress at 03:25 BST (Decisions 65-77)
+
+- Done: phases 0-5; phase 6a on terra except this repository's own move. 45 checkouts converged (log `~/.local/state/ki/converge/2026-10-12T01-32-20-284Z.json`), chezmoi `estate-reshape` merged and applied (branch deleted), `phase6-rewrite-unmanaged.py --apply` (backups under `state-of-play/backups/phase6-20261012-023412`), rig services reconciled, mcporter recovered (stale identity moved to `~/.mcporter/daemon/stale-2026-10-12`), hnr-principal symlinks made relative, si-principal cloned (empty on GitHub), empty testbed website and leftover `~/workspaces/hnr`, `knowledge-wayfinder` and `kit/*` parents removed (Claude local settings backed up under `state-of-play/backups/leftovers-20261012`). Techmedix GitHub description fixed.
+- Last step of 6a: move this repository to `~/workspaces/knowledge-islands/ki-principal` with `ki estate converge /tmp/estate-targets-6a.json --apply --allow-busy ~/workspaces/kit/knowledgeislands/ki-arcadia-principal`, then remove `~/workspaces/kit`.
+
+### Resume here (fresh thread at `~/workspaces/knowledge-islands/ki-principal`)
+
+1. Verify: `ki registry list` has no `workspaces/kit|hnr` paths; `ki territory audit --estate`; `mgit status` from `~/workspaces`; `mcporter list` (kit-mcp-ki-kb-fs failed only because ki-principal was not yet moved); `env -u PAPERCLIP_API_KEY -u PAPERCLIP_API_URL ~/bin/paperclip-reconcile --apply` (422 before because Convenor's new cwd did not exist); `rig doctor` (2 findings, both paperclip-agents).
+2. Restart Claude Desktop so it picks up new MCP paths.
+3. Update the Estate Map plan tab (`src/estate-map-plan.html`; 5 and 6a done) and regenerate into personal-principal (now `~/workspaces/personal/personal-principal`).
+4. Phase 6b: sol via Rig mac-studio-bootstrap; secure sol first; run converge there with the same manifest.
+5. Phase 7: si-principal setup and registration; sweep "Arcadia" prose and old paths; rename `MCP_KI_KB_FS` knowledge-base IDs (Decision 76); fix cross-repo links to renamed decision records (Decision 77); stale harness skill links in several repos (~190, retired skills such as `ki-agora`); stale trusted-folder entry for testbed website in `~/.claude/settings.json`.
+6. Phase 8: fresh threads from checkpoints; give Kris the `zed` command, Claude Desktop paths and Warp launch configuration.
