@@ -4,7 +4,7 @@ thread: platform-foundations.estate-factorisation
 label: 'Fnd: estate-factorisation'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-12T09:29:49Z
+updated_at: 2026-10-12T09:36:02Z
 ---
 
 # platform-foundations.estate-factorisation
@@ -16,7 +16,7 @@ Close out the registry-resolved `mcp-*`, `tools-*`, `apps-*` and homebrew-tap ro
 ## Current state
 
 - Consolidated the master's 2026-10-12 07:10 BST handover with current Git and registry evidence. Capital: knowledgeislands/ki-principal; roots now resolve under `/Users/krisbrown/workspaces/<territory>/<repository>`. Apps are apps-observatory.local and apps-knowledgeislands.info; record IDs use current re-keyed codes.
-- Current scoped census from `coordination/handoff-census.json`: sixteen repositories, exactly four adopted draft records - KI-TOOL-KI-CLI-115 Hold, KI-TOOL-RIG-CORE-042 Hold, KI-TOOL-TECHNE-CLI-006 Hold and KI-TOOL-TECHNE-CLI-008 Next. Zero triage, Awaiting-review or retained terminal records; scoped MCPs/apps, homebrew-tap, tools-mgit and tools-git-almanac are empty. Outside-scope apps/Harnesses, other owners' governance and Valle Armonia roadmaps are not claimed cleared.
+- Current scoped census from `coordination/handoff-census.json`: sixteen repositories, exactly four adopted draft records - [KI-TOOL-KI-CLI-115](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-115-enforce-roadmap-writing-checkout.md) Hold, [KI-TOOL-RIG-CORE-042](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-042-profile-filtered-dock-items.md) Hold, [KI-TOOL-TECHNE-CLI-006](/Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-006-guarded-host-commands.md) Hold, [KI-TOOL-TECHNE-CLI-008](/Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-008-host-patching-fields.md) Next. Zero triage, Awaiting-review or retained terminal records; scoped MCPs/apps, homebrew-tap, tools-mgit and tools-git-almanac are empty. Outside-scope apps/Harnesses, other owners' governance and Valle Armonia roadmaps are not claimed cleared.
 - The three KI deliveries (launcher-held wait gates, config preservation/local relaunch and Capital store naming/territory aliases) are accepted under Kris Decision 12 and pruned. Their complete Done states were committed and published before a separately verified deletion-only commit; current record/authoring audits pass. Durable product contracts remain in tools-ki's background-agents, local-installation, territory-selection and repository-operations guides and bootstrap specification. Master alias governance is carried by ALIAS-OWNERS below.
 - All four approved adoptions are verified and published. Writing-checkout enforcement, Dock filtering and guarded host commands are deliver/draft on formal Hold; patching-field/status parity is deliver/draft Next, released for local planning only. Its source-grounded canonical plan is published and awaits Kris's approval before Ready/implementation. No feature source or test was changed during planning.
 - Earlier Rig removal, self-update, sudo and default-handler records are accepted and pruned; Observatory territory selection and KI personal ranking are also already pruned. RIG-PRUNE has no remaining deletion target. Only stale owner-owned references remain, detailed under RIG-REFS. Do not prune absent records twice.
