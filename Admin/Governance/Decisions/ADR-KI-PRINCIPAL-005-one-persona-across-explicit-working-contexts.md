@@ -1,16 +1,16 @@
 ---
 note_type: admin/governance/decision
-id: ADR-KI-ARCADIA-005
+id: ADR-KI-PRINCIPAL-005
 title: 'One persona across explicit working contexts'
 date: 2026-09-15
 updated: 2026-10-11
 status: current
 decision_type: architecture
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/adr
-decision_depends_on: ['GDR-KI-ARCADIA-001', 'ADR-KI-ARCADIA-004']
+decision_depends_on: ['GDR-KI-PRINCIPAL-001', 'ADR-KI-PRINCIPAL-004']
 ---
 
-# ADR-KI-ARCADIA-005: One persona across explicit working contexts
+# ADR-KI-PRINCIPAL-005: One persona across explicit working contexts
 
 ## Context
 
@@ -37,5 +37,5 @@ A working context may reference territories and repositories, but it is neither 
 
 ## References
 
-- [[GDR-KI-ARCADIA-001-adopting-decision-records|GDR-KI-ARCADIA-001]] - adopts the Decision Records instrument the engineering discipline uses.
-- [[ADR-KI-ARCADIA-004-provider-neutral-isolated-agent-execution|ADR-KI-ARCADIA-004]] - establishes the provider-neutral controller, execution and isolation boundaries this decision extends.
+- [[GDR-KI-PRINCIPAL-001-adopting-decision-records|GDR-KI-PRINCIPAL-001]] - adopts the Decision Records instrument the engineering discipline uses.
+- [[ADR-KI-PRINCIPAL-004-provider-neutral-isolated-agent-execution|ADR-KI-PRINCIPAL-004]] - establishes the provider-neutral controller, execution and isolation boundaries this decision extends.

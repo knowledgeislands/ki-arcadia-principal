@@ -1,16 +1,16 @@
 ---
 note_type: admin/governance/decision
-id: ADR-KI-ARCADIA-006
+id: ADR-KI-PRINCIPAL-006
 title: Techne implementation ownership
 date: 2026-10-07
 updated: 2026-10-10
 status: current
 decision_type: architecture
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/adr
-decision_depends_on: ['GDR-KI-ARCADIA-001', 'ADR-KI-ARCADIA-004', 'ADR-KI-ARCADIA-005']
+decision_depends_on: ['GDR-KI-PRINCIPAL-001', 'ADR-KI-PRINCIPAL-004', 'ADR-KI-PRINCIPAL-005']
 ---
 
-# ADR-KI-ARCADIA-006: Techne implementation ownership
+# ADR-KI-PRINCIPAL-006: Techne implementation ownership
 
 ## Context
 
@@ -41,7 +41,7 @@ Ownership of the model follows the repository split:
 - The two repositories are joined only by the recipe manifest and the environment-variable contract through which binding values reach the harness scripts. A new provider lands as a harness provider section and stack plus a `tools-techne` adapter, each in its own repository and release.
 - Bindings and the controller target are per-person configuration outside both repositories, read by the CLI from the person's configuration directory. Neither repository carries a built-in binding, controller target or person-specific default. Kris's own bindings and controller target are rendered by Kris's chezmoi source.
 
-Provider neutrality of the recipe and binding schemas and of the CLI follows [[ADR-KI-ARCADIA-004-provider-neutral-isolated-agent-execution|ADR-KI-ARCADIA-004]], which keeps provider APIs as adapter concerns.
+Provider neutrality of the recipe and binding schemas and of the CLI follows [[ADR-KI-PRINCIPAL-004-provider-neutral-isolated-agent-execution|ADR-KI-PRINCIPAL-004]], which keeps provider APIs as adapter concerns.
 
 The CLI may operate or deploy harness capabilities only through explicit command and artefact contracts. It must not assume that harness source is co-located, that both repositories share a version, or that changing a harness image requires a CLI release. The harness must not publish a second authoritative `techne` executable.
 
@@ -61,6 +61,6 @@ Arcadia holds the only live copy of this decision record.
 
 ## References
 
-- [[GDR-KI-ARCADIA-001-adopting-decision-records|GDR-KI-ARCADIA-001]] - adopts the Decision Records instrument the engineering discipline uses.
-- [[ADR-KI-ARCADIA-004-provider-neutral-isolated-agent-execution|ADR-KI-ARCADIA-004]] - establishes provider-neutral controller and isolated execution boundaries.
-- [[ADR-KI-ARCADIA-005-one-persona-across-explicit-working-contexts|ADR-KI-ARCADIA-005]] - establishes persona continuity across explicit working contexts.
+- [[GDR-KI-PRINCIPAL-001-adopting-decision-records|GDR-KI-PRINCIPAL-001]] - adopts the Decision Records instrument the engineering discipline uses.
+- [[ADR-KI-PRINCIPAL-004-provider-neutral-isolated-agent-execution|ADR-KI-PRINCIPAL-004]] - establishes provider-neutral controller and isolated execution boundaries.
+- [[ADR-KI-PRINCIPAL-005-one-persona-across-explicit-working-contexts|ADR-KI-PRINCIPAL-005]] - establishes persona continuity across explicit working contexts.

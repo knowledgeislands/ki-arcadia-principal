@@ -1,16 +1,16 @@
 ---
 note_type: admin/governance/decision
-id: GDR-KI-ARCADIA-005
+id: GDR-KI-PRINCIPAL-005
 title: 'The roadmap model'
 date: 2026-10-07
 updated: 2026-10-10
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/gdr
 decision_type: governance
-decision_depends_on: ['SDR-KI-ARCADIA-004']
+decision_depends_on: ['SDR-KI-PRINCIPAL-004']
 ---
 
-# GDR-KI-ARCADIA-005: The roadmap model
+# GDR-KI-PRINCIPAL-005: The roadmap model
 
 ## Context
 
@@ -35,4 +35,4 @@ Knowledge Islands records work under one roadmap model.
 
 ## References
 
-- [SDR-KI-ARCADIA-004](SDR-KI-ARCADIA-004-the-enactment-process.md) - the Enactment Process through which this decision changes.
+- [SDR-KI-PRINCIPAL-004](SDR-KI-PRINCIPAL-004-the-enactment-process.md) - the Enactment Process through which this decision changes.

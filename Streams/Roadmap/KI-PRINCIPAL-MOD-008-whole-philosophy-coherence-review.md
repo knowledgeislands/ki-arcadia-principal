@@ -1,6 +1,6 @@
 ---
 note_type: stream-roadmap
-id: KI-ARCADIA-MOD-008
+id: KI-PRINCIPAL-MOD-008
 area: MOD
 title: Whole-philosophy coherence review
 kind: audit
@@ -44,6 +44,6 @@ Scope to read and check:
 
 - The whole philosophy under [[Philosophy]], end to end, for internal coherence and against what the website presents.
 - The [[Emerging Concepts]] notes and the candidate principles in Engineering Practice [[Principles]]: which to adopt, reshape or leave open.
-- The Library wording across [[Structure]], [[The Home of Knowledge]] and [[SDR-KI-ARCADIA-002-the-home-of-knowledge|SDR-KI-ARCADIA-002]], which disagree on whether Calendar sits inside the Library.
+- The Library wording across [[Structure]], [[The Home of Knowledge]] and [[SDR-KI-PRINCIPAL-002-the-home-of-knowledge|SDR-KI-PRINCIPAL-002]], which disagree on whether Calendar sits inside the Library.
 - The Harbour and Routes and Customs to-dos in [[Structure]], which wait for this review.
-- Avatar names per Realm against [[ADR-KI-ARCADIA-005-one-persona-across-explicit-working-contexts|ADR-KI-ARCADIA-005]].
+- Avatar names per Realm against [[ADR-KI-PRINCIPAL-005-one-persona-across-explicit-working-contexts|ADR-KI-PRINCIPAL-005]].

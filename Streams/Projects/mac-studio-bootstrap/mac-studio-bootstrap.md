@@ -19,7 +19,7 @@ Kris's Mac Studio, unused for over a month, is back to full estate capability. T
 
 This Project sits in [[rig|Rig]], because the Mac Studio, `sol` on the tailnet, is Kris's own hardware: Rig and chezmoi build and maintain it as Kris's rig on another machine, with the `studio` profile on `core`, declared in the chezmoi source. Techne may deploy onto it later but never owns its build recipe, and it is separate from Techne's [[agent-host]] Project.
 
-Under [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] it is an exempt remote agent host: agents administer it over Tailscale and SSH, with Kris approving each step.
+Under [[GDR-KI-PRINCIPAL-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-PRINCIPAL-004]] it is an exempt remote agent host: agents administer it over Tailscale and SSH, with Kris approving each step.
 
 ---
 

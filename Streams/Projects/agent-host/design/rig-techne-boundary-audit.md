@@ -68,7 +68,7 @@ Three differences stand out. The tool pins are a Rig profile, but they live insi
 ### Gaps
 
 - **No role concept.** Rig has profiles but no published, person-neutral role that more than one source can include.
-- **Rig cannot install a signed release archive.** That is why `converge.sh` installs `ki` itself (TECHNE-TOOLS-OPS-016 and -018). `techne` and `ki` share the same archive pattern, so a second archive-shipped tool already exists. ADR-KI-ARCADIA-003 set that as the condition for a built-in kind in `tools-rig`.
+- **Rig cannot install a signed release archive.** That is why `converge.sh` installs `ki` itself (TECHNE-TOOLS-OPS-016 and -018). `techne` and `ki` share the same archive pattern, so a second archive-shipped tool already exists. ADR-KI-PRINCIPAL-003 set that as the condition for a built-in kind in `tools-rig`.
 - **Linux coverage of the personal catalogue.** Only `mgit` has a Linux variant. Cheztoi's fragment accepts only built-in providers, so personal tools on Linux are limited to mise, uv, npm and direct download.
 - **No linux-arm64 builds** of `ki` or `techne`. This rules out Graviton instances and small ARM appliances.
 - **Rig's platforms are `macos`, `linux` and `any`.** Nothing distinguishes Debian from Arch, which an Arch base would need wherever native packages differ.
@@ -84,7 +84,7 @@ Three differences stand out. The tool pins are a Rig profile, but they live insi
 | role | (not used) | The missing word for what a host is for |
 | binding | one person's instance of a recipe | Clear; keep |
 | agent host | the Project, the recipe, the binding, the EC2 instance name `ki-techne-agent-host`, the Rig profile, the Rig category and the tag `ki-agent-host-id` | One phrase for seven things |
-| `direct-host` | ADR-KI-ARCADIA-003, ADR-KI-ARCADIA-006, ODR-KI-ARCADIA-001 and GDR-KI-ARCADIA-004 still use it | Decision 30 renamed it to `agent-host`, but Arcadia's Decision Records were not updated |
+| `direct-host` | ADR-KI-PRINCIPAL-003, ADR-KI-PRINCIPAL-006, ODR-KI-PRINCIPAL-001 and GDR-KI-PRINCIPAL-004 still use it | Decision 30 renamed it to `agent-host`, but Arcadia's Decision Records were not updated |
 | `terra`, `sol`, `vega` | machine names under the Decision 29(a) convention | Rig profiles are `laptop` and `studio`, and the host is still `ki-techne-agent-host` until its rebuild |
 | Rig | in `tools-rig`, a portable manager for a person's working setup; in Arcadia's Rig Initiative, "the workstation" | The Initiative's wording is narrower than the tool's |
 
@@ -99,7 +99,7 @@ A host has exactly one base and one or more roles.
 | Role | What it is for | Interactive personal layer | Example hosts | Hold position |
 | --- | --- | --- | --- | --- |
 | **Workstation** | A person at the keyboard: GUI applications, Dock, macOS defaults, services | chezmoi | `terra`, `sol` | outside the hold |
-| **Remote agentic rig** | Agent sessions the owner opens over Tailscale SSH: the KI toolchain, a workspace of repositories and the personal layer | chezmoi on owned hosts, Cheztoi on less-trusted hosts | `vega`, `sol` | exempt under [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold\|GDR-KI-ARCADIA-004]] |
+| **Remote agentic rig** | Agent sessions the owner opens over Tailscale SSH: the KI toolchain, a workspace of repositories and the personal layer | chezmoi on owned hosts, Cheztoi on less-trusted hosts | `vega`, `sol` | exempt under [[GDR-KI-PRINCIPAL-004-standing-agent-host-exemption-from-the-techne-programme-hold\|GDR-KI-PRINCIPAL-004]] |
 | **Appliance** | Runs a service or runtime, such as a Paperclip environment, with no remote desktop and no personal shell | none, or a minimal Cheztoi payload for the operator | none yet | held; needs a hold reshape |
 
 `sol` carries two roles, workstation and remote agentic rig. That is why the Mac Studio Project sits in Rig while also being an exempt remote agent host. Roles compose: it does not have to be one or the other.
@@ -170,16 +170,16 @@ As understood here (not re-checked in this run, which made no network calls), Om
 
 Plain words only. No record is changed by this audit.
 
-- **TECHNE-TOOLS-OPS-017** (binding shell at rebuild, rename to `vega`, remove record identifiers), `ki-techne-harness`: **stands**. It is base-layer work and fits any outcome below. Before the build, decide whether the rebuild also carries a recipe rename (decision 2). A rebuild costs a fresh Tailscale key and device, so it should happen once. If the recipe keeps its name, build as planned. Also update the GDR-KI-ARCADIA-004 scope in Arcadia when the rename lands, because it names the instance `ki-techne-agent-host`, alongside the tag and parameter prefix, which keep their values.
+- **TECHNE-TOOLS-OPS-017** (binding shell at rebuild, rename to `vega`, remove record identifiers), `ki-techne-harness`: **stands**. It is base-layer work and fits any outcome below. Before the build, decide whether the rebuild also carries a recipe rename (decision 2). A rebuild costs a fresh Tailscale key and device, so it should happen once. If the recipe keeps its name, build as planned. Also update the GDR-KI-PRINCIPAL-004 scope in Arcadia when the rename lands, because it names the instance `ki-techne-agent-host`, alongside the tag and parameter prefix, which keep their values.
 - **TECHNE-TOOLS-OPS-018** (shared tools through Rig), `ki-techne-harness`: **stands and grows in importance**. It is the change that turns the recipe into "base plus hand-off". Two changes are suggested. Its first gate (the `ki` provider) becomes the `tools-rig` signed-release kind. Claude Code's install moves into its scope, out of the boot script.
-- **TECHNE-TOOLS-OPS-016** (Rig provider for `ki`), `ki-techne-harness`: **should move**. It would be replaced by a `tools-rig` record for a built-in signed-release install kind, since `techne` already makes `ki` not the only archive-shipped tool. This needs a small amendment to ADR-KI-ARCADIA-003 in Arcadia, whose decision 3 chose the harness provider.
+- **TECHNE-TOOLS-OPS-016** (Rig provider for `ki`), `ki-techne-harness`: **should move**. It would be replaced by a `tools-rig` record for a built-in signed-release install kind, since `techne` already makes `ki` not the only archive-shipped tool. This needs a small amendment to ADR-KI-PRINCIPAL-003 in Arcadia, whose decision 3 chose the harness provider.
 - **TECHNE-TOOLS-OPS-024** (weekly pin bump), `ki-techne-harness`: **split it**. The part that stops comparing the Mac with the host's pins is correct under any outcome and can be approved now. Hold the pin-bump tool until the role profile's home is decided (decision 3), because the job should follow the profile. If roles become a general idea, pin bumping of exact locators could be a Rig capability next to `rig upgrade` rather than a harness script.
 - **TECHNE-TOOLS-OPS-019** (person-neutral recipe defaults) and **TECHNE-TOOLS-OPS-023** (controller and target tags), `ki-techne-harness`: **stand**, unaffected.
 - **TECHNE-TOOL-CLI-006** and **TECHNE-TOOL-CLI-008**, `tools-techne`: **stand**. Both are base lifecycle work.
 - **Rig's roadmap** (`tools-rig`: unwanted software removal, profile-filtered Dock items, self-updating applications, single sudo prompt): **stands**. All are workstation-role items. New work would be raised there: the signed-release install kind, a Debian-versus-Arch platform distinction (only if an Arch base is chosen), and role profiles that can be included from another source (if not already covered by `conf.d` fragments).
 - **chezmoi**: DOTFILES-UE-074 (host delegation) **stands**. A future item would add Linux variants for the personal tools Kris wants on remote agentic rigs.
 - **`tools-ki` and `tools-techne`**: a new item each for linux-arm64 release builds, if Kris wants ARM hosts.
-- **Arcadia**: the Rig Initiative's direction would widen from "the workstation" to "rigs any host for its role", and the Techne Initiative's would say it "takes hosts to ready". ADR-KI-ARCADIA-003 would gain the base, role, workspace and personal split and the signed-release kind. The four Decision Records still saying `direct-host` would take the Decision 30 rename.
+- **Arcadia**: the Rig Initiative's direction would widen from "the workstation" to "rigs any host for its role", and the Techne Initiative's would say it "takes hosts to ready". ADR-KI-PRINCIPAL-003 would gain the base, role, workspace and personal split and the signed-release kind. The four Decision Records still saying `direct-host` would take the Decision 30 rename.
 
 ---
 
@@ -188,12 +188,12 @@ Plain words only. No record is changed by this audit.
 **Outcome:** Kris accepted all ten decisions as recommended on 2026-10-11. [[Hosts, Roles and Layers]] holds the plain-language summary.
 
 1. **Adopt the four layers plus workspace.** Base (Techne), role (Rig), workspace (Techne through `ki`), personal (chezmoi or Cheztoi), with packaging as a separate supply concern. _Recommended: yes._
-2. **Name the role "remote agentic rig" and narrow the recipe.** Options: (a) keep the recipe called `agent-host` and only describe it as "the AWS base for a remote agentic rig"; (b) rename it now, in TECHNE-TOOLS-OPS-017's single rebuild. _Recommended: (a)._ Renaming touches the tags, parameter prefix, GDR-KI-ARCADIA-004 scope and the controller tooling for little gain. Revisit when a second recipe (appliance or owned host) exists.
+2. **Name the role "remote agentic rig" and narrow the recipe.** Options: (a) keep the recipe called `agent-host` and only describe it as "the AWS base for a remote agentic rig"; (b) rename it now, in TECHNE-TOOLS-OPS-017's single rebuild. _Recommended: (a)._ Renaming touches the tags, parameter prefix, GDR-KI-PRINCIPAL-004 scope and the controller tooling for little gain. Revisit when a second recipe (appliance or owned host) exists.
 3. **Home of the agentic-rig role profile** (today `recipes/agent-host/rig.toml`). Options: (a) `ki-techne-harness`, moved to a recipe-independent `roles/` folder; (b) `tools-ki`, beside `ki bootstrap`, as "what a KI session needs"; (c) chezmoi, as part of Kris's catalogue. _Recommended: (a) now._ `sol` can then include the same role later, so both agentic rigs share one definition, with variants for Homebrew on macOS.
 4. **Version policy per role.** Exact pins for rebuildable hosts (`vega`), newest through Homebrew for workstations (`terra`, `sol`), with the role declaring minimums both satisfy. _Recommended: yes._
-5. **Signed-release install kind in `tools-rig`**, replacing TECHNE-TOOLS-OPS-016's harness provider and amending ADR-KI-ARCADIA-003 decision 3. _Recommended: yes._
+5. **Signed-release install kind in `tools-rig`**, replacing TECHNE-TOOLS-OPS-016's harness provider and amending ADR-KI-PRINCIPAL-003 decision 3. _Recommended: yes._
 6. **Packaging strategy**: one KI release contract (per-platform archives including linux-arm64, signed manifest, embedded-key installer) with the Homebrew tap, the Rig kind and the installer as channels. Defer apt, AUR and Nix. _Recommended: yes._
 7. **Omarchy for `vega`.** Options: (a) stay on Ubuntu LTS and get the feel through role and personal layers; (b) move `vega` to Arch or Omarchy, adding an OS axis to the AWS provider and dropping security-only patching; (c) keep Omarchy for a future owned Linux workstation. _Recommended: (a) with (c)._
 8. **Release the holds.** Build TECHNE-TOOLS-OPS-017 as planned (if decision 2 is (a)), and approve TECHNE-TOOLS-OPS-024's status change while holding its pin-bump tool until decision 3 lands. _Recommended: yes._
 9. **Appliance role.** Record it as a third role in the taxonomy now, with no recipe until the hold is reshaped. _Recommended: yes._
-10. **Hand to state-of-play.** State-of-play turns the accepted decisions into handoffs to `ki-techne-harness`, `tools-rig`, `tools-ki`, `tools-techne`, chezmoi and Arcadia (the Initiative wording, ADR-KI-ARCADIA-003 and the `direct-host` rename). _Recommended: yes._
+10. **Hand to state-of-play.** State-of-play turns the accepted decisions into handoffs to `ki-techne-harness`, `tools-rig`, `tools-ki`, `tools-techne`, chezmoi and Arcadia (the Initiative wording, ADR-KI-PRINCIPAL-003 and the `direct-host` rename). _Recommended: yes._

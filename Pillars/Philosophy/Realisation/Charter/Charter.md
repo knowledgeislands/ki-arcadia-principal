@@ -13,7 +13,7 @@ author: Written with Claude
 
 ## Overview
 
-The Charter is the identity document at the heart of every Knowledge Island's `Admin/Governance/` zone and one of the two constitutionally required elements of realisation, alongside the [[Council]]. [[SDR-KI-ARCADIA-003-the-governance-of-an-island|SDR-KI-ARCADIA-003]] makes it mandatory: it records the island's identity and its declared adoption position on every activity group, and no unknowns are permitted. It is the authoritative cold-start document - the first note an agent or a person reads to learn what an island is and what it currently runs. This note defines what a Charter holds at model level; Arcadia's own Charter is [[Admin/Governance/Charter|Admin/Governance/Charter]].
+The Charter is the identity document at the heart of every Knowledge Island's `Admin/Governance/` zone and one of the two constitutionally required elements of realisation, alongside the [[Council]]. [[SDR-KI-PRINCIPAL-003-the-governance-of-an-island|SDR-KI-PRINCIPAL-003]] makes it mandatory: it records the island's identity and its declared adoption position on every activity group, and no unknowns are permitted. It is the authoritative cold-start document - the first note an agent or a person reads to learn what an island is and what it currently runs. This note defines what a Charter holds at model level; Arcadia's own Charter is [[Admin/Governance/Charter|Admin/Governance/Charter]].
 
 ---
 

@@ -76,7 +76,7 @@
       "col": 1,
       "type": "security",
       "label": "Hold amended",
-      "sublabel": "GDR-KI-ARCADIA-004",
+      "sublabel": "GDR-KI-PRINCIPAL-004",
       "tag": "gate for remote work",
       "width": 134
     },

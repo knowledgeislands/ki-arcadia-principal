@@ -1,6 +1,6 @@
-# AGENTS.md - Arcadia Principal
+# AGENTS.md - Knowledge Islands Principal
 
-This is the runtime-neutral working convention for Arcadia Principal.
+This is the runtime-neutral working convention for Knowledge Islands Principal.
 
 ## Territorial authority
 
@@ -42,7 +42,7 @@ Full specification in [[Introduction/Introduction|Introduction]]. Summary:
 Full specification in [[Structure]]. Summary:
 
 - 4 top-level folders: `Calendar` (daily notes, meeting notes, session digests, and periodic reviews), `Pillars` (internal knowledge - methodology, approach, and domain-specific reference), `Resources` (external reference - things that exist independently), `Streams` (status tracking for projects and workstreams - durable knowledge belongs in Pillars)
-- `Admin` and `-` (outbound) are canonical zones - `Admin` holds governance (`Admin/Governance/`: charter, known lands, conventions, decisions, note templates, policies) and operations (`Admin/Operations/`: activities, processes, live artifacts, skills) - migrated from Knowledge Capital per [[GDR-KI-ARCADIA-002-admin-zone-governance-and-operations|GDR-KI-ARCADIA-002]]; `-` is outbound staging. `Admin` is gated through the Enactment Process alongside `Pillars` and `Resources` - changes route through a proposal. [[Admin/MEMORY|MEMORY]] is the root memory index of active Admin content
+- `Admin` and `-` (outbound) are canonical zones - `Admin` holds governance (`Admin/Governance/`: charter, known lands, conventions, decisions, note templates, policies) and operations (`Admin/Operations/`: activities, processes, live artifacts, skills) - migrated from Knowledge Capital per [[GDR-KI-PRINCIPAL-002-admin-zone-governance-and-operations|GDR-KI-PRINCIPAL-002]]; `-` is outbound staging. `Admin` is gated through the Enactment Process alongside `Pillars` and `Resources` - changes route through a proposal. [[Admin/MEMORY|MEMORY]] is the root memory index of active Admin content
 - `Pillars` and `Resources` share subfolder names by design - e.g. `Pillars/Finance` holds internal knowledge; `Resources/Finance` holds general reference
 - `Streams` is an operational container: `Streams/Roadmap/` holds flat finite work records. Recurring obligations are Activity notes in the configured collection, currently `Admin/Operations/Activities/`; opted-in housekeeping Activities produce ordinary roadmap runs. A work record's horizon and lifecycle are frontmatter metadata, never a folder path.
 - Calendar note types - daily notes, meeting notes, session digests, and the monthly index are all siblings in the same month folder, each referenced from the daily note by wikilink; the daily note does not duplicate their content. Weekly notes are filed separately in a per-year `YYYY By Week/` folder:

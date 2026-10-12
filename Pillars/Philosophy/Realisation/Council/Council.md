@@ -13,7 +13,7 @@ author: Written with Claude
 
 ## Overview
 
-The Council is the governing body of a Knowledge Island and the second constitutionally required element of realisation, alongside the [[Realisation/Charter/Charter|Charter]]. [[SDR-KI-ARCADIA-003-the-governance-of-an-island|SDR-KI-ARCADIA-003]] defines it as the body that ratifies proposals and holds authority on the island, and declares that each island's `Admin/` zone declares its council. Its authority is not exercised separately from the island's processes: the [[Processes/Enactment Process/Enactment Process|Enactment Process]] is how the council operates. This note describes the council at model level; Arcadia's own council is declared in its Enactment Process.
+The Council is the governing body of a Knowledge Island and the second constitutionally required element of realisation, alongside the [[Realisation/Charter/Charter|Charter]]. [[SDR-KI-PRINCIPAL-003-the-governance-of-an-island|SDR-KI-PRINCIPAL-003]] defines it as the body that ratifies proposals and holds authority on the island, and declares that each island's `Admin/` zone declares its council. Its authority is not exercised separately from the island's processes: the [[Processes/Enactment Process/Enactment Process|Enactment Process]] is how the council operates. This note describes the council at model level; Arcadia's own council is declared in its Enactment Process.
 
 ---
 

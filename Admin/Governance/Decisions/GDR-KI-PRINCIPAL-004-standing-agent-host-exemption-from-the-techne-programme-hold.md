@@ -1,16 +1,16 @@
 ---
 note_type: admin/governance/decision
-id: GDR-KI-ARCADIA-004
+id: GDR-KI-PRINCIPAL-004
 title: 'Standing agent-host exemption from the Techne Programme Hold'
 date: 2026-10-07
 updated: 2026-10-11
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/gdr
 decision_type: governance
-decision_depends_on: ['SDR-KI-ARCADIA-004']
+decision_depends_on: ['SDR-KI-PRINCIPAL-004']
 ---
 
-# GDR-KI-ARCADIA-004: Standing agent-host exemption from the Techne Programme Hold
+# GDR-KI-PRINCIPAL-004: Standing agent-host exemption from the Techne Programme Hold
 
 ## Context
 
@@ -47,4 +47,4 @@ The hold carries one exemption, for the single agent host and the owned remote a
 
 ## References
 
-- [[SDR-KI-ARCADIA-004-the-enactment-process|SDR-KI-ARCADIA-004]] - the Enactment Process through which the exemption was made and through which it is changed or withdrawn.
+- [[SDR-KI-PRINCIPAL-004-the-enactment-process|SDR-KI-PRINCIPAL-004]] - the Enactment Process through which the exemption was made and through which it is changed or withdrawn.

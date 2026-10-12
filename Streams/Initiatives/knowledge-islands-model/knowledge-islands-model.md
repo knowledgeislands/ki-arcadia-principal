@@ -23,4 +23,4 @@ What a Knowledge Island is and how islands work together: the model and its tend
 - Arcadia's finite model and tending work belongs to a Project.
 - How Kris works with master and Project threads, background agents and the tools belongs to the [[ways-of-working]] Project.
 - One vocabulary and model for the command centre, and the read-only state-of-play view, belong to the [[command-centre]] Project.
-- The territory-selection design papers sit in this Initiative's [[knowledge-islands-model/design/design|design folder]] until [[ADR-KI-ARCADIA-002-territory-derived-repository-selection|ADR-KI-ARCADIA-002]] consolidates them.
+- The territory-selection design papers sit in this Initiative's [[knowledge-islands-model/design/design|design folder]] until [[ADR-KI-PRINCIPAL-002-territory-derived-repository-selection|ADR-KI-PRINCIPAL-002]] consolidates them.

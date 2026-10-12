@@ -12,7 +12,7 @@ author: Written with Claude
 
 ## Overview
 
-`Admin` is the governance and operations zone - one of the five canonical Knowledge Islands zones (`Calendar`, `Pillars`, `Resources`, `Streams`, `Admin`). It holds everything that defines what this island is and how it runs, migrated from Knowledge Capital per [[Admin/Governance/Decisions/GDR-KI-ARCADIA-002-admin-zone-governance-and-operations|GDR-KI-ARCADIA-002]]. The zone splits into two arms: Governance holds the artefacts that must be true for the island to be what it is, and Operations holds the artefacts that describe how it runs from day to day. A root memory index sits beside them as the entry point for a session. Changes to anything under `Admin` pass through the [[Admin/Operations/Processes/Enactment Process|Enactment Process]].
+`Admin` is the governance and operations zone - one of the five canonical Knowledge Islands zones (`Calendar`, `Pillars`, `Resources`, `Streams`, `Admin`). It holds everything that defines what this island is and how it runs, migrated from Knowledge Capital per [[Admin/Governance/Decisions/GDR-KI-PRINCIPAL-002-admin-zone-governance-and-operations|GDR-KI-PRINCIPAL-002]]. The zone splits into two arms: Governance holds the artefacts that must be true for the island to be what it is, and Operations holds the artefacts that describe how it runs from day to day. A root memory index sits beside them as the entry point for a session. Changes to anything under `Admin` pass through the [[Admin/Operations/Processes/Enactment Process|Enactment Process]].
 
 ## Governance
 

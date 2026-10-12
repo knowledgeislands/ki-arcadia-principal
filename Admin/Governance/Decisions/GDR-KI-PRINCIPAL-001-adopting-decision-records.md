@@ -1,6 +1,6 @@
 ---
 note_type: admin/governance/decision
-id: GDR-KI-ARCADIA-001
+id: GDR-KI-PRINCIPAL-001
 title: 'Adopting Decision Records'
 date: 2026-07-18
 status: current
@@ -8,7 +8,7 @@ decision_type: governance
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/gdr
 ---
 
-# GDR-KI-ARCADIA-001: Adopting Decision Records
+# GDR-KI-PRINCIPAL-001: Adopting Decision Records
 
 ## Context
 

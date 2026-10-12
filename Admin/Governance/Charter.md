@@ -26,8 +26,9 @@ Fixed parameters that distinguish this Knowledge Island. Automations and skill p
 | --- | --- |
 | **Territory name** | Knowledge Islands |
 | **Capital** | Arcadia |
-| **Canonical repository** | `knowledgeislands/ki-arcadia-principal` |
-| **Island name** | Arcadia Principal |
+| **Canonical repository** | `knowledgeislands/ki-principal` |
+| **Repository code** | `KI-PRINCIPAL` |
+| **Island name** | Knowledge Islands Principal |
 | **Repository folder** | `ki-arcadia-principal` |
 | **Skill name** | `arcadia-principal` |
 | **Skill triggers** | "save to Arcadia", "add to Arcadia", "search Arcadia", "what does Arcadia say about", "update the Arcadia notes on" |
@@ -39,13 +40,13 @@ Fixed parameters that distinguish this Knowledge Island. Automations and skill p
 
 ## Territorial authority
 
-Arcadia is the sole Capital of the Knowledge Islands territory. Its canonical repository identity is [knowledgeislands/ki-arcadia-principal](https://github.com/knowledgeislands/ki-arcadia-principal). [[Known Lands]] records the authoritative internal inventory and distinguishes external signposting.
+Arcadia is the sole Capital of the Knowledge Islands territory. Its canonical repository identity is [knowledgeislands/ki-principal](https://github.com/knowledgeislands/ki-principal). [[Known Lands]] records the authoritative internal inventory and distinguishes external signposting.
 
 The Capital holds shared territorial governance. Each member island retains its subject or product ownership, source access rules, canonical acceptance and repository-owned delivery authority. A specialist engineering island or an implementation product does not become another territorial principal.
 
 Other territories may reference or adopt the public KI model under their own authority. Arcadia's authorship grants no jurisdiction over those consumers and does not require them to disclose private membership or adoption.
 
-Arcadia also holds the territory's trade-route policy. Its `.ki.toml` declares the territory name and members in `territory_name` and `territory_members` under `[skills.ki-repo]` and the only permitted trade channels, standing knowledge-intake grants and knowledge subtypes in `[skills.ki-trades.territory]`. Every repository names its Capital in `[skills.ki-repo].capital`, and members carry no route tables of their own. A route grants visibility of a deliberate handoff only: the source still owns what it submits, and the receiver still owns receipt, disposition and acceptance. No route grants peer write, scheduling, implementation, publication, automatic acquisition or acceptance. Policy changes follow the Enactment Process. [[GDR-KI-ARCADIA-003-capital-governed-trade-routes|GDR-KI-ARCADIA-003]] records the decision.
+Arcadia also holds the territory's trade-route policy. Its `.ki.toml` declares the territory name and members in `territory_name` and `territory_members` under `[skills.ki-repo]` and the only permitted trade channels, standing knowledge-intake grants and knowledge subtypes in `[skills.ki-trades.territory]`. Every repository names its Capital in `[skills.ki-repo].capital`, and members carry no route tables of their own. A route grants visibility of a deliberate handoff only: the source still owns what it submits, and the receiver still owns receipt, disposition and acceptance. No route grants peer write, scheduling, implementation, publication, automatic acquisition or acceptance. Policy changes follow the Enactment Process. [[GDR-KI-PRINCIPAL-003-capital-governed-trade-routes|GDR-KI-PRINCIPAL-003]] records the decision.
 
 Repository selection derives from the Capital's ordered `territory_members`, including Arcadia, with `territory_prefix = "knowledge-islands"` as the short handle. KI and mgit support `-t knowledge-islands`, `--estate` and literal, case-sensitive directory-name prefix filters through `-f`. The registry resolves canonical identities to machine-local locations, and a Paperclip company coordinates admitted work with organisation code `KIS`. None establishes territorial membership, permission or cross-repository write authority. Reconcile any disagreement with this Charter and Known Lands through the accountable owners.
 

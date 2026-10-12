@@ -236,7 +236,7 @@
   "boundaries": [
     {
       "kind": "region",
-      "label": "Live under the standing exemption (GDR-KI-ARCADIA-004)",
+      "label": "Live under the standing exemption (GDR-KI-PRINCIPAL-004)",
       "wraps": [
         "rig",
         "tailnet",

@@ -1,6 +1,6 @@
 ---
 note_type: admin/governance/decision
-id: SDR-KI-ARCADIA-001
+id: SDR-KI-PRINCIPAL-001
 title: 'Knowledge Islands - The Strategy'
 date: 2026-06-25
 status: current
@@ -8,7 +8,7 @@ decision_type_url: https://knowledgeislands.info/specifications/decision-records
 decision_type: strategy
 ---
 
-# SDR-KI-ARCADIA-001: Knowledge Islands - The Strategy
+# SDR-KI-PRINCIPAL-001: Knowledge Islands - The Strategy
 
 ## Context
 

@@ -1,21 +1,21 @@
 ---
 note_type: admin/governance/decision
-id: ADR-KI-ARCADIA-001
+id: ADR-KI-PRINCIPAL-001
 title: 'Provider-neutral knowledge acquisition'
 date: 2026-08-23
 status: current
 decision_type: architecture
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/adr
-decision_depends_on: ['SDR-KI-ARCADIA-002']
+decision_depends_on: ['SDR-KI-PRINCIPAL-002']
 ---
 
-# ADR-KI-ARCADIA-001: Provider-neutral knowledge acquisition
+# ADR-KI-PRINCIPAL-001: Provider-neutral knowledge acquisition
 
 ## Context
 
 An island's Harbour receives material from many external systems: AI sessions, ChatGPT and Granola exports, Slack, email, documents, and future sources. These systems retain transient working state or external records, but none is a Knowledge Islands knowledge base. Their storage mechanics vary between local files, export bundles, APIs, and MCP servers.
 
-The Harbour defined by [[SDR-KI-ARCADIA-002-the-home-of-knowledge|SDR-KI-ARCADIA-002]] needs a common ingress model that preserves available source material before interpretation. A provider-specific archive or session browser cannot provide that model because durable knowledge may emerge only after review and harvesting, and an initially imperfect routing decision must not lose the source.
+The Harbour defined by [[SDR-KI-PRINCIPAL-002-the-home-of-knowledge|SDR-KI-PRINCIPAL-002]] needs a common ingress model that preserves available source material before interpretation. A provider-specific archive or session browser cannot provide that model because durable knowledge may emerge only after review and harvesting, and an initially imperfect routing decision must not lose the source.
 
 ## Decision
 
@@ -35,4 +35,4 @@ Acquisition does not require perfect initial routing, infer durable knowledge, o
 
 ## References
 
-- [SDR-KI-ARCADIA-002: The Home of Knowledge](SDR-KI-ARCADIA-002-the-home-of-knowledge.md) - establishes the Harbour as the island's incoming working area.
+- [SDR-KI-PRINCIPAL-002: The Home of Knowledge](SDR-KI-PRINCIPAL-002-the-home-of-knowledge.md) - establishes the Harbour as the island's incoming working area.

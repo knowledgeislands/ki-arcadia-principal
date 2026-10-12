@@ -11,9 +11,9 @@ harnesses = [
 ]
 
 [skills.ki-repo]
-repository = "https://github.com/knowledgeislands/ki-arcadia-principal"
-title = "Arcadia Principal"
-capital = "https://github.com/knowledgeislands/ki-arcadia-principal"
+repository = "https://github.com/knowledgeislands/ki-principal"
+title = "Knowledge Islands Principal"
+capital = "https://github.com/knowledgeislands/ki-principal"
 description = "The core knowledge repository of the Knowledge Islands project - governance base, evolving KB, and decision record."
 supported_runtimes = [
   "claude-code",
@@ -24,7 +24,7 @@ visibility = "public"
 license = "MIT"
 repo_type = "kb"
 primary_shape = "ki-repo-kb"
-repo_code = "KI-ARCADIA"
+repo_code = "KI-PRINCIPAL"
 store_roles = [
   "notes",
   "sources",
@@ -35,7 +35,7 @@ territory_members = [
   "https://github.com/knowledgeislands/apps-observatory",
   "https://github.com/knowledgeislands/homebrew-tap",
   "https://github.com/knowledgeislands/ki-agentic-harness",
-  "https://github.com/knowledgeislands/ki-arcadia-principal",
+  "https://github.com/knowledgeislands/ki-principal",
   "https://github.com/knowledgeislands/ki-specifications",
   "https://github.com/knowledgeislands/ki-techne-harness",
   "https://github.com/knowledgeislands/ki-website",

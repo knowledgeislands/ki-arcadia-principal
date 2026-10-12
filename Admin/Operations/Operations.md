@@ -12,7 +12,7 @@ author: Written with Claude
 
 ## Overview
 
-The `Admin/Operations/` arm holds the artefacts that describe **how Arcadia runs day to day** - activities, processes, live artifacts and the operational lessons register. The active agent skill set is not recorded here: it is declared in `.ki.toml` and listed in [[Admin/Governance/Conformance|Conformance]]. These are live, mutable artefacts specific to Arcadia's integrations and conventions; what the island must be is defined in [[Admin/Governance/Governance|Governance]]. The arm was populated by migration from `Pillars/Knowledge Capital/` per [[Admin/Governance/Decisions/GDR-KI-ARCADIA-002-admin-zone-governance-and-operations|GDR-KI-ARCADIA-002]].
+The `Admin/Operations/` arm holds the artefacts that describe **how Arcadia runs day to day** - activities, processes, live artifacts and the operational lessons register. The active agent skill set is not recorded here: it is declared in `.ki.toml` and listed in [[Admin/Governance/Conformance|Conformance]]. These are live, mutable artefacts specific to Arcadia's integrations and conventions; what the island must be is defined in [[Admin/Governance/Governance|Governance]]. The arm was populated by migration from `Pillars/Knowledge Capital/` per [[Admin/Governance/Decisions/GDR-KI-PRINCIPAL-002-admin-zone-governance-and-operations|GDR-KI-PRINCIPAL-002]].
 
 ## Activities
 

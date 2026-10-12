@@ -1,20 +1,20 @@
 ---
 note_type: admin/governance/decision
-id: ADR-KI-ARCADIA-003
+id: ADR-KI-PRINCIPAL-003
 title: 'The agent host workstation model'
 date: 2026-10-08
 updated: 2026-10-11
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/adr
 decision_type: architecture
-decision_depends_on: ['GDR-KI-ARCADIA-004', 'ODR-KI-ARCADIA-001']
+decision_depends_on: ['GDR-KI-PRINCIPAL-004', 'ODR-KI-PRINCIPAL-001']
 ---
 
-# ADR-KI-ARCADIA-003: The agent host workstation model
+# ADR-KI-PRINCIPAL-003: The agent host workstation model
 
 ## Context
 
-[[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] exempts one agent host, `ki-techne-agent-host`, from the Techne Programme Hold, and [[ODR-KI-ARCADIA-001-keeping-work-safe-on-the-agent-host|ODR-KI-ARCADIA-001]] keeps work on it safe. The host's binding owner opens sessions there, so the host must feel like the owner's own workstation running on another machine: the same tools, skills, shell and working rules. The `direct-host` recipe serves any binding owner and any host, a cloud instance or an owned machine, running Linux or macOS. The model therefore holds for the hardest case: a host the owner may not own or administer, whose operator user may have no root access, which cannot reach the owner's private configuration source, and which must stay inside its exemption's bounds: no new credential and no unattended process. The current host is such a case: a Linux cloud instance.
+[[GDR-KI-PRINCIPAL-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-PRINCIPAL-004]] exempts one agent host, `ki-techne-agent-host`, from the Techne Programme Hold, and [[ODR-KI-PRINCIPAL-001-keeping-work-safe-on-the-agent-host|ODR-KI-PRINCIPAL-001]] keeps work on it safe. The host's binding owner opens sessions there, so the host must feel like the owner's own workstation running on another machine: the same tools, skills, shell and working rules. The `direct-host` recipe serves any binding owner and any host, a cloud instance or an owned machine, running Linux or macOS. The model therefore holds for the hardest case: a host the owner may not own or administer, whose operator user may have no root access, which cannot reach the owner's private configuration source, and which must stay inside its exemption's bounds: no new credential and no unattended process. The current host is such a case: a Linux cloud instance.
 
 Each binding owner keeps their personal configuration in their own source, outside the recipe; for example, Kris keeps it in a chezmoi source whose Rig catalogue declares Kris's tools for macOS only. Rig runs on Linux and macOS without root and has non-Homebrew providers, but it has no install path for `ki`'s signed release archives and no proof on a real Linux host. The `direct-host` recipe's `converge.sh` installs the shared tools itself.
 
@@ -22,7 +22,7 @@ Each binding owner keeps their personal configuration in their own source, outsi
 
 The agent host becomes the binding owner's working machine through two layers with two owners, delivered through the existing setup path.
 
-- **Recipe layer.** The `direct-host` recipe in `ki-techne-harness` owns what every session needs, the same for any binding owner: a `direct-host` Rig profile declaring `ki`, mise, Bun, Node, Codex and Claude Code with exact pins (a minimum for Claude Code) and a variant for each target OS, Linux or macOS, plus what is not a tool - Git settings, the repository set and `ki bootstrap`, which installs the KI skills. The profile declares no managed resources. The recipe owns `~/.config/rig/rig.toml` and its `[rig]` table, `~/.config/mise/config.toml`, the agent instructions under `~/.claude/`, and a host-instructions file for both Claude and Codex carrying the two-checkout and writing-checkout rules of [[ODR-KI-ARCADIA-001-keeping-work-safe-on-the-agent-host|ODR-KI-ARCADIA-001]].
+- **Recipe layer.** The `direct-host` recipe in `ki-techne-harness` owns what every session needs, the same for any binding owner: a `direct-host` Rig profile declaring `ki`, mise, Bun, Node, Codex and Claude Code with exact pins (a minimum for Claude Code) and a variant for each target OS, Linux or macOS, plus what is not a tool - Git settings, the repository set and `ki bootstrap`, which installs the KI skills. The profile declares no managed resources. The recipe owns `~/.config/rig/rig.toml` and its `[rig]` table, `~/.config/mise/config.toml`, the agent instructions under `~/.claude/`, and a host-instructions file for both Claude and Codex carrying the two-checkout and writing-checkout rules of [[ODR-KI-PRINCIPAL-001-keeping-work-safe-on-the-agent-host|ODR-KI-PRINCIPAL-001]].
 - **Personal layer.** The binding owner's personal-configuration source is the main source of the personal layer. Its projection for the host is the profile payload, rendered on the operator's workstation - the machine the binding owner works from: an explicit allowlist of host-safe files and a Rig fragment selecting the owner's personal tools and skills by their catalogue identities, with variants for the target OS. For example, Kris's projection is Cheztoi, rendered by chezmoi from Kris's chezmoi source. The personal layer contributes only Rig `conf.d` fragments and files through declared hooks, never the recipe's destinations.
 - **Payload contract.** The harness applies the binding owner's profile payload if one is supplied, without naming any person. The payload carries a revision, file ownership and permissions, removal of files dropped from the allowlist, and validation of rendered contents for secrets, paths invalid on the target OS and managed resources. Delivery is pull-on-demand through `techne host setup`; there is no second channel and no schedule.
 - **No personal-configuration tool on the host.** No personal-configuration tool is installed or applied on the host; the personal layer arrives only as the payload. The `techne` binary is not installed there either; `techne` runs from its checkout through `bun run`. Rig is the only new binary.
@@ -43,5 +43,5 @@ The agent host becomes the binding owner's working machine through two layers wi
 
 ## References
 
-- [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] - the exemption whose bounds the host's profile stays within.
-- [[ODR-KI-ARCADIA-001-keeping-work-safe-on-the-agent-host|ODR-KI-ARCADIA-001]] - the durability model whose pins and writing-checkout rule this builds on.
+- [[GDR-KI-PRINCIPAL-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-PRINCIPAL-004]] - the exemption whose bounds the host's profile stays within.
+- [[ODR-KI-PRINCIPAL-001-keeping-work-safe-on-the-agent-host|ODR-KI-PRINCIPAL-001]] - the durability model whose pins and writing-checkout rule this builds on.

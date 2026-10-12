@@ -58,7 +58,7 @@ These are conceptual roles, not definitions. They should be tested against real 
 
 The same person might use different Avatar names or manifestations in different Realms.
 
-This sits in tension with [[ADR-KI-ARCADIA-005-one-persona-across-explicit-working-contexts|ADR-KI-ARCADIA-005]], which gives each person one enduring persona across explicit working contexts, with Kitteth as Kris's instance. Whether that one persona may carry a different name or manifestation per Realm is not settled; the decision stands until a review says otherwise.
+This sits in tension with [[ADR-KI-PRINCIPAL-005-one-persona-across-explicit-working-contexts|ADR-KI-PRINCIPAL-005]], which gives each person one enduring persona across explicit working contexts, with Kitteth as Kris's instance. Whether that one persona may carry a different name or manifestation per Realm is not settled; the decision stands until a review says otherwise.
 
 ---
 

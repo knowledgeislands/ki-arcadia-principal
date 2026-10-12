@@ -67,7 +67,7 @@ The architectural commitments are one persona per person, explicit authority-bou
 
 This overview does not select a controller product, command surface, repository, provider, provisioning mechanism or deployment topology. It also does not assert that the intended fabric capabilities are already proven. Concrete implementations and operational evidence remain governed in their owning repositories and work records.
 
-[[ADR-KI-ARCADIA-004-provider-neutral-isolated-agent-execution|ADR-KI-ARCADIA-004]] defines the provider-neutral isolation model for agent execution. [[ADR-KI-ARCADIA-005-one-persona-across-explicit-working-contexts|ADR-KI-ARCADIA-005]] records the persona and working-context architecture.
+[[ADR-KI-PRINCIPAL-004-provider-neutral-isolated-agent-execution|ADR-KI-PRINCIPAL-004]] defines the provider-neutral isolation model for agent execution. [[ADR-KI-PRINCIPAL-005-one-persona-across-explicit-working-contexts|ADR-KI-PRINCIPAL-005]] records the persona and working-context architecture.
 
 Return to [[Architecture]].
 

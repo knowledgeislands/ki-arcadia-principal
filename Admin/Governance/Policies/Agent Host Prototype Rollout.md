@@ -8,7 +8,7 @@ author: AI-assisted
 
 ## Overview
 
-This diagram shows the order in which the limited remote agent prototype comes into use, and how it stops. It explains the gates of the exemption in the [[Techne Programme Hold]], which [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]] records and [KI-ARCADIA-GOV-020](https://github.com/knowledgeislands/ki-arcadia-principal/blob/fddfca69b4642cb4db4113123aa7dc613c3e92f4/Streams/Roadmap/KI-ARCADIA-GOV-020-limited-remote-agent-prototype.md) defined. It illustrates the policy; where they differ, the hold and the Decision Record govern.
+This diagram shows the order in which the limited remote agent prototype comes into use, and how it stops. It explains the gates of the exemption in the [[Techne Programme Hold]], which [[GDR-KI-PRINCIPAL-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-PRINCIPAL-004]] records and [KI-ARCADIA-GOV-020](https://github.com/knowledgeislands/ki-arcadia-principal/blob/fddfca69b4642cb4db4113123aa7dc613c3e92f4/Streams/Roadmap/KI-ARCADIA-GOV-020-limited-remote-agent-prototype.md) defined. It illustrates the policy; where they differ, the hold and the Decision Record govern.
 
 ![[Agent Host Prototype Rollout.svg]]
 
@@ -16,7 +16,7 @@ This diagram shows the order in which the limited remote agent prototype comes i
 
 ## Governance
 
-Kris accepted the prototype's bounds on 7 October 2026, and the hold was then amended through [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]]. That amendment is the gate for every remote step: no remote action, including creating the host or testing a connection, precedes it.
+Kris accepted the prototype's bounds on 7 October 2026, and the hold was then amended through [[GDR-KI-PRINCIPAL-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-PRINCIPAL-004]]. That amendment is the gate for every remote step: no remote action, including creating the host or testing a connection, precedes it.
 
 ## Access and build
 

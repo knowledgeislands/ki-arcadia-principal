@@ -479,8 +479,8 @@ rect.c-bg-rect { fill: var(--bg); }
           <text x="211" y="132" class="t-muted" font-size="8" text-anchor="middle">GOV-020, 7 Oct 2026</text>
         </g>
 
-        <g id="node-amend" data-node-id="amend" data-node-label="Hold amended" tabindex="0" role="button" aria-label="Focus Hold amended, GDR-KI-ARCADIA-004, Governance: Kris only" aria-pressed="false" data-node-kind="security" data-node-sublabel="GDR-KI-ARCADIA-004" data-node-tag="gate for remote work" data-node-context="Governance: Kris only">
-          <title>Hold amended · GDR-KI-ARCADIA-004 · Governance: Kris only · gate for remote work</title>
+        <g id="node-amend" data-node-id="amend" data-node-label="Hold amended" tabindex="0" role="button" aria-label="Focus Hold amended, GDR-KI-PRINCIPAL-004, Governance: Kris only" aria-pressed="false" data-node-kind="security" data-node-sublabel="GDR-KI-PRINCIPAL-004" data-node-tag="gate for remote work" data-node-context="Governance: Kris only">
+          <title>Hold amended · GDR-KI-PRINCIPAL-004 · Governance: Kris only · gate for remote work</title>
           <rect x="306" y="86" width="134" height="68" rx="6" class="c-mask"/>
           <rect x="306" y="86" width="134" height="68" rx="6" class="c-security" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="security" class="semantic-sigil s-security" transform="translate(312 92) scale(0.6875)">
@@ -488,7 +488,7 @@ rect.c-bg-rect { fill: var(--bg); }
             <path d="m5.8 8 1.5 1.5 3-3"/>
           </g>
           <text data-node-label="" x="373" y="107" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">Hold amended</text>
-          <text x="373" y="124" class="t-muted" font-size="8" text-anchor="middle">GDR-KI-ARCADIA-004</text>
+          <text x="373" y="124" class="t-muted" font-size="8" text-anchor="middle">GDR-KI-PRINCIPAL-004</text>
         <text x="373" y="142" class="t-security" font-size="7" text-anchor="middle">gate for remote work</text>
         </g>
 

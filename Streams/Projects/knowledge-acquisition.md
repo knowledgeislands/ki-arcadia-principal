@@ -15,7 +15,7 @@ author: Written with Claude
 
 ## Outcome
 
-Document the provider-neutral knowledge acquisition lifecycle in one Pillars note, acquire AI sessions into their owning repositories with source conversations retired only once each move is verified, and settle the browser-runtime and WhatsApp spool questions. The test: every record that names this Project is delivered or closed. The direction follows [[ADR-KI-ARCADIA-001-provider-neutral-knowledge-acquisition|ADR-KI-ARCADIA-001]]; Kris is to confirm the finite outcome.
+Document the provider-neutral knowledge acquisition lifecycle in one Pillars note, acquire AI sessions into their owning repositories with source conversations retired only once each move is verified, and settle the browser-runtime and WhatsApp spool questions. The test: every record that names this Project is delivered or closed. The direction follows [[ADR-KI-PRINCIPAL-001-provider-neutral-knowledge-acquisition|ADR-KI-PRINCIPAL-001]]; Kris is to confirm the finite outcome.
 
 This Project sits in [[knowledge-islands-model|Knowledge Islands model]].
 

@@ -1,6 +1,6 @@
 ---
 note_type: admin/governance/decision
-id: GDR-KI-ARCADIA-006
+id: GDR-KI-PRINCIPAL-006
 title: 'Knowledge Islands ecosystem fundamentals'
 date: 2026-09-24
 updated: 2026-10-10
@@ -9,7 +9,7 @@ decision_type_url: https://knowledgeislands.info/specifications/decision-records
 decision_type: governance
 ---
 
-# GDR-KI-ARCADIA-006: Knowledge Islands ecosystem fundamentals
+# GDR-KI-PRINCIPAL-006: Knowledge Islands ecosystem fundamentals
 
 ## Context
 
@@ -24,7 +24,7 @@ This record separates five factorisation dimensions: repository structure; autho
 - `ki-arcadia-principal` owns philosophy, the conceptual model, shared ecosystem governance, estate-wide initiative records, the Knowledge Islands territory roster, and routing where no natural repository owner exists. Arcadia owns the question, participating set, evidence, and completion condition; an implementation becomes repository work only when its receiving owner accepts it.
 - `ki-techne-principal` is archived read-only. It holds no live work and establishes no knowledge or principal authority; Arcadia owns canonical engineering knowledge, and the Techné programme hold applies as Arcadia declares it.
 - `ki-agentic-harness` owns the reusable agent-facing capabilities it publishes and generic MCP governance, binding semantics, and conformance assets. It does not contain or own executable MCP products merely because those products consume its governance.
-- `tools-ki` owns generic repository host mechanics and the public `ki` command grammar. `ki-techne-harness` owns Techne execution-harness applications, controller and execution-fabric implementation, packaging, deployment, and provider adapters. `tools-techne` owns the independently released `techne` operator command. [[ADR-KI-ARCADIA-006-techne-implementation-ownership|ADR-KI-ARCADIA-006]] decides this split in detail.
+- `tools-ki` owns generic repository host mechanics and the public `ki` command grammar. `ki-techne-harness` owns Techne execution-harness applications, controller and execution-fabric implementation, packaging, deployment, and provider adapters. `tools-techne` owns the independently released `techne` operator command. [[ADR-KI-PRINCIPAL-006-techne-implementation-ownership|ADR-KI-PRINCIPAL-006]] decides this split in detail.
 - Each application, tool, and MCP product repository owns its executable source, behaviour, provider policy, schema, trust boundary, compatibility, tests, build identity, release, and lifecycle. `apps-observatory` owns the Observatory application and governed operator experience.
 - `ki-website` owns public editorial publication; `homebrew-tap` owns Homebrew formula acceptance and distribution. None acquires the authority of projected or distributed source.
 - Dotfiles owns personal environment declarations, binding selection, and runtime registration. Each native provider owns its mutable native state.
@@ -34,7 +34,7 @@ Every repository has exactly one base structure: Project or Knowledge Base. Stru
 
 A separate repository is strongly presumed where content has an independent acceptance and release unit (R1), a materially distinct trust boundary (R2), or a host-mandated repository or root layout (R3). These are strong presumptions rather than an exhaustive mechanical test. Independent governance, audience, change coupling, cognitive scope, or historical continuity may justify an explicit exception. Authority alone does not establish a repository boundary.
 
-As Capital, Arcadia declares the Knowledge Islands territory roster as `territory_members` in its `.ki.toml`; repository selection derives from that roster under [[ADR-KI-ARCADIA-002-territory-derived-repository-selection|ADR-KI-ARCADIA-002]]. Member repositories need no membership declaration or role of their own, and dotfiles sits outside the roster. Territory membership and selection grant no source or product ownership, priority, routing, implementation, release, publication, or acceptance authority.
+As Capital, Arcadia declares the Knowledge Islands territory roster as `territory_members` in its `.ki.toml`; repository selection derives from that roster under [[ADR-KI-PRINCIPAL-002-territory-derived-repository-selection|ADR-KI-PRINCIPAL-002]]. Member repositories need no membership declaration or role of their own, and dotfiles sits outside the roster. Territory membership and selection grant no source or product ownership, priority, routing, implementation, release, publication, or acceptance authority.
 
 ## Consequences
 

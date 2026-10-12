@@ -1,6 +1,6 @@
 ---
 note_type: admin/governance/decision
-id: ADR-KI-ARCADIA-002
+id: ADR-KI-PRINCIPAL-002
 title: Territory-derived repository selection
 date: 2026-10-07
 updated: 2026-10-10
@@ -9,7 +9,7 @@ decision_type: architecture
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/adr
 ---
 
-# ADR-KI-ARCADIA-002: Territory-derived repository selection
+# ADR-KI-PRINCIPAL-002: Territory-derived repository selection
 
 ## Context
 

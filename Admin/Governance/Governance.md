@@ -12,7 +12,7 @@ author: Written with Claude
 
 ## Overview
 
-The `Admin/Governance/` arm holds the artefacts that define **what the island is and how it must be structured** - the Charter, the territory inventory, conventions, policies, templates and Decision Records. These are things that must be true for the island to be what it is; they do not describe day-to-day operations, which live in [[Admin/Operations/Operations|Operations]]. Arcadia is the Capital of the Knowledge Islands territory, so several notes here carry territorial as well as island authority. The Charter and Known Lands were populated by migration from Knowledge Capital per [[Admin/Governance/Decisions/GDR-KI-ARCADIA-002-admin-zone-governance-and-operations|GDR-KI-ARCADIA-002]].
+The `Admin/Governance/` arm holds the artefacts that define **what the island is and how it must be structured** - the Charter, the territory inventory, conventions, policies, templates and Decision Records. These are things that must be true for the island to be what it is; they do not describe day-to-day operations, which live in [[Admin/Operations/Operations|Operations]]. Arcadia is the Capital of the Knowledge Islands territory, so several notes here carry territorial as well as island authority. The Charter and Known Lands were populated by migration from Knowledge Capital per [[Admin/Governance/Decisions/GDR-KI-PRINCIPAL-002-admin-zone-governance-and-operations|GDR-KI-PRINCIPAL-002]].
 
 ## Charter
 

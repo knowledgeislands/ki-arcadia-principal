@@ -13,7 +13,7 @@ author: Written with Claude
 
 ## Overview
 
-The Great Library of Arcadia is Arcadia's `Pillars/` zone: the curated, interconnected body of internal knowledge Arcadia owns, and the place where the Knowledge Islands model is held, maintained and extended. [[SDR-KI-ARCADIA-007-the-great-library-of-arcadia|SDR-KI-ARCADIA-007]] establishes it. This note closes [[Realisation/Realisation|Realisation]] by showing the model's Library made real in Arcadia.
+The Great Library of Arcadia is Arcadia's `Pillars/` zone: the curated, interconnected body of internal knowledge Arcadia owns, and the place where the Knowledge Islands model is held, maintained and extended. [[SDR-KI-PRINCIPAL-007-the-great-library-of-arcadia|SDR-KI-PRINCIPAL-007]] establishes it. This note closes [[Realisation/Realisation|Realisation]] by showing the model's Library made real in Arcadia.
 
 The name is Arcadia's own. It changes nothing about how a knowledge base is structured: Arcadia keeps the same zones and conventions as any other island, and has simply named its library.
 
@@ -37,7 +37,7 @@ Arcadia's library earns the allusion through its role rather than its size. As t
 
 ## The four pillars
 
-[[SDR-KI-ARCADIA-007-the-great-library-of-arcadia|SDR-KI-ARCADIA-007]] organises the Great Library into four pillars, reflecting the registers of any complex system: a governing model, a visible identity and a technical practice, with a retained entry point for the engineering discipline. Each has its own conventions, depth and audience; Arcadia's governance holds them together. [[Pillars]] is the zone index.
+[[SDR-KI-PRINCIPAL-007-the-great-library-of-arcadia|SDR-KI-PRINCIPAL-007]] organises the Great Library into four pillars, reflecting the registers of any complex system: a governing model, a visible identity and a technical practice, with a retained entry point for the engineering discipline. Each has its own conventions, depth and audience; Arcadia's governance holds them together. [[Pillars]] is the zone index.
 
 ### Philosophy
 
@@ -59,7 +59,7 @@ Arcadia's library earns the allusion through its role rather than its size. As t
 
 ## A reference, not a jurisdiction
 
-The Great Library is a reference for other islands, not a jurisdiction over them. [[Jurisdiction]] gives every island authority over what reaches its own Library, and [[SDR-KI-ARCADIA-005-territories-archipelagos-and-the-constitutional-layer|SDR-KI-ARCADIA-005]] makes Arcadia the canonical home of the public model while denying it any universal meta-jurisdiction. Another territory chooses whether to reference or adopt the knowledge, records its source and revision, and owns its local adaptation. Within the Knowledge Islands territory, [[Known Lands]] owns the inventory of member islands and signposts external lands.
+The Great Library is a reference for other islands, not a jurisdiction over them. [[Jurisdiction]] gives every island authority over what reaches its own Library, and [[SDR-KI-PRINCIPAL-005-territories-archipelagos-and-the-constitutional-layer|SDR-KI-PRINCIPAL-005]] makes Arcadia the canonical home of the public model while denying it any universal meta-jurisdiction. Another territory chooses whether to reference or adopt the knowledge, records its source and revision, and owns its local adaptation. Within the Knowledge Islands territory, [[Known Lands]] owns the inventory of member islands and signposts external lands.
 
 Contributions to the model flow back to Arcadia only by consent, through its own governance, and the [[Arcadia]] website publishes from the Great Library without becoming a third source of truth.
 
@@ -69,7 +69,7 @@ Contributions to the model flow back to Arcadia only by consent, through its own
 
 Nothing enters the Great Library except through governance. New or reworked content in `Pillars/` passes through the [[Admin/Operations/Processes/Enactment Process|Enactment Process]], Arcadia's local realisation of the model's [[Model/Processes/Enactment Process/Enactment Process|Enactment Process]].
 
-Growth in breadth is deliberately slow. [[SDR-KI-ARCADIA-007-the-great-library-of-arcadia|SDR-KI-ARCADIA-007]] adds a pillar only when a coherent body of internal knowledge has accumulated that is distinct in scope from the existing pillars, warrants the overhead of its own index, conventions and depth, and does not fit as a sub-folder of an existing pillar. A new pillar is never the default response to a new topic; knowledge tied to a specific client, project or tool belongs in `Resources/` or `Streams/`.
+Growth in breadth is deliberately slow. [[SDR-KI-PRINCIPAL-007-the-great-library-of-arcadia|SDR-KI-PRINCIPAL-007]] adds a pillar only when a coherent body of internal knowledge has accumulated that is distinct in scope from the existing pillars, warrants the overhead of its own index, conventions and depth, and does not fit as a sub-folder of an existing pillar. A new pillar is never the default response to a new topic; knowledge tied to a specific client, project or tool belongs in `Resources/` or `Streams/`.
 
 ---
 
@@ -80,4 +80,4 @@ Growth in breadth is deliberately slow. [[SDR-KI-ARCADIA-007-the-great-library-o
 - [[The Home of Knowledge]] - the Library every island keeps
 - [[Structure]] - the Library's zones and the Pillars/Resources boundary
 - [[History of Knowledge Systems]] - the great libraries the name recalls
-- [[SDR-KI-ARCADIA-007-the-great-library-of-arcadia|SDR-KI-ARCADIA-007]] - the founding decision that named the Great Library
+- [[SDR-KI-PRINCIPAL-007-the-great-library-of-arcadia|SDR-KI-PRINCIPAL-007]] - the founding decision that named the Great Library

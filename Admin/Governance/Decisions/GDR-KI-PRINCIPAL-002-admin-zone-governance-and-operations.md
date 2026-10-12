@@ -1,16 +1,16 @@
 ---
 note_type: admin/governance/decision
-id: GDR-KI-ARCADIA-002
+id: GDR-KI-PRINCIPAL-002
 title: 'Admin Zone - Governance and Operations'
 date: 2026-06-25
 updated: 2026-10-10
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/gdr
 decision_type: governance
-decision_depends_on: ['GDR-KI-ARCADIA-001']
+decision_depends_on: ['GDR-KI-PRINCIPAL-001']
 ---
 
-# GDR-KI-ARCADIA-002: Admin Zone - Governance and Operations
+# GDR-KI-PRINCIPAL-002: Admin Zone - Governance and Operations
 
 ## Context
 
@@ -39,4 +39,4 @@ Decision Records live at `Admin/Governance/Decisions/`, and tooling and referenc
 
 ## References
 
-- [[GDR-KI-ARCADIA-001-adopting-decision-records|GDR-KI-ARCADIA-001]] - adopts the Decision Records instrument whose placement this record sets.
+- [[GDR-KI-PRINCIPAL-001-adopting-decision-records|GDR-KI-PRINCIPAL-001]] - adopts the Decision Records instrument whose placement this record sets.

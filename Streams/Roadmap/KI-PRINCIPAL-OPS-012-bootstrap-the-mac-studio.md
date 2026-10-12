@@ -1,6 +1,6 @@
 ---
 note_type: stream-roadmap
-id: KI-ARCADIA-OPS-012
+id: KI-PRINCIPAL-OPS-012
 area: OPS
 title: Bootstrap the Mac Studio
 kind: deliver

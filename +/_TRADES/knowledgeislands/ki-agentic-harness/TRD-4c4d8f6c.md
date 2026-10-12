@@ -3,7 +3,7 @@ id: TRD-4c4d8f6c
 title: "File the roadmap-model design"
 created_at: 2026-10-07T15:24:17Z
 sender: knowledgeislands/ki-agentic-harness
-receiver: knowledgeislands/ki-arcadia-principal
+receiver: knowledgeislands/ki-principal
 kind: knowledge
 source_ref: KI-HARNESS-GOV-152
 observation: receipt
@@ -11,7 +11,7 @@ phase: received
 decision_status: retained
 received_from_ref: a9325fdfbe0ceec0a9d34c18e2d17cc616f65465
 reviewed_at: 2026-10-07T17:30:00Z
-retained_as: Admin/Governance/Decisions/GDR-KI-ARCADIA-005-the-roadmap-model.md
+retained_as: Admin/Governance/Decisions/GDR-KI-PRINCIPAL-005-the-roadmap-model.md
 ---
 
 # TRD-4c4d8f6c: File the roadmap-model design

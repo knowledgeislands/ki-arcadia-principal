@@ -1,20 +1,20 @@
 ---
 note_type: admin/governance/decision
-id: SDR-KI-ARCADIA-003
+id: SDR-KI-PRINCIPAL-003
 title: 'The Governance of an Island'
 date: 2026-06-25
 updated: 2026-10-11
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/sdr
 decision_type: strategy
-decision_depends_on: ['SDR-KI-ARCADIA-002']
+decision_depends_on: ['SDR-KI-PRINCIPAL-002']
 ---
 
-# SDR-KI-ARCADIA-003: The Governance of an Island
+# SDR-KI-PRINCIPAL-003: The Governance of an Island
 
 ## Context
 
-[[SDR-KI-ARCADIA-002-the-home-of-knowledge|SDR-KI-ARCADIA-002]] defined what an island is physically: a knowledge base with defined zones. A physical structure alone does not make an island function. Without governance, the zones are folders: the Library does not stay stable, the Streams do not flow toward settled knowledge, and the island cannot be operated by agents - human or artificial - in a consistent, coherent way.
+[[SDR-KI-PRINCIPAL-002-the-home-of-knowledge|SDR-KI-PRINCIPAL-002]] defined what an island is physically: a knowledge base with defined zones. A physical structure alone does not make an island function. Without governance, the zones are folders: the Library does not stay stable, the Streams do not flow toward settled knowledge, and the island cannot be operated by agents - human or artificial - in a consistent, coherent way.
 
 The Knowledge Islands model is portable: it defines a generic governance framework that any island can adopt, independent of the specific tools, integrations, or routing rules that island uses. The portable model and the island's specific realisation are distinct things. An island that conflates them - embedding its specific integrations in its governance documentation, or claiming its tool choices as part of the model - becomes harder to adapt, audit, and share.
 
@@ -43,4 +43,4 @@ Each island's specific realisation of this model is held in its `Admin/` zone, w
 
 ## References
 
-- [SDR-KI-ARCADIA-002: The Home of Knowledge](SDR-KI-ARCADIA-002-the-home-of-knowledge.md)
+- [SDR-KI-PRINCIPAL-002: The Home of Knowledge](SDR-KI-PRINCIPAL-002-the-home-of-knowledge.md)

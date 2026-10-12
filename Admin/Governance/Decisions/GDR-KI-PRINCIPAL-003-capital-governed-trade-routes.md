@@ -1,16 +1,16 @@
 ---
 note_type: admin/governance/decision
-id: GDR-KI-ARCADIA-003
+id: GDR-KI-PRINCIPAL-003
 title: 'Capital-governed trade routes'
 date: 2026-10-06
 updated: 2026-10-11
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/gdr
 decision_type: governance
-decision_depends_on: ['SDR-KI-ARCADIA-005']
+decision_depends_on: ['SDR-KI-PRINCIPAL-005']
 ---
 
-# GDR-KI-ARCADIA-003: Capital-governed trade routes
+# GDR-KI-PRINCIPAL-003: Capital-governed trade routes
 
 ## Context
 
@@ -38,4 +38,4 @@ Arcadia is the Capital of the Knowledge Islands territory, as its Charter and Kn
 
 ## References
 
-- [[SDR-KI-ARCADIA-005-territories-archipelagos-and-the-constitutional-layer|SDR-KI-ARCADIA-005]]
+- [[SDR-KI-PRINCIPAL-005-territories-archipelagos-and-the-constitutional-layer|SDR-KI-PRINCIPAL-005]]

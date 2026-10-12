@@ -17,7 +17,7 @@ The full decisions log is machine-local run state on the laptop at `~/.local/sta
 ## Ownership and access
 
 - `sol` is Kris's own hardware. Rig and chezmoi build and maintain it as Kris's rig on another machine, on the `studio` profile, which builds on `core`. Techne may deploy onto it but never owns its build.
-- Remote agent use of `sol` is exempt from the Techne hold under [[GDR-KI-ARCADIA-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-ARCADIA-004]]. Agents administer it over Tailscale and SSH, with Kris approving each step.
+- Remote agent use of `sol` is exempt from the Techne hold under [[GDR-KI-PRINCIPAL-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-PRINCIPAL-004]]. Agents administer it over Tailscale and SSH, with Kris approving each step.
 - The laptop's SSH key passes through to `sol` by agent forwarding, for `sol` only, so remote sessions there can reach GitHub.
 - The HNR harness stays on `sol` and in its `ki` registry.
 
