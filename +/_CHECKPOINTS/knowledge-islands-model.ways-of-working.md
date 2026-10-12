@@ -4,7 +4,7 @@ thread: knowledge-islands-model.ways-of-working
 label: 'Knowledge Islands Model: ways-of-working'
 state: active
 created_at: 2026-10-09T20:58:00Z
-updated_at: 2026-10-11T09:02:08Z
+updated_at: 2026-10-12T18:22:00Z
 ---
 
 # knowledge-islands-model.ways-of-working
@@ -15,10 +15,10 @@ Kris's way of working with a master thread and Project threads, background agent
 
 ## Current state
 
-- New Project, created 2026-10-09 (Decision 18). Queued, third of three, behind the three-active-thread cap; the master thread prepared this checkpoint. Last read `ki-delegation` at harness revision 01ac726c (2026-10-09).
-- The mark standard - a recap since the mark, carry-forward of outstanding items and stable Needs tags - is accepted and lives in [`ki-delegation`'s background-run standard](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/skills/governance/ki-delegation/references/standards-background-runs.md#recap-since-the-mark) under Recap since the mark.
-- The thread rules now live in [`ki-delegation`'s background-run standard](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/skills/governance/ki-delegation/references/standards-background-runs.md) under Project threads: parking tangents, linking records, keeping primary checkouts current, reporting to the owner and refreshing this guidance. They are this Project's to refine.
-- The thread cap is not yet in the skill.
+- Opened by Kris 2026-10-12, while the master's queue still listed it third (behind Fnd: baseline-rollout and KI Model: knowledge-acquisition). No run yet; the run will be `ways-of-working`. No mark yet.
+- `ki-delegation` read at f2b14dca (2026-10-11).
+- In the skill now: the mark standard, carry-forward of outstanding items and stable Needs tags; the thread cap and the territory master thread; thread openers and Bootstrap; steering, not stopping; parking tangents, linking records, keeping primary checkouts current, Summary banner and resting point, and refreshing this guidance - all in [`ki-delegation`'s background-run standard](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/skills/governance/ki-delegation/references/standards-background-runs.md). They are this Project's to refine.
+- Not yet in the skill: the background-run worktree location and run-folder retention rule (approved), and the coordinator-model recommendation (undecided).
 
 ## Decisions made
 
@@ -33,13 +33,13 @@ None yet in this thread. The rules live in `/Users/krisbrown/workspaces/knowledg
 
 ## Open questions
 
-- **2026-10-09 (parked): Markdown flavour.** A gradual move from Obsidian-style to GitHub-flavoured Markdown, starting with a front-matter field declaring a note's flavour.
-- **2026-10-09 (parked): run-folder retention.** Kris approved adding a retention rule to `ki-delegation`: when a thread or run closes and its decisions are consolidated into durable owners, archive or delete its `~/.local/state/ki/agents/<run>/` folder. Pair with the findings of the master's `state-audit` background agent.
-- **2026-10-10 (approved): background-run worktree location (state-audit FIX-1).** The background-run standard names no worktree location, so agents improvised (`~/.local/state/claude-bg/...`, `~/workspaces/kit/.worktrees/...`, `<repo>.wt-*`). Add to `ki-delegation`: worktrees go under `~/.local/state/ki/agents/<run>/worktrees/<repo>`, are removed with `git worktree remove` and their branch deleted once merged, before the run reports `DONE`. Optionally a `ki agent` helper. Fold into the run-folder retention rule; no new record (master Decision 34).
-- **2026-10-10 (settled): restate open Needs.** Kris likes the short-tag Needs items. Settled: [`ki-delegation`'s Reporting](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/skills/governance/ki-delegation/references/standards-background-runs.md#reporting) has coordinating threads give one consolidated Summary of everything still outstanding, with Needs tags stable across repeated Needs sections, and the recap carries every open Needs item forward.
-- **2026-10-10 (parked): coordinator model.** Coordinating threads (master and project threads) mostly dispatch work, so they could run on a faster, lower-reasoning model, handing any heavy reasoning to a background agent or subagent. Decide whether `ki-delegation` should recommend this and how threads are opened with it.
+- Parked 2026-10-09: Markdown flavour - a gradual move from Obsidian-style to GitHub-flavoured Markdown, starting with a front-matter field declaring a note's flavour.
+- Parked 2026-10-09: run-folder retention - approved: when a thread or run closes and its decisions are consolidated into durable owners, archive or delete its `~/.local/state/ki/agents/<run>/` folder; pair with the master's `state-audit` findings.
+- Parked 2026-10-10: background-run worktree location (state-audit FIX-1, approved, master Decision 34) - worktrees go under `~/.local/state/ki/agents/<run>/worktrees/<repo>`, removed with `git worktree remove` and their branch deleted once merged, before the run reports `DONE`; optionally a `ki agent` helper. Fold into the retention rule; no new record.
+- Parked 2026-10-10: coordinator model - coordinating threads mostly dispatch, so could run on a faster, lower-reasoning model, handing heavy reasoning to a background agent; decide whether `ki-delegation` recommends this and how threads open with it.
 
 ## Next step
 
-1. Add the thread-cap rule to `ki-delegation`'s Project threads section: at most three or four active Project threads plus the master; the master queues the rest and prepares their checkpoints so each opens with one opener.
-2. Review the other thread rules with Kris and refine them.
+1. Brief one background agent in `ki-agentic-harness` to add the worktree-location and run-folder retention rule to `ki-delegation`'s background-run standard (approved; no new record).
+2. Settle the coordinator-model question with Kris.
+3. Review the other thread rules with Kris and refine them.
