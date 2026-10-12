@@ -1,6 +1,6 @@
 ---
 note_type: admin/index
-updated: 2026-10-11T01:41:00Z
+updated: 2026-10-12T05:30:00Z
 tags:
   - card/note
   - topic/knowledge-islands
@@ -28,7 +28,7 @@ The [[Admin/Governance/Charter|Charter]] is the authoritative declaration of wha
 
 ## Decisions
 
-[[Admin/Governance/Decisions/Decisions|Decisions]] is the index of Arcadia's Decision Records, typed by `decision_type` and numbered per prefix within the `KI-ARCADIA` scope. Each record is a living present-state account of a significant structural choice, adopted instrument or cross-repository commitment. The index orders the records in reveal order and lists separately the engineering decisions Arcadia maintains for Techné.
+[[Admin/Governance/Decisions/Decisions|Decisions]] is the index of Arcadia's Decision Records, typed by `decision_type` and numbered per prefix within the `KI-PRINCIPAL` scope. Each record is a living present-state account of a significant structural choice, adopted instrument or cross-repository commitment. The index orders the records in reveal order and lists separately the engineering decisions Arcadia maintains for Techné.
 
 ## Known Lands
 

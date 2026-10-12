@@ -1,6 +1,6 @@
 ---
 note_type: admin/governance/policy
-updated: 2026-10-11T01:41:00Z
+updated: 2026-10-12T05:30:00Z
 tags:
   - card/note
   - topic/knowledge-islands
@@ -29,7 +29,7 @@ Fixed parameters that distinguish this Knowledge Island. Automations and skill p
 | **Canonical repository** | `knowledgeislands/ki-principal` |
 | **Repository code** | `KI-PRINCIPAL` |
 | **Island name** | Knowledge Islands Principal |
-| **Repository folder** | `ki-arcadia-principal` |
+| **Repository folder** | `ki-principal` |
 | **Skill name** | `arcadia-principal` |
 | **Skill triggers** | "save to Arcadia", "add to Arcadia", "search Arcadia", "what does Arcadia say about", "update the Arcadia notes on" |
 | **Task ID prefix** | `arcadia-principal-` |

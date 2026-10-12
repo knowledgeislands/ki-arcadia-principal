@@ -28,7 +28,7 @@ Each island owns its accepted knowledge or executable behaviour within the share
 | [apps-observatory][apps-observatory] | Product | Repository and knowledge reader |
 | [homebrew-tap][homebrew-tap] | Delivery | Homebrew distribution |
 | [ki-agentic-harness][ki-agentic-harness] | Capability | Reusable agentic contracts |
-| [ki-arcadia-principal][ki-arcadia-principal] | Capital | KI governance, model and engineering practice |
+| [ki-principal][ki-principal] | Capital | KI governance, model and engineering practice |
 | [ki-specifications][ki-specifications] | Standards | Portable contracts after V1 |
 | [ki-techne-harness][ki-techne-harness] | Product | Controller and execution fabric |
 | [ki-website][ki-website] | Publication | Public source-labelled website |
@@ -56,6 +56,23 @@ Specifications remains dormant as a normative authority until the overall V1 bou
 
 ---
 
+## Estate territories
+
+The estate has eight territories. Each has a handle, a short alias used in repository names and codes, and a class: entity or individual. This list names each territory's Capital for reference only; it grants no membership, authority, access, or permission to exchange material.
+
+| Territory | Handle | Alias | Class | Capital |
+| --- | --- | --- | --- | --- |
+| Knowledge Islands | `knowledge-islands` | `ki` | Entity | `knowledgeislands/ki-principal` |
+| Humans Not Robots | `humans-not-robots` | `hnr` | Entity | `krisb/hnr-principal` |
+| Equal Remedy | `equal-remedy` | `er` | Entity | `equalremedy/er-principal` |
+| Techmedix | `techmedix` | `tmx` | Entity | `techmedix/tmx-principal` |
+| Valle Armonia | `valle-armonia` | `va` | Entity | `vallearmonia/va-principal` |
+| Legal | `legal` | `lgl` | Individual | `krisb/legal-principal` |
+| Personal | `personal` | `kb` | Individual | `krisb/personal-principal` |
+| Sacred Inquiry | `sacred-inquiry` | `si` | Individual | `sacred-inquiry/si-principal` |
+
+---
+
 ## External lands
 
 External lands are governed by other territories. A reference to their public knowledge, or their adoption of KI knowledge, does not make them internal members and gives Arcadia no jurisdiction over them.
@@ -75,7 +92,7 @@ Membership and ownership changes follow the territory's Enactment Process and th
 [apps-observatory]: https://github.com/knowledgeislands/apps-observatory
 [homebrew-tap]: https://github.com/knowledgeislands/homebrew-tap
 [ki-agentic-harness]: https://github.com/knowledgeislands/ki-agentic-harness
-[ki-arcadia-principal]: https://github.com/knowledgeislands/ki-arcadia-principal
+[ki-principal]: https://github.com/knowledgeislands/ki-principal
 [ki-plugins]: https://github.com/knowledgeislands/ki-plugins
 [ki-specifications]: https://github.com/knowledgeislands/ki-specifications
 [ki-techne-harness]: https://github.com/knowledgeislands/ki-techne-harness
