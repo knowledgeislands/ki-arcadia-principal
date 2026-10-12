@@ -24,4 +24,4 @@ This Project sits in [[knowledge-islands-model|Knowledge Islands model]].
 ## Notes
 
 - The thread working rules already in `ki-delegation` - parking tangents, linking records, keeping primary checkouts current, reporting to the owner and refreshing the guidance - are this Project's to refine.
-- A clear state-of-play view may draw on apps-observatory and the command-centre ideas in kit-hnr and kit-legal.
+- A clear state-of-play view may draw on apps-observatory.local and the command-centre ideas in hnr-principal and legal-principal.

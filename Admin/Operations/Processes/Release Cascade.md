@@ -39,9 +39,9 @@ The SVG is exported from the Archify source [beside it](Release%20Cascade.archif
 | `tools-techne` | `techne` | Dispatch the Release workflow | Tap formula `techne` | `~/.local/bin/techne` runs the checkout's source |
 | `ki-agentic-harness` | Skills and rubrics | No release of its own: reaches CI through the Harness pin inside a `ki` release | Inside `ki` | `ki update` refreshes installed Harnesses |
 | `mcp-*` servers (9) | MCP servers | Annotated tag and GitHub Release by hand; none tagged yet | Source release, installed by `ki mcp` | Installed or run from source |
-| `ki-techne-harness`, `apps-observatory` | - | Not released | - | Used from the checkout |
+| `ki-techne-harness`, `apps-observatory.local` | - | Not released | - | Used from the checkout |
 | `homebrew-tap` | Formulae | Bot pull requests | The tap itself | `brew upgrade` |
-| `ki-website` | The public site and its tool registry | Not released; a release consumer | - | - |
+| `apps-knowledgeislands.info` | The public site and its tool registry | Not released; a release consumer | - | - |
 
 Every repository in the territory, tools included, is also a **consumer** of `ki`: its CI installs one exact released `ki` version, bootstraps the Harness that version pins, and runs `ki repo audit`.
 
@@ -74,7 +74,7 @@ Every released tool sends one `tool-release-published` event to `homebrew-tap`, 
 
 1. The tap's **propose** workflow reads the release, writes the exact formula update on a bot branch, and opens a pull request set to squash-merge once the KI governance and Homebrew formula checks pass. A daily schedule repeats the check, so a missed event is caught the next morning.
 2. When the formula change reaches the tap's `main`, the tap's CI resolves the release consumers listed in its `tool-release-consumers.json` and sends each one the same event, now carrying the tap commit.
-3. Today the only listed consumer is `ki-website`, whose **update tool release** workflow opens a version-only pull request that auto-merges after CI. This keeps the website's tool registry in step for every tool.
+3. Today the only listed consumer is `apps-knowledgeislands.info`, whose **update tool release** workflow opens a version-only pull request that auto-merges after CI. This keeps the website's tool registry in step for every tool.
 
 ## 5. Taking it on
 

@@ -29,7 +29,7 @@ This Project sits in [[platform-foundations|Platform foundations]]. Kris agreed 
 | Repository | Files |
 | --- | --- |
 | `tools-ki` | 15 |
-| `apps-observatory` | 11 |
+| `apps-observatory.local` | 11 |
 | `tools-rig` | 8 |
 | `ki-agentic-harness` | 7 |
 | `tools-mgit` | 3 |

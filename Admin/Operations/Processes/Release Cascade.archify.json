@@ -160,7 +160,7 @@
       "lane": "consumers",
       "col": 4,
       "type": "frontend",
-      "label": "ki-website",
+      "label": "apps-knowledgeislands.info",
       "sublabel": "bot PR, auto-merged",
       "width": 150
     },
@@ -253,7 +253,7 @@
       "title": "Automatic today",
       "items": [
         "Release workflow signs, publishes and proves a clean install",
-        "Tap formula PR and ki-website PR auto-merge after CI",
+        "Tap formula PR and apps-knowledgeislands.info PR auto-merge after CI",
         "Daily schedules backstop a missed dispatch"
       ]
     },

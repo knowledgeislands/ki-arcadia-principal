@@ -549,8 +549,8 @@ rect.c-bg-rect { fill: var(--bg); }
           <text x="741.4000000000001" y="384" class="t-muted" font-size="8" text-anchor="middle">tool-release-published</text>
         </g>
 
-        <g id="node-website" data-node-id="website" data-node-label="ki-website" tabindex="0" role="button" aria-label="Focus ki-website, bot PR, auto-merged, Consuming repositories › Notify and take on" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="bot PR, auto-merged" data-node-context="Consuming repositories › Notify and take on">
-          <title>ki-website · bot PR, auto-merged · Consuming repositories › Notify and take on</title>
+        <g id="node-website" data-node-id="website" data-node-label="apps-knowledgeislands.info" tabindex="0" role="button" aria-label="Focus apps-knowledgeislands.info, bot PR, auto-merged, Consuming repositories › Notify and take on" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="bot PR, auto-merged" data-node-context="Consuming repositories › Notify and take on">
+          <title>apps-knowledgeislands.info · bot PR, auto-merged · Consuming repositories › Notify and take on</title>
           <rect x="666.4000000000001" y="472" width="150" height="52" rx="6" class="c-mask"/>
           <rect x="666.4000000000001" y="472" width="150" height="52" rx="6" class="c-frontend" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="frontend" class="semantic-sigil s-frontend" transform="translate(672.4000000000001 478) scale(0.6875)">
@@ -559,7 +559,7 @@ rect.c-bg-rect { fill: var(--bg); }
             <circle cx="4.1" cy="4.8" r=".7" class="sigil-fill"/>
             <circle cx="6.3" cy="4.8" r=".7" class="sigil-fill"/>
           </g>
-          <text data-node-label="" x="741.4000000000001" y="493" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">ki-website</text>
+          <text data-node-label="" x="741.4000000000001" y="493" class="t-primary" font-size="8.5" font-weight="600" text-anchor="middle">apps-knowledgeislands.info</text>
           <text x="741.4000000000001" y="510" class="t-muted" font-size="8" text-anchor="middle">bot PR, auto-merged</text>
         </g>
 

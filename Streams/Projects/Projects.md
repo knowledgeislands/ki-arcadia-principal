@@ -34,7 +34,7 @@ Links point upwards only: a work record names its Project, and a Project names i
 
 ## Command centre
 
-[[command-centre]] gives Kris one vocabulary and model for the command centre across the harness, Observatory, kit-hnr and kit-legal, with one read-only state-of-play view. "Council" stays Arcadia's governance body.
+[[command-centre]] gives Kris one vocabulary and model for the command centre across the harness, Observatory, hnr-principal and legal-principal, with one read-only state-of-play view. "Council" stays Arcadia's governance body.
 
 ---
 
