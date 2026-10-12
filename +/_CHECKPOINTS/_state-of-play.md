@@ -4,110 +4,76 @@ thread: _state-of-play
 label: 'Master: state-of-play'
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-11T11:21:48Z
+updated_at: 2026-10-12T06:05:00Z
 ---
 
 # _state-of-play
 
 ## Objective
 
-This is the territory master thread for Knowledge Islands. It does only project management and discussion: cross-project priorities, decisions, releases and the estate-wide view across the `knowledge-islands` territory and chezmoi. All real work is routed to Project threads, each resumed from its checkpoint below, or to background agents (Decision 17 in `~/.local/state/ki/agents/state-of-play/decisions.md`). Since 2026-10-11 each other territory Capital has its own master thread on the same model (Decision 49).
+This is the territory master thread for Knowledge Islands. It does only project management and discussion: cross-project priorities, decisions, releases and the estate-wide view across the `knowledge-islands` territory and chezmoi. All real work is routed to Project threads, each resumed from its checkpoint below, or to background agents (Decision 17 in `~/.local/state/ki/agents/state-of-play/decisions.md`). Since 2026-10-11 each other territory Capital has its own master thread on the same model (Decision 49). Since the 2026-10-12 estate reshape the Knowledge Islands Capital is `knowledgeislands/ki-principal` at `~/workspaces/knowledge-islands/ki-principal`.
 
 ## Current state
 
-- Mark: 2026-10-11T09:58Z, decisions log at Decision 51. Struck by Kris (10:58 BST); replaces the 2026-10-11T02:38Z mark. Running at the mark: `baseline-fixes`; nothing queued.
-- **Thread cap.** At most three or four Project threads are active at once, plus this master; the master queues the rest and prepares their checkpoints so each opens with one opener (Decision 19). The thread model, including territory master threads and opener templates, lives in `ki-delegation` (Decision 49).
-- **Active threads.**
-
-  | Label | Checkpoint |
-  | --- | --- |
-  | Master: state-of-play | [_state-of-play](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/_state-of-play.md) |
-  | Fnd: estate-factorisation | [platform-foundations.estate-factorisation](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/platform-foundations.estate-factorisation.md) - bottoms out the mcp-\*, tools-\* and apps-\* roadmaps (Decision 46) |
-  | KI Model: island-model-and-tending | [knowledge-islands-model.island-model-and-tending](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/knowledge-islands-model.island-model-and-tending.md) |
-  | Rig: chezmoi | [rig.chezmoi](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/rig.chezmoi.md) - also the [secrets-hygiene](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/secrets-hygiene.md) thread |
-  | Techne: agent-host | [techne.agent-host](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/techne.agent-host.md) |
-  | Rig: mac-studio-bootstrap | [rig.mac-studio-bootstrap](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/rig.mac-studio-bootstrap.md) - runs on the Mac Studio |
-
-  Opener for any of them: `Re-bootstrap as the <label> thread under ki-delegation.`
-- **Queue, in order.** Each checkpoint is prepared and ready to open when an active thread closes.
-
-  | Order | Label | Checkpoint |
-  | --- | --- | --- |
-  | 1 | Fnd: baseline-rollout | [platform-foundations.baseline-rollout](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/platform-foundations.baseline-rollout.md) |
-  | 2 | KI Model: knowledge-acquisition | [knowledge-islands-model.knowledge-acquisition](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/knowledge-islands-model.knowledge-acquisition.md) |
-  | 3 | KI Model: ways-of-working | [knowledge-islands-model.ways-of-working](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/knowledge-islands-model.ways-of-working.md) |
-  | 4 | KI Model: command-centre | [knowledge-islands-model.command-centre](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/knowledge-islands-model.command-centre.md) |
-
-- **Other checkpoints, no thread open:** [techne.paperclip-bootstrap-and-recovery](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/techne.paperclip-bootstrap-and-recovery.md), which waits on the Techne Programme Hold.
-- **Projects with no thread.** No open records and no recurring work: [roadmap-model](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/roadmap-model.md), [skill-refresh](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/skill-refresh.md), [specification-review](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/specification-review.md), [delta-evaluation](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/delta-evaluation.md) and [trades-revamp](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/trades-revamp.md). Paused, with Hold records only: [specifications](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/specifications.md) and [website](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/website.md).
-- **Estate baseline, 2026-10-11 (Decisions 47 to 51).** Territory handles are knowledge-islands, humans-not-robots, equal-remedy, valle-armonia, techmedix, legal and personal; repository names may differ, every other name follows the handle. Every registered repository's `.ki.toml` is conformed; OneDrive source stores are renamed `sources-<handle>` and rebound, with `sources-knowledge-islands` new for Arcadia. The six other Capitals each have a seeded `_state-of-play.md` and an opener; their master threads confirm Initiatives and Projects. infoschematics is on the current roadmap format.
-- **Tooling.** `ki` 0.10.1.
+- Mark: 2026-10-12T06:05Z, decisions log at Decision 116. Struck at Kris's request (07:05 BST); replaces the 2026-10-11T09:58Z mark. Everything before it is rolled up in `thread-history.md` in the run folder.
+- **Estate.** Eight territories in ranking order: personal, knowledge-islands, legal, humans-not-robots, valle-armonia, sacred-inquiry, techmedix, equal-remedy (aliases kb, ki, lgl, hnr, va, si, tmx, er). Checkouts at `~/workspaces/<territory>/<repo>`; Capitals named `*-principal`; every territory has a `*-agentic-harness`. The live view is the Estate Map in personal-principal (`Admin/Operations/Live Artifacts/Estate Map.html`), generated by `src/estate-map-gen.py` in the run folder.
+- **Rollout.** Steps 0 to 8 done on terra. Step 9 (remedial) nearly done:
+  - Done: the nine `apps-<domain>` renames; harness repos and Capital Known Lands for every territory; repository codes re-keyed in current HEAD (14 repos); midnight.ninja split into `apps-midnight.ninja` (apex), `apps-rig.midnight.ninja` and `apps-tower.midnight.ninja`; Knowledge Islands roadmap batches 1 to 5; KI-TOOL-CLI-120 done; KI-TOOL-CLI-116 delivered.
+  - Local mode: `ki` and `mgit` run from their checkouts, the installed harnesses from theirs (Decision 108). Revert commands are in `local-chezmoi.report.md`. Until KI-TOOL-CLI-118's agent fixes it, launch agents with `backups/local-chezmoi/ki.bin`, and run `chezmoi apply --force ~/.config/ki/config.toml` after any `ki` command rewrites the config.
+- **Running at the mark:** `s9-rekey-ki` (tools-ki codes), then `s9-map` (final map refresh); `desktop-parity` (eight territory projects in both Claude Desktop and ChatGPT/Codex, Decision 113); `cli-118` (config-writer and local-launch fixes, then deliver KI-TOOL-CLI-118, Decision 114); `roadmap-census` (read-only plan to bring the Knowledge Islands roadmaps to zero, Decision 115).
+- **Threads.** Project threads reopen from their checkpoints at step 10. On hold: Rig: mac-studio-bootstrap and Techne: agent-host (Decision 83). Queue, in order: Fnd: baseline-rollout, KI Model: knowledge-acquisition, KI Model: ways-of-working, KI Model: command-centre. Checkpoints are in this folder; opener: `Re-bootstrap as the <label> thread under ki-delegation.`
+- **Tooling.** `ki` 0.10.1 and `mgit` 0.16.0 installed builds; local mode runs the checkouts' `main`.
 
 ## Decisions made
 
-Rules live with their durable owners: the roadmap model in GDR-KI-ARCADIA-005 and the `ki-work` standards, delegation, project threads and territory master threads in `ki-delegation`, releases in the `ki-repo-tools` release-readiness standard. Standing instructions for this thread:
+Rules live with their durable owners: the roadmap model in GDR-KI-PRINCIPAL-005 and the `ki-work` standards, delegation, project threads and territory master threads in `ki-delegation`, releases in the `ki-repo-tools` release-readiness standard. Standing instructions for this thread:
 
 - Project management and discussion only; one thread per active Project, within the cap, opened only where there is active work. This thread passes directions to a project thread through its checkpoint or a paste-ready message.
 - Messages from Kris are steering; work stops only when Kris expressly says abort or stop.
-- Keep agents moving: start the next queued delivery as soon as one finishes. Never delegate Kris-attended or Kris-gated records: DOTFILES-UE-062, DOTFILES-UE-071, DOTFILES-UE-027 and DOTFILES-UE-065.
+- Keep agents moving: start the next queued delivery as soon as one finishes. Never delegate Kris-attended or Kris-gated records: KB-DOTFILES-UE-062, KB-DOTFILES-UE-071, KB-DOTFILES-UE-027 and KB-DOTFILES-UE-065.
 - Trades are on hold: send no new trades; do the work directly or record it in the receiving repository.
 - Commit minor rollout changes directly without new records; push own commits fast-forward only.
 - Delivered and awaiting-review records count as done; obsolete or ownerless records are cancelled; both are pruned once verified.
-- Releases are on demand; the next is one combined tools-ki release.
+- Releases are on demand. ki and mgit are released once their roadmaps reach zero; the specification review starts once the Knowledge Islands roadmaps are near zero (Decision 115).
 - Linear and TickTick are not raised in this thread.
 - The Enactment threshold: an explicit owner instruction for a bounded change stands in for a record, related changes share one record, and a record is needed only for new or reworked content in `Admin`, `Pillars` or `Resources`.
 - The [mac-studio-bootstrap](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-bootstrap/mac-studio-bootstrap.md) Project lives under the Rig Initiative.
+- Priorities (thread history section 3): finish terra completely; Rig: mac-studio-bootstrap and Techne: agent-host are on hold (Decision 83); sol (step 11) and the Paperclip agents (step 12) come last; minimise the Knowledge Islands roadmap.
+- Use background agents so this thread stays responsive. Report with stable short Needs tags and recommendations, record links inline (Decision 111).
 
 ## Files touched
 
-- Working material, machine-local and non-durable: decisions log, prompts and run reports in `/Users/krisbrown/.local/state/ki/agents/state-of-play/`.
+- Working material, machine-local and non-durable, in `/Users/krisbrown/.local/state/ki/agents/state-of-play/`: decisions log, `thread-history.md`, prompts and Estate Map sources in `src/`, run reports, backups.
 - Project and Initiative notes: [Projects](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/Projects.md) and [Initiatives](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/Initiatives.md).
 
 ## Open questions
 
 Needs Kris (outstanding at the mark; carried forward until resolved):
 
-- From [Fnd: estate-factorisation](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/platform-foundations.estate-factorisation.md), 2026-10-11: four Rig deliveries are accepted and published Done under Kris's tools-burndown Decision 6. Open count is 7: tools-ki 3, tools-rig 1, tools-techne 2, Observatory 1; MCPs/tap zero. The single authorised [KI-TOOL-CLI-118](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-CLI-118-capital-stores-and-territory-aliases.md) plan is published, delivery awaiting approval. Please route prune-reference repair through Rig: mac-studio-bootstrap, Rig: chezmoi and the chezmoi software-alignment owner; their surviving links block all four approved prunes. Relevant archived peer reference evidence is also unavailable locally. Observatory has a bounded hook/CI-pin/receiver proposal awaiting repository opt-in; please route removal/reconciliation of its two retired untracked ki-agora skill projections through the configuration owner. Optional territory_aliases metadata and accepted selection rationale need Harness/Arcadia owner alignment before rollout. Protected five remain unassigned; this notice grants no peer edit or remote operation.
-- **PROTECTED:** from Fnd: estate-factorisation - release the four Techne: agent-host tooling records and the Dock engine work to its local run, or keep them with their current threads.
-- **VA-PRIMARY:** the Valle Armonia thread rebases and pushes its three local commits in vallearmonia-principal (paste prompt given 2026-10-11).
-- **KIT-ACQUIRE:** two unpushed local commits in kit-acquire (Kris's central Granola inbox work, 2026-10-10) carry its first `.ki.toml`; push, or leave for the knowledge-acquisition thread.
-- **CHEZMOI-HEADING:** `rig.chezmoi.md` has an extra `## Needs Kris` section, which fails the six-section checkpoint schema and keeps Arcadia CI red; Rig: chezmoi moves it under Open questions.
-- **Trades hold, follow up 2026-10-14 (remind from 2026-10-12):** re-enable trades or renew the hold. HOLD-1 warns from 2026-10-15 (Decision 41).
-- **Delta trial, follow up 2026-10-14 (remind from 2026-10-12):** yes or no, from the [delta-evaluation](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/delta-evaluation.md) Project note (Decision 41).
-- **Paperclip:** answer the two decision cards.
-- **Specification review:** which repository first? `tools-ki` is suggested.
-- **Capital openers:** open each territory's master thread in Zed from the openers in `~/.local/state/ki/agents/state-of-play/territory-masters.report.md` and confirm its Initiatives and Projects.
+- **VA-ACCEPT:** accept [VA-WEBSITE-SITE-003](/Users/krisbrown/workspaces/valle-armonia/apps-vallearmonia.com/docs/roadmap/VA-WEBSITE-SITE-003-consolidate-the-design-system.md) to unblock the vallearmonia design-system pilot.
+- **CLI116-ACCEPT:** accept [KI-TOOL-CLI-116](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-CLI-116-launcher-held-wait-gates.md) (code becomes KI-TOOL-KI after the re-key). Recommended.
+- **CLOUDFLARE-RELINK:** in Workers & Pages, Settings, Build: `ki-website` to `knowledgeislands/apps-knowledgeislands.info`; `vallearmonia-website` to `vallearmonia/apps-vallearmonia.com`; `midnight-ninja-apex` to `krisb/apps-midnight.ninja`; `midnight-ninja-rig` to `krisb/apps-rig.midnight.ninja`; `midnight-ninja-tower` to `krisb/apps-tower.midnight.ninja` (root `/`, build `bun run self:site:tower:build`, deploy `bun run self:site:tower:deploy`). Ingress Worker `GITHUB_REPO` to `vallearmonia/apps-vallearmonia.com` when convenient.
+- **TMX-WEBHOOKS:** check whether the AWS side of the two Techmedix webhooks names the old repositories.
+- **ARCADIA-NAMES:** rename the Claude project prefix and auto-memory prefix from `arcadia-principal` to `ki-principal`. Recommended.
+- **TOWER-AUDIT:** apps-tower.midnight.ninja deliberately has no Tailwind or layout partials (WEB-9, WEB-19): accept the findings (recommended) or drop `ki-repo-website-content` there.
+- **DESKTOP:** restart Claude Desktop (ready now; once more after `desktop-parity`); follow `desktop-parity`'s in-app steps for ChatGPT and Claude projects; add the two new midnight checkouts to GitHub Desktop.
+- **Reminders (Decision 116):** trades hold and delta trial follow up on 2026-10-14 ([delta-evaluation](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/delta-evaluation.md)); HOLD-1 warns from 2026-10-15 (Decision 41).
+- **Roadmap batches:** approve `roadmap-census` batches one at a time when its plan lands.
 
-Parked:
+Master follow-ups (no Kris action):
 
-- 2026-10-11 - Split macOS defaults out of Rig into their own tool or layer. Not now; for a later Rig tooling Project.
-- 2026-10-11 - Short territory aliases (`ki`, `hnr`, `er`, `va`, `tmx`) alongside the handles, and source stores derived from the territory handle in `ki repo store`: routed to Fnd: estate-factorisation as tools-ki work (Decision 51).
+- Merge chezmoi `step9-renames` once `desktop-parity` commits (it blocks the merge), fold in the midnight follow-ups (manifest, trusted folders, ki config, VS Code workspace, Tower Save Nudge location in `private_10-applications.toml` and its guide), review `chezmoi diff` and apply only those targets.
+- personal-principal territory and Known Lands still list `site-kris.me.uk` and `site-midnight.ninja`; tower `pipeline/snapshot.ts` names `kit-principal` as source-store owner.
+- From Fnd: estate-factorisation, for that thread when it reopens: the PROTECTED Techne: agent-host tooling records and Dock engine work; prune-reference repairs through the Rig threads; Observatory's retired ki-agora skill projections.
+- Paperclip decision cards: with step 12.
+
+Parked: see `thread-history.md` section 5, plus the Rig full-screen mode idea for the Rig thread (Decision 92).
 
 ## Next step
 
-1. Read the `baseline-fixes` report when it finishes; route leftovers to their owners.
-2. Remind Kris of the trades hold and the delta trial from 2026-10-12.
-3. When an active thread closes, open the next queued thread from the queue table.
-4. Cut the combined tools-ki release when Kris asks.
-5. Route the `ki-design-system` rollout (`KI-HARNESS-GOV-173`, accepted 2026-10-11) to Fnd: baseline-rollout for `ki-website` and `apps-observatory`: each declares `[skills.ki-design-system]` with its `tokens`, `guide` and `checks`, writes its design guide from the skill's skeleton where it has none, and passes `ki repo audit --skill ki-design-system` once the installed harness carries the skill. The Humans Not Robots, Valle Armonia and Personal masters carry the same item for their repositories; pass it to the Equal Remedy and TechMedix masters, whose state of play was not updated on 2026-10-11. Legal has no repository with an interface. Kris's instruction, 2026-10-11.
-
-## Overnight estate reshape (2026-10-12, Decisions 62-64)
-
-- Plan: Estate Map plan tab in kit-principal (`Admin/Operations/Live Artifacts/Estate Map.html`); source `~/.local/state/ki/agents/state-of-play/src/estate-map-plan.html`, regenerated with `src/estate-map-gen.py`.
-- Phase 0: vega agent and Zed processes stopped over Tailscale (`techne` has no sudo). Instance stop (`techne host stop --host agent-host`) waits for Kris's `techne auth login`.
-- Phase 1 terra: done apart from 8 dirty paperclip/agent worktrees (hnr-shared, kit-hnr, infoschematics) and vallearmonia-website `vision-statement.md`. kit-legal orphan `4ff8e2cf` pushed as `rescue/cc-001-exec`. Report: `phase1-secure-terra.report.md`. Branch tidy-up agent `phase1-tidy-branches` running.
-- Pending Kris: ChatGPT kit-acquire instructions (`src/chatgpt-acquire-instructions.md`), kit-acquire rename, territory slugs in kit-acquire.
-
-### Progress at 03:25 BST (Decisions 65-77)
-
-- Done: phases 0-5; phase 6a on terra except this repository's own move. 45 checkouts converged (log `~/.local/state/ki/converge/2026-10-12T01-32-20-284Z.json`), chezmoi `estate-reshape` merged and applied (branch deleted), `phase6-rewrite-unmanaged.py --apply` (backups under `state-of-play/backups/phase6-20261012-023412`), rig services reconciled, mcporter recovered (stale identity moved to `~/.mcporter/daemon/stale-2026-10-12`), hnr-principal symlinks made relative, si-principal cloned (empty on GitHub), empty testbed website and leftover `~/workspaces/hnr`, `knowledge-wayfinder` and `kit/*` parents removed (Claude local settings backed up under `state-of-play/backups/leftovers-20261012`). Techmedix GitHub description fixed.
-- Last step of 6a: move this repository to `~/workspaces/knowledge-islands/ki-principal` with `ki estate converge /tmp/estate-targets-6a.json --apply --allow-busy ~/workspaces/knowledge-islands/ki-principal`, then remove `~/workspaces/kit`.
-
-### Resume here (fresh thread at `~/workspaces/knowledge-islands/ki-principal`)
-
-1. Verify: `ki registry list` has no `workspaces/kit|hnr` paths; `ki territory audit --estate`; `mgit status` from `~/workspaces`; `mcporter list` (kit-mcp-ki-kb-fs failed only because ki-principal was not yet moved); `env -u PAPERCLIP_API_KEY -u PAPERCLIP_API_URL ~/bin/paperclip-reconcile --apply` (422 before because Convenor's new cwd did not exist); `rig doctor` (2 findings, both paperclip-agents).
-2. Restart Claude Desktop so it picks up new MCP paths.
-3. Update the Estate Map plan tab (`src/estate-map-plan.html`; 5 and 6a done) and regenerate into personal-principal (now `~/workspaces/personal/personal-principal`).
-4. Phase 6b: sol via Rig mac-studio-bootstrap; secure sol first; run converge there with the same manifest.
-5. Phase 7: si-principal setup and registration; sweep "Arcadia" prose and old paths; rename `MCP_KI_KB_FS` knowledge-base IDs (Decision 76); fix cross-repo links to renamed decision records (Decision 77); stale harness skill links in several repos (~190, retired skills such as `ki-agora`); stale trusted-folder entry for testbed website in `~/.claude/settings.json`.
-6. Phase 8: fresh threads from checkpoints; give Kris the `zed` command, Claude Desktop paths and Warp launch configuration.
+1. Read each running agent's report as it finishes; relay outcomes and Needs.
+2. Merge and apply chezmoi `step9-renames` with the midnight follow-ups once `desktop-parity` lands.
+3. Close step 9 after `s9-map`; then step 10 (threads, `zed` command, Warp launch configuration, Claude Desktop paths, Granola folder, acquire) and the `MCP_KI_KB_FS` knowledge-base ID rename.
+4. Run the approved `roadmap-census` batches to zero, tools-ki and tools-mgit first; then offer KI-RELEASE and SPEC-REVIEW (Decision 115).
+5. Design-system rollout after the renames: vallearmonia pilot, then Observatory, knowledgeislands.info, the midnight sites and kris.me.uk; markhowarth after its fourth theme (Decision 110); Techmedix after adoption.
+6. Later: step 11 (sol via Rig: mac-studio-bootstrap), step 12 (Paperclip), rebuild vega.
