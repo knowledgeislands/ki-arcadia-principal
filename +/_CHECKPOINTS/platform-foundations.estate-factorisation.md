@@ -4,7 +4,7 @@ thread: platform-foundations.estate-factorisation
 label: 'Fnd: estate-factorisation'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-12T07:08:13Z
+updated_at: 2026-10-12T07:22:54Z
 ---
 
 # platform-foundations.estate-factorisation
@@ -48,6 +48,7 @@ Close out the registry-resolved `mcp-*`, `tools-*`, `apps-*` and homebrew-tap ro
 - `HOST-GUARDS`: [KI-TOOL-TECHNE-CLI-006](/Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-006-guarded-host-commands.md) - Approved adoption as deliver/draft on Hold until Kris explicitly releases local planning through agent-host. Preserve existing pilot evidence and structured CLI integration questions.
 - `HOST-PATCHING`: [KI-TOOL-TECHNE-CLI-008](/Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-008-host-patching-fields.md) - Approved adoption as deliver/draft Next and release for local planning only. Background worker prepares the canonical plan; Kris must approve it before Ready/delivery. No remote patching/reboot operation.
 - `RIG-REFS`: deletion work is complete; master should route stale references/prose to [mac-studio-bootstrap](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/rig.mac-studio-bootstrap.md), [chezmoi](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/rig.chezmoi.md) and the chezmoi software-alignment owner. Also repair master's pre-rekey KI wait-gate link and agent-host's obsolete launcher claims before new pruning. This thread repairs its own candidate links when approved closure permits it.
+- `ALIAS-OWNERS`: live carry of the accepted Capital-store/alias delivery's remaining owner question, routed to Master CLI118-OWNERS. Harness must settle TERR-2/TERR-3 validation of optional `territory_aliases`; Principal must reconcile its accepted territory-selection decision; only then may the Capital owner declare the approved knowledge-islands short alias. The delivered KI fallback/scan policy is approved, but no Capital config or governance write is authorised here. Preserve this question when the completed tools-ki records are pruned; current territory-selection and repository-operation guides carry the accepted product contract.
 - `KI-RELEASE`: ask Kris for ki/mgit release under master Decision 115 only once both have zero open records. Keeping writing-checkout enforcement on Hold delays that trigger; no release has been authorised.
 - `PROJECT-CLOSE`: prepare the bounded burndown close-out once only proper holds remain. Wider Project phases are still declared incomplete: master/Kris must reconcile that boundary rather than mark unperformed phases delivered.
 
