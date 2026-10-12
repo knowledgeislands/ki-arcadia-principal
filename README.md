@@ -1,6 +1,6 @@
 # Knowledge Islands Principal
 
-Arcadia Principal is the canonical knowledge base and Capital of the Knowledge Islands territory. It develops, proves and records the philosophy, conceptual model, shared governance and Techné engineering practice.
+Knowledge Islands Principal is the canonical knowledge base and Capital of the Knowledge Islands territory. It develops, proves and records the philosophy, conceptual model, shared governance and Techné engineering practice.
 
 Repository selection derives from Arcadia's ordered territorial roster in `.ki.toml`. KI and mgit use `-t knowledge-islands` for this territory, `--estate` for registered repositories and `-f` for literal, case-sensitive repository directory-name prefixes. Registry resolution and Paperclip coordination confer no jurisdiction or cross-repository write authority.
 
