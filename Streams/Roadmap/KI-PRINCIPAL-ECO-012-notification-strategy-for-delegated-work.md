@@ -3,14 +3,18 @@ note_type: stream-roadmap
 id: KI-PRINCIPAL-ECO-012
 area: ECO
 title: Notification strategy for delegated work
+kind: deliver
+purpose: capability
+project: ways-of-working
+horizon: next
+status: draft
 tags:
   - topic/knowledge-islands
-status: triage
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-13T08:21:34Z
-updated_at: 2026-10-13T08:21:34Z
+updated_at: 2026-10-13T13:55:00Z
 ---
 
 # Notification Strategy for Delegated Work
@@ -25,7 +29,7 @@ Feedback from the `Tower: regular maintenance` thread on 2026-10-13: detached ag
 
 Today the [[ways-of-working]] practice reaches the owner only through the run packet under `~/.local/state/ki/agents/<run>/`: each agent's one-line status file, its final report and the `DONE` marker, read by `ki agent status`, `watch` and `wait --next`, and relayed by the coordinating thread in its next turn. There is no event log, no channel other than the thread and no delivery receipt. The Observatory already reads a sibling pattern, the scheduled-jobs reporter's `history.jsonl` under the XDG state directory, into its Automation instrument and the Beacon, but knows nothing of agent runs. The official Claude Code Telegram plugin is enabled in the chezmoi source but not configured; it binds a bot to one running Claude Code session for inbound messages, so a detached agent or daemon cannot send through it.
 
-This record belongs to Knowledge Islands Principal because the strategy spans the `ki-delegation` skill, `ki agent` in `tools-ki`, the Observatory and the chezmoi user configuration, with no single repository owner; it serves the [[ways-of-working]] Project, which owns the delegation and thread practice, and hands its view to [[command-centre]]. Delivery work in each repository is captured there by trade once this record is adopted.
+This record belongs to Knowledge Islands Principal because the strategy spans the `ki-delegation` skill, `ki agent` in `tools-ki`, the Observatory and the chezmoi user configuration, with no single repository owner; it serves the [[ways-of-working]] Project, which owns the delegation and thread practice, and hands its view to [[command-centre]]. Kris adopted it on 2026-10-13 as `ADOPT` in Decision 17 of the `ways-of-working` run, with `HOME` (a): the record stays here and each delivery is a handoff item in the repository that owns it, which keeps its own priority, plan and acceptance. Phase 1 was handed to `tools-ki` and `ki-agentic-harness` the same day; the later phases are handed when phase 1 has landed.
 
 ## Boundary
 
@@ -33,6 +37,37 @@ This record belongs to Knowledge Islands Principal because the strategy spans th
 - In scope: the event vocabulary, delivery rules, routing, ownership per concern, the Observatory channel and a phased plan with a smallest useful first step.
 - Out of scope: inbound replies from Telegram into a thread (a later, separate decision); notifications for scheduled housekeeping runs, which already reach the Observatory's Automation instrument; Paperclip-coordinated agents.
 - The coordinating thread stays out of the delivery path, under `ki-delegation` Coordinator responsiveness: a coordinator reads events at its next turn and never waits or relays in the foreground.
+
+## Owner decisions
+
+Kris answered the strategy's tagged questions on 2026-10-13 in Decision 17 of the `ways-of-working` run; the tags are kept so later phases can cite them.
+
+| Tag | Decision |
+| --- | --- |
+| `HOME` | (a) This record stays in Knowledge Islands Principal under [[ways-of-working]]; deliveries are handed to `tools-ki`, the harness, the Observatory and chezmoi as handoff items, each receiving repository owning its priority, plan and acceptance. |
+| `BOT-ID` | (a) A dedicated send-only notifier bot, not the Claude Code plugin's bot. |
+| `TOKEN-HOME` | (a) The bot token lives in the macOS Keychain under the KI secret store; chezmoi carries only the reference. |
+| `QUIET` | (a) `failed`, `blocked` and `needs-owner` break quiet hours; `progress` and `done` wait for the digest. |
+| `OBS-CHANNEL` | (a) The Observatory delivers over Server-Sent Events with browser notifications, not WebRTC. |
+| `REMOTE-SCOPE` | (a) Knowledge Islands and personal territories deliver remotely by default; every other principal opts in. |
+| `ADOPT` | Adopted to `draft` through `ki-next`; phase 1 handed to `tools-ki` and the harness now. |
+
+## Phase 1 requirements
+
+Phase 1 is the smallest useful step and carries no integration. The receiving repositories plan it under their own authority; these are the requirements this record hands them.
+
+1. `ki agent` derives an append-only events log per run from the run packet, with the five event kinds and the run-level close named under Recommended approach, each event carrying a stable identity of run, agent, kind and sequence.
+2. `ki agent wait --next` and `ki agent watch` return `failed`, `blocked` and `needs-owner` events as well as finishes, in the order they happened.
+3. The progress protocol gains the optional milestone line `HH:MM TZ - milestone: <text>`; every other status line stays local.
+4. The `ki-delegation` background-run standard names the events, the milestone line, what the waiter and monitor return, and the coordinator's place outside the delivery path.
+5. The waiter's order is corrected. Evidence from the `ways-of-working` run: twice on 2026-10-13 `ki agent wait --next` returned an older unseen finish rather than the newest, because the launcher walks agents in alphabetical name order and returns the first unseen one that has stopped. At 09:53 it returned `merge`, finished at 04:52, while `notify` and `report-format` had finished at 09:25 and 09:32; `review-fable` and `review-astra`, finished at 04:20 and 04:31, were never returned. A sequenced events log with the seen marker keyed by event removes the defect, so it is a phase 1 requirement rather than a separate corrective record.
+
+## Dependencies / blocks
+
+- `tools-ki` delivers the phase 1 mechanics: the events log, its derivation, the sequenced waiter and monitor, and the milestone line in the progress protocol the launcher appends. Durable documentation: [the tools-ki README](https://github.com/knowledgeislands/tools-ki/blob/main/README.md), which describes `ki agent`.
+- `ki-agentic-harness` delivers the phase 1 wording: the event vocabulary, the milestone line, the waiter and monitor behaviour and the coordinator rule in the `ki-delegation` background-run standard and its run-prompt skeleton. Durable documentation: [the background-run standard](https://github.com/knowledgeislands/ki-agentic-harness/blob/main/skills/governance/ki-delegation/references/standards-background-runs.md).
+- Phases 2 to 4 are handed to `tools-ki`, chezmoi and `apps-observatory.local` once phase 1 has landed; the Telegram bot is recorded in [[Admin/Governance/Conventions/Admin Conventions/Integrations|Integrations]] through the Enactment Process when phase 2 creates it.
+- Nothing in this repository blocks the work; `blocked_by` is empty. The record closes when every phase has landed in its owner and the interim chat-only preference has been retired by the owner.
 
 ## Discussion
 
@@ -68,17 +103,16 @@ This record belongs to Knowledge Islands Principal because the strategy spans th
 
 ### Phased plan
 
-1. **Smallest useful first step (one `tools-ki` record, one `ki-delegation` edit).** Derive `events.jsonl` from the run packet and make `ki agent wait --next` and `watch` return `failed`, `blocked` and `needs-owner` events as well as finishes; add the milestone line to the progress protocol. No integration; the interim chat-only preference stands and becomes event-based.
+1. **Smallest useful first step (one `tools-ki` record, one `ki-agentic-harness` record).** Derive `events.jsonl` from the run packet and make `ki agent wait --next` and `watch` return `failed`, `blocked` and `needs-owner` events as well as finishes; add the milestone line to the progress protocol. No integration; the interim chat-only preference stands and becomes event-based. Handed off on 2026-10-13 as the requirements above.
 2. **Notifier and Telegram (one `tools-ki` record, one chezmoi record).** The detached notifier with the adapter contract, receipts, quiet hours and the Telegram adapter; `notify.toml` template; token in the secret store; pilot on one run before any other channel.
 3. **Observatory (one `apps-observatory.local` record).** Runs instrument over run packets and receipts, Beacon signals, then Server-Sent Events and browser notifications; this is also the cheapest pilot of the [[command-centre]] state-of-play view.
 4. **Alternatives (one `tools-ki` record).** Slack webhook, generic push, platform-native off by default, per-territory routing; record the bot in [[Admin/Governance/Conventions/Admin Conventions/Integrations|Integrations]].
 5. **Later, separately decided.** Inbound replies to Needs tags from Telegram into the thread.
 
-### Owner decisions
+### Alternatives the owner declined
 
-- `BOT-ID`: use a dedicated outbound-only notifier bot (recommended, a narrower token and no clash with the plugin's inbound polling) or the Claude Code plugin's bot.
-- `TOKEN-HOME`: keep the token in the macOS Keychain under the KI secret store (recommended) or in the plugin's `.env`.
-- `QUIET`: which events break quiet hours; recommended `failed`, `blocked` and `needs-owner`.
-- `OBS-CHANNEL`: Server-Sent Events and browser notifications (recommended) rather than WebRTC.
-- `REMOTE-SCOPE`: which territories may deliver remotely; recommended Knowledge Islands and personal by default, each other principal opting in.
-- `HOME`: adopt this record here under [[ways-of-working]] with delivery traded to `tools-ki`, the harness and the Observatory (recommended), or move it to `tools-ki`.
+The questions put to Kris each carried an alternative, kept here for the record: the Claude Code plugin's bot instead of a dedicated one (`BOT-ID`); the plugin's `.env` for the token (`TOKEN-HOME`); only `failed`, or nothing, breaking quiet hours (`QUIET`); WebRTC for the Observatory (`OBS-CHANNEL`); every territory, or none until each opts in, delivering remotely (`REMOTE-SCOPE`); and moving this record to `tools-ki` (`HOME`). Kris chose the recommended option in each case; the resolved decisions are under Owner decisions above.
+
+### Report shape since the assessment
+
+The assessment was written against the earlier report shape with Failed and Needs sections. The owner report that replaced it on 2026-10-13 (Decision 14 of the `ways-of-working` run) puts material failures inside "What has been done" and gives each outstanding query a heading `<tag> - <title>`, so `needs-owner` derives from those headings and `failed` needs a signal the standard names, most simply the agent's final status line. Phase 1 settles that rule in the harness wording and the launcher together.
