@@ -1,6 +1,6 @@
 ---
 note_type: streams/index
-updated: 2026-10-13T08:00:00Z
+updated: 2026-10-13T13:45:00Z
 author: Written with Claude
 ---
 
@@ -24,3 +24,7 @@ Two independent, read-only reviews of the brief, each with its own fact checks, 
 ## Report
 
 [[change-management-report]] merges the two reviews into one proposed model of six named units (Work, PMO, Delegation, Continuity, the design loop and Model policy), with corrections to the brief, an agree-and-differ table across all 28 points, a rollout plan with one pilot and eight tagged owner decisions. Every dispute is settled on cited evidence, not by vote; Kris's recorded decisions win wherever they bear on a point. It was amended after the merge under Decision 10: a Models and environment section states which models and runtimes produced each stage and what that means for confidence, the loop and PMO gain a model-level floor and a degradation rule, and every proposed name is retested against the rule that a name conveys its purpose at a glance.
+
+## Decisions
+
+[[change-management-decisions]] records Kris's answers to the report's nine tagged decisions and to `MEMBER-SEL`, `PAPERCLIP-REQ` and `TRAILER`, each with the option chosen, Kris's words verbatim and the decision number in the run's log (Decisions 16 and 17), and folds in the decisions taken while the report was being written (Decisions 11, 12, 14 and 15). One item stays open: the Claude Code `fast` binding under `BINDINGS`. It states the authority position: no wave grant yet, push of this run's own commits only, no prune. The rollout starts from it: the pilot is captured through `ki-next` as one record under this Project, and each wave's records follow once the pilot's lessons are known.
