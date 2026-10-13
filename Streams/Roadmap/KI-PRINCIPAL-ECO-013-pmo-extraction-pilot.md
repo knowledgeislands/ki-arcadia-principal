@@ -14,7 +14,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-13T13:42:43Z
-updated_at: 2026-10-13T23:30:00Z
+updated_at: 2026-10-13T23:45:32Z
 ---
 
 # PMO Extraction Pilot
@@ -49,6 +49,7 @@ This record belongs to Knowledge Islands Principal because the pilot is the desi
 4. Layer 2: the coordinator reminder hook on both runtimes, in progress now as the first task, injecting `ki-pmo`'s one line on every owner message and after compaction in a coordinating thread, silent in any agent `ki agent` launched.
 5. Layer 3: the counted turn budget and self-check, at most five tool calls a turn with reads and writes limited as the report states, anything beyond a launch, and drift reported to Kris in one line and noted in the checkpoint.
 6. Layer 6: the acceptance tests below, run and scored from the session transcript.
+7. Coordinator output style, Kris's `COORD-STYLE` answer of 2026-10-14, "(c) in the pilot; (a) now": the harness ships an output-style file for coordinating threads, selected by `outputStyle` in the tracked `.claude/settings.json` of each Capital and the harness, carrying the three responsiveness rules and the owner-report shape as the style text so that the style and the contract are one document; `Concise` stays everywhere else. Option (a), the one sentence in `ki-delegation`'s Reporting section that no style or shaping layer shortens an owner report, is applied now and is the fallback. Its first check: whether a project-level `outputStyle` overrides the user-level one in Claude Code, which is not verified; if it does not, the style cannot be selected per repository and (a) stands alone.
 
 ## Acceptance tests
 
@@ -72,4 +73,5 @@ The design-loop standard asks for one pilot before any parallel wave, and `PILOT
 ### Open questions
 
 - Whether `claude -p` runs hooks at all is not verified; the hook's guard holds either way, and the `coord-hook` agent's report settles it.
+- Whether a project-level `outputStyle` in `.claude/settings.json` overrides the user-level one is not verified; scope item 7 checks it first, before any style file is written.
 - The `fast` trial under `COORD-DEFAULT` could run on this pilot's Project thread once the hook and the budget are in place; that is a planning choice for `ki-plan`, not a change to this record's boundary.
