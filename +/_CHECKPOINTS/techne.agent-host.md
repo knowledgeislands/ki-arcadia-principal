@@ -4,7 +4,7 @@ thread: techne.agent-host
 label: 'Techne: agent-host'
 state: active
 created_at: 2026-10-07T09:05:00Z
-updated_at: 2026-10-13T22:35:00Z
+updated_at: 2026-10-13T23:00:00Z
 ---
 
 # techne.agent-host
@@ -24,7 +24,7 @@ Mark: 2026-10-09T21:40Z, decisions log at Decision 34
 ki-delegation read at fbd11977
 
 - **Repositories.** All touched repositories are level with origin.
-- **Host patching fields.** [KI-TOOL-TECHNE-CLI-008](/Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-008-host-patching-fields.md) is built locally and awaiting review (Decision 42 lifted the vega-first order for local work only) and pushed. Live verification waits for the vega rebuild.
+- **Host patching fields.** [KI-TOOL-TECHNE-CLI-008](/Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-008-host-patching-fields.md) is accepted as done through ki-accept (Decision 43), kept, not pruned, and pushed. Live verification on a real host waits for the vega rebuild and is not part of acceptance.
 - **Delivered and closed.** OS patching (TECHNE-TOOLS-OPS-022) and the chezmoi workstation bundle (DOTFILES-UE-073) are accepted and pruned. The workstation pilot (TECHNE-TOOLS-OPS-015) is accepted and kept, not pruned. Recipe/binding identity is `agent-host`; the old deployed names still need the owner-led vega rebuild below.
 - **The host.** Earlier restart/clean-status evidence is historical. At 2026-10-12 08:26 UTC, owner readiness evidence reported account `655383751458`, profile `knowledge-islands-techne`, region `eu-west-1`, stack `ki-techne-agent-host` still `CREATE_COMPLETE`, `HostName` and `TailscaleHostname` both `ki-techne-agent-host`, selector `agent-host`, and recorded instance `i-0332d9ea05c2e929d`. Neither tagged live-instance query nor recorded-instance lookup returned an instance. This is a surviving-stack/missing-instance snapshot, not proof of clean recovery or current resource state.
 - **Pins.** `recipes/agent-host/rig.toml` in the harness is the one list of host tool versions; `mise` and `codex` are raised to 2026.10.6 and 0.162.0. The Mac is no longer compared against it; TECHNE-TOOLS-OPS-024 (weekly pin bump) is planned, draft.
@@ -33,8 +33,8 @@ ki-delegation read at fbd11977
 - **Owner historical work.** TECHNE-TOOLS-OPS-016 (to be replaced by a `tools-rig` signed-release kind), TECHNE-TOOLS-OPS-018, TECHNE-TOOLS-OPS-019 and TECHNE-TOOLS-OPS-023 in the harness remain in the earlier triage snapshot; KI-HARNESS-GOV-170 (keep resolution targets local) is planned, draft, in `ki-agentic-harness`. These are outside this bounded tools sweep and are not re-audited here. The related tools queue is reconciled below.
 - **The Mac.** `terra`; chezmoi `rigProfile` is `laptop`; Tailscale is up.
 - **Launcher deliveries.** Launcher-held wait gates, config preservation/local relaunch and Capital stores/aliases were accepted and pruned under tools-burndown Decision 12. The historical ki 0.10.0 host pin still needs owner compatibility review before reuse; local launcher delivery does not prove that pin has changed on a host.
-- No background agents running. The decisions log runs to Decision 40.
-- **Related tools queue.** [KI-TOOL-KI-CLI-115](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-115-enforce-roadmap-writing-checkout.md) writing-checkout guard and [KI-TOOL-TECHNE-CLI-006](/Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-006-guarded-host-commands.md) remain adopted draft Hold. [KI-TOOL-TECHNE-CLI-008](/Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-008-host-patching-fields.md) remains draft Next, local plan prepared only: owner-requested host-first order, then separate plan/implementation approval. Dock belongs to Rig; no broad agent-host or Programme Hold resume.
+- **Rebuild preparation.** Decision 43 authorised a background agent (`host-names`) to update `repositories.txt`, `setup.sh` and the related scripts, recipe, tests and operator guide for the `knowledge-islands` workspace layout and current repository names, locally only. Kris will rebuild on a date still to be set. The decisions log runs to Decision 43.
+- **Related tools queue.** [KI-TOOL-KI-CLI-115](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-115-enforce-roadmap-writing-checkout.md) writing-checkout guard and [KI-TOOL-TECHNE-CLI-006](/Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-006-guarded-host-commands.md) remain adopted draft Hold. [KI-TOOL-TECHNE-CLI-008](/Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-008-host-patching-fields.md) is done (Decision 43). Dock belongs to Rig; no broad agent-host or Programme Hold resume.
 - **Durable procedure and inputs.** The [operator runbook](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/guides/operator/agent-host.md), [recipe manifest](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/recipes/agent-host/recipe.toml), [stack template](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/infra/aws/agent-host-stack.yaml) and `operations/aws/agent-host/` scripts own the procedure, reviewed at Harness `11adc5d625d102f808d306002916457116595264`. Re-read current sources before execution. The [prepared report](/Users/krisbrown/.local/state/ki/agents/tools-burndown/vega-rebuild-plan.report.md) and [readiness snapshot](/Users/krisbrown/.local/state/ki/agents/tools-burndown/vega-readiness.json) support this checkpoint; they are not its sole future authority.
 
 Thread rules:
@@ -69,9 +69,7 @@ This handoff unit changes only this checkpoint and the estate-factorisation chec
 For Kris:
 
 - **REBUILD:** Decision 14 resolves plan approval; actual owner execution/readiness remains. Revalidate unexpected resources or recoverable work before destruction, stop on contradiction/deletion failure, and escalate anything outside the approved one-host footprint. Do not infer missing means safe or widen discard to unrelated data/resources.
-- **SOP-HAND:** paste the audit handoff into state-of-play.
-- **KIM-HAND:** paste the [[Hosts, Roles and Layers]] review request into the `knowledge-islands-model.island-model-and-tending` thread.
-- **NAMES:** hand the machine-naming convention to the `rig.mac-studio-bootstrap` thread; now also written in [[Hosts, Roles and Layers]].
+- **KIM-HAND:** the [[Hosts, Roles and Layers]] review request. Its original target thread, `knowledge-islands-model.island-model-and-tending`, was retired on 2026-10-12 with its Project left dormant; recommended route is state-of-play. The handoff text asks the receiver to say "already received" and not reprocess it.
 
 Owned-host exemption for the Mac Studio is handled by KI-ARCADIA-GOV-033 in the `mac-studio-bootstrap` thread.
 
