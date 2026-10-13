@@ -4,7 +4,7 @@ thread: knowledge-islands-model.ways-of-working
 label: 'Knowledge Islands Model: ways-of-working'
 state: active
 created_at: 2026-10-09T20:58:00Z
-updated_at: 2026-10-13T02:30:00Z
+updated_at: 2026-10-13T02:35:00Z
 ---
 
 # knowledge-islands-model.ways-of-working
@@ -16,8 +16,8 @@ Kris's way of working with a master thread and Project threads, background agent
 ## Current state
 
 - Active: Kris opened this thread ahead of the master's queue (Decision 1). Run `ways-of-working`; decisions log at `~/.local/state/ki/agents/ways-of-working/decisions.md`. No mark yet.
-- Running: background agent `wt-rule` in `ki-agentic-harness`, adding the worktree location, run-folder retention and coordinator-model rules to `ki-delegation` and `ki-tokenomics` (Decisions 2 and 3).
-- `ki-delegation` read at f2b14dca (2026-10-11).
+- Nothing running. `wt-rule` delivered and pushed the worktree location, run-folder retention and coordinator rules in `ki-delegation`, and the coordination purpose in `ki-tokenomics` (Decisions 2 and 3). Its wording awaits Kris's review as `COORD-WORDING`.
+- `ki-delegation` read at c6850675 (2026-10-13).
 - Pending at the next mark (master Decision 143): change `label` to `KI Model: ways-of-working`.
 - In the skill now: the mark standard, carry-forward of outstanding items and stable Needs tags; the thread cap and the territory master thread; thread openers and Bootstrap; steering, not stopping; parking tangents, linking records, keeping primary checkouts current, Summary banner and resting point, and refreshing this guidance - all in [`ki-delegation`'s background-run standard](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/skills/governance/ki-delegation/references/standards-background-runs.md). They are this Project's to refine.
 - Proposed model, awaiting Kris: thread rules move out of `ki-delegation` into a new threads skill under change-management, leaving `ki-delegation` with background runs and packets; the registry stays in `ki-work`, records with the lifecycle skills, state in `ki-checkpoint`. Needs tags open: `SPLIT`, `SKILL-REVIEW`, `OPENER` (an `opener` field in checkpoint frontmatter), `KI-TERRITORY` (`ki territory projects`, `roadmap list|summary` and `threads` as a non-blocking tools-ki request).
@@ -41,6 +41,6 @@ None yet in this thread. The rules live in `/Users/krisbrown/workspaces/knowledg
 
 ## Next step
 
-1. Review `wt-rule`'s report with Kris when it finishes, especially the coordinator wording.
+1. Settle `COORD-WORDING` with Kris (report: `~/.local/state/ki/agents/ways-of-working/wt-rule.report.md`).
 2. Settle `SPLIT`, `SKILL-REVIEW`, `OPENER` and `KI-TERRITORY` with Kris.
 3. Review the other thread rules with Kris and refine them.
