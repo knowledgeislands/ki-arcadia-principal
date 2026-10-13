@@ -578,7 +578,7 @@
     {
       "id": "p-pmo-review",
       "type": "frontend",
-      "label": "ki-pmo-review",
+      "label": "ki-pmo-design",
       "sublabel": "was ki-design-loop",
       "sources": [
         {
@@ -1174,6 +1174,7 @@
       "items": [
         "NAMES (c): \"ki-pmo, ki-work-recurring\" - new ki-pmo; ki-work-housekeeping becomes ki-work-recurring",
         "BLUEPRINT-FIT: \"Name for ki-design-loop: ki-pmo-review, and how does it differ from ki-pmo (question open)\"",
+        "LOOP-NAME: \"ki-pmo-design\" - the loop's name, closing BLUEPRINT-FIT",
         "DESIGN-AREA: \"Keep design area, ki-design-system and ki-design-inspiration\""
       ]
     },

@@ -849,14 +849,14 @@ rect.c-bg-rect { fill: var(--bg); }
         <text x="1050" y="654" class="t-muted" font-size="9" text-anchor="middle">governance · unchanged</text>
         </g>
 
-        <g id="node-p-pmo-review" data-node-id="p-pmo-review" data-node-label="ki-pmo-review" tabindex="0" role="button" aria-label="Focus ki-pmo-review, was ki-design-loop, PROPOSED - the change-management design, with Kris's decisions on names › Design loop" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="was ki-design-loop" data-node-tag="RENAMED" data-node-context="PROPOSED - the change-management design, with Kris's decisions on names › Design loop">
-          <title>ki-pmo-review · was ki-design-loop · PROPOSED - the change-management design, with Kris's decisions on names › Design loop · RENAMED</title>
+        <g id="node-p-pmo-review" data-node-id="p-pmo-review" data-node-label="ki-pmo-design" tabindex="0" role="button" aria-label="Focus ki-pmo-design, was ki-design-loop, PROPOSED - the change-management design, with Kris's decisions on names › Design loop" aria-pressed="false" data-node-kind="frontend" data-node-sublabel="was ki-design-loop" data-node-tag="RENAMED" data-node-context="PROPOSED - the change-management design, with Kris's decisions on names › Design loop">
+          <title>ki-pmo-design · was ki-design-loop · PROPOSED - the change-management design, with Kris's decisions on names › Design loop · RENAMED</title>
           <rect x="40" y="760" width="160" height="48" rx="6" class="c-mask"/>
           <rect x="40" y="760" width="160" height="48" rx="6" class="c-frontend" stroke-width="1.5"/>
           <g aria-hidden="true" data-semantic-sigil="flag" class="semantic-sigil s-frontend" transform="translate(46 766) scale(0.6875)">
             <path d="M3 14V2h10l-2 3 2 3H3"/>
           </g>
-          <text data-node-label="" x="120" y="782" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">ki-pmo-review</text>
+          <text data-node-label="" x="120" y="782" class="t-primary" font-size="11" font-weight="600" text-anchor="middle">ki-pmo-design</text>
         <text x="120" y="798" class="t-muted" font-size="9" text-anchor="middle">was ki-design-loop</text>
         <text x="120" y="800" class="t-frontend" font-size="7" text-anchor="middle">RENAMED</text>
         </g>
