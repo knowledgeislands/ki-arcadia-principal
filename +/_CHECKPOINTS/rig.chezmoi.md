@@ -4,7 +4,7 @@ thread: rig.chezmoi
 label: 'Rig: chezmoi'
 state: active
 created_at: 2026-10-08T08:40:00Z
-updated_at: 2026-10-12T18:25:00Z
+updated_at: 2026-10-13T08:12:00Z
 ---
 
 # rig.chezmoi
@@ -17,9 +17,7 @@ Work the open KB-DOTFILES-UE records in the chezmoi source (`~/.local/share/chez
 
 Mark: 2026-10-11T02:29Z, decisions log at Decision 46
 
-ki-delegation read at f2b14dca
-
-**Handoff from mac-studio-bootstrap (2026-10-13, Kris approved `KEYCHAIN-SSH`).** The Automation service-account token is stored on `sol` in the login Keychain (`ki-op-service-account-automation`), and `op_cache` reads it from sol's screen session. Over SSH it cannot: `security find-generic-password` returns 36 (interaction not allowed), because the login Keychain is locked in SSH sessions. So `op_cache` falls back to the desktop app and remote `chezmoi apply` still fails on 1Password-backed targets. Make the token readable from a non-GUI session, for example a mode-600 token file or a dedicated keychain that stays unlocked, keeping it out of logs and caches, and update the "Service account" section of [the chezmoi guide](/Users/krisbrown/.local/share/chezmoi/docs/guides/tools/chezmoi.md) and the Keychain note in the "Remote access" section of [the macOS workstation guide](/Users/krisbrown/.local/share/chezmoi/docs/guides/user/macos-workstation.md). Not blocking mac-studio-bootstrap. Remove this paragraph once absorbed.
+ki-delegation read at fbd11977
 
 - **1Password reorganisation applied.** The vault restructure, confident moves, renames and home-page URL fixes are done. Nine wrong-category items were recreated as API Credential, the chezmoi references repointed with byte-identical renders, and all ten originals archived (one was a duplicate). Remaining review tags: about 176 `^triage`, 75 `^duplicate`, 41 `^review` and 8 `^fix_url`, which the repeatable-triage idea in the secrets-hygiene Project now carries. Both records sit in the [secrets-hygiene](../../Streams/Projects/secrets-hygiene.md) Project.
 - **Accepted and pruned:** KB-DOTFILES-UE-062 (scoped live-apply measurement: no failures, port 3100 briefly down twice), KB-DOTFILES-UE-073 (cheztoi host profile) and KB-DOTFILES-UE-081 (claude-swap auto-switch service). All pushed; the source audit passes with no failures.
@@ -46,6 +44,7 @@ The machine-local decisions log (`~/.local/state/ki/agents/chezmoi/decisions.md`
 
 Needs Kris:
 
+- **KEYCHAIN-SSH:** handed over by mac-studio-bootstrap and approved by Kris (Decision 53); not blocking. On `sol` the Automation service-account token sits in the login Keychain, which is locked over SSH (`security` exit 36), so `op_cache` falls back to the desktop app and remote `chezmoi apply` fails on 1Password-backed targets. Recommended: one route on every Mac - a mode-600 token file in a mode-700 directory, which `op_cache` reads after `OP_SERVICE_ACCOUNT_TOKEN` and refuses if it is readable by others, retiring the Keychain lookup; then update the "Service account" section of [the chezmoi guide](/Users/krisbrown/.local/share/chezmoi/docs/guides/tools/chezmoi.md) and the "Keychain secrets over SSH" note in [the macOS workstation guide](/Users/krisbrown/.local/share/chezmoi/docs/guides/user/macos-workstation.md). A dedicated keychain still needs its unlock password stored somewhere over SSH, so it gains nothing. Plan awaiting Kris.
 - **UE079-OPEN:** four items in [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) need a keep-or-remove answer. Mercury is Mercury Weather, an App Store weather app on the laptop only. Clockology and Prime Video are iPhone apps running on the Mac. `maturin` builds Rust-backed Python packages; mise installed it in August as a non-global tool. Recommended: remove Clockology and Prime Video, leave `maturin`, Kris's call on Mercury.
 - **SOL-ALIGN:** [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) needs a plan to make the laptop and `sol` install shared software the same way. On `sol`, Google Drive and Home Assistant were installed outside their declared routes, and the developer toolchain (Python, `uv`, Rust, Zig and the cargo tools) comes from different places on each Mac. Recommended: pin the toolchain globally in mise on both, reinstall the two apps on `sol` through their declared routes, and do the removals in the same pass at `sol`.
 
