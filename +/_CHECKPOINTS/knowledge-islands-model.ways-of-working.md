@@ -4,7 +4,7 @@ thread: knowledge-islands-model.ways-of-working
 label: 'KI Model: ways-of-working'
 state: active
 created_at: 2026-10-09T20:58:00Z
-updated_at: 2026-10-13T21:30:00Z
+updated_at: 2026-10-13T22:20:00Z
 ---
 
 # knowledge-islands-model.ways-of-working
@@ -44,8 +44,9 @@ None yet in this thread. The rules live in `/Users/krisbrown/workspaces/knowledg
 
 ## Open questions
 
-- Delivered 2026-10-13: Decision 21 is recorded in the design decisions file. KI-TOOL-KI-CLI-123 and KI-HARNESS-GOV-175 are adopted (draft, next, deliver); KI-HARNESS-GOV-176 is accepted (done). The report gains Durability and ownership. An Archify graph of the change-management skills is in the design folder.
-- Open for Kris: `DECISION-HOME`, `CITE-RULE`, `DESIGN-RETENTION`, `HOOK-OWNER`, `LOOP-NAME`, `PULSE-NAME`, `STATE-CLEANUP`, `PLAYWRIGHT-DEP`, `GRAPH-DEFAULTS`. Held: `PAPERCLIP-REQ` until Wave F.
+- Settled 2026-10-13 and recorded in the design decisions file: decisions are written as what they were, never by number; `ki-pmo` owns the coordinator hook; the design loop becomes `ki-pmo-design`; the graph choices are kept; run clean-up waits for `DECISION-HOME`.
+- Delivered 2026-10-13: KI-TOOL-KI-CLI-124 (`ki agent close`, triage) and a read-only run-folder inventory; KI-HARNESS-GOV-177 found that a browser-free SVG extractor matches only with a pinned browser stylesheet, so Playwright stays.
+- Open for Kris: `DECISION-HOME` (now: tracked `+/_THREADS/<thread>/`), `DESIGN-RETENTION` (`+/_DESIGN/<subject-slug>/`), `PULSE-NAME`, `RECAP-AWARE`, `HTML-COMMIT`, `UPSTREAM-EXPORT`, `EXTRACT-PIN`, `ACCEPT-177`, `CLOSED-THREADS`. Held: `PAPERCLIP-REQ` until Wave F.
 - Parked 2026-10-09: Markdown flavour - a gradual move from Obsidian-style to GitHub-flavoured Markdown, starting with a front-matter field declaring a note's flavour.
 
 ## Next step
