@@ -13,7 +13,7 @@ author: Written with Claude
 
 ## Direction
 
-Moving agent work off the workstation into a governed Techne footprint, and making the agent fleet deliver reviewed work. The [[Techne Programme Hold]] bounds what may run remotely; Arcadia owns the engineering decisions, while `ki-techne-harness` and `tools-techne` own their implementation. The workstation itself belongs to [[rig|Rig]], and the shared toolchain to [[platform-foundations|Platform foundations]].
+Moving agent work off the workstation into a governed Techne footprint, and making the agent fleet deliver reviewed work. The [[Techne Programme Hold]] bounds what may run remotely; Knowledge Islands Principal owns the engineering decisions, while `ki-techne-harness` and `tools-techne` own their implementation. The workstation itself belongs to [[rig|Rig]], and the shared toolchain to [[platform-foundations|Platform foundations]].
 
 [[Hosts, Roles and Layers]] explains where Techne sits: it takes a host to base and ready, then Rig rigs it up.
 

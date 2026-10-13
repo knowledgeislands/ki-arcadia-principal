@@ -8,11 +8,11 @@ author: AI-assisted
 
 ## Overview
 
-Techné is the engineering discipline maintained in Arcadia for the Knowledge Islands ecosystem.
+Techné is the engineering discipline maintained in Knowledge Islands Principal for the Knowledge Islands ecosystem.
 
 It defines the engineering practice required to design, operate, and evolve AI-native systems with governed knowledge.
 
-Arcadia holds the philosophy of Knowledge Islands and its Techné engineering practice: architecture, operating models, engineering workflows, and implementation patterns.
+Knowledge Islands Principal holds the philosophy of Knowledge Islands and its Techné engineering practice: architecture, operating models, engineering workflows, and implementation patterns.
 
 [[Agentic Operating Approach]] introduces how a person coordinates agentic work through one enduring persona, explicit working contexts, bounded authority and portable execution.
 
@@ -28,7 +28,7 @@ Current and candidate implementation mappings include Zed, Hermes Agent, tools-m
 
 The `ki` tool implements governance workflows. A distinct execution-fabric operator may later implement provisioning, dispatch, lifecycle and evidence-return operations, with implementation ownership assigned by [[ADR-KI-PRINCIPAL-006-techne-implementation-ownership|ADR-KI-PRINCIPAL-006]] to `ki-techne-harness` and the operator interface to `tools-techne`. Those product boundaries do not merge the architectural roles.
 
-Arcadia maintains Engineering Practice as living canonical knowledge rather than a fixed design document.
+Knowledge Islands Principal maintains Engineering Practice as living canonical knowledge rather than a fixed design document.
 
 Its architecture, decisions, evaluations, and operating guidance evolve through small, reviewable changes that preserve context and record consequences.
 
@@ -54,4 +54,4 @@ Its architecture, decisions, evaluations, and operating guidance evolve through 
 
 ## Provenance
 
-Adopted into Arcadia from [the retained Techné source](https://github.com/knowledgeislands/ki-techne-principal/blob/b25e9c950fd87715d12f76b69bb2079c3a4fc054/Pillars/Engineering%20Practice/Engineering%20Practice.md) at revision `b25e9c950fd87715d12f76b69bb2079c3a4fc054`. Arcadia owns this canonical engineering knowledge; the original source revision remains evidence.
+Adopted into Knowledge Islands Principal from [the retained Techné source](https://github.com/knowledgeislands/ki-techne-principal/blob/b25e9c950fd87715d12f76b69bb2079c3a4fc054/Pillars/Engineering%20Practice/Engineering%20Practice.md) at revision `b25e9c950fd87715d12f76b69bb2079c3a4fc054`. Knowledge Islands Principal owns this canonical engineering knowledge; the original source revision remains evidence.

@@ -2,7 +2,7 @@
 note_type: streams/project
 slug: island-model-and-tending
 title: Island model and Tending
-outcome: Arcadia's current island-model and tending records are each delivered, handed to their owner or closed, leaving the model and its tending practice with no speculative backlog.
+outcome: Knowledge Islands Principal's current island-model and tending records are each delivered, handed to their owner or closed, leaving the model and its tending practice with no speculative backlog.
 initiative: knowledge-islands-model
 lifecycle: active
 lead: Kris Brown
@@ -15,7 +15,7 @@ author: Written with Claude
 
 ## Outcome
 
-Settle Arcadia's current backlog on the island model and how an island is tended: boundary and enactment rules, geography, semantic conventions and Intention in the model, and the island's own operating practice (Calendar templates, sessions, schedules and token use). The test: every record that names this Project is delivered, handed to its owning repository or closed. Keeping the model coherent is ongoing; this finite outcome is bounded by the current records, and Kris is to confirm it.
+Settle Knowledge Islands Principal's current backlog on the island model and how an island is tended: boundary and enactment rules, geography, semantic conventions and Intention in the model, and the island's own operating practice (Calendar templates, sessions, schedules and token use). The test: every record that names this Project is delivered, handed to its owning repository or closed. Keeping the model coherent is ongoing; this finite outcome is bounded by the current records, and Kris is to confirm it.
 
 This Project sits in [[knowledge-islands-model|Knowledge Islands model]]. Its geography work feeds the paused [[website]] Project.
 
@@ -31,6 +31,6 @@ This Project sits in [[knowledge-islands-model|Knowledge Islands model]]. Its ge
 
 ### Close-out assessment
 
-Written 2026-10-12. Every record the Project held has been delivered, handed on or closed: the island-model and tending records, the Decision Record consolidation, the retirement of Agoras across the estate, the repair of dangling references, the Great Library framing of Arcadia's Pillars, and the reconciliation of the ChatGPT acquire into [[Emerging Concepts]] and candidate Engineering Practice [[Principles]]. Arcadia's tidy-up of Decision Record references, runtime-specific notes and Admin conventions is done; the remaining Admin conventions tidy-up tangent was dropped as already covered.
+Written 2026-10-12. Every record the Project held has been delivered, handed on or closed: the island-model and tending records, the Decision Record consolidation, the retirement of Agoras across the estate, the repair of dangling references, the Great Library framing of Knowledge Islands Principal's Pillars, and the reconciliation of the ChatGPT acquire into [[Emerging Concepts]] and candidate Engineering Practice [[Principles]]. Knowledge Islands Principal's tidy-up of Decision Record references, runtime-specific notes and Admin conventions is done; the remaining Admin conventions tidy-up tangent was dropped as already covered.
 
-Not delivered: the whole-philosophy coherence review, which also takes the question of whether tags are still needed. It still serves the Outcome, so the Project stays open, dormant with no thread, while that record is on hold until most of Arcadia's roadmap is cleared; its hold is reviewed on 2026-10-16 and weekly after. References to pre-rename names left by the territory rename were handed to the master thread. No other follow-up is needed.
+Not delivered: the whole-philosophy coherence review, which also takes the question of whether tags are still needed. It still serves the Outcome, so the Project stays open, dormant with no thread, while that record is on hold until most of Knowledge Islands Principal's roadmap is cleared; its hold is reviewed on 2026-10-16 and weekly after. References to pre-rename names left by the territory rename were handed to the master thread. No other follow-up is needed.

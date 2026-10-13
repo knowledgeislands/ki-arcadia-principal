@@ -161,4 +161,4 @@ Future chapters will define the detailed operating practices for remote engineer
 
 ## Provenance
 
-Adopted into Arcadia from [the retained Techné source](https://github.com/knowledgeislands/ki-techne-principal/blob/b25e9c950fd87715d12f76b69bb2079c3a4fc054/Pillars/Engineering%20Practice/Operating%20Model/Operating%20Model.md) at revision `b25e9c950fd87715d12f76b69bb2079c3a4fc054`. Arcadia owns this canonical engineering knowledge; the original source revision remains evidence.
+Adopted into Knowledge Islands Principal from [the retained Techné source](https://github.com/knowledgeislands/ki-techne-principal/blob/b25e9c950fd87715d12f76b69bb2079c3a4fc054/Pillars/Engineering%20Practice/Operating%20Model/Operating%20Model.md) at revision `b25e9c950fd87715d12f76b69bb2079c3a4fc054`. Knowledge Islands Principal owns this canonical engineering knowledge; the original source revision remains evidence.

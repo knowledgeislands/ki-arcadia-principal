@@ -23,7 +23,7 @@ This Project sits in [[knowledge-islands-model|Knowledge Islands model]].
 
 ## Notes
 
-- The name is "Command centre". "Council" stays the name of Arcadia's constitutional governance body in [[Council]]; the command centre convenes decisions for that body rather than being it, and the Convenor role ("calls the council together and holds no vote") is the matching coordination role.
+- The name is "Command centre". "Council" stays the name of Knowledge Islands Principal's constitutional governance body in [[Council]]; the command centre convenes decisions for that body rather than being it, and the Convenor role ("calls the council together and holds no vote") is the matching coordination role.
 - Thread rules and marks stay with [[ways-of-working]]; this Project consumes them and owns the vocabulary and the view.
 - Shared principle found in three places: a command surface is a projection over canonical records, never a second register.
 - Three attention taxonomies exist (HNR Council Attention, legal-principal headlines, Observatory Beacon); settle one before building a view.

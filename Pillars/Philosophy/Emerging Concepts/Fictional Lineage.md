@@ -57,4 +57,4 @@ The aim is a record of ideas and their influence, not a fandom or reference list
 
 ## Provenance
 
-Captured from a ChatGPT conversation on 2026-10-03 and reconciled against Arcadia on 2026-10-11, when the real-world lineage already held elsewhere was trimmed. Held here as input to the whole-philosophy review.
+Captured from a ChatGPT conversation on 2026-10-03 and reconciled against Knowledge Islands Principal on 2026-10-11, when the real-world lineage already held elsewhere was trimmed. Held here as input to the whole-philosophy review.

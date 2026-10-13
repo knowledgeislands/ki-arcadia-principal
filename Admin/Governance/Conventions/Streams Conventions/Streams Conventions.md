@@ -19,7 +19,7 @@ Conventions specific to the `Streams/` zone - how flat roadmap records and recur
 
 Every write under `Streams/Roadmap/` - capture, shaping, lifecycle transition, acceptance, or prune - is made in this repository's primary checkout as resolved by the local `ki` registry, which owns its physical path. Concurrent writers queue for that checkout rather than writing roadmap records from isolated checkouts. A run that delivers its work in an isolated checkout takes its number and writes its record in the primary checkout.
 
-Identifiers are reserved by committing the `_ISSUES.md` high-water mark advance on its own before the record is written; nothing else reserves a number. The rule and its rationale are owned by the repository-roadmaps standard of `ki-work-roadmap` in `ki-agentic-harness` (`### Number reservation` and `### Roadmap write locus`); this section names only Arcadia's locus.
+Identifiers are reserved by committing the `_ISSUES.md` high-water mark advance on its own before the record is written; nothing else reserves a number. The rule and its rationale are owned by the repository-roadmaps standard of `ki-work-roadmap` in `ki-agentic-harness` (`### Number reservation` and `### Roadmap write locus`); this section names only Knowledge Islands Principal's locus.
 
 ## Authority
 

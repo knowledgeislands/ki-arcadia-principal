@@ -11,7 +11,7 @@ author: Mixed
 
 ## Overview
 
-Arcadia holds the canonical public Knowledge Islands model. The Contribution Process distinguishes a receiving territory's adoption of published knowledge from a contribution to Arcadia's canonical sources. Both preserve the receiving owner's authority.
+Knowledge Islands Principal holds the canonical public Knowledge Islands model. The Contribution Process distinguishes a receiving territory's adoption of published knowledge from a contribution to Knowledge Islands Principal's canonical sources. Both preserve the receiving owner's authority.
 
 A public source can be read or adopted without the source keeping a reciprocal list of consumers. A restricted exchange or a request for another island's work requires its own authority and admission rules.
 
@@ -29,16 +29,16 @@ Provenance identifies the source and known revision and distinguishes the origin
 
 ## Contributions to the KI model
 
-Anyone may identify a gap or offer an idea through a permitted intake. A formal proposal to change Arcadia's canonical model is carried by a member of its Council and follows Arcadia's Enactment Process. Citizenship and Council membership are recorded by the relevant island's Admin governance, and standing in another territory grants no automatic authority here.
+Anyone may identify a gap or offer an idea through a permitted intake. A formal proposal to change Knowledge Islands Principal's canonical model is carried by a member of its Council and follows Knowledge Islands Principal's Enactment Process. Citizenship and Council membership are recorded by the relevant island's Admin governance, and standing in another territory grants no automatic authority here.
 
 A contribution must:
 
 1. State the generic, portable knowledge offered and its source.
 2. Establish authority to share the material, including its audience and any restrictions.
 3. Enter the receiving process as draft work without assuming adoption or priority.
-4. Receive Arcadia's review and acceptance before changing its canonical stores.
+4. Receive Knowledge Islands Principal's review and acceptance before changing its canonical stores.
 
-Knowledge specific to the contributor's territory stays under that territory's ownership unless a separately approved adaptation has a useful place in the KI model. A contribution offers knowledge; it does not grant the contributor write authority or oblige Arcadia to act.
+Knowledge specific to the contributor's territory stays under that territory's ownership unless a separately approved adaptation has a useful place in the KI model. A contribution offers knowledge; it does not grant the contributor write authority or oblige Knowledge Islands Principal to act.
 
 ---
 

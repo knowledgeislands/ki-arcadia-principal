@@ -8,7 +8,7 @@ author: Written with Claude
 
 ## Overview
 
-This folder is the Knowledge Islands territory's Project registry, held by Arcadia as Capital. A Project is a finite outcome with a lead, a target and a `lifecycle` (`planned`, `active`, `paused`, `completed` or `cancelled`); the Initiative is the long-lived direction it serves, held in the sibling [[Initiatives]] folder. Each Project note is named by its slug, so a work record's `project` value resolves to a path here.
+This folder is the Knowledge Islands territory's Project registry, held by Knowledge Islands Principal as Capital. A Project is a finite outcome with a lead, a target and a `lifecycle` (`planned`, `active`, `paused`, `completed` or `cancelled`); the Initiative is the long-lived direction it serves, held in the sibling [[Initiatives]] folder. Each Project note is named by its slug, so a work record's `project` value resolves to a path here.
 
 Links point upwards only: a work record names its Project, and a Project names its Initiative. A Project note carries its outcome and notes - ideas and context worth keeping - and lists no records; status lives in each record and in the note's `lifecycle`, and `ki` produces the views. Membership is classification, not authority: each owning repository keeps its plan, priority and acceptance. Work that never finishes, such as standards upkeep and workstation hygiene, is projectless and described under its Initiative. "Project" here means a registry entry, not the `project` repository shape.
 
@@ -34,7 +34,7 @@ Links point upwards only: a work record names its Project, and a Project names i
 
 ## Command centre
 
-[[command-centre]] gives Kris one vocabulary and model for the command centre across the harness, Observatory, hnr-principal and legal-principal, with one read-only state-of-play view. "Council" stays Arcadia's governance body.
+[[command-centre]] gives Kris one vocabulary and model for the command centre across the harness, Observatory, hnr-principal and legal-principal, with one read-only state-of-play view. "Council" stays Knowledge Islands Principal's governance body.
 
 ---
 
@@ -52,7 +52,7 @@ Links point upwards only: a work record names its Project, and a Project names i
 
 ## Island model and Tending
 
-[[island-model-and-tending]] settles Arcadia's current backlog on the island model and how an island is tended.
+[[island-model-and-tending]] settles Knowledge Islands Principal's current backlog on the island model and how an island is tended.
 
 ---
 
@@ -118,4 +118,4 @@ Links point upwards only: a work record names its Project, and a Project names i
 
 ## Website
 
-[[website]] gives the Knowledge Islands website deliberate landing pages and an interactive island diagram drawn from Arcadia's geography model.
+[[website]] gives the Knowledge Islands website deliberate landing pages and an interactive island diagram drawn from Knowledge Islands Principal's geography model.

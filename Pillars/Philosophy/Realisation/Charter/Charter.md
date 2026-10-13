@@ -13,7 +13,7 @@ author: Written with Claude
 
 ## Overview
 
-The Charter is the identity document at the heart of every Knowledge Island's `Admin/Governance/` zone and one of the two constitutionally required elements of realisation, alongside the [[Council]]. [[SDR-KI-PRINCIPAL-003-the-governance-of-an-island|SDR-KI-PRINCIPAL-003]] makes it mandatory: it records the island's identity and its declared adoption position on every activity group, and no unknowns are permitted. It is the authoritative cold-start document - the first note an agent or a person reads to learn what an island is and what it currently runs. This note defines what a Charter holds at model level; Arcadia's own Charter is [[Admin/Governance/Charter|Admin/Governance/Charter]].
+The Charter is the identity document at the heart of every Knowledge Island's `Admin/Governance/` zone and one of the two constitutionally required elements of realisation, alongside the [[Council]]. [[SDR-KI-PRINCIPAL-003-the-governance-of-an-island|SDR-KI-PRINCIPAL-003]] makes it mandatory: it records the island's identity and its declared adoption position on every activity group, and no unknowns are permitted. It is the authoritative cold-start document - the first note an agent or a person reads to learn what an island is and what it currently runs. This note defines what a Charter holds at model level; Knowledge Islands Principal's own Charter is [[Admin/Governance/Charter|Admin/Governance/Charter]].
 
 ---
 
@@ -25,9 +25,9 @@ A Charter has two parts that change at different rates. The **identity** part is
 
 ## Identity
 
-The identity section holds the fixed parameters that distinguish one island from another: its name, the territory it belongs to and that territory's Capital, its canonical repository and folder, and the prefixes used to name its scheduled tasks and other identifiers. Automations and prompts read these values from the Charter rather than hardcoding them, so the same activity definitions run unchanged on any island. In Arcadia's Charter, for example, the task ID prefix is `arcadia-principal-`.
+The identity section holds the fixed parameters that distinguish one island from another: its name, the territory it belongs to and that territory's Capital, its canonical repository and folder, and the prefixes used to name its scheduled tasks and other identifiers. Automations and prompts read these values from the Charter rather than hardcoding them, so the same activity definitions run unchanged on any island. In Knowledge Islands Principal's Charter, for example, the task ID prefix is `ki-principal-`.
 
-A principal island's Charter also declares its territorial standing. Arcadia's Charter states that it is the sole Capital of the Knowledge Islands territory, names [[Known Lands]] as the authoritative inventory, and records which repositories hold separate ownership.
+A principal island's Charter also declares its territorial standing. Knowledge Islands Principal's Charter states that it is the sole Capital of the Knowledge Islands territory, names [[Known Lands]] as the authoritative inventory, and records which repositories hold separate ownership.
 
 ---
 

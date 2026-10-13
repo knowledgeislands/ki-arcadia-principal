@@ -80,7 +80,7 @@ The evidence envelope is proportionate to consequence. A read-only documentation
 
 ## Ownership
 
-- **Arcadia** owns the engineering meaning, responsibilities, invariants and decision criteria in this chapter.
+- **Knowledge Islands Principal** owns the engineering meaning, responsibilities, invariants and decision criteria in this chapter.
 - **`ki-specifications`** remains dormant before overall V1; repository-local schemas and conformance rules remain with their implementation owners.
 - **`ki-agentic-harness`** owns reusable agentic capabilities and harness-compatible semantics that implementations can expose.
 - **`tools-ki`** owns CLI and deterministic platform behaviour it implements; governance commands do not thereby become fabric operation.
@@ -89,7 +89,7 @@ The evidence envelope is proportionate to consequence. A read-only documentation
 - **Agent runtimes** own task performance inside the admitted environment without redefining authority or evidence.
 - **Provider adapters** translate the portable contract to provider operations without exporting provider-specific fields into the architecture-level contract.
 
-The two implementation roles share a product repository but remain architecturally distinct. `ki-techne-harness` owns runnable implementation and release choices; Arcadia owns the meaning and decision criteria in this contract.
+The two implementation roles share a product repository but remain architecturally distinct. `ki-techne-harness` owns runnable implementation and release choices; Knowledge Islands Principal owns the meaning and decision criteria in this contract.
 
 ## Proof Entry Criteria
 
@@ -113,4 +113,4 @@ Return to [[Architecture]].
 
 ## Provenance
 
-Adopted into Arcadia from [the retained Techné source](https://github.com/knowledgeislands/ki-techne-principal/blob/b25e9c950fd87715d12f76b69bb2079c3a4fc054/Pillars/Engineering%20Practice/Architecture/Techne%20Fabric%20Execution%20Contract.md) at revision `b25e9c950fd87715d12f76b69bb2079c3a4fc054`. Arcadia owns this canonical engineering knowledge; the original source revision remains evidence.
+Adopted into Knowledge Islands Principal from [the retained Techné source](https://github.com/knowledgeislands/ki-techne-principal/blob/b25e9c950fd87715d12f76b69bb2079c3a4fc054/Pillars/Engineering%20Practice/Architecture/Techne%20Fabric%20Execution%20Contract.md) at revision `b25e9c950fd87715d12f76b69bb2079c3a4fc054`. Knowledge Islands Principal owns this canonical engineering knowledge; the original source revision remains evidence.

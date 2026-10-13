@@ -23,8 +23,8 @@ Notes route to one of three zones depending on whether the content is portable, 
 | Zone | Folder | Concern | Key question † |
 | --- | --- | --- | --- |
 | Philosophy | `Pillars/Philosophy/` | The KI concept, architecture, and governance framework | What is the KI system, generically? ‡ |
-| Governance | `Admin/Governance/` | Arcadia's identity, decisions, conventions, policies, and templates | What defines this island? § |
-| Operations | `Admin/Operations/` | Arcadia's day-to-day running - activities, processes, skills | How does this island operate? |
+| Governance | `Admin/Governance/` | Knowledge Islands Principal's identity, decisions, conventions, policies, and templates | What defines this island? § |
+| Operations | `Admin/Operations/` | Knowledge Islands Principal's day-to-day running - activities, processes, skills | How does this island operate? |
 
 † **Key question** - the discriminating question for routing a note into each zone.
 
@@ -36,10 +36,10 @@ Common routing decisions:
 
 - The KI concept, island types, and governance patterns → `Pillars/Philosophy/`
 - The Enactment Process (canonical, portable) → `Pillars/Philosophy/Model/Processes/`
-- Arcadia's council, charter, known lands → `Admin/Governance/`
+- Knowledge Islands Principal's council, charter, known lands → `Admin/Governance/`
 - KI conventions, note format, frontmatter (portable) → `Pillars/Philosophy/Model/Conventions/`
-- Arcadia's conventions (island-specific) → `Admin/Governance/Conventions/`
-- Arcadia's activity definitions → `Admin/Operations/Activities/`
+- Knowledge Islands Principal's conventions (island-specific) → `Admin/Governance/Conventions/`
+- Knowledge Islands Principal's activity definitions → `Admin/Operations/Activities/`
 
 ---
 

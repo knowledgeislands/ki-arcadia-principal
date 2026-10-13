@@ -64,7 +64,7 @@ Activities divide by cadence and initiation. Two are scheduled automations that 
 
 ## Convergence Check
 
-[[Model/Activities/Tending/Convergence Check|Convergence Check]] is triggered with _"ki convergence check"_ and run ad hoc. It compares notes shared across multiple islands in the same archipelago, surfaces drift between versions, and identifies improvements in one island that should be cross-pollinated to others. Relevant for islands that maintain parallel notes (e.g. shared governance notes in both Arcadia and a satellite island). Not relevant for standalone islands.
+[[Model/Activities/Tending/Convergence Check|Convergence Check]] is triggered with _"ki convergence check"_ and run ad hoc. It compares notes shared across multiple islands in the same archipelago, surfaces drift between versions, and identifies improvements in one island that should be cross-pollinated to others. Relevant for islands that maintain parallel notes (e.g. shared governance notes in both Knowledge Islands Principal and a satellite island). Not relevant for standalone islands.
 
 ---
 

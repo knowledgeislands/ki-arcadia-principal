@@ -13,25 +13,25 @@ author: Written with Claude
 
 ## Overview
 
-Configuration is the set of island-specific values that vary between deployments while the portable activity definitions stay the same. It exists so that one Activity definition can run unchanged on any island: whatever differs - names, timings, connected services, adopted skills - is declared in configuration and read at runtime. Configuration is not one note but a small number of declared homes, each with a single owner. This note describes those homes at model level, with Arcadia's as the worked example.
+Configuration is the set of island-specific values that vary between deployments while the portable activity definitions stay the same. It exists so that one Activity definition can run unchanged on any island: whatever differs - names, timings, connected services, adopted skills - is declared in configuration and read at runtime. Configuration is not one note but a small number of declared homes, each with a single owner. This note describes those homes at model level, with Knowledge Islands Principal's as the worked example.
 
 ---
 
 ## Identity Parameters
 
-The island's fixed parameters live in the identity section of its [[Realisation/Charter/Charter|Charter]]: its name, its repository, and the prefixes that name its scheduled tasks and other identifiers. In Arcadia the task ID prefix is `arcadia-principal-`, so every scheduled task carries that prefix and can be traced to the island that owns it.
+The island's fixed parameters live in the identity section of its [[Realisation/Charter/Charter|Charter]]: its name, its repository, and the prefixes that name its scheduled tasks and other identifiers. In Knowledge Islands Principal the task ID prefix is `ki-principal-`, so every scheduled task carries that prefix and can be traced to the island that owns it.
 
 ---
 
 ## Schedule and Day Types
 
-The Schedule note defines the day-type taxonomy that automations read before acting. Every daily note carries a `day_type` - `work-day`, `bank-holiday`, `annual-leave` or `weekend` - set by a first-match rule from the day of the week and the island's bank-holiday and annual-leave calendars. The Charter's Scheduled Activities table then binds each enabled automation to a day type and a time. Arcadia's model is in [[Schedule]], beside its Activity notes.
+The Schedule note defines the day-type taxonomy that automations read before acting. Every daily note carries a `day_type` - `work-day`, `bank-holiday`, `annual-leave` or `weekend` - set by a first-match rule from the day of the week and the island's bank-holiday and annual-leave calendars. The Charter's Scheduled Activities table then binds each enabled automation to a day type and a time. Knowledge Islands Principal's model is in [[Schedule]], beside its Activity notes.
 
 ---
 
 ## Activity Configuration
 
-Some activity groups need configuration of their own, such as the routing rules an email activity applies. Each such group keeps a configuration note beside its Activity Definition, under the naming convention `[Group] [Name] Activity.md`. In Arcadia the Email group is vetoed, so [[Admin/Operations/Activities/Email Activity|Email Activity]] records in one place that no configuration applies, rather than keeping a separate configuration note.
+Some activity groups need configuration of their own, such as the routing rules an email activity applies. Each such group keeps a configuration note beside its Activity Definition, under the naming convention `[Group] [Name] Activity.md`. In Knowledge Islands Principal the Email group is vetoed, so [[Admin/Operations/Activities/Email Activity|Email Activity]] records in one place that no configuration applies, rather than keeping a separate configuration note.
 
 ---
 
@@ -43,7 +43,7 @@ Connected services and the identifiers activities use to reach them are declared
 
 ## Repository Declaration
 
-An island's repository also carries a machine-readable declaration, `.ki.toml`, which tooling reads directly. It records the repository's identity and code (`KI-PRINCIPAL` for Arcadia), its Capital, its supported runtimes, and the skills and standards it adopts, each with any skill-specific settings. On a principal island it also carries the territory's name, prefix and ordered member roster, which must agree with [[Known Lands]]. `ki repo audit` checks the repository against these declarations, and [[Admin/Governance/Conformance|Conformance]] lists the standards adopted.
+An island's repository also carries a machine-readable declaration, `.ki.toml`, which tooling reads directly. It records the repository's identity and code (`KI-PRINCIPAL` for Knowledge Islands Principal), its Capital, its supported runtimes, and the skills and standards it adopts, each with any skill-specific settings. On a principal island it also carries the territory's name, prefix and ordered member roster, which must agree with [[Known Lands]]. `ki repo audit` checks the repository against these declarations, and [[Admin/Governance/Conformance|Conformance]] lists the standards adopted.
 
 ---
 

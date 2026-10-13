@@ -13,7 +13,7 @@ author: Written with Claude
 
 ## Overview
 
-The Council is the governing body of a Knowledge Island and the second constitutionally required element of realisation, alongside the [[Realisation/Charter/Charter|Charter]]. [[SDR-KI-PRINCIPAL-003-the-governance-of-an-island|SDR-KI-PRINCIPAL-003]] defines it as the body that ratifies proposals and holds authority on the island, and declares that each island's `Admin/` zone declares its council. Its authority is not exercised separately from the island's processes: the [[Processes/Enactment Process/Enactment Process|Enactment Process]] is how the council operates. This note describes the council at model level; Arcadia's own council is declared in its Enactment Process.
+The Council is the governing body of a Knowledge Island and the second constitutionally required element of realisation, alongside the [[Realisation/Charter/Charter|Charter]]. [[SDR-KI-PRINCIPAL-003-the-governance-of-an-island|SDR-KI-PRINCIPAL-003]] defines it as the body that ratifies proposals and holds authority on the island, and declares that each island's `Admin/` zone declares its council. Its authority is not exercised separately from the island's processes: the [[Processes/Enactment Process/Enactment Process|Enactment Process]] is how the council operates. This note describes the council at model level; Knowledge Islands Principal's own council is declared in its Enactment Process.
 
 ---
 
@@ -43,4 +43,4 @@ The council is one of several governance patterns in [[Jurisdiction]]. A formal 
 
 ## Where the Council Is Recorded
 
-The council's membership is island-specific realisation and lives in `Admin/`, not in the portable model. Arcadia is a single-person island: its [[Admin/Operations/Processes/Enactment Process|Enactment Process]] names the island owner as sole Council member and approver. An explicit owner instruction for a bounded change stands in for a work record, so the council's authority is exercised either through a record that reaches review or through that direct instruction.
+The council's membership is island-specific realisation and lives in `Admin/`, not in the portable model. Knowledge Islands Principal is a single-person island: its [[Admin/Operations/Processes/Enactment Process|Enactment Process]] names the island owner as sole Council member and approver. An explicit owner instruction for a bounded change stands in for a work record, so the council's authority is exercised either through a record that reaches review or through that direct instruction.

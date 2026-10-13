@@ -33,4 +33,4 @@ Start with [[How Change Happens]], the narrative chapter note, before reading ei
 
 ## Contribution Process
 
-[[Contribution Process]] distinguishes a territory's adoption of published Knowledge Islands knowledge from a contribution to Arcadia's canonical model. It explains how public adoption, formal contributions, and internal routing or restricted exchange each work, and why none of them transfers authority away from the receiving owner. Read it when bringing knowledge into an island from the shared model or offering knowledge back to it.
+[[Contribution Process]] distinguishes a territory's adoption of published Knowledge Islands knowledge from a contribution to Knowledge Islands Principal's canonical model. It explains how public adoption, formal contributions, and internal routing or restricted exchange each work, and why none of them transfers authority away from the receiving owner. Read it when bringing knowledge into an island from the shared model or offering knowledge back to it.

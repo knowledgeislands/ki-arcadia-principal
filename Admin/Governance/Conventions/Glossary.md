@@ -11,7 +11,7 @@ author: Written with Claude
 
 ## Overview
 
-A reference for Knowledge Islands terminology - concepts, acronyms, and structural terms used across Arcadia and the wider archipelago system.
+A reference for Knowledge Islands terminology - concepts, acronyms, and structural terms used across Knowledge Islands Principal and the wider archipelago system.
 
 ---
 
@@ -41,7 +41,7 @@ A reference for Knowledge Islands terminology - concepts, acronyms, and structur
 
 †† Knows the location of the archipelago and is authorised to contribute to its canonical knowledge.
 
-‡‡ Arcadia's is the canonical objective record; each principal's own island holds a personal navigator's chart.
+‡‡ Knowledge Islands Principal's is the canonical objective record; each principal's own island holds a personal navigator's chart.
 
 §§ Held by the principal island of a territory. Charter and Council are its required elements, both residing in `Admin/Governance`.
 

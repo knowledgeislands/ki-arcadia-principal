@@ -13,7 +13,7 @@ author: Written with Claude
 
 Concept is the second half of the Introduction. Background ends with a single island as the home of knowledge; Concept supplies the vocabulary needed to treat that island as a governed territory rather than a file store. Its four concepts are territory and scale, agency, jurisdiction and governance, and each is a prerequisite for the next. Once they are in place the reader moves on to the Model, which turns this vocabulary into portable conventions, processes, activities, agents and tools.
 
-Every concept here is portable and island-agnostic. Where Arcadia needs its own instance of a concept, such as its Charter, inventory or council, that belongs in `Admin/` rather than in this chapter. The chapter opens with a short orienting note and then takes the four concepts in order.
+Every concept here is portable and island-agnostic. Where Knowledge Islands Principal needs its own instance of a concept, such as its Charter, inventory or council, that belongs in `Admin/` rather than in this chapter. The chapter opens with a short orienting note and then takes the four concepts in order.
 
 ---
 
@@ -25,7 +25,7 @@ Every concept here is portable and island-agnostic. Where Arcadia needs its own 
 
 ## Territories and Archipelagos
 
-[[Territories and Archipelagos]] explains how islands relate at scale. It distinguishes a territory, a governed collection of islands under one accountable authority with exactly one Capital, from an archipelago, a grouping by proximity or shared character that confers no authority. It also covers Known Lands and signposting, the distinct forms of knowledge exchange between islands, and the constitutional baseline a territory accepts when it adopts the model. It is the longest note in the chapter and the one most directly reflected in Arcadia's own governance.
+[[Territories and Archipelagos]] explains how islands relate at scale. It distinguishes a territory, a governed collection of islands under one accountable authority with exactly one Capital, from an archipelago, a grouping by proximity or shared character that confers no authority. It also covers Known Lands and signposting, the distinct forms of knowledge exchange between islands, and the constitutional baseline a territory accepts when it adopts the model. It is the longest note in the chapter and the one most directly reflected in Knowledge Islands Principal's own governance.
 
 ---
 

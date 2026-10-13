@@ -11,7 +11,7 @@ author: AI-assisted
 
 ## Overview
 
-The GitHub Apps and automated identities that act on repositories in the `knowledgeislands` organisation. Each is estate infrastructure rather than part of Arcadia's own runtime surface, which [[Admin Conventions/Integrations|Integrations]] covers. This note records what each identity is for, what it may do and who owns its credentials, so that a change to any of them is a deliberate, visible act.
+The GitHub Apps and automated identities that act on repositories in the `knowledgeislands` organisation. Each is estate infrastructure rather than part of Knowledge Islands Principal's own runtime surface, which [[Admin Conventions/Integrations|Integrations]] covers. This note records what each identity is for, what it may do and who owns its credentials, so that a change to any of them is a deliberate, visible act.
 
 Credential names and custody locations are recorded here, never secret values. Private keys and tokens live in GitHub repository settings and the owner's password manager and never in the island. An App ID is a public identifier, not a secret, and is recorded where known.
 

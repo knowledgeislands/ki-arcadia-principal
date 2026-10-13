@@ -40,7 +40,7 @@ Governed identity and policy belong in Admin; machine-specific paths belong in t
 
 ## Library
 
-The Library is the canonical record - version-controlled, governed, and the single source of truth for all ratified knowledge. It contains three zones: Calendar (time-bound notes), Pillars (internal knowledge owned by the island), and Resources (external reference material). Nothing enters the Library except through the governance process. An island may name its Library, or parts of it, after particular buildings, artefacts or features of the landscape - Arcadia calls its Pillars the Great Library - without changing this structure.
+The Library is the canonical record - version-controlled, governed, and the single source of truth for all ratified knowledge. It contains three zones: Calendar (time-bound notes), Pillars (internal knowledge owned by the island), and Resources (external reference material). Nothing enters the Library except through the governance process. An island may name its Library, or parts of it, after particular buildings, artefacts or features of the landscape - Knowledge Islands Principal calls its Pillars the Great Library - without changing this structure.
 
 ### Top-Level Folders
 
@@ -54,7 +54,7 @@ The Library is the canonical record - version-controlled, governed, and the sing
 | `+`         | Inbox - unsorted captures awaiting filing (inbound staging, not a zone)             |
 | `-`         | Outbound staging - produced artefacts leaving the island; present but minimal       |
 
-The five Knowledge Base zones are `Calendar`, `Pillars`, `Resources`, `Streams` and `Admin`, with inbound `+` and outbound `-` staging. Arcadia's governance lives in Admin, not a separate Knowledge Capital folder. Calendar records and outbound artifacts follow their own note-type and process owners; a shared staging convention does not authorise relocating existing records.
+The five Knowledge Base zones are `Calendar`, `Pillars`, `Resources`, `Streams` and `Admin`, with inbound `+` and outbound `-` staging. Knowledge Islands Principal's governance lives in Admin, not a separate Knowledge Capital folder. Calendar records and outbound artifacts follow their own note-type and process owners; a shared staging convention does not authorise relocating existing records.
 
 Inbound and outbound staging are kept apart, and outside the zones, for three reasons. Material in `+` is arriving and waits to be filed into a zone or discarded; material in `-` is leaving and waits to be delivered, extracted or deleted, so mixing them would hide one queue inside the other. Neither area holds content the island keeps, so neither carries a same-name index or follows the zone rules, which stops transient material being read as canonical. And because each zone holds only governed content, an audit can treat anything ephemeral found in a zone as a mistake. [[Outbound]] and [[Session Digest]] give the outbound detail.
 

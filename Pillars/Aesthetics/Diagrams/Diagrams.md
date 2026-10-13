@@ -20,7 +20,7 @@ Note: two versions of the system overview exist (v1 and v2). Both are retained u
 
 ## System Overview
 
-The system overview diagram covers the three core dimensions of Knowledge Islands in a single visual: the Cycle of Knowledge, the Agent model, and the Geography. Below these sits a territory map showing Arcadia as the principal island alongside Learning, Project, Organisation, and Domain territories, each with their satellite islands. Core Principles anchor the bottom.
+The system overview diagram covers the three core dimensions of Knowledge Islands in a single visual: the Cycle of Knowledge, the Agent model, and the Geography. Below these sits a territory map showing Knowledge Islands Principal as the principal island alongside Learning, Project, Organisation, and Domain territories, each with their satellite islands. Core Principles anchor the bottom.
 
 Two versions are available pending review:
 

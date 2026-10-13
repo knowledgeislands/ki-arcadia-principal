@@ -15,4 +15,4 @@ author: Written with Claude
 
 ## Overview
 
-Arcadia has adopted the Tending activity group. All eight activities are enabled - two scheduled automations (Health Check, Knowledge Rebuild) and six conversational activities. See [[Admin/Governance/Charter|Charter]] for the adoption position and the full activity roster, and [[Schedule]] for the day-type taxonomy that the scheduled automations read.
+Knowledge Islands Principal has adopted the Tending activity group. All eight activities are enabled - two scheduled automations (Health Check, Knowledge Rebuild) and six conversational activities. See [[Admin/Governance/Charter|Charter]] for the adoption position and the full activity roster, and [[Schedule]] for the day-type taxonomy that the scheduled automations read.

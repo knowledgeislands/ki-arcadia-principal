@@ -49,7 +49,7 @@ The personal-controller role coordinates governed work across deterministic, age
 
 Techne owns the architectural roles, relationships and decision criteria. Before overall V1, `ki-specifications` is dormant; repository-local contracts remain with their owners. `ki-agentic-harness` owns reusable agentic capabilities, while `tools-ki` owns deterministic CLI and platform behaviour it implements. Governance authority does not grant infrastructure-control authority.
 
-`ki-techne-harness` owns implementations of the personal-controller and execution-fabric-operator roles. Arcadia retains their architectural meaning and boundaries; assigning one product repository does not merge the roles or make that repository authoritative for governed work, credentials or accepted outcomes. [[Techne Fabric Execution Contract]] defines the hand-off those implementations must preserve.
+`ki-techne-harness` owns implementations of the personal-controller and execution-fabric-operator roles. Knowledge Islands Principal retains their architectural meaning and boundaries; assigning one product repository does not merge the roles or make that repository authoritative for governed work, credentials or accepted outcomes. [[Techne Fabric Execution Contract]] defines the hand-off those implementations must preserve.
 
 ## Work Execution Responsibilities
 
@@ -122,4 +122,4 @@ These questions should be resolved through Architecture Decision Records or oper
 
 ## Provenance
 
-Adopted into Arcadia from [the retained Techné source](https://github.com/knowledgeislands/ki-techne-principal/blob/b25e9c950fd87715d12f76b69bb2079c3a4fc054/Pillars/Engineering%20Practice/Architecture/Engineering%20Estate.md) at revision `b25e9c950fd87715d12f76b69bb2079c3a4fc054`. Arcadia owns this canonical engineering knowledge; the original source revision remains evidence.
+Adopted into Knowledge Islands Principal from [the retained Techné source](https://github.com/knowledgeislands/ki-techne-principal/blob/b25e9c950fd87715d12f76b69bb2079c3a4fc054/Pillars/Engineering%20Practice/Architecture/Engineering%20Estate.md) at revision `b25e9c950fd87715d12f76b69bb2079c3a4fc054`. Knowledge Islands Principal owns this canonical engineering knowledge; the original source revision remains evidence.

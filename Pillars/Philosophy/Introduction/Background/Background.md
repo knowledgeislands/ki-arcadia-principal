@@ -19,7 +19,7 @@ The notes are written to be read in order. After a short orienting entry point, 
 
 ## What is Knowledge Islands
 
-[[What is Knowledge Islands]] is the orienting entry point. It frames Knowledge Islands as a question about civilisation rather than a filing problem: who creates knowledge, who holds authority over it, how it travels and how it endures. It also sketches the shape of everything that follows, from the nature of knowledge through the geographic framework to jurisdiction and governance, and names Arcadia as the model's canonical home. Read it first for a map before the detail.
+[[What is Knowledge Islands]] is the orienting entry point. It frames Knowledge Islands as a question about civilisation rather than a filing problem: who creates knowledge, who holds authority over it, how it travels and how it endures. It also sketches the shape of everything that follows, from the nature of knowledge through the geographic framework to jurisdiction and governance, and names Knowledge Islands Principal as the model's canonical home. Read it first for a map before the detail.
 
 ---
 

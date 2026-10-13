@@ -12,11 +12,11 @@ Techne is a focused engineering discipline, not a universal reference for all te
 
 These boundaries preserve clarity of purpose and help contributors distinguish an architectural concern from a topic that belongs elsewhere.
 
-## Replace Arcadia
+## Replace Knowledge Islands Principal
 
 Techne does not redefine the philosophy, purpose, or broader worldview of Knowledge Islands.
 
-It applies that context to engineering practice and links to Arcadia when philosophical guidance is required.
+It applies that context to engineering practice and links to Knowledge Islands Principal when philosophical guidance is required.
 
 ## Prescribe a Single Technology Stack
 
@@ -50,4 +50,4 @@ Uncertainty is recorded explicitly and revisited through decisions, evaluations,
 
 ## Provenance
 
-Adopted into Arcadia from [the retained Techné source](https://github.com/knowledgeislands/ki-techne-principal/blob/b25e9c950fd87715d12f76b69bb2079c3a4fc054/Pillars/Engineering%20Practice/Foundations/Non-Goals.md) at revision `b25e9c950fd87715d12f76b69bb2079c3a4fc054`. Arcadia owns this canonical engineering knowledge; the original source revision remains evidence.
+Adopted into Knowledge Islands Principal from [the retained Techné source](https://github.com/knowledgeislands/ki-techne-principal/blob/b25e9c950fd87715d12f76b69bb2079c3a4fc054/Pillars/Engineering%20Practice/Foundations/Non-Goals.md) at revision `b25e9c950fd87715d12f76b69bb2079c3a4fc054`. Knowledge Islands Principal owns this canonical engineering knowledge; the original source revision remains evidence.

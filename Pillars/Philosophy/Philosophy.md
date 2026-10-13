@@ -11,9 +11,9 @@ author: Written with Claude
 
 ## Overview
 
-Philosophy is the pillar that holds the portable Knowledge Islands model - Arcadia's canonical definition of how any Knowledge Island is organised, governed, changed and maintained. Arcadia is the Capital of the Knowledge Islands territory, so the definition kept here is the baseline every other island adopts; island-specific settings live in each island's own `Admin/` zone instead.
+Philosophy is the pillar that holds the portable Knowledge Islands model - Knowledge Islands Principal's canonical definition of how any Knowledge Island is organised, governed, changed and maintained. Knowledge Islands Principal is the Capital of the Knowledge Islands territory, so the definition kept here is the baseline every other island adopts; island-specific settings live in each island's own `Admin/` zone instead.
 
-The pillar reads as three acts. [[Introduction/Introduction|Introduction]] asks why the model exists and establishes its vocabulary, [[Model/Model|Model]] sets out what any adopting island does, and [[Realisation/Realisation|Realisation]] shows the model made real in Arcadia. [[Knowledge Islands]] is the narrative entry point that walks through all three acts in order and is the best place to start reading.
+The pillar reads as three acts. [[Introduction/Introduction|Introduction]] asks why the model exists and establishes its vocabulary, [[Model/Model|Model]] sets out what any adopting island does, and [[Realisation/Realisation|Realisation]] shows the model made real in Knowledge Islands Principal. [[Knowledge Islands]] is the narrative entry point that walks through all three acts in order and is the best place to start reading.
 
 ---
 
@@ -37,7 +37,7 @@ The pillar reads as three acts. [[Introduction/Introduction|Introduction]] asks 
 
 ## Realisation
 
-[[Realisation/Realisation|Realisation]] is the third act, where the portable model becomes a concrete island. It describes Arcadia and the realisation concepts - charter, council, configuration and integrations - through which an island instantiates the model. It is the bridge between the portable definition here and the island-specific governance kept in `Admin/`.
+[[Realisation/Realisation|Realisation]] is the third act, where the portable model becomes a concrete island. It describes Knowledge Islands Principal and the realisation concepts - charter, council, configuration and integrations - through which an island instantiates the model. It is the bridge between the portable definition here and the island-specific governance kept in `Admin/`.
 
 ---
 

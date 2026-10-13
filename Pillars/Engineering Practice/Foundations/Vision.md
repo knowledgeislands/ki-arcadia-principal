@@ -24,13 +24,13 @@ The intended result is an engineering environment in which human intent, agent r
 
 AI is treated as an engineering capability that must be designed, evaluated, operated, and reviewed with the same discipline applied to any other production concern.
 
-## Relationship to Arcadia
+## Relationship to Knowledge Islands Principal
 
-Arcadia defines why Knowledge Islands exists and the principles that guide the wider ecosystem.
+Knowledge Islands Principal defines why Knowledge Islands exists and the principles that guide the wider ecosystem.
 
 Techne defines how those principles are applied in engineering practice.
 
-Techne therefore interprets, but does not replace, the philosophy established by Arcadia.
+Techne therefore interprets, but does not replace, the philosophy established by Knowledge Islands Principal.
 
 ## Scope
 
@@ -70,4 +70,4 @@ Where the architecture is incomplete or uncertain, Techne records the assumption
 
 ## Provenance
 
-Adopted into Arcadia from [the retained Techné source](https://github.com/knowledgeislands/ki-techne-principal/blob/b25e9c950fd87715d12f76b69bb2079c3a4fc054/Pillars/Engineering%20Practice/Foundations/Vision.md) at revision `b25e9c950fd87715d12f76b69bb2079c3a4fc054`. Arcadia owns this canonical engineering knowledge; the original source revision remains evidence.
+Adopted into Knowledge Islands Principal from [the retained Techné source](https://github.com/knowledgeislands/ki-techne-principal/blob/b25e9c950fd87715d12f76b69bb2079c3a4fc054/Pillars/Engineering%20Practice/Foundations/Vision.md) at revision `b25e9c950fd87715d12f76b69bb2079c3a4fc054`. Knowledge Islands Principal owns this canonical engineering knowledge; the original source revision remains evidence.

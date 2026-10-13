@@ -8,7 +8,7 @@ author: AI-assisted
 
 ## Authority
 
-Arcadia maintains the remote-execution and remote-environment hold across the independent Techné harness and CLI products. The principal is the accountable human owner of this constraint; relocation of knowledge does not change that decision authority.
+Knowledge Islands Principal maintains the remote-execution and remote-environment hold across the independent Techné harness and CLI products. The principal is the accountable human owner of this constraint; relocation of knowledge does not change that decision authority.
 
 ## Holding position
 

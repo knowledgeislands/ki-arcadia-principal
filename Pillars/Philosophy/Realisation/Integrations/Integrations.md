@@ -13,7 +13,7 @@ author: Written with Claude
 
 ## Overview
 
-An island's integrations record is the single declaration of the services it has connected - MCP tool prefixes, calendar sources, task managers, inbox paths and other service identifiers. Its governing principle is that activities read every tool identifier from this record at runtime and never embed one in a prompt. It bridges the portable tool documentation in [[Tools]], which describes what each tool does, and the specific services one island has actually connected. Arcadia's own record is [[Admin Conventions/Integrations|Admin Conventions/Integrations]].
+An island's integrations record is the single declaration of the services it has connected - MCP tool prefixes, calendar sources, task managers, inbox paths and other service identifiers. Its governing principle is that activities read every tool identifier from this record at runtime and never embed one in a prompt. It bridges the portable tool documentation in [[Tools]], which describes what each tool does, and the specific services one island has actually connected. Knowledge Islands Principal's own record is [[Admin Conventions/Integrations|Admin Conventions/Integrations]].
 
 ---
 
@@ -33,10 +33,10 @@ The [[Realisation/Charter/Charter|Charter]] summarises which tools are connected
 
 ## What Does Not Belong Here
 
-The record covers the island's own runtime surface. Infrastructure that acts on the island's repositories without being part of that surface - such as GitHub Apps and other automated identities in a release chain - is recorded separately; Arcadia keeps it in [[GitHub Apps]]. Physical store locations are recorded in [[Physical Locations]], and routing rules in their own convention note.
+The record covers the island's own runtime surface. Infrastructure that acts on the island's repositories without being part of that surface - such as GitHub Apps and other automated identities in a release chain - is recorded separately; Knowledge Islands Principal keeps it in [[GitHub Apps]]. Physical store locations are recorded in [[Physical Locations]], and routing rules in their own convention note.
 
 ---
 
-## Arcadia's Integrations
+## Knowledge Islands Principal's Integrations
 
-Arcadia's integration surface is deliberately minimal, because it is a knowledge repository and framework custodian rather than an operational system. Its only configured integration is the `+/` inbox folder, reached through the filesystem, with `+/_Voice Notes/` excluded. It has no calendar, task, issue or email integration; the Email and Linear activity groups are vetoed in its Charter, so none is needed. New integrations are added to the record as they are introduced.
+Knowledge Islands Principal's integration surface is deliberately minimal, because it is a knowledge repository and framework custodian rather than an operational system. Its only configured integration is the `+/` inbox folder, reached through the filesystem, with `+/_Voice Notes/` excluded. It has no calendar, task, issue or email integration; the Email and Linear activity groups are vetoed in its Charter, so none is needed. New integrations are added to the record as they are introduced.

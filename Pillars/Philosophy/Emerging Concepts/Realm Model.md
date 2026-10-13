@@ -14,7 +14,7 @@ author: Written with Claude
 
 This is an emerging concept, not adopted philosophy. It sketches the Realm: a logical environment with its own rules of existence and participation, inside which islands, organisations and Avatars act. Nothing here changes the established model; it is held so it can be tested against real use and weighed in the whole-philosophy review.
 
-Arcadia already holds one part of the idea. The [[Agent Host Prototype Concept Map]] treats a Realm as logical, never a technology, and keeps it apart from any Footprint. The rest of the model below is unsettled.
+Knowledge Islands Principal already holds one part of the idea. The [[Agent Host Prototype Concept Map]] treats a Realm as logical, never a technology, and keeps it apart from any Footprint. The rest of the model below is unsettled.
 
 ---
 
@@ -84,4 +84,4 @@ One external check is outstanding: confirm the availability of a Knowledge Realm
 
 ## Provenance
 
-Captured from a ChatGPT conversation on 2026-10-03 and reconciled against Arcadia on 2026-10-11, when the parts already held elsewhere were trimmed. Held here as input to the whole-philosophy review.
+Captured from a ChatGPT conversation on 2026-10-03 and reconciled against Knowledge Islands Principal on 2026-10-11, when the parts already held elsewhere were trimmed. Held here as input to the whole-philosophy review.

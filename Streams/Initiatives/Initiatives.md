@@ -8,7 +8,7 @@ author: Written with Claude
 
 ## Overview
 
-This folder holds the Knowledge Islands territory's Initiatives, the long-lived directions its work serves, held by Arcadia as Capital beside the [[Projects]] that name them. An Initiative never finishes. Each note is named by its slug, so a Project's, work record's or Activity's `initiative` value resolves to a path here.
+This folder holds the Knowledge Islands territory's Initiatives, the long-lived directions its work serves, held by Knowledge Islands Principal as Capital beside the [[Projects]] that name them. An Initiative never finishes. Each note is named by its slug, so a Project's, work record's or Activity's `initiative` value resolves to a path here.
 
 Links point upwards only: a Project or record names its Initiative, and an Initiative note carries its direction and notes, including a plain description of its projectless upkeep, but lists no Projects, records or Activities. Status lives in each record and `ki` produces the views. Membership is classification, not authority: each owning repository keeps its plan, priority and acceptance.
 
@@ -28,7 +28,7 @@ Links point upwards only: a Project or record names its Initiative, and an Initi
 
 ## Knowledge Islands model
 
-[[knowledge-islands-model]] is what a Knowledge Island is and how islands work together: the model and its tending, trade between islands, how outside knowledge comes in, and how the model is specified and presented. Arcadia's recurring Tending and Briefings Activities serve it.
+[[knowledge-islands-model]] is what a Knowledge Island is and how islands work together: the model and its tending, trade between islands, how outside knowledge comes in, and how the model is specified and presented. Knowledge Islands Principal's recurring Tending and Briefings Activities serve it.
 
 ---
 

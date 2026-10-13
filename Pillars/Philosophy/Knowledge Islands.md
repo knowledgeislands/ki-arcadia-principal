@@ -17,9 +17,9 @@ In Knowledge Islands, knowledge is treated as a natural, evolving system - islan
 
 Where the Knowledge Islands model holds the portable, agnostic definition; Knowledge Capitals defines the realisation of the model through concepts such as the island's charter, council, citizenship, integrations and routing.
 
-Arcadia is the Knowledge Island of Knowledge Islands, the Knowledge Capital of Knowledge Capitals - a legendary utopia that holds the canonical definition and governance model for the entire Knowledge Islands concept.
+Knowledge Islands Principal is the Knowledge Island of Knowledge Islands, the Knowledge Capital of Knowledge Capitals - a legendary utopia that holds the canonical definition and governance model for the entire Knowledge Islands concept.
 
-Every knowledge island that adopts the Knowledge Islands model derives its baseline from Arcadia.
+Every knowledge island that adopts the Knowledge Islands model derives its baseline from Knowledge Islands Principal.
 
 ## How to read this
 
@@ -56,7 +56,7 @@ The first part establishes the problem and the model. It does not assume the rea
 
 ## Part II - Model: Any island can adopt this
 
-The second part is the portable, generic model. It covers the language of the island (Conventions), the gates that govern change (Processes), the work that keeps the island alive (Activities), the actors who do that work (Agents), and the instruments they use (Tools). Nothing here is specific to Arcadia - any island can adopt it as-is. The act index is [[Model/Model|Model]].
+The second part is the portable, generic model. It covers the language of the island (Conventions), the gates that govern change (Processes), the work that keeps the island alive (Activities), the actors who do that work (Agents), and the instruments they use (Tools). Nothing here is specific to Knowledge Islands Principal - any island can adopt it as-is. The act index is [[Model/Model|Model]].
 
 ### Conventions - What is the language?
 
@@ -96,7 +96,7 @@ The second part is the portable, generic model. It covers the language of the is
     - [[Wikilink Review]] - adhoc broken-link and orphan-note check
     - [[Model/Activities/Tending/Convergence Check|Convergence Check]] - adhoc cross-island shared-note sync
   - _Adoptable groups (Briefings, Email, Linear):_
-    - each island records an explicit adopted or vetoed position on these groups; Arcadia's positions are in its [[Admin/Governance/Charter|Charter]] and its group notes in [[Admin/Operations/Activities/Activities|Admin Activities]]
+    - each island records an explicit adopted or vetoed position on these groups; Knowledge Islands Principal's positions are in its [[Admin/Governance/Charter|Charter]] and its group notes in [[Admin/Operations/Activities/Activities|Admin Activities]]
 
 ### Agents - Who acts?
 
@@ -115,20 +115,20 @@ The second part is the portable, generic model. It covers the language of the is
 
 ## Part III - Realisation: Where the model becomes real
 
-The third part is Arcadia - the canonical living instance of the model described in Parts I and II. Here the abstract becomes concrete: a real charter, a real council, real integrations, and a real library. This part is the reveal at the end of the sequence: the model you have just learned, instantiated. The act index is [[Realisation/Realisation|Realisation]].
+The third part is Knowledge Islands Principal - the canonical living instance of the model described in Parts I and II. Here the abstract becomes concrete: a real charter, a real council, real integrations, and a real library. This part is the reveal at the end of the sequence: the model you have just learned, instantiated. The act index is [[Realisation/Realisation|Realisation]].
 
 ### Realisation concepts - the model instantiated
 
-- [[Realisation/Charter/Charter|Charter]] - the island charter: identity, council membership, activity roster, and task prefix; Arcadia's own is in [[Admin/Governance/Charter|Admin]]
+- [[Realisation/Charter/Charter|Charter]] - the island charter: identity, council membership, activity roster, and task prefix; Knowledge Islands Principal's own is in [[Admin/Governance/Charter|Admin]]
 - [[Council]] - citizen and visitor standing; council eligibility; governance in practice
 - [[Realisation/Integrations/Integrations|Integrations]] - connected services; MCP tools, calendar sources, task managers, inbox paths
 - [[Configuration]] - island-specific values: task prefix, schedule, and activity-level config
 
-### Arcadia - The living island
+### Knowledge Islands Principal - The living island
 
-- [[Arcadia]] - Arcadia as the Capital and canonical living island; how its own instance relates to the portable model
-- [[Great Library of Arcadia]] - Arcadia's name for its Pillars, a play on the Great Library of Alexandria: its pillars, how it grows, and why other islands treat it as a reference
+- [[Arcadia]] - Knowledge Islands Principal as the Capital and canonical living island; how its own instance relates to the portable model
+- [[Great Library of Arcadia]] - Knowledge Islands Principal's name for its Pillars, a play on the Great Library of Alexandria: its pillars, how it grows, and why other islands treat it as a reference
 
 ## Conclusion
 
-Knowledge Islands is a model for organising knowledge that treats it as a natural, evolving system. The model is portable: any island can adopt it by implementing its own [[Realisation/Realisation|realisation]] of the model through concepts such as the island's charter, council, citizenship, integrations and routing. Arcadia is the Knowledge Island of Knowledge Islands, the Knowledge Capital of Knowledge Capitals - a legendary utopia that holds the canonical definition and governance model for the entire Knowledge Islands concept. Every knowledge island that adopts the Knowledge Islands model derives its baseline from Arcadia.
+Knowledge Islands is a model for organising knowledge that treats it as a natural, evolving system. The model is portable: any island can adopt it by implementing its own [[Realisation/Realisation|realisation]] of the model through concepts such as the island's charter, council, citizenship, integrations and routing. Knowledge Islands Principal is the Knowledge Island of Knowledge Islands, the Knowledge Capital of Knowledge Capitals - a legendary utopia that holds the canonical definition and governance model for the entire Knowledge Islands concept. Every knowledge island that adopts the Knowledge Islands model derives its baseline from Knowledge Islands Principal.

@@ -12,15 +12,15 @@ author: Written with Claude
 
 ## Overview
 
-Arcadia's island-specific conventions - the vocabulary, authoring decisions and routing rules that supplement the portable Knowledge Islands framework in [[Model/Conventions/Conventions|Conventions]]. Four notes apply across every zone; two sub-folders hold conventions specific to a single zone. Conventions for the `Pillars/` zone - how notes are structured, named and organised within each pillar - have not been formalised beyond the portable model; they gain a sub-folder here when they are. Activity prompts and agents read these notes at runtime rather than hardcoding the values they record, so a change here takes effect on the next run.
+Knowledge Islands Principal's island-specific conventions - the vocabulary, authoring decisions and routing rules that supplement the portable Knowledge Islands framework in [[Model/Conventions/Conventions|Conventions]]. Four notes apply across every zone; two sub-folders hold conventions specific to a single zone. Conventions for the `Pillars/` zone - how notes are structured, named and organised within each pillar - have not been formalised beyond the portable model; they gain a sub-folder here when they are. Activity prompts and agents read these notes at runtime rather than hardcoding the values they record, so a change here takes effect on the next run.
 
 ## Admin Conventions
 
-[[Admin Conventions/Admin Conventions|Admin Conventions]] covers configuration and context for how Arcadia operates. It holds the island's routing rules across Pillars, Governance and Operations, its integrations, the GitHub Apps and automated identities acting on the organisation's repositories, and its physical store locations. Activity prompts resolve tool prefixes, inbox paths and service identifiers from here.
+[[Admin Conventions/Admin Conventions|Admin Conventions]] covers configuration and context for how Knowledge Islands Principal operates. It holds the island's routing rules across Pillars, Governance and Operations, its integrations, the GitHub Apps and automated identities acting on the organisation's repositories, and its physical store locations. Activity prompts resolve tool prefixes, inbox paths and service identifiers from here.
 
 ## Authoring
 
-[[Authoring]] records Arcadia's local authoring decisions on top of the generic [[Authoring Guidelines]]. None are currently recorded: Arcadia follows the framework as written. The note explains what would qualify as a local decision and where more specific choices belong instead.
+[[Authoring]] records Knowledge Islands Principal's local authoring decisions on top of the generic [[Authoring Guidelines]]. None are currently recorded: Knowledge Islands Principal follows the framework as written. The note explains what would qualify as a local decision and where more specific choices belong instead.
 
 ## Canonical Meta Notes
 
@@ -32,8 +32,8 @@ Arcadia's island-specific conventions - the vocabulary, authoring decisions and 
 
 ## Glossary
 
-[[Glossary]] is the decoder ring for Knowledge Islands terminology - islands, archipelagos, territories, Capitals, councils, custodians, Known Lands and the other structural terms used across Arcadia and the wider territory. Footnotes carry the distinctions that matter, such as the difference between an archipelago and a territory. It is the first place to resolve an unfamiliar term.
+[[Glossary]] is the decoder ring for Knowledge Islands terminology - islands, archipelagos, territories, Capitals, councils, custodians, Known Lands and the other structural terms used across Knowledge Islands Principal and the wider territory. Footnotes carry the distinctions that matter, such as the difference between an archipelago and a territory. It is the first place to resolve an unfamiliar term.
 
 ## Streams Conventions
 
-[[Streams Conventions/Streams Conventions|Streams Conventions]] records how Arcadia applies the shared Streams model. It states that `Streams/Roadmap/` holds flat finite work records whose horizon and lifecycle are frontmatter metadata, that every roadmap write happens in the primary checkout, and how identifiers are reserved. It also names the skills that own the container, Activity definitions and record lifecycle.
+[[Streams Conventions/Streams Conventions|Streams Conventions]] records how Knowledge Islands Principal applies the shared Streams model. It states that `Streams/Roadmap/` holds flat finite work records whose horizon and lifecycle are frontmatter metadata, that every roadmap write happens in the primary checkout, and how identifiers are reserved. It also names the skills that own the container, Activity definitions and record lifecycle.

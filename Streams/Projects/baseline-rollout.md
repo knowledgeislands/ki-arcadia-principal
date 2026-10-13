@@ -15,7 +15,7 @@ author: Written with Claude
 
 ## Outcome
 
-Reach a solid Knowledge Islands baseline and roll it out to every island. The test: `ki repo audit --estate` is green and the released `ki` is installed everywhere. Arcadia coordinates; each item is delivered through a work record in its owning repository.
+Reach a solid Knowledge Islands baseline and roll it out to every island. The test: `ki repo audit --estate` is green and the released `ki` is installed everywhere. Knowledge Islands Principal coordinates; each item is delivered through a work record in its owning repository.
 
 This Project sits in [[platform-foundations|Platform foundations]]. The move of agent work into the Techne footprint is the separate [[agent-host]] Project, and neither gates the other. [[estate-factorisation]] owns structure, MCP, distribution and `ki` pin automation, and its remainder does not gate this Project; [[paperclip-bootstrap-and-recovery]] and [[trades-revamp]] own their own scope.
 
@@ -34,4 +34,4 @@ This Project sits in [[platform-foundations|Platform foundations]]. The move of 
 
 ### Close-out assessment
 
-Nothing has been delivered against the Outcome: the Project has carried no work since it was registered, and the estate audit has never run to completion, so the gap is unmeasured. The Outcome still stands. The first step is to measure the starting point: a completed `ki repo audit --estate` run and a check of the released `ki` on every island, with each gap captured as a record in its owning repository. That follow-up was a separate Arcadia audit record until it was folded into this note on 2026-10-09 (Decision 31). The Project stays open.
+Nothing has been delivered against the Outcome: the Project has carried no work since it was registered, and the estate audit has never run to completion, so the gap is unmeasured. The Outcome still stands. The first step is to measure the starting point: a completed `ki repo audit --estate` run and a check of the released `ki` on every island, with each gap captured as a record in its owning repository. That follow-up was a separate Knowledge Islands Principal audit record until it was folded into this note on 2026-10-09 (Decision 31). The Project stays open.

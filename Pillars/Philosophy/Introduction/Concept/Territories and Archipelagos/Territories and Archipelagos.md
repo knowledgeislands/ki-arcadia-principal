@@ -21,11 +21,11 @@ Every territory has exactly one Capital: the island that holds its Charter, auth
 
 Territorial membership is an explicit governed relationship. Shared governance does not imply unrestricted internal flow: islands may serve different audiences or hold protected sources. A change to one repository is accepted by its own owner through its applicable process; membership grants no cross-repository write, execution, publication or release authority.
 
-Arcadia is the Capital of the Knowledge Islands territory. Its [[Admin/Governance/Charter|Charter]] declares that role and its [[Admin/Governance/Known Lands|Known Lands]] records the internal inventory. Arcadia is the canonical home of the public Knowledge Islands model, but that authorship gives it no jurisdiction over another territory that follows or adopts the model.
+Knowledge Islands Principal is the Capital of the Knowledge Islands territory. Its [[Admin/Governance/Charter|Charter]] declares that role and its [[Admin/Governance/Known Lands|Known Lands]] records the internal inventory. Knowledge Islands Principal is the canonical home of the public Knowledge Islands model, but that authorship gives it no jurisdiction over another territory that follows or adopts the model.
 
 A territory's existence and membership are not established by a local registry entry, repository selection, shared person or Paperclip company. Those mechanisms may resolve or coordinate an already governed relationship. A disagreement between them and the governed inventory requires owner reconciliation.
 
-Repository selection derives from the Capital's ordered `territory_members`, including the Capital itself. An optional `territory_prefix` supplies a short handle; Arcadia uses `ki`. KI and mgit share explicit territory and estate scopes and literal, case-sensitive repository directory-name prefix filters, while preserving their native defaults. Resolution and selection implement the governed inventory without granting jurisdiction, cross-repository write or acceptance authority.
+Repository selection derives from the Capital's ordered `territory_members`, including the Capital itself. An optional `territory_prefix` supplies a short handle; Knowledge Islands Principal uses `ki`. KI and mgit share explicit territory and estate scopes and literal, case-sensitive repository directory-name prefix filters, while preserving their native defaults. Resolution and selection implement the governed inventory without granting jurisdiction, cross-repository write or acceptance authority.
 
 ## Archipelagos
 
@@ -55,6 +55,6 @@ A territory adopting Knowledge Islands accepts its constitutional layer: a Chart
 
 Product islands express their adoption and verification through the applicable repository contract. Territorial membership does not require a product repository to acquire Knowledge Base zones, an Admin folder or the Knowledge Base activity roster.
 
-Charter and Conformance cannot be vetoed. Other activity groups receive an explicit adopted or vetoed position. This baseline is adopted under the receiving territory's own authority; it does not give Arcadia approval rights over that territory.
+Charter and Conformance cannot be vetoed. Other activity groups receive an explicit adopted or vetoed position. This baseline is adopted under the receiving territory's own authority; it does not give Knowledge Islands Principal approval rights over that territory.
 
 Shared tooling and operating arrangements implement the territory's adopted policy. They remain subordinate to the authority, access and acceptance boundaries recorded by their owners.

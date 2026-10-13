@@ -12,7 +12,7 @@ author: Written with Claude
 
 ## Overview
 
-Canonical templates for structured note types used across Arcadia. Templates define the expected frontmatter, headings, and sections for each note type - ensuring consistent structure regardless of who or what creates the note.
+Canonical templates for structured note types used across Knowledge Islands Principal. Templates define the expected frontmatter, headings, and sections for each note type - ensuring consistent structure regardless of who or what creates the note.
 
 ## Templates
 

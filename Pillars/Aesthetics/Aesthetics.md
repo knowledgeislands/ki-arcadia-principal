@@ -37,7 +37,7 @@ The visual language is grounded in the same metaphors that underpin the model it
 
 ## Diagrams
 
-[[Diagrams/Diagrams|Diagrams]] collects the canonical conceptual diagrams for Knowledge Islands - the system overview (The Cycle, Agents, Geography), the territory map showing Arcadia and its satellite islands, and the Knowledge Hierarchy (Information, Knowledge, Wisdom). These are the primary reference visuals for explaining the model.
+[[Diagrams/Diagrams|Diagrams]] collects the canonical conceptual diagrams for Knowledge Islands - the system overview (The Cycle, Agents, Geography), the territory map showing Knowledge Islands Principal and its satellite islands, and the Knowledge Hierarchy (Information, Knowledge, Wisdom). These are the primary reference visuals for explaining the model.
 
 ---
 

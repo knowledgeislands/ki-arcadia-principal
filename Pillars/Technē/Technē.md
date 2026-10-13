@@ -8,9 +8,9 @@ author: AI-assisted
 
 ## Overview
 
-Techné is the engineering discipline within Arcadia. This retained entry point keeps existing navigation usable while canonical engineering knowledge lives in [[Engineering Practice/Engineering Practice|Engineering Practice]].
+Techné is the engineering discipline within Knowledge Islands Principal. This retained entry point keeps existing navigation usable while canonical engineering knowledge lives in [[Engineering Practice/Engineering Practice|Engineering Practice]].
 
-Engineering meaning, architecture and decision criteria belong to Arcadia. The independently governed `ki-techne-harness` and `tools-techne` repositories own their respective implementations and releases; local development continues under their repository standards.
+Engineering meaning, architecture and decision criteria belong to Knowledge Islands Principal. The independently governed `ki-techne-harness` and `tools-techne` repositories own their respective implementations and releases; local development continues under their repository standards.
 
 ## Engineering Practice
 

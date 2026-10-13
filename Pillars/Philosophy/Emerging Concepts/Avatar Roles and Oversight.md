@@ -38,4 +38,4 @@ Meaningful agent and workload telemetry should be captured so that delegated wor
 
 ## Provenance
 
-Captured from a ChatGPT conversation on 2026-10-03 and reconciled against Arcadia on 2026-10-11, when the actions already superseded by the agent host were trimmed. Held here as input to the whole-philosophy review.
+Captured from a ChatGPT conversation on 2026-10-03 and reconciled against Knowledge Islands Principal on 2026-10-11, when the actions already superseded by the agent host were trimmed. Held here as input to the whole-philosophy review.

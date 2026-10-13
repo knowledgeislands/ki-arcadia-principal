@@ -12,11 +12,11 @@ author: Written with Claude
 
 ## Overview
 
-The `Admin/Operations/` arm holds the artefacts that describe **how Arcadia runs day to day** - activities, processes, live artifacts and the operational lessons register. The active agent skill set is not recorded here: it is declared in `.ki.toml` and listed in [[Admin/Governance/Conformance|Conformance]]. These are live, mutable artefacts specific to Arcadia's integrations and conventions; what the island must be is defined in [[Admin/Governance/Governance|Governance]]. The arm was populated by migration from `Pillars/Knowledge Capital/` per [[Admin/Governance/Decisions/GDR-KI-PRINCIPAL-002-admin-zone-governance-and-operations|GDR-KI-PRINCIPAL-002]].
+The `Admin/Operations/` arm holds the artefacts that describe **how Knowledge Islands Principal runs day to day** - activities, processes, live artifacts and the operational lessons register. The active agent skill set is not recorded here: it is declared in `.ki.toml` and listed in [[Admin/Governance/Conformance|Conformance]]. These are live, mutable artefacts specific to Knowledge Islands Principal's integrations and conventions; what the island must be is defined in [[Admin/Governance/Governance|Governance]]. The arm was populated by migration from `Pillars/Knowledge Capital/` per [[Admin/Governance/Decisions/GDR-KI-PRINCIPAL-002-admin-zone-governance-and-operations|GDR-KI-PRINCIPAL-002]].
 
 ## Activities
 
-[[Admin/Operations/Activities/Activities|Activities]] holds Arcadia's Activity notes and its timing model. Its Schedule defines the day-type taxonomy automations read from each daily note, and each Activity note records one group's adoption and configuration, including those adopted only to record a veto. The authoritative roster of enabled activities remains the Charter; this folder holds the definitions and timing.
+[[Admin/Operations/Activities/Activities|Activities]] holds Knowledge Islands Principal's Activity notes and its timing model. Its Schedule defines the day-type taxonomy automations read from each daily note, and each Activity note records one group's adoption and configuration, including those adopted only to record a veto. The authoritative roster of enabled activities remains the Charter; this folder holds the definitions and timing.
 
 ## Live Artifacts
 
@@ -28,4 +28,4 @@ The `Admin/Operations/` arm holds the artefacts that describe **how Arcadia runs
 
 ## Processes
 
-[[Admin/Operations/Processes/Processes|Processes]] holds Arcadia's realisations of generic Knowledge Islands processes and its territory-wide operating processes. The [[Admin/Operations/Processes/Enactment Process|Enactment Process]] is the ratification mechanism for changes to canonical knowledge; the Release Cascade shows how a tooling release reaches the tap, the website registry and every consuming repository.
+[[Admin/Operations/Processes/Processes|Processes]] holds Knowledge Islands Principal's realisations of generic Knowledge Islands processes and its territory-wide operating processes. The [[Admin/Operations/Processes/Enactment Process|Enactment Process]] is the ratification mechanism for changes to canonical knowledge; the Release Cascade shows how a tooling release reaches the tap, the website registry and every consuming repository.

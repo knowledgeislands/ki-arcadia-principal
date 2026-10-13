@@ -13,14 +13,14 @@ author: Written with Claude
 
 ## Direction
 
-What a Knowledge Island is and how islands work together: the model and its tending practice, trade between islands, how outside knowledge comes in, and how the model is specified and presented to others. Arcadia, as Capital, owns most of it. The tooling that checks and serves islands belongs to [[platform-foundations|Platform foundations]].
+What a Knowledge Island is and how islands work together: the model and its tending practice, trade between islands, how outside knowledge comes in, and how the model is specified and presented to others. Knowledge Islands Principal, as Capital, owns most of it. The tooling that checks and serves islands belongs to [[platform-foundations|Platform foundations]].
 
 ---
 
 ## Notes
 
-- **Recurring work.** This Initiative is the home of Arcadia's recurring island upkeep: tending the island, the daily briefings and the day-type schedule they run on, with component `operations` and purpose `upkeep`. It also carries the periodic review of the territory's hold on new trades. Each recurring definition names this Initiative, which never completes, so the work needs no Project. Paused placeholder Activities spawn no runs and need no home.
-- Arcadia's finite model and tending work belongs to a Project.
+- **Recurring work.** This Initiative is the home of Knowledge Islands Principal's recurring island upkeep: tending the island, the daily briefings and the day-type schedule they run on, with component `operations` and purpose `upkeep`. It also carries the periodic review of the territory's hold on new trades. Each recurring definition names this Initiative, which never completes, so the work needs no Project. Paused placeholder Activities spawn no runs and need no home.
+- Knowledge Islands Principal's finite model and tending work belongs to a Project.
 - How Kris works with master and Project threads, background agents and the tools belongs to the [[ways-of-working]] Project.
 - One vocabulary and model for the command centre, and the read-only state-of-play view, belong to the [[command-centre]] Project.
 - The territory-selection design papers sit in this Initiative's [[knowledge-islands-model/design/design|design folder]] until [[ADR-KI-PRINCIPAL-002-territory-derived-repository-selection|ADR-KI-PRINCIPAL-002]] consolidates them.

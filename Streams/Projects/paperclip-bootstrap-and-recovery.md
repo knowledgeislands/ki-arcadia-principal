@@ -27,11 +27,11 @@ This Project sits in [[Initiatives/techne|Techne]]. VA delivery also supplies th
 
 ### Constraints
 
-Several of these exist only here. A Project note may point to decisions but should not be their only copy, so each needs an owner: the harness coordination skill or an Arcadia Decision Record.
+Several of these exist only here. A Project note may point to decisions but should not be their only copy, so each needs an owner: the harness coordination skill or a Knowledge Islands Principal Decision Record.
 
 - **Ticket statuses.** Leave Paperclip ticket statuses as they are until Kris says the fleet is in shape.
 - **Authority.** Resuming this Project does not authorise waking agents, hiring, creating tasks, activating schedules, deploying, pushing, lifting holds or KI acceptance. Reuse existing approvals; ask only for authority that is actually missing. Do not repeat answered cards.
-- **Ownership.** Arcadia holds this handoff only, not other companies' knowledge or work. Generic rules stay in the harness [coordination skill](../../../ki-agentic-harness/skills/agentic-systems/ki-agent-coordination-paperclip/SKILL.md); company decisions and results go to their owning repositories.
+- **Ownership.** Knowledge Islands Principal holds this handoff only, not other companies' knowledge or work. Generic rules stay in the harness [coordination skill](../../../ki-agentic-harness/skills/agentic-systems/ki-agent-coordination-paperclip/SKILL.md); company decisions and results go to their owning repositories.
 - **Scope.** VA is the pilot, with Guru, Shilpin and Sakshi and no extra hire. TMX is next, but that is not authority to expand to every company. KIS autonomous work stays paused.
 - **Structure.** One project per repository. Workspace-free Coordination only coordinates. A CEO cannot independently review their own work. HNR uses the kit-hnr consolidation, not hnr-principal.
 - **Hires.** Claude is primary and Codex is backup. Every hire gets the [post-hire brief](../../../ki-agentic-harness/skills/agentic-systems/ki-agent-coordination-paperclip/assets/post-hire-task.md), least-necessary grants, KI/mise configuration, concurrency one, no timer heartbeat and a real run check. No direct database bypass. Future hires follow their company's naming theme.

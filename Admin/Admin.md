@@ -16,7 +16,7 @@ author: Written with Claude
 
 ## Governance
 
-[[Admin/Governance/Governance|Governance]] is the arm that defines what Arcadia is: its Charter, its Known Lands inventory, its conventions, its policies, its note templates and its Decision Records. Agents starting cold read the Charter here first, because it carries the island's identity parameters and its adoption position on every activity group. Nothing in this arm describes routine running; it records the rules and declarations that the running must respect.
+[[Admin/Governance/Governance|Governance]] is the arm that defines what Knowledge Islands Principal is: its Charter, its Known Lands inventory, its conventions, its policies, its note templates and its Decision Records. Agents starting cold read the Charter here first, because it carries the island's identity parameters and its adoption position on every activity group. Nothing in this arm describes routine running; it records the rules and declarations that the running must respect.
 
 ## MEMORY
 
@@ -24,4 +24,4 @@ author: Written with Claude
 
 ## Operations
 
-[[Admin/Operations/Operations|Operations]] is the arm that describes how Arcadia runs: its Activity notes and their timing model, its governance processes, its live artifacts and its register of operational mistakes and lessons. Its contents are operational and mutable, specific to Arcadia's own integrations and conventions. Where Governance says what must hold, Operations shows how the island keeps it holding.
+[[Admin/Operations/Operations|Operations]] is the arm that describes how Knowledge Islands Principal runs: its Activity notes and their timing model, its governance processes, its live artifacts and its register of operational mistakes and lessons. Its contents are operational and mutable, specific to Knowledge Islands Principal's own integrations and conventions. Where Governance says what must hold, Operations shows how the island keeps it holding.
