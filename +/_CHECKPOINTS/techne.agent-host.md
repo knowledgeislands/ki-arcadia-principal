@@ -4,7 +4,7 @@ thread: techne.agent-host
 label: 'Techne: agent-host'
 state: active
 created_at: 2026-10-07T09:05:00Z
-updated_at: 2026-10-13T23:20:00Z
+updated_at: 2026-10-14T00:30:00Z
 ---
 
 # techne.agent-host
@@ -28,7 +28,7 @@ ki-delegation read at fbd11977
 - **Delivered and closed.** OS patching (TECHNE-TOOLS-OPS-022) and the chezmoi workstation bundle (DOTFILES-UE-073) are accepted and pruned. The workstation pilot (TECHNE-TOOLS-OPS-015) is accepted and kept, not pruned. Recipe/binding identity is `agent-host`; the old deployed names still need the owner-led vega rebuild below.
 - **The host.** Earlier restart/clean-status evidence is historical. At 2026-10-12 08:26 UTC, owner readiness evidence reported account `655383751458`, profile `knowledge-islands-techne`, region `eu-west-1`, stack `ki-techne-agent-host` still `CREATE_COMPLETE`, `HostName` and `TailscaleHostname` both `ki-techne-agent-host`, selector `agent-host`, and recorded instance `i-0332d9ea05c2e929d`. Neither tagged live-instance query nor recorded-instance lookup returned an instance. This is a surviving-stack/missing-instance snapshot, not proof of clean recovery or current resource state.
 - **Pins.** `recipes/agent-host/rig.toml` in the harness is the one list of host tool versions; `mise` and `codex` are raised to 2026.10.6 and 0.162.0. The Mac is no longer compared against it; TECHNE-TOOLS-OPS-024 (weekly pin bump) is planned, draft.
-- **Boundary audit accepted.** Kris accepted all ten decisions of the Rig and Techne boundary audit (Decision 40). The plain-language explainer is [[Hosts, Roles and Layers]]; cross-repository handoffs go through state-of-play.
+- **Boundary audit accepted.** Kris accepted all ten decisions of the Rig and Techne boundary audit (Decision 40). The plain-language explainer is [[Hosts, Roles and Layers]], reviewed by the island-model-and-tending thread on 2026-10-14 (four wording fixes; boundary decisions recorded in ADR-KI-PRINCIPAL-003 and related Decision Records); cross-repository handoffs go through state-of-play.
 - **Rebuild delivery already closed.** The zsh/rename shell delivery is accepted and pruned in current local Harness ancestry: `ace606e` acceptance, `11adc5d` pruning. Do not restore or seek acceptance of that record. AWS baseline checks, rebuild and chezmoi work were deferred to this owner thread. TECHNE-TOOLS-OPS-024 (weekly pin bump) is ready; its tool waits for the role profile to move to a `roles/` folder.
 - **Owner historical work.** TECHNE-TOOLS-OPS-016 (to be replaced by a `tools-rig` signed-release kind), TECHNE-TOOLS-OPS-018, TECHNE-TOOLS-OPS-019 and TECHNE-TOOLS-OPS-023 in the harness remain in the earlier triage snapshot; KI-HARNESS-GOV-170 (keep resolution targets local) is planned, draft, in `ki-agentic-harness`. These are outside this bounded tools sweep and are not re-audited here. The related tools queue is reconciled below.
 - **The Mac.** `terra`; chezmoi `rigProfile` is `laptop`; Tailscale is up.
