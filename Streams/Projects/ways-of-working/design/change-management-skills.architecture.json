@@ -1,0 +1,1200 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Change-management skills: today and as proposed",
+    "output": "+/diagrams/change-management-skills/change-management-skills.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/knowledgeislands/ki-agentic-harness",
+      "provider": "github",
+      "revision": "1cfa7d89e3e323db3950dbde65c2466358206be0"
+    },
+    "legend": {
+      "mode": "all",
+      "entries": {
+        "frontend": {
+          "label": "Process skill (invocation-only)"
+        },
+        "backend": {
+          "label": "Governance skill (declaration-only or detected)"
+        },
+        "external": {
+          "label": "Direct dependency outside the change-management set"
+        }
+      }
+    },
+    "views": [
+      {
+        "id": "today",
+        "label": "Today",
+        "focus": [
+          "t-next",
+          "t-plan",
+          "t-implement",
+          "t-batch",
+          "t-recap",
+          "t-accept",
+          "t-pulse",
+          "t-design-loop",
+          "t-delegation",
+          "t-checkpoint",
+          "t-authoring",
+          "t-tokenomics",
+          "t-decision-records",
+          "t-work",
+          "t-work-roadmap",
+          "t-repo-kb-streams",
+          "t-work-github-issues",
+          "t-repo-kb-activities",
+          "t-work-housekeeping",
+          "t-work-linear"
+        ],
+        "note": "Every reliance the SKILL.md frontmatter declares among these skills"
+      },
+      {
+        "id": "proposed",
+        "label": "Proposed",
+        "focus": [
+          "p-decision-records",
+          "p-pmo",
+          "p-checkpoint",
+          "p-recap",
+          "p-authoring",
+          "p-pmo-review",
+          "p-delegation",
+          "p-tokenomics",
+          "p-next",
+          "p-plan",
+          "p-implement",
+          "p-accept",
+          "p-batch",
+          "p-work-recurring",
+          "p-work",
+          "p-work-roadmap",
+          "p-repo-kb-streams",
+          "p-work-github-issues",
+          "p-work-linear",
+          "p-pulse",
+          "p-repo-kb-activities"
+        ],
+        "note": "The six units of the merged report with Kris's decided names"
+      },
+      {
+        "id": "renames",
+        "label": "Renames and the new skill",
+        "focus": [
+          "p-pmo",
+          "p-pmo-review",
+          "p-work-recurring",
+          "p-delegation",
+          "p-pulse"
+        ],
+        "note": "Each renamed skill shows its old name beneath the new one"
+      }
+    ]
+  },
+  "components": [
+    {
+      "id": "t-next",
+      "type": "frontend",
+      "label": "ki-next",
+      "sublabel": "process · capture and select",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-next/SKILL.md"
+        }
+      ],
+      "pos": [
+        40,
+        104
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "t-plan",
+      "type": "frontend",
+      "label": "ki-plan",
+      "sublabel": "process · ready one record",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-plan/SKILL.md"
+        }
+      ],
+      "pos": [
+        226,
+        104
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "t-implement",
+      "type": "frontend",
+      "label": "ki-implement",
+      "sublabel": "process · deliver one record",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-implement/SKILL.md"
+        }
+      ],
+      "pos": [
+        412,
+        104
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "t-batch",
+      "type": "frontend",
+      "label": "ki-batch",
+      "sublabel": "process · authority window",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-batch/SKILL.md"
+        }
+      ],
+      "pos": [
+        598,
+        104
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "t-recap",
+      "type": "frontend",
+      "label": "ki-recap",
+      "sublabel": "process · session recap",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-recap/SKILL.md"
+        }
+      ],
+      "pos": [
+        784,
+        104
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "t-accept",
+      "type": "frontend",
+      "label": "ki-accept",
+      "sublabel": "process · close or prune",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-accept/SKILL.md"
+        }
+      ],
+      "pos": [
+        970,
+        104
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "t-pulse",
+      "type": "frontend",
+      "label": "ki-pulse",
+      "sublabel": "process · signal triage",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-pulse/SKILL.md"
+        }
+      ],
+      "pos": [
+        40,
+        200
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "t-design-loop",
+      "type": "frontend",
+      "label": "ki-design-loop",
+      "sublabel": "process · shape a design",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-design-loop/SKILL.md"
+        }
+      ],
+      "pos": [
+        226,
+        200
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "t-delegation",
+      "type": "backend",
+      "label": "ki-delegation",
+      "sublabel": "governance · runs, threads",
+      "sources": [
+        {
+          "path": "skills/governance/ki-delegation/SKILL.md"
+        }
+      ],
+      "pos": [
+        412,
+        200
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "t-checkpoint",
+      "type": "backend",
+      "label": "ki-checkpoint",
+      "sublabel": "governance · checkpoints",
+      "sources": [
+        {
+          "path": "skills/governance/ki-checkpoint/SKILL.md"
+        }
+      ],
+      "pos": [
+        598,
+        200
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "t-authoring",
+      "type": "external",
+      "label": "ki-authoring",
+      "sublabel": "governance · authoring",
+      "sources": [
+        {
+          "path": "skills/governance/ki-authoring/SKILL.md"
+        }
+      ],
+      "pos": [
+        784,
+        200
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "t-tokenomics",
+      "type": "backend",
+      "label": "ki-tokenomics",
+      "sublabel": "environment · model purposes",
+      "sources": [
+        {
+          "path": "skills/environment/ki-tokenomics/SKILL.md"
+        }
+      ],
+      "pos": [
+        970,
+        200
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "t-decision-records",
+      "type": "backend",
+      "label": "ki-decision-records",
+      "sublabel": "governance · rationale",
+      "sources": [
+        {
+          "path": "skills/governance/ki-decision-records/SKILL.md"
+        }
+      ],
+      "pos": [
+        226,
+        296
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "t-work",
+      "type": "backend",
+      "label": "ki-work",
+      "sublabel": "governance · adapter choice",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-work/SKILL.md"
+        }
+      ],
+      "pos": [
+        412,
+        296
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "t-work-roadmap",
+      "type": "backend",
+      "label": "ki-work-roadmap",
+      "sublabel": "governance · record model",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-work-roadmap/SKILL.md"
+        }
+      ],
+      "pos": [
+        598,
+        296
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "t-repo-kb-streams",
+      "type": "backend",
+      "label": "ki-repo-kb-streams",
+      "sublabel": "repo-structure · Streams",
+      "sources": [
+        {
+          "path": "skills/repo-structure/ki-repo-kb-streams/SKILL.md"
+        }
+      ],
+      "pos": [
+        784,
+        296
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "t-work-github-issues",
+      "type": "backend",
+      "label": "ki-work-github-issues",
+      "sublabel": "governance · config only",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-work-github-issues/SKILL.md"
+        }
+      ],
+      "pos": [
+        970,
+        296
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "t-repo-kb-activities",
+      "type": "external",
+      "label": "ki-repo-kb-activities",
+      "sublabel": "repo-structure · Activities",
+      "sources": [
+        {
+          "path": "skills/repo-structure/ki-repo-kb-activities/SKILL.md"
+        }
+      ],
+      "pos": [
+        226,
+        392
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "t-work-housekeeping",
+      "type": "backend",
+      "label": "ki-work-housekeeping",
+      "sublabel": "governance · recurring work",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-work-housekeeping/SKILL.md"
+        }
+      ],
+      "pos": [
+        412,
+        392
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "t-work-linear",
+      "type": "backend",
+      "label": "ki-work-linear",
+      "sublabel": "governance · config only",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-work-linear/SKILL.md"
+        }
+      ],
+      "pos": [
+        598,
+        392
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "p-decision-records",
+      "type": "backend",
+      "label": "ki-decision-records",
+      "sublabel": "governance · unchanged",
+      "sources": [
+        {
+          "path": "skills/governance/ki-decision-records/SKILL.md"
+        }
+      ],
+      "pos": [
+        40,
+        616
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "p-pmo",
+      "type": "backend",
+      "label": "ki-pmo",
+      "sublabel": "NEW · the coordinating thread: master and Project threads",
+      "sources": [
+        {
+          "path": "skills/governance/ki-delegation/references/standards-background-runs.md",
+          "line": 248,
+          "end_line": 360,
+          "label": "thread material that moves"
+        }
+      ],
+      "tag": "NEW",
+      "icon": "start",
+      "pos": [
+        226,
+        616
+      ],
+      "size": [
+        346,
+        48
+      ]
+    },
+    {
+      "id": "p-checkpoint",
+      "type": "backend",
+      "label": "ki-checkpoint",
+      "sublabel": "keeps its name · snapshot",
+      "sources": [
+        {
+          "path": "skills/governance/ki-checkpoint/SKILL.md"
+        }
+      ],
+      "pos": [
+        598,
+        616
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "p-recap",
+      "type": "frontend",
+      "label": "ki-recap",
+      "sublabel": "single-session summary",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-recap/SKILL.md"
+        }
+      ],
+      "pos": [
+        784,
+        616
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "p-authoring",
+      "type": "external",
+      "label": "ki-authoring",
+      "sublabel": "governance · unchanged",
+      "sources": [
+        {
+          "path": "skills/governance/ki-authoring/SKILL.md"
+        }
+      ],
+      "pos": [
+        970,
+        616
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "p-pmo-review",
+      "type": "frontend",
+      "label": "ki-pmo-review",
+      "sublabel": "was ki-design-loop",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-design-loop/SKILL.md"
+        }
+      ],
+      "tag": "RENAMED",
+      "icon": "flag",
+      "pos": [
+        40,
+        760
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "p-delegation",
+      "type": "backend",
+      "label": "ki-delegation",
+      "sublabel": "REDUCED · background runs",
+      "sources": [
+        {
+          "path": "skills/governance/ki-delegation/SKILL.md"
+        }
+      ],
+      "tag": "REDUCED",
+      "pos": [
+        226,
+        760
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "p-tokenomics",
+      "type": "backend",
+      "label": "ki-tokenomics",
+      "sublabel": "purposes and bindings",
+      "sources": [
+        {
+          "path": "skills/environment/ki-tokenomics/SKILL.md"
+        }
+      ],
+      "pos": [
+        598,
+        760
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "p-next",
+      "type": "frontend",
+      "label": "ki-next",
+      "sublabel": "capture and select",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-next/SKILL.md"
+        }
+      ],
+      "pos": [
+        40,
+        880
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "p-plan",
+      "type": "frontend",
+      "label": "ki-plan",
+      "sublabel": "ready one record",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-plan/SKILL.md"
+        }
+      ],
+      "pos": [
+        226,
+        880
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "p-implement",
+      "type": "frontend",
+      "label": "ki-implement",
+      "sublabel": "deliver one record",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-implement/SKILL.md"
+        }
+      ],
+      "pos": [
+        412,
+        880
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "p-accept",
+      "type": "frontend",
+      "label": "ki-accept",
+      "sublabel": "close or prune",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-accept/SKILL.md"
+        }
+      ],
+      "pos": [
+        598,
+        880
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "p-batch",
+      "type": "frontend",
+      "label": "ki-batch",
+      "sublabel": "bounded authority window",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-batch/SKILL.md"
+        }
+      ],
+      "pos": [
+        784,
+        880
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "p-work-recurring",
+      "type": "backend",
+      "label": "ki-work-recurring",
+      "sublabel": "was ki-work-housekeeping",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-work-housekeeping/SKILL.md"
+        }
+      ],
+      "tag": "RENAMED",
+      "icon": "flag",
+      "pos": [
+        970,
+        880
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "p-work",
+      "type": "backend",
+      "label": "ki-work",
+      "sublabel": "adapter selector",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-work/SKILL.md"
+        }
+      ],
+      "pos": [
+        40,
+        976
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "p-work-roadmap",
+      "type": "backend",
+      "label": "ki-work-roadmap",
+      "sublabel": "the record model, everywhere",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-work-roadmap/SKILL.md"
+        }
+      ],
+      "pos": [
+        226,
+        976
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "p-repo-kb-streams",
+      "type": "backend",
+      "label": "ki-repo-kb-streams",
+      "sublabel": "KB placement adapter",
+      "sources": [
+        {
+          "path": "skills/repo-structure/ki-repo-kb-streams/SKILL.md"
+        }
+      ],
+      "pos": [
+        412,
+        976
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "p-work-github-issues",
+      "type": "backend",
+      "label": "ki-work-github-issues",
+      "sublabel": "configuration only",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-work-github-issues/SKILL.md"
+        }
+      ],
+      "pos": [
+        598,
+        976
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "p-work-linear",
+      "type": "backend",
+      "label": "ki-work-linear",
+      "sublabel": "configuration only",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-work-linear/SKILL.md"
+        }
+      ],
+      "pos": [
+        784,
+        976
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "p-pulse",
+      "type": "frontend",
+      "label": "ki-pulse",
+      "sublabel": "MOVES to the acquire area",
+      "sources": [
+        {
+          "path": "skills/change-management/ki-pulse/SKILL.md"
+        }
+      ],
+      "tag": "MOVES",
+      "pos": [
+        40,
+        1080
+      ],
+      "size": [
+        160,
+        48
+      ]
+    },
+    {
+      "id": "p-repo-kb-activities",
+      "type": "external",
+      "label": "ki-repo-kb-activities",
+      "sublabel": "repo-structure · relies on it",
+      "sources": [
+        {
+          "path": "skills/repo-structure/ki-repo-kb-activities/SKILL.md"
+        }
+      ],
+      "pos": [
+        970,
+        1080
+      ],
+      "size": [
+        160,
+        48
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "TODAY - reliance as declared in SKILL.md frontmatter",
+      "wraps": [
+        "t-next",
+        "t-plan",
+        "t-implement",
+        "t-batch",
+        "t-recap",
+        "t-accept",
+        "t-pulse",
+        "t-design-loop",
+        "t-delegation",
+        "t-checkpoint",
+        "t-authoring",
+        "t-tokenomics",
+        "t-decision-records",
+        "t-work",
+        "t-work-roadmap",
+        "t-repo-kb-streams",
+        "t-work-github-issues",
+        "t-repo-kb-activities",
+        "t-work-housekeeping",
+        "t-work-linear"
+      ],
+      "pad": 28
+    },
+    {
+      "kind": "security-group",
+      "label": "ki-work and its adapters (no reliance declared between them)",
+      "wraps": [
+        "t-work",
+        "t-work-roadmap",
+        "t-repo-kb-streams",
+        "t-work-github-issues",
+        "t-work-housekeeping",
+        "t-work-linear"
+      ],
+      "pad": 12
+    },
+    {
+      "kind": "region",
+      "label": "PROPOSED - the change-management design, with Kris's decisions on names",
+      "wraps": [
+        "p-decision-records",
+        "p-pmo",
+        "p-checkpoint",
+        "p-recap",
+        "p-authoring",
+        "p-pmo-review",
+        "p-delegation",
+        "p-tokenomics",
+        "p-next",
+        "p-plan",
+        "p-implement",
+        "p-accept",
+        "p-batch",
+        "p-work-recurring",
+        "p-work",
+        "p-work-roadmap",
+        "p-repo-kb-streams",
+        "p-work-github-issues",
+        "p-work-linear",
+        "p-pulse",
+        "p-repo-kb-activities"
+      ],
+      "pad": 28
+    },
+    {
+      "kind": "security-group",
+      "label": "Work",
+      "wraps": [
+        "p-next",
+        "p-plan",
+        "p-implement",
+        "p-accept",
+        "p-batch",
+        "p-work-recurring",
+        "p-work",
+        "p-work-roadmap",
+        "p-repo-kb-streams",
+        "p-work-github-issues",
+        "p-work-linear"
+      ],
+      "pad": 12
+    },
+    {
+      "kind": "security-group",
+      "label": "PMO",
+      "wraps": [
+        "p-pmo"
+      ],
+      "pad": 10
+    },
+    {
+      "kind": "security-group",
+      "label": "Delegation",
+      "wraps": [
+        "p-delegation"
+      ],
+      "pad": 10
+    },
+    {
+      "kind": "security-group",
+      "label": "Continuity",
+      "wraps": [
+        "p-checkpoint",
+        "p-recap"
+      ],
+      "pad": 10
+    },
+    {
+      "kind": "security-group",
+      "label": "Design loop",
+      "wraps": [
+        "p-pmo-review"
+      ],
+      "pad": 10
+    },
+    {
+      "kind": "security-group",
+      "label": "Model policy",
+      "wraps": [
+        "p-tokenomics"
+      ],
+      "pad": 10
+    }
+  ],
+  "connections": [
+    {
+      "id": "t-plan-delegation",
+      "from": "t-plan",
+      "to": "t-delegation",
+      "variant": "dashed"
+    },
+    {
+      "id": "t-implement-delegation",
+      "from": "t-implement",
+      "to": "t-delegation",
+      "variant": "dashed"
+    },
+    {
+      "id": "t-batch-delegation",
+      "from": "t-batch",
+      "to": "t-delegation",
+      "variant": "dashed"
+    },
+    {
+      "id": "t-design-loop-delegation",
+      "from": "t-design-loop",
+      "to": "t-delegation",
+      "variant": "dashed"
+    },
+    {
+      "id": "t-design-loop-decision-records",
+      "from": "t-design-loop",
+      "to": "t-decision-records",
+      "variant": "dashed"
+    },
+    {
+      "id": "t-recap-authoring",
+      "from": "t-recap",
+      "to": "t-authoring",
+      "label": "depends on"
+    },
+    {
+      "id": "t-recap-batch",
+      "from": "t-recap",
+      "to": "t-batch",
+      "variant": "dashed"
+    },
+    {
+      "id": "t-activities-housekeeping",
+      "from": "t-repo-kb-activities",
+      "to": "t-work-housekeeping",
+      "variant": "dashed"
+    },
+    {
+      "id": "p-plan-delegation",
+      "from": "p-plan",
+      "to": "p-delegation",
+      "variant": "dashed"
+    },
+    {
+      "id": "p-implement-delegation",
+      "from": "p-implement",
+      "to": "p-delegation",
+      "variant": "dashed"
+    },
+    {
+      "id": "p-batch-delegation",
+      "from": "p-batch",
+      "to": "p-delegation",
+      "variant": "dashed"
+    },
+    {
+      "id": "p-pmo-review-delegation",
+      "from": "p-pmo-review",
+      "to": "p-delegation",
+      "variant": "dashed"
+    },
+    {
+      "id": "p-pmo-review-decision-records",
+      "from": "p-pmo-review",
+      "to": "p-decision-records",
+      "variant": "dashed"
+    },
+    {
+      "id": "p-recap-authoring",
+      "from": "p-recap",
+      "to": "p-authoring",
+      "label": "depends on"
+    },
+    {
+      "id": "p-recap-batch",
+      "from": "p-recap",
+      "to": "p-batch",
+      "variant": "dashed"
+    },
+    {
+      "id": "p-activities-recurring",
+      "from": "p-repo-kb-activities",
+      "to": "p-work-recurring",
+      "variant": "dashed"
+    },
+    {
+      "id": "p-delegation-pmo",
+      "from": "p-delegation",
+      "to": "p-pmo",
+      "label": "thread material moves here",
+      "variant": "emphasis"
+    },
+    {
+      "id": "p-pmo-delegation",
+      "from": "p-pmo",
+      "to": "p-delegation",
+      "label": "dispatches runs",
+      "variant": "emphasis"
+    },
+    {
+      "id": "p-pmo-pmo-review",
+      "from": "p-pmo",
+      "to": "p-pmo-review",
+      "label": "invokes",
+      "variant": "emphasis"
+    },
+    {
+      "id": "p-pmo-checkpoint",
+      "from": "p-pmo",
+      "to": "p-checkpoint",
+      "label": "persists through",
+      "variant": "emphasis",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "p-pmo-tokenomics",
+      "from": "p-pmo",
+      "to": "p-tokenomics",
+      "label": "purpose by reference",
+      "variant": "emphasis"
+    },
+    {
+      "id": "p-pmo-review-next",
+      "from": "p-pmo-review",
+      "to": "p-next",
+      "label": "hands rollout records",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "How to read",
+      "items": [
+        "Solid arrow: ki-depends-on declared in frontmatter",
+        "Dashed arrow: ki-optional-depends-on declared in frontmatter",
+        "Highlighted arrow: a hand-off the design proposes, so a dependency ki-pmo would declare",
+        "Tag: NEW, RENAMED, REDUCED or MOVES - the change the design makes to that skill"
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "Names Kris decided (his words)",
+      "items": [
+        "NAMES (c): \"ki-pmo, ki-work-recurring\" - new ki-pmo; ki-work-housekeeping becomes ki-work-recurring",
+        "BLUEPRINT-FIT: \"Name for ki-design-loop: ki-pmo-review, and how does it differ from ki-pmo (question open)\"",
+        "DESIGN-AREA: \"Keep design area, ki-design-system and ki-design-inspiration\""
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "What moves from ki-delegation to ki-pmo",
+      "items": [
+        "Project threads, the territory master thread, opening a thread, bootstrap and directions from the master",
+        "Thread working rules: recap since the mark, parking tangents, linking records, keeping checkouts current, refreshing guidance",
+        "The coordinating thread's reporting forms: Summary, recap and full summary",
+        "The owner report, Needs tags and worker reporting stay with ki-delegation"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Hand-offs not drawn as arrows",
+      "items": [
+        "ki-pmo captures work through ki-next and reads Work's records; it never advances a record itself",
+        "ki-checkpoint's cross-references re-point from ki-delegation to ki-pmo; its schema does not change",
+        "ki-pulse leaves change-management for acquire; ki-accept and the two remote adapters are unchanged"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 ---
 note_type: streams/index
-updated: 2026-10-13T13:45:00Z
+updated: 2026-10-13T20:30:00Z
 author: Written with Claude
 ---
 
@@ -28,3 +28,19 @@ Two independent, read-only reviews of the brief, each with its own fact checks, 
 ## Decisions
 
 [[change-management-decisions]] records Kris's answers to the report's nine tagged decisions and to `MEMBER-SEL`, `PAPERCLIP-REQ` and `TRAILER`, each with the option chosen, Kris's words verbatim and the decision number in the run's log (Decisions 16 and 17), and folds in the decisions taken while the report was being written (Decisions 11, 12, 14 and 15). One item stays open: the Claude Code `fast` binding under `BINDINGS`. It states the authority position: no wave grant yet, push of this run's own commits only, no prune. The rollout starts from it: the pilot is captured through `ki-next` as one record under this Project, and each wave's records follow once the pilot's lessons are known.
+
+## Skill graph
+
+`change-management-skills.architecture.json` is an Archify architecture source and `change-management-skills.svg` its static export, drawn under Decision 22: "Skill names: show an Archify graph of the skills and how they interrelate, as part of reviewing current and proposed naming." The interactive HTML is built under `+/diagrams/change-management-skills/` and is not committed, as `ki-diagrams` requires. The drawing has two regions. TODAY shows the change-management, governance and related skills with the reliance each declares in its `SKILL.md` frontmatter at harness revision `1cfa7d8`, solid for `ki-depends-on` and dashed for `ki-optional-depends-on`; `ki-work` and its adapters declare nothing between them, which the drawing says. PROPOSED shows the same skills in the report's six units, with Kris's names: "NAMES (c) ki-pmo, ki-work-recurring, ki-design-loop -> ki-blueprint." (Decision 17), revised by "BLUEPRINT-FIT - Name for ki-design-loop: ki-pmo-review, and how does it differ from ki-pmo (question open)." and "DESIGN-AREA - Keep design area, ki-design-system and ki-design-inspiration." (Decision 21). Every renamed skill carries its new name, the line "was <old name>" and a RENAMED tag; `ki-pmo` is tagged NEW, `ki-delegation` REDUCED and `ki-pulse` MOVES; a card quotes the decisions above verbatim and another lists what moves from `ki-delegation` to `ki-pmo`. Archify's four gates pass at showcase quality; its advisory route review still reports two line crossings beside `ki-pmo-review` and `ki-pmo` that one placement edit did not remove, so the drawing's readability rests on automated checks, not on a visual inspection.
+
+![[change-management-skills.svg]]
+
+Read against Kris's rule that a skill name conveys its purpose at a glance (Decision 10), these current names fail:
+
+- `ki-work-housekeeping` - "housekeeping" says cleanup, and the skill runs the recurring work an Activity declares. Renamed `ki-work-recurring` under `NAMES`.
+- `ki-design-loop` - "design" and "loop" name an activity but not its subject, and beside `ki-design-system` and `ki-design-inspiration` it reads as interface design. Renamed `ki-pmo-review` under `BLUEPRINT-FIT`; how it differs from `ki-pmo` is Kris's open question.
+- `ki-delegation` - the word says handing work to a background run, but the skill today also holds the master and Project thread material, the opener, bootstrap and thread working rules, which no reader would look for under delegation. The remedy is the move to `ki-pmo`, not a rename; the name fits what is left.
+- `ki-pulse` - a pulse is a heartbeat or health check, and the skill triages incoming signals into records. The report moves it to `acquire` without renaming it; no replacement name is proposed here.
+- `ki-next` - the name is a horizon, not an act, and a newcomer cannot tell it from `ki-plan`; it captures a record into triage. Borderline rather than a clear failure, and no rename is proposed.
+
+The remaining names in the set pass: `ki-plan`, `ki-implement`, `ki-accept`, `ki-batch`, `ki-recap`, `ki-checkpoint`, `ki-tokenomics`, `ki-decision-records`, `ki-work`, `ki-work-roadmap` and the adapters each say what they do.
