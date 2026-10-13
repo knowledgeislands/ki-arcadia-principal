@@ -2,10 +2,10 @@
 note_type: streams/initiative
 slug: techne
 title: Techne
-direction: Move agent work into a governed Techne footprint and make the agent fleet useful, within the Techne Programme Hold.
+direction: Take hosts to ready, move agent work into a governed Techne footprint and make the agent fleet useful, within the Techne Programme Hold.
 lifecycle: active
 lead: Kris Brown
-updated: 2026-10-11T14:00:00Z
+updated: 2026-10-13T23:00:00Z
 author: Written with Claude
 ---
 
@@ -13,9 +13,11 @@ author: Written with Claude
 
 ## Direction
 
-Moving agent work off the workstation into a governed Techne footprint, and making the agent fleet deliver reviewed work. The [[Techne Programme Hold]] bounds what may run remotely; Knowledge Islands Principal owns the engineering decisions, while `ki-techne-harness` and `tools-techne` own their implementation. The workstation itself belongs to [[rig|Rig]], and the shared toolchain to [[platform-foundations|Platform foundations]].
+Techne takes hosts to ready: it owns a host's base (provisioning, patching, identity, secrets delivery, the operator user and lifecycle) and its workspace (the repository set, `ki bootstrap` and working rules, through `ki`). [[rig|Rig]] then applies the host's role, and the shared toolchain belongs to [[platform-foundations|Platform foundations]]. Techne also moves agent work into a governed footprint and makes the agent fleet deliver reviewed work. The [[Techne Programme Hold]] bounds what may run remotely; Knowledge Islands Principal owns the engineering decisions, while `ki-techne-harness` and `tools-techne` own their implementation.
 
-[[Hosts, Roles and Layers]] explains where Techne sits: it takes a host to base and ready, then Rig rigs it up.
+The `agent-host` recipe is the AWS base for a remote agentic rig. `vega` stays on Ubuntu LTS, for its security-only update channel, Livepatch and ready-made images. The appliance role has no recipe until the hold is reshaped.
+
+[[Hosts, Roles and Layers]] explains the layers and roles in plain language.
 
 ---
 

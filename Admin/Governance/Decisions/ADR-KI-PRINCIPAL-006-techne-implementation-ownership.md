@@ -3,7 +3,7 @@ note_type: admin/governance/decision
 id: ADR-KI-PRINCIPAL-006
 title: Techne implementation ownership
 date: 2026-10-07
-updated: 2026-10-10
+updated: 2026-10-13
 status: current
 decision_type: architecture
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/adr
@@ -29,7 +29,7 @@ Techne assigns implementation ownership across two independently governed reposi
 
 Agent hosts follow one model with four terms:
 
-- A **recipe** is a harness-defined kind of agent host. It declares the providers it supports and, for each, how a host of that kind is built and operated. The prototype recipe, `direct-host`, runs agents directly on the host rather than inside a runtime that can delegate agent work.
+- A **recipe** is a harness-defined kind of agent host. It declares the providers it supports and, for each, how a host of that kind is built and operated. The prototype recipe, `agent-host`, runs agents directly on the host rather than inside a runtime that can delegate agent work.
 - A **binding** is a person's named, configured instance of a recipe. It names its provider by carrying exactly one provider table, and every provider-specific value sits in that table.
 - A **provider** is the infrastructure a binding's footprint lives on. AWS is the first; no recipe field, binding field, derivation or command outside a provider's own section or adapter assumes it.
 - A **footprint** is what a binding leaves on its provider and on the host.

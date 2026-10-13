@@ -3,7 +3,7 @@ note_type: admin/governance/decision
 id: ODR-KI-PRINCIPAL-001
 title: 'Keeping work safe on the agent host'
 date: 2026-10-07
-updated: 2026-10-11
+updated: 2026-10-13
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/odr
 decision_type: operations
@@ -14,7 +14,7 @@ decision_depends_on: ['GDR-KI-PRINCIPAL-004', 'GDR-KI-PRINCIPAL-005']
 
 ## Context
 
-[[GDR-KI-PRINCIPAL-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-PRINCIPAL-004]] exempts one agent host, `ki-techne-agent-host`, from the Techne Programme Hold, and treats it as a host whose disk may be discarded: the host can be stopped at any time and rebuilt or withdrawn. That premise covers any host of the `direct-host` recipe, whether a cloud instance that is replaced or an owned machine that is reset. Agent work on the host lives in Git checkouts, so a stop, rebuild or withdrawal can discard commits that no remote holds unless the host's status, operations and tooling guard against it.
+[[GDR-KI-PRINCIPAL-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-PRINCIPAL-004]] exempts one agent host, `ki-techne-agent-host`, from the Techne Programme Hold, and treats it as a host whose disk may be discarded: the host can be stopped at any time and rebuilt or withdrawn. That premise covers any host of the `agent-host` recipe, whether a cloud instance that is replaced or an owned machine that is reset. Agent work on the host lives in Git checkouts, so a stop, rebuild or withdrawal can discard commits that no remote holds unless the host's status, operations and tooling guard against it.
 
 ## Decision
 
@@ -34,7 +34,7 @@ The agent host keeps work safe through the following durability model. The opera
 ## Consequences
 
 - `ki-techne-harness` owns the status contract, guards, operations, pins and expiries, and its operator guide states the protection boundary, the sequences and the 90-day token expiry. `tools-techne` follows the harness contract, as [[ADR-KI-PRINCIPAL-006-techne-implementation-ownership|ADR-KI-PRINCIPAL-006]] requires.
-- `tools-ki` gains the host-marker refusal, the `direct-host` recipe carries the two-checkout and writing-checkout rules for both runtimes, with the binding owner's personal source adding only its own wording, and `ki-agentic-harness` decides where a writing-checkout designation lives. Each is recorded in its owning repository.
+- `tools-ki` gains the host-marker refusal, the `agent-host` recipe carries the two-checkout and writing-checkout rules for both runtimes, with the binding owner's personal source adding only its own wording, and `ki-agentic-harness` decides where a writing-checkout designation lives. Each is recorded in its owning repository.
 - Work at risk on the host blocks a rebuild or withdrawal unless the owner discards it by name, so withdrawing the exemption cannot silently lose work.
 - Material outside Git on the host is lost on rebuild unless moved into a repository or onto the operator's workstation first.
 
