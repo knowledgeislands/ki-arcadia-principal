@@ -4,7 +4,7 @@ thread: knowledge-islands-model.ways-of-working
 label: 'KI Model: ways-of-working'
 state: active
 created_at: 2026-10-09T20:58:00Z
-updated_at: 2026-10-13T15:35Z
+updated_at: 2026-10-13T21:30:00Z
 ---
 
 # knowledge-islands-model.ways-of-working
@@ -44,8 +44,8 @@ None yet in this thread. The rules live in `/Users/krisbrown/workspaces/knowledg
 
 ## Open questions
 
-- In flight (launched 22:08 BST): `decisions-sync` (Decision 21 into the decisions file; adopt KI-TOOL-KI-CLI-123, KI-HARNESS-GOV-175 and KI-HARNESS-GOV-176, the last through `ki-accept`); `durability` (Decision 22 discussions 1 and 2, and `ki-pmo` against `ki-pmo-review`, as report options); `name-graph` (Archify graph of current and proposed skill names).
-- Held: `PAPERCLIP-REQ` until Wave F.
+- Delivered 2026-10-13: Decision 21 is recorded in the design decisions file. KI-TOOL-KI-CLI-123 and KI-HARNESS-GOV-175 are adopted (draft, next, deliver); KI-HARNESS-GOV-176 is accepted (done). The report gains Durability and ownership. An Archify graph of the change-management skills is in the design folder.
+- Open for Kris: `DECISION-HOME`, `CITE-RULE`, `DESIGN-RETENTION`, `HOOK-OWNER`, `LOOP-NAME`, `PULSE-NAME`, `STATE-CLEANUP`, `PLAYWRIGHT-DEP`, `GRAPH-DEFAULTS`. Held: `PAPERCLIP-REQ` until Wave F.
 - Parked 2026-10-09: Markdown flavour - a gradual move from Obsidian-style to GitHub-flavoured Markdown, starting with a front-matter field declaring a note's flavour.
 
 ## Next step
