@@ -1,6 +1,6 @@
 ---
 note_type: pillars/index
-updated: 2026-10-11T04:15:00Z
+updated: 2026-10-13T23:49:00Z
 tags:
   - card/note
   - topic/knowledge-islands
@@ -31,7 +31,7 @@ Any island may name its library, its knowledge base or parts of them after parti
 
 The name is a deliberate play on the Great Library of Alexandria. [[History of Knowledge Systems]] recalls Alexandria, the House of Wisdom in Baghdad and Ashurbanipal's library at Nineveh as early attempts to gather everything known under one roof, and [[Layers of Knowledge]] places libraries in the civilisational layer, where knowledge outlives any single mind.
 
-Arcadia's library earns the allusion through its role rather than its size. As the Capital and the home of the model, Arcadia holds the idea of what a library is and how one is kept, and it knows where the other libraries are. It is the library of all libraries - and that is why it is "great".
+Arcadia's library earns the allusion through its role rather than its size. As the home of the model within Knowledge Islands Principal, the Capital, Arcadia holds the idea of what a library is and how one is kept, and it knows where the other libraries are. It is the library of all libraries - and that is why it is "great".
 
 ---
 
