@@ -42,7 +42,7 @@ Knowledge Islands Principal, the KI Agentic Harness, `tools-ki`, KI Specificatio
 
 ### Changing canonical content (strictly enforced)
 
-Change `Admin`, `Pillars` or `Resources` only through the [Enactment Process](<Admin/Operations/Processes/Enactment Process.md>), with a record in `Streams/Roadmap/` under `ki-repo-kb-streams`. An explicit owner instruction for a bounded change stands in for a record; related changes share one record. Trivial typo or formatting fixes, `Calendar/` entries and `+/` triage are exempt.
+Changes to `Admin`, `Pillars` or `Resources` must go through the [Enactment Process](<Admin/Operations/Processes/Enactment Process.md>), with a record in `Streams/Roadmap/` under `ki-repo-kb-streams`. An explicit owner instruction for a bounded change stands in for a record; related changes share one record. Trivial typo or formatting fixes, `Calendar/` entries and `+/` triage are exempt.
 
 ### Index notes (strictly enforced)
 
