@@ -1,10 +1,10 @@
 ---
 type: ki-checkpoint
 thread: knowledge-islands-model.ways-of-working
-label: 'Knowledge Islands Model: ways-of-working'
+label: 'KI Model: ways-of-working'
 state: active
 created_at: 2026-10-09T20:58:00Z
-updated_at: 2026-10-13T03:20:00Z
+updated_at: 2026-10-13T04:05:00Z
 ---
 
 # knowledge-islands-model.ways-of-working
@@ -15,10 +15,9 @@ Kris's way of working with a master thread and Project threads, background agent
 
 ## Current state
 
-- Active: Kris opened this thread ahead of the master's queue (Decision 1). Run `ways-of-working`; decisions log at `~/.local/state/ki/agents/ways-of-working/decisions.md`. No mark yet.
-- `wt-rule` delivered the worktree, retention and coordinator rules (Decisions 2 and 3). `agent-model` delivered `--model` and `--effort` for `ki agent` (local build `tools-ki/bin/ki` until the next release). `brief` delivered [the brief](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/ways-of-working/design/change-management-brief.md) (28 reflection points). Running: `review-fable` (Fable, high), `review-astra` (Astra, high), then `merge` (Fable, max) gated on both.
-- `ki-delegation` read at c6850675 (2026-10-13).
-- Pending at the next mark (master Decision 143): change `label` to `KI Model: ways-of-working`.
+- Active: Kris opened this thread ahead of the master's queue (Decision 1). Run `ways-of-working`; decisions log at `~/.local/state/ki/agents/ways-of-working/decisions.md`. Mark: 2026-10-13T04:03Z, decisions log at Decision 12.
+- `wt-rule` delivered the worktree, retention and coordinator rules (Decisions 2 and 3). `agent-model` delivered `--model` and `--effort` for `ki agent` (local build `tools-ki/bin/ki` until the next release). `brief` delivered [the brief](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/ways-of-working/design/change-management-brief.md) (28 reflection points). Delivered: two independent reviews (Fable, Astra) and the merged [report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/ways-of-working/design/change-management-report.md); `coord-hard` made Coordinator responsiveness hard rules with a `Role: coordinator only` opener line (Decision 11). Running: `merge-amend` (Decision 10: models and environment, naming) and `dispatch-assess` (principal-to-territory command dispatch, Decision 12).
+- `ki-delegation` read at 1fe17e23 (2026-10-13).
 - In the skill now: the mark standard, carry-forward of outstanding items and stable Needs tags; the thread cap and the territory master thread; thread openers and Bootstrap; steering, not stopping; parking tangents, linking records, keeping primary checkouts current, Summary banner and resting point, and refreshing this guidance - all in [`ki-delegation`'s background-run standard](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/skills/governance/ki-delegation/references/standards-background-runs.md). They are this Project's to refine.
 - Proposed model, awaiting Kris: thread rules move out of `ki-delegation` into a new threads skill under change-management, leaving `ki-delegation` with background runs and packets; the registry stays in `ki-work`, records with the lifecycle skills, state in `ki-checkpoint`. Settled: `SPLIT`, `SKILL-REVIEW`, `PLAN`, `AGENT-MODEL`, `PUSH`, `MASTER-SYNC` (Decisions 4 to 9). The design also covers the `ki` command surface and naming (Decision 7) and the default coordinator model and effort, which absorbs `COORD-WORDING` (Decision 8).
 
@@ -39,6 +38,7 @@ None yet in this thread. The rules live in `/Users/krisbrown/workspaces/knowledg
 
 ## Open questions
 
+- Needs `COORD-HOOK`: propose in the design a Claude Code hook (chezmoi) that injects a one-line coordinator reminder on each owner message in a coordinating thread, with a Codex equivalent.
 - Parked 2026-10-09: Markdown flavour - a gradual move from Obsidian-style to GitHub-flavoured Markdown, starting with a front-matter field declaring a note's flavour.
 
 ## Next step
