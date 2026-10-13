@@ -4,7 +4,7 @@ thread: rig.mac-studio-bootstrap
 label: 'Rig: mac-studio-bootstrap'
 state: active
 created_at: 2026-10-08T08:45:00Z
-updated_at: 2026-10-11T03:55:00Z
+updated_at: 2026-10-12T22:18:00Z
 ---
 
 # rig.mac-studio-bootstrap
@@ -32,7 +32,9 @@ ki-delegation read at f2b14dca
 - [Rig Initiative](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/rig.md): opt-in software removal ([RIG-CORE-041](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/RIG-CORE-041-unwanted-software-removal.md)), profile-filtered Dock items ([RIG-CORE-042](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-RIG-CORE-042-profile-filtered-dock-items.md)), self-updating apps including Warp ([RIG-CORE-043](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/RIG-CORE-043-self-updating-applications.md)), undeclared software decisions ([DOTFILES-UE-079](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-079-undeclared-software-decisions.md)), and the Later items: NordVPN, six untrusted Homebrew taps, a Command Line Tools update and a `tailscaled` swap.
 - [rig.chezmoi](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/rig.chezmoi.md) thread: the `op_cache` race, the copy-key script that runs on every apply, [DOTFILES-UE-082](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-082-tolerate-missing-template-tools.md), [DOTFILES-UE-084](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-084-render-zshenv-on-vega.md) and the 1Password service account.
 
-**Handoff from state-of-play (2026-10-12, Decision 136).** `op_cache` now reads secrets through the 1Password service account "Automation" (read-only on the Automation vault), using the Keychain service `ki-op-service-account-automation`, and falls back to the desktop app. On sol, run once from an unlocked session: `security add-generic-password -U -s ki-op-service-account-automation -a "$USER" -w`, then paste the token from Rig item "Service Account Auth Token: Automation". This should let the four 1Password-backed chezmoi targets render without the screen unlocked. Check it with `rm -rf ~/.cache/op-cache && chezmoi diff`. See the "Service account" section in [the chezmoi guide](/Users/krisbrown/.local/share/chezmoi/docs/guides/tools/chezmoi.md). Not blocking.
+**Keychain handoff (Decision 44).** The Automation service-account token is in sol's login Keychain and sol's `op_cache` is the token-aware version; sol's chezmoi source is level with origin. The token works from sol's screen session only: over SSH the login Keychain is locked (`security` returns 36), so remote renders still fall back to the desktop app and fail (Needs Kris `KEYCHAIN-SSH`).
+
+**Remote access (Decision 45).** Rig capture [KI-TOOL-RIG-CORE-046](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-046-remote-access-and-continuity.md) (triage, Rig Initiative): declarable screen sharing limited to the tailnet, plus Handoff, Universal Clipboard and Universal Control. How Kris's Macs are reached is in the "Remote access" section of [the macOS workstation guide](/Users/krisbrown/.local/share/chezmoi/docs/guides/user/macos-workstation.md). Screen Sharing is on for sol and off for terra (`100.96.126.29`).
 
 ## Decisions made
 
@@ -53,7 +55,10 @@ This checkpoint only. The Project note and its hosts note are current.
 ## Open questions
 
 - **Needs Kris** (all optional, at your convenience):
-  - `RESTART` - Monday evening 2026-10-12 at the earliest: restart `sol`, unlock FileVault at the screen, and confirm Tailscale relaunches and reconnects (`ssh krisbrown@100.90.130.74` from the laptop works). This closes the Project.
+  - `RESTART` - now (Kris is home): at sol run `rm -rf ~/.cache/op-cache && chezmoi apply && rig apply`, then restart `sol`, unlock FileVault at the screen, and confirm Tailscale relaunches and reconnects (`ssh krisbrown@100.90.130.74` from the laptop works). This closes the Project.
+  - `KEYCHAIN-SSH` - the service-account token cannot be read over SSH because the login Keychain is locked there; recommend handing the fix (for example a private token file or a dedicated always-unlocked keychain) to the rig.chezmoi thread, not blocking this Project.
+  - `SSH-ALIAS` - optional: capture a chezmoi triage item for a `Host sol` alias (HostName 100.90.130.74, User krisbrown, agent forwarding) so plain `ssh sol` works.
+  - `TERRA-VNC` - optional: turn on Screen Sharing on terra (System Settings > General > Sharing, Only these users, VNC password off) if needed before KI-TOOL-RIG-CORE-046 can limit it to the tailnet.
   - `DROPBOX` - Dropbox, PTGui Pro, PhotoSweeper, ScanSnap Home and Synology Drive Client are no longer needed on `sol`; remove them by hand if you wish, or leave them for opt-in removal under RIG-CORE-041.
   - `WARP` - `rig apply` on `sol` fails only on Warp, because Homebrew's Warp cask has an upstream checksum mismatch; the installed app is intact and updates itself. Nothing to do unless you want the failure cleared before RIG-CORE-043 lands.
   - `ZED-MD` - Markdown opens in Zed on the laptop (set through Launch Services, Decision 42). On `sol` the change has to be made at the screen: select a `.md` file in Finder, press Cmd-I, choose Zed under Open with, then Change All. Rig support for default apps is [RIG-CORE-045](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/RIG-CORE-045-default-applications.md), with the Rig Initiative.
