@@ -35,6 +35,8 @@ Kris's way of working with a master thread and Project threads, background agent
 - Decision 14: owner reports use the three-section format with tagged queries and a closing reply block; its canonical owner is `ki-delegation`'s Reporting section.
 - Decision 15: coordinator responsiveness is a fundamental requirement - no substantive work in-thread, and an owner message never pre-empts work in flight.
 - Decisions 16-20: COORD-HOOK (a) built and trialled; all report and notification queries answered (17); full summary form (18); skill dependencies in frontmatter with an Archify skill graph in harness docs (19, 20).
+- Decision 21 (2026-10-13): Claude fast model `claude-haiku-5-5`; design loop renamed `ki-pmo-review`; keep the design area; `/ki-pmo` entry point once KI-PRINCIPAL-ECO-013 creates `ki-pmo`, build nothing now; adopt KI-TOOL-KI-CLI-123 then KI-HARNESS-GOV-175 to draft, next, deliver; adopt KI-HARNESS-GOV-176 and take it through `ki-accept`; keep the cycles drawing removed; KI-SHAPE-21 stays a warning; keep defaults; standing permission to push this thread's checkpoint commits fast-forward.
+- Decision 22 (2026-10-13): Kris opened three discussions - decisions must materialise in repository records, not local state, and design artefacts need a durability rule; who owns the coordinator hook and how it is required, audited and disabled; an Archify graph of skills with current and proposed names.
 
 ## Files touched
 
@@ -42,10 +44,11 @@ None yet in this thread. The rules live in `/Users/krisbrown/workspaces/knowledg
 
 ## Open questions
 
-- Open for Kris: `BINDINGS` (Claude fast model), `BLUEPRINT-FIT`, `DESIGN-AREA`, `SUMMARY-ENTRY`, `RECV-ADOPT`, `ADOPT-176`, `RECYCLE`, `PLAYWRIGHT`, `SHAPE-21`, `DEFAULTS`, `PUSH-THREAD`. Held: `PAPERCLIP-REQ` until Wave F.
+- In flight (launched 22:08 BST): `decisions-sync` (Decision 21 into the decisions file; adopt KI-TOOL-KI-CLI-123, KI-HARNESS-GOV-175 and KI-HARNESS-GOV-176, the last through `ki-accept`); `durability` (Decision 22 discussions 1 and 2, and `ki-pmo` against `ki-pmo-review`, as report options); `name-graph` (Archify graph of current and proposed skill names).
+- Held: `PAPERCLIP-REQ` until Wave F.
 - Parked 2026-10-09: Markdown flavour - a gradual move from Obsidian-style to GitHub-flavoured Markdown, starting with a front-matter field declaring a note's flavour.
 
 ## Next step
 
-1. Take Kris's answers to the report decisions into `design/change-management-decisions.md` (via a background agent), folding in Decision 11 and the dispatch assessment.
-2. Then the rollout through `ki-next`, starting with the pilot.
+1. Review the three agents' reports and put the durability, hook-ownership and naming queries to Kris.
+2. Then the rollout through `ki-next`, starting with the pilot KI-PRINCIPAL-ECO-013.
