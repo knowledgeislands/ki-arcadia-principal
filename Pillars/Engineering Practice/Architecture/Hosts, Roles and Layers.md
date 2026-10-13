@@ -1,6 +1,6 @@
 ---
 note_type: pillars/note
-updated: 2026-10-11T14:00:00Z
+updated: 2026-10-13T12:00:00Z
 author: Written with Claude
 ---
 
@@ -8,7 +8,9 @@ author: Written with Claude
 
 ## In one paragraph
 
-Every machine Kris works on or sends agents to is built in the same four layers. **Techne** gets the machine to a reachable, patched, ready state (the base). **Rig** then rigs it up with the tools its job needs (the role). **Techne, through `ki`**, adds the repositories and working rules (the workspace). **chezmoi** - or **Cheztoi** on less-trusted machines - makes it feel like Kris's own (the personal layer). How each tool reaches each operating system is a separate supply question: packaging. The short version is: _Techne takes a host to base and ready; Rig rigs it up._
+Every machine Kris works on or sends agents to is built in the same four layers. **Techne** gets the machine to a reachable, patched, ready state (the base). **Rig** then rigs it up with the tools its job needs (the role). **Techne, through `ki`**, adds the repositories and working rules (the workspace). **chezmoi** - or **Cheztoi**, a small allowlisted bundle of Kris's settings rendered by chezmoi for less-trusted machines - makes it feel like Kris's own (the personal layer). How each tool reaches each operating system is a separate supply question, packaging, not a fifth layer. The short version is: _Techne takes a host to base and ready; Rig rigs it up._
+
+Here a **role** is what a host is for, and a **layer** is one stage in building a host. Neither is the same as the architectural roles and layers of [[Engineering Estate]], such as the personal controller or the governance layer, which describe the wider system rather than a single machine.
 
 The detail and the evidence behind this are in the [[rig-techne-boundary-audit|Rig and Techne boundary audit]], whose ten decisions Kris accepted on 2026-10-11.
 
@@ -22,7 +24,7 @@ The detail and the evidence behind this are in the [[rig-techne-boundary-audit|R
 | Role | Which tools, at which versions, does this kind of machine need? | Rig: the `tools-rig` engine applying a role profile | `rig apply` installs `ki`, `mise`, `bun`, `node`, Codex and Claude Code |
 | Workspace | Which repositories, skills and working rules? | Techne, through `ki` | Clone the repository set, run `ki bootstrap`, write the host marker |
 | Personal | How does this person like it? | chezmoi on trusted machines, Cheztoi on less-trusted ones | The Cheztoi payload drops Kris's zsh setup and agent instructions |
-| Packaging | How does each tool get onto each OS? | Each `tools-*` repository's release, plus thin channels | `ki` arrives as a signed release archive |
+| Packaging (supply, not a layer) | How does each tool get onto each OS? | Each `tools-*` repository's release, plus thin channels | `ki` arrives as a signed release archive |
 
 ```text
    personal    chezmoi (terra, sol)  |  Cheztoi (vega)
@@ -77,6 +79,8 @@ Each role says what versions it needs, and the policy depends on how the machine
 
 The agentic-rig role profile moves out of the `agent-host` recipe into a recipe-independent `roles/` folder in `ki-techne-harness`, so other recipes and `sol` can include it.
 
+---
+
 ## Packaging
 
 One **KI release contract** is the canonical artefact for every KI and personal tool: per-platform archives (macOS and Linux, Intel and ARM), a checksum manifest, a signature, and an installer with the key built in, as `ki` already does. Three thin channels deliver it:
@@ -91,7 +95,7 @@ apt, AUR and Nix are deferred until an appliance fleet or an Arch workstation ac
 
 ## Omarchy
 
-`vega` stays on **Ubuntu LTS**: it has a security-only update channel, Livepatch and ready-made AWS images, and it does not need a desktop. Omarchy, an opinionated Arch desktop, would cost an OS axis in the AWS provider and lose security-only patching for little gain. It is kept in view for a possible future **owned Linux workstation**, where Rig would then need a pacman provider and Kris's catalogue would need Arch variants.
+`vega` stays on **Ubuntu LTS**: it has a security-only update channel, Livepatch and ready-made AWS images, and it does not need a desktop. Omarchy, an opinionated Arch desktop, would cost an OS axis in the AWS provider and lose security-only patching for little gain. It is kept in view for a possible future **owned Linux workstation**, where Rig would then need a pacman provider and Kris's personal tool catalogue - the list of personal tools, kept in chezmoi, that Rig installs - would need Arch variants.
 
 ---
 
@@ -101,4 +105,4 @@ apt, AUR and Nix are deferred until an appliance fleet or an Arch workstation ac
 - [[ADR-KI-PRINCIPAL-003-the-agent-host-workstation-model|ADR-KI-PRINCIPAL-003]] - how the agent host becomes its owner's working machine.
 - [[ADR-KI-PRINCIPAL-006-techne-implementation-ownership|ADR-KI-PRINCIPAL-006]] - which repository owns recipes, providers and bindings.
 - [[ODR-KI-PRINCIPAL-001-keeping-work-safe-on-the-agent-host|ODR-KI-PRINCIPAL-001]] - how work on the agent host stays safe.
-- [[Engineering Estate]] - the wider architectural roles this sits within.
+- [[Engineering Estate]] - the wider system's architectural roles and layers, which are distinct from the host roles and layers here.
