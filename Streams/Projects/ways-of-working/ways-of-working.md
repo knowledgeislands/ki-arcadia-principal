@@ -7,7 +7,7 @@ initiative: knowledge-islands-model
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-09T17:27:11Z
+updated: 2026-10-13T03:10:00Z
 author: Written with Claude
 ---
 
@@ -26,3 +26,4 @@ This Project sits in [[knowledge-islands-model|Knowledge Islands model]].
 - The thread working rules already in `ki-delegation` - parking tangents, linking records, keeping primary checkouts current, reporting to the owner and refreshing the guidance - are this Project's to refine.
 - A clear state-of-play view may draw on apps-observatory.local and the command-centre ideas in hnr-principal and legal-principal.
 - Input to the change-management design, from a ki-agentic-harness skills review (2026-10-13), one perspective rather than a decision: keep the harness `design` area with `ki-design-system` and `ki-design-inspiration` as interface-design skills; `ki-design-loop` is the outlier, a project-management-office iteration loop (brief, independent reviews, merged report, owner decisions, piloted rollout) whose "design" name overlaps them. It suggests a rename that says iteration and project governance, a check on whether `change-management` is still its area, and batching the rename (about 38 references in 17 harness files, plus installed payloads and the catalogue) with any other harness renames, routed to the harness as a trade.
+- The change-management design is in progress under `ki-design-loop` in this Project's [[ways-of-working/design/design|design folder]]: change management as a whole, the `ki-pmo` thread skill, checkpoints and the mark, goals at every level, the `ki` command surface and the default coordinator model (Decisions 4 to 8 of the ways-of-working run).
