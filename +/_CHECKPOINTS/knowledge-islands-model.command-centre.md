@@ -4,7 +4,7 @@ thread: knowledge-islands-model.command-centre
 label: 'Knowledge Islands Model: command-centre'
 state: active
 created_at: 2026-10-11T02:41:28Z
-updated_at: 2026-10-12T18:22:00Z
+updated_at: 2026-10-13T03:08:00Z
 ---
 
 # knowledge-islands-model.command-centre
@@ -15,6 +15,7 @@ One shared vocabulary and model for Kris's command centre, adopted across the ha
 
 ## Current state
 
+- **Handoff, 2026-10-13 (state-of-play Decision 149, agreed with Kris via KI Model: ways-of-working):** the Knowledge Islands model vocabulary (threads, Initiatives, Projects, checkpoints, marks, Needs) moves to the KI Model: ways-of-working change-management design. This Project keeps cross-territory alignment (legal, HNR, Observatory, Paperclip, personal portfolio) and the state-of-play view, and takes that design's outcome as input. Where the entries below assign that vocabulary to this Project, this handoff supersedes them; reconcile them at the next mark.
 - New Project, created 2026-10-11 with `lifecycle: planned` (state-of-play Decision 42). Thread opened 2026-10-12 by Kris, ahead of its place as fourth in the master thread's queue; run `command-centre`, not yet created. No mark struck yet. ki-delegation read at f2b14dca. At the first mark, shorten `label` to `KI Model: command-centre` (state-of-play Decision 143).
 - The survey and crosswalk live in `~/.local/state/ki/agents/state-of-play/command-centre.report.md`: 21 concepts across 12 repositories, five word clashes (Council, Project, State of play, Control plane, Checkpoint) and four same-thing clusters.
 - The parked "state-of-play view" item moved here from the ways-of-working checkpoint and is an idea in the Project note.
