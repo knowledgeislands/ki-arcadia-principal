@@ -14,7 +14,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-13T13:42:43Z
-updated_at: 2026-10-13T13:42:43Z
+updated_at: 2026-10-13T23:30:00Z
 ---
 
 # PMO Extraction Pilot
@@ -39,12 +39,12 @@ This record belongs to Knowledge Islands Principal because the pilot is the desi
 - Layers 4 and 5 of the responsive coordinator are out: the `ki agent` mechanical support lands in Wave C and the lighter coordinator through the `COORD-DEFAULT` trial, each judged against the same acceptance test.
 - The `COORD-DEFAULT` trial of `fast` at low effort may run on the pilot's Project thread but is not this record's deliverable, and the open Claude Code `fast` binding under `BINDINGS` is not needed by it.
 - No rename of `ki-design-loop` or `ki-work-housekeeping`; `NAMES` is Wave E.
-- No Decision Record and no deletion of the design folder; both are Wave F.
+- No Decision Record and no deletion of the design folder; both are Wave F. Kris has since settled where design working material lives, in words that reached the thread with stop words stripped, quoted as received: "DESIGN-RETENTION - (a) +/_DESIGN/<subject-slug>/ in every repository." The pilot does not move the design folder or change the design loop's standard: the standard change is Wave B's and the move is Wave F's, and the choice is held here and in [[change-management-decisions]] until those waves have records.
 
 ## Scope
 
 1. Create `ki-pmo` in the harness's `change-management` area, declaration-only, declared by every Capital, and move the thread material of the `ki-delegation` background-run standard into it without changing its meaning: project threads, the territory master thread, opening a thread, bootstrap, directions from the master, the thread working rules and the coordinating-thread reporting practices. Worker reporting and the run mechanics stay with `ki-delegation`; the owner report and its Needs tags stay with their canonical owner and `ki-pmo` adopts them by reference.
-2. Add reciprocal off-ramps in `ki-delegation`, `ki-checkpoint`, `ki-tokenomics` and `ki-recap`; re-point `ki-checkpoint`'s cross-references and the refresh rule to `ki-pmo`; refine `ADR-KI-HARNESS-SKILLS-005` and `ADR-KI-HARNESS-SKILLS-006` in place and widen the `change-management` area description; write the five-word glossary and the thin rubric.
+2. Add reciprocal off-ramps in `ki-delegation`, `ki-checkpoint`, `ki-tokenomics` and `ki-recap`. The `ki-recap` off-ramp is the form Kris chose for `RECAP-AWARE`, quoted as received: "RECAP-AWARE - (c) ki-recap detects coordinating thread and hands to ki-pmo's forms." In a coordinating thread `ki-recap` hands to `ki-pmo`'s forms, and elsewhere it recaps as it does today. Then re-point `ki-checkpoint`'s cross-references and the refresh rule to `ki-pmo`; refine `ADR-KI-HARNESS-SKILLS-005` and `ADR-KI-HARNESS-SKILLS-006` in place and widen the `change-management` area description; write the five-word glossary and the thin rubric.
 3. Layer 1: the opener's role line carries the three rules of the responsive coordinator in Kris's words, and the thread re-bootstraps on request, after a compaction and after a model switch.
 4. Layer 2: the coordinator reminder hook on both runtimes, in progress now as the first task, injecting `ki-pmo`'s one line on every owner message and after compaction in a coordinating thread, silent in any agent `ki agent` launched.
 5. Layer 3: the counted turn budget and self-check, at most five tool calls a turn with reads and writes limited as the report states, anything beyond a launch, and drift reported to Kris in one line and noted in the checkpoint.
