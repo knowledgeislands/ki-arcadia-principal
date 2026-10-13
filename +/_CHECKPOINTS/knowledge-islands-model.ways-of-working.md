@@ -4,7 +4,7 @@ thread: knowledge-islands-model.ways-of-working
 label: 'Knowledge Islands Model: ways-of-working'
 state: active
 created_at: 2026-10-09T20:58:00Z
-updated_at: 2026-10-13T03:05:00Z
+updated_at: 2026-10-13T03:15:00Z
 ---
 
 # knowledge-islands-model.ways-of-working
@@ -16,11 +16,11 @@ Kris's way of working with a master thread and Project threads, background agent
 ## Current state
 
 - Active: Kris opened this thread ahead of the master's queue (Decision 1). Run `ways-of-working`; decisions log at `~/.local/state/ki/agents/ways-of-working/decisions.md`. No mark yet.
-- Nothing running. `wt-rule` delivered and pushed the worktree location, run-folder retention and coordinator rules in `ki-delegation`, and the coordination purpose in `ki-tokenomics` (Decisions 2 and 3). Its wording awaits Kris's review as `COORD-WORDING`.
+- `wt-rule` delivered the worktree, retention and coordinator rules (Decisions 2 and 3). Running: `agent-model` (model and effort options for `ki agent` in tools-ki, Decision 7) and `brief` (design brief in `Streams/Projects/ways-of-working/design/`, Decisions 4 to 8).
 - `ki-delegation` read at c6850675 (2026-10-13).
 - Pending at the next mark (master Decision 143): change `label` to `KI Model: ways-of-working`.
 - In the skill now: the mark standard, carry-forward of outstanding items and stable Needs tags; the thread cap and the territory master thread; thread openers and Bootstrap; steering, not stopping; parking tangents, linking records, keeping primary checkouts current, Summary banner and resting point, and refreshing this guidance - all in [`ki-delegation`'s background-run standard](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/skills/governance/ki-delegation/references/standards-background-runs.md). They are this Project's to refine.
-- Proposed model, awaiting Kris: thread rules move out of `ki-delegation` into a new threads skill under change-management, leaving `ki-delegation` with background runs and packets; the registry stays in `ki-work`, records with the lifecycle skills, state in `ki-checkpoint`. `SPLIT` and `SKILL-REVIEW` settled by Decisions 4 and 5; `OPENER` and `KI-TERRITORY` fold into the design. Open: `PLAN` (model options for `ki agent`, then brief, Fable and Astra reviews, merged report), `AGENT-MODEL`, `MASTER-SYNC`, `PUSH`, `COORD-WORDING`.
+- Proposed model, awaiting Kris: thread rules move out of `ki-delegation` into a new threads skill under change-management, leaving `ki-delegation` with background runs and packets; the registry stays in `ki-work`, records with the lifecycle skills, state in `ki-checkpoint`. Settled: `SPLIT`, `SKILL-REVIEW`, `PLAN`, `AGENT-MODEL`, `PUSH`, `MASTER-SYNC` (Decisions 4 to 9). The design also covers the `ki` command surface and naming (Decision 7) and the default coordinator model and effort, which absorbs `COORD-WORDING` (Decision 8).
 
 ## Decisions made
 
@@ -43,5 +43,5 @@ None yet in this thread. The rules live in `/Users/krisbrown/workspaces/knowledg
 
 ## Next step
 
-1. On `PLAN` and `AGENT-MODEL`: launch the `ki agent` model and effort options in tools-ki, then write and commit the design brief in `Streams/Projects/ways-of-working/design/`, including the harness skills-review input in the Project note.
-2. Settle `COORD-WORDING`, `MASTER-SYNC` and `PUSH` with Kris.
+1. When `agent-model` and `brief` finish, launch the two independent reviews at high effort: Fable in Claude and Astra in Codex, read-only.
+2. Then a Fable max-effort merged report; bring its numbered decisions to Kris.
