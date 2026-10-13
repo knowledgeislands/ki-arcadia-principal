@@ -1,6 +1,6 @@
 ---
 note_type: streams/index
-updated: 2026-10-13T06:30:00Z
+updated: 2026-10-13T08:00:00Z
 author: Written with Claude
 ---
 
@@ -23,4 +23,4 @@ Two independent, read-only reviews of the brief, each with its own fact checks, 
 
 ## Report
 
-[[change-management-report]] merges the two reviews into one proposed model of six named units (Work, PMO, Delegation, Continuity, the design loop and Model policy), with corrections to the brief, an agree-and-differ table across all 28 points, a rollout plan with one pilot and eight tagged owner decisions. Every dispute is settled on cited evidence, not by vote; Kris's recorded decisions win wherever they bear on a point.
+[[change-management-report]] merges the two reviews into one proposed model of six named units (Work, PMO, Delegation, Continuity, the design loop and Model policy), with corrections to the brief, an agree-and-differ table across all 28 points, a rollout plan with one pilot and eight tagged owner decisions. Every dispute is settled on cited evidence, not by vote; Kris's recorded decisions win wherever they bear on a point. It was amended after the merge under Decision 10: a Models and environment section states which models and runtimes produced each stage and what that means for confidence, the loop and PMO gain a model-level floor and a degradation rule, and every proposed name is retested against the rule that a name conveys its purpose at a glance.
