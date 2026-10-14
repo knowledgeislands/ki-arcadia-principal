@@ -4,7 +4,7 @@ thread: techne.agent-host
 label: 'Techne: agent-host'
 state: active
 created_at: 2026-10-07T09:05:00Z
-updated_at: 2026-10-14T06:45:00Z
+updated_at: 2026-10-14T09:05:00Z
 ---
 
 # techne.agent-host
@@ -14,6 +14,16 @@ updated_at: 2026-10-14T06:45:00Z
 Reconstruct the `techne` working thread if its session is lost. Status, open records and ideas live in the [[agent-host]] Project note under the [[Initiatives/techne|Techne]] Initiative; this checkpoint copies none of them.
 
 The thread moves agent work off the laptop onto the one agent host the [Techne Programme Hold](<../../Admin/Governance/Policies/Techne Programme Hold.md>) exempts. It delivers the durability rollout of [[ODR-KI-ARCADIA-001-keeping-work-safe-on-the-agent-host|ODR-KI-ARCADIA-001]] and the workstation rollout of [[ADR-KI-ARCADIA-003-the-agent-host-workstation-model|ADR-KI-ARCADIA-003]]. The [[baseline-rollout]] Project is separate and does not gate it. Mac Studio work belongs to the `mac-studio-bootstrap` thread.
+
+## Thread working rules
+
+Re-read this block and `ki-delegation` (background-run standard) after any compaction.
+
+- **Role:** coordinator for Techne: agent-host, run name `techne`. Quick checks and bookkeeping only in the thread; analysis, edits, tests and long waits go to `ki agent` background agents, waited on detached.
+- **Owner reports:** `#` banner (thread, links, window, state), then `## What has been done`, `## What is in progress` with `Outstanding - no action requested now`, `## Outstanding queries` (`### TAG - title`: Summary, Need from you, Recommendation), and one fenced `text` reply block. Complete every time; no output style shortens it.
+- **Quiet level:** timestamped one-line BST updates; minimal visible tool use; outcomes only, no command output, SHAs or narration. Say "background agents".
+- **Decisions:** log each owner decision with `ki agent decide techne` before acting; quote Kris only from the transcript.
+- **Standing rules:** explicit-path commits, no force-push or `--no-verify`; never prune or accept without approval, accept only through ki-accept; never print secrets; never touch hnr-org or its management account; Techne Programme Hold outside the agent-host exemption; burn the roadmap down, no new feature records; other threads' committed work may be pushed beneath ours when checks pass, naming it; connection-critical changes need a tested restore path; follow-up releases stop and ask first.
 
 ## Current state
 
@@ -33,7 +43,7 @@ ki-delegation read at 71d7a0fd
 - **Owner historical work.** TECHNE-TOOLS-OPS-016 (to be replaced by a `tools-rig` signed-release kind), TECHNE-TOOLS-OPS-018, TECHNE-TOOLS-OPS-019 and TECHNE-TOOLS-OPS-023 in the harness remain in the earlier triage snapshot; KI-HARNESS-GOV-170 (keep resolution targets local) is planned, draft, in `ki-agentic-harness`. These are outside this bounded tools sweep and are not re-audited here. The related tools queue is reconciled below.
 - **The Mac.** `terra`; chezmoi `rigProfile` is `laptop`; Tailscale is up.
 - **Launcher deliveries.** Launcher-held wait gates, config preservation/local relaunch and Capital stores/aliases were accepted and pruned under tools-burndown Decision 12. The historical ki 0.10.0 host pin still needs owner compatibility review before reuse; local launcher delivery does not prove that pin has changed on a host.
-- **Rebuild preparation.** Harness commit `bd2c0b1` (Decision 43) moved the host list, setup and guide to the `knowledge-islands` workspace layout. Setup and a second convergence ran; the second changed only four fast-forwards. One failure remains: ki-principal's OneDrive `sources` store cannot bind on vega, so its skill projections are missing there (SOURCES query). The decisions log runs to Decision 51.
+- **Rebuild preparation.** Harness commit `bd2c0b1` (Decision 43) moved the host list, setup and guide to the `knowledge-islands` workspace layout. Setup and a second convergence ran; the second changed only four fast-forwards. One failure remains: ki-principal's OneDrive `sources` store cannot bind on vega, so its skill projections are missing there (SOURCES query). The decisions log runs to Decision 57.
 - **Firewall (FYI from Rig, 2026-10-14).** KI-TOOL-RIG-CORE-047 (macOS) and KI-TOOL-RIG-CORE-051 (Linux nftables) are delivered and awaiting review, owned by `mac-studio-bootstrap`; not planned or implemented here or from tools-burndown. The agent-host handoff KI-TECHNE-OPS-026 was merged on 2026-10-14 into [KI-TECHNE-OPS-018](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/roadmap/KI-TECHNE-OPS-018-converge-tools-through-rig.md) (held; the vega-rebuild half of its condition is now met).
 - **Related tools queue.** [KI-TOOL-KI-CLI-115](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-115-enforce-roadmap-writing-checkout.md) writing-checkout guard and [KI-TOOL-TECHNE-CLI-006](/Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-006-guarded-host-commands.md) remain adopted draft Hold. [KI-TOOL-TECHNE-CLI-008](/Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-008-host-patching-fields.md) is done (Decision 43). Dock belongs to Rig; no broad agent-host or Programme Hold resume.
 - **Durable procedure and inputs.** The [operator runbook](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/guides/operator/agent-host.md), [recipe manifest](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/recipes/agent-host/recipe.toml), [stack template](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/infra/aws/agent-host-stack.yaml) and `operations/aws/agent-host/` scripts own the procedure, reviewed at Harness `11adc5d625d102f808d306002916457116595264`. Re-read current sources before execution. The [prepared report](/Users/krisbrown/.local/state/ki/agents/tools-burndown/vega-rebuild-plan.report.md) and [readiness snapshot](/Users/krisbrown/.local/state/ki/agents/tools-burndown/vega-readiness.json) support this checkpoint; they are not its sole future authority.
@@ -69,10 +79,10 @@ This handoff unit changes only this checkpoint and the estate-factorisation chec
 
 For Kris:
 
-- **SOURCES (deferred 2026-10-14; researched under Decision 51):** vega cannot bind ki-principal's OneDrive `sources` store, so `ki repo repair` stops before projecting skills there. The [research report](/Users/krisbrown/.local/state/ki/agents/techne/sources-research.report.md) found the Knowledge Islands store empty and unused, so the impact on vega is only the repair fault; Legal (23 GB), TechMedix and Personal depend on their stores, but none is on vega. Awaiting Kris on three queries: SRC-STOPGAP (bind vega's `sources` to an empty read-only local directory, in session), SRC-REPAIR (capture a tools-ki defect so repair, open and the VS Code workspace degrade when a store is absent), SRC-SCOPE (keep vega Knowledge Islands-only and defer cross-host sync; Syncthing sol to host, receive-only, when a territory and host are named). Rejected: a Linux OneDrive client (whole-drive personal token), two-way sync, Git LFS, and object storage while the hold stands.
+- **SOURCES (Decisions 53-55, 2026-10-14):** vega stays Knowledge Islands-only; cross-host sync deferred until a territory and host are named. Stopgap (empty read-only binding on vega plus runbook note) and the tools-ki missing-store defect capture are running as background agents `src-stopgap` and `src-repair`. [Research report](/Users/krisbrown/.local/state/ki/agents/techne/sources-research.report.md).
 - **RIG-LINK:** `~/.local/bin/rig` links to the retired `~/workspaces/kit/knowledgeislands/tools-rig` path and is broken; it belongs to the Rig thread. (`~/.local/bin/techne` was relinked with `install.sh --link` on 2026-10-14.)
-- **TS-OAUTH:** captured as unadopted triage [KI-TECHNE-OPS-027](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/roadmap/KI-TECHNE-OPS-027-agent-host-tailscale-key-minting.md) (Decision 50), pushed. Awaiting TS-OAUTH-ADOPT; recommended Later.
-- **DEV-MODE:** Kris asked whether each CLI tool gets a `dev` subcommand or one tool switches tools between local checkouts and releases. Recommended (a): Rig owns `rig dev local|release <tool>`, each tool keeps `install.sh --link` as its hook, checkouts found through `ki registry`, per tool by default with an all option; hand off to the Rig thread via state-of-play. Awaiting Kris.
+- **TS-OAUTH:** [KI-TECHNE-OPS-027](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/roadmap/KI-TECHNE-OPS-027-agent-host-tailscale-key-minting.md) adopted at horizon now (Decision 56); local implementation (`ts-oauth-impl`) launches after `src-stopgap`, which edits the same runbook. Kris creates the OAuth client; no remote change until then.
+- **DEV-MODE:** Kris chose (a) (Decision 57): Rig owns `rig dev local|release <tool>`. Handed to the Rig thread via state-of-play on 2026-10-14; outstanding until Kris says it is done.
 
 Owned-host exemption for the Mac Studio is handled by KI-ARCADIA-GOV-033 in the `mac-studio-bootstrap` thread.
 
@@ -80,4 +90,4 @@ Owned-host exemption for the Mac Studio is handled by KI-ARCADIA-GOV-033 in the 
 
 ## Next step
 
-vega is rebuilt, signed in and reachable as `vega` from the Mac (chezmoi binding, SSH and Zed entries applied and pushed 2026-10-14). Awaiting Kris on SRC-STOPGAP, SRC-REPAIR, SRC-SCOPE, TS-OAUTH-ADOPT and DEV-MODE; then act on each through background agents. The rebuild procedure is in the [operator runbook](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/guides/operator/agent-host.md).
+Collect `src-stopgap` and `src-repair`, then launch `ts-oauth-impl` (prompt drafted at `~/.local/state/ki/agents/techne/ts-oauth-impl.draft.md`). vega is rebuilt and reachable as `vega`; the rebuild procedure is in the [operator runbook](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/guides/operator/agent-host.md).
