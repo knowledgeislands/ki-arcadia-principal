@@ -31,3 +31,35 @@
 ## Decision 8 (2026-10-14T20:29:01Z)
 
 - 2026-10-14 Kris: "we are getting close to our token limits and we have already hit the limit on fable. try to prioritise work that is more mechanical and on a lower model level to optimise what we have left until a reset."
+
+## Decision 9 (2026-10-14T21:18:50Z)
+
+- 2026-10-14 Kris, SPIRIT: "Move all 18 Personal - Spirituality conversations to sacred-inquiry as one project, one package per conversation, on Haiku; Sacred Inquiry's receiver may return the relationship conversation to personal later; update KI-HARNESS-OPS-005's binding."
+
+## Decision 10 (2026-10-14T21:18:50Z)
+
+- 2026-10-14 Kris, TOWER-RECORDS: "Keep acquire's routing checkpoint as the routing authority and leave the 15 Tower Game packages unchanged."
+
+## Decision 11 (2026-10-14T21:18:50Z)
+
+- 2026-10-14 Kris, ORPHANS: "Leave the 77 orphan export files listed only."
+
+## Decision 12 (2026-10-14T21:18:50Z)
+
+- 2026-10-14 Kris, ACQ-HANDOFF: "Launch handoff-review now on Sonnet at low effort, read-only: review KI-TOOL-KI-CLI-128, both Acquire drafts and acquire-intake's prepare-approved-next-scopes report, and report to +/_THREADS/knowledge-acquisition/."
+
+## Decision 13 (2026-10-14T21:18:50Z)
+
+- 2026-10-14 Kris, GRANOLA-PLAN: "Close GRANOLA-PLAN and GRANOLA-CARRIER once handoff-review confirms KI-TOOL-KI-CLI-128 covers the reset data-loss risk."
+
+## Decision 14 (2026-10-14T21:18:50Z)
+
+- 2026-10-14 Kris, BINARY-PROOF: "Close BINARY-PROOF as accepted; the iPhone check stays with me as KB-ACQUIRE-003 sets out."
+
+## Decision 15 (2026-10-14T21:18:51Z)
+
+- 2026-10-14 Kris, START-MOD-006: "Queue KI-PRINCIPAL-MOD-006 through ki-implement to start once both the scoped commit check has landed in ki-principal and the token reset has happened."
+
+## Decision 16 (2026-10-14T21:18:51Z)
+
+- 2026-10-14 Kris, DIAGRAMS: "Ask ways-of-working to check its PRINCIPAL-HTML decision and, unless it says keep, remove +/diagrams/change-management-skills/ from ki-principal."
