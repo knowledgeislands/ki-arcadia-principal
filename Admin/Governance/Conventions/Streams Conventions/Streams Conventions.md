@@ -23,4 +23,4 @@ Identifiers are reserved by committing the `_ISSUES.md` high-water mark advance 
 
 ## Authority
 
-The canonical container and routing are defined by `ki-repo-kb-streams`. `ki-repo-kb-activities` owns Activity definitions; `ki-work-housekeeping` owns opted-in recurrence. The shared change-management skills own record lifecycle, planning, delivery, review, and closure.
+The canonical container and routing are defined by `ki-repo-kb-streams`. `ki-repo-kb-activities` owns Activity definitions; `ki-work-recurring` owns opted-in recurrence. The shared change-management skills own record lifecycle, planning, delivery, review, and closure.

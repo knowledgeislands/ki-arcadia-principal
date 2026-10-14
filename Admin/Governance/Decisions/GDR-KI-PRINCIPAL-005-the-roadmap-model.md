@@ -3,7 +3,7 @@ note_type: admin/governance/decision
 id: GDR-KI-PRINCIPAL-005
 title: 'The roadmap model'
 date: 2026-10-07
-updated: 2026-10-10
+updated: 2026-10-14
 status: current
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/gdr
 decision_type: governance
@@ -31,7 +31,7 @@ Knowledge Islands records work under one roadmap model.
 
 - The `ki-work-roadmap` standard and checker in `ki-agentic-harness` carry the model, and `tools-ki` reads it.
 - Done records are pruned rather than kept as history.
-- A Project or Initiative is shaped through the `ki-design-loop` process skill, and this record changes in place when the model does.
+- A Project or Initiative is shaped through the `ki-pmo-design` process skill, and this record changes in place when the model does.
 
 ## References
 
