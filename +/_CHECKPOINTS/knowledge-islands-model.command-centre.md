@@ -12,6 +12,7 @@ updated_at: 2026-10-14T21:18:44Z
 **Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
 
 - 2026-10-14 · AREAS-DISPATCH · Kris's areas of 14 October (the Observatory as host command centre, inter-agent pub-sub, a single pane of glass with agents advertising themselves, and token economics shown in it) are added as ideas for evaluation under Notes in the [Command centre Project note](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/command-centre.md); whether this Project absorbs them and reshapes its Outcome is Kris's open OBS-MERGE · detail: [areas-glass report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/state-of-play/areas-glass.report.md)
+- 2026-10-14 · OBS-MERGE · Kris kept one Project and reshaped this Project's Outcome: "the Observatory on each host: Instruments, Beacon and Bridge; a read-only Sessions view as the pane of glass, showing token use per run and per thread and each account's 5-hour and 7-day windows; later a messaging endpoint on each host linked over the tailnet, with ntfy as the stopgap question in Notes. Ways-of-working keeps the event contract, including advertisement and usage fields; apps-observatory keeps the product." The [Command centre Project note](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/command-centre.md) now carries it; take it into this thread's Objective · detail: [state-of-play decisions](/Users/krisbrown/.local/state/ki/agents/state-of-play/decisions.md)
 
 ## Objective
 

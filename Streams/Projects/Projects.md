@@ -1,6 +1,6 @@
 ---
 note_type: streams/index
-updated: 2026-10-11T02:41:04Z
+updated: 2026-10-14T22:50:00Z
 author: Written with Claude
 ---
 
@@ -20,6 +20,12 @@ Links point upwards only: a work record names its Project, and a Project names i
 
 ---
 
+## AI observability
+
+[[ai-observability]] decides how AI-tooling use, token use above all, is measured and attributed per run, per thread and per account, OTLP included. It sits under [[platform-foundations|Platform foundations]].
+
+---
+
 ## Agent host
 
 [[agent-host]] moves agent work into the Techne footprint on an agent host, modelled as harness-defined recipes and person-owned bindings, within the standing exemption from the Techne Programme Hold.
@@ -34,7 +40,7 @@ Links point upwards only: a work record names its Project, and a Project names i
 
 ## Command centre
 
-[[command-centre]] gives Kris one vocabulary and model for the command centre across the harness, Observatory, hnr-principal and legal-principal, with one read-only state-of-play view. "Council" stays Knowledge Islands Principal's governance body.
+[[command-centre]] makes the Observatory on each host Kris's command centre - Instruments, Beacon and Bridge, a read-only Sessions view with token use and account windows, and later a messaging endpoint per host over the tailnet - running one shared vocabulary and model. "Council" stays Knowledge Islands Principal's governance body.
 
 ---
 
@@ -47,6 +53,12 @@ Links point upwards only: a work record names its Project, and a Project names i
 ## Estate factorisation
 
 [[estate-factorisation]] finishes factorising the estate: structure vocabulary, ownership seams, MCP policy evidence, a single OpenAI housekeeping product, distribution and per-repository alignment. The note carries the phases and their gates.
+
+---
+
+## Host network
+
+[[host-network]] decides how hosts and services are set up and addressed on the tailnet: naming, name URLs, ACLs and tailnet-only listeners. It sits under [[rig|Rig]].
 
 ---
 
