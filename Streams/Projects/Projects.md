@@ -38,6 +38,12 @@ Links point upwards only: a work record names its Project, and a Project names i
 
 ---
 
+## chezmoi
+
+[[chezmoi]] works the open KB-DOTFILES-UE records in the chezmoi source, keeping the workstation accurate, tidy and observable. Its records live in the chezmoi roadmap. It sits under [[rig|Rig]].
+
+---
+
 ## Command centre
 
 [[command-centre]] makes the Observatory on each host Kris's command centre - Instruments, Beacon and Bridge, a read-only Sessions view with token use and account windows, and later a messaging endpoint per host over the tailnet - running one shared vocabulary and model. "Council" stays Knowledge Islands Principal's governance body.

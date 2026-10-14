@@ -9,6 +9,10 @@ updated_at: 2026-10-14T20:30:00Z
 
 # rig.chezmoi
 
+**Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
+
+- 2026-10-14 · CHEZMOI-PROJECT - registered at Streams/Projects/chezmoi.md; link your report heading to it.
+
 ## Objective
 
 Work the open KB-DOTFILES-UE records in the chezmoi source (`~/.local/share/chezmoi`, GitHub `krisb/dotfiles`), keeping the workstation accurate, tidy and observable under the [Rig](../../Streams/Initiatives/rig.md) Initiative. chezmoi does not declare `ki-checkpoint`, so this thread's checkpoint lives in Arcadia.
