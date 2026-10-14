@@ -1,12 +1,12 @@
 ---
 note_type: streams/design
-updated: 2026-10-14T09:10:00Z
+updated: 2026-10-14T11:20:00Z
 author: Written with Claude
 ---
 
 # Thread banner and re-anchoring
 
-Design only, for Kris to sanity-check before anything is built. It answers the Master's relay of Kris's request: "every coordination-thread summary or owner report ends with a multi-line status banner modelled on the ki-recap banner. The banner states plainly whether the thread is AT REST (all work concluded, nothing in progress, no open queries) or not, and why. The banner carries one copyable resume line Kris can paste back into the thread later", and the hooks-diagnose finding that "after compaction the shape itself is what gets lost". Kris's Decision 174 at the Master gives this thread "the whole thread-working model - how coordination threads work, their skills, hooks, the banner, re-bootstrap and inter-thread messaging".
+Design only, for Kris to sanity-check before anything is built. Amended after the Master's Decision 175 relay: BANNER-MARK is confirmed, the resume line is weighed as a compaction, and the messaging interface now covers where Kris sees cross-session work. It answers the Master's relay of Kris's request: "every coordination-thread summary or owner report ends with a multi-line status banner modelled on the ki-recap banner. The banner states plainly whether the thread is AT REST (all work concluded, nothing in progress, no open queries) or not, and why. The banner carries one copyable resume line Kris can paste back into the thread later", and the hooks-diagnose finding that "after compaction the shape itself is what gets lost". Kris's Decision 174 at the Master gives this thread "the whole thread-working model - how coordination threads work, their skills, hooks, the banner, re-bootstrap and inter-thread messaging".
 
 Sources: the `ways-of-working` decisions log, the Master's [hooks-diagnose report](/Users/krisbrown/.local/state/ki/agents/state-of-play/hooks-diagnose.report.md), the `ki-recap` [completion banner](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/skills/change-management/ki-recap/references/standards-session-recap.md), the `ki-delegation` [background-run standard](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/skills/governance/ki-delegation/references/standards-background-runs.md) at harness revision `d4e2d8e8`, and [coordinator-reminder.sh](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/hooks/coordinator-reminder.sh) with its test.
 
@@ -38,7 +38,7 @@ Resume KI Model: ways-of-working under ki-delegation since 2026-10-14T09:04Z: re
 │  THREAD NOT AT REST · KI Model: ways-of-working  │
 │  running: harness-push                           │
 │  queued: mark-tidy, apps-sweep, principal-enact  │
-│  waiting on you: KI-RELEASE, BANNER-MARK         │
+│  waiting on you: KI-RELEASE, RESUME-COMPACT      │
 ╰──────────────────────────────────────────────────╯
    ways-of-working · mark 2026-10-13T04:03Z · decisions log at Decision 50
    checkpoint committed, 1 commit unpushed · banner 2026-10-14T09:04Z
@@ -75,6 +75,10 @@ The thread name on the line is a guard: a thread whose checkpoint label does not
 | Thread name | The checkpoint `thread` id, for example `knowledge-islands-model.ways-of-working`; its last segment is the run name; the Claude session is named the same | Convention, no registry | `ki-delegation` Project threads | `ki agent status` lists runs; Claude `ListAgents` lists sessions by that name |
 | Thread message | Short dated note from one thread to another, tagged, quoting the owner where it carries a decision | Carries work or decisions, never authority beyond the owner's | `ki-delegation`, new subsection under Project threads | Lands in the target's inbox; a live Claude target also gets a nudge |
 | Inbox | `~/.local/state/ki/agents/<run>/inbox.md`, numbered and dated entries | Runtime state, machine-local; decisions it carries are also logged durably by the receiver | `ki-delegation` names it; `ki agent decide --log` writes it today | Read by take stock, by re-anchoring and announced by the owner-message hook |
+| Visible-progress rule | A backend reply or inbox ack is progress only once it is on a surface Kris looks at | Governs what a thread may call done or acked; changes no mechanism | `ki-delegation`, Project threads, beside the message shape | Sender keeps the item under Needs until visible; receiver writes it into its next owner turn and checkpoint |
+| Thread status line | `~/.local/state/ki/agents/<run>/thread.status`, one line: time, state word, what it is doing or waiting on | Runtime, machine-local; mirrors the banner, never replaces it | `ki-delegation` names it; the thread writes it at each owner report and banner | `ki agent status` reads it once tools-ki lists threads beside runs; ECO-012 may read it as an event source |
+| Red x recovery | Three-step procedure: resume line into the same thread, else a new thread named by the thread id, then report what was missed | Recovery only; makes no decision and re-sends no message | `ki-delegation` Thread working rules, beside Re-anchoring | Uses the resume line and the inbox; its `recovered <UTC>` evidence line is the banner's |
+| Resume compaction | Optional `/compact <keep list>` first paste before the resume line | Runtime command, ends the turn; never part of the resume line itself | `ki-delegation` Reporting, as an option beside the resume line | Fires the compact hook pointer; the resume line does the rest |
 
 ## 3. Proposed text placement
 
@@ -129,17 +133,60 @@ The design makes the inbox the channel and the nudge an optimisation, so one mec
 - **Codex:** same inbox and ack path. The Codex hook announces unread entries on the next owner message. Where the thread is idle, the sender gives Kris the resume line of the target in a code block; Kris pastes it and the thread takes stock. No special casing beyond the absent nudge.
 - **Later, not now:** `ki agent send <run> <text>` in tools-ki to replace the `--log` idiom, and the inbox moving with the decisions log under `+/_THREADS/`. Both are captured when the interim has run for a few days, under the burn-down rule.
 
-## 5. BANNER-MARK, provisional
+### 4.1 Where Kris sees it
 
-The Master read Kris's "start by creating a mark and re-putting the summary" as: the resume line first strikes a checkpoint mark, then re-outputs the summary. This design uses that order (step 2 then step 3 above). Consequence: the summary re-output is the Summary form (since last message), so it does not depend on the mark, and the next "recap" covers from the resume. Outstanding items carry forward across marks, so nothing is dropped.
+Finding, Kris at the Master's Decision 175: "Kris sees no Zed rendering of cross-session messages: the threads appear idle, or show x (failed) since the outage, although their backends replied. The messaging interface goes to ways-of-working." Zed's ACP client renders only the owner's turns and the thread's replies to them. A `SendMessage` the thread receives, and the reply it sends back, go between backends and never appear in the transcript, so in the sidebar the thread shows idle on its last owner instruction, or a red x where its backend errored during the Headroom proxy outage of 08:49-09:46 BST.
+
+**Rule: a backend reply is not visible progress.** A reply to a `SendMessage`, or an inbox ack, counts as progress only once it is on a surface Kris looks at. The receiving thread writes what it did into its next owner-facing turn and its checkpoint; the sending thread keeps the item under Needs, and says "acked by backend, not yet visible", until that happens. Neither thread tells Kris an item is done on the strength of a backend reply.
+
+**Surfaces, and what each carries:**
+
+| Surface | Carries | Who writes it | When |
+| --- | --- | --- | --- |
+| Zed transcript | Owner turns and the thread's own replies; nothing injected | The thread, in its owner report | Every owner-facing turn names messages received and acked since the last one, under a `Messages` line in Summary |
+| Checkpoint | `Current state` line `Messages: read to entry <n> at <UTC>`; open Needs tags from messages | The thread, under `ki-checkpoint` | At each checkpoint update and at the mark |
+| Thread status line | `~/.local/state/ki/agents/<run>/thread.status`: one line, `HH:MM <zone> - <state word> - <what it is doing or waiting on>` | The thread, at each owner report and each banner | Read by `ki agent status`, which today lists runs only; listing threads beside runs is a small tools-ki follow-on |
+| Notification | Message received, ack sent, thread recovered, thread errored | Not this design | Routed to [KI-PRINCIPAL-ECO-012](../../../Roadmap/KI-PRINCIPAL-ECO-012-notification-strategy-for-delegated-work.md), which owns the channel (Telegram first, coordinating thread meanwhile); this design only names the four events so that record can carry them |
+
+Until ECO-012 delivers, the checkpoint and the thread status line are the surfaces that survive a thread being idle, and the Zed transcript is the one Kris reads first. The nudge stays: a `SendMessage` still wakes a live Claude thread even though Kris never sees it; what the woken thread must not do is treat its reply to the nudge as having reported to Kris.
+
+**Recovering a thread showing a red x.** The red x means the backend turn errored, not that the thread is lost: the checkpoint, decisions log and inbox hold everything it needs.
+
+1. Do not open a new thread first. Paste that thread's resume line into the same Zed thread. If the thread replies, it re-anchors, strikes the mark, re-outputs its summary and takes stock, and the inbox gives it every message the outage swallowed.
+2. If Zed will not send into the thread, open a new thread in the same project folder, and paste the resume line. The name on the line and the checkpoint label match, so the guard passes; the thread names its session after its thread id and the old transcript becomes history.
+3. The recovered thread reports, under take stock, what it missed and what it did about it, and its banner says `recovered <UTC>` on the second evidence line for that one report.
+
+Messages sent during an outage need no re-send: the inbox is the channel, the nudge is lost, and the resume line's take stock reads the inbox. A sender that only nudged without writing the inbox entry has not sent the message.
+
+## 5. BANNER-MARK, confirmed, and the resume line as a compaction
+
+Kris at the Master's Decision 175: "BANNER-MARK: confirmed. The resume line is the equivalent of a compaction for the checkpoint and coordination thread, and may also trigger a real compaction." The resume line therefore strikes the mark first and re-outputs the summary second (steps 2 and 3 above), and this is no longer provisional. The summary re-output is the Summary form (since last message), so it does not depend on the mark, and the next recap covers from the resume. Outstanding items carry forward across marks, so nothing is dropped.
+
+### 5.1 Option RESUME-COMPACT: the resume line triggers a real compaction
+
+Claude Code accepts `/compact <instructions>`: it summarises the transcript, keeping what the instructions name, and the `SessionStart` hook then fires with `source: compact`, which is where the re-anchoring pointer is injected. Codex CLI has its own `/compact`, which summarises without instructions. Two facts shape the option. First, `/compact` ends the turn: the runtime compacts and waits, so the instructions shape the summary but do not drive the five steps. Second, after a compaction the summary in step 3 is rebuilt from the checkpoint and the decisions log rather than re-output from memory, which is the no-transcript reconstruction `ki-checkpoint` is for, at the cost of detail that was only in the transcript.
+
+So the option is a two-line resume block rather than a longer single line. The first line is optional; the second is the resume line as it stands:
+
+```text
+/compact Keep verbatim: thread id, Thread working rules block, mark, open Needs tags, running and queued agents, messages read to entry.
+```
+
+```text
+Resume KI Model: ways-of-working under ki-delegation since 2026-10-14T09:04Z: re-bootstrap, mark, summary, take stock, restart work given since, then banner.
+```
+
+**Proposed test, Zed pass-through.** Kris runs it in a throwaway Claude Code thread in Zed with a dozen turns of filler, never in a coordination thread:
+
+1. Type `/` in the Zed agent panel. If `compact` appears in the completion list, the Claude Code ACP adapter advertises it and Zed will send it as a command.
+2. Send `/compact Keep only the words APPLE and PEAR.` Pass: the context indicator in the panel drops, and a follow-up `What do you remember?` returns the two words and not the filler. Fail: the reply treats the line as prose, the indicator does not move, and the filler is still remembered.
+3. Once the hook change in section 3 ships, the pass case also shows the re-anchoring pointer in the thread's next turn, which proves the `source: compact` path in Zed as well.
+
+The same three steps in a Codex thread in Zed test the Codex adapter; the Codex control is `/compact` in the Codex CLI itself. An agent cannot drive Zed, so the control for Claude is the Claude Code terminal, where `/compact <instructions>` is documented; the only agent-runnable part is the hook test in section 3.
+
+**Recommendation.** Keep the resume line a single paste that does not compact, and offer the `/compact` line as an optional first paste Kris uses when the thread is long or has just recovered from an error. Reasons: the two cannot be one line because `/compact` ends the turn; the mark and the summary already give the checkpoint and the coordination thread their logical compaction, which is what Kris named; and a compaction that is not needed throws away transcript detail for nothing. If the Zed test fails, nothing in the design changes: the second line still works and the first is simply unavailable in Zed.
 
 ## 6. Open questions for Kris
-
-### BANNER-MARK - mark before summary
-
-- Summary: the resume line strikes the mark first, then re-outputs the summary.
-- Need from you: confirm the order, or say summary first.
-- Recommendation: confirm. The pasted line is the owner saying "mark", and the summary is the since-last-message form, so the order costs nothing.
 
 ### BANNER-FRAME - framed like ki-recap, or plain lines
 
@@ -177,8 +224,28 @@ The Master read Kris's "start by creating a mark and re-putting the summary" as:
 - Need from you: approve the environment-variable split.
 - Recommendation: approve. The variable is present in this session and in Zed; the test suite fakes it.
 
+### RESUME-COMPACT - does the resume line also compact
+
+- Summary: `/compact` ends the turn, so it cannot sit on the resume line; the option is an optional `/compact <keep list>` first paste, with the Zed pass-through test in section 5.1.
+- Need from you: choose one of: resume line alone (default), optional first paste when the thread is long, or always compact first; and whether you run the Zed test or want it left until the hook change ships.
+- Recommendation: optional first paste, your call per resume. Run the Zed test once in a throwaway thread; it takes two minutes and settles whether Codex and Claude threads in Zed can be compacted by paste at all.
+
+### SURFACE - where cross-session work shows
+
+- Summary: a backend reply is not visible progress; messages reach you through the thread's next owner turn (a `Messages` line in Summary), the checkpoint, a one-line thread status file, and later a notification under KI-PRINCIPAL-ECO-012.
+- Need from you: approve the rule and the four surfaces, and say whether the thread status line is worth the tools-ki follow-on to list threads beside runs in `ki agent status`.
+- Recommendation: approve. The rule stops a thread calling a handoff done because another backend said so; the status line costs one write per report and gives `ki agent status` a view of live threads without Zed.
+
+### REDX - recovering a thread showing a red x
+
+- Summary: paste the thread's resume line into the same Zed thread; if Zed will not send, open a new thread in the same folder and paste it there; the thread reports what it missed and marks the banner `recovered`.
+- Need from you: approve the procedure, or say a red x thread should always be replaced by a new one.
+- Recommendation: approve. The same-thread paste keeps the transcript where it was; the checkpoint and inbox make the new-thread fallback lossless either way.
+
 ```text
-BANNER-MARK - confirm: mark first, then summary
+RESUME-COMPACT - optional first paste; run the Zed test
+SURFACE - approve the rule and the four surfaces; status line yes
+REDX - approve the procedure
 BANNER-FRAME - frame
 RESUME-GUARD - keep the thread name on the line
 AT-REST - agree: held and parked items do not block
