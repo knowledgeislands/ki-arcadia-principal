@@ -14,7 +14,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-13T23:35:00Z
-updated_at: 2026-10-14T06:52:07Z
+updated_at: 2026-10-14T09:20:04Z
 ---
 
 # Decision Citation and Run-Folder Sweep
@@ -35,6 +35,8 @@ A read-only inventory of the machine's run folders on 2026-10-13, kept as workin
 
 This record is captured from Kris's answers and is not adopted, planned or implemented by it.
 
+Kris read a numbered citation in a thread summary on 2026-10-14 and said, as relayed by the master thread: "has no meaning to me because I don't know what the decision was ... and I don't know where the list is. I thought we'd looked at changing the way that decisions were recorded like this so that they became durable knowledge." The master thread's relay places the sweep: "tools-ki launcher change and ki-principal run-folder sweep stay with their owners as handoffs named in the plan." Kris then placed the subject: "everything to do with the decisions log belongs to ways-of-working". This record is therefore planned by the `ways-of-working` thread.
+
 ## Boundary
 
 - The citation sweep: each listed file, in whichever repository, rewritten so the decision is described in the owner's words and dated, with the number removed; each repository commits its own change under its own authority, and this record tracks the whole.
@@ -46,41 +48,75 @@ This record is captured from Kris's answers and is not adopted, planned or imple
 
 ## Current state
 
-Not yet grounded. `ki-plan` records the current source facts before Ready.
+Grounded on 2026-10-14 at this island's `024625d`, harness `86744bfd`, `tools-ki` `7e3c05f`, with `ki-techne-harness` and `tools-techne` read at their primary checkouts the same day:
+
+- Files that match `Decision [0-9]+` today, confirmed by `git grep` in each repository. In this island: `Streams/Initiatives/rig.md` and its `knowledge-islands-model/design/territory-selection-report.md`; `Streams/Projects/agent-host.md` and its design folder's `design.md`, `rig-techne-boundary-audit.md` and `workstation-bundle-walkthrough.md`; the Project notes `baseline-rollout.md`, `delta-evaluation.md`, `island-model-and-tending.md`, `paperclip-bootstrap-and-recovery.md`, `roadmap-model.md`, `secrets-hygiene.md` and `website.md`; the `ways-of-working` design folder's `change-management-brief.md`, both change-management reviews, `roadmap-sizing-and-burn-down.md` and `thread-banner-and-re-anchoring.md`; and [KI-PRINCIPAL-ECO-012](KI-PRINCIPAL-ECO-012-notification-strategy-for-delegated-work.md). [KI-PRINCIPAL-ECO-013](KI-PRINCIPAL-ECO-013-pmo-extraction-pilot.md) no longer matches. In the harness: [KI-HARNESS-GOV-168](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-168-roll-out-ki-pin-receivers.md), [KI-HARNESS-GOV-170](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-170-keep-resolution-targets-local.md), [KI-HARNESS-GOV-171](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-171-standing-surface-design-rules.md), [KI-HARNESS-GOV-178](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-178-repair-checkpoint-configuration.md), [KI-HARNESS-OPS-005](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-005-acquire-ai-sessions.md) and `skills/environment/ki-tokenomics/references/sources.md`. In `tools-ki`: [KI-TOOL-KI-CLI-115](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-115-enforce-roadmap-writing-checkout.md) and [KI-TOOL-KI-CLI-125](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-125-ki-release-contract.md). In `ki-techne-harness`: `KI-TECHNE-OPS-018`, `019`, `023`, `024` and `027`. In `tools-techne`: `KI-TOOL-TECHNE-CLI-006` and `008`.
+- Not every match is a citation. Quotations of Kris's own words, such as "Decisions 19 and 20 of the ways-of-working run" in this record's Context, and quotations of the standard's old rule in [KI-HARNESS-GOV-180](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-180-tracked-thread-decisions-home.md) are evidence and stay. The sweep rewrites a number used as authority, not a number inside a quotation.
+- The `ki-delegation` skill's own files that cite by number, its standard, `SKILL.md`, `assets/run-prompt.md` and `references/sources.md`, are rewritten by the harness's tracked thread decisions home record, not here; the harness's `ki-tokenomics` sources file is swept here.
+- The eight folders proposed for reconcile-then-archive are unchanged since the inventory: `island-model-and-tending`, `legal-bounded-tidy-20261011`, `legal-fr-oct12`, `sacred-inquiry-state-of-play`, `techne`, `tools-burndown`, `vallearmonia-community-presence` and `vallearmonia-youtube`. The `ways-of-working` run is live, and Kris placed its log on 2026-10-14: "everything to do with the decisions log belongs to ways-of-working". That thread reconciles its own log at its own close; this record does not read it.
+- `ki agent close` does not exist in installed `ki` 0.10.1. The `tools-ki` plan delivers `decide --home`, `reconcile` and `close` with a gate that blocks on any decision without a durable home, archives to `$KI_STATE_HOME/agents/_archive/<run>/` by default and deletes only with `--delete`.
+- Kris read a numbered citation in a thread summary on 2026-10-14 and said, as relayed by the master thread: "has no meaning to me because I don't know what the decision was ... and I don't know where the list is. I thought we'd looked at changing the way that decisions were recorded like this so that they became durable knowledge." The citation sweep is the committed half of that change.
 
 ## Steps
 
-- [ ] Plan this record under `ki-plan` before Ready, replacing these placeholder sections.
+Each repository commits its own change under its own authority; this record tracks the whole and the island's thread delivers it.
+
+### Citation sweep, repository by repository
+
+- [ ] Re-run `git grep -nE 'Decision(s)? [0-9]+' -- .` in each repository above and classify each match as a citation to rewrite or a quotation to keep, listing the classification in this record's Discussion before editing.
+- [ ] For each citation, read the decision in the run's log, in the state folder or the thread's tracked folder, and replace the number with the owner's operative words, dated, and the name of the file that holds the rest; where the log entry quotes nothing, describe the decision and date it. A Project note or design file is edited only in the sentence that cites; checkpoints under `+/_CHECKPOINTS/` are not edited.
+- [ ] This island: one commit, `docs(streams): describe cited decisions in the owner's words`. Harness: one commit touching the four roadmap records and `ki-tokenomics` sources, after the harness's own `ki-delegation` rewording has landed so the two do not collide. `tools-ki`: one commit for its two records. `ki-techne-harness` and `tools-techne`: one commit each, by this island's agent under the cross-repository handoff rule, or handed to those repositories as Kris decides below.
+- [ ] Push each repository fast-forward under the thread's standing push permission.
+
+### Run-folder sweep, after `ki agent close` is installed
+
+- [ ] For each of the eight folders, read `decisions.md`, and for each in-force decision find or create its durable home and record it with `ki agent reconcile <run> <number> <home>`; read each `<name>.report.md` of an agent that exited without `DONE` and note in this record's Discussion what it reported and what, if anything, it changes; leave `legal-bounded-tidy-20261011` and `legal-fr-oct12` to the legal territory's own thread, which runs the same steps there.
+- [ ] Run `ki agent close <run>` for each of the six island folders; on a blocker, resolve it or list it under Discussion for Kris, and never pass `--reconciled` or `--delete` without Kris's word.
+- [ ] Record each archive's `close.md` path in this record's Discussion.
 
 ## Files touched
 
-Not yet planned.
+- This island: `Streams/Initiatives/rig.md`, `Streams/Initiatives/knowledge-islands-model/design/territory-selection-report.md`, `Streams/Projects/agent-host.md`, `Streams/Projects/agent-host/design/design.md`, `Streams/Projects/agent-host/design/rig-techne-boundary-audit.md`, `Streams/Projects/agent-host/design/workstation-bundle-walkthrough.md`, `Streams/Projects/baseline-rollout.md`, `Streams/Projects/delta-evaluation.md`, `Streams/Projects/island-model-and-tending.md`, `Streams/Projects/paperclip-bootstrap-and-recovery.md`, `Streams/Projects/roadmap-model.md`, `Streams/Projects/secrets-hygiene.md`, `Streams/Projects/website.md`, `Streams/Projects/ways-of-working/design/change-management-brief.md`, `Streams/Projects/ways-of-working/design/change-management-review-astra.md`, `Streams/Projects/ways-of-working/design/change-management-review-fable.md`, `Streams/Projects/ways-of-working/design/roadmap-sizing-and-burn-down.md`, `Streams/Projects/ways-of-working/design/thread-banner-and-re-anchoring.md`, `Streams/Roadmap/KI-PRINCIPAL-ECO-012-notification-strategy-for-delegated-work.md`, and this record's Discussion.
+- Harness: `docs/roadmap/KI-HARNESS-GOV-168-roll-out-ki-pin-receivers.md`, `KI-HARNESS-GOV-170-keep-resolution-targets-local.md`, `KI-HARNESS-GOV-171-standing-surface-design-rules.md`, `KI-HARNESS-GOV-178-repair-checkpoint-configuration.md`, `KI-HARNESS-OPS-005-acquire-ai-sessions.md` and `skills/environment/ki-tokenomics/references/sources.md`.
+- `tools-ki`: `docs/roadmap/KI-TOOL-KI-CLI-115-enforce-roadmap-writing-checkout.md` and `KI-TOOL-KI-CLI-125-ki-release-contract.md`.
+- `ki-techne-harness`: `docs/roadmap/KI-TECHNE-OPS-018`, `019`, `023`, `024` and `027`. `tools-techne`: `docs/roadmap/KI-TOOL-TECHNE-CLI-006` and `008`.
+- State folder: the six island run folders move to `$KI_STATE_HOME/agents/_archive/`; nothing is deleted.
 
 ## Verify
 
-Not yet planned.
+- In each swept repository, `git grep -nE 'Decision(s)? [0-9]+' -- .` prints only the matches classified as quotations in Discussion.
+- This island: `ki repo audit --skill ki-repo-kb-streams` reports no failure and no new warning beyond the two pre-existing `STREAM-10` warnings on the `paperclip-bootstrap-and-recovery` and `website` Project notes, which are outside this record. Harness, `tools-ki`, `ki-techne-harness` and `tools-techne`: `ki repo audit --skill ki-work-roadmap` passes, and the harness's `ki repo audit --skill ki-tokenomics` passes.
+- `ki agent status <run>` for each of the six island folders lists no running agent before close; `ki agent close <run>` prints every gate line `ok` and names its archive; `ls $KI_STATE_HOME/agents/_archive/` shows the six and `ls $KI_STATE_HOME/agents/` no longer does.
+- The `chezmoi`, `mac-studio-bootstrap`, `ways-of-working` and both legal folders are untouched: their modification times are unchanged.
 
 ## Dependencies / blocks
 
-As declared in the frontmatter `blocks` and `blocked_by`; `ki-plan` confirms them.
+- `blocked_by` is empty: the records this depends on live in other repositories. The citation sweep needs nothing and can start on approval, except the harness files, which wait for the harness's `ki-delegation` rewording so one standard is not edited twice at once.
+- The run-folder sweep waits for `ki agent close` in an installed `ki`; Kris queued it "after durability: ki agent close with reconcile gate, plus sweep of existing run folders." The `tools-ki` guide at `docs/guides/user/background-agents.md` will document the command.
+- Legal and personal runs are reconciled by their own territories' threads; this record names them and does not read them.
+- The `ways-of-working` run's own log is outside this sweep, on Kris's placement of the decisions log with that thread.
+
+## Delegation
+
+The `ways-of-working` thread coordinates. Citation sweep: one detached background agent under `ki-delegation` with the five repositories as `--add-dir`, one round per repository group, reporting the classification list before editing so the thread can check it. Run-folder sweep: a second agent, launched only once `ki agent close` is installed and the citation commits have landed, with no access to the legal or personal folders, reporting each gate output in full. Kris accepts through `ki-accept` after both.
 
 ## Documentation impact
 
 ### Decision Records
 
-Not yet assessed.
+None. The rule that a decision is described, not numbered, is owned by the `ki-delegation` standard once the harness record lands; this record applies it.
 
 ### Specifications
 
-Not yet assessed.
+None.
 
 ### Guides
 
-Not yet assessed.
+None here; the `tools-ki` background-agents guide documents `close` under that repository's record.
 
 ### Roadmap
 
-Not yet assessed.
+No follow-on record in this island. Techné repository edits are handled as the answer to the open question below decides, as commits by this island's agent or as handoffs, and open no feature record either way.
 
 ## Discussion
 
@@ -94,8 +130,14 @@ A citation that reads "under Decision 16" becomes the decision itself: what Kris
 
 ### Open questions
 
-- Whether the `ways-of-working` run itself, with its decisions log already quoted entry by entry in this Project's design folder, is reconciled by moving that file to the tracked home or by treating the design folder as the home until Wave F moves it.
-- Whether the Techné repositories' two records are swept by this island's agent under the cross-repository handoff rule, or handed to those repositories as roadmap items.
+Settled at planning on 2026-10-14:
+
+- The `ways-of-working` run is not reconciled by this record. Kris placed it: "everything to do with the decisions log belongs to ways-of-working". That thread keeps its log, copies it to the tracked thread folder once the harness wording lands, and closes it under the standard when the thread closes. The design folder's quoted copy stays as evidence and is not a home.
+- A match on a number inside a quotation of Kris's words or of the old standard is not a citation and is kept; the classification list in Discussion is written before any edit.
+
+Still open, for Kris:
+
+- Whether this island's agent edits the five `ki-techne-harness` records and two `tools-techne` records under the cross-repository handoff rule, committing in each repository, or those repositories receive the list as a handoff and sweep themselves. The plan is written for the first; the second removes two repositories from the agent's `--add-dir`.
 
 ### Adoption
 
