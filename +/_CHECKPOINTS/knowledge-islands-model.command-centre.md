@@ -4,7 +4,7 @@ thread: knowledge-islands-model.command-centre
 label: 'KI Model: command-centre'
 state: active
 created_at: 2026-10-11T02:41:28Z
-updated_at: 2026-10-14T20:19:58Z
+updated_at: 2026-10-14T21:18:44Z
 ---
 
 # knowledge-islands-model.command-centre
@@ -21,7 +21,8 @@ Cross-territory alignment of the Knowledge Islands model (legal, HNR, Observator
 
 - Mark: 2026-10-14T20:19:58Z
 - ki-pmo read at daa63224.
-- Thread folder: +/_THREADS/command-centre/ (not yet created; run `command-centre` has no agents and no decisions).
+- Thread folder: +/_THREADS/command-centre/ holds decisions.md only; run `command-centre` has no agents.
+- Resting by Kris's decision of 2026-10-14 (CC-START): rest until the KI Model: ways-of-working change-management design outcome lands; Command centre stays in the state-of-play queue to be reopened then. Kris also asked on 2026-10-14 that, while token limits are tight, work goes to lower-model background agents, mechanical steps first.
 - Messages: no inbox for run `command-centre`; the master thread's label rule of 2026-10-12 is absorbed (label shortened at this mark).
 - Coordination thread, re-bootstrapped under ki-pmo on 2026-10-14. The Project is `lifecycle: planned` with no work records. The state-of-play thread's active list of 2026-10-14 does not include it.
 - The handoff of 2026-10-13, agreed by Kris through KI Model: ways-of-working, moved the vocabulary (threads, Initiatives, Projects, checkpoints, marks, Needs) and the glossary question to the ways-of-working change-management design. CC-VOCAB is therefore closed here; the earlier `ki-design-loop` plan is withdrawn.
@@ -31,6 +32,7 @@ Cross-territory alignment of the Knowledge Islands model (legal, HNR, Observator
 
 ## Decisions made
 
+- Rest the thread until the ways-of-working design outcome lands, and hold both handoffs until its vocabulary settles (Kris, 2026-10-14, in this thread's decisions log).
 - The name is "Command centre"; "Council" stays the Capital's constitutional governance body (Kris, 2026-10-11, in the state-of-play decisions log).
 - Vocabulary and model terms belong to the ways-of-working design; this Project keeps cross-territory alignment and the view (Kris, 2026-10-13, through KI Model: ways-of-working).
 - The state-of-play thread owns cross-project priorities, releases and decisions; this thread works only its Project's records.
@@ -41,8 +43,7 @@ This checkpoint only. The state-of-play `cc-batch` run wrote the Project note an
 
 ## Open questions
 
-- **CC-START:** keep this thread open now, or rest it until the ways-of-working design lands. Recommended: rest it and return the slot to the state-of-play queue.
-- **CC-HANDOFFS:** offer kit-legal moving `+/_RESUME/` onto `ki-checkpoint`, and kit-principal's Project Portfolio pointing at the Capital's registry rather than restating it. Recommended: hold until the ways-of-working vocabulary settles, so the handoffs carry the final terms.
+- **CC-HANDOFFS (held):** Kris decided on 2026-10-14 to hold both handoffs (kit-legal moving `+/_RESUME/` onto `ki-checkpoint`; kit-principal's Project Portfolio pointing at the Capital's Project registry) until the ways-of-working vocabulary settles, then send them from run `command-centre`.
 
 ## Next step
 
