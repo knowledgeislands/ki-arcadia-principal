@@ -7,7 +7,7 @@ initiative: rig
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-14T16:45:00Z
+updated: 2026-10-14T17:00:00Z
 author: Written with Claude
 ---
 
@@ -20,6 +20,14 @@ Kris's Mac Studio, unused for over a month, is back to full estate capability. T
 This Project sits in [[rig|Rig]], because the Mac Studio, `sol` on the tailnet, is Kris's own hardware: Rig and chezmoi build and maintain it as Kris's rig on another machine, with the `studio` profile on `core`, declared in the chezmoi source. Techne may deploy onto it later but never owns its build recipe, and it is separate from Techne's [[agent-host]] Project.
 
 Under [[GDR-KI-PRINCIPAL-004-standing-agent-host-exemption-from-the-techne-programme-hold|GDR-KI-PRINCIPAL-004]] it is an exempt remote agent host: agents administer it over Tailscale and SSH, with Kris approving each step.
+
+## Remit
+
+Kris widened the remit on 2026-10-14 (Kris, 2026-10-14: "I want to add to this projects remit that it needs to look at the rig differences"):
+
+- **RIG-DIFF:** compare `sol` with the laptop, read-only, across Rig profiles, tools, skill links, Dock extras and undeclared set-up such as Headroom, then settle each difference.
+- **SOL-SCOPE:** `sol` manages all seven workspace groups, and joins the `ki` registry after a dry-run against the laptop's 52 entries.
+- **LOCAL-MODE-CHECK:** re-run `ki dev local on` on `sol` if its `ki` configuration no longer shows in `chezmoi status`.
 
 ---
 
