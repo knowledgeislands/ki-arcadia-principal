@@ -757,3 +757,51 @@
 ## Decision 187 (2026-10-14)
 
 - Routed from ways-of-working on Kris's LINK-GUARD approval: deploy the harness ki-coordinator output style to ~/.claude/output-styles/ for ki-pmo coordinating threads in place of Concise, kept out of ki agent launched agents (lesson 3, KI-PRINCIPAL-ECO-013). No Rig: chezmoi session is live, so it goes to Kris as a paste bundled with CMDLINE-APPLY and SOL-LOGIN-ITEMS. REBOOT-ALL noted: openers go out on ways-of-working's clean re-bootstrap signal.
+
+## Decision 188 (2026-10-14)
+
+- Kris, via ways-of-working, 2026-10-14: "PUSH-EXTRA - accept as pushed; tell the Master for the Granola review". tools-ki 3019c39 (reserve Granola defect identity) and 909cfef (KI-TOOL-KI-CLI-128 Granola retention safeguards plan, from a Codex session) are on origin via cli127-widen's fast-forward. GRANOLA-SUPPORT review treats them as on origin; KI-TOOL-KI-CLI-128 may already be the tools-ki half of it.
+
+## Decision 189 (2026-10-14)
+
+- Kris, via ways-of-working, 2026-10-14: "GATE-FIX / ask the Master to relay to Rig: mac-studio-bootstrap: reword the two "Rig note" bullets so they name no records, conform its checkpoint, commit and push from sol; then commit this thread's waiting files". No mac-studio-bootstrap session is reachable from terra, so the relay goes to Kris as a paste for sol. Re-bootstrap openers are held until banner-refine and pmo-rules land and ways-of-working signals.
+
+## Decision 190 (2026-10-14)
+
+- Kris, via ways-of-working, 2026-10-14: "SHAPE-FREEZE / freeze the report shape once heading-rich lands; roll it out with one re-bootstrap; log further tweaks for a review in about a week". Shape frozen at harness b81bcfa3. REBOOT-ALL sent: agent-host opener by message; Codex (acquire-intake, knowledge-acquisition) and sol (mac-studio-bootstrap) openers go to Kris as pastes; this thread re-bootstraps on Kris's resume paste.
+
+## Decision 191 (2026-10-14)
+
+- Kris, 2026-10-14 21:19 BST: re-bootstrap under current ki-pmo and ki-delegation (harness at daa63224 or later); new mark; commit everything the thread does or oversees by explicit path; at each mark delete answered reports with a durable home from +/_THREADS/<run>/, keeping open-query reports and decisions.md; heartbeat every 5 minutes while work runs; ki-principal commits stay uncommitted until the scoped gate (ki repo audit --staged) lands from ways-of-working's gate-release run, then commit through a private index by explicit path; never --no-verify.
+
+## Decision 192 (2026-10-14)
+
+- Kris, 2026-10-14 21:2x BST (aside, important): with work on terra, sol and possibly vega, make sure we push and pull often to keep hosts in sync; asked for ideas on how best to make that work. Floated organising it through the observatory: telemetry via OpenTelemetry (OTLP) for metrics on what we're doing, plus a notification and state-update channel (something like WebRTC broadcast) that each host's observatory hooks into and threads deal with from time to time. Kris can't remember where this was captured before. Read-only research and proposal approved; no records or code.
+
+## Decision 193 (2026-10-14)
+
+- Kris, 2026-10-14 21:2x BST: we hit a limit on fable. If any of our threads get stuck, change them to claude-opus-5-5 at their same effort, at least until the next reset.
+
+## Decision 194 (2026-10-14)
+
+- Kris, 2026-10-14 ~21:40 BST, replies to the re-bootstrap report. GATE-FIX: let mac-studio-bootstrap fix the note at its next re-bootstrap on sol; 'perhaps write it to its checkpoint, so that its a way to communicate between cycles. For now sol has stopped due to its account running out.' REBOOT-CODEX: 'I have done this already'. REBOOT-PMO: each re-bootstraps on its next wake; nothing sent now. PUSH-BENEATH: 'The most important thing is that each agent session commits its own work. And if there's a need or it has little confidence in the other commits that are stacked up with it, that's flagged to me, and I will then push if I'm happy with the push. If it's only their commits, then them committing and pushing is absolutely fine though.' CHEZMOI-BUNDLE: already open in a Rig: chezmoi session; Kris will have it pull once anything is pushed. CLI115-CHECKPOINT-LINKS: estate-factorisation rewrites the link at its next refresh. CLI124-PRUNE: prune through ki-accept in a prune-only commit, then push 'if possible, or ask me otherwise'. MENUBAR-ORDER: report drift only, drag once by hand, trim KI-TOOL-RIG-CORE-053; 'add a follow-up ticket at some point to investigate this a bit further because surely there must be some configuration somewhere'. GRANOLA-SUPPORT: adopt KI-TOOL-KI-CLI-128 as the tools-ki half and create only the harness record; local delivery; migration separately gated. BINARY-HOME: iPhone check first, then the private mcp-acquire-chatgpt repo and local synthetic build; 'a candidate that should be handed off to the Knowledge Acquisition project/thread'. PAPERCLIP-CLEANUP: 'Clean it all'. PAPERCLIP-CHECKPOINT: retire it. RCA-RIG-ADR010: accept with KI-TOOL-RIG-CORE-047 once the live check passes. RIG-SOL-BREW: 'send a message effectively to another thread asynchronously by adding something at the top of its checkpoint so the next time that it reaches its checkpoint it will probably see that there's a change there and it can decide what to do with it.' RIG-SOL-TELEGRAM: 'Yes, replace sol's App Store Telegram with the Homebrew version', via that thread's checkpoint. ACQ-FINISH: hand off to the knowledge acquisition thread. ACQ-FOCUS: adopt as delivery priority (mac-studio-bootstrap and agent-host first; hold unchanged; policy wording only when asked). SYNC-GUARD: fold 'level before resume and at every mark' into KI-HARNESS-GOV-189 with [behind]/[unpushed] items. CHANNEL-TELEMETRY: OTLP is 'about us getting metrics out of use of AI tooling', its own Project under Platform Foundations (observability); inter-agent pub-sub is another topic, ntfy decent but maybe not long term, consider a decentralised system per host with the Observatory as command centre for host and cross-tailnet communication; tailnet is the VPN substrate, not the interaction mechanism; host-network setup needs its own thought. Plus: how to hold new evaluation areas as Projects in an Initiative without roadmap items and without hundreds of Projects; maybe Projects for host network, Observatory as command centre (are command-centre and observatory one thing? the bridge docs); state-of-play is 'the coordination thread of coordination threads', whose main role is to dispatch work into the right Project.
+
+## Decision 195 (2026-10-14)
+
+- Kris, 2026-10-14 ~21:55 BST, on command centre and Observatory: 'at the minute I'm using Z[ed] as a way of talking and interacting into these threads or effectively these agentic sessions. I'm wondering though if the observatory can also see those agentic sessions. I'm not suggesting that I want that to become the graphical user interface for the harness at this point. We're still talking about using Z[ed], ... Delta potentially in the future ... also still ... paperclip, but I think some kind of single pane of glass for what's going on like this would be really, really useful as well. And then, obviously, this would allow things like agents to advertise themselves, it kind of ties into the whole theme around all of this.' Fold into the areas-proposal run.
+
+## Decision 196 (2026-10-14)
+
+- Kris, 2026-10-14 ~21:55 BST: 'As the state of play thread, I think you are very much in a position where you can write directly into the projects and the checkpoints of the other coordination threads. And you're responsible for fundamentally dispatching that work around. So rather than building up more and more of your own context, the key thing is to understand mostly where that work goes first and foremost and get it dispatched out of this thread and then if I ask a similar question or an extension to something or even repeat myself you're the one who can understand all of this and then deal with that.'
+
+## Decision 197 (2026-10-14)
+
+- Kris, 2026-10-14 ~21:55 BST: 'Another key aspect of this whole command centre piece, the observatory, OTLP, the pub sub mechanism, all of that good stuff, is that we also need to think about token economics as part of it.' Fold into areas-glass.
+
+## Decision 198 (2026-10-14)
+
+- Kris, 2026-10-14 ~22:00 BST, territory DNS: 'a level above the tail scale network ... create some kind of DNS which is representative of the different territories and the codes'. Earlier thoughts, location unknown ('maybe it's in one of the acquiring things'), on 'a register capability where you can say that this is your territory, and therefore, as part of that, you get some DNS and routing, you get the ability for messages to get routed into you, a kind of front entry for that ... something which is addressable, which is not just a tailnet DNS'. Examples: krisb.knowledgelandscapes.info (me/personal/machines), knowledge-islands.knowledgelandscapes.info, humans-not-robots.knowledgelandscapes.info; machine addressability: sol.krisb.knowledgelandscapes.info, terra.krisb.knowledgelandscapes.info. 'Of course we don't have to expose everything and of course I'm not trying to create another DNS service. But what I am trying to create is a mapping of the knowledge landscape onto a DNS system in some way.' First-level investigation, then dispatch to the owning Project.
+
+## Decision 199 (2026-10-14)
+
+- Kris, 2026-10-14 ~22:05 BST, Project types: 'Do we have different types of project? I think one of them could be like an inception area, where we're sort of talking about ideas. What would be interesting there is that I can then get my ChatGPT app, for example, and say, I want to pick up on this inception project and think about the concepts within it, and let's work through some ideas. And so the acquiring might happen into the acquire project, yet it's based around or seeded from some kind of inception project. It captures those things back into there and at some point when I come back into the inception project, I can try to bring those ideas in.' Dispatch to the thread model owner and knowledge acquisition.
