@@ -255,3 +255,15 @@
 ## Decision 60 (2026-10-14T20:28:31Z)
 
 - Owner instruction 2026-10-14 21:2x BST: token limits are close and the Fable limit is already hit; until a reset, prioritise mechanical work and launch background agents on a lower model level (Sonnet or Haiku, never Fable) to conserve what is left. Class: practice.
+
+## Decision 61 (2026-10-14T21:28:16Z)
+
+- TS-OAUTH-LIVE (Kris, 2026-10-14): created the tag-scoped Tailscale OAuth client and 1Password item; mint-tailscale-key.sh --check printed "Tailscale accepted the OAuth client (scope: auth_keys); no key was minted". Passed. Thread to offer ki-accept for KI-TECHNE-OPS-027 (needs Kris approval). Class: operational.
+
+## Decision 62 (2026-10-14T21:29:22Z)
+
+- OPS-027-ACCEPT (Kris, 2026-10-14), as received: "Accept KI-TECHNE-OPS-027 through ki-accept now, without pruning, then commit and push". Class: operational.
+
+## Decision 63 (2026-10-14T21:29:22Z)
+
+- TS-OAUTH-HANDOFF (Kris, 2026-10-14), as received: "b) and do it now" - hand the optional tailscale_oauth_item binding field to tools-techne now as a roadmap item, overriding the burn-down hold for this one item. Class: operational.
