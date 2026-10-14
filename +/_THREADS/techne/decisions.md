@@ -267,3 +267,15 @@
 ## Decision 63 (2026-10-14T21:29:22Z)
 
 - TS-OAUTH-HANDOFF (Kris, 2026-10-14), as received: "b) and do it now" - hand the optional tailscale_oauth_item binding field to tools-techne now as a roadmap item, overriding the burn-down hold for this one item. Class: operational.
+
+## Decision 64 (2026-10-14T22:22:30Z)
+
+- CLI-009-ADOPT (Kris, 2026-10-14), as received: "Adopt KI-TOOL-TECHNE-CLI-009 in tools-techne as kind deliver at horizon next, planned after the current burn-down work". Class: operational.
+
+## Decision 65 (2026-10-14T22:22:30Z)
+
+- REPORT-RECOPY (Kris, 2026-10-14), as received: "Capture the ki agent report re-copy defect in tools-ki as a triage record via a Sonnet agent, and tell state-of-play. I also feel that this needs some prioritization to it, because it is clearly a defect that would be good to get out of the way quickly." Thread reads this as approval to adopt the defect at horizon now after capture. Class: operational.
+
+## Decision 66 (2026-10-14T22:22:30Z)
+
+- MARK (Kris, 2026-10-14), as received: "Take a mark at this point and then handle the responses. So we have a strong baseline for future summarization." Class: operational.
