@@ -4,7 +4,7 @@ thread: rig.chezmoi
 label: 'Rig: chezmoi'
 state: active
 created_at: 2026-10-08T08:40:00Z
-updated_at: 2026-10-14T01:00:00Z
+updated_at: 2026-10-14T07:20:00Z
 ---
 
 # rig.chezmoi
@@ -15,9 +15,9 @@ Work the open KB-DOTFILES-UE records in the chezmoi source (`~/.local/share/chez
 
 ## Current state
 
-Mark: 2026-10-11T02:29Z, decisions log at Decision 46
+Mark: 2026-10-14T07:01Z, decisions log at Decision 62
 
-ki-delegation read at fbd11977
+ki-delegation read at 71d7a0fd
 
 - **1Password reorganisation applied.** The vault restructure, confident moves, renames and home-page URL fixes are done. Nine wrong-category items were recreated as API Credential, the chezmoi references repointed with byte-identical renders, and all ten originals archived (one was a duplicate). Remaining review tags: about 176 `^triage`, 75 `^duplicate`, 41 `^review` and 8 `^fix_url`, which the repeatable-triage idea in the secrets-hygiene Project now carries. Both records sit in the [secrets-hygiene](../../Streams/Projects/secrets-hygiene.md) Project.
 - **Accepted and pruned:** KB-DOTFILES-UE-062 (scoped live-apply measurement: no failures, port 3100 briefly down twice), KB-DOTFILES-UE-073 (cheztoi host profile) and KB-DOTFILES-UE-081 (claude-swap auto-switch service). All pushed; the source audit passes with no failures.
@@ -43,15 +43,17 @@ The machine-local decisions log (`~/.local/state/ki/agents/chezmoi/decisions.md`
 
 ## Open questions
 
-Needs Kris: none.
+Needs Kris:
+
+- **RIG-CASKS:** Rig 0.6.1 reports every Homebrew cask (54 tools, Chrome included) as `unavailable (application-metadata-invalid)`, so `rig doctor` shows 58 findings and the SVG handler is blocked. Cause: Rig reads cask metadata with `HOMEBREW_NO_INSTALL_FROM_API=1`, and with no local `homebrew/cask` tap Homebrew 7 then returns `auto_updates` as null. A tools-rig defect for state-of-play, which owns releases. Recommended: hand it over as a blocking defect and hold `rig apply` on both Macs until a fixed release is installed.
 
 Other open questions:
 
 - Parked 2026-10-14: PAPERCLIP-DRIFT - the laptop's `rig doctor` reports `paperclip-agents` drift (eight agents) and a failed apply on 2026-10-12; Kris deferred it (Decision 56). [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md)'s Verify names it rather than reporting the laptop clean.
-- SVG handler, waiting on state-of-play: Kris set Chrome for SVG by hand on the laptop and is passing state-of-play the request for a tools-rig release with default-application support (Decisions 57 and 59). Once it is installed, declare `[default-application.svg]` (Chrome, `public.svg-image`) in `core`.
+- **SVG handler (Decisions 57, 60 and 62):** `[default-application.svg]` (Chrome, `public.svg-image`, `core`) is written in `private_40-macos.toml` and applied to `~/.config/rig`, but left uncommitted: Rig 0.6.1 reports it `blocked-by:google-chrome` because of the cask defect under RIG-CASKS.
 - Handoff from rig.mac-studio-bootstrap (Decision 25), non-blocking: consider a 1Password service account scoped to the Rig vault ([KB-DOTFILES-UE-077](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-077-reorganise-1password-vaults-safely.md)), so chezmoi applies need no unlock prompt and agents can apply on sol over SSH unattended; the token would be stored on each machine. That thread owns priority and design.
 - For `state-of-play`, non-blocking: Kris wants a proposal for a new standalone repository holding a macOS-settings catalogue. It would merge the typed nix-darwin `system.defaults` options and macos-defaults.com entries, read each setting's live value, mark those Rig declares, and turn a System Settings change into a ready Rig declaration. Rig keeps applying; KB-DOTFILES-HK-004 would use it as its source. Kris decided this on 2026-10-11 (Decision 44); state-of-play owns where and when it is proposed.
 
 ## Next step
 
-Deliver section A of [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md), then KB-DOTFILES-UE-071 and KB-DOTFILES-UE-027, under the burn-down focus (Decision 58).
+Get Kris's answer on RIG-CASKS; review the `ue086-a` agent's section A delivery of [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md); once a fixed Rig is installed, verify and commit the SVG handler. Then KB-DOTFILES-UE-071 and KB-DOTFILES-UE-027, under the burn-down focus (Decision 58).
