@@ -47,7 +47,7 @@
   - `area` stays an issuing namespace, and `component` a repository vocabulary. Activities formally take `purpose` and `component` so that the runs they spawn inherit them.
 
   The queries below put each piece to Kris.
-- **Commit.** This report is the only file changed. It is committed by explicit path through a private index and pushed fast-forward; the final chat reply to the thread gives the commit identifier.
+- **Committed, not pushed.** This report is the only file changed. It is committed by explicit path through a private index as `ef5deac9`, and this status line is a follow-up commit; the scoped commit gate passed (FAIL=0). `git pull --rebase` refused because of other threads' uncommitted changes, but a fresh fetch shows origin/main is an ancestor of HEAD, so a push would be a fast-forward. It would also carry nine commits from other runs that sit beneath mine, from `924a89e5` to `7e9cc770`, so I did not push.
 
 ## In Progress
 
@@ -55,6 +55,7 @@ Nothing is running.
 
 Outstanding - no action requested now:
 
+- This report's commits wait to be pushed with the nine other-thread commits beneath them, under the thread's open PUSH-CARRY query in the [report-repair report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/report-repair.report.md).
 - AREAS-PATTERN, NEW-AREAS and OBS-MERGE remain open in the state-of-play thread's [areas-proposal report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/state-of-play/areas-proposal.report.md). EVAL-STAGE below is meant to be answered with AREAS-PATTERN, as INCEPTION-TYPE asks.
 - Thread type is not recorded on checkpoints. That is fine while a checkpoint's name shows its type, and needs nothing now.
 - The ChatGPT seed-and-return loop belongs to [knowledge-acquisition](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/knowledge-acquisition.md) under INCEPTION-TYPE and is outside this review.
@@ -207,7 +208,7 @@ Dispatch a one-file run, under this instruction, to align the Projects and Initi
 - [waiting] PRIORITY-FIELD
 - [waiting] AREA-WORD
 - [waiting] STREAMS-INDEX
-- [committed] this report, pushed
+- [unpushed] ki-principal ef5deac9 and its follow-up, above nine other-thread commits held for PUSH-CARRY
 
 ```text
 Resume ways-of-working under current ki-pmo and ki-delegation since 23:22 BST: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.
