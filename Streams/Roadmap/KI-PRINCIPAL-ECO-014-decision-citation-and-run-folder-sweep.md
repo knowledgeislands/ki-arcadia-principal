@@ -4,14 +4,17 @@ id: KI-PRINCIPAL-ECO-014
 area: ECO
 title: Decision citation sweep
 project: ways-of-working
-status: triage
+purpose: upkeep
+kind: deliver
+status: draft
+horizon: next
 tags:
   - topic/knowledge-islands
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-13T23:35:00Z
-updated_at: 2026-10-14T00:19:59Z
+updated_at: 2026-10-14T06:52:07Z
 ---
 
 # Decision Citation and Run-Folder Sweep
@@ -41,6 +44,44 @@ This record is captured from Kris's answers and is not adopted, planned or imple
 - Not the live runs, which close under the standard's rule when their threads close. This includes the `chezmoi` and `mac-studio-bootstrap` runs, whose threads are open and being worked on; any reconcile of their folders happens only from those threads when they close.
 - No run folder is deleted; archive is the action, and anything beyond needs Kris's word.
 
+## Current state
+
+Not yet grounded. `ki-plan` records the current source facts before Ready.
+
+## Steps
+
+- [ ] Plan this record under `ki-plan` before Ready, replacing these placeholder sections.
+
+## Files touched
+
+Not yet planned.
+
+## Verify
+
+Not yet planned.
+
+## Dependencies / blocks
+
+As declared in the frontmatter `blocks` and `blocked_by`; `ki-plan` confirms them.
+
+## Documentation impact
+
+### Decision Records
+
+Not yet assessed.
+
+### Specifications
+
+Not yet assessed.
+
+### Guides
+
+Not yet assessed.
+
+### Roadmap
+
+Not yet assessed.
+
 ## Discussion
 
 ### Order
@@ -55,3 +96,7 @@ A citation that reads "under Decision 16" becomes the decision itself: what Kris
 
 - Whether the `ways-of-working` run itself, with its decisions log already quoted entry by entry in this Project's design folder, is reconciled by moving that file to the tracked home or by treating the design folder as the home until Wave F moves it.
 - Whether the Techné repositories' two records are swept by this island's agent under the cross-repository handoff rule, or handed to those repositories as roadmap items.
+
+### Adoption
+
+On 14 October 2026 Kris approved the state-of-play thread's triage burn-down as written, under Kris's instruction to burn the roadmap down: adopted as `deliver / Next`. Kris asked for it in CITE-RULE and STATE-CLEANUP. The citation sweep can start now; the run-folder sweep waits for KI-TOOL-KI-CLI-124's `ki agent close`. Adoption grants no planning, implementation or acceptance authority.
