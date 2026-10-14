@@ -4,7 +4,7 @@ thread: rig.chezmoi
 label: 'Rig: chezmoi'
 state: active
 created_at: 2026-10-08T08:40:00Z
-updated_at: 2026-10-14T09:10:00Z
+updated_at: 2026-10-14T09:15:00Z
 ---
 
 # rig.chezmoi
@@ -22,9 +22,9 @@ Work the open KB-DOTFILES-UE records in the chezmoi source (`~/.local/share/chez
 
 ## Current state
 
-Mark: 2026-10-14T07:01Z, decisions log at Decision 62
+Mark: 2026-10-14T09:11Z, decisions log at Decision 67
 
-ki-delegation read at 71d7a0fd
+ki-delegation read at d4e2d8e8
 
 - **1Password reorganisation applied.** The vault restructure, confident moves, renames and home-page URL fixes are done. Nine wrong-category items were recreated as API Credential, the chezmoi references repointed with byte-identical renders, and all ten originals archived (one was a duplicate). Remaining review tags: about 176 `^triage`, 75 `^duplicate`, 41 `^review` and 8 `^fix_url`, which the repeatable-triage idea in the secrets-hygiene Project now carries. Both records sit in the [secrets-hygiene](../../Streams/Projects/secrets-hygiene.md) Project.
 - **Accepted and pruned:** KB-DOTFILES-UE-062 (scoped live-apply measurement: no failures, port 3100 briefly down twice), KB-DOTFILES-UE-073 (cheztoi host profile) and KB-DOTFILES-UE-081 (claude-swap auto-switch service). All pushed; the source audit passes with no failures.
@@ -53,12 +53,13 @@ The machine-local decisions log (`~/.local/state/ki/agents/chezmoi/decisions.md`
 
 Needs Kris:
 
+- **GATE-PUSH:** push the three gate-fix commits to chezmoi `origin/main`. Recommended: yes; the gate passes.
 - **PUBLIC-VIEW:** the new mise `python`, `actionlint` and `zig` declarations from KB-DOTFILES-UE-086 section A are in `core` only; `node`, `bun` and `uv` are also in `public`. Recommended: add `python` to `public` to match `uv`, and keep `actionlint` and `zig` in `core`.
 
 Other open questions:
 
-- **RIG-CASKS handed to state-of-play (Decision 65), blocking:** Rig 0.6.1 reports every Homebrew cask `unavailable (application-metadata-invalid)` because it reads cask metadata with `HOMEBREW_NO_INSTALL_FROM_API=1` and no local `homebrew/cask` tap, so `rig doctor` shows 58 findings. `rig apply` is held on both Macs until a fixed release is installed; KB-DOTFILES-UE-086 section B and the SVG handler wait on it.
-- **Gate baseline (Decision 63):** five dotfiles tests fail on `origin/main`: two from the KI-HARNESS-GOV-182 rename of `ki-work-housekeeping`, which `.ki.toml` still declares, and the vega/techne tests since `264341f`. The `gate-baseline` agent is fixing them, local commits only.
+- **RIG-CASKS handed to state-of-play (Decisions 65 and 66), blocking; the fix ships as Rig 0.6.3 after 0.6.2, on Kris's release approval:** Rig 0.6.1 reports every Homebrew cask `unavailable (application-metadata-invalid)` because it reads cask metadata with `HOMEBREW_NO_INSTALL_FROM_API=1` and no local `homebrew/cask` tap, so `rig doctor` shows 58 findings. `rig apply` is held on both Macs until a fixed release is installed; KB-DOTFILES-UE-086 section B and the SVG handler wait on it.
+- **Gate baseline (Decision 63):** the five failing dotfiles tests are fixed by the `gate-baseline` agent in three local chezmoi commits (the `ki-work-housekeeping` to `ki-work-recurring` rename, and tests following the agent-host binding's `vega` host name); tests, the source audit and rumdl pass. Unpushed, awaiting Kris (GATE-PUSH).
 - Parked 2026-10-14: PAPERCLIP-DRIFT - the laptop's `rig doctor` reports `paperclip-agents` drift (eight agents) and a failed apply on 2026-10-12; Kris deferred it (Decision 56). [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md)'s Verify names it rather than reporting the laptop clean.
 - **SVG handler (Decisions 57, 60 and 62):** `[default-application.svg]` (Chrome, `public.svg-image`, `core`) is written in `private_40-macos.toml` and applied to `~/.config/rig`, but left uncommitted: Rig 0.6.1 reports it `blocked-by:google-chrome` because of the RIG-CASKS defect.
 - Handoff from rig.mac-studio-bootstrap (Decision 25), non-blocking: consider a 1Password service account scoped to the Rig vault ([KB-DOTFILES-UE-077](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-077-reorganise-1password-vaults-safely.md)), so chezmoi applies need no unlock prompt and agents can apply on sol over SSH unattended; the token would be stored on each machine. That thread owns priority and design.
@@ -66,4 +67,4 @@ Other open questions:
 
 ## Next step
 
-Review the `gate-baseline` agent's fixes and push them once the gate passes; get Kris's answer on PUBLIC-VIEW; when state-of-play ships a fixed Rig, verify and commit the SVG handler and start [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) section B with Kris. Then KB-DOTFILES-UE-071 and KB-DOTFILES-UE-027 (Decision 58).
+Push the gate fixes on Kris's word (GATE-PUSH); get Kris's answer on PUBLIC-VIEW; when state-of-play ships a fixed Rig, verify and commit the SVG handler and start [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) section B with Kris. Then KB-DOTFILES-UE-071 and KB-DOTFILES-UE-027 (Decision 58).
