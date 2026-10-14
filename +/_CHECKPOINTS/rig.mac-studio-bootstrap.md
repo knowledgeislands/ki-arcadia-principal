@@ -4,7 +4,7 @@ thread: rig.mac-studio-bootstrap
 label: 'Rig: mac-studio-bootstrap'
 state: active
 created_at: 2026-10-08T08:45:00Z
-updated_at: 2026-10-14T14:35:00Z
+updated_at: 2026-10-14T14:48:00Z
 ---
 
 # rig.mac-studio-bootstrap
@@ -23,13 +23,17 @@ Re-read this block after every compaction.
 
 ## Current state
 
-Mark: 2026-10-14T14:35Z
+Mark: 2026-10-14T14:48Z
+
+**Resumed on sol at this mark** (re-bootstrap, 2026-10-14). Nothing running or queued; no new approvals since 14:35Z, so no work restarted. Stock on sol: ki-principal, ki-agentic-harness, tools-ki and tools-rig level with origin; ki-coordinator output style active, but the `ki-pmo` skill is not linked into `~/.claude/skills` (ki-pmo standard read from the harness checkout at 8f23d27c) and the dead `ki-delegate` and `ki-design-loop` links remain; `~/workspaces/kit`, `hnr` and `knowledge-wayfinder` still present, so OLD-TREES-RUN is not yet done. The re-bootstrap used more reads than a coordinator turn allows; the rest goes to agents.
+
+Previous mark: 2026-10-14T14:35Z (thread moved from terra to sol)
 
 **Thread moves to sol at this mark** (Kris, 2026-10-14: "So I'm thinking I can hand off the rest of this to Sol now. In which case, we need to take a mark, and do it"). terra's coordinating thread stops after the hand-off run; sol's thread resumes from this checkpoint. Nothing is running or queued.
 
 Decisions log: machine-local, not in Git. From this mark the live copy is on `sol` at `~/.local/state/ki/agents/mac-studio-bootstrap/decisions.md`, copied from terra with the run reports; terra's copy is frozen.
 
-ki-pmo read at 839ad1e1
+ki-pmo read at 8f23d27c
 
 **Machine.** `sol` (studio, macOS 27.0.1 since 2026-10-14) at `100.90.130.74` on the tailnet, user `krisbrown`, key-based SSH from the laptop with agent forwarding for this host only; use `ssh krisbrown@100.90.130.74`, as plain `ssh sol` fails on `known_hosts`. FileVault is on, so after a restart nothing, Tailscale included, comes up until Kris unlocks it at the screen; any reboot needs Kris's approval. Host names and types are in the Project's [hosts note](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-bootstrap/design/hosts.md).
 
