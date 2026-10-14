@@ -809,3 +809,43 @@
 ## Decision 200 (2026-10-14)
 
 - I can't stress this enough and I'll be saying this to every single thread, but it's absolutely imperative that you commit your work.
+
+## Decision 201 (2026-10-14)
+
+- MESSAGE-COMMIT: Yes: one run commits only the message-block lines in the ways-of-working, knowledge-acquisition, command-centre and estate-factorisation checkpoints through a private index, checks each thread's own edits are still in its working tree, and pushes if only its own commits are on top.
+
+## Decision 202 (2026-10-14)
+
+- AREAS-PATTERN: ways-of-working is looking at this now, so I suggest that understanding you already have is given to me as a prompt to add to its consideration. Its not a state of play item to progress further so best delegated/dispatched there
+
+## Decision 203 (2026-10-14)
+
+- OBS-MERGE: Keep one Project, command-centre, and reshape its Outcome as the Observatory on each host: Instruments, Beacon and Bridge; a read-only Sessions view as the pane of glass, showing token use per run and per thread and each account's 5-hour and 7-day windows; later a messaging endpoint on each host linked over the tailnet, with ntfy as the stopgap question in Notes. Ways-of-working keeps the event contract, including advertisement and usage fields; apps-observatory keeps the product.
+
+## Decision 204 (2026-10-14)
+
+- NEW-AREAS: Open host-network under Rig and ai-observability under Platform foundations, both planned with a decision as their Outcome; ai-observability decides how token use is measured and attributed per run, per thread and per account, OTLP included, with ki-tokenomics keeping policy. Move the two Notes bullets into the new Projects in one ki-principal commit; open no thread for either.
+
+## Decision 205 (2026-10-14)
+
+- TERRITORY-DNS-HOME: Keep territory addressing in Island model and Tending to settle the territory register and naming; if host-network opens, it takes the tailnet and DNS work later as a handoff. I used `*.knowledgelandscapes.info` as some examples, but I forgot I'd also considered realms and knowledge realms too.
+
+## Decision 206 (2026-10-14)
+
+- INCEPTION-SHAPE: No new kind of Project: inception is the idea-stage pattern, and knowledge-acquisition designs the loop - the Project's Notes published into acquire's ChatGPT context on the way out, captures carrying a ki_project field and folded back into the Project's Notes on the way back.
+
+## Decision 207 (2026-10-14)
+
+- PAPERCLIP-REMAINDER and host primacy: "Clear all three: one run deletes ~/.paperclip; another, with remote authority, checks each paperclip/aligned-20260926/* branch is merged or not needed, deletes it locally and remotely, then removes ~/workspaces/knowledge-islands/paperclip once it shows nothing unpushed; a message to Rig: chezmoi asks it to drop the Paperclip service, plist and scripts from its sources, apply only those targets and delete the old log. So this was the recommended response above. However, I'm definitely thinking that we want to have a paperclip service like we have an observatory on every host. I think what this shows as well is that I need to have a little bit of a think about which hosts are the primary host for given territories. I think this also then plays back into things around the realms, the DNS structure, everything really. So I think I'm going from something which is currently like everything everywhere to something which is basically saying a given territory is primarily used or interacted with by a given host. ... when we come to looking at things like how the maps of the known world work, there's a it's not just about the territories, it's also about where the primary Cultures or races are for the workers or agents ... The Knowledge Island estate Map that I had before was quite a good thing ... external organization or individual things about me ... things that are personally only associated to me versus things which are perhaps more externally things that I work out or work on ... Terra should focus on the things that I use primarily, and so it should be the home, the continent, maybe ... this comes into one of those kinds of like philosophy kind of discussions about approaches that I typically have with a ChatGPT client and then acquire that back in ... there's definitely some kind of synergy here between acquire and elaboration inception style projects. And I think these there's a number of themes within this that have come up in the state of play thread here just now that probably need to be coherently looked at, they're not automatically just pushed into individual projects and isolated. You know, you could even say it's all to do with the foundations of Knowledge Islands, right? ... both Terra and Sol should have all eight territories checked out on them in Git, the way they have today. And that allows them to always be able to act either as the primary or the secondary ... the territories which should be primarily managed and maintained on Sol would be something like Knowledge Islands, Valle Armonia, Sacred Inquiry, TechMedix and Equal Remedy and then the other three would essentially be on my laptop on Terra, which would be Humans not robots, legal and personal ... it's quite important that Knowledge Islands is on both ... more like an active, active or primary, primary ... the hat is sort of tipped as it's primary towards Sol ... I would route any kind of pub sub stuff, but also anything to do with paperclip split on that basis." (Full words in the transcript of 14 October 2026, about 22:35 BST; speech-to-text names corrected.)
+
+## Decision 208 (2026-10-14)
+
+- MENUBAR-MODULES: Keep KI-TOOL-RIG-CORE-053 report-only for Apple's own items too; I set them once by hand on each Mac. CLI127-LINKS: Point both KI-TOOL-KI-CLI-124 links in KI-TOOL-KI-CLI-127 at the pruned GitHub link at its next planning pass, with no separate commit now. RCA-RIG-ADR010: I will run the KI-TOOL-RIG-CORE-047 live check and tell you the result; on a pass, one run accepts KI-TOOL-RIG-CORE-047 and marks ADR-KI-TOOL-RIG-010 accepted in tools-rig.
+
+## Decision 209 (2026-10-14)
+
+- ROOTING (14 October, about 23:50 BST): "One of the key things here then to consider is how these things get rooted. Because there's quite a lot going on, we need to decide how it gets rooted down into the territories and then from the territories down into the initiatives, the projects, and the roadmaps, but also where do we put things which are kind of like ideas, philosophies, things that we're discussing, our approaches before we've really got to the point that we need to fully commit to them, or even we might be at a point where we've got aspects of them that get built out because we know there's a certain amount of them, which are already valuable and kind of more fixed, but there's a lot more ideation to go on behind it."
+
+## Decision 210 (2026-10-14)
+
+- AREAS-PATTERN (14 October, about 23:50 BST): This has been passed off to ways of working now.
