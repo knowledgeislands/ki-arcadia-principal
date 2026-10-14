@@ -259,3 +259,7 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 58 (2026-10-14)
 
 - Kris, 2026-10-14 ~10:45 BST: snapshot records both counts and size-weighted counts keyed by the status and horizon pair, so readers can look at status, horizon or both. Coordination banner uses REST/BUSY block letters; a conversational thread ends DONE; a coordination thread shows DONE only when its project closes and is tidied up.
+
+## Decision 59 (2026-10-14T11:02:05Z)
+
+- Kris, 2026-10-14 ~12:05 BST: the block-letter banner as the Acquire thread rendered it is right; every thread that re-bootstraps under ki-pmo must render it the same way; the reply block must carry the recommended answer on each line, not every option. Build it into ki-pmo and ki-delegation now.
