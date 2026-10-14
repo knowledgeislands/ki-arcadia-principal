@@ -263,3 +263,35 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 59 (2026-10-14T11:02:05Z)
 
 - Kris, 2026-10-14 ~12:05 BST: the block-letter banner as the Acquire thread rendered it is right; every thread that re-bootstraps under ki-pmo must render it the same way; the reply block must carry the recommended answer on each line, not every option. Build it into ki-pmo and ki-delegation now.
+
+## Decision 60 (2026-10-14T11:49:02Z)
+
+- Kris, 2026-10-14 ~12:50 BST: the explanation of why the ki-coordinator output style deploys to a Claude-specific folder is accepted ('this makes sense to me ... this is answered'); the 4th White Paper opener was dispatched as given, so the HNR thread is 5G Emerge: fourth-white-paper (Initiative 5g-emerge, Project fourth-white-paper).
+
+## Decision 61 (2026-10-14T12:53:32Z)
+
+- Kris, 2026-10-14 ~13:50 BST, all as recommended: output-style handoff pasted to chezmoi; KI Master told by paste; accept KI-TOOL-KI-CLI-124 with the change (thread home from the launch's working directory) then release tools-ki 0.10.3 (no npm); accept KI-HARNESS-GOV-185; leave the two state-of-play reports out; commit the harness citation rewrite now; adopt thread, session and chat terms; adopt the three thread types conversational, coordination and state-of-play, replacing the old names; adopt the four decision classes and the homeless-standalone rule; the thread log is the Project's one decisions list; design notes move to +/_DESIGN/<subject>/ and are deleted on graduation; confirm the four close-out steps; open queries do not make a thread BUSY; restore-path rule lives in ki-delegation and ki-engineering; approve the hook runtime split; resume line with an optional compact paste first, Kris runs the Zed test; approve the surfaces rule and the ki agent status follow-on; approve red-x recovery; keep the close gate strict with the reconciled waiver; start KI-HARNESS-GOV-181 now; keep the defaults. Headroom not yet restarted: hold launches until Kris restarts it.
+
+## Decision 62 (2026-10-14T12:55:26Z)
+
+- Master reports its session is now ki-principal-c9 (was ki-principal-cf); MASTER-REACH closed. The untracked +/_THREADS/chezmoi/ folder in ki-principal belongs to Rig: chezmoi (pmo-adopt2 and coord-style agents; its commit sits unpushed in the ki-principal-chezmoi-pmo-adopt worktree); this thread leaves it to that thread. Master is asking Kris to send the ki-pmo re-read with each coordinating thread's resume line so banners match.
+
+## Decision 63 (2026-10-14T13:18:05Z)
+
+- Master relayed Kris's approvals 'RC-ALL: approve all; ways-of-working applies the harness part' and 'RC-OPS-005: rescope now'. Brief burn-down.md is written: harness roadmap 15 to 5, principal 5 to 4, OPS-005 narrowed and kept clear of Granola. It is held with the other launches until Kris restarts Headroom.
+
+## Decision 64 (2026-10-14T13:28:34Z)
+
+- Kris on the banner: 'Banner is great, but it needs the date it was issued to be more prominent than the mark'. The housekeeping line was also cut off at the right edge. Proposed change: the issue date and local time go into the top border of the frame, as '╭─ issued YYYY-MM-DD HH:MM TZ ─...╮' padded to 52 columns. 'banner <UTC>' comes off the housekeeping line, and the mark stays on the label line. This goes into the thread-model-enact brief as a KI-HARNESS-GOV-186 follow-up: update the ki-pmo standard, the output style, the frame test and the hook line.
+
+## Decision 65 (2026-10-14T13:29:20Z)
+
+- Kris on the banner lines beneath the frame, prompted by the Acquire thread's banner: 'the running should each be a line with the running: prefix'. Rule: every running agent gets its own 'running: <agent> - <what>' line, and queued and waiting items follow the same pattern with their own prefix. This goes into the thread-model-enact brief with BANNER-DATE, for the ki-pmo standard, the output style, the frame test and the hook line.
+
+## Decision 66 (2026-10-14T13:31:33Z)
+
+- Kris on BANNER-DATE: 'Use ISO-8601 UTC for the issued too and fix the border'. Rule: the top border reads '╭─ issued <YYYY-MM-DDTHH:MM:SSZ> ─...╮' and is padded to the same code-point width as the other frame lines. The frame test must assert the top border's width. BANNER-DATE is approved with this amendment.
+
+## Decision 67 (2026-10-14T13:36:39Z)
+
+- Master update: ki-principal is level with origin, and the untracked chezmoi decisions copy was removed because it duplicated a tracked file. The burn-down outside the harness is done. KI-TOOL-KI-CLI-115 is cancelled but kept because KI-PRINCIPAL-ECO-014 links to it. When ECO-014 closes, or its link becomes bare text, tell the Master so CLI-115 can be pruned; this is added to the harness-citations brief. The Paperclip Project is renamed paperclip-capture-and-rebuild, and ECO-014's path list now matches.
