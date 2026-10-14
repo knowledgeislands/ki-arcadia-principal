@@ -17,7 +17,7 @@ author: Written with Claude
 
 Decide whether [Delta](https://delta.dev/) earns a bounded trial as a delivery and review interface alongside Paperclip, and route the outcome to its durable owner. Delta is assessed as a possible complement to the present KI coordination arrangement, not a Paperclip replacement. The test: Kris has answered yes or no, and either a draft trial record exists or the assessment summary has a durable home.
 
-This Project sits in [[Initiatives/techne|Techne]], beside [[paperclip-bootstrap-and-recovery]].
+This Project sits in [[Initiatives/techne|Techne]], beside [[paperclip-capture-and-rebuild]].
 
 ---
 

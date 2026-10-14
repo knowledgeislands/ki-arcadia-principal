@@ -68,9 +68,9 @@ Links point upwards only: a work record names its Project, and a Project names i
 
 ---
 
-## Paperclip bootstrap and recovery
+## Paperclip capture and rebuild
 
-[[paperclip-bootstrap-and-recovery]] makes Paperclip useful through reviewed roadmap work landing in Kris's local main, proving one delivery in VA before TMX. The note carries the standing constraints on Paperclip operation, pending a durable owner for them.
+[[paperclip-capture-and-rebuild]] captures Paperclip's approach in the island, keeps the `terra` service stopped, and designs a fresh rebuild once the ways-of-working model settles.
 
 ---
 

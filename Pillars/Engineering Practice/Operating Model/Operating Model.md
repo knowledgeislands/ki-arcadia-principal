@@ -159,6 +159,10 @@ Future chapters will define the detailed operating practices for remote engineer
 
 [[Technology Investigation Programme]] gives Knowledge Islands a finite, evidence-backed way to understand a technology before changing engineering practice or technology posture. It sets out ownership, an investigation lifecycle, the minimum evidence a recommendation needs, and the portfolio and cadence of investigations. It favours accountable learning and appropriate reuse over either automatic adoption or automatic internal reimplementation.
 
+## Paperclip Operating Lessons
+
+[[Paperclip Operating Lessons]] records what running Paperclip on `terra` taught Knowledge Islands, from its onboarding in September 2026 to its shutdown on 2026-10-14: the approach worth recreating, the failures and their lessons, and what worked, so a fresh rebuild repeats the approach without repeating the failures.
+
 ## Provenance
 
 Adopted into Knowledge Islands Principal from [the retained Techné source](https://github.com/knowledgeislands/ki-techne-principal/blob/b25e9c950fd87715d12f76b69bb2079c3a4fc054/Pillars/Engineering%20Practice/Operating%20Model/Operating%20Model.md) at revision `b25e9c950fd87715d12f76b69bb2079c3a4fc054`. Knowledge Islands Principal owns this canonical engineering knowledge; the original source revision remains evidence.
