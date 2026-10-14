@@ -2,9 +2,9 @@
 type: ki-checkpoint
 thread: knowledge-islands-model.observatory
 label: 'Observatory: product'
-state: active
+state: resting
 created_at: 2026-10-13T23:50:00Z
-updated_at: 2026-10-13T23:50:00Z
+updated_at: 2026-10-14T00:01:00Z
 ---
 
 # knowledge-islands-model.observatory
@@ -17,11 +17,13 @@ Focus (Decision 158): burn the Observatory roadmap down. No new feature records;
 
 ## Current state
 
-Mark: 2026-10-13T23:50Z, state-of-play decisions log at Decision 158
+Mark: 2026-10-14T00:01Z, state-of-play decisions log at Decision 160
 
-- **Roadmap.** One open record: [KI-OBSERVA-INT-002](/Users/krisbrown/workspaces/knowledge-islands/apps-observatory.local/docs/roadmap/KI-OBSERVA-INT-002-portable-live-artifact-interface.md) (horizon `now`, `awaiting-review`). The repository is level with origin at `aa11699`.
-- **KI-OBSERVA-INT-002.** Delivered with the MCP Apps bridge, then fixed for the artifacts view overlapping other views (pushed `80fbb8a..aa11699`; tests, typecheck, build, browser smoke and `ki repo audit` pass). Opening the two proof artifacts in Cowork was not tested and is left for Kris's review.
-- **Run material.** The `observa-002`, `observa-002-build` and `observa-tabfix` reports in `~/.local/state/ki/agents/state-of-play/` hold the delivery evidence and the review steps.
+- **Roadmap.** Empty: no open records in `docs/roadmap/`. The repository is level with origin at `74a0eea`.
+- **KI-OBSERVA-INT-002 accepted.** Kris reviewed it in the Observatory and in Cowork and passed it (Decision 160). Closed as done in `0cf59ec` ([record at that commit](https://github.com/knowledgeislands/apps-observatory.local/blob/0cf59ec/docs/roadmap/KI-OBSERVA-INT-002-portable-live-artifact-interface.md)) and pruned in `74a0eea`. Its follow-on work was not captured as records, under Decision 158; the ChatGPT publication server and a confirmed write operation joined the deferrals under Gaps in `docs/specs/artifacts.md`.
+- **Resting.** Under Decision 158 the thread rests until a defect or Kris's request arrives.
+- **Restart due.** The local service may still serve an earlier build; the accept commits changed documents only.
+- **Run material.** The `observa-002`, `observa-002-build`, `observa-tabfix` and `observa-accept` reports in `~/.local/state/ki/agents/state-of-play/` hold the delivery and acceptance evidence.
 
 Thread rules:
 
@@ -33,21 +35,16 @@ Thread rules:
 ## Decisions made
 
 - The thread exists to burn the Observatory roadmap down, starting with KI-OBSERVA-INT-002 (state-of-play Decisions 157 and 158).
+- KI-OBSERVA-INT-002 accepted on Kris's review pass (state-of-play Decision 160).
 
 ## Files touched
 
-None yet beyond this checkpoint.
+- `apps-observatory.local`: `docs/roadmap/KI-OBSERVA-INT-002-portable-live-artifact-interface.md` (closed, then pruned) and `docs/specs/artifacts.md` (two Gaps).
 
 ## Open questions
 
-For Kris:
-
-- **OBSERVA-002-REVIEW:** review [KI-OBSERVA-INT-002](/Users/krisbrown/workspaces/knowledge-islands/apps-observatory.local/docs/roadmap/KI-OBSERVA-INT-002-portable-live-artifact-interface.md).
-  1. Restart the service: `launchctl kickstart -k "gui/$(id -u)/uk.me.kris.rig.observatory"`.
-  2. Open `http://127.0.0.1:1675/?view=artifacts`, open HNR Council, switch to another view and back, use Back and Forward, and reload: each view stands alone.
-  3. Open the two proof artifacts, `hnr-council` (hnr-principal) and `legal-activity-status` (legal-principal), in Cowork and confirm they still draw.
-  4. Accept, or name what to fix.
+None.
 
 ## Next step
 
-Shepherd KI-OBSERVA-INT-002 through Kris's review in that order, then run `ki-accept` on approval and work the roadmap to zero.
+Rest. On a defect report or Kris's request, capture it under Decision 158, plan and deliver it, and take it through Kris's review and `ki-accept`.
