@@ -805,3 +805,7 @@
 ## Decision 199 (2026-10-14)
 
 - Kris, 2026-10-14 ~22:05 BST, Project types: 'Do we have different types of project? I think one of them could be like an inception area, where we're sort of talking about ideas. What would be interesting there is that I can then get my ChatGPT app, for example, and say, I want to pick up on this inception project and think about the concepts within it, and let's work through some ideas. And so the acquiring might happen into the acquire project, yet it's based around or seeded from some kind of inception project. It captures those things back into there and at some point when I come back into the inception project, I can try to bring those ideas in.' Dispatch to the thread model owner and knowledge acquisition.
+
+## Decision 200 (2026-10-14)
+
+- I can't stress this enough and I'll be saying this to every single thread, but it's absolutely imperative that you commit your work.
