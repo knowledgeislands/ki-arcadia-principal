@@ -1,6 +1,6 @@
 ---
 note_type: streams/index
-updated: 2026-10-14T09:12:00Z
+updated: 2026-10-14T09:45:00Z
 author: Written with Claude
 ---
 
@@ -52,3 +52,7 @@ The remaining names in the set pass: `ki-plan`, `ki-implement`, `ki-accept`, `ki
 ## Thread banner and re-anchoring
 
 [[thread-banner-and-re-anchoring]] is a design-only note for Kris's sanity check before anything is built: two mock status banners (AT REST and NOT AT REST) with the copyable resume line, the unit model for the banner, resume line, mark, re-anchoring after compaction, Thread working rules block, compact hook pointer, RESTORE-PATH rule and thread messaging, the proposed text placement in `ki-delegation`, the hook and the engineering standard, the master-to-thread messaging interface, the provisional BANNER-MARK order and the open questions with a recommendation each.
+
+## Thread types and durable decisions
+
+[[thread-types-and-durable-decisions]] is a design-only note for Kris's sanity check before anything is built. It defines thread, session and chat, recommending thread as the owner-facing term and session only for the runtime instance; defines the three thread types (conversational, coordination and state-of-play) with each type's purpose, delegation, identity, banner and close-out, including a CLOSED state word for the coordination frame; models the decision lifecycle from utterance to thread log, work record, Decision Record and enacted knowledge, with four decision classes set at each mark; models the lifecycle of design notes and their move to `+/_DESIGN/<subject-slug>/`; names each unit with its boundary and hand-offs, lists the pending records it touches, and ends with eight tagged open questions, each with a recommendation.
