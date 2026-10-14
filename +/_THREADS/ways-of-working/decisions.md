@@ -319,3 +319,27 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 73 (2026-10-14T16:28:07Z)
 
 - REPLY-STACK - Kris: "Can we see the way that the default copy block is? So it's easier to use it. There's often quite a lot of detail now on per line." Reply block becomes stacked: tag line, blank line, recommended instruction, --- between queries.
+
+## Decision 74 (2026-10-14T16:43:21Z)
+
+- LINK-GUARD - approve: hook line plus KI-HARNESS-GOV-188 in the harness, link printer in KI-TOOL-KI-CLI-127, output style handed to Rig: chezmoi
+
+## Decision 75 (2026-10-14T16:43:21Z)
+
+- THREAD-FOLDER - confirmed as delivered
+
+## Decision 76 (2026-10-14T16:43:21Z)
+
+- GOV-187-REVIEW - accept KI-HARNESS-GOV-187
+
+## Decision 77 (2026-10-14T16:43:21Z)
+
+- KI-HANDOFFS - widen KI-TOOL-KI-CLI-127 to carry all four plus the link printer
+
+## Decision 78 (2026-10-14T16:43:21Z)
+
+- REBOOT-ALL - after GOV-187 is accepted and reply-stack lands, this thread re-bootstraps first, then the Master sends each live coordination thread its one-line re-bootstrap opener
+
+## Decision 79 (2026-10-14T16:43:21Z)
+
+- AUDIT-SCAFFOLD - accept the generic-audit clause as a pass; the README scaffold finding stays with its existing owner
