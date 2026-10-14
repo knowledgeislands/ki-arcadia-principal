@@ -7,7 +7,7 @@ initiative: knowledge-islands-model
 lifecycle: planned
 lead: Kris Brown
 target: null
-updated: 2026-10-14T22:50:00Z
+updated: 2026-10-14T23:30:00Z
 author: Written with Claude
 ---
 
@@ -34,6 +34,7 @@ This Project sits in [[knowledge-islands-model|Knowledge Islands model]].
 - **Idea: state-of-play view.** A clear view of Projects and Initiatives, possibly drawing on `apps-observatory.local` and the command-centre ideas in `hnr-principal` and `legal-principal`. Parked on 2026-10-09 in the ways-of-working thread and moved here on 2026-10-11.
 - **Idea: an Observatory Instrument** over the Project registry, checkpoints, decisions logs and `ki agent` runs, ranking Needs, staleness and unread agent reports - the cheapest pilot of the state-of-play view.
 - The crosswalk lives in the state-of-play `command-centre` report until this Project's design folder exists.
+- **Known World part, 2026-10-15.** On 15 October Kris placed the foundations model in [[Known World]] and gave this Project its part: the Observatory on each host, the Sessions glass scoped to that host's seated territories, the pub-sub transport routed by seat, and token windows on display. It depends on the territory seat table.
 
 ### Ideas for evaluation, 2026-10-14
 

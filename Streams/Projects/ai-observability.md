@@ -7,7 +7,7 @@ initiative: platform-foundations
 lifecycle: planned
 lead: Kris Brown
 target: null
-updated: 2026-10-14T22:50:00Z
+updated: 2026-10-14T23:30:00Z
 author: Written with Claude
 ---
 
@@ -24,3 +24,4 @@ This Project sits in [[platform-foundations|Platform foundations]]. Kris opened 
 ## Notes
 
 - **Idea for evaluation, 2026-10-14: AI-tooling observability (OTLP), with token economics.** Moved here from the [[platform-foundations|Platform foundations]] Initiative Notes when this Project opened. Kris: OTLP is "about us getting metrics out of use of AI tooling", and should be its own Project under Platform foundations (observability); and "we also need to think about token economics as part of it." Ideas to evaluate: one OpenTelemetry Collector per host on loopback (`127.0.0.1:4318`, OTLP over HTTP) writing under `~/.local/state/ki/telemetry/`, read by an Observatory Instrument; emitters from Claude Code, Codex and `ki agent` (a span per run), plus `rig` results; measuring and attributing token use per run, per thread and per account - tokens, cost labelled `~`, model actually used and stop reason - with account windows read from claude-swap and CodexBar and Headroom's statistics as a cross-check only; `ki-tokenomics` keeps budget and model-purpose policy. Local-first, so it stays outside the Techne Programme Hold until cross-host aggregation reaches `vega`; any cross-host forwarder is a tailnet-only listener and connection-critical. Showing it belongs to [[command-centre]] and acting on it to [[ways-of-working]]. Evidence: [sync-telemetry](<../../+/_THREADS/state-of-play/sync-telemetry.report.md>) stage 2 and [areas-tokens](<../../+/_THREADS/state-of-play/areas-tokens.report.md>).
+- **Known World part, 2026-10-15.** On 15 October Kris placed the foundations model in [[Known World]] and gave this Project its part: measuring token use per run, per thread, per territory and per account; `ki-tokenomics` keeps the policy. It depends on nothing new.

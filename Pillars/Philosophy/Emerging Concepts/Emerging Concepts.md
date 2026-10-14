@@ -1,6 +1,6 @@
 ---
 note_type: pillars/index
-updated: 2026-10-11T03:17:00Z
+updated: 2026-10-14T23:30:00Z
 tags:
   - card/note
   - topic/knowledge-islands
@@ -33,3 +33,9 @@ The folder exists so that open concepts live in the knowledge base proper, where
 ## Avatar Roles and Oversight
 
 [[Avatar Roles and Oversight]] holds three open Techne questions about delegated agency: whether an Avatar may ever act as Operator or Architect, how events from delegated work reach the human, and what agent telemetry to capture. They stay open while the Techne Programme Hold keeps every Avatar held.
+
+---
+
+## Known World
+
+[[Known World]] draws realms, territories, islands, hosts and agent cultures into one model of layers, bindings and flows: each territory seated on a home or hub host, addressed in a realm namespace, and coordinated, observed and paid for along the same lines. It holds Kris's themes of 14 October 2026 for the whole-philosophy review and is the first pilot of the inception loop.
