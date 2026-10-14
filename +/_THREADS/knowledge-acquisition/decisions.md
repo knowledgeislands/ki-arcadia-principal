@@ -63,3 +63,19 @@
 ## Decision 16 (2026-10-14T21:18:51Z)
 
 - 2026-10-14 Kris, DIAGRAMS: "Ask ways-of-working to check its PRINCIPAL-HTML decision and, unless it says keep, remove +/diagrams/change-management-skills/ from ki-principal."
+
+## Decision 17 (2026-10-14T22:51:46Z)
+
+- 2026-10-14 Kris: "Take a mark"
+
+## Decision 18 (2026-10-14T22:51:46Z)
+
+- 2026-10-14 Kris, RESET-FIRST: "Confirm the safe reset as KI-TOOL-KI-CLI-128's first piece of work with state_root still conditional; ask tools-ki to tie the record's refusal step explicitly to both the --rebuild and the ordinary reset before any Ready request; close GRANOLA-PLAN and GRANOLA-CARRIER."
+
+## Decision 19 (2026-10-14T22:51:46Z)
+
+- 2026-10-14 Kris, CHATGPT-OWNER: "Ask acquire-intake to add an exact-path inventory line for .acquire/chatgpt/ to KB-ACQUIRE-002 as an owner decision, with no move now."
+
+## Decision 20 (2026-10-14T22:51:46Z)
+
+- 2026-10-14 Kris, HEADING-AUDIT: "Launch a Haiku agent to add a minimal front matter block above the heading of +/_THREADS/knowledge-acquisition/handoff-review.report.md and commit and push it; I'll paste the reconciliation message to ways-of-working." Kris confirmed the message is pasted to ways-of-working.

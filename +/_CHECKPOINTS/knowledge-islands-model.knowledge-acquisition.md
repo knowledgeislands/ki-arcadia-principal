@@ -4,7 +4,7 @@ thread: knowledge-islands-model.knowledge-acquisition
 label: 'Knowledge Islands Model: knowledge-acquisition'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-14T22:27:00Z
+updated_at: 2026-10-14T22:52:00Z
 ---
 
 # knowledge-islands-model.knowledge-acquisition
@@ -24,16 +24,16 @@ The provider-neutral acquisition lifecycle is documented in one Pillars note, AI
 ## Current state
 
 - Open records: [KI-HARNESS-OPS-005](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-005-acquire-ai-sessions.md) (Now, in progress), [KI-PRINCIPAL-MOD-006](../../Streams/Roadmap/KI-PRINCIPAL-MOD-006-knowledge-acquisition-lifecycle.md) (Next, ready) and [DOTFILES-UE-035](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-035-install-whatsapp-spool-refresh.md) (Hold, chezmoi).
-- Run `knowledge-acquisition`: nothing running. `spirit-move` finished 2026-10-14: the 18 Personal - Spirituality packages are in `sacred-inquiry` (acquire 9431269, ki-agentic-harness 17747064, both pushed; 334 still verify). `handoff-review` finished: KI-TOOL-KI-CLI-128 covers the reset data-loss risk in intent with two gaps.
+- Run `knowledge-acquisition`: running `heading-fix` (Haiku) from this mark. `spirit-move` finished 2026-10-14: the 18 Personal - Spirituality packages are in `sacred-inquiry` (acquire 9431269, ki-agentic-harness 17747064, both pushed; 334 still verify). `handoff-review` finished: KI-TOOL-KI-CLI-128 covers the reset data-loss risk in intent with two gaps.
 - KI-PRINCIPAL-MOD-006's Granola evidence paths point at the private `acquire` repository (ACQ-PATHS, 2026-10-14). The browser-runtime question (KI-HARNESS-GOV-087) is merged into KI-HARNESS-OPS-005.
-- ki-principal commits are blocked: the pre-commit gate audits the whole tree and fails on another Project's note until the scoped gate (`ki repo audit --staged`) lands from ways-of-working's gate-release run. Uncommitted here: this checkpoint, `decisions.md` and three reports (`route-local-review`, `tower-move`, `spirit-review`). Commit them through a private index by explicit path at the first mark after the gate switches; never `--no-verify`.
-- Thread folder tidy at this mark: no deletions; every report still carries an open query.
+- ki-principal commits: the scoped gate is live; commit by explicit path.
+- Thread folder tidy at the 2026-10-14T22:52:00Z mark: deleted the chatgpt-bind, tower-move, spirit-review and spirit-move reports (answered, outcomes in commits and KI-HARNESS-OPS-005); kept route-local-review (BINARY-HOME and BINARY-HOLD with the master) and handoff-review (asks to acquire-intake and tools-ki not yet acknowledged).
 - `acquire` primary checkout is 21 commits ahead of origin with acquire-intake's own unpushed work; not this thread's.
 - Token budget (Kris, 2026-10-14): Fable limit hit; until the reset, prefer mechanical work on lower models (Sonnet or Haiku) and defer drafting-heavy work.
 - Messages: inbox read to entry 1 at 2026-10-14T20:21:00Z.
 - ki-pmo read at daa63224.
 - Thread folder: +/_THREADS/knowledge-acquisition/ ([thread folder](../_THREADS/knowledge-acquisition/)).
-- Mark: 2026-10-14T20:21:00Z.
+- Mark: 2026-10-14T22:52:00Z.
 
 ## Decisions made
 
@@ -43,6 +43,7 @@ The provider-neutral acquisition lifecycle is documented in one Pillars note, AI
 - 2026-10-14 (ACQ-PATHS, from the master thread): repoint KI-PRINCIPAL-MOD-006's Granola paths at the `acquire` repository. Done; reading `acquire` is read-only evidence.
 - 2026-10-14: TOWER, move to `personal` (done by `tower-move`); SPIRIT, look more closely first (`spirit-review` done).
 - 2026-10-14 (Kris, reply block): SPIRIT move all 18 to `sacred-inquiry`; TOWER-RECORDS keep the routing checkpoint as authority; ORPHANS list only; ACQ-HANDOFF launch handoff-review; GRANOLA-PLAN and GRANOLA-CARRIER close once handoff-review confirms KI-TOOL-KI-CLI-128 covers the reset data-loss risk; BINARY-PROOF closed as accepted, iPhone check with Kris; START-MOD-006 queued behind the scoped gate and the token reset; DIAGRAMS asked of ways-of-working.
+- 2026-10-14 (Kris): mark; RESET-FIRST safe reset first, state_root conditional, GRANOLA-PLAN and GRANOLA-CARRIER closed; CHATGPT-OWNER inventory line asked of acquire-intake; HEADING-AUDIT heading-fix launched, reconciliation message pasted to ways-of-working.
 - 2026-10-14 (Kris): commit everything this thread does or oversees by explicit path and check finished agents' work is committed and pushed at each report; tidy the thread folder at every mark; 5-minute heartbeat while work runs; ki-principal commits wait for the scoped gate.
 
 ## Files touched
@@ -52,10 +53,7 @@ The provider-neutral acquisition lifecycle is documented in one Pillars note, AI
 
 ## Open questions
 
-- GRANOLA-PLAN and GRANOLA-CARRIER: handoff-review found coverage in intent with two gaps, so not yet closed; close on RESET-FIRST. Condition was: close when `handoff-review` confirms [KI-TOOL-KI-CLI-128](../../../tools-ki/docs/roadmap/KI-TOOL-KI-CLI-128-granola-retention-safeguards.md) covers the reset data-loss risk.
-- RESET-FIRST (open): confirm the reset fix as KI-TOOL-KI-CLI-128's first slice with `state_root` conditional; tools-ki to tie its refusal step to the `--rebuild` and non-rebuild branches.
-- CHATGPT-OWNER (open): acquire-intake to add an exact-path inventory line for `.acquire/chatgpt/` to KB-ACQUIRE-002, no move now.
-- HEADING-AUDIT (open): the ki-pmo report heading's opening `---` rules fail ki-repo-kb NOTE-1a as malformed front matter, so `handoff-review.report.md` cannot pass the commit gate; owner of the fix is the ways-of-working thread.
+- RELAY (open until acknowledged): acquire-intake to add the `.acquire/chatgpt/` inventory line to KB-ACQUIRE-002 and to have tools-ki tie KI-TOOL-KI-CLI-128's refusal step to both reset paths; deposited in its inbox and given to Kris to paste.
 - BINARY-HOME and BINARY-HOLD: the state-of-play thread's; paste block given to Kris 2026-10-14, delivery unconfirmed.
 - START-MOD-006 (held): launch KI-PRINCIPAL-MOD-006 through `ki-implement` once the scoped gate has landed in ki-principal and the token reset has happened.
 - DIAGRAMS (handed to ways-of-working): check PRINCIPAL-HTML and, unless it says keep, remove `+/diagrams/change-management-skills/`.
