@@ -1,18 +1,3 @@
----
-note_type: report
-run: knowledge-acquisition
-agent: handoff-review
-created_at: 2026-10-14T23:52:53Z
----
-
-<!-- markdownlint-disable MD041 -->
-
----
-
----
-
----
-
 # [Knowledge Islands model](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/knowledge-islands-model/knowledge-islands-model.md) › [Knowledge acquisition](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/knowledge-acquisition.md) › handoff-review
 
 **Run report at 22:21 BST · last mark 22:19 BST**
