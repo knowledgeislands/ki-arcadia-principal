@@ -4,7 +4,7 @@ thread: rig.mac-studio-bootstrap
 label: 'Rig: mac-studio-bootstrap'
 state: active
 created_at: 2026-10-08T08:45:00Z
-updated_at: 2026-10-14T14:51:00Z
+updated_at: 2026-10-14T16:47:00Z
 ---
 
 # rig.mac-studio-bootstrap
@@ -23,7 +23,11 @@ Re-read this block after every compaction.
 
 ## Current state
 
-Mark: 2026-10-14T14:51Z
+Mark: 2026-10-14T16:47Z
+
+**Remit widened at this mark** (Kris, 2026-10-14: "I want to add to this projects remit that it needs to look at the rig differences"). New items: `RIG-DIFF` (read-only comparison of Rig profiles, tools, skill links, Dock extras and undeclared set-up such as Headroom on sol against the laptop, then settle each difference), `SOL-SCOPE` (manage all seven groups; SOL-REGISTRY off hold, register after a dry-run against the laptop's 52 entries) and `LOCAL-MODE-CHECK` (re-run `ki dev local on` if `config.toml` no longer shows in `chezmoi status`). `rig-diff` and `sol-scope` (with LOCAL-MODE-CHECK) are queued behind `chezmoi-fix`; `remit-done` adds Kris's HANDED-OVER-DONE rule to KI-HARNESS-GOV-189 ("we do sometimes need done, not just rest and busy", 2026-10-14) and the remit line to the Project note. `tool-records` has finished (report unread). SOL-REGISTRY leaves the held list. Open: SOL-TELEGRAM (terra check plus App Store reinstall on sol, recommended).
+
+Previous mark: 2026-10-14T14:51Z
 
 **Re-bootstrapped on sol at this mark** (2026-10-14). No commits, decisions or agent runs since 14:48Z; sol stock unchanged (old trees and dead skill links still present, `ki-pmo` still unlinked). Nothing restarted.
 
@@ -104,7 +108,7 @@ Waiting on Kris:
 - **`RIG-SITE-HOSTS` - record for the per-host view** (`rig-site.report.md`). Showing which hosts carry each public tool needs no Rig change and publishes nothing private; live versions and results would cross the privacy boundary. Recommended: `RIG-SITE-HOSTS - capture KB-MIDNIGHT-RIG-SITE-001 for the declared view only`.
 - **`RIG-SITE-HOSTNAMES` - host names on the site** (`rig-site.report.md`). Roles (laptop, studio, agent host) or names (terra, sol, vega); the page is unindexed but public by URL. Recommended: `RIG-SITE-HOSTNAMES - roles only`.
 
-On hold, parked (Kris, 2026-10-14): `SOL-CLT` (Kris installs the Command Line Tools for Xcode 27.0 on sol, then an agent runs `brew reinstall pkgconf` and `rig upgrade`; old tools cause 82-83 of 84 upgrade failures), `SOL-TELEGRAM` (clear the Homebrew cask record, then `rig apply --target telegram` from the App Store), both to pick up after the move to sol; `FW-LIVE` (terra rule comparison; reboot check at the next natural restart), `SOL-FW-TEST`, `UE-089-SHAPE`, `OLD-ORPHANS`, `MGIT-PRESEED`, `SOL-REGISTRY`, `SOL-SOURCES`, `SOL-HNR-HARNESS`, `SOL-WHATSAPP`, `SOL-KI-CONFIG-DRIFT`. Each is described in the run folder reports `old-trees`, `sol-build` and `records`.
+On hold, parked (Kris, 2026-10-14): `SOL-CLT` (Kris installs the Command Line Tools for Xcode 27.0 on sol, then an agent runs `brew reinstall pkgconf` and `rig upgrade`; old tools cause 82-83 of 84 upgrade failures), `SOL-TELEGRAM` (clear the Homebrew cask record, then `rig apply --target telegram` from the App Store), both to pick up after the move to sol; `FW-LIVE` (terra rule comparison; reboot check at the next natural restart), `SOL-FW-TEST`, `UE-089-SHAPE`, `OLD-ORPHANS`, `MGIT-PRESEED`, `SOL-SOURCES`, `SOL-HNR-HARNESS`, `SOL-WHATSAPP`, `SOL-KI-CONFIG-DRIFT`. Each is described in the run folder reports `old-trees`, `sol-build` and `records`.
 
 No action now: `ZED-MD` (later, at `sol`), `FW-LINUX-LIVE` (needs a Linux host), `KEYCHAIN-SSH` (with rig.chezmoi).
 
