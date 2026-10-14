@@ -279,3 +279,7 @@
 ## Decision 66 (2026-10-14T22:22:30Z)
 
 - MARK (Kris, 2026-10-14), as received: "Take a mark at this point and then handle the responses. So we have a strong baseline for future summarization." Class: operational.
+
+## Decision 67 (2026-10-14T22:58:45Z)
+
+- CLI-133-PLAN (Kris, 2026-10-14), as received: "Plan KI-TOOL-KI-CLI-133 now with ki-plan on Sonnet, reproduction against the installed ki first, then report it Ready for my delivery go-ahead". Class: operational.
