@@ -82,6 +82,7 @@ With other threads, no Kris action now:
 - **SYNC-GUARD:** answered; KI Model: ways-of-working folds "level before resume and at every mark" into KI-HARNESS-GOV-189.
 - **CHANNEL-TELEMETRY:** answered; the findings are dispatched as ideas and now sit in the [Command centre](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/command-centre.md), [Host network](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/host-network.md) and [AI observability](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/ai-observability.md) Project notes.
 - **CLI127-LINKS:** answered; outstanding note for [KI-TOOL-KI-CLI-127](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-127-agent-status-live-threads.md)'s next planning pass: point both of its KI-TOOL-KI-CLI-124 links at the pruned GitHub link, [KI-TOOL-KI-CLI-124 (pruned)](https://github.com/knowledgeislands/tools-ki/blob/9c4c0c0/docs/roadmap/KI-TOOL-KI-CLI-124-agent-run-close.md), with no separate commit now.
+- **GATE-REMAIN:** sent 2026-10-15; the remaining `ki repo audit` failures are their owners' to fix. Rig: mac-studio-bootstrap (RECORD-2, BOUNDARY-1) through its checkpoint message block and `~/.local/state/ki/agents/mac-studio-bootstrap/inbox.md`; Observatory: product (LIFECYCLE-1) through a new message block in its checkpoint. The two tools-burndown MD041 reports no longer exist, so no message went.
 
 Dated queue:
 
@@ -94,6 +95,7 @@ Dated queue:
 Master follow-ups (no Kris action): Cowork clean-up of old knowledge-base aliases in `~/workspaces/claude-desktop/` at Kris's next Cowork session; retired `kit-mcp-gmail` entries in legal-principal `.claude/settings.json` and chezmoi `.chezmoiignore`; Paperclip decision cards with the rebuild.
 
 - Parked 2026-10-12: the Rig full-screen mode idea; other parked items are in `thread-history.md` section 5.
+- Parked 2026-10-15: THREADS-CHECKINS: Kris's question on how threads are used and the excessive number of check-ins; Kris picks it up with this thread.
 
 ## Next step
 

@@ -849,3 +849,11 @@
 ## Decision 210 (2026-10-14)
 
 - AREAS-PATTERN (14 October, about 23:50 BST): This has been passed off to ways of working now.
+
+## Decision 211 (2026-10-14)
+
+- CHEZMOI-PROJECT (request from Rig: chezmoi on Kris's behalf, 2026-10-14, non-blocking): 'please register a chezmoi Project note under the Rig Initiative (Streams/Initiatives/rig.md), so the Rig: chezmoi thread can link its report heading to it. Priority is yours; nothing is blocked on it.'
+
+## Decision 212 (2026-10-15)
+
+- From Fnd: baseline-rollout on Kris's behalf, 2026-10-15. GATE-REMAIN: route the remaining ki-principal commit-gate failures to their owning threads - rig.mac-studio-bootstrap checkpoint RECORD-2 and BOUNDARY-1 to Rig: mac-studio-bootstrap; knowledge-islands-model.observatory checkpoint LIFECYCLE-1 to the Observatory thread's owner; tools-burndown dock-plan-resume and patching-plan reports MD041 (truncated, start at ## Done) to tools-burndown. THREADS-CHECKINS: 'park for Kris: his outstanding question about how threads are used and the excessive number of check-ins in this area. Kris will pick it up with you.'

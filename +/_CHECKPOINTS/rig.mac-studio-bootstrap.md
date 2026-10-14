@@ -15,6 +15,7 @@ updated_at: 2026-10-14T16:47:00Z
 - 2026-10-14 · RIG-SOL-TELEGRAM · Kris: replace sol's App Store Telegram with the Homebrew cask (quit the app, approve removal, `rig apply`, sign in again) · detail: [rig-other-mac report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/mac-studio-bootstrap/rig-other-mac.report.md)
 - 2026-10-14 · RIG-SOL-BREW · Master recommends leaving sol's tools-rig checkout link and the stale Homebrew Rig 0.5.0 formula alone for now; this thread decides · detail: [rig-other-mac report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/mac-studio-bootstrap/rig-other-mac.report.md)
 - 2026-10-14 · REBOOT-PMO · Kris: re-bootstrap under the frozen ki-pmo report shape at this thread's next wake · detail: [rig-other-mac report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/mac-studio-bootstrap/rig-other-mac.report.md)
+- 2026-10-15 · GATE-REMAIN · `ki repo audit` still fails this checkpoint, and the fix is this thread's: RECORD-2, the headings must be the exact H1 and the ordered six-section sequence; BOUNDARY-1, the body must hold reconstruction state only and not claim continuity with the originating session
 
 ## Objective
 

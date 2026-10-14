@@ -9,6 +9,10 @@ updated_at: 2026-10-14T00:01:00Z
 
 # knowledge-islands-model.observatory
 
+**Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
+
+- 2026-10-15 · GATE-REMAIN · `ki repo audit` still fails this checkpoint, and the fix is this thread's: LIFECYCLE-1, a checkpoint in `+/_CHECKPOINTS/` must have `state: active` (it reads `resting`)
+
 ## Objective
 
 Reconstruct the `Observatory: product` thread if its session is lost. The thread owns product work in `apps-observatory.local` (`knowledgeislands/apps-observatory.local`, working directory `~/workspaces/knowledge-islands/apps-observatory.local`), opened by the state-of-play master under Decision 157. It sits in the [[knowledge-islands-model|Knowledge Islands model]] Initiative. No Observatory Project note exists in the registry; the related [[command-centre]] Project consumes the Observatory for its state-of-play view but does not own the product.
