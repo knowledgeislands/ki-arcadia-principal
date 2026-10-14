@@ -714,3 +714,34 @@
 ## Decision 177 (2026-10-14)
 
 - Kris 2026-10-14 ~10:12 BST: all decision-log work, the interim snapshot included, belongs to ways-of-working. The master goes back to overseeing threads only and forwards thread-model questions in one line without working them here.
+
+## Decision 178 (2026-10-14)
+
+- Kris 2026-10-14 ~10:40 BST: RIG-063 approved; release Rig 0.6.3 with the cask fix. RIG-LOCAL yes, now: this Mac runs Rig from the tools-rig checkout (install.sh --link), so here the fix lands through the checkout, not the formal release.
+
+## Decision 179 (2026-10-14)
+
+- Kris 2026-10-14 ~10:45 BST: current focus is four threads: Acquire: acquire-intake (Codex, acquire repo), Master: state-of-play, KI Model: ways-of-working and KI Model: knowledge-acquisition. The other threads are out of view and treated as resting; their open handoffs wait in their checkpoints.
+
+## Decision 180 (2026-10-14)
+
+- rig-063 delivered: this Mac runs Rig from the tools-rig checkout (0.6.3+dev); v0.6.3 released through the KI tap. The rig apply hold lifts on this Mac now and on the other Mac after brew upgrade. Open: paperclip-agents drift from the failed apply on 2026-10-12, which predates the cask fix.
+
+## Decision 181 (2026-10-14)
+
+- Kris 2026-10-14 ~11:30 BST:
+- The roadmap has grown to 42 records, so get it down: a census of the growth plus a burn-down proposal for Kris.
+- RIG-063-OTHER-MAC: the master does the Rig upgrade on the other Mac.
+- RIG-063-PAPERCLIP: shut Paperclip down. Capture its running knowledge, then rebuild once the ways-of-working model is settled. Keep eight territories as eight Paperclip organisations, with Paperclip paradigms per organisation. It is likely to run on the Mac Studio, reached over Tailscale by a name URL rather than an IP and port. Needs a machine and service naming scheme and the firewall implications (connection-critical, so a tested restore path). Check whether a Paperclip project already exists (paperclip-bootstrap-and-recovery) and reshape it rather than add new work. Proposal first; no shutdown until Kris approves.
+
+## Decision 182 (2026-10-14)
+
+- ROUTE-LOCAL (Kris, 14 Oct, pasted from acquire-intake): act on the prepared Master message. Coordinate receiving ownership of KB-ACQUIRE-002 and KB-ACQUIRE-003 with knowledge-acquisition, and return the proposed MCP home, hosting and concrete first-probe scope for review before implementation. Review only: no records, repositories, code, migration, credentials, live tests, deployment or push.
+
+## Decision 183 (2026-10-14)
+
+- RC-ALL approved (Kris, 14 Oct): apply the census burn-down. ways-of-working applies ki-agentic-harness and ki-principal parts (it owns the ECO records and the ways-of-working Project) plus RC-OPS-005; an agent here applies ki-techne-harness, tools-techne, tools-ki, tools-rig and ki-specifications. KI-TECHNE-OPS-027 and KI-TOOL-RIG-CORE-047 stay awaiting review until Kris's live checks. RC-OPS-005: rescope now.
+
+## Decision 184 (2026-10-14)
+
+- Paperclip (Kris, 14 Oct): PAPERCLIP-PROJECT approve; PAPERCLIP-SHUTDOWN approve with the rehearsal; PAPERCLIP-AGENTS-DRIFT drop from profile and record the lesson; CAPTURE-STORE: 'Can we lose most of this, I don't want the history or a database backup, I want to recreate it with the same approach but fresh'. So: capture the approach only (lessons, structure, agent instructions and configuration minus secrets), no issues, history, database backup or cold copy; the rehearsal becomes a stop/start flip of the declaration; nothing deleted until Kris confirms.
