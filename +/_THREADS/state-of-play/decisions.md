@@ -753,3 +753,7 @@
 ## Decision 186 (2026-10-14)
 
 - CLI115-PRUNE: ways-of-working confirmed KI-PRINCIPAL-ECO-014 no longer links KI-TOOL-KI-CLI-115 (ki-principal c0b4f88). Under Kris's earlier burn-down approval, prune the cancelled KI-TOOL-KI-CLI-115 in tools-ki through ki-accept, local commit and fast-forward push only.
+
+## Decision 187 (2026-10-14)
+
+- Routed from ways-of-working on Kris's LINK-GUARD approval: deploy the harness ki-coordinator output style to ~/.claude/output-styles/ for ki-pmo coordinating threads in place of Concise, kept out of ki agent launched agents (lesson 3, KI-PRINCIPAL-ECO-013). No Rig: chezmoi session is live, so it goes to Kris as a paste bundled with CMDLINE-APPLY and SOL-LOGIN-ITEMS. REBOOT-ALL noted: openers go out on ways-of-working's clean re-bootstrap signal.
