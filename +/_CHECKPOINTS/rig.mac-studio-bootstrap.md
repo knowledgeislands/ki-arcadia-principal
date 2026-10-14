@@ -27,6 +27,8 @@ Mark: 2026-10-14T14:51Z
 
 **Re-bootstrapped on sol at this mark** (2026-10-14). No commits, decisions or agent runs since 14:48Z; sol stock unchanged (old trees and dead skill links still present, `ki-pmo` still unlinked). Nothing restarted.
 
+**SOL-SCREEN done** (Kris, 2026-10-14: "ok - done up to 9"), except Codex: step 4 is proved by `op vault list` (`op whoami` still says not signed in under app integration; the report's check is wrong, a SOL-RECORDS correction); step 6 applied `~/.claude` and `~/.config/zed` only, because `~/.codex` fails in the `codex-trusted-projects-json` template, where a territory `dot_mgit.toml` manifest lacks `groups.default`. Open query `CODEX-GROUPS`: a read-only agent finds the manifest and proposes the fix. SOL-AGENT-FIX is now unblocked.
+
 **OLD-TREES-RUN done** (Kris, 2026-10-14: "I've moved them into ~/workspaces/_old"). `kit`, `hnr` and `knowledge-wayfinder` are in `~/workspaces/_old` on sol; undo is moving them back. The dead `ki-delegate` and `ki-design-loop` skill links remain and are cleared by SOL-AGENT-FIX, which may now clear the old kit, hnr and kis paths from Claude settings.
 
 Previous mark: 2026-10-14T14:48Z
