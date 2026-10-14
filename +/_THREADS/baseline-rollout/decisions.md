@@ -23,3 +23,19 @@
 ## Decision 6 (2026-10-14T22:24:43Z)
 
 - Kris, 2026-10-14, COMMIT-GATE: Launch one lightest-model background agent to fix the frontmatter in the two reports and the STREAM-9 record list, each committed by explicit path, then commit and push this thread's checkpoint and decisions log. I may well have already dealt with this, so it might be okay. Also, I've got a question outstanding about the use of threads and the excessive amount of check-ins in the area.
+
+## Decision 7 (2026-10-14T23:00:42Z)
+
+- Kris, 2026-10-15, GATE-FOLLOW: Launch one lightest-model background agent to fix and commit +/_THREADS/baseline-rollout/gate-clear.report.md, and to commit Streams/Projects/mac-studio-bootstrap/mac-studio-bootstrap.md by explicit path only if its diff is just the STREAM-9 record-list removal, otherwise leave it and report why.
+
+## Decision 8 (2026-10-14T23:00:42Z)
+
+- Kris, 2026-10-15, GATE-REMAIN: Send the state-of-play thread a message asking it to route the rig.mac-studio-bootstrap and knowledge-islands-model.observatory checkpoint failures and the two tools-burndown report Markdown failures to their owning threads.
+
+## Decision 9 (2026-10-14T23:00:43Z)
+
+- Kris, 2026-10-15, THREADS-CHECKINS: Pass my question about the use of threads and the excessive check-ins to the state-of-play thread as a parked item. For the two items that need to get passed to state of play, if you want to give me a prompt, I'll paste it to it directly.
+
+## Decision 10 (2026-10-14T23:02:37Z)
+
+- Kris, 2026-10-15: 'That prompt has been passed.' GATE-REMAIN and THREADS-CHECKINS handed to the state-of-play thread; nothing further held here.
