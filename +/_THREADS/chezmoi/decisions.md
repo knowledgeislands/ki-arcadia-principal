@@ -309,3 +309,7 @@
 ## Decision 76 (2026-10-14T23:11:36Z)
 
 - 2026-10-15, Kris: BURN-ORDER - 'Now, a Sonnet agent at low effort reads the 13 open KB-DOTFILES-UE records in the chezmoi source, read-only. It reports which are done in practice and ready for my acceptance (starting with KB-DOTFILES-UE-086 and KB-DOTFILES-UE-077), which of the five triage records (KB-DOTFILES-UE-087 to KB-DOTFILES-UE-091) to adopt or close, and a burn-down order. Nothing changes until I answer.'
+
+## Decision 77 (2026-10-14T23:17:20Z)
+
+- 2026-10-15, Kris: TRIAGE - 'A Sonnet agent adopts KB-DOTFILES-UE-087, KB-DOTFILES-UE-088, KB-DOTFILES-UE-090 and KB-DOTFILES-UE-091 at Next, and KB-DOTFILES-UE-089 at Future, then commits locally.' BURN-START - 'After TRIAGE, Sonnet agents at low effort work through, in order: KB-DOTFILES-UE-082; the small source step of KB-DOTFILES-UE-086 (declaring Adobe, Keynote, Numbers, Pages and DaVinci); a read-only check of KB-DOTFILES-UE-077's nine 1Password references and the old cache; KB-DOTFILES-UE-088 in the source only; and the source-only parts of KB-DOTFILES-UE-090 and KB-DOTFILES-UE-091. Each plans the record if it isn't Ready, delivers source changes only with the tests passing, and commits locally; the coordinator pushes. No chezmoi apply or rig apply. Anything that needs design or a decision from me stops and comes back as a query.'
