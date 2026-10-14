@@ -38,7 +38,7 @@ This is the territory master thread for Knowledge Islands. It does only project 
 - **Roadmap:** 33 open Knowledge Islands records on 2026-10-14, up from 19 on 2026-10-12 (Decision 164). Triage burn-down applied (Decisions 163, 164); ROADMAP-SIZING goes to one ways-of-working design record, daily count snapshots first (Decision 165).
 - **Since the last mark:** nothing yet.
 - **Carried across this mark:** Headroom is repaired. Thread-working work (banner, re-anchoring, hooks, messaging between threads, the decision log and [KI-HARNESS-GOV-180](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-180-tracked-thread-decisions-home.md)) is with ways-of-working; this thread oversees only. The stuck threads were recovered by Kris. `rig apply` is held on both Macs until a fixed Rig release is installed.
-- **Running at the mark:** `rig-accept-release` (Rig 0.6.2 through the KI tap); `rig-cask-fix` (fix and push, no release); `tools-local` (queued: every KI tool working locally, then DEV-MODE and RIG-LINK captured and held).
+- **Running:** nothing. Since the mark: Rig 0.6.2 and 0.6.3 released; cask fix live; all KI tools run locally; [KI-TOOL-RIG-CLI-026](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CLI-026-per-tool-development-mode-switch.md) and [KI-TOOL-RIG-DIST-011](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-DIST-011-stale-terra-rig-link.md) held until 2026-11-16.
 - **Focus (Kris, Decisions 137, 158):** Knowledge Islands; burn the roadmap down. Master stays delegate-only with short turns.
 - **Tooling.** `ki` 0.10.1, `mgit` 0.17.0, Rig 0.6.1. Launch with `--rules push` (Decision 123); task-named remote operations are authorised (Decision 132).
 
@@ -68,7 +68,7 @@ Rules live with their durable owners: the roadmap model in GDR-KI-PRINCIPAL-005 
 
 Needs Kris (outstanding at the mark; carried forward until resolved):
 
-- **RIG-063:** release 0.6.3 with the RIG-CASKS fix once `rig-cask-fix` reports. Until a fixed release is installed, `rig apply` stays held on both Macs (Decision 172).
+- **RIG-063-OTHER-MAC:** Rig v0.6.3 is released; this Mac runs Rig from the tools-rig checkout. On the other Mac, `brew upgrade knowledgeislands/tap/rig`, after which `rig apply` can resume there. **RIG-063-PAPERCLIP:** `paperclip-agents` has drifted since the failed apply on 2026-10-12, so `rig doctor` here exits 1; Paperclip is paused.
 - **ACQ-FINISH:** Kris pastes the finish line into the Acer chat (Decisions 166, 167).
 - **BURN-DOWN-NEXT:** [KI-TECHNE-OPS-027](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/roadmap/KI-TECHNE-OPS-027-agent-host-tailscale-key-minting.md) and [KI-TOOL-RIG-CORE-052](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-052-doctor-service-launch-prerequisites.md) at the next burn-down review (Decision 164).
 - **SPEC-REVIEW:** once the roadmaps near zero (Decision 115); ki-specifications is not being moved forward (Decision 153). The tools-ki patch release with `KI_AGENT_RUN` is approved now (Decision 175).
