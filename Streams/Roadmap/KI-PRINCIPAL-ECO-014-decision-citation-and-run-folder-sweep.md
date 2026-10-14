@@ -6,15 +6,14 @@ title: Decision citation sweep
 project: ways-of-working
 purpose: upkeep
 kind: deliver
-status: in-progress
-horizon: now
+status: done
 tags:
   - topic/knowledge-islands
 blocks: []
 blocked_by: []
 baseline_ref: 17c7cc22cf3993e15c7f721c6b3e9630ce534fb2
 created_at: 2026-10-13T23:35:00Z
-updated_at: 2026-10-14T14:11:46Z
+updated_at: 2026-10-14T22:45:00Z
 ---
 
 # Decision Citation and Run-Folder Sweep
@@ -40,7 +39,7 @@ Kris read a numbered citation in a thread summary on 2026-10-14 and said, as rel
 ## Boundary
 
 - The citation sweep: each listed file, in whichever repository, rewritten so the decision is described in the owner's words and dated, with the number removed; each repository commits its own change under its own authority, and this record tracks the whole.
-- The run-folder sweep: reconcile and then archive the eight folders above, plus any Kris adds; each decision checked against its durable owner, each unread report of an agent that exited without `DONE` read before the folder goes.
+- The run-folder sweep was dropped from this record on 2026-10-14, on Kris's word "RUN-WAIVER - leave the four run folders in place; drop the run-folder sweep from KI-PRINCIPAL-ECO-014 and close it on its verified citation half". Each run folder closes from its own thread under the `ki-delegation` standard's rule; Discussion keeps the first pass's gate results.
 - Legal and personal runs, including `legal-bounded-tidy-20261011` and `legal-fr-oct12`, are reconciled only from their own threads, by an agent of that territory; this island's agents do not read them.
 - Not the `ki agent close` command, the launcher change or the standard's wording, which the records named above own.
 - Not the live runs, which close under the standard's rule when their threads close. This includes the `chezmoi` and `mac-studio-bootstrap` runs, whose threads are open and being worked on; any reconcile of their folders happens only from those threads when they close.
@@ -68,11 +67,9 @@ Each repository commits its own change under its own authority; this record trac
 - [x] This island: one commit, `docs(streams): describe cited decisions in the owner's words`. Harness: one commit touching the four roadmap records and `ki-tokenomics` sources, after the harness's own `ki-delegation` rewording has landed so the two do not collide. `tools-ki`: one commit for its two records. `ki-techne-harness` and `tools-techne`: one commit each, by this island's agent under the cross-repository handoff rule, or handed to those repositories as Kris decides below.
 - [x] Push each repository fast-forward under the thread's standing push permission. Done for this island, `tools-ki`, `ki-techne-harness` and `tools-techne`; the harness commit followed Kris's word on 2026-10-14, "commit the harness citation rewrite now", and is on `origin/main`.
 
-### Run-folder sweep, after `ki agent close` is installed
+### Run-folder sweep
 
-- [ ] For each of the eight folders, read `decisions.md`, and for each in-force decision find or create its durable home and record it with `ki agent reconcile <run> <number> <home>`; read each `<name>.report.md` of an agent that exited without `DONE` and note in this record's Discussion what it reported and what, if anything, it changes; leave `legal-bounded-tidy-20261011` and `legal-fr-oct12` to the legal territory's own thread, which runs the same steps there.
-- [ ] Run `ki agent close <run>` for each of the six island folders; on a blocker, resolve it or list it under Discussion for Kris, and never pass `--reconciled` or `--delete` without Kris's word.
-- [ ] Record each archive's `close.md` path in this record's Discussion.
+- [x] Run the reconcile gate for each closed-thread candidate and record the results in Discussion; nothing moved, archived or deleted. The archive steps were dropped on Kris's word "RUN-WAIVER - leave the four run folders in place; drop the run-folder sweep from KI-PRINCIPAL-ECO-014 and close it on its verified citation half".
 
 ## Files touched
 
@@ -80,14 +77,14 @@ Each repository commits its own change under its own authority; this record trac
 - Harness: `docs/roadmap/KI-HARNESS-GOV-168-roll-out-ki-pin-receivers.md`, `KI-HARNESS-GOV-170-keep-resolution-targets-local.md`, `KI-HARNESS-GOV-171-standing-surface-design-rules.md`, `KI-HARNESS-GOV-178-repair-checkpoint-configuration.md`, `KI-HARNESS-OPS-005-acquire-ai-sessions.md` and `skills/environment/ki-tokenomics/references/sources.md`.
 - `tools-ki`: `docs/roadmap/KI-TOOL-KI-CLI-115-enforce-roadmap-writing-checkout.md` and `KI-TOOL-KI-CLI-125-ki-release-contract.md`.
 - `ki-techne-harness`: `docs/roadmap/KI-TECHNE-OPS-018`, `019`, `023`, `024` and `027`. `tools-techne`: `docs/roadmap/KI-TOOL-TECHNE-CLI-006` and `008`.
-- State folder: the six island run folders move to `$KI_STATE_HOME/agents/_archive/`; nothing is deleted.
+- `tools-techne`, at close: `docs/roadmap/KI-TOOL-TECHNE-CLI-009-tailscale-oauth-binding-field.md`, whose adoption note cited the techne thread's log by number after the sweep.
+- State folder: nothing; the run folders stay in place.
 
 ## Verify
 
 - In each swept repository, `git grep -nE 'Decision(s)? [0-9]+' -- .` prints only the matches classified as quotations in Discussion.
 - This island: `ki repo audit --skill ki-repo-kb-streams` reports no failure and no new warning beyond the two pre-existing `STREAM-10` warnings on the `paperclip-bootstrap-and-recovery` and `website` Project notes, which are outside this record. Harness, `tools-ki`, `ki-techne-harness` and `tools-techne`: `ki repo audit --skill ki-work-roadmap` passes, and the harness's `ki repo audit --skill ki-tokenomics` passes.
-- `ki agent status <run>` for each of the six island folders lists no running agent before close; `ki agent close <run>` prints every gate line `ok` and names its archive; `ls $KI_STATE_HOME/agents/_archive/` shows the six and `ls $KI_STATE_HOME/agents/` no longer does.
-- The `chezmoi`, `mac-studio-bootstrap`, `ways-of-working` and both legal folders are untouched: their modification times are unchanged.
+- No run folder is moved, archived or deleted: `ls $KI_STATE_HOME/agents/` still lists every folder named above and `$KI_STATE_HOME/agents/_archive/` does not exist.
 
 ## Dependencies / blocks
 
@@ -117,6 +114,36 @@ None here; the `tools-ki` background-agents guide documents `close` under that r
 ### Roadmap
 
 No follow-on record in this island. Techné repository edits are handled as the answer to the open question below decides, as commits by this island's agent or as handoffs, and open no feature record either way.
+
+## Review
+
+### Delivered
+
+The citation sweep across this island, the harness, `tools-ki`, `ki-techne-harness` and `tools-techne`, from `baseline_ref` `17c7cc2`, and the first pass of the run-folder gate. The run-folder archive was dropped on Kris's word "RUN-WAIVER - leave the four run folders in place; drop the run-folder sweep from KI-PRINCIPAL-ECO-014 and close it on its verified citation half". Excluded, as the Boundary says: the `ki agent close` command, the standard's wording, live runs and other territories' runs.
+
+### Change Summary
+
+Commits `e3ef135` here, `91f63a48` in the harness, `86c56b3` in `tools-ki`, `f1815e6` in `ki-techne-harness`, and `4f179ed` and `a994a28` in `tools-techne`; `a994a28` rewrites the adoption note of KI-TOOL-TECHNE-CLI-009, written after the sweep, in Kris's words from the techne thread's log. This record's link to KI-TOOL-KI-CLI-115 is bare text, so that cancelled record can be pruned on its own.
+
+### Verification
+
+At close on 2026-10-14: `git grep -nE 'Decision(s)? [0-9]+'` outside `+/_THREADS/` and `+/_CHECKPOINTS/` prints only kept matches in each of the five repositories, the new `tools-ki` match in KI-TOOL-KI-CLI-132 being a description of the log's own format, not a citation; this island's `ki repo audit --skill ki-repo-kb-streams` reports no failure and only the two pre-existing `STREAM-10` warnings; `ki repo audit --skill ki-work-roadmap` passes in `tools-techne`. No run folder was moved.
+
+### Outstanding concerns
+
+None for this record. The four closed-thread run folders, `island-model-and-tending`, `techne`, `vallearmonia-community-presence` and `vallearmonia-youtube`, stay in place on Kris's word and close from their own threads.
+
+### Post-change review
+
+The goal's citation half is met: no committed record needs a state folder to say what a decision was. The run-folder half is out of scope by Kris's decision, not left undone. Regression risk is nil; the edits are prose.
+
+### Mini recap
+
+Citations rewritten in five repositories and verified; one late citation fixed at close; run folders left in place. Learning route, not promoted: new records still cite decisions by number, as KI-TOOL-TECHNE-CLI-009 did, so a check at record-writing time would catch them earlier.
+
+## Done
+
+Accepted 2026-10-14 by Kris Brown on the review packet above.
 
 ## Discussion
 
@@ -159,7 +186,7 @@ Rewritten, every other match: in this island the 19 files under Files touched le
 
 Citation sweep delivered on 2026-10-14, commits `e3ef135` here (`docs(streams): describe cited decisions in the owner's words`, 19 files), `86c56b3` in `tools-ki`, `f1815e6` in `ki-techne-harness` and `4f179ed` in `tools-techne`, each by explicit path, rebased and pushed fast-forward to `origin/main`. The three handoff commits name KI-PRINCIPAL-ECO-014 and Kris's "TECHNE-SWEEP - a". Verify: in each of the four repositories `git grep -nE 'Decision(s)? [0-9]+'` prints only the matches classified as kept above; this island's `ki repo audit --skill ki-repo-kb-streams` reports no failure and only the two pre-existing `STREAM-10` warnings; `ki repo audit --skill ki-work-roadmap` passes in the other three.
 
-The harness rewrite of its six files is written and verified (`ki repo audit --skill ki-work-roadmap` and `--skill ki-tokenomics` both pass with it applied, and the remaining matches are the kept quotations in [KI-HARNESS-GOV-180](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-180-tracked-thread-decisions-home.md) and the `ki-delegation` files that record owns), but not committed: the plan above has the harness files wait for the harness's `ki-delegation` rewording, and that record is still draft. The patch is kept with the `ways-of-working` run's working material until Kris says whether to commit it now, since the six files do not overlap the standard, or to wait.
+The harness rewrite of its six files is written and verified (`ki repo audit --skill ki-work-roadmap` and `--skill ki-tokenomics` both pass with it applied, and the remaining matches are the kept quotations in [KI-HARNESS-GOV-180](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-180-tracked-thread-decisions-home.md) and the `ki-delegation` files that record owns), but not committed: the plan above has the harness files wait for the harness's `ki-delegation` rewording, and that record is still draft. The patch is kept with the `ways-of-working` run's working material until Kris says whether to commit it now, since the six files do not overlap the standard, or to wait. Kris then said "commit the harness citation rewrite now", and it landed as `91f63a48` on the harness `origin/main`.
 
 The run-folder sweep has not started: `ki agent close` and `ki agent reconcile` are not in the installed `ki` 0.10.2, which has `decide`, `launch`, `queue` and `status`. Nothing in `$KI_STATE_HOME/agents/` was moved, archived or deleted. The eight folders named above are unchanged.
 
