@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "e147c4a2-c6ce-4e88-be68-93948c9288ac",
+  "status": "current",
+  "command": "deliver",
+  "type": "architecture",
+  "input": "/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/ways-of-working/design/change-management-skills.architecture.json",
+  "output": "/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/diagrams/change-management-skills/change-management-skills.html",
+  "specification": {
+    "sha256": "7e3965e13339ed1ac59f19d39ca1447c3dfd2cac61eda96215a9429f94287f4a",
+    "bytes": 25239
+  },
+  "artifact": {
+    "sha256": "28a71b64b99b5e68a17c31a262effd4b9c50346bf2df72433470f60050487bfa",
+    "bytes": 836509
+  }
+}

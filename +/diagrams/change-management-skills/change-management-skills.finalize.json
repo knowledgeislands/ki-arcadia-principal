@@ -1,0 +1,1088 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "architecture",
+  "quality": "showcase",
+  "startedAt": "2026-10-14T09:38:15.321Z",
+  "specification": {
+    "path": "/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/ways-of-working/design/change-management-skills.architecture.json",
+    "sha256": "7e3965e13339ed1ac59f19d39ca1447c3dfd2cac61eda96215a9429f94287f4a",
+    "bytes": 25239
+  },
+  "artifact": {
+    "path": "/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/diagrams/change-management-skills/change-management-skills.html",
+    "sha256": "28a71b64b99b5e68a17c31a262effd4b9c50346bf2df72433470f60050487bfa",
+    "bytes": 836509
+  },
+  "stages": {
+    "validate": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": null,
+      "execution": "embedded-in-deliver",
+      "command": [
+        "/Users/krisbrown/.local/share/mise/installs/node/24.21.0/bin/node",
+        "/Users/krisbrown/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "architecture",
+        "/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/ways-of-working/design/change-management-skills.architecture.json",
+        "/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/diagrams/change-management-skills/change-management-skills.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "validate",
+        "specification": {
+          "sha256": "7e3965e13339ed1ac59f19d39ca1447c3dfd2cac61eda96215a9429f94287f4a",
+          "bytes": 25239
+        },
+        "validation": {
+          "checksPassed": 9,
+          "checkCount": 9,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        }
+      }
+    },
+    "deliver": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 480,
+      "command": [
+        "/Users/krisbrown/.local/share/mise/installs/node/24.21.0/bin/node",
+        "/Users/krisbrown/.agents/skills/archify/bin/archify.mjs",
+        "deliver",
+        "architecture",
+        "/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/ways-of-working/design/change-management-skills.architecture.json",
+        "/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/diagrams/change-management-skills/change-management-skills.html",
+        "--quality",
+        "showcase",
+        "--repo-root",
+        "/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness",
+        "--json"
+      ],
+      "receipt": {
+        "schemaVersion": 1,
+        "receiptId": "e147c4a2-c6ce-4e88-be68-93948c9288ac",
+        "ok": true,
+        "command": "deliver",
+        "type": "architecture",
+        "input": "/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/ways-of-working/design/change-management-skills.architecture.json",
+        "output": "/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/diagrams/change-management-skills/change-management-skills.html",
+        "specification": {
+          "sha256": "7e3965e13339ed1ac59f19d39ca1447c3dfd2cac61eda96215a9429f94287f4a",
+          "bytes": 25239
+        },
+        "artifact": {
+          "sha256": "28a71b64b99b5e68a17c31a262effd4b9c50346bf2df72433470f60050487bfa",
+          "bytes": 836509
+        },
+        "validation": {
+          "checksPassed": 9,
+          "checkCount": 9,
+          "compositionProfile": "showcase",
+          "compositionStatus": "pass",
+          "errors": 0,
+          "warnings": 0
+        },
+        "evidence": {
+          "verified": true,
+          "repository": "https://github.com/knowledgeislands/ki-agentic-harness",
+          "revision": "1cfa7d89e3e323db3950dbde65c2466358206be0",
+          "references": 41
+        },
+        "update": {
+          "status": "unavailable",
+          "installedVersion": null,
+          "availableVersion": null,
+          "releaseNotes": null,
+          "checkedAt": null,
+          "source": null,
+          "noticeRequired": false,
+          "noticeText": null,
+          "reason": "disabled"
+        }
+      }
+    },
+    "check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 148,
+      "command": [
+        "/Users/krisbrown/.local/share/mise/installs/node/24.21.0/bin/node",
+        "/Users/krisbrown/.agents/skills/archify/bin/archify.mjs",
+        "check",
+        "/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/diagrams/change-management-skills/change-management-skills.html",
+        "--require-provenance"
+      ],
+      "receipt": {
+        "ok": true,
+        "file": "/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/diagrams/change-management-skills/change-management-skills.html",
+        "artifact": {
+          "sha256": "28a71b64b99b5e68a17c31a262effd4b9c50346bf2df72433470f60050487bfa",
+          "bytes": 836509
+        },
+        "checks": [
+          {
+            "name": "single_svg",
+            "ok": true,
+            "details": [
+              "found 1 <svg> block(s)"
+            ]
+          },
+          {
+            "name": "finite_svg",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "orthogonal_arrows",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "label_route_clearance",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "relationship_crossings",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "relationship_corridors",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "container_border_runs",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "route_rhythm",
+            "ok": true,
+            "details": []
+          },
+          {
+            "name": "legend_clearance",
+            "ok": true,
+            "details": []
+          }
+        ],
+        "composition": {
+          "schemaVersion": 1,
+          "profile": "showcase",
+          "status": "pass",
+          "summary": {
+            "errors": 0,
+            "warnings": 0
+          },
+          "metrics": {
+            "properCrossings": 0,
+            "resolvedCrossovers": 2,
+            "ambiguousCorridors": 0,
+            "arrowheadCollisions": 0,
+            "containerBorderRuns": 0,
+            "labelRouteClearanceIssues": 0,
+            "labelCanvasOverflowIssues": 0,
+            "minLabelRouteClearance": 4,
+            "desktopReadabilityIssues": 0,
+            "viewportHeightIssues": 0,
+            "minProjectedNodeTextPx": 6.210350584307179,
+            "maxBends": 3,
+            "routesOverSuggestedBends": 2,
+            "maxStretch": 1.524,
+            "routesOverSuggestedStretch": 1,
+            "minSegmentPx": 13,
+            "minInteriorSegmentPx": 36.7,
+            "shortSegmentCount": 6,
+            "shortEndpointSegmentCount": 6,
+            "shortInteriorSegmentCount": 0,
+            "microSegmentCount": 0
+          },
+          "suggestedLimits": {
+            "bendsPerRelationship": 2,
+            "stretch": 1.35,
+            "segmentPx": 16,
+            "microSegmentPx": 8
+          },
+          "routeReview": {
+            "crossings": [
+              {
+                "left": {
+                  "id": "p-pmo-review-delegation",
+                  "from": "p-pmo-review",
+                  "to": "p-delegation",
+                  "label": "",
+                  "collectionIndex": 11,
+                  "artifactIndex": 12
+                },
+                "right": {
+                  "id": "p-pmo-review-next",
+                  "from": "p-pmo-review",
+                  "to": "p-next",
+                  "label": "hands rollout records",
+                  "collectionIndex": 21,
+                  "artifactIndex": 22
+                },
+                "point": [
+                  120,
+                  831.9999999999999
+                ],
+                "sharedNode": "p-pmo-review"
+              },
+              {
+                "left": {
+                  "id": "p-pmo-delegation",
+                  "from": "p-pmo",
+                  "to": "p-delegation",
+                  "label": "dispatches runs",
+                  "collectionIndex": 17,
+                  "artifactIndex": 18
+                },
+                "right": {
+                  "id": "p-pmo-tokenomics",
+                  "from": "p-pmo",
+                  "to": "p-tokenomics",
+                  "label": "purpose by reference",
+                  "collectionIndex": 20,
+                  "artifactIndex": 21
+                },
+                "point": [
+                  422.09999999999945,
+                  687.9999999999992
+                ],
+                "sharedNode": "p-pmo"
+              }
+            ],
+            "detours": [
+              {
+                "relationship": {
+                  "id": "p-pmo-delegation",
+                  "from": "p-pmo",
+                  "to": "p-delegation",
+                  "label": "dispatches runs",
+                  "collectionIndex": 17,
+                  "artifactIndex": 18
+                },
+                "bends": 3,
+                "stretch": 1.524
+              },
+              {
+                "relationship": {
+                  "id": "p-pmo-tokenomics",
+                  "from": "p-pmo",
+                  "to": "p-tokenomics",
+                  "label": "purpose by reference",
+                  "collectionIndex": 20,
+                  "artifactIndex": 21
+                },
+                "bends": 3,
+                "stretch": 1
+              }
+            ]
+          },
+          "leadingSpace": {
+            "measured": true,
+            "emptyTopPx": 76,
+            "emptyTopRatio": 0.061,
+            "occupiedTop": 76,
+            "viewBoxTop": 0,
+            "canvasHeight": 1238,
+            "typicalNodeHeight": 48,
+            "reviewSuggested": false
+          },
+          "desktopReadability": {
+            "budgetBasis": "legacy-930",
+            "readerContract": "declared-wide-v1",
+            "availableDiagramWidth": 930,
+            "actualBudgetPx": 930,
+            "limit": "legacy",
+            "requestedTargetPx": 7.5,
+            "requestedTargetMet": false,
+            "hardFloorPx": 6,
+            "hardFloorMet": true,
+            "minimumOwner": {
+              "kind": "edge",
+              "id": "t-recap-authoring",
+              "from": "t-recap",
+              "to": "t-authoring"
+            },
+            "minimumSourceTextPx": 8,
+            "minimumProjectedTextPx": 6.210350584307179,
+            "semanticTextCount": 99
+          },
+          "issues": []
+        },
+        "provenance": "current",
+        "deliveryReceiptId": "e147c4a2-c6ce-4e88-be68-93948c9288ac"
+      }
+    },
+    "browser-check": {
+      "status": "pass",
+      "exitCode": 0,
+      "durationMs": 3563,
+      "command": [
+        "/Users/krisbrown/.local/share/mise/installs/node/24.21.0/bin/node",
+        "/Users/krisbrown/.agents/skills/archify/bin/archify.mjs",
+        "browser-check",
+        "/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/diagrams/change-management-skills/change-management-skills.html",
+        "--json",
+        "--require-provenance"
+      ],
+      "execution": "in-process",
+      "receipt": {
+        "schemaVersion": 1,
+        "ok": true,
+        "command": "browser-check",
+        "evidenceKind": "automated-browser",
+        "status": "pass",
+        "visualReview": "not-requested",
+        "provenance": "current",
+        "deliveryReceiptId": "e147c4a2-c6ce-4e88-be68-93948c9288ac",
+        "artifact": {
+          "path": "/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/diagrams/change-management-skills/change-management-skills.html",
+          "sha256": "28a71b64b99b5e68a17c31a262effd4b9c50346bf2df72433470f60050487bfa",
+          "bytes": 836509
+        },
+        "state": {
+          "detail": "read",
+          "motion": "still"
+        },
+        "chrome": {
+          "status": "available",
+          "executable": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+        },
+        "diagnostics": [],
+        "containment": {
+          "status": "pass",
+          "policy": "fit-or-reader-declared-readable-vertical-scroll",
+          "viewports": [
+            {
+              "width": 1440,
+              "height": 900,
+              "theme": "light",
+              "innerWidth": 1440,
+              "innerHeight": 900,
+              "scrollWidth": 1440,
+              "scrollHeight": 1210,
+              "overflowX": false,
+              "overflowY": true,
+              "verticalScrollAccepted": true,
+              "overflowDisposition": "readable-vertical-scroll",
+              "readerLayout": "adaptive",
+              "readerOverflow": "authored",
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1063,
+              "diagramWidth": 1033,
+              "pageComposition": {
+                "bodyPaddingPx": 12,
+                "headerPx": 52,
+                "diagramChromePx": 78,
+                "svgPx": 1067,
+                "cardsPx": 0,
+                "viewBoxHeight": 1238
+              },
+              "viewBoxWidth": 1198,
+              "minimumProjectedNodeTextPx": 6.898163606010017,
+              "minimumProjectedNonEdgeTextPx": 7.501752921535893,
+              "minimumProjectedEdgeTextPx": 6.898163606010017,
+              "minimumProjectedNodeText": "depends on",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "t-recap-authoring",
+                "from": "t-recap",
+                "to": "t-authoring"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 10,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 54,
+              "viewerChromeActive": true,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            },
+            {
+              "width": 1600,
+              "height": 1000,
+              "theme": "light",
+              "innerWidth": 1600,
+              "innerHeight": 1000,
+              "scrollWidth": 1600,
+              "scrollHeight": 1276,
+              "overflowX": false,
+              "overflowY": true,
+              "verticalScrollAccepted": true,
+              "overflowDisposition": "readable-vertical-scroll",
+              "readerLayout": "adaptive",
+              "readerOverflow": "authored",
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1063,
+              "diagramWidth": 1033,
+              "pageComposition": {
+                "bodyPaddingPx": 64,
+                "headerPx": 60,
+                "diagramChromePx": 84,
+                "svgPx": 1067,
+                "cardsPx": 0,
+                "viewBoxHeight": 1238
+              },
+              "viewBoxWidth": 1198,
+              "minimumProjectedNodeTextPx": 6.898163606010017,
+              "minimumProjectedNonEdgeTextPx": 7.501752921535893,
+              "minimumProjectedEdgeTextPx": 6.898163606010017,
+              "minimumProjectedNodeText": "depends on",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "t-recap-authoring",
+                "from": "t-recap",
+                "to": "t-authoring"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 10,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 54,
+              "viewerChromeActive": true,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "theme": "light",
+              "innerWidth": 1920,
+              "innerHeight": 1080,
+              "scrollWidth": 1920,
+              "scrollHeight": 1276,
+              "overflowX": false,
+              "overflowY": true,
+              "verticalScrollAccepted": true,
+              "overflowDisposition": "readable-vertical-scroll",
+              "readerLayout": "adaptive",
+              "readerOverflow": "authored",
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1063,
+              "diagramWidth": 1033,
+              "pageComposition": {
+                "bodyPaddingPx": 64,
+                "headerPx": 60,
+                "diagramChromePx": 84,
+                "svgPx": 1067,
+                "cardsPx": 0,
+                "viewBoxHeight": 1238
+              },
+              "viewBoxWidth": 1198,
+              "minimumProjectedNodeTextPx": 6.898163606010017,
+              "minimumProjectedNonEdgeTextPx": 7.501752921535893,
+              "minimumProjectedEdgeTextPx": 6.898163606010017,
+              "minimumProjectedNodeText": "depends on",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "t-recap-authoring",
+                "from": "t-recap",
+                "to": "t-authoring"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 10,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 54,
+              "viewerChromeActive": true,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            },
+            {
+              "width": 2048,
+              "height": 1320,
+              "theme": "light",
+              "innerWidth": 2048,
+              "innerHeight": 1320,
+              "scrollWidth": 2048,
+              "scrollHeight": 1320,
+              "overflowX": false,
+              "overflowY": false,
+              "verticalScrollAccepted": false,
+              "overflowDisposition": "contained",
+              "readerLayout": "adaptive",
+              "readerOverflow": null,
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1097,
+              "diagramWidth": 1047,
+              "pageComposition": {
+                "bodyPaddingPx": 64,
+                "headerPx": 68,
+                "diagramChromePx": 94,
+                "svgPx": 1082,
+                "cardsPx": 0,
+                "viewBoxHeight": 1238
+              },
+              "viewBoxWidth": 1198,
+              "minimumProjectedNodeTextPx": 6.991652754590985,
+              "minimumProjectedNonEdgeTextPx": 7.603422370617695,
+              "minimumProjectedEdgeTextPx": 6.991652754590985,
+              "minimumProjectedNodeText": "depends on",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "t-recap-authoring",
+                "from": "t-recap",
+                "to": "t-authoring"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 10,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 44,
+              "viewerChromeActive": true,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            }
+          ]
+        },
+        "themeStates": {
+          "status": "pass",
+          "viewports": [
+            {
+              "width": 1440,
+              "height": 900,
+              "requestedTheme": "light",
+              "resolvedTheme": "light",
+              "ok": true
+            },
+            {
+              "width": 1600,
+              "height": 1000,
+              "requestedTheme": "light",
+              "resolvedTheme": "light",
+              "ok": true
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "requestedTheme": "light",
+              "resolvedTheme": "light",
+              "ok": true
+            },
+            {
+              "width": 2048,
+              "height": 1320,
+              "requestedTheme": "light",
+              "resolvedTheme": "light",
+              "ok": true
+            },
+            {
+              "width": 1440,
+              "height": 900,
+              "requestedTheme": "dark",
+              "resolvedTheme": "dark",
+              "ok": true
+            },
+            {
+              "width": 2048,
+              "height": 1320,
+              "requestedTheme": "dark",
+              "resolvedTheme": "dark",
+              "ok": true
+            }
+          ]
+        },
+        "readability": {
+          "status": "pass",
+          "minimumProjectedNodeTextPx": 6,
+          "viewports": [
+            {
+              "width": 1440,
+              "height": 900,
+              "theme": "light",
+              "innerWidth": 1440,
+              "innerHeight": 900,
+              "scrollWidth": 1440,
+              "scrollHeight": 1210,
+              "overflowX": false,
+              "overflowY": true,
+              "verticalScrollAccepted": true,
+              "overflowDisposition": "readable-vertical-scroll",
+              "readerLayout": "adaptive",
+              "readerOverflow": "authored",
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1063,
+              "diagramWidth": 1033,
+              "pageComposition": {
+                "bodyPaddingPx": 12,
+                "headerPx": 52,
+                "diagramChromePx": 78,
+                "svgPx": 1067,
+                "cardsPx": 0,
+                "viewBoxHeight": 1238
+              },
+              "viewBoxWidth": 1198,
+              "minimumProjectedNodeTextPx": 6.898163606010017,
+              "minimumProjectedNonEdgeTextPx": 7.501752921535893,
+              "minimumProjectedEdgeTextPx": 6.898163606010017,
+              "minimumProjectedNodeText": "depends on",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "t-recap-authoring",
+                "from": "t-recap",
+                "to": "t-authoring"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 10,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 54,
+              "viewerChromeActive": true,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            },
+            {
+              "width": 1600,
+              "height": 1000,
+              "theme": "light",
+              "innerWidth": 1600,
+              "innerHeight": 1000,
+              "scrollWidth": 1600,
+              "scrollHeight": 1276,
+              "overflowX": false,
+              "overflowY": true,
+              "verticalScrollAccepted": true,
+              "overflowDisposition": "readable-vertical-scroll",
+              "readerLayout": "adaptive",
+              "readerOverflow": "authored",
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1063,
+              "diagramWidth": 1033,
+              "pageComposition": {
+                "bodyPaddingPx": 64,
+                "headerPx": 60,
+                "diagramChromePx": 84,
+                "svgPx": 1067,
+                "cardsPx": 0,
+                "viewBoxHeight": 1238
+              },
+              "viewBoxWidth": 1198,
+              "minimumProjectedNodeTextPx": 6.898163606010017,
+              "minimumProjectedNonEdgeTextPx": 7.501752921535893,
+              "minimumProjectedEdgeTextPx": 6.898163606010017,
+              "minimumProjectedNodeText": "depends on",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "t-recap-authoring",
+                "from": "t-recap",
+                "to": "t-authoring"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 10,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 54,
+              "viewerChromeActive": true,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "theme": "light",
+              "innerWidth": 1920,
+              "innerHeight": 1080,
+              "scrollWidth": 1920,
+              "scrollHeight": 1276,
+              "overflowX": false,
+              "overflowY": true,
+              "verticalScrollAccepted": true,
+              "overflowDisposition": "readable-vertical-scroll",
+              "readerLayout": "adaptive",
+              "readerOverflow": "authored",
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1063,
+              "diagramWidth": 1033,
+              "pageComposition": {
+                "bodyPaddingPx": 64,
+                "headerPx": 60,
+                "diagramChromePx": 84,
+                "svgPx": 1067,
+                "cardsPx": 0,
+                "viewBoxHeight": 1238
+              },
+              "viewBoxWidth": 1198,
+              "minimumProjectedNodeTextPx": 6.898163606010017,
+              "minimumProjectedNonEdgeTextPx": 7.501752921535893,
+              "minimumProjectedEdgeTextPx": 6.898163606010017,
+              "minimumProjectedNodeText": "depends on",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "t-recap-authoring",
+                "from": "t-recap",
+                "to": "t-authoring"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 10,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 54,
+              "viewerChromeActive": true,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            },
+            {
+              "width": 2048,
+              "height": 1320,
+              "theme": "light",
+              "innerWidth": 2048,
+              "innerHeight": 1320,
+              "scrollWidth": 2048,
+              "scrollHeight": 1320,
+              "overflowX": false,
+              "overflowY": false,
+              "verticalScrollAccepted": false,
+              "overflowDisposition": "contained",
+              "readerLayout": "adaptive",
+              "readerOverflow": null,
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1097,
+              "diagramWidth": 1047,
+              "pageComposition": {
+                "bodyPaddingPx": 64,
+                "headerPx": 68,
+                "diagramChromePx": 94,
+                "svgPx": 1082,
+                "cardsPx": 0,
+                "viewBoxHeight": 1238
+              },
+              "viewBoxWidth": 1198,
+              "minimumProjectedNodeTextPx": 6.991652754590985,
+              "minimumProjectedNonEdgeTextPx": 7.603422370617695,
+              "minimumProjectedEdgeTextPx": 6.991652754590985,
+              "minimumProjectedNodeText": "depends on",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "t-recap-authoring",
+                "from": "t-recap",
+                "to": "t-authoring"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 10,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 44,
+              "viewerChromeActive": true,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            }
+          ]
+        },
+        "viewerChrome": {
+          "status": "pass",
+          "viewports": [
+            {
+              "width": 1440,
+              "height": 900,
+              "theme": "light",
+              "innerWidth": 1440,
+              "innerHeight": 900,
+              "scrollWidth": 1440,
+              "scrollHeight": 1210,
+              "overflowX": false,
+              "overflowY": true,
+              "verticalScrollAccepted": true,
+              "overflowDisposition": "readable-vertical-scroll",
+              "readerLayout": "adaptive",
+              "readerOverflow": "authored",
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1063,
+              "diagramWidth": 1033,
+              "pageComposition": {
+                "bodyPaddingPx": 12,
+                "headerPx": 52,
+                "diagramChromePx": 78,
+                "svgPx": 1067,
+                "cardsPx": 0,
+                "viewBoxHeight": 1238
+              },
+              "viewBoxWidth": 1198,
+              "minimumProjectedNodeTextPx": 6.898163606010017,
+              "minimumProjectedNonEdgeTextPx": 7.501752921535893,
+              "minimumProjectedEdgeTextPx": 6.898163606010017,
+              "minimumProjectedNodeText": "depends on",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "t-recap-authoring",
+                "from": "t-recap",
+                "to": "t-authoring"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 10,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 54,
+              "viewerChromeActive": true,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            },
+            {
+              "width": 1600,
+              "height": 1000,
+              "theme": "light",
+              "innerWidth": 1600,
+              "innerHeight": 1000,
+              "scrollWidth": 1600,
+              "scrollHeight": 1276,
+              "overflowX": false,
+              "overflowY": true,
+              "verticalScrollAccepted": true,
+              "overflowDisposition": "readable-vertical-scroll",
+              "readerLayout": "adaptive",
+              "readerOverflow": "authored",
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1063,
+              "diagramWidth": 1033,
+              "pageComposition": {
+                "bodyPaddingPx": 64,
+                "headerPx": 60,
+                "diagramChromePx": 84,
+                "svgPx": 1067,
+                "cardsPx": 0,
+                "viewBoxHeight": 1238
+              },
+              "viewBoxWidth": 1198,
+              "minimumProjectedNodeTextPx": 6.898163606010017,
+              "minimumProjectedNonEdgeTextPx": 7.501752921535893,
+              "minimumProjectedEdgeTextPx": 6.898163606010017,
+              "minimumProjectedNodeText": "depends on",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "t-recap-authoring",
+                "from": "t-recap",
+                "to": "t-authoring"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 10,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 54,
+              "viewerChromeActive": true,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            },
+            {
+              "width": 1920,
+              "height": 1080,
+              "theme": "light",
+              "innerWidth": 1920,
+              "innerHeight": 1080,
+              "scrollWidth": 1920,
+              "scrollHeight": 1276,
+              "overflowX": false,
+              "overflowY": true,
+              "verticalScrollAccepted": true,
+              "overflowDisposition": "readable-vertical-scroll",
+              "readerLayout": "adaptive",
+              "readerOverflow": "authored",
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1063,
+              "diagramWidth": 1033,
+              "pageComposition": {
+                "bodyPaddingPx": 64,
+                "headerPx": 60,
+                "diagramChromePx": 84,
+                "svgPx": 1067,
+                "cardsPx": 0,
+                "viewBoxHeight": 1238
+              },
+              "viewBoxWidth": 1198,
+              "minimumProjectedNodeTextPx": 6.898163606010017,
+              "minimumProjectedNonEdgeTextPx": 7.501752921535893,
+              "minimumProjectedEdgeTextPx": 6.898163606010017,
+              "minimumProjectedNodeText": "depends on",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "t-recap-authoring",
+                "from": "t-recap",
+                "to": "t-authoring"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 10,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 54,
+              "viewerChromeActive": true,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            },
+            {
+              "width": 2048,
+              "height": 1320,
+              "theme": "light",
+              "innerWidth": 2048,
+              "innerHeight": 1320,
+              "scrollWidth": 2048,
+              "scrollHeight": 1320,
+              "overflowX": false,
+              "overflowY": false,
+              "verticalScrollAccepted": false,
+              "overflowDisposition": "contained",
+              "readerLayout": "adaptive",
+              "readerOverflow": null,
+              "readerFit": "intrinsic-height",
+              "ok": true,
+              "readerWidth": 1097,
+              "diagramWidth": 1047,
+              "pageComposition": {
+                "bodyPaddingPx": 64,
+                "headerPx": 68,
+                "diagramChromePx": 94,
+                "svgPx": 1082,
+                "cardsPx": 0,
+                "viewBoxHeight": 1238
+              },
+              "viewBoxWidth": 1198,
+              "minimumProjectedNodeTextPx": 6.991652754590985,
+              "minimumProjectedNonEdgeTextPx": 7.603422370617695,
+              "minimumProjectedEdgeTextPx": 6.991652754590985,
+              "minimumProjectedNodeText": "depends on",
+              "minimumProjectedNodeTextDetail": "edge",
+              "minimumProjectedNodeTextOwner": {
+                "kind": "edge",
+                "id": "t-recap-authoring",
+                "from": "t-recap",
+                "to": "t-authoring"
+              },
+              "minimumRequiredNodeTextPx": 6,
+              "readabilityOk": true,
+              "hasLegend": true,
+              "hasNavigationDock": true,
+              "legendDockIntersectionArea": 0,
+              "dockStageIntersectionArea": 0,
+              "dockStageGap": 10,
+              "requiredDockStageGap": 10,
+              "viewerChromeStageOk": true,
+              "viewerChromeReserve": 44,
+              "viewerChromeActive": true,
+              "viewerChromeOk": true,
+              "resolvedTheme": "light"
+            }
+          ]
+        },
+        "captures": {
+          "status": "not-requested",
+          "screenshots": [],
+          "contactSheet": null
+        },
+        "sidecars": {
+          "receipt": "change-management-skills.browser-check.json",
+          "files": []
+        }
+      }
+    }
+  },
+  "diagnostics": [],
+  "evidence": {
+    "receipt": "/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/diagrams/change-management-skills/change-management-skills.finalize.json",
+    "summaryReceipt": "/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/diagrams/change-management-skills/change-management-skills.finalize-summary.json",
+    "browserCheckReceipt": "/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/diagrams/change-management-skills/change-management-skills.browser-check.json"
+  },
+  "visualReview": "not-requested",
+  "finishedAt": "2026-10-14T09:38:19.720Z",
+  "durationMs": 4398,
+  "update": {
+    "status": "unavailable",
+    "installedVersion": null,
+    "availableVersion": null,
+    "releaseNotes": null,
+    "checkedAt": null,
+    "source": null,
+    "noticeRequired": false,
+    "noticeText": null,
+    "reason": "disabled"
+  }
+}

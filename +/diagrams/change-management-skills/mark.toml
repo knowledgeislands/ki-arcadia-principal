@@ -1,0 +1,8 @@
+# Working-area mark: who wrote this folder and when. Early application of the
+# mark rule Kris confirmed on 2026-10-14 ("MARK-RULE - yes, that reading"),
+# captured as KI-HARNESS-GOV-184 and not yet implemented in ki-delegation or ki-diagrams.
+thread = "KI Model: ways-of-working"
+run = "ways-of-working"
+agent = "principal-tidy"
+written_at = "2026-10-14T09:38:30Z"
+rebuilt_from = "Streams/Projects/ways-of-working/design/change-management-skills.architecture.json"
