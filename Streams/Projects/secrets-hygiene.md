@@ -26,4 +26,12 @@ This Project sits in [[rig|Rig]], because the secrets chezmoi renders are part o
 - Kris made the Project active on 2026-10-09, when Kris approved all capture-sweep-2 proposals on 2026-10-09 in the state-of-play run, including 'secrets-hygiene active, Rig: chezmoi its thread'; the Rig: chezmoi thread carries it.
 - The work record that reorganises the vaults safely lives in the chezmoi roadmap and names this Project.
 - **Idea: repeatable 1Password triage.** A mostly read-only triage on a cadence, realised as a recurring Activity or a chezmoi housekeeping template, that files the inbox vault, catches misplaced, duplicate and stale items, bad titles and URLs and `^` follow-up tags, checks every `op://` reference still resolves, and applies only what Kris approves. Kept as an idea on 2026-10-11 in place of a cancelled chezmoi work record; Kris approved on 2026-10-11, as logged in the chezmoi run, cancelling and pruning the three chezmoi records as ideas under the Rig Initiative, agent-host and secrets-hygiene. If revived, it carries the rules Kris has already settled: the Rig vault holds anything Kris uses on a machine or connects to, Wi-Fi and unlock codes included; items sharing a service are named with a bracketed qualifier; URL fixes point to the service's home page; nothing goes to 1Password's Archive during triage - an item to retire gets `^archive` and Kris archives it; and an item in the wrong category is recreated in the right one with the same fields and tags, its `op://` references repointed and the render confirmed unchanged, before the original is archived. Values are compared by hash, never printed.
+  - Left for the first triage, from the 2026-10-14 decision on the leftovers:
+  - In the app, move three tool sign-ins out of the Personal inbox, and one sign-in out of Rig, all into Personal - Kris; the command line cannot move them.
+  - Say whose generic `Google` item sits in the Howden Browns vault.
+  - Say whose generic `Microsoft` item sits in the Retford Browns vault.
+  - Say which vault the business item for an insurer belongs in.
+  - Tick or drop the deferred sections 3 (duplicate, stale and defunct items) and 2c of the vault plan.
+  - Conceal the plain-text fields of the bot item for the Valle Armonia Telegram bot.
+  - Check the categories of the signing-key and key-holding items.
 - Notes and records here name vaults by purpose only - never item titles or personal names.

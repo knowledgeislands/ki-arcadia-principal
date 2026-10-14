@@ -293,3 +293,11 @@
 ## Decision 72 (2026-10-14T20:28:25Z)
 
 - Kris, 2026-10-14 21:3x BST: 'we are getting close to our token limits and we have already hit the limit on fable. try to prioritise work that is more mechanical and on a lower model level to optimise what we have left until a reset.'
+
+## Decision 73 (2026-10-14T21:12:08Z)
+
+- Kris, 2026-10-14 ~21:45 BST, answering the full summary's reply block (all option a): APPLY - "I run rig doctor, chezmoi apply and rig doctor on the laptop, then tell this thread the findings." RIGTEST - "A Sonnet background agent updates both Paperclip expectations in tests/rig-catalogue.test.mjs to match the catalogue, reruns the tests, then commits and pushes." B-START - "After APPLY, I run mise install on the laptop to fetch the 15 pins; a Sonnet background agent then checks rig doctor for any tool still missing and reports." RIG-DECLARE - "A Sonnet background agent declares rust (rustc, cargo) and the eight cargo tools by binary name in the Rig catalogue, kept in the mise config, as a source change in KB-DOTFILES-UE-086; it runs the tests, then commits and pushes." PUBLIC-VIEW - "A Sonnet background agent adds python to public to match uv, keeps actionlint and zig in core only, then commits and pushes." FORM - "Keep ~/.claude/output-styles/ki-coordinator.md as a chezmoi link to the harness checkout, and delete the coord-style report at the next mark." VAULT-LEFTOVERS - "Add the vault-apply-3 items (the in-app moves, the Howden Browns Google and Retford Browns Microsoft owners, the Directline business item, deferred sections 3 and 2c) and the Telegram bot and signing-key checks to the repeatable-triage idea in the secrets-hygiene Project, then delete the vault-apply-3 report at the next mark." PROJECT-REG - "Hand state-of-play a non-blocking request to register a chezmoi Project note under the Rig Initiative; link this thread's heading to it once it exists."
+
+## Decision 74 (2026-10-14T21:20:37Z)
+
+- Kris, 2026-10-14: 'I can't stress this enough and I'll be saying this to every single thread, but it's absolutely imperative that you commit your work.'
