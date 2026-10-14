@@ -547,3 +547,11 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 130 (2026-10-14T20:24:33Z)
 
 - RELAUNCH-MODEL - relaunch area-diagrams, gate-release, pmo-simplify and mark on claude-opus-5-5 at their same effort, each first picking up any partial work left in its repository, with log-writer and heartbeat queued behind pmo-simplify as before
+
+## Decision 131 (2026-10-14T20:55:14Z)
+
+- CI-STORE - adopt KI-TOOL-KI-CLI-126 into Now and plan it, so that ki repo repair reports an unbound store without failing, the audit step runs again, and CI goes red only on real findings
+
+## Decision 132 (2026-10-14T20:55:14Z)
+
+- GOV-192 - accept KI-HARNESS-GOV-192 as delivered, since v0.10.4 pins it and ki-principal's hook uses it, and prune it
