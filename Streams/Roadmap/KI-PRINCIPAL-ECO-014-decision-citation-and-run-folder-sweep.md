@@ -14,7 +14,7 @@ blocks: []
 blocked_by: []
 baseline_ref: 17c7cc22cf3993e15c7f721c6b3e9630ce534fb2
 created_at: 2026-10-13T23:35:00Z
-updated_at: 2026-10-14T09:49:40Z
+updated_at: 2026-10-14T09:56:03Z
 ---
 
 # Decision Citation and Run-Folder Sweep
@@ -64,9 +64,9 @@ Each repository commits its own change under its own authority; this record trac
 ### Citation sweep, repository by repository
 
 - [x] Re-run `git grep -nE 'Decision(s)? [0-9]+' -- .` in each repository above and classify each match as a citation to rewrite or a quotation to keep, listing the classification in this record's Discussion before editing.
-- [ ] For each citation, read the decision in the run's log, in the state folder or the thread's tracked folder, and replace the number with the owner's operative words, dated, and the name of the file that holds the rest; where the log entry quotes nothing, describe the decision and date it. A Project note or design file is edited only in the sentence that cites; checkpoints under `+/_CHECKPOINTS/` are not edited.
+- [x] For each citation, read the decision in the run's log, in the state folder or the thread's tracked folder, and replace the number with the owner's operative words, dated, and the name of the file that holds the rest; where the log entry quotes nothing, describe the decision and date it. A Project note or design file is edited only in the sentence that cites; checkpoints under `+/_CHECKPOINTS/` are not edited.
 - [x] This island: one commit, `docs(streams): describe cited decisions in the owner's words`. Harness: one commit touching the four roadmap records and `ki-tokenomics` sources, after the harness's own `ki-delegation` rewording has landed so the two do not collide. `tools-ki`: one commit for its two records. `ki-techne-harness` and `tools-techne`: one commit each, by this island's agent under the cross-repository handoff rule, or handed to those repositories as Kris decides below.
-- [ ] Push each repository fast-forward under the thread's standing push permission.
+- [ ] Push each repository fast-forward under the thread's standing push permission. Done for this island, `tools-ki`, `ki-techne-harness` and `tools-techne`; the harness push follows its commit.
 
 ### Run-folder sweep, after `ki agent close` is installed
 
@@ -154,6 +154,14 @@ Kept, because the number is not a citation of authority:
 - `ki-techne-harness`: `KI-TECHNE-OPS-018` "Decision 5" and "decision 3" name items of the linked audit and of ADR-KI-PRINCIPAL-003. `tools-techne`: `KI-TOOL-TECHNE-CLI-006` "Decisions 2, 4 and 8" name items in the committed ODR-KI-PRINCIPAL-001 references.
 
 Rewritten, every other match: in this island the 19 files under Files touched less the five kept above, 60 citations of the ways-of-working, state-of-play, chezmoi and Techne runs; in the harness six files citing the state-of-play, acquire-intake, knowledge-acquisition and ways-of-working runs; in `tools-ki` [KI-TOOL-KI-CLI-115](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-115-enforce-roadmap-writing-checkout.md) citing the state-of-play and tools-burndown runs; in `ki-techne-harness` five records citing the state-of-play and Techne runs; in `tools-techne` two records citing the Techne and tools-burndown runs. Each rewrite quotes the operative words from the run's log, as recorded there, with the date and the run's name.
+
+### Delivery
+
+Citation sweep delivered on 2026-10-14, commits `e3ef135` here (`docs(streams): describe cited decisions in the owner's words`, 19 files), `86c56b3` in `tools-ki`, `f1815e6` in `ki-techne-harness` and `4f179ed` in `tools-techne`, each by explicit path, rebased and pushed fast-forward to `origin/main`. The three handoff commits name KI-PRINCIPAL-ECO-014 and Kris's "TECHNE-SWEEP - a". Verify: in each of the four repositories `git grep -nE 'Decision(s)? [0-9]+'` prints only the matches classified as kept above; this island's `ki repo audit --skill ki-repo-kb-streams` reports no failure and only the two pre-existing `STREAM-10` warnings; `ki repo audit --skill ki-work-roadmap` passes in the other three.
+
+The harness rewrite of its six files is written and verified (`ki repo audit --skill ki-work-roadmap` and `--skill ki-tokenomics` both pass with it applied, and the remaining matches are the kept quotations in [KI-HARNESS-GOV-180](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-180-tracked-thread-decisions-home.md) and the `ki-delegation` files that record owns), but not committed: the plan above has the harness files wait for the harness's `ki-delegation` rewording, and that record is still draft. The patch is kept with the `ways-of-working` run's working material until Kris says whether to commit it now, since the six files do not overlap the standard, or to wait.
+
+The run-folder sweep has not started: `ki agent close` and `ki agent reconcile` are not in the installed `ki` 0.10.2, which has `decide`, `launch`, `queue` and `status`. Nothing in `$KI_STATE_HOME/agents/` was moved, archived or deleted. The eight folders named above are unchanged.
 
 ### Adoption
 
