@@ -4,7 +4,7 @@ thread: knowledge-islands-model.knowledge-acquisition
 label: 'Knowledge Islands Model: knowledge-acquisition'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-14T11:20:00Z
+updated_at: 2026-10-14T13:25:00Z
 ---
 
 # knowledge-islands-model.knowledge-acquisition
@@ -40,8 +40,8 @@ The provider-neutral acquisition lifecycle is documented in one Pillars note, AI
 
 - GRANOLA-PLAN (held, receiver-owned): acquire's KB-ACQUIRE-002 Granola tools-ki/Harness support; this Project returns owners, build/test paths and gates. Migration stays separately gated. Open until Kris closes it.
 - BINARY-PROOF (held, receiver-owned): acquire's KB-ACQUIRE-003 ChatGPT binary bridge; the master thread settles MCP home, hosting and ownership, this Project returns the first-probe scope. Open until Kris closes it.
-- TOWER (open): The Tower Game's 15 conversations sit in `acquire` `captures/_review/`; move to `personal` or keep in `_review`.
-- SPIRIT (open): Personal - Spirituality's 18 conversations are in `personal`; keep or move to `sacred-inquiry`.
+- TOWER (decided 2026-10-14: move to `personal`): `tower-move` background agent moving the 15 packages and updating KI-HARNESS-OPS-005's binding.
+- SPIRIT (open): Kris wants a closer look first (2026-10-14); `spirit-review` background agent reading the 18 conversations read-only to recommend `personal`, `sacred-inquiry` or a split.
 - ORPHANS (open): 77 export files (about 106 MB) belong to no conversation and are listed only; stage to `_review` or leave listed.
 - Whether the lifecycle note leads the remaining work depends on what KI-HARNESS-OPS-005 has learnt.
 - 2026-10-11 (from island-model-and-tending, parked): ChatGPT territory keys move to kebab-case territory names (knowledge-islands, humans-not-robots, equal-remedy, valle-armonia, techmedix, legal, personal); island-model-and-tending renames the kit-principal capture folders. Use the new keys when reconciling ChatGPT captures.
