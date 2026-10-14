@@ -4,7 +4,7 @@ thread: rig.mac-studio-bootstrap
 label: 'Rig: mac-studio-bootstrap'
 state: active
 created_at: 2026-10-08T08:45:00Z
-updated_at: 2026-10-14T10:50:00Z
+updated_at: 2026-10-14T10:56:00Z
 ---
 
 # rig.mac-studio-bootstrap
@@ -23,11 +23,11 @@ Re-read this block after every compaction.
 
 ## Current state
 
-Mark: 2026-10-11T03:48Z, decisions log at Decision 40
+Mark: 2026-10-14T10:56Z
 
 Decisions log: `~/.local/state/ki/agents/mac-studio-bootstrap/decisions.md` (machine-local, on the laptop, not in Git); every "Decision N" in this checkpoint refers to that file.
 
-ki-delegation read at f2b14dca
+ki-pmo read at 839ad1e1
 
 **Machine.** `sol` (studio, macOS 27.0.1 since 2026-10-14) at `100.90.130.74` on the tailnet, user `krisbrown`, key-based SSH from the laptop with agent forwarding for this host only; use `ssh krisbrown@100.90.130.74`, as plain `ssh sol` fails on `known_hosts`. FileVault is on, so after a restart nothing, Tailscale included, comes up until Kris unlocks it at the screen; any reboot needs Kris's approval. Host names and types are in the Project's [hosts note](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-bootstrap/design/hosts.md).
 
