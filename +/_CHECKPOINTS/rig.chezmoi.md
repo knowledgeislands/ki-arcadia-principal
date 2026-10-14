@@ -4,7 +4,7 @@ thread: rig.chezmoi
 label: 'Rig: chezmoi'
 state: active
 created_at: 2026-10-08T08:40:00Z
-updated_at: 2026-10-14T07:20:00Z
+updated_at: 2026-10-14T09:10:00Z
 ---
 
 # rig.chezmoi
@@ -12,6 +12,13 @@ updated_at: 2026-10-14T07:20:00Z
 ## Objective
 
 Work the open KB-DOTFILES-UE records in the chezmoi source (`~/.local/share/chezmoi`, GitHub `krisb/dotfiles`), keeping the workstation accurate, tidy and observable under the [Rig](../../Streams/Initiatives/rig.md) Initiative. chezmoi does not declare `ki-checkpoint`, so this thread's checkpoint lives in Arcadia.
+
+**Thread working rules** (re-read after any compaction, with ki-delegation):
+
+- Role: the Rig: chezmoi project thread under ki-delegation, coordinating background agents (`ki agent launch`) in the chezmoi source; the master thread is state-of-play.
+- Report: every unit ends in the full owner report - `#` banner, What has been done, What is in progress (with "Outstanding - no action requested now"), Outstanding queries as `<TAG> - <title>` with Summary, Need from you and Recommendation, then a fenced `text` reply block. No output style shortens it.
+- Quiet level: timestamped one-to-two-line plain-language updates; minimal visible tool use, outcomes only, no command output, commit identifiers or step narration.
+- Standing rules: only Kris moves the mark; record approvals with `ki agent decide chezmoi` before acting and never infer approval; burn the roadmap down with no new feature records (Decision 58); other threads' committed work may be pushed beneath ours when checks pass, naming it; connection-critical changes need a tested restore path; follow-up releases stop and ask first; commit explicit paths; never handle secret values; `rig doctor` before and after `conf.d` changes; leave other threads' uncommitted changes alone.
 
 ## Current state
 
@@ -26,6 +33,7 @@ ki-delegation read at 71d7a0fd
 - **claude-swap** runs as the launchd service `uk.me.kris.rig.claude-swap-auto` with the consume-first strategy. Check it with `cswap list` or `cswap status --token-status`; after re-adding expired credentials with `cswap add`, restart it with `launchctl kickstart -k gui/$(id -u)/uk.me.kris.rig.claude-swap-auto`. Log: `~/Library/Logs/uk.me.kris.rig.claude-swap-auto.log`.
 - **Token over SSH (Decisions 53-57):** `op_cache` reads the Automation token from `~/.config/op-cache/service-account-automation` (mode 600) and no longer uses the Keychain; both guides updated and pushed. The file is on the laptop and `sol`, and `op_cache` on `sol` resolves an Automation item over SSH with no prompt.
 - **Since the mark:** KB-DOTFILES-UE-072 (machine-neutral two-checkout rule) and KB-DOTFILES-UE-085 (copy-key script skips itself once the private key exists; `op_cache` race fixed) are delivered, accepted and pruned; `chezmoi status` is empty on the laptop and `sol`. KB-DOTFILES-UE-079 is accepted and pruned: Diagram, Google Drive, Home Assistant and HP are declared in `core`. Its removal list and install-route alignment moved to [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md). 1Password, the 1Password CLI, Telegram and Tailscale already install the same way on both Macs.
+- **KB-DOTFILES-UE-086 section A delivered** by the `ue086-a` agent: 15 mise pins; `uv`, `python`, `actionlint` and `zig` declared as mise tools; the Homebrew `python@3.x` declarations removed; tests and both guides updated. state-of-play pushed it with its own work. The record stays in progress: sections B and C are Kris-attended and wait on RIG-CASKS.
 - **Open records:** [KB-DOTFILES-UE-071](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-071-audit-macos-privacy-permissions.md) and [KB-DOTFILES-UE-027](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-027-honest-rationales-per-tool.md) are the gated records Kris kept; [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) (Ready, pushed; Kris decided all four open items, Decisions 54 and 55; delivery is Kris-attended at `sol`); [KB-DOTFILES-UE-082](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-082-tolerate-missing-template-tools.md), [KB-DOTFILES-UE-084](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-084-render-zshenv-on-vega.md) and [KB-DOTFILES-UE-077](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-077-reorganise-1password-vaults-safely.md) (triage); [KB-DOTFILES-UE-035](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-035-install-whatsapp-spool-refresh.md) ([knowledge-acquisition](../../Streams/Projects/knowledge-acquisition.md)); [KB-DOTFILES-UE-076](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-076-always-run-latest-source.md) (mac-studio-bootstrap thread). KB-DOTFILES-UE-065, KB-DOTFILES-UE-074 and KB-DOTFILES-UE-078 are cancelled and pruned and kept as ideas in the Rig Initiative and the agent-host and secrets-hygiene Projects.
 
 ## Decisions made
@@ -45,15 +53,17 @@ The machine-local decisions log (`~/.local/state/ki/agents/chezmoi/decisions.md`
 
 Needs Kris:
 
-- **RIG-CASKS:** Rig 0.6.1 reports every Homebrew cask (54 tools, Chrome included) as `unavailable (application-metadata-invalid)`, so `rig doctor` shows 58 findings and the SVG handler is blocked. Cause: Rig reads cask metadata with `HOMEBREW_NO_INSTALL_FROM_API=1`, and with no local `homebrew/cask` tap Homebrew 7 then returns `auto_updates` as null. A tools-rig defect for state-of-play, which owns releases. Recommended: hand it over as a blocking defect and hold `rig apply` on both Macs until a fixed release is installed.
+- **PUBLIC-VIEW:** the new mise `python`, `actionlint` and `zig` declarations from KB-DOTFILES-UE-086 section A are in `core` only; `node`, `bun` and `uv` are also in `public`. Recommended: add `python` to `public` to match `uv`, and keep `actionlint` and `zig` in `core`.
 
 Other open questions:
 
+- **RIG-CASKS handed to state-of-play (Decision 65), blocking:** Rig 0.6.1 reports every Homebrew cask `unavailable (application-metadata-invalid)` because it reads cask metadata with `HOMEBREW_NO_INSTALL_FROM_API=1` and no local `homebrew/cask` tap, so `rig doctor` shows 58 findings. `rig apply` is held on both Macs until a fixed release is installed; KB-DOTFILES-UE-086 section B and the SVG handler wait on it.
+- **Gate baseline (Decision 63):** five dotfiles tests fail on `origin/main`: two from the KI-HARNESS-GOV-182 rename of `ki-work-housekeeping`, which `.ki.toml` still declares, and the vega/techne tests since `264341f`. The `gate-baseline` agent is fixing them, local commits only.
 - Parked 2026-10-14: PAPERCLIP-DRIFT - the laptop's `rig doctor` reports `paperclip-agents` drift (eight agents) and a failed apply on 2026-10-12; Kris deferred it (Decision 56). [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md)'s Verify names it rather than reporting the laptop clean.
-- **SVG handler (Decisions 57, 60 and 62):** `[default-application.svg]` (Chrome, `public.svg-image`, `core`) is written in `private_40-macos.toml` and applied to `~/.config/rig`, but left uncommitted: Rig 0.6.1 reports it `blocked-by:google-chrome` because of the cask defect under RIG-CASKS.
+- **SVG handler (Decisions 57, 60 and 62):** `[default-application.svg]` (Chrome, `public.svg-image`, `core`) is written in `private_40-macos.toml` and applied to `~/.config/rig`, but left uncommitted: Rig 0.6.1 reports it `blocked-by:google-chrome` because of the RIG-CASKS defect.
 - Handoff from rig.mac-studio-bootstrap (Decision 25), non-blocking: consider a 1Password service account scoped to the Rig vault ([KB-DOTFILES-UE-077](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-077-reorganise-1password-vaults-safely.md)), so chezmoi applies need no unlock prompt and agents can apply on sol over SSH unattended; the token would be stored on each machine. That thread owns priority and design.
 - For `state-of-play`, non-blocking: Kris wants a proposal for a new standalone repository holding a macOS-settings catalogue. It would merge the typed nix-darwin `system.defaults` options and macos-defaults.com entries, read each setting's live value, mark those Rig declares, and turn a System Settings change into a ready Rig declaration. Rig keeps applying; KB-DOTFILES-HK-004 would use it as its source. Kris decided this on 2026-10-11 (Decision 44); state-of-play owns where and when it is proposed.
 
 ## Next step
 
-Get Kris's answer on RIG-CASKS; review the `ue086-a` agent's section A delivery of [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md); once a fixed Rig is installed, verify and commit the SVG handler. Then KB-DOTFILES-UE-071 and KB-DOTFILES-UE-027, under the burn-down focus (Decision 58).
+Review the `gate-baseline` agent's fixes and push them once the gate passes; get Kris's answer on PUBLIC-VIEW; when state-of-play ships a fixed Rig, verify and commit the SVG handler and start [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) section B with Kris. Then KB-DOTFILES-UE-071 and KB-DOTFILES-UE-027 (Decision 58).
