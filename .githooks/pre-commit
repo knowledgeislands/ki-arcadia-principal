@@ -25,5 +25,6 @@ export PATH
 sh "$root/.husky/pre-commit" "$@" || exit 1
 # The focused Knowledge Base audit is the island's own shape gate (ki-repo-kb GATE-1).
 # It stays check-only and leaves machine-local checks, such as registry and runtime
-# activation, to the full audit and CI.
-exec ki repo audit --repo "$root" --skill ki-repo-kb
+# activation, to the full audit and CI. `--staged` keeps evaluation whole-tree but
+# scopes the verdict to the staged paths; CI keeps the whole-tree verdict.
+exec ki repo audit --repo "$root" --skill ki-repo-kb --staged
