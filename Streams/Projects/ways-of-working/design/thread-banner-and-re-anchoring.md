@@ -1,61 +1,84 @@
 ---
 note_type: streams/design
-updated: 2026-10-14T11:20:00Z
+updated: 2026-10-14T13:30:00Z
 author: Written with Claude
 ---
 
 # Thread banner and re-anchoring
 
-Design only, for Kris to sanity-check before anything is built. Amended after the Master relayed Kris's answers of 2026-10-14: BANNER-MARK is confirmed, the resume line is weighed as a compaction, and the messaging interface now covers where Kris sees cross-session work. It answers the Master's relay of Kris's request: "every coordination-thread summary or owner report ends with a multi-line status banner modelled on the ki-recap banner. The banner states plainly whether the thread is AT REST (all work concluded, nothing in progress, no open queries) or not, and why. The banner carries one copyable resume line Kris can paste back into the thread later", and the hooks-diagnose finding that "after compaction the shape itself is what gets lost". Kris's instruction of 2026-10-14 at the Master gives this thread "the whole thread-working model - how coordination threads work, their skills, hooks, the banner, re-bootstrap and inter-thread messaging".
+Design only, for Kris to sanity-check before anything is built. Amended after the Master relayed Kris's answers of 2026-10-14: BANNER-MARK is confirmed, the resume line is weighed as a compaction, and the messaging interface now covers where Kris sees cross-session work. Amended again the same day for BANNER-LETTERS: the frame now carries four-letter block words, REST, BUSY and DONE, and the resume line issues a fresh summary rather than re-outputting the last one. It answers the Master's relay of Kris's request: "every coordination-thread summary or owner report ends with a multi-line status banner modelled on the ki-recap banner. The banner states plainly whether the thread is AT REST (all work concluded, nothing in progress, no open queries) or not, and why. The banner carries one copyable resume line Kris can paste back into the thread later", and the hooks-diagnose finding that "after compaction the shape itself is what gets lost". Kris's instruction of 2026-10-14 at the Master gives this thread "the whole thread-working model - how coordination threads work, their skills, hooks, the banner, re-bootstrap and inter-thread messaging".
 
 Sources: the `ways-of-working` decisions log, the Master's [hooks-diagnose report](/Users/krisbrown/.local/state/ki/agents/state-of-play/hooks-diagnose.report.md), the `ki-recap` [completion banner](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/skills/change-management/ki-recap/references/standards-session-recap.md), the `ki-delegation` [background-run standard](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/skills/governance/ki-delegation/references/standards-background-runs.md) at harness revision `d4e2d8e8`, and [coordinator-reminder.sh](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/hooks/coordinator-reminder.sh) with its test.
 
 ## 1. Mock status banner
 
-The banner closes every Summary, recap and full summary, after the reply block. It borrows the `ki-recap` frame (52 display columns, fixed first line so transcript archives can search for it) but speaks plainly inside. Line one carries the state word; the lines beneath say why. Evidence lines sit under the frame with three leading spaces. The resume line is the last thing in the message, in its own one-line fenced block so it copies cleanly.
+The banner closes every Summary, recap and full summary, after the reply block. It uses the `ki-recap` frame as it stands: 52 display columns, a four-letter block word in the same glyphs as `ki-recap`'s DONE, three fixed phrases beside it, so transcript archives can search for a state by its block word. The frame is fixed per state and never padded or reworded. Below it, with three leading spaces, come the label line, then one line each for running, queued and waiting on you, in that order and only where they apply, then the housekeeping line. The resume line is the last thing in the message, in its own one-line fenced block so it copies cleanly.
 
-### AT REST
+Three states, from Kris at the Master on 14 October (BANNER-LETTERS): "a conversational thread can be considered done. That's the end of the conversation. But a coordination thread can either be busy or at rest. Whether or not it then ends up being done is more a situation about the project itself, and in effect, it's when we say that project's closed and pull out and tidy up all of the stuff that's been happening."
 
-```text
-╭──────────────────────────────────────────────────╮
-│  THREAD AT REST · KI Model: ways-of-working      │
-│  nothing running, nothing queued                 │
-│  no open queries, every decision logged          │
-╰──────────────────────────────────────────────────╯
-   ways-of-working · mark 2026-10-13T04:03Z · decisions log at Decision 50
-   checkpoint committed and pushed · banner 2026-10-14T09:04Z
-   held, not blocking: PAPERCLIP-REQ until Wave F · parked: 1
-```
+- **REST**: nothing is running and nothing is queued. Open queries, held items and parked items do not change the word; they show on the lines below.
+- **BUSY**: anything is running or queued.
+- **DONE**: shown by a coordination thread once only, at Project close, after the close-out tidy: every logged decision promoted to its durable home, the design folder resolved, the checkpoint retired, the run archived. No resume line follows it.
 
-```text
-Resume KI Model: ways-of-working under ki-delegation since 2026-10-14T09:04Z: re-bootstrap, mark, summary, take stock, restart work given since, then banner.
-```
-
-### NOT AT REST
+### REST
 
 ```text
 ╭──────────────────────────────────────────────────╮
-│  THREAD NOT AT REST · KI Model: ways-of-working  │
-│  running: harness-push                           │
-│  queued: mark-tidy, apps-sweep, principal-enact  │
-│  waiting on you: KI-RELEASE, RESUME-COMPACT      │
+│  █▀▀▄ █▀▀▀ █▀▀▀ ▀▀█▀   · thread at rest          │
+│  █▀▀▄ █▀▀  ▀▀▀█   █    · nothing running         │
+│  █  █ █▄▄▄ ▄▄▄█   █    · nothing queued          │
 ╰──────────────────────────────────────────────────╯
-   ways-of-working · mark 2026-10-13T04:03Z · decisions log at Decision 50
-   checkpoint committed, 1 commit unpushed · banner 2026-10-14T09:04Z
-   held, not blocking: PAPERCLIP-REQ until Wave F · parked: 1
+   KI Model: ways-of-working · mark 2026-10-13T04:03Z
+   waiting on you: KI-RELEASE, RESUME-COMPACT
+   checkpoint committed and pushed · banner 2026-10-14T09:04Z · held: PAPERCLIP-REQ until Wave F · parked: 1
 ```
 
 ```text
-Resume KI Model: ways-of-working under ki-delegation since 2026-10-14T09:04Z: re-bootstrap, mark, summary, take stock, restart work given since, then banner.
+Resume KI Model: ways-of-working under ki-delegation since 2026-10-14T09:04Z: re-bootstrap, mark, fresh summary since the mark with carried-forward open points, take stock, restart work given since, then banner.
 ```
 
-Why NOT AT REST, in the frame: one line each for running agents, queued agents and open Needs tags, in that order, and only the lines that apply. Other reasons take the same slot: `waiting on: Master, HOOK-FIX`, `blocked: Headroom proxy down`, `uncommitted: checkpoint`. AT REST needs all four of: no agent running or queued, no open Needs query, the checkpoint committed, and every decision since the mark logged. Held and parked items never block AT REST; they are named on the third evidence line so they are not forgotten.
+### BUSY
+
+```text
+╭──────────────────────────────────────────────────╮
+│  █▀▀▄ █  █ █▀▀▀ █  █   · thread busy             │
+│  █▀▀▄ █  █ ▀▀▀█  ▀█▀   · running or queued work  │
+│  █▄▄▀ █▄▄█ ▄▄▄█   █    · lines below say which   │
+╰──────────────────────────────────────────────────╯
+   KI Model: ways-of-working · mark 2026-10-13T04:03Z
+   running: harness-push
+   queued: mark-tidy, apps-sweep, principal-enact
+   waiting on you: KI-RELEASE, RESUME-COMPACT
+   checkpoint committed, 1 commit unpushed · banner 2026-10-14T09:04Z · held: PAPERCLIP-REQ until Wave F · parked: 1
+```
+
+```text
+Resume KI Model: ways-of-working under ki-delegation since 2026-10-14T09:04Z: re-bootstrap, mark, fresh summary since the mark with carried-forward open points, take stock, restart work given since, then banner.
+```
+
+### DONE
+
+```text
+╭──────────────────────────────────────────────────╮
+│  █▀▀▄ █▀▀█ █▄ █ █▀▀▀   · project closed          │
+│  █  █ █  █ █ ██ █▀▀    · decisions promoted      │
+│  █▄▄▀ █▄▄█ █  █ █▄▄▄   · thread tidied away      │
+╰──────────────────────────────────────────────────╯
+   KI Model: ways-of-working · closed 2026-11-02T16:10Z
+   decisions: every entry logged since 13 October promoted, none held
+   design folder resolved · checkpoint retired · run archived
+   outcome: the Project note links the Decision Record on thread working and the ki-pmo standard
+```
+
+No resume line follows DONE: there is nothing to resume, and reopening the Project is a new opener from the state-of-play thread.
+
+The lines below the frame, in order: the label line (thread label and the mark, cited by its time, never by a decision number); `running:` with agent names; `queued:` with agent names; `waiting on you:` with open Needs tags; the housekeeping line with checkpoint state, banner time, held items and the parked count. Other reasons for BUSY take the running or queued slot in words: `waiting on: Master, HOOK-FIX`, `blocked: Headroom proxy down`, `uncommitted: checkpoint`. REST needs only that no agent is running or queued. Open queries, an uncommitted checkpoint and unlogged decisions do not make a thread BUSY; they show on the lines below so Kris sees them, and the housekeeping line says `checkpoint uncommitted` or `decisions unlogged: 2` plainly. Held and parked items never change the word.
 
 The resume line makes the thread, in order:
 
 1. re-bootstrap: re-read `ki-delegation` (Coordinator responsiveness, Reporting, Thread working rules) and its own checkpoint, including the Thread working rules block, and run `ki agent status`;
 2. mark: strike a checkpoint mark at the resume time, commit it, confirm in one line;
-3. summary: re-output the Summary it last gave, in full, so the thread and Kris read the same state;
+3. fresh summary: issue a new Summary covering only what follows the mark, plus the open points carried forward from before it, so the thread and Kris read the same state without re-reading history;
 4. take stock since the banner time on the line: decisions log, run status, inbox, and owner messages;
 5. restart any work given since the banner, then end with a fresh banner.
 
@@ -65,11 +88,11 @@ The thread name on the line is a guard: a thread whose checkpoint label does not
 
 | Unit | What it is | Boundary | Owner | Hand-offs |
 | --- | --- | --- | --- | --- |
-| Banner | Closing frame on every Summary, recap and full summary: state (AT REST or NOT AT REST), why, evidence lines, resume line | Reads state, never changes it; never replaces the owner report above it | `ki-delegation` Reporting, under Coordinating threads | Hooks only re-inject the pointer; `ki-recap` keeps its own single-session banner |
+| Banner | Closing frame on every Summary, recap and full summary: block word (REST, BUSY, or DONE at Project close), label line, running, queued and waiting lines, housekeeping line, resume line | Reads state, never changes it; never replaces the owner report above it | `ki-delegation` Reporting, under Coordinating threads | Hooks only re-inject the pointer; `ki-recap` keeps its own single-session banner |
 | Resume line | One copyable owner instruction that runs the five steps | Does nothing a human could not say in words; the thread name guards against the wrong session | `ki-delegation` Reporting | Step 2 calls the mark (`ki-checkpoint`); step 4 reads the inbox and decisions log (`ki agent`) |
-| Mark | Baseline in the checkpoint's `Current state`: `Mark: <UTC>, decisions log at Decision <N>` | Struck only by the owner, by "mark", "recap and mark" or the resume line | `ki-checkpoint` owns the field and its form; `ki-delegation` owns when it is struck and the recap window it bounds | Recap since the mark reads it; full summary never moves it |
+| Mark | Baseline in the checkpoint's `Current state`: `Mark: <UTC>, decisions logged to <UTC of last entry>` | Struck only by the owner, by "mark", "recap and mark" or the resume line | `ki-checkpoint` owns the field and its form; `ki-delegation` owns when it is struck and the recap window it bounds | Recap since the mark reads it; full summary never moves it |
 | Thread working rules block | Short block at the top of a checkpoint's Objective: role, report shape, level, tool quietness, standing rules | Current rules only; durable rules stay in skills, the block names them | `ki-checkpoint` owns the block's place and shape; the master thread propagates its content | Re-anchoring re-reads it; the resume line re-reads it |
-| Re-anchoring after compaction | Step list a compacted thread runs before its next reply | Reading and one-line confirmation only; no work | `ki-delegation` Thread working rules, new subsection | Triggered by the compact hook pointer or by `Re-bootstrap ki-delegation.`; not a resume (no mark, no summary) |
+| Re-anchoring after compaction | Step list a compacted thread runs before its next reply | Reading and one-line confirmation only; no work | `ki-delegation` Thread working rules, new subsection | Triggered by the compact hook pointer or by `Re-bootstrap ki-delegation.`; not a resume (no mark, no fresh summary) |
 | Compact hook pointer | One sentence the `SessionStart`/`compact` hook injects, naming the subsection | Pointer only; carries no rules of its own | Harness `hooks/coordinator-reminder.sh` and test | Reads nothing from the checkpoint; the subsection does the rest |
 | RESTORE-PATH rule | Any connection-critical change carries a tested restore path that reconnects first, then evaluates | Rollout plans and briefs; not a technical runbook | `ki-delegation` (briefs and footers) and `ki-engineering` standard (repositories) | Rig and chezmoi repositories cite the standard rather than restate it |
 | Thread name | The checkpoint `thread` id, for example `knowledge-islands-model.ways-of-working`; its last segment is the run name; the Claude session is named the same | Convention, no registry | `ki-delegation` Project threads | `ki agent status` lists runs; Claude `ListAgents` lists sessions by that name |
@@ -92,7 +115,7 @@ After compaction, or when the owner says `Re-bootstrap ki-delegation.`, the thre
 3. runs `ki agent status` and reads its inbox;
 4. confirms in one line, then answers in the [owner report](#owner-report) form at the owner's level, closing with the [banner](#banner).
 
-Re-anchoring moves no mark and re-outputs no summary; the [resume line](#banner) does both.
+Re-anchoring moves no mark and issues no fresh summary; the [resume line](#banner) does both.
 ```
 
 **Refreshing this guidance** gains a fourth trigger: `after compaction`.
@@ -105,7 +128,7 @@ Re-anchoring moves no mark and re-outputs no summary; the [resume line](#banner)
 A runtime hook backs these rules: the harness `hooks/coordinator-reminder.sh` injects a one-line reminder, naming the cadence and the owner-report form, on every owner message, and after compaction injects a pointer to [Re-anchoring after compaction](#re-anchoring-after-compaction). It fires in a thread whose checkout holds `+/_CHECKPOINTS/` and stays silent in agents `ki agent` launches. The hook is registered per machine by the user-environment manager.
 ```
 
-**Banner**, in Reporting under Coordinating threads, replacing the present `#` banner bullet's state words: the opening `#` heading stays; the closing banner is added as above, with the AT REST conditions, the NOT AT REST lines, the evidence lines and the resume line. The three forms table gains "closes with the banner" in Sections.
+**Banner**, in Reporting under Coordinating threads, replacing the present `#` banner bullet's state words: the opening `#` heading stays; the closing banner is added as above, with the REST and BUSY conditions, the DONE close, the lines below the frame and the resume line. The three forms table gains "closes with the banner" in Sections.
 
 **Hook change**, `hooks/coordinator-reminder.sh` and `coordinator-reminder.test.ts`:
 
@@ -152,19 +175,19 @@ Until ECO-012 delivers, the checkpoint and the thread status line are the surfac
 
 **Recovering a thread showing a red x.** The red x means the backend turn errored, not that the thread is lost: the checkpoint, decisions log and inbox hold everything it needs.
 
-1. Do not open a new thread first. Paste that thread's resume line into the same Zed thread. If the thread replies, it re-anchors, strikes the mark, re-outputs its summary and takes stock, and the inbox gives it every message the outage swallowed.
+1. Do not open a new thread first. Paste that thread's resume line into the same Zed thread. If the thread replies, it re-anchors, strikes the mark, issues a fresh summary since the mark and takes stock, and the inbox gives it every message the outage swallowed.
 2. If Zed will not send into the thread, open a new thread in the same project folder, and paste the resume line. The name on the line and the checkpoint label match, so the guard passes; the thread names its session after its thread id and the old transcript becomes history.
-3. The recovered thread reports, under take stock, what it missed and what it did about it, and its banner says `recovered <UTC>` on the second evidence line for that one report.
+3. The recovered thread reports, under take stock, what it missed and what it did about it, and its banner says `recovered <UTC>` on the housekeeping line for that one report.
 
 Messages sent during an outage need no re-send: the inbox is the channel, the nudge is lost, and the resume line's take stock reads the inbox. A sender that only nudged without writing the inbox entry has not sent the message.
 
 ## 5. BANNER-MARK, confirmed, and the resume line as a compaction
 
-Kris at the Master on 2026-10-14: "BANNER-MARK: confirmed. The resume line is the equivalent of a compaction for the checkpoint and coordination thread, and may also trigger a real compaction." The resume line therefore strikes the mark first and re-outputs the summary second (steps 2 and 3 above), and this is no longer provisional. The summary re-output is the Summary form (since last message), so it does not depend on the mark, and the next recap covers from the resume. Outstanding items carry forward across marks, so nothing is dropped.
+Kris at the Master on 2026-10-14: "BANNER-MARK: confirmed. The resume line is the equivalent of a compaction for the checkpoint and coordination thread, and may also trigger a real compaction." The resume line therefore strikes the mark first and issues a fresh summary second (steps 2 and 3 above), and this is no longer provisional. The fresh summary covers only what follows the new mark plus the open points carried forward, so it is built from the checkpoint and log rather than from transcript memory, and the next recap covers from the resume. Outstanding items carry forward across marks, so nothing is dropped.
 
 ### 5.1 Option RESUME-COMPACT: the resume line triggers a real compaction
 
-Claude Code accepts `/compact <instructions>`: it summarises the transcript, keeping what the instructions name, and the `SessionStart` hook then fires with `source: compact`, which is where the re-anchoring pointer is injected. Codex CLI has its own `/compact`, which summarises without instructions. Two facts shape the option. First, `/compact` ends the turn: the runtime compacts and waits, so the instructions shape the summary but do not drive the five steps. Second, after a compaction the summary in step 3 is rebuilt from the checkpoint and the decisions log rather than re-output from memory, which is the no-transcript reconstruction `ki-checkpoint` is for, at the cost of detail that was only in the transcript.
+Claude Code accepts `/compact <instructions>`: it summarises the transcript, keeping what the instructions name, and the `SessionStart` hook then fires with `source: compact`, which is where the re-anchoring pointer is injected. Codex CLI has its own `/compact`, which summarises without instructions. Two facts shape the option. First, `/compact` ends the turn: the runtime compacts and waits, so the instructions shape the summary but do not drive the five steps. Second, after a compaction the fresh summary in step 3 is built from the checkpoint and the decisions log rather than from memory, which is the no-transcript reconstruction `ki-checkpoint` is for, at the cost of detail that was only in the transcript.
 
 So the option is a two-line resume block rather than a longer single line. The first line is optional; the second is the resume line as it stands:
 
@@ -184,15 +207,13 @@ Resume KI Model: ways-of-working under ki-delegation since 2026-10-14T09:04Z: re
 
 The same three steps in a Codex thread in Zed test the Codex adapter; the Codex control is `/compact` in the Codex CLI itself. An agent cannot drive Zed, so the control for Claude is the Claude Code terminal, where `/compact <instructions>` is documented; the only agent-runnable part is the hook test in section 3.
 
-**Recommendation.** Keep the resume line a single paste that does not compact, and offer the `/compact` line as an optional first paste Kris uses when the thread is long or has just recovered from an error. Reasons: the two cannot be one line because `/compact` ends the turn; the mark and the summary already give the checkpoint and the coordination thread their logical compaction, which is what Kris named; and a compaction that is not needed throws away transcript detail for nothing. If the Zed test fails, nothing in the design changes: the second line still works and the first is simply unavailable in Zed.
+**Recommendation.** Keep the resume line a single paste that does not compact, and offer the `/compact` line as an optional first paste Kris uses when the thread is long or has just recovered from an error. Reasons: the two cannot be one line because `/compact` ends the turn; the mark and the fresh summary already give the checkpoint and the coordination thread their logical compaction, which is what Kris named; and a compaction that is not needed throws away transcript detail for nothing. If the Zed test fails, nothing in the design changes: the second line still works and the first is simply unavailable in Zed.
 
 ## 6. Open questions for Kris
 
-### BANNER-FRAME - framed like ki-recap, or plain lines
+### BANNER-FRAME - settled
 
-- Summary: the mock uses the `ki-recap` 52-column frame with plain words inside, so archives can search `THREAD AT REST`.
-- Need from you: frame or no frame.
-- Recommendation: frame. It makes the state visible at a glance across several threads' updates.
+Settled by Kris at the Master on 14 October (BANNER-LETTERS): "(a). Yeah, that's great." The frame is the `ki-recap` frame with four-letter block words, REST, BUSY and DONE, in `ki-recap`'s glyphs; archives search by block word. Section 1 carries the three mocks.
 
 ### RESUME-GUARD - thread name on the resume line
 
@@ -200,11 +221,15 @@ The same three steps in a Codex thread in Zed test the Codex adapter; the Codex 
 - Need from you: keep the name, or drop it for a shorter line.
 - Recommendation: keep it. One paste into the wrong Zed tab otherwise marks and re-summarises the wrong thread.
 
-### AT-REST - what counts as open
+### AT-REST - settled
 
-- Summary: AT REST means no agent running or queued, no open Needs query, checkpoint committed, decisions logged. Held (PAPERCLIP-REQ) and parked items appear on an evidence line but do not block it.
-- Need from you: agree, or say that held items block AT REST.
-- Recommendation: agree. A thread holding one item for a future wave can still rest.
+Settled by the same words: "a coordination thread can either be busy or at rest." REST means nothing running and nothing queued; BUSY means anything is. Open queries, held items, parked items and an uncommitted checkpoint do not change the word; they appear on the lines below the frame. DONE is not a third resting state but the Project's close: "it's when we say that project's closed and pull out and tidy up all of the stuff that's been happening."
+
+### CLOSE-TIDY - what the close-out tidy contains
+
+- Summary: DONE is shown once, after the tidy: every logged decision promoted to its home, the design folder resolved (notes graduated and deleted, or moved under the DESIGN-HOME answer), the checkpoint retired, the run archived by `ki agent close`.
+- Need from you: confirm those four, or add to them.
+- Recommendation: confirm. The sibling thread-types note's Project close row lists the same four and `ki agent close` can gate each.
 
 ### INBOX - inbox file as the channel
 
@@ -246,9 +271,8 @@ The same three steps in a Codex thread in Zed test the Codex adapter; the Codex 
 RESUME-COMPACT - optional first paste; run the Zed test
 SURFACE - approve the rule and the four surfaces; status line yes
 REDX - approve the procedure
-BANNER-FRAME - frame
 RESUME-GUARD - keep the thread name on the line
-AT-REST - agree: held and parked items do not block
+CLOSE-TIDY - confirm the four tidy steps
 INBOX - approve the inbox channel and session naming
 RESTORE-HOME - approve ki-delegation and ki-engineering
 HOOK-RUNTIME - approve the CLAUDECODE split

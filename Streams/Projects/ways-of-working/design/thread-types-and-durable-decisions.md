@@ -1,6 +1,6 @@
 ---
 note_type: streams/design
-updated: 2026-10-14T09:41:00Z
+updated: 2026-10-14T13:30:00Z
 author: Written with Claude
 ---
 
@@ -14,7 +14,7 @@ It builds on what is already settled and changes none of it: the decisions log a
 
 | Term | Definition | Owner | Use it for |
 | --- | --- | --- | --- |
-| Thread | One named line of work between Kris and an agent that outlives any runtime instance: it has a name, a checkpoint when it spans sessions, and for a coordinating type a run, a tracked thread folder, a mark and a banner. The name is the checkpoint `thread` field; its last segment is the run name. | `ki-checkpoint` (identity), `ki-pmo` once the pilot creates it (how it works) | Every owner-facing sentence: "the ways-of-working thread", "close the thread", "thread AT REST". |
+| Thread | One named line of work between Kris and an agent that outlives any runtime instance: it has a name, a checkpoint when it spans sessions, and for a coordinating type a run, a tracked thread folder, a mark and a banner. The name is the checkpoint `thread` field; its last segment is the run name. | `ki-checkpoint` (identity), `ki-pmo` once the pilot creates it (how it works) | Every owner-facing sentence: "the ways-of-working thread", "close the thread", "the thread is at REST". |
 | Session | One runtime instance that carries a thread's turns: a Claude Code or Codex process, a Zed tab, a `claude -p` run. A thread spans sessions across compaction, a red-x recovery or a new day; a session carries at most one thread. A session is named after its thread where the runtime allows. | The runtime; `ki-recap` summarises one session | Runtime facts only: "the session compacted", "a fresh session re-bootstraps from the checkpoint". |
 | Chat | Not a Knowledge Islands term. It is the vendor word for a session's transcript in Claude Desktop, ChatGPT and the like. | `ki-housekeeping-claude` and its siblings, when acquiring vendor state | Only when naming the vendor artefact being imported or cleaned. |
 | Run | The `ki agent` run a coordinating thread launches its background agents in, named after the thread's last segment and sharing one state folder and one tracked thread folder. | `ki-delegation` | Launcher sentences: "run `ways-of-working`", `ki agent status`. |
@@ -33,29 +33,33 @@ Kris's three kinds map onto what the `ki-delegation` standard already describes 
 | Identity | A name only if it spans sessions; then a generic `ki-checkpoint` checkpoint. No run, no thread folder, no mark. | Checkpoint `+/_CHECKPOINTS/<initiative>.<project>.md`, label `<Initiative>: <project>`, run `<project>`, thread folder `+/_THREADS/<project>/`, a mark. | Checkpoint `+/_CHECKPOINTS/_state-of-play.md`, label `Master: state-of-play`, run `<territory>-state-of-play`, thread folder `+/_THREADS/<territory>-state-of-play/`, a mark. |
 | Decisions | Go straight to the record they concern, or to the recap's learning route; no decisions log. | Logged in the thread folder in the turn they arrive, quoted; classified at each mark (section 3). | As a coordination thread, plus relays to coordination threads by inbox entry quoting Kris. |
 | Opener | None required. | The Project opener from `ki-delegation`; `Re-bootstrap ki-delegation.` thereafter. | The state-of-play opener. |
-| Banner during | None. | The `#` banner on every Summary, recap and full summary, and the closing status frame AT REST or NOT AT REST with the resume line, from [thread-banner-and-re-anchoring](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/ways-of-working/design/thread-banner-and-re-anchoring.md). | The same frame, plus the state-of-play view of every thread's state word. |
-| Close-out | `ki-recap`: the five-line DONE frame ("thread closed, nothing outstanding, every learning routed") when its three conditions hold, else the Actions list. Session-scoped evidence: `HEAD`, files touched, learning routes. | A final full summary whose frame reads `THREAD CLOSED`, with the conditions in section 2.1; then the thread folder is deleted, the checkpoint retired and the run archived by `ki agent close`. | Rests, never closes, while the territory has work: AT REST is its quiet state. CLOSED only when the territory itself retires. |
+| Banner during | None. | The `#` banner on every Summary, recap and full summary, and the closing block-word frame, REST or BUSY, with the resume line, from [thread-banner-and-re-anchoring](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/ways-of-working/design/thread-banner-and-re-anchoring.md). | The same frame, REST or BUSY, plus the state-of-play view of every thread's block word. |
+| Close-out | `ki-recap`: the five-line DONE frame ("thread closed, nothing outstanding, every learning routed") when its three conditions hold, else the Actions list. Session-scoped evidence: `HEAD`, files touched, learning routes. | Alternates BUSY and REST through the Project's life. Shows DONE once, in a final full summary, at Project close after the tidy in section 2.2: decisions promoted, design folder resolved, checkpoint retired, run archived by `ki agent close`. | Alternates BUSY and REST while the territory has work; REST is its quiet state. DONE only when the territory itself closes and is tidied. |
 | Hooks | None. The coordinator reminder stays silent where no `+/_CHECKPOINTS/` exists (and, after the pilot, where `ki-pmo` is not declared). | Coordinator reminder on every owner message and after compaction. | The same. |
 
 ### 2.1 The first type's name
 
 Recommendation: **conversational**, not ad hoc. The property that separates this type from the other two is that its own turns do the work, in conversation with Kris, and `ki-recap` summarises that conversation; "conversational" names that and passes Kris's glance test for names. "Ad hoc" fails it twice: it says unplanned, when a conversational thread is often a planned delivery of a Ready record under `ki-implement`; and it says exceptional, when this is the commonest thread on the machine. "Normal" says nothing at a glance. A conversational thread may be rigorous; what it is not is a coordinator.
 
-### 2.2 Close-out: DONE frame or coordination frame
+### 2.2 Close-out: done, busy and at rest
 
-The `ki-recap` DONE frame attests session-scoped facts: a clean `HEAD` for every touched repository, every learning routed, no Actions. A coordination thread's close attests thread-scoped facts that `ki-recap` cannot see: every in-force decision consolidated, the thread folder committed then deleted, the run archived, the checkpoint retired, the Project note pointing at the outcome. Kris has already chosen that in a coordinating thread `ki-recap` hands to the coordination forms ("RECAP-AWARE - (c) ki-recap detects a coordinating thread and hands to ki-pmo's forms."). So the coordination frame gains a third state word beside NOT AT REST and AT REST:
+Kris settled the lifecycle at the Master on 14 October (BANNER-LETTERS): "a conversational thread can be considered done. That's the end of the conversation. But a coordination thread can either be busy or at rest. Whether or not it then ends up being done is more a situation about the project itself, and in effect, it's when we say that project's closed and pull out and tidy up all of the stuff that's been happening."
+
+So the three types have two lifecycles. A conversational thread ends DONE: the `ki-recap` frame attests session-scoped facts, a clean `HEAD` for every touched repository, every learning routed, no Actions. A coordination thread, and the state-of-play thread, alternate BUSY and REST for as long as the Project or territory has work: BUSY when anything is running or queued, REST when nothing is. Open queries and held items never change the word; they show on the lines below the frame. Neither thread is ever "done" by itself. DONE arrives only when Kris closes the Project and the thread tidies up: every logged decision promoted to its durable home (section 3), the design folder resolved (section 4), the checkpoint retired, the thread folder committed then deleted, the run archived by `ki agent close`, and the Project note pointing at the outcome. The same frame renders all three words, in `ki-recap`'s block glyphs, as the sibling [thread-banner-and-re-anchoring](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/ways-of-working/design/thread-banner-and-re-anchoring.md) note mocks. Kris has already chosen that in a coordinating thread `ki-recap` hands to the coordination forms ("RECAP-AWARE - (c) ki-recap detects a coordinating thread and hands to ki-pmo's forms."), so the coordinating thread's DONE is rendered by those forms, not by `ki-recap`:
 
 ```text
 ╭──────────────────────────────────────────────────╮
-│  THREAD CLOSED · KI Model: ways-of-working       │
-│  every decision has a durable home               │
-│  thread folder deleted, run archived             │
+│  █▀▀▄ █▀▀█ █▄ █ █▀▀▀   · project closed          │
+│  █  █ █  █ █ ██ █▀▀    · decisions promoted      │
+│  █▄▄▀ █▄▄█ █  █ █▄▄▄   · thread tidied away      │
 ╰──────────────────────────────────────────────────╯
-   ways-of-working · closed 2026-11-02T16:10Z · checkpoint retired
-   outcome: Project note links GDR-KI-PRINCIPAL-003 and the ki-pmo standard
+   KI Model: ways-of-working · closed 2026-11-02T16:10Z
+   decisions: every entry logged since 13 October promoted, none held
+   design folder resolved · checkpoint retired · run archived
+   outcome: the Project note links the Decision Record on thread working and the ki-pmo standard
 ```
 
-CLOSED needs all of AT REST plus: every log entry classified and homed (section 3), `ki agent close` passed its gate, the thread folder and checkpoint removed in the closing commit, and the Project note's `## Notes` linking where the outcome now lives. No resume line follows, because there is nothing to resume; reopening the Project is a new opener from the state-of-play thread. The DONE frame stays `ki-recap`'s and is never rendered by a coordinating thread, so a transcript search for either frame finds one type of close.
+The two DONE frames differ only in their three phrases: `ki-recap`'s read "thread closed, nothing outstanding, every learning routed"; the coordination form's read "project closed, decisions promoted, thread tidied away". A transcript search by block word finds both; the phrases tell them apart. No resume line follows DONE, because there is nothing to resume; reopening the Project is a new opener from the state-of-play thread.
 
 ## 3. Decision lifecycle: from utterance to durable knowledge
 
@@ -90,7 +94,7 @@ The coordination thread classifies at each mark and names the home in the log. A
 | The turn a decision arrives | The coordination thread | Logs it in words; launches nothing before it is logged. |
 | Each mark | The coordination thread | Classifies every entry since the last mark, writes each `home:`, commits the thread folder, lists homeless standalone entries in the checkpoint. |
 | Record acceptance (`ki-accept`) | Kris, on the thread's report | The record's Documentation impact is checked: each rule and standalone entry the record carried has reached its skill, note or Decision Record. |
-| Project close | The coordination thread, then Kris | Every entry homed, `ki agent close` passes, the Project note links the outcome, the thread folder and checkpoint go in the closing commit, the CLOSED frame is rendered. |
+| Project close | The coordination thread, then Kris | Every entry homed, the design folder resolved, `ki agent close` passes, the Project note links the outcome, the thread folder and checkpoint go in the closing commit, the DONE frame is rendered. |
 | Conversational thread | The thread, at recap | A decision goes into the record it works; a decision with no record becomes a routed learning under `ki-recap` step 4 or a `ki-next` triage capture. No log, no classification. |
 
 ### 3.4 One list, not two
@@ -137,9 +141,9 @@ No, and Kris has already decided where it goes: "DESIGN-RETENTION - I guess if t
 | Thread | One named line of work outliving any session | Named by its checkpoint; typed as conversational, coordination or state-of-play | `ki-checkpoint` for identity, `ki-pmo` (pilot) for behaviour | A session carries it; `ki-recap` or the coordination forms close it |
 | Session | One runtime instance of a thread | Runtime facts only; never the owner-facing unit | The runtime; `ki-recap` | Re-anchoring and the resume line rebuild a thread in a new session |
 | Conversational thread | A thread that does its own work with Kris | No run, log, mark or banner; optional generic checkpoint | `ki-recap` for its close; the process skills for its work | Decisions go to the record worked or a routed learning; a long step may go to one background agent |
-| Coordination thread | A thread that coordinates one Project | Coordinates, never works; one Project; its own run and thread folder | `ki-pmo` (pilot), `ki-delegation` meanwhile | Receives directions from the state-of-play thread; hands records to repositories; closes with CLOSED |
-| State-of-play thread | The coordination thread of the territory's coordination threads | Priorities, queue, cap, releases, cross-Project decisions; no delivery | `ki-pmo` (pilot) | Seeds checkpoints and openers; relays Kris's decisions by inbox entry; rests, never closes |
-| Thread close-out | The last message and commit of a thread | DONE frame for conversational; CLOSED frame for coordination; AT REST for state-of-play | `ki-recap` and `ki-pmo` respectively | `ki agent close` gates the coordination close |
+| Coordination thread | A thread that coordinates one Project | Coordinates, never works; one Project; its own run and thread folder | `ki-pmo` (pilot), `ki-delegation` meanwhile | Receives directions from the state-of-play thread; hands records to repositories; alternates BUSY and REST; DONE at Project close |
+| State-of-play thread | The coordination thread of the territory's coordination threads | Priorities, queue, cap, releases, cross-Project decisions; no delivery | `ki-pmo` (pilot) | Seeds checkpoints and openers; relays Kris's decisions by inbox entry; alternates BUSY and REST; DONE only at territory close |
+| Thread close-out | The last message and commit of a thread | DONE at the end of a conversation; BUSY or REST during a coordination or state-of-play thread; DONE for those only at Project or territory close after the tidy | `ki-recap` for conversational; `ki-pmo` forms for coordinating | `ki agent close` gates the coordinating DONE |
 | Thread log entry | One owner decision in words, dated, in the tracked thread folder | Logged in the turn it arrives; numbers are launcher handles only | `ki-delegation` (log), `ki agent` (writer) | Classified at the mark; cited by words and date everywhere |
 | Decision class | Operational, rule, standalone or held | Set at each mark; names the home | `ki-pmo` (pilot) as a thread working rule | `home:` line read by `ki agent close`; homeless standalone entries surface in the Summary |
 | Project decisions list | `+/_THREADS/<project>/decisions.md` for the Project's life | One per Project across its threads; deleted at Project close after consolidation | `ki-delegation`; the coordination thread writes it | The loop's decisions file duplicates nothing it does not also log |
@@ -149,12 +153,12 @@ No, and Kris has already decided where it goes: "DESIGN-RETENTION - I guess if t
 
 ## 6. Pending records this touches
 
-- [KI-HARNESS-GOV-180](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-180-tracked-thread-decisions-home.md): the tracked thread folder and words-and-date citation. This note adds the mark-time classification and the CLOSED frame to the same sections; deliver GOV-180 as planned and carry those into the pilot's `ki-pmo` standard rather than widening GOV-180.
+- [KI-HARNESS-GOV-180](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-180-tracked-thread-decisions-home.md): the tracked thread folder and words-and-date citation. This note adds the mark-time classification and the Project-close DONE to the same sections; deliver GOV-180 as planned and carry those into the pilot's `ki-pmo` standard rather than widening GOV-180.
 - [KI-TOOL-KI-CLI-124](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-124-agent-run-close.md): `decide --home`, `reconcile` and `close` with the reconcile gate are exactly the mechanics section 3 relies on; the four classes need no new flag, only a convention for the `home:` value ("record", "log" for operational entries with no record, a Decision Record identifier, a skill path, "checkpoint" for held).
 - [KI-PRINCIPAL-ECO-014](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-ECO-014-decision-citation-and-run-folder-sweep.md): the citation sweep rewrites the numbered citations this note's design folder still carries, including the sibling banner note; the run-folder sweep applies the classification to closed runs.
-- [KI-PRINCIPAL-ECO-013](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-ECO-013-pmo-extraction-pilot.md): the `ki-pmo` glossary takes section 1; the thread types, the CLOSED frame and the decision classes are thread working rules the pilot's standard should carry; the `ki-recap` off-ramp decides which close-out renders; Wave F's Decision Record and design-folder move are where sections 3 and 4 land for this island.
+- [KI-PRINCIPAL-ECO-013](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-ECO-013-pmo-extraction-pilot.md): the `ki-pmo` glossary takes section 1; the thread types, the BUSY, REST and DONE lifecycle and the decision classes are thread working rules the pilot's standard should carry; the `ki-recap` off-ramp decides which close-out renders; Wave F's Decision Record and design-folder move are where sections 3 and 4 land for this island.
 - [KI-HARNESS-GOV-184](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-184-working-area-marks.md): marks on `+/_DESIGN/` notes replace the undeclared `streams/design` note type.
-- [KI-PRINCIPAL-ECO-012](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-ECO-012-notification-strategy-for-delegated-work.md): a thread reaching CLOSED is a fifth event beside the four the banner note names.
+- [KI-PRINCIPAL-ECO-012](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-ECO-012-notification-strategy-for-delegated-work.md): a thread reaching DONE at Project close is a fifth event beside the four the banner note names.
 - Not yet captured: the banner and re-anchoring implementation (waits on Kris's sanity check of the sibling note), Wave B's `ki-pmo-design` standard change and Wave F's island move; none is captured here under the burn-down focus.
 
 ## 7. Open questions for Kris
@@ -177,11 +181,9 @@ No, and Kris has already decided where it goes: "DESIGN-RETENTION - I guess if t
 - Need from you: conversational, ad hoc, or another word.
 - Recommendation: conversational.
 
-### CLOSE-BANNER - how a coordination thread closes
+### CLOSE-BANNER - settled
 
-- Summary: a third state word, CLOSED, in the coordination frame, with the conditions in section 2.2; the `ki-recap` DONE frame stays with conversational threads only.
-- Need from you: approve CLOSED, or say a coordination thread should render the DONE frame.
-- Recommendation: approve CLOSED. The two frames attest different facts, and one frame per thread type keeps transcript searches unambiguous.
+Settled by Kris at the Master on 14 October (BANNER-LETTERS): "a conversational thread can be considered done. That's the end of the conversation. But a coordination thread can either be busy or at rest. Whether or not it then ends up being done is more a situation about the project itself, and in effect, it's when we say that project's closed and pull out and tidy up all of the stuff that's been happening." There is no CLOSED word. A coordination thread alternates BUSY and REST and shows DONE once, at Project close after the tidy, in the coordination form's frame with its own three phrases (section 2.2).
 
 ### DECISION-CLASSES - four classes set at the mark
 
@@ -211,7 +213,6 @@ No, and Kris has already decided where it goes: "DESIGN-RETENTION - I guess if t
 THREAD-TERMS - adopt the five definitions
 THREAD-TYPES - adopt conversational, coordination and state-of-play; replace the old names in the pilot
 FIRST-TYPE - conversational
-CLOSE-BANNER - approve CLOSED in the coordination frame
 DECISION-CLASSES - adopt the four classes and the homeless-standalone rule
 ONE-LIST - agree: the thread log is the Project's decisions list
 DESIGN-HOME - approve +/_DESIGN/<subject-slug>/ for every design note; retire the folder-note form
