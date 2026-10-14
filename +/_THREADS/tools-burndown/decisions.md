@@ -94,3 +94,13 @@ HOST-GUARDS
 Retain KI-TOOL-TECHNE-CLI-006 on Hold through Techne: agent-host, with review on 12 November. Require explicit receiver release and plan review before implementation.
 
 Record: /Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-006-guarded-host-commands.md
+
+### Receiver-state reconciliation 2026-10-14T21:13:18Z
+
+Operational reconciliation of the approved STORE-REPAIR handoff: the separately authorised, already-published Ready / Now record in ways-of-working is preserved. This run does not infer implementation approval, propose a rollback, or ask Kris to repeat the adoption decision. Techne is asked to confirm the existing writer; no agreement is inferred from silence. HOST-WRITES and HOST-GUARDS are answered exactly as the owner instructed. At this annotation, Principal publication remained deferred to the next owner-authorised mark; the later 14 October commit instruction supersedes that deferral.
+
+## Decision 5 (2026-10-14T21:22:54Z)
+
+home: +/_CHECKPOINTS/platform-foundations.estate-factorisation.md
+
+- I can’t stress this enough and I’ll be saying this to every single thread, but it’s absolutely imperative that you commit your work.

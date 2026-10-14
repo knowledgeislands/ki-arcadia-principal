@@ -79,6 +79,8 @@ For Kris:
 
 Handoffs:
 
+**STORE-REPAIR (with tools-burndown):** Kris approved planning for [KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md). The record is already Ready / Now in ways-of-working under CI-STORE. Please confirm the current ways-of-working tools-ki writer, or name the agreed writer and slot. Tools-burndown will preserve the current record and remain read-only until agreement; no rollback, duplicate planner, implementation or host operation is requested.
+
 - **DEV-MODE** (with state-of-play): Kris chose that Rig owns `rig dev local|release <tool>`; handed to state-of-play on 2026-10-14, which holds it with RIG-LINK for Kris's decision under the burn-down rule.
 - **RIG-LINK** (with state-of-play): `~/.local/bin/rig` links to the retired `~/workspaces/kit/knowledgeislands/tools-rig` path and is broken; it belongs to the Rig thread.
 - **Firewall** (with `mac-studio-bootstrap`): KI-TOOL-RIG-CORE-047 (macOS) and KI-TOOL-RIG-CORE-051 (Linux nftables) are delivered and awaiting review there; nothing is planned or implemented here. The Mac Studio owned-host exemption is KI-ARCADIA-GOV-033 in that thread.
