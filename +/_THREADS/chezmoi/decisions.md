@@ -301,3 +301,7 @@
 ## Decision 74 (2026-10-14T21:20:37Z)
 
 - Kris, 2026-10-14: 'I can't stress this enough and I'll be saying this to every single thread, but it's absolutely imperative that you commit your work.'
+
+## Decision 75 (2026-10-14T23:06:29Z)
+
+- 2026-10-15, Kris: 'I did the steps in apply and b-start' - APPLY and B-START done on the laptop; rig doctor after mise install: healthy, findings=0, present=165, catalogue-only=21, incompatible-platform=0. No tool is missing, so the follow-up rig doctor check agent is not needed. Kris was unsure whether PROJECT-REG was handed to state-of-play; the thread re-issued the paste block.
