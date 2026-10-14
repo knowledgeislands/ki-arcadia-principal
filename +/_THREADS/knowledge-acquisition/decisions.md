@@ -79,3 +79,11 @@
 ## Decision 20 (2026-10-14T22:51:46Z)
 
 - 2026-10-14 Kris, HEADING-AUDIT: "Launch a Haiku agent to add a minimal front matter block above the heading of +/_THREADS/knowledge-acquisition/handoff-review.report.md and commit and push it; I'll paste the reconciliation message to ways-of-working." Kris confirmed the message is pasted to ways-of-working.
+
+## Decision 21 (2026-10-14T22:53:25Z)
+
+- 2026-10-14 From Master: state-of-play, REPORT-HEADING-GATE: "the ki-pmo standard already says a saved report file omits the three opening --- rules and begins at the # heading. Remove those three rules and their blank lines from +/_THREADS/knowledge-acquisition/handoff-review.report.md, then commit it by explicit path as usual. The lasting fix is forwarded to KI Model: ways-of-working."
+
+## Decision 22 (2026-10-14T22:53:52Z)
+
+- 2026-10-14 Kris: "message handled to aquire-intake" (the RESET-FIRST and CHATGPT-OWNER relay is delivered to acquire-intake).

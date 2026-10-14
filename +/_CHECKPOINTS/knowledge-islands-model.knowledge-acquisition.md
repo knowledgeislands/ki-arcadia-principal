@@ -4,7 +4,7 @@ thread: knowledge-islands-model.knowledge-acquisition
 label: 'Knowledge Islands Model: knowledge-acquisition'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-14T22:52:00Z
+updated_at: 2026-10-14T23:00:00Z
 ---
 
 # knowledge-islands-model.knowledge-acquisition
@@ -24,7 +24,7 @@ The provider-neutral acquisition lifecycle is documented in one Pillars note, AI
 ## Current state
 
 - Open records: [KI-HARNESS-OPS-005](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-005-acquire-ai-sessions.md) (Now, in progress), [KI-PRINCIPAL-MOD-006](../../Streams/Roadmap/KI-PRINCIPAL-MOD-006-knowledge-acquisition-lifecycle.md) (Next, ready) and [DOTFILES-UE-035](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-035-install-whatsapp-spool-refresh.md) (Hold, chezmoi).
-- Run `knowledge-acquisition`: running `heading-fix` (Haiku) from this mark. `spirit-move` finished 2026-10-14: the 18 Personal - Spirituality packages are in `sacred-inquiry` (acquire 9431269, ki-agentic-harness 17747064, both pushed; 334 still verify). `handoff-review` finished: KI-TOOL-KI-CLI-128 covers the reset data-loss risk in intent with two gaps.
+- Run `knowledge-acquisition`: nothing running. `heading-fix` and `heading-trim` finished 2026-10-14 (REPORT-HEADING-GATE from Master: state-of-play): handoff-review.report.md now begins at its heading and is committed and pushed. A stale duplicate `heading-trim` queue entry remains; no dispatcher runs it. `spirit-move` finished 2026-10-14: the 18 Personal - Spirituality packages are in `sacred-inquiry` (acquire 9431269, ki-agentic-harness 17747064, both pushed; 334 still verify). `handoff-review` finished: KI-TOOL-KI-CLI-128 covers the reset data-loss risk in intent with two gaps.
 - KI-PRINCIPAL-MOD-006's Granola evidence paths point at the private `acquire` repository (ACQ-PATHS, 2026-10-14). The browser-runtime question (KI-HARNESS-GOV-087) is merged into KI-HARNESS-OPS-005.
 - ki-principal commits: the scoped gate is live; commit by explicit path.
 - Thread folder tidy at the 2026-10-14T22:52:00Z mark: deleted the chatgpt-bind, tower-move, spirit-review and spirit-move reports (answered, outcomes in commits and KI-HARNESS-OPS-005); kept route-local-review (BINARY-HOME and BINARY-HOLD with the master) and handoff-review (asks to acquire-intake and tools-ki not yet acknowledged).
@@ -53,7 +53,7 @@ The provider-neutral acquisition lifecycle is documented in one Pillars note, AI
 
 ## Open questions
 
-- RELAY (open until acknowledged): acquire-intake to add the `.acquire/chatgpt/` inventory line to KB-ACQUIRE-002 and to have tools-ki tie KI-TOOL-KI-CLI-128's refusal step to both reset paths; deposited in its inbox and given to Kris to paste.
+- RELAY (delivered by Kris 2026-10-14, acquire-intake owns it): add the `.acquire/chatgpt/` inventory line to KB-ACQUIRE-002 and have tools-ki tie KI-TOOL-KI-CLI-128's refusal step to both reset paths. handoff-review.report.md can go at the next mark once acquire-intake records it.
 - BINARY-HOME and BINARY-HOLD: the state-of-play thread's; paste block given to Kris 2026-10-14, delivery unconfirmed.
 - START-MOD-006 (held): launch KI-PRINCIPAL-MOD-006 through `ki-implement` once the scoped gate has landed in ki-principal and the token reset has happened.
 - DIAGRAMS (handed to ways-of-working): check PRINCIPAL-HTML and, unless it says keep, remove `+/diagrams/change-management-skills/`.
