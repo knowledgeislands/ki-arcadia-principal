@@ -243,3 +243,15 @@
 ## Decision 57 (2026-10-14)
 
 - Kris (2026-10-14): "DEV-MODE - a". Rig owns rig dev local|release <tool>, each tool keeps install.sh --link as its hook, checkouts found through ki registry, per tool by default with an all option and a mixed-mode warning; handed to the Rig thread via state-of-play.
+
+## Decision 58 (2026-10-14T19:00:39Z)
+
+- Master: state-of-play (2026-10-14, REBOOT-ALL on Kris word): resume under current ki-pmo and ki-delegation (report shape frozen at harness b81bcfa3); conform +/_CHECKPOINTS/techne.agent-host.md to the six-section checkpoint schema (fails RECORD-2); rewrite its KI-TOOL-KI-CLI-115 link as bare text "cancelled and pruned 2026-10-14"; ki-principal commits blocked until mac-studio-bootstrap fixes its Project note from sol.
+
+## Decision 59 (2026-10-14T20:20:52Z)
+
+- Owner instruction 2026-10-14 21:1x BST (re-bootstrap under ki-pmo daa63224): commit everything the thread does or oversees by explicit path; at each report and resting point check every finished agent is committed and pushed and commit the checkpoint and thread folder, naming any uncommitted or unpushed work; at this and every mark delete by explicit path every report whose queries are all answered and whose outcome has a durable home, keeping decisions.md and reports with open queries, and commit the deletions; heartbeat: while dispatched work runs wake at least every 5 minutes or when an agent finishes, with a one-to-two-line timed update naming each running agent step, none at rest; ki-principal caveat: the pre-commit gate fails on STREAM-9 in the mac-studio-bootstrap Project note, so ki-principal changes stay uncommitted (never --no-verify) until the scoped ki repo audit --staged gate lands, then commit through a private index by explicit path at the next mark. Class: practice.
+
+## Decision 60 (2026-10-14T20:28:31Z)
+
+- Owner instruction 2026-10-14 21:2x BST: token limits are close and the Fable limit is already hit; until a reset, prioritise mechanical work and launch background agents on a lower model level (Sonnet or Haiku, never Fable) to conserve what is left. Class: practice.
