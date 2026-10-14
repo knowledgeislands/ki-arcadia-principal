@@ -4,7 +4,7 @@ thread: knowledge-islands-model.knowledge-acquisition
 label: 'Knowledge Islands Model: knowledge-acquisition'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-14T23:26:00Z
+updated_at: 2026-10-14T23:29:00Z
 ---
 
 # knowledge-islands-model.knowledge-acquisition
@@ -55,6 +55,7 @@ The provider-neutral acquisition lifecycle is documented in one Pillars note, AI
 ## Open questions
 
 - RELAY (delivered by Kris 2026-10-14, acquire-intake owns it): add the `.acquire/chatgpt/` inventory line to KB-ACQUIRE-002 and have tools-ki tie KI-TOOL-KI-CLI-128's refusal step to both reset paths; awaiting acquire-intake's acknowledgement.
+- ACQ-FINISH: acq-finish (Haiku, read-only) extracted the Acer paste line from acquire-resize.report.md line 14 and gave it to Kris 2026-10-15 00:29 BST; delete acquire-resize.report.md and acq-finish.report.md once Kris confirms it is pasted.
 - BINARY-HOME and BINARY-HOLD: the state-of-play thread's; paste block given to Kris 2026-10-14, delivery unconfirmed.
 - START-MOD-006 (held): launch KI-PRINCIPAL-MOD-006 through `ki-implement` once the scoped gate has landed in ki-principal and the token reset has happened.
 - DIAGRAMS (handed to ways-of-working): check PRINCIPAL-HTML and, unless it says keep, remove `+/diagrams/change-management-skills/`.
