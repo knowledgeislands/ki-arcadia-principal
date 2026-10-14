@@ -4,7 +4,7 @@ thread: rig.mac-studio-bootstrap
 label: 'Rig: mac-studio-bootstrap'
 state: active
 created_at: 2026-10-08T08:45:00Z
-updated_at: 2026-10-14T14:48:00Z
+updated_at: 2026-10-14T14:51:00Z
 ---
 
 # rig.mac-studio-bootstrap
@@ -23,7 +23,11 @@ Re-read this block after every compaction.
 
 ## Current state
 
-Mark: 2026-10-14T14:48Z
+Mark: 2026-10-14T14:51Z
+
+**Re-bootstrapped on sol at this mark** (2026-10-14). No commits, decisions or agent runs since 14:48Z; sol stock unchanged (old trees and dead skill links still present, `ki-pmo` still unlinked). Nothing restarted.
+
+Previous mark: 2026-10-14T14:48Z
 
 **Resumed on sol at this mark** (re-bootstrap, 2026-10-14). Nothing running or queued; no new approvals since 14:35Z, so no work restarted. Stock on sol: ki-principal, ki-agentic-harness, tools-ki and tools-rig level with origin; ki-coordinator output style active, but the `ki-pmo` skill is not linked into `~/.claude/skills` (ki-pmo standard read from the harness checkout at 8f23d27c) and the dead `ki-delegate` and `ki-design-loop` links remain; `~/workspaces/kit`, `hnr` and `knowledge-wayfinder` still present, so OLD-TREES-RUN is not yet done. The re-bootstrap used more reads than a coordinator turn allows; the rest goes to agents.
 
