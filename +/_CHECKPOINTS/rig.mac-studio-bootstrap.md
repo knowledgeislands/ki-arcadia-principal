@@ -60,7 +60,8 @@ This checkpoint only. The Project note and its hosts note are current.
 
 ## Open questions
 
-- **Needs Kris:** `FW-LIVE` (paste the rule comparison; reboot check at the next natural restart), `UE-089-SHAPE`, `OLD-TREES`, `OLD-ORPHANS`, `MGIT-PRESEED`, `SOL-REGISTRY`, `SOL-SOURCES` (Kris in OneDrive on `sol`), `SOL-HNR-HARNESS`, `SOL-WHATSAPP`, `SOL-KI-CONFIG-DRIFT`.
+- **Focus (Kris, 2026-10-14 16:15 CEST):** only sol readiness to take this thread's coordination work (Rig fully installed, Claude Code, host bootstrap, Zed with Claude and Codex through chezmoi), then move the thread to sol. Thread-move rule: drain only running agents; queued work goes back into this checkpoint and the new host re-queues it.
+- **On hold, parked (Kris, 2026-10-14):** `FW-LIVE` (terra rule comparison; reboot check at the next natural restart), `SOL-FW-TEST`, `UE-089-SHAPE`, `OLD-TREES`, `OLD-ORPHANS`, `MGIT-PRESEED`, `SOL-REGISTRY`, `SOL-SOURCES`, `SOL-HNR-HARNESS`, `SOL-WHATSAPP`, `SOL-KI-CONFIG-DRIFT`. Each is described in the run folder reports `old-trees`, `sol-build` and `records`.
 - **No action now:** `ZED-MD` (later, at `sol`), `FW-LINUX-LIVE` (needs a Linux host), `KEYCHAIN-SSH` (with rig.chezmoi).
 
 ## Next step
