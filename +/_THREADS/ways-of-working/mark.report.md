@@ -1,34 +1,54 @@
 # [Knowledge Islands model](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/knowledge-islands-model/knowledge-islands-model.md) › [Ways of working](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/ways-of-working/ways-of-working.md) › mark
 
-**Run report at 21:33 BST · last mark 21:19 BST**
+**Run report at 23:26 BST · last mark 23:22 BST**
 
 ---
 
 ## Done
 
-- Partial work from the earlier run: none found in ki-principal. The checkpoint was still at the previous mark, nothing for this brief was in a commit, and `origin/main..HEAD` was empty. The only change found was two staged reports, `gate-scope.report.md` and `skills-map.report.md`, which this run kept and committed.
-- The [checkpoint](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/knowledge-islands-model.ways-of-working.md) is rewritten at the mark 2026-10-14T20:19:30Z (21:19 BST). It records every decision since 18:56:38Z by tag, with Kris's words quoted, from GATE-SCOPE to RELAUNCH-MODEL. It also records that HEARTBEAT applies in this thread now ("apply it in this thread now"), the three running agents (`area-diagrams`, `gate-release`, `pmo-simplify`) and the two queued ones (`log-writer`, `heartbeat`). The re-bootstrap prompt Kris now sends to the other threads is there, carrying commit-everything, the `+/_THREADS` tidy, the heartbeat and the ki-principal gate caveat. So is the lesson that a queued agent runs from its `<name>.prompt.md` snapshot, so an amended queued brief must be re-launched, along with the carried items. Pruned records are linked at their last revision: [KI-TOOL-KI-CLI-129 (pruned)](https://github.com/knowledgeislands/tools-ki/blob/f718dad967b93fef7d6173d5d707f28d03cc5f13/docs/roadmap/KI-TOOL-KI-CLI-129-staged-audit-verdict.md) and [KI-HARNESS-GOV-191 (pruned)](https://github.com/knowledgeislands/ki-agentic-harness/blob/ab5abbb79c9f82f3f43b0c2f0507bc9ac4c6bb48/docs/roadmap/KI-HARNESS-GOV-191-banner-frame.md). The scoped `ki repo audit --skill ki-checkpoint` passes for this checkpoint. The whole-tree run still fails on other threads' checkpoints: the `estate-factorisation`, `mac-studio-bootstrap` and `observatory` checkpoints.
-- The thread folder is tidied under THREADS-TIDY ("at each mark the thread deletes every report whose queries are all answered and whose outcome has a durable home"). 65 reports are deleted by explicit path, all of them already on `origin/main`, so Git history holds them: agent-model, answers-apply, approvals, apps-sweep, banner-amend, banner-build, banner-letters, banner-mock, brief, burn-down, checkpoint-mark, checkpoint-rules, checkpoint-sync, cli124-deliver, cli124-fix, closed-threads, coord-hard, coord-hook, decisions-file, decisions-sync, dispatch-assess, durability-amend, durability, eco-adopt, eco014-deliver, export-route, full-summary, gov180-deliver, gov181-deliver, gov185-tidy, harness-push, ki-release, mark-tidy, mark3, merge-amend, merge, name-graph, noise-apply, noise-format, notify, pilot-lessons, pilot-plan, pilot, principal-enact, principal-tidy, quiet-tools, quotes-fix, release2, reply-stack, report-format, responsive, review-astra, review-fable, run-close, sizing-amend, sizing-design, skill-graph, skill-renames, svg-extract, take-stock, thread-model-enact, thread-model, trailer, triage-plan and wt-rule.
-- Kept: `decisions.md`; `skills-map.report.md`, the source for the `area-diagrams` and `pmo-simplify` briefs; `gate-scope.report.md`, linked from [KI-HARNESS-GOV-192](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-192-scoped-gate-verdict.md); and `eco014-close.report.md`, the report of the held `eco014-close` run. No report yet exists for the running or queued agents.
-- Commit `48296b7` in ki-principal, "docs(checkpoint): take the ways-of-working mark at 21:19 BST and tidy the thread folder", made through a private index and covering 90 paths. It holds the checkpoint, the decisions log, 21 newly committed reports, the 65 deletions, and the two link edits made under PRINCIPAL-COMMIT ("the ways-of-working thread commits the two link edits by explicit path at its next mark, once the gate clears and the checkout is level with origin"): [Engineering Practice](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Pillars/Engineering%20Practice/Engineering%20Practice.md) and the [ways-of-working](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/ways-of-working/ways-of-working.md) Project note. The checkout was fast-forwarded to `origin/main` (`320b9db`) first. The first attempt failed the gate on STREAM-9 on the [mac-studio-bootstrap](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-bootstrap/mac-studio-bootstrap.md) note. After `gate-release` changed the local hook to `--staged`, the retry passed, with that finding now outside the commit's scope. Pushed fast-forward, `320b9db..48296b7`.
-- Limitation: `git pull --rebase` refused to run because other sessions' staged changes sit in the main index. `origin/main` had no new commits, so the push was a plain fast-forward. This run did not touch those staged changes.
-- The commit trailer names Claude Opus 5.5, the model that made the commit, under the standard's commit-trailer rule. The brief's Claude Fable 5.1 trailer predates RELAUNCH-MODEL.
+- New mark taken at 2026-10-14T22:22:21Z (23:22 BST), as Kris asked: "Oh, actually as well, can you take a mark before you process those?" The previous mark was 2026-10-14T20:19:30Z.
+- The [ways-of-working checkpoint](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/knowledge-islands-model.ways-of-working.md) is rewritten at the new mark. It carries the seven queued agents in their three chains, the two pending owner discussions INCEPTION-TYPE and THREADS-TMP, the four lessons, every decision since the previous mark quoted verbatim, and every carried item: the PMO-7 rise after `report-repair`, [KI-TOOL-KI-CLI-127](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-127-agent-status-live-threads.md), the pilot [KI-PRINCIPAL-ECO-013](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-ECO-013-pmo-extraction-pilot.md), [KI-TOOL-KI-CLI-123](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-123-agent-run-events.md) and [KI-HARNESS-GOV-175](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-175-delegation-run-events.md), PAPERCLIP-REQ held and the Markdown-flavour item parked. The "Messages from Master" block is kept without the INCEPTION-TYPE line. Pruned records link to GitHub at their last revision, including [KI-HARNESS-GOV-192 (pruned)](https://github.com/knowledgeislands/ki-agentic-harness/blob/73f43a1b08d7a0ef4b8d0853b1b6a6752d508bee/docs/roadmap/KI-HARNESS-GOV-192-scoped-gate-verdict.md) and [KI-TOOL-KI-CLI-129 (pruned)](https://github.com/knowledgeislands/tools-ki/blob/f718dad967b93fef7d6173d5d707f28d03cc5f13/docs/roadmap/KI-TOOL-KI-CLI-129-staged-audit-verdict.md).
+- Check: `ki repo audit --skill ki-checkpoint --paths <checkpoint>` passes for this checkpoint (FAIL=0). Without `--paths`, the skill audit fails on two other threads' checkpoints, `rig.mac-studio-bootstrap` (RECORD-2, BOUNDARY-1) and `knowledge-islands-model.observatory` (LIFECYCLE-1). I left those alone.
+- The thread folder is tidied under THREAD-TIDY. 86 reports were deleted by explicit path, all of them committed on origin/main. Kept: `decisions.md`; the inception-type report, which the Project note and the knowledge-acquisition checkpoint link to; the sync-telemetry report, which the checkpoint's SYNC-GUARD message links to; and this report. A grep across ki-principal, tools-ki and ki-agentic-harness found no other links to a report in this folder.
+- The checkpoint, the decisions log (Kris's decisions from PUSH-HOLD to MARK-FIRST, appended by the launcher), the deletions and this report are committed together in one ki-principal commit by explicit path through a private index, then pushed fast-forward. The status file gives the commit identifier.
+- Limitation: two of my in-chat progress updates (23:29 and 23:33 BST) carried estimated times ahead of the clock. The status file always used the real `date` output.
 
 ## In Progress
 
-- Running: `area-diagrams` (ki-agentic-harness), `gate-release` (tools-ki release v0.10.4, plus ki-principal's version pin, hook and Conformance note) and `pmo-simplify` (ki-agentic-harness). Queued behind `pmo-simplify`: `log-writer` (tools-ki) and `heartbeat` (ki-agentic-harness).
-- Outstanding - no action requested now: `gate-release` has not yet committed its edit of ki-principal's `.githooks/pre-commit` to `--staged`, though this commit already relied on it. Other sessions' changes are still uncommitted in the ki-principal working tree and index, including the state-of-play, chezmoi and knowledge-acquisition thread folders, other checkpoints, and `+/_THREADS/mac-studio-bootstrap/stray-reports.report.md`.
+Nothing is running in this run. The thread's queued chains start when this run finishes:
+
+- `eco014-close`, then `report-repair`, then `types-review`.
+- `harness-accept`, then `principal-links`.
+- `cli-release`, then `threads-review`.
+
+Outstanding - no action requested now:
+
+- [KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md) is Ready, and `cli-release` delivers it. [KI-TOOL-KI-CLI-132](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-132-launcher-only-thread-writer.md) and [KI-HARNESS-GOV-193](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-193-area-diagrams-with-html.md) are awaiting review, with acceptance already decided. [KI-TOOL-KI-CLI-130](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-130-skill-generated-surfaces.md) is in progress. [KI-TOOL-KI-CLI-131](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-131-host-absent-store-state.md) stays at triage.
+- The cli126-plan report raised PUSHED-OTHERS: three other-session commits (`41e11c9`, `9c4c0c0`, `43da380`) reached tools-ki main. No decision is logged under that tag. The report is deleted on the owner's word that every query raised up to 22:45 BST is answered.
+- The other threads' dirty files in ki-principal were left untouched: the estate-factorisation checkpoint, the baseline-rollout decisions log and the tools-burndown and knowledge-acquisition reports.
 
 ## Queries
 
-No outstanding queries
+### ECO014-BRIEF - queued eco014-close brief contradicts the run-folder waiver
+
+**Context:** The prompt snapshot for `eco014-close` was taken at 23:22 BST. Its first step is "Do the run-folder move the record describes". Kris has already said "RUN-WAIVER - leave the four run folders in place; drop the run-folder sweep from KI-PRINCIPAL-ECO-014 and close it on its verified citation half". A queued agent runs from its launch-time snapshot, so it would move the folders as soon as this run finishes. I flagged this in the status file at once.
+
+**Query:** Should the thread re-launch `eco014-close` with the waiver before it starts?
+
+**Options:**
+
+a) (recommended) Stop the queued `eco014-close` and re-launch it to close [KI-PRINCIPAL-ECO-014](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-ECO-014-decision-citation-and-run-folder-sweep.md) on its verified citation half, leaving the four run folders in place, with `report-repair` and `types-review` still behind it.
+
+b) Let it run as briefed, and revert any folder move afterwards.
 
 ```text
-No reply needed.
+ECO014-BRIEF
+
+Stop the queued eco014-close and re-launch it to close KI-PRINCIPAL-ECO-014 on its verified citation half under RUN-WAIVER, leaving the four run folders in place, with report-repair and types-review still queued behind it.
 ```
 
 ```text
-╭─ run report · 2026-10-14T20:33:21Z ──────────────╮
+╭─ run report · 2026-10-14T22:25:46Z ──────────────╮
 │                                                  │
 │  █▀▀▄ █  █ █▀▀▀ █  █   · thread busy             │
 │  █▀▀▄ █  █ ▀▀▀█  ▀█▀   · running or queued work  │
@@ -37,11 +57,16 @@ No reply needed.
 ╰──────────────────────────────────────────────────╯
 ```
 
-- [running] area-diagrams - eight area diagrams, thread-model diagram, committed HTML
-- [running] gate-release - tools-ki release and ki-principal's staged gate
-- [running] pmo-simplify - REPORT-SOURCE, HOOK-BINDING, RECAP-OWNER in ki-pmo
-- [queued] log-writer - after pmo-simplify
-- [queued] heartbeat - after pmo-simplify
+- [queued] eco014-close - close KI-PRINCIPAL-ECO-014, brief needs the waiver
+- [queued] report-repair - after eco014-close
+- [queued] types-review - after report-repair
+- [queued] harness-accept - accept KI-HARNESS-GOV-193, CAP-2 drift
+- [queued] principal-links - after harness-accept
+- [queued] cli-release - KI-TOOL-KI-CLI-126 and KI-TOOL-KI-CLI-132 release
+- [queued] threads-review - after cli-release
+- [waiting] ECO014-BRIEF
+- [waiting] INCEPTION-TYPE
+- [waiting] THREADS-TMP
 - [committed] checkpoint and thread folder, pushed
 - [held] PAPERCLIP-REQ until Wave F
 - [parked] 1

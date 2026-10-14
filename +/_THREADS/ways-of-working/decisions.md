@@ -559,3 +559,47 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 133 (2026-10-14T21:21:07Z)
 
 - COMMIT-WORK - Kris, 22:20 BST: "I can't stress this enough and I'll be saying this to every single thread, but it's absolutely imperative that you commit your work."
+
+## Decision 134 (2026-10-14T22:21:04Z)
+
+- PUSH-HOLD - push ki-principal main fast-forward now, carrying a6685f7c with the ways-of-working commits, then launch eco014-close and report-repair
+
+## Decision 135 (2026-10-14T22:21:04Z)
+
+- AREA-ACCEPT - accept KI-HARNESS-GOV-193 as delivered and prune it. I am making small refinements working with a session directly in the agentic harness. Its more about fixing the visual representation so GOV-193 is done still, do not hold it back because I am treaking the layouts
+
+## Decision 136 (2026-10-14T22:21:04Z)
+
+- PRINCIPAL-LINKS - send an agent to make the ways-of-working Project note and the Engineering Practice Pillar describe the skill map, the eight area diagrams and the thread model, and mark the HTML-opt-in idea as delivered by KI-HARNESS-GOV-193
+
+## Decision 137 (2026-10-14T22:21:04Z)
+
+- CAP-2-DRIFT - a short agent regenerates skills/README.md with ki repo conform --skill ki-repo-harness, checks the ki-repo-harness audit passes, and pushes
+
+## Decision 138 (2026-10-14T22:21:04Z)
+
+- CLI126-DELIVER - implement KI-TOOL-KI-CLI-126 to awaiting review, release tools-ki, bump ki-principal's .github/ki-version, and confirm ki-principal CI reaches the audit step
+
+## Decision 139 (2026-10-14T22:21:04Z)
+
+- CLI131-SPLIT - keep the split and leave KI-TOOL-KI-CLI-131 at triage until the repair fix lands
+
+## Decision 140 (2026-10-14T22:21:04Z)
+
+- HARNESS-RECORD - no harness record for pmo-simplify: the decisions log and the run report hold the standard change, and KI-TOOL-KI-CLI-130 carries the product acceptance
+
+## Decision 141 (2026-10-14T22:21:04Z)
+
+- KI-RELEASE - accept KI-TOOL-KI-CLI-132 through ki-accept now, and release it in the same tools-ki release CLI126-DELIVER makes
+
+## Decision 142 (2026-10-14T22:21:04Z)
+
+- INCEPTION-TYPE - treat an inception Project as the evaluation-stage pattern, not a new type, with a ChatGPT seed-and-return loop owned by knowledge-acquisition, and settle it together with AREAS-PATTERN. However, I'd like to discuss the whole project: life cycle and a potential type field. Do we have different types as well for roadmap items? And what about initiatives? So I think any of these kind of comparable concepts across the hierarchy of initiatives, projects, and roadmap items I want to have a review of. So if you can come back to me with some details on that after you process the rest of the above, that would be great.
+
+## Decision 143 (2026-10-14T22:21:04Z)
+
+- THREADS-TMP - Oh, and I wanted to approach something about the +/_THREADS areas again. There seems to be a lot of files created in there. There's things like screenshots that are taken. A lot of them are very temporary based stuff. Temporary things should be in the tmp folder so they are not tracked by git. Maybe we need to be clearer about what kinds of things are in threads and what kinds of things are temporary.
+
+## Decision 144 (2026-10-14T22:21:05Z)
+
+- MARK-FIRST - Oh, actually as well, can you take a mark before you process those?
