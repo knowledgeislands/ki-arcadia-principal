@@ -4,7 +4,7 @@ thread: knowledge-islands-model.knowledge-acquisition
 label: 'Knowledge Islands Model: knowledge-acquisition'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-14T20:21:00Z
+updated_at: 2026-10-14T22:27:00Z
 ---
 
 # knowledge-islands-model.knowledge-acquisition
@@ -24,7 +24,7 @@ The provider-neutral acquisition lifecycle is documented in one Pillars note, AI
 ## Current state
 
 - Open records: [KI-HARNESS-OPS-005](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-005-acquire-ai-sessions.md) (Now, in progress), [KI-PRINCIPAL-MOD-006](../../Streams/Roadmap/KI-PRINCIPAL-MOD-006-knowledge-acquisition-lifecycle.md) (Next, ready) and [DOTFILES-UE-035](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-035-install-whatsapp-spool-refresh.md) (Hold, chezmoi).
-- Run `knowledge-acquisition`: running `spirit-move` (Haiku, acquire + harness) and `handoff-review` (Sonnet, read-only), launched 2026-10-14 21:3x BST. Finished on 2026-10-14: `chatgpt-bind` (17 project identifiers bound, 334 conversations staged in `acquire`), `route-local-review` (receiving review of KB-ACQUIRE-002 and KB-ACQUIRE-003), `tower-move` (The Tower Game's 15 packages moved to `personal`, KI-HARNESS-OPS-005 binding updated, both pushed) and `spirit-review` (read-only: 14 of 18 fit `sacred-inquiry`, 1 `personal`, 3 unclear).
+- Run `knowledge-acquisition`: nothing running. `spirit-move` finished 2026-10-14: the 18 Personal - Spirituality packages are in `sacred-inquiry` (acquire 9431269, ki-agentic-harness 17747064, both pushed; 334 still verify). `handoff-review` finished: KI-TOOL-KI-CLI-128 covers the reset data-loss risk in intent with two gaps.
 - KI-PRINCIPAL-MOD-006's Granola evidence paths point at the private `acquire` repository (ACQ-PATHS, 2026-10-14). The browser-runtime question (KI-HARNESS-GOV-087) is merged into KI-HARNESS-OPS-005.
 - ki-principal commits are blocked: the pre-commit gate audits the whole tree and fails on another Project's note until the scoped gate (`ki repo audit --staged`) lands from ways-of-working's gate-release run. Uncommitted here: this checkpoint, `decisions.md` and three reports (`route-local-review`, `tower-move`, `spirit-review`). Commit them through a private index by explicit path at the first mark after the gate switches; never `--no-verify`.
 - Thread folder tidy at this mark: no deletions; every report still carries an open query.
@@ -52,7 +52,10 @@ The provider-neutral acquisition lifecycle is documented in one Pillars note, AI
 
 ## Open questions
 
-- GRANOLA-PLAN and GRANOLA-CARRIER: close when `handoff-review` confirms [KI-TOOL-KI-CLI-128](../../../tools-ki/docs/roadmap/KI-TOOL-KI-CLI-128-granola-retention-safeguards.md) covers the reset data-loss risk.
+- GRANOLA-PLAN and GRANOLA-CARRIER: handoff-review found coverage in intent with two gaps, so not yet closed; close on RESET-FIRST. Condition was: close when `handoff-review` confirms [KI-TOOL-KI-CLI-128](../../../tools-ki/docs/roadmap/KI-TOOL-KI-CLI-128-granola-retention-safeguards.md) covers the reset data-loss risk.
+- RESET-FIRST (open): confirm the reset fix as KI-TOOL-KI-CLI-128's first slice with `state_root` conditional; tools-ki to tie its refusal step to the `--rebuild` and non-rebuild branches.
+- CHATGPT-OWNER (open): acquire-intake to add an exact-path inventory line for `.acquire/chatgpt/` to KB-ACQUIRE-002, no move now.
+- HEADING-AUDIT (open): the ki-pmo report heading's opening `---` rules fail ki-repo-kb NOTE-1a as malformed front matter, so `handoff-review.report.md` cannot pass the commit gate; owner of the fix is the ways-of-working thread.
 - BINARY-HOME and BINARY-HOLD: the state-of-play thread's; paste block given to Kris 2026-10-14, delivery unconfirmed.
 - START-MOD-006 (held): launch KI-PRINCIPAL-MOD-006 through `ki-implement` once the scoped gate has landed in ki-principal and the token reset has happened.
 - DIAGRAMS (handed to ways-of-working): check PRINCIPAL-HTML and, unless it says keep, remove `+/diagrams/change-management-skills/`.
