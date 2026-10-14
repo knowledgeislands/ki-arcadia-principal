@@ -555,3 +555,7 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 132 (2026-10-14T20:55:14Z)
 
 - GOV-192 - accept KI-HARNESS-GOV-192 as delivered, since v0.10.4 pins it and ki-principal's hook uses it, and prune it
+
+## Decision 133 (2026-10-14T21:21:07Z)
+
+- COMMIT-WORK - Kris, 22:20 BST: "I can't stress this enough and I'll be saying this to every single thread, but it's absolutely imperative that you commit your work."
