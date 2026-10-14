@@ -285,3 +285,11 @@
 ## Decision 70 (2026-10-14T12:51:26Z)
 
 - Kris, 2026-10-14: handoff from ways-of-working (KI-PRINCIPAL-ECO-013, KI-HARNESS-GOV-186) - deploy the harness output style ki-agentic-harness/output-styles/ki-coordinator.md to ~/.claude/output-styles/ki-coordinator.md through chezmoi, as the pilot record's chezmoi Steps say; review chezmoi diff before applying.
+
+## Decision 71 (2026-10-14T20:18:54Z)
+
+- Kris, 2026-10-14: re-bootstrap under current ki-pmo and ki-delegation (harness at daa63224 or later); take a new mark; give a fresh full summary with every open query and the full stacked reply block. Commit everything the thread does or oversees, by explicit path, and name anything uncommitted or unpushed. At this mark and every one after, delete answered reports whose outcome has a durable home from +/_THREADS/<run>/. Heartbeat: wake at least every 5 minutes while work runs. ki-principal: its pre-commit gate fails on STREAM-9 (mac-studio-bootstrap), so leave ki-principal changes uncommitted, never use --no-verify, and commit through a private index at the next mark after the gate switches. Other repositories commit and push as normal.
+
+## Decision 72 (2026-10-14T20:28:25Z)
+
+- Kris, 2026-10-14 21:3x BST: 'we are getting close to our token limits and we have already hit the limit on fable. try to prioritise work that is more mechanical and on a lower model level to optimise what we have left until a reset.'
