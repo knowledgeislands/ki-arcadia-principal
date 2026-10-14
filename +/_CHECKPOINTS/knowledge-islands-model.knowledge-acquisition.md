@@ -4,7 +4,7 @@ thread: knowledge-islands-model.knowledge-acquisition
 label: 'Knowledge Islands Model: knowledge-acquisition'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-12T18:30:00Z
+updated_at: 2026-10-14T00:20:00Z
 ---
 
 # knowledge-islands-model.knowledge-acquisition
@@ -19,20 +19,24 @@ The provider-neutral acquisition lifecycle is documented in one Pillars note, AI
 - Re-bootstrapped 2026-10-12 while the master thread still lists this thread as queued behind Fnd: baseline-rollout. Run: `knowledge-acquisition` (not yet created); no background agent is working on this Project.
 - KI-HARNESS-OPS-005 was waiting on its 2026-10-04 question: bind the export's 17 `g-p-` project identifiers to project names. The master thread's `chatgpt-sort` agent (Decision 137) saved the cloud project list before its renames, at `~/.local/state/ki/agents/state-of-play/backups/chatgpt-sort-20261012T1043/chatgpt-cloud-projects-before.tsv`. Its 17 identifiers match the export's 17 exactly. The 17 projects now follow Decision 135 naming (`<Territory> - <Sub-area>`); the `Kit:`, `HNR:` and `<Domain>: General` names are prior names. No chats moved. The listing sits in machine-local run state only.
 - The browser-runtime question (KI-HARNESS-GOV-087) is merged into KI-HARNESS-OPS-005 as its isolated-browser-trial step.
-- ki-delegation read at f2b14dca.
+- KI-PRINCIPAL-MOD-006's Granola evidence paths now point at the private `acquire` repository (`.acquire/granola/ledger.json`, `captures/*/granola/`), which has received every Granola capture since 2026-10-10 (ACQ-PATHS, 2026-10-14).
+- ki-delegation read at 12c791b7.
 - Mark: none yet.
 
 ## Decisions made
 
 - The master thread `state-of-play` owns cross-project priorities, releases and decisions; this thread works only this Project's records.
 - The lifecycle note changes `Pillars/`, so KI-PRINCIPAL-MOD-006 runs through the Enactment Process.
+- 2026-10-14 (ACQ-PATHS, from the master thread): repoint KI-PRINCIPAL-MOD-006's Granola paths at the `acquire` repository. Done; reading `acquire` is read-only evidence.
 
 ## Files touched
 
 - This checkpoint.
+- [KI-PRINCIPAL-MOD-006](../../Streams/Roadmap/KI-PRINCIPAL-MOD-006-knowledge-acquisition-lifecycle.md) (Granola paths repointed).
 
 ## Open questions
 
+- BIND (open): approve one background agent on KI-HARNESS-OPS-005 to preserve the pre-rename ChatGPT project listing beside the export, bind the 17 project identifiers and convert and stage the export.
 - Whether the lifecycle note leads the remaining work depends on what KI-HARNESS-OPS-005 has learnt.
 - 2026-10-11 (from island-model-and-tending, parked): ChatGPT territory keys move to kebab-case territory names (knowledge-islands, humans-not-robots, equal-remedy, valle-armonia, techmedix, legal, personal); island-model-and-tending renames the kit-principal capture folders. Use the new keys when reconciling ChatGPT captures.
 

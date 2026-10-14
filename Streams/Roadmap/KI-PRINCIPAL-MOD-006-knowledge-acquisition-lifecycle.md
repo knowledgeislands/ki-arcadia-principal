@@ -16,7 +16,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-08-23T12:33:49Z
-updated_at: 2026-10-11T02:19:55Z
+updated_at: 2026-10-14T00:15:00Z
 ---
 
 # Knowledge Acquisition Lifecycle
@@ -29,7 +29,7 @@ Make the provider-neutral Knowledge Islands acquisition lifecycle operationally 
 
 [[ADR-KI-PRINCIPAL-001-provider-neutral-knowledge-acquisition|ADR-KI-PRINCIPAL-001]] establishes one lifecycle: discover, acquire, stage, harvest, durable knowledge, then archive or delete source. It requires every adapter to preserve available original content, source identity, timestamps, media as byte-preserved assets, provenance and declared omissions, and to distinguish content-minimised discovery and checkpoint data from faithful source reads. It applies to ChatGPT, Granola, Codex, Claude, Slack, email, documents and future sources; provider mechanics remain below the architectural boundary.
 
-The decision states the architecture but not the operational picture: what a provenance package contains, what checkpoint makes a capture safe to harvest, and how material moves after imperfect routing. Two local evidence sets now exist to derive that picture from observation rather than design: Claude housekeeping as a direct local source and Granola as an export/API-style source already staged in this island's Harbour. The installed ChatGPT application has an opaque local session cache, which confirms that discovery, faithful raw acquisition, interpretation and source retirement must remain separate concerns.
+The decision states the architecture but not the operational picture: what a provenance package contains, what checkpoint makes a capture safe to harvest, and how material moves after imperfect routing. Two local evidence sets now exist to derive that picture from observation rather than design: Claude housekeeping as a direct local source and Granola as an export/API-style source, staged since 2026-10-10 in the private `acquire` repository (`krisb/acquire`), which now receives every Granola capture. The installed ChatGPT application has an opaque local session cache, which confirms that discovery, faithful raw acquisition, interpretation and source retirement must remain separate concerns.
 
 ## Boundary
 
@@ -42,14 +42,14 @@ The decision states the architecture but not the operational picture: what a pro
 ## Current state
 
 - `Admin/Governance/Decisions/ADR-KI-PRINCIPAL-001-provider-neutral-knowledge-acquisition.md` is `status: current` and names `ki acquire import --adapter <provider>` as the repository-context staging operation.
-- Export/API evidence: `+/_ACQUIRE/granola/ledger.json` (schema 3) records adapter, provider, hashed account identity, source-schema and identity-checkpoint SHA-256 values, the acquisition interval, `exhaustive: true` and per-window counts with response hashes. Each staged meeting note (for example `+/_ACQUIRE/granola/2026-07-28--catch-up-w-alec--e8fbfc78-dc6c-448c-9ce0-d262c3316499.md`) carries `source_id`, `acquired_at`, `detail_sha256`, `transcript_sha256`, `transcript_observed_at`, folder membership and an explicit `omissions` list. Latest checkpoint commits: `72302d2`, `68fcb51`.
+- Export/API evidence, in the `acquire` repository: `.acquire/granola/ledger.json` (schema 3) records adapter, provider, hashed account identity, source-schema and identity-checkpoint SHA-256 values, the acquisition interval, `exhaustive: true` and per-window counts with response hashes. Each staged capture is a folder `captures/<territory>/granola/<date>--<slug>--<source_id>/` holding `meeting.md`, `routing.json` and `source-variants/`; `meeting.md` carries `source_id`, `acquired_at`, `transcript_state`, `transcript_observed_at`, folder membership and an explicit `omissions` list, and the ledger keeps per-meeting `document_sha256`, `detail_sha256`, `transcript_sha256`, versions and harvest disposition. The 2026-10-10 consolidation from the former per-island Harbours, including this island's, is proven by `.acquire/granola/migration/2026-10-10/manifest.json` and per-source ledgers. This island's `+/_ACQUIRE/granola/` is retired.
 - Direct local evidence: `mcp-housekeeping-claude` exposes read-level `claude_code_sessions_discover`, `claude_code_sessions_list`, `claude_code_sessions_checkpoint` (content-minimised, provenance-preserving, writes nothing) and `claude_code_session_read`; access defaults to `read`. Its README in the `mcp-housekeeping-claude` repository is the authoritative tool catalogue.
 - Asymmetry observed at planning: `tools-ki` `src/core/acquire/` ships only `granola` and `chatgpt` adapters, so the Claude source is evidenced at discovery and checkpoint level, not as a Harbour-staged capture. AI session acquisition is in flight in `ki-agentic-harness`.
 - No Pillars note describes the lifecycle operationally; `Pillars/Philosophy/Model/Processes/` holds [[How Change Happens]] and the Enactment and Contribution processes.
 
 ## Steps
 
-- [ ] Re-read [[ADR-KI-PRINCIPAL-001-provider-neutral-knowledge-acquisition|ADR-KI-PRINCIPAL-001]], `+/_ACQUIRE/granola/ledger.json`, two or three staged Granola notes, and the `mcp-housekeeping-claude` README and checkpoint tool source; optionally run one read-level `claude_code_sessions_checkpoint` scoped to this repository.
+- [ ] Re-read [[ADR-KI-PRINCIPAL-001-provider-neutral-knowledge-acquisition|ADR-KI-PRINCIPAL-001]], the `acquire` repository's `.acquire/granola/ledger.json` and migration manifest, two or three staged Granola `meeting.md` captures, and the `mcp-housekeeping-claude` README and checkpoint tool source; optionally run one read-level `claude_code_sessions_checkpoint` scoped to this repository.
 - [ ] Tabulate the provenance fields each source actually provides against the ADR's required set (original content, source identity, timestamps, assets, provenance, omissions, content hash, repository context), marking absent fields honestly.
 - [ ] Choose the note's folder under `Pillars/Philosophy/Model/` (likely `Processes/Acquisition Process/`) and create the note plus its same-name index if a new folder is needed, following the index-note rule.
 - [ ] Write the note: the six lifecycle stages with an owner per stage; the common provenance package; the harvest checkpoint as observed (source identity, timestamps, content hash, declared omissions); imperfect-routing handling (move within the Harbour or to another island without rewriting acquisition evidence); and source retirement stated as open, requiring a later provider-specific decision.
@@ -67,9 +67,9 @@ The decision states the architecture but not the operational picture: what a pro
 
 ## Verify
 
-- The note cites `+/_ACQUIRE/granola/ledger.json`, at least one staged Granola note, and the `mcp-housekeeping-claude` checkpoint tool by path or name.
+- The note cites the `acquire` repository's `.acquire/granola/ledger.json`, at least one staged Granola capture, and the `mcp-housekeeping-claude` checkpoint tool by path or name.
 - The note states that the archive and deletion threshold is undecided.
-- `git status --short -- '+/_ACQUIRE/'` is empty after delivery: no staged capture changed.
+- `git -C <acquire checkout> status --short -- captures .acquire` is unchanged by delivery: no staged capture or ledger changed.
 - No `ki acquire` command ran without `--dry-run` and no non-read housekeeping tool was invoked (stated in the review packet).
 - `grep -nP '[\x{2013}\x{2014}]' <new note paths>` returns nothing (ASCII hyphens only).
 - `ki repo audit --skill ki-repo-kb --repo . --progress never` PASS.
@@ -77,7 +77,7 @@ The decision states the architecture but not the operational picture: what a pro
 
 ## Dependencies / blocks
 
-No local build-order dependency. Evidence comes from Arcadia's own Harbour and the read-level contract of `mcp-housekeeping-claude`. `ki-agentic-harness`'s AI session acquisition work may later supply a Harbour-staged Claude capture; this record does not wait for it, and the note can be refreshed when it lands. That harness work also carries an isolated browser trial, beginning with ChatGPT acquisition. It belongs to the same acquisition cluster as this record, but neither blocks the other, so it appears in neither `blocks` nor `blocked_by`.
+No local build-order dependency. Evidence comes from read-only inspection of the `acquire` repository's Granola captures and the read-level contract of `mcp-housekeeping-claude`. `ki-agentic-harness`'s AI session acquisition work may later supply a Harbour-staged Claude capture; this record does not wait for it, and the note can be refreshed when it lands. That harness work also carries an isolated browser trial, beginning with ChatGPT acquisition. It belongs to the same acquisition cluster as this record, but neither blocks the other, so it appears in neither `blocks` nor `blocked_by`.
 
 ## Documentation impact
 
@@ -101,7 +101,7 @@ A later provider-specific record will be needed for the archive or deletion thre
 
 ### Decisions under delegated autonomy
 
-Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible: the direct local source is Claude housekeeping (`mcp-housekeeping-claude`, read level only) and the export/API source is Granola as already staged in `+/_ACQUIRE/granola/` with `ledger.json`.
+Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible: the direct local source is Claude housekeeping (`mcp-housekeeping-claude`, read level only) and the export/API source is Granola as already staged in `+/_ACQUIRE/granola/` with `ledger.json`. Repointed 2026-10-14 at the owner's instruction: those captures moved to the private `acquire` repository on 2026-10-10, so the evidence set is now its `.acquire/granola/` ledger and `captures/*/granola/` folders; reading another repository is read-only evidence, not a cross-repository write.
 
 Decided by the Fable reviewer under delegated autonomy (2026-10-05), reversible: the harvest checkpoint is source identity plus timestamps plus content hash plus declared omissions, documented as observed rather than prescribed.
 
