@@ -7,7 +7,7 @@ initiative: rig
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-14T23:55:00Z
+updated: 2026-10-14T23:49:00Z
 author: Written with Claude
 ---
 

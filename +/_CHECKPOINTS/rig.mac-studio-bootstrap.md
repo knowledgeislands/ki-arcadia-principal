@@ -4,7 +4,7 @@ thread: rig.mac-studio-bootstrap
 label: 'Rig: mac-studio-bootstrap'
 state: active
 created_at: 2026-10-08T08:45:00Z
-updated_at: 2026-10-14T23:55:00Z
+updated_at: 2026-10-14T23:49:00Z
 ---
 
 # rig.mac-studio-bootstrap
