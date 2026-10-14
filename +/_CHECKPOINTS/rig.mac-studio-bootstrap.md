@@ -9,6 +9,13 @@ updated_at: 2026-10-14T16:47:00Z
 
 # rig.mac-studio-bootstrap
 
+**Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
+
+- 2026-10-14 · GATE-FIX · Kris: reword the two "Rig note" bullets in the [mac-studio-bootstrap Project note](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-bootstrap/mac-studio-bootstrap.md) so they name no records, conform this checkpoint, then commit and push from sol · detail: [rig-other-mac report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/mac-studio-bootstrap/rig-other-mac.report.md)
+- 2026-10-14 · RIG-SOL-TELEGRAM · Kris: replace sol's App Store Telegram with the Homebrew cask (quit the app, approve removal, `rig apply`, sign in again) · detail: [rig-other-mac report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/mac-studio-bootstrap/rig-other-mac.report.md)
+- 2026-10-14 · RIG-SOL-BREW · Master recommends leaving sol's tools-rig checkout link and the stale Homebrew Rig 0.5.0 formula alone for now; this thread decides · detail: [rig-other-mac report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/mac-studio-bootstrap/rig-other-mac.report.md)
+- 2026-10-14 · REBOOT-PMO · Kris: re-bootstrap under the frozen ki-pmo report shape at this thread's next wake · detail: [rig-other-mac report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/mac-studio-bootstrap/rig-other-mac.report.md)
+
 ## Objective
 
 Bring Kris's Mac Studio back to full estate capability as a reliably reachable remote agent host, kept up to date remotely, under the Project [mac-studio-bootstrap](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-bootstrap/mac-studio-bootstrap.md) in the [Rig Initiative](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/rig.md). The bootstrap and the restart test are done; the Project stays open until the tailnet-only firewall is live on `sol` and remote `chezmoi apply` works over SSH (Kris's closure condition, 2026-10-14).

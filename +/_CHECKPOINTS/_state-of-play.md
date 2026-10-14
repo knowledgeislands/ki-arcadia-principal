@@ -4,97 +4,95 @@ thread: _state-of-play
 label: 'Master: state-of-play'
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-14T10:55:00Z
+updated_at: 2026-10-14T21:10:00Z
 ---
 
 # _state-of-play
 
 ## Objective
 
-**Thread working rules.** Re-read this block after any compaction (Decision 169).
+This is the territory master thread for Knowledge Islands: the coordination thread of coordination threads, whose main role is to dispatch work into the right Project. It oversees only: Project threads' state, cross-thread blockers, cross-project priorities, releases and the roadmap burn-down across the `knowledge-islands` territory and chezmoi. All real work goes to Project threads, each resumed from its checkpoint, or to detached background agents launched through `ki agent`. Each other territory Capital has its own master thread on the same model. The Knowledge Islands Capital is `knowledgeislands/ki-principal` at `~/workspaces/knowledge-islands/ki-principal`.
 
-- Delegate-only: all work goes to background agents launched through `ki agent`; no in-session work beyond reading state.
-- Every report is the `ki-delegation` owner report at the quiet level (Decision 156): `#` banner; What has been done; What is in progress, with "Outstanding - no action requested now"; Outstanding queries, each `### TAG - title` with Summary, Need from you and Recommendation; closing reply block.
-- Minimal visible tool use; outcomes only. Never relay command output, SHAs or check results.
-- Timestamps from `date`; they/them for Kris; full record identifiers, linked inline.
-- Burn-down (Decision 158): no new feature records; capture only blockers, defects or Kris-requested items; prefer closing, merging or rejecting.
-- Push beneath (Decision 165): an agent may push other threads' committed work along with its own when the repository's checks pass, naming those commits.
-- Restore path (Decision 169): any change to a connection-critical service (Headroom proxy, SSH, Tailscale, network, auth) carries a tested restore path in its rollout plan: reconnect first, then evaluate the failure. Never hand Kris a raw command for such a change.
-- Follow-up releases stop and ask first (Decision 163).
-- "What is in progress" lists only this thread's own background agents; other threads' work stays out of it, except as a blocker. Commit only with `git commit -- <path>`, never the whole index, because other sessions stage in this checkout.
-- In reports to Kris, describe each decision in words; never cite it by number alone. Numbers live only in the machine-local log until [KI-HARNESS-GOV-180](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-180-tracked-thread-decisions-home.md) moves it into a tracked home.
-- Thread-working model (Decision 174): KI Model: ways-of-working owns how threads work (skills, hooks, banner, re-bootstrap, messaging between threads). Hand it over; do not do it here. That includes the decision log and [KI-HARNESS-GOV-180](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-180-tracked-thread-decisions-home.md). Forward any such question from Kris in one line. This thread only oversees: Project threads' state, cross-thread blockers, releases and the burn-down.
-- Reaching threads: `SendMessage` reaches live Claude sessions on this Mac (ways-of-working is `ki-principal-f1`), but Zed does not render that traffic, so Kris cannot see it. `ki agent decide <thread>` only appends to the thread's log. Codex threads need Kris to paste. Never treat a backend reply as visible progress.
+Thread working rules, re-read after any compaction:
 
-This is the territory master thread for Knowledge Islands. It does only project management and discussion: cross-project priorities, decisions, releases and the estate-wide view across the `knowledge-islands` territory and chezmoi. All real work is routed to Project threads, each resumed from its checkpoint below, or to background agents (Decision 17 in `~/.local/state/ki/agents/state-of-play/decisions.md`). Since 2026-10-11 each other territory Capital has its own master thread on the same model (Decision 49). Since the 2026-10-12 estate reshape the Knowledge Islands Capital is `knowledgeislands/ki-principal` at `~/workspaces/knowledge-islands/ki-principal`.
+- Delegate-only under `ki-pmo` and `ki-delegation`: at most five tool calls a turn, no substantive work in the thread, and an owner message steers work in flight rather than stopping it.
+- Every report is the `ki-pmo` owner report: report heading, `Done`, `In Progress`, `Queries` with Context, Query and Options, the stacked reply block, then the block-letter footer banner and, at rest, the resume line. Full Summary only when all dispatched work has finished or on request; otherwise timed one-to-two-line updates and a heartbeat every five minutes while work runs.
+- Outcomes only: no command output, commit identifiers or check results in replies. Describe decisions by their words and date, never by number. Full record identifiers, linked by absolute path; they/them for Kris.
+- Burn the roadmap down: no new feature records; capture only blockers, defects or items Kris asks for; prefer closing, merging or rejecting.
+- Push beneath: an agent may push other threads' committed work with its own when the repository's checks pass, naming those commits.
+- Connection-critical changes (firewall, Headroom proxy, SSH, Tailscale, network, auth) carry a tested restore path that reconnects first; never hand Kris a raw command for one.
+- Follow-up releases stop and ask first.
+- Thread-working-model questions (skills, hooks, banner, re-bootstrap, messaging, decision log home) belong to KI Model: ways-of-working; forward them in one line.
+- Commit by explicit path only, because other sessions stage in this checkout. At each mark delete answered and homed reports from the thread folder by explicit path, keeping open-query reports and `decisions.md`.
+- Reaching threads: `SendMessage` reaches live Claude sessions on this Mac but Zed does not render it; Codex threads and sol threads need Kris to paste.
 
 ## Current state
 
-- `ki-pmo read at f5da817b` (re-read at re-bootstrap, 2026-10-14 12:00 BST).
-- Mark: 2026-10-14T10:55Z. Recap given and mark re-struck at Kris's resume request. Outstanding items carry forward under Open questions.
-- **Estate.** Eight territories in ranking order: personal, knowledge-islands, legal, humans-not-robots, valle-armonia, sacred-inquiry, techmedix, equal-remedy (aliases kb, ki, lgl, hnr, va, si, tmx, er). Checkouts at `~/workspaces/<territory>/<repo>`; Capitals named `*-principal`. The live view is the Estate Map in personal-principal; a final map run follows.
-- **Thread labels (Decision 143):** "Fnd:" for Platform Foundations, "KI Model:" for Knowledge Islands Model.
-- **Active threads (Kris's focus from 2026-10-14):** Acquire: acquire-intake (Codex, in `krisb/acquire`); KI Model: ways-of-working; KI Model: knowledge-acquisition; this thread. **Resting, with open handoffs held in their checkpoints:** Fnd: estate-factorisation; Fnd: baseline-rollout; Rig: mac-studio-bootstrap; Rig: chezmoi (mise config apply and `install.executables` follow-up; `rig apply` hold until a fixed Rig is installed); KI Model: command-centre; Techne: agent-host; Observatory: product. Opener: `Re-bootstrap as the <label> thread under ki-delegation.`
-- **Other territories:** only the Personal and Valle Armonia masters are running. Paperclip waits until the Knowledge Islands roadmaps are bottomed out (Decision 147).
-- **Roadmap:** 33 open Knowledge Islands records on 2026-10-14, up from 19 on 2026-10-12 (Decision 164). Triage burn-down applied (Decisions 163, 164); ROADMAP-SIZING goes to one ways-of-working design record, daily count snapshots first (Decision 165).
-- **Since the last mark:** nothing yet.
-- **Carried across this mark:** Rig 0.6.3 released; this Mac runs Rig from the tools-rig checkout, and sol already ran 0.6.3 from its checkout; the cask fix is live on both. Roadmap census done (42 = 36 open + 6 done; proposal takes it to 21) and Paperclip shut-down, capture and rebuild proposal delivered; both await Kris. Kris's focus: Acquire: acquire-intake, KI Model: ways-of-working, KI Model: knowledge-acquisition and this thread.
+- `ki-pmo read at f847248b`.
+- Mark: 2026-10-14T20:19:06Z.
+- Thread folder: +/_THREADS/state-of-play/
+- Messages: read to entry 1 (inbox `~/.local/state/ki/agents/state-of-play/inbox.md`; one acquire-intake focus handoff, reviewed as a proposal, not policy).
+- **Re-bootstrapped** at Kris's request on 2026-10-14 at 21:19 BST under current `ki-pmo` and `ki-delegation`, with this new mark. The report shape is frozen at the heading-rich form; further tweaks are logged for a review in about a week.
+- **Commit gate.** Knowledge Islands Principal's pre-commit gate now scopes its audit verdict to the staged paths (`ki repo audit --staged`), so this thread commits its own paths through a private index by explicit path, never `--no-verify`. The tree-wide audit still fails STREAM-9 in the [mac-studio-bootstrap](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-bootstrap/mac-studio-bootstrap.md) Project note until that thread's GATE-FIX lands from sol.
+- **Estate.** Eight territories in ranking order: personal, knowledge-islands, legal, humans-not-robots, valle-armonia, sacred-inquiry, techmedix, equal-remedy. Checkouts at `~/workspaces/<territory>/<repo>`; Capitals named `*-principal`. The live view is the Estate Map in personal-principal; a final map run follows.
+- **Active threads (Kris's focus):** Acquire: acquire-intake (Codex, in `krisb/acquire`); KI Model: ways-of-working; KI Model: knowledge-acquisition; this thread. Resting, with open handoffs in their checkpoints: Fnd: estate-factorisation, Fnd: baseline-rollout, Rig: mac-studio-bootstrap (on sol), Rig: chezmoi, KI Model: command-centre, Techne: agent-host, Observatory: product.
+- **Since the morning mark:** Rig 0.6.3 released with the cask fix and runs from the tools-rig checkout on both Macs. The roadmap census burn-down was applied across the Knowledge Islands repositories, all pushed. Paperclip was shut down on terra after its approach was captured into the [paperclip-capture-and-rebuild](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/paperclip-capture-and-rebuild/paperclip-capture-and-rebuild.md) Project; nothing was deleted. The menu-bar investigation became [KI-TOOL-RIG-CORE-053](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-053-macos-menu-bar-declarations.md). The cancelled [KI-TOOL-KI-CLI-115 (pruned)](https://github.com/knowledgeislands/tools-ki/blob/2c6af465b44d/docs/roadmap/KI-TOOL-KI-CLI-115-enforce-roadmap-writing-checkout.md) was pruned. The local-route review settled the Granola and binary-probe homes for Kris's decision.
+- **Repositories at this mark:** tools-ki, tools-rig, ki-agentic-harness, ki-techne-harness, tools-techne and chezmoi have no unpushed commits; ki-principal carries other threads' uncommitted work, which is theirs.
+- **Delivery priority (ACQ-FOCUS, adopted 14 October):** Rig: mac-studio-bootstrap and Techne: agent-host first. Delivery priority only: the Techne Programme Hold is unchanged, and policy wording goes to its owning process only when Kris asks.
+- **Checkpoint-message pilot (14 October):** threads message each other asynchronously through a bold **Messages from Master: state-of-play** block just under a checkpoint's H1, one dated line per item with its tag, Kris's decision and the report holding the detail; the receiving thread acts and removes the line. The block passes the `ki-checkpoint` audit. Sent: GATE-FIX, RIG-SOL-TELEGRAM, RIG-SOL-BREW and REBOOT-PMO to Rig: mac-studio-bootstrap; BINARY-HOME, GRANOLA-SUPPORT, ACQ-FINISH and the held GRANOLA-PLAN and BINARY-PROOF receipts to KI Model: knowledge-acquisition; CLI115-CHECKPOINT-LINKS to Fnd: estate-factorisation; the ACQ-FOCUS acknowledgement to Acquire: acquire-intake.
 - **Running:** nothing.
-- **Focus (Kris, Decisions 137, 158):** Knowledge Islands; burn the roadmap down. Master stays delegate-only with short turns.
-- **Tooling.** `ki` 0.10.1, `mgit` 0.17.0, Rig 0.6.1. Launch with `--rules push` (Decision 123); task-named remote operations are authorised (Decision 132).
+- **Tooling.** `ki` 0.10.1, `mgit` 0.17.0, Rig 0.6.3 from checkout. Launch with `--rules push`; task-named remote operations are authorised.
 
 ## Decisions made
 
-Rules live with their durable owners: the roadmap model in GDR-KI-PRINCIPAL-005 and the `ki-work` standards, delegation, project threads and territory master threads in `ki-delegation`, releases in the `ki-repo-tools` release-readiness standard. Standing instructions for this thread:
+Rules live with their durable owners: the roadmap model in [GDR-KI-PRINCIPAL-005](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Admin/Governance/Decisions/GDR-KI-PRINCIPAL-005-the-roadmap-model.md) and the `ki-work` standards, delegation and threads in `ki-delegation` and `ki-pmo`, releases in the `ki-repo-tools` release-readiness standard. The decisions log is `+/_THREADS/state-of-play/decisions.md`. Standing instructions for this thread:
 
-- Project management and discussion only; one thread per active Project, within the cap, opened only where there is active work. This thread passes directions to a project thread through its checkpoint or a paste-ready message.
-- Messages from Kris are steering; work stops only when Kris expressly says abort or stop.
-- Keep agents moving: start the next queued delivery as soon as one finishes. Never delegate Kris-attended or Kris-gated records: KB-DOTFILES-UE-062, KB-DOTFILES-UE-071, KB-DOTFILES-UE-027 and KB-DOTFILES-UE-065.
-- Trades are on hold: send no new trades; do the work directly or record it in the receiving repository.
+- Kris's focus is Knowledge Islands: burn the roadmap down; the master stays delegate-only with short turns.
+- Messages from Kris steer; work stops only when Kris expressly says stop.
+- Never delegate Kris-attended or Kris-gated records: [KB-DOTFILES-UE-071](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-071-audit-macos-privacy-permissions.md) and [KB-DOTFILES-UE-027](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-027-honest-rationales-per-tool.md); KB-DOTFILES-UE-062 and KB-DOTFILES-UE-065 are no longer on the chezmoi roadmap.
+- Trades are on hold: send no new trades.
 - Commit minor rollout changes directly without new records; push own commits fast-forward only.
 - Delivered and awaiting-review records count as done; obsolete or ownerless records are cancelled; both are pruned once verified.
-- Releases are on demand; follow-up releases stop and ask first (Decision 163). ki and mgit are released once their roadmaps reach zero; the specification review starts once the Knowledge Islands roadmaps are near zero (Decision 115).
+- Releases are on demand; ki and mgit are released once their roadmaps reach zero; the specification review starts once the Knowledge Islands roadmaps are near zero.
 - Linear and TickTick are not raised in this thread.
-- The Enactment threshold: an explicit owner instruction for a bounded change stands in for a record, related changes share one record, and a record is needed only for new or reworked content in `Admin`, `Pillars` or `Resources`.
-- The [mac-studio-bootstrap](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-bootstrap/mac-studio-bootstrap.md) Project lives under the Rig Initiative.
-- Priorities (thread history section 3): finish terra completely; sol (step 11) and the Paperclip agents (step 12) come last; minimise the Knowledge Islands roadmap.
-- Use background agents so this thread stays responsive. Report with stable short Needs tags and recommendations, record links inline (Decision 111).
+- The Enactment threshold: an explicit owner instruction for a bounded change stands in for a record.
+- Paperclip (14 October): shut down, keep only the approach (lessons, structure, agent instructions and configuration without secrets), rebuild fresh later as eight organisations once the ways-of-working model settles; nothing is deleted until Kris confirms.
+- Roadmap census (14 October): the burn-down is applied; [KI-TECHNE-OPS-027](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/roadmap/KI-TECHNE-OPS-027-agent-host-tailscale-key-minting.md) and [KI-TOOL-RIG-CORE-047](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-047-tailnet-only-listener-firewall.md) stay awaiting review until Kris's live checks.
+- Replies to the re-bootstrap report (14 October, about 21:40 BST): each agent session commits its own work and pushes when the stack is only its own, otherwise flags the other commits for Kris to push. Rig: mac-studio-bootstrap fixes its Project note (GATE-FIX), replaces sol's App Store Telegram with the Homebrew cask and decides on sol's checkout link and stale Rig 0.5.0 formula, all through its checkpoint, and re-bootstraps at its next wake; every other resting thread likewise re-bootstraps on its next wake. The Codex re-bootstrap openers are already sent. The Rig: chezmoi session pulls once anything is pushed. Fnd: estate-factorisation rewrites its KI-TOOL-KI-CLI-115 link. [KI-TOOL-KI-CLI-124](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-124-agent-run-close.md) is pruned through `ki-accept` in a prune-only commit. Rig reports menu-bar drift only, Kris drags once by hand, [KI-TOOL-RIG-CORE-053](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-053-macos-menu-bar-declarations.md) is trimmed, with a later follow-up to look for a real configuration. Knowledge-acquisition takes GRANOLA-SUPPORT ([KI-TOOL-KI-CLI-128](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-128-granola-retention-safeguards.md) as the tools-ki half, only the harness record created, local delivery, migration separately gated), BINARY-HOME (iPhone check first, then the private `knowledgeislands/mcp-acquire-chatgpt` repository and local synthetic build) and the Acer finish line. Paperclip clean-up: clean it all. The stale Paperclip checkpoint is retired. [ADR-KI-TOOL-RIG-010](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/decisions/ADR-KI-TOOL-RIG-010-linux-firewall-through-a-rig-owned-nftables-table.md) is accepted with [KI-TOOL-RIG-CORE-047](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-047-tailnet-only-listener-firewall.md) once the live check passes. The Acquire focus proposal is adopted as delivery priority.
+- Re-bootstrap (14 October, 21:19 BST): new mark, commit everything the thread does or oversees by explicit path, tidy the thread folder at each mark, five-minute heartbeat while work runs.
 
 ## Files touched
 
-- Working material, machine-local and non-durable, in `/Users/krisbrown/.local/state/ki/agents/state-of-play/`: decisions log, `thread-history.md`, prompts and Estate Map sources in `src/`, run reports, backups.
+- Thread folder `+/_THREADS/state-of-play/`: `decisions.md` and the reports with open queries.
+- Machine-local working material in `~/.local/state/ki/agents/state-of-play/`: prompts, run logs, statuses, `thread-history.md`, Estate Map sources in `src/`, backups.
 - Project and Initiative notes: [Projects](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/Projects.md) and [Initiatives](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/Initiatives.md).
 
 ## Open questions
 
-Needs Kris (outstanding at the mark; carried forward until resolved):
+With other threads, no Kris action now:
 
-- **RC-ALL:** roadmap burn-down from 42 to 21 by repository (RC-HARNESS, RC-PRINCIPAL, RC-TECHNE, RC-TOOLS-TECHNE, RC-TOOLS-KI, RC-RIG, RC-SPECS); proposal in `roadmap-census.report.md` in the run folder.
-- **RC-OPS-005:** rescope [KI-HARNESS-OPS-005](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-005-acquire-ai-sessions.md) now or leave it with knowledge-acquisition.
-- **PAPERCLIP-PROJECT, PAPERCLIP-SHUTDOWN, CAPTURE-STORE, PAPERCLIP-AGENTS-DRIFT, NAMING, CODES, HOLD:** Paperclip capture and rebuild; proposal in `paperclip-reshape.report.md` in the run folder. Avoid `rig apply` on terra until PAPERCLIP-SHUTDOWN is decided.
-- **RIG-SOL-BREW, RIG-SOL-TELEGRAM:** unused Homebrew Rig 0.5.0 behind sol's checkout link; Telegram on sol is the App Store copy.
-- **ACQ-FINISH:** Kris pastes the finish line into the Acer chat.
+- **SYNC-GUARD:** Kris answered: fold "level before resume and at every mark" into KI-HARNESS-GOV-189 with `[behind]` and `[unpushed]` items; the follow-through is with KI Model: ways-of-working.
+- **CHANNEL-TELEMETRY:** Kris answered: OTLP metrics on AI tooling use become their own Project under Platform foundations; inter-agent messaging is a separate topic, perhaps a decentralised system per host with the Observatory as command centre, the tailnet being the substrate only. The areas-proposal run is shaping it.
+
+Waiting on Kris's live check:
+
+- **RCA-RIG-ADR010:** accept [ADR-KI-TOOL-RIG-010](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/decisions/ADR-KI-TOOL-RIG-010-linux-firewall-through-a-rig-owned-nftables-table.md) with [KI-TOOL-RIG-CORE-047](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-047-tailnet-only-listener-firewall.md) once Kris's live check passes (report `rc-apply.report.md`).
 
 Dated queue:
 
 - 2026-10-16: review the [KI-PRINCIPAL-MOD-008](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-MOD-008-whole-philosophy-coherence-review.md) hold; release it if most of the roadmap is cleared, otherwise move the review on one week.
-- 2026-10-21: the trades and Delta follow-up ([delta-evaluation](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/delta-evaluation.md)), extended one week (Decision 160). HOLD-1 warnings begin 2026-10-22.
+- 2026-10-21: the trades and Delta follow-up ([delta-evaluation](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/delta-evaluation.md)). HOLD-1 warnings begin 2026-10-22.
+- About 2026-10-21: review the logged report-shape tweaks.
 - 2026-11-12: review the holds [KI-TECHNE-OPS-018](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/roadmap/KI-TECHNE-OPS-018-converge-tools-through-rig.md) and [KB-DOTFILES-UE-084](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-084-render-zshenv-on-vega.md).
-- 2026-11-16: vega and agent-host holds: [KI-HARNESS-GOV-179](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-179-diagram-html-commit-opt-in.md), [KI-TOOL-KI-CLI-125](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-125-ki-release-contract.md), [KI-TOOL-RIG-CORE-048](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-048-signed-release-install-kind.md), [KI-TOOL-RIG-CORE-049](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-049-shared-agentic-rig-role.md).
-- 2027-01-04: holds with no current consumer: [KI-SPEC-KIN-003](/Users/krisbrown/workspaces/knowledge-islands/ki-specifications/docs/roadmap/KI-SPEC-KIN-003-portable-live-artifact-contract.md), [KI-TOOL-RIG-CORE-046](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-046-remote-access-and-continuity.md).
+- 2026-11-16: vega and agent-host holds [KI-TOOL-KI-CLI-125](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-125-ki-release-contract.md) and [KI-TOOL-RIG-CORE-048](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-048-signed-release-install-kind.md); the burn-down cancelled and pruned [KI-HARNESS-GOV-179 (pruned)](https://github.com/knowledgeislands/ki-agentic-harness/blob/731580841ce5/docs/roadmap/KI-HARNESS-GOV-179-diagram-html-commit-opt-in.md) and [KI-TOOL-RIG-CORE-049 (pruned)](https://github.com/knowledgeislands/tools-rig/blob/06da52aec5de/docs/roadmap/KI-TOOL-RIG-CORE-049-shared-agentic-rig-role.md). The 2027-01-04 holds, [KI-SPEC-KIN-003 (pruned)](https://github.com/knowledgeislands/ki-specifications/blob/9d56444dddf0/docs/roadmap/KI-SPEC-KIN-003-portable-live-artifact-contract.md) and [KI-TOOL-RIG-CORE-046 (pruned)](https://github.com/knowledgeislands/tools-rig/blob/06da52aec5de/docs/roadmap/KI-TOOL-RIG-CORE-046-remote-access-and-continuity.md), went the same way.
 
-Master follow-ups (no Kris action):
+Master follow-ups (no Kris action): Cowork clean-up of old knowledge-base aliases in `~/workspaces/claude-desktop/` at Kris's next Cowork session; retired `kit-mcp-gmail` entries in legal-principal `.claude/settings.json` and chezmoi `.chezmoiignore`; Paperclip decision cards with the rebuild.
 
-- Cowork clean-up at Kris's next Cowork session: old knowledge-base aliases in `~/workspaces/claude-desktop/`.
-- Retired `kit-mcp-gmail` entries in legal-principal `.claude/settings.json` and chezmoi `.chezmoiignore`.
-- A tools-ki launcher tier for task-scoped remote authority.
-- Paperclip decision cards: with step 12.
-
-Parked: see `thread-history.md` section 5, plus the Rig full-screen mode idea (Decision 92).
+- Parked 2026-10-12: the Rig full-screen mode idea; other parked items are in `thread-history.md` section 5.
 
 ## Next step
 
-1. Put the Needs Kris tags to Kris; launch agents for each answer.
-2. Collect `rig-accept-release`, `rig-cask-fix` and `tools-local`; tell Rig: chezmoi when a fixed Rig is installable. Keep burning the Knowledge Islands roadmaps down through the Project threads (Decision 158), then offer KI-RELEASE and SPEC-REVIEW (Decision 115).
-3. Work the dated queue from 2026-10-16.
-4. Later: step 11 (sol via Rig: mac-studio-bootstrap), step 12 (Paperclip), rebuild vega.
+1. Put the open Needs tags to Kris in the re-bootstrap owner report; record each answer in the decisions log in Kris's words, then launch an agent for it.
+2. Commit this thread's checkpoint, thread folder and `decisions.md` through a private index by explicit path at each mark, pull with rebase and push fast-forward when the stack is only this thread's.
+3. Work the dated queue from 2026-10-16; keep the burn-down moving through the Project threads, then offer the ki release and the specification review.
+4. Later: Paperclip rebuild after the ways-of-working model settles; rebuild vega.
