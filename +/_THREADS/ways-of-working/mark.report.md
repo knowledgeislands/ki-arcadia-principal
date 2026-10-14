@@ -23,7 +23,7 @@ Nothing is running in this run. The thread's queued chains start when this run f
 
 Outstanding - no action requested now:
 
-- [KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md) is Ready, and `cli-release` delivers it. [KI-TOOL-KI-CLI-132](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-132-launcher-only-thread-writer.md) and [KI-HARNESS-GOV-193](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-193-area-diagrams-with-html.md) are awaiting review, with acceptance already decided. [KI-TOOL-KI-CLI-130](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-130-skill-generated-surfaces.md) is in progress. [KI-TOOL-KI-CLI-131](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-131-host-absent-store-state.md) stays at triage.
+- [KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md) is Ready, and `cli-release` delivers it. [KI-TOOL-KI-CLI-132 (pruned)](https://github.com/knowledgeislands/tools-ki/blob/9fe5811469cda1464e9ed43585374bbc8a14f0d8/docs/roadmap/KI-TOOL-KI-CLI-132-launcher-only-thread-writer.md) and [KI-HARNESS-GOV-193 (pruned)](https://github.com/knowledgeislands/ki-agentic-harness/blob/c092431687d3542e55058cecd545e816a1dbadcf/docs/roadmap/KI-HARNESS-GOV-193-area-diagrams-with-html.md) are awaiting review, with acceptance already decided. [KI-TOOL-KI-CLI-130](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-130-skill-generated-surfaces.md) is in progress. [KI-TOOL-KI-CLI-131](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-131-host-absent-store-state.md) stays at triage.
 - The cli126-plan report raised PUSHED-OTHERS: three other-session commits (`41e11c9`, `9c4c0c0`, `43da380`) reached tools-ki main. No decision is logged under that tag. The report is deleted on the owner's word that every query raised up to 22:45 BST is answered.
 - The other threads' dirty files in ki-principal were left untouched: the estate-factorisation checkpoint, the baseline-rollout decisions log and the tools-burndown and knowledge-acquisition reports.
 
@@ -31,7 +31,7 @@ Outstanding - no action requested now:
 
 ### ECO014-BRIEF - queued eco014-close brief contradicts the run-folder waiver
 
-**Context:** The prompt snapshot for `eco014-close` was taken at 23:22 BST. Its first step is "Do the run-folder move the record describes". Kris has already said "RUN-WAIVER - leave the four run folders in place; drop the run-folder sweep from KI-PRINCIPAL-ECO-014 and close it on its verified citation half". A queued agent runs from its launch-time snapshot, so it would move the folders as soon as this run finishes. I flagged this in the status file at once.
+**Context:** The prompt snapshot for `eco014-close` was taken at 23:22 BST. Its first step is "Do the run-folder move the record describes". Kris has already said "RUN-WAIVER - leave the four run folders in place; drop the run-folder sweep from [KI-PRINCIPAL-ECO-014](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-ECO-014-decision-citation-and-run-folder-sweep.md) and close it on its verified citation half". A queued agent runs from its launch-time snapshot, so it would move the folders as soon as this run finishes. I flagged this in the status file at once.
 
 **Query:** Should the thread re-launch `eco014-close` with the waiver before it starts?
 
@@ -57,12 +57,12 @@ Stop the queued eco014-close and re-launch it to close KI-PRINCIPAL-ECO-014 on i
 ╰──────────────────────────────────────────────────╯
 ```
 
-- [queued] eco014-close - close KI-PRINCIPAL-ECO-014, brief needs the waiver
+- [queued] eco014-close - close [KI-PRINCIPAL-ECO-014](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-ECO-014-decision-citation-and-run-folder-sweep.md), brief needs the waiver
 - [queued] report-repair - after eco014-close
 - [queued] types-review - after report-repair
-- [queued] harness-accept - accept KI-HARNESS-GOV-193, CAP-2 drift
+- [queued] harness-accept - accept [KI-HARNESS-GOV-193 (pruned)](https://github.com/knowledgeislands/ki-agentic-harness/blob/c092431687d3542e55058cecd545e816a1dbadcf/docs/roadmap/KI-HARNESS-GOV-193-area-diagrams-with-html.md), CAP-2 drift
 - [queued] principal-links - after harness-accept
-- [queued] cli-release - KI-TOOL-KI-CLI-126 and KI-TOOL-KI-CLI-132 release
+- [queued] cli-release - [KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md) and [KI-TOOL-KI-CLI-132 (pruned)](https://github.com/knowledgeislands/tools-ki/blob/9fe5811469cda1464e9ed43585374bbc8a14f0d8/docs/roadmap/KI-TOOL-KI-CLI-132-launcher-only-thread-writer.md) release
 - [queued] threads-review - after cli-release
 - [waiting] ECO014-BRIEF
 - [waiting] INCEPTION-TYPE
