@@ -4,7 +4,7 @@ thread: rig.chezmoi
 label: 'Rig: chezmoi'
 state: active
 created_at: 2026-10-08T08:40:00Z
-updated_at: 2026-10-14T00:50:00Z
+updated_at: 2026-10-14T01:00:00Z
 ---
 
 # rig.chezmoi
@@ -43,17 +43,15 @@ The machine-local decisions log (`~/.local/state/ki/agents/chezmoi/decisions.md`
 
 ## Open questions
 
-Needs Kris:
-
-- **PUSH-2:** two local commits await Kris's push: chezmoi `647e137` (roadmap records now use the `knowledge-islands` territory handle, which clears the audit's ITEM-2 warning) and tools-rig `4de347b` and `3ee6fa8` (triage record [KI-TOOL-RIG-CORE-050](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-050-mise-observed-executables.md), mise observed executables, from RIG-MISE-LOCATOR).
+Needs Kris: none.
 
 Other open questions:
 
 - Parked 2026-10-14: PAPERCLIP-DRIFT - the laptop's `rig doctor` reports `paperclip-agents` drift (eight agents) and a failed apply on 2026-10-12; Kris deferred it (Decision 56). [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md)'s Verify names it rather than reporting the laptop clean.
-- SVG handler, waiting on state-of-play: Kris set Chrome for SVG by hand on the laptop and asked for a tools-rig release with default-application support (Decision 57; asked on 2026-10-14). Once it is installed, declare `[default-application.svg]` (Chrome, `public.svg-image`) in `core`.
+- SVG handler, waiting on state-of-play: Kris set Chrome for SVG by hand on the laptop and is passing state-of-play the request for a tools-rig release with default-application support (Decisions 57 and 59). Once it is installed, declare `[default-application.svg]` (Chrome, `public.svg-image`) in `core`.
 - Handoff from rig.mac-studio-bootstrap (Decision 25), non-blocking: consider a 1Password service account scoped to the Rig vault ([KB-DOTFILES-UE-077](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-077-reorganise-1password-vaults-safely.md)), so chezmoi applies need no unlock prompt and agents can apply on sol over SSH unattended; the token would be stored on each machine. That thread owns priority and design.
 - For `state-of-play`, non-blocking: Kris wants a proposal for a new standalone repository holding a macOS-settings catalogue. It would merge the typed nix-darwin `system.defaults` options and macos-defaults.com entries, read each setting's live value, mark those Rig declares, and turn a System Settings change into a ready Rig declaration. Rig keeps applying; KB-DOTFILES-HK-004 would use it as its source. Kris decided this on 2026-10-11 (Decision 44); state-of-play owns where and when it is proposed.
 
 ## Next step
 
-Get Kris's answer on PUSH-2, then deliver section A of KB-DOTFILES-UE-086 and start KB-DOTFILES-UE-071 and KB-DOTFILES-UE-027.
+Deliver section A of [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md), then KB-DOTFILES-UE-071 and KB-DOTFILES-UE-027, under the burn-down focus (Decision 58).
