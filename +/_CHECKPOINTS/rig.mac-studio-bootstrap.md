@@ -61,7 +61,7 @@ This checkpoint only. The Project note and its hosts note are current.
 ## Open questions
 
 - **Focus (Kris, 2026-10-14 16:15 CEST):** only sol readiness to take this thread's coordination work (Rig fully installed, Claude Code, host bootstrap, Zed with Claude and Codex through chezmoi), then move the thread to sol. Thread-move rule: drain only running agents; queued work goes back into this checkpoint and the new host re-queues it.
-- **On hold, parked (Kris, 2026-10-14):** `FW-LIVE` (terra rule comparison; reboot check at the next natural restart), `SOL-FW-TEST`, `UE-089-SHAPE`, `OLD-TREES`, `OLD-ORPHANS`, `MGIT-PRESEED`, `SOL-REGISTRY`, `SOL-SOURCES`, `SOL-HNR-HARNESS`, `SOL-WHATSAPP`, `SOL-KI-CONFIG-DRIFT`. Each is described in the run folder reports `old-trees`, `sol-build` and `records`.
+- **On hold, parked (Kris, 2026-10-14):** `SOL-CLT` (Kris installs the Command Line Tools for Xcode 27.0 on sol, then an agent runs `brew reinstall pkgconf` and `rig upgrade`; old tools cause 82-83 of 84 upgrade failures), `SOL-TELEGRAM` (clear the Homebrew cask record, then `rig apply --target telegram` from the App Store), both to pick up after the move to sol; `FW-LIVE` (terra rule comparison; reboot check at the next natural restart), `SOL-FW-TEST`, `UE-089-SHAPE`, `OLD-TREES`, `OLD-ORPHANS`, `MGIT-PRESEED`, `SOL-REGISTRY`, `SOL-SOURCES`, `SOL-HNR-HARNESS`, `SOL-WHATSAPP`, `SOL-KI-CONFIG-DRIFT`. Each is described in the run folder reports `old-trees`, `sol-build` and `records`.
 - **No action now:** `ZED-MD` (later, at `sol`), `FW-LINUX-LIVE` (needs a Linux host), `KEYCHAIN-SSH` (with rig.chezmoi).
 
 ## Next step
