@@ -749,3 +749,7 @@
 ## Decision 185 (2026-10-14)
 
 - MENUBAR (Kris, 14 Oct): 'Rig should also cover the configuration of the menu bar as well and anything else we can do on the Mac, which should be done consistently ... on my laptop, I've got Codex bar up there, Fluid Voice and things that aren't [in] certain orders, whereas they're not the same on the studio.' Investigate read-only on terra and sol, propose the Rig design, and capture it as one unadopted triage record in tools-rig (Kris asked, so the no-new-records rule yields).
+
+## Decision 186 (2026-10-14)
+
+- CLI115-PRUNE: ways-of-working confirmed KI-PRINCIPAL-ECO-014 no longer links KI-TOOL-KI-CLI-115 (ki-principal c0b4f88). Under Kris's earlier burn-down approval, prune the cancelled KI-TOOL-KI-CLI-115 in tools-ki through ki-accept, local commit and fast-forward push only.
