@@ -295,3 +295,11 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 67 (2026-10-14T13:36:39Z)
 
 - Master update: ki-principal is level with origin, and the untracked chezmoi decisions copy was removed because it duplicated a tracked file. The burn-down outside the harness is done. KI-TOOL-KI-CLI-115 is cancelled but kept because KI-PRINCIPAL-ECO-014 links to it. When ECO-014 closes, or its link becomes bare text, tell the Master so CLI-115 can be pruned; this is added to the harness-citations brief. The Paperclip Project is renamed paperclip-capture-and-rebuild, and ECO-014's path list now matches.
+
+## Decision 68 (2026-10-14T13:39:53Z)
+
+- Kris: 'PILOT-TESTS - done I think'. Headroom is healthy on a new process. Launched burn-down, cli124-fix, gov185-tidy (which includes the harness citations and removing the pilot worktree) and gov181-deliver. thread-model-enact waits on gov185-tidy, and eco014-close waits on cli124-fix.
+
+## Decision 69 (2026-10-14T13:40:52Z)
+
+- Kris: 'threads need to know that they need to commit their work under +/_THREAD/' (meaning +/_THREADS/). Rule: a coordinating thread commits and pushes its +/_THREADS/<run>/ folder, which holds the decisions log and agent reports. It does this at every report and resting point, because ki agent writes these files but never commits them. Added to the thread-model-enact brief for ki-pmo, ki-delegation, the hook line and the output style. The banner housekeeping line says 'thread folder committed and pushed'.
