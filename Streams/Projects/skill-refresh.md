@@ -7,7 +7,7 @@ initiative: platform-foundations
 lifecycle: planned
 lead: Kris Brown
 target: null
-updated: 2026-10-14T00:00:44Z
+updated: 2026-10-14T13:49:14Z
 author: Written with Claude
 ---
 
@@ -30,3 +30,4 @@ This Project sits in [[platform-foundations|Platform foundations]]. Kris agreed 
 - **Open choice.** How the audit prompts a REFRESH: a new criterion that fails or warns when a skill is due, a separate audit section, or a `ki` command the audit calls. A design loop (`/ki-pmo-design start skill-refresh`) shapes the Project and its first records.
 - An earlier Knowledge Islands Principal mapping of six Knowledge Islands Principal patterns against harness skills was cancelled; its keep, merge or retire question belongs to the relevance check here.
 - The scope comes from section 5 of the state-of-play survey (`~/.local/state/claude-bg/gov-020/survey.report.md`) and decisions 12 and 13 of the state-of-play design.
+- **Idea: standing-surface design rules in `ki-tokenomics`.** `ki-tokenomics` would tell repository owners how to keep always-loaded instructions small, not only how large they may be: one routing authority per repository (a skill defers to the root instructions rather than restating them); resolved lessons carried in repository guidance (root `AGENTS.md`, the owning skill or the knowledge base) rather than in a runtime's path memory or a load-time note, following Kris's instruction of 12 October 2026 in the state-of-play run to 'move path memory into KBs/projects/AGENTS.md, stop relying on path memory'; review the instructions file as it nears the 2,500-token `instructions` budget; and ask before adding a permanent always-loaded section. A Claude adapter note (merged from a former harness record) would have `ki-tokenomics-claude` explain which Claude context layers load every time and which only on demand, confirmed against current Claude Code behaviour, so a rule meant to hold every time lands in an always-on layer. The first two points may suit the standard or a judgement criterion and the last two educate-mode guidance; a non-blocking handoff from Arcadia Principal, whose source notes are already retired. Kept as an idea on 2026-10-14 in place of a cancelled harness work record: Kris approved the state-of-play thread's roadmap census on 2026-10-14 ('RC-ALL: approve all'), which parked it; whether `ki-tokenomics` takes the points belongs to this Project's keep, merge or retire check.

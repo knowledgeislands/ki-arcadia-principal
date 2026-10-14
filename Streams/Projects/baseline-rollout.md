@@ -7,7 +7,7 @@ initiative: platform-foundations
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-11T02:24:50Z
+updated: 2026-10-14T13:49:14Z
 author: Written with Claude
 ---
 
@@ -35,3 +35,5 @@ This Project sits in [[platform-foundations|Platform foundations]]. The move of 
 ### Close-out assessment
 
 Nothing has been delivered against the Outcome: the Project has carried no work since it was registered, and the estate audit has never run to completion, so the gap is unmeasured. The Outcome still stands. The first step is to measure the starting point: a completed `ki repo audit --estate` run and a check of the released `ki` on every island, with each gap captured as a record in its owning repository. That follow-up was a separate Knowledge Islands Principal audit record until it was folded into this note on 2026-10-09, when Kris approved all capture-sweep-2 proposals on 2026-10-09 in the state-of-play run, including folding the duplicate audit record 'into baseline-rollout'. The Project stays open.
+
+- **Idea: roll out the `ki` pin receivers.** Every `knowledgeislands` repository that installs a released `ki` in CI would keep its pin in `.github/ki-version`, run the auto-merging `update-ki-pin.yml` receiver copied from the `ki-engineering` exemplar, and be registered as a tap-dispatch consumer in `homebrew-tap`'s `.github/tool-release-consumers.json`, so each release reaches it within minutes. On 2026-10-09 nineteen repositories still pinned `v0.8.4` inline (apps-observatory, homebrew-tap, ki-principal, ki-specifications, ki-techne-harness, ki-website, the seven mcp repositories, tools-git-almanac, tools-ki, tools-mgit, tools-rig and tools-techne); only the harness, homebrew-tap and ki-website had the release bot installed. The order: re-ground each repository's pin, receiver and owner setup; decide with Kris whether `tools-ki` tracks its own releases or builds from source; send one `ki-trades` work trade per repository, first where owner setup is complete; ask Kris to complete each waiting repository's setup in order (`main` ruleset, App installation, App ID variable, private-key secret, auto-merge); register each provisioned repository with the tap only after provisioning, since registration before App installation fails the tap's token mint for every consumer. Kris approved installing `ki-tools-release-bot` across the organisation on 2026-10-09 and approved merging the tap's own registration record into the harness record the same day, in the state-of-play run; Kris deferred it to Future on 2026-10-12 ('ROADMAP-BATCHES 3 to 5 approved as recommended') because only the harness and this base carry the receiver and the current rollout does not need the rest. Kept as an idea on 2026-10-14 in place of a cancelled harness work record: Kris approved the state-of-play thread's roadmap census on 2026-10-14 ('RC-ALL: approve all'), which parked it.
