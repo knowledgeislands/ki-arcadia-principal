@@ -343,3 +343,207 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 79 (2026-10-14T16:43:21Z)
 
 - AUDIT-SCAFFOLD - accept the generic-audit clause as a pass; the README scaffold finding stays with its existing owner
+
+## Decision 80 (2026-10-14T16:50:31Z)
+
+- REPLY-STACK - confirmed as delivered
+
+## Decision 81 (2026-10-14T16:53:33Z)
+
+- PUSH-EXTRA - accept as pushed; tell the Master for the Granola review
+
+## Decision 82 (2026-10-14T16:53:33Z)
+
+- LINK-FORM - clickable GitHub link to the file at its last revision; KI-HARNESS-GOV-188's check accepts it. Perhaps the link text can be `KI-HARNESS-GOV-188 (pruned)`
+
+## Decision 83 (2026-10-14T16:57:08Z)
+
+- SECTION-NAMES - What has been done -> Done / What is in progress -> In Progress / Outstanding queries -> Queries
+
+## Decision 84 (2026-10-14T17:03:03Z)
+
+- BANNER-FRAME - (drawn) top border "╭─ coordination ---- <issued> ─╮"; body: blank, "KI Model - ways-of-working", blank; bottom border "╰──── mark <mark> ─╯"; second version drops the label-and-mark line beneath; item lines and housekeeping line follow as before
+
+## Decision 85 (2026-10-14T17:45:20Z)
+
+- BANNER-FRAME (refined) - top border "╭─ coordination ──── summary <issued> ─╮"; blank line after frame; items as "- [queued] …", "- [waiting] TAG"; "KI Model - ways-of-working could be centralised too"
+
+## Decision 86 (2026-10-14T17:47:36Z)
+
+- GATE-FIX - ask the Master to relay to Rig: mac-studio-bootstrap: reword the two "Rig note" bullets so they name no records, conform its checkpoint, commit and push from sol; then commit this thread's waiting files
+
+## Decision 87 (2026-10-14T17:47:36Z)
+
+- REBOOT-TIMING - hold the re-bootstrap until banner-frame lands, then re-bootstrap once and signal the Master
+
+## Decision 88 (2026-10-14T17:47:36Z)
+
+- GOV-188-REVIEW - accept KI-HARNESS-GOV-188 as done on its review packet
+
+## Decision 89 (2026-10-14T17:47:37Z)
+
+- LINK-LEVEL - keep the link check at warning; raise it to failure once this thread's reports are repaired
+
+## Decision 90 (2026-10-14T17:47:37Z)
+
+- REPORT-REPAIR - approve: an agent relinks this thread's own reports once the gate is unblocked
+
+## Decision 91 (2026-10-14T17:47:37Z)
+
+- HEADING-FORM - adopt: heading "<label> · <form> at <local time>", then a plain line "Project <linked name> · Initiative <linked name> · <window> · <state>"
+
+## Decision 92 (2026-10-14T17:47:37Z)
+
+- RUN-WAIVER - leave the four run folders in place; drop the run-folder sweep from KI-PRINCIPAL-ECO-014 and close it on its verified citation half
+
+## Decision 93 (2026-10-14T17:47:37Z)
+
+- RECORD-THRESHOLD - agree: a record only for a product or standard change needing acceptance; operational work runs on the decisions log, brief and report; add it to the ki-pmo standard
+
+## Decision 94 (2026-10-14T17:50:44Z)
+
+- QUERY-FORM - (Kris) on the queries... _Context:_ <This should cover enough information for you to be able to make an informed decision.> _Query:_ <The question succinctly?> _Options:_ <Possible: With the first one being recommended ...> - a) (recommended) blah blah - b) yah yah yah
+
+## Decision 95 (2026-10-14T18:01:48Z)
+
+- QUERY-FORM (amended) - bold not italics for the "Context", "Query", "Options" please
+
+## Decision 96 (2026-10-14T18:02:10Z)
+
+- QUERY-FORM (amended) - if the options have a), b), then no bullet also
+
+## Decision 97 (2026-10-14T18:08:30Z)
+
+- FRAME-PLACE - (the coordination/summary/label/mark frame) "This is for the heading, not the footer banner. The footer banner needs to be like it was before, with the large ascii text."
+
+## Decision 98 (2026-10-14T18:13:36Z)
+
+- HEADING-SHAPE - (supersedes the frame as heading) "maybe you can just come up with something which is just a better heading that is the actual just normal text, so it can be rich text rather than fixed width text. So maybe you do not need to say project or initiative in front of it, you use the ways of working and you render it with a sensible label, and the initiative is before that, so it says knowledge islands model, which is linked. The next line says ways of working and then you have your headings, done, in progress, queries, and then you have your banner at the end. ... after the initiative and project headings at the start you could have one line which says summary at, whatever, and last mark at." Footer keeps the block letters.
+
+## Decision 99 (2026-10-14T18:15:47Z)
+
+- HEADING-SHAPE (agreed) - "Actually, that is really good." Heading: # [Initiative](link) › [Project](link), then bold line "<Form> at <local time> · last mark <local time>"; no frame at the top; block-letter footer stays
+
+## Decision 100 (2026-10-14T18:17:47Z)
+
+- HEADING-SHAPE (amended) - "Maybe we use a tripple HR element Before the main heading."
+
+## Decision 101 (2026-10-14T18:18:28Z)
+
+- HEADING-SHAPE (amended) - "And maybe then even a single HR alignment after the summary and last mark part."
+
+## Decision 102 (2026-10-14T18:21:14Z)
+
+- FOOTER-SHAPE - (drew) "╭─ recap · 2026-10-14T18:18:50Z ───╮" with a blank framed line above and below the three block-letter rows; "What about with some spaces around it, so that it is got a bit more impact?"
+
+## Decision 103 (2026-10-14T18:22:21Z)
+
+- FOOTER-SHAPE (agreed) - "Okay, I am really happy with that. Yeah, let us go with it."
+
+## Decision 104 (2026-10-14T18:23:42Z)
+
+- LETTER-REPLY - add bare-letter resolution in ki agent decide to KI-TOOL-KI-CLI-127 as a sixth item, record only; expand letters by hand until then
+
+## Decision 105 (2026-10-14T18:25:36Z)
+
+- SHAPE-FREEZE - freeze the report shape once heading-rich lands; roll it out with one re-bootstrap; log further tweaks for a review in about a week
+
+## Decision 106 (2026-10-14T18:25:36Z)
+
+- GATE-SCOPE - have an agent propose scoping ki-principal's pre-commit audit to staged files, whole-tree audit kept in CI or the regular audit run; report the design before changing anything
+
+## Decision 107 (2026-10-14T19:19:27Z)
+
+- GATE-SCOPE - accept the design: open a KI-TOOL-KI-CLI record for --staged and --paths on ki repo audit and a KI-HARNESS-GOV record for the GATE-1 sentence; switch ki-principal's hook once the released ki carries the option; CI stays whole-tree
+
+## Decision 108 (2026-10-14T19:19:28Z)
+
+- CLOSE-191 - accept KI-HARNESS-GOV-191 as delivered, extra housekeeping states included, and prune it
+
+## Decision 109 (2026-10-14T19:19:28Z)
+
+- UPDATE-CADENCE - yes: add to ki-pmo - full Summary only when all dispatched work has finished or on request; otherwise timed one-to-two-line updates; a blocking query raised in a single line; the resume line shown only at rest; a report that does not repeat unchanged queries still carries the full stacked reply block for every open query
+
+## Decision 110 (2026-10-14T19:19:28Z)
+
+- CONCURRENCY - add the current practice to ki-pmo: chain agents that touch the same files, run different repositories in parallel, about three running per thread, the rest queued
+
+## Decision 111 (2026-10-14T19:19:28Z)
+
+- BUSY-Y-GLYPH - keep the standard's BUSY lettering unchanged
+
+## Decision 112 (2026-10-14T19:19:44Z)
+
+- REST-FULL - when the thread reaches a rest state because all its active work has concluded, it gives the summary again in full, every open query in full with the reply block (Kris: "it's important that when ... it's going to issue a rest state because it's concluded all of its active work, that we should have a summary again in full")
+
+## Decision 113 (2026-10-14T19:28:21Z)
+
+- THREAD-TIDY - add a rule to ki-pmo: at each mark the thread deletes every report whose queries are all answered and whose outcome has a durable home, keeping only reports with open queries and decisions.md, with Git history holding the rest; each thread applies it to its own folder at its next mark, starting with this one once the commit gate passes
+
+## Decision 114 (2026-10-14T19:31:01Z)
+
+- DIAGRAMS - keep every skill diagram, including any new thread-model diagram, in the harness docs/diagrams/ under ki-diagrams; ki-principal's Engineering Practice Pillar and the ways-of-working Project note link to them; after skills-map reports, an agent refreshes them there, first checking with the Master who owns the untracked harness +/diagrams/ folder
+
+## Decision 115 (2026-10-14T19:31:30Z)
+
+- DIAGRAM-SET - not one massive skill graph but the right set of diagrams: sub-graphs per skill family (for example change management: the skills within it and the skills outside it that it relies on), explorable as HTML as well as SVG (Kris, as received: "It doesn't have to be a single massive diagram, it can be the right set of diagrams.")
+
+## Decision 116 (2026-10-14T19:41:49Z)
+
+- SUBGRAPHS - (via skill-reviews handover, 20:34 BST) "Build eight area dependency diagrams ..., each showing the area's skills, what they rely on outside, and what relies on them; retire the big skill graph and keep the area map as the index."
+
+## Decision 117 (2026-10-14T19:41:49Z)
+
+- HTML - (via skill-reviews handover) "Add one local build command for all diagram HTML." On committing the HTML (the old KI-HARNESS-GOV-179): "I definitely want to get that done sooner rather than later. There's no reason for it to be on hold. So we can remove that hold and we can move it into now." This answers HTML-NOW.
+
+## Decision 118 (2026-10-14T19:41:49Z)
+
+- PUSH - (via skill-reviews handover) "A background agent re-runs the tests, TypeScript and the focused audits on ki-agentic-harness main, then pushes, listing the other threads' commits."
+
+## Decision 119 (2026-10-14T19:41:49Z)
+
+- RUNTIME-TAG - (via skill-reviews handover) "Leave it out."
+
+## Decision 120 (2026-10-14T19:41:49Z)
+
+- AREA-ACCEPT - (via skill-reviews handover) Kris wanted acceptance after the area diagrams are delivered; KI-HARNESS-GOV-183 is closed, so the new record is accepted after delivery.
+
+## Decision 121 (2026-10-14T20:13:20Z)
+
+- RECORD-HOME - open one new ki-agentic-harness roadmap item at Now, on my direct instruction, covering the eight area diagrams and the committed HTML with its build command, and the roadmap item sits in this initiative/project
+
+## Decision 122 (2026-10-14T20:13:20Z)
+
+- GATE-RELEASE - accept KI-TOOL-KI-CLI-129; release tools-ki as the next 0.x carrying --staged and --paths, bump ki-principal's .github/ki-version to it, then add --staged to the pre-commit audit line and update the Conformance.md sentence under GATE-SCOPE; CI stays whole-tree
+
+## Decision 123 (2026-10-14T20:13:20Z)
+
+- REPORT-SOURCE - generate the hook line, output style and prompt skeleton from the ki-pmo standard with a ki dev command, make ki-delegation link to it, and have the existing test check the generated files
+
+## Decision 124 (2026-10-14T20:13:20Z)
+
+- LOG-WRITER - make the launcher the only writer of the thread folder's log and report files, and delete the "until then" sentence from the standard
+
+## Decision 125 (2026-10-14T20:13:20Z)
+
+- HOOK-BINDING - add a mechanical rubric item that the binding is present where ki-pmo is declared, and leave chezmoi as the binder for now
+
+## Decision 126 (2026-10-14T20:13:20Z)
+
+- RECAP-OWNER - ki-recap keeps the ordinary session recap only, and ki-pmo's standard carries the one sentence saying so
+
+## Decision 127 (2026-10-14T20:13:20Z)
+
+- THREAD-DIAGRAM - build thread-model as an Archify workflow diagram under docs/diagrams/, traced from ki-pmo and ki-delegation with the skills-map text diagram as its brief, in the same run as the area diagrams
+
+## Decision 128 (2026-10-14T20:13:20Z)
+
+- PRINCIPAL-COMMIT - the ways-of-working thread commits the two link edits by explicit path at its next mark, once the gate clears and the checkout is level with origin
+
+## Decision 129 (2026-10-14T20:16:27Z)
+
+- HEARTBEAT - while work runs, the thread's background check also wakes it every 5 minutes for a one-to-two-line timed update with each agent's current step; add it to the ki-pmo update cadence and the hook line, and apply it in this thread now
+
+## Decision 130 (2026-10-14T20:24:33Z)
+
+- RELAUNCH-MODEL - relaunch area-diagrams, gate-release, pmo-simplify and mark on claude-opus-5-5 at their same effort, each first picking up any partial work left in its repository, with log-writer and heartbeat queued behind pmo-simplify as before

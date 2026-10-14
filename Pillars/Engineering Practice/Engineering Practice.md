@@ -1,6 +1,6 @@
 ---
 note_type: pillars/index
-updated: 2026-10-11T02:19:55Z
+updated: 2026-10-14T19:55:51Z
 author: AI-assisted
 ---
 
@@ -27,6 +27,8 @@ Each routing decision balances capability, latency, privacy, cost, context lengt
 Current and candidate implementation mappings include Zed, Hermes Agent, tools-mgit, Herdr, Tailscale, llama.cpp and MLX-LM. Knowledge Islands supplies governed repositories and relationships. These names describe the present estate and options under evaluation; they do not define the architectural roles or make a particular provider, runtime, interface or model mandatory.
 
 The `ki` tool implements governance workflows. A distinct execution-fabric operator may later implement provisioning, dispatch, lifecycle and evidence-return operations, with implementation ownership assigned by [[ADR-KI-PRINCIPAL-006-techne-implementation-ownership|ADR-KI-PRINCIPAL-006]] to `ki-techne-harness` and the operator interface to `tools-techne`. Those product boundaries do not merge the architectural roles.
+
+The skills the `ki` tool governs are drawn in the Knowledge Islands Agentic Harness's [skill diagrams](https://github.com/knowledgeislands/ki-agentic-harness/blob/main/docs/diagrams/README.md): a skill map of every skill by source concern and shape, and a skill graph of the declared dependencies between them, both generated from the skills themselves and refreshed under `ki-diagrams` after each skills review.
 
 Knowledge Islands Principal maintains Engineering Practice as living canonical knowledge rather than a fixed design document.
 
