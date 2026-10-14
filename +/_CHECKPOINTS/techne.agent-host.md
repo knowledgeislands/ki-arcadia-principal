@@ -74,7 +74,7 @@ This update changes only this checkpoint and `+/_THREADS/techne/`. Earlier threa
 
 For Kris:
 
-- None open with Kris. Two agents launched at the 2026-10-14T22:22Z mark: `cli009-adopt` adopts [KI-TOOL-TECHNE-CLI-009](/Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-009-tailscale-oauth-binding-field.md) (Tailscale OAuth binding field, handed over under TS-OAUTH-HANDOFF) as deliver at horizon next (Decision 64); `recopy-defect` captures and adopts at horizon now in tools-ki the defect where `ki agent` launches re-copy tidied reports into `+/_THREADS/<run>/` (REPORT-RECOPY, Decision 65), and the thread tells state-of-play.
+- **CLI-133-PLAN:** plan [KI-TOOL-KI-CLI-133](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-133-retired-reports-come-back.md) (`ki agent decide` and `close` re-copy retired reports through `adoptStateFiles`; adopted at horizon now under REPORT-RECOPY, Decision 65) now with ki-plan; recommended yes. [KI-TOOL-TECHNE-CLI-009](/Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-009-tailscale-oauth-binding-field.md) adopted as deliver at horizon next (Decision 64); state-of-play told of the defect through its inbox.
 
 Handoffs:
 
@@ -90,4 +90,4 @@ Parked:
 
 ## Next step
 
-Report the outcomes of `cli009-adopt` and `recopy-defect`; when tools-ki delivers the re-copy fix, drop the manual removal of re-copied reports. Once KI-TOOL-TECHNE-CLI-009 is delivered, ki-techne-harness adds the matching optional recipe parameter.
+Wait on Kris for CLI-133-PLAN. Until KI-TOOL-KI-CLI-133 is fixed, remove re-copied retired reports by explicit path after any `ki agent decide`. Once KI-TOOL-TECHNE-CLI-009 is delivered, ki-techne-harness adds the matching optional recipe parameter.
