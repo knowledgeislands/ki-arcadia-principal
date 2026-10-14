@@ -1,42 +1,49 @@
 ---
 type: ki-checkpoint
 thread: knowledge-islands-model.command-centre
-label: 'Knowledge Islands Model: command-centre'
+label: 'KI Model: command-centre'
 state: active
 created_at: 2026-10-11T02:41:28Z
-updated_at: 2026-10-13T03:08:00Z
+updated_at: 2026-10-14T20:19:58Z
 ---
 
 # knowledge-islands-model.command-centre
 
+**Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
+
+- 2026-10-14 · AREAS-DISPATCH · Kris's areas of 14 October (the Observatory as host command centre, inter-agent pub-sub, a single pane of glass with agents advertising themselves, and token economics shown in it) are added as ideas for evaluation under Notes in the [Command centre Project note](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/command-centre.md); whether this Project absorbs them and reshapes its Outcome is Kris's open OBS-MERGE · detail: [areas-glass report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/state-of-play/areas-glass.report.md)
+
 ## Objective
 
-One shared vocabulary and model for Kris's command centre, adopted across the harness, Observatory, kit-hnr and kit-legal, with one read-only state-of-play view ([command-centre](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/command-centre.md), Initiative [knowledge-islands-model](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/knowledge-islands-model/knowledge-islands-model.md)).
+Cross-territory alignment of the Knowledge Islands model (legal, HNR, Observatory, Paperclip, personal portfolio) and one read-only state-of-play view, for [Command centre](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/command-centre.md) in the Initiative [Knowledge Islands model](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/knowledge-islands-model/knowledge-islands-model.md). The model's vocabulary itself comes from the KI Model: ways-of-working change-management design, which this Project takes as input.
 
 ## Current state
 
-- **Handoff, 2026-10-13 (state-of-play Decision 149, agreed with Kris via KI Model: ways-of-working):** the Knowledge Islands model vocabulary (threads, Initiatives, Projects, checkpoints, marks, Needs) moves to the KI Model: ways-of-working change-management design. This Project keeps cross-territory alignment (legal, HNR, Observatory, Paperclip, personal portfolio) and the state-of-play view, and takes that design's outcome as input. Where the entries below assign that vocabulary to this Project, this handoff supersedes them; reconcile them at the next mark.
-- New Project, created 2026-10-11 with `lifecycle: planned` (state-of-play Decision 42). Thread opened 2026-10-12 by Kris, ahead of its place as fourth in the master thread's queue; run `command-centre`, not yet created. No mark struck yet. ki-delegation read at f2b14dca. At the first mark, shorten `label` to `KI Model: command-centre` (state-of-play Decision 143).
-- The survey and crosswalk live in `~/.local/state/ki/agents/state-of-play/command-centre.report.md`: 21 concepts across 12 repositories, five word clashes (Council, Project, State of play, Control plane, Checkpoint) and four same-thing clusters.
-- The parked "state-of-play view" item moved here from the ways-of-working checkpoint and is an idea in the Project note.
-- A non-blocking handoff to kit-hnr raises the "HNR Council" clash with Arcadia's Council (CC-HNR, state-of-play run `cc-batch`).
-- No roadmap records; none are proposed until the pilot view is chosen.
+- Mark: 2026-10-14T20:19:58Z
+- ki-pmo read at daa63224.
+- Thread folder: +/_THREADS/command-centre/ (not yet created; run `command-centre` has no agents and no decisions).
+- Messages: no inbox for run `command-centre`; the master thread's label rule of 2026-10-12 is absorbed (label shortened at this mark).
+- Coordination thread, re-bootstrapped under ki-pmo on 2026-10-14. The Project is `lifecycle: planned` with no work records. The state-of-play thread's active list of 2026-10-14 does not include it.
+- The handoff of 2026-10-13, agreed by Kris through KI Model: ways-of-working, moved the vocabulary (threads, Initiatives, Projects, checkpoints, marks, Needs) and the glossary question to the ways-of-working change-management design. CC-VOCAB is therefore closed here; the earlier `ki-design-loop` plan is withdrawn.
+- The survey and crosswalk stay as input in `~/.local/state/ki/agents/state-of-play/command-centre.report.md`: 21 concepts across 12 repositories, five word clashes and four same-thing clusters.
+- A non-blocking handoff to kit-hnr raised the "HNR Council" clash (CC-HNR, sent by the state-of-play run `cc-batch`).
+- ki-principal commits are blocked by the whole-tree pre-commit gate until the scoped gate lands from the ways-of-working thread; this checkpoint is uncommitted until then and is committed through a private index at the first mark after the gate switches.
 
 ## Decisions made
 
-- The name is "Command centre"; "Council" stays Arcadia's constitutional governance body (CC-NAME, state-of-play Decision 42 in `~/.local/state/ki/agents/state-of-play/decisions.md`).
-- Thread rules and marks stay with the ways-of-working Project; this Project owns the vocabulary and the view.
-- The master thread `_state-of-play` owns cross-project priorities, releases and decisions; this thread works only its Project's records (state-of-play Decisions 17 and 18).
+- The name is "Command centre"; "Council" stays the Capital's constitutional governance body (Kris, 2026-10-11, in the state-of-play decisions log).
+- Vocabulary and model terms belong to the ways-of-working design; this Project keeps cross-territory alignment and the view (Kris, 2026-10-13, through KI Model: ways-of-working).
+- The state-of-play thread owns cross-project priorities, releases and decisions; this thread works only its Project's records.
 
 ## Files touched
 
-None yet in this thread. The master thread's `cc-batch` run wrote the Project note and its index entries.
+This checkpoint only. The state-of-play `cc-batch` run wrote the Project note and its index entries.
 
 ## Open questions
 
-- **CC-VOCAB:** settle the glossary (Command centre, Convenor, Council, Beacon or attention, Bridge or command, projection) and one attention taxonomy, as one bounded decision for Kris, recorded in an Arcadia Decision Record if accepted.
-- Handoffs still to offer: kit-legal moving `+/_RESUME/` onto `ki-checkpoint`, and kit-principal's Project Portfolio pointing at the Arcadia registry rather than restating it.
+- **CC-START:** keep this thread open now, or rest it until the ways-of-working design lands. Recommended: rest it and return the slot to the state-of-play queue.
+- **CC-HANDOFFS:** offer kit-legal moving `+/_RESUME/` onto `ki-checkpoint`, and kit-principal's Project Portfolio pointing at the Capital's registry rather than restating it. Recommended: hold until the ways-of-working vocabulary settles, so the handoffs carry the final terms.
 
 ## Next step
 
-Run `ki-design-loop` with the command-centre report as the brief to settle CC-VOCAB, then write the crosswalk into `Streams/Projects/command-centre/design/` and pilot the read-only view in the cheapest place, likely an Observatory Instrument.
+When the ways-of-working design outcome lands, map it across the territories from the survey, send the held handoffs, and pilot the read-only state-of-play view in the cheapest place, likely an Observatory Instrument, as background agents in run `command-centre`.
