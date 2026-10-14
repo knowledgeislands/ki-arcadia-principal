@@ -303,3 +303,15 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 69 (2026-10-14T13:40:52Z)
 
 - Kris: 'threads need to know that they need to commit their work under +/_THREAD/' (meaning +/_THREADS/). Rule: a coordinating thread commits and pushes its +/_THREADS/<run>/ folder, which holds the decisions log and agent reports. It does this at every report and resting point, because ki agent writes these files but never commits them. Added to the thread-model-enact brief for ki-pmo, ki-delegation, the hook line and the output style. The banner housekeeping line says 'thread folder committed and pushed'.
+
+## Decision 70 (2026-10-14T14:05:09Z)
+
+- CODEX-MARK - keep the 13:54Z mark and push; record the second-writer lesson
+
+## Decision 71 (2026-10-14T14:05:09Z)
+
+- ACCEPT-181 - accept KI-HARNESS-GOV-181 as done on its review packet
+
+## Decision 72 (2026-10-14T14:05:09Z)
+
+- PUSH-187 - fine as it stands; no further action
