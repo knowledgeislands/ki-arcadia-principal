@@ -23,7 +23,7 @@ This Project sits in [[platform-foundations|Platform foundations]].
 
 ## Notes
 
-- **On hold.** Paused on 2026-10-11 by Kris (Decision 38): no thread yet.
+- **On hold.** Paused on 2026-10-11 by Kris, who approved on 2026-10-11 in the state-of-play run, 'CKPT approved (delta-evaluation and roadmap-model on hold; remove territory-rollout checkpoint)': no thread yet.
 - [[GDR-KI-PRINCIPAL-005-the-roadmap-model|GDR-KI-PRINCIPAL-005]] records the model and its refinements, citing the design papers filed beside it. Kris approved the model, every migration proposal and the rollout's carry-through on 2026-10-07.
 - Links point upwards only: a record names its Project, a Project names its Initiative, and the notes list neither records nor Projects. `ki` produces the views.
 

@@ -23,7 +23,7 @@ This Project sits in [[Initiatives/techne|Techne]]. VA delivery also supplies th
 
 ## Notes
 
-- **Idea: verify the run MCP connection.** A local Paperclip run reaches the host's mcporter bridge through a granted Paperclip remote MCP connection, so `COORD-14` conformance rests on live evidence rather than inspected code. Kept as an idea on 2026-10-11 in place of a cancelled harness work record (Decision 38).
+- **Idea: verify the run MCP connection.** A local Paperclip run reaches the host's mcporter bridge through a granted Paperclip remote MCP connection, so `COORD-14` conformance rests on live evidence rather than inspected code. Kept as an idea on 2026-10-11 in place of a cancelled harness work record, under Kris's 2026-10-11 'TRIAGE approve all' in the state-of-play run.
 
 ### Constraints
 

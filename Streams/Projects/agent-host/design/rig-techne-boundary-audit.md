@@ -6,7 +6,7 @@ author: Written with Claude
 
 # Rig and Techne boundary audit
 
-**For:** Kris Brown - **Project:** [[agent-host|Agent host]], with [[Initiatives/rig|Rig]] and [[Initiatives/techne|Techne]] - **Date:** 2026-10-11 - **Authority:** Decision 39 of the Techne run - **Scope:** cross-project, for the state-of-play thread to pick up
+**For:** Kris Brown - **Project:** [[agent-host|Agent host]], with [[Initiatives/rig|Rig]] and [[Initiatives/techne|Techne]] - **Date:** 2026-10-11 - **Authority:** Kris's 2026-10-11 instruction in the Techne run, questioning the Rig and Techne boundary and asking 'for sense-making and an audit across Rig and Techne', with 'read-only audit and one written assessment in Arcadia; no record changes' - **Scope:** cross-project, for the state-of-play thread to pick up
 
 A reading document. It inventories what Rig, the Techne harness and CLI, chezmoi and Cheztoi, the Homebrew tap and `tools-ki` actually do today, tests Kris's four-layer framing against that, and ends with numbered decisions. It changes no record. The hold on building KI-TECHNE-OPS-017 and approving KI-TECHNE-OPS-024 stands until Kris answers the decisions below.
 
@@ -62,7 +62,7 @@ Three differences stand out. The tool pins are a Rig profile, but they live insi
 ### Overlaps
 
 - **Recipe and role.** `recipes/agent-host/` holds both the base (stack, patching, lifecycle) and the role (`rig.toml`). A second recipe, such as an appliance or an owned-host one, would have to copy the role or reach into another recipe's folder.
-- **Two ways to say what a host needs.** For `vega` it is the recipe's pins. For `sol` it is Kris's `studio` profile. Both are remote agentic rigs, yet nothing tells you they should carry the same KI toolchain. Decision 38 stopped comparing the Mac with the host's pins. That was right for `terra`, but it leaves `sol` and `vega` with no shared definition either.
+- **Two ways to say what a host needs.** For `vega` it is the recipe's pins. For `sol` it is Kris's `studio` profile. Both are remote agentic rigs, yet nothing tells you they should carry the same KI toolchain. On 2026-10-11 Kris told the Techne thread to 'stop comparing the Mac against the host's pins (Mac governed by Homebrew/Rig, not the recipe)'. That was right for `terra`, but it leaves `sol` and `vega` with no shared definition either.
 - **Version policy in two places.** The recipe pins exact versions for reproducible rebuilds. The Mac takes the newest from Homebrew. KI-TECHNE-OPS-024 would add a third mechanism, a pin-bump job, beside `rig upgrade`.
 
 ### Gaps
@@ -84,8 +84,8 @@ Three differences stand out. The tool pins are a Rig profile, but they live insi
 | role | (not used) | The missing word for what a host is for |
 | binding | one person's instance of a recipe | Clear; keep |
 | agent host | the Project, the recipe, the binding, the EC2 instance name `ki-techne-agent-host`, the Rig profile, the Rig category and the tag `ki-agent-host-id` | One phrase for seven things |
-| `direct-host` | ADR-KI-PRINCIPAL-003, ADR-KI-PRINCIPAL-006, ODR-KI-PRINCIPAL-001 and GDR-KI-PRINCIPAL-004 still use it | Decision 30 renamed it to `agent-host`, but Arcadia's Decision Records were not updated |
-| `terra`, `sol`, `vega` | machine names under the Decision 29(a) convention | Rig profiles are `laptop` and `studio`, and the host is still `ki-techne-agent-host` until its rebuild |
+| `direct-host` | ADR-KI-PRINCIPAL-003, ADR-KI-PRINCIPAL-006, ODR-KI-PRINCIPAL-001 and GDR-KI-PRINCIPAL-004 still use it | Kris renamed it to `agent-host` on 2026-10-09 in the Techne run ("let's just call it agent-host"), but Arcadia's Decision Records were not updated |
+| `terra`, `sol`, `vega` | machine names under the convention Kris set on 2026-10-09 in the Techne run: 'physical machines are our solar system (sol = Mac Studio, terra = laptop), peripherals are moons' and 'the AWS agent host is to be named vega' | Rig profiles are `laptop` and `studio`, and the host is still `ki-techne-agent-host` until its rebuild |
 | Rig | in `tools-rig`, a portable manager for a person's working setup; in Arcadia's Rig Initiative, "the workstation" | The Initiative's wording is narrower than the tool's |
 
 "Agent host" and "remote agentic rig" are the same idea at two levels. "Remote agentic rig" names the role, and `vega` and `sol` are both one. "Agent host" names a Techne recipe that builds one kind of base for that role. Keep "remote agentic rig" for the role and rename or narrow the recipe (decision 2).
@@ -179,7 +179,7 @@ Plain words only. No record is changed by this audit.
 - **Rig's roadmap** (`tools-rig`: unwanted software removal, profile-filtered Dock items, self-updating applications, single sudo prompt): **stands**. All are workstation-role items. New work would be raised there: the signed-release install kind, a Debian-versus-Arch platform distinction (only if an Arch base is chosen), and role profiles that can be included from another source (if not already covered by `conf.d` fragments).
 - **chezmoi**: KB-DOTFILES-UE-074 (host delegation) **stands**. A future item would add Linux variants for the personal tools Kris wants on remote agentic rigs.
 - **`tools-ki` and `tools-techne`**: a new item each for linux-arm64 release builds, if Kris wants ARM hosts.
-- **Arcadia**: the Rig Initiative's direction would widen from "the workstation" to "rigs any host for its role", and the Techne Initiative's would say it "takes hosts to ready". ADR-KI-PRINCIPAL-003 would gain the base, role, workspace and personal split and the signed-release kind. The four Decision Records still saying `direct-host` would take the Decision 30 rename.
+- **Arcadia**: the Rig Initiative's direction would widen from "the workstation" to "rigs any host for its role", and the Techne Initiative's would say it "takes hosts to ready". ADR-KI-PRINCIPAL-003 would gain the base, role, workspace and personal split and the signed-release kind. The four Decision Records still saying `direct-host` would take the rename Kris chose on 2026-10-09 ("let's just call it agent-host").
 
 ---
 

@@ -25,11 +25,11 @@ Define one Knowledge Islands wide strategy for how the owner learns about delega
 
 ## Context
 
-Feedback from the `Tower: regular maintenance` thread on 2026-10-13: detached agents kept working, but their progress did not reliably reach the owner. macOS Notification Centre helped but is bound to one machine and is not user-friendly enough. Kris accepted the handoff as Decision 13 of the [[ways-of-working]] run on 2026-10-13: capture one bounded roadmap item and return a recommended approach and implementation plan; Telegram preferred; coordinating-thread updates first; Slack or others configurable; platform-native optional and not the default; possibly the local Observatory as a channel; do not implement integrations yet. Interim preference: chat updates only, with local-host notifications disabled.
+Feedback from the `Tower: regular maintenance` thread on 2026-10-13: detached agents kept working, but their progress did not reliably reach the owner. macOS Notification Centre helped but is bound to one machine and is not user-friendly enough. Kris accepted the handoff in the [[ways-of-working]] run on 2026-10-13: capture one bounded roadmap item and return a recommended approach and implementation plan; Telegram preferred; coordinating-thread updates first; Slack or others configurable; platform-native optional and not the default; possibly the local Observatory as a channel; do not implement integrations yet. Interim preference: chat updates only, with local-host notifications disabled.
 
 Today the [[ways-of-working]] practice reaches the owner only through the run packet under `~/.local/state/ki/agents/<run>/`: each agent's one-line status file, its final report and the `DONE` marker, read by `ki agent status`, `watch` and `wait --next`, and relayed by the coordinating thread in its next turn. There is no event log, no channel other than the thread and no delivery receipt. The Observatory already reads a sibling pattern, the scheduled-jobs reporter's `history.jsonl` under the XDG state directory, into its Automation instrument and the Beacon, but knows nothing of agent runs. The official Claude Code Telegram plugin is enabled in the chezmoi source but not configured; it binds a bot to one running Claude Code session for inbound messages, so a detached agent or daemon cannot send through it.
 
-This record belongs to Knowledge Islands Principal because the strategy spans the `ki-delegation` skill, `ki agent` in `tools-ki`, the Observatory and the chezmoi user configuration, with no single repository owner; it serves the [[ways-of-working]] Project, which owns the delegation and thread practice, and hands its view to [[command-centre]]. Kris adopted it on 2026-10-13 as `ADOPT` in Decision 17 of the `ways-of-working` run, with `HOME` (a): the record stays here and each delivery is a handoff item in the repository that owns it, which keeps its own priority, plan and acceptance. Phase 1 was handed to `tools-ki` and `ki-agentic-harness` the same day; the later phases are handed when phase 1 has landed.
+This record belongs to Knowledge Islands Principal because the strategy spans the `ki-delegation` skill, `ki agent` in `tools-ki`, the Observatory and the chezmoi user configuration, with no single repository owner; it serves the [[ways-of-working]] Project, which owns the delegation and thread practice, and hands its view to [[command-centre]]. Kris adopted it on 2026-10-13 in the `ways-of-working` run, answering `ADOPT` with 'adopt KI-PRINCIPAL-ECO-012 to draft through ki-next; hand phase 1 to tools-ki and the harness now' and `HOME` with '(a) keep KI-PRINCIPAL-ECO-012 in ki-principal; hand deliveries to each repository': the record stays here and each delivery is a handoff item in the repository that owns it, which keeps its own priority, plan and acceptance. Phase 1 was handed to `tools-ki` and `ki-agentic-harness` the same day; the later phases are handed when phase 1 has landed.
 
 ## Boundary
 
@@ -40,7 +40,7 @@ This record belongs to Knowledge Islands Principal because the strategy spans th
 
 ## Owner decisions
 
-Kris answered the strategy's tagged questions on 2026-10-13 in Decision 17 of the `ways-of-working` run; the tags are kept so later phases can cite them.
+Kris answered the strategy's tagged questions on 2026-10-13 in the `ways-of-working` run, each answer returned verbatim against its tag and quoted beside it below; the tags are kept so later phases can cite them.
 
 | Tag | Decision |
 | --- | --- |
@@ -115,4 +115,4 @@ The questions put to Kris each carried an alternative, kept here for the record:
 
 ### Report shape since the assessment
 
-The assessment was written against the earlier report shape with Failed and Needs sections. The owner report that replaced it on 2026-10-13 (Decision 14 of the `ways-of-working` run) puts material failures inside "What has been done" and gives each outstanding query a heading `<tag> - <title>`, so `needs-owner` derives from those headings and `failed` needs a signal the standard names, most simply the agent's final status line. Phase 1 settles that rule in the harness wording and the launcher together.
+The assessment was written against the earlier report shape with Failed and Needs sections. The owner report that replaced it on 2026-10-13, when Kris set the three-section format in the `ways-of-working` run ('standardise owner reports through the ways-of-working process'), puts material failures inside "What has been done" and gives each outstanding query a heading `<tag> - <title>`, so `needs-owner` derives from those headings and `failed` needs a signal the standard names, most simply the agent's final status line. Phase 1 settles that rule in the harness wording and the launcher together.

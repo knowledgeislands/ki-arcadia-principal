@@ -23,7 +23,7 @@ This Project sits in [[Initiatives/techne|Techne]], beside [[paperclip-bootstrap
 
 ## Notes
 
-- **On hold.** Paused on 2026-10-11 by Kris (Decision 38): no thread yet.
+- **On hold.** Paused on 2026-10-11 by Kris, who approved on 2026-10-11 in the state-of-play run, 'CKPT approved (delta-evaluation and roadmap-model on hold; remove territory-rollout checkpoint)': no thread yet.
 - **Layer.** Paperclip coordinates companies, agents, tasks, execution and operational approvals, and explicitly leaves code review to a separate process ([overview](https://github.com/PaperclipAI/paperclip)). Delta centres a collaborative coding thread that holds the conversation, file changes, comments and review together ([core concepts](https://delta.dev/docs/concepts/core-concepts)).
 - **Isolated execution.** Delta normally gives each thread a separate checkout and can use an existing Git worktree; its managed checkout nests under `.delta` in a connected local clone ([worktrees](https://delta.dev/docs/concepts/worktrees)). KI delivery requires task-specific isolation and an authorised path into the designated primary checkout.
 - **Independent review.** Delta supports contextual comments and review threads with approval or change-request verdicts ([Delta on the web](https://delta.dev/docs/collaboration/delta-on-the-web)). A trial must still show that an independent reviewer assessed the exact candidate commit and that required verification ran against the proposed combined result.
@@ -35,7 +35,7 @@ This Project sits in [[Initiatives/techne|Techne]], beside [[paperclip-bootstrap
 - Is a trial worth running now, given the [[Techne Programme Hold]] on remote agent execution? Delta's hosted threads and server-side storage need checking against that policy before any trial; [[agent-host]] tracks the hold prerequisites.
 - Which non-sensitive test repository and bounded delivery would exercise the criteria without exposing private content?
 - Should the assessment be promoted into `Resources` as tool reference, or does it only become durable as part of an adoption or rejection decision? The original loose assessment, `+/delta-paperclip-assessment-2026-10-02.md`, is retained in Git.
-- **Idea: decide on a Delta trial.** Kris answers whether Delta earns a bounded trial alongside Paperclip, re-evaluating from the 2026-10-06 baseline at the 2026-10-21 decision point, and the answer gets a home. Kept as an idea on 2026-10-11 in place of a cancelled Knowledge Islands Principal work record (Decision 38). On 2026-10-14 Kris extended the decision point by one week, from 2026-10-13 to 2026-10-21, alongside the trades hold.
+- **Idea: decide on a Delta trial.** Kris answers whether Delta earns a bounded trial alongside Paperclip, re-evaluating from the 2026-10-06 baseline at the 2026-10-21 decision point, and the answer gets a home. Kept as an idea on 2026-10-11 in place of a cancelled Knowledge Islands Principal work record, under Kris's 2026-10-11 'TRIAGE approve all' in the state-of-play run. On 2026-10-14 Kris extended the decision point by one week, from 2026-10-13 to 2026-10-21, alongside the trades hold.
 
 ### Close-out assessment
 

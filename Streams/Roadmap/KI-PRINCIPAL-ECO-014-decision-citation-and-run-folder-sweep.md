@@ -6,15 +6,15 @@ title: Decision citation sweep
 project: ways-of-working
 purpose: upkeep
 kind: deliver
-status: draft
-horizon: next
+status: in-progress
+horizon: now
 tags:
   - topic/knowledge-islands
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: 17c7cc22cf3993e15c7f721c6b3e9630ce534fb2
 created_at: 2026-10-13T23:35:00Z
-updated_at: 2026-10-14T09:20:04Z
+updated_at: 2026-10-14T09:49:40Z
 ---
 
 # Decision Citation and Run-Folder Sweep
@@ -63,9 +63,9 @@ Each repository commits its own change under its own authority; this record trac
 
 ### Citation sweep, repository by repository
 
-- [ ] Re-run `git grep -nE 'Decision(s)? [0-9]+' -- .` in each repository above and classify each match as a citation to rewrite or a quotation to keep, listing the classification in this record's Discussion before editing.
+- [x] Re-run `git grep -nE 'Decision(s)? [0-9]+' -- .` in each repository above and classify each match as a citation to rewrite or a quotation to keep, listing the classification in this record's Discussion before editing.
 - [ ] For each citation, read the decision in the run's log, in the state folder or the thread's tracked folder, and replace the number with the owner's operative words, dated, and the name of the file that holds the rest; where the log entry quotes nothing, describe the decision and date it. A Project note or design file is edited only in the sentence that cites; checkpoints under `+/_CHECKPOINTS/` are not edited.
-- [ ] This island: one commit, `docs(streams): describe cited decisions in the owner's words`. Harness: one commit touching the four roadmap records and `ki-tokenomics` sources, after the harness's own `ki-delegation` rewording has landed so the two do not collide. `tools-ki`: one commit for its two records. `ki-techne-harness` and `tools-techne`: one commit each, by this island's agent under the cross-repository handoff rule, or handed to those repositories as Kris decides below.
+- [x] This island: one commit, `docs(streams): describe cited decisions in the owner's words`. Harness: one commit touching the four roadmap records and `ki-tokenomics` sources, after the harness's own `ki-delegation` rewording has landed so the two do not collide. `tools-ki`: one commit for its two records. `ki-techne-harness` and `tools-techne`: one commit each, by this island's agent under the cross-repository handoff rule, or handed to those repositories as Kris decides below.
 - [ ] Push each repository fast-forward under the thread's standing push permission.
 
 ### Run-folder sweep, after `ki agent close` is installed
@@ -135,9 +135,25 @@ Settled at planning on 2026-10-14:
 - The `ways-of-working` run is not reconciled by this record. Kris placed it: "everything to do with the decisions log belongs to ways-of-working". That thread keeps its log, copies it to the tracked thread folder once the harness wording lands, and closes it under the standard when the thread closes. The design folder's quoted copy stays as evidence and is not a home.
 - A match on a number inside a quotation of Kris's words or of the old standard is not a citation and is kept; the classification list in Discussion is written before any edit.
 
-Still open, for Kris:
+Settled at approval on 2026-10-14: Kris answered "TECHNE-SWEEP - a", so this island's agent edits the five `ki-techne-harness` records and two `tools-techne` records under the cross-repository handoff rule, committing in each repository with local edits only; the Techne Programme Hold is unaffected.
 
-- Whether this island's agent edits the five `ki-techne-harness` records and two `tools-techne` records under the cross-repository handoff rule, committing in each repository, or those repositories receive the list as a handoff and sweep themselves. The plan is written for the first; the second removes two repositories from the agent's `--add-dir`.
+### Classification
+
+Re-run on 2026-10-14 before editing, at this island's `17c7cc2`, harness `0540aabf`, `tools-ki` `a86a63a`, `ki-techne-harness` `de6b4d3` and `tools-techne` `854e60a`. Matches under `+/_THREADS/` and `+/_CHECKPOINTS/` are the logs themselves and the checkpoints, and are outside the sweep.
+
+Kept, because the number is not a citation of authority:
+
+- `Streams/Initiatives/knowledge-islands-model/design/territory-selection-report.md`: "Decision 3" names item 3 of that report's own Decisions list, not a run's log.
+- `Streams/Projects/ways-of-working/design/change-management-brief.md`: the verbatim block of the ways-of-working decisions and the sentence introducing it are the quoted copy the Open questions above keep as evidence.
+- `Streams/Projects/ways-of-working/design/change-management-report.md`: quotes Kris's own words, "cite 'Decisions 19 and 20 of the ways-of-working run'".
+- `Streams/Projects/ways-of-working/design/roadmap-sizing-and-burn-down.md`: the number sits inside the blockquote of the master's relay, kept as received.
+- `Streams/Projects/ways-of-working/design/thread-banner-and-re-anchoring.md`: the two banner mock-ups show the mark form the standard then defined, `decisions log at Decision <N>`; the harness's tracked thread decisions home record owns that form.
+- This record: quotations of Kris's words and the illustration "under Decision 16" of the pattern removed.
+- Harness: [KI-HARNESS-GOV-180](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-180-tracked-thread-decisions-home.md) quotes the old standard; the `ki-delegation` standard and its `sources.md` are that record's to reword.
+- `tools-ki`: `src/tests/cli/agent.test.ts` fixtures exercise the log's own numbered format; [KI-TOOL-KI-CLI-125](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-125-ki-release-contract.md) "Decision 6" names item 6 of the linked, committed Rig and Techne boundary audit.
+- `ki-techne-harness`: `KI-TECHNE-OPS-018` "Decision 5" and "decision 3" name items of the linked audit and of ADR-KI-PRINCIPAL-003. `tools-techne`: `KI-TOOL-TECHNE-CLI-006` "Decisions 2, 4 and 8" name items in the committed ODR-KI-PRINCIPAL-001 references.
+
+Rewritten, every other match: in this island the 19 files under Files touched less the five kept above, 60 citations of the ways-of-working, state-of-play, chezmoi and Techne runs; in the harness six files citing the state-of-play, acquire-intake, knowledge-acquisition and ways-of-working runs; in `tools-ki` [KI-TOOL-KI-CLI-115](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-115-enforce-roadmap-writing-checkout.md) citing the state-of-play and tools-burndown runs; in `ki-techne-harness` five records citing the state-of-play and Techne runs; in `tools-techne` two records citing the Techne and tools-burndown runs. Each rewrite quotes the operative words from the run's log, as recorded there, with the date and the run's name.
 
 ### Adoption
 

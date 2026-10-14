@@ -10,13 +10,13 @@ I recommend six units of comprehension: Work, Coordination, Recovery, Delegation
 
 The first pilot should prove that a fresh session on another machine can recover scope, live authority, outstanding Needs and the next action from repository evidence alone. A mark containing a machine-local decision number does not establish that property. Neither a checkpoint nor a process that has written `DONE` proves that a Project is active, that a deliverable succeeded or that its acceptance was authorised.
 
-This view was formed without reading the other review. The quoted master-thread decisions were checked only against the two cited repository checkpoints; the master run's local log was not read. Decisions 1 to 9 in the authorised ways-of-working log were read. The proposed structure below is a recommendation for the owner, not an adoption or implementation grant.
+This view was formed without reading the other review. The quoted master-thread decisions were checked only against the two cited repository checkpoints; the master run's local log was not read. The nine decisions Kris had made in the ways-of-working run by 2026-10-13, from opening the thread to the push and hand-off housekeeping, were read. The proposed structure below is a recommendation for the owner, not an adoption or implementation grant.
 
 ## Fact check
 
 ### F1 - Roadmap adapter and shared record standard are different
 
-Reflection 11 makes a material category error. The `roadmap` adapter is restricted to project repositories, but `ki-work-roadmap` already owns the shared record model used by Knowledge Bases. Its repository-roadmap standard explicitly permits a KB to declare the skill alongside Streams for issuing areas, components and shared record configuration. Principal does so today. Streams describes itself as owning the container and routing. Decision 5 therefore does not need to be reinterpreted as merely adopting `ki-work`, and merging the shared record semantics is not new work. What remains worth simplifying is the implementation and presentation of the container boundary. See [roadmap scope][roadmap], [Streams ownership][streams] and Principal's [configuration][principal-config].
+Reflection 11 makes a material category error. The `roadmap` adapter is restricted to project repositories, but `ki-work-roadmap` already owns the shared record model used by Knowledge Bases. Its repository-roadmap standard explicitly permits a KB to declare the skill alongside Streams for issuing areas, components and shared record configuration. Principal does so today. Streams describes itself as owning the container and routing. Kris's 2026-10-13 ruling that 'every repository adopts the roadmap skill' therefore does not need to be reinterpreted as merely adopting `ki-work`, and merging the shared record semantics is not new work. What remains worth simplifying is the implementation and presentation of the container boundary. See [roadmap scope][roadmap], [Streams ownership][streams] and Principal's [configuration][principal-config].
 
 ### F2 - The Work unit has unresolved inconsistencies
 
@@ -51,7 +51,7 @@ The assertion that the CLI has no Project view is too absolute. Grouped roadmap 
 
 The current `model_tier_bindings` contract is a table of purpose keys to opaque, non-empty strings. It has no runtime dimension, effort field, precedence rule or capability validation. The tokenomics skill explicitly limits its own role to policy and reporting. Reflection 23 needs a new binding contract before `--purpose` can resolve reliably for Claude and Codex. See [tokenomics configuration][tokenomics] and [runtime adapters][runtimes].
 
-The existing portable recommendation is `fast`, falling back to `standard` when needed, at low effort. Decisions 3 and 8 support testing a lean coordinator; they do not establish a particular model's reliability or a cost advantage. Reflection 24 is an alternative policy judgement, not a finding proved by the cited sources.
+The existing portable recommendation is `fast`, falling back to `standard` when needed, at low effort. Kris's 2026-10-13 decisions that 'the main thread should be a coordinator, not do the reasoning' and that Kris 'leans to a lower, less-reasoning model handling things in a mechanical handoff fashion' support testing a lean coordinator; they do not establish a particular model's reliability or a cost advantage. Reflection 24 is an alternative policy judgement, not a finding proved by the cited sources.
 
 ### F8 - Folder retention has a real standards conflict
 
@@ -102,7 +102,7 @@ Agree endorses the direction; Add retains it with a necessary qualification; Dif
 | 23 | Differ | Model and effort exist; purpose resolution needs a new runtime-aware binding contract first; F3, F7. |
 | 24 | Differ | Retain fast/low as the trial default with standard fallback; no comparative evidence settles more; F7. |
 | 25 | Add | Escalate report synthesis and disputed evidence as well as initial decisions; [review contract][design-standard]. |
-| 26 | Agree | Deliver KI definitions to command centre, which owns the crosswalk and view; Decision 5 and its Project note. |
+| 26 | Agree | Deliver KI definitions to command centre, which owns the crosswalk and view; Kris's 2026-10-13 decision that 'command-centre keeps cross-territory alignment and the state-of-play view', and its Project note. |
 | 27 | Differ | Treat Needs-to-Item correspondence as an unverified crosswalk, not an established identity; F10. |
 | 28 | Differ | New fields and revised ownership change behaviour; pilot recovery and authority, not just extraction; F8-F9. |
 
@@ -126,7 +126,7 @@ Keep recurring definitions here, renamed `ki-work-recurring`; Activity notes rem
 
 **Question:** What is Kris trying to achieve across this scope, and what needs attention now?
 
-Create `ki-pmo` in change-management. It owns the Initiative and Project registry schema, goals vocabulary, master and Project thread roles, the active-thread cap and queue, Needs, directions, roll-ups, and opening or resting a thread. Use progressive disclosure: registry guidance need not load the full live-thread procedure. Every principal KB adopts it, as Decision 5 requires; only a declared Capital holds its territory's registry and master. A non-Capital principal must not acquire a competing registry by adopting the skill.
+Create `ki-pmo` in change-management. It owns the Initiative and Project registry schema, goals vocabulary, master and Project thread roles, the active-thread cap and queue, Needs, directions, roll-ups, and opening or resting a thread. Use progressive disclosure: registry guidance need not load the full live-thread procedure. Every principal KB adopts it, as Kris required on 2026-10-13 ('every principal knowledge base adopts the PMO skill'); only a declared Capital holds its territory's registry and master. A non-Capital principal must not acquire a competing registry by adopting the skill.
 
 A master owns coordination across Projects; a Project thread owns coordination within one finite Project. An Initiative can have projectless upkeep, handled through the master and ordinary delegated work without inventing an endless Project. The current local cap is three active Project threads plus the master. Treat this as owner policy, not proof of three live processes. Define active as a coordination allocation, not checkpoint existence or PID presence.
 
@@ -221,7 +221,7 @@ Pilot one master and one Project thread after resolving the evidence and authori
 
 The acceptance demonstration is a cold reconstruction with local run material unavailable: recover current authority and Needs, generate a correct opener, preserve outstanding work across a new mark, detect a failed predecessor, and show unknown remote-machine execution honestly. Also test a generic repository checkpoint without PMO, and a Project that has no records. This is a proposed verification plan, not testing performed by this review.
 
-Once that passes, route bounded work to each owning repository for schema or CLI changes and command-centre projections. Skills, checker, assets, installed-name projections, catalogue, help, completion and manual must agree at each renamed interface. Keep decisions and definitions at their canonical owners, with a single consolidated hand-off to command centre. Decision 6 means that hand-off stays outstanding until Kris expressly acknowledges it; producing this review does not complete it.
+Once that passes, route bounded work to each owning repository for schema or CLI changes and command-centre projections. Skills, checker, assets, installed-name projections, catalogue, help, completion and manual must agree at each renamed interface. Keep decisions and definitions at their canonical owners, with a single consolidated hand-off to command centre. Kris's 2026-10-13 rule that a handoff 'counts as done only when Kris expressly says so' means that hand-off stays outstanding until Kris expressly acknowledges it; producing this review does not complete it.
 
 ## Owner decisions
 
