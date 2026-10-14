@@ -11,7 +11,7 @@ blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-13T23:35:00Z
-updated_at: 2026-10-13T23:35:00Z
+updated_at: 2026-10-14T00:19:59Z
 ---
 
 # Decision Citation and Run-Folder Sweep
@@ -28,7 +28,7 @@ Kris raised the problem on 2026-10-13 in the `ways-of-working` thread: decisions
 
 The change-management report's Durability and ownership section surveyed the committed files that cite by number. In this island: [KI-PRINCIPAL-ECO-012](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-ECO-012-notification-strategy-for-delegated-work.md) in three places, [KI-PRINCIPAL-ECO-013](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-ECO-013-pmo-extraction-pilot.md), the `secrets-hygiene` and `rig-techne-boundary-audit` notes, and ideas under the `rig` and `agent-host` Initiatives. In the harness: [KI-HARNESS-GOV-168](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-168-roll-out-ki-pin-receivers.md), [KI-HARNESS-GOV-170](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-170-keep-resolution-targets-local.md), the `sources.md` of `ki-tokenomics` and of `ki-delegation`, and the background-run standard's own two citations of named decisions in its Reporting and full-summary sections; a check at capture also found [KI-HARNESS-GOV-171](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-171-standing-surface-design-rules.md) citing two decisions of the `state-of-play` thread and [KI-HARNESS-GOV-178](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-178-repair-checkpoint-configuration.md) citing one of the `acquire-intake` run. In the Techné repositories: `KI-TECHNE-OPS-024` in `ki-techne-harness` and `KI-TOOL-KI-TECHNE-CLI-008` in `tools-techne`. The sweep confirms the list against the repositories at the time it runs, since files change between capture and delivery.
 
-A read-only inventory of the machine's run folders on 2026-10-13, kept as working material in the `ways-of-working` run and not committed, found 25 folders: 17 live on the test of a running agent or an open checkpoint of their own, and 8 with no live agent and no checkpoint of their own, proposed for reconcile-then-archive: `island-model-and-tending`, `legal-bounded-tidy-20261011`, `legal-fr-oct12`, `sacred-inquiry-state-of-play`, `techne`, `tools-burndown`, `vallearmonia-community-presence` and `vallearmonia-youtube`. The `chezmoi` and `mac-studio-bootstrap` runs move to that list if Kris confirms their threads closed. Legal and personal runs were counted only, with no content read.
+A read-only inventory of the machine's run folders on 2026-10-13, kept as working material in the `ways-of-working` run and not committed, found 25 folders: 17 live on the test of a running agent or an open checkpoint of their own, and 8 with no live agent and no checkpoint of their own, proposed for reconcile-then-archive: `island-model-and-tending`, `legal-bounded-tidy-20261011`, `legal-fr-oct12`, `sacred-inquiry-state-of-play`, `techne`, `tools-burndown`, `vallearmonia-community-presence` and `vallearmonia-youtube`. The `chezmoi` and `mac-studio-bootstrap` runs stay among the 17 live folders: Kris confirmed on 2026-10-14 that their threads are open, "No, they're not closed, they're both being worked on." Legal and personal runs were counted only, with no content read.
 
 This record is captured from Kris's answers and is not adopted, planned or implemented by it.
 
@@ -38,7 +38,7 @@ This record is captured from Kris's answers and is not adopted, planned or imple
 - The run-folder sweep: reconcile and then archive the eight folders above, plus any Kris adds; each decision checked against its durable owner, each unread report of an agent that exited without `DONE` read before the folder goes.
 - Legal and personal runs, including `legal-bounded-tidy-20261011` and `legal-fr-oct12`, are reconciled only from their own threads, by an agent of that territory; this island's agents do not read them.
 - Not the `ki agent close` command, the launcher change or the standard's wording, which the records named above own.
-- Not the live runs, which close under the standard's rule when their threads close.
+- Not the live runs, which close under the standard's rule when their threads close. This includes the `chezmoi` and `mac-studio-bootstrap` runs, whose threads are open and being worked on; any reconcile of their folders happens only from those threads when they close.
 - No run folder is deleted; archive is the action, and anything beyond needs Kris's word.
 
 ## Discussion
