@@ -61,9 +61,9 @@ Needs Kris (outstanding at the mark; carried forward until resolved):
 
 Dated queue:
 
-- 2026-10-14: the trades and delta follow-up ([delta-evaluation](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/delta-evaluation.md)).
-- 2026-10-15: HOLD-1 warnings begin (Decision 41).
 - 2026-10-16: review the KI-PRINCIPAL-MOD-008 hold; release it if most of the roadmap is cleared, otherwise move the review on one week.
+- 2026-10-21: the trades and delta follow-up ([delta-evaluation](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/delta-evaluation.md)), extended one week by Kris on 2026-10-14.
+- 2026-10-22: HOLD-1 warnings begin (Decision 41).
 - 2026-11-12: review the Hold records KI-TECHNE-OPS-018 and KB-DOTFILES-UE-084.
 
 Master follow-ups (no Kris action):

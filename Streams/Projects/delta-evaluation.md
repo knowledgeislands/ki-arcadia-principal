@@ -7,7 +7,7 @@ initiative: techne
 lifecycle: paused
 lead: Kris Brown
 target: null
-updated: 2026-10-11T02:24:51Z
+updated: 2026-10-14T00:00:44Z
 author: Written with Claude
 ---
 
@@ -35,7 +35,7 @@ This Project sits in [[Initiatives/techne|Techne]], beside [[paperclip-bootstrap
 - Is a trial worth running now, given the [[Techne Programme Hold]] on remote agent execution? Delta's hosted threads and server-side storage need checking against that policy before any trial; [[agent-host]] tracks the hold prerequisites.
 - Which non-sensitive test repository and bounded delivery would exercise the criteria without exposing private content?
 - Should the assessment be promoted into `Resources` as tool reference, or does it only become durable as part of an adoption or rejection decision? The original loose assessment, `+/delta-paperclip-assessment-2026-10-02.md`, is retained in Git.
-- **Idea: decide on a Delta trial.** Kris answers whether Delta earns a bounded trial alongside Paperclip, re-evaluating from the 2026-10-06 baseline at the 2026-10-13 decision point, and the answer gets a home. Kept as an idea on 2026-10-11 in place of a cancelled Knowledge Islands Principal work record (Decision 38).
+- **Idea: decide on a Delta trial.** Kris answers whether Delta earns a bounded trial alongside Paperclip, re-evaluating from the 2026-10-06 baseline at the 2026-10-21 decision point, and the answer gets a home. Kept as an idea on 2026-10-11 in place of a cancelled Knowledge Islands Principal work record (Decision 38). On 2026-10-14 Kris extended the decision point by one week, from 2026-10-13 to 2026-10-21, alongside the trades hold.
 
 ### Close-out assessment
 

@@ -7,7 +7,7 @@ initiative: knowledge-islands-model
 lifecycle: planned
 lead: Kris Brown
 target: null
-updated: 2026-10-11T02:19:55Z
+updated: 2026-10-14T00:00:44Z
 author: Written with Claude
 ---
 
@@ -23,7 +23,7 @@ This Project sits in [[knowledge-islands-model|Knowledge Islands model]]. It is 
 
 ## Notes
 
-- **Trades on hold.** Since decision 11 of the state-of-play design (2026-10-07) no new trades are sent, and under decision 13 every `.ki.toml` trade policy is stripped back to a bare `[skills.ki-trades]`. Knowledge Islands Principal's full policy (`[skills.ki-trades.territory]` and `map_bonus`) lives in Git history at commit `76e399b`, the commit before the strip. The hold is due for review by 2026-10-14; the [[skill-refresh]] Project carries that review.
+- **Trades on hold.** Since decision 11 of the state-of-play design (2026-10-07) no new trades are sent, and under decision 13 every `.ki.toml` trade policy is stripped back to a bare `[skills.ki-trades]`. Knowledge Islands Principal's full policy (`[skills.ki-trades.territory]` and `map_bonus`) lives in Git history at commit `76e399b`, the commit before the strip. The hold is due for review by 2026-10-21, extended one week by Kris on 2026-10-14; the [[skill-refresh]] Project carries that review.
 - **The model before the strip.** Knowledge Islands Principal's `.ki.toml` held the territory in `[skills.ki-repo.territory]` (21 members as full HTTPS URLs) and the trade policy in `[skills.ki-trades.territory]`: 4 `subtypes`, 10 `[[channels]]` and 4 `[[standing]]` grants, about 180 lines with 93 repeated URLs. Members name their Capital in `[skills.ki-repo].capital`.
 - **Where it is specified.** The [[Admin/Governance/Charter|Charter]] and [[GDR-KI-PRINCIPAL-003-capital-governed-trade-routes|GDR-KI-PRINCIPAL-003]] here; the `ki-trades` standard (`references/standards-trades.md`) and rubric, the `ki-repo` standard, and [GDR-KI-HARNESS-013](https://github.com/knowledgeislands/ki-agentic-harness/blob/92c6014286a0711b8badf9a8b9fe6294d0780a8d/docs/decisions/GDR-KI-HARNESS-013-capital-owned-territory-trade-policy.md) in `ki-agentic-harness`; the parser in `tools-ki/src/core/trade/configuration.ts`. `ki-specifications` has no territory or trade specification or schema.
 - **`map_bonus`.** A presentation-only (0-3) uplift for the generated estate map, still parsed and carried through `tools-ki/src/core/trade/estate.ts` and `route-report.ts`. No consumer of that map was found; confirm nothing renders it before removing the field.
