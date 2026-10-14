@@ -84,6 +84,14 @@ With other threads, no Kris action now:
 - **CLI127-LINKS:** answered; outstanding note for [KI-TOOL-KI-CLI-127](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-127-agent-status-live-threads.md)'s next planning pass: point both of its KI-TOOL-KI-CLI-124 links at the pruned GitHub link, [KI-TOOL-KI-CLI-124 (pruned)](https://github.com/knowledgeislands/tools-ki/blob/9c4c0c0/docs/roadmap/KI-TOOL-KI-CLI-124-agent-run-close.md), with no separate commit now.
 - **GATE-REMAIN:** sent 2026-10-15; the remaining `ki repo audit` failures are their owners' to fix. Rig: mac-studio-bootstrap (RECORD-2, BOUNDARY-1) through its checkpoint message block and `~/.local/state/ki/agents/mac-studio-bootstrap/inbox.md`; Observatory: product (LIFECYCLE-1) through a new message block in its checkpoint. The two tools-burndown MD041 reports no longer exist, so no message went.
 
+Settled on 15 October (foundations-apply):
+
+- **FOUNDATIONS-HOME:** the [Known World](</Users/krisbrown/workspaces/knowledge-islands/ki-principal/Pillars/Philosophy/Emerging Concepts/Known World.md>) Emerging Concepts note, held by a widened Outcome in [Island model and Tending](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/island-model-and-tending.md), with each other Project's part in its Notes.
+- **SEAT-RECORD:** [ADR-KI-PRINCIPAL-007](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Admin/Governance/Decisions/ADR-KI-PRINCIPAL-007-territory-seats-on-hosts.md) and the Seat column in [Known Lands](</Users/krisbrown/workspaces/knowledge-islands/ki-principal/Admin/Governance/Known Lands.md>); SEAT-BIND sent to the [Rig: chezmoi checkpoint](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/rig.chezmoi.md) and its inbox.
+- **PAPERCLIP-SEAT, PAPERCLIP-CHEZMOI, PAPERCLIP-BRANCHES:** Notes of [Paperclip capture and rebuild](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/paperclip-capture-and-rebuild/paperclip-capture-and-rebuild.md); PAPERCLIP-OFF sent to the Rig: chezmoi checkpoint and its inbox.
+- **INCEPTION-PILOT:** a message in the [knowledge-acquisition checkpoint](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/knowledge-islands-model.knowledge-acquisition.md).
+- **ROOTING-OWNER, TERRITORY-RULE:** the ROOTING-MODEL direction and the adopted territory rule at the top of the [ways-of-working checkpoint](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/knowledge-islands-model.ways-of-working.md); ROOTING-OWNER's concept-note target also in the knowledge-acquisition checkpoint.
+
 Dated queue:
 
 - 2026-10-16: review the [KI-PRINCIPAL-MOD-008](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-MOD-008-whole-philosophy-coherence-review.md) hold; release it if most of the roadmap is cleared, otherwise move the review on one week.

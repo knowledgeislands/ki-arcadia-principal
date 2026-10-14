@@ -68,18 +68,18 @@ Domains the territory holds or plans to hold, recorded from the 2026-10-12 inven
 
 ## Estate territories
 
-The estate has eight territories. Each has a handle, a short alias used in repository names and codes, and a class: entity or individual. This list names each territory's Capital for reference only; it grants no membership, authority, access, or permission to exchange material.
+The estate has eight territories. Each has a handle, a short alias used in repository names and codes, a class: entity or individual, and a seat: the host role where it is primarily tended, home or hub, with Knowledge Islands seated on both, under [[ADR-KI-PRINCIPAL-007-territory-seats-on-hosts|ADR-KI-PRINCIPAL-007]]. The binding of each role to a machine stays in the local registry and chezmoi. This list names each territory's Capital for reference only; it grants no membership, authority, access, or permission to exchange material.
 
-| Territory | Handle | Alias | Class | Capital |
-| --- | --- | --- | --- | --- |
-| Knowledge Islands | `knowledge-islands` | `ki` | Entity | `knowledgeislands/ki-principal` |
-| Humans Not Robots | `humans-not-robots` | `hnr` | Entity | `krisb/hnr-principal` |
-| Equal Remedy | `equal-remedy` | `er` | Entity | `equalremedy/er-principal` |
-| Techmedix | `techmedix` | `tmx` | Entity | `techmedix/tmx-principal` |
-| Valle Armonia | `valle-armonia` | `va` | Entity | `vallearmonia/va-principal` |
-| Legal | `legal` | `lgl` | Individual | `krisb/legal-principal` |
-| Personal | `personal` | `kb` | Individual | `krisb/personal-principal` |
-| Sacred Inquiry | `sacred-inquiry` | `si` | Individual | `sacred-inquiry/si-principal` |
+| Territory | Handle | Alias | Class | Seat | Capital |
+| --- | --- | --- | --- | --- | --- |
+| Knowledge Islands | `knowledge-islands` | `ki` | Entity | Both | `knowledgeislands/ki-principal` |
+| Humans Not Robots | `humans-not-robots` | `hnr` | Entity | Home | `krisb/hnr-principal` |
+| Equal Remedy | `equal-remedy` | `er` | Entity | Hub | `equalremedy/er-principal` |
+| Techmedix | `techmedix` | `tmx` | Entity | Hub | `techmedix/tmx-principal` |
+| Valle Armonia | `valle-armonia` | `va` | Entity | Hub | `vallearmonia/va-principal` |
+| Legal | `legal` | `lgl` | Individual | Home | `krisb/legal-principal` |
+| Personal | `personal` | `kb` | Individual | Home | `krisb/personal-principal` |
+| Sacred Inquiry | `sacred-inquiry` | `si` | Individual | Hub | `sacred-inquiry/si-principal` |
 
 ---
 

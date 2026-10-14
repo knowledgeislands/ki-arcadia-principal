@@ -1,6 +1,6 @@
 ---
 note_type: admin/governance/decision
-updated: 2026-10-11T01:41:00Z
+updated: 2026-10-14T23:45:00Z
 status: current - October 2026
 ---
 
@@ -31,6 +31,7 @@ Records are ordered by reveal order - the logical sequence in which the decision
 15. [ADR-KI-PRINCIPAL-002](ADR-KI-PRINCIPAL-002-territory-derived-repository-selection.md) - Territory-derived repository selection
 16. [ODR-KI-PRINCIPAL-001](ODR-KI-PRINCIPAL-001-keeping-work-safe-on-the-agent-host.md) - Keeping work safe on the agent host
 17. [ADR-KI-PRINCIPAL-003](ADR-KI-PRINCIPAL-003-the-agent-host-workstation-model.md) - The agent host workstation model
+18. [ADR-KI-PRINCIPAL-007](ADR-KI-PRINCIPAL-007-territory-seats-on-hosts.md) - Territory seats on hosts
 
 ## Engineering decisions
 

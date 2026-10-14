@@ -857,3 +857,39 @@
 ## Decision 212 (2026-10-15)
 
 - From Fnd: baseline-rollout on Kris's behalf, 2026-10-15. GATE-REMAIN: route the remaining ki-principal commit-gate failures to their owning threads - rig.mac-studio-bootstrap checkpoint RECORD-2 and BOUNDARY-1 to Rig: mac-studio-bootstrap; knowledge-islands-model.observatory checkpoint LIFECYCLE-1 to the Observatory thread's owner; tools-burndown dock-plan-resume and patching-plan reports MD041 (truncated, start at ## Done) to tools-burndown. THREADS-CHECKINS: 'park for Kris: his outstanding question about how threads are used and the excessive number of check-ins in this area. Kris will pick it up with you.'
+
+## Decision 213 (2026-10-15)
+
+- FOUNDATIONS-HOME (Kris, 2026-10-15): 'Write section 1 of foundations-coherence.report.md as one Emerging Concepts note, "Known World", beside Realm Model, marked not adopted. Widen Island model and Tending's Outcome by one line to include it. Add each other Project's one-line part, from that report's section 2 table, to its Notes. One ki-principal commit by explicit path; no new Project, no thread, no records.'
+
+## Decision 214 (2026-10-15)
+
+- SEAT-RECORD (Kris, 2026-10-15): 'One ki-principal run writes the next ADR-KI-PRINCIPAL architecture record, "territory seats on hosts": every host holds all eight territories; one seat and one standby per territory; Knowledge Islands active-active, tipped to the hub; coordination routed by seat with standby fallback; Git the source of truth. It adds a Seat column to Known Lands' Estate territories table: home for personal, legal and humans-not-robots; hub for valle-armonia, sacred-inquiry, techmedix and equal-remedy; both for knowledge-islands. A message to Rig: chezmoi asks it to bind home to terra and hub to sol in host data.'
+
+## Decision 215 (2026-10-15)
+
+- PAPERCLIP-SEAT (Kris, 2026-10-15): 'Add to Paperclip capture and rebuild's Notes: one Paperclip service per host; each territory's company live only on its seat host and absent on the standby; the Knowledge Islands company live on the hub, with Terra reaching it over the tailnet. This replaces "build on Sol" in its Design phase and leaves the Techne Programme Hold unchanged.'
+
+## Decision 216 (2026-10-15)
+
+- PAPERCLIP-CHEZMOI (Kris, 2026-10-15): 'Keep them till the per host rebuild is designed. Ensure that it isn't used by either terra or sol for now though.'
+
+## Decision 217 (2026-10-15)
+
+- PAPERCLIP-BRANCHES (Kris, 2026-10-15): 'Keep the six unmerged paperclip/aligned-20260926/* branches (hnr-principal HNR-15 and HNR-49, hnr-agentic-harness HNR-30 and HUM-21, hnr-shared HNR-38, tools-ki KIS-46) until the per-host Paperclip rebuild is planned; then one run per repository brings each into that repository's roadmap or deletes it.'
+
+## Decision 218 (2026-10-15)
+
+- INCEPTION-PILOT (Kris, 2026-10-15): 'Leave a message in the knowledge-acquisition checkpoint naming the Known World model as the inception loop's first pilot: the seed is the foundations-coherence seed prompt plus Island model and Tending's Notes, and the capture folds back into the Known World note. I'll hold the ChatGPT discussion when it suits me; nothing waits on it.'
+
+## Decision 219 (2026-10-15)
+
+- ROOTING-OWNER (Kris, 2026-10-15): 'Place the ROOTING-MODEL direction from section 3 of rooting-model.report.md at the top of the ways-of-working checkpoint. Ways of working settles rooting with the evaluation-areas, evaluating-stage and hierarchy types questions as one ki-work standards change under an existing record. knowledge-acquisition adds Emerging Concepts notes as a seed and fold-back target.'
+
+## Decision 220 (2026-10-15)
+
+- TERRITORY-RULE (Kris, 2026-10-15): 'Adopt the territory rule from section 2 of the rooting-model report: I confirm the owning territory at the mark, on the proposal of the thread where the idea arose, using "whose Capital must accept it". The model and method root in Knowledge Islands, and my own life and machine bindings root in Personal. Another territory gets one handoff when it must act and otherwise only a one-line link. Pass it to Ways of working with ROOTING-OWNER.'
+
+## Decision 221 (2026-10-15)
+
+- RCA-RIG-ADR010 (Kris, 2026-10-15): 'Can you tell me what to do again and I'll do it now'

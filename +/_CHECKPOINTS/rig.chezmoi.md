@@ -11,6 +11,8 @@ updated_at: 2026-10-14T20:30:00Z
 
 **Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
 
+- 2026-10-15 · SEAT-BIND · Kris, 15 October: bind role home to terra and hub to sol in host data. The roles are recorded in [ADR-KI-PRINCIPAL-007](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Admin/Governance/Decisions/ADR-KI-PRINCIPAL-007-territory-seats-on-hosts.md) and the Seat column of [Known Lands](</Users/krisbrown/workspaces/knowledge-islands/ki-principal/Admin/Governance/Known Lands.md>); the machine binding stays in chezmoi.
+- 2026-10-15 · PAPERCLIP-OFF · Kris, 15 October: 'Keep them till the per host rebuild is designed. Ensure that it isn't used by either terra or sol for now though.' Keep the old Paperclip launchd declaration, plist and scripts in the chezmoi source until the per-host rebuild is designed, but make sure neither terra nor sol applies or loads them; review `chezmoi diff` before any apply; sol needs its own session.
 - 2026-10-14 · CHEZMOI-PROJECT - registered at Streams/Projects/chezmoi.md; link your report heading to it.
 
 ## Objective
