@@ -4,7 +4,7 @@ thread: techne.agent-host
 label: 'Techne: agent-host'
 state: active
 created_at: 2026-10-07T09:05:00Z
-updated_at: 2026-10-14T09:05:00Z
+updated_at: 2026-10-14T10:57:00Z
 ---
 
 # techne.agent-host
@@ -17,7 +17,7 @@ The thread moves agent work off the laptop onto the one agent host the [Techne P
 
 ## Thread working rules
 
-Re-read this block and `ki-delegation` (background-run standard) after any compaction.
+Re-read this block, `ki-pmo` and `ki-delegation` after any compaction; the decisions log and reports are copied into the thread folder at each mark and report.
 
 - **Role:** coordinator for Techne: agent-host, run name `techne`. Quick checks and bookkeeping only in the thread; analysis, edits, tests and long waits go to `ki agent` background agents, waited on detached.
 - **Owner reports:** `#` banner (thread, links, window, state), then `## What has been done`, `## What is in progress` with `Outstanding - no action requested now`, `## Outstanding queries` (`### TAG - title`: Summary, Need from you, Recommendation), and one fenced `text` reply block. Complete every time; no output style shortens it.
@@ -29,9 +29,11 @@ Re-read this block and `ki-delegation` (background-run standard) after any compa
 
 Owner history below dates to 2026-10-11 at about 04:12 BST; the related rebuild/tools queue is reconciled on 2026-10-12. The AWS snapshot below was observed at 08:26 UTC that day, not checked live by this handoff.
 
-Mark: 2026-10-09T21:40Z, decisions log at Decision 34
+Mark: 2026-10-14T10:57Z
 
-ki-delegation read at 71d7a0fd
+Thread folder: +/_THREADS/techne/
+
+ki-pmo read at f5da817b; ki-delegation read at 839ad1e1
 
 - **Repositories.** All touched repositories are level with origin.
 - **Host patching fields.** [KI-TOOL-TECHNE-CLI-008](/Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-008-host-patching-fields.md) is accepted as done through ki-accept (Decision 43), kept, not pruned, and pushed. Live verification on a real host waits for the vega rebuild and is not part of acceptance. Live check passed on 2026-10-14: `techne host status --host agent-host --json` against vega reports workspace `reported` with `updates` {os ubuntu, pending 73, security 50, reboot_required false, livepatch disabled}.
