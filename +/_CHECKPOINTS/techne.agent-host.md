@@ -21,7 +21,7 @@ Owner history below dates to 2026-10-11 at about 04:12 BST; the related rebuild/
 
 Mark: 2026-10-09T21:40Z, decisions log at Decision 34
 
-ki-delegation read at fbd11977
+ki-delegation read at 71d7a0fd
 
 - **Repositories.** All touched repositories are level with origin.
 - **Host patching fields.** [KI-TOOL-TECHNE-CLI-008](/Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-008-host-patching-fields.md) is accepted as done through ki-accept (Decision 43), kept, not pruned, and pushed. Live verification on a real host waits for the vega rebuild and is not part of acceptance. Live check passed on 2026-10-14: `techne host status --host agent-host --json` against vega reports workspace `reported` with `updates` {os ubuntu, pending 73, security 50, reboot_required false, livepatch disabled}.
