@@ -4,10 +4,17 @@ thread: knowledge-islands-model.knowledge-acquisition
 label: 'Knowledge Islands Model: knowledge-acquisition'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-14T13:25:00Z
+updated_at: 2026-10-14T20:21:00Z
 ---
 
 # knowledge-islands-model.knowledge-acquisition
+
+**Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
+
+- 2026-10-14 · BINARY-HOME · Kris: run the iPhone reachability check first, driven by one instruction; only if it passes, create the private `knowledgeislands/mcp-acquire-chatgpt` repository and its local synthetic build · detail: [acquire-route report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/knowledge-acquisition/acquire-route.report.md)
+- 2026-10-14 · GRANOLA-SUPPORT · Kris: adopt [KI-TOOL-KI-CLI-128](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-128-granola-retention-safeguards.md) as the tools-ki half and create only the harness record; local delivery; migration separately gated · detail: [acquire-route report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/knowledge-acquisition/acquire-route.report.md)
+- 2026-10-14 · ACQ-FINISH · Kris: this thread owns the Acer ChatGPT finish line (paste it into the Acer chat so it commits the nine photos as resized copies in the existing folder) · detail: [acquire-resize report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/knowledge-acquisition/acquire-resize.report.md)
+- 2026-10-14 · GRANOLA-PLAN, BINARY-PROOF · the held receipts for the two local-route records are now this thread's to close · detail: [acquire-route report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/knowledge-acquisition/acquire-route.report.md)
 
 ## Objective
 
@@ -16,13 +23,16 @@ The provider-neutral acquisition lifecycle is documented in one Pillars note, AI
 ## Current state
 
 - Open records: [KI-HARNESS-OPS-005](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-005-acquire-ai-sessions.md) (Now, in progress), [KI-PRINCIPAL-MOD-006](../../Streams/Roadmap/KI-PRINCIPAL-MOD-006-knowledge-acquisition-lifecycle.md) (Next, ready) and [DOTFILES-UE-035](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-035-install-whatsapp-spool-refresh.md) (Hold, chezmoi).
-- Re-bootstrapped 2026-10-12 while the master thread still lists this thread as queued behind Fnd: baseline-rollout. Run: `knowledge-acquisition`. `chatgpt-bind` (BIND, approved by Kris on 2026-10-14) finished 2026-10-14: all 17 ChatGPT project identifiers bound in KI-HARNESS-OPS-005 and all 334 export conversations staged into `acquire` under `captures/<territory>/chatgpt/account-export-2026-09-22/` (21 in `_review`); the record stays `in-progress`. Running: `route-local-review` (read-only receiving review of KB-ACQUIRE-002 and KB-ACQUIRE-003 from acquire-intake, asked for by Kris on 2026-10-14 under his routing approval); report to `+/_THREADS/knowledge-acquisition/route-local-review.report.md`.
-- KI-HARNESS-OPS-005 was waiting on its 2026-10-04 question: bind the export's 17 `g-p-` project identifiers to project names. The master thread's `chatgpt-sort` agent (Kris's 2026-10-12 ChatGPT, Codex and Claude Desktop project tidy) saved the cloud project list before its renames, at `~/.local/state/ki/agents/state-of-play/backups/chatgpt-sort-20261012T1043/chatgpt-cloud-projects-before.tsv`. Its 17 identifiers match the export's 17 exactly. The 17 projects now follow the territory project naming Kris set on 2026-10-12 (`<Territory> - <Sub-area>`); the `Kit:`, `HNR:` and `<Domain>: General` names are prior names. No chats moved. The listing sits in machine-local run state only.
-- The browser-runtime question (KI-HARNESS-GOV-087) is merged into KI-HARNESS-OPS-005 as its isolated-browser-trial step.
-- KI-PRINCIPAL-MOD-006's Granola evidence paths now point at the private `acquire` repository (`.acquire/granola/ledger.json`, `captures/*/granola/`), which has received every Granola capture since 2026-10-10 (ACQ-PATHS, 2026-10-14).
-- ki-delegation read at 839ad1e1; ki-pmo read at 839ad1e1.
-- Decisions log and agent reports: [+/_THREADS/knowledge-acquisition/](../_THREADS/knowledge-acquisition/).
-- Mark: 2026-10-14T10:58:00Z.
+- Run `knowledge-acquisition`: nothing running or queued. Finished on 2026-10-14: `chatgpt-bind` (17 project identifiers bound, 334 conversations staged in `acquire`), `route-local-review` (receiving review of KB-ACQUIRE-002 and KB-ACQUIRE-003), `tower-move` (The Tower Game's 15 packages moved to `personal`, KI-HARNESS-OPS-005 binding updated, both pushed) and `spirit-review` (read-only: 14 of 18 fit `sacred-inquiry`, 1 `personal`, 3 unclear).
+- KI-PRINCIPAL-MOD-006's Granola evidence paths point at the private `acquire` repository (ACQ-PATHS, 2026-10-14). The browser-runtime question (KI-HARNESS-GOV-087) is merged into KI-HARNESS-OPS-005.
+- ki-principal commits are blocked: the pre-commit gate audits the whole tree and fails on another Project's note until the scoped gate (`ki repo audit --staged`) lands from ways-of-working's gate-release run. Uncommitted here: this checkpoint, `decisions.md` and three reports (`route-local-review`, `tower-move`, `spirit-review`). Commit them through a private index by explicit path at the first mark after the gate switches; never `--no-verify`.
+- Thread folder tidy at this mark: no deletions; every report still carries an open query.
+- `acquire` primary checkout is 21 commits ahead of origin with acquire-intake's own unpushed work; not this thread's.
+- Token budget (Kris, 2026-10-14): Fable limit hit; until the reset, prefer mechanical work on lower models (Sonnet or Haiku) and defer drafting-heavy work.
+- Messages: inbox read to entry 1 at 2026-10-14T20:21:00Z.
+- ki-pmo read at daa63224.
+- Thread folder: +/_THREADS/knowledge-acquisition/ ([thread folder](../_THREADS/knowledge-acquisition/)).
+- Mark: 2026-10-14T20:21:00Z.
 
 ## Decisions made
 
@@ -30,6 +40,8 @@ The provider-neutral acquisition lifecycle is documented in one Pillars note, AI
 - The master thread `state-of-play` owns cross-project priorities, releases and decisions; this thread works only this Project's records.
 - The lifecycle note changes `Pillars/`, so KI-PRINCIPAL-MOD-006 runs through the Enactment Process.
 - 2026-10-14 (ACQ-PATHS, from the master thread): repoint KI-PRINCIPAL-MOD-006's Granola paths at the `acquire` repository. Done; reading `acquire` is read-only evidence.
+- 2026-10-14: TOWER, move to `personal` (done by `tower-move`); SPIRIT, look more closely first (`spirit-review` done).
+- 2026-10-14 (Kris): commit everything this thread does or oversees by explicit path and check finished agents' work is committed and pushed at each report; tidy the thread folder at every mark; 5-minute heartbeat while work runs; ki-principal commits wait for the scoped gate.
 
 ## Files touched
 
@@ -38,14 +50,18 @@ The provider-neutral acquisition lifecycle is documented in one Pillars note, AI
 
 ## Open questions
 
-- GRANOLA-PLAN (held, receiver-owned): acquire's KB-ACQUIRE-002 Granola tools-ki/Harness support; this Project returns owners, build/test paths and gates. Migration stays separately gated. Open until Kris closes it.
-- BINARY-PROOF (held, receiver-owned): acquire's KB-ACQUIRE-003 ChatGPT binary bridge; the master thread settles MCP home, hosting and ownership, this Project returns the first-probe scope. Open until Kris closes it.
-- TOWER (decided 2026-10-14: move to `personal`): `tower-move` background agent moving the 15 packages and updating KI-HARNESS-OPS-005's binding.
-- SPIRIT (open): Kris wants a closer look first (2026-10-14); `spirit-review` background agent reading the 18 conversations read-only to recommend `personal`, `sacred-inquiry` or a split.
-- ORPHANS (open): 77 export files (about 106 MB) belong to no conversation and are listed only; stage to `_review` or leave listed.
+- GRANOLA-PLAN (held until Kris closes it): accept route-local-review's tools-ki/Harness support scope for KB-ACQUIRE-002 with `state_root = "+/_ACQUIRE"` and the safe-reset fix as preconditions; migration gated.
+- GRANOLA-CARRIER (open): one tools-ki defect record for `state_root` and safe reset, Harness edits under it; KI-HARNESS-OPS-005 not widened.
+- BINARY-PROOF (held until Kris closes it): accept the first-probe scope for KB-ACQUIRE-003 under KI-HARNESS-OPS-005, after a zero-build iPhone check.
+- BINARY-HOME and BINARY-HOLD: the state-of-play thread's; paste block given to Kris 2026-10-14, delivery unconfirmed.
+- SPIRIT (open): spirit-review recommends rebinding all 18 Personal - Spirituality conversations to `sacred-inquiry` as one project.
+- TOWER-RECORDS (open): moved packages' own front matter still says `_review`; recommend the receiver checkpoint stays the routing authority.
+- ORPHANS (open): 77 export files (about 106 MB) listed only; recommend leaving them so.
+- START-MOD-006 (open): launch KI-PRINCIPAL-MOD-006 through `ki-implement`, committing after the scoped gate lands.
+- DIAGRAMS (open, ways-of-working's): untracked `+/diagrams/change-management-skills/` in ki-principal.
 - Whether the lifecycle note leads the remaining work depends on what KI-HARNESS-OPS-005 has learnt.
-- 2026-10-11 (from island-model-and-tending, parked): ChatGPT territory keys move to kebab-case territory names (knowledge-islands, humans-not-robots, equal-remedy, valle-armonia, techmedix, legal, personal); island-model-and-tending renames the kit-principal capture folders. Use the new keys when reconciling ChatGPT captures.
+- Parked 2026-10-11: ChatGPT territory keys move to kebab-case territory names; island-model-and-tending renames the kit-principal capture folders.
 
 ## Next step
 
-Settle TOWER, SPIRIT and ORPHANS with Kris and delegate the moves; then start KI-PRINCIPAL-MOD-006 through `ki-implement`.
+Settle the open queries with Kris and delegate what he authorises; commit the ki-principal changes once the scoped gate lands.

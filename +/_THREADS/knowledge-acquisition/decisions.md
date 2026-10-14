@@ -23,3 +23,11 @@
 ## Decision 6 (2026-10-14T13:42:34Z)
 
 - SPIRIT (2026-10-14): 'I think we need to look at them more closely' - review Personal - Spirituality's 18 conversations before deciding where they sit; no move yet.
+
+## Decision 7 (2026-10-14T20:20:29Z)
+
+- 2026-10-14 Kris: commit everything this thread does or oversees, by explicit path, checking at each report and resting point that finished agents' work is committed and pushed and naming anything that is not; at this mark and every later mark delete answered reports whose outcome has a durable home from +/_THREADS/knowledge-acquisition/; while work runs, a heartbeat at least every 5 minutes; ki-principal commits wait for the scoped gate (ki repo audit --staged), never --no-verify.
+
+## Decision 8 (2026-10-14T20:29:01Z)
+
+- 2026-10-14 Kris: "we are getting close to our token limits and we have already hit the limit on fable. try to prioritise work that is more mechanical and on a lower model level to optimise what we have left until a reset."
