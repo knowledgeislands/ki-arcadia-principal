@@ -79,10 +79,10 @@ This handoff unit changes only this checkpoint and the estate-factorisation chec
 
 For Kris:
 
-- **SOURCES (Decisions 53-55, 2026-10-14):** vega stays Knowledge Islands-only; cross-host sync deferred until a territory and host are named. Stopgap (empty read-only binding on vega plus runbook note) and the tools-ki missing-store defect capture are running as background agents `src-stopgap` and `src-repair`. [Research report](/Users/krisbrown/.local/state/ki/agents/techne/sources-research.report.md).
+- **SOURCES (Decisions 53-55, 2026-10-14):** done. vega's ki-principal `sources` role is bound to an empty read-only stand-in, `ki repo --estate repair` passes (20 healthy), and `converge.sh` binds the stand-in on rebuild; runbook section "Sources stand-in" (harness `c77c7d9`, pushed). The lasting fix is captured as [KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md) (triage, pushed). vega stays Knowledge Islands-only; cross-host sync deferred until a territory and host are named.
 - **RIG-LINK:** `~/.local/bin/rig` links to the retired `~/workspaces/kit/knowledgeislands/tools-rig` path and is broken; it belongs to the Rig thread. (`~/.local/bin/techne` was relinked with `install.sh --link` on 2026-10-14.)
-- **TS-OAUTH:** [KI-TECHNE-OPS-027](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/roadmap/KI-TECHNE-OPS-027-agent-host-tailscale-key-minting.md) adopted at horizon now (Decision 56); local implementation (`ts-oauth-impl`) launches after `src-stopgap`, which edits the same runbook. Kris creates the OAuth client; no remote change until then.
-- **DEV-MODE:** Kris chose (a) (Decision 57): Rig owns `rig dev local|release <tool>`. Handed to the Rig thread via state-of-play on 2026-10-14; outstanding until Kris says it is done.
+- **TS-OAUTH:** [KI-TECHNE-OPS-027](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/roadmap/KI-TECHNE-OPS-027-agent-host-tailscale-key-minting.md) adopted at horizon now (Decision 56); local implementation running as `ts-oauth-impl`. Kris creates the OAuth client; no remote change until then.
+- **DEV-MODE:** Kris chose (a) (Decision 57): Rig owns `rig dev local|release <tool>`. Handed to state-of-play on 2026-10-14, which holds it with RIG-LINK for Kris's decision under the burn-down rule.
 
 Owned-host exemption for the Mac Studio is handled by KI-ARCADIA-GOV-033 in the `mac-studio-bootstrap` thread.
 
@@ -90,4 +90,4 @@ Owned-host exemption for the Mac Studio is handled by KI-ARCADIA-GOV-033 in the 
 
 ## Next step
 
-Collect `src-stopgap` and `src-repair`, then launch `ts-oauth-impl` (prompt drafted at `~/.local/state/ki/agents/techne/ts-oauth-impl.draft.md`). vega is rebuilt and reachable as `vega`; the rebuild procedure is in the [operator runbook](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/guides/operator/agent-host.md).
+Collect `ts-oauth-impl`, push its commits, and report the one-time Tailscale and 1Password setup to Kris. vega is rebuilt and reachable as `vega`; the rebuild procedure is in the [operator runbook](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/guides/operator/agent-host.md).
