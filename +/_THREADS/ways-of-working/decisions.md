@@ -255,3 +255,7 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 57 (2026-10-14)
 
 - Kris, 2026-10-14 ~10:30 BST: approved KI-HARNESS-GOV-180, KI-TOOL-KI-CLI-124 and KI-PRINCIPAL-ECO-014 to ready and delivery. Release: bump the markdown linter as a dependency chore, then release tools-ki 0.10.2. Interim tracked copies of the state-of-play and ways-of-working logs under +/_THREADS now. This island's agent sweeps the seven Techne records. ECO-013 pilot delivery granted. Rebuild this island's change-management diagram with a mark sidecar. Sizing: all recommended answers, except snapshot dimensions pending his question about what horizon counts are for. Thread is the owner-facing term; three thread types (normal/conversational or ad hoc, coordination, state-of-play) to be formally defined; decisions becoming durable knowledge and the fate of project design folders to be designed.
+
+## Decision 58 (2026-10-14)
+
+- Kris, 2026-10-14 ~10:45 BST: snapshot records both counts and size-weighted counts keyed by the status and horizon pair, so readers can look at status, horizon or both. Coordination banner uses REST/BUSY block letters; a conversational thread ends DONE; a coordination thread shows DONE only when its project closes and is tidied up.
