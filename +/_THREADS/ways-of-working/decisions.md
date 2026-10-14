@@ -315,3 +315,7 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 72 (2026-10-14T14:05:09Z)
 
 - PUSH-187 - fine as it stands; no further action
+
+## Decision 73 (2026-10-14T16:28:07Z)
+
+- REPLY-STACK - Kris: "Can we see the way that the default copy block is? So it's easier to use it. There's often quite a lot of detail now on per line." Reply block becomes stacked: tag line, blank line, recommended instruction, --- between queries.
