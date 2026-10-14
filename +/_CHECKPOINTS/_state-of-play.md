@@ -21,6 +21,7 @@ updated_at: 2026-10-14T09:05:00Z
 - Push beneath (Decision 165): an agent may push other threads' committed work along with its own when the repository's checks pass, naming those commits.
 - Restore path (Decision 169): any change to a connection-critical service (Headroom proxy, SSH, Tailscale, network, auth) carries a tested restore path in its rollout plan: reconnect first, then evaluate the failure. Never hand Kris a raw command for such a change.
 - Follow-up releases stop and ask first (Decision 163).
+- In reports to Kris, describe each decision in words; never cite it by number alone. Numbers live only in the machine-local log until [KI-HARNESS-GOV-180](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-180-tracked-thread-decisions-home.md) moves it into a tracked home.
 - Thread-working model (Decision 174): KI Model: ways-of-working owns how threads work (skills, hooks, banner, re-bootstrap, messaging between threads). Hand it over; do not do it here.
 - Reaching threads: `SendMessage` reaches live Claude sessions on this Mac (ways-of-working is `ki-principal-f1`), but Zed does not render that traffic, so Kris cannot see it. `ki agent decide <thread>` only appends to the thread's log. Codex threads need Kris to paste. Never treat a backend reply as visible progress.
 
