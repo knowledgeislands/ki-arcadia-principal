@@ -4,7 +4,7 @@ thread: knowledge-islands-model.knowledge-acquisition
 label: 'Knowledge Islands Model: knowledge-acquisition'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-14T09:00:00Z
+updated_at: 2026-10-14T09:15:00Z
 ---
 
 # knowledge-islands-model.knowledge-acquisition
@@ -20,8 +20,8 @@ The provider-neutral acquisition lifecycle is documented in one Pillars note, AI
 - KI-HARNESS-OPS-005 was waiting on its 2026-10-04 question: bind the export's 17 `g-p-` project identifiers to project names. The master thread's `chatgpt-sort` agent (Decision 137) saved the cloud project list before its renames, at `~/.local/state/ki/agents/state-of-play/backups/chatgpt-sort-20261012T1043/chatgpt-cloud-projects-before.tsv`. Its 17 identifiers match the export's 17 exactly. The 17 projects now follow Decision 135 naming (`<Territory> - <Sub-area>`); the `Kit:`, `HNR:` and `<Domain>: General` names are prior names. No chats moved. The listing sits in machine-local run state only.
 - The browser-runtime question (KI-HARNESS-GOV-087) is merged into KI-HARNESS-OPS-005 as its isolated-browser-trial step.
 - KI-PRINCIPAL-MOD-006's Granola evidence paths now point at the private `acquire` repository (`.acquire/granola/ledger.json`, `captures/*/granola/`), which has received every Granola capture since 2026-10-10 (ACQ-PATHS, 2026-10-14).
-- ki-delegation read at 71d7a0fd.
-- Mark: 2026-10-14T07:05:00Z, decisions log at Decision 3.
+- ki-delegation read at d4e2d8e8.
+- Mark: 2026-10-14T09:15:00Z, decisions log at Decision 3.
 
 ## Decisions made
 
