@@ -305,3 +305,7 @@
 ## Decision 75 (2026-10-14T23:06:29Z)
 
 - 2026-10-15, Kris: 'I did the steps in apply and b-start' - APPLY and B-START done on the laptop; rig doctor after mise install: healthy, findings=0, present=165, catalogue-only=21, incompatible-platform=0. No tool is missing, so the follow-up rig doctor check agent is not needed. Kris was unsure whether PROJECT-REG was handed to state-of-play; the thread re-issued the paste block.
+
+## Decision 76 (2026-10-14T23:11:36Z)
+
+- 2026-10-15, Kris: BURN-ORDER - 'Now, a Sonnet agent at low effort reads the 13 open KB-DOTFILES-UE records in the chezmoi source, read-only. It reports which are done in practice and ready for my acceptance (starting with KB-DOTFILES-UE-086 and KB-DOTFILES-UE-077), which of the five triage records (KB-DOTFILES-UE-087 to KB-DOTFILES-UE-091) to adopt or close, and a burn-down order. Nothing changes until I answer.'
