@@ -1,0 +1,12 @@
+# Historical Dock plan resume report
+
+## Done
+
+- Released [KI-TOOL-RIG-CORE-042](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-042-profile-filtered-dock-items.md) under Decision 15 to Deliver / draft Next, removed Hold, appended the exact approval quote, preserved identity/created_at/classification/dependencies, advanced updated_at and retained baseline_ref null.
+- Published canonical source-grounded plan: optional tool links use final inherited/profile/platform selection; preserve declared relative order; unlinked items stay included; no item-owned profiles, installed-state filtering or implicit prerequisites. Existing explicit prerequisites and tool-before-resource order remain; initially missing selected apps stay visible failures because preflight precedes tool execution. Planned injected fixtures cover show/status/doctor/dry-run/apply parity, exact membership/order, unknown links, exclusion reasons, missing paths and empty layouts.
+- Committed and pushed `2ac8cf7bca8db3a9fdf110a1d2090ef33703bd5f` fast-forward to `origin/main` in tools-rig's primary checkout on this machine; verified own-only parent, exact changed path, co-author trailer and clean checkout. No hook bypass; exact managed config restored/verified. No other record/checkpoint, feature source or test changed; no acceptance, prune, release or live operation.
+- Checks: record/authoring audits and rumdl passed; full repository audit had zero failures and one pre-existing HOOK-1 missing committed commit-gate warning. ShellCheck, Bash syntax, assembly drift, mandoc, diff and exact lifecycle/link predicates passed; two-second fixture benchmark passed; all 517 existing isolated Bats tests passed. Native-provider smoke deliberately withheld under the no-live-provider grant. These regressions/audits do not prove the unimplemented feature. The temporary Next body-shape failure was resolved by completing the required plan sections.
+
+## Needs the owner
+
+- **RIG-DOCK** — Review and approve [the canonical draft plan](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-042-profile-filtered-dock-items.md): recommend tool-linked membership with filter/order-only semantics and no automatic prerequisites. Approval is required before Ready/local implementation; no personal Dock/configuration or live-machine authority is included. Nothing remains running.

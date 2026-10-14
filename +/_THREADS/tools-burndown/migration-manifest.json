@@ -1,0 +1,195 @@
+{
+  "observed_at": "2026-10-14T11:02:57Z",
+  "scope": "Runtime source hashes preserve provenance. Copies received Markdown whitespace/heading normalisation only; old claims, links and report forms remain historical evidence, not renewed approval. Runtime originals retained.",
+  "files": [
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/adoption-review.report.md",
+      "target": "+/_THREADS/tools-burndown/adoption-review.report.md",
+      "sha256": "7c89ed9ab93c95b3da26312271deacaf28e898c5f51e2d35762c80b061717202",
+      "tracked_copy_sha256": "7c89ed9ab93c95b3da26312271deacaf28e898c5f51e2d35762c80b061717202",
+      "presentation_normalised": false
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/closeout-prep.report.md",
+      "target": "+/_THREADS/tools-burndown/closeout-prep.report.md",
+      "sha256": "60af8a84470456b8acf13649ced2ef2338f63774ccfac95494bfa5a4794e1e56",
+      "tracked_copy_sha256": "60af8a84470456b8acf13649ced2ef2338f63774ccfac95494bfa5a4794e1e56",
+      "presentation_normalised": false
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/delivery-review.report.md",
+      "target": "+/_THREADS/tools-burndown/delivery-review.report.md",
+      "sha256": "683a83a235a5f8dd739a75bc25e78cd34ad1fbcc1870828604330cd4c68a40db",
+      "tracked_copy_sha256": "501cb0997010c335616489887b81ebc21370425d979d6d4982f5d8173f2a3a1b",
+      "presentation_normalised": true
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/dock-plan-resume.report.md",
+      "target": "+/_THREADS/tools-burndown/dock-plan-resume.report.md",
+      "sha256": "19b23ab2ebd6cfc1f4d65b8129f0e606743152310fb2d91a554bc25386bcda9e",
+      "tracked_copy_sha256": "78bbea63e9a6f5ed6a54bf24454c4efc4146bf31251dbbd10c61c5b52a583bb0",
+      "presentation_normalised": true
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/guard-plan-resume.report.md",
+      "target": "+/_THREADS/tools-burndown/guard-plan-resume.report.md",
+      "sha256": "53196d128f118c178a573c62798b47df1a3174a205b3838fe5aad4cbebaab408",
+      "tracked_copy_sha256": "53196d128f118c178a573c62798b47df1a3174a205b3838fe5aad4cbebaab408",
+      "presentation_normalised": false
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/host-prep.report.md",
+      "target": "+/_THREADS/tools-burndown/host-prep.report.md",
+      "sha256": "9e7ca4b2b5642e81ffb6f2e24b8f4d663dcb230a212ed2f527ab8e53e7d388d6",
+      "tracked_copy_sha256": "9e7ca4b2b5642e81ffb6f2e24b8f4d663dcb230a212ed2f527ab8e53e7d388d6",
+      "presentation_normalised": false
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/inventory.report.md",
+      "target": "+/_THREADS/tools-burndown/inventory.report.md",
+      "sha256": "b02bf8d55dc181fb2772fa9c0ab7e8648d07b3a8beb2a331a60353dd2a882164",
+      "tracked_copy_sha256": "b02bf8d55dc181fb2772fa9c0ab7e8648d07b3a8beb2a331a60353dd2a882164",
+      "presentation_normalised": false
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/ki-store-alias-plan.report.md",
+      "target": "+/_THREADS/tools-burndown/ki-store-alias-plan.report.md",
+      "sha256": "e1ad1e72e428eaa9a5dbf6d15c75d13cf7f1427a261115e64a88c2981c362039",
+      "tracked_copy_sha256": "e1ad1e72e428eaa9a5dbf6d15c75d13cf7f1427a261115e64a88c2981c362039",
+      "presentation_normalised": false
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/obs-correct.report.md",
+      "target": "+/_THREADS/tools-burndown/obs-correct.report.md",
+      "sha256": "9f211c2ed7406736d50a82097fc0fb170520334ab43eae041127e0f7a964d518",
+      "tracked_copy_sha256": "9f211c2ed7406736d50a82097fc0fb170520334ab43eae041127e0f7a964d518",
+      "presentation_normalised": false
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/obs-deliver.report.md",
+      "target": "+/_THREADS/tools-burndown/obs-deliver.report.md",
+      "sha256": "9ffb88e4359d53e2a3ea2f8dceeb7215c294b48c5dedfc352b4b96fcf3f4f882",
+      "tracked_copy_sha256": "9ffb88e4359d53e2a3ea2f8dceeb7215c294b48c5dedfc352b4b96fcf3f4f882",
+      "presentation_normalised": false
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/obs-evidence.report.md",
+      "target": "+/_THREADS/tools-burndown/obs-evidence.report.md",
+      "sha256": "15defd5cf700be16352a15522f05584a9a9304598339921e5f7c76b812cce218",
+      "tracked_copy_sha256": "15defd5cf700be16352a15522f05584a9a9304598339921e5f7c76b812cce218",
+      "presentation_normalised": false
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/obs-plan-clarify.report.md",
+      "target": "+/_THREADS/tools-burndown/obs-plan-clarify.report.md",
+      "sha256": "f2e7408bbfe94b834000d3978e5e57017a6b32df64361953a60ace6bcdad8379",
+      "tracked_copy_sha256": "f2e7408bbfe94b834000d3978e5e57017a6b32df64361953a60ace6bcdad8379",
+      "presentation_normalised": false
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/obs-plan.report.md",
+      "target": "+/_THREADS/tools-burndown/obs-plan.report.md",
+      "sha256": "453cbecec05266d140dbc31fa759d265570d9adb0dff2a7e2da21e680e6e2dca",
+      "tracked_copy_sha256": "453cbecec05266d140dbc31fa759d265570d9adb0dff2a7e2da21e680e6e2dca",
+      "presentation_normalised": false
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/obs-readiness.report.md",
+      "target": "+/_THREADS/tools-burndown/obs-readiness.report.md",
+      "sha256": "d6ce9df2e7ddbb30f9a3dc763d8330573e77ad422a4df3e3ab84c00534ca2291",
+      "tracked_copy_sha256": "d6ce9df2e7ddbb30f9a3dc763d8330573e77ad422a4df3e3ab84c00534ca2291",
+      "presentation_normalised": false
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/owner-handoff.report.md",
+      "target": "+/_THREADS/tools-burndown/owner-handoff.report.md",
+      "sha256": "e00a097a2bcfc4f2b90d3be2791efc0ad316d88e5cfdd8083babdde1273afb6b",
+      "tracked_copy_sha256": "e00a097a2bcfc4f2b90d3be2791efc0ad316d88e5cfdd8083babdde1273afb6b",
+      "presentation_normalised": false
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/patching-plan.report.md",
+      "target": "+/_THREADS/tools-burndown/patching-plan.report.md",
+      "sha256": "cd9bf0b53d7d8d961195e210a30609095f070efcaffab7c7a7cdf5c4d52d5fa2",
+      "tracked_copy_sha256": "963c4d5fd89f2380daeb2d4eb4bd5207401136eebf3a6d85b9b60f6a54e8fc8e",
+      "presentation_normalised": true
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/plan-review.report.md",
+      "target": "+/_THREADS/tools-burndown/plan-review.report.md",
+      "sha256": "24e2b1914d2cc61fbdb81513784ca9ad982f3debf92eccf06b0a7cdd3b4f0b8e",
+      "tracked_copy_sha256": "24e2b1914d2cc61fbdb81513784ca9ad982f3debf92eccf06b0a7cdd3b4f0b8e",
+      "presentation_normalised": false
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/prune-preflight.report.md",
+      "target": "+/_THREADS/tools-burndown/prune-preflight.report.md",
+      "sha256": "c36da80f25b0ca64b2f40d416a1617385c569873e416239eee4ef8fe99211b24",
+      "tracked_copy_sha256": "a233d36dbf59c55acb394f0859ca9125b1143abae65d1d4460a7c8f4782881e8",
+      "presentation_normalised": true
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/rebootstrap-oct14.report.md",
+      "target": "+/_THREADS/tools-burndown/rebootstrap-oct14.report.md",
+      "sha256": "174bbbddbc44d6c7aa29915d865abb38d52a78f1fee1aa6c8f4c41438783b758",
+      "tracked_copy_sha256": "174bbbddbc44d6c7aa29915d865abb38d52a78f1fee1aa6c8f4c41438783b758",
+      "presentation_normalised": false
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/rebootstrap-rules-correct.report.md",
+      "target": "+/_THREADS/tools-burndown/rebootstrap-rules-correct.report.md",
+      "sha256": "c5b71f9e38dad4980f2c4da5ff2df91b685b3e8fd3225867162feb403a399960",
+      "tracked_copy_sha256": "c5b71f9e38dad4980f2c4da5ff2df91b685b3e8fd3225867162feb403a399960",
+      "presentation_normalised": false
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/reservation-rollup.report.md",
+      "target": "+/_THREADS/tools-burndown/reservation-rollup.report.md",
+      "sha256": "925dd08c956a63e40f387d11d36d217a79d306f1d9a3d7f159e519363848600b",
+      "tracked_copy_sha256": "925dd08c956a63e40f387d11d36d217a79d306f1d9a3d7f159e519363848600b",
+      "presentation_normalised": false
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/rig-close.report.md",
+      "target": "+/_THREADS/tools-burndown/rig-close.report.md",
+      "sha256": "51a8578101a71975c383e20852e93b5b48fd083f3da74d0223590e520bd60852",
+      "tracked_copy_sha256": "51a8578101a71975c383e20852e93b5b48fd083f3da74d0223590e520bd60852",
+      "presentation_normalised": false
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/rig-correct.report.md",
+      "target": "+/_THREADS/tools-burndown/rig-correct.report.md",
+      "sha256": "fae28719333136f9eefef75816f9a699d3ac032bb030ede25e316f17977a806c",
+      "tracked_copy_sha256": "fae28719333136f9eefef75816f9a699d3ac032bb030ede25e316f17977a806c",
+      "presentation_normalised": false
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/rig-deliver.report.md",
+      "target": "+/_THREADS/tools-burndown/rig-deliver.report.md",
+      "sha256": "721c0ff9c4332cb1313dcceb17708aedbeae28874bb239b53b8e0d0829e7ed27",
+      "tracked_copy_sha256": "721c0ff9c4332cb1313dcceb17708aedbeae28874bb239b53b8e0d0829e7ed27",
+      "presentation_normalised": false
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/triage-brief.report.md",
+      "target": "+/_THREADS/tools-burndown/triage-brief.report.md",
+      "sha256": "6de0ff6580cf437d78a98589f51209903f20c37590c4dee66b0adf93dadcae50",
+      "tracked_copy_sha256": "12a6102e4e79aa356e822b680deec13f88d0d9cae0850de065b22e31b2df91f6",
+      "presentation_normalised": true
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/vega-rebuild-plan.report.md",
+      "target": "+/_THREADS/tools-burndown/vega-rebuild-plan.report.md",
+      "sha256": "6045f0510777211c9a0f8dc54814cd3db45bf45b56f5bec89c4f135989ab0149",
+      "tracked_copy_sha256": "6045f0510777211c9a0f8dc54814cd3db45bf45b56f5bec89c4f135989ab0149",
+      "presentation_normalised": false
+    },
+    {
+      "source": "/Users/krisbrown/.local/state/ki/agents/tools-burndown/decisions.md",
+      "target": "+/_THREADS/tools-burndown/historical-decisions.md",
+      "sha256": "9f00e4f20d9617711d2ab47ae0d1fb104c18d9e665128f1f33633deb9a22e864",
+      "tracked_copy_sha256": "d4d1f3145d556e503804ed56ee5d1fd476f25749ae7816a4e7b6fa26bb2d8317",
+      "presentation_normalised": true
+    }
+  ]
+}

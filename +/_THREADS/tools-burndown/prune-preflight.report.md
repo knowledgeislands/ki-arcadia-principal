@@ -1,0 +1,17 @@
+# Done
+
+- Read-only preflight completed across 16 scoped repositories, all 20 registered Knowledge Islands roots and the known inbound chezmoi owner. No repository edits, acceptance, deletion, commits, pushes or remote retrieval.
+- Fresh census: 0 Done records; three Awaiting-review candidates. No additional scoped Done or Awaiting-review IDs.
+- KI-TOOL-KI-CLI-116, KI-TOOL-KI-CLI-118 and KI-TOOL-KI-CLI-121 are independently clear of newly orphaned links and completion-observation retention in the scanned sources, conditional on committed Done closure. All three remain committed Awaiting review at tools-ki 85a5c766554641c037b01935eff174a47b73aa29.
+- Classified the master’s already-broken pre-rekey link, dated bare IDs/run names and agent-host’s pinned ki 0.10.0 guidance separately. Those owner refreshes are not new deletion-orphan blockers; local fixes do not prove the remote host was upgraded.
+- Root has already removed its own candidate links during this scan. Verified local durable replacements: background-agents.md (116), territory-selection.md/repository-operations.md (118), bootstrap.md BOOT-002/background-agents.md/local-installation.md (121). No unverified hosted immutable link is proposed.
+- All primary tools-ki trades are absent; no peer trade retains these candidates. The nested legacy completion trade adopts CLI-081 and is unrelated. Archived peers remain unscanned: retirement predates the candidates for ki-techne-principal/ki-plugins; Codex housekeeping successor evidence supplies no candidate-specific inbound dependency. No claim of exhaustive archived/remote coverage.
+- Checks: exact candidate identity/status/digests and HEAD blobs verified; all scoped adapters explicitly declare roadmap and ki-trades; reference scan returned no errors. No code tests or acceptance audits run. Commits created: none.
+- [KI-TOOL-KI-CLI-116](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-116-launcher-held-wait-gates.md) - Awaiting review; committed Done is the only identified deletion precondition.
+- [KI-TOOL-KI-CLI-118](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-118-capital-stores-and-territory-aliases.md) - Awaiting review; committed Done is the only identified deletion precondition.
+- [KI-TOOL-KI-CLI-121](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-121-config-writer-and-relaunch.md) - Awaiting review; committed Done is the only identified deletion precondition.
+
+## Needs the owner
+
+- **CLOSE-THEN-PRUNE:** Root records the approved Done closures, verifies its closure gates and rechecks source digests/census before dedicated deletion-only commits. Three exact candidate paths and per-candidate structured JSON, searched roots and SHA-256 evidence are in [prune-preflight.json](/Users/krisbrown/.local/state/ki/agents/tools-burndown/prune-preflight.json).
+- **OWNER-REFRESH:** Master/agent-host may refresh their own dated checkpoint claims and obsolete link; this worker did not touch them. Preserve version-specific host cautions and the managed-config guard.

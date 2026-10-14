@@ -1,0 +1,55 @@
+{
+  "observed_at": "2026-10-14T11:04:45.260502+00:00",
+  "old_mark": "2026-10-12T17:27:26Z",
+  "new_mark": "2026-10-14T11:02:57Z",
+  "scope": "KI/mgit plus named receiver carries, not an estate-wide census",
+  "repositories": {
+    "tools-ki": {
+      "head": "81cdf04ea132b49da0cbeea1d162e44d2858025d",
+      "status": "",
+      "upstream_relation": "0\t0"
+    },
+    "tools-mgit": {
+      "head": "9a30de5fb6ee44b8ceca1d516a9371741ea08a4c",
+      "status": "",
+      "upstream_relation": "0\t0"
+    },
+    "tools-rig": {
+      "head": "c609f9b1a372bb1719f34f53ef76c198fc212688",
+      "status": "",
+      "upstream_relation": "0\t0"
+    },
+    "tools-techne": {
+      "head": "4f179ed38847360d3db8ba8f75cbb2a9c9088ee4",
+      "status": "",
+      "upstream_relation": "0\t0"
+    }
+  },
+  "record_sources": [
+    {
+      "id": "KI-TOOL-KI-CLI-124",
+      "path": "/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-124-agent-run-close.md",
+      "frontmatter": "\nid: KI-TOOL-KI-CLI-124\narea: CLI\ntitle: Agent run close\nproject: ways-of-working\ncomponent: agent\npurpose: capability\nkind: deliver\nstatus: awaiting-review\nhorizon: now\nblocks: []\nblocked_by: []\nbaseline_ref: 91e6e0b5ff3c6bc9e215b936d7c68f1b3a2f427c\ncreated_at: 2026-10-13T21:37:16Z\nupdated_at: 2026-10-14T13:00:00Z\n"
+    },
+    {
+      "id": "KI-TOOL-KI-CLI-123",
+      "path": "/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-123-agent-run-events.md",
+      "frontmatter": "\nid: KI-TOOL-KI-CLI-123\narea: CLI\ntitle: Agent run events\nproject: ways-of-working\ncomponent: agent\nkind: deliver\nhorizon: next\nstatus: draft\nblocks: []\nblocked_by: []\nbaseline_ref: null\ncreated_at: 2026-10-13T13:53:24Z\nupdated_at: 2026-10-13T21:14:24Z\n"
+    },
+    {
+      "id": "KI-TOOL-KI-CLI-125",
+      "path": "/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-125-ki-release-contract.md",
+      "frontmatter": "\nid: KI-TOOL-KI-CLI-125\narea: CLI\ntitle: KI release contract\npurpose: capability\nproject: agent-host\nkind: deliver\nstatus: draft\nhorizon: hold\nhold:\n  reason: waiting-for\n  condition: An ARM host is needed, or vega is rebuilt\n  review: 2026-11-16\nblocks: []\nblocked_by: []\nbaseline_ref: null\ncreated_at: 2026-10-13T22:53:48Z\nupdated_at: 2026-10-14T06:52:07Z\n"
+    },
+    {
+      "id": "KI-TOOL-KI-CLI-126",
+      "path": "/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md",
+      "frontmatter": "\nid: KI-TOOL-KI-CLI-126\narea: CLI\ntitle: Unavailable store breaks repair\npurpose: corrective\nkind: deliver\ncomponent: repo\nstatus: triage\nblocks: []\nblocked_by: []\nbaseline_ref: null\ncreated_at: 2026-10-14T08:58:13Z\nupdated_at: 2026-10-14T08:58:13Z\n"
+    },
+    {
+      "id": "KI-TOOL-KI-CLI-115",
+      "path": "/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-115-enforce-roadmap-writing-checkout.md",
+      "frontmatter": "\nid: KI-TOOL-KI-CLI-115\narea: CLI\ntitle: Enforce roadmap writing checkout\nproject: agent-host\nkind: deliver\nhorizon: hold\nstatus: draft\nhold:\n  reason: parked\n  condition: Kris explicitly releases local planning through Techne agent-host.\nblocks: []\nblocked_by: []\nbaseline_ref: null\ncreated_at: 2026-10-08T07:24:10Z\nupdated_at: 2026-10-12T07:13:21Z\n"
+    }
+  ]
+}

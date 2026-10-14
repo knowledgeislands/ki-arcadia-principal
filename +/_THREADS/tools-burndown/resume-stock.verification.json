@@ -1,0 +1,9 @@
+{
+  "identity_and_six_sections": "pass",
+  "creation_time_preserved": "pass",
+  "new_owner_mark": "pass",
+  "carried_forward_tags": "pass",
+  "checkpoint_audit": "fail: authorised H3 rejected; two foreign heading findings and foreign inactive checkpoint retained",
+  "historical_copies": "source hashes plus normalised-copy hashes; raw originals retained",
+  "no_roadmap_or_code_edit": "verified by touched-path roster"
+}
