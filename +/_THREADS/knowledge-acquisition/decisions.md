@@ -91,3 +91,7 @@
 ## Decision 23 (2026-10-14T23:26:19Z)
 
 - Kris: "mark" - mark struck at 2026-10-14T23:26:00Z; thread folder tidied: handoff-review, heading-fix and heading-trim reports deleted, route-local-review kept for BINARY-HOME and BINARY-HOLD.
+
+## Decision 24 (2026-10-14T23:27:51Z)
+
+- Kris (ACQ-FINISH): "Launch a Haiku agent, read-only, to pull the exact paste line from acquire-resize.report.md and give it to me; delete that report once I confirm it's pasted."
