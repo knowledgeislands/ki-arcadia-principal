@@ -4,7 +4,7 @@ thread: techne.agent-host
 label: 'Techne: agent-host'
 state: active
 created_at: 2026-10-07T09:05:00Z
-updated_at: 2026-10-14T01:45:00Z
+updated_at: 2026-10-14T02:00:00Z
 ---
 
 # techne.agent-host
@@ -24,7 +24,7 @@ Mark: 2026-10-09T21:40Z, decisions log at Decision 34
 ki-delegation read at fbd11977
 
 - **Repositories.** All touched repositories are level with origin.
-- **Host patching fields.** [KI-TOOL-TECHNE-CLI-008](/Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-008-host-patching-fields.md) is accepted as done through ki-accept (Decision 43), kept, not pruned, and pushed. Live verification on a real host waits for the vega rebuild and is not part of acceptance.
+- **Host patching fields.** [KI-TOOL-TECHNE-CLI-008](/Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-008-host-patching-fields.md) is accepted as done through ki-accept (Decision 43), kept, not pruned, and pushed. Live verification on a real host waits for the vega rebuild and is not part of acceptance. Live check passed on 2026-10-14: `techne host status --host agent-host --json` against vega reports workspace `reported` with `updates` {os ubuntu, pending 73, security 50, reboot_required false, livepatch disabled}.
 - **Delivered and closed.** OS patching (TECHNE-TOOLS-OPS-022) and the chezmoi workstation bundle (DOTFILES-UE-073) are accepted and pruned. The workstation pilot (TECHNE-TOOLS-OPS-015) is accepted and kept, not pruned. Recipe/binding identity is `agent-host`; the old deployed names still need the owner-led vega rebuild below.
 - **The host.** vega was rebuilt on 2026-10-14 under Decision 45 (Kris present and directing each step). The old stack was deleted with `--discard-unreadable-host` after checks showed the old instance terminated on 2026-10-12 by the operator role with no surviving volumes or snapshots. The new stack `ki-techne-agent-host` runs instance `i-0cb5fa8cc1cd1d7d0` (t3.medium, 40 GB encrypted gp3, zsh, no inbound rules, OpenSSH and SSM agent inactive); OS and tailnet name `vega`; `techne` without sudo. The spent Tailscale key is deleted; the GitHub token is kept (expires 2027-01-05). `status.sh` reports 20 repositories clean, 50 security updates pending and no reboot required. The controller stack is untouched. The pre-rebuild change-set check could not apply: no running host, and the deployed template matched no tracked commit.
 - **Pins.** `recipes/agent-host/rig.toml` in the harness is the one list of host tool versions; `mise` and `codex` are raised to 2026.10.6 and 0.162.0. The Mac is no longer compared against it; TECHNE-TOOLS-OPS-024 (weekly pin bump) is planned, draft.
@@ -69,7 +69,6 @@ This handoff unit changes only this checkpoint and the estate-factorisation chec
 For Kris:
 
 - **SOURCES:** ki-principal's declared OneDrive sources store has no binding on vega (ki 0.10.0), so `ki repo --estate repair` fails for that repository and setup reports one failure.
-- **CHEZMOI:** edits are committed in the chezmoi source (binding `host_name`/`tailscale_name = "vega"`, `Host vega` with `~/.ssh/known_hosts_vega`, Zed host `vega`), not pushed and not applied; Kris reviews `chezmoi diff` and applies. The vega host key moved from the managed `~/.ssh/known_hosts` to `~/.ssh/known_hosts_vega`, so SSH to `vega` fails host-key checks until the new SSH entry is applied. After apply, run `techne host status --host agent-host --json` for the CLI-008 live check: with the new binding it already finds instance `i-0cb5fa8cc1cd1d7d0` running.
 - **RIG-LINK:** `~/.local/bin/rig` links to the retired `~/workspaces/kit/knowledgeislands/tools-rig` path and is broken; it belongs to the Rig thread. (`~/.local/bin/techne` was relinked with `install.sh --link` on 2026-10-14.)
 - **TS-OAUTH:** whether to capture a Tailscale OAuth client so future rebuilds mint their own key.
 
@@ -79,4 +78,4 @@ Owned-host exemption for the Mac Studio is handled by KI-ARCADIA-GOV-033 in the 
 
 ## Next step
 
-Resolve CHEZMOI, then run `techne host status --host agent-host --json` to verify the KI-TOOL-TECHNE-CLI-008 updates projection live on vega. Kris signs in Claude Code and Codex on vega. Settle SOURCES and SHIM. The rebuild procedure is in the [operator runbook](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/guides/operator/agent-host.md).
+vega is rebuilt, signed in and reachable as `vega` from the Mac (chezmoi binding, SSH and Zed entries applied 2026-10-14; the chezmoi commit is local, unpushed, above two commits from another session). Settle SOURCES and TS-OAUTH. The rebuild procedure is in the [operator runbook](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/guides/operator/agent-host.md).
