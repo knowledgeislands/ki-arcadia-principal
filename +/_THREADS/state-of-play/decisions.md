@@ -745,3 +745,7 @@
 ## Decision 184 (2026-10-14)
 
 - Paperclip (Kris, 14 Oct): PAPERCLIP-PROJECT approve; PAPERCLIP-SHUTDOWN approve with the rehearsal; PAPERCLIP-AGENTS-DRIFT drop from profile and record the lesson; CAPTURE-STORE: 'Can we lose most of this, I don't want the history or a database backup, I want to recreate it with the same approach but fresh'. So: capture the approach only (lessons, structure, agent instructions and configuration minus secrets), no issues, history, database backup or cold copy; the rehearsal becomes a stop/start flip of the declaration; nothing deleted until Kris confirms.
+
+## Decision 185 (2026-10-14)
+
+- MENUBAR (Kris, 14 Oct): 'Rig should also cover the configuration of the menu bar as well and anything else we can do on the Mac, which should be done consistently ... on my laptop, I've got Codex bar up there, Fluid Voice and things that aren't [in] certain orders, whereas they're not the same on the studio.' Investigate read-only on terra and sol, propose the Rig design, and capture it as one unadopted triage record in tools-rig (Kris asked, so the no-new-records rule yields).
