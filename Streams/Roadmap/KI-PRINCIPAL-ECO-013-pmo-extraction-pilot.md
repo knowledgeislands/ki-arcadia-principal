@@ -7,14 +7,14 @@ kind: deliver
 purpose: governance
 project: ways-of-working
 horizon: next
-status: draft
+status: ready
 tags:
   - topic/knowledge-islands
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-13T13:42:43Z
-updated_at: 2026-10-14T00:40:00Z
+updated_at: 2026-10-14T01:01:06Z
 ---
 
 # PMO Extraction Pilot
@@ -43,7 +43,7 @@ This record belongs to Knowledge Islands Principal because the pilot is the desi
 
 ## Scope
 
-1. Create `ki-pmo` in the harness's `change-management` area, declaration-only, and move the thread material of the `ki-delegation` background-run standard into it without changing its meaning: the coordinator responsiveness rules, the coordinating-thread reporting practices and the full summary, project threads, the territory master thread, opening a thread, bootstrap, directions from the master and the thread working rules. Worker reporting and the run mechanics stay with `ki-delegation`; the owner report and its Needs tags stay with their canonical owner and `ki-pmo` adopts them by reference. The pilot declares `ki-pmo` in this island and in the harness; the other Capitals declare it under `CAPITALS` below.
+1. Create `ki-pmo` in the harness's `change-management` area, declaration-only, and move the thread material of the `ki-delegation` background-run standard into it without changing its meaning: the coordinator responsiveness rules, the coordinating-thread reporting practices and the full summary, project threads, the territory master thread, opening a thread, bootstrap, directions from the master and the thread working rules. Worker reporting and the run mechanics stay with `ki-delegation`; the owner report and its Needs tags stay with their canonical owner and `ki-pmo` adopts them by reference. The pilot declares `ki-pmo` in this island and in the harness only; the other six Capitals follow in Wave F, as Kris settled on 2026-10-14: "CAPITALS - (a).", the first option offered, this island and the harness only.
 2. Add reciprocal off-ramps in `ki-delegation`, `ki-checkpoint`, `ki-tokenomics` and `ki-recap`. The `ki-recap` off-ramp is the form Kris chose for `RECAP-AWARE`, quoted as received: "RECAP-AWARE - (c) ki-recap detects a coordinating thread and hands to ki-pmo's forms." In a coordinating thread `ki-recap` hands to `ki-pmo`'s forms, and elsewhere it recaps as it does today. Then re-point `ki-checkpoint`'s cross-references and the refresh rule to `ki-pmo`; refine `ADR-KI-HARNESS-SKILLS-005` and `ADR-KI-HARNESS-SKILLS-006` in place and widen the `change-management` area description; write the five-word glossary and the thin rubric.
 3. Layer 1: the opener's role line carries the three rules of the responsive coordinator in Kris's words, and the thread re-bootstraps on request, after a compaction and after a model switch.
 4. Layer 2: the coordinator reminder hook on both runtimes, built and registered as the pilot's first task under "COORD-HOOK - When to build the reminder hook: (a) both runtimes before the pilot opens, as the pilot's first task." The pilot makes `ki-pmo` the owner of its line and moves its signal to the `ki-pmo` declaration, as Kris settled: "HOOK-OWNER - (a). A repository that doesn't delegate then never gets the hook, and removing ki-pmo disables it."
@@ -59,6 +59,7 @@ This record belongs to Knowledge Islands Principal because the pilot is the desi
 
 ## Current state
 
+- Kris approved this plan on 2026-10-14, "PLAN-APPROVE - approve.", and the record is Ready. Delivery has not been granted and has not started; the harness and chezmoi rounds wait for Kris's go.
 - The thread material still sits in the `ki-delegation` background-run standard: Coordinator responsiveness at lines 41 to 57 and the Reporting, Project threads and Thread working rules sections at lines 148 to 370 of `skills/governance/ki-delegation/references/standards-background-runs.md` at harness revision `71d7a0fd`. The standard's owner report and Needs tags are the canonical form Kris set on 2026-10-13 and stay there. `ki-pmo` does not exist; no repository declares it; `ki-checkpoint`'s standard cites the `ki-delegation` opener, parking rule and refresh rule by anchor; `ki-recap` and `ki-tokenomics` do not mention coordinating threads.
 - The coordinator reminder hook is built, tested, registered on both runtimes through the chezmoi source and trialled live; `claude -p` runs hooks, which closes the first open question below. Its line already carries the cadence clause of "HOOK-LINE - (b)." and its detection signal is `+/_CHECKPOINTS/` at the Git top level, as HARN-012 of the harness specification states. The `ki-delegation` standard's Coordinator responsiveness section carries the tool-call and cadence rules, the sentence that no output style shortens an owner report, and the two decisions-log rules of "PROMPT-PROTECT - (a), plus the two (c) rules in ki-delegation."
 - The proxy setting of `PROMPT-PROTECT` (a) is declared in the chezmoi source but the running Headroom proxy has not been restarted; Kris: "RESTART-PROXY - will restart Headroom after the chain finishes." Until then owner turns and hook lines read from earlier turns may be compressed, so acceptance tests 2 and 3 cannot be scored verbatim.
@@ -175,14 +176,14 @@ Checked on 2026-10-14 against the installed Claude Code 2.1.287, by reading the 
 
 ### Planning choices held as defaults
 
-- The style file is named `ki-coordinator`, so the per-turn reminder reads as the coordinator style being active; the harness may choose another name that passes Kris's glance test.
+- The style file is named `ki-coordinator`, so the per-turn reminder reads as the coordinator style being active. Kris settled the name on 2026-10-14, "STYLE-NAME - keep ki-coordinator.", so the harness ships it under that name.
 - The openers and bootstrap line move to `under ki-pmo`, since the skill name in the opener points at where the rules live; the old form is accepted during the pilot and dropped in Wave F.
 - `ki-pmo` is created user-invocable with the argument hint `summary | recap | full-summary | mark`, because Kris chose "SUMMARY-ENTRY - (b) /ki-pmo entry point once KI-PRINCIPAL-ECO-013 creates ki-pmo; build nothing now." and this record is where `ki-pmo` is created; the entry adds frontmatter and no new skill.
-- The hook's signal moves to the declaration in this pilot rather than keeping `+/_CHECKPOINTS/` as a fallback, because Kris's `HOOK-OWNER` words make removing the declaration the way to disable it; which Capitals declare it in the pilot is the `CAPITALS` query to Kris.
+- The hook's signal moves to the declaration in this pilot rather than keeping `+/_CHECKPOINTS/` as a fallback, because Kris's `HOOK-OWNER` words make removing the declaration the way to disable it; which Capitals declare it in the pilot is settled under Scope: this island and the harness only.
 
 ### Open questions
 
 - Whether `claude -p` runs hooks is settled: the `coord-hook` agent's live trial showed it does, on both the scratch and the real registration.
 - Whether a project-level `outputStyle` overrides the user-level one is settled above.
 - The `fast` trial under `COORD-DEFAULT` could run on this pilot's Project thread once the hook and the budget are in place; that is a choice for the thread, not a change to this record's boundary.
-- Which Capitals declare `ki-pmo` in the pilot: this island and the harness only, leaving the other six territories' master threads without the hook until Wave F, or every Capital by a one-line handoff now. Raised to Kris as `CAPITALS`.
+- Which Capitals declare `ki-pmo` in the pilot is settled: this island and the harness only, in Kris's words "CAPITALS - (a).", leaving the other six territories' master threads without the hook until Wave F.
