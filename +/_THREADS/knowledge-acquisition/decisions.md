@@ -11,3 +11,7 @@
 ## Decision 3 (2026-10-14)
 
 - Take a mark now.
+
+## Decision 4 (2026-10-14T13:14:02Z)
+
+- ROUTE-LOCAL (2026-10-14): Kris asked this thread to act on acquire-intake's prepared knowledge-acquisition message under his 14 October routing approval: review KB-ACQUIRE-002 (Granola tools-ki/Harness support) and return the first-probe scope for KB-ACQUIRE-003 (ChatGPT binary bridge), returning the receiving review and any blocker visibly. Implementation and migration remain gated.

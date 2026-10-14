@@ -4,7 +4,7 @@ thread: knowledge-islands-model.knowledge-acquisition
 label: 'Knowledge Islands Model: knowledge-acquisition'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-14T10:58:00Z
+updated_at: 2026-10-14T11:20:00Z
 ---
 
 # knowledge-islands-model.knowledge-acquisition
@@ -16,7 +16,7 @@ The provider-neutral acquisition lifecycle is documented in one Pillars note, AI
 ## Current state
 
 - Open records: [KI-HARNESS-OPS-005](../../../ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-005-acquire-ai-sessions.md) (Now, in progress), [KI-PRINCIPAL-MOD-006](../../Streams/Roadmap/KI-PRINCIPAL-MOD-006-knowledge-acquisition-lifecycle.md) (Next, ready) and [DOTFILES-UE-035](https://github.com/krisb/dotfiles/blob/main/docs/roadmap/DOTFILES-UE-035-install-whatsapp-spool-refresh.md) (Hold, chezmoi).
-- Re-bootstrapped 2026-10-12 while the master thread still lists this thread as queued behind Fnd: baseline-rollout. Run: `knowledge-acquisition`. `chatgpt-bind` (BIND, approved by Kris on 2026-10-14) finished 2026-10-14: all 17 ChatGPT project identifiers bound in KI-HARNESS-OPS-005 and all 334 export conversations staged into `acquire` under `captures/<territory>/chatgpt/account-export-2026-09-22/` (21 in `_review`); the record stays `in-progress`. Nothing running.
+- Re-bootstrapped 2026-10-12 while the master thread still lists this thread as queued behind Fnd: baseline-rollout. Run: `knowledge-acquisition`. `chatgpt-bind` (BIND, approved by Kris on 2026-10-14) finished 2026-10-14: all 17 ChatGPT project identifiers bound in KI-HARNESS-OPS-005 and all 334 export conversations staged into `acquire` under `captures/<territory>/chatgpt/account-export-2026-09-22/` (21 in `_review`); the record stays `in-progress`. Running: `route-local-review` (read-only receiving review of KB-ACQUIRE-002 and KB-ACQUIRE-003 from acquire-intake, asked for by Kris on 2026-10-14 under his routing approval); report to `+/_THREADS/knowledge-acquisition/route-local-review.report.md`.
 - KI-HARNESS-OPS-005 was waiting on its 2026-10-04 question: bind the export's 17 `g-p-` project identifiers to project names. The master thread's `chatgpt-sort` agent (Kris's 2026-10-12 ChatGPT, Codex and Claude Desktop project tidy) saved the cloud project list before its renames, at `~/.local/state/ki/agents/state-of-play/backups/chatgpt-sort-20261012T1043/chatgpt-cloud-projects-before.tsv`. Its 17 identifiers match the export's 17 exactly. The 17 projects now follow the territory project naming Kris set on 2026-10-12 (`<Territory> - <Sub-area>`); the `Kit:`, `HNR:` and `<Domain>: General` names are prior names. No chats moved. The listing sits in machine-local run state only.
 - The browser-runtime question (KI-HARNESS-GOV-087) is merged into KI-HARNESS-OPS-005 as its isolated-browser-trial step.
 - KI-PRINCIPAL-MOD-006's Granola evidence paths now point at the private `acquire` repository (`.acquire/granola/ledger.json`, `captures/*/granola/`), which has received every Granola capture since 2026-10-10 (ACQ-PATHS, 2026-10-14).
@@ -38,6 +38,8 @@ The provider-neutral acquisition lifecycle is documented in one Pillars note, AI
 
 ## Open questions
 
+- GRANOLA-PLAN (held, receiver-owned): acquire's KB-ACQUIRE-002 Granola tools-ki/Harness support; this Project returns owners, build/test paths and gates. Migration stays separately gated. Open until Kris closes it.
+- BINARY-PROOF (held, receiver-owned): acquire's KB-ACQUIRE-003 ChatGPT binary bridge; the master thread settles MCP home, hosting and ownership, this Project returns the first-probe scope. Open until Kris closes it.
 - TOWER (open): The Tower Game's 15 conversations sit in `acquire` `captures/_review/`; move to `personal` or keep in `_review`.
 - SPIRIT (open): Personal - Spirituality's 18 conversations are in `personal`; keep or move to `sacred-inquiry`.
 - ORPHANS (open): 77 export files (about 106 MB) belong to no conversation and are listed only; stage to `_review` or leave listed.
