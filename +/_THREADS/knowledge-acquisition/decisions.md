@@ -87,3 +87,7 @@
 ## Decision 22 (2026-10-14T22:53:52Z)
 
 - 2026-10-14 Kris: "message handled to aquire-intake" (the RESET-FIRST and CHATGPT-OWNER relay is delivered to acquire-intake).
+
+## Decision 23 (2026-10-14T23:26:19Z)
+
+- Kris: "mark" - mark struck at 2026-10-14T23:26:00Z; thread folder tidied: handoff-review, heading-fix and heading-trim reports deleted, route-local-review kept for BINARY-HOME and BINARY-HOLD.
