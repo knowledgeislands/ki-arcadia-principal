@@ -4,7 +4,7 @@ thread: rig.chezmoi
 label: 'Rig: chezmoi'
 state: active
 created_at: 2026-10-08T08:40:00Z
-updated_at: 2026-10-14T09:15:00Z
+updated_at: 2026-10-14T09:25:00Z
 ---
 
 # rig.chezmoi
@@ -53,6 +53,8 @@ The machine-local decisions log (`~/.local/state/ki/agents/chezmoi/decisions.md`
 
 Needs Kris:
 
+- **B-START:** approve KB-DOTFILES-UE-086 B1-B3 on the laptop: `mise install` the new pins, review `chezmoi diff` of the mise config and Rig fragments, then apply them. Live mise config has only node and bun, so Rig reports the rest missing. Not a `rig apply`, so the RIG-CASKS hold does not cover it. Recommended: go.
+- **RIG-DECLARE:** with Rig 0.6.2's `install.executables` (KI-TOOL-RIG-CORE-050), declare `rust` (`rustc`, `cargo`) and the eight `cargo:` tools by binary name in the Rig catalogue, kept in the mise config too; section A had left them undeclared. Recommended: yes, as a source change in KB-DOTFILES-UE-086.
 - **GATE-PUSH:** push the three gate-fix commits to chezmoi `origin/main`. Recommended: yes; the gate passes.
 - **PUBLIC-VIEW:** the new mise `python`, `actionlint` and `zig` declarations from KB-DOTFILES-UE-086 section A are in `core` only; `node`, `bun` and `uv` are also in `public`. Recommended: add `python` to `public` to match `uv`, and keep `actionlint` and `zig` in `core`.
 
