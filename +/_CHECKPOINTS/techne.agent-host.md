@@ -4,7 +4,7 @@ thread: techne.agent-host
 label: 'Techne: agent-host'
 state: active
 created_at: 2026-10-07T09:05:00Z
-updated_at: 2026-10-14T01:25:00Z
+updated_at: 2026-10-14T01:45:00Z
 ---
 
 # techne.agent-host
@@ -69,9 +69,8 @@ This handoff unit changes only this checkpoint and the estate-factorisation chec
 For Kris:
 
 - **SOURCES:** ki-principal's declared OneDrive sources store has no binding on vega (ki 0.10.0), so `ki repo --estate repair` fails for that repository and setup reports one failure.
-- **CHEZMOI:** the Mac still names the old host: the binding `dot_config/techne/hosts/agent-host.toml` lacks `host_name`/`tailscale_name = "vega"`, the SSH entry is `Host ki-techne-agent-host`, and Zed's SSH host is `ki-techne-agent-host`. Until fixed, setup and status need `AGENT_HOST_TAILSCALE_NAME=techne@vega`, and `techne host status` reports the host absent, which also blocks the CLI-008 live check.
-- **SHIM:** `~/.local/bin/techne` points at the retired `~/workspaces/kit/knowledgeislands/tools-techne` path; its installer is not yet identified.
-- **SIGN-IN:** Kris signs Claude Code and Codex in on vega.
+- **CHEZMOI:** edits are committed in the chezmoi source (binding `host_name`/`tailscale_name = "vega"`, `Host vega` with `~/.ssh/known_hosts_vega`, Zed host `vega`), not pushed and not applied; Kris reviews `chezmoi diff` and applies. The vega host key moved from the managed `~/.ssh/known_hosts` to `~/.ssh/known_hosts_vega`, so SSH to `vega` fails host-key checks until the new SSH entry is applied. After apply, run `techne host status --host agent-host --json` for the CLI-008 live check: with the new binding it already finds instance `i-0cb5fa8cc1cd1d7d0` running.
+- **RIG-LINK:** `~/.local/bin/rig` links to the retired `~/workspaces/kit/knowledgeislands/tools-rig` path and is broken; it belongs to the Rig thread. (`~/.local/bin/techne` was relinked with `install.sh --link` on 2026-10-14.)
 - **TS-OAUTH:** whether to capture a Tailscale OAuth client so future rebuilds mint their own key.
 
 Owned-host exemption for the Mac Studio is handled by KI-ARCADIA-GOV-033 in the `mac-studio-bootstrap` thread.
