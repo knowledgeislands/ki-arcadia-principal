@@ -7,7 +7,7 @@ initiative: rig
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-14T13:40:00Z
+updated: 2026-10-14T16:45:00Z
 author: Written with Claude
 ---
 
@@ -33,3 +33,5 @@ Under [[GDR-KI-PRINCIPAL-004-standing-agent-host-exemption-from-the-techne-progr
 - [[hosts|Hosts]] names the estate's machines - `vega`, `sol` and `terra` - and their machine types, from which the Rig profiles and the Cheztoi host profile take their names.
 - The thread's checkpoint is [rig.mac-studio-bootstrap](../../../+/_CHECKPOINTS/rig.mac-studio-bootstrap.md).
 - **Idea: remote access and continuity in Rig.** A Rig profile could declare whether its machines accept screen sessions and who may connect, and on macOS Handoff (with Universal Clipboard) and Universal Control; `rig doctor` would report drift, `rig apply` set what macOS allows without the GUI, and Rig show the manual steps for the rest. Findings so far: recent macOS restricts enabling Screen Sharing from a script; Handoff and Universal Control are per-user preferences whose `defaults` keys need confirming; on Linux, GNOME Remote Desktop (`grdctl`) or xrdp. Today `sol` has Screen Sharing on and `terra` off, set by hand as the chezmoi source's macOS workstation guide describes; restricting listeners to the tailnet stays with the Rig firewall work. Kept as an idea on 2026-10-14 in place of a cancelled `tools-rig` work record: Kris approved the state-of-play thread's roadmap census on 2026-10-14 ('RC-ALL: approve all'), which parked it because its trigger, a further machine or profile, is speculative.
+- **Rig note: shared-failure reporting (R2).** On `sol`, `rig upgrade` reported one shared cause, Command Line Tools older than macOS, as 84 separate failures; it showed an app Kris had deleted by hand as "failed" rather than missing; and a hand-run upgrade left no receipt to read afterwards. Rig's `apply` and `upgrade` could stop or collapse when a provider fails the same way for every item, report a removed declared app as missing, and keep a receipt for interactive runs (difference D2 in the thread's `rig-guide` report, the earlier RIG-UX idea). Kept as a note rather than a `tools-rig` record on Kris's RIG-RECORDS approval of 2026-10-14; `KI-TOOL-RIG-CORE-054` catches that cause before a run.
+- **Rig note: PATH shadowing check (R4).** On `sol`, an old mise `claude` shim, from a global npm package in an inactive Node, came first on PATH ahead of Homebrew's `claude`. `rig doctor` could warn when another PATH entry shadows a declared tool's executable (difference D21). Pruning old runtimes stays with the chezmoi source under `KB-DOTFILES-UE-090`. Kept as a note on the same approval; `KI-TOOL-RIG-CORE-055` (interpreter port owners) was captured as a record beside `KI-TOOL-RIG-CORE-054`.
