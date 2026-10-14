@@ -4,7 +4,7 @@ thread: _state-of-play
 label: 'Master: state-of-play'
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-14T09:05:00Z
+updated_at: 2026-10-14T09:19:00Z
 ---
 
 # _state-of-play
@@ -30,23 +30,15 @@ This is the territory master thread for Knowledge Islands. It does only project 
 
 ## Current state
 
-- Mark: 2026-10-14T09:05Z, decisions log at Decision 175. Decisions 170 to 175 are summarised under "Since the last mark"; Decisions 150 to 169 were summarised at the previous mark (08:50Z); earlier history is in `thread-history.md` in the run folder. The next summary covers only what follows this mark plus the carried-forward items under Open questions.
+- Mark: 2026-10-14T09:19Z, decisions log at Decision 177. Earlier marks' summaries are in Git history; earlier run history is in `thread-history.md` in the run folder. The next summary covers only what follows this mark plus the carried-forward items under Open questions.
 - **Estate.** Eight territories in ranking order: personal, knowledge-islands, legal, humans-not-robots, valle-armonia, sacred-inquiry, techmedix, equal-remedy (aliases kb, ki, lgl, hnr, va, si, tmx, er). Checkouts at `~/workspaces/<territory>/<repo>`; Capitals named `*-principal`. The live view is the Estate Map in personal-principal; a final map run follows.
 - **Thread labels (Decision 143):** "Fnd:" for Platform Foundations, "KI Model:" for Knowledge Islands Model.
 - **Active threads:** Fnd: estate-factorisation; Fnd: baseline-rollout; Rig: mac-studio-bootstrap; Rig: chezmoi; KI Model: knowledge-acquisition; KI Model: ways-of-working; KI Model: command-centre; Techne: agent-host. **Resting:** Observatory: product (Decision 157), after KI-OBSERVA-INT-002 was accepted and pruned (Decision 160). Opener: `Re-bootstrap as the <label> thread under ki-delegation.`
 - **Other territories:** only the Personal and Valle Armonia masters are running. Paperclip waits until the Knowledge Islands roadmaps are bottomed out (Decision 147).
 - **Roadmap:** 33 open Knowledge Islands records on 2026-10-14, up from 19 on 2026-10-12 (Decision 164). Triage burn-down applied (Decisions 163, 164); ROADMAP-SIZING goes to one ways-of-working design record, daily count snapshots first (Decision 165).
-- **Since the last mark (Decisions 170 to 175).**
-  - Headroom repaired and verified, with the init-user service under launchd.
-  - [KI-TOOL-RIG-CORE-050](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-050-mise-observed-executables.md) accepted and pruned; Rig 0.6.2 release approved (Decision 170).
-  - Re-bootstrap request sent to every thread (Decision 170). Rig: chezmoi, Techne: agent-host, ways-of-working and estate-factorisation (pasted by Kris) have done it.
-  - hooks-diagnose found that the coordinator-reminder hook is deployed but never fires in Zed threads (its `has_terminal` check), and that its text is too thin (Decision 173).
-  - Banner and resume line agreed: a resume line works as a checkpoint-and-thread compaction, possibly with a real `/compact` (Decisions 171, 175).
-  - The thread-working model was handed to ways-of-working, which accepted it (Decision 174).
-  - RIG-CASKS: a blocking Rig 0.6.1 defect (every cask reported as metadata-invalid) came in from Rig: chezmoi, and `rig apply` is held on both Macs (Decision 172).
-  - tools-ki release with `KI_AGENT_RUN` approved, owned by ways-of-working's KI-RELEASE (Decision 175).
-  - DEV-MODE and RIG-LINK to be captured and held once all KI tools work locally (Decision 175).
-- **Running at the mark:** `rig-accept-release` (0.6.2 through the KI tap); `rig-cask-fix` (fix and push, no release); `tools-local` (every KI tool working locally, then DEV-MODE and RIG-LINK captured and held). ways-of-working: `banner-mock` (mock-up, unit model, messaging interface, for Kris's check before building), `sizing-design`, `harness-push`, then `triage-plan`.
+- **Since the last mark:** nothing yet.
+- **Carried across this mark:** Headroom is repaired. Thread-working work (banner, re-anchoring, hooks, messaging between threads, the decision log and [KI-HARNESS-GOV-180](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-180-tracked-thread-decisions-home.md)) is with ways-of-working; this thread oversees only. The stuck threads were recovered by Kris. `rig apply` is held on both Macs until a fixed Rig release is installed.
+- **Running at the mark:** `rig-accept-release` (Rig 0.6.2 through the KI tap); `rig-cask-fix` (fix and push, no release); `tools-local` (queued: every KI tool working locally, then DEV-MODE and RIG-LINK captured and held).
 - **Focus (Kris, Decisions 137, 158):** Knowledge Islands; burn the roadmap down. Master stays delegate-only with short turns.
 - **Tooling.** `ki` 0.10.1, `mgit` 0.17.0, Rig 0.6.1. Launch with `--rules push` (Decision 123); task-named remote operations are authorised (Decision 132).
 
@@ -77,10 +69,7 @@ Rules live with their durable owners: the roadmap model in GDR-KI-PRINCIPAL-005 
 Needs Kris (outstanding at the mark; carried forward until resolved):
 
 - **RIG-063:** release 0.6.3 with the RIG-CASKS fix once `rig-cask-fix` reports. Until a fixed release is installed, `rig apply` stays held on both Macs (Decision 172).
-- **BANNER-MOCK:** ways-of-working's banner, re-anchoring and messaging-interface mock-up, which Kris checks before anything is built (Decisions 171, 174).
-- **ZED-VISIBILITY:** cross-session traffic does not render in Zed. Threads shown with a red x since the outage (Rig: chezmoi, Techne: agent-host, Rig: mac-studio-bootstrap, KI Model: knowledge-acquisition) may need Kris to nudge them in Zed. Fix through ways-of-working (Decision 175).
 - **ACQ-FINISH:** Kris pastes the finish line into the Acer chat (Decisions 166, 167).
-- **OBSERVATORY-AUDIT:** the Observatory checkpoint's `state: resting` fails the KB audit schema; fix it in the next ki-principal run.
 - **BURN-DOWN-NEXT:** [KI-TECHNE-OPS-027](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/roadmap/KI-TECHNE-OPS-027-agent-host-tailscale-key-minting.md) and [KI-TOOL-RIG-CORE-052](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-052-doctor-service-launch-prerequisites.md) at the next burn-down review (Decision 164).
 - **SPEC-REVIEW:** once the roadmaps near zero (Decision 115); ki-specifications is not being moved forward (Decision 153). The tools-ki patch release with `KI_AGENT_RUN` is approved now (Decision 175).
 
