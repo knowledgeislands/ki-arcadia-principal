@@ -7,7 +7,7 @@ initiative: platform-foundations
 lifecycle: planned
 lead: Kris Brown
 target: null
-updated: 2026-10-09T21:06:48Z
+updated: 2026-10-14T13:40:00Z
 author: Written with Claude
 ---
 
@@ -42,3 +42,4 @@ This Project sits in [[platform-foundations|Platform foundations]]. Kris agreed 
 - Run each review with `ki-specs` AUDIT first, so Kris reads findings rather than raw files.
 - The scope comes from section 4 of the state-of-play survey (`~/.local/state/claude-bg/gov-020/survey.report.md`) and decision 13 of the state-of-play design.
 - **Idea: KI Specifications consistency.** Give every tracked `ki-specifications` file a recorded authority class, align its KIP/KIS process documents with the documents the guides name as authority, and mark the Knowledge Package schema, templates and examples illustrative with a validation command that works, keeping the dormant pre-v1 posture. Kept as an idea on 2026-10-09 in place of a cancelled `ki-specifications` work record.
+- **Idea: a portable live-artifact contract.** KI Specifications could hold one portable contract for Knowledge Base live artifacts: a self-contained HTML page with a Markdown manifest (`artifact_bridge: 1`, `artifact_id`, `artifact_tools`, optional `artifact_servers`) that runs unchanged in Cowork, the Observatory and any MCP Apps host, the page-facing `window.cowork` subset, the bridge version, and what a host must refuse. The working contract lives in `apps-observatory` (its live-artifacts decision record, `docs/specs/artifacts.md` and the operator guide). Open: a KIS of its own or an MCP Apps profile; how the bridge version evolves; naming tools by server or capability; and whether ChatGPT `ui://` publication belongs in it. Kept as an idea on 2026-10-14 in place of a cancelled `ki-specifications` work record: Kris approved the state-of-play thread's roadmap census on 2026-10-14 ('RC-ALL: approve all'), which parked it until the v1 boundary review.

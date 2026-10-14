@@ -7,7 +7,7 @@ initiative: rig
 lifecycle: active
 lead: Kris Brown
 target: null
-updated: 2026-10-11T03:52:00Z
+updated: 2026-10-14T13:40:00Z
 author: Written with Claude
 ---
 
@@ -32,3 +32,4 @@ Under [[GDR-KI-PRINCIPAL-004-standing-agent-host-exemption-from-the-techne-progr
 - [[decisions-in-force|Decisions in force]] states the decisions that still guide `sol`. The full decisions log is machine-local run state on the laptop at `~/.local/state/ki/agents/mac-studio-bootstrap/decisions.md`, not in Git.
 - [[hosts|Hosts]] names the estate's machines - `vega`, `sol` and `terra` - and their machine types, from which the Rig profiles and the Cheztoi host profile take their names.
 - The thread's checkpoint is [rig.mac-studio-bootstrap](../../../+/_CHECKPOINTS/rig.mac-studio-bootstrap.md).
+- **Idea: remote access and continuity in Rig.** A Rig profile could declare whether its machines accept screen sessions and who may connect, and on macOS Handoff (with Universal Clipboard) and Universal Control; `rig doctor` would report drift, `rig apply` set what macOS allows without the GUI, and Rig show the manual steps for the rest. Findings so far: recent macOS restricts enabling Screen Sharing from a script; Handoff and Universal Control are per-user preferences whose `defaults` keys need confirming; on Linux, GNOME Remote Desktop (`grdctl`) or xrdp. Today `sol` has Screen Sharing on and `terra` off, set by hand as the chezmoi source's macOS workstation guide describes; restricting listeners to the tailnet stays with the Rig firewall work. Kept as an idea on 2026-10-14 in place of a cancelled `tools-rig` work record: Kris approved the state-of-play thread's roadmap census on 2026-10-14 ('RC-ALL: approve all'), which parked it because its trigger, a further machine or profile, is speculative.
