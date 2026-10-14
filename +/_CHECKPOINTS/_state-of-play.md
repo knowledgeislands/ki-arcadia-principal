@@ -4,7 +4,7 @@ thread: _state-of-play
 label: 'Master: state-of-play'
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-14T09:19:00Z
+updated_at: 2026-10-14T10:55:00Z
 ---
 
 # _state-of-play
@@ -30,15 +30,16 @@ This is the territory master thread for Knowledge Islands. It does only project 
 
 ## Current state
 
-- Mark: 2026-10-14T09:19Z, decisions log at Decision 177. Earlier marks' summaries are in Git history; earlier run history is in `thread-history.md` in the run folder. The next summary covers only what follows this mark plus the carried-forward items under Open questions.
+- `ki-pmo read at f5da817b` (re-read at re-bootstrap, 2026-10-14 12:00 BST).
+- Mark: 2026-10-14T10:55Z. Recap given and mark re-struck at Kris's resume request. Outstanding items carry forward under Open questions.
 - **Estate.** Eight territories in ranking order: personal, knowledge-islands, legal, humans-not-robots, valle-armonia, sacred-inquiry, techmedix, equal-remedy (aliases kb, ki, lgl, hnr, va, si, tmx, er). Checkouts at `~/workspaces/<territory>/<repo>`; Capitals named `*-principal`. The live view is the Estate Map in personal-principal; a final map run follows.
 - **Thread labels (Decision 143):** "Fnd:" for Platform Foundations, "KI Model:" for Knowledge Islands Model.
 - **Active threads (Kris's focus from 2026-10-14):** Acquire: acquire-intake (Codex, in `krisb/acquire`); KI Model: ways-of-working; KI Model: knowledge-acquisition; this thread. **Resting, with open handoffs held in their checkpoints:** Fnd: estate-factorisation; Fnd: baseline-rollout; Rig: mac-studio-bootstrap; Rig: chezmoi (mise config apply and `install.executables` follow-up; `rig apply` hold until a fixed Rig is installed); KI Model: command-centre; Techne: agent-host; Observatory: product. Opener: `Re-bootstrap as the <label> thread under ki-delegation.`
 - **Other territories:** only the Personal and Valle Armonia masters are running. Paperclip waits until the Knowledge Islands roadmaps are bottomed out (Decision 147).
 - **Roadmap:** 33 open Knowledge Islands records on 2026-10-14, up from 19 on 2026-10-12 (Decision 164). Triage burn-down applied (Decisions 163, 164); ROADMAP-SIZING goes to one ways-of-working design record, daily count snapshots first (Decision 165).
 - **Since the last mark:** nothing yet.
-- **Carried across this mark:** Headroom is repaired. Thread-working work (banner, re-anchoring, hooks, messaging between threads, the decision log and [KI-HARNESS-GOV-180](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-180-tracked-thread-decisions-home.md)) is with ways-of-working; this thread oversees only. The stuck threads were recovered by Kris. `rig apply` is held on both Macs until a fixed Rig release is installed.
-- **Running:** nothing. Since the mark: Rig 0.6.2 and 0.6.3 released; cask fix live; all KI tools run locally; [KI-TOOL-RIG-CLI-026](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CLI-026-per-tool-development-mode-switch.md) and [KI-TOOL-RIG-DIST-011](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-DIST-011-stale-terra-rig-link.md) held until 2026-11-16.
+- **Carried across this mark:** Rig 0.6.3 released; this Mac runs Rig from the tools-rig checkout, and sol already ran 0.6.3 from its checkout; the cask fix is live on both. Roadmap census done (42 = 36 open + 6 done; proposal takes it to 21) and Paperclip shut-down, capture and rebuild proposal delivered; both await Kris. Kris's focus: Acquire: acquire-intake, KI Model: ways-of-working, KI Model: knowledge-acquisition and this thread.
+- **Running:** nothing.
 - **Focus (Kris, Decisions 137, 158):** Knowledge Islands; burn the roadmap down. Master stays delegate-only with short turns.
 - **Tooling.** `ki` 0.10.1, `mgit` 0.17.0, Rig 0.6.1. Launch with `--rules push` (Decision 123); task-named remote operations are authorised (Decision 132).
 
@@ -68,10 +69,11 @@ Rules live with their durable owners: the roadmap model in GDR-KI-PRINCIPAL-005 
 
 Needs Kris (outstanding at the mark; carried forward until resolved):
 
-- **RIG-063-OTHER-MAC:** Rig v0.6.3 is released; this Mac runs Rig from the tools-rig checkout. On the other Mac, `brew upgrade knowledgeislands/tap/rig`, after which `rig apply` can resume there. **RIG-063-PAPERCLIP:** `paperclip-agents` has drifted since the failed apply on 2026-10-12, so `rig doctor` here exits 1; Paperclip is paused.
-- **ACQ-FINISH:** Kris pastes the finish line into the Acer chat (Decisions 166, 167).
-- **BURN-DOWN-NEXT:** [KI-TECHNE-OPS-027](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/roadmap/KI-TECHNE-OPS-027-agent-host-tailscale-key-minting.md) and [KI-TOOL-RIG-CORE-052](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-052-doctor-service-launch-prerequisites.md) at the next burn-down review (Decision 164).
-- **SPEC-REVIEW:** once the roadmaps near zero (Decision 115); ki-specifications is not being moved forward (Decision 153). The tools-ki patch release with `KI_AGENT_RUN` is approved now (Decision 175).
+- **RC-ALL:** roadmap burn-down from 42 to 21 by repository (RC-HARNESS, RC-PRINCIPAL, RC-TECHNE, RC-TOOLS-TECHNE, RC-TOOLS-KI, RC-RIG, RC-SPECS); proposal in `roadmap-census.report.md` in the run folder.
+- **RC-OPS-005:** rescope [KI-HARNESS-OPS-005](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-005-acquire-ai-sessions.md) now or leave it with knowledge-acquisition.
+- **PAPERCLIP-PROJECT, PAPERCLIP-SHUTDOWN, CAPTURE-STORE, PAPERCLIP-AGENTS-DRIFT, NAMING, CODES, HOLD:** Paperclip capture and rebuild; proposal in `paperclip-reshape.report.md` in the run folder. Avoid `rig apply` on terra until PAPERCLIP-SHUTDOWN is decided.
+- **RIG-SOL-BREW, RIG-SOL-TELEGRAM:** unused Homebrew Rig 0.5.0 behind sol's checkout link; Telegram on sol is the App Store copy.
+- **ACQ-FINISH:** Kris pastes the finish line into the Acer chat.
 
 Dated queue:
 
