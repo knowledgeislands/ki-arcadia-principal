@@ -4,7 +4,7 @@ thread: techne.agent-host
 label: 'Techne: agent-host'
 state: active
 created_at: 2026-10-07T09:05:00Z
-updated_at: 2026-10-14T02:00:00Z
+updated_at: 2026-10-14T02:10:00Z
 ---
 
 # techne.agent-host
@@ -68,7 +68,7 @@ This handoff unit changes only this checkpoint and the estate-factorisation chec
 
 For Kris:
 
-- **SOURCES:** ki-principal's declared OneDrive sources store has no binding on vega (ki 0.10.0), so `ki repo --estate repair` fails for that repository and setup reports one failure.
+- **SOURCES (deferred 2026-10-14):** vega cannot reach ki-principal's OneDrive `sources` store (no OneDrive client for Linux), so its skill projections are missing there and setup reports one failure. Kris wants sources reachable from anywhere. Recommended when picked up: Syncthing from sol to vega over Tailscale, receive-only on vega, with sol keeping the folders downloaded, then `ki repo store bind sources <path>` on vega; design first, spanning Rig (sol), the agent-host recipe and tools-ki. Rejected for now: a Linux OneDrive client (whole-drive credential on the host).
 - **RIG-LINK:** `~/.local/bin/rig` links to the retired `~/workspaces/kit/knowledgeislands/tools-rig` path and is broken; it belongs to the Rig thread. (`~/.local/bin/techne` was relinked with `install.sh --link` on 2026-10-14.)
 - **TS-OAUTH:** whether to capture a Tailscale OAuth client so future rebuilds mint their own key.
 
@@ -78,4 +78,4 @@ Owned-host exemption for the Mac Studio is handled by KI-ARCADIA-GOV-033 in the 
 
 ## Next step
 
-vega is rebuilt, signed in and reachable as `vega` from the Mac (chezmoi binding, SSH and Zed entries applied 2026-10-14; the chezmoi commit is local, unpushed, above two commits from another session). Settle SOURCES and TS-OAUTH. The rebuild procedure is in the [operator runbook](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/guides/operator/agent-host.md).
+vega is rebuilt, signed in and reachable as `vega` from the Mac (chezmoi binding, SSH and Zed entries applied 2026-10-14; the chezmoi commit is local, unpushed, above two commits from another session). Settle TS-OAUTH; SOURCES is deferred. The rebuild procedure is in the [operator runbook](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/guides/operator/agent-host.md).
