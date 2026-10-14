@@ -4,7 +4,7 @@ thread: platform-foundations.estate-factorisation
 label: 'Fnd: estate-factorisation'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-14T21:25:00Z
+updated_at: 2026-10-14T21:32:47Z
 ---
 
 # platform-foundations.estate-factorisation
