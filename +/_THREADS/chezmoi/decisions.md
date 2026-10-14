@@ -281,3 +281,7 @@
 ## Decision 69 (2026-10-14T10:57:09Z)
 
 - Kris, 2026-10-14 10:56Z: resume under current ki-pmo and ki-delegation - re-bootstrap, mark (struck at 2026-10-14T10:56Z), fresh summary with carried-forward open points, take stock, restart authorised work, then banner.
+
+## Decision 70 (2026-10-14T12:51:26Z)
+
+- Kris, 2026-10-14: handoff from ways-of-working (KI-PRINCIPAL-ECO-013, KI-HARNESS-GOV-186) - deploy the harness output style ki-agentic-harness/output-styles/ki-coordinator.md to ~/.claude/output-styles/ki-coordinator.md through chezmoi, as the pilot record's chezmoi Steps say; review chezmoi diff before applying.
