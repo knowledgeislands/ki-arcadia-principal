@@ -26,7 +26,7 @@ Mark: 2026-10-14T16:47Z (previous marks 2026-10-14T14:51Z, 14:48Z and 14:35Z, th
 
 ki-pmo read at dfa52a12.
 
-**Running.** `local-push` (LOCAL-PUSH, Kris 2026-10-15): on `sol`, pull chezmoi and tools-rig with `--ff-only --no-rebase`, re-run each local gate and push `main` in both, leaving chezmoi's uncommitted `dot_gitconfig` (another session's) alone. Before it, sol held chezmoi +1 and tools-rig +2 unpushed. `gate-fix` conforms this checkpoint and the Project note and pushes ki-principal.
+**Nothing running (00:52 BST, 2026-10-15).** `local-push` pushed chezmoi; tools-rig's two commits were already on origin from another session's push at 00:48 BST. Both are level with origin, with no new gate failures and `dot_gitconfig` left uncommitted. `gate-fix` conformed this checkpoint and the Project note and pushed ki-principal.
 
 **Delivered on `sol`.** chezmoi applied, Rig declarations reconciled, the released `ki` passing `ki doctor`, and agents reach `sol` over Tailscale and SSH with GitHub through agent forwarding. The restart test passed on 2026-10-14 (macOS 27.0.1; Tailscale reconnected on its own after the FileVault unlock). 56 repositories are cloned into `~/workspaces/<group>/<repo>` across the eight territories and 51 are in the `ki` registry (terra's extra entry is settled by TERRA-READ). The Observatory runs and `rig doctor` is clean; its doctor gap is [KI-TOOL-RIG-CORE-052](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-052-doctor-service-launch-prerequisites.md) (triage). The old `kit`, `hnr` and `knowledge-wayfinder` trees are in `~/workspaces/_old` (undo by moving them back); dead skill links, the old mise `claude` shim and 82 old kit, hnr and kis paths in Claude settings are cleared; `ki-pmo` and `ki-pmo-design` are linked; six stale OneDrive source entries are removed; the domt4 autoupdate agent and tap are gone. GitHub Desktop lists all 56 territory checkouts and its backup is deleted. Headroom runs on `sol` by hand (`headroom install apply`, port 8787) and Claude Code works through it; the declaration gap is in the chezmoi triage record captured for SOL-RECORDS.
 
@@ -77,4 +77,4 @@ No action now: `ZED-MD` (later, at `sol`), `FW-LINUX-LIVE` (needs a Linux host),
 
 ## Next step
 
-When `local-push` reports, confirm chezmoi and tools-rig are level on origin, then put SOL-APPLY, SOL-CLT and TERRA-READ to Kris. The firewall test on `sol` follows the terra rule comparison; the parked declaration file is on terra and must be copied or committed before it.
+Put SOL-APPLY, SOL-CLT and TERRA-READ to Kris. The firewall test on `sol` follows the terra rule comparison; the parked declaration file is on terra and must be copied or committed before it.
