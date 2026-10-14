@@ -30,16 +30,23 @@ The burn-down focus it cites is Kris's standing rule, also verbatim: "the roadma
 
 ### (a) Daily snapshot and burn-down history
 
-**What is written.** A `ki` command, proposed as `ki repo roadmap snapshot`, appends one JSON line per repository per day to a tracked file in that repository's roadmap directory, beside `_ISSUES.md`. The line carries the date, the commit whose roadmap tree was counted, and the count of records by `status`. When the size field exists, it also carries points by `status` and a count of unsized records. Proposed shape, one line, shown wrapped:
+**What is written.** A `ki` command, proposed as `ki repo roadmap snapshot`, appends one JSON line per repository per day to a tracked file in that repository's roadmap directory, beside `_ISSUES.md`. The line carries the date, the commit whose roadmap tree was counted, and one cell per `(status, horizon)` pair that holds at least one record. Each cell carries three figures: `records`, the count of records in the pair; `points`, the sum of `size` over the sized records in the pair; and `unsized`, the count of records in the pair with no `size`. Kris settled the shape under `SNAPSHOT-DIMENSIONS` below: "record the counts as well as the weighted counts based on their sizing by a tuple, which is status and horizon". Proposed shape, one line, shown wrapped:
 
 ```json
-{"date":"2026-10-14","repository":"ki-principal","commit":"4f26207",
- "status":{"triage":2,"draft":3,"ready":1,"in-progress":1,"awaiting-review":0,"done":0,"cancelled":0},
- "horizon":{"now":1,"next":3,"soon":1,"future":0,"hold":0},
- "points":{"status":{"ready":5,"in-progress":3},"unsized":2}}
+{"date":"2026-10-14","repository":"ki-principal","commit":"4f26207","cells":[
+ {"status":"triage","horizon":null,"records":2,"points":0,"unsized":2},
+ {"status":"draft","horizon":"next","records":2,"points":5,"unsized":1},
+ {"status":"draft","horizon":"soon","records":1,"points":0,"unsized":1},
+ {"status":"ready","horizon":"now","records":1,"points":5,"unsized":0},
+ {"status":"in-progress","horizon":"next","records":1,"points":3,"unsized":0},
+ {"status":"done","horizon":null,"records":4,"points":11,"unsized":1}]}
 ```
 
-The `points` member is absent until (b) is built; the `horizon` member is a recommendation, under `SNAPSHOT-DIMENSIONS` below. The file is append-only and chronological, with at most one line per date. A second run on the same day replaces that day's line rather than adding one, so a scheduler retry is harmless.
+**Reading the line.** A pair absent from `cells` holds no records. `horizon` is `null` where the work-item format carries no horizon: `triage`, `done` and `cancelled`. Because the cell is keyed by the pair, a reader projects the line onto whichever axis it wants by summing cells: totals by `status` alone, by `horizon` alone, or by the pair itself, as Kris put it, "in the future, we can choose when we read it to only look at status or only look at horizon or look at the combination of those two". The line never carries the two one-axis maps separately; they are derived on read and cannot disagree with the cells.
+
+**Unsized records in the points figure.** `points` sums only the records that carry `size`; an unsized record adds nothing to `points` and is counted in `unsized` instead. No default or imputed weight is applied, because an unsized record is by definition one whose weight on Kris's attention has not been judged, and `triage` records are unsized by rule under (b). A reader therefore treats `points` as a floor and `unsized` as the width of the gap; a cell with `unsized` equal to `records` has no attention weight at all. The three figures are always present, before and after (b) ships, so the line shape never changes.
+
+**Back-filled history before sizes existed.** A line repaired or back-filled from a commit older than the `size` field shows `points` of `0` and `unsized` equal to `records` in every cell, which is the truth of that tree: no record was sized. Observatory does not chart that as a zero-point roadmap. The points view starts at the first date on which any cell has `points` above `0`, and earlier dates show no points series at all; the records view runs over the whole series. The file is append-only and chronological, with at most one line per date. A second run on the same day replaces that day's line rather than adding one, so a scheduler retry is harmless.
 
 **Why a tracked file.** The series is a governed record, not an observation: it is committed, reviewable, diffable and survives any loss of a state folder or Observatory database. The snapshot commit touches only this file, so the daily commit is a `chore(roadmap)` with nothing else in it, and it goes through the designated roadmap checkout like every other roadmap write.
 
@@ -68,7 +75,7 @@ The `points` member is absent until (b) is built; the `horizon` member is a reco
 
 **Audit.** `ki repo audit --skill ki-work-roadmap` checks the value is in the set, absent on `triage`, present on `ready` and later, and not `13` beyond `draft`. `ki-plan` asks for the size as a planning step; `ki-batch` reports the points in its envelope.
 
-**What the points buy.** The snapshot's `points` member gives a burn-down in Kris's attention rather than record count; `done` points per week is a velocity of attention actually spent, and open points at `now` and `next` is the attention currently committed. The Observatory's Beacon can rank a repository whose open points rise while its done points stay flat.
+**What the points buy.** The `points` figure in each snapshot cell gives a burn-down in Kris's attention rather than record count; `done` points per week is a velocity of attention actually spent, and open points at `now` and `next` is the attention currently committed. The Observatory's Beacon can rank a repository whose open points rise while its done points stay flat.
 
 ### (c) ID allocation from a ki-owned file checked against history
 
@@ -105,20 +112,22 @@ Each repository plans and delivers its own part under its own authority; this re
 
 ## Sequence and the burn-down focus
 
-The direction orders the parts: (a) first, then (b), then (c). (a) is independent and gives the measurement that the burn-down focus lacks today, back-filled from history on day one. (b) depends on (a) only for the `points` member, and on `ki-plan` for the gate. (c) is independent of both and can follow when the Next records close.
+The direction orders the parts: (a) first, then (b), then (c). (a) is independent and gives the measurement that the burn-down focus lacks today, back-filled from history on day one. (b) depends on (a) only for the `points` figure in each cell, and on `ki-plan` for the gate. (c) is independent of both and can follow when the Next records close.
 
 Nothing is built now. Kris's words: "design now, build after the current Next records close." When they close, the master thread captures the delivery records, one per owning repository, each citing this record and sized under (b) once the field exists. Until then no roadmap record exists for any of this.
 
-## Open questions
+## Settled questions
 
-Each carries a recommendation; Kris's answer belongs in [[change-management-decisions]] in their own words.
+Kris settled every question on 2026-10-14 with two answers, both verbatim: "SIZING - all recommended" and "SNAPSHOT-DIMENSIONS - (b). Then I think it's clear that we should record the counts as well as the weighted counts based on their sizing by a tuple, which is status and horizon, and therefore, in the future, we can choose when we read it to only look at status or only look at horizon or look at the combination of those two." The first answer adopts the recommendation on each question below; the second refines `SNAPSHOT-DIMENSIONS` as recorded there. Each item keeps its recommendation for the record and states what was settled.
 
-1. **`SNAPSHOT-HOME`** - One file per repository beside the ledger, or one estate file in this island with a line per repository? Recommendation: per repository, as `_HISTORY.jsonl` beside `_ISSUES.md`. Each repository's series is then repairable from its own history alone, and `ki repo roadmap history` aggregates across a territory or the estate on read.
-2. **`SNAPSHOT-DATE`** - Which calendar day does a line belong to? Recommendation: the UTC date, with the repair cutoff at the end of that UTC day, so the series is the same from any machine and timezone. The Observatory displays local time.
-3. **`SNAPSHOT-DIMENSIONS`** - Counts by `status` only, as directed, or also by `horizon`? Recommendation: both from the first line. `horizon` is the queue position and costs one small map; adding it later would leave the back-filled series without it.
-4. **`SNAPSHOT-SCHEDULE`** - What runs the daily snapshot? Recommendation: one scheduled job on Kris's workstation under Rig, running `ki` over the registered estate and pushing fast-forward, declared as an Activity note in this island. It needs no remote agent and stays within the Techne programme hold.
-5. **`SIZE-GATE`** - Where is `size` required? Recommendation: forbidden on `triage`, optional on `draft`, required for `ready`, with `13` allowed only on `draft` as the split marker.
-6. **`SIZE-RESIZE`** - May a size change after `ready`? Recommendation: only on re-plan, noted in the record's Discussion, so velocity is read against the size Kris agreed to when the work was shaped.
-7. **`ALLOCATION-FORMAT`** - TOML or JSON, and the name? Recommendation: `_ALLOCATION.toml`, matching `.ki.toml` and the `ki-authoring` preference for TOML configuration, with a one-line "written by ki" comment.
-8. **`LEDGER-RETIREMENT`** - Keep `_ISSUES.md` as human-readable prose or remove it? Recommendation: remove it once a repository is migrated, and let `ki repo roadmap allocation` print the table; two copies of one number is the defect being fixed.
-9. **`HISTORY-SCOPE`** - Which refs does the allocation check scan? Recommendation: the designated branch and its remote-tracking ref, because the standard already requires every roadmap write to land there; scanning every local ref would honour identifiers from abandoned branches that never reserved a number.
+1. **`SNAPSHOT-HOME`** - One file per repository beside the ledger, or one estate file in this island with a line per repository? Recommendation: per repository, as `_HISTORY.jsonl` beside `_ISSUES.md`. Each repository's series is then repairable from its own history alone, and `ki repo roadmap history` aggregates across a territory or the estate on read. **Settled:** as recommended, under "SIZING - all recommended".
+2. **`SNAPSHOT-DATE`** - Which calendar day does a line belong to? Recommendation: the UTC date, with the repair cutoff at the end of that UTC day, so the series is the same from any machine and timezone. The Observatory displays local time. **Settled:** as recommended, under "SIZING - all recommended".
+3. **`SNAPSHOT-DIMENSIONS`** - Counts by `status` only, as directed, or also by `horizon`? Recommendation: both from the first line. `horizon` is the queue position and costs one small map; adding it later would leave the back-filled series without it. **Settled:** "(b)", the second option, both dimensions, refined to a single keyed cell rather than two maps: "record the counts as well as the weighted counts based on their sizing by a tuple, which is status and horizon, and therefore, in the future, we can choose when we read it to only look at status or only look at horizon or look at the combination of those two." The line shape under "What is written" above records this; the earlier two-map shape is withdrawn.
+4. **`SNAPSHOT-SCHEDULE`** - What runs the daily snapshot? Recommendation: one scheduled job on Kris's workstation under Rig, running `ki` over the registered estate and pushing fast-forward, declared as an Activity note in this island. It needs no remote agent and stays within the Techne programme hold. **Settled:** as recommended, under "SIZING - all recommended".
+5. **`SIZE-GATE`** - Where is `size` required? Recommendation: forbidden on `triage`, optional on `draft`, required for `ready`, with `13` allowed only on `draft` as the split marker. **Settled:** as recommended, under "SIZING - all recommended".
+6. **`SIZE-RESIZE`** - May a size change after `ready`? Recommendation: only on re-plan, noted in the record's Discussion, so velocity is read against the size Kris agreed to when the work was shaped. **Settled:** as recommended, under "SIZING - all recommended".
+7. **`ALLOCATION-FORMAT`** - TOML or JSON, and the name? Recommendation: `_ALLOCATION.toml`, matching `.ki.toml` and the `ki-authoring` preference for TOML configuration, with a one-line "written by ki" comment. **Settled:** as recommended, under "SIZING - all recommended".
+8. **`LEDGER-RETIREMENT`** - Keep `_ISSUES.md` as human-readable prose or remove it? Recommendation: remove it once a repository is migrated, and let `ki repo roadmap allocation` print the table; two copies of one number is the defect being fixed. **Settled:** as recommended, under "SIZING - all recommended".
+9. **`HISTORY-SCOPE`** - Which refs does the allocation check scan? Recommendation: the designated branch and its remote-tracking ref, because the standard already requires every roadmap write to land there; scanning every local ref would honour identifiers from abandoned branches that never reserved a number. **Settled:** as recommended, under "SIZING - all recommended".
+
+No question remains open. Delivery records, when the Next records close, cite the settled answers here.
