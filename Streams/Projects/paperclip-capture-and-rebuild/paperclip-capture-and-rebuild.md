@@ -50,7 +50,7 @@ Waits on the [[ways-of-working]] model. Questions to settle:
 
 ## Rebuild
 
-Waits on the Design phase and on the [[Techne Programme Hold]] decision for `sol`. Build fresh on `sol` from [[paperclip-rebuild-structure]], with current repository paths, no migration of the `terra` data, and the authenticated deployment mode or a tailnet access policy limited to Kris's own devices before any exposure beyond loopback.
+Waits on the Design phase. Build fresh per host from [[paperclip-rebuild-structure]]: one Paperclip service per host; each territory's company live only on its seat host and absent on the standby; the Knowledge Islands company live on the hub, with Terra reaching it over the tailnet. The [[Techne Programme Hold]] is unchanged. Kris set this design on 15 October (PAPERCLIP-SEAT, the "One service per host" bullet under [[#Notes|Notes]]), and [[ADR-KI-PRINCIPAL-007-territory-seats-on-hosts|ADR-KI-PRINCIPAL-007]] records the territory seats it follows. Each service uses current repository paths, no migration of the `terra` data, and the authenticated deployment mode or a tailnet access policy limited to Kris's own devices before any exposure beyond loopback.
 
 ---
 
