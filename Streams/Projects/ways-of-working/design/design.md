@@ -8,7 +8,7 @@ author: Written with Claude
 
 ## Overview
 
-This folder holds the `ki-design-loop` artefacts for the change-management design in the [[ways-of-working|Ways of working]] Project: how Kris's change management - skills, threads, checkpoints, Initiatives, Projects and records, and the `ki` commands - should be structured now that it has evolved rather than been planned. The artefacts share the slug prefix `change-management` and are temporary: once their outcome is consolidated into a Decision Record, the Project note and the skills the rollout touches, the folder is deleted in one commit.
+This folder holds the `ki-pmo-design` artefacts (the skill was `ki-design-loop` while they were produced) for the change-management design in the [[ways-of-working|Ways of working]] Project: how Kris's change management - skills, threads, checkpoints, Initiatives, Projects and records, and the `ki` commands - should be structured now that it has evolved rather than been planned. The artefacts share the slug prefix `change-management` and are temporary: once their outcome is consolidated into a Decision Record, the Project note and the skills the rollout touches, the folder is deleted in one commit.
 
 ## Brief
 

@@ -28,7 +28,7 @@ Kris's proposal in this thread, verbatim:
 
 <!-- rumdl-enable MD064 -->
 
-Kris subsequently held this thread until the harness had captured the design loop as a skill, then explicitly invoked [`ki-design-loop`](https://github.com/knowledgeislands/ki-agentic-harness/blob/e1c6243e514d4bd5cd43585540b229e58cc4c4ca/skills/change-management/ki-design-loop/SKILL.md) to start the design. The earlier discussion explored retiring duplicate Agora rosters, deriving territory-wide selections and decoupling Paperclip admission from Agora membership. Those are candidate design choices for review; the selector spellings and prefix intent above are the owner's stated preferences. The earlier question about the default scope of a filter alone has not been answered.
+Kris subsequently held this thread until the harness had captured the design loop as a skill, then explicitly invoked [`ki-design-loop`](https://github.com/knowledgeislands/ki-agentic-harness/blob/e1c6243e514d4bd5cd43585540b229e58cc4c4ca/skills/change-management/ki-design-loop/SKILL.md) to start the design; the skill has since been renamed `ki-pmo-design`. The earlier discussion explored retiring duplicate Agora rosters, deriving territory-wide selections and decoupling Paperclip admission from Agora membership. Those are candidate design choices for review; the selector spellings and prefix intent above are the owner's stated preferences. The earlier question about the default scope of a filter alone has not been answered.
 
 ---
 
