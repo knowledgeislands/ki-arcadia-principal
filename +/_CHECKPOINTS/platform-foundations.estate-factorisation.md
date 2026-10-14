@@ -4,7 +4,7 @@ thread: platform-foundations.estate-factorisation
 label: 'Fnd: estate-factorisation'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-14T09:11:38Z
+updated_at: 2026-10-14T09:27:53Z
 ---
 
 # platform-foundations.estate-factorisation
@@ -47,6 +47,7 @@ Only this checkpoint changes in the repository. Local recovery evidence, source 
 
 ## Open questions
 
+- `STORE-REPAIR`: [KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md) remains triage. Missing source-store bindings block repair and skill projection. Ask Kris to approve adoption for planning with [Techne: agent-host](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/techne.agent-host.md), preserving that receiver ownership and avoiding parallel KI source writers. Recommend adopting this existing defect; no new record or lifecycle transition in this refresh.
 - `HOST-WRITES`: [KI-TOOL-KI-CLI-115](</Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-115-enforce-roadmap-writing-checkout.md>) still awaits the replacement-policy choice. Recommendation: unique ledger-only reservation on canonical main, verified ownership, fresh high-water retry and nonce reconciliation after ambiguous transport; existing-record edits also need source-revision checks. Atomic ID-plus-record publication remains the simpler alternative. Keep current policy and Hold until an explicit choice and receiver planning authority; [Techne: agent-host](</Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/techne.agent-host.md>) owns execution.
 - `HOST-GUARDS`: [KI-TOOL-TECHNE-CLI-006](</Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-006-guarded-host-commands.md>)'s structured-status/role/recipe plan remains draft Next. Review the plan through [Techne: agent-host](</Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/techne.agent-host.md>) before Ready/local implementation, re-grounding against Done patching. No provider or SSH grant is implied.
 - `KI-RELEASE`: this thread keeps KI/mgit close-out responsibility. Five KI records remain, so the old zero-roadmap release gate is unmet. Track the already-authorised patch release in [ways-of-working](</Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/knowledge-islands-model.ways-of-working.md>) without duplicating it; any later combined ki/mgit or follow-up release needs Kris's specific approval.
