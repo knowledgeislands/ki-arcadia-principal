@@ -15,3 +15,11 @@
 ## Decision 4 (2026-10-14T21:07:30Z)
 
 - Kris, 2026-10-14, PRFLOW: Keep background agents pushing to ki-agentic-harness main through the ruleset's admin bypass; no change to the ki-delegation push rule.
+
+## Decision 5 (2026-10-14T21:20:47Z)
+
+- Kris, 2026-10-14: I can't stress this enough and I'll be saying this to every single thread, but it's absolutely imperative that you commit your work.
+
+## Decision 6 (2026-10-14T22:24:43Z)
+
+- Kris, 2026-10-14, COMMIT-GATE: Launch one lightest-model background agent to fix the frontmatter in the two reports and the STREAM-9 record list, each committed by explicit path, then commit and push this thread's checkpoint and decisions log. I may well have already dealt with this, so it might be okay. Also, I've got a question outstanding about the use of threads and the excessive amount of check-ins in the area.
