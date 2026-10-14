@@ -6,15 +6,15 @@ title: Notification strategy for delegated work
 kind: deliver
 purpose: capability
 project: ways-of-working
-horizon: next
-status: draft
+status: cancelled
+resolution: rejected
 tags:
   - topic/knowledge-islands
 blocks: []
 blocked_by: []
 baseline_ref: null
 created_at: 2026-10-13T08:21:34Z
-updated_at: 2026-10-13T13:55:00Z
+updated_at: 2026-10-14T13:49:14Z
 ---
 
 # Notification Strategy for Delegated Work
@@ -62,12 +62,9 @@ Phase 1 is the smallest useful step and carries no integration. The receiving re
 4. The `ki-delegation` background-run standard names the events, the milestone line, what the waiter and monitor return, and the coordinator's place outside the delivery path.
 5. The waiter's order is corrected. Evidence from the `ways-of-working` run: twice on 2026-10-13 `ki agent wait --next` returned an older unseen finish rather than the newest, because the launcher walks agents in alphabetical name order and returns the first unseen one that has stopped. At 09:53 it returned `merge`, finished at 04:52, while `notify` and `report-format` had finished at 09:25 and 09:32; `review-fable` and `review-astra`, finished at 04:20 and 04:31, were never returned. A sequenced events log with the seen marker keyed by event removes the defect, so it is a phase 1 requirement rather than a separate corrective record.
 
-## Dependencies / blocks
+## Cancelled
 
-- `tools-ki` delivers the phase 1 mechanics: the events log, its derivation, the sequenced waiter and monitor, and the milestone line in the progress protocol the launcher appends. Durable documentation: [the tools-ki README](https://github.com/knowledgeislands/tools-ki/blob/main/README.md), which describes `ki agent`.
-- `ki-agentic-harness` delivers the phase 1 wording: the event vocabulary, the milestone line, the waiter and monitor behaviour and the coordinator rule in the `ki-delegation` background-run standard and its run-prompt skeleton. Durable documentation: [the background-run standard](https://github.com/knowledgeislands/ki-agentic-harness/blob/main/skills/governance/ki-delegation/references/standards-background-runs.md).
-- Phases 2 to 4 are handed to `tools-ki`, chezmoi and `apps-observatory.local` once phase 1 has landed; the Telegram bot is recorded in [[Admin/Governance/Conventions/Admin Conventions/Integrations|Integrations]] through the Enactment Process when phase 2 creates it.
-- Nothing in this repository blocks the work; `blocked_by` is empty. The record closes when every phase has landed in its owner and the interim chat-only preference has been retired by the owner.
+Cancelled 2026-10-14 as rejected (parked): Kris approved the state-of-play thread's roadmap census on 2026-10-14 ('RC-ALL: approve all'), which parked it because the strategy is adopted and its phase 1 is already handed to `tools-ki` (KI-TOOL-KI-CLI-123) and the harness (KI-HARNESS-GOV-175), so the record held only the later phases with no delivery of its own. Its owner decisions, recommended approach and four-phase plan are kept as an idea in the ways-of-working Project (`Streams/Projects/ways-of-working/ways-of-working.md`); Git history keeps the full record. It leaves no outstanding change.
 
 ## Discussion
 
