@@ -699,3 +699,15 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 168 (2026-10-15T21:50:16Z)
 
 - THREAD-NAMES - (Kris, 15 October 22:45 BST, relayed by state-of-play) Showing the thread list `KI > SoP`, `KI > Model > ways of working`, `KI > Model > knowledge acquisition`, `KI > Rig > mac studio setup`, `KI > mics / webcams`, `Acquire > intake (sol)`, `Chezmoi > misc (sol)`: "this is a better way I think". On the host suffix: "no, the machine is only added if its limited to that machine, so intake and chezmoi misc are machine specific". State-of-play's direction: adopt it into ki-pmo's openers and the checkpoint labels; propose the label change to Kris before rewriting any checkpoint.
+
+## Decision 169 (2026-10-15T22:50:48Z)
+
+- LABEL-CHANGE - (Kris, 15 October) Relabel this thread's checkpoint to KI > Model > ways of working once thread-names lands, keeping the file and run names, and use it in the resume line.
+
+## Decision 170 (2026-10-15T22:50:48Z)
+
+- GATE-INACTIVE - (Kris, 15 October) Authorise one short harness-gate run to run bun install in ki-agentic-harness on sol, rerun bun run test and bunx tsc --noEmit, commit pmo-hold's and registry-model's files by explicit path through the gate, pull with rebase and push fast-forward; queued harness agents then commit through the gate as normal.
+
+## Decision 171 (2026-10-15T22:50:48Z)
+
+- PICKUP-HEADING - (Kris, 15 October) Keep the bold-line pick-up heading, so every checkpoint passes ki-checkpoint unchanged.
