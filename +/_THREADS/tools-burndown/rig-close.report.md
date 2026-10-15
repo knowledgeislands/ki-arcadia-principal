@@ -60,10 +60,10 @@ Both primary main checkouts are clean at the final observation, with zero outgoi
 
 Pruning could not proceed within the authorised scope. All four accepted candidates have surviving orphaning links in peer files this task explicitly forbids editing:
 
-- RIG-CORE-041: [ki-arcadia-principal bootstrap checkpoint](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/rig.mac-studio-bootstrap.md:32) and [chezmoi software-alignment record](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-086-finish-software-alignment.md:33).
-- RIG-CORE-043: [bootstrap checkpoint](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/rig.mac-studio-bootstrap.md:32).
+- RIG-CORE-041: [ki-arcadia-principal bootstrap checkpoint](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/rig.mac-studio-setup.md:32) and [chezmoi software-alignment record](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/DOTFILES-UE-086-finish-software-alignment.md:33).
+- RIG-CORE-043: [bootstrap checkpoint](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/rig.mac-studio-setup.md:32).
 - RIG-CORE-044: [chezmoi checkpoint](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/rig.chezmoi.md:24), whose GitHub locator names mutable main and would break after deletion.
-- RIG-CORE-045: [bootstrap checkpoint](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/rig.mac-studio-bootstrap.md:57).
+- RIG-CORE-045: [bootstrap checkpoint](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/rig.mac-studio-setup.md:57).
 
 The bootstrap checkpoint also contains surviving future-dependent bare-ID prose at lines 55 and 56; it needs completion-state reconciliation by its owner, not blanket ID replacement. No candidate retains a failing captured delivery requirement. Current verification failures introduced during closure were resolved; remaining failures are bounded pruning authority/source-evidence blockers.
 

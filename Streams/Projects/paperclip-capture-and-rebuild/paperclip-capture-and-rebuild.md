@@ -17,7 +17,7 @@ author: Written with Claude
 
 Paperclip's approach is captured in the island, the service on `terra` is stopped, and a fresh rebuild is designed once the [[ways-of-working]] model settles. Kris chose on 2026-10-14 to keep the approach and lose the history: 'I don't want the history or a database backup, I want to recreate it with the same approach but fresh'. The rebuild starts from the captured structure, not from the old instance.
 
-This Project sits in [[Initiatives/techne|Techne]]. Hosting the rebuild on `sol` belongs to [[mac-studio-bootstrap]], and whether Paperclip may run there at all is governed by the [[Techne Programme Hold]]. It replaces the earlier bootstrap-and-recovery outcome, which aimed at one reviewed VA delivery; that aim is moot now the instance is stopped.
+This Project sits in [[Initiatives/techne|Techne]]. Hosting the rebuild on `sol` belongs to [[mac-studio-setup]], and whether Paperclip may run there at all is governed by the [[Techne Programme Hold]]. It replaces the earlier bootstrap-and-recovery outcome, which aimed at one reviewed VA delivery; that aim is moot now the instance is stopped.
 
 ---
 

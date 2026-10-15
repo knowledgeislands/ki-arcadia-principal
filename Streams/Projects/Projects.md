@@ -80,9 +80,9 @@ Links point upwards only: a work record names its Project, and a Project names i
 
 ---
 
-## Mac Studio bootstrap
+## Mac Studio setup
 
-[[mac-studio-bootstrap]] brings Kris's Mac Studio, unused for over a month, back to full estate capability: chezmoi, Rig, Homebrew `ki`, the workspace and an agent runtime, so any thread can resume there. It sits under [[rig|Rig]] because the Mac Studio is a workstation.
+[[mac-studio-setup]] brings Kris's Mac Studio, unused for over a month, back to full estate capability: chezmoi, Rig, Homebrew `ki`, the workspace and an agent runtime, so any thread can resume there. It sits under [[rig|Rig]] because the Mac Studio is a workstation.
 
 ---
 

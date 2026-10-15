@@ -39,7 +39,7 @@
   - `rumdl check` passed on the checkpoint, the thread folder and the draft, after one line-length fix in the draft.
   - `ki repo audit --repo . --skill ki-checkpoint` has no finding for `rig.chezmoi.md`. It fails on four findings, all in other threads' checkpoints:
     - RECORD-2 in [platform-foundations.estate-factorisation.md](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/platform-foundations.estate-factorisation.md);
-    - RECORD-2 and BOUNDARY-1 in [rig.mac-studio-bootstrap.md](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/rig.mac-studio-bootstrap.md);
+    - RECORD-2 and BOUNDARY-1 in [rig.mac-studio-bootstrap.md](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/rig.mac-studio-setup.md);
     - LIFECYCLE-1 in [knowledge-islands-model.observatory.md](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/knowledge-islands-model.observatory.md).
 - **Nothing committed.** `git rm` stages its own deletions, so the 31 deletions are in the primary checkout's index, which already held other threads' staged files. Nothing else is staged. The checkpoint, `decisions.md`, this report and `apply-groups.report.md` are unstaged and uncommitted.
 
