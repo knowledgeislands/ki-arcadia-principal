@@ -18,6 +18,9 @@ updated_at: 2026-10-15T15:14:39Z
   2. Work out the RESTART-SET pick-up model (banner type × thread type: conversational, coordination, state-of-play), then hand HOLD-MODEL, HOLD-VERBS, HOST-ROLES' write-up and RESTART-SET to KI Model: ways-of-working.
   3. Reinstate KI Model: ways-of-working, Rig: chezmoi and Acquire: acquire-intake (the latter two outside this territory, this time only); Rig: mac-studio-bootstrap carries on. Every other thread stays on hold.
   4. Put the open queries under Open questions back to Kris.
+- **Persisted at the hold** (hold-persist, 15 October; resuming work must fold or discard each of these branches deliberately):
+  - `ki-agentic-harness`: `hold/2026-10-15/working-state`, the untracked `+/_THREADS/skill-reviews/` folder of the archived skill-reviews thread; `hold/2026-10-15/retirement-preserved-territory-selection`, the four commits under the local ref `refs/ki/retirement-preserved/territory-selection-codex-20261007-2133/harness`. The local branch `automation/ki-v0.10.0` (one commit, `chore(ci): install ki v0.10.0`) is pushed to its own name.
+  - `ki-principal`: `hold/2026-10-15/working-state`, Rig: mac-studio-bootstrap's modified `+/_THREADS/mac-studio-bootstrap/chezmoi-fix.report.md`; `hold/2026-10-15/rebase-repair-autostash`, the local ref `refs/rebase-repair/autostash-f091d468`.
 
 ## Objective
 
