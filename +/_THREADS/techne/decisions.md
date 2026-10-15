@@ -287,3 +287,7 @@
 ## Decision 68 (2026-10-15T09:49:27Z)
 
 - DRAIN FOR SOL (Kris, 15 October 2026), as received: "I am moving working to sol next. Bring this thread to a clean, recoverable rest now. Do not start new work and do not launch new background agents." Class: operational.
+
+## Decision 69 (2026-10-15T14:59:21Z)
+
+- DRAIN CHECK (Kris, 15 October 2026): a drain is a mark plus stopping all work so the thread can be archived on terra and resumed on sol from the repository alone; step 0 (capture the drain form in ki-pmo) is for the KI Model ways-of-working thread only; for this thread: wrap up, commit and push, park every open query, held, parked and waiting item and the next step in the checkpoint with running nothing and state drained, strike a mark, no baseline commit, then a short drain report with the DRAINED frame.

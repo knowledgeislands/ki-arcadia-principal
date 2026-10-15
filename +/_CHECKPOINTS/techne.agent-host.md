@@ -4,7 +4,7 @@ thread: techne.agent-host
 label: 'Techne: agent-host'
 state: active
 created_at: 2026-10-07T09:05:00Z
-updated_at: 2026-10-15T09:50:00Z
+updated_at: 2026-10-15T14:59:23Z
 ---
 
 # techne.agent-host
@@ -17,9 +17,9 @@ The thread moves agent work off the laptop onto the one agent host the [Techne P
 
 ## Current state
 
-Mark: 2026-10-14T22:22Z
+Mark: 2026-10-15T14:59Z
 
-Running: nothing. Drained for the move to sol on 2026-10-15 (Decision 68); no run is unfinished and no brief is outstanding.
+Running: nothing. State: drained on 2026-10-15 (Decision 69) for archiving on terra and resuming on sol from the repository alone; no run is unfinished and no brief is outstanding.
 
 Thread folder: +/_THREADS/techne/
 
@@ -50,7 +50,7 @@ ki-pmo read at daa63224
 - **Other harness work, not re-audited here.** TECHNE-TOOLS-OPS-016 (to be replaced by a `tools-rig` signed-release kind), TECHNE-TOOLS-OPS-018, TECHNE-TOOLS-OPS-019 and TECHNE-TOOLS-OPS-023 sit in triage; KI-HARNESS-GOV-170 (keep resolution targets local) is planned, draft, in `ki-agentic-harness`.
 - **The Mac.** `terra`; chezmoi `rigProfile` is `laptop`; Tailscale is up. `~/.local/bin/techne` was relinked with `install.sh --link` on 2026-10-14.
 - **Procedure.** The [operator runbook](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/guides/operator/agent-host.md), [recipe manifest](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/recipes/agent-host/recipe.toml), [stack template](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/infra/aws/agent-host-stack.yaml) and `operations/aws/agent-host/` scripts own the procedure; re-read current sources before execution. The [vega rebuild plan](/Users/krisbrown/.local/state/ki/agents/tools-burndown/vega-rebuild-plan.report.md) and [readiness snapshot](/Users/krisbrown/.local/state/ki/agents/tools-burndown/vega-readiness.json) are supporting evidence only.
-- **Decisions log.** Runs to Decision 68, committed in `+/_THREADS/techne/decisions.md`. `~/.local/state/ki/agents/techne/` stays on terra; everything needed to resume is in the thread folder and this checkpoint. The vega rebuild plan and readiness snapshot linked under Procedure are terra-local evidence only.
+- **Decisions log.** Runs to Decision 69, committed in `+/_THREADS/techne/decisions.md`. `~/.local/state/ki/agents/techne/` stays on terra; everything needed to resume is in the thread folder and this checkpoint. The vega rebuild plan and readiness snapshot linked under Procedure are terra-local evidence only.
 
 ## Decisions made
 
@@ -86,10 +86,15 @@ Handoffs:
 - **RIG-LINK** (with state-of-play): `~/.local/bin/rig` links to the retired `~/workspaces/kit/knowledgeislands/tools-rig` path and is broken; it belongs to the Rig thread.
 - **Firewall** (with `mac-studio-bootstrap`): KI-TOOL-RIG-CORE-047 (macOS) and KI-TOOL-RIG-CORE-051 (Linux nftables) are delivered and awaiting review there; nothing is planned or implemented here. The Mac Studio owned-host exemption is KI-ARCADIA-GOV-033 in that thread.
 
+Held:
+
+- [KI-TECHNE-OPS-018](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/roadmap/KI-TECHNE-OPS-018-converge-tools-through-rig.md) (converge host tools through Rig): on hold per its record until Kris releases it.
+- The vega host name in `status.sh`: held until Kris releases it.
+
 Parked:
 
 - Parked 2026-10-09: personal harness instructions - Kris wants the Claude and Codex instructions to become skills from a personal harness, leaving thin `CLAUDE.md` and `AGENTS.md`; raise in state-of-play when picked up.
 
 ## Next step
 
-On sol: re-bootstrap from this checkpoint, then wait on Kris for CLI-133-DELIVER. Until KI-TOOL-KI-CLI-133 is fixed, remove re-copied retired reports by explicit path after any `ki agent decide`. Once KI-TOOL-TECHNE-CLI-009 is delivered, ki-techne-harness adds the matching optional recipe parameter. Resume line: `Resume Techne: agent-host under current ki-pmo and ki-delegation since 2026-10-14T22:22Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`
+On sol: re-bootstrap from this checkpoint, then wait on Kris for CLI-133-DELIVER. Until KI-TOOL-KI-CLI-133 is fixed, remove re-copied retired reports by explicit path after any `ki agent decide`. Once KI-TOOL-TECHNE-CLI-009 is delivered, ki-techne-harness adds the matching optional recipe parameter. Resume line: `Resume Techne: agent-host on sol from its checkpoint under current ki-pmo and ki-delegation since 2026-10-15T14:59Z: re-bootstrap, read the parked queries, take stock, restart authorised work, then banner.`
