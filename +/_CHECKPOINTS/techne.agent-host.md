@@ -4,7 +4,7 @@ thread: techne.agent-host
 label: 'Techne: agent-host'
 state: active
 created_at: 2026-10-07T09:05:00Z
-updated_at: 2026-10-14T22:22:00Z
+updated_at: 2026-10-15T09:50:00Z
 ---
 
 # techne.agent-host
@@ -18,6 +18,8 @@ The thread moves agent work off the laptop onto the one agent host the [Techne P
 ## Current state
 
 Mark: 2026-10-14T22:22Z
+
+Running: nothing. Drained for the move to sol on 2026-10-15 (Decision 68); no run is unfinished and no brief is outstanding.
 
 Thread folder: +/_THREADS/techne/
 
@@ -40,7 +42,7 @@ ki-pmo read at daa63224
 
 - **The host.** vega was rebuilt on 2026-10-14 under Decision 45, Kris directing each step. The new stack `ki-techne-agent-host` runs instance `i-0cb5fa8cc1cd1d7d0` (t3.medium, 40 GB encrypted gp3, zsh, no inbound rules, OpenSSH and SSM agent inactive); OS and tailnet name `vega`; `techne` without sudo. The spent Tailscale key is deleted; the GitHub token is kept (expires 2027-01-05). `status.sh` reports 20 repositories clean, 50 security updates pending and no reboot required. The controller stack is untouched.
 - **Host patching.** KI-TOOL-TECHNE-CLI-008 (accepted and pruned 2026-10-14) delivered the patching fields; the live check passed on 2026-10-14 against vega (`updates`: os ubuntu, pending 73, security 50, reboot_required false, livepatch disabled). OS patching (TECHNE-TOOLS-OPS-022) and the chezmoi workstation bundle (DOTFILES-UE-073) are accepted and pruned; the workstation pilot (TECHNE-TOOLS-OPS-015) is accepted and kept.
-- **Sources.** Done (Decisions 53-55): vega's ki-principal `sources` role is bound to an empty read-only stand-in, `ki repo --estate repair` passes (20 healthy) and `converge.sh` binds the stand-in on rebuild (runbook section "Sources stand-in"). The lasting fix is [KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md) (triage). vega stays Knowledge Islands-only; cross-host sync waits until a territory and host are named.
+- **Sources.** Done (Decisions 53-55): vega's ki-principal `sources` role is bound to an empty read-only stand-in, `ki repo --estate repair` passes (20 healthy) and `converge.sh` binds the stand-in on rebuild (runbook section "Sources stand-in"). The lasting fix is [KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md) (triage). vega stays Knowledge Islands-only; cross-host sync waits until a territory and host are named. tools-ki may already carry the CLI-126 fix (a commit on 2026-10-14 makes repair warn on an unavailable store); confirm, then retire the vega stand-in once vega runs it.
 - **Tailscale key minting.** [KI-TECHNE-OPS-027](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/roadmap/KI-TECHNE-OPS-027-agent-host-tailscale-key-minting.md) is adopted at horizon now (Decision 56) and implemented (`mint-tailscale-key.sh`, guide section "Key minting"), awaiting review; it waits on TS-OAUTH-LIVE. Kris passed the live `--check` on 2026-10-14 and it was accepted done through ki-accept, not pruned (Decisions 61 and 62).
 - **Pins.** `recipes/agent-host/rig.toml` in the harness is the one list of host tool versions (`mise` 2026.10.6, `codex` 0.162.0); the Mac is no longer compared against it. TECHNE-TOOLS-OPS-024 (weekly pin bump) is ready; its tool waits for the role profile to move to a `roles/` folder. The historical ki 0.10.0 host pin needs owner compatibility review before reuse.
 - **Boundary audit.** Kris accepted all ten Rig and Techne boundary decisions (Decision 40). The explainer is [[Hosts, Roles and Layers]], reviewed by the island-model-and-tending thread on 2026-10-14; cross-repository handoffs go through state-of-play.
@@ -48,7 +50,7 @@ ki-pmo read at daa63224
 - **Other harness work, not re-audited here.** TECHNE-TOOLS-OPS-016 (to be replaced by a `tools-rig` signed-release kind), TECHNE-TOOLS-OPS-018, TECHNE-TOOLS-OPS-019 and TECHNE-TOOLS-OPS-023 sit in triage; KI-HARNESS-GOV-170 (keep resolution targets local) is planned, draft, in `ki-agentic-harness`.
 - **The Mac.** `terra`; chezmoi `rigProfile` is `laptop`; Tailscale is up. `~/.local/bin/techne` was relinked with `install.sh --link` on 2026-10-14.
 - **Procedure.** The [operator runbook](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/guides/operator/agent-host.md), [recipe manifest](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/recipes/agent-host/recipe.toml), [stack template](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/infra/aws/agent-host-stack.yaml) and `operations/aws/agent-host/` scripts own the procedure; re-read current sources before execution. The [vega rebuild plan](/Users/krisbrown/.local/state/ki/agents/tools-burndown/vega-rebuild-plan.report.md) and [readiness snapshot](/Users/krisbrown/.local/state/ki/agents/tools-burndown/vega-readiness.json) are supporting evidence only.
-- **Decisions log.** Runs to Decision 66.
+- **Decisions log.** Runs to Decision 68, committed in `+/_THREADS/techne/decisions.md`. `~/.local/state/ki/agents/techne/` stays on terra; everything needed to resume is in the thread folder and this checkpoint. The vega rebuild plan and readiness snapshot linked under Procedure are terra-local evidence only.
 
 ## Decisions made
 
@@ -74,7 +76,7 @@ This update changes only this checkpoint and `+/_THREADS/techne/`. Earlier threa
 
 For Kris:
 
-- **CLI-133-PLAN:** plan [KI-TOOL-KI-CLI-133](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-133-retired-reports-come-back.md) (`ki agent decide` and `close` re-copy retired reports through `adoptStateFiles`; adopted at horizon now under REPORT-RECOPY, Decision 65) now with ki-plan; recommended yes. [KI-TOOL-TECHNE-CLI-009](/Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-009-tailscale-oauth-binding-field.md) adopted as deliver at horizon next (Decision 64); state-of-play told of the defect through its inbox.
+- **CLI-133-DELIVER:** [KI-TOOL-KI-CLI-133](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-133-retired-reports-come-back.md) is Ready (reproduced against the installed `ki`; fix: adopt a state file only if Git has never held that path in the thread folder). Recommended: deliver on Sonnet through ki-implement, stop at Awaiting review, commit and push, no release. Report: `+/_THREADS/techne/cli133-plan.report.md`. [KI-TOOL-TECHNE-CLI-009](/Users/krisbrown/workspaces/knowledge-islands/tools-techne/docs/roadmap/KI-TOOL-TECHNE-CLI-009-tailscale-oauth-binding-field.md) is adopted as deliver at horizon next (Decision 64).
 
 Handoffs:
 
@@ -90,4 +92,4 @@ Parked:
 
 ## Next step
 
-Wait on Kris for CLI-133-PLAN. Until KI-TOOL-KI-CLI-133 is fixed, remove re-copied retired reports by explicit path after any `ki agent decide`. Once KI-TOOL-TECHNE-CLI-009 is delivered, ki-techne-harness adds the matching optional recipe parameter.
+On sol: re-bootstrap from this checkpoint, then wait on Kris for CLI-133-DELIVER. Until KI-TOOL-KI-CLI-133 is fixed, remove re-copied retired reports by explicit path after any `ki agent decide`. Once KI-TOOL-TECHNE-CLI-009 is delivered, ki-techne-harness adds the matching optional recipe parameter. Resume line: `Resume Techne: agent-host under current ki-pmo and ki-delegation since 2026-10-14T22:22Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`

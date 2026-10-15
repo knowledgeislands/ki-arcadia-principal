@@ -283,3 +283,7 @@
 ## Decision 67 (2026-10-14T22:58:45Z)
 
 - CLI-133-PLAN (Kris, 2026-10-14), as received: "Plan KI-TOOL-KI-CLI-133 now with ki-plan on Sonnet, reproduction against the installed ki first, then report it Ready for my delivery go-ahead". Class: operational.
+
+## Decision 68 (2026-10-15T09:49:27Z)
+
+- DRAIN FOR SOL (Kris, 15 October 2026), as received: "I am moving working to sol next. Bring this thread to a clean, recoverable rest now. Do not start new work and do not launch new background agents." Class: operational.
