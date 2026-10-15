@@ -7,7 +7,7 @@ initiative: rig
 lifecycle: planned
 lead: Kris Brown
 target: null
-updated: 2026-10-14T23:30:00Z
+updated: 2026-10-15T21:18:00Z
 author: Written with Claude
 ---
 
@@ -27,3 +27,4 @@ This Project sits in [[rig|Rig]]. Kris opened it on 2026-10-14 as a planned Proj
 - **Territory-to-host primacy.** On 14 October Kris set a territory-to-host primacy: each territory primarily used and maintained on one host, with all eight territories still checked out on both `terra` and `sol` (Decision 207 in the state-of-play decisions log). It is pending the foundations-coherence review.
 - **Handoff from [[island-model-and-tending|Island model and Tending]].** Territory addressing stays there as a model question; the tailnet and DNS work it leads to comes here later as a handoff.
 - **Known World part, 2026-10-15.** On 15 October Kris placed the foundations model in [[Known World]] and gave this Project its part: turning addresses into names, with tailnet naming, seat resolution and failover, and tailnet-only listeners; every change is connection-critical. It depends on the address scheme held in [[island-model-and-tending|Island model and Tending]].
+- **Seat host binding, 2026-10-15.** Kris bound the two seat roles of [[ADR-KI-PRINCIPAL-007-territory-seats-on-hosts|ADR-KI-PRINCIPAL-007]] to hosts: the home role is `terra`, the laptop, and the hub role is `sol`, the Mac Studio. So `terra` is the seat of personal, legal and humans-not-robots; `sol` is the seat of valle-armonia, sacred-inquiry, techmedix and equal-remedy; knowledge-islands is seated on both, tipped to `sol`. The [[Known Lands]] Seat column names roles and points here for the hosts. The machine binding in host data belongs to [[chezmoi|Rig: chezmoi]], handed over as SEAT-HOSTS.

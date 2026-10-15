@@ -1,6 +1,6 @@
 ---
 note_type: streams/index
-updated: 2026-10-14T09:45:00Z
+updated: 2026-10-15T21:20:00Z
 author: Written with Claude
 ---
 
@@ -56,3 +56,7 @@ The remaining names in the set pass: `ki-plan`, `ki-implement`, `ki-accept`, `ki
 ## Thread types and durable decisions
 
 [[thread-types-and-durable-decisions]] is a design-only note for Kris's sanity check before anything is built. It defines thread, session and chat, recommending thread as the owner-facing term and session only for the runtime instance; defines the three thread types (conversational, coordination and state-of-play) with each type's purpose, delegation, identity, banner and close-out, including a CLOSED state word for the coordination frame; models the decision lifecycle from utterance to thread log, work record, Decision Record and enacted knowledge, with four decision classes set at each mark; models the lifecycle of design notes and their move to `+/_DESIGN/<subject-slug>/`; names each unit with its boundary and hand-offs, lists the pending records it touches, and ends with eight tagged open questions, each with a recommendation.
+
+## Restart model
+
+[[restart-model]] is a design-only note for adoption into `ki-pmo`: the pick-up state of a thread as its banner type combined with its thread type, in one table giving each combination's status, resume line and first instructions on resume and naming the combinations that cannot occur, with six rules folding in Kris's HOLD-MODEL, HOLD-VERBS and HOLD-BANNER of 15 October 2026: drain and resume are activities and hold is the state, every banner writes a pick-up block at the top of the checkpoint, no resume line names a host, and the drain report becomes the hold report with a HOLD frame.
