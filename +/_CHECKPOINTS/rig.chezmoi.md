@@ -2,9 +2,9 @@
 type: ki-checkpoint
 thread: rig.chezmoi
 label: 'Rig: chezmoi'
-state: active
+state: drained
 created_at: 2026-10-08T08:40:00Z
-updated_at: 2026-10-15T09:55:00Z
+updated_at: 2026-10-15T15:00:00Z
 ---
 
 # rig.chezmoi
@@ -33,13 +33,13 @@ Work the open KB-DOTFILES-UE records in the chezmoi source (`~/.local/share/chez
 
 ## Current state
 
-Mark: 2026-10-14T20:18Z
+Mark: 2026-10-15T14:59Z (drain mark; the previous mark was 2026-10-14T20:18Z)
 
 Thread folder: +/_THREADS/chezmoi/
 
 ki-pmo read at daa63224
 
-**Drained for the move to sol (Kris, 2026-10-15).** Nothing is running or queued. The dispatcher has exited. The chezmoi source is clean and level with origin. Everything this thread did is pushed. The machine-local state folder `~/.local/state/ki/agents/chezmoi/` holds only spent briefs and status files, and nothing in it is needed to resume.
+**State: drained (DRAIN CHECK, Kris, 2026-10-15; mark 2026-10-15T14:59Z).** Running: nothing. Queued: nothing. The dispatcher has exited. The chezmoi source is clean and level with origin. Everything this thread did is pushed. The machine-local state folder `~/.local/state/ki/agents/chezmoi/` holds only spent briefs and status files, and nothing in it is needed to resume.
 
 Done since the mark, all pushed:
 
@@ -83,7 +83,7 @@ The decisions log `+/_THREADS/chezmoi/decisions.md` (to Decision 77) holds every
 
 ## Open questions
 
-Needs Kris (queries in the [burn-a](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/chezmoi/burn-a.report.md) and [burn-b](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/chezmoi/burn-b.report.md) reports, put to Kris in the 2026-10-15 00:34 BST Summary):
+Parked queries, each with its recommended option (bodies in the [burn-a](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/chezmoi/burn-a.report.md) and [burn-b](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/chezmoi/burn-b.report.md) reports, put to Kris in the 2026-10-15 00:34 BST Summary):
 
 - **IWORK:** close KB-DOTFILES-UE-086 A8 with Keynote, Numbers and Pages left catalogue-only. Recommended: yes, tick A8.
 - **STYLE-LINK:** KB-DOTFILES-UE-090 gap 3. Recommended: a read-only check that reports a dead `ki-coordinator` output-style link after apply, with no pulling during apply.
@@ -110,6 +110,6 @@ On sol:
 1. Re-bootstrap from this checkpoint with the resume line, and fetch both repositories.
 2. Put the five open queries and the three Master messages to Kris.
 3. Once answered, launch Sonnet agents for STYLE-LINK and DIR-PRUNE (chained, both chezmoi), then FW-DECLARE, SEAT-BIND and PAPERCLIP-OFF as chezmoi source changes with no apply on sol until its Rig is 0.6.0 or later.
-4. Tidy the thread folder at the next mark: delete the apply-groups, burn-order, coord-style, ff-check, mark-tidy, pmo-adopt2, src-trio, triage, ue086-a, vault-apply-3 and vault-left reports, whose queries are answered.
+4. Tidy the thread folder at the first mark on sol (the drain left tidying to sol): delete the apply-groups, burn-order, coord-style, ff-check, mark-tidy, pmo-adopt2, src-trio, triage, ue086-a, vault-apply-3 and vault-left reports, whose queries are answered.
 
-Resume line: `Resume Rig: chezmoi under current ki-pmo and ki-delegation since 2026-10-14T20:18Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`
+Resume line: `Resume Rig: chezmoi on sol from its checkpoint under current ki-pmo and ki-delegation since 2026-10-15T14:59Z: re-bootstrap, read the parked queries, take stock, restart authorised work, then banner.`

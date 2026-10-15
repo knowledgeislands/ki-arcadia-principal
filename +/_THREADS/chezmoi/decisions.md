@@ -313,3 +313,11 @@
 ## Decision 77 (2026-10-14T23:17:20Z)
 
 - 2026-10-15, Kris: TRIAGE - 'A Sonnet agent adopts KB-DOTFILES-UE-087, KB-DOTFILES-UE-088, KB-DOTFILES-UE-090 and KB-DOTFILES-UE-091 at Next, and KB-DOTFILES-UE-089 at Future, then commits locally.' BURN-START - 'After TRIAGE, Sonnet agents at low effort work through, in order: KB-DOTFILES-UE-082; the small source step of KB-DOTFILES-UE-086 (declaring Adobe, Keynote, Numbers, Pages and DaVinci); a read-only check of KB-DOTFILES-UE-077's nine 1Password references and the old cache; KB-DOTFILES-UE-088 in the source only; and the source-only parts of KB-DOTFILES-UE-090 and KB-DOTFILES-UE-091. Each plans the record if it isn't Ready, delivers source changes only with the tests passing, and commits locally; the coordinator pushes. No chezmoi apply or rig apply. Anything that needs design or a decision from me stops and comes back as a query.'
+
+## Decision 78 (2026-10-15T09:49:00Z)
+
+- 2026-10-15, Kris: DRAIN FOR SOL - 'I am moving working to sol next. Bring this thread to a clean, recoverable rest now. Do not start new work and do not launch new background agents.' Done: nothing was running; the checkpoint was updated and pushed; the thread folder tidy is left for sol.
+
+## Decision 79 (2026-10-15T14:59:00Z)
+
+- 2026-10-15, Kris: DRAIN CHECK - 'A drain is a mark plus stopping all work, so that the thread can be archived on terra and resumed on sol from the repository alone.' Mark struck at 2026-10-15T14:59Z; checkpoint state set to drained, with the open queries, held, parked and waiting-on items and the next step parked in it.
