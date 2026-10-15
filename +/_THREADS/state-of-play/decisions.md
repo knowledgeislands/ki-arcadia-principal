@@ -981,3 +981,9 @@ Kris: "remember your job is coordination of coordination threads, we dispatch ou
 ## 2026-10-16 00:05 BST - review the open queries for a first wave (QUERY-REVIEW)
 
 Kris: "can you review all of the outstanding queries and check on them? And maybe we can come up with a subset that we can tackle first that we've got high confidence over so we can get some of those things moving for you."
+
+## 2026-10-16 01:00 BST - TOOLS-PROJECT and REPO-GIT-HYGIENE
+
+Kris, TOOLS-PROJECT: "Revive tools-burndown as a Project under Platform foundations, thread KI > Foundations > tools burndown, scoped to tools-ki, tools-mgit, tools-git-almanac and the CLI-shaped ki-agentic-harness records, excluding tools-rig and tools-techne, ending with the ki and mgit releases; write me its opener to paste."
+
+Kris, REPO-GIT-HYGIENE: "Make the PR and branch clean-down ki-git rubric checks run through ki repo audit and conform, fleet-wide through mgit: the tools burndown thread first checks what mgit already reports, then captures one ki-next triage record in tools-ki (open PRs, merged and stale branches, ahead and behind, stashes, worktrees, untracked files), routes the rubric rule to KI Model: ways-of-working, and folds STALE-BRANCHES, UNPUSHED-COMMITS and STAGING-LEFTOVERS into it."
