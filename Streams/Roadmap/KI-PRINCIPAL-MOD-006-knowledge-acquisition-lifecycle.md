@@ -10,7 +10,6 @@ tags:
   - topic/knowledge-islands
   - topic/acquisition
 status: awaiting-review
-priority: medium
 horizon: now
 blocks: []
 blocked_by: []

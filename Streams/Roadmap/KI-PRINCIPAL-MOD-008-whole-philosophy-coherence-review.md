@@ -10,7 +10,6 @@ component: model
 tags:
   - topic/knowledge-islands
 status: draft
-priority: medium
 horizon: hold
 hold:
   reason: parked

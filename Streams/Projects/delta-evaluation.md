@@ -4,10 +4,10 @@ slug: delta-evaluation
 title: Delta evaluation
 outcome: Kris decides whether Delta earns a bounded trial as a delivery and review interface alongside Paperclip, and the outcome is routed to its durable owner.
 initiative: techne
-lifecycle: paused
+lifecycle: planned
 lead: Kris Brown
 target: null
-updated: 2026-10-14T00:00:44Z
+updated: 2026-10-15T21:34:08Z
 author: Written with Claude
 ---
 
@@ -15,7 +15,7 @@ author: Written with Claude
 
 ## Outcome
 
-Decide whether [Delta](https://delta.dev/) earns a bounded trial as a delivery and review interface alongside Paperclip, and route the outcome to its durable owner. Delta is assessed as a possible complement to the present KI coordination arrangement, not a Paperclip replacement. The test: Kris has answered yes or no, and either a draft trial record exists or the assessment summary has a durable home.
+Kris decides whether [Delta](https://delta.dev/) earns a bounded trial as a delivery and review interface alongside Paperclip, and the outcome is routed to its durable owner. Delta is assessed as a possible complement to the present KI coordination arrangement, not a Paperclip replacement. The test: Kris has answered yes or no, and either a draft trial record exists or the assessment summary has a durable home.
 
 This Project sits in [[Initiatives/techne|Techne]], beside [[paperclip-capture-and-rebuild]].
 
@@ -23,7 +23,7 @@ This Project sits in [[Initiatives/techne|Techne]], beside [[paperclip-capture-a
 
 ## Notes
 
-- **On hold.** Paused on 2026-10-11 by Kris, who approved on 2026-10-11 in the state-of-play run, 'CKPT approved (delta-evaluation and roadmap-model on hold; remove territory-rollout checkpoint)': no thread yet.
+- **Idea stage.** Planned since 15 October 2026 as an idea-stage Project: its Outcome is the decision Kris takes, its ideas live in these Notes, and it carries no records and no thread. Kris set the pattern that day: "Treat my AREAS-PATTERN answer of 15 October as answering IDEA-STAGE and IDEA-CAP and close both: an idea-stage Project is a planned Project whose Outcome is a decision, ideas in Notes, no records and no thread, at most one per Initiative and three across the territory", and moved this Project: "IDEA-STAGE - Adopt it as AREAS-PATTERN puts it, with delta-evaluation moving from paused to planned." It was paused on 2026-10-11 by Kris, who approved in the state-of-play run, 'CKPT approved (delta-evaluation and roadmap-model on hold; remove territory-rollout checkpoint)'.
 - **Layer.** Paperclip coordinates companies, agents, tasks, execution and operational approvals, and explicitly leaves code review to a separate process ([overview](https://github.com/PaperclipAI/paperclip)). Delta centres a collaborative coding thread that holds the conversation, file changes, comments and review together ([core concepts](https://delta.dev/docs/concepts/core-concepts)).
 - **Isolated execution.** Delta normally gives each thread a separate checkout and can use an existing Git worktree; its managed checkout nests under `.delta` in a connected local clone ([worktrees](https://delta.dev/docs/concepts/worktrees)). KI delivery requires task-specific isolation and an authorised path into the designated primary checkout.
 - **Independent review.** Delta supports contextual comments and review threads with approval or change-request verdicts ([Delta on the web](https://delta.dev/docs/collaboration/delta-on-the-web)). A trial must still show that an independent reviewer assessed the exact candidate commit and that required verification ran against the proposed combined result.
@@ -39,4 +39,4 @@ This Project sits in [[Initiatives/techne|Techne]], beside [[paperclip-capture-a
 
 ### Close-out assessment
 
-The assessment of Delta is written, in these Notes, but the Outcome's test is not met: Kris has not yet answered whether Delta earns a trial, and the assessment has no durable home. The decision is kept as an idea in these Notes, and the Project is paused until a thread takes it up.
+The assessment of Delta is written, in these Notes, but the Outcome's test is not met: Kris has not yet answered whether Delta earns a trial, and the assessment has no durable home. The decision is kept as an idea in these Notes, and the Project is planned at idea stage, with no records and no thread, until Kris takes it.
