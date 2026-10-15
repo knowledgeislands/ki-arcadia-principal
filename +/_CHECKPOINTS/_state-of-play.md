@@ -71,11 +71,11 @@ Rules live with their durable owners: the roadmap model in [GDR-KI-PRINCIPAL-005
 
 ## Open questions
 
-Waiting on Kris (each with its report in `+/_THREADS/state-of-play/`):
+Waiting on Kris: nothing open.
 
-- **AREAS-PATTERN:** whether an evaluation area is held as a `planned` Project whose Outcome is a decision, ideas in Notes, no records or thread, capped at one per Initiative and three across the territory (areas-proposal section 1; areas-dispatch).
-- **FW-DECLARE:** who commits the terra-only firewall declaration for the live check of [KI-TOOL-RIG-CORE-047](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-047-tailnet-only-listener-firewall.md), and in what order, given sol's Rig 0.5.0 would reject it; recommended: the Rig: chezmoi thread commits it with `profiles = ["laptop"]` and holds chezmoi apply on sol until its Rig is 0.6.0 or later, then Kris runs the terra steps (fw-rollout).
-- **FW-ADR:** which ADRs the acceptance run marks accepted on a pass: [ADR-KI-TOOL-RIG-009](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/decisions/ADR-KI-TOOL-RIG-009-system-domain-resources-under-an-attended-grant.md), [ADR-KI-TOOL-RIG-010](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/decisions/ADR-KI-TOOL-RIG-010-linux-firewall-through-a-rig-owned-nftables-table.md) or both; recommended: both (fw-rollout).
+Waiting on Rig:
+
+- **Rig: chezmoi:** FW-DECLARE commit, then Kris runs terra steps for [KI-TOOL-RIG-CORE-047](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-047-tailnet-only-listener-firewall.md) (plan in the fw-rollout report).
 
 With other threads, no Kris action now:
 
@@ -84,7 +84,7 @@ With other threads, no Kris action now:
 - **CLI127-LINKS:** answered; outstanding note for [KI-TOOL-KI-CLI-127](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-127-agent-status-live-threads.md)'s next planning pass: point both of its KI-TOOL-KI-CLI-124 links at the pruned GitHub link, [KI-TOOL-KI-CLI-124 (pruned)](https://github.com/knowledgeislands/tools-ki/blob/9c4c0c0/docs/roadmap/KI-TOOL-KI-CLI-124-agent-run-close.md), with no separate commit now.
 - **GATE-REMAIN:** sent 2026-10-15; the remaining `ki repo audit` failures are their owners' to fix. Rig: mac-studio-bootstrap (RECORD-2, BOUNDARY-1) through its checkpoint message block and `~/.local/state/ki/agents/mac-studio-bootstrap/inbox.md`; Observatory: product (LIFECYCLE-1) through a new message block in its checkpoint. The two tools-burndown MD041 reports no longer exist, so no message went.
 
-Settled on 15 October (foundations-apply):
+Settled on 15 October (foundations-apply; fw-route):
 
 - **FOUNDATIONS-HOME:** the [Known World](</Users/krisbrown/workspaces/knowledge-islands/ki-principal/Pillars/Philosophy/Emerging Concepts/Known World.md>) Emerging Concepts note, held by a widened Outcome in [Island model and Tending](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/island-model-and-tending.md), with each other Project's part in its Notes.
 - **FOUNDATIONS-NOTE:** carried out with FOUNDATIONS-HOME in the same [Known World](</Users/krisbrown/workspaces/knowledge-islands/ki-principal/Pillars/Philosophy/Emerging Concepts/Known World.md>) note.
@@ -92,6 +92,10 @@ Settled on 15 October (foundations-apply):
 - **PAPERCLIP-SEAT, PAPERCLIP-CHEZMOI, PAPERCLIP-BRANCHES:** Notes of [Paperclip capture and rebuild](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/paperclip-capture-and-rebuild/paperclip-capture-and-rebuild.md); PAPERCLIP-OFF sent to the Rig: chezmoi checkpoint and its inbox.
 - **INCEPTION-PILOT:** a message in the [knowledge-acquisition checkpoint](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/knowledge-islands-model.knowledge-acquisition.md).
 - **ROOTING-OWNER, TERRITORY-RULE:** the ROOTING-MODEL direction and the adopted territory rule at the top of the [ways-of-working checkpoint](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/knowledge-islands-model.ways-of-working.md); ROOTING-OWNER's concept-note target also in the knowledge-acquisition checkpoint.
+- **FW-DECLARE:** sent to the [Rig: chezmoi checkpoint](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/rig.chezmoi.md) and its inbox: commit `dot_config/rig/conf.d/private_45-firewall.toml` with `profiles = ["laptop"]`, no chezmoi apply on sol before Rig 0.6.0, then Kris runs the terra steps.
+- **FW-ADR:** applied by the acceptance run on Kris's pass: it accepts [KI-TOOL-RIG-CORE-047](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-047-tailnet-only-listener-firewall.md) and marks both [ADR-KI-TOOL-RIG-009](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/decisions/ADR-KI-TOOL-RIG-009-system-domain-resources-under-an-attended-grant.md) and [ADR-KI-TOOL-RIG-010](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/decisions/ADR-KI-TOOL-RIG-010-linux-firewall-through-a-rig-owned-nftables-table.md) accepted.
+- **AREAS-PATTERN:** adopted; sent to the [ways-of-working checkpoint](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/knowledge-islands-model.ways-of-working.md) and its inbox, Ways of working holding the rule.
+- **RIG-PROJECTS-LIST:** no change; the [Rig](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/rig.md) Initiative note keeps no Projects list, the `initiative` field being the link.
 
 Dated queue:
 

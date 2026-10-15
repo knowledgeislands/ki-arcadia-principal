@@ -893,3 +893,23 @@
 ## Decision 221 (2026-10-15)
 
 - RCA-RIG-ADR010 (Kris, 2026-10-15): 'Can you tell me what to do again and I'll do it now'
+
+## Decision 222 (2026-10-15)
+
+- Kris, 2026-10-15, FW-DECLARE: "The Rig: chezmoi thread commits the firewall declaration as conf.d/private_45-firewall.toml with profiles = [\"laptop\"], and does not apply chezmoi on sol until sol's Rig is 0.6.0 or later; then give me the terra steps."
+
+## Decision 223 (2026-10-15)
+
+- Kris, 2026-10-15, FW-ADR: "On a pass, the acceptance run accepts KI-TOOL-RIG-CORE-047 and marks both ADR-KI-TOOL-RIG-009 and ADR-KI-TOOL-RIG-010 accepted."
+
+## Decision 224 (2026-10-15)
+
+- Kris, 2026-10-15, AREAS-PATTERN: "Adopt it: an evaluation area is a planned Project whose Outcome is a decision, ideas in Notes, no records or thread, at most one per Initiative and three across the territory; Ways of working holds the rule."
+
+## Decision 225 (2026-10-15)
+
+- Kris, 2026-10-15, RIG-PROJECTS-LIST: "Leave the Rig Initiative note without a Projects list; the initiative field is the link."
+
+## Decision 226 (2026-10-15)
+
+- Kris, 2026-10-15, FW-EXPOSURE question: "I just want to check something about the setup for access between the machines that are on tail scale and whether or not it exposes me from sat in a cafe. ... currently, in my settings, I have screen sharing and remote logging enabled ... why is the firewall not able to effectively protects me on the screen sharing and the remote login as well." Read-only investigation authorised as first-level investigation.
