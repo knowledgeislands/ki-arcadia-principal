@@ -1,0 +1,8 @@
+# Desk: webcams, mics and speakers - decisions
+
+Conversational thread, opened 2026-10-15 from the desk-kit topic handed over by Rig: mac-studio-bootstrap. Kris's words are quoted as given.
+
+- **2026-10-15 · DESK-SCOPE, DESK-USES, DESK-BUDGET** (closed by Kris's reply): "I've been looking into this, and really I can get away with something much simpler at this point." and "the mac studio speakers will suffice for now". One webcam with built-in microphones for sol, the Mac Studio speakers for audio, calls first and dictation second. The earlier mid-range bundle (Shure MV7+, RØDE PSA1+, Logitech MX Brio, Kanto ORA) is set aside for now.
+- **2026-10-15 · DESK-CAM:** "I'll buy the UGREEN 4K webcam (amazon.co.uk/dp/B0DT9MMZTL, £29.95 on 15 Oct 2026) myself as the stopgap; keep the Insta360 Link 2C Pro (B0G3SSQMJQ) on file as the upgrade if call or dictation quality grates." Clarified: "the webcam is the stop gap from a bigger requirement and setup". The UGREEN needs no app, so nothing is declared in Rig. Kris buys; the thread bought nothing.
+- **2026-10-15 · THREAD-HOME:** "Create +/_CHECKPOINTS/desk-kit.md and +/_THREADS/desk-kit/ in ki-principal, copy the webcam-compare and cam-check reports into the folder, and commit them by explicit path." Then: "lets finish this thread". The thread closed in the same session, so the folder and reports were committed and no checkpoint was created, since it would have been removed at once.
+- **2026-10-15 · Interim iPhone set-up** (no decision record needed): Continuity Camera on the iPhone now serves sol. Kris fixed it after finding that terra had taken the iPhone connection; Universal Control between sol and terra was also restored, following Apple's guides 102459 and 102546.
