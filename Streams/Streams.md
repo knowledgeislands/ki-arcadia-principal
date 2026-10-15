@@ -20,10 +20,10 @@ Streams are Knowledge Islands Principal's operational container for knowledge in
 
 ## Projects
 
-[[Projects]] is the territory's Project registry: one note per finite Project, named by its slug, carrying its outcome, health, current decision, next step and the open records that belong to it. Status stays in each record.
+[[Projects]] is the territory's Project registry: one note per finite Project, named by its slug, carrying its outcome, lead, target and `lifecycle`, with an Outcome section and Notes for ideas and context. An idea-stage Project is a `planned` one whose outcome is a decision its lead takes. Links point upwards: each work record names its Project, so a Project note lists no records and carries no health or update section; status lives in each record.
 
 ---
 
 ## Initiatives
 
-[[Initiatives]] holds one note per long-lived Initiative, named by its slug, beside the Projects it groups. Each note gives the direction, its Projects, its projectless upkeep and recurring Activities, and a dated Review - the territory's periodic judgement of that direction, which replaced the theme checkpoints.
+[[Initiatives]] holds one note per long-lived Initiative, named by its slug, which its Projects and projectless records name. Each note gives its direction and Notes for ideas, context and the projectless upkeep it carries; it lists neither its Projects nor their records or Activities, and carries no dated review or status section.
