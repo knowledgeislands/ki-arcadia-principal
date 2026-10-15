@@ -977,3 +977,7 @@ Kris, showing the thread list `KI > SoP`, `KI > Model > ways of working`, `KI > 
 ## 2026-10-15 22:50 BST - dispatch, do not ask (THREAD-NAMES handed to ways-of-working)
 
 Kris: "remember your job is coordination of coordination threads, we dispatch out to them. If we want to change ways of working we need to tell it to do so". THREAD-NAMES goes to KI Model: ways-of-working, live, as a pasted message.
+
+## 2026-10-16 00:05 BST - review the open queries for a first wave (QUERY-REVIEW)
+
+Kris: "can you review all of the outstanding queries and check on them? And maybe we can come up with a subset that we can tackle first that we've got high confidence over so we can get some of those things moving for you."
