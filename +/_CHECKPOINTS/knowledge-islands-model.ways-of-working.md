@@ -4,16 +4,16 @@ thread: knowledge-islands-model.ways-of-working
 label: 'KI > Model > ways of working'
 state: active
 created_at: 2026-10-09T20:58:00Z
-updated_at: '2026-10-15T23:38:00Z'
+updated_at: '2026-10-15T23:52:00Z'
 ---
 
 # knowledge-islands-model.ways-of-working
 
 **Pick-up - mark 2026-10-15T15:09:48Z (16:09 BST)**
 
-- Status: rest. Running: nothing. Queued: nothing. Label `KI > Model > ways of working` under Kris's LABEL-CHANGE; file and run names unchanged. SESSION-IDENTITY and SESSION-ROLE (16 October) planned in `+/_THREADS/ways-of-working/session-identity.report.md`; nothing implemented.
+- Status: rest. Running: nothing. Queued: nothing. Label `KI > Model > ways of working` under Kris's LABEL-CHANGE; file and run names unchanged. SESSION-IDENTITY and SESSION-ROLE planned in `+/_THREADS/ways-of-working/session-identity.report.md`; REPORTING-FORMS drafted in `+/_THREADS/ways-of-working/reporting-forms.report.md`; nothing implemented.
 - Resume line: `Resume KI > Model > ways of working under current ki-pmo and ki-delegation since 2026-10-15T15:09:48Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`
-- Next steps: Kris answers PLAN-AGREE and the nine session-identity queries (THREAD-KEY, BINDING-HOME, SUPPLY-CHANNEL, NAME-AUTHORITY, RECORD-OWNERS, PILOT-LABEL, ROLE-FIELD, ROLE-STYLE, ROLE-REPORT), then the open queries of the 16 October 00:02 BST Summary, OTHER-PUSH first (ki-agentic-harness `main` holds four unpushed commits, `628762e7` from another session beneath this thread's three); on PLAN-AGREE capture the three records and dispatch Phase 1; the intake pilot follows NAME-ROOT and NAME-HOST.
+- Next steps: Kris answers FORMS-AGREE and the seven reporting-forms queries (FORMS-PHASE would land the reply forms first as Phase 1a and withdraw ROLE-REPORT), PLAN-AGREE and the nine session-identity queries, then the open queries of the 16 October 00:02 BST Summary, OTHER-PUSH first (ki-agentic-harness `main` holds four unpushed commits, `628762e7` from another session beneath this thread's three; harness Phase 1a commits would stack on them).
 
 **Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
 
