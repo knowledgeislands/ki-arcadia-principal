@@ -1,0 +1,369 @@
+{
+  "observed_at": "2026-10-15T09:55:10Z",
+  "machine": "terra",
+  "run": "tools-burndown",
+  "running": [],
+  "queued": [],
+  "worker_count": 32,
+  "all_worker_statuses_done": true,
+  "new_agents_launched": false,
+  "unfinished_briefs_required": false,
+  "repositories": {
+    "ki-principal": {
+      "path": "/Users/krisbrown/workspaces/knowledge-islands/ki-principal",
+      "fetch": {
+        "exit": 0,
+        "out": "",
+        "err": ""
+      },
+      "branch": "main",
+      "head": "506fa024e1033e7941b04f5dadf104f2d1d02985",
+      "origin": "a359b0603195dc0a03bde31ea2ba065b5d842de8",
+      "ahead_behind": "2\t0",
+      "status": " M +/_CHECKPOINTS/platform-foundations.estate-factorisation.md\n M +/_THREADS/mac-studio-bootstrap/chezmoi-fix.report.md\n M +/_THREADS/tools-burndown/decisions.md\n?? +/_THREADS/tools-burndown/drain-sol.evidence.json",
+      "operation": {
+        "rebase-merge": false,
+        "rebase-apply": false,
+        "MERGE_HEAD": false,
+        "CHERRY_PICK_HEAD": false,
+        "index.lock": false
+      },
+      "outgoing": "506fa024e1033e7941b04f5dadf104f2d1d02985 docs(threads): put digest churn first for state-of-play on sol\nbc178d6939fdf2bdeed2a64ef2cadf3075272568 docs(checkpoint): preserve registry removal for sol handoff",
+      "foreign_paths": [
+        "+/_THREADS/mac-studio-bootstrap/chezmoi-fix.report.md"
+      ]
+    },
+    "ki-agentic-harness": {
+      "path": "/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness",
+      "fetch": {
+        "exit": 0,
+        "out": "",
+        "err": ""
+      },
+      "branch": "main",
+      "head": "d0c945587fee877b52a96b2783be69d1df6f4435",
+      "origin": "d0c945587fee877b52a96b2783be69d1df6f4435",
+      "ahead_behind": "0\t0",
+      "status": "?? +/_THREADS/",
+      "operation": {
+        "rebase-merge": false,
+        "rebase-apply": false,
+        "MERGE_HEAD": false,
+        "CHERRY_PICK_HEAD": false,
+        "index.lock": false
+      },
+      "outgoing": "",
+      "foreign_paths": [
+        "+/_THREADS/skill-reviews/ (separate skill-reviews session)"
+      ]
+    },
+    "tools-ki": {
+      "path": "/Users/krisbrown/workspaces/knowledge-islands/tools-ki",
+      "fetch": {
+        "exit": 0,
+        "out": "",
+        "err": ""
+      },
+      "branch": "main",
+      "head": "585321fb756ab629aa0a3f2b8cad9d162f818ae9",
+      "origin": "585321fb756ab629aa0a3f2b8cad9d162f818ae9",
+      "ahead_behind": "0\t0",
+      "status": "",
+      "operation": {
+        "rebase-merge": false,
+        "rebase-apply": false,
+        "MERGE_HEAD": false,
+        "CHERRY_PICK_HEAD": false,
+        "index.lock": false
+      },
+      "outgoing": "",
+      "foreign_paths": []
+    },
+    "tools-mgit": {
+      "path": "/Users/krisbrown/workspaces/knowledge-islands/tools-mgit",
+      "fetch": {
+        "exit": 0,
+        "out": "",
+        "err": ""
+      },
+      "branch": "main",
+      "head": "9a30de5fb6ee44b8ceca1d516a9371741ea08a4c",
+      "origin": "9a30de5fb6ee44b8ceca1d516a9371741ea08a4c",
+      "ahead_behind": "0\t0",
+      "status": "",
+      "operation": {
+        "rebase-merge": false,
+        "rebase-apply": false,
+        "MERGE_HEAD": false,
+        "CHERRY_PICK_HEAD": false,
+        "index.lock": false
+      },
+      "outgoing": "",
+      "foreign_paths": []
+    },
+    "tools-rig": {
+      "path": "/Users/krisbrown/workspaces/knowledge-islands/tools-rig",
+      "fetch": {
+        "exit": 0,
+        "out": "",
+        "err": ""
+      },
+      "branch": "main",
+      "head": "efd4eaedfeb546b03eeab1e59ee2ab77130f9054",
+      "origin": "efd4eaedfeb546b03eeab1e59ee2ab77130f9054",
+      "ahead_behind": "0\t0",
+      "status": "",
+      "operation": {
+        "rebase-merge": false,
+        "rebase-apply": false,
+        "MERGE_HEAD": false,
+        "CHERRY_PICK_HEAD": false,
+        "index.lock": false
+      },
+      "outgoing": "",
+      "foreign_paths": []
+    },
+    "tools-techne": {
+      "path": "/Users/krisbrown/workspaces/knowledge-islands/tools-techne",
+      "fetch": {
+        "exit": 0,
+        "out": "",
+        "err": ""
+      },
+      "branch": "main",
+      "head": "a994a2843c82e2db9a239074755440a16ed48486",
+      "origin": "a994a2843c82e2db9a239074755440a16ed48486",
+      "ahead_behind": "0\t0",
+      "status": "",
+      "operation": {
+        "rebase-merge": false,
+        "rebase-apply": false,
+        "MERGE_HEAD": false,
+        "CHERRY_PICK_HEAD": false,
+        "index.lock": false
+      },
+      "outgoing": "",
+      "foreign_paths": []
+    },
+    "apps-observatory.local": {
+      "path": "/Users/krisbrown/workspaces/knowledge-islands/apps-observatory.local",
+      "fetch": {
+        "exit": 0,
+        "out": "",
+        "err": ""
+      },
+      "branch": "main",
+      "head": "74a0eead9ab9f76d0b6357d41ffb2d77c730f586",
+      "origin": "74a0eead9ab9f76d0b6357d41ffb2d77c730f586",
+      "ahead_behind": "0\t0",
+      "status": "",
+      "operation": {
+        "rebase-merge": false,
+        "rebase-apply": false,
+        "MERGE_HEAD": false,
+        "CHERRY_PICK_HEAD": false,
+        "index.lock": false
+      },
+      "outgoing": "",
+      "foreign_paths": []
+    },
+    "ki-techne-harness": {
+      "path": "/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness",
+      "fetch": {
+        "exit": 0,
+        "out": "",
+        "err": ""
+      },
+      "branch": "main",
+      "head": "cc758473ab19dd78956916d9a9c954f29332c0ee",
+      "origin": "cc758473ab19dd78956916d9a9c954f29332c0ee",
+      "ahead_behind": "0\t0",
+      "status": "",
+      "operation": {
+        "rebase-merge": false,
+        "rebase-apply": false,
+        "MERGE_HEAD": false,
+        "CHERRY_PICK_HEAD": false,
+        "index.lock": false
+      },
+      "outgoing": "",
+      "foreign_paths": []
+    }
+  },
+  "prior_published_commits": [
+    {
+      "repository": "tools-ki",
+      "commit": "85a5c766554641c037b01935eff174a47b73aa29",
+      "in_origin_main": true
+    },
+    {
+      "repository": "tools-rig",
+      "commit": "bbe1d86cae434ffc72d8b0f21ec64055e9efb5d8",
+      "in_origin_main": true
+    },
+    {
+      "repository": "tools-ki",
+      "commit": "fc34a78a673046e5c3c9df657ccf48725755b149",
+      "in_origin_main": true
+    },
+    {
+      "repository": "tools-rig",
+      "commit": "2ac8cf7bca8db3a9fdf110a1d2090ef33703bd5f",
+      "in_origin_main": true
+    },
+    {
+      "repository": "tools-techne",
+      "commit": "4a59790cbf285b256178ec75d19dd249df40513f",
+      "in_origin_main": true
+    },
+    {
+      "repository": "tools-ki",
+      "commit": "21821f31dcfa811021a8310702c241adb6af1c23",
+      "in_origin_main": true
+    },
+    {
+      "repository": "tools-ki",
+      "commit": "bb7728f7be648f8f2991e786b28371cb0b5584d1",
+      "in_origin_main": true
+    },
+    {
+      "repository": "apps-observatory.local",
+      "commit": "0d0b2b9259afd65148c3f840547468bb228b0ecb",
+      "in_origin_main": true
+    },
+    {
+      "repository": "apps-observatory.local",
+      "commit": "8879fdfbbaaac880ba49383f0aa2e32dfdfbe142",
+      "in_origin_main": true
+    },
+    {
+      "repository": "apps-observatory.local",
+      "commit": "4edfd16585c697ba06148ae357338cfdb4eaaa8f",
+      "in_origin_main": true
+    },
+    {
+      "repository": "apps-observatory.local",
+      "commit": "980871d588399833771ba638106716ccb63aff16",
+      "in_origin_main": true
+    },
+    {
+      "repository": "apps-observatory.local",
+      "commit": "309aa456d745fda453f42f1b249c6ed679c4476f",
+      "in_origin_main": true
+    },
+    {
+      "repository": "apps-observatory.local",
+      "commit": "ec220d351e185d893758faf9c575488626051ae1",
+      "in_origin_main": true
+    },
+    {
+      "repository": "apps-observatory.local",
+      "commit": "acc76bc78f98206874e4a760e7ca65fc74f74a8a",
+      "in_origin_main": true
+    },
+    {
+      "repository": "apps-observatory.local",
+      "commit": "b3220750de2d2aac8ec148972e7264302bda8211",
+      "in_origin_main": true
+    },
+    {
+      "repository": "ki-principal",
+      "commit": "9de8c5c10275f0f20f03b26fbbace846c12463ae",
+      "in_origin_main": true
+    },
+    {
+      "repository": "tools-techne",
+      "commit": "633bbc0953a049ba503cb232a3473e289e6ca4a4",
+      "in_origin_main": true
+    },
+    {
+      "repository": "tools-techne",
+      "commit": "2023daacb55aa707d7e8d0da2d01e1ced023eea0",
+      "in_origin_main": true
+    },
+    {
+      "repository": "ki-principal",
+      "commit": "e73bd523107a8d1c473a33b36824f795c1211d92",
+      "in_origin_main": true
+    },
+    {
+      "repository": "ki-principal",
+      "commit": "b2264f1c622d93106317809686af45dc0626effe",
+      "in_origin_main": true
+    },
+    {
+      "repository": "ki-principal",
+      "commit": "7e3f69c5ffe986accd4d40acf233a522dd72a06f",
+      "in_origin_main": true
+    },
+    {
+      "repository": "ki-principal",
+      "commit": "defbba030ccb96599b6125ea09237ad07a3c1422",
+      "in_origin_main": true
+    },
+    {
+      "repository": "tools-rig",
+      "commit": "ea7c3b626a2c0de34fe2c1154dc594806926ee3b",
+      "in_origin_main": true
+    },
+    {
+      "repository": "tools-rig",
+      "commit": "d0eda6b26b73f864ca4e7e201be7380eeea545d9",
+      "in_origin_main": true
+    },
+    {
+      "repository": "tools-rig",
+      "commit": "ebd6e327dbfa4a3cf88a9e03488a4edd41abaf14",
+      "in_origin_main": true
+    },
+    {
+      "repository": "tools-rig",
+      "commit": "0d6a342077f676bcb9634afb703252453ab2d9e2",
+      "in_origin_main": true
+    },
+    {
+      "repository": "tools-rig",
+      "commit": "d026335d15fec98d2cf42ff4c988215200fc37a4",
+      "in_origin_main": true
+    },
+    {
+      "repository": "tools-rig",
+      "commit": "e028775d9cf7393f359b133f4ba4d88cd93353aa",
+      "in_origin_main": true
+    },
+    {
+      "repository": "ki-principal",
+      "commit": "5804fe1deee4a74ceb0ae3c6e9c83a1f4491805f",
+      "in_origin_main": true
+    },
+    {
+      "repository": "ki-principal",
+      "commit": "a6685f7c1b34cc3aca71a54af75e5cd3e239b118",
+      "in_origin_main": true
+    },
+    {
+      "repository": "ki-principal",
+      "commit": "7e9cc770c1815a45b6991c75807c06c881200dff",
+      "in_origin_main": true
+    },
+    {
+      "repository": "ki-principal",
+      "commit": "2e340a7ddac933e14a0df6d5cddab5dc269678da",
+      "in_origin_main": true
+    }
+  ],
+  "retired_report_copies_absent": {
+    "dock-plan-resume.report.md": true,
+    "obs-correct.report.md": true,
+    "patching-plan.report.md": true,
+    "rig-correct.report.md": true,
+    "rig-deliver.report.md": true
+  },
+  "new_drain_paths": [
+    "+/_CHECKPOINTS/platform-foundations.estate-factorisation.md",
+    "+/_THREADS/tools-burndown/decisions.md",
+    "+/_THREADS/tools-burndown/drain-sol.report.md",
+    "+/_THREADS/tools-burndown/drain-sol.evidence.json"
+  ],
+  "publication_rule": "Never publish foreign outgoing ancestors or resolve a foreign rebase/merge. The final owner report confirms this recovery unit publication; on sol verify it through origin/main."
+}

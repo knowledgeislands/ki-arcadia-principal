@@ -104,3 +104,17 @@ Operational reconciliation of the approved STORE-REPAIR handoff: the separately 
 home: +/_CHECKPOINTS/platform-foundations.estate-factorisation.md
 
 - I can’t stress this enough and I’ll be saying this to every single thread, but it’s absolutely imperative that you commit your work.
+
+## Decision 6 (2026-10-15T09:54:22Z)
+
+Classification: operational. Durable home: the estate-factorisation checkpoint and drain-sol report. This is a drain, not authority for new delivery, release or foreign publication.
+
+> DRAIN FOR SOL (Kris, 15 October 2026). I am moving working to sol next. Bring this thread to a clean, recoverable rest now. Do not start new work and do not launch new background agents.
+>
+> 1. Running work: let any background agent that will finish within about 15 minutes finish. Otherwise stop it at a safe point and record exactly where it stopped and how to restart it.
+> 2. Commit: in every repository this thread or its agents touched, commit your own finished work by explicit path, under the repository's gate. Never use --no-verify and never force-push. Leave work in progress uncommitted only if committing it would break something, and record it in the checkpoint instead.
+> 3. Push: pull with rebase, then push fast-forward only. If origin/main..HEAD holds another session's commits, or a rebase or merge is already in progress, do not push them or resolve it. Name it in your report.
+> 4. Make your recovery state durable: ~/.local/state/ki/agents/<run>/ does not travel to sol. Copy into your thread folder (+/_THREADS/<run>/) anything needed to resume: decisions.md, any report with open queries, and the brief of any unfinished run. Remove re-copied retired reports by explicit path (KI-TOOL-KI-CLI-133). Never git add the folder wholesale.
+> 5. Checkpoint: update it so a fresh session on sol can resume from it alone. Set running to nothing, then give the open queries, held and parked items, waiting-on items, the next step and the resume line. Commit and push it with the thread folder.
+> 6. Do not make a baseline or empty commit; Kris does that across all repositories afterwards. Do not tidy beyond the above; tidy-ups happen on sol.
+> 7. Finish with your owner report and REST banner. Per repository it lists: committed and pushed, anything unpushed and why, and anything uncommitted that belongs to another session (named, not touched). End with your resume line.
