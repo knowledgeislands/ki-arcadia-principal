@@ -1,74 +1,70 @@
 # [Knowledge Islands model](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/knowledge-islands-model/knowledge-islands-model.md) › [Ways of working](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/ways-of-working/ways-of-working.md) › cli-release
 
-**Run report at 23:41 BST · last mark 23:26 BST**
+**Run report at 22:39 BST · last mark 16:09 BST**
 
 ---
 
 ## Done
 
-- **KI-TOOL-KI-CLI-132 is accepted and pruned.** This was done under Kris's KI-RELEASE decision: "accept KI-TOOL-KI-CLI-132 through ki-accept now, and release it in the same tools-ki release CLI126-DELIVER makes". Its review packet was complete. Its governing gates passed at `9717954`: `bun run test:coverage` ran 1185 tests at 100%, and `bunx tsc --noEmit`, `bunx biome check .`, `bunx knip`, `mandoc -T lint man/ki.1` and the `ki-work-roadmap` audit were clean. The record is now [KI-TOOL-KI-CLI-132 (pruned)](https://github.com/knowledgeislands/tools-ki/blob/9fe5811469cda1464e9ed43585374bbc8a14f0d8/docs/roadmap/KI-TOOL-KI-CLI-132-launcher-only-thread-writer.md).
-  - The reference preflight found two links to it in [KI-TOOL-KI-CLI-133](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-133-retired-reports-come-back.md). Before the prune, I pinned both to the accepted copy on GitHub.
-  - The other hits were in ki-principal: KI-PRINCIPAL-ECO-014, which mentions it only as a bare identifier, plus thread files and the checkpoint, which I did not touch.
-  - Commits in tools-ki: `c57d01e` (accept), `9fe5811` (link pin) and `5658f87` (prune). All three are pushed.
-- **KI-TOOL-KI-CLI-126 is implemented but held at `in-progress`, not awaiting review.** This was done under Kris's CLI126-DELIVER decision: "implement KI-TOOL-KI-CLI-126 to awaiting review, release tools-ki, bump ki-principal's .github/ki-version, and confirm ki-principal CI reaches the audit step". The record is [KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md).
-  - What changed: `ki repo repair` now registers a Knowledge Base that declares a store, the same way it registers any other repository. It reports each unbound or missing store as a `! Store:` warning, still projects the skills, and passes when nothing else is wrong. An invalid registry still fails.
-  - New contract tests cover the unbound, missing-path, unregistered, dry-run and bound cases. One more test replays the CI sequence (`bootstrap`, `registry add`, `repair`, `audit`) and confirms the audit reaches its own verdict.
-  - The changelog has a new entry. `man/ki.1` and the README are unchanged because they never described repair's store handling.
-  - Checks: `bun run test:coverage` ran 1189 tests at 100%. `bunx tsc --noEmit`, `bunx biome check .` (pre-existing warnings only), `bunx knip` and `mandoc -T lint man/ki.1` are clean, and the `ki-work-roadmap` audit passes.
-  - Local CI reproduction: I ran the built `ki` against ki-principal in a throwaway home and XDG sandbox. Repair exited 0 with the `sources` warning and 44 skill links, and `ki diag` showed "Registry: valid". `ki repo audit` ran to its own verdict, failing only on ki-authoring and ki-checkpoint findings, not on any store error.
-  - Commit `726243d` in tools-ki is pushed.
-- **Why the record is held:** Verify step 2, `ki repo audit --repo .` on tools-ki, fails one check: `ki-engineering` `DEPS-1`.
-  - Four dev tools have now been out of date for longer than the 14-day adoption window: `@biomejs/biome` 2.5.15, `@vitest/coverage-v8` 5.0.3, `knip` 6.39.0 and `vitest` 5.0.3.
-  - This has nothing to do with the repair change. It also blocks the release, because the release checklist requires the audit's mechanical findings to be resolved.
-  - Adopting the updates is a package install, which the brief forbids. Recording a hold is an owner decision. See DEPS-HOLD.
-- **CLI131-SPLIT is respected.** As Kris decided, "keep the split and leave KI-TOOL-KI-CLI-131 at triage until the repair fix lands". [KI-TOOL-KI-CLI-131](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-131-host-absent-store-state.md) is untouched.
+- **The four dev-tool updates are adopted in their own commit.** This was done under Kris's [DEPS-HOLD decision](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/decisions.md) of 15 October: "Authorise a run to adopt the four patch-level dev-tool updates (@biomejs/biome 2.5.15, @vitest/coverage-v8 5.0.3, knip 6.39.0, vitest 5.0.3) in tools-ki in its own chore(deps) commit, re-run every gate, move KI-TOOL-KI-CLI-126 to awaiting review, cut the patch release carrying it and KI-TOOL-KI-CLI-132, bump ki-principal's .github/ki-version and watch CI to the audit step".
+  - Commit `7eb3000` in tools-ki. The ranges plainly resolved `vitest` and `@vitest/coverage-v8` to 5.0.5, so I pinned the lockfile to exactly the named 5.0.3. That kept the update inside the waiver.
+- **Every gate passes at `86adda0`:**
+  - both frozen installs;
+  - `bun run test:coverage`: 1189 tests at the 100% thresholds;
+  - `bunx tsc --noEmit`, `bunx biome check .` (warnings and infos only), `bunx knip` and `mandoc -T lint man/ki.1` are clean;
+  - `ki repo audit --repo .` shows FAIL=0. Its two warnings, `ki-engineering` `CI-1` and `ki-repo` `HOOK-1`, are unrelated. The `DEPS-1` failure is gone.
+- **[KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md) is at `awaiting-review` under `ki-implement`.** It has its full review packet, and Verify 4 is left for acceptance after the release. Commit `86adda0`.
+- **tools-ki is pushed fast-forward (`585321f..86adda0`).** This was done under PUSH-BENEATH, Kris's words of 14 October: "If it's only their commits, then them committing and pushing is absolutely fine though." Every gate above passed with these two commits from another session stacked beneath mine:
+  - `4b99032c` docs(roadmap): reserve KI-TOOL-KI-CLI-136
+  - `9eb3b0a4` docs(roadmap): capture KI-TOOL-KI-CLI-136 errors suggest fixes
+- **[KI-TOOL-KI-CLI-131](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-131-host-absent-store-state.md) stays at `triage`, untouched.**
+- **The release has not been cut.** No tag was pushed, no workflow dispatched and ki-principal is untouched; see HARNESS-PIN.
 
 ## In Progress
 
-Nothing is running.
+Nothing is running in this run. It stopped before the release on HARNESS-PIN.
 
-- **Not done:**
-  - No tools-ki release has been cut, so ki-principal's `.github/ki-version` is still `v0.10.4` and the harness pin is unchanged.
-  - KI-TOOL-KI-CLI-132 ships with that release.
-- **ki-principal CI, read-only:** the latest run on `main`, 38648879408 at 22:37 UTC, still fails in "Install released KI" with v0.10.4. The error is "declared sources store is not bound", so the run never reaches the audit step. A run on a release containing `726243d` should get past it, as the local reproduction did.
-- **Not pushed (ki-principal):** this report's own commit, `docs(threads): add the cli-release run report`, sits on six unpushed commits I did not make: `924a89e5`, `19eef4a6`, `187e6fd1`, `143513b4`, `9cb75acb` and `707d4276`, from the report-repair and principal-links runs. A fast-forward push would carry them, so I held it. Their own PUSH-CARRY query covers the same push.
-- **Dirty from other sessions, left alone in ki-principal:**
-  - `+/_THREADS/baseline-rollout/decisions.md`
-  - `+/_THREADS/mac-studio-bootstrap/chezmoi-fix.report.md`
-  - `Streams/Projects/mac-studio-bootstrap/mac-studio-bootstrap.md`
-  - several untracked reports in `+/_THREADS/tools-burndown/` and `+/_THREADS/knowledge-acquisition/`
+Outstanding - no action requested now:
+
+- **Agent work:** v0.10.5 would carry [KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md) and [KI-TOOL-KI-CLI-132 (pruned)](https://github.com/knowledgeislands/tools-ki/blob/9fe5811469cda1464e9ed43585374bbc8a14f0d8/docs/roadmap/KI-TOOL-KI-CLI-132-launcher-only-thread-writer.md). It would also carry `ki dev skill generate` (`9c4c0c0`), a feature already on `main`. After that come the ki-principal `.github/ki-version` bump and the CI watch.
+- **Verification limitation:** `knip` 6.39.0 prints four configuration hints saying some `knip.json` ignore entries are unnecessary. It still exits 0.
+- **Retained material:** this report overwrites the tracked `cli-release.report.md` in the thread folder, uncommitted, for the thread to commit.
 
 ## Queries
 
-### DEPS-HOLD - unblock the tools-ki audit so the release can go
+### HARNESS-PIN - move the Harness pin before releasing v0.10.5?
 
-**Context:** The DEPS-1 failure described under Done is the only thing stopping KI-TOOL-KI-CLI-126 from reaching awaiting review, and stopping the release that carries it and KI-TOOL-KI-CLI-132. All four updates are patch-level dev tools that do not reach the compiled `ki`.
+**Context:** The repository's [release guide](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/guides/developer/releasing.md) says: "Before releasing, bump the Harness pin in its own `fix(bootstrap)` commit if the Harness has moved since the last release."
+- The pin in [registry.ts](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/src/core/storage/registry.ts) is `b4e2c5cd`. The Harness `origin/main` is now 26 commits ahead at `0df81f40`. Those commits include `8a453bcd` "raise PMO-7 record linking failure level" and the ki-pmo drain and DRAINED-frame work.
+- Bumping the pin needs the codeload archive download for its digest, which the brief does not name. It also changes which Harness ki-principal's CI audits against, so the audit could fail on new findings once it is reached.
+- Skipping the step would depart from the release process the brief names.
 
-**Query:** Should the four updates be adopted, or held for this release?
+Everything else is ready: tools-ki `main` is pushed at `86adda0` with all gates green.
 
-**Options:** a) (recommended) Authorise a run to adopt the four updates in its own `chore(deps)` commit with `bun update` and re-run every gate. The same run then moves KI-TOOL-KI-CLI-126 to awaiting review, cuts the tools-ki patch release, bumps ki-principal's `.github/ki-version` and watches its CI to the audit step. b) Record `dependency_holds` for the four packages in tools-ki's `.ki.toml`, with the release as the reason, release now, and adopt the updates afterwards.
+**Query:** Should v0.10.5 first move the Harness pin to the current Harness `main`, or ship on the existing pin?
+
+**Options:**
+a) (recommended) authorise the Harness archive download for `0df81f40`, a `fix(bootstrap)` pin commit with its gates, then v0.10.5, the ki-principal `.github/ki-version` bump and the CI watch to the audit step
+b) cut v0.10.5 on the existing pin `b4e2c5cd`, skipping the pin step for this release only, then the ki-principal bump and CI watch
+c) hold the release
 
 ```text
-DEPS-HOLD
+HARNESS-PIN
 
-Authorise a run to adopt @biomejs/biome 2.5.15, @vitest/coverage-v8 5.0.3, knip 6.39.0 and vitest 5.0.3 in tools-ki with bun update in its own chore(deps) commit and re-run every gate; the same run then moves KI-TOOL-KI-CLI-126 to awaiting review, cuts the tools-ki patch release carrying it and KI-TOOL-KI-CLI-132, bumps ki-principal's .github/ki-version and the harness ki pin if one exists, and watches ki-principal CI to the audit step.
+authorise the cli-release run to download the ki-agentic-harness archive for 0df81f40, commit the Harness pin as fix(bootstrap) in tools-ki after every gate passes, then cut v0.10.5 carrying KI-TOOL-KI-CLI-126 and KI-TOOL-KI-CLI-132 by the release process, bump ki-principal's .github/ki-version, push fast-forward and watch ki-principal CI to the audit step
 ```
 
 ```text
-╭─ run report · 2026-10-14T22:41:00Z ──────────────╮
+╭─ run report · 2026-10-15T21:39:20Z ──────────────╮
 │                                                  │
-│  █▀▀▄ █▀▀▀ █▀▀▀ ▀▀█▀   · thread at rest          │
-│  █▀▀▄ █▀▀  ▀▀▀█   █    · nothing running         │
-│  █  █ █▄▄▄ ▄▄▄█   █    · nothing queued          │
+│  █▀▀▄ █  █ █▀▀▀ █  █   · thread busy             │
+│  █▀▀▄ █  █ ▀▀▀█  ▀█▀   · running or queued work  │
+│  █▄▄▀ █▄▄█ ▄▄▄█   █    · lines below say which   │
 │                                                  │
 ╰──────────────────────────────────────────────────╯
 ```
 
-- [at rest] nothing running or queued from this run
-- [waiting] DEPS-HOLD
-- [unpushed] ki-principal cli-release report commit, held behind other runs' unpushed commits
-- [held] tools-ki release, ki-principal `.github/ki-version` bump and the CI audit check, pending DEPS-HOLD
-
-```text
-Resume ways-of-working under current ki-pmo and ki-delegation since 23:26 BST: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.
-```
+- [running] registry-model - idea-stage and unknown-field checks in the Streams checker
+- [queued] threads-records, streams-index, thread-model-review, messenger
+- [waiting] HARNESS-PIN
+- [uncommitted] cli-release.report.md in the thread folder

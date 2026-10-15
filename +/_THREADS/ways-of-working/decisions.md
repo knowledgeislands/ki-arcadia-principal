@@ -691,3 +691,7 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 166 (2026-10-15T21:31:44Z)
 
 - PRIORITIES - (Kris, 15 October) Some other things high on my list are: `+/_THREADS` vs `tmp`; Thread types and behaviours (conversational, coordination, state-of-play); Thread naming; Thread footer types, states and projects; Initiative naming in `knowledge-islands`; Ideas (Scratch Areas) vs Initiatives vs Projects vs Roadmap Items
+
+## Decision 167 (2026-10-15T21:43:37Z)
+
+- HARNESS-PIN - (Kris, 15 October) Authorise the Harness archive download and a fix(bootstrap) pin commit at Harness main as it stands once threads-records has landed, with its gates, then cut v0.10.5, bump ki-principal's .github/ki-version and watch CI to the audit step.
