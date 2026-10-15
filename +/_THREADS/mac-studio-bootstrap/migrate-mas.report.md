@@ -1,6 +1,6 @@
 # [Rig](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/rig.md) › [Mac Studio bootstrap](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-bootstrap/mac-studio-bootstrap.md) › migrate-mas
 
-**Run report at 10:58 BST · last mark 17:47 BST**
+**Run report at 13:18 BST · last mark 17:47 BST**
 
 ---
 
@@ -9,7 +9,8 @@
 All fourteen App Store apps in chezmoi now use Rig's own `mas` provider instead of Homebrew. On a copy of sol's config, `rig doctor` shows no deprecation warnings: `warn=13` went to `warn=0`.
 
 - **Order kept.** I confirmed that provider-resume's tools-rig commit `a9570bb` and its gate were in place. I then waited for apps-resume, adobe-sweep and hostkey-check to finish, and started from chezmoi HEAD `ace1863` with a clean working tree.
-- **Commit:** chezmoi `8d86b58` `feat(rig): declare App Store apps through the mas provider`. It is local on sol, `main`, staged by explicit path and not pushed.
+- **Commit:** chezmoi `79d667f` `feat(rig): declare App Store apps through the mas provider`, staged by explicit path. The run committed it as `8d86b58` at 10:58 BST and did not push it. At 11:31 BST another session pulled with a rebase onto `aff044e` and pushed. That turned `8d86b58` into `79d667f` with identical content, which `git range-diff` confirms. sol's `origin/main` now includes it.
+- **Resumed at 13:18 BST** after Claude Code was signed out while this report was being written. The run's work was already complete and committed. I checked the current tree again: all fourteen declarations use `provider = "mas"`, no `kind = "mas"` remains, `node --test tests/rig-catalogue.test.mjs` passes (14 pass, 2 skipped) and `rumdl check .` is clean.
 - **What changed:**
   - Fourteen declarations moved to `install.provider = "mas"`, `install.kind = "app"`, each keeping its App Store number: Actions, Amazon Kindle, Amphetamine, Apple Configurator, DaisyDisk, DaVinci Resolve, GarageBand, Goodnotes, Home Assistant, HP, iMovie, Telegram, UTM (added by adobe-sweep) and WhatsApp.
   - Each one has `requires = ["mas"]`, so a fresh Mac installs the `mas` command first.
@@ -58,7 +59,7 @@ Nothing is running from this run. The live config on each Mac still uses the old
 
    Expect: both rows name `mas`, not `homebrew`.
 
-**On terra, at the screen, only after TERRA-ORDER:** terra's Rig needs tools-rig `a9570bb`, and its chezmoi needs `8d86b58`. Neither has been pushed, and terra's current Rig does not know the `mas` provider.
+**On terra, at the screen, only after TERRA-ORDER:** terra's Rig needs tools-rig `a9570bb`, and its chezmoi needs `79d667f`. chezmoi has been pushed, but tools-rig has not, and terra's current Rig does not know the `mas` provider. Until TERRA-ORDER is settled, do not run `chezmoi apply` on terra: a pull now would bring the new declarations without the provider that reads them.
 
 1. In Terminal, run:
 
@@ -66,7 +67,7 @@ Nothing is running from this run. The live config on each Mac still uses the old
    git -C ~/workspaces/knowledge-islands/tools-rig pull --ff-only && git -C ~/.local/share/chezmoi pull --ff-only
    ```
 
-   Expect: both fast-forward. tools-rig lands on `a9570bb` or later, and chezmoi on `8d86b58` or later.
+   Expect: both fast-forward. tools-rig lands on `a9570bb` or later, and chezmoi on `79d667f` or later.
 
 2. Run:
 
@@ -94,23 +95,23 @@ CORE-059-ACCEPT from provider-resume is still open. Its condition, `warn=0` on s
 
 **Query.** Keep `mas` in the public view?
 
-**Options.** a) (recommended) Keep it as committed in `8d86b58`. b) Take `requires = ["mas"]` off the public apps and take `mas` back out of `public`. A fresh Mac would then rely on the apply order alone to install `mas` first.
+**Options.** a) (recommended) Keep it as committed in `79d667f`. b) Take `requires = ["mas"]` off the public apps and take `mas` back out of `public`. A fresh Mac would then rely on the apply order alone to install `mas` first.
 
 ### TERRA-ORDER: get the provider and migration to terra
 
-**Context.** terra can only take this change once it has tools-rig `a9570bb` and chezmoi `8d86b58`. Both are local on sol and unpushed, because pushing was not authorised. If terra applied the new config with its current Rig, the `mas` provider would be unknown there.
+**Context.** terra can only take this change once it has tools-rig `a9570bb` and chezmoi `79d667f`. The chezmoi commit has since been pushed by another session, but tools-rig `main` is still three commits ahead of `origin/main` on sol (`b5011d5`, `67328f4`, `a9570bb`). So the two repositories are out of step on the remote: if terra pulled chezmoi and applied it with its current Rig, the `mas` provider would be unknown there and all fourteen App Store declarations would fail to load.
 
-**Query.** How should terra get both commits?
+**Query.** How should terra get the provider?
 
-**Options.** a) (recommended) Authorise a push of tools-rig `main` and chezmoi `main` from sol. Kris then runs the terra steps above. b) Leave terra on the old form for now. It keeps working, with 13 or 14 deprecation warnings, until a later push.
+**Options.** a) (recommended) Authorise a push of tools-rig `main` from sol, so that the remote is consistent again. Kris then runs the terra steps above. b) Hold off: no `chezmoi apply` on terra until a later tools-rig push. terra keeps the old form and its 13 or 14 deprecation warnings until then.
 
 ```text
-MAS-PUBLIC - a) keep mas in the public view as committed in 8d86b58
-TERRA-ORDER - a) push tools-rig main and chezmoi main from sol; I then run the terra steps (pull both, chezmoi diff, chezmoi apply ~/.config/rig, rig doctor shows warn=0)
+MAS-PUBLIC - a) keep mas in the public view as committed in 79d667f
+TERRA-ORDER - a) push tools-rig main from sol (b5011d5, 67328f4, a9570bb); I then run the terra steps (pull both, chezmoi diff, chezmoi apply ~/.config/rig, rig doctor shows warn=0)
 ```
 
 ```text
-╭─ run report · 2026-10-15T09:58:00Z ──────────────╮
+╭─ run report · 2026-10-15T12:18:00Z ──────────────╮
 │                                                  │
 │  █▀▀▄ █▀▀▀ █▀▀▀ ▀▀█▀   · run done                │
 │  █▀▀▄ █▀▀  ▀▀▀█   █    · App Store migrated      │
@@ -119,10 +120,11 @@ TERRA-ORDER - a) push tools-rig main and chezmoi main from sol; I then run the t
 ╰──────────────────────────────────────────────────╯
 ```
 
-- [at rest] migrate-mas finished; nothing running from this run
-- [waiting on Kris] sol steps 1–3; terra steps after TERRA-ORDER
+- [at rest] migrate-mas finished, completed by mas-resume; nothing running from this run
+- [waiting on Kris] sol steps 1–3; terra steps after TERRA-ORDER, and no chezmoi apply on terra until then
 - [queries] MAS-PUBLIC, TERRA-ORDER; carried: CORE-059-ACCEPT, UTM-SOL
 - [uncommitted] this report (state folder and thread folder)
-- [unpushed] chezmoi `8d86b58` (and earlier local commits) and tools-rig `a9570bb` on sol, `main`; pushing was not authorised
+- [pushed elsewhere] chezmoi `79d667f`, rebased and pushed at 11:31 BST by another session
+- [unpushed] tools-rig `b5011d5`, `67328f4`, `a9570bb` on sol, `main`; pushing was not authorised
 
 Resume Rig: mac-studio-bootstrap under current ki-pmo and ki-delegation since 2026-10-14T16:47Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.
