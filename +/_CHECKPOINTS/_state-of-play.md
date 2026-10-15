@@ -15,7 +15,8 @@ updated_at: 2026-10-15T21:25:00Z
 - **Resume:** `Resume Master: state-of-play under current ki-pmo and ki-delegation since 2026-10-15T15:14:39Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`
 - **Next steps, in order:**
   1. Act on Kris's replies to the re-bootstrap report of 22:25 BST: FW-DECLARE-NOW, SSH-SPARE-KEY, ESTATE-MAP-OBSERVATORY, STASH-DROP, THREADS-CHECKINS, CHURN-REMEDIES, OLD-THREAD-FOLDERS, STALE-BRANCHES (AUTOMATION-BRANCHES folded in), UNPUSHED-COMMITS, STAGING-LEFTOVERS, SRC-BADGE, FRONTMATTER-STATE and DESIGN-HOME. The detail is in the hold-branches, digest-churn and restart-model reports in the thread folder.
-  2. Check that the three reinstated threads act on their REINSTATE lines.
+  2. Check that the reinstated threads act on their REINSTATE lines. Live at 22:55 BST: KI > SoP, KI > Model > ways of working, KI > Model > knowledge acquisition (opened by Kris), KI > Rig > mac studio setup (Project being renamed), KI > mics / webcams (conversational, took over desk-kit), Acquire > intake (sol), Chezmoi > misc (sol). THREAD-NAMES (naming convention, decisions log 22:45 BST) was pasted to ways-of-working at 22:55 BST for adoption into ki-pmo.
+  - Rule from Kris, 22:50 BST: this thread dispatches changes to the coordination threads and does not ask whether to.
   3. 2026-10-16: the KI-PRINCIPAL-MOD-008 hold review.
 - **Settled since the hold:** the hold branches are folded or discarded; only ki-principal `hold/2026-10-15/working-state` is kept, until Rig: mac-studio-bootstrap settles `+/_THREADS/mac-studio-bootstrap/chezmoi-fix.report.md`. The restart model is a design note in the ways-of-working Project's `design/` folder and handed over; HOST-ROLES is bound in the Host network Project note, and SEAT-HOSTS was sent to Rig: chezmoi.
 
