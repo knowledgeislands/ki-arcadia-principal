@@ -695,3 +695,7 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 167 (2026-10-15T21:43:37Z)
 
 - HARNESS-PIN - (Kris, 15 October) Authorise the Harness archive download and a fix(bootstrap) pin commit at Harness main as it stands once threads-records has landed, with its gates, then cut v0.10.5, bump ki-principal's .github/ki-version and watch CI to the audit step.
+
+## Decision 168 (2026-10-15T21:50:16Z)
+
+- THREAD-NAMES - (Kris, 15 October 22:45 BST, relayed by state-of-play) Showing the thread list `KI > SoP`, `KI > Model > ways of working`, `KI > Model > knowledge acquisition`, `KI > Rig > mac studio setup`, `KI > mics / webcams`, `Acquire > intake (sol)`, `Chezmoi > misc (sol)`: "this is a better way I think". On the host suffix: "no, the machine is only added if its limited to that machine, so intake and chezmoi misc are machine specific". State-of-play's direction: adopt it into ki-pmo's openers and the checkpoint labels; propose the label change to Kris before rewriting any checkpoint.
