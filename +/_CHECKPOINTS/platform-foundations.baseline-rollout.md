@@ -2,9 +2,9 @@
 type: ki-checkpoint
 thread: platform-foundations.baseline-rollout
 label: 'Fnd: baseline-rollout'
-state: active
+state: drained
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-14T23:03:00Z
+updated_at: 2026-10-15T15:00:00Z
 ---
 
 # platform-foundations.baseline-rollout
@@ -15,7 +15,7 @@ Every Knowledge Islands repository meets a solid baseline: `ki repo audit --esta
 
 ## Current state
 
-- Mark: 2026-10-14T23:03Z. ki-pmo read at daa63224. Thread folder: +/_THREADS/baseline-rollout/ (decisions.md only). Run: `baseline-rollout` (gate-clear and gate-follow finished; nothing running). Messages: read to entry 0 at 2026-10-14T23:03Z.
+- Mark: 2026-10-15T14:59Z (drain for sol). ki-pmo read at daa63224. State: drained. Running: nothing; queued: nothing. Thread folder: +/_THREADS/baseline-rollout/ (decisions.md only; nothing in ~/.local/state/ki/agents/baseline-rollout/ is needed to resume). Run: `baseline-rollout` (gate-clear and gate-follow finished). Open queries: none. Waiting on: nothing.
 - Re-bootstrapped as a coordination thread under ki-pmo on 2026-10-14; resting.
 - The Project has no open work records. [KI-HARNESS-GOV-168 (pruned)](https://github.com/knowledgeislands/ki-agentic-harness/blob/14401241/docs/roadmap/KI-HARNESS-GOV-168-roll-out-ki-pin-receivers.md) was cancelled and parked as an idea in the [baseline-rollout](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/baseline-rollout.md) Project note on 2026-10-14, then pruned; its scope (pin receivers, the BREW-013 tool-release consumer registration, and the CI-1 and HOOK-1 roll-out) lives there as an idea.
 - The release bot and `main` ruleset are on `ki-agentic-harness` (the reference receiver), `homebrew-tap` and `ki-website`; every further repository needs its `main` ruleset before the bot, as [Release Cascade](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Admin/Operations/Processes/Release%20Cascade.md) sets out.
@@ -46,3 +46,5 @@ This checkpoint and `+/_THREADS/baseline-rollout/`. Records live in `/Users/kris
 ## Next step
 
 1. Resting; launch nothing until Kris revives the pin-receiver idea.
+
+Resume line: `Resume Fnd: baseline-rollout on sol from its checkpoint under current ki-pmo and ki-delegation since 2026-10-15T14:59Z: re-bootstrap, read the parked queries, take stock, restart authorised work, then banner.`

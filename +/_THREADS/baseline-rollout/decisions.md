@@ -39,3 +39,7 @@
 ## Decision 10 (2026-10-14T23:02:37Z)
 
 - Kris, 2026-10-15: 'That prompt has been passed.' GATE-REMAIN and THREADS-CHECKINS handed to the state-of-play thread; nothing further held here.
+
+## Decision 11 (2026-10-15T14:59:45Z)
+
+- Kris, 2026-10-15: 'DRAIN FOR SOL ... Bring this thread to a clean, recoverable rest now.' and 'DRAIN CHECK ... A drain is a mark plus stopping all work, so that the thread can be archived on terra and resumed on sol from the repository alone.' Thread drained at 2026-10-15T14:59Z.
