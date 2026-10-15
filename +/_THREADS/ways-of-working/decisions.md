@@ -603,3 +603,7 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 144 (2026-10-14T22:21:05Z)
 
 - MARK-FIRST - Oh, actually as well, can you take a mark before you process those?
+
+## Decision 145 (2026-10-15T02:05:34Z)
+
+- HANDED-OFF - (Kris, 15 October, relayed by knowledge-acquisition) knowledge-acquisition no longer tracks DIAGRAMS or the lasting report-heading fix. Both are yours outright; report their outcomes in your own summaries, not back to knowledge-acquisition.
