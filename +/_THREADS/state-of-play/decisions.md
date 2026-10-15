@@ -913,3 +913,7 @@
 ## Decision 226 (2026-10-15)
 
 - Kris, 2026-10-15, FW-EXPOSURE question: "I just want to check something about the setup for access between the machines that are on tail scale and whether or not it exposes me from sat in a cafe. ... currently, in my settings, I have screen sharing and remote logging enabled ... why is the firewall not able to effectively protects me on the screen sharing and the remote login as well." Read-only investigation authorised as first-level investigation.
+
+## Decision 227 (2026-10-15)
+
+- Kris, 2026-10-15, SOL-MOVE: "give me a prompt that I can paste to any of my open threads in KI principal and acquire, so that they all effectively drain down the work that they are doing and make sure that everything that they need is checked into repositories and so that I can recover this work once I have moved it onto Sol, which is what I am going to do next ... I am going to make sure there is a blank commit across all of the repositories that effectively baselines them, and then they will deal with any tidy ups on the other side of that." LIVE-MAN-SWITCH idea: "a dead man switch, but in reverse ... push something to a repository which is pulled on a regular basis ... machines will self-update themselves based on that repository information. So, if anything should go wrong, for example, if we make firewall changes or SSH changes, we should never be allowed to break outbound traffic ... this process can periodically run and effectively resynchronize itself". Outstanding questions go into the checkpoint before state is stored.

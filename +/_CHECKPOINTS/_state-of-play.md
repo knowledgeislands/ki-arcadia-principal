@@ -71,6 +71,14 @@ Rules live with their durable owners: the roadmap model in [GDR-KI-PRINCIPAL-005
 
 ## Open questions
 
+Stored 2026-10-15 for the move to sol:
+
+- **SOL-MOVE (Kris, 15 October):** Kris moves working to sol next. Every thread in ki-principal and acquire drains, commits and pushes; Kris then makes a blank baseline commit across all repositories; tidy-ups follow on sol. Resume this thread on sol from this checkpoint; machine-local `~/.local/state/ki/agents/state-of-play/` does not travel, `decisions.md` in the thread folder does.
+- **FW-TERRA-OFF (open with Kris):** turn off Screen Sharing and Remote Login on terra at the Mac until [KI-TOOL-RIG-CORE-047](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-047-tailnet-only-listener-firewall.md) is live there; sol unchanged ([fw-exposure](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/state-of-play/fw-exposure.report.md)). Both currently listen on every network and accept passwords.
+- **FW-SSH-KEYONLY (open with Kris):** a run drafts a key-only SSH rollout plan in the chezmoi macOS workstation guide's Remote access section (key inventory in both directions, held session, second-machine test, restore steps), which Kris carries out attended. Kris agrees SSH stays open as the deliberate way back in, made key-only; keys are not yet proven in both directions.
+- **LIVE-MAN-SWITCH (idea, Kris, 15 October):** a reverse dead man's switch. Each host periodically pulls a control repository and re-applies its declared state, so a host that has lost inbound access heals itself once it has outbound connectivity; firewall and SSH changes must never break outbound traffic. Check [KI-TOOL-RIG-CORE-046](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-046-remote-access-and-continuity.md) as the likely home before any capture; no record yet. Gate the FW-SSH-KEYONLY and firewall rollouts on it as a design input.
+- **Firewall steps:** waiting on Rig: chezmoi's FW-DECLARE commit; then Kris gets the terra steps.
+
 Waiting on Kris: nothing open.
 
 Waiting on Rig:
