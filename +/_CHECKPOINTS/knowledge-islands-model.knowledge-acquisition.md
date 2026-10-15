@@ -2,42 +2,37 @@
 type: ki-checkpoint
 thread: knowledge-islands-model.knowledge-acquisition
 label: 'Knowledge Islands Model: knowledge-acquisition'
-state: drained
+state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-15T14:59:00Z
+updated_at: 2026-10-15T21:47:00Z
 ---
 
 # knowledge-islands-model.knowledge-acquisition
 
-## Resume on sol (drain, Kris, 15 October 2026)
+## Pick-up
 
-State: drained at the 2026-10-15T14:59:00Z mark (DRAIN CHECK). Running: nothing. Queued: nothing live. The run state at `~/.local/state/ki/agents/knowledge-acquisition/` stays on the Mac Studio; its only leftover is a stale duplicate `heading-trim` queue entry that must not be run. `run-decisions.md` in the thread folder copies that run-state decisions file; `decisions.md` is the thread's full log.
+Status: rest. Re-bootstrapped 2026-10-15T21:47:00Z from the hold at the 2026-10-15T14:59:00Z mark. Running: nothing. Queued: nothing. The earlier `knowledge-acquisition` run state is not on this machine; its only leftover was a stale duplicate `heading-trim` queue entry that must never run. `run-decisions.md` in the thread folder copies that run's decisions file; `decisions.md` is the thread's full log.
 
-Open queries for Kris (asked in the 03:13 BST Summary on 15 October, all unanswered; option a) recommended for each):
+Open queries for Kris (first asked in the 03:13 BST Summary on 15 October, put back at the re-bootstrap, all unanswered; option a) recommended for each):
 
 - AUDIT-GATE: accept KI-PRINCIPAL-MOD-006 despite other sessions' audit failures. a) accept now. Detail: `mod-006.report.md`.
 - ADR-HARBOUR: amend ADR-KI-PRINCIPAL-001's staging wording to match acquire. a) capture a small follow-up record. Detail: `mod-006.report.md`.
 - SEED-HOME: where a seed lives in acquire. a) `context/chatgpt/<territory-key>/seeds/<seed-slug>.md` plus an "Open seeds" line, committed by acquire-intake from a pack staged in `-`.
 - FIELD-SHAPE: return capture fields. a) accept `ki_project`, `ki_concept`, `ki_island`, `ki_seed`; acquire-intake amends CAPTURE-CHATGPT.md.
-- FOLD-AUTHORITY: Kris's approval of a named fold-back proposal stands in for a record for an Emerging Concepts note. a) yes, except a new note, a folder restructure or `Admin/`.
+- FOLD-AUTHORITY: Kris's approval of a named fold-back proposal stands in for a record for an Emerging Concepts note (ROOTING-OWNER makes Emerging Concepts notes a seed and fold-back target). a) yes, except a new note, a folder restructure or `Admin/`.
 - FOLD-TRIGGER: fold-back only on Kris's word. a) yes; list tagged, unfolded captures at each mark.
 - BACK-LINK: one handoff to acquire-intake (field amendment, seeds folder, `folded` disposition) as a roadmap item there. a) yes.
-- PILOT-GO: build and stage the Known World seed pack on Sonnet, publishing nothing to acquire yet. a) yes.
+- PILOT-GO: build and stage the Known World seed pack on Sonnet, publishing nothing to acquire yet; per INCEPTION-PILOT the seed is the foundations-coherence seed prompt (section 4) plus Island model and Tending's Notes, and the capture folds back into the Known World note; the ChatGPT discussion is Kris's to hold when it suits, and nothing waits on it. a) yes.
 
 Detail for SEED-HOME to PILOT-GO: `loop-design.report.md`. KI-PRINCIPAL-MOD-006 is delivered (`600d4d4e`, Acquisition Process note) and awaiting review.
 
-Waiting on other threads: nothing; HANDED-OFF moved all acquire work to acquire-intake, and DIAGRAMS and the report-heading fix to ways-of-working. Optional for Kris: the one-line paste telling ways-of-working not to report back here; download the Acer ZIP for acquire-intake.
+Waiting on other threads: nothing. Held: DOTFILES-UE-035 with chezmoi. Not started: the harness side of KI-HARNESS-OPS-005. Parked: ChatGPT territory keys to kebab-case names.
 
-Held: DOTFILES-UE-035 with chezmoi. Not started: the harness side of KI-HARNESS-OPS-005 (incremental acquisition, post-export changes, per-territory triage, one verified project move, source-retirement gate; Equal Remedy the last provisional routing). Parked: ChatGPT territory keys to kebab-case names.
+Next steps: take Kris's answers to the eight queries, record them in `decisions.md`, then launch the authorised work in a fresh `knowledge-acquisition` run: accept KI-PRINCIPAL-MOD-006 through ki-accept, capture the ADR follow-up, build and stage the Known World seed pack (Sonnet), and hand the loop's acquire side to acquire-intake.
 
-Next step on sol: re-bootstrap from this checkpoint, take the answers to the eight queries, then launch the authorised work (accept KI-PRINCIPAL-MOD-006 through ki-accept, capture the ADR follow-up, build the seed pack). At the 2026-10-15T14:59:00Z mark the `acq-finish`, `acquire-route`, `acquire-resize`, `push-handoff` and `route-local-review` reports were deleted (answered; outcomes in decisions.md, this checkpoint and commits). The thread folder keeps decisions.md, run-decisions.md, mod-006.report.md and loop-design.report.md.
-
-Resume line: Resume Knowledge Islands Model: knowledge-acquisition on sol from its checkpoint under current ki-pmo and ki-delegation since 2026-10-15T14:59:00Z: re-bootstrap, read the parked queries, take stock, restart authorised work, then banner.
+Resume line: Resume Knowledge Islands Model: knowledge-acquisition under current ki-pmo and ki-delegation since 2026-10-15T14:59:00Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.
 
 **Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
-
-- 2026-10-15 · INCEPTION-PILOT · Kris: 'Leave a message in the knowledge-acquisition checkpoint naming the Known World model as the inception loop's first pilot: the seed is the foundations-coherence seed prompt plus Island model and Tending's Notes, and the capture folds back into the Known World note. I'll hold the ChatGPT discussion when it suits me; nothing waits on it.' Note: [Known World](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Pillars/Philosophy/Emerging%20Concepts/Known%20World.md); seed prompt: section 4 of the [foundations-coherence report](/Users/krisbrown/.local/state/ki/agents/state-of-play/foundations-coherence.report.md); Notes: [Island model and Tending](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/island-model-and-tending.md). ROOTING-OWNER, Kris, 15 October: 'knowledge-acquisition adds Emerging Concepts notes as a seed and fold-back target', so the loop seeds from, and folds back to, an Emerging Concepts note as well as a Project's Notes.
-- 2026-10-14 · INCEPTION-SHAPE · Kris decided: "No new kind of Project: inception is the idea-stage pattern, and knowledge-acquisition designs the loop - the Project's Notes published into acquire's ChatGPT context on the way out, captures carrying a ki_project field and folded back into the Project's Notes on the way back." This thread designs that seed-and-return loop; inception itself is ways-of-working's idea-stage pattern · detail: [state-of-play decisions](/Users/krisbrown/.local/state/ki/agents/state-of-play/decisions.md), [inception-type report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/inception-type.report.md)
 
 ## Objective
 
