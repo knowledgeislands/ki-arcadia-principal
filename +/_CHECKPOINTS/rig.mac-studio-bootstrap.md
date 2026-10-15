@@ -4,7 +4,7 @@ thread: rig.mac-studio-bootstrap
 label: 'Rig: mac-studio-bootstrap'
 state: active
 created_at: 2026-10-08T08:45:00Z
-updated_at: 2026-10-15T09:28:00Z
+updated_at: 2026-10-15T21:24:00Z
 ---
 
 # rig.mac-studio-bootstrap
@@ -26,7 +26,7 @@ Mark: 2026-10-14T16:47Z (previous marks 2026-10-14T14:51Z, 14:48Z and 14:35Z, th
 
 ki-pmo read at dfa52a12.
 
-**10:28 BST (2026-10-15).** rig-apps and mas-provider exited without DONE about 02:45 BST, so the overnight chain never started; resumed 10:26 as apps-resume and provider-resume on their uncommitted edits. Queued: adobe-sweep (Lightroom Classic too, Kris 'can go too'), hostkey-check (after another session's chezmoi 37295bc), migrate-mas. sol-remove: PhotoSweeper and Disk Speed Test need Kris's sudo; Adobe inventory done. readonly-checks: both Macs accept SSH passwords (SSH-TAILNET re-put); GitHub lacks terra's 11 harness commits; REGISTRY-STORES is the machine-local ki binding only. FW-VERIFY done.
+**22:24 BST (2026-10-15).** At rest. Done today: the mas provider (KI-TOOL-RIG-CORE-059, tools-rig a9570bb, unpushed) and the 14-app migration (chezmoi 79d667f, pushed by another session); Adobe, Lightroom and Creative Cloud retired in Rig; UTM declared mas; terra host key, `Host terra` and the key-only sshd drop-in (chezmoi, pushed); rig.midnight.ninja refreshed (2 local commits, now ahead 2 behind 1); Observatory favicon (apps-observatory.local d9c66cd, unpushed; service needs restart); desk-kit research; adobe-remove.sh (ki-principal a91113d, pushed); UE-086 walk-through (ue086-walk report); query-check. Kris did at sol: mas uninstalls, rig config apply, ssh config apply. Open: 17 queries listed in the 22:24 Summary (TERRA-ORDER, CORE-059-ACCEPT, SITE-PUSH, SITE-ACTUAL vs C7d removal, ADOBE-DATA, C56-TICK, C8-WORDING and others). Held at screen: key-only SSH on sol, adobe-remove.sh on both Macs, UE-086 walk-through steps 0-12 on sol, terra applies after TERRA-ORDER. TERRA-HARNESS-AHEAD overtaken (terra pushed).
 
 **Delivered on `sol`.** chezmoi applied, Rig declarations reconciled, the released `ki` passing `ki doctor`, and agents reach `sol` over Tailscale and SSH with GitHub through agent forwarding. The restart test passed on 2026-10-14 (macOS 27.0.1; Tailscale reconnected on its own after the FileVault unlock). 56 repositories are cloned into `~/workspaces/<group>/<repo>` across the eight territories and 51 are in the `ki` registry (terra's extra entry is settled by TERRA-READ). The Observatory runs and `rig doctor` is clean; its doctor gap is [KI-TOOL-RIG-CORE-052](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-052-doctor-service-launch-prerequisites.md) (triage). The old `kit`, `hnr` and `knowledge-wayfinder` trees are in `~/workspaces/_old` (undo by moving them back); dead skill links, the old mise `claude` shim and 82 old kit, hnr and kis paths in Claude settings are cleared; `ki-pmo` and `ki-pmo-design` are linked; six stale OneDrive source entries are removed; the domt4 autoupdate agent and tap are gone. GitHub Desktop lists all 56 territory checkouts and its backup is deleted. Headroom runs on `sol` by hand (`headroom install apply`, port 8787) and Claude Code works through it; the declaration gap is in the chezmoi triage record captured for SOL-RECORDS.
 
