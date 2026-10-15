@@ -619,3 +619,75 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 148 (2026-10-15T21:23:19Z)
 
 - RESUME-SOL - (Kris, 15 October) Resume `+/_CHECKPOINTS/knowledge-islands-model.ways-of-working.md`
+
+## Decision 149 (2026-10-15T21:31:44Z)
+
+- DEPS-HOLD - (Kris, 15 October) Authorise a run to adopt the four patch-level dev-tool updates (@biomejs/biome 2.5.15, @vitest/coverage-v8 5.0.3, knip 6.39.0, vitest 5.0.3) in tools-ki in its own chore(deps) commit, re-run every gate, move KI-TOOL-KI-CLI-126 to awaiting review, cut the patch release carrying it and KI-TOOL-KI-CLI-132, bump ki-principal's .github/ki-version and watch CI to the audit step.
+
+## Decision 150 (2026-10-15T21:31:44Z)
+
+- PMO-7-BACKLOG - (Kris, 15 October) Each thread relinks or deletes its own reports at its next mark under the thread-tidy rule, and the state-of-play thread tells each one so.
+
+## Decision 151 (2026-10-15T21:31:44Z)
+
+- AREAS-REFRESH - (Kris, 15 October) Send one agent to rewrite the ways-of-working Project note's and the Engineering Practice Pillar's diagram descriptions for the ten functional areas, linked at the pushed harness revision.
+
+## Decision 152 (2026-10-15T21:31:44Z)
+
+- RECORD-NAME - (Kris, 15 October) Keep the Project note's description and commit link, which pass the audit, without naming the delivering record.
+
+## Decision 153 (2026-10-15T21:31:44Z)
+
+- THREADS-CONTENT - (Kris, 15 October) A thread folder holds a closed list, decisions.md and <name>.report.md only; briefs live in the state folder, work products in their owning home, temporary output in the temporary location.
+
+## Decision 154 (2026-10-15T21:31:44Z)
+
+- THREADS-TMP-HOME - (Kris, 15 October) Temporary output goes in <primary checkout>/tmp/<run>/<name>/ in the repository the agent works in, ignored and deleted when the run closes or they are superflous to requirements; machine-only scratch may stay in the state folder as <name>.work/.  Improve the ways-of-working via whichever skill to ensure that the threads are regularly trimmed back as needed.
+
+## Decision 155 (2026-10-15T21:31:44Z)
+
+- THREADS-TELL - (Kris, 15 October) Open one ki-agentic-harness record (closed list in the ki-delegation run packet, one run-prompt.md footer line, a ki-pmo rubric item) and one tools-ki record (ki agent launch creates tmp/<run>/<name>/, ki agent close removes it).
+
+## Decision 156 (2026-10-15T21:31:44Z)
+
+- THREADS-CLEAR - (Kris, 15 October) Each owning thread clears its own folder at its next mark, moving scratch to tmp/, homing or removing tracked work products and moving briefs to the state folder, told through its inbox by this thread.
+
+## Decision 157 (2026-10-15T21:31:44Z)
+
+- AREAS-OVERTAKE - (Kris, 15 October) Treat my AREAS-PATTERN answer of 15 October as answering IDEA-STAGE and IDEA-CAP and close both: an idea-stage Project is a planned Project whose Outcome is a decision, ideas in Notes, no records and no thread, at most one per Initiative and three across the territory.
+
+## Decision 158 (2026-10-15T21:31:44Z)
+
+- IDEA-STAGE - (Kris, 15 October) Adopt it as AREAS-PATTERN puts it, with delta-evaluation moving from paused to planned.
+
+## Decision 159 (2026-10-15T21:31:44Z)
+
+- IDEA-CAP - (Kris, 15 October) At most one idea-stage Project per Initiative and three across the territory, reviewed at each state-of-play mark.
+
+## Decision 160 (2026-10-15T21:31:44Z)
+
+- REGISTRY-RECORD - (Kris, 15 October) No new record: after pmo-hold, one agent carries ROOTING-MODEL, AREAS-PATTERN, TERRITORY-RULE, PAUSE-CONDITION and the types-review attribute rules into the ki-work Project registry standard and the ki-work-roadmap ideas-and-graduation section, with the decisions log and run report holding the change.
+
+## Decision 161 (2026-10-15T21:31:44Z)
+
+- PAUSE-CONDITION - (Kris, 15 October) A paused Project's ## Notes opens with one line giving its release condition and review date, reviewed by state-of-play after that date; no new front matter; carried with REGISTRY-RECORD.
+
+## Decision 162 (2026-10-15T21:31:44Z)
+
+- PRIORITY-FIELD - (Kris, 15 October) Remove priority from KI-PRINCIPAL-MOD-006 and KI-PRINCIPAL-MOD-008, and have the Streams checker and tools-ki warn on unknown record fields; horizon stays the only priority signal.
+
+## Decision 163 (2026-10-15T21:31:44Z)
+
+- STREAMS-INDEX - (Kris, 15 October) Dispatch a one-file run to align the Streams index note's two paragraphs with the Project registry standard, committed by explicit path, after REGISTRY-RECORD lands.
+
+## Decision 164 (2026-10-15T21:31:44Z)
+
+- SOP-DROPPED - (Kris, 15 October) Ask the state-of-play thread to cherry-pick 3b8c8303 onto origin/main in a temporary worktree and push it fast-forward, and tell the session that reset main that autostash and resets of shared main are not permitted.
+
+## Decision 165 (2026-10-15T21:31:44Z)
+
+- HEADING-LASTING - (Kris, 15 October) Widen KI-HARNESS-GOV-175 to add a mechanical ki-pmo rubric check that a saved report's first non-blank line is the # heading (or that record's front matter, then the heading) and one ki-delegation run-prompt.md footer line saying so; no new record.
+
+## Decision 166 (2026-10-15T21:31:44Z)
+
+- PRIORITIES - (Kris, 15 October) Some other things high on my list are: `+/_THREADS` vs `tmp`; Thread types and behaviours (conversational, coordination, state-of-play); Thread naming; Thread footer types, states and projects; Initiative naming in `knowledge-islands`; Ideas (Scratch Areas) vs Initiatives vs Projects vs Roadmap Items
