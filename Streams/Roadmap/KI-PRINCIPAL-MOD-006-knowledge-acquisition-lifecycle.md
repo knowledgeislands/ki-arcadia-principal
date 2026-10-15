@@ -9,14 +9,14 @@ component: model
 tags:
   - topic/knowledge-islands
   - topic/acquisition
-status: ready
+status: awaiting-review
 priority: medium
-horizon: next
+horizon: now
 blocks: []
 blocked_by: []
-baseline_ref: null
+baseline_ref: 3c8544a21e8a80680ed1669e56a6f9c4f8850bcd
 created_at: 2026-08-23T12:33:49Z
-updated_at: 2026-10-14T00:15:00Z
+updated_at: 2026-10-15T02:20:00Z
 ---
 
 # Knowledge Acquisition Lifecycle
@@ -49,14 +49,14 @@ The decision states the architecture but not the operational picture: what a pro
 
 ## Steps
 
-- [ ] Re-read [[ADR-KI-PRINCIPAL-001-provider-neutral-knowledge-acquisition|ADR-KI-PRINCIPAL-001]], the `acquire` repository's `.acquire/granola/ledger.json` and migration manifest, two or three staged Granola `meeting.md` captures, and the `mcp-housekeeping-claude` README and checkpoint tool source; optionally run one read-level `claude_code_sessions_checkpoint` scoped to this repository.
-- [ ] Tabulate the provenance fields each source actually provides against the ADR's required set (original content, source identity, timestamps, assets, provenance, omissions, content hash, repository context), marking absent fields honestly.
-- [ ] Choose the note's folder under `Pillars/Philosophy/Model/` (likely `Processes/Acquisition Process/`) and create the note plus its same-name index if a new folder is needed, following the index-note rule.
-- [ ] Write the note: the six lifecycle stages with an owner per stage; the common provenance package; the harvest checkpoint as observed (source identity, timestamps, content hash, declared omissions); imperfect-routing handling (move within the Harbour or to another island without rewriting acquisition evidence); and source retirement stated as open, requiring a later provider-specific decision.
-- [ ] Cite both evidence sets by path and record the Claude staging asymmetry as an observed gap, not a design choice.
-- [ ] Add the note to its parent index with a two-to-four-sentence section.
-- [ ] Compare the observed checkpoint with [[ADR-KI-PRINCIPAL-001-provider-neutral-knowledge-acquisition|ADR-KI-PRINCIPAL-001]]; amend the ADR in place only if the evidence contradicts it, otherwise leave it unchanged and say so in the review packet.
-- [ ] Prepare the review packet and set the record to `awaiting-review`.
+- [x] Re-read [[ADR-KI-PRINCIPAL-001-provider-neutral-knowledge-acquisition|ADR-KI-PRINCIPAL-001]], the `acquire` repository's `.acquire/granola/ledger.json` and migration manifest, two or three staged Granola `meeting.md` captures, and the `mcp-housekeeping-claude` README and checkpoint tool source; optionally run one read-level `claude_code_sessions_checkpoint` scoped to this repository.
+- [x] Tabulate the provenance fields each source actually provides against the ADR's required set (original content, source identity, timestamps, assets, provenance, omissions, content hash, repository context), marking absent fields honestly.
+- [x] Choose the note's folder under `Pillars/Philosophy/Model/` (likely `Processes/Acquisition Process/`) and create the note plus its same-name index if a new folder is needed, following the index-note rule.
+- [x] Write the note: the six lifecycle stages with an owner per stage; the common provenance package; the harvest checkpoint as observed (source identity, timestamps, content hash, declared omissions); imperfect-routing handling (move within the Harbour or to another island without rewriting acquisition evidence); and source retirement stated as open, requiring a later provider-specific decision.
+- [x] Cite both evidence sets by path and record the Claude staging asymmetry as an observed gap, not a design choice.
+- [x] Add the note to its parent index with a two-to-four-sentence section.
+- [x] Compare the observed checkpoint with [[ADR-KI-PRINCIPAL-001-provider-neutral-knowledge-acquisition|ADR-KI-PRINCIPAL-001]]; amend the ADR in place only if the evidence contradicts it, otherwise leave it unchanged and say so in the review packet.
+- [x] Prepare the review packet and set the record to `awaiting-review`.
 
 ## Files touched
 
@@ -96,6 +96,38 @@ The new Pillars note is the island's operational explanation. Operator procedure
 ### Roadmap
 
 A later provider-specific record will be needed for the archive or deletion threshold. If the Claude staging gap persists after the harness's AI session acquisition lands, capture it as a separate Triage item rather than widening this one.
+
+## Review
+
+### Delivered
+
+The Acquisition Process note under `Pillars/Philosophy/Model/Processes/Acquisition Process/`, with a section in the parent `Processes.md`. Excluded as bounded: any `acquire` change, adapter work, retirement threshold. Baseline `3c8544a21e8a80680ed1669e56a6f9c4f8850bcd`.
+
+### Change Summary
+
+- New `Pillars/Philosophy/Model/Processes/Acquisition Process/Acquisition Process.md`: six stages with owners, evidence from `acquire` (ledger, migration manifest, one HNR capture) and `mcp-housekeeping-claude` (checkpoint schema), a provenance table with absent fields marked, the harvest checkpoint as observed, imperfect routing, open retirement, and the Claude staging gap.
+- `Processes.md`: overview sentence updated and an Acquisition Process section added.
+- The `acquire` checkout is at `/Users/krisbrown/workspaces/personal/acquire` (not under `knowledge-islands/`). Deviation: the optional live `claude_code_sessions_checkpoint` run was skipped; the schema was read from source.
+- ADR-KI-PRINCIPAL-001 left unchanged. Observation: it names staging in the receiving island's `+` Harbour, whereas Granola now stages in the shared `acquire` repository. This is a possible drift, not a contradiction of the six-stage model; left for an owner decision.
+
+### Verification
+
+- Dash grep on the new note: clean.
+- `acquire` `git status --short -- captures .acquire`: unchanged (empty before and after).
+- No `ki acquire` command ran and no non-read housekeeping tool was invoked.
+- `ki repo audit --skill ki-repo-kb` and `ki repo audit`: both report FAIL, none of them on files from this delivery. Failures are other sessions' `+/_THREADS/` files (malformed frontmatter in two reports; unlinked record identifiers in two `ways-of-working` reports). No finding names the new note, `Processes.md` or this record.
+
+### Outstanding concerns
+
+The two audit gates are not PASS because of the unrelated thread files above. The ADR Harbour wording may need a decision.
+
+### Post-change review
+
+Goal met: one Pillars note gives the operational lifecycle. Scope held. Regression risk is low (new note plus an index section). Acceptance readiness depends on the owner accepting the audit failures as not caused by this work.
+
+### Mini recap
+
+Delivered the lifecycle note, kept the ADR as is, and found that the ADR's Harbour wording lags the `acquire` consolidation. Proposed learning route: a possible ADR amendment record if the owner confirms.
 
 ## Discussion
 

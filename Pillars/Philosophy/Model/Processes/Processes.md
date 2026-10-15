@@ -13,7 +13,7 @@ author: Written with Claude
 
 Processes are how governance is carried out in practice. Within the Model act, this chapter holds the active procedures that move knowledge from an idea to accepted content, as distinct from the conventions that describe what accepted content looks like. They are what give an island's council authority a concrete form.
 
-The chapter has two processes facing in different directions. One governs change within an island; the other governs how knowledge passes between a territory and the shared Knowledge Islands model. Both preserve the authority of whoever owns the receiving knowledge.
+The chapter has three processes. One governs change within an island; one governs how knowledge passes between a territory and the shared Knowledge Islands model; one describes how external material is acquired and harvested. Both preserve the authority of whoever owns the receiving knowledge.
 
 Start with [[How Change Happens]], the narrative chapter note, before reading either process in detail.
 
@@ -34,3 +34,9 @@ Start with [[How Change Happens]], the narrative chapter note, before reading ei
 ## Contribution Process
 
 [[Contribution Process]] distinguishes a territory's adoption of published Knowledge Islands knowledge from a contribution to Knowledge Islands Principal's canonical model. It explains how public adoption, formal contributions, and internal routing or restricted exchange each work, and why none of them transfers authority away from the receiving owner. Read it when bringing knowledge into an island from the shared model or offering knowledge back to it.
+
+---
+
+## Acquisition Process
+
+[[Acquisition Process/Acquisition Process|Acquisition Process]] describes the provider-neutral lifecycle by which material from AI sessions, meetings and other external sources is discovered, acquired, staged, harvested into durable knowledge and eventually retired from its transient source. It tabulates the provenance each source actually provides, records the harvest checkpoint as observed, and states that the archive and deletion threshold is still undecided. Read it when working on acquisition adapters or harvesting captured material.
