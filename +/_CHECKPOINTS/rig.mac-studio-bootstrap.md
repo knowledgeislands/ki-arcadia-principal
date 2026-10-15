@@ -4,7 +4,7 @@ thread: rig.mac-studio-bootstrap
 label: 'Rig: mac-studio-bootstrap'
 state: active
 created_at: 2026-10-08T08:45:00Z
-updated_at: 2026-10-14T23:49:00Z
+updated_at: 2026-10-15T01:12:00Z
 ---
 
 # rig.mac-studio-bootstrap
@@ -26,7 +26,7 @@ Mark: 2026-10-14T16:47Z (previous marks 2026-10-14T14:51Z, 14:48Z and 14:35Z, th
 
 ki-pmo read at dfa52a12.
 
-**01:40 BST (2026-10-15).** Nothing running. SOL-CLT done: Command Line Tools 27.0 present; `sol-clt` ran `rig upgrade` (107 done, 0 failed), KB-DOTFILES-UE-086 C2 and C3 and `mise prune` (chezmoi `be8e318`, local). Kris installed the Telegram Homebrew cask at sol's screen, but Rig now declares the App Store copy (query SOL-TELEGRAM-DIRECTION). Kris's `rig apply` (01:19-01:21 BST) failed 9: eight cargo tools ran before Rust (query APPLY-RUST-ORDER) and the SVG handler needed a GUI confirmation (now present); `10-applications.toml` was applied about a minute after it, so SOL-APPLY is done except the cargo re-run. Open: SOL-TELEGRAM-DIRECTION, UE086-SOL-REST, APPLY-RUST-ORDER, APPLY-UPGRADE-LOCK; TERRA-READ held for terra. Unpushed: chezmoi `be8e318`.
+**02:12 BST (2026-10-15).** Running: terra-read (read-only over SSH), mas-model, sol-push. Done since 01:40: Telegram is the App Store build via mas; SOL-APPLY done (cargo re-run status 0); TERRA-SSH done (Remote Login on terra, key test from sol exit 0); upgrade-lock captured [KI-TOOL-RIG-CORE-058](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-058-apply-lock-handler-history.md) (tools-rig cf9db25, efd4eae); rust-order and ue086-rest finished, reports to read. PUSH-SOL approved, sol-push pushing chezmoi and tools-rig. Open: TERRA-HOSTKEY, SSH-TAILNET; held: UE086-SOL-REST steps, 15-command-line.toml apply. Messages: inbox file not yet read this session.
 
 **Delivered on `sol`.** chezmoi applied, Rig declarations reconciled, the released `ki` passing `ki doctor`, and agents reach `sol` over Tailscale and SSH with GitHub through agent forwarding. The restart test passed on 2026-10-14 (macOS 27.0.1; Tailscale reconnected on its own after the FileVault unlock). 56 repositories are cloned into `~/workspaces/<group>/<repo>` across the eight territories and 51 are in the `ki` registry (terra's extra entry is settled by TERRA-READ). The Observatory runs and `rig doctor` is clean; its doctor gap is [KI-TOOL-RIG-CORE-052](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-052-doctor-service-launch-prerequisites.md) (triage). The old `kit`, `hnr` and `knowledge-wayfinder` trees are in `~/workspaces/_old` (undo by moving them back); dead skill links, the old mise `claude` shim and 82 old kit, hnr and kis paths in Claude settings are cleared; `ki-pmo` and `ki-pmo-design` are linked; six stale OneDrive source entries are removed; the domt4 autoupdate agent and tap are gone. GitHub Desktop lists all 56 territory checkouts and its backup is deleted. Headroom runs on `sol` by hand (`headroom install apply`, port 8787) and Claude Code works through it; the declaration gap is in the chezmoi triage record captured for SOL-RECORDS.
 
