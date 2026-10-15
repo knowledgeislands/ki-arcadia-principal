@@ -103,3 +103,7 @@
 ## Decision 26 (2026-10-15T02:03:33Z)
 
 - Kris (HANDED-OFF, 2026-10-15): "Drop all three lines from this thread's banner and checkpoint, and keep a one-line 'handed off' note in the checkpoint; at the next mark, delete route-local-review, acquire-route and acquire-resize from the thread folder, with Git history holding them." BINARY-HOME and BINARY-HOLD handed to acquire-intake by Kris's paste.
+
+## Decision 27 (2026-10-15T02:08:03Z)
+
+- Kris (START-MOD-006, 2026-10-15): "Don't worry if it has reset; launch KI-PRINCIPAL-MOD-006 through ki-implement on Sonnet first, and queue the seed-and-return loop design behind it."
