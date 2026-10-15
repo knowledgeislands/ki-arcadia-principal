@@ -607,3 +607,7 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 145 (2026-10-15T02:05:34Z)
 
 - HANDED-OFF - (Kris, 15 October, relayed by knowledge-acquisition) knowledge-acquisition no longer tracks DIAGRAMS or the lasting report-heading fix. Both are yours outright; report their outcomes in your own summaries, not back to knowledge-acquisition.
+
+## Decision 146 (2026-10-15T09:52:55Z)
+
+- DRAIN-SOL - (Kris, 15 October) I am moving working to sol next. Bring this thread to a clean, recoverable rest now. Do not start new work and do not launch new background agents.

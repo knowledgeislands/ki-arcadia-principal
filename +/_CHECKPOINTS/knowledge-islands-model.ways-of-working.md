@@ -56,9 +56,11 @@ Kris's way of working with a state-of-play thread and Project coordination threa
 - Handed off to this thread on 15 October (HANDED-OFF, Kris relayed by knowledge-acquisition): "knowledge-acquisition no longer tracks DIAGRAMS or the lasting report-heading fix. Both are yours outright; report their outcomes in your own summaries, not back to knowledge-acquisition."
   - DIAGRAMS: delivered under [KI-HARNESS-GOV-193 (pruned)](https://github.com/knowledgeislands/ki-agentic-harness/blob/c092431687d3542e55058cecd545e816a1dbadcf/docs/roadmap/KI-HARNESS-GOV-193-area-diagrams-with-html.md). It stays open only through PUSH-OTHERS (the diagram commits are not on origin) and AREAS-REFRESH (the notes describe eight areas; the layout session now draws ten functional areas).
   - Lasting report-heading fix: not landed; HEADING-LASTING carries it.
-- Push state, checked at 03:10 BST after a fetch:
-  - ki-principal: level with origin; nothing of this thread's is unpushed.
-  - ki-agentic-harness: 11 commits unpushed on `main`. The 8 PUSH-OTHERS commits are Kris's layout session's `a830b6ed`, `58d41ccc` and `9a495773`, harness-accept's `c0924316`, `b7f35cdf`, `5ec6ad28` and `8f400524`, and report-repair's `8a453bcd`. Three newer commits from another session sit above them, `10bb4988`, `ea8ad578` and `d0c94558` (verification-effects roadmap work); they are not this thread's and not covered by PUSH-OTHERS. Re-check with `git -C /Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness fetch` then `git -C /Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness log --oneline origin/main..main`.
+- Drained for the move to sol at 10:55 BST on 15 October, under Kris's "I am moving working to sol next. Bring this thread to a clean, recoverable rest now. Do not start new work and do not launch new background agents." Running: nothing. Queued: nothing. No run was unfinished, so no brief needed copying. The state folder `~/.local/state/ki/agents/ways-of-working/` does not travel to sol: every report with open queries and `decisions.md` are already in the thread folder, and the one thing resume needs from the state folder, the run-prompt `Rules:` block, is copied verbatim under Next step below.
+- Push state, checked at 10:52 BST after a fetch:
+  - ki-principal: nothing of this thread's is unpushed; the drain commit carrying this checkpoint went to origin fast-forward from a temporary worktree. Local `main` held another session's state-of-play commit `2f68be94` ("store the sol move and live man switch in state-of-play") ahead of origin while other threads were draining; this thread did not push or touch it.
+  - ki-agentic-harness: level with origin. All 11 formerly unpushed commits, including Kris's layout commits, this thread's harness-accept and report-repair commits (`c0924316`, `b7f35cdf`, `5ec6ad28`, `8f400524`, `8a453bcd`) and another session's verification-effects commits, are on origin, pushed by another session; PUSH-OTHERS is overtaken. The untracked `+/_THREADS/` there is Kris's skill-reviews folder, not this thread's.
+  - tools-ki and tools-techne: level with origin.
 - Gate: tools-ki v0.10.4 is released and ki-principal's pre-commit audit runs `ki repo audit --staged`; CI stays whole-tree. [KI-HARNESS-GOV-192 (pruned)](https://github.com/knowledgeislands/ki-agentic-harness/blob/73f43a1b08d7a0ef4b8d0853b1b6a6752d508bee/docs/roadmap/KI-HARNESS-GOV-192-scoped-gate-verdict.md) is accepted and pruned.
 - [KI-TOOL-KI-CLI-130](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-130-skill-generated-surfaces.md) (`ki dev skill generate`, in progress) carries the product acceptance for the REPORT-SOURCE, HOOK-BINDING and RECAP-OWNER changes in ki-pmo; its review packet is still to be prepared for Kris.
 - [KI-TOOL-KI-CLI-127](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-127-agent-status-live-threads.md) is a draft with six items: the four KI handoffs, the link printer, and bare-letter resolution in `ki agent decide`.
@@ -103,9 +105,8 @@ Every settled decision is recorded in words, with Kris quoted verbatim, in the t
 
 - Open with Kris. Each tag links to the report that carries it, with option a), the recommended course, in one line:
   - DEPS-HOLD ([cli-release report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/cli-release.report.md)): a) authorise a run to adopt the four patch-level dev-tool updates (`@biomejs/biome` 2.5.15, `@vitest/coverage-v8` 5.0.3, `knip` 6.39.0, `vitest` 5.0.3) in tools-ki in its own `chore(deps)` commit, re-run every gate, move KI-TOOL-KI-CLI-126 to awaiting review, cut the patch release carrying it and KI-TOOL-KI-CLI-132, bump ki-principal's `.github/ki-version` and watch CI to the audit step.
-  - PUSH-OTHERS ([harness-accept report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/harness-accept.report.md)): a) push ki-agentic-harness `main` fast-forward, carrying Kris's layout commits `a830b6ed`, `58d41ccc` and `9a495773`, once the layout session confirms they are ready. Since the report, three other-session commits sit above, so the push now either stops at `8a453bcd` or waits for their owner too.
   - PMO-7-BACKLOG ([report-repair report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/report-repair.report.md)): a) each thread relinks or deletes its own reports at its next mark under the thread-tidy rule, and the state-of-play thread tells each one so.
-  - AREAS-REFRESH ([principal-links report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/principal-links.report.md)): a) after the harness push, send one agent to rewrite both notes' diagram descriptions for the ten functional areas, linked at the pushed revision.
+  - AREAS-REFRESH ([principal-links report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/principal-links.report.md)): a) now the harness is pushed, send one agent to rewrite both notes' diagram descriptions for the ten functional areas, linked at the pushed revision.
   - RECORD-NAME ([principal-links report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/principal-links.report.md)): a) keep the Project note's description and commit link, which pass the audit, without naming the delivering record.
   - THREADS-CONTENT ([threads-review report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/threads-review.report.md)): a) a closed list, `decisions.md` and `<name>.report.md` only; briefs live in the state folder, work products in their owning home, temporary output in the temporary location.
   - THREADS-TMP-HOME ([threads-review report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/threads-review.report.md)): a) `<primary checkout>/tmp/<run>/<name>/` in the repository the agent works in, ignored and deleted when the run closes; machine-only scratch may stay in the state folder as `<name>.work/`.
@@ -119,7 +120,9 @@ Every settled decision is recorded in words, with Kris quoted verbatim, in the t
   - STREAMS-INDEX ([types-reconcile report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/types-reconcile.report.md)): a) dispatch a one-file run to align the Streams index note's two paragraphs with the Project registry standard, committed by explicit path.
   - SOP-DROPPED ([push-own report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/push-own.report.md)): a) ask the state-of-play thread to cherry-pick `3b8c8303` onto `origin/main` in a temporary worktree and push it fast-forward, and tell the session that reset `main` that autostash and resets of shared `main` are not permitted. At 03:10 BST the commit was still absent from origin.
   - HEADING-LASTING ([heading-lasting report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/heading-lasting.report.md)): a) widen [KI-HARNESS-GOV-175](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-175-delegation-run-events.md) to add a mechanical ki-pmo rubric check that a saved report's first non-blank line is the `#` heading (or that record's front matter, then the heading) and one ki-delegation `run-prompt.md` footer line saying so; no new record.
+  - AREAS-OVERTAKE ([checkpoint-handoff report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/checkpoint-handoff.report.md)): a) treat Kris's AREAS-PATTERN answer of 15 October as answering IDEA-STAGE and IDEA-CAP and close both: an idea-stage Project is a `planned` Project whose Outcome is a decision, ideas in Notes, no records and no thread, capped at one per Initiative and three across the territory; the REGISTRY-RECORD record carries the rules.
 - Resolved since the mark:
+  - PUSH-OTHERS: overtaken on 15 October; another session pushed ki-agentic-harness `main`, so every harness commit of this thread's and Kris's layout commits are on origin.
   - PUSH-CARRY: the ki-principal half is done, since every principal-links and report-repair commit (`924a89e5`, `143513b4`, `9cb75acb`, `19eef4a6`, `187e6fd1`) is on origin; the harness half is carried by PUSH-OTHERS.
   - PUSH-LINKS: done, since the principal-links commits are on origin.
   - CHECKPOINT-PUSH: done by push-own, which pushed `b32c5503` and `6a5e54be` fast-forward.
@@ -132,15 +135,34 @@ Every settled decision is recorded in words, with Kris quoted verbatim, in the t
 
 Handover for a fresh agent taking this thread:
 
-- Re-bootstrap: read this checkpoint and ki-pmo, run `/Users/krisbrown/workspaces/knowledge-islands/tools-ki/bin/ki agent status ways-of-working`, read the tail of the [decisions log](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/decisions.md), then give the Re-bootstrap report. The resume line is: `Resume ways-of-working under current ki-pmo and ki-delegation since 23:22 BST: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`
-- Launch pattern: `/Users/krisbrown/workspaces/knowledge-islands/tools-ki/bin/ki agent launch --rules push ways-of-working <name> <workdir> <prompt> --runtime claude --model claude-opus-5-5`, the prompt built from a task body plus the `Rules:` block of `/Users/krisbrown/.local/state/ki/agents/ways-of-working/svg-extract.md`.
+- Re-bootstrap: read this checkpoint and ki-pmo, run `/Users/krisbrown/workspaces/knowledge-islands/tools-ki/bin/ki agent status ways-of-working`, read the tail of the [decisions log](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/decisions.md), then give the Re-bootstrap report. On sol, first fetch and level ki-principal, ki-agentic-harness and tools-ki, since the state folder and run history stay on the old host. The resume line is: `Resume KI Model: ways-of-working under current ki-pmo and ki-delegation since 2026-10-14T22:22:21Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`
+- Launch pattern: `/Users/krisbrown/workspaces/knowledge-islands/tools-ki/bin/ki agent launch --rules push ways-of-working <name> <workdir> <prompt> --runtime claude --model claude-opus-5-5 --effort medium`, the prompt built from a task body followed by this `Rules:` block, copied verbatim from the old host's `svg-extract.md` because the state folder does not travel (set the trailer to the model actually launched):
+
+  ```text
+  Rules:
+
+  - Never `--no-verify` or force-push.
+  - Do not edit any checkpoint, `Admin`, `Pillars` or `Resources`.
+  - Do not read or print secrets.
+  - No package installs.
+  - If a file you need is dirty from another session, leave it and name it.
+
+  Commit per repository as a Conventional Commit, explicit-path staging, trailer `Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>`; then `git pull --rebase` and push only if fast-forward, otherwise report.
+
+  **Durability:** where you cite an owner decision, quote its words inline. A local decision number is not enough.
+
+  **Report** in the owner-report format set in `ki-delegation`'s Reporting section, linking every record by its full identifier via verified absolute paths.
+
+  Do not use background subagents. Never end your session while waiting.
+  ```
+
 - Push only this thread's own commits: those touching `+/_THREADS/ways-of-working/` or this checkpoint, or made by its agents. If other sessions' commits sit beneath, hold and ask Kris. Never autostash, reset shared `main` or force-push.
 - Kris's layout session owns `docs/diagrams/` in ki-agentic-harness and the dirty harness files; leave them alone.
 
 Then:
 
 1. Give the rest summary in full, with every open question above and the reply block.
-2. Act on Kris's answers; PUSH-OTHERS first, since the diagram work and this thread's harness commits are not on origin.
+2. Act on Kris's answers; AREAS-REFRESH is unblocked now the harness is pushed, and AREAS-OVERTAKE settles IDEA-STAGE and IDEA-CAP together.
 3. Tell state-of-play when IDEA-STAGE, IDEA-CAP and REGISTRY-RECORD are answered, and raise SOP-DROPPED with it.
 4. Remove the acted-on Master messages at the top of this checkpoint.
 5. Prepare the [KI-TOOL-KI-CLI-130](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-130-skill-generated-surfaces.md) review packet; offer [KI-PRINCIPAL-ECO-014](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-ECO-014-decision-citation-and-run-folder-sweep.md) for pruning.
