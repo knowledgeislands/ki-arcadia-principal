@@ -99,3 +99,7 @@
 ## Decision 25 (2026-10-15T01:20:25Z)
 
 - Kris (SPLIT, 2026-10-15): chose a), "I've done that now" - handoff line pasted into acquire-intake. acquire-intake owns all work in acquire, including ACQ-FINISH and RESIZE-RULE; knowledge-acquisition withdraws both and keeps only KI-PRINCIPAL-MOD-006, the seed-and-return loop and the harness side of KI-HARNESS-OPS-005.
+
+## Decision 26 (2026-10-15T02:03:33Z)
+
+- Kris (HANDED-OFF, 2026-10-15): "Drop all three lines from this thread's banner and checkpoint, and keep a one-line 'handed off' note in the checkpoint; at the next mark, delete route-local-review, acquire-route and acquire-resize from the thread folder, with Git history holding them." BINARY-HOME and BINARY-HOLD handed to acquire-intake by Kris's paste.

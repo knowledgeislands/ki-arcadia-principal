@@ -4,7 +4,7 @@ thread: knowledge-islands-model.knowledge-acquisition
 label: 'Knowledge Islands Model: knowledge-acquisition'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-15T01:22:00Z
+updated_at: 2026-10-15T01:30:00Z
 ---
 
 # knowledge-islands-model.knowledge-acquisition
@@ -13,10 +13,6 @@ updated_at: 2026-10-15T01:22:00Z
 
 - 2026-10-15 · INCEPTION-PILOT · Kris: 'Leave a message in the knowledge-acquisition checkpoint naming the Known World model as the inception loop's first pilot: the seed is the foundations-coherence seed prompt plus Island model and Tending's Notes, and the capture folds back into the Known World note. I'll hold the ChatGPT discussion when it suits me; nothing waits on it.' Note: [Known World](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Pillars/Philosophy/Emerging%20Concepts/Known%20World.md); seed prompt: section 4 of the [foundations-coherence report](/Users/krisbrown/.local/state/ki/agents/state-of-play/foundations-coherence.report.md); Notes: [Island model and Tending](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/island-model-and-tending.md). ROOTING-OWNER, Kris, 15 October: 'knowledge-acquisition adds Emerging Concepts notes as a seed and fold-back target', so the loop seeds from, and folds back to, an Emerging Concepts note as well as a Project's Notes.
 - 2026-10-14 · INCEPTION-SHAPE · Kris decided: "No new kind of Project: inception is the idea-stage pattern, and knowledge-acquisition designs the loop - the Project's Notes published into acquire's ChatGPT context on the way out, captures carrying a ki_project field and folded back into the Project's Notes on the way back." This thread designs that seed-and-return loop; inception itself is ways-of-working's idea-stage pattern · detail: [state-of-play decisions](/Users/krisbrown/.local/state/ki/agents/state-of-play/decisions.md), [inception-type report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/inception-type.report.md)
-- 2026-10-14 · BINARY-HOME · Kris: run the iPhone reachability check first, driven by one instruction; only if it passes, create the private `knowledgeislands/mcp-acquire-chatgpt` repository and its local synthetic build · detail: [acquire-route report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/knowledge-acquisition/acquire-route.report.md)
-- 2026-10-14 · GRANOLA-SUPPORT · Kris: adopt [KI-TOOL-KI-CLI-128](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-128-granola-retention-safeguards.md) as the tools-ki half and create only the harness record; local delivery; migration separately gated · detail: [acquire-route report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/knowledge-acquisition/acquire-route.report.md)
-- 2026-10-14 · ACQ-FINISH · Kris: this thread owns the Acer ChatGPT finish line (paste it into the Acer chat so it commits the nine photos as resized copies in the existing folder) · detail: [acquire-resize report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/knowledge-acquisition/acquire-resize.report.md)
-- 2026-10-14 · GRANOLA-PLAN, BINARY-PROOF · the held receipts for the two local-route records are now this thread's to close · detail: [acquire-route report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/knowledge-acquisition/acquire-route.report.md)
 
 ## Objective
 
@@ -55,11 +51,8 @@ The provider-neutral acquisition lifecycle is documented in one Pillars note, AI
 
 ## Open questions
 
-- RELAY (delivered by Kris 2026-10-14, acquire-intake owns it): add the `.acquire/chatgpt/` inventory line to KB-ACQUIRE-002 and have tools-ki tie KI-TOOL-KI-CLI-128's refusal step to both reset paths; awaiting acquire-intake's acknowledgement.
-- SPLIT (Kris, 2026-10-15): acquire-intake owns all work in the acquire repository, including ACQ-FINISH (commit the nine Acer originals from the verified ZIP) and RESIZE-RULE (replace the resize-copy step with ZIP-then-local-commit); handoff pasted by Kris. This thread no longer launches agents into acquire; it keeps KI-PRINCIPAL-MOD-006, the seed-and-return loop (Known World pilot) and the harness side of KI-HARNESS-OPS-005. Keep acquire-resize.report.md while the handoff cites it; acq-finish.report.md goes at the next mark.
-- BINARY-HOME and BINARY-HOLD: the state-of-play thread's; paste block given to Kris 2026-10-14, delivery unconfirmed.
+- Handed off (HANDED-OFF, Kris, 2026-10-15): acquire-intake owns all acquire work (ACQ-FINISH, RESIZE-RULE, the .acquire/chatgpt/ inventory line, the KI-TOOL-KI-CLI-128 refusal step, BINARY-HOME and BINARY-HOLD); ways-of-working owns DIAGRAMS and the report-heading fix. Not tracked here. Next mark: delete route-local-review, acquire-route and acquire-resize reports.
 - START-MOD-006 (held): launch KI-PRINCIPAL-MOD-006 through `ki-implement` once the scoped gate has landed in ki-principal and the token reset has happened.
-- DIAGRAMS (handed to ways-of-working): check PRINCIPAL-HTML and, unless it says keep, remove `+/diagrams/change-management-skills/`.
 - Whether the lifecycle note leads the remaining work depends on what KI-HARNESS-OPS-005 has learnt.
 - Parked 2026-10-11: ChatGPT territory keys move to kebab-case territory names; island-model-and-tending renames the kit-principal capture folders.
 
