@@ -4,10 +4,16 @@ thread: knowledge-islands-model.ways-of-working
 label: 'KI Model: ways-of-working'
 state: active
 created_at: 2026-10-09T20:58:00Z
-updated_at: 2026-10-15T21:23:19Z
+updated_at: 2026-10-15T21:44:29Z
 ---
 
 # knowledge-islands-model.ways-of-working
+
+**Pick-up - mark 2026-10-15T15:09:48Z (16:09 BST)**
+
+- Status: busy. Running: `registry-model`. Queued: `threads-records`, `streams-index`, `thread-model-review`, `messenger`, `cli-pin`. Blocked: `pmo-hold`'s ki-pmo and ki-delegation edits sit uncommitted in ki-agentic-harness until GATE-INACTIVE is answered, because the harness commit gate is not installed on this host.
+- Resume line: `Resume KI Model: ways-of-working under current ki-pmo and ki-delegation since 2026-10-15T15:09:48Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`
+- Next steps: act on GATE-INACTIVE and PICKUP-HEADING; commit `pmo-hold`'s harness edits through the gate; then remove the Master messages it adopted (RESTART-SET, HOLD-MODEL, HOLD-VERBS, HOLD-BANNER, HOST-ROLES, PUSH-BENEATH, CHECKPOINT-MESSAGES, STATE-OF-PLAY-ROLE) and, once `registry-model` lands, AREAS-PATTERN, ROOTING-MODEL, TERRITORY-RULE and INCEPTION-SHAPE; dispatch SYNC-GUARD into KI-HARNESS-GOV-189; full Summary when the queue empties.
 
 **Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
 
@@ -46,7 +52,7 @@ Kris's way of working with a state-of-play thread and Project coordination threa
 
 ## Current state
 
-- State: resumed on sol at 22:21 BST on 15 October under Kris's RESUME-SOL; the mark stays at 16:09 BST. Running: `pmo-hold`, `cli-release`, `principal-tidy`. Queued: `registry-model`, `threads-records`, `streams-index`, `thread-model-review`, `messenger`, under Kris's answers of 22:30 BST (Decisions 149-166). On sol, tools-ki is 2 commits ahead of origin with another session's work (latest `9eb3b0a4`, capture of KI-TOOL-KI-CLI-136); not this thread's, not pushed.
+- State: resumed on sol at 22:21 BST on 15 October under Kris's RESUME-SOL; the mark stays at 16:09 BST. Running: `registry-model`. Queued: `threads-records`, `streams-index`, `thread-model-review`, `messenger`, `cli-pin` (HARNESS-PIN). Finished: `pmo-hold` (edits uncommitted, GATE-INACTIVE), `principal-tidy` (`c275d26`), `cli-release` (tools-ki `86adda0`, release held for HARNESS-PIN). On sol, tools-ki is 2 commits ahead of origin with another session's work (latest `9eb3b0a4`, capture of KI-TOOL-KI-CLI-136); not this thread's, not pushed.
 - Mark: 2026-10-15T15:09:48Z (16:09 BST), struck at the drain under Kris's DRAIN CHECK of 15 October: "A drain is a mark plus stopping all work, so that the thread can be archived on terra and resumed on sol from the repository alone." The previous mark was 2026-10-14T22:22:21Z (23:22 BST), taken at Kris's request: "Oh, actually as well, can you take a mark before you process those?" Everything before the mark lives in the tracked decisions log, the thread folder, the records and Git. This snapshot was brought up to 03:15 BST on 2026-10-15 by `checkpoint-handoff`, under Kris's "Ensure the checkpoint is fully correct in case I hand the work off to another agent.", without moving the mark.
 - ki-pmo read at harness `dfa52a12`, which carries the 5-minute heartbeat; `10fcb348` dropped the hand-copy fallback from ki-delegation, and `fcad8a1e` ignores local diagram builds under `+/diagrams/`.
 - Run `ways-of-working`, all agents on `claude-opus-5-5`. Nothing else runs or queues; every agent below has finished:
