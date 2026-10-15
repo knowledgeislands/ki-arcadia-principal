@@ -4,7 +4,7 @@ thread: knowledge-islands-model.knowledge-acquisition
 label: 'Knowledge Islands Model: knowledge-acquisition'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-14T23:45:00Z
+updated_at: 2026-10-15T01:22:00Z
 ---
 
 # knowledge-islands-model.knowledge-acquisition
@@ -56,7 +56,7 @@ The provider-neutral acquisition lifecycle is documented in one Pillars note, AI
 ## Open questions
 
 - RELAY (delivered by Kris 2026-10-14, acquire-intake owns it): add the `.acquire/chatgpt/` inventory line to KB-ACQUIRE-002 and have tools-ki tie KI-TOOL-KI-CLI-128's refusal step to both reset paths; awaiting acquire-intake's acknowledgement.
-- ACQ-FINISH: Kris pasted the finish line 2026-10-15; capture still incomplete. README and photo metadata are on main, 0 of 9 originals committed, no attachments/ folder. The chat reports that the GitHub connector cannot move binary files out of ChatGPT's file environment, so the resize rule in CAPTURE-CHATGPT.md does not fix it. Fallback: a verified ZIP of the nine originals plus SHA256SUMS, offered for download. Open: commit the originals locally from the ZIP (ACQ-FINISH), and correct the resize rule (RESIZE-RULE). Keep acquire-resize.report.md and acq-finish.report.md until done.
+- SPLIT (Kris, 2026-10-15): acquire-intake owns all work in the acquire repository, including ACQ-FINISH (commit the nine Acer originals from the verified ZIP) and RESIZE-RULE (replace the resize-copy step with ZIP-then-local-commit); handoff pasted by Kris. This thread no longer launches agents into acquire; it keeps KI-PRINCIPAL-MOD-006, the seed-and-return loop (Known World pilot) and the harness side of KI-HARNESS-OPS-005. Keep acquire-resize.report.md while the handoff cites it; acq-finish.report.md goes at the next mark.
 - BINARY-HOME and BINARY-HOLD: the state-of-play thread's; paste block given to Kris 2026-10-14, delivery unconfirmed.
 - START-MOD-006 (held): launch KI-PRINCIPAL-MOD-006 through `ki-implement` once the scoped gate has landed in ki-principal and the token reset has happened.
 - DIAGRAMS (handed to ways-of-working): check PRINCIPAL-HTML and, unless it says keep, remove `+/diagrams/change-management-skills/`.

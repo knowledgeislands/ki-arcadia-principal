@@ -95,3 +95,7 @@
 ## Decision 24 (2026-10-14T23:27:51Z)
 
 - Kris (ACQ-FINISH): "Launch a Haiku agent, read-only, to pull the exact paste line from acquire-resize.report.md and give it to me; delete that report once I confirm it's pasted."
+
+## Decision 25 (2026-10-15T01:20:25Z)
+
+- Kris (SPLIT, 2026-10-15): chose a), "I've done that now" - handoff line pasted into acquire-intake. acquire-intake owns all work in acquire, including ACQ-FINISH and RESIZE-RULE; knowledge-acquisition withdraws both and keeps only KI-PRINCIPAL-MOD-006, the seed-and-return loop and the harness side of KI-HARNESS-OPS-005.
