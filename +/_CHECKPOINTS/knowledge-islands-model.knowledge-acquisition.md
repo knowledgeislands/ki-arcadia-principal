@@ -4,10 +4,35 @@ thread: knowledge-islands-model.knowledge-acquisition
 label: 'Knowledge Islands Model: knowledge-acquisition'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-15T02:13:00Z
+updated_at: 2026-10-15T09:52:00Z
 ---
 
 # knowledge-islands-model.knowledge-acquisition
+
+## Resume on sol (drain, Kris, 15 October 2026)
+
+Running: nothing. Queued: nothing live. The run state at `~/.local/state/ki/agents/knowledge-acquisition/` stays on the Mac Studio; its only leftover is a stale duplicate `heading-trim` queue entry that must not be run. `run-decisions.md` in the thread folder copies that run-state decisions file; `decisions.md` is the thread's full log.
+
+Open queries for Kris (asked in the 03:13 BST Summary on 15 October, all unanswered; option a) recommended for each):
+
+- AUDIT-GATE: accept KI-PRINCIPAL-MOD-006 despite other sessions' audit failures. a) accept now. Detail: `mod-006.report.md`.
+- ADR-HARBOUR: amend ADR-KI-PRINCIPAL-001's staging wording to match acquire. a) capture a small follow-up record. Detail: `mod-006.report.md`.
+- SEED-HOME: where a seed lives in acquire. a) `context/chatgpt/<territory-key>/seeds/<seed-slug>.md` plus an "Open seeds" line, committed by acquire-intake from a pack staged in `-`.
+- FIELD-SHAPE: return capture fields. a) accept `ki_project`, `ki_concept`, `ki_island`, `ki_seed`; acquire-intake amends CAPTURE-CHATGPT.md.
+- FOLD-AUTHORITY: Kris's approval of a named fold-back proposal stands in for a record for an Emerging Concepts note. a) yes, except a new note, a folder restructure or `Admin/`.
+- FOLD-TRIGGER: fold-back only on Kris's word. a) yes; list tagged, unfolded captures at each mark.
+- BACK-LINK: one handoff to acquire-intake (field amendment, seeds folder, `folded` disposition) as a roadmap item there. a) yes.
+- PILOT-GO: build and stage the Known World seed pack on Sonnet, publishing nothing to acquire yet. a) yes.
+
+Detail for SEED-HOME to PILOT-GO: `loop-design.report.md`. KI-PRINCIPAL-MOD-006 is delivered (`600d4d4e`, Acquisition Process note) and awaiting review.
+
+Waiting on other threads: nothing; HANDED-OFF moved all acquire work to acquire-intake, and DIAGRAMS and the report-heading fix to ways-of-working. Optional for Kris: the one-line paste telling ways-of-working not to report back here; download the Acer ZIP for acquire-intake.
+
+Held: DOTFILES-UE-035 with chezmoi. Not started: the harness side of KI-HARNESS-OPS-005 (incremental acquisition, post-export changes, per-territory triage, one verified project move, source-retirement gate; Equal Remedy the last provisional routing). Parked: ChatGPT territory keys to kebab-case names.
+
+Next step on sol: re-bootstrap from this checkpoint, take the answers to the eight queries, then launch the authorised work (accept KI-PRINCIPAL-MOD-006 through ki-accept, capture the ADR follow-up, build the seed pack). At the next mark delete the `acq-finish`, `acquire-route`, `acquire-resize`, `push-handoff` and `route-local-review` reports and `run-decisions.md` by explicit path.
+
+Resume line: Resume Knowledge Islands Model: knowledge-acquisition under current ki-pmo and ki-delegation since 2026-10-14T23:26:00Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.
 
 **Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
 
