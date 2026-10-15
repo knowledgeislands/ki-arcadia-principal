@@ -973,3 +973,7 @@ Kris: "Resume Master: state-of-play from its checkpoint under current ki-pmo and
 ## 2026-10-15 22:45 BST - thread naming convention (THREAD-NAMES)
 
 Kris, showing the thread list `KI > SoP`, `KI > Model > ways of working`, `KI > Model > knowledge acquisition`, `KI > Rig > mac studio setup`, `KI > mics / webcams`, `Acquire > intake (sol)`, `Chezmoi > misc (sol)`: "this is a better way I think". On the host suffix: "no, the machine is only added if its limited to that machine, so intake and chezmoi misc are machine specific".
+
+## 2026-10-15 22:50 BST - dispatch, do not ask (THREAD-NAMES handed to ways-of-working)
+
+Kris: "remember your job is coordination of coordination threads, we dispatch out to them. If we want to change ways of working we need to tell it to do so". THREAD-NAMES goes to KI Model: ways-of-working, live, as a pasted message.
