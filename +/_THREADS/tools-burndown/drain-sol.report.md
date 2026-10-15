@@ -8,13 +8,13 @@
 
 Drained under Kris's 15 October instruction. No new work or background agent was launched. All 32 worker statuses are DONE, no worker required stopping and no unfinished brief is needed. Decisions and reports with open queries are already tracked in this thread folder. No runtime folder is needed to reconstruct the [checkpoint](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/platform-foundations.estate-factorisation.md).
 
-Verified 32 historical delivery/report commits in owning origin/main histories. The five re-copied retired reports remain absent. No baseline, empty commit, product edit, roadmap action or general tidy was performed. This checkpoint, decisions log, report and portable evidence are the only new drain paths.
+Verified 32 historical delivery/report commits in owning origin/main histories. The five re-copied retired reports remain absent. No baseline, empty commit, product edit, roadmap action or general tidy was performed. This checkpoint, decisions log, report and portable evidence are the only drain/recovery paths. Kris later explicitly authorised reconciling and publishing the shared documentation commits; no new agent or product work followed.
 
-Repository publication and foreign-state snapshot is in [portable drain evidence](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/tools-burndown/drain-sol.evidence.json). All repositories are on main on terra. This report and the checkpoint form the recovery unit; before moving, the final owner report must confirm its remote inclusion or name its local commit and blocking foreign ancestors. Never push those foreign ancestors under the drain grant.
+The repository snapshot is in [portable drain evidence](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/tools-burndown/drain-sol.evidence.json). All repositories are on main on terra. Following Kris's explicit instruction to fix pulling and pushing, the shared documentation history was rebased onto origin and published fast-forward at 5c43198bd12dcf8c1210415a01931a33d8b134d1; a fetch verified its inclusion. The duplicate registry-removal handoff retained the newer published files, not the earlier stale local blocker text. A concurrent upstream report update was incorporated on retry. This close-out note consolidates the successful recovery and follows under the normal gate. Sol needs the repository checkpoint and tracked thread folder, not XDG runtime files.
 
 | Repository | Earlier finished work | Unpublished / foreign state at snapshot |
 | --- | --- | --- |
-| ki-principal | Historical own units on origin | Drain is local; three foreign ancestors block our push |
+| ki-principal | Historical work and shared recovery history on origin | Only the foreign Rig report remains dirty |
 | tools-ki | Own delivery on origin; level and clean | None |
 | tools-mgit | Earlier preparation on origin; level and clean | None |
 | tools-rig | Own delivery/planning on origin; level and clean | None |
@@ -23,7 +23,7 @@ Repository publication and foreign-state snapshot is in [portable drain evidence
 | ki-agentic-harness | Read-only here; level with origin | Untracked +/_THREADS/skill-reviews/ belongs to skill-reviews |
 | ki-techne-harness | Read-only here; level and clean | None |
 
-Principal's foreign dirty path is +/_THREADS/mac-studio-bootstrap/chezmoi-fix.report.md, owned by Rig: mac-studio-bootstrap. It remains untouched. The initial foreign rebase was left alone and subsequently cleared. The initial recovery unit is committed under the normal gate as d54e983ebf14266b77e9d0558a3f7d2ab868d8ee on terra/main, and its exact four-path roster and shared-index reconciliation passed. It is not on origin at this check. Its unpublished predecessors belong to other sessions: registry-removal bc178d6939fdf2bdeed2a64ef2cadf3075272568, state-of-play 506fa024e1033e7941b04f5dadf104f2d1d02985 and the key-only SSH plan report 4b9af35f615e76fd97e2a0558baf2e1c168564ec. Under Kris's drain instruction no pull/rebase or push is attempted while publication would carry those commits. Their owners must publish first. This publication note follows in a separate owned documentation commit; it also remains local until that barrier clears. No other checked repository has unpushed work. Verify the final owner report and origin before relying on the recovery payload on sol.
+Principal's foreign dirty path is +/_THREADS/mac-studio-bootstrap/chezmoi-fix.report.md, owned by Rig: mac-studio-bootstrap. It was restored byte-for-byte with its original index entry after the scoped preservation needed for rebase. No foreign working change was committed. Registry-removal and state-of-play documentation are included in the reconciled published history under Kris's explicit approval. There is no outstanding cross-thread publication permission or rebase blocker. Final close-out publication is verified in the owner report before archival.
 
 ## In Progress
 
@@ -67,7 +67,7 @@ Approve the four development-tool patch updates through ways-of-working and reru
 ╰──────────────────────────────────────────────────╯
 
 - [at rest] nothing running or queued
-- [unpublished] recovery commits on terra/main; three foreign predecessors block our push
+- [committed] shared documentation history pushed; publication blocker resolved
 - [held] guarded commands and release contract
 - [parked] writing-policy investigation
 ```

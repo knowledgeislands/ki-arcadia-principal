@@ -365,5 +365,18 @@
     "+/_THREADS/tools-burndown/drain-sol.report.md",
     "+/_THREADS/tools-burndown/drain-sol.evidence.json"
   ],
-  "publication_rule": "Never publish foreign outgoing ancestors or resolve a foreign rebase/merge. The final owner report confirms this recovery unit publication; on sol verify it through origin/main."
+  "publication_rule": "The later explicit owner instruction authorised bounded reconciliation and publication of the shared documentation history. Shared history is verified on origin/main; the final owner report verifies this closing checkpoint/report revision.",
+  "reconciliation": {
+    "authorised_at": "2026-10-15T12:25:38Z",
+    "owner_words": "so can you fix the commits, fix pulling and then pushing",
+    "shared_history_published": "5c43198bd12dcf8c1210415a01931a33d8b134d1",
+    "normal_pull_with_rebase": true,
+    "conflict_resolution": "Skipped bc178d69 only: its two files are superseded by newer published registry-removal handoff 0fbeca86; retained upstream files byte-for-byte.",
+    "concurrent_upstream_incorporated": true,
+    "fast_forward_push_verified": true,
+    "foreign_report_preserved_sha256": "80bbbfa308f8bdecd6f86989ee1dc2a89ece4794d572e4e75955ada235fd62b7",
+    "foreign_report_original_index_preserved": true,
+    "no_force_push": true,
+    "no_hook_bypass": true
+  }
 }

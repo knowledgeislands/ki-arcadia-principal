@@ -118,3 +118,9 @@ Classification: operational. Durable home: the estate-factorisation checkpoint a
 > 5. Checkpoint: update it so a fresh session on sol can resume from it alone. Set running to nothing, then give the open queries, held and parked items, waiting-on items, the next step and the resume line. Commit and push it with the thread folder.
 > 6. Do not make a baseline or empty commit; Kris does that across all repositories afterwards. Do not tidy beyond the above; tidy-ups happen on sol.
 > 7. Finish with your owner report and REST banner. Per repository it lists: committed and pushed, anything unpushed and why, and anything uncommitted that belongs to another session (named, not touched). End with your resume line.
+
+## Decision 7 (2026-10-15T12:22:39Z)
+
+Classification: operational. Durable home: the estate-factorisation checkpoint and drain-sol report. Kris explicitly authorises this thread to reconcile the shared documentation history and publish it, superseding the drain restriction against carrying the named other-session commits for this bounded recovery. Preserve unrelated working files and staging, run normal gates, pull with rebase, and push fast-forward only. No product work, release or new agent is authorised.
+
+> so can you fix the commits, fix pulling and then pushing
