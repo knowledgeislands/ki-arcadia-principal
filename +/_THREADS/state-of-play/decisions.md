@@ -917,3 +917,27 @@
 ## Decision 227 (2026-10-15)
 
 - Kris, 2026-10-15, SOL-MOVE: "give me a prompt that I can paste to any of my open threads in KI principal and acquire, so that they all effectively drain down the work that they are doing and make sure that everything that they need is checked into repositories and so that I can recover this work once I have moved it onto Sol, which is what I am going to do next ... I am going to make sure there is a blank commit across all of the repositories that effectively baselines them, and then they will deal with any tidy ups on the other side of that." LIVE-MAN-SWITCH idea: "a dead man switch, but in reverse ... push something to a repository which is pulled on a regular basis ... machines will self-update themselves based on that repository information. So, if anything should go wrong, for example, if we make firewall changes or SSH changes, we should never be allowed to break outbound traffic ... this process can periodically run and effectively resynchronize itself". Outstanding questions go into the checkpoint before state is stored.
+
+## Decision 228 (2026-10-15)
+
+- Kris, 2026-10-15, REBASE-REPAIR: "Yes: a background run repairs the stuck rebase in ki-principal, keeping every stashed change from other sessions, finishing or aborting the rebase, pushing only state-of-play's commit fast-forward, and reporting anything it cannot attribute."
+
+## Decision 229 (2026-10-15)
+
+- Kris, 2026-10-15, FW-TERRA-OFF: "No, I'm not leaving the house today, so we have today to get the firewalls and approach right"
+
+## Decision 230 (2026-10-15)
+
+- Kris, 2026-10-15, FW-SSH-KEYONLY: "Yes, on sol: a run drafts a key-only SSH rollout plan in the Remote access section of the chezmoi macOS workstation guide (keys checked in both directions, one held session, a second-machine test, restore steps), changing nothing on any machine."
+
+## Decision 231 (2026-10-15)
+
+- Kris, 2026-10-15, SOL-HANDOVER: "Once all the threads have concluded, and I have handed off to every one of them, ... I will let you know. I am going to then archive each of them one by one, so the only thing left will be this state of play thread. And then we will get to a point at the end of this where you can give me a handover prompt that I can use to start the state of play thread over on Sol."
+
+## Decision 232 (2026-10-15)
+
+- Kris, 2026-10-15, HANDOVER-OWNER (answering whether state-of-play commits the firewall declaration if Rig: chezmoi drains first): "Yes, you end up being responsible for making sure that everything is in good order to hand over for knowledge islands, which means ultimately that all the repos are pushed and that everything can be resumed from the state that is held within the repository."
+
+## Decision 233 (2026-10-15)
+
+- Kris, 2026-10-15, SOL-FIRST-CHURN: "A key thing that needs checking is that when we do start the state of play thread back up, is that it does analysis about what is happening with the thread or session-based digests. We need to get that under control because it is causing a lot of churn in the repositories. And I think we have got a lot of older stuff that is getting left around. I think I had it in one of the other threads as well, and possibly in the ways of working, but ultimately temporary files need to be under the temp folder. That is tmp, by the way."
