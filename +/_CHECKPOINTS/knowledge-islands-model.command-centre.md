@@ -2,7 +2,7 @@
 type: ki-checkpoint
 thread: knowledge-islands-model.command-centre
 label: 'KI Model: command-centre'
-state: active
+state: drained
 created_at: 2026-10-11T02:41:28Z
 updated_at: 2026-10-14T21:18:44Z
 ---
@@ -14,6 +14,8 @@ updated_at: 2026-10-14T21:18:44Z
 - 2026-10-14 · AREAS-DISPATCH · Kris's areas of 14 October (the Observatory as host command centre, inter-agent pub-sub, a single pane of glass with agents advertising themselves, and token economics shown in it) are added as ideas for evaluation under Notes in the [Command centre Project note](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/command-centre.md); whether this Project absorbs them and reshapes its Outcome is Kris's open OBS-MERGE · detail: [areas-glass report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/state-of-play/areas-glass.report.md)
 - 2026-10-14 · OBS-MERGE · Kris kept one Project and reshaped this Project's Outcome: "the Observatory on each host: Instruments, Beacon and Bridge; a read-only Sessions view as the pane of glass, showing token use per run and per thread and each account's 5-hour and 7-day windows; later a messaging endpoint on each host linked over the tailnet, with ntfy as the stopgap question in Notes. Ways-of-working keeps the event contract, including advertisement and usage fields; apps-observatory keeps the product." The [Command centre Project note](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/command-centre.md) now carries it; take it into this thread's Objective · detail: [state-of-play decisions](/Users/krisbrown/.local/state/ki/agents/state-of-play/decisions.md)
 
+2026-10-15: the state-of-play territory hold set this checkpoint to drained without the thread's own drain; the next steps are those already in this checkpoint.
+
 ## Objective
 
 Cross-territory alignment of the Knowledge Islands model (legal, HNR, Observatory, Paperclip, personal portfolio) and one read-only state-of-play view, for [Command centre](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/command-centre.md) in the Initiative [Knowledge Islands model](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/knowledge-islands-model/knowledge-islands-model.md). The model's vocabulary itself comes from the KI Model: ways-of-working change-management design, which this Project takes as input.
@@ -21,6 +23,7 @@ Cross-territory alignment of the Knowledge Islands model (legal, HNR, Observator
 ## Current state
 
 - Mark: 2026-10-14T20:19:58Z
+- Running: nothing.
 - ki-pmo read at daa63224.
 - Thread folder: +/_THREADS/command-centre/ holds decisions.md only; run `command-centre` has no agents.
 - Resting by Kris's decision of 2026-10-14 (CC-START): rest until the KI Model: ways-of-working change-management design outcome lands; Command centre stays in the state-of-play queue to be reopened then. Kris also asked on 2026-10-14 that, while token limits are tight, work goes to lower-model background agents, mechanical steps first.

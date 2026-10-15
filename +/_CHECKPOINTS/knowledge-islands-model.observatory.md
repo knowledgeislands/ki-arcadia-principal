@@ -2,7 +2,7 @@
 type: ki-checkpoint
 thread: knowledge-islands-model.observatory
 label: 'Observatory: product'
-state: resting
+state: drained
 created_at: 2026-10-13T23:50:00Z
 updated_at: 2026-10-14T00:01:00Z
 ---
@@ -12,6 +12,8 @@ updated_at: 2026-10-14T00:01:00Z
 **Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
 
 - 2026-10-15 · GATE-REMAIN · `ki repo audit` still fails this checkpoint, and the fix is this thread's: LIFECYCLE-1, a checkpoint in `+/_CHECKPOINTS/` must have `state: active` (it reads `resting`)
+
+2026-10-15: the state-of-play territory hold set this checkpoint to drained without the thread's own drain; the next steps are those already in this checkpoint.
 
 ## Objective
 
@@ -23,6 +25,7 @@ Focus (Decision 158): burn the Observatory roadmap down. No new feature records;
 
 Mark: 2026-10-14T00:01Z, state-of-play decisions log at Decision 160
 
+- **Running.** Nothing.
 - **Roadmap.** Empty: no open records in `docs/roadmap/`. The repository is level with origin at `74a0eea`.
 - **KI-OBSERVA-INT-002 accepted.** Kris reviewed it in the Observatory and in Cowork and passed it (Decision 160). Closed as done in `0cf59ec` ([record at that commit](https://github.com/knowledgeislands/apps-observatory.local/blob/0cf59ec/docs/roadmap/KI-OBSERVA-INT-002-portable-live-artifact-interface.md)) and pruned in `74a0eea`. Its follow-on work was not captured as records, under Decision 158; the ChatGPT publication server and a confirmed write operation joined the deferrals under Gaps in `docs/specs/artifacts.md`.
 - **Resting.** Under Decision 158 the thread rests until a defect or Kris's request arrives.

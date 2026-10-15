@@ -2,12 +2,22 @@
 type: ki-checkpoint
 thread: _state-of-play
 label: 'Master: state-of-play'
-state: active
+state: drained
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-14T22:55:00Z
+updated_at: 2026-10-15T15:14:39Z
 ---
 
 # _state-of-play
+
+## Pick-up - mark 2026-10-15T15:14:39Z (16:14 BST)
+
+- **Status:** hold. The whole Knowledge Islands territory is on hold; the frontmatter keeps `state: drained` until HOLD-MODEL is adopted. Running: nothing.
+- **Resume:** `Resume Master: state-of-play from its checkpoint under current ki-pmo and ki-delegation since 2026-10-15T15:14:39Z: re-bootstrap, read the parked queries, take stock, restart authorised work, then banner.`
+- **Next steps, in order:**
+  1. SOL-FIRST-CHURN: analyse the thread and session digest churn and old leftover material across the repositories; temporary files belong under `tmp`.
+  2. Work out the RESTART-SET pick-up model (banner type × thread type: conversational, coordination, state-of-play), then hand HOLD-MODEL, HOLD-VERBS, HOST-ROLES' write-up and RESTART-SET to KI Model: ways-of-working.
+  3. Reinstate KI Model: ways-of-working, Rig: chezmoi and Acquire: acquire-intake (the latter two outside this territory, this time only); Rig: mac-studio-bootstrap carries on. Every other thread stays on hold.
+  4. Put the open queries under Open questions back to Kris.
 
 ## Objective
 
@@ -29,7 +39,7 @@ Thread working rules, re-read after any compaction:
 ## Current state
 
 - `ki-pmo read at f847248b`.
-- Mark: 2026-10-14T20:19:06Z.
+- Mark: 2026-10-15T15:14:39Z (territory hold); previous mark 2026-10-14T20:19:06Z.
 - Thread folder: +/_THREADS/state-of-play/
 - Messages: read to entry 1 (inbox `~/.local/state/ki/agents/state-of-play/inbox.md`; one acquire-intake focus handoff, reviewed as a proposal, not policy).
 - **Re-bootstrapped** at Kris's request on 2026-10-14 at 21:19 BST under current `ki-pmo` and `ki-delegation`, with this new mark. The report shape is frozen at the heading-rich form; further tweaks are logged for a review in about a week.
@@ -41,7 +51,7 @@ Thread working rules, re-read after any compaction:
 - **Repositories at close (22:12 BST, terra):** tools-ki, tools-rig, acquire, ki-agentic-harness and chezmoi are level with origin with nothing unpushed; tools-ki's three stacked commits, including the prune, are on origin. ki-agentic-harness carries other threads' uncommitted ki-pmo and ki-delegation edits and an untracked `+/diagrams/` (ways-of-working). ki-principal is level after this thread's commit; its remaining uncommitted work belongs to other threads.
 - **Delivery priority (ACQ-FOCUS, adopted 14 October):** Rig: mac-studio-bootstrap and Techne: agent-host first. Delivery priority only: the Techne Programme Hold is unchanged, and policy wording goes to its owning process only when Kris asks.
 - **Checkpoint-message pilot (14 October):** threads message each other asynchronously through a bold **Messages from Master: state-of-play** block just under a checkpoint's H1, one dated line per item with its tag, Kris's decision and the report holding the detail; the receiving thread acts and removes the line. The block passes the `ki-checkpoint` audit. Sent: GATE-FIX, RIG-SOL-TELEGRAM, RIG-SOL-BREW and REBOOT-PMO to Rig: mac-studio-bootstrap; BINARY-HOME, GRANOLA-SUPPORT, ACQ-FINISH and the held GRANOLA-PLAN and BINARY-PROOF receipts to KI Model: knowledge-acquisition; CLI115-CHECKPOINT-LINKS to Fnd: estate-factorisation; the ACQ-FOCUS acknowledgement to Acquire: acquire-intake. Added this round: PUSH-BENEATH, CHECKPOINT-MESSAGES, SYNC-GUARD, STATE-OF-PLAY-ROLE, AREAS-DISPATCH and INCEPTION-TYPE to KI Model: ways-of-working; AREAS-DISPATCH to KI Model: command-centre; INCEPTION-TYPE to KI Model: knowledge-acquisition. Committed: the Rig: mac-studio-bootstrap and Acquire: acquire-intake blocks. Uncommitted, because those checkpoints also hold their own threads' edits and travel with those threads' next commits: KI Model: ways-of-working, KI Model: knowledge-acquisition, KI Model: command-centre and Fnd: estate-factorisation.
-- **Running:** nothing.
+- **Running:** nothing. **State:** drained to the territory hold on 2026-10-15 at Kris's request; every other Knowledge Islands checkpoint reads drained, except Rig: mac-studio-bootstrap, which carries on.
 - **Tooling.** `ki` 0.10.1, `mgit` 0.17.0, Rig 0.6.3 from checkout. Launch with `--rules push`; task-named remote operations are authorised.
 
 ## Decisions made
@@ -73,22 +83,29 @@ Rules live with their durable owners: the roadmap model in [GDR-KI-PRINCIPAL-005
 
 Stored 2026-10-15 for the move to sol:
 
-- **HOLD-MODEL (Kris, 15 October; pass to KI Model: ways-of-working when it restarts on sol):** rename drain to **hold**: a hold is a mark plus stopping all work, draining by not restarting anything, used for a move or for closing a thread for a period, and issuable across a whole territory. Every banner type (today REST, BUSY, DONE, plus the interim DRAINED frame) also updates a **pick-up block as the first thing in the checkpoint**: how the thread is resumed, its status (a hold sets status `hold`), and its next steps when back in use, with questions kept below. A mark shows in the banner and updates the pick-up block's mark heading. On a hold or reinstatement, the state-of-play thread says which threads should restart. A hold never says where (which host) the work comes back up; that is not part of the information. Kris's words are in `decisions.md`.
+- **HOLD-MODEL (Kris, 15 October; pass to KI Model: ways-of-working when it restarts):** rename drain to **hold**: a hold is a mark plus stopping all work, draining by not restarting anything, used for a move or for closing a thread for a period, and issuable across a whole territory. Every banner type (today REST, BUSY, DONE, plus the interim DRAINED frame) also updates a **pick-up block as the first thing in the checkpoint**: how the thread is resumed, its status (a hold sets status `hold`), and its next steps when back in use, with questions kept below. A mark shows in the banner and updates the pick-up block's mark heading. On a hold or reinstatement, the state-of-play thread says which threads should restart. A hold never says where (which host) the work comes back up; that is not part of the information. Kris's words are in `decisions.md`.
 - **RESTART-SET (Kris, 15 October):** the pick-up state is the combination of the banner type and the thread type (conversational, coordination, or state-of-play as the coordination of coordinations), each with its own instructions; this thread works that out first on restart, before handing HOLD-MODEL to KI Model: ways-of-working. Threads to reinstate: Master: state-of-play, KI Model: ways-of-working, Rig: chezmoi and Acquire: acquire-intake, with Rig: mac-studio-bootstrap carrying on as it is. Rig: chezmoi and Acquire: acquire-intake sit outside this thread's territory and are included this time only. Every other thread stays held.
 - **HOLD-VERBS (Kris, 15 October):** drain and resume are the activities and hold is the state: a thread drains to reach a hold and resumes to leave it. Pass this to KI Model: ways-of-working with HOLD-MODEL.
 - **HOST-ROLES (Kris, 15 October):** the home role is terra, the laptop; the hub role is sol, the Mac Studio. This binds the roles in ADR-KI-PRINCIPAL-007's seats (home: personal, legal, humans-not-robots; hub: valle-armonia, sacred-inquiry, techmedix, equal-remedy; both: knowledge-islands, tipped to the hub). On restart: record the binding where the decision's Known Lands table can point to it, and hand the per-host seat binding to Rig: chezmoi.
 - **SOL-FIRST-CHURN (Kris, 15 October; first work on restart on sol):** analyse thread and session-based digests and the churn they cause across repositories, and the older material left lying around. Kris raised this in another thread and possibly KI Model: ways-of-working, so find that first and fold it in. Rule from Kris: temporary files live under the `tmp` folder. Dispatch the analysis to a background run; no new feature records unless Kris asks.
 - **SOL-MOVE (Kris, 15 October):** Kris moves working to sol next. Every thread in ki-principal and acquire drains, commits and pushes; Kris then makes a blank baseline commit across all repositories; tidy-ups follow on sol. Resume this thread on sol from this checkpoint; machine-local `~/.local/state/ki/agents/state-of-play/` does not travel, `decisions.md` in the thread folder does.
-- **FW-TERRA-OFF (open with Kris):** turn off Screen Sharing and Remote Login on terra at the Mac until [KI-TOOL-RIG-CORE-047](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-047-tailnet-only-listener-firewall.md) is live there; sol unchanged ([fw-exposure](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/state-of-play/fw-exposure.report.md)). Both currently listen on every network and accept passwords.
-- **FW-SSH-KEYONLY (open with Kris):** a run drafts a key-only SSH rollout plan in the chezmoi macOS workstation guide's Remote access section (key inventory in both directions, held session, second-machine test, restore steps), which Kris carries out attended. Kris agrees SSH stays open as the deliberate way back in, made key-only; keys are not yet proven in both directions.
+- **FW-TERRA-OFF (answered 15 October; Kris's words in `decisions.md`: no, Kris stayed in to get the firewalls and approach right that day):** turn off Screen Sharing and Remote Login on terra at the Mac until [KI-TOOL-RIG-CORE-047](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-047-tailnet-only-listener-firewall.md) is live there; sol unchanged (the fw-exposure report, now in Git history). Both currently listen on every network and accept passwords.
+- **FW-SSH-KEYONLY (answered 15 October; Kris's words in `decisions.md`; the plan is drafted in the chezmoi macOS workstation guide):** a run drafts a key-only SSH rollout plan in the chezmoi macOS workstation guide's Remote access section (key inventory in both directions, held session, second-machine test, restore steps), which Kris carries out attended. Kris agrees SSH stays open as the deliberate way back in, made key-only; keys are not yet proven in both directions.
 - **LIVE-MAN-SWITCH (idea, Kris, 15 October):** a reverse dead man's switch. Each host periodically pulls a control repository and re-applies its declared state, so a host that has lost inbound access heals itself once it has outbound connectivity; firewall and SSH changes must never break outbound traffic. Check [KI-TOOL-RIG-CORE-046](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-046-remote-access-and-continuity.md) as the likely home before any capture; no record yet. Gate the FW-SSH-KEYONLY and firewall rollouts on it as a design input.
 - **Firewall steps:** waiting on Rig: chezmoi's FW-DECLARE commit; then Kris gets the terra steps.
 
-Waiting on Kris: nothing open.
+Parked at the territory hold, 2026-10-15, each with its recommended option:
+
+- **FW-DECLARE-NOW:** Rig: chezmoi drained without committing the FW-DECLARE firewall declaration (`dot_config/rig/conf.d/private_45-firewall.toml`, `profiles = ["laptop"]`); it is still absent from the chezmoi source. Recommended: Rig: chezmoi commits it as the first step on reinstatement, with no chezmoi apply on sol until its Rig is 0.6.0 or later, then Kris gets the terra steps.
+- **SSH-SPARE-KEY:** add a second ed25519 key by hand to both Macs' `authorized_keys` before any chezmoi apply that turns SSH key-only; chezmoi on terra was 9 commits behind and its next apply turns key-only on. Recommended: yes, with its fingerprint recorded in the guide's key table ([ssh-keyonly report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/state-of-play/ssh-keyonly.report.md)). The territory hold fast-forwarded terra's chezmoi source, so a plain `chezmoi apply` on terra now turns key-only on.
+- **ESTATE-MAP-OBSERVATORY:** Kris asked whether the Estate Map is captured as critical for the Observatory; it is not (only trades-revamp mentions it). Recommended: add it as an idea in the [Command centre](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/command-centre.md) Project's Notes.
+- **STASH-DROP:** keep `stash@{0}` and `refs/rebase-repair/autostash-f091d468` in ki-principal on terra until Rig: mac-studio-bootstrap commits `+/_THREADS/mac-studio-bootstrap/chezmoi-fix.report.md`, then drop the stash entry and delete the ref. At the territory hold the stash list was already empty; the ref remains.
+
+Waiting on Kris: FW-DECLARE-NOW, SSH-SPARE-KEY, ESTATE-MAP-OBSERVATORY and STASH-DROP, parked above.
 
 Waiting on Rig:
 
-- **Rig: chezmoi:** FW-DECLARE commit, then Kris runs terra steps for [KI-TOOL-RIG-CORE-047](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-047-tailnet-only-listener-firewall.md) (plan in the fw-rollout report).
+- **Rig: chezmoi:** FW-DECLARE commit, then Kris runs terra steps for [KI-TOOL-RIG-CORE-047](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-047-tailnet-only-listener-firewall.md) (plan in the fw-rollout report, now in Git history).
 
 With other threads, no Kris action now:
 
@@ -125,7 +142,7 @@ Master follow-ups (no Kris action): Cowork clean-up of old knowledge-base aliase
 
 ## Next step
 
-1. Put the open Needs tags to Kris in the re-bootstrap owner report; record each answer in the decisions log in Kris's words, then launch an agent for it.
+1. Follow the pick-up block's next steps in order.
 2. Commit this thread's checkpoint, thread folder and `decisions.md` through a private index by explicit path at each mark, pull with rebase and push fast-forward when the stack is only this thread's.
-3. Work the dated queue from 2026-10-16; keep the burn-down moving through the Project threads, then offer the ki release and the specification review.
+3. Work the dated queue; keep the burn-down moving through the Project threads, then offer the ki release and the specification review.
 4. Later: Paperclip rebuild after the ways-of-working model settles; rebuild vega.

@@ -2,12 +2,14 @@
 type: ki-checkpoint
 thread: registry-removal
 label: 'Knowledge Islands: registry removal'
-state: active
+state: drained
 created_at: 2026-10-15T09:51:00Z
 updated_at: 2026-10-15T12:19:09Z
 ---
 
 # registry-removal
+
+2026-10-15: the state-of-play territory hold set this checkpoint to drained without the thread's own drain; the next steps are those already in this checkpoint.
 
 ## Objective
 

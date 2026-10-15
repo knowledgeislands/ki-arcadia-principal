@@ -2,12 +2,14 @@
 type: ki-checkpoint
 thread: techne.agent-host
 label: 'Techne: agent-host'
-state: active
+state: drained
 created_at: 2026-10-07T09:05:00Z
 updated_at: 2026-10-15T14:59:23Z
 ---
 
 # techne.agent-host
+
+2026-10-15: the state-of-play territory hold set this checkpoint's frontmatter to drained, matching the thread's own drain recorded under Current state; the next steps are those already in this checkpoint.
 
 ## Objective
 

@@ -957,3 +957,11 @@
 ## Decision 237 (2026-10-15)
 
 - Kris, 2026-10-15, HOLD-MODEL (hold for ways-of-working on restart): "in your drain and reinstatement you just say which threads you think, because you are a state-of-play thread ... which are the ones that you think should be restarted. ... Once we do a mark, for example, it should put a mark as a thing in the banner. ... what are all the different banner types that we have got at the minute? ... we should be able to issue a drain across a territory, and a drain could be used not only because it is moving somewhere else, but ... when I bring it to a close for a period of time ... hold is a better word than drain. And what happens when you go on a hold is that you drain any work that is ongoing by not restarting any. ... based on any of the banner types, it should also update the initial or the start point in the checkpoint. So the first thing in a checkpoint should be about how a checkpoint is picked up from. ... if a hold is put into place, its status becomes hold as well, and it says what is necessary to then effectively start up again. And for something like a coordination thread, it is obviously the continuation of the work that it was doing, questions it needs to ask. It does not have to state the questions there ... but it should be clear about what its next steps are when it becomes back into use. If something has got a mark, it can be updated with the mark heading ... I would rather that you held this and then that is something that we pass back out to that thread when we restart."
+
+## Decision 238 (2026-10-15T15:11:36Z)
+
+- TERRITORY-HOLD / Okay, so just to be clear, you're the only thread that's left running in the Knowledge Islands area. So now you're going to do the orderly drain down to the hold position for the state of play, which effectively puts the entire territory into a state of hold.
+
+## Decision 239 (2026-10-15T15:12:21Z)
+
+- HOLD-PERSIST / That has to also ensure that everything that there's no local working versions of anything, that everything is committed and pushed, even if that means that some things are pushed onto branches, so at least we know that everything is effectively at a position or state which is persisted.
