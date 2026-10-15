@@ -969,3 +969,7 @@
 ## 2026-10-15 22:09 BST - resume from the territory hold
 
 Kris: "Resume Master: state-of-play from its checkpoint under current ki-pmo and ki-delegation since 2026-10-15T15:14:39Z: re-bootstrap, read the pick-up block, fold or discard the hold/2026-10-15 branches, run the digest-churn analysis first, work out the restart model, reinstate ways-of-working, Rig: chezmoi and Acquire: acquire-intake, put the parked queries back, then banner."
+
+## 2026-10-15 22:45 BST - thread naming convention (THREAD-NAMES)
+
+Kris, showing the thread list `KI > SoP`, `KI > Model > ways of working`, `KI > Model > knowledge acquisition`, `KI > Rig > mac studio setup`, `KI > mics / webcams`, `Acquire > intake (sol)`, `Chezmoi > misc (sol)`: "this is a better way I think". On the host suffix: "no, the machine is only added if its limited to that machine, so intake and chezmoi misc are machine specific".
