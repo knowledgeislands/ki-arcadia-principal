@@ -4,23 +4,20 @@ thread: _state-of-play
 label: 'Master: state-of-play'
 state: drained
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-15T15:14:39Z
+updated_at: 2026-10-15T21:25:00Z
 ---
 
 # _state-of-play
 
 ## Pick-up - mark 2026-10-15T15:14:39Z (16:14 BST)
 
-- **Status:** hold. The whole Knowledge Islands territory is on hold; the frontmatter keeps `state: drained` until HOLD-MODEL is adopted. Running: nothing.
-- **Resume:** `Resume Master: state-of-play from its checkpoint under current ki-pmo and ki-delegation since 2026-10-15T15:14:39Z: re-bootstrap, read the parked queries, take stock, restart authorised work, then banner.`
+- **Status:** rest. Resumed on sol on 2026-10-15 at 22:09 BST from the territory hold. Reinstated with this thread: KI Model: ways-of-working, Rig: chezmoi and Acquire: acquire-intake (the last two this time only); Rig: mac-studio-bootstrap carries on; every other thread stays held. The frontmatter keeps `state: drained` until FRONTMATTER-STATE is answered. Running: nothing.
+- **Resume:** `Resume Master: state-of-play under current ki-pmo and ki-delegation since 2026-10-15T15:14:39Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`
 - **Next steps, in order:**
-  1. SOL-FIRST-CHURN: analyse the thread and session digest churn and old leftover material across the repositories; temporary files belong under `tmp`.
-  2. Work out the RESTART-SET pick-up model (banner type × thread type: conversational, coordination, state-of-play), then hand HOLD-MODEL, HOLD-VERBS, HOST-ROLES' write-up and RESTART-SET to KI Model: ways-of-working.
-  3. Reinstate KI Model: ways-of-working, Rig: chezmoi and Acquire: acquire-intake (the latter two outside this territory, this time only); Rig: mac-studio-bootstrap carries on. Every other thread stays on hold.
-  4. Put the open queries under Open questions back to Kris.
-- **Persisted at the hold** (hold-persist, 15 October; resuming work must fold or discard each of these branches deliberately):
-  - `ki-agentic-harness`: `hold/2026-10-15/working-state`, the untracked `+/_THREADS/skill-reviews/` folder of the archived skill-reviews thread; `hold/2026-10-15/retirement-preserved-territory-selection`, the four commits under the local ref `refs/ki/retirement-preserved/territory-selection-codex-20261007-2133/harness`. The local branch `automation/ki-v0.10.0` (one commit, `chore(ci): install ki v0.10.0`) is pushed to its own name.
-  - `ki-principal`: `hold/2026-10-15/working-state`, Rig: mac-studio-bootstrap's modified `+/_THREADS/mac-studio-bootstrap/chezmoi-fix.report.md`; `hold/2026-10-15/rebase-repair-autostash`, the local ref `refs/rebase-repair/autostash-f091d468`.
+  1. Act on Kris's replies to the re-bootstrap report of 22:25 BST: FW-DECLARE-NOW, SSH-SPARE-KEY, ESTATE-MAP-OBSERVATORY, STASH-DROP, THREADS-CHECKINS, CHURN-REMEDIES, OLD-THREAD-FOLDERS, STALE-BRANCHES (AUTOMATION-BRANCHES folded in), UNPUSHED-COMMITS, STAGING-LEFTOVERS, SRC-BADGE, FRONTMATTER-STATE and DESIGN-HOME. The detail is in the hold-branches, digest-churn and restart-model reports in the thread folder.
+  2. Check that the three reinstated threads act on their REINSTATE lines.
+  3. 2026-10-16: the KI-PRINCIPAL-MOD-008 hold review.
+- **Settled since the hold:** the hold branches are folded or discarded; only ki-principal `hold/2026-10-15/working-state` is kept, until Rig: mac-studio-bootstrap settles `+/_THREADS/mac-studio-bootstrap/chezmoi-fix.report.md`. The restart model is a design note in the ways-of-working Project's `design/` folder and handed over; HOST-ROLES is bound in the Host network Project note, and SEAT-HOSTS was sent to Rig: chezmoi.
 
 ## Objective
 
@@ -54,7 +51,7 @@ Thread working rules, re-read after any compaction:
 - **Repositories at close (22:12 BST, terra):** tools-ki, tools-rig, acquire, ki-agentic-harness and chezmoi are level with origin with nothing unpushed; tools-ki's three stacked commits, including the prune, are on origin. ki-agentic-harness carries other threads' uncommitted ki-pmo and ki-delegation edits and an untracked `+/diagrams/` (ways-of-working). ki-principal is level after this thread's commit; its remaining uncommitted work belongs to other threads.
 - **Delivery priority (ACQ-FOCUS, adopted 14 October):** Rig: mac-studio-bootstrap and Techne: agent-host first. Delivery priority only: the Techne Programme Hold is unchanged, and policy wording goes to its owning process only when Kris asks.
 - **Checkpoint-message pilot (14 October):** threads message each other asynchronously through a bold **Messages from Master: state-of-play** block just under a checkpoint's H1, one dated line per item with its tag, Kris's decision and the report holding the detail; the receiving thread acts and removes the line. The block passes the `ki-checkpoint` audit. Sent: GATE-FIX, RIG-SOL-TELEGRAM, RIG-SOL-BREW and REBOOT-PMO to Rig: mac-studio-bootstrap; BINARY-HOME, GRANOLA-SUPPORT, ACQ-FINISH and the held GRANOLA-PLAN and BINARY-PROOF receipts to KI Model: knowledge-acquisition; CLI115-CHECKPOINT-LINKS to Fnd: estate-factorisation; the ACQ-FOCUS acknowledgement to Acquire: acquire-intake. Added this round: PUSH-BENEATH, CHECKPOINT-MESSAGES, SYNC-GUARD, STATE-OF-PLAY-ROLE, AREAS-DISPATCH and INCEPTION-TYPE to KI Model: ways-of-working; AREAS-DISPATCH to KI Model: command-centre; INCEPTION-TYPE to KI Model: knowledge-acquisition. Committed: the Rig: mac-studio-bootstrap and Acquire: acquire-intake blocks. Uncommitted, because those checkpoints also hold their own threads' edits and travel with those threads' next commits: KI Model: ways-of-working, KI Model: knowledge-acquisition, KI Model: command-centre and Fnd: estate-factorisation.
-- **Running:** nothing. **State:** drained to the territory hold on 2026-10-15 at Kris's request; every other Knowledge Islands checkpoint reads drained, except Rig: mac-studio-bootstrap, which carries on.
+- **Running:** nothing. **State:** resumed on 2026-10-15 at 22:09 BST from the territory hold; see the pick-up block.
 - **Tooling.** `ki` 0.10.1, `mgit` 0.17.0, Rig 0.6.3 from checkout. Launch with `--rules push`; task-named remote operations are authorised.
 
 ## Decisions made
