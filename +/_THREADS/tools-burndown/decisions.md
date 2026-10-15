@@ -124,3 +124,13 @@ Classification: operational. Durable home: the estate-factorisation checkpoint a
 Classification: operational. Durable home: the estate-factorisation checkpoint and drain-sol report. Kris explicitly authorises this thread to reconcile the shared documentation history and publish it, superseding the drain restriction against carrying the named other-session commits for this bounded recovery. Preserve unrelated working files and staging, run normal gates, pull with rebase, and push fast-forward only. No product work, release or new agent is authorised.
 
 > so can you fix the commits, fix pulling and then pushing
+
+## Decision 8 (2026-10-15T15:04:22Z)
+
+Classification: operational. Durable home: the drained estate-factorisation checkpoint and Drain report. Kris explicitly orders a new drain mark, stopped work, repository-only recovery, explicit-path gated commits and fast-forward publication. The reusable ki-pmo update is for KI Model: ways-of-working only. No product work, new agent, release, baseline commit or foreign-file mutation is authorised.
+
+> DRAIN CHECK (Kris, 15 October 2026). A mark is a point in time. A drain is a mark plus stopping all work, so that the thread can be archived on terra and resumed on sol from the repository alone.
+>
+> Park everything in the checkpoint. Strike a mark. Move every open query (tag, one-line context, recommended option), held item, parked item, waiting-on item and the next step into the checkpoint, set running to nothing and state to drained, and copy into the thread folder anything from ~/.local/state/ki/agents/<run>/ needed to resume. Remove re-copied retired reports by explicit path. Commit and push the checkpoint and thread folder.
+
+The final form is Drain report: Done, Parked and Left over; no Context/Query/Options and no reply block, followed by the owner-supplied DRAINED frame and sol resume line.

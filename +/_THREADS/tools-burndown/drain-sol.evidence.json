@@ -378,5 +378,129 @@
     "foreign_report_original_index_preserved": true,
     "no_force_push": true,
     "no_hook_bypass": true
+  },
+  "drain_check": {
+    "mark": "2026-10-15T15:04:22Z",
+    "local_mark": "16:04 BST",
+    "state": "drained",
+    "running": [],
+    "queued": [],
+    "worker_count": 32,
+    "parked_tags": [
+      "DEPS-HOLD",
+      "STORE-REPAIR",
+      "HOST-GUARDS",
+      "HOST-WRITES",
+      "KI-RELEASE",
+      "TRIAGE-OWNERS",
+      "DOCK",
+      "RIG-REFS",
+      "ALIAS-OWNERS",
+      "RECEIVER-ROLLOUT",
+      "OBS-ACTIVATION",
+      "GOVERNANCE",
+      "PROJECT-CLOSE"
+    ],
+    "unfinished_brief_needed": false,
+    "runtime_only_required_reports": [],
+    "retired_copies_absent": [
+      "dock-plan-resume.report.md",
+      "obs-correct.report.md",
+      "patching-plan.report.md",
+      "rig-correct.report.md",
+      "rig-deliver.report.md"
+    ],
+    "repositories": {
+      "ki-principal": {
+        "path": "/Users/krisbrown/workspaces/knowledge-islands/ki-principal",
+        "fetch_ok": true,
+        "branch": "main",
+        "head": "22126383c57e0f1dff6edfe43297229fbc126333",
+        "origin": "585d56b90b1241cc01788fce564b7e7f33d104a1",
+        "ahead_behind": "0\t1",
+        "foreign_status": " M +/_THREADS/mac-studio-bootstrap/chezmoi-fix.report.md\n M +/_THREADS/ways-of-working/decisions.md",
+        "outgoing": "",
+        "operations": []
+      },
+      "ki-agentic-harness": {
+        "path": "/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness",
+        "fetch_ok": true,
+        "branch": "main",
+        "head": "2f85c0680da754641b25d7fa59d640cc6dd0fc08",
+        "origin": "2f85c0680da754641b25d7fa59d640cc6dd0fc08",
+        "ahead_behind": "0\t0",
+        "foreign_status": "?? +/_THREADS/",
+        "outgoing": "",
+        "operations": []
+      },
+      "tools-ki": {
+        "path": "/Users/krisbrown/workspaces/knowledge-islands/tools-ki",
+        "fetch_ok": true,
+        "branch": "main",
+        "head": "585321fb756ab629aa0a3f2b8cad9d162f818ae9",
+        "origin": "585321fb756ab629aa0a3f2b8cad9d162f818ae9",
+        "ahead_behind": "0\t0",
+        "foreign_status": "",
+        "outgoing": "",
+        "operations": []
+      },
+      "tools-mgit": {
+        "path": "/Users/krisbrown/workspaces/knowledge-islands/tools-mgit",
+        "fetch_ok": true,
+        "branch": "main",
+        "head": "9a30de5fb6ee44b8ceca1d516a9371741ea08a4c",
+        "origin": "9a30de5fb6ee44b8ceca1d516a9371741ea08a4c",
+        "ahead_behind": "0\t0",
+        "foreign_status": "",
+        "outgoing": "",
+        "operations": []
+      },
+      "tools-rig": {
+        "path": "/Users/krisbrown/workspaces/knowledge-islands/tools-rig",
+        "fetch_ok": true,
+        "branch": "main",
+        "head": "efd4eaedfeb546b03eeab1e59ee2ab77130f9054",
+        "origin": "efd4eaedfeb546b03eeab1e59ee2ab77130f9054",
+        "ahead_behind": "0\t0",
+        "foreign_status": "",
+        "outgoing": "",
+        "operations": []
+      },
+      "tools-techne": {
+        "path": "/Users/krisbrown/workspaces/knowledge-islands/tools-techne",
+        "fetch_ok": true,
+        "branch": "main",
+        "head": "a994a2843c82e2db9a239074755440a16ed48486",
+        "origin": "a994a2843c82e2db9a239074755440a16ed48486",
+        "ahead_behind": "0\t0",
+        "foreign_status": "",
+        "outgoing": "",
+        "operations": []
+      },
+      "apps-observatory.local": {
+        "path": "/Users/krisbrown/workspaces/knowledge-islands/apps-observatory.local",
+        "fetch_ok": true,
+        "branch": "main",
+        "head": "74a0eead9ab9f76d0b6357d41ffb2d77c730f586",
+        "origin": "74a0eead9ab9f76d0b6357d41ffb2d77c730f586",
+        "ahead_behind": "0\t0",
+        "foreign_status": "",
+        "outgoing": "",
+        "operations": []
+      },
+      "ki-techne-harness": {
+        "path": "/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness",
+        "fetch_ok": true,
+        "branch": "main",
+        "head": "cc758473ab19dd78956916d9a9c954f29332c0ee",
+        "origin": "cc758473ab19dd78956916d9a9c954f29332c0ee",
+        "ahead_behind": "0\t0",
+        "foreign_status": "",
+        "outgoing": "",
+        "operations": []
+      }
+    },
+    "publication_method": "Isolated clean checkout; normal pull --rebase and gates; only four own recovery paths. Primary foreign files untouched.",
+    "resume_line": "Resume Fnd: estate-factorisation on sol from its checkpoint under current ki-pmo and ki-delegation since 2026-10-15T15:04:22Z: re-bootstrap, read the parked queries, take stock, restart authorised work, then banner."
   }
 }
