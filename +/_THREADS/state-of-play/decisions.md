@@ -941,3 +941,19 @@
 ## Decision 233 (2026-10-15)
 
 - Kris, 2026-10-15, SOL-FIRST-CHURN: "A key thing that needs checking is that when we do start the state of play thread back up, is that it does analysis about what is happening with the thread or session-based digests. We need to get that under control because it is causing a lot of churn in the repositories. And I think we have got a lot of older stuff that is getting left around. I think I had it in one of the other threads as well, and possibly in the ways of working, but ultimately temporary files need to be under the temp folder. That is tmp, by the way."
+
+## Decision 234 (2026-10-15)
+
+- Kris, 2026-10-15, ESTATE-MAP-OBSERVATORY: shared file:///Users/krisbrown/workspaces/personal/personal-principal/Admin/Operations/Live%20Artifacts/Estate%20Map.html#terr and asked "also is this captured somewhere as critical for the observatory?" Finding: not captured; only trades-revamp mentions the Estate Map, and apps-observatory.local docs do not.
+
+## Decision 235 (2026-10-15)
+
+- Kris, 2026-10-15, DRAIN-BANNER: "I need a prompt for the coordination threads in knowledge islands to check that they are wrapped up and do what they can, and if this is the case they should change the banner to represent this in some way and make it very clear. So once we ask a thread to drain itself, it is parking all of its queries into the check point etc, so the summary should be simplistic and to the point. When I give this prompt to the ways-of-working it should capture this and maybe fix it ASAP before it drains also."
+
+## Decision 236 (2026-10-15)
+
+- Kris, 2026-10-15, DRAIN-TERM: "I am guessing a Mark is a point in time and a Hold / Drain is a Mark + stopping all work"
+
+## Decision 237 (2026-10-15)
+
+- Kris, 2026-10-15, HOLD-MODEL (hold for ways-of-working on restart): "in your drain and reinstatement you just say which threads you think, because you are a state-of-play thread ... which are the ones that you think should be restarted. ... Once we do a mark, for example, it should put a mark as a thing in the banner. ... what are all the different banner types that we have got at the minute? ... we should be able to issue a drain across a territory, and a drain could be used not only because it is moving somewhere else, but ... when I bring it to a close for a period of time ... hold is a better word than drain. And what happens when you go on a hold is that you drain any work that is ongoing by not restarting any. ... based on any of the banner types, it should also update the initial or the start point in the checkpoint. So the first thing in a checkpoint should be about how a checkpoint is picked up from. ... if a hold is put into place, its status becomes hold as well, and it says what is necessary to then effectively start up again. And for something like a coordination thread, it is obviously the continuation of the work that it was doing, questions it needs to ask. It does not have to state the questions there ... but it should be clear about what its next steps are when it becomes back into use. If something has got a mark, it can be updated with the mark heading ... I would rather that you held this and then that is something that we pass back out to that thread when we restart."
