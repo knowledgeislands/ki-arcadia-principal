@@ -965,3 +965,7 @@
 ## Decision 239 (2026-10-15T15:12:21Z)
 
 - HOLD-PERSIST / That has to also ensure that everything that there's no local working versions of anything, that everything is committed and pushed, even if that means that some things are pushed onto branches, so at least we know that everything is effectively at a position or state which is persisted.
+
+## 2026-10-15 22:09 BST - resume from the territory hold
+
+Kris: "Resume Master: state-of-play from its checkpoint under current ki-pmo and ki-delegation since 2026-10-15T15:14:39Z: re-bootstrap, read the pick-up block, fold or discard the hold/2026-10-15 branches, run the digest-churn analysis first, work out the restart model, reinstate ways-of-working, Rig: chezmoi and Acquire: acquire-intake, put the parked queries back, then banner."
