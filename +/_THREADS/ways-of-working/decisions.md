@@ -611,3 +611,7 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 146 (2026-10-15T09:52:55Z)
 
 - DRAIN-SOL - (Kris, 15 October) I am moving working to sol next. Bring this thread to a clean, recoverable rest now. Do not start new work and do not launch new background agents.
+
+## Decision 147 (2026-10-15T14:59:57Z)
+
+- DRAIN-CHECK - (Kris, 15 October) A mark is a point in time. A drain is a mark plus stopping all work, so that the thread can be archived on terra and resumed on sol from the repository alone. KI Model: ways-of-working only, before anything else: capture this drain form in ki-pmo now and land it (commit and push), so that every thread draining after you uses it. Add Drain as a thread state and a report form ("Drain report") beside Summary, Recap, Full summary and Re-bootstrap, and add the DRAINED footer frame below beside REST, BUSY and DONE. A drain report has no reply block and no Context/Query/Options; the queries live in the checkpoint.
