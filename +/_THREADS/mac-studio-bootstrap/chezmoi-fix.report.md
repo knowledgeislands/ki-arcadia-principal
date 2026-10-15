@@ -40,21 +40,15 @@ Nothing in this run. Pending handoff: `~/.local/share/chezmoi` on sol, branch `m
 
 ### SVG-HANDLER - the new SVG declaration needs a Rig apply
 
-**Summary:** applying `40-macos.toml` added the declared SVG handler, and `rig doctor` now reports it as drifted, because ImageOptim still holds SVG. Only `rig apply` sets the handler, and it was outside this run's authority. That makes three findings, where there were two before.
-**Need you:** review and run, or approve a run.
-**Recommendation:** at sol, `rig apply --dry-run`, check it only sets the SVG handler and the parked Telegram item, then `rig apply`.
+**Summary:** applying `40-macos.toml` added the declared SVG handler, and `rig doctor` now reports it as drifted, because ImageOptim still holds SVG. Only `rig apply` sets the handler, and it was outside this run's authority. That makes three findings, where there were two before. **Need you:** review and run, or approve a run. **Recommendation:** at sol, `rig apply --dry-run`, check it only sets the SVG handler and the parked Telegram item, then `rig apply`.
 
 ### OTHER-EDIT - someone else's uncommitted edit in the chezmoi source
 
-**Summary:** `dot_config/rig/conf.d/private_10-applications.toml` has an uncommitted change that I did not make. It drops "(KB-DOTFILES-UE-079, chezmoi thread Decision 49)" from Telegram's rationale. I left it alone. It shows as the only `chezmoi status` drift.
-**Need you:** say whose it is and whether to keep it.
-**Recommendation:** let the session that made it commit it. Otherwise discard it, because it removes a record reference.
+**Summary:** `dot_config/rig/conf.d/private_10-applications.toml` has an uncommitted change that I did not make. It drops "(KB-DOTFILES-UE-079, chezmoi thread Decision 49)" from Telegram's rationale. I left it alone. It shows as the only `chezmoi status` drift. **Need you:** say whose it is and whether to keep it. **Recommendation:** let the session that made it commit it. Otherwise discard it, because it removes a record reference.
 
 ### RENDER-HOOK - "pre-commit" means the local gate here
 
-**Summary:** this repository deliberately has no Git hook (AGENTS.md, KI-HARNESS-GOV-117). I added the render check to the local gate (`node --test`), which AGENTS.md says to run before every commit, rather than installing an untracked `.git/hooks/pre-commit`.
-**Need you:** confirm, or ask for a hook.
-**Recommendation:** keep it in the gate, and let KI-HARNESS-GOV-117 decide on hooks estate-wide.
+**Summary:** this repository deliberately has no Git hook (AGENTS.md, KI-HARNESS-GOV-117). I added the render check to the local gate (`node --test`), which AGENTS.md says to run before every commit, rather than installing an untracked `.git/hooks/pre-commit`. **Need you:** confirm, or ask for a hook. **Recommendation:** keep it in the gate, and let KI-HARNESS-GOV-117 decide on hooks estate-wide.
 
 ```text
 SVG-HANDLER - 
