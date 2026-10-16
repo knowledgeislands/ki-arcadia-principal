@@ -4,7 +4,7 @@ thread: rig.chezmoi
 label: 'Rig: chezmoi'
 state: active
 created_at: 2026-10-08T08:40:00Z
-updated_at: 2026-10-16T21:01:28Z
+updated_at: 2026-10-16T21:02:24Z
 ---
 
 # rig.chezmoi
@@ -38,7 +38,7 @@ ki-pmo read at c43713ce
 
 Re-bootstrap on 16 October 2026 reconciled the missing BUSY pick-up block before taking stock. No legacy delivery agent was found; the current resume run and its monitor are not restarted delivery. REINSTATE and CHEZMOI-RESUME have been acted on by this reconstruction. No subagents were launched. The owner overrides the ordinary mark-on-REST-resume rule: retain this mark.
 
-Both repositories fetched and were level with origin/main before these documentation edits. Principal had another session's modified chezmoi decisions log and untracked desk-kit/setup-note.report.md; preserve both. The handoff's unrelated ahead commit is no longer unpublished: 0180171 (ssh-console report) is reachable from origin/main. Recheck every ancestor before publishing; never publish another session's commits.
+Both repositories fetched and were level with origin/main before these documentation edits. Principal had another session's modified chezmoi decisions log and untracked desk-kit/setup-note.report.md; preserve both. The handoff's unrelated ahead commit is no longer unpublished: 0180171 (ssh-console report) is reachable from origin/main. At final fetch, another session committed 5ccc8d7 (docs(threads): log tools-burndown answers and the mgit members request) between this run's documentation commits. Do not push this stack. Pending handoff: ki-principal, sol, main, owned commits 370f461 and 6525ffe plus the handoff correction, beneath/above other-session 5ccc8d7. Chezmoi remains level with origin and unchanged by this run. Recheck every ancestor before publishing; never publish another session's commits.
 
 Repository evidence in [KB-DOTFILES-UE-088](</Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-088-ssh-alias-for-sol.md>) records key-only SSH verified on both Macs, including fresh bidirectional key connections and password/interactive rejection. Terra evidence remains in [KB-DOTFILES-UE-086](</Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md>); [KB-DOTFILES-UE-094](</Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-094-audit-sol-privacy-permissions.md>) remains sol privacy, and [KB-DOTFILES-UE-095](</Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-095-guide-continuity-check.md>) remains Continuity. No records were accepted or renumbered.
 
