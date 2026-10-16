@@ -50,7 +50,7 @@ a) (recommended) This thread's run closes apps-knowledgeislands.info #23 and ki-
 
 b) Delete only `automation/ki-v0.10.0`, which is patch-equivalent to `main`, and leave the PRs open.
 
-c) Leave them until KI-TOOL-KI-CLI-140 defines a rule.
+c) Leave them until [KI-TOOL-KI-CLI-140](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-140-git-hygiene-estate-audit.md) defines a rule.
 
 ```text
 STALE-BRANCHES: a) This thread's run deletes chezmoi's local `agent/add-hermes-agent` and, on `origin`, chezmoi's `phase7-sweep` and ki-principal's `hold/2026-10-15/working-state`. Every branch with unique commits stays until its territory owner decides.

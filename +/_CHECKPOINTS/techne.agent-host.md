@@ -11,6 +11,10 @@ updated_at: 2026-10-15T14:59:23Z
 
 2026-10-15: the state-of-play territory hold set this checkpoint's frontmatter to drained, matching the thread's own drain recorded under Current state; the next steps are those already in this checkpoint.
 
+**Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
+
+- 2026-10-16 · CI-RED-PRINCIPAL · Fnd: tools-burndown, on Kris's decision of 16 October: `ki repo audit` fails these reports in `+/_THREADS/techne/`, for this thread to fix in its own folder: cli133-plan (PMO-7). PMO-7 wants every full record identifier in prose linked to its local file, or as `<ID> (pruned)` to the GitHub file at its last revision; NOTE-1a reads a report's opening `---` rules as unterminated frontmatter, which tools-burndown cleared by putting a `<!-- markdownlint-disable-file MD041 -->` line above the unchanged rules.
+
 ## Objective
 
 Reconstruct the `techne` coordination thread if its session is lost. Status, open records and ideas live in the [[agent-host]] Project note under the [[Initiatives/techne|Techne]] Initiative; this checkpoint copies none of them.

@@ -45,9 +45,7 @@ Nothing.
 
 **Options:**
 
-a) (recommended) This thread's run deletes the three fully merged branches: chezmoi's local `agent/add-hermes-agent`, and on `origin` chezmoi's `phase7-sweep` and ki-principal's `hold/2026-10-15/working-state`. Every branch that still has commits not on `main` stays until its territory owner decides, with the Paperclip and rescue branches going to their territory threads.
-b) Delete only the local chezmoi branch and keep every remote branch for now.
-c) Keep them all until KI-TOOL-KI-CLI-140 lands.
+a) (recommended) This thread's run deletes the three fully merged branches: chezmoi's local `agent/add-hermes-agent`, and on `origin` chezmoi's `phase7-sweep` and ki-principal's `hold/2026-10-15/working-state`. Every branch that still has commits not on `main` stays until its territory owner decides, with the Paperclip and rescue branches going to their territory threads. b) Delete only the local chezmoi branch and keep every remote branch for now. c) Keep them all until [KI-TOOL-KI-CLI-140](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-140-git-hygiene-estate-audit.md) lands.
 
 ### AUTOMATION-BRANCHES
 
@@ -57,9 +55,7 @@ c) Keep them all until KI-TOOL-KI-CLI-140 lands.
 
 **Options:**
 
-a) (recommended) This thread's run closes apps-knowledgeislands.info #23 and ki-agentic-harness #27 with the comment "superseded by a later release", then deletes all five `automation/*` branches on `origin`.
-b) Delete only `automation/ki-v0.10.0`, which is patch-equivalent to `main`, and leave the PRs open.
-c) Leave them until KI-TOOL-KI-CLI-140 defines the rule.
+a) (recommended) This thread's run closes apps-knowledgeislands.info #23 and ki-agentic-harness #27 with the comment "superseded by a later release", then deletes all five `automation/*` branches on `origin`. b) Delete only `automation/ki-v0.10.0`, which is patch-equivalent to `main`, and leave the PRs open. c) Leave them until [KI-TOOL-KI-CLI-140](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-140-git-hygiene-estate-audit.md) defines the rule.
 
 ### UNPUSHED-COMMITS
 
@@ -75,8 +71,7 @@ Ten checkouts are only behind: acquire 1, apps-knowledgeislands.info 1, homebrew
 
 **Options:**
 
-a) (recommended) This thread pushes ki-principal's ten commits fast-forward at its next resting point, mine included. Rig: chezmoi reconciles chezmoi's divergence and pushes. ways-of-working answers OTHER-PUSH for ki-agentic-harness. The checkouts that are only behind are levelled with `mgit --estate pull --ff-only`, not `mgit sync`.
-b) Kris pushes each stack by hand.
+a) (recommended) This thread pushes ki-principal's ten commits fast-forward at its next resting point, mine included. Rig: chezmoi reconciles chezmoi's divergence and pushes. ways-of-working answers OTHER-PUSH for ki-agentic-harness. The checkouts that are only behind are levelled with `mgit --estate pull --ff-only`, not `mgit sync`. b) Kris pushes each stack by hand.
 
 ### STAGING-LEFTOVERS
 
@@ -93,8 +88,7 @@ No repository in the estate has a stash or linked worktree, and no other reposit
 
 **Options:**
 
-a) (recommended) This thread's next run clears the ki-principal `-/` and apps-knowledgeislands.info `+/` leftovers by explicit path, each only once its durable home is confirmed, and adds `tmp/` to the kw-website `.gitignore`. desk-kit commits or removes its own untracked report, and Rig: mac-studio-setup tidies its own state folder.
-b) Leave them to the first-wave run's owner to finish.
+a) (recommended) This thread's next run clears the ki-principal `-/` and apps-knowledgeislands.info `+/` leftovers by explicit path, each only once its durable home is confirmed, and adds `tmp/` to the kw-website `.gitignore`. desk-kit commits or removes its own untracked report, and Rig: mac-studio-setup tidies its own state folder. b) Leave them to the first-wave run's owner to finish.
 
 ```text
 STALE-BRANCHES: a) This thread's run deletes the three fully merged branches: chezmoi's local `agent/add-hermes-agent`, and on `origin` chezmoi's `phase7-sweep` and ki-principal's `hold/2026-10-15/working-state`. Every branch that still has commits not on `main` stays until its territory owner decides, with the Paperclip and rescue branches going to their territory threads.

@@ -22,6 +22,10 @@ updated_at: 2026-10-16T21:05:00Z
   - Rule from Kris, 2026-10-15 22:50 BST: this thread dispatches changes to the coordination threads and does not ask whether to.
 - **Live threads (2026-10-16):** KI > SoP; KI > Fnd > tools burndown; KI > Model > ways of working; KI > Model > knowledge acquisition; KI > Rig > mac studio setup; KI > mics / webcams; Acquire > intake (sol); Chezmoi > misc (sol), carrying Rig: chezmoi.
 
+**Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
+
+- 2026-10-16 · CI-RED-PRINCIPAL · Fnd: tools-burndown, on Kris's decision of 16 October: `ki repo audit` fails these reports in `+/_THREADS/state-of-play/`, for this thread to fix in its own folder: hold-branches (NOTE-1a and PMO-7); first-wave, reinstate and replies (NOTE-1a); digest-churn, roadmap-diag and ssh-keyonly (PMO-7). PMO-7 wants every full record identifier in prose linked to its local file, or as `<ID> (pruned)` to the GitHub file at its last revision; NOTE-1a reads a report's opening `---` rules as unterminated frontmatter, which tools-burndown cleared by putting a `<!-- markdownlint-disable-file MD041 -->` line above the unchanged rules.
+
 ## Objective
 
 This is the territory master thread for Knowledge Islands: the coordination thread of coordination threads, whose main role is to dispatch work into the right Project. It oversees only: Project threads' state, cross-thread blockers, cross-project priorities, releases and the roadmap burn-down across the `knowledge-islands` territory and chezmoi. All real work goes to Project threads, each resumed from its checkpoint, or to detached background agents launched through `ki agent`. Each other territory Capital has its own master thread on the same model. The Knowledge Islands Capital is `knowledgeislands/ki-principal` at `~/workspaces/knowledge-islands/ki-principal`.

@@ -25,7 +25,7 @@ Machine-local [baseline snapshot](/Users/krisbrown/.local/state/ki/agents/tools-
 
 Read-only checks passed: both tool TOML declarations parse and select roadmap; exact predicates verify all four identifiers and triage states; the actual marker writer uses `~/.config/ki/host-marker`; parsed recipe operations and status exit mapping match the plans. Full test, coverage, build, audit and manual gates are future owner delivery checks, not results from this preparation.
 
-### KI-TOOL-CLI-115 - writing-checkout protection
+### [KI-TOOL-CLI-115 (pruned)](https://github.com/knowledgeislands/tools-ki/blob/70c9337f618d114f95725d2496c23ea439279f53/docs/roadmap/KI-TOOL-CLI-115-enforce-roadmap-writing-checkout.md) - writing-checkout protection
 
 [Existing record](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-ki/docs/roadmap/KI-TOOL-CLI-115-enforce-roadmap-writing-checkout.md).
 
@@ -39,7 +39,7 @@ Read-only checks passed: both tool TOML declarations parse and select roadmap; e
 
 **Decision before adoption/planning:** the record expressly includes declaration location and skill access. Recommend a machine-local registry designation keyed by stable repository identity, with marker exclusion enforced first, avoiding committed physical paths; the owner must agree the declaration/read contract and whether a public check is needed for manual skill edits. This lane does not select a schema or reduce the record to marker-only delivery. Recommend no remote-main design work or new record here.
 
-### KI-TOOL-CLI-116 - launcher-held wait gates
+### [KI-TOOL-CLI-116 (pruned)](https://github.com/knowledgeislands/tools-ki/blob/70c9337f618d114f95725d2496c23ea439279f53/docs/roadmap/KI-TOOL-CLI-116-launcher-held-wait-gates.md) - launcher-held wait gates
 
 [Existing record](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-ki/docs/roadmap/KI-TOOL-CLI-116-launcher-held-wait-gates.md).
 
@@ -51,7 +51,7 @@ Read-only checks passed: both tool TOML declarations parse and select roadmap; e
 
 **Change/tests:** src/core/agent/runs.ts, src/commands/agent/index.ts and the background-agents guide, with any grammar inventory/manual/completion alignment required by the added holder route. Extend [agent.test.ts](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-ki/src/tests/cli/agent.test.ts:20) using fake processes/time: no runtime before all gates are DONE; multiple gates; DONE despite a still-live prerequisite PID; death without DONE; missing/invalid PID; held PID/status/wait observations; holder-to-runtime handover; duplicate launch; Claude and Codex; queued launch; spawn failure. Tests must never start real agents. Owner confirms the narrow holder grammar and missing-reference rule in the existing plan; no new Kris architecture decision is inherent in moving the gate out of the model.
 
-### TECHNE-TOOL-CLI-006 - guarded host commands
+### [TECHNE-TOOL-CLI-006 (pruned)](https://github.com/knowledgeislands/tools-techne/blob/684de1f32956f14a4cb823c8034ae9e46b7efbb7/docs/roadmap/TECHNE-TOOL-CLI-006-guarded-host-commands.md) - guarded host commands
 
 [Existing record](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-techne/docs/roadmap/TECHNE-TOOL-CLI-006-guarded-host-commands.md).
 
@@ -67,7 +67,7 @@ Route stop through the recipe stop script, passing --now only when requested. Ro
 
 **Remaining scope limit:** expiry/drift warnings are currently text-only in the harness; its JSON document contains no expiry member. Do not scrape secrets or invent an expiry contract in this adapter. Preserve structured profile/updates data and surface a future supplied warning when its owner supplies one. The thread must settle teardown removal and --all/stopped semantics in this record before implementation.
 
-### TECHNE-TOOL-CLI-008 - patching binding fields
+### [TECHNE-TOOL-CLI-008 (pruned)](https://github.com/knowledgeislands/tools-techne/blob/684de1f32956f14a4cb823c8034ae9e46b7efbb7/docs/roadmap/TECHNE-TOOL-CLI-008-host-patching-fields.md) - patching binding fields
 
 [Existing record](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-techne/docs/roadmap/TECHNE-TOOL-CLI-008-host-patching-fields.md).
 
@@ -87,7 +87,7 @@ Use the pinned root Bun and installed dependencies. Focused tests first, then ea
 
 ### Ready-to-paste owner handoff
 
-> Tools-burndown has prepared the four existing protected records for Techne: agent-host; ownership stays with you. Local techne workers are idle, with five old non-DONE failures still visible. Please resume local planning/delivery through your existing authority and lifecycle: KI-TOOL-CLI-116 first using a launcher-held gate; KI-TOOL-CLI-115 with the already-set ~/.config/ki/host-marker, agreeing designation/manual-check details before its plan; TECHNE-TOOL-CLI-006 consuming the accepted harness status/destroy contracts; TECHNE-TOOL-CLI-008 adding the settled patching fields against the same parser. Keep 006/008 separate. The report gives exact change/test boundaries, including the stop-profile precedence pitfall. No live host connection, rebuild, new record, acceptance or execution transfer is authorised by this handoff. Plans and baseline evidence: /Users/krisbrown/.local/state/ki/agents/tools-burndown/host-prep.report.md.
+> Tools-burndown has prepared the four existing protected records for Techne: agent-host; ownership stays with you. Local techne workers are idle, with five old non-DONE failures still visible. Please resume local planning/delivery through your existing authority and lifecycle: [KI-TOOL-CLI-116 (pruned)](https://github.com/knowledgeislands/tools-ki/blob/70c9337f618d114f95725d2496c23ea439279f53/docs/roadmap/KI-TOOL-CLI-116-launcher-held-wait-gates.md) first using a launcher-held gate; [KI-TOOL-CLI-115 (pruned)](https://github.com/knowledgeislands/tools-ki/blob/70c9337f618d114f95725d2496c23ea439279f53/docs/roadmap/KI-TOOL-CLI-115-enforce-roadmap-writing-checkout.md) with the already-set ~/.config/ki/host-marker, agreeing designation/manual-check details before its plan; [TECHNE-TOOL-CLI-006 (pruned)](https://github.com/knowledgeislands/tools-techne/blob/684de1f32956f14a4cb823c8034ae9e46b7efbb7/docs/roadmap/TECHNE-TOOL-CLI-006-guarded-host-commands.md) consuming the accepted harness status/destroy contracts; [TECHNE-TOOL-CLI-008 (pruned)](https://github.com/knowledgeislands/tools-techne/blob/684de1f32956f14a4cb823c8034ae9e46b7efbb7/docs/roadmap/TECHNE-TOOL-CLI-008-host-patching-fields.md) adding the settled patching fields against the same parser. Keep 006/008 separate. The report gives exact change/test boundaries, including the stop-profile precedence pitfall. No live host connection, rebuild, new record, acceptance or execution transfer is authorised by this handoff. Plans and baseline evidence: /Users/krisbrown/.local/state/ki/agents/tools-burndown/host-prep.report.md.
 
 ## Failed
 
@@ -96,8 +96,8 @@ Use the pinned root Bun and installed dependencies. Focused tests first, then ea
 ## Needs Kris
 
 - **HOST-HAND:** paste the handoff to state-of-play / the existing agent-host owner. This preparation cannot authorise or start protected implementation.
-- **WRITE-LOCUS:** with that owner, agree the designation location and whether manual skills need a public preflight for KI-TOOL-CLI-115. Recommended machine-local registry designation plus the settled host-marker exclusion; no remote-main redesign.
-- **HOST-GRAMMAR:** resolve TECHNE-TOOL-CLI-006's retained open teardown choice in its plan. Recommend outright removal; do not leave an unguarded termination path. The owner can settle --all/stopped status semantics locally against the stated fail-closed intent.
+- **WRITE-LOCUS:** with that owner, agree the designation location and whether manual skills need a public preflight for [KI-TOOL-CLI-115 (pruned)](https://github.com/knowledgeislands/tools-ki/blob/70c9337f618d114f95725d2496c23ea439279f53/docs/roadmap/KI-TOOL-CLI-115-enforce-roadmap-writing-checkout.md). Recommended machine-local registry designation plus the settled host-marker exclusion; no remote-main redesign.
+- **HOST-GRAMMAR:** resolve [TECHNE-TOOL-CLI-006 (pruned)](https://github.com/knowledgeislands/tools-techne/blob/684de1f32956f14a4cb823c8034ae9e46b7efbb7/docs/roadmap/TECHNE-TOOL-CLI-006-guarded-host-commands.md)'s retained open teardown choice in its plan. Recommend outright removal; do not leave an unguarded termination path. The owner can settle --all/stopped status semantics locally against the stated fail-closed intent.
 
 ## Final preservation check
 

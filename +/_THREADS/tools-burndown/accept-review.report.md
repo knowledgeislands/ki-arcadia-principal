@@ -34,7 +34,7 @@ Five records are clean and ready for `ki-accept`. Two need a decision from you f
 
 On the live checkout the audit also fails. MD-mech and ITEM-1 fail on the conflict markers in [KI-TOOL-KI-CLI-139](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-139-ebu-sources-sync.md), left by the stale rebase below.
 
-**KI-TOOL-KI-CLI-126 on hosted CI.** The latest ki-principal CI run on `main` is [38964350437](https://github.com/knowledgeislands/ki-principal/actions/runs/38964350437), at `69b46a9`, 20:43 UTC.
+**[KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md) on hosted CI.** The latest ki-principal CI run on `main` is [38964350437](https://github.com/knowledgeislands/ki-principal/actions/runs/38964350437), at `69b46a9`, 20:43 UTC.
 
 - "Install released KI" passed. It installed the verified `v0.10.5`. `ki repo repair` printed `! Store: sources store is unavailable on this host (not bound)` and ended `result: healthy` and `RESULT=PASS`.
 - The `ki repo audit --repo .` step then ran and failed on audit findings alone: FAIL=183 across PMO-7, STREAM-9 and NOTE-1a, with no repair or store error.
@@ -43,16 +43,16 @@ That is exactly what Verify 4 asks for. The review section of the record still s
 
 **Code findings.** Every acceptance criterion has its evidence, apart from what is listed here:
 
-- **KI-TOOL-KI-CLI-130, minor and not blocking.** `safeRelativePath` and `diskState` (`src/core/harness/development/generation.ts:18-31`) check only the last part of a path. So a symlinked folder inside the Harness could point a surface outside the root. The generator is the developer's own Harness code, so the risk is low.
-- **KI-TOOL-KI-CLI-135, minor.** `setAside` (`src/core/agent/runs.ts`, the `git status --porcelain` call) ignores Git's exit code. If Git fails, relaunch goes ahead instead of refusing. Not blocking.
-- **KI-TOOL-KI-CLI-123: the replay you asked me to weigh.** See EVENTS-REPLAY. The first time `deriveEvents` reads a run that existed before `events.jsonl` (`src/core/agent/events.ts:148-189`), it emits a `done` for every finished agent. It also emits a `needs-owner` for every query heading in every report, including queries already answered. The tools-burndown run shows it:
+- **[KI-TOOL-KI-CLI-130](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-130-skill-generated-surfaces.md), minor and not blocking.** `safeRelativePath` and `diskState` (`src/core/harness/development/generation.ts:18-31`) check only the last part of a path. So a symlinked folder inside the Harness could point a surface outside the root. The generator is the developer's own Harness code, so the risk is low.
+- **[KI-TOOL-KI-CLI-135](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-135-reused-agent-name-overwrites.md), minor.** `setAside` (`src/core/agent/runs.ts`, the `git status --porcelain` call) ignores Git's exit code. If Git fails, relaunch goes ahead instead of refusing. Not blocking.
+- **[KI-TOOL-KI-CLI-123](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-123-agent-run-events.md): the replay you asked me to weigh.** See EVENTS-REPLAY. The first time `deriveEvents` reads a run that existed before `events.jsonl` (`src/core/agent/events.ts:148-189`), it emits a `done` for every finished agent. It also emits a `needs-owner` for every query heading in every report, including queries already answered. The tools-burndown run shows it:
   - At 01:49 UTC, 21 old events were written in one pass, from `inventory` to `triage-plan`, among them answered tags such as OWNER-LANE and STORE-REPAIR.
   - The `events.seen` cursor is at 2, so 19 old events are still queued ahead of any new one.
 
   Decision 5 accepts that "a run in flight at upgrade returns its earlier finishes once more". It does not mention answered queries replaying. There is also a gap it does not cover: if a thread has retired a report and no state copy is left, the first read gives `failed: no report` for that finished agent (`events.ts:169-174`). This is a one-off cost for each run that predates the change. New runs are not affected.
-- **KI-TOOL-KI-CLI-127.** Two live Verify checks were not run: the Codex launch, which needs the network, and `ki agent send ways-of-working "probe"`, which would write into another live run. I ran the link printer's live check, read-only, from the reviewed source:
-  - `KI-TOOL-KI-CLI-127` printed its absolute-path link.
-  - `KI-TOOL-KI-CLI-124` and `KI-TOOL-KI-CLI-132` printed `(pruned)` links at the parent of the prune commit.
+- **[KI-TOOL-KI-CLI-127](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-127-agent-status-live-threads.md).** Two live Verify checks were not run: the Codex launch, which needs the network, and `ki agent send ways-of-working "probe"`, which would write into another live run. I ran the link printer's live check, read-only, from the reviewed source:
+  - [`KI-TOOL-KI-CLI-127`](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-127-agent-status-live-threads.md) printed its absolute-path link.
+  - [`KI-TOOL-KI-CLI-124` (pruned)](https://github.com/knowledgeislands/tools-ki/blob/9c4c0c0ef55feac893e869b886e87639ece9d791/docs/roadmap/KI-TOOL-KI-CLI-124-agent-run-close.md) and [`KI-TOOL-KI-CLI-132` (pruned)](https://github.com/knowledgeislands/tools-ki/blob/9fe5811469cda1464e9ed43585374bbc8a14f0d8/docs/roadmap/KI-TOOL-KI-CLI-132-launcher-only-thread-writer.md) printed `(pruned)` links at the parent of the prune commit.
   - `KI-NOWHERE-XYZ-1` exited 1 with a reason.
 
 **Blocks every acceptance: the tools-ki checkout is still in the stale rebase.** This is PUSH-REBASE in the [push-tools-ki](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/tools-burndown/push-tools-ki.report.md) report: a rebase onto `c058981a`, stopped at 08:51 BST on a conflict. While it stays open, two things follow:
@@ -70,41 +70,41 @@ Nothing is running. I made no edits in tools-ki or ki-principal apart from this 
 
 ### ACCEPT-CLEAN - accept the five clean records
 
-**Context:** KI-TOOL-KI-CLI-126, KI-TOOL-KI-CLI-130, KI-TOOL-KI-CLI-133, KI-TOOL-KI-CLI-135 and KI-TOOL-KI-CLI-138 have every criterion met, apart from the shared DEPS-1 audit failure. That failure predates them, and the `deps-types-node` run is handling it. The tools-ki checkout is still in the stale rebase.
+**Context:** [KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md), [KI-TOOL-KI-CLI-130](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-130-skill-generated-surfaces.md), [KI-TOOL-KI-CLI-133](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-133-retired-reports-come-back.md), [KI-TOOL-KI-CLI-135](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-135-reused-agent-name-overwrites.md) and [KI-TOOL-KI-CLI-138](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-138-warn-unknown-record-fields.md) have every criterion met, apart from the shared DEPS-1 audit failure. That failure predates them, and the `deps-types-node` run is handling it. The tools-ki checkout is still in the stale rebase.
 
 **Query:** When and how should these five be accepted?
 
 **Options:**
 
-a) (recommended) Once PUSH-REBASE has put `main` back in the tools-ki checkout, accept KI-TOOL-KI-CLI-126, KI-TOOL-KI-CLI-130, KI-TOOL-KI-CLI-133, KI-TOOL-KI-CLI-135 and KI-TOOL-KI-CLI-138 through `ki-accept`, accepting the pre-existing DEPS-1 audit failure. KI-TOOL-KI-CLI-126 cites hosted CI run 38964350437 as its Verify 4 evidence.
+a) (recommended) Once PUSH-REBASE has put `main` back in the tools-ki checkout, accept [KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md), [KI-TOOL-KI-CLI-130](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-130-skill-generated-surfaces.md), [KI-TOOL-KI-CLI-133](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-133-retired-reports-come-back.md), [KI-TOOL-KI-CLI-135](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-135-reused-agent-name-overwrites.md) and [KI-TOOL-KI-CLI-138](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-138-warn-unknown-record-fields.md) through `ki-accept`, accepting the pre-existing DEPS-1 audit failure. [KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md) cites hosted CI run 38964350437 as its Verify 4 evidence.
 
 b) Wait until `deps-types-node` has cleared DEPS-1, then accept the five.
 
-c) Accept only KI-TOOL-KI-CLI-126, KI-TOOL-KI-CLI-130 and KI-TOOL-KI-CLI-133 for now.
+c) Accept only [KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md), [KI-TOOL-KI-CLI-130](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-130-skill-generated-surfaces.md) and [KI-TOOL-KI-CLI-133](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-133-retired-reports-come-back.md) for now.
 
-### EVENTS-REPLAY - how KI-TOOL-KI-CLI-123 treats runs older than the change
+### EVENTS-REPLAY - how [KI-TOOL-KI-CLI-123](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-123-agent-run-events.md) treats runs older than the change
 
 **Context:** The first time a run that predates the change is read, it replays every past finish and every past query heading, answered or not. For tools-burndown that left 19 old events queued ahead of the cursor. A finished agent whose report the thread has since retired also reads as `failed: no report`. Decision 5 accepted replaying earlier finishes, but not answered queries or retired reports. This happens once for each older run. New runs are unaffected.
 
-**Query:** Should KI-TOOL-KI-CLI-123 be accepted as it is?
+**Query:** Should [KI-TOOL-KI-CLI-123](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-123-agent-run-events.md) be accepted as it is?
 
 **Options:**
 
-a) (recommended) Accept KI-TOOL-KI-CLI-123 through `ki-accept` with the one-off replay as a known limitation in its review. Capture a triage record so that the first read of an older run marks past agents as already seen, with no replayed queries and no `failed: no report` for retired reports. Once the code is back in the live checkout, the tools-burndown coordinator moves its `events.seen` cursor past event 21.
+a) (recommended) Accept [KI-TOOL-KI-CLI-123](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-123-agent-run-events.md) through `ki-accept` with the one-off replay as a known limitation in its review. Capture a triage record so that the first read of an older run marks past agents as already seen, with no replayed queries and no `failed: no report` for retired reports. Once the code is back in the live checkout, the tools-burndown coordinator moves its `events.seen` cursor past event 21.
 
-b) Send KI-TOOL-KI-CLI-123 back for that fix before accepting it.
+b) Send [KI-TOOL-KI-CLI-123](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-123-agent-run-events.md) back for that fix before accepting it.
 
 c) Accept it as it is, with no follow-up record.
 
-### LIVE-CHECKS - the two live checks KI-TOOL-KI-CLI-127 did not run
+### LIVE-CHECKS - the two live checks [KI-TOOL-KI-CLI-127](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-127-agent-status-live-threads.md) did not run
 
-**Context:** Every KI-TOOL-KI-CLI-127 check is covered by contract tests, and I confirmed the link printer live. Two live checks were not run: a real `--runtime codex` launch, which needs the network, and a real `ki agent send ways-of-working "probe"`, which writes into another live run.
+**Context:** Every [KI-TOOL-KI-CLI-127](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-127-agent-status-live-threads.md) check is covered by contract tests, and I confirmed the link printer live. Two live checks were not run: a real `--runtime codex` launch, which needs the network, and a real `ki agent send ways-of-working "probe"`, which writes into another live run.
 
 **Query:** Can those two checks be waived?
 
 **Options:**
 
-a) (recommended) Waive the two live checks on the contract-test evidence, and accept KI-TOOL-KI-CLI-127 through `ki-accept` once PUSH-REBASE has put `main` back.
+a) (recommended) Waive the two live checks on the contract-test evidence, and accept [KI-TOOL-KI-CLI-127](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-127-agent-status-live-threads.md) through `ki-accept` once PUSH-REBASE has put `main` back.
 
 b) Authorise a run to do the Codex launch and the send to a run you name, then accept.
 

@@ -23,13 +23,13 @@ Nothing running. Both owner decisions, DEPS-1-TYPES-NODE and FOOTER-GRANTS, are 
 
 ### PUSH-REBASE - finish the stale tools-ki rebase first
 
-**Context:** The tools-ki rebase onto `c058981a` has been stopped on a conflict in KI-TOOL-KI-CLI-139 since 08:51 BST, and the index was last touched at 21:19 BST. While it stays open, nothing can be committed safely in tools-ki, and the installed `ki` runs on old code. This run, accept-review and ACCEPT-CLEAN are all waiting on it.
+**Context:** The tools-ki rebase onto `c058981a` has been stopped on a conflict in [KI-TOOL-KI-CLI-139](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-139-ebu-sources-sync.md) since 08:51 BST, and the index was last touched at 21:19 BST. While it stays open, nothing can be committed safely in tools-ki, and the installed `ki` runs on old code. This run, accept-review and ACCEPT-CLEAN are all waiting on it.
 
 **Query:** How should the rebase be brought back to `main` before deps-types-node runs again?
 
 **Options:**
 
-a) (recommended) Launch one run that resolves the KI-TOOL-KI-CLI-139 conflict, keeping both sides' content, finishes the remaining 19 steps with `git rebase --continue`, and confirms that `main` is checked out with the tests passing. Then relaunch deps-types-node with the same brief.
+a) (recommended) Launch one run that resolves the [KI-TOOL-KI-CLI-139](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-139-ebu-sources-sync.md) conflict, keeping both sides' content, finishes the remaining 19 steps with `git rebase --continue`, and confirms that `main` is checked out with the tests passing. Then relaunch deps-types-node with the same brief.
 
 b) Resolve and finish the rebase yourself, then relaunch deps-types-node.
 

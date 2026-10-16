@@ -15,9 +15,9 @@ Final report, 11 October 2026, 11:26 BST. Both producer status files end DONE. A
 
 The review resolved roots using the local KI registry and read each repository's agent instructions and applicable engineering/work standards. Only assigned records and their claimed deliveries were examined. Passing suites alone are insufficient. Check results above distinguish producer evidence from independent checks; two focused runtime-only reproductions addressed specific concerns. No live service, installer, privileged command, handler operation, remote call, shared-repository write or worktree was used. Source-line links in findings identify the named immutable revision; the shared checkout may subsequently advance.
 
-### KI-OBS-APP-041 - Adopt territory selection
+### [KI-OBS-APP-041 (pruned)](https://github.com/knowledgeislands/apps-observatory.local/blob/28069f6be7639eba09b9c7037947d815e09c104d/docs/roadmap/KI-OBS-APP-041-adopt-territory-selection.md) - Adopt territory selection
 
-Record: [KI-OBS-APP-041](/Users/krisbrown/workspaces/kit/knowledgeislands/apps-observatory/docs/roadmap/KI-OBS-APP-041-adopt-territory-selection.md).
+Record: [KI-OBS-APP-041 (pruned)](https://github.com/knowledgeislands/apps-observatory.local/blob/28069f6be7639eba09b9c7037947d815e09c104d/docs/roadmap/KI-OBS-APP-041-adopt-territory-selection.md).
 
 Reviewed immutable Awaiting-review revision `980871d588399833771ba638106716ccb63aff16`, source delivery `4edfd16585c697ba06148ae357338cfdb4eaaa8f`, against Ready baseline `8879fdfbbaaac880ba49383f0aa2e32dfdfbe142`. The live record matched its committed snapshot at review start. Actual review used git-show files and the baseline-to-revision diff, never producer working code.
 
@@ -27,9 +27,9 @@ Producer Review evidence claims passing `bun run test` (1,121 tests: 364 contrac
 
 Correction reviewed at `0d0b2b9259afd65148c3f840547468bb228b0ecb`, again committed Awaiting review with a matching live record. The original privacy defect is resolved: separator-bearing labels/handles/Capital fields now invalidate the whole catalogue. New POSIX/home/drive/UNC path-matrix regressions assert no returned private values, a Unicode/punctuation control remains valid, and catalogue assertions prove direct roots selection remains independent. The original isolated reproduction now rejects every former leaking label; correction diff check PASS. Fresh producer packet claims 1,124 uncached tests, typecheck, normal/forced build, browser gate and scoped governance gates, with the engineering CI-1 warning stated honestly. No further product defect identified. Additional record-only evidence reviewed at `309aa456d745fda453f42f1b249c6ed679c4476f`: actual full audit and diagnostic results at corrected source `0d0b2b9259afd65148c3f840547468bb228b0ecb` are now supplied, with timestamped runtime command/revision/exit receipts. Audit has two warnings and diag reports HEALTHY=0, REPAIRABLE=1. The packet honestly withholds unconditional readiness and assigns existing governance/projection landing to the coordinator. The missing-results gap is resolved; required clean full-gate readiness remains pending. Recommendation: HOLD solely for that explicit governance limitation below. Service restart remains excluded from this reviewer and background delivery authority.
 
-### RIG-CORE-043 - Self-updating applications
+### [RIG-CORE-043 (pruned)](https://github.com/knowledgeislands/tools-rig/blob/ea7c3b626a2c0de34fe2c1154dc594806926ee3b/docs/roadmap/RIG-CORE-043-self-updating-applications.md) - Self-updating applications
 
-Record: [RIG-CORE-043](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-043-self-updating-applications.md).
+Record: [RIG-CORE-043 (pruned)](https://github.com/knowledgeislands/tools-rig/blob/ea7c3b626a2c0de34fe2c1154dc594806926ee3b/docs/roadmap/RIG-CORE-043-self-updating-applications.md).
 
 Reviewed committed Awaiting-review revision `ebd6e327dbfa4a3cf88a9e03488a4edd41abaf14` against Ready baseline `11d9de69d70071875a6a7ae789e51eb1c9e8dff2`. The live record matched the committed snapshot. Actual code, tests and public documentation were read through immutable git-show/diff snapshots, independent of the producer's subsequent removal work.
 
@@ -39,9 +39,9 @@ The 14 committed fixtures assert provider calls and outcomes for policy default/
 
 Recommendation: acceptance-ready for Kris's review at this revision; no material defect or missing captured step found. This is a recommendation only, never acceptance or closure. Native providers were reviewed through meaningful isolated assertions rather than live application management; no actual personal source swap or installer was run by this reviewer.
 
-### RIG-CORE-041 - Unwanted software removal
+### [RIG-CORE-041 (pruned)](https://github.com/knowledgeislands/tools-rig/blob/ea7c3b626a2c0de34fe2c1154dc594806926ee3b/docs/roadmap/RIG-CORE-041-unwanted-software-removal.md) - Unwanted software removal
 
-Record: [RIG-CORE-041](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-041-unwanted-software-removal.md).
+Record: [RIG-CORE-041 (pruned)](https://github.com/knowledgeislands/tools-rig/blob/ea7c3b626a2c0de34fe2c1154dc594806926ee3b/docs/roadmap/RIG-CORE-041-unwanted-software-removal.md).
 
 Reviewed committed Awaiting-review revision `0d6a342077f676bcb9634afb703252453ab2d9e2` against Ready baseline `a6946472afd7e8e382613ee8aa0065bc7dd7729f`, with matching live record. Actual review used immutable authored module, assembled executable, configuration/doctor/dispatcher diffs, test assertions and documentation snapshots.
 
@@ -51,9 +51,9 @@ The 14 focused fixtures meaningfully cover confirmation/EOF, exact native calls,
 
 Recommendation: HOLD for the bounded retained-uv correction and committed regression evidence. No additional feature or work record is requested.
 
-### RIG-CORE-044 - Single sudo prompt
+### [RIG-CORE-044 (pruned)](https://github.com/knowledgeislands/tools-rig/blob/ea7c3b626a2c0de34fe2c1154dc594806926ee3b/docs/roadmap/RIG-CORE-044-single-sudo-prompt.md) - Single sudo prompt
 
-Record: [RIG-CORE-044](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-044-single-sudo-prompt.md).
+Record: [RIG-CORE-044 (pruned)](https://github.com/knowledgeislands/tools-rig/blob/ea7c3b626a2c0de34fe2c1154dc594806926ee3b/docs/roadmap/RIG-CORE-044-single-sudo-prompt.md).
 
 Reviewed committed Awaiting-review revision `d026335d15fec98d2cf42ff4c988215200fc37a4` against Ready baseline `2b450ee38a02ffc01eaf798fc0510ee215c995f6`; live record matched. Immutable module, apply/reconciliation/capture diffs, terminal test assertions and documentation were read without using the producer's next unfinished unit.
 
@@ -63,9 +63,9 @@ Ten committed terminal/stub fixtures assert one initial validation, noninteracti
 
 Recommendation: acceptance-ready for Kris's review at this revision; no material defect or incomplete captured step found. Native terminal timestamp, revocation, sign-in and graphical-consent policy remains authoritative, exactly as the delivered guide/specification states; inert fixtures prove Rig's lifecycle contract and do not claim to override real native authentication policies.
 
-### RIG-CORE-045 - Default applications
+### [RIG-CORE-045 (pruned)](https://github.com/knowledgeislands/tools-rig/blob/ea7c3b626a2c0de34fe2c1154dc594806926ee3b/docs/roadmap/RIG-CORE-045-default-applications.md) - Default applications
 
-Record: [RIG-CORE-045](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-045-default-applications.md).
+Record: [RIG-CORE-045 (pruned)](https://github.com/knowledgeislands/tools-rig/blob/ea7c3b626a2c0de34fe2c1154dc594806926ee3b/docs/roadmap/RIG-CORE-045-default-applications.md).
 
 Reviewed committed Awaiting-review revision `e028775d9cf7393f359b133f4ba4d88cd93353aa` against Ready baseline `82ef601351989860b2004ad202901fe8d0969763`; live record matched its committed snapshot. Actual module, declaration/configuration/orchestration/command wiring, isolation helper, tests and documentation were read through immutable git-show/diff snapshots.
 
@@ -77,13 +77,13 @@ Recommendation: acceptance-ready for Kris's review at this revision; no material
 
 ## Failed
 
-### KI-OBS-APP-041 - Required full governance gates are not clean
+### [KI-OBS-APP-041 (pruned)](https://github.com/knowledgeislands/apps-observatory.local/blob/28069f6be7639eba09b9c7037947d815e09c104d/docs/roadmap/KI-OBS-APP-041-adopt-territory-selection.md) - Required full governance gates are not clean
 
 The unchanged contribution contract requires full audit and diagnostic health before review: [CONTRIBUTING.md](/Users/krisbrown/workspaces/kit/knowledgeislands/apps-observatory/CONTRIBUTING.md:50), clean requirement at line 54. The record-only evidence commit `309aa456d745fda453f42f1b249c6ed679c4476f` now supplies actual full results at corrected source `0d0b2b9259afd65148c3f840547468bb228b0ecb`: audit exits 0 with PASS=18 WARN=2 FAIL=0 (CI-1 inline KI_VERSION and HOOK-1 missing committed pre-commit hook); diag exits 0 with HEALTHY=0, REPAIRABLE=1 and two dangling retired runtime skill projections. Timestamped command/revision receipts were inspected. The packet correctly distinguishes exit success from a clean gate. Missing evidence is resolved, but complete governance readiness is explicitly pending its recorded post-landing rerun. This reviewer makes no unrelated governance/runtime repair.
 
 The original successful-picker privacy defect is resolved at correction `0d0b2b9259afd65148c3f840547468bb228b0ecb`; it is retained as resolved evidence in [delivery-review.findings.md](/Users/krisbrown/.local/state/ki/agents/tools-burndown/delivery-review.findings.md). No unresolved product-code defect is asserted for this record.
 
-### RIG-CORE-041 - Pinned retained uv package can be selected for removal
+### [RIG-CORE-041 (pruned)](https://github.com/knowledgeislands/tools-rig/blob/ea7c3b626a2c0de34fe2c1154dc594806926ee3b/docs/roadmap/RIG-CORE-041-unwanted-software-removal.md) - Pinned retained uv package can be selected for removal
 
 At `0d6a342077f676bcb9634afb703252453ab2d9e2`, [native normalisation](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/src/rig/27-software-removal.bash:13) delegates uv to a helper that strips only extras ([provider helper](/Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/src/rig/21-provider-state.bash:637)). The retained binding comparison at removal-module line 76 therefore considers `subject` different from retained `subject==1.0`. Native uv uninstall at line 191 targets the package name. This violates the approved prohibition against removing an identity still retained anywhere in the catalogue. Existing version-selector tests cover npm/mise only.
 
@@ -91,6 +91,6 @@ Focused reproduction: immutable committed executable plus a runtime-owned catalo
 
 ## Needs Kris
 
-Coordinator to reconcile the explicitly pending KI-OBS-APP-041 governance/projection gates and route the RIG-CORE-041 retained-uv correction within its existing packet. Kris retains acceptance/closure authority after complete evidence is reviewed.
+Coordinator to reconcile the explicitly pending [KI-OBS-APP-041 (pruned)](https://github.com/knowledgeislands/apps-observatory.local/blob/28069f6be7639eba09b9c7037947d815e09c104d/docs/roadmap/KI-OBS-APP-041-adopt-territory-selection.md) governance/projection gates and route the [RIG-CORE-041 (pruned)](https://github.com/knowledgeislands/tools-rig/blob/ea7c3b626a2c0de34fe2c1154dc594806926ee3b/docs/roadmap/RIG-CORE-041-unwanted-software-removal.md) retained-uv correction within its existing packet. Kris retains acceptance/closure authority after complete evidence is reviewed.
 
-Kris may consider RIG-CORE-043, RIG-CORE-044 and RIG-CORE-045 at their exact reviewed revisions. KI-OBS-APP-041 and RIG-CORE-041 are held for the explicit concerns above. Assigned records not delivered: none. Final polling confirmed both producers DONE and all five live records equal their committed Awaiting-review snapshots. No acceptance or closure was performed.
+Kris may consider [RIG-CORE-043 (pruned)](https://github.com/knowledgeislands/tools-rig/blob/ea7c3b626a2c0de34fe2c1154dc594806926ee3b/docs/roadmap/RIG-CORE-043-self-updating-applications.md), [RIG-CORE-044 (pruned)](https://github.com/knowledgeislands/tools-rig/blob/ea7c3b626a2c0de34fe2c1154dc594806926ee3b/docs/roadmap/RIG-CORE-044-single-sudo-prompt.md) and [RIG-CORE-045 (pruned)](https://github.com/knowledgeislands/tools-rig/blob/ea7c3b626a2c0de34fe2c1154dc594806926ee3b/docs/roadmap/RIG-CORE-045-default-applications.md) at their exact reviewed revisions. [KI-OBS-APP-041 (pruned)](https://github.com/knowledgeislands/apps-observatory.local/blob/28069f6be7639eba09b9c7037947d815e09c104d/docs/roadmap/KI-OBS-APP-041-adopt-territory-selection.md) and [RIG-CORE-041 (pruned)](https://github.com/knowledgeislands/tools-rig/blob/ea7c3b626a2c0de34fe2c1154dc594806926ee3b/docs/roadmap/RIG-CORE-041-unwanted-software-removal.md) are held for the explicit concerns above. Assigned records not delivered: none. Final polling confirmed both producers DONE and all five live records equal their committed Awaiting-review snapshots. No acceptance or closure was performed.

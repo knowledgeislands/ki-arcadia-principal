@@ -1,3 +1,5 @@
+<!-- markdownlint-disable-file MD041 -->
+
 ---
 
 ---
@@ -19,10 +21,10 @@
   - [KI-TOOL-KI-CLI-139](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-139-ebu-sources-sync.md) now has a local link, and the stale "two commits behind" sentence is gone.
   - Scope now lists the four coupled harness records: [KI-HARNESS-GOV-175](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-175-delegation-run-events.md), [KI-HARNESS-GOV-195](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-195-thread-folder-closed-list.md), [KI-HARNESS-GOV-170](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-170-keep-resolution-targets-local.md) and [KI-HARNESS-GOV-189](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-189-move-thread-between-hosts.md).
   - Scope also records three answers as Kris's overnight approval applied them. OWNER-LANE: tools-burndown is the single `tools-ki` writer, and the owning threads keep priority and acceptance input. RELEASE-CONTRACT: [KI-TOOL-KI-CLI-125](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-125-ki-release-contract.md) stays on Hold with the agent-host Project and is left out of both the burn-to-zero and the `ki` release gate. MGIT-RELEASE: an `mgit` release is cut only if `mgit` changes land, so otherwise `v0.17.0` stands.
-  - **Limitation:** the frontmatter `outcome` line still says "every record closed, merged or rejected". The KI-TOOL-KI-CLI-125 exception is written under Scope, not in the outcome line itself.
+  - **Limitation:** the frontmatter `outcome` line still says "every record closed, merged or rejected". The [KI-TOOL-KI-CLI-125](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-125-ki-release-contract.md) exception is written under Scope, not in the outcome line itself.
 - **Step 2, OWNER-LANE messages (`ad0b78b`).** Both checkpoints were clean, and each got one dated line in its Messages from Master block:
-  - [ways-of-working checkpoint](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/knowledge-islands-model.ways-of-working.md): KI-TOOL-KI-CLI-123, KI-TOOL-KI-CLI-126, KI-TOOL-KI-CLI-127, [KI-TOOL-KI-CLI-130](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-130-skill-generated-surfaces.md) and [KI-TOOL-KI-CLI-131](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-131-host-absent-store-state.md).
-  - [knowledge-acquisition checkpoint](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/knowledge-islands-model.knowledge-acquisition.md): [KI-TOOL-KI-CLI-128](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-128-granola-retention-safeguards.md) and KI-TOOL-KI-CLI-139.
+  - [ways-of-working checkpoint](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/knowledge-islands-model.ways-of-working.md): [KI-TOOL-KI-CLI-123](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-123-agent-run-events.md), [KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md), [KI-TOOL-KI-CLI-127](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-127-agent-status-live-threads.md), [KI-TOOL-KI-CLI-130](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-130-skill-generated-surfaces.md) and [KI-TOOL-KI-CLI-131](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-131-host-absent-store-state.md).
+  - [knowledge-acquisition checkpoint](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/knowledge-islands-model.knowledge-acquisition.md): [KI-TOOL-KI-CLI-128](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-128-granola-retention-safeguards.md) and [KI-TOOL-KI-CLI-139](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-139-ebu-sources-sync.md).
   - Nothing else in either file was changed.
 - **Step 3, staging leftovers (`2f458df`).** Two of the three items were confirmed and removed by explicit path:
   - `-/KI-ARCADIA-MOD-001-reading-order.html` was a historical snapshot of the delivered and pruned MOD-001, moved to outbound in `ee71d10` with no live links. Its durable home is pushed `origin/main` history: [last revision](https://github.com/knowledgeislands/ki-principal/blob/6ca5269592d7ae795299e421c232faa104fb55b6/-/KI-ARCADIA-MOD-001-reading-order.html).
@@ -49,9 +51,7 @@ Outstanding - no action requested now:
 
 **Query:** Should `-/_DIGESTS/` stay as the declared session-digest scaffold?
 
-**Options:**
-a) (recommended) Keep it. It is a declared capability boundary, not a leftover, and STAGING-LEFTOVERS is closed for ki-principal.
-b) Retire it: remove `-/_DIGESTS/` and its row in `-/Outbound.md` under an Enactment record, and change the `ki-repo-kb` convention to match.
+**Options:** a) (recommended) Keep it. It is a declared capability boundary, not a leftover, and STAGING-LEFTOVERS is closed for ki-principal. b) Retire it: remove `-/_DIGESTS/` and its row in `-/Outbound.md` under an Enactment record, and change the `ki-repo-kb` convention to match.
 
 ```text
 DIGESTS-SCAFFOLD

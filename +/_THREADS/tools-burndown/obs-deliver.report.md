@@ -2,7 +2,7 @@
 
 ## Done
 
-Delivered [KI-OBS-APP-041](/Users/krisbrown/workspaces/kit/knowledgeislands/apps-observatory/docs/roadmap/KI-OBS-APP-041-adopt-territory-selection.md) through Awaiting review under tools-burndown Decisions 3 and 4 and the explicit approved OBS-DELIVER instruction. The six steps and exact six-part Review packet are complete; creation/identity/classification were preserved and immutable baseline is `8879fdfbbaaac880ba49383f0aa2e32dfdfbe142`. No acceptance, closure, new record or Arcadia checkpoint edit occurred.
+Delivered [KI-OBS-APP-041 (pruned)](https://github.com/knowledgeislands/apps-observatory.local/blob/28069f6be7639eba09b9c7037947d815e09c104d/docs/roadmap/KI-OBS-APP-041-adopt-territory-selection.md) through Awaiting review under tools-burndown Decisions 3 and 4 and the explicit approved OBS-DELIVER instruction. The six steps and exact six-part Review packet are complete; creation/identity/classification were preserved and immutable baseline is `8879fdfbbaaac880ba49383f0aa2e32dfdfbe142`. No acceptance, closure, new record or Arcadia checkpoint edit occurred.
 
 Delivered one `territory:<handle>` scope with retained estate/deepest containing-repository modes, successful complete NUL-root membership and bounded native governed identity reads, strict picker-only text discovery, explicit full-selection failures, path-free recovery reasons, operation scope/confirmation/receipt boundaries and separate legacy Agora history. All live Agora membership commands/defaults were removed. Every affected consumer, contract, fixture, site path, guide/specification and the three diagram sources/SVGs was updated. A directly requested key missing from the display catalogue remains selected; discovery failure cannot substitute estate. Local installed `ki` resolved 41 estate members, 20 for territory `ki`, seven picker entries and this containing repository, without reporting physical membership roots.
 
@@ -26,5 +26,5 @@ None outstanding. Intermediate regression mismatches and the diagram receipt con
 
 ## Needs Kris
 
-- **OBS-ACCEPT:** Recommend accepting [KI-OBS-APP-041](/Users/krisbrown/workspaces/kit/knowledgeislands/apps-observatory/docs/roadmap/KI-OBS-APP-041-adopt-territory-selection.md) after reviewing its evidence. This run leaves it Awaiting review; only Kris can approve closure.
+- **OBS-ACCEPT:** Recommend accepting [KI-OBS-APP-041 (pruned)](https://github.com/knowledgeislands/apps-observatory.local/blob/28069f6be7639eba09b9c7037947d815e09c104d/docs/roadmap/KI-OBS-APP-041-adopt-territory-selection.md) after reviewing its evidence. This run leaves it Awaiting review; only Kris can approve closure.
 - **OBS-RESTART:** A local service restart is due to the owner or next interactive session. This background delivery was explicitly forbidden to restart or operate the live service, so it still needs that separate action to serve the new delivery.

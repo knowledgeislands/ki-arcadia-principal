@@ -20,11 +20,9 @@ Nothing. I made no `ki-accept` and no release.
 
 **Context:** Verify 4 asks for the GitHub-hosted ki-principal CI run on `main` to pass the install step and reach `ki repo audit`. This run had no GitHub access, so the evidence is a faithful local replay of that step with `v0.10.5`, not the runner itself. The record names this gap under Outstanding concerns.
 
-**Query:** Is the local replay enough to accept KI-TOOL-KI-CLI-126, or should the hosted run be checked first?
+**Query:** Is the local replay enough to accept [KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md), or should the hosted run be checked first?
 
-**Options:**
-a) (recommended) Check the latest ki-principal CI run on `main` first. If it passes "Install released KI" and fails, if at all, only at `ki repo audit`, accept KI-TOOL-KI-CLI-126 through `ki-accept`.
-b) Accept KI-TOOL-KI-CLI-126 through `ki-accept` on the local replay alone.
+**Options:** a) (recommended) Check the latest ki-principal CI run on `main` first. If it passes "Install released KI" and fails, if at all, only at `ki repo audit`, accept [KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md) through `ki-accept`. b) Accept [KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md) through `ki-accept` on the local replay alone.
 
 ```text
 VERIFY4-CI: a) Check the latest ki-principal CI run on main first; if it passes "Install released KI" and fails, if at all, only at ki repo audit, accept KI-TOOL-KI-CLI-126 (/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md) through ki-accept.
@@ -41,7 +39,7 @@ VERIFY4-CI: a) Check the latest ki-principal CI run on main first; if it passes 
 ```
 
 - [at rest] nothing running or queued from this run
-- [waiting] VERIFY4-CI, then `ki-accept` on KI-TOOL-KI-CLI-126
+- [waiting] VERIFY4-CI, then `ki-accept` on [KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md)
 - [uncommitted] store-repair.report.md, left for the thread to commit
 
 Resume line: `Resume Fnd: tools-burndown under current ki-pmo and ki-delegation since 2026-10-16T00:05:00Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`

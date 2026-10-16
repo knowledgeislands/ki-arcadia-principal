@@ -19,7 +19,7 @@ I worked in the triage plan's order, keeping the agent-launcher records together
    - `ki agent send <run> "<line>"` leaves a line in a live run's inbox, which its next `status` shows once.
    - A test checks that a Codex agent the dispatcher starts carries `KI_AGENT_RUN`.
    - `decide <run> '<TAG> - <letter>'` logs a bare option letter with its wording and the report it came from.
-4. **[KI-TOOL-KI-CLI-138](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-138-warn-unknown-record-fields.md)**, commit `6aa676a0`, with the Review in `70ba0d4a`. `ki repo roadmap list` and `summary` warn on each KB Streams record field outside the shared model, naming the file and field, and `priority` adds that horizon is the only priority signal. The exit status never changes. A test pins the known fields to the Harness Streams checker. A read-only run on ki-principal showed no warnings: KI-PRINCIPAL-MOD-006 and KI-PRINCIPAL-MOD-008 no longer carry `priority`.
+4. **[KI-TOOL-KI-CLI-138](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-138-warn-unknown-record-fields.md)**, commit `6aa676a0`, with the Review in `70ba0d4a`. `ki repo roadmap list` and `summary` warn on each KB Streams record field outside the shared model, naming the file and field, and `priority` adds that horizon is the only priority signal. The exit status never changes. A test pins the known fields to the Harness Streams checker. A read-only run on ki-principal showed no warnings: [KI-PRINCIPAL-MOD-006](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-MOD-006-knowledge-acquisition-lifecycle.md) and [KI-PRINCIPAL-MOD-008](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-MOD-008-whole-philosophy-coherence-review.md) no longer carry `priority`.
 
 **Checks**, after the last code commit:
 
@@ -40,25 +40,23 @@ Nothing is running. tools-ki `main` is 22 commits ahead of the last-fetched orig
 
 ### PUSH-ORDER - push tools-ki main, including two other runs' commits
 
-**Context:** This replaces the triage-plan PUSH-ORDER, because the stack has grown. tools-ki `main` now holds 22 local commits: the triage plan's eight, this run's twelve, and two other runs' commits underneath, `f0f21922` (KI-TOOL-KI-CLI-130 to Awaiting review) and `b4043e7a` (the KI-TOOL-KI-CLI-133 fix). A fast-forward push takes all of them. Pushing accepts nothing.
+**Context:** This replaces the triage-plan PUSH-ORDER, because the stack has grown. tools-ki `main` now holds 22 local commits: the triage plan's eight, this run's twelve, and two other runs' commits underneath, `f0f21922` ([KI-TOOL-KI-CLI-130](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-130-skill-generated-surfaces.md) to Awaiting review) and `b4043e7a` (the [KI-TOOL-KI-CLI-133](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-133-retired-reports-come-back.md) fix). A fast-forward push takes all of them. Pushing accepts nothing.
 
 **Query:** May the thread push tools-ki `main` fast-forward, including `f0f21922` and `b4043e7a`?
 
 **Options:**
 
-a) (recommended) Let the thread fetch, then push tools-ki `main` fast-forward to origin at its next resting point, including the other runs' `f0f21922` and `b4043e7a`. Acceptance of every record stays a separate decision.
-b) Hold the push until the four records here, plus KI-TOOL-KI-CLI-130 and KI-TOOL-KI-CLI-133, are accepted.
+a) (recommended) Let the thread fetch, then push tools-ki `main` fast-forward to origin at its next resting point, including the other runs' `f0f21922` and `b4043e7a`. Acceptance of every record stays a separate decision. b) Hold the push until the four records here, plus [KI-TOOL-KI-CLI-130](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-130-skill-generated-surfaces.md) and [KI-TOOL-KI-CLI-133](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-133-retired-reports-come-back.md), are accepted.
 
 ### ACCEPT-WAVE - review the four delivered records
 
-**Context:** [KI-TOOL-KI-CLI-135](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-135-reused-agent-name-overwrites.md), [KI-TOOL-KI-CLI-123](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-123-agent-run-events.md), [KI-TOOL-KI-CLI-127](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-127-agent-status-live-threads.md) and [KI-TOOL-KI-CLI-138](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-138-warn-unknown-record-fields.md) are at Awaiting review, each with a Review section listing its evidence and outstanding concerns. Acceptance is yours. KI-TOOL-KI-CLI-127's Review names two live checks left for you: a real Codex launch, and a `ki agent send` to a live run.
+**Context:** [KI-TOOL-KI-CLI-135](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-135-reused-agent-name-overwrites.md), [KI-TOOL-KI-CLI-123](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-123-agent-run-events.md), [KI-TOOL-KI-CLI-127](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-127-agent-status-live-threads.md) and [KI-TOOL-KI-CLI-138](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-138-warn-unknown-record-fields.md) are at Awaiting review, each with a Review section listing its evidence and outstanding concerns. Acceptance is yours. [KI-TOOL-KI-CLI-127](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-127-agent-status-live-threads.md)'s Review names two live checks left for you: a real Codex launch, and a `ki agent send` to a live run.
 
 **Query:** How do you want to review the four records?
 
 **Options:**
 
-a) (recommended) Read each Review section and accept with `ki-accept` in delivery order: KI-TOOL-KI-CLI-135, KI-TOOL-KI-CLI-123, KI-TOOL-KI-CLI-127, KI-TOOL-KI-CLI-138. Do the Codex launch and the real `send` when it suits you, and raise any finding as a change request on KI-TOOL-KI-CLI-127.
-b) Ask for changes first, named against a record's Review section.
+a) (recommended) Read each Review section and accept with `ki-accept` in delivery order: [KI-TOOL-KI-CLI-135](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-135-reused-agent-name-overwrites.md), [KI-TOOL-KI-CLI-123](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-123-agent-run-events.md), [KI-TOOL-KI-CLI-127](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-127-agent-status-live-threads.md), [KI-TOOL-KI-CLI-138](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-138-warn-unknown-record-fields.md). Do the Codex launch and the real `send` when it suits you, and raise any finding as a change request on [KI-TOOL-KI-CLI-127](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-127-agent-status-live-threads.md). b) Ask for changes first, named against a record's Review section.
 
 ### HARNESS-FOLLOW-ONS - harness wording the delivered mechanics need
 
@@ -75,8 +73,7 @@ This run makes no harness changes and creates no records.
 
 **Options:**
 
-a) (recommended) The next ki-agentic-harness session folds all four into KI-HARNESS-GOV-175 and lands them together, quoting the launcher's protocol sentence as the events wording.
-b) tools-burndown drafts the harness change in its next authorised session, for the harness owner to review.
+a) (recommended) The next ki-agentic-harness session folds all four into [KI-HARNESS-GOV-175](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-175-delegation-run-events.md) and lands them together, quoting the launcher's protocol sentence as the events wording. b) tools-burndown drafts the harness change in its next authorised session, for the harness owner to review.
 
 ```text
 PUSH-ORDER
@@ -106,7 +103,7 @@ The next ki-agentic-harness session folds into KI-HARNESS-GOV-175 the run-events
 ╰─────────────────────────────────────────────────────────╯
 ```
 
-- [done] implement-wave: KI-TOOL-KI-CLI-135, 123, 127 and 138 at Awaiting review
+- [done] implement-wave: [KI-TOOL-KI-CLI-135](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-135-reused-agent-name-overwrites.md), 123, 127 and 138 at Awaiting review
 - [waiting] PUSH-ORDER
 - [waiting] ACCEPT-WAVE
 - [waiting] HARNESS-FOLLOW-ONS
