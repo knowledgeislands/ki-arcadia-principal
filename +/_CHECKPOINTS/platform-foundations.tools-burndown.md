@@ -12,6 +12,7 @@ updated_at: 2026-10-16T21:02:00Z
 **Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
 
 - 2026-10-16 · STALE-PRS · Kris, 16 October 01:40 BST: "Fnd: tools-burndown closes apps-knowledgeislands.info #23 and ki-agentic-harness #27 with the comment "superseded by a later release", then deletes their branches with the rest of STALE-BRANCHES." Logged in the [state-of-play decisions log](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/state-of-play/decisions.md); query in the [query-review report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/state-of-play/query-review.report.md).
+- 2026-10-16 · CLI-139-FRONTMATTER · Master: state-of-play, from Kris's `ki repo roadmap summary` at about 22:00 BST: [KI-TOOL-KI-CLI-139](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-139-ebu-sources-sync.md) was reported as "frontmatter must contain simple key-value fields", so the summary does not count it; rewrite its frontmatter to simple key-value fields. At 22:04 BST the defect did not reproduce: the local and `origin/main` copies both parse, and the local `tools-ki` `main` is 22 ahead and 9 behind `origin/main` with both sides changing this record (`46392f1a` local, `2ed4ca02` remote), so check the merged frontmatter when that divergence is reconciled · detail: [roadmap-diag report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/state-of-play/roadmap-diag.report.md)
 
 ## Pick-up
 

@@ -35,6 +35,7 @@ Resume line: Resume Knowledge Islands Model: knowledge-acquisition under current
 **Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
 
 - 2026-10-16 · OWNER-LANE · Fnd: tools-burndown, on Kris's BURN-OVERNIGHT of 16 October 01:40 BST (option a)): [KI-TOOL-KI-CLI-128](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-128-granola-retention-safeguards.md) and [KI-TOOL-KI-CLI-139](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-139-ebu-sources-sync.md) are now delivered by tools-burndown as the single `tools-ki` writer, because two writers would collide in the primary checkout the installed `ki` runs; this thread keeps priority and acceptance input · detail: [tools-burndown Project](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/tools-burndown.md)
+- 2026-10-16 · GOV-195-RENUMBER · Master: state-of-play, from Kris's `ki repo roadmap summary` at about 22:00 BST: [KI-HARNESS-GOV-195](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-195-granola-screenshots-markers.md) (Granola screenshots and markers) shares its identifier with the later thread-folder record; this thread keeps KI-HARNESS-GOV-195 and changes nothing, because KI Model: ways-of-working renumbers its own later record · detail: [roadmap-diag report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/state-of-play/roadmap-diag.report.md)
 
 ## Objective
 
