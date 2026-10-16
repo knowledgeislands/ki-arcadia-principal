@@ -4,22 +4,22 @@ thread: _state-of-play
 label: 'Master: state-of-play'
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-16T00:34:00Z
+updated_at: 2026-10-16T21:00:00Z
 ---
 
 # _state-of-play
 
 ## Pick-up - mark 2026-10-15T15:14:39Z (16:14 BST)
 
-- **Status:** rest. Running: nothing. Resumed 2026-10-15 22:09 BST from the territory hold; first wave (FRONTMATTER-STATE, ESTATE-MAP-OBSERVATORY, OLD-THREAD-FOLDERS closed part, CHURN-REMEDIES, SRC-BADGE and DESIGN-HOME dispatched to KI Model: ways-of-working) done 2026-10-16 01:29 BST. REPO-GIT-HYGIENE with STALE-BRANCHES, AUTOMATION-BRANCHES, UNPUSHED-COMMITS and STAGING-LEFTOVERS handed to Fnd: tools-burndown (`platform-foundations.tools-burndown.md`), struck here. ki-principal main 7 ahead, unpushed, awaiting PUSH-STACK.
+- **Status:** rest. Running: nothing. First wave done 2026-10-16 01:29 BST; replies of 16 October acted on by 21:58 BST: ki-principal pushed and level; hold branch already gone from GitHub; STALE-PRS to Fnd: tools-burndown, MAC-TIDY to Rig: mac-studio-setup, FW-DECLARE-NOW, CHEZMOI-RESUME and SSH-SPARE-KEY (console is the restore path, no spare key) to Rig: chezmoi, now carried by Chezmoi > misc (sol), and THREADS-CHECKINS (XDG usage) to KI Model: ways-of-working. REPO-GIT-HYGIENE and its folded queries belong to Fnd: tools-burndown. No open queries.
 - **Resume:** `Resume Master: state-of-play under current ki-pmo and ki-delegation since 2026-10-15T15:14:39Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`
 - **Next steps, in order:**
-  1. Act on Kris's replies to PUSH-STACK, HOLD-BRANCH-DROP, CHEZMOI-RESUME, STALE-PRS, MAC-TIDY, FW-DECLARE-NOW, SSH-SPARE-KEY and THREADS-CHECKINS (detail in `+/_THREADS/state-of-play/query-review.report.md` and `first-wave.report.md`).
+  1. Check the receiving threads act on their Messages from Master lines: Fnd: tools-burndown (REPO-GIT-HYGIENE, STALE-PRS), Rig: chezmoi (FW-DECLARE-NOW, CHEZMOI-RESUME, SSH-SPARE-KEY), Rig: mac-studio-setup (MAC-TIDY), KI Model: ways-of-working (CHURN-REMEDIES, SRC-BADGE, DESIGN-HOME, THREADS-CHECKINS).
   2. STASH-DROP (approved 2026-10-16 01:10 BST) at the next session with the terra checkout.
-  3. Check KI Model: ways-of-working acts on CHURN-REMEDIES, SRC-BADGE and DESIGN-HOME, and Fnd: tools-burndown on REPO-GIT-HYGIENE.
-  4. 2026-10-16: KI-PRINCIPAL-MOD-008 hold review.
+  3. KI-PRINCIPAL-MOD-008 hold review, due 2026-10-16.
+  4. At the next mark, tidy the thread folder under THREAD-TIDY.
   - Rule from Kris, 2026-10-15 22:50 BST: this thread dispatches changes to the coordination threads and does not ask whether to.
-- **Live threads (2026-10-16 01:00 BST):** KI > SoP; KI > Fnd > tools burndown; KI > Model > ways of working; KI > Model > knowledge acquisition; KI > Rig > mac studio setup; KI > mics / webcams; Acquire > intake (sol); Chezmoi > misc (sol).
+- **Live threads (2026-10-16):** KI > SoP; KI > Fnd > tools burndown; KI > Model > ways of working; KI > Model > knowledge acquisition; KI > Rig > mac studio setup; KI > mics / webcams; Acquire > intake (sol); Chezmoi > misc (sol), carrying Rig: chezmoi.
 
 ## Objective
 
