@@ -14,7 +14,7 @@
 - **rumdl:** cleared 105 findings in 25 reports. Before formatting, I put a blank line between adjacent lettered option lines (43 places). After formatting, I split two inline `**Options:** a) ... b)` paragraphs that the formatter had merged. Every file still has the same number of option lines, and they were checked again after the gate's lint-staged pass.
 - **BODY-11 in [ADR-KI-PRINCIPAL-007](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Admin/Governance/Decisions/ADR-KI-PRINCIPAL-007-territory-seats-on-hosts.md):** done on Kris's instruction. The prose `[[Known Lands]]` is now plain text. The two references now link to Known World and Known Lands on GitHub, pinned to `76c64049`, which the decision-records standard allows.
 - **Left alone:** files other sessions have in flight: `+/_THREADS/chezmoi/` (8 PMO-7), `+/_THREADS/desk-kit/` (2 PMO-7, 2 NOTE-1a and MD041), `+/_THREADS/tools-burndown/` (2 PMO-7), and every checkpoint (8 findings, see CHECKPOINT-FINDINGS). The CI-only PMO-7 failures on absolute local paths are left for PMO-CI.
-- **Push:** this report is committed after `abc4655`. Both commits, plus `ee8e280` docs(threads): add the registry-shape review report from another session beneath them, are pushed fast-forward under ROUTINE.
+- **Push:** this report is `034476d` docs(threads): report ci-findings. `origin/main` moved fast-forward from `76c64049` to `034476d` under ROUTINE. The push included two other sessions' commits: `ee8e280` docs(threads): add the registry-shape review report, beneath `abc4655`, and `4a9b04c` docs(threads): add the forms-harness run report, which landed between `abc4655` and this report.
 
 ## In Progress
 
@@ -63,7 +63,7 @@ Yes: state-of-play, knowledge-acquisition and tools-burndown each fix their own 
 
 - [at rest] nothing running or queued
 - [waiting] CHECKPOINT-FINDINGS
-- [committed] CI-FINDINGS fixes and this report, pushed with ee8e280 beneath them
+- [committed] CI-FINDINGS fixes and this report, pushed with ee8e280 and 4a9b04c from other sessions
 
 ```text
 Resume KI > Model > ways of working under current ki-pmo and ki-delegation since 2026-10-15T15:09:48Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.
