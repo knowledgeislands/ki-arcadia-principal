@@ -9,7 +9,9 @@ updated_at: 2026-10-16T20:41:00Z
 
 # platform-foundations.tools-burndown
 
-**Messages from Master: state-of-play** - none pending.
+**Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
+
+- 2026-10-16 · STALE-BRANCHES · Fnd: tools-burndown, on Kris's answer of 16 October 21:40 BST (option a)): "send every other branch with commits not on main to its territory thread" - tools-ki, as the single `tools-ki` writer: `origin/fix/granola-retention-20261014` (3 commits, [KI-TOOL-KI-CLI-128](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-128-granola-retention-safeguards.md)) and `origin/paperclip/aligned-20260926/KIS-46-ki-dev-skill-rubric-resolves-the-dev-linked-primary-checkout-never-the-cwd-worktree-si` (1 commit): decide keep, merge or delete; remote deletes ask Kris first · detail: [git-hygiene report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/tools-burndown/git-hygiene.report.md)
 
 ## Pick-up
 
