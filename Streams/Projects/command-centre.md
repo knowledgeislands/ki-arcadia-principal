@@ -7,7 +7,7 @@ initiative: knowledge-islands-model
 lifecycle: planned
 lead: Kris Brown
 target: null
-updated: 2026-10-14T23:30:00Z
+updated: 2026-10-16T00:20:00Z
 author: Written with Claude
 ---
 
@@ -35,6 +35,7 @@ This Project sits in [[knowledge-islands-model|Knowledge Islands model]].
 - **Idea: an Observatory Instrument** over the Project registry, checkpoints, decisions logs and `ki agent` runs, ranking Needs, staleness and unread agent reports - the cheapest pilot of the state-of-play view.
 - The crosswalk lives in the state-of-play `command-centre` report until this Project's design folder exists.
 - **Known World part, 2026-10-15.** On 15 October Kris placed the foundations model in [[Known World]] and gave this Project its part: the Observatory on each host, the Sessions glass scoped to that host's seated territories, the pub-sub transport routed by seat, and token windows on display. It depends on the territory seat table.
+- **Idea: the Estate Map as an Observatory view, 2026-10-16.** The Estate Map, the live artifact at `personal-principal/Admin/Operations/Live Artifacts/Estate Map.html`, is critical to the Observatory but was captured nowhere for it: only trades-revamp mentions it, and the `apps-observatory.local` docs do not. On 2026-10-11 Kris placed the map in `personal-principal` and said it "ends up apps-observatory view built *-principal repos", editable so that corrections are read back. The idea is an Observatory Instrument that projects the estate - territories, repositories, codes and their target values - from the `*-principal` repositories, with `personal-principal` keeping the map's content. Kris approved adding it here on 2026-10-16 (ESTATE-MAP-OBSERVATORY). Idea, not yet a record.
 
 ### Ideas for evaluation, 2026-10-14
 
