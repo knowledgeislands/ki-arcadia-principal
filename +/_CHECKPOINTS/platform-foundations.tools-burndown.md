@@ -2,9 +2,9 @@
 type: ki-checkpoint
 thread: platform-foundations.tools-burndown
 label: 'Fnd: tools-burndown'
-state: rest
+state: busy
 created_at: 2026-10-16T00:05:00Z
-updated_at: 2026-10-16T20:58:00Z
+updated_at: 2026-10-16T21:02:00Z
 ---
 
 # platform-foundations.tools-burndown
@@ -15,9 +15,9 @@ updated_at: 2026-10-16T20:58:00Z
 
 ## Pick-up
 
-- Status: rest. Nothing running or queued; nine owner queries open (below).
+- Status: busy. Running rebase-push, principal-audit, mgit-members; queued tools-ki-follow (after rebase-push). Open queries: TMP-HOME, DIGESTS-SCAFFOLD.
 - Resume line: `Resume Fnd: tools-burndown under current ki-pmo and ki-delegation since 2026-10-16T00:05:00Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`
-- Next steps: on PUSH-REBASE, one tools-ki run aborts the stale rebase, rebases main onto origin/main, pushes; then the deps-types-node work (DEPS-1-TYPES-NODE and the FOOTER-GRANTS note on KI-TOOL-KI-CLI-134) reruns; Kris accepts the clean records (ACCEPT-CLEAN, EVENTS-REPLAY, LIVE-CHECKS); then KI-TOOL-KI-CLI-131 and -136. Push ki-principal at each resting point. Ask Kris before any ki or mgit release or remote branch delete.
+- Next steps: after rebase-push, Kris runs ki-accept on KI-TOOL-KI-CLI-126, -130, -133, -135, -138, -123, -127; coordinator moves the tools-burndown events.seen marker past event 21; then plan and deliver KI-TOOL-KI-CLI-131 then -136; update -137's harness reference once Ways of working renumbers; bring mgit-members to Kris (any mgit release asks first). Push ki-principal at each resting point.
 
 ## Objective
 
@@ -25,7 +25,7 @@ Burn down the open roadmap work of [tools-burndown](/Users/krisbrown/workspaces/
 
 ## Current state
 
-- Running: nothing. Queued: nothing.
+- Running: rebase-push, principal-audit, mgit-members. Queued: tools-ki-follow.
 - Mark: none yet; thread opened 2026-10-16T00:05:00Z.
 - Awaiting review in tools-ki: KI-TOOL-KI-CLI-126 (Verify 4 passed), -130, -133, -135, -123, -127, -138. Adopted and planned draft: -131, -136 (wait on -126 acceptance), -137 (TMP-HOME), -134 (FOOTER-GRANTS); -140 adopted, unplanned (waits on ki-git rubric); -139 adopted under knowledge-acquisition; -125 on Hold, outside the burn-to-zero.
 - tools-ki main: 22 local commits, all this thread's runs, unpushed (PUSH-ORDER). Installed `ki` runs from this working tree, so the delivered changes are live before review.
@@ -40,14 +40,9 @@ Burn down the open roadmap work of [tools-burndown](/Users/krisbrown/workspaces/
 - 2026-10-16: thread reopened, TOOLS-PROJECT, REPO-GIT-HYGIENE and BURN-OVERNIGHT (option a for OWNER-LANE, STORE-REPAIR up to evidence, RETIRED-REPORTS, TRIAGE-ADOPT, RELEASE-CONTRACT, MGIT-RELEASE, STAGING-LEFTOVERS and the ff-only levelling): see `+/_THREADS/tools-burndown/decisions.md`.
 - 2026-10-16 21:40 BST: Kris answered ACCEPT-WAVE, PUSH-ORDER, UNPUSHED-COMMITS (push ki-principal at each resting point), STALE-BRANCHES, AUTOMATION-BRANCHES, FOOTER-GRANTS, GOV-195-COLLISION, HARNESS-FOLLOW-ONS and DEPS-1-TYPES-NODE, all a): see decisions.md.
 
+- 2026-10-16 22:01 BST: PUSH-REBASE, ACCEPT-CLEAN, EVENTS-REPLAY, LIVE-CHECKS, GOV-195-RENUMBER, TOOLS-KI-BRANCHES, CI-RED-PRINCIPAL all a); MGIT-MEMBERS requested: see decisions.md.
+
 ## Open queries
 
-- PUSH-REBASE: a run aborts the stale 08:51 BST rebase in tools-ki, rebases main onto origin/main, pushes; recommended a). Blocks DEPS-1-TYPES-NODE, the -134 note and acceptance.
-- ACCEPT-CLEAN: accept KI-TOOL-KI-CLI-126, -130, -133, -135, -138 once main is back; recommended a).
-- EVENTS-REPLAY: accept KI-TOOL-KI-CLI-123 with the one-off replay as a known limitation plus a triage record; recommended a).
-- LIVE-CHECKS: waive KI-TOOL-KI-CLI-127's two live checks on contract tests; recommended a).
-- GOV-195-RENUMBER: harness duplicate KI-HARNESS-GOV-195 now on origin; ways-of-working renumbers in an ordinary commit; recommended a).
-- TOOLS-KI-BRANCHES: tools-ki origin/fix/granola-retention-20261014 and the paperclip KIS-46 branch carry unique commits; recommended a) review in the next tools-ki run, findings only.
-- CI-RED-PRINCIPAL: ki-principal CI red on 183 audit findings; recommended a) one ki-principal run fixes them.
 - TMP-HOME: $TMPDIR/ki-agents/<run>/<name>/ for KI-TOOL-KI-CLI-137; recommended a).
 - DIGESTS-SCAFFOLD: keep -/_DIGESTS/ as the declared scaffold; recommended a).

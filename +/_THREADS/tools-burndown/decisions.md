@@ -170,3 +170,9 @@ Kris, verbatim:
 > DEPS-1-TYPES-NODE: The next tools-ki run in this thread adopts @types/node 26.6.4 with a frozen install, full test, type and audit gates, and one local chore(deps) commit.
 
 Applied as given. Standing from UNPUSHED-COMMITS: push ki-principal fast-forward at each resting point. Not answered, still open: TMP-HOME, DIGESTS-SCAFFOLD.
+
+## 2026-10-16 22:01 BST - answers to the 21:56 BST Summary, and MGIT-MEMBERS
+
+Kris answered PUSH-REBASE, ACCEPT-CLEAN, EVENTS-REPLAY, LIVE-CHECKS, GOV-195-RENUMBER, TOOLS-KI-BRANCHES and CI-RED-PRINCIPAL with option a) as written in that Summary's reply block, verbatim. Still open: TMP-HOME, DIGESTS-SCAFFOLD. ACCEPT-CLEAN, EVENTS-REPLAY and LIVE-CHECKS: Kris runs ki-accept once main is back; EVENTS-REPLAY authorises one new triage record.
+
+MGIT-MEMBERS, Kris, verbatim: "Please review and simplify external repository membership in tools-mgit. ... The current generated manifest puts the external checkout under registered.members, using its relative physical path as the key. I think it should simply be another members entry: the path identifies the member, and the entry should carry kind, type, and source like any other repository. ... Please assess and implement that model. ... Preserve the existing rule that repair does not unexpectedly clone external repositories. Handle migration from existing registered.members manifests deliberately. Verify that dotfiles is dispatched exactly once from both ~/workspaces/personal and ~/workspaces, including when its navigation symlink exists. ... Coordinate any consumer migration with that source; do not leave source and live manifests inconsistent. Do not apply unrelated chezmoi changes." (Full text in the thread transcript; the brief carries it whole.) Authorises one tools-mgit record for it. No mgit release without asking.
