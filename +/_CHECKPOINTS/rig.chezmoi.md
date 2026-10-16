@@ -4,12 +4,18 @@ thread: rig.chezmoi
 label: 'Rig: chezmoi'
 state: active
 created_at: 2026-10-08T08:40:00Z
-updated_at: 2026-10-15T15:00:00Z
+updated_at: 2026-10-16T21:01:28Z
 ---
 
 # rig.chezmoi
 
-**Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it. The first three lines below arrived during the drain for sol and have not been started.
+**Pick-up - mark 2026-10-15T14:59Z (15:59 BST)**
+
+- **Status:** rest - no delivery agent running or queued; resume-20261016 finishes with this report. The observed resume-monitor is monitoring, not source delivery.
+- **Resume:** `Resume Rig: chezmoi from its checkpoint under current ki-pmo and ki-delegation since 2026-10-15T14:59Z: re-bootstrap, read the pick-up block, take stock, put the parked queries back, restart authorised work, then banner. Do not move the mark without Kris asking.`
+- **Next steps, in order:** reconcile actual agents, read Master directions and parked queries, fetch both repositories, restart only authorised work within its verification boundary, then report and banner. Do not move the mark or tidy answered reports.
+
+**Messages from Master: state-of-play** - outstanding source directions retained until acted on; reactivation and CHEZMOI-RESUME are reconciled below.
 
 - 2026-10-16 · FW-DECLARE-NOW · Kris, 16 October 01:40 BST: "Rig: chezmoi commits the FW-DECLARE firewall declaration (dot_config/rig/conf.d/private_45-firewall.toml, profiles = ["laptop"]) as its first step; no chezmoi apply on sol until sol's Rig is 0.6.0 or later; then give me the terra steps for KI-TOOL-RIG-CORE-047." Logged in the [state-of-play decisions log](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/state-of-play/decisions.md); query in the [query-review report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/state-of-play/query-review.report.md) and the [reinstate report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/state-of-play/reinstate.report.md).
 - 2026-10-16 · CHEZMOI-RESUME · Kris pastes this checkpoint's resume line into Chezmoi > misc (sol), which carries this checkpoint from now on; first step FW-DECLARE as a source commit only, with no chezmoi apply or rig apply. Logged in the [state-of-play decisions log](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/state-of-play/decisions.md).
@@ -22,99 +28,54 @@ updated_at: 2026-10-15T15:00:00Z
 
 ## Objective
 
-Work the open KB-DOTFILES-UE records in the chezmoi source (`~/.local/share/chezmoi`, GitHub `krisb/dotfiles`), keeping the workstation accurate, tidy and observable, as the [chezmoi](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/chezmoi.md) Project under the [Rig](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/rig.md) Initiative. chezmoi does not declare `ki-checkpoint`, so this thread's checkpoint lives in the Capital.
-
-**Thread working rules** (re-read this block, `ki-pmo` and `ki-delegation` at re-bootstrap, after any compaction and after a model switch):
-
-- **Role:** coordinator for the Rig: chezmoi project thread under `ki-pmo`, run name `chezmoi`; the master thread is state-of-play. Kris, 2026-10-13: "It's imperative that you do not do the work directly and that you delegate that work to subagents so that you remain responsive." Every unit of work goes to a detached background agent through `ki agent`; an owner message never pre-empts work in flight.
-- **Launching:** `ki agent launch` for one agent; for a chain, `ki agent queue --workdir <repo> --repo /Users/krisbrown/workspaces/knowledge-islands/ki-principal [--wait-for <agent>] chezmoi <name> <prompt>`, then start `ki agent dispatch --max 1 chezmoi` detached (queueing alone does not start anything). The queue runs a copy, `<name>.queued.md`, so amend that copy as well as the brief. While Kris is short on tokens, launch mechanical work with `--model sonnet --effort low`.
-- **Turn budget:** at most five tool calls per turn. Chain agents that touch the same files, run different repositories in parallel, about three running at once.
-- **Report heading:** three `---` rules, then `# [Rig](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/rig.md) › [chezmoi](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/chezmoi.md)`, then `**<Form> at <local time> · last mark <local time>**`, then one `---`.
-- **Sections, queries and banner:** as `ki-pmo` sets: `## Done`, `## In Progress` (with `Outstanding - no action requested now`), `## Queries` with Context, Query and Options, `a) (recommended)` first; one stacked reply block; the 52-code-point block-letter REST or BUSY footer and its state list; the resume line at rest only.
-- **Cadence:** timed one-to-two-line updates while work runs, a detached 5-minute heartbeat, and the full Summary only when all dispatched work has finished or on request.
-- **Decisions:** `ki agent decide chezmoi "<words>"` in the turn a decision arrives; the log is `+/_THREADS/chezmoi/decisions.md`.
-- **Commit and tidy:** commit everything the thread does or oversees by explicit path at every report and resting point, and push. In ki-principal, commit through a private index (`GIT_INDEX_FILE`) so that other threads' staged changes are left alone; the commit gate passes now, and its rumdl step may fix files and abort, so rerun the commit. At each mark, delete answered and homed reports from the thread folder (THREAD-TIDY). A launched agent's footer writes its report to the thread folder, even when its brief names the state folder.
-- **Standing rules:** only Kris moves the mark; burn the roadmap down with no new feature records; connection-critical changes need a tested restore path; never handle secret values; `rig doctor` before and after `conf.d` changes; leave other threads' uncommitted changes alone.
+Coordinate [chezmoi](</Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/chezmoi.md>) under [Rig](</Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/rig.md>), with source authority in /Users/krisbrown/.local/share/chezmoi. Preserve source review, live apply and owner acceptance as separate gates.
 
 ## Current state
 
-Mark: 2026-10-15T14:59Z (drain mark; the previous mark was 2026-10-14T20:18Z)
+Mark: 2026-10-15T14:59Z
 
-Thread folder: +/_THREADS/chezmoi/
+ki-pmo read at c43713ce
 
-ki-pmo read at daa63224
+Re-bootstrap on 16 October 2026 reconciled the missing BUSY pick-up block before taking stock. No legacy delivery agent was found; the current resume run and its monitor are not restarted delivery. REINSTATE and CHEZMOI-RESUME have been acted on by this reconstruction. No subagents were launched. The owner overrides the ordinary mark-on-REST-resume rule: retain this mark.
 
-**State: drained (DRAIN CHECK, Kris, 2026-10-15; mark 2026-10-15T14:59Z).** Running: nothing. Queued: nothing. The dispatcher has exited. The chezmoi source is clean and level with origin. Everything this thread did is pushed. The machine-local state folder `~/.local/state/ki/agents/chezmoi/` holds only spent briefs and status files, and nothing in it is needed to resume.
+Both repositories fetched and were level with origin/main before these documentation edits. Principal had another session's modified chezmoi decisions log and untracked desk-kit/setup-note.report.md; preserve both. The handoff's unrelated ahead commit is no longer unpublished: 0180171 (ssh-console report) is reachable from origin/main. Recheck every ancestor before publishing; never publish another session's commits.
 
-Done since the mark, all pushed:
+Repository evidence in [KB-DOTFILES-UE-088](</Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-088-ssh-alias-for-sol.md>) records key-only SSH verified on both Macs, including fresh bidirectional key connections and password/interactive rejection. Terra evidence remains in [KB-DOTFILES-UE-086](</Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md>); [KB-DOTFILES-UE-094](</Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-094-audit-sol-privacy-permissions.md>) remains sol privacy, and [KB-DOTFILES-UE-095](</Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-095-guide-continuity-check.md>) remains Continuity. No records were accepted or renumbered.
 
-- **APPLY and B-START:** Kris ran `rig doctor`, `chezmoi apply`, `mise install` and `rig doctor` again on the laptop. Result: healthy, findings=0, present=165, catalogue-only=21.
-- **RIGTEST, RIG-DECLARE and PUBLIC-VIEW:**
-  - the Paperclip test expectations now match the catalogue;
-  - `rust` and the eight cargo tools are declared by executable in the Rig catalogue;
-  - `python` is in `public`.
-- **VAULT-LEFTOVERS:** the vault-apply-3 owner items are filed in the repeatable-triage idea of the [secrets-hygiene](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/secrets-hygiene.md) Project.
-- **PROJECT-REG:** state-of-play registered the [chezmoi](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/chezmoi.md) Project under Rig.
-- **BURN-ORDER, TRIAGE and BURN-START (Kris, 2026-10-15):**
-  - [KB-DOTFILES-UE-087](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-087-manage-headroom-profile-arguments.md), [KB-DOTFILES-UE-088](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-088-ssh-alias-for-sol.md), [KB-DOTFILES-UE-090](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-090-close-rig-bring-up-gaps.md) and [KB-DOTFILES-UE-091](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-091-shared-dock-tool-links.md) are adopted at Next, and [KB-DOTFILES-UE-089](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-089-ki-tool-release-channels.md) at Future, with their bodies restructured.
-  - [KB-DOTFILES-UE-082](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-082-tolerate-missing-template-tools.md) is delivered (MCP servers whose command is missing are skipped), with one review step left open for Kris.
-  - [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) A8: Adobe Photoshop and Creative Cloud are declared, and DaVinci Resolve has an App Store route. A8 is unticked pending IWORK, and Photoshop's path is not yet checked on sol.
-  - [KB-DOTFILES-UE-077](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-077-reorganise-1password-vaults-safely.md), read-only check: all nine `op://` references resolve, and the cache has no stale entries.
-  - KB-DOTFILES-UE-088: the sol SSH alias is in the source with a test, and the record carries the backup and restore path. The apply step is left for Kris.
-  - KB-DOTFILES-UE-090: gaps 4 and 5 were already fixed, and a skills-inventory test was added.
-  - KB-DOTFILES-UE-091 stopped: it needs tools-rig KI-TOOL-RIG-CORE-042.
-  - Tests: 241 pass, 0 fail. The repository audit passes.
-- **Laptop applied**, so the pending changes listed at the mark (mise pins, Rig fragments, hook registration, `op_cache` token file) are live on the laptop.
+Native MAS binding fix b8c94d2 is published in chezmoi. Kris reports it applied, the three-file apply complete, Git and chezmoi clean, and registry unchanged. Git cleanliness and published source were verified here; the prior apply, live clean status and registry comparison are owner-supplied evidence, not newly repeated live checks. The reported current Rig warning count is zero; UTM installation-source mismatch and the known Headroom false positive remain findings. Do not call that a healthy full gate. The full source gate still has the ki-self projection and Emerge json5 failures, documented in [KB-DOTFILES-UE-092](</Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-092-restore-local-skill-projection.md>) and [KB-DOTFILES-UE-093](</Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-093-restore-emerge-test-prerequisites.md>). No expensive completed check rerun.
 
-Open records:
+GitHub latest-release lookup for the configured tools-rig origin found v0.6.3 (2026-10-14T10:13:38Z). RIG-063 release discovery is resolved; rig apply remains held on both Macs until Kris lifts it explicitly.
 
-- **Now:** KB-DOTFILES-UE-086. Section B's uninstalls and section C (sol) are Kris-attended.
-- **Next:** KB-DOTFILES-UE-076, KB-DOTFILES-UE-077, KB-DOTFILES-UE-082 (review step), KB-DOTFILES-UE-087, KB-DOTFILES-UE-088 (apply step), KB-DOTFILES-UE-090 and KB-DOTFILES-UE-091.
-- **Future:** KB-DOTFILES-UE-089 and [KB-DOTFILES-UE-071](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-071-audit-macos-privacy-permissions.md).
-- **Hold:** [KB-DOTFILES-UE-027](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-027-honest-rationales-per-tool.md), [KB-DOTFILES-UE-035](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-035-install-whatsapp-spool-refresh.md) and [KB-DOTFILES-UE-084](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-084-render-zshenv-on-vega.md).
+FW-DECLARE-NOW is authorised, not an unanswered approval: private_45-firewall.toml with laptop profile remains absent. SEAT-BIND/SEAT-HOSTS are authorised together: terra home (personal, legal, humans-not-robots), sol hub (valle-armonia, sacred-inquiry, techmedix, equal-remedy), knowledge-islands both, tipped sol. Paperclip source already declares stopped/manual for laptop; this does not prove either Mac's live state or complete PAPERCLIP-OFF. Retain its declaration, plist and scripts. SSH-SPARE-KEY is answered: physical console, no spare key; guide correction remains outstanding. This documentation-only run does not change source configuration or runtime. Source delivery remains subject to its gate and connection-critical restore-path rule.
+
+Thread working rules: coordinator dispatches and reports; no background subagents in this run. Follow current ki-pmo and ki-delegation; preserve all Needs tags, explicit-path commits and other sessions' work. No secrets, installs, apply, service restart, acceptance or inferred approvals. Both Macs' rig-apply hold stands. No answered reports removed without a new owner-authorised mark.
 
 ## Decisions made
 
-The decisions log `+/_THREADS/chezmoi/decisions.md` (to Decision 77) holds every decision. Since the mark, Kris answered all nine queries of the 21:40 full summary on 2026-10-14 (all option a), and BURN-ORDER, TRIAGE and BURN-START on 2026-10-15. Consolidation into durable owners is as at the mark, plus the records and commits above. Still only here:
-
-- hold `rig apply` on both Macs until a Rig release with the RIG-CASKS fix is installed;
-- hold KB-DOTFILES-UE-071 and KB-DOTFILES-UE-027 until Kris's token reset;
-- burn the roadmap down with no new feature records.
+[Decisions log](</Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/chezmoi/decisions.md>) retains the owner's instructions. The 16 October resume permits re-bootstrap, read-only reconciliation and owned documentation only; it grants no new source decision or apply. Historical approvals remain bounded by later instructions. Burn down existing work; no new feature records. Privacy and rationale audits remain held until the owner resumes them. Rig-vault and macOS-settings proposals remain receiver-owned outstanding matters, not approval requests here.
 
 ## Files touched
 
-- chezmoi source: the Rig catalogue and `conf.d` fragments, `dot_config/mise/config.toml`, `.chezmoitemplates/mcp-servers-json`, the SSH config template for sol, the tests under `tests/`, and the KB-DOTFILES-UE records named above. All pushed.
-- ki-principal: this checkpoint, `+/_THREADS/chezmoi/` and `Streams/Projects/secrets-hygiene.md`. All pushed.
+Only this checkpoint and [resume report](</Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/chezmoi/resume-20261016.report.md>) belong to this run. The pre-existing decisions-log edit and desk-kit report remain outside its commit. Chezmoi source and the registry are unchanged by this run.
 
 ## Open questions
 
-Parked queries, each with its recommended option (bodies in the [burn-a](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/chezmoi/burn-a.report.md) and [burn-b](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/chezmoi/burn-b.report.md) reports, put to Kris in the 2026-10-15 00:34 BST Summary):
+- **IWORK:** Keynote, Numbers and Pages remain catalogue-only in the approved burn-down report. The later native MAS fix does not by itself answer this completion choice. Recommendation: Keep Keynote, Numbers and Pages catalogue-only and complete the A8 source step, retaining owner review and acceptance. See [Finish the iWork source step](</Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md>).
 
-- **IWORK:** close KB-DOTFILES-UE-086 A8 with Keynote, Numbers and Pages left catalogue-only. Recommended: yes, tick A8.
-- **STYLE-LINK:** KB-DOTFILES-UE-090 gap 3. Recommended: a read-only check that reports a dead `ki-coordinator` output-style link after apply, with no pulling during apply.
-- **DIR-PRUNE:** KB-DOTFILES-UE-090 gap 6. Recommended: record the `additionalDirectories` set the source last managed in a state file and prune entries that have left the declaration, keeping hand-added ones.
-- **REST-HOLD:** recommended to hold KB-DOTFILES-UE-091 and the rest of KB-DOTFILES-UE-090 until tools-rig KI-TOOL-RIG-CORE-042 is released and KB-DOTFILES-UE-087 is delivered.
-- **RIG-063:** tools-rig carries a `v0.6.3` tag. Recommended: a Sonnet agent checks, read-only, whether Rig 0.6.3 with the RIG-CASKS fix is released and installed; the `rig apply` hold lifts only on Kris's word.
+- **STYLE-LINK:** The output-style link depends on the harness checkout. A read-only warning and an apply-time pull were offered; neither choice is approved. Recommendation: Add a read-only dead-link check after apply, with no harness pull during apply. See [Warn about a missing output style](</Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-090-close-rig-bring-up-gaps.md>).
 
-Waiting on Master: state-of-play's messages FW-DECLARE, SEAT-BIND and PAPERCLIP-OFF (top of this checkpoint), not started.
+- **DIR-PRUNE:** The current merge unions additionalDirectories. Removal needs a declared ownership model so hand-added paths survive. Recommendation: Record the previously managed additionalDirectories set in a state file and prune only entries that left that declaration. See [Remove retired managed directory entries](</Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-090-close-rig-bring-up-gaps.md>).
 
-Held:
+- **REST-HOLD:** Dock work still waits on the Rig profile-filter implementation: its record remains ready, not delivered. The latest release is still v0.6.3. The remaining bring-up gaps also depend on the Headroom profile work or fresh planning. Recommendation: Hold the Dock work and remaining bring-up work until CORE-042 is released and the Headroom profile work is delivered. See [Keep the remaining bring-up work parked](</Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-091-shared-dock-tool-links.md>).
 
-- `rig apply` until Rig 0.6.3 is installed;
-- KB-DOTFILES-UE-071 and KB-DOTFILES-UE-027 until the token reset;
-- KB-DOTFILES-UE-084 until vega is rebuilt.
+- **RIG-063:** The configured tools-rig origin is knowledgeislands/tools-rig. Its GitHub latest release is v0.6.3, published 14 October 2026. This resolves the release lookup only. A release, installed version or zero warning count does not lift Kris's explicit hold. Recommendation: Keep rig apply held on both Macs until Kris explicitly lifts it after reviewing the fixed release and machine evidence. See [Release found; keep apply held](</Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/chezmoi/decisions.md>).
 
-Parked: PAPERCLIP-DRIFT (2026-10-14), now partly overtaken by PAPERCLIP-OFF.
+- **SOURCE-RESTART:** FW-DECLARE-NOW is answered: the laptop-profile firewall declaration is authorised and still absent. SEAT-BIND and SEAT-HOSTS are also authorised. This run permits documentation commits only, while the source full gate still has the ki-self projection and Emerge json5 failures. No install or connection-critical restore-path rehearsal is authorised here. Recommendation: Keep the existing source authorisations; arrange a bounded source delivery after the known gate blockers and tested restore path are addressed, with no apply or acceptance. See [Resume source delivery within its gates](</Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/rig.chezmoi.md>).
 
-Non-blocking handoffs, unchanged: the Rig-vault service account (rig.mac-studio-bootstrap) and the macOS-settings catalogue proposal (state-of-play).
+- **SSH-CONSOLE:** Kris has answered SSH-SPARE-KEY: both Macs are physically reachable, so no spare key is needed. Both Macs' key-only rollout is already verified, but the guide still lacks the requested console fallback. The historical before-terra ordering cannot now be satisfied retrospectively. Recommendation: Add the approved physical-console fallback to the macOS workstation guide in the next bounded documentation change, noting that both Macs are already verified; do not rerun or apply SSH. See [Record the approved console fallback](</Users/krisbrown/.local/share/chezmoi/docs/guides/user/macos-workstation.md>).
+
+Held: both-Mac rig apply until Kris lifts it; privacy and rationale audits until owner resumes; WhatsApp refresh and vega rendering remain parked. Non-blocking Rig-vault and macOS-settings proposals remain with their receiving threads.
 
 ## Next step
 
-On sol:
-
-1. Re-bootstrap from this checkpoint with the resume line, and fetch both repositories.
-2. Put the five open queries and the three Master messages to Kris.
-3. Once answered, launch Sonnet agents for STYLE-LINK and DIR-PRUNE (chained, both chezmoi), then FW-DECLARE, SEAT-BIND and PAPERCLIP-OFF as chezmoi source changes with no apply on sol until its Rig is 0.6.0 or later.
-4. Tidy the thread folder at the first mark on sol (the drain left tidying to sol): delete the apply-groups, burn-order, coord-style, ff-check, mark-tidy, pmo-adopt2, src-trio, triage, ue086-a, vault-apply-3 and vault-left reports, whose queries are answered.
-
-Resume line: `Resume Rig: chezmoi on sol from its checkpoint under current ki-pmo and ki-delegation since 2026-10-15T14:59Z: re-bootstrap, read the parked queries, take stock, restart authorised work, then banner.`
+Read [the owner report](</Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/chezmoi/resume-20261016.report.md>) and obtain the outstanding design choices. Preserve FW-DECLARE as first source change, then combine SEAT-BIND/SEAT-HOSTS and retain PAPERCLIP-OFF safeguards. Complete the console guide correction without replaying SSH. Do not install, apply, accept or tidy reports from this resume.
