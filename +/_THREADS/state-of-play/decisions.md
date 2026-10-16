@@ -1006,3 +1006,10 @@ Kris, in these words:
 - FW-DECLARE-NOW: "Rig: chezmoi commits the FW-DECLARE firewall declaration (dot_config/rig/conf.d/private_45-firewall.toml, profiles = ["laptop"]) as its first step; no chezmoi apply on sol until sol's Rig is 0.6.0 or later; then give me the terra steps for KI-TOOL-RIG-CORE-047."
 - SSH-SPARE-KEY: "Why would I need this?" - a question, still open.
 - THREADS-CHECKINS: "This is related to a wider thinking on XDG usage" - dispatched to KI Model: ways-of-working as Kris's words.
+
+## 2026-10-16 22:00 BST - CHEZMOI-RESUME done, SSH-SPARE-KEY answered
+
+Kris, in these words:
+
+- CHEZMOI-RESUME: "Done" - Kris pasted Rig: chezmoi's resume line into Chezmoi > misc (sol).
+- SSH-SPARE-KEY: "Both Macs are always within physical reach, so the console is the restore path: no spare key is needed, and Rig: chezmoi notes the console fallback in the chezmoi macOS workstation guide before key-only SSH applies on terra."
