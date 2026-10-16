@@ -723,3 +723,15 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 174 (2026-10-15T23:45:00Z)
 
 - REPORTING-FORMS - (Kris, 16 October, relayed "from another machines conversational thread") "Please make the reporting rules explicitly distinguish ordinary conversational replies, completed-work reports, and coordinator summaries. A conversational thread can do bounded work directly without becoming a coordination thread. Routine answers and acknowledgements should stay plain, without empty reporting sections or a "No reply needed" block. When a completed-work report is required, use the owner-report format. Coordinator checkpoints, marks and banners apply only to coordinating threads. Please align personal AGENTS guidance, skills and generated prompts around that distinction, including what counts as a completed unit of work."
+
+## Decision 175 (2026-10-16T21:06:00Z)
+
+- ROUTINE - (Kris, 16 October) "Take the recommended option a) for OTHER-PUSH, REPIN, GATE-PRINCIPAL, PMO-CI, CI-FINDINGS, MSG-LANDED, MSG-ORPHANS, THREADS-TRIM and TMP-CLOSE, including pushing other sessions' commits that sit beneath this thread's in ki-agentic-harness and ki-principal."
+
+## Decision 176 (2026-10-16T21:06:00Z)
+
+- REPLY-FORMS - (Kris, 16 October) "Take the recommended option a) for FORMS-AGREE, FORMS-OWNER, UNIT-TRIVIAL, NO-REPLY-BLOCK, CONV-CHECKPOINT, CONVRUN-NARROW (which answers CONVERSATIONAL-RUN), FORMS-PHASE and FORMS-RECORD; withdraw ROLE-REPORT; land the reply forms first as Phase 1a."
+
+## Decision 177 (2026-10-16T21:06:00Z)
+
+- SESSION-IDENTITY - (Kris, 16 October) "Take the recommended option a) for PLAN-AGREE, THREAD-KEY, BINDING-HOME, SUPPLY-CHANNEL, NAME-AUTHORITY, RECORD-OWNERS, ROLE-FIELD and ROLE-STYLE (mechanism only); capture the three records and start Phase 1 after REPLY-FORMS lands." Then: "Then we will look at NAMING and IDEAS-ROOTING".

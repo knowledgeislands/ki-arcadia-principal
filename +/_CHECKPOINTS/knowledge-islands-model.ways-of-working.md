@@ -4,16 +4,16 @@ thread: knowledge-islands-model.ways-of-working
 label: 'KI > Model > ways of working'
 state: active
 created_at: 2026-10-09T20:58:00Z
-updated_at: '2026-10-15T23:58:00Z'
+updated_at: '2026-10-16T21:06:00Z'
 ---
 
 # knowledge-islands-model.ways-of-working
 
 **Pick-up - mark 2026-10-15T15:09:48Z (16:09 BST)**
 
-- Status: rest. Running: nothing. Queued: nothing. Label `KI > Model > ways of working` under Kris's LABEL-CHANGE; file and run names unchanged. SESSION-IDENTITY and SESSION-ROLE planned in `+/_THREADS/ways-of-working/session-identity.report.md`; REPORTING-FORMS drafted in `+/_THREADS/ways-of-working/reporting-forms.report.md`; nothing implemented.
+- Status: busy. Running and queued: harness-routine, forms-harness, identity-phase1 (ki-agentic-harness chain); principal-gate, ci-findings, cli-repin, messenger-relay, forms-rest (ki-principal chain), under Kris's ROUTINE, REPLY-FORMS and SESSION-IDENTITY answers of 16 October. Label `KI > Model > ways of working`.
 - Resume line: `Resume KI > Model > ways of working under current ki-pmo and ki-delegation since 2026-10-15T15:09:48Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`
-- Next steps: Kris answers the five grouped questions of the 16 October 00:58 BST Summary (ROUTINE, REPLY-FORMS, SESSION-IDENTITY, NAMING, IDEAS-ROOTING), which cover all 35 open queries; ROUTINE carries OTHER-PUSH (ki-agentic-harness `main` holds four unpushed commits, `628762e7` from another session beneath this thread's three). Then dispatch what the answers authorise.
+- Next steps: let both chains finish; then put NAMING and IDEAS-ROOTING to Kris; CHEZMOI-APPLY waits on Kris's `chezmoi diff` review after forms-rest.
 
 **Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
 
