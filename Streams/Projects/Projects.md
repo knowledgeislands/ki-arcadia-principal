@@ -1,6 +1,6 @@
 ---
 note_type: streams/index
-updated: 2026-10-14T22:50:00Z
+updated: 2026-10-16T00:00:47Z
 author: Written with Claude
 ---
 
@@ -119,6 +119,12 @@ Links point upwards only: a work record names its Project, and a Project names i
 ## Specifications
 
 [[specifications]] brings `ki-specifications` to a consistent dormant pre-v1 state and records dispositions for the transferred KBEP and KBIP protocols.
+
+---
+
+## Tools burndown
+
+[[tools-burndown]] burns the `tools-ki`, `tools-mgit` and `tools-git-almanac` roadmaps and the CLI-shaped `ki-agentic-harness` records down to zero, ending with the `ki` and `mgit` releases. It sits under [[platform-foundations|Platform foundations]].
 
 ---
 
