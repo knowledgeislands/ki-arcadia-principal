@@ -4,21 +4,22 @@ thread: _state-of-play
 label: 'Master: state-of-play'
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-15T21:25:00Z
+updated_at: 2026-10-16T00:34:00Z
 ---
 
 # _state-of-play
 
 ## Pick-up - mark 2026-10-15T15:14:39Z (16:14 BST)
 
-- **Status:** rest. Resumed on sol on 2026-10-15 at 22:09 BST from the territory hold. Reinstated with this thread: KI Model: ways-of-working, Rig: chezmoi and Acquire: acquire-intake (the last two this time only); Rig: mac-studio-bootstrap carries on; every other thread stays held. The frontmatter keeps `state: drained` until FRONTMATTER-STATE is answered. Running: nothing.
+- **Status:** rest. Running: nothing. Resumed 2026-10-15 22:09 BST from the territory hold; first wave (FRONTMATTER-STATE, ESTATE-MAP-OBSERVATORY, OLD-THREAD-FOLDERS closed part, CHURN-REMEDIES, SRC-BADGE and DESIGN-HOME dispatched to KI Model: ways-of-working) done 2026-10-16 01:29 BST. REPO-GIT-HYGIENE with STALE-BRANCHES, AUTOMATION-BRANCHES, UNPUSHED-COMMITS and STAGING-LEFTOVERS handed to Fnd: tools-burndown (`platform-foundations.tools-burndown.md`), struck here. ki-principal main 7 ahead, unpushed, awaiting PUSH-STACK.
 - **Resume:** `Resume Master: state-of-play under current ki-pmo and ki-delegation since 2026-10-15T15:14:39Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`
 - **Next steps, in order:**
-  1. Act on Kris's replies to the re-bootstrap report of 22:25 BST: FW-DECLARE-NOW, SSH-SPARE-KEY, ESTATE-MAP-OBSERVATORY, STASH-DROP, THREADS-CHECKINS, CHURN-REMEDIES, OLD-THREAD-FOLDERS, STALE-BRANCHES (AUTOMATION-BRANCHES folded in), UNPUSHED-COMMITS, STAGING-LEFTOVERS, SRC-BADGE, FRONTMATTER-STATE and DESIGN-HOME. The detail is in the hold-branches, digest-churn and restart-model reports in the thread folder.
-  2. Check that the reinstated threads act on their REINSTATE lines. Live at 22:55 BST: KI > SoP, KI > Model > ways of working, KI > Model > knowledge acquisition (opened by Kris), KI > Rig > mac studio setup (Project being renamed), KI > mics / webcams (conversational, took over desk-kit), Acquire > intake (sol), Chezmoi > misc (sol). THREAD-NAMES (naming convention, decisions log 22:45 BST) was pasted to ways-of-working at 22:55 BST for adoption into ki-pmo.
-  - Rule from Kris, 22:50 BST: this thread dispatches changes to the coordination threads and does not ask whether to.
-  3. 2026-10-16: the KI-PRINCIPAL-MOD-008 hold review.
-- **Settled since the hold:** the hold branches are folded or discarded; only ki-principal `hold/2026-10-15/working-state` is kept, until Rig: mac-studio-bootstrap settles `+/_THREADS/mac-studio-bootstrap/chezmoi-fix.report.md`. The restart model is a design note in the ways-of-working Project's `design/` folder and handed over; HOST-ROLES is bound in the Host network Project note, and SEAT-HOSTS was sent to Rig: chezmoi.
+  1. Act on Kris's replies to PUSH-STACK, HOLD-BRANCH-DROP, CHEZMOI-RESUME, STALE-PRS, MAC-TIDY, FW-DECLARE-NOW, SSH-SPARE-KEY and THREADS-CHECKINS (detail in `+/_THREADS/state-of-play/query-review.report.md` and `first-wave.report.md`).
+  2. STASH-DROP (approved 2026-10-16 01:10 BST) at the next session with the terra checkout.
+  3. Check KI Model: ways-of-working acts on CHURN-REMEDIES, SRC-BADGE and DESIGN-HOME, and Fnd: tools-burndown on REPO-GIT-HYGIENE.
+  4. 2026-10-16: KI-PRINCIPAL-MOD-008 hold review.
+  - Rule from Kris, 2026-10-15 22:50 BST: this thread dispatches changes to the coordination threads and does not ask whether to.
+- **Live threads (2026-10-16 01:00 BST):** KI > SoP; KI > Fnd > tools burndown; KI > Model > ways of working; KI > Model > knowledge acquisition; KI > Rig > mac studio setup; KI > mics / webcams; Acquire > intake (sol); Chezmoi > misc (sol).
 
 ## Objective
 
