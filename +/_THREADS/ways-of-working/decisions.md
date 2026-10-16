@@ -642,7 +642,7 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 
 ## Decision 154 (2026-10-15T21:31:44Z)
 
-- THREADS-TMP-HOME - (Kris, 15 October) Temporary output goes in <primary checkout>/tmp/<run>/<name>/ in the repository the agent works in, ignored and deleted when the run closes or they are superflous to requirements; machine-only scratch may stay in the state folder as <name>.work/.  Improve the ways-of-working via whichever skill to ensure that the threads are regularly trimmed back as needed.
+- THREADS-TMP-HOME - (Kris, 15 October) Temporary output goes in <primary checkout>/tmp/<run>/<name>/ in the repository the agent works in, ignored and deleted when the run closes or they are superflous to requirements; machine-only scratch may stay in the state folder as <name>.work/. Improve the ways-of-working via whichever skill to ensure that the threads are regularly trimmed back as needed.
 
 ## Decision 155 (2026-10-15T21:31:44Z)
 
@@ -735,3 +735,7 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 177 (2026-10-16T21:06:00Z)
 
 - SESSION-IDENTITY - (Kris, 16 October) "Take the recommended option a) for PLAN-AGREE, THREAD-KEY, BINDING-HOME, SUPPLY-CHANNEL, NAME-AUTHORITY, RECORD-OWNERS, ROLE-FIELD and ROLE-STYLE (mechanism only); capture the three records and start Phase 1 after REPLY-FORMS lands." Then: "Then we will look at NAMING and IDEAS-ROOTING".
+
+## Decision 178 (2026-10-16T21:14:00Z)
+
+- REGISTRY-SHAPE and STATE-HOMES - (Kris, 16 October, spoken) "whether or not we put projects under their initiatives. So there's a more natural structure. I mean, theoretically projects could span multiple initiatives, but I'm not sure that makes sense. And it's certainly not in our model anyway, so yeah, initiatives are effectively groups of projects, but they're a little bit more than that, right? And so, I think if you do that, you don't need so much underneath the initiative details, but also the initiative names become folders and I think also the projects become folders. You don't need projects as a label under the initiatives heading, you just have those as the next level down. We tended to get quite a lot of design sections. I'm not sure what they're ready for. That's another thing that's bugging me and quite long names for initiatives. So I think you've got Knowledge Islands Model, for example, but that can just be model or philosophy or something like that, right? And platform foundations can just be foundations. And the thing that's really bugging me the most is the use of this `+/_THREADS` and how it all sits with XDG and what is durable state vs temporary "caache"". Taken as two read-only reviews with proposals; NAMING's INITIATIVE-NAMES is re-posed with REGISTRY-SHAPE.
