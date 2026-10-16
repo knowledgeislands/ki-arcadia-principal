@@ -4,7 +4,7 @@ thread: rig.mac-studio-setup
 label: 'Rig: mac-studio-setup'
 state: active
 created_at: 2026-10-08T08:45:00Z
-updated_at: 2026-10-15T23:06:00Z
+updated_at: 2026-10-16T20:37:00Z
 ---
 
 # rig.mac-studio-setup
@@ -26,7 +26,7 @@ Mark: 2026-10-14T16:47Z (previous marks 2026-10-14T14:51Z, 14:48Z and 14:35Z, th
 
 ki-pmo read at dfa52a12.
 
-**00:07 BST (2026-10-16).** At rest. Kris answered all 18 queries at 23:50 BST; decisions logged. Done: chezmoi UE-086 C5 and C6 ticked and C8 reworded (chezmoi 120069f, local); KI-TOOL-RIG-CORE-059 accepted (tools-rig 9b4de28); tools-rig and apps-observatory.local pushed (tools-ki already pushed by another session); site Actual removed, Spark Desktop line, rebased, pushed and live; KI-HARNESS-GOV-189 link fixed (harness 628762e7, local). chezmoi not pushed: another session stacked 554c2cd and 1c43872 above bd04386 (PUSH-STACK). Open: PUSH-STACK, LINK-TEXT, HARNESS-PUSH, LAUNCHER-FOOTER. Held for Kris: key-only SSH, adobe-remove.sh, UE-086 steps 0-12, UTM swap, Observatory restart, Headroom request, desk kit; terra Adobe, then Rig apply, HOSTKEY-APPLY and key-only (unblocked). ADOBE-DATA after both Macs run the script.
+**21:38 BST (2026-10-16).** At rest. Done since 00:07: chezmoi already pushed by another session (nothing to push); harness pushed (patch-identical replays of the approved commits), KI-HARNESS-GOV-189 link text renamed locally (3b68a49b, unpushed); site external tool links open in a new tab (apps-rig.midnight.ninja 90b7509, pushed, live). Launcher handoff not written: tools-ki checkout is mid-rebase from another session, and KI-TOOL-KI-CLI-134 already tracks the fault. Open: FOOTER-RECORD, FOOTER-REBASE, GOV189-REST, GOV189-PUSH. Held for Kris: key-only SSH, adobe-remove.sh, UE-086 steps 0-12, UTM swap, Observatory restart, Headroom request, desk kit; second Mac: Adobe, Rig upgrade and apply, HOSTKEY-APPLY, key-only. ADOBE-DATA after both Macs run the script.
 
 **Delivered on `sol`.** chezmoi applied, Rig declarations reconciled, the released `ki` passing `ki doctor`, and agents reach `sol` over Tailscale and SSH with GitHub through agent forwarding. The restart test passed on 2026-10-14 (macOS 27.0.1; Tailscale reconnected on its own after the FileVault unlock). 56 repositories are cloned into `~/workspaces/<group>/<repo>` across the eight territories and 51 are in the `ki` registry (terra's extra entry is settled by TERRA-READ). The Observatory runs and `rig doctor` is clean; its doctor gap is [KI-TOOL-RIG-CORE-052](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-052-doctor-service-launch-prerequisites.md) (triage). The old `kit`, `hnr` and `knowledge-wayfinder` trees are in `~/workspaces/_old` (undo by moving them back); dead skill links, the old mise `claude` shim and 82 old kit, hnr and kis paths in Claude settings are cleared; `ki-pmo` and `ki-pmo-design` are linked; six stale OneDrive source entries are removed; the domt4 autoupdate agent and tap are gone. GitHub Desktop lists all 56 territory checkouts and its backup is deleted. Headroom runs on `sol` by hand (`headroom install apply`, port 8787) and Claude Code works through it; the declaration gap is in the chezmoi triage record captured for SOL-RECORDS.
 
