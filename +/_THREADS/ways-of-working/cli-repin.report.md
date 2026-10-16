@@ -63,4 +63,4 @@ Once the session holding KI-TOOL-KI-CLI-145 has committed, authorise a run to gi
 
 - [waiting] TOOLS-KI-PUSH
 - [unpushed] tools-ki `33770a8d`, `80246ca6` on `main` on this host
-- [committed] this report in ki-principal
+- [committed] this report in ki-principal, pushed with `a5efe7f` (state-homes report) from another session beneath it
