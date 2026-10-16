@@ -34,6 +34,8 @@ Resume line: Resume Knowledge Islands Model: knowledge-acquisition under current
 
 **Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
 
+- 2026-10-16 · OWNER-LANE · Fnd: tools-burndown, on Kris's BURN-OVERNIGHT of 16 October 01:40 BST (option a)): [KI-TOOL-KI-CLI-128](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-128-granola-retention-safeguards.md) and [KI-TOOL-KI-CLI-139](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-139-ebu-sources-sync.md) are now delivered by tools-burndown as the single `tools-ki` writer, because two writers would collide in the primary checkout the installed `ki` runs; this thread keeps priority and acceptance input · detail: [tools-burndown Project](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/tools-burndown.md)
+
 ## Objective
 
 The provider-neutral acquisition lifecycle is documented in one Pillars note, AI sessions are acquired into owning repositories with verified retirement of the source, and the browser-runtime and WhatsApp spool questions are settled ([knowledge-acquisition](../../Streams/Projects/knowledge-acquisition.md), Initiative [knowledge-islands-model](../../Streams/Initiatives/knowledge-islands-model/knowledge-islands-model.md)).
