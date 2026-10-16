@@ -22,7 +22,7 @@ Nothing is running in this run. harness-land is queued in this thread, and the d
 
 Outstanding - no action requested now:
 
-- **Another session's commit:** while I was pushing, another session committed `628762e7` "docs(roadmap): point [KI-HARNESS-GOV-189](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-189-move-thread-between-hosts.md) at the Mac Studio setup Project" on local `main`. It touches only [KI-HARNESS-GOV-189](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-189-move-thread-between-hosts.md). It is one commit ahead of `origin/main`, and I did not push it. My first rebase pull ran into that session's uncommitted edit and did nothing. The second found the tree clean and up to date.
+- **Another session's commit:** while I was pushing, another session committed `628762e7` docs(roadmap): point [KI-HARNESS-GOV-189](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-189-move-thread-between-hosts.md) at the Mac Studio setup Project on local `main`. It touches only [KI-HARNESS-GOV-189](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-189-move-thread-between-hosts.md). It is one commit ahead of `origin/main`, and I did not push it. My first rebase pull ran into that session's uncommitted edit and did nothing. The second found the tree clean and up to date.
 - **Other dirty files:** none. The harness working tree is clean, `docs/diagrams/` included.
 - **This report:** it is written but not committed in ki-principal, because committing the thread folder is the thread's job.
 
@@ -36,7 +36,9 @@ Outstanding - no action requested now:
 
 **Options:**
 
-a) (recommended) Review `628762e7` and push it fast-forward to `origin/main` yourself, or tell the session that made it to push it. b) Leave it unpushed until the thread that edits [KI-HARNESS-GOV-189](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-189-move-thread-between-hosts.md) next commits and pushes.
+a) (recommended) Review `628762e7` and push it fast-forward to `origin/main` yourself, or tell the session that made it to push it.
+
+b) Leave it unpushed until the thread that edits [KI-HARNESS-GOV-189](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-189-move-thread-between-hosts.md) next commits and pushes.
 
 ```text
 OTHER-PUSH

@@ -29,7 +29,7 @@
   - **`ki-checkpoint`, 10 failures:**
     - LIFECYCLE-1, 8: "state must be active at the checkpoint location". These are in `_state-of-play`, `knowledge-islands-model.command-centre`, `knowledge-islands-model.observatory`, `platform-foundations.baseline-rollout`, `platform-foundations.estate-factorisation`, `registry-removal`, `rig.chezmoi` and `techne.agent-host`.
     - RECORD-2, 2: the heading sequence in `_state-of-play` and `knowledge-islands-model.knowledge-acquisition`.
-  - **`ki-decision-records` BODY-11, 3 failures:** [[ADR-KI-PRINCIPAL-007](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Admin/Governance/Decisions/ADR-KI-PRINCIPAL-007-territory-seats-on-hosts.md)](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Admin/Governance/Decisions/ADR-KI-PRINCIPAL-007-territory-seats-on-hosts.md) links to `[[Known Lands]]` and `[[Known World]]`.
+  - **`ki-decision-records` BODY-11, 3 failures:** [ADR-KI-PRINCIPAL-007](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Admin/Governance/Decisions/ADR-KI-PRINCIPAL-007-territory-seats-on-hosts.md) links to `[[Known Lands]]` and `[[Known World]]`.
   - **`ki-repo-kb` NOTE-1a, 1 failure:** malformed frontmatter fences in several thread reports, including `state-of-play/hold-branches`, `state-of-play/reinstate` and four `mac-studio-setup` reports.
   - **`ki-authoring` MD-mech, 1 failure:** rumdl line-length, list-spacing and first-heading findings in thread reports.
 - **[KI-TOOL-KI-CLI-131](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-131-host-absent-store-state.md) stays at `triage`, untouched.** No checkpoint, `Admin`, `Pillars` or `Resources` file was touched.
@@ -51,7 +51,13 @@ Outstanding - no action requested now:
 
 **Query:** How should PMO-7 treat absolute local paths when the audit runs where those paths cannot exist?
 
-**Options:** a) (recommended) capture a ki-agentic-harness triage record to make PMO-7 check only link shape for absolute paths outside the audited checkout, and keep the existence check where the path is inside it b) lower PMO-7 back to warning level in the Harness until the design is settled c) leave PMO-7 as it is and accept a failing ki-principal CI audit for now
+**Options:**
+
+a) (recommended) capture a ki-agentic-harness triage record to make PMO-7 check only link shape for absolute paths outside the audited checkout, and keep the existence check where the path is inside it
+
+b) lower PMO-7 back to warning level in the Harness until the design is settled
+
+c) leave PMO-7 as it is and accept a failing ki-principal CI audit for now
 
 ### CI-FINDINGS - clear ki-principal's remaining audit findings
 
@@ -60,13 +66,19 @@ Outstanding - no action requested now:
 - 63 PMO-7 "unlinked" identifiers in older thread reports;
 - NOTE-1a frontmatter fences in thread reports;
 - MD-mech rumdl findings;
-- 3 BODY-11 links in [[ADR-KI-PRINCIPAL-007](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Admin/Governance/Decisions/ADR-KI-PRINCIPAL-007-territory-seats-on-hosts.md)](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Admin/Governance/Decisions/ADR-KI-PRINCIPAL-007-territory-seats-on-hosts.md).
+- 3 BODY-11 links in [ADR-KI-PRINCIPAL-007](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Admin/Governance/Decisions/ADR-KI-PRINCIPAL-007-territory-seats-on-hosts.md).
 
 The 10 `ki-checkpoint` findings are in checkpoints, which runs may not edit without the owner.
 
 **Query:** Should a run conform these findings in ki-principal?
 
-**Options:** a) (recommended) dispatch one ki-principal run to fix the PMO-7 unlinked identifiers, NOTE-1a, MD-mech and BODY-11 findings by explicit path, run `ki repo audit --repo .`, commit and push fast-forward, and report the checkpoint findings for Kris to decide separately b) include the 10 checkpoint findings in the same run c) leave the findings for the next state-of-play mark
+**Options:**
+
+a) (recommended) dispatch one ki-principal run to fix the PMO-7 unlinked identifiers, NOTE-1a, MD-mech and BODY-11 findings by explicit path, run `ki repo audit --repo .`, commit and push fast-forward, and report the checkpoint findings for Kris to decide separately
+
+b) include the 10 checkpoint findings in the same run
+
+c) leave the findings for the next state-of-play mark
 
 ```text
 PMO-CI

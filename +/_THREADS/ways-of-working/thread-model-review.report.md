@@ -16,7 +16,7 @@
 - **Settled (decided, not yet landed):** THREADS-CONTENT: "A thread folder holds a closed list, decisions.md and <name>.report.md only; briefs live in the state folder, work products in their owning home, temporary output in the temporary location." THREADS-TMP-HOME: "Temporary output goes in <primary checkout>/tmp/<run>/<name>/ in the repository the agent works in, ignored and deleted when the run closes or they are superflous to requirements; machine-only scratch may stay in the state folder as <name>.work/." THREADS-CLEAR: "Each owning thread clears its own folder at its next mark". The tools-ki half of THREADS-TELL is captured as [KI-TOOL-KI-CLI-137](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-137-agent-run-tmp-home.md). The managed `tmp/` ignore already applies at any depth.
 - **Landed:** the ki-delegation run packet lists only `decisions.md` and `<name>.report.md` as knowledge files, so the closed list is implied rather than stated as closed. Neither ki-delegation nor ki-pmo mentions `tmp/`. The only trimming rule is the ki-pmo tidy at each mark.
 - **Conflicts:**
-  - The harness half of THREADS-TELL has not landed and has no record yet. `threads-records` drafted it as [[KI-HARNESS-GOV-195](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-195-thread-folder-closed-list.md)](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-195-thread-folder-closed-list.md) under the harness `tmp/`, uncaptured, so the closed list, the run-prompt footer line and the rubric item exist only as decisions.
+  - The harness half of THREADS-TELL has not landed and has no record yet. `threads-records` drafted it as [KI-HARNESS-GOV-195](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-195-thread-folder-closed-list.md) under the harness `tmp/`, uncaptured, so the closed list, the run-prompt footer line and the rubric item exist only as decisions.
   - Three thread folders already break the closed list. [tools-burndown](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/tools-burndown/) holds six evidence, manifest and brief files. [mac-studio-setup](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/mac-studio-setup/) holds eight: PNG and SVG favicons, a shell script and two dry-run logs. [knowledge-acquisition](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/knowledge-acquisition/) holds `run-decisions.md`. THREADS-CLEAR covers these at each thread's next mark.
   - Kris asked for more than the mark tidy: "Improve the ways-of-working via whichever skill to ensure that the threads are regularly trimmed back as needed." A thread trims only when Kris strikes its mark, and this thread's folder now holds 24 reports. No skill yet carries a regular trigger (THREADS-TRIM).
   - THREADS-TMP-HOME says `tmp/` is deleted when the run closes. A run's draft that has not landed yet can sit only in `tmp/`: the `threads-records` harness drafts are there now. [KI-TOOL-KI-CLI-137](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-137-agent-run-tmp-home.md) leaves open "whether close removes the folder unconditionally" (TMP-CLOSE).
@@ -106,7 +106,9 @@ Outstanding - no action requested now:
 
 **Options:**
 
-a) (recommended) Authorise `bun install` and the `core.hooksPath` binding in ki-principal on sol alongside SOL-GATE, then commit this report with the thread folder through the gate by explicit path and push fast-forward only. b) Commit this report now without the gate, by explicit path, and run `ki repo audit` on ki-principal by hand afterwards.
+a) (recommended) Authorise `bun install` and the `core.hooksPath` binding in ki-principal on sol alongside SOL-GATE, then commit this report with the thread folder through the gate by explicit path and push fast-forward only.
+
+b) Commit this report now without the gate, by explicit path, and run `ki repo audit` on ki-principal by hand afterwards.
 
 ### THREADS-TRIM - make thread-folder trimming regular, not only at a mark
 
@@ -116,7 +118,11 @@ a) (recommended) Authorise `bun install` and the `core.hooksPath` binding in ki-
 
 **Options:**
 
-a) (recommended) Fold the trigger into the THREADS-TELL harness record. The ki-pmo rubric item flags any thread folder holding a file outside the closed list, or holding answered and homed reports. The thread then tidies at every resting point, with the same explicit-path `git rm` and no record. The state-of-play thread names flagged folders in their checkpoints' messages blocks at its own mark. b) Keep the tidy at the mark only, and add the state-of-play flag alone. c) Tidy at every report, as well as at each resting point.
+a) (recommended) Fold the trigger into the THREADS-TELL harness record. The ki-pmo rubric item flags any thread folder holding a file outside the closed list, or holding answered and homed reports. The thread then tidies at every resting point, with the same explicit-path `git rm` and no record. The state-of-play thread names flagged folders in their checkpoints' messages blocks at its own mark.
+
+b) Keep the tidy at the mark only, and add the state-of-play flag alone.
+
+c) Tidy at every report, as well as at each resting point.
 
 ### TMP-CLOSE - what `ki agent close` does with a non-empty tmp folder
 
@@ -126,7 +132,9 @@ a) (recommended) Fold the trigger into the THREADS-TELL harness record. The ki-p
 
 **Options:**
 
-a) (recommended) Close lists each non-empty `tmp/<run>/<name>/` and keeps it under the same strict gate, with `--reconciled` as the owner's waiver. A draft that must survive is homed first, as an uncommitted change named in the report or committed in its owning repository. Record this as [KI-TOOL-KI-CLI-137](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-137-agent-run-tmp-home.md)'s planning answer. b) Close removes every tmp folder unconditionally, and a run never parks a needed draft in `tmp/`.
+a) (recommended) Close lists each non-empty `tmp/<run>/<name>/` and keeps it under the same strict gate, with `--reconciled` as the owner's waiver. A draft that must survive is homed first, as an uncommitted change named in the report or committed in its owning repository. Record this as [KI-TOOL-KI-CLI-137](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-137-agent-run-tmp-home.md)'s planning answer.
+
+b) Close removes every tmp folder unconditionally, and a run never parks a needed draft in `tmp/`.
 
 ### CONVERSATIONAL-RUN - may a conversational thread own a run, a thread folder and HOLD
 
@@ -136,7 +144,11 @@ a) (recommended) Close lists each non-empty `tmp/<run>/<name>/` and keeps it und
 
 **Options:**
 
-a) (recommended) It takes a run and a thread folder named for its checkpoint, under the same closed list and commit rule, and deletes the folder at its DONE. Its HOLD uses the ki-pmo hold report and HOLD frame with the conversational resume line from the restart-model table. It never gets REST or BUSY. b) A conversational thread may launch agents but keeps no thread folder. Its agents report into the state folder only, and anything lasting goes to a record or a routed learning. c) A thread that launches agents becomes a coordination thread and needs a Project.
+a) (recommended) It takes a run and a thread folder named for its checkpoint, under the same closed list and commit rule, and deletes the folder at its DONE. Its HOLD uses the ki-pmo hold report and HOLD frame with the conversational resume line from the restart-model table. It never gets REST or BUSY.
+
+b) A conversational thread may launch agents but keeps no thread folder. Its agents report into the state folder only, and anything lasting goes to a record or a routed learning.
+
+c) A thread that launches agents becomes a coordination thread and needs a Project.
 
 ### NAME-HOST - the host suffix in a label and the no-host resume line
 
@@ -146,7 +158,9 @@ a) (recommended) It takes a run and a thread folder named for its checkpoint, un
 
 **Options:**
 
-a) (recommended) Yes. The suffix marks the thread as machine-bound, not where work comes back up, so a machine-bound thread's label and resume line keep it. Rule 3 then reads "no thread's state names a host other than in a machine-bound label". b) No. The resume line and pick-up block use the label without its suffix, which then appears only in the runtime's session name.
+a) (recommended) Yes. The suffix marks the thread as machine-bound, not where work comes back up, so a machine-bound thread's label and resume line keep it. Rule 3 then reads "no thread's state names a host other than in a machine-bound label".
+
+b) No. The resume line and pick-up block use the label without its suffix, which then appears only in the runtime's session name.
 
 ### NAME-ROOT - what the first segment of a thread name is
 
@@ -156,7 +170,9 @@ a) (recommended) Yes. The suffix marks the thread as machine-bound, not where wo
 
 **Options:**
 
-a) (recommended) The form is `<root> > <Initiative short name> > <Project in words>`, with a `(<host>)` suffix only for a machine-bound thread. The root is the territory's short name (`KI`) for a thread on a registry Project. For a thread outside any registry it is the system it works on, such as `Acquire` or `Chezmoi`. The Initiative is left out where none fits, and the state-of-play thread is `<root> > SoP`. The rubric reads spaces in the last segment as hyphens when matching the Project slug. b) Every thread roots in a territory, so `Chezmoi > misc (sol)` becomes `Personal > Chezmoi > misc (sol)` under TERRITORY-RULE.
+a) (recommended) The form is `<root> > <Initiative short name> > <Project in words>`, with a `(<host>)` suffix only for a machine-bound thread. The root is the territory's short name (`KI`) for a thread on a registry Project. For a thread outside any registry it is the system it works on, such as `Acquire` or `Chezmoi`. The Initiative is left out where none fits, and the state-of-play thread is `<root> > SoP`. The rubric reads spaces in the last segment as hyphens when matching the Project slug.
+
+b) Every thread roots in a territory, so `Chezmoi > misc (sol)` becomes `Personal > Chezmoi > misc (sol)` under TERRITORY-RULE.
 
 ### FOOTER-PROJECTS - what "projects" means in the footer
 
@@ -166,7 +182,11 @@ a) (recommended) The form is `<root> > <Initiative short name> > <Project in wor
 
 **Options:**
 
-a) (recommended) Only the state-of-play footer does. Its list gains one `- [thread] <label> - rest | busy | hold` item per coordination thread, read from each pick-up block. Coordination footers stay as they are, because the heading names the Project. b) Every footer's top border names its Project after the form word. c) No change, with the Project shown in the heading only.
+a) (recommended) Only the state-of-play footer does. Its list gains one `- [thread] <label> - rest | busy | hold` item per coordination thread, read from each pick-up block. Coordination footers stay as they are, because the heading names the Project.
+
+b) Every footer's top border names its Project after the form word.
+
+c) No change, with the Project shown in the heading only.
 
 ### INITIATIVE-NAMES - one short name per Initiative, and titles matching H1s
 
@@ -176,7 +196,11 @@ a) (recommended) Only the state-of-play footer does. Its list gains one `- [thre
 
 **Options:**
 
-a) (recommended) Add an optional `short` field to the Initiative note in the ki-work registry standard, set to `Model`, `Foundations`, `Rig` and `Techne`, and use it in thread names. In the same change, align the two H1s with their titles. b) Derive the short name by dropping the territory name from the title. This gives `Model`, but leaves `Platform foundations` long. c) Keep it in the ki-pmo label rule as a per-territory list.
+a) (recommended) Add an optional `short` field to the Initiative note in the ki-work registry standard, set to `Model`, `Foundations`, `Rig` and `Techne`, and use it in thread names. In the same change, align the two H1s with their titles.
+
+b) Derive the short name by dropping the territory name from the title. This gives `Model`, but leaves `Platform foundations` long.
+
+c) Keep it in the ki-pmo label rule as a per-territory list.
 
 ### RIG-ROOT - where the Rig Initiative roots under the territory rule
 
@@ -186,7 +210,9 @@ a) (recommended) Add an optional `short` field to the Initiative note in the ki-
 
 **Options:**
 
-a) (recommended) Rig stays in Knowledge Islands as the method: Rig, its profiles and the workstation standard. Each Project's Kris-specific bindings are confirmed for Personal at that thread's next mark under the rooting step. Nothing moves now. b) Move the Rig Initiative and its Projects to the Personal territory now.
+a) (recommended) Rig stays in Knowledge Islands as the method: Rig, its profiles and the workstation standard. Each Project's Kris-specific bindings are confirmed for Personal at that thread's next mark under the rooting step. Nothing moves now.
+
+b) Move the Rig Initiative and its Projects to the Personal territory now.
 
 ### CONCEPT-HOME - where an uncommitted concept waits
 
@@ -196,7 +222,9 @@ a) (recommended) Rig stays in Knowledge Islands as the method: Rig, its profiles
 
 **Options:**
 
-a) (recommended) Keep Emerging Concepts in Pillars as the settled home for a concept Kris has accepted for ideation. Until then the concept waits as an `Idea:` bullet in the nearest Project or Initiative Notes, and moves into Emerging Concepts through the Enactment Process when Kris confirms it at the mark. Add the placement to ki-repo-kb. b) Give Emerging Concepts a home under `Streams/`, outside Enactment.
+a) (recommended) Keep Emerging Concepts in Pillars as the settled home for a concept Kris has accepted for ideation. Until then the concept waits as an `Idea:` bullet in the nearest Project or Initiative Notes, and moves into Emerging Concepts through the Enactment Process when Kris confirms it at the mark. Add the placement to ki-repo-kb.
+
+b) Give Emerging Concepts a home under `Streams/`, outside Enactment.
 
 ### SCRATCH-TERM - what "scratch area" names
 
@@ -206,7 +234,9 @@ a) (recommended) Keep Emerging Concepts in Pillars as the settled home for a con
 
 **Options:**
 
-a) (recommended) It is the plain-language name for the idea homes taken together, with no new place. The ki-work-roadmap ideas section gains one table mapping each kind of idea to its home and its way out: graduation, quotation or fold. It also says `tmp/` is never an idea home. b) A new tracked scratch folder per Capital, such as `+/_SCRATCH/`, for ideas before rooting.
+a) (recommended) It is the plain-language name for the idea homes taken together, with no new place. The ki-work-roadmap ideas section gains one table mapping each kind of idea to its home and its way out: graduation, quotation or fold. It also says `tmp/` is never an idea home.
+
+b) A new tracked scratch folder per Capital, such as `+/_SCRATCH/`, for ideas before rooting.
 
 ```text
 GATE-PRINCIPAL

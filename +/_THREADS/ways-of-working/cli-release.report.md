@@ -44,7 +44,13 @@ Everything else is ready: tools-ki `main` is pushed at `86adda0` with all gates 
 
 **Query:** Should v0.10.5 first move the Harness pin to the current Harness `main`, or ship on the existing pin?
 
-**Options:** a) (recommended) authorise the Harness archive download for `0df81f40`, a `fix(bootstrap)` pin commit with its gates, then v0.10.5, the ki-principal `.github/ki-version` bump and the CI watch to the audit step b) cut v0.10.5 on the existing pin `b4e2c5cd`, skipping the pin step for this release only, then the ki-principal bump and CI watch c) hold the release
+**Options:**
+
+a) (recommended) authorise the Harness archive download for `0df81f40`, a `fix(bootstrap)` pin commit with its gates, then v0.10.5, the ki-principal `.github/ki-version` bump and the CI watch to the audit step
+
+b) cut v0.10.5 on the existing pin `b4e2c5cd`, skipping the pin step for this release only, then the ki-principal bump and CI watch
+
+c) hold the release
 
 ```text
 HARNESS-PIN
