@@ -134,3 +134,9 @@ Classification: operational. Durable home: the drained estate-factorisation chec
 > Park everything in the checkpoint. Strike a mark. Move every open query (tag, one-line context, recommended option), held item, parked item, waiting-on item and the next step into the checkpoint, set running to nothing and state to drained, and copy into the thread folder anything from ~/.local/state/ki/agents/<run>/ needed to resume. Remove re-copied retired reports by explicit path. Commit and push the checkpoint and thread folder.
 
 The final form is Drain report: Done, Parked and Left over; no Context/Query/Options and no reply block, followed by the owner-supplied DRAINED frame and sol resume line.
+
+## 2026-10-16 01:05 BST - Thread reopened as Fnd: tools-burndown
+
+Kris: "Open Fnd: tools-burndown as a coordination thread under ki-pmo ... dispatch the burn-down to background agents - chain same-repository work, about three at once, no new feature records beyond REPO-GIT-HYGIENE's one, and stop to ask me before any ki or mgit release - then banner."
+
+Kris, Messages from Master: "state-of-play now hold REPO-GIT-HYGIENE with STALE-BRANCHES, AUTOMATION-BRANCHES, UNPUSHED-COMMITS and STAGING-LEFTOVERS folded in; they are yours from 16 October 01:00 BST ... Start by checking what mgit already reports, capture the one ki-next triage record in tools-ki, route the rubric rule to KI Model: ways-of-working, and remove the lines once acted on. Remote branch deletes and any ki or mgit release ask me first."
