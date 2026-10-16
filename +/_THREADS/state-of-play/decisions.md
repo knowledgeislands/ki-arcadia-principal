@@ -993,3 +993,16 @@ Kris, REPO-GIT-HYGIENE: "Make the PR and branch clean-down ki-git rubric checks 
 Kris, in these words: "Approve option a) on CHURN-REMEDIES, FRONTMATTER-STATE, DESIGN-HOME, SRC-BADGE, ESTATE-MAP-OBSERVATORY, STASH-DROP and OLD-THREAD-FOLDERS (closed thread folders only), as the query-review report confirms them: log this, dispatch the ways-of-working ones to that thread, launch the rest as background agents, and hold back and raise any the review flags."
 
 Kris confirmed the hand-off message to KI > Fnd > tools burndown is sent: REPO-GIT-HYGIENE, with STALE-BRANCHES, AUTOMATION-BRANCHES, UNPUSHED-COMMITS and STAGING-LEFTOVERS folded in, now belongs to that thread and is struck from this thread's list.
+
+## 2026-10-16 01:40 BST - replies to the 01:30 BST summary
+
+Kris, in these words:
+
+- PUSH-STACK: "Push ki-principal main fast-forward after a final pull with rebase, including the Fnd: tools-burndown opening commit beneath this thread's commits."
+- HOLD-BRANCH-DROP: "A state-of-play run re-checks that hold/2026-10-15/working-state is patch-equivalent to main in ki-principal, then deletes it on GitHub."
+- CHEZMOI-RESUME: "I paste Rig: chezmoi's resume line into Chezmoi > misc (sol), which treats /Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/rig.chezmoi.md as its checkpoint and starts with FW-DECLARE as a source commit only, with no chezmoi apply or rig apply."
+- STALE-PRS: "Fnd: tools-burndown closes apps-knowledgeislands.info #23 and ki-agentic-harness #27 with the comment "superseded by a later release", then deletes their branches with the rest of STALE-BRANCHES."
+- MAC-TIDY: "Send Rig: mac-studio-setup a Messages from Master line to clear its own thread folder and archive its spent runtime files, keeping decisions.md and any report with open queries."
+- FW-DECLARE-NOW: "Rig: chezmoi commits the FW-DECLARE firewall declaration (dot_config/rig/conf.d/private_45-firewall.toml, profiles = ["laptop"]) as its first step; no chezmoi apply on sol until sol's Rig is 0.6.0 or later; then give me the terra steps for KI-TOOL-RIG-CORE-047."
+- SSH-SPARE-KEY: "Why would I need this?" - a question, still open.
+- THREADS-CHECKINS: "This is related to a wider thinking on XDG usage" - dispatched to KI Model: ways-of-working as Kris's words.
