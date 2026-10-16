@@ -2,7 +2,7 @@
 type: ki-checkpoint
 thread: platform-foundations.estate-factorisation
 label: 'Fnd: estate-factorisation'
-state: drained
+state: active
 created_at: 2026-10-08T08:35:00Z
 updated_at: 2026-10-15T15:04:22Z
 ---

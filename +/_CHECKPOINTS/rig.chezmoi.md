@@ -2,7 +2,7 @@
 type: ki-checkpoint
 thread: rig.chezmoi
 label: 'Rig: chezmoi'
-state: drained
+state: active
 created_at: 2026-10-08T08:40:00Z
 updated_at: 2026-10-15T15:00:00Z
 ---

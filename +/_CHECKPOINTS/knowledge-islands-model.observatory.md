@@ -2,7 +2,7 @@
 type: ki-checkpoint
 thread: knowledge-islands-model.observatory
 label: 'Observatory: product'
-state: drained
+state: active
 created_at: 2026-10-13T23:50:00Z
 updated_at: 2026-10-14T00:01:00Z
 ---

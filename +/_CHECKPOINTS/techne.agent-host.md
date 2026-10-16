@@ -2,7 +2,7 @@
 type: ki-checkpoint
 thread: techne.agent-host
 label: 'Techne: agent-host'
-state: drained
+state: active
 created_at: 2026-10-07T09:05:00Z
 updated_at: 2026-10-15T14:59:23Z
 ---

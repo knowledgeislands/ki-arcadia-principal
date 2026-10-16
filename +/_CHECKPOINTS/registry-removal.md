@@ -2,7 +2,7 @@
 type: ki-checkpoint
 thread: registry-removal
 label: 'Knowledge Islands: registry removal'
-state: drained
+state: active
 created_at: 2026-10-15T09:51:00Z
 updated_at: 2026-10-15T12:19:09Z
 ---

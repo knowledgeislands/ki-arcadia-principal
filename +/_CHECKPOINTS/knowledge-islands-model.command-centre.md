@@ -2,7 +2,7 @@
 type: ki-checkpoint
 thread: knowledge-islands-model.command-centre
 label: 'KI Model: command-centre'
-state: drained
+state: active
 created_at: 2026-10-11T02:41:28Z
 updated_at: 2026-10-14T21:18:44Z
 ---

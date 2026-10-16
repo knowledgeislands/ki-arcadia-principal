@@ -2,7 +2,7 @@
 type: ki-checkpoint
 thread: _state-of-play
 label: 'Master: state-of-play'
-state: drained
+state: active
 created_at: 2026-10-06T21:07:00Z
 updated_at: 2026-10-15T21:25:00Z
 ---
