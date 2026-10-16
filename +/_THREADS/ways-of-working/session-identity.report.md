@@ -1,9 +1,3 @@
----
-
----
-
----
-
 # [Knowledge Islands model](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/knowledge-islands-model/knowledge-islands-model.md) › [Ways of working](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/ways-of-working/ways-of-working.md) › session-identity
 
 **Run report at 00:35 BST · last mark 16:09 BST**
@@ -263,7 +257,7 @@ b) As a), and `ki thread` may also call `thread/name/set` on Codex threads after
 
 a) (recommended) Capture one new record each in ki-agentic-harness, tools-ki and chezmoi, cross-referencing 127 and 189, and add a workstream line to the Ways of working Project note.
 
-b) Fold the tooling into KI-TOOL-KI-CLI-127 and the standard into KI-HARNESS-GOV-189.
+b) Fold the tooling into [KI-TOOL-KI-CLI-127](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-127-agent-status-live-threads.md) and the standard into [KI-HARNESS-GOV-189](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-189-move-thread-between-hosts.md).
 
 ### PILOT-LABEL - intake's label during the pilot
 

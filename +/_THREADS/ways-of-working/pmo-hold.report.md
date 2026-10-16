@@ -35,7 +35,7 @@
 
   ‡ It stops at `TS2688: Cannot find type definition file for 'bun'` and `'node'`, for the same missing `node_modules`.
 
-  § All four are PMO-7 findings in Kris's committed `+/_THREADS/skill-reviews/` reports: `KI-HARNESS-GOV-193` is unlinked or points at a file that is not there. These are fleet findings from `0df81f40`, not from this change.
+  § All four are PMO-7 findings in Kris's committed `+/_THREADS/skill-reviews/` reports: [[KI-HARNESS-GOV-193](https://github.com/knowledgeislands/ki-agentic-harness/blob/c092431687d3542e55058cecd545e816a1dbadcf/docs/roadmap/KI-HARNESS-GOV-193-area-diagrams-with-html.md)](https://github.com/knowledgeislands/ki-agentic-harness/blob/c092431687d3542e55058cecd545e816a1dbadcf/docs/roadmap/KI-HARNESS-GOV-193-area-diagrams-with-html.md) is unlinked or points at a file that is not there. These are fleet findings from `0df81f40`, not from this change.
 
   ¶ The warning predates this change, in `pmo.test.ts:47`.
 

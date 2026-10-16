@@ -1,9 +1,3 @@
----
-
----
-
----
-
 # [Knowledge Islands model](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/knowledge-islands-model/knowledge-islands-model.md) › [Ways of working](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/ways-of-working/ways-of-working.md) › messenger
 
 **Run report at 22:57 BST · last mark 16:09 BST**
