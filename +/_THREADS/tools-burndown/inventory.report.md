@@ -1,152 +1,222 @@
-# tools-burndown inventory
+---
 
-Reviewed 2026-10-11 05:17 BST. Authority: [Decision 1](/Users/krisbrown/.local/state/ki/agents/tools-burndown/decisions.md). Read-only first disposition batch. No work record, checkpoint or repository file was written by this review; no lifecycle change, closure, commit, push, fetch, pull, service change or remote call was made. Only machine-local run material was written.
+---
 
-## Count and Git summary
+---
 
-All fourteen matching directories are registry-resolved; there are no matching unregistered directories. Full roadmap scans and YAML-parsed identifiers/statuses reconcile to ten open records, all `triage`: tools-ki 2, tools-rig 5, tools-techne 2, apps-observatory 1, eight MCP repositories 0, tools-git-almanac 0 and tools-mgit 0. No count discrepancy and no acceptance candidate.
+# [Platform foundations](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/platform-foundations.md) › [Tools burndown](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/tools-burndown.md) › inventory
 
-Every scoped checkout is clean on `main`, with cached `origin/main` ahead/behind 0/0. These are local upstream observations, not fresh remote verification. The table records reviewed commit identifiers.
+**Run report at 01:32 BST · last mark none**
 
-| Repository | Open | Git | Reviewed HEAD |
-| --- | ---: | --- | --- |
-| [apps-observatory][repo-apps-observatory] | 1 | clean; 0/0 | 5fe1235b7947bccd03dfdaebce81997eccbe6c3a |
-| [mcp-acquire-whatsapp][repo-mcp-acquire-whatsapp] | 0 | clean; 0/0 | e01e1d142203406c35653d7442f10a645c45315f |
-| [mcp-git-audit][repo-mcp-git-audit] | 0 | clean; 0/0 | 590b5d750a3c49d2d31c2cb64c6c23992e97f1d4 |
-| [mcp-gsuite][repo-mcp-gsuite] | 0 | clean; 0/0 | a9a521727325a7c350acf9d604b7309b8eea3b2d |
-| [mcp-housekeeping-chatgpt][repo-mcp-housekeeping-chatgpt] | 0 | clean; 0/0 | 0c53b5c2fe99a0cdc9453e2774aaf58b1c112ee5 |
-| [mcp-housekeeping-claude][repo-mcp-housekeeping-claude] | 0 | clean; 0/0 | e9f578caf7a5713c4e06bd193e1dd7e37918a77b |
-| [mcp-ki-kb-fs][repo-mcp-ki-kb-fs] | 0 | clean; 0/0 | 294faa59b0de331886fd93dd9263597aa9fb1ec6 |
-| [mcp-ki-kb-notion-mirror][repo-mcp-ki-kb-notion-mirror] | 0 | clean; 0/0 | d1e16f5e020a621aeb73fd1bd9da517518efc348 |
-| [mcp-m365][repo-mcp-m365] | 0 | clean; 0/0 | 4ca320b2f9e8d92102a8e92623e16bdd7a77b388 |
-| [tools-git-almanac][repo-tools-git-almanac] | 0 | clean; 0/0 | 6d9463fef697bfaa09971de7ce794c57311f74b6 |
-| [tools-ki][repo-tools-ki] | 2 | clean; 0/0 | 38c35150810142ef4f95b5b95f796bfca3152be5 |
-| [tools-mgit][repo-tools-mgit] | 0 | clean; 0/0 | 84bccae303c1c0789cabf89d4535cefa4a07dedc |
-| [tools-rig][repo-tools-rig] | 5 | clean; 0/0 | d37e38945d0e6c0b8d4664d1fc5343fd04506a46 |
-| [tools-techne][repo-tools-techne] | 2 | clean; 0/0 | 684de1f32956f14a4cb823c8034ae9e46b7efbb7 |
-
-Arcadia initially was clean at `aee25c27f14e6a1fef52214dccdf51e96c70f42e`. During the review another actor changed [platform-foundations.estate-factorisation](/Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/platform-foundations.estate-factorisation.md); its HEAD stayed unchanged and it ended with that one unstaged modification. The updated checkpoint was re-read: it now names tools-burndown and agrees with Decision 1. This review neither changed nor restored it. All fourteen scoped repository content hashes, file rosters, Git statuses and HEADs remained unchanged.
-
-## Proposed dispositions
-
-Every row links the full identifier to its absolute canonical local path. Evidence footnotes are part of the corresponding recommendation. "Finish" means retain and take through approved planning and delivery; it does not claim any triage item is Ready. Active-thread crossings go through Kris before further action.
-
-| Record / absolute path | Lifecycle | Ownership | Recommendation | Evidence |
-| --- | --- | --- | --- | --- |
-| [KI-TOOL-CLI-115][KI-TOOL-CLI-115] | triage | agent-host | Finish via Kris | † |
-| [KI-TOOL-CLI-116][KI-TOOL-CLI-116] | triage | agent-host | Finish via Kris | ‡ |
-| [RIG-CORE-041][RIG-CORE-041] | triage | Rig handoff | Finish via Kris | § |
-| [RIG-CORE-042][RIG-CORE-042] | triage | Rig/Dock crossing | Finish via Kris | ¶ |
-| [RIG-CORE-043][RIG-CORE-043] | triage | Rig/chezmoi crossing | Finish via Kris | ‖ |
-| [RIG-CORE-044][RIG-CORE-044] | triage | Rig/chezmoi crossing | Finish via Kris | †† |
-| [RIG-CORE-045][RIG-CORE-045] | triage | Rig/Studio crossing | Finish via Kris | ‡‡ |
-| [TECHNE-TOOL-CLI-006][TECHNE-TOOL-CLI-006] | triage | agent-host | Finish via Kris | §§ |
-| [TECHNE-TOOL-CLI-008][TECHNE-TOOL-CLI-008] | triage | agent-host | Finish via Kris | ¶¶ |
-| [KI-OBS-APP-041][KI-OBS-APP-041] | triage | tools-burndown | Plan; approval gate | ‖‖ |
-
-† **HOST-WRITES - KI-TOOL-CLI-115:** The harness writes ~/.config/ki/host-marker (host/converge.sh:556); tools-ki/src contains no marker guard. The agent-host Project owns this record even though its checkpoint does not list it among triage. Marker location is settled in that checkpoint, so the record's uncertainty is stale. Plan the writing-checkout declaration and all write entry points with that thread; do not reopen the absorbed harness record or design remote-main serialisation here.
-
-‡ **HOST-GATES - KI-TOOL-CLI-116:** src/core/agent/runs.ts:164 still adds only a prompt gate and launchAgent at line 196 starts the runtime immediately; dispatchRun:350 dequeues without inspecting dependencies. The active agent-host checkpoint explicitly carries this record. It is a real reliability defect, not complete work. Route planning of launcher-held gates and dead-gate behaviour to that thread; retain its manual sequencing workaround until verified.
-
-§ **RIG-REMOVE - RIG-CORE-041:** The declaration registry still makes retired-application observation-only (src/rig/05-declarations.bash:20); unmanaged collection is opt-in in 22-observation.bash. No explicit package removal contract is implemented. Mac Studio has handed this capability to the Rig Initiative; chezmoi owns the private removal list and current software choices. Agree declaration, severity and dry-run boundary before delivery. Coordinate classification with RIG-CORE-043; do not merge their different actions.
-
-¶ **RIG-DOCK - RIG-CORE-042:** Dock fields remain kind/path/view/display, with no tool membership (10-configuration.bash:273); preflight fails on an absent item path (20-orchestration.bash:1158). Mac Studio handed the engine feature on; its profile/Dock choices and chezmoi's studio-only Lightroom placement remain external consumers. Recommend the proposed tool link, stable declared order and profile/platform filtering, subject to the owners settling dependency ordering. No personal Dock edits here.
-
-‖ **RIG-UPDATES - RIG-CORE-043:** The native lifecycle tests still expect brew upgrade --cask tasks (tests/rig-lifecycle.bats:223); no self-update declaration appears in runtime source. Source mismatch and artifact satisfaction need implementation and isolated proof. The Mac Studio handoff is with Rig; chezmoi's DOTFILES-UE-086 owns machine install-route alignment. Keep the generic feature separate from personal catalogue fixes and RIG-CORE-041 removal. Resolve metadata determinism and informational versus unhealthy mismatch before delivery.
-
-†† **RIG-SUDO - RIG-CORE-044:** Runtime source has no sudo keepalive implementation; the record is a concrete non-blocking handoff from active Rig: chezmoi. Keep the engine work separate from that thread's gated configuration work. Agree privilege detection or an explicit option, tty behaviour, refusal handling and cleanup before implementation. Acceptance needs isolated prompt/keepalive/interrupt tests; no live sudo experiment was made.
-
-‡‡ **RIG-HANDLERS - RIG-CORE-045:** The runtime declaration registry (05-declarations.bash:12) has no default-application kind and source has no duti or Launch Services handler adapter. A manual laptop change is not portable delivery. Mac Studio's checkpoint hands this feature to Rig and keeps the screen-only sol choice with Kris. Plan the supported mechanism, UTI/extension/scheme identity, roles and install ordering; retain this concrete feature rather than demote it to an idea. No Obsidian removal in this record.
-
-§§ **HOST-GUARDS - TECHNE-TOOL-CLI-006:** src/cli.ts:781 stops without the requested warning; line 805 retains direct teardown/termination. The local harness manifest already declares structured status and guarded rebuild/withdraw operations, and destroy.sh:100 uses the status guard. The active thread owns pilot lessons and adapter planning. No acceptance: CLI parity, outcome propagation, override equivalence, documentation and stubbed tests are missing. No live rebuild or withdrawal is authorised.
-
-¶¶ **HOST-PATCHING - TECHNE-TOOL-CLI-008:** src/bindings.ts:16 still excludes reboot_window and livepatch from NEUTRAL_FIELDS; the local recipe.toml declares both optional fields and the additive updates report. The active agent-host checkpoint explicitly owns this triage item. Plan validators, environment mapping and status rendering there; coordinate shared status parsing with TECHNE-TOOL-CLI-006 without merging away the independent patching scope. Live Ubuntu Pro or reboot work is excluded.
-
-‖‖ **OBS-PLAN - KI-OBS-APP-041:** packages/evidence/src/ki.ts:209 invokes removed ki agora list. Installed ki is 0.10.0 and that invocation fails with exit 2. Contracts, evidence and site still carry Agora. Adoption/planning is approved but not written by this review; delivery waits for plan approval. The proposal below identifies a missing territory discovery machine contract as an explicit decision gate. KI Model has completed the retirement and handed this consumer change on; do not expand into philosophy or membership changes.
-
-No cancellation, merger closure, idea demotion or acceptance is recommended: these are distinct, concrete consumer failures or missing capabilities. Shared status parsing and shared Rig classification are coordination opportunities, not duplicate deliverables. None has a completed plan, immutable delivery baseline or complete acceptance packet.
-
-## Observatory proposed plan
-
-**Scope choice:** keep one selected territory at a time, retaining estate and current-repository scopes. Keep `--scope <territory-handle>` rather than adding a second selection grammar. Accept only currently discovered handles; an old Agora name gets actionable territory-selection guidance, with no silent alias or fallback to estate. This is a proposed design for Kris to approve.
-
-**Local findings:** installed `ki --version` is 0.10.0. `ki territory list` discovers seven Capitals, including handle `ki`; `ki territory roots --null -t ki` succeeds with 20 roots and the estate form with 41. Buffer the complete NUL-delimited output and require successful exit before consuming it. `ki territory list --format json` fails with exit 2; list/show are terminal trees, while roots is the documented machine surface. Do not invent `ki territory paths` or a territory JSON option. Registry list does supply `ki/registry/v1` JSON. The local territory-selection guide describes roots and the fail-closed selection rules.
-
-**Contract decision before delivery:** recommend a minimal versioned territory-list/selection machine projection owned by tools-ki so Observatory never scrapes tree output or duplicates membership resolution. This is an additional cross-repository change requiring the master thread to settle its bounded authority and sequencing; no new record is created here. An interim bounded parser for discovery is an alternative only if Kris explicitly approves that compromise. The membership half can already use roots; the discovery half cannot yet satisfy the stable-machine-contract requirement on its own. The plan is therefore reviewable but not Ready until this gate is settled.
-
-**Change scope in apps-observatory:** replace the Agora types/parsers and exports in `packages/contracts/src/agora.ts`, `scope.ts`, `scope-option.ts`, `envelope.ts` and dependent answer contracts; update `packages/evidence/src/ki.ts`, `scope.ts` and all scoped instrument loaders; update site server, picker, page and startup messages; replace fixtures and tests; align operator guides, diagrams, PDR-KI-OBS-001 and affected accepted specs. Bump Observatory schema versions where enum/contract changes are incompatible, including persisted history handling. Keep CLI/process/filesystem access behind typed backend ports, redact paths from browser answers, and leave membership policy with ki. No Rig, chezmoi, Capital membership, philosophy or remote operations in this delivery.
-
-**Acceptance checks:**
-
-- Discover current handles and resolve the exact ki territory, estate and current-repository sets using injected CLI fixtures; counts include Capitals and contain no duplicated identity. Validate machine schema/exit status and NUL framing; spaces and line feeds in paths survive.
-- Unknown or old Agora handles, missing registration, unavailable selected roots, malformed/partial output and contract drift fail visibly without a narrower successful set or estate fallback. Selection semantics stay in ki.
-- Every scoped instrument, repository operation plan and receipt respects the selected identity set. Mutation confirmation and scope checks remain intact; observation grants no mutation authority.
-- Picker/start option, navigation, refresh, Beacon, history and degraded-operation behaviour work with one territory; browser receives no filesystem/process access or private path leakage. Old persisted scope schemas fail or migrate explicitly rather than being relabelled.
-- No live `ki agora` command, Agora scope kind or stale operator guidance remains in the delivered surfaces. Run `bun run test`, `bun run self:typecheck`, `bun run build`, Biome and Markdown checks, `ki repo audit --repo .` and `ki repo diag --repo .`; run the browser smoke gate when its existing Chromium is available, reporting any skip. Preserve the mechanical-first degraded suite.
-
-Delivery starts only after Kris approves the plan and contract decision. A later background delivery reports any service restart due; it does not restart the live Observatory itself.
-
-## Master-thread crossings
-
-- **HOST-ROUTE:** [Techne: agent-host][cp-host] owns KI-TOOL-CLI-115 by Project, KI-TOOL-CLI-116 explicitly, and both tools-techne records. Its accepted local pilot/patching groundwork is relevant evidence, not acceptance of these four consumers. Kris routes plans there; no host connection or exemption use is allowed in this run.
-- **RIG-ROUTE:** [Rig: mac-studio-bootstrap][cp-studio] handed generic Rig follow-ups to the Rig Initiative and retains the restart test. Coordinate RIG-CORE-041, RIG-CORE-042, RIG-CORE-043 and RIG-CORE-045 through Kris; do not duplicate personal profile, Dock, software or screen-only changes. [Rig: chezmoi][cp-chezmoi] owns the private source and install-route decisions and originated RIG-CORE-044. Its Lightroom placement waits on the Dock engine feature. The two checkpoints differ in some older record references; current work should use the handed-on boundaries.
-- **MODEL-BOUNDARY:** [KI Model: island-model-and-tending][cp-model] has completed Agora retirement and handed Observatory selection on. Philosophy coherence, Great Library wording and territory-key acquisition questions remain with that thread. Observatory consumer repair does not reopen those decisions.
-- **MASTER-STATE:** [_state-of-play][cp-master] still says `kis` Agora, names older CLI state and queues KI Model whereas its own checkpoint is active. Reconcile those stale coordination pointers when the master next updates its checkpoint. The previous factorisation phase/Project-close question remains parked; this burndown grants no FND-5 capture or phase approval.
-
-## Verification and limitations
-
-PASS: every expected identifier was YAML-parsed, filename-checked and read in full; all scoped AGENTS.md and .ki.toml were read, with TOML parsing; fourteen registry roots reconcile with fourteen matching local directories; all ten statuses are exactly triage. Relevant implementation literals were verified with exact source predicates after transformed tool output. Local help/CLI probes confirmed the absent Agora command and absent territory JSON option. No delivery test suite or broad repository audit was run or claimed: this survey assesses unfinished work and never installs dependencies or changes environments.
-
-Recovered survey errors: the initial registry parser wrongly expected grouped display output (actual stdout is one absolute path per line); a TOML-print expression had an extra parenthesis; some guessed implementation/definition-of-done paths were absent and were replaced by discovered source paths and CONTRIBUTING.md. An exploratory `territory paths` help probe correctly failed because that command does not exist. These failures did not mutate repository files and left no missing required evidence.
-
-The unchanged-estate predicate failed for Arcadia alone because of the concurrent checkpoint edit above. Its cause is outside this review; no whole-estate unchanged claim is made. Cached upstream information cannot establish current remote synchronisation without the forbidden fetch.
+---
 
 ## Done
 
-- Reviewed fourteen scoped repositories and all ten open records; counts reconcile, with zero-count repositories included.
-- Produced one tagged disposition batch and a concrete Observatory plan; closed and changed no work.
-- Verified all scoped repositories unchanged and level with cached upstream; isolated the concurrent Arcadia checkpoint change.
+- Read-only stock-take of the four repositories, written from local refs. **Limitation:** I did not fetch. The brief said "Fetch each", but its Rules forbid any Git fetch, and the Rules win. The remote-tracking refs come from the thread's own fetch at 00:58-00:59 BST today (`FETCH_HEAD`), so the picture is about 30 minutes old. Nothing was changed in any repository. No commits.
 
-## Failed
+| Repository | Branch | Ahead / behind `origin/main` | Dirty | Latest tag; unreleased on `origin/main` |
+| --- | --- | --- | --- | --- |
+| `tools-ki` | `main` | 0 / 0 (it was behind 2 at 01:05; the `git-hygiene` run has since pulled) | clean | `v0.10.5` at `ac7d98d8`; 2 docs-only roadmap commits (KI-TOOL-KI-CLI-139 capture) |
+| `tools-mgit` | `main` | 0 / 0 at `9a30de5` | clean | `v0.17.0` at HEAD; **nothing unreleased** |
+| `tools-git-almanac` | `main` | 0 / 0 at `00cc916` | clean | `v0.2.0`; 19 chore, CI and docs commits, none user-facing |
+| `ki-agentic-harness` | `main` | **ahead 4** (`b4875ac1`, with `origin/main` at `45bbaea6`), behind 0 | clean | another session's unpushed `ki-pmo` and roadmap commits, not this run's |
 
-- Whole-estate unchanged verification: Arcadia acquired one concurrent checkpoint modification; all scoped product repositories passed.
-- A complete Observatory stable discovery machine contract is unavailable in installed ki 0.10.0; delivery readiness awaits the contract decision.
+The repositories have no stashes, no extra worktrees and no local branches beyond `main`. Remote branches `origin/fix/granola-retention-20261014` and `origin/paperclip/aligned-20260926/KIS-46-…` exist on `tools-ki`; they belong to the `git-hygiene` run.
 
-## Needs Kris
+- **Open records in scope (14, all in `tools-ki`)**, read at `origin/main` `6e9b32aa`:
 
-- **DISPOSITIONS:** approve or revise the ten recommendations above. Nothing closes under this review.
-- **HOST-ROUTE:** route [KI-TOOL-CLI-115][KI-TOOL-CLI-115], [KI-TOOL-CLI-116][KI-TOOL-CLI-116], [TECHNE-TOOL-CLI-006][TECHNE-TOOL-CLI-006] and [TECHNE-TOOL-CLI-008][TECHNE-TOOL-CLI-008] through the active agent-host thread; retain its ownership.
-- **RIG-ROUTE:** settle the receiving owner and planning order for [RIG-CORE-041][RIG-CORE-041], [RIG-CORE-042][RIG-CORE-042], [RIG-CORE-043][RIG-CORE-043], [RIG-CORE-044][RIG-CORE-044] and [RIG-CORE-045][RIG-CORE-045], preserving active-thread personal changes.
-- **OBS-PLAN:** approve or revise the proposed plan for [KI-OBS-APP-041][KI-OBS-APP-041]; adoption/planning is already authorised, delivery is not.
-- **TERRITORY-CONTRACT:** recommend the minimal tools-ki machine projection prerequisite; alternatively explicitly approve interim discovery parsing. Master thread owns the crossing and authority.
-- **MASTER-STATE:** reconcile stale master-thread pointers and the concurrent checkpoint change; leave factorisation phases parked.
+| Record | Status / horizon | Project (owning thread) | Dependencies | State |
+| --- | --- | --- | --- | --- |
+| [KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md) Unavailable store breaks repair | awaiting-review / now | ways-of-working | blocks KI-TOOL-KI-CLI-131 | **Needs Kris (acceptance).** Released in `v0.10.5`; ki-principal pin is already `v0.10.5`, so the outstanding Verify 4 can run now |
+| [KI-TOOL-KI-CLI-130](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-130-skill-generated-surfaces.md) Generated skill surfaces | in-progress / now | ways-of-working | harness generator (present: `ki-pmo/scripts/generate/index.ts`) | All Steps ticked but no review packet. Resume `ki-implement` to finish Verify and reach Awaiting review |
+| [KI-TOOL-KI-CLI-133](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-133-retired-reports-come-back.md) Retired reports come back | ready / now | none | none | **Ready.** Waiting for the owner's go-ahead to deliver |
+| [KI-TOOL-KI-CLI-123](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-123-agent-run-events.md) Agent run events | draft / next | ways-of-working | KI-HARNESS-GOV-175 follows it (sequencing only) | Needs `ki-plan` |
+| [KI-TOOL-KI-CLI-127](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-127-agent-status-live-threads.md) Agent thread coordination commands | draft / next | ways-of-working | follows accepted KI-TOOL-KI-CLI-124; item 5 (link printer) first | Needs `ki-plan` |
+| [KI-TOOL-KI-CLI-128](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-128-granola-retention-safeguards.md) Granola retention safeguards | draft / next | knowledge-acquisition | harness Granola acquisition wording; needs an isolated delivery checkout, because the installed `ki` runs the primary checkout | Needs `ki-plan`; owner review gate |
+| [KI-TOOL-KI-CLI-125](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-125-ki-release-contract.md) KI release contract | draft / hold | agent-host | waiting for an ARM host or the vega rebuild; review 2026-11-16 | **Held** |
+| [KI-TOOL-KI-CLI-131](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-131-host-absent-store-state.md) Host-absent store state | triage | none | blocked by KI-TOOL-KI-CLI-126 | Needs adoption, then `ki-plan` |
+| [KI-TOOL-KI-CLI-134](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-134-launch-footer-follows-brief.md) Launch footer follows brief | triage | none | a new tier needs a matching `ki-delegation` asset in the harness | Needs adoption, then `ki-plan` |
+| [KI-TOOL-KI-CLI-135](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-135-reused-agent-name-overwrites.md) Reused agent name overwrites | triage | none | none | Needs adoption, then `ki-plan` |
+| [KI-TOOL-KI-CLI-136](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-136-errors-suggest-fixes.md) Errors suggest fixes | triage | none | overlaps KI-TOOL-KI-CLI-131; builds on KI-TOOL-KI-CLI-126 | Needs adoption, then `ki-plan` (decide whether to fold the store part into KI-TOOL-KI-CLI-131) |
+| [KI-TOOL-KI-CLI-137](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-137-agent-run-tmp-home.md) Agent run temporary home | triage | none | pairs with KI-HARNESS-GOV-195 | Needs adoption, then `ki-plan` |
+| [KI-TOOL-KI-CLI-138](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-138-warn-unknown-record-fields.md) Warn unknown record fields | triage | none | its field list must agree with the harness `ki-repo-kb-streams` checker | Needs adoption, then `ki-plan` |
+| [KI-TOOL-KI-CLI-139](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-139-ebu-sources-sync.md) EBU sources sync | triage | none | [HNR-PRINCIPAL-5GE-005](/Users/krisbrown/workspaces/humans-not-robots/hnr-principal/Streams/Roadmap/HNR-PRINCIPAL-5GE-005-keep-ebu-sources-aligned.md) depends on it; needs a specification change first | Needs adoption, then `ki-plan`. Not yet in the local checkout's earlier read; now present after the pull |
 
-[repo-apps-observatory]: /Users/krisbrown/workspaces/kit/knowledgeislands/apps-observatory
-[repo-mcp-acquire-whatsapp]: /Users/krisbrown/workspaces/kit/knowledgeislands/mcp-acquire-whatsapp
-[repo-mcp-git-audit]: /Users/krisbrown/workspaces/kit/knowledgeislands/mcp-git-audit
-[repo-mcp-gsuite]: /Users/krisbrown/workspaces/kit/knowledgeislands/mcp-gsuite
-[repo-mcp-housekeeping-chatgpt]: /Users/krisbrown/workspaces/kit/knowledgeislands/mcp-housekeeping-chatgpt
-[repo-mcp-housekeeping-claude]: /Users/krisbrown/workspaces/kit/knowledgeislands/mcp-housekeeping-claude
-[repo-mcp-ki-kb-fs]: /Users/krisbrown/workspaces/kit/knowledgeislands/mcp-ki-kb-fs
-[repo-mcp-ki-kb-notion-mirror]: /Users/krisbrown/workspaces/kit/knowledgeislands/mcp-ki-kb-notion-mirror
-[repo-mcp-m365]: /Users/krisbrown/workspaces/kit/knowledgeislands/mcp-m365
-[repo-tools-git-almanac]: /Users/krisbrown/workspaces/kit/knowledgeislands/tools-git-almanac
-[repo-tools-ki]: /Users/krisbrown/workspaces/kit/knowledgeislands/tools-ki
-[repo-tools-mgit]: /Users/krisbrown/workspaces/kit/knowledgeislands/tools-mgit
-[repo-tools-rig]: /Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig
-[repo-tools-techne]: /Users/krisbrown/workspaces/kit/knowledgeislands/tools-techne
-[KI-TOOL-CLI-115]: /Users/krisbrown/workspaces/kit/knowledgeislands/tools-ki/docs/roadmap/KI-TOOL-CLI-115-enforce-roadmap-writing-checkout.md
-[KI-TOOL-CLI-116]: /Users/krisbrown/workspaces/kit/knowledgeislands/tools-ki/docs/roadmap/KI-TOOL-CLI-116-launcher-held-wait-gates.md
-[RIG-CORE-041]: /Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-041-unwanted-software-removal.md
-[RIG-CORE-042]: /Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-042-profile-filtered-dock-items.md
-[RIG-CORE-043]: /Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-043-self-updating-applications.md
-[RIG-CORE-044]: /Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-044-single-sudo-prompt.md
-[RIG-CORE-045]: /Users/krisbrown/workspaces/kit/knowledgeislands/tools-rig/docs/roadmap/RIG-CORE-045-default-applications.md
-[TECHNE-TOOL-CLI-006]: /Users/krisbrown/workspaces/kit/knowledgeislands/tools-techne/docs/roadmap/TECHNE-TOOL-CLI-006-guarded-host-commands.md
-[TECHNE-TOOL-CLI-008]: /Users/krisbrown/workspaces/kit/knowledgeislands/tools-techne/docs/roadmap/TECHNE-TOOL-CLI-008-host-patching-fields.md
-[KI-OBS-APP-041]: /Users/krisbrown/workspaces/kit/knowledgeislands/apps-observatory/docs/roadmap/KI-OBS-APP-041-adopt-territory-selection.md
-[cp-host]: /Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/techne.agent-host.md
-[cp-studio]: /Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/rig.mac-studio-bootstrap.md
-[cp-chezmoi]: /Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/rig.chezmoi.md
-[cp-model]: /Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/knowledge-islands-model.island-model-and-tending.md
-[cp-master]: /Users/krisbrown/workspaces/kit/knowledgeislands/ki-arcadia-principal/+/_CHECKPOINTS/_state-of-play.md
+`tools-mgit` and `tools-git-almanac` have no open records. The `git-hygiene` run is capturing one more `tools-ki` triage record under REPO-GIT-HYGIENE. It was not yet on `origin/main` when I read, so it is not listed.
+
+- **`ki-agentic-harness`: no record is CLI-shaped.** None delivers in the `ki` CLI and none blocks it. The Project note is right to exclude all six. Four are coupled to `tools-ki` and should be sequenced alongside, but not burned down here:
+  - [KI-HARNESS-GOV-175](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-175-delegation-run-events.md) (draft / next) waits for KI-TOOL-KI-CLI-123.
+  - [KI-HARNESS-GOV-195](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-195-thread-folder-closed-list.md) (triage) pairs with KI-TOOL-KI-CLI-137.
+  - [KI-HARNESS-GOV-170](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-170-keep-resolution-targets-local.md) (draft / future) will later hand `tools-ki` a work-item model change in plain language.
+  - [KI-HARNESS-GOV-189](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-189-move-thread-between-hosts.md) (triage) names queue export and import as `tools-ki` mechanics, with no `tools-ki` record yet.
+  - The other two are unrelated: [KI-HARNESS-GOV-194](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-194-review-verification-effects.md) (in-progress, blocked on audit warnings) and [KI-HARNESS-OPS-005](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-OPS-005-acquire-ai-sessions.md) (awaiting-review; its `tools-ki` part, `ki acquire`, is already delivered).
+
+- **Proposed dispatch plan.** `tools-ki` is the only delivery repository, so it runs as one chained lane: one writer, because the installed `ki` runs the primary checkout's source. Planning agents touch only record files and can be batched between deliveries.
+  1. **Close out work already delivered or ready.** Run Verify 4 on KI-TOOL-KI-CLI-126 and present it for Kris's `ki-accept`. Resume `ki-implement` on KI-TOOL-KI-CLI-130 to Awaiting review, then Kris accepts. Run `ki-implement` on KI-TOOL-KI-CLI-133 once Kris gives the go-ahead.
+  2. **Adopt and plan the triage records in one batch.** Run `ki-next` with Kris on KI-TOOL-KI-CLI-131, KI-TOOL-KI-CLI-134 to KI-TOOL-KI-CLI-139 and the hygiene record. Then run one `ki-plan` agent per group:
+     - store and errors: KI-TOOL-KI-CLI-131, then KI-TOOL-KI-CLI-136, deciding the fold;
+     - agent launcher: KI-TOOL-KI-CLI-135, KI-TOOL-KI-CLI-137, KI-TOOL-KI-CLI-134;
+     - record model: KI-TOOL-KI-CLI-138;
+     - drafts: KI-TOOL-KI-CLI-123, KI-TOOL-KI-CLI-127.
+  3. **Deliver in dependency order, one `ki-implement` at a time.** Each record needs `ki-plan` before `ki-implement`.
+     - store chain: KI-TOOL-KI-CLI-131, then KI-TOOL-KI-CLI-136, after KI-TOOL-KI-CLI-126 is accepted;
+     - agent chain, all in `src/core/agent/`: KI-TOOL-KI-CLI-135, KI-TOOL-KI-CLI-137, KI-TOOL-KI-CLI-134, KI-TOOL-KI-CLI-123, then KI-TOOL-KI-CLI-127 with its link printer first;
+     - then KI-TOOL-KI-CLI-138.
+  4. **Owner-gated tail.** KI-TOOL-KI-CLI-128 and KI-TOOL-KI-CLI-139 go through knowledge-acquisition. KI-TOOL-KI-CLI-139 needs a specification change and its HNR consumer, and KI-TOOL-KI-CLI-128 needs an isolated checkout. KI-TOOL-KI-CLI-125 stays on Hold.
+  5. **Cross-repository handoffs.**
+     - Once KI-TOOL-KI-CLI-123 is planned, the harness ways-of-working thread can plan KI-HARNESS-GOV-175.
+     - KI-HARNESS-GOV-195 should land with KI-TOOL-KI-CLI-137, since both name the same path.
+     - KI-TOOL-KI-CLI-134's new tier waits on a `ki-delegation` asset.
+     - The KI-TOOL-KI-CLI-138 field list must be agreed with the harness checker.
+     - None of these is a hard `blocked_by`.
+  6. **Release gate.** Cut `ki` only after Kris approves, once every deliverable `tools-ki` record is accepted. Then bump ki-principal `.github/ki-version` (and the CI pins elsewhere). `mgit` has nothing unreleased since `v0.17.0`; see MGIT-RELEASE.
+
+## In Progress
+
+Nothing is running in this run. The thread's `git-hygiene` run is still working in `tools-ki` (at 01:28 BST: capturing the one triage record).
+
+Outstanding - no action requested now:
+
+- **Carried forward from [Fnd: estate-factorisation](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/platform-foundations.estate-factorisation.md), in scope:**
+  - DEPS-HOLD is effectively resolved: commit `7eb3000` adopted the dev-tool updates and shipped in `v0.10.5`. The ways-of-working thread should confirm and close it.
+  - STORE-REPAIR has moved from In progress to Awaiting review (see the STORE-REPAIR query).
+  - KI-RELEASE continues as the release gate and RELEASE-CONTRACT below.
+  - TRIAGE-OWNERS is now TRIAGE-ADOPT below, widened to KI-TOOL-KI-CLI-136 to KI-TOOL-KI-CLI-139.
+- **Carried forward, out of scope, left with their owners:** HOST-GUARDS and HOST-WRITES (Techne), DOCK and RIG-REFS (Rig), ALIAS-OWNERS, RECEIVER-ROLLOUT, OBS-ACTIVATION, GOVERNANCE and PROJECT-CLOSE (Estate factorisation).
+- `ki-agentic-harness` has four unpushed commits from another session on `main`. The Project note calls `b4875ac1` "as fetched", but it is a local-only HEAD. That is for the harness owner, not this thread.
+- `tools-git-almanac` has 19 non-functional commits since `v0.2.0`. The Project defines no almanac release, and none is needed.
+- **The Project note is stale against TOOLS-PROJECT and the current state.** Change these points (no edit made):
+  - In Inventory, KI-TOOL-KI-CLI-126 is "awaiting-review", released in `v0.10.5` and pinned, with only Verify 4 and acceptance left.
+  - Drop "two commits behind" for `tools-ki`; the checkout is now level.
+  - Restate the harness revision as local `b4875ac1`, ahead 4 of `origin/main` `45bbaea6`.
+  - Record that `tools-mgit` has no change since `v0.17.0`.
+  - Add the hygiene triage record once it lands.
+  - Note the four coupled harness records under Scope.
+  - Say how KI-TOOL-KI-CLI-125 (Hold to 2026-11-16) squares with "every record closed, merged or rejected".
+
+## Queries
+
+### OWNER-LANE - who delivers ways-of-working's tools-ki records
+
+**Context:** The ways-of-working Project owns KI-TOOL-KI-CLI-123, KI-TOOL-KI-CLI-126, KI-TOOL-KI-CLI-127 and KI-TOOL-KI-CLI-130, and its checkpoint also tracks KI-TOOL-KI-CLI-131. The Project note says this Project "burns them down with those threads rather than taking them over". Two writers in `tools-ki` would collide, because the installed `ki` runs the primary checkout.
+
+**Query:** Should tools-burndown be the single `tools-ki` delivery lane for every in-scope record, with the owning threads keeping priority and acceptance input?
+
+**Options:**
+a) (recommended) Yes. tools-burndown runs the only `tools-ki` writer for all in-scope records. The ways-of-working and knowledge-acquisition threads are told through Messages from Master and keep priority and acceptance input.
+b) No. tools-burndown delivers only unassigned records and waits on ways-of-working for its four.
+
+### STORE-REPAIR - finish and accept KI-TOOL-KI-CLI-126
+
+**Context:** [KI-TOOL-KI-CLI-126](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md) is Awaiting review, and Verify 1 to 3 have passed. Verify 4 needed a release and the ki-principal pin bump. Both are done: `v0.10.5` contains `726243d`, and `.github/ki-version` reads `v0.10.5`. The record blocks KI-TOOL-KI-CLI-131.
+
+**Query:** May the thread run Verify 4 and then bring the record to you for `ki-accept`?
+
+**Options:**
+a) (recommended) Dispatch one agent to run Verify 4 against ki-principal's pinned `v0.10.5` and add the evidence to the record. Then Kris accepts through `ki-accept`.
+b) Leave it to the ways-of-working thread.
+
+### RETIRED-REPORTS - deliver KI-TOOL-KI-CLI-133
+
+**Context:** [KI-TOOL-KI-CLI-133](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-133-retired-reports-come-back.md) is Ready / Now with a chosen rule: Git-known paths are never re-adopted. It has three Steps and no dependencies. It was planned on 15 October "for the owner's go-ahead to deliver", and it has no Project.
+
+**Query:** Do you give the go-ahead to deliver KI-TOOL-KI-CLI-133 under tools-burndown?
+
+**Options:**
+a) (recommended) Assign it to tools-burndown and dispatch `ki-implement` to Awaiting review, first in the `tools-ki` lane.
+b) Hold it for the Techne agent-host thread that asked for it.
+
+### TRIAGE-ADOPT - adopt the seven tools-ki triage records
+
+**Context:** These seven records are triage with no Project:
+- [KI-TOOL-KI-CLI-131](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-131-host-absent-store-state.md)
+- [KI-TOOL-KI-CLI-134](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-134-launch-footer-follows-brief.md)
+- [KI-TOOL-KI-CLI-135](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-135-reused-agent-name-overwrites.md)
+- [KI-TOOL-KI-CLI-136](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-136-errors-suggest-fixes.md)
+- [KI-TOOL-KI-CLI-137](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-137-agent-run-tmp-home.md)
+- [KI-TOOL-KI-CLI-138](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-138-warn-unknown-record-fields.md)
+- [KI-TOOL-KI-CLI-139](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-139-ebu-sources-sync.md)
+
+Burning down to zero means each must be adopted, merged or rejected. Six are CLI corrections or small launcher capabilities. KI-TOOL-KI-CLI-139 is an acquisition capability that an HNR record depends on.
+
+**Query:** How should the seven triage records be dispositioned?
+
+**Options:**
+a) (recommended) Adopt KI-TOOL-KI-CLI-131, KI-TOOL-KI-CLI-134, KI-TOOL-KI-CLI-135, KI-TOOL-KI-CLI-136, KI-TOOL-KI-CLI-137 and KI-TOOL-KI-CLI-138 as deliver / Next under tools-burndown through `ki-next`, letting `ki-plan` decide whether KI-TOOL-KI-CLI-136's store part folds into KI-TOOL-KI-CLI-131. Adopt KI-TOOL-KI-CLI-139 as deliver / Next under knowledge-acquisition.
+b) Adopt only the corrective records (KI-TOOL-KI-CLI-131, KI-TOOL-KI-CLI-135, KI-TOOL-KI-CLI-136, KI-TOOL-KI-CLI-138), and reject or defer the capabilities.
+
+### RELEASE-CONTRACT - KI-TOOL-KI-CLI-125 against the Project end
+
+**Context:** [KI-TOOL-KI-CLI-125](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-125-ki-release-contract.md) is on Hold until 2026-11-16 for an ARM host. `ki` already ships signed archives for the three platforms in use, so the `ki` release does not need this record. The Project outcome, though, says every record closed, merged or rejected.
+
+**Query:** Does KI-TOOL-KI-CLI-125 stay outside the release gate?
+
+**Options:**
+a) (recommended) Keep it on Hold with the agent-host Project and exclude it from tools-burndown's burn-to-zero. The Project note says so, and the `ki` release proceeds without it.
+b) Cancel it now and recapture it when an ARM host exists.
+
+### MGIT-RELEASE - what "ending with the mgit release" means
+
+**Context:** `tools-mgit` has no open records and no commit since `v0.17.0`. An mgit release would contain nothing unless REPO-GIT-HYGIENE work lands mgit changes.
+
+**Query:** Is an mgit release still required to close the Project?
+
+**Options:**
+a) (recommended) Cut an mgit release only if mgit changes land during the Project, with your approval. Otherwise record `v0.17.0` as the Project's mgit release.
+b) Always cut a fresh mgit release at the end.
+
+```text
+OWNER-LANE
+
+tools-burndown runs the only tools-ki writer for all in-scope records; tell the ways-of-working and knowledge-acquisition threads through Messages from Master, and they keep priority and acceptance input.
+
+---
+
+STORE-REPAIR
+
+Dispatch one agent to run Verify 4 of KI-TOOL-KI-CLI-126 (/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-126-unavailable-store-breaks-repair.md) against ki-principal's pinned v0.10.5 and add the evidence to the record; then bring it to me for ki-accept.
+
+---
+
+RETIRED-REPORTS
+
+Assign KI-TOOL-KI-CLI-133 (/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-133-retired-reports-come-back.md) to tools-burndown and dispatch ki-implement to Awaiting review, first in the tools-ki lane.
+
+---
+
+TRIAGE-ADOPT
+
+Adopt KI-TOOL-KI-CLI-131, KI-TOOL-KI-CLI-134, KI-TOOL-KI-CLI-135, KI-TOOL-KI-CLI-136, KI-TOOL-KI-CLI-137 and KI-TOOL-KI-CLI-138 as deliver / Next under tools-burndown through ki-next, with ki-plan deciding whether KI-TOOL-KI-CLI-136's store part folds into KI-TOOL-KI-CLI-131; adopt KI-TOOL-KI-CLI-139 as deliver / Next under knowledge-acquisition.
+
+---
+
+RELEASE-CONTRACT
+
+Keep KI-TOOL-KI-CLI-125 (/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-125-ki-release-contract.md) on Hold with the agent-host Project and exclude it from tools-burndown's burn-to-zero; say so in the Project note; the ki release proceeds without it.
+
+---
+
+MGIT-RELEASE
+
+Cut an mgit release only if mgit changes land during the Project, with my approval; otherwise record v0.17.0 as the Project's mgit release.
+```
+
+```text
+╭─ run report · 2026-10-16T00:32:00Z ──────────────╮
+│                                                  │
+│  █▀▀▄ █  █ █▀▀▀ █  █   · thread busy             │
+│  █▀▀▄ █  █ ▀▀▀█  ▀█▀   · running or queued work  │
+│  █▄▄▀ █▄▄█ ▄▄▄█   █    · lines below say which   │
+│                                                  │
+╰──────────────────────────────────────────────────╯
+```
+
+- [running] git-hygiene - REPO-GIT-HYGIENE in tools-ki, capturing its triage record
+- [waiting] OWNER-LANE
+- [waiting] STORE-REPAIR
+- [waiting] RETIRED-REPORTS
+- [waiting] TRIAGE-ADOPT
+- [waiting] RELEASE-CONTRACT
+- [waiting] MGIT-RELEASE
+- [uncommitted] inventory.report.md, left for the thread to commit
+- [held] KI-TOOL-KI-CLI-125 until 2026-11-16
