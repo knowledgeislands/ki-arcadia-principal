@@ -27,7 +27,7 @@ Nothing is running.
 
 Outstanding - no action requested now. These are for ci-findings, from the audit after the push:
 
-- **ways-of-working, before 15 October:** two PMO-7 findings. `types-reconcile.report.md` leaves KI-HARNESS-GOV-182 and [KI-PRINCIPAL-ECO-013](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-ECO-013-pmo-extraction-pilot.md) bare, and `types-review.report.md` leaves [KI-PRINCIPAL-MOD-006](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-MOD-006-knowledge-acquisition-lifecycle.md) and [KI-PRINCIPAL-MOD-008](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-MOD-008-whole-philosophy-coherence-review.md) bare.
+- **ways-of-working, before 15 October:** two PMO-7 findings. `types-reconcile.report.md` leaves [KI-HARNESS-GOV-182 (pruned)](https://github.com/knowledgeislands/ki-agentic-harness/blob/dd5761c67cb1ed939d0c4925f5b4e4328dbace34/docs/roadmap/KI-HARNESS-GOV-182-wave-e-skill-renames.md) and [KI-PRINCIPAL-ECO-013](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-ECO-013-pmo-extraction-pilot.md) bare, and `types-review.report.md` leaves [KI-PRINCIPAL-MOD-006](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-MOD-006-knowledge-acquisition-lifecycle.md) and [KI-PRINCIPAL-MOD-008](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-MOD-008-whole-philosophy-coherence-review.md) bare.
 - **PMO-7 in other threads' reports:**
 
   | Thread folder | Findings |
