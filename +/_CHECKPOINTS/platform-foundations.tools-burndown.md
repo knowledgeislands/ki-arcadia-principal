@@ -2,9 +2,9 @@
 type: ki-checkpoint
 thread: platform-foundations.tools-burndown
 label: 'Fnd: tools-burndown'
-state: rest
+state: busy
 created_at: 2026-10-16T00:05:00Z
-updated_at: 2026-10-16T02:25:00Z
+updated_at: 2026-10-16T20:41:00Z
 ---
 
 # platform-foundations.tools-burndown
@@ -13,9 +13,9 @@ updated_at: 2026-10-16T02:25:00Z
 
 ## Pick-up
 
-- Status: rest. Nothing running or queued; eleven owner queries open (below).
+- Status: busy. Running push-tools-ki, branch-clean and handoffs; queued push-principal (after handoffs), accept-review (after push-principal), deps-types-node (after accept-review). Two owner queries open: TMP-HOME, DIGESTS-SCAFFOLD.
 - Resume line: `Resume Fnd: tools-burndown under current ki-pmo and ki-delegation since 2026-10-16T00:05:00Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`
-- Next steps: on Kris's answers, push tools-ki (PUSH-ORDER); dispatch an independent review of the seven Awaiting-review records, then bring them to Kris for ki-accept (ACCEPT-WAVE); once KI-TOOL-KI-CLI-126 is accepted, plan and deliver KI-TOOL-KI-CLI-131 then -136; on TMP-HOME, deliver -137; on FOOTER-GRANTS, -134; adopt the @types/node patch (DEPS-1-TYPES-NODE); run the branch and PR clean-down only on STALE-BRANCHES and AUTOMATION-BRANCHES answers. Ask Kris before any ki or mgit release or remote branch delete.
+- Next steps: bring accept-review verdicts to Kris for ki-accept; once KI-TOOL-KI-CLI-126 is accepted, plan and deliver KI-TOOL-KI-CLI-131 then -136; deliver -137 on TMP-HOME and once the harness renumbers its KI-HARNESS-GOV-195; -134 Ready once the harness grant record is agreed; push ki-principal at each resting point. Ask Kris before any ki or mgit release.
 
 ## Objective
 
@@ -23,7 +23,7 @@ Burn down the open roadmap work of [tools-burndown](/Users/krisbrown/workspaces/
 
 ## Current state
 
-- Running: nothing. Queued: nothing.
+- Running: push-tools-ki, branch-clean, handoffs. Queued: push-principal, accept-review, deps-types-node.
 - Mark: none yet; thread opened 2026-10-16T00:05:00Z.
 - Awaiting review in tools-ki: KI-TOOL-KI-CLI-126 (Verify 4 passed), -130, -133, -135, -123, -127, -138. Adopted and planned draft: -131, -136 (wait on -126 acceptance), -137 (TMP-HOME), -134 (FOOTER-GRANTS); -140 adopted, unplanned (waits on ki-git rubric); -139 adopted under knowledge-acquisition; -125 on Hold, outside the burn-to-zero.
 - tools-ki main: 22 local commits, all this thread's runs, unpushed (PUSH-ORDER). Installed `ki` runs from this working tree, so the delivered changes are live before review.
@@ -36,17 +36,9 @@ Burn down the open roadmap work of [tools-burndown](/Users/krisbrown/workspaces/
 ## Decisions made
 
 - 2026-10-16: thread reopened, TOOLS-PROJECT, REPO-GIT-HYGIENE and BURN-OVERNIGHT (option a for OWNER-LANE, STORE-REPAIR up to evidence, RETIRED-REPORTS, TRIAGE-ADOPT, RELEASE-CONTRACT, MGIT-RELEASE, STAGING-LEFTOVERS and the ff-only levelling): see `+/_THREADS/tools-burndown/decisions.md`.
+- 2026-10-16 21:40 BST: Kris answered ACCEPT-WAVE, PUSH-ORDER, UNPUSHED-COMMITS (push ki-principal at each resting point), STALE-BRANCHES, AUTOMATION-BRANCHES, FOOTER-GRANTS, GOV-195-COLLISION, HARNESS-FOLLOW-ONS and DEPS-1-TYPES-NODE, all a): see decisions.md.
 
 ## Open queries
 
-- ACCEPT-WAVE: independent review of seven Awaiting-review records, then Kris accepts; recommended a). Folds STORE-REPAIR, VERIFY4-CI, CLI-130-ACCEPT and ACCEPT-133.
-- PUSH-ORDER: push tools-ki's 22 own commits fast-forward; recommended a).
-- UNPUSHED-COMMITS: Kris decides the ki-principal mixed-stack push; recommended a) push.
-- STALE-BRANCHES: delete chezmoi local agent/add-hermes-agent and origin phase7-sweep, ki-principal hold/2026-10-15/working-state (patch-equivalent); recommended a).
-- AUTOMATION-BRANCHES: close PR #23 and #27 as superseded, delete five automation branches; recommended a).
 - TMP-HOME: $TMPDIR/ki-agents/<run>/<name>/ for KI-TOOL-KI-CLI-137; recommended a).
-- FOOTER-GRANTS: separate --allow fetch and --allow machine grants for KI-TOOL-KI-CLI-134; recommended a).
-- GOV-195-COLLISION: the harness session renumbers its local KI-HARNESS-GOV-195 on rebase; recommended a).
-- HARNESS-FOLLOW-ONS: the next harness session folds the four wording follow-ons into KI-HARNESS-GOV-175; recommended a).
-- DEPS-1-TYPES-NODE: next tools-ki run adopts @types/node 26.6.4; recommended a).
 - DIGESTS-SCAFFOLD: keep -/_DIGESTS/ as the declared scaffold; recommended a).

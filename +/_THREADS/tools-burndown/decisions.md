@@ -146,3 +146,27 @@ Kris, Messages from Master: "state-of-play now hold REPO-GIT-HYGIENE with STALE-
 Kris: "Get through as many of these as you can to get the room up down as much as possible and focus on the ones which you have the most confidence in and also that there's a good overlap between some areas that have been tackled at the same time. I'm going to sleep for a few hours now."
 
 Applied as option a) for OWNER-LANE, STORE-REPAIR (up to evidence; acceptance stays with Kris), RETIRED-REPORTS, TRIAGE-ADOPT, RELEASE-CONTRACT, MGIT-RELEASE and STAGING-LEFTOVERS, and the ff-only levelling part of UNPUSHED-COMMITS. Not taken without an explicit answer, under Kris's standing "Remote branch deletes and any ki or mgit release ask me first": STALE-BRANCHES and AUTOMATION-BRANCHES deletes and PR closes (read-only re-check only), pushing other sessions' ki-principal commits, ki-accept, and any ki or mgit release.
+
+## 2026-10-16 21:40 BST - answers to the 03:24 BST Summary
+
+Kris, verbatim:
+
+> ACCEPT-WAVE: Dispatch one independent review agent across KI-TOOL-KI-CLI-126, KI-TOOL-KI-CLI-130, KI-TOOL-KI-CLI-133, KI-TOOL-KI-CLI-135, KI-TOOL-KI-CLI-123, KI-TOOL-KI-CLI-127 and KI-TOOL-KI-CLI-138, including a check of ki-principal's hosted CI run for KI-TOOL-KI-CLI-126; it reports findings only, and I then accept the clean ones with ki-accept.
+>
+> PUSH-ORDER: Push tools-ki main's 22 commits from this thread's runs fast-forward now, with no --no-verify.
+>
+> UNPUSHED-COMMITS: Push ki-principal's 16 commits fast-forward now and at each resting point, other sessions' included; Rig: chezmoi reconciles chezmoi, and ways-of-working answers OTHER-PUSH.
+>
+> STALE-BRANCHES: Delete chezmoi's local agent/add-hermes-agent, plus chezmoi's phase7-sweep and ki-principal's hold/2026-10-15/working-state on origin; send every other branch with commits not on main to its territory thread.
+>
+> AUTOMATION-BRANCHES: Close apps-knowledgeislands.info PR #23 and ki-agentic-harness PR #27 with "superseded by a later release", then delete the five automation/* branches on origin.
+>
+> FOOTER-GRANTS: KI-TOOL-KI-CLI-134 delivers separate --allow fetch and --allow machine grants beside --rules <tier>, each a harness-owned section that lifts only the matching ban; the harness owner opens a ki-delegation record for the two grant texts, and KI-TOOL-KI-CLI-134 becomes Ready once that is agreed.
+>
+> GOV-195-COLLISION: The harness session that owns f0f62c02 renumbers its thread-folder record to the next free KI-HARNESS-GOV identifier when it rebases, before pushing; tools-burndown then updates KI-TOOL-KI-CLI-137's reference.
+>
+> HARNESS-FOLLOW-ONS: The next ki-agentic-harness session folds the four wording follow-ons (run events, ki-delegation flags, the coordinator-reminder Codex check, unique agent names) into KI-HARNESS-GOV-175 and lands them together.
+>
+> DEPS-1-TYPES-NODE: The next tools-ki run in this thread adopts @types/node 26.6.4 with a frozen install, full test, type and audit gates, and one local chore(deps) commit.
+
+Applied as given. Standing from UNPUSHED-COMMITS: push ki-principal fast-forward at each resting point. Not answered, still open: TMP-HOME, DIGESTS-SCAFFOLD.
