@@ -7,7 +7,7 @@
 ## Done
 
 - **The reply forms are delivered in commit `f23c1ccc` (`feat(ki-pmo): separate the three reply forms`), pushed to `origin/main` in ki-agentic-harness.** This is the commit forms-rest is checking for.
-- Under FORMS-RECORD, captured [KI-HARNESS-GOV-198](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-198-reply-forms.md) ("Reply forms"). It is at `awaiting-review` with its review packet, and links the [decisions log](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/decisions.md) and the [reporting-forms report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/reporting-forms.report.md). Its number was reserved in `91d27569`, which was also pushed.
+- Under FORMS-RECORD, captured [KI-HARNESS-GOV-198](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-198-reply-forms.md) ("Reply forms"). It is at `awaiting-review` with its review packet, and links the [decisions log](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/decisions.md) and the [reporting-forms report (deleted)](https://github.com/knowledgeislands/ki-principal/blob/528b53b1cddabb0bb4fb809a426a08baac75fa8b/+/_THREADS/ways-of-working/reporting-forms.report.md). Its number was reserved in `91d27569`, which was also pushed.
 - Made edits 5.1 to 5.6 as drafted, on top of harness-routine's changes to `standards-pmo.md`, which are all still there:
   - the new `## Reply forms` section, with its three subsections and Contents entries;
   - the Banner row, Re-anchoring, Owner report, Heading and Reply-block edits;

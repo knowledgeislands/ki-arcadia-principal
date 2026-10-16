@@ -34,7 +34,7 @@
 
 ### 3. Thread naming
 
-- **Settled (decided, not landed):** THREAD-NAMES. Showing `KI > SoP`, `KI > Model > ways of working`, `KI > Model > knowledge acquisition`, `KI > Rig > mac studio setup`, `KI > mics / webcams`, `Acquire > intake (sol)` and `Chezmoi > misc (sol)`, Kris said "this is a better way I think", and on the host: "no, the machine is only added if its limited to that machine, so intake and chezmoi misc are machine specific". The [thread-names report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/thread-names.report.md) stopped before any edit (THREAD-NAMES-GATE).
+- **Settled (decided, not landed):** THREAD-NAMES. Showing `KI > SoP`, `KI > Model > ways of working`, `KI > Model > knowledge acquisition`, `KI > Rig > mac studio setup`, `KI > mics / webcams`, `Acquire > intake (sol)` and `Chezmoi > misc (sol)`, Kris said "this is a better way I think", and on the host: "no, the machine is only added if its limited to that machine, so intake and chezmoi misc are machine specific". The [thread-names report (deleted)](https://github.com/knowledgeislands/ki-principal/blob/528b53b1cddabb0bb4fb809a426a08baac75fa8b/+/_THREADS/ways-of-working/thread-names.report.md) stopped before any edit (THREAD-NAMES-GATE).
 - **Landed:** the ki-checkpoint label is `<Initiative title>: <project>`, for example `Techne: agent-host`, with `Master: state-of-play` for the state-of-play thread. The ki-pmo openers carry that label. The ki-pmo mechanical boundary checks that "each coordination checkpoint's label ends in the Project name its filename carries".
 - **Conflicts:**
   - Today's labels follow neither form consistently: `KI Model`, `Knowledge Islands Model`, `Fnd`, `Observatory: product` and `Knowledge Islands: registry removal`. The [knowledge-islands-model.observatory checkpoint](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/knowledge-islands-model.observatory.md) names a Project with no note in `Streams/Projects/`. The ki-checkpoint example `Platform Foundations: chezmoi` is stale, because chezmoi now sits under Rig.
@@ -88,10 +88,10 @@ Nothing is running in this run.
 Outstanding - no action requested now:
 
 - Already open elsewhere and not re-raised here:
-  - GATE-INACTIVE and PICKUP-HEADING, in the [pmo-hold report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/pmo-hold.report.md).
-  - SOL-GATE, in the [registry-model report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/registry-model.report.md).
-  - THREADS-APPLY, in the [threads-records report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/threads-records.report.md).
-  - THREAD-NAMES-GATE, in the [thread-names report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/ways-of-working/thread-names.report.md).
+  - GATE-INACTIVE and PICKUP-HEADING, in the [pmo-hold report (deleted)](https://github.com/knowledgeislands/ki-principal/blob/528b53b1cddabb0bb4fb809a426a08baac75fa8b/+/_THREADS/ways-of-working/pmo-hold.report.md).
+  - SOL-GATE, in the [registry-model report (deleted)](https://github.com/knowledgeislands/ki-principal/blob/528b53b1cddabb0bb4fb809a426a08baac75fa8b/+/_THREADS/ways-of-working/registry-model.report.md).
+  - THREADS-APPLY, in the [threads-records report (deleted)](https://github.com/knowledgeislands/ki-principal/blob/528b53b1cddabb0bb4fb809a426a08baac75fa8b/+/_THREADS/ways-of-working/threads-records.report.md).
+  - THREAD-NAMES-GATE, in the [thread-names report (deleted)](https://github.com/knowledgeislands/ki-principal/blob/528b53b1cddabb0bb4fb809a426a08baac75fa8b/+/_THREADS/ways-of-working/thread-names.report.md).
 - Untracked files from other sessions, left alone: `+/_THREADS/desk-kit/`, and `messenger.report.md`, `streams-index.report.md`, `thread-names.report.md` and `threads-records.report.md` in this thread folder.
 - The harness `docs/diagrams/`, every checkpoint, and `Admin`, `Pillars` and `Resources` were not touched.
 - My scratch copies of landed standards sit in the ignored `/Users/krisbrown/workspaces/knowledge-islands/ki-principal/tmp/ways-of-working/thread-model-review/`. Delete them when the run closes.
