@@ -6,7 +6,7 @@
 
 ## Done
 
-- RESTART-SET worked out in the [restart-model design note](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/ways-of-working/design/restart-model.md), with HOLD-MODEL, HOLD-VERBS and HOLD-BANNER folded in as six rules, and indexed in the ways-of-working [design folder index](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/ways-of-working/design/design.md). The table:
+- RESTART-SET worked out in the [restart-model design note, now in ki-pmo](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/skills/change-management/ki-pmo/references/standards-pmo.md#picking-up-a-thread), with HOLD-MODEL, HOLD-VERBS and HOLD-BANNER folded in as six rules, and indexed in the ways-of-working [design folder index](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/ways-of-working/design/design.md). The table:
 
 | Banner | Thread type | Status | Resume line in the pick-up block | First on resume |
 | --- | --- | --- | --- | --- |

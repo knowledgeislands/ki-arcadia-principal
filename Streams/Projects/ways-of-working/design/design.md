@@ -1,6 +1,6 @@
 ---
 note_type: streams/index
-updated: 2026-10-15T21:20:00Z
+updated: 2026-10-16T22:15:00Z
 author: Written with Claude
 ---
 
@@ -59,4 +59,4 @@ The remaining names in the set pass: `ki-plan`, `ki-implement`, `ki-accept`, `ki
 
 ## Restart model
 
-[[restart-model]] is a design-only note for adoption into `ki-pmo`: the pick-up state of a thread as its banner type combined with its thread type, in one table giving each combination's status, resume line and first instructions on resume and naming the combinations that cannot occur, with six rules folding in Kris's HOLD-MODEL, HOLD-VERBS and HOLD-BANNER of 15 October 2026: drain and resume are activities and hold is the state, every banner writes a pick-up block at the top of the checkpoint, no resume line names a host, and the drain report becomes the hold report with a HOLD frame.
+The restart-model design note graduated into `ki-pmo` in ki-agentic-harness `2007749e` and was then deleted, as Kris decided under DESIGN-HOME on 16 October 2026; Git history holds it. Its pick-up table, rules and hold report now live in the `ki-pmo` standard's [Picking up a thread](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/skills/change-management/ki-pmo/references/standards-pmo.md#picking-up-a-thread) and [Draining a thread](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/skills/change-management/ki-pmo/references/standards-pmo.md#draining-a-thread).
