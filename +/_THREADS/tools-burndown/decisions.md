@@ -140,3 +140,9 @@ The final form is Drain report: Done, Parked and Left over; no Context/Query/Opt
 Kris: "Open Fnd: tools-burndown as a coordination thread under ki-pmo ... dispatch the burn-down to background agents - chain same-repository work, about three at once, no new feature records beyond REPO-GIT-HYGIENE's one, and stop to ask me before any ki or mgit release - then banner."
 
 Kris, Messages from Master: "state-of-play now hold REPO-GIT-HYGIENE with STALE-BRANCHES, AUTOMATION-BRANCHES, UNPUSHED-COMMITS and STAGING-LEFTOVERS folded in; they are yours from 16 October 01:00 BST ... Start by checking what mgit already reports, capture the one ki-next triage record in tools-ki, route the rubric rule to KI Model: ways-of-working, and remove the lines once acted on. Remote branch deletes and any ki or mgit release ask me first."
+
+## 2026-10-16 01:40 BST - BURN-OVERNIGHT
+
+Kris: "Get through as many of these as you can to get the room up down as much as possible and focus on the ones which you have the most confidence in and also that there's a good overlap between some areas that have been tackled at the same time. I'm going to sleep for a few hours now."
+
+Applied as option a) for OWNER-LANE, STORE-REPAIR (up to evidence; acceptance stays with Kris), RETIRED-REPORTS, TRIAGE-ADOPT, RELEASE-CONTRACT, MGIT-RELEASE and STAGING-LEFTOVERS, and the ff-only levelling part of UNPUSHED-COMMITS. Not taken without an explicit answer, under Kris's standing "Remote branch deletes and any ki or mgit release ask me first": STALE-BRANCHES and AUTOMATION-BRANCHES deletes and PR closes (read-only re-check only), pushing other sessions' ki-principal commits, ki-accept, and any ki or mgit release.
