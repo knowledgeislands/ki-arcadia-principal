@@ -11,9 +11,9 @@ updated_at: '2026-10-16T21:06:00Z'
 
 **Pick-up - mark 2026-10-15T15:09:48Z (16:09 BST)**
 
-- Status: busy. Running and queued: harness-routine, forms-harness, identity-phase1 (ki-agentic-harness chain); principal-gate, ci-findings, cli-repin, messenger-relay, forms-rest (ki-principal chain), under Kris's ROUTINE, REPLY-FORMS and SESSION-IDENTITY answers of 16 October. Label `KI > Model > ways of working`.
+- Status: busy. Running: master-harness (ki-agentic-harness: GOV-195 renumber to the next free serial with the tools-burndown message, HARNESS-FOLLOW-ONS into KI-HARNESS-GOV-175, FOOTER-GRANTS and SRC-BADGE captures, REPO-GIT-HYGIENE). Queued: thread-tidy (ki-principal: DESIGN-HOME, repoint and delete the answered reports, remove acted-on Master lines), after master-harness. Every 16 October run has reported. tools-ki holds five of this thread's commits unpushed above 26 other-session commits (TOOLS-PUSH); chezmoi holds three unpushed and unapplied (CHEZMOI-APPLY). Open queries: TOOLS-PUSH, RUN-HYGIENE, IDENTITY-NEXT, CHEZMOI-APPLY, SHAPE-AGREE, STATE-AGREE, NAMING, IDEAS-ROOTING; their full text is in `~/.local/state/ki/agents/ways-of-working/summary-draft.md` and the kept reports. Label `KI > Model > ways of working`.
 - Resume line: `Resume KI > Model > ways of working under current ki-pmo and ki-delegation since 2026-10-15T15:09:48Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`
-- Next steps: let both chains finish; then put NAMING and IDEAS-ROOTING to Kris; CHEZMOI-APPLY waits on Kris's `chezmoi diff` review after forms-rest.
+- Next steps: let master-harness and thread-tidy finish; act on Kris's answers to the eight queries, SHAPE-AGREE before any decisions-log move; SYNC-GUARD goes into KI-HARNESS-GOV-189 with STATE-AGREE's host-naming amendment; AREAS-DISPATCH waits on state-of-play's OBS-MERGE and NEW-AREAS.
 
 **Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
 
