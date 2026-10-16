@@ -4,16 +4,17 @@ thread: _state-of-play
 label: 'Master: state-of-play'
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-16T21:00:00Z
+updated_at: 2026-10-16T21:05:00Z
 ---
 
 # _state-of-play
 
 ## Pick-up - mark 2026-10-15T15:14:39Z (16:14 BST)
 
-- **Status:** rest. Running: nothing. First wave done 2026-10-16 01:29 BST; replies of 16 October acted on by 21:58 BST: ki-principal pushed and level; hold branch already gone from GitHub; STALE-PRS to Fnd: tools-burndown, MAC-TIDY to Rig: mac-studio-setup, FW-DECLARE-NOW, CHEZMOI-RESUME and SSH-SPARE-KEY (console is the restore path, no spare key) to Rig: chezmoi, now carried by Chezmoi > misc (sol), and THREADS-CHECKINS (XDG usage) to KI Model: ways-of-working. REPO-GIT-HYGIENE and its folded queries belong to Fnd: tools-burndown. No open queries.
+- **Status:** rest. Running: nothing. 2026-10-16 22:05 BST: replies of 16 October acted on; roadmap summary diagnostics routed (KI-HARNESS-GOV-195 duplicate: ways-of-working renumbers the thread-folder record to KI-HARNESS-GOV-197; KI-TOOL-KI-CLI-139 frontmatter check to Fnd: tools-burndown). Open queries: AWAITING-REVIEW (11 awaiting-review and 2 done records) and RIG-OWNER (no burndown owner for tools-rig). tools-ki local main 22 ahead and 9 behind origin: Fnd: tools-burndown's under UNPUSHED-COMMITS.
 - **Resume:** `Resume Master: state-of-play under current ki-pmo and ki-delegation since 2026-10-15T15:14:39Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`
 - **Next steps, in order:**
+  0. Act on Kris's replies to AWAITING-REVIEW and RIG-OWNER.
   1. Check the receiving threads act on their Messages from Master lines: Fnd: tools-burndown (REPO-GIT-HYGIENE, STALE-PRS), Rig: chezmoi (FW-DECLARE-NOW, CHEZMOI-RESUME, SSH-SPARE-KEY), Rig: mac-studio-setup (MAC-TIDY), KI Model: ways-of-working (CHURN-REMEDIES, SRC-BADGE, DESIGN-HOME, THREADS-CHECKINS).
   2. STASH-DROP (approved 2026-10-16 01:10 BST) at the next session with the terra checkout.
   3. KI-PRINCIPAL-MOD-008 hold review, due 2026-10-16.
