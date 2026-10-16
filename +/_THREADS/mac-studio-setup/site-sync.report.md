@@ -19,7 +19,7 @@
 - **Actual** (budgeting) is listed as adopted, but Rig declares it nowhere. See SITE-ACTUAL.
 - **Spark Mail** is called "not currently the active default", yet Rig's private `spark-desktop` entry says it is the one mail client on every machine. I left it so the page names no private declaration. See SITE-SPARK.
 - Rig on the dev-channel Macs runs from a checkout, not the Homebrew tap the software page names. I kept the tap, because it is the declared and published route.
-- The chezmoi source has uncommitted edits from another run: the App Store migration and the Adobe sweep. The site reflects what is rendered now. After those land, the weekly MIDNIGHT-HK-001 refresh will catch any change in public membership.
+- The chezmoi source has uncommitted edits from another run: the App Store migration and the Adobe sweep. The site reflects what is rendered now. After those land, the weekly [MIDNIGHT-HK-001](/Users/krisbrown/workspaces/personal/apps-rig.midnight.ninja/docs/housekeeping/MIDNIGHT-HK-001-refresh-the-rig-catalogue.md) refresh will catch any change in public membership.
 - Three tools still have no homepage link: Activity Monitor, Finder and Delta, unchanged from the last refresh.
 
 ## In Progress
@@ -80,6 +80,6 @@ SITE-PRIVATE - a) keep 1Password, its CLI and The Tower on the software page
 - [at rest] site-sync finished; nothing running from this run
 - [queries] SITE-PUSH, SITE-ACTUAL, SITE-SPARK, SITE-PRIVATE
 - [unpushed] apps-rig.midnight.ninja `main` on sol is 2 commits ahead (`cef3f96`, `e9503fd`)
-- [audit] KB-MIDNIGHT-RIG-SITE-001's record shape already fails `ki repo audit`; it is owned by that record's own review
+- [audit] [KB-MIDNIGHT-RIG-SITE-001](/Users/krisbrown/workspaces/personal/apps-rig.midnight.ninja/docs/roadmap/KB-MIDNIGHT-RIG-SITE-001-show-hosts-per-tool.md)'s record shape already fails `ki repo audit`; it is owned by that record's own review
 
 Resume Rig: mac-studio-bootstrap under current ki-pmo and ki-delegation since 2026-10-14T16:47Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.

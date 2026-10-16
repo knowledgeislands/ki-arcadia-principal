@@ -36,7 +36,7 @@
   - Dropped as settled: INCEPTION-TYPE (by INCEPTION-SHAPE); EVAL-STAGE option c), a Project `kind` field (by INCEPTION-SHAPE); NEW-AREAS (answered); TYPE-FIELD's Project half (by INCEPTION-SHAPE).
   - Merged: AREAS-PATTERN, EVAL-STAGE and AREA-WORD become IDEA-STAGE and IDEA-CAP, using Kris's own word "idea-stage" and keeping "area" for the record issuing namespace. TYPE-FIELD's Initiative half and crosswalk, and REGISTRY-CHECK, become REGISTRY-RECORD.
   - Carried, adjusted: PAUSE-CONDITION (delta-evaluation leaves the paused list under IDEA-STAGE), PRIORITY-FIELD and STREAMS-INDEX, unchanged.
-- **Committed, not pushed.** This report is the only file changed, committed by explicit path through a private index; In Progress gives why it is not pushed. Checks: every local link resolves, the pruned KI-HARNESS-GOV-182 link exists at the cited revision, and the report has no en or em dashes.
+- **Committed, not pushed.** This report is the only file changed, committed by explicit path through a private index; In Progress gives why it is not pushed. Checks: every local link resolves, the pruned [KI-HARNESS-GOV-182 (pruned)](https://github.com/knowledgeislands/ki-agentic-harness/blob/dd5761c67cb1ed939d0c4925f5b4e4328dbace34/docs/roadmap/KI-HARNESS-GOV-182-wave-e-skill-renames.md) link exists at the cited revision, and the report has no en or em dashes.
 
 ## In Progress
 
@@ -81,7 +81,7 @@ c) No numeric cap; state-of-play reviews every idea-stage Project at each mark.
 
 ### REGISTRY-RECORD - One record for the registry standard changes
 
-**Context:** The idea-stage rule is a standard change needing acceptance, so under RECORD-THRESHOLD it needs a record, but no existing record covers the `ki-work` Project registry standard: KI-HARNESS-GOV-182 is pruned, KI-PRINCIPAL-ECO-013 is the `ki-pmo` pilot, KI-HARNESS-GOV-170 is resolution targets, and roadmap-model is paused with no records. Related changes share one record. Types-review's other registry findings belong in the same record: a crosswalk naming the comparable attribute at each level and stating that Projects and Initiatives take no type field; checks on Project and Initiative `lifecycle`, `lead`, `outcome` and `direction`; and optional `purpose` and `component` on Activities, which ki-principal already uses.
+**Context:** The idea-stage rule is a standard change needing acceptance, so under RECORD-THRESHOLD it needs a record, but no existing record covers the `ki-work` Project registry standard: [KI-HARNESS-GOV-182 (pruned)](https://github.com/knowledgeislands/ki-agentic-harness/blob/dd5761c67cb1ed939d0c4925f5b4e4328dbace34/docs/roadmap/KI-HARNESS-GOV-182-wave-e-skill-renames.md) is pruned, [KI-PRINCIPAL-ECO-013](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-ECO-013-pmo-extraction-pilot.md) is the `ki-pmo` pilot, [KI-HARNESS-GOV-170](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-170-keep-resolution-targets-local.md) is resolution targets, and roadmap-model is paused with no records. Related changes share one record. Types-review's other registry findings belong in the same record: a crosswalk naming the comparable attribute at each level and stating that Projects and Initiatives take no type field; checks on Project and Initiative `lifecycle`, `lead`, `outcome` and `direction`; and optional `purpose` and `component` on Activities, which ki-principal already uses.
 
 **Query:** Should ways-of-working capture one new harness record carrying the idea-stage rule and the other registry changes?
 
@@ -89,7 +89,7 @@ c) No numeric cap; state-of-play reviews every idea-stage Project at each mark.
 
 a) (recommended) Capture one `triage` record in ki-agentic-harness through `ki-next`, `kind: deliver`, `purpose: governance`, `project: ways-of-working`, carrying the IDEA-STAGE and IDEA-CAP answers into the `ki-work` Project registry standard with delta-evaluation as the cited precedent, the attribute crosswalk with no type on Projects or Initiatives, the `ki-repo-kb-streams` checks on registry values and the idea-stage rules, and optional `purpose` and `component` in the `ki-repo-kb-activities` standard. The harness owns its plan, priority and acceptance.
 
-b) Keep the record in ki-principal, as KI-PRINCIPAL-ECO-013 does, and hand the harness changes over as its delivery steps.
+b) Keep the record in ki-principal, as [KI-PRINCIPAL-ECO-013](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-ECO-013-pmo-extraction-pilot.md) does, and hand the harness changes over as its delivery steps.
 
 c) Resume the paused roadmap-model Project and capture the record under it.
 
@@ -113,7 +113,7 @@ b) Add a `hold`-style mapping (`reason`, `condition`, `review`) to Project front
 
 **Options:**
 
-a) (recommended) Remove `priority` from KI-PRINCIPAL-MOD-006 and KI-PRINCIPAL-MOD-008 under Kris's instruction, and have the KB Streams checker and tools-ki warn on any unknown record field, matching the project-roadmap adapter. Horizon stays the only priority signal.
+a) (recommended) Remove `priority` from [KI-PRINCIPAL-MOD-006](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-MOD-006-knowledge-acquisition-lifecycle.md) and [KI-PRINCIPAL-MOD-008](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Roadmap/KI-PRINCIPAL-MOD-008-whole-philosophy-coherence-review.md) under Kris's instruction, and have the KB Streams checker and tools-ki warn on any unknown record field, matching the project-roadmap adapter. Horizon stays the only priority signal.
 
 b) Define an optional `priority` (`high`, `medium`, `low`) in the work-item format for both adapters.
 

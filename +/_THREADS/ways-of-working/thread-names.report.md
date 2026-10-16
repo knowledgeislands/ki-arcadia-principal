@@ -29,7 +29,9 @@ Outstanding - no action requested now:
 **Query:** Should THREAD-NAMES be relaunched unchanged, chained after GATE-INACTIVE and the pmo-hold commit?
 
 **Options:**
+
 a) (recommended) Queue thread-names again with the same brief, chained after the GATE-INACTIVE install and the pmo-hold, registry-model and threads-records commits.
+
 b) Run it now, layered on pmo-hold's uncommitted edits, leaving everything uncommitted until the gate is active.
 
 ```text

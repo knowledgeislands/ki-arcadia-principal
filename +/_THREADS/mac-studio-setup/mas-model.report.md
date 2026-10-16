@@ -15,12 +15,12 @@ This was a read-only run on `sol`. Nothing was changed, installed, applied or co
 | App | In Rig? | Why | Where it is recorded |
 | --- | --- | --- | --- |
 | Keynote (409183694), Numbers (409203825), Pages (409201541) | **Yes, but catalogue-only.** Each is declared in `core` with its `/Applications` artefact and no `install` route | `mas` could not resolve the iWork App Store ids: `mas info 409183694` said no such app, although `mas list` showed it installed. That made every `rig apply` fail three installs, so on 2026-09-27 the route was taken out of both Rig and the Brewfile | chezmoi `16e7ab7` ("declare the bundled iWork apps catalogue-only"); a comment above `[tool.keynote]` in `private_10-applications.toml`; `docs/guides/agents/audits.md` |
-| PhotoSweeper (463362050) | No | Kris decided to remove it: "others not needed anymore" (2026-10-09) | DOTFILES-UE-079 (pruned in chezmoi `d362812`); removal list and step C7a of [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) |
-| Blackmagic Disk Speed Test (425264550) | No | Decided as remove: "One-off benchmark, reinstall when needed" | DOTFILES-UE-079 decision table; KB-DOTFILES-UE-086 removal list and step C7a |
+| PhotoSweeper (463362050) | No | Kris decided to remove it: "others not needed anymore" (2026-10-09) | [DOTFILES-UE-079 (pruned)](https://github.com/krisb/dotfiles/blob/02ef54dfec0f59f2635089304b624fc64026db81/docs/roadmap/DOTFILES-UE-079-undeclared-software-decisions.md) (pruned in chezmoi `d362812`); removal list and step C7a of [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) |
+| Blackmagic Disk Speed Test (425264550) | No | Decided as remove: "One-off benchmark, reinstall when needed" | [DOTFILES-UE-079 (pruned)](https://github.com/krisb/dotfiles/blob/02ef54dfec0f59f2635089304b624fc64026db81/docs/roadmap/DOTFILES-UE-079-undeclared-software-decisions.md) decision table; [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) removal list and step C7a |
 
-Neither PhotoSweeper nor Disk Speed Test was ever in a Brewfile. Both are still installed only because step 7 of the KB-DOTFILES-UE-086 at-screen instructions has not been run yet.
+Neither PhotoSweeper nor Disk Speed Test was ever in a Brewfile. Both are still installed only because step 7 of the [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) at-screen instructions has not been run yet.
 
-**Keynote, Numbers and Pages came from the App Store.** They are not part of macOS. On this Mac they sit in `/Applications`, not `/System/Applications`, and each has an App Store receipt and a `mas list` entry. Apple gives them away free and may preinstall them on a new Mac, but they are installed and updated as App Store apps. The comment in the declaration says "Bundled with the Mac", which is wrong for this Mac. The 14 October amendment to KB-DOTFILES-UE-086 ("declare in `core` from the App Store") is the decision that has not been carried out yet; it is the KEYNOTE-ROUTE query that is already open. This run made no network call, so it did not check whether `mas` can resolve the iWork ids today.
+**Keynote, Numbers and Pages came from the App Store.** They are not part of macOS. On this Mac they sit in `/Applications`, not `/System/Applications`, and each has an App Store receipt and a `mas list` entry. Apple gives them away free and may preinstall them on a new Mac, but they are installed and updated as App Store apps. The comment in the declaration says "Bundled with the Mac", which is wrong for this Mac. The 14 October amendment to [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) ("declare in `core` from the App Store") is the decision that has not been carried out yet; it is the KEYNOTE-ROUTE query that is already open. This run made no network call, so it did not check whether `mas` can resolve the iWork ids today.
 
 ### The old Brewfile against Rig now
 
@@ -31,8 +31,8 @@ The Brewfile started as `dot_Brewfile` (2026-05-09) and moved to `dot_config/pri
 | Entry | Now | Reason |
 | --- | --- | --- |
 | cask `daisydisk` | App Store 411643860 | chezmoi `a81a5f2` (2026-10-10): App Store copy on both Macs |
-| brew `uv` | mise tool | chezmoi `06857f5`: KB-DOTFILES-UE-086 section A |
-| brew `python@3.10`, `python@3.13`, `python@3.14` | Dropped | Kept in Rig in 2026-10-01 "with no recorded reason", then dropped in chezmoi `06857f5` when mise took over Python. 3.13 and 3.14 stay installed as dependencies (KB-DOTFILES-UE-086) |
+| brew `uv` | mise tool | chezmoi `06857f5`: [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) section A |
+| brew `python@3.10`, `python@3.13`, `python@3.14` | Dropped | Kept in Rig in 2026-10-01 "with no recorded reason", then dropped in chezmoi `06857f5` when mise took over Python. 3.13 and 3.14 stay installed as dependencies ([KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md)) |
 | tap `domt4/autoupdate` | Dropped, and removed from `sol` | The retirement rule above, plus the AUTOUPDATE-REMOVE decision (2026-10-14) |
 | tap `wunderlandmedia/tap` | Dropped | HotkeyClash was retired on 2026-09-16 (`3ecd73d`), which left the tap unused; the retirement rule says unused taps are not carried |
 
@@ -68,8 +68,8 @@ The Brewfile never had `whalebrew`, `go` or `cargo` lines. Today the cargo tools
   - **Upgrade:** `mas upgrade <id>`. Runs with nobody watching skip it as `interactive-required`, because it needs someone signed in to the App Store.
   - **Remove:** `sudo -n -- mas uninstall <id>`, using only an existing sudo grant.
   - **Validation:** the locator must be numeric.
-- **What fixes it in place.** The configuration spec (`docs/specs/configuration.md:131`) says: "Built-in kinds MUST include Homebrew `formula`, `cask`, and `mas`". The orchestration, removal and state specs and the Bats tests all assume the same grouping. Under ADR-KI-TOOL-RIG-005 people "declare intent and ownership rather than adapter mechanics", and under XDR-KI-TOOL-RIG-001 built-in adapters have fixed provider identities. So a provider of its own would be a spec and configuration change with a migration of all 13 declarations. No App Store app declares `requires = ["mas"]`.
-- **No earlier discussion.** No ADR, spec, live or pruned roadmap record, or commit message in tools-rig talks about a separate `mas` or App Store provider. The nearest is the KI-TOOL-RIG-CORE-041 removal design (pruned), which only lists "Homebrew formula/cask/App Store" removals.
+- **What fixes it in place.** The configuration spec (`docs/specs/configuration.md:131`) says: "Built-in kinds MUST include Homebrew `formula`, `cask`, and `mas`". The orchestration, removal and state specs and the Bats tests all assume the same grouping. Under [ADR-KI-TOOL-RIG-005](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/decisions/ADR-KI-TOOL-RIG-005-provider-execution-contract.md) people "declare intent and ownership rather than adapter mechanics", and under [XDR-KI-TOOL-RIG-001](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/decisions/XDR-KI-TOOL-RIG-001-executable-provider-boundary.md) built-in adapters have fixed provider identities. So a provider of its own would be a spec and configuration change with a migration of all 13 declarations. No App Store app declares `requires = ["mas"]`.
+- **No earlier discussion.** No ADR, spec, live or pruned roadmap record, or commit message in tools-rig talks about a separate `mas` or App Store provider. The nearest is the [KI-TOOL-RIG-CORE-041 (pruned)](https://github.com/knowledgeislands/tools-rig/blob/ea7c3b626a2c0de34fe2c1154dc594806926ee3b/docs/roadmap/RIG-CORE-041-unwanted-software-removal.md) removal design (pruned), which only lists "Homebrew formula/cask/App Store" removals.
 
 ## In Progress
 
@@ -79,11 +79,11 @@ Nothing is running from this run. KEYNOTE-ROUTE, from the ue086-rest report, is 
 
 ### MAS-UNDECLARED - The five App Store apps with no App Store route
 
-**Context.** On 2026-10-09 Kris decided to remove PhotoSweeper and Blackmagic Disk Speed Test (KB-DOTFILES-UE-086 step C7a, step 7 of the at-screen instructions). Keynote, Numbers and Pages are declared catalogue-only, because `mas` could not resolve their ids on 2026-09-27 and every apply then failed. The 14 October amendment says to give them the App Store route, which is the open KEYNOTE-ROUTE query. If that is done as written, the apply failures from 2026-09-27 could come back on a Mac that lacks the apps. Checking whether `mas` resolves the ids now is an App Store lookup, which needs approval.
+**Context.** On 2026-10-09 Kris decided to remove PhotoSweeper and Blackmagic Disk Speed Test ([KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) step C7a, step 7 of the at-screen instructions). Keynote, Numbers and Pages are declared catalogue-only, because `mas` could not resolve their ids on 2026-09-27 and every apply then failed. The 14 October amendment says to give them the App Store route, which is the open KEYNOTE-ROUTE query. If that is done as written, the apply failures from 2026-09-27 could come back on a Mac that lacks the apps. Checking whether `mas` resolves the ids now is an App Store lookup, which needs approval.
 
 **Query.** Should any of the five be declared with an App Store route, and how should KEYNOTE-ROUTE go ahead?
 
-**Options.** a) (recommended) Keep the recorded decisions. PhotoSweeper and Disk Speed Test stay undeclared and Kris removes them at step 7 of the KB-DOTFILES-UE-086 instructions. KEYNOTE-ROUTE a) gets a new first step: an agent on `sol` runs `mas info 409183694`, `mas info 409203825` and `mas info 409201541` (App Store lookups). Only if all three resolve does it add the route. If they do not, the three stay catalogue-only, the "Bundled with the Mac" comment is corrected to "App Store, not resolvable by mas", and A8 closes on that basis. b) Declare all five in `core` with App Store routes, which reverses the removal decision for two of them. c) Keep PhotoSweeper or Disk Speed Test (Kris names which) and declare it with its App Store id; the iWork apps go as in a). d) Answer KEYNOTE-ROUTE a) as written, without the check.
+**Options.** a) (recommended) Keep the recorded decisions. PhotoSweeper and Disk Speed Test stay undeclared and Kris removes them at step 7 of the [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) instructions. KEYNOTE-ROUTE a) gets a new first step: an agent on `sol` runs `mas info 409183694`, `mas info 409203825` and `mas info 409201541` (App Store lookups). Only if all three resolve does it add the route. If they do not, the three stay catalogue-only, the "Bundled with the Mac" comment is corrected to "App Store, not resolvable by mas", and A8 closes on that basis. b) Declare all five in `core` with App Store routes, which reverses the removal decision for two of them. c) Keep PhotoSweeper or Disk Speed Test (Kris names which) and declare it with its App Store id; the iWork apps go as in a). d) Answer KEYNOTE-ROUTE a) as written, without the check.
 
 ### MAS-PROVIDER - Give the App Store its own provider
 
@@ -109,7 +109,7 @@ MAS-PROVIDER - a) not now and no record, per the burn-down rule; an agent adds o
 ```
 
 - [at rest] mas-model finished; nothing running from this run
-- [waiting on Kris] KB-DOTFILES-UE-086 section C steps at sol's screen; KEYNOTE-ROUTE
+- [waiting on Kris] [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) section C steps at sol's screen; KEYNOTE-ROUTE
 - [queries] MAS-UNDECLARED, MAS-PROVIDER
 - [uncommitted] this report (state folder and thread folder)
 

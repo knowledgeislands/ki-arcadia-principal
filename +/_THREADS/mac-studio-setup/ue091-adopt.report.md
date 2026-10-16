@@ -4,7 +4,7 @@
 
 ---
 
-Run on sol, locally, 2026-10-15 about 00:33 to 00:36 BST, under Kris's approval of 2026-10-15: "adopt KB-DOTFILES-UE-091 now as deliver / Next; plan it to Ready when KI-TOOL-RIG-CORE-042 reaches Awaiting review". This report is not committed; the coordinator commits it with the thread folder.
+Run on sol, locally, 2026-10-15 about 00:33 to 00:36 BST, under Kris's approval of 2026-10-15: "adopt [KB-DOTFILES-UE-091](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-091-shared-dock-tool-links.md) now as deliver / Next; plan it to Ready when [KI-TOOL-RIG-CORE-042](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-042-profile-filtered-dock-items.md) reaches Awaiting review". This report is not committed; the coordinator commits it with the thread folder.
 
 ## Done
 
@@ -26,7 +26,9 @@ Nothing from this run is still running. sol's chezmoi checkout is 1 ahead of ori
 **Query:** Should the UE-091 trigger commit be pushed now?
 
 **Options:**
+
 a) (recommended) An agent on sol pulls chezmoi with `--ff-only --no-rebase`, re-runs the local gate and pushes `main`, leaving `dot_gitconfig` uncommitted.
+
 b) Hold it for the next push round.
 
 ```text

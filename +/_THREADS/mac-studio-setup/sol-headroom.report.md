@@ -51,7 +51,7 @@ Nothing is running.
 ### Outstanding - no action requested now
 
 - sol's `~/.claude/settings.json` has a pending chezmoi change (`MM`). Review it with `chezmoi diff ~/.claude/settings.json` before the bootstrap's next `chezmoi apply`. Once applied, Claude itself also routes through Headroom, so the proxy must be up first.
-- terra's guide notes that `proxy_args` in the deployment manifest is managed by neither chezmoi nor Rig. The roadmap record `KB-DOTFILES-UE-087` (`/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-087-manage-headroom-profile-arguments.md`) is adjacent to the gap below.
+- terra's guide notes that `proxy_args` in the deployment manifest is managed by neither chezmoi nor Rig. The roadmap record [KB-DOTFILES-UE-087](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-087-manage-headroom-profile-arguments.md) (`/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-087-manage-headroom-profile-arguments.md`) is adjacent to the gap below.
 
 ## Outstanding queries
 

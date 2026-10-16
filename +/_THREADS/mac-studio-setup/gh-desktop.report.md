@@ -25,12 +25,14 @@ Nothing from this run is still running.
 
 ### MIDNIGHT-PUSH-SEEN
 
-**Context:** GitHub Desktop's log shows `git push origin main:main` for `personal/apps-rig.midnight.ninja` at 00:03:23 BST. That was 11 seconds after my add had selected the repository in the app. `origin/main` moved to `189928e` (KB-MIDNIGHT-RIG-SITE-001), and its reflog records the change as "update by push". Seconds later someone relaunched the app and signed in to `krisb` through the browser. Before this run started, the log also shows an earlier push at 23:56 BST. GitHub Desktop never pushes on its own, and my run issued no push, so this looks like a click at sol's screen. Decision 73 still held MIDNIGHT-PUSH until terra's checkout was confirmed level.
+**Context:** GitHub Desktop's log shows `git push origin main:main` for `personal/apps-rig.midnight.ninja` at 00:03:23 BST. That was 11 seconds after my add had selected the repository in the app. `origin/main` moved to `189928e` ([KB-MIDNIGHT-RIG-SITE-001](/Users/krisbrown/workspaces/personal/apps-rig.midnight.ninja/docs/roadmap/KB-MIDNIGHT-RIG-SITE-001-show-hosts-per-tool.md)), and its reflog records the change as "update by push". Seconds later someone relaunched the app and signed in to `krisb` through the browser. Before this run started, the log also shows an earlier push at 23:56 BST. GitHub Desktop never pushes on its own, and my run issued no push, so this looks like a click at sol's screen. Decision 73 still held MIDNIGHT-PUSH until terra's checkout was confirmed level.
 
 **Query:** Did you push apps-rig.midnight.ninja from GitHub Desktop, and how should MIDNIGHT-PUSH be recorded?
 
 **Options:**
+
 a) (recommended) Yes, I pushed it. Record MIDNIGHT-PUSH as done at 189928e, and have TERRA-READ check that terra's checkout fast-forwards to it.
+
 b) No, I didn't push it. An agent on sol investigates the app log and the reflogs read-only and reports.
 
 ### GHD-DECLARE
@@ -40,8 +42,11 @@ b) No, I didn't push it. An agent on sol investigates the app log and the reflog
 **Query:** Should Rig declare GitHub Desktop's repository list?
 
 **Options:**
+
 a) (recommended) Capture a tools-rig triage record for a step that adds every mgit territory checkout to GitHub Desktop through the `github` shim. The step is add-only, never removes anything and pauses between opens. List it as a Rig difference in the Project note.
+
 b) Note it only as a manual step in the Rig onboarding guide.
+
 c) Leave it undeclared.
 
 ### GHD-BACKUP
@@ -51,7 +56,9 @@ c) Leave it undeclared.
 **Query:** What should happen to the backup?
 
 **Options:**
+
 a) (recommended) Once you have looked at the new list in GitHub Desktop, an agent on sol deletes the backup folder.
+
 b) Keep it indefinitely.
 
 ```text

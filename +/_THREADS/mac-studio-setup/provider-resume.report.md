@@ -10,7 +10,7 @@ The Mac App Store now has its own provider in Rig, called `mas`. Rig output name
 
 - **Commit:** tools-rig `a9570bb` `feat(providers): add a built-in mas provider for Mac App Store apps`, local on sol, `main`. It delivers [KI-TOOL-RIG-CORE-059](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-059-mac-app-store-provider.md), which mas-provider captured in `67328f4` citing Kris's "Lets do this now, so its done done.", and moves it to Awaiting review.
 - **What changed:** check, install, upgrade and removal for App Store apps moved from `homebrew:mas` to `mas:app`, along with numeric-identity validation, update policy and app-source detection. An unattended upgrade still reports these apps as `interactive-required`. `rig doctor` gained a Warnings section with a real `warn` count, and lists each old-form declaration there without changing the verdict. An earlier Homebrew `mas` formula can supply the `mas` command for later App Store installs in the same apply.
-- **Added in this run:** App Store installs declared for Linux are now rejected. The specifications were aligned (RIG-CONF-013, RIG-CONF-028, RIG-ORCH-006, RIG-ORCH-017, RIG-ORCH-018, RIG-ORCH-024, RIG-ORCH-034, RIG-ORCH-042, RIG-STATE-015 and RIG-CAT-009). So were the getting-started guide, with a new declaration and migration section, the commands guide, the manual and the changelog. The run also wrote the record's review.
+- **Added in this run:** App Store installs declared for Linux are now rejected. The specifications were aligned ([RIG-CONF-013](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/specs/configuration.md), [RIG-CONF-028](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/specs/configuration.md), [RIG-ORCH-006](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/specs/orchestration.md), [RIG-ORCH-017](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/specs/orchestration.md), [RIG-ORCH-018](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/specs/orchestration.md), [RIG-ORCH-024](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/specs/orchestration.md), [RIG-ORCH-034](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/specs/orchestration.md), [RIG-ORCH-042](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/specs/orchestration.md), [RIG-STATE-015](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/specs/state.md) and [RIG-CAT-009](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/specs/catalogue.md)). So were the getting-started guide, with a new declaration and migration section, the commands guide, the manual and the changelog. The run also wrote the record's review.
 - **Checks:** all pass. `ki repo audit` gives 19 pass, 1 warning and 0 failures. The warning was already there: the repository has no committed pre-commit hook. `shellcheck`, `bash -n`, `assemble-rig --check`, `benchmark-rig`, `smoke-native-providers` (including `mas`), `bats` (550 of 550), `mandoc -T lint` and `git diff --check` are all clean. No `rig apply`, `chezmoi apply`, push or network call was made.
 
 **Declaration form for the chezmoi migration.** For each of the 13 App Store tools in `dot_config/rig/conf.d/private_10-applications.toml`, change two lines and keep the locator:
@@ -43,7 +43,7 @@ Nothing is running from this run. sol's `rig` runs from this checkout, so the ne
 
    Expect: a row that names `mas`, not `homebrew`, for Telegram.
 
-chezmoi has uncommitted edits to `private_10-applications.toml`, `tests/rig-catalogue.test.mjs` and the KB-DOTFILES-UE-086 record. These belong to the rig-apps resume, not to this run, and this run left them alone. The queued mas-migrate run should start only after rig-apps has committed.
+chezmoi has uncommitted edits to `private_10-applications.toml`, `tests/rig-catalogue.test.mjs` and the [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) record. These belong to the rig-apps resume, not to this run, and this run left them alone. The queued mas-migrate run should start only after rig-apps has committed.
 
 ## Queries
 
@@ -57,9 +57,9 @@ chezmoi has uncommitted edits to `private_10-applications.toml`, `tests/rig-cata
 
 ### CORE-059-ACCEPT: review the Mac App Store provider
 
-**Context.** KI-TOOL-RIG-CORE-059 is Awaiting review. Two choices in it need Kris's review. First, Linux is rejected only when a `mas` install names `linux` itself, not when the tool alone lists it, because a Linux variant may legitimately sit beside it. Second, Homebrew provider arguments no longer reach `mas`.
+**Context.** [KI-TOOL-RIG-CORE-059](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-059-mac-app-store-provider.md) is Awaiting review. Two choices in it need Kris's review. First, Linux is rejected only when a `mas` install names `linux` itself, not when the tool alone lists it, because a Linux variant may legitimately sit beside it. Second, Homebrew provider arguments no longer reach `mas`.
 
-**Query.** Accept KI-TOOL-RIG-CORE-059?
+**Query.** Accept [KI-TOOL-RIG-CORE-059](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-059-mac-app-store-provider.md)?
 
 **Options.** a) (recommended) Accept after mas-migrate's `rig doctor` on sol shows `warn=0` and App Store rows naming `mas`; an agent then closes the record under `ki-accept`. b) Accept now, on the fixture evidence. c) Hold it and say what to change.
 

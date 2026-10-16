@@ -28,7 +28,7 @@ Kris accepted this decision on 15 October 2026, in these words:
 - Coordination is routed by seat, with standby fallback.
 - Git is the source of truth.
 
-The seats are recorded by role in the Estate territories table of [[Known Lands]]: home for personal, legal and humans-not-robots; hub for valle-armonia, sacred-inquiry, techmedix and equal-remedy; both for knowledge-islands.
+The seats are recorded by role in the Estate territories table of Known Lands: home for personal, legal and humans-not-robots; hub for valle-armonia, sacred-inquiry, techmedix and equal-remedy; both for knowledge-islands.
 
 ## Consequences
 
@@ -41,5 +41,5 @@ The seats are recorded by role in the Estate territories table of [[Known Lands]
 ## References
 
 - [[ADR-KI-PRINCIPAL-003-the-agent-host-workstation-model|ADR-KI-PRINCIPAL-003]] - the agent host workstation model this placement builds on.
-- [[Known World]] - the emerging foundations model in which seats bind territories to hosts.
-- [[Known Lands]] - the Estate territories table that records each territory's seat.
+- [Known World](https://github.com/knowledgeislands/ki-principal/blob/76c64049581426ae7cebaaabf1a762643f52725f/Pillars/Philosophy/Emerging%20Concepts/Known%20World.md) - the emerging foundations model in which seats bind territories to hosts.
+- [Known Lands](https://github.com/knowledgeislands/ki-principal/blob/76c64049581426ae7cebaaabf1a762643f52725f/Admin/Governance/Known%20Lands.md) - the Estate territories table that records each territory's seat.

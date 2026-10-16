@@ -59,6 +59,7 @@ Outstanding - no action requested now
 **Options:**
 
 a) (recommended) This thread's run deletes `origin/hold/2026-10-15/working-state` in ki-principal after re-checking with `git cherry` that it is patch-equivalent to main.
+
 b) Keep it until the next hold review.
 
 ### CHEZMOI-RESUME - Rig: chezmoi has not picked up its reinstatement
@@ -70,6 +71,7 @@ b) Keep it until the next hold review.
 **Options:**
 
 a) (recommended) You paste Rig: chezmoi's resume line into `Chezmoi > misc (sol)`, which then treats `rig.chezmoi.md` as its checkpoint and starts with FW-DECLARE, as the source commit only, with no apply.
+
 b) Open a separate Rig: chezmoi session for it and keep `Chezmoi > misc (sol)` conversational.
 
 ### STALE-PRS - close the two stale automation PRs
@@ -81,6 +83,7 @@ b) Open a separate Rig: chezmoi session for it and keep `Chezmoi > misc (sol)` c
 **Options:**
 
 a) (recommended) This thread's run closes #23 and #27 with the comment "superseded by a later release", then deletes their branches with the rest of STALE-BRANCHES.
+
 b) Leave the PRs open until REPO-GIT-HYGIENE defines the rule.
 
 ### FIRST-WAVE - start the first wave
@@ -92,6 +95,7 @@ b) Leave the PRs open until REPO-GIT-HYGIENE defines the rule.
 **Options:**
 
 a) (recommended) Run the first wave as proposed: one chained ki-principal run, one parallel kw-website and apps-knowledgeislands.info run, one message each to ways-of-working and mac-studio-setup, and STASH-DROP at the next terra session.
+
 b) Run only the messages now and hold the deletions for your review.
 
 ```text

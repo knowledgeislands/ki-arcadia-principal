@@ -27,7 +27,7 @@ Nothing is running. This report is uncommitted, in the state folder and the thre
 
 **Query.** How should password logins be switched off?
 
-**Options.** a) (recommended) Widen [KB-DOTFILES-UE-088](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-088-ssh-alias-for-sol.md), which already covers SSH between the Macs. chezmoi gets a `run_onchange_after_` script that writes `/etc/ssh/sshd_config.d/050-ki-key-only.conf` (`PasswordAuthentication no`, `KbdInteractiveAuthentication no`). It checks the file with `sshd -t` before installing it, and it uses `sudo -n` only, so it skips with a message, rather than hanging, under a remote `chezmoi apply`. A test covers it, the gate runs and the commit stays local. Kris then applies at each Mac's screen using this restore path: keep the screen session open; from the other Mac, check a key login works and a password probe offers only `publickey`; if either fails, `sudo rm /etc/ssh/sshd_config.d/050-ki-key-only.conf` restores the old behaviour for the next connection. b) A Rig SSH-server resource under ADR-KI-TOOL-RIG-009. This is a new resource type, so it would need an exception to burn-down. c) Kris writes the drop-in by hand at each screen now, undeclared, so a rebuilt Mac would lose it. d) Leave password logins on.
+**Options.** a) (recommended) Widen [KB-DOTFILES-UE-088](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-088-ssh-alias-for-sol.md), which already covers SSH between the Macs. chezmoi gets a `run_onchange_after_` script that writes `/etc/ssh/sshd_config.d/050-ki-key-only.conf` (`PasswordAuthentication no`, `KbdInteractiveAuthentication no`). It checks the file with `sshd -t` before installing it, and it uses `sudo -n` only, so it skips with a message, rather than hanging, under a remote `chezmoi apply`. A test covers it, the gate runs and the commit stays local. Kris then applies at each Mac's screen using this restore path: keep the screen session open; from the other Mac, check a key login works and a password probe offers only `publickey`; if either fails, `sudo rm /etc/ssh/sshd_config.d/050-ki-key-only.conf` restores the old behaviour for the next connection. b) A Rig SSH-server resource under [ADR-KI-TOOL-RIG-009](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/decisions/ADR-KI-TOOL-RIG-009-system-domain-resources-under-an-attended-grant.md). This is a new resource type, so it would need an exception to burn-down. c) Kris writes the drop-in by hand at each screen now, undeclared, so a rebuilt Mac would lose it. d) Leave password logins on.
 
 ### TERRA-HARNESS-AHEAD - Push terra's 11 harness commits
 
@@ -37,14 +37,10 @@ Nothing is running. This report is uncommitted, in the state folder and the thre
 
 **Options.** a) (recommended) Yes. At terra's screen, first make sure no agent is still working in `ki-agentic-harness`, then:
 
-1. `git -C ~/workspaces/knowledge-islands/ki-agentic-harness pull --ff-only --no-rebase`
-   Expect: `Already up to date.`
-2. `git -C ~/workspaces/knowledge-islands/ki-agentic-harness status -sb | head -1`
-   Expect: `## main...origin/main [ahead 11]`. If it says `behind`, or ahead by a number other than 11, stop and tell the thread.
-3. `git -C ~/workspaces/knowledge-islands/ki-agentic-harness log --oneline -1`
-   Expect: `d0c94558 docs(ki-repo): preserve blocked verification checklist patch`
-4. `git -C ~/workspaces/knowledge-islands/ki-agentic-harness push origin main`
-   Expect: the push hooks pass, then `fcad8a1e..d0c94558  main -> main`.
+1. `git -C ~/workspaces/knowledge-islands/ki-agentic-harness pull --ff-only --no-rebase` Expect: `Already up to date.`
+2. `git -C ~/workspaces/knowledge-islands/ki-agentic-harness status -sb | head -1` Expect: `## main...origin/main [ahead 11]`. If it says `behind`, or ahead by a number other than 11, stop and tell the thread.
+3. `git -C ~/workspaces/knowledge-islands/ki-agentic-harness log --oneline -1` Expect: `d0c94558 docs(ki-repo): preserve blocked verification checklist patch`
+4. `git -C ~/workspaces/knowledge-islands/ki-agentic-harness push origin main` Expect: the push hooks pass, then `fcad8a1e..d0c94558  main -> main`.
 
 An agent on `sol` then runs `pull --ff-only --no-rebase` and confirms that `origin/main` contains `8a453bcd`. b) Push only up to `8a453bcd` (`git push origin 8a453bcd:main`) and leave the other session's three commits on terra. c) Wait.
 

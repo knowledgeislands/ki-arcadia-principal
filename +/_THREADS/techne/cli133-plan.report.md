@@ -23,7 +23,7 @@ Nothing. No source change has been made.
 
 **Context:** [KI-TOOL-KI-CLI-133](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-133-retired-reports-come-back.md) is Ready with the Git-history skip rule above, a small change in `src/core/agent/thread.ts` plus tests and documentation.
 
-**Query:** Do you give the go-ahead to deliver KI-TOOL-KI-CLI-133 now?
+**Query:** Do you give the go-ahead to deliver [KI-TOOL-KI-CLI-133](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-133-retired-reports-come-back.md) now?
 
 **Options:**
 

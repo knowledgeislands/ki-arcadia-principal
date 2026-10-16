@@ -16,7 +16,7 @@
   - The macOS Application Firewall is off.
   - `56-firewall.toml` exists only at `~/.local/state/rig-firewall-test/config/conf.d/56-firewall.toml`. It is not in `~/.config/rig/conf.d` or in chezmoi. It declares `profiles = ["laptop", "studio"]` and includes the emergency rollback commands.
 - **Two new pending handoffs found on terra.** Both are only as of terra's last fetch, because the fetch failed:
-  - `ki-agentic-harness` is 8 commits ahead of `origin/main` and unpushed. The commits run from `a830b6ed` to `8a453bcd`; they cover ki-repo-harness diagrams, KI-HARNESS-GOV-193 accept and prune, and ki-pmo PMO-7. This is TERRA-HARNESS-AHEAD.
+  - `ki-agentic-harness` is 8 commits ahead of `origin/main` and unpushed. The commits run from `a830b6ed` to `8a453bcd`; they cover ki-repo-harness diagrams, [KI-HARNESS-GOV-193 (pruned)](https://github.com/knowledgeislands/ki-agentic-harness/blob/c092431687d3542e55058cecd545e816a1dbadcf/docs/roadmap/KI-HARNESS-GOV-193-area-diagrams-with-html.md) accept and prune, and ki-pmo PMO-7. This is TERRA-HARNESS-AHEAD.
   - terra's chezmoi source is at `f2971fc`, one commit behind sol's `b20a537`. It has five pending targets: `.codex/config.toml`, `.config/ki/config.toml`, `.config/rig/conf.d/10-applications.toml`, `.gitconfig` and `.ssh/config`. This is TERRA-CHEZMOI-APPLY.
 - **On sol, for the handoff list.** `tools-rig` is 2 commits ahead of `origin/main` (to `efd4eae`) and unpushed. terra's `tools-rig` checkout is at `608eba9`, two behind sol's HEAD, with a clean tree.
 
@@ -59,17 +59,17 @@ Rows already settled in [rig-diff.report.md](/Users/krisbrown/workspaces/knowled
 | UTM source | cask | App Store build (1538878817) over a metadata-only cask record | `core` cask | **new**: drift on terra | TERRA-CASK-RECORDS |
 | App Store apps | 18 | 20 | 13 declared | Clockology, Mercury, Nitro, Prime Video on UE-086 removal list; sol-only three already decided (MAS-UNDECLARED, UE086-AMEND) | none new |
 | SVG handler | ImageOptim; declaration wants Chrome | not flagged by doctor | yes | drift on sol | SOL-APPLY (done, Decision 84) |
-| Dock | 30 apps, missing laptop and Rig-declared items, Lightroom extra | 36 apps, matches declaration | laptop only | drift on sol | KI-TOOL-RIG-CORE-042, DOCK-CONSUMER |
+| Dock | 30 apps, missing laptop and Rig-declared items, Lightroom extra | 36 apps, matches declaration | laptop only | drift on sol | [KI-TOOL-RIG-CORE-042](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-042-profile-filtered-dock-items.md), DOCK-CONSUMER |
 | Dock-item tool links | `chatgpt-classic` and `chatgpt-current` link gaps | same | yes | latent bug | DOCK-CONSUMER |
 | Claude and Codex skill links | 10 ki links incl. `ki-pmo`, `ki-pmo-design`; ki doctor clean | 9 ki links; `ki-pmo`, `ki-pmo-design` missing, `ki-design-loop` dangling; ki doctor fail=2 | yes (`~/.config/ki/config.toml`) | drift on terra | TERRA-CHEZMOI-APPLY (`ki repair --apply`) |
 | chezmoi | `b20a537`, level | `f2971fc`, 1 behind, 5 pending targets incl. `.ssh/config` | yes | drift on terra | TERRA-CHEZMOI-APPLY |
 | ki-agentic-harness checkout | `fcad8a1e`, level | 8 unpushed commits | n/a | **new**: unpushed work on terra | TERRA-HARNESS-AHEAD |
 | ki dev local mode | KI harness only | KI and HNR harnesses | yes | drift on sol (D19) | SOL-HNR-HARNESS (parked) |
 | ki registry | 50, no store bindings; 9 `sources-*` folders in OneDrive | 50, same; 8 store bindings, no `sources-*` folders locally | partly | **new** | REGISTRY-STORES |
-| Headroom | hand deployment, 0.41.0 | hand deployment, 0.40.0 | program yes, deployment no | undeclared on both; version drift | KB-DOTFILES-UE-090 with KB-DOTFILES-UE-087; connection-critical, no new action |
+| Headroom | hand deployment, 0.41.0 | hand deployment, 0.40.0 | program yes, deployment no | undeclared on both; version drift | [KB-DOTFILES-UE-090](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-090-close-rig-bring-up-gaps.md) with [KB-DOTFILES-UE-087](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-087-manage-headroom-profile-arguments.md); connection-critical, no new action |
 | mcporter | 9 of 12 healthy | 10 of 12 healthy; `linear` transport capacity, `granola` HTTP not implemented | yes | **new** terra errors | re-check after TERRA-CHEZMOI-APPLY; no query now |
 | WhatsApp MCP and spool | MCP fails, no spool job | spool job present | job laptop-only | intended (D30) | SOL-WHATSAPP (parked) |
-| Firewall | none | pf anchor daemon installed, ran once at exit 0; rules unverified without sudo; declaration only in `~/.local/state/rig-firewall-test` | no | intended temporary (D33) | FW-VERIFY, then KI-TOOL-RIG-CORE-047 |
+| Firewall | none | pf anchor daemon installed, ran once at exit 0; rules unverified without sudo; declaration only in `~/.local/state/rig-firewall-test` | no | intended temporary (D33) | FW-VERIFY, then [KI-TOOL-RIG-CORE-047](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-047-tailnet-only-listener-firewall.md) |
 | Homebrew autoupdate agent | absent | absent | no | settled | AUTOUPDATE-REMOVE needs no terra step |
 | Rig jobs and services | 8 studio launch agents | laptop set plus WhatsApp spool, 5G-EMERGE and held Paperclip | yes | intended | none |
 | Hermes launch agent | `ai.hermes.gateway` loaded (exit 78) | absent | no | drift on sol | UE086-AMEND |
@@ -88,11 +88,12 @@ Pending handoff, because pushing is not authorised here:
 
 ### TERRA-HARNESS-AHEAD - Push terra's 8 harness commits
 
-**Context.** terra's `ki-agentic-harness` holds 8 commits that are not on sol: ki-repo-harness skill diagrams, the KI-HARNESS-GOV-193 accept and prune, and ki-pmo PMO-7 record linking. They are ahead of terra's last-fetched `origin/main` (`fcad8a1e`), which is also sol's HEAD. The fetch over SSH fails because the SSH session has no SSH agent, so the push has to happen at terra's screen.
+**Context.** terra's `ki-agentic-harness` holds 8 commits that are not on sol: ki-repo-harness skill diagrams, the [KI-HARNESS-GOV-193 (pruned)](https://github.com/knowledgeislands/ki-agentic-harness/blob/c092431687d3542e55058cecd545e816a1dbadcf/docs/roadmap/KI-HARNESS-GOV-193-area-diagrams-with-html.md) accept and prune, and ki-pmo PMO-7 record linking. They are ahead of terra's last-fetched `origin/main` (`fcad8a1e`), which is also sol's HEAD. The fetch over SSH fails because the SSH session has no SSH agent, so the push has to happen at terra's screen.
 
 **Query.** Should terra push them?
 
 **Options.** a) (recommended) At terra's screen, in Terminal:
+
 1. Run `git -C ~/workspaces/knowledge-islands/ki-agentic-harness fetch`.
 2. Run `git -C ~/workspaces/knowledge-islands/ki-agentic-harness status -sb`.
 3. If it says only `ahead 8`, run `git -C ~/workspaces/knowledge-islands/ki-agentic-harness push`. If it says `behind` as well, stop and tell the thread.
@@ -107,6 +108,7 @@ b) Hold the commits on terra until the next terra session.
 **Query.** Should terra pull, apply and repair at its screen?
 
 **Options.** a) (recommended) At terra's screen, in Terminal:
+
 1. Back up the SSH config: `cp ~/.ssh/config ~/.ssh/config.bak-2026-10-15`.
 2. Pull: `git -C ~/.local/share/chezmoi pull --ff-only --no-rebase`.
 3. Review: run `chezmoi diff` and read the `.ssh/config` and `.gitconfig` changes.
@@ -131,6 +133,7 @@ b) Do only the `ki repair --apply` step now and leave chezmoi for later.
 **Query.** How should terra settle the two records?
 
 **Options.** a) (recommended) Amend the laptop section of [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) with two steps, local commit only:
+
 1. Remove the stale `daisydisk` cask record without touching `/Applications/DaisyDisk.app`, using the method that cleared Telegram's record on sol.
 2. Replace terra's App Store UTM with the declared cask. UTM virtual machines live in `~/Library/Containers/com.utmapp.UTM`, so check they are kept.
 

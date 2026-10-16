@@ -1,9 +1,3 @@
----
-
----
-
----
-
 # [Rig](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/rig.md) › [Mac Studio setup](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-setup/mac-studio-setup.md) › site-extlinks
 
 **Run report at 21:36 BST · last mark 21:34 BST (run start)**

@@ -15,7 +15,7 @@ When this run started, at 01:53 BST, the switch was still under way. The Homebre
 - `brew list --cask` no longer includes `telegram`.
 - `/Applications/Telegram.app` (13.0, installed at 01:56) has an App Store receipt, and `mas list` shows `747648890 Telegram (13.0)`.
 - `rig status` shows `telegram homebrew present`. Tools: present 166, missing 0, drifted 0.
-- `rig doctor` reports 1 finding (pass 240, fail 1, skipped 20). The finding is `port.headroom` "conflicting (owner Python, expected headroom-ai)". That is the known result of starting Headroom by hand and is outside KB-DOTFILES-UE-086. The eight old cargo apply failures no longer appear.
+- `rig doctor` reports 1 finding (pass 240, fail 1, skipped 20). The finding is `port.headroom` "conflicting (owner Python, expected headroom-ai)". That is the known result of starting Headroom by hand and is outside [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md). The eight old cargo apply failures no longer appear.
 - `rig apply --dry-run`: planned 232, failed 0, skipped 20 (catalogue-only).
 
 **What still differs from the declaration.** Only the Headroom port. A full `rig apply` should no longer end with status 1 because of Telegram. The checkpoint's SOL-CLT line still describes Telegram the wrong way round (it says to install the Homebrew cask), so the thread should correct it at its next mark.
@@ -59,7 +59,7 @@ Expect: `no rig run going`. If a run is listed, wait for it to finish (the 08:30
 
 **Step 1 (C1) - Bring chezmoi level and apply what is pending.**
 
-What it does: pulls the latest source, shows what would change, and applies it. The `~/.ssh/config` change is the `Host sol` alias. It is connection-critical, so it gets a backup first, following the restore path in KB-DOTFILES-UE-088. Doing this also completes UE-088's apply on `sol`.
+What it does: pulls the latest source, shows what would change, and applies it. The `~/.ssh/config` change is the `Host sol` alias. It is connection-critical, so it gets a backup first, following the restore path in [KB-DOTFILES-UE-088](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-088-ssh-alias-for-sol.md). Doing this also completes UE-088's apply on `sol`.
 
 ```sh
 git -C ~/.local/share/chezmoi pull --ff-only
@@ -72,7 +72,7 @@ chezmoi diff
 Expect:
 
 - The pull ends with "Already up to date" or a fast-forward.
-- `status --short` prints nothing, or only ` M dot_gitconfig`. Leave that file alone.
+- `status --short` prints nothing, or only `M dot_gitconfig`. Leave that file alone.
 - `rig doctor` prints `Summary: findings=1` and the `port.headroom` line.
 - `chezmoi status` lists `~/.ssh/config`. If the `rust-order` run has committed by then, it also lists `~/.config/rig/conf.d/15-command-line.toml`.
 - `chezmoi diff` shows only the `Host sol 100.90.130.74` block and, if present, `requires` gaining `"rust"` on the eight cargo tools. If anything else appears, stop.
@@ -291,7 +291,7 @@ KEYNOTE-ROUTE - a) an agent on sol gives tool.keynote, tool.numbers and tool.pag
 ```
 
 - [at rest] ue086-rest finished; nothing running from this run
-- [waiting on Kris] KB-DOTFILES-UE-086 section C steps 0-11 and 14 at sol's screen
+- [waiting on Kris] [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) section C steps 0-11 and 14 at sol's screen
 - [queries] KEYNOTE-ROUTE
 - [running elsewhere] rust-order, upgrade-lock
 - [uncommitted] this report (state folder and thread folder)

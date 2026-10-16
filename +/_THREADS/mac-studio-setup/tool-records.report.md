@@ -8,12 +8,12 @@ All commits are local. Nothing was pushed or fetched, and there were no brew or 
 
 - **tools-rig: two triage records captured** (R1, R3), each with its number reserved by a separate commit first:
   - [KI-TOOL-RIG-CORE-054 Command Line Tools check](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-054-command-line-tools-check.md): `rig doctor` names Command Line Tools older than macOS as the shared cause before an upgrade (D1).
-  - [KI-TOOL-RIG-CORE-055 Interpreter port owner matching](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-055-interpreter-port-owner-matching.md) (D13). New evidence: Headroom runs as `Python -m headroom...`, while Rig expects the uv package name `headroom-ai`. Neither name matches the way the port-owner rule (RIG-STATE-026) requires, so a readable non-match counts as `conflicting`.
+  - [KI-TOOL-RIG-CORE-055 Interpreter port owner matching](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-055-interpreter-port-owner-matching.md) (D13). New evidence: Headroom runs as `Python -m headroom...`, while Rig expects the uv package name `headroom-ai`. Neither name matches the way the port-owner rule ([RIG-STATE-026](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/specs/state.md)) requires, so a readable non-match counts as `conflicting`.
   - Commits `98420fc` (reserve) and `1506d47` (records).
 - **ki-principal: R2 and R4 noted** in the Project note's Notes section. Commit `5c8e3f6`, that file alone. No pull was needed: the checkout was level with `origin/main` and clean.
 - **tools-ki: two triage records captured** (K2, K3):
-  - [KI-TOOL-KI-CLI-128 Launch footer follows brief](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-128-launch-footer-follows-brief.md) (D38). The four tiers grant only remote publishing, so no tier covers fetch-without-push or an approved change to a machine. The progress protocol always names the thread-folder report path. The footer is cut from the first mention of `## Rules`, so every prompt carries a stray intro fragment. The `ki-delegation` side in ki-agentic-harness is written up as a handoff in the Boundary section.
-  - [KI-TOOL-KI-CLI-129 Reused agent name overwrites](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-129-reused-agent-name-overwrites.md) (D39). `launch` refuses a name only while it is running; `queue` already refuses one that is in use.
+  - [KI-TOOL-KI-CLI-134 Launch footer follows brief](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-134-launch-footer-follows-brief.md), first numbered 128 (D38). The four tiers grant only remote publishing, so no tier covers fetch-without-push or an approved change to a machine. The progress protocol always names the thread-folder report path. The footer is cut from the first mention of `## Rules`, so every prompt carries a stray intro fragment. The `ki-delegation` side in ki-agentic-harness is written up as a handoff in the Boundary section.
+  - [KI-TOOL-KI-CLI-135 Reused agent name overwrites](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-135-reused-agent-name-overwrites.md), first numbered 129 (D39). `launch` refuses a name only while it is running; `queue` already refuses one that is in use.
   - Commits `a4bb37bf` (reserve) and `8b6bc803` (records).
 - **tools-rig: [KI-TOOL-RIG-CORE-042](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-042-profile-filtered-dock-items.md) promoted from Next to Now.** It was already Ready (plan approved 12 October), so it needed no reshaping or replan. Commit `b7cf6b3`.
   - Kris's rule ("same order as the laptop, filtered by what each profile selects") is added to Context.
@@ -37,11 +37,11 @@ Like D38, this run's brief and progress protocol named different report paths. I
 
 ### DOCK-CONSUMER - Who changes the personal Dock declaration
 
-**Summary:** the acceptance check needs a change in the chezmoi source after KI-TOOL-RIG-CORE-042 lands: `[dock.workstation]` moves from `laptop` to `core`, and each machine-specific item links to its tool with `tool = "ID"`. The record that owned this, KB-DOTFILES-UE-075, is no longer open in the chezmoi source, so the change has no record.
+**Summary:** the acceptance check needs a change in the chezmoi source after [KI-TOOL-RIG-CORE-042](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-042-profile-filtered-dock-items.md) lands: `[dock.workstation]` moves from `laptop` to `core`, and each machine-specific item links to its tool with `tool = "ID"`. The record that owned this, [KB-DOTFILES-UE-075 (pruned)](https://github.com/krisb/dotfiles/blob/ae9fc7aee9d06083d9a21d506452ea27002d1726/docs/roadmap/DOTFILES-UE-075-sol-tailscale-daemon-exception.md), is no longer open in the chezmoi source, so the change has no record.
 
 **Need from you:** approve capturing a chezmoi triage record for it.
 
-**Recommendation:** have the next chezmoi run capture it as a KB-DOTFILES triage record, to be delivered once KI-TOOL-RIG-CORE-042 reaches Awaiting review.
+**Recommendation:** have the next chezmoi run capture it as a KB-DOTFILES triage record, to be delivered once [KI-TOOL-RIG-CORE-042](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-042-profile-filtered-dock-items.md) reaches Awaiting review.
 
 ### DOCK-LIGHTROOM - Where Lightroom Classic goes in the shared Dock
 

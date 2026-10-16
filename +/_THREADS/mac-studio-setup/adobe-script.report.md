@@ -41,19 +41,17 @@ Outstanding - no action requested now:
 
 These are the steps at sol:
 
-1. Save your work, then quit Lightroom Classic and every Photoshop. In Terminal, run: `cd ~/workspaces/knowledge-islands/ki-principal/+/_THREADS/mac-studio-bootstrap && ./adobe-remove.sh`
-   Expect, under `1.`: Lightroom Classic 15.6 and the four Photoshops, 8 add-ons, 7 Creative Cloud folders, 8 launchd plists and 1 helper. The last line should read `Dry run finished. Nothing was changed.` If a `Still open` section appears, quit those apps.
-2. Run: `sudo ./adobe-remove.sh --apply`, and give sol's password when asked.
-   Expect: this takes a few minutes. Steps `3.` and `4.` print each Adobe command with no `exit N` line after it. Step `5.` should have little or nothing to do. Under `What is left`, there should be no `/Applications/Adobe` line, no plist, no helper and no process. Then comes the list of folder sizes, and the catalogue under `Lightroom catalogues kept`. The last line reads `Done with 0 step(s) that failed or fell back`.
-   If a line says `Operation not permitted`, open System Settings › Privacy & Security › App Management, turn Terminal on, then run step 2 again.
-3. Restart sol, then run `./adobe-remove.sh` again from the same folder.
-   Expect: `none` for apps and add-ons, no Creative Cloud folder, no launchd item, and nothing under `What is left` before the sizes.
+1. Save your work, then quit Lightroom Classic and every Photoshop. In Terminal, run: `cd ~/workspaces/knowledge-islands/ki-principal/+/_THREADS/mac-studio-bootstrap && ./adobe-remove.sh` Expect, under `1.`: Lightroom Classic 15.6 and the four Photoshops, 8 add-ons, 7 Creative Cloud folders, 8 launchd plists and 1 helper. The last line should read `Dry run finished. Nothing was changed.` If a `Still open` section appears, quit those apps.
+2. Run: `sudo ./adobe-remove.sh --apply`, and give sol's password when asked. Expect: this takes a few minutes. Steps `3.` and `4.` print each Adobe command with no `exit N` line after it. Step `5.` should have little or nothing to do. Under `What is left`, there should be no `/Applications/Adobe` line, no plist, no helper and no process. Then comes the list of folder sizes, and the catalogue under `Lightroom catalogues kept`. The last line reads `Done with 0 step(s) that failed or fell back`. If a line says `Operation not permitted`, open System Settings › Privacy & Security › App Management, turn Terminal on, then run step 2 again.
+3. Restart sol, then run `./adobe-remove.sh` again from the same folder. Expect: `none` for apps and add-ons, no Creative Cloud folder, no launchd item, and nothing under `What is left` before the sizes.
 4. Tell the thread "sol done". An agent then reads the `*.apply.log` and the second `*.dry-run.log` beside the script. If a step fell back or failed, paste the `Result` line as well.
 
 **Query:** Will Kris run the script at sol's screen as set out above?
 
 **Options:**
+
 a) (recommended) yes, steps 1 to 4 above
+
 b) run only the dry run (step 1) and send its output before deciding
 
 ### ADOBE-SCRIPT-TERRA - Get the script onto terra
@@ -63,7 +61,9 @@ b) run only the dry run (step 1) and send its output before deciding
 **Query:** May the thread push ki-principal from sol so that terra can pull the script?
 
 **Options:**
+
 a) (recommended) yes: the thread pushes ki-principal `main` from sol. At terra, Kris then runs `git -C ~/workspaces/knowledge-islands/ki-principal pull --ff-only`
+
 b) copy the script to terra by hand, for example with AirDrop, into `~/workspaces/knowledge-islands/ki-principal/+/_THREADS/mac-studio-bootstrap/`
 
 ### ADOBE-RUN-TERRA - Run the removal script at terra
@@ -72,19 +72,17 @@ b) copy the script to terra by hand, for example with AirDrop, into `~/workspace
 
 These are the steps at terra, once ADOBE-SCRIPT-TERRA is done:
 
-1. In Terminal, run: `cd ~/workspaces/knowledge-islands/ki-principal/+/_THREADS/mac-studio-bootstrap && ./adobe-remove.sh`
-   Expect: `none` under installed apps and add-ons. Then the Creative Cloud folders, those two plists and the helper, and `Dry run finished. Nothing was changed.` If an app or add-on is listed, send the output to the thread before going on.
-2. Run: `sudo ./adobe-remove.sh --apply`, and give terra's password when asked.
-   Expect: the `Creative Cloud Uninstaller -u` line with no `exit N` after it. Under `What is left`, there should be no `/Applications/Adobe` line, no plist, no helper and no process. The sizes list should show about 1.6 GB in `/Library/Application Support/Adobe`. The last line reads `Done with 0 step(s) that failed or fell back`.
-   If a line says `Operation not permitted`, turn Terminal on under System Settings › Privacy & Security › App Management and run step 2 again.
-3. Restart terra, then run `./adobe-remove.sh` again.
-   Expect: nothing under `What is left` before the sizes.
+1. In Terminal, run: `cd ~/workspaces/knowledge-islands/ki-principal/+/_THREADS/mac-studio-bootstrap && ./adobe-remove.sh` Expect: `none` under installed apps and add-ons. Then the Creative Cloud folders, those two plists and the helper, and `Dry run finished. Nothing was changed.` If an app or add-on is listed, send the output to the thread before going on.
+2. Run: `sudo ./adobe-remove.sh --apply`, and give terra's password when asked. Expect: the `Creative Cloud Uninstaller -u` line with no `exit N` after it. Under `What is left`, there should be no `/Applications/Adobe` line, no plist, no helper and no process. The sizes list should show about 1.6 GB in `/Library/Application Support/Adobe`. The last line reads `Done with 0 step(s) that failed or fell back`. If a line says `Operation not permitted`, turn Terminal on under System Settings › Privacy & Security › App Management and run step 2 again.
+3. Restart terra, then run `./adobe-remove.sh` again. Expect: nothing under `What is left` before the sizes.
 4. Send the thread the `Result` line, everything from `== What is left` to the end of the step 2 output, and the output of step 3. The log is beside the script on terra, and an agent can read it there.
 
 **Query:** Will Kris run the script at terra's screen as set out above?
 
 **Options:**
+
 a) (recommended) yes, steps 1 to 4 above, after ADOBE-SCRIPT-TERRA
+
 b) leave terra until it is next at hand
 
 ```text

@@ -1,9 +1,3 @@
----
-
----
-
----
-
 # [Rig](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/rig.md) › [Mac Studio setup](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-setup/mac-studio-setup.md) › harness-link
 
 **Run report at 23:53 BST · last mark 23:51 BST**
@@ -13,7 +7,7 @@
 ## Done
 
 - [KI-HARNESS-GOV-189](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-189-move-thread-between-hosts.md) now names `ki-principal/Streams/Projects/mac-studio-setup/mac-studio-setup.md` as `transferred_from`, and its Context link points at the same note; the relative link resolves. Nothing else in the record changed.
-- Committed locally in ki-agentic-harness as `628762e7`, `docs(roadmap): point KI-HARNESS-GOV-189 at the Mac Studio setup Project`, by explicit path. The pre-commit hook ran normally (rumdl clean, no issues). Not pushed.
+- Committed locally in ki-agentic-harness as `628762e7`, `docs(roadmap): point [KI-HARNESS-GOV-189](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-189-move-thread-between-hosts.md) at the Mac Studio setup Project`, by explicit path. The pre-commit hook ran normally (rumdl clean, no issues). Not pushed.
 - The harness working tree held no other session's changes at the time of the commit, so nothing else was touched.
 - The brief named two report paths, `+/_THREADS/mac-studio-setup/` and, in the progress protocol, `+/_THREADS/mac-studio-bootstrap/`. This report is written to the first, the one the task names, and is not committed.
 
@@ -36,6 +30,7 @@ Outstanding - no action requested now
 **Options:**
 
 a) (recommended) Rename the link text and the Boundary mention to "Mac Studio setup Project" in one more local commit, leaving the historical evidence about the `mac-studio-bootstrap` thread as written.
+
 b) Leave the record's wording as it is; the link target is enough.
 
 ```text

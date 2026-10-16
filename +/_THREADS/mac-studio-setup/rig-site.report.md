@@ -24,7 +24,7 @@ I surveyed the Rig site and compared it with Rig today. Everything was read-only
 
 Two more points:
 
-- **Telegram's new rationale would publish internal references.** It now ends "(KB-DOTFILES-UE-079, chezmoi thread Decision 49)". Fix that in the Rig config through chezmoi before the next pull, not on the site.
+- **Telegram's new rationale would publish internal references.** It now ends "([KB-DOTFILES-UE-079 (pruned)](https://github.com/krisb/dotfiles/blob/02ef54dfec0f59f2635089304b624fc64026db81/docs/roadmap/DOTFILES-UE-079-undeclared-software-decisions.md), chezmoi thread Decision 49)". Fix that in the Rig config through chezmoi before the next pull, not on the site.
 - **Rig itself never appears on the site.** Rig's version, release or checkout, firewall and local mode don't show anywhere. The page lists tools, not Rig's state. The committed file says export format version 2, but Rig 0.6.3 writes version 1. The site doesn't check that number, so nothing breaks.
 
 ### What "how Rig is available on different hosts" would need
@@ -36,7 +36,7 @@ There are two different things here, and only the first is safe for a site anyon
 
 ### Records that already cover this
 
-None do. I checked the site's roadmap (empty, `SITE` area at 000), tools-rig's 7 open records, Observatory's roadmap (empty), the agent-host records [KI-TECHNE-OPS-018](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/roadmap/KI-TECHNE-OPS-018-converge-tools-through-rig.md) and [KI-TECHNE-OPS-024](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/roadmap/KI-TECHNE-OPS-024-weekly-pin-bump.md), and the chezmoi roadmap. A few are related without covering this. KI-TOOL-RIG-DIST-011 covers vega's broken Rig. [KB-DOTFILES-UE-027](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-027-honest-rationales-per-tool.md) covers rationales; it is on hold.
+None do. I checked the site's roadmap (empty, `SITE` area at 000), tools-rig's 7 open records, Observatory's roadmap (empty), the agent-host records [KI-TECHNE-OPS-018](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/roadmap/KI-TECHNE-OPS-018-converge-tools-through-rig.md) and [KI-TECHNE-OPS-024](/Users/krisbrown/workspaces/knowledge-islands/ki-techne-harness/docs/roadmap/KI-TECHNE-OPS-024-weekly-pin-bump.md), and the chezmoi roadmap. A few are related without covering this. [KI-TOOL-RIG-DIST-011](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-DIST-011-stale-terra-rig-link.md) covers vega's broken Rig. [KB-DOTFILES-UE-027](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-027-honest-rationales-per-tool.md) covers rationales; it is on hold.
 
 ### Smallest plan
 
@@ -44,7 +44,7 @@ None do. I checked the site's roadmap (empty, `SITE` area at 000), tools-rig's 7
 | --- | --- | --- | --- |
 | 1 | Remove the internal references from Telegram's rationale | chezmoi (Rig config) | none, a one-line edit |
 | 2 | Run the weekly refresh: pull, add links for the 4 new tools, fix the Spark link, check typecheck and tests, commit | site repo | none: [MIDNIGHT-HK-001](/Users/krisbrown/workspaces/personal/apps-rig.midnight.ninja/docs/housekeeping/MIDNIGHT-HK-001-refresh-the-rig-catalogue.md) already covers it |
-| 3 | Per-host view: the pull also reads `rig show --profile laptop` and `studio`, cards get role chips, a hosts section is added, the tagline changes from "one personal Mac" to the hosts, and the bootstrap guide is replaced with a short pointer to the chezmoi [macOS workstation guide](/Users/krisbrown/.local/share/chezmoi/docs/guides/user/macos-workstation.md) | site repo | **one new record, proposed:** `KB-MIDNIGHT-RIG-SITE-001`, "Show which hosts carry each tool" |
+| 3 | Per-host view: the pull also reads `rig show --profile laptop` and `studio`, cards get role chips, a hosts section is added, the tagline changes from "one personal Mac" to the hosts, and the bootstrap guide is replaced with a short pointer to the chezmoi [macOS workstation guide](/Users/krisbrown/.local/share/chezmoi/docs/guides/user/macos-workstation.md) | site repo | **one new record, proposed:** [KB-MIDNIGHT-RIG-SITE-001](/Users/krisbrown/workspaces/personal/apps-rig.midnight.ninja/docs/roadmap/KB-MIDNIGHT-RIG-SITE-001-show-hosts-per-tool.md), "Show which hosts carry each tool" |
 | 4 | Deploy: push `main`, which Workers Builds deploys | you | — |
 | later | Live per-host Rig state (version, channel, last result) on Observatory | Observatory | not now; only if you want it |
 
@@ -64,7 +64,7 @@ Nothing. This run has finished.
 
 **Summary:** the published catalogue is three weeks old. It is missing 4 tools, and Spark is wrong. Telegram's rationale needs its internal references removed first.
 
-**Need from you:** approve a short run that edits the Telegram rationale in chezmoi, runs MIDNIGHT-HK-001 on terra and commits locally. You would then approve the push, which deploys the site.
+**Need from you:** approve a short run that edits the Telegram rationale in chezmoi, runs [MIDNIGHT-HK-001](/Users/krisbrown/workspaces/personal/apps-rig.midnight.ninja/docs/housekeeping/MIDNIGHT-HK-001-refresh-the-rig-catalogue.md) on terra and commits locally. You would then approve the push, which deploys the site.
 
 **Recommendation:** approve. The push stays your call.
 
@@ -76,7 +76,7 @@ RIG-SITE-REFRESH: run it / wait — <notes>
 
 **Summary:** showing which hosts carry each public tool needs no Rig change and publishes nothing private. Live versions and last results would cross the site's privacy boundary.
 
-**Need from you:** decide whether to capture `KB-MIDNIGHT-RIG-SITE-001` "Show which hosts carry each tool" in the site repo, covering the declared view only.
+**Need from you:** decide whether to capture [KB-MIDNIGHT-RIG-SITE-001](/Users/krisbrown/workspaces/personal/apps-rig.midnight.ninja/docs/roadmap/KB-MIDNIGHT-RIG-SITE-001-show-hosts-per-tool.md) "Show which hosts carry each tool" in the site repo, covering the declared view only.
 
 **Recommendation:** capture it, for the declared view only. Keep live Rig versions and results off the public site. Put them on Observatory later if you still want them.
 

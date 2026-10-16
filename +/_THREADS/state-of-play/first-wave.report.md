@@ -1,9 +1,3 @@
----
-
----
-
----
-
 # [Knowledge Islands](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Admin/Governance/Charter.md) › State of play › first-wave
 
 **Run report at 01:29 BST · last mark 16:14 BST**
@@ -41,6 +35,7 @@ Outstanding - no action requested now
 **Options:**
 
 a) (recommended) State-of-play pushes ki-principal `main` fast-forward only, including the tools-burndown commit `335e6a0`, after a final `git pull --rebase`.
+
 b) Leave it for the Fnd: tools-burndown thread to push at its next resting point, which carries this thread's commits up with it.
 
 ```text

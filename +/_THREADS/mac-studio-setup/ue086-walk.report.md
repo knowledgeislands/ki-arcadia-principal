@@ -319,7 +319,7 @@ C8-WORDING - a) an agent rewords C8 in KB-DOTFILES-UE-086 to expect Keynote, Num
 
 - [at rest] ue086-walk finished; nothing running from this run
 - [running elsewhere] adobe-script (C7i)
-- [waiting on Kris] KB-DOTFILES-UE-086 steps 0 to 12 above, at sol's screen; KEYONLY-APPLY; UTM-SOL
+- [waiting on Kris] [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) steps 0 to 12 above, at sol's screen; KEYONLY-APPLY; UTM-SOL
 - [queries] C56-TICK, C8-WORDING
 - [uncommitted] this report
 

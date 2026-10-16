@@ -27,7 +27,7 @@ The plan lists four gaps to close before the change:
 - No other device, such as the iPhone, has a key.
 - There is only one key, with no spare.
 
-The plan treats the drop-in as a step done by hand, not something chezmoi carries. Writing to `/etc` is administrator-only system work, which belongs to Rig under ADR-KI-TOOL-RIG-009, and Rig has no `sshd` resource. The plan covers outbound traffic and LIVE-MAN-SWITCH as you asked.
+The plan treats the drop-in as a step done by hand, not something chezmoi carries. Writing to `/etc` is administrator-only system work, which belongs to Rig under [ADR-KI-TOOL-RIG-009](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/decisions/ADR-KI-TOOL-RIG-009-system-domain-resources-under-an-attended-grant.md), and Rig has no `sshd` resource. The plan covers outbound traffic and LIVE-MAN-SWITCH as you asked.
 
 ## In Progress
 

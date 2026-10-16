@@ -26,7 +26,7 @@
   2. The thread commits and pushes its checkpoint and folder at every owner report and resting point.
   3. Each owner decision is logged and committed in the turn it arrives. "record" is the leading verb in 136 checkpoint and thread commits.
   4. THREAD-TIDY then deletes most of those reports at the next mark.
-  
+
   The result is a create, commit, push, delete cycle: 71% of the bookkeeping files created in ki-principal were deleted again within three weeks.
 - **Busiest threads**, counted as file touches in bookkeeping-only commits (folder plus checkpoint): State of play 391, KI Model: ways-of-working 295, Techné 168, Rig: mac-studio-bootstrap 119, Rig: chezmoi 114, tools-burndown 57, skill-reviews (harness) 56, Acquire: knowledge-acquisition 60.
 - **Leftovers found.** There are no stashes and no worktrees in any of the 23 repositories. The other leftovers are listed under Queries.
@@ -59,6 +59,7 @@ Outstanding - no action requested now
 **Options:**
 
 a) (recommended) Hand remedies 1-5 to KI Model: ways-of-working as one change at its reinstatement, with remedies 1 and 2 first and this report as the evidence.
+
 b) Apply remedy 2 alone now as an interim practice in every thread, and hand the rest over later.
 
 ### OLD-THREAD-FOLDERS - tidy thread folders that THREAD-TIDY has not reached
@@ -70,6 +71,7 @@ b) Apply remedy 2 alone now as an interim practice in every thread, and hand the
 **Options:**
 
 a) (recommended) A background run deletes, by explicit path, the `pilot-test1` folder and every answered report, evidence and brief file in `tools-burndown`, keeping its `decisions.md` and `historical-decisions.md`. It moves `adobe-remove.sh` and the favicon files to `tmp/`. Rig: chezmoi and Rig: mac-studio-bootstrap apply THREAD-TIDY at their next mark.
+
 b) Leave every folder to its owning thread's next mark.
 
 ### STALE-BRANCHES - delete old release and work branches
@@ -87,6 +89,7 @@ b) Leave every folder to its owning thread's next mark.
 **Options:**
 
 a) (recommended) A background run checks each branch listed here. It deletes, locally and on `origin`, those whose commits are all on `main` or whose release has shipped, and reports the rest back as a query.
+
 b) Keep them all for now.
 
 ### UNPUSHED-COMMITS - three repositories ahead of origin
@@ -94,8 +97,8 @@ b) Keep them all for now.
 **Context:** These commits were made today and are ahead of `origin`. They are probably Rig: mac-studio-bootstrap work, whose checkpoint is the only one still `active`:
 
 - `apps-observatory.local`: 1 commit (Observatory tab icon).
-- `tools-ki`: 2 commits (KI-TOOL-KI-CLI-136 reservation and capture).
-- `tools-rig`: 3 commits (KI-TOOL-RIG-CORE-059 and the Mac App Store provider).
+- `tools-ki`: 2 commits ([KI-TOOL-KI-CLI-136](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-136-errors-suggest-fixes.md) reservation and capture).
+- `tools-rig`: 3 commits ([KI-TOOL-RIG-CORE-059](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-059-mac-app-store-provider.md) and the Mac App Store provider).
 
 I did not push them, because they are not this run's commits.
 
@@ -104,6 +107,7 @@ I did not push them, because they are not this run's commits.
 **Options:**
 
 a) (recommended) Rig: mac-studio-bootstrap confirms they are its commits and pushes them fast-forward at its next resting point. State of play checks that they have landed.
+
 b) Kris pushes them by hand.
 
 ### STAGING-LEFTOVERS - old material in staging areas, runtime state and ignores
@@ -120,6 +124,7 @@ b) Kris pushes them by hand.
 **Options:**
 
 a) (recommended) A background run checks that each item has a durable home or is superseded, then deletes it by explicit path. It archives the spent runtime files older than the last mark into a dated tarball in the state folder, and conforms `kw-website`'s ignore block through `ki repo` so that `tmp/` is ignored.
+
 b) Clear only the runtime files and the `kw-website` ignore, and leave the staging areas to their islands.
 
 ```text

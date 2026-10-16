@@ -185,7 +185,7 @@ c) Use `philosophy` (Philosophy) in place of `model`.
 
 ### DESIGN-TIDY - deliver the design-notes rule ki-pmo already carries
 
-**Context:** ki-pmo already retires design folders under Project notes, from DESIGN-RETENTION on 13 October, but ki-pmo-design and the registry standard still put them in `Streams/`, and ki-principal has five of them. Their outcomes mostly have homes already: ADR-KI-PRINCIPAL-002, the harness skills, and Hosts, Roles and Layers. Two hold live material: the workstation-bundle walkthrough and the Paperclip rebuild structure. The mac-studio-setup hosts table is durable knowledge. Paperclip's and mac-studio-setup's extra H2 sections break the Outcome and Notes rule.
+**Context:** ki-pmo already retires design folders under Project notes, from DESIGN-RETENTION on 13 October, but ki-pmo-design and the registry standard still put them in `Streams/`, and ki-principal has five of them. Their outcomes mostly have homes already: [ADR-KI-PRINCIPAL-002](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Admin/Governance/Decisions/ADR-KI-PRINCIPAL-002-territory-derived-repository-selection.md), the harness skills, and Hosts, Roles and Layers. Two hold live material: the workstation-bundle walkthrough and the Paperclip rebuild structure. The mac-studio-setup hosts table is durable knowledge. Paperclip's and mac-studio-setup's extra H2 sections break the Outcome and Notes rule.
 
 **Query:** Should each design folder be resolved as below, before the registry move?
 

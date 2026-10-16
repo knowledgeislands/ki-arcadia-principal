@@ -7,7 +7,7 @@ All four items are done. There are three local commits in `~/.local/share/chezmo
 ## What has been done
 
 - **CODEX-GROUPS (`5a9a87b`).** Line 23 of `.chezmoitemplates/codex-trusted-projects-json` now uses the `dig` form that reads both mgit root schemas.
-  - The repository has no Git hook (AGENTS.md, KI-HARNESS-GOV-117). The render check therefore went into the local gate as `tests/chezmoi-templates.test.mjs`. It renders both Codex templates through `chezmoi execute-template` with an empty config, and also checks a schema-1 root.
+  - The repository has no Git hook (AGENTS.md, [KI-HARNESS-GOV-117 (pruned)](https://github.com/knowledgeislands/ki-agentic-harness/blob/924b420d3497584b209fcaab0191fc2ad29f2b04/docs/roadmap/KI-HARNESS-GOV-117-govern-hooks-beyond-packages.md)). The render check therefore went into the local gate as `tests/chezmoi-templates.test.mjs`. It renders both Codex templates through `chezmoi execute-template` with an empty config, and also checks a schema-1 root.
   - Against the old line, 3 of its 4 tests fail. Against the fix, all 4 pass.
   - On sol I reviewed the per-file diff before applying:
     - `~/.codex/config.toml` only removes 37 trusted-project entries for retired `kit` and `hnr` folders.
@@ -22,13 +22,13 @@ All four items are done. There are three local commits in `~/.local/share/chezmo
   - It folds in the old new-machine notes (profiles, sudo, 1Password over Screen Sharing, self-updating apps, FileVault restarts) and today's three fixes.
   - The "Set up a new machine" section of `macos-workstation.md` now links to it, as does its FileVault anchor. The user-guides index lists it.
   - The guide is British English, ASCII-only, with no addresses or secrets. Roadmap IDs are plain text, because the `ki-guides` audit forbids links outside the guide collection.
-  - The guide cites KI-TOOL-RIG-CORE-054 and KI-TOOL-RIG-CORE-055. They were on disk in tools-rig from the concurrent tool-records run.
+  - The guide cites [KI-TOOL-RIG-CORE-054](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-054-command-line-tools-check.md) and [KI-TOOL-RIG-CORE-055](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-055-interpreter-port-owner-matching.md). They were on disk in tools-rig from the concurrent tool-records run.
   - [KB-DOTFILES-UE-090](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-090-close-rig-bring-up-gaps.md) now points to the guide and records what has landed and what stays open.
 - **Gate.** `rumdl check .` is clean. `node --test` gives 228 pass and 4 fail. The same 4 fail on a clean export of HEAD from before this run: `ki-self-skill`, two `rig-catalogue` tests and `scheduled-emerge-session`. `ki repo audit` gives FAIL=2: runtime coverage and the missing local registry, both sol host state (SOL-REGISTRY). Neither is new.
 
 | Final check | Result |
 | --- | --- |
-| `rig doctor` | unhealthy: pass=228 fail=3 skipped=19. `telegram` missing (SOL-TELEGRAM, parked); `port.headroom` falsely "conflicting (owner: Python)" (KI-TOOL-RIG-CORE-055); **new:** `default-application.svg` drifted (ImageOptim holds SVG; the declaration wants Chrome), see SVG-HANDLER |
+| `rig doctor` | unhealthy: pass=228 fail=3 skipped=19. `telegram` missing (SOL-TELEGRAM, parked); `port.headroom` falsely "conflicting (owner: Python)" ([KI-TOOL-RIG-CORE-055](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-055-interpreter-port-owner-matching.md)); **new:** `default-application.svg` drifted (ImageOptim holds SVG; the declaration wants Chrome), see SVG-HANDLER |
 | `chezmoi status` | runs, exit 0; one target, `.config/rig/conf.d/10-applications.toml`, from someone else's uncommitted source edit (see OTHER-EDIT) |
 | `ki doctor` | unhealthy: pass=15 fail=1, only `humansnotrobots/hnr-agentic-harness` missing (SOL-HNR-HARNESS, unchanged) |
 
@@ -44,11 +44,11 @@ Nothing in this run. Pending handoff: `~/.local/share/chezmoi` on sol, branch `m
 
 ### OTHER-EDIT - someone else's uncommitted edit in the chezmoi source
 
-**Summary:** `dot_config/rig/conf.d/private_10-applications.toml` has an uncommitted change that I did not make. It drops "(KB-DOTFILES-UE-079, chezmoi thread Decision 49)" from Telegram's rationale. I left it alone. It shows as the only `chezmoi status` drift. **Need you:** say whose it is and whether to keep it. **Recommendation:** let the session that made it commit it. Otherwise discard it, because it removes a record reference.
+**Summary:** `dot_config/rig/conf.d/private_10-applications.toml` has an uncommitted change that I did not make. It drops "([KB-DOTFILES-UE-079 (pruned)](https://github.com/krisb/dotfiles/blob/02ef54dfec0f59f2635089304b624fc64026db81/docs/roadmap/DOTFILES-UE-079-undeclared-software-decisions.md), chezmoi thread Decision 49)" from Telegram's rationale. I left it alone. It shows as the only `chezmoi status` drift. **Need you:** say whose it is and whether to keep it. **Recommendation:** let the session that made it commit it. Otherwise discard it, because it removes a record reference.
 
 ### RENDER-HOOK - "pre-commit" means the local gate here
 
-**Summary:** this repository deliberately has no Git hook (AGENTS.md, KI-HARNESS-GOV-117). I added the render check to the local gate (`node --test`), which AGENTS.md says to run before every commit, rather than installing an untracked `.git/hooks/pre-commit`. **Need you:** confirm, or ask for a hook. **Recommendation:** keep it in the gate, and let KI-HARNESS-GOV-117 decide on hooks estate-wide.
+**Summary:** this repository deliberately has no Git hook (AGENTS.md, [KI-HARNESS-GOV-117 (pruned)](https://github.com/knowledgeislands/ki-agentic-harness/blob/924b420d3497584b209fcaab0191fc2ad29f2b04/docs/roadmap/KI-HARNESS-GOV-117-govern-hooks-beyond-packages.md)). I added the render check to the local gate (`node --test`), which AGENTS.md says to run before every commit, rather than installing an untracked `.git/hooks/pre-commit`. **Need you:** confirm, or ask for a hook. **Recommendation:** keep it in the gate, and let [KI-HARNESS-GOV-117 (pruned)](https://github.com/knowledgeislands/ki-agentic-harness/blob/924b420d3497584b209fcaab0191fc2ad29f2b04/docs/roadmap/KI-HARNESS-GOV-117-govern-hooks-beyond-packages.md) decide on hooks estate-wide.
 
 ```text
 SVG-HANDLER - 

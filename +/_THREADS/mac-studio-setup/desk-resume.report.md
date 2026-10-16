@@ -1,9 +1,3 @@
----
-
----
-
----
-
 # [Rig](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/rig.md) › [Mac Studio bootstrap](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-setup/mac-studio-setup.md) › desk-resume
 
 **Run report at 13:20 BST · last mark 17:47 BST**

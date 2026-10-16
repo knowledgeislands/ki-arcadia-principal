@@ -1,9 +1,3 @@
----
-
----
-
----
-
 # [Rig](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/rig.md) › [Mac Studio bootstrap](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-setup/mac-studio-setup.md) › gate-fix
 
 **Run report at 00:50 BST · last mark 17:47 BST**
@@ -18,7 +12,7 @@
   - `ki-pmo read at dfa52a12`
   - the Reporting bullet in the current ki-pmo shape: Done, In Progress, Queries with Context, Query and Options, BST times
   - the machine facts, the firewall facts and what has been handed on
-- Current state is condensed into one picture of where things stand. Open with Kris: SOL-APPLY; SOL-CLT, a single session that also covers `brew reinstall pkgconf`, `rig upgrade`, KB-DOTFILES-UE-086 section C, the mise prune and SOL-TELEGRAM (now the Homebrew cask route); and TERRA-READ. Running: `local-push`. Settled questions are dropped and the parked list is kept. RIG-SOL-BREW, the cask route and LOCAL-PUSH are added to Decisions made.
+- Current state is condensed into one picture of where things stand. Open with Kris: SOL-APPLY; SOL-CLT, a single session that also covers `brew reinstall pkgconf`, `rig upgrade`, [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) section C, the mise prune and SOL-TELEGRAM (now the Homebrew cask route); and TERRA-READ. Running: `local-push`. Settled questions are dropped and the parked list is kept. RIG-SOL-BREW, the cask route and LOCAL-PUSH are added to Decisions made.
 - Link corrections: the old checkpoint linked four records that have since closed. I checked each one and now link it to its last revision:
   - [KI-TOOL-RIG-CORE-051 (pruned)](https://github.com/knowledgeislands/tools-rig/blob/06da52aec5de300f03386efbdb637af1873c18d0/docs/roadmap/KI-TOOL-RIG-CORE-051-linux-tailnet-only-firewall.md) is accepted.
   - [KI-TOOL-RIG-CORE-046 (pruned)](https://github.com/knowledgeislands/tools-rig/blob/06da52aec5de300f03386efbdb637af1873c18d0/docs/roadmap/KI-TOOL-RIG-CORE-046-remote-access-and-continuity.md) was cancelled, and its substance is the idea in the Project note.
@@ -29,7 +23,7 @@
 - Checks: `ki repo audit` no longer reports RECORD-2, BOUNDARY-1 or STREAM-9 for these two files, and the Markdown mechanical check flags neither file. The audit as a whole still fails, but only on findings that were already there and are unrelated; none was fixed:
   - ki-authoring MD-mech, on line length in other thread reports and `+/_THREADS/ways-of-working/decisions.md`
   - ki-checkpoint LIFECYCLE-1 on `knowledge-islands-model.observatory.md`
-  - ki-decision-records BODY-11 on ADR-KI-PRINCIPAL-007
+  - ki-decision-records BODY-11 on [ADR-KI-PRINCIPAL-007](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Admin/Governance/Decisions/ADR-KI-PRINCIPAL-007-territory-seats-on-hosts.md)
   - ki-engineering TSC-1 and KNIP-2
 - Commits on ki-principal `main`, both pushed fast-forward to origin and now level, with the commit gate passing and no `--no-verify`:
   - `07dc0e7` docs(checkpoint): conform rig.mac-studio-bootstrap and unname records in its Project note

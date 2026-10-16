@@ -27,24 +27,15 @@ Nothing is running from this run.
 
 **Options:** a) (recommended) yes, on sol first and then terra, keeping one Terminal window open throughout:
 
-1. At sol, run: `cp -p ~/.ssh/config ~/.ssh/config.pre-ue088 && chezmoi diff ~/.ssh/config`
-   Expect: the diff adds the `Host sol 100.90.130.74` block and the `Host terra` block, and removes the old address-only block. Nothing else changes.
-2. At sol, run: `chezmoi apply ~/.ssh/config && ssh -G terra | grep -E '^(hostname|user|forwardagent) '`
-   Expect: `user krisbrown`, `hostname 100.96.126.29`, `forwardagent no`.
-3. At sol, run: `ssh terra true && ssh sol true && ssh -T git@github.com`
-   Expect: no host-key prompt, then `Hi krisb! You've successfully authenticated`. Leave the backup in place if this step fails.
-4. Only if step 2 or 3 fails, run at sol: `cp -p ~/.ssh/config.pre-ue088 ~/.ssh/config`
-   Expect: `ssh krisbrown@100.96.126.29 true` works again. Then tell the thread so the commit is reverted.
-5. At sol, once step 3 passes, run: `git -C ~/.local/share/chezmoi push && rm ~/.ssh/config.pre-ue088`
-   Expect: `main -> main`.
-6. At terra, run: `cp -p ~/.ssh/config ~/.ssh/config.pre-ue088 && chezmoi git -- pull --ff-only && chezmoi diff ~/.ssh/config ~/.ssh/known_hosts`
-   Expect: the same config diff as step 1, plus sol's and terra's keys if terra's known_hosts lacks them.
-7. At terra, run: `chezmoi apply ~/.ssh/config ~/.ssh/known_hosts && ssh -G terra | grep -E '^(hostname|user|forwardagent) ' && ssh sol true && ssh terra true && ssh -T git@github.com`
-   Expect: `hostname 100.96.126.29`, `user krisbrown`, `forwardagent no`, no host-key prompt, then the GitHub greeting. `ssh terra` from terra loops back to itself, which does no harm.
-8. Only if step 7 fails, run at terra: `cp -p ~/.ssh/config.pre-ue088 ~/.ssh/config`
-   Expect: plain `ssh krisbrown@100.90.130.74 true` works. Tell the thread.
-9. At terra, once step 7 passes, run: `rm ~/.ssh/config.pre-ue088`
-   Expect: no output.
+1. At sol, run: `cp -p ~/.ssh/config ~/.ssh/config.pre-ue088 && chezmoi diff ~/.ssh/config` Expect: the diff adds the `Host sol 100.90.130.74` block and the `Host terra` block, and removes the old address-only block. Nothing else changes.
+2. At sol, run: `chezmoi apply ~/.ssh/config && ssh -G terra | grep -E '^(hostname|user|forwardagent) '` Expect: `user krisbrown`, `hostname 100.96.126.29`, `forwardagent no`.
+3. At sol, run: `ssh terra true && ssh sol true && ssh -T git@github.com` Expect: no host-key prompt, then `Hi krisb! You've successfully authenticated`. Leave the backup in place if this step fails.
+4. Only if step 2 or 3 fails, run at sol: `cp -p ~/.ssh/config.pre-ue088 ~/.ssh/config` Expect: `ssh krisbrown@100.96.126.29 true` works again. Then tell the thread so the commit is reverted.
+5. At sol, once step 3 passes, run: `git -C ~/.local/share/chezmoi push && rm ~/.ssh/config.pre-ue088` Expect: `main -> main`.
+6. At terra, run: `cp -p ~/.ssh/config ~/.ssh/config.pre-ue088 && chezmoi git -- pull --ff-only && chezmoi diff ~/.ssh/config ~/.ssh/known_hosts` Expect: the same config diff as step 1, plus sol's and terra's keys if terra's known_hosts lacks them.
+7. At terra, run: `chezmoi apply ~/.ssh/config ~/.ssh/known_hosts && ssh -G terra | grep -E '^(hostname|user|forwardagent) ' && ssh sol true && ssh terra true && ssh -T git@github.com` Expect: `hostname 100.96.126.29`, `user krisbrown`, `forwardagent no`, no host-key prompt, then the GitHub greeting. `ssh terra` from terra loops back to itself, which does no harm.
+8. Only if step 7 fails, run at terra: `cp -p ~/.ssh/config.pre-ue088 ~/.ssh/config` Expect: plain `ssh krisbrown@100.90.130.74 true` works. Tell the thread.
+9. At terra, once step 7 passes, run: `rm ~/.ssh/config.pre-ue088` Expect: no output.
 
 b) Apply on sol only and leave terra until it is next at hand.
 

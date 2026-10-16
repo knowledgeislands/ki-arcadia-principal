@@ -8,7 +8,7 @@
 
 - **Zed on sol:** installed at `/Applications/Zed.app` as the Homebrew app `zed` (1.23.3, updates itself). Rig sees it as present. The catalogue puts Zed in `core`, so both machines select it.
 - **The Dock declaration:** in your chezmoi source, `dot_config/rig/conf.d/private_40-macos.toml` declares `[dock.workstation]` with `profiles = ["laptop"]`. Zed is in its item list, between Claude and Delta. There is no Dock layout for `studio` or `core`. This was a deliberate choice in your 9 October profile-split commit ("Keep today's Dock as laptop-only"), because Rig can't yet show one shared Dock with different apps on each machine.
-- **KI-TOOL-RIG-CORE-042** ([record](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-042-profile-filtered-dock-items.md)) is the Rig feature that would allow this: one ordered Dock list, where each item can be linked to an app and each machine shows only the apps its profile selects. It is approved and Ready at Next, but **it has not been built yet**.
+- **[KI-TOOL-RIG-CORE-042](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-042-profile-filtered-dock-items.md)** ([record](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-042-profile-filtered-dock-items.md)) is the Rig feature that would allow this: one ordered Dock list, where each item can be linked to an app and each machine shows only the apps its profile selects. It is approved and Ready at Next, but **it has not been built yet**.
 - **What Rig says on sol** (Rig 0.6.3, default profile `studio`): `rig show dock:workstation` lists the layout with `Profiles: laptop`. `rig show --profile studio` includes the Dock _settings_ (tile size, autohide and so on) and `dockutil`, but no Dock layout. `rig doctor` and `rig status` check those settings and never mention the Dock layout. So Rig reports nothing wrong, because as far as it knows nothing is.
 - **sol's Dock now** (28 apps): Path Finder, System Settings, iMazing, 1Password, Preview, Google Chrome, TickTick, Linear, Notion, Notes, Goodnotes, Obsidian, Granola, Raindrop.io, ChatGPT, Claude, Warp, Visual Studio Code, GitHub Desktop, Redis Insight, Beyond Compare, Slack, Messages, WhatsApp, Spark Desktop, Microsoft Outlook, Photos, Adobe Lightroom Classic. The Dock file was last changed today at 15:18 BST.
 - **terra's Dock** (laptop profile, 36 apps) matches the declared layout. It includes Zed, plus NordVPN, ChatGPT Classic, Delta, LaunchControl, draw.io, Telegram, RendApp and The Tower, none of which are on sol's Dock. sol has Adobe Lightroom Classic, which terra doesn't, and Warp and Visual Studio Code are the other way round.
@@ -16,9 +16,9 @@
 
 ### Cause and fix
 
-- **Cause:** a gap in what's declared, which you chose while waiting for KI-TOOL-RIG-CORE-042. It isn't a Rig defect, and **running `rig apply` on sol won't fix it**: with nothing selected for the Dock, apply doesn't touch it.
-- **Proper fix:** build KI-TOOL-RIG-CORE-042, then change the declaration in chezmoi. Move `dock.workstation` to `core`, link the machine-specific items to their apps (Delta for laptop, add Lightroom Classic for studio), then run `rig apply` on sol. That gives sol Zed and the rest of your shared order.
-- **Stopgap while you wait:** either drag Zed onto sol's Dock (Rig won't undo it, because it doesn't manage that Dock), or add a second, studio-only Dock layout in chezmoi and apply it. I don't recommend the second layout: it copies the whole list and has to be removed again once KI-TOOL-RIG-CORE-042 is built.
+- **Cause:** a gap in what's declared, which you chose while waiting for [KI-TOOL-RIG-CORE-042](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-042-profile-filtered-dock-items.md). It isn't a Rig defect, and **running `rig apply` on sol won't fix it**: with nothing selected for the Dock, apply doesn't touch it.
+- **Proper fix:** build [KI-TOOL-RIG-CORE-042](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-042-profile-filtered-dock-items.md), then change the declaration in chezmoi. Move `dock.workstation` to `core`, link the machine-specific items to their apps (Delta for laptop, add Lightroom Classic for studio), then run `rig apply` on sol. That gives sol Zed and the rest of your shared order.
+- **Stopgap while you wait:** either drag Zed onto sol's Dock (Rig won't undo it, because it doesn't manage that Dock), or add a second, studio-only Dock layout in chezmoi and apply it. I don't recommend the second layout: it copies the whole list and has to be removed again once [KI-TOOL-RIG-CORE-042](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-042-profile-filtered-dock-items.md) is built.
 
 ### Side observations
 
@@ -37,11 +37,11 @@ Nothing. This run has finished.
 
 ### SOL-DOCK-ZED - How to get Zed onto sol's Dock
 
-**Summary:** sol's Dock isn't managed by Rig until KI-TOOL-RIG-CORE-042 is built. `rig apply` won't add Zed.
+**Summary:** sol's Dock isn't managed by Rig until [KI-TOOL-RIG-CORE-042](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-042-profile-filtered-dock-items.md) is built. `rig apply` won't add Zed.
 
 **Need from you:** choose a route.
 
-**Recommendation:** drag Zed onto sol's Dock now, and prioritise KI-TOOL-RIG-CORE-042 (it's already Ready). Then a follow-up run can move the Dock to `core` with links for each machine and apply it on sol.
+**Recommendation:** drag Zed onto sol's Dock now, and prioritise [KI-TOOL-RIG-CORE-042](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-042-profile-filtered-dock-items.md) (it's already Ready). Then a follow-up run can move the Dock to `core` with links for each machine and apply it on sol.
 
 ```text
 SOL-DOCK-ZED: drag now + schedule 042 / build 042 now / interim studio Dock layout / leave — <notes>
@@ -53,7 +53,7 @@ SOL-DOCK-ZED: drag now + schedule 042 / build 042 now / interim studio Dock layo
 
 **Need from you:** say which of those you want on sol's Dock, or confirm "same as laptop wherever the app is installed".
 
-**Recommendation:** same order as the laptop, filtered by what each profile selects, which is what KI-TOOL-RIG-CORE-042 gives by default.
+**Recommendation:** same order as the laptop, filtered by what each profile selects, which is what [KI-TOOL-RIG-CORE-042](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-042-profile-filtered-dock-items.md) gives by default.
 
 ```text
 SOL-DOCK-EXTRAS: same as laptop where selected / list — <notes>

@@ -13,7 +13,7 @@ Run on `sol`, 2026-10-14, about 18:53 to 18:56 BST, under Kris's 2026-10-14 appr
     - checkpoint shape, including `rig.mac-studio-bootstrap.md` (heading sequence and continuity wording)
     - `tsc` and `knip` under ki-engineering
     - eight RUNTIMES-2 activations
-    - STREAM-9, because the mac-studio-bootstrap Project note lists KI-TOOL-RIG-CORE-054, KB-DOTFILES-UE-090 and KI-TOOL-RIG-CORE-055
+    - STREAM-9, because the mac-studio-bootstrap Project note lists [KI-TOOL-RIG-CORE-054](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-054-command-line-tools-check.md), [KB-DOTFILES-UE-090](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-090-close-rig-bring-up-gaps.md) and [KI-TOOL-RIG-CORE-055](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-055-interpreter-port-owner-matching.md)
 - **AUTOUPDATE-REMOVE: the old Homebrew autoupdate agent is gone.**
   - `brew autoupdate delete` reported "Homebrew will no longer autoupdate and the plist has been deleted". `brew untap domt4/autoupdate` then untapped it. Both exited cleanly.
   - `com.github.domt4.homebrew-autoupdate` is no longer loaded, and its plist is gone from `~/Library/LaunchAgents`.

@@ -1,4 +1,4 @@
-# dock-records - Dock declaration record and KB-DOTFILES-UE-086 amendment - owner report
+# dock-records - Dock declaration record and [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) amendment - owner report
 
 Thread [rig.mac-studio-bootstrap](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_CHECKPOINTS/rig.mac-studio-setup.md). Run on sol, locally, 2026-10-14, finished about 18:58 BST. State: done. Authority: Kris, decisions log Decision 73 (`/Users/krisbrown/.local/state/ki/agents/mac-studio-bootstrap/decisions.md`): DOCK-CONSUMER, DOCK-APPLY-SOL, UE086-AMEND, UE086-SOL-PASS.
 
@@ -24,7 +24,7 @@ Docs and roadmap only, in the chezmoi source. No configuration changed, nothing 
   - Canon Utilities, the Chrome apps and Simulator are left undeclared, now listed under Boundary Out.
   - Your timing is recorded: section C plus `mise prune` in the same sol session as SOL-CLT, straight after `rig upgrade`. `mise prune --dry-run`, then `mise prune`, is added to C2.
   - New check step C8, and updates to the removal list, Files touched, Verify and Delegation.
-- **Commits** (local, `main`, unpushed): `f3a07bc` (ledger), `da9ddce` (KB-DOTFILES-UE-091), `415d14c` (KB-DOTFILES-UE-086). The working tree is clean, with no Git locks left behind.
+- **Commits** (local, `main`, unpushed): `f3a07bc` (ledger), `da9ddce` ([KB-DOTFILES-UE-091](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-091-shared-dock-tool-links.md)), `415d14c` ([KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md)). The working tree is clean, with no Git locks left behind.
 - **Checks:**
   - `rumdl check .` is clean.
   - `node --test tests/*.test.mjs` gives 228 passed and 4 failed. The same 4 fail at `bd82eda`, before this run, in a clean copy of that commit.
@@ -34,26 +34,26 @@ Docs and roadmap only, in the chezmoi source. No configuration changed, nothing 
 
 | Check | Failure | Cause |
 | --- | --- | --- |
-| `node --test` | `tests/ki-self-skill.test.mjs` | bare "test failed" at file level; earlier runs traced the same failure to the dangling `.agents/skills/ki-work-housekeeping` link (KB-DOTFILES-UE-086 notes) |
+| `node --test` | `tests/ki-self-skill.test.mjs` | bare "test failed" at file level; earlier runs traced the same failure to the dangling `.agents/skills/ki-work-housekeeping` link ([KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md) notes) |
 | `node --test` | `rig-catalogue`: "core plus laptop resolves the former default selection" | the expected list still has `tool.paperclip-agents`, which the laptop selection no longer resolves |
 | `node --test` | `rig-catalogue`: "stable private ports retain explicit owners" | assertion mismatch on port owners; not investigated (no configuration in scope) |
 | `node --test` | "the real source's isolated exit 40 reaches the wrapper reporter" | `5g-emerge-phase2/apps/site` checkout on sol lacks the `json5` package (dependencies not installed) |
 | `ki repo audit` | 8 × RUNTIMES-2, 1 × RUNTIMES-3 | ki-binding, ki-housekeeping and ki-tokenomics skill sets not activated for every runtime; no `.claude/skills/ki-self` projection |
-| `ki repo audit` | HOOK-1 warning | no committed pre-commit gate (stays with KI-HARNESS-GOV-117, per RENDER-HOOK) |
+| `ki repo audit` | HOOK-1 warning | no committed pre-commit gate (stays with [KI-HARNESS-GOV-117 (pruned)](https://github.com/knowledgeislands/ki-agentic-harness/blob/924b420d3497584b209fcaab0191fc2ad29f2b04/docs/roadmap/KI-HARNESS-GOV-117-govern-hooks-beyond-packages.md), per RENDER-HOOK) |
 
 ## What is in progress
 
-Nothing is running. KB-DOTFILES-UE-091 waits for KI-TOOL-RIG-CORE-042 to reach Awaiting review. KB-DOTFILES-UE-086's new A8 is source work any agent can do under `ki-implement`; C7i and C8 join your at-screen section C.
+Nothing is running. [KB-DOTFILES-UE-091](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-091-shared-dock-tool-links.md) waits for [KI-TOOL-RIG-CORE-042](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-042-profile-filtered-dock-items.md) to reach Awaiting review. [KB-DOTFILES-UE-086](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-086-finish-software-alignment.md)'s new A8 is source work any agent can do under `ki-implement`; C7i and C8 join your at-screen section C.
 
 ## Outstanding queries
 
 ### UE091-ADOPT - When to adopt the Dock record
 
-**Summary:** KB-DOTFILES-UE-091 is triage only, so it cannot be delivered until it is adopted. It is useful only once KI-TOOL-RIG-CORE-042 reaches Awaiting review, because that record's sol acceptance check needs it.
+**Summary:** [KB-DOTFILES-UE-091](/Users/krisbrown/.local/share/chezmoi/docs/roadmap/KB-DOTFILES-UE-091-shared-dock-tool-links.md) is triage only, so it cannot be delivered until it is adopted. It is useful only once [KI-TOOL-RIG-CORE-042](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-042-profile-filtered-dock-items.md) reaches Awaiting review, because that record's sol acceptance check needs it.
 
 **Need from you:** decide when to adopt it.
 
-**Recommendation:** adopt it as `deliver / Next` now, and plan it to Ready when KI-TOOL-RIG-CORE-042 reaches Awaiting review.
+**Recommendation:** adopt it as `deliver / Next` now, and plan it to Ready when [KI-TOOL-RIG-CORE-042](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-042-profile-filtered-dock-items.md) reaches Awaiting review.
 
 ### UE086-A8 - Who does the new source step
 

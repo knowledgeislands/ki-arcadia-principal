@@ -31,12 +31,9 @@ Nothing is running from this run.
 
 **Options:** a) (recommended) yes, at sol's screen in Terminal, using the steps below; b) keep the Homebrew copy and I revert UTM to the cask declaration.
 
-1. Quit UTM, then run: `brew uninstall --cask utm`
-   Expect: `Uninstalling Cask utm` and no error.
-2. Run: `mas install 1538878817`
-   Expect: `Installed UTM` (sign in to the App Store first if asked).
-3. Run: `mas list | grep 1538878817; ls ~/Library/Containers/com.utmapp.UTM`
-   Expect: one UTM line, and the container folder listed. Open UTM and check your virtual machines are shown.
+1. Quit UTM, then run: `brew uninstall --cask utm` Expect: `Uninstalling Cask utm` and no error.
+2. Run: `mas install 1538878817` Expect: `Installed UTM` (sign in to the App Store first if asked).
+3. Run: `mas list | grep 1538878817; ls ~/Library/Containers/com.utmapp.UTM` Expect: one UTM line, and the container folder listed. Open UTM and check your virtual machines are shown.
 
 **TERRA-CHECK**
 
@@ -54,16 +51,11 @@ Nothing is running from this run.
 
 **Options:** a) (recommended) yes, with these steps.
 
-1. At sol, run: `chezmoi diff ~/.config/rig/conf.d/10-applications.toml`
-   Expect: Photoshop and Creative Cloud move to `retired-application` tables, UTM moves to `kind = "mas"` 1538878817, and the Keynote, Numbers and Pages comments change.
-2. At sol, run: `chezmoi apply ~/.config/rig/conf.d/10-applications.toml && rig doctor`
-   Expect: once UTM-SOL is done, the only finding is `port.headroom`.
-3. At sol, run: `rig status --retired`
-   Expect: Photoshop and Creative Cloud are listed as `matched` until C7i removes them.
-4. At sol, run: `git -C ~/.local/share/chezmoi push`
-   Expect: `main -> main`.
-5. At terra, run: `chezmoi update && rig doctor && rig status --retired`
-   Expect: no UTM or Adobe findings, and the retired report shows only what Creative Cloud left behind.
+1. At sol, run: `chezmoi diff ~/.config/rig/conf.d/10-applications.toml` Expect: Photoshop and Creative Cloud move to `retired-application` tables, UTM moves to `kind = "mas"` 1538878817, and the Keynote, Numbers and Pages comments change.
+2. At sol, run: `chezmoi apply ~/.config/rig/conf.d/10-applications.toml && rig doctor` Expect: once UTM-SOL is done, the only finding is `port.headroom`.
+3. At sol, run: `rig status --retired` Expect: Photoshop and Creative Cloud are listed as `matched` until C7i removes them.
+4. At sol, run: `git -C ~/.local/share/chezmoi push` Expect: `main -> main`.
+5. At terra, run: `chezmoi update && rig doctor && rig status --retired` Expect: no UTM or Adobe findings, and the retired report shows only what Creative Cloud left behind.
 
 ```text
 UTM-SOL - a) at sol's screen in Terminal: quit UTM; brew uninstall --cask utm; mas install 1538878817; then mas list | grep 1538878817 and ls ~/Library/Containers/com.utmapp.UTM; expect one UTM line, the container listed and your VMs shown in UTM

@@ -30,22 +30,14 @@ Nothing is running from this run. migrate-mas can now go ahead.
 
 **Options:** a) (recommended) yes, in this order:
 
-1. Quit Lightroom Classic and every Photoshop. Open Creative Cloud from its menu-bar icon, then choose **Apps** › **Installed**.
-   Expect: Lightroom Classic, and Photoshop with the older versions under its version menu.
-2. On Lightroom Classic, open **⋯**, choose **Uninstall**, then **Keep**.
-   Expect: Lightroom Classic leaves the list.
-3. For each Photoshop, in the order 2026, 2025, 2024, 2023: open **⋯**, choose **Uninstall**, then **Keep**.
-   Expect: no Photoshop left, and no installed apps left in the list.
-4. In Terminal, run: `ls -d "/Applications/Adobe Lightroom Classic" /Applications/Adobe\ Photoshop* 2>&1`
-   Expect: only `No such file or directory` lines (zsh may print `no matches found` instead). If anything is listed, go back to step 2 or 3.
-5. Quit Creative Cloud from its menu-bar icon (**⋯** › **Quit**). Open `/Applications/Utilities/Adobe Creative Cloud/Utils/Creative Cloud Uninstaller.app`, choose **Uninstall**, and give the administrator password when asked.
-   Expect: "Creative Cloud desktop app uninstalled". If it says apps are still installed, go back to step 1.
-6. In Terminal, run: `ls -d /Applications/Adobe* /Applications/Utilities/Adobe* 2>&1; ls /Library/LaunchAgents /Library/LaunchDaemons ~/Library/LaunchAgents /Library/PrivilegedHelperTools | grep -i adobe; launchctl list | grep -i adobe; pgrep -il adobe`
-   Expect: no output, or only `No such file or directory` or `no matches found`. Before this run sol had four system launch agents, two launch daemons, two user launch agents and the `com.adobe.acc.installer.v2` helper. Send any line that is still there to the thread, and do not delete it by hand.
-7. In Terminal, run: `find /Library ~/Library -maxdepth 3 -iname '*adobe*' -prune -exec du -sh {} + 2>/dev/null; find ~/Pictures -maxdepth 4 -name '*.lrcat' 2>/dev/null`
-   Expect: a list of the Adobe folders left with their sizes (for example `~/Library/Caches/Adobe Camera Raw 2`, about 19 GB), then the path of each Lightroom catalogue. Send the list to the thread and delete nothing yet (ADOBE-DATA).
-8. Restart sol when convenient, then repeat step 6.
-   Expect: still no output.
+1. Quit Lightroom Classic and every Photoshop. Open Creative Cloud from its menu-bar icon, then choose **Apps** › **Installed**. Expect: Lightroom Classic, and Photoshop with the older versions under its version menu.
+2. On Lightroom Classic, open **⋯**, choose **Uninstall**, then **Keep**. Expect: Lightroom Classic leaves the list.
+3. For each Photoshop, in the order 2026, 2025, 2024, 2023: open **⋯**, choose **Uninstall**, then **Keep**. Expect: no Photoshop left, and no installed apps left in the list.
+4. In Terminal, run: `ls -d "/Applications/Adobe Lightroom Classic" /Applications/Adobe\ Photoshop* 2>&1` Expect: only `No such file or directory` lines (zsh may print `no matches found` instead). If anything is listed, go back to step 2 or 3.
+5. Quit Creative Cloud from its menu-bar icon (**⋯** › **Quit**). Open `/Applications/Utilities/Adobe Creative Cloud/Utils/Creative Cloud Uninstaller.app`, choose **Uninstall**, and give the administrator password when asked. Expect: "Creative Cloud desktop app uninstalled". If it says apps are still installed, go back to step 1.
+6. In Terminal, run: `ls -d /Applications/Adobe* /Applications/Utilities/Adobe* 2>&1; ls /Library/LaunchAgents /Library/LaunchDaemons ~/Library/LaunchAgents /Library/PrivilegedHelperTools | grep -i adobe; launchctl list | grep -i adobe; pgrep -il adobe` Expect: no output, or only `No such file or directory` or `no matches found`. Before this run sol had four system launch agents, two launch daemons, two user launch agents and the `com.adobe.acc.installer.v2` helper. Send any line that is still there to the thread, and do not delete it by hand.
+7. In Terminal, run: `find /Library ~/Library -maxdepth 3 -iname '*adobe*' -prune -exec du -sh {} + 2>/dev/null; find ~/Pictures -maxdepth 4 -name '*.lrcat' 2>/dev/null` Expect: a list of the Adobe folders left with their sizes (for example `~/Library/Caches/Adobe Camera Raw 2`, about 19 GB), then the path of each Lightroom catalogue. Send the list to the thread and delete nothing yet (ADOBE-DATA).
+8. Restart sol when convenient, then repeat step 6. Expect: still no output.
 
 b) Hold sol and do terra only.
 
@@ -57,14 +49,10 @@ b) Hold sol and do terra only.
 
 **Options:** a) (recommended) yes, in this order:
 
-1. Quit Creative Cloud from its menu-bar icon (**⋯** › **Quit**) if it is running. Open `/Applications/Utilities/Adobe Creative Cloud/Utils/Creative Cloud Uninstaller.app`, choose **Uninstall**, and give the administrator password when asked.
-   Expect: "Creative Cloud desktop app uninstalled".
-2. In Terminal, run: `ls -d /Applications/Adobe* /Applications/Utilities/Adobe* 2>&1; ls /Library/LaunchAgents /Library/LaunchDaemons ~/Library/LaunchAgents /Library/PrivilegedHelperTools | grep -i adobe; launchctl list | grep -i adobe; pgrep -il adobe`
-   Expect: no output, or only `No such file or directory` or `no matches found`. Send anything still listed to the thread.
-3. In Terminal, run: `find /Library ~/Library -maxdepth 3 -iname '*adobe*' -prune -exec du -sh {} + 2>/dev/null`
-   Expect: the Adobe folders left with their sizes (before this run, `/Library/Application Support/Adobe` was 1.6 GB and the logs 254 MB). Send the list to the thread and delete nothing yet.
-4. Restart terra when convenient, then repeat step 2.
-   Expect: still no output.
+1. Quit Creative Cloud from its menu-bar icon (**⋯** › **Quit**) if it is running. Open `/Applications/Utilities/Adobe Creative Cloud/Utils/Creative Cloud Uninstaller.app`, choose **Uninstall**, and give the administrator password when asked. Expect: "Creative Cloud desktop app uninstalled".
+2. In Terminal, run: `ls -d /Applications/Adobe* /Applications/Utilities/Adobe* 2>&1; ls /Library/LaunchAgents /Library/LaunchDaemons ~/Library/LaunchAgents /Library/PrivilegedHelperTools | grep -i adobe; launchctl list | grep -i adobe; pgrep -il adobe` Expect: no output, or only `No such file or directory` or `no matches found`. Send anything still listed to the thread.
+3. In Terminal, run: `find /Library ~/Library -maxdepth 3 -iname '*adobe*' -prune -exec du -sh {} + 2>/dev/null` Expect: the Adobe folders left with their sizes (before this run, `/Library/Application Support/Adobe` was 1.6 GB and the logs 254 MB). Send the list to the thread and delete nothing yet.
+4. Restart terra when convenient, then repeat step 2. Expect: still no output.
 
 b) Leave terra until it is next at hand.
 
@@ -84,12 +72,9 @@ b) Leave terra until it is next at hand.
 
 **Options:** a) (recommended) yes, in Terminal on sol:
 
-1. Run: `sudo mas uninstall 463362050`
-   Expect: a password prompt, then no error. PhotoSweeper goes to the Bin.
-2. Run: `sudo mas uninstall 425264550`
-   Expect: no error. Blackmagic Disk Speed Test goes to the Bin.
-3. Run: `mas list | grep -E '463362050|425264550'`
-   Expect: no output.
+1. Run: `sudo mas uninstall 463362050` Expect: a password prompt, then no error. PhotoSweeper goes to the Bin.
+2. Run: `sudo mas uninstall 425264550` Expect: no error. Blackmagic Disk Speed Test goes to the Bin.
+3. Run: `mas list | grep -E '463362050|425264550'` Expect: no output.
 
 b) drag both apps from `/Applications` to the Bin in Finder, then do step 3.
 
@@ -101,14 +86,10 @@ b) drag both apps from `/Applications` to the Bin in Finder, then do step 3.
 
 **Options:** a) (recommended) yes:
 
-1. At sol, run: `chezmoi diff ~/.config/rig/conf.d/`
-   Expect: Photoshop, Lightroom Classic and Creative Cloud become `retired-application` tables, the Lightroom Dock item goes, UTM moves to App Store 1538878817, and the `studio` purpose reads "video tools".
-2. At sol, run: `chezmoi apply ~/.config/rig/conf.d/ && rig doctor; rig status --retired`
-   Expect: once UTM-SOL is done, the only finding is `port.headroom`. The 3 Adobe entries show `matched` until ADOBE-SOL is done.
-3. At sol, run: `git -C ~/.local/share/chezmoi push`
-   Expect: `main -> main`.
-4. At terra, run: `chezmoi update && rig doctor && rig status --retired`
-   Expect: no Adobe or UTM findings. The retired report shows only what Creative Cloud leaves behind, until ADOBE-TERRA is done.
+1. At sol, run: `chezmoi diff ~/.config/rig/conf.d/` Expect: Photoshop, Lightroom Classic and Creative Cloud become `retired-application` tables, the Lightroom Dock item goes, UTM moves to App Store 1538878817, and the `studio` purpose reads "video tools".
+2. At sol, run: `chezmoi apply ~/.config/rig/conf.d/ && rig doctor; rig status --retired` Expect: once UTM-SOL is done, the only finding is `port.headroom`. The 3 Adobe entries show `matched` until ADOBE-SOL is done.
+3. At sol, run: `git -C ~/.local/share/chezmoi push` Expect: `main -> main`.
+4. At terra, run: `chezmoi update && rig doctor && rig status --retired` Expect: no Adobe or UTM findings. The retired report shows only what Creative Cloud leaves behind, until ADOBE-TERRA is done.
 
 b) Hold until the at-screen removals are done.
 

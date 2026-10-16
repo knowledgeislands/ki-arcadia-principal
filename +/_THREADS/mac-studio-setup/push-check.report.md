@@ -11,12 +11,11 @@ Run on sol, locally, under Decision 74 (PUSH-CHECK, Kris's "keep goimng please")
 | Repository | Local commits | Rebase | Gate | Pushed |
 | --- | --- | --- | --- | --- |
 | chezmoi | none (already level with `origin/main` at `2fbcca1`) | not needed | not run | nothing to push |
-| tools-rig | `98420fc`, `1506d47`, `b7cf6b3` (tool-records: KI-TOOL-RIG-CORE-054/055 captured, KI-TOOL-RIG-CORE-042 promoted) | not needed (not behind) | passes† | `c650bfe..b7cf6b3` |
-| ki-agentic-harness | `4eaa1905`, `3ea44f8f`, `dfe1a197` (rig-guide and remit-done: KI-HARNESS-GOV-189 amendments) | rebased cleanly onto 6 origin commits, now `928a39c2`, `0401f21c`, `0b66f900` | passes‡ | `d881b031..0b66f900` |
-| tools-ki | `a4bb37bf`, `8b6bc803` (tool-records: KI-TOOL-KI-CLI-128/129) | **stalled rebase found; record-number clash** | not run | **no** |
+| tools-rig | `98420fc`, `1506d47`, `b7cf6b3` (tool-records: [KI-TOOL-RIG-CORE-054](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-054-command-line-tools-check.md)/055 captured, [KI-TOOL-RIG-CORE-042](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-042-profile-filtered-dock-items.md) promoted) | not needed (not behind) | passes† | `c650bfe..b7cf6b3` |
+| ki-agentic-harness | `4eaa1905`, `3ea44f8f`, `dfe1a197` (rig-guide and remit-done: [KI-HARNESS-GOV-189](/Users/krisbrown/workspaces/knowledge-islands/ki-agentic-harness/docs/roadmap/KI-HARNESS-GOV-189-move-thread-between-hosts.md) amendments) | rebased cleanly onto 6 origin commits, now `928a39c2`, `0401f21c`, `0b66f900` | passes‡ | `d881b031..0b66f900` |
+| tools-ki | `a4bb37bf`, `8b6bc803` (tool-records: the two records later filed as [KI-TOOL-KI-CLI-134](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-134-launch-footer-follows-brief.md) and [KI-TOOL-KI-CLI-135](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-135-reused-agent-name-overwrites.md)) | **stalled rebase found; record-number clash** | not run | **no** |
 
-† tools-rig: `rumdl check` and `git diff --check` are clean on the 4 changed roadmap files. `ki repo audit` reports 8 RUNTIMES-2 failures in `.ki.toml` and 1 HOOK-1 warning. A detached copy of `origin/main` has the same findings plus one more, so the local commits add none.
-‡ ki-agentic-harness: `rumdl check` and `git diff --check` are clean on the one changed file, `docs/roadmap/KI-HARNESS-GOV-189-move-thread-between-hosts.md`. `ki repo audit` fails TSC-1, KNIP-2, CAP-2 (`skills/README.md`) and 8 × RUNTIMES-2. `origin/main` has the same failure lines, so they already exist there and the docs-only local commits add none.
+† tools-rig: `rumdl check` and `git diff --check` are clean on the 4 changed roadmap files. `ki repo audit` reports 8 RUNTIMES-2 failures in `.ki.toml` and 1 HOOK-1 warning. A detached copy of `origin/main` has the same findings plus one more, so the local commits add none. ‡ ki-agentic-harness: `rumdl check` and `git diff --check` are clean on the one changed file, `docs/roadmap/KI-HARNESS-GOV-189-move-thread-between-hosts.md`. `ki repo audit` fails TSC-1, KNIP-2, CAP-2 (`skills/README.md`) and 8 × RUNTIMES-2. `origin/main` has the same failure lines, so they already exist there and the docs-only local commits add none.
 
 Each local commit was matched to a report in this thread's run folder: [tool-records](tool-records.report.md), [rig-guide](rig-guide.report.md) and [remit-done](remit-done.report.md).
 
@@ -28,13 +27,16 @@ Nothing is running. tools-ki is left exactly as I found it, part-way through a r
 
 ### TOOLS-KI-CLASH - tools-ki record numbers clash with origin
 
-**Context:** At 18:54 BST, an earlier session that is no longer running started a `git pull` that rebases sol's tools-ki `main`. That pull stopped on a conflict in `docs/roadmap/_ISSUES.md` and was left unfinished. Since then, `origin/main` has also gained `3c316fcb`. Origin had already issued **KI-TOOL-KI-CLI-128** as `KI-TOOL-KI-CLI-128-granola-retention-safeguards.md` (Kris, `3019c394`, 15:25 BST). sol's local commits reserve and capture KI-TOOL-KI-CLI-128 (launch footer follows brief) and KI-TOOL-KI-CLI-129 (reused agent name overwrites). These are tool-records' K2 and K3. The brief says to renumber nothing silently, so I did not abort, resolve or push. The two local commits are safe on `main` (`8b6bc803`).
+**Context:** At 18:54 BST, an earlier session that is no longer running started a `git pull` that rebases sol's tools-ki `main`. That pull stopped on a conflict in `docs/roadmap/_ISSUES.md` and was left unfinished. Since then, `origin/main` has also gained `3c316fcb`. Origin had already issued **[KI-TOOL-KI-CLI-128](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-128-granola-retention-safeguards.md)** as `KI-TOOL-KI-CLI-128-granola-retention-safeguards.md` (Kris, `3019c394`, 15:25 BST). sol's local commits reserve and capture [KI-TOOL-KI-CLI-128](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-128-granola-retention-safeguards.md) (launch footer follows brief) and [KI-TOOL-KI-CLI-129 (pruned)](https://github.com/knowledgeislands/tools-ki/blob/f718dad967b93fef7d6173d5d707f28d03cc5f13/docs/roadmap/KI-TOOL-KI-CLI-129-staged-audit-verdict.md) (reused agent name overwrites). These are tool-records' K2 and K3. The brief says to renumber nothing silently, so I did not abort, resolve or push. The two local commits are safe on `main` (`8b6bc803`).
 
 **Query:** How should sol's two tools-ki records be numbered so they can be pushed?
 
 **Options:**
-a) (recommended) An agent on sol aborts the stalled rebase, which restores `main` to `8b6bc803`, then pulls with rebase. It renumbers the two local records to KI-TOOL-KI-CLI-129 and KI-TOOL-KI-CLI-130: ledger reserved through 130, files renamed, ids and links updated. It runs the tools-ki gate and pushes fast-forward only.
+
+a) (recommended) An agent on sol aborts the stalled rebase, which restores `main` to `8b6bc803`, then pulls with rebase. It renumbers the two local records to the next free numbers, proposed here as 129 and 130 and in the end filed as [KI-TOOL-KI-CLI-134](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-134-launch-footer-follows-brief.md) and [KI-TOOL-KI-CLI-135](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-135-reused-agent-name-overwrites.md): ledger reserved through 130, files renamed, ids and links updated. It runs the tools-ki gate and pushes fast-forward only.
+
 b) Abort the stalled rebase only and leave tools-ki unpushed until terra's session settles the numbering.
+
 c) Leave it as it is for Kris to resolve by hand at sol.
 
 ```text

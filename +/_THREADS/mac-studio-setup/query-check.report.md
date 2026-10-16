@@ -1,9 +1,3 @@
----
-
----
-
----
-
 # [Rig](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/rig.md) › [Mac Studio bootstrap](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-setup/mac-studio-setup.md) › query-check
 
 **Run report at 22:20 BST · last mark 17:47 BST**
@@ -37,7 +31,7 @@ Other findings:
 
 - **sol `rig doctor`:** `unhealthy`, `pass=239 warn=0 fail=2`. The two findings are `utm: drifted via mas` (UTM-SOL) and `port.headroom: conflicting`, which was already known.
 - **sol `rig status`:** `present=165 missing=0 drifted=1` (UTM).
-- **Repositories on sol:** chezmoi is level with origin at `5eb9309`; tools-ki is `ahead 2` (KI-TOOL-KI-CLI-136 capture).
+- **Repositories on sol:** chezmoi is level with origin at `5eb9309`; tools-ki is `ahead 2` ([KI-TOOL-KI-CLI-136](/Users/krisbrown/workspaces/knowledge-islands/tools-ki/docs/roadmap/KI-TOOL-KI-CLI-136-errors-suggest-fixes.md) capture).
 - **terra:** tools-rig and chezmoi are level with the origin refs terra last fetched. I did not fetch on terra.
 - **MAS-REMOVE looks done:** PhotoSweeper and Blackmagic Disk Speed Test are gone from `mas list` on both Macs.
 
@@ -144,11 +138,11 @@ b) Rebase and gate locally, but hold the push until krisb/dotfiles#1 lands, then
 
 **Context:** [KI-TOOL-RIG-CORE-059](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-059-mac-app-store-provider.md) is Awaiting review. Its acceptance condition is now met on sol, after Kris applied `~/.config/rig`: `rig doctor` shows `warn=0`, and the App Store rows name `mas`. UTM's remaining drift comes from sol's Homebrew copy, not from the provider. Two review points stand: Linux is rejected only when a `mas` install names `linux` itself, and Homebrew provider arguments no longer reach `mas`.
 
-**Query:** Accept KI-TOOL-RIG-CORE-059 now?
+**Query:** Accept [KI-TOOL-RIG-CORE-059](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-059-mac-app-store-provider.md) now?
 
 **Options:**
 
-a) (recommended) Yes. An agent on sol closes KI-TOOL-RIG-CORE-059 as done under `ki-accept` and commits locally in tools-rig.
+a) (recommended) Yes. An agent on sol closes [KI-TOOL-RIG-CORE-059](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-059-mac-app-store-provider.md) as done under `ki-accept` and commits locally in tools-rig.
 
 b) Hold it and say what to change.
 
@@ -162,12 +156,9 @@ b) Hold it and say what to change.
 
 a) (recommended) At sol's screen, in Terminal:
 
-1. Quit UTM, then run `brew uninstall --cask utm`.
-   Expect: `Uninstalling Cask utm`.
-2. Run `mas install 1538878817`.
-   Expect: `Installed UTM`.
-3. Run `mas list | grep 1538878817; ls ~/Library/Containers/com.utmapp.UTM`.
-   Expect: one UTM line, then the container listed. Open UTM and check that the VMs are shown.
+1. Quit UTM, then run `brew uninstall --cask utm`. Expect: `Uninstalling Cask utm`.
+2. Run `mas install 1538878817`. Expect: `Installed UTM`.
+3. Run `mas list | grep 1538878817; ls ~/Library/Containers/com.utmapp.UTM`. Expect: one UTM line, then the container listed. Open UTM and check that the VMs are shown.
 
 b) Keep the Homebrew copy, and an agent reverts UTM to the cask declaration.
 
