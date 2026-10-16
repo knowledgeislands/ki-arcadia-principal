@@ -9,6 +9,10 @@ updated_at: 2026-10-16T20:53:00Z
 
 # rig.mac-studio-setup
 
+**Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
+
+- 2026-10-16 · MAC-TIDY · Kris, 16 October 01:40 BST: "Send Rig: mac-studio-setup a Messages from Master line to clear its own thread folder and archive its spent runtime files, keeping decisions.md and any report with open queries." Logged in the [state-of-play decisions log](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/state-of-play/decisions.md).
+
 ## Objective
 
 Bring Kris's Mac Studio back to full estate capability as a reliably reachable remote agent host, kept up to date remotely, under the Project [Mac Studio setup](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-setup/mac-studio-setup.md) in the [Rig Initiative](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Initiatives/rig.md). The bootstrap and the restart test are done; the Project stays open until the tailnet-only firewall is live on `sol` and remote `chezmoi apply` works over SSH (Kris's closure condition, 2026-10-14). Kris widened the remit on 2026-10-14 to the Rig differences between `sol` and the laptop (RIG-DIFF, SOL-SCOPE, LOCAL-MODE-CHECK), as the Project note's Remit section states.

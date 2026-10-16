@@ -9,7 +9,9 @@ updated_at: 2026-10-16T20:58:00Z
 
 # platform-foundations.tools-burndown
 
-**Messages from Master: state-of-play** - none pending.
+**Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
+
+- 2026-10-16 · STALE-PRS · Kris, 16 October 01:40 BST: "Fnd: tools-burndown closes apps-knowledgeislands.info #23 and ki-agentic-harness #27 with the comment "superseded by a later release", then deletes their branches with the rest of STALE-BRANCHES." Logged in the [state-of-play decisions log](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/state-of-play/decisions.md); query in the [query-review report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/state-of-play/query-review.report.md).
 
 ## Pick-up
 
