@@ -14,7 +14,7 @@ The [Techne Programme Hold](<Admin/Governance/Policies/Techne Programme Hold.md>
 
 ## Progress and commits
 
-Give concise progress updates at meaningful checkpoints. Commit only a completed, verified unit of work, staged by explicit path under `ki-git`; leave an unverified unit uncommitted and report its checkpoint.
+Give concise progress updates at meaningful points. Commit only a completed, verified unit of work, as the `ki-pmo` reply forms define it, staged by explicit path under `ki-git`; leave an unverified unit uncommitted and say where it stopped.
 
 ## Cross-repository choreography
 
