@@ -987,3 +987,9 @@ Kris: "can you review all of the outstanding queries and check on them? And mayb
 Kris, TOOLS-PROJECT: "Revive tools-burndown as a Project under Platform foundations, thread KI > Foundations > tools burndown, scoped to tools-ki, tools-mgit, tools-git-almanac and the CLI-shaped ki-agentic-harness records, excluding tools-rig and tools-techne, ending with the ki and mgit releases; write me its opener to paste."
 
 Kris, REPO-GIT-HYGIENE: "Make the PR and branch clean-down ki-git rubric checks run through ki repo audit and conform, fleet-wide through mgit: the tools burndown thread first checks what mgit already reports, then captures one ki-next triage record in tools-ki (open PRs, merged and stale branches, ahead and behind, stashes, worktrees, untracked files), routes the rubric rule to KI Model: ways-of-working, and folds STALE-BRANCHES, UNPUSHED-COMMITS and STAGING-LEFTOVERS into it."
+
+## 2026-10-16 01:10 BST - FIRST-WAVE and the tools burndown hand-off
+
+Kris, in these words: "Approve option a) on CHURN-REMEDIES, FRONTMATTER-STATE, DESIGN-HOME, SRC-BADGE, ESTATE-MAP-OBSERVATORY, STASH-DROP and OLD-THREAD-FOLDERS (closed thread folders only), as the query-review report confirms them: log this, dispatch the ways-of-working ones to that thread, launch the rest as background agents, and hold back and raise any the review flags."
+
+Kris confirmed the hand-off message to KI > Fnd > tools burndown is sent: REPO-GIT-HYGIENE, with STALE-BRANCHES, AUTOMATION-BRANCHES, UNPUSHED-COMMITS and STAGING-LEFTOVERS folded in, now belongs to that thread and is struck from this thread's list.
