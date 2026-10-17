@@ -756,3 +756,7 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 181 (2026-10-17T13:45:36Z)
 
 - KI-AGENTS-NAME - (Kris, 17 October 14:20 BST, relayed by state-of-play) "Keep "agents"; ways of working logs the decision in its decisions log and nothing is renamed." Logged here as asked; nothing is renamed.
+
+## Decision 182 (2026-10-17T14:10:00Z)
+
+- ACTIVITY-LEVELS - (Kris, 17 October, relaying a handoff from Personal > SoP) "So I don't agree with this fully, but this is what was being said in another chat. I thought it was something we could pick up and talk about a bit more." The handoff quotes Kris: "we need more succinct names... e.g. "Knowledge acquisition" -> "Acquire"; Personal > Knowledge acquisition > acquire dispatch -> Personal > Acquire > Dispatch. But this is an interesting one 'cause in reality it's a regular activity. It's not something I would think I should have to keep a thread alive for." and "it was more so that regular activities are either territory level or initiative level really". Personal asks ways of working to confirm or correct the two-level model for regular activities, say how ki-pmo coordinates them, settle short display names and propose harness changes for approval. Dispatched: `activity-levels`, a read-only design report for discussion; nothing rolled out.
