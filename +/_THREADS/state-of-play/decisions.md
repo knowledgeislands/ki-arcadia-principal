@@ -1013,3 +1013,7 @@ Kris, in these words:
 
 - CHEZMOI-RESUME: "Done" - Kris pasted Rig: chezmoi's resume line into Chezmoi > misc (sol).
 - SSH-SPARE-KEY: "Both Macs are always within physical reach, so the console is the restore path: no spare key is needed, and Rig: chezmoi notes the console fallback in the chezmoi macOS workstation guide before key-only SSH applies on terra."
+
+## 2026-10-17 - SEAT-CHANGE: personal and legal seated on both machines
+
+Kris, in these words: "update this so that personal and legal is both machines, tipped to sol". This amends the seat host binding of 2026-10-15: personal and legal move from the home seat (terra) to both machines, tipped to sol, like knowledge-islands. humans-not-robots stays on terra; valle-armonia, sacred-inquiry, techmedix and equal-remedy stay on sol.
