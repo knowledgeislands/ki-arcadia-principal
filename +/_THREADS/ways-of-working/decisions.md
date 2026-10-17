@@ -748,3 +748,7 @@ Requirement: every coordination-thread summary or owner report ends with a multi
   - conversation: `$territory.$slug
 
   Variations of that are then used for the title or label etc". Taken as the basis of the thread-naming model; a read-only run drafts the id, slug and title rules from it and re-poses NAMING, and PILOT-LABEL with it.
+
+## Decision 180 (2026-10-17T00:35:00Z)
+
+- THREAD-IDS-DOC - (Kris, 17 October) "so document the naming approach". Taken as an instruction to write the THREAD-IDS model (id, slug and title, with the derived label) into the ki-pmo standard under KI-HARNESS-GOV-199, superseding NAMING's label rule; migrating existing checkpoints and labels is put to Kris separately.
