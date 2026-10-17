@@ -11,13 +11,13 @@ updated_at: 2026-10-17T12:58:00Z
 
 ## Pick-up - mark 2026-10-15T15:14:39Z (16:14 BST)
 
-- **Status:** rest. Running: nothing. 2026-10-17 14:50 BST: SOP-DROPPED closed (commit not in the repository, Kris's reply); KI-PRINCIPAL-ECO-014 pruned with every live link repointed, and tools burndown messaged to reword the KI-TOOL-KI-CLI-139 citations; resume lines given to Kris, who restarted ways of working. No open queries.
+- **Status:** rest. Running: nothing. 2026-10-17 15:06 BST: under AWAY-PROCEED, away-housekeeping sent PMO-7-BACKLOG to eight threads, composed four resume lines (its report), tidied this folder and fixed the desk-kit frontmatter; bug-census prepared tools burndown's first wave (its report). Ways of working rests on RESTART-AGREE for Kris. Open queries: REBASE-OWNER, MGIT-017-CLASH.
 - **Resume:** `Resume Master: state-of-play under current ki-pmo and ki-delegation since 2026-10-15T15:14:39Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`
 - **Next steps, in order:**
   0. Watch this checkpoint's Messages block for ways of working's READY, then give Kris tools burndown's resume line.
   1. After tools burndown, give Kris the two Rig threads in parallel, then knowledge acquisition, then Host network (fifth, HOST-NETWORK-THREAD), then Command centre.
-  2. PMO-7-BACKLOG: once ways of working has set the messaging standard, post a line to each coordination checkpoint to relink or delete its own reports; then remove the line here.
-  3. THREADS-ORPHANS remainder: `+/_THREADS/desk-kit/` reports belong to Rig: mac-studio-setup (setup-note) and KI > mics / webcams (cam-check, webcam-compare); pass THREADS-CLEAR on when those threads rest.
+  2. On Kris's return: REBASE-OWNER and MGIT-017-CLASH (bug-census report); check whether SEAT-PUSH, LABEL-FORM and PROJECT-OVERLAP (seat-change and tools-project reports) were answered before 17 October, and delete those reports if so.
+  3. THREADS-ORPHANS remainder: desk-kit reports (frontmatter now fixed) belong to Rig: mac-studio-setup (setup-note) and KI > mics / webcams (cam-check, webcam-compare).
   4. STASH-DROP at a session with the terra checkout.
   5. At the next mark, THREAD-TIDY the thread folder.
   - Rule from Kris, 2026-10-15 22:50 BST: the thread dispatches changes to coordination threads and does not ask whether to. GO-AHEAD, 2026-10-17: "you've got permission to get on with anything."
