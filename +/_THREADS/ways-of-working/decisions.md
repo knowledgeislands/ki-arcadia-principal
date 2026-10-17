@@ -739,3 +739,12 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 178 (2026-10-16T21:14:00Z)
 
 - REGISTRY-SHAPE and STATE-HOMES - (Kris, 16 October, spoken) "whether or not we put projects under their initiatives. So there's a more natural structure. I mean, theoretically projects could span multiple initiatives, but I'm not sure that makes sense. And it's certainly not in our model anyway, so yeah, initiatives are effectively groups of projects, but they're a little bit more than that, right? And so, I think if you do that, you don't need so much underneath the initiative details, but also the initiative names become folders and I think also the projects become folders. You don't need projects as a label under the initiatives heading, you just have those as the next level down. We tended to get quite a lot of design sections. I'm not sure what they're ready for. That's another thing that's bugging me and quite long names for initiatives. So I think you've got Knowledge Islands Model, for example, but that can just be model or philosophy or something like that, right? And platform foundations can just be foundations. And the thing that's really bugging me the most is the use of this `+/_THREADS` and how it all sits with XDG and what is durable state vs temporary "caache"". Taken as two read-only reviews with proposals; NAMING's INITIATIVE-NAMES is re-posed with REGISTRY-SHAPE.
+
+## Decision 179 (2026-10-17T00:33:00Z)
+
+- THREAD-IDS - (Kris, 17 October) "I'd like to think of threads as having an id, slug, and title based around this:
+  - state-of-play: `$territory.sop
+  - coordination: `$territory.$initiatiave.$project
+  - conversation: `$territory.$slug
+
+  Variations of that are then used for the title or label etc". Taken as the basis of the thread-naming model; a read-only run drafts the id, slug and title rules from it and re-poses NAMING, and PILOT-LABEL with it.
