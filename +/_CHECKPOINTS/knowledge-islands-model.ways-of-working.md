@@ -4,16 +4,16 @@ thread: knowledge-islands-model.ways-of-working
 label: 'KI > Model > ways of working'
 state: active
 created_at: 2026-10-09T20:58:00Z
-updated_at: '2026-10-16T22:10:00Z'
+updated_at: '2026-10-17T13:45:36Z'
 ---
 
 # knowledge-islands-model.ways-of-working
 
-**Pick-up - mark 2026-10-15T15:09:48Z (16:09 BST)**
+**Pick-up - mark 2026-10-17T13:45:36Z (14:45 BST)**
 
-- Status: rest. Running: nothing. Queued: nothing. Every 16 October run has reported, including master-harness (KI-HARNESS-GOV-200 to 203, GOV-175 follow-ons) and thread-tidy (DESIGN-HOME, folder tidy, acted-on Master lines removed) and thread-ids (Thread naming section in ki-pmo under KI-HARNESS-GOV-199, 17 October). tools-ki holds five of this thread's commits unpushed above 26 other-session commits (TOOLS-PUSH); chezmoi holds three unpushed and unapplied (CHEZMOI-APPLY). Open queries: TOOLS-PUSH, RUN-HYGIENE, IDENTITY-NEXT, CHEZMOI-APPLY, SHAPE-AGREE, STATE-AGREE, IDEAS-ROOTING, THREAD-IDS-AGREE, IDS-MIGRATE, NAMING-REST (NAMING replaced by the thread-ids model); their full text is in `~/.local/state/ki/agents/ways-of-working/summary-draft.md` and the kept reports. Label `KI > Model > ways of working`.
-- Resume line: `Resume KI > Model > ways of working under current ki-pmo and ki-delegation since 2026-10-15T15:09:48Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`
-- Next steps: act on Kris's answers to the eight queries, SHAPE-AGREE before any decisions-log move; SYNC-GUARD goes into KI-HARNESS-GOV-189 with STATE-AGREE's host-naming amendment; AREAS-DISPATCH waits on state-of-play's OBS-MERGE and NEW-AREAS.
+- Status: busy. Running: restart-consolidate (ki-principal, read-only: one restart decision combining STATE-AGREE, THREAD-MESSAGING and RESTART-PROMPTS per state-of-play's FIRST-STEP, the critical path, triage of the 17 October Master lines, queries regrouped, with diagrams). Queued: nothing. Re-bootstrapped and marked 17 October 14:45 BST. Every 16 October run has reported, including master-harness (KI-HARNESS-GOV-200 to 203, GOV-175 follow-ons) and thread-tidy (DESIGN-HOME, folder tidy, acted-on Master lines removed) and thread-ids (Thread naming section in ki-pmo under KI-HARNESS-GOV-199, 17 October). tools-ki holds five of this thread's commits unpushed above 26 other-session commits (TOOLS-PUSH); chezmoi holds three unpushed and unapplied (CHEZMOI-APPLY). Open queries: TOOLS-PUSH, RUN-HYGIENE, IDENTITY-NEXT, CHEZMOI-APPLY, SHAPE-AGREE, STATE-AGREE, IDEAS-ROOTING, THREAD-IDS-AGREE, IDS-MIGRATE, NAMING-REST (NAMING replaced by the thread-ids model); their full text is in `~/.local/state/ki/agents/ways-of-working/summary-draft.md` and the kept reports. Label `KI > Model > ways of working`.
+- Resume line: `Resume KI > Model > ways of working under current ki-pmo and ki-delegation since 2026-10-17T13:45:36Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`
+- Next steps: when restart-consolidate reports, put RESTART-AGREE and the regrouped queries to Kris; on his answer write the standard, then add a READY line to the state-of-play Messages block and tell Kris; meanwhile re-read the Messages block at every Summary (INTERIM-MESSAGING); act on Kris's other answers, SHAPE-AGREE before any decisions-log move; SYNC-GUARD goes into KI-HARNESS-GOV-189 with STATE-AGREE's host-naming amendment; AREAS-DISPATCH waits on state-of-play's OBS-MERGE and NEW-AREAS.
 
 **Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
 

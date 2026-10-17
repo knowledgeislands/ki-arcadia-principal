@@ -752,3 +752,7 @@ Requirement: every coordination-thread summary or owner report ends with a multi
 ## Decision 180 (2026-10-17T00:35:00Z)
 
 - THREAD-IDS-DOC - (Kris, 17 October) "so document the naming approach". Taken as an instruction to write the THREAD-IDS model (id, slug and title, with the derived label) into the ki-pmo standard under KI-HARNESS-GOV-199, superseding NAMING's label rule; migrating existing checkpoints and labels is put to Kris separately.
+
+## Decision 181 (2026-10-17T13:45:36Z)
+
+- KI-AGENTS-NAME - (Kris, 17 October 14:20 BST, relayed by state-of-play) "Keep "agents"; ways of working logs the decision in its decisions log and nothing is renamed." Logged here as asked; nothing is renamed.
