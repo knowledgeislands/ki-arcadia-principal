@@ -4,14 +4,14 @@ thread: _state-of-play
 label: 'Master: state-of-play'
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-16T21:05:00Z
+updated_at: 2026-10-17T00:30:00Z
 ---
 
 # _state-of-play
 
 ## Pick-up - mark 2026-10-15T15:14:39Z (16:14 BST)
 
-- **Status:** rest. Running: nothing. 2026-10-16 22:05 BST: replies of 16 October acted on; roadmap summary diagnostics routed (KI-HARNESS-GOV-195 duplicate: ways-of-working renumbers the thread-folder record to KI-HARNESS-GOV-197; KI-TOOL-KI-CLI-139 frontmatter check to Fnd: tools-burndown). Open queries: AWAITING-REVIEW (11 awaiting-review and 2 done records) and RIG-OWNER (no burndown owner for tools-rig). tools-ki local main 22 ahead and 9 behind origin: Fnd: tools-burndown's under UNPUSHED-COMMITS.
+- **Status:** rest. Running: nothing. 2026-10-17 01:30 BST: SEAT-CHANGE done (personal and legal seated on both machines, tipped to the hub; humans-not-robots home; the other four hub), pushed. Open queries: AWAITING-REVIEW and RIG-OWNER. tools-ki local main diverged from origin: Fnd: tools-burndown's under UNPUSHED-COMMITS. desk-kit reports cam-check and webcam-compare have unterminated frontmatter (KI > mics / webcams thread's).
 - **Resume:** `Resume Master: state-of-play under current ki-pmo and ki-delegation since 2026-10-15T15:14:39Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`
 - **Next steps, in order:**
   0. Act on Kris's replies to AWAITING-REVIEW and RIG-OWNER.
@@ -99,7 +99,7 @@ Stored 2026-10-15 for the move to sol:
 - **RESTART-SET (Kris, 15 October):** the pick-up state is the combination of the banner type and the thread type (conversational, coordination, or state-of-play as the coordination of coordinations), each with its own instructions; this thread works that out first on restart, before handing HOLD-MODEL to KI Model: ways-of-working. Threads to reinstate: Master: state-of-play, KI Model: ways-of-working, Rig: chezmoi and Acquire: acquire-intake, with Rig: mac-studio-bootstrap carrying on as it is. Rig: chezmoi and Acquire: acquire-intake sit outside this thread's territory and are included this time only. Every other thread stays held.
 - **HOLD-VERBS (Kris, 15 October):** drain and resume are the activities and hold is the state: a thread drains to reach a hold and resumes to leave it. Pass this to KI Model: ways-of-working with HOLD-MODEL.
 - **HOLD-BANNER (Kris, 15 October):** the drain report becomes a **hold report**: block letters HOLD, top border `hold report`, captions threads drained / queries parked / fully archived, closing with "To bring this thread back and continue the work, paste this:" and the resume line. Pass to KI Model: ways-of-working with HOLD-MODEL.
-- **HOST-ROLES (Kris, 15 October):** the home role is terra, the laptop; the hub role is sol, the Mac Studio. This binds the roles in ADR-KI-PRINCIPAL-007's seats (home: personal, legal, humans-not-robots; hub: valle-armonia, sacred-inquiry, techmedix, equal-remedy; both: knowledge-islands, tipped to the hub). On restart: record the binding where the decision's Known Lands table can point to it, and hand the per-host seat binding to Rig: chezmoi.
+- **HOST-ROLES (Kris, 15 October):** the home role is terra, the laptop; the hub role is sol, the Mac Studio. This binds the roles in ADR-KI-PRINCIPAL-007's seats (as amended by Kris on 17 October: home: humans-not-robots; hub: valle-armonia, sacred-inquiry, techmedix, equal-remedy; both, tipped to the hub: knowledge-islands, personal, legal). Recorded in Host network, Known Lands, ADR-KI-PRINCIPAL-007 and Known World; SEAT-HOSTS with Rig: chezmoi. On restart: record the binding where the decision's Known Lands table can point to it, and hand the per-host seat binding to Rig: chezmoi.
 - **SOL-FIRST-CHURN (Kris, 15 October; first work on restart on sol):** analyse thread and session-based digests and the churn they cause across repositories, and the older material left lying around. Kris raised this in another thread and possibly KI Model: ways-of-working, so find that first and fold it in. Rule from Kris: temporary files live under the `tmp` folder. Dispatch the analysis to a background run; no new feature records unless Kris asks.
 - **SOL-MOVE (Kris, 15 October):** Kris moves working to sol next. Every thread in ki-principal and acquire drains, commits and pushes; Kris then makes a blank baseline commit across all repositories; tidy-ups follow on sol. Resume this thread on sol from this checkpoint; machine-local `~/.local/state/ki/agents/state-of-play/` does not travel, `decisions.md` in the thread folder does.
 - **FW-TERRA-OFF (answered 15 October; Kris's words in `decisions.md`: no, Kris stayed in to get the firewalls and approach right that day):** turn off Screen Sharing and Remote Login on terra at the Mac until [KI-TOOL-RIG-CORE-047](/Users/krisbrown/workspaces/knowledge-islands/tools-rig/docs/roadmap/KI-TOOL-RIG-CORE-047-tailnet-only-listener-firewall.md) is live there; sol unchanged (the fw-exposure report, now in Git history). Both currently listen on every network and accept passwords.
