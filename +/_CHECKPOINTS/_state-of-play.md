@@ -4,22 +4,23 @@ thread: _state-of-play
 label: 'Master: state-of-play'
 state: active
 created_at: 2026-10-06T21:07:00Z
-updated_at: 2026-10-17T00:30:00Z
+updated_at: 2026-10-17T12:58:00Z
 ---
 
 # _state-of-play
 
 ## Pick-up - mark 2026-10-15T15:14:39Z (16:14 BST)
 
-- **Status:** rest. Running: nothing. 2026-10-17 01:30 BST: SEAT-CHANGE done (personal and legal seated on both machines, tipped to the hub; humans-not-robots home; the other four hub), pushed. Open queries: AWAITING-REVIEW and RIG-OWNER. tools-ki local main diverged from origin: Fnd: tools-burndown's under UNPUSHED-COMMITS. desk-kit reports cam-check and webcam-compare have unterminated frontmatter (KI > mics / webcams thread's).
+- **Status:** rest. Running: nothing. 2026-10-17 13:58 BST: Kris's intake dump (parts 1 and 2, PARALLEL-WORK, OBSERVATORY-ATC, DIAGRAMS-NOW) logged in decisions.md and pushed; consolidated in `+/_THREADS/state-of-play/consolidate.report.md` and drawn in `+/_THREADS/state-of-play/themes.md`. Nothing dispatched yet (DISPATCH-ORDER: dispatch before any thread restarts). Open queries: RIG-OWNER, AWAITING-REVIEW, HOST-NETWORK-THREAD, KI-AGENTS-NAME, FAVICON-FOLLOWUPS, DISPATCH-INTAKE.
 - **Resume:** `Resume Master: state-of-play under current ki-pmo and ki-delegation since 2026-10-15T15:14:39Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`
 - **Next steps, in order:**
-  0. Act on Kris's replies to AWAITING-REVIEW and RIG-OWNER.
-  1. Check the receiving threads act on their Messages from Master lines: Fnd: tools-burndown (REPO-GIT-HYGIENE, STALE-PRS), Rig: chezmoi (FW-DECLARE-NOW, CHEZMOI-RESUME, SSH-SPARE-KEY), Rig: mac-studio-setup (MAC-TIDY), KI Model: ways-of-working (CHURN-REMEDIES, SRC-BADGE, DESIGN-HOME, THREADS-CHECKINS).
-  2. STASH-DROP (approved 2026-10-16 01:10 BST) at the next session with the terra checkout.
-  3. KI-PRINCIPAL-MOD-008 hold review, due 2026-10-16.
-  4. At the next mark, tidy the thread folder under THREAD-TIDY.
-  - Rule from Kris, 2026-10-15 22:50 BST: this thread dispatches changes to the coordination threads and does not ask whether to.
+  0. Act on Kris's replies to the six open queries; on DISPATCH-INTAKE launch the dispatch agent posting every routed item from the consolidate report into its receiving checkpoint's Messages block, with the THREAD-MESSAGING rule and diagrams instruction to each.
+  1. Act on the six 2026-10-16 lines in this checkpoint's own Messages block (CI-RED-PRINCIPAL, PMO-7-BACKLOG, SOP-DROPPED, REGISTRY-LANDED, THREADS-CLEAR, THREADS-ORPHANS), then remove them.
+  2. Restart order after dispatch: ways of working first (STATE-AGREE with messaging and restart-prompt rules, then "ready" to Kris and this thread), then tools burndown, then Rig threads in parallel; parallel lanes per themes.md.
+  3. Rewrite the focus line to FOCUS (2026-10-17): state of play, ways of working, tools burndown, Mac Studio setup with rig differences, knowledge acquisition, Observatory.
+  4. STASH-DROP at a session with the terra checkout; KI-PRINCIPAL-MOD-008 hold review, overdue.
+  5. At the next mark, THREAD-TIDY the thread folder.
+  - Rule from Kris, 2026-10-15 22:50 BST: the thread dispatches changes to coordination threads and does not ask whether to.
 - **Live threads (2026-10-16):** KI > SoP; KI > Fnd > tools burndown; KI > Model > ways of working; KI > Model > knowledge acquisition; KI > Rig > mac studio setup; KI > mics / webcams; Acquire > intake (sol); Chezmoi > misc (sol), carrying Rig: chezmoi.
 
 **Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
