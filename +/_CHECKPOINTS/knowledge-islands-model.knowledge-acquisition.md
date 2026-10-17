@@ -5,14 +5,14 @@ label: 'Knowledge Islands Model: knowledge-acquisition'
 role: coordination
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-17T17:22:00Z
+updated_at: 2026-10-17T17:24:00Z
 ---
 
 # knowledge-islands-model.knowledge-acquisition
 
 **Pick-up - mark 2026-10-15T14:59Z (15:59 BST)**
 
-Status: busy. Kris back 2026-10-17 18:15 BST. folder-tidy finished 18:20 BST (`356a3e5`): reports already linked, `run-decisions.md` moved to the run state folder, folder audit clean; its report deleted at this resting point. Running: `checkpoint-audit` (Sonnet), fixing the two ki-pmo audit findings on this checkpoint. Queued: nothing. The run state folder now exists on this machine and holds only the inbox; the old stale `heading-trim` entry is gone with the other machine's state.
+Status: rest. Kris back 2026-10-17 18:15 BST. folder-tidy finished 18:20 BST (`356a3e5`): reports already linked, `run-decisions.md` moved to the run state folder, folder audit clean. checkpoint-audit finished 18:21 BST (`4ee5536`): `role: coordination` added and the pick-up heading made a bold line, so the checkpoint passes the ki-pmo audit. Both reports deleted at resting points. Running: nothing. Queued: nothing. The run state folder now exists on this machine and holds only the inbox; the old stale `heading-trim` entry is gone with the other machine's state.
 
 Open queries for Kris (option a) recommended for each):
 
