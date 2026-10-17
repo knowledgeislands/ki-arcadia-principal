@@ -1063,3 +1063,7 @@ Kris: "I've now destroyed all my notes about it" - this log is the durable captu
 - **SOP-DROPPED:** "No, if its not in the repo then you can ignore it, and if it is, you can look at the diff and decide if its relevant or not now." The commit is not in this repository (`git cat-file` finds no object), so it is dropped as overtaken; STASH-DROP stays for a terra session.
 - **ECO-PRUNE-CHECKS:** "Prune KI-PRINCIPAL-ECO-014 now in a prune-only commit, repointing the link at line 158 of thread-types-and-durable-decisions to its GitHub copy, and send Fnd: tools-burndown a Messages line to rewrite the two "Decision 55" citations in KI-TOOL-KI-CLI-139 by Kris's words and date once the tools-ki rebase is resolved." Dispatched as eco-prune-3.
 - **RESUME-ASK:** "so, do youy have a resume for me for some threads?" Given in the 14:32 BST reply.
+
+## 2026-10-17 14:56 BST - AWAY-PROCEED
+
+- **AWAY-PROCEED:** "I want the system to try and continue as much as it can without me 'cause I'm gonna be busy for a couple of hours. So anything that you've got high confidence of you can go and proceed with. Otherwise you can try and work on a different thing or whatever's not possible." Dispatched: `away-housekeeping` (PMO-7-BACKLOG lines under INTERIM-MESSAGING, resume lines for checkpoints without one, this folder's tidy, desk-kit frontmatter fences) and `bug-census` (read-only bug and feature census of the tools repositories for tools burndown). Ways of working's RESTART-AGREE waits for Kris.
