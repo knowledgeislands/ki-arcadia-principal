@@ -7,6 +7,8 @@
 ## Done
 
 - Read the five standards the handoff names, KI's and Personal's registries, KI's Activity notes and Personal's eleven area checkpoints, and wrote this design report for discussion. Nothing else was changed: no standard, skill, record, checkpoint or registry.
+- Commit `15a7ab6`, `docs(threads): add the activity-levels design report`, pushed fast-forward to ki-principal with only my commit stacked. The commit gate passed.
+- Correction: my first commit, which was never pushed, also swept in 62 paths another session had already staged. They are deletions under `+/_THREADS/mac-studio-setup/` and moves into `Streams/Projects/mac-studio-setup/`. I soft-reset that local commit and recommitted only the report with `git commit --only`. The other session's staging is back exactly as it was, still staged and uncommitted for that session to finish. Lesson: `git add -- <path>` does not protect against an index someone else has already staged, but `git commit --only -- <path>` does.
 - Limitation: Personal's evidence report, `thread-shape-proposal.report.md`, is not in [personal-state-of-play](/Users/krisbrown/workspaces/personal/personal-principal/+/_THREADS/personal-state-of-play/), which holds only `decisions.md`. Section 6 classifies the eleven threads from the head of each checkpoint, not from that report.
 - Short version: the standards already put recurring work at Initiative level and never in a Project. They have no territory level and no way to coordinate an Activity, and they do not say where an occurrence's report lands. Personal's six area threads with no Project fill that gap by imitating Project threads. The handoff is weakest on the territory level and on where occurrences report. The answer to "no standing thread" is yes, provided that improving an activity is treated as a Project.
 
@@ -259,7 +261,8 @@ Capture one ki-agentic-harness record for the section 5 changes of the activity-
 - [waiting] ACT-THREAD
 - [waiting] ACT-NAMES
 - [waiting] ACT-WORK
-- [committed] this report committed in ki-principal
+- [committed] this report committed and pushed in ki-principal
+- [uncommitted] another session's staged mac-studio-setup move, 62 paths, left untouched
 
 ```text
 Resume KI > Model > ways of working under current ki-pmo and ki-delegation since 2026-10-17T13:45:36Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.
