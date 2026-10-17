@@ -227,4 +227,4 @@ Kris restarts the Observatory service in an interactive session on sol and check
 - [waiting] HOST-NETWORK-THREAD
 - [waiting] KI-AGENTS-NAME
 - [waiting] FAVICON-FOLLOWUPS
-- [committed] this report, by explicit path
+- [committed] this report, by explicit path, pushed
