@@ -4,14 +4,14 @@ thread: knowledge-islands-model.knowledge-acquisition
 label: 'Knowledge Islands Model: knowledge-acquisition'
 state: active
 created_at: 2026-10-08T08:35:00Z
-updated_at: 2026-10-17T17:20:00Z
+updated_at: 2026-10-17T17:22:00Z
 ---
 
 # knowledge-islands-model.knowledge-acquisition
 
 ## Pick-up
 
-Status: busy. Kris back 2026-10-17 18:15 BST. Running: `folder-tidy` (run `knowledge-acquisition`, Sonnet): PMO-7 relinks and the MD041 line in `mod-006.report.md` and `loop-design.report.md`, `run-decisions.md` moved to the run state folder, audit clean, committed and pushed. Queued: nothing. The run state folder now exists on this machine and holds only the inbox; the old stale `heading-trim` entry is gone with the other machine's state.
+Status: busy. Kris back 2026-10-17 18:15 BST. folder-tidy finished 18:20 BST (`356a3e5`): reports already linked, `run-decisions.md` moved to the run state folder, folder audit clean; its report deleted at this resting point. Running: `checkpoint-audit` (Sonnet), fixing the two ki-pmo audit findings on this checkpoint. Queued: nothing. The run state folder now exists on this machine and holds only the inbox; the old stale `heading-trim` entry is gone with the other machine's state.
 
 Open queries for Kris (option a) recommended for each):
 
