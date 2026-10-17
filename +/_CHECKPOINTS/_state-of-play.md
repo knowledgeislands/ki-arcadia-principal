@@ -11,10 +11,10 @@ updated_at: 2026-10-17T12:58:00Z
 
 ## Pick-up - mark 2026-10-15T15:14:39Z (16:14 BST)
 
-- **Status:** rest. Running: nothing. 2026-10-17 14:26 BST: intake logged, consolidated, drawn (themes.md, now legible) and dispatched; Kris's five answers sent to their threads; own Messages block partly cleared, focus rewritten, KI-PRINCIPAL-MOD-008 held to 2026-10-23. Kris restarts ways of working next. Open query: SOP-DROPPED.
+- **Status:** rest. Running: nothing. 2026-10-17 14:30 BST: intake logged, consolidated, drawn (themes.md, legible) and dispatched; Kris's five answers sent to their threads; own Messages block partly cleared, focus rewritten, KI-PRINCIPAL-MOD-008 held to 2026-10-23; host-network citation reworded; KI-PRINCIPAL-ECO-014 not pruned (other repositories fail its checks). Kris restarts ways of working next. Open queries: SOP-DROPPED, ECO-PRUNE-CHECKS.
 - **Resume:** `Resume Master: state-of-play under current ki-pmo and ki-delegation since 2026-10-15T15:14:39Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`
 - **Next steps, in order:**
-  0. Act on Kris's reply to SOP-DROPPED.
+  0. Act on Kris's replies to SOP-DROPPED and ECO-PRUNE-CHECKS.
   1. When ways of working adds READY to this checkpoint's Messages block, give Kris tools burndown's restart line, then the two Rig threads in parallel, then knowledge acquisition, then Host network (fifth, HOST-NETWORK-THREAD), then Command centre.
   2. PMO-7-BACKLOG: once ways of working has set the messaging standard, post a line to each coordination checkpoint to relink or delete its own reports; then remove the line here.
   3. THREADS-ORPHANS remainder: `+/_THREADS/desk-kit/` reports belong to Rig: mac-studio-setup (setup-note) and KI > mics / webcams (cam-check, webcam-compare); pass THREADS-CLEAR on when those threads rest.
