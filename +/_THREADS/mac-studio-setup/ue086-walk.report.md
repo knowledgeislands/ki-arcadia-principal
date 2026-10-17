@@ -256,7 +256,7 @@ brew uninstall --cask actual moom jordanbaird-ice@beta
 
 #### Step 11 (C7i) - Adobe
 
-Follow the `adobe-script` run's report, `/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/mac-studio-bootstrap/adobe-script.report.md`, and its script `adobe-remove.sh` beside it. Both are being written now. That report supersedes the Adobe steps in the `adobe-sweep` and `sol-remove` reports.
+Follow the [`adobe-script` run report](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/mac-studio-setup/adobe-script.report.md) and its script, [adobe-remove.sh](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-setup/adobe-remove.sh), now in the Project folder. That report supersedes the Adobe steps in the `adobe-sweep` and `sol-remove` reports.
 
 #### Step 12 (C9) - Final check
 

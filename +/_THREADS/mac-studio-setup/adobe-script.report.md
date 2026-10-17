@@ -6,7 +6,7 @@
 
 ## Done
 
-- **[adobe-remove.sh](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/+/_THREADS/mac-studio-setup/adobe-remove.sh) is written and committed** as `a91113d` (local only, not pushed). It replaces the Creative Cloud app steps in ADOBE-SOL and ADOBE-TERRA from the adobe-sweep report. Without `--apply` it is a dry run and changes nothing. `--apply` needs sudo, and it refuses to run if you are logged in as root. It works in this order:
+- **[adobe-remove.sh](/Users/krisbrown/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-setup/adobe-remove.sh) is written and committed** as `a91113d` (local only, not pushed). It replaces the Creative Cloud app steps in ADOBE-SOL and ADOBE-TERRA from the adobe-sweep report. Without `--apply` it is a dry run and changes nothing. `--apply` needs sudo, and it refuses to run if you are logged in as root. It works in this order:
   1. It finds what is installed by reading Adobe's install database (`/Library/Application Support/Adobe/Caps/hdpim.db`). That gives each app's SAP code, base version, platform and folder, so nothing is assumed. Base versions are not always the major version: Lightroom Classic 15.6 has base `8.3`.
   2. If Lightroom Classic or a Photoshop is open, it stops and asks you to quit them. This keeps the catalogue safe and loses no unsaved work. It then quits the Adobe background processes. A process counts as Adobe's only when its program file is in an Adobe folder, so an agent whose text just mentions Adobe is never stopped.
   3. It uninstalls each app with `HDBox/Setup --uninstall=1 --sapCode --baseVersion --platform --deleteUserPreferences=false`. After that it uninstalls any add-on the apps pulled in that is still there, such as Camera Raw, the colour profiles or the Substance viewer.
@@ -21,7 +21,7 @@
   - 8 launch daemons and agents, and 1 helper.
   - What stays: 7.0 GB in `/Library/Application Support/Adobe`, 6.2 GB in `~/Library/Application Support/Adobe`, and the catalogue `~/Pictures/Lightroom/Lightroom Catalog.lrcat`.
 
-  The latest log is `adobe-remove.sol.20261015-221323.dry-run.log`. An earlier log from the first test, `…221245…`, is also there and Git ignores it.
+  The latest log is `adobe-remove.sol.20261015-221323.dry-run.log`, with an earlier one from the first test, `…221245…`. Both now sit in the run's state folder at `~/.local/state/ki/agents/mac-studio-setup/archive/`.
 - **Not tested.** I did not run the script on terra, because this run had no remote access. I did not run `--apply`, did not use sudo and deleted nothing.
 
 ## In Progress
@@ -41,7 +41,7 @@ Outstanding - no action requested now:
 
 These are the steps at sol:
 
-1. Save your work, then quit Lightroom Classic and every Photoshop. In Terminal, run: `cd ~/workspaces/knowledge-islands/ki-principal/+/_THREADS/mac-studio-bootstrap && ./adobe-remove.sh` Expect, under `1.`: Lightroom Classic 15.6 and the four Photoshops, 8 add-ons, 7 Creative Cloud folders, 8 launchd plists and 1 helper. The last line should read `Dry run finished. Nothing was changed.` If a `Still open` section appears, quit those apps.
+1. Save your work, then quit Lightroom Classic and every Photoshop. In Terminal, run: `cd ~/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-setup && ./adobe-remove.sh` Expect, under `1.`: Lightroom Classic 15.6 and the four Photoshops, 8 add-ons, 7 Creative Cloud folders, 8 launchd plists and 1 helper. The last line should read `Dry run finished. Nothing was changed.` If a `Still open` section appears, quit those apps.
 2. Run: `sudo ./adobe-remove.sh --apply`, and give sol's password when asked. Expect: this takes a few minutes. Steps `3.` and `4.` print each Adobe command with no `exit N` line after it. Step `5.` should have little or nothing to do. Under `What is left`, there should be no `/Applications/Adobe` line, no plist, no helper and no process. Then comes the list of folder sizes, and the catalogue under `Lightroom catalogues kept`. The last line reads `Done with 0 step(s) that failed or fell back`. If a line says `Operation not permitted`, open System Settings › Privacy & Security › App Management, turn Terminal on, then run step 2 again.
 3. Restart sol, then run `./adobe-remove.sh` again from the same folder. Expect: `none` for apps and add-ons, no Creative Cloud folder, no launchd item, and nothing under `What is left` before the sizes.
 4. Tell the thread "sol done". An agent then reads the `*.apply.log` and the second `*.dry-run.log` beside the script. If a step fell back or failed, paste the `Result` line as well.
@@ -64,7 +64,7 @@ b) run only the dry run (step 1) and send its output before deciding
 
 a) (recommended) yes: the thread pushes ki-principal `main` from sol. At terra, Kris then runs `git -C ~/workspaces/knowledge-islands/ki-principal pull --ff-only`
 
-b) copy the script to terra by hand, for example with AirDrop, into `~/workspaces/knowledge-islands/ki-principal/+/_THREADS/mac-studio-bootstrap/`
+b) copy the script to terra by hand, for example with AirDrop, into `~/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-setup/`
 
 ### ADOBE-RUN-TERRA - Run the removal script at terra
 
@@ -72,7 +72,7 @@ b) copy the script to terra by hand, for example with AirDrop, into `~/workspace
 
 These are the steps at terra, once ADOBE-SCRIPT-TERRA is done:
 
-1. In Terminal, run: `cd ~/workspaces/knowledge-islands/ki-principal/+/_THREADS/mac-studio-bootstrap && ./adobe-remove.sh` Expect: `none` under installed apps and add-ons. Then the Creative Cloud folders, those two plists and the helper, and `Dry run finished. Nothing was changed.` If an app or add-on is listed, send the output to the thread before going on.
+1. In Terminal, run: `cd ~/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-setup && ./adobe-remove.sh` Expect: `none` under installed apps and add-ons. Then the Creative Cloud folders, those two plists and the helper, and `Dry run finished. Nothing was changed.` If an app or add-on is listed, send the output to the thread before going on.
 2. Run: `sudo ./adobe-remove.sh --apply`, and give terra's password when asked. Expect: the `Creative Cloud Uninstaller -u` line with no `exit N` after it. Under `What is left`, there should be no `/Applications/Adobe` line, no plist, no helper and no process. The sizes list should show about 1.6 GB in `/Library/Application Support/Adobe`. The last line reads `Done with 0 step(s) that failed or fell back`. If a line says `Operation not permitted`, turn Terminal on under System Settings › Privacy & Security › App Management and run step 2 again.
 3. Restart terra, then run `./adobe-remove.sh` again. Expect: nothing under `What is left` before the sizes.
 4. Send the thread the `Result` line, everything from `== What is left` to the end of the step 2 output, and the output of step 3. The log is beside the script on terra, and an agent can read it there.
@@ -88,7 +88,7 @@ b) leave terra until it is next at hand
 ```text
 ADOBE-RUN-SOL
 
-At sol: quit Lightroom Classic and every Photoshop; cd ~/workspaces/knowledge-islands/ki-principal/+/_THREADS/mac-studio-bootstrap && ./adobe-remove.sh (dry run, expect 5 apps and "Nothing was changed"); sudo ./adobe-remove.sh --apply (expect nothing left under "What is left" and "Done with 0 step(s)"; if "Operation not permitted", turn Terminal on under App Management and rerun); restart and run ./adobe-remove.sh again; tell the thread "sol done" so an agent reads the logs beside the script; delete no data (ADOBE-DATA stays open)
+At sol: quit Lightroom Classic and every Photoshop; cd ~/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-setup && ./adobe-remove.sh (dry run, expect 5 apps and "Nothing was changed"); sudo ./adobe-remove.sh --apply (expect nothing left under "What is left" and "Done with 0 step(s)"; if "Operation not permitted", turn Terminal on under App Management and rerun); restart and run ./adobe-remove.sh again; tell the thread "sol done" so an agent reads the logs beside the script; delete no data (ADOBE-DATA stays open)
 
 ---
 
@@ -100,7 +100,7 @@ Yes: the thread pushes ki-principal main from sol (a91113d), then at terra Kris 
 
 ADOBE-RUN-TERRA
 
-At terra, after the pull: cd ~/workspaces/knowledge-islands/ki-principal/+/_THREADS/mac-studio-bootstrap && ./adobe-remove.sh (dry run, expect no apps, Creative Cloud only); sudo ./adobe-remove.sh --apply (expect nothing left under "What is left" and "Done with 0 step(s)"); restart and run ./adobe-remove.sh again; send the thread the Result line, the "What is left" output and the post-restart output; delete no data
+At terra, after the pull: cd ~/workspaces/knowledge-islands/ki-principal/Streams/Projects/mac-studio-setup && ./adobe-remove.sh (dry run, expect no apps, Creative Cloud only); sudo ./adobe-remove.sh --apply (expect nothing left under "What is left" and "Done with 0 step(s)"); restart and run ./adobe-remove.sh again; send the thread the Result line, the "What is left" output and the post-restart output; delete no data
 ```
 
 ```text
