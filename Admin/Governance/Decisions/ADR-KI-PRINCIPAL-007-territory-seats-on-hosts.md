@@ -3,7 +3,7 @@ note_type: admin/governance/decision
 id: ADR-KI-PRINCIPAL-007
 title: 'Territory seats on hosts'
 date: 2026-10-15
-updated: 2026-10-15
+updated: 2026-10-17
 status: current
 decision_type: architecture
 decision_type_url: https://knowledgeislands.info/specifications/decision-records/adr
@@ -28,7 +28,7 @@ Kris accepted this decision on 15 October 2026, in these words:
 - Coordination is routed by seat, with standby fallback.
 - Git is the source of truth.
 
-The seats are recorded by role in the Estate territories table of Known Lands: home for personal, legal and humans-not-robots; hub for valle-armonia, sacred-inquiry, techmedix and equal-remedy; both for knowledge-islands.
+The seats are recorded by role in the Estate territories table of Known Lands: home for humans-not-robots; hub for valle-armonia, sacred-inquiry, techmedix and equal-remedy; both, tipped to the hub, for knowledge-islands, personal and legal, which Kris set for personal and legal on 17 October 2026.
 
 ## Consequences
 

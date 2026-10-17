@@ -1,6 +1,6 @@
 ---
 note_type: pillars/note
-updated: 2026-10-14T23:45:00Z
+updated: 2026-10-17T00:26:00Z
 tags:
   - card/note
   - topic/knowledge-islands
@@ -52,7 +52,7 @@ Hosts appear here by role, home and hub, not by machine name. Public governance 
 | Dimension | Applies to | Values | Recorded today |
 | --- | --- | --- | --- |
 | Class | Territory | entity, individual | [[Known Lands]] |
-| Seat | Territory | home: personal, legal, humans-not-robots; hub: valle-armonia, sacred-inquiry, techmedix, equal-remedy; both: knowledge-islands, tipped to the hub | [[Known Lands]], [[ADR-KI-PRINCIPAL-007-territory-seats-on-hosts\|ADR-KI-PRINCIPAL-007]] |
+| Seat | Territory | home: humans-not-robots; hub: valle-armonia, sacred-inquiry, techmedix, equal-remedy; both: knowledge-islands, personal, legal, tipped to the hub | [[Known Lands]], [[ADR-KI-PRINCIPAL-007-territory-seats-on-hosts\|ADR-KI-PRINCIPAL-007]] |
 | Exposure | Territory, service | public address, tailnet only, host local | Partly: the Domains table in [[Known Lands]] |
 | Organisation | Island | GitHub organisation | Estate Map |
 | Role | Island | Capital, harness, publication, product, tool, MCP, delivery | [[Known Lands]], Estate Map |

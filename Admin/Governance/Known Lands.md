@@ -68,7 +68,7 @@ Domains the territory holds or plans to hold, recorded from the 2026-10-12 inven
 
 ## Estate territories
 
-The estate has eight territories. Each has a handle, a short alias used in repository names and codes, a class: entity or individual, and a seat: the host role where it is primarily tended, home or hub, with Knowledge Islands seated on both, under [[ADR-KI-PRINCIPAL-007-territory-seats-on-hosts|ADR-KI-PRINCIPAL-007]]. The binding of each role to a machine stays in the local registry and chezmoi. This list names each territory's Capital for reference only; it grants no membership, authority, access, or permission to exchange material.
+The estate has eight territories. Each has a handle, a short alias used in repository names and codes, a class: entity or individual, and a seat: the host role where it is primarily tended, home or hub, with Knowledge Islands, Legal and Personal seated on both, tipped to the hub, under [[ADR-KI-PRINCIPAL-007-territory-seats-on-hosts|ADR-KI-PRINCIPAL-007]]. The binding of each role to a machine stays in the local registry and chezmoi. This list names each territory's Capital for reference only; it grants no membership, authority, access, or permission to exchange material.
 
 | Territory | Handle | Alias | Class | Seat | Capital |
 | --- | --- | --- | --- | --- | --- |
@@ -77,8 +77,8 @@ The estate has eight territories. Each has a handle, a short alias used in repos
 | Equal Remedy | `equal-remedy` | `er` | Entity | Hub | `equalremedy/er-principal` |
 | Techmedix | `techmedix` | `tmx` | Entity | Hub | `techmedix/tmx-principal` |
 | Valle Armonia | `valle-armonia` | `va` | Entity | Hub | `vallearmonia/va-principal` |
-| Legal | `legal` | `lgl` | Individual | Home | `krisb/legal-principal` |
-| Personal | `personal` | `kb` | Individual | Home | `krisb/personal-principal` |
+| Legal | `legal` | `lgl` | Individual | Both | `krisb/legal-principal` |
+| Personal | `personal` | `kb` | Individual | Both | `krisb/personal-principal` |
 | Sacred Inquiry | `sacred-inquiry` | `si` | Individual | Hub | `sacred-inquiry/si-principal` |
 
 ---
