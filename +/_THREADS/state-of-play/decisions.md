@@ -1057,3 +1057,9 @@ Kris: "I've now destroyed all my notes about it" - this log is the durable captu
 - **KI-AGENTS-NAME:** "Keep "agents"; ways of working logs the decision in its decisions log and nothing is renamed."
 - **FAVICON-FOLLOWUPS:** "I restart the Observatory service on sol in an interactive session and check the tab shows the dome; Do not file a Headroom feature request upstream with the concept icon from the favicons report - maybe we can sort that out when we have our own DNS and we can do something about it differently. I've since fixed the icons for the two midnight.ninja ones."
 - **GO-AHEAD** (2026-10-17 14:22 BST): "hopefully, all this gets captured back into Knowledge Island in the Knowledge Base, and then there's the observatory's built, we can start to look at and understand all these in a reader-only fashion. Not everything that we do needs to be in the public set of information on the website. Although, of course, much of this would be. So, you've got permission to get on with anything."
+
+## 2026-10-17 14:32 BST - replies to the 14:28 BST summary
+
+- **SOP-DROPPED:** "No, if its not in the repo then you can ignore it, and if it is, you can look at the diff and decide if its relevant or not now." The commit is not in this repository (`git cat-file` finds no object), so it is dropped as overtaken; STASH-DROP stays for a terra session.
+- **ECO-PRUNE-CHECKS:** "Prune KI-PRINCIPAL-ECO-014 now in a prune-only commit, repointing the link at line 158 of thread-types-and-durable-decisions to its GitHub copy, and send Fnd: tools-burndown a Messages line to rewrite the two "Decision 55" citations in KI-TOOL-KI-CLI-139 by Kris's words and date once the tools-ki rebase is resolved." Dispatched as eco-prune-3.
+- **RESUME-ASK:** "so, do youy have a resume for me for some threads?" Given in the 14:32 BST reply.
