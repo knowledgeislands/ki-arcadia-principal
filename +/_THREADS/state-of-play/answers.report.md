@@ -40,7 +40,8 @@ Outstanding - no action requested now:
 
 - No receiving thread has been asked to prune KI-PRINCIPAL-ECO-014 (decision citation and run-folder sweep), because the brief names no thread that owns it. Kris's words "the owning threads prune KI-PRINCIPAL-ECO-014" stay with Master: state-of-play to route.
 - Five personal records wait for the personal master thread, and the personal repositories were not touched: KB-MIDNIGHT-RIG-SITE-001, KB-MIDNIGHT-TOWER-SITE-003, -004, -005 and -006.
-- The push also carries `0127100` "docs(threads): record Kris's go-ahead". That is Master: state-of-play's own commit to its decisions log, so it is this thread's work.
+- The push, `b1d1523..70194e0` fast-forward to `origin/main`, also carries two of Master: state-of-play's own commits, so all of it is this thread's work. They are `0127100` "docs(threads): record Kris's go-ahead" and `2e1693b` "chore(threads): clear answered state-of-play reports". `git pull --rebase` refused because of the other session's unstaged chezmoi file, but `origin/main` had nothing new, so the push went through without it.
+- `2e1693b` deleted the query-review and reinstate reports. Older lines in the Rig: chezmoi and Fnd: tools-burndown Messages blocks still link to them by local path, and those lines were left unchanged, as the brief requires.
 - Two changes belonging to other sessions were left as they were: `+/_THREADS/chezmoi/decisions.md` (modified) and `+/_THREADS/desk-kit/setup-note.report.md` (untracked). A full `ki repo audit` fails NOTE-1a on two `+/_THREADS/desk-kit/` reports, which this run did not cause.
 
 ## Queries
