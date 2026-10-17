@@ -1,0 +1,363 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "State of play · the order the threads restart in",
+    "output": "+/diagrams/restart-sequence/restart-sequence.html",
+    "quality_profile": "showcase",
+    "locale": "en",
+    "legend": {
+      "mode": "all",
+      "entries": {
+        "external": {
+          "label": "Kris"
+        },
+        "cloud": {
+          "label": "State of play step"
+        },
+        "backend": {
+          "label": "A thread's first step"
+        },
+        "security": {
+          "label": "Opens only on a decision"
+        },
+        "frontend": {
+          "label": "The ready message"
+        },
+        "database": {
+          "label": "Stays at rest"
+        },
+        "messagebus": {
+          "visible": false
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "kris",
+      "label": "Kris"
+    },
+    {
+      "id": "master",
+      "label": "Master: state-of-play"
+    },
+    {
+      "id": "wow",
+      "label": "KI > Model > ways of working"
+    },
+    {
+      "id": "burndown",
+      "label": "KI > Foundations > tools burndown"
+    },
+    {
+      "id": "rig",
+      "label": "Rig: mac-studio-setup · Rig: chezmoi"
+    },
+    {
+      "id": "ka",
+      "label": "KI > Model > knowledge acquisition"
+    },
+    {
+      "id": "hn",
+      "label": "Host network"
+    },
+    {
+      "id": "cc",
+      "label": "KI Model: command-centre"
+    },
+    {
+      "id": "obs",
+      "label": "Observatory: product"
+    }
+  ],
+  "phases": [
+    {
+      "id": "p-dispatch",
+      "label": "1 · Dispatch",
+      "fromCol": 0,
+      "toCol": 0
+    },
+    {
+      "id": "p-wow",
+      "label": "2 · Ways of working",
+      "fromCol": 1,
+      "toCol": 2,
+      "variant": "emphasis"
+    },
+    {
+      "id": "p-ready",
+      "label": "Ready",
+      "fromCol": 3,
+      "toCol": 3,
+      "variant": "security"
+    },
+    {
+      "id": "p-rest",
+      "label": "3 to 8 · The rest, in order",
+      "fromCol": 4,
+      "toCol": 5,
+      "variant": "dashed"
+    }
+  ],
+  "groups": [
+    {
+      "id": "g-rig",
+      "label": "In parallel",
+      "lane": "rig",
+      "fromCol": 4,
+      "toCol": 5,
+      "variant": "dashed"
+    }
+  ],
+  "mainPath": [
+    "m-dispatch",
+    "w-boot",
+    "w-decision",
+    "k-decides",
+    "w-ready",
+    "m-ready",
+    "b-push",
+    "b-backlog"
+  ],
+  "nodes": [
+    {
+      "id": "k-answers",
+      "lane": "kris",
+      "col": 1,
+      "type": "external",
+      "label": "Answers five queries",
+      "sublabel": "from the consolidate report"
+    },
+    {
+      "id": "k-decides",
+      "lane": "kris",
+      "col": 2,
+      "type": "external",
+      "label": "Decides STATE-AGREE",
+      "sublabel": "one decision"
+    },
+    {
+      "id": "k-ready",
+      "lane": "kris",
+      "col": 3,
+      "type": "frontend",
+      "label": "Hears ready",
+      "sublabel": "from ways of working"
+    },
+    {
+      "id": "m-dispatch",
+      "lane": "master",
+      "col": 0,
+      "type": "cloud",
+      "label": "Dispatch",
+      "sublabel": "a Messages line per item",
+      "tag": "nothing restarts before"
+    },
+    {
+      "id": "m-ready",
+      "lane": "master",
+      "col": 3,
+      "type": "frontend",
+      "label": "Hears ready",
+      "sublabel": "other threads may start"
+    },
+    {
+      "id": "w-boot",
+      "lane": "wow",
+      "col": 1,
+      "type": "backend",
+      "label": "Re-bootstrap",
+      "sublabel": "act on its Messages block"
+    },
+    {
+      "id": "w-decision",
+      "lane": "wow",
+      "col": 2,
+      "type": "security",
+      "label": "Put STATE-AGREE to Kris",
+      "sublabel": "+ messaging, restart rules"
+    },
+    {
+      "id": "w-ready",
+      "lane": "wow",
+      "col": 3,
+      "type": "frontend",
+      "label": "Report ready",
+      "sublabel": "to Kris and state of play"
+    },
+    {
+      "id": "b-push",
+      "lane": "burndown",
+      "col": 4,
+      "type": "backend",
+      "label": "tools-ki replay, push",
+      "sublabel": "PUSH-REBASE-CODE, TOOLS-PUSH"
+    },
+    {
+      "id": "b-backlog",
+      "lane": "burndown",
+      "col": 5,
+      "type": "backend",
+      "label": "Backlog, then bounty",
+      "sublabel": "AWAITING-REVIEW; mgit pair"
+    },
+    {
+      "id": "r-sol",
+      "lane": "rig",
+      "col": 4,
+      "type": "backend",
+      "label": "mac-studio-setup",
+      "sublabel": "sol queries to Kris"
+    },
+    {
+      "id": "r-chezmoi",
+      "lane": "rig",
+      "col": 5,
+      "type": "backend",
+      "label": "chezmoi",
+      "sublabel": "FW-DECLARE, SEAT-HOSTS, TOML-OPENER"
+    },
+    {
+      "id": "l-ka",
+      "lane": "ka",
+      "col": 4,
+      "type": "backend",
+      "label": "Knowledge acquisition",
+      "sublabel": "eight answers, AUDIT-GATE first"
+    },
+    {
+      "id": "l-hn",
+      "lane": "hn",
+      "col": 5,
+      "type": "security",
+      "label": "Host network",
+      "sublabel": "decision paper, restore path",
+      "tag": "HOST-NETWORK-THREAD"
+    },
+    {
+      "id": "c-cc",
+      "lane": "cc",
+      "col": 5,
+      "type": "backend",
+      "label": "Command centre",
+      "sublabel": "cheapest single-pane pilot"
+    },
+    {
+      "id": "c-obs",
+      "lane": "obs",
+      "col": 5,
+      "type": "database",
+      "label": "Observatory: product",
+      "sublabel": "icon needs a restart on sol"
+    }
+  ],
+  "edges": [
+    {
+      "from": "m-dispatch",
+      "to": "w-boot",
+      "label": "Messages lines"
+    },
+    {
+      "from": "m-dispatch",
+      "to": "k-answers",
+      "label": "five queries",
+      "variant": "dashed",
+      "role": "branch"
+    },
+    {
+      "from": "w-boot",
+      "to": "w-decision"
+    },
+    {
+      "from": "w-decision",
+      "to": "k-decides",
+      "label": "one decision",
+      "variant": "security"
+    },
+    {
+      "from": "k-decides",
+      "to": "w-ready",
+      "label": "answer"
+    },
+    {
+      "from": "w-ready",
+      "to": "k-ready",
+      "label": "ready",
+      "variant": "emphasis"
+    },
+    {
+      "from": "w-ready",
+      "to": "m-ready",
+      "label": "ready",
+      "variant": "emphasis"
+    },
+    {
+      "from": "m-ready",
+      "to": "b-push",
+      "label": "3"
+    },
+    {
+      "from": "b-push",
+      "to": "b-backlog"
+    },
+    {
+      "from": "b-push",
+      "to": "r-sol",
+      "label": "4",
+      "role": "branch"
+    },
+    {
+      "from": "r-sol",
+      "to": "r-chezmoi",
+      "label": "in parallel",
+      "variant": "dashed",
+      "role": "branch"
+    },
+    {
+      "from": "r-sol",
+      "to": "l-ka",
+      "label": "5",
+      "role": "branch"
+    },
+    {
+      "from": "l-ka",
+      "to": "l-hn",
+      "label": "6 · only if decided",
+      "variant": "security",
+      "role": "branch"
+    },
+    {
+      "from": "l-hn",
+      "to": "c-cc",
+      "label": "7 · after ready",
+      "role": "branch"
+    },
+    {
+      "from": "c-cc",
+      "to": "c-obs",
+      "label": "8 · stays at rest",
+      "variant": "dashed",
+      "role": "branch"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "The ready message",
+      "items": [
+        "Ways of working decides the critical set, then tells Kris and state of play that the other threads may start.",
+        "Nothing restarts until state of play has dispatched every routed item."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Each thread's first step",
+      "items": [
+        "Tools burndown: the tools-ki replay and push, then the acceptance backlog with Kris, then MGIT-OUTPUT and MGIT-ESCAPE.",
+        "Rig, in parallel: SOL-APPLY, SOL-CLT and TERRA-READ to Kris; FW-DECLARE as a source commit, then SEAT-HOSTS with SEAT-CHANGE, then TOML-OPENER.",
+        "Knowledge acquisition: Kris's eight answers. Host network opens only on HOST-NETWORK-THREAD. Command centre after ready. Observatory: product stays at rest."
+      ]
+    }
+  ]
+}

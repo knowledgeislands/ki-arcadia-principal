@@ -1,0 +1,447 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "State of play · items that are one concern",
+    "output": "+/diagrams/overlaps/overlaps.html",
+    "quality_profile": "showcase",
+    "locale": "en",
+    "legend": {
+      "mode": "all",
+      "entries": {
+        "backend": {
+          "label": "Intake item"
+        },
+        "database": {
+          "label": "Existing record or report"
+        },
+        "frontend": {
+          "label": "Where the cluster lands"
+        },
+        "cloud": {
+          "visible": false
+        },
+        "security": {
+          "visible": false
+        },
+        "messagebus": {
+          "visible": false
+        },
+        "external": {
+          "visible": false
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "a1",
+      "type": "backend",
+      "label": "THREAD-MESSAGING",
+      "sublabel": "threads tell each other",
+      "pos": [
+        40,
+        80
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "a2",
+      "type": "backend",
+      "label": "THREAD-DURABILITY",
+      "sublabel": "durable, state or scratch",
+      "pos": [
+        40,
+        164
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "a3",
+      "type": "backend",
+      "label": "THREADS-CHECKINS",
+      "sublabel": "excessive check-ins",
+      "pos": [
+        40,
+        248
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "a4",
+      "type": "backend",
+      "label": "CHURN-REMEDIES",
+      "sublabel": "remedies 1, 2 and 4",
+      "pos": [
+        40,
+        332
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "a5",
+      "type": "backend",
+      "label": "temp versus XDG",
+      "sublabel": "the global temp point",
+      "pos": [
+        40,
+        416
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "a6",
+      "type": "backend",
+      "label": "RESTART-PROMPTS",
+      "sublabel": "the same rule, restart side",
+      "pos": [
+        40,
+        500
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "ra",
+      "type": "frontend",
+      "label": "STATE-AGREE + one messaging rule",
+      "sublabel": "state-homes report answers it; waits on Kris",
+      "tag": "ways of working",
+      "pos": [
+        350,
+        250
+      ],
+      "size": [
+        230,
+        110
+      ]
+    },
+    {
+      "id": "d1",
+      "type": "backend",
+      "label": "MGIT-OUTPUT",
+      "sublabel": "progress, changed-only, sync",
+      "pos": [
+        40,
+        640
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "d2",
+      "type": "backend",
+      "label": "MGIT-ESCAPE",
+      "sublabel": "--bare and --raw",
+      "pos": [
+        40,
+        724
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "rd",
+      "type": "frontend",
+      "label": "The feature bounty",
+      "sublabel": "burn rule allows it; then MGIT-RELEASE",
+      "tag": "tools burndown",
+      "pos": [
+        350,
+        660
+      ],
+      "size": [
+        230,
+        90
+      ]
+    },
+    {
+      "id": "b1",
+      "type": "backend",
+      "label": "RIG-CATALOGUE",
+      "sublabel": "config, state, cache per tool",
+      "pos": [
+        640,
+        80
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "b2",
+      "type": "database",
+      "label": "KI-OBSERVA-VIS-021",
+      "sublabel": "Observatory: explain tool storage",
+      "pos": [
+        640,
+        164
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "b3",
+      "type": "database",
+      "label": "KB-DOTFILES-UE-027",
+      "sublabel": "chezmoi: per-tool fields",
+      "pos": [
+        640,
+        248
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "b4",
+      "type": "database",
+      "label": "ADR-KI-TOOL-RIG-002",
+      "sublabel": "tools-rig: XDG contract",
+      "pos": [
+        640,
+        332
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "rb",
+      "type": "frontend",
+      "label": "Catalogue in tools-rig",
+      "sublabel": "Observatory reads it; blocked on RIG-OWNER",
+      "tag": "no owner yet",
+      "pos": [
+        950,
+        176
+      ],
+      "size": [
+        230,
+        100
+      ]
+    },
+    {
+      "id": "c1",
+      "type": "backend",
+      "label": "LOCAL-DNS",
+      "sublabel": "a name, not a port",
+      "pos": [
+        640,
+        480
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "backend",
+      "label": "FAVICONS",
+      "sublabel": "an icon on the tab",
+      "pos": [
+        640,
+        564
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "c3",
+      "type": "backend",
+      "label": "Single pane of glass",
+      "sublabel": "one view, not many",
+      "pos": [
+        640,
+        648
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "rc",
+      "type": "frontend",
+      "label": "One front door",
+      "sublabel": "Host network names it; Command centre the rest",
+      "tag": "sequenced together",
+      "pos": [
+        950,
+        534
+      ],
+      "size": [
+        230,
+        100
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "Five items, one concern: durable, state, scratch, and how threads talk",
+      "wraps": [
+        "a1",
+        "a2",
+        "a3",
+        "a4",
+        "a5",
+        "a6",
+        "ra"
+      ],
+      "pad": 20
+    },
+    {
+      "kind": "region",
+      "label": "The only new tool features in the dump",
+      "wraps": [
+        "d1",
+        "d2",
+        "rd"
+      ],
+      "pad": 20
+    },
+    {
+      "kind": "region",
+      "label": "A concern the estate has met twice",
+      "wraps": [
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "rb"
+      ],
+      "pad": 20
+    },
+    {
+      "kind": "region",
+      "label": "Three faces of the Observatory on each host",
+      "wraps": [
+        "c1",
+        "c2",
+        "c3",
+        "rc"
+      ],
+      "pad": 20
+    }
+  ],
+  "connections": [
+    {
+      "from": "a1",
+      "to": "ra",
+      "label": "messaging half"
+    },
+    {
+      "from": "a2",
+      "to": "ra",
+      "label": "durability half"
+    },
+    {
+      "from": "a3",
+      "to": "ra",
+      "label": "folds in"
+    },
+    {
+      "from": "a4",
+      "to": "ra",
+      "label": "inside option a)"
+    },
+    {
+      "from": "a5",
+      "to": "ra",
+      "label": "durability half"
+    },
+    {
+      "from": "a6",
+      "to": "ra",
+      "label": "restart side"
+    },
+    {
+      "from": "d1",
+      "to": "rd"
+    },
+    {
+      "from": "d2",
+      "to": "rd"
+    },
+    {
+      "from": "b1",
+      "to": "rb",
+      "label": "the Rig side"
+    },
+    {
+      "from": "b2",
+      "to": "rb",
+      "label": "read side",
+      "variant": "dashed"
+    },
+    {
+      "from": "b3",
+      "to": "rb",
+      "label": "same fields",
+      "variant": "dashed"
+    },
+    {
+      "from": "b4",
+      "to": "rb",
+      "label": "fixes XDG",
+      "variant": "dashed"
+    },
+    {
+      "from": "c1",
+      "to": "rc",
+      "label": "the name"
+    },
+    {
+      "from": "c2",
+      "to": "rc",
+      "label": "the icon"
+    },
+    {
+      "from": "c3",
+      "to": "rc",
+      "label": "the view"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "What the consolidation says",
+      "items": [
+        "Merge the five thread items into STATE-AGREE plus one messaging rule, and close THREADS-CHECKINS by name.",
+        "RIG-CATALOGUE cannot move until RIG-OWNER is answered.",
+        "Keep the front door in two Projects but sequence the three faces together.",
+        "The mgit pair needs no rule change: the burndown allows items Kris asks for."
+      ]
+    }
+  ]
+}

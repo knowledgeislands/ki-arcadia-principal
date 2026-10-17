@@ -1,0 +1,528 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "State of play · theme map of the 17 October intake",
+    "output": "+/diagrams/theme-map/theme-map.html",
+    "quality_profile": "showcase",
+    "locale": "en",
+    "legend": {
+      "mode": "all",
+      "entries": {
+        "backend": {
+          "label": "Existing workstream"
+        },
+        "frontend": {
+          "label": "New workstream"
+        },
+        "cloud": {
+          "label": "New, no Project note yet"
+        },
+        "security": {
+          "label": "The master's own rules"
+        },
+        "external": {
+          "label": "Outside the territory"
+        },
+        "database": {
+          "visible": false
+        },
+        "messagebus": {
+          "visible": false
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "ww-state",
+      "type": "backend",
+      "label": "Thread state homes",
+      "sublabel": "DURABILITY · CHECKINS · CHURN",
+      "tag": "STATE-AGREE",
+      "pos": [
+        40,
+        100
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "ww-messaging",
+      "type": "frontend",
+      "label": "Thread messaging",
+      "sublabel": "THREAD-MESSAGING · ROUTING",
+      "tag": "new",
+      "pos": [
+        40,
+        176
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "ww-restart",
+      "type": "frontend",
+      "label": "Restart prompts",
+      "sublabel": "RESTART-PROMPTS",
+      "tag": "new",
+      "pos": [
+        40,
+        252
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "ww-git",
+      "type": "frontend",
+      "label": "Git work surface",
+      "sublabel": "GIT-SURFACE · Eng. Practice",
+      "tag": "new",
+      "pos": [
+        40,
+        328
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "ww-diagrams",
+      "type": "frontend",
+      "label": "Diagrams in designs",
+      "sublabel": "DIAGRAMS · this file first",
+      "tag": "new",
+      "pos": [
+        40,
+        404
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "ww-vocab",
+      "type": "backend",
+      "label": "Vocabulary",
+      "sublabel": "KI-AGENTS-NAME",
+      "tag": "query",
+      "pos": [
+        40,
+        480
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "cc-pane",
+      "type": "backend",
+      "label": "Single pane of glass",
+      "sublabel": "FOCUS · LOCAL-DNS every host",
+      "pos": [
+        40,
+        616
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "cc-favicons",
+      "type": "backend",
+      "label": "Observatory delivery",
+      "sublabel": "FAVICONS · Observatory",
+      "tag": "done bar restart",
+      "pos": [
+        40,
+        692
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "ka-none",
+      "type": "backend",
+      "label": "Nothing from the dump",
+      "sublabel": "in FOCUS · 8 queries open",
+      "pos": [
+        40,
+        828
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "tb-output",
+      "type": "frontend",
+      "label": "mgit output",
+      "sublabel": "MGIT-OUTPUT",
+      "tag": "new",
+      "pos": [
+        392,
+        100
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "tb-escape",
+      "type": "frontend",
+      "label": "mgit escape hatch",
+      "sublabel": "MGIT-ESCAPE · --bare, --raw",
+      "tag": "new",
+      "pos": [
+        392,
+        176
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "tb-backlog",
+      "type": "backend",
+      "label": "Acceptance backlog",
+      "sublabel": "AWAITING-REVIEW · 18 records",
+      "tag": "query",
+      "pos": [
+        392,
+        252
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "tb-naming",
+      "type": "backend",
+      "label": "ki agent CLI naming",
+      "sublabel": "KI-AGENTS-NAME · if renamed",
+      "pos": [
+        392,
+        328
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "sop-rules",
+      "type": "security",
+      "label": "Master as routing point",
+      "sublabel": "ROUTING · FOCUS",
+      "tag": "RESTART-PROMPTS too",
+      "pos": [
+        392,
+        480
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "sop-dump",
+      "type": "security",
+      "label": "Handling this dump",
+      "sublabel": "CAPTURE-ONLY · DISPATCH-ORDER",
+      "tag": "FABLE-CONSOLIDATE",
+      "pos": [
+        392,
+        556
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "out-favicons",
+      "type": "external",
+      "label": "rig and tower site icons",
+      "sublabel": "FAVICONS · rig, tower sites",
+      "pos": [
+        392,
+        708
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "out-domain",
+      "type": "external",
+      "label": "Identity domain",
+      "sublabel": "LOCAL-DNS · midnight.ninja?",
+      "pos": [
+        392,
+        784
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "hn-names",
+      "type": "backend",
+      "label": "Tailnet service names",
+      "sublabel": "LOCAL-DNS · observatory.<name>",
+      "tag": "query",
+      "pos": [
+        744,
+        100
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "cz-opener",
+      "type": "frontend",
+      "label": "Default openers",
+      "sublabel": "TOML-OPENER · .toml in Zed",
+      "tag": "new",
+      "pos": [
+        744,
+        236
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "cz-catalogue",
+      "type": "backend",
+      "label": "Catalogue rendering",
+      "sublabel": "RIG-CATALOGUE · chezmoi half",
+      "pos": [
+        744,
+        312
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "ms-diff",
+      "type": "backend",
+      "label": "terra and sol differences",
+      "sublabel": "FOCUS · rig-diff, R2 and R4",
+      "pos": [
+        744,
+        448
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "tr-catalogue",
+      "type": "frontend",
+      "label": "Software catalogue",
+      "sublabel": "RIG-CATALOGUE · storage",
+      "tag": "new",
+      "pos": [
+        744,
+        584
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "mac-cloud",
+      "type": "cloud",
+      "label": "Cloud Mac",
+      "sublabel": "MAC-CLOUD · long term",
+      "tag": "idea",
+      "pos": [
+        744,
+        720
+      ],
+      "size": [
+        180,
+        56
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "Knowledge Islands model",
+      "wraps": [
+        "ww-state",
+        "ww-messaging",
+        "ww-restart",
+        "ww-git",
+        "ww-diagrams",
+        "ww-vocab",
+        "cc-pane",
+        "cc-favicons",
+        "ka-none"
+      ],
+      "pad": 24
+    },
+    {
+      "kind": "security-group",
+      "label": "Ways of working · live",
+      "wraps": [
+        "ww-state",
+        "ww-messaging",
+        "ww-restart",
+        "ww-git",
+        "ww-diagrams",
+        "ww-vocab"
+      ],
+      "pad": 12
+    },
+    {
+      "kind": "security-group",
+      "label": "Command centre · drained",
+      "wraps": [
+        "cc-pane",
+        "cc-favicons"
+      ],
+      "pad": 12
+    },
+    {
+      "kind": "security-group",
+      "label": "Knowledge acquisition",
+      "wraps": [
+        "ka-none"
+      ],
+      "pad": 12
+    },
+    {
+      "kind": "region",
+      "label": "Platform foundations",
+      "wraps": [
+        "tb-output",
+        "tb-escape",
+        "tb-backlog",
+        "tb-naming"
+      ],
+      "pad": 24
+    },
+    {
+      "kind": "security-group",
+      "label": "Tools burndown · live",
+      "wraps": [
+        "tb-output",
+        "tb-escape",
+        "tb-backlog",
+        "tb-naming"
+      ],
+      "pad": 12
+    },
+    {
+      "kind": "region",
+      "label": "State of play itself",
+      "wraps": [
+        "sop-rules",
+        "sop-dump"
+      ],
+      "pad": 24
+    },
+    {
+      "kind": "region",
+      "label": "Outside the territory",
+      "wraps": [
+        "out-favicons",
+        "out-domain"
+      ],
+      "pad": 24
+    },
+    {
+      "kind": "region",
+      "label": "Rig",
+      "wraps": [
+        "hn-names",
+        "cz-opener",
+        "cz-catalogue",
+        "ms-diff",
+        "tr-catalogue",
+        "mac-cloud"
+      ],
+      "pad": 24
+    },
+    {
+      "kind": "security-group",
+      "label": "Host network · no thread",
+      "wraps": [
+        "hn-names"
+      ],
+      "pad": 12
+    },
+    {
+      "kind": "security-group",
+      "label": "chezmoi · live",
+      "wraps": [
+        "cz-opener",
+        "cz-catalogue"
+      ],
+      "pad": 12
+    },
+    {
+      "kind": "security-group",
+      "label": "Mac Studio setup · live",
+      "wraps": [
+        "ms-diff"
+      ],
+      "pad": 12
+    },
+    {
+      "kind": "security-group",
+      "label": "tools-rig burndown · new",
+      "wraps": [
+        "tr-catalogue"
+      ],
+      "pad": 12
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "How to read it",
+      "items": [
+        "Outer frame: Initiative. Inner frame: Project, with its thread's state. Box: workstream, with the intake tags it holds.",
+        "A box tagged 'new' is a workstream the consolidation found missing from the Project note."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Placed outside a Project",
+      "items": [
+        "State of play's own rules are not a Project.",
+        "The personal site icons and the identity domain belong to the personal territory; this master has no write authority there."
+      ]
+    }
+  ]
+}

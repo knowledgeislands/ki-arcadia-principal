@@ -1,0 +1,479 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "State of play · where each intake item goes",
+    "output": "+/diagrams/routing/routing.html",
+    "quality_profile": "showcase",
+    "locale": "en",
+    "legend": {
+      "mode": "all",
+      "entries": {
+        "backend": {
+          "label": "ready: work can start once dispatched"
+        },
+        "security": {
+          "label": "query: Kris must decide"
+        },
+        "cloud": {
+          "label": "idea: captured, no work"
+        },
+        "database": {
+          "label": "done by the consolidate run"
+        },
+        "external": {
+          "label": "a second home for the same item"
+        },
+        "frontend": {
+          "visible": false
+        },
+        "messagebus": {
+          "visible": false
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "w1",
+      "type": "backend",
+      "label": "THREAD-MESSAGING",
+      "sublabel": "a ki-pmo rule first",
+      "pos": [
+        40,
+        100
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "w2",
+      "type": "security",
+      "label": "THREAD-DURABILITY",
+      "sublabel": "+ CHECKINS, CHURN",
+      "tag": "STATE-AGREE",
+      "pos": [
+        40,
+        176
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "w3",
+      "type": "backend",
+      "label": "RESTART-PROMPTS",
+      "sublabel": "result to master, burndown",
+      "pos": [
+        40,
+        252
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "w4",
+      "type": "backend",
+      "label": "DIAGRAMS",
+      "sublabel": "ki-pmo-design, ki-diagrams",
+      "pos": [
+        40,
+        328
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "w5",
+      "type": "cloud",
+      "label": "GIT-SURFACE",
+      "sublabel": "home: Engineering Practice",
+      "pos": [
+        40,
+        404
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "w6",
+      "type": "security",
+      "label": "KI-AGENTS-NAME",
+      "sublabel": "the standard owns the word",
+      "pos": [
+        40,
+        480
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "w7",
+      "type": "external",
+      "label": "ROUTING",
+      "sublabel": "the rule itself",
+      "pos": [
+        40,
+        556
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "m1",
+      "type": "backend",
+      "label": "ROUTING",
+      "sublabel": "a one-line rule",
+      "pos": [
+        40,
+        700
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "m2",
+      "type": "backend",
+      "label": "FOCUS",
+      "sublabel": "rewrite the focus line",
+      "pos": [
+        40,
+        776
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "m3",
+      "type": "database",
+      "label": "CAPTURE-ONLY",
+      "sublabel": "+ DISPATCH-ORDER, FABLE",
+      "pos": [
+        40,
+        852
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "b1",
+      "type": "backend",
+      "label": "MGIT-OUTPUT",
+      "sublabel": "Kris asked; burn rule allows",
+      "pos": [
+        392,
+        100
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "b2",
+      "type": "backend",
+      "label": "MGIT-ESCAPE",
+      "sublabel": "-B exists today",
+      "pos": [
+        392,
+        176
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "b3",
+      "type": "external",
+      "label": "AWAITING-REVIEW",
+      "sublabel": "tools-ki and mgit records",
+      "pos": [
+        392,
+        252
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "b4",
+      "type": "external",
+      "label": "KI-AGENTS-NAME",
+      "sublabel": "only if renamed",
+      "pos": [
+        392,
+        328
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "k1",
+      "type": "security",
+      "label": "AWAITING-REVIEW",
+      "sublabel": "16 + 2 records",
+      "pos": [
+        392,
+        472
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "k2",
+      "type": "security",
+      "label": "RIG-OWNER",
+      "sublabel": "13 tools-rig records",
+      "pos": [
+        392,
+        548
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "o1",
+      "type": "security",
+      "label": "FAVICONS",
+      "sublabel": "Observatory, Headroom",
+      "tag": "restart on sol",
+      "pos": [
+        392,
+        692
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "c1",
+      "type": "backend",
+      "label": "TOML-OPENER",
+      "sublabel": "small",
+      "pos": [
+        744,
+        100
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "c2",
+      "type": "external",
+      "label": "RIG-CATALOGUE",
+      "sublabel": "chezmoi half",
+      "pos": [
+        744,
+        176
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "n1",
+      "type": "cloud",
+      "label": "RIG-CATALOGUE",
+      "sublabel": "until RIG-OWNER",
+      "pos": [
+        744,
+        320
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "n2",
+      "type": "cloud",
+      "label": "MAC-CLOUD",
+      "sublabel": "Rig Initiative notes",
+      "pos": [
+        744,
+        396
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "n3",
+      "type": "security",
+      "label": "LOCAL-DNS",
+      "sublabel": "Host network Project",
+      "tag": "open a thread?",
+      "pos": [
+        744,
+        472
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "p1",
+      "type": "cloud",
+      "label": "FAVICONS",
+      "sublabel": "rig and tower sites",
+      "pos": [
+        744,
+        616
+      ],
+      "size": [
+        180,
+        56
+      ]
+    },
+    {
+      "id": "p2",
+      "type": "external",
+      "label": "LOCAL-DNS",
+      "sublabel": "identity domain",
+      "pos": [
+        744,
+        692
+      ],
+      "size": [
+        180,
+        56
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "KI > Model > ways of working",
+      "wraps": [
+        "w1",
+        "w2",
+        "w3",
+        "w4",
+        "w5",
+        "w6",
+        "w7"
+      ],
+      "pad": 20
+    },
+    {
+      "kind": "region",
+      "label": "Master: state-of-play",
+      "wraps": [
+        "m1",
+        "m2",
+        "m3"
+      ],
+      "pad": 20
+    },
+    {
+      "kind": "region",
+      "label": "KI > Foundations > tools burndown",
+      "wraps": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ],
+      "pad": 20
+    },
+    {
+      "kind": "region",
+      "label": "Kris · no thread, a decision",
+      "wraps": [
+        "k1",
+        "k2"
+      ],
+      "pad": 20
+    },
+    {
+      "kind": "region",
+      "label": "Observatory: product",
+      "wraps": [
+        "o1"
+      ],
+      "pad": 20
+    },
+    {
+      "kind": "region",
+      "label": "Rig: chezmoi",
+      "wraps": [
+        "c1",
+        "c2"
+      ],
+      "pad": 20
+    },
+    {
+      "kind": "region",
+      "label": "No live thread · notes",
+      "wraps": [
+        "n1",
+        "n2",
+        "n3"
+      ],
+      "pad": 20
+    },
+    {
+      "kind": "region",
+      "label": "Personal territory",
+      "wraps": [
+        "p1",
+        "p2"
+      ],
+      "pad": 20
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "The routing rule",
+      "items": [
+        "State of play is the routing point: it writes one Messages line per item into the receiving checkpoint, and that thread owns what happens next.",
+        "Kris, the Project and Initiative notes and the personal territory receive what no live thread can take."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Items with two homes",
+      "items": [
+        "ROUTING: the master applies it; ways of working writes the rule.",
+        "AWAITING-REVIEW: Kris decides; tools burndown presents the tools-ki and mgit records.",
+        "RIG-CATALOGUE: an idea until RIG-OWNER; its chezmoi half goes to Rig: chezmoi.",
+        "LOCAL-DNS: the names to Host network; the identity domain is personal."
+      ]
+    }
+  ]
+}
