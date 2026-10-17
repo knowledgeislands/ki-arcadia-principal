@@ -11,16 +11,16 @@ updated_at: 2026-10-17T12:58:00Z
 
 ## Pick-up - mark 2026-10-15T15:14:39Z (16:14 BST)
 
-- **Status:** rest. Running: nothing. 2026-10-17 14:04 BST: Kris's intake dump logged, consolidated (`+/_THREADS/state-of-play/consolidate.report.md`), drawn (`themes.md`) and dispatched to the receiving checkpoints and Project or Initiative Notes (`dispatch-intake.report.md`), all pushed. No thread restarted yet; ways of working restarts first. Open queries: RIG-OWNER, AWAITING-REVIEW, HOST-NETWORK-THREAD, KI-AGENTS-NAME, FAVICON-FOLLOWUPS.
+- **Status:** rest. Running: nothing. 2026-10-17 14:26 BST: intake logged, consolidated, drawn (themes.md, now legible) and dispatched; Kris's five answers sent to their threads; own Messages block partly cleared, focus rewritten, KI-PRINCIPAL-MOD-008 held to 2026-10-23. Kris restarts ways of working next. Open query: SOP-DROPPED.
 - **Resume:** `Resume Master: state-of-play under current ki-pmo and ki-delegation since 2026-10-15T15:14:39Z: re-bootstrap, mark, fresh summary with carried-forward open points, take stock, restart authorised work, then banner.`
 - **Next steps, in order:**
-  0. Act on Kris's replies to the five open queries, sending each answer to the receiving checkpoint whose line says it waits on that tag.
-  1. Act on the six 2026-10-16 lines in this checkpoint's own Messages block (CI-RED-PRINCIPAL, PMO-7-BACKLOG, SOP-DROPPED, REGISTRY-LANDED, THREADS-CLEAR, THREADS-ORPHANS), then remove them.
-  2. Restart order after dispatch: ways of working first (STATE-AGREE with messaging and restart-prompt rules, then "ready" to Kris and this thread), then tools burndown, then Rig threads in parallel; parallel lanes per themes.md.
-  3. Rewrite the focus line to FOCUS (2026-10-17): state of play, ways of working, tools burndown, Mac Studio setup with rig differences, knowledge acquisition, Observatory.
-  4. STASH-DROP at a session with the terra checkout; KI-PRINCIPAL-MOD-008 hold review, overdue.
+  0. Act on Kris's reply to SOP-DROPPED.
+  1. When ways of working adds READY to this checkpoint's Messages block, give Kris tools burndown's restart line, then the two Rig threads in parallel, then knowledge acquisition, then Host network (fifth, HOST-NETWORK-THREAD), then Command centre.
+  2. PMO-7-BACKLOG: once ways of working has set the messaging standard, post a line to each coordination checkpoint to relink or delete its own reports; then remove the line here.
+  3. THREADS-ORPHANS remainder: `+/_THREADS/desk-kit/` reports belong to Rig: mac-studio-setup (setup-note) and KI > mics / webcams (cam-check, webcam-compare); pass THREADS-CLEAR on when those threads rest.
+  4. STASH-DROP and SOP-DROPPED at a session with the terra checkout.
   5. At the next mark, THREAD-TIDY the thread folder.
-  - Rule from Kris, 2026-10-15 22:50 BST: the thread dispatches changes to coordination threads and does not ask whether to.
+  - Rule from Kris, 2026-10-15 22:50 BST: the thread dispatches changes to coordination threads and does not ask whether to. GO-AHEAD, 2026-10-17: "you've got permission to get on with anything."
 - **Live threads (2026-10-16):** KI > SoP; KI > Fnd > tools burndown; KI > Model > ways of working; KI > Model > knowledge acquisition; KI > Rig > mac studio setup; KI > mics / webcams; Acquire > intake (sol); Chezmoi > misc (sol), carrying Rig: chezmoi.
 
 **Messages from Master: state-of-play** - the receiving thread acts on each line, then removes it.
